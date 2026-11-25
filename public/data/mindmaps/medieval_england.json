@@ -1,0 +1,1845 @@
+{
+  "unitId": "medieval_england",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "Medieval England, 1066–1485",
+  "examDateBoundary": "1066–1485",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Medieval England",
+    "subLabel": "KS3 History",
+    "dateChip": "1066–1485",
+    "gloss": "How military conquest, feudal control, religious conflict, royal charters, and plague shaped power in England from 1066 to 1485.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Norman Conquest",
+        "dateChip": "1066–1086",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Battle of Hastings",
+        "gloss": "The 1066 succession crisis, Battle of Hastings, castle building, Harrying of the North, and the 1086 Domesday Book.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. 1066 & Battle of Hastings",
+            "dateChip": "1066",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Senlac Hill",
+            "q2Chain": "Succession Crisis & Three Rivals → Stamford Bridge & Forced March → Senlac Shield Wall & Retreat",
+            "gloss": "Causal Chain: Succession Crisis & Three Rivals → Stamford Bridge & Forced March → Senlac Shield Wall & Retreat.",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Succession Crisis & Three Rivals",
+                "dateChip": "Jan–Sept 1066",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Edward the Confessor",
+                "gloss": "Edward the Confessor died childless in January 1066, triggering a three-way contest between Harold Godwinson, Duke William, and Harald Hardrada.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Confessor Died Without Direct Heir",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Edward the Confessor",
+                    "gloss": "Died childless 5 January 1066; Ended royal House of Wessex.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Died childless 5 January 1066",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Edward the Confessor",
+                        "gloss": "Died childless 5 January 1066"
+                      },
+                      {
+                        "id": "kt1_1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Ended royal House of Wessex",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Edward the Confessor",
+                        "gloss": "Ended royal House of Wessex"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Witan Elected Harold Godwinson",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Witan",
+                    "gloss": "Crowned within twenty-four hours; Wealthiest nobleman Earl of Wessex.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Crowned within twenty-four hours",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Witan",
+                        "gloss": "Crowned within twenty-four hours"
+                      },
+                      {
+                        "id": "kt1_1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Wealthiest nobleman Earl of Wessex",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Witan",
+                        "gloss": "Wealthiest nobleman Earl of Wessex"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c3",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "William & Hardrada Staked Claims",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Harald Hardrada",
+                    "gloss": "William claimed 1051 throne promise; Pope Alexander II blessed banner.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "William claimed 1051 throne promise",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Harald Hardrada",
+                        "gloss": "William claimed 1051 throne promise"
+                      },
+                      {
+                        "id": "kt1_1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Pope Alexander II blessed banner",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Harald Hardrada",
+                        "gloss": "Pope Alexander II blessed banner"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c4",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Forced Two-Front 1066 Invasion",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "two-front",
+                    "gloss": "300 Viking longships hit Yorkshire; Norman fleet massed across Channel.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c4_t1",
+                        "tier": 5,
+                        "label": "300 Viking longships hit Yorkshire",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "two-front",
+                        "gloss": "300 Viking longships hit Yorkshire"
+                      },
+                      {
+                        "id": "kt1_1_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Norman fleet massed across Channel",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "two-front",
+                        "gloss": "Norman fleet massed across Channel"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Stamford Bridge & Forced March",
+                "dateChip": "Sept 1066",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Stamford Bridge",
+                "gloss": "Harold marched 190 miles north in four days to crush Hardrada at Stamford Bridge, but weakened his elite troops before marching south.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "190-Mile March in Four Days",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Stamford Bridge",
+                    "gloss": "Surprised Vikings on 25 September; Arrow killed King Harald Hardrada.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Surprised Vikings on 25 September",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Stamford Bridge",
+                        "gloss": "Surprised Vikings on 25 September"
+                      },
+                      {
+                        "id": "kt1_1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Arrow killed King Harald Hardrada",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Stamford Bridge",
+                        "gloss": "Arrow killed King Harald Hardrada"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c2",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "24 Longships Carried Survivors",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "longships",
+                    "gloss": "Shattered Norwegian invasion threat; Showed rapid Saxon mobilisation.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Shattered Norwegian invasion threat",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "longships",
+                        "gloss": "Shattered Norwegian invasion threat"
+                      },
+                      {
+                        "id": "kt1_1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Showed rapid Saxon mobilisation",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "longships",
+                        "gloss": "Showed rapid Saxon mobilisation"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Depleted Housecarls Before South",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Pevensey Bay",
+                    "gloss": "William landed at Pevensey Bay; Forced 250-mile march back south.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "William landed at Pevensey Bay",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Pevensey Bay",
+                        "gloss": "William landed at Pevensey Bay"
+                      },
+                      {
+                        "id": "kt1_1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Forced 250-mile march back south",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Pevensey Bay",
+                        "gloss": "Forced 250-mile march back south"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Senlac Shield Wall & Retreat",
+                "dateChip": "14 Oct 1066",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "feigned retreats",
+                "gloss": "After five hours holding Senlac Hill, Saxon fyrd militia chased Norman feigned retreats downhill, fracturing the shield wall.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Five-Hour Senlac Shield Wall",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Senlac Hill",
+                    "gloss": "Housecarls swung two-handed axes; Repelled uphill Norman cavalry.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Housecarls swung two-handed axes",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Senlac Hill",
+                        "gloss": "Housecarls swung two-handed axes"
+                      },
+                      {
+                        "id": "kt1_1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Repelled uphill Norman cavalry",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Senlac Hill",
+                        "gloss": "Repelled uphill Norman cavalry"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "William Ordered Feigned Retreats",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "feigned retreats",
+                    "gloss": "Turned Breton flank panic around; Lured Saxon fyrdmen off ridge.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Turned Breton flank panic around",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "feigned retreats",
+                        "gloss": "Turned Breton flank panic around"
+                      },
+                      {
+                        "id": "kt1_1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Lured Saxon fyrdmen off ridge",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "feigned retreats",
+                        "gloss": "Lured Saxon fyrdmen off ridge"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Broke Shield Wall & Slew Harold",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "arrow",
+                    "gloss": "Archers angled arrows from above; Crowned William Christmas Day 1066.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Archers angled arrows from above",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "arrow",
+                        "gloss": "Archers angled arrows from above"
+                      },
+                      {
+                        "id": "kt1_1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Crowned William Christmas Day 1066",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "arrow",
+                        "gloss": "Crowned William Christmas Day 1066"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Ended Anglo-Saxon Royal Rule",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Anglo-Saxon",
+                    "gloss": "10,000 Normans ruled two million; Triggered castle and land seizure.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c4_t1",
+                        "tier": 5,
+                        "label": "10,000 Normans ruled two million",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Anglo-Saxon",
+                        "gloss": "10,000 Normans ruled two million"
+                      },
+                      {
+                        "id": "kt1_1_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Triggered castle and land seizure",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Anglo-Saxon",
+                        "gloss": "Triggered castle and land seizure"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Castles, Terror & Domesday",
+            "dateChip": "1066–1086",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Domesday Book",
+            "q2Chain": "Motte-and-Bailey & Stone Keeps → Harrying of the North → Domesday Book & Feudal Pyramid",
+            "gloss": "Causal Chain: Motte-and-Bailey & Stone Keeps → Harrying of the North → Domesday Book & Feudal Pyramid.",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Motte-and-Bailey & Stone Keeps",
+                "dateChip": "1066–1100",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Motte and Bailey",
+                "gloss": "Normans erected over 500 timber motte-and-bailey castles in days before building towering limestone keeps like Portchester.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "10,000 Normans vs Two Million",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "ten thousand Normans",
+                    "gloss": "Tiny elite faced hostile Saxons; Needed rapid military strongholds.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Tiny elite faced hostile Saxons",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "ten thousand Normans",
+                        "gloss": "Tiny elite faced hostile Saxons"
+                      },
+                      {
+                        "id": "kt1_2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Needed rapid military strongholds",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "ten thousand Normans",
+                        "gloss": "Needed rapid military strongholds"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "500 Motte-and-Bailey Castles",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Motte and Bailey",
+                    "gloss": "Built in eight to fourteen days; Used forced Anglo-Saxon labour.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Built in eight to fourteen days",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Motte and Bailey",
+                        "gloss": "Built in eight to fourteen days"
+                      },
+                      {
+                        "id": "kt1_2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Used forced Anglo-Saxon labour",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Motte and Bailey",
+                        "gloss": "Used forced Anglo-Saxon labour"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Replaced Timber with Stone Keeps",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Portsmouth Harbour",
+                    "gloss": "Four-storey keep inside Roman walls; Guarded Portsmouth Harbour links.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Four-storey keep inside Roman walls",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Portsmouth Harbour",
+                        "gloss": "Four-storey keep inside Roman walls"
+                      },
+                      {
+                        "id": "kt1_2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Guarded Portsmouth Harbour links",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Portsmouth Harbour",
+                        "gloss": "Guarded Portsmouth Harbour links"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Harrying of the North",
+                "dateChip": "1069–1070",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Yorkshire",
+                "gloss": "After rebels slaughtered the Norman garrison at York, William unleashed scorched-earth terror across Yorkshire.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1069 York Garrison Slaughtered",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "York",
+                    "gloss": "Northern rebels backed Danish fleet; Threatened Norman grip on north.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Northern rebels backed Danish fleet",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "York",
+                        "gloss": "Northern rebels backed Danish fleet"
+                      },
+                      {
+                        "id": "kt1_2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Threatened Norman grip on north",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "York",
+                        "gloss": "Threatened Norman grip on north"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Scorched-Earth Yorkshire Campaign",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "salting",
+                    "gloss": "Burned crops and killed livestock; Salted fields and smashed ploughs.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Burned crops and killed livestock",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "salting",
+                        "gloss": "Burned crops and killed livestock"
+                      },
+                      {
+                        "id": "kt1_2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Salted fields and smashed ploughs",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "salting",
+                        "gloss": "Salted fields and smashed ploughs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Starved Over 100,000 People",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Orderic Vitalis",
+                    "gloss": "Chronicled by Orderic Vitalis; Crushed northern revolt forever.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Chronicled by Orderic Vitalis",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Orderic Vitalis",
+                        "gloss": "Chronicled by Orderic Vitalis"
+                      },
+                      {
+                        "id": "kt1_2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Crushed northern revolt forever",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Orderic Vitalis",
+                        "gloss": "Crushed northern revolt forever"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Domesday Book & Feudal Pyramid",
+                "dateChip": "1085–1086",
+                "lessonIndex": 1,
+                "stageIndex": 3,
+                "searchTerm": "Domesday Book",
+                "gloss": "Commissioned in 1085 against Viking invasion fears, the 1086 Domesday Book recorded taxes and sealed Anglo-Saxon dispossession.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1085 Danish Invasion Threat",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Cnut IV",
+                    "gloss": "Feared King Cnut IV of Denmark; Ordered Gloucester shire audit.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Feared King Cnut IV of Denmark",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Cnut IV",
+                        "gloss": "Feared King Cnut IV of Denmark"
+                      },
+                      {
+                        "id": "kt1_2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Ordered Gloucester shire audit",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Cnut IV",
+                        "gloss": "Ordered Gloucester shire audit"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Counted Every Shire, Mill & Pig",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Domesday Book",
+                    "gloss": "Royal commissioners took oaths; Secured maximum Crown tax revenue.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Royal commissioners took oaths",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Domesday Book",
+                        "gloss": "Royal commissioners took oaths"
+                      },
+                      {
+                        "id": "kt1_2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Secured maximum Crown tax revenue",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Domesday Book",
+                        "gloss": "Secured maximum Crown tax revenue"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 200 Barons Held English Land",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "tenants-in-chief",
+                    "gloss": "Over 90% of Saxon land seized; Dispossessed English thegn class.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Over 90% of Saxon land seized",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "tenants-in-chief",
+                        "gloss": "Over 90% of Saxon land seized"
+                      },
+                      {
+                        "id": "kt1_2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Dispossessed English thegn class",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "tenants-in-chief",
+                        "gloss": "Dispossessed English thegn class"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Locked Realm in Feudal Pyramid",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "feudal",
+                    "gloss": "King leased manors for knights; Bound peasantry in serfdom.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c4_t1",
+                        "tier": 5,
+                        "label": "King leased manors for knights",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "feudal",
+                        "gloss": "King leased manors for knights"
+                      },
+                      {
+                        "id": "kt1_2_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Bound peasantry in serfdom",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "feudal",
+                        "gloss": "Bound peasantry in serfdom"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Crown, Church & Law",
+        "dateChip": "1154–1225",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Magna Carta",
+        "gloss": "The bloody clash between Henry II and Thomas Becket over Church courts, and the baronial rebellion forcing King John to seal Magna Carta.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Henry II & Thomas Becket",
+            "dateChip": "1154–1174",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Thomas Becket",
+            "q2Chain": "Appointment & Spiritual Shift → Constitutions of Clarendon → Cathedral Murder & 1174 Penance",
+            "gloss": "Causal Chain: Appointment & Spiritual Shift → Constitutions of Clarendon → Cathedral Murder & 1174 Penance.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Appointment & Spiritual Shift",
+                "dateChip": "1154–1162",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Archbishop of Canterbury",
+                "gloss": "Henry II appointed his worldly Chancellor Thomas Becket Archbishop in 1162, but Becket became an austere defender of the Pope.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Henry Sought Pliable Church Ally",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Chancellor",
+                    "gloss": "Appointed hunting friend in 1162; Hoped to control Church wealth.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Appointed hunting friend in 1162",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Chancellor",
+                        "gloss": "Appointed hunting friend in 1162"
+                      },
+                      {
+                        "id": "kt2_3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Hoped to control Church wealth",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Chancellor",
+                        "gloss": "Hoped to control Church wealth"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Becket Donned Lice Hairshirt",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "hairshirt",
+                    "gloss": "Resigned royal Chancellorship; Washed thirteen paupers daily.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Resigned royal Chancellorship",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "hairshirt",
+                        "gloss": "Resigned royal Chancellorship"
+                      },
+                      {
+                        "id": "kt2_3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Washed thirteen paupers daily",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "hairshirt",
+                        "gloss": "Washed thirteen paupers daily"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Put Papal Loyalty Above Crown",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Pope",
+                    "gloss": "Defended independent Church law; Set collision course with Henry.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Defended independent Church law",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Pope",
+                        "gloss": "Defended independent Church law"
+                      },
+                      {
+                        "id": "kt2_3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Set collision course with Henry",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Pope",
+                        "gloss": "Set collision course with Henry"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Constitutions of Clarendon",
+                "dateChip": "1164",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Constitutions of Clarendon",
+                "gloss": "Henry II issued the 1164 Constitutions of Clarendon to try criminous clerks in royal courts, driving Becket into French exile.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Scandal of Criminous Clerks",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "criminous clerks",
+                    "gloss": "Clergy read Latin psalm verse; Escaped royal gallows for murder.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Clergy read Latin psalm verse",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "criminous clerks",
+                        "gloss": "Clergy read Latin psalm verse"
+                      },
+                      {
+                        "id": "kt2_3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Escaped royal gallows for murder",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "criminous clerks",
+                        "gloss": "Escaped royal gallows for murder"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1164 Clarendon Court Demands",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Constitutions of Clarendon",
+                    "gloss": "Demanded royal trials for priests; Becket refused to seal document.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Demanded royal trials for priests",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Constitutions of Clarendon",
+                        "gloss": "Demanded royal trials for priests"
+                      },
+                      {
+                        "id": "kt2_3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Becket refused to seal document",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Constitutions of Clarendon",
+                        "gloss": "Becket refused to seal document"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Six-Year French Exile & Rift",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "exile",
+                    "gloss": "Fled secretly across Channel; Excommunicated royalist bishops.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Fled secretly across Channel",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "exile",
+                        "gloss": "Fled secretly across Channel"
+                      },
+                      {
+                        "id": "kt2_3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Excommunicated royalist bishops",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "exile",
+                        "gloss": "Excommunicated royalist bishops"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Cathedral Murder & 1174 Penance",
+                "dateChip": "1170–1174",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "Canterbury Cathedral",
+                "gloss": "Four knights murdered Becket in Canterbury Cathedral in December 1170, forcing Henry II into barefoot penance and compromise.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Henry Shouted Furious Outburst",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "miserable drones",
+                    "gloss": "Raged against miserable drones; Four knights crossed icy Channel.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Raged against miserable drones",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "miserable drones",
+                        "gloss": "Raged against miserable drones"
+                      },
+                      {
+                        "id": "kt2_3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Four knights crossed icy Channel",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "miserable drones",
+                        "gloss": "Four knights crossed icy Channel"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Slain Before Canterbury Altar",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "29 December 1170",
+                    "gloss": "Murdered 29 December 1170 dusk; Canonised by Pope Alexander III.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Murdered 29 December 1170 dusk",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "29 December 1170",
+                        "gloss": "Murdered 29 December 1170 dusk"
+                      },
+                      {
+                        "id": "kt2_3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Canonised by Pope Alexander III",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "29 December 1170",
+                        "gloss": "Canonised by Pope Alexander III"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1174 Barefoot Whipping Penance",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "barefoot",
+                    "gloss": "Flogged by eighty Canterbury monks; Dropped Clarendon court clauses.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Flogged by eighty Canterbury monks",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "barefoot",
+                        "gloss": "Flogged by eighty Canterbury monks"
+                      },
+                      {
+                        "id": "kt2_3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Dropped Clarendon court clauses",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "barefoot",
+                        "gloss": "Dropped Clarendon court clauses"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Protected Church Courts for Ages",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "privileges",
+                    "gloss": "Miracles drew medieval pilgrims; Clerical immunity lasted to Tudors.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Miracles drew medieval pilgrims",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "privileges",
+                        "gloss": "Miracles drew medieval pilgrims"
+                      },
+                      {
+                        "id": "kt2_3_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Clerical immunity lasted to Tudors",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "privileges",
+                        "gloss": "Clerical immunity lasted to Tudors"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. King John & Magna Carta",
+            "dateChip": "1199–1225",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Magna Carta",
+            "q2Chain": "Normandy Loss & Papal Interdict → Bouvines & Baronial Rebellion → Runnymede & First Barons’ War",
+            "gloss": "Causal Chain: Normandy Loss & Papal Interdict → Bouvines & Baronial Rebellion → Runnymede & First Barons’ War.",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Normandy Loss & Papal Interdict",
+                "dateChip": "1204–1213",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Interdict",
+                "gloss": "Losing Normandy in 1204 and feuding with Pope Innocent III left England under a five-year Interdict and heavy royal extortion.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1204 Loss of Ancestral Normandy",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Softsword",
+                    "gloss": "Defeated by Philip II of France; Mocked as John Softsword.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Defeated by Philip II of France",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Softsword",
+                        "gloss": "Defeated by Philip II of France"
+                      },
+                      {
+                        "id": "kt2_4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Mocked as John Softsword",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Softsword",
+                        "gloss": "Mocked as John Softsword"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1208 Five-Year Papal Interdict",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Stephen Langton",
+                    "gloss": "Rejected Stephen Langton choice; Seized £100,000 church revenues.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Rejected Stephen Langton choice",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Stephen Langton",
+                        "gloss": "Rejected Stephen Langton choice"
+                      },
+                      {
+                        "id": "kt2_4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Seized £100,000 church revenues",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Stephen Langton",
+                        "gloss": "Seized £100,000 church revenues"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1213 Surrender as Papal Fief",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "1,000 marks",
+                    "gloss": "Churches locked; dead unhallowed; Paid Pope 1,000 marks yearly.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Churches locked; dead unhallowed",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "1,000 marks",
+                        "gloss": "Churches locked; dead unhallowed"
+                      },
+                      {
+                        "id": "kt2_4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Paid Pope 1,000 marks yearly",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "1,000 marks",
+                        "gloss": "Paid Pope 1,000 marks yearly"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Bouvines & Baronial Rebellion",
+                "dateChip": "1214–1215",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Bouvines",
+                "gloss": "Crushed at Bouvines in July 1214, bankrupt King John faced armed barons who seized London in May 1215.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "July 1214 Bouvines Defeat",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Bouvines",
+                    "gloss": "French smashed mercenary allies; Ended Normandy reconquest dream.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "French smashed mercenary allies",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Bouvines",
+                        "gloss": "French smashed mercenary allies"
+                      },
+                      {
+                        "id": "kt2_4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Ended Normandy reconquest dream",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Bouvines",
+                        "gloss": "Ended Normandy reconquest dream"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Scutage Revolt & London Seized",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Robert Fitzwalter",
+                    "gloss": "Fitzwalter led Army of God; Captured London in May 1215.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Fitzwalter led Army of God",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Robert Fitzwalter",
+                        "gloss": "Fitzwalter led Army of God"
+                      },
+                      {
+                        "id": "kt2_4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Captured London in May 1215",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Robert Fitzwalter",
+                        "gloss": "Captured London in May 1215"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Forced Runnymede Peace Talks",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Runnymede",
+                    "gloss": "Royal treasury stood bankrupt; Cornered John beside Thames.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Royal treasury stood bankrupt",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Runnymede",
+                        "gloss": "Royal treasury stood bankrupt"
+                      },
+                      {
+                        "id": "kt2_4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Cornered John beside Thames",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Runnymede",
+                        "gloss": "Cornered John beside Thames"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Runnymede & First Barons’ War",
+                "dateChip": "1215–1216",
+                "lessonIndex": 3,
+                "stageIndex": 3,
+                "searchTerm": "Clause 39",
+                "gloss": "On 15 June 1215 John sealed Magna Carta’s 63 clauses including Clause 39, though papal annulment sparked civil war.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "63 Clauses Sealed 15 June 1215",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "63",
+                    "gloss": "Curbed arbitrary scutage taxes; Protected baronial heirs and widows.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Curbed arbitrary scutage taxes",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "63",
+                        "gloss": "Curbed arbitrary scutage taxes"
+                      },
+                      {
+                        "id": "kt2_4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Protected baronial heirs and widows",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "63",
+                        "gloss": "Protected baronial heirs and widows"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_c2",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Clause 39 Lawful Peer Judgment",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Clause 39",
+                    "gloss": "Barred unlawful free-man prison; Placed English king beneath law.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Barred unlawful free-man prison",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Clause 39",
+                        "gloss": "Barred unlawful free-man prison"
+                      },
+                      {
+                        "id": "kt2_4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Placed English king beneath law",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Clause 39",
+                        "gloss": "Placed English king beneath law"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Papal Annulment & Barons’ War",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Prince Louis",
+                    "gloss": "Prince Louis marched into London; Crown jewels lost in the Wash.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Prince Louis marched into London",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Prince Louis",
+                        "gloss": "Prince Louis marched into London"
+                      },
+                      {
+                        "id": "kt2_4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Crown jewels lost in the Wash",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Prince Louis",
+                        "gloss": "Crown jewels lost in the Wash"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_c4",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Liberty Bedrock vs Baron Grab",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "William Marshal",
+                    "gloss": "Served elite barons in 1215; William Marshal reissued for 9yo.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Served elite barons in 1215",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "William Marshal",
+                        "gloss": "Served elite barons in 1215"
+                      },
+                      {
+                        "id": "kt2_4_s3_c4_t2",
+                        "tier": 5,
+                        "label": "William Marshal reissued for 9yo",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "William Marshal",
+                        "gloss": "William Marshal reissued for 9yo"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: Plague & Revolt",
+        "dateChip": "1348–1381",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Black Death",
+        "gloss": "The 1348 Black Death killed nearly half the population, triggering wage laws, regressive Poll Taxes, and the 1381 Peasants’ Revolt.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Black Death & Peasants’ Revolt",
+            "dateChip": "1348–1381",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Wat Tyler",
+            "q2Chain": "1348 Plague & Labour Shortage → 1351 Wage Freeze & Poll Taxes → Smithfield & End of Serfdom",
+            "gloss": "Causal Chain: 1348 Plague & Labour Shortage → 1351 Wage Freeze & Poll Taxes → Smithfield & End of Serfdom.",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "1348 Plague & Labour Shortage",
+                "dateChip": "1348–1351",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Melcombe Regis",
+                "gloss": "Arriving at Melcombe Regis in June 1348, bubonic plague killed nearly half of England and gave surviving workers bargaining power.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "June 1348 Melcombe Regis Arrival",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Melcombe Regis",
+                    "gloss": "Gascony ship carried plague fleas; Killed nearly half the country.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Gascony ship carried plague fleas",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Melcombe Regis",
+                        "gloss": "Gascony ship carried plague fleas"
+                      },
+                      {
+                        "id": "kt3_5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Killed nearly half the country",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Melcombe Regis",
+                        "gloss": "Killed nearly half the country"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Severe Rural Worker Shortage",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "double pay",
+                    "gloss": "Crops rotted in empty fields; Workers demanded double wages.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Crops rotted in empty fields",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "double pay",
+                        "gloss": "Crops rotted in empty fields"
+                      },
+                      {
+                        "id": "kt3_5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Workers demanded double wages",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "double pay",
+                        "gloss": "Workers demanded double wages"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Cracked Customary Manorial Grip",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "manorial",
+                    "gloss": "Serfs left manors for cash pay; Shifted rural bargaining power.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Serfs left manors for cash pay",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "manorial",
+                        "gloss": "Serfs left manors for cash pay"
+                      },
+                      {
+                        "id": "kt3_5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Shifted rural bargaining power",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "manorial",
+                        "gloss": "Shifted rural bargaining power"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "1351 Wage Freeze & Poll Taxes",
+                "dateChip": "1351–1381",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Statute of Labourers",
+                "gloss": "Parliament froze wages in 1351 and levied flat 12d Poll Taxes for war, sparking the May 1381 Brentwood uprising.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1351 Statute of Labourers Cap",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Statute of Labourers",
+                    "gloss": "Froze wages at pre-plague pay; Branded runaway serfs with F.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Froze wages at pre-plague pay",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Statute of Labourers",
+                        "gloss": "Froze wages at pre-plague pay"
+                      },
+                      {
+                        "id": "kt3_5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Branded runaway serfs with F",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Statute of Labourers",
+                        "gloss": "Branded runaway serfs with F"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1363 Dress Ban & 1381 Poll Tax",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Poll Tax",
+                    "gloss": "Banned peasants wearing fine fur; Flat 12d tax funded French war.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Banned peasants wearing fine fur",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Poll Tax",
+                        "gloss": "Banned peasants wearing fine fur"
+                      },
+                      {
+                        "id": "kt3_5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Flat 12d tax funded French war",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Poll Tax",
+                        "gloss": "Flat 12d tax funded French war"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ May 1381 Brentwood Insurrection",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "John Bampton",
+                    "gloss": "Villagers chased out John Bampton; Ignited Essex and Kent revolt.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Villagers chased out John Bampton",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "John Bampton",
+                        "gloss": "Villagers chased out John Bampton"
+                      },
+                      {
+                        "id": "kt3_5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Ignited Essex and Kent revolt",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "John Bampton",
+                        "gloss": "Ignited Essex and Kent revolt"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Smithfield & End of Serfdom",
+                "dateChip": "June 1381",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Smithfield",
+                "gloss": "Wat Tyler and John Ball led 30,000 rebels into London; despite Tyler’s death at Smithfield, Poll Taxes ended and serfdom withered.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "30,000 Rebels Stormed London",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "John Ball",
+                    "gloss": "Wat Tyler and John Ball led; Burned tax rolls; took Tower.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Wat Tyler and John Ball led",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "John Ball",
+                        "gloss": "Wat Tyler and John Ball led"
+                      },
+                      {
+                        "id": "kt3_5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Burned tax rolls; took Tower",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "John Ball",
+                        "gloss": "Burned tax rolls; took Tower"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "15 June Smithfield Confrontation",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Smithfield",
+                    "gloss": "14-year-old Richard II promised; London Mayor stabbed Wat Tyler.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "14-year-old Richard II promised",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Smithfield",
+                        "gloss": "14-year-old Richard II promised"
+                      },
+                      {
+                        "id": "kt3_5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "London Mayor stabbed Wat Tyler",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Smithfield",
+                        "gloss": "London Mayor stabbed Wat Tyler"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Revolt Crushed; Poll Tax Ended",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Poll Taxes",
+                    "gloss": "Boy king revoked freedom charters; Parliament dropped flat Poll Tax.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Boy king revoked freedom charters",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Poll Taxes",
+                        "gloss": "Boy king revoked freedom charters"
+                      },
+                      {
+                        "id": "kt3_5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Parliament dropped flat Poll Tax",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Poll Taxes",
+                        "gloss": "Parliament dropped flat Poll Tax"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Feudal Serfdom Withered Away",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "serfdom",
+                    "gloss": "Landlords hired free wage hands; Ended medieval English bondage.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Landlords hired free wage hands",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "serfdom",
+                        "gloss": "Landlords hired free wage hands"
+                      },
+                      {
+                        "id": "kt3_5_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Ended medieval English bondage",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "serfdom",
+                        "gloss": "Ended medieval English bondage"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

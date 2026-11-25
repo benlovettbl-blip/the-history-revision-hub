@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_ancient_greece",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "Ancient Greece — City-States, Myths & Legacy (c. 800–146 BC)",
+  "examDateBoundary": "c. 800–146 BC",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Ancient Greece",
+    "subLabel": "Key Stage 2",
+    "dateChip": "c. 800–146 BC",
+    "gloss": "How mountain-divided Greek city-states invented democracy, staged the 776 BC Olympics, defeated Persia, and shaped modern theatre, science, and words.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "1. Poleis: Athens & Sparta",
+        "dateChip": "c. 800–430 BC",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Acropolis",
+        "gloss": "Mountains and islands split Greece into rival city-states sharing one alphabet, with sea-trading democratic Athens contrasting sharply against warrior Sparta.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Mountains & Rival City-States",
+            "dateChip": "c. 800–500 BC",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Acropolis",
+            "q2Chain": "Mountains & islands split rival poleis → Every polis builds Acropolis & Agora → 24-letter alphabet & olive-oil sea trade unite Hellenes",
+            "gloss": "Mountains & islands split rival poleis → Every polis builds Acropolis & Agora → 24-letter alphabet & olive-oil sea trade unite Hellenes",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Mountains & Islands Split Poleis",
+                "dateChip": "c. 2000–500 BC",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "poleis",
+                "gloss": "After Minoans and Mycenaeans, steep mountains and a thousand Aegean islands divided Greeks into rival city-states called poleis.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Steep Peaks & 1,000+ Islands",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Aegean Sea",
+                    "gloss": "Minoans and Mycenaeans came first; Slow mountain tracks split valleys.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Minoans and Mycenaeans came first",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Aegean Sea",
+                        "gloss": "Minoans and Mycenaeans came first"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Slow mountain tracks split valleys",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Aegean Sea",
+                        "gloss": "Slow mountain tracks split valleys"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Rival Poleis Kept Own Laws",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "poleis",
+                    "gloss": "Athens, Sparta, Corinth, and Thebes; Minted separate city-state coins.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Athens, Sparta, Corinth, and Thebes",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "poleis",
+                        "gloss": "Athens, Sparta, Corinth, and Thebes"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Minted separate city-state coins",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "poleis",
+                        "gloss": "Minted separate city-state coins"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Each Polis Built Two Spaces",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "polis",
+                    "gloss": "Stopped Greece becoming one kingdom; Needed hilltop fort and market.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Stopped Greece becoming one kingdom",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "polis",
+                        "gloss": "Stopped Greece becoming one kingdom"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Needed hilltop fort and market",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "polis",
+                        "gloss": "Needed hilltop fort and market"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "High Acropolis & Busy Agora",
+                "dateChip": "c. 750–500 BC",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "Agora",
+                "gloss": "Almost every Greek city-state crowned a walled hill called the Acropolis with marble temples above a sunny Agora marketplace.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Walled Acropolis Held Temples",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Acropolis",
+                    "gloss": "Sheltered families during enemy raids; Honoured city’s chosen patron god.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Sheltered families during enemy raids",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Acropolis",
+                        "gloss": "Sheltered families during enemy raids"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Honoured city’s chosen patron god",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Acropolis",
+                        "gloss": "Honoured city’s chosen patron god"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sunny Agora for Stalls & Debate",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Agora",
+                    "gloss": "Sold figs, goat cheese, fish; Men debated morning city laws.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Sold figs, goat cheese, fish",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Agora",
+                        "gloss": "Sold figs, goat cheese, fish"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Men debated morning city laws",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Agora",
+                        "gloss": "Men debated morning city laws"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Connected Sailors & Markets",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "pottery",
+                    "gloss": "Potters stacked painted clay bowls; Spread shared ideas across ports.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Potters stacked painted clay bowls",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "pottery",
+                        "gloss": "Potters stacked painted clay bowls"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Spread shared ideas across ports",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "pottery",
+                        "gloss": "Spread shared ideas across ports"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "24 Letters, Olives & Sea Trade",
+                "dateChip": "c. 800–500 BC",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Hellenes",
+                "gloss": "Proud Greeks called themselves Hellenes, adapted a 24-letter alphabet with vowels, and traded olive oil and pottery for wheat.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "One Hellene Speech & 24 Letters",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Greek alphabet",
+                    "gloss": "Adapted Phoenician signs c. 800 BC; Added vowels for stone laws.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Adapted Phoenician signs c. 800 BC",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Greek alphabet",
+                        "gloss": "Adapted Phoenician signs c. 800 BC"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Added vowels for stone laws",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Greek alphabet",
+                        "gloss": "Added vowels for stone laws"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Ships Traded Olive Oil for Wheat",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "olive oil",
+                    "gloss": "Thin rocky soil grew olives; Exported painted jars across seas.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Thin rocky soil grew olives",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "olive oil",
+                        "gloss": "Thin rocky soil grew olives"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Exported painted jars across seas",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "olive oil",
+                        "gloss": "Exported painted jars across seas"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "United Rival Greeks by Culture",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Hellenes",
+                    "gloss": "Shared language and Olympian gods; Allowed rival cities distinct rules.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Shared language and Olympian gods",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Hellenes",
+                        "gloss": "Shared language and Olympian gods"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Allowed rival cities distinct rules",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Hellenes",
+                        "gloss": "Allowed rival cities distinct rules"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Growing Up: Athens & Sparta",
+            "dateChip": "c. 508–430 BC",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Pnyx",
+            "q2Chain": "Athenian male citizens vote on Pnyx (c. 508 BC) → Spartan boys enter agoge barracks at seven → Contrasting lives for girls & women",
+            "gloss": "Athenian male citizens vote on Pnyx (c. 508 BC) → Spartan boys enter agoge barracks at seven → Contrasting lives for girls & women",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "People-Power on Athens’s Pnyx",
+                "dateChip": "c. 508–430 BC",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "demokratia",
+                "gloss": "Around 508 BC, Athens invented direct democracy on the Pnyx hill, though women, enslaved people, and foreign metics were shut out.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Pnyx Hand Votes & Ostrakon Shards",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "ostrakon",
+                    "gloss": "Male citizens voted every law; Scratched pottery shards banished bosses.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Male citizens voted every law",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "ostrakon",
+                        "gloss": "Male citizens voted every law"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Scratched pottery shards banished bosses",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "ostrakon",
+                        "gloss": "Scratched pottery shards banished bosses"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "500 Jurors Picked by Machine",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "kleroterion",
+                    "gloss": "Marble kleroterion dropped chance balls; Shut out women, enslaved, metics.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Marble kleroterion dropped chance balls",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "kleroterion",
+                        "gloss": "Marble kleroterion dropped chance balls"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Shut out women, enslaved, metics",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "kleroterion",
+                        "gloss": "Shut out women, enslaved, metics"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Clashed With Warrior Sparta",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "direct democracy",
+                    "gloss": "Invented people-power c. 508 BC; Inland Sparta prized strict obedience.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Invented people-power c. 508 BC",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "direct democracy",
+                        "gloss": "Invented people-power c. 508 BC"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Inland Sparta prized strict obedience",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "direct democracy",
+                        "gloss": "Inland Sparta prized strict obedience"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Two Kings & Agoge Barracks",
+                "dateChip": "c. 600–430 BC",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "agoge",
+                "gloss": "Ruled by two kings while helots farmed, Sparta took boys aged seven into harsh agoge barracks to train barefoot full-time.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Two Kings & Helot Farmworkers",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "helots",
+                    "gloss": "Council of older nobles advised; Helots grew crops for soldiers.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Council of older nobles advised",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "helots",
+                        "gloss": "Council of older nobles advised"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Helots grew crops for soldiers",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "helots",
+                        "gloss": "Helots grew crops for soldiers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Age Seven Into Barefoot Agoge",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "agoge",
+                    "gloss": "Slept on winter river reeds; Ate dark broth; practised stealth.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Slept on winter river reeds",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "agoge",
+                        "gloss": "Slept on winter river reeds"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Ate dark broth; practised stealth",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "agoge",
+                        "gloss": "Ate dark broth; practised stealth"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Shaped Girls & Women Differently",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Sparta",
+                    "gloss": "Forged Greece’s toughest land army; Left Spartan wives running farms.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Forged Greece’s toughest land army",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Sparta",
+                        "gloss": "Forged Greece’s toughest land army"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Left Spartan wives running farms",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Sparta",
+                        "gloss": "Left Spartan wives running farms"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Athenian vs Spartan Childhoods",
+                "dateChip": "c. 500–430 BC",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Spartan women",
+                "gloss": "Athenian boys studied books while girls stayed indoors; Spartan girls wrestled outdoors and Spartan women owned land!",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Athenian Tutors vs Indoor Looms",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Athenian girls",
+                    "gloss": "Boys learned reading, music, geometry; Girls learned spinning indoors.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Boys learned reading, music, geometry",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Athenian girls",
+                        "gloss": "Boys learned reading, music, geometry"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Girls learned spinning indoors",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Athenian girls",
+                        "gloss": "Girls learned spinning indoors"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Spartan Girls Ran & Owned Land",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "javelin",
+                    "gloss": "Ran, wrestled, threw javelins outdoors; Spartan women owned farm land.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Ran, wrestled, threw javelins outdoors",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "javelin",
+                        "gloss": "Ran, wrestled, threw javelins outdoors"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Spartan women owned farm land",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "javelin",
+                        "gloss": "Spartan women owned farm land"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Two Opposite Greek Ways of Life",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Spartan women",
+                    "gloss": "Spoke openly in public streets; Yet shared gods united both.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Spoke openly in public streets",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Spartan women",
+                        "gloss": "Spoke openly in public streets"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Yet shared gods united both",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Spartan women",
+                        "gloss": "Yet shared gods united both"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "2. Gods, Olympics & Persia",
+        "dateChip": "776–479 BC",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Mount Olympus",
+        "gloss": "Shared worship of Mount Olympus’s twelve gods and the 776 BC Olympic Truce brought rival Greeks together before Persia invaded at Marathon, Thermopylae, and Salamis.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Gods, Myths & 776 BC Olympics",
+            "dateChip": "776–400 BC",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Mount Olympus",
+            "q2Chain": "Twelve Olympian gods & Parthenon temples → Delphi’s Oracle & vase myths → Sacred Truce & 776 BC Olympic olive crowns",
+            "gloss": "Twelve Olympian gods & Parthenon temples → Delphi’s Oracle & vase myths → Sacred Truce & 776 BC Olympic olive crowns",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Twelve Gods & Marble Temples",
+                "dateChip": "c. 800–400 BC",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Parthenon",
+                "gloss": "Believing twelve gods ruled snowy Mount Olympus, cities built marble homes like Athens’s Parthenon and worshipped at smoky altars.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Zeus, Hera, Poseidon & Athena",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Mount Olympus",
+                    "gloss": "Zeus hurled thunderbolts on Olympus; Twins Apollo, Artemis; winged Hermes.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Zeus hurled thunderbolts on Olympus",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Mount Olympus",
+                        "gloss": "Zeus hurled thunderbolts on Olympus"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Twins Apollo, Artemis; winged Hermes",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Mount Olympus",
+                        "gloss": "Twins Apollo, Artemis; winged Hermes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Parthenon Statue & Outdoor Altars",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "altars",
+                    "gloss": "Gold-and-ivory Athena stood inside; Poured wine, roasted meat outdoors.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Gold-and-ivory Athena stood inside",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "altars",
+                        "gloss": "Gold-and-ivory Athena stood inside"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Poured wine, roasted meat outdoors",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "altars",
+                        "gloss": "Poured wine, roasted meat outdoors"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Inspired Oracles & Hero Myths",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Parthenon",
+                    "gloss": "Sweet smoke rose toward sky; Shaped Greek art and stories.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Sweet smoke rose toward sky",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Parthenon",
+                        "gloss": "Sweet smoke rose toward sky"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Shaped Greek art and stories",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Parthenon",
+                        "gloss": "Shaped Greek art and stories"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Delphi’s Oracle & Painted Vases",
+                "dateChip": "c. 700–400 BC",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Delphi",
+                "gloss": "Generals climbed Delphi to question Apollo’s Pythia priestess, while potters painted Heracles, Odysseus, and Medusa on clay vases.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Pythia Spoke Riddles at Delphi",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Pythia",
+                    "gloss": "Leaders asked before wars, voyages; Studied Apollo’s riddles before wars.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Leaders asked before wars, voyages",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Pythia",
+                        "gloss": "Leaders asked before wars, voyages"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Studied Apollo’s riddles before wars",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Pythia",
+                        "gloss": "Studied Apollo’s riddles before wars"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Heroes & Monsters on Clay Vases",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Heracles",
+                    "gloss": "Heracles fought Hydra; Perseus Medusa; Painted black- and red-figure vases.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Heracles fought Hydra; Perseus Medusa",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Heracles",
+                        "gloss": "Heracles fought Hydra; Perseus Medusa"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Painted black- and red-figure vases",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Heracles",
+                        "gloss": "Painted black- and red-figure vases"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Shared Faith Drew Olympia Crowds",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Odysseus",
+                    "gloss": "Turned supper jars into storybooks; United cities in Zeus’s games.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Turned supper jars into storybooks",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Odysseus",
+                        "gloss": "Turned supper jars into storybooks"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "United cities in Zeus’s games",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Odysseus",
+                        "gloss": "United cities in Zeus’s games"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "776 BC Olympia & Olive Crowns",
+                "dateChip": "From 776 BC",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Olympia",
+                "gloss": "Every four summers from 776 BC, the Sacred Truce paused wars so athletes raced at Olympia for wild-olive kotinos crowns.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Sacred Truce Paused City Wars",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Sacred Truce",
+                    "gloss": "Messengers announced Ekecheiria peace; Crowds travelled safely to Olympia.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Messengers announced Ekecheiria peace",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Sacred Truce",
+                        "gloss": "Messengers announced Ekecheiria peace"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Crowds travelled safely to Olympia",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Sacred Truce",
+                        "gloss": "Crowds travelled safely to Olympia"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Barefoot Sprints, Chariots & Olive",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "kotinos",
+                    "gloss": "Barefoot sprints, discus, fast chariots; Winners wore wild-olive kotinos crowns.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Barefoot sprints, discus, fast chariots",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "kotinos",
+                        "gloss": "Barefoot sprints, discus, fast chariots"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Winners wore wild-olive kotinos crowns",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "kotinos",
+                        "gloss": "Winners wore wild-olive kotinos crowns"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Proved Rival Greeks Could Unite",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Ancient Olympic Games",
+                    "gloss": "Swore beside Zeus’s smoky altar; Practised unity before Persian wars.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Swore beside Zeus’s smoky altar",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Ancient Olympic Games",
+                        "gloss": "Swore beside Zeus’s smoky altar"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Practised unity before Persian wars",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Ancient Olympic Games",
+                        "gloss": "Practised unity before Persian wars"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Persian Wars (490–479 BC)",
+            "dateChip": "490–479 BC",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Thermopylae",
+            "q2Chain": "Hoplite phalanx wins at Marathon (490 BC) → 300 Spartans hold narrow Thermopylae (480 BC) → Triremes ram Xerxes’s fleet at Salamis",
+            "gloss": "Hoplite phalanx wins at Marathon (490 BC) → 300 Spartans hold narrow Thermopylae (480 BC) → Triremes ram Xerxes’s fleet at Salamis",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "490 BC: Phalanx Wins at Marathon",
+                "dateChip": "490 BC",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Marathon",
+                "gloss": "When Persian King Darius I landed troops at Marathon in 490 BC, Athenian hoplites charged in a tight bronze phalanx and won.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Darius Punished Athens for Rebels",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Darius I",
+                    "gloss": "Persian archers landed at Marathon; Citizen hoplites locked bronze shields.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Persian archers landed at Marathon",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Darius I",
+                        "gloss": "Persian archers landed at Marathon"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Citizen hoplites locked bronze shields",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Darius I",
+                        "gloss": "Citizen hoplites locked bronze shields"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Phalanx Charge & 26-Mile Run",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Pheidippides",
+                    "gloss": "Smashed straight through Persian lines; Pheidippides ran twenty-six miles home.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Smashed straight through Persian lines",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Pheidippides",
+                        "gloss": "Smashed straight through Persian lines"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Pheidippides ran twenty-six miles home",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Pheidippides",
+                        "gloss": "Pheidippides ran twenty-six miles home"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ King Xerxes Planned Huge Return",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "phalanx",
+                    "gloss": "Inspired modern marathon foot race; Ten years later Xerxes marched.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Inspired modern marathon foot race",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "phalanx",
+                        "gloss": "Inspired modern marathon foot race"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Ten years later Xerxes marched",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "phalanx",
+                        "gloss": "Ten years later Xerxes marched"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "480 BC: Leonidas at Thermopylae",
+                "dateChip": "480 BC",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Leonidas",
+                "gloss": "In 480 BC, Spartan King Leonidas and 300 Spartans blocked Xerxes’s vast army for three days inside narrow coastal Thermopylae.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Xerxes & Immortals Marched South",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Xerxes",
+                    "gloss": "Rival Greeks united to defend; Guarded narrow pass by cliffs.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Rival Greeks united to defend",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Xerxes",
+                        "gloss": "Rival Greeks united to defend"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Guarded narrow pass by cliffs",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Xerxes",
+                        "gloss": "Guarded narrow pass by cliffs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "300 Spartans Held Pass 3 Days",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "mountain path",
+                    "gloss": "Blocked thousands of Persian troops; Traitor showed secret mountain path.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Blocked thousands of Persian troops",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "mountain path",
+                        "gloss": "Blocked thousands of Persian troops"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Traitor showed secret mountain path",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "mountain path",
+                        "gloss": "Traitor showed secret mountain path"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Bought Time to Evacuate Athens",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Thermopylae",
+                    "gloss": "Leonidas stayed so allies escaped; Families sailed safe before Salamis.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Leonidas stayed so allies escaped",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Thermopylae",
+                        "gloss": "Leonidas stayed so allies escaped"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Families sailed safe before Salamis",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Thermopylae",
+                        "gloss": "Families sailed safe before Salamis"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "480 BC: Triremes Win at Salamis",
+                "dateChip": "480–479 BC",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Salamis",
+                "gloss": "Admiral Themistocles lured Xerxes’s fleet into the narrow Strait of Salamis, where 170-oar wooden triremes rammed jammed ships.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "170-Oar Triremes With Bronze Rams",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "triremes",
+                    "gloss": "Three levels of wooden oars; Painted eyes gleamed above waterline.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Three levels of wooden oars",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "triremes",
+                        "gloss": "Three levels of wooden oars"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Painted eyes gleamed above waterline",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "triremes",
+                        "gloss": "Painted eyes gleamed above waterline"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Trick Message Trapped Xerxes’s Ships",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Themistocles",
+                    "gloss": "Jammed inside narrow Salamis strait; Nimble Greek hulls rammed Persians.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Jammed inside narrow Salamis strait",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Themistocles",
+                        "gloss": "Jammed inside narrow Salamis strait"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Nimble Greek hulls rammed Persians",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Themistocles",
+                        "gloss": "Nimble Greek hulls rammed Persians"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Saved Free Greece for Golden Age",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "479 BC",
+                    "gloss": "Won Salamis 480, Plataea 479; Sparked Athens’s golden drama age.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Won Salamis 480, Plataea 479",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "479 BC",
+                        "gloss": "Won Salamis 480, Plataea 479"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Sparked Athens’s golden drama age",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "479 BC",
+                        "gloss": "Sparked Athens’s golden drama age"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "3. Ideas, Alexander & Legacy",
+        "dateChip": "c. 460 BC–Today",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Hippocrates",
+        "gloss": "Free Greek cities pioneered hillside drama, philosophy, clinical medicine, and geometry, spread across three continents by Alexander and living on today.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Theatre, Philosophy & Science",
+            "dateChip": "c. 460–212 BC",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Hippocrates",
+            "q2Chain": "14,000 watch masked plays at Epidaurus → Socrates, Plato & Aristotle question & classify → Hippocrates & Greek geometry transform science",
+            "gloss": "14,000 watch masked plays at Epidaurus → Socrates, Plato & Aristotle question & classify → Hippocrates & Greek geometry transform science",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Epidaurus Theatre & Bold Masks",
+                "dateChip": "c. 460–330 BC",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Epidaurus",
+                "gloss": "Curved hillside stone theatres like Epidaurus seated 14,000 spectators to watch masked tragedies and comedies for Dionysus.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "14,000 Seats Carried Every Whisper",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "14,000 spectators",
+                    "gloss": "Carved curved stone into hillsides; Staged plays at Dionysus festivals.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Carved curved stone into hillsides",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "14,000 spectators",
+                        "gloss": "Carved curved stone into hillsides"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Staged plays at Dionysus festivals",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "14,000 spectators",
+                        "gloss": "Staged plays at Dionysus festivals"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Wide Masks, Tragedies & Comedies",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "theatre masks",
+                    "gloss": "Distant rows saw bold faces; Poor citizens received coin tokens.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Distant rows saw bold faces",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "theatre masks",
+                        "gloss": "Distant rows saw bold faces"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Poor citizens received coin tokens",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "theatre masks",
+                        "gloss": "Poor citizens received coin tokens"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Sparked Public Debate on Justice",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "comedies",
+                    "gloss": "Crowds debated pride and fairness; Prepared Athens for bold thinkers.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Crowds debated pride and fairness",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "comedies",
+                        "gloss": "Crowds debated pride and fairness"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Prepared Athens for bold thinkers",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "comedies",
+                        "gloss": "Prepared Athens for bold thinkers"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Socrates, Plato & Aristotle",
+                "dateChip": "c. 430–322 BC",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Aristotle",
+                "gloss": "Barefoot Socrates questioned citizens in the Agora, Plato opened the Academy, and Aristotle observed and sorted living nature.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Socrates Questioned Every Belief",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Socrates",
+                    "gloss": "Walked barefoot through daily Agora; Drank poison in 399 BC.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Walked barefoot through daily Agora",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Socrates",
+                        "gloss": "Walked barefoot through daily Agora"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Drank poison in 399 BC",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Socrates",
+                        "gloss": "Drank poison in 399 BC"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Plato’s Academy & Aristotle’s Facts",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Lyceum",
+                    "gloss": "Plato taught inside shady Academy; Aristotle grouped plants at Lyceum.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Plato taught inside shady Academy",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Lyceum",
+                        "gloss": "Plato taught inside shady Academy"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Aristotle grouped plants at Lyceum",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Lyceum",
+                        "gloss": "Aristotle grouped plants at Lyceum"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Inspired Real Medical Evidence",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "philosophers",
+                    "gloss": "Measured real facts over myths; Built lasting roots for science.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Measured real facts over myths",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "philosophers",
+                        "gloss": "Measured real facts over myths"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Built lasting roots for science",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "philosophers",
+                        "gloss": "Built lasting roots for science"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Hippocrates, Euclid & Archimedes",
+                "dateChip": "c. 420–212 BC",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Archimedes",
+                "gloss": "Hippocrates checked natural symptoms on Kos, while Pythagoras, Euclid, and Archimedes unlocked triangles, geometry, and levers.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Hippocrates Checked Bedside Notes",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Hippocratic Oath",
+                    "gloss": "Prescribed clean food, fresh air; Doctors swore ethical Hippocratic Oath.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Prescribed clean food, fresh air",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Hippocratic Oath",
+                        "gloss": "Prescribed clean food, fresh air"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Doctors swore ethical Hippocratic Oath",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Hippocratic Oath",
+                        "gloss": "Doctors swore ethical Hippocratic Oath"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Triangles, Geometry & “Eureka!”",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Euclid",
+                    "gloss": "Pythagoras triangles; Euclid’s geometry; Archimedes solved bath lever puzzle.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Pythagoras triangles; Euclid’s geometry",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Euclid",
+                        "gloss": "Pythagoras triangles; Euclid’s geometry"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Archimedes solved bath lever puzzle",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Euclid",
+                        "gloss": "Archimedes solved bath lever puzzle"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Aristotle Taught Young Alexander",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Kos",
+                    "gloss": "Replaced magic cures with symptoms; Ready to spread across continents.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Replaced magic cures with symptoms",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Kos",
+                        "gloss": "Replaced magic cures with symptoms"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Ready to spread across continents",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Kos",
+                        "gloss": "Ready to spread across continents"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Alexander & Greek Legacy",
+            "dateChip": "336 BC–Today",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Alexander the Great",
+            "q2Chain": "Alexander & Bucephalus build 3-continent empire (336–323 BC) → Alexandria’s Library & Rome (146 BC) → Democracy, words & 1896 Olympics",
+            "gloss": "Alexander & Bucephalus build 3-continent empire (336–323 BC) → Alexandria’s Library & Rome (146 BC) → Democracy, words & 1896 Olympics",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Alexander & Horse Bucephalus",
+                "dateChip": "336–323 BC",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "Bucephalus",
+                "gloss": "Taught by Aristotle, young Macedonian King Alexander tamed Bucephalus and marched unbeaten across Egypt, Persia, and north-west India.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Taught by Aristotle in Macedon",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Macedon",
+                    "gloss": "Tamed wild black warhorse Bucephalus; Crowned king aged twenty, 336 BC.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Tamed wild black warhorse Bucephalus",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Macedon",
+                        "gloss": "Tamed wild black warhorse Bucephalus"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Crowned king aged twenty, 336 BC",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Macedon",
+                        "gloss": "Crowned king aged twenty, 336 BC"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Unbeaten March to North-West India",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Hellenistic",
+                    "gloss": "Led armies eleven straight years; Founded Greek cities named Alexandria.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Led armies eleven straight years",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Hellenistic",
+                        "gloss": "Led armies eleven straight years"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Founded Greek cities named Alexandria",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Hellenistic",
+                        "gloss": "Founded Greek cities named Alexandria"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Shaped Lively Hellenistic World",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "323 BC",
+                    "gloss": "Blended Greek and eastern customs; Sparked Alexandria’s famous port library.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Blended Greek and eastern customs",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "323 BC",
+                        "gloss": "Blended Greek and eastern customs"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Sparked Alexandria’s famous port library",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "323 BC",
+                        "gloss": "Sparked Alexandria’s famous port library"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "Great Library & Conquering Rome",
+                "dateChip": "323–146 BC",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Great Library",
+                "gloss": "Alexandria’s Pharos Lighthouse and Great Library shone with Greek scrolls, dazzling the Roman Republic even after Rome conquered Greece in 146 BC.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Pharos Tower & Scroll Library",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Pharos Lighthouse",
+                    "gloss": "Gathered hundreds of thousands scrolls; Scholars studied stars and Euclid.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Gathered hundreds of thousands scrolls",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Pharos Lighthouse",
+                        "gloss": "Gathered hundreds of thousands scrolls"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Scholars studied stars and Euclid",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Pharos Lighthouse",
+                        "gloss": "Scholars studied stars and Euclid"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Rome Conquered Yet Copied Greece",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "146 BC",
+                    "gloss": "Roman legions took Greece 146 BC; Hired Greek teachers, copied statues.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Roman legions took Greece 146 BC",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "146 BC",
+                        "gloss": "Roman legions took Greece 146 BC"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Hired Greek teachers, copied statues",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "146 BC",
+                        "gloss": "Hired Greek teachers, copied statues"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Carried Greek Ideas Across Europe",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Roman Republic",
+                    "gloss": "Educated Romans read poet Homer; Passed Greek learning toward Britain.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Educated Romans read poet Homer",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Roman Republic",
+                        "gloss": "Educated Romans read poet Homer"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Passed Greek learning toward Britain",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Roman Republic",
+                        "gloss": "Passed Greek learning toward Britain"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "Votes, Words, Columns & 1896",
+                "dateChip": "1896 & Today",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Modern Olympic Games",
+                "gloss": "Elections, juries, Greek words, stone columns, and the 1896 Athens Modern Olympics prove Greece’s legacy still shapes daily life.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Votes, Juries & Everyday Words",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "dinosaur",
+                    "gloss": "Echoes Athenian voting and juries; Words: school, dinosaur, planet, music.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Echoes Athenian voting and juries",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "dinosaur",
+                        "gloss": "Echoes Athenian voting and juries"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Words: school, dinosaur, planet, music",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "dinosaur",
+                        "gloss": "Words: school, dinosaur, planet, music"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Stone Columns & 1896 Olympics",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Corinthian",
+                    "gloss": "Doric, Ionic, leafy Corinthian columns; 1896 Panathenaic Stadium launched Games.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Doric, Ionic, leafy Corinthian columns",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Corinthian",
+                        "gloss": "Doric, Ionic, leafy Corinthian columns"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "1896 Panathenaic Stadium launched Games",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Corinthian",
+                        "gloss": "1896 Panathenaic Stadium launched Games"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Shaped Modern Classrooms & Sport",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "legacy",
+                    "gloss": "Fourteen nations raced in 1896; Tiny poleis left lasting footprint.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Fourteen nations raced in 1896",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "legacy",
+                        "gloss": "Fourteen nations raced in 1896"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Tiny poleis left lasting footprint",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "legacy",
+                        "gloss": "Tiny poleis left lasting footprint"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

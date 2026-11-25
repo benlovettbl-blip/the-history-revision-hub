@@ -1169,6 +1169,14 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
       selectedGlobalIdx = Math.max(0, Math.min(allMilestones.length - 1, restoreIdx));
       window._ultRestoreMilestoneIdx = null;
       window._cmeRestoreMilestoneIdx = null;
+    } else if (typeof window._ultFocusLessonIdx === 'number') {
+      const targetLesson = window._ultFocusLessonIdx;
+      window._ultFocusLessonIdx = null;
+      let hitIdx = allMilestones.findIndex((m) => m.lessonIndex === targetLesson);
+      if (hitIdx < 0 && targetLesson > 0) {
+        hitIdx = allMilestones.findIndex((m) => m.lessonIndex >= targetLesson);
+      }
+      if (hitIdx >= 0) selectedGlobalIdx = hitIdx;
     }
     window._cmeActiveMilestoneIdx = selectedGlobalIdx;
     window._ultActiveMilestoneIdx = selectedGlobalIdx;

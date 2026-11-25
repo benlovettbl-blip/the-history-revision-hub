@@ -18,14 +18,21 @@ export function isStaffModeActive() {
   try {
     if (sessionStorage.getItem('hh_preview_as_pupil') === 'true') return false;
     const params = new URLSearchParams(window.location.search);
-    if (params.get('locked') === 'true' || params.get('mode') === 'pupil') return false;
-    return Boolean(
-      window.isTeacherMode ||
-        localStorage.getItem('history_hub_teacher_mode') === 'true' ||
-        localStorage.getItem('history_chess_teacher_auth') === 'true',
-    );
+    if (
+      params.get('locked') === 'true' ||
+      params.get('mode') === 'pupil' ||
+      params.get('safeguard') === 'true'
+    ) {
+      return false;
+    }
+    // Keep < 933px mobile phones completely clean for independent pupil revision
+    if (window.innerWidth < 933) {
+      return false;
+    }
+    // Open by default on all desktop, laptop & classroom smartboard screens (>= 933px) — zero PIN friction!
+    return true;
   } catch (e) {
-    return Boolean(window.isTeacherMode);
+    return true;
   }
 }
 

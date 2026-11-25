@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_maya_civilisation",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "The Ancient Maya — Rainforest Cities & Maths (c. 2000 BC–AD 1500)",
+  "examDateBoundary": "c. 2000 BC–AD 1500",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "The Ancient Maya",
+    "subLabel": "Key Stage 2",
+    "dateChip": "c. 2000 BC–AD 1500",
+    "gloss": "How Maya communities built limestone rainforest cities, carved 800 glyphs, invented place-value zero, traded cacao, and still thrive over seven million strong today.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "1. Rainforest Cities & Kings",
+        "dateChip": "c. 2000 BC–AD 900",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Three Sisters",
+        "gloss": "Across Mesoamerica’s three zones, Maya engineers stored water in cenotes and grew Three Sisters crops to feed 40+ stone city-states ruled by holy Ajaw kings and queens.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Stone Cities in Rainforests",
+            "dateChip": "c. 2000 BC–AD 900",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Three Sisters",
+            "q2Chain": "Three Mesoamerican zones trade jade & obsidian → Cenotes, reservoirs & Three Sisters crops → Stone pyramids contrast Saxon timber huts",
+            "gloss": "Three Mesoamerican zones trade jade & obsidian → Cenotes, reservoirs & Three Sisters crops → Stone pyramids contrast Saxon timber huts",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Mesoamerica’s Three Zones",
+                "dateChip": "c. 2000 BC–AD 250",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "obsidian",
+                "gloss": "Maya families settled volcanic highlands, rainforest lowlands, and limestone Yucatán, building stone cities without metal ploughs or wheels.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Highland Jade, Obsidian & Quetzals",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "quetzal",
+                    "gloss": "Volcanic black obsidian, green jade; Cloud-forest emerald quetzal feathers.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Volcanic black obsidian, green jade",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "quetzal",
+                        "gloss": "Volcanic black obsidian, green jade"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Cloud-forest emerald quetzal feathers",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "quetzal",
+                        "gloss": "Cloud-forest emerald quetzal feathers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Rainforest Lowlands & Flat Yucatán",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Yucatán Peninsula",
+                    "gloss": "Jaguars prowled tall rainforest trees; Built without wheels or metal.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Jaguars prowled tall rainforest trees",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Yucatán Peninsula",
+                        "gloss": "Jaguars prowled tall rainforest trees"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Built without wheels or metal",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Yucatán Peninsula",
+                        "gloss": "Built without wheels or metal"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Porous Rock Needed Clever Water",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "limestone",
+                    "gloss": "Rain sank through porous limestone; Pushed towns to store rainwater.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Rain sank through porous limestone",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "limestone",
+                        "gloss": "Rain sank through porous limestone"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Pushed towns to store rainwater",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "limestone",
+                        "gloss": "Pushed towns to store rainwater"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Cenotes & Three Sisters Crops",
+                "dateChip": "c. 1000 BC–AD 600",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "cenotes",
+                "gloss": "Engineers tapped Yucatán cenotes and plastered Tikal reservoirs while farmers grew maize, climbing beans, and wide squash together.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sinkhole Cenotes & Chultun Tanks",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "chultuns",
+                    "gloss": "Plastered giant stone Tikal reservoirs; Carved stepped hillside farm terraces.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Plastered giant stone Tikal reservoirs",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "chultuns",
+                        "gloss": "Plastered giant stone Tikal reservoirs"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Carved stepped hillside farm terraces",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "chultuns",
+                        "gloss": "Carved stepped hillside farm terraces"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Maize, Climbing Beans & Squash",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Three Sisters",
+                    "gloss": "Maize poles held soil-rich beans; Wide squash leaves blocked weeds.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Maize poles held soil-rich beans",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Three Sisters",
+                        "gloss": "Maize poles held soil-rich beans"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Wide squash leaves blocked weeds",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Three Sisters",
+                        "gloss": "Wide squash leaves blocked weeds"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Fed Tens of Thousands",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Tikal",
+                    "gloss": "Raised wetland fields grew surpluses; Supported masons and plaza markets.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Raised wetland fields grew surpluses",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Tikal",
+                        "gloss": "Raised wetland fields grew surpluses"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Supported masons and plaza markets",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Tikal",
+                        "gloss": "Supported masons and plaza markets"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Stone Plazas vs Saxon Britain",
+                "dateChip": "c. AD 600–900",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Uxmal",
+                "gloss": "Around AD 900, Uxmal and Tikal gleamed with painted limestone step-pyramids whereas Anglo-Saxon Britain farmed around small wooden halls.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Step-Pyramids at Tikal & Uxmal",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "step-pyramids",
+                    "gloss": "Built whitewashed courtyard stone homes; Traded cacao, cotton, salt, honey.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Built whitewashed courtyard stone homes",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "step-pyramids",
+                        "gloss": "Built whitewashed courtyard stone homes"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Traded cacao, cotton, salt, honey",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "step-pyramids",
+                        "gloss": "Traded cacao, cotton, salt, honey"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Saxon Britain Used Timber Halls",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Anglo-Saxon Britain",
+                    "gloss": "Small wooden villages across Atlantic; Used iron ploughs, zero pyramids.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Small wooden villages across Atlantic",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Anglo-Saxon Britain",
+                        "gloss": "Small wooden villages across Atlantic"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Used iron ploughs, zero pyramids",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Anglo-Saxon Britain",
+                        "gloss": "Used iron ploughs, zero pyramids"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Proved Stone Cities Needed Zero Iron",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "observatories",
+                    "gloss": "Painted stone plazas and observatories; Thrived through clever farming teamwork.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Painted stone plazas and observatories",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "observatories",
+                        "gloss": "Painted stone plazas and observatories"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Thrived through clever farming teamwork",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "observatories",
+                        "gloss": "Thrived through clever farming teamwork"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Pyramids, Pakal & Queens",
+            "dateChip": "c. AD 250–900",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Pakal",
+            "q2Chain": "40+ rival city-states under holy Ajaw lords → King Pakal’s 68-year reign & jade mask → Royal Maya women & Bonampak murals",
+            "gloss": "40+ rival city-states under holy Ajaw lords → King Pakal’s 68-year reign & jade mask → Royal Maya women & Bonampak murals",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "40+ City-States & Holy Ajaws",
+                "dateChip": "c. AD 250–900",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Ajaw",
+                "gloss": "Like Ancient Greece, over forty independent Maya city-states competed under sacred K’uhul Ajaw rulers atop corbel-vaulted pyramids.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Rival Tikal, Calakmul & Palenque",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Calakmul",
+                    "gloss": "Never formed one single empire; Copán and Yaxchilán forged alliances.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Never formed one single empire",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Calakmul",
+                        "gloss": "Never formed one single empire"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Copán and Yaxchilán forged alliances",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Calakmul",
+                        "gloss": "Copán and Yaxchilán forged alliances"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Holy Ajaw Lords Atop Pyramids",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "corbelled vaults",
+                    "gloss": "Spoke with gods for rain; Crowned pyramids with corbelled vaults.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Spoke with gods for rain",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "corbelled vaults",
+                        "gloss": "Spoke with gods for rain"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Crowned pyramids with corbelled vaults",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "corbelled vaults",
+                        "gloss": "Crowned pyramids with corbelled vaults"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Rulers Built Grand Jade Tombs",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "city-states",
+                    "gloss": "Stood high above red plazas; Showed divine favour in stone.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Stood high above red plazas",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "city-states",
+                        "gloss": "Stood high above red plazas"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Showed divine favour in stone",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "city-states",
+                        "gloss": "Showed divine favour in stone"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "King Pakal & Jade Tomb Mask",
+                "dateChip": "AD 615–683",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Temple of the Inscriptions",
+                "gloss": "Crowned aged twelve in AD 615, King Pakal ruled Palenque for 68 years and lay buried wearing a life-sized green jade mosaic mask.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Crowned Aged 12; Ruled 68 Years",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "AD 615",
+                    "gloss": "Wore jade collars, quetzal feathers; Built four-storey stone watchtower.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Wore jade collars, quetzal feathers",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "AD 615",
+                        "gloss": "Wore jade collars, quetzal feathers"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Built four-storey stone watchtower",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "AD 615",
+                        "gloss": "Built four-storey stone watchtower"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Hidden Stairway & Green Jade Mask",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "AD 683",
+                    "gloss": "Buried beneath Temple of Inscriptions; Life-sized green jade mosaic mask.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Buried beneath Temple of Inscriptions",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "AD 683",
+                        "gloss": "Buried beneath Temple of Inscriptions"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Life-sized green jade mosaic mask",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "AD 683",
+                        "gloss": "Life-sized green jade mosaic mask"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Guided by Strong Royal Women",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Palenque",
+                    "gloss": "Mother guided young Pakal first; Royal queens shaped alliances next.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Mother guided young Pakal first",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Palenque",
+                        "gloss": "Mother guided young Pakal first"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Royal queens shaped alliances next",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Palenque",
+                        "gloss": "Royal queens shaped alliances next"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Warrior Queens & Palace Murals",
+                "dateChip": "c. AD 600–800",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Lady Six Sky",
+                "gloss": "Lady Sak K’uk’ and warrior queen Lady Six Sky appeared on stone stelae while Bonampak’s murals captured royal music and jaguar pelts.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Lady Sak K’uk’ & Lady Six Sky",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Naranjo",
+                    "gloss": "Sak K’uk’ crowned young Pakal; Six Sky rebuilt Naranjo AD 682.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Sak K’uk’ crowned young Pakal",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Naranjo",
+                        "gloss": "Sak K’uk’ crowned young Pakal"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Six Sky rebuilt Naranjo AD 682",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Naranjo",
+                        "gloss": "Six Sky rebuilt Naranjo AD 682"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bonampak Murals & Turtle Drums",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Bonampak",
+                    "gloss": "Blew horns; beat turtle shells; Danced in spotted jaguar pelts.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Blew horns; beat turtle shells",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Bonampak",
+                        "gloss": "Blew horns; beat turtle shells"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Danced in spotted jaguar pelts",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Bonampak",
+                        "gloss": "Danced in spotted jaguar pelts"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Scribes Carved Every Royal Deed",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "stelae",
+                    "gloss": "Queens stood proud on stelae; Needed 800 glyphs and calendars.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Queens stood proud on stelae",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "stelae",
+                        "gloss": "Queens stood proud on stelae"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Needed 800 glyphs and calendars",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "stelae",
+                        "gloss": "Needed 800 glyphs and calendars"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "2. Glyphs, Zero & Daily Cacao",
+        "dateChip": "c. AD 300–900",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Dresden Codex",
+        "gloss": "Maya scribes painted bark-paper codices, invented place-value zero in base-20 maths, tracked Venus from El Caracol, traded cacao-bean cash, and played Pok-ta-Pok.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Glyphs, Bark Books & Zero",
+            "dateChip": "c. AD 300–900",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Dresden Codex",
+            "q2Chain": "800 glyphs on stelae & fig-bark codices → Shell-dot-bar base-20 place-value zero → El Caracol Venus sightings link two calendars",
+            "gloss": "800 glyphs on stelae & fig-bark codices → Shell-dot-bar base-20 place-value zero → El Caracol Venus sightings link two calendars",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "800 Glyphs & Fig-Bark Codices",
+                "dateChip": "c. AD 300–900",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "codices",
+                "gloss": "Scribes mixed 800 word and syllable glyphs on Copán’s 63-step stairway and painted accordion-folded fig-bark books like the Dresden Codex.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "800 Word & Syllable Signs",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Hieroglyphic Stairway",
+                    "gloss": "Spelled any spoken Mayan sentence; 2,000+ glyphs on Copán stairway.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Spelled any spoken Mayan sentence",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Hieroglyphic Stairway",
+                        "gloss": "Spelled any spoken Mayan sentence"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "2,000+ glyphs on Copán stairway",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Hieroglyphic Stairway",
+                        "gloss": "2,000+ glyphs on Copán stairway"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Fig-Bark Paper & Turkey Quills",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "fig-tree bark",
+                    "gloss": "Coated bark with white lime; Folded accordion Dresden Codex book.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Coated bark with white lime",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "fig-tree bark",
+                        "gloss": "Coated bark with white lime"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Folded accordion Dresden Codex book",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "fig-tree bark",
+                        "gloss": "Folded accordion Dresden Codex book"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Needed Fast Base-20 Numbers",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "glyphs",
+                    "gloss": "Carved royal dates on stelae; Counted huge sky cycles next.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Carved royal dates on stelae",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "glyphs",
+                        "gloss": "Carved royal dates on stelae"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Counted huge sky cycles next",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "glyphs",
+                        "gloss": "Counted huge sky cycles next"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Shell, Dot & Bar: Inventing Zero",
+                "dateChip": "c. AD 350–900",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "place-value zero",
+                "gloss": "Independently inventing place-value zero, Maya base-20 maths stacked numbers vertically using a shell (0), pebble dot (1), and bar (5).",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Shell (0), Dot (1) & Bar (5)",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "base-20",
+                    "gloss": "Matched ten fingers, ten toes; Rome still lacked any zero.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Matched ten fingers, ten toes",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "base-20",
+                        "gloss": "Matched ten fingers, ten toes"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Rome still lacked any zero",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "base-20",
+                        "gloss": "Rome still lacked any zero"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Vertical Columns Tallied Sums Fast",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "wooden bar",
+                    "gloss": "Stacked ones, twenties, four hundreds; Counted market cacao, measured pyramids.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Stacked ones, twenties, four hundreds",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "wooden bar",
+                        "gloss": "Stacked ones, twenties, four hundreds"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Counted market cacao, measured pyramids",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "wooden bar",
+                        "gloss": "Counted market cacao, measured pyramids"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Let Astronomers Map Bright Venus",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "place-value zero",
+                    "gloss": "Invented zero all on own; Calculated star paths across centuries.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Invented zero all on own",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "place-value zero",
+                        "gloss": "Invented zero all on own"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Calculated star paths across centuries",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "place-value zero",
+                        "gloss": "Calculated star paths across centuries"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "El Caracol & Two Calendars",
+                "dateChip": "c. AD 600–900",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "El Caracol",
+                "gloss": "Sighting Venus through El Caracol’s round dome without glass telescopes, astronomers meshed the 260-day Tzolk’in and 365-day Haab’ calendars.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "El Caracol Windows Tracked Venus",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Venus",
+                    "gloss": "No glass telescopes needed indoors; Round tower at Chichén Itzá.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "No glass telescopes needed indoors",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Venus",
+                        "gloss": "No glass telescopes needed indoors"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Round tower at Chichén Itzá",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Venus",
+                        "gloss": "Round tower at Chichén Itzá"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "260-Day Tzolk’in & 365-Day Haab’",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "52 years",
+                    "gloss": "Meshed together like two cogwheels; Clicked back every 52 years.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Meshed together like two cogwheels",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "52 years",
+                        "gloss": "Meshed together like two cogwheels"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Clicked back every 52 years",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "52 years",
+                        "gloss": "Clicked back every 52 years"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Guided Maize Planting & Feasts",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Haab'",
+                    "gloss": "Tzolk’in named lucky festival days; Solar Haab’ timed farm harvests.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Tzolk’in named lucky festival days",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Haab'",
+                        "gloss": "Tzolk’in named lucky festival days"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Solar Haab’ timed farm harvests",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Haab'",
+                        "gloss": "Solar Haab’ timed farm harvests"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Maize, Cacao & Pok-ta-Pok",
+            "dateChip": "c. AD 600–900",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Pok-ta-Pok",
+            "q2Chain": "Limewater maize ground on stone metates → Cacao-bean cash, human porters & canoes → Hip-bouncing rubber balls in Pok-ta-Pok",
+            "gloss": "Limewater maize ground on stone metates → Cacao-bean cash, human porters & canoes → Hip-bouncing rubber balls in Pok-ta-Pok",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Limewater Maize & Frothy Cacao",
+                "dateChip": "AD 600–900",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "metate",
+                "gloss": "Cooks soaked maize in limewater to unlock nutrients, ground tortilla dough on volcanic metates, and whipped chilli-spiced cacao.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Nixtamal Maize & Flat Tortillas",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "nixtamal",
+                    "gloss": "Limewater unlocked vital corn nutrients; Ground dough on stone metates.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Limewater unlocked vital corn nutrients",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "nixtamal",
+                        "gloss": "Limewater unlocked vital corn nutrients"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Ground dough on stone metates",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "nixtamal",
+                        "gloss": "Ground dough on stone metates"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Roasted Cacao Whipped With Chilli",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "cacao",
+                    "gloss": "Steamed tamales inside corn husks; Poured frothy honey-chilli royal drinks.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Steamed tamales inside corn husks",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "cacao",
+                        "gloss": "Steamed tamales inside corn husks"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Poured frothy honey-chilli royal drinks",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "cacao",
+                        "gloss": "Poured frothy honey-chilli royal drinks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Dried Cacao Beans Became Cash",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "tortillas",
+                    "gloss": "Valuable seeds grew in pods; Used across shaded plaza markets.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Valuable seeds grew in pods",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "tortillas",
+                        "gloss": "Valuable seeds grew in pods"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Used across shaded plaza markets",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "tortillas",
+                        "gloss": "Used across shaded plaza markets"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Cacao Money, Porters & Canoes",
+                "dateChip": "AD 600–900",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "cacao beans",
+                "gloss": "Ten cacao beans bought a rabbit and a hundred bought a turkey, carried along stone causeways by forehead-strap porters and canoes.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "10 Beans Rabbit; 100 Turkey",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "turkey",
+                    "gloss": "Cheats stuffed clay inside shells; Market judges checked beans closely.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Cheats stuffed clay inside shells",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "turkey",
+                        "gloss": "Cheats stuffed clay inside shells"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Market judges checked beans closely",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "turkey",
+                        "gloss": "Market judges checked beans closely"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Forehead-Strap Porters & Canoes",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "porters",
+                    "gloss": "Zero horses, oxen, wheeled carts; Paddled salt, obsidian, green jade.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Zero horses, oxen, wheeled carts",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "porters",
+                        "gloss": "Zero horses, oxen, wheeled carts"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Paddled salt, obsidian, green jade",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "porters",
+                        "gloss": "Paddled salt, obsidian, green jade"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Crowds Gathered by Ballcourts",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "canoes",
+                    "gloss": "Walked white raised stone causeways; Filled plazas on festival days.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Walked white raised stone causeways",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "canoes",
+                        "gloss": "Walked white raised stone causeways"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Filled plazas on festival days",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "canoes",
+                        "gloss": "Filled plazas on festival days"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Sacred Pok-ta-Pok Ballcourts",
+                "dateChip": "AD 600–900",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "rubber ball",
+                "gloss": "Wearing thick leather-and-wood hip yokes, athletes dived to bounce a heavy 4kg solid rubber ball through stone rings without hands or feet.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "4kg Rubber Ball & Macaw Heads",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "ballcourts",
+                    "gloss": "Sloping limestone walls beside pyramids; Heavy bouncing ball bruised ribs.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Sloping limestone walls beside pyramids",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "ballcourts",
+                        "gloss": "Sloping limestone walls beside pyramids"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Heavy bouncing ball bruised ribs",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "ballcourts",
+                        "gloss": "Heavy bouncing ball bruised ribs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Hip Yokes Only — No Hands",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "hip yokes",
+                    "gloss": "Hands and feet broke rules; Aimed high through stone rings.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Hands and feet broke rules",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "hip yokes",
+                        "gloss": "Hands and feet broke rules"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Aimed high through stone rings",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "hip yokes",
+                        "gloss": "Aimed high through stone rings"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Honoured Sun, Rain & Myth Twins",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Pok-ta-Pok",
+                    "gloss": "More than sport: sacred ritual; Echoed Hero Twins in Xibalba.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "More than sport: sacred ritual",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Pok-ta-Pok",
+                        "gloss": "More than sport: sacred ritual"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Echoed Hero Twins in Xibalba",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Pok-ta-Pok",
+                        "gloss": "Echoed Hero Twins in Xibalba"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "3. Beliefs, AD 900 & Today",
+        "dateChip": "AD 600–Today",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "El Castillo",
+        "gloss": "From Popol Vuh maize myths and Chichén Itzá’s 365-step serpent pyramid to the southern AD 900 drought shift and over seven million living Maya today.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Maize Gods & Chichén Itzá",
+            "dateChip": "c. AD 600–1200",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "El Castillo",
+            "q2Chain": "Popol Vuh maize humans & Chaac rain caves → El Castillo’s 365 solar steps → Equinox sunlit serpent Kukulkan glides down",
+            "gloss": "Popol Vuh maize humans & Chaac rain caves → El Castillo’s 365 solar steps → Equinox sunlit serpent Kukulkan glides down",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Popol Vuh, Xibalba & Chaac",
+                "dateChip": "AD 600–900",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Popol Vuh",
+                "gloss": "The Popol Vuh told how gods kneaded humans from maize dough, while priests burned copal in cenote caves for rain god Chaac.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Mud & Wood Failed; Maize Worked",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "maize dough",
+                    "gloss": "Mud crumbled; wood forgot thanks; Kneaded yellow, white maize humans.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Mud crumbled; wood forgot thanks",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "maize dough",
+                        "gloss": "Mud crumbled; wood forgot thanks"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Kneaded yellow, white maize humans",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "maize dough",
+                        "gloss": "Kneaded yellow, white maize humans"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Hero Twins & Chaac Rain Caves",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Xibalba",
+                    "gloss": "Twins beat Xibalba lords playing; Burned copal resin for Chaac.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Twins beat Xibalba lords playing",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Xibalba",
+                        "gloss": "Twins beat Xibalba lords playing"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Burned copal resin for Chaac",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Xibalba",
+                        "gloss": "Burned copal resin for Chaac"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Inspired Sky-Aligned Pyramids",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Chaac",
+                    "gloss": "Cenotes seen as underworld doors; Linked farming rains to stars.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Cenotes seen as underworld doors",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Chaac",
+                        "gloss": "Cenotes seen as underworld doors"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Linked farming rains to stars",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Chaac",
+                        "gloss": "Linked farming rains to stars"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "El Castillo’s 365 Stone Steps",
+                "dateChip": "AD 800–1100",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Kukulkan",
+                "gloss": "At Chichén Itzá, builders gave Kukulkan’s El Castillo four 91-step staircases plus one top platform to equal all 365 solar days.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Four 91-Step Stairs Plus Top",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "365",
+                    "gloss": "Dedicated to feathered serpent Kukulkan; 91 times 4 plus 1.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Dedicated to feathered serpent Kukulkan",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "365",
+                        "gloss": "Dedicated to feathered serpent Kukulkan"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "91 times 4 plus 1",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "365",
+                        "gloss": "91 times 4 plus 1"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Priests Announced Planting Dates",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Chichén Itzá",
+                    "gloss": "Watched bright stars from summit; Called across wide northern plaza.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Watched bright stars from summit",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Chichén Itzá",
+                        "gloss": "Watched bright stars from summit"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Called across wide northern plaza",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Chichén Itzá",
+                        "gloss": "Called across wide northern plaza"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Cast Moving Equinox Snake Shadow",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "El Castillo",
+                    "gloss": "Angled nine stone terraces precisely; Turned sunlight into living calendar.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Angled nine stone terraces precisely",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "El Castillo",
+                        "gloss": "Angled nine stone terraces precisely"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Turned sunlight into living calendar",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "El Castillo",
+                        "gloss": "Turned sunlight into living calendar"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Equinox Serpent Shadow Glides",
+                "dateChip": "Spring & Autumn",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "equinox",
+                "gloss": "Every spring and autumn equinox, seven sunlit triangles rippled down El Castillo’s northern stairs to join Kukulkan’s stone head.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Seven Sunlit Triangles Slithered",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "serpent shadow",
+                    "gloss": "Equal day and night hours; Joined carved open-jawed snake head.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Equal day and night hours",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "serpent shadow",
+                        "gloss": "Equal day and night hours"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Joined carved open-jawed snake head",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "serpent shadow",
+                        "gloss": "Joined carved open-jawed snake head"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Unfading Indigo-Clay Maya Blue",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Maya Blue",
+                    "gloss": "Heated indigo leaves with clay; Celebrated rains and maize harvests.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Heated indigo leaves with clay",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Maya Blue",
+                        "gloss": "Heated indigo leaves with clay"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Celebrated rains and maize harvests",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Maya Blue",
+                        "gloss": "Celebrated rains and maize harvests"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Blended Maths, Astronomy & Faith",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Kukulkan",
+                    "gloss": "Northern Chichén Itzá boomed long; Thrived even as south shifted.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Northern Chichén Itzá boomed long",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Kukulkan",
+                        "gloss": "Northern Chichén Itzá boomed long"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Thrived even as south shifted",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Kukulkan",
+                        "gloss": "Thrived even as south shifted"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. AD 900 Shift & Living Maya",
+            "dateChip": "AD 800–Today",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "seven million",
+            "q2Chain": "Drought, deforestation & war empty southern Tikal (c. 900) → Northern cenote cities & coastal Tulum boom → 7+ million Maya thrive today",
+            "gloss": "Drought, deforestation & war empty southern Tikal (c. 900) → Northern cenote cities & coastal Tulum boom → 7+ million Maya thrive today",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Three Linked Southern Causes",
+                "dateChip": "AD 800–950",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "drought",
+                "gloss": "Southern cities like Tikal, Palenque, and Copán emptied around AD 900 due to three linked causes: drought, deforestation, and warfare.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Severe Multi-Year Drought Struck",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "multi-causal",
+                    "gloss": "Lake-bed snail shells prove drought; Dried stone southern reservoirs empty.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Lake-bed snail shells prove drought",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "multi-causal",
+                        "gloss": "Lake-bed snail shells prove drought"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Dried stone southern reservoirs empty",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "multi-causal",
+                        "gloss": "Dried stone southern reservoirs empty"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Deforestation & Royal Warfare",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "deforestation",
+                    "gloss": "Lime plaster fires stripped hillsides; Soil washed; wars blocked trade.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Lime plaster fires stripped hillsides",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "deforestation",
+                        "gloss": "Lime plaster fires stripped hillsides"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Soil washed; wars blocked trade",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "deforestation",
+                        "gloss": "Soil washed; wars blocked trade"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Families Moved North to Cenotes",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Copán",
+                    "gloss": "Packed metates and walked north; Maya people never vanished away.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Packed metates and walked north",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Copán",
+                        "gloss": "Packed metates and walked north"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Maya people never vanished away",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Copán",
+                        "gloss": "Maya people never vanished away"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "Northern Cenotes & Port Tulum",
+                "dateChip": "AD 950–1520",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Tulum",
+                "gloss": "For centuries after AD 900, Postclassic northern cities near deep cenotes like Chichén Itzá and cliffside Caribbean Tulum boomed.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Chichén Itzá & Uxmal Boomed",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Postclassic",
+                    "gloss": "Deep Yucatán cenotes held water; Thrived from AD 950–1520.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Deep Yucatán cenotes held water",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Postclassic",
+                        "gloss": "Deep Yucatán cenotes held water"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Thrived from AD 950–1520",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Postclassic",
+                        "gloss": "Thrived from AD 950–1520"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Cliffside Tulum Welcomed Sea Canoes",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Caribbean",
+                    "gloss": "Walled port beside salt flats; Traded honey, cotton, bright feathers.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Walled port beside salt flats",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Caribbean",
+                        "gloss": "Walled port beside salt flats"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Traded honey, cotton, bright feathers",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Caribbean",
+                        "gloss": "Traded honey, cotton, bright feathers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Resisted Conquest Until 1697",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "1697",
+                    "gloss": "Spanish friars burned bark codices; Four ancient books still survived.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Spanish friars burned bark codices",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "1697",
+                        "gloss": "Spanish friars burned bark codices"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Four ancient books still survived",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "1697",
+                        "gloss": "Four ancient books still survived"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "Over 7 Million Maya Today!",
+                "dateChip": "1500s–Today",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "huipil",
+                "gloss": "Shattering the “vanished Maya” myth, over seven million Maya people speak 30+ languages, weave huipil cloth, and read glyphs today.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "30+ Languages & Huipil Looms",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Mayan languages",
+                    "gloss": "Over seven million proud Maya; Weave bright huipil on looms.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Over seven million proud Maya",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Mayan languages",
+                        "gloss": "Over seven million proud Maya"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Weave bright huipil on looms",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Mayan languages",
+                        "gloss": "Weave bright huipil on looms"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Modern Maya Read Ancient Glyphs",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "seven million",
+                    "gloss": "Live across Mexico, Central America; Farm golden maize; read stelae.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Live across Mexico, Central America",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "seven million",
+                        "gloss": "Live across Mexico, Central America"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Farm golden maize; read stelae",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "seven million",
+                        "gloss": "Farm golden maize; read stelae"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Shattered the “Vanished Maya” Myth",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "codices",
+                    "gloss": "Endured 1500s diseases and steel; Living culture thrives proudly today.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Endured 1500s diseases and steel",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "codices",
+                        "gloss": "Endured 1500s diseases and steel"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Living culture thrives proudly today",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "codices",
+                        "gloss": "Living culture thrives proudly today"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

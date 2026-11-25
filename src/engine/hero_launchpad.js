@@ -452,6 +452,10 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
           <i class="fa-solid fa-clock-rotate-left" style="color:#2dd4bf;"></i>
           <span>Timeline</span>
         </button>
+        <button type="button" class="hh-mus-pill" onclick="window.switchView && window.switchView('mindmap', '${unitId}')">
+          <i class="fa-solid fa-diagram-project" style="color:#fbbf24;"></i>
+          <span>Mind Map</span>
+        </button>
         ${
           hasInfographics
             ? `<button type="button" class="hh-mus-pill" onclick="if(window.openLessonInfographicModal){window.openLessonInfographicModal('${mobileFirstStoryLessonId}', '${unitId}');}else if(window.openInfographicModal && window.__INFOGRAPHICS_MANIFEST__?.['${unitId}']?.[0]){window.openInfographicModal(window.__INFOGRAPHICS_MANIFEST__['${unitId}'][0].slug);}">
@@ -505,7 +509,7 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
             }
             <button type="button" id="unit-bar-btn-practice" onclick="window.toggleUnitResourceDrawer('practice')" style="background: #1e293b; color: #f8fafc; border: 1px solid #475569; border-radius: 7px; padding: 6px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
               <i class="fa-solid fa-gamepad" style="color: #34d399;"></i>
-              <span>Games, Quiz${hasTimeline ? ' &amp; Timeline' : ''}</span>
+              <span>Games, Quiz, Timeline &amp; Mind Map</span>
               <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem; opacity: 0.75;"></i>
             </button>
             ${
@@ -586,7 +590,7 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
               hasTimeline
                 ? `
                 <button type="button" onclick="window.switchView && window.switchView('timeline', '${unitId}')" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 13px 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left;">
-                  <div style="width: 38px; height: 38px; border-radius: 8px; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                  <div style="width: 38px; height: 38px; border-radius: 8px; background: #ecfdf5; color: #059669; display: flex; align-items: center; gap: 12px; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-clock-rotate-left"></i></div>
                   <div>
                     <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">${isKs2 ? 'Interactive Chronology' : 'Living Timeline'}</div>
                     <div style="font-size: 0.73rem; color: #64748b;">Explore turning-point milestones</div>
@@ -594,6 +598,14 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
                 </button>`
                 : ''
             }
+
+            <button type="button" onclick="window.switchView && window.switchView('mindmap', '${unitId}')" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 13px 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left;">
+              <div style="width: 38px; height: 38px; border-radius: 8px; background: #fef3c7; color: #d97706; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-diagram-project"></i></div>
+              <div>
+                <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">Mind Map Studio</div>
+                <div style="font-size: 0.73rem; color: #64748b;">5-ring interactive &amp; printable map</div>
+              </div>
+            </button>
 
             ${
               individualsCount > 0

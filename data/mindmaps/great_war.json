@@ -1,0 +1,2519 @@
+{
+  "unitId": "great_war",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "Causes of the Great War, 1871–1914",
+  "examDateBoundary": "1871–1914",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Causes of WWI, 1871–1914",
+    "subLabel": "KS3 History",
+    "dateChip": "1871–1914",
+    "gloss": "How German unification, imperial rivalry, the Dreadnought naval race, rival alliances, and the Sarajevo assassination caused war in 1914.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Unification & Empire",
+        "dateChip": "1871–1911",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Weltpolitik",
+        "gloss": "Prussian victory over France, French revanche over Alsace-Lorraine, Kaiser Wilhelm II’s Weltpolitik, and the two Moroccan crises.",
+        "children": [
+          {
+            "id": "kt1_l1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Unification & Bismarck",
+            "dateChip": "1862–1890",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Bismarck",
+            "gloss": "Bismarck unified Germany through Blood and Iron, annexed Alsace-Lorraine in 1871, and used alliances to keep vengeful France isolated.",
+            "children": [
+              {
+                "id": "kt1_l1_s1",
+                "tier": 3,
+                "label": "Sedan & Empire at Versailles",
+                "dateChip": "1862–1871",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "Battle of Sedan",
+                "gloss": "Bismarck’s Krupp steel artillery crushed France at Sedan and crowned Kaiser Wilhelm I at Versailles in January 1871.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Blood & Iron and Krupp Guns",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Blood & Iron",
+                    "gloss": "39 fragmented German states divided; Railways and breech-loading Krupp steel.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "39 fragmented German states divided",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Blood & Iron",
+                        "gloss": "39 fragmented German states divided"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Railways and breech-loading Krupp steel",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Blood & Iron",
+                        "gloss": "Railways and breech-loading Krupp steel"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sedan Victory & Versailles Crown",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Sedan",
+                    "gloss": "Captured Napoleon III, 80,000 troops; Wilhelm I crowned 18 January.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Captured Napoleon III, 80,000 troops",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Sedan",
+                        "gloss": "Captured Napoleon III, 80,000 troops"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Wilhelm I crowned 18 January",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Sedan",
+                        "gloss": "Wilhelm I crowned 18 January"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Imposed Punitive Frankfurt Peace",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Treaty of Frankfurt",
+                    "gloss": "Toppled French Second Empire regime; Made Germany Europe’s industrial titan.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Toppled French Second Empire regime",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Treaty of Frankfurt",
+                        "gloss": "Toppled French Second Empire regime"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Made Germany Europe’s industrial titan",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Treaty of Frankfurt",
+                        "gloss": "Made Germany Europe’s industrial titan"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Upended European Balance of Power",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Versailles",
+                    "gloss": "United northern and southern kingdoms; Created dominant Central European Reich.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c4_t1",
+                        "tier": 5,
+                        "label": "United northern and southern kingdoms",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Versailles",
+                        "gloss": "United northern and southern kingdoms"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Created dominant Central European Reich",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Versailles",
+                        "gloss": "Created dominant Central European Reich"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s2",
+                "tier": 3,
+                "label": "Frankfurt & French Revanche",
+                "dateChip": "1871–1889",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Alsace-Lorraine",
+                "gloss": "The May 1871 seizure of Alsace-Lorraine and five-billion-franc indemnity fuelled decades of French desire for revanche.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Seized Coal-Rich Alsace-Lorraine",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Alsace-Lorraine",
+                    "gloss": "5 billion gold francs indemnity; German troops occupied French cities.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "5 billion gold francs indemnity",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Alsace-Lorraine",
+                        "gloss": "5 billion gold francs indemnity"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "German troops occupied French cities",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Alsace-Lorraine",
+                        "gloss": "German troops occupied French cities"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Black-Crepe Maps & Conscription",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "revanche",
+                    "gloss": "School maps draped black crepe; Conscripted French boys aged twenty.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "School maps draped black crepe",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "revanche",
+                        "gloss": "School maps draped black crepe"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Conscripted French boys aged twenty",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "revanche",
+                        "gloss": "Conscripted French boys aged twenty"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Haunted Berlin With Two-Front Fear",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "two fronts",
+                    "gloss": "Permanent Franco-German border hatred; Pushed Bismarck to isolate France.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Permanent Franco-German border hatred",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "two fronts",
+                        "gloss": "Permanent Franco-German border hatred"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Pushed Bismarck to isolate France",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "two fronts",
+                        "gloss": "Pushed Bismarck to isolate France"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Forty Years of Continental Friction",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Treaty of Frankfurt",
+                    "gloss": "Poisoned Western European diplomacy deeply; Trained millions for future war.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Poisoned Western European diplomacy deeply",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Treaty of Frankfurt",
+                        "gloss": "Poisoned Western European diplomacy deeply"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Trained millions for future war",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Treaty of Frankfurt",
+                        "gloss": "Trained millions for future war"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s3",
+                "tier": 3,
+                "label": "Bismarck’s Isolation Diplomacy",
+                "dateChip": "1873–1890",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "Reinsurance Treaty",
+                "gloss": "Haunted by war on two fronts against France and Russia, Bismarck signed the secret 1887 Reinsurance Treaty to keep peace.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Dread of War on Two Fronts",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "two fronts",
+                    "gloss": "Feared France west, Russia east; Worked to deny France allies.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Feared France west, Russia east",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "two fronts",
+                        "gloss": "Feared France west, Russia east"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Worked to deny France allies",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "two fronts",
+                        "gloss": "Worked to deny France allies"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1887 Secret Reinsurance Treaty",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Reinsurance Treaty",
+                    "gloss": "Promised mutual Russo-German neutrality; Safeguarded Germany’s eastern frontier.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Promised mutual Russo-German neutrality",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Reinsurance Treaty",
+                        "gloss": "Promised mutual Russo-German neutrality"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Safeguarded Germany’s eastern frontier",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Reinsurance Treaty",
+                        "gloss": "Safeguarded Germany’s eastern frontier"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Unravelled After 1890 Dismissal",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Bismarck",
+                    "gloss": "Young Kaiser sacked veteran Bismarck; Allowed Russian treaty to lapse.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Young Kaiser sacked veteran Bismarck",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Bismarck",
+                        "gloss": "Young Kaiser sacked veteran Bismarck"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Allowed Russian treaty to lapse",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Bismarck",
+                        "gloss": "Allowed Russian treaty to lapse"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Kept Fragile Peace Until 1890",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Reinsurance Treaty",
+                    "gloss": "Cautious diplomacy balanced rival empires; Prevented Franco-Russian military bloc.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Cautious diplomacy balanced rival empires",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Reinsurance Treaty",
+                        "gloss": "Cautious diplomacy balanced rival empires"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Prevented Franco-Russian military bloc",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Reinsurance Treaty",
+                        "gloss": "Prevented Franco-Russian military bloc"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_l2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Weltpolitik & Morocco Crises",
+            "dateChip": "1884–1911",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Weltpolitik",
+            "gloss": "Scramble for Africa rules, Wilhelm II’s aggressive Weltpolitik, and German setbacks at Tangier, Algeciras, and Agadir.",
+            "children": [
+              {
+                "id": "kt1_l2_s1",
+                "tier": 3,
+                "label": "Berlin Rules & Weltpolitik",
+                "dateChip": "1884–1897",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Weltpolitik",
+                "gloss": "After the 1884 Berlin Conference sped African partition, Wilhelm II dismissed Bismarck in 1890 to chase \"a place in the sun\".",
+                "children": [
+                  {
+                    "id": "kt1_l2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1884 Berlin Effective Occupation",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Berlin Conference",
+                    "gloss": "Sought rubber, copper, palm oil; Triggered rush into African interior.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Sought rubber, copper, palm oil",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Berlin Conference",
+                        "gloss": "Sought rubber, copper, palm oil"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Triggered rush into African interior",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Berlin Conference",
+                        "gloss": "Triggered rush into African interior"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1890 Dismissal & Weltpolitik",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Weltpolitik",
+                    "gloss": "29-year-old Wilhelm II sacked Bismarck; Demanded overseas place in sun.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "29-year-old Wilhelm II sacked Bismarck",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Weltpolitik",
+                        "gloss": "29-year-old Wilhelm II sacked Bismarck"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Demanded overseas place in sun",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Weltpolitik",
+                        "gloss": "Demanded overseas place in sun"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Challenged France in North Africa",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "place in the sun",
+                    "gloss": "Envied British and French empires; Required colonies and battle fleet.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Envied British and French empires",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "place in the sun",
+                        "gloss": "Envied British and French empires"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Required colonies and battle fleet",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "place in the sun",
+                        "gloss": "Required colonies and battle fleet"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Scrapped Cautious European Restraint",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Weltpolitik",
+                    "gloss": "Replaced treaty balance with bluster; Alarmed London and Paris alike.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Replaced treaty balance with bluster",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Weltpolitik",
+                        "gloss": "Replaced treaty balance with bluster"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Alarmed London and Paris alike",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Weltpolitik",
+                        "gloss": "Alarmed London and Paris alike"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s2",
+                "tier": 3,
+                "label": "Tangier & Algeciras Setback",
+                "dateChip": "1905–1906",
+                "lessonIndex": 1,
+                "stageIndex": 3,
+                "searchTerm": "Algeciras Conference",
+                "gloss": "Wilhelm II landed at Tangier in 1905 to split the Anglo-French Entente, but isolated Germany at the 1906 Algeciras summit.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "White Horse Ride Into Tangier",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Tangier",
+                    "gloss": "Landed unannounced in March 1905; Tested 1904 Anglo-French Entente Cordiale.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Landed unannounced in March 1905",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Tangier",
+                        "gloss": "Landed unannounced in March 1905"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Tested 1904 Anglo-French Entente Cordiale",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Tangier",
+                        "gloss": "Tested 1904 Anglo-French Entente Cordiale"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Outvoted 12–2 at Algeciras",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Algeciras",
+                    "gloss": "Only Austria-Hungary backed Berlin’s vote; Britain backed French claims completely.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Only Austria-Hungary backed Berlin’s vote",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Algeciras",
+                        "gloss": "Only Austria-Hungary backed Berlin’s vote"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Britain backed French claims completely",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Algeciras",
+                        "gloss": "Britain backed French claims completely"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Began Secret UK–French Staff Talks",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "staff conversations",
+                    "gloss": "Joint military planning in London; Cemented rather than split Entente.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Joint military planning in London",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "staff conversations",
+                        "gloss": "Joint military planning in London"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Cemented rather than split Entente",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "staff conversations",
+                        "gloss": "Cemented rather than split Entente"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Deepened Berlin’s Encirclement Fear",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Algeciras Conference",
+                    "gloss": "Diplomatic bullying backfired badly; Left Germany isolated in Europe.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Diplomatic bullying backfired badly",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Algeciras Conference",
+                        "gloss": "Diplomatic bullying backfired badly"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Left Germany isolated in Europe",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Algeciras Conference",
+                        "gloss": "Left Germany isolated in Europe"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s3",
+                "tier": 3,
+                "label": "Agadir Gunboat Crisis",
+                "dateChip": "July 1911",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "Agadir",
+                "gloss": "Dispatching SMS Panther to Agadir in July 1911 triggered Lloyd George’s Mansion House warning and Anglo-French naval plans.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "French Troops Marched Into Fez",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Fez",
+                    "gloss": "Suppressed Moroccan unrest July 1911; Berlin sought colonial compensation.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Suppressed Moroccan unrest July 1911",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Fez",
+                        "gloss": "Suppressed Moroccan unrest July 1911"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Berlin sought colonial compensation",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Fez",
+                        "gloss": "Berlin sought colonial compensation"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "SMS Panther & Mansion House",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "SMS Panther",
+                    "gloss": "Gunboat anchored inside Agadir port; Lloyd George warned UK would fight.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Gunboat anchored inside Agadir port",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "SMS Panther",
+                        "gloss": "Gunboat anchored inside Agadir port"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Lloyd George warned UK would fight",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "SMS Panther",
+                        "gloss": "Lloyd George warned UK would fight"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Coordinated Entente Naval Plans",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Mansion House",
+                    "gloss": "Feared German Atlantic naval base; Humiliated Berlin forced to retreat.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Feared German Atlantic naval base",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Mansion House",
+                        "gloss": "Feared German Atlantic naval base"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Humiliated Berlin forced to retreat",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Mansion House",
+                        "gloss": "Humiliated Berlin forced to retreat"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Brought Europe Near War in 1911",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Agadir",
+                    "gloss": "Turned colonial rivalry military; Hardened British resolve against Germany.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Turned colonial rivalry military",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Agadir",
+                        "gloss": "Turned colonial rivalry military"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Hardened British resolve against Germany",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Agadir",
+                        "gloss": "Hardened British resolve against Germany"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Dreadnoughts & Blocs",
+        "dateChip": "1879–1914",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "HMS Dreadnought",
+        "gloss": "The Anglo-German naval arms race around HMS Dreadnought, rival European alliance blocs, and explosive Balkan wars.",
+        "children": [
+          {
+            "id": "kt2_l3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Naval Race & HMS Dreadnought",
+            "dateChip": "1889–1914",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Dreadnought",
+            "gloss": "Britain’s Two-Power Standard clashed with Tirpitz’s Risk Theory, HMS Dreadnought, the 1909 naval panic, and failed 1912 talks.",
+            "children": [
+              {
+                "id": "kt2_l3_s1",
+                "tier": 3,
+                "label": "Two-Power Law & Risk Theory",
+                "dateChip": "1889–1900",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Risk Theory",
+                "gloss": "Island Britain protected food imports with the 1889 Two-Power Standard until Tirpitz’s 1898 Naval Laws threatened the North Sea.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1889 British Two-Power Standard",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Two-Power Standard",
+                    "gloss": "Over 60% British food imported; Matched France and Russia combined.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Over 60% British food imported",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Two-Power Standard",
+                        "gloss": "Over 60% British food imported"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Matched France and Russia combined",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Two-Power Standard",
+                        "gloss": "Matched France and Russia combined"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Tirpitz’s 1898 Naval Risk Theory",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Tirpitz",
+                    "gloss": "Reichstag passed High Seas Laws; Built warships on North Sea.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Reichstag passed High Seas Laws",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Tirpitz",
+                        "gloss": "Reichstag passed High Seas Laws"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Built warships on North Sea",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Tirpitz",
+                        "gloss": "Built warships on North Sea"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Pushed Fisher to Redesign Fleet",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Admiralty",
+                    "gloss": "Aimed to scare Britain neutral; Convinced Admiralty Germany meant war.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Aimed to scare Britain neutral",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Admiralty",
+                        "gloss": "Aimed to scare Britain neutral"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Convinced Admiralty Germany meant war",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Admiralty",
+                        "gloss": "Convinced Admiralty Germany meant war"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Threatened Britain’s Island Survival",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "blockade",
+                    "gloss": "Naval defeat meant rapid starvation; Alienated British public and MPs.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Naval defeat meant rapid starvation",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "blockade",
+                        "gloss": "Naval defeat meant rapid starvation"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Alienated British public and MPs",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "blockade",
+                        "gloss": "Alienated British public and MPs"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l3_s2",
+                "tier": 3,
+                "label": "Dreadnought & 1909 Naval Panic",
+                "dateChip": "1906–1909",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "HMS Dreadnought",
+                "gloss": "HMS Dreadnought revolutionised battleships in 1906 but reset the naval lead, sparking Britain’s 1909 \"We want eight!\" panic.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1906 All-Big-Gun HMS Dreadnought",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "HMS Dreadnought",
+                    "gloss": "Ten 12-inch guns, steam turbines; Unveiled by Sir John Fisher.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Ten 12-inch guns, steam turbines",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "HMS Dreadnought",
+                        "gloss": "Ten 12-inch guns, steam turbines"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Unveiled by Sir John Fisher",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "HMS Dreadnought",
+                        "gloss": "Unveiled by Sir John Fisher"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Reset Britain’s Pre-1906 Lead",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "older battleships",
+                    "gloss": "Made all older battleships obsolete; Germany competed from near zero.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Made all older battleships obsolete",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "older battleships",
+                        "gloss": "Made all older battleships obsolete"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Germany competed from near zero",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "older battleships",
+                        "gloss": "Germany competed from near zero"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1909 Chant Built Eight Ships",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "We want eight",
+                    "gloss": "Feared secret Baltic ship docks; Government funded eight dreadnoughts 1909.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Feared secret Baltic ship docks",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "We want eight",
+                        "gloss": "Feared secret Baltic ship docks"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Government funded eight dreadnoughts 1909",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "We want eight",
+                        "gloss": "Government funded eight dreadnoughts 1909"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Whipped Up Mass Anti-German Fear",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "newspaper headlines",
+                    "gloss": "Sensational press fuelled naval hysteria; Kept Royal Navy ahead expensively.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Sensational press fuelled naval hysteria",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "newspaper headlines",
+                        "gloss": "Sensational press fuelled naval hysteria"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Kept Royal Navy ahead expensively",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "newspaper headlines",
+                        "gloss": "Kept Royal Navy ahead expensively"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l3_s3",
+                "tier": 3,
+                "label": "Failed 1912 Haldane Mission",
+                "dateChip": "1912–1914",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "Haldane",
+                "gloss": "Lord Haldane’s 1912 Berlin naval truce talks collapsed, prompting Britain to concentrate battleships in the North Sea.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Haldane’s 1912 Berlin Naval Offer",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Haldane",
+                    "gloss": "Offered African colonial territory swaps; Sought slower German ship building.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Offered African colonial territory swaps",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Haldane",
+                        "gloss": "Offered African colonial territory swaps"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Sought slower German ship building",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Haldane",
+                        "gloss": "Sought slower German ship building"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Kaiser Demanded Neutrality Pledge",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "neutrality pledge",
+                    "gloss": "Wilhelm and Tirpitz refused cuts; Britain rejected unconditional neutrality.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Wilhelm and Tirpitz refused cuts",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "neutrality pledge",
+                        "gloss": "Wilhelm and Tirpitz refused cuts"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Britain rejected unconditional neutrality",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "neutrality pledge",
+                        "gloss": "Britain rejected unconditional neutrality"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Redeployed Fleet to North Sea",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "North Sea",
+                    "gloss": "Pulled battleships from Mediterranean ports; Guarded home waters against strike.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Pulled battleships from Mediterranean ports",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "North Sea",
+                        "gloss": "Pulled battleships from Mediterranean ports"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Guarded home waters against strike",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "North Sea",
+                        "gloss": "Guarded home waters against strike"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Ended Last Chance for Detente",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Haldane",
+                    "gloss": "Confirmed permanent naval arms deadlock; Tied British security to France.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Confirmed permanent naval arms deadlock",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Haldane",
+                        "gloss": "Confirmed permanent naval arms deadlock"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Tied British security to France",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Haldane",
+                        "gloss": "Tied British security to France"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_l4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Alliances & Balkan Powder Keg",
+            "dateChip": "1879–1913",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Balkan Wars",
+            "gloss": "Triple Alliance and Triple Entente divided Europe while Ottoman decline, Bosnia (1908), and the Balkan Wars primed conflict.",
+            "children": [
+              {
+                "id": "kt2_l4_s1",
+                "tier": 3,
+                "label": "Triple Alliance vs Entente",
+                "dateChip": "1879–1907",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Triple Entente",
+                "gloss": "Germany, Austria-Hungary, and Italy formed the Triple Alliance (1882), answered by the Franco-Russian and Triple Entente bloc (1907).",
+                "children": [
+                  {
+                    "id": "kt2_l4_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1879 Dual & 1882 Triple Alliance",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Triple Alliance",
+                    "gloss": "Germany backed Austria against Russia; Italy joined central military bloc.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Germany backed Austria against Russia",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Triple Alliance",
+                        "gloss": "Germany backed Austria against Russia"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Italy joined central military bloc",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Triple Alliance",
+                        "gloss": "Italy joined central military bloc"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1894–1907 Triple Entente Formed",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Triple Entente",
+                    "gloss": "French loans built Russian railways; 1904 French, 1907 Russian deals.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "French loans built Russian railways",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Triple Entente",
+                        "gloss": "French loans built Russian railways"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "1904 French, 1907 Russian deals",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Triple Entente",
+                        "gloss": "1904 French, 1907 Russian deals"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Divided Continent Into Armed Blocs",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Central Powers",
+                    "gloss": "Broke decades of French isolation; Linked Eastern and Western disputes.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Broke decades of French isolation",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Central Powers",
+                        "gloss": "Broke decades of French isolation"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Linked Eastern and Western disputes",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Central Powers",
+                        "gloss": "Linked Eastern and Western disputes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c4",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Deterrent Shield vs Escalation Trap",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Triple Alliance",
+                    "gloss": "Aimed to deter rival attacks; Guaranteed local clash went continental.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Aimed to deter rival attacks",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Triple Alliance",
+                        "gloss": "Aimed to deter rival attacks"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Guaranteed local clash went continental",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Triple Alliance",
+                        "gloss": "Guaranteed local clash went continental"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s2",
+                "tier": 3,
+                "label": "1908 Bosnian Annexation Crisis",
+                "dateChip": "Oct 1908",
+                "lessonIndex": 3,
+                "stageIndex": 3,
+                "searchTerm": "Bosnia",
+                "gloss": "As Ottoman rule crumbled, Austria annexed Bosnia in October 1908, humiliating Russia and infuriating Serbian nationalists.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Ottoman Decline & Pan-Slavism",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "powder keg",
+                    "gloss": "Crumbling Turkish rule freed Balkans; Austria and Russia sought hegemony.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Crumbling Turkish rule freed Balkans",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "powder keg",
+                        "gloss": "Crumbling Turkish rule freed Balkans"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Austria and Russia sought hegemony",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "powder keg",
+                        "gloss": "Austria and Russia sought hegemony"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Austria Annexed Bosnia Oct 1908",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Bosnia",
+                    "gloss": "Seized Slavic provinces without approval; Sparked intense Serbian nationalist fury.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Seized Slavic provinces without approval",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Bosnia",
+                        "gloss": "Seized Slavic provinces without approval"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Sparked intense Serbian nationalist fury",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Bosnia",
+                        "gloss": "Sparked intense Serbian nationalist fury"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Humiliated Russia Vowed No Repeat",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "ultimatum",
+                    "gloss": "German ultimatum forced Russian retreat; Tsar swore never yield again.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "German ultimatum forced Russian retreat",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "ultimatum",
+                        "gloss": "German ultimatum forced Russian retreat"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Tsar swore never yield again",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "ultimatum",
+                        "gloss": "Tsar swore never yield again"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Lit Fuse Under Balkan Powder Keg",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "South Slavic",
+                    "gloss": "Blocked Serbia’s South Slav dream; Ensured Russia backed Serbia 1914.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Blocked Serbia’s South Slav dream",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "South Slavic",
+                        "gloss": "Blocked Serbia’s South Slav dream"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Ensured Russia backed Serbia 1914",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "South Slavic",
+                        "gloss": "Ensured Russia backed Serbia 1914"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s3",
+                "tier": 3,
+                "label": "1912–13 Balkan Wars Surge",
+                "dateChip": "1912–1913",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Balkan Wars",
+                "gloss": "Serbia’s rapid victories in the 1912–13 Balkan Wars doubled its size, convincing Vienna generals to crush Serbia pre-emptively.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Balkan League Expelled Ottomans",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Balkan League",
+                    "gloss": "Fought two wars 1912–1913; Serbia won both conflicts rapidly.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Fought two wars 1912–1913",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Balkan League",
+                        "gloss": "Fought two wars 1912–1913"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Serbia won both conflicts rapidly",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Balkan League",
+                        "gloss": "Serbia won both conflicts rapidly"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Serbia Doubled Land & Army",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "double the land",
+                    "gloss": "Boosted Serbian prestige and troops; Inspired Slavs inside Austria-Hungary.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Boosted Serbian prestige and troops",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "double the land",
+                        "gloss": "Boosted Serbian prestige and troops"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Inspired Slavs inside Austria-Hungary",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "double the land",
+                        "gloss": "Inspired Slavs inside Austria-Hungary"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Vienna Sought Pre-emptive War",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "crush Serbia",
+                    "gloss": "Feared multi-ethnic empire breaking apart; Hawks awaited excuse to strike.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Feared multi-ethnic empire breaking apart",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "crush Serbia",
+                        "gloss": "Feared multi-ethnic empire breaking apart"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Hawks awaited excuse to strike",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "crush Serbia",
+                        "gloss": "Hawks awaited excuse to strike"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Made Sarajevo Crisis Fatal 1914",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Balkan Wars",
+                    "gloss": "Turned Belgrade into existential threat; Set stage for July ultimatum.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Turned Belgrade into existential threat",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Balkan Wars",
+                        "gloss": "Turned Belgrade into existential threat"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Set stage for July ultimatum",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Balkan Wars",
+                        "gloss": "Set stage for July ultimatum"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: July Crisis & 1914 War",
+        "dateChip": "June–Aug 1914",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Sarajevo",
+        "gloss": "Princip’s shots in Sarajevo, Germany’s blank cheque, railway mobilisation schedules, the Schlieffen invasion of Belgium, and causal synthesis.",
+        "children": [
+          {
+            "id": "kt3_l5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Sarajevo & The July Crisis",
+            "dateChip": "June–Aug 1914",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Sarajevo",
+            "gloss": "Five weeks from Franz Ferdinand’s assassination on 28 June 1914 to Germany’s invasion of Belgium and British entry on 4 August.",
+            "children": [
+              {
+                "id": "kt3_l5_s1",
+                "tier": 3,
+                "label": "Sarajevo & The Blank Cheque",
+                "dateChip": "28 Jun–5 Jul",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Gavrilo Princip",
+                "gloss": "Black Hand conspirator Gavrilo Princip assassinated Franz Ferdinand in Sarajevo before Berlin handed Vienna an unconditional blank cheque.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Princip Shot Archduke 28 June",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Gavrilo Princip",
+                    "gloss": "Survived Appel Quay grenade attack; Wrong turn met Princip’s pistol.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Survived Appel Quay grenade attack",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Gavrilo Princip",
+                        "gloss": "Survived Appel Quay grenade attack"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Wrong turn met Princip’s pistol",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Gavrilo Princip",
+                        "gloss": "Wrong turn met Princip’s pistol"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Kaiser’s 5 July Blank Cheque",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "blank cheque",
+                    "gloss": "Promised Franz Joseph unconditional backing; Removed fear of Russian intervention.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Promised Franz Joseph unconditional backing",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "blank cheque",
+                        "gloss": "Promised Franz Joseph unconditional backing"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Removed fear of Russian intervention",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "blank cheque",
+                        "gloss": "Removed fear of Russian intervention"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Emboldened Vienna’s Harsh Ultimatum",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "crush Serbia",
+                    "gloss": "Austria resolved to crush Serbia; Ignored wider European war risks.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Austria resolved to crush Serbia",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "crush Serbia",
+                        "gloss": "Austria resolved to crush Serbia"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Ignored wider European war risks",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "crush Serbia",
+                        "gloss": "Ignored wider European war risks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Turned Balkan Murder Into Crisis",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Sarajevo",
+                    "gloss": "Berlin’s guarantee freed Austrian hawks; Escalated local shooting into war.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Berlin’s guarantee freed Austrian hawks",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Sarajevo",
+                        "gloss": "Berlin’s guarantee freed Austrian hawks"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Escalated local shooting into war",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Sarajevo",
+                        "gloss": "Escalated local shooting into war"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l5_s2",
+                "tier": 3,
+                "label": "Ultimatum & Rail Timetables",
+                "dateChip": "23–31 July",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "ten-point",
+                "gloss": "Austria shelled Serbia after its ten-point ultimatum, triggering Russian mobilisation and unstoppable European railway schedules.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "23 July Ten-Point Ultimatum",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "ten-point",
+                    "gloss": "Demanded Austrian police inside Belgrade; Serbia accepted nine of ten.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Demanded Austrian police inside Belgrade",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "ten-point",
+                        "gloss": "Demanded Austrian police inside Belgrade"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Serbia accepted nine of ten",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "ten-point",
+                        "gloss": "Serbia accepted nine of ten"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "28 July Shelling & Tsar Mobilised",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Nicholas II",
+                    "gloss": "Danube gunboats shelled Belgrade 28th; Tsar Nicholas called up millions.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Danube gunboats shelled Belgrade 28th",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Nicholas II",
+                        "gloss": "Danube gunboats shelled Belgrade 28th"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Tsar Nicholas called up millions",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Nicholas II",
+                        "gloss": "Tsar Nicholas called up millions"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Activated Rigid Railway Timetables",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "railway timetables",
+                    "gloss": "Trains carried millions toward borders; Halting schedules risked total defeat.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Trains carried millions toward borders",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "railway timetables",
+                        "gloss": "Trains carried millions toward borders"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Halting schedules risked total defeat",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "railway timetables",
+                        "gloss": "Halting schedules risked total defeat"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Military Clocks Overtook Diplomacy",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "mobilisation",
+                    "gloss": "Generals feared being caught unready; Triggered automatic alliance chain reaction.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Generals feared being caught unready",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "mobilisation",
+                        "gloss": "Generals feared being caught unready"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Triggered automatic alliance chain reaction",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "mobilisation",
+                        "gloss": "Triggered automatic alliance chain reaction"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l5_s3",
+                "tier": 3,
+                "label": "Schlieffen Plan & Belgium",
+                "dateChip": "1–4 Aug 1914",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Schlieffen Plan",
+                "gloss": "Executing the Schlieffen Plan, German troops invaded neutral Belgium on 4 August 1914, bringing Great Britain into the world war.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Schlieffen Two-Front Knockout Plan",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Schlieffen Plan",
+                    "gloss": "Aimed to defeat France fast; Avoided slow Russian eastern steamroller.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Aimed to defeat France fast",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Schlieffen Plan",
+                        "gloss": "Aimed to defeat France fast"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Avoided slow Russian eastern steamroller",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Schlieffen Plan",
+                        "gloss": "Avoided slow Russian eastern steamroller"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "4 Aug Invasion & Scrap of Paper",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "scrap of paper",
+                    "gloss": "German army marched into Belgium; Broke 1839 Treaty of London.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "German army marched into Belgium",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "scrap of paper",
+                        "gloss": "German army marched into Belgium"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Broke 1839 Treaty of London",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "scrap of paper",
+                        "gloss": "Broke 1839 Treaty of London"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Britain Declared War Midnight 4 Aug",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "4 August 1914",
+                    "gloss": "Berlin ignored British withdrawal demand; Committed British Empire to war.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Berlin ignored British withdrawal demand",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "4 August 1914",
+                        "gloss": "Berlin ignored British withdrawal demand"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Committed British Empire to war",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "4 August 1914",
+                        "gloss": "Committed British Empire to war"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Completed Five-Week Descent to War",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "First World War",
+                    "gloss": "Turned continental clash global; Ended century of general peace.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Turned continental clash global",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "First World War",
+                        "gloss": "Turned continental clash global"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Ended century of general peace",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "First World War",
+                        "gloss": "Ended century of general peace"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_l6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Synthesis: Outbreak of War",
+            "dateChip": "1871–1914",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "PEEL",
+            "gloss": "Connecting long-term unification, imperial rivalry, dreadnoughts, and alliances to the July 1914 Sarajevo trigger.",
+            "children": [
+              {
+                "id": "kt3_l6_s1",
+                "tier": 3,
+                "label": "Unification & Imperial Rivalry",
+                "dateChip": "1871–1911",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "revanchism",
+                "gloss": "1871 German unification and Weltpolitik clashes in Africa and Morocco permanently alienated France and Great Britain.",
+                "children": [
+                  {
+                    "id": "kt3_l6_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1871 Alsace-Lorraine Divided Powers",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Alsace-Lorraine",
+                    "gloss": "Unified 39 states after 1870; Fuelled 40 years French revanchism.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Unified 39 states after 1870",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Alsace-Lorraine",
+                        "gloss": "Unified 39 states after 1870"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Fuelled 40 years French revanchism",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Alsace-Lorraine",
+                        "gloss": "Fuelled 40 years French revanchism"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s1_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Weltpolitik & Moroccan Bullying",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Weltpolitik",
+                    "gloss": "Competed for African rubber, copper; Morocco crises united Britain, France.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Competed for African rubber, copper",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Weltpolitik",
+                        "gloss": "Competed for African rubber, copper"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Morocco crises united Britain, France",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Weltpolitik",
+                        "gloss": "Morocco crises united Britain, France"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Hardened Hostile Great-Power Rivalry",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "place in the sun",
+                    "gloss": "Ended Bismarck’s diplomatic restraint; Left Berlin diplomatically isolated.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Ended Bismarck’s diplomatic restraint",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "place in the sun",
+                        "gloss": "Ended Bismarck’s diplomatic restraint"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Left Berlin diplomatically isolated",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "place in the sun",
+                        "gloss": "Left Berlin diplomatically isolated"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Built Deep Long-Term Resentment",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Treaty of Frankfurt",
+                    "gloss": "Split Europe’s strongest land powers; Made compromise harder in crises.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Split Europe’s strongest land powers",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Treaty of Frankfurt",
+                        "gloss": "Split Europe’s strongest land powers"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Made compromise harder in crises",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Treaty of Frankfurt",
+                        "gloss": "Made compromise harder in crises"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l6_s2",
+                "tier": 3,
+                "label": "Dreadnoughts & Alliance Blocs",
+                "dateChip": "1879–1914",
+                "lessonIndex": 5,
+                "stageIndex": 3,
+                "searchTerm": "Triple Entente",
+                "gloss": "North Sea dreadnought competition and rival Triple Alliance / Triple Entente blocs wired Europe for continental war.",
+                "children": [
+                  {
+                    "id": "kt3_l6_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Post-1906 Dreadnought Arms Race",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Dreadnought",
+                    "gloss": "Challenged Britain’s Two-Power Standard; Tirpitz’s North Sea fleet panicked UK.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Challenged Britain’s Two-Power Standard",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "Dreadnought",
+                        "gloss": "Challenged Britain’s Two-Power Standard"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Tirpitz’s North Sea fleet panicked UK",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "Dreadnought",
+                        "gloss": "Tirpitz’s North Sea fleet panicked UK"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s2_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Two Armed European Power Camps",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Triple Alliance",
+                    "gloss": "Germany, Austria, Italy Triple Alliance; Britain, France, Russia Triple Entente.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Germany, Austria, Italy Triple Alliance",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Triple Alliance",
+                        "gloss": "Germany, Austria, Italy Triple Alliance"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Britain, France, Russia Triple Entente",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Triple Alliance",
+                        "gloss": "Britain, France, Russia Triple Entente"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Primed Continent for Chain Reaction",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "interlocking",
+                    "gloss": "Bound great powers by treaty; Prevented localising Balkan disputes.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Bound great powers by treaty",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "interlocking",
+                        "gloss": "Bound great powers by treaty"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Prevented localising Balkan disputes",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "interlocking",
+                        "gloss": "Prevented localising Balkan disputes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Turned Rivalry Into Hair-Trigger",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "naval arms race",
+                    "gloss": "Public demanded extra battleships; Staff plans assumed rapid war.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Public demanded extra battleships",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "naval arms race",
+                        "gloss": "Public demanded extra battleships"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Staff plans assumed rapid war",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "naval arms race",
+                        "gloss": "Staff plans assumed rapid war"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l6_s3",
+                "tier": 3,
+                "label": "1914 Trigger & Multi-Cause Verdict",
+                "dateChip": "June–Aug 1914",
+                "lessonIndex": 5,
+                "stageIndex": 4,
+                "searchTerm": "Gavrilo Princip",
+                "gloss": "Princip’s assassination lit the structural powder keg, requiring multi-factor PEEL links between long-term tensions and 1914 triggers.",
+                "children": [
+                  {
+                    "id": "kt3_l6_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sarajevo Sparked Five-Week Dominoes",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Sarajevo",
+                    "gloss": "Princip killed Archduke 28 June; Austrian retaliation triggered rival blocs.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Princip killed Archduke 28 June",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Sarajevo",
+                        "gloss": "Princip killed Archduke 28 June"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Austrian retaliation triggered rival blocs",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Sarajevo",
+                        "gloss": "Austrian retaliation triggered rival blocs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Dragged Five Great Powers In",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "five weeks",
+                    "gloss": "Activated Russian, French, German plans; Belgian invasion brought Britain in.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Activated Russian, French, German plans",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "five weeks",
+                        "gloss": "Activated Russian, French, German plans"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Belgian invasion brought Britain in",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "five weeks",
+                        "gloss": "Belgian invasion brought Britain in"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s3_c3",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Long-Term Powder vs 1914 Spark",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "PEEL",
+                    "gloss": "Alliances and arms stacked powder; July decisions lit fatal fuse.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Alliances and arms stacked powder",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "PEEL",
+                        "gloss": "Alliances and arms stacked powder"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c3_t2",
+                        "tier": 5,
+                        "label": "July decisions lit fatal fuse",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "PEEL",
+                        "gloss": "July decisions lit fatal fuse"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Three-Factor Causal Essay Structure",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "PEEL paragraphs",
+                    "gloss": "Connects structural causes to trigger; Explains why localised war failed.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Connects structural causes to trigger",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "PEEL paragraphs",
+                        "gloss": "Connects structural causes to trigger"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Explains why localised war failed",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "PEEL paragraphs",
+                        "gloss": "Explains why localised war failed"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

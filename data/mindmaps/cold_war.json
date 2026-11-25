@@ -1,0 +1,2928 @@
+{
+  "unitId": "cold_war",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "The Cold War & Global Flashpoints, 1945–1991",
+  "examDateBoundary": "1945–1991",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "The Cold War, 1945–1991",
+    "subLabel": "KS3 History",
+    "dateChip": "1945–1991",
+    "gloss": "Ideological division, Yalta to Berlin, Cuban nuclear brinkmanship, Asian proxy wars, Soviet collapse, and Global South reassessment.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Origins & Divided Europe",
+        "dateChip": "1945–1955",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Berlin Blockade",
+        "gloss": "Capitalist vs Communist rivalry, Yalta and Potsdam, containment, the Berlin Airlift, and NATO vs the Warsaw Pact.",
+        "children": [
+          {
+            "id": "kt1_l1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Capitalism vs Communism",
+            "dateChip": "1917–1945",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "nuclear monopoly",
+            "gloss": "Incompatible ideologies, interwar grievances, America’s 1945 atomic monopoly, and Europe’s post-war power vacuum.",
+            "children": [
+              {
+                "id": "kt1_l1_s1",
+                "tier": 3,
+                "label": "Rival Ideas & Pre-1945 Distrust",
+                "dateChip": "1917–1945",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Nazi-Soviet Pact",
+                "gloss": "US democratic capitalism clashed with Soviet one-party communism, deepened by 1917 intervention and the 1939 Nazi-Soviet Pact.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Free Market vs Command Socialism",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "free-market capitalism",
+                    "gloss": "US private business, multi-party votes; Soviet Politburo ran state farms.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "US private business, multi-party votes",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "free-market capitalism",
+                        "gloss": "US private business, multi-party votes"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Soviet Politburo ran state farms",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "free-market capitalism",
+                        "gloss": "Soviet Politburo ran state farms"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1917 Intervention & 1939 Pact",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Nazi-Soviet Pact",
+                    "gloss": "West backed anti-Bolshevik White armies; Stalin divided Poland with Hitler.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "West backed anti-Bolshevik White armies",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Nazi-Soviet Pact",
+                        "gloss": "West backed anti-Bolshevik White armies"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Stalin divided Poland with Hitler",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Nazi-Soviet Pact",
+                        "gloss": "Stalin divided Poland with Hitler"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Broke Wartime Alliance Once Hitler Fell",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "coexistence",
+                    "gloss": "Common Nazi enemy disappeared 1945; Old grievances returned with force.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Common Nazi enemy disappeared 1945",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "coexistence",
+                        "gloss": "Common Nazi enemy disappeared 1945"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Old grievances returned with force",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "coexistence",
+                        "gloss": "Old grievances returned with force"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Each Viewed Rival System Tyrannical",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Politburo",
+                    "gloss": "US condemned one-party Soviet rule; Moscow called Western democracy sham.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c4_t1",
+                        "tier": 5,
+                        "label": "US condemned one-party Soviet rule",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Politburo",
+                        "gloss": "US condemned one-party Soviet rule"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Moscow called Western democracy sham",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Politburo",
+                        "gloss": "Moscow called Western democracy sham"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s2",
+                "tier": 3,
+                "label": "Atomic Monopoly & Arms Race",
+                "dateChip": "July–Aug 1945",
+                "lessonIndex": 0,
+                "stageIndex": 3,
+                "searchTerm": "Hiroshima",
+                "gloss": "Trinity, Hiroshima, and Nagasaki gave Washington a nuclear monopoly that Stalin countered with a crash Soviet bomb programme.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Trinity Test, Hiroshima & Nagasaki",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Hiroshima",
+                    "gloss": "Tested New Mexico 16 July; Dropped two bombs August 1945.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Tested New Mexico 16 July",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Hiroshima",
+                        "gloss": "Tested New Mexico 16 July"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Dropped two bombs August 1945",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Hiroshima",
+                        "gloss": "Dropped two bombs August 1945"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Stalin Feared US Atomic Blackmail",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "atomic blackmail",
+                    "gloss": "Held temporary US nuclear monopoly; Viewed as intimidation over Europe.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Held temporary US nuclear monopoly",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "atomic blackmail",
+                        "gloss": "Held temporary US nuclear monopoly"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Viewed as intimidation over Europe",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "atomic blackmail",
+                        "gloss": "Viewed as intimidation over Europe"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Ordered Crash Soviet Bomb Project",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "nuclear arms race",
+                    "gloss": "Pushed Soviet physicists top speed; Sparked dangerous nuclear arms race.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Pushed Soviet physicists top speed",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "nuclear arms race",
+                        "gloss": "Pushed Soviet physicists top speed"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Sparked dangerous nuclear arms race",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "nuclear arms race",
+                        "gloss": "Sparked dangerous nuclear arms race"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Created Post-War Balance of Terror",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Manhattan Project",
+                    "gloss": "Transformed diplomacy with atomic dread; Replaced trust with deterrence.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Transformed diplomacy with atomic dread",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Manhattan Project",
+                        "gloss": "Transformed diplomacy with atomic dread"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Replaced trust with deterrence",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Manhattan Project",
+                        "gloss": "Replaced trust with deterrence"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s3",
+                "tier": 3,
+                "label": "Ruined Europe’s Power Vacuum",
+                "dateChip": "1945–1946",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "River Elbe",
+                "gloss": "Meeting along the River Elbe across ruined Europe, US and Soviet forces locked the continent into bipolar rivalry.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "WWII Shattered Old European Powers",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "River Elbe",
+                    "gloss": "Left vast continental power vacuum; Red Army met Western Allies.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Left vast continental power vacuum",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "River Elbe",
+                        "gloss": "Left vast continental power vacuum"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Red Army met Western Allies",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "River Elbe",
+                        "gloss": "Red Army met Western Allies"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Security Moves Read as Aggression",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "bipolar",
+                    "gloss": "Both superpowers sought border security; Misread rival defences as threats.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Both superpowers sought border security",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "bipolar",
+                        "gloss": "Both superpowers sought border security"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Misread rival defences as threats",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "bipolar",
+                        "gloss": "Misread rival defences as threats"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Divided East-West Spheres Hardened",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "spheres of influence",
+                    "gloss": "Replaced older multi-power diplomacy; Split continent into rival camps.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Replaced older multi-power diplomacy",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "spheres of influence",
+                        "gloss": "Replaced older multi-power diplomacy"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Split continent into rival camps",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "spheres of influence",
+                        "gloss": "Split continent into rival camps"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Peace Impossible, Total War Unlikely",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Raymond Aron",
+                    "gloss": "Raymond Aron summed deadlock up; Nuclear fear blocked open war.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Raymond Aron summed deadlock up",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Raymond Aron",
+                        "gloss": "Raymond Aron summed deadlock up"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Nuclear fear blocked open war",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Raymond Aron",
+                        "gloss": "Nuclear fear blocked open war"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_l2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. From Yalta to Potsdam",
+            "dateChip": "Feb–Aug 1945",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Potsdam",
+            "gloss": "Yalta compromises unravelled over Poland, new leaders Truman and Attlee, atomic leverage, and German reparations at Potsdam.",
+            "children": [
+              {
+                "id": "kt1_l2_s1",
+                "tier": 3,
+                "label": "Yalta Deal & Polish Dispute",
+                "dateChip": "Feb–Mar 1945",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Yalta",
+                "gloss": "Roosevelt, Churchill, and Stalin agreed four German zones at Yalta, but Stalin installed the communist Lublin Poles.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Feb 1945 Yalta Four-Zone Deal",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Livadia Palace",
+                    "gloss": "Divided Germany and Berlin fourfold; Stalin joined UN, Japan war.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Divided Germany and Berlin fourfold",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Livadia Palace",
+                        "gloss": "Divided Germany and Berlin fourfold"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Stalin joined UN, Japan war",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Livadia Palace",
+                        "gloss": "Stalin joined UN, Japan war"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "27m Soviet Dead & Buffer Demand",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Lublin",
+                    "gloss": "Demanded friendly Polish border zone; Installed communist Lublin Polish regime.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Demanded friendly Polish border zone",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Lublin",
+                        "gloss": "Demanded friendly Polish border zone"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Installed communist Lublin Polish regime",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Lublin",
+                        "gloss": "Installed communist Lublin Polish regime"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Sidelined Exiled Democratic London Poles",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Declaration on Liberated Europe",
+                    "gloss": "Broke Declaration on Liberated Europe; Wrecked Western trust in Stalin.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Broke Declaration on Liberated Europe",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Declaration on Liberated Europe",
+                        "gloss": "Broke Declaration on Liberated Europe"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Wrecked Western trust in Stalin",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Declaration on Liberated Europe",
+                        "gloss": "Wrecked Western trust in Stalin"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Poland Exposed Fragile Yalta Smiles",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "self-determination",
+                    "gloss": "UK entered WWII for Poland; Clashed with Soviet security belt.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c4_t1",
+                        "tier": 5,
+                        "label": "UK entered WWII for Poland",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "self-determination",
+                        "gloss": "UK entered WWII for Poland"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Clashed with Soviet security belt",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "self-determination",
+                        "gloss": "Clashed with Soviet security belt"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s2",
+                "tier": 3,
+                "label": "Potsdam Guard Change & Bomb Hint",
+                "dateChip": "July 1945",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Potsdam",
+                "gloss": "Anti-communist Truman and Labour PM Attlee met Stalin at Potsdam as Truman hinted at America’s newly tested atomic weapon.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Truman & Attlee Replaced Wartime Pair",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Clement Attlee",
+                    "gloss": "Roosevelt died April; Truman hardened; Attlee replaced Churchill mid-summit.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Roosevelt died April; Truman hardened",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Clement Attlee",
+                        "gloss": "Roosevelt died April; Truman hardened"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Attlee replaced Churchill mid-summit",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Clement Attlee",
+                        "gloss": "Attlee replaced Churchill mid-summit"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Truman’s 24 July Atomic Hint",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "unusual destructive force",
+                    "gloss": "Trinity exploded 16 July eve; Soviet spies already briefed Stalin.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Trinity exploded 16 July eve",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "unusual destructive force",
+                        "gloss": "Trinity exploded 16 July eve"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Soviet spies already briefed Stalin",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "unusual destructive force",
+                        "gloss": "Soviet spies already briefed Stalin"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Convinced Stalin US Meant Bullying",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "atomic diplomacy",
+                    "gloss": "Hoped bomb forced Soviet concessions; Deepened Kremlin suspicion and defiance.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Hoped bomb forced Soviet concessions",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "atomic diplomacy",
+                        "gloss": "Hoped bomb forced Soviet concessions"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Deepened Kremlin suspicion and defiance",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "atomic diplomacy",
+                        "gloss": "Deepened Kremlin suspicion and defiance"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Turned Summit Diplomacy Openly Bitter",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Grand Alliance",
+                    "gloss": "Only Stalin remained from Yalta; Ended wartime personal rapport.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Only Stalin remained from Yalta",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Grand Alliance",
+                        "gloss": "Only Stalin remained from Yalta"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Ended wartime personal rapport",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Grand Alliance",
+                        "gloss": "Ended wartime personal rapport"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s3",
+                "tier": 3,
+                "label": "Reparations Clash & Zone Split",
+                "dateChip": "Aug 1945",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "reparations",
+                "gloss": "Disputes over Stalin’s $20 billion reparations demand restricted extractions to each occupier’s zone, ending the Grand Alliance.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Stalin Demanded $20bn Reparations",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "$20 billion",
+                    "gloss": "Wanted $10bn straight for USSR; West recalled 1919 Weimar ruin.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Wanted $10bn straight for USSR",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "$20 billion",
+                        "gloss": "Wanted $10bn straight for USSR"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "West recalled 1919 Weimar ruin",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "$20 billion",
+                        "gloss": "West recalled 1919 Weimar ruin"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Own-Zone Reparations Compromise",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Allied Control Council",
+                    "gloss": "Each power took from zone; Traded eastern food for machinery.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Each power took from zone",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Allied Control Council",
+                        "gloss": "Each power took from zone"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Traded eastern food for machinery",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Allied Control Council",
+                        "gloss": "Traded eastern food for machinery"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Killed Wartime Grand Alliance",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Grand Alliance",
+                    "gloss": "Split German economic administration early; Hardened rival spheres across Europe.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Split German economic administration early",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Grand Alliance",
+                        "gloss": "Split German economic administration early"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Hardened rival spheres across Europe",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Grand Alliance",
+                        "gloss": "Hardened rival spheres across Europe"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Set Stage for Divided Germany",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Potsdam",
+                    "gloss": "Turned temporary zones semi-permanent; Prepared 1948 Berlin confrontation.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Turned temporary zones semi-permanent",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Potsdam",
+                        "gloss": "Turned temporary zones semi-permanent"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Prepared 1948 Berlin confrontation",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Potsdam",
+                        "gloss": "Prepared 1948 Berlin confrontation"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_l3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Iron Curtain & Berlin Airlift",
+            "dateChip": "1946–1955",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Berlin Airlift",
+            "gloss": "Churchill’s Fulton speech, Truman Doctrine and Marshall Aid, Cominform, the 324-day Berlin Airlift, and NATO vs Warsaw Pact.",
+            "children": [
+              {
+                "id": "kt1_l3_s1",
+                "tier": 3,
+                "label": "Iron Curtain & US Containment",
+                "dateChip": "1946–1947",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Marshall Plan",
+                "gloss": "Soviet salami tactics prompted Churchill’s Fulton warning, the March 1947 Truman Doctrine, and over $13bn in Marshall Aid.",
+                "children": [
+                  {
+                    "id": "kt1_l3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Salami Tactics & Fulton Speech",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "salami tactics",
+                    "gloss": "Rákosi sliced rival parties away; Churchill warned Iron Curtain 1946.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Rákosi sliced rival parties away",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "salami tactics",
+                        "gloss": "Rákosi sliced rival parties away"
+                      },
+                      {
+                        "id": "kt1_l3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Churchill warned Iron Curtain 1946",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "salami tactics",
+                        "gloss": "Churchill warned Iron Curtain 1946"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Truman Doctrine & $13bn Marshall Plan",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Marshall Plan",
+                    "gloss": "Backed Greece and Turkey 1947; Over $13bn rebuilt Western Europe.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Backed Greece and Turkey 1947",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Marshall Plan",
+                        "gloss": "Backed Greece and Turkey 1947"
+                      },
+                      {
+                        "id": "kt1_l3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Over $13bn rebuilt Western Europe",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Marshall Plan",
+                        "gloss": "Over $13bn rebuilt Western Europe"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Provoked Cominform & Aid Ban",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Cominform",
+                    "gloss": "Stalin branded aid dollar imperialism; Barred eastern satellites taking dollars.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Stalin branded aid dollar imperialism",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Cominform",
+                        "gloss": "Stalin branded aid dollar imperialism"
+                      },
+                      {
+                        "id": "kt1_l3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Barred eastern satellites taking dollars",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Cominform",
+                        "gloss": "Barred eastern satellites taking dollars"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Enacted Official US Containment Policy",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Truman Doctrine",
+                    "gloss": "Ended traditional peacetime US isolation; Fought communism through economic recovery.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Ended traditional peacetime US isolation",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Truman Doctrine",
+                        "gloss": "Ended traditional peacetime US isolation"
+                      },
+                      {
+                        "id": "kt1_l3_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Fought communism through economic recovery",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Truman Doctrine",
+                        "gloss": "Fought communism through economic recovery"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l3_s2",
+                "tier": 3,
+                "label": "Prague Coup & Berlin Airlift",
+                "dateChip": "1948–1949",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "Operation Vittles",
+                "gloss": "After the 1948 Prague Coup and Trizonia’s Deutsche Mark, Allied planes defeated Stalin’s 324-day Berlin Blockade.",
+                "children": [
+                  {
+                    "id": "kt1_l3_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Prague Coup & New Deutsche Mark",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Deutsche Mark",
+                    "gloss": "Czech communists seized Prague Feb; West merged Trizonia, new currency.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Czech communists seized Prague Feb",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Deutsche Mark",
+                        "gloss": "Czech communists seized Prague Feb"
+                      },
+                      {
+                        "id": "kt1_l3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "West merged Trizonia, new currency",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Deutsche Mark",
+                        "gloss": "West merged Trizonia, new currency"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "24 June Blockade vs 324-Day Airlift",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Operation Vittles",
+                    "gloss": "Stalin cut road, rail, canals; Flew 2.3m tons food, coal.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Stalin cut road, rail, canals",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Operation Vittles",
+                        "gloss": "Stalin cut road, rail, canals"
+                      },
+                      {
+                        "id": "kt1_l3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Flew 2.3m tons food, coal",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Operation Vittles",
+                        "gloss": "Flew 2.3m tons food, coal"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Stalin Lifted Blockade May 1949",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Lucius Clay",
+                    "gloss": "Clay and Bevin sustained Berliners; Defeated blockade without firing shots.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Clay and Bevin sustained Berliners",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Lucius Clay",
+                        "gloss": "Clay and Bevin sustained Berliners"
+                      },
+                      {
+                        "id": "kt1_l3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Defeated blockade without firing shots",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Lucius Clay",
+                        "gloss": "Defeated blockade without firing shots"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "First Major Cold War Victory",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Berlin Blockade",
+                    "gloss": "Proved Western resolve over Berlin; Made peaceful German unity impossible.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Proved Western resolve over Berlin",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Berlin Blockade",
+                        "gloss": "Proved Western resolve over Berlin"
+                      },
+                      {
+                        "id": "kt1_l3_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Made peaceful German unity impossible",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Berlin Blockade",
+                        "gloss": "Made peaceful German unity impossible"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l3_s3",
+                "tier": 3,
+                "label": "FRG, GDR, NATO & Warsaw Pact",
+                "dateChip": "1949–1955",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "NATO",
+                "gloss": "The Berlin crisis split Germany into FRG and GDR in 1949 and locked Europe into rival NATO (1949) and Warsaw Pact (1955) alliances.",
+                "children": [
+                  {
+                    "id": "kt1_l3_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1949 Creation of FRG & GDR",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Federal Republic",
+                    "gloss": "Democratic West Germany capital Bonn; Communist East Germany formed October.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Democratic West Germany capital Bonn",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Federal Republic",
+                        "gloss": "Democratic West Germany capital Bonn"
+                      },
+                      {
+                        "id": "kt1_l3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Communist East Germany formed October",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Federal Republic",
+                        "gloss": "Communist East Germany formed October"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1949 NATO & 1955 Warsaw Pact",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Warsaw Pact",
+                    "gloss": "Twelve Western allies founded NATO; Seven eastern states joined Moscow.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Twelve Western allies founded NATO",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Warsaw Pact",
+                        "gloss": "Twelve Western allies founded NATO"
+                      },
+                      {
+                        "id": "kt1_l3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Seven eastern states joined Moscow",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Warsaw Pact",
+                        "gloss": "Seven eastern states joined Moscow"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Froze Armed Frontier Across Europe",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "two armed blocs",
+                    "gloss": "Triggered after FRG joined NATO; Guaranteed mutual defence if attacked.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Triggered after FRG joined NATO",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "two armed blocs",
+                        "gloss": "Triggered after FRG joined NATO"
+                      },
+                      {
+                        "id": "kt1_l3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Guaranteed mutual defence if attacked",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "two armed blocs",
+                        "gloss": "Guaranteed mutual defence if attacked"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Shifted Hot Conflict Outside Europe",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "NATO",
+                    "gloss": "Deterrence stabilised European bloc borders; Displaced superpower wars to Asia.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Deterrence stabilised European bloc borders",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "NATO",
+                        "gloss": "Deterrence stabilised European bloc borders"
+                      },
+                      {
+                        "id": "kt1_l3_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Displaced superpower wars to Asia",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "NATO",
+                        "gloss": "Displaced superpower wars to Asia"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Brinkmanship & Asia Wars",
+        "dateChip": "1949–1975",
+        "lessonIndex": 3,
+        "stageIndex": 0,
+        "searchTerm": "Cuban Missile Crisis",
+        "gloss": "Thirteen days on the nuclear brink over Cuba (1962) and deadly Cold War proxy wars in Korea and Vietnam (1950–75).",
+        "children": [
+          {
+            "id": "kt2_l4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Cuban Missile Crisis",
+            "dateChip": "1959–1963",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Cuban Missile Crisis",
+            "gloss": "Castro’s revolution, Bay of Pigs, U-2 missile photos, Kennedy’s quarantine, secret Turkey diplomacy, and the 1963 Hotline.",
+            "children": [
+              {
+                "id": "kt2_l4_s1",
+                "tier": 3,
+                "label": "Castro, Bay of Pigs & Anadyr",
+                "dateChip": "1959–Oct 1962",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Operation Anadyr",
+                "gloss": "US embargoes and the failed Bay of Pigs pushed Castro toward Khrushchev, whose Operation Anadyr missiles U-2 planes spotted.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1959 Castro & Bay of Pigs Fiasco",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Bay of Pigs",
+                    "gloss": "Nationalised US sugar, oil, phones; Crushed 1,400 CIA exiles 1961.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Nationalised US sugar, oil, phones",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Bay of Pigs",
+                        "gloss": "Nationalised US sugar, oil, phones"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Crushed 1,400 CIA exiles 1961",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Bay of Pigs",
+                        "gloss": "Crushed 1,400 CIA exiles 1961"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Operation Anadyr & U-2 Discovery",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Operation Anadyr",
+                    "gloss": "Countered 17:1 ICBM, Turkey Jupiters; Heyser’s U-2 spotted sites 14 Oct.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Countered 17:1 ICBM, Turkey Jupiters",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Operation Anadyr",
+                        "gloss": "Countered 17:1 ICBM, Turkey Jupiters"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Heyser’s U-2 spotted sites 14 Oct",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Operation Anadyr",
+                        "gloss": "Heyser’s U-2 spotted sites 14 Oct"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Put US Cities 3 Minutes Away",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "San Cristóbal",
+                    "gloss": "40,000 Soviet troops inside Cuba; Sparked Kennedy’s 13-day ExComm crisis.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "40,000 Soviet troops inside Cuba",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "San Cristóbal",
+                        "gloss": "40,000 Soviet troops inside Cuba"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Sparked Kennedy’s 13-day ExComm crisis",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "San Cristóbal",
+                        "gloss": "Sparked Kennedy’s 13-day ExComm crisis"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Boldest Gamble of Nuclear Brinkmanship",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "brinkmanship",
+                    "gloss": "Placed Soviet warheads 90 miles; Tested American resolve directly.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Placed Soviet warheads 90 miles",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "brinkmanship",
+                        "gloss": "Placed Soviet warheads 90 miles"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Tested American resolve directly",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "brinkmanship",
+                        "gloss": "Tested American resolve directly"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s2",
+                "tier": 3,
+                "label": "Quarantine & Black Saturday",
+                "dateChip": "22–27 Oct 1962",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "DEFCON 2",
+                "gloss": "Kennedy chose a naval quarantine at DEFCON 2 while Vasili Arkhipov prevented nuclear submarine war on Black Saturday.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "22 Oct Quarantine & DEFCON 2",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "naval quarantine",
+                    "gloss": "Rejected generals’ Cuba bombing call; Avoided killing Soviets, spared Berlin.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Rejected generals’ Cuba bombing call",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "naval quarantine",
+                        "gloss": "Rejected generals’ Cuba bombing call"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Avoided killing Soviets, spared Berlin",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "naval quarantine",
+                        "gloss": "Avoided killing Soviets, spared Berlin"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "27 Oct U-2 & Vasili Arkhipov",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Vasili Arkhipov",
+                    "gloss": "U-2 shot down over Cuba; Arkhipov blocked nuclear sub torpedo.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "U-2 shot down over Cuba",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Vasili Arkhipov",
+                        "gloss": "U-2 shot down over Cuba"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Arkhipov blocked nuclear sub torpedo",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Vasili Arkhipov",
+                        "gloss": "Arkhipov blocked nuclear sub torpedo"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Forced Secret RFK–Dobrynin Deal",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Dobrynin",
+                    "gloss": "Soviet cargo ships turned back; Leaders sought urgent midnight exit.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Soviet cargo ships turned back",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Dobrynin",
+                        "gloss": "Soviet cargo ships turned back"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Leaders sought urgent midnight exit",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Dobrynin",
+                        "gloss": "Leaders sought urgent midnight exit"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Closest World Came to Armageddon",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Black Saturday",
+                    "gloss": "One submarine vote saved millions; Exposed peril of nuclear miscalculation.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c4_t1",
+                        "tier": 5,
+                        "label": "One submarine vote saved millions",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Black Saturday",
+                        "gloss": "One submarine vote saved millions"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Exposed peril of nuclear miscalculation",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Black Saturday",
+                        "gloss": "Exposed peril of nuclear miscalculation"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s3",
+                "tier": 3,
+                "label": "Turkey Swap, Hotline & Test Ban",
+                "dateChip": "Oct 1962–1963",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Partial Nuclear Test Ban",
+                "gloss": "Removing Cuban and Turkish missiles led to the 1963 Moscow–Washington Hotline and the Partial Nuclear Test Ban Treaty.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Cuba Withdrawal & Secret Turkey Deal",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Jupiter missiles",
+                    "gloss": "USSR pulled Cuba missiles UN-checked; US pledged non-invasion, pulled Jupiters.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "USSR pulled Cuba missiles UN-checked",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Jupiter missiles",
+                        "gloss": "USSR pulled Cuba missiles UN-checked"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "US pledged non-invasion, pulled Jupiters",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Jupiter missiles",
+                        "gloss": "US pledged non-invasion, pulled Jupiters"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "1963 Hotline & Partial Test Ban",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "hotline",
+                    "gloss": "Installed direct teletype leader link; Banned atmospheric, space, underwater tests.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Installed direct teletype leader link",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "hotline",
+                        "gloss": "Installed direct teletype leader link"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Banned atmospheric, space, underwater tests",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "hotline",
+                        "gloss": "Banned atmospheric, space, underwater tests"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Stabilised Superpower Nuclear Deterrence",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Mutually Assured Destruction",
+                    "gloss": "Signed by US, UK, USSR; Replaced telegram delays with speed.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Signed by US, UK, USSR",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Mutually Assured Destruction",
+                        "gloss": "Signed by US, UK, USSR"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Replaced telegram delays with speed",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Mutually Assured Destruction",
+                        "gloss": "Replaced telegram delays with speed"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "MAD Compelled Crisis De-escalation",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "deterrence",
+                    "gloss": "Both superpowers stepped from brink; Opened path toward arms control.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Both superpowers stepped from brink",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "deterrence",
+                        "gloss": "Both superpowers stepped from brink"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Opened path toward arms control",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "deterrence",
+                        "gloss": "Opened path toward arms control"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_l5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Proxy Wars: Korea & Vietnam",
+            "dateChip": "1949–1975",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Domino Theory",
+            "gloss": "Domino Theory and NSC-68 drove US intervention in Korea (1950–53) and Vietnam (1954–75), exposing limits of superpower might.",
+            "children": [
+              {
+                "id": "kt2_l5_s1",
+                "tier": 3,
+                "label": "Domino Theory & Korean War",
+                "dateChip": "1949–1953",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "38th Parallel",
+                "gloss": "Mao’s 1949 victory and NSC-68 framed the 1950–53 Korean War, which left over three million dead along the 38th Parallel.",
+                "children": [
+                  {
+                    "id": "kt2_l5_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1949 Mao Victory, RDS-1 & NSC-68",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "NSC-68",
+                    "gloss": "Soviet A-bomb and China PRC; Quadrupled US defence; Domino Theory.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Soviet A-bomb and China PRC",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "NSC-68",
+                        "gloss": "Soviet A-bomb and China PRC"
+                      },
+                      {
+                        "id": "kt2_l5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Quadrupled US defence; Domino Theory",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "NSC-68",
+                        "gloss": "Quadrupled US defence; Domino Theory"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1950–53 Korean War Seesaw",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Inchon",
+                    "gloss": "Kim invaded; MacArthur landed Inchon; Chinese attack restored 38th Parallel.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Kim invaded; MacArthur landed Inchon",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Inchon",
+                        "gloss": "Kim invaded; MacArthur landed Inchon"
+                      },
+                      {
+                        "id": "kt2_l5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Chinese attack restored 38th Parallel",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Inchon",
+                        "gloss": "Chinese attack restored 38th Parallel"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Stalemate With Over 3m Dead",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "three million dead",
+                    "gloss": "Ended July 1953 at DMZ; Globalised US containment across Asia.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Ended July 1953 at DMZ",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "three million dead",
+                        "gloss": "Ended July 1953 at DMZ"
+                      },
+                      {
+                        "id": "kt2_l5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Globalised US containment across Asia",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "three million dead",
+                        "gloss": "Globalised US containment across Asia"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "First Major Hot Proxy Conflict",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "proxy war",
+                    "gloss": "Soviet tanks fought UN-US troops; Kept nuclear weapons unused.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Soviet tanks fought UN-US troops",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "proxy war",
+                        "gloss": "Soviet tanks fought UN-US troops"
+                      },
+                      {
+                        "id": "kt2_l5_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Kept nuclear weapons unused",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "proxy war",
+                        "gloss": "Kept nuclear weapons unused"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l5_s2",
+                "tier": 3,
+                "label": "Tonkin & Vietcong Guerrilla War",
+                "dateChip": "1954–1968",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "Cu Chi",
+                "gloss": "Following Dien Bien Phu and Gulf of Tonkin, Vietcong guerrilla warfare and Cu Chi tunnels blunted 500,000 US troops.",
+                "children": [
+                  {
+                    "id": "kt2_l5_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Dien Bien Phu & 1964 Tonkin",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Gulf of Tonkin",
+                    "gloss": "1954 split Vietnam 17th Parallel; Tonkin brought 500,000+ US troops.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "1954 split Vietnam 17th Parallel",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Gulf of Tonkin",
+                        "gloss": "1954 split Vietnam 17th Parallel"
+                      },
+                      {
+                        "id": "kt2_l5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Tonkin brought 500,000+ US troops",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Gulf of Tonkin",
+                        "gloss": "Tonkin brought 500,000+ US troops"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "250km Cu Chi Tunnels vs Napalm",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Cu Chi",
+                    "gloss": "Booby traps, Ho Chi Minh Trail; US used helicopters, Agent Orange.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Booby traps, Ho Chi Minh Trail",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Cu Chi",
+                        "gloss": "Booby traps, Ho Chi Minh Trail"
+                      },
+                      {
+                        "id": "kt2_l5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "US used helicopters, Agent Orange",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Cu Chi",
+                        "gloss": "US used helicopters, Agent Orange"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Civilian Losses Fuelled Anti-War Anger",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "attrition",
+                    "gloss": "Turned rural villagers against Saigon; Televised bloodshed sparked US protests.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Turned rural villagers against Saigon",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "attrition",
+                        "gloss": "Turned rural villagers against Saigon"
+                      },
+                      {
+                        "id": "kt2_l5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Televised bloodshed sparked US protests",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "attrition",
+                        "gloss": "Televised bloodshed sparked US protests"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Asymmetric Tactics Blunted Superpower Tech",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "asymmetric",
+                    "gloss": "Avoided pitched open US battles; Drained American morale through attrition.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Avoided pitched open US battles",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "asymmetric",
+                        "gloss": "Avoided pitched open US battles"
+                      },
+                      {
+                        "id": "kt2_l5_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Drained American morale through attrition",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "asymmetric",
+                        "gloss": "Drained American morale through attrition"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l5_s3",
+                "tier": 3,
+                "label": "1968 Tet & Fall of Saigon",
+                "dateChip": "1968–1975",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Tet Offensive",
+                "gloss": "The 1968 Tet Offensive forced Vietnamization and the 1973 US withdrawal before Saigon fell in April 1975.",
+                "children": [
+                  {
+                    "id": "kt2_l5_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Jan 1968 Surprise Tet Offensive",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Tet Offensive",
+                    "gloss": "Struck 100+ towns, US Embassy; Shocked American TV viewers home.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Struck 100+ towns, US Embassy",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Tet Offensive",
+                        "gloss": "Struck 100+ towns, US Embassy"
+                      },
+                      {
+                        "id": "kt2_l5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Shocked American TV viewers home",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Tet Offensive",
+                        "gloss": "Shocked American TV viewers home"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Vietnamization & 1973 Paris Accords",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Vietnamization",
+                    "gloss": "Nixon, Kissinger pulled troops out; Handed combat to South Vietnam.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Nixon, Kissinger pulled troops out",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Vietnamization",
+                        "gloss": "Nixon, Kissinger pulled troops out"
+                      },
+                      {
+                        "id": "kt2_l5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Handed combat to South Vietnam",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Vietnamization",
+                        "gloss": "Handed combat to South Vietnam"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Saigon Fell April 1975",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Saigon",
+                    "gloss": "North Vietnamese tanks captured Saigon; United Vietnam under communist rule.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "North Vietnamese tanks captured Saigon",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Saigon",
+                        "gloss": "North Vietnamese tanks captured Saigon"
+                      },
+                      {
+                        "id": "kt2_l5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "United Vietnam under communist rule",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Saigon",
+                        "gloss": "United Vietnam under communist rule"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Exposed Limits of Superpower Hegemony",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "hegemony",
+                    "gloss": "Nationalist resolve outlasted US wealth; Ended automatic Asian Domino interventions.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Nationalist resolve outlasted US wealth",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "hegemony",
+                        "gloss": "Nationalist resolve outlasted US wealth"
+                      },
+                      {
+                        "id": "kt2_l5_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Ended automatic Asian Domino interventions",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "hegemony",
+                        "gloss": "Ended automatic Asian Domino interventions"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: Collapse & Global View",
+        "dateChip": "1961–1991",
+        "lessonIndex": 5,
+        "stageIndex": 0,
+        "searchTerm": "Gorbachev",
+        "gloss": "The 1961 Berlin Wall, Soviet stagnation and Afghanistan, Gorbachev’s reforms, 9 November 1989, USSR dissolution, and global reassessment.",
+        "children": [
+          {
+            "id": "kt3_l6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Berlin Wall & USSR Collapse",
+            "dateChip": "1961–1991",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Gorbachev",
+            "gloss": "From the 1961 Berlin Wall and Afghan quagmire to Gorbachev’s Sinatra Doctrine, breaching the Wall (1989), and December 1991 dissolution.",
+            "children": [
+              {
+                "id": "kt3_l6_s1",
+                "tier": 3,
+                "label": "1961 Wall, Stagnation & Afghan War",
+                "dateChip": "1961–1985",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Afghanistan",
+                "gloss": "Built in 1961 to stop 2.7m defectors, Soviet power stalled under economic stagnation, Afghanistan, and Reagan’s SDI.",
+                "children": [
+                  {
+                    "id": "kt3_l6_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "13 Aug 1961 Berlin Wall Built",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Walter Ulbricht",
+                    "gloss": "2.7m+ East Germans fled west; Ulbricht halted skilled brain drain.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c1_t1",
+                        "tier": 5,
+                        "label": "2.7m+ East Germans fled west",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Walter Ulbricht",
+                        "gloss": "2.7m+ East Germans fled west"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Ulbricht halted skilled brain drain",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Walter Ulbricht",
+                        "gloss": "Ulbricht halted skilled brain drain"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s1_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Stagnation, Afghanistan & Reagan SDI",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Afghanistan",
+                    "gloss": "Quarter wealth spent on weapons; 1979 Afghan mujahideen; Star Wars.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Quarter wealth spent on weapons",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Afghanistan",
+                        "gloss": "Quarter wealth spent on weapons"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c2_t2",
+                        "tier": 5,
+                        "label": "1979 Afghan mujahideen; Star Wars",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Afghanistan",
+                        "gloss": "1979 Afghan mujahideen; Star Wars"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Forced Gorbachev’s 1985 Overhaul",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Brezhnev",
+                    "gloss": "Food queues and lagging computers; Moscow could not afford race.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Food queues and lagging computers",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Brezhnev",
+                        "gloss": "Food queues and lagging computers"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Moscow could not afford race",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Brezhnev",
+                        "gloss": "Moscow could not afford race"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Overstretch Drained Command Economy",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Star Wars",
+                    "gloss": "Wall symbolised communist repression starkly; Ten-year Afghan war bled USSR.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Wall symbolised communist repression starkly",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Star Wars",
+                        "gloss": "Wall symbolised communist repression starkly"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Ten-year Afghan war bled USSR",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Star Wars",
+                        "gloss": "Ten-year Afghan war bled USSR"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l6_s2",
+                "tier": 3,
+                "label": "Gorbachev & 9 Nov 1989 Wall",
+                "dateChip": "1985–1989",
+                "lessonIndex": 5,
+                "stageIndex": 3,
+                "searchTerm": "Sinatra Doctrine",
+                "gloss": "Glasnost, Perestroika, and the Sinatra Doctrine unleashed 1989 Velvet Revolutions and toppled the Berlin Wall on 9 November.",
+                "children": [
+                  {
+                    "id": "kt3_l6_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Glasnost, Perestroika & Sinatra Policy",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Sinatra Doctrine",
+                    "gloss": "Opened free debate, small firms; Scrapped Brezhnev Red Army force.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Opened free debate, small firms",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Sinatra Doctrine",
+                        "gloss": "Opened free debate, small firms"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Scrapped Brezhnev Red Army force",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Sinatra Doctrine",
+                        "gloss": "Scrapped Brezhnev Red Army force"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Solidarity & 9 Nov Wall Breached",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Schabowski",
+                    "gloss": "Wałęsa won June; Hungary opened; Schabowski’s live TV blunder opened.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Wałęsa won June; Hungary opened",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "Schabowski",
+                        "gloss": "Wałęsa won June; Hungary opened"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Schabowski’s live TV blunder opened",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "Schabowski",
+                        "gloss": "Schabowski’s live TV blunder opened"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Peaceful Revolutions & 1990 Unity",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "reunification",
+                    "gloss": "Crowds tore concrete Wall down; Germany reunified peacefully in 1990.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Crowds tore concrete Wall down",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "reunification",
+                        "gloss": "Crowds tore concrete Wall down"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Germany reunified peacefully in 1990",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "reunification",
+                        "gloss": "Germany reunified peacefully in 1990"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Ended Forty Years of Eastern Bloc",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Solidarity",
+                    "gloss": "Removing tank fear toppled regimes; Symbolised triumph of people power.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Removing tank fear toppled regimes",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "Solidarity",
+                        "gloss": "Removing tank fear toppled regimes"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Symbolised triumph of people power",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "Solidarity",
+                        "gloss": "Symbolised triumph of people power"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l6_s3",
+                "tier": 3,
+                "label": "1991 Coup & Soviet Dissolution",
+                "dateChip": "Aug–Dec 1991",
+                "lessonIndex": 5,
+                "stageIndex": 4,
+                "searchTerm": "Boris Yeltsin",
+                "gloss": "Boris Yeltsin defeated hardliners’ August 1991 Moscow coup, hastening republic breakaways and Gorbachev’s Christmas Day resignation.",
+                "children": [
+                  {
+                    "id": "kt3_l6_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Failed August 1991 Hardliner Coup",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Boris Yeltsin",
+                    "gloss": "Arrested Gorbachev inside Crimea villa; Yeltsin rallied crowds atop tank.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Arrested Gorbachev inside Crimea villa",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Boris Yeltsin",
+                        "gloss": "Arrested Gorbachev inside Crimea villa"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Yeltsin rallied crowds atop tank",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Boris Yeltsin",
+                        "gloss": "Yeltsin rallied crowds atop tank"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "25 Dec 1991 USSR Dissolved",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "25 December 1991",
+                    "gloss": "Fifteen constituent republics voted out; Soviet flag lowered over Kremlin.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Fifteen constituent republics voted out",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "25 December 1991",
+                        "gloss": "Fifteen constituent republics voted out"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Soviet flag lowered over Kremlin",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "25 December 1991",
+                        "gloss": "Soviet flag lowered over Kremlin"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Ended Forty-Six-Year Cold War",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "resignation",
+                    "gloss": "Broke Communist Party rule permanently; Closed superpower bipolar world era.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Broke Communist Party rule permanently",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "resignation",
+                        "gloss": "Broke Communist Party rule permanently"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Closed superpower bipolar world era",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "resignation",
+                        "gloss": "Closed superpower bipolar world era"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Collapsed Superpower Without World War",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "fifteen constituent republics",
+                    "gloss": "National movements dismantled Soviet empire; Peaceful collapse stunned world leaders.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c4_t1",
+                        "tier": 5,
+                        "label": "National movements dismantled Soviet empire",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "fifteen constituent republics",
+                        "gloss": "National movements dismantled Soviet empire"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Peaceful collapse stunned world leaders",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "fifteen constituent republics",
+                        "gloss": "Peaceful collapse stunned world leaders"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_l7",
+            "code": "7",
+            "tier": 2,
+            "label": "7. Reassessing the ‘Cold’ War",
+            "dateChip": "1945–1991",
+            "lessonIndex": 6,
+            "stageIndex": 0,
+            "searchTerm": "Global South",
+            "gloss": "Challenging the Eurocentric \"Long Peace\" with 20 million Global South deaths, CIA/KGB covert wars, the Space Race, and MAD.",
+            "children": [
+              {
+                "id": "kt3_l7_s1",
+                "tier": 3,
+                "label": "Long Peace vs 20m Global Dead",
+                "dateChip": "1945–1991",
+                "lessonIndex": 6,
+                "stageIndex": 1,
+                "searchTerm": "Long Peace",
+                "gloss": "While nuclear deterrence kept European borders calm, proxy wars killed over 20 million people across the Global South.",
+                "children": [
+                  {
+                    "id": "kt3_l7_s1_c1",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Traditional: Gaddis’s European Long Peace",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "Long Peace",
+                    "gloss": "NATO-Warsaw borders stayed stable; Superpowers avoided direct European fire.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s1_c1_t1",
+                        "tier": 5,
+                        "label": "NATO-Warsaw borders stayed stable",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "Long Peace",
+                        "gloss": "NATO-Warsaw borders stayed stable"
+                      },
+                      {
+                        "id": "kt3_l7_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Superpowers avoided direct European fire",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "Long Peace",
+                        "gloss": "Superpowers avoided direct European fire"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s1_c2",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Modern: Eurocentric Myth; 20m Dead",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "twenty million",
+                    "gloss": "3m Korea, 2m+ Vietnam perished; Hot wars across Global South.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s1_c2_t1",
+                        "tier": 5,
+                        "label": "3m Korea, 2m+ Vietnam perished",
+                        "lessonIndex": 6,
+                        "stageIndex": 1,
+                        "searchTerm": "twenty million",
+                        "gloss": "3m Korea, 2m+ Vietnam perished"
+                      },
+                      {
+                        "id": "kt3_l7_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Hot wars across Global South",
+                        "lessonIndex": 6,
+                        "stageIndex": 1,
+                        "searchTerm": "twenty million",
+                        "gloss": "Hot wars across Global South"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Ruined Post-Colonial Towns & Landmines",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "landmines",
+                    "gloss": "Armed dictatorships in Angola, Afghanistan; Left refugees and unexploded mines.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Armed dictatorships in Angola, Afghanistan",
+                        "lessonIndex": 6,
+                        "stageIndex": 1,
+                        "searchTerm": "landmines",
+                        "gloss": "Armed dictatorships in Angola, Afghanistan"
+                      },
+                      {
+                        "id": "kt3_l7_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Left refugees and unexploded mines",
+                        "lessonIndex": 6,
+                        "stageIndex": 1,
+                        "searchTerm": "landmines",
+                        "gloss": "Left refugees and unexploded mines"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Decentres Cold War Beyond Europe",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "Eurocentric",
+                    "gloss": "Calm Berlin contrasted burning South; Centers Asian, African, Latin voices.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Calm Berlin contrasted burning South",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "Eurocentric",
+                        "gloss": "Calm Berlin contrasted burning South"
+                      },
+                      {
+                        "id": "kt3_l7_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Centers Asian, African, Latin voices",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "Eurocentric",
+                        "gloss": "Centers Asian, African, Latin voices"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l7_s2",
+                "tier": 3,
+                "label": "Covert Coups & Space Race",
+                "dateChip": "1947–1989",
+                "lessonIndex": 6,
+                "stageIndex": 2,
+                "searchTerm": "Apollo 11",
+                "gloss": "CIA coups, KGB/Stasi spying, Sputnik 1, and Apollo 11 waged relentless ideological conflict below declared war.",
+                "children": [
+                  {
+                    "id": "kt3_l7_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "CIA Coups vs KGB & Stasi",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "Stasi",
+                    "gloss": "Toppled Iran 1953, Guatemala 1954; Stasi kept millions informant files.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Toppled Iran 1953, Guatemala 1954",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "Stasi",
+                        "gloss": "Toppled Iran 1953, Guatemala 1954"
+                      },
+                      {
+                        "id": "kt3_l7_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Stasi kept millions informant files",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "Stasi",
+                        "gloss": "Stasi kept millions informant files"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sputnik, Gagarin & Apollo 11",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Apollo 11",
+                    "gloss": "1957 Sputnik, 1961 Yuri Gagarin; NASA landed Moon July 1969.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s2_c2_t1",
+                        "tier": 5,
+                        "label": "1957 Sputnik, 1961 Yuri Gagarin",
+                        "lessonIndex": 6,
+                        "stageIndex": 3,
+                        "searchTerm": "Apollo 11",
+                        "gloss": "1957 Sputnik, 1961 Yuri Gagarin"
+                      },
+                      {
+                        "id": "kt3_l7_s2_c2_t2",
+                        "tier": 5,
+                        "label": "NASA landed Moon July 1969",
+                        "lessonIndex": 6,
+                        "stageIndex": 3,
+                        "searchTerm": "Apollo 11",
+                        "gloss": "NASA landed Moon July 1969"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Accelerated Global Missile Arsenals",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "missile delivery",
+                    "gloss": "Rockets doubled as ICBM boosters; Could destroy Earth several times.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Rockets doubled as ICBM boosters",
+                        "lessonIndex": 6,
+                        "stageIndex": 3,
+                        "searchTerm": "missile delivery",
+                        "gloss": "Rockets doubled as ICBM boosters"
+                      },
+                      {
+                        "id": "kt3_l7_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Could destroy Earth several times",
+                        "lessonIndex": 6,
+                        "stageIndex": 3,
+                        "searchTerm": "missile delivery",
+                        "gloss": "Could destroy Earth several times"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Weaponised Spying & Science Globally",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "espionage",
+                    "gloss": "Fought unseen below open war; Turned technology into prestige test.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Fought unseen below open war",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "espionage",
+                        "gloss": "Fought unseen below open war"
+                      },
+                      {
+                        "id": "kt3_l7_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Turned technology into prestige test",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "espionage",
+                        "gloss": "Turned technology into prestige test"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l7_s3",
+                "tier": 3,
+                "label": "MAD & The Synoptic Verdict",
+                "dateChip": "1945–1991",
+                "lessonIndex": 6,
+                "stageIndex": 4,
+                "searchTerm": "Mutually Assured Destruction",
+                "gloss": "Mutually Assured Destruction prevented direct superpower armageddon even as proxy bloodshed persisted through 1970s détente.",
+                "children": [
+                  {
+                    "id": "kt3_l7_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "MAD Made Direct War Suicide",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "collective suicide",
+                    "gloss": "Guaranteed mutual nuclear annihilation; Stopped direct Washington-Moscow combat.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Guaranteed mutual nuclear annihilation",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "collective suicide",
+                        "gloss": "Guaranteed mutual nuclear annihilation"
+                      },
+                      {
+                        "id": "kt3_l7_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Stopped direct Washington-Moscow combat",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "collective suicide",
+                        "gloss": "Stopped direct Washington-Moscow combat"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1970s Détente Slowed Arms Only",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "détente",
+                    "gloss": "Brief missile treaties eased tension; Operation Ajax, Dirty Wars continued.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Brief missile treaties eased tension",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "détente",
+                        "gloss": "Brief missile treaties eased tension"
+                      },
+                      {
+                        "id": "kt3_l7_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Operation Ajax, Dirty Wars continued",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "détente",
+                        "gloss": "Operation Ajax, Dirty Wars continued"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Kept Europe Cold, South Burning",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "four continents",
+                    "gloss": "Exported arms across poorer nations; Bloodshed spanned four continents.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Exported arms across poorer nations",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "four continents",
+                        "gloss": "Exported arms across poorer nations"
+                      },
+                      {
+                        "id": "kt3_l7_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Bloodshed spanned four continents",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "four continents",
+                        "gloss": "Bloodshed spanned four continents"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Total Ideological Struggle Without WWIII",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "MAD",
+                    "gloss": "Shaped half-century of world order; Proved deterrence spared superpowers alone.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Shaped half-century of world order",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "MAD",
+                        "gloss": "Shaped half-century of world order"
+                      },
+                      {
+                        "id": "kt3_l7_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Proved deterrence spared superpowers alone",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "MAD",
+                        "gloss": "Proved deterrence spared superpowers alone"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

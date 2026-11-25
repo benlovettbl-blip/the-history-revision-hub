@@ -1,0 +1,2110 @@
+{
+  "unitId": "great_war_part2",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "The Great War: Apocalypse & Aftermath, 1914–1919",
+  "examDateBoundary": "1914–1919",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "The Great War, 1914–1919",
+    "subLabel": "KS3 History",
+    "dateChip": "1914–1919",
+    "gloss": "Voluntary enlistment, Western Front trenches and General Haig, forgotten colonial troops, Britain’s Home Front, and Versailles.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Enlistment & Trenches",
+        "dateChip": "1914–1918",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Somme",
+        "gloss": "Why British men rushed to volunteer in 1914, trench stalemate, the 1 July 1916 Somme disaster, and the Haig debate.",
+        "children": [
+          {
+            "id": "kt1_l1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. 1914 Rush to the Colours",
+            "dateChip": "Aug–Dec 1914",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Pals Battalions",
+            "gloss": "Kitchener’s appeal, outrage over Belgium, Pals Battalions, working-class poverty, and coercive White Feather pressure.",
+            "children": [
+              {
+                "id": "kt1_l1_s1",
+                "tier": 3,
+                "label": "Kitchener’s Call & Belgium",
+                "dateChip": "Aug–Sep 1914",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Kitchener",
+                "gloss": "Entering war with just 120,000 regular soldiers, Kitchener called for 500,000 volunteers amid fury over occupied Belgium.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Tiny 120,000 Professional British Army",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "120,000",
+                    "gloss": "Britain had zero conscription laws; Kitchener called for 500,000 volunteers.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Britain had zero conscription laws",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "120,000",
+                        "gloss": "Britain had zero conscription laws"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Kitchener called for 500,000 volunteers",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "120,000",
+                        "gloss": "Kitchener called for 500,000 volunteers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Belgian Atrocities & Louvain Fire",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Louvain",
+                    "gloss": "Broke 1839 Treaty of London; Burned historic Louvain library.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Broke 1839 Treaty of London",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Louvain",
+                        "gloss": "Broke 1839 Treaty of London"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Burned historic Louvain library",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Louvain",
+                        "gloss": "Burned historic Louvain library"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Flooded Recruitment Offices Nationwide",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "righteous crusade",
+                    "gloss": "Framed war as moral crusade; Shattered quick-war government assumptions.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Framed war as moral crusade",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "righteous crusade",
+                        "gloss": "Framed war as moral crusade"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Shattered quick-war government assumptions",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "righteous crusade",
+                        "gloss": "Shattered quick-war government assumptions"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Built Mass Citizen Volunteer Army",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Kitchener",
+                    "gloss": "Matched continental conscript armies; Relied on voluntary civic duty.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Matched continental conscript armies",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Kitchener",
+                        "gloss": "Matched continental conscript armies"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Relied on voluntary civic duty",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Kitchener",
+                        "gloss": "Relied on voluntary civic duty"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s2",
+                "tier": 3,
+                "label": "Pals Battalions & Poverty",
+                "dateChip": "Autumn 1914",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Pompey Pals",
+                "gloss": "Local Pals Battalions and guaranteed army pay drew working-class recruits hoping the war would end by Christmas.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Pals Battalions & Pompey Pals",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Pompey Pals",
+                    "gloss": "Friends and neighbours trained together; Formed 14th/15th Hants Pompey Pals.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Friends and neighbours trained together",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Pompey Pals",
+                        "gloss": "Friends and neighbours trained together"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Formed 14th/15th Hants Pompey Pals",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Pompey Pals",
+                        "gloss": "Formed 14th/15th Hants Pompey Pals"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "King’s Shilling Escaped Poverty",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "King’s shilling",
+                    "gloss": "Guaranteed regular pay, food, boots; Believed war over by Christmas.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Guaranteed regular pay, food, boots",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "King’s shilling",
+                        "gloss": "Guaranteed regular pay, food, boots"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Believed war over by Christmas",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "King’s shilling",
+                        "gloss": "Believed war over by Christmas"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Exposed Whole Towns to Loss",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "single day’s heavy fighting",
+                    "gloss": "Boosted early battalion morale strongly; One battle devastated entire streets.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Boosted early battalion morale strongly",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "single day’s heavy fighting",
+                        "gloss": "Boosted early battalion morale strongly"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "One battle devastated entire streets",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "single day’s heavy fighting",
+                        "gloss": "One battle devastated entire streets"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Blended Comradeship With Economic Need",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "tenement",
+                    "gloss": "Escaped damp tenements and factories; Civic pride drove mass enlistment.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Escaped damp tenements and factories",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "tenement",
+                        "gloss": "Escaped damp tenements and factories"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Civic pride drove mass enlistment",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "tenement",
+                        "gloss": "Civic pride drove mass enlistment"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s3",
+                "tier": 3,
+                "label": "Posters & White Feathers",
+                "dateChip": "Late 1914",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "White Feather",
+                "gloss": "Pointing Kitchener posters and public shaming by the White Feather Movement coerced hesitant men into uniform.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Kitchener’s Pointing Finger Poster",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Kitchener finger poster",
+                    "gloss": "Demanded duty for King, country; Stared directly at civilian passers-by.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Demanded duty for King, country",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Kitchener finger poster",
+                        "gloss": "Demanded duty for King, country"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Stared directly at civilian passers-by",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Kitchener finger poster",
+                        "gloss": "Stared directly at civilian passers-by"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Public White Feather Shaming",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "White Feather Movement",
+                    "gloss": "Handed white feathers as cowardice; Targeted men in civilian clothes.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Handed white feathers as cowardice",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "White Feather Movement",
+                        "gloss": "Handed white feathers as cowardice"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Targeted men in civilian clothes",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "White Feather Movement",
+                        "gloss": "Targeted men in civilian clothes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Pressured Reluctant Men to Enlist",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "social shame",
+                    "gloss": "Made civilian clothes unbearable shame; Sustained volunteer numbers into 1915.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Made civilian clothes unbearable shame",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "social shame",
+                        "gloss": "Made civilian clothes unbearable shame"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Sustained volunteer numbers into 1915",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "social shame",
+                        "gloss": "Sustained volunteer numbers into 1915"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Revealed Coercive Wartime Culture",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "White Feather",
+                    "gloss": "Patriotism mixed pride with humiliation; Foreshadowed 1916 compulsory conscription.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Patriotism mixed pride with humiliation",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "White Feather",
+                        "gloss": "Patriotism mixed pride with humiliation"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Foreshadowed 1916 compulsory conscription",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "White Feather",
+                        "gloss": "Foreshadowed 1916 compulsory conscription"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_l2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Trenches, Somme & Haig",
+            "dateChip": "1914–1918",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Somme",
+            "gloss": "400 miles of zig-zag trenches, trench foot and shell shock, 57,470 casualties on 1 July 1916, and the Haig debate.",
+            "children": [
+              {
+                "id": "kt1_l2_s1",
+                "tier": 3,
+                "label": "400-Mile Trench Stalemate",
+                "dateChip": "1914–1916",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "zig-zag",
+                "gloss": "Machine guns and artillery forced armies into a three-tier, 400-mile trench system plagued by trench foot and shell shock.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Race to Sea & Machine Guns",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Race to the Sea",
+                    "gloss": "Open movement swept by shrapnel; 400 miles Channel to Switzerland.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Open movement swept by shrapnel",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Race to the Sea",
+                        "gloss": "Open movement swept by shrapnel"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "400 miles Channel to Switzerland",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Race to the Sea",
+                        "gloss": "400 miles Channel to Switzerland"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Three-Tier Zig-Zag Trench Lines",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "zig-zag",
+                    "gloss": "Sandbag traverses blocked straight fire; Deep barbed wire, 30ft dugouts.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Sandbag traverses blocked straight fire",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "zig-zag",
+                        "gloss": "Sandbag traverses blocked straight fire"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Deep barbed wire, 30ft dugouts",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "zig-zag",
+                        "gloss": "Deep barbed wire, 30ft dugouts"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Trench Foot & Shell Shock",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "shell shock",
+                    "gloss": "Flooded mud caused fungal amputations; Heavy shelling shattered soldiers’ nerves.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Flooded mud caused fungal amputations",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "shell shock",
+                        "gloss": "Flooded mud caused fungal amputations"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Heavy shelling shattered soldiers’ nerves",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "shell shock",
+                        "gloss": "Heavy shelling shattered soldiers’ nerves"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Gave Defenders Lethal Advantage",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "kill zones",
+                    "gloss": "Wire funnelled infantry into guns; Created grinding war of attrition.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Wire funnelled infantry into guns",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "kill zones",
+                        "gloss": "Wire funnelled infantry into guns"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Created grinding war of attrition",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "kill zones",
+                        "gloss": "Created grinding war of attrition"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s2",
+                "tier": 3,
+                "label": "1 July 1916 Somme Catastrophe",
+                "dateChip": "1 July 1916",
+                "lessonIndex": 1,
+                "stageIndex": 3,
+                "searchTerm": "57,470",
+                "gloss": "After a 1.5-million-shell bombardment failed to cut German wire, British forces suffered 57,470 casualties on 1 July 1916.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Offensive to Relieve French Verdun",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Verdun",
+                    "gloss": "7-day, 1.5-million-shell artillery barrage; Haig expected obliterated German lines.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "7-day, 1.5-million-shell artillery barrage",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Verdun",
+                        "gloss": "7-day, 1.5-million-shell artillery barrage"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Haig expected obliterated German lines",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Verdun",
+                        "gloss": "Haig expected obliterated German lines"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "57,470 Casualties on Day One",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "57,470",
+                    "gloss": "Shrapnel shells left wire intact; Germans emerged from deep dugouts.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Shrapnel shells left wire intact",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "57,470",
+                        "gloss": "Shrapnel shells left wire intact"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Germans emerged from deep dugouts",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "57,470",
+                        "gloss": "Germans emerged from deep dugouts"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Decimated Volunteer Pals Units",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "No Man’s Land",
+                    "gloss": "Mowed down crossing No Man’s Land; Bloodiest day in British history.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Mowed down crossing No Man’s Land",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "No Man’s Land",
+                        "gloss": "Mowed down crossing No Man’s Land"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Bloodiest day in British history",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "No Man’s Land",
+                        "gloss": "Bloodiest day in British history"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Shattered Pre-War Tactical Beliefs",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Battle of the Somme",
+                    "gloss": "Exposed limits of shrapnel barrages; Forced urgent battlefield innovation.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Exposed limits of shrapnel barrages",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Battle of the Somme",
+                        "gloss": "Exposed limits of shrapnel barrages"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Forced urgent battlefield innovation",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Battle of the Somme",
+                        "gloss": "Forced urgent battlefield innovation"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s3",
+                "tier": 3,
+                "label": "The General Haig Debate",
+                "dateChip": "1916–1918",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "Douglas Haig",
+                "gloss": "Historians clash between condemning Haig as the \"Butcher of the Somme\" and crediting his 1918 combined-arms learning curve.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s3_c1",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Traditional: Callous Butcher in Mud",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "butcher",
+                    "gloss": "Lions led by aristocratic donkeys; Squandered lives in frontal attacks.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Lions led by aristocratic donkeys",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "butcher",
+                        "gloss": "Lions led by aristocratic donkeys"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Squandered lives in frontal attacks",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "butcher",
+                        "gloss": "Squandered lives in frontal attacks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c2",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Modern: Industrial Learning Curve",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "learning curve",
+                    "gloss": "No general knew trench solutions; Adapted tactics through hard lessons.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "No general knew trench solutions",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "learning curve",
+                        "gloss": "No general knew trench solutions"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Adapted tactics through hard lessons",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "learning curve",
+                        "gloss": "Adapted tactics through hard lessons"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Forged 1918 Combined-Arms Tactics",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "combined-arms",
+                    "gloss": "Coordinated tanks and creeping barrages; Integrated aircraft for 1918 victory.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Coordinated tanks and creeping barrages",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "combined-arms",
+                        "gloss": "Coordinated tanks and creeping barrages"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Integrated aircraft for 1918 victory",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "combined-arms",
+                        "gloss": "Integrated aircraft for 1918 victory"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Sharpest British Command Controversy",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Douglas Haig",
+                    "gloss": "Weighs 1916 slaughter against 1918; Shows how historians revise verdicts.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Weighs 1916 slaughter against 1918",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Douglas Haig",
+                        "gloss": "Weighs 1916 slaughter against 1918"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Shows how historians revise verdicts",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Douglas Haig",
+                        "gloss": "Shows how historians revise verdicts"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Empire & Home Front",
+        "dateChip": "1914–1919",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Canary Girls",
+        "gloss": "Four million colonial and dominion personnel, Gallipoli, Chinese labourers, DORA, conscription, Canary Girls, and rationing.",
+        "children": [
+          {
+            "id": "kt2_l3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Empire & Forgotten Fronts",
+            "dateChip": "1914–1919",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Khudadad Khan",
+            "gloss": "Indian troops at Ypres, ANZACs at Gallipoli, the Chinese Labour Corps, and post-war erasure of African and Asian sacrifice.",
+            "children": [
+              {
+                "id": "kt2_l3_s1",
+                "tier": 3,
+                "label": "Imperial Lifeline & First Ypres",
+                "dateChip": "1914–1915",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Khudadad Khan",
+                "gloss": "Over four million colonial and dominion personnel mobilised as the Indian Corps helped save Flanders in autumn 1914.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Four Million Imperial Personnel",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "four million",
+                    "gloss": "Mobilised troops across five continents; Ships brought colonial wheat, oil.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Mobilised troops across five continents",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "four million",
+                        "gloss": "Mobilised troops across five continents"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Ships brought colonial wheat, oil",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "four million",
+                        "gloss": "Ships brought colonial wheat, oil"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Indian Corps & Khudadad Khan VC",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Khudadad Khan",
+                    "gloss": "Held freezing Ypres in cotton; First Asian Victoria Cross winner.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Held freezing Ypres in cotton",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Khudadad Khan",
+                        "gloss": "Held freezing Ypres in cotton"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "First Asian Victoria Cross winner",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Khudadad Khan",
+                        "gloss": "First Asian Victoria Cross winner"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Blocked 1914 German Breakthrough",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "First Ypres",
+                    "gloss": "Reinforced exhausted regular British units; 1.3m Indians served across war.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Reinforced exhausted regular British units",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "First Ypres",
+                        "gloss": "Reinforced exhausted regular British units"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "1.3m Indians served across war",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "First Ypres",
+                        "gloss": "1.3m Indians served across war"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Made Allied Victory Globally Imperial",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "imperial conflict",
+                    "gloss": "Prevented Allied economic collapse; Sustained Europe, Mesopotamia, Palestine.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Prevented Allied economic collapse",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "imperial conflict",
+                        "gloss": "Prevented Allied economic collapse"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Sustained Europe, Mesopotamia, Palestine",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "imperial conflict",
+                        "gloss": "Sustained Europe, Mesopotamia, Palestine"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l3_s2",
+                "tier": 3,
+                "label": "Gallipoli & Labour Battalions",
+                "dateChip": "1915–1918",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Gallipoli",
+                "gloss": "ANZAC troops endured eight months at Gallipoli while 140,000 Chinese Labour Corps workers sustained Allied logistics under segregation.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1915 Anzac Cove Stalemate",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Anzac Cove",
+                    "gloss": "Pinned below cliffs by Ottomans; Evacuated after eight bloody months.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Pinned below cliffs by Ottomans",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Anzac Cove",
+                        "gloss": "Pinned below cliffs by Ottomans"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Evacuated after eight bloody months",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Anzac Cove",
+                        "gloss": "Evacuated after eight bloody months"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "140,000 Chinese Labour Corps",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Chinese Labour Corps",
+                    "gloss": "Dug trenches, unloaded toxic shells; Locked inside segregated curfew camps.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Dug trenches, unloaded toxic shells",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Chinese Labour Corps",
+                        "gloss": "Dug trenches, unloaded toxic shells"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Locked inside segregated curfew camps",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Chinese Labour Corps",
+                        "gloss": "Locked inside segregated curfew camps"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Forged ANZAC Pride & Logistics",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "ANZAC legend",
+                    "gloss": "Birthed lasting ANZAC national identity; Kept Western Front railways running.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Birthed lasting ANZAC national identity",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "ANZAC legend",
+                        "gloss": "Birthed lasting ANZAC national identity"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Kept Western Front railways running",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "ANZAC legend",
+                        "gloss": "Kept Western Front railways running"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Exposed Wartime Racial Hierarchies",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "segregation",
+                    "gloss": "Chinese barred from French civilians; Vital war work met prejudice.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Chinese barred from French civilians",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "segregation",
+                        "gloss": "Chinese barred from French civilians"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Vital war work met prejudice",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "segregation",
+                        "gloss": "Vital war work met prejudice"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l3_s3",
+                "tier": 3,
+                "label": "Unmarked Graves & Erasure",
+                "dateChip": "Post-1918",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "Victory Parade",
+                "gloss": "Over one million African porters died without individual headstones and non-white troops were barred from London’s 1919 Victory Parade.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "One Million African Porters Died",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "African porters",
+                    "gloss": "Carried supplies across East Africa; Buried in anonymous unmarked pits.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Carried supplies across East Africa",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "African porters",
+                        "gloss": "Carried supplies across East Africa"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Buried in anonymous unmarked pits",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "African porters",
+                        "gloss": "Buried in anonymous unmarked pits"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Barred From 1919 Victory Parade",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "1919 London Victory Parade",
+                    "gloss": "Excluded non-white colonial regiments; Denied equal post-war war pensions.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Excluded non-white colonial regiments",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "1919 London Victory Parade",
+                        "gloss": "Excluded non-white colonial regiments"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Denied equal post-war war pensions",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "1919 London Victory Parade",
+                        "gloss": "Denied equal post-war war pensions"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Erased Colonial Memory for Decades",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "unmarked",
+                    "gloss": "White troops received named headstones; Hid empire’s sacrifice from textbooks.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "White troops received named headstones",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "unmarked",
+                        "gloss": "White troops received named headstones"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Hid empire’s sacrifice from textbooks",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "unmarked",
+                        "gloss": "Hid empire’s sacrifice from textbooks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Institutionalised Post-War Inequality",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "institutional prejudice",
+                    "gloss": "Exposed double standard of empire; Now recovered by modern historians.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Exposed double standard of empire",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "institutional prejudice",
+                        "gloss": "Exposed double standard of empire"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Now recovered by modern historians",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "institutional prejudice",
+                        "gloss": "Now recovered by modern historians"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_l4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Home Front & Total War",
+            "dateChip": "1914–1918",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "DORA",
+            "gloss": "DORA emergency powers, the 1915 shell scandal, 1916 conscription, female Canary Girls, and 1918 rationing against U-boats.",
+            "children": [
+              {
+                "id": "kt2_l4_s1",
+                "tier": 3,
+                "label": "DORA & 1915 Shell Crisis",
+                "dateChip": "1914–1915",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Ministry of Munitions",
+                "gloss": "Parliament passed DORA in August 1914 and created Lloyd George’s Ministry of Munitions after the May 1915 shell famine.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Aug 1914 DORA State Controls",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "DORA",
+                    "gloss": "Censored press and casualty news; Cut pub hours, watered beer.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Censored press and casualty news",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "DORA",
+                        "gloss": "Censored press and casualty news"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Cut pub hours, watered beer",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "DORA",
+                        "gloss": "Cut pub hours, watered beer"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "May 1915 Daily Mail Shell Scandal",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "shell famine",
+                    "gloss": "Frontline shortage of explosive shells; Forced Asquith into coalition government.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Frontline shortage of explosive shells",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "shell famine",
+                        "gloss": "Frontline shortage of explosive shells"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Forced Asquith into coalition government",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "shell famine",
+                        "gloss": "Forced Asquith into coalition government"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Lloyd George Ran State Factories",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Ministry of Munitions",
+                    "gloss": "Created powerful Ministry of Munitions; Nationalised private arms production.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Created powerful Ministry of Munitions",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Ministry of Munitions",
+                        "gloss": "Created powerful Ministry of Munitions"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Nationalised private arms production",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Ministry of Munitions",
+                        "gloss": "Nationalised private arms production"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Replaced Laissez-Faire With Total War",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "emergency powers",
+                    "gloss": "Suspended Victorian liberal freedoms; Directed land, labour, and factories.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Suspended Victorian liberal freedoms",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "emergency powers",
+                        "gloss": "Suspended Victorian liberal freedoms"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Directed land, labour, and factories",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "emergency powers",
+                        "gloss": "Directed land, labour, and factories"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s2",
+                "tier": 3,
+                "label": "Conscription & Canary Girls",
+                "dateChip": "1916–1918",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Canary Girls",
+                "gloss": "Parliament introduced conscription in January 1916 while nearly one million female munitions workers produced 80% of British shells.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Jan 1916 Military Service Act",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Military Service Act",
+                    "gloss": "Conscripted unmarried men aged 18–41; 16,000 conscientious objectors refused.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Conscripted unmarried men aged 18–41",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Military Service Act",
+                        "gloss": "Conscripted unmarried men aged 18–41"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "16,000 conscientious objectors refused",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Military Service Act",
+                        "gloss": "16,000 conscientious objectors refused"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Canary Girls Made 80% of Shells",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Canary Girls",
+                    "gloss": "Toxic TNT yellowed skin, hair; 1917 Silvertown blast killed 73.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Toxic TNT yellowed skin, hair",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Canary Girls",
+                        "gloss": "Toxic TNT yellowed skin, hair"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "1917 Silvertown blast killed 73",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Canary Girls",
+                        "gloss": "1917 Silvertown blast killed 73"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Sustained Mass Frontline Firepower",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "one million British women",
+                    "gloss": "Nearly one million women worked; Ended 1915 artillery shell famine.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Nearly one million women worked",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "one million British women",
+                        "gloss": "Nearly one million women worked"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Ended 1915 artillery shell famine",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "one million British women",
+                        "gloss": "Ended 1915 artillery shell famine"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Reshaped State Duty & Gender Roles",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "indispensable",
+                    "gloss": "First compulsory British army call-up; Strengthened claim for women’s vote.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c4_t1",
+                        "tier": 5,
+                        "label": "First compulsory British army call-up",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "indispensable",
+                        "gloss": "First compulsory British army call-up"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Strengthened claim for women’s vote",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "indispensable",
+                        "gloss": "Strengthened claim for women’s vote"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s3",
+                "tier": 3,
+                "label": "U-Boats & 1918 Ration Books",
+                "dateChip": "1917–1918",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "ration books",
+                "gloss": "Unrestricted German U-boat warfare cut Britain’s wheat to six weeks in 1917 until naval convoys and 1918 rationing defeated starvation.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1917 Unrestricted U-Boat Campaign",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "U-boats",
+                    "gloss": "Sank merchant ships across Atlantic; Left six weeks wheat reserve.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Sank merchant ships across Atlantic",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "U-boats",
+                        "gloss": "Sank merchant ships across Atlantic"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Left six weeks wheat reserve",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "U-boats",
+                        "gloss": "Left six weeks wheat reserve"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Early 1918 Compulsory Ration Books",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "ration books",
+                    "gloss": "Rationed sugar, meat, butter, jam; Ended grocer queues and panic.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Rationed sugar, meat, butter, jam",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "ration books",
+                        "gloss": "Rationed sugar, meat, butter, jam"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Ended grocer queues and panic",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "ration books",
+                        "gloss": "Ended grocer queues and panic"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Convoys & Rations Beat Blockade",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "convoys",
+                    "gloss": "Allied naval convoys protected ships; Guaranteed fair civilian food shares.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Allied naval convoys protected ships",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "convoys",
+                        "gloss": "Allied naval convoys protected ships"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Guaranteed fair civilian food shares",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "convoys",
+                        "gloss": "Guaranteed fair civilian food shares"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Kept British Home Morale Intact",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "civilian morale",
+                    "gloss": "Avoided German-style hunger collapse; Outlasted Central Powers into 1918.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Avoided German-style hunger collapse",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "civilian morale",
+                        "gloss": "Avoided German-style hunger collapse"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Outlasted Central Powers into 1918",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "civilian morale",
+                        "gloss": "Outlasted Central Powers into 1918"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: Armistice & Versailles",
+        "dateChip": "1918–1939",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Versailles",
+        "gloss": "German naval mutiny and the 1918 Armistice, the clash of the Big Three in Paris, Article 231, and the Versailles verdict.",
+        "children": [
+          {
+            "id": "kt3_l5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Versailles & Flawed Peace",
+            "dateChip": "1918–1939",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Treaty of Versailles",
+            "gloss": "From the 11 November 1918 Compiègne Armistice to Article 231, £6.6bn reparations, Keynes’s warning, and 1930s enforcement failure.",
+            "children": [
+              {
+                "id": "kt3_l5_s1",
+                "tier": 3,
+                "label": "1918 Collapse & Big Three Aims",
+                "dateChip": "1918–1919",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Big Three",
+                "gloss": "Kiel mutinies forced the 11 November 1918 Armistice before Wilson, Clemenceau, and Lloyd George clashed at Paris.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Kiel Mutiny & 11 Nov Armistice",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Kiel",
+                    "gloss": "Sailors mutinied; Kaiser fled Holland; Signed inside Compiègne rail carriage.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Sailors mutinied; Kaiser fled Holland",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Kiel",
+                        "gloss": "Sailors mutinied; Kaiser fled Holland"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Signed inside Compiègne rail carriage",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Kiel",
+                        "gloss": "Signed inside Compiègne rail carriage"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Wilson vs Clemenceau vs Lloyd George",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "14 Points",
+                    "gloss": "Wilson: 14 Points and League; Clemenceau: revenge; UK wanted trade.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Wilson: 14 Points and League",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "14 Points",
+                        "gloss": "Wilson: 14 Points and League"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Clemenceau: revenge; UK wanted trade",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "14 Points",
+                        "gloss": "Clemenceau: revenge; UK wanted trade"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Forged Uneasy June 1919 Compromise",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Paris Peace Conference",
+                    "gloss": "Moderated French dismemberment demands; Excluded defeated Germany from talks.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Moderated French dismemberment demands",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Paris Peace Conference",
+                        "gloss": "Moderated French dismemberment demands"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Excluded defeated Germany from talks",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Paris Peace Conference",
+                        "gloss": "Excluded defeated Germany from talks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Satisfied None of the Peacemakers",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "compromise",
+                    "gloss": "Too harsh for German reconciliation; Too soft to crush German power.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Too harsh for German reconciliation",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "compromise",
+                        "gloss": "Too harsh for German reconciliation"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Too soft to crush German power",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "compromise",
+                        "gloss": "Too soft to crush German power"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l5_s2",
+                "tier": 3,
+                "label": "Article 231 & Punitive Diktat",
+                "dateChip": "28 June 1919",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Article 231",
+                "gloss": "Versailles imposed War Guilt (Article 231), £6.6bn reparations, 13% land loss, and a 100,000-man army cap on Weimar Germany.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Article 231 & £6.6bn Reparations",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Article 231",
+                    "gloss": "Forced total moral war blame; Imposed £6.6bn reparations bill.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Forced total moral war blame",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Article 231",
+                        "gloss": "Forced total moral war blame"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Imposed £6.6bn reparations bill",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Article 231",
+                        "gloss": "Imposed £6.6bn reparations bill"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Lost 13% Land & 100,000 Army Cap",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "100,000",
+                    "gloss": "Lost colonies; Rhineland was demilitarised; Banned conscription and combat planes.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Lost colonies; Rhineland was demilitarised",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "100,000",
+                        "gloss": "Lost colonies; Rhineland was demilitarised"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Banned conscription and combat planes",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "100,000",
+                        "gloss": "Banned conscription and combat planes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Hated Across Weimar as Diktat",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Diktat",
+                    "gloss": "Condemned by all German parties; Tainted new Weimar Republic.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Condemned by all German parties",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Diktat",
+                        "gloss": "Condemned by all German parties"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Tainted new Weimar Republic",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Diktat",
+                        "gloss": "Tainted new Weimar Republic"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Fuelled Extremist Grievance Politics",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Weimar Republic",
+                    "gloss": "Created deep national humiliation; Exploited during Great Depression.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Created deep national humiliation",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Weimar Republic",
+                        "gloss": "Created deep national humiliation"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Exploited during Great Depression",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Weimar Republic",
+                        "gloss": "Exploited during Great Depression"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l5_s3",
+                "tier": 3,
+                "label": "Keynes, Dyson & Verdict",
+                "dateChip": "1919–1939",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Keynes",
+                "gloss": "Keynes and cartoonist Will Dyson predicted disaster in 1919, while historians debate treaty harshness versus 1930s appeasement.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Keynes & Dyson’s 1940 Class Warning",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "1940 Class",
+                    "gloss": "Keynes quit over Carthaginian peace; Dyson drew weeping 1940 toddler.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Keynes quit over Carthaginian peace",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "1940 Class",
+                        "gloss": "Keynes quit over Carthaginian peace"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Dyson drew weeping 1940 toddler",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "1940 Class",
+                        "gloss": "Dyson drew weeping 1940 toddler"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c2",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Traditional: Treaty Caused Hitler",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Hitler’s rise",
+                    "gloss": "Bred economic ruin and bitterness; Undermined fragile Weimar democracy.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Bred economic ruin and bitterness",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Hitler’s rise",
+                        "gloss": "Bred economic ruin and bitterness"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Undermined fragile Weimar democracy",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Hitler’s rise",
+                        "gloss": "Undermined fragile Weimar democracy"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c3",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Modern: Allied Enforcement Failed",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "enforce",
+                    "gloss": "Left German industry, population intact; 1930s Allies failed to enforce.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Left German industry, population intact",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "enforce",
+                        "gloss": "Left German industry, population intact"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "1930s Allies failed to enforce",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "enforce",
+                        "gloss": "1930s Allies failed to enforce"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c4",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Unchecked Rearmament Led to 1939",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "rearmament",
+                    "gloss": "Permitted aggressive Nazi expansion; Erupted into World War II.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Permitted aggressive Nazi expansion",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "rearmament",
+                        "gloss": "Permitted aggressive Nazi expansion"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Erupted into World War II",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "rearmament",
+                        "gloss": "Erupted into World War II"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

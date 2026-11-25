@@ -1,0 +1,1985 @@
+{
+  "unitId": "water_and_sanitation",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "Water and Sanitation Through Time",
+  "examDateBoundary": "c.AD 43–Present",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Water & Sanitation",
+    "subLabel": "KS3 History",
+    "dateChip": "c.AD 43–Present",
+    "gloss": "Two millennia of British public health from Roman aqueducts and medieval monasteries to John Snow, Bazalgette, and the 1875 Act.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Ancient & Medieval",
+        "dateChip": "AD 43–1388",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "aqueducts",
+        "gloss": "Roman aqueducts, thermae, and AD 410 collapse, followed by medieval town rakers, clean monasteries, and the 1388 Statute.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Roman Water Engineering",
+            "dateChip": "AD 43–410",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "thermae",
+            "q2Chain": "AD 43 Towns, Aqueducts & Baths → Latrines, Tersorium & Plumbism → AD 410 Withdrawal & Decay",
+            "gloss": "Causal Chain: AD 43 Towns, Aqueducts & Baths → Latrines, Tersorium & Plumbism → AD 410 Withdrawal & Decay.",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "AD 43 Towns, Aqueducts & Baths",
+                "dateChip": "AD 43–100",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "aqueducts",
+                "gloss": "Crowded Roman towns like Londinium built gravity stone aqueducts, castella water towers, and hypocaust-heated thermae.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "AD 43 Crowded Walled Cities",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Londinium",
+                    "gloss": "Claudius built walled Londinium; Outgrew rural field cesspits.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Claudius built walled Londinium",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Londinium",
+                        "gloss": "Claudius built walled Londinium"
+                      },
+                      {
+                        "id": "kt1_1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Outgrew rural field cesspits",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Londinium",
+                        "gloss": "Outgrew rural field cesspits"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Gravity Aqueducts & Castella",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "castella",
+                    "gloss": "Piped upland hill spring water; Supplied fountains and villas.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Piped upland hill spring water",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "castella",
+                        "gloss": "Piped upland hill spring water"
+                      },
+                      {
+                        "id": "kt1_1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Supplied fountains and villas",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "castella",
+                        "gloss": "Supplied fountains and villas"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c3",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Public Thermae & Hypocausts",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "strigil",
+                    "gloss": "Copper-coin baths; bronze strigil; Hot floors and cold plunges.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Copper-coin baths; bronze strigil",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "strigil",
+                        "gloss": "Copper-coin baths; bronze strigil"
+                      },
+                      {
+                        "id": "kt1_1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Hot floors and cold plunges",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "strigil",
+                        "gloss": "Hot floors and cold plunges"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Latrines, Tersorium & Plumbism",
+                "dateChip": "c.AD 150",
+                "lessonIndex": 0,
+                "stageIndex": 3,
+                "searchTerm": "tersorium",
+                "gloss": "Despite flushing latrines, shared tersorium sponges, stagnant bathwater, and lead pipes spread whipworms and plumbism.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Shared Tersorium Sponge Sticks",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "tersorium",
+                    "gloss": "Multi-seat stone public latrines; Rinsed sponge in foot channel.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Multi-seat stone public latrines",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "tersorium",
+                        "gloss": "Multi-seat stone public latrines"
+                      },
+                      {
+                        "id": "kt1_1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Rinsed sponge in foot channel",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "tersorium",
+                        "gloss": "Rinsed sponge in foot channel"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Spread Whipworms & Plumbism",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "plumbism",
+                    "gloss": "Rarely drained warm bath water; Toxic lead pipes poisoned water.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Rarely drained warm bath water",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "plumbism",
+                        "gloss": "Rarely drained warm bath water"
+                      },
+                      {
+                        "id": "kt1_1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Toxic lead pipes poisoned water",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "plumbism",
+                        "gloss": "Toxic lead pipes poisoned water"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c3",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Romanitas Pride vs Germ Science",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Romanitas",
+                    "gloss": "Showed off imperial stone power; Missed unseen waterborne germs.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Showed off imperial stone power",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Romanitas",
+                        "gloss": "Showed off imperial stone power"
+                      },
+                      {
+                        "id": "kt1_1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Missed unseen waterborne germs",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Romanitas",
+                        "gloss": "Missed unseen waterborne germs"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "AD 410 Withdrawal & Decay",
+                "dateChip": "AD 410",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "AD 410",
+                "gloss": "When Roman legions departed in AD 410, imperial taxes and engineers vanished, triggering a thousand-year sanitation gap.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "AD 410 Roman Legion Withdrawal",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "AD 410",
+                    "gloss": "Central tax administration ended; Skilled upkeep crews vanished.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Central tax administration ended",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "AD 410",
+                        "gloss": "Central tax administration ended"
+                      },
+                      {
+                        "id": "kt1_1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Skilled upkeep crews vanished",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "AD 410",
+                        "gloss": "Skilled upkeep crews vanished"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1,000-Year Piped Water Void",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "sanitation gap",
+                    "gloss": "Aqueducts choked with weeds; Lead pipes melted into weapons.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Aqueducts choked with weeds",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "sanitation gap",
+                        "gloss": "Aqueducts choked with weeds"
+                      },
+                      {
+                        "id": "kt1_1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Lead pipes melted into weapons",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "sanitation gap",
+                        "gloss": "Lead pipes melted into weapons"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Proved Clean Water Needs State",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "centralized",
+                    "gloss": "Relied on central tax revenue; Britain returned to cesspits.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Relied on central tax revenue",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "centralized",
+                        "gloss": "Relied on central tax revenue"
+                      },
+                      {
+                        "id": "kt1_1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Britain returned to cesspits",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "centralized",
+                        "gloss": "Britain returned to cesspits"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Medieval Towns & Monasteries",
+            "dateChip": "1100–1388",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "gong farmers",
+            "q2Chain": "Borough Filth & Gong Farmers → Clean Monastic Hydraulics → 1348 Plague & 1388 Statute",
+            "gloss": "Causal Chain: Borough Filth & Gong Farmers → Clean Monastic Hydraulics → 1348 Plague & 1388 Statute.",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Borough Filth & Gong Farmers",
+                "dateChip": "1100–1348",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "gong farmers",
+                "gloss": "Growing medieval boroughs battled butcher offal and leaking cesspits using rakers, night-time gong farmers, and Court Leet fines.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Unpaved Lanes & Messy Trades",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "boroughs",
+                    "gloss": "Butchers tossed offal in gutters; Tanners and dyers fouled rivers.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Butchers tossed offal in gutters",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "boroughs",
+                        "gloss": "Butchers tossed offal in gutters"
+                      },
+                      {
+                        "id": "kt1_2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Tanners and dyers fouled rivers",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "boroughs",
+                        "gloss": "Tanners and dyers fouled rivers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Rakers, Gong Men & Court Leet",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Court Leet",
+                    "gloss": "Gong farmers emptied night pits; Bailiffs fined street polluters.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Gong farmers emptied night pits",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Court Leet",
+                        "gloss": "Gong farmers emptied night pits"
+                      },
+                      {
+                        "id": "kt1_2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Bailiffs fined street polluters",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Court Leet",
+                        "gloss": "Bailiffs fined street polluters"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Shallow Garden Wells Polluted",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "cesspits",
+                    "gloss": "Crowds outgrew small town funds; Lacked pressurized water pumps.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Crowds outgrew small town funds",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "cesspits",
+                        "gloss": "Crowds outgrew small town funds"
+                      },
+                      {
+                        "id": "kt1_2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Lacked pressurized water pumps",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "cesspits",
+                        "gloss": "Lacked pressurized water pumps"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Clean Monastic Hydraulics",
+                "dateChip": "c.1165–1300",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Canterbury Priory",
+                "gloss": "Wealthy monasteries like Canterbury Priory and Titchfield Abbey built lead conduits and five settling tanks for pure water.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Canterbury Five Settling Tanks",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Canterbury Priory",
+                    "gloss": "Lead conduits piped hill springs; Fed lavatorium and infirmaries.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Lead conduits piped hill springs",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Canterbury Priory",
+                        "gloss": "Lead conduits piped hill springs"
+                      },
+                      {
+                        "id": "kt1_2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Fed lavatorium and infirmaries",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Canterbury Priory",
+                        "gloss": "Fed lavatorium and infirmaries"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Monks Lived Longer Than Towns",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Titchfield Abbey",
+                    "gloss": "Running water flushed latrines; Titchfield kept clean fishponds.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Running water flushed latrines",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Titchfield Abbey",
+                        "gloss": "Running water flushed latrines"
+                      },
+                      {
+                        "id": "kt1_2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Titchfield kept clean fishponds",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Titchfield Abbey",
+                        "gloss": "Titchfield kept clean fishponds"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Clean Water Stayed Behind Walls",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "cloisters",
+                    "gloss": "Funded by rich Church estates; Townsfolk drank polluted rivers.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Funded by rich Church estates",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "cloisters",
+                        "gloss": "Funded by rich Church estates"
+                      },
+                      {
+                        "id": "kt1_2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Townsfolk drank polluted rivers",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "cloisters",
+                        "gloss": "Townsfolk drank polluted rivers"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "1348 Plague & 1388 Statute",
+                "dateChip": "1348–1388",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "Statute of Cambridge",
+                "gloss": "After the 1348 Black Death killed up to half of Britain, Parliament passed the 1388 Statute of Cambridge against river filth.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1348 Black Death & Quarantines",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "miasma",
+                    "gloss": "Killed 30–50% in 18 months; Doctors blamed foul miasma air.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Killed 30–50% in 18 months",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "miasma",
+                        "gloss": "Killed 30–50% in 18 months"
+                      },
+                      {
+                        "id": "kt1_2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Doctors blamed foul miasma air",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "miasma",
+                        "gloss": "Doctors blamed foul miasma air"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1388 Statute of Cambridge (£20)",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Statute of Cambridge",
+                    "gloss": "£20 fines for river dung waste; First national hygiene statute.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "£20 fines for river dung waste",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Statute of Cambridge",
+                        "gloss": "£20 fines for river dung waste"
+                      },
+                      {
+                        "id": "kt1_2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "First national hygiene statute",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Statute of Cambridge",
+                        "gloss": "First national hygiene statute"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_c3",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Carole Rawcliffe vs Dirty Myth",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Carole Rawcliffe",
+                    "gloss": "Coventry banned river dumping; Councils lacked cash, not care.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Coventry banned river dumping",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Carole Rawcliffe",
+                        "gloss": "Coventry banned river dumping"
+                      },
+                      {
+                        "id": "kt1_2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Councils lacked cash, not care",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Carole Rawcliffe",
+                        "gloss": "Councils lacked cash, not care"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Plague to Great Stink",
+        "dateChip": "1500–1865",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Great Stink",
+        "gloss": "Tudor and Stuart London’s population boom, Harington’s toilet, 1665 Plague, industrial cholera slums, and Bazalgette’s sewers.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Early Modern London & Plague",
+            "dateChip": "1500–1665",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Samuel Pepys",
+            "q2Chain": "Tudor Boom & 1596 Ajax Closet → 1613 New River & Pepys’ Cellar → 1665 Great Plague & Miasma Trap",
+            "gloss": "Causal Chain: Tudor Boom & 1596 Ajax Closet → 1613 New River & Pepys’ Cellar → 1665 Great Plague & Miasma Trap.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Tudor Boom & 1596 Ajax Closet",
+                "dateChip": "1500–1596",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "John Harington",
+                "gloss": "As London swelled toward 500,000, Sir John Harington invented a 1596 flush toilet that failed without street sewers.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "London Swelled Past 500,000",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "500,000",
+                    "gloss": "Dark overhanging timber alleys; Overwhelmed hollow elm pipes.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Dark overhanging timber alleys",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "500,000",
+                        "gloss": "Dark overhanging timber alleys"
+                      },
+                      {
+                        "id": "kt2_3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Overwhelmed hollow elm pipes",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "500,000",
+                        "gloss": "Overwhelmed hollow elm pipes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1596 Harington Ajax Water Closet",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Richmond Palace",
+                    "gloss": "Fitted valve model at Richmond; Built for Queen Elizabeth I.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Fitted valve model at Richmond",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Richmond Palace",
+                        "gloss": "Fitted valve model at Richmond"
+                      },
+                      {
+                        "id": "kt2_3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Built for Queen Elizabeth I",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Richmond Palace",
+                        "gloss": "Built for Queen Elizabeth I"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Stayed Royal Toy Without Drains",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "chamber pots",
+                    "gloss": "No pressurized street water mains; Used chamber pots 200 years.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "No pressurized street water mains",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "chamber pots",
+                        "gloss": "No pressurized street water mains"
+                      },
+                      {
+                        "id": "kt2_3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Used chamber pots 200 years",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "chamber pots",
+                        "gloss": "Used chamber pots 200 years"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "1613 New River & Pepys’ Cellar",
+                "dateChip": "1613–1660",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "New River",
+                "gloss": "Myddelton’s 38-mile New River piped spring water to rich homes while leaking brick cesspits flooded cellars like Samuel Pepys’s.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1613 Myddelton 38-Mile New River",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Hugh Myddelton",
+                    "gloss": "Hertfordshire springs to Islington; Piped through hollow elm trunks.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Hertfordshire springs to Islington",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Hugh Myddelton",
+                        "gloss": "Hertfordshire springs to Islington"
+                      },
+                      {
+                        "id": "kt2_3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Piped through hollow elm trunks",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Hugh Myddelton",
+                        "gloss": "Piped through hollow elm trunks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Oct 1660 Pepys Cellar Sewage",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Samuel Pepys",
+                    "gloss": "Neighbour’s brick cesspit leaked; Nightsoil carts worked past dark.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Neighbour’s brick cesspit leaked",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Samuel Pepys",
+                        "gloss": "Neighbour’s brick cesspit leaked"
+                      },
+                      {
+                        "id": "kt2_3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Nightsoil carts worked past dark",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Samuel Pepys",
+                        "gloss": "Nightsoil carts worked past dark"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Poor Left Drinking Dirty Thames",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "water-carriers",
+                    "gloss": "Could not afford New River fees; Cracked vaults poisoned wells.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Could not afford New River fees",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "water-carriers",
+                        "gloss": "Could not afford New River fees"
+                      },
+                      {
+                        "id": "kt2_3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Cracked vaults poisoned wells",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "water-carriers",
+                        "gloss": "Cracked vaults poisoned wells"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "1665 Great Plague & Miasma Trap",
+                "dateChip": "1665",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "Great Plague",
+                "gloss": "Blaming miasma during the 1665 Great Plague, Londoners killed 240,000 cats and dogs while 100,000 died from rat fleas.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "100,000 Died & Red-Cross Locks",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Bills of Mortality",
+                    "gloss": "Searchers kept Mortality Bills; Smoked tobacco against foul air.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Searchers kept Mortality Bills",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Bills of Mortality",
+                        "gloss": "Searchers kept Mortality Bills"
+                      },
+                      {
+                        "id": "kt2_3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Smoked tobacco against foul air",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Bills of Mortality",
+                        "gloss": "Smoked tobacco against foul air"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Killed 40k Dogs & 200k Cats",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "200,000 cats",
+                    "gloss": "Destroyed natural rat predators; Let flea-bearing rats multiply.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Destroyed natural rat predators",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "200,000 cats",
+                        "gloss": "Destroyed natural rat predators"
+                      },
+                      {
+                        "id": "kt2_3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Let flea-bearing rats multiply",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "200,000 cats",
+                        "gloss": "Let flea-bearing rats multiply"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Miasma Blinded 17th-Century Care",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Great Fire of London",
+                    "gloss": "Missed Yersinia pestis rat fleas; 1666 Great Fire burned slums.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Missed Yersinia pestis rat fleas",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Great Fire of London",
+                        "gloss": "Missed Yersinia pestis rat fleas"
+                      },
+                      {
+                        "id": "kt2_3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "1666 Great Fire burned slums",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Great Fire of London",
+                        "gloss": "1666 Great Fire burned slums"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Slums, Cholera & Great Stink",
+            "dateChip": "1780–1865",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Great Stink",
+            "q2Chain": "Boomtown Slums & 1831 Cholera → 1842 Chadwick & Permissive 1848 → 1858 Great Stink & Bazalgette",
+            "gloss": "Causal Chain: Boomtown Slums & 1831 Cholera → 1842 Chadwick & Permissive 1848 → 1858 Great Stink & Bazalgette.",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Boomtown Slums & 1831 Cholera",
+                "dateChip": "1780–1832",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Sunderland",
+                "gloss": "With 60 sharing a privy in factory slums, 1831 Asiatic cholera killed 52,000 while councils burned tar barrels against miasma.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "60 per Privy & 19-Year Lifespan",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "sixty people",
+                    "gloss": "Back-to-back Manchester slums; Middens seeped into town pumps.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Back-to-back Manchester slums",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "sixty people",
+                        "gloss": "Back-to-back Manchester slums"
+                      },
+                      {
+                        "id": "kt2_4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Middens seeped into town pumps",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "sixty people",
+                        "gloss": "Middens seeped into town pumps"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1831 Sunderland Cholera (52k Dead)",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Sunderland",
+                    "gloss": "Dehydration turned skin blue; 52,000 died across Great Britain.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Dehydration turned skin blue",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Sunderland",
+                        "gloss": "Dehydration turned skin blue"
+                      },
+                      {
+                        "id": "kt2_4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "52,000 died across Great Britain",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Sunderland",
+                        "gloss": "52,000 died across Great Britain"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Pitch Fires Missed Dirty Pumps",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "pitch and tar",
+                    "gloss": "Burned tar to purify foul air; Waterborne bacteria kept killing.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Burned tar to purify foul air",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "pitch and tar",
+                        "gloss": "Burned tar to purify foul air"
+                      },
+                      {
+                        "id": "kt2_4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Waterborne bacteria kept killing",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "pitch and tar",
+                        "gloss": "Waterborne bacteria kept killing"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "1842 Chadwick & Permissive 1848",
+                "dateChip": "1842–1848",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "permissive",
+                "gloss": "Chadwick’s 1842 Report proved filth caused disease, but the 1848 Public Health Act failed because it was permissive.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1842 Chadwick Sanitary Report",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Edwin Chadwick",
+                    "gloss": "Linked slum dirt to premature death; Argued drains cut Poor Law costs.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Linked slum dirt to premature death",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Edwin Chadwick",
+                        "gloss": "Linked slum dirt to premature death"
+                      },
+                      {
+                        "id": "kt2_4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Argued drains cut Poor Law costs",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Edwin Chadwick",
+                        "gloss": "Argued drains cut Poor Law costs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1848 Permissive Public Health Act",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "permissive",
+                    "gloss": "Created General Board of Health; Left local sewer work optional.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Created General Board of Health",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "permissive",
+                        "gloss": "Created General Board of Health"
+                      },
+                      {
+                        "id": "kt2_4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Left local sewer work optional",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "permissive",
+                        "gloss": "Left local sewer work optional"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Ratepayers Blocked Sewer Taxes",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "laissez-faire",
+                    "gloss": "Laissez-faire councils did little; Kept towns exposed to cholera.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Laissez-faire councils did little",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "laissez-faire",
+                        "gloss": "Laissez-faire councils did little"
+                      },
+                      {
+                        "id": "kt2_4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Kept towns exposed to cholera",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "laissez-faire",
+                        "gloss": "Kept towns exposed to cholera"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "1858 Great Stink & Bazalgette",
+                "dateChip": "1858–1875",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Bazalgette",
+                "gloss": "After 200,000 closets and 35°C heat caused the 1858 Great Stink, MPs funded Bazalgette’s 318m-brick, 82-mile sewers.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "200k Water Closets & 35°C Heat",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "200,000",
+                    "gloss": "Flushed raw waste into Thames; Lime sheets failed in Parliament.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Flushed raw waste into Thames",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "200,000",
+                        "gloss": "Flushed raw waste into Thames"
+                      },
+                      {
+                        "id": "kt2_4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Lime sheets failed in Parliament",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "200,000",
+                        "gloss": "Lime sheets failed in Parliament"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "£3m & 318-Million-Brick Sewers",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Portland cement",
+                    "gloss": "82 miles with Portland cement; Abbey Mills and Crossness pumps.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "82 miles with Portland cement",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Portland cement",
+                        "gloss": "82 miles with Portland cement"
+                      },
+                      {
+                        "id": "kt2_4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Abbey Mills and Crossness pumps",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Portland cement",
+                        "gloss": "Abbey Mills and Crossness pumps"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Pumped 420m Gallons Out to Sea",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Bazalgette",
+                    "gloss": "Voted by MPs in eighteen days; Wiped out central London cholera.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Voted by MPs in eighteen days",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Bazalgette",
+                        "gloss": "Voted by MPs in eighteen days"
+                      },
+                      {
+                        "id": "kt2_4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Wiped out central London cholera",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Bazalgette",
+                        "gloss": "Wiped out central London cholera"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: Germ Science & 1875 Act",
+        "dateChip": "1854–1900",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "John Snow",
+        "gloss": "Dr John Snow’s 1854 Soho map, Pasteur’s 1861 Germ Theory, Koch’s 1884 cholera germ, and the compulsory 1875 Public Health Act.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Snow, Germ Theory & 1875 Act",
+            "dateChip": "1854–1884",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Broad Street",
+            "q2Chain": "1854 Soho Spot Map & Handle → 1861 Pasteur & 1884 Koch Proof → Compulsory 1875 Health Act",
+            "gloss": "Causal Chain: 1854 Soho Spot Map & Handle → 1861 Pasteur & 1884 Koch Proof → Compulsory 1875 Health Act.",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "1854 Soho Spot Map & Handle",
+                "dateChip": "Aug–Sept 1854",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Broad Street",
+                "gloss": "Dr John Snow mapped 616 Soho cholera deaths around the Broad Street pump and had the handle removed, halting the outbreak.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "616 Soho Deaths & Brewery Proof",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Lion Brewery",
+                    "gloss": "Deaths clustered round Broad St; 70 Lion Brewery men drank beer.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Deaths clustered round Broad St",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Lion Brewery",
+                        "gloss": "Deaths clustered round Broad St"
+                      },
+                      {
+                        "id": "kt3_5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "70 Lion Brewery men drank beer",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Lion Brewery",
+                        "gloss": "70 Lion Brewery men drank beer"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Removed Handle & No. 40 Cesspool",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Henry Whitehead",
+                    "gloss": "Handle removed 8 September 1854; Baby nappy leaked three feet.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Handle removed 8 September 1854",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Henry Whitehead",
+                        "gloss": "Handle removed 8 September 1854"
+                      },
+                      {
+                        "id": "kt3_5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Baby nappy leaked three feet",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Henry Whitehead",
+                        "gloss": "Baby nappy leaked three feet"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Proved Water Spread Cholera",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "epidemiology",
+                    "gloss": "Whitehead confirmed cracked bricks; Doctors still doubted unseen germ.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Whitehead confirmed cracked bricks",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "epidemiology",
+                        "gloss": "Whitehead confirmed cracked bricks"
+                      },
+                      {
+                        "id": "kt3_5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Doctors still doubted unseen germ",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "epidemiology",
+                        "gloss": "Doctors still doubted unseen germ"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "1861 Pasteur & 1884 Koch Proof",
+                "dateChip": "1861–1884",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "Louis Pasteur",
+                "gloss": "Louis Pasteur’s 1861 swan-neck flasks proved Germ Theory before Robert Koch isolated Vibrio cholerae in 1884.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1861 Pasteur Swan-Neck Flasks",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "swan-neck",
+                    "gloss": "Disproved spontaneous generation; Proved airborne microbes soured.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Disproved spontaneous generation",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "swan-neck",
+                        "gloss": "Disproved spontaneous generation"
+                      },
+                      {
+                        "id": "kt3_5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Proved airborne microbes soured",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "swan-neck",
+                        "gloss": "Proved airborne microbes soured"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1884 Koch Isolated Cholera Germ",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Vibrio cholerae",
+                    "gloss": "Found comma Vibrio cholerae; Validated Snow under microscope.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Found comma Vibrio cholerae",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Vibrio cholerae",
+                        "gloss": "Found comma Vibrio cholerae"
+                      },
+                      {
+                        "id": "kt3_5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Validated Snow under microscope",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Vibrio cholerae",
+                        "gloss": "Validated Snow under microscope"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Ended Miasma Theory Forever",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Germ Theory",
+                    "gloss": "Gave indisputable lab evidence; Silenced anti-sewer ratepayers.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Gave indisputable lab evidence",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Germ Theory",
+                        "gloss": "Gave indisputable lab evidence"
+                      },
+                      {
+                        "id": "kt3_5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Silenced anti-sewer ratepayers",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Germ Theory",
+                        "gloss": "Silenced anti-sewer ratepayers"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Compulsory 1875 Health Act",
+                "dateChip": "1867–1875",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Public Health Act of 1875",
+                "gloss": "After urban working men won votes in 1867, Disraeli’s compulsory 1875 Public Health Act forced every council to supply clean water.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1867 Urban Working-Class Vote",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "1867",
+                    "gloss": "Town workers gained MP leverage; Disraeli pushed sanitary statute.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Town workers gained MP leverage",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "1867",
+                        "gloss": "Town workers gained MP leverage"
+                      },
+                      {
+                        "id": "kt3_5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Disraeli pushed sanitary statute",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "1867",
+                        "gloss": "Disraeli pushed sanitary statute"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Compulsory 1875 Council Duties",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Medical Officers",
+                    "gloss": "Appointed Medical Health Officers; Mandated clean pipes and sewers.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Appointed Medical Health Officers",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Medical Officers",
+                        "gloss": "Appointed Medical Health Officers"
+                      },
+                      {
+                        "id": "kt3_5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Mandated clean pipes and sewers",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Medical Officers",
+                        "gloss": "Mandated clean pipes and sewers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Ended Laissez-Faire Health Delay",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "compulsory",
+                    "gloss": "Replaced optional 1848 loophole; Defeated waterborne cholera.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Replaced optional 1848 loophole",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "compulsory",
+                        "gloss": "Replaced optional 1848 loophole"
+                      },
+                      {
+                        "id": "kt3_5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Defeated waterborne cholera",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "compulsory",
+                        "gloss": "Defeated waterborne cholera"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. 1800–1900 Progress Synthesis",
+            "dateChip": "1800–1900",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Benjamin Disraeli",
+            "q2Chain": "Epidemiology & Engineering Sparks → Lab Science Overthrew Miasma → 1875 Compulsory State Triumph",
+            "gloss": "Causal Chain: Epidemiology & Engineering Sparks → Lab Science Overthrew Miasma → 1875 Compulsory State Triumph.",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Epidemiology & Engineering Sparks",
+                "dateChip": "1854–1865",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "epidemiology",
+                "gloss": "Snow’s 1854 Broad Street map and Bazalgette’s 1858–65 sewers proved clean water and brick interceptors stopped cholera.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Snow Shifted Focus to Water",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Broad Street water pump",
+                    "gloss": "Mapped 616 Soho pump deaths; Checked zero-death Lion Brewery.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Mapped 616 Soho pump deaths",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Broad Street water pump",
+                        "gloss": "Mapped 616 Soho pump deaths"
+                      },
+                      {
+                        "id": "kt3_6_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Checked zero-death Lion Brewery",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Broad Street water pump",
+                        "gloss": "Checked zero-death Lion Brewery"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bazalgette’s £3m Thames Drains",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "420 million gallons",
+                    "gloss": "Triggered by June 1858 Stink; Moved 420m gallons daily east.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Triggered by June 1858 Stink",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "420 million gallons",
+                        "gloss": "Triggered by June 1858 Stink"
+                      },
+                      {
+                        "id": "kt3_6_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Moved 420m gallons daily east",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "420 million gallons",
+                        "gloss": "Moved 420m gallons daily east"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Needed Lab Proof & National Law",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "laissez-faire",
+                    "gloss": "London drains left towns dirty; Sceptics wanted visible microbes.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_c3_t1",
+                        "tier": 5,
+                        "label": "London drains left towns dirty",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "laissez-faire",
+                        "gloss": "London drains left towns dirty"
+                      },
+                      {
+                        "id": "kt3_6_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Sceptics wanted visible microbes",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "laissez-faire",
+                        "gloss": "Sceptics wanted visible microbes"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "Lab Science Overthrew Miasma",
+                "dateChip": "1861–1884",
+                "lessonIndex": 5,
+                "stageIndex": 3,
+                "searchTerm": "Germ Theory",
+                "gloss": "Pasteur’s 1861 sterilized broth flasks and Koch’s 1884 cholera isolation gave reformers indisputable scientific authority.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1861 Pasteur Sterilized Flasks",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "sterilized broth",
+                    "gloss": "Broth stayed pure without air; Killed spontaneous generation.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Broth stayed pure without air",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "sterilized broth",
+                        "gloss": "Broth stayed pure without air"
+                      },
+                      {
+                        "id": "kt3_6_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Killed spontaneous generation",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "sterilized broth",
+                        "gloss": "Killed spontaneous generation"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1884 Koch Proved Cholera Microbe",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Robert Koch",
+                    "gloss": "Isolated Vibrio cholerae germ; Backed John Snow’s water link.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Isolated Vibrio cholerae germ",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "Robert Koch",
+                        "gloss": "Isolated Vibrio cholerae germ"
+                      },
+                      {
+                        "id": "kt3_6_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Backed John Snow’s water link",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "Robert Koch",
+                        "gloss": "Backed John Snow’s water link"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Broke Ratepayer Tax Excuses",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "ratepayer",
+                    "gloss": "Proved sewers stopped bacteria; Legitimised public health spend.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Proved sewers stopped bacteria",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "ratepayer",
+                        "gloss": "Proved sewers stopped bacteria"
+                      },
+                      {
+                        "id": "kt3_6_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Legitimised public health spend",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "ratepayer",
+                        "gloss": "Legitimised public health spend"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "1875 Compulsory State Triumph",
+                "dateChip": "1867–1900",
+                "lessonIndex": 5,
+                "stageIndex": 4,
+                "searchTerm": "Public Health Act of 1875",
+                "gloss": "Backed by the 1867 franchise, Disraeli’s compulsory 1875 Act turned isolated breakthroughs into nationwide clean water.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1867 Vote & Disraeli Legislation",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Benjamin Disraeli",
+                    "gloss": "Politicians courted town voters; Closed 1848 permissive loophole.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Politicians courted town voters",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Benjamin Disraeli",
+                        "gloss": "Politicians courted town voters"
+                      },
+                      {
+                        "id": "kt3_6_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Closed 1848 permissive loophole",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Benjamin Disraeli",
+                        "gloss": "Closed 1848 permissive loophole"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_c2",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Nationwide Sewers & Clean Taps",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "infant deaths",
+                    "gloss": "Paved streets; collected refuse; Slashed 50%+ urban infant deaths.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Paved streets; collected refuse",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "infant deaths",
+                        "gloss": "Paved streets; collected refuse"
+                      },
+                      {
+                        "id": "kt3_6_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Slashed 50%+ urban infant deaths",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "infant deaths",
+                        "gloss": "Slashed 50%+ urban infant deaths"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_c3",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Master Catalyst: Science vs Law",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "compulsory state",
+                    "gloss": "Science identified water germs; Compulsory law protected Britain.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Science identified water germs",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "compulsory state",
+                        "gloss": "Science identified water germs"
+                      },
+                      {
+                        "id": "kt3_6_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Compulsory law protected Britain",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "compulsory state",
+                        "gloss": "Compulsory law protected Britain"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

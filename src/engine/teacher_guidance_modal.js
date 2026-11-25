@@ -1037,7 +1037,7 @@ export async function openUnifiedTeacherGuidance(lessonId, lessonIndex, unitId, 
                 <span>${isGcse ? 'Edexcel Specification &amp; Exam Focus' : 'National Curriculum &amp; Enquiry Focus'}</span>
               </h4>
               <div style="font-size: 0.84rem; color: #334155; line-height: 1.58;">
-                ${formatRichText(tn.curriculum_link || catEntry?.specSubtitle || unitData?.title || '')}
+                ${formatRichText(tn.curriculum_link || lesson?.specification_anchor || catEntry?.specSubtitle || unitData?.title || '')}
               </div>
               ${
                 lesson?.specification_anchor &&

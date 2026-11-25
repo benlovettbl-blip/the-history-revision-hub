@@ -228,19 +228,18 @@ function renderControlBarHTML(tree, progress) {
                 >
                   <i class="fa-solid fa-brain"></i>
                   <span>Test-Before-Reveal: ${explorerState.testBeforeReveal ? 'ON' : 'OFF'}</span>
+                </button>
+                <button
+                  type="button"
+                  class="sem-tool-btn"
+                  data-sem-action="print-skeleton-map"
+                  title="Print visual A4 / A3 Landscape Mind Map (Completed Revision Poster or Blank Write-On Blurt Map)"
+                >
+                  <i class="fa-solid fa-print"></i>
+                  <span>Print Visual Mind Map</span>
                 </button>`
               : ''
           }
-
-          <button
-            type="button"
-            class="sem-tool-btn"
-            data-sem-action="print-skeleton-map"
-            title="Print visual A4 / A3 Landscape Mind Map (Completed Revision Poster or Blank Write-On Blurt Map)"
-          >
-            <i class="fa-solid fa-print"></i>
-            <span>Print Visual Mind Map</span>
-          </button>
         </div>
       </div>
 

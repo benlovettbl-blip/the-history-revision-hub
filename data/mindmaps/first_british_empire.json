@@ -1,0 +1,1665 @@
+{
+  "unitId": "first_british_empire",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "The First British Empire, 1600–1783",
+  "examDateBoundary": "1600–1783",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "First British Empire",
+    "subLabel": "KS3 History",
+    "dateChip": "1600–1783",
+    "gloss": "How East India Company conquest, transatlantic slavery, Maroon resistance, and the American Revolution built and fractured empire.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Company Rule in India",
+        "dateChip": "1600–1770",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "East India Company",
+        "gloss": "How London’s chartered East India Company transformed from coastal spice traders into the sovereign tax ruler of Mughal Bengal.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. East India Company & Bengal",
+            "dateChip": "1600–1770",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Plassey",
+            "q2Chain": "1600 Charter & Mughal Factories → Calcutta Clash & 1757 Plassey → 1765 Diwani & Bengal Famine",
+            "gloss": "Causal Chain: 1600 Charter & Mughal Factories → Calcutta Clash & 1757 Plassey → 1765 Diwani & Bengal Famine.",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "1600 Charter & Mughal Factories",
+                "dateChip": "1600–1700",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "East India Company",
+                "gloss": "Chartered by Elizabeth I in 1600, the Company won Mughal permission in 1615 to build fortified coastal factories guarded by sepoys.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1600 Royal Monopoly Charter",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "218 London merchants",
+                    "gloss": "218 merchants pooled £68,000; Lancaster made 300% spice profit.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "218 merchants pooled £68,000",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "218 London merchants",
+                        "gloss": "218 merchants pooled £68,000"
+                      },
+                      {
+                        "id": "kt1_1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Lancaster made 300% spice profit",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "218 London merchants",
+                        "gloss": "Lancaster made 300% spice profit"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1615 Roe & Jahangir Trade Decree",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Thomas Roe",
+                    "gloss": "Built Surat and Calcutta depots; Fortified Madras and Bombay ports.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Built Surat and Calcutta depots",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Thomas Roe",
+                        "gloss": "Built Surat and Calcutta depots"
+                      },
+                      {
+                        "id": "kt1_1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Fortified Madras and Bombay ports",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Thomas Roe",
+                        "gloss": "Fortified Madras and Bombay ports"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Armed Sepoy Corporate Forts",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "sepoy",
+                    "gloss": "Hired Indian infantry garrisons; Created armed coastal bridgeheads.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Hired Indian infantry garrisons",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "sepoy",
+                        "gloss": "Hired Indian infantry garrisons"
+                      },
+                      {
+                        "id": "kt1_1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Created armed coastal bridgeheads",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "sepoy",
+                        "gloss": "Created armed coastal bridgeheads"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Calcutta Clash & 1757 Plassey",
+                "dateChip": "1756–1757",
+                "lessonIndex": 0,
+                "stageIndex": 3,
+                "searchTerm": "Plassey",
+                "gloss": "After Nawab Siraj ud-Daulah took Fort William in 1756, Robert Clive bribed Mir Jafar to win the June 1757 Battle of Plassey.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1756 Fort William Cannon Dispute",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Siraj ud-Daulah",
+                    "gloss": "Siraj marched 50,000 on Calcutta; Black Hole deaths stoked conquest.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Siraj marched 50,000 on Calcutta",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Siraj ud-Daulah",
+                        "gloss": "Siraj marched 50,000 on Calcutta"
+                      },
+                      {
+                        "id": "kt1_1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Black Hole deaths stoked conquest",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Siraj ud-Daulah",
+                        "gloss": "Black Hole deaths stoked conquest"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "23 June 1757 Plassey Treachery",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Mir Jafar",
+                    "gloss": "Clive bribed general Mir Jafar; Tarpaulins kept cannon powder dry.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Clive bribed general Mir Jafar",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Mir Jafar",
+                        "gloss": "Clive bribed general Mir Jafar"
+                      },
+                      {
+                        "id": "kt1_1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Tarpaulins kept cannon powder dry",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Mir Jafar",
+                        "gloss": "Tarpaulins kept cannon powder dry"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Installed Puppet Bengal Ruler",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Plassey",
+                    "gloss": "Routed Siraj’s soaked artillery; Handed Company political mastery.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Routed Siraj’s soaked artillery",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Plassey",
+                        "gloss": "Routed Siraj’s soaked artillery"
+                      },
+                      {
+                        "id": "kt1_1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Handed Company political mastery",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Plassey",
+                        "gloss": "Handed Company political mastery"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "1765 Diwani & Bengal Famine",
+                "dateChip": "1765–1770",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "Diwani",
+                "gloss": "The 1765 Treaty of Allahabad granted the Company Bengal’s Diwani tax rights, fuelling corporate plunder and the 1770 famine.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1765 Allahabad Diwani Treaty",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Treaty of Allahabad",
+                    "gloss": "Shah Alam II ceded land taxes; Ruled 20 million in Bengal.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Shah Alam II ceded land taxes",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Treaty of Allahabad",
+                        "gloss": "Shah Alam II ceded land taxes"
+                      },
+                      {
+                        "id": "kt1_1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Ruled 20 million in Bengal",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Treaty of Allahabad",
+                        "gloss": "Ruled 20 million in Bengal"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Worsened 1770 Bengal Famine",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "1770 Bengal famine",
+                    "gloss": "Relentless tax extraction in drought; Estimated ten million starved.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Relentless tax extraction in drought",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "1770 Bengal famine",
+                        "gloss": "Relentless tax extraction in drought"
+                      },
+                      {
+                        "id": "kt1_1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Estimated ten million starved",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "1770 Bengal famine",
+                        "gloss": "Estimated ten million starved"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Merchants Became Sovereign State",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Diwani",
+                    "gloss": "Corporate profits soared in London; Laid base of British India.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Corporate profits soared in London",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Diwani",
+                        "gloss": "Corporate profits soared in London"
+                      },
+                      {
+                        "id": "kt1_1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Laid base of British India",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Diwani",
+                        "gloss": "Laid base of British India"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Slavery & Resistance",
+        "dateChip": "1619–1807",
+        "lessonIndex": 1,
+        "stageIndex": 0,
+        "searchTerm": "Middle Passage",
+        "gloss": "The triangular slave trade, Middle Passage atrocities, Jamaican Maroon guerrilla resistance under Queen Nanny, and 1807 abolition.",
+        "children": [
+          {
+            "id": "kt2_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Slave Trade & Middle Passage",
+            "dateChip": "1619–1807",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Middle Passage",
+            "q2Chain": "Triangular Trade & RAC Monopoly → Middle Passage & Zong Massacre → Brookes, Equiano & 1807 Act",
+            "gloss": "Causal Chain: Triangular Trade & RAC Monopoly → Middle Passage & Zong Massacre → Brookes, Equiano & 1807 Act.",
+            "children": [
+              {
+                "id": "kt2_2_s1",
+                "tier": 3,
+                "label": "Triangular Trade & RAC Monopoly",
+                "dateChip": "1619–1713",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Royal African Company",
+                "gloss": "Liverpool and Bristol merchants linked manufactured goods, kidnapped Africans, and sugar, backed by the 1672 RAC and 1713 Asiento.",
+                "children": [
+                  {
+                    "id": "kt2_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Guns, Captives & Raw Sugar Loop",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "triangular trade",
+                    "gloss": "Sailed from Liverpool and Bristol; Traded guns and brass for captives.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Sailed from Liverpool and Bristol",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "triangular trade",
+                        "gloss": "Sailed from Liverpool and Bristol"
+                      },
+                      {
+                        "id": "kt2_2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Traded guns and brass for captives",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "triangular trade",
+                        "gloss": "Traded guns and brass for captives"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1672 RAC & 1713 Spanish Asiento",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Asiento",
+                    "gloss": "Hot-iron RAC chest branding; Supplied Spanish American colonies.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Hot-iron RAC chest branding",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Asiento",
+                        "gloss": "Hot-iron RAC chest branding"
+                      },
+                      {
+                        "id": "kt2_2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Supplied Spanish American colonies",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Asiento",
+                        "gloss": "Supplied Spanish American colonies"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Made Britain Top Slave Trader",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Liverpool",
+                    "gloss": "Enriched British ports and banks; Institutionalised royal trafficking.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Enriched British ports and banks",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Liverpool",
+                        "gloss": "Enriched British ports and banks"
+                      },
+                      {
+                        "id": "kt2_2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Institutionalised royal trafficking",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Liverpool",
+                        "gloss": "Institutionalised royal trafficking"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s2",
+                "tier": 3,
+                "label": "Middle Passage & Zong Massacre",
+                "dateChip": "1713–1781",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Zong",
+                "gloss": "One in six captives died on chained Middle Passage crossings, culminating in the 1781 Zong insurance massacre of 133 people.",
+                "children": [
+                  {
+                    "id": "kt2_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Eight-Week Chained Hold Crossing",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Middle Passage",
+                    "gloss": "Packed on suffocating wood shelves; One in six died at sea.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Packed on suffocating wood shelves",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Middle Passage",
+                        "gloss": "Packed on suffocating wood shelves"
+                      },
+                      {
+                        "id": "kt2_2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "One in six died at sea",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Middle Passage",
+                        "gloss": "One in six died at sea"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Nov 1781 Zong Ship Massacre",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Luke Collingwood",
+                    "gloss": "Collingwood drowned 133 captives; Claimed £30 per head insurance.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Collingwood drowned 133 captives",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Luke Collingwood",
+                        "gloss": "Collingwood drowned 133 captives"
+                      },
+                      {
+                        "id": "kt2_2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Claimed £30 per head insurance",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Luke Collingwood",
+                        "gloss": "Claimed £30 per head insurance"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Granville Sharp Exposed Trial",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Granville Sharp",
+                    "gloss": "Judges treated lives as cargo; Shocked British public conscience.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Judges treated lives as cargo",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Granville Sharp",
+                        "gloss": "Judges treated lives as cargo"
+                      },
+                      {
+                        "id": "kt2_2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Shocked British public conscience",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Granville Sharp",
+                        "gloss": "Shocked British public conscience"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s3",
+                "tier": 3,
+                "label": "Brookes, Equiano & 1807 Act",
+                "dateChip": "1788–1807",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "Olaudah Equiano",
+                "gloss": "The Brookes ship diagram and Olaudah Equiano’s bestselling autobiography mobilized public pressure behind the 1807 Abolition Act.",
+                "children": [
+                  {
+                    "id": "kt2_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Brookes Print & Equiano Memoir",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Brookes",
+                    "gloss": "Diagram showed stowed human holds; Equiano book recounted enslavement.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Diagram showed stowed human holds",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Brookes",
+                        "gloss": "Diagram showed stowed human holds"
+                      },
+                      {
+                        "id": "kt2_2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Equiano book recounted enslavement",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Brookes",
+                        "gloss": "Equiano book recounted enslavement"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Passed 1807 Abolition Act",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "1807",
+                    "gloss": "Outlawed British slave trading; Followed mass national campaign.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Outlawed British slave trading",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "1807",
+                        "gloss": "Outlawed British slave trading"
+                      },
+                      {
+                        "id": "kt2_2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Followed mass national campaign",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "1807",
+                        "gloss": "Followed mass national campaign"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Powered by African Testimony",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Olaudah Equiano",
+                    "gloss": "Shattered pro-slavery myths; Left Caribbean slavery till 1833.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Shattered pro-slavery myths",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Olaudah Equiano",
+                        "gloss": "Shattered pro-slavery myths"
+                      },
+                      {
+                        "id": "kt2_2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Left Caribbean slavery till 1833",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Olaudah Equiano",
+                        "gloss": "Left Caribbean slavery till 1833"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Plantations & Queen Nanny",
+            "dateChip": "1655–1740",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Queen Nanny",
+            "q2Chain": "1655 Jamaica & Sugar Brutality → Queen Nanny & First Maroon War → 1739 Maroon Peace Treaty",
+            "gloss": "Causal Chain: 1655 Jamaica & Sugar Brutality → Queen Nanny & First Maroon War → 1739 Maroon Peace Treaty.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "1655 Jamaica & Sugar Brutality",
+                "dateChip": "1655–1730",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Western Design",
+                "gloss": "Cromwell’s 1655 seizure of Jamaica birthed free mountain Maroon towns while coastal estates enforced lethal 18-hour sugar gangs.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1655 Conquest & Maroon Towns",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Maroons",
+                    "gloss": "Cromwell seized Spanish Jamaica; Fugitives fortified Blue Mountains.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Cromwell seized Spanish Jamaica",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Maroons",
+                        "gloss": "Cromwell seized Spanish Jamaica"
+                      },
+                      {
+                        "id": "kt2_3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Fugitives fortified Blue Mountains",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Maroons",
+                        "gloss": "Fugitives fortified Blue Mountains"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "18-Hour Sugar Cane Gang Regime",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "cowhide",
+                    "gloss": "Driven by overseer cowhide whips; Iron mill rollers crushed hands.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Driven by overseer cowhide whips",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "cowhide",
+                        "gloss": "Driven by overseer cowhide whips"
+                      },
+                      {
+                        "id": "kt2_3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Iron mill rollers crushed hands",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "cowhide",
+                        "gloss": "Iron mill rollers crushed hands"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Daily Sabotage & Cultural Pride",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Anansi",
+                    "gloss": "Broke hoes and copper cauldrons; Kept Obeah and Anansi tales.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Broke hoes and copper cauldrons",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Anansi",
+                        "gloss": "Broke hoes and copper cauldrons"
+                      },
+                      {
+                        "id": "kt2_3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Kept Obeah and Anansi tales",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Anansi",
+                        "gloss": "Kept Obeah and Anansi tales"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Queen Nanny & First Maroon War",
+                "dateChip": "1720–1734",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "Queen Nanny",
+                "gloss": "Asante leader Queen Nanny trained Windward Maroons in branch camouflage and abeng horn ambushes, routing British regiments.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Branch Camouflage & Abeng Horns",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "abeng",
+                    "gloss": "Asante leader Queen Nanny led; Cow-horn signals guided ambushes.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Asante leader Queen Nanny led",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "abeng",
+                        "gloss": "Asante leader Queen Nanny led"
+                      },
+                      {
+                        "id": "kt2_3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Cow-horn signals guided ambushes",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "abeng",
+                        "gloss": "Cow-horn signals guided ambushes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Routed Armed British Regiments",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Blue Mountain",
+                    "gloss": "Held rugged mountain interior; Exhausted colonial militia forces.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Held rugged mountain interior",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Blue Mountain",
+                        "gloss": "Held rugged mountain interior"
+                      },
+                      {
+                        "id": "kt2_3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Exhausted colonial militia forces",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Blue Mountain",
+                        "gloss": "Exhausted colonial militia forces"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Proved Armed Resistance Worked",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Windward Maroons",
+                    "gloss": "Defended free African autonomy; Forced British truce flag.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Defended free African autonomy",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Windward Maroons",
+                        "gloss": "Defended free African autonomy"
+                      },
+                      {
+                        "id": "kt2_3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Forced British truce flag",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Windward Maroons",
+                        "gloss": "Forced British truce flag"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "1739 Maroon Peace Treaty",
+                "dateChip": "1739–1740",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "1739",
+                "gloss": "Governor Trelawny recognized Maroon freedom and 1,500 sovereign acres in 1739, in exchange for returning future runaways.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Granted 1,500 Sovereign Acres",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Trelawny",
+                    "gloss": "Governor Trelawny sent white flag; Guaranteed free Maroon self-rule.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Governor Trelawny sent white flag",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Trelawny",
+                        "gloss": "Governor Trelawny sent white flag"
+                      },
+                      {
+                        "id": "kt2_3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Guaranteed free Maroon self-rule",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Trelawny",
+                        "gloss": "Guaranteed free Maroon self-rule"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Required Returning Runaways",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "returning enslaved fugitives",
+                    "gloss": "Pledged to catch future escapees; Protected lowland sugar estates.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Pledged to catch future escapees",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "returning enslaved fugitives",
+                        "gloss": "Pledged to catch future escapees"
+                      },
+                      {
+                        "id": "kt2_3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Protected lowland sugar estates",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "returning enslaved fugitives",
+                        "gloss": "Protected lowland sugar estates"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c3",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Freedom Triumph vs Compromise",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "compromise",
+                    "gloss": "Humbled British imperial army; Forced painful runaway concession.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Humbled British imperial army",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "compromise",
+                        "gloss": "Humbled British imperial army"
+                      },
+                      {
+                        "id": "kt2_3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Forced painful runaway concession",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "compromise",
+                        "gloss": "Forced painful runaway concession"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: American Revolution",
+        "dateChip": "1763–1783",
+        "lessonIndex": 3,
+        "stageIndex": 0,
+        "searchTerm": "Boston Tea Party",
+        "gloss": "Imperial war debt, unvoted taxes, the Boston Tea Party, 1776 Declaration, Yorktown, and the 1783 Black Loyalist exodus.",
+        "children": [
+          {
+            "id": "kt3_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Colonies & Boston Tea Party",
+            "dateChip": "1763–1773",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Boston Tea Party",
+            "q2Chain": "1763 Debt, Frontier & Stamp Act → 1770 Massacre & 1773 Tea Act → Boston Tea Party & Coercive Acts",
+            "gloss": "Causal Chain: 1763 Debt, Frontier & Stamp Act → 1770 Massacre & 1773 Tea Act → Boston Tea Party & Coercive Acts.",
+            "children": [
+              {
+                "id": "kt3_4_s1",
+                "tier": 3,
+                "label": "1763 Debt, Frontier & Stamp Act",
+                "dateChip": "1763–1766",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Stamp Act",
+                "gloss": "Facing £133m war debt, Britain barred westward settlement in 1763 and passed the 1765 Stamp Act, sparking colonial boycotts.",
+                "children": [
+                  {
+                    "id": "kt3_4_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "£133m Debt & 1763 Frontier Line",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Proclamation Line",
+                    "gloss": "Banned west Appalachian settling; Quartered 10,000 British soldiers.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Banned west Appalachian settling",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Proclamation Line",
+                        "gloss": "Banned west Appalachian settling"
+                      },
+                      {
+                        "id": "kt3_4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Quartered 10,000 British soldiers",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Proclamation Line",
+                        "gloss": "Quartered 10,000 British soldiers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1765 Stamp Act & Boycott Riots",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Stamp Act",
+                    "gloss": "Taxed legal papers and cards; Sons of Liberty burned offices.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Taxed legal papers and cards",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Stamp Act",
+                        "gloss": "Taxed legal papers and cards"
+                      },
+                      {
+                        "id": "kt3_4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Sons of Liberty burned offices",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Stamp Act",
+                        "gloss": "Sons of Liberty burned offices"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1766 Repeal & Representation Cry",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "taxation without representation",
+                    "gloss": "Boycotts hurt British exporters; No tax without representation.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Boycotts hurt British exporters",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "taxation without representation",
+                        "gloss": "Boycotts hurt British exporters"
+                      },
+                      {
+                        "id": "kt3_4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "No tax without representation",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "taxation without representation",
+                        "gloss": "No tax without representation"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_4_s2",
+                "tier": 3,
+                "label": "1770 Massacre & 1773 Tea Act",
+                "dateChip": "1770–1773",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Boston Massacre",
+                "gloss": "Redcoats killed five in the 1770 Boston Massacre before the 1773 Tea Act granted the East India Company a colonial monopoly.",
+                "children": [
+                  {
+                    "id": "kt3_4_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "5 March 1770 King Street Firing",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Crispus Attucks",
+                    "gloss": "Five killed with Crispus Attucks; Paul Revere print stoked fury.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Five killed with Crispus Attucks",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Crispus Attucks",
+                        "gloss": "Five killed with Crispus Attucks"
+                      },
+                      {
+                        "id": "kt3_4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Paul Revere print stoked fury",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Crispus Attucks",
+                        "gloss": "Paul Revere print stoked fury"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s2_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "May 1773 East India Tea Monopoly",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Tea Act",
+                    "gloss": "18m lb unsold tea in London; Bypassed local colonial traders.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "18m lb unsold tea in London",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Tea Act",
+                        "gloss": "18m lb unsold tea in London"
+                      },
+                      {
+                        "id": "kt3_4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Bypassed local colonial traders",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Tea Act",
+                        "gloss": "Bypassed local colonial traders"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Sparked Seaport Tea Blockades",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "monopoly",
+                    "gloss": "Feared unvoted tax precedent; Set stage for Griffin’s Wharf.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Feared unvoted tax precedent",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "monopoly",
+                        "gloss": "Feared unvoted tax precedent"
+                      },
+                      {
+                        "id": "kt3_4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Set stage for Griffin’s Wharf",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "monopoly",
+                        "gloss": "Set stage for Griffin’s Wharf"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_4_s3",
+                "tier": 3,
+                "label": "Boston Tea Party & Coercive Acts",
+                "dateChip": "Dec 1773–1774",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Coercive Acts",
+                "gloss": "Sons of Liberty dumped 342 tea chests into Boston Harbor in December 1773, provoking the punitive 1774 Coercive Acts.",
+                "children": [
+                  {
+                    "id": "kt3_4_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "342 Tea Chests Smashed in Harbour",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "342",
+                    "gloss": "Mohawk-disguised Sons of Liberty; Dumped £10,000 tea in 3 hours.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Mohawk-disguised Sons of Liberty",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "342",
+                        "gloss": "Mohawk-disguised Sons of Liberty"
+                      },
+                      {
+                        "id": "kt3_4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Dumped £10,000 tea in 3 hours",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "342",
+                        "gloss": "Dumped £10,000 tea in 3 hours"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1774 Coercive Acts Shut Port",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Coercive Acts",
+                    "gloss": "George III closed Boston harbour; Suspended Massachusetts charter.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "George III closed Boston harbour",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Coercive Acts",
+                        "gloss": "George III closed Boston harbour"
+                      },
+                      {
+                        "id": "kt3_4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Suspended Massachusetts charter",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Coercive Acts",
+                        "gloss": "Suspended Massachusetts charter"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Drove Thirteen Colonies to War",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "thirteen colonies",
+                    "gloss": "United colonies against coercion; Ignited April 1775 Lexington.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "United colonies against coercion",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "thirteen colonies",
+                        "gloss": "United colonies against coercion"
+                      },
+                      {
+                        "id": "kt3_4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Ignited April 1775 Lexington",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "thirteen colonies",
+                        "gloss": "Ignited April 1775 Lexington"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. 1776 Revolution & Loyalists",
+            "dateChip": "1775–1783",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Yorktown",
+            "q2Chain": "Lexington, Dunmore & 1776 Paradox → Saratoga, France & Yorktown → 1783 Paris & Black Loyalists",
+            "gloss": "Causal Chain: Lexington, Dunmore & 1776 Paradox → Saratoga, France & Yorktown → 1783 Paris & Black Loyalists.",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Lexington, Dunmore & 1776 Paradox",
+                "dateChip": "1775–1776",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Declaration of Independence",
+                "gloss": "War erupted at Lexington in 1775 while Dunmore offered enslaved fighters freedom, exposing the hypocrisy of Jefferson’s 1776 text.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1775 Lexington & Dunmore Offer",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Dunmore",
+                    "gloss": "Minutemen fought Concord redcoats; Promised Black Loyalists freedom.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Minutemen fought Concord redcoats",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Dunmore",
+                        "gloss": "Minutemen fought Concord redcoats"
+                      },
+                      {
+                        "id": "kt3_5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Promised Black Loyalists freedom",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Dunmore",
+                        "gloss": "Promised Black Loyalists freedom"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "July 1776 Jefferson Declaration",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Thomas Jefferson",
+                    "gloss": "Claimed all men created equal; 41 of 56 signers owned slaves.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Claimed all men created equal",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Thomas Jefferson",
+                        "gloss": "Claimed all men created equal"
+                      },
+                      {
+                        "id": "kt3_5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "41 of 56 signers owned slaves",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Thomas Jefferson",
+                        "gloss": "41 of 56 signers owned slaves"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c3",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Liberty Ideal vs Slavery Reality",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "slaveholder",
+                    "gloss": "Kept half a million enslaved; Ridiculed by Dr Samuel Johnson.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Kept half a million enslaved",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "slaveholder",
+                        "gloss": "Kept half a million enslaved"
+                      },
+                      {
+                        "id": "kt3_5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Ridiculed by Dr Samuel Johnson",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "slaveholder",
+                        "gloss": "Ridiculed by Dr Samuel Johnson"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Saratoga, France & Yorktown",
+                "dateChip": "1777–1781",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "Yorktown",
+                "gloss": "Saratoga brought France into a global naval war, culminating in Admiral de Grasse and Washington trapping Cornwallis at Yorktown.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Oct 1777 Saratoga Global Shift",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Saratoga",
+                    "gloss": "Defeated General Burgoyne’s army; Louis XVI France joined rebels.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Defeated General Burgoyne’s army",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Saratoga",
+                        "gloss": "Defeated General Burgoyne’s army"
+                      },
+                      {
+                        "id": "kt3_5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Louis XVI France joined rebels",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Saratoga",
+                        "gloss": "Louis XVI France joined rebels"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Diverted Fleet to Sugar Islands",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Caribbean",
+                    "gloss": "Defended lucrative West Indies; Stretched Royal Navy thin.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Defended lucrative West Indies",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Caribbean",
+                        "gloss": "Defended lucrative West Indies"
+                      },
+                      {
+                        "id": "kt3_5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Stretched Royal Navy thin",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Caribbean",
+                        "gloss": "Stretched Royal Navy thin"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c3",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "19 Oct 1781 Yorktown Surrender",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Cornwallis",
+                    "gloss": "De Grasse blocked Chesapeake Bay; Cornwallis yielded 8,000 redcoats.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "De Grasse blocked Chesapeake Bay",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Cornwallis",
+                        "gloss": "De Grasse blocked Chesapeake Bay"
+                      },
+                      {
+                        "id": "kt3_5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Cornwallis yielded 8,000 redcoats",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Cornwallis",
+                        "gloss": "Cornwallis yielded 8,000 redcoats"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "1783 Paris & Black Loyalists",
+                "dateChip": "1783",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Black Loyalists",
+                "gloss": "The 1783 Treaty of Paris recognized US independence while Sir Guy Carleton evacuated 3,000 Black Loyalists to Nova Scotia.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sept 1783 Treaty of Paris",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Paris",
+                    "gloss": "Recognized sovereign US republic; Ended First Atlantic Empire.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Recognized sovereign US republic",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Paris",
+                        "gloss": "Recognized sovereign US republic"
+                      },
+                      {
+                        "id": "kt3_5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Ended First Atlantic Empire",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Paris",
+                        "gloss": "Ended First Atlantic Empire"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "3,000 Black Loyalists Evacuated",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Book of Negroes",
+                    "gloss": "Carleton wrote Book of Negroes; Sailed to Nova Scotia & Freetown.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Carleton wrote Book of Negroes",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Book of Negroes",
+                        "gloss": "Carleton wrote Book of Negroes"
+                      },
+                      {
+                        "id": "kt3_5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Sailed to Nova Scotia & Freetown",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Book of Negroes",
+                        "gloss": "Sailed to Nova Scotia & Freetown"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Shifted Empire Toward Asia",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "India",
+                    "gloss": "Pivoted expansion to India; Left US slavery entrenched.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Pivoted expansion to India",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "India",
+                        "gloss": "Pivoted expansion to India"
+                      },
+                      {
+                        "id": "kt3_5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Left US slavery entrenched",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "India",
+                        "gloss": "Left US slavery entrenched"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

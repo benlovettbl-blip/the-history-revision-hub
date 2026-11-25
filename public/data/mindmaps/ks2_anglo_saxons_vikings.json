@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_anglo_saxons_vikings",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "Anglo-Saxons & Vikings — Struggle for England (AD 410–1066)",
+  "examDateBoundary": "AD 410–1066",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Anglo-Saxons & Vikings",
+    "subLabel": "Key Stage 2",
+    "dateChip": "AD 410–1066",
+    "gloss": "How Angles, Saxons, Jutes, and Scandinavian Vikings raided, settled, traded, and fought from AD 410 to forge one Kingdom of England before 1066.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "1. Saxon Settlers & Monks",
+        "dateChip": "c. AD 410–750",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Heptarchy",
+        "gloss": "Angles, Saxons, and Jutes rowed across the North Sea to build timber mead-hall kingdoms, buried royal ship treasures at Sutton Hoo, and embraced Christian monasteries.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Angles, Saxons & Jutes Settle",
+            "dateChip": "c. AD 410–600",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Heptarchy",
+            "q2Chain": "Flooded marshes push & rich farms pull across North Sea → West Stow villages & mead halls → Seven kingdoms & Old English words",
+            "gloss": "Flooded marshes push & rich farms pull across North Sea → West Stow villages & mead halls → Seven kingdoms & Old English words",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "North Sea Push & Pull Boats",
+                "dateChip": "c. AD 410–500",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Jutes",
+                "gloss": "Flooded coastal marshes pushed Angles, Saxons, and Jutes out while Britain’s fertile farmland pulled families across in oak rowing boats.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Flooded Marshes vs Rich Farmland",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "fertile farmland",
+                    "gloss": "Tides ruined Jutland, Saxony crops; Unguarded river valleys after 410.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Tides ruined Jutland, Saxony crops",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "fertile farmland",
+                        "gloss": "Tides ruined Jutland, Saxony crops"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Unguarded river valleys after 410",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "fertile farmland",
+                        "gloss": "Unguarded river valleys after 410"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Families Rowed Nydam Oak Ships",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Nydam oak ship",
+                    "gloss": "Packed seeds, livestock, iron tools; Steered up eastern English rivers.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Packed seeds, livestock, iron tools",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Nydam oak ship",
+                        "gloss": "Packed seeds, livestock, iron tools"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Steered up eastern English rivers",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Nydam oak ship",
+                        "gloss": "Steered up eastern English rivers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Cleared New Timber Farmsteads",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "push reasons",
+                    "gloss": "Settled Angles, Saxons, and Jutes; Built villages beside clear streams.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Settled Angles, Saxons, and Jutes",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "push reasons",
+                        "gloss": "Settled Angles, Saxons, and Jutes"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Built villages beside clear streams",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "push reasons",
+                        "gloss": "Built villages beside clear streams"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "West Stow & Timber Mead Halls",
+                "dateChip": "5th–6th C. AD",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "West Stow",
+                "gloss": "Avoiding ruined Roman stone towns, free ceorls wove wool at West Stow around a warrior king’s roaring timber mead hall.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Ceorls Built Thatched West Stow",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "ceorls",
+                    "gloss": "Called Roman walls giants’ work; Wove wool; forged iron tools.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Called Roman walls giants’ work",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "ceorls",
+                        "gloss": "Called Roman walls giants’ work"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Wove wool; forged iron tools",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "ceorls",
+                        "gloss": "Wove wool; forged iron tools"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Cyning Shared Mead & Gold Rings",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "cyning",
+                    "gloss": "Grand rectangular timber mead hall; Roaring hearth, honey mead, rings.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Grand rectangular timber mead hall",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "cyning",
+                        "gloss": "Grand rectangular timber mead hall"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Roaring hearth, honey mead, rings",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "cyning",
+                        "gloss": "Roaring hearth, honey mead, rings"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Grew Into Seven Rival Kingdoms",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "timber mead hall",
+                    "gloss": "Loyal fighters guarded regional kings; Joined warbands into wider realms.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Loyal fighters guarded regional kings",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "timber mead hall",
+                        "gloss": "Loyal fighters guarded regional kings"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Joined warbands into wider realms",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "timber mead hall",
+                        "gloss": "Joined warbands into wider realms"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Seven Kingdoms & Weekday Gods",
+                "dateChip": "c. AD 550–650",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Old English",
+                "gloss": "Rival warbands formed the seven-kingdom Heptarchy, giving England its name, -ham/-ton/-ford towns, and four pagan weekday names.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Seven Kingdoms Named Englaland",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Heptarchy",
+                    "gloss": "Northumbria, Mercia, Wessex, Kent, Essex; East Anglia, Sussex spoke Old English.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Northumbria, Mercia, Wessex, Kent, Essex",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Heptarchy",
+                        "gloss": "Northumbria, Mercia, Wessex, Kent, Essex"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "East Anglia, Sussex spoke Old English",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Heptarchy",
+                        "gloss": "East Anglia, Sussex spoke Old English"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Place-Names & Pagan Weekdays",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Woden",
+                    "gloss": "-ham, -ton, -ford dot maps; Tiw, Woden, Thunor, Frige weekdays.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "-ham, -ton, -ford dot maps",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Woden",
+                        "gloss": "-ham, -ton, -ford dot maps"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Tiw, Woden, Thunor, Frige weekdays",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Woden",
+                        "gloss": "Tiw, Woden, Thunor, Frige weekdays"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Shaped England’s Map & Speech",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Englaland",
+                    "gloss": "Meant land of the Angles; Spoken roots survive every day.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Meant land of the Angles",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Englaland",
+                        "gloss": "Meant land of the Angles"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Spoken roots survive every day",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Englaland",
+                        "gloss": "Spoken roots survive every day"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Sutton Hoo & Monasteries",
+            "dateChip": "c. AD 597–750",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Sutton Hoo",
+            "q2Chain": "King Raedwald’s 27m Sutton Hoo ship burial → Missionaries at Canterbury (597) & Lindisfarne (635) → Lindisfarne Gospels & Bede",
+            "gloss": "King Raedwald’s 27m Sutton Hoo ship burial → Missionaries at Canterbury (597) & Lindisfarne (635) → Lindisfarne Gospels & Bede",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Sutton Hoo’s 27m Ghost Ship",
+                "dateChip": "c. AD 625 & 1939",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Basil Brown",
+                "gloss": "In 1939 on Edith Pretty’s Suffolk land, Basil Brown uncovered rusted iron rivets and royal treasures of King Raedwald.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Iron Rivets Traced 27m Ship",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "iron rivets",
+                    "gloss": "Basil Brown dug Mound 1; Acidic sand rotted oak planks.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Basil Brown dug Mound 1",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "iron rivets",
+                        "gloss": "Basil Brown dug Mound 1"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Acidic sand rotted oak planks",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "iron rivets",
+                        "gloss": "Acidic sand rotted oak planks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Helmet, Garnets & Silver Spoons",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Raedwald",
+                    "gloss": "Famous iron-and-bronze war helmet; Sri Lankan garnets, Byzantine spoons.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Famous iron-and-bronze war helmet",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Raedwald",
+                        "gloss": "Famous iron-and-bronze war helmet"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Sri Lankan garnets, Byzantine spoons",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Raedwald",
+                        "gloss": "Sri Lankan garnets, Byzantine spoons"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Crossroads of Pagan & Christian",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Frankish gold coins",
+                    "gloss": "Honoured King Raedwald c. AD 625; Proved rich global Saxon trade.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Honoured King Raedwald c. AD 625",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Frankish gold coins",
+                        "gloss": "Honoured King Raedwald c. AD 625"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Proved rich global Saxon trade",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Frankish gold coins",
+                        "gloss": "Proved rich global Saxon trade"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Canterbury & Lindisfarne Monks",
+                "dateChip": "AD 597–635",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Augustine",
+                "gloss": "Christianity arrived from two directions: Augustine at Canterbury in AD 597 and Irish monk Aidan from Iona at Lindisfarne in AD 635.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "AD 597: Augustine at Canterbury",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Canterbury",
+                    "gloss": "Sent by Pope Gregory in Rome; Welcomed by Ethelbert, Queen Bertha.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Sent by Pope Gregory in Rome",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Canterbury",
+                        "gloss": "Sent by Pope Gregory in Rome"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Welcomed by Ethelbert, Queen Bertha",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Canterbury",
+                        "gloss": "Welcomed by Ethelbert, Queen Bertha"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "AD 635: Aidan Founded Lindisfarne",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Aidan",
+                    "gloss": "Sailed south from island Iona; Built priory beside King Oswald.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Sailed south from island Iona",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Aidan",
+                        "gloss": "Sailed south from island Iona"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Built priory beside King Oswald",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Aidan",
+                        "gloss": "Built priory beside King Oswald"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Monasteries Spread Books & Art",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Lindisfarne",
+                    "gloss": "Baptised kings north and south; Built peaceful coastal stone priories.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Baptised kings north and south",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Lindisfarne",
+                        "gloss": "Baptised kings north and south"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Built peaceful coastal stone priories",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Lindisfarne",
+                        "gloss": "Built peaceful coastal stone priories"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Whitby, Vellum Gospels & Bede",
+                "dateChip": "c. AD 664–731",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Venerable Bede",
+                "gloss": "Abbess Hilda united church rules at Whitby, scribes painted calfskin vellum Gospels, and Bede wrote English history at Jarrow.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Abbess Hilda & Vellum Quills",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Abbess Hilda",
+                    "gloss": "Hosted AD 664 Whitby Synod; Painted Lindisfarne Gospels on vellum.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Hosted AD 664 Whitby Synod",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Abbess Hilda",
+                        "gloss": "Hosted AD 664 Whitby Synod"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Painted Lindisfarne Gospels on vellum",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Abbess Hilda",
+                        "gloss": "Painted Lindisfarne Gospels on vellum"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Venerable Bede’s AD 731 History",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Jarrow",
+                    "gloss": "Wrote at Jarrow monastery scriptorium; Spread AD dates across Europe.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Wrote at Jarrow monastery scriptorium",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Jarrow",
+                        "gloss": "Wrote at Jarrow monastery scriptorium"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Spread AD dates across Europe",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Jarrow",
+                        "gloss": "Spread AD dates across Europe"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Rich Priories Tempted Sea Raiders",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "monasteries",
+                    "gloss": "Filled churches with silver, gold; Left island Lindisfarne unguarded.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Filled churches with silver, gold",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "monasteries",
+                        "gloss": "Filled churches with silver, gold"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Left island Lindisfarne unguarded",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "monasteries",
+                        "gloss": "Left island Lindisfarne unguarded"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "2. Viking Longships & Alfred",
+        "dateChip": "AD 793–899",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Great Heathen Army",
+        "gloss": "Shallow-draught Viking longships struck Lindisfarne in AD 793 and conquered three kingdoms before King Alfred won at Edington, agreed the Danelaw, and built 33 burhs.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Longships & Heathen Army",
+            "dateChip": "AD 793–878",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Great Heathen Army",
+            "q2Chain": "Dragon prows raid Lindisfarne (8 June 793) → Clinker-built 1m-draught longships → Great Heathen Army conquers Jorvik (865–877)",
+            "gloss": "Dragon prows raid Lindisfarne (8 June 793) → Clinker-built 1m-draught longships → Great Heathen Army conquers Jorvik (865–877)",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "AD 793: Raid on Lindisfarne",
+                "dateChip": "8 June AD 793",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "soft targets",
+                "gloss": "On 8 June AD 793, Scandinavian raiders in dragon-prowed warships stormed unguarded Lindisfarne Priory for silver and gold.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Unguarded Priory Held Rich Silver",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "silver chalices",
+                    "gloss": "Gold reliquaries and unarmed monks; Isolated coastal Holy Island target.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Gold reliquaries and unarmed monks",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "silver chalices",
+                        "gloss": "Gold reliquaries and unarmed monks"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Isolated coastal Holy Island target",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "silver chalices",
+                        "gloss": "Isolated coastal Holy Island target"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "8 June 793 Shocked All Europe",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Alcuin",
+                    "gloss": "Chronicle warned of fiery dragons; Scholar Alcuin wept in terror.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Chronicle warned of fiery dragons",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Alcuin",
+                        "gloss": "Chronicle warned of fiery dragons"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Scholar Alcuin wept in terror",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Alcuin",
+                        "gloss": "Scholar Alcuin wept in terror"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Launched 70 Years of Raids",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Scandinavia",
+                    "gloss": "Raiders sailed from Norway, Denmark; Exposed Britain’s open sea coasts.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Raiders sailed from Norway, Denmark",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Scandinavia",
+                        "gloss": "Raiders sailed from Norway, Denmark"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Exposed Britain’s open sea coasts",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Scandinavia",
+                        "gloss": "Exposed Britain’s open sea coasts"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Clinker-Built Oak Longships",
+                "dateChip": "8th–9th C. AD",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "clinker-built longship",
+                "gloss": "Overlapping oak strakes, tarred wool, square sails, oars, and a 1-metre shallow draught let Viking crews row straight up rivers.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Overlapping Oak & Tarred Wool",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "oak strakes",
+                    "gloss": "Held tight by iron rivets; Pointed ends reversed off beaches.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Held tight by iron rivets",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "oak strakes",
+                        "gloss": "Held tight by iron rivets"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Pointed ends reversed off beaches",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "oak strakes",
+                        "gloss": "Pointed ends reversed off beaches"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Wool Sail, Oars & 1m Draught",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "shallow draught",
+                    "gloss": "Crossed stormy open North Sea; Rowed far up English rivers.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Crossed stormy open North Sea",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "shallow draught",
+                        "gloss": "Crossed stormy open North Sea"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Rowed far up English rivers",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "shallow draught",
+                        "gloss": "Rowed far up English rivers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Carried Huge Conquest Armies",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "English rivers",
+                    "gloss": "Surprised inland monasteries and towns; Enabled AD 865 winter invasion.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Surprised inland monasteries and towns",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "English rivers",
+                        "gloss": "Surprised inland monasteries and towns"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Enabled AD 865 winter invasion",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "English rivers",
+                        "gloss": "Enabled AD 865 winter invasion"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "AD 865: Great Heathen Army",
+                "dateChip": "AD 865–877",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Jorvik",
+                "gloss": "Craving fertile farmland, the AD 865 Great Heathen Army wintered at Repton and seized York (Jorvik), East Anglia, and Mercia.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Scandinavian Farmland Ran Short",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "shortage of fertile farmland",
+                    "gloss": "Mountainous Norway and sandy Denmark; Chieftains craved new kingdoms.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Mountainous Norway and sandy Denmark",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "shortage of fertile farmland",
+                        "gloss": "Mountainous Norway and sandy Denmark"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Chieftains craved new kingdoms",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "shortage of fertile farmland",
+                        "gloss": "Chieftains craved new kingdoms"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Ivar, Halfdan & Guthrum Seize York",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Repton",
+                    "gloss": "Built winter camp at Repton; Captured Jorvik in AD 866.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Built winter camp at Repton",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Repton",
+                        "gloss": "Built winter camp at Repton"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Captured Jorvik in AD 866",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Repton",
+                        "gloss": "Captured Jorvik in AD 866"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Only Wessex Stood by AD 877",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Wessex",
+                    "gloss": "Took East Anglia and Mercia; Pushed King Alfred into marshes.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Took East Anglia and Mercia",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Wessex",
+                        "gloss": "Took East Anglia and Mercia"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Pushed King Alfred into marshes",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Wessex",
+                        "gloss": "Pushed King Alfred into marshes"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Alfred, Burhs & The Danelaw",
+            "dateChip": "AD 871–899",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Danelaw",
+            "q2Chain": "Athelney marshes to Edington victory (AD 878) → Guthrum baptised & Danelaw treaty → 33 walled burhs, 60-oar ships & schools",
+            "gloss": "Athelney marshes to Edington victory (AD 878) → Guthrum baptised & Danelaw treaty → 33 walled burhs, 60-oar ships & schools",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Athelney Marshes to Edington",
+                "dateChip": "Jan–May AD 878",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Edington",
+                "gloss": "After Guthrum’s surprise attack at Chippenham, King Alfred hid at Athelney before rallying the fyrd to smash Guthrum at Edington.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Twelfth Night Raid on Chippenham",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Athelney",
+                    "gloss": "Guthrum struck Wessex Jan 878; Alfred hid in Somerset marshes.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Guthrum struck Wessex Jan 878",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Athelney",
+                        "gloss": "Guthrum struck Wessex Jan 878"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Alfred hid in Somerset marshes",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Athelney",
+                        "gloss": "Alfred hid in Somerset marshes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Fyrd Shield Wall Won Edington",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Egbert's Stone",
+                    "gloss": "Cheered Alfred at Egbert’s Stone; Smashed Vikings in May 878.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Cheered Alfred at Egbert’s Stone",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Egbert's Stone",
+                        "gloss": "Cheered Alfred at Egbert’s Stone"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Smashed Vikings in May 878",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Egbert's Stone",
+                        "gloss": "Smashed Vikings in May 878"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Forced Guthrum’s Peace Treaty",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "fyrd",
+                    "gloss": "Saved last free Saxon kingdom; Surrounded Guthrum surrendered camp.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Saved last free Saxon kingdom",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "fyrd",
+                        "gloss": "Saved last free Saxon kingdom"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Surrounded Guthrum surrendered camp",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "fyrd",
+                        "gloss": "Surrounded Guthrum surrendered camp"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Baptism & The Danelaw Border",
+                "dateChip": "AD 878–886",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Watling Street",
+                "gloss": "Guthrum was baptised as Christian Aethelstan, Alfred retook London, and their treaty split England along Roman Watling Street.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Guthrum Baptised as Aethelstan",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Aethelstan",
+                    "gloss": "Alfred stood as Christian godfather; Recaptured walled London AD 886.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Alfred stood as Christian godfather",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Aethelstan",
+                        "gloss": "Alfred stood as Christian godfather"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Recaptured walled London AD 886",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Aethelstan",
+                        "gloss": "Recaptured walled London AD 886"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Watling Street Split the Danelaw",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Danelaw",
+                    "gloss": "Alfred held Wessex, west Mercia; Vikings ruled -by, -thorpe Danelaw.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Alfred held Wessex, west Mercia",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Danelaw",
+                        "gloss": "Alfred held Wessex, west Mercia"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Vikings ruled -by, -thorpe Danelaw",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Danelaw",
+                        "gloss": "Vikings ruled -by, -thorpe Danelaw"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Gave Breathing Space for Burhs",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "King of the English",
+                    "gloss": "Minted King of English pennies; Bought time to fortify Wessex.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Minted King of English pennies",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "King of the English",
+                        "gloss": "Minted King of English pennies"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Bought time to fortify Wessex",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "King of the English",
+                        "gloss": "Bought time to fortify Wessex"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "33 Burhs, Ships & Saxon Books",
+                "dateChip": "AD 880–899",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "burhs",
+                "gloss": "Alfred built 33 walled burhs within 20 miles of every village, launched 60-oar warships, and translated Latin books into Old English.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "33 Walled Burhs & 60-Oar Ships",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "20 miles",
+                    "gloss": "Wareham, Wallingford earth ramparts; Safety within twenty miles everywhere.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Wareham, Wallingford earth ramparts",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "20 miles",
+                        "gloss": "Wareham, Wallingford earth ramparts"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Safety within twenty miles everywhere",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "20 miles",
+                        "gloss": "Safety within twenty miles everywhere"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Court Schools & Alfred Jewel",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Alfred Jewel",
+                    "gloss": "Translated Latin into Old English; Started famous Anglo-Saxon Chronicle.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Translated Latin into Old English",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Alfred Jewel",
+                        "gloss": "Translated Latin into Old English"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Started famous Anglo-Saxon Chronicle",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Alfred Jewel",
+                        "gloss": "Started famous Anglo-Saxon Chronicle"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Earned Title “Alfred the Great”",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Alfred the Great",
+                    "gloss": "Paired school learning with swords; Laid base for united England.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Paired school learning with swords",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Alfred the Great",
+                        "gloss": "Paired school learning with swords"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Laid base for united England",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Alfred the Great",
+                        "gloss": "Laid base for united England"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "3. Jorvik Life, Unity & 1066",
+        "dateChip": "c. AD 876–1066",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Coppergate",
+        "gloss": "Archaeology under York’s Coppergate revealed global Viking traders and craftworkers before Aethelflaed and Athelstan united England and 1066 brought Norman rule.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Everyday Viking Jorvik",
+            "dateChip": "c. AD 876–1000",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Coppergate",
+            "q2Chain": "40,000 finds preserved in Coppergate peat → Silk, Baghdad dirhams & Atlantic knarrs → Women’s keys, Thing courts & Old Norse words",
+            "gloss": "40,000 finds preserved in Coppergate peat → Silk, Baghdad dirhams & Atlantic knarrs → Women’s keys, Thing courts & Old Norse words",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "40,000 Finds Under Coppergate",
+                "dateChip": "c. AD 876–950",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "40,000",
+                "gloss": "Wet oxygen-free peat beneath York’s Coppergate preserved timber workshops, leather shoes, bone ice-skates, and antler combs.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Wet Airless Peat Saved Wood",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "oxygen-free peat",
+                    "gloss": "Dug beneath York 1976–1981; Stopped leather and wood rotting.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Dug beneath York 1976–1981",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "oxygen-free peat",
+                        "gloss": "Dug beneath York 1976–1981"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Stopped leather and wood rotting",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "oxygen-free peat",
+                        "gloss": "Stopped leather and wood rotting"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Shoes, Skates & Antler Combs",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "hnefatafl",
+                    "gloss": "Bone skates and hnefatafl counters; Hundreds of deer-antler combs.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Bone skates and hnefatafl counters",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "hnefatafl",
+                        "gloss": "Bone skates and hnefatafl counters"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Hundreds of deer-antler combs",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "hnefatafl",
+                        "gloss": "Hundreds of deer-antler combs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Proved Vikings Were Skilled Makers",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "hygiene",
+                    "gloss": "Cared about neat daily hygiene; Far more than fierce raiders.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Cared about neat daily hygiene",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "hygiene",
+                        "gloss": "Cared about neat daily hygiene"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Far more than fierce raiders",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "hygiene",
+                        "gloss": "Far more than fierce raiders"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Baghdad Silver & Ocean Knarrs",
+                "dateChip": "9th–10th C. AD",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "dirham",
+                "gloss": "Jorvik imported Byzantine silk, Red Sea shells, and Baghdad silver dirhams while wide knarr cargo ships sailed to North America.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Silk, Amber & Baghdad Dirhams",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Baghdad",
+                    "gloss": "Byzantine silk, Red Sea cowrie; Traded furs for Arabic dirhams.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Byzantine silk, Red Sea cowrie",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Baghdad",
+                        "gloss": "Byzantine silk, Red Sea cowrie"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Traded furs for Arabic dirhams",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Baghdad",
+                        "gloss": "Traded furs for Arabic dirhams"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Knarr Ships Reached Vinland",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "knarrs",
+                    "gloss": "Steered across icy North Atlantic; Reached Iceland, Greenland, and Vinland.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Steered across icy North Atlantic",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "knarrs",
+                        "gloss": "Steered across icy North Atlantic"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Reached Iceland, Greenland, and Vinland",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "knarrs",
+                        "gloss": "Reached Iceland, Greenland, and Vinland"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Linked York Across Three Continents",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Samarkand",
+                    "gloss": "Linked York, Baghdad, and Vinland; Made Jorvik a bustling port.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Linked York, Baghdad, and Vinland",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Samarkand",
+                        "gloss": "Linked York, Baghdad, and Vinland"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Made Jorvik a bustling port",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Samarkand",
+                        "gloss": "Made Jorvik a bustling port"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Keys, Thing Courts & Old Norse",
+                "dateChip": "9th–11th C. AD",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Old Norse",
+                "gloss": "Danelaw wives wore household keys and owned land, outdoor Thing assemblies voted on laws, and Old Norse gave us everyday words.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Karls, Thralls & Key-Bearing Wives",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "household keys",
+                    "gloss": "Free karls farmed; thralls laboured; Women owned land, could divorce.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Free karls farmed; thralls laboured",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "household keys",
+                        "gloss": "Free karls farmed; thralls laboured"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Women owned land, could divorce",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "household keys",
+                        "gloss": "Women owned land, could divorce"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Outdoor Things & Norse Words",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Tynwald Hill",
+                    "gloss": "Voted laws at Thing assemblies; Gave sky, window, egg, knife.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Voted laws at Thing assemblies",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Tynwald Hill",
+                        "gloss": "Voted laws at Thing assemblies"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Gave sky, window, egg, knife",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Tynwald Hill",
+                        "gloss": "Gave sky, window, egg, knife"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Blended Into One English Nation",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "husband",
+                    "gloss": "Settlers wed Saxons, turned Christian; Added husband and Thursday too.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Settlers wed Saxons, turned Christian",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "husband",
+                        "gloss": "Settlers wed Saxons, turned Christian"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Added husband and Thursday too",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "husband",
+                        "gloss": "Added husband and Thursday too"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Aethelflaed, Athelstan & 1066",
+            "dateChip": "AD 900–1066",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Athelstan",
+            "q2Chain": "Aethelflaed & Athelstan unite England (911–937) → Danegeld, Cnut’s Empire & Edward → Stamford Bridge & Hastings (Oct 1066)",
+            "gloss": "Aethelflaed & Athelstan unite England (911–937) → Danegeld, Cnut’s Empire & Edward → Stamford Bridge & Hastings (Oct 1066)",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Aethelflaed & King Athelstan",
+                "dateChip": "AD 911–939",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "Aethelflaed",
+                "gloss": "Lady of the Mercians Aethelflaed recaptured Derby and Leicester before her nephew Athelstan took York (927) and won Brunanburh (937).",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Aethelflaed Built Mercian Burhs",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Lady of the Mercians",
+                    "gloss": "Fortified Tamworth and Warwick burhs; Recaptured Viking Derby and Leicester.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Fortified Tamworth and Warwick burhs",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Lady of the Mercians",
+                        "gloss": "Fortified Tamworth and Warwick burhs"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Recaptured Viking Derby and Leicester",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Lady of the Mercians",
+                        "gloss": "Recaptured Viking Derby and Leicester"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Athelstan Took York & Brunanburh",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Brunanburh",
+                    "gloss": "Captured Viking York AD 927; Won Brunanburh battle AD 937.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Captured Viking York AD 927",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Brunanburh",
+                        "gloss": "Captured Viking York AD 927"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Won Brunanburh battle AD 937",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Brunanburh",
+                        "gloss": "Won Brunanburh battle AD 937"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ First True King of All England",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "King of All England",
+                    "gloss": "United Saxon and Danelaw lands; Created one Kingdom of England.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "United Saxon and Danelaw lands",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "King of All England",
+                        "gloss": "United Saxon and Danelaw lands"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Created one Kingdom of England",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "King of All England",
+                        "gloss": "Created one Kingdom of England"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "Danegeld, King Cnut & Edward",
+                "dateChip": "AD 991–1065",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Danegeld",
+                "gloss": "After Aethelred’s silver Danegeld bribes failed, Danish King Cnut ruled a peaceful North Sea Empire before Edward built Westminster Abbey.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Danegeld Silver Failed to Stop Raids",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Aethelred",
+                    "gloss": "Fresh Danish fleets struck 991; Raiders returned wanting more silver.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Fresh Danish fleets struck 991",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Aethelred",
+                        "gloss": "Fresh Danish fleets struck 991"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Raiders returned wanting more silver",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Aethelred",
+                        "gloss": "Raiders returned wanting more silver"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Cnut’s Empire & Westminster Abbey",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "North Sea Empire",
+                    "gloss": "Cnut ruled England, Denmark, Norway; Edward opened Westminster Abbey 1065.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Cnut ruled England, Denmark, Norway",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "North Sea Empire",
+                        "gloss": "Cnut ruled England, Denmark, Norway"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Edward opened Westminster Abbey 1065",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "North Sea Empire",
+                        "gloss": "Edward opened Westminster Abbey 1065"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Childless Death Sparked 1066",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Edward the Confessor",
+                    "gloss": "Edward died childless January 1066; Three rivals claimed one crown.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Edward died childless January 1066",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Edward the Confessor",
+                        "gloss": "Edward died childless January 1066"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Three rivals claimed one crown",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Edward the Confessor",
+                        "gloss": "Three rivals claimed one crown"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "Stamford Bridge & Hastings 1066",
+                "dateChip": "Sept–Oct 1066",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Hastings",
+                "gloss": "Harold Godwinson marched north to crush Viking Harald Hardrada at Stamford Bridge, then south to fall against William at Hastings.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "25 Sept: Won Stamford Bridge",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Stamford Bridge",
+                    "gloss": "Witan crowned Earl Harold Godwinson; Marched 185 miles; beat Hardrada.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Witan crowned Earl Harold Godwinson",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Stamford Bridge",
+                        "gloss": "Witan crowned Earl Harold Godwinson"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Marched 185 miles; beat Hardrada",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Stamford Bridge",
+                        "gloss": "Marched 185 miles; beat Hardrada"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "14 Oct: Shield Wall Fell at Hastings",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "14 October 1066",
+                    "gloss": "Exhausted troops marched 250 miles; Duke William’s Normans won crown.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Exhausted troops marched 250 miles",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "14 October 1066",
+                        "gloss": "Exhausted troops marched 250 miles"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Duke William’s Normans won crown",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "14 October 1066",
+                        "gloss": "Duke William’s Normans won crown"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Ended Viking & Saxon Eras",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Norman",
+                    "gloss": "Stamford Bridge ended Viking Age; Hastings began Norman rule.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Stamford Bridge ended Viking Age",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Norman",
+                        "gloss": "Stamford Bridge ended Viking Age"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Hastings began Norman rule",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Norman",
+                        "gloss": "Hastings began Norman rule"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

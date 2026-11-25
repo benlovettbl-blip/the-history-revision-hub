@@ -22,7 +22,16 @@
  */
 
 import './true_mindmap_engine.css';
-import { resolveGcseExamUnitId } from './engine/mobile_exam_adapter.js';
+import { isSupportedGcseUnit, resolveGcseExamUnitId } from './engine/mobile_exam_adapter.js';
+
+function resolveMindMapUnitId(rawUnitId) {
+  const cleaned = String(rawUnitId || '').trim();
+  if (!cleaned) return 'cme_new';
+  if (isSupportedGcseUnit(cleaned)) {
+    return resolveGcseExamUnitId(cleaned);
+  }
+  return cleaned.toLowerCase().replace(/[^a-z0-9_-]/g, '');
+}
 
 const mindmapCache = new Map();
 
@@ -53,9 +62,9 @@ const studioState = {
   onOpenQuestionDrawer: null,
   displayMode: 'map', // 'map' | 'outline'
   directionMode: readSavedDirection(), // 'center' | 'right' | 'left'
-  gradeBand: 'g89', // 'g45' | 'g67' | 'g89'
-  maxTier: 5, // computed dynamically from `gradeBand` & schema (`4` on v8 4-Ring Card maps, `5` on legacy 5-Ring maps)
-  showCardDetail: true, // true when `gradeBand === 'g89'` on v8 4-Ring Card maps
+  maxTier: 5, // No artificial grade ceiling — every node can always unfold 1 ring deeper on tap
+  showCardDetail: false, // Used only when stepping to Level 5 on legacy 4-Ring Card maps
+  expandedCardIds: new Set(), // Per-card detail toggle on legacy 4-Ring Card maps
   expandedIds: new Set(['root']),
   focusedNodeId: 'root',
   whisperDismissed: false,
@@ -101,9 +110,14 @@ export function resolveNodeRoleMeta(rawTag, rawForTheme = '') {
   const lower = t.toLowerCase();
   const theme = String(rawForTheme || '').trim();
 
-  if (lower === 'conseq' || lower === 'consequence' || lower === 'view 2') {
+  if (
+    lower === 'conseq' ||
+    lower === 'consequence' ||
+    lower === 'result' ||
+    lower === 'view 2'
+  ) {
     return {
-      label: lower === 'view 2' ? '20m View 2' : 'Conseq',
+      label: lower === 'view 2' ? '20m View 2' : lower === 'result' ? 'Result' : 'Conseq',
       roleClass: 'role-conseq',
       tagClass: 'tag-conseq',
       svgBg: '#f5f3ff',
@@ -115,6 +129,7 @@ export function resolveNodeRoleMeta(rawTag, rawForTheme = '') {
   if (
     lower === 'importance' ||
     lower === 'significance' ||
+    lower === 'why it mattered' ||
     lower === 'impact' ||
     lower === 'agree' ||
     lower === 'view 1' ||
@@ -129,9 +144,13 @@ export function resolveNodeRoleMeta(rawTag, rawForTheme = '') {
             ? '20m View 1'
             : lower === 'impact'
               ? '16m Impact'
-              : theme
-                ? `Q3 Imp → ${theme}`
-                : 'Q3 Importance';
+              : lower === 'why it mattered'
+                ? 'Why It Mattered'
+                : lower === 'significance'
+                  ? 'Significance'
+                  : theme
+                    ? `Q3 Imp → ${theme}`
+                    : 'Q3 Importance';
     return {
       label: lbl,
       roleClass: 'role-importance',
@@ -230,8 +249,31 @@ export function resolveNodeRoleMeta(rawTag, rawForTheme = '') {
 function getPaperLegendMeta(data) {
   const code = String(data?.optionCode || '').toUpperCase();
   const pType = String(data?.paperType || '').toLowerCase();
+  if (code === 'KS2' || pType === 'ks2') {
+    return {
+      isGcse: false,
+      r2Badge: '🧭 Lesson Milestones',
+      modalTagSummary: '[Cause], [Result] & [Why It Mattered]',
+      pillsHtml:
+        '<span class="tmm-role-tag tag-cause">Cause</span><span class="tmm-role-tag tag-event">Event</span><span class="tmm-role-tag tag-conseq">Result</span><span class="tmm-role-tag tag-importance">Why It Mattered</span>',
+      printPillsHtml:
+        '<b class="lp c">CAUSE</b><b class="lp e">EVENT</b><b class="lp q1">RESULT</b><b class="lp q3">WHY IT MATTERED</b>',
+    };
+  }
+  if (code === 'KS3' || pType === 'ks3') {
+    return {
+      isGcse: false,
+      r2Badge: '🧭 Enquiry Turning Points',
+      modalTagSummary: '[Cause], [Conseq] & [Significance]',
+      pillsHtml:
+        '<span class="tmm-role-tag tag-cause">Cause</span><span class="tmm-role-tag tag-event">Event</span><span class="tmm-role-tag tag-conseq">Conseq</span><span class="tmm-role-tag tag-importance">Significance</span>',
+      printPillsHtml:
+        '<b class="lp c">CAUSE</b><b class="lp e">EVENT</b><b class="lp q1">CONSEQ</b><b class="lp q3">SIGNIFICANCE</b>',
+    };
+  }
   if (code.includes('31') || code.includes('33') || pType.includes('paper 3') || pType.includes('modern depth')) {
     return {
+      isGcse: true,
       r2Badge: '⚖️ Q3d Core Debate',
       modalTagSummary: '[12m Why], [20m View 1] & [20m View 2]',
       pillsHtml:
@@ -242,6 +284,7 @@ function getPaperLegendMeta(data) {
   }
   if (code.includes('B4') || pType.includes('paper 2b') || pType.includes('british depth')) {
     return {
+      isGcse: true,
       r2Badge: '⚖️ 16m Essay & Causation Lens',
       modalTagSummary: '[4m Feature], [12m Why], [16m Agree] & [16m Counter]',
       pillsHtml:
@@ -252,6 +295,7 @@ function getPaperLegendMeta(data) {
   }
   if (code.includes('11') || pType.includes('paper 1') || pType.includes('thematic')) {
     return {
+      isGcse: true,
       r2Badge: '🔄 Era Pattern & Enquiry Lens',
       modalTagSummary: '[4m Feature / Change], [Source Check / Follow-Up], [12m Factor] & [16m Impact]',
       pillsHtml:
@@ -261,6 +305,7 @@ function getPaperLegendMeta(data) {
     };
   }
   return {
+    isGcse: true,
     r2Badge: '🔗 Q2 Narrative Chain',
     modalTagSummary: '[Cause], [Conseq] & [Importance → Theme]',
     pillsHtml:
@@ -362,14 +407,14 @@ function synthesizeMindMapFromSpecTree(specTree) {
 
 export function clearMindMapCache(unitId = null) {
   if (unitId) {
-    mindmapCache.delete(resolveGcseExamUnitId(unitId));
+    mindmapCache.delete(resolveMindMapUnitId(unitId));
   } else {
     mindmapCache.clear();
   }
 }
 
 export async function loadMindMapSingleSource(rawUnitId, fallbackSpecTree = null) {
-  const unitId = resolveGcseExamUnitId(rawUnitId);
+  const unitId = resolveMindMapUnitId(rawUnitId);
   if (mindmapCache.has(unitId)) {
     return mindmapCache.get(unitId);
   }
@@ -425,18 +470,124 @@ function isFourRingCardMap(data) {
   return getTreeMaxDepth(data.root) <= 4;
 }
 
-function syncTierFromGradeBand(data, gradeBand = studioState.gradeBand) {
-  const fourRing = isFourRingCardMap(data);
-  if (gradeBand === 'g45') {
-    studioState.maxTier = 3;
-    studioState.showCardDetail = false;
-  } else if (gradeBand === 'g67') {
-    studioState.maxTier = 4;
-    studioState.showCardDetail = false;
-  } else {
-    studioState.maxTier = fourRing ? 4 : 5;
-    studioState.showCardDetail = fourRing;
+/**
+ * Inspects currently visible nodes in `expandedIds` to determine:
+ *  - `currentLevel` (`1..5`)
+ *  - `shallowestClosedParentTier` (for `+ Ring` 1-level step up)
+ *  - `deepestExpandedParentTier` (for `− Ring` 1-level step down)
+ */
+function computeRingStepperInfo(root, fourRing = false) {
+  let deepestVisibleTier = 1;
+  let shallowestClosedParentTier = Infinity;
+  let deepestExpandedParentTier = 0;
+
+  function walkVisible(node) {
+    if (!node) return;
+    const tier = typeof node.tier === 'number' ? node.tier : 0;
+    if (tier > deepestVisibleTier) deepestVisibleTier = tier;
+
+    const hasKids = Array.isArray(node.children) && node.children.length > 0;
+    const isOpen = node.id === 'root' || studioState.expandedIds.has(node.id);
+
+    if (hasKids) {
+      if (isOpen) {
+        if (tier >= 1 && tier > deepestExpandedParentTier) {
+          deepestExpandedParentTier = tier;
+        }
+        node.children.forEach(walkVisible);
+      } else if (tier >= 1 && tier < shallowestClosedParentTier) {
+        shallowestClosedParentTier = tier;
+      }
+    } else if (
+      fourRing &&
+      tier === 4 &&
+      node.detail &&
+      !studioState.showCardDetail &&
+      !studioState.expandedCardIds.has(node.id)
+    ) {
+      if (4 < shallowestClosedParentTier) shallowestClosedParentTier = 4;
+    }
   }
+
+  walkVisible(root);
+
+  let currentLevel = deepestVisibleTier;
+  if (
+    fourRing &&
+    deepestVisibleTier >= 4 &&
+    (studioState.showCardDetail || studioState.expandedCardIds.size > 0)
+  ) {
+    currentLevel = 5;
+  }
+
+  const canStepDown =
+    deepestExpandedParentTier >= 1 ||
+    studioState.showCardDetail ||
+    studioState.expandedCardIds.size > 0;
+  const canStepUp = isFinite(shallowestClosedParentTier);
+
+  return {
+    currentLevel,
+    totalLevels: 5,
+    shallowestClosedParentTier,
+    deepestExpandedParentTier,
+    canStepDown,
+    canStepUp,
+  };
+}
+
+function stepRingUp(root, fourRing = false) {
+  const info = computeRingStepperInfo(root, fourRing);
+  if (!info.canStepUp) return false;
+
+  if (fourRing && info.shallowestClosedParentTier === 4) {
+    studioState.showCardDetail = true;
+    return true;
+  }
+
+  const toExpand = [];
+  function walkVisible(node) {
+    if (!node) return;
+    const tier = typeof node.tier === 'number' ? node.tier : 0;
+    const hasKids = Array.isArray(node.children) && node.children.length > 0;
+    const isOpen = node.id === 'root' || studioState.expandedIds.has(node.id);
+    if (hasKids && !isOpen && tier === info.shallowestClosedParentTier) {
+      toExpand.push(node.id);
+      return;
+    }
+    if (hasKids && isOpen) {
+      node.children.forEach(walkVisible);
+    }
+  }
+  walkVisible(root);
+  toExpand.forEach((id) => studioState.expandedIds.add(id));
+  return toExpand.length > 0;
+}
+
+function stepRingDown(root, fourRing = false) {
+  const info = computeRingStepperInfo(root, fourRing);
+  if (!info.canStepDown) return false;
+
+  if (
+    fourRing &&
+    (studioState.showCardDetail || studioState.expandedCardIds.size > 0)
+  ) {
+    studioState.showCardDetail = false;
+    studioState.expandedCardIds.clear();
+    return true;
+  }
+
+  function pruneAtOrAbove(node) {
+    if (!node) return;
+    const tier = typeof node.tier === 'number' ? node.tier : 0;
+    if (node.id !== 'root' && tier >= info.deepestExpandedParentTier) {
+      studioState.expandedIds.delete(node.id);
+    }
+    (node.children || []).forEach(pruneAtOrAbove);
+  }
+  pruneAtOrAbove(root);
+  studioState.expandedIds.add('root');
+  return true;
 }
 
 function isNodeBlurredInRecall(node) {
@@ -450,21 +601,23 @@ function isNodeBlurredInRecall(node) {
  * across `center`, `right`, or `left` branch direction modes.
  */
 export function computeBidirectionalLayout(root, opts = null) {
-  const maxTier = opts?.maxTier ?? studioState.maxTier;
+  const maxTier = opts?.maxTier ?? 5;
   const showCardDetail = opts?.showCardDetail ?? studioState.showCardDetail;
+  const expandedCardIds = opts?.expandedCardIds ?? studioState.expandedCardIds;
   const expandedIds = opts?.expandedIds ?? studioState.expandedIds;
   const expandAll = Boolean(opts?.expandAll);
   const directionMode = opts?.directionMode || studioState.directionMode || 'center';
+  const anyCardDetailOpen = showCardDetail || (expandedCardIds && expandedCardIds.size > 0);
   const stepTable =
     opts?.stepTable ||
-    (showCardDetail
+    (anyCardDetailOpen
       ? { 1: 295, 2: 635, 3: 1015, 4: 1515, 5: 1805 }
-      : { 1: 300, 2: 635, 3: 995, 4: 1385, 5: 1735 });
+      : { 1: 280, 2: 590, 3: 940, 4: 1325, 5: 1695 });
   const slotTable =
     opts?.slotTable ||
-    (showCardDetail
+    (anyCardDetailOpen
       ? { 1: 66, 2: 56, 3: 48, 4: 78, 5: 39 }
-      : { 1: 64, 2: 54, 3: 46, 4: 43, 5: 39 });
+      : { 1: 60, 2: 50, 3: 44, 4: 40, 5: 29 });
 
   const placedNodes = [];
   const placedLinks = [];
@@ -553,7 +706,7 @@ export function computeBidirectionalLayout(root, opts = null) {
           y2: cy,
           tier: ch.tier || childDepth,
           depthFromRoot: childDepth,
-          color: (ch.tier || childDepth) === 5 ? '#d97706' : color,
+          color,
         });
       });
     }
@@ -647,24 +800,38 @@ export function computeBidirectionalLayout(root, opts = null) {
   let maxX = -Infinity;
   let minY = Infinity;
   let maxY = -Infinity;
+  let focMinX = Infinity;
+  let focMaxX = -Infinity;
+  let focMinY = Infinity;
+  let focMaxY = -Infinity;
+  const hasDeepNodes = placedNodes.some((n) => n.tier >= 3);
+
   placedNodes.forEach((n) => {
     const padX =
       n.depthFromRoot === 0
         ? 135
         : n.tier === 4 && showCardDetail
           ? 174
-          : n.tier === 4
+          : n.tier >= 4
             ? 168
             : n.tier === 3
               ? 165
               : n.tier === 2
                 ? 152
                 : 138;
-    const padY = n.tier === 4 && showCardDetail ? 44 : 34;
+    const padY = n.tier === 4 && showCardDetail ? 44 : n.tier === 5 ? 20 : 32;
     if (n.x - padX < minX) minX = n.x - padX;
     if (n.x + padX > maxX) maxX = n.x + padX;
     if (n.y - padY < minY) minY = n.y - padY;
     if (n.y + padY > maxY) maxY = n.y + padY;
+
+    // Smart Focus Bounds: when exploring 1 Sub-Topic (Focus Mode), frame the deep nodes + active trunk + root!
+    if (hasDeepNodes && (n.depthFromRoot === 0 || n.tier >= 3 || (n.tier <= 2 && n.isExpanded))) {
+      if (n.x - padX < focMinX) focMinX = n.x - padX;
+      if (n.x + padX > focMaxX) focMaxX = n.x + padX;
+      if (n.y - padY < focMinY) focMinY = n.y - padY;
+      if (n.y + padY > focMaxY) focMaxY = n.y + padY;
+    }
   });
   if (!isFinite(minX)) {
     minX = -160;
@@ -672,11 +839,23 @@ export function computeBidirectionalLayout(root, opts = null) {
     minY = -100;
     maxY = 100;
   }
+  const fullBounds = { minX, maxX, minY, maxY, width: maxX - minX, height: maxY - minY };
+  const focusBounds = isFinite(focMinX)
+    ? {
+        minX: focMinX,
+        maxX: focMaxX,
+        minY: focMinY,
+        maxY: focMaxY,
+        width: focMaxX - focMinX,
+        height: focMaxY - focMinY,
+      }
+    : fullBounds;
 
   return {
     nodes: placedNodes,
     links: placedLinks,
-    bounds: { minX, maxX, minY, maxY, width: maxX - minX, height: maxY - minY },
+    bounds: fullBounds,
+    focusBounds,
   };
 }
 
@@ -725,9 +904,12 @@ function renderMapNodesHTML(nodes) {
         ? `<span class="tmm-date-chip">${escapeHtml(n.dateChip)}</span>`
         : '';
       const masteryStar =
-        n.tier === 5 ? `<span class="tmm-mastery-gem" aria-hidden="true">★</span>` : '';
+        n.tier === 5 ? `<span class="tmm-twig-dot" aria-hidden="true"></span>` : '';
 
-      const isFleshedCard = n.tier === 4 && studioState.showCardDetail && Boolean(n.detail);
+      const isFleshedCard =
+        n.tier === 4 &&
+        (studioState.showCardDetail || studioState.expandedCardIds.has(n.id)) &&
+        Boolean(n.detail);
       const isBlurred = isNodeBlurredInRecall(n);
       const isMatch = hasActiveSearch && studioState.searchMatchIds.has(n.id);
       const isDimmed = hasActiveSearch && !isMatch && n.tier >= 3;
@@ -851,11 +1033,11 @@ function renderOutlineBranchHTML(node, color, inheritedLesson = 0, inheritedStag
     node.tier === 2
       ? '<span class="tmm-out-tier-badge t2">Sub-Topic</span>'
       : node.tier === 3
-        ? '<span class="tmm-out-tier-badge t3">🎯 G4–5 Spec</span>'
+        ? '<span class="tmm-out-tier-badge t3">Spec Event</span>'
         : node.tier === 4 && !roleMeta
-          ? '<span class="tmm-out-tier-badge t4">🔥 G6–8</span>'
+          ? '<span class="tmm-out-tier-badge t4">Key Point</span>'
           : node.tier === 5
-            ? '<span class="tmm-out-tier-badge t5">★ G9 Edge</span>'
+            ? '<span class="tmm-out-tier-badge t5">Fact</span>'
             : '';
 
   const caret = canHaveChildren ? (isOpen ? '▾' : '▸') : '•';
@@ -1026,40 +1208,62 @@ function expandAllWithinCap(root, targetCap = studioState.maxTier) {
   walk(root);
 }
 
-/**
- * Refinement 4: Tapping `🎯 Grades 4–5`, `🔥 Grades 6–8`, or `★ Grade 9 Edge`
- * immediately auto-expands every branch inside the currently open Key Topic(s)
- * (or across all Key Topics if at the initial root) right out to `targetTier`!
- */
-function applyTierSelectionAndAutoExpand(root, targetTier) {
-  studioState.maxTier = targetTier;
+function pruneSubtreeExpanded(node) {
+  if (!node) return;
+  studioState.expandedIds.delete(node.id);
+  (node.children || []).forEach(pruneSubtreeExpanded);
+}
 
-  // Prune any expanded nodes at or beyond `targetTier` so stepping down cleanly folds outer rings
-  function pruneDeep(n) {
-    if ((n.tier || 0) >= targetTier && n.id !== 'root') {
-      studioState.expandedIds.delete(n.id);
+function expandSubtreeToTier(node, targetTier) {
+  if (!node || !Array.isArray(node.children) || node.children.length === 0) return;
+  if ((node.tier || 0) + 1 > targetTier) return;
+  studioState.expandedIds.add(node.id);
+  node.children.forEach((ch) => expandSubtreeToTier(ch, targetTier));
+}
+
+function findContainingSubTopic(root, targetNodeId) {
+  for (const kt of root?.children || []) {
+    for (const st of kt.children || []) {
+      if (st.id === targetNodeId || findNodeById(st, targetNodeId)) {
+        return { kt, st };
+      }
     }
-    (n.children || []).forEach(pruneDeep);
   }
-  pruneDeep(root);
+  return null;
+}
 
-  const trunks = root.children || [];
-  const openTrunks = trunks.filter((kt) => studioState.expandedIds.has(kt.id));
-  const targetTrunks = openTrunks.length > 0 ? openTrunks : trunks;
+function seedInitialFocusState(root, focusLessonIdx = null) {
+  studioState.expandedIds = new Set(['root']);
+  studioState.showCardDetail = false;
+  studioState.expandedCardIds.clear();
+  const kts = root?.children || [];
+  kts.forEach((kt) => studioState.expandedIds.add(kt.id));
+  studioState.focusedNodeId = 'root';
 
-  studioState.expandedIds.add('root');
-  function expandBranchToCap(n) {
-    if (!Array.isArray(n.children) || n.children.length === 0) return;
-    if ((n.tier || 0) + 1 > targetTier) return;
-    studioState.expandedIds.add(n.id);
-    n.children.forEach(expandBranchToCap);
+  // When launched directly from a specific lesson's Launchpad `Mind Map` pill,
+  // auto-unfold that exact lesson's Sub-Topic branch by 1 ring so its milestones pop right out!
+  if (typeof focusLessonIdx === 'number' && focusLessonIdx >= 0) {
+    let matchedSt = null;
+    for (const kt of kts) {
+      for (const st of kt.children || []) {
+        const directMatch = st.lessonIndex === focusLessonIdx;
+        const childMatch = (st.children || []).some((ev) => ev.lessonIndex === focusLessonIdx);
+        if (directMatch || childMatch) {
+          studioState.expandedIds.add(kt.id);
+          studioState.expandedIds.add(st.id);
+          if (!matchedSt) matchedSt = st;
+        }
+      }
+    }
+    if (matchedSt) {
+      studioState.focusedNodeId = matchedSt.id;
+    }
   }
-  targetTrunks.forEach(expandBranchToCap);
 }
 
 /**
- * Refinement 7: Live Search across `label`, `dateChip`, `gloss`, `searchTerm`, and `tag`.
- * Auto-unfolds ancestors and raises `maxTier` if needed so matches appear immediately.
+ * Live Search across `label`, `dateChip`, `gloss`, `searchTerm`, and `tag`.
+ * Auto-unfolds ancestors so matches appear immediately.
  */
 function computeAndApplySearchMatches(root, rawQuery) {
   studioState.searchMatchIds.clear();
@@ -1068,7 +1272,6 @@ function computeAndApplySearchMatches(root, rawQuery) {
 
   let firstLabelHit = null;
   let firstAnyHit = null;
-  let deepestHitTier = 0;
 
   function walk(node, ancestors) {
     if (node.id !== 'root') {
@@ -1077,7 +1280,6 @@ function computeAndApplySearchMatches(root, rawQuery) {
       if (hayFull.includes(q)) {
         studioState.searchMatchIds.add(node.id);
         ancestors.forEach((ancId) => studioState.expandedIds.add(ancId));
-        if ((node.tier || 0) > deepestHitTier) deepestHitTier = node.tier || 0;
         if (!firstAnyHit) firstAnyHit = node.id;
         if (!firstLabelHit && hayLabel.includes(q)) firstLabelHit = node.id;
       }
@@ -1087,16 +1289,10 @@ function computeAndApplySearchMatches(root, rawQuery) {
   }
 
   walk(root, []);
-
-  if (deepestHitTier >= 4 && studioState.gradeBand === 'g45') {
-    studioState.gradeBand = 'g89';
-  }
-  syncTierFromGradeBand(studioState.data, studioState.gradeBand);
-
   return firstLabelHit || firstAnyHit;
 }
 
-function rerenderStudio({ autoFit = false, focusNodeId = null, focusMinZoom = null } = {}) {
+function rerenderStudio({ autoFit = false, pinNode = null, focusNodeId = null, focusMinZoom = null } = {}) {
   const mountEl = studioState.mountEl;
   const data = studioState.data;
   if (!mountEl || !data?.root) return;
@@ -1110,8 +1306,8 @@ function rerenderStudio({ autoFit = false, focusNodeId = null, focusMinZoom = nu
     };
   }
 
-  syncTierFromGradeBand(data, studioState.gradeBand);
   const fourRing = isFourRingCardMap(data);
+  const ringInfo = computeRingStepperInfo(data.root, fourRing);
 
   const layout =
     studioState.displayMode === 'map' ? computeBidirectionalLayout(data.root) : null;
@@ -1125,80 +1321,59 @@ function rerenderStudio({ autoFit = false, focusNodeId = null, focusMinZoom = nu
 
   const paperLegend = getPaperLegendMeta(data);
 
-  const depthLabel =
-    studioState.gradeBand === 'g45'
-      ? '🎯 Grades 4–5 (Official Edexcel Spec Stems)'
-      : studioState.gradeBand === 'g67'
-        ? '🔥 Grades 6–7 (Compact Exam Headlines)'
-        : fourRing
-          ? '★ Grades 8–9 (Fleshed-Out GCSE Detail & "So What?" Cards)'
-          : '★ Grades 8–9 (Full Detail Mode)';
+  const ringDesc =
+    ringInfo.currentLevel === 1
+      ? paperLegend.isGcse
+        ? 'Key Topics'
+        : 'Parts / Themes'
+      : ringInfo.currentLevel === 2
+        ? paperLegend.isGcse
+          ? 'Sub-Topics'
+          : 'Enquiry Lessons'
+        : ringInfo.currentLevel === 3
+          ? paperLegend.isGcse
+            ? 'Official Spec Events'
+            : 'Key Milestones'
+          : ringInfo.currentLevel === 4
+            ? paperLegend.isGcse
+              ? 'Causes, Consequences & Importance'
+              : 'Causes, Consequences & Significance'
+            : fourRing
+              ? 'Full Detail Cards'
+              : '+ Supporting Fact Twigs';
+  const depthLabel = `Ring ${ringInfo.currentLevel} of ${ringInfo.totalLevels} · ${ringDesc}`;
 
   const lessonStageLabel =
     focusedCtx.node.id !== 'root'
       ? formatLessonStageRef(studioState.unitId, focusedCtx.lessonIndex, focusedCtx.stageIndex)
       : '';
 
-  const focusedRole =
-    focusedCtx.node.tier === 4
-      ? resolveNodeRoleMeta(focusedCtx.node.tag, focusedCtx.node.forTheme)
-      : null;
-
-  const focusedGradePill =
-    focusedCtx.node.tier === 2
-      ? `<span class="tmm-whisper-grade g-st">${paperLegend.r2Badge}</span>`
-      : focusedCtx.node.tier === 3
-        ? '<span class="tmm-whisper-grade g45">🎯 Grades 4–5 Spec Stem</span>'
-        : focusedCtx.node.tier === 4
-          ? `<span class="tmm-whisper-grade g68">${studioState.showCardDetail ? '★ Grades 8–9' : '🔥 Grades 6–7'}${focusedRole ? ` · ${escapeHtml(focusedRole.label)}` : ''}</span>`
-          : focusedCtx.node.tier === 5
-            ? '<span class="tmm-whisper-grade g9">★ Grade 9 Edge</span>'
-            : '';
-
   const focusedIsBlurred = isNodeBlurredInRecall(focusedCtx.node);
-  const cardDetailAlreadyShownOnCanvas =
-    studioState.showCardDetail &&
-    focusedCtx.node.tier === 4 &&
-    Boolean(focusedCtx.node.detail) &&
-    (!focusedCtx.node.examTip || focusedCtx.node.examTip === focusedCtx.node.detail);
 
-  const rawWhisperBody = String(focusedCtx.node.examTip || focusedCtx.node.gloss || '').trim();
-  const cleanedWhisperBody =
-    focusedCtx.node.tier === 2
-      ? rawWhisperBody.replace(
-          /^(?:Q2 Narrative Chain|Era Pattern|Enquiry Lens|Key Overview|16m Essay Lens|Q3d Core Debate)\s*:\s*/i,
-          '',
-        )
-      : rawWhisperBody;
-
+  // Compact Action Chip ONLY (Zero duplicate prose box — fixes Sweller Split-Attention!)
   const whisperHtml =
     !studioState.whisperDismissed &&
-    (cleanedWhisperBody || lessonStageLabel) &&
-    !(focusedCtx.node.id === 'root' && studioState.expandedIds.size > 1)
+    focusedCtx.node.id !== 'root' &&
+    (lessonStageLabel || studioState.onOpenQuestionDrawer || focusedIsBlurred)
       ? `
-        <div class="tmm-whisper-pill">
-          <div style="flex:1 1 auto;min-width:0;">
-            ${focusedGradePill}
-            ${
-              focusedIsBlurred
-                ? `<span>🙈 <strong>Active Recall:</strong> Say the ${focusedRole ? escapeHtml(focusedRole.label.toLowerCase()) : 'fact'} aloud first, then tap that card to reveal &amp; check!</span>`
-                : cardDetailAlreadyShownOnCanvas
-                  ? `<strong style="color:#93c5fd;">${escapeHtml(focusedCtx.node.label)}</strong> <span style="color:#cbd5e1;">&mdash; Jump to lesson audio or practise an exam question on this point:</span>`
-                  : `<strong style="color:#93c5fd;">${escapeHtml(focusedCtx.node.label)}:</strong><span> ${escapeHtml(cleanedWhisperBody)}</span>`
-            }
-          </div>
+        <div class="tmm-whisper-pill" style="max-width:fit-content;padding:6px 11px;gap:10px;">
+          ${
+            focusedIsBlurred
+              ? `<span style="font-size:0.78rem;">🙈 <strong>Recall Check:</strong> Say this point aloud, then tap the blurred branch to reveal!</span>`
+              : `<span style="font-size:0.78rem;font-weight:800;color:#93c5fd;white-space:nowrap;">📍 ${escapeHtml(focusedCtx.node.label)}${focusedCtx.node.dateChip ? ` (${escapeHtml(focusedCtx.node.dateChip)})` : ''}</span>`
+          }
           <div style="display:flex;align-items:center;gap:6px;flex-shrink:0;">
             ${
               lessonStageLabel
-                ? `<button type="button" class="tmm-whisper-readbtn" data-tmm-action="open-focused-lesson" title="Read & listen to ${escapeHtml(lessonStageLabel)}">📖 ${escapeHtml(lessonStageLabel)}</button>`
+                ? `<button type="button" class="tmm-whisper-readbtn" data-tmm-action="open-focused-lesson" title="Open ${escapeHtml(lessonStageLabel)}">📖 ${escapeHtml(lessonStageLabel)}</button>`
                 : ''
             }
             ${
-              focusedCtx.node.id !== 'root' && studioState.onOpenQuestionDrawer
+              studioState.onOpenQuestionDrawer
                 ? `<button type="button" class="tmm-whisper-qbtn" data-tmm-action="practise-focused">⚡ Exam Q</button>`
                 : ''
             }
-            <button type="button" data-tmm-action="dismiss-whisper" title="Hide helper bar" style="background:transparent;border:none;color:#94a3b8;cursor:pointer;font-size:0.85rem;padding:2px 4px;"><i class="fa-solid fa-xmark"></i></button>
+            <button type="button" data-tmm-action="dismiss-whisper" title="Close" style="background:transparent;border:none;color:#94a3b8;cursor:pointer;font-size:0.85rem;padding:2px 4px;"><i class="fa-solid fa-xmark"></i></button>
           </div>
         </div>
       `
@@ -1223,15 +1398,13 @@ function rerenderStudio({ autoFit = false, focusNodeId = null, focusMinZoom = nu
             </button>
           </div>
 
-          <div class="tmm-seg-group" role="group" aria-label="Grade Ladder (Tap to Auto-Expand)">
-            <button type="button" class="tmm-seg-btn tier-core ${studioState.gradeBand === 'g45' ? 'is-active' : ''}" data-tmm-action="set-grade-band" data-band="g45" data-tier="3" title="Auto-expands Rings 1–3: 100% Verbatim Edexcel Specification Stems (Grades 4–5)">
-              🎯 Grades 4–5
+          <div class="tmm-seg-group" role="group" aria-label="Expand or Collapse One Ring at a Time">
+            <button type="button" class="tmm-seg-btn ring-step-btn" data-tmm-action="step-ring-down" ${!ringInfo.canStepDown ? 'disabled' : ''} title="Shrink map inward by 1 ring">
+              − Ring
             </button>
-            <button type="button" class="tmm-seg-btn tier-std ${studioState.gradeBand === 'g67' ? 'is-active' : ''}" data-tmm-action="set-grade-band" data-band="g67" data-tier="4" title="Auto-expands Ring 4 as crisp 1-line Cause, Consequence & Importance headlines (Grades 6–7)">
-              🔥 Grades 6–7
-            </button>
-            <button type="button" class="tmm-seg-btn tier-g9 ${studioState.gradeBand === 'g89' ? 'is-active' : ''}" data-tmm-action="set-grade-band" data-band="g89" data-tier="5" title="Fleshes out each Ring-4 branch in-place with GCSE supporting detail & 'So what?' explanation (Grades 8–9)">
-              ★ Grades 8–9
+            <span class="tmm-ring-stepper-status">Ring ${ringInfo.currentLevel} / ${ringInfo.totalLevels}</span>
+            <button type="button" class="tmm-seg-btn ring-step-btn" data-tmm-action="step-ring-up" ${!ringInfo.canStepUp ? 'disabled' : ''} title="Expand map outward by 1 ring">
+              + Ring
             </button>
           </div>
 
@@ -1268,7 +1441,7 @@ function rerenderStudio({ autoFit = false, focusNodeId = null, focusMinZoom = nu
             }
           </div>
 
-          <button type="button" class="tmm-action-pill ${studioState.blurRecall ? 'is-toggled-on' : ''}" data-tmm-action="toggle-blur-recall" title="Blur Ring 4 & 5 answers while keeping [Conseq] & [Importance] tags sharp — tap any pill to test & reveal!">
+          <button type="button" class="tmm-action-pill ${studioState.blurRecall ? 'is-toggled-on' : ''}" data-tmm-action="toggle-blur-recall" title="Blur outer branches while keeping role tags sharp — tap any pill to test & reveal!">
             <span>${studioState.blurRecall ? '🙈 Blur ON' : '🙈 Blur Recall'}</span>
           </button>
           ${
@@ -1277,9 +1450,7 @@ function rerenderStudio({ autoFit = false, focusNodeId = null, focusMinZoom = nu
               : ''
           }
 
-          <button type="button" class="tmm-action-pill" data-tmm-action="expand-ring" title="Unfold the next ring outward">+1 Ring</button>
-          <button type="button" class="tmm-action-pill" data-tmm-action="expand-all-visible" title="Unfold every Key Topic out to the active Grade Ring">Unfold All</button>
-          <button type="button" class="tmm-action-pill" data-tmm-action="reset-map" title="Collapse back to the central Key Topic trunks">Reset</button>
+          <button type="button" class="tmm-action-pill" data-tmm-action="reset-map" title="Reset to Sub-Topic overview (Ring 2)">Reset</button>
 
           <button type="button" class="tmm-action-pill print-cta" data-tmm-action="open-print-modal" title="Print visual A4 / A3 Landscape Mind Map (Completed Poster or Blank Write-On Blurt Branches)">
             <i class="fa-solid fa-print"></i><span>Print Map</span>
@@ -1299,7 +1470,7 @@ function rerenderStudio({ autoFit = false, focusNodeId = null, focusMinZoom = nu
             <div class="tmm-viewport" id="tmm-viewport">
               <div class="tmm-ring-legend">
                 <span>${escapeHtml(depthLabel)}</span>
-                ${studioState.maxTier >= 4 ? paperLegend.pillsHtml : ''}
+                ${ringInfo.currentLevel >= 4 ? paperLegend.pillsHtml : ''}
               </div>
 
               <div class="tmm-world" id="tmm-world">
@@ -1348,6 +1519,43 @@ function rerenderStudio({ autoFit = false, focusNodeId = null, focusMinZoom = nu
   if (studioState.displayMode === 'map' && layout) {
     if (!studioState.cameraInitialized || autoFit) {
       requestAnimationFrame(() => fitCameraToBounds(layout.bounds, autoFit));
+    } else if (pinNode) {
+      // Pin tapped node at its exact screen pixel (0% zoom change, 0px vertical jump!),
+      // nudging ONLY if newly revealed children would otherwise spawn off the edge of the canvas.
+      const newCoord = layout.nodes.find((n) => n.id === pinNode.id);
+      if (newCoord) {
+        studioState.panX = pinNode.screenX - newCoord.x * studioState.zoom;
+        studioState.panY = pinNode.screenY - newCoord.y * studioState.zoom;
+
+        if (pinNode.revealedChildIds && pinNode.revealedChildIds.length > 0) {
+          const vp = mountEl.querySelector('#tmm-viewport');
+          const vw = vp?.clientWidth || 960;
+          const vh = vp?.clientHeight || 620;
+          const childCoords = layout.nodes.filter((n) => pinNode.revealedChildIds.includes(n.id));
+          if (childCoords.length > 0) {
+            const halfW = 148 * studioState.zoom;
+            const halfH = 22 * studioState.zoom;
+            const minSX = Math.min(...childCoords.map((c) => studioState.panX + c.x * studioState.zoom - halfW));
+            const maxSX = Math.max(...childCoords.map((c) => studioState.panX + c.x * studioState.zoom + halfW));
+            const minSY = Math.min(...childCoords.map((c) => studioState.panY + c.y * studioState.zoom - halfH));
+            const maxSY = Math.max(...childCoords.map((c) => studioState.panY + c.y * studioState.zoom + halfH));
+
+            if (minSX < 22) {
+              studioState.panX += 22 - minSX;
+            } else if (maxSX > vw - 22) {
+              studioState.panX -= maxSX - (vw - 22);
+            }
+            if (maxSY - minSY < vh - 96) {
+              if (minSY < 48) {
+                studioState.panY += 48 - minSY;
+              } else if (maxSY > vh - 56) {
+                studioState.panY -= maxSY - (vh - 56);
+              }
+            }
+          }
+        }
+      }
+      applyWorldTransform(false);
     } else if (focusNodeId) {
       applyWorldTransform(false);
       const hitCoord = layout.nodes.find((n) => n.id === focusNodeId);
@@ -1422,14 +1630,15 @@ function bindStudioInteractions(layout) {
           return;
         }
 
-        if (action === 'set-grade-band' || action === 'set-tier') {
-          const bandAttr = actBtn.getAttribute('data-band');
-          const tierAttr = parseInt(actBtn.getAttribute('data-tier'), 10);
-          studioState.gradeBand =
-            bandAttr || (tierAttr <= 3 ? 'g45' : tierAttr === 4 ? 'g67' : 'g89');
-          syncTierFromGradeBand(studioState.data, studioState.gradeBand);
-          applyTierSelectionAndAutoExpand(studioState.data.root, studioState.maxTier);
-          rerenderStudio({ autoFit: true });
+        if (action === 'step-ring-up') {
+          const changed = stepRingUp(studioState.data.root, isFourRingCardMap(studioState.data));
+          if (changed) rerenderStudio({ autoFit: true });
+          return;
+        }
+
+        if (action === 'step-ring-down') {
+          const changed = stepRingDown(studioState.data.root, isFourRingCardMap(studioState.data));
+          if (changed) rerenderStudio({ autoFit: true });
           return;
         }
 
@@ -1445,17 +1654,26 @@ function bindStudioInteractions(layout) {
           studioState.blurRecall = !studioState.blurRecall;
           studioState.revealedNodeIds.clear();
           if (studioState.blurRecall) {
-            if (studioState.gradeBand === 'g45') studioState.gradeBand = 'g89';
-            syncTierFromGradeBand(studioState.data, studioState.gradeBand);
-            if (studioState.expandedIds.size <= 1) {
-              const firstKt = studioState.data?.root?.children?.[0];
-              if (firstKt) {
-                studioState.expandedIds.add(firstKt.id);
-                applyTierSelectionAndAutoExpand(studioState.data.root, studioState.maxTier);
+            const info = computeRingStepperInfo(
+              studioState.data.root,
+              isFourRingCardMap(studioState.data),
+            );
+            // Ensure at least Ring 4 is visible if user toggles Blur Recall from Ring 1–3
+            if (info.currentLevel < 4) {
+              while (
+                computeRingStepperInfo(
+                  studioState.data.root,
+                  isFourRingCardMap(studioState.data),
+                ).currentLevel < 4 &&
+                stepRingUp(studioState.data.root, isFourRingCardMap(studioState.data))
+              ) {
+                // stepped up one ring
               }
+              rerenderStudio({ autoFit: true });
+              return;
             }
           }
-          rerenderStudio({ autoFit: studioState.blurRecall });
+          rerenderStudio({});
           return;
         }
 
@@ -1472,7 +1690,7 @@ function bindStudioInteractions(layout) {
         if (action === 'clear-search') {
           studioState.searchQuery = '';
           studioState.searchMatchIds.clear();
-          rerenderStudio({ autoFit: true });
+          rerenderStudio({});
           return;
         }
 
@@ -1488,14 +1706,14 @@ function bindStudioInteractions(layout) {
         }
 
         if (action === 'expand-all-visible') {
-          expandAllWithinCap(studioState.data.root, studioState.maxTier);
+          expandAllWithinCap(studioState.data.root, 5);
+          if (isFourRingCardMap(studioState.data)) studioState.showCardDetail = true;
           rerenderStudio({ autoFit: true });
           return;
         }
 
         if (action === 'reset-map') {
-          studioState.expandedIds = new Set(['root']);
-          studioState.focusedNodeId = 'root';
+          seedInitialFocusState(studioState.data.root);
           studioState.searchQuery = '';
           studioState.searchMatchIds.clear();
           rerenderStudio({ autoFit: true });
@@ -1587,27 +1805,48 @@ function bindStudioInteractions(layout) {
         studioState.focusedNodeId = nodeId;
         studioState.whisperDismissed = false;
 
+        // Pin clicked node at its exact screen pixel so expanding/collapsing NEVER jumps!
+        const oldCoord = layout?.nodes?.find((n) => n.id === nodeId);
+        const pinNode = oldCoord
+          ? {
+              id: nodeId,
+              screenX: studioState.panX + oldCoord.x * studioState.zoom,
+              screenY: studioState.panY + oldCoord.y * studioState.zoom,
+            }
+          : null;
+
         if (hitCtx && isNodeBlurredInRecall(hitCtx.node)) {
           studioState.revealedNodeIds.add(nodeId);
-          if (
-            Array.isArray(hitCtx.node.children) &&
-            hitCtx.node.children.length > 0 &&
-            (hitCtx.node.tier || 0) + 1 <= studioState.maxTier
-          ) {
-            studioState.expandedIds.add(nodeId);
-          }
-          rerenderStudio({ focusNodeId: nodeId });
+          rerenderStudio({ pinNode });
           return;
         }
 
-        if (nodeId !== 'root') {
-          if (studioState.expandedIds.has(nodeId)) {
-            studioState.expandedIds.delete(nodeId);
-          } else {
+        if (nodeId !== 'root' && hitCtx) {
+          const clickedNode = hitCtx.node;
+          const fourRing = isFourRingCardMap(studioState.data);
+
+          if (
+            fourRing &&
+            clickedNode.tier === 4 &&
+            (!Array.isArray(clickedNode.children) || clickedNode.children.length === 0) &&
+            clickedNode.detail
+          ) {
+            if (studioState.expandedCardIds.has(nodeId)) {
+              studioState.expandedCardIds.delete(nodeId);
+            } else {
+              studioState.expandedCardIds.add(nodeId);
+            }
+          } else if (studioState.expandedIds.has(nodeId)) {
+            pruneSubtreeExpanded(clickedNode);
+          } else if (Array.isArray(clickedNode.children) && clickedNode.children.length > 0) {
+            // Strictly 1 ring deeper on THIS branch only — never explode sub-rings or collapse siblings!
             studioState.expandedIds.add(nodeId);
+            if (pinNode) {
+              pinNode.revealedChildIds = clickedNode.children.map((c) => c.id);
+            }
           }
         }
-        rerenderStudio({ focusNodeId: nodeId });
+        rerenderStudio({ pinNode });
         return;
       }
 
@@ -1905,10 +2144,10 @@ function renderSingleVectorSvg(
       : { 1: 290, 2: 620, 3: 985, 4: 1375, 5: 1725 };
 
   const slotTable = isBlurt
-    ? { 1: 58, 2: 48, 3: 42, 4: 49, 5: 40 }
+    ? { 1: 58, 2: 48, 3: 42, 4: 49, 5: 32 }
     : useFleshedCards
       ? { 1: 58, 2: 48, 3: 42, 4: 55, 5: 36 }
-      : { 1: 56, 2: 46, 3: 40, 4: 36, 5: 33 };
+      : { 1: 52, 2: 44, 3: 38, 4: 34, 5: 25 };
 
   const layout = computeBidirectionalLayout(sheetRoot, {
     maxTier,
@@ -2029,10 +2268,10 @@ function renderSingleVectorSvg(
         textCol = roleMeta.svgText;
         sw = 1.45;
       } else if (n.tier === 5) {
-        fill = '#fffbeb';
-        stroke = '#f59e0b';
-        textCol = '#78350f';
-        sw = 1.4;
+        fill = '#ffffff';
+        stroke = '#cbd5e1';
+        textCol = '#334155';
+        sw = 1.1;
       }
 
       if (isFleshedSvgCard) {
@@ -2063,10 +2302,10 @@ function renderSingleVectorSvg(
         `;
       }
 
-      const fSize = n.tier === 1 ? 12.2 : n.tier === 2 ? 11.4 : n.tier === 3 ? 10.7 : 10.1;
+      const fSize = n.tier === 1 ? 12.2 : n.tier === 2 ? 11.4 : n.tier === 3 ? 10.7 : n.tier === 5 ? 9.3 : 10.1;
       const dispText =
         n.tier === 5
-          ? `★ ${n.label}`
+          ? `• ${n.label}`
           : `${n.label}${n.dateChip && n.tier <= 3 ? ` (${n.dateChip})` : ''}`;
 
       if (n.tier === 4 && roleMeta) {
@@ -2170,10 +2409,12 @@ export function buildPrintableMindMapDocumentHTML(
   const sheetH = isA3 ? '279mm' : '194mm';
   const tierSummary =
     rawMaxTier <= 3
-      ? 'Grades 4–5 (Official Spec Stems)'
+      ? 'Ring 3 (Official Spec Events)'
       : rawMaxTier === 4
-        ? 'Grades 6–7 (Compact Exam Headlines)'
-        : '★ Grades 8–9 (Fleshed-Out GCSE Detail & "So What?" Cards)';
+        ? 'Ring 4 (Causes, Consequences & Importance)'
+        : fourRing
+          ? 'Ring 5 (Full Detail Cards)'
+          : 'Ring 5 (Full Map + Supporting Fact Twigs)';
 
   const sheetsHtml = sheets
     .map(
@@ -2314,12 +2555,13 @@ export async function openMindMapPrintModal(rawUnitId = null, fallbackSpecTree =
   if (typeof document === 'undefined') return;
   document.getElementById('tmm-print-modal-backdrop')?.remove();
 
-  const unitId = resolveGcseExamUnitId(rawUnitId || studioState.unitId || 'cme_new');
+  const unitId = resolveMindMapUnitId(rawUnitId || studioState.unitId || 'cme_new');
   const data =
     studioState.data && studioState.unitId === unitId
       ? studioState.data
       : await loadMindMapSingleSource(unitId, fallbackSpecTree || studioState.fallbackSpecTree);
 
+  const fourRing = isFourRingCardMap(data);
   const ktCount = (data?.root?.children || []).length || 3;
   const paperLegend = getPaperLegendMeta(data);
 
@@ -2336,19 +2578,25 @@ export async function openMindMapPrintModal(rawUnitId = null, fallbackSpecTree =
   backdrop.id = 'tmm-print-modal-backdrop';
   document.body.appendChild(backdrop);
 
+  const stemWord = paperLegend.isGcse ? 'Spec Events' : 'Key Milestones';
+  const ktWord = paperLegend.isGcse ? 'Key Topic' : 'Part';
+
   const renderModal = () => {
     const sheetCount = opts.pageScope === 'per-kt' ? ktCount : 1;
+    const g89Short = fourRing
+      ? 'Ring 5 Full Detail Cards'
+      : 'Ring 5 (+ Supporting Fact Twigs)';
     const recommendation =
       opts.styleMode === 'blurt'
-        ? `✏️ Prints ${sheetCount} ${opts.paperSize} Landscape write-on Mind-Map ${sheetCount === 1 ? 'sheet' : 'sheets'} with official Edexcel Spec Stems on Ring 3 and roomy 2-line ${paperLegend.modalTagSummary} boxes on Ring 4 for pupils to write both the point and supporting detail.`
-        : `📖 Prints ${sheetCount} crisp vector ${opts.paperSize} Landscape Mind-Map ${sheetCount === 1 ? 'poster' : 'posters'} (${opts.maxTier === 3 ? 'Grades 4–5 Spec Stems' : opts.maxTier === 4 ? 'Grades 6–7 Compact Headlines' : '★ Grades 8–9 Fleshed-Out GCSE Cards'}) with zero page spillover.`;
+        ? `✏️ Prints ${sheetCount} ${opts.paperSize} Landscape write-on Mind-Map ${sheetCount === 1 ? 'sheet' : 'sheets'} with ${stemWord} on Ring 3 and roomy 2-line ${paperLegend.modalTagSummary} boxes on Ring 4 for pupils to write both the point and supporting detail.`
+        : `📖 Prints ${sheetCount} crisp vector ${opts.paperSize} Landscape Mind-Map ${sheetCount === 1 ? 'poster' : 'posters'} (${opts.maxTier === 3 ? `Ring 3 ${stemWord}` : opts.maxTier === 4 ? `Ring 4 ${paperLegend.modalTagSummary}` : g89Short}) with zero page spillover.`;
 
     backdrop.innerHTML = `
       <div class="tmm-print-modal" role="dialog" aria-modal="true" aria-label="Print Visual Mind Map">
         <div class="tmm-print-head">
           <div>
             <div style="font-size:0.68rem;font-weight:800;text-transform:uppercase;letter-spacing:0.06em;color:#93c5fd;">Vector Classroom Reprographics</div>
-            <div style="font-size:1rem;font-weight:900;">🖨️ Print Visual Specification Mind Map</div>
+            <div style="font-size:1rem;font-weight:900;">🖨️ Print Visual Revision Mind Map</div>
           </div>
           <button type="button" data-print-close style="background:transparent;border:none;color:#fff;font-size:1.1rem;cursor:pointer;"><i class="fa-solid fa-xmark"></i></button>
         </div>
@@ -2359,11 +2607,11 @@ export async function openMindMapPrintModal(rawUnitId = null, fallbackSpecTree =
             <div class="tmm-print-grid">
               <button type="button" class="tmm-print-choice ${opts.styleMode === 'completed' ? 'is-picked' : ''}" data-opt-key="styleMode" data-opt-val="completed">
                 <strong>📖 Completed Revision Map</strong>
-                <span>Full specification stems, ${escapeHtml(paperLegend.modalTagSummary)} &amp; GCSE detail printed</span>
+                <span>Full ${escapeHtml(stemWord.toLowerCase())}, ${escapeHtml(paperLegend.modalTagSummary)} &amp; supporting facts printed</span>
               </button>
               <button type="button" class="tmm-print-choice ${opts.styleMode === 'blurt' ? 'is-picked' : ''}" data-opt-key="styleMode" data-opt-val="blurt">
                 <strong>✏️ Blank Write-On Blurt Map</strong>
-                <span>Prints Spec Stems + empty ${escapeHtml(paperLegend.modalTagSummary)} boxes to fill by hand</span>
+                <span>Prints ${escapeHtml(stemWord)} + empty ${escapeHtml(paperLegend.modalTagSummary)} boxes to fill by hand</span>
               </button>
             </div>
           </div>
@@ -2373,21 +2621,21 @@ export async function openMindMapPrintModal(rawUnitId = null, fallbackSpecTree =
             <div class="tmm-print-grid">
               <button type="button" class="tmm-print-choice ${opts.paperSize === 'A3' ? 'is-picked' : ''}" data-opt-key="paperSize" data-opt-val="A3">
                 <strong>A3 Landscape (420 × 297 mm)</strong>
-                <span>Best for Grades 6–7 Headlines, ★ Grades 8–9 Cards &amp; Write-On Blurt boxes</span>
+                <span>Best for Ring 4–5 full detail &amp; Write-On Blurt boxes</span>
               </button>
               <button type="button" class="tmm-print-choice ${opts.paperSize === 'A4' ? 'is-picked' : ''}" data-opt-key="paperSize" data-opt-val="A4">
                 <strong>A4 Landscape (297 × 210 mm)</strong>
-                <span>Best for Grades 4–5 Spec Stems or 1 Key Topic per sheet</span>
+                <span>Best for Ring 3 ${escapeHtml(stemWord)} or 1 ${escapeHtml(ktWord)} per sheet</span>
               </button>
             </div>
             <div class="tmm-print-grid" style="margin-top:8px;">
               <button type="button" class="tmm-print-choice ${opts.pageScope === 'per-kt' ? 'is-picked' : ''}" data-opt-key="pageScope" data-opt-val="per-kt">
-                <strong>1 Key Topic per Page (${ktCount} Sheets)</strong>
-                <span>Recommended — maximum font legibility across every Sub-Topic</span>
+                <strong>1 ${escapeHtml(ktWord)} per Page (${ktCount} Sheets)</strong>
+                <span>Recommended — maximum font legibility across every branch</span>
               </button>
               <button type="button" class="tmm-print-choice ${opts.pageScope === 'whole-course' ? 'is-picked' : ''}" data-opt-key="pageScope" data-opt-val="whole-course">
-                <strong>Whole Course on 1 Sheet</strong>
-                <span>Master overview poster of all ${ktCount} Key Topics together</span>
+                <strong>Whole Unit on 1 Sheet</strong>
+                <span>Master overview poster of all ${ktCount} ${escapeHtml(ktWord)}s together</span>
               </button>
               <button type="button" class="tmm-print-choice ${opts.pageScope === 'current-view' ? 'is-picked' : ''}" data-opt-key="pageScope" data-opt-val="current-view">
                 <strong>Current Open View (1 Sheet)</strong>
@@ -2397,19 +2645,19 @@ export async function openMindMapPrintModal(rawUnitId = null, fallbackSpecTree =
           </div>
 
           <div>
-            <div class="tmm-print-field-lbl">3. Grade Detail Level &amp; Branch Flow</div>
+            <div class="tmm-print-field-lbl">3. Ring Depth &amp; Branch Flow</div>
             <div class="tmm-print-grid">
               <button type="button" class="tmm-print-choice ${opts.maxTier === 3 ? 'is-picked' : ''}" data-opt-key="maxTier" data-opt-val="3">
-                <strong>🎯 Grades 4–5 (Spec Stems)</strong>
-                <span>All official Edexcel Spec Stems</span>
+                <strong>Ring 3 (${escapeHtml(stemWord)})</strong>
+                <span>Core milestones &amp; turning points</span>
               </button>
               <button type="button" class="tmm-print-choice ${opts.maxTier === 4 ? 'is-picked' : ''}" data-opt-key="maxTier" data-opt-val="4">
-                <strong>🔥 Grades 6–7 (Headlines)</strong>
-                <span>Compact 1-line ${escapeHtml(paperLegend.modalTagSummary)}</span>
+                <strong>Ring 4 (Claims)</strong>
+                <span>1-line ${escapeHtml(paperLegend.modalTagSummary)}</span>
               </button>
               <button type="button" class="tmm-print-choice ${opts.maxTier === 5 ? 'is-picked' : ''}" data-opt-key="maxTier" data-opt-val="5">
-                <strong>★ Grades 8–9 (Fleshed-Out Cards)</strong>
-                <span>Headlines + GCSE detail &amp; "So what?" line</span>
+                <strong>${fourRing ? 'Ring 5 (Full Cards)' : 'Ring 5 (+ Fact Twigs)'}</strong>
+                <span>${fourRing ? 'Headlines + full detail lines' : 'Claims + 2 supporting-fact mini-twigs each'}</span>
               </button>
             </div>
             <div class="tmm-print-grid" style="margin-top:8px;">
@@ -2487,11 +2735,20 @@ if (typeof window !== 'undefined') {
 export async function mountTrueMindMapStudio(
   mountEl,
   rawUnitId,
-  { fallbackSpecTree = null, onOpenQuestionDrawer = null, startFullscreen = false } = {},
+  { fallbackSpecTree = null, onOpenQuestionDrawer = null, startFullscreen = false, focusLessonIndex = null } = {},
 ) {
   if (!mountEl) return;
-  const unitId = resolveGcseExamUnitId(rawUnitId);
+  const unitId = resolveMindMapUnitId(rawUnitId);
   const switchedUnit = studioState.unitId !== unitId;
+  const pendingLessonFocus =
+    typeof focusLessonIndex === 'number'
+      ? focusLessonIndex
+      : typeof window !== 'undefined' && typeof window._tmmFocusLessonIdx === 'number'
+        ? window._tmmFocusLessonIdx
+        : null;
+  if (typeof window !== 'undefined') {
+    window._tmmFocusLessonIdx = null;
+  }
 
   studioState.unitId = unitId;
   studioState.mountEl = mountEl;
@@ -2523,6 +2780,11 @@ export async function mountTrueMindMapStudio(
   `;
 
   studioState.data = await loadMindMapSingleSource(unitId, fallbackSpecTree);
+  if (switchedUnit || studioState.expandedIds.size <= 1 || typeof pendingLessonFocus === 'number') {
+    seedInitialFocusState(studioState.data.root, pendingLessonFocus);
+    studioState.cameraInitialized = false;
+    studioState.whisperDismissed = false;
+  }
   rerenderStudio({ autoFit: !studioState.cameraInitialized });
 
   if (typeof window !== 'undefined' && !window.__tmmEscListenerBound) {

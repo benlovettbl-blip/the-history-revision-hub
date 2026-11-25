@@ -1,0 +1,1665 @@
+{
+  "unitId": "second_british_empire",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "The Second British Empire, 1783–1914",
+  "examDateBoundary": "1783–1914",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Second British Empire",
+    "subLabel": "KS3 History",
+    "dateChip": "1783–1914",
+    "gloss": "How naval hegemony, Indian de-industrialisation, the 1857 Rebellion, Scramble for Africa, and Drain of Wealth shaped empire.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Maritime & Naval Power",
+        "dateChip": "1783–1889",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Portsmouth",
+        "gloss": "Mercantilist Navigation Acts, Trafalgar, Portsmouth Dockyard mass production, HMS Warrior, and the 1889 Two-Power Standard.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Naval Power & Portsmouth",
+            "dateChip": "1783–1889",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "HMS Warrior",
+            "q2Chain": "Mercantilism & 1805 Trafalgar → Portsmouth & 1860 HMS Warrior → 1889 Two-Power Standard",
+            "gloss": "Causal Chain: Mercantilism & 1805 Trafalgar → Portsmouth & 1860 HMS Warrior → 1889 Two-Power Standard.",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Mercantilism & 1805 Trafalgar",
+                "dateChip": "1783–1815",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "Trafalgar",
+                "gloss": "Navigation Acts channelled colonial wealth to Britain while Nelson’s 1805 Trafalgar triumph secured a century of sea control.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Navigation Acts Closed Trade",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Navigation Acts",
+                    "gloss": "Barred foreign ships from trade; Funnelled sugar and cotton home.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Barred foreign ships from trade",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Navigation Acts",
+                        "gloss": "Barred foreign ships from trade"
+                      },
+                      {
+                        "id": "kt1_1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Funnelled sugar and cotton home",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Navigation Acts",
+                        "gloss": "Funnelled sugar and cotton home"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "21 Oct 1805 Trafalgar Victory",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Nelson",
+                    "gloss": "27 ships beat 33 Franco-Spanish; Pierced line without losing ship.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "27 ships beat 33 Franco-Spanish",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Nelson",
+                        "gloss": "27 ships beat 33 Franco-Spanish"
+                      },
+                      {
+                        "id": "kt1_1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Pierced line without losing ship",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Nelson",
+                        "gloss": "Pierced line without losing ship"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Secured Century Pax Britannica",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Pax Britannica",
+                    "gloss": "Policed global merchant sea lanes; Backed gunboat diplomacy abroad.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Policed global merchant sea lanes",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Pax Britannica",
+                        "gloss": "Policed global merchant sea lanes"
+                      },
+                      {
+                        "id": "kt1_1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Backed gunboat diplomacy abroad",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Pax Britannica",
+                        "gloss": "Backed gunboat diplomacy abroad"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Portsmouth & 1860 HMS Warrior",
+                "dateChip": "1803–1860",
+                "lessonIndex": 0,
+                "stageIndex": 3,
+                "searchTerm": "HMS Warrior",
+                "gloss": "Portsmouth Dockyard pioneered mass production with Brunel’s block mills before Britain launched ironclad HMS Warrior in 1860.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1803 Brunel Steam Block Mills",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Marc Brunel",
+                    "gloss": "10,000 Portsmouth dockyard staff; 130,000 rigging blocks yearly.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "10,000 Portsmouth dockyard staff",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Marc Brunel",
+                        "gloss": "10,000 Portsmouth dockyard staff"
+                      },
+                      {
+                        "id": "kt1_1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "130,000 rigging blocks yearly",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Marc Brunel",
+                        "gloss": "130,000 rigging blocks yearly"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1860 Ironclad HMS Warrior",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "HMS Warrior",
+                    "gloss": "4.5-inch iron over 18-inch teak; Steam screws and rifled guns.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "4.5-inch iron over 18-inch teak",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "HMS Warrior",
+                        "gloss": "4.5-inch iron over 18-inch teak"
+                      },
+                      {
+                        "id": "kt1_1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Steam screws and rifled guns",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "HMS Warrior",
+                        "gloss": "Steam screws and rifled guns"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Made Wooden Battleships Obsolete",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "obsolete",
+                    "gloss": "Bounced shells in live trials; Kept Britain ahead of France.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Bounced shells in live trials",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "obsolete",
+                        "gloss": "Bounced shells in live trials"
+                      },
+                      {
+                        "id": "kt1_1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Kept Britain ahead of France",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "obsolete",
+                        "gloss": "Kept Britain ahead of France"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "1889 Two-Power Standard",
+                "dateChip": "1889",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "Two-Power Standard",
+                "gloss": "Challenged by Germany, France, and Russia, Parliament passed the £21.5m Naval Defence Act 1889 to match two rivals combined.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Rising European Naval Rivals",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Germany",
+                    "gloss": "Germany, France and Russia grew; Threatened imperial sea routes.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Germany, France and Russia grew",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Germany",
+                        "gloss": "Germany, France and Russia grew"
+                      },
+                      {
+                        "id": "kt1_1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Threatened imperial sea routes",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Germany",
+                        "gloss": "Threatened imperial sea routes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1889 Naval Defence Act (£21.5m)",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Naval Defence Act",
+                    "gloss": "Matched next two fleets combined; Built dozens of new battleships.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Matched next two fleets combined",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Naval Defence Act",
+                        "gloss": "Matched next two fleets combined"
+                      },
+                      {
+                        "id": "kt1_1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Built dozens of new battleships",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Naval Defence Act",
+                        "gloss": "Built dozens of new battleships"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Enshrined Deterrence in Statute",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Two-Power Standard",
+                    "gloss": "Expanded Portsmouth shipyards; Protected global maritime empire.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Expanded Portsmouth shipyards",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Two-Power Standard",
+                        "gloss": "Expanded Portsmouth shipyards"
+                      },
+                      {
+                        "id": "kt1_1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Protected global maritime empire",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Two-Power Standard",
+                        "gloss": "Protected global maritime empire"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Company Rule & The Raj",
+        "dateChip": "1700–1858",
+        "lessonIndex": 1,
+        "stageIndex": 0,
+        "searchTerm": "British Raj",
+        "gloss": "How tariffs and Lancashire mills ruined Indian handlooms, and how Company annexations sparked the 1857 Rebellion and British Raj.",
+        "children": [
+          {
+            "id": "kt2_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. De-industrialising India",
+            "dateChip": "1700–1850",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Calico Acts",
+            "q2Chain": "Mughal Cloth, Calico Bans & Diwani → Lancashire Mills & 70–80% Tariffs → Dhaka Collapse & Bentinck Note",
+            "gloss": "Causal Chain: Mughal Cloth, Calico Bans & Diwani → Lancashire Mills & 70–80% Tariffs → Dhaka Collapse & Bentinck Note.",
+            "children": [
+              {
+                "id": "kt2_2_s1",
+                "tier": 3,
+                "label": "Mughal Cloth, Calico Bans & Diwani",
+                "dateChip": "1700–1765",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Calico Acts",
+                "gloss": "Mughal India made 25% of world cloth until British Calico Acts blocked imports and the 1765 Diwani halted silver inflows.",
+                "children": [
+                  {
+                    "id": "kt2_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Mughal 25% Global Cloth Share",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Dhaka",
+                    "gloss": "Wove fine muslins and calicoes; Earned European silver bullion.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Wove fine muslins and calicoes",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Dhaka",
+                        "gloss": "Wove fine muslins and calicoes"
+                      },
+                      {
+                        "id": "kt2_2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Earned European silver bullion",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Dhaka",
+                        "gloss": "Earned European silver bullion"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1700 & 1721 Calico Import Bans",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Calico Acts",
+                    "gloss": "Protesting English weavers rioted; Sheltered domestic wool makers.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Protesting English weavers rioted",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Calico Acts",
+                        "gloss": "Protesting English weavers rioted"
+                      },
+                      {
+                        "id": "kt2_2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Sheltered domestic wool makers",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Calico Acts",
+                        "gloss": "Sheltered domestic wool makers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1765 Diwani Stopped Bullion",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Diwani",
+                    "gloss": "Taxed 20 million in Bengal; Bought silk using peasant taxes.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Taxed 20 million in Bengal",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Diwani",
+                        "gloss": "Taxed 20 million in Bengal"
+                      },
+                      {
+                        "id": "kt2_2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Bought silk using peasant taxes",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Diwani",
+                        "gloss": "Bought silk using peasant taxes"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s2",
+                "tier": 3,
+                "label": "Lancashire Mills & 70–80% Tariffs",
+                "dateChip": "1800–1835",
+                "lessonIndex": 1,
+                "stageIndex": 3,
+                "searchTerm": "Lancashire",
+                "gloss": "Britain taxed Indian cloth 70–80% while flooding Indian bazaars with 2%-duty Lancashire machine cotton.",
+                "children": [
+                  {
+                    "id": "kt2_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Unequal One-Way Colonial Tariffs",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "seventy percent",
+                    "gloss": "70–80% tax on Indian imports; 2% duty on Lancashire cotton.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "70–80% tax on Indian imports",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "seventy percent",
+                        "gloss": "70–80% tax on Indian imports"
+                      },
+                      {
+                        "id": "kt2_2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "2% duty on Lancashire cotton",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "seventy percent",
+                        "gloss": "2% duty on Lancashire cotton"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Undercut Village Handlooms",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "bazaars",
+                    "gloss": "Machine yarn flooded bazaars; Priced spinners out of markets.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Machine yarn flooded bazaars",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "bazaars",
+                        "gloss": "Machine yarn flooded bazaars"
+                      },
+                      {
+                        "id": "kt2_2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Priced spinners out of markets",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "bazaars",
+                        "gloss": "Priced spinners out of markets"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s2_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Inverted Global Cotton Trade",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Lancashire",
+                    "gloss": "Turned India into raw supplier; Boosted Manchester mill fortunes.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Turned India into raw supplier",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Lancashire",
+                        "gloss": "Turned India into raw supplier"
+                      },
+                      {
+                        "id": "kt2_2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Boosted Manchester mill fortunes",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Lancashire",
+                        "gloss": "Boosted Manchester mill fortunes"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s3",
+                "tier": 3,
+                "label": "Dhaka Collapse & Bentinck Note",
+                "dateChip": "1834–1850",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "Bentinck",
+                "gloss": "Textile hubs like Dhaka emptied into poverty, prompting Bentinck’s 1834 remark on weavers’ bones bleaching Indian plains.",
+                "children": [
+                  {
+                    "id": "kt2_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Dhaka Weaving Centres Deserted",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Dhaka",
+                    "gloss": "Handloom cloth exports collapsed; Artisans pushed into farm toil.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Handloom cloth exports collapsed",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Dhaka",
+                        "gloss": "Handloom cloth exports collapsed"
+                      },
+                      {
+                        "id": "kt2_2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Artisans pushed into farm toil",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Dhaka",
+                        "gloss": "Artisans pushed into farm toil"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1834 Bentinck Bleaching Plains",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "William Bentinck",
+                    "gloss": "Recorded weavers’ mass misery; Confirmed mass textile de-industrialisation.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Recorded weavers’ mass misery",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "William Bentinck",
+                        "gloss": "Recorded weavers’ mass misery"
+                      },
+                      {
+                        "id": "kt2_2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Confirmed mass textile de-industrialisation",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "William Bentinck",
+                        "gloss": "Confirmed mass textile de-industrialisation"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_2_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Deepened Anti-Company Anger",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "de-industrialisation",
+                    "gloss": "Impoverished rural provinces; Fed resentment before 1857.",
+                    "children": [
+                      {
+                        "id": "kt2_2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Impoverished rural provinces",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "de-industrialisation",
+                        "gloss": "Impoverished rural provinces"
+                      },
+                      {
+                        "id": "kt2_2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Fed resentment before 1857",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "de-industrialisation",
+                        "gloss": "Fed resentment before 1857"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. 1857 Rebellion & British Raj",
+            "dateChip": "1848–1858",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Rani Lakshmibai",
+            "q2Chain": "Doctrine of Lapse & Cartridges → Delhi March & Rani Lakshmibai → 1858 Act & Birth of British Raj",
+            "gloss": "Causal Chain: Doctrine of Lapse & Cartridges → Delhi March & Rani Lakshmibai → 1858 Act & Birth of British Raj.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Doctrine of Lapse & Cartridges",
+                "dateChip": "1848–1857",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Doctrine of Lapse",
+                "gloss": "Dalhousie’s annexations of Jhansi and Awadh combined with cow-and-pig fat rumours on 1857 Enfield cartridges.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Dalhousie’s Doctrine of Lapse",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Awadh",
+                    "gloss": "Annexed Satara, Jhansi and Awadh; Disinherited adopted Hindu heirs.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Annexed Satara, Jhansi and Awadh",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Awadh",
+                        "gloss": "Annexed Satara, Jhansi and Awadh"
+                      },
+                      {
+                        "id": "kt2_3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Disinherited adopted Hindu heirs",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Awadh",
+                        "gloss": "Disinherited adopted Hindu heirs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1857 Greased Enfield Cartridges",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Enfield",
+                    "gloss": "Bitten tubes rumoured animal fat; Offended Hindu and Muslim faiths.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Bitten tubes rumoured animal fat",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Enfield",
+                        "gloss": "Bitten tubes rumoured animal fat"
+                      },
+                      {
+                        "id": "kt2_3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Offended Hindu and Muslim faiths",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Enfield",
+                        "gloss": "Offended Hindu and Muslim faiths"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Sparked 10 May Meerut Mutiny",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Meerut",
+                    "gloss": "85 jailed sepoys freed at Meerut; Marched overnight to take Delhi.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "85 jailed sepoys freed at Meerut",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Meerut",
+                        "gloss": "85 jailed sepoys freed at Meerut"
+                      },
+                      {
+                        "id": "kt2_3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Marched overnight to take Delhi",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Meerut",
+                        "gloss": "Marched overnight to take Delhi"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Delhi March & Rani Lakshmibai",
+                "dateChip": "1857–1858",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "Rani Lakshmibai",
+                "gloss": "Rebels rallied around Emperor Bahadur Shah Zafar in Delhi while Rani Lakshmibai led fierce resistance from Jhansi to Gwalior.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bahadur Shah II Named Sovereign",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Bahadur Shah",
+                    "gloss": "United Hindu and Muslim rebels; Spread war across north plains.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "United Hindu and Muslim rebels",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Bahadur Shah",
+                        "gloss": "United Hindu and Muslim rebels"
+                      },
+                      {
+                        "id": "kt2_3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Spread war across north plains",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Bahadur Shah",
+                        "gloss": "Spread war across north plains"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Rani Lakshmibai Fought to 1858",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Jhansi",
+                    "gloss": "Escaped Jhansi walls with child; Killed fighting at Gwalior.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Escaped Jhansi walls with child",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Jhansi",
+                        "gloss": "Escaped Jhansi walls with child"
+                      },
+                      {
+                        "id": "kt2_3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Killed fighting at Gwalior",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Jhansi",
+                        "gloss": "Killed fighting at Gwalior"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Shattered Company Legitimacy",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "talwar",
+                    "gloss": "Nearly toppled British control; Became anti-colonial hero.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Nearly toppled British control",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "talwar",
+                        "gloss": "Nearly toppled British control"
+                      },
+                      {
+                        "id": "kt2_3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Became anti-colonial hero",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "talwar",
+                        "gloss": "Became anti-colonial hero"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "1858 Act & Birth of British Raj",
+                "dateChip": "Aug 1858",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "Government of India Act",
+                "gloss": "Parliament abolished the East India Company in August 1858, placing India under direct Crown and Viceroy rule.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1858 Act Dissolved the Company",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Viceroy",
+                    "gloss": "Transferred rule to Queen Victoria; Ruled through royal Viceroy.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Transferred rule to Queen Victoria",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Viceroy",
+                        "gloss": "Transferred rule to Queen Victoria"
+                      },
+                      {
+                        "id": "kt2_3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Ruled through royal Viceroy",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Viceroy",
+                        "gloss": "Ruled through royal Viceroy"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Victoria Promised Toleration",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "proclamation",
+                    "gloss": "Halted princely state seizures; Pledged non-interference in faith.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Halted princely state seizures",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "proclamation",
+                        "gloss": "Halted princely state seizures"
+                      },
+                      {
+                        "id": "kt2_3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Pledged non-interference in faith",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "proclamation",
+                        "gloss": "Pledged non-interference in faith"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Entrenched Segregated Raj Rule",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "British Raj",
+                    "gloss": "Deepened strict racial hierarchy; Backed by British garrison force.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Deepened strict racial hierarchy",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "British Raj",
+                        "gloss": "Deepened strict racial hierarchy"
+                      },
+                      {
+                        "id": "kt2_3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Backed by British garrison force",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "British Raj",
+                        "gloss": "Backed by British garrison force"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: Africa & Empire Verdict",
+        "dateChip": "1851–1914",
+        "lessonIndex": 3,
+        "stageIndex": 0,
+        "searchTerm": "Dadabhai Naoroji",
+        "gloss": "The 1884 Berlin Conference, Maxim guns, Congo rubber terror, Dadabhai Naoroji’s Drain of Wealth, and modern Empire debates.",
+        "children": [
+          {
+            "id": "kt3_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Scramble for Africa",
+            "dateChip": "1884–1908",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Berlin",
+            "q2Chain": "1884 Berlin & Occupation Rule → Maxim Gun, Quinine & Kipling → Rubber Quotas & Congo Terror",
+            "gloss": "Causal Chain: 1884 Berlin & Occupation Rule → Maxim Gun, Quinine & Kipling → Rubber Quotas & Congo Terror.",
+            "children": [
+              {
+                "id": "kt3_4_s1",
+                "tier": 3,
+                "label": "1884 Berlin & Occupation Rule",
+                "dateChip": "1884–1885",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Effective Occupation",
+                "gloss": "Fourteen Western powers met in Berlin with zero Africans invited, mandating inland Effective Occupation to claim territory.",
+                "children": [
+                  {
+                    "id": "kt3_4_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1884 Berlin 14-Nation Partition",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Bismarck",
+                    "gloss": "Hosted by Otto von Bismarck; Zero African leaders invited.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Hosted by Otto von Bismarck",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Bismarck",
+                        "gloss": "Hosted by Otto von Bismarck"
+                      },
+                      {
+                        "id": "kt3_4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Zero African leaders invited",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Bismarck",
+                        "gloss": "Zero African leaders invited"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Effective Occupation Requirement",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Effective Occupation",
+                    "gloss": "Demanded inland forts and flags; Ended coast-only treaty claims.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Demanded inland forts and flags",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Effective Occupation",
+                        "gloss": "Demanded inland forts and flags"
+                      },
+                      {
+                        "id": "kt3_4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Ended coast-only treaty claims",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Effective Occupation",
+                        "gloss": "Ended coast-only treaty claims"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Armed Race into Interior",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "geometric borders",
+                    "gloss": "Drew straight map border lines; Split African kingdoms apart.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Drew straight map border lines",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "geometric borders",
+                        "gloss": "Drew straight map border lines"
+                      },
+                      {
+                        "id": "kt3_4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Split African kingdoms apart",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "geometric borders",
+                        "gloss": "Split African kingdoms apart"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_4_s2",
+                "tier": 3,
+                "label": "Maxim Gun, Quinine & Kipling",
+                "dateChip": "1884–1899",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Maxim",
+                "gloss": "Quinine and 600-rpm Maxim guns crushed African armies at Omdurman while Kipling’s 1899 poem preached racial duty.",
+                "children": [
+                  {
+                    "id": "kt3_4_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Quinine & 600-RPM Maxim Gun",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Omdurman",
+                    "gloss": "Cinchona bark stopped malaria; 10,000 killed at 1898 Omdurman.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Cinchona bark stopped malaria",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Omdurman",
+                        "gloss": "Cinchona bark stopped malaria"
+                      },
+                      {
+                        "id": "kt3_4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "10,000 killed at 1898 Omdurman",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Omdurman",
+                        "gloss": "10,000 killed at 1898 Omdurman"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1899 White Man’s Burden Poem",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Rudyard Kipling",
+                    "gloss": "Kipling claimed civilising duty; Used half-devil racial slur.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Kipling claimed civilising duty",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Rudyard Kipling",
+                        "gloss": "Kipling claimed civilising duty"
+                      },
+                      {
+                        "id": "kt3_4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Used half-devil racial slur",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Rudyard Kipling",
+                        "gloss": "Used half-devil racial slur"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s2_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Masked Conquest as Moral Duty",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "propaganda",
+                    "gloss": "Paired machine guns and racism; Alibied imperial land seizures.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Paired machine guns and racism",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "propaganda",
+                        "gloss": "Paired machine guns and racism"
+                      },
+                      {
+                        "id": "kt3_4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Alibied imperial land seizures",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "propaganda",
+                        "gloss": "Alibied imperial land seizures"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_4_s3",
+                "tier": 3,
+                "label": "Rubber Quotas & Congo Terror",
+                "dateChip": "1885–1908",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Congo",
+                "gloss": "Colonial regimes looted rubber, ivory, and diamonds through forced labour, killing up to ten million in Leopold II’s Congo.",
+                "children": [
+                  {
+                    "id": "kt3_4_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Looted Rubber, Palm Oil & Ivory",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "rubber",
+                    "gloss": "Used forced labour and taxes; Enriched European tycoons.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Used forced labour and taxes",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "rubber",
+                        "gloss": "Used forced labour and taxes"
+                      },
+                      {
+                        "id": "kt3_4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Enriched European tycoons",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "rubber",
+                        "gloss": "Enriched European tycoons"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Leopold II’s Congo Free State",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Leopold II",
+                    "gloss": "Hostages and severed hands terror; Estimated ten million perished.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Hostages and severed hands terror",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Leopold II",
+                        "gloss": "Hostages and severed hands terror"
+                      },
+                      {
+                        "id": "kt3_4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Estimated ten million perished",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Leopold II",
+                        "gloss": "Estimated ten million perished"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_4_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Exposed Civilising Hypocrisy",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Congo",
+                    "gloss": "Campaigned against by E.D. Morel; Revealed violent extraction truth.",
+                    "children": [
+                      {
+                        "id": "kt3_4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Campaigned against by E.D. Morel",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Congo",
+                        "gloss": "Campaigned against by E.D. Morel"
+                      },
+                      {
+                        "id": "kt3_4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Revealed violent extraction truth",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Congo",
+                        "gloss": "Revealed violent extraction truth"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. The Imperial Verdict",
+            "dateChip": "1851–1901",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Dadabhai Naoroji",
+            "q2Chain": "1851 Exhibition & Rail Network → 1876 Famines & Naoroji’s Drain → Ferguson vs Tharoor Verdict",
+            "gloss": "Causal Chain: 1851 Exhibition & Rail Network → 1876 Famines & Naoroji’s Drain → Ferguson vs Tharoor Verdict.",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "1851 Exhibition & Rail Network",
+                "dateChip": "1851–1900",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Great Exhibition",
+                "gloss": "The 1851 Crystal Palace celebrated Britain’s Workshop of the World while engineers built 25,000 miles of Indian railways.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1851 Crystal Palace Exhibition",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Koh-i-Noor",
+                    "gloss": "6 million visited Hyde Park; Displayed looted Koh-i-Noor gem.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "6 million visited Hyde Park",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Koh-i-Noor",
+                        "gloss": "6 million visited Hyde Park"
+                      },
+                      {
+                        "id": "kt3_5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Displayed looted Koh-i-Noor gem",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Koh-i-Noor",
+                        "gloss": "Displayed looted Koh-i-Noor gem"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "25,000 Miles of Indian Railways",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "rail miles",
+                    "gloss": "Added canals and telegraphs; Linked inland farms to ports.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Added canals and telegraphs",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "rail miles",
+                        "gloss": "Added canals and telegraphs"
+                      },
+                      {
+                        "id": "kt3_5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Linked inland farms to ports",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "rail miles",
+                        "gloss": "Linked inland farms to ports"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c3",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Development vs Military Control",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "suppress domestic unrest",
+                    "gloss": "Integrated distant Indian markets; Moved troops and export crops.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Integrated distant Indian markets",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "suppress domestic unrest",
+                        "gloss": "Integrated distant Indian markets"
+                      },
+                      {
+                        "id": "kt3_5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Moved troops and export crops",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "suppress domestic unrest",
+                        "gloss": "Moved troops and export crops"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "1876 Famines & Naoroji’s Drain",
+                "dateChip": "1867–1901",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "Dadabhai Naoroji",
+                "gloss": "Ten million starved under Lytton’s free-market famine policy while MP Dadabhai Naoroji proved Britain’s Drain of Wealth.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1876–78 Famines & Grain Exports",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Lytton",
+                    "gloss": "Viceroy Lytton kept free trade; 10m died while wheat exported.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Viceroy Lytton kept free trade",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Lytton",
+                        "gloss": "Viceroy Lytton kept free trade"
+                      },
+                      {
+                        "id": "kt3_5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "10m died while wheat exported",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Lytton",
+                        "gloss": "10m died while wheat exported"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Naoroji’s Drain of Wealth Proof",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Dadabhai Naoroji",
+                    "gloss": "First Indian MP in 1892; Tax money funded London wars.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "First Indian MP in 1892",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Dadabhai Naoroji",
+                        "gloss": "First Indian MP in 1892"
+                      },
+                      {
+                        "id": "kt3_5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Tax money funded London wars",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Dadabhai Naoroji",
+                        "gloss": "Tax money funded London wars"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Galvanized Self-Rule Critique",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "self-determination",
+                    "gloss": "Demolished benevolent-rule myth; Demanded Indian political rights.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Demolished benevolent-rule myth",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "self-determination",
+                        "gloss": "Demolished benevolent-rule myth"
+                      },
+                      {
+                        "id": "kt3_5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Demanded Indian political rights",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "self-determination",
+                        "gloss": "Demanded Indian political rights"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Ferguson vs Tharoor Verdict",
+                "dateChip": "Historiography",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Shashi Tharoor",
+                "gloss": "Niall Ferguson highlights common law and railways, whereas Shashi Tharoor condemns de-industrialisation, tax drain, and famine.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_c1",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Optimist Case (Niall Ferguson)",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Niall Ferguson",
+                    "gloss": "Spread common law and trade; Built railways and telegraphs.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Spread common law and trade",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Niall Ferguson",
+                        "gloss": "Spread common law and trade"
+                      },
+                      {
+                        "id": "kt3_5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Built railways and telegraphs",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Niall Ferguson",
+                        "gloss": "Built railways and telegraphs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c2",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Pessimist Case (Shashi Tharoor)",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Shashi Tharoor",
+                    "gloss": "Crushed weavers; drained taxes; Caused preventable mass famines.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Crushed weavers; drained taxes",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Shashi Tharoor",
+                        "gloss": "Crushed weavers; drained taxes"
+                      },
+                      {
+                        "id": "kt3_5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Caused preventable mass famines",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Shashi Tharoor",
+                        "gloss": "Caused preventable mass famines"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Weighing Modernisation vs Cost",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "legacy",
+                    "gloss": "Contrasts rail lines with famine; Drives ongoing empire debate.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Contrasts rail lines with famine",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "legacy",
+                        "gloss": "Contrasts rail lines with famine"
+                      },
+                      {
+                        "id": "kt3_5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Drives ongoing empire debate",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "legacy",
+                        "gloss": "Drives ongoing empire debate"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

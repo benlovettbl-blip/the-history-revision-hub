@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_romans",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "The Romans in Britain — Invasion & Legacy (55 BC–AD 410)",
+  "examDateBoundary": "55 BC–AD 410",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "The Romans in Britain",
+    "subLabel": "Key Stage 2",
+    "dateChip": "55 BC–AD 410",
+    "gloss": "How Claudius’s Roman legions conquered Celtic Britain in AD 43, defeated Boudicca, built Hadrian’s Wall, straight roads, and steam baths, and left a lasting legacy after AD 410.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "1. Celts & AD 43 Invasion",
+        "dateChip": "c. 500 BC–AD 43",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "roundhouses",
+        "gloss": "Skilled Iron Age Celtic tribes farmed roundhouses and traded metals across the Channel before Emperor Claudius invaded with 40,000 legionaries and war elephants in AD 43.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Celtic Britain Before Rome",
+            "dateChip": "c. 500 BC–AD 43",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "roundhouses",
+            "q2Chain": "Separate Celtic tribes & Maiden Castle → Smoky thatched roundhouses → Gold torcs & Cornish tin draw Rome’s eye",
+            "gloss": "Separate Celtic tribes & Maiden Castle → Smoky thatched roundhouses → Gold torcs & Cornish tin draw Rome’s eye",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Tribes, Hillforts & Caesar",
+                "dateChip": "c. 500–54 BC",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Julius Caesar",
+                "gloss": "Separate tribes like the Iceni, Catuvellauni, and Brigantes guarded earth hillforts and fought off Julius Caesar in 55–54 BC.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Iceni, Catuvellauni & Brigantes",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Brigantes",
+                    "gloss": "Zero single king ruled Britain; Separate tribes guarded own lands.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Zero single king ruled Britain",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Brigantes",
+                        "gloss": "Zero single king ruled Britain"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Separate tribes guarded own lands",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Brigantes",
+                        "gloss": "Separate tribes guarded own lands"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Maiden Castle & Caesar Repelled",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "55 BC",
+                    "gloss": "Steep earth ramparts ringed hilltops; Chariots fought Caesar 55–54 BC.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Steep earth ramparts ringed hilltops",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "55 BC",
+                        "gloss": "Steep earth ramparts ringed hilltops"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Chariots fought Caesar 55–54 BC",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "55 BC",
+                        "gloss": "Chariots fought Caesar 55–54 BC"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Sheltered Busy Roundhouse Farms",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Maiden Castle",
+                    "gloss": "Protected tribal cattle behind ditches; Kept Britain free another century.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Protected tribal cattle behind ditches",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Maiden Castle",
+                        "gloss": "Protected tribal cattle behind ditches"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Kept Britain free another century",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Maiden Castle",
+                        "gloss": "Kept Britain free another century"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Smoky Thatched Roundhouses",
+                "dateChip": "Iron Age Life",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "wattle-and-daub",
+                "gloss": "Celtic families wove wattle-and-daub walls under chimney-free thatched roofs, curing meat in smoke and grinding wheat on quern stones.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "No Chimney Stopped Roof Sparks",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "no chimney",
+                    "gloss": "Plastered hazel sticks with clay; Wind could not fan flames.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Plastered hazel sticks with clay",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "no chimney",
+                        "gloss": "Plastered hazel sticks with clay"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Wind could not fan flames",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "no chimney",
+                        "gloss": "Wind could not fan flames"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Hearth Smoke, Looms & Querns",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "quern stones",
+                    "gloss": "Woodsmoke cured meat, chased bugs; Wove bright wool; ground flour.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Woodsmoke cured meat, chased bugs",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "quern stones",
+                        "gloss": "Woodsmoke cured meat, chased bugs"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Wove bright wool; ground flour",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "quern stones",
+                        "gloss": "Wove bright wool; ground flour"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Fed Skilled Smiths & Traders",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "hearth fire",
+                    "gloss": "Warm central hearth heated families; Supported thriving craft workshops.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Warm central hearth heated families",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "hearth fire",
+                        "gloss": "Warm central hearth heated families"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Supported thriving craft workshops",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "hearth fire",
+                        "gloss": "Supported thriving craft workshops"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Gold Torcs, Druids & Tin Trade",
+                "dateChip": "c. 350 BC–AD 43",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "gold torcs",
+                "gloss": "Celtic smiths twisted gold torcs, Druids memorised laws orally, and ships traded Cornish tin and wheat across the Channel.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Twisted Gold Torcs & Druids",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Druids",
+                    "gloss": "Placed bronze shields in rivers; Druids memorised laws without books.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Placed bronze shields in rivers",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Druids",
+                        "gloss": "Placed bronze shields in rivers"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Druids memorised laws without books",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Druids",
+                        "gloss": "Druids memorised laws without books"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Cornish Tin & Gold Stater Coins",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Cornish tin",
+                    "gloss": "Exported tin, iron, hides, wheat; Minted galloping gold stater coins.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Exported tin, iron, hides, wheat",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Cornish tin",
+                        "gloss": "Exported tin, iron, hides, wheat"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Minted galloping gold stater coins",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Cornish tin",
+                        "gloss": "Minted galloping gold stater coins"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Tempted Claudius to Invade Next",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Rome",
+                    "gloss": "Spread news of British riches; Caught ambitious Rome’s attention.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Spread news of British riches",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Rome",
+                        "gloss": "Spread news of British riches"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Caught ambitious Rome’s attention",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Rome",
+                        "gloss": "Caught ambitious Rome’s attention"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Claudius Invades (AD 43)",
+            "dateChip": "AD 43",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Claudius",
+            "q2Chain": "Claudius seeks military glory & tin/silver → Legionaries lock testudo tortoise shields → War elephants capture Colchester",
+            "gloss": "Claudius seeks military glory & tin/silver → Legionaries lock testudo tortoise shields → War elephants capture Colchester",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Claudius Craves Glory & Metals",
+                "dateChip": "AD 41–43",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "senators",
+                "gloss": "Doubted by senators for his limp and stutter, Emperor Claudius invaded in AD 43 for glory, silver, tin, wheat, and taxes.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Senators Doubted Nervous Claudius",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "stutter",
+                    "gloss": "Walked with limp and stutter; Needed quick famous military glory.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Walked with limp and stutter",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "stutter",
+                        "gloss": "Walked with limp and stutter"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Needed quick famous military glory",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "stutter",
+                        "gloss": "Needed quick famous military glory"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Silver, Tin, Wheat & Taxes",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "silver",
+                    "gloss": "Rich silver, tin, lead, iron; Southern wheat and new taxes.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Rich silver, tin, lead, iron",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "silver",
+                        "gloss": "Rich silver, tin, lead, iron"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Southern wheat and new taxes",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "silver",
+                        "gloss": "Southern wheat and new taxes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Launched 40,000-Strong Fleet",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "AD 43",
+                    "gloss": "Gathered four full-time Roman legions; Sailed across Channel in AD 43.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Gathered four full-time Roman legions",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "AD 43",
+                        "gloss": "Gathered four full-time Roman legions"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Sailed across Channel in AD 43",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "AD 43",
+                        "gloss": "Sailed across Channel in AD 43"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Tortoise Shields & Short Swords",
+                "dateChip": "AD 43 Army",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "testudo",
+                "gloss": "Full-time legionaries marched 20 miles a day in strip armour, locked scutum shields into a testudo, and fought with pilum and gladius.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Iron Strip Armour & Testudo",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "lorica segmentata",
+                    "gloss": "Marched 20 miles in caligae; Locked scutum shields like tortoise.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Marched 20 miles in caligae",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "lorica segmentata",
+                        "gloss": "Marched 20 miles in caligae"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Locked scutum shields like tortoise",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "lorica segmentata",
+                        "gloss": "Locked scutum shields like tortoise"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bending Pilum & Short Gladius",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "pilum",
+                    "gloss": "Pilum javelin ruined enemy shields; Stabbed close with gladius sword.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Pilum javelin ruined enemy shields",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "pilum",
+                        "gloss": "Pilum javelin ruined enemy shields"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Stabbed close with gladius sword",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "pilum",
+                        "gloss": "Stabbed close with gladius sword"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Outmatched Part-Time Warriors",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "gladius",
+                    "gloss": "Trained daily as calm team; Pushed inland from Kent coast.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Trained daily as calm team",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "gladius",
+                        "gloss": "Trained daily as calm team"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Pushed inland from Kent coast",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "gladius",
+                        "gloss": "Pushed inland from Kent coast"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Medway Battle & War Elephants",
+                "dateChip": "Summer AD 43",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "war elephants",
+                "gloss": "Aulus Plautius landed at Richborough and beat Caratacus at the Medway before Claudius entered Camulodunum with war elephants.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Richborough & Two-Day Medway",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Aulus Plautius",
+                    "gloss": "40,000 landed at Kent Richborough; Defeated Caratacus at River Medway.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "40,000 landed at Kent Richborough",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Aulus Plautius",
+                        "gloss": "40,000 landed at Kent Richborough"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Defeated Caratacus at River Medway",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Aulus Plautius",
+                        "gloss": "Defeated Caratacus at River Medway"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Elephants Captured Camulodunum",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Camulodunum",
+                    "gloss": "War elephants terrified Celtic horses; Eleven British kings surrendered.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "War elephants terrified Celtic horses",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Camulodunum",
+                        "gloss": "War elephants terrified Celtic horses"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Eleven British kings surrendered",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Camulodunum",
+                        "gloss": "Eleven British kings surrendered"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Harsh Rule Sparked AD 60 Revolt",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "province",
+                    "gloss": "Turned south into Roman province; Greedy taxes angered British tribes.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Turned south into Roman province",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "province",
+                        "gloss": "Turned south into Roman province"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Greedy taxes angered British tribes",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "province",
+                        "gloss": "Greedy taxes angered British tribes"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "2. Boudicca & Hadrian’s Wall",
+        "dateChip": "AD 60–400",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Boudicca",
+        "gloss": "Broken Roman promises sparked Queen Boudicca’s fiery AD 60–61 rebellion before Emperor Hadrian built a 73-mile stone frontier guarded by troops from three continents.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Boudicca’s Revolt (AD 60–61)",
+            "dateChip": "AD 60–61",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Boudicca",
+            "q2Chain": "Rome betrays King Prasutagus’s will (AD 60) → Boudicca burns three Roman towns to red clay → Narrow valley defeat at Watling Street",
+            "gloss": "Rome betrays King Prasutagus’s will (AD 60) → Boudicca burns three Roman towns to red clay → Narrow valley defeat at Watling Street",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Broken Promises to the Iceni",
+                "dateChip": "AD 60",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Prasutagus",
+                "gloss": "When Iceni ally King Prasutagus left half his wealth to Emperor Nero, greedy officials seized lands and flogged Queen Boudicca.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Prasutagus’s Will Broken in AD 60",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Emperor Nero",
+                    "gloss": "Left half wealth to Nero; Soldiers seized East Anglian lands.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Left half wealth to Nero",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Emperor Nero",
+                        "gloss": "Left half wealth to Nero"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Soldiers seized East Anglian lands",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Emperor Nero",
+                        "gloss": "Soldiers seized East Anglian lands"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Loans Demanded & Boudicca Flogged",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "flogged",
+                    "gloss": "Demanded heavy Roman loans back; Cruelly mistreated her two daughters.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Demanded heavy Roman loans back",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "flogged",
+                        "gloss": "Demanded heavy Roman loans back"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Cruelly mistreated her two daughters",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "flogged",
+                        "gloss": "Cruelly mistreated her two daughters"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ United Iceni & Trinovantes",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Boudicca",
+                    "gloss": "Boudicca rode wooden war chariot; Marched while Paulinus fought Anglesey.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Boudicca rode wooden war chariot",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Boudicca",
+                        "gloss": "Boudicca rode wooden war chariot"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Marched while Paulinus fought Anglesey",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Boudicca",
+                        "gloss": "Marched while Paulinus fought Anglesey"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Three Towns Burn to Red Clay",
+                "dateChip": "AD 60",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Londinium",
+                "gloss": "While Governor Suetonius Paulinus was in Anglesey, rebels torched Camulodunum, Londinium, and Verulamium into red clay.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Colchester, London & St Albans",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Verulamium",
+                    "gloss": "Burned Camulodunum’s hated Roman temple; Torched busy Londinium and Verulamium.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Burned Camulodunum’s hated Roman temple",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Verulamium",
+                        "gloss": "Burned Camulodunum’s hated Roman temple"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Torched busy Londinium and Verulamium",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Verulamium",
+                        "gloss": "Torched busy Londinium and Verulamium"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Buried Red Clay Destruction Layer",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "red clay destruction layer",
+                    "gloss": "Burning shops baked red clay; Diggers find melted pots, coins.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Burning shops baked red clay",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "red clay destruction layer",
+                        "gloss": "Burning shops baked red clay"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Diggers find melted pots, coins",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "red clay destruction layer",
+                        "gloss": "Diggers find melted pots, coins"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Forced Paulinus Down Watling St",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Suetonius Paulinus",
+                    "gloss": "Paulinus raced south from Wales; Chose narrow valley for showdown.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Paulinus raced south from Wales",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Suetonius Paulinus",
+                        "gloss": "Paulinus raced south from Wales"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Chose narrow valley for showdown",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Suetonius Paulinus",
+                        "gloss": "Chose narrow valley for showdown"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Showdown on Watling Street",
+                "dateChip": "AD 61",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Watling Street",
+                "gloss": "In AD 61, 10,000 disciplined legionaries in a narrow wooded valley pinned squashed Britons back against their own wooden wagons.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Narrow Valley Guarded Roman Sides",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "narrow wooded valley",
+                    "gloss": "10,000 legionaries stood outnumbered; Iceni parked ring of wagons.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "10,000 legionaries stood outnumbered",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "narrow wooded valley",
+                        "gloss": "10,000 legionaries stood outnumbered"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Iceni parked ring of wagons",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "narrow wooded valley",
+                        "gloss": "Iceni parked ring of wagons"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Tight Wedges Pinned Rebel Crowd",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "tight wedges",
+                    "gloss": "Squashed Britons could barely swing; Hurled javelins; trapped against wagons.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Squashed Britons could barely swing",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "tight wedges",
+                        "gloss": "Squashed Britons could barely swing"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Hurled javelins; trapped against wagons",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "tight wedges",
+                        "gloss": "Hurled javelins; trapped against wagons"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Secured South Behind Stone Walls",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "stone walls",
+                    "gloss": "Boudicca died soon after battle; Londinium rebuilt inside stone walls.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Boudicca died soon after battle",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "stone walls",
+                        "gloss": "Boudicca died soon after battle"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Londinium rebuilt inside stone walls",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "stone walls",
+                        "gloss": "Londinium rebuilt inside stone walls"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Hadrian’s Wall & Vindolanda",
+            "dateChip": "AD 122–400",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Vindolanda",
+            "q2Chain": "Emperor Hadrian builds 73-mile stone wall (AD 122) → Oxygen-free mud saves Vindolanda letters → Troops from three continents guard frontier",
+            "gloss": "Emperor Hadrian builds 73-mile stone wall (AD 122) → Oxygen-free mud saves Vindolanda letters → Troops from three continents guard frontier",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "73 Miles of Stone Sea to Sea",
+                "dateChip": "AD 122",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "milecastle",
+                "gloss": "Visiting in AD 122, Emperor Hadrian ordered a 73-mile stone wall with milecastles and 16 forts like Housesteads.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Stop Raids & Tax Border Trade",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Caledonia",
+                    "gloss": "Divided province from northern Caledonia; Ran Wallsend to Bowness-on-Solway.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Divided province from northern Caledonia",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Caledonia",
+                        "gloss": "Divided province from northern Caledonia"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Ran Wallsend to Bowness-on-Solway",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Caledonia",
+                        "gloss": "Ran Wallsend to Bowness-on-Solway"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Milecastles & 16 Stone Forts",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Housesteads",
+                    "gloss": "Gatehouse built every Roman mile; Rainwater flushed stone fort latrines.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Gatehouse built every Roman mile",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Housesteads",
+                        "gloss": "Gatehouse built every Roman mile"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Rainwater flushed stone fort latrines",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Housesteads",
+                        "gloss": "Rainwater flushed stone fort latrines"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Settled Busy Frontier Garrisons",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "73 miles",
+                    "gloss": "80 Roman miles across north; Soldiers wrote letters nearby.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "80 Roman miles across north",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "73 miles",
+                        "gloss": "80 Roman miles across north"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Soldiers wrote letters nearby",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "73 miles",
+                        "gloss": "Soldiers wrote letters nearby"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Vindolanda Wooden Ink Letters",
+                "dateChip": "c. AD 100",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Claudia Severa",
+                "gloss": "Wet oxygen-free mud at Vindolanda Fort preserved wooden ink tablets including a birthday party invite and parcel of socks.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Wet Airless Mud Stopped Rotting",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "oxygen-free mud",
+                    "gloss": "Buried beneath Vindolanda Fort floors; Saved hundreds of wooden tablets.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Buried beneath Vindolanda Fort floors",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "oxygen-free mud",
+                        "gloss": "Buried beneath Vindolanda Fort floors"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Saved hundreds of wooden tablets",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "oxygen-free mud",
+                        "gloss": "Saved hundreds of wooden tablets"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Birthday Invite & Woollen Socks",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "woollen socks",
+                    "gloss": "Claudia Severa’s 11 September party; Sent socks, sandals, two underpants.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Claudia Severa’s 11 September party",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "woollen socks",
+                        "gloss": "Claudia Severa’s 11 September party"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Sent socks, sandals, two underpants",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "woollen socks",
+                        "gloss": "Sent socks, sandals, two underpants"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Oldest Woman’s Latin Handwriting",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Latin handwriting",
+                    "gloss": "Invited friend Sulpicia Lepidina warmly; Proved chilly real frontier life.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Invited friend Sulpicia Lepidina warmly",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Latin handwriting",
+                        "gloss": "Invited friend Sulpicia Lepidina warmly"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Proved chilly real frontier life",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Latin handwriting",
+                        "gloss": "Proved chilly real frontier life"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Troops From Three Continents",
+                "dateChip": "AD 122–400",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Aurelian Moors",
+                "gloss": "Auxiliaries from Europe, Syria, and North Africa patrolled the Wall while families lived in vici towns like Arbeia.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Batavians, Syrians & North Africans",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Syrian archers",
+                    "gloss": "Aurelian Moors at Burgh-by-Sands; Guarded windy northern border.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Aurelian Moors at Burgh-by-Sands",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Syrian archers",
+                        "gloss": "Aurelian Moors at Burgh-by-Sands"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Guarded windy northern border",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Syrian archers",
+                        "gloss": "Guarded windy northern border"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Vici Towns: Barates, Regina, Victor",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Barates",
+                    "gloss": "Syrian Barates wed British Regina; Tombstone honoured Mauretanian Victor.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Syrian Barates wed British Regina",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Barates",
+                        "gloss": "Syrian Barates wed British Regina"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Tombstone honoured Mauretanian Victor",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Barates",
+                        "gloss": "Tombstone honoured Mauretanian Victor"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Multi-Continental Roman Britain",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "vici",
+                    "gloss": "Shopkeepers bustled outside Arbeia gates; Linked Europe, Syria, North Africa.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Shopkeepers bustled outside Arbeia gates",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "vici",
+                        "gloss": "Shopkeepers bustled outside Arbeia gates"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Linked Europe, Syria, North Africa",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "vici",
+                        "gloss": "Linked Europe, Syria, North Africa"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "3. Towns, AD 410 & Legacy",
+        "dateChip": "AD 100–Today",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "hypocaust",
+        "gloss": "Rome built 10,000 miles of straight stone highways, steam baths, and mosaic villas before legions left in AD 410, leaving roads, towns, letters, and calendar months.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Roads, Baths & Villas",
+            "dateChip": "AD 100–400",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "hypocaust",
+            "q2Chain": "10,000 miles of groma-sighted roads & forums → Aqueducts & hypocaust baths at Aquae Sulis → Mosaic villas vs 9-in-10 rural roundhouses",
+            "gloss": "10,000 miles of groma-sighted roads & forums → Aqueducts & hypocaust baths at Aquae Sulis → Mosaic villas vs 9-in-10 rural roundhouses",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "10,000 Miles of Straight Roads",
+                "dateChip": "1st–2nd C. AD",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "groma",
+                "gloss": "Using a wooden groma, surveyors laid 10,000 miles of cambered stone roads linking walled forum towns and Caerleon’s amphitheatre.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Groma Sighting & Cambered Stone",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "10,000 miles",
+                    "gloss": "Curved stones drained rain into ditches; Carts rolled fast all year.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Curved stones drained rain into ditches",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "10,000 miles",
+                        "gloss": "Curved stones drained rain into ditches"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Carts rolled fast all year",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "10,000 miles",
+                        "gloss": "Carts rolled fast all year"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Forums, Basilicas & Amphitheatres",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Caerleon",
+                    "gloss": "Grid towns centred on forums; Gladiator crowds cheered at Caerleon.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Grid towns centred on forums",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Caerleon",
+                        "gloss": "Grid towns centred on forums"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Gladiator crowds cheered at Caerleon",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Caerleon",
+                        "gloss": "Gladiator crowds cheered at Caerleon"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Created First Stone Urban Hubs",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "basilica",
+                    "gloss": "Replaced slow muddy dirt tracks; Brought fresh water into towns.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Replaced slow muddy dirt tracks",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "basilica",
+                        "gloss": "Replaced slow muddy dirt tracks"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Brought fresh water into towns",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "basilica",
+                        "gloss": "Brought fresh water into towns"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Aqueducts & Hypocaust Baths",
+                "dateChip": "1st–4th C. AD",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Aquae Sulis",
+                "gloss": "Aqueducts and lead pipes fed Aquae Sulis bathhouses heated underneath by furnace-fed hypocaust brick stacks.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Aqueducts, Pipes & Aquae Sulis",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "aqueducts",
+                    "gloss": "Fresh spring water fed fountains; Townsfolk chatted daily at Bath.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Fresh spring water fed fountains",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "aqueducts",
+                        "gloss": "Fresh spring water fed fountains"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Townsfolk chatted daily at Bath",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "aqueducts",
+                        "gloss": "Townsfolk chatted daily at Bath"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Hypocaust Heat & Bronze Strigils",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "strigil",
+                    "gloss": "Hot air blew between pilae; Scraped olive oil with strigils.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Hot air blew between pilae",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "strigil",
+                        "gloss": "Hot air blew between pilae"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Scraped olive oil with strigils",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "strigil",
+                        "gloss": "Scraped olive oil with strigils"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Luxury for Rich Town Elites",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "hypocaust",
+                    "gloss": "Enslaved workers stoked wood furnaces; Inspired grand southern country villas.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Enslaved workers stoked wood furnaces",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "hypocaust",
+                        "gloss": "Enslaved workers stoked wood furnaces"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Inspired grand southern country villas",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "hypocaust",
+                        "gloss": "Inspired grand southern country villas"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Mosaics vs 9-in-10 Roundhouses",
+                "dateChip": "AD 100–400",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Fishbourne Palace",
+                "gloss": "Rich elites laid mosaic floors at Fishbourne Palace, yet nearly nine in ten Britons kept farming in thatched roundhouses.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Fishbourne Mosaics & Garum Sauce",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "tesserae",
+                    "gloss": "Pressed tiny coloured tesserae cubes; Tasted cherries, walnuts, salty garum.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Pressed tiny coloured tesserae cubes",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "tesserae",
+                        "gloss": "Pressed tiny coloured tesserae cubes"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Tasted cherries, walnuts, salty garum",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "tesserae",
+                        "gloss": "Tasted cherries, walnuts, salty garum"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Nine in Ten Kept Roundhouses",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "nine out of ten",
+                    "gloss": "Spoke Celtic across rural farms; Still paid heavy Roman taxes.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Spoke Celtic across rural farms",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "nine out of ten",
+                        "gloss": "Spoke Celtic across rural farms"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Still paid heavy Roman taxes",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "nine out of ten",
+                        "gloss": "Still paid heavy Roman taxes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Rich Villas Beside Deep Continuity",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "mosaic",
+                    "gloss": "Towns changed far more than farms; Until coastal raiders struck c. 400.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Towns changed far more than farms",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "mosaic",
+                        "gloss": "Towns changed far more than farms"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Until coastal raiders struck c. 400",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "mosaic",
+                        "gloss": "Until coastal raiders struck c. 400"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Leaving AD 410 & Legacy",
+            "dateChip": "AD 410–Today",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Honorius",
+            "q2Chain": "Raiders strike & Honorius’s AD 410 reply → Bathhouses crumble & Hoxne silver buried → Roads, -chester towns, ABCs & calendar live on",
+            "gloss": "Raiders strike & Honorius’s AD 410 reply → Bathhouses crumble & Hoxne silver buried → Roads, -chester towns, ABCs & calendar live on",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Raiders & Honorius’s AD 410 Note",
+                "dateChip": "AD 400–410",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "Honorius",
+                "gloss": "As Picts, Scotti, Angles, and Saxons raided coasts and Visigoths threatened Rome, Emperor Honorius told Britain to defend itself in AD 410.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Coasts Raided & Rome Attacked",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Visigoth",
+                    "gloss": "Picts, Scotti, Angles, Saxons raided; Visigoths invaded Italy toward Rome.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Picts, Scotti, Angles, Saxons raided",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Visigoth",
+                        "gloss": "Picts, Scotti, Angles, Saxons raided"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Visigoths invaded Italy toward Rome",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Visigoth",
+                        "gloss": "Visigoths invaded Italy toward Rome"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "AD 410: Defend Yourselves Alone",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "AD 410",
+                    "gloss": "Legions sailed back across Channel; Honorius had zero spare soldiers.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Legions sailed back across Channel",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "AD 410",
+                        "gloss": "Legions sailed back across Channel"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Honorius had zero spare soldiers",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "AD 410",
+                        "gloss": "Honorius had zero spare soldiers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Ended 400 Years of Army Rule",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Angles and Saxons",
+                    "gloss": "Fresh wage coins stopped arriving; Town markets and potteries shrank.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Fresh wage coins stopped arriving",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Angles and Saxons",
+                        "gloss": "Fresh wage coins stopped arriving"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Town markets and potteries shrank",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Angles and Saxons",
+                        "gloss": "Town markets and potteries shrank"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "Crumbling Baths & Silver Hoards",
+                "dateChip": "After AD 410",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Hoxne Hoard",
+                "gloss": "As aqueducts and bathhouses crumbled, anxious rich families buried silver chests like the Hoxne Hoard and Mildenhall Treasure.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Coins Stopped & Baths Crumbled",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "crumbled",
+                    "gloss": "Nobody fixed leaky stone aqueducts; Fearing raiders along open coasts.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Nobody fixed leaky stone aqueducts",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "crumbled",
+                        "gloss": "Nobody fixed leaky stone aqueducts"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Fearing raiders along open coasts",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "crumbled",
+                        "gloss": "Fearing raiders along open coasts"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Hoxne & Mildenhall Silver Buried",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Mildenhall Treasure",
+                    "gloss": "Hid gold coins, silver spoons; Suffolk farmers ploughed them up.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Hid gold coins, silver spoons",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Mildenhall Treasure",
+                        "gloss": "Hid gold coins, silver spoons"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Suffolk farmers ploughed them up",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Mildenhall Treasure",
+                        "gloss": "Suffolk farmers ploughed them up"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Saved Glittering Time Capsules",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "hoard",
+                    "gloss": "Many owners never came home; Revealed final Romano-British wealth.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Many owners never came home",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "hoard",
+                        "gloss": "Many owners never came home"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Revealed final Romano-British wealth",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "hoard",
+                        "gloss": "Revealed final Romano-British wealth"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "Roman Clues Around Us Today",
+                "dateChip": "AD 410–Today",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Roman numerals",
+                "gloss": "London, straight A-roads, -chester fort names, Latin ABCs, Roman numerals, July and August, and apples still shape Britain.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "London, A-Roads & -Chester Towns",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "castra",
+                    "gloss": "Londinium grew into modern London; -chester marks Roman castra forts.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Londinium grew into modern London",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "castra",
+                        "gloss": "Londinium grew into modern London"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "-chester marks Roman castra forts",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "castra",
+                        "gloss": "-chester marks Roman castra forts"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Latin ABCs, Clocks & Calendar",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "12-month calendar",
+                    "gloss": "ABC letters and I, V, X; July, August, Christianity, sweet apples.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "ABC letters and I, V, X",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "12-month calendar",
+                        "gloss": "ABC letters and I, V, X"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "July, August, Christianity, sweet apples",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "12-month calendar",
+                        "gloss": "July, August, Christianity, sweet apples"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Shaped Everyday British Life",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "stinging nettles",
+                    "gloss": "Brought cabbages, rabbits, and nettles; Set stage for Anglo-Saxon settlers.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Brought cabbages, rabbits, and nettles",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "stinging nettles",
+                        "gloss": "Brought cabbages, rabbits, and nettles"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Set stage for Anglo-Saxon settlers",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "stinging nettles",
+                        "gloss": "Set stage for Anglo-Saxon settlers"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

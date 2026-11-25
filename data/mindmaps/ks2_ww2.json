@@ -1,0 +1,2463 @@
+{
+  "unitId": "ks2_ww2",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "World War II & The Home Front (1933–1945)",
+  "examDateBoundary": "1933–1945",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "WWII & The Home Front",
+    "subLabel": "Key Stage 2",
+    "dateChip": "1933–1945",
+    "gloss": "How World War II transformed children’s and families’ lives across Britain and Europe — from evacuation, Kindertransport, and the Blitz to rationing, Bletchley Park, VE Day, and Windermere.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "1. Outbreak & Child Rescues",
+        "dateChip": "1933–1939",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Blackout",
+        "gloss": "From Nazi anti-Jewish laws, Kindertransport suitcases, and Nicholas Winton’s 669 Prague children to Britain’s September 1939 radio outbreak, Blackout, and Operation Pied Piper.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Outbreak 1939 & Blackout",
+            "dateChip": "Sept 1939",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Blackout",
+            "q2Chain": "Chamberlain’s 3 Sept 1939 radio broadcast & 38m gas masks → Pitch-dark Blackout curtains & 1.4m ARP wardens",
+            "gloss": "Chamberlain’s 3 Sept 1939 radio broadcast & 38m gas masks → Pitch-dark Blackout curtains & 1.4m ARP wardens",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "3 Sept Broadcast & Gas Masks",
+                "dateChip": "Sept 1939",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Neville Chamberlain",
+                "gloss": "After Hitler invaded Poland, Neville Chamberlain announced war on 3 September 1939 and families carried 38 million free gas masks.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Hitler Invaded Poland 1 Sept 1939",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Poland",
+                    "gloss": "Chamberlain spoke 11:15am by wireless; First London siren sounded minutes.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Chamberlain spoke 11:15am by wireless",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Poland",
+                        "gloss": "Chamberlain spoke 11:15am by wireless"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "First London siren sounded minutes",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Poland",
+                        "gloss": "First London siren sounded minutes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "38 Million Free Gas Mask Boxes",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "38 million",
+                    "gloss": "Red-and-blue Mickey Mouse toddler masks; Carried cardboard boxes on strings.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Red-and-blue Mickey Mouse toddler masks",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "38 million",
+                        "gloss": "Red-and-blue Mickey Mouse toddler masks"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Carried cardboard boxes on strings",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "38 million",
+                        "gloss": "Carried cardboard boxes on strings"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Switched Off Lights in Blackout",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "air raid siren",
+                    "gloss": "Feared poison gas on towns; War reached ordinary family streets.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Feared poison gas on towns",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "air raid siren",
+                        "gloss": "Feared poison gas on towns"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "War reached ordinary family streets",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "air raid siren",
+                        "gloss": "War reached ordinary family streets"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Blackout & 1.4m ARP Wardens",
+                "dateChip": "From 1 Sept 1939",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "ARP",
+                "gloss": "Thick black curtains hid towns from German night bombers while white kerb stripes and 1.4 million ARP wardens guarded dark streets.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Hide Cities From Night Bombers",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Blackout",
+                    "gloss": "Thick black curtains covered windows; Slotted hoods dimmed car headlamps.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Thick black curtains covered windows",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Blackout",
+                        "gloss": "Thick black curtains covered windows"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Slotted hoods dimmed car headlamps",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Blackout",
+                        "gloss": "Slotted hoods dimmed car headlamps"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "White Kerbs & “Put Light Out!”",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "white stripes",
+                    "gloss": "1.4m ARP wardens wore W-helmets; Painted white stripes on kerbs.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "1.4m ARP wardens wore W-helmets",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "white stripes",
+                        "gloss": "1.4m ARP wardens wore W-helmets"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Painted white stripes on kerbs",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "white stripes",
+                        "gloss": "Painted white stripes on kerbs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Triggered Pied Piper Evacuation",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "1 September 1939",
+                    "gloss": "Guarded dark streets every night; City children boarded country trains.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Guarded dark streets every night",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "1 September 1939",
+                        "gloss": "Guarded dark streets every night"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "City children boarded country trains",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "1 September 1939",
+                        "gloss": "City children boarded country trains"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Operation Pied Piper",
+            "dateChip": "1939–1940",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Operation Pied Piper",
+            "q2Chain": "1.5 million evacuees board trains with luggage labels (1 Sept 1939) → Village hall billeting & mixed country farm lives",
+            "gloss": "1.5 million evacuees board trains with luggage labels (1 Sept 1939) → Village hall billeting & mixed country farm lives",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "1.5m Evacuees & Coat Labels",
+                "dateChip": "1 Sept 1939",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "cardboard luggage label",
+                "gloss": "Starting on 1 September 1939, Operation Pied Piper sent 1.5 million city children and mothers with pinned luggage labels onto country trains.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Protect Children From City Bombs",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "1.5 million",
+                    "gloss": "Biggest movement in British history; Walked in school station lines.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Biggest movement in British history",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "1.5 million",
+                        "gloss": "Biggest movement in British history"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Walked in school station lines",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "1.5 million",
+                        "gloss": "Walked in school station lines"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Luggage Labels & Barrier Goodbyes",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "station barriers",
+                    "gloss": "Carried gas mask and sandwiches; Parents kissed outside station barriers.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Carried gas mask and sandwiches",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "station barriers",
+                        "gloss": "Carried gas mask and sandwiches"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Parents kissed outside station barriers",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "station barriers",
+                        "gloss": "Parents kissed outside station barriers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Lined Up in Village Halls",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Operation Pied Piper",
+                    "gloss": "Rode steam trains to Devon; Met local Billeting Officers next.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Rode steam trains to Devon",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Operation Pied Piper",
+                        "gloss": "Rode steam trains to Devon"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Met local Billeting Officers next",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Operation Pied Piper",
+                        "gloss": "Met local Billeting Officers next"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Billeting & Country Farm Life",
+                "dateChip": "1939–1940",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Billeting Officer",
+                "gloss": "Volunteer Billeting Officers matched nervous evacuees to rural host families, bringing farm surprises and very mixed experiences.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Billeting Choice in Village Halls",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "host family",
+                    "gloss": "Spare bedrooms required by law; Siblings hoped not to split.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Spare bedrooms required by law",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "host family",
+                        "gloss": "Spare bedrooms required by law"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Siblings hoped not to split",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "host family",
+                        "gloss": "Siblings hoped not to split"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Live Cows, Apples & Mixed Homes",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Phoney War",
+                    "gloss": "First sight of cows, pigs; Warm friendships vs lonely homes.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "First sight of cows, pigs",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Phoney War",
+                        "gloss": "First sight of cows, pigs"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Warm friendships vs lonely homes",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Phoney War",
+                        "gloss": "Warm friendships vs lonely homes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Saved Lives When 1940 Blitz Hit",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Billeting Officer",
+                    "gloss": "Some returned in Phoney War; Evacuated again during 1940 raids.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Some returned in Phoney War",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Billeting Officer",
+                        "gloss": "Some returned in Phoney War"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Evacuated again during 1940 raids",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Billeting Officer",
+                        "gloss": "Evacuated again during 1940 raids"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Pre-War Jewish Life & Laws",
+            "dateChip": "1933–1938",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Kristallnacht",
+            "q2Chain": "9m European Jews & ordinary Schultüte childhoods → 400+ Nazi laws & November 1938 Pogrom ban Jewish schoolchildren",
+            "gloss": "9m European Jews & ordinary Schultüte childhoods → 400+ Nazi laws & November 1938 Pogrom ban Jewish schoolchildren",
+            "children": [
+              {
+                "id": "kt1_3_s1",
+                "tier": 3,
+                "label": "Childhoods & Anti-Jewish Laws",
+                "dateChip": "Pre-1933–1937",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Schultüte",
+                "gloss": "Jewish children once carried sweet-filled Schultüte cones to school, until Hitler’s 1933 Nazi Party passed over 400 unfair laws.",
+                "children": [
+                  {
+                    "id": "kt1_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "9m Citizens & Schultüte Cones",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "9 million",
+                    "gloss": "Doctors, shops, football, scout groups; Children carried sweet Schultüte cones.",
+                    "children": [
+                      {
+                        "id": "kt1_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Doctors, shops, football, scout groups",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "9 million",
+                        "gloss": "Doctors, shops, football, scout groups"
+                      },
+                      {
+                        "id": "kt1_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Children carried sweet Schultüte cones",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "9 million",
+                        "gloss": "Children carried sweet Schultüte cones"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "400+ Laws & 1935 Nuremberg Laws",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Nuremberg Laws",
+                    "gloss": "Stripped German Jews’ citizenship rights; Banned parks, pools, bicycles, pets.",
+                    "children": [
+                      {
+                        "id": "kt1_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Stripped German Jews’ citizenship rights",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Nuremberg Laws",
+                        "gloss": "Stripped German Jews’ citizenship rights"
+                      },
+                      {
+                        "id": "kt1_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Banned parks, pools, bicycles, pets",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Nuremberg Laws",
+                        "gloss": "Banned parks, pools, bicycles, pets"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Escalated to November 1938 Pogrom",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "civil rights",
+                    "gloss": "Boycotted Jewish shops April 1933; Cut families off from neighbours.",
+                    "children": [
+                      {
+                        "id": "kt1_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Boycotted Jewish shops April 1933",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "civil rights",
+                        "gloss": "Boycotted Jewish shops April 1933"
+                      },
+                      {
+                        "id": "kt1_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Cut families off from neighbours",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "civil rights",
+                        "gloss": "Cut families off from neighbours"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s2",
+                "tier": 3,
+                "label": "Kristallnacht & School Expulsion",
+                "dateChip": "Nov 1938",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "15 November 1938",
+                "gloss": "During the violent November 1938 Pogrom (Kristallnacht), gangs burned synagogues and banned all Jewish children from German state schools.",
+                "children": [
+                  {
+                    "id": "kt1_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Synagogues Burned & 30,000 Arrested",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Kristallnacht",
+                    "gloss": "Smashed thousands of shop windows; Arrested 30,000 Jewish men.",
+                    "children": [
+                      {
+                        "id": "kt1_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Smashed thousands of shop windows",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Kristallnacht",
+                        "gloss": "Smashed thousands of shop windows"
+                      },
+                      {
+                        "id": "kt1_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Arrested 30,000 Jewish men",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Kristallnacht",
+                        "gloss": "Arrested 30,000 Jewish men"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "15 Nov: Banned From State Schools",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "state schools",
+                    "gloss": "Jewish teachers sacked from classrooms; Forced pupils onto separate benches.",
+                    "children": [
+                      {
+                        "id": "kt1_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Jewish teachers sacked from classrooms",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "state schools",
+                        "gloss": "Jewish teachers sacked from classrooms"
+                      },
+                      {
+                        "id": "kt1_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Forced pupils onto separate benches",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "state schools",
+                        "gloss": "Forced pupils onto separate benches"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Sparked 1938 Kindertransport Rescue",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "November Pogrom",
+                    "gloss": "Terrified parents sought foreign safety; Shocked British newspapers and MPs.",
+                    "children": [
+                      {
+                        "id": "kt1_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Terrified parents sought foreign safety",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "November Pogrom",
+                        "gloss": "Terrified parents sought foreign safety"
+                      },
+                      {
+                        "id": "kt1_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Shocked British newspapers and MPs",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "November Pogrom",
+                        "gloss": "Shocked British newspapers and MPs"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. The Kindertransport Rescue",
+            "dateChip": "1938–1939",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Kindertransport",
+            "q2Chain": "Parliament admits 10,000 unaccompanied children → Nine-year-old Vera’s one small suitcase to Liverpool Street Station",
+            "gloss": "Parliament admits 10,000 unaccompanied children → Nine-year-old Vera’s one small suitcase to Liverpool Street Station",
+            "children": [
+              {
+                "id": "kt1_4_s1",
+                "tier": 3,
+                "label": "10,000 Children & £50 Sponsors",
+                "dateChip": "Dec 1938–Sept 1939",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Kindertransport",
+                "gloss": "After Kristallnacht, Parliament sped up permits for nearly 10,000 unaccompanied child refugees backed by £50 British sponsors.",
+                "children": [
+                  {
+                    "id": "kt1_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Charities Begged MPs After Pogrom",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Parliament",
+                    "gloss": "Jewish and Quaker charities begged MPs; Sped permits for under-seventeens.",
+                    "children": [
+                      {
+                        "id": "kt1_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Jewish and Quaker charities begged MPs",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Parliament",
+                        "gloss": "Jewish and Quaker charities begged MPs"
+                      },
+                      {
+                        "id": "kt1_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Sped permits for under-seventeens",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Parliament",
+                        "gloss": "Sped permits for under-seventeens"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "10,000 Rescued Without Parents",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "£50",
+                    "gloss": "Parents forbidden to travel alongside; Needed £50 British care sponsor.",
+                    "children": [
+                      {
+                        "id": "kt1_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Parents forbidden to travel alongside",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "£50",
+                        "gloss": "Parents forbidden to travel alongside"
+                      },
+                      {
+                        "id": "kt1_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Needed £50 British care sponsor",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "£50",
+                        "gloss": "Needed £50 British care sponsor"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Families Packed One Small Suitcase",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "10,000",
+                    "gloss": "Left Germany, Austria, Prague, Poland; Raced before September 1939 war.",
+                    "children": [
+                      {
+                        "id": "kt1_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Left Germany, Austria, Prague, Poland",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "10,000",
+                        "gloss": "Left Germany, Austria, Prague, Poland"
+                      },
+                      {
+                        "id": "kt1_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Raced before September 1939 war",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "10,000",
+                        "gloss": "Raced before September 1939 war"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_4_s2",
+                "tier": 3,
+                "label": "Vera’s Suitcase to Liverpool St",
+                "dateChip": "May–Aug 1939",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Vera Schaufeld",
+                "gloss": "Nine-year-old Vera Löwyová packed her diary and porcelain doll in Prague, sailing from the Hook of Holland to London foster care.",
+                "children": [
+                  {
+                    "id": "kt1_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Vera’s Diary & Porcelain Doll",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "porcelain doll",
+                    "gloss": "Nine-year-old waved at Prague station; One small suitcase, ten Reichsmarks.",
+                    "children": [
+                      {
+                        "id": "kt1_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Nine-year-old waved at Prague station",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "porcelain doll",
+                        "gloss": "Nine-year-old waved at Prague station"
+                      },
+                      {
+                        "id": "kt1_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "One small suitcase, ten Reichsmarks",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "porcelain doll",
+                        "gloss": "One small suitcase, ten Reichsmarks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Dutch Hot Chocolate to Harwich",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Liverpool Street Station",
+                    "gloss": "Kind women served hot chocolate; Ferry to Harwich, London fosterers.",
+                    "children": [
+                      {
+                        "id": "kt1_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Kind women served hot chocolate",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Liverpool Street Station",
+                        "gloss": "Kind women served hot chocolate"
+                      },
+                      {
+                        "id": "kt1_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Ferry to Harwich, London fosterers",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Liverpool Street Station",
+                        "gloss": "Ferry to Harwich, London fosterers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Saved 10,000 Young Lives",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Hook of Holland",
+                    "gloss": "Borders slammed shut September 1939; Vera never saw parents again.",
+                    "children": [
+                      {
+                        "id": "kt1_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Borders slammed shut September 1939",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Hook of Holland",
+                        "gloss": "Borders slammed shut September 1939"
+                      },
+                      {
+                        "id": "kt1_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Vera never saw parents again",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Hook of Holland",
+                        "gloss": "Vera never saw parents again"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Winton & 669 From Prague",
+            "dateChip": "1938–39 & 1988",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Nicholas Winton",
+            "q2Chain": "Winton cancels skiing trip & works with Warriner & Chadwick → Eight Prague trains save 669 children & 1988 scrapbook reunion",
+            "gloss": "Winton cancels skiing trip & works with Warriner & Chadwick → Eight Prague trains save 669 children & 1988 scrapbook reunion",
+            "children": [
+              {
+                "id": "kt1_5_s1",
+                "tier": 3,
+                "label": "Prague Upstanders & Rescue Team",
+                "dateChip": "Dec 1938–1939",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Doreen Warriner",
+                "gloss": "Cancelling his Swiss ski trip, Nicholas Winton teamed up with Doreen Warriner, Trevor Chadwick, and mother Babi to rescue Prague children.",
+                "children": [
+                  {
+                    "id": "kt1_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Martin Blake’s Urgent Prague Call",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Martin Blake",
+                    "gloss": "Cancelled Switzerland skiing holiday; Chose upstander over quiet bystander.",
+                    "children": [
+                      {
+                        "id": "kt1_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Cancelled Switzerland skiing holiday",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Martin Blake",
+                        "gloss": "Cancelled Switzerland skiing holiday"
+                      },
+                      {
+                        "id": "kt1_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Chose upstander over quiet bystander",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Martin Blake",
+                        "gloss": "Chose upstander over quiet bystander"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Warriner, Chadwick & Mother Babi",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Trevor Chadwick",
+                    "gloss": "Chadwick led children past guards; Babi pressed Home Office visas.",
+                    "children": [
+                      {
+                        "id": "kt1_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Chadwick led children past guards",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Trevor Chadwick",
+                        "gloss": "Chadwick led children past guards"
+                      },
+                      {
+                        "id": "kt1_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Babi pressed Home Office visas",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Trevor Chadwick",
+                        "gloss": "Babi pressed Home Office visas"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Organised Eight Prague Trains",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "upstander",
+                    "gloss": "Printed children’s photos in papers; Found £50 sponsors and homes.",
+                    "children": [
+                      {
+                        "id": "kt1_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Printed children’s photos in papers",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "upstander",
+                        "gloss": "Printed children’s photos in papers"
+                      },
+                      {
+                        "id": "kt1_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Found £50 sponsors and homes",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "upstander",
+                        "gloss": "Found £50 sponsors and homes"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_5_s2",
+                "tier": 3,
+                "label": "669 Saved & 1988 Attic Scrapbook",
+                "dateChip": "1939 & 1988",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "669 children",
+                "gloss": "Eight trains brought 669 children safely to London before war stopped the ninth train; fifty years later, Winton’s attic scrapbook reunited them.",
+                "children": [
+                  {
+                    "id": "kt1_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Eight Trains Saved 669 Children",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "669 children",
+                    "gloss": "Included Vera’s May 1939 train; 1 Sept war stopped ninth.",
+                    "children": [
+                      {
+                        "id": "kt1_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Included Vera’s May 1939 train",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "669 children",
+                        "gloss": "Included Vera’s May 1939 train"
+                      },
+                      {
+                        "id": "kt1_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "1 Sept war stopped ninth",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "669 children",
+                        "gloss": "1 Sept war stopped ninth"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Grete Found 1939 Attic Scrapbook",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "1988",
+                    "gloss": "Kept secret nearly fifty years; Saved adults stood on BBC.",
+                    "children": [
+                      {
+                        "id": "kt1_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Kept secret nearly fifty years",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "1988",
+                        "gloss": "Kept secret nearly fifty years"
+                      },
+                      {
+                        "id": "kt1_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Saved adults stood on BBC",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "1988",
+                        "gloss": "Saved adults stood on BBC"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Proved One Team’s Moral Courage",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "scrapbook",
+                    "gloss": "Listed all 669 rescued names; Inspired classrooms around the world.",
+                    "children": [
+                      {
+                        "id": "kt1_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Listed all 669 rescued names",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "scrapbook",
+                        "gloss": "Listed all 669 rescued names"
+                      },
+                      {
+                        "id": "kt1_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Inspired classrooms around the world",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "scrapbook",
+                        "gloss": "Inspired classrooms around the world"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "2. Blitz, Rations & War Work",
+        "dateChip": "1940–1945",
+        "lessonIndex": 5,
+        "stageIndex": 0,
+        "searchTerm": "The Blitz",
+        "gloss": "Through 57 straight nights of the Blitz and U-boat blockades, British families sheltered underground, grew Dig for Victory veg, worked in factories, and cracked Enigma.",
+        "children": [
+          {
+            "id": "kt2_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. The Blitz & Raid Shelters",
+            "dateChip": "1940–1941",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "The Blitz",
+            "q2Chain": "Black Saturday starts 57 nights of bombing & Anderson/Morrison shelters → 150,000 on Tube platforms & volunteer firewatchers",
+            "gloss": "Black Saturday starts 57 nights of bombing & Anderson/Morrison shelters → 150,000 on Tube platforms & volunteer firewatchers",
+            "children": [
+              {
+                "id": "kt2_6_s1",
+                "tier": 3,
+                "label": "57 Blitz Nights & Home Shelters",
+                "dateChip": "Sept 1940–1941",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "Anderson shelters",
+                "gloss": "From Black Saturday (7 Sept 1940), bombers hit London for 57 nights plus UK cities while families used Anderson and Morrison shelters.",
+                "children": [
+                  {
+                    "id": "kt2_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Black Saturday & Industrial Cities",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Black Saturday",
+                    "gloss": "Bombed London 57 straight nights; Hit Coventry, Liverpool, Hull, Belfast.",
+                    "children": [
+                      {
+                        "id": "kt2_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Bombed London 57 straight nights",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Black Saturday",
+                        "gloss": "Bombed London 57 straight nights"
+                      },
+                      {
+                        "id": "kt2_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Hit Coventry, Liverpool, Hull, Belfast",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Black Saturday",
+                        "gloss": "Hit Coventry, Liverpool, Hull, Belfast"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Garden Anderson & Table Morrison",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Morrison shelters",
+                    "gloss": "2m steel Andersons under soil; Indoor steel-mesh Morrison table cages.",
+                    "children": [
+                      {
+                        "id": "kt2_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "2m steel Andersons under soil",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Morrison shelters",
+                        "gloss": "2m steel Andersons under soil"
+                      },
+                      {
+                        "id": "kt2_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Indoor steel-mesh Morrison table cages",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Morrison shelters",
+                        "gloss": "Indoor steel-mesh Morrison table cages"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ 150,000 Slept Deep in Tube",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "St Paul's Cathedral",
+                    "gloss": "Firewatchers saved St Paul’s dome; Shielded families from bomb blasts.",
+                    "children": [
+                      {
+                        "id": "kt2_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Firewatchers saved St Paul’s dome",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "St Paul's Cathedral",
+                        "gloss": "Firewatchers saved St Paul’s dome"
+                      },
+                      {
+                        "id": "kt2_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Shielded families from bomb blasts",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "St Paul's Cathedral",
+                        "gloss": "Shielded families from bomb blasts"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_6_s2",
+                "tier": 3,
+                "label": "Tube Platforms & Fire Volunteers",
+                "dateChip": "1940–1941",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Tube station platforms",
+                "gloss": "Over 150,000 Londoners slept on bunk-fitted Tube platforms while AFS firefighters, rooftop firewatchers, and WVS canteens worked overhead.",
+                "children": [
+                  {
+                    "id": "kt2_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "150,000 on Bunk-Bed Tube Platforms",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "150,000 people",
+                    "gloss": "Queued with blankets, tea flasks; Triple bunks and lending libraries.",
+                    "children": [
+                      {
+                        "id": "kt2_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Queued with blankets, tea flasks",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "150,000 people",
+                        "gloss": "Queued with blankets, tea flasks"
+                      },
+                      {
+                        "id": "kt2_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Triple bunks and lending libraries",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "150,000 people",
+                        "gloss": "Triple bunks and lending libraries"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "AFS, Stirrup Pumps & WVS Tea",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "stirrup pumps",
+                    "gloss": "Sandbags doused rooftop incendiary bombs; WVS mobile canteens rehoused families.",
+                    "children": [
+                      {
+                        "id": "kt2_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Sandbags doused rooftop incendiary bombs",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "stirrup pumps",
+                        "gloss": "Sandbags doused rooftop incendiary bombs"
+                      },
+                      {
+                        "id": "kt2_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "WVS mobile canteens rehoused families",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "stirrup pumps",
+                        "gloss": "WVS mobile canteens rehoused families"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Civilian Teamwork Refused Surrender",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Women's Voluntary Services",
+                    "gloss": "Kept ports and factories running; Meanwhile U-boats threatened food ships.",
+                    "children": [
+                      {
+                        "id": "kt2_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Kept ports and factories running",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Women's Voluntary Services",
+                        "gloss": "Kept ports and factories running"
+                      },
+                      {
+                        "id": "kt2_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Meanwhile U-boats threatened food ships",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Women's Voluntary Services",
+                        "gloss": "Meanwhile U-boats threatened food ships"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_7",
+            "code": "7",
+            "tier": 2,
+            "label": "7. Rationing & Dig for Victory",
+            "dateChip": "1940–1945",
+            "lessonIndex": 6,
+            "stageIndex": 0,
+            "searchTerm": "Dig for Victory",
+            "q2Chain": "Atlantic U-boats sink food ships & Jan 1940 ration books → 1.4m Dig for Victory allotments & healthier British children",
+            "gloss": "Atlantic U-boats sink food ships & Jan 1940 ration books → 1.4m Dig for Victory allotments & healthier British children",
+            "children": [
+              {
+                "id": "kt2_7_s1",
+                "tier": 3,
+                "label": "U-Boats & Fair-Shares Coupons",
+                "dateChip": "Jan 1940–1945",
+                "lessonIndex": 6,
+                "stageIndex": 0,
+                "searchTerm": "ration book",
+                "gloss": "Because German U-boats sank Atlantic food ships, the Ministry of Food launched coupon ration books in January 1940 for fair shares.",
+                "children": [
+                  {
+                    "id": "kt2_7_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "U-Boats Sank 70% Imported Food",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "U-boat submarines",
+                    "gloss": "Hunted merchant convoys in Atlantic; Stopped rich hoarding scarce food.",
+                    "children": [
+                      {
+                        "id": "kt2_7_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Hunted merchant convoys in Atlantic",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "U-boat submarines",
+                        "gloss": "Hunted merchant convoys in Atlantic"
+                      },
+                      {
+                        "id": "kt2_7_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Stopped rich hoarding scarce food",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "U-boat submarines",
+                        "gloss": "Stopped rich hoarding scarce food"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_7_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "One Egg, 50g Butter & Coupons",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "coupons",
+                    "gloss": "Two bacon rashers, tinned Spam; Green books gave cod-liver oil.",
+                    "children": [
+                      {
+                        "id": "kt2_7_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Two bacon rashers, tinned Spam",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "coupons",
+                        "gloss": "Two bacon rashers, tinned Spam"
+                      },
+                      {
+                        "id": "kt2_7_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Green books gave cod-liver oil",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "coupons",
+                        "gloss": "Green books gave cod-liver oil"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_7_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Families Planted Every Spare Lawn",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "Fair Shares for All",
+                    "gloss": "Home-grown veg stayed unrationed; Launched nationwide Dig for Victory.",
+                    "children": [
+                      {
+                        "id": "kt2_7_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Home-grown veg stayed unrationed",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "Fair Shares for All",
+                        "gloss": "Home-grown veg stayed unrationed"
+                      },
+                      {
+                        "id": "kt2_7_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Launched nationwide Dig for Victory",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "Fair Shares for All",
+                        "gloss": "Launched nationwide Dig for Victory"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_7_s2",
+                "tier": 3,
+                "label": "1.4m Allotments & Potato Pete",
+                "dateChip": "1940–1945",
+                "lessonIndex": 6,
+                "stageIndex": 2,
+                "searchTerm": "Potato Pete",
+                "gloss": "Families dug 1.4 million allotments — even in the Tower of London moat — and ate Woolton Pie, helping children grow taller and healthier.",
+                "children": [
+                  {
+                    "id": "kt2_7_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Tower Moat & 1.4m Allotments",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "1.4 million allotments",
+                    "gloss": "Dug parks, greens, school fields; Planted Tower of London moat.",
+                    "children": [
+                      {
+                        "id": "kt2_7_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Dug parks, greens, school fields",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "1.4 million allotments",
+                        "gloss": "Dug parks, greens, school fields"
+                      },
+                      {
+                        "id": "kt2_7_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Planted Tower of London moat",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "1.4 million allotments",
+                        "gloss": "Planted Tower of London moat"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_7_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Doctor Carrot & Woolton Pie",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "Lord Woolton Pie",
+                    "gloss": "Carrot fudge replaced rationed sweets; Oatmeal root-veg Lord Woolton Pie.",
+                    "children": [
+                      {
+                        "id": "kt2_7_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Carrot fudge replaced rationed sweets",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "Lord Woolton Pie",
+                        "gloss": "Carrot fudge replaced rationed sweets"
+                      },
+                      {
+                        "id": "kt2_7_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Oatmeal root-veg Lord Woolton Pie",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "Lord Woolton Pie",
+                        "gloss": "Oatmeal root-veg Lord Woolton Pie"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_7_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Children Grew Taller & Healthier",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "taller and healthier",
+                    "gloss": "Less sugar, more fresh veg; Women Land Girls harvested farms.",
+                    "children": [
+                      {
+                        "id": "kt2_7_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Less sugar, more fresh veg",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "taller and healthier",
+                        "gloss": "Less sugar, more fresh veg"
+                      },
+                      {
+                        "id": "kt2_7_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Women Land Girls harvested farms",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "taller and healthier",
+                        "gloss": "Women Land Girls harvested farms"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_8",
+            "code": "8",
+            "tier": 2,
+            "label": "8. Women at War (1941–1945)",
+            "dateChip": "1941–1945",
+            "lessonIndex": 7,
+            "stageIndex": 0,
+            "searchTerm": "Land Girls",
+            "q2Chain": "Dec 1941 National Service Act & 80,000 Land Girls / Lumberjills → Munitions Canary Girls & 168 ATA Spitfire ferry pilots",
+            "gloss": "Dec 1941 National Service Act & 80,000 Land Girls / Lumberjills → Munitions Canary Girls & 168 ATA Spitfire ferry pilots",
+            "children": [
+              {
+                "id": "kt2_8_s1",
+                "tier": 3,
+                "label": "1941 Call-Up & 80,000 Land Girls",
+                "dateChip": "1941–1945",
+                "lessonIndex": 7,
+                "stageIndex": 0,
+                "searchTerm": "National Service Act",
+                "gloss": "Parliament’s December 1941 National Service Act called up unmarried women aged 20–30 as 80,000 Land Girls and Lumberjills supplied Britain.",
+                "children": [
+                  {
+                    "id": "kt2_8_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Dec 1941 Conscription Aged 20–30",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "conscription",
+                    "gloss": "Millions of men fought overseas; Princess Elizabeth trained in ATS.",
+                    "children": [
+                      {
+                        "id": "kt2_8_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Millions of men fought overseas",
+                        "lessonIndex": 7,
+                        "stageIndex": 0,
+                        "searchTerm": "conscription",
+                        "gloss": "Millions of men fought overseas"
+                      },
+                      {
+                        "id": "kt2_8_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Princess Elizabeth trained in ATS",
+                        "lessonIndex": 7,
+                        "stageIndex": 0,
+                        "searchTerm": "conscription",
+                        "gloss": "Princess Elizabeth trained in ATS"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_8_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "80,000 Land Girls & Lumberjills",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "Lumberjills",
+                    "gloss": "Ploughed wheat, milked cows, rats; Felled pines for mine props.",
+                    "children": [
+                      {
+                        "id": "kt2_8_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Ploughed wheat, milked cows, rats",
+                        "lessonIndex": 7,
+                        "stageIndex": 0,
+                        "searchTerm": "Lumberjills",
+                        "gloss": "Ploughed wheat, milked cows, rats"
+                      },
+                      {
+                        "id": "kt2_8_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Felled pines for mine props",
+                        "lessonIndex": 7,
+                        "stageIndex": 0,
+                        "searchTerm": "Lumberjills",
+                        "gloss": "Felled pines for mine props"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_8_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Kept Food & Factories Running",
+                    "lessonIndex": 7,
+                    "stageIndex": 0,
+                    "searchTerm": "corduroy breeches",
+                    "gloss": "Beat Atlantic U-boat blockade shortages; Nearly 1m entered shell factories.",
+                    "children": [
+                      {
+                        "id": "kt2_8_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Beat Atlantic U-boat blockade shortages",
+                        "lessonIndex": 7,
+                        "stageIndex": 0,
+                        "searchTerm": "corduroy breeches",
+                        "gloss": "Beat Atlantic U-boat blockade shortages"
+                      },
+                      {
+                        "id": "kt2_8_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Nearly 1m entered shell factories",
+                        "lessonIndex": 7,
+                        "stageIndex": 0,
+                        "searchTerm": "corduroy breeches",
+                        "gloss": "Nearly 1m entered shell factories"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_8_s2",
+                "tier": 3,
+                "label": "Canary Girls & Spitfire Pilots",
+                "dateChip": "1940–1945",
+                "lessonIndex": 7,
+                "stageIndex": 2,
+                "searchTerm": "Canary Girls",
+                "gloss": "Munitions workers risked yellow-staining TNT blasts while 168 female ATA pilots like Maureen Dunlop ferried Spitfires and Lancasters.",
+                "children": [
+                  {
+                    "id": "kt2_8_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Yellow TNT Skin & Wooden Shoes",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "cordite",
+                    "gloss": "Packed explosive TNT and cordite; Wore wooden soles, zero hairpins.",
+                    "children": [
+                      {
+                        "id": "kt2_8_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Packed explosive TNT and cordite",
+                        "lessonIndex": 7,
+                        "stageIndex": 2,
+                        "searchTerm": "cordite",
+                        "gloss": "Packed explosive TNT and cordite"
+                      },
+                      {
+                        "id": "kt2_8_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Wore wooden soles, zero hairpins",
+                        "lessonIndex": 7,
+                        "stageIndex": 2,
+                        "searchTerm": "cordite",
+                        "gloss": "Wore wooden soles, zero hairpins"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_8_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "168 ATA Pilots & Equal Pay",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "Maureen Dunlop",
+                    "gloss": "Flew Spitfires using paper maps; Won equal ATA pay 1943.",
+                    "children": [
+                      {
+                        "id": "kt2_8_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Flew Spitfires using paper maps",
+                        "lessonIndex": 7,
+                        "stageIndex": 2,
+                        "searchTerm": "Maureen Dunlop",
+                        "gloss": "Flew Spitfires using paper maps"
+                      },
+                      {
+                        "id": "kt2_8_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Won equal ATA pay 1943",
+                        "lessonIndex": 7,
+                        "stageIndex": 2,
+                        "searchTerm": "Maureen Dunlop",
+                        "gloss": "Won equal ATA pay 1943"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_8_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Transformed Views of Women’s Work",
+                    "lessonIndex": 7,
+                    "stageIndex": 2,
+                    "searchTerm": "Spitfires",
+                    "gloss": "Mastered heavy engineering and flight; 7,500 women also ran Bletchley.",
+                    "children": [
+                      {
+                        "id": "kt2_8_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Mastered heavy engineering and flight",
+                        "lessonIndex": 7,
+                        "stageIndex": 2,
+                        "searchTerm": "Spitfires",
+                        "gloss": "Mastered heavy engineering and flight"
+                      },
+                      {
+                        "id": "kt2_8_s2_p3_t2",
+                        "tier": 5,
+                        "label": "7,500 women also ran Bletchley",
+                        "lessonIndex": 7,
+                        "stageIndex": 2,
+                        "searchTerm": "Spitfires",
+                        "gloss": "7,500 women also ran Bletchley"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_9",
+            "code": "9",
+            "tier": 2,
+            "label": "9. Codebreakers at Bletchley",
+            "dateChip": "1939–1945",
+            "lessonIndex": 8,
+            "stageIndex": 0,
+            "searchTerm": "Bletchley Park",
+            "q2Chain": "158m-million-million Enigma settings vs Turing’s Bombe at Station X → 7,500 secret women & Ultra shorten war by two years",
+            "gloss": "158m-million-million Enigma settings vs Turing’s Bombe at Station X → 7,500 secret women & Ultra shorten war by two years",
+            "children": [
+              {
+                "id": "kt2_9_s1",
+                "tier": 3,
+                "label": "Enigma vs Alan Turing’s Bombe",
+                "dateChip": "1939–1944",
+                "lessonIndex": 8,
+                "stageIndex": 0,
+                "searchTerm": "Alan Turing",
+                "gloss": "German Enigma rotors reset every midnight; building on Polish breakthroughs, Alan Turing and Gordon Welchman built the Bombe at Station X.",
+                "children": [
+                  {
+                    "id": "kt2_9_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Enigma Reset Every Midnight",
+                    "lessonIndex": 8,
+                    "stageIndex": 0,
+                    "searchTerm": "Enigma machine",
+                    "gloss": "Spinning rotors and front plugboard; 158 million million million settings.",
+                    "children": [
+                      {
+                        "id": "kt2_9_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Spinning rotors and front plugboard",
+                        "lessonIndex": 8,
+                        "stageIndex": 0,
+                        "searchTerm": "Enigma machine",
+                        "gloss": "Spinning rotors and front plugboard"
+                      },
+                      {
+                        "id": "kt2_9_s1_p1_t2",
+                        "tier": 5,
+                        "label": "158 million million million settings",
+                        "lessonIndex": 8,
+                        "stageIndex": 0,
+                        "searchTerm": "Enigma machine",
+                        "gloss": "158 million million million settings"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_9_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Turing’s Bombe & Flowers’s Colossus",
+                    "lessonIndex": 8,
+                    "stageIndex": 0,
+                    "searchTerm": "Bombe",
+                    "gloss": "Polish clues helped Station X; Tommy Flowers built computer Colossus.",
+                    "children": [
+                      {
+                        "id": "kt2_9_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Polish clues helped Station X",
+                        "lessonIndex": 8,
+                        "stageIndex": 0,
+                        "searchTerm": "Bombe",
+                        "gloss": "Polish clues helped Station X"
+                      },
+                      {
+                        "id": "kt2_9_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Tommy Flowers built computer Colossus",
+                        "lessonIndex": 8,
+                        "stageIndex": 0,
+                        "searchTerm": "Bombe",
+                        "gloss": "Tommy Flowers built computer Colossus"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_9_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Steered Convoys Past U-Boats",
+                    "lessonIndex": 8,
+                    "stageIndex": 0,
+                    "searchTerm": "Station X",
+                    "gloss": "Used daily German weather clues; Needed 10,000 round-the-clock staff.",
+                    "children": [
+                      {
+                        "id": "kt2_9_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Used daily German weather clues",
+                        "lessonIndex": 8,
+                        "stageIndex": 0,
+                        "searchTerm": "Station X",
+                        "gloss": "Used daily German weather clues"
+                      },
+                      {
+                        "id": "kt2_9_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Needed 10,000 round-the-clock staff",
+                        "lessonIndex": 8,
+                        "stageIndex": 0,
+                        "searchTerm": "Station X",
+                        "gloss": "Needed 10,000 round-the-clock staff"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_9_s2",
+                "tier": 3,
+                "label": "7,500 Women & 30-Year Secret",
+                "dateChip": "1941–1970s",
+                "lessonIndex": 8,
+                "stageIndex": 2,
+                "searchTerm": "Wrens",
+                "gloss": "Three-quarters of Bletchley’s 10,000 staff were women who kept Ultra secret until the 1970s and shortened WWII by at least two years.",
+                "children": [
+                  {
+                    "id": "kt2_9_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "75% Women Wired Bombe Drums",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "7,500",
+                    "gloss": "Naval Wrens worked eight-hour shifts; Logged signals, translated German codes.",
+                    "children": [
+                      {
+                        "id": "kt2_9_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Naval Wrens worked eight-hour shifts",
+                        "lessonIndex": 8,
+                        "stageIndex": 2,
+                        "searchTerm": "7,500",
+                        "gloss": "Naval Wrens worked eight-hour shifts"
+                      },
+                      {
+                        "id": "kt2_9_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Logged signals, translated German codes",
+                        "lessonIndex": 8,
+                        "stageIndex": 2,
+                        "searchTerm": "7,500",
+                        "gloss": "Logged signals, translated German codes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_9_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Official Secrets Kept Until 1970s",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "Official Secrets Act",
+                    "gloss": "Never even told their parents; Ultra intelligence guided D-Day plans.",
+                    "children": [
+                      {
+                        "id": "kt2_9_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Never even told their parents",
+                        "lessonIndex": 8,
+                        "stageIndex": 2,
+                        "searchTerm": "Official Secrets Act",
+                        "gloss": "Never even told their parents"
+                      },
+                      {
+                        "id": "kt2_9_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Ultra intelligence guided D-Day plans",
+                        "lessonIndex": 8,
+                        "stageIndex": 2,
+                        "searchTerm": "Official Secrets Act",
+                        "gloss": "Ultra intelligence guided D-Day plans"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_9_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Shortened War by Two+ Years",
+                    "lessonIndex": 8,
+                    "stageIndex": 2,
+                    "searchTerm": "Ultra",
+                    "gloss": "Saved millions of wartime lives; Helped bring May 1945 victory.",
+                    "children": [
+                      {
+                        "id": "kt2_9_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Saved millions of wartime lives",
+                        "lessonIndex": 8,
+                        "stageIndex": 2,
+                        "searchTerm": "Ultra",
+                        "gloss": "Saved millions of wartime lives"
+                      },
+                      {
+                        "id": "kt2_9_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Helped bring May 1945 victory",
+                        "lessonIndex": 8,
+                        "stageIndex": 2,
+                        "searchTerm": "Ultra",
+                        "gloss": "Helped bring May 1945 victory"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "3. VE Day, Healing & Memory",
+        "dateChip": "1945–Today",
+        "lessonIndex": 9,
+        "stageIndex": 0,
+        "searchTerm": "VE) Day",
+        "gloss": "Victory in Europe on 8 May 1945 brought joyful street parties, the 1948 NHS, autumn poppy remembrance, and gentle Lake District healing for 300 orphaned Windermere Children.",
+        "children": [
+          {
+            "id": "kt3_10",
+            "code": "10",
+            "tier": 2,
+            "label": "10. VE Day, NHS & Remembrance",
+            "dateChip": "1945–Today",
+            "lessonIndex": 9,
+            "stageIndex": 0,
+            "searchTerm": "VE) Day",
+            "q2Chain": "VE Day street parties (8 May 1945) & 1948 NHS rebuilding → Whitehall Cenotaph, two-minute silence & red poppies today",
+            "gloss": "VE Day street parties (8 May 1945) & 1948 NHS rebuilding → Whitehall Cenotaph, two-minute silence & red poppies today",
+            "children": [
+              {
+                "id": "kt3_10_s1",
+                "tier": 3,
+                "label": "8 May 1945 VE Day & NHS",
+                "dateChip": "1945–1954",
+                "lessonIndex": 9,
+                "stageIndex": 0,
+                "searchTerm": "Winston Churchill",
+                "gloss": "Churchill’s 8 May 1945 radio broadcast sparked street parties, followed by rebuilding 2 million bombed homes and founding the 1948 NHS.",
+                "children": [
+                  {
+                    "id": "kt3_10_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "8 May Bunting & Street Parties",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "street parties",
+                    "gloss": "Churchill waved near Trafalgar Square; Fought on until August VJ.",
+                    "children": [
+                      {
+                        "id": "kt3_10_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Churchill waved near Trafalgar Square",
+                        "lessonIndex": 9,
+                        "stageIndex": 0,
+                        "searchTerm": "street parties",
+                        "gloss": "Churchill waved near Trafalgar Square"
+                      },
+                      {
+                        "id": "kt3_10_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Fought on until August VJ",
+                        "lessonIndex": 9,
+                        "stageIndex": 0,
+                        "searchTerm": "street parties",
+                        "gloss": "Fought on until August VJ"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_10_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Commonwealth Losses & 1948 NHS",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "National Health Service",
+                    "gloss": "2m homes bombed; rationing 1954; Built prefabs, free 1948 NHS.",
+                    "children": [
+                      {
+                        "id": "kt3_10_s1_p2_t1",
+                        "tier": 5,
+                        "label": "2m homes bombed; rationing 1954",
+                        "lessonIndex": 9,
+                        "stageIndex": 0,
+                        "searchTerm": "National Health Service",
+                        "gloss": "2m homes bombed; rationing 1954"
+                      },
+                      {
+                        "id": "kt3_10_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Built prefabs, free 1948 NHS",
+                        "lessonIndex": 9,
+                        "stageIndex": 0,
+                        "searchTerm": "National Health Service",
+                        "gloss": "Built prefabs, free 1948 NHS"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_10_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Pledged Lasting November Memory",
+                    "lessonIndex": 9,
+                    "stageIndex": 0,
+                    "searchTerm": "British Commonwealth",
+                    "gloss": "Mourned 447,000 UK dead, Commonwealth; Honoured sacrifices each autumn.",
+                    "children": [
+                      {
+                        "id": "kt3_10_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Mourned 447,000 UK dead, Commonwealth",
+                        "lessonIndex": 9,
+                        "stageIndex": 0,
+                        "searchTerm": "British Commonwealth",
+                        "gloss": "Mourned 447,000 UK dead, Commonwealth"
+                      },
+                      {
+                        "id": "kt3_10_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Honoured sacrifices each autumn",
+                        "lessonIndex": 9,
+                        "stageIndex": 0,
+                        "searchTerm": "British Commonwealth",
+                        "gloss": "Honoured sacrifices each autumn"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_10_s2",
+                "tier": 3,
+                "label": "The Cenotaph & Red Poppies",
+                "dateChip": "Every November",
+                "lessonIndex": 9,
+                "stageIndex": 2,
+                "searchTerm": "Cenotaph",
+                "gloss": "Each 11 November and Remembrance Sunday, crowds keep a two-minute silence at the Whitehall Cenotaph wearing red poppies.",
+                "children": [
+                  {
+                    "id": "kt3_10_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Whitehall Cenotaph (“Empty Tomb”)",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "Armistice Day",
+                    "gloss": "Gathers on 11 November, Sunday; Honours everyone across UK memorials.",
+                    "children": [
+                      {
+                        "id": "kt3_10_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Gathers on 11 November, Sunday",
+                        "lessonIndex": 9,
+                        "stageIndex": 2,
+                        "searchTerm": "Armistice Day",
+                        "gloss": "Gathers on 11 November, Sunday"
+                      },
+                      {
+                        "id": "kt3_10_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Honours everyone across UK memorials",
+                        "lessonIndex": 9,
+                        "stageIndex": 2,
+                        "searchTerm": "Armistice Day",
+                        "gloss": "Honours everyone across UK memorials"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_10_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "11am Silence & Red Poppies",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "red poppy",
+                    "gloss": "Kept quiet two-minute 11am silence; Bloomed on muddy WWI battlefields.",
+                    "children": [
+                      {
+                        "id": "kt3_10_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Kept quiet two-minute 11am silence",
+                        "lessonIndex": 9,
+                        "stageIndex": 2,
+                        "searchTerm": "red poppy",
+                        "gloss": "Kept quiet two-minute 11am silence"
+                      },
+                      {
+                        "id": "kt3_10_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Bloomed on muddy WWI battlefields",
+                        "lessonIndex": 9,
+                        "stageIndex": 2,
+                        "searchTerm": "red poppy",
+                        "gloss": "Bloomed on muddy WWI battlefields"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_10_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Passes Peace Duty to Youth",
+                    "lessonIndex": 9,
+                    "stageIndex": 2,
+                    "searchTerm": "two-minute silence",
+                    "gloss": "Remembers ordinary wartime courage; Links to survivor voices next.",
+                    "children": [
+                      {
+                        "id": "kt3_10_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Remembers ordinary wartime courage",
+                        "lessonIndex": 9,
+                        "stageIndex": 2,
+                        "searchTerm": "two-minute silence",
+                        "gloss": "Remembers ordinary wartime courage"
+                      },
+                      {
+                        "id": "kt3_10_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Links to survivor voices next",
+                        "lessonIndex": 9,
+                        "stageIndex": 2,
+                        "searchTerm": "two-minute silence",
+                        "gloss": "Links to survivor voices next"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_11",
+            "code": "11",
+            "tier": 2,
+            "label": "11. The Windermere Children",
+            "dateChip": "Aug 1945–Today",
+            "lessonIndex": 10,
+            "stageIndex": 0,
+            "searchTerm": "Windermere",
+            "q2Chain": "Ten RAF Stirling bombers fly 300 orphaned survivors from Prague (Aug 1945) → Calgarth red bicycles & The ’45 Aid Society",
+            "gloss": "Ten RAF Stirling bombers fly 300 orphaned survivors from Prague (Aug 1945) → Calgarth red bicycles & The ’45 Aid Society",
+            "children": [
+              {
+                "id": "kt3_11_s1",
+                "tier": 3,
+                "label": "RAF Airlift & Calgarth Healing",
+                "dateChip": "Aug–Aut 1945",
+                "lessonIndex": 10,
+                "stageIndex": 0,
+                "searchTerm": "Calgarth Estate",
+                "gloss": "On 14 August 1945, ten RAF bombers flew 300 orphaned Holocaust child survivors from Prague to heal beside Lake Windermere.",
+                "children": [
+                  {
+                    "id": "kt3_11_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "10 RAF Bombers Carried 300 Youth",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "Short Stirling",
+                    "gloss": "Funded by Central British Fund; Flew Prague to Cumbria Windermere.",
+                    "children": [
+                      {
+                        "id": "kt3_11_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Funded by Central British Fund",
+                        "lessonIndex": 10,
+                        "stageIndex": 0,
+                        "searchTerm": "Short Stirling",
+                        "gloss": "Funded by Central British Fund"
+                      },
+                      {
+                        "id": "kt3_11_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Flew Prague to Cumbria Windermere",
+                        "lessonIndex": 10,
+                        "stageIndex": 0,
+                        "searchTerm": "Short Stirling",
+                        "gloss": "Flew Prague to Cumbria Windermere"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_11_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bread Under Pillows & Red Bikes",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "shiny red bicycles",
+                    "gloss": "Dr Friedman, Marie Paneth listened; Swam lake; rode red bicycles.",
+                    "children": [
+                      {
+                        "id": "kt3_11_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Dr Friedman, Marie Paneth listened",
+                        "lessonIndex": 10,
+                        "stageIndex": 0,
+                        "searchTerm": "shiny red bicycles",
+                        "gloss": "Dr Friedman, Marie Paneth listened"
+                      },
+                      {
+                        "id": "kt3_11_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Swam lake; rode red bicycles",
+                        "lessonIndex": 10,
+                        "stageIndex": 0,
+                        "searchTerm": "shiny red bicycles",
+                        "gloss": "Swam lake; rode red bicycles"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_11_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Rebuilt Trust & Lifelong Family",
+                    "lessonIndex": 10,
+                    "stageIndex": 0,
+                    "searchTerm": "bread under their pillows",
+                    "gloss": "Starved children hid bread slices; English lessons and art healed.",
+                    "children": [
+                      {
+                        "id": "kt3_11_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Starved children hid bread slices",
+                        "lessonIndex": 10,
+                        "stageIndex": 0,
+                        "searchTerm": "bread under their pillows",
+                        "gloss": "Starved children hid bread slices"
+                      },
+                      {
+                        "id": "kt3_11_s1_p3_t2",
+                        "tier": 5,
+                        "label": "English lessons and art healed",
+                        "lessonIndex": 10,
+                        "stageIndex": 0,
+                        "searchTerm": "bread under their pillows",
+                        "gloss": "English lessons and art healed"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_11_s2",
+                "tier": 3,
+                "label": "’45 Aid Society & Living Voices",
+                "dateChip": "1963–Today",
+                "lessonIndex": 10,
+                "stageIndex": 2,
+                "searchTerm": "45 Aid Society",
+                "gloss": "Calling themselves “The Boys”, survivors like Sir Ben Helfgott and Arek Hersh founded The ’45 Aid Society and shared memories in schools.",
+                "children": [
+                  {
+                    "id": "kt3_11_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "“The Boys” & Sir Ben Helfgott",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "Ben Helfgott",
+                    "gloss": "Became doctors, teachers, Olympic lifter; Stayed lifelong friends together.",
+                    "children": [
+                      {
+                        "id": "kt3_11_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Became doctors, teachers, Olympic lifter",
+                        "lessonIndex": 10,
+                        "stageIndex": 2,
+                        "searchTerm": "Ben Helfgott",
+                        "gloss": "Became doctors, teachers, Olympic lifter"
+                      },
+                      {
+                        "id": "kt3_11_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Stayed lifelong friends together",
+                        "lessonIndex": 10,
+                        "stageIndex": 2,
+                        "searchTerm": "Ben Helfgott",
+                        "gloss": "Stayed lifelong friends together"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_11_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1963 Charity & School Talks",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "Arek Hersh",
+                    "gloss": "Started ’45 Aid Society charity; Helped Tom Palmer’s book.",
+                    "children": [
+                      {
+                        "id": "kt3_11_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Started ’45 Aid Society charity",
+                        "lessonIndex": 10,
+                        "stageIndex": 2,
+                        "searchTerm": "Arek Hersh",
+                        "gloss": "Started ’45 Aid Society charity"
+                      },
+                      {
+                        "id": "kt3_11_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Helped Tom Palmer’s book",
+                        "lessonIndex": 10,
+                        "stageIndex": 2,
+                        "searchTerm": "Arek Hersh",
+                        "gloss": "Helped Tom Palmer’s book"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_11_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Kept Real Eyewitness Voices Alive",
+                    "lessonIndex": 10,
+                    "stageIndex": 2,
+                    "searchTerm": "oral history",
+                    "gloss": "Arek Hersh, Sam Laskier spoke; Thanked Britain through kindness.",
+                    "children": [
+                      {
+                        "id": "kt3_11_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Arek Hersh, Sam Laskier spoke",
+                        "lessonIndex": 10,
+                        "stageIndex": 2,
+                        "searchTerm": "oral history",
+                        "gloss": "Arek Hersh, Sam Laskier spoke"
+                      },
+                      {
+                        "id": "kt3_11_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Thanked Britain through kindness",
+                        "lessonIndex": 10,
+                        "stageIndex": 2,
+                        "searchTerm": "oral history",
+                        "gloss": "Thanked Britain through kindness"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

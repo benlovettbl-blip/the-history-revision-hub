@@ -766,7 +766,7 @@ export function renderLesson(lesson) {
                   `
         : ''
       }
-              <button type="button" class="btn btn-teacher-guidance-launcher no-print" onclick="window.openUnifiedTeacherGuidance && window.openUnifiedTeacherGuidance('${lesson.id}', ${currentIndex}, '${unitId}')" style="display: ${isStaffModeActive() ? 'inline-flex' : 'none'}; padding: 6px 12px; font-size: 0.86rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(157, 23, 77, 0.1); align-items: center; gap: 6px; cursor: pointer; white-space: nowrap;" title="Staff Only: Walk-In Teacher Guidance, Misconceptions, Delivery Plan &amp; Answer Key"><i class="fa-solid fa-chalkboard-user" style="color: #be185d;"></i> <span>Teacher Guidance</span></button>
+              <button type="button" class="btn btn-teacher-guidance-launcher no-print" onclick="window.openUnifiedTeacherGuidance && window.openUnifiedTeacherGuidance('${lesson.id}', ${currentIndex}, '${unitId}')" style="display: ${isStaffModeActive() ? 'inline-flex' : 'none'}; padding: 6px 12px; font-size: 0.86rem; background: #fdf2f8; color: #9d174d; border: 1.5px solid #fbcfe8; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(157, 23, 77, 0.1); align-items: center; gap: 6px; cursor: pointer; white-space: nowrap;" title="Walk-In Teacher Guidance, Misconceptions, 2-Lesson Plan &amp; Answer Key"><i class="fa-solid fa-chalkboard-user" style="color: #be185d;"></i> <span>Teacher Guidance</span></button>
               ${isKs2
         ? `
                     <a href="/pdfs/${unitId || 'ks2_ww2'}_pupil_workbook.pdf" target="_blank" class="btn btn-ks2-workbook-launcher" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #bbf7d0; font-weight: 700; text-decoration: none; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px;" title="Open complete Pupil Workbook (PDF)"><i class="fa-solid fa-book-bookmark" style="color: #16a34a;"></i> <span>Pupil Workbook (PDF)</span></a>
@@ -788,19 +788,6 @@ export function renderLesson(lesson) {
             `
     }
           ${renderTopShareLessonBtnHTML(unitId, currentIndex)}
-          <button type="button" class="header-tool-btn btn-header-staff btn-fullwidth-staff-toggle no-print${(() => {
-            try {
-              const p = new URLSearchParams(window.location.search || '');
-              return p.get('locked') === 'true' || p.get('mode') === 'pupil' || p.get('safeguard') === 'true'
-                ? ' staff-hidden'
-                : '';
-            } catch (e) {
-              return '';
-            }
-          })()}${isStaffModeActive() ? ' is-staff-active' : ''}" onclick="window.toggleGlobalStaffMode && window.toggleGlobalStaffMode()" title="${isStaffModeActive() ? 'Teacher Mode ON — click to switch to Pupil View' : 'Teacher / Staff Mode (Lesson Plans, Answer Keys & Schemes of Work)'}">
-            <i class="fa-solid ${isStaffModeActive() ? 'fa-unlock-keyhole' : 'fa-chalkboard-user'}"></i>
-            <span class="btn-text">${isStaffModeActive() ? 'Teacher ON' : 'Teacher'}</span>
-          </button>
           <button type="button" class="btn-fullwidth-toggle no-print ${isFullWidth ? 'active' : ''}" onclick="window.toggleLessonFullWidth()" title="${isFullWidth ? 'Restore outer sidebar and top bar' : 'Hide outer sidebar and top bar for full-width classroom view'}">
             <i class="fa-solid ${isFullWidth ? 'fa-compress' : 'fa-expand'}"></i>
             <span class="fw-btn-label">${isFullWidth ? 'Restore Sidebar' : 'Full-Width View'}</span>
@@ -902,39 +889,6 @@ export function renderLesson(lesson) {
     ? lessonPrefix
     : `${unitBadgeTitle} &bull; ${heroLessonLabel}`;
 
-  let specPillHtml = '';
-  if (lesson.specification_anchor) {
-    const specPaperBadge =
-      unitId === 'edexcel_medicine'
-        ? 'Edexcel Paper 1'
-        : unitId === 'cme_new' || unitId === 'gcse_cold_war' || unitId === 'eee'
-          ? 'Edexcel Paper 2'
-          : unitId === 'weimar_nazi_germany' || unitId === 'usa'
-            ? 'Edexcel Paper 3'
-            : isKs3
-              ? 'Key Stage 3'
-              : isKs2
-                ? 'Key Stage 2'
-                : 'Edexcel GCSE';
-
-    const safeSpec = encodeURIComponent(lesson.specification_anchor);
-    const safeTitle = encodeURIComponent(cleanLessonHeading);
-
-    specPillHtml = `
-      <button type="button"
-        class="spec-anchor-btn"
-        onclick="event.stopPropagation(); window.showLessonSpecModal('${safeSpec}', '${specPaperBadge}', '${safeTitle}')"
-        style="pointer-events: auto; background: rgba(15, 23, 42, 0.75); border: 1px solid rgba(148, 163, 184, 0.45); color: #93c5fd; padding: 4px 12px; border-radius: 6px; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.4px; display: inline-flex; align-items: center; gap: 6px; backdrop-filter: blur(6px); cursor: pointer; transition: all 0.2s;"
-        onmouseover="this.style.background='rgba(30, 41, 59, 0.9)'; this.style.borderColor='#60a5fa'; this.style.color='#bfdbfe';"
-        onmouseout="this.style.background='rgba(15, 23, 42, 0.75)'; this.style.borderColor='rgba(148, 163, 184, 0.45)'; this.style.color='#93c5fd';"
-        title="Click to view official syllabus specification anchor">
-        <i class="fa-solid fa-bookmark" style="color: #60a5fa; font-size: 0.75rem;"></i>
-        <span>${specPaperBadge} Spec Anchor</span>
-        <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.65rem; opacity: 0.8; margin-left: 2px;"></i>
-      </button>
-    `;
-  }
-
   const iconicVisuals = getIconicLessonVisuals(unitId, lesson);
   const cameoImageUrl =
     iconicVisuals && iconicVisuals.heroCameo ? getAssetUrl(iconicVisuals.heroCameo) : '';
@@ -989,7 +943,6 @@ export function renderLesson(lesson) {
         <div class="lesson-hero-content" style="position: absolute; inset: 0; z-index: 4; display: flex; flex-direction: column; justify-content: center; gap: 3px; width: 100%; padding: ${heroContentPadding}; box-sizing: border-box; pointer-events: none;">
           <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 2px;">
             <span style="color: #e2e8f0; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.76rem; text-shadow: 0 1px 3px rgba(0,0,0,0.8);">${heroEyebrow}</span>
-            ${specPillHtml}
           </div>
           <h2 style="font-family: 'Playfair Display', serif; color: white; font-size: 1.55rem; margin: 0.1rem 0 0 0; line-height: 1.2; text-shadow: 0 2px 8px rgba(0,0,0,0.75);">${cleanLessonHeading}</h2>
           ${enquirySubtitle}

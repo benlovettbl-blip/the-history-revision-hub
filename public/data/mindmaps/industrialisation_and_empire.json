@@ -1,0 +1,1665 @@
+{
+  "unitId": "industrialisation_and_empire",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "The Industrial Revolution, 1750–1900",
+  "examDateBoundary": "1750–1900",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Industrial Revolution",
+    "subLabel": "KS3 History",
+    "dateChip": "1750–1900",
+    "gloss": "How steam power, Hampshire wrought iron, textile mills, cholera slums, popular protest, and Chartism forged modern Britain.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Steam, Iron & Mills",
+        "dateChip": "1750–1833",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "James Watt",
+        "gloss": "Watt’s rotary steam engine, Henry Cort’s Funtley puddling furnace and grooved rollers, factory child labour, and the 1833 Factory Act.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Steam, Coal & Cort’s Iron",
+            "dateChip": "1750–1800",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Henry Cort",
+            "q2Chain": "Charcoal Crisis & Watt’s Engine → Cort’s Puddling & Rollers → 1787 Portsmouth Naval Trials",
+            "gloss": "Causal Chain: Charcoal Crisis & Watt’s Engine → Cort’s Puddling & Rollers → 1787 Portsmouth Naval Trials.",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Charcoal Crisis & Watt’s Engine",
+                "dateChip": "1750–1781",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "James Watt",
+                "gloss": "Oak shortages and brittle coal pig iron held Britain back until James Watt’s condenser and rotary motion freed factories from rivers.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Oak Shortage & Brittle Pig Iron",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Swedish",
+                    "gloss": "Sulphur coal made brittle iron; Imported 50,000t Swedish iron.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Sulphur coal made brittle iron",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Swedish",
+                        "gloss": "Sulphur coal made brittle iron"
+                      },
+                      {
+                        "id": "kt1_1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Imported 50,000t Swedish iron",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Swedish",
+                        "gloss": "Imported 50,000t Swedish iron"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1769 Watt Condenser & Rotary",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Matthew Boulton",
+                    "gloss": "Partnered with Matthew Boulton; Slashed steam coal fuel waste.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Partnered with Matthew Boulton",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Matthew Boulton",
+                        "gloss": "Partnered with Matthew Boulton"
+                      },
+                      {
+                        "id": "kt1_1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Slashed steam coal fuel waste",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Matthew Boulton",
+                        "gloss": "Slashed steam coal fuel waste"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Freed Factories from Rivers",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "waterwheels",
+                    "gloss": "Ended winter frost stoppages; Powered urban coal boomtowns.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Ended winter frost stoppages",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "waterwheels",
+                        "gloss": "Ended winter frost stoppages"
+                      },
+                      {
+                        "id": "kt1_1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Powered urban coal boomtowns",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "waterwheels",
+                        "gloss": "Powered urban coal boomtowns"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Cort’s Puddling & Rollers",
+                "dateChip": "1775–1784",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Henry Cort",
+                "gloss": "At Funtley in Hampshire, Henry Cort separated coal from molten iron and used 1783 grooved rollers fifteen times faster than hammers.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Funtley Reverberatory Puddling",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Funtley",
+                    "gloss": "Separated coal smoke from iron; Stirring burned away sulphur.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Separated coal smoke from iron",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Funtley",
+                        "gloss": "Separated coal smoke from iron"
+                      },
+                      {
+                        "id": "kt1_1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Stirring burned away sulphur",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Funtley",
+                        "gloss": "Stirring burned away sulphur"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1783 Grooved Rollers (15x Speed)",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "fifteen-fold",
+                    "gloss": "Squeezed glassy slag from metal; Shaped uniform bars in seconds.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Squeezed glassy slag from metal",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "fifteen-fold",
+                        "gloss": "Squeezed glassy slag from metal"
+                      },
+                      {
+                        "id": "kt1_1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Shaped uniform bars in seconds",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "fifteen-fold",
+                        "gloss": "Shaped uniform bars in seconds"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Mass-Produced Wrought Iron",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Portsmouth Dockyard",
+                    "gloss": "Supplied naval bolts and rails; Left River Meon slag remains.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Supplied naval bolts and rails",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Portsmouth Dockyard",
+                        "gloss": "Supplied naval bolts and rails"
+                      },
+                      {
+                        "id": "kt1_1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Left River Meon slag remains",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Portsmouth Dockyard",
+                        "gloss": "Left River Meon slag remains"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "1787 Portsmouth Naval Trials",
+                "dateChip": "1787",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "Portsmouth Dockyard",
+                "gloss": "Admiralty stress tests at Portsmouth Dockyard in 1787 proved Cort’s iron beat Swedish imports, driving a 400% output surge.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1787 Admiralty Forge Stress Tests",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Admiralty",
+                    "gloss": "Twisted Funtley bars corkscrew-tight; Outperformed Swedish Orgrounds iron.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Twisted Funtley bars corkscrew-tight",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Admiralty",
+                        "gloss": "Twisted Funtley bars corkscrew-tight"
+                      },
+                      {
+                        "id": "kt1_1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Outperformed Swedish Orgrounds iron",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Admiralty",
+                        "gloss": "Outperformed Swedish Orgrounds iron"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c2",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "400% Surge & Naval Independence",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "anchors",
+                    "gloss": "Forged Nelson’s Trafalgar anchors; Ended Baltic iron dependence.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Forged Nelson’s Trafalgar anchors",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "anchors",
+                        "gloss": "Forged Nelson’s Trafalgar anchors"
+                      },
+                      {
+                        "id": "kt1_1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Ended Baltic iron dependence",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "anchors",
+                        "gloss": "Ended Baltic iron dependence"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Built Steam Mills & Railways",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Victorian Empire",
+                    "gloss": "Supplied tough machine frames; Underpinned industrial take-off.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Supplied tough machine frames",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Victorian Empire",
+                        "gloss": "Supplied tough machine frames"
+                      },
+                      {
+                        "id": "kt1_1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Underpinned industrial take-off",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Victorian Empire",
+                        "gloss": "Underpinned industrial take-off"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Factory Mills & 1833 Act",
+            "dateChip": "1780–1833",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Factory Act",
+            "q2Chain": "Factory Clock & Child Scavengers → 1832 Sadler Report & Crabtree → 1833 Factory Act & Inspectors",
+            "gloss": "Causal Chain: Factory Clock & Child Scavengers → 1832 Sadler Report & Crabtree → 1833 Factory Act & Inspectors.",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Factory Clock & Child Scavengers",
+                "dateChip": "1780–1832",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "scavengers",
+                "gloss": "Steam powerlooms crushed rural handlooms, locking workers and workhouse orphans into 14-hour shifts beneath lethal spinning mules.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Powerlooms Ended Cottage Weaving",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "handlooms",
+                    "gloss": "Outpaced home family handlooms; Drove weavers into mill towns.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Outpaced home family handlooms",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "handlooms",
+                        "gloss": "Outpaced home family handlooms"
+                      },
+                      {
+                        "id": "kt1_2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Drove weavers into mill towns",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "handlooms",
+                        "gloss": "Drove weavers into mill towns"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "14-Hour Clock Shifts & Fines",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "byssinosis",
+                    "gloss": "80°F heat; locked dusty rooms; Docked wages for lateness.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "80°F heat; locked dusty rooms",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "byssinosis",
+                        "gloss": "80°F heat; locked dusty rooms"
+                      },
+                      {
+                        "id": "kt1_2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Docked wages for lateness",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "byssinosis",
+                        "gloss": "Docked wages for lateness"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_c3",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Workhouse Apprentice Scavengers",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "spinning mules",
+                    "gloss": "Orphans crawled under active mules; Crushed fingers and scalpings.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Orphans crawled under active mules",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "spinning mules",
+                        "gloss": "Orphans crawled under active mules"
+                      },
+                      {
+                        "id": "kt1_2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Crushed fingers and scalpings",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "spinning mules",
+                        "gloss": "Crushed fingers and scalpings"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "1832 Sadler Report & Crabtree",
+                "dateChip": "1832",
+                "lessonIndex": 1,
+                "stageIndex": 3,
+                "searchTerm": "Matthew Crabtree",
+                "gloss": "Former child worker Matthew Crabtree testified to Michael Sadler’s 1832 committee about 16-hour shifts, beatings, and deformity.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Crabtree’s 16-Hour Mill Testimony",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Matthew Crabtree",
+                    "gloss": "Worked Yorkshire mills aged eight; Whipped with leather straps.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Worked Yorkshire mills aged eight",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Matthew Crabtree",
+                        "gloss": "Worked Yorkshire mills aged eight"
+                      },
+                      {
+                        "id": "kt1_2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Whipped with leather straps",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Matthew Crabtree",
+                        "gloss": "Whipped with leather straps"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Exposed Spinal Stunting Shock",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "spinal stunting",
+                    "gloss": "Documented bowed legs in children; Shocked Victorian press readers.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Documented bowed legs in children",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "spinal stunting",
+                        "gloss": "Documented bowed legs in children"
+                      },
+                      {
+                        "id": "kt1_2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Shocked Victorian press readers",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "spinal stunting",
+                        "gloss": "Shocked Victorian press readers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Backed Shaftesbury Reform Drive",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Shaftesbury",
+                    "gloss": "Lord Shaftesbury led Commons push; Forced state factory bill.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Lord Shaftesbury led Commons push",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Shaftesbury",
+                        "gloss": "Lord Shaftesbury led Commons push"
+                      },
+                      {
+                        "id": "kt1_2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Forced state factory bill",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Shaftesbury",
+                        "gloss": "Forced state factory bill"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "1833 Factory Act & Inspectors",
+                "dateChip": "1833",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "Factory Act",
+                "gloss": "The 1833 Factory Act banned under-nines in textile mills, capped child hours, and appointed four statutory inspectors.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Banned Textile Children Under 9",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "under nine",
+                    "gloss": "Capped ages 9–13 to eight hours; Mandated daily mill schooling.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Capped ages 9–13 to eight hours",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "under nine",
+                        "gloss": "Capped ages 9–13 to eight hours"
+                      },
+                      {
+                        "id": "kt1_2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Mandated daily mill schooling",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "under nine",
+                        "gloss": "Mandated daily mill schooling"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Four Statutory Factory Inspectors",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "factory inspectors",
+                    "gloss": "Enforced rules inside private mills; Checked age and school records.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Enforced rules inside private mills",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "factory inspectors",
+                        "gloss": "Enforced rules inside private mills"
+                      },
+                      {
+                        "id": "kt1_2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Checked age and school records",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "factory inspectors",
+                        "gloss": "Checked age and school records"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Curbed Unbridled Mill Capitalism",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "state regulation",
+                    "gloss": "Placed child welfare over profit; Pioneered workplace inspection.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Placed child welfare over profit",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "state regulation",
+                        "gloss": "Placed child welfare over profit"
+                      },
+                      {
+                        "id": "kt1_2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Pioneered workplace inspection",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "state regulation",
+                        "gloss": "Pioneered workplace inspection"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Urban Crisis & Protest",
+        "dateChip": "1800–1865",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Peterloo",
+        "gloss": "Back-to-back slums, cholera, Chadwick, and Bazalgette’s sewers alongside Luddites, Peterloo, Swing Riots, and Tolpuddle.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Boomtowns, Cholera & Sewers",
+            "dateChip": "1800–1865",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Bazalgette",
+            "q2Chain": "Back-to-Backs & 1831 Cholera → Chadwick’s 1842 Sanitary Report → 1858 Great Stink & Bazalgette",
+            "gloss": "Causal Chain: Back-to-Backs & 1831 Cholera → Chadwick’s 1842 Sanitary Report → 1858 Great Stink & Bazalgette.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Back-to-Backs & 1831 Cholera",
+                "dateChip": "1800–1848",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "cholera",
+                "gloss": "Unventilated back-to-backs and seeping cesspools spread lethal 1831 cholera through street pumps, shaking laissez-faire.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Back-to-Backs & Seeping Privies",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "back-to-back",
+                    "gloss": "Damp cellars; shared court privies; Sewage seeped into pump wells.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Damp cellars; shared court privies",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "back-to-back",
+                        "gloss": "Damp cellars; shared court privies"
+                      },
+                      {
+                        "id": "kt2_3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Sewage seeped into pump wells",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "back-to-back",
+                        "gloss": "Sewage seeped into pump wells"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1831 Asiatic Cholera Pandemic",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "twelve-hour",
+                    "gloss": "Blue-skinned collapse in 12 hours; Spread via dirty pump water.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Blue-skinned collapse in 12 hours",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "twelve-hour",
+                        "gloss": "Blue-skinned collapse in 12 hours"
+                      },
+                      {
+                        "id": "kt2_3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Spread via dirty pump water",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "twelve-hour",
+                        "gloss": "Spread via dirty pump water"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Rattled Elite Laissez-Faire",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "laissez-faire",
+                    "gloss": "Killed wealthy residents too; Prompted sanitary inquiries.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Killed wealthy residents too",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "laissez-faire",
+                        "gloss": "Killed wealthy residents too"
+                      },
+                      {
+                        "id": "kt2_3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Prompted sanitary inquiries",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "laissez-faire",
+                        "gloss": "Prompted sanitary inquiries"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Chadwick’s 1842 Sanitary Report",
+                "dateChip": "1842–1848",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "Edwin Chadwick",
+                "gloss": "Edwin Chadwick proved slum filth cut Manchester life expectancy to 19 years, leading to the 1848 Public Health Act.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "19-Year Manchester Life Span",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Rutland",
+                    "gloss": "Compared with 38 in Rutland; Mapped mortality across towns.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Compared with 38 in Rutland",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Rutland",
+                        "gloss": "Compared with 38 in Rutland"
+                      },
+                      {
+                        "id": "kt2_3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Mapped mortality across towns",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Rutland",
+                        "gloss": "Mapped mortality across towns"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Economic Argument to Ratepayers",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "ratepayers",
+                    "gloss": "Drains cost less than Poor Law; Cut widow and orphan relief.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Drains cost less than Poor Law",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "ratepayers",
+                        "gloss": "Drains cost less than Poor Law"
+                      },
+                      {
+                        "id": "kt2_3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Cut widow and orphan relief",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "ratepayers",
+                        "gloss": "Cut widow and orphan relief"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Passed 1848 Public Health Act",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "1848",
+                    "gloss": "Set up General Board of Health; Began municipal sanitary reform.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Set up General Board of Health",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "1848",
+                        "gloss": "Set up General Board of Health"
+                      },
+                      {
+                        "id": "kt2_3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Began municipal sanitary reform",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "1848",
+                        "gloss": "Began municipal sanitary reform"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "1858 Great Stink & Bazalgette",
+                "dateChip": "1858–1865",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "Bazalgette",
+                "gloss": "When July 1858 heat fermented Thames sewage outside Parliament, MPs voted £3m for Bazalgette’s 82-mile brick interceptors.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "July 1858 Fermenting Thames",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Great Stink",
+                    "gloss": "Chloride curtains failed in Commons; Drove panicked MPs to act.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Chloride curtains failed in Commons",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Great Stink",
+                        "gloss": "Chloride curtains failed in Commons"
+                      },
+                      {
+                        "id": "kt2_3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Drove panicked MPs to act",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Great Stink",
+                        "gloss": "Drove panicked MPs to act"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "£3m & 82-Mile Brick Interceptors",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Bazalgette",
+                    "gloss": "Approved in eighteen days; Added 1,100 miles street sewers.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Approved in eighteen days",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Bazalgette",
+                        "gloss": "Approved in eighteen days"
+                      },
+                      {
+                        "id": "kt2_3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Added 1,100 miles street sewers",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Bazalgette",
+                        "gloss": "Added 1,100 miles street sewers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Eradicated Epidemic London Cholera",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "eastward",
+                    "gloss": "Carried sewage east past capital; Transformed urban civil health.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Carried sewage east past capital",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "eastward",
+                        "gloss": "Carried sewage east past capital"
+                      },
+                      {
+                        "id": "kt2_3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Transformed urban civil health",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "eastward",
+                        "gloss": "Transformed urban civil health"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Luddites, Peterloo & Unions",
+            "dateChip": "1811–1834",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Peterloo",
+            "q2Chain": "Luddites & 1819 Peterloo → 1830 Swing Riots & Winchester → 1834 Tolpuddle Martyrs",
+            "gloss": "Causal Chain: Luddites & 1819 Peterloo → 1830 Swing Riots & Winchester → 1834 Tolpuddle Martyrs.",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Luddites & 1819 Peterloo",
+                "dateChip": "1811–1819",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Peterloo",
+                "gloss": "Northern Luddite frame-breakers faced hanging laws before yeomanry cavalry sabred peaceful Manchester reformers at Peterloo.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1811–16 Ned Ludd Loom Raids",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Ned Ludd",
+                    "gloss": "Smashed wage-cutting steam looms; 1812 Act deployed 12,000 troops.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Smashed wage-cutting steam looms",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Ned Ludd",
+                        "gloss": "Smashed wage-cutting steam looms"
+                      },
+                      {
+                        "id": "kt2_4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "1812 Act deployed 12,000 troops",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Ned Ludd",
+                        "gloss": "1812 Act deployed 12,000 troops"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "16 Aug 1819 Peterloo Massacre",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "St Peter’s Field",
+                    "gloss": "Yeomanry charged 60,000 crowd; Killed 18; injured over 600.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Yeomanry charged 60,000 crowd",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "St Peter’s Field",
+                        "gloss": "Yeomanry charged 60,000 crowd"
+                      },
+                      {
+                        "id": "kt2_4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Killed 18; injured over 600",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "St Peter’s Field",
+                        "gloss": "Killed 18; injured over 600"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Repressive Tory Six Acts",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Six Acts",
+                    "gloss": "Banned mass political meetings; Deepened demand for voting reform.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Banned mass political meetings",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Six Acts",
+                        "gloss": "Banned mass political meetings"
+                      },
+                      {
+                        "id": "kt2_4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Deepened demand for voting reform",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Six Acts",
+                        "gloss": "Deepened demand for voting reform"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "1830 Swing Riots & Winchester",
+                "dateChip": "Nov–Dec 1830",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Captain Swing",
+                "gloss": "Starving Hampshire farmworkers smashed threshing machines under Captain Swing, facing hanging and penal exile at Winchester.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Threshing Machines Cut Winter Pay",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Captain Swing",
+                    "gloss": "Burned hayricks across Hampshire; Demanded two shillings a day.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Burned hayricks across Hampshire",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Captain Swing",
+                        "gloss": "Burned hayricks across Hampshire"
+                      },
+                      {
+                        "id": "kt2_4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Demanded two shillings a day",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Captain Swing",
+                        "gloss": "Demanded two shillings a day"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Dec 1830 Winchester Assize Trials",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Henry Cook",
+                    "gloss": "Tried 300 Hampshire farmhands; Hanged 19-year-old Henry Cook.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Tried 300 Hampshire farmhands",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Henry Cook",
+                        "gloss": "Tried 300 Hampshire farmhands"
+                      },
+                      {
+                        "id": "kt2_4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Hanged 19-year-old Henry Cook",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Henry Cook",
+                        "gloss": "Hanged 19-year-old Henry Cook"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Australian Penal Transportation",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Australian",
+                    "gloss": "Exiled hundreds of rural men; Crushed open machine-breaking.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Exiled hundreds of rural men",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Australian",
+                        "gloss": "Exiled hundreds of rural men"
+                      },
+                      {
+                        "id": "kt2_4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Crushed open machine-breaking",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Australian",
+                        "gloss": "Crushed open machine-breaking"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "1834 Tolpuddle Martyrs",
+                "dateChip": "1834–1836",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Tolpuddle",
+                "gloss": "Six Dorset farm unionists exiled under a secret-oaths law won full 1836 pardons after a 100,000-strong London march.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Friendly Society Wage-Cut Union",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "George Loveless",
+                    "gloss": "Six Dorset men under Loveless; Charged under secret oaths law.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Six Dorset men under Loveless",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "George Loveless",
+                        "gloss": "Six Dorset men under Loveless"
+                      },
+                      {
+                        "id": "kt2_4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Charged under secret oaths law",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "George Loveless",
+                        "gloss": "Charged under secret oaths law"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Seven-Year Exile & 100k March",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "1836",
+                    "gloss": "100,000 unionists marched London; Delivered giant national petition.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "100,000 unionists marched London",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "1836",
+                        "gloss": "100,000 unionists marched London"
+                      },
+                      {
+                        "id": "kt2_4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Delivered giant national petition",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "1836",
+                        "gloss": "Delivered giant national petition"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "1836 Pardon & Union Rights",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Tolpuddle",
+                    "gloss": "Crown granted full 1836 pardons; Anchored right to organise unions.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Crown granted full 1836 pardons",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Tolpuddle",
+                        "gloss": "Crown granted full 1836 pardons"
+                      },
+                      {
+                        "id": "kt2_4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Anchored right to organise unions",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Tolpuddle",
+                        "gloss": "Anchored right to organise unions"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: Reform & Democracy",
+        "dateChip": "1800–1872",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Chartism",
+        "gloss": "From rotten boroughs and the 1832 Great Reform Act to the Chartist Six Points and the 1872 Secret Ballot Act.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Reform, Chartism & Ballot",
+            "dateChip": "1800–1872",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Ballot Act",
+            "q2Chain": "Rotten Boroughs & Days of May → 1832 Betrayal & Chartism → 1872 Secret Ballot Act",
+            "gloss": "Causal Chain: Rotten Boroughs & Days of May → 1832 Betrayal & Chartism → 1872 Secret Ballot Act.",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Rotten Boroughs & Days of May",
+                "dateChip": "1800–1832",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Old Sarum",
+                "gloss": "With under 5% voting and Old Sarum sending two MPs, Bristol riots and the 1832 gold run forced the Lords to pass reform.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Under 5% Vote & Rotten Boroughs",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Old Sarum",
+                    "gloss": "Old Sarum sent two MPs; Manchester and Leeds had none.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Old Sarum sent two MPs",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Old Sarum",
+                        "gloss": "Old Sarum sent two MPs"
+                      },
+                      {
+                        "id": "kt3_5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Manchester and Leeds had none",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Old Sarum",
+                        "gloss": "Manchester and Leeds had none"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1831 Bristol Riots & Gold Run",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Days of May",
+                    "gloss": "Burned Bristol Bishop’s Palace; £1.6m gold bank run in May.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Burned Bristol Bishop’s Palace",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Days of May",
+                        "gloss": "Burned Bristol Bishop’s Palace"
+                      },
+                      {
+                        "id": "kt3_5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "£1.6m gold bank run in May",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Days of May",
+                        "gloss": "£1.6m gold bank run in May"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Forced Tory Lords to Surrender",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Reform Bill",
+                    "gloss": "William IV backed new peers; Enacted 1832 Great Reform Act.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "William IV backed new peers",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Reform Bill",
+                        "gloss": "William IV backed new peers"
+                      },
+                      {
+                        "id": "kt3_5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Enacted 1832 Great Reform Act",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Reform Bill",
+                        "gloss": "Enacted 1832 Great Reform Act"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "1832 Betrayal & Chartism",
+                "dateChip": "1832–1848",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "People’s Charter",
+                "gloss": "Shut out by the 1832 £10 householder rule, workers rallied behind the 1838 People’s Charter and three monster petitions.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1832 £10 Property Vote Barrier",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "56",
+                    "gloss": "Scrapped 56 rotten boroughs; Excluded working-class labourers.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Scrapped 56 rotten boroughs",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "56",
+                        "gloss": "Scrapped 56 rotten boroughs"
+                      },
+                      {
+                        "id": "kt3_5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Excluded working-class labourers",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "56",
+                        "gloss": "Excluded working-class labourers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1838 Six-Point People’s Charter",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "People’s Charter",
+                    "gloss": "Universal male vote; paid MPs; Three petitions over 3m names.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Universal male vote; paid MPs",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "People’s Charter",
+                        "gloss": "Universal male vote; paid MPs"
+                      },
+                      {
+                        "id": "kt3_5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Three petitions over 3m names",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "People’s Charter",
+                        "gloss": "Three petitions over 3m names"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c3",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Rejected Failure vs Long Victory",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Chartists",
+                    "gloss": "Commons rejected all 3 petitions; Five of six points later won.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Commons rejected all 3 petitions",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Chartists",
+                        "gloss": "Commons rejected all 3 petitions"
+                      },
+                      {
+                        "id": "kt3_5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Five of six points later won",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Chartists",
+                        "gloss": "Five of six points later won"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "1872 Secret Ballot Act",
+                "dateChip": "1872",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Ballot Act",
+                "gloss": "Gladstone’s 1872 Ballot Act replaced open hustings with private booths and wax-sealed boxes, ending voter intimidation.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Open Hustings Bribery & Eviction",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "hustings",
+                    "gloss": "Public voting on wood platforms; Landlords punished defiant tenants.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Public voting on wood platforms",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "hustings",
+                        "gloss": "Public voting on wood platforms"
+                      },
+                      {
+                        "id": "kt3_5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Landlords punished defiant tenants",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "hustings",
+                        "gloss": "Landlords punished defiant tenants"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1872 Private Booths & Wax Seals",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Pontefract",
+                    "gloss": "Passed under PM Gladstone; First sealed box at Pontefract.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Passed under PM Gladstone",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Pontefract",
+                        "gloss": "Passed under PM Gladstone"
+                      },
+                      {
+                        "id": "kt3_5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "First sealed box at Pontefract",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Pontefract",
+                        "gloss": "First sealed box at Pontefract"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Protected Independent Democracy",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Ballot Act",
+                    "gloss": "Ended employer and landlord fear; Fulfilled key Chartist demand.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Ended employer and landlord fear",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Ballot Act",
+                        "gloss": "Ended employer and landlord fear"
+                      },
+                      {
+                        "id": "kt3_5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Fulfilled key Chartist demand",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Ballot Act",
+                        "gloss": "Fulfilled key Chartist demand"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

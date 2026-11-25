@@ -3873,68 +3873,46 @@ export function renderLessonLaunchpad({
     (htmlDoNowInner && htmlDoNowInner.trim().length > 0),
   );
 
+  const effectiveUnitId = unitId || (typeof window !== 'undefined' ? window.currentUnitId : '');
+
   if (hasDoNow) {
     tabs.push({
       key: 'donow',
-      label: 'Do Now Starter',
+      label: 'Do Now',
       mobileLabel: 'Quick Recall',
       icon: 'fa-solid fa-stopwatch icon-donow',
-      badge: '05:00',
     });
   }
 
-  // 2. Key Vocabulary Tab
+  // 2. Vocab Tab
   const hasVocab = Boolean(
     (lesson && lesson.vocab && lesson.vocab.length > 0) ||
     (htmlVocabInner && htmlVocabInner.trim().length > 0),
   );
   if (hasVocab) {
-    const vocabCount = lesson && lesson.vocab ? lesson.vocab.length : '';
     tabs.push({
       key: 'vocab',
-      label: 'Key Vocabulary',
-      mobileLabel: 'Key Vocab',
+      label: 'Vocab',
+      mobileLabel: 'Vocab',
       icon: 'fa-solid fa-book-bookmark icon-vocab',
-      badge: vocabCount ? `${vocabCount} Terms` : '',
     });
   }
 
-  // 3. Chronology Spine Tab
-  const hasSpine = Boolean(htmlSpineInner && htmlSpineInner.trim().length > 0);
-  if (hasSpine) {
-    tabs.push({
-      key: 'spine',
-      label: 'Chronology Spine',
-      mobileLabel: 'Timeline',
-      icon: 'fa-solid fa-timeline icon-spine',
-    });
-  }
-
-  // 4. Video Pathway Tab
+  // 3. Video Tab (present across 213 / 213 lessons)
   const hasVideo = Boolean(
     (videos && videos.length > 0) || (htmlVideo && htmlVideo.trim().length > 0),
   );
   if (hasVideo) {
-    let videoDuration = '';
-    if (videos && videos.length > 0 && videos[0].duration) {
-      videoDuration = videos[0].duration
-        .replace(/\bmins?\b/gi, 'm')
-        .replace(/\bsecs?\b/gi, 's')
-        .replace(/\s+/g, ' ')
-        .trim();
-    }
     tabs.push({
       key: 'video',
-      label: 'Video Pathway',
+      label: 'Video',
       mobileLabel: 'Video',
       icon: 'fa-solid fa-play icon-video',
-      badge: videoDuration || `${videos.length} Clip${videos.length > 1 ? 's' : ''}`,
     });
   }
 
-  // 5. Visual Revision Mat Tab (Infographic)
+  // 4. Infographic Tab
   let lessonInfographics = [];
-  const effectiveUnitId = unitId || (typeof window !== 'undefined' ? window.currentUnitId : '');
   if (typeof getLessonInfographicsSync === 'function') {
     lessonInfographics = getLessonInfographicsSync(effectiveUnitId, lesson?.id);
   } else if (typeof window !== 'undefined' && typeof window.getLessonInfographicsSync === 'function') {
@@ -3945,80 +3923,45 @@ export function renderLessonLaunchpad({
     (htmlInfographicInner && htmlInfographicInner.trim().length > 0),
   );
   if (hasInfographic) {
-    const count = lessonInfographics.length;
     const hasInteractive = lessonInfographics && lessonInfographics.some((m) => m.interactiveUrl);
     tabs.push({
       key: 'infographic',
-      label: hasInteractive
-        ? count > 1
-          ? `Interactive Infographics (${count})`
-          : 'Interactive Infographic'
-        : count > 1
-          ? `Infographics (${count})`
-          : 'Infographic',
+      label: 'Infographic',
       mobileLabel: 'Story Cards',
       icon: hasInteractive
         ? 'fa-solid fa-wand-magic-sparkles icon-infographic'
         : 'fa-solid fa-image icon-infographic',
-      badge: hasInteractive
-        ? count > 1
-          ? `${count} Interactive`
-          : 'Interactive'
-        : count > 1
-          ? `${count} Infographics`
-          : '1-Sheet',
     });
   }
 
-  // 6. Historical Atlas Tab (CME Era-Aware Theater Map Modal)
-  if (isCme) {
+  // 5. Mind Map (opens unit Mind Map Studio auto-focused on this lesson's branch, with 1-click return)
+  if (effectiveUnitId) {
     tabs.push({
-      key: 'atlas',
-      label: 'Historical Atlas',
-      mobileLabel: 'Atlas Map',
-      icon: 'fa-solid fa-map',
-      isAtlasModal: true,
+      key: 'mindmap',
+      label: 'Mind Map',
+      mobileLabel: 'Mind Map',
+      icon: 'fa-solid fa-diagram-project',
+      iconStyle: 'color: #d97706;',
+      externalAction: `window._tmmFocusLessonIdx = ${resolvedLessonIndex}; if(typeof window.saveUnitReturnOrigin === 'function') window.saveUnitReturnOrigin(); if(typeof window.switchView === 'function') window.switchView('mindmap', '${effectiveUnitId}');`,
+      tooltip: 'Open interactive Mind Map focused on this lesson (with 1-click return)',
     });
-  }
 
-  // 7. Learning Objectives Tab (Moved to end so mobile pupils see Do Now, Vocab, Spine & Video immediately)
-  const hasObjectives = Boolean(
-    (lesson &&
-      lesson.learning_objectives &&
-      ((Array.isArray(lesson.learning_objectives) && lesson.learning_objectives.length > 0) ||
-        (lesson.learning_objectives.scaffolded && lesson.learning_objectives.scaffolded.length > 0))) ||
-    (lesson &&
-      lesson.teacher_notes &&
-      Array.isArray(lesson.teacher_notes.objectives) &&
-      lesson.teacher_notes.objectives.length > 0) ||
-    (htmlObjectivesInner && htmlObjectivesInner.trim().length > 0),
-  );
-
-  if (hasObjectives) {
-    let objCount = 0;
-    if (lesson && lesson.learning_objectives) {
-      if (Array.isArray(lesson.learning_objectives)) {
-        objCount = lesson.learning_objectives.length;
-      } else if (Array.isArray(lesson.learning_objectives.scaffolded)) {
-        objCount = lesson.learning_objectives.scaffolded.length;
-      }
-    }
-    if (!objCount && lesson && lesson.teacher_notes && Array.isArray(lesson.teacher_notes.objectives)) {
-      objCount = lesson.teacher_notes.objectives.length;
-    }
+    // 6. Timeline (opens unit Living Timeline at this lesson's milestone, with 1-click return)
     tabs.push({
-      key: 'objectives',
-      label: 'Learning Objectives',
-      mobileLabel: 'Goals',
-      icon: 'fa-solid fa-bullseye icon-objectives',
-      badge: objCount ? `${objCount} Goals` : '',
+      key: 'timeline',
+      label: 'Timeline',
+      mobileLabel: 'Timeline',
+      icon: 'fa-solid fa-clock-rotate-left',
+      iconStyle: 'color: #059669;',
+      externalAction: `window._ultFocusLessonIdx = ${resolvedLessonIndex}; if(typeof window.saveUnitReturnOrigin === 'function') window.saveUnitReturnOrigin(); if(typeof window.switchView === 'function') window.switchView('timeline', '${effectiveUnitId}');`,
+      tooltip: 'Open interactive Living Timeline at this lesson (with 1-click return)',
     });
   }
 
   if (tabs.length === 0) return '';
 
   // Active tab selection: only set active if defaultTab is explicitly specified and exists
-  const activeTabKey = defaultTab && tabs.some((t) => t.key === defaultTab && !t.isAtlasModal) ? defaultTab : '';
+  const activeTabKey = defaultTab && tabs.some((t) => t.key === defaultTab && !t.externalAction) ? defaultTab : '';
   const upgradedVocabPanelHtml = hasVocab
     ? renderVocabLaunchpadPanelHTML(lesson, effectiveUnitId, htmlVocabInner)
     : '';
@@ -4032,14 +3975,14 @@ export function renderLessonLaunchpad({
               const labelDualHtml = tab.mobileLabel
                 ? `<span class="lp-lbl-desktop">${tab.label}</span><span class="lp-lbl-mobile">${tab.mobileLabel}</span>`
                 : `<span>${tab.label}</span>`;
-              if (tab.isAtlasModal) {
+              if (tab.externalAction) {
                 return `
               <button type="button"
-                class="launchpad-tab-btn launchpad-atlas-btn"
-                data-tab="atlas"
-                onclick="if(typeof window.openCmeTheaterMapModal === 'function') window.openCmeTheaterMapModal({lessonIndex: ${resolvedLessonIndex}});"
-                title="Historical Atlas (Era-Aware Regional Maps &amp; Live Terrain) [Shortcut: M]">
-                <i class="${tab.icon}"></i>
+                class="launchpad-tab-btn"
+                data-tab="${tab.key}"
+                onclick="${tab.externalAction}"
+                title="${tab.tooltip || tab.label}">
+                <i class="${tab.icon}"${tab.iconStyle ? ` style="${tab.iconStyle}"` : ''}></i>
                 ${labelDualHtml}
               </button>
             `;
@@ -4096,14 +4039,6 @@ export function renderLessonLaunchpad({
         `
           : ''
         }
-        ${hasSpine
-          ? `
-          <div class="launchpad-panel ${activeTabKey === 'spine' ? 'active' : ''}" data-panel="spine" style="${activeTabKey === 'spine' ? 'display: block;' : 'display: none;'}">
-            ${htmlSpineInner}
-          </div>
-        `
-          : ''
-        }
         ${hasVideo
           ? `
           <div class="launchpad-panel ${activeTabKey === 'video' ? 'active' : ''}" data-panel="video" style="${activeTabKey === 'video' ? 'display: block;' : 'display: none;'}">
@@ -4116,14 +4051,6 @@ export function renderLessonLaunchpad({
           ? `
           <div class="launchpad-panel ${activeTabKey === 'infographic' ? 'active' : ''}" data-panel="infographic" style="${activeTabKey === 'infographic' ? 'display: block;' : 'display: none;'}">
             ${htmlInfographicInner || renderLaunchpadInfographicPanelHTML(lesson, effectiveUnitId, lessonInfographics)}
-          </div>
-        `
-          : ''
-        }
-        ${hasObjectives
-          ? `
-          <div class="launchpad-panel ${activeTabKey === 'objectives' ? 'active' : ''}" data-panel="objectives" style="${activeTabKey === 'objectives' ? 'display: block;' : 'display: none;'}">
-            ${htmlObjectivesInner}
           </div>
         `
           : ''

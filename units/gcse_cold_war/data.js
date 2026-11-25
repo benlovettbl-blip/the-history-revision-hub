@@ -1410,7 +1410,7 @@ export default {
             "question": "1(a). Explain one consequence of the Potsdam Conference (1945). [4 marks]",
             "prompt": "State one clear consequence -> support with a specific date, name, or fact from Potsdam -> explain what this directly led to.",
             "examiner_tip": "Develop ONE focused consequence deeply (either zone-by-zone German reparations splitting Germany economically OR deepened distrust over Stalin’s Communist regime in Poland) rather than listing several.",
-            "model": "One consequence of the Potsdam Conference in July–August 1945 was the economic division of occupied Germany along superpower lines. Because President Truman blocked Joseph Stalin’s demand for crippling reparations from Western Germany—fearing poverty would breed communism—each power extracted reparations mainly from its own zone, stripping the Soviet east of machinery while Western zones rebuilt separately.",
+            "model": "One consequence of the Potsdam Conference in July–August 1945 was a breakdown in superpower trust that led Stalin to tighten Communist control across Eastern Europe and divided Germany. After President Truman confronted Stalin over Poland following America’s atomic test and blocked heavy reparations from Western zones, Stalin accelerated one-party Soviet satellite takeovers across his buffer zone (1945–48), sparking the 1946 Long and Novikov Telegrams.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -1431,16 +1431,16 @@ export default {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the Potsdam Conference in July–August 1945 was the economic division of occupied Germany along superpower lines. Because President Truman blocked Joseph Stalin’s demand for crippling reparations from Western Germany—fearing poverty would breed communism—each power extracted reparations mainly from its own zone, stripping the Soviet east of machinery while Western zones rebuilt separately.",
+                "text": "One consequence of the Potsdam Conference in July–August 1945 was a breakdown in superpower trust that led Stalin to tighten Communist control across Eastern Europe and divided Germany. After President Truman confronted Stalin over Poland following America’s atomic test and blocked heavy reparations from Western zones, Stalin accelerated one-party Soviet satellite takeovers across his buffer zone (1945–48), sparking the 1946 Long and Novikov Telegrams.",
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 55w • Option B: 55w). Each exemplar earns full 4/4 marks in two–three crisp sentences by developing ONE focused consequence with precise factual detail—either zone-by-zone German reparations splitting East and West economically (Option A) or Truman confronting Stalin over Warsaw’s Communist regime and deepening mutual suspicion (Option B)—rather than listing multiple undeveloped consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Economic Division of Germany",
-                    "text": "One consequence of the Potsdam Conference in July–August 1945 was the economic division of occupied Germany along superpower lines. Because President Truman blocked Joseph Stalin’s demand for crippling reparations from Western Germany—fearing poverty would breed communism—each power extracted reparations mainly from its own zone, stripping the Soviet east of machinery while Western zones rebuilt separately."
+                    "label": "Option A (4/4): Divided Zones → Soviet Eastern Bloc Buffer (1945–48)",
+                    "text": "One consequence of the Potsdam Conference in July–August 1945 was a breakdown in superpower trust that led Stalin to tighten Communist control across Eastern Europe and divided Germany. After President Truman confronted Stalin over Poland following America’s atomic test and blocked heavy reparations from Western zones, Stalin accelerated one-party Soviet satellite takeovers across his buffer zone (1945–48), sparking the 1946 Long and Novikov Telegrams."
                   },
                   {
-                    "label": "Option B (4/4): Breakdown of Trust Over Poland",
-                    "text": "One consequence of the Potsdam Conference in July 1945 was a sharp breakdown in wartime trust over Eastern Europe. Emboldened by the 16 July New Mexico atomic bomb test, President Truman confronted Stalin for arresting non-communist Polish leaders and installing a Communist-dominated regime in Warsaw, convincing Stalin to tighten his defensive Eastern European buffer zone."
+                    "label": "Option A (4/4): Economic Division of Germany",
+                    "text": "One consequence of the Potsdam Conference in July–August 1945 was the economic division of occupied Germany along superpower lines. Because President Truman blocked Joseph Stalin’s demand for crippling reparations from Western Germany—fearing poverty would breed communism—each power extracted reparations mainly from its own zone, stripping the Soviet east of machinery while Western zones rebuilt separately."
                   }
                 ]
               }
@@ -2872,7 +2872,7 @@ export default {
             "question": "1(a). Explain one consequence of the Truman Doctrine (1947). [4 marks]",
             "prompt": "State one clear consequence -> support with a specific date, figure ($400m), or country -> explain what this directly led to.",
             "examiner_tip": "Do not confuse the Truman Doctrine ($400m political/military aid for Greece and Turkey in March 1947) with the Marshall Plan ($13bn+ Western European economic recovery).",
-            "model": "One consequence of the Truman Doctrine in March 1947 was the permanent end of peacetime American isolationism in favour of containment. After bankrupt Britain withdrew support, President Truman secured $400 million in military and economic aid for Greece and Turkey, enabling royalist forces to defeat Communist guerrillas in the Greek Civil War and committing Washington to resist Soviet expansion.",
+            "model": "One consequence of the Truman Doctrine in March 1947 was Joseph Stalin’s decision to tighten ideological control across European communism through Cominform. Viewing Truman’s $400 million containment aid to Greece and Turkey as aggressive American encirclement, Stalin established Cominform in September 1947 to direct satellite Communist parties from Moscow and block them from accepting Western influence.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -2893,16 +2893,16 @@ export default {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the Truman Doctrine in March 1947 was the permanent end of peacetime American isolationism in favour of containment. After bankrupt Britain withdrew support, President Truman secured $400 million in military and economic aid for Greece and Turkey, enabling royalist forces to defeat Communist guerrillas in the Greek Civil War and committing Washington to resist Soviet expansion.",
-                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 59w • Option B: 54w). Each exemplar earns full 4/4 marks in two–three crisp sentences by developing ONE focused consequence with precise factual detail—either ending US peacetime isolationism via $400 million containment aid to Greece and Turkey (Option A) or provoking Stalin to enforce ideological obedience through Cominform in September 1947 (Option B)—rather than listing multiple undeveloped consequences.",
+                "text": "One consequence of the Truman Doctrine in March 1947 was Joseph Stalin’s decision to tighten ideological control across European communism through Cominform. Viewing Truman’s $400 million containment aid to Greece and Turkey as aggressive American encirclement, Stalin established Cominform in September 1947 to direct satellite Communist parties from Moscow and block them from accepting Western influence.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE concrete specification consequence of the Truman Doctrine—either provoking Stalin to establish Cominform in September 1947 (Option A) or driving America’s June 1947 $13 billion Marshall Plan recovery programme (Option B).",
                 "options": [
                   {
-                    "label": "Option A (4/4): End of US Isolationism",
-                    "text": "One consequence of the Truman Doctrine in March 1947 was the permanent end of peacetime American isolationism in favour of containment. After bankrupt Britain withdrew support, President Truman secured $400 million in military and economic aid for Greece and Turkey, enabling royalist forces to defeat Communist guerrillas in the Greek Civil War and committing Washington to resist Soviet expansion."
+                    "label": "Option A (4/4): Creation of Cominform (Sept 1947)",
+                    "text": "One consequence of the Truman Doctrine in March 1947 was Joseph Stalin’s decision to tighten ideological control across European communism through Cominform. Viewing Truman’s $400 million containment aid to Greece and Turkey as aggressive American encirclement, Stalin established Cominform in September 1947 to direct satellite Communist parties from Moscow and block them from accepting Western influence."
                   },
                   {
-                    "label": "Option B (4/4): Creation of Cominform",
-                    "text": "One consequence of the Truman Doctrine in March 1947 was Joseph Stalin’s decision to tighten ideological discipline across European communism. Viewing Truman’s $400 million containment pledge as aggressive American encirclement, Stalin established Cominform in September 1947 to bind satellite Communist parties strictly under Moscow’s direction and expel Marshal Tito’s independent Communist Yugoslavia in 1948."
+                    "label": "Option B (4/4): Launch of the $13bn Marshall Plan (June 1947)",
+                    "text": "One consequence of the Truman Doctrine in March 1947 was America’s commitment to active containment, backed immediately by the June 1947 Marshall Plan. Having pledged $400 million to defeat communism in Greece and Turkey after Britain withdrew, Washington reinforced containment economically with over $13 billion in Marshall Aid to rebuild Western Europe and prevent Communist electoral gains."
                   }
                 ]
               }
@@ -10112,7 +10112,7 @@ export default {
             "question": "1(a). Explain one consequence of the Prague Spring (1968). [4 marks]",
             "prompt": "State one clear consequence -> support with specific Spring/Summer 1968 detail (ending censorship / \"Two Thousand Words\" / July Warsaw Letter) -> explain the direct result.",
             "examiner_tip": "Focus either on intense alarm among Warsaw Pact hardliners culminating in the July 1968 Warsaw Letter OR the surge of uncensored public debate inside Czechoslovakia.",
-            "model": "One consequence of Alexander Dubček’s Prague Spring reforms in April 1968 was fierce alarm among Warsaw Pact hardliners across Eastern Europe. Fearing that abolishing press censorship under \"Socialism with a human face\" would spread anti-communist demands into East Germany and Poland, Brezhnev, Ulbricht, and Gomułka staged June military exercises and issued the stern Five-Party Warsaw Letter on 15 July 1968.",
+            "model": "One consequence of Alexander Dubček’s Prague Spring reforms in 1968 was the Soviet-led military invasion of Czechoslovakia and the announcement of the Brezhnev Doctrine. Fearing that abolishing censorship under \"Socialism with a human face\" would unravel one-party rule across the bloc, Brezhnev sent 500,000 Warsaw Pact troops into Prague on 20–21 August 1968, arresting Dubček and declaring Moscow’s right to intervene in any satellite state.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -10125,7 +10125,7 @@ export default {
                 "title": "2/4 Basic Knowledge",
                 "score": "2 / 4 Marks",
                 "level": "Level 1 Top (Supported Statement)",
-                "text": "One consequence of the Prague Spring was that Alexander Dubček ended press censorship under \"Socialism with a human face\", which alarmed Brezhnev and led five Communist states to issue the Warsaw Letter in July 1968.",
+                "text": "One consequence of Alexander Dubček’s Prague Spring reforms in 1968 was that Leonid Brezhnev ordered 500,000 Warsaw Pact troops to invade Czechoslovakia in August 1968 to crush \"Socialism with a human face\".",
                 "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual summary, needing fuller causal explanation of why Brezhnev and neighbouring leaders feared contagious Eastern Bloc collapse."
               },
               "tier_4m": {
@@ -10133,16 +10133,16 @@ export default {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of Alexander Dubček’s Prague Spring reforms in April 1968 was fierce alarm among Warsaw Pact hardliners across Eastern Europe. Fearing that abolishing press censorship under \"Socialism with a human face\" would spread anti-communist demands into East Germany and Poland, Brezhnev, Ulbricht, and Gomułka staged June military exercises and issued the stern Five-Party Warsaw Letter on 15 July 1968.",
-                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 59w • Option B: 54w). Each exemplar earns full 4/4 marks by developing ONE focused pre-invasion consequence—either provoking Warsaw Pact pressure and the July 1968 Warsaw Letter (Option A) or unleashing uncensored domestic debate (Option B).",
+                "text": "One consequence of Alexander Dubček’s Prague Spring reforms in 1968 was the Soviet-led military invasion of Czechoslovakia and the announcement of the Brezhnev Doctrine. Fearing that abolishing censorship under \"Socialism with a human face\" would unravel one-party rule across the bloc, Brezhnev sent 500,000 Warsaw Pact troops into Prague on 20–21 August 1968, arresting Dubček and declaring Moscow’s right to intervene in any satellite state.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Option A links Dubček’s reforms directly to the decisive August 1968 Warsaw Pact invasion (500,000 troops) and Brezhnev Doctrine, while Option B develops the diplomatic escalation leading to the July 1968 Warsaw Letter.",
                 "options": [
+                  {
+                    "label": "Option A (4/4): August 1968 Invasion & Brezhnev Doctrine",
+                    "text": "One consequence of Alexander Dubček’s Prague Spring reforms in 1968 was the Soviet-led military invasion of Czechoslovakia and the announcement of the Brezhnev Doctrine. Fearing that abolishing censorship under \"Socialism with a human face\" would unravel one-party rule across the bloc, Brezhnev sent 500,000 Warsaw Pact troops into Prague on 20–21 August 1968, arresting Dubček and declaring Moscow’s right to intervene in any satellite state."
+                  },
                   {
                     "label": "Option A (4/4): Warsaw Pact Alarm & The July 1968 Warsaw Letter",
                     "text": "One consequence of Alexander Dubček’s Prague Spring reforms in April 1968 was fierce alarm among Warsaw Pact hardliners across Eastern Europe. Fearing that abolishing press censorship under \"Socialism with a human face\" would spread anti-communist demands into East Germany and Poland, Brezhnev, Ulbricht, and Gomułka staged June military exercises and issued the stern Five-Party Warsaw Letter on 15 July 1968."
-                  },
-                  {
-                    "label": "Option B (4/4): Surge of Uncensored Political Debate in Prague",
-                    "text": "One consequence of the Prague Spring was an immediate explosion of open political debate and civil society across Czechoslovakia. Once Dubček’s April 1968 Action Programme ended state press censorship and curbed StB secret-police repression, non-communist clubs formed and Ludvík Vaculík published the radical \"Two Thousand Words\" manifesto demanding faster democratic reform."
                   }
                 ]
               }
@@ -14657,7 +14657,7 @@ export default {
             "question": "1(a). Explain one consequence of the Carter Doctrine (1980). [4 marks]",
             "prompt": "State one clear consequence -> support with specific January 1980 detail (Persian Gulf / Rapid Deployment Force OR sanctions / Operation Cyclone) -> explain what this led to.",
             "examiner_tip": "Do not confuse Jimmy Carter’s January 1980 Gulf commitment and sanctions with Ronald Reagan’s 1983 SDI—keep your evidence anchored tightly to 1980.",
-            "model": "One major consequence of the Carter Doctrine in January 1980 was the militarisation of American containment across the Persian Gulf, ending 1970s détente. Pledging US military force to block Soviet expansion beyond Afghanistan toward Middle Eastern oil supplies, President Jimmy Carter created a Rapid Deployment Force and raised defence spending by 5 per cent, reviving open superpower confrontation.",
+            "model": "One major consequence of the Carter Doctrine in January 1980 was the formal end of 1970s détente and the launch of the \"Second Cold War\". Pledging US military force via a Rapid Deployment Force to block Soviet expansion toward Persian Gulf oil, President Carter shelved SALT 2, led over 60 nations in boycotting the 1980 Moscow Olympics, and set the stage for Ronald Reagan’s massive military build-up.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -14678,12 +14678,12 @@ export default {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One major consequence of the Carter Doctrine in January 1980 was the militarisation of American containment across the Persian Gulf, ending 1970s détente. Pledging US military force to block Soviet expansion beyond Afghanistan toward Middle Eastern oil supplies, President Jimmy Carter created a Rapid Deployment Force and raised defence spending by 5 per cent, reviving open superpower confrontation.",
+                "text": "One major consequence of the Carter Doctrine in January 1980 was the formal end of 1970s détente and the launch of the \"Second Cold War\". Pledging US military force via a Rapid Deployment Force to block Soviet expansion toward Persian Gulf oil, President Carter shelved SALT 2, led over 60 nations in boycotting the 1980 Moscow Olympics, and set the stage for Ronald Reagan’s massive military build-up.",
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 58w • Option B: 55w). Each exemplar earns full 4/4 marks in two–three crisp sentences by developing ONE focused consequence with precise factual detail—either militarised Persian Gulf containment via the Rapid Deployment Force (Option A) or economic sanctions, SALT 2 withdrawal, and CIA aid to the Mujahideen (Option B)—rather than listing multiple undeveloped consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Militarised Gulf Containment",
-                    "text": "One major consequence of the Carter Doctrine in January 1980 was the militarisation of American containment across the Persian Gulf, ending 1970s détente. Pledging US military force to block Soviet expansion beyond Afghanistan toward Middle Eastern oil supplies, President Jimmy Carter created a Rapid Deployment Force and raised defence spending by 5 per cent, reviving open superpower confrontation."
+                    "label": "Option A (4/4): End of Détente → Olympic Boycott & Second Cold War",
+                    "text": "One major consequence of the Carter Doctrine in January 1980 was the formal end of 1970s détente and the launch of the \"Second Cold War\". Pledging US military force via a Rapid Deployment Force to block Soviet expansion toward Persian Gulf oil, President Carter shelved SALT 2, led over 60 nations in boycotting the 1980 Moscow Olympics, and set the stage for Ronald Reagan’s massive military build-up."
                   },
                   {
                     "label": "Option B (4/4): Sanctions & Covert Proxy Aid",

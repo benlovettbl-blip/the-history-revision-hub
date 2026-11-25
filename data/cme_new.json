@@ -2916,7 +2916,7 @@
             "question": "1. Explain one consequence of the bombing of the King David Hotel (1946). [4 marks]",
             "prompt": "State one clear consequence -> support with a specific date, name, or fact -> explain what this directly led to.",
             "examiner_tip": "Focus on British government and public shock at the 91 deaths in Jerusalem and growing pressure to hand the Mandate to the UN.",
-            "model": "One consequence of the bombing of the King David Hotel was the collapse of British domestic political support for maintaining the Mandate. Because the Irgun's attack killed 91 military, civil, and Arab personnel, the British public and press were outraged, directly compelling Prime Minister Clement Attlee’s cabinet to expedite plans to withdraw from Palestine.",
+            "model": "One consequence of the bombing of the King David Hotel on 22 July 1946 was the collapse of British domestic support for keeping the Mandate, pushing Britain toward handing Palestine to the United Nations. Because Menachem Begin’s Irgun killed 91 military, civil, and Arab staff at British headquarters, public and parliamentary outrage mounted, directly compelling Prime Minister Clement Attlee’s cabinet to refer the Palestine problem to the UN in February 1947.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -2937,12 +2937,12 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the bombing of the King David Hotel was the collapse of British domestic political support for maintaining the Mandate. Because the Irgun's attack killed 91 military, civil, and Arab personnel, the British public and press were outraged, directly compelling Prime Minister Clement Attlee’s cabinet to expedite plans to withdraw from Palestine.",
+                "text": "One consequence of the bombing of the King David Hotel on 22 July 1946 was the collapse of British domestic support for keeping the Mandate, pushing Britain toward handing Palestine to the United Nations. Because Menachem Begin’s Irgun killed 91 military, civil, and Arab staff at British headquarters, public and parliamentary outrage mounted, directly compelling Prime Minister Clement Attlee’s cabinet to refer the Palestine problem to the UN in February 1947.",
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 51w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either British domestic outrage over the 91 deaths pushing Attlee’s cabinet toward withdrawal (Option A) or Ben-Gurion’s Haganah dissolving the United Resistance Movement with Begin’s Irgun (Option B)—rather than wasting exam time listing multiple consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Collapse of British Support",
-                    "text": "One consequence of the bombing of the King David Hotel was the collapse of British domestic political support for maintaining the Mandate. Because the Irgun's attack killed 91 military, civil, and Arab personnel, the British public and press were outraged, directly compelling Prime Minister Clement Attlee’s cabinet to expedite plans to withdraw from Palestine."
+                    "label": "Option A (4/4): Collapse of Support → Feb 1947 UN Handover",
+                    "text": "One consequence of the bombing of the King David Hotel on 22 July 1946 was the collapse of British domestic support for keeping the Mandate, pushing Britain toward handing Palestine to the United Nations. Because Menachem Begin’s Irgun killed 91 military, civil, and Arab staff at British headquarters, public and parliamentary outrage mounted, directly compelling Prime Minister Clement Attlee’s cabinet to refer the Palestine problem to the UN in February 1947."
                   },
                   {
                     "label": "Option B (4/4): Split in Zionist Resistance",
@@ -2969,7 +2969,7 @@
             "question": "1. Explain one consequence of UN Resolution 181 (November 1947). [4 marks]",
             "prompt": "State one clear consequence -> support with a specific date, name, or fact -> explain what this directly led to.",
             "examiner_tip": "Do NOT describe the causes of UNSCOP—focus strictly on what UN Resolution 181 led to (Arab rejection, Jewish acceptance, and immediate civil war in Palestine).",
-            "model": "One consequence of UN Resolution 181 on 29 November 1947 was the immediate outbreak of communal civil war across Mandatory Palestine. Because the Jewish Agency accepted the UN partition into separate Jewish and Arab states while the Arab Higher Committee rejected it as unjust, armed clashes erupted immediately across mixed towns and key roads.",
+            "model": "One consequence of UN Resolution 181 on 29 November 1947 was immediate communal civil war that culminated in the declaration of Israel and the 1948–49 Arab–Israeli War. Because the Jewish Agency accepted the UN partition plan while the Arab Higher Committee rejected losing over half of Palestine, bitter fighting erupted across mixed cities and culminated on 14–15 May 1948 in Israel’s proclamation of statehood and invasion by five Arab armies.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -2990,12 +2990,12 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Edexcel Benchmark",
-                "text": "One consequence of UN Resolution 181 on 29 November 1947 was the immediate outbreak of communal civil war across Mandatory Palestine. Because the Jewish Agency accepted the UN partition into separate Jewish and Arab states while the Arab Higher Committee rejected it as unjust, armed clashes erupted immediately across mixed towns and key roads.",
+                "text": "One consequence of UN Resolution 181 on 29 November 1947 was immediate communal civil war that culminated in the declaration of Israel and the 1948–49 Arab–Israeli War. Because the Jewish Agency accepted the UN partition plan while the Arab Higher Committee rejected losing over half of Palestine, bitter fighting erupted across mixed cities and culminated on 14–15 May 1948 in Israel’s proclamation of statehood and invasion by five Arab armies.",
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either communal civil war sparked by rival Jewish Agency and Arab Higher Committee reactions to partition (Option A) or Britain’s refusal to enforce partition ahead of its May 1948 withdrawal (Option B)—rather than wasting exam time listing multiple consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Outbreak of Civil War",
-                    "text": "One consequence of UN Resolution 181 on 29 November 1947 was the immediate outbreak of communal civil war across Mandatory Palestine. Because the Jewish Agency accepted the UN partition into separate Jewish and Arab states while the Arab Higher Committee rejected it as unjust, armed clashes erupted immediately across mixed towns and key roads."
+                    "label": "Option A (4/4): Civil War → May 1948 Proclamation & Invasion",
+                    "text": "One consequence of UN Resolution 181 on 29 November 1947 was immediate communal civil war that culminated in the declaration of Israel and the 1948–49 Arab–Israeli War. Because the Jewish Agency accepted the UN partition plan while the Arab Higher Committee rejected losing over half of Palestine, bitter fighting erupted across mixed cities and culminated on 14–15 May 1948 in Israel’s proclamation of statehood and invasion by five Arab armies."
                   },
                   {
                     "label": "Option B (4/4): Accelerated British Withdrawal",
@@ -4601,7 +4601,7 @@
             "question": "1. Explain one consequence of the refugee status of Palestinian Arabs following the 1948–49 war. [4 marks]",
             "prompt": "State one clear consequence -> support with a specific date, name, or fact -> explain what this directly led to.",
             "examiner_tip": "Cite the displacement of over 700,000 Palestinians into overcrowded UNRWA camps across Gaza, the West Bank, Jordan, Syria, and Lebanon with no right of return.",
-            "model": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was permanent statelessness in overcrowded border camps. Because over 400 villages were depopulated and Israel barred repatriation to preserve a Jewish majority, the United Nations created UNRWA to sustain displaced families across Gaza, the West Bank, Jordan, Syria, and Lebanon.",
+            "model": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was an escalating cycle of cross-border fedayeen raids and severe Israeli reprisals. Trapped in destitute UNRWA camps in Egyptian-held Gaza and the Jordanian West Bank after Israel barred repatriation, displaced youths launched armed guerrilla incursions across the Green Line, directly provoking major IDF retaliatory strikes such as the February 1955 Gaza raid.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -4622,16 +4622,16 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was permanent statelessness in overcrowded border camps. Because over 400 villages were depopulated and Israel barred repatriation to preserve a Jewish majority, the United Nations created UNRWA to sustain displaced families across Gaza, the West Bank, Jordan, Syria, and Lebanon.",
+                "text": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was an escalating cycle of cross-border fedayeen raids and severe Israeli reprisals. Trapped in destitute UNRWA camps in Egyptian-held Gaza and the Jordanian West Bank after Israel barred repatriation, displaced youths launched armed guerrilla incursions across the Green Line, directly provoking major IDF retaliatory strikes such as the February 1955 Gaza raid.",
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 55w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either long-term statelessness of 700,000 refugees in UNRWA camps after Israel barred return (Option A) or cross-border fedayeen guerrilla raids and IDF reprisals along the Green Line (Option B)—rather than wasting exam time listing multiple consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): UNRWA Refugee Camps",
-                    "text": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was permanent statelessness in overcrowded border camps. Because over 400 villages were depopulated and Israel barred repatriation to preserve a Jewish majority, the United Nations created UNRWA to sustain displaced families across Gaza, the West Bank, Jordan, Syria, and Lebanon."
+                    "label": "Option A (4/4): Stateless Camps → Fedayeen Raids & IDF Reprisals",
+                    "text": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was an escalating cycle of cross-border fedayeen raids and severe Israeli reprisals. Trapped in destitute UNRWA camps in Egyptian-held Gaza and the Jordanian West Bank after Israel barred repatriation, displaced youths launched armed guerrilla incursions across the Green Line, directly provoking major IDF retaliatory strikes such as the February 1955 Gaza raid."
                   },
                   {
-                    "label": "Option B (4/4): Cross-Border Fedayeen Raids",
-                    "text": "One consequence of Palestinian refugee statelessness after 1949 was an escalating cycle of cross-border guerrilla infiltration and Israeli military reprisals. Displaced Palestinians trapped in destitute camps in Egyptian-held Gaza and the Jordanian West Bank launched armed fedayeen raids into Israel, directly provoking severe IDF retaliatory strikes along the fragile Green Line borders."
+                    "label": "Option A (4/4): UNRWA Refugee Camps",
+                    "text": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was permanent statelessness in overcrowded border camps. Because over 400 villages were depopulated and Israel barred repatriation to preserve a Jewish majority, the United Nations created UNRWA to sustain displaced families across Gaza, the West Bank, Jordan, Syria, and Lebanon."
                   }
                 ]
               }
@@ -8678,7 +8678,7 @@
             "question": "1. Explain one consequence of Israel’s raid on Samu in November 1966. [4 marks]",
             "prompt": "State one clear consequence -> support with a specific date, name, or fact -> explain what this directly led to.",
             "examiner_tip": "Focus on November 1966 (not 1964): show how Israel's raid on Samu in the Jordanian West Bank sparked riots against King Hussein and pushed Jordan toward Nasser's military alliance.",
-            "model": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank rioting that destabilised King Hussein’s monarchy. After 4,000 IDF troops supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers, outraged Palestinians rioted across West Bank towns, accusing Hussein of failing to protect them.",
+            "model": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank unrest that pushed moderate King Hussein into Egypt’s military camp ahead of the Six-Day War. After 4,000 IDF troops flattened over 100 houses and killed 15 Jordanian soldiers, furious Palestinian riots destabilised Hussein’s monarchy and pressured him into signing the 30 May 1967 Joint Defence Pact with President Nasser.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -8699,16 +8699,16 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank rioting that destabilised King Hussein’s monarchy. After 4,000 IDF troops supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers, outraged Palestinians rioted across West Bank towns, accusing Hussein of failing to protect them.",
+                "text": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank unrest that pushed moderate King Hussein into Egypt’s military camp ahead of the Six-Day War. After 4,000 IDF troops flattened over 100 houses and killed 15 Jordanian soldiers, furious Palestinian riots destabilised Hussein’s monarchy and pressured him into signing the 30 May 1967 Joint Defence Pact with President Nasser.",
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 54w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either West Bank anti-monarchy riots after 4,000 IDF troops demolished over 100 houses and killed 15 Jordanian soldiers (Option A) or King Hussein abandoning secret moderation toward his May 1967 pact with Nasser (Option B)—rather than wasting exam time listing multiple consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): West Bank Riots Against Hussein",
-                    "text": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank rioting that destabilised King Hussein’s monarchy. After 4,000 IDF troops supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers, outraged Palestinians rioted across West Bank towns, accusing Hussein of failing to protect them."
+                    "label": "Option A (4/4): West Bank Riots → Jordan’s May 1967 Pact With Egypt",
+                    "text": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank unrest that pushed moderate King Hussein into Egypt’s military camp ahead of the Six-Day War. After 4,000 IDF troops flattened over 100 houses and killed 15 Jordanian soldiers, furious Palestinian riots destabilised Hussein’s monarchy and pressured him into signing the 30 May 1967 Joint Defence Pact with President Nasser."
                   },
                   {
-                    "label": "Option B (4/4): Hardening of Jordanian Policy",
-                    "text": "One consequence of the November 1966 Samu raid was the alienation of Israel’s most moderate Arab neighbour, pushing Jordan into Egypt’s military camp. Deeply humiliated by the daylight assault on his territory, King Hussein abandoned quiet restraint and hardened his anti-Israeli stance, paving the way for his May 1967 Joint Defence Pact with Nasser."
+                    "label": "Option A (4/4): West Bank Riots Against Hussein",
+                    "text": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank rioting that destabilised King Hussein’s monarchy. After 4,000 IDF troops supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers, outraged Palestinians rioted across West Bank towns, accusing Hussein of failing to protect them."
                   }
                 ]
               }
@@ -15900,7 +15900,7 @@
             "question": "1. Explain one consequence of the Yom Kippur War (1973). [4 marks]",
             "prompt": "State one clear consequence -> support with a specific date, name, or fact -> explain what this directly led to.",
             "examiner_tip": "Do NOT write about the causes of the war—focus on a consequence AFTER October 1973, such as shattering the myth of Israeli invincibility, the OPEC oil embargo, or US-led peace talks under UN Resolution 338.",
-            "model": "One consequence of the Yom Kippur War in October 1973 was the shattering of the myth of Israeli military invulnerability. Because Egyptian troops breached the Bar-Lev Line and inflicted heavy Israeli tank and aircraft losses, President Anwar Sadat restored Arab pride and broke the post-1967 stalemate, making future peace negotiations politically possible.",
+            "model": "One consequence of the Yom Kippur War in October 1973 was the shattering of Israeli military invincibility, which broke the post-1967 diplomatic deadlock and unlocked peace talks. Because Egyptian forces breached the Bar-Lev Line and inflicted over 2,500 Israeli deaths, Anwar Sadat restored Arab pride while Israel accepted negotiated security buffers through Henry Kissinger’s 1974–75 Sinai I and II shuttle diplomacy.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -15921,12 +15921,12 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of the Yom Kippur War in October 1973 was the shattering of the myth of Israeli military invulnerability. Because Egyptian troops breached the Bar-Lev Line and inflicted heavy Israeli tank and aircraft losses, President Anwar Sadat restored Arab pride and broke the post-1967 stalemate, making future peace negotiations politically possible.",
+                "text": "One consequence of the Yom Kippur War in October 1973 was the shattering of Israeli military invincibility, which broke the post-1967 diplomatic deadlock and unlocked peace talks. Because Egyptian forces breached the Bar-Lev Line and inflicted over 2,500 Israeli deaths, Anwar Sadat restored Arab pride while Israel accepted negotiated security buffers through Henry Kissinger’s 1974–75 Sinai I and II shuttle diplomacy.",
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 52w • Option B: 50w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either breaching the Bar-Lev Line shattering Israeli invulnerability and restoring Arab pride for talks (Option A) or Operation Nickel Grass and encirclement of Egypt’s Third Army forcing UN Resolution 338 (Option B)—rather than wasting exam time listing multiple consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): End of Israeli Invulnerability Myth",
-                    "text": "One consequence of the Yom Kippur War in October 1973 was the shattering of the myth of Israeli military invulnerability. Because Egyptian troops breached the Bar-Lev Line and inflicted heavy Israeli tank and aircraft losses, President Anwar Sadat restored Arab pride and broke the post-1967 stalemate, making future peace negotiations politically possible."
+                    "label": "Option A (4/4): Ended Invincibility → 1974–75 Shuttle Diplomacy",
+                    "text": "One consequence of the Yom Kippur War in October 1973 was the shattering of Israeli military invincibility, which broke the post-1967 diplomatic deadlock and unlocked peace talks. Because Egyptian forces breached the Bar-Lev Line and inflicted over 2,500 Israeli deaths, Anwar Sadat restored Arab pride while Israel accepted negotiated security buffers through Henry Kissinger’s 1974–75 Sinai I and II shuttle diplomacy."
                   },
                   {
                     "label": "Option B (4/4): Superpower Crisis and Ceasefire",
@@ -20267,7 +20267,7 @@
             "question": "1. Explain one consequence of Arafat’s renunciation of terrorism in a speech at the UN (1988). [4 marks]",
             "prompt": "State one clear consequence -> support with a specific date, name, or fact -> explain what this directly led to.",
             "examiner_tip": "Focus strictly on December 1988: show how Arafat's UN speech accepting Israel's right to exist and renouncing terrorism led the USA to lift its ban on official talks with the PLO.",
-            "model": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva was the immediate opening of official diplomatic dialogue between Washington and the PLO. By explicitly renouncing terrorism in all forms and accepting UN Resolutions 242 and 338, Arafat met strict American preconditions, prompting President Reagan’s administration to end its ban on PLO contact.",
+            "model": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva was the end of America’s 13-year diplomatic boycott of the PLO, unlocking Palestinian participation in peace negotiations. By explicitly renouncing terrorism and accepting UN Resolutions 242 and 338, Arafat met Washington’s 1975 preconditions, prompting President Reagan to open official US–PLO talks and paving the way toward the 1993 Oslo Accords.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -20288,12 +20288,12 @@
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva was the immediate opening of official diplomatic dialogue between Washington and the PLO. By explicitly renouncing terrorism in all forms and accepting UN Resolutions 242 and 338, Arafat met strict American preconditions, prompting President Reagan’s administration to end its ban on PLO contact.",
+                "text": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva was the end of America’s 13-year diplomatic boycott of the PLO, unlocking Palestinian participation in peace negotiations. By explicitly renouncing terrorism and accepting UN Resolutions 242 and 338, Arafat met Washington’s 1975 preconditions, prompting President Reagan to open official US–PLO talks and paving the way toward the 1993 Oslo Accords.",
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 50w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Arafat accepting Resolutions 242 and 338 in Geneva so Reagan lifted the US ban on PLO talks (Option A) or legitimising the PLO in Western capitals for 1990s peace negotiations (Option B)—rather than wasting exam time listing multiple consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Opening of US-PLO Dialogue",
-                    "text": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva was the immediate opening of official diplomatic dialogue between Washington and the PLO. By explicitly renouncing terrorism in all forms and accepting UN Resolutions 242 and 338, Arafat met strict American preconditions, prompting President Reagan’s administration to end its ban on PLO contact."
+                    "label": "Option A (4/4): Ended US Boycott → Path to Madrid & Oslo Talks",
+                    "text": "One consequence of Yasser Arafat’s December 1988 UN speech in Geneva was the end of America’s 13-year diplomatic boycott of the PLO, unlocking Palestinian participation in peace negotiations. By explicitly renouncing terrorism and accepting UN Resolutions 242 and 338, Arafat met Washington’s 1975 preconditions, prompting President Reagan to open official US–PLO talks and paving the way toward the 1993 Oslo Accords."
                   },
                   {
                     "label": "Option B (4/4): Diplomatic Credibility in the West",

@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_early_islamic_baghdad",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "Early Islamic Civilisation — Baghdad & Silk Roads (c. AD 750–1258)",
+  "examDateBoundary": "c. AD 750–1258",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Baghdad c. AD 900",
+    "subLabel": "Key Stage 2",
+    "dateChip": "c. AD 750–1258",
+    "gloss": "Why the circular Round City of Baghdad became a million-citizen world crossroads of rag paper, the House of Wisdom, algebra, free hospitals, and Silk Road trade.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "1. Baghdad & House of Wisdom",
+        "dateChip": "AD 750–1000",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Round City",
+        "gloss": "Caliph al-Mansur built the circular Round City of Peace on the River Tigris, where Samarkand rag paper and multi-faith translators powered the House of Wisdom.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Building the Round City",
+            "dateChip": "AD 750–900",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Round City",
+            "q2Chain": "Caliph al-Mansur picks River Tigris crossroads (762) → 100,000 builders raise circular City of Peace → Million citizens dwarf Saxon towns",
+            "gloss": "Caliph al-Mansur picks River Tigris crossroads (762) → 100,000 builders raise circular City of Peace → Million citizens dwarf Saxon towns",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Choosing the River Tigris Bend",
+                "dateChip": "AD 750–762",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Tigris",
+                "gloss": "In AD 762, Abbasid Caliph al-Mansur picked a fertile bend on the River Tigris linked by deep canals to the Euphrates.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Abbasids Needed Central Crossroads",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "al-Mansur",
+                    "gloss": "Islam spread swiftly from Arabia; Canals linked Tigris to Euphrates.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Islam spread swiftly from Arabia",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "al-Mansur",
+                        "gloss": "Islam spread swiftly from Arabia"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Canals linked Tigris to Euphrates",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "al-Mansur",
+                        "gloss": "Canals linked Tigris to Euphrates"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Date Palms, Quffas & Caravans",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "quffa",
+                    "gloss": "Round reed quffa boats floated; Silk Road camel caravans met.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Round reed quffa boats floated",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "quffa",
+                        "gloss": "Round reed quffa boats floated"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Silk Road camel caravans met",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "quffa",
+                        "gloss": "Silk Road camel caravans met"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Funded Planned Brick Capital",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "capital",
+                    "gloss": "Grew lush dates and wheat; Gathered 100,000 skilled builders.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Grew lush dates and wheat",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "capital",
+                        "gloss": "Grew lush dates and wheat"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Gathered 100,000 skilled builders",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "capital",
+                        "gloss": "Gathered 100,000 skilled builders"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "100,000 Build City of Peace",
+                "dateChip": "AD 762–766",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "City of Peace",
+                "gloss": "Tracing a 2km circle in flaming cotton seeds, 100,000 builders raised double brick walls around the Great Mosque and Green Dome.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "2km Circle & Double Brick Walls",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "100,000 bricklayers",
+                    "gloss": "Traced circle in flaming seeds; Named Madinat al-Salam: Peace.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Traced circle in flaming seeds",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "100,000 bricklayers",
+                        "gloss": "Traced circle in flaming seeds"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Named Madinat al-Salam: Peace",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "100,000 bricklayers",
+                        "gloss": "Named Madinat al-Salam: Peace"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Four Iron Gates & Green Dome",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Green Dome Palace",
+                    "gloss": "Kufa, Basra, Khorasan, Syria gates; Great Mosque stood at heart.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Kufa, Basra, Khorasan, Syria gates",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Green Dome Palace",
+                        "gloss": "Kufa, Basra, Khorasan, Syria gates"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Great Mosque stood at heart",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Green Dome Palace",
+                        "gloss": "Great Mosque stood at heart"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Boomed Into 1-Million City",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "double walls",
+                    "gloss": "Markets spread beyond round walls; Drew scholars from wide lands.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Markets spread beyond round walls",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "double walls",
+                        "gloss": "Markets spread beyond round walls"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Drew scholars from wide lands",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "double walls",
+                        "gloss": "Drew scholars from wide lands"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "1 Million People vs Britain",
+                "dateChip": "c. AD 900",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "one million people",
+                "gloss": "By AD 900, Baghdad held nearly one million citizens along paved streets and libraries while Anglo-Saxon London held under 10,000.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Paved Streets, Canals & Libraries",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "paved streets",
+                    "gloss": "Home to nearly one million; Bathhouses and shady public gardens.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Home to nearly one million",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "paved streets",
+                        "gloss": "Home to nearly one million"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Bathhouses and shady public gardens",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "paved streets",
+                        "gloss": "Bathhouses and shady public gardens"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Saxon Towns Held 5,000–10,000",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Winchester",
+                    "gloss": "London, Winchester had timber huts; Muddy lanes with thatched roofs.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "London, Winchester had timber huts",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Winchester",
+                        "gloss": "London, Winchester had timber huts"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Muddy lanes with thatched roofs",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Winchester",
+                        "gloss": "Muddy lanes with thatched roofs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "World’s Largest Learning Hub",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "libraries",
+                    "gloss": "Hundred times bigger than Winchester; Powered Golden Age book boom.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Hundred times bigger than Winchester",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "libraries",
+                        "gloss": "Hundred times bigger than Winchester"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Powered Golden Age book boom",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "libraries",
+                        "gloss": "Powered Golden Age book boom"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Paper & House of Wisdom",
+            "dateChip": "c. AD 800–1000",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "House of Wisdom",
+            "q2Chain": "Samarkand rag paper sparks 100+ bookshops → Muslim, Christian & Jewish translators rescue scrolls → Fatima al-Fihri & Queen Zubayda",
+            "gloss": "Samarkand rag paper sparks 100+ bookshops → Muslim, Christian & Jewish translators rescue scrolls → Fatima al-Fihri & Queen Zubayda",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Rag Paper & 100+ Bookshops",
+                "dateChip": "c. AD 786–833",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Samarkand",
+                "gloss": "Caliphs Harun al-Rashid and al-Ma’mun grew the House of Wisdom as cheap cotton-rag paper from Samarkand filled 100+ bookshops.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "European Calfskin Cost Whole Herds",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "calfskin parchment",
+                    "gloss": "Learned Chinese craft via Samarkand; Watermills beat cotton, linen rags.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Learned Chinese craft via Samarkand",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "calfskin parchment",
+                        "gloss": "Learned Chinese craft via Samarkand"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Watermills beat cotton, linen rags",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "calfskin parchment",
+                        "gloss": "Watermills beat cotton, linen rags"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bayt al-Hikma & Paper Market",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Bayt al-Hikma",
+                    "gloss": "Expanded royal House of Wisdom; Over 100 busy Baghdad bookshops.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Expanded royal House of Wisdom",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Bayt al-Hikma",
+                        "gloss": "Expanded royal House of Wisdom"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Over 100 busy Baghdad bookshops",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Bayt al-Hikma",
+                        "gloss": "Over 100 busy Baghdad bookshops"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Made Copying Scrolls Affordable",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "book markets",
+                    "gloss": "Shared star charts and poetry; Fuelled massive Translation Movement.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Shared star charts and poetry",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "book markets",
+                        "gloss": "Shared star charts and poetry"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Fuelled massive Translation Movement",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "book markets",
+                        "gloss": "Fuelled massive Translation Movement"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Translators & Hunayn ibn Ishaq",
+                "dateChip": "c. AD 830–900",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Hunayn ibn Ishaq",
+                "gloss": "Muslim, Christian, and Jewish scholars like Hunayn ibn Ishaq translated Greek, Persian, and Sanskrit scrolls into Arabic and tested claims.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Multi-Faith Scholars Worked Together",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Translation Movement",
+                    "gloss": "Muslim, Christian, and Jewish thinkers; Turned Greek, Sanskrit into Arabic.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Muslim, Christian, and Jewish thinkers",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Translation Movement",
+                        "gloss": "Muslim, Christian, and Jewish thinkers"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Turned Greek, Sanskrit into Arabic",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Translation Movement",
+                        "gloss": "Turned Greek, Sanskrit into Arabic"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Hunayn Tested & Fixed Mistakes",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Hunayn ibn Ishaq",
+                    "gloss": "Paid book’s weight in gold; Never copied old claims blindly.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Paid book’s weight in gold",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Hunayn ibn Ishaq",
+                        "gloss": "Paid book’s weight in gold"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Never copied old claims blindly",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Hunayn ibn Ishaq",
+                        "gloss": "Never copied old claims blindly"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Sparked Fresh Science & Maths",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Arabic",
+                    "gloss": "Shared one clear Arabic language; Rescued rare crumbling ancient scrolls.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Shared one clear Arabic language",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Arabic",
+                        "gloss": "Shared one clear Arabic language"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Rescued rare crumbling ancient scrolls",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Arabic",
+                        "gloss": "Rescued rare crumbling ancient scrolls"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Fatima al-Fihri & Queen Zubayda",
+                "dateChip": "c. AD 800–900",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Fatima al-Fihri",
+                "gloss": "Visionary women patrons funded lasting works: Fatima al-Fihri founded Fez’s al-Qarawiyyin college (AD 859) and Queen Zubayda dug Hajj wells.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "AD 859: Fez College Founded",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "al-Qarawiyyin",
+                    "gloss": "Fatima al-Fihri funded al-Qarawiyyin; Students still study there today.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Fatima al-Fihri funded al-Qarawiyyin",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "al-Qarawiyyin",
+                        "gloss": "Fatima al-Fihri funded al-Qarawiyyin"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Students still study there today",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "al-Qarawiyyin",
+                        "gloss": "Students still study there today"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Zubayda’s Desert Hajj Road Wells",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Queen Zubayda",
+                    "gloss": "Dug stone wells toward Mecca; Saved thousands of thirsty pilgrims.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Dug stone wells toward Mecca",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Queen Zubayda",
+                        "gloss": "Dug stone wells toward Mecca"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Saved thousands of thirsty pilgrims",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Queen Zubayda",
+                        "gloss": "Saved thousands of thirsty pilgrims"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Women Patrons Shaped Golden Age",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "patrons",
+                    "gloss": "Funded colleges and desert water; Spread learning across Islamic lands.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Funded colleges and desert water",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "patrons",
+                        "gloss": "Funded colleges and desert water"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Spread learning across Islamic lands",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "patrons",
+                        "gloss": "Spread learning across Islamic lands"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "2. Science, Hospitals & Trade",
+        "dateChip": "c. AD 774–1050",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "al-Khwarizmi",
+        "gloss": "Scholars pioneered 0–9 numerals, algebra, astrolabes, light optics, and free hospitals while camel caravans, dhows, and silver dirhams reached Viking Britain.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Zero, Optics & Hospitals",
+            "dateChip": "c. AD 820–1050",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "al-Khwarizmi",
+            "q2Chain": "Al-Khwarizmi’s 0–9 numerals, algebra & astrolabes → Ibn al-Haytham’s camera obscura & free bimaristans → Al-Razi & Al-Zahrawi heal patients",
+            "gloss": "Al-Khwarizmi’s 0–9 numerals, algebra & astrolabes → Ibn al-Haytham’s camera obscura & free bimaristans → Al-Razi & Al-Zahrawi heal patients",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Zero, Algebra & Astrolabes",
+                "dateChip": "c. AD 820–1206",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "astrolabes",
+                "gloss": "Al-Khwarizmi championed 0–9 numerals and algebra, Mariam al-Asturlabi crafted brass astrolabes, and al-Jazari built water clocks.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "0–9 Sifr, Algebra & Algorithms",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "sifr",
+                    "gloss": "Beat clumsy Roman numeral sums; Book al-Jabr gave word algebra.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Beat clumsy Roman numeral sums",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "sifr",
+                        "gloss": "Beat clumsy Roman numeral sums"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Book al-Jabr gave word algebra",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "sifr",
+                        "gloss": "Book al-Jabr gave word algebra"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Brass Astrolabes & Elephant Clock",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Mariam al-Asturlabi",
+                    "gloss": "Mapped stars to find Mecca; Al-Jazari built Elephant Water Clock.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Mapped stars to find Mecca",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Mariam al-Asturlabi",
+                        "gloss": "Mapped stars to find Mecca"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Al-Jazari built Elephant Water Clock",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Mariam al-Asturlabi",
+                        "gloss": "Al-Jazari built Elephant Water Clock"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Powered Precise Lab Experiments",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "algorithm",
+                    "gloss": "Cymbals clashed every half hour; Helped scientists measure real nature.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Cymbals clashed every half hour",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "algorithm",
+                        "gloss": "Cymbals clashed every half hour"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Helped scientists measure real nature",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "algorithm",
+                        "gloss": "Helped scientists measure real nature"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Camera Obscura & Bimaristans",
+                "dateChip": "c. AD 965–1040",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Ibn al-Haytham",
+                "gloss": "Ibn al-Haytham proved light travels in straight lines into our eyes using a pinhole room, while free bimaristans treated rich and poor.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Pinhole Room Proved Straight Light",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "camera obscura",
+                    "gloss": "Busted old Greek eye-ray myth; Inspired modern glasses and cameras.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Busted old Greek eye-ray myth",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "camera obscura",
+                        "gloss": "Busted old Greek eye-ray myth"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Inspired modern glasses and cameras",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "camera obscura",
+                        "gloss": "Inspired modern glasses and cameras"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Free Bimaristan Wards & Pharmacy",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "bimaristans",
+                    "gloss": "Treated rich and poor free; Gave clean clothes, pocket money.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Treated rich and poor free",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "bimaristans",
+                        "gloss": "Treated rich and poor free"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Gave clean clothes, pocket money",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "bimaristans",
+                        "gloss": "Gave clean clothes, pocket money"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Trained Master Ward Surgeons",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "pharmacy",
+                    "gloss": "Cool fountains calmed clean wards; Let doctors study diseases closely.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Cool fountains calmed clean wards",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "pharmacy",
+                        "gloss": "Cool fountains calmed clean wards"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Let doctors study diseases closely",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "pharmacy",
+                        "gloss": "Let doctors study diseases closely"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Doctors Al-Razi & Al-Zahrawi",
+                "dateChip": "c. AD 900–1013",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "al-Razi",
+                "gloss": "Al-Razi hung fresh meat to pick Baghdad’s cleanest air and told measles from smallpox, while al-Zahrawi drew 200 surgical tools.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Al-Razi’s Clean-Air Hospital Test",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "smallpox",
+                    "gloss": "Picked spot meat rotted slowest; Told measles apart from smallpox.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Picked spot meat rotted slowest",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "smallpox",
+                        "gloss": "Picked spot meat rotted slowest"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Told measles apart from smallpox",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "smallpox",
+                        "gloss": "Told measles apart from smallpox"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "200 Tools & Dissolving Stitches",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "al-Zahrawi",
+                    "gloss": "Forceps, scalpels, delicate bone saws; Catgut stitches dissolved inside wounds.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Forceps, scalpels, delicate bone saws",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "al-Zahrawi",
+                        "gloss": "Forceps, scalpels, delicate bone saws"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Catgut stitches dissolved inside wounds",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "al-Zahrawi",
+                        "gloss": "Catgut stitches dissolved inside wounds"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Guided Medicine for Centuries",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "catgut stitches",
+                    "gloss": "Nurses served healthy ward meals; Taught surgeons across Islamic Spain.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Nurses served healthy ward meals",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "catgut stitches",
+                        "gloss": "Nurses served healthy ward meals"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Taught surgeons across Islamic Spain",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "catgut stitches",
+                        "gloss": "Taught surgeons across Islamic Spain"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Caravans, Dhows & Coins",
+            "dateChip": "c. AD 774–1000",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "caravanserai",
+            "q2Chain": "Silk Road camels & walled caravanserais → Indian Ocean dhows & paper sakk cheques → Silver dirhams in Jorvik & Offa’s gold dinar",
+            "gloss": "Silk Road camels & walled caravanserais → Indian Ocean dhows & paper sakk cheques → Silver dirhams in Jorvik & Offa’s gold dinar",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Souks & Walled Caravanserais",
+                "dateChip": "c. AD 850–1000",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "souks",
+                "gloss": "Two-humped camel caravans crossed Silk Road deserts, resting safely every 30 km inside walled caravanserai inns.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Silk, Porcelain & Spiced Souks",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "porcelain",
+                    "gloss": "Pepper, cinnamon, Persian woven rugs; Two-humped camels trekked desert trails.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Pepper, cinnamon, Persian woven rugs",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "porcelain",
+                        "gloss": "Pepper, cinnamon, Persian woven rugs"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Two-humped camels trekked desert trails",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "porcelain",
+                        "gloss": "Two-humped camels trekked desert trails"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Walled Caravanserais Every 30 km",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "caravanserai",
+                    "gloss": "Locked brick gates blocked bandits; Cool wells refreshed tired camels.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Locked brick gates blocked bandits",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "caravanserai",
+                        "gloss": "Locked brick gates blocked bandits"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Cool wells refreshed tired camels",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "caravanserai",
+                        "gloss": "Cool wells refreshed tired camels"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Linked Desert Trails to Basra",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Silk Road",
+                    "gloss": "Merchants shared stews by firelight; Connected crates to ocean ships.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Merchants shared stews by firelight",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Silk Road",
+                        "gloss": "Merchants shared stews by firelight"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Connected crates to ocean ships",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Silk Road",
+                        "gloss": "Connected crates to ocean ships"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Ocean Dhows & Paper Cheques",
+                "dateChip": "c. AD 850–1000",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "sakk",
+                "gloss": "Coconut-stitched wooden dhows sailed from Basra across the Indian Ocean while bankers invented signed paper sakk slips (cheques).",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Stitched Dhows Sailed by Stars",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "dhow",
+                    "gloss": "Planks stitched with coconut rope; Triangular sails; brass star astrolabes.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Planks stitched with coconut rope",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "dhow",
+                        "gloss": "Planks stitched with coconut rope"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Triangular sails; brass star astrolabes",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "dhow",
+                        "gloss": "Triangular sails; brass star astrolabes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Signed Paper Sakk Beat Pirates",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "cheque",
+                    "gloss": "Cashed paper slips safely afar; Gave English our word cheque.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Cashed paper slips safely afar",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "cheque",
+                        "gloss": "Cashed paper slips safely afar"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Gave English our word cheque",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "cheque",
+                        "gloss": "Gave English our word cheque"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Silver Coins Flowed to Britain",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Basra",
+                    "gloss": "Sailed toward India and China; Poured silver up Russian rivers.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Sailed toward India and China",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Basra",
+                        "gloss": "Sailed toward India and China"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Poured silver up Russian rivers",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Basra",
+                        "gloss": "Poured silver up Russian rivers"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Jorvik Hoards & Offa’s Coin",
+                "dateChip": "c. AD 774–1000",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "King Offa",
+                "gloss": "Pure Abbasid silver dirhams were buried in Viking hoards near York, and Anglo-Saxon King Offa of Mercia copied an Arabic gold dinar.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Arabic Dirhams Buried Near York",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "dirhams",
+                    "gloss": "Vikings traded furs for silver; Buried dirham hoards near Jorvik.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Vikings traded furs for silver",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "dirhams",
+                        "gloss": "Vikings traded furs for silver"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Buried dirham hoards near Jorvik",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "dirhams",
+                        "gloss": "Buried dirham hoards near Jorvik"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "AD 774: Offa’s Gold Arabic Coin",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "dinar",
+                    "gloss": "King Offa ruled Saxon Mercia; Copied swirling Abbasid Arabic script.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "King Offa ruled Saxon Mercia",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "dinar",
+                        "gloss": "King Offa ruled Saxon Mercia"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Copied swirling Abbasid Arabic script",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "dinar",
+                        "gloss": "Copied swirling Abbasid Arabic script"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Proved Trade Reached Britain",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Scandinavia",
+                    "gloss": "Trusted pure coins across continents; Linked Baghdad straight to England.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Trusted pure coins across continents",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Scandinavia",
+                        "gloss": "Trusted pure coins across continents"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Linked Baghdad straight to England",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Scandinavia",
+                        "gloss": "Linked Baghdad straight to England"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "3. Daily Art, 1258 & Legacy",
+        "dateChip": "AD 900–Today",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "shatranj",
+        "gloss": "Windcatcher courtyards, geometric tilework, and shatranj chess graced daily Baghdad, and even after Hulagu Khan’s 1258 siege, Cairo, Córdoba, and Toledo saved its ideas.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Courtyards, Tiles & Chess",
+            "dateChip": "c. AD 900",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "shatranj",
+            "q2Chain": "Windcatcher courtyards & clean hammams → Citrus orchards & geometric mosque tiles → Silk tiraz, lustreware & shatranj chess",
+            "gloss": "Windcatcher courtyards & clean hammams → Citrus orchards & geometric mosque tiles → Silk tiraz, lustreware & shatranj chess",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Windcatchers & Clean Hammams",
+                "dateChip": "c. AD 900",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "windcatcher",
+                "gloss": "Tall rooftop badgir windcatchers scooped cool breezes into fountain courtyards while public hammams kept bathers clean with soap.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Scorching Iraqi Summer Afternoon Heat",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "badgirs",
+                    "gloss": "Thick brick walls shaded courtyards; Badgirs scooped cool breeze indoors.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Thick brick walls shaded courtyards",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "badgirs",
+                        "gloss": "Thick brick walls shaded courtyards"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Badgirs scooped cool breeze indoors",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "badgirs",
+                        "gloss": "Badgirs scooped cool breeze indoors"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Steamed Hammams & Olive-Oil Soap",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "hammams",
+                    "gloss": "Washed clean before daily prayers; Scrubbed with soap and rosewater.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Washed clean before daily prayers",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "hammams",
+                        "gloss": "Washed clean before daily prayers"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Scrubbed with soap and rosewater",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "hammams",
+                        "gloss": "Scrubbed with soap and rosewater"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Healthy Clean City Neighbourhoods",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "rosewater",
+                    "gloss": "Tiled hot and cool bathhouses; Fountains cooled orange-tree courtyards.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Tiled hot and cool bathhouses",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "rosewater",
+                        "gloss": "Tiled hot and cool bathhouses"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Fountains cooled orange-tree courtyards",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "rosewater",
+                        "gloss": "Fountains cooled orange-tree courtyards"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Citrus Kitchens & Star Tiles",
+                "dateChip": "c. AD 900",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "arabesque",
+                "gloss": "Canal waterwheels fed lemon, orange, and spinach orchards while mosque artists created geometric stars, arabesque vines, and calligraphy.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Lemons, Oranges & Cane Sugar",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "lustreware",
+                    "gloss": "Grew spinach, aubergines, sweet almonds; Served stews on shiny lustreware.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Grew spinach, aubergines, sweet almonds",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "lustreware",
+                        "gloss": "Grew spinach, aubergines, sweet almonds"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Served stews on shiny lustreware",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "lustreware",
+                        "gloss": "Served stews on shiny lustreware"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Geometric Stars & Calligraphy",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "calligraphy",
+                    "gloss": "Avoided statues inside holy mosques; Eight-pointed stars and arabesque vines.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Avoided statues inside holy mosques",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "calligraphy",
+                        "gloss": "Avoided statues inside holy mosques"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Eight-pointed stars and arabesque vines",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "calligraphy",
+                        "gloss": "Eight-pointed stars and arabesque vines"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Inspired Silk, Glass & Games",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "geometric",
+                    "gloss": "Sacred Qur’an script framed walls; Shaped fine workshop craft styles.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Sacred Qur’an script framed walls",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "geometric",
+                        "gloss": "Sacred Qur’an script framed walls"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Shaped fine workshop craft styles",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "geometric",
+                        "gloss": "Shaped fine workshop craft styles"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Silk Tiraz, Lamps & Shatranj",
+                "dateChip": "c. AD 900",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "tiraz",
+                "gloss": "Royal looms wove silk tiraz bands, glassblowers gilded mosque lamps, and evening guests cried “Shah mat” playing shatranj chess.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Silk Tiraz & Glass Mosque Lamps",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "mosque lamps",
+                    "gloss": "Embroidered Arabic name bands; Gilded enamelled lamps glowed.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Embroidered Arabic name bands",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "mosque lamps",
+                        "gloss": "Embroidered Arabic name bands"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Gilded enamelled lamps glowed",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "mosque lamps",
+                        "gloss": "Gilded enamelled lamps glowed"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Shatranj Chess & “Checkmate!”",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "checkmate",
+                    "gloss": "Sipped sweet rosewater fruit syrups; Shah mat gave word checkmate.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Sipped sweet rosewater fruit syrups",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "checkmate",
+                        "gloss": "Sipped sweet rosewater fruit syrups"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Shah mat gave word checkmate",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "checkmate",
+                        "gloss": "Shah mat gave word checkmate"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Dazzling Culture Admired Worldwide",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "shatranj",
+                    "gloss": "Played evening strategy on carpets; Spread chess across medieval Europe.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Played evening strategy on carpets",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "shatranj",
+                        "gloss": "Played evening strategy on carpets"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Spread chess across medieval Europe",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "shatranj",
+                        "gloss": "Spread chess across medieval Europe"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. 1258 Siege & Living Ideas",
+            "dateChip": "AD 1258–Today",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Hulagu Khan",
+            "q2Chain": "Hulagu Khan’s trebuchets breach Baghdad (Feb 1258) → Cairo, Córdoba & Toledo save books in Latin → 0–9 maths, cameras & Arabic words today",
+            "gloss": "Hulagu Khan’s trebuchets breach Baghdad (Feb 1258) → Cairo, Córdoba & Toledo save books in Latin → 0–9 maths, cameras & Arabic words today",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "AD 1258: Mongol Siege of Baghdad",
+                "dateChip": "Jan–Feb 1258",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "trebuchets",
+                "gloss": "After the Abbasid Empire split into weaker states, Hulagu Khan’s Mongol army smashed Baghdad’s brick walls with trebuchets in February 1258.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Empire Split & Borders Weakened",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Mongol army",
+                    "gloss": "Rival kingdoms divided Abbasid strength; Hulagu Khan surrounded both banks.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Rival kingdoms divided Abbasid strength",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Mongol army",
+                        "gloss": "Rival kingdoms divided Abbasid strength"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Hulagu Khan surrounded both banks",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Mongol army",
+                        "gloss": "Hulagu Khan surrounded both banks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Trebuchets Breached Walls Feb 1258",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "February 1258",
+                    "gloss": "Hurled heavy boulders at bricks; Burned palaces, canals, Wisdom library.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Hurled heavy boulders at bricks",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "February 1258",
+                        "gloss": "Hurled heavy boulders at bricks"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Burned palaces, canals, Wisdom library",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "February 1258",
+                        "gloss": "Burned palaces, canals, Wisdom library"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Ended Caliphate Yet Books Lived",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "House of Wisdom",
+                    "gloss": "Ended Abbasid rule in Baghdad; Paper copies survived in Spain.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Ended Abbasid rule in Baghdad",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "House of Wisdom",
+                        "gloss": "Ended Abbasid rule in Baghdad"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Paper copies survived in Spain",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "House of Wisdom",
+                        "gloss": "Paper copies survived in Spain"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "Cairo, Córdoba & Toledo Bridge",
+                "dateChip": "12th–15th C. AD",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Toledo",
+                "gloss": "Paper copies sat safely in Cairo, Damascus, and 70-library Córdoba, while Toledo’s multi-faith translators turned Arabic science into Latin.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Cairo, Córdoba & Alhambra Saved",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Córdoba",
+                    "gloss": "Copies safe in Cairo, Samarkand; Córdoba shone with seventy libraries.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Copies safe in Cairo, Samarkand",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Córdoba",
+                        "gloss": "Copies safe in Cairo, Samarkand"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Córdoba shone with seventy libraries",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Córdoba",
+                        "gloss": "Córdoba shone with seventy libraries"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Toledo Translated Science to Latin",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Ibn Sina",
+                    "gloss": "Muslim, Jewish, Christian team worked; Translated al-Khwarizmi and Ibn Sina.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Muslim, Jewish, Christian team worked",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Ibn Sina",
+                        "gloss": "Muslim, Jewish, Christian team worked"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Translated al-Khwarizmi and Ibn Sina",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Ibn Sina",
+                        "gloss": "Translated al-Khwarizmi and Ibn Sina"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Helped Spark Europe’s Renaissance",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Renaissance",
+                    "gloss": "Built Granada’s carved Alhambra palace; Carried science into European schools.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Built Granada’s carved Alhambra palace",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Renaissance",
+                        "gloss": "Built Granada’s carved Alhambra palace"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Carried science into European schools",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Renaissance",
+                        "gloss": "Carried science into European schools"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "Arabic Maths & Words Today",
+                "dateChip": "1258–Today",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "chemistry",
+                "gloss": "Every time we write 0–9, snap a phone photo, visit clean hospital wards, or say zero, sugar, lemon, or sofa, Baghdad’s legacy lives on.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "0–9 Digits, Cameras & Wards",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "0 to 9",
+                    "gloss": "Algebra and phone algorithms daily; Optics led to smartphone cameras.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Algebra and phone algorithms daily",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "0 to 9",
+                        "gloss": "Algebra and phone algorithms daily"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Optics led to smartphone cameras",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "0 to 9",
+                        "gloss": "Optics led to smartphone cameras"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Zero, Sugar, Lemon, Orange, Sofa",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "cotton",
+                    "gloss": "Everyday words chemistry and cotton; Arrived through busy Arabic trade.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Everyday words chemistry and cotton",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "cotton",
+                        "gloss": "Everyday words chemistry and cotton"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Arrived through busy Arabic trade",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "cotton",
+                        "gloss": "Arrived through busy Arabic trade"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Books & Ideas Outlasted Empires",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Golden Age",
+                    "gloss": "Walls fell in February 1258; Shared knowledge still shapes classrooms.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Walls fell in February 1258",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Golden Age",
+                        "gloss": "Walls fell in February 1258"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Shared knowledge still shapes classrooms",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Golden Age",
+                        "gloss": "Shared knowledge still shapes classrooms"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_stone_to_iron_age",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "Stone Age to Iron Age Britain (c. 800,000 BC–AD 43)",
+  "examDateBoundary": "c. 800,000 BC–AD 43",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Stone Age to Iron Age",
+    "subLabel": "Key Stage 2",
+    "dateChip": "c. 800,000 BC–AD 43",
+    "gloss": "How life in Britain changed from Ice Age mammoth hunters and sunken Doggerland to Neolithic farms, Stonehenge, Bronze Age smiths, and Iron Age hillforts.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "1. Hunters to First Farmers",
+        "dateChip": "c. 850,000–2500 BC",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Doggerland",
+        "gloss": "Old and Middle Stone Age hunter-gatherers survived the Ice Age and flooded Doggerland before New Stone Age boat travellers brought Britain’s first farms and Skara Brae.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Ice Age & Sunken Doggerland",
+            "dateChip": "c. 850,000–4000 BC",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Doggerland",
+            "q2Chain": "Ice Age mammoth caves & flint handaxes → Warming Mesolithic forests at Star Carr → Rising seas flood Doggerland (c. 6500 BC)",
+            "gloss": "Ice Age mammoth caves & flint handaxes → Warming Mesolithic forests at Star Carr → Rising seas flood Doggerland (c. 6500 BC)",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Ice Age Caves & Flint Handaxes",
+                "dateChip": "c. 850,000 BC",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Happisburgh",
+                "gloss": "Old Stone Age families walked mud at Happisburgh, sheltered in limestone caves, and chipped sharp flint handaxes to hunt woolly mammoths.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Ice Snow & Zero Metal Tools",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Ice Age",
+                    "gloss": "Thick snow covered northern Britain; Families sheltered inside Creswell Crags.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Thick snow covered northern Britain",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Ice Age",
+                        "gloss": "Thick snow covered northern Britain"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Families sheltered inside Creswell Crags",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Ice Age",
+                        "gloss": "Families sheltered inside Creswell Crags"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Knapped Flint & Mammoth Hunts",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "handaxes",
+                    "gloss": "Barefoot footprints left at Happisburgh; Chipped tear-drop flint handaxes.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Barefoot footprints left at Happisburgh",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "handaxes",
+                        "gloss": "Barefoot footprints left at Happisburgh"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Chipped tear-drop flint handaxes",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "handaxes",
+                        "gloss": "Chipped tear-drop flint handaxes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Ice Melted Into Green Forests",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "mammoths",
+                    "gloss": "Mammoths gave meat, hides, bones; Warming weather ended Ice Age.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Mammoths gave meat, hides, bones",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "mammoths",
+                        "gloss": "Mammoths gave meat, hides, bones"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Warming weather ended Ice Age",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "mammoths",
+                        "gloss": "Warming weather ended Ice Age"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Cheddar Man & Star Carr Camps",
+                "dateChip": "c. 10,000–7000 BC",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "Star Carr",
+                "gloss": "As green forests spread in the Middle Stone Age, seasonal hunter-gatherers fished lakes, built wooden platforms at Star Carr, and carved antler headdresses.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Warming Woods Brought New Game",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Mesolithic",
+                    "gloss": "Red deer roamed green forests; Wild boar and hazelnuts thrived.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Red deer roamed green forests",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Mesolithic",
+                        "gloss": "Red deer roamed green forests"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Wild boar and hazelnuts thrived",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Mesolithic",
+                        "gloss": "Wild boar and hazelnuts thrived"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Cheddar Man & Antler Masks",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Cheddar Man",
+                    "gloss": "Cheddar Man had blue eyes; Star Carr carved antler headdresses.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Cheddar Man had blue eyes",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Cheddar Man",
+                        "gloss": "Cheddar Man had blue eyes"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Star Carr carved antler headdresses",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Cheddar Man",
+                        "gloss": "Star Carr carved antler headdresses"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Melting Ice Raised Sea Levels",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Star Carr",
+                    "gloss": "Built wooden platforms by lakes; Moved seasonal camps along rivers.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Built wooden platforms by lakes",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Star Carr",
+                        "gloss": "Built wooden platforms by lakes"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Moved seasonal camps along rivers",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Star Carr",
+                        "gloss": "Moved seasonal camps along rivers"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Rising Waves Drown Doggerland",
+                "dateChip": "c. 6500 BC",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Doggerland",
+                "gloss": "Around 6500 BC, water from melting northern ice sheets drowned the low green land bridge of Doggerland beneath the North Sea.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Melting Ice Poured Into Seas",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "North Sea",
+                    "gloss": "Hunters once walked dry Doggerland; Speared eels and trapped beavers.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Hunters once walked dry Doggerland",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "North Sea",
+                        "gloss": "Hunters once walked dry Doggerland"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Speared eels and trapped beavers",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "North Sea",
+                        "gloss": "Speared eels and trapped beavers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Storms Flooded Doggerland c. 6500 BC",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "6500 BC",
+                    "gloss": "Waves drowned low marshy plains; Trawlers still find mammoth teeth.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Waves drowned low marshy plains",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "6500 BC",
+                        "gloss": "Waves drowned low marshy plains"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Trawlers still find mammoth teeth",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "6500 BC",
+                        "gloss": "Trawlers still find mammoth teeth"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Turned Britain Into an Island",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "island",
+                    "gloss": "Cut Britain off from Europe; Future newcomers arrived by boat.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Cut Britain off from Europe",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "island",
+                        "gloss": "Cut Britain off from Europe"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Future newcomers arrived by boat",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "island",
+                        "gloss": "Future newcomers arrived by boat"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. First Farmers & Skara Brae",
+            "dateChip": "c. 4000–2500 BC",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Skara Brae",
+            "q2Chain": "Sea settlers bring wheat & sheep (c. 4000 BC) → Stone homes built at Skara Brae → Ancestor chambers raised at West Kennet",
+            "gloss": "Sea settlers bring wheat & sheep (c. 4000 BC) → Stone homes built at Skara Brae → Ancestor chambers raised at West Kennet",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "First Crops, Sheep & Stone Axes",
+                "dateChip": "c. 4000 BC",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Neolithic",
+                "gloss": "Wooden boats brought wheat, barley, sheep, and cattle across the sea around 4000 BC, starting New Stone Age farming in settled villages.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Boats Brought Seeds & Tame Herds",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "barley",
+                    "gloss": "Brought tame sheep, pigs, cattle; Planted wheat and barley seeds.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Brought tame sheep, pigs, cattle",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "barley",
+                        "gloss": "Brought tame sheep, pigs, cattle"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Planted wheat and barley seeds",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "barley",
+                        "gloss": "Planted wheat and barley seeds"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Polished Axes & Clay Stew Pots",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "polished stone axes",
+                    "gloss": "Polished stone axes felled forests; Flint sickles cut ripe stalks.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Polished stone axes felled forests",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "polished stone axes",
+                        "gloss": "Polished stone axes felled forests"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Flint sickles cut ripe stalks",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "polished stone axes",
+                        "gloss": "Flint sickles cut ripe stalks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Settled Villages Built All Year",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "thatched villages",
+                    "gloss": "Coiled clay bowls held stews; Steady harvests ended constant moving.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Coiled clay bowls held stews",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "thatched villages",
+                        "gloss": "Coiled clay bowls held stews"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Steady harvests ended constant moving",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "thatched villages",
+                        "gloss": "Steady harvests ended constant moving"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "1850 Storm Uncovers Skara Brae",
+                "dateChip": "c. 3100 BC",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Skara Brae",
+                "gloss": "A fierce winter storm in 1850 blew sand off Orkney to reveal eight snug stone Neolithic houses linked by roofed passages.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Windy Orkney Had Few Trees",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Orkney",
+                    "gloss": "Stacked flat coastal flagstones neatly; 1850 winter storm blew sand.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Stacked flat coastal flagstones neatly",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Orkney",
+                        "gloss": "Stacked flat coastal flagstones neatly"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "1850 winter storm blew sand",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Orkney",
+                        "gloss": "1850 winter storm blew sand"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Stone Beds, Dressers & Drains",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "stone box beds",
+                    "gloss": "Eight homes linked by passages; Box beds, hearths, indoor drains.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Eight homes linked by passages",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "stone box beds",
+                        "gloss": "Eight homes linked by passages"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Box beds, hearths, indoor drains",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "stone box beds",
+                        "gloss": "Box beds, hearths, indoor drains"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Rooted Villages Built Grand Tombs",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "stone dresser",
+                    "gloss": "Displayed treasures on stone dressers; Showed cosy settled village life.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Displayed treasures on stone dressers",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "stone dresser",
+                        "gloss": "Displayed treasures on stone dressers"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Showed cosy settled village life",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "stone dresser",
+                        "gloss": "Showed cosy settled village life"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "West Kennet Long Barrow Tombs",
+                "dateChip": "c. 3650 BC",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "West Kennet Long Barrow",
+                "gloss": "Wiltshire farming families raised chalk mounds like West Kennet Long Barrow to honour nearly fifty ancestors inside dark stone chambers.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Five Chambers Under Chalk Mound",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "West Kennet Long Barrow",
+                    "gloss": "Heavy boulders guarded dark chambers; Held bones of fifty ancestors.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Heavy boulders guarded dark chambers",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "West Kennet Long Barrow",
+                        "gloss": "Heavy boulders guarded dark chambers"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Held bones of fifty ancestors",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "West Kennet Long Barrow",
+                        "gloss": "Held bones of fifty ancestors"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Clay Bowls & Hilltop Feasts",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "clay bowls",
+                    "gloss": "Left clay bowls and beads; Families feasted outside tomb entrance.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Left clay bowls and beads",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "clay bowls",
+                        "gloss": "Left clay bowls and beads"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Families feasted outside tomb entrance",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "clay bowls",
+                        "gloss": "Families feasted outside tomb entrance"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Teamwork Prepared Stonehenge Next",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "long barrows",
+                    "gloss": "Marked community claim to land; Proved villagers could move boulders.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Marked community claim to land",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "long barrows",
+                        "gloss": "Marked community claim to land"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Proved villagers could move boulders",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "long barrows",
+                        "gloss": "Proved villagers could move boulders"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "2. Stonehenge & Early Bronze",
+        "dateChip": "c. 3000–1200 BC",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Stonehenge",
+        "gloss": "Neolithic communities hauled Welsh bluestones and 25-tonne sarsens to align Stonehenge with the sun before Beaker newcomers introduced copper, tin, and bronze.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Secrets of Stonehenge",
+            "dateChip": "c. 3000–2200 BC",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Stonehenge",
+            "q2Chain": "Antler-dug chalk henge & Welsh bluestones → 25-tonne sarsen trilithons & Durrington Walls → Heel Stone frames solstice sun",
+            "gloss": "Antler-dug chalk henge & Welsh bluestones → 25-tonne sarsen trilithons & Durrington Walls → Heel Stone frames solstice sun",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Chalk Henge & Welsh Bluestones",
+                "dateChip": "c. 3000–2500 BC",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "bluestones",
+                "gloss": "Workers dug a circular chalk ditch with red-deer antler picks around 3000 BC, then hauled eighty spotted bluestones 140 miles from Wales.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Antler Picks Dug Chalk Henge",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "antler picks",
+                    "gloss": "Used cattle shoulder-bone shovels; Buried cremated ancestors inside bank.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Used cattle shoulder-bone shovels",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "antler picks",
+                        "gloss": "Used cattle shoulder-bone shovels"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Buried cremated ancestors inside bank",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "antler picks",
+                        "gloss": "Buried cremated ancestors inside bank"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "80 Bluestones Hauled 140 Miles",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Preseli Hills",
+                    "gloss": "Quarried from Welsh Preseli Hills; Pulled on wooden sledges, ropes.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Quarried from Welsh Preseli Hills",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Preseli Hills",
+                        "gloss": "Quarried from Welsh Preseli Hills"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Pulled on wooden sledges, ropes",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Preseli Hills",
+                        "gloss": "Pulled on wooden sledges, ropes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Inspired Giant Sarsen Circle Next",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Salisbury Plain",
+                    "gloss": "United distant tribes in teamwork; Turned Salisbury Plain sacred.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "United distant tribes in teamwork",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Salisbury Plain",
+                        "gloss": "United distant tribes in teamwork"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Turned Salisbury Plain sacred",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Salisbury Plain",
+                        "gloss": "Turned Salisbury Plain sacred"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "25-Tonne Sarsens & Feasts",
+                "dateChip": "c. 2500 BC",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "trilithons",
+                "gloss": "Without wheels or cranes, builders dragged 25-tonne sarsen blocks on rollers, locked trilithon joints, and feasted at Durrington Walls.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "25-Tonne Blocks on Wood Rollers",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "sarsen",
+                    "gloss": "Dragged sarsens twenty miles overland; Pounded smooth with stone balls.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Dragged sarsens twenty miles overland",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "sarsen",
+                        "gloss": "Dragged sarsens twenty miles overland"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Pounded smooth with stone balls",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "sarsen",
+                        "gloss": "Pounded smooth with stone balls"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Pegged Trilithons & Pork Feasts",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Durrington Walls",
+                    "gloss": "Locked mortise-and-tenon stone joints; Roasted pigs at Durrington Walls.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Locked mortise-and-tenon stone joints",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Durrington Walls",
+                        "gloss": "Locked mortise-and-tenon stone joints"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Roasted pigs at Durrington Walls",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Durrington Walls",
+                        "gloss": "Roasted pigs at Durrington Walls"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Angled Stones Toward Solstice Sky",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "trilithons",
+                    "gloss": "Built warm chalk workers’ houses; Shaped horseshoe toward sun path.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Built warm chalk workers’ houses",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "trilithons",
+                        "gloss": "Built warm chalk workers’ houses"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Shaped horseshoe toward sun path",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "trilithons",
+                        "gloss": "Shaped horseshoe toward sun path"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Heel Stone & Solstice Sunbeams",
+                "dateChip": "c. 2500–2200 BC",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Heel Stone",
+                "gloss": "Stonehenge lined up with the lone Heel Stone to frame the Midsummer sunrise and Midwinter sunset as a giant sky calendar.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Farmers Tracked Turning Seasons",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Avebury",
+                    "gloss": "Zero written records left behind; Archaeologists study buried sky clues.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Zero written records left behind",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Avebury",
+                        "gloss": "Zero written records left behind"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Archaeologists study buried sky clues",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Avebury",
+                        "gloss": "Archaeologists study buried sky clues"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Midsummer & Midwinter Sunbeams",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "solstice",
+                    "gloss": "Midsummer sun rose over Heel Stone; Midwinter sunset lit tallest trilithon.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Midsummer sun rose over Heel Stone",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "solstice",
+                        "gloss": "Midsummer sun rose over Heel Stone"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Midwinter sunset lit tallest trilithon",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "solstice",
+                        "gloss": "Midwinter sunset lit tallest trilithon"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Giant Solar Calendar & Shrine",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "solar calendar",
+                    "gloss": "Guided yearly planting and feasts; Soon met shiny Beaker metalwork.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Guided yearly planting and feasts",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "solar calendar",
+                        "gloss": "Guided yearly planting and feasts"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Soon met shiny Beaker metalwork",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "solar calendar",
+                        "gloss": "Soon met shiny Beaker metalwork"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Bronze Age & Beaker People",
+            "dateChip": "c. 2500–1200 BC",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Beaker people",
+            "q2Chain": "Beaker newcomers & copper/tin mines (c. 2400 BC) → Casting tough liquid bronze axes → Gold capes & the Amesbury Archer",
+            "gloss": "Beaker newcomers & copper/tin mines (c. 2400 BC) → Casting tough liquid bronze axes → Gold capes & the Amesbury Archer",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Beaker Pots, Copper & Tin Mines",
+                "dateChip": "c. 2400 BC",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Great Orme",
+                "gloss": "Beaker travellers sailed from Europe with bell-shaped pots and metalworking skills as miners dug Welsh copper and Cornish tin.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Beaker Folk Brought Metal Skills",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Beaker people",
+                    "gloss": "Stamped comb patterns on beakers; Ended Britain’s long Stone Age.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Stamped comb patterns on beakers",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Beaker people",
+                        "gloss": "Stamped comb patterns on beakers"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Ended Britain’s long Stone Age",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Beaker people",
+                        "gloss": "Ended Britain’s long Stone Age"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Great Orme Copper & Cornish Tin",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Cornwall",
+                    "gloss": "Crawled Great Orme copper tunnels; Smelted Cornish tin over fires.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Crawled Great Orme copper tunnels",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Cornwall",
+                        "gloss": "Crawled Great Orme copper tunnels"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Smelted Cornish tin over fires",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Cornwall",
+                        "gloss": "Smelted Cornish tin over fires"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Smiths Mixed Harder Bronze Alloy",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "smelted",
+                    "gloss": "Crushed rock ran liquid metal; Supplied both metals for bronze.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Crushed rock ran liquid metal",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "smelted",
+                        "gloss": "Crushed rock ran liquid metal"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Supplied both metals for bronze",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "smelted",
+                        "gloss": "Supplied both metals for bronze"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Casting Tough Bronze Axes",
+                "dateChip": "c. 2100–1500 BC",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "two-piece moulds",
+                "gloss": "Smiths mixed nine parts copper with one part tin and poured liquid bronze into reusable stone moulds for strong axes.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Pure Copper Bent Against Oak",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "copper",
+                    "gloss": "Chipped flint snapped for good; Soft copper dented on trees.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Chipped flint snapped for good",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "copper",
+                        "gloss": "Chipped flint snapped for good"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Soft copper dented on trees",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "copper",
+                        "gloss": "Soft copper dented on trees"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Nine Parts Copper, One Part Tin",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "bronze",
+                    "gloss": "Poured liquid into two-piece moulds; Broken blades melted down again.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Poured liquid into two-piece moulds",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "bronze",
+                        "gloss": "Poured liquid into two-piece moulds"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Broken blades melted down again",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "bronze",
+                        "gloss": "Broken blades melted down again"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Faster Farms & Rich Chiefs",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "woodland",
+                    "gloss": "Cleared thick woodland much faster; Enriched families on trade routes.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Cleared thick woodland much faster",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "woodland",
+                        "gloss": "Cleared thick woodland much faster"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Enriched families on trade routes",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "woodland",
+                        "gloss": "Enriched families on trade routes"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Gold Capes & Amesbury Archer",
+                "dateChip": "c. 2300–1500 BC",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Amesbury Archer",
+                "gloss": "Dazzling gold capes and chemical tests on the Amesbury Archer’s teeth proved Bronze Age Britain had wealthy leaders linked to Europe.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Mold Gold Cape & Bush Barrow",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Mold Gold Cape",
+                    "gloss": "Hammered thin sheets of gold; Wore crescent-moon lunulae collars.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Hammered thin sheets of gold",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Mold Gold Cape",
+                        "gloss": "Hammered thin sheets of gold"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Wore crescent-moon lunulae collars",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Mold Gold Cape",
+                        "gloss": "Wore crescent-moon lunulae collars"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Amesbury Archer’s 100+ Grave Goods",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Alps",
+                    "gloss": "Five beakers, copper knives, gold; Tooth enamel proved Alpine childhood.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Five beakers, copper knives, gold",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Alps",
+                        "gloss": "Five beakers, copper knives, gold"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Tooth enamel proved Alpine childhood",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Alps",
+                        "gloss": "Tooth enamel proved Alpine childhood"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Proved Wide European Trade Links",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Stonehenge",
+                    "gloss": "Buried near Stonehenge c. 2300 BC; Linked British chiefs to Europe.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Buried near Stonehenge c. 2300 BC",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Stonehenge",
+                        "gloss": "Buried near Stonehenge c. 2300 BC"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Linked British chiefs to Europe",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Stonehenge",
+                        "gloss": "Linked British chiefs to Europe"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "3. Must Farm to Celtic Iron",
+        "dateChip": "c. 1200 BC–AD 43",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Must Farm",
+        "gloss": "Waterlogged mud at Must Farm preserved Britain’s oldest wheel and Bronze Age homes before Iron Age blacksmiths, Celtic hillforts, and Roman legions arrived.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Must Farm: Britain’s Pompeii",
+            "dateChip": "c. 1200–800 BC",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Must Farm",
+            "q2Chain": "Fire drops stilt houses into wet mud (c. 900 BC) → Porridge, cloth & oldest wheel saved → Dover sewn-plank boat crosses Channel",
+            "gloss": "Fire drops stilt houses into wet mud (c. 900 BC) → Porridge, cloth & oldest wheel saved → Dover sewn-plank boat crosses Channel",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Burning Stilts Seal in Wet Mud",
+                "dateChip": "c. 900 BC",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Flag Fen",
+                "gloss": "Around 900 BC, a sudden fire dropped Must Farm’s oak stilt roundhouses into airless Cambridgeshire river mud near Flag Fen.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Oak Stilt Homes & Flag Fen Posts",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "stilts",
+                    "gloss": "Roundhouses stood over slow river; Timber causeway crossed Flag Fen.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Roundhouses stood over slow river",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "stilts",
+                        "gloss": "Roundhouses stood over slow river"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Timber causeway crossed Flag Fen",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "stilts",
+                        "gloss": "Timber causeway crossed Flag Fen"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Roof Fire Dropped Into Wet Mud",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "waterlogged",
+                    "gloss": "Families escaped sudden roof fire; Airless mud stopped wood rotting.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Families escaped sudden roof fire",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "waterlogged",
+                        "gloss": "Families escaped sudden roof fire"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Airless mud stopped wood rotting",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "waterlogged",
+                        "gloss": "Airless mud stopped wood rotting"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Saved 3,000-Year Time Capsule",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Pompeii",
+                    "gloss": "Nicknamed Must Farm Britain’s Pompeii; Sealed bowls, clothes, tools intact.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Nicknamed Must Farm Britain’s Pompeii",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Pompeii",
+                        "gloss": "Nicknamed Must Farm Britain’s Pompeii"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Sealed bowls, clothes, tools intact",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Pompeii",
+                        "gloss": "Sealed bowls, clothes, tools intact"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Porridge, Cloth & Oldest Wheel",
+                "dateChip": "c. 900 BC",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "wooden wheel",
+                "gloss": "Beneath Must Farm’s wet mud survived bowls of charred porridge with wooden spoons, woven plant cloth, eel traps, and a 1-metre wheel.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Charred Porridge & Eel Traps",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "charred porridge",
+                    "gloss": "Wooden spoon left inside bowl; Wove willow wicker eel traps.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Wooden spoon left inside bowl",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "charred porridge",
+                        "gloss": "Wooden spoon left inside bowl"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Wove willow wicker eel traps",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "charred porridge",
+                        "gloss": "Wove willow wicker eel traps"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1-Metre Ash Wheel & Fine Cloth",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "plant-fibre cloth",
+                    "gloss": "Spun soft plant-fibre woven cloth; Oldest complete wheel in Britain.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Spun soft plant-fibre woven cloth",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "plant-fibre cloth",
+                        "gloss": "Spun soft plant-fibre woven cloth"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Oldest complete wheel in Britain",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "plant-fibre cloth",
+                        "gloss": "Oldest complete wheel in Britain"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Proved Skilled Farms & River Life",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "bronze axes",
+                    "gloss": "Bronze axes slotted in handles; Drove carts across nearby fields.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Bronze axes slotted in handles",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "bronze axes",
+                        "gloss": "Bronze axes slotted in handles"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Drove carts across nearby fields",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "bronze axes",
+                        "gloss": "Drove carts across nearby fields"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Sacred Waters & The Dover Boat",
+                "dateChip": "c. 1550–800 BC",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Dover Bronze Age Boat",
+                "gloss": "Mediterranean glass beads, Flag Fen water offerings, and the yew-stitched oak Dover Boat proved busy Channel sea trade.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Glass Beads & River Offerings",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Mediterranean",
+                    "gloss": "Mediterranean glass beads reached fens; Lowered bronze shields into water.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Mediterranean glass beads reached fens",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Mediterranean",
+                        "gloss": "Mediterranean glass beads reached fens"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Lowered bronze shields into water",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Mediterranean",
+                        "gloss": "Lowered bronze shields into water"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Oak Planks Stitched With Yew",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "sewn-plank boat",
+                    "gloss": "Built before iron nails existed; Sealed oak seams with moss.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Built before iron nails existed",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "sewn-plank boat",
+                        "gloss": "Built before iron nails existed"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Sealed oak seams with moss",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "sewn-plank boat",
+                        "gloss": "Sealed oak seams with moss"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Linked Britain & France by Sea",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "English Channel",
+                    "gloss": "Paddled tin across English Channel; Spread new ideas toward Iron Age.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Paddled tin across English Channel",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "English Channel",
+                        "gloss": "Paddled tin across English Channel"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Spread new ideas toward Iron Age",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "English Channel",
+                        "gloss": "Spread new ideas toward Iron Age"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Iron Age Celts & Hillforts",
+            "dateChip": "c. 800 BC–AD 43",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Maiden Castle",
+            "q2Chain": "Iron ploughs & roundhouse harvests (c. 800 BC) → Rival tribes build Maiden Castle → Gold torcs, coins & AD 43 Roman invasion",
+            "gloss": "Iron ploughs & roundhouse harvests (c. 800 BC) → Rival tribes build Maiden Castle → Gold torcs, coins & AD 43 Roman invasion",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Iron Ploughs & Cosy Roundhouses",
+                "dateChip": "c. 800–400 BC",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "iron ore",
+                "gloss": "Blacksmiths hammered widespread British iron ore into tough ploughshares while families ground flour inside thatched roundhouses.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Reddish Iron Ore Lay Everywhere",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Blacksmiths",
+                    "gloss": "Found across hills and bogs; Heated inside hot clay furnaces.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Found across hills and bogs",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Blacksmiths",
+                        "gloss": "Found across hills and bogs"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Heated inside hot clay furnaces",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Blacksmiths",
+                        "gloss": "Heated inside hot clay furnaces"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Ploughshares, Querns & Looms",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "rotary quern",
+                    "gloss": "Sliced heavy clay for wheat; Spun rotary querns inside roundhouses.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Sliced heavy clay for wheat",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "rotary quern",
+                        "gloss": "Sliced heavy clay for wheat"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Spun rotary querns inside roundhouses",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "rotary quern",
+                        "gloss": "Spun rotary querns inside roundhouses"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Bumper Crops Grew Rival Tribes",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "wattle-and-daub",
+                    "gloss": "Built warm wattle-and-daub walls; Wove bright wool on looms.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Built warm wattle-and-daub walls",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "wattle-and-daub",
+                        "gloss": "Built warm wattle-and-daub walls"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Wove bright wool on looms",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "wattle-and-daub",
+                        "gloss": "Wove bright wool on looms"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "Celtic Tribes & Maiden Castle",
+                "dateChip": "c. 400–100 BC",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Maiden Castle",
+                "gloss": "Competing Celtic tribes ringed high ridges with steep ramparts at Maiden Castle and carved the chalk Uffington White Horse.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Growing Tribes Fought Over Land",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Celtic tribes",
+                    "gloss": "Competed fiercely for prized cattle; Needed safe hilltop grain stores.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Competed fiercely for prized cattle",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Celtic tribes",
+                        "gloss": "Competed fiercely for prized cattle"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Needed safe hilltop grain stores",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Celtic tribes",
+                        "gloss": "Needed safe hilltop grain stores"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Maiden Castle Banks & Slingshots",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "slingshot",
+                    "gloss": "Winding gates trapped raiding bands; Defenders hurled smooth slingshot stones.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Winding gates trapped raiding bands",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "slingshot",
+                        "gloss": "Winding gates trapped raiding bands"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Defenders hurled smooth slingshot stones",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "slingshot",
+                        "gloss": "Defenders hurled smooth slingshot stones"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Guarded Markets & Chalk Art",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Uffington White Horse",
+                    "gloss": "Stored grain in underground pits; Carved chalk Uffington White Horse.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Stored grain in underground pits",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Uffington White Horse",
+                        "gloss": "Stored grain in underground pits"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Carved chalk Uffington White Horse",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Uffington White Horse",
+                        "gloss": "Carved chalk Uffington White Horse"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "Gold Torcs, Coins & AD 43 Rome",
+                "dateChip": "c. 100 BC–AD 43",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Snettisham Great Torc",
+                "gloss": "Celtic smiths twisted gold torcs and minted stater coins before Emperor Claudius’s four Roman legions invaded in AD 43.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Druids & Snettisham Great Torc",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Druids",
+                    "gloss": "Druids memorised sacred tribal laws; Twisted gold wire neck torcs.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Druids memorised sacred tribal laws",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Druids",
+                        "gloss": "Druids memorised sacred tribal laws"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Twisted gold wire neck torcs",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Druids",
+                        "gloss": "Twisted gold wire neck torcs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Gold Stater Coins & Claudius AD 43",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Claudius",
+                    "gloss": "Stamped horses on gold staters; Claudius sent four Roman legions.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Stamped horses on gold staters",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Claudius",
+                        "gloss": "Stamped horses on gold staters"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Claudius sent four Roman legions",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Claudius",
+                        "gloss": "Claudius sent four Roman legions"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Ended Prehistory as Rome Arrived",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "prehistory",
+                    "gloss": "Gifted horned helmets to Thames; Written history began in AD 43.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Gifted horned helmets to Thames",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "prehistory",
+                        "gloss": "Gifted horned helmets to Thames"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Written history began in AD 43",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "prehistory",
+                        "gloss": "Written history began in AD 43"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

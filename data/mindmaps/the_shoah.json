@@ -1,0 +1,2928 @@
+{
+  "unitId": "the_shoah",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "The Shoah: Understanding the Holocaust, 1933–1948",
+  "examDateBoundary": "1933–1948",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "The Shoah, 1933–1948",
+    "subLabel": "KS3 History",
+    "dateChip": "1933–1948",
+    "gloss": "Pre-war European Jewish diversity, Nazi persecution, ghettos, the Holocaust by Bullets, extermination camps, resistance, complicity, and memory.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Life, Laws & Ghettos",
+        "dateChip": "Pre-1933–1943",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Kristallnacht",
+        "gloss": "Pre-war European Jewish diversity, Nazi racial laws and Kristallnacht (1933–39), and sealed Polish ghettos (1939–43).",
+        "children": [
+          {
+            "id": "kt1_l1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Pre-War Diversity & Hatred",
+            "dateChip": "Pre-1933",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Yiddishland",
+            "gloss": "Europe’s 9.5 million Jews across Yiddishland, integrated Western cities, and Sephardic Thessaloniki, and the rise of racial antisemitism.",
+            "children": [
+              {
+                "id": "kt1_l1_s1",
+                "tier": 3,
+                "label": "9.5m Mosaic & Yiddishland",
+                "dateChip": "c. 1930s",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "Yiddishland",
+                "gloss": "Over 60% of Europe’s 9.5 million Jews lived in Central and Eastern Europe, sustaining vibrant Yiddish culture in shtetls and Vilna.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "9.5m Jews Across Continental Europe",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "9.5 million",
+                    "gloss": "Under two percent of Europe; Over 60% in East Europe.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Under two percent of Europe",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "9.5 million",
+                        "gloss": "Under two percent of Europe"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Over 60% in East Europe",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "9.5 million",
+                        "gloss": "Over 60% in East Europe"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Vibrant Yiddishland & Vilna Culture",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Vilna",
+                    "gloss": "Shtetls, Warsaw, Kraków Yiddish press; Vilna: Jerusalem of the North.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Shtetls, Warsaw, Kraków Yiddish press",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Vilna",
+                        "gloss": "Shtetls, Warsaw, Kraków Yiddish press"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Vilna: Jerusalem of the North",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Vilna",
+                        "gloss": "Vilna: Jerusalem of the North"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Rich Civilisation Later Destroyed",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "talmudic",
+                    "gloss": "Talmudic academies alongside socialist youth; Deeply rooted thousand-year Jewish life.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Talmudic academies alongside socialist youth",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "talmudic",
+                        "gloss": "Talmudic academies alongside socialist youth"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Deeply rooted thousand-year Jewish life",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "talmudic",
+                        "gloss": "Deeply rooted thousand-year Jewish life"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Honours Full Pre-War Human Lives",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "diverse",
+                    "gloss": "Spanned diverse jobs and traditions; More than statistics of murder.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Spanned diverse jobs and traditions",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "diverse",
+                        "gloss": "Spanned diverse jobs and traditions"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c4_t2",
+                        "tier": 5,
+                        "label": "More than statistics of murder",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "diverse",
+                        "gloss": "More than statistics of murder"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s2",
+                "tier": 3,
+                "label": "Western Patriotism & Sephardim",
+                "dateChip": "1871–1933",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Thessaloniki",
+                "gloss": "Assimilated German Jews fought loyally in WWI while Ladino-speaking Sephardic Jews formed over half of Greek Thessaloniki.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Assimilated Patriotic German Jews",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "100,000 German Jewish",
+                    "gloss": "Emancipated as equal citizens 1871; 100,000 served WWI; 12,000 died.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Emancipated as equal citizens 1871",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "100,000 German Jewish",
+                        "gloss": "Emancipated as equal citizens 1871"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "100,000 served WWI; 12,000 died",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "100,000 German Jewish",
+                        "gloss": "100,000 served WWI; 12,000 died"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sephardic Port of Thessaloniki",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Thessaloniki",
+                    "gloss": "Expelled from Spain in 1492; Ladino speakers; port shut Saturdays.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Expelled from Spain in 1492",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Thessaloniki",
+                        "gloss": "Expelled from Spain in 1492"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Ladino speakers; port shut Saturdays",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Thessaloniki",
+                        "gloss": "Ladino speakers; port shut Saturdays"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Deeply Woven Into European Civic Life",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Mother of Israel",
+                    "gloss": "Over half Thessaloniki was Jewish; Enriched science, docks, and arts.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Over half Thessaloniki was Jewish",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Mother of Israel",
+                        "gloss": "Over half Thessaloniki was Jewish"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Enriched science, docks, and arts",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Mother of Israel",
+                        "gloss": "Enriched science, docks, and arts"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Shatters Nazi Outsider Propaganda",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "patriotic citizens",
+                    "gloss": "Loyal citizens across West, South; Lived peacefully beside diverse neighbours.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Loyal citizens across West, South",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "patriotic citizens",
+                        "gloss": "Loyal citizens across West, South"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Lived peacefully beside diverse neighbours",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "patriotic citizens",
+                        "gloss": "Lived peacefully beside diverse neighbours"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s3",
+                "tier": 3,
+                "label": "Religious vs Racial Antisemitism",
+                "dateChip": "19th–20th C.",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "racial antisemitism",
+                "gloss": "Late-19th-century theorists mutated medieval religious anti-Judaism into pseudo-scientific biological racism adopted by Hitler.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Medieval Christian Anti-Judaism",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "anti-Judaism",
+                    "gloss": "Blamed Jews, barred trade guilds; Religious faith escaped via baptism.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Blamed Jews, barred trade guilds",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "anti-Judaism",
+                        "gloss": "Blamed Jews, barred trade guilds"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Religious faith escaped via baptism",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "anti-Judaism",
+                        "gloss": "Religious faith escaped via baptism"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Biological Blood Racism Invented",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "biological racism",
+                    "gloss": "Pseudo-science claimed fixed racial blood; Conversion offered zero escape route.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Pseudo-science claimed fixed racial blood",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "biological racism",
+                        "gloss": "Pseudo-science claimed fixed racial blood"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Conversion offered zero escape route",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "biological racism",
+                        "gloss": "Conversion offered zero escape route"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Drove Hitler’s Totalitarian Laws",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Adolf Hitler",
+                    "gloss": "Adopted as core Nazi worldview; Targeted every person by ancestry.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Adopted as core Nazi worldview",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Adolf Hitler",
+                        "gloss": "Adopted as core Nazi worldview"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Targeted every person by ancestry",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Adolf Hitler",
+                        "gloss": "Targeted every person by ancestry"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Made Annihilation Ideologically Total",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "racial theory",
+                    "gloss": "Turned religious prejudice racial; Laid ideological root of genocide.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Turned religious prejudice racial",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "racial theory",
+                        "gloss": "Turned religious prejudice racial"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Laid ideological root of genocide",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "racial theory",
+                        "gloss": "Laid ideological root of genocide"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_l2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Stripping Rights & Pogrom",
+            "dateChip": "1933–1939",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Nuremberg Laws",
+            "gloss": "From the April 1933 shop boycott and 1935 Nuremberg Laws to Kristallnacht, closed Évian borders, and the Kindertransport.",
+            "children": [
+              {
+                "id": "kt1_l2_s1",
+                "tier": 3,
+                "label": "1933 Boycott & State Purges",
+                "dateChip": "Jan–Apr 1933",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Civil Service",
+                "gloss": "Within weeks of taking power in 1933, Hitler ordered an SA shop boycott and purged Jewish civil servants, judges, and teachers.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1 April 1933 Nationwide Boycott",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "1 April 1933",
+                    "gloss": "SA picketed Jewish shop windows; Daubed Jude across store glass.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "SA picketed Jewish shop windows",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "1 April 1933",
+                        "gloss": "SA picketed Jewish shop windows"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Daubed Jude across store glass",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "1 April 1933",
+                        "gloss": "Daubed Jude across store glass"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "7 April Civil Service Purge Law",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "7 April 1933",
+                    "gloss": "Fired Jewish judges and teachers; Expelled civil servants from office.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Fired Jewish judges and teachers",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "7 April 1933",
+                        "gloss": "Fired Jewish judges and teachers"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Expelled civil servants from office",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "7 April 1933",
+                        "gloss": "Expelled civil servants from office"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Paved Way for 1935 Race Laws",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "30 January 1933",
+                    "gloss": "Turned party hatred into law; Began state-led economic exclusion.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Turned party hatred into law",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "30 January 1933",
+                        "gloss": "Turned party hatred into law"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Began state-led economic exclusion",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "30 January 1933",
+                        "gloss": "Began state-led economic exclusion"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Immediate State Attack After Jan 1933",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Chancellor",
+                    "gloss": "Targeted doctors, lawyers, and shops; Tested public compliance early.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Targeted doctors, lawyers, and shops",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Chancellor",
+                        "gloss": "Targeted doctors, lawyers, and shops"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Tested public compliance early",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Chancellor",
+                        "gloss": "Tested public compliance early"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s2",
+                "tier": 3,
+                "label": "1935 Nuremberg Laws & Isolation",
+                "dateChip": "1935–1938",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Nuremberg Laws",
+                "gloss": "The September 1935 Nuremberg Laws revoked Jewish citizenship while over 400 decrees and Aryanization enforced \"social death\".",
+                "children": [
+                  {
+                    "id": "kt1_l2_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sept 1935 Nuremberg Race Laws",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Nuremberg Laws",
+                    "gloss": "Revoked citizenship; banned intermarriage; Defined Jews by grandparent chart.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Revoked citizenship; banned intermarriage",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Nuremberg Laws",
+                        "gloss": "Revoked citizenship; banned intermarriage"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Defined Jews by grandparent chart",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Nuremberg Laws",
+                        "gloss": "Defined Jews by grandparent chart"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "400+ Decrees & Aryanization",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Aryanization",
+                    "gloss": "Forced rock-bottom business sales; Barred from schools, parks, cinemas.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Forced rock-bottom business sales",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Aryanization",
+                        "gloss": "Forced rock-bottom business sales"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Barred from schools, parks, cinemas",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Aryanization",
+                        "gloss": "Barred from schools, parks, cinemas"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Imposed Daily Social Death",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "social death",
+                    "gloss": "Restricted to yellow park benches; Escalated toward Nov 1938 violence.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Restricted to yellow park benches",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "social death",
+                        "gloss": "Restricted to yellow park benches"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Escalated toward Nov 1938 violence",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "social death",
+                        "gloss": "Escalated toward Nov 1938 violence"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Codified Racism Into German Law",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "subjects of the state",
+                    "gloss": "Reduced citizens to state subjects; Severed neighbours from Jewish friends.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Reduced citizens to state subjects",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "subjects of the state",
+                        "gloss": "Reduced citizens to state subjects"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Severed neighbours from Jewish friends",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "subjects of the state",
+                        "gloss": "Severed neighbours from Jewish friends"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s3",
+                "tier": 3,
+                "label": "Kristallnacht & Closed Borders",
+                "dateChip": "1938–1939",
+                "lessonIndex": 1,
+                "stageIndex": 3,
+                "searchTerm": "Kristallnacht",
+                "gloss": "Goebbels unleashed the November 1938 pogrom while global borders stayed shut after Évian, save Britain’s Kindertransport.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "9–10 Nov 1938 Kristallnacht Terror",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Kristallnacht",
+                    "gloss": "1,400+ synagogues burned; 91 murdered; 30,000 arrested; 1bn-mark fine.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "1,400+ synagogues burned; 91 murdered",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Kristallnacht",
+                        "gloss": "1,400+ synagogues burned; 91 murdered"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "30,000 arrested; 1bn-mark fine",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Kristallnacht",
+                        "gloss": "30,000 arrested; 1bn-mark fine"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Closed Évian Doors vs Kindertransport",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Kindertransport",
+                    "gloss": "32 Évian nations kept borders shut; Britain rescued ~10,000 lone children.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "32 Évian nations kept borders shut",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Kindertransport",
+                        "gloss": "32 Évian nations kept borders shut"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Britain rescued ~10,000 lone children",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Kindertransport",
+                        "gloss": "Britain rescued ~10,000 lone children"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Trapped Families Before Sept 1939",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Évian Conference",
+                    "gloss": "Shattered hope of surviving Germany; Most Kindertransport parents perished later.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Shattered hope of surviving Germany",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Évian Conference",
+                        "gloss": "Shattered hope of surviving Germany"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Most Kindertransport parents perished later",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Évian Conference",
+                        "gloss": "Most Kindertransport parents perished later"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Shifted Persecution to Mass Terror",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Goebbels",
+                    "gloss": "SA, SS trashed 7,500 businesses; Blamed victims for Nazi destruction.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c4_t1",
+                        "tier": 5,
+                        "label": "SA, SS trashed 7,500 businesses",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Goebbels",
+                        "gloss": "SA, SS trashed 7,500 businesses"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Blamed victims for Nazi destruction",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Goebbels",
+                        "gloss": "Blamed victims for Nazi destruction"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_l3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Poland & Sealed Ghettos",
+            "dateChip": "1939–1943",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Warsaw Ghetto",
+            "gloss": "Conquest of Poland brought two million Jews under Nazi rule, leading to sealed ghettos, starvation, and the Oyneg Shabes archive.",
+            "children": [
+              {
+                "id": "kt1_l3_s1",
+                "tier": 3,
+                "label": "1939 Invasion & Schnellbrief",
+                "dateChip": "Sept–Nov 1939",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Schnellbrief",
+                "gloss": "Invading Poland put two million more Jews under Nazi control, prompting Heydrich’s rail-hub concentration order and forced labour.",
+                "children": [
+                  {
+                    "id": "kt1_l3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1 Sept 1939 Invasion of Poland",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "two million Polish Jews",
+                    "gloss": "Captured over two million Jews; Ten times Germany’s remaining Jews.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Captured over two million Jews",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "two million Polish Jews",
+                        "gloss": "Captured over two million Jews"
+                      },
+                      {
+                        "id": "kt1_l3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Ten times Germany’s remaining Jews",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "two million Polish Jews",
+                        "gloss": "Ten times Germany’s remaining Jews"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Heydrich’s Schnellbrief & Armbands",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Schnellbrief",
+                    "gloss": "Concentrated Jews near rail junctions; Star armbands from age ten.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Concentrated Jews near rail junctions",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Schnellbrief",
+                        "gloss": "Concentrated Jews near rail junctions"
+                      },
+                      {
+                        "id": "kt1_l3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Star armbands from age ten",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Schnellbrief",
+                        "gloss": "Star armbands from age ten"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Stripped Assets & Prepared Ghettos",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "forced labour gangs",
+                    "gloss": "Froze banks and seized factories; Rounded men into labour gangs.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Froze banks and seized factories",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "forced labour gangs",
+                        "gloss": "Froze banks and seized factories"
+                      },
+                      {
+                        "id": "kt1_l3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Rounded men into labour gangs",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "forced labour gangs",
+                        "gloss": "Rounded men into labour gangs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Positioned Victims on Rail Network",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Reinhard Heydrich",
+                    "gloss": "Cleared rural towns into hubs; Enabled later mass camp deportations.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Cleared rural towns into hubs",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Reinhard Heydrich",
+                        "gloss": "Cleared rural towns into hubs"
+                      },
+                      {
+                        "id": "kt1_l3_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Enabled later mass camp deportations",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Reinhard Heydrich",
+                        "gloss": "Enabled later mass camp deportations"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l3_s2",
+                "tier": 3,
+                "label": "Warsaw Ghetto & Starvation",
+                "dateChip": "1940–1942",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Warsaw Ghetto",
+                "gloss": "Nazi authorities sealed 450,000 people inside the Warsaw Ghetto on 180–220 calories a day, killing over 80,000 before deportations.",
+                "children": [
+                  {
+                    "id": "kt1_l3_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "450,000 Sealed Inside Warsaw Wall",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "450,000",
+                    "gloss": "3-metre brick wall, 1.3 sq miles; Packed 7–9 people per room.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "3-metre brick wall, 1.3 sq miles",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "450,000",
+                        "gloss": "3-metre brick wall, 1.3 sq miles"
+                      },
+                      {
+                        "id": "kt1_l3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Packed 7–9 people per room",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "450,000",
+                        "gloss": "Packed 7–9 people per room"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "180-Calorie Rations & Smugglers",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "180 to 220 calories",
+                    "gloss": "80,000+ died of hunger, disease; Child smugglers squeezed through walls.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "80,000+ died of hunger, disease",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "180 to 220 calories",
+                        "gloss": "80,000+ died of hunger, disease"
+                      },
+                      {
+                        "id": "kt1_l3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Child smugglers squeezed through walls",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "180 to 220 calories",
+                        "gloss": "Child smugglers squeezed through walls"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Weaponised Hunger to Decimate Life",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "shoot-to-kill",
+                    "gloss": "Guards patrolled gates shoot-to-kill; Cut phones and outside post.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Guards patrolled gates shoot-to-kill",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "shoot-to-kill",
+                        "gloss": "Guards patrolled gates shoot-to-kill"
+                      },
+                      {
+                        "id": "kt1_l3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Cut phones and outside post",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "shoot-to-kill",
+                        "gloss": "Cut phones and outside post"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Ghettos Served as Lethal Prisons",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Łódź",
+                    "gloss": "Enclosed Łódź, Kraków, Lublin too; Killed tens of thousands deliberately.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Enclosed Łódź, Kraków, Lublin too",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Łódź",
+                        "gloss": "Enclosed Łódź, Kraków, Lublin too"
+                      },
+                      {
+                        "id": "kt1_l3_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Killed tens of thousands deliberately",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Łódź",
+                        "gloss": "Killed tens of thousands deliberately"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l3_s3",
+                "tier": 3,
+                "label": "Oyneg Shabes Secret Archive",
+                "dateChip": "1940–1943",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "Ringelblum",
+                "gloss": "Warsaw prisoners ran secret schools and kitchens while Emanuel Ringelblum’s Oyneg Shabes team buried testimonies in milk cans.",
+                "children": [
+                  {
+                    "id": "kt1_l3_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Secret Schools, Kitchens & Prayer",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "soup kitchens",
+                    "gloss": "Ran underground classes and concerts; Defended human dignity under terror.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Ran underground classes and concerts",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "soup kitchens",
+                        "gloss": "Ran underground classes and concerts"
+                      },
+                      {
+                        "id": "kt1_l3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Defended human dignity under terror",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "soup kitchens",
+                        "gloss": "Defended human dignity under terror"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Ringelblum’s Buried Milk Cans",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Ringelblum",
+                    "gloss": "Founded secret Oyneg Shabes archive; Buried diaries beneath Warsaw cellars.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Founded secret Oyneg Shabes archive",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Ringelblum",
+                        "gloss": "Founded secret Oyneg Shabes archive"
+                      },
+                      {
+                        "id": "kt1_l3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Buried diaries beneath Warsaw cellars",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Ringelblum",
+                        "gloss": "Buried diaries beneath Warsaw cellars"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Unearthed Post-War as Proof",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "milk cans",
+                    "gloss": "Preserved victim voices past destruction; Documented daily Nazi ghetto crimes.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Preserved victim voices past destruction",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "milk cans",
+                        "gloss": "Preserved victim voices past destruction"
+                      },
+                      {
+                        "id": "kt1_l3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Documented daily Nazi ghetto crimes",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "milk cans",
+                        "gloss": "Documented daily Nazi ghetto crimes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l3_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Exemplified Cultural Spiritual Resistance",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Oyneg Shabes",
+                    "gloss": "Refused Nazi effort to erase; Truth outlived ghetto’s physical ruin.",
+                    "children": [
+                      {
+                        "id": "kt1_l3_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Refused Nazi effort to erase",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Oyneg Shabes",
+                        "gloss": "Refused Nazi effort to erase"
+                      },
+                      {
+                        "id": "kt1_l3_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Truth outlived ghetto’s physical ruin",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Oyneg Shabes",
+                        "gloss": "Truth outlived ghetto’s physical ruin"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Mass Murder & Revolt",
+        "dateChip": "1941–1944",
+        "lessonIndex": 3,
+        "stageIndex": 0,
+        "searchTerm": "Auschwitz",
+        "gloss": "Operation Barbarossa and the Holocaust by Bullets (1941–42), Wannsee, Reinhard and Auschwitz death camps, and Jewish armed revolts.",
+        "children": [
+          {
+            "id": "kt2_l4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Barbarossa & Mass Shootings",
+            "dateChip": "1941–1942",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Einsatzgruppen",
+            "gloss": "Invading the USSR in June 1941 unleashed the Einsatzgruppen, Babyn Yar, Baltic collaboration, and Chełmno gas vans.",
+            "children": [
+              {
+                "id": "kt2_l4_s1",
+                "tier": 3,
+                "label": "Barbarossa & Einsatzgruppen",
+                "dateChip": "Summer 1941",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Einsatzgruppen",
+                "gloss": "Hitler’s June 1941 war of extermination sent four SS Einsatzgruppen and Order Police to murder 1.5 million Soviet Jews.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "22 June 1941 Extermination War",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Barbarossa",
+                    "gloss": "3m+ Axis troops invaded USSR; Commissar Order and Judeo-Bolshevism lie.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "3m+ Axis troops invaded USSR",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Barbarossa",
+                        "gloss": "3m+ Axis troops invaded USSR"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Commissar Order and Judeo-Bolshevism lie",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Barbarossa",
+                        "gloss": "Commissar Order and Judeo-Bolshevism lie"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Einsatzgruppen A–D & Order Police",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Einsatzgruppen",
+                    "gloss": "Four mobile squads trailed Wehrmacht; Shot women, children August 1941.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Four mobile squads trailed Wehrmacht",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Einsatzgruppen",
+                        "gloss": "Four mobile squads trailed Wehrmacht"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Shot women, children August 1941",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Einsatzgruppen",
+                        "gloss": "Shot women, children August 1941"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1.5m Murdered by Bullets",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Holocaust by Bullets",
+                    "gloss": "Executed entire towns beside ravines; Crossed into systematic mass murder.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Executed entire towns beside ravines",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Holocaust by Bullets",
+                        "gloss": "Executed entire towns beside ravines"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Crossed into systematic mass murder",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Holocaust by Bullets",
+                        "gloss": "Crossed into systematic mass murder"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Genocide Began Before Gas Chambers",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Order Police",
+                    "gloss": "Face-to-face shootings across Soviet lands; Involved regular police alongside SS.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Face-to-face shootings across Soviet lands",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Order Police",
+                        "gloss": "Face-to-face shootings across Soviet lands"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Involved regular police alongside SS",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Order Police",
+                        "gloss": "Involved regular police alongside SS"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s2",
+                "tier": 3,
+                "label": "Babyn Yar & Baltic Killings",
+                "dateChip": "Autumn 1941",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Babyn Yar",
+                "gloss": "German units murdered 33,771 Jews at Babyn Yar in 36 hours and slaughtered 250,000 across the Baltics with local auxiliaries.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "33,771 Shot at Babyn Yar",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Babyn Yar",
+                    "gloss": "Kyiv ravine, 29–30 Sept 1941; Sonderkommando 4a and Order Police.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Kyiv ravine, 29–30 Sept 1941",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Babyn Yar",
+                        "gloss": "Kyiv ravine, 29–30 Sept 1941"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Sonderkommando 4a and Order Police",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Babyn Yar",
+                        "gloss": "Sonderkommando 4a and Order Police"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Ponary Forest & Baltic Auxiliaries",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Ponary Forest",
+                    "gloss": "Einsatzgruppe A killed 250,000 fast; 70,000+ shot outside Vilnius pits.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Einsatzgruppe A killed 250,000 fast",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Ponary Forest",
+                        "gloss": "Einsatzgruppe A killed 250,000 fast"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "70,000+ shot outside Vilnius pits",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Ponary Forest",
+                        "gloss": "70,000+ shot outside Vilnius pits"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Wiped Out Historic Baltic Jewry",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Baltic collaboration",
+                    "gloss": "Lithuanian, Latvian police aided killings; Sent meticulous tallies to Berlin.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Lithuanian, Latvian police aided killings",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Baltic collaboration",
+                        "gloss": "Lithuanian, Latvian police aided killings"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Sent meticulous tallies to Berlin",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Baltic collaboration",
+                        "gloss": "Sent meticulous tallies to Berlin"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Exposed Lethal Local Collaboration",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "auxiliary police",
+                    "gloss": "Neighbours rounded up, shot Jews; Accelerated pace of ravine massacres.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Neighbours rounded up, shot Jews",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "auxiliary police",
+                        "gloss": "Neighbours rounded up, shot Jews"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Accelerated pace of ravine massacres",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "auxiliary police",
+                        "gloss": "Accelerated pace of ravine massacres"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s3",
+                "tier": 3,
+                "label": "Shift to Chełmno Gas Vans",
+                "dateChip": "Late 1941",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Chełmno",
+                "gloss": "Alarmed by shooter strain after witnessing executions at Minsk, Himmler ordered carbon-monoxide gas vans at Chełmno.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Himmler’s Minsk Visit & Strain",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Minsk",
+                    "gloss": "500,000+ shot by winter 1941; Shooters suffered breakdowns, heavy drinking.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "500,000+ shot by winter 1941",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Minsk",
+                        "gloss": "500,000+ shot by winter 1941"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Shooters suffered breakdowns, heavy drinking",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Minsk",
+                        "gloss": "Shooters suffered breakdowns, heavy drinking"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Chełmno Carbon-Monoxide Gas Vans",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Chełmno",
+                    "gloss": "Pumped exhaust into sealed trucks; Deployed inside occupied Poland 1941.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Pumped exhaust into sealed trucks",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Chełmno",
+                        "gloss": "Pumped exhaust into sealed trucks"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Deployed inside occupied Poland 1941",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Chełmno",
+                        "gloss": "Deployed inside occupied Poland 1941"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Paved Way for Death Camps",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "industrialized method",
+                    "gloss": "Distanced killers from victims’ faces; Scaled up to stationary chambers.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Distanced killers from victims’ faces",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "industrialized method",
+                        "gloss": "Distanced killers from victims’ faces"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Scaled up to stationary chambers",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "industrialized method",
+                        "gloss": "Scaled up to stationary chambers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Engineered Industrial Mass Killing",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Himmler",
+                    "gloss": "Designed solely to spare executioners; Linked ravine shootings to Reinhard.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Designed solely to spare executioners",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Himmler",
+                        "gloss": "Designed solely to spare executioners"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Linked ravine shootings to Reinhard",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Himmler",
+                        "gloss": "Linked ravine shootings to Reinhard"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_l5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Final Solution & Resistance",
+            "dateChip": "1942–1944",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Wannsee",
+            "gloss": "Wannsee logistics, Operation Reinhard death camps, Auschwitz-Birkenau, the Warsaw Ghetto Uprising, and camp breakouts.",
+            "children": [
+              {
+                "id": "kt2_l5_s1",
+                "tier": 3,
+                "label": "Wannsee & Operation Reinhard",
+                "dateChip": "1942–1943",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Operation Reinhard",
+                "gloss": "Fifteen officials coordinated rail murder at Wannsee before Bełżec, Sobibór, and Treblinka killed 1.7 million people.",
+                "children": [
+                  {
+                    "id": "kt2_l5_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "20 Jan 1942 Wannsee Conference",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Wannsee",
+                    "gloss": "15 officials met 90 minutes; Eichmann listed 11 million Jews.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "15 officials met 90 minutes",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Wannsee",
+                        "gloss": "15 officials met 90 minutes"
+                      },
+                      {
+                        "id": "kt2_l5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Eichmann listed 11 million Jews",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Wannsee",
+                        "gloss": "Eichmann listed 11 million Jews"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bełżec, Sobibór & Treblinka Camps",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Operation Reinhard",
+                    "gloss": "Zero selection for slave labour; Murdered within two hours arriving.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Zero selection for slave labour",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Operation Reinhard",
+                        "gloss": "Zero selection for slave labour"
+                      },
+                      {
+                        "id": "kt2_l5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Murdered within two hours arriving",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Operation Reinhard",
+                        "gloss": "Murdered within two hours arriving"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1.7m Killed Under Reinhard",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "1.7 million",
+                    "gloss": "Used lethal carbon monoxide gas; Destroyed Polish Jewry before dismantling.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Used lethal carbon monoxide gas",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "1.7 million",
+                        "gloss": "Used lethal carbon monoxide gas"
+                      },
+                      {
+                        "id": "kt2_l5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Destroyed Polish Jewry before dismantling",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "1.7 million",
+                        "gloss": "Destroyed Polish Jewry before dismantling"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Pure Factories of Immediate Death",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Treblinka",
+                    "gloss": "Disguised ramps as transit stations; Coordinated ministries with SS killers.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Disguised ramps as transit stations",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Treblinka",
+                        "gloss": "Disguised ramps as transit stations"
+                      },
+                      {
+                        "id": "kt2_l5_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Coordinated ministries with SS killers",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Treblinka",
+                        "gloss": "Coordinated ministries with SS killers"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l5_s2",
+                "tier": 3,
+                "label": "Auschwitz-Birkenau Dual Camp",
+                "dateChip": "1942–1944",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Auschwitz-Birkenau",
+                "gloss": "Auschwitz-Birkenau combined slave labour with Zyklon B gas chambers, murdering at least 1.1 million people including one million Jews.",
+                "children": [
+                  {
+                    "id": "kt2_l5_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Ramp Selections & Slave Labour",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "selection",
+                    "gloss": "Trains arrived from across Europe; SS doctors tattooed fit workers.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Trains arrived from across Europe",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "selection",
+                        "gloss": "Trains arrived from across Europe"
+                      },
+                      {
+                        "id": "kt2_l5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "SS doctors tattooed fit workers",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "selection",
+                        "gloss": "SS doctors tattooed fit workers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Zyklon B Chambers Killed 1.1m+",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Zyklon B",
+                    "gloss": "Dropped cyanide pellets through vents; Murdered elderly, sick, young children.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Dropped cyanide pellets through vents",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Zyklon B",
+                        "gloss": "Dropped cyanide pellets through vents"
+                      },
+                      {
+                        "id": "kt2_l5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Murdered elderly, sick, young children",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Zyklon B",
+                        "gloss": "Murdered elderly, sick, young children"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ One Million Jewish Victims Murdered",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "1.1 million",
+                    "gloss": "Worked slave inmates to exhaustion; Largest Nazi extermination camp complex.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Worked slave inmates to exhaustion",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "1.1 million",
+                        "gloss": "Worked slave inmates to exhaustion"
+                      },
+                      {
+                        "id": "kt2_l5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Largest Nazi extermination camp complex",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "1.1 million",
+                        "gloss": "Largest Nazi extermination camp complex"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Fused Exploitation With Annihilation",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Auschwitz-Birkenau",
+                    "gloss": "Operated dual labour-death camp design; Central continental deportation hub.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Operated dual labour-death camp design",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Auschwitz-Birkenau",
+                        "gloss": "Operated dual labour-death camp design"
+                      },
+                      {
+                        "id": "kt2_l5_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Central continental deportation hub",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Auschwitz-Birkenau",
+                        "gloss": "Central continental deportation hub"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l5_s3",
+                "tier": 3,
+                "label": "Warsaw & Death Camp Revolts",
+                "dateChip": "1943–1944",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "Anielewicz",
+                "gloss": "Jewish fighters held out 27 days in Warsaw (1943) and launched armed uprisings inside Treblinka, Sobibór, and Auschwitz.",
+                "children": [
+                  {
+                    "id": "kt2_l5_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "27-Day Warsaw Ghetto Uprising",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Mordechai Anielewicz",
+                    "gloss": "Anielewicz’s ŻOB and ŻZW fought; Pistols, grenades against Stroop’s tanks.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Anielewicz’s ŻOB and ŻZW fought",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Mordechai Anielewicz",
+                        "gloss": "Anielewicz’s ŻOB and ŻZW fought"
+                      },
+                      {
+                        "id": "kt2_l5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Pistols, grenades against Stroop’s tanks",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Mordechai Anielewicz",
+                        "gloss": "Pistols, grenades against Stroop’s tanks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Treblinka, Sobibór & Auschwitz Revolts",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Crematorium IV",
+                    "gloss": "300 escaped Treblinka and Sobibór; Sonderkommando blew up Crematorium IV.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "300 escaped Treblinka and Sobibór",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Crematorium IV",
+                        "gloss": "300 escaped Treblinka and Sobibór"
+                      },
+                      {
+                        "id": "kt2_l5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Sonderkommando blew up Crematorium IV",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Crematorium IV",
+                        "gloss": "Sonderkommando blew up Crematorium IV"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Forced SS to Burn & Raze",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Jürgen Stroop",
+                    "gloss": "Stroop burned Warsaw block-by-block; Shut Treblinka and Sobibór after.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Stroop burned Warsaw block-by-block",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Jürgen Stroop",
+                        "gloss": "Stroop burned Warsaw block-by-block"
+                      },
+                      {
+                        "id": "kt2_l5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Shut Treblinka and Sobibór after",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Jürgen Stroop",
+                        "gloss": "Shut Treblinka and Sobibór after"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l5_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Refuted Myth of Passive Victims",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "armed resistance",
+                    "gloss": "Fought inside sealed death factories; Chose armed defiance against odds.",
+                    "children": [
+                      {
+                        "id": "kt2_l5_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Fought inside sealed death factories",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "armed resistance",
+                        "gloss": "Fought inside sealed death factories"
+                      },
+                      {
+                        "id": "kt2_l5_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Chose armed defiance against odds",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "armed resistance",
+                        "gloss": "Chose armed defiance against odds"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: Complicity & Memory",
+        "dateChip": "1940–1948",
+        "lessonIndex": 5,
+        "stageIndex": 0,
+        "searchTerm": "Bergen-Belsen",
+        "gloss": "Desk murderers, European collaborators, bystanders, Righteous rescuers, Allied choices, liberation, Nuremberg, and remembrance.",
+        "children": [
+          {
+            "id": "kt3_l6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Complicity, Rescue & Allies",
+            "dateChip": "1940–1945",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Righteous",
+            "gloss": "Reichsbahn clerks, Vichy and Hungarian collaborators, silent bystanders, Danish and Le Chambon rescuers, and Jan Karski’s report.",
+            "children": [
+              {
+                "id": "kt3_l6_s1",
+                "tier": 3,
+                "label": "Desk Murderers & Collaborators",
+                "dateChip": "1940–1944",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Reichsbahn",
+                "gloss": "State bureaucrats, Reichsbahn clerks, Vichy French police, and Hungarian officials enabled continent-wide deportations.",
+                "children": [
+                  {
+                    "id": "kt3_l6_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Desk Murderers & Reichsbahn Billing",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Raul Hilberg",
+                    "gloss": "Hilberg studied civil service machinery; Clerks billed trains passenger-kilometre.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Hilberg studied civil service machinery",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Raul Hilberg",
+                        "gloss": "Hilberg studied civil service machinery"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Clerks billed trains passenger-kilometre",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Raul Hilberg",
+                        "gloss": "Clerks billed trains passenger-kilometre"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Vichy Arrests & 437,000 Hungarians",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Vel’ d’Hiv",
+                    "gloss": "French police arrested 13,000 Paris; 437,000 Hungarians deported 54 days.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c2_t1",
+                        "tier": 5,
+                        "label": "French police arrested 13,000 Paris",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Vel’ d’Hiv",
+                        "gloss": "French police arrested 13,000 Paris"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c2_t2",
+                        "tier": 5,
+                        "label": "437,000 Hungarians deported 54 days",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Vel’ d’Hiv",
+                        "gloss": "437,000 Hungarians deported 54 days"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Made Genocide All-European Crime",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "all-European",
+                    "gloss": "SS relied on foreign police; Kept death trains running wartime.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c3_t1",
+                        "tier": 5,
+                        "label": "SS relied on foreign police",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "all-European",
+                        "gloss": "SS relied on foreign police"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Kept death trains running wartime",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "all-European",
+                        "gloss": "Kept death trains running wartime"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Ordinary Professionals Enabled Murder",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Schreibtischtäter",
+                    "gloss": "Lawyers and clerks never shot; Paperwork proved as lethal.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Lawyers and clerks never shot",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Schreibtischtäter",
+                        "gloss": "Lawyers and clerks never shot"
+                      },
+                      {
+                        "id": "kt3_l6_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Paperwork proved as lethal",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Schreibtischtäter",
+                        "gloss": "Paperwork proved as lethal"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l6_s2",
+                "tier": 3,
+                "label": "Bystanders vs Righteous Rescue",
+                "dateChip": "1940–1945",
+                "lessonIndex": 5,
+                "stageIndex": 3,
+                "searchTerm": "Denmark",
+                "gloss": "While millions of bystanders stayed silent or bought looted goods, Denmark and Le Chambon proved rescue was possible.",
+                "children": [
+                  {
+                    "id": "kt3_l6_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Silent Bystanders & Loot Auctions",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Ian Kershaw",
+                    "gloss": "Bought stolen furniture at auctions; Kershaw: road paved with indifference.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Bought stolen furniture at auctions",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Ian Kershaw",
+                        "gloss": "Bought stolen furniture at auctions"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Kershaw: road paved with indifference",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Ian Kershaw",
+                        "gloss": "Kershaw: road paved with indifference"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Danish Boats & Le Chambon",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "Øresund",
+                    "gloss": "Ferried 7,200+ Danes to Sweden; Trocmé’s village sheltered 3,500 refugees.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Ferried 7,200+ Danes to Sweden",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "Øresund",
+                        "gloss": "Ferried 7,200+ Danes to Sweden"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Trocmé’s village sheltered 3,500 refugees",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "Øresund",
+                        "gloss": "Trocmé’s village sheltered 3,500 refugees"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Saved Over 99% Danish Jews",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "99%",
+                    "gloss": "Defied Oct 1943 Gestapo roundup; Proved civic solidarity saved thousands.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Defied Oct 1943 Gestapo roundup",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "99%",
+                        "gloss": "Defied Oct 1943 Gestapo roundup"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Proved civic solidarity saved thousands",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "99%",
+                        "gloss": "Proved civic solidarity saved thousands"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Highlighted Moral Choice Under Terror",
+                    "lessonIndex": 5,
+                    "stageIndex": 3,
+                    "searchTerm": "André Trocmé",
+                    "gloss": "Courageous minority risked instant death; Exposed complicity of silent neighbours.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Courageous minority risked instant death",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "André Trocmé",
+                        "gloss": "Courageous minority risked instant death"
+                      },
+                      {
+                        "id": "kt3_l6_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Exposed complicity of silent neighbours",
+                        "lessonIndex": 5,
+                        "stageIndex": 3,
+                        "searchTerm": "André Trocmé",
+                        "gloss": "Exposed complicity of silent neighbours"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l6_s3",
+                "tier": 3,
+                "label": "Karski’s Report & Allied Choices",
+                "dateChip": "1942–1944",
+                "lessonIndex": 5,
+                "stageIndex": 4,
+                "searchTerm": "Jan Karski",
+                "gloss": "Jan Karski brought eyewitness testimony to London and Washington in 1942, yet Allies prioritised military victory over camp bombing.",
+                "children": [
+                  {
+                    "id": "kt3_l6_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Jan Karski’s 1942 Eyewitness Report",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Jan Karski",
+                    "gloss": "Smuggled inside Warsaw Ghetto secretly; Briefed Anthony Eden and Roosevelt.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Smuggled inside Warsaw Ghetto secretly",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Jan Karski",
+                        "gloss": "Smuggled inside Warsaw Ghetto secretly"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Briefed Anthony Eden and Roosevelt",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Jan Karski",
+                        "gloss": "Briefed Anthony Eden and Roosevelt"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Dec 1942 Allied Public Warning",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Dec 1942",
+                    "gloss": "Condemned cold-blooded Nazi extermination; Confirmed Allies knew of genocide.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Condemned cold-blooded Nazi extermination",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Dec 1942",
+                        "gloss": "Condemned cold-blooded Nazi extermination"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Confirmed Allies knew of genocide",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Dec 1942",
+                        "gloss": "Confirmed Allies knew of genocide"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Declined Bombing Auschwitz Rail Lines",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "railway lines",
+                    "gloss": "Launched zero camp rescue raids; Kept focus on defeating Wehrmacht.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Launched zero camp rescue raids",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "railway lines",
+                        "gloss": "Launched zero camp rescue raids"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Kept focus on defeating Wehrmacht",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "railway lines",
+                        "gloss": "Kept focus on defeating Wehrmacht"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l6_s3_c4",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Total War Priority vs Rescue Duty",
+                    "lessonIndex": 5,
+                    "stageIndex": 4,
+                    "searchTerm": "Jan Karski",
+                    "gloss": "Commanders argued victory ended camps; Critics question unbombed Auschwitz tracks.",
+                    "children": [
+                      {
+                        "id": "kt3_l6_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Commanders argued victory ended camps",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Jan Karski",
+                        "gloss": "Commanders argued victory ended camps"
+                      },
+                      {
+                        "id": "kt3_l6_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Critics question unbombed Auschwitz tracks",
+                        "lessonIndex": 5,
+                        "stageIndex": 4,
+                        "searchTerm": "Jan Karski",
+                        "gloss": "Critics question unbombed Auschwitz tracks"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_l7",
+            "code": "7",
+            "tier": 2,
+            "label": "7. Liberation, Law & Memory",
+            "dateChip": "1944–1948",
+            "lessonIndex": 6,
+            "stageIndex": 0,
+            "searchTerm": "Bergen-Belsen",
+            "gloss": "Winter death marches, camp liberations, Displaced Persons, Nuremberg and Raphael Lemkin’s Genocide Convention, and living memory.",
+            "children": [
+              {
+                "id": "kt3_l7_s1",
+                "tier": 3,
+                "label": "Death Marches & Liberation",
+                "dateChip": "1944–1945",
+                "lessonIndex": 6,
+                "stageIndex": 1,
+                "searchTerm": "Bergen-Belsen",
+                "gloss": "After winter death marches killed up to 250,000 prisoners, Soviet and Western troops liberated Auschwitz and Bergen-Belsen.",
+                "children": [
+                  {
+                    "id": "kt3_l7_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Winter 1944–45 Death Marches",
+                    "lessonIndex": 6,
+                    "stageIndex": 0,
+                    "searchTerm": "death marches",
+                    "gloss": "Himmler evacuated camps in frost; 200,000–250,000 died in final months.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Himmler evacuated camps in frost",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "death marches",
+                        "gloss": "Himmler evacuated camps in frost"
+                      },
+                      {
+                        "id": "kt3_l7_s1_c1_t2",
+                        "tier": 5,
+                        "label": "200,000–250,000 died in final months",
+                        "lessonIndex": 6,
+                        "stageIndex": 0,
+                        "searchTerm": "death marches",
+                        "gloss": "200,000–250,000 died in final months"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Auschwitz & Bergen-Belsen Liberated",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "Bergen-Belsen",
+                    "gloss": "Soviets reached Auschwitz 27 Jan; 13,000 unburied corpses at Belsen.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Soviets reached Auschwitz 27 Jan",
+                        "lessonIndex": 6,
+                        "stageIndex": 1,
+                        "searchTerm": "Bergen-Belsen",
+                        "gloss": "Soviets reached Auschwitz 27 Jan"
+                      },
+                      {
+                        "id": "kt3_l7_s1_c2_t2",
+                        "tier": 5,
+                        "label": "13,000 unburied corpses at Belsen",
+                        "lessonIndex": 6,
+                        "stageIndex": 1,
+                        "searchTerm": "Bergen-Belsen",
+                        "gloss": "13,000 unburied corpses at Belsen"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Dimbleby’s BBC Broadcast Shocked World",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "Richard Dimbleby",
+                    "gloss": "Wept describing nightmare on radio; Bulldozers buried mass typhus graves.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Wept describing nightmare on radio",
+                        "lessonIndex": 6,
+                        "stageIndex": 1,
+                        "searchTerm": "Richard Dimbleby",
+                        "gloss": "Wept describing nightmare on radio"
+                      },
+                      {
+                        "id": "kt3_l7_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Bulldozers buried mass typhus graves",
+                        "lessonIndex": 6,
+                        "stageIndex": 1,
+                        "searchTerm": "Richard Dimbleby",
+                        "gloss": "Bulldozers buried mass typhus graves"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "27 Jan Holocaust Memorial Day",
+                    "lessonIndex": 6,
+                    "stageIndex": 1,
+                    "searchTerm": "Holocaust Memorial Day",
+                    "gloss": "Confronted world with undeniable proof; Anchored annual global remembrance day.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Confronted world with undeniable proof",
+                        "lessonIndex": 6,
+                        "stageIndex": 1,
+                        "searchTerm": "Holocaust Memorial Day",
+                        "gloss": "Confronted world with undeniable proof"
+                      },
+                      {
+                        "id": "kt3_l7_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Anchored annual global remembrance day",
+                        "lessonIndex": 6,
+                        "stageIndex": 1,
+                        "searchTerm": "Holocaust Memorial Day",
+                        "gloss": "Anchored annual global remembrance day"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l7_s2",
+                "tier": 3,
+                "label": "DP Camps, Nuremberg & Genocide",
+                "dateChip": "1945–1948",
+                "lessonIndex": 6,
+                "stageIndex": 3,
+                "searchTerm": "Raphael Lemkin",
+                "gloss": "Survivors endured years in DP camps while Nuremberg trials and Raphael Lemkin transformed international criminal law.",
+                "children": [
+                  {
+                    "id": "kt3_l7_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "250,000 Survivors in DP Camps",
+                    "lessonIndex": 6,
+                    "stageIndex": 2,
+                    "searchTerm": "DP camps",
+                    "gloss": "300 Windermere Children healed UK; 1947 Exodus spurred 1948 Israel.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s2_c1_t1",
+                        "tier": 5,
+                        "label": "300 Windermere Children healed UK",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "DP camps",
+                        "gloss": "300 Windermere Children healed UK"
+                      },
+                      {
+                        "id": "kt3_l7_s2_c1_t2",
+                        "tier": 5,
+                        "label": "1947 Exodus spurred 1948 Israel",
+                        "lessonIndex": 6,
+                        "stageIndex": 2,
+                        "searchTerm": "DP camps",
+                        "gloss": "1947 Exodus spurred 1948 Israel"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Nuremberg Trials & Lemkin’s Term",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Raphael Lemkin",
+                    "gloss": "Sentenced twelve Nazis to death; Lemkin lost forty-nine family members.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Sentenced twelve Nazis to death",
+                        "lessonIndex": 6,
+                        "stageIndex": 3,
+                        "searchTerm": "Raphael Lemkin",
+                        "gloss": "Sentenced twelve Nazis to death"
+                      },
+                      {
+                        "id": "kt3_l7_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Lemkin lost forty-nine family members",
+                        "lessonIndex": 6,
+                        "stageIndex": 3,
+                        "searchTerm": "Raphael Lemkin",
+                        "gloss": "Lemkin lost forty-nine family members"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1948 UN Genocide Convention",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "Genocide Convention",
+                    "gloss": "Rejected superior orders legal excuse; Outlawed destroying national groups globally.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Rejected superior orders legal excuse",
+                        "lessonIndex": 6,
+                        "stageIndex": 3,
+                        "searchTerm": "Genocide Convention",
+                        "gloss": "Rejected superior orders legal excuse"
+                      },
+                      {
+                        "id": "kt3_l7_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Outlawed destroying national groups globally",
+                        "lessonIndex": 6,
+                        "stageIndex": 3,
+                        "searchTerm": "Genocide Convention",
+                        "gloss": "Outlawed destroying national groups globally"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Created Modern Human Rights Law",
+                    "lessonIndex": 6,
+                    "stageIndex": 3,
+                    "searchTerm": "crimes against humanity",
+                    "gloss": "Defined crimes against humanity legally; Held state leaders personally accountable.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Defined crimes against humanity legally",
+                        "lessonIndex": 6,
+                        "stageIndex": 3,
+                        "searchTerm": "crimes against humanity",
+                        "gloss": "Defined crimes against humanity legally"
+                      },
+                      {
+                        "id": "kt3_l7_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Held state leaders personally accountable",
+                        "lessonIndex": 6,
+                        "stageIndex": 3,
+                        "searchTerm": "crimes against humanity",
+                        "gloss": "Held state leaders personally accountable"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l7_s3",
+                "tier": 3,
+                "label": "Six Million Lost & Witness",
+                "dateChip": "Post-1945",
+                "lessonIndex": 6,
+                "stageIndex": 4,
+                "searchTerm": "Primo Levi",
+                "gloss": "With two-thirds of European Jewry murdered and Yiddishland destroyed, survivor testimony sustains the pledge of \"Never Again\".",
+                "children": [
+                  {
+                    "id": "kt3_l7_s3_c1",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "Six Million Murdered (1.5m Children)",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "six million",
+                    "gloss": "Killed two-thirds of European Jewry; Erased thousand-year Yiddish civilisation.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Killed two-thirds of European Jewry",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "six million",
+                        "gloss": "Killed two-thirds of European Jewry"
+                      },
+                      {
+                        "id": "kt3_l7_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Erased thousand-year Yiddish civilisation",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "six million",
+                        "gloss": "Erased thousand-year Yiddish civilisation"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Wiesel & Levi Bore Witness",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "Primo Levi",
+                    "gloss": "Recorded oral and written testimonies; Preserved memory as survivors pass.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Recorded oral and written testimonies",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "Primo Levi",
+                        "gloss": "Recorded oral and written testimonies"
+                      },
+                      {
+                        "id": "kt3_l7_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Preserved memory as survivors pass",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "Primo Levi",
+                        "gloss": "Preserved memory as survivors pass"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Grounds Global Never Again Pledge",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "Never Again",
+                    "gloss": "Calls generations to confront antisemitism; Defends universal human dignity.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Calls generations to confront antisemitism",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "Never Again",
+                        "gloss": "Calls generations to confront antisemitism"
+                      },
+                      {
+                        "id": "kt3_l7_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Defends universal human dignity",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "Never Again",
+                        "gloss": "Defends universal human dignity"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l7_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Memory Guards Against Future Hatred",
+                    "lessonIndex": 6,
+                    "stageIndex": 4,
+                    "searchTerm": "remembrance",
+                    "gloss": "Honours vanished communities and names; Warns where unchecked racism leads.",
+                    "children": [
+                      {
+                        "id": "kt3_l7_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Honours vanished communities and names",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "remembrance",
+                        "gloss": "Honours vanished communities and names"
+                      },
+                      {
+                        "id": "kt3_l7_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Warns where unchecked racism leads",
+                        "lessonIndex": 6,
+                        "stageIndex": 4,
+                        "searchTerm": "remembrance",
+                        "gloss": "Warns where unchecked racism leads"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

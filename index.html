@@ -172,7 +172,6 @@
       );
     </script>
     <link rel="stylesheet" href="style.css?v=20261122a" />
-    <!-- <link rel="stylesheet" href="/src/gcse_spec_tracker.css" /> (Paused) -->
 
     <!-- Leaflet CSS & JS for Interactive Maps (non-render-blocking) -->
     <link
@@ -382,6 +381,10 @@
               <i class="fa-solid fa-clock-rotate-left" style="color: #10b981"></i>
               <span>Living Chronology</span>
             </div>
+            <div class="nav-item" id="nav-mindmap" style="display: none">
+              <i class="fa-solid fa-diagram-project" style="color: #f59e0b"></i>
+              <span>Mind Map Studio</span>
+            </div>
             <div class="nav-item" id="nav-mock-exams" style="display: none">
               <i class="fa-solid fa-file-signature" style="color: #6366f1"></i>
               <span>Exam &amp; Spec Hub</span>
@@ -438,33 +441,13 @@
             <i class="fa-solid fa-landmark" style="font-size: 0.88rem; color: #60a5fa"></i>
             <span>Department Portal</span>
           </div>
-          <!-- Always-Findable Staff Mode Lock / Pupil Preview Switch -->
+          <!-- Staff Mode toggle retired: Teacher Guidance & staff resources are open by default on desktop (>= 933px) -->
           <button
             type="button"
             id="btn-sidebar-staff-toggle"
-            onclick="window.toggleGlobalStaffMode && window.toggleGlobalStaffMode()"
-            title="Teacher / Staff Mode (Lesson Plans, Answer Keys &amp; Schemes of Work)"
-            style="
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              gap: 8px;
-              width: 100%;
-              padding: 7px 12px;
-              border-radius: 8px;
-              border: 1px solid rgba(148, 163, 184, 0.28);
-              background: rgba(255, 255, 255, 0.06);
-              color: rgba(241, 245, 249, 0.85);
-              font-size: 0.76rem;
-              font-weight: 700;
-              cursor: pointer;
-              text-align: left;
-              transition: all 0.15s ease;
-            "
-          >
-            <span id="sidebar-staff-toggle-label"><i class="fa-solid fa-lock" style="margin-right: 6px; font-size: 0.72rem; color: #cbd5e1"></i>Teacher / Staff Mode</span>
-            <span id="sidebar-staff-toggle-sub" style="font-size: 0.65rem; opacity: 0.8"></span>
-          </button>
+            style="display: none !important"
+            aria-hidden="true"
+          ></button>
         </div>
 
         <!-- Theme Controls moved to header -->
@@ -659,18 +642,14 @@
               <span class="btn-text" id="copy-class-link-label">Class Link</span>
             </button>
 
-            <!-- Always-Findable Teacher / Staff Mode Toggle -->
+            <!-- Staff Mode toggle retired: open by default on desktop (>= 933px) -->
             <button
               type="button"
               id="btn-header-staff-toggle"
               class="header-tool-btn btn-header-staff"
-              onclick="window.toggleGlobalStaffMode && window.toggleGlobalStaffMode()"
-              title="Teacher / Staff Mode (Lesson Plans, Answer Keys &amp; Schemes of Work)"
-              aria-label="Toggle Teacher and Staff Mode"
-            >
-              <i class="fa-solid fa-chalkboard-user" id="header-staff-toggle-icon"></i>
-              <span class="btn-text" id="header-staff-toggle-label">Teacher</span>
-            </button>
+              style="display: none !important"
+              aria-hidden="true"
+            ></button>
 
             <!-- Mobile 1-Tap Dark / Light Mode Button (Shown in Mobile Pupil Mode) -->
             <button

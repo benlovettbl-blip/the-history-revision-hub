@@ -9,6 +9,7 @@ import {
   renderDashboard,
   renderInteractiveQuiz,
   renderTimeline,
+  renderMindMapView,
   renderIndividualsView,
   renderBookletView,
   renderMockExamsView,
@@ -841,6 +842,7 @@ export function initNavigationUI() {
     else if (
       viewName === 'lessons' ||
       viewName === 'timeline' ||
+      viewName === 'mindmap' ||
       viewName === 'booklet' ||
       viewName === 'mock-exams' ||
       viewName === 'exam-practice' ||
@@ -981,6 +983,7 @@ export function updateBreadcrumbs(customTrail = null) {
         viewName === 'interactive' ||
         viewName === 'arcade' ||
         viewName === 'timeline' ||
+        viewName === 'mindmap' ||
         viewName === 'booklet' ||
         viewName === 'mock-exams' ||
         viewName === 'exam-trainer' ||
@@ -1001,6 +1004,7 @@ export function updateBreadcrumbs(customTrail = null) {
     if (viewName === 'interactive') currentSectionLabel = 'Interactive Quizzing';
     else if (viewName === 'arcade') currentSectionLabel = 'Revision Arcade';
     else if (viewName === 'timeline') currentSectionLabel = 'Chronological Timeline';
+    else if (viewName === 'mindmap') currentSectionLabel = 'Mind Map Studio';
     else if (viewName === 'booklet') currentSectionLabel = 'Printable Booklet';
     else if (viewName === 'mock-exams' || viewName === 'exam-trainer')
       currentSectionLabel = 'Exam & Spec Hub';
@@ -1374,6 +1378,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   // Auto-save return origin when transitioning from an active lesson (or timeline) into a unit tool
   const isUnitToolTarget =
     viewName === 'timeline' ||
+    viewName === 'mindmap' ||
     viewName === 'individuals' ||
     viewName === 'mock-exams' ||
     viewName === 'exam-practice' ||
@@ -1623,6 +1628,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       'nav-unit-booklet',
       'nav-unit-infographics',
       'nav-timeline',
+      'nav-mindmap',
       'nav-mock-exams',
       'nav-decisions',
       'nav-taboo',
@@ -1676,6 +1682,10 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
     await loadUnit(targetUnit);
     renderTimeline();
+  } else if (viewName === 'mindmap') {
+    const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
+    await loadUnit(targetUnit);
+    await renderMindMapView();
   } else if (viewName === 'individuals') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'cme_new';
     await loadUnit(targetUnit);
@@ -1815,6 +1825,10 @@ export async function switchView(viewName, param = null, skipHistory = false, op
         document.title = unitTitleClean
           ? `Chronological Timeline — ${unitTitleClean}`
           : 'Chronological Timeline — The History Revision Hub';
+      } else if (viewName === 'mindmap') {
+        document.title = unitTitleClean
+          ? `Mind Map Studio — ${unitTitleClean}`
+          : 'Mind Map Studio — The History Revision Hub';
       } else if (viewName === 'lessons' && unitTitleClean) {
         document.title = `${unitTitleClean} — The History Revision Hub`;
       }
@@ -2018,6 +2032,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
   const navInteractive = document.getElementById('nav-interactive');
   const navArcade = document.getElementById('nav-arcade');
   const navTimeline = document.getElementById('nav-timeline');
+  const navMindmap = document.getElementById('nav-mindmap');
   const navUnitBooklet = document.getElementById('nav-unit-booklet');
   const navUnitInfographics = document.getElementById('nav-unit-infographics');
   const navMockExams = document.getElementById('nav-mock-exams');
@@ -2247,6 +2262,23 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     };
   } else if (navTimeline) {
     navTimeline.style.display = 'none';
+  }
+
+  // Universal 5-Ring Mind Map Studio (visible across all 26 curriculum units: GCSE, KS3 & KS2)
+  if (navMindmap && Boolean(unitId)) {
+    navMindmap.style.display = 'flex';
+    delete navMindmap.dataset.action;
+    navMindmap.dataset.view = 'mindmap';
+    navMindmap.dataset.unit = unitId;
+    navMindmap.innerHTML =
+      '<i class="fa-solid fa-diagram-project" style="color: #f59e0b;"></i><span>Mind Map Studio</span>';
+    navMindmap.onclick = (e) => {
+      if (e) e.stopPropagation();
+      saveUnitReturnOrigin();
+      switchView('mindmap', unitId);
+    };
+  } else if (navMindmap) {
+    navMindmap.style.display = 'none';
   }
 
   // Universal 7-Game Revision Arcade (visible across all curriculum units)

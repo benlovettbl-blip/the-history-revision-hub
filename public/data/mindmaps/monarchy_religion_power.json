@@ -1,0 +1,1665 @@
+{
+  "unitId": "monarchy_religion_power",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "Crown, Church, or Parliament, 1517–1689",
+  "examDateBoundary": "1517–1689",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Crown, Church, Parliament",
+    "subLabel": "KS3 History",
+    "dateChip": "1517–1689",
+    "gloss": "How the Tudor Reformation, Spanish Armada, English Civil War, 1649 Regicide, and 1689 Bill of Rights shifted sovereignty to Parliament.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Tudor Reformation",
+        "dateChip": "1517–1588",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Act of Supremacy",
+        "gloss": "Henry VIII’s Break with Rome and dissolution of the monasteries, followed by Elizabeth I’s 1559 Middle Way and Catholic plots.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Reformation & Break with Rome",
+            "dateChip": "1517–1547",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Martin Luther",
+            "q2Chain": "Luther’s Protest & Great Matter → Roman Deadlock & Cromwell Laws → 1534 Supremacy & Monasteries",
+            "gloss": "Causal Chain: Luther’s Protest & Great Matter → Roman Deadlock & Cromwell Laws → 1534 Supremacy & Monasteries.",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Luther’s Protest & Great Matter",
+                "dateChip": "1517–1527",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Martin Luther",
+                "gloss": "Martin Luther’s 1517 protest fractured Christendom before Henry VIII’s lack of a male heir drove him to seek an annulment.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1517 Wittenberg 95 Arguments",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Wittenberg",
+                    "gloss": "Attacked corrupt indulgence sales; Henry won Faith Defender title.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Attacked corrupt indulgence sales",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Wittenberg",
+                        "gloss": "Attacked corrupt indulgence sales"
+                      },
+                      {
+                        "id": "kt1_1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Henry won Faith Defender title",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Wittenberg",
+                        "gloss": "Henry won Faith Defender title"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Need for Male Tudor Successor",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Catherine of Aragon",
+                    "gloss": "Catherine bore only Princess Mary; Feared dynastic civil war.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Catherine bore only Princess Mary",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Catherine of Aragon",
+                        "gloss": "Catherine bore only Princess Mary"
+                      },
+                      {
+                        "id": "kt1_1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Feared dynastic civil war",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Catherine of Aragon",
+                        "gloss": "Feared dynastic civil war"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Demanded 1527 Papal Annulment",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Anne Boleyn",
+                    "gloss": "Pursued marriage to Anne Boleyn; Cited Leviticus marriage curse.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Pursued marriage to Anne Boleyn",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Anne Boleyn",
+                        "gloss": "Pursued marriage to Anne Boleyn"
+                      },
+                      {
+                        "id": "kt1_1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Cited Leviticus marriage curse",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Anne Boleyn",
+                        "gloss": "Cited Leviticus marriage curse"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Roman Deadlock & Cromwell Laws",
+                "dateChip": "1527–1533",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Thomas Cromwell",
+                "gloss": "With Pope Clement VII captive to Emperor Charles V, Thomas Cromwell used the Reformation Parliament to sever Roman appeals.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1527 Sack of Rome Trapped Pope",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Charles V",
+                    "gloss": "Charles V held Clement VII; Catherine was Emperor’s aunt.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Charles V held Clement VII",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Charles V",
+                        "gloss": "Charles V held Clement VII"
+                      },
+                      {
+                        "id": "kt1_1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Catherine was Emperor’s aunt",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Charles V",
+                        "gloss": "Catherine was Emperor’s aunt"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Cromwell’s Parliamentary Statutes",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Reformation Parliament",
+                    "gloss": "Stopped annates taxes to Rome; 1533 Act banned papal appeals.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Stopped annates taxes to Rome",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Reformation Parliament",
+                        "gloss": "Stopped annates taxes to Rome"
+                      },
+                      {
+                        "id": "kt1_1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "1533 Act banned papal appeals",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Reformation Parliament",
+                        "gloss": "1533 Act banned papal appeals"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Wolsey Fell & Anne Crowned",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Cranmer",
+                    "gloss": "Cranmer voided Aragon marriage; Declared England sovereign realm.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Cranmer voided Aragon marriage",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Cranmer",
+                        "gloss": "Cranmer voided Aragon marriage"
+                      },
+                      {
+                        "id": "kt1_1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Declared England sovereign realm",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Cranmer",
+                        "gloss": "Declared England sovereign realm"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "1534 Supremacy & Monasteries",
+                "dateChip": "1534–1540",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "Act of Supremacy",
+                "gloss": "The 1534 Act of Supremacy made Henry Supreme Head of the Church of England, followed by closing over 800 monasteries.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1534 Act of Royal Supremacy",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Act of Supremacy",
+                    "gloss": "Made Henry Supreme Church Head; Executed Sir Thomas More.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Made Henry Supreme Church Head",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Act of Supremacy",
+                        "gloss": "Made Henry Supreme Church Head"
+                      },
+                      {
+                        "id": "kt1_1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Executed Sir Thomas More",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Act of Supremacy",
+                        "gloss": "Executed Sir Thomas More"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Dissolved Over 800 Monasteries",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "monasteries",
+                    "gloss": "Closed houses from 1536 to 1540; Sold monastic estates to gentry.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Closed houses from 1536 to 1540",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "monasteries",
+                        "gloss": "Closed houses from 1536 to 1540"
+                      },
+                      {
+                        "id": "kt1_1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Sold monastic estates to gentry",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "monasteries",
+                        "gloss": "Sold monastic estates to gentry"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Enriched Crown & Elevated MPs",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "statute",
+                    "gloss": "Ended 1,000 years papal rule; Relied on parliamentary statutes.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Ended 1,000 years papal rule",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "statute",
+                        "gloss": "Ended 1,000 years papal rule"
+                      },
+                      {
+                        "id": "kt1_1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Relied on parliamentary statutes",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "statute",
+                        "gloss": "Relied on parliamentary statutes"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Elizabeth I & The Middle Way",
+            "dateChip": "1558–1588",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Via Media",
+            "q2Chain": "1559 Settlement & Via Media → Northern Earls & 1570 Papal Bull → Babington Plot & Mary Executed",
+            "gloss": "Causal Chain: 1559 Settlement & Via Media → Northern Earls & 1570 Papal Bull → Babington Plot & Mary Executed.",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "1559 Settlement & Via Media",
+                "dateChip": "1558–1559",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Supreme Governor",
+                "gloss": "Inheriting Marian trauma, Elizabeth established her 1559 Protestant Middle Way as Supreme Governor with an English Prayer Book.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Marian Burnings & Puritan Return",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Mary I",
+                    "gloss": "Nearly 300 Protestants burned; Exiled Calvinists urged reform.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Nearly 300 Protestants burned",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Mary I",
+                        "gloss": "Nearly 300 Protestants burned"
+                      },
+                      {
+                        "id": "kt1_2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Exiled Calvinists urged reform",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Mary I",
+                        "gloss": "Exiled Calvinists urged reform"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1559 Supreme Governor Compromise",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Supreme Governor",
+                    "gloss": "Calmed moderate Catholic subjects; Sacked refusing Marian bishops.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Calmed moderate Catholic subjects",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Supreme Governor",
+                        "gloss": "Calmed moderate Catholic subjects"
+                      },
+                      {
+                        "id": "kt1_2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Sacked refusing Marian bishops",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Supreme Governor",
+                        "gloss": "Sacked refusing Marian bishops"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_c3",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1559 Uniformity & 12d Recusancy",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Via Media",
+                    "gloss": "Shared English Common Prayer Book; Avoided windows into men’s souls.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Shared English Common Prayer Book",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Via Media",
+                        "gloss": "Shared English Common Prayer Book"
+                      },
+                      {
+                        "id": "kt1_2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Avoided windows into men’s souls",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Via Media",
+                        "gloss": "Avoided windows into men’s souls"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Northern Earls & 1570 Papal Bull",
+                "dateChip": "1569–1570",
+                "lessonIndex": 1,
+                "stageIndex": 3,
+                "searchTerm": "Regnans in Excelsis",
+                "gloss": "Following the 1569 Northern Earls’ rebellion, Pope Pius V excommunicated Elizabeth in 1570, turning Catholics into suspects.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1569 Northern Earls Rebellion",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Durham Cathedral",
+                    "gloss": "Held Mass in Durham Cathedral; Elizabeth executed 400 rebels.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Held Mass in Durham Cathedral",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Durham Cathedral",
+                        "gloss": "Held Mass in Durham Cathedral"
+                      },
+                      {
+                        "id": "kt1_2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Elizabeth executed 400 rebels",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Durham Cathedral",
+                        "gloss": "Elizabeth executed 400 rebels"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1570 Bull Regnans in Excelsis",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Regnans in Excelsis",
+                    "gloss": "Pope Pius V excommunicated Queen; Released Catholics from allegiance.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Pope Pius V excommunicated Queen",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Regnans in Excelsis",
+                        "gloss": "Pope Pius V excommunicated Queen"
+                      },
+                      {
+                        "id": "kt1_2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Released Catholics from allegiance",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Regnans in Excelsis",
+                        "gloss": "Released Catholics from allegiance"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Cast Loyal Catholics as Traitors",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "traitor",
+                    "gloss": "Fuelled covert assassination plots; Hardened state anti-Catholic laws.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Fuelled covert assassination plots",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "traitor",
+                        "gloss": "Fuelled covert assassination plots"
+                      },
+                      {
+                        "id": "kt1_2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Hardened state anti-Catholic laws",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "traitor",
+                        "gloss": "Hardened state anti-Catholic laws"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Babington Plot & Mary Executed",
+                "dateChip": "1586–1587",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "Babington",
+                "gloss": "Walsingham’s spies broke ciphered beer-barrel letters in the 1586 Babington Plot, leading to Mary Stuart’s execution in 1587.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Walsingham Cracked Beer Ciphers",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Walsingham",
+                    "gloss": "Intercepted 1586 Babington plot; Proved Mary backed assassination.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Intercepted 1586 Babington plot",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Walsingham",
+                        "gloss": "Intercepted 1586 Babington plot"
+                      },
+                      {
+                        "id": "kt1_2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Proved Mary backed assassination",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Walsingham",
+                        "gloss": "Proved Mary backed assassination"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Feb 1587 Fotheringhay Execution",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Fotheringhay",
+                    "gloss": "Elizabeth signed death warrant; Removed Catholic rival claimant.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Elizabeth signed death warrant",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Fotheringhay",
+                        "gloss": "Elizabeth signed death warrant"
+                      },
+                      {
+                        "id": "kt1_2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Removed Catholic rival claimant",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Fotheringhay",
+                        "gloss": "Removed Catholic rival claimant"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Triggered 1588 Spanish Armada",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Armada",
+                    "gloss": "Infuriated Catholic Philip II; Gave papal blessing to invade.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Infuriated Catholic Philip II",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Armada",
+                        "gloss": "Infuriated Catholic Philip II"
+                      },
+                      {
+                        "id": "kt1_2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Gave papal blessing to invade",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Armada",
+                        "gloss": "Gave papal blessing to invade"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Armada & Stuart Crisis",
+        "dateChip": "1588–1689",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "New Model Army",
+        "gloss": "The defeat of the 1588 Spanish Armada, followed by Charles I’s Personal Rule, Civil War, 1649 Regicide, and 1689 Bill of Rights.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Spanish Armada & Naval War",
+            "dateChip": "1585–1588",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Armada",
+            "q2Chain": "Catholic Crusade & Cadiz Raid → Channel Chase & Calais Fireships → Gravelines & Protestant Wind",
+            "gloss": "Causal Chain: Catholic Crusade & Cadiz Raid → Channel Chase & Calais Fireships → Gravelines & Protestant Wind.",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Catholic Crusade & Cadiz Raid",
+                "dateChip": "1585–1587",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "Cadiz",
+                "gloss": "Provoked by Dutch aid, piracy, and Mary’s execution, Philip II’s fleet suffered a year’s delay from Drake’s 1587 Cadiz raid.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Dutch Aid, Drake & Mary’s Death",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Philip II",
+                    "gloss": "Backed Dutch Protestant rebels; Drake raided Caribbean silver.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Backed Dutch Protestant rebels",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Philip II",
+                        "gloss": "Backed Dutch Protestant rebels"
+                      },
+                      {
+                        "id": "kt2_3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Drake raided Caribbean silver",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Philip II",
+                        "gloss": "Drake raided Caribbean silver"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "April 1587 Raid on Cadiz",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Cadiz",
+                    "gloss": "Destroyed thirty Spanish warships; Burned seasoned barrel staves.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Destroyed thirty Spanish warships",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Cadiz",
+                        "gloss": "Destroyed thirty Spanish warships"
+                      },
+                      {
+                        "id": "kt2_3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Burned seasoned barrel staves",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Cadiz",
+                        "gloss": "Burned seasoned barrel staves"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Delayed Fleet & Spoiled Water",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "barrels",
+                    "gloss": "Held Armada back one full year; Green casks rotted ship rations.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Held Armada back one full year",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "barrels",
+                        "gloss": "Held Armada back one full year"
+                      },
+                      {
+                        "id": "kt2_3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Green casks rotted ship rations",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "barrels",
+                        "gloss": "Green casks rotted ship rations"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Channel Chase & Calais Fireships",
+                "dateChip": "July–Aug 1588",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "fireship",
+                "gloss": "English race-built galleons harassed Medina Sidonia’s 130-ship crescent before eight midnight fireships scattered it off Calais.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "130-Ship Crescent vs Culverins",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "culverin",
+                    "gloss": "Hawkins built fast galleons; Long-range brass culverin guns.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Hawkins built fast galleons",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "culverin",
+                        "gloss": "Hawkins built fast galleons"
+                      },
+                      {
+                        "id": "kt2_3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Long-range brass culverin guns",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "culverin",
+                        "gloss": "Long-range brass culverin guns"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Eight Midnight Calais Fireships",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Calais",
+                    "gloss": "Packed with pitch and gunpowder; Struck vulnerable Calais anchorage.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Packed with pitch and gunpowder",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Calais",
+                        "gloss": "Packed with pitch and gunpowder"
+                      },
+                      {
+                        "id": "kt2_3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Struck vulnerable Calais anchorage",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Calais",
+                        "gloss": "Struck vulnerable Calais anchorage"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Cut Cables & Broke Crescent",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "crescent",
+                    "gloss": "Spanish scattered into North Sea; Prevented Parma Flanders linkup.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Spanish scattered into North Sea",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "crescent",
+                        "gloss": "Spanish scattered into North Sea"
+                      },
+                      {
+                        "id": "kt2_3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Prevented Parma Flanders linkup",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "crescent",
+                        "gloss": "Prevented Parma Flanders linkup"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Gravelines & Protestant Wind",
+                "dateChip": "Aug–Sept 1588",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "Gravelines",
+                "gloss": "Battered at Gravelines and driven around Scotland and Ireland by fierce Atlantic storms, only 67 Spanish ships returned.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Close-Range Gravelines Broadsides",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Gravelines",
+                    "gloss": "Smashed scattered wooden hulls; Drove battered fleet northward.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Smashed scattered wooden hulls",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Gravelines",
+                        "gloss": "Smashed scattered wooden hulls"
+                      },
+                      {
+                        "id": "kt2_3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Drove battered fleet northward",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Gravelines",
+                        "gloss": "Drove battered fleet northward"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Atlantic Gales & Irish Wrecks",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Irish rocks",
+                    "gloss": "Storms wrecked dozens on rocks; Only 67 damaged ships returned.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Storms wrecked dozens on rocks",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Irish rocks",
+                        "gloss": "Storms wrecked dozens on rocks"
+                      },
+                      {
+                        "id": "kt2_3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Only 67 damaged ships returned",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Irish rocks",
+                        "gloss": "Only 67 damaged ships returned"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Cemented Naval Protestant Pride",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "providence",
+                    "gloss": "Struck God blew Armada medal; Secured English independence.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Struck God blew Armada medal",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "providence",
+                        "gloss": "Struck God blew Armada medal"
+                      },
+                      {
+                        "id": "kt2_3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Secured English independence",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "providence",
+                        "gloss": "Secured English independence"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Civil War, Regicide & 1689",
+            "dateChip": "1629–1689",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Charles I",
+            "q2Chain": "Personal Rule & Five MPs Raid → Naseby & Regicide of Charles I → Glorious Revolution & 1689 Bill",
+            "gloss": "Causal Chain: Personal Rule & Five MPs Raid → Naseby & Regicide of Charles I → Glorious Revolution & 1689 Bill.",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Personal Rule & Five MPs Raid",
+                "dateChip": "1629–1642",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Ship Money",
+                "gloss": "Charles I’s eleven-year Personal Rule, inland Ship Money, and armed 1642 raid on Five MPs plunged England into civil war.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "11-Year Rule & Ship Money Tax",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Ship Money",
+                    "gloss": "Ruled 1629–40 without Parliament; John Hampden refused inland tax.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Ruled 1629–40 without Parliament",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Ship Money",
+                        "gloss": "Ruled 1629–40 without Parliament"
+                      },
+                      {
+                        "id": "kt2_4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "John Hampden refused inland tax",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Ship Money",
+                        "gloss": "John Hampden refused inland tax"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "4 Jan 1642 Raid on Five MPs",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Five MPs",
+                    "gloss": "400 armed guards entered Commons; Five MPs fled by river boat.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "400 armed guards entered Commons",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Five MPs",
+                        "gloss": "400 armed guards entered Commons"
+                      },
+                      {
+                        "id": "kt2_4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Five MPs fled by river boat",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Five MPs",
+                        "gloss": "Five MPs fled by river boat"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Triggered Aug 1642 Civil War",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Nottingham",
+                    "gloss": "Charles fled capital to north; Raised royal flag at Nottingham.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Charles fled capital to north",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Nottingham",
+                        "gloss": "Charles fled capital to north"
+                      },
+                      {
+                        "id": "kt2_4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Raised royal flag at Nottingham",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Nottingham",
+                        "gloss": "Raised royal flag at Nottingham"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Naseby & Regicide of Charles I",
+                "dateChip": "1645–1649",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Naseby",
+                "gloss": "Defeated by the New Model Army at Naseby in 1645, Charles I was tried after Pride’s Purge and beheaded in January 1649.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "June 1645 New Model Naseby Win",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "New Model Army",
+                    "gloss": "Merit-promoted paid redcoat army; Fairfax and Cromwell routed King.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Merit-promoted paid redcoat army",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "New Model Army",
+                        "gloss": "Merit-promoted paid redcoat army"
+                      },
+                      {
+                        "id": "kt2_4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Fairfax and Cromwell routed King",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "New Model Army",
+                        "gloss": "Fairfax and Cromwell routed King"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Pride’s Purge & Treason Trial",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Pride",
+                    "gloss": "Army expelled moderate MPs; Rump tried Charles for treason.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Army expelled moderate MPs",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Pride",
+                        "gloss": "Army expelled moderate MPs"
+                      },
+                      {
+                        "id": "kt2_4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Rump tried Charles for treason",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Pride",
+                        "gloss": "Rump tried Charles for treason"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 30 Jan 1649 Whitehall Regicide",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Whitehall",
+                    "gloss": "Publicly beheaded Charles I; Established republican rule.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Publicly beheaded Charles I",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Whitehall",
+                        "gloss": "Publicly beheaded Charles I"
+                      },
+                      {
+                        "id": "kt2_4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Established republican rule",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Whitehall",
+                        "gloss": "Established republican rule"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Glorious Revolution & 1689 Bill",
+                "dateChip": "1688–1689",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Bill of Rights",
+                "gloss": "After Catholic James II fled in 1688, William and Mary accepted the 1689 Bill of Rights, binding monarchy under Parliament.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1688 Flight of King James II",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "William of Orange",
+                    "gloss": "Dutch army landed at Torbay; Catholic James II fled to France.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Dutch army landed at Torbay",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "William of Orange",
+                        "gloss": "Dutch army landed at Torbay"
+                      },
+                      {
+                        "id": "kt2_4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Catholic James II fled to France",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "William of Orange",
+                        "gloss": "Catholic James II fled to France"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1689 Statutory Bill of Rights",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Bill of Rights",
+                    "gloss": "Crowned William III and Mary II; Barred taxes without MP votes.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Crowned William III and Mary II",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Bill of Rights",
+                        "gloss": "Crowned William III and Mary II"
+                      },
+                      {
+                        "id": "kt2_4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Barred taxes without MP votes",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Bill of Rights",
+                        "gloss": "Barred taxes without MP votes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Forged Constitutional Monarchy",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "constitutional",
+                    "gloss": "Stopped kings cancelling statutes; Bound Crown permanently to law.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Stopped kings cancelling statutes",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "constitutional",
+                        "gloss": "Stopped kings cancelling statutes"
+                      },
+                      {
+                        "id": "kt2_4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Bound Crown permanently to law",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "constitutional",
+                        "gloss": "Bound Crown permanently to law"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: Shifting Sovereignty",
+        "dateChip": "1517–1689",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Parliamentary Supremacy",
+        "gloss": "Evaluating which turning point across 1517–1689 shifted supreme power most decisively from absolute monarchs to Parliament.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Shifting Sovereign Power",
+            "dateChip": "1517–1689",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "King-in-Parliament",
+            "q2Chain": "Tudor King-in-Parliament → Stuart Absolutism & Regicide → 1689 Parliamentary Supremacy",
+            "gloss": "Causal Chain: Tudor King-in-Parliament → Stuart Absolutism & Regicide → 1689 Parliamentary Supremacy.",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Tudor King-in-Parliament",
+                "dateChip": "1517–1603",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "King-in-Parliament",
+                "gloss": "Henry VIII and Elizabeth I used parliamentary statutes for religious change, elevating MPs into legislative partners.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Reformation Passed by Statute",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Reformation Parliament",
+                    "gloss": "Ended Roman power through MPs; Monastic lands bound local gentry.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Ended Roman power through MPs",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Reformation Parliament",
+                        "gloss": "Ended Roman power through MPs"
+                      },
+                      {
+                        "id": "kt3_5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Monastic lands bound local gentry",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Reformation Parliament",
+                        "gloss": "Monastic lands bound local gentry"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c2",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Elizabethan Patriotic Unity",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Armada victory",
+                    "gloss": "1559 Settlement calmed divisions; 1588 Armada fused faith and nation.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "1559 Settlement calmed divisions",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Armada victory",
+                        "gloss": "1559 Settlement calmed divisions"
+                      },
+                      {
+                        "id": "kt3_5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "1588 Armada fused faith and nation",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Armada victory",
+                        "gloss": "1588 Armada fused faith and nation"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Created King-in-Parliament",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "parliamentary sovereignty",
+                    "gloss": "Religious shifts needed MP votes; Grew Commons institutional confidence.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Religious shifts needed MP votes",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "parliamentary sovereignty",
+                        "gloss": "Religious shifts needed MP votes"
+                      },
+                      {
+                        "id": "kt3_5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Grew Commons institutional confidence",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "parliamentary sovereignty",
+                        "gloss": "Grew Commons institutional confidence"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Stuart Absolutism & Regicide",
+                "dateChip": "1603–1649",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Divine Right",
+                "gloss": "Stuart Divine Right claims shattered Tudor partnership, culminating in Naseby, Pride’s Purge, and the 1649 execution of Charles I.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Divine Right & Scottish Revolt",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Divine Right",
+                    "gloss": "Claimed kings answered to God; 1640 Scots war broke finances.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Claimed kings answered to God",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Divine Right",
+                        "gloss": "Claimed kings answered to God"
+                      },
+                      {
+                        "id": "kt3_5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "1640 Scots war broke finances",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Divine Right",
+                        "gloss": "1640 Scots war broke finances"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1649 Judicial Regicide Shock",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Commonwealth",
+                    "gloss": "Abolished monarchy and Lords; Created republican Commonwealth.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Abolished monarchy and Lords",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Commonwealth",
+                        "gloss": "Abolished monarchy and Lords"
+                      },
+                      {
+                        "id": "kt3_5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Created republican Commonwealth",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Commonwealth",
+                        "gloss": "Created republican Commonwealth"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_c3",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Shattered Royal Inviolability",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "precedent",
+                    "gloss": "Held anointed king to treason law; Proved power came from people.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Held anointed king to treason law",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "precedent",
+                        "gloss": "Held anointed king to treason law"
+                      },
+                      {
+                        "id": "kt3_5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Proved power came from people",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "precedent",
+                        "gloss": "Proved power came from people"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "1689 Parliamentary Supremacy",
+                "dateChip": "1688–1689",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Bill of Rights",
+                "gloss": "The 1689 Bill of Rights permanently ended absolute royal prerogative, enthroning supreme parliamentary authority.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1689 Binding Statutory Contract",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Bill of Rights",
+                    "gloss": "Removed royal veto over statutes; Banned unvoted royal taxation.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Removed royal veto over statutes",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Bill of Rights",
+                        "gloss": "Removed royal veto over statutes"
+                      },
+                      {
+                        "id": "kt3_5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Banned unvoted royal taxation",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Bill of Rights",
+                        "gloss": "Banned unvoted royal taxation"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c2",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Completed 170-Year Power Shift",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "King-in-Parliament",
+                    "gloss": "Ended absolute divine-right rule; Enthroned parliamentary supremacy.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Ended absolute divine-right rule",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "King-in-Parliament",
+                        "gloss": "Ended absolute divine-right rule"
+                      },
+                      {
+                        "id": "kt3_5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Enthroned parliamentary supremacy",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "King-in-Parliament",
+                        "gloss": "Enthroned parliamentary supremacy"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_c3",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "1649 Blade vs 1689 Statute",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "constitutional monarchy",
+                    "gloss": "1649 republic proved temporary; 1689 law permanently bound kings.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "1649 republic proved temporary",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "constitutional monarchy",
+                        "gloss": "1649 republic proved temporary"
+                      },
+                      {
+                        "id": "kt3_5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "1689 law permanently bound kings",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "constitutional monarchy",
+                        "gloss": "1689 law permanently bound kings"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

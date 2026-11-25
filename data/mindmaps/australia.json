@@ -1,0 +1,2110 @@
+{
+  "unitId": "australia",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "The History of Australia: First Nations, Colonisation & Resistance (1770–1901)",
+  "examDateBoundary": "1770–1901",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Australia, 1770–1901",
+    "subLabel": "KS3 History",
+    "dateChip": "1770–1901",
+    "gloss": "First Nations custodianship, British colonisation, frontier resistance, the Gold Rush, and the long struggle from terra nullius to Mabo.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Claim & Penal Colony",
+        "dateChip": "1768–1792",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Terra Nullius",
+        "gloss": "Cook’s Pacific voyage with Tupaia, the British claim of terra nullius, and the founding of the Sydney Cove convict colony.",
+        "children": [
+          {
+            "id": "kt1_l1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Cook, Tupaia & Terra Nullius",
+            "dateChip": "1768–1770",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Tupaia",
+            "gloss": "Secret Admiralty orders, Tupaia’s star navigation, the Gweagal encounter at Botany Bay, and the legal fiction of terra nullius.",
+            "children": [
+              {
+                "id": "kt1_l1_s1",
+                "tier": 3,
+                "label": "Cook’s Orders & Tupaia’s Chart",
+                "dateChip": "1768–1770",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "Tupaia",
+                "gloss": "Cook carried secret Admiralty orders for Terra Australis while Tahitian high priest Tupaia guided HMS Endeavour across the Pacific.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Secret Orders for Southern Land",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Endeavour",
+                    "gloss": "Funded to observe Venus transit; Ordered to claim Terra Australis.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Funded to observe Venus transit",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Endeavour",
+                        "gloss": "Funded to observe Venus transit"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Ordered to claim Terra Australis",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Endeavour",
+                        "gloss": "Ordered to claim Terra Australis"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Tupaia Mapped 130 Pacific Islands",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Tupaia",
+                    "gloss": "Read stars, swells, bird paths; Translated for Māori in NZ.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Read stars, swells, bird paths",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Tupaia",
+                        "gloss": "Read stars, swells, bird paths"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Translated for Māori in NZ",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Tupaia",
+                        "gloss": "Translated for Māori in NZ"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Guided Endeavour to East Coast",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Botany Bay",
+                    "gloss": "Reached Botany Bay April 1770; Surveyed uncharted Pacific safely.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Reached Botany Bay April 1770",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Botany Bay",
+                        "gloss": "Reached Botany Bay April 1770"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Surveyed uncharted Pacific safely",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Botany Bay",
+                        "gloss": "Surveyed uncharted Pacific safely"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Polynesian Skill Enabled Voyage",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Polynesian",
+                    "gloss": "European charts lacked Pacific routes; Indigenous priest proved indispensable.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c4_t1",
+                        "tier": 5,
+                        "label": "European charts lacked Pacific routes",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Polynesian",
+                        "gloss": "European charts lacked Pacific routes"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Indigenous priest proved indispensable",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Polynesian",
+                        "gloss": "Indigenous priest proved indispensable"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s2",
+                "tier": 3,
+                "label": "Botany Bay & Possession Island",
+                "dateChip": "Apr–Aug 1770",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Possession Island",
+                "gloss": "Gweagal warriors defended Botany Bay against armed landing parties before Cook claimed eastern Australia on Possession Island.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Gweagal Warriors Defended Shore",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Gweagal",
+                    "gloss": "Two Dharawal men shouted warnings; Cook’s musket wounded warrior’s leg.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Two Dharawal men shouted warnings",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Gweagal",
+                        "gloss": "Two Dharawal men shouted warnings"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Cook’s musket wounded warrior’s leg",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Gweagal",
+                        "gloss": "Cook’s musket wounded warrior’s leg"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Union Jack on Possession Island",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Possession Island",
+                    "gloss": "Landed off Cape York August; Claimed east coast for George III.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Landed off Cape York August",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Possession Island",
+                        "gloss": "Landed off Cape York August"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Claimed east coast for George III",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Possession Island",
+                        "gloss": "Claimed east coast for George III"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Seized Coast Without Consent",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Admiralty instructions",
+                    "gloss": "Broke explicit Admiralty consent rule; Ignored clear Indigenous habitation.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Broke explicit Admiralty consent rule",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Admiralty instructions",
+                        "gloss": "Broke explicit Admiralty consent rule"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Ignored clear Indigenous habitation",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Admiralty instructions",
+                        "gloss": "Ignored clear Indigenous habitation"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Planted Flag Through Armed Force",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Botany Bay",
+                    "gloss": "Treated spear protocol as aggression; Set violent pattern of contact.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Treated spear protocol as aggression",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Botany Bay",
+                        "gloss": "Treated spear protocol as aggression"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Set violent pattern of contact",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Botany Bay",
+                        "gloss": "Set violent pattern of contact"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s3",
+                "tier": 3,
+                "label": "Legal Fiction of Terra Nullius",
+                "dateChip": "1770–1788",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "terra nullius",
+                "gloss": "British jurists declared Australia terra nullius (\"nobody’s land\"), signing zero treaties and stripping First Nations of land rights.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "European Plough & Fence Law",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "terra nullius",
+                    "gloss": "Cook called clans non-farming nomads; Law required fences and towns.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Cook called clans non-farming nomads",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "terra nullius",
+                        "gloss": "Cook called clans non-farming nomads"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Law required fences and towns",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "terra nullius",
+                        "gloss": "Law required fences and towns"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Declared Continent Nobody’s Land",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "terra nullius",
+                    "gloss": "Recognised zero Indigenous ownership; Signed no treaties with elders.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Recognised zero Indigenous ownership",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "terra nullius",
+                        "gloss": "Recognised zero Indigenous ownership"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Signed no treaties with elders",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "terra nullius",
+                        "gloss": "Signed no treaties with elders"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Cleared Legal Path for Penal Fleet",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "dispossession",
+                    "gloss": "Justified 1788 British settlement; Stripped clans of ancestral sovereignty.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Justified 1788 British settlement",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "dispossession",
+                        "gloss": "Justified 1788 British settlement"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Stripped clans of ancestral sovereignty",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "dispossession",
+                        "gloss": "Stripped clans of ancestral sovereignty"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Two Centuries of Dispossession",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "sovereignty",
+                    "gloss": "Denied basic legal land rights; Stood in law until 1992.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Denied basic legal land rights",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "sovereignty",
+                        "gloss": "Denied basic legal land rights"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Stood in law until 1992",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "sovereignty",
+                        "gloss": "Stood in law until 1992"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_l2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. First Fleet & Sydney Cove",
+            "dateChip": "1783–1792",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "First Fleet",
+            "gloss": "American independence overcrowded Thames prison hulks, prompting Arthur Phillip’s First Fleet and the harsh struggle at Sydney Cove.",
+            "children": [
+              {
+                "id": "kt1_l2_s1",
+                "tier": 3,
+                "label": "Thames Hulks & First Fleet",
+                "dateChip": "1783–1788",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Thames hulks",
+                "gloss": "Losing America closed Britain’s convict outlet, filling rotting Thames hulks until Pitt dispatched Phillip’s 11-ship First Fleet.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1783 American Loss & Hulks Crisis",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Bloody Code",
+                    "gloss": "Closed American plantation convict route; Typhus raged inside Thames hulks.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Closed American plantation convict route",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Bloody Code",
+                        "gloss": "Closed American plantation convict route"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Typhus raged inside Thames hulks",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Bloody Code",
+                        "gloss": "Typhus raged inside Thames hulks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Phillip Sailed 11-Ship Convoy",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Arthur Phillip",
+                    "gloss": "Over 750 convicts, 250 marines; Sailed 15,000 miles eight months.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Over 750 convicts, 250 marines",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Arthur Phillip",
+                        "gloss": "Over 750 convicts, 250 marines"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Sailed 15,000 miles eight months",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Arthur Phillip",
+                        "gloss": "Sailed 15,000 miles eight months"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Reached Botany Bay With Low Loss",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "hygiene",
+                    "gloss": "Clean water and ship ventilation; Fewer than fifty convicts died.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Clean water and ship ventilation",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "hygiene",
+                        "gloss": "Clean water and ship ventilation"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Fewer than fifty convicts died",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "hygiene",
+                        "gloss": "Fewer than fifty convicts died"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Exported Britain’s Prison Crisis",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "William Pitt",
+                    "gloss": "Pitt chose distant Botany Bay; Built empire through penal labour.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Pitt chose distant Botany Bay",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "William Pitt",
+                        "gloss": "Pitt chose distant Botany Bay"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Built empire through penal labour",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "William Pitt",
+                        "gloss": "Built empire through penal labour"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s2",
+                "tier": 3,
+                "label": "Sydney Cove & Starvation Years",
+                "dateChip": "1788–1790",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Sydney Cove",
+                "gloss": "Phillip rejected swampy Botany Bay for Port Jackson, but sandy soil, snapped hoes, and shipwreck pushed Sydney near starvation.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Moved Settlement to Sydney Cove",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Port Jackson",
+                    "gloss": "Rejected swampy shallow Botany Bay; Raised flag 26 January 1788.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Rejected swampy shallow Botany Bay",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Port Jackson",
+                        "gloss": "Rejected swampy shallow Botany Bay"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Raised flag 26 January 1788",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Port Jackson",
+                        "gloss": "Raised flag 26 January 1788"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Sandy Soil & Guardian Shipwreck",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "HMS Guardian",
+                    "gloss": "Urban convicts lacked farm skills; HMS Guardian struck Antarctic iceberg.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Urban convicts lacked farm skills",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "HMS Guardian",
+                        "gloss": "Urban convicts lacked farm skills"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "HMS Guardian struck Antarctic iceberg",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "HMS Guardian",
+                        "gloss": "HMS Guardian struck Antarctic iceberg"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Ration Cuts & Inland Farm Push",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Norfolk Island",
+                    "gloss": "Phillip slashed rations to survive; Sent convicts to Norfolk Island.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Phillip slashed rations to survive",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Norfolk Island",
+                        "gloss": "Phillip slashed rations to survive"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Sent convicts to Norfolk Island",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Norfolk Island",
+                        "gloss": "Sent convicts to Norfolk Island"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Hardship Threatened Colony Survival",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "farming hoes",
+                    "gloss": "Tools snapped on eucalyptus roots; English seed failed in sand.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Tools snapped on eucalyptus roots",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "farming hoes",
+                        "gloss": "Tools snapped on eucalyptus roots"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c4_t2",
+                        "tier": 5,
+                        "label": "English seed failed in sand",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "farming hoes",
+                        "gloss": "English seed failed in sand"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s3",
+                "tier": 3,
+                "label": "Convict Lash & Emancipist Farms",
+                "dateChip": "1788–1792",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "emancipists",
+                "gloss": "Phillip combined brutal cat-o’-nine-tails discipline with 30-acre land grants for freed emancipists such as James Ruse.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Open-Air Prison & Brutal Lash",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "cat-o'-nine-tails",
+                    "gloss": "Quarried stone dawn to dusk; Flogged with cat-o’-nine-tails lash.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Quarried stone dawn to dusk",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "cat-o'-nine-tails",
+                        "gloss": "Quarried stone dawn to dusk"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Flogged with cat-o’-nine-tails lash",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "cat-o'-nine-tails",
+                        "gloss": "Flogged with cat-o’-nine-tails lash"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "30-Acre Grants for Emancipists",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "James Ruse",
+                    "gloss": "Rewarded convicts finishing sentences; James Ruse grew Rose Hill wheat.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Rewarded convicts finishing sentences",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "James Ruse",
+                        "gloss": "Rewarded convicts finishing sentences"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "James Ruse grew Rose Hill wheat",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "James Ruse",
+                        "gloss": "James Ruse grew Rose Hill wheat"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Expanded Farms Into Eora Country",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "self-sufficiency",
+                    "gloss": "Secured colonial food supply; Cleared bush along river valleys.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Secured colonial food supply",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "self-sufficiency",
+                        "gloss": "Secured colonial food supply"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Cleared bush along river valleys",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "self-sufficiency",
+                        "gloss": "Cleared bush along river valleys"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c4",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Brutal Jail vs Emancipist Chance",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "emancipists",
+                    "gloss": "Harsh floggings enforced forced labour; Land grants built settler society.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Harsh floggings enforced forced labour",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "emancipists",
+                        "gloss": "Harsh floggings enforced forced labour"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Land grants built settler society",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "emancipists",
+                        "gloss": "Land grants built settler society"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Frontier Wars & Wool",
+        "dateChip": "1788–1840",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Pemulwuy",
+        "gloss": "Smallpox devastation, Bennelong’s diplomacy, Pemulwuy’s guerrilla war, Tasmania’s Black War, and the Myall Creek trial.",
+        "children": [
+          {
+            "id": "kt2_l3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Smallpox, Bennelong & Pemulwuy",
+            "dateChip": "1788–1802",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Pemulwuy",
+            "gloss": "65,000 years of First Nations custodianship collided with the 1789 smallpox epidemic, Bennelong’s captivity, and Pemulwuy’s resistance.",
+            "children": [
+              {
+                "id": "kt2_l3_s1",
+                "tier": 3,
+                "label": "65,000 Years & 1789 Smallpox",
+                "dateChip": "Pre-1788–1789",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "smallpox",
+                "gloss": "Over 250 language nations managed country for 65,000 years before the April 1789 gal-galla smallpox outbreak killed 50–70% of Eora.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "250+ Nations & Fire-Stick Care",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Songlines",
+                    "gloss": "65,000 years continuous civilisation; Songlines and controlled grass burning.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "65,000 years continuous civilisation",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Songlines",
+                        "gloss": "65,000 years continuous civilisation"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Songlines and controlled grass burning",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Songlines",
+                        "gloss": "Songlines and controlled grass burning"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1789 Smallpox Killed 50–70% Eora",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "gal-galla",
+                    "gloss": "Zero natural immunity to virus; Lost elders and sacred law.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Zero natural immunity to virus",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "gal-galla",
+                        "gloss": "Zero natural immunity to virus"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Lost elders and sacred law",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "gal-galla",
+                        "gloss": "Lost elders and sacred law"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Weakened Clans as Settlers Spread",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "social cohesion",
+                    "gloss": "Shattered coastal clan social bonds; Eased British seizure of creeks.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Shattered coastal clan social bonds",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "social cohesion",
+                        "gloss": "Shattered coastal clan social bonds"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Eased British seizure of creeks",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "social cohesion",
+                        "gloss": "Eased British seizure of creeks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c4",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Amity Myth vs Frontier Catastrophe",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "smallpox",
+                    "gloss": "Old histories stressed peaceful contact; Evidence shows disease and war.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Old histories stressed peaceful contact",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "smallpox",
+                        "gloss": "Old histories stressed peaceful contact"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Evidence shows disease and war",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "smallpox",
+                        "gloss": "Evidence shows disease and war"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l3_s2",
+                "tier": 3,
+                "label": "Bennelong’s Tragic Diplomacy",
+                "dateChip": "1789–1795",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Bennelong",
+                "gloss": "Kidnapped Wangal warrior Bennelong mediated between Eora clans and Governor Phillip and visited London, ending trapped between worlds.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Phillip Kidnapped Wangal Mediator",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Bennelong",
+                    "gloss": "Seized by marines late 1789; Learned English at Government House.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Seized by marines late 1789",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Bennelong",
+                        "gloss": "Seized by marines late 1789"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Learned English at Government House",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Bennelong",
+                        "gloss": "Learned English at Government House"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "London Voyage & Met George III",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "London voyage",
+                    "gloss": "Sailed with Phillip in 1792; Negotiated early Sydney clan meetings.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Sailed with Phillip in 1792",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "London voyage",
+                        "gloss": "Sailed with Phillip in 1792"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Negotiated early Sydney clan meetings",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "London voyage",
+                        "gloss": "Negotiated early Sydney clan meetings"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Diplomacy Collapsed Over Land Theft",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "trapped between two worlds",
+                    "gloss": "Returned alienated from both sides; Settler farms sparked armed resistance.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Returned alienated from both sides",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "trapped between two worlds",
+                        "gloss": "Returned alienated from both sides"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Settler farms sparked armed resistance",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "trapped between two worlds",
+                        "gloss": "Settler farms sparked armed resistance"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Symbolised Tragic Cultural Divide",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Bennelong",
+                    "gloss": "Sought peace through personal diplomacy; Crushed by relentless land seizure.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Sought peace through personal diplomacy",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Bennelong",
+                        "gloss": "Sought peace through personal diplomacy"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Crushed by relentless land seizure",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Bennelong",
+                        "gloss": "Crushed by relentless land seizure"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l3_s3",
+                "tier": 3,
+                "label": "Pemulwuy & Hawkesbury War",
+                "dateChip": "1790–1802",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "Pemulwuy",
+                "gloss": "Bidjigal warrior Pemulwuy led guerrilla raids and fought at Parramatta (1797) until Governor King’s shoot-on-sight orders ended in ambush.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Pemulwuy’s Guerrilla Raids & 1797",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Battle of Parramatta",
+                    "gloss": "Burned settler farms and grain; Survived wounds after Parramatta raid.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Burned settler farms and grain",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Battle of Parramatta",
+                        "gloss": "Burned settler farms and grain"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Survived wounds after Parramatta raid",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Battle of Parramatta",
+                        "gloss": "Survived wounds after Parramatta raid"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Hawkesbury War & Shoot-on-Sight",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Hawkesbury River",
+                    "gloss": "Farms seized Dharug yam beds; Governor King outlawed Indigenous men.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Farms seized Dharug yam beds",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Hawkesbury River",
+                        "gloss": "Farms seized Dharug yam beds"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Governor King outlawed Indigenous men",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Hawkesbury River",
+                        "gloss": "Governor King outlawed Indigenous men"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1802 Ambush Ended First War",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Pemulwuy",
+                    "gloss": "Pemulwuy killed in 1802 ambush; Severed head shipped to London.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Pemulwuy killed in 1802 ambush",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Pemulwuy",
+                        "gloss": "Pemulwuy killed in 1802 ambush"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Severed head shipped to London",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Pemulwuy",
+                        "gloss": "Severed head shipped to London"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Proved Organised Armed Resistance",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "Bidjigal",
+                    "gloss": "United clans across Sydney Basin; Refuted myth of passive surrender.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c4_t1",
+                        "tier": 5,
+                        "label": "United clans across Sydney Basin",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Bidjigal",
+                        "gloss": "United clans across Sydney Basin"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Refuted myth of passive surrender",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "Bidjigal",
+                        "gloss": "Refuted myth of passive surrender"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_l4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Black War & Myall Creek",
+            "dateChip": "1803–1840",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Myall Creek",
+            "gloss": "Invasion of Van Diemen’s Land, Governor Arthur’s Black Line, Truganini’s exile, mainland Merino wool expansion, and Myall Creek.",
+            "children": [
+              {
+                "id": "kt2_l4_s1",
+                "tier": 3,
+                "label": "Tasmania’s Black War & Black Line",
+                "dateChip": "1803–1830",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Black Line",
+                "gloss": "Risdon Cove killings and sheep expansion sparked Palawa guerrilla resistance, Governor Arthur’s 1828 martial law, and the failed Black Line.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Risdon Cove & Midlands Sheep Grab",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Risdon Cove",
+                    "gloss": "1804 cannon fired on Palawa; Pastoralists seized kangaroo hunting land.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "1804 cannon fired on Palawa",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Risdon Cove",
+                        "gloss": "1804 cannon fired on Palawa"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Pastoralists seized kangaroo hunting land",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Risdon Cove",
+                        "gloss": "Pastoralists seized kangaroo hunting land"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1828 Martial Law & Black Line",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Black Line",
+                    "gloss": "2,200 men swept island south; £30,000 drive caught two people.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "2,200 men swept island south",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Black Line",
+                        "gloss": "2,200 men swept island south"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "£30,000 drive caught two people",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Black Line",
+                        "gloss": "£30,000 drive caught two people"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Turned to Robinson’s Exile Plan",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Tasman Peninsula",
+                    "gloss": "Palawa slipped past army cordon; Military failure forced diplomatic ploy.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Palawa slipped past army cordon",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Tasman Peninsula",
+                        "gloss": "Palawa slipped past army cordon"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Military failure forced diplomatic ploy",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Tasman Peninsula",
+                        "gloss": "Military failure forced diplomatic ploy"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Deadliest Colonial Frontier Conflict",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Governor Arthur",
+                    "gloss": "Allowed shooting Palawa on sight; Devastated island’s 6,000 Indigenous people.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Allowed shooting Palawa on sight",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Governor Arthur",
+                        "gloss": "Allowed shooting Palawa on sight"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Devastated island’s 6,000 Indigenous people",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Governor Arthur",
+                        "gloss": "Devastated island’s 6,000 Indigenous people"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s2",
+                "tier": 3,
+                "label": "Truganini & Wybalenna Exile",
+                "dateChip": "1830–1835",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Truganini",
+                "gloss": "Missionary George Augustus Robinson used Truganini’s diplomacy to persuade surviving Palawa into tragic exile on Flinders Island.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Truganini’s Peacemaking Diplomacy",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Truganini",
+                    "gloss": "Enlisted by missionary George Robinson; Sought safety for surviving clans.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Enlisted by missionary George Robinson",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Truganini",
+                        "gloss": "Enlisted by missionary George Robinson"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Sought safety for surviving clans",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Truganini",
+                        "gloss": "Sought safety for surviving clans"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "200 Exiled to Flinders Island",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Wybalenna",
+                    "gloss": "Betrayed promise of mainland return; Held in damp Wybalenna camp.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Betrayed promise of mainland return",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Wybalenna",
+                        "gloss": "Betrayed promise of mainland return"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Held in damp Wybalenna camp",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Wybalenna",
+                        "gloss": "Held in damp Wybalenna camp"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Over 150 Died Within Decade",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Flinders Island",
+                    "gloss": "Struck by sickness and grief; Near-destruction of Palawa communities.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Struck by sickness and grief",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Flinders Island",
+                        "gloss": "Struck by sickness and grief"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Near-destruction of Palawa communities",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Flinders Island",
+                        "gloss": "Near-destruction of Palawa communities"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Enduring Symbol of Palawa Survival",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Nuenonne",
+                    "gloss": "Truganini outlived broken British pledges; Exposed lethality of forced removal.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Truganini outlived broken British pledges",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Nuenonne",
+                        "gloss": "Truganini outlived broken British pledges"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Exposed lethality of forced removal",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Nuenonne",
+                        "gloss": "Exposed lethality of forced removal"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s3",
+                "tier": 3,
+                "label": "Merino Boom & Myall Creek Trial",
+                "dateChip": "1820–1838",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Myall Creek",
+                "gloss": "Mainland squatters drove millions of Merino sheep across Indigenous country, culminating in the 1838 Myall Creek massacre and hangings.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Yorkshire Wool & Squatter Flocks",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Merino sheep",
+                    "gloss": "Millions of Merino crossed mountains; Sheep ruined native yam fields.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Millions of Merino crossed mountains",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Merino sheep",
+                        "gloss": "Millions of Merino crossed mountains"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Sheep ruined native yam fields",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Merino sheep",
+                        "gloss": "Sheep ruined native yam fields"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "28 Wirrayaraay Murdered June 1838",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Myall Creek Massacre",
+                    "gloss": "Eleven white stockmen attacked camp; Governor Gipps ordered two trials.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Eleven white stockmen attacked camp",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Myall Creek Massacre",
+                        "gloss": "Eleven white stockmen attacked camp"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Governor Gipps ordered two trials",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Myall Creek Massacre",
+                        "gloss": "Governor Gipps ordered two trials"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Seven Hanged; Settler Code of Silence",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "George Gipps",
+                    "gloss": "Seven white stockmen hanged Sydney; Future massacres hidden in secrecy.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Seven white stockmen hanged Sydney",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "George Gipps",
+                        "gloss": "Seven white stockmen hanged Sydney"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Future massacres hidden in secrecy",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "George Gipps",
+                        "gloss": "Future massacres hidden in secrecy"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Rare Colonial Murder Conviction",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Myall Creek",
+                    "gloss": "Provoked furious colonial press outrage; Exception proving wider frontier impunity.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Provoked furious colonial press outrage",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Myall Creek",
+                        "gloss": "Provoked furious colonial press outrage"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Exception proving wider frontier impunity",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Myall Creek",
+                        "gloss": "Exception proving wider frontier impunity"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: Gold, Votes & Mabo",
+        "dateChip": "1851–1992",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Eureka Stockade",
+        "gloss": "The 1851 Gold Rush, Ballarat’s Eureka Stockade, anti-Chinese racism, 1901 Federation, and the 1992 Mabo Native Title ruling.",
+        "children": [
+          {
+            "id": "kt3_l5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Gold Rush, Eureka & Mabo",
+            "dateChip": "1851–1992",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Eureka Stockade",
+            "gloss": "Gold transformed Australia’s wealth and democracy at Eureka, while racial exclusion endured from 1901 until First Nations won Mabo.",
+            "children": [
+              {
+                "id": "kt3_l5_s1",
+                "tier": 3,
+                "label": "Gold Boom & Licence Hunts",
+                "dateChip": "1851–1854",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Ballarat",
+                "gloss": "Payable gold at Bathurst, Ballarat, and Bendigo tripled population to 1.2m while 30-shilling licences provoked digger fury.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1851 Gold Tripled Colony Population",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Edward Hargraves",
+                    "gloss": "Hargraves found Bathurst gold 1851; Population jumped to 1.2 million.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Hargraves found Bathurst gold 1851",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Edward Hargraves",
+                        "gloss": "Hargraves found Bathurst gold 1851"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Population jumped to 1.2 million",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Edward Hargraves",
+                        "gloss": "Population jumped to 1.2 million"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "30-Shilling Monthly Licence Tax",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "30-shilling",
+                    "gloss": "Charged even on empty shafts; Armed police chained unpaid diggers.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Charged even on empty shafts",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "30-shilling",
+                        "gloss": "Charged even on empty shafts"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Armed police chained unpaid diggers",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "30-shilling",
+                        "gloss": "Armed police chained unpaid diggers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Bakery Hill Rallies Built Stockade",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Bakery Hill",
+                    "gloss": "Protested taxation without any vote; Formed Ballarat Reform League 1854.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Protested taxation without any vote",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Bakery Hill",
+                        "gloss": "Protested taxation without any vote"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Formed Ballarat Reform League 1854",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Bakery Hill",
+                        "gloss": "Formed Ballarat Reform League 1854"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Financed Grand Victorian Melbourne",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Melbourne",
+                    "gloss": "Half million migrants poured in; Boomed railways and colonial trade.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Half million migrants poured in",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Melbourne",
+                        "gloss": "Half million migrants poured in"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Boomed railways and colonial trade",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Melbourne",
+                        "gloss": "Boomed railways and colonial trade"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l5_s2",
+                "tier": 3,
+                "label": "Eureka Stockade & Voting Rights",
+                "dateChip": "Dec 1854",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Eureka Stockade",
+                "gloss": "Redcoats crushed the Ballarat diggers’ Eureka Stockade in 15 minutes, but public sympathy forced democratic voting reforms.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Oath Under Southern Cross Flag",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Southern Cross",
+                    "gloss": "Built wooden stockade at Eureka; Swore to defend civil liberties.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Built wooden stockade at Eureka",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Southern Cross",
+                        "gloss": "Built wooden stockade at Eureka"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Swore to defend civil liberties",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Southern Cross",
+                        "gloss": "Swore to defend civil liberties"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Dawn Redcoat Assault Killed 22",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "3 December 1854",
+                    "gloss": "Three hundred troops stormed camp; Crushed revolt in fifteen minutes.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Three hundred troops stormed camp",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "3 December 1854",
+                        "gloss": "Three hundred troops stormed camp"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Crushed revolt in fifteen minutes",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "3 December 1854",
+                        "gloss": "Crushed revolt in fifteen minutes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Abolished Fee & Won Suffrage",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "secret ballot",
+                    "gloss": "Scrapped hated monthly mining licence; Introduced secret ballot and suffrage.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Scrapped hated monthly mining licence",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "secret ballot",
+                        "gloss": "Scrapped hated monthly mining licence"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Introduced secret ballot and suffrage",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "secret ballot",
+                        "gloss": "Introduced secret ballot and suffrage"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Birthplace of Colonial Democracy",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Eureka",
+                    "gloss": "Public outrage backed rebel diggers; Expanded white male voting rights.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Public outrage backed rebel diggers",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Eureka",
+                        "gloss": "Public outrage backed rebel diggers"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Expanded white male voting rights",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Eureka",
+                        "gloss": "Expanded white male voting rights"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l5_s3",
+                "tier": 3,
+                "label": "White Australia to 1992 Mabo",
+                "dateChip": "1861–1992",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Mabo",
+                "gloss": "Goldfield racism led to the 1901 White Australia Policy and Indigenous exclusion until campaigners won the 1992 Mabo judgement.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Lambing Flat Anti-Chinese Riots",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Lambing Flat",
+                    "gloss": "40,000 Chinese reworked gold claims; White mobs attacked camps 1861.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "40,000 Chinese reworked gold claims",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Lambing Flat",
+                        "gloss": "40,000 Chinese reworked gold claims"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "White mobs attacked camps 1861",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Lambing Flat",
+                        "gloss": "White mobs attacked camps 1861"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1901 White Australia & Exclusion",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Immigration Restriction Act",
+                    "gloss": "Dictation tests barred non-Europeans; Stolen Generations child removals followed.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Dictation tests barred non-Europeans",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Immigration Restriction Act",
+                        "gloss": "Dictation tests barred non-Europeans"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Stolen Generations child removals followed",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Immigration Restriction Act",
+                        "gloss": "Stolen Generations child removals followed"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ 1938 Protest to 1992 Mabo Win",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Day of Mourning",
+                    "gloss": "1938 Sydney Day of Mourning; High Court recognised Native Title.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "1938 Sydney Day of Mourning",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Day of Mourning",
+                        "gloss": "1938 Sydney Day of Mourning"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "High Court recognised Native Title",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Day of Mourning",
+                        "gloss": "High Court recognised Native Title"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Mabo Overturned Terra Nullius Myth",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Mabo",
+                    "gloss": "Ended 1770 empty continent fiction; Landmark victory for First Nations.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Ended 1770 empty continent fiction",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Mabo",
+                        "gloss": "Ended 1770 empty continent fiction"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Landmark victory for First Nations",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Mabo",
+                        "gloss": "Landmark victory for First Nations"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

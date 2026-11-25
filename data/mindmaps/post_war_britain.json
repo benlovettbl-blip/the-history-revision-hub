@@ -1,0 +1,2110 @@
+{
+  "unitId": "post_war_britain",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS3",
+  "paperType": "KS3",
+  "paperLabel": "Key Stage 3 History",
+  "courseTitle": "Rights, Protest, and Post-War Britain, 1900–Present",
+  "examDateBoundary": "1900–Present",
+  "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Rights & Post-War Britain",
+    "subLabel": "KS3 History",
+    "dateChip": "1900–Present",
+    "gloss": "Women’s suffrage, building the Welfare State and NHS, the Windrush pioneers, the 1963 Bristol Bus Boycott, and CND nuclear protest.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "Part 1: Suffrage & Welfare State",
+        "dateChip": "1897–1948",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Beveridge",
+        "gloss": "Votes for women won in 1918 and Clement Attlee’s post-1945 creation of the Welfare State and free NHS.",
+        "children": [
+          {
+            "id": "kt1_l1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Votes for Women & 1918",
+            "dateChip": "1897–1918",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Suffragettes",
+            "gloss": "Millicent Fawcett’s Suffragists, Emmeline Pankhurst’s WSPU Suffragettes, prison hunger strikes, and the 1918 franchise breakthrough.",
+            "children": [
+              {
+                "id": "kt1_l1_s1",
+                "tier": 3,
+                "label": "Suffragists vs WSPU Militancy",
+                "dateChip": "1897–1914",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "WSPU",
+                "gloss": "Fawcett’s law-abiding NUWSS lobbied Parliament peacefully while Pankhurst’s 1903 WSPU embraced \"Deeds, not words\".",
+                "children": [
+                  {
+                    "id": "kt1_l1_s1_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Fawcett’s 1897 Peaceful NUWSS",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Millicent Garrett Fawcett",
+                    "gloss": "United 17 groups; 50,000+ members; Used petitions and parliamentary lobbying.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c1_t1",
+                        "tier": 5,
+                        "label": "United 17 groups; 50,000+ members",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Millicent Garrett Fawcett",
+                        "gloss": "United 17 groups; 50,000+ members"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Used petitions and parliamentary lobbying",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Millicent Garrett Fawcett",
+                        "gloss": "Used petitions and parliamentary lobbying"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Pankhurst’s 1903 Militant WSPU",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Emmeline Pankhurst",
+                    "gloss": "Adopted motto Deeds, not words; Chained to railings, disrupted rallies.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Adopted motto Deeds, not words",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Emmeline Pankhurst",
+                        "gloss": "Adopted motto Deeds, not words"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Chained to railings, disrupted rallies",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Emmeline Pankhurst",
+                        "gloss": "Chained to railings, disrupted rallies"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Triggered Mass Holloway Arrests",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Buckingham Palace",
+                    "gloss": "Confronted police outside Buckingham Palace; Captured daily national newspaper headlines.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Confronted police outside Buckingham Palace",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Buckingham Palace",
+                        "gloss": "Confronted police outside Buckingham Palace"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Captured daily national newspaper headlines",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Buckingham Palace",
+                        "gloss": "Captured daily national newspaper headlines"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s1_c4",
+                    "tier": 4,
+                    "tag": "Debate",
+                    "label": "Peaceful Lobbying vs Direct Action",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "NUWSS",
+                    "gloss": "NUWSS proved mature democratic citizenship; WSPU forced issue onto agenda.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s1_c4_t1",
+                        "tier": 5,
+                        "label": "NUWSS proved mature democratic citizenship",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "NUWSS",
+                        "gloss": "NUWSS proved mature democratic citizenship"
+                      },
+                      {
+                        "id": "kt1_l1_s1_c4_t2",
+                        "tier": 5,
+                        "label": "WSPU forced issue onto agenda",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "NUWSS",
+                        "gloss": "WSPU forced issue onto agenda"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s2",
+                "tier": 3,
+                "label": "Hunger Strikes & Jiu-Jitsu Guard",
+                "dateChip": "1909–1914",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Cat and Mouse",
+                "gloss": "Forced feeding, the 1913 Cat and Mouse Act, Edith Garrud’s jiu-jitsu Bodyguard, and Emily Davison’s Epsom Derby death.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Forced Feeding & 1913 Cat-Mouse",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Cat and Mouse Act",
+                    "gloss": "Rubber tubes shoved down throats; Released weak strikers, re-arrested later.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Rubber tubes shoved down throats",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Cat and Mouse Act",
+                        "gloss": "Rubber tubes shoved down throats"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Released weak strikers, re-arrested later",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Cat and Mouse Act",
+                        "gloss": "Released weak strikers, re-arrested later"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Garrud’s Bodyguard & Epsom 1913",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Edith Garrud",
+                    "gloss": "30 jiu-jitsu women hid clubs; Davison died under King’s horse.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c2_t1",
+                        "tier": 5,
+                        "label": "30 jiu-jitsu women hid clubs",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Edith Garrud",
+                        "gloss": "30 jiu-jitsu women hid clubs"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Davison died under King’s horse",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Edith Garrud",
+                        "gloss": "Davison died under King’s horse"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Public Outrage Over State Brutality",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Hunger Strike Medals",
+                    "gloss": "WSPU awarded silver hunger medals; Shamed Liberal government prison tactics.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c3_t1",
+                        "tier": 5,
+                        "label": "WSPU awarded silver hunger medals",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Hunger Strike Medals",
+                        "gloss": "WSPU awarded silver hunger medals"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Shamed Liberal government prison tactics",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Hunger Strike Medals",
+                        "gloss": "Shamed Liberal government prison tactics"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Escalated Street Conflict Before WWI",
+                    "lessonIndex": 0,
+                    "stageIndex": 3,
+                    "searchTerm": "Emily Wilding Davison",
+                    "gloss": "Shielded Pankhurst from police batons; Created martyr at June Derby.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Shielded Pankhurst from police batons",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Emily Wilding Davison",
+                        "gloss": "Shielded Pankhurst from police batons"
+                      },
+                      {
+                        "id": "kt1_l1_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Created martyr at June Derby",
+                        "lessonIndex": 0,
+                        "stageIndex": 3,
+                        "searchTerm": "Emily Wilding Davison",
+                        "gloss": "Created martyr at June Derby"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l1_s3",
+                "tier": 3,
+                "label": "WWI Munitions & 1918 Vote",
+                "dateChip": "1914–1918",
+                "lessonIndex": 0,
+                "stageIndex": 4,
+                "searchTerm": "Representation of the People Act",
+                "gloss": "Wartime work by 1.5 million women broke parliamentary resistance, winning votes for 8.4 million women over 30 in 1918.",
+                "children": [
+                  {
+                    "id": "kt1_l1_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1.5m Women Entered WWI Work",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "1.5 million women",
+                    "gloss": "Suspended militant campaigning August 1914; Worked munitions, farms, and hospitals.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Suspended militant campaigning August 1914",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "1.5 million women",
+                        "gloss": "Suspended militant campaigning August 1914"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Worked munitions, farms, and hospitals",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "1.5 million women",
+                        "gloss": "Worked munitions, farms, and hospitals"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Feb 1918 Representation Act Passed",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Representation of the People Act 1918",
+                    "gloss": "Enfranchised 8.4m women over thirty; Kept temporary property qualification rule.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Enfranchised 8.4m women over thirty",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Representation of the People Act 1918",
+                        "gloss": "Enfranchised 8.4m women over thirty"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Kept temporary property qualification rule",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Representation of the People Act 1918",
+                        "gloss": "Kept temporary property qualification rule"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Ended Male Parliamentary Monopoly",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "8.4 million",
+                    "gloss": "Ended anti-suffrage parliamentary excuses; Opened path to equal franchise.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Ended anti-suffrage parliamentary excuses",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "8.4 million",
+                        "gloss": "Ended anti-suffrage parliamentary excuses"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Opened path to equal franchise",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "8.4 million",
+                        "gloss": "Opened path to equal franchise"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l1_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Combined Pre-War Campaign & War Service",
+                    "lessonIndex": 0,
+                    "stageIndex": 4,
+                    "searchTerm": "Canary Girls",
+                    "gloss": "Canary Girls proved patriotic duty; Crowned decades of suffrage campaigning.",
+                    "children": [
+                      {
+                        "id": "kt1_l1_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Canary Girls proved patriotic duty",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Canary Girls",
+                        "gloss": "Canary Girls proved patriotic duty"
+                      },
+                      {
+                        "id": "kt1_l1_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Crowned decades of suffrage campaigning",
+                        "lessonIndex": 0,
+                        "stageIndex": 4,
+                        "searchTerm": "Canary Girls",
+                        "gloss": "Crowned decades of suffrage campaigning"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_l2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Welfare State & The NHS",
+            "dateChip": "1939–1948",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Aneurin Bevan",
+            "gloss": "Wartime evacuation, Beveridge’s Five Giants, Labour’s 1945 landslide, abolishing workhouses, and Aneurin Bevan’s free NHS.",
+            "children": [
+              {
+                "id": "kt1_l2_s1",
+                "tier": 3,
+                "label": "Evacuation & Beveridge’s 5 Giants",
+                "dateChip": "1939–1942",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Beveridge Report",
+                "gloss": "Operation Pied Piper and Blitz solidarity inspired Sir William Beveridge’s bestselling 1942 blueprint to slay Five Giants.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1.5m Evacuees & Blitz Solidarity",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Pied Piper",
+                    "gloss": "Exposed urban rickets and lice; Ration queues united social classes.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Exposed urban rickets and lice",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Pied Piper",
+                        "gloss": "Exposed urban rickets and lice"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Ration queues united social classes",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Pied Piper",
+                        "gloss": "Ration queues united social classes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Dec 1942 Beveridge Report Sold 630k",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Beveridge Report",
+                    "gloss": "Want, Disease, Ignorance, Squalor, Idleness; Promised cradle to grave security.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Want, Disease, Ignorance, Squalor, Idleness",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Beveridge Report",
+                        "gloss": "Want, Disease, Ignorance, Squalor, Idleness"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Promised cradle to grave security",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Beveridge Report",
+                        "gloss": "Promised cradle to grave security"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Fuelled Demand for Fairer Britain",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "five giants",
+                    "gloss": "Queues formed outside government bookshops; Shaped Labour’s 1945 election pledge.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Queues formed outside government bookshops",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "five giants",
+                        "gloss": "Queues formed outside government bookshops"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Shaped Labour’s 1945 election pledge",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "five giants",
+                        "gloss": "Shaped Labour’s 1945 election pledge"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Blueprint for Modern Welfare State",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "cradle to grave",
+                    "gloss": "Rejected pre-war destitution and charity; Redefined citizen social rights.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Rejected pre-war destitution and charity",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "cradle to grave",
+                        "gloss": "Rejected pre-war destitution and charity"
+                      },
+                      {
+                        "id": "kt1_l2_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Redefined citizen social rights",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "cradle to grave",
+                        "gloss": "Redefined citizen social rights"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s2",
+                "tier": 3,
+                "label": "1945 Attlee Win & Welfare Laws",
+                "dateChip": "1945–1948",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Clement Attlee",
+                "gloss": "Clement Attlee’s 146-seat Labour landslide enacted National Insurance (1946) and abolished Victorian Poor Law workhouses (1948).",
+                "children": [
+                  {
+                    "id": "kt1_l2_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "July 1945 146-Seat Labour Landslide",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "146-seat",
+                    "gloss": "Voters recalled 1930s Jarrow slump; Backed Let Us Face Future.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Voters recalled 1930s Jarrow slump",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "146-seat",
+                        "gloss": "Voters recalled 1930s Jarrow slump"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Backed Let Us Face Future",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "146-seat",
+                        "gloss": "Backed Let Us Face Future"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1946 Insurance & 1948 Assistance Acts",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "National Insurance Act 1946",
+                    "gloss": "Funded sickness, pensions, jobless pay; Abolished Victorian Poor Law workhouses.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Funded sickness, pensions, jobless pay",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "National Insurance Act 1946",
+                        "gloss": "Funded sickness, pensions, jobless pay"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Abolished Victorian Poor Law workhouses",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "National Insurance Act 1946",
+                        "gloss": "Abolished Victorian Poor Law workhouses"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Built Universal State Safety Net",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "National Assistance Act 1948",
+                    "gloss": "Weekly worker, employer, state payments; Protected citizens outside insurance too.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Weekly worker, employer, state payments",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "National Assistance Act 1948",
+                        "gloss": "Weekly worker, employer, state payments"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Protected citizens outside insurance too",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "National Assistance Act 1948",
+                        "gloss": "Protected citizens outside insurance too"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Ended Century of Workhouse Stigma",
+                    "lessonIndex": 1,
+                    "stageIndex": 3,
+                    "searchTerm": "Poor Law",
+                    "gloss": "Replaced means-tested 1930s dole shame; Transformed post-war British citizenship.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Replaced means-tested 1930s dole shame",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Poor Law",
+                        "gloss": "Replaced means-tested 1930s dole shame"
+                      },
+                      {
+                        "id": "kt1_l2_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Transformed post-war British citizenship",
+                        "lessonIndex": 1,
+                        "stageIndex": 3,
+                        "searchTerm": "Poor Law",
+                        "gloss": "Transformed post-war British citizenship"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_l2_s3",
+                "tier": 3,
+                "label": "Bevan, BMA & Free NHS (1948)",
+                "dateChip": "5 July 1948",
+                "lessonIndex": 1,
+                "stageIndex": 4,
+                "searchTerm": "Aneurin Bevan",
+                "gloss": "Health Minister Aneurin Bevan overcame BMA doctor resistance to launch universal free healthcare on 5 July 1948.",
+                "children": [
+                  {
+                    "id": "kt1_l2_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "BMA Threatened Total Doctor Boycott",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "British Medical Association",
+                    "gloss": "Resisted becoming salaried state workers; Endangered launch of national service.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Resisted becoming salaried state workers",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "British Medical Association",
+                        "gloss": "Resisted becoming salaried state workers"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Endangered launch of national service",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "British Medical Association",
+                        "gloss": "Endangered launch of national service"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bevan’s Gold Deal & 5 July 1948",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "stuffed their mouths with gold",
+                    "gloss": "Allowed private beds inside hospitals; Opened NHS 5 July 1948.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Allowed private beds inside hospitals",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "stuffed their mouths with gold",
+                        "gloss": "Allowed private beds inside hospitals"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Opened NHS 5 July 1948",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "stuffed their mouths with gold",
+                        "gloss": "Opened NHS 5 July 1948"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Free Healthcare at Delivery Point",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "free medical care",
+                    "gloss": "Ended fear of doctor bills; Expanded hospital demand for staff.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Ended fear of doctor bills",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "free medical care",
+                        "gloss": "Ended fear of doctor bills"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Expanded hospital demand for staff",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "free medical care",
+                        "gloss": "Expanded hospital demand for staff"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_l2_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Made Healthcare a Universal Right",
+                    "lessonIndex": 1,
+                    "stageIndex": 4,
+                    "searchTerm": "Aneurin Bevan",
+                    "gloss": "Crowning pillar of Welfare State; Transformed health from private luxury.",
+                    "children": [
+                      {
+                        "id": "kt1_l2_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Crowning pillar of Welfare State",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Aneurin Bevan",
+                        "gloss": "Crowning pillar of Welfare State"
+                      },
+                      {
+                        "id": "kt1_l2_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Transformed health from private luxury",
+                        "lessonIndex": 1,
+                        "stageIndex": 4,
+                        "searchTerm": "Aneurin Bevan",
+                        "gloss": "Transformed health from private luxury"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "Part 2: Windrush & Civil Rights",
+        "dateChip": "1945–1968",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Windrush",
+        "gloss": "Caribbean pioneers aboard HMT Empire Windrush, Claudia Jones’s Carnival, the 1963 Bristol Bus Boycott, and Race Relations laws.",
+        "children": [
+          {
+            "id": "kt2_l3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Windrush & Notting Hill",
+            "dateChip": "1945–1959",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Empire Windrush",
+            "gloss": "Post-war labour recruitment and the 1948 Nationality Act brought Windrush pioneers who overcame colour bars and 1958 riots.",
+            "children": [
+              {
+                "id": "kt2_l3_s1",
+                "tier": 3,
+                "label": "1948 Nationality Act & Windrush",
+                "dateChip": "June 1948",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Empire Windrush",
+                "gloss": "Recruited as CUKC British citizens to rebuild Britain, 492 Caribbean passengers docked at Tilbury on 22 June 1948.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "NHS, Rail & Blitz Labour Shortage",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "British Nationality Act 1948",
+                    "gloss": "Recruited workers across Commonwealth; 1948 Act gave 800m CUKC entry.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Recruited workers across Commonwealth",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "British Nationality Act 1948",
+                        "gloss": "Recruited workers across Commonwealth"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c1_t2",
+                        "tier": 5,
+                        "label": "1948 Act gave 800m CUKC entry",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "British Nationality Act 1948",
+                        "gloss": "1948 Act gave 800m CUKC entry"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "22 June 1948 Windrush at Tilbury",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Tilbury",
+                    "gloss": "492 Caribbean pioneers came ashore; Lord Kitchener sang calypso onboard.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c2_t1",
+                        "tier": 5,
+                        "label": "492 Caribbean pioneers came ashore",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Tilbury",
+                        "gloss": "492 Caribbean pioneers came ashore"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Lord Kitchener sang calypso onboard",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Tilbury",
+                        "gloss": "Lord Kitchener sang calypso onboard"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Staffed Hospitals, Buses & Rail",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "multicultural",
+                    "gloss": "Included RAF veterans and nurses; Held full British voting rights.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Included RAF veterans and nurses",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "multicultural",
+                        "gloss": "Included RAF veterans and nurses"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Held full British voting rights",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "multicultural",
+                        "gloss": "Held full British voting rights"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Foundation of Modern Multicultural UK",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Empire Windrush",
+                    "gloss": "Arrived as legal British citizens; Rebuilt exhausted post-war infrastructure.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Arrived as legal British citizens",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Empire Windrush",
+                        "gloss": "Arrived as legal British citizens"
+                      },
+                      {
+                        "id": "kt2_l3_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Rebuilt exhausted post-war infrastructure",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Empire Windrush",
+                        "gloss": "Rebuilt exhausted post-war infrastructure"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l3_s2",
+                "tier": 3,
+                "label": "Colour Bar & Pardner Savings",
+                "dateChip": "1950s",
+                "lessonIndex": 2,
+                "stageIndex": 3,
+                "searchTerm": "pardner",
+                "gloss": "Confronted by racist housing signs and bank refusals, Caribbean families pooled savings in cooperative \"pardner\" schemes.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s2_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Informal Housing & Bank Colour Bar",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "No Blacks",
+                    "gloss": "Window signs barred Black tenants; High-street banks refused home mortgages.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Window signs barred Black tenants",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "No Blacks",
+                        "gloss": "Window signs barred Black tenants"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c1_t2",
+                        "tier": 5,
+                        "label": "High-street banks refused home mortgages",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "No Blacks",
+                        "gloss": "High-street banks refused home mortgages"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Cooperative Weekly Pardner Clubs",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "pardner",
+                    "gloss": "Pooled community savings each week; Rotated lump sums among families.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Pooled community savings each week",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "pardner",
+                        "gloss": "Pooled community savings each week"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Rotated lump sums among families",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "pardner",
+                        "gloss": "Rotated lump sums among families"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Bought Freehold Urban Family Homes",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "freehold",
+                    "gloss": "Escaped damp overpriced boarding rooms; Built permanent inner-city communities.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Escaped damp overpriced boarding rooms",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "freehold",
+                        "gloss": "Escaped damp overpriced boarding rooms"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Built permanent inner-city communities",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "freehold",
+                        "gloss": "Built permanent inner-city communities"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Proved Grassroots Economic Resilience",
+                    "lessonIndex": 2,
+                    "stageIndex": 3,
+                    "searchTerm": "credit unions",
+                    "gloss": "Bypassed discriminatory British banking; Sustained family stability despite racism.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Bypassed discriminatory British banking",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "credit unions",
+                        "gloss": "Bypassed discriminatory British banking"
+                      },
+                      {
+                        "id": "kt2_l3_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Sustained family stability despite racism",
+                        "lessonIndex": 2,
+                        "stageIndex": 3,
+                        "searchTerm": "credit unions",
+                        "gloss": "Sustained family stability despite racism"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l3_s3",
+                "tier": 3,
+                "label": "1958 Riots & Claudia Jones",
+                "dateChip": "1958–1959",
+                "lessonIndex": 2,
+                "stageIndex": 4,
+                "searchTerm": "Claudia Jones",
+                "gloss": "After violent 1958 Notting Hill Teddy Boy attacks, Claudia Jones founded the West Indian Gazette and 1959 Caribbean Carnival.",
+                "children": [
+                  {
+                    "id": "kt2_l3_s3_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Aug 1958 Notting Hill Race Riots",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Notting Hill",
+                    "gloss": "White Teddy Boys used iron bars; Police offered Black residents little.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c1_t1",
+                        "tier": 5,
+                        "label": "White Teddy Boys used iron bars",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Notting Hill",
+                        "gloss": "White Teddy Boys used iron bars"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Police offered Black residents little",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Notting Hill",
+                        "gloss": "Police offered Black residents little"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Claudia Jones & 1959 Carnival",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Claudia Jones",
+                    "gloss": "Founded Brixton West Indian Gazette; Hosted St Pancras indoor carnival.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Founded Brixton West Indian Gazette",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Claudia Jones",
+                        "gloss": "Founded Brixton West Indian Gazette"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c2_t2",
+                        "tier": 5,
+                        "label": "Hosted St Pancras indoor carnival",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Claudia Jones",
+                        "gloss": "Hosted St Pancras indoor carnival"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Grew Into Notting Hill Carnival",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "Caribbean Carnival",
+                    "gloss": "Celebrated steel bands and dance; Gave community national political voice.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Celebrated steel bands and dance",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Caribbean Carnival",
+                        "gloss": "Celebrated steel bands and dance"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Gave community national political voice",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "Caribbean Carnival",
+                        "gloss": "Gave community national political voice"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l3_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Turned Racist Trauma Into Pride",
+                    "lessonIndex": 2,
+                    "stageIndex": 4,
+                    "searchTerm": "West Indian Gazette",
+                    "gloss": "Asserted right to public joy; Reshaped modern British urban culture.",
+                    "children": [
+                      {
+                        "id": "kt2_l3_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Asserted right to public joy",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "West Indian Gazette",
+                        "gloss": "Asserted right to public joy"
+                      },
+                      {
+                        "id": "kt2_l3_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Reshaped modern British urban culture",
+                        "lessonIndex": 2,
+                        "stageIndex": 4,
+                        "searchTerm": "West Indian Gazette",
+                        "gloss": "Reshaped modern British urban culture"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_l4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Bristol Boycott & Race Laws",
+            "dateChip": "1963–1968",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Bristol Omnibus",
+            "gloss": "Paul Stephenson and the West Indian Development Council defeated Bristol’s bus colour bar, inspiring the 1965–68 Race Relations Acts.",
+            "children": [
+              {
+                "id": "kt2_l4_s1",
+                "tier": 3,
+                "label": "Bus Colour Bar & Bailey Sting",
+                "dateChip": "Apr 1963",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Guy Bailey",
+                "gloss": "Despite 200 vacancies, Bristol buses and local union officials barred Black crews until Paul Stephenson’s sting with Guy Bailey.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Company & TGWU Crew Colour Bar",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "TGWU",
+                    "gloss": "Barred Black drivers despite 200 gaps; Local union backed white-only crews.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Barred Black drivers despite 200 gaps",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "TGWU",
+                        "gloss": "Barred Black drivers despite 200 gaps"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Local union backed white-only crews",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "TGWU",
+                        "gloss": "Local union backed white-only crews"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Stephenson’s Guy Bailey Test Case",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Guy Bailey",
+                    "gloss": "Qualified 18-year-old Boys’ Brigade officer; Depot cancelled interview over race.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Qualified 18-year-old Boys’ Brigade officer",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Guy Bailey",
+                        "gloss": "Qualified 18-year-old Boys’ Brigade officer"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Depot cancelled interview over race",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Guy Bailey",
+                        "gloss": "Depot cancelled interview over race"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Press Proof Ignited 30 Apr Boycott",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Paul Stephenson",
+                    "gloss": "Exposed undeniable racial ban publicly; Launched West Indian Development boycott.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Exposed undeniable racial ban publicly",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Paul Stephenson",
+                        "gloss": "Exposed undeniable racial ban publicly"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Launched West Indian Development boycott",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Paul Stephenson",
+                        "gloss": "Launched West Indian Development boycott"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Shattered Excuse of Unqualified Applicants",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Bristol Omnibus",
+                    "gloss": "Caught state-owned firm red-handed; Put UK racism in headlines.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Caught state-owned firm red-handed",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Bristol Omnibus",
+                        "gloss": "Caught state-owned firm red-handed"
+                      },
+                      {
+                        "id": "kt2_l4_s1_c4_t2",
+                        "tier": 5,
+                        "label": "Put UK racism in headlines",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Bristol Omnibus",
+                        "gloss": "Put UK racism in headlines"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s2",
+                "tier": 3,
+                "label": "Four-Month Boycott Solidarity",
+                "dateChip": "May–Aug 1963",
+                "lessonIndex": 3,
+                "stageIndex": 3,
+                "searchTerm": "Tony Benn",
+                "gloss": "Inspired by Montgomery, 3,000 West Indians, Bristol students, Tony Benn, and Harold Wilson forced the bus company’s surrender.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Citywide Walkout & Student Marches",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Roy Hackett",
+                    "gloss": "Hackett, Henry, Evans led 3,000; Bristol University students picketed HQ.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Hackett, Henry, Evans led 3,000",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Roy Hackett",
+                        "gloss": "Hackett, Henry, Evans led 3,000"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Bristol University students picketed HQ",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Roy Hackett",
+                        "gloss": "Bristol University students picketed HQ"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Tony Benn & Wilson Backed Campaign",
+                    "lessonIndex": 3,
+                    "stageIndex": 3,
+                    "searchTerm": "Tony Benn",
+                    "gloss": "MP Benn boycotted racist union; Wilson pledged anti-racism law.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c2_t1",
+                        "tier": 5,
+                        "label": "MP Benn boycotted racist union",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Tony Benn",
+                        "gloss": "MP Benn boycotted racist union"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c2_t2",
+                        "tier": 5,
+                        "label": "Wilson pledged anti-racism law",
+                        "lessonIndex": 3,
+                        "stageIndex": 3,
+                        "searchTerm": "Tony Benn",
+                        "gloss": "Wilson pledged anti-racism law"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Colour Bar Ended 28 August 1963",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Raghbir Singh",
+                    "gloss": "Same day as King’s Washington speech; Hired Sikh conductor Raghbir Singh.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Same day as King’s Washington speech",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Raghbir Singh",
+                        "gloss": "Same day as King’s Washington speech"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Hired Sikh conductor Raghbir Singh",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Raghbir Singh",
+                        "gloss": "Hired Sikh conductor Raghbir Singh"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Modelled Non-Violent UK Direct Action",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Montgomery Boycott",
+                    "gloss": "Echoed 1955 Montgomery bus boycott; Slashed company ticket revenues fast.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Echoed 1955 Montgomery bus boycott",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Montgomery Boycott",
+                        "gloss": "Echoed 1955 Montgomery bus boycott"
+                      },
+                      {
+                        "id": "kt2_l4_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Slashed company ticket revenues fast",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Montgomery Boycott",
+                        "gloss": "Slashed company ticket revenues fast"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_l4_s3",
+                "tier": 3,
+                "label": "1965 & 1968 Race Relations Acts",
+                "dateChip": "1965–1968",
+                "lessonIndex": 3,
+                "stageIndex": 4,
+                "searchTerm": "Race Relations Acts",
+                "gloss": "Bristol’s victory propelled Harold Wilson’s government to pass Britain’s first statutory Race Relations Acts in 1965 and 1968.",
+                "children": [
+                  {
+                    "id": "kt2_l4_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Bristol Proved Need for National Law",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Harold Wilson",
+                    "gloss": "No law barred colour bars 1963; Fulfilled Wilson’s 1963 rally pledge.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c1_t1",
+                        "tier": 5,
+                        "label": "No law barred colour bars 1963",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Harold Wilson",
+                        "gloss": "No law barred colour bars 1963"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Fulfilled Wilson’s 1963 rally pledge",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Harold Wilson",
+                        "gloss": "Fulfilled Wilson’s 1963 rally pledge"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1965 & 1968 Race Relations Acts",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Race Relations Acts",
+                    "gloss": "Banned discrimination in public places; 1968 outlawed housing, job bans.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Banned discrimination in public places",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Race Relations Acts",
+                        "gloss": "Banned discrimination in public places"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c2_t2",
+                        "tier": 5,
+                        "label": "1968 outlawed housing, job bans",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Race Relations Acts",
+                        "gloss": "1968 outlawed housing, job bans"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Ended Legal No-Blacks Signs",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "employment",
+                    "gloss": "Created statutory civil rights framework; Protected minority workers and tenants.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Created statutory civil rights framework",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "employment",
+                        "gloss": "Created statutory civil rights framework"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Protected minority workers and tenants",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "employment",
+                        "gloss": "Protected minority workers and tenants"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_l4_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Watershed in British Equality Law",
+                    "lessonIndex": 3,
+                    "stageIndex": 4,
+                    "searchTerm": "Norman Samuels",
+                    "gloss": "Citizen protest reshaped national statute; Laid groundwork for equality laws.",
+                    "children": [
+                      {
+                        "id": "kt2_l4_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Citizen protest reshaped national statute",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Norman Samuels",
+                        "gloss": "Citizen protest reshaped national statute"
+                      },
+                      {
+                        "id": "kt2_l4_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Laid groundwork for equality laws",
+                        "lessonIndex": 3,
+                        "stageIndex": 4,
+                        "searchTerm": "Norman Samuels",
+                        "gloss": "Laid groundwork for equality laws"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "Part 3: Nuclear Fear & Protest",
+        "dateChip": "1952–1983",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Greenham Common",
+        "gloss": "Britain’s A-bomb and H-bomb tests, CND and Aldermaston marches, secret ROC bunkers, Protect and Survive, and Greenham Common.",
+        "children": [
+          {
+            "id": "kt3_l5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. H-Bomb, CND & Greenham",
+            "dateChip": "1952–1983",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Aldermaston",
+            "gloss": "From Britain’s 1952–57 nuclear tests and Gerald Holtom’s CND peace symbol to York’s bunker and Greenham Common.",
+            "children": [
+              {
+                "id": "kt3_l5_s1",
+                "tier": 3,
+                "label": "UK Bombs, CND & Peace Symbol",
+                "dateChip": "1952–1958",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Gerald Holtom",
+                "gloss": "Britain’s 1952 atomic and 1957 H-bomb tests sparked the 1958 founding of CND and Gerald Holtom’s semaphore peace symbol.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s1_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1952 Hurricane & 1957 H-Bomb Tests",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Operation Hurricane",
+                    "gloss": "Third nuclear power Australia 1952; Tested Malden Island H-bomb 1957.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c1_t1",
+                        "tier": 5,
+                        "label": "Third nuclear power Australia 1952",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Operation Hurricane",
+                        "gloss": "Third nuclear power Australia 1952"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c1_t2",
+                        "tier": 5,
+                        "label": "Tested Malden Island H-bomb 1957",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Operation Hurricane",
+                        "gloss": "Tested Malden Island H-bomb 1957"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Feb 1958 CND & Holtom’s Logo",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Gerald Holtom",
+                    "gloss": "Russell and Collins sought unilateralism; Combined naval semaphore N and D.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c2_t1",
+                        "tier": 5,
+                        "label": "Russell and Collins sought unilateralism",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Gerald Holtom",
+                        "gloss": "Russell and Collins sought unilateralism"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c2_t2",
+                        "tier": 5,
+                        "label": "Combined naval semaphore N and D",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Gerald Holtom",
+                        "gloss": "Combined naval semaphore N and D"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Launched Easter 1958 Aldermaston March",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Aldermaston",
+                    "gloss": "Rallied horror at radioactive fallout; Created universal global peace symbol.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c3_t1",
+                        "tier": 5,
+                        "label": "Rallied horror at radioactive fallout",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Aldermaston",
+                        "gloss": "Rallied horror at radioactive fallout"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c3_t2",
+                        "tier": 5,
+                        "label": "Created universal global peace symbol",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Aldermaston",
+                        "gloss": "Created universal global peace symbol"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s1_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Challenged UK Nuclear Deterrent Policy",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "unilateral disarmament",
+                    "gloss": "Attlee and Churchill backed deterrent; CND urged moral unilateral scrapping.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s1_c4_t1",
+                        "tier": 5,
+                        "label": "Attlee and Churchill backed deterrent",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "unilateral disarmament",
+                        "gloss": "Attlee and Churchill backed deterrent"
+                      },
+                      {
+                        "id": "kt3_l5_s1_c4_t2",
+                        "tier": 5,
+                        "label": "CND urged moral unilateral scrapping",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "unilateral disarmament",
+                        "gloss": "CND urged moral unilateral scrapping"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l5_s2",
+                "tier": 3,
+                "label": "Aldermaston & Secret York Bunker",
+                "dateChip": "1958–1970",
+                "lessonIndex": 4,
+                "stageIndex": 3,
+                "searchTerm": "York Cold War Bunker",
+                "gloss": "Tens of thousands marched 52 miles to Aldermaston while the Home Office built 29 secret ROC bunkers with zero public shelters.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s2_c1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "52-Mile Easter 1958 Peace March",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Aldermaston March",
+                    "gloss": "Walked four days to Berkshire; Students, families, and jazz bands.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c1_t1",
+                        "tier": 5,
+                        "label": "Walked four days to Berkshire",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Aldermaston March",
+                        "gloss": "Walked four days to Berkshire"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c1_t2",
+                        "tier": 5,
+                        "label": "Students, families, and jazz bands",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Aldermaston March",
+                        "gloss": "Students, families, and jazz bands"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1961 Secret York ROC Bunker",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "York Cold War Bunker",
+                    "gloss": "Built 29 regional underground centres; 60 volunteers sealed 30 days.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c2_t1",
+                        "tier": 5,
+                        "label": "Built 29 regional underground centres",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "York Cold War Bunker",
+                        "gloss": "Built 29 regional underground centres"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c2_t2",
+                        "tier": 5,
+                        "label": "60 volunteers sealed 30 days",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "York Cold War Bunker",
+                        "gloss": "60 volunteers sealed 30 days"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Exposed Elite vs Civilian Shelter Gap",
+                    "lessonIndex": 4,
+                    "stageIndex": 3,
+                    "searchTerm": "Geiger counters",
+                    "gloss": "Plotted fallout plumes underground; Gave ordinary families zero bunkers.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c3_t1",
+                        "tier": 5,
+                        "label": "Plotted fallout plumes underground",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Geiger counters",
+                        "gloss": "Plotted fallout plumes underground"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c3_t2",
+                        "tier": 5,
+                        "label": "Gave ordinary families zero bunkers",
+                        "lessonIndex": 4,
+                        "stageIndex": 3,
+                        "searchTerm": "Geiger counters",
+                        "gloss": "Gave ordinary families zero bunkers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s2_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Birthed Post-War Youth Counter-Culture",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "counter-culture",
+                    "gloss": "Brought generational protest to streets; Questioned state Cold War secrecy.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s2_c4_t1",
+                        "tier": 5,
+                        "label": "Brought generational protest to streets",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "counter-culture",
+                        "gloss": "Brought generational protest to streets"
+                      },
+                      {
+                        "id": "kt3_l5_s2_c4_t2",
+                        "tier": 5,
+                        "label": "Questioned state Cold War secrecy",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "counter-culture",
+                        "gloss": "Questioned state Cold War secrecy"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_l5_s3",
+                "tier": 3,
+                "label": "Protect & Survive to Greenham",
+                "dateChip": "1980–1983",
+                "lessonIndex": 4,
+                "stageIndex": 4,
+                "searchTerm": "Greenham Common",
+                "gloss": "Mockery of the 1980 Protect and Survive booklet fuelled E. P. Thompson’s critique and the 30,000-woman Greenham Common protest.",
+                "children": [
+                  {
+                    "id": "kt3_l5_s3_c1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1980 Protect & Survive Booklet",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Protect and Survive",
+                    "gloss": "Four-minute nuclear warning sirens; Advised wooden door mattress shelters.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c1_t1",
+                        "tier": 5,
+                        "label": "Four-minute nuclear warning sirens",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Protect and Survive",
+                        "gloss": "Four-minute nuclear warning sirens"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c1_t2",
+                        "tier": 5,
+                        "label": "Advised wooden door mattress shelters",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Protect and Survive",
+                        "gloss": "Advised wooden door mattress shelters"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1982 Greenham Common Embrace Base",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Greenham Common",
+                    "gloss": "Thompson wrote Protest and Survive; 30,000 women encircled 9-mile fence.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c2_t1",
+                        "tier": 5,
+                        "label": "Thompson wrote Protest and Survive",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Greenham Common",
+                        "gloss": "Thompson wrote Protest and Survive"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c2_t2",
+                        "tier": 5,
+                        "label": "30,000 women encircled 9-mile fence",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Greenham Common",
+                        "gloss": "30,000 women encircled 9-mile fence"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c3",
+                    "tier": 4,
+                    "tag": "Conseq",
+                    "label": "→ Revived Mass 1980s Anti-Nuclear Wave",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "cruise missile",
+                    "gloss": "Protested US cruise missile base; Exposed futility of DIY shelters.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c3_t1",
+                        "tier": 5,
+                        "label": "Protested US cruise missile base",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "cruise missile",
+                        "gloss": "Protested US cruise missile base"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c3_t2",
+                        "tier": 5,
+                        "label": "Exposed futility of DIY shelters",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "cruise missile",
+                        "gloss": "Exposed futility of DIY shelters"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_l5_s3_c4",
+                    "tier": 4,
+                    "tag": "Significance",
+                    "label": "Landmark Feminist Peace Direct Action",
+                    "lessonIndex": 4,
+                    "stageIndex": 4,
+                    "searchTerm": "Greenham",
+                    "gloss": "Maintained women’s camp at gates; Turned civil defence into satire.",
+                    "children": [
+                      {
+                        "id": "kt3_l5_s3_c4_t1",
+                        "tier": 5,
+                        "label": "Maintained women’s camp at gates",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Greenham",
+                        "gloss": "Maintained women’s camp at gates"
+                      },
+                      {
+                        "id": "kt3_l5_s3_c4_t2",
+                        "tier": 5,
+                        "label": "Turned civil defence into satire",
+                        "lessonIndex": 4,
+                        "stageIndex": 4,
+                        "searchTerm": "Greenham",
+                        "gloss": "Turned civil defence into satire"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

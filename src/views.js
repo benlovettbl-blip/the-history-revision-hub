@@ -1585,6 +1585,63 @@ export async function renderTimeline() {
   renderUniversalLivingTimeline(container, unitId, state.activeUnitData);
 }
 
+export async function renderMindMapView() {
+  const container = document.getElementById('main-content');
+  if (!container) return;
+  const unitId = state.selectedUnitId || window.currentUnitId || 'cme_new';
+  const unitData = state.activeUnitData || window.currentUnitData || {};
+  const unitTitle = unitData.title || unitId;
+  const returnBtnLabel =
+    typeof window !== 'undefined' && typeof window.getReturnOriginLabel === 'function'
+      ? window.getReturnOriginLabel(unitId, 'Course Lessons')
+      : 'Course Lessons';
+
+  container.innerHTML = `
+    <div style="max-width: 1460px; margin: 0 auto; padding: 12px 16px 32px;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 10px;">
+        <div style="display: flex; align-items: center; gap: 10px; min-width: 0;">
+          <span style="width: 32px; height: 32px; border-radius: 8px; background: #0f172a; color: #fbbf24; display: inline-flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0;">
+            <i class="fa-solid fa-diagram-project"></i>
+          </span>
+          <div style="min-width: 0;">
+            <h1 style="margin: 0; font-size: 1.05rem; font-weight: 900; color: #0f172a; line-height: 1.2;">${unitTitle} — Interactive Mind Map</h1>
+            <div style="font-size: 0.75rem; color: #64748b;">Tap any branch to peel out the next ring, or use <strong>− Ring / + Ring</strong> to step the whole map</div>
+          </div>
+        </div>
+        <button
+          type="button"
+          onclick="if(window.returnToSavedOrigin){window.returnToSavedOrigin('${unitId}');}else if(window.switchView){window.switchView('lessons', '${unitId}');}"
+          style="background: #ffffff; color: #0f172a; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 6px 12px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>${returnBtnLabel}</span>
+        </button>
+      </div>
+      <div id="unit-standalone-mindmap-mount"></div>
+    </div>
+  `;
+
+  const [{ mountTrueMindMapStudio }, { isSupportedGcseUnit }] = await Promise.all([
+    import('./true_mindmap_engine.js'),
+    import('./engine/mobile_exam_adapter.js'),
+  ]);
+  const mountEl = document.getElementById('unit-standalone-mindmap-mount');
+  const isGcse = isSupportedGcseUnit(unitId);
+
+  await mountTrueMindMapStudio(mountEl, unitId, {
+    onOpenQuestionDrawer: isGcse
+      ? ({ searchTerm, lessonIndex }) => {
+          if (window.switchView) {
+            window.switchView('exam-trainer', unitId, false, {
+              lessonIndex,
+              searchQuery: searchTerm,
+            });
+          }
+        }
+      : null,
+  });
+}
+
 export function renderIndividualsView() {
   const container = document.getElementById('main-content');
   if (!container) return;

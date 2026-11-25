@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_ancient_egypt",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "Ancient Egypt — The Nile, Pyramids & Pharaohs (c. 3100–30 BC)",
+  "examDateBoundary": "c. 3100–30 BC",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Ancient Egypt",
+    "subLabel": "Key Stage 2",
+    "dateChip": "c. 3100–30 BC",
+    "gloss": "Three thousand years beside the River Nile — from black flood silt, Giza’s pyramids, and hieroglyphs to mummies, New Kingdom pharaohs, Tutankhamun, and Cleopatra VII.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#2563eb",
+        "label": "1. Gift of the Nile & Giza",
+        "dateChip": "c. 3500–2500 BC",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Kemet",
+        "gloss": "Annual Nile floods fed fertile Black Land farms united by King Narmer before paid skilled builders raised Giza’s Great Pyramid and Great Sphinx.",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. River Cradles & The Nile",
+            "dateChip": "c. 3500–2700 BC",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Kemet",
+            "q2Chain": "Four river cradles & black Kemet flood mud → Shaduf ditches & Nile sail boats → King Narmer unites Egypt (c. 3100 BC)",
+            "gloss": "Four river cradles & black Kemet flood mud → Shaduf ditches & Nile sail boats → King Narmer unites Egypt (c. 3100 BC)",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Four Cradles & Black Kemet Mud",
+                "dateChip": "c. 3500 BC",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "inundation",
+                "gloss": "Like Sumer, the Indus Valley, and Shang China, Egypt grew beside a river whose summer flood left rich black Kemet silt.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Four Early River Civilisations",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Ancient Sumer",
+                    "gloss": "Sumer, Indus, and Shang China; Desert sand surrounded River Nile.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Sumer, Indus, and Shang China",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Ancient Sumer",
+                        "gloss": "Sumer, Indus, and Shang China"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Desert sand surrounded River Nile",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Ancient Sumer",
+                        "gloss": "Desert sand surrounded River Nile"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Summer Flood Left Black Kemet",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Deshret",
+                    "gloss": "Yearly inundation soaked river banks; Black Kemet edged red Deshret.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Yearly inundation soaked river banks",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Deshret",
+                        "gloss": "Yearly inundation soaked river banks"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Black Kemet edged red Deshret",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Deshret",
+                        "gloss": "Black Kemet edged red Deshret"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Rich Silt Invited Canal Farms",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Kemet",
+                    "gloss": "Stopped desert sand starving Egypt; Gave damp soil every summer.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Stopped desert sand starving Egypt",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Kemet",
+                        "gloss": "Stopped desert sand starving Egypt"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Gave damp soil every summer",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Kemet",
+                        "gloss": "Gave damp soil every summer"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Shadufs, Papyrus & Nile Boats",
+                "dateChip": "c. 3500–3100 BC",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "shaduf",
+                "gloss": "Farmers swung wooden shaduf levers to water wheat, barley, and flax while wooden boats drifted north and sailed south.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Shaduf Levers Lifted Cool Water",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "shaduf",
+                    "gloss": "Dug neat mud irrigation ditches; Mud weight watered higher gardens.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Dug neat mud irrigation ditches",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "shaduf",
+                        "gloss": "Dug neat mud irrigation ditches"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Mud weight watered higher gardens",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "shaduf",
+                        "gloss": "Mud weight watered higher gardens"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Wheat, Flax, Papyrus & Boats",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "papyrus",
+                    "gloss": "Grew bread wheat and flax; Drifted north, sailed back south.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Grew bread wheat and flax",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "papyrus",
+                        "gloss": "Grew bread wheat and flax"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Drifted north, sailed back south",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "papyrus",
+                        "gloss": "Drifted north, sailed back south"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Linked Valley & Delta Towns",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "wooden boats",
+                    "gloss": "Cut tall marsh papyrus reeds; Carried grain along busy Nile.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Cut tall marsh papyrus reeds",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "wooden boats",
+                        "gloss": "Cut tall marsh papyrus reeds"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Carried grain along busy Nile",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "wooden boats",
+                        "gloss": "Carried grain along busy Nile"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Narmer Unites Two Lands",
+                "dateChip": "c. 3100 BC",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "King Narmer",
+                "gloss": "Around 3100 BC, southern warrior King Narmer united hilly Upper Egypt and marshy Lower Egypt under one Double Crown.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Rival Kings Split Two Lands",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Upper Egypt",
+                    "gloss": "Nile flowed north downhill seaward; Southern Upper vs marshy Lower.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Nile flowed north downhill seaward",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Upper Egypt",
+                        "gloss": "Nile flowed north downhill seaward"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Southern Upper vs marshy Lower",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Upper Egypt",
+                        "gloss": "Southern Upper vs marshy Lower"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Narmer Joined Red & White Crowns",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Narmer Palette",
+                    "gloss": "Marched north around 3100 BC; Carved famous stone Narmer Palette.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Marched north around 3100 BC",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Narmer Palette",
+                        "gloss": "Marched north around 3100 BC"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Carved famous stone Narmer Palette",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Narmer Palette",
+                        "gloss": "Carved famous stone Narmer Palette"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ One Kingdom Ready for Pyramids",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Double Crown",
+                    "gloss": "Rulers wore united Double Crown; Funded Old Kingdom royal builders.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Rulers wore united Double Crown",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Double Crown",
+                        "gloss": "Rulers wore united Double Crown"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Funded Old Kingdom royal builders",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Double Crown",
+                        "gloss": "Funded Old Kingdom royal builders"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Giza Pyramids & The Sphinx",
+            "dateChip": "c. 2670–2500 BC",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Great Pyramid",
+            "q2Chain": "Imhotep’s Step Pyramid & Khufu’s Great Pyramid → Barges & wet-sand sledges → Paid builders’ village & Khafre’s Great Sphinx",
+            "gloss": "Imhotep’s Step Pyramid & Khufu’s Great Pyramid → Barges & wet-sand sledges → Paid builders’ village & Khafre’s Great Sphinx",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Imhotep & Khufu’s Great Pyramid",
+                "dateChip": "c. 2670–2560 BC",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Imhotep",
+                "gloss": "Honouring Pharaohs as living gods, Imhotep stacked Djoser’s Step Pyramid before Khufu raised Giza’s 146-metre Great Pyramid.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Pharaohs Honoured as Living Gods",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Old Kingdom",
+                    "gloss": "Kept order and good floods; Replaced low mud-brick royal tombs.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Kept order and good floods",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Old Kingdom",
+                        "gloss": "Kept order and good floods"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Replaced low mud-brick royal tombs",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Old Kingdom",
+                        "gloss": "Replaced low mud-brick royal tombs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Step Pyramid to 146m Giza Giant",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Khufu",
+                    "gloss": "Imhotep stacked six Saqqara steps; Khufu stacked 2.3 million blocks.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Imhotep stacked six Saqqara steps",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Khufu",
+                        "gloss": "Imhotep stacked six Saqqara steps"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Khufu stacked 2.3 million blocks",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Khufu",
+                        "gloss": "Khufu stacked 2.3 million blocks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Needed Clever Stone Transport",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "limestone",
+                    "gloss": "Tallest building for 4,000 years; Built without cranes or wheels.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Tallest building for 4,000 years",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "limestone",
+                        "gloss": "Tallest building for 4,000 years"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Built without cranes or wheels",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "limestone",
+                        "gloss": "Built without cranes or wheels"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Chisels, Barges & Wet Sand",
+                "dateChip": "c. 2560 BC",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Tura limestone",
+                "gloss": "Masons split quarry rock with copper chisels, floated white Tura limestone on flood barges, and pulled sledges over wet sand.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Copper Chisels & Flood Barges",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "copper chisels",
+                    "gloss": "Soaked wood wedges split stone; Floated white Tura limestone blocks.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Soaked wood wedges split stone",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "copper chisels",
+                        "gloss": "Soaked wood wedges split stone"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Floated white Tura limestone blocks",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "copper chisels",
+                        "gloss": "Floated white Tura limestone blocks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Water Poured Ahead of Sledges",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "sledges",
+                    "gloss": "Tied two-tonne blocks on sledges; Wet sand halved rubbing friction.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Tied two-tonne blocks on sledges",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "sledges",
+                        "gloss": "Tied two-tonne blocks on sledges"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Wet sand halved rubbing friction",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "sledges",
+                        "gloss": "Wet sand halved rubbing friction"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Hauled Blocks Up Sloping Ramps",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "ramps",
+                    "gloss": "Crews pulled smoothly from harbour; Left builders’ clues beside Giza.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Crews pulled smoothly from harbour",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "ramps",
+                        "gloss": "Crews pulled smoothly from harbour"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Left builders’ clues beside Giza",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "ramps",
+                        "gloss": "Left builders’ clues beside Giza"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Paid Builders & The Great Sphinx",
+                "dateChip": "c. 2560–2500 BC",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Great Sphinx",
+                "gloss": "Excavated bakeries, fish rations, and healed bones proved paid skilled workers — not slaves — built Giza and Khafre’s Great Sphinx.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bakeries, Fish & Set Bones",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "bakeries",
+                    "gloss": "Walled villages fed beef, fish; Doctors set broken worker bones.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Walled villages fed beef, fish",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "bakeries",
+                        "gloss": "Walled villages fed beef, fish"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Doctors set broken worker bones",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "bakeries",
+                        "gloss": "Doctors set broken worker bones"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Khafre Carved the Great Sphinx",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Khafre",
+                    "gloss": "Lion body with royal head; Carved straight from limestone ridge.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Lion body with royal head",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Khafre",
+                        "gloss": "Lion body with royal head"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Carved straight from limestone ridge",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Khafre",
+                        "gloss": "Carved straight from limestone ridge"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Busted the Unpaid Slave Myth",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "archaeology",
+                    "gloss": "Paid farmers worked proud teams; Proved organised Egyptian society worked.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Paid farmers worked proud teams",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "archaeology",
+                        "gloss": "Paid farmers worked proud teams"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Proved organised Egyptian society worked",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "archaeology",
+                        "gloss": "Proved organised Egyptian society worked"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "2. Daily Life, Scribes & Gods",
+        "dateChip": "c. 2500–1000 BC",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Rosetta Stone",
+        "gloss": "Egypt’s social pyramid linked peasant farmers and mud-brick homes to elite hieroglyph scribes, 70-day mummification, and Weighing the Heart.",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Scribes & Everyday Life",
+            "dateChip": "c. 2500–1200 BC",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Rosetta Stone",
+            "q2Chain": "Pharaohs to farmers on social pyramid → Cool mud-brick homes, linen & Senet → Champollion cracks Rosetta Stone (1822)",
+            "gloss": "Pharaohs to farmers on social pyramid → Cool mud-brick homes, linen & Senet → Champollion cracks Rosetta Stone (1822)",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Egypt’s Layered Social Pyramid",
+                "dateChip": "c. 2500–1200 BC",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "viziers",
+                "gloss": "Below the god-king Pharaoh stood viziers, priests, and scribes, while craftworkers and millions of peasant farmers formed the base.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Pharaoh, Viziers, Priests & Scribes",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "social pyramid",
+                    "gloss": "Viziers and priests advised Pharaoh; Scribes counted grain and taxes.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Viziers and priests advised Pharaoh",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "social pyramid",
+                        "gloss": "Viziers and priests advised Pharaoh"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Scribes counted grain and taxes",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "social pyramid",
+                        "gloss": "Scribes counted grain and taxes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Craftworkers & Peasant Farmers",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "peasant farmers",
+                    "gloss": "Made blue glaze hippo William; Farmers’ grain taxes fed Egypt.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Made blue glaze hippo William",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "peasant farmers",
+                        "gloss": "Made blue glaze hippo William"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Farmers’ grain taxes fed Egypt",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "peasant farmers",
+                        "gloss": "Farmers’ grain taxes fed Egypt"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Shared Clever Nile Home Life",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "craftworkers",
+                    "gloss": "Potters, weavers, jewellers filled towns; Adapted daily life to heat.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Potters, weavers, jewellers filled towns",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "craftworkers",
+                        "gloss": "Potters, weavers, jewellers filled towns"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Adapted daily life to heat",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "craftworkers",
+                        "gloss": "Adapted daily life to heat"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Mud-Brick Homes, Linen & Senet",
+                "dateChip": "c. 2500–1200 BC",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Senet",
+                "gloss": "Families stayed cool inside whitewashed mud-brick houses with flat roofs, wore white flax linen, and raced counters on Senet boards.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Blazing Desert Sun Needed Shade",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "mud-brick houses",
+                    "gloss": "Whitewashed walls bounced away heat; Families slept on flat roofs.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Whitewashed walls bounced away heat",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "mud-brick houses",
+                        "gloss": "Whitewashed walls bounced away heat"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Families slept on flat roofs",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "mud-brick houses",
+                        "gloss": "Families slept on flat roofs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "White Linen, Figs & Senet Games",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "white linen",
+                    "gloss": "Wore airy linen, reed sandals; Baked flatbread with figs, lentils.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Wore airy linen, reed sandals",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "white linen",
+                        "gloss": "Wore airy linen, reed sandals"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Baked flatbread with figs, lentils",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "white linen",
+                        "gloss": "Baked flatbread with figs, lentils"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Scribes Recorded Daily Voices",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Senet",
+                    "gloss": "Raced counters across thirty squares; Papyrus scrolls preserved Egyptian life.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Raced counters across thirty squares",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Senet",
+                        "gloss": "Raced counters across thirty squares"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Papyrus scrolls preserved Egyptian life",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Senet",
+                        "gloss": "Papyrus scrolls preserved Egyptian life"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "700+ Hieroglyphs & Rosetta Stone",
+                "dateChip": "196 BC & AD 1822",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Champollion",
+                "gloss": "Scribes brushed over 700 hieroglyphs onto papyrus; in 1822 Jean-François Champollion cracked the code using the Rosetta Stone.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Strict Scribe School & Papyrus",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "hieroglyphs",
+                    "gloss": "Practised 700+ signs with reeds; Script forgotten for long centuries.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Practised 700+ signs with reeds",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "hieroglyphs",
+                        "gloss": "Practised 700+ signs with reeds"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Script forgotten for long centuries",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "hieroglyphs",
+                        "gloss": "Script forgotten for long centuries"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Champollion Cracked Code in 1822",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Rosetta Stone",
+                    "gloss": "1799 soldiers dug Rosetta Stone; Matched Greek names to cartouches.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "1799 soldiers dug Rosetta Stone",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Rosetta Stone",
+                        "gloss": "1799 soldiers dug Rosetta Stone"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Matched Greek names to cartouches",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Rosetta Stone",
+                        "gloss": "Matched Greek names to cartouches"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Unlocked 3,000 Years of Writing",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "cartouches",
+                    "gloss": "Carved in 196 BC scripts; Let historians read tomb prayers.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Carved in 196 BC scripts",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "cartouches",
+                        "gloss": "Carved in 196 BC scripts"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Let historians read tomb prayers",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "cartouches",
+                        "gloss": "Let historians read tomb prayers"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Gods, Mummies & Afterlife",
+            "dateChip": "c. 2000–1000 BC",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "mummification",
+            "q2Chain": "Polytheistic gods & twin spirits (ka and ba) → 70-day natron mummification & Canopic jars → Weighing the Heart before Osiris",
+            "gloss": "Polytheistic gods & twin spirits (ka and ba) → 70-day natron mummification & Canopic jars → Weighing the Heart before Osiris",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Gods & Twin Spirits (Ka & Ba)",
+                "dateChip": "c. 2000–1000 BC",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Osiris",
+                "gloss": "Egyptians worshipped Ra, Osiris, Isis, Horus, Anubis, and Thoth, believing twin ka and ba spirits needed a preserved body.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Ra, Osiris, Isis, Horus & Anubis",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "polytheistic",
+                    "gloss": "Sun god Ra sailed sky; Jackal-headed Anubis guarded sandy tombs.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Sun god Ra sailed sky",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "polytheistic",
+                        "gloss": "Sun god Ra sailed sky"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Jackal-headed Anubis guarded sandy tombs",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "polytheistic",
+                        "gloss": "Jackal-headed Anubis guarded sandy tombs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Ka & Ba Needed Lasting Body",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "winged",
+                    "gloss": "Ibis-headed Thoth wrote sacred wisdom; Rotted bodies left spirits homeless.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Ibis-headed Thoth wrote sacred wisdom",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "winged",
+                        "gloss": "Ibis-headed Thoth wrote sacred wisdom"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Rotted bodies left spirits homeless",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "winged",
+                        "gloss": "Rotted bodies left spirits homeless"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Priests Invented 70-Day Mummies",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Anubis",
+                    "gloss": "Falcon Horus guarded living pharaohs; Drove careful tomb preservation rituals.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Falcon Horus guarded living pharaohs",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Anubis",
+                        "gloss": "Falcon Horus guarded living pharaohs"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Drove careful tomb preservation rituals",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Anubis",
+                        "gloss": "Drove careful tomb preservation rituals"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "70 Days: Natron & Canopic Jars",
+                "dateChip": "70-Day Ritual",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Canopic jars",
+                "gloss": "Over seventy days, priests stored four organs in Canopic jars, left the heart inside, dried skin in natron salt, and wrapped linen.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Four Canopic Jars & Natron Salt",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "natron",
+                    "gloss": "Kept heart inside for memories; Dried forty days in natron.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Kept heart inside for memories",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "natron",
+                        "gloss": "Kept heart inside for memories"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Dried forty days in natron",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "natron",
+                        "gloss": "Dried forty days in natron"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Linen Wraps, Scarab & Shabtis",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "shabti",
+                    "gloss": "Tucked heart scarab over chest; Blue shabtis farmed in afterlife.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Tucked heart scarab over chest",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "shabti",
+                        "gloss": "Tucked heart scarab over chest"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Blue shabtis farmed in afterlife",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "shabti",
+                        "gloss": "Blue shabtis farmed in afterlife"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Ready for Hall of Two Truths",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "linen bandages",
+                    "gloss": "Rubbed sweet oils on skin; Prepared spirit for final judgement.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Rubbed sweet oils on skin",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "linen bandages",
+                        "gloss": "Rubbed sweet oils on skin"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Prepared spirit for final judgement",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "linen bandages",
+                        "gloss": "Prepared spirit for final judgement"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Weighing the Heart Before Osiris",
+                "dateChip": "Afterlife Trial",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "Field of Reeds",
+                "gloss": "Guided by Book of the Dead scrolls, Anubis weighed each heart against Ma’at’s feather of truth beside hungry monster Ammit.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Heart Balanced Against Ma’at Feather",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "feather of truth",
+                    "gloss": "Book of the Dead guided; Thoth wrote down scale result.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Book of the Dead guided",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "feather of truth",
+                        "gloss": "Book of the Dead guided"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Thoth wrote down scale result",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "feather of truth",
+                        "gloss": "Thoth wrote down scale result"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Monster Ammit vs Field of Reeds",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Ammit",
+                    "gloss": "Ammit gobbled heavy mean hearts; Kind hearts entered sunny Reeds.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Ammit gobbled heavy mean hearts",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Ammit",
+                        "gloss": "Ammit gobbled heavy mean hearts"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Kind hearts entered sunny Reeds",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Ammit",
+                        "gloss": "Kind hearts entered sunny Reeds"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Taught Kind & Honest Living",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Weighing the Heart",
+                    "gloss": "Osiris welcomed light honest hearts; Shaped morals across all Egypt.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Osiris welcomed light honest hearts",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Weighing the Heart",
+                        "gloss": "Osiris welcomed light honest hearts"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Shaped morals across all Egypt",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Weighing the Heart",
+                        "gloss": "Shaped morals across all Egypt"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "3. Great Rulers & KV62 Tomb",
+        "dateChip": "c. 1500 BC–AD 1922",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Hatshepsut",
+        "gloss": "New Kingdom rulers Hatshepsut, Nefertiti, and Ramesses II shaped Egypt’s golden age before Cleopatra VII fell to Rome and Howard Carter opened Tutankhamun’s tomb.",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Hatshepsut to Ramesses II",
+            "dateChip": "c. 1500–1213 BC",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Hatshepsut",
+            "q2Chain": "Hatshepsut’s Punt trade expedition → Akhenaten & Nefertiti worship Aten at Amarna → Ramesses II’s Kadesh peace treaty & Abu Simbel",
+            "gloss": "Hatshepsut’s Punt trade expedition → Akhenaten & Nefertiti worship Aten at Amarna → Ramesses II’s Kadesh peace treaty & Abu Simbel",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Pharaoh Hatshepsut & Punt Ships",
+                "dateChip": "c. 1479–1458 BC",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Land of Punt",
+                "gloss": "Crowning herself full pharaoh with the royal false beard, Hatshepsut sailed five ships to Punt for gold and living incense trees.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Female Pharaoh Wore False Beard",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "royal false beard",
+                    "gloss": "Ruled New Kingdom from Thebes; Wore striped royal kingly headcloth.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Ruled New Kingdom from Thebes",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "royal false beard",
+                        "gloss": "Ruled New Kingdom from Thebes"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Wore striped royal kingly headcloth",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "royal false beard",
+                        "gloss": "Wore striped royal kingly headcloth"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Five Ships Sailed to Punt",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "frankincense",
+                    "gloss": "Brought gold, ebony, frankincense trees; Carved cliff Deir el-Bahari temple.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Brought gold, ebony, frankincense trees",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "frankincense",
+                        "gloss": "Brought gold, ebony, frankincense trees"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Carved cliff Deir el-Bahari temple",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "frankincense",
+                        "gloss": "Carved cliff Deir el-Bahari temple"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Peaceful Trade Enriched Karnak",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Karnak",
+                    "gloss": "Chose Red Sea trade first; Funded grand New Kingdom temples.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Chose Red Sea trade first",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Karnak",
+                        "gloss": "Chose Red Sea trade first"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Funded grand New Kingdom temples",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Karnak",
+                        "gloss": "Funded grand New Kingdom temples"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Akhenaten & Nefertiti at Amarna",
+                "dateChip": "c. 1353–1336 BC",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Nefertiti",
+                "gloss": "Akhenaten and powerful Queen Nefertiti shocked priests by building desert Amarna to worship one golden sun-disc called Aten.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Worshipped One Sun-Disc Aten",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Aten",
+                    "gloss": "Turned away from old gods; Built brand-new capital at Amarna.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Turned away from old gods",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Aten",
+                        "gloss": "Turned away from old gods"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Built brand-new capital at Amarna",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Aten",
+                        "gloss": "Built brand-new capital at Amarna"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Nefertiti’s Chariots & Blue Bust",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Amarna",
+                    "gloss": "Led offerings beside her husband; Thutmose carved painted limestone bust.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Led offerings beside her husband",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Amarna",
+                        "gloss": "Led offerings beside her husband"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Thutmose carved painted limestone bust",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Amarna",
+                        "gloss": "Thutmose carved painted limestone bust"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Priests Restored Old Gods Fast",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Akhenaten",
+                    "gloss": "Shocked traditional priests at Karnak; Old worship returned after death.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Shocked traditional priests at Karnak",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Akhenaten",
+                        "gloss": "Shocked traditional priests at Karnak"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Old worship returned after death",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Akhenaten",
+                        "gloss": "Old worship returned after death"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Ramesses II, Kadesh & Abu Simbel",
+                "dateChip": "1279–1213 BC",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Abu Simbel",
+                "gloss": "Ruling 66 years, Ramesses II fought Hittite chariots at Kadesh, signed the oldest written peace treaty, and carved Abu Simbel.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Chariot Clash at Kadesh (1274 BC)",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Kadesh",
+                    "gloss": "Fought Hittites; neither side won; Ruled Egypt sixty-six long years.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Fought Hittites; neither side won",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Kadesh",
+                        "gloss": "Fought Hittites; neither side won"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Ruled Egypt sixty-six long years",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Kadesh",
+                        "gloss": "Ruled Egypt sixty-six long years"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1259 BC Peace & 20m Colossi",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "peace treaty",
+                    "gloss": "Oldest surviving written peace treaty; Carved four 20m Abu Simbel statues.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Oldest surviving written peace treaty",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "peace treaty",
+                        "gloss": "Oldest surviving written peace treaty"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Carved four 20m Abu Simbel statues",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "peace treaty",
+                        "gloss": "Carved four 20m Abu Simbel statues"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Won Decades of Border Peace",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Ramesses the Great",
+                    "gloss": "Sunbeams lit cliff temple twice; Earned title Ramesses the Great.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Sunbeams lit cliff temple twice",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Ramesses the Great",
+                        "gloss": "Sunbeams lit cliff temple twice"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Earned title Ramesses the Great",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Ramesses the Great",
+                        "gloss": "Earned title Ramesses the Great"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Tutankhamun & Cleopatra VII",
+            "dateChip": "1332–30 BC & 1922",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Tutankhamun",
+            "q2Chain": "Tutankhamun hidden under rubble in KV62 (1323 BC) → Carter & Egyptian team open KV62 (1922) → Cleopatra VII & Roman conquest (30 BC)",
+            "gloss": "Tutankhamun hidden under rubble in KV62 (1323 BC) → Carter & Egyptian team open KV62 (1922) → Cleopatra VII & Roman conquest (30 BC)",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Boy-King Hidden Inside KV62",
+                "dateChip": "1332–1323 BC",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "KV62",
+                "gloss": "Crowned aged nine, Tutankhamun died aged nineteen in 1323 BC; limestone rubble hid his small Valley of the Kings tomb from robbers.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Pyramids Tempted Greedy Robbers",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Valley of the Kings",
+                    "gloss": "Cut secret desert cliff tombs; Crowned boy-pharaoh aged just nine.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Cut secret desert cliff tombs",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Valley of the Kings",
+                        "gloss": "Cut secret desert cliff tombs"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Crowned boy-pharaoh aged just nine",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Valley of the Kings",
+                        "gloss": "Crowned boy-pharaoh aged just nine"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Rubble Hid KV62’s Buried Steps",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "1323 BC",
+                    "gloss": "Died suddenly aged nineteen years; Later builders dumped limestone rubble.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Died suddenly aged nineteen years",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "1323 BC",
+                        "gloss": "Died suddenly aged nineteen years"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Later builders dumped limestone rubble",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "1323 BC",
+                        "gloss": "Later builders dumped limestone rubble"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Escaped Thieves Until AD 1922",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "KV62",
+                    "gloss": "Huge nearby tombs were robbed; Golden treasures slept 3,200 years.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Huge nearby tombs were robbed",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "KV62",
+                        "gloss": "Huge nearby tombs were robbed"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Golden treasures slept 3,200 years",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "KV62",
+                        "gloss": "Golden treasures slept 3,200 years"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "1922: Opening KV62’s Treasures",
+                "dateChip": "November 1922",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Howard Carter",
+                "gloss": "In November 1922, water-boy Hussein Abdel Rassoul found the top step, leading Howard Carter and Egyptian excavators to 5,000 treasures.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Hussein Spotted First Stone Step",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Hussein Abdel Rassoul",
+                    "gloss": "Cleared sixteen buried stone steps; Carter gasped at wonderful things.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Cleared sixteen buried stone steps",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Hussein Abdel Rassoul",
+                        "gloss": "Cleared sixteen buried stone steps"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Carter gasped at wonderful things",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Hussein Abdel Rassoul",
+                        "gloss": "Carter gasped at wonderful things"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "5,000 Finds & 11kg Gold Mask",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "death mask",
+                    "gloss": "Gilded chariots, thrones, Senet boards; Solid 11kg gold death mask.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Gilded chariots, thrones, Senet boards",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "death mask",
+                        "gloss": "Gilded chariots, thrones, Senet boards"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "Solid 11kg gold death mask",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "death mask",
+                        "gloss": "Solid 11kg gold death mask"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Why It Mattered",
+                    "label": "Richest Intact Royal Tomb Found",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "sarcophagus",
+                    "gloss": "Took ten years to catalogue; Shared Egyptian craftwork worldwide.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Took ten years to catalogue",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "sarcophagus",
+                        "gloss": "Took ten years to catalogue"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Shared Egyptian craftwork worldwide",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "sarcophagus",
+                        "gloss": "Shared Egyptian craftwork worldwide"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "Alexandria & Queen Cleopatra VII",
+                "dateChip": "332–30 BC",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Cleopatra VII",
+                "gloss": "After Alexander founded Alexandria in 332 BC, nine-language Ptolemaic Queen Cleopatra VII ruled wisely until Roman armies won in 30 BC.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Alexander Founded Port Alexandria",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Alexandria",
+                    "gloss": "Built tall lighthouse and library; Began Greek-speaking Ptolemaic dynasty.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Built tall lighthouse and library",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Alexandria",
+                        "gloss": "Built tall lighthouse and library"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Began Greek-speaking Ptolemaic dynasty",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Alexandria",
+                        "gloss": "Began Greek-speaking Ptolemaic dynasty"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Nine-Language Cleopatra vs Rome",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Cleopatra VII",
+                    "gloss": "Learned Egyptian plus eight languages; Roman fleet defeated her 30 BC.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Learned Egyptian plus eight languages",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Cleopatra VII",
+                        "gloss": "Learned Egyptian plus eight languages"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "Roman fleet defeated her 30 BC",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Cleopatra VII",
+                        "gloss": "Roman fleet defeated her 30 BC"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Ended 3,000 Years of Pharaohs",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "30 BC",
+                    "gloss": "Turned Egypt into Roman province; Ancient wonders still amaze today.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Turned Egypt into Roman province",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "30 BC",
+                        "gloss": "Turned Egypt into Roman province"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Ancient wonders still amaze today",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "30 BC",
+                        "gloss": "Ancient wonders still amaze today"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
