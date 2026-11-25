@@ -1,0 +1,1140 @@
+{
+  "unit_id": "australia",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Public scientific cover",
+            "bullet": "Royal Society voyage officially carried Joseph Banks to Tahiti → observed Venus crossing the Sun"
+          },
+          {
+            "hint": "Locked naval directive",
+            "bullet": "Sealed Admiralty orders commanded Cook south into uncharted waters → searched for Terra Australis"
+          },
+          {
+            "hint": "Imperial race",
+            "bullet": "Instructed to claim southern territories for King George III → beat rival European empires"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Global Anglo-French rivalry",
+            "bullet": "Britain and France competed globally after 1763 → Pacific exploration served imperial expansion"
+          },
+          {
+            "hint": "Native consent clause",
+            "bullet": "Admiralty instructions required local consent before claiming inhabited land → Cook later ignored this"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PUBLIC MISSION",
+            "stem": "Officially, HMS Endeavour sailed to Tahiti so ____________ could record the ____________."
+          },
+          {
+            "badge": "SEALED DIRECTIVE",
+            "stem": "Once that astronomical task ended, locked ____________ ordered Cook south to find ____________."
+          },
+          {
+            "badge": "IMPERIAL RIVALRY",
+            "stem": "The British Crown wanted this territory claimed for ____________ before ____________ could seize it."
+          }
+        ],
+        "watch_out": "HMS Endeavour was not purely a peaceful science mission—Cook carried sealed naval orders for imperial annexation.",
+        "prose_hash": "926aac16ae",
+        "prose_fp": "23440120",
+        "question_hash": "a542666d2d"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Natural ocean signs",
+            "bullet": "Tahitian high priest Tupaia read stars, swells, birds, and clouds → guided Endeavour without instruments"
+          },
+          {
+            "hint": "Master island map",
+            "bullet": "Drafted a sweeping Pacific chart plotting over 130 islands → filled vast gaps in European maps"
+          },
+          {
+            "hint": "Cultural diplomacy",
+            "bullet": "Shared Polynesian linguistic roots with Māori communities → acted as vital translator in New Zealand"
+          }
+        ],
+        "context": [
+          {
+            "hint": "European map limits",
+            "bullet": "Eighteenth-century British naval charts left most of the South Pacific blank → Indigenous expertise proved essential"
+          },
+          {
+            "hint": "Ancestral voyaging",
+            "bullet": "Polynesian navigators had crossed open Pacific oceans for centuries → passed wayfinding down orally"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WAYFINDING SKILLS",
+            "stem": "Without reliable European maps, Cook relied on ____________, who navigated using ____________ rather than instruments."
+          },
+          {
+            "badge": "CARTOGRAPHIC RECORD",
+            "stem": "Drawing on ancestral Pacific knowledge, this Arioi priest charted over ____________ across thousands of miles."
+          },
+          {
+            "badge": "CULTURAL MEDIATION",
+            "stem": "When the expedition reached New Zealand, his shared language roots allowed him to ____________ with ____________."
+          }
+        ],
+        "watch_out": "Cook did not navigate the South Pacific unaided—Tahitian master navigator Tupaia provided crucial wayfinding and diplomacy.",
+        "prose_hash": "b3eb01c0b1",
+        "prose_fp": "b5cce3b8",
+        "question_hash": "245eef9320"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Shoreline warning",
+            "bullet": "Two Gweagal warriors of the Dharawal nation brandished spears → followed defensive protocol to forbid landing"
+          },
+          {
+            "hint": "Armed British response",
+            "bullet": "Cook treated territorial defence as hostility and fired muskets → wounded one warrior in the leg"
+          },
+          {
+            "hint": "Forced landing",
+            "bullet": "Warriors retreated behind coastal dunes → British landing party came ashore through armed force"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ancient sovereignty",
+            "bullet": "First Nations clans had governed coastal country for 65,000 years → entry required customary permission"
+          },
+          {
+            "hint": "Taken Gweagal artefacts",
+            "bullet": "Cook’s crew seized spears and a bark shield after the clash → shipped to London museums"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DEFENSIVE PROTOCOL",
+            "stem": "As British rowing boats neared the shore in April 1770, two ____________ shouted warnings to ____________."
+          },
+          {
+            "badge": "MUSKET VIOLENCE",
+            "stem": "Misreading customary boundary defence as aggression, Cook ordered ____________, leaving one defender ____________."
+          },
+          {
+            "badge": "COERCED LANDING",
+            "stem": "Once the defenders pulled back behind the dunes, the British stepped ashore under ____________ rather than welcome."
+          }
+        ],
+        "watch_out": "Gweagal warriors were not launching an unprovoked attack—they were enforcing ancient legal protocols protecting Dharawal country.",
+        "prose_hash": "690d7dbc4a",
+        "prose_fp": "76de258a",
+        "question_hash": "dd96d1595f"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Torres Strait ceremony",
+            "bullet": "Hoisted the Union Jack on Possession Island → claimed eastern Australia for King George III"
+          },
+          {
+            "hint": "Ignored consent rule",
+            "bullet": "Admiralty orders permitted claiming inhabited lands only with native consent → Cook sought zero Indigenous agreement"
+          },
+          {
+            "hint": "Clear coastal evidence",
+            "bullet": "Four months sailing north had revealed campfires and coastal peoples → proved the continent was inhabited"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Botany Bay clash",
+            "bullet": "Gweagal warriors had already resisted Cook’s landing in April → directly disproved any willing consent"
+          },
+          {
+            "hint": "Unilateral seizure",
+            "bullet": "Unlike British treaties signed later in New Zealand → eastern Australia was claimed without Indigenous negotiation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "UNILATERAL CLAIM",
+            "stem": "In August 1770, Cook landed off Cape York, raised ____________, and claimed the eastern coast for ____________."
+          },
+          {
+            "badge": "BREACHED INSTRUCTIONS",
+            "stem": "This ceremony directly broke his Admiralty orders, which stated inhabited land required ____________."
+          },
+          {
+            "badge": "WITNESSED OCCUPATION",
+            "stem": "Having encountered warriors at ____________ and sighted peoples along the coast, Cook knew the land was ____________."
+          }
+        ],
+        "watch_out": "Cook never claimed the entire continent at Botany Bay—he claimed the eastern coast months later on Possession Island.",
+        "prose_hash": "62f8693991",
+        "prose_fp": "d005337c",
+        "question_hash": "00ceef18e7"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Eurocentric property test",
+            "bullet": "British law equated land ownership with fences, iron ploughs, and towns → dismissed Indigenous custodianship"
+          },
+          {
+            "hint": "Empty land myth",
+            "bullet": "Jurists declared the continent terra nullius, land belonging to nobody → erased First Nations legal sovereignty"
+          },
+          {
+            "hint": "Treatyless seizure",
+            "bullet": "Crown refused to sign treaties with clan elders → triggered two centuries of uncompensated dispossession"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Sophisticated land care",
+            "bullet": "Over 250 Indigenous nations actively managed country through fire-stick farming → contradicted Cook’s nomad myth"
+          },
+          {
+            "hint": "Mabo High Court",
+            "bullet": "Terra nullius stood in Australian law until 1992 → overturned at last by Eddie Mabo’s case"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EUROCENTRIC LAW",
+            "stem": "Relying on flawed accounts, British jurists judged ownership by European markers such as ____________ and ____________."
+          },
+          {
+            "badge": "LEGAL ERASURE",
+            "stem": "Classifying Australia as ____________ meant the Crown treated inhabited country as land belonging to ____________."
+          },
+          {
+            "badge": "LASTING DISPOSSESSION",
+            "stem": "Consequently, Britain negotiated zero ____________ with clan elders and stripped First Nations peoples of ____________."
+          }
+        ],
+        "watch_out": "Terra nullius did not mean the British saw zero people—it meant European law refused to recognise Indigenous land ownership.",
+        "prose_hash": "c0f679d6b7",
+        "prose_fp": "6fa07e2e",
+        "question_hash": "ea07264ed8"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Closed Atlantic outlet",
+            "bullet": "American independence in 1783 ended transatlantic convict transportation → triggered an urgent British prison crisis"
+          },
+          {
+            "hint": "Bloody Code & hulks",
+            "bullet": "Harsh property laws packed rotting Thames prison hulks → bred deadly typhus and dangerous overcrowding"
+          },
+          {
+            "hint": "Pitt’s Pacific solution",
+            "bullet": "Prime Minister William Pitt selected distant Botany Bay → exported convicts far from London"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cook’s earlier survey",
+            "bullet": "Joseph Banks promoted Botany Bay after the 1770 voyage → persuaded Parliament to colonise eastern Australia"
+          },
+          {
+            "hint": "Naval Pacific base",
+            "bullet": "Settling New South Wales also secured Pacific trade routes → countered rival French naval ambitions"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLOSED OUTLET",
+            "stem": "Defeat in the 1783 War of Independence stopped Britain transporting convicted felons to ____________."
+          },
+          {
+            "badge": "PRISON CRISIS",
+            "stem": "Meanwhile, harsh ____________ convictions crammed minor offenders onto rotting ____________, where ____________ spread rapidly."
+          },
+          {
+            "badge": "GOVERNMENT DECISION",
+            "stem": "To relieve overflowing jails, Prime Minister ____________ ordered a new penal settlement at ____________."
+          }
+        ],
+        "watch_out": "Most transported convicts were petty urban thieves convicted under the Bloody Code, not hardened violent murderers.",
+        "prose_hash": "32eb71fd13",
+        "prose_fp": "fa9e5b9d",
+        "question_hash": "c557e95c85"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Clean air & decks",
+            "bullet": "Governor Arthur Phillip enforced strict shipboard hygiene and deck ventilation → curbed deadly typhus outbreaks"
+          },
+          {
+            "hint": "Supply stops",
+            "bullet": "Resupplied across 15,000 miles at Rio de Janeiro and Cape Town → kept drinking water fresh"
+          },
+          {
+            "hint": "Survival record",
+            "bullet": "Fewer than fifty died across eleven ships → remarkable survival for an eight-month ocean voyage"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Later Second Fleet",
+            "bullet": "Private contractors ran the 1790 Second Fleet for profit → starved convicts suffered catastrophic death rates"
+          },
+          {
+            "hint": "Thames hulk contrast",
+            "bullet": "Many convicts boarded already weakened from disease-ridden Thames hulks → made Phillip’s low mortality extraordinary"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHIPBOARD DISCIPLINE",
+            "stem": "Commanding eleven ships across 15,000 miles, Captain ____________ insisted on strict ____________ and ____________ below decks."
+          },
+          {
+            "badge": "FRESH PROVISIONS",
+            "stem": "Calling at ports such as ____________ and ____________ ensured convicts received clean ____________ during the eight-month crossing."
+          },
+          {
+            "badge": "LOW MORTALITY",
+            "stem": "Through these precautions, fewer than ____________ out of over 750 convicts perished before reaching Australia."
+          }
+        ],
+        "watch_out": "Do not confuse the carefully managed First Fleet with later private convict fleets—Phillip’s strict naval care kept deaths unusually low.",
+        "prose_hash": "f55a830ad6",
+        "prose_fp": "fedf90ba",
+        "question_hash": "bebcc48ecb"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Flawed original site",
+            "bullet": "Botany Bay had shallow water, exposed anchorage, and swampy ground → lacked a reliable freshwater river"
+          },
+          {
+            "hint": "Port Jackson shelter",
+            "bullet": "Scouting north revealed Port Jackson’s deep, sheltered harbour → protected tall ships from ocean storms"
+          },
+          {
+            "hint": "Freshwater supply",
+            "bullet": "Sydney Cove offered a flowing freshwater stream → enabled permanent camp foundation on 26 January 1788"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Seasonal misunderstanding",
+            "bullet": "Cook visited briefly in autumn 1770 → missed how dry Botany Bay became in January"
+          },
+          {
+            "hint": "Gadigal country",
+            "bullet": "Sydney Cove was Warrane, heartland of the Gadigal clan → British landing dispossessed Eora custodians"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REJECTING BOTANY BAY",
+            "stem": "Upon arriving in January 1788, Phillip rejected Botany Bay due to its ____________, swampy soil, and lack of ____________."
+          },
+          {
+            "badge": "NATURAL HARBOUR",
+            "stem": "Scouting north into ____________, he discovered deep-water anchorages capable of sheltering the entire fleet."
+          },
+          {
+            "badge": "WATER SOURCE",
+            "stem": "Phillip selected ____________ because a dependable ____________ ran directly into the sheltered bay."
+          }
+        ],
+        "watch_out": "The First Fleet anchored first at Botany Bay, not Sydney Harbour—Phillip relocated north after finding Botany Bay unsuitable.",
+        "prose_hash": "81c200fc7b",
+        "prose_fp": "d895ad36",
+        "question_hash": "1a50ebab33"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Unskilled labour & soil",
+            "bullet": "Urban convicts lacked farming skills and planted spoiled English seed in sandy soil → crops failed"
+          },
+          {
+            "hint": "Broken equipment",
+            "bullet": "Cheap iron hoes and axes snapped against dense hardwood roots → stalled land clearing"
+          },
+          {
+            "hint": "Wrecked supply ship",
+            "bullet": "HMS Guardian struck an Antarctic iceberg carrying relief stores → forced drastic ration cuts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ignored Indigenous food",
+            "bullet": "Colonists dismissed Eora yams, bush foods, and fishing methods → starved beside thriving Indigenous ecosystems"
+          },
+          {
+            "hint": "Norfolk Island relief",
+            "bullet": "Phillip shipped hundreds of convicts to fertile Norfolk Island → eased pressure on Sydney’s food stores"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FARMING FAILURES",
+            "stem": "Agricultural production collapsed early on because urban convicts lacked ____________ and Sydney’s ____________ ruined English grain."
+          },
+          {
+            "badge": "BROKEN IMPLEMENTS",
+            "stem": "Clearing the bush proved agonisingly slow as poor-quality ____________ shattered on tough native tree roots."
+          },
+          {
+            "badge": "SUPPLY DISASTER",
+            "stem": "Crisis deepened when relief ship ____________ hit an iceberg, forcing Phillip to ____________ and send people to ____________."
+          }
+        ],
+        "watch_out": "Sydney’s soil was not completely barren everywhere—British settlers tried using European crops and weak tools unsuited to Australian conditions.",
+        "prose_hash": "2aede5c8f1",
+        "prose_fp": "9115ce90",
+        "question_hash": "1c3beab872"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Coerced infrastructure work",
+            "bullet": "Convicts quarried stone and cleared bush all day → built Sydney’s early roads and storehouses"
+          },
+          {
+            "hint": "Corporal discipline",
+            "bullet": "Guards flogged offenders with the cat-o'-nine-tails for drunkenness or insolence → enforced strict penal order"
+          },
+          {
+            "hint": "Emancipist land grants",
+            "bullet": "Freed emancipists like James Ruse received 30-acre Rose Hill farms → achieved vital grain self-sufficiency"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Open-air colony",
+            "bullet": "Early Sydney lacked stone prison walls → relied on rations, flogging, and tickets-of-leave for control"
+          },
+          {
+            "hint": "Parramatta expansion",
+            "bullet": "Fertile emancipist farms around Rose Hill pushed inland → encroached directly onto Dharug hunting country"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HARSH COERCION",
+            "stem": "To maintain penal order, guards enforced dawn-to-dusk labour and punished misconduct with the ____________."
+          },
+          {
+            "badge": "REWARDING INDUSTRY",
+            "stem": "Alongside punishment, Phillip offered ____________ to hardworking ____________ once their sentences expired."
+          },
+          {
+            "badge": "FARMING BREAKTHROUGH",
+            "stem": "At Rose Hill, former convict ____________ harvested wheat and corn, moving the colony toward ____________."
+          }
+        ],
+        "watch_out": "Emancipists were pardoned or time-served former convicts—unlike free settlers, they earned land after enduring transportation.",
+        "prose_hash": "0aeeacc88c",
+        "prose_fp": "a14bb163",
+        "question_hash": "b39fbdbb1a"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Controlled mosaic burning",
+            "bullet": "Practised deliberate fire-stick farming across dry grasslands → prevented destructive bushfires and regenerated wallaby grazing"
+          },
+          {
+            "hint": "Distinct sovereign territories",
+            "bullet": "Over 250 language nations stewarded defined ancestral lands → sustained ecosystems from Eora coast to desert"
+          },
+          {
+            "hint": "Sacred legal tracks",
+            "bullet": "Ancient Songlines wove Dreaming stories, customary law, and navigation → bound clans to care for country"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Terra nullius lie",
+            "bullet": "Park-like pastures admired by British arrivals were human-made → directly refuted the myth of untouched wilderness"
+          },
+          {
+            "hint": "Custodianship versus ownership",
+            "bullet": "Clans belonged to sacred country rather than owning private plots → clashed with British enclosures"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ECOLOGICAL MANAGEMENT",
+            "stem": "Across more than 250 language nations, communities used ____________ to clear dry scrub and encourage fresh ____________."
+          },
+          {
+            "badge": "LAW AND NAVIGATION",
+            "stem": "Spiritual tracks known as ____________ linked Dreaming stories, navigational routes, and ____________ across the continent."
+          },
+          {
+            "badge": "CONTINUOUS SOVEREIGNTY",
+            "stem": "Through these custodial practices, First Nations peoples sustained the world’s oldest ____________ for over ____________."
+          }
+        ],
+        "watch_out": "Fire-stick farming was careful, seasonal ecological engineering—never confuse it with random or uncontrolled bushfires.",
+        "prose_hash": "5980523f00",
+        "prose_fp": "7797e4d7",
+        "question_hash": "528181342b"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Virgin-soil mortality",
+            "bullet": "Lacking biological immunity to gal-galla smallpox → 50 to 70 percent of Eora people died"
+          },
+          {
+            "hint": "Shattered oral archive",
+            "bullet": "Mass deaths of senior elders destroyed oral law and sacred stories → fractured clan governance"
+          },
+          {
+            "hint": "Weakened coastal defence",
+            "bullet": "Survivors fled infected harbour camps in terror → crippled Eora capacity to resist British expansion"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Resource pressure",
+            "bullet": "British netting and tree-felling had already depleted Eora food sources → worsened vulnerability before April 1789"
+          },
+          {
+            "hint": "First Fleet vials",
+            "bullet": "First Fleet surgeons carried variolous smallpox matter in glass bottles → origin remains fiercely debated"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DEMOGRAPHIC COLLAPSE",
+            "stem": "Because First Nations communities possessed zero prior immunity, the April 1789 ____________ outbreak killed ____________ of Eora people."
+          },
+          {
+            "badge": "CULTURAL FRACTURE",
+            "stem": "Losing senior ____________ proved devastating because sacred law, history, and ecological knowledge were preserved orally."
+          },
+          {
+            "badge": "STRATEGIC IMPACT",
+            "stem": "As grieving survivors fled ____________, local clans were left severely weakened against expanding British settlement."
+          }
+        ],
+        "watch_out": "Smallpox did not merely reduce population numbers—losing elders destroyed living libraries of oral law and ceremony.",
+        "prose_hash": "f920ae01fe",
+        "prose_fp": "1017b88e",
+        "question_hash": "cb18c43294"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Forced capture",
+            "bullet": "Kidnapped on Phillip’s orders in 1789 → learned English and mediated between Eora clans and colonists"
+          },
+          {
+            "hint": "Voyage to London",
+            "bullet": "Sailed with Phillip to England in 1792 → returned to Sydney after colonial attitudes hardened"
+          },
+          {
+            "hint": "Double alienation",
+            "bullet": "Dismissed by later British officials yet estranged from traditional kin → left isolated between two cultures"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Post-smallpox diplomacy",
+            "bullet": "Bennelong sought peaceful coexistence after the 1789 epidemic → hoped diplomacy might protect Wangal kin"
+          },
+          {
+            "hint": "Bennelong Point",
+            "bullet": "Phillip built him a brick harbourside hut → site where the Sydney Opera House now stands"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FORCED DIPLOMAT",
+            "stem": "Kidnapped by marines in 1789, Wangal man ____________ learned English and served as a ____________ for Governor Phillip."
+          },
+          {
+            "badge": "LONDON JOURNEY",
+            "stem": "Even after travelling to ____________ in 1792, he returned to a colony growing increasingly hostile toward Indigenous people."
+          },
+          {
+            "badge": "CULTURAL ISOLATION",
+            "stem": "Shunned by new ____________ and distanced from ____________, he spent his later years caught between two worlds."
+          }
+        ],
+        "watch_out": "Bennelong was not a passive collaborator—initially kidnapped by force, he used diplomacy strategically to navigate invasion.",
+        "prose_hash": "9941d26298",
+        "prose_fp": "dd36a90b",
+        "question_hash": "113d6ecf61"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Coalition warfare",
+            "bullet": "United Bidjigal and neighbouring Sydney Basin clans → waged coordinated guerrilla campaigns against colonial expansion"
+          },
+          {
+            "hint": "Economic sabotage",
+            "bullet": "Burned settler crops, raided grain stores, and speared livestock → starved outlying British farms"
+          },
+          {
+            "hint": "Parramatta raid",
+            "bullet": "Fought redcoats at Parramatta in 1797 and escaped hospital wounded → became a legendary resistance symbol"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Asymmetric tactics",
+            "bullet": "Spears could not match musket volleys in open fields → hit-and-run bush ambushes neutralised British firepower"
+          },
+          {
+            "hint": "Rose Hill farms",
+            "bullet": "Expanding convict and emancipist farms around Parramatta → seized Bidjigal hunting grounds and provoked retaliation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GUERRILLA STRATEGY",
+            "stem": "Rejecting colonial expansion, Bidjigal leader ____________ united Sydney clans to launch ____________ against outlying settlements."
+          },
+          {
+            "badge": "TARGETING SUPPLIES",
+            "stem": "Warriors struck the colony’s food supply directly by burning ____________ and spearing stolen or grazing ____________."
+          },
+          {
+            "badge": "PARRAMATTA CLASH",
+            "stem": "During the 1797 ____________, he survived severe gunshot wounds and escaped captivity, cementing his ____________."
+          }
+        ],
+        "watch_out": "Frontier resistance was organised economic warfare—Pemulwuy deliberately targeted crops and cattle to halt farm expansion.",
+        "prose_hash": "51f44ac2ba",
+        "prose_fp": "964f4c26",
+        "question_hash": "3565c24a58"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Riverbank dispossession",
+            "bullet": "Hawkesbury farms fenced off Dharug yam beds and fishing reaches → sparked fierce raids on homesteads"
+          },
+          {
+            "hint": "Outlaw decree",
+            "bullet": "Governor King issued shoot-on-sight orders against Indigenous warriors → legalised killing Aboriginal people without trial"
+          },
+          {
+            "hint": "1802 assassination",
+            "bullet": "Pemulwuy was shot in an 1802 ambush and decapitated → ended Sydney’s first organised frontier war"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Colony’s breadbasket",
+            "bullet": "Rich Hawkesbury alluvial soil fed hungry Sydney → pushed governors to crush Dharug resistance ruthlessly"
+          },
+          {
+            "hint": "Repatriation struggle",
+            "bullet": "Pemulwuy’s remains were sent to Joseph Banks in England → descendants still campaign for repatriation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RESOURCE LOSS",
+            "stem": "Conflict intensified along the ____________ when British farms cut Dharug families off from vital ____________ and fishing waters."
+          },
+          {
+            "badge": "RUTHLESS ORDERS",
+            "stem": "To crush the raids, Governor ____________ outlawed warriors and authorised settlers to ____________ without trial."
+          },
+          {
+            "badge": "FATAL AMBUSH",
+            "stem": "Organised resistance collapsed in 1802 after ____________ was killed in an ambush and his head was sent to ____________."
+          }
+        ],
+        "watch_out": "Early Australian colonisation was never peaceful settlement—governors deployed redcoats and shoot-on-sight decrees in open frontier war.",
+        "prose_hash": "ca2b2a19a9",
+        "prose_fp": "86537695",
+        "question_hash": "5d89d72063"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Risdon Cove massacre",
+            "bullet": "Soldiers fired cannon and muskets on peaceful Palawa kangaroo hunters in 1804 → shattered early relations"
+          },
+          {
+            "hint": "Midlands land seizure",
+            "bullet": "Pastoralists overran fertile Tasmanian Midlands grasslands with sheep → destroyed essential Palawa kangaroo hunting grounds"
+          },
+          {
+            "hint": "Frontier atrocities",
+            "bullet": "Convict stockmen and sealers kidnapped Aboriginal women → provoked two decades of fierce retaliatory warfare"
+          }
+        ],
+        "context": [
+          {
+            "hint": "French naval fear",
+            "bullet": "Napoleonic rivalry pushed Britain to occupy Van Diemen’s Land in 1803 → blocked French claims"
+          },
+          {
+            "hint": "Island geography",
+            "bullet": "Unlike mainland clans, Tasmania’s 6,000 Palawa lived on a bounded island → left nowhere to retreat"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RISDON COVE",
+            "stem": "Bloodshed began in May 1804 when nervous troops fired ____________ at three hundred Palawa families on a ____________."
+          },
+          {
+            "badge": "PASTORAL ENCROACHMENT",
+            "stem": "Over the next twenty years, sheep farmers seized the ____________, starving clans of traditional food sources."
+          },
+          {
+            "badge": "ESCALATING VIOLENCE",
+            "stem": "Widespread settler abuses, including the ____________ of Palawa women, drove clans into sustained guerrilla retaliation."
+          }
+        ],
+        "watch_out": "The 1804 Risdon Cove killings were unprovoked—the Palawa group included women and children conducting a seasonal kangaroo drive.",
+        "prose_hash": "6c3bc5c6e1",
+        "prose_fp": "5f872cde",
+        "question_hash": "709074a29b"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Intimate bush mastery",
+            "bullet": "Palawa warriors knew rugged Tasmanian forests intimately → slipped silently through gaps in the cordon"
+          },
+          {
+            "hint": "Unwieldy military sweep",
+            "bullet": "Rough terrain, thick scrub, and foul weather broke up the 2,200-man line → created wide openings"
+          },
+          {
+            "hint": "Costly humiliation",
+            "bullet": "Seven weeks and £30,000 yielded just two captives → exposed British military failure against guerrilla tactics"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1828 martial law",
+            "bullet": "Governor Arthur had already suspended civilian law in 1828 → licensed roving parties to kill Palawa"
+          },
+          {
+            "hint": "Psychological pressure",
+            "bullet": "Although tactically defeated, the vast mobilisation signalled relentless settler numbers → pushed exhausted clans toward negotiation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MASSIVE MOBILISATION",
+            "stem": "After declaring martial law in 1828, Governor Arthur deployed ____________ in October 1830 to sweep Palawa clans toward ____________."
+          },
+          {
+            "badge": "TACTICAL FAILURE",
+            "stem": "Using superior knowledge of Tasmania’s ____________, Palawa families slipped straight past the slow-moving British cordon."
+          },
+          {
+            "badge": "COSTLY OUTCOME",
+            "stem": "Despite spending ____________ over seven weeks, the operation captured only ____________, proving conventional sweeps ineffective."
+          }
+        ],
+        "watch_out": "Martial law in 1828 meant Palawa people—nominally claimed as British subjects—were legally treated as an enemy army to be shot.",
+        "prose_hash": "452dd05a15",
+        "prose_fp": "f7c6d3ca",
+        "question_hash": "888a1d94d3"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Broken protection promise",
+            "bullet": "Truganini helped Robinson negotiate peace expecting temporary sanctuary → authorities instead imposed permanent Flinders Island exile"
+          },
+          {
+            "hint": "Lethal camp conditions",
+            "bullet": "Gales, respiratory disease, and salted rations plagued Wybalenna → over 150 of 200 exiles died"
+          },
+          {
+            "hint": "Forced cultural erasure",
+            "bullet": "Mission rules banned traditional ceremony and language → deepened grief and homesickness for ancestral country"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Truganini’s personal loss",
+            "bullet": "Settlers had murdered Truganini’s close kin → drove her desperate diplomatic effort to save survivors"
+          },
+          {
+            "hint": "Living Palawa community",
+            "bullet": "Colonial writers falsely claimed Tasmanian Aboriginal people became extinct → Palawa descendants still thrive today"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DIPLOMATIC BETRAYAL",
+            "stem": "Hoping to save surviving clans, Nuenonne woman ____________ accompanied missionary ____________ to negotiate safe protection."
+          },
+          {
+            "badge": "CAPTIVITY AT WYBALENNA",
+            "stem": "Breaking those promises, colonial officials shipped around two hundred Palawa to damp, windswept ____________ on ____________."
+          },
+          {
+            "badge": "DEVASTATING TOLL",
+            "stem": "Malnutrition, homesickness, and ____________ killed more than ____________ captives there within a single decade."
+          }
+        ],
+        "watch_out": "Never repeat the nineteenth-century colonial myth that Truganini’s death meant Palawa extinction—Tasmanian Aboriginal communities endure today.",
+        "prose_hash": "4cc2b585fa",
+        "prose_fp": "065586c5",
+        "question_hash": "0bc9c17a9c"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "British factory demand",
+            "bullet": "Booming Yorkshire textile mills hungered for fine Merino fleece → made Australian sheep grazing hugely profitable"
+          },
+          {
+            "hint": "Illegal inland runs",
+            "bullet": "Wealthy squatters drove millions of sheep beyond the Blue Mountains → seized vast Indigenous plains"
+          },
+          {
+            "hint": "Ecological starvation",
+            "bullet": "Hard-hoofed flocks trampled yam daisy beds and fouled waterholes → forced starving clans to spear sheep"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Meaning of squatter",
+            "bullet": "Australian squatters were rich pastoralists occupying Crown land illegally → later gained powerful political dominance"
+          },
+          {
+            "hint": "Terra nullius engine",
+            "bullet": "Absence of Indigenous treaties let pastoralists claim open grasslands freely → rapidly widened mainland frontier wars"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ECONOMIC DRIVER",
+            "stem": "Industrialisation in Britain fuelled intense ____________ for fine wool, turning ____________ flocks into immense colonial wealth."
+          },
+          {
+            "badge": "SEIZING COUNTRY",
+            "stem": "Crossing the Blue Mountains, pastoralists known as ____________ fenced off sacred ____________ and occupied vast inland runs."
+          },
+          {
+            "badge": "ECOLOGICAL CONFLICT",
+            "stem": "As grazing sheep crushed native ____________, hungry Aboriginal clans retaliated by ____________, sparking fierce frontier violence."
+          }
+        ],
+        "watch_out": "In colonial Australia, squatters were not poor homeless settlers—they were wealthy wool barons seizing vast inland estates.",
+        "prose_hash": "ae2c853307",
+        "prose_fp": "be740c07",
+        "question_hash": "a757b9985e"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Cold-blooded atrocity",
+            "bullet": "Stockmen slaughtered twenty-eight peaceful Wirrayaraay elders, women, and children → burned bodies to hide evidence"
+          },
+          {
+            "hint": "Unprecedented executions",
+            "bullet": "Governor Gipps pursued two Sydney trials → seven white perpetrators were hanged for murdering Aboriginal people"
+          },
+          {
+            "hint": "Conspiracy of silence",
+            "bullet": "Furious squatter backlash drove frontier violence underground → settlers used poison and secrecy to evade prosecution"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Station witness courage",
+            "bullet": "Station overseer William Hobbs reported the charred remains despite threats → made legal prosecution possible"
+          },
+          {
+            "hint": "Rare exception",
+            "bullet": "Hundreds of frontier massacres occurred across Australia → almost no other white killers ever faced execution"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THE MASSACRE",
+            "stem": "At Myall Creek in June 1838, armed stockmen murdered twenty-eight unresisting ____________ people and burned their remains."
+          },
+          {
+            "badge": "HISTORIC VERDICT",
+            "stem": "Backed by Governor ____________, a second Sydney trial ended with ____________ being executed—an unprecedented legal ruling."
+          },
+          {
+            "badge": "DARK CONSEQUENCE",
+            "stem": "Rather than ending frontier killings, angry ____________ responded with a code of ____________ to conceal future massacres."
+          }
+        ],
+        "watch_out": "Myall Creek did not end frontier massacres—instead, settler outrage taught perpetrators to conceal killings using poison and silence.",
+        "prose_hash": "52c9b9e0e6",
+        "prose_fp": "4b56dd6f",
+        "question_hash": "d2179eaaf9"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Global migration wave",
+            "bullet": "Gold strikes at Ballarat and Bendigo drew 500,000 prospectors → tripled Australia’s population to 1.2 million"
+          },
+          {
+            "hint": "End of convict image",
+            "bullet": "Free fortune-seekers from Europe, America, and China outnumbered convicts → reshaped colonial society"
+          },
+          {
+            "hint": "Boomtown infrastructure",
+            "bullet": "Vast gold exports funded railways, banks, and grand architecture → turned Melbourne into an imperial metropolis"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Convict transportation halted",
+            "bullet": "Gold discoveries ended eastern convict transportation → Britain stopped shipping prisoners straight toward rich goldfields"
+          },
+          {
+            "hint": "Second land shock",
+            "bullet": "Alluvial mining tore up Victorian creeks and sacred woodlands → devastated Indigenous lands a second time"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DEMOGRAPHIC SURGE",
+            "stem": "Following Edward Hargraves’s 1851 find and huge strikes at ____________ and ____________, Australia’s population tripled to ____________."
+          },
+          {
+            "badge": "GLOBAL MIGRATION",
+            "stem": "Over half a million free prospectors arrived from ____________, ____________, and ____________, transforming a former penal society."
+          },
+          {
+            "badge": "URBAN PROSPERITY",
+            "stem": "Surging bullion exports paid for railways and grand public buildings, making ____________ one of the Empire’s richest cities."
+          }
+        ],
+        "watch_out": "Alluvial surface gold initially allowed ordinary diggers with pans and cradles to strike wealth, before deep-lead company mining took over.",
+        "prose_hash": "c48fc66f95",
+        "prose_fp": "ffd4dd79",
+        "question_hash": "cad351a033"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Unfair flat tax",
+            "bullet": "Every miner owed thirty shillings monthly even on empty shafts → bankrupted unlucky diggers"
+          },
+          {
+            "hint": "Brutal police raids",
+            "bullet": "Corrupt troopers staged armed licence hunts → chained miners lacking paperwork directly to trees"
+          },
+          {
+            "hint": "Denied political voice",
+            "bullet": "Diggers paid heavy colonial taxes yet held zero voting rights → sparked Bakery Hill protests"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dwindling surface gold",
+            "bullet": "Easy surface nuggets around Ballarat were running out by 1854 → made monthly fees unbearable"
+          },
+          {
+            "hint": "Chartist veterans",
+            "bullet": "Many British and Irish miners brought Chartist reform ideals → framed grievances around democratic representation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "UNJUST FEE",
+            "stem": "Resentment boiled over because Victorian officials demanded a ____________ every month, even when diggers found ____________."
+          },
+          {
+            "badge": "POLICE HARASSMENT",
+            "stem": "Corrupt troopers enforced the system through humiliating ____________, chaining unlicensed prospectors to trees."
+          },
+          {
+            "badge": "POLITICAL GRIEVANCE",
+            "stem": "Excluded from ____________, miners rallied at ____________ to protest paying heavy taxes without representation."
+          }
+        ],
+        "watch_out": "Diggers were not simply dodging taxes—they protested corrupt police brutality and being denied parliamentary representation.",
+        "prose_hash": "9aea02acda",
+        "prose_fp": "d32e8916",
+        "question_hash": "7dc5a04a1a"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Southern Cross oath",
+            "bullet": "Ballarat Reform League diggers built Eureka’s wooden palisade → swore allegiance beneath the Southern Cross flag"
+          },
+          {
+            "hint": "Bloody dawn storming",
+            "bullet": "Nearly 300 redcoats crushed the stockade in fifteen minutes on 3 December → killed twenty-two miners"
+          },
+          {
+            "hint": "Public outrage & reform",
+            "bullet": "Melbourne juries acquitted rebel leaders → forced authorities to scrap licences and grant male suffrage"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Miner’s Right",
+            "bullet": "A cheap £1 annual Miner’s Right replaced the hated monthly fee → automatically carried voting rights"
+          },
+          {
+            "hint": "Australian ballot",
+            "bullet": "Victoria pioneered the printed secret ballot in 1856 → copied later by Britain and America"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARMED STAND",
+            "stem": "Swearing an oath beneath the ____________, Ballarat Reform League miners erected a timber barricade at Eureka."
+          },
+          {
+            "badge": "MILITARY DEFEAT",
+            "stem": "Although British redcoats crushed the camp in a ____________ on 3 December 1854, killing ____________, public opinion backed the miners."
+          },
+          {
+            "badge": "DEMOCRATIC VICTORY",
+            "stem": "To restore calm, Victoria abolished ____________ and introduced landmark voting reforms including the ____________."
+          }
+        ],
+        "watch_out": "Eureka was a swift military defeat for the miners, yet overwhelming public sympathy turned it into a political victory.",
+        "prose_hash": "7c51ce4f90",
+        "prose_fp": "4abd597c",
+        "question_hash": "e165da8ce3"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Economic jealousy",
+            "bullet": "Over 40,000 Chinese miners worked cooperatively on abandoned claims → sparked resentful white scapegoating"
+          },
+          {
+            "hint": "Lambing Flat violence",
+            "bullet": "White mobs attacked Chinese camps at Lambing Flat in 1861 → drove colonial anti-Chinese entry taxes"
+          },
+          {
+            "hint": "Federation exclusion law",
+            "bullet": "Australia’s 1901 Parliament passed the Immigration Restriction Act → used rigged dictation tests to bar non-Europeans"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Eureka’s blind spot",
+            "bullet": "White diggers who demanded democratic equality at Eureka → frequently backed racist laws excluding Asian workers"
+          },
+          {
+            "hint": "Rigged language test",
+            "bullet": "Officials gave dictation tests in unfamiliar European languages → ensured non-white applicants systematically failed"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GOLDFIELD SCAPEGOATING",
+            "stem": "Envying the cooperative success of over 40,000 ____________, European prospectors accused them of wasting water and undercutting wages."
+          },
+          {
+            "badge": "MOB VIOLENCE",
+            "stem": "Racial hatred erupted during the 1861 ____________, where white crowds violently ransacked Chinese diggings."
+          },
+          {
+            "badge": "NATIONAL EXCLUSION",
+            "stem": "At Federation in 1901, Parliament enshrined the ____________ through the ____________, using dictation tests to block non-European migrants."
+          }
+        ],
+        "watch_out": "The 1901 dictation test was deliberately rigged—officials switched to obscure European languages so non-white migrants would fail.",
+        "prose_hash": "0a814b134e",
+        "prose_fp": "f7dddbf9",
+        "question_hash": "22bce5cc64"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Post-Federation exclusion",
+            "bullet": "Federation denied Indigenous citizenship and enabled Stolen Generations child removals → entrenched systemic dispossession"
+          },
+          {
+            "hint": "Activist persistence",
+            "bullet": "Activists staged the 1938 Day of Mourning in Sydney → protested 150 years of dispossession"
+          },
+          {
+            "hint": "High Court breakthrough",
+            "bullet": "Eddie Mabo’s 1992 High Court victory recognised Native Title → demolished the myth of terra nullius"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cook’s 1770 claim",
+            "bullet": "Colonial law had denied Indigenous ownership since Cook’s 1770 claim → Mabo reversed two centuries"
+          },
+          {
+            "hint": "Meriam Island gardens",
+            "bullet": "Meriam people proved unbroken customary land inheritance on Murray Island → shattered old nomad stereotypes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CIVIL RIGHTS STRUGGLE",
+            "stem": "Excluded from citizenship in 1901 and scarred by the ____________, Aboriginal activists protested during the 1938 ____________."
+          },
+          {
+            "badge": "LANDMARK JUDGMENT",
+            "stem": "Decades of campaigning culminated in 1992 when the High Court’s ____________ decision formally recognised Indigenous ____________."
+          },
+          {
+            "badge": "ENDING THE FICTION",
+            "stem": "By acknowledging pre-existing customary law, the court finally overturned ____________ after more than two hundred years."
+          }
+        ],
+        "watch_out": "Mabo did not grant new land from the Crown—the High Court recognised pre-existing Native Title that predated 1788.",
+        "prose_hash": "8a28f0f058",
+        "prose_fp": "b0084547",
+        "question_hash": "06575fbb78"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3685 @@
+{
+  "unit_id": "usa",
+  "lessons": {
+    "lesson_1_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Constitutional doctrine",
+            "bullet": "Supreme Court established 'separate but equal' in 1896 → gave de jure segregation federal legal cover"
+          },
+          {
+            "hint": "Fourteenth Amendment claim",
+            "bullet": "Southern officials claimed segregated spaces satisfied Equal Protection → shielded state race laws from challenge"
+          },
+          {
+            "hint": "Starved public funding",
+            "bullet": "Black schools, hospitals, and transport received grossly inferior tax funding → entrenched a racial caste system"
+          }
+        ],
+        "context": [
+          {
+            "hint": "End of Reconstruction",
+            "bullet": "Federal troops withdrew from the South after 1877 → white Redeemer governments reclaimed state legislatures"
+          },
+          {
+            "hint": "Geographical reach",
+            "bullet": "Seventeen southern states plus Washington D.C. mandated separation → millions lived under compulsory racial codes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEGAL DOCTRINE",
+            "stem": "In 1896, the Supreme Court’s ____________ doctrine allowed southern states to enforce ____________ segregation across public life."
+          },
+          {
+            "badge": "CONSTITUTIONAL LOOPHOLE",
+            "stem": "Southern authorities insisted that segregated facilities satisfied the ____________, masking how Black services were systematically ____________."
+          },
+          {
+            "badge": "REGIONAL SCOPE",
+            "stem": "Following the collapse of ____________, seventeen states and ____________ entrenched a legalised racial caste system."
+          }
+        ],
+        "watch_out": "De jure segregation in the South was enforced by explicit state statutes, unlike informal de facto segregation in northern cities.",
+        "prose_hash": "99927c4f6c",
+        "prose_fp": "9d030401",
+        "question_hash": "99f6199635"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Everyday social codes",
+            "bullet": "State laws criminalised interracial marriage and segregated waiting rooms and fountains → degraded Black citizens daily"
+          },
+          {
+            "hint": "Political exclusion",
+            "bullet": "Disenfranchisement barred Black southerners from ballots and juries → blocked challenges to racist sheriffs or budgets"
+          },
+          {
+            "hint": "Retaliation and terror",
+            "bullet": "Economic reprisals, police violence, and white vigilante attacks → crushed open defiance of white supremacy"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Sharecropping dependency",
+            "bullet": "Rural Black sharecroppers relied on white landlords for land and credit → eviction silenced protest"
+          },
+          {
+            "hint": "Unaccountable justice",
+            "bullet": "White judges and sheriffs answered solely to white voters → denied Black victims impartial courtroom protection"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SOCIAL HUMILIATION",
+            "stem": "Across southern towns, ____________ regulated everyday life from water fountains to ____________ in order to enforce subordination."
+          },
+          {
+            "badge": "POLITICAL POWERLESSNESS",
+            "stem": "Stripped of the ____________, Black southerners were excluded from ____________ and could not hold local officials accountable."
+          },
+          {
+            "badge": "COERCIVE CONTROL",
+            "stem": "Whenever Black residents challenged subordination, white landlords and vigilantes used ____________ alongside ____________ to silence them."
+          }
+        ],
+        "watch_out": "Jim Crow was neither a real politician nor a single federal Act, but a dense network of state and city segregation laws.",
+        "prose_hash": "abe8351306",
+        "prose_fp": "d92bd7dc",
+        "question_hash": "7edfebeb03"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Financial hurdle",
+            "bullet": "Prohibitive poll taxes charged fees to register → priced impoverished Black sharecroppers out of voting"
+          },
+          {
+            "hint": "Rigged constitutional exams",
+            "bullet": "White registrars set arbitrary state literacy tests → failed educated and uneducated Black applicants alike"
+          },
+          {
+            "hint": "Poor white exemption",
+            "bullet": "Grandfather clauses shielded illiterate white voters from tests → kept disenfranchisement overwhelmingly racial"
+          },
+          {
+            "hint": "Vigilante reprisals",
+            "bullet": "Job sackings, mortgage foreclosures, cross-burnings, and murder → deterred Black citizens from approaching courthouses"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Fifteenth Amendment evasion",
+            "bullet": "Fifteenth Amendment barred explicit racial bans → southern states used non-racial loopholes to bypass federal law"
+          },
+          {
+            "hint": "One-party Solid South",
+            "bullet": "Democratic Party dominance meant white-only primaries decided elections → locked Black communities out of office"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REGISTRATION BARRIERS",
+            "stem": "Despite the Fifteenth Amendment, white registrars used ____________ and arbitrary ____________ while shielding poor whites through ____________."
+          },
+          {
+            "badge": "INTIMIDATION TACTICS",
+            "stem": "Black citizens who attempted to register risked ____________ from employers and banks alongside violent ____________."
+          },
+          {
+            "badge": "FEDERAL LITIGATION",
+            "stem": "Confronting state loopholes that bypassed constitutional guarantees, the ____________ launched federal lawsuits to challenge ____________."
+          }
+        ],
+        "watch_out": "The Fifteenth Amendment had already granted Black men voting rights in 1870—southern states used poll taxes and literacy tests to evade it without mentioning race.",
+        "prose_hash": "30be0c7be0",
+        "prose_fp": "196c0123",
+        "question_hash": "fb3550a9a6"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Constitutional clause",
+            "bullet": "Thurgood Marshall invoked Fourteenth Amendment Equal Protection → argued segregated universities were inherently unequal"
+          },
+          {
+            "hint": "1950 university rulings",
+            "bullet": "Victories in Sweatt v. Painter and McLaurin → chipped away at Plessy inside graduate education"
+          },
+          {
+            "hint": "Early bus protest",
+            "bullet": "CORE staged the 1947 Journey of Reconciliation → pioneered interracial non-violent direct action alongside litigation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Bypassing state courts",
+            "bullet": "NAACP Legal Defense Fund appealed through federal courts → escaped biased southern state judges"
+          },
+          {
+            "hint": "Pacifist protest roots",
+            "bullet": "CORE founders tested sit-ins in northern cities during the 1940s → built a blueprint for 1960s youth campaigns"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COURTROOM LITIGATION",
+            "stem": "Led by chief counsel ____________, the NAACP used the ____________ Clause to win landmark 1950 university cases such as ____________."
+          },
+          {
+            "badge": "DIRECT ACTION PIONEERS",
+            "stem": "Alongside courtroom test cases, ____________ challenged interstate bus segregation during its 1947 ____________."
+          },
+          {
+            "badge": "MUTUAL REINFORCEMENT",
+            "stem": "Combining federal ____________ with disciplined ____________ proved far more effective than appealing to hostile state legislatures."
+          }
+        ],
+        "watch_out": "Distinguish clearly between organisations: the NAACP fought slow constitutional test cases in federal courts, whereas CORE pioneered non-violent direct action.",
+        "prose_hash": "145f6511b5",
+        "prose_fp": "b2b47509",
+        "question_hash": "781e6fd879"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Twofold wartime struggle",
+            "bullet": "One million Black troops fought fascism inside segregated units → fuelled the newspaper-led Double V Campaign"
+          },
+          {
+            "hint": "Armed forces integration",
+            "bullet": "Truman signed Executive Order 9981 in July 1948 → officially desegregated the United States military"
+          },
+          {
+            "hint": "Civilian legal boundary",
+            "bullet": "Presidential orders governed federal forces only → left southern state Jim Crow statutes completely intact"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dixiecrat committee power",
+            "bullet": "Southern Democrats chaired key Congressional committees → blocked Truman’s broader civilian civil rights bills"
+          },
+          {
+            "hint": "Cold War propaganda",
+            "bullet": "Soviet criticism of American racism abroad → pressured Truman to act wherever executive authority reached"
+          },
+          {
+            "hint": "Militant returning veterans",
+            "bullet": "Black ex-servicemen returned with organisational discipline → swelled grassroots NAACP chapters across the South"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WARTIME CATALYST",
+            "stem": "Mobilised by the ____________, returning Black veterans refused pre-war subjugation after fighting ____________ overseas."
+          },
+          {
+            "badge": "EXECUTIVE ACTION",
+            "stem": "Although President Truman’s ____________ ended segregation in ____________ in 1948, it had no legal force over ____________."
+          },
+          {
+            "badge": "NEED FOR MASS ACTION",
+            "stem": "Because ____________ in Congress blocked civilian laws, activists concluded that dismantling Jim Crow required sustained ____________."
+          }
+        ],
+        "watch_out": "Executive Order 9981 desegregated only the US Armed Forces—it did not overturn civilian segregation in southern schools, transport, or housing.",
+        "prose_hash": "d6eecab2c2",
+        "prose_fp": "6a10b55e",
+        "question_hash": "a9fea6dd0a"
+      }
+    ],
+    "lesson_1_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Combined class action",
+            "bullet": "NAACP merged five state school lawsuits under Oliver Brown → challenged segregated schooling nationwide"
+          },
+          {
+            "hint": "Social science proof",
+            "bullet": "Kenneth and Mamie Clark’s psychological doll tests showed segregation harmed self-esteem → discredited 'separate but equal'"
+          },
+          {
+            "hint": "Unanimous Supreme Court",
+            "bullet": "Chief Justice Earl Warren ruled 9–0 that separate schools are inherently unequal → overturned Plessy in education"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Judicial unity",
+            "bullet": "Newly appointed Earl Warren persuaded wavering justices → avoided a split verdict that segregationists could exploit"
+          },
+          {
+            "hint": "No enforcement police",
+            "bullet": "Supreme Court possessed no troops or timetable in May 1954 → left southern classrooms segregated on the ground"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CONSTITUTIONAL VERDICT",
+            "stem": "Delivering a unanimous 9–0 verdict in May 1954, ____________ overturned the ____________ precedent across public schooling."
+          },
+          {
+            "badge": "PSYCHOLOGICAL EVIDENCE",
+            "stem": "Thurgood Marshall backed his Fourteenth Amendment case with ____________, demonstrating that segregation caused ____________ in Black children."
+          },
+          {
+            "badge": "PRACTICAL LIMITATION",
+            "stem": "While Brown destroyed the legal basis of school segregation, it lacked an immediate ____________ to force southern compliance."
+          }
+        ],
+        "watch_out": "Brown v. Topeka overturned Plessy only in public education and set no deadline in 1954—it did not instantly integrate Deep South schools or buses.",
+        "prose_hash": "45be27d690",
+        "prose_fp": "573d0552",
+        "question_hash": "e7e2a7b42f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Ambiguous 1955 decree",
+            "bullet": "Brown II ordered integration with 'all deliberate speed' → gave southern school boards a loophole to delay"
+          },
+          {
+            "hint": "Congressional defiance",
+            "bullet": "Over 100 southern lawmakers signed the 1956 Southern Manifesto → legitimised Senator Byrd’s Massive Resistance"
+          },
+          {
+            "hint": "Negligible school change",
+            "bullet": "White Citizens' Councils intimidated Black applicants → kept Deep South integration under two percent by 1957"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Presidential silence",
+            "bullet": "Eisenhower refused to endorse Brown publicly → encouraged southern governors to believe Washington would not intervene"
+          },
+          {
+            "hint": "State placement statutes",
+            "bullet": "Legislatures passed complex pupil placement laws → assigned Black children back to segregated schools on 'non-racial' pretexts"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "JUDICIAL AMBIGUITY",
+            "stem": "Exploiting the vague ____________ wording of Brown II, southern school boards stalled integration without any fixed ____________."
+          },
+          {
+            "badge": "POLITICAL OBSTRUCTION",
+            "stem": "Championed by Senator Harry Byrd, ____________ rallied over a hundred congressmen behind the ____________ to resist court rulings."
+          },
+          {
+            "badge": "STALLED OUTCOME",
+            "stem": "Backed by economic threats from ____________, state defiance kept integrated schooling below ____________ across the former Confederacy by 1957."
+          }
+        ],
+        "watch_out": "Do not misread 'all deliberate speed' in Brown II as ordering rapid change—omitting a strict deadline allowed southern boards to stall for a decade.",
+        "prose_hash": "081e11596d",
+        "prose_fp": "14e87a6b",
+        "question_hash": "ee8c196913"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Re-election calculation",
+            "bullet": "Facing a tough re-election fight, Governor Orval Faubus courted segregationists → defied federal court orders"
+          },
+          {
+            "hint": "Armed state blockade",
+            "bullet": "Faubus deployed the Arkansas National Guard around Central High → physically blocked the Little Rock Nine"
+          },
+          {
+            "hint": "Televised mob abuse",
+            "bullet": "Cameras filmed screaming adults harassing solitary fifteen-year-old Elizabeth Eckford → damaged US Cold War standing"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Soviet propaganda windfall",
+            "bullet": "Moscow broadcast Little Rock mob scenes globally → mocked American claims to lead the free world"
+          },
+          {
+            "hint": "Minimal token plan",
+            "bullet": "Little Rock’s board selected just nine vetted pupils out of thousands → proved even tokenism provoked fury"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "POLITICAL OPPORTUNISM",
+            "stem": "Motivated by a difficult ____________, Governor Faubus defied federal courts by ordering the ____________ to surround Central High."
+          },
+          {
+            "badge": "TELEVISED SPECTACLE",
+            "stem": "News broadcasts showing a white mob spitting at fifteen-year-old ____________ horrified viewers across ____________."
+          },
+          {
+            "badge": "DIPLOMATIC DAMAGE",
+            "stem": "International revulsion over Little Rock undermined ____________ propaganda by exposing racial terror inside Western democracy."
+          }
+        ],
+        "watch_out": "Faubus used the Arkansas National Guard to keep the Little Rock Nine out—do not confuse state Guardsmen with the federal troops Eisenhower later sent.",
+        "prose_hash": "3a73470ca7",
+        "prose_fp": "9cf99cd6",
+        "question_hash": "379eaaca19"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Constitutional showdown",
+            "bullet": "Faubus’s open defiance threatened federal supremacy → forced reluctant President Eisenhower to uphold court orders"
+          },
+          {
+            "hint": "Federalising state forces",
+            "bullet": "Executive Order 10730 placed the Arkansas National Guard under presidential control → disarmed Faubus’s blockade"
+          },
+          {
+            "hint": "Paratrooper protection",
+            "bullet": "1,000 elite 101st Airborne soldiers escorted the Nine with bayonets → secured attendance through the school year"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Global Cold War image",
+            "bullet": "Eisenhower warned televised anarchy aided communist enemies → demanded visible restoration of constitutional order"
+          },
+          {
+            "hint": "Personal conservatism",
+            "bullet": "Eisenhower doubted laws could alter racial prejudice → acted strictly as Commander-in-Chief defending federal authority"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PRESIDENTIAL DUTY",
+            "stem": "Confronted with state insurrection, ____________ intervened primarily to defend ____________ rather than out of enthusiasm for rapid integration."
+          },
+          {
+            "badge": "MILITARY DEPLOYMENT",
+            "stem": "Signing ____________, the president federalised Arkansas Guardsmen and sent 1,000 troops from the ____________ to Central High."
+          },
+          {
+            "badge": "INTERNATIONAL STAKES",
+            "stem": "Decisive federal force also aimed to repair ____________ prestige after Little Rock headlines embarrassed Washington abroad."
+          }
+        ],
+        "watch_out": "Eisenhower sent the 101st Airborne to uphold presidential and Supreme Court authority against state defiance, not because he championed civil rights activism.",
+        "prose_hash": "c96222f401",
+        "prose_fp": "834a3f5a",
+        "question_hash": "dd2e73bc09"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Year-long school shutdown",
+            "bullet": "Faubus closed all four Little Rock public high schools in 1958 → denied education to 4,000 teenagers"
+          },
+          {
+            "hint": "Private academy evasion",
+            "bullet": "State officials tried leasing public buildings to segregated private academies → sought to bypass court rulings"
+          },
+          {
+            "hint": "Supreme Court counter-ruling",
+            "bullet": "Cooper v. Aaron forbade state nullification of federal orders → reopened integrated Little Rock schools in 1959"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Local business revolt",
+            "bullet": "Closed high schools deterred corporate investment → moderate Little Rock business leaders turned against Faubus"
+          },
+          {
+            "hint": "Continuing hallway abuse",
+            "bullet": "Inside classrooms, white bullies still harassed Black pupils → showed troops could not transform daily attitudes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THE LOST YEAR",
+            "stem": "Rather than accept integration in 1958, Faubus closed Little Rock’s high schools and promoted ____________ to evade court orders."
+          },
+          {
+            "badge": "JUDICIAL SUPREMACY",
+            "stem": "In ____________, the Supreme Court ruled that state officials could never nullify federal desegregation decrees, reopening schools in ____________."
+          },
+          {
+            "badge": "LIMITS OF VICTORY",
+            "stem": "Extreme obstruction proved segregationists would sacrifice ____________ itself, slowing wider Deep South integration until the 1960s."
+          }
+        ],
+        "watch_out": "Do not write that Little Rock was solved once paratroopers arrived in 1957—Faubus shut all city high schools for the entire 1958–59 'Lost Year'.",
+        "prose_hash": "9795162613",
+        "prose_fp": "6a3ee2a7",
+        "question_hash": "4973dbe0dd"
+      }
+    ],
+    "lesson_1_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Bus seat defiance",
+            "bullet": "Rosa Parks refused driver James Blake’s order to surrender her colored-section seat → triggered immediate arrest"
+          },
+          {
+            "hint": "Unassailable test plaintiff",
+            "bullet": "Parks served as respected local NAACP secretary → gave activists a dignified figurehead for legal challenge"
+          },
+          {
+            "hint": "Overnight leaflet drive",
+            "bullet": "Jo Ann Robinson and the Women's Political Council printed 35,000 leaflets → mobilised a one-day boycott"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Claudette Colvin precedent",
+            "bullet": "Teenager Claudette Colvin had been arrested nine months earlier → leaders waited for an adult plaintiff like Parks"
+          },
+          {
+            "hint": "Emmett Till shockwave",
+            "bullet": "Till’s murder acquittal three months earlier → primed Montgomery’s Black citizens for organised collective action"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CATALYST ARREST",
+            "stem": "When ____________ refused driver ____________ on 1 December 1955, her reputation as NAACP secretary offered an ideal test case."
+          },
+          {
+            "badge": "WOMEN'S LEADERSHIP",
+            "stem": "Working overnight, Jo Ann Robinson and the ____________ distributed ____________ leaflets calling for a boycott on Parks’s trial day."
+          },
+          {
+            "badge": "STRATEGIC PREPARATION",
+            "stem": "Passing over earlier arrests such as ____________, local organisers used existing networks to launch rapid mass action."
+          }
+        ],
+        "watch_out": "Rosa Parks was a seasoned NAACP activist, not an accidental commuter, and Jo Ann Robinson’s Women's Political Council had prepared boycott plans in advance.",
+        "prose_hash": "c6921439b0",
+        "prose_fp": "eb64e78f",
+        "question_hash": "c0a67ec985"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Citywide coordinating body",
+            "bullet": "Community leaders formed the Montgomery Improvement Association on 5 December → organised an indefinite bus boycott"
+          },
+          {
+            "hint": "Fresh unifying voice",
+            "bullet": "26-year-old newcomer Martin Luther King Jr. was elected president → stood above older local rivalries"
+          },
+          {
+            "hint": "Holt Street speech",
+            "bullet": "King blended Christian love with non-violent discipline at Holt Street Church → rallied thousands to continue"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shield against smears",
+            "bullet": "Framing protest in Christian gospel and constitutional loyalty → blunted segregationist accusations of communist subversion"
+          },
+          {
+            "hint": "Moderate initial demands",
+            "bullet": "MIA first requested polite drivers and first-come seating within segregation → white intransigence pushed demands further"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NEW ORGANISATION",
+            "stem": "Following Parks’s ten-dollar fine, leaders founded the ____________ and chose young pastor ____________ to unite rival factions."
+          },
+          {
+            "badge": "MORAL PHILOSOPHY",
+            "stem": "Speaking to crowds at ____________, King anchored the protest in ____________ and disciplined non-violence."
+          },
+          {
+            "badge": "COLLECTIVE MANDATE",
+            "stem": "Turnout on 5 December convinced Montgomery’s Black community to extend a one-day strike into an ____________ campaign."
+          }
+        ],
+        "watch_out": "Martin Luther King Jr. did not initiate the bus boycott—Jo Ann Robinson’s WPC and E.D. Nixon launched it before electing King to lead the MIA.",
+        "prose_hash": "f33a95e292",
+        "prose_fp": "13d7599f",
+        "question_hash": "7ab0b24c43"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Coordinated carpool fleet",
+            "bullet": "MIA operated 300 private cars across 48 dispatch stations plus cheap Black cabs → kept boycotters employed"
+          },
+          {
+            "hint": "Church financial engine",
+            "bullet": "Black churches hosted mass rallies and raised weekly collections → funded fuel, repairs, and relief"
+          },
+          {
+            "hint": "Severe revenue slump",
+            "bullet": "Bus company lost 65 percent of passenger income while downtown stores suffered → fractured white business unity"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Majority customer base",
+            "bullet": "Black commuters accounted for roughly 75 percent of Montgomery bus riders → gave boycotters decisive economic leverage"
+          },
+          {
+            "hint": "External fundraising",
+            "bullet": "Northern civil rights branches and overseas donors wired funds → replaced cancelled local carpool insurance"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LOGISTICAL SYSTEM",
+            "stem": "Operating forty-eight dispatch stations, a ____________ alongside discounted Black taxis sustained commuters across ____________ days."
+          },
+          {
+            "badge": "CHURCH BACKBONE",
+            "stem": "Southern ____________ supplied meeting halls and weekly relief funds, turning daily walking into civic pride."
+          },
+          {
+            "badge": "ECONOMIC ATTRITION",
+            "stem": "Slashing transit revenue by ____________ and boycotting downtown shops exposed how white businesses depended on ____________."
+          }
+        ],
+        "watch_out": "Walking alone could not sustain a 381-day boycott—high-scoring answers explain the logistics of the 300-car pool, 48 stations, and church funding.",
+        "prose_hash": "7c7114e7b1",
+        "prose_fp": "c96d72cb",
+        "question_hash": "0aba47c67f"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Legal harassment wave",
+            "bullet": "City officials indicted boycott leaders and arrested carpool drivers → threatened to shut down the carpool"
+          },
+          {
+            "hint": "Federal transit lawsuit",
+            "bullet": "NAACP attorneys filed Browder v. Gayle under the Fourteenth Amendment → bypassed hostile municipal courts"
+          },
+          {
+            "hint": "November 1956 verdict",
+            "bullet": "Supreme Court ruled municipal bus segregation unconstitutional → converted economic protest into binding federal law"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Widening Brown’s reach",
+            "bullet": "Browder extended Brown’s rejection of Plessy from classrooms to public transport → broadened constitutional equality"
+          },
+          {
+            "hint": "Birth of SCLC",
+            "bullet": "Victory prompted King and southern pastors to found the SCLC in January 1957 → coordinated regional campaigns"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FEDERAL LAWSUIT",
+            "stem": "Once Montgomery officials used mass arrests and anti-conspiracy laws against the carpool, NAACP lawyers filed ____________ in federal court."
+          },
+          {
+            "badge": "SUPREME COURT VICTORY",
+            "stem": "Upheld in November 1956, the ruling struck down bus segregation under the ____________ Clause just as city injunctions threatened the carpool."
+          },
+          {
+            "badge": "MOVEMENT EXPANSION",
+            "stem": "Building on Montgomery’s triumph, King and fellow ministers founded the ____________ in January 1957 to spread non-violent campaigns."
+          }
+        ],
+        "watch_out": "Financial losses alone did not make Montgomery’s mayor yield—it took the NAACP’s Supreme Court victory in Browder v. Gayle to outlaw bus segregation.",
+        "prose_hash": "d6743a7744",
+        "prose_fp": "abed4a3a",
+        "question_hash": "cc0023f93b"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Desegregated December ride",
+            "bullet": "King, Abernathy, and Nixon sat at the front of integrated buses on 21 December 1956 → proved mass protest worked"
+          },
+          {
+            "hint": "Violent extremist reprisals",
+            "bullet": "White supremacists bombed Black churches and King’s home and sniped at buses → halted night services temporarily"
+          },
+          {
+            "hint": "Model for future campaigns",
+            "bullet": "Refusal to retaliate cemented non-violent direct action → elevated King to national spokesperson for civil rights"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Remaining city Jim Crow",
+            "bullet": "Montgomery’s schools, parks, and lunch counters stayed strictly segregated → showed single-issue boycotts had limits"
+          },
+          {
+            "hint": "National television profile",
+            "bullet": "Sympathetic press coverage contrasted dignified Black churchgoers with Klan bombers → built northern public backing"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INTEGRATED TRANSIT",
+            "stem": "Boarding integrated buses in December 1956 proved that mass ____________ paired with federal litigation could defeat Jim Crow policies."
+          },
+          {
+            "badge": "WHITE BACKLASH",
+            "stem": "Furious extremists answered integration with ____________ targeting Black churches, King’s home, and evening buses."
+          },
+          {
+            "badge": "STRATEGIC LEGACY",
+            "stem": "Maintaining strict ____________ under fire established ____________ as the movement’s national leader, though other city spaces stayed segregated."
+          }
+        ],
+        "watch_out": "Montgomery integrated municipal buses only—avoid claiming that December 1956 ended wider segregation across Alabama schools, parks, or cafes.",
+        "prose_hash": "83f808fdaa",
+        "prose_fp": "52ee47c0",
+        "question_hash": "eed1b0708d"
+      }
+    ],
+    "lesson_1_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Elite white membership",
+            "bullet": "Founded by Robert Patterson in July 1954, Councils recruited bankers, planters, and judges → made resistance respectable"
+          },
+          {
+            "hint": "Economic strangulation",
+            "bullet": "Councils fired workers, evicted sharecroppers, and denied bank credit → punished Black families backing integration"
+          },
+          {
+            "hint": "Purging voter rolls",
+            "bullet": "Over 60,000 Mississippi members coerced local counties → stripped hundreds of registered Black voters from rolls"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Reaction to Brown",
+            "bullet": "Formed in Indianola two months after Brown v. Topeka → organised middle-class white panic against school integration"
+          },
+          {
+            "hint": "Avoiding federal troops",
+            "bullet": "Shunning Klan hoods and overt murder → allowed Councils to crush NAACP chapters legally without federal intervention"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RESPECTABLE RESISTANCE",
+            "stem": "Founded in Indianola in July 1954, ____________ operated as an 'uptown Klan' composed of ____________ such as bankers and judges."
+          },
+          {
+            "badge": "ECONOMIC REPRISALS",
+            "stem": "Rather than night-time vigilantism, Councils punished petitioners and voters through ____________, evictions, and ____________."
+          },
+          {
+            "badge": "MISSISSIPPI REACH",
+            "stem": "Growing past ____________ members in Mississippi by 1956, Councils purged Black voter rolls while avoiding federal prosecution."
+          }
+        ],
+        "watch_out": "Do not confuse White Citizens’ Councils with the Ku Klux Klan—Council leaders wore business suits and used economic ruin rather than hooded terror.",
+        "prose_hash": "7c1f191118",
+        "prose_fp": "1f6f2439",
+        "question_hash": "a39d46a21b"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Mississippi abduction",
+            "bullet": "Roy Bryant and J.W. Milam kidnapped, mutilated, and shot fourteen-year-old Emmett Till → enforced racial taboos with murder"
+          },
+          {
+            "hint": "Open-casket witness",
+            "bullet": "Mamie Till-Mobley held an open-casket Chicago funeral before 50,000 mourners → forced onlookers to confront lynching"
+          },
+          {
+            "hint": "Black press photographs",
+            "bullet": "Jet magazine published graphic photographs nationwide → radicalised a young generation of future civil rights activists"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Chicago teenager",
+            "bullet": "Northern-raised Till was unfamiliar with Deep South racial codes → brought southern terror home to northern cities"
+          },
+          {
+            "hint": "Spark for 1955–60 youth",
+            "bullet": "Rosa Parks and future SNCC student leaders cited Till’s murder → converted grief into direct action"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BRUTAL LYNCHING",
+            "stem": "Abducted in Money, Mississippi in August 1955, fourteen-year-old ____________ was murdered by ____________ after allegedly whistling at a white shopkeeper."
+          },
+          {
+            "badge": "PUBLIC EXPOSURE",
+            "stem": "Insisting on an ____________ funeral in Chicago and allowing ____________ to print photographs, Mamie Till-Mobley shocked the nation."
+          },
+          {
+            "badge": "GENERATIONAL IMPACT",
+            "stem": "Unflinching visual proof of southern racial terror galvanised ____________ across both northern and southern states."
+          }
+        ],
+        "watch_out": "Emmett Till’s murder did not win immediate federal anti-lynching laws in 1955—its impact came through Jet magazine publicity and grassroots mobilisation.",
+        "prose_hash": "a8087decd0",
+        "prose_fp": "5d4fa692",
+        "question_hash": "3a1f85cd7c"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Eyewitness courtroom courage",
+            "bullet": "Great-uncle Moses Wright pointed directly at Bryant and Milam on the stand → defied lethal Mississippi threats"
+          },
+          {
+            "hint": "Rapid racial acquittal",
+            "bullet": "Segregated all-white jury acquitted both defendants in 67 minutes → proved Jim Crow courts shielded white killers"
+          },
+          {
+            "hint": "Brazen paid confession",
+            "bullet": "Protected by double jeopardy, the killers sold their confession to Look magazine for $4,000 → outraged northern readers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Voter-roll jury link",
+            "bullet": "Mississippi picked jurors exclusively from registered voters → Black disenfranchisement guaranteed an all-white jury"
+          },
+          {
+            "hint": "Federal hands-off stance",
+            "bullet": "Eisenhower and the Justice Department declined federal intervention → exposed the absence of federal civil rights protection"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WITNESS BRAVERY",
+            "stem": "Despite courageous courtroom identification by ____________, the Sumner trial was rigged because Black citizens were barred from ____________."
+          },
+          {
+            "badge": "SHAM VERDICT",
+            "stem": "Acquitted after sixty-seven minutes by an ____________, the killers used ____________ rules to brag openly in ____________."
+          },
+          {
+            "badge": "EXPOSED CORRUPTION",
+            "stem": "Selling a murder confession for $4,000 exposed the total bankruptcy of ____________ justice to northern and international audiences."
+          }
+        ],
+        "watch_out": "Link the trial directly to voting rights: southern juries were chosen from voter registration lists, so disenfranchising Black citizens guaranteed all-white juries.",
+        "prose_hash": "c41c4afd4c",
+        "prose_fp": "8fa80a08",
+        "question_hash": "ead042d82b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Shift to dynamite terror",
+            "bullet": "Resurgent Ku Klux Klan cells bombed NAACP offices, churches, and homes → escalated beyond cross-burnings to murder"
+          },
+          {
+            "hint": "Birmingham explosion wave",
+            "bullet": "Over fifty blasts struck Black Birmingham districts, including Fred Shuttlesworth’s home → earned the grim name 'Bombingham'"
+          },
+          {
+            "hint": "Shielded by local police",
+            "bullet": "Segregationist police officers protected Klan bombers from arrest → left Black neighbourhoods defenceless"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Enforcing housing lines",
+            "bullet": "Dynamite targeted Black families buying homes near white streets → policed residential colour bars through terror"
+          },
+          {
+            "hint": "Working-class Klan revival",
+            "bullet": "Court victories at Topeka and Montgomery panicked white extremists → swelled violent Klan klaverns across Alabama"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DYNAMITE CAMPAIGN",
+            "stem": "Triggered by mid-1950s desegregation rulings, a resurgent ____________ waged systematic ____________ against Black leaders and churches."
+          },
+          {
+            "badge": "ALABAMA EPICENTRE",
+            "stem": "Over fifty unpunished explosions—including the Christmas 1956 attack on ____________—earned Birmingham the nickname ____________."
+          },
+          {
+            "badge": "OFFICIAL IMPUNITY",
+            "stem": "Klansmen bombed with impunity because local ____________ shielded perpetrators while Washington failed to intervene."
+          }
+        ],
+        "watch_out": "Birmingham became known as 'Bombingham' from over fifty ongoing Klan house and church bombings between 1947 and 1965, starting long before the 1963 protests.",
+        "prose_hash": "e0502e2f65",
+        "prose_fp": "f81ce875",
+        "question_hash": "b1cbff1ada"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Dixiecrat filibuster",
+            "bullet": "Southern Democrats fought Eisenhower’s 1957 bill, capped by Strom Thurmond’s 24-hour filibuster → forced heavy compromises"
+          },
+          {
+            "hint": "Watered-down enforcement",
+            "bullet": "Lyndon Johnson stripped strong federal clauses and mandated jury trials for voting contempt → blunted Justice Department prosecutions"
+          },
+          {
+            "hint": "Tiny voter increase",
+            "bullet": "Biased southern white juries acquitted obstructive registrars → added under three percent of Black voters by 1960"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Symbolic breakthrough",
+            "bullet": "First federal civil rights statute enacted since Reconstruction → broke an eighty-two-year Congressional blockade"
+          },
+          {
+            "hint": "Need for stronger powers",
+            "bullet": "Failure of courtroom-only voting enforcement → proved direct federal voting examiners would be essential in 1965"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SOUTHERN OBSTRUCTION",
+            "stem": "Seeking the first civil rights law since Reconstruction, the ____________ faced fierce ____________ opposition and Strom Thurmond’s filibuster."
+          },
+          {
+            "badge": "SENATE COMPROMISE",
+            "stem": "To pass the bill, Lyndon Johnson accepted an amendment requiring ____________ in voting-rights contempt cases."
+          },
+          {
+            "badge": "WEAK IMPACT",
+            "stem": "Because all-white juries refused to convict racist registrars, Black registration rose by less than ____________ by 1960."
+          }
+        ],
+        "watch_out": "Never confuse the watered-down Civil Rights Act of 1957 with the landmark Civil Rights Act of 1964 or Voting Rights Act of 1965.",
+        "prose_hash": "156add7f61",
+        "prose_fp": "c2871253",
+        "question_hash": "6916b362fd"
+      }
+    ],
+    "lesson_2_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Woolworth counter protest",
+            "bullet": "Four Black college freshmen sat politely at Greensboro’s white-only Woolworth counter → created an easily copied protest model"
+          },
+          {
+            "hint": "Non-violent self-control",
+            "bullet": "Students endured insults, burning cigarettes, and thrown food without hitting back → won national television sympathy"
+          },
+          {
+            "hint": "Rapid retail integration",
+            "bullet": "Combined sit-ins and consumer boycotts → desegregated lunch counters across more than 100 southern cities by August 1960"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Impatience with courts",
+            "bullet": "Six years after Brown, barely any Deep South schools had integrated → students bypassed slow NAACP litigation"
+          },
+          {
+            "hint": "National store chains",
+            "bullet": "Targeting national chains like Woolworth enabled northern sympathy pickets → doubled commercial pressure on executives"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "YOUTH INITIATIVE",
+            "stem": "Started on 1 February 1960 by the ____________ at a ____________ lunch counter, sit-ins spread rapidly across college towns."
+          },
+          {
+            "badge": "DISCIPLINED PROTEST",
+            "stem": "Maintaining strict ____________ despite physical abuse, demonstrators paired sit-ins with ____________ to squeeze store profits."
+          },
+          {
+            "badge": "TANGIBLE SUCCESS",
+            "stem": "Integrating counters in over ____________ cities within months proved youth direct action worked faster than courtroom appeals."
+          }
+        ],
+        "watch_out": "Greensboro succeeded through economic pressure as well as moral witness—retail chains desegregated counters because sit-ins and boycotts slashed profits.",
+        "prose_hash": "edabfc3724",
+        "prose_fp": "71982108",
+        "question_hash": "fcf305cfe8"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Autonomous youth organisation",
+            "bullet": "Ella Baker urged Shaw University sit-in leaders to stay independent of SCLC → preserved student radicalism"
+          },
+          {
+            "hint": "Grassroots democracy",
+            "bullet": "SNCC rejected top-down charismatic leadership for participatory democracy → empowered local rural communities"
+          },
+          {
+            "hint": "Deep South fieldwork",
+            "bullet": "Full-time field secretaries braved beatings in rural Mississippi and Georgia → ran freedom schools and voter drives"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Generational contrast",
+            "bullet": "Where SCLC ministers staged short city campaigns, young SNCC volunteers lived permanently inside dangerous rural counties"
+          },
+          {
+            "hint": "Permanent activist network",
+            "bullet": "Linked isolated college sit-in groups into a fearless regional force → supplied key activists for 1961–65 campaigns"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STUDENT INDEPENDENCE",
+            "stem": "Convening student activists in April 1960, ____________ guided the founding of ____________ so youth would not become a cautious SCLC wing."
+          },
+          {
+            "badge": "BOTTOM-UP MODEL",
+            "stem": "Rejecting single-leader hierarchy, SNCC practised ____________ to train ordinary rural residents as local leaders."
+          },
+          {
+            "badge": "DANGEROUS FIELDWORK",
+            "stem": "Entering Klan strongholds across Mississippi and Georgia, SNCC secretaries built ____________ and registered disenfranchised voters."
+          }
+        ],
+        "watch_out": "SNCC began in 1960 as an interracial, strictly non-violent movement under Ella Baker—it only turned toward Black Power under Stokely Carmichael in 1966.",
+        "prose_hash": "dc2cc800bb",
+        "prose_fp": "21555bac",
+        "question_hash": "127bc4c409"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Testing Supreme Court law",
+            "bullet": "CORE launched Freedom Rides in May 1961 to test Boynton v. Virginia → challenged segregated interstate bus terminals"
+          },
+          {
+            "hint": "Interracial bus teams",
+            "bullet": "Thirteen Black and white riders boarded commercial buses from Washington D.C. → defied waiting-room colour bars together"
+          },
+          {
+            "hint": "Compelling federal action",
+            "bullet": "Expected violent Deep South backlash → aimed to force the reluctant Kennedy administration to enforce federal rulings"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Kennedy’s political caution",
+            "bullet": "President John F. Kennedy feared alienating powerful southern Democrats and focused on Cold War crises → delayed civil rights laws"
+          },
+          {
+            "hint": "Deeper route than 1947",
+            "bullet": "Unlike CORE’s 1947 upper-South ride, the 1961 route drove straight through Klan strongholds in Alabama and Mississippi"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEGAL TEST",
+            "stem": "Launched by ____________ in May 1961, the Freedom Rides tested southern compliance with the 1960 ____________ terminal ruling."
+          },
+          {
+            "badge": "INTERRACIAL DEFIANCE",
+            "stem": "Travelling from Washington D.C. toward New Orleans, thirteen ____________ riders deliberately integrated terminal waiting rooms."
+          },
+          {
+            "badge": "FORCING WASHINGTON'S HAND",
+            "stem": "Anticipating Deep South confrontation, organisers aimed to compel ____________ to enforce federal court mandates."
+          }
+        ],
+        "watch_out": "Keep bus rulings distinct: Browder v. Gayle in 1956 integrated local city buses in Montgomery, whereas Boynton v. Virginia covered interstate buses and terminals.",
+        "prose_hash": "c68bb9f92b",
+        "prose_fp": "182ff54b",
+        "question_hash": "f8a0e47765"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Mother's Day firebombing",
+            "bullet": "Klansmen ambushed and firebombed a Greyhound bus outside Anniston, holding doors shut → nearly killed trapped riders"
+          },
+          {
+            "hint": "Montgomery terminal beating",
+            "bullet": "Bat-wielding Montgomery mob beat SNCC leader John Lewis and a federal observer → exposed open police collusion"
+          },
+          {
+            "hint": "Six hundred federal marshals",
+            "bullet": "Shamed by global headlines, Attorney General Robert Kennedy sent 600 marshals → forced Governor Patterson to restore order"
+          }
+        ],
+        "context": [
+          {
+            "hint": "SNCC keeps rides rolling",
+            "bullet": "When injured CORE riders halted in Alabama, Nashville SNCC students stepped in → stopped Klan violence from winning"
+          },
+          {
+            "hint": "Vienna Cold War summit",
+            "bullet": "President Kennedy was weeks from meeting Soviet leader Khrushchev in Vienna → Alabama chaos humiliated US diplomacy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ALABAMA TERROR",
+            "stem": "Ambushed on Mother’s Day 1961, riders escaped an ____________ before mobs savagely beat ____________ in Montgomery."
+          },
+          {
+            "badge": "FEDERAL MARSHALS",
+            "stem": "Outraged by police complicity and global headlines, Attorney General ____________ dispatched ____________ to protect the riders."
+          },
+          {
+            "badge": "COLD WAR EMBARRASSMENT",
+            "stem": "Ahead of superpower talks in Europe, televised mob rule forced the Kennedy brothers to override Governor ____________."
+          }
+        ],
+        "watch_out": "After Anniston’s firebombing forced original CORE riders to recover, SNCC students led by Diane Nash and John Lewis kept the Freedom Rides moving.",
+        "prose_hash": "a86f479ff1",
+        "prose_fp": "43133556",
+        "question_hash": "801a56ef3e"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Mandatory ICC order",
+            "bullet": "Pressed by Robert Kennedy, the Interstate Commerce Commission banned transit segregation → enforced Boynton across every terminal"
+          },
+          {
+            "hint": "Four hundred riders endure",
+            "bullet": "Over 400 Freedom Riders courted arrest until November 1961 → forced terminals to remove segregation signs"
+          },
+          {
+            "hint": "University of Mississippi clash",
+            "bullet": "Kennedy sent marshals and troops for James Meredith in October 1962 → upheld university integration against riots"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Parchman jail-no-bail",
+            "bullet": "Riders endured Mississippi’s harsh Parchman Penitentiary rather than pay bail → sustained relentless pressure on Washington"
+          },
+          {
+            "hint": "Deadly Oxford riot",
+            "bullet": "White rioters killed two people resisting James Meredith’s enrolment → showed Deep South governors still defied courts"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FEDERAL REGULATION",
+            "stem": "Pressured by Robert Kennedy and over four hundred riders, the ____________ ordered full desegregation of interstate terminals from November 1961."
+          },
+          {
+            "badge": "VISIBLE VICTORY",
+            "stem": "Sustained ____________ brought 'White Only' waiting-room signs down across the South, proving direct action could force federal enforcement."
+          },
+          {
+            "badge": "OLE MISS STANDOFF",
+            "stem": "Kennedy had to deploy federal marshals and soldiers again in October 1962 when rioters tried to block ____________ from enrolling."
+          }
+        ],
+        "watch_out": "The Supreme Court had already outlawed terminal segregation in 1960—the 1961 Freedom Rides mattered because they forced actual ICC federal enforcement.",
+        "prose_hash": "37fe4acba6",
+        "prose_fp": "addbc40b",
+        "question_hash": "e64b379ae4"
+      }
+    ],
+    "lesson_2_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Targeting Bull Connor",
+            "bullet": "SCLC’s Project C deliberately confronted volatile Birmingham safety boss Bull Connor → provoked televised police brutality"
+          },
+          {
+            "hint": "Children's Crusade shockwave",
+            "bullet": "Connor set attack dogs and high-pressure fire hoses on marching schoolchildren → horrified national and global viewers"
+          },
+          {
+            "hint": "Federal and merchant concessions",
+            "bullet": "Outraged President Kennedy backed major civil rights legislation → Birmingham stores agreed to desegregate downtown facilities"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lesson of Albany",
+            "bullet": "Restrained policing in Albany, Georgia had denied King media impact in 1961–62 → SCLC chose explosive Birmingham next"
+          },
+          {
+            "hint": "Letter from Birmingham Jail",
+            "bullet": "Arrested in April 1963, King wrote his classic defence of non-violent direct action → challenged hesitant white clergy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STRATEGIC TARGET",
+            "stem": "Learning from earlier setbacks, SCLC launched ____________ in Birmingham knowing commissioner ____________ would react violently on camera."
+          },
+          {
+            "badge": "CHILDREN'S CRUSADE",
+            "stem": "When James Bevel mobilised thousands of pupils, televised images of ____________ and ____________ turned public opinion against segregation."
+          },
+          {
+            "badge": "PRESIDENTIAL SHIFT",
+            "stem": "Shocked by Birmingham’s brutality, ____________ called civil rights a moral crisis and drafted comprehensive federal legislation."
+          }
+        ],
+        "watch_out": "Birmingham succeeded because SCLC learned from Albany—King and James Bevel deliberately provoked Bull Connor’s temper before national television cameras.",
+        "prose_hash": "247ec53349",
+        "prose_fp": "822cb072",
+        "question_hash": "9d8f848917"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Quarter-million peaceful marchers",
+            "bullet": "Over 250,000 Black and white citizens gathered peacefully at the Lincoln Memorial → silenced warnings of disorder"
+          },
+          {
+            "hint": "Big Six unity",
+            "bullet": "Big Six leaders united NAACP, SCLC, SNCC, CORE, and unions → showed Congress broad national consensus"
+          },
+          {
+            "hint": "Televised moral vision",
+            "bullet": "King’s live 'I Have a Dream' speech framed equal rights as America’s core promise → swayed moderate voters"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Moderating John Lewis",
+            "bullet": "Organisers persuaded SNCC’s John Lewis to tone down fiery criticisms of Kennedy → kept moderate allies united"
+          },
+          {
+            "hint": "16th Street Church bombing",
+            "bullet": "Klan murder of four Black schoolgirls in Birmingham eighteen days later → deepened moral pressure to pass Kennedy’s bill"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MASS SOLIDARITY",
+            "stem": "Assembling over ____________ Black and white demonstrators peacefully in August 1963 pressured ____________ to pass civil rights reform."
+          },
+          {
+            "badge": "COALITION FRONT",
+            "stem": "Coordinated by the ____________, the rally united moderate and militant organisations alongside trade unions."
+          },
+          {
+            "badge": "MORAL BENCHMARK",
+            "stem": "Broadcast live across America, King’s ____________ speech turned legislative debate into a test of national conscience."
+          }
+        ],
+        "watch_out": "Remember the full name—the March on Washington for Jobs and Freedom demanded fair employment and decent wages alongside legal desegregation.",
+        "prose_hash": "c883a13ca9",
+        "prose_fp": "25e1ba8a",
+        "question_hash": "883ff8f0cd"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Breaking Senate obstruction",
+            "bullet": "President Lyndon Johnson used Kennedy’s legacy and political arm-twisting → defeated a 54-day southern filibuster"
+          },
+          {
+            "hint": "Public facilities outlawed",
+            "bullet": "Banned racial segregation across all public accommodations including hotels, restaurants, and parks → abolished legal Jim Crow"
+          },
+          {
+            "hint": "Workplace and school teeth",
+            "bullet": "Authorised Justice Department school lawsuits and created the EEOC → outlawed racial and gender bias in hiring"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Withholding federal grants",
+            "bullet": "Empowered Washington to cut federal funding from segregated state institutions → finally accelerated southern school integration"
+          },
+          {
+            "hint": "Unfinished voting battle",
+            "bullet": "Left state literacy tests and obstructive registrars largely intact → required a further voting campaign at Selma"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SENATE MASTERY",
+            "stem": "Harnessing national grief after November 1963, ____________ overcame a fifty-four-day filibuster to sign the ____________ in July 1964."
+          },
+          {
+            "badge": "END OF DE JURE JIM CROW",
+            "stem": "Outlawing segregation across ____________ such as hotels and theatres, the Act also empowered federal prosecutors to desegregate ____________."
+          },
+          {
+            "badge": "EMPLOYMENT & GAPS",
+            "stem": "While creating the ____________ to police hiring discrimination, the 1964 Act still left southern ____________ barriers standing."
+          }
+        ],
+        "watch_out": "Keep the two landmark Johnson laws separate: the 1964 Civil Rights Act banned segregated public places and job bias, while the 1965 Act tackled voting.",
+        "prose_hash": "4b40454097",
+        "prose_fp": "f565bc98",
+        "question_hash": "8d621552af"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Dallas County exclusion",
+            "bullet": "Only two percent of Selma’s Black adults were registered to vote → exposed persistent disenfranchisement after 1964"
+          },
+          {
+            "hint": "Edmund Pettus assault",
+            "bullet": "Alabama troopers and sheriff’s posses attacked 600 peaceful marchers with tear gas, whips, and clubs → fractured John Lewis’s skull"
+          },
+          {
+            "hint": "Televised national outrage",
+            "bullet": "Networks broadcast Bloody Sunday violence into millions of homes → drew clergy and citizens nationwide to Selma"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Targeting Sheriff Jim Clark",
+            "bullet": "SCLC picked Selma knowing volatile Sheriff Jim Clark would mirror Bull Connor → guaranteed dramatic national coverage"
+          },
+          {
+            "hint": "Jimmie Lee Jackson killed",
+            "bullet": "A state trooper fatally shot young protester Jimmie Lee Jackson in February 1965 → triggered the march toward Montgomery"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SELMA DISENFRANCHISEMENT",
+            "stem": "Targeting Dallas County, where only ____________ of Black residents could vote, six hundred marchers set out for ____________."
+          },
+          {
+            "badge": "BLOODY SUNDAY",
+            "stem": "Crossing the ____________ on 7 March 1965, peaceful demonstrators led by ____________ were clubbed and tear-gassed by state troopers."
+          },
+          {
+            "badge": "MORAL SHOCKWAVE",
+            "stem": "Prime-time footage of ____________ horrified voters nationwide and enabled King to rally thousands for a federally protected march."
+          }
+        ],
+        "watch_out": "Martin Luther King Jr. was not on the Edmund Pettus Bridge during 7 March 'Bloody Sunday'—John Lewis and Hosea Williams led that march before King led later marches.",
+        "prose_hash": "381e7a385b",
+        "prose_fp": "ce2a352f",
+        "question_hash": "ce8330e746"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Banning rigged tests",
+            "bullet": "Voting Rights Act of August 1965 outlawed literacy tests → stripped southern registrars of their main exclusionary tool"
+          },
+          {
+            "hint": "Direct federal examiners",
+            "bullet": "Authorised federal voting examiners to register citizens directly in discriminatory counties → bypassed obstructive local officials"
+          },
+          {
+            "hint": "Doubling Black registration",
+            "bullet": "Confederate-state Black registration surged past 60 percent within four years → elected thousands of Black sheriffs and lawmakers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Twenty-Fourth Amendment",
+            "bullet": "Paired with 1964’s Twenty-Fourth Amendment outlawing federal poll taxes → removed financial and educational voting hurdles"
+          },
+          {
+            "hint": "Limits outside the South",
+            "bullet": "Watts rioted just five days after signing → showed southern voting rights did not solve northern ghetto poverty"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FEDERAL ENFORCEMENT",
+            "stem": "Echoing 'we shall overcome', President Johnson signed the ____________ in August 1965 to abolish ____________ and send federal examiners."
+          },
+          {
+            "badge": "POLITICAL EMPOWERMENT",
+            "stem": "Within four years, southern Black voter registration climbed above ____________, electing Black mayors, sheriffs, and legislators."
+          },
+          {
+            "badge": "TURNING POINT",
+            "stem": "Bypassing local courts via ____________ made the 1965 Act succeed where the weak 1957 Act had failed."
+          }
+        ],
+        "watch_out": "Explain why 1965 worked where 1957 failed: direct registration by federal voting examiners bypassed obstructive white registrars and juries entirely.",
+        "prose_hash": "3e915e66c5",
+        "prose_fp": "f810318d",
+        "question_hash": "32c7831d59"
+      }
+    ],
+    "lesson_2_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Northern urban voice",
+            "bullet": "Articulated anger in northern ghettos → argued King’s southern integration ignored poverty and police brutality"
+          },
+          {
+            "hint": "Black Muslim separatism",
+            "bullet": "Through Elijah Muhammad’s Black Muslims—the Nation of Islam—preached racial pride, separate institutions, and Black nationalism"
+          },
+          {
+            "hint": "Armed self-protection",
+            "bullet": "Dismissed non-violence as leaving Black communities defenceless → urged self-defence 'by any means necessary'"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mecca pilgrimage shift",
+            "bullet": "Left Elijah Muhammad and visited Mecca in 1964 → embraced interracial brotherhood and founded the OAAU"
+          },
+          {
+            "hint": "1965 assassination legacy",
+            "bullet": "Shot dead by rival Black Muslims in February 1965 → his speeches and autobiography inspired Black Power leaders"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GHETTO RESONANCE",
+            "stem": "Voice of northern urban Black communities, ____________ preached nationalism and economic independence through the ____________."
+          },
+          {
+            "badge": "CRITIQUE OF NON-VIOLENCE",
+            "stem": "Condemning King’s approach as defenceless against racist attacks, Malcolm advocated ____________ 'by any means necessary'."
+          },
+          {
+            "badge": "POST-1964 EVOLUTION",
+            "stem": "After breaking with ____________ and completing his pilgrimage to ____________, he softened his rejection of interracial allies."
+          }
+        ],
+        "watch_out": "Never treat Malcolm X’s ideology as static—after leaving the Black Muslims and visiting Mecca in 1964, he rejected strict racial separatism before his murder.",
+        "prose_hash": "7fdf6043c7",
+        "prose_fp": "43970caf",
+        "question_hash": "1e6352c4cd"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "March Against Fear clash",
+            "bullet": "Continuing wounded James Meredith’s 1966 Mississippi march → exposed open ideological conflict between SCLC and SNCC"
+          },
+          {
+            "hint": "Greenwood rally chant",
+            "bullet": "Newly elected SNCC chair Stokely Carmichael championed 'Black Power' → demanded self-determination, pride, and economic control"
+          },
+          {
+            "hint": "Splitting the coalition",
+            "bullet": "Captivated frustrated young radicals while alienating NAACP moderates and white liberals → ended unified civil rights activism"
+          }
+        ],
+        "context": [
+          {
+            "hint": "SNCC battle fatigue",
+            "bullet": "Years of unpunished Deep South beatings and murders eroded SNCC volunteers’ faith in non-violence and federal allies"
+          },
+          {
+            "hint": "Drying northern donations",
+            "bullet": "Expelling white members from SNCC and CORE → cut off vital financial backing from northern liberal donors"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MISSISSIPPI DIVIDE",
+            "stem": "Converging in June 1966 to continue James Meredith’s ____________, King’s non-violent SCLC clashed with SNCC chair ____________."
+          },
+          {
+            "badge": "SELF-DETERMINATION",
+            "stem": "Popularising the slogan ____________ in Greenwood, Carmichael prioritised Black political and economic autonomy over ____________."
+          },
+          {
+            "badge": "FRACTURED MOVEMENT",
+            "stem": "While energising urban youth, the shift drove away ____________ and older integrationist groups, splitting the movement in two."
+          }
+        ],
+        "watch_out": "Black Power demanded political self-reliance, cultural pride, and community control—avoid equating Carmichael’s slogan simply with violent rioting.",
+        "prose_hash": "ea5b7591b9",
+        "prose_fp": "56ad85ab",
+        "question_hash": "d0bd56ad2b"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Armed Oakland patrols",
+            "bullet": "Huey Newton and Bobby Seale organised armed citizen patrols in October 1966 → shadowed police to deter brutality"
+          },
+          {
+            "hint": "Social and economic points",
+            "bullet": "Ten-Point Program demanded full employment, decent housing, and fair education → targeted northern urban deprivation"
+          },
+          {
+            "hint": "Justice and military demands",
+            "bullet": "Called for freeing Black prisoners and exempting Black men from military service → linked ghetto policing to Vietnam"
+          }
+        ],
+        "context": [
+          {
+            "hint": "California Capitol march",
+            "bullet": "Armed Panthers entered Sacramento’s State Capitol in May 1967 → won national television fame and urban recruits"
+          },
+          {
+            "hint": "Marxist class alliances",
+            "bullet": "Unlike separatist Black Muslims, socialist Panthers built 'Rainbow Coalition' ties with radical white and Latino groups"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SELF-DEFENCE PATROLS",
+            "stem": "Founded in Oakland in October 1966 by ____________, the Black Panthers wore black berets and monitored ____________."
+          },
+          {
+            "badge": "TEN-POINT PROGRAM",
+            "stem": "Addressing inner-city poverty directly, their ____________ demanded full employment, ____________, and quality education."
+          },
+          {
+            "badge": "REVOLUTIONARY POLITICS",
+            "stem": "Blending Black nationalism with Marxist ideas, Panthers also demanded prison release and exemption from ____________."
+          }
+        ],
+        "watch_out": "Unlike the Nation of Islam, the Black Panthers were revolutionary Marxists who formed cross-racial alliances rather than demanding racial separatism.",
+        "prose_hash": "54b5bcf170",
+        "prose_fp": "38093b0a",
+        "question_hash": "c5ae35d77c"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Inner-city welfare aid",
+            "bullet": "Free Breakfast for Children, health clinics, and schools served thousands daily → highlighted municipal neglect of poverty"
+          },
+          {
+            "hint": "Branded top security threat",
+            "bullet": "Armed citizen patrols and revolutionary language → led FBI Director J. Edgar Hoover to label Panthers public enemy number one"
+          },
+          {
+            "hint": "Covert FBI destruction",
+            "bullet": "COINTELPRO deployed wiretaps, forged letters, and armed raids → killed Illinois Panther leader Fred Hampton in December 1969"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Fear of community legitimacy",
+            "bullet": "Hoover feared Free Breakfasts won grassroots respect → targeted welfare survival programmes alongside armed chapters"
+          },
+          {
+            "hint": "Infiltrator-fuelled splits",
+            "bullet": "FBI informants stoked deadly paranoia and factional feuds → fatally weakened the Black Panther Party by the early 1970s"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MUTUAL AID",
+            "stem": "Across impoverished cities, Panthers built grassroots loyalty through survival programmes such as ____________ and free medical clinics."
+          },
+          {
+            "badge": "FEDERAL SURVEILLANCE",
+            "stem": "Alarmed by armed patrols and rising influence, FBI chief ____________ targeted the Party through covert ____________ operations."
+          },
+          {
+            "badge": "VIOLENT SUPPRESSION",
+            "stem": "Forged correspondence, infiltrators, and armed police raids—including the 1969 killing of ____________—dismantled key chapters."
+          }
+        ],
+        "watch_out": "Strong exam answers weigh both sides of the Panthers: genuine community welfare via Free Breakfasts alongside armed shootouts and lethal FBI COINTELPRO raids.",
+        "prose_hash": "6d1ebd2992",
+        "prose_fp": "4799608e",
+        "question_hash": "54a59835e5"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Barefoot podium symbols",
+            "bullet": "200-metre medallists Tommie Smith and John Carlos stood barefoot in black gloves → symbolised Black poverty and unity"
+          },
+          {
+            "hint": "Anthem clenched-fist protest",
+            "bullet": "Bowed heads and raised black-gloved fists during the US anthem → projected Black Power to hundreds of millions globally"
+          },
+          {
+            "hint": "Expulsion and sacrifice",
+            "bullet": "Olympic officials suspended both sprinters from the Village → career sacrifice cemented an enduring global icon of pride"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Crisis year of 1968",
+            "bullet": "Staged six months after King’s assassination → captured deep disillusionment over persistent racism in America"
+          },
+          {
+            "hint": "Hostile white reaction",
+            "bullet": "Widespread white outrage at protesting during the national anthem → showed how sharply Black Power polarised opinion"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VISUAL SYMBOLISM",
+            "stem": "Standing barefoot on the podium at the ____________, sprinters ____________ wore badges and black gloves to highlight poverty."
+          },
+          {
+            "badge": "WORLDWIDE AUDIENCE",
+            "stem": "Raising bowed-head clenched fists during ____________ carried the Black Power message to hundreds of millions of viewers."
+          },
+          {
+            "badge": "COSTLY DEFIANCE",
+            "stem": "Suspended immediately by Olympic officials, both athletes endured ____________ at home while inspiring global pride."
+          }
+        ],
+        "watch_out": "Smith and Carlos staged a silent, disciplined human-rights demonstration—black socks for poverty, bowed heads—yet critics attacked it as unpatriotic militancy.",
+        "prose_hash": "83b7d69c43",
+        "prose_fp": "5e7ef7f1",
+        "question_hash": "06ffe7c041"
+      }
+    ],
+    "lesson_2_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Police arrest spark",
+            "bullet": "Aggressive traffic arrest of young Black motorist Marquette Frye → ignited deep fury over LAPD brutality"
+          },
+          {
+            "hint": "De facto ghetto misery",
+            "bullet": "Dilapidated housing, high joblessness, and chronic police harassment in Watts → drove six days of urban rebellion"
+          },
+          {
+            "hint": "Human and financial toll",
+            "bullet": "34 deaths, $40m property damage, and 14,000 National Guardsmen → shattered white assumptions that racism was purely southern"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Five days after Selma Act",
+            "bullet": "Exploded just five days after the Voting Rights Act → proved ballots and bus integration left ghetto poverty untouched"
+          },
+          {
+            "hint": "Conservative white backlash",
+            "bullet": "Televised arson and street fighting alienated moderate white voters → boosted 'law and order' conservatives in California"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CATALYST INCIDENT",
+            "stem": "Erupting days after the 1965 Voting Rights Act, six days of Watts rioting began with the police arrest of ____________."
+          },
+          {
+            "badge": "UNDERLYING GRIEVANCES",
+            "stem": "Beyond the traffic stop lay entrenched ____________ deprivation, including slum housing, unemployment, and ____________."
+          },
+          {
+            "badge": "NATIONAL WAKE-UP",
+            "stem": "Leaving ____________ dead and requiring 14,000 Guardsmen, Watts exposed problems that southern civil rights laws could not fix."
+          }
+        ],
+        "watch_out": "Marquette Frye’s arrest was the trigger, not the underlying cause—Californian Black citizens already had legal voting rights yet suffered severe economic exclusion.",
+        "prose_hash": "3156b7586d",
+        "prose_fp": "81d07e9d",
+        "question_hash": "d66d5a2902"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Targeting slums and redlining",
+            "bullet": "King moved into a West Side tenement in 1966 → challenged slum landlords, job bias, and racist bank redlining"
+          },
+          {
+            "hint": "Marquette Park brick mobs",
+            "bullet": "Thousands of white residents pelted open-housing marchers with bricks and bottles, hitting King → exposed fierce northern racism"
+          },
+          {
+            "hint": "Hollow municipal pledges",
+            "bullet": "Mayor Richard Daley offered vague housing promises without enforcement → revealed how stubbornly northern de facto segregation persisted"
+          }
+        ],
+        "context": [
+          {
+            "hint": "No Bull Connor foil",
+            "bullet": "Shrewd Mayor Daley ordered police to protect King rather than attack children → denied SCLC Birmingham-style leverage"
+          },
+          {
+            "hint": "Boost to Black Power",
+            "bullet": "Stalled Chicago housing gains convinced many urban youths that non-violent marches could not transform northern ghettos"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NORTHERN CAMPAIGN",
+            "stem": "Moving into a dilapidated Chicago flat in 1966, Dr King led the ____________ against slum tenements and bank ____________."
+          },
+          {
+            "badge": "SUBURBAN HOSTILITY",
+            "stem": "Violent white mobs in ____________ struck King with a rock, leading him to remark they were more hostile than Mississippi crowds."
+          },
+          {
+            "badge": "DE FACTO LIMITS",
+            "stem": "Outmanoeuvred by Mayor ____________ with vague promises, King found informal northern segregation harder to defeat than southern statutes."
+          }
+        ],
+        "watch_out": "Northern de facto segregation rested on private housing markets, mortgage redlining, and neighbourhood boundaries rather than single Jim Crow laws Congress could repeal.",
+        "prose_hash": "ef532c1024",
+        "prose_fp": "3e8b2e93",
+        "question_hash": "f2c80e48e5"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Police flashpoints",
+            "bullet": "Beating a Black cab driver in Newark and raiding an unlicensed Detroit club → sparked five-day urban uprisings"
+          },
+          {
+            "hint": "Paratroopers and death toll",
+            "bullet": "26 died in Newark and 43 in Detroit → forced President Johnson to deploy federal airborne paratroopers and tanks"
+          },
+          {
+            "hint": "Inner-city alienation",
+            "bullet": "Seven thousand arrests and widespread arson → showed inner-city Black Americans felt abandoned by mainstream politics"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1967 Long Hot Summer",
+            "bullet": "Over 150 US cities experienced racial unrest in summer 1967 → made urban disorder America’s biggest domestic crisis"
+          },
+          {
+            "hint": "Suburban white flight",
+            "bullet": "Affluent white residents and employers fled inner cities after 1967 → hollowed out municipal tax bases further"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EXPLOSIVE SUMMER",
+            "stem": "Peaking during July 1967’s 'Long Hot Summer', police raids sparked devastating rebellions across ____________ and ____________."
+          },
+          {
+            "badge": "FEDERAL TROOPS",
+            "stem": "With ____________ killed in Detroit alone, President Johnson dispatched ____________ and armoured tanks to restore control."
+          },
+          {
+            "badge": "DESPERATE PROTEST",
+            "stem": "Repeated inner-city explosions proved that earlier southern laws had left northern ____________ and police relations unresolved."
+          }
+        ],
+        "watch_out": "Contrast the two deployments carefully: in 1957 Little Rock federal paratroopers protected Black school pupils, whereas in 1967 Detroit paratroopers suppressed an urban uprising.",
+        "prose_hash": "10a0765e65",
+        "prose_fp": "ccd07f97",
+        "question_hash": "0f81ef10a2"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Two unequal societies",
+            "bullet": "Warned America was splitting into two separate, unequal societies → exposed deepening racial polarization"
+          },
+          {
+            "hint": "Naming institutional racism",
+            "bullet": "Explicitly blamed white institutional racism—rather than communist conspiracies—for ghetto poverty, bad housing, and riots"
+          },
+          {
+            "hint": "Ignored federal spending plan",
+            "bullet": "Urged massive federal investment in jobs, public housing, and integrated schools → shelved by Johnson over Vietnam costs"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Vietnam budget drain",
+            "bullet": "Billions spent fighting in Vietnam starved Johnson’s Great Society urban anti-poverty programmes of federal funds"
+          },
+          {
+            "hint": "Nixon’s Silent Majority appeal",
+            "bullet": "Resentful white voters rejected blame and expensive welfare plans → helped Richard Nixon win the 1968 presidency"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STARK WARNING",
+            "stem": "Investigating urban unrest, the February 1968 ____________ warned America was dividing into ____________."
+          },
+          {
+            "badge": "ROOT CAUSE",
+            "stem": "Rejecting claims of outside agitators, commissioners identified ____________ as the primary cause of ghetto conditions."
+          },
+          {
+            "badge": "SHELVED REFORMS",
+            "stem": "Although the report urged sweeping spending on jobs and housing, President Johnson ignored it due to ____________ costs."
+          }
+        ],
+        "watch_out": "The Kerner Report delivered a landmark diagnosis, not new funding—Johnson shelved its expensive urban proposals because the Vietnam War drained federal finances.",
+        "prose_hash": "d54d572443",
+        "prose_fp": "a0da85d7",
+        "question_hash": "1daf5bf6c3"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Lorraine Motel murder",
+            "bullet": "James Earl Ray shot King in Memphis during a sanitation strike → ended unified national civil rights leadership"
+          },
+          {
+            "hint": "Hundred-city uprisings",
+            "bullet": "Outrage over King’s murder sparked rebellions across more than 100 cities → shattered remaining faith in non-violence"
+          },
+          {
+            "hint": "Fair Housing breakthrough",
+            "bullet": "National grief broke Congressional deadlock within days → passed the 1968 Fair Housing Act banning housing discrimination"
+          }
+        ],
+        "context": [
+          {
+            "hint": "End of Poor People’s push",
+            "bullet": "King’s Poor People’s Campaign lost its unifying voice → deepened fragmentation between moderate and radical groups"
+          },
+          {
+            "hint": "Weak enforcement to 1975",
+            "bullet": "1968 Fair Housing Act lacked strong federal enforcement mechanisms → de facto housing and wealth gaps persisted through 1975"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MEMPHIS ASSASSINATION",
+            "stem": "Assassinated on 4 April 1968 in ____________ while backing striking sanitation workers, King’s murder triggered riots in over ____________ cities."
+          },
+          {
+            "badge": "LEGISLATIVE PASSAGE",
+            "stem": "Breaking months of stalemate in Congress, lawmakers enacted the ____________ to outlaw racial bias in selling or renting homes."
+          },
+          {
+            "badge": "MIXED LEGACY BY 1975",
+            "stem": "While completing landmark federal statutes, King’s death ended ____________ leadership and left economic inequality entrenched."
+          }
+        ],
+        "watch_out": "Although the 1968 Civil Rights Act—the Fair Housing Act—outlawed housing discrimination in law, weak enforcement meant residential segregation persisted in 1975.",
+        "prose_hash": "68ec8de628",
+        "prose_fp": "e4ca28fa",
+        "question_hash": "0c4367f24d"
+      }
+    ],
+    "lesson_3_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Colonial collapse",
+            "bullet": "Viet Minh crushed French forces at Dien Bien Phu in May 1954 → ended French rule"
+          },
+          {
+            "hint": "Temporary ceasefire line",
+            "bullet": "1954 Geneva Accords divided Vietnam along the 17th Parallel → split communist North from South"
+          },
+          {
+            "hint": "Containment doctrine",
+            "bullet": "Eisenhower's domino theory warned losing South Vietnam would topple Southeast Asian neighbours one by one"
+          },
+          {
+            "hint": "Washington's response",
+            "bullet": "America refused to sign the Geneva declaration → poured financial aid and advisers into Saigon"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Chinese revolution",
+            "bullet": "Mao's 1949 victory in China and the Korean War → intensified US Asian containment fears"
+          },
+          {
+            "hint": "Prior French funding",
+            "bullet": "Truman and Eisenhower had already bankrolled eighty percent of France's war costs by 1954"
+          },
+          {
+            "hint": "Regional treaty",
+            "bullet": "Washington formed SEATO in September 1954 → placed South Vietnam under Western anti-communist protection"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COLONIAL DEFEAT",
+            "stem": "Following France's decisive defeat at ____________ in May 1954, the ____________ divided Vietnam along..."
+          },
+          {
+            "badge": "COLD WAR FEARS",
+            "stem": "Guided by Eisenhower's ____________, US officials feared that a communist victory across Vietnam would..."
+          },
+          {
+            "badge": "US INTERVENTION",
+            "stem": "Refusing to sign the ____________ declaration, Washington channelled ____________ and military advisers into South Vietnam."
+          }
+        ],
+        "watch_out": "The 17th Parallel agreed at Geneva was meant only as a temporary ceasefire line pending 1956 elections—not a permanent state border.",
+        "prose_hash": "fe76c2df91",
+        "prose_fp": "fa269ca5",
+        "question_hash": "f23fec53c4"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Fraudulent 1955 vote",
+            "bullet": "Diem ousted Emperor Bao Dai via a rigged 1955 referendum → claimed 98.2 percent support"
+          },
+          {
+            "hint": "Peasant nationalist appeal",
+            "bullet": "Ho Chi Minh's overwhelming popularity as an anti-colonial hero → guaranteed communist victory in elections"
+          },
+          {
+            "hint": "Washington subsidies",
+            "bullet": "Eisenhower backed Diem's cancellation with CIA help and millions in subsidies → blocked communist reunification"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Voter arithmetic",
+            "bullet": "North Vietnam held a larger population than the South → made nationwide elections mathematically unwinnable"
+          },
+          {
+            "hint": "Unsigned political terms",
+            "bullet": "Neither Saigon nor Washington had signed the 1954 Geneva political declaration → claimed zero legal obligation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ELECTORAL ARITHMETIC",
+            "stem": "Realising that ____________ enjoyed overwhelming peasant support as a nationalist hero, Ngo Dinh Diem cancelled..."
+          },
+          {
+            "badge": "RIGGED MANDATE",
+            "stem": "Having deposed Emperor ____________ through a fraudulent October 1955 referendum, Diem proclaimed the ____________..."
+          },
+          {
+            "badge": "AMERICAN BACKING",
+            "stem": "Determined to prevent communist reunification, the ____________ administration endorsed Diem's refusal with ____________..."
+          }
+        ],
+        "watch_out": "Do not confuse Diem's rigged October 1955 Saigon referendum against Bao Dai with the cancelled July 1956 nationwide reunification elections.",
+        "prose_hash": "9dc97840f8",
+        "prose_fp": "838ce621",
+        "question_hash": "3c67291a35"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Local village rule",
+            "bullet": "Diem abolished traditional village councils, jailed 40,000 dissidents, and executed suspected communist sympathisers"
+          },
+          {
+            "hint": "Delta land seizures",
+            "bullet": "Wealthy Catholic landlords re-seized Mekong Delta farmland from impoverished Buddhist tenant farmers"
+          },
+          {
+            "hint": "December 1960 launch",
+            "bullet": "Southern rebels founded the National Liberation Front—the Vietcong—in December 1960 → waged guerrilla revolt"
+          },
+          {
+            "hint": "Jungle supply route",
+            "bullet": "Supplied via the Ho Chi Minh Trail, Vietcong assassinated Saigon officials → won rural loyalty"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Palace nepotism",
+            "bullet": "Diem packed top posts with Catholic relatives such as brother Ngo Dinh Nhu → alienated Buddhists"
+          },
+          {
+            "hint": "Reversed land reform",
+            "bullet": "Viet Minh had previously given peasants free plots → Diem restoring landlords enraged rural families"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RURAL GRIEVANCES",
+            "stem": "Across the Mekong Delta, Diem alienated Buddhist farmers by restoring land to ____________ and abolishing..."
+          },
+          {
+            "badge": "STATE REPRESSION",
+            "stem": "Jailing over ____________ political prisoners and executing suspected opponents pushed angry villagers toward ____________..."
+          },
+          {
+            "badge": "ARMED INSURGENCY",
+            "stem": "Formed in December 1960 and supplied along the ____________, the Vietcong gained countryside control through..."
+          }
+        ],
+        "watch_out": "The Vietcong—the National Liberation Front—began primarily as South Vietnamese insurgents opposing Diem, not merely invading North Vietnamese regular troops.",
+        "prose_hash": "4ec88076da",
+        "prose_fp": "7202f222",
+        "question_hash": "e4a7800f6b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Barbed-wire relocations",
+            "bullet": "Strategic Hamlet Program uprooted four million peasants from ancestral lands → drove villagers into Vietcong"
+          },
+          {
+            "hint": "Hue flag shootings",
+            "bullet": "Diem's troops fired on Buddhists protesting a religious flag ban in Hue → sparked crisis"
+          },
+          {
+            "hint": "Saigon street protest",
+            "bullet": "Monk Thich Quang Duc's self-immolation and Madame Nhu's 'barbecue' sneer → horrified Washington allies"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unpaid village labour",
+            "bullet": "Villagers were forced to build fortified Strategic Hamlets unpaid while corrupt officials pocketed US aid"
+          },
+          {
+            "hint": "Religious majority",
+            "bullet": "Buddhists made up roughly eighty percent of South Vietnam → Catholic bias alienated urban citizens"
+          },
+          {
+            "hint": "Expanding US advisers",
+            "bullet": "Kennedy raised US military advisers past 16,000 by 1963 → Western reporters filmed Saigon's repression"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RURAL ALIENATION",
+            "stem": "Uprooting four million villagers into fortified ____________ tore families from ancestral graves and drove thousands..."
+          },
+          {
+            "badge": "SECTARIAN CRISIS",
+            "stem": "Catholic favouritism exploded in 1963 after troops shot ____________ in Hue and monk ____________ burned..."
+          },
+          {
+            "badge": "POLITICAL LIABILITY",
+            "stem": "Compounded when ____________ mocked monk protests as 'barbecues', global outrage convinced Kennedy that Diem..."
+          }
+        ],
+        "watch_out": "Strategic Hamlets aimed to isolate villagers from guerrillas, yet forced relocation and official corruption pushed rural peasants straight into Vietcong ranks.",
+        "prose_hash": "db36941993",
+        "prose_fp": "00a39ecb",
+        "question_hash": "ce521f1a46"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Embassy non-interference",
+            "bullet": "Through Ambassador Henry Cabot Lodge, Kennedy assured plotting generals Washington would not block a coup"
+          },
+          {
+            "hint": "Armoured van killings",
+            "bullet": "ARVN generals working with CIA contacts overthrew and murdered Diem and Nhu in November 1963"
+          },
+          {
+            "hint": "Political power vacuum",
+            "bullet": "Killing Diem without a stable democratic replacement → plunged Saigon into years of chaotic coups"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dallas tragedy",
+            "bullet": "President Kennedy was assassinated three weeks later in Dallas → left Lyndon Johnson an escalating crisis"
+          },
+          {
+            "hint": "Northern opportunity",
+            "bullet": "Hanoi exploited Saigon's leadership chaos → expanded weapons and personnel moving south after November 1963"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TACIT GREEN LIGHT",
+            "stem": "Convinced that Diem was sabotaging the war effort, Washington signalled via Ambassador ____________ that it..."
+          },
+          {
+            "badge": "MILITARY TAKEOVER",
+            "stem": "Rebel ____________ seized Saigon installations on 1 November 1963 before assassinating Diem and his brother..."
+          },
+          {
+            "badge": "CHRONIC INSTABILITY",
+            "stem": "Far from strengthening South Vietnam, Diem's murder unleashed years of ____________ that crippled..."
+          }
+        ],
+        "watch_out": "South Vietnamese ARVN generals carried out the November 1963 coup and killings—Washington gave covert approval rather than sending US troops.",
+        "prose_hash": "ab9e435f19",
+        "prose_fp": "76dec28e",
+        "question_hash": "f186bafff3"
+      }
+    ],
+    "lesson_3_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Revolving palace juntas",
+            "bullet": "Ten military governments seized power within eighteen months after Diem → paralysed Saigon's strategic command"
+          },
+          {
+            "hint": "Conscript desertions",
+            "bullet": "Tens of thousands of demoralised ARVN soldiers deserted annually → hollowed out government field strength"
+          },
+          {
+            "hint": "Rural encirclement",
+            "bullet": "Vietcong insurgents controlled forty percent of southern villages by late 1964 → ringed provincial capitals"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Weak officer leadership",
+            "bullet": "Politicised ARVN promotions rewarded palace loyalty over combat skill → exposed earlier at Ap Bac"
+          },
+          {
+            "hint": "Village taxes and rice",
+            "bullet": "Expanding rural control gave Vietcong guerrillas local rice stores, taxes, intelligence, and fresh recruits"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "JUNTA PARALYSIS",
+            "stem": "Paralysed by ____________ within eighteen months of Diem's fall, Saigon's officers focused on palace intrigues..."
+          },
+          {
+            "badge": "ARMY DECAY",
+            "stem": "Suffering tens of thousands of ____________ each year, the demoralised ARVN steadily lost control over..."
+          },
+          {
+            "badge": "INSURGENT GAINS",
+            "stem": "Capitalising on Saigon's weakness, ____________ guerrillas held roughly ____________ of southern villages by late 1964."
+          }
+        ],
+        "watch_out": "ARVN stands for the Army of the Republic of Vietnam—the US-backed South Vietnamese army—not communist North Vietnamese regulars.",
+        "prose_hash": "b0ef8f3af3",
+        "prose_fp": "6232035f",
+        "question_hash": "f348e36e02"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "2 August clash",
+            "bullet": "North Vietnamese torpedo boats engaged spy destroyer USS Maddox during electronic patrol on 2 August"
+          },
+          {
+            "hint": "4 August radar",
+            "bullet": "Stormy weather and phantom sonar blips triggered disputed reports of a second torpedo attack"
+          },
+          {
+            "hint": "Naval base strikes",
+            "bullet": "Johnson ordered immediate retaliatory airstrikes on North Vietnam → used disputed clash to escalate"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1964 election pressure",
+            "bullet": "Campaigning against hawkish Republican Barry Goldwater in 1964 → Johnson refused to look weak abroad"
+          },
+          {
+            "hint": "Covert island raids",
+            "bullet": "US-backed South Vietnamese commandos were raiding northern coastal islands nearby → provoked Hanoi's boats"
+          },
+          {
+            "hint": "Domestic reform agenda",
+            "bullet": "Johnson wanted decisive authority abroad so Congress would still pass his Great Society reforms"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OPENING SKIRMISH",
+            "stem": "Conducting electronic intelligence off North Vietnam, the ____________ exchanged fire with torpedo boats on 2 August."
+          },
+          {
+            "badge": "PHANTOM TORPEDOES",
+            "stem": "Two nights later amidst storms, sonar operators mistook ____________ for a second North Vietnamese attack."
+          },
+          {
+            "badge": "RETALIATORY ESCALATION",
+            "stem": "Without verifying the 4 August report, President ____________ ordered airstrikes against ____________ and sought congressional..."
+          }
+        ],
+        "watch_out": "Separate the two August 1964 dates carefully: the 2 August skirmish genuinely happened, whereas the 4 August 'second attack' did not.",
+        "prose_hash": "8dbc37cf15",
+        "prose_fp": "af8402c7",
+        "question_hash": "8aec43dd03"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Near-unanimous Senate vote",
+            "bullet": "Congress passed the Gulf of Tonkin Resolution on 7 August 1964 with two dissenting Senators"
+          },
+          {
+            "hint": "Open-ended authority",
+            "bullet": "Handed Johnson a 'blank check' to take all necessary measures against communist armed aggression"
+          },
+          {
+            "hint": "Undeclared war power",
+            "bullet": "Expanded presidential war powers → let Johnson send hundreds of thousands of troops without declaring war"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Constitutional war clause",
+            "bullet": "Only Congress can declare war under the US Constitution → lawmakers surrendered oversight to Johnson"
+          },
+          {
+            "hint": "Pre-drafted text",
+            "bullet": "Johnson's advisers had prepared a draft congressional resolution months before August 1964"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAPITOL HILL VOTE",
+            "stem": "Relying on patriotic outrage over Tonkin, Johnson won congressional backing with only ____________ in the Senate."
+          },
+          {
+            "badge": "LEGISLATIVE BLANK CHECK",
+            "stem": "Empowering the president to take ____________ to repel attacks granted the White House sweeping ____________."
+          },
+          {
+            "badge": "UNDECLARED WAR",
+            "stem": "Without passing a formal ____________, Congress enabled Johnson to wage a massive ground war in..."
+          }
+        ],
+        "watch_out": "The Gulf of Tonkin Resolution was an open-ended congressional authorisation, NOT a formal declaration of war—America never formally declared war.",
+        "prose_hash": "fbeae85997",
+        "prose_fp": "8dd2216c",
+        "question_hash": "d690d0101f"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "February base attack",
+            "bullet": "Vietcong raid on Pleiku killed eight US soldiers in February 1965 → triggered sustained bombing"
+          },
+          {
+            "hint": "Bombing tonnage",
+            "bullet": "Three-year Operation Rolling Thunder dropped 864,000 tons of bombs → failed to shatter Hanoi's will"
+          },
+          {
+            "hint": "Jungle trail flow",
+            "bullet": "Aerial bombardment failed to sever weapons and supplies moving south down the Ho Chi Minh Trail"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Agrarian northern economy",
+            "bullet": "North Vietnam had few major industrial factories → lacked concentrated targets decisive in World War Two"
+          },
+          {
+            "hint": "Superpower air defences",
+            "bullet": "Soviet surface-to-air missiles, radar, and Chinese engineering aid → shot down hundreds of US warplanes"
+          },
+          {
+            "hint": "Border target limits",
+            "bullet": "Johnson restricted strikes near China's border → feared provoking direct Chinese or Soviet military entry"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PLEIKU PRETEXT",
+            "stem": "Triggered after a February 1965 Vietcong mortar raid on ____________ killed eight Americans, Johnson launched..."
+          },
+          {
+            "badge": "HEAVY BOMBARDMENT",
+            "stem": "Dropping over ____________ of explosives across three years still failed to break North Vietnam's resolve."
+          },
+          {
+            "badge": "UNBROKEN SUPPLIES",
+            "stem": "Crucially, US bombers could not stop ammunition and fighters flowing south along the ____________."
+          }
+        ],
+        "watch_out": "Operation Rolling Thunder ran from March 1965 to 1968 under Johnson—do not confuse it with Nixon's 1972 Linebacker bombing campaigns.",
+        "prose_hash": "34fa294d68",
+        "prose_fp": "fbbb11a7",
+        "question_hash": "09778a6e2b"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Airfield protection",
+            "bullet": "3,500 US Marines landed at Da Nang on 8 March 1965 to guard vulnerable airbases"
+          },
+          {
+            "hint": "Shift to patrols",
+            "bullet": "Defensive perimeter security transformed within weeks into aggressive offensive search-and-destroy jungle combat"
+          },
+          {
+            "hint": "Five-hundred-thousand surge",
+            "bullet": "Westmoreland's escalation drove US troop numbers from 184,000 in 1965 past 536,000 by 1968"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Sidelining Saigon's army",
+            "bullet": "Americanisation pushed struggling ARVN forces aside → turned Vietnam into a conventional US ground war"
+          },
+          {
+            "hint": "Monthly draft calls",
+            "bullet": "Surging troop demands forced Washington to expand Selective Service conscription across working-class communities"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DA NANG LANDING",
+            "stem": "Initially deployed on 8 March 1965 to guard Rolling Thunder airfields at ____________, 3,500 Marines..."
+          },
+          {
+            "badge": "MISSION CREEP",
+            "stem": "Championed by General ____________, US forces shifted rapidly from base security to offensive ____________."
+          },
+          {
+            "badge": "FULL ESCALATION",
+            "stem": "Expanding past ____________ troops by 1968 turned an advisory commitment into a full-scale American war."
+          }
+        ],
+        "watch_out": "Before 8 March 1965 Americans in Vietnam served officially as military advisers—the Da Nang Marines were the first ground combat troops.",
+        "prose_hash": "0c0b1a8152",
+        "prose_fp": "a8a89688",
+        "question_hash": "f752e70851"
+      }
+    ],
+    "lesson_3_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Avoiding open battle",
+            "bullet": "General Giap avoided pitched battles → denied superior US bombers and artillery massed targets"
+          },
+          {
+            "hint": "Close-quarters range",
+            "bullet": "Guerrillas 'hung onto US belt buckles' in ambushes → airstrikes risked killing American troops"
+          },
+          {
+            "hint": "Civilian clothing cover",
+            "bullet": "Insurgents broke contact quickly and blended into peasant villages or jungle → frustrated US patrols"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Anti-French experience",
+            "bullet": "Giap had mastered patient protracted guerrilla warfare defeating French colonial forces before 1954"
+          },
+          {
+            "hint": "Respect toward villagers",
+            "bullet": "Strict revolutionary codes ordering fighters to help peasants → secured vital food, shelter, and intelligence"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ASYMMETRIC STRATEGY",
+            "stem": "Confronting overwhelming US firepower, General ____________ rejected open pitched battles in favour of concealed..."
+          },
+          {
+            "badge": "CLOSE ENGAGEMENT",
+            "stem": "By 'hanging onto ____________', guerrillas fought so close to US soldiers that artillery or napalm..."
+          },
+          {
+            "badge": "ELUSIVE ENEMY",
+            "stem": "Lacking identifiable uniforms, insurgents struck suddenly before vanishing seamlessly into ____________ or dense jungle."
+          }
+        ],
+        "watch_out": "General Vo Nguyen Giap directed North Vietnam's overall strategy—his doctrine used patient close-quarters ambushes to neutralise American air superiority.",
+        "prose_hash": "5a835e1d21",
+        "prose_fp": "e5a93ff9",
+        "question_hash": "8ddc3ea00b"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Underground sanctuaries",
+            "bullet": "250km multi-tiered Cu Chi tunnels housed hospitals and supply rooms → sheltered fighters from bombing"
+          },
+          {
+            "hint": "Hidden jungle traps",
+            "bullet": "Excrement-coated bamboo punji spikes and tripwire shells → caused over ten percent of US casualties"
+          },
+          {
+            "hint": "Psychological strain",
+            "bullet": "Unseen attackers and lethal pitfalls bred relentless paranoia → drained young conscripts' combat morale"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Clearing narrow shafts",
+            "bullet": "Volunteer US 'tunnel rats' crawled into dark booby-trapped passages armed only with pistols and torches"
+          },
+          {
+            "hint": "One-year tour survival",
+            "bullet": "Nineteen-year-old draftees serving twelve-month tours grew desperate to survive intact until rotation home"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SUBTERRANEAN BASE",
+            "stem": "Beneath ____________ outside Saigon, a 250km network of blast-proof tunnels hid Vietcong hospitals and supplies."
+          },
+          {
+            "badge": "LETHAL TRAPS",
+            "stem": "Infected ____________ and rigged unexploded shells inflicted over ____________ of all American battlefield casualties."
+          },
+          {
+            "badge": "PARANOIA IN CONSCRIPTS",
+            "stem": "Dreading every jungle step against an unseen enemy inflicted severe ____________ on young infantrymen."
+          }
+        ],
+        "watch_out": "Booby traps were designed to wound rather than simply kill—one maimed soldier tied down medics, helicopters, and the whole patrol.",
+        "prose_hash": "267a55e141",
+        "prose_fp": "c5627ec3",
+        "question_hash": "dd41f8ac3e"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Neutral border routes",
+            "bullet": "Jungle tracks passed through sovereign Laos and Cambodia → shielded supplies from US ground invasion"
+          },
+          {
+            "hint": "Rapid repair crews",
+            "bullet": "Over 30,000 youth volunteers and engineers filled bomb craters within hours → kept convoys rolling"
+          },
+          {
+            "hint": "Foreign arms pipeline",
+            "bullet": "Carried hundreds of tons of Soviet and Chinese weapons plus NVA troops south monthly"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rainforest canopy cover",
+            "bullet": "Triple-canopy jungle foliage and camouflaged bicycles hid supplies from high-altitude US reconnaissance aircraft"
+          },
+          {
+            "hint": "Modest supply needs",
+            "bullet": "Lightly equipped guerrilla units required only a fraction of the daily tonnage US divisions consumed"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PROTECTED ROUTE",
+            "stem": "Winding through neighbouring neutral ____________ and ____________, the Ho Chi Minh Trail stayed shielded from..."
+          },
+          {
+            "badge": "HUMAN RESILIENCE",
+            "stem": "Despite millions of tons of US bombs, thirty thousand ____________ repaired cratered roads within hours."
+          },
+          {
+            "badge": "COMMUNIST ARMS FLOW",
+            "stem": "Serving as a vital ____________ pipeline, the trail kept southern insurgents supplied throughout the war."
+          }
+        ],
+        "watch_out": "The Ho Chi Minh Trail was NOT one single road—it was a sprawling web of jungle paths, bridges, and truck routes.",
+        "prose_hash": "38247a47a8",
+        "prose_fp": "fca7ba5c",
+        "question_hash": "7086658414"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Aerial herbicide spraying",
+            "bullet": "Operation Ranch Hand sprayed twenty million gallons of Agent Orange → stripped four million forest acres"
+          },
+          {
+            "hint": "Ruined village harvests",
+            "bullet": "Toxic dioxin defoliants poisoned rural water systems and destroyed peasant food crops across southern provinces"
+          },
+          {
+            "hint": "Incendiary skin burns",
+            "bullet": "Napalm jelly burned past one thousand degrees Celsius → maimed civilians and sparked global condemnation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Generational health harm",
+            "bullet": "Carcinogenic dioxin caused long-term cancers and severe birth defects among Vietnamese families and US veterans"
+          },
+          {
+            "hint": "Lost hearts and minds",
+            "bullet": "Destroying village crops and homes undermined Washington's goal of winning peasant 'hearts and minds'"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CHEMICAL DEFOLIATION",
+            "stem": "Under Operation ____________, US aircraft sprayed twenty million gallons of ____________ to strip jungle cover."
+          },
+          {
+            "badge": "INDISCRIMINATE HARM",
+            "stem": "Deploying ____________ alongside toxic herbicides poisoned village water supplies and inflicted horrific burns on..."
+          },
+          {
+            "badge": "RURAL BACKLASH",
+            "stem": "Rather than isolating guerrillas, chemical warfare alienated ____________ and drew fierce international condemnation."
+          }
+        ],
+        "watch_out": "Keep the two chemicals distinct in exams: Agent Orange was a dioxin herbicide defoliant, while napalm was petroleum incendiary jelly.",
+        "prose_hash": "35bb62243c",
+        "prose_fp": "9eb4fb0f",
+        "question_hash": "44360dbc12"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Helicopter village raids",
+            "bullet": "Air-mobile platoons conducted 'Zippo' raids → burned thatched peasant huts and village rice caches"
+          },
+          {
+            "hint": "Flawed attrition metric",
+            "bullet": "Measuring progress by enemy body counts rather than territory → encouraged fabricated tolls and civilian deaths"
+          },
+          {
+            "hint": "Displaced peasant anger",
+            "bullet": "Aggressive sweeps failed to break communist resolve → drove angry homeless villagers into Vietcong ranks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Counted as insurgents",
+            "bullet": "Career pressure for high body counts fostered treating any dead villager in raid zones as Vietcong"
+          },
+          {
+            "hint": "Artillery free-fire zones",
+            "bullet": "Evacuating villagers into refugee camps turned ancestral districts into free-fire zones hit by constant shelling"
+          },
+          {
+            "hint": "Road to atrocities",
+            "bullet": "Dehumanising body-count pressure and ambush frustration culminated in civilian massacres such as My Lai"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ZIPPO RAIDS",
+            "stem": "Inserted deep into rural provinces by ____________, US patrols set thatched huts ablaze during..."
+          },
+          {
+            "badge": "BODY-COUNT FLAW",
+            "stem": "Using ____________ as the primary measure of success incentivised officers to inflate figures and..."
+          },
+          {
+            "badge": "COUNTERPRODUCTIVE WAR",
+            "stem": "Destroying ancestral homes failed to crush the insurgency, instead driving ____________ directly toward the Vietcong."
+          }
+        ],
+        "watch_out": "Search and Destroy sought attrition rather than permanent occupation—once US helicopters flew back to base, Vietcong fighters routinely retook the area.",
+        "prose_hash": "2b04b6cc7b",
+        "prose_fp": "21aa0f06",
+        "question_hash": "ab0b097e74"
+      }
+    ],
+    "lesson_3_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Holiday truce broken",
+            "bullet": "80,000 communist fighters broke the January 1968 Lunar New Year truce → shattered victory claims"
+          },
+          {
+            "hint": "Nationwide urban targets",
+            "bullet": "Coordinated surprise attacks struck over one hundred South Vietnamese cities, towns, and military bases"
+          },
+          {
+            "hint": "Saigon compound breach",
+            "bullet": "Nineteen commandos battled inside the US Embassy in Saigon for six hours → stunned TV viewers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Prior general's optimism",
+            "bullet": "Two months earlier Westmoreland told Americans communist forces were nearing collapse → magnified public shock"
+          },
+          {
+            "hint": "Weeks in Hue",
+            "bullet": "Fierce house-to-house combat to retake imperial Hue lasted twenty-six days → exposed insurgents' urban reach"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SURPRISE OFFENSIVE",
+            "stem": "Launching surprise assaults during the ____________ truce, eighty thousand fighters attacked over ____________ across South Vietnam."
+          },
+          {
+            "badge": "EMBASSY SIEGE",
+            "stem": "Colour television footage of commandos fighting inside the ____________ in Saigon shocked families nationwide."
+          },
+          {
+            "badge": "SHATTERED ILLUSIONS",
+            "stem": "Coming right after assurances that victory was close, Tet obliterated ____________ in official military briefings."
+          }
+        ],
+        "watch_out": "Always distinguish military outcome from political impact: Tet crippled Vietcong strength militarily, yet dealt a fatal blow to US domestic support.",
+        "prose_hash": "3184a165a0",
+        "prose_fp": "58d047c5",
+        "question_hash": "b83b561710"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Briefings vs broadcasts",
+            "bullet": "Bloody Tet coverage clashed with upbeat White House assurances → widened the domestic Credibility Gap"
+          },
+          {
+            "hint": "CBS newsman's verdict",
+            "bullet": "Trusted anchor Walter Cronkite concluded in February 1968 that Vietnam was an unwinnable stalemate"
+          },
+          {
+            "hint": "Losing mainstream voters",
+            "bullet": "Johnson lamented losing Cronkite meant losing Middle America → signalled collapse of wartime consensus"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Televised street execution",
+            "bullet": "Footage of Saigon police chief General Loan executing a bound Vietcong captive horrified US viewers"
+          },
+          {
+            "hint": "Rising weekly tolls",
+            "bullet": "Weekly American deaths exceeding five hundred alongside rising war taxes soured moderate suburban households"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CREDIBILITY GAP",
+            "stem": "Although communists lost over ____________ fighters, nightly broadcasts exposed a yawning ____________ between Washington and..."
+          },
+          {
+            "badge": "CRONKITE REPORT",
+            "stem": "Reporting from Vietnam in February 1968, CBS anchor ____________ declared the war mired in ____________."
+          },
+          {
+            "badge": "MIDDLE AMERICA LOST",
+            "stem": "Admitting that losing Cronkite meant losing ____________, President Johnson recognised public consensus had collapsed."
+          }
+        ],
+        "watch_out": "The 'Credibility Gap' describes public distrust caused by the gulf between optimistic White House statements and grim television war reporting.",
+        "prose_hash": "05505255b9",
+        "prose_fp": "221710da",
+        "question_hash": "c68b22da14"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "March 1968 speech",
+            "bullet": "Broken by Tet's political fallout, Johnson left the 1968 presidential race and curbed northern bombing"
+          },
+          {
+            "hint": "Allied self-defence shift",
+            "bullet": "Elected promising 'peace with honour', Nixon's Doctrine required Asian allies to supply ground troops"
+          },
+          {
+            "hint": "Phased troop cuts",
+            "bullet": "Nixon cut US forces from 543,000 in early 1969 below 156,000 by late 1971"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Democratic party split",
+            "bullet": "Anti-war challengers Eugene McCarthy and Robert Kennedy plus Chicago convention riots fractured the Democrats"
+          },
+          {
+            "hint": "Draft lottery reform",
+            "bullet": "Phased withdrawals paired with a 1969 draft lottery reduced middle-class anger over conscript casualties"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "JOHNSON STEPS ASIDE",
+            "stem": "Stunned after Tet shattered his support, Lyndon Johnson announced on 31 March 1968 that ____________."
+          },
+          {
+            "badge": "NIXON DOCTRINE",
+            "stem": "Pledging '____________', President Nixon declared that Asian allies must provide their own ____________ for defence."
+          },
+          {
+            "badge": "TROOP DRAWDOWN",
+            "stem": "To defuse domestic anti-war protests, Washington reduced US troops from ____________ in 1969 below 156,000."
+          }
+        ],
+        "watch_out": "Johnson announced he would not seek re-election in March 1968—actual phased US troop withdrawals began under Nixon in 1969.",
+        "prose_hash": "c04f225d9d",
+        "prose_fp": "13774cd8",
+        "question_hash": "dee7a279fe"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Handing over combat",
+            "bullet": "Vietnamisation handed frontline ground fighting to the ARVN backed by US airpower, weapons, and training"
+          },
+          {
+            "hint": "Covert border raids",
+            "bullet": "Operation Menu secretly bombed communist sanctuaries in neutral Cambodia from 1969 before ground incursions"
+          },
+          {
+            "hint": "Calculated volatility bluff",
+            "bullet": "Nixon's 'Madman Theory' used ferocious bombing to bluff Hanoi into fearing unpredictable US escalation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1971 Laos setback",
+            "bullet": "ARVN's 1971 Lam Son incursion into Laos collapsed without US infantry → exposed persistent Saigon weakness"
+          },
+          {
+            "hint": "Falsified flight records",
+            "bullet": "White House officials falsified Pentagon bombing logs to hide neutral Cambodia strikes from Congress"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HANDING OVER WAR",
+            "stem": "While ____________ shifted ground combat onto South Vietnam's army, enduring ARVN corruption undermined its success."
+          },
+          {
+            "badge": "SECRET ESCALATION",
+            "stem": "Launching ____________ in March 1969, Nixon covertly bombed communist bases inside neutral ____________ before invading."
+          },
+          {
+            "badge": "MADMAN COERCION",
+            "stem": "Through his calculated '____________', Nixon hoped heavy aerial attacks would intimidate Hanoi into negotiating."
+          }
+        ],
+        "watch_out": "Vietnamisation shrank US ground troop numbers inside South Vietnam, yet Nixon simultaneously widened the war geographically into Cambodia and Laos.",
+        "prose_hash": "57f5dbb892",
+        "prose_fp": "84610208",
+        "question_hash": "23f35bf9fd"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Abandoned war purpose",
+            "bullet": "Conscripts knew America was leaving Vietnam → refused to die as the last casualties"
+          },
+          {
+            "hint": "Drug use and refusals",
+            "bullet": "Widespread drug abuse and racial tensions fuelled hundreds of documented combat refusals in field units"
+          },
+          {
+            "hint": "Attacks on officers",
+            "bullet": "Over 800 'fragging' grenade assaults targeted officers ordering risky patrols → destroyed army discipline"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Quietly avoiding contact",
+            "bullet": "Demoralised platoons replaced aggressive sweeps with 'search and evade' → avoided Vietcong contact until rotation"
+          },
+          {
+            "hint": "Home-front protest mood",
+            "bullet": "Late-war draftees arrived from campuses and cities already steeped in anti-war scepticism and Black Power"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LOST PURPOSE",
+            "stem": "Knowing Washington was withdrawing troops, young conscripts refused to risk death, triggering widespread ____________."
+          },
+          {
+            "badge": "UNIT BREAKDOWN",
+            "stem": "Rampant ____________ abuse and racial tensions combined with hundreds of ____________ in dangerous combat zones."
+          },
+          {
+            "badge": "FRAGGING CRISIS",
+            "stem": "Military investigators recorded over eight hundred ____________ cases where mutinous troops rolled grenades at..."
+          }
+        ],
+        "watch_out": "'Fragging' refers to mutinous US soldiers attacking their own officers with fragmentation grenades—never misdescribe it as a Vietcong tactic.",
+        "prose_hash": "5732e5959b",
+        "prose_fp": "5e47ee2d",
+        "question_hash": "5ef8418e50"
+      }
+    ],
+    "lesson_4_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Frontline colour cameras",
+            "bullet": "Journalists with lightweight colour film cameras accompanied platoons → filmed wounded troops and burning huts"
+          },
+          {
+            "hint": "Dinner-table reach",
+            "bullet": "Uncensored combat broadcasts reached ninety percent of American households nightly → created the Living Room War"
+          },
+          {
+            "hint": "Official optimism exposed",
+            "bullet": "CBS, NBC, and ABC footage exposed Washington's Credibility Gap → eroded middle-class pro-war faith"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Uncensored press freedom",
+            "bullet": "Unlike strictly censored World War Two newsreels, reporters moved freely on US military helicopters"
+          },
+          {
+            "hint": "Shocking still photos",
+            "bullet": "Iconic press photographs of street executions and napalm victims reinforced nightly television shockwaves"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LIVING ROOM WAR",
+            "stem": "Equipped with lightweight colour cameras, reporters broadcast ____________ into ninety percent of American homes."
+          },
+          {
+            "badge": "WIDENING DISTRUST",
+            "stem": "Graphic nightly reports on CBS, NBC, and ABC exposed a stark ____________ between Washington and..."
+          },
+          {
+            "badge": "SHIFTING CONSENSUS",
+            "stem": "Witnessing grieving conscripts and civilian suffering at dinner steadily eroded ____________ backing for the war."
+          }
+        ],
+        "watch_out": "Television did not oppose the war from day one—coverage grew sharply critical from 1968 after Tet shattered official victory claims.",
+        "prose_hash": "ad3bd7ad0f",
+        "prose_fp": "bb397c69",
+        "question_hash": "9200ef4a9f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Class and race skew",
+            "bullet": "College deferments shielded affluent youths → forced working-class Black and Hispanic conscripts into combat"
+          },
+          {
+            "hint": "Campus card burnings",
+            "bullet": "Student movements staged defiant draft-card burnings across hundreds of universities as US deaths climbed"
+          },
+          {
+            "hint": "Exile abroad",
+            "bullet": "Over thirty thousand draft-age American men fled to Canada and Sweden to escape conscription"
+          },
+          {
+            "hint": "Champion's moral refusal",
+            "bullet": "Heavyweight champion Muhammad Ali refused military induction on religious and moral grounds → inspired youth"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Eighteen without votes",
+            "bullet": "Until the 1971 26th Amendment, nineteen-year-olds could be drafted to fight before they could vote"
+          },
+          {
+            "hint": "Civil rights critique",
+            "bullet": "Martin Luther King Jr condemned sending poor Black men abroad to fight for freedoms denied home"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SELECTIVE SERVICE BIAS",
+            "stem": "Because affluent youths escaped conscription through ____________, jungle combat fell heavily on ____________ men."
+          },
+          {
+            "badge": "YOUTH RESISTANCE",
+            "stem": "Across university campuses, activists staged ____________ protests while thirty thousand draft-age men fled to..."
+          },
+          {
+            "badge": "HIGH-PROFILE STAND",
+            "stem": "Risking prison and his heavyweight title, ____________ refused induction and inspired nationwide anti-draft defiance."
+          }
+        ],
+        "watch_out": "Roughly two-thirds of US troops in Vietnam were volunteers, yet Selective Service deferments made conscription glaringly unequal across social classes.",
+        "prose_hash": "8f06a65f63",
+        "prose_fp": "dcee37ee",
+        "question_hash": "446cf15752"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Unarmed hamlet slaughter",
+            "bullet": "Charlie Company under Lieutenant Calley murdered over 500 unarmed civilians at My Lai in March 1968"
+          },
+          {
+            "hint": "Twenty-month cover-up",
+            "bullet": "Army concealed the atrocity until veteran Ron Ridenhour and journalist Seymour Hersh exposed it in 1969"
+          },
+          {
+            "hint": "Lone officer's trial",
+            "bullet": "Colour massacre photos shattered moral claims while Calley's lone conviction and house arrest polarised Americans"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pilot's brave intervention",
+            "bullet": "US helicopter pilot Hugh Thompson landed to shield villagers from Calley's troops → confirmed deliberate murder"
+          },
+          {
+            "hint": "Mass Washington marches",
+            "bullet": "Hersh's November 1969 revelations broke alongside giant Moratorium marches drawing 500,000 protesters to Washington"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ATROCITY EXPOSED",
+            "stem": "Concealed for twenty months until ____________ published graphic photos in November 1969, Charlie Company's sweep..."
+          },
+          {
+            "badge": "MORAL COLLAPSE",
+            "stem": "Evidence that soldiers killed over five hundred unarmed villagers at ____________ shattered America's moral justification."
+          },
+          {
+            "badge": "DIVISIVE VERDICT",
+            "stem": "Convicting only ____________ before Nixon commuted his prison sentence to house arrest angered both sides."
+          }
+        ],
+        "watch_out": "Keep the two dates clear: the My Lai massacre took place in March 1968, but voters only learned about it in November 1969.",
+        "prose_hash": "30734f4aae",
+        "prose_fp": "523a1d7c",
+        "question_hash": "0033ff9f1e"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Border invasion trigger",
+            "bullet": "Nixon's 30 April 1970 announcement of invading neutral Cambodia ignited furious protests across US campuses"
+          },
+          {
+            "hint": "National Guard volley",
+            "bullet": "Ohio National Guardsmen fired sixty-seven rounds at Kent State on 4 May → killed four students"
+          },
+          {
+            "hint": "Four-hundred-campus strike",
+            "bullet": "Outrage at unarmed students shot dead on campus → shut down over four hundred colleges nationwide"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mississippi campus killings",
+            "bullet": "Days later police shot dead two Black students at Jackson State College in Mississippi"
+          },
+          {
+            "hint": "Students walking past",
+            "bullet": "Two killed Kent State students were merely walking between classes → shocked moderate suburban parents"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAMBODIAN SPARK",
+            "stem": "Outraged that President Nixon had invaded neutral ____________ despite promising withdrawal, students rallied across..."
+          },
+          {
+            "badge": "FOUR MAY TRAGEDY",
+            "stem": "At Kent State in Ohio, ____________ fired sixty-seven rifle rounds into a crowd, killing ____________."
+          },
+          {
+            "badge": "NATIONWIDE SHUTDOWN",
+            "stem": "Shooting unarmed American youths on home soil triggered an unprecedented strike closing over ____________."
+          }
+        ],
+        "watch_out": "Kent State protesters were reacting specifically to Nixon's April 1970 invasion of Cambodia—having believed the war was winding down.",
+        "prose_hash": "7f0837fc01",
+        "prose_fp": "37d0e6ac",
+        "question_hash": "c445396af1"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Leaked Defense study",
+            "bullet": "Analyst Daniel Ellsberg leaked the 7,000-page classified Pentagon Papers to The New York Times in 1971"
+          },
+          {
+            "hint": "Four presidents' secrecy",
+            "bullet": "Documents proved Truman, Eisenhower, Kennedy, and Johnson secretly planned escalation while promising voters restraint"
+          },
+          {
+            "hint": "Supreme Court press ruling",
+            "bullet": "Supreme Court rejected Nixon's prior-restraint ban → upheld press freedom and confirmed systematic White House lies"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1964 campaign promises",
+            "bullet": "Revealed Johnson's team planned North Vietnam bombings during 1964 while campaigning as the peace candidate"
+          },
+          {
+            "hint": "Illegal White House unit",
+            "bullet": "Obsessed with stopping leaks, Nixon created covert White House 'Plumbers' against Ellsberg → led to Watergate"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WHISTLEBLOWER LEAK",
+            "stem": "Photocopied and leaked by military analyst ____________ in June 1971, the top-secret Pentagon Papers exposed..."
+          },
+          {
+            "badge": "PRESIDENTIAL DECEPTION",
+            "stem": "Classified Defense files proved four administrations had covertly planned ____________ while publicly promising voters..."
+          },
+          {
+            "badge": "PRESS VICTORY",
+            "stem": "Defeating Nixon's censorship bid in ____________, the Supreme Court confirmed the public's right to read..."
+          }
+        ],
+        "watch_out": "The Pentagon Papers exposed deception up to 1968 under Johnson and his predecessors—not Nixon's own secret Cambodian bombings.",
+        "prose_hash": "4ee5cb8aee",
+        "prose_fp": "1d9fc56b",
+        "question_hash": "d67de91c8a"
+      }
+    ],
+    "lesson_4_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Post-1945 containment faith",
+            "bullet": "Shaped by World War Two and Korea, older and suburban citizens backed anti-communist containment"
+          },
+          {
+            "hint": "Veterans and duty",
+            "bullet": "Working-class families and veterans' groups such as the American Legion honoured military service as sacred duty"
+          },
+          {
+            "hint": "Backlash against radicals",
+            "bullet": "Flag-burning campus demonstrators who praised Ho Chi Minh deeply insulted patriotic Middle America households"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dislike of protesters",
+            "bullet": "Opinion polls showed majority hostility toward radical anti-war marchers even when war enthusiasm faded"
+          },
+          {
+            "hint": "School and church values",
+            "bullet": "Decades of Cold War civic culture convinced traditional voters abandoning South Vietnam threatened Western freedom"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COLD WAR CONSENSUS",
+            "stem": "Steeped in memories of World War Two and Korea, ____________ believed stopping communism in Asia..."
+          },
+          {
+            "badge": "PATRIOTIC DUTY",
+            "stem": "Supported by veterans' organisations such as the ____________, working-class families viewed military service as..."
+          },
+          {
+            "badge": "ANGER AT DISSENT",
+            "stem": "Watching student radicals burn flags and praise ____________ outraged citizens whose sons were serving abroad."
+          }
+        ],
+        "watch_out": "Never assume television protests represented everyone—millions of traditional voters despised student demonstrators even more than they disliked the war.",
+        "prose_hash": "0f755909a2",
+        "prose_fp": "303b352d",
+        "question_hash": "c73286843e"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Direct TV appeal",
+            "bullet": "On 3 November 1969 Nixon appealed directly on television to law-abiding, tax-paying non-protesters"
+          },
+          {
+            "hint": "Orderly exit pledge",
+            "bullet": "Warned hasty pullout risked a bloodbath → rallied voters behind 'peace with honour' and Vietnamisation"
+          },
+          {
+            "hint": "Flood of telegrams",
+            "bullet": "Tens of thousands of supportive telegrams poured into Washington → solidified Nixon's suburban coalition"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Answering October marches",
+            "bullet": "Delivered weeks after giant October 1969 Moratorium marches → proved street protests wouldn't dictate policy"
+          },
+          {
+            "hint": "Poll approval surge",
+            "bullet": "Gallup approval jumped sharply after the broadcast → bought Nixon vital political breathing space"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "QUIET MAJORITY",
+            "stem": "Bypassing vocal street protesters in November 1969, President Nixon appealed on television to America's ____________."
+          },
+          {
+            "badge": "PEACE WITH HONOUR",
+            "stem": "Warning that immediate withdrawal would spark a communist bloodbath, he won support for '____________'."
+          },
+          {
+            "badge": "SUBURBAN COALITION",
+            "stem": "Drawing tens of thousands of ____________ to the White House, the speech isolated campus radicals."
+          }
+        ],
+        "watch_out": "Nixon's 'Silent Majority' were NOT voting for endless war—they backed his promise of an orderly, honourable withdrawal rather than humiliating retreat.",
+        "prose_hash": "6d7829dcdc",
+        "prose_fp": "1bfc4e8a",
+        "question_hash": "d845758175"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Lower Manhattan clash",
+            "bullet": "On 8 May 1970 construction workers attacked Wall Street students protesting Kent State and Cambodia"
+          },
+          {
+            "hint": "Flags and iron pipes",
+            "bullet": "Hundreds of flag-waving 'hard hats' beat anti-war marchers with pipes while police largely stood aside"
+          },
+          {
+            "hint": "Workers vs students",
+            "bullet": "Exposed bitter class and generational resentment between blue-collar workers and privileged college activists"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unequal draft resentment",
+            "bullet": "Union workers resented deferred students mocking America while working-class sons were drafted to fight"
+          },
+          {
+            "hint": "Union shift rightward",
+            "bullet": "Nixon welcomed union leaders with honorary hard hats at the White House → courted blue-collar Democrats"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WALL STREET CLASH",
+            "stem": "Marching from the World Trade Center site on 8 May 1970, ____________ attacked students protesting..."
+          },
+          {
+            "badge": "BLUE-COLLAR FURY",
+            "stem": "Waving US flags and wielding iron pipes, the '____________' assaulted demonstrators while sympathetic police..."
+          },
+          {
+            "badge": "CLASS POLARISATION",
+            "stem": "The riot exposed a bitter cultural gulf between ____________ and affluent university anti-war activists."
+          }
+        ],
+        "watch_out": "Notice the tight May 1970 timeline: just four days after Kent State shut campuses, Manhattan hard hats marched in support of Nixon.",
+        "prose_hash": "3a115efe84",
+        "prose_fp": "79909c71",
+        "question_hash": "7653fc05e6"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Global credibility fears",
+            "bullet": "Southern and midwestern congressional hawks warned sudden retreat would embolden Soviet and Chinese aggression"
+          },
+          {
+            "hint": "Dread of first defeat",
+            "bullet": "Lawmakers feared national humiliation from presiding over the first lost war in American history"
+          },
+          {
+            "hint": "Honouring fallen sons",
+            "bullet": "Backed by working-class voters who felt premature withdrawal betrayed thousands of fallen US conscripts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Continued war budgets",
+            "bullet": "Hawkish congressional committee chairs kept voting billions in military funding for Vietnam until 1972"
+          },
+          {
+            "hint": "Captive pilots in Hanoi",
+            "bullet": "Refusal to leave hundreds of American prisoners of war in North Vietnam reinforced hawkish demands"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOMINO WARNINGS",
+            "stem": "Within Congress, conservative ____________ argued that premature retreat would embolden communist powers and topple..."
+          },
+          {
+            "badge": "PRESTIGE AT STAKE",
+            "stem": "Gripped by the fear of ____________, lawmakers refused to preside over America's first military defeat."
+          },
+          {
+            "badge": "WORKING-CLASS ALIGNMENT",
+            "stem": "Echoing patriotic blue-collar voters, hawks insisted sudden withdrawal would betray ____________ while rewarding draft-dodgers."
+          }
+        ],
+        "watch_out": "Use exact political terms in exams: 'hawks' backed firm military action in Vietnam, whereas 'doves' pressed for rapid negotiated withdrawal.",
+        "prose_hash": "3e7f795182",
+        "prose_fp": "4f3fa4c6",
+        "question_hash": "b51e9be65b"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Forty-nine-state sweep",
+            "bullet": "Nixon won sixty percent of the vote and forty-nine states → crushed anti-war Democrat George McGovern"
+          },
+          {
+            "hint": "Casualties and summits",
+            "bullet": "Falling US casualties via Vietnamisation, Beijing and Moscow summits, and traditional values won broad support"
+          },
+          {
+            "hint": "Hidden moral divide",
+            "bullet": "Landslide rejected radical anti-war politics yet masked deep domestic exhaustion and moral polarisation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "October peace announcement",
+            "bullet": "Kissinger's late-October 1972 statement that 'peace is at hand' boosted Nixon days before polling"
+          },
+          {
+            "hint": "Democratic Congress kept",
+            "bullet": "Voters simultaneously returned anti-war Democratic majorities in Congress → wanted exit without humiliation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORIC LANDSLIDE",
+            "stem": "Carrying forty-nine out of fifty states in November 1972, Nixon decisively defeated anti-war candidate ____________."
+          },
+          {
+            "badge": "WINNING RECORD",
+            "stem": "Lower US casualties under ____________ combined with historic visits to ____________ reassured mainstream voters."
+          },
+          {
+            "badge": "DIVIDED NATION",
+            "stem": "Although voters rejected McGovern as too radical, Nixon's landslide masked ____________ over Vietnam's legacy."
+          }
+        ],
+        "watch_out": "Nixon's 49-state landslide endorsed his winding down of US combat under 'peace with honour'—not a mandate to re-escalate ground fighting.",
+        "prose_hash": "ed86285962",
+        "prose_fp": "f9e6f17d",
+        "question_hash": "5a39b6a0e2"
+      }
+    ],
+    "lesson_4_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Covert suburban talks",
+            "bullet": "Kissinger met North Vietnam's Le Duc Tho secretly outside Paris from 1969 without telling Saigon"
+          },
+          {
+            "hint": "Northern troops retained",
+            "bullet": "October 1972 concession allowed roughly 150,000 North Vietnamese troops to keep captured southern territories"
+          },
+          {
+            "hint": "One-sided US exit",
+            "bullet": "All US combat forces would depart while NVA divisions remained inside South Vietnam → doomed Saigon"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Captured border districts",
+            "bullet": "Hanoi's 1972 Easter Offensive had seized northern and highland strips → stayed communist staging bases"
+          },
+          {
+            "hint": "Beijing and Moscow summits",
+            "bullet": "Nixon's 1972 détente diplomacy with China and the USSR nudged Hanoi toward signing terms"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BACK-CHANNEL TALKS",
+            "stem": "Meeting covertly in a Parisian suburb behind Saigon's back, ____________ and ____________ negotiated breakthrough terms."
+          },
+          {
+            "badge": "CRUCIAL CONCESSION",
+            "stem": "In October 1972 Kissinger agreed that roughly ____________ North Vietnamese troops could stay inside South Vietnam."
+          },
+          {
+            "badge": "FATAL IMBALANCE",
+            "stem": "Withdrawing all American forces while leaving Northern divisions in place sealed ____________ long-term military fate."
+          }
+        ],
+        "watch_out": "Previously Washington demanded mutual withdrawal—allowing 150,000 NVA troops to stay in the South broke the deadlock at Saigon's expense.",
+        "prose_hash": "beb95be7b3",
+        "prose_fp": "143d571e",
+        "question_hash": "7f40c2a9e1"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Saigon's fierce objection",
+            "bullet": "President Thieu rejected the October 1972 draft treaty → outraged Northern troops stayed south"
+          },
+          {
+            "hint": "Deadlocked treaty revisions",
+            "bullet": "Hanoi suspended talks over US modification demands → Nixon used overwhelming bombing to force compliance"
+          },
+          {
+            "hint": "Eleven-day heavy bombing",
+            "bullet": "Operation Linebacker II B-52s dropped 20,000 tons on Hanoi and Haiphong → restarted talks and reassured Thieu"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Private retaliation pledge",
+            "bullet": "Nixon privately assured Thieu that US airpower would strike forcefully if Hanoi broke peace terms"
+          },
+          {
+            "hint": "Global outrage sparked",
+            "bullet": "Heavy B-52 losses and urban damage drew fierce international condemnation yet changed October terms little"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SAIGON OBJECTION",
+            "stem": "Furious that 150,000 Northern troops would remain in the South, President ____________ blocked the October draft."
+          },
+          {
+            "badge": "DECEMBER BOMBARDMENT",
+            "stem": "Unleashing Operation ____________ in December 1972, B-52 bombers dropped twenty thousand tons on ____________."
+          },
+          {
+            "badge": "COERCED SIGNATURES",
+            "stem": "Eleven days of bombing drove Hanoi back to talks while demonstrating US firepower to ____________."
+          }
+        ],
+        "watch_out": "Operation Linebacker II—the December 1972 Christmas Bombings—aimed to force signature of a withdrawal treaty, not conquer North Vietnam.",
+        "prose_hash": "c83156098f",
+        "prose_fp": "34078262",
+        "question_hash": "1a51c0d6fa"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Ceasefire in place",
+            "bullet": "Paris Peace Accords signed on 27 January 1973 → enacted an immediate ceasefire in place"
+          },
+          {
+            "hint": "Sixty-day troop pullout",
+            "bullet": "Mandated total withdrawal of all remaining US combat troops and military advisers within sixty days"
+          },
+          {
+            "hint": "Prisoners returned home",
+            "bullet": "Hanoi released 591 American prisoners of war while communist troops remained embedded across South Vietnam"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Temporary border kept",
+            "bullet": "Left the 17th Parallel and Saigon's Thieu government intact pending political talks that swiftly stalled"
+          },
+          {
+            "hint": "Immediate truce clashes",
+            "bullet": "Without credible enforcement, South Vietnamese and communist forces resumed fighting for villages almost immediately"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SIXTY-DAY EXIT",
+            "stem": "Signed at Paris on 27 January 1973, the accords mandated complete ____________ within sixty days."
+          },
+          {
+            "badge": "POW RETURN",
+            "stem": "In exchange for ending direct US military combat, North Vietnam released ____________ American prisoners of war."
+          },
+          {
+            "badge": "FRAGILE CEASEFIRE",
+            "stem": "Enacting a ceasefire in place left ____________ inside South Vietnam, guaranteeing renewed fighting after US exit."
+          }
+        ],
+        "watch_out": "The January 1973 Paris Peace Accords ended direct US involvement, NOT the Vietnam War—Vietnamese forces fought on until April 1975.",
+        "prose_hash": "e81f646e81",
+        "prose_fp": "ded08f80",
+        "question_hash": "a266adbd4a"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Saigon command closed",
+            "bullet": "Final US combat troops departed on 29 March 1973 → deactivated America's Saigon military command"
+          },
+          {
+            "hint": "Blood and treasure toll",
+            "bullet": "2.7 million served with 58,220 dead, 300,000 wounded, and 168 billion dollars spent without victory"
+          },
+          {
+            "hint": "Face-saving time gap",
+            "bullet": "Nixon and Kissinger sought a cynical 'decent interval' before Saigon fell → left South Vietnam isolated"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Presidential scandal fallout",
+            "bullet": "Watergate forced Nixon's resignation in August 1974 → destroyed his secret promise to defend Thieu"
+          },
+          {
+            "hint": "Subsidy-dependent military",
+            "bullet": "Trained to fight an expensive American-style war, the ARVN struggled once US air support vanished"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WAR COST",
+            "stem": "Deactivating its Saigon command on 29 March 1973, America exited after ____________ deaths and $168 billion spent."
+          },
+          {
+            "badge": "DECENT INTERVAL",
+            "stem": "Declassified tapes confirm Nixon and Kissinger calculated a '____________' so Saigon's fall wouldn't look immediate."
+          },
+          {
+            "badge": "ISOLATED ALLY",
+            "stem": "Deprived of direct American bombers and ground troops, South Vietnam stood alone against ____________."
+          }
+        ],
+        "watch_out": "Declassified White House tapes show 'decent interval' meant buying a face-saving pause between US exit and Saigon's likely collapse.",
+        "prose_hash": "ab0a1a372d",
+        "prose_fp": "13d52e48",
+        "question_hash": "9541e88e98"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Forty-eight-hour notice",
+            "bullet": "War Powers Act required presidents to notify Congress within forty-eight hours of deploying combat forces"
+          },
+          {
+            "hint": "Sixty-day pullout clock",
+            "bullet": "Mandated withdrawing US troops within sixty days unless Congress explicitly authorised continued hostilities"
+          },
+          {
+            "hint": "Presidential veto overridden",
+            "bullet": "Congress overrode Nixon's veto on 7 November 1973 → curbed unchecked executive war-making power"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Indochina funding ban",
+            "bullet": "Congress simultaneously barred funds for any renewed US combat or bombing anywhere in Indochina"
+          },
+          {
+            "hint": "Reclaiming war oversight",
+            "bullet": "Secret Cambodia bombings, the Pentagon Papers, and Watergate pushed lawmakers to dismantle the imperial presidency"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REPORTING RULE",
+            "stem": "Determined to stop future undeclared wars, Congress required presidents to notify lawmakers within ____________."
+          },
+          {
+            "badge": "WITHDRAWAL LIMIT",
+            "stem": "Without formal congressional approval, the War Powers Act compelled troop withdrawal within ____________."
+          },
+          {
+            "badge": "REVERSING TONKIN",
+            "stem": "Overriding Nixon's veto in November 1973 directly reversed the 'blank check' handed over in ____________."
+          }
+        ],
+        "watch_out": "Contrast 1964 and 1973 directly in essays: the Gulf of Tonkin Resolution surrendered war powers, while the War Powers Act reclaimed them.",
+        "prose_hash": "55eb60408b",
+        "prose_fp": "da2b9517",
+        "question_hash": "d9fbb0e7a1"
+      }
+    ],
+    "lesson_4_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Fuel and ammo drought",
+            "bullet": "Oil shocks, soaring inflation, and congressional aid cuts starved ARVN forces of fuel and ammunition"
+          },
+          {
+            "hint": "Central highland capture",
+            "bullet": "General Van Tien Dung's 1975 Spring Offensive captured Ban Me Thuot → shattered highland defences"
+          },
+          {
+            "hint": "Chaotic highway rout",
+            "bullet": "Thieu's panicked retreat turned into Highway 7's 'Convoy of Tears' → slaughtered 100,000 soldiers and civilians"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Blocked emergency aid",
+            "bullet": "President Gerald Ford requested urgent military aid for Saigon, but an anti-war Congress refused"
+          },
+          {
+            "hint": "Corrupt payroll ghosts",
+            "bullet": "Endemic ARVN corruption, ghost-soldier payroll fraud, and desertions left divisions hollow under pressure"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SUPPLY COLLAPSE",
+            "stem": "Starved of fuel and shells after Congress cut ____________, ARVN units could not sustain combat in 1975."
+          },
+          {
+            "badge": "HIGHLAND ROUT",
+            "stem": "After General ____________ captured Ban Me Thuot in March, Thieu's panicky retreat order triggered..."
+          },
+          {
+            "badge": "CONVOY OF TEARS",
+            "stem": "Along Highway 7, the disastrous '____________' destroyed northern ARVN armies alongside fleeing civilians."
+          }
+        ],
+        "watch_out": "Remember the presidential handover: Nixon resigned in August 1974 over Watergate, so Gerald Ford was president when Saigon collapsed in 1975.",
+        "prose_hash": "550ace956a",
+        "prose_fp": "dcc2da8b",
+        "question_hash": "bc4713cca3"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Embassy rooftop airlift",
+            "bullet": "With Saigon airport shelled, Operation Frequent Wind lifted 7,000 Americans and allies from rooftops offshore"
+          },
+          {
+            "hint": "Palace gates breached",
+            "bullet": "North Vietnamese tanks smashed through Saigon's Independence Palace gates on 30 April 1975"
+          },
+          {
+            "hint": "Unconditional surrender",
+            "bullet": "President Duong Van Minh surrendered unconditionally → reunified Vietnam under communist rule"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Capital city renamed",
+            "bullet": "Victorious communists renamed Saigon Ho Chi Minh City under the Socialist Republic of Vietnam"
+          },
+          {
+            "hint": "Neighbouring states fall",
+            "bullet": "Cambodia and Laos also fell to communist insurgents in 1975, though wider Asia defied domino fears"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FINAL EVACUATION",
+            "stem": "As eighteen Northern divisions encircled Saigon on 29 April 1975, Marine helicopters launched ____________ to..."
+          },
+          {
+            "badge": "FALL OF SAIGON",
+            "stem": "Crashing through the gates of ____________ on 30 April, North Vietnamese tanks forced President Minh's surrender."
+          },
+          {
+            "badge": "REUNIFIED NATION",
+            "stem": "Ending two decades of US containment failure, the country was reunified as the ____________."
+          }
+        ],
+        "watch_out": "Distinguish March 1973 from April 1975: US combat troops left in 1973, whereas Frequent Wind evacuated embassy staff and vulnerable allies.",
+        "prose_hash": "b8510e842b",
+        "prose_fp": "8ddbee9d",
+        "question_hash": "add3f3b373"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Sacrifice for reunification",
+            "bullet": "Vietnamese revolutionary nationalism framed fighting as anti-colonial liberation → absorbed over one million deaths unbroken"
+          },
+          {
+            "hint": "Jungle guerrilla skill",
+            "bullet": "Ho Chi Minh's vision paired with Vietcong ambushes, tunnels, and traps → blunted US technology"
+          },
+          {
+            "hint": "Communist arms lifeline",
+            "bullet": "Soviet and Chinese rifles, trucks, and artillery flowed steadily south down the Ho Chi Minh Trail"
+          },
+          {
+            "hint": "Short conscript tours",
+            "bullet": "Lifelong nationalist fighters outlasted twelve-month American conscripts sent thousands of miles from home"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Total vs limited war",
+            "bullet": "Hanoi waged total war for national reunification while Washington fought limited war fearing China or Russia"
+          },
+          {
+            "hint": "Anti-colonial continuity",
+            "bullet": "Many peasants viewed US intervention as foreign imperialism merely replacing defeated French colonial rule"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REVOLUTIONARY WILL",
+            "stem": "Driven to win national independence and reunification, communist forces endured ____________ without surrendering."
+          },
+          {
+            "badge": "ASYMMETRIC EDGE",
+            "stem": "Guerrilla tunnels and ambushes neutralised US firepower while ____________ aid flowed down the Ho Chi Minh Trail."
+          },
+          {
+            "badge": "ASYMMETRIC COMMITMENT",
+            "stem": "Unlike twelve-month ____________, Hanoi fought an unlimited war until American domestic patience ran out."
+          }
+        ],
+        "watch_out": "Top-band 16-mark essays never explain US defeat through American errors alone—always weigh communist nationalist determination, guerrilla tactics, and superpower supply.",
+        "prose_hash": "ad1e739742",
+        "prose_fp": "0a875ce2",
+        "question_hash": "4797bf8906"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Corrupt military juntas",
+            "bullet": "Unrepresentative Saigon regimes and rife ARVN corruption → never won genuine democratic loyalty from villagers"
+          },
+          {
+            "hint": "Conscript morale decay",
+            "bullet": "Short twelve-month tours, drug abuse, and fragging steadily eroded American combat effectiveness in Vietnam"
+          },
+          {
+            "hint": "Destructive rural sweeps",
+            "bullet": "Free-fire zones, Agent Orange, napalm, and Search and Destroy burns → drove millions into slums"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Early land grievances",
+            "bullet": "From Diem's landlord policies and Strategic Hamlets onward, Saigon repeatedly alienated its rural majority"
+          },
+          {
+            "hint": "Firepower without consent",
+            "bullet": "Without a legitimate South Vietnamese government, overwhelming US bombing only convinced peasants Saigon was foreign-controlled"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SAIGON ILLEGITIMACY",
+            "stem": "Plagued with unrepresentative juntas and ____________, South Vietnam's government lacked genuine peasant support."
+          },
+          {
+            "badge": "ALIENATING WARFARE",
+            "stem": "Indiscriminate ____________, napalm, and village burnings turned millions of rural farmers into bitter refugees."
+          },
+          {
+            "badge": "INTERNAL DECAY",
+            "stem": "Paired with US armed-forces weaknesses such as ____________ and drug use, firepower could not win loyalty."
+          }
+        ],
+        "watch_out": "Firepower cannot rescue an illegitimate ally—even when US troops inflicted heavy Vietcong casualties, Saigon's corruption prevented lasting rural pacification.",
+        "prose_hash": "66c3322075",
+        "prose_fp": "03006078",
+        "question_hash": "f15ca94304"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Casualties without victory",
+            "bullet": "58,220 US military deaths and 300,000 wounded in an endless war → broke domestic Cold War consensus"
+          },
+          {
+            "hint": "Reluctance abroad",
+            "bullet": "Produced 'Vietnam Syndrome' → deep reluctance to send US ground forces abroad without clear exit plans"
+          },
+          {
+            "hint": "Shattered executive trust",
+            "bullet": "Presidential deception and bitter polarisation permanently reshaped relations between voters, journalists, and the White House"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Drained welfare budgets",
+            "bullet": "Spending 168 billion dollars on Vietnam fuelled inflation and starved Johnson's domestic Great Society reforms"
+          },
+          {
+            "hint": "Cumulative home-front shocks",
+            "bullet": "Tet, unfair conscription, My Lai, Kent State, and the Pentagon Papers made endless commitment politically untenable"
+          },
+          {
+            "hint": "End of peacetime draft",
+            "bullet": "Washington ended Selective Service conscription in 1973 → transitioned to an all-volunteer US military"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HOME-FRONT COLLAPSE",
+            "stem": "Mounting casualties totalling ____________ alongside a widening Credibility Gap shattered post-1945 faith in US invincibility."
+          },
+          {
+            "badge": "VIETNAM SYNDROME",
+            "stem": "Haunted by the '____________', subsequent administrations avoided protracted foreign ground interventions without public backing."
+          },
+          {
+            "badge": "DISTRUST IN POWER",
+            "stem": "Years of executive secrecy and social division permanently damaged public trust in ____________."
+          }
+        ],
+        "watch_out": "'Vietnam Syndrome' refers to America's post-1975 foreign-policy reluctance to commit ground troops overseas—do not confuse it with individual veterans' trauma.",
+        "prose_hash": "c65f7d742b",
+        "prose_fp": "aba1558d",
+        "question_hash": "9fd647602f"
+      }
+    ]
+  }
+}

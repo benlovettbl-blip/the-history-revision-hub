@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_ancient_egypt",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Four river cradles",
+            "bullet": "Sumer, the Indus Valley, Shang China, and Egypt all grew beside life-giving rivers"
+          },
+          {
+            "hint": "Summer river flood",
+            "bullet": "Yearly summer inundation floods soaked dry banks → stopped desert sand burying Egypt"
+          },
+          {
+            "hint": "Black versus Red",
+            "bullet": "Sinking floodwaters left fertile Kemet black silt → created farmland beside barren Deshret desert"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Desert climate",
+            "bullet": "Almost no rain fell in Egypt → villagers relied completely on southern African rains"
+          },
+          {
+            "hint": "Farming surpluses",
+            "bullet": "Rich river mud fed growing villages → allowed early towns, trade, and kingship"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RIVER CRADLES",
+            "stem": "Around 3500 BC, Ancient Egypt grew beside the ____________ just like early civilisations in ____________, the Indus Valley, and China."
+          },
+          {
+            "badge": "YEARLY FLOODING",
+            "stem": "Every summer, the ____________ flood covered the riverbanks and left behind rich black mud called ____________."
+          },
+          {
+            "badge": "FARMING VS DESERT",
+            "stem": "Without this fertile Black Land, the scorching ____________ desert would have made growing crops impossible."
+          }
+        ],
+        "watch_out": "Kemet meant fertile Black Land from dark river mud, whereas Deshret meant the scorching Red Land desert.",
+        "prose_hash": "6ab6c3b2fd",
+        "prose_fp": "adcce027",
+        "question_hash": "1eb643d2bd"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Water-lifting lever",
+            "bullet": "Wooden shaduf levers with mud counterweights lifted Nile water → watered higher garden plots"
+          },
+          {
+            "hint": "Food and fibres",
+            "bullet": "Fertile Kemet fields grew wheat and barley → marshes gave flax and papyrus reeds"
+          },
+          {
+            "hint": "Two-way river highway",
+            "bullet": "Wooden boats drifted north on the current and sailed south → linked trading towns"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Yearly flood cycle",
+            "bullet": "Summer inundation floods refilled ditches and marshes → kept village harvests reliable each year"
+          },
+          {
+            "hint": "Everyday plant uses",
+            "bullet": "Flax became cool white linen clothing → papyrus reeds made sandals and writing scrolls"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLEVER IRRIGATION",
+            "stem": "Farmers dug ditches and swung a wooden ____________ lever so they could lift cool water onto ____________."
+          },
+          {
+            "badge": "VITAL HARVESTS",
+            "stem": "Damp fields produced ____________ for bread and barley for soup, while marshes supplied ____________ and papyrus."
+          },
+          {
+            "badge": "RIVER TRANSPORT",
+            "stem": "Traders floated north with the ____________ and raised square sails to travel ____________ between Nile towns."
+          }
+        ],
+        "watch_out": "The Nile flows northwards to the sea, so boats drifted north on the current and sailed south with the wind.",
+        "prose_hash": "8e941509f4",
+        "prose_fp": "415f9bc8",
+        "question_hash": "bc15056fc3"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Two rival kingdoms",
+            "bullet": "Hilly southern Upper Egypt and marshy northern Lower Egypt → ruled separately for centuries"
+          },
+          {
+            "hint": "Southern king's march",
+            "bullet": "Southern warrior King Narmer conquered Lower Egypt around 3100 BC → recorded on the Narmer Palette"
+          },
+          {
+            "hint": "Joined royal symbol",
+            "bullet": "Rulers combined the white and red crowns into one Double Crown → united one kingdom"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shared river lifeline",
+            "bullet": "One ruler controlling the whole Nile Valley → coordinated grain trade and flood farming"
+          },
+          {
+            "hint": "Downhill river flow",
+            "bullet": "The Nile flows downhill from southern hills to the northern sea → shaped both lands"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TWO LANDS",
+            "stem": "Because the Nile flows downhill towards the north, hilly southern Egypt was called ____________ while the northern delta was ____________."
+          },
+          {
+            "badge": "NARMER'S VICTORY",
+            "stem": "Around 3100 BC, southern ruler ____________ marched northwards and carved his triumph onto the ____________."
+          },
+          {
+            "badge": "UNITED KINGSHIP",
+            "stem": "Joining the white and red crowns into the ____________ showed that Egypt was now one ____________."
+          }
+        ],
+        "watch_out": "Upper Egypt is in the south and Lower Egypt is in the north because the River Nile flows downhill northwards.",
+        "prose_hash": "e84f4bc424",
+        "prose_fp": "933ad6d7",
+        "question_hash": "a061c0d569"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Divine royal tombs",
+            "bullet": "Old Kingdom Egyptians honoured pharaohs as living gods → demanded grander eternal tombs"
+          },
+          {
+            "hint": "First stone layers",
+            "bullet": "Architect Imhotep stacked six stone layers at Saqqara → created Djoser's Step Pyramid around 2670 BC"
+          },
+          {
+            "hint": "Giza record-breaker",
+            "bullet": "Khufu's Great Pyramid used 2.3 million limestone blocks → stood 146 metres tall at Giza"
+          }
+        ],
+        "context": [
+          {
+            "hint": "United kingdom wealth",
+            "bullet": "United Nile grain taxes after King Narmer → gave Old Kingdom pharaohs huge building resources"
+          },
+          {
+            "hint": "Earliest royal graves",
+            "bullet": "Early kings lay beneath low mud-brick tombs → stacked stone pyramids lasted far longer"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FIRST STONE PYRAMID",
+            "stem": "Replacing low mud-brick tombs around 2670 BC, royal builder ____________ stacked six stone layers for Pharaoh Djoser at ____________."
+          },
+          {
+            "badge": "GIZA GIANT",
+            "stem": "Later at Giza, Pharaoh ____________ raised the Great Pyramid to ____________ metres using 2.3 million blocks."
+          },
+          {
+            "badge": "GOD-KING BELIEFS",
+            "stem": "Egyptians built such vast monuments because they believed their pharaoh was a ____________ who brought good floods."
+          }
+        ],
+        "watch_out": "Pyramids were giant royal tombs built for the afterlife rather than palaces where living families stayed.",
+        "prose_hash": "adbfad98fe",
+        "prose_fp": "2ef1af7c",
+        "question_hash": "0c98362dd7"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Splitting quarry rock",
+            "bullet": "Masons tapped copper chisels and soaked expanding wooden wedges → split heavy limestone cleanly"
+          },
+          {
+            "hint": "Floodwater river transport",
+            "bullet": "Wooden barges floated smooth white Tura limestone across the flooded Nile → reached Giza harbour"
+          },
+          {
+            "hint": "Slippery desert sand",
+            "bullet": "Crews poured water ahead of wooden sledges → halved sand friction up sloping ramps"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Missing modern machines",
+            "bullet": "Egyptians had no iron tools, cranes, or wheeled trucks → relied on clever physics"
+          },
+          {
+            "hint": "Helpful flood season",
+            "bullet": "Summer Nile inundation raised water levels → carried heavy stone barges closer to Giza"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "QUARRYING STONE",
+            "stem": "Inside rocky quarries, masons split heavy limestone using ____________ chisels, wooden mallets, and soaked ____________."
+          },
+          {
+            "badge": "RIVER DELIVERY",
+            "stem": "Fine white casing stone from ____________ travelled across the flooded Nile aboard sturdy ____________."
+          },
+          {
+            "badge": "REDUCING FRICTION",
+            "stem": "Pouring ____________ onto the desert sand helped hauling crews drag wooden ____________ smoothly up ramps."
+          }
+        ],
+        "watch_out": "Pyramid builders had no iron tools or wheeled trucks—they used copper chisels, wooden sledges, and wet sand.",
+        "prose_hash": "b5897d8bfd",
+        "prose_fp": "47988281",
+        "question_hash": "e07da5841d"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Workers' town rations",
+            "bullet": "Giza builders' villages held giant bakeries, cattle bones, and fish → fed valued workers well"
+          },
+          {
+            "hint": "Medical bone care",
+            "bullet": "Skeletons showed broken bones carefully set and healed → proved workers received skilled medical care"
+          },
+          {
+            "hint": "Rival team pride",
+            "bullet": "Paid farmers and craftworkers laboured in proud teams → Khafre also carved the Great Sphinx"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Flood-season farming",
+            "bullet": "When summer floods covered Nile fields → peasant farmers earned rations building royal tombs"
+          },
+          {
+            "hint": "Guardian stone statue",
+            "bullet": "Khafre's limestone Great Sphinx combined a lion's body and royal head → guarded Giza's tombs"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VILLAGE EVIDENCE",
+            "stem": "Archaeologists disproved the slave myth by uncovering walled ____________ packed with bakeries, cattle bones, and ____________."
+          },
+          {
+            "badge": "MEDICAL TREATMENT",
+            "stem": "Human skeletons found near Giza had healed ____________, proving that injured builders were treated by ____________."
+          },
+          {
+            "badge": "PROUD WORKFORCE",
+            "stem": "Skilled craftworkers and ____________ worked in rival crews while Pharaoh ____________ carved the Great Sphinx nearby."
+          }
+        ],
+        "watch_out": "Paid farmers and skilled craftworkers built the Giza pyramids—evidence of beef rations and medical care disproved the slave myth.",
+        "prose_hash": "99f5f455dc",
+        "prose_fp": "9539604a",
+        "question_hash": "69066d5258"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Rulers and officials",
+            "bullet": "God-king Pharaoh ruled at the top → backed by viziers, nobles, and temple priests"
+          },
+          {
+            "hint": "Record-keeping middle",
+            "bullet": "Educated scribes counted grain taxes above skilled craftworkers → workshops shaped treasures like blue-glazed William"
+          },
+          {
+            "hint": "Wide farming base",
+            "bullet": "Millions of peasant farmers stood at the bottom → grew the grain feeding all Egypt"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rich silt harvests",
+            "bullet": "Fertile Kemet flood mud made huge harvests possible → funded royal palaces and temples"
+          },
+          {
+            "hint": "Skilled tomb crews",
+            "bullet": "Farmers and craftworkers from the lower tiers → supplied the skilled building teams at Giza"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ROYAL SUMMIT",
+            "stem": "At the peak of the social pyramid ruled the ____________, assisted by chief ministers called ____________, nobles, and priests."
+          },
+          {
+            "badge": "WRITING AND CRAFTS",
+            "stem": "Respected ____________ recorded grain taxes, ranking just above skilled ____________ such as potters and jewellers."
+          },
+          {
+            "badge": "FEEDING THE KINGDOM",
+            "stem": "Forming the widest base of society, millions of ____________ paid yearly grain taxes that fed everyone."
+          }
+        ],
+        "watch_out": "Peasant farmers formed the largest group at the bottom of the social pyramid, yet their grain kept all Egypt alive.",
+        "prose_hash": "eed1f16daa",
+        "prose_fp": "c9a55c77",
+        "question_hash": "f8ef9d1fee"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Cooling house design",
+            "bullet": "Whitewashed mud-brick walls and tiny high windows bounced heat away → flat roofs cooled sleepers"
+          },
+          {
+            "hint": "Light river clothing",
+            "bullet": "Families wore airy white flax linen and papyrus sandals → stayed comfortable in desert heat"
+          },
+          {
+            "hint": "Meals and leisure",
+            "bullet": "Villagers ate flatbread, lentils, onions, and figs → played thirty-square Senet games each evening"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Scarce desert timber",
+            "bullet": "Few trees grew beside the desert → ordinary homes used Nile mud while stone built tombs"
+          },
+          {
+            "hint": "Marshland plant crops",
+            "bullet": "Nile fields and marshes supplied wheat, flax, and papyrus → shaped daily food and dress"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BEAT THE HEAT",
+            "stem": "Villagers painted their ____________ houses white to reflect sunlight and slept up on ____________ during hot nights."
+          },
+          {
+            "badge": "COOL CLOTHING",
+            "stem": "Woven flax became light ____________ clothes, while marsh papyrus reeds were braided into ____________."
+          },
+          {
+            "badge": "FOOD AND GAMES",
+            "stem": "After eating warm flatbread with figs and lentils, families tossed sticks to race across ____________ boards."
+          }
+        ],
+        "watch_out": "Ordinary Egyptians lived in whitewashed mud-brick houses rather than inside stone pyramids or limestone temples.",
+        "prose_hash": "8aaa1ecdda",
+        "prose_fp": "7be8dce1",
+        "question_hash": "c79beafbd5"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Lost sacred script",
+            "bullet": "Scribes learned over 700 hieroglyphs → knowledge vanished completely centuries after ancient Egypt ended"
+          },
+          {
+            "hint": "Three-script stone slab",
+            "bullet": "French soldiers found the 196 BC Rosetta Stone in 1799 → matched hieroglyphs with Ancient Greek"
+          },
+          {
+            "hint": "Royal name rings",
+            "bullet": "Jean-François Champollion compared Greek ruler names with oval cartouches → unlocked hieroglyphs in 1822"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pottery practice scraps",
+            "bullet": "Papyrus scrolls took skill to make → student scribes practised first on broken pottery pieces"
+          },
+          {
+            "hint": "Bilingual royal decrees",
+            "bullet": "Greek-speaking rulers governed Egypt in 196 BC → carved decrees in both Greek and Egyptian"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FORGOTTEN WRITING",
+            "stem": "Student scribes practised more than 700 ____________, a sacred script that nobody could read before ____________."
+          },
+          {
+            "badge": "CRUCIAL DISCOVERY",
+            "stem": "Unearthed by French soldiers in 1799, the ____________ repeated the same royal message in three scripts including ____________."
+          },
+          {
+            "badge": "CRACKING THE CODE",
+            "stem": "Scholar ____________ matched Greek royal names to oval ____________ rings to decipher hieroglyphs in 1822."
+          }
+        ],
+        "watch_out": "The Rosetta Stone was carved in 196 BC, dug up in 1799, and finally deciphered by Champollion in 1822—do not mix up those three dates.",
+        "prose_hash": "f70e85c42f",
+        "prose_fp": "fce67038",
+        "question_hash": "6af9661cb6"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Many specialised gods",
+            "bullet": "Polytheistic Egyptians worshipped Ra, Osiris, Isis, and Horus → jackal-headed Anubis guarded sandy tombs"
+          },
+          {
+            "hint": "Twin human spirits",
+            "bullet": "Every person possessed two spirits called the ka and the winged ba → survived after death"
+          },
+          {
+            "hint": "Need for preservation",
+            "bullet": "Both spirits needed a recognisable physical home → decayed bodies meant losing eternal afterlife"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Living and dead kings",
+            "bullet": "Horus protected living pharaohs while Osiris ruled the dead → linked royal rule with eternity"
+          },
+          {
+            "hint": "Secure stone tombs",
+            "bullet": "Protecting preserved bodies for the ka and ba → drove pharaohs to build lasting tombs"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SACRED GUARDIANS",
+            "stem": "Polytheistic Egyptians worshipped many deities, including underworld ruler ____________ and jackal-headed tomb guardian ____________."
+          },
+          {
+            "badge": "TWIN SPIRITS",
+            "stem": "Religious teachings stated that each person's soul had twin spirits known as the ____________ and winged ____________."
+          },
+          {
+            "badge": "PRESERVING THE BODY",
+            "stem": "If a dead body rotted away inside the tomb, its spirits could not ____________ forever."
+          }
+        ],
+        "watch_out": "Polytheistic means worshipping many different gods and goddesses, unlike monotheism which worships only one god.",
+        "prose_hash": "ccf55bbecf",
+        "prose_fp": "26e5157c",
+        "question_hash": "5491a1e46d"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Organs and heart",
+            "bullet": "Four Canopic jars stored internal organs → priests kept the heart inside for judgement"
+          },
+          {
+            "hint": "Forty-day drying step",
+            "bullet": "Dry natron salt absorbed moisture for forty days → stopped the body rotting before wrapping"
+          },
+          {
+            "hint": "Bandages and charms",
+            "bullet": "Priests wrapped oiled linen bandages with a heart scarab → added shabti figures to farm"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Woven flax strips",
+            "bullet": "Flax linen grown beside the Nile → supplied the long bandages needed for seventy-day embalming"
+          },
+          {
+            "hint": "Farming in paradise",
+            "bullet": "Egyptians pictured paradise like fertile Nile fields → packed shabti servants to do farm work"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DRYING AND ORGANS",
+            "stem": "During the seventy-day ritual, priests packed four organs into ____________ and dried the body using ____________ salt."
+          },
+          {
+            "badge": "KEEPING THE HEART",
+            "stem": "Embalmers deliberately left the ____________ inside the chest because Egyptians believed it held a person's ____________."
+          },
+          {
+            "badge": "TOMB HELPERS",
+            "stem": "Alongside a protective ____________ charm under the linen wraps, tombs held blue ____________ figures to farm."
+          }
+        ],
+        "watch_out": "Priests never placed the heart into a Canopic jar—it stayed inside the chest so it could be weighed in the afterlife.",
+        "prose_hash": "d1c148f905",
+        "prose_fp": "34cd876e",
+        "question_hash": "0eb717a7b0"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Scales of judgement",
+            "bullet": "Book of the Dead spells guided spirits → Anubis weighed hearts against Ma'at's truth feather"
+          },
+          {
+            "hint": "Heavy wicked hearts",
+            "bullet": "Thoth recorded the verdict → monster Ammit devoured hearts weighed down by cruel deeds"
+          },
+          {
+            "hint": "Light honest hearts",
+            "bullet": "Hearts lighter than the feather passed Osiris → entered the sunny Field of Reeds forever"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Painted coffin scrolls",
+            "bullet": "Scribes painted Book of the Dead spells onto papyrus scrolls → tucked inside wealthy coffins"
+          },
+          {
+            "hint": "Everyday moral choices",
+            "bullet": "Fearing Ammit beside the golden scales → encouraged living Egyptians to act kindly and honestly"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GOLDEN SCALES",
+            "stem": "Guided by ____________ scrolls, the spirit watched Anubis balance its heart against the feather of ____________."
+          },
+          {
+            "badge": "FEARSOME PUNISHMENT",
+            "stem": "While ibis-headed ____________ wrote down the result, any heavy heart was eaten by the monster ____________."
+          },
+          {
+            "badge": "ETERNAL PARADISE",
+            "stem": "Kind people with light hearts were welcomed by ____________ into the peaceful ____________."
+          }
+        ],
+        "watch_out": "The Book of the Dead was not one single bound book—it was a custom papyrus scroll of spells placed inside a coffin.",
+        "prose_hash": "68074b7f74",
+        "prose_fp": "6a4c1584",
+        "question_hash": "8ea04db74f"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Kingly royal symbols",
+            "bullet": "Hatshepsut crowned herself full pharaoh around 1479 BC → wore the striped headcloth and false beard"
+          },
+          {
+            "hint": "Peaceful sea expedition",
+            "bullet": "Five trading ships sailed to Punt → returned with gold, ebony, and living frankincense trees"
+          },
+          {
+            "hint": "Cliffside temple carvings",
+            "bullet": "Grand reliefs at Deir el-Bahari celebrated her Punt voyage → showcased peaceful New Kingdom wealth"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Traditional male role",
+            "bullet": "Egyptians usually expected male kings → royal beard statues proved Hatshepsut held full divine authority"
+          },
+          {
+            "hint": "Sweet temple incense",
+            "bullet": "Living frankincense trees planted at Thebes → supplied sweet-smelling resin for Karnak temple gods"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FEMALE PHARAOH",
+            "stem": "Crowning herself full pharaoh around 1479 BC, ____________ had statues carved wearing the striped headcloth and ____________."
+          },
+          {
+            "badge": "VOYAGE TO PUNT",
+            "stem": "Preferring peaceful trade to war, she sent five ships to the ____________ for gold, ebony, and ____________ trees."
+          },
+          {
+            "badge": "STONE MONUMENT",
+            "stem": "Carvings along her cliff temple at ____________ proudly recorded every treasure her sailors brought home."
+          }
+        ],
+        "watch_out": "Hatshepsut ruled as a full crowned pharaoh in her own right rather than merely serving as a king's wife.",
+        "prose_hash": "60929608e8",
+        "prose_fp": "05cc91c4",
+        "question_hash": "18622db1b1"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Single sun-disc worship",
+            "bullet": "Akhenaten and Nefertiti rejected traditional gods → worshipped only the golden sun-disc called Aten"
+          },
+          {
+            "hint": "New desert capital",
+            "bullet": "Royal court abandoned Thebes and Karnak's priests → built a brand-new Nile city at Amarna"
+          },
+          {
+            "hint": "Powerful royal partner",
+            "bullet": "Nefertiti led sun offerings and wore a tall blue crown → priests restored old gods afterwards"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Centuries of old gods",
+            "bullet": "Egyptians had worshipped Osiris, Isis, and Ra for centuries → sudden religious change angered priests"
+          },
+          {
+            "hint": "Royal sculptor's workshop",
+            "bullet": "Sculptor Thutmose carved Nefertiti's painted limestone bust → preserved Amarna's distinctive artistic style"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RELIGIOUS UPHEAVAL",
+            "stem": "Shocking Egypt's temple priests, Pharaoh ____________ and Queen Nefertiti turned away from old gods to worship ____________."
+          },
+          {
+            "badge": "DESERT CAPITAL",
+            "stem": "Leaving Thebes behind, the royal couple constructed a brand-new capital city beside the Nile at ____________."
+          },
+          {
+            "badge": "SHORT-LIVED CHANGE",
+            "stem": "Although sculptor Thutmose immortalised ____________ in limestone, priests quickly restored traditional worship at ____________ after Akhenaten died."
+          }
+        ],
+        "watch_out": "Akhenaten's worship of the sun-disc Aten did not last permanently—priests restored Egypt's traditional gods soon after his death.",
+        "prose_hash": "06456ed03f",
+        "prose_fp": "3f428b03",
+        "question_hash": "2e977063f3"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Chariot clash and peace",
+            "bullet": "Clashed with Hittite chariots at Kadesh → sealed the world's oldest written peace treaty"
+          },
+          {
+            "hint": "Long stable reign",
+            "bullet": "Ruled Egypt for sixty-six years → brought long stability after years of border warfare"
+          },
+          {
+            "hint": "Giant cliff statues",
+            "bullet": "Carved four twenty-metre statues at Abu Simbel → aligned inner chambers with twice-yearly sunbeams"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Clay treaty copies",
+            "bullet": "Royal scribes recorded the 1259 BC Hittite treaty → copies survived on silver and clay"
+          },
+          {
+            "hint": "Southern border gateway",
+            "bullet": "Towering Abu Simbel cliffs stood in southern Egypt → impressed travellers entering along the Nile"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WAR AND DIPLOMACY",
+            "stem": "Following a fierce chariot clash against the ____________ at Kadesh, Ramesses II signed the world's oldest surviving ____________."
+          },
+          {
+            "badge": "DECISIVE LONGEVITY",
+            "stem": "Governing Egypt for ____________ years allowed him to fund grand monuments across the entire Nile Valley."
+          },
+          {
+            "badge": "SOUTHERN COLOSSI",
+            "stem": "Builders carved four twenty-metre seated statues into the cliffs at ____________, lit inside twice a year by ____________."
+          }
+        ],
+        "watch_out": "Ramesses II did not crush the Hittites outright at Kadesh—neither army won clearly, leading to their 1259 BC peace treaty.",
+        "prose_hash": "90b2f93fe9",
+        "prose_fp": "1669c547",
+        "question_hash": "b260b79320"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Hidden desert canyon",
+            "bullet": "Rulers abandoned visible pyramids → cut hidden rock tombs inside the Valley of the Kings"
+          },
+          {
+            "hint": "Sudden young death",
+            "bullet": "Tutankhamun died aged nineteen in 1323 BC → buried inside a modest underground tomb, KV62"
+          },
+          {
+            "hint": "Accidental rubble shield",
+            "bullet": "Later tomb builders dumped limestone chips over KV62's steps → hid his treasures from thieves"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Restoring old worship",
+            "bullet": "Crowned aged nine after Amarna's upheaval → Tutankhamun restored Egypt's traditional temple gods"
+          },
+          {
+            "hint": "Looted giant pyramids",
+            "bullet": "Towering Old Kingdom pyramids advertised royal gold → ancient robbers emptied almost every giant tomb"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SECRET BURIAL VALLEY",
+            "stem": "Because giant pyramids attracted thieves, New Kingdom kings carved hidden cliff tombs inside the ____________."
+          },
+          {
+            "badge": "YOUNG BOY-KING",
+            "stem": "Crowned aged nine around 1332 BC, ____________ restored traditional gods before dying aged nineteen in ____________."
+          },
+          {
+            "badge": "HIDDEN ENTRANCE",
+            "stem": "Limestone rubble dumped by later builders buried the steps to ____________, protecting its gold for three thousand years."
+          }
+        ],
+        "watch_out": "Tutankhamun was buried in a small underground cliff tomb in the Valley of the Kings rather than inside a pyramid.",
+        "prose_hash": "5a34643a88",
+        "prose_fp": "02b0fba4",
+        "question_hash": "8d21afe774"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Shared team discovery",
+            "bullet": "Water-boy Hussein Abdel Rassoul found the top step → Howard Carter and Egyptian excavators cleared KV62"
+          },
+          {
+            "hint": "Unlooted royal hoard",
+            "bullet": "Intact tomb held over 5,000 objects → included gilded chariots, thrones, and Senet boards"
+          },
+          {
+            "hint": "Golden burial centrepiece",
+            "bullet": "Stone sarcophagus protected an eleven-kilogram gold death mask → required ten years of careful cataloguing"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Afterlife tomb goods",
+            "bullet": "Chariots, thrones, and Senet games packed inside KV62 → equipped Tutankhamun's spirit for eternity"
+          },
+          {
+            "hint": "Rare intact burial",
+            "bullet": "Nearly all other royal tombs had been stripped → KV62 revealed complete New Kingdom craftsmanship"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "UNCOVERING THE STEPS",
+            "stem": "In November 1922, water-boy ____________ spotted a buried stone step for ____________ and his Egyptian excavation team."
+          },
+          {
+            "badge": "FIVE THOUSAND TREASURES",
+            "stem": "Peering inside by candlelight, the team found over ____________ intact artefacts including gilded chariots and ____________ boards."
+          },
+          {
+            "badge": "PAINSTAKING ARCHAEOLOGY",
+            "stem": "Protected inside a stone ____________ shone an eleven-kilogram gold ____________, and cataloguing everything took ten years."
+          }
+        ],
+        "watch_out": "Howard Carter did not dig alone—skilled Egyptian excavators and water-boy Hussein Abdel Rassoul were vital to finding KV62.",
+        "prose_hash": "fcf924618a",
+        "prose_fp": "07530bc2",
+        "question_hash": "9473ad2950"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Greek royal dynasty",
+            "bullet": "Alexander the Great founded Alexandria in 332 BC → general Ptolemy started Greek-speaking Ptolemaic rule"
+          },
+          {
+            "hint": "Multilingual wise queen",
+            "bullet": "Cleopatra VII ruled wisely from 51 BC → spoke Egyptian alongside eight other languages"
+          },
+          {
+            "hint": "Roman naval victory",
+            "bullet": "Roman forces defeated Cleopatra's fleet in 30 BC → ended pharaoh rule and made Egypt Roman"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Three-thousand-year span",
+            "bullet": "Pharaohs had ruled since King Narmer around 3100 BC → lasted three millennia before Rome"
+          },
+          {
+            "hint": "Coastal centre of learning",
+            "bullet": "Mediterranean Alexandria boasted a giant lighthouse and famous library → blended Greek and Egyptian culture"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GREEK DYNASTY",
+            "stem": "After ____________ founded coastal Alexandria in 332 BC, his general began the Greek-speaking ____________ dynasty."
+          },
+          {
+            "badge": "SKILLED RULER",
+            "stem": "Taking the throne in 51 BC, Queen ____________ governed shrewdly and learned ____________ plus eight other languages."
+          },
+          {
+            "badge": "ROMAN PROVINCE",
+            "stem": "When mighty ____________ defeated Cleopatra's fleet in ____________, three thousand years of rule by pharaohs ended."
+          }
+        ],
+        "watch_out": "Cleopatra VII lived closer in time to us today than to Khufu's Great Pyramid—and came from the Greek Ptolemaic dynasty.",
+        "prose_hash": "615cc3a60a",
+        "prose_fp": "c04816c2",
+        "question_hash": "5be4043b2a"
+      }
+    ]
+  }
+}

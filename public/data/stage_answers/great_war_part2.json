@@ -1,0 +1,1140 @@
+{
+  "unit_id": "great_war_part2",
+  "lessons": {
+    "lesson_1_enlistment": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Tiny regular army",
+            "bullet": "No conscription laws and just 120,000 regular soldiers → British land forces were heavily outnumbered"
+          },
+          {
+            "hint": "Naval defence model",
+            "bullet": "Reliance on Royal Navy supremacy rather than mass conscripts → Britain lacked a continental-sized army"
+          },
+          {
+            "hint": "Long war forecast",
+            "bullet": "Kitchener foresaw a multi-year war devouring millions → demanded 500,000 volunteers to shatter quick-victory illusions"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rival European armies",
+            "bullet": "Germany, France, and Russia conscripted millions in peacetime → fielded vast armies immediately in 1914"
+          },
+          {
+            "hint": "Expeditionary Force scale",
+            "bullet": "Kaiser Wilhelm’s generals dismissed Britain’s tiny force → rapid mass recruitment became urgent for survival"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LAND FORCE GAP",
+            "stem": "Entering the conflict without ____________ and fielding only ____________ regular troops, Britain needed..."
+          },
+          {
+            "badge": "NAVAL RELIANCE",
+            "stem": "Whereas rival European empires mobilised ____________, British defence had traditionally depended upon ____________, leaving..."
+          },
+          {
+            "badge": "LONG WAR REALITY",
+            "stem": "Recognising that industrial warfare would last ____________ rather than weeks, War Secretary ____________ appealed for..."
+          }
+        ],
+        "watch_out": "Britain did not introduce compulsory conscription until January 1916—every recruit in 1914 enlisted voluntarily.",
+        "prose_hash": "dd2c493093",
+        "prose_fp": "41590c7c",
+        "question_hash": "99f096e7ad"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Broken neutrality treaty",
+            "bullet": "Germany invaded neutral Belgium and mocked the 1839 Treaty of London → violated international law"
+          },
+          {
+            "hint": "Civilian terror reports",
+            "bullet": "German troops killed Belgian civilians and burned Louvain library → sparked moral fury across Britain"
+          },
+          {
+            "hint": "Press moral framing",
+            "bullet": "Newspapers cast the war as a righteous crusade → men enlisted to defend small nations"
+          }
+        ],
+        "context": [
+          {
+            "hint": "German war plan",
+            "bullet": "Germany’s Schlieffen Plan swept through flat Belgian territory → bypassed heavy French border fortresses"
+          },
+          {
+            "hint": "Channel coast security",
+            "bullet": "German control of Belgian Channel ports → threatened Britain’s naval security across the narrow sea"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BROKEN TREATY",
+            "stem": "Dismissing the 1839 ____________ as a mere ____________, imperial Germany outraged Britain by invading..."
+          },
+          {
+            "badge": "BELGIAN ATROCITIES",
+            "stem": "Shocking accounts of violence against ____________, including the destruction of ____________, provoked intense..."
+          },
+          {
+            "badge": "RIGHTEOUS CRUSADE",
+            "stem": "Guided by emotive newspaper reporting, young recruits viewed enlistment as a moral duty to protect ____________ from..."
+          }
+        ],
+        "watch_out": "Britain had no formal military alliance obliging war for France—German violation of Belgian neutrality triggered British entry.",
+        "prose_hash": "a77d5287c1",
+        "prose_fp": "d1c4dc5c",
+        "question_hash": "fdf001774d"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Serving alongside mates",
+            "bullet": "Friends, neighbours, and workmates trained and fought together → eased fears of joining the army"
+          },
+          {
+            "hint": "Civic pride boost",
+            "bullet": "Local units such as the Pompey Pals harnessed town pride → strengthened frontline battalion morale"
+          },
+          {
+            "hint": "Concentrated local loss",
+            "bullet": "Grouping whole neighbourhoods into one unit → a single battle could devastate an entire town"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Future Somme tragedy",
+            "bullet": "Heavy fighting on 1 July 1916 decimated Pals units → whole streets mourned together overnight"
+          },
+          {
+            "hint": "War Office bottleneck",
+            "bullet": "Local mayors and employers funded early Pals battalions → relieved overwhelmed War Office recruitment depots"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CIVIC CAMARADERIE",
+            "stem": "Recruiting friends, neighbours, and ____________ into shared local units boosted ____________ and encouraged men to..."
+          },
+          {
+            "badge": "MUNICIPAL IDENTITY",
+            "stem": "Across industrial cities and ports, battalions like the ____________ drew clerks, dockers, and sportsmen together through..."
+          },
+          {
+            "badge": "DEVASTATING RISK",
+            "stem": "Concentrating one town’s young men inside a single unit meant one heavy battle could devastate ____________..."
+          }
+        ],
+        "watch_out": "Pals Battalions were an effective recruitment triumph in 1914, yet proved socially catastrophic once industrial battles began in 1916.",
+        "prose_hash": "0e2a4a70ce",
+        "prose_fp": "e4a72313",
+        "question_hash": "09ba2da86b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Edwardian urban poverty",
+            "bullet": "Low wages, damp tenements, and gruelling factory shifts → made army service an attractive escape"
+          },
+          {
+            "hint": "Guaranteed daily essentials",
+            "bullet": "Army enlistment promised regular pay, hot meals, warm woollen uniforms → relieved desperate family poverty"
+          },
+          {
+            "hint": "Short war myth",
+            "bullet": "Widespread belief the war would end by Christmas → spurred youths to seek overseas adventure"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pre-war welfare limits",
+            "bullet": "Limited Edwardian state welfare left casual labourers vulnerable → army separation allowances supported poor wives"
+          },
+          {
+            "hint": "Recruit physical health",
+            "bullet": "Years of slum malnutrition stunted working-class health → army doctors rejected many undersized early volunteers"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ESCAPING HARDSHIP",
+            "stem": "Faced with low wages, damp ____________, and exhausting ____________, many working-class labourers viewed enlistment as..."
+          },
+          {
+            "badge": "MATERIAL SECURITY",
+            "stem": "Accepting military pay guaranteed steady ____________, regular meals, and durable ____________ that poor households..."
+          },
+          {
+            "badge": "CHRISTMAS ILLUSION",
+            "stem": "Convinced the overseas campaign would finish by ____________, thousands rushed to enlist before..."
+          }
+        ],
+        "watch_out": "Not all 1914 volunteers enlisted purely out of patriotism—economic security and steady food were powerful working-class motives.",
+        "prose_hash": "6308dafd36",
+        "prose_fp": "d73d0871",
+        "question_hash": "13f74858ba"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Direct poster gaze",
+            "bullet": "Kitchener’s pointing poster addressed passers-by personally → turned enlistment into an unavoidable patriotic duty"
+          },
+          {
+            "hint": "Public cowardice symbol",
+            "bullet": "White Feather women handed feathers to men in civilian clothes → branded non-recruits as cowards"
+          },
+          {
+            "hint": "Psychological street shame",
+            "bullet": "Fear of public humiliation on streets and trams → pressured hesitant youths into recruitment offices"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Essential war workers",
+            "bullet": "Skilled engineers and miners out of uniform were wrongly shamed → government issued official war-work badges"
+          },
+          {
+            "hint": "Shift toward compulsion",
+            "bullet": "Harsh civilian shaming still failed to replace rising casualties → Parliament eventually passed conscription in 1916"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STATE PROPAGANDA",
+            "stem": "Pointing directly out from street hoardings, the famous ____________ poster demanded that every young man..."
+          },
+          {
+            "badge": "PUBLIC HUMILIATION",
+            "stem": "Campaigners confronted men dressed in ____________, handing over feathers in public to brand them..."
+          },
+          {
+            "badge": "SOCIAL COERCION",
+            "stem": "Under relentless neighbourhood scrutiny, unbearable ____________ made staying out of uniform psychologically impossible for..."
+          }
+        ],
+        "watch_out": "White feathers were sometimes mistakenly handed to wounded soldiers on leave or vital munitions workers in civilian clothes.",
+        "prose_hash": "b98ebe3558",
+        "prose_fp": "4fdaa2ed",
+        "question_hash": "fef4540f8e"
+      }
+    ],
+    "lesson_2_trenches_haig": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Failed flanking race",
+            "bullet": "Outflanking manoeuvres ended at the Channel in the Race to the Sea → blocked open movement"
+          },
+          {
+            "hint": "Defensive firepower dominance",
+            "bullet": "Rapid-firing machine guns and shrapnel artillery swept open ground → made cavalry and infantry charges suicidal"
+          },
+          {
+            "hint": "Unbroken subterranean line",
+            "bullet": "Infantry dug into earth to survive → created 400 miles of trenches from sea to Switzerland"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Collapsed German timetable",
+            "bullet": "Allied victory at the Marne halted Germany’s Schlieffen Plan → ended hopes of rapid knockout victory"
+          },
+          {
+            "hint": "Industrial shell demand",
+            "bullet": "Static siege warfare devoured millions of artillery rounds → triggered Britain’s 1915 munitions shortage"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "END OF MOBILITY",
+            "stem": "Once rival armies reached the English Channel during the ____________, outflanking manoeuvres gave way to..."
+          },
+          {
+            "badge": "LETHAL FIREPOWER",
+            "stem": "Sweeping open battlefields with shrapnel shells and rapid-firing ____________ forced exposed infantry to..."
+          },
+          {
+            "badge": "CONTINUOUS FRONT",
+            "stem": "Carving earthen shelters for survival produced an unbroken fortified line stretching from ____________ to..."
+          }
+        ],
+        "watch_out": "Trenches were dug to save soldiers’ lives against lethal modern artillery and machine guns—not out of commanders’ lack of imagination.",
+        "prose_hash": "faf534334e",
+        "prose_fp": "3884b912",
+        "question_hash": "a383921244"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Layered defence network",
+            "bullet": "Front, support, and reserve lines linked together → absorbed attacks and allowed rapid reinforcement"
+          },
+          {
+            "hint": "Angled blast barriers",
+            "bullet": "Zig-zag trenches with sandbagged traverses → stopped enemies firing along straight lines and contained shell blasts"
+          },
+          {
+            "hint": "Wire and shelters",
+            "bullet": "Deep barbed wire funnelled attackers into kill zones → thirty-foot concrete dugouts sheltered defenders below"
+          }
+        ],
+        "context": [
+          {
+            "hint": "German terrain advantage",
+            "bullet": "German forces held higher chalk ridges in France → built deeper, drier concrete bunkers than Britain"
+          },
+          {
+            "hint": "Rotating battalion routine",
+            "bullet": "Soldiers rotated between frontline, support, and reserve trenches → rarely spent every week in frontline combat"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LAYERED NETWORK",
+            "stem": "Organised in depth across front, ____________, and ____________ positions, Western Front defences prevented..."
+          },
+          {
+            "badge": "BLAST PROTECTION",
+            "stem": "Military engineers cut angled bays separated by sandbagged ____________ so that raiding troops or shells could not..."
+          },
+          {
+            "badge": "WIRE AND DUGOUTS",
+            "stem": "Thick belts of ____________ channelled attackers toward machine guns, whereas underground ____________ protected defenders during..."
+          }
+        ],
+        "watch_out": "Trenches were never dug in straight lines—a single shell or enemy machine gun could have swept an entire straight trench.",
+        "prose_hash": "778071a664",
+        "prose_fp": "851a91b8",
+        "question_hash": "194d7870dd"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Flooded mud rot",
+            "bullet": "Standing for days in freezing waterlogged clay caused trench foot → led to gangrene and amputations"
+          },
+          {
+            "hint": "Relentless artillery terror",
+            "bullet": "Massive howitzer shells churned battlefields into liquid mud → inflicted horrific physical wounds day and night"
+          },
+          {
+            "hint": "Psychological nerve collapse",
+            "bullet": "Enduring ceaseless high-explosive bombardments triggered shell shock → left traumatised men trembling with shattered nerves"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Harsh military discipline",
+            "bullet": "Early army doctors misunderstood psychological trauma → some shell-shocked soldiers faced court-martial for cowardice"
+          },
+          {
+            "hint": "Colonial climate shock",
+            "bullet": "Indian soldiers arriving in thin cotton uniforms in 1914 → suffered severe frostbite in Flanders mud"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PHYSICAL INFECTION",
+            "stem": "Trapped for days in freezing, waterlogged clay, infantrymen contracted ____________, an agonising condition that risked..."
+          },
+          {
+            "badge": "ARTILLERY ORDEAL",
+            "stem": "Continuous fire from heavy ____________ turned trenches into foul slush while inflicting devastating..."
+          },
+          {
+            "badge": "MENTAL TRAUMA",
+            "stem": "Prolonged exposure to relentless shelling caused severe ____________, leaving thousands of soldiers..."
+          }
+        ],
+        "watch_out": "Shell shock was a genuine psychological brain and nerve injury caused by industrial bombardment, not moral weakness or cowardice.",
+        "prose_hash": "c5ece76d7d",
+        "prose_fp": "5d7c8541",
+        "question_hash": "a33f27c3d1"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Failed artillery barrage",
+            "bullet": "Haig’s seven-day, 1.5-million-shell bombardment relied heavily on shrapnel → failed to cut thick German barbed wire"
+          },
+          {
+            "hint": "Deep German bunkers",
+            "bullet": "German defenders rode out the shelling inside deep underground dugouts → emerged rapidly once firing lifted"
+          },
+          {
+            "hint": "Exposed infantry advance",
+            "bullet": "Heavily laden soldiers walked across No Man’s Land → intact machine guns inflicted 57,470 first-day casualties"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Allied Verdun crisis",
+            "bullet": "French forces faced collapse at Verdun → forced Britain to attack on the Somme mid-summer"
+          },
+          {
+            "hint": "Inexperienced volunteer units",
+            "bullet": "Kitchener’s Pals battalions had limited combat experience → suffered catastrophic community losses on day one"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INEFFECTIVE BOMBARDMENT",
+            "stem": "Although British guns fired ____________ shells over seven days, shrapnel rounds failed to cut ____________ or crush..."
+          },
+          {
+            "badge": "SURVIVING DEFENDERS",
+            "stem": "Sheltering deep underground in reinforced ____________, German machine-gun crews emerged intact as soon as..."
+          },
+          {
+            "badge": "NO MAN'S LAND",
+            "stem": "Ordered to walk across open ground toward uncut wire, exposed battalions were swept by waiting ____________..."
+          }
+        ],
+        "watch_out": "Not all 57,470 casualties on 1 July 1916 were killed—around 19,240 died, while the remainder were wounded, missing, or captured.",
+        "prose_hash": "bc58faaac5",
+        "prose_fp": "01eebe67",
+        "question_hash": "f919cc0416"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Traditional butcher critique",
+            "bullet": "Traditional critics condemn Haig as a callous butcher → wasted brave soldiers in futile mud offensives"
+          },
+          {
+            "hint": "Industrial learning curve",
+            "bullet": "Modern historians highlight a steep learning curve → no general had fought industrial trench warfare before"
+          },
+          {
+            "hint": "Combined-arms innovation",
+            "bullet": "Haig’s army integrated tanks, creeping artillery barrages, and aircraft → delivered decisive Allied victory in 1918"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Hundred Days breakthrough",
+            "bullet": "Allied combined-arms offensives in autumn 1918 shattered German lines → triggered naval mutiny and Armistice"
+          },
+          {
+            "hint": "Coalition war pressure",
+            "bullet": "Sustained British pressure on the Somme wore down German reserves → relieved besieged French forces"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TRADITIONAL CRITICISM",
+            "stem": "Under the traditional view, critics portray Haig as a ____________ who squandered brave infantry in..."
+          },
+          {
+            "badge": "REVISIONIST DEFENCE",
+            "stem": "Conversely, modern historians argue British commanders faced an unprecedented ____________ while expanding a volunteer army..."
+          },
+          {
+            "badge": "COMBINED ARMS",
+            "stem": "Applying hard-won tactical lessons, British forces coordinated ____________, creeping barrages, and ____________ to break..."
+          }
+        ],
+        "watch_out": "Strong historical evaluations avoid one-sided caricatures of Haig, weighing catastrophic 1916 losses against his 1918 combined-arms transformation.",
+        "prose_hash": "e91e630860",
+        "prose_fp": "934ed5cd",
+        "question_hash": "1cb882ae1c"
+      }
+    ],
+    "lesson_3_empire_troops": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Global manpower scale",
+            "bullet": "Over four million colonial and dominion personnel from five continents → reinforced Britain across global fronts"
+          },
+          {
+            "hint": "Overseas resource shipments",
+            "bullet": "Merchant ships carried colonial wheat and oil → fed British civilians and fuelled Royal Navy warships"
+          },
+          {
+            "hint": "Economic survival shield",
+            "bullet": "Imperial raw materials, labour, and food reserves → prevented Allied collapse under German U-boat attacks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Small island army",
+            "bullet": "Britain began August 1914 with only 120,000 regulars → needed imperial troops while volunteers trained"
+          },
+          {
+            "hint": "Atlantic U-boat blockade",
+            "bullet": "Unrestricted German submarine warfare in 1917 → made imperial merchant convoys vital to prevent starvation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPERIAL MANPOWER",
+            "stem": "Drawing upon ____________ continents, Britain mobilised millions of dominion and colonial personnel to fight across..."
+          },
+          {
+            "badge": "VITAL SUPPLIES",
+            "stem": "Overseas merchant shipping sustained the island nation by delivering essential ____________ for civilians and ____________ for..."
+          },
+          {
+            "badge": "RESILIENCE AT SEA",
+            "stem": "Without this global lifeline of raw materials and labour, Britain risked ____________ under German..."
+          }
+        ],
+        "watch_out": "World War I was never solely a white European trench conflict—imperial manpower and colonial resources sustained Britain throughout.",
+        "prose_hash": "5caede9a7d",
+        "prose_fp": "c9eba65d",
+        "question_hash": "db988b532b"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Saving First Ypres",
+            "bullet": "Indian battalions reinforced exhausted British regulars at First Ypres → halted a decisive German breakthrough"
+          },
+          {
+            "hint": "Freezing mud endurance",
+            "bullet": "Troops fought in flooded Flanders trenches wearing thin cotton khaki → endured severe casualties and frostbite"
+          },
+          {
+            "hint": "Hollebeke heroism",
+            "bullet": "Wounded Sepoy Khudadad Khan manned his gun alone → won first South Asian Victoria Cross"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Middle Eastern fronts",
+            "bullet": "Over 1.3 million Indian volunteers served globally → formed the backbone of Mesopotamia and Palestine campaigns"
+          },
+          {
+            "hint": "Training time bought",
+            "bullet": "Indian soldiers held the Western Front in 1914 → bought vital months for Kitchener’s volunteers"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REINFORCING FLANDERS",
+            "stem": "Rushed to France in autumn 1914, Indian battalions plugged critical gaps at ____________ and stopped..."
+          },
+          {
+            "badge": "WINTER HARDSHIP",
+            "stem": "Fighting in freezing waterlogged mud while dressed only in ____________, Indian infantrymen suffered..."
+          },
+          {
+            "badge": "INDIVIDUAL VALOUR",
+            "stem": "At Hollebeke, severely wounded ____________ kept firing his machine gun alone, earning the..."
+          }
+        ],
+        "watch_out": "Every one of the 1.3 million Indian personnel who served in the Great War was a volunteer—conscription was never imposed on India.",
+        "prose_hash": "b4c1f5acd2",
+        "prose_fp": "aff2d969",
+        "question_hash": "b46539b8f7"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Ottoman knockout aim",
+            "bullet": "Allied forces launched an amphibious landing at Gallipoli → aimed to knock Ottoman Turkey out early"
+          },
+          {
+            "hint": "Clifftop stalemate",
+            "bullet": "Entrenched Ottoman machine guns above steep Anzac Cove cliffs → pinned dominion troops for eight months"
+          },
+          {
+            "hint": "Forging national identity",
+            "bullet": "Endurance and comradeship despite military defeat and evacuation → forged lasting Australian and New Zealand pride"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Western Front deadlock",
+            "bullet": "Deadlocked trenches in France pushed British leaders to seek an eastern breakthrough → misjudged Ottoman defences"
+          },
+          {
+            "hint": "Wider colonial service",
+            "bullet": "West Indian and Indian regiments fought alongside ANZACs → made eastern Mediterranean campaigns truly imperial"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STRATEGIC GOAL",
+            "stem": "In April 1915, Allied commanders ordered amphibious landings hoping to knock the ____________ out of..."
+          },
+          {
+            "badge": "BEACHHEAD TRAP",
+            "stem": "Pinned beneath steep cliffs at ____________ by entrenched Turkish ____________, dominion troops endured..."
+          },
+          {
+            "badge": "ENDURING LEGEND",
+            "stem": "Even though eight months of stalemate ended in ____________, soldiers’ sacrifice forged distinct..."
+          }
+        ],
+        "watch_out": "Gallipoli was a costly Allied military failure ending in evacuation, yet became the founding symbol of Australian and New Zealand nationhood.",
+        "prose_hash": "fdcf61db82",
+        "prose_fp": "ea2203e3",
+        "question_hash": "ea5565660f"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Vital frontline logistics",
+            "bullet": "140,000 Chinese workers dug trenches, repaired railways, and cleared battlefields → kept Allied armies supplied"
+          },
+          {
+            "hint": "Hazardous munitions labour",
+            "bullet": "Labourers unloaded heavy shells and toxic chemical munitions under bombardment → faced lethal battlefield dangers"
+          },
+          {
+            "hint": "Segregation and curfews",
+            "bullet": "Authorities enforced barbed-wire curfew camps and corporal punishment → segregated Chinese workers from French civilians"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Freeing combat riflemen",
+            "bullet": "Heavy Western Front losses drained manpower → Chinese logistics workers freed British soldiers for frontline combat"
+          },
+          {
+            "hint": "Post-armistice clearance hazard",
+            "bullet": "Chinese labourers stayed into 1919 clearing unexploded shells and burying dead → hundreds died after peace"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ESSENTIAL LOGISTICS",
+            "stem": "Behind the Western Front, recruited labourers sustained Allied armies by repairing ____________ and digging ____________..."
+          },
+          {
+            "badge": "DANGEROUS DUTIES",
+            "stem": "Working exhausting shifts under shellfire, workers handled heavy ammunition and toxic ____________ while clearing..."
+          },
+          {
+            "badge": "RACIAL SEGREGATION",
+            "stem": "Despite indispensable service, British authorities confined workers inside ____________ and barred contact with..."
+          }
+        ],
+        "watch_out": "Although classed as non-combatant labourers, Chinese Labour Corps workers worked within artillery range and died from shelling, mines, and disease.",
+        "prose_hash": "1c16c2eaff",
+        "prose_fp": "a9b4a3ad",
+        "question_hash": "5958e4b707"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "East African losses",
+            "bullet": "Over one million African porters died carrying supplies → imperial officials left zero individual marked graves"
+          },
+          {
+            "hint": "Unequal burial policy",
+            "bullet": "White dead received named headstones while colonial labourers lay in mass pits → institutionalised racial inequality"
+          },
+          {
+            "hint": "Victory parade exclusion",
+            "bullet": "Non-white colonial troops were barred from London’s 1919 Victory Parade → denied equal pensions and remembrance"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Anti-colonial awakening",
+            "bullet": "Post-war racial discrimination and broken promises → fuelled anti-colonial nationalist movements across India and Africa"
+          },
+          {
+            "hint": "Delayed official apology",
+            "bullet": "Institutional unequal commemoration persisted for a century → Commonwealth War Graves Commission acknowledged bias only recently"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "UNMARKED SACRIFICE",
+            "stem": "Across East Africa, although over ____________ porters perished carrying supplies, imperial officials left..."
+          },
+          {
+            "badge": "TWO-TIER REMEMBRANCE",
+            "stem": "Whereas white British soldiers received individual ____________, fallen colonial labourers were buried in..."
+          },
+          {
+            "badge": "POST-WAR ERASURE",
+            "stem": "Excluding non-white regiments from the 1919 ____________ symbolised decades of denied ____________ and..."
+          }
+        ],
+        "watch_out": "Equal commemoration applied mainly to white imperial soldiers—hundreds of thousands of African and Asian casualties went unnamed by official policy.",
+        "prose_hash": "62776a7943",
+        "prose_fp": "e002e7c7",
+        "question_hash": "136fee9da5"
+      }
+    ],
+    "lesson_4_home_front_dora": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Emergency state powers",
+            "bullet": "Parliament suspended liberal civil liberties → requisitioned private factories and farmland for war production"
+          },
+          {
+            "hint": "Strict press blackouts",
+            "bullet": "Government censors blocked reports of military setbacks and heavy casualties → protected civilian morale and security"
+          },
+          {
+            "hint": "Pubs and alcohol",
+            "bullet": "Authorities shortened pub opening hours and watered down beer → curbed drunkenness to raise factory output"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pre-war liberal tradition",
+            "bullet": "Edwardian Britain prized minimal state interference → DORA marked a dramatic shift to total war"
+          },
+          {
+            "hint": "Lasting licensing rules",
+            "bullet": "Wartime pub closing hours and British Summer Time → outlasted 1918 and reshaped everyday life"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SWEEPING POWERS",
+            "stem": "Enacted in August 1914, emergency legislation suspended traditional ____________, enabling ministers to commandeer ____________ and..."
+          },
+          {
+            "badge": "CONTROLLING INFORMATION",
+            "stem": "Strict newspaper ____________ hid frontline disasters from the public in order to sustain ____________ and prevent..."
+          },
+          {
+            "badge": "WORKPLACE DISCIPLINE",
+            "stem": "Regulating everyday habits through early ____________ and weaker ____________ aimed to maximise industrial..."
+          }
+        ],
+        "watch_out": "DORA was passed immediately in August 1914—not late in the war—giving the government sweeping total-war powers from the very first week.",
+        "prose_hash": "615392ef10",
+        "prose_fp": "06429172",
+        "question_hash": "eeeae8a971"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Frontline ammunition shortage",
+            "bullet": "Stalled May 1915 offensives lacked high-explosive shells → Daily Mail headlines blamed Kitchener for needless deaths"
+          },
+          {
+            "hint": "Coalition government shake-up",
+            "bullet": "Public outrage forced Prime Minister Asquith into a coalition → created Lloyd George’s Ministry of Munitions"
+          },
+          {
+            "hint": "State-run shell factories",
+            "bullet": "Lloyd George nationalised private workshops and built state factories → multiplied shell output under central control"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Western Front siege",
+            "bullet": "400 miles of trenches devoured ammunition rapidly → overwhelmed slow pre-war private arms contractors"
+          },
+          {
+            "hint": "Somme shell surge",
+            "bullet": "State munitions factories produced millions of shells by 1916 → though early batch quality varied badly"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NEWSPAPER SCANDAL",
+            "stem": "Explosive May 1915 press reports exposed a severe lack of ____________, accusing ministers of costing lives through..."
+          },
+          {
+            "badge": "POLITICAL SHAKE-UP",
+            "stem": "Mounting anger compelled Asquith to form a ____________ and establish the new ____________ to oversee..."
+          },
+          {
+            "badge": "STATE PRODUCTION",
+            "stem": "Replacing slow private contracting, the government nationalised ____________ and constructed huge state ____________ to..."
+          }
+        ],
+        "watch_out": "Private free-market firms proved unable to supply industrial trench warfare alone, forcing unprecedented state takeover of British manufacturing.",
+        "prose_hash": "a397d99240",
+        "prose_fp": "4687784c",
+        "question_hash": "8e8e8d6c69"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Exhausted volunteer pool",
+            "bullet": "Heavy 1915 trench casualties drained willing recruits → voluntary enlistment could no longer replace losses"
+          },
+          {
+            "hint": "Military Service Act",
+            "bullet": "Parliament compelled unmarried men aged eighteen to forty-one to serve → ended Britain’s voluntary army tradition"
+          },
+          {
+            "hint": "Moral war refusers",
+            "bullet": "16,000 conscientious objectors refused service on moral or religious grounds → faced harsh prison labour"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Fading 1914 enthusiasm",
+            "bullet": "Grim 1915 Western Front casualty lists arrived home → ended initial 1914 patriotic enlistment rushes"
+          },
+          {
+            "hint": "Expanding married call-up",
+            "bullet": "Relentless trench losses persisted into May 1916 → extended compulsory conscription to married men too"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VOLUNTARY COLLAPSE",
+            "stem": "Relentless trench casualties in 1915 exhausted ____________, proving persuasion alone could not sustain..."
+          },
+          {
+            "badge": "COMPULSORY CALL-UP",
+            "stem": "Passing the ____________ in early 1916, MPs required ____________ aged eighteen to forty-one to join..."
+          },
+          {
+            "badge": "CONSCIENTIOUS RESISTANCE",
+            "stem": "Roughly 16,000 ____________ refused military service for religious or ethical reasons, risking..."
+          }
+        ],
+        "watch_out": "Not all conscientious objectors refused war work—many served bravely as unarmed stretcher-bearers, while absolutists faced harsh imprisonment.",
+        "prose_hash": "fe3733612f",
+        "prose_fp": "2aeec1f1",
+        "question_hash": "784464c47a"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Toxic TNT poisoning",
+            "bullet": "Daily contact with poisonous TNT and cordite caused toxic jaundice → turned workers’ skin yellow"
+          },
+          {
+            "hint": "Lethal factory blasts",
+            "bullet": "Volatile explosives created constant blast hazards → the 1917 Silvertown factory explosion killed seventy-three people"
+          },
+          {
+            "hint": "Indispensable shell output",
+            "bullet": "Nearly one million female munitions workers endured toxic fumes → produced 80% of British shells"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Conscription labour gap",
+            "bullet": "Mass conscription of male factory hands in 1916 → made female industrial labour essential"
+          },
+          {
+            "hint": "Post-war jobs and votes",
+            "bullet": "War work helped win votes for women over thirty in 1918 → yet factories dismissed most"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CHEMICAL POISONING",
+            "stem": "Handling poisonous ____________ and cordite without protection left munitions workers with ____________ and green-tinted hair..."
+          },
+          {
+            "badge": "EXPLOSION HAZARDS",
+            "stem": "Alongside toxic fumes, volatile explosives risked catastrophic blasts such as the 1917 ____________ disaster, which..."
+          },
+          {
+            "badge": "INDISPENSABLE SACRIFICE",
+            "stem": "Enduring daily chemical hazards across war factories, nearly ____________ women still produced most of Britain’s ____________..."
+          }
+        ],
+        "watch_out": "Yellow skin among Canary Girls was not a harmless cosmetic stain—it was toxic liver jaundice caused by absorbing poisonous TNT.",
+        "prose_hash": "9de351c199",
+        "prose_fp": "516b042c",
+        "question_hash": "95c8cae325"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Atlantic U-boat crisis",
+            "bullet": "Unrestricted German U-boat attacks sank Atlantic merchant ships → cut Britain’s wheat reserves to six weeks"
+          },
+          {
+            "hint": "Compulsory ration books",
+            "bullet": "Early 1918 ration books capped sugar, meat, and butter → ended panic buying and unfair queues"
+          },
+          {
+            "hint": "Protected naval convoys",
+            "bullet": "Armed Royal Navy warships escorted merchant convoys across the Atlantic → defeated the submarine blockade"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Colonial food lifeline",
+            "bullet": "Heavy British reliance on imported imperial grain and meat → created vulnerability to submarine blockade"
+          },
+          {
+            "hint": "American war entry",
+            "bullet": "Germany’s unrestricted U-boat campaign sank American vessels → brought the United States into the war"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STARVATION CRISIS",
+            "stem": "Unleashing unrestricted ____________ campaigns in 1917, Germany sank merchant shipping until British wheat stocks fell to..."
+          },
+          {
+            "badge": "FAIR DISTRIBUTION",
+            "stem": "To stop soaring prices and grocer queues from breaking morale, ministers introduced compulsory ____________ in 1918 for..."
+          },
+          {
+            "badge": "PROTECTING TRADE",
+            "stem": "Grouping merchant vessels inside armed naval ____________ sharply reduced sinkings and secured Atlantic..."
+          }
+        ],
+        "watch_out": "Compulsory rationing began only in early 1918 during the final year of war, and actually improved the diet of many poorest families.",
+        "prose_hash": "392f19caaf",
+        "prose_fp": "d3eba5d8",
+        "question_hash": "ecdfca29b7"
+      }
+    ],
+    "lesson_5_versailles": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Frontline and blockade",
+            "bullet": "Allied Hundred Days breakthroughs and Royal Navy starvation blockade → shattered Germany’s military capacity"
+          },
+          {
+            "hint": "Kiel naval mutiny",
+            "bullet": "Sailors at Kiel refused a suicidal sea battle → sparked nationwide workers’ strikes and revolution"
+          },
+          {
+            "hint": "Abdication and Compiègne",
+            "bullet": "Kaiser Wilhelm fled to Holland → civilian leaders signed the Compiègne railway Armistice on 11 November"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Combined-arms Allied push",
+            "bullet": "Coordinated Allied tanks, aircraft, and artillery alongside fresh American divisions → broke German trench defences"
+          },
+          {
+            "hint": "Stab-in-the-back myth",
+            "bullet": "Signing the ceasefire before Allied troops occupied Berlin → let nationalists falsely blame civilian politicians"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MILITARY EXHAUSTION",
+            "stem": "Crushed between the Allied ____________ Offensive and a starving naval blockade, German forces could no longer..."
+          },
+          {
+            "badge": "DOMESTIC REVOLUTION",
+            "stem": "Ordered out on a hopeless final sortie, sailors at ____________ rebelled, igniting urban ____________ across..."
+          },
+          {
+            "badge": "NOVEMBER CEASEFIRE",
+            "stem": "After the Kaiser fled into exile in ____________, German envoys entered a Compiègne ____________ to sign..."
+          }
+        ],
+        "watch_out": "The 11 November 1918 Armistice was a military ceasefire stopping the fighting—the formal peace treaty at Versailles came seven months later.",
+        "prose_hash": "296c9ede52",
+        "prose_fp": "c8abf70d",
+        "question_hash": "9f4171f6ff"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "American idealist vision",
+            "bullet": "Woodrow Wilson pushed his Fourteen Points → backed ethnic self-determination and a peacekeeping League of Nations"
+          },
+          {
+            "hint": "French security demands",
+            "bullet": "Georges Clemenceau sought harsh reparations and military crippling → aimed to shield devastated France from invasion"
+          },
+          {
+            "hint": "British trade compromise",
+            "bullet": "David Lloyd George moderated French vengeance → wanted an economically stable Germany for British trade"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unequal wartime damage",
+            "bullet": "Invaded France suffered ruined towns whereas America remained untouched → drove clashing peace demands"
+          },
+          {
+            "hint": "British election pledges",
+            "bullet": "Voters mourning heavy Somme and Passchendaele losses → pressured Lloyd George publicly to punish Germany"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WILSONIAN IDEALISM",
+            "stem": "Guided by his ____________, the American President prioritised national ____________ and a new League of Nations..."
+          },
+          {
+            "badge": "FRENCH SECURITY",
+            "stem": "Determined to protect invaded France, Premier ____________ demanded heavy ____________ and the permanent crippling of..."
+          },
+          {
+            "badge": "BRITISH PRAGMATISM",
+            "stem": "Balancing angry voters against commercial recovery, Britain’s leader sought a middle ground to preserve ____________..."
+          }
+        ],
+        "watch_out": "Lloyd George was not purely lenient—he secured German colonies and warships for Britain while opposing French plans to shatter German industry.",
+        "prose_hash": "47b29ceb8f",
+        "prose_fp": "95b626fb",
+        "question_hash": "09bc845362"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "War guilt and debt",
+            "bullet": "Article 231 forced sole moral war blame onto Germany → legally justified £6.6 billion reparations"
+          },
+          {
+            "hint": "Land and empire loss",
+            "bullet": "Germany lost all colonies, 13% of European land, and Rhineland troops → weakened frontier defences"
+          },
+          {
+            "hint": "Disarmament and Diktat",
+            "bullet": "Capping the army at 100,000 without talks → enraged Germans across parties as a forced Diktat"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shared 1914 origins",
+            "bullet": "Multiple alliances and empires escalated the July 1914 crisis → made sole German blame feel unjust"
+          },
+          {
+            "hint": "Weimar Republic taint",
+            "bullet": "Democratic Weimar leaders had to sign after the Kaiser fled → extremists branded democrats November Criminals"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MORAL AND FINANCIAL BLAME",
+            "stem": "Forced by the ____________ clause to accept sole blame, Germany faced a crippling ____________ reparations bill..."
+          },
+          {
+            "badge": "TERRITORIAL AND ARMS CUTS",
+            "stem": "Stripped of 13% of European territory and restricted to ____________ soldiers with zero aircraft, Germany felt..."
+          },
+          {
+            "badge": "IMPOSED SETTLEMENT",
+            "stem": "Barred from negotiating at Paris, German citizens across every party condemned the non-negotiable treaty as a ____________..."
+          }
+        ],
+        "watch_out": "Germans expected a negotiated peace based on Wilson’s Fourteen Points—being excluded from talks made them brand Versailles a dictated peace, or Diktat.",
+        "prose_hash": "030c61f011",
+        "prose_fp": "91a9979d",
+        "question_hash": "c58d3ae63b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Keynes resigns in protest",
+            "bullet": "Economist John Maynard Keynes resigned → warned a Carthaginian peace would crush European trade and livelihoods"
+          },
+          {
+            "hint": "Breeding political extremism",
+            "bullet": "Keynes predicted starving German workers and economic ruin → would fuel violent extremism in Central Europe"
+          },
+          {
+            "hint": "Prophetic cartoon child",
+            "bullet": "Will Dyson’s 1919 cartoon showed a weeping 1940 Class child → foresaw future conscripts fighting again"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Hyperinflation and Depression",
+            "bullet": "Subsequent 1923 Ruhr crisis and 1929 Great Depression → deepened German economic anger toward Versailles"
+          },
+          {
+            "hint": "Undermining Allied resolve",
+            "bullet": "Keynes’s influential critique convinced many British leaders Versailles was unfair → encouraged 1930s appeasement"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ECONOMIC WARNING",
+            "stem": "Resigning from the British delegation, economist ____________ condemned Versailles as a destructive ____________ peace that would..."
+          },
+          {
+            "badge": "POLITICAL DANGER",
+            "stem": "Impoverishing German workers and wrecking European trade risked driving desperate voters toward ____________ across..."
+          },
+          {
+            "badge": "PROPHETIC CARTOON",
+            "stem": "Sketching a weeping child labelled ____________ outside Versailles, the cartoonist predicted another conflict within..."
+          }
+        ],
+        "watch_out": "Will Dyson drew his 1940 Class cartoon in May 1919—predicting the exact generation of toddlers who would fight World War II twenty years later.",
+        "prose_hash": "3223c65478",
+        "prose_fp": "e93b878a",
+        "question_hash": "c195a54619"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Traditional harshness view",
+            "bullet": "Traditional historians argue harsh terms humiliated Weimar democracy → handed Hitler grievances during the Great Depression"
+          },
+          {
+            "hint": "Intact German strength",
+            "bullet": "Modern scholars note Germany kept Europe’s largest population and core industry → remained potentially dominant"
+          },
+          {
+            "hint": "Failed 1930s enforcement",
+            "bullet": "Versailles failed once Britain and France lost willpower in the 1930s → left Nazi rearmament unchecked"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Between two stools",
+            "bullet": "Versailles fell between two stools → too harsh to reconcile Germany, too mild to cripple it"
+          },
+          {
+            "hint": "1920s Weimar recovery",
+            "bullet": "Weimar Germany stabilised briefly in the mid-1920s → showed war was not inevitable before 1929 crashed"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TRADITIONAL VERDICT",
+            "stem": "Traditional interpretations blame punitive Versailles clauses for poisoning ____________ and fuelling Nazi support during the..."
+          },
+          {
+            "badge": "MODERN COUNTER-VIEW",
+            "stem": "Modern historians counter that Germany retained its core ____________ and Europe’s largest ____________, leaving its..."
+          },
+          {
+            "badge": "ENFORCEMENT FAILURE",
+            "stem": "Crucially, peace collapsed in the 1930s when Britain and France failed to stop illegal German ____________..."
+          }
+        ],
+        "watch_out": "World War II was not made inevitable in 1919 alone—the Great Depression and Allied failure to enforce treaty limits in the 1930s were decisive.",
+        "prose_hash": "fe261e35b6",
+        "prose_fp": "90e68c68",
+        "question_hash": "a78109de92"
+      }
+    ]
+  }
+}

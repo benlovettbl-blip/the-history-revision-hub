@@ -1,0 +1,1140 @@
+{
+  "unit_id": "first_british_empire",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Merchant syndicate",
+            "bullet": "218 London merchants pooled £68,000 → funded armed galleons without draining royal taxes"
+          },
+          {
+            "hint": "Outward cargo",
+            "bullet": "Ships carried silver bullion and English broadcloth → opened direct trade with Asian spice markets"
+          },
+          {
+            "hint": "Lancaster's voyage",
+            "bullet": "James Lancaster returned with pepper and cotton → delivered over 300% profit for investors"
+          }
+        ],
+        "context": [
+          {
+            "hint": "European rivals",
+            "bullet": "Portuguese and Dutch spice fleets dominated Asia → England risked exclusion from eastern wealth"
+          },
+          {
+            "hint": "Tudor finances",
+            "bullet": "Costly war with Catholic Spain strained royal funds → Elizabeth favoured private joint-stock ventures"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PRIVATE CAPITAL",
+            "stem": "On New Year's Eve 1600, Elizabeth I granted a monopoly charter to ____________ who pooled ____________ to fund eastern voyages."
+          },
+          {
+            "badge": "LUCRATIVE CARGO",
+            "stem": "Trading silver bullion and broadcloth for ____________ allowed ____________ to generate profits exceeding ____________."
+          },
+          {
+            "badge": "RIVAL EMPIRES",
+            "stem": "Granting exclusive trading rights helped England challenge ____________ without spending scarce ____________."
+          }
+        ],
+        "watch_out": "The East India Company began in 1600 as a private joint-stock trading syndicate, not a department of the British government or an army of conquest.",
+        "prose_hash": "d312e02ab7",
+        "prose_fp": "52ed8a74",
+        "question_hash": "1f200dca3a"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Mughal diplomacy",
+            "bullet": "Ambassador Sir Thomas Roe negotiated with Emperor Jahangir → won an imperial decree for Surat"
+          },
+          {
+            "hint": "Coastal enclaves",
+            "bullet": "Fortified trading warehouses called factories rose at Surat, Madras, Calcutta, and Bombay"
+          },
+          {
+            "hint": "Sepoy garrisons",
+            "bullet": "Company merchants recruited armed Indian infantry called sepoys → turned depots into corporate fortresses"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mughal superpower",
+            "bullet": "Mughal India produced a quarter of world goods → English traders arrived as humble petitioners"
+          },
+          {
+            "hint": "Maritime threats",
+            "bullet": "Armed Dutch and Portuguese rivals patrolled Indian seas → Company depots needed heavy coastal defences"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPERIAL PERMISSION",
+            "stem": "Sent by King James I in 1615, diplomat ____________ persuaded Mughal Emperor ____________ to permit English trade at ____________."
+          },
+          {
+            "badge": "COASTAL NETWORK",
+            "stem": "Throughout the seventeenth century, fortified warehouses known as ____________ expanded across key ports including ____________."
+          },
+          {
+            "badge": "CORPORATE GARRISONS",
+            "stem": "Recruiting local Indian soldiers called ____________ transformed commercial depots into ____________."
+          }
+        ],
+        "watch_out": "Seventeenth-century Company factories were fortified coastal warehouses run by merchant agents called factors, not industrial steam mills with machinery.",
+        "prose_hash": "2eb2b0c312",
+        "prose_fp": "1c242443",
+        "question_hash": "1ee0b824d7"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Illegal defences",
+            "bullet": "Company merchants mounted heavy cannons on Fort William without permission → defied Bengal's ruler"
+          },
+          {
+            "hint": "Enforcing sovereignty",
+            "bullet": "Nawab Siraj ud-Daulah marched 50,000 troops on Calcutta → captured Fort William inside three days"
+          },
+          {
+            "hint": "Imperial propaganda",
+            "bullet": "British writers sensationalized suffocation deaths in the Black Hole guardroom → fuelled calls for conquest"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mughal fragmentation",
+            "bullet": "Central Mughal authority weakened after 1707 → regional Nawabs guarded Bengal's rich textile revenues"
+          },
+          {
+            "hint": "Anglo-French rivalry",
+            "bullet": "Warring British and French traders fortified Indian ports → alarmed Siraj over foreign military meddling"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "UNAUTHORIZED CANNONS",
+            "stem": "Defying local authority, British merchants mounted ____________ around ____________ without the Nawab's consent."
+          },
+          {
+            "badge": "SWIFT SIEGE",
+            "stem": "To assert his sovereignty over Bengal, ____________ marched ____________ against Calcutta and seized the fort."
+          },
+          {
+            "badge": "SENSATIONALIZED TRAGEDY",
+            "stem": "Overnight deaths inside the ____________ guardroom were exaggerated in Britain to justify ____________."
+          }
+        ],
+        "watch_out": "Siraj ud-Daulah did not attack Calcutta unprovoked—he marched to stop a foreign trading company illegally mounting heavy artillery inside his sovereign province.",
+        "prose_hash": "06f0b53c63",
+        "prose_fp": "bcb9bf53",
+        "question_hash": "6bac79b1b6"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Secret conspiracy",
+            "bullet": "Outnumbered Robert Clive bribed Bengali commander Mir Jafar with gold and the Nawab's throne"
+          },
+          {
+            "hint": "Monsoon downpour",
+            "bullet": "Tarpaulins kept British gunpowder dry during monsoon rain → drenched Siraj's exposed cannon powder"
+          },
+          {
+            "hint": "Battlefield treason",
+            "bullet": "Mir Jafar's divisions stood motionless on 23 June → British artillery shattered Siraj's loyal troops"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Bengali bankers",
+            "bullet": "Wealthy Jagat Seth bankers resented Siraj's taxes → financed Clive's plot to install a puppet ruler"
+          },
+          {
+            "hint": "Sepoy firepower",
+            "bullet": "Trained coastal sepoy battalions backed Clive's redcoats → turned corporate guards into a field army"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SECRET BRIBERY",
+            "stem": "Outnumbered on campaign, Robert Clive secretly promised ____________ the Nawab's throne in exchange for ____________."
+          },
+          {
+            "badge": "MONSOON ADVANTAGE",
+            "stem": "During the June downpour, British crews covered their gunpowder with ____________ while Siraj's cannons ____________."
+          },
+          {
+            "badge": "DECISIVE TREASON",
+            "stem": "Because traitorous divisions stood ____________ during battle, Company artillery shattered ____________ and installed a puppet Nawab."
+          }
+        ],
+        "watch_out": "Plassey was won primarily through political conspiracy, Indian banker backing, and Mir Jafar's treason rather than superior British military numbers.",
+        "prose_hash": "95830a13fc",
+        "prose_fp": "7b4eaf4c",
+        "question_hash": "8d0ebc20ef"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Allahabad treaty",
+            "bullet": "Defeated Emperor Shah Alam II signed the 1765 Treaty of Allahabad after losing at Buxar"
+          },
+          {
+            "hint": "Diwani revenue",
+            "bullet": "Winning the Diwani gave Company clerks sovereign tax control across Bengal, Bihar, and Orissa"
+          },
+          {
+            "hint": "Famine extraction",
+            "bullet": "Relentless peasant tax collection during drought → triggered the 1770 famine, starving ten million people"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Bullion reversal",
+            "bullet": "Bengal land taxes now paid for Indian goods → ended Britain's need to ship silver"
+          },
+          {
+            "hint": "Parliamentary alarm",
+            "bullet": "Famine horrors and corrupt Company nabobs shocked London → sparked later Tea Act bailouts"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SOVEREIGN REVENUE",
+            "stem": "Following victory at Buxar, Emperor ____________ surrendered the ____________ across Bengal, Bihar, and Orissa."
+          },
+          {
+            "badge": "CORPORATE EXTRACTION",
+            "stem": "Instead of trading silver for goods, Company agents extracted ____________ directly from ____________."
+          },
+          {
+            "badge": "CATASTROPHIC FAMINE",
+            "stem": "Unbending tax collection during severe drought caused the ____________, starving an estimated ____________ while profits rose."
+          }
+        ],
+        "watch_out": "The 1770 Bengal famine was not merely a natural drought—relentless East India Company tax extraction stripped villages of grain reserves needed to survive.",
+        "prose_hash": "88ef574995",
+        "prose_fp": "3ed4fc14",
+        "question_hash": "3a4832025e"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Outward leg",
+            "bullet": "Liverpool and Bristol ships carried guns, iron, and cloth → traded in West Africa for captives"
+          },
+          {
+            "hint": "Atlantic crossing",
+            "bullet": "Captains forced kidnapped Africans across the Atlantic → sold survivors onto brutal colonial plantations"
+          },
+          {
+            "hint": "Homeward cargo",
+            "bullet": "Vessels returned carrying slave-grown sugar, rum, tobacco, and cotton → enriched British banks and ports"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Consumer appetite",
+            "bullet": "Soaring European demand for sweetened tea and coffee → drove ruthless Caribbean plantation expansion"
+          },
+          {
+            "hint": "Industrial workshops",
+            "bullet": "Birmingham gunsmiths and Lancashire weavers supplied trade goods → tied domestic industry to slavery"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OUTWARD CARGO",
+            "stem": "Departing from ports such as ____________, merchant ships traded manufactured ____________ along the West African coast."
+          },
+          {
+            "badge": "ENSLAVED LABOUR",
+            "stem": "Captive Africans were transported across the Atlantic and sold into ____________ across the Americas."
+          },
+          {
+            "badge": "IMPERIAL WEALTH",
+            "stem": "Returning holds filled with ____________ generated vast fortunes for ____________ across Britain."
+          }
+        ],
+        "watch_out": "Triangular trade was not a distant colonial sideline—profits from enslaved labour directly financed British banks, factories, and port cities like Liverpool and Bristol.",
+        "prose_hash": "d19061fb7a",
+        "prose_fp": "6f83c2db",
+        "question_hash": "5ed99ab467"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Stuart charter",
+            "bullet": "Charles II and James, Duke of York chartered the Royal African Company monopoly in 1672"
+          },
+          {
+            "hint": "Coastal barracoons",
+            "bullet": "Armed West African forts imprisoned captives branded RAC with hot irons → enforced corporate ownership"
+          },
+          {
+            "hint": "Spanish contract",
+            "bullet": "Winning the 1713 Spanish Asiento treaty → made Britain the leading supplier to Spanish America"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Free-trade expansion",
+            "bullet": "Parliament ended the company monopoly in 1698 → private Bristol and Liverpool slavers surged"
+          },
+          {
+            "hint": "European war",
+            "bullet": "Victory in the War of the Spanish Succession → handed Britain lucrative Atlantic trade concessions"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ROYAL PATRONAGE",
+            "stem": "Backed directly by King ____________ and the Duke of York, the ____________ held a royal monopoly from 1672."
+          },
+          {
+            "badge": "COASTAL FORTS",
+            "stem": "Inside armed West African forts, agents branded captives with the letters ____________ to mark ____________."
+          },
+          {
+            "badge": "SPANISH MONOPOLY",
+            "stem": "Securing the ____________ contract in 1713 gave British merchants exclusive rights to supply ____________."
+          }
+        ],
+        "watch_out": "Transatlantic slave trading was not carried out solely by rogue pirates—the Stuart royal family personally led and profited from the Royal African Company.",
+        "prose_hash": "85d0fcc9ce",
+        "prose_fp": "5f1f6da1",
+        "question_hash": "196f983057"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Tight packing",
+            "bullet": "Hundreds were chained onto cramped wooden shelves → allowed less space than a coffin"
+          },
+          {
+            "hint": "Disease below",
+            "bullet": "Suffocating, filthy holds spread seasickness, fevers, and dysentery across the eight-week voyage"
+          },
+          {
+            "hint": "Mortality toll",
+            "bullet": "Roughly one in six captives perished at sea → crews threw dead bodies overboard"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shipboard rebellions",
+            "bullet": "Captains feared African uprisings at sea → enforced iron shackles, nets, and brutal deck punishments"
+          },
+          {
+            "hint": "Regulated crowding",
+            "bullet": "Even after Dolben's 1788 ship regulation, the Brookes still legally crammed over 450 captives aboard"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CRAMPED HOLDS",
+            "stem": "Throughout the eight-week crossing, captives lay locked in ____________ upon wooden shelves with less space than ____________."
+          },
+          {
+            "badge": "LETHAL ILLNESS",
+            "stem": "Pitch-black, airless decks bred rampant ____________ and ____________ among chained prisoners."
+          },
+          {
+            "badge": "HUMAN COST",
+            "stem": "Brutal overcrowding meant roughly ____________ died during the voyage before reaching the Americas."
+          }
+        ],
+        "watch_out": "Enslaved Africans did not remain passive during the Middle Passage—crews used heavy iron shackles and deck barricades precisely because shipboard revolts were frequent.",
+        "prose_hash": "41850172d6",
+        "prose_fp": "d6a98f46",
+        "question_hash": "1d5ec65dc3"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Navigation blunder",
+            "bullet": "Navigational errors left the Zong short of water → sickness spread rapidly through packed holds"
+          },
+          {
+            "hint": "Insurance fraud",
+            "bullet": "Collingwood drowned 133 sick captives over three days → owners claimed maritime cargo insurance"
+          },
+          {
+            "hint": "Public exposure",
+            "bullet": "Abolitionist Granville Sharp publicized the courtroom scandal → exposed chattel slavery's legal inhumanity"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Maritime law",
+            "bullet": "Insurers paid nothing for natural deaths → perverse legal rules rewarded throwing sick captives overboard"
+          },
+          {
+            "hint": "African informant",
+            "bullet": "Olaudah Equiano alerted Granville Sharp to the Liverpool insurance trial → sparked abolitionist outrage"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WATER SHORTAGE",
+            "stem": "After navigational errors caused a severe ____________, sick captives aboard the Zong threatened ____________."
+          },
+          {
+            "badge": "CARGO INSURANCE",
+            "stem": "Captain Collingwood ordered ____________ drowned so Liverpool owners could claim ____________ for jettisoned cargo."
+          },
+          {
+            "badge": "COURTROOM OUTRAGE",
+            "stem": "Campaigner ____________ exposed the massacre in court, proving English law treated human beings as ____________."
+          }
+        ],
+        "watch_out": "No crew member of the Zong was ever prosecuted for murder—the 1783 London court case was strictly a civil dispute between slave-ship owners and insurance underwriters.",
+        "prose_hash": "78d01bd78a",
+        "prose_fp": "56a9bc40",
+        "question_hash": "6b71dbd4ed"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Visual evidence",
+            "bullet": "Mass-printed Brookes ship diagrams showed bodies stowed like timber → shocked British readers visually"
+          },
+          {
+            "hint": "Eyewitness testimony",
+            "bullet": "Freed author Olaudah Equiano published his bestselling 1789 autobiography → gave first-hand African testimony"
+          },
+          {
+            "hint": "Parliamentary victory",
+            "bullet": "Nationwide petitions and sugar boycotts pressured MPs → Parliament passed the 1807 Abolition Act"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Caribbean rebellions",
+            "bullet": "Haitian and Jamaican slave revolts raised military costs → weakened planter resistance in Parliament"
+          },
+          {
+            "hint": "Incomplete freedom",
+            "bullet": "Outlawing slave ships in 1807 left Caribbean plantation slavery legal until final abolition in 1833"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VISUAL CAMPAIGN",
+            "stem": "Mass-produced prints of the ____________ revealed how human beings were packed like ____________ below deck."
+          },
+          {
+            "badge": "AFRICAN VOICE",
+            "stem": "Through his bestselling autobiography, ____________ shattered pro-slavery myths with first-hand testimony of ____________."
+          },
+          {
+            "badge": "LEGISLATIVE CHANGE",
+            "stem": "Sustained public pressure finally forced Parliament to pass the ____________, banning ____________ on British ships."
+          }
+        ],
+        "watch_out": "The 1807 Abolition Act banned the transatlantic slave trade on British ships, but it did not free people already enslaved on Caribbean plantations until 1833.",
+        "prose_hash": "e583e1df57",
+        "prose_fp": "3ea508a6",
+        "question_hash": "9614c5ed31"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Western Design",
+            "bullet": "Oliver Cromwell's 1655 fleet invaded Spanish Jamaica → shattered colonial control across the island"
+          },
+          {
+            "hint": "Wartime flight",
+            "bullet": "Enslaved Africans seized wartime chaos to escape → retreated into steep Blue Mountain rainforests"
+          },
+          {
+            "hint": "Autonomous towns",
+            "bullet": "Self-liberated Maroons grew communal crops and drilled fighters → defended independent mountain strongholds"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Failed Hispaniola",
+            "bullet": "Repelled from Spanish Hispaniola first, Cromwell's commanders seized lightly defended Jamaica as consolation"
+          },
+          {
+            "hint": "Sugar boom",
+            "bullet": "Jamaica soon overtook Barbados as Britain's richest sugar colony → intensified clashes with free Maroons"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPERIAL INVASION",
+            "stem": "During Oliver Cromwell's 1655 ____________ campaign, English forces captured ____________ from Spain."
+          },
+          {
+            "badge": "MOUNTAIN ESCAPE",
+            "stem": "Amid the chaos of conquest, formerly enslaved Africans fled into the ____________ to establish ____________."
+          },
+          {
+            "badge": "SELF-RULE",
+            "stem": "Known as ____________, these free communities sustained themselves by farming ____________ and training militia units."
+          }
+        ],
+        "watch_out": "Jamaican Maroons did not wait to be granted freedom by Europeans—they liberated themselves during the 1655 invasion and defended sovereign towns for over eighty years.",
+        "prose_hash": "d919c12046",
+        "prose_fp": "7b27efb1",
+        "question_hash": "636d2c125f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Gang labour",
+            "bullet": "Field gangs cut cane from dawn until dusk in tropical heat under overseers' whips"
+          },
+          {
+            "hint": "Factory hazards",
+            "bullet": "Exhausted mill workers laboured eighteen-hour harvest shifts → risked limbs in iron crushing rollers"
+          },
+          {
+            "hint": "Lethal replacement",
+            "bullet": "Relentless overwork and violence caused soaring deaths → absentee planters imported fresh captives yearly"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Boiling houses",
+            "bullet": "Spoiling cut cane needed immediate crushing and boiling → imposed factory-style schedules before industrialisation"
+          },
+          {
+            "hint": "Absentee wealth",
+            "bullet": "Rich planters lived in grand British country houses → left ruthless Jamaican overseers chasing output"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FIELD GANGS",
+            "stem": "Driven by overseers' cowhide whips, enslaved field gangs toiled in ____________ from ____________."
+          },
+          {
+            "badge": "MILL DANGERS",
+            "stem": "Eighteen-hour harvest shifts inside sugar mills exposed exhausted workers to ____________."
+          },
+          {
+            "badge": "ABSENTEE GREED",
+            "stem": "Because extreme exhaustion caused ____________, wealthy absentee planters continually imported ____________ via the Middle Passage."
+          }
+        ],
+        "watch_out": "Sugar plantations were not simple farms—they operated like deadly agro-industrial factories where fast cane processing combined heavy field labour with dangerous mill machinery.",
+        "prose_hash": "4421a0837d",
+        "prose_fp": "d5676ea0",
+        "question_hash": "5c30ad75f9"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Workplace sabotage",
+            "bullet": "Workers snapped tool handles, damaged copper boiling cauldrons, slowed pace, and feigned sudden illness"
+          },
+          {
+            "hint": "African heritage",
+            "bullet": "Communities preserved West African spiritual practices, herbal healing, and hopeful music inside slave quarters"
+          },
+          {
+            "hint": "Trickster folklore",
+            "bullet": "Elders told nightly Anansi spider stories → celebrated outwitting powerful oppressors through sharp intelligence"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Brutal slave codes",
+            "bullet": "Jamaican slave laws punished open rebellion with torture → made covert daily sabotage vital"
+          },
+          {
+            "hint": "Akan roots",
+            "bullet": "Many captives came from Gold Coast Akan societies → carried Anansi folklore into Caribbean culture"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COVERT SABOTAGE",
+            "stem": "To disrupt planter profits without triggering execution, field hands deliberately ____________ and damaged ____________."
+          },
+          {
+            "badge": "CULTURAL SURVIVAL",
+            "stem": "Inside the quarters at night, enslaved families defended their humanity through West African ____________ and ____________."
+          },
+          {
+            "badge": "FOLKLORE MEANING",
+            "stem": "Recounting ____________ tales inspired resilience by showing how a small creature outsmarted ____________."
+          }
+        ],
+        "watch_out": "Resistance was not limited to armed uprisings—covert workplace sabotage and preserving West African culture were vital daily weapons against dehumanisation.",
+        "prose_hash": "166b831ad9",
+        "prose_fp": "a9862fe5",
+        "question_hash": "a4201e5646"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Asante leadership",
+            "bullet": "Asante leader Queen Nanny united eastern Windward Maroons through disciplined command and spiritual authority"
+          },
+          {
+            "hint": "Foliage camouflage",
+            "bullet": "Fighters disguised themselves in living forest branches → ambushed marching redcoats along narrow mountain trails"
+          },
+          {
+            "hint": "Mountain signals",
+            "bullet": "Signallers blew cow-horn abeng calls across misty ridges → coordinated rapid guerrilla strikes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Conventional weakness",
+            "bullet": "Scarlet coats and heavy muskets slowed British troops → exposed columns to jungle ambushes"
+          },
+          {
+            "hint": "Plantation raids",
+            "bullet": "Maroon raids freed captives and seized weapons → halted British sugar expansion across eastern Jamaica"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FOREST CAMOUFLAGE",
+            "stem": "In eastern Jamaica, Asante strategist ____________ trained Windward fighters to blend into ____________ using living branches."
+          },
+          {
+            "badge": "MOUNTAIN SIGNALS",
+            "stem": "Sounding the ____________ across steep ridges allowed Maroon lookouts to coordinate ____________ miles apart."
+          },
+          {
+            "badge": "GUERRILLA ADVANTAGE",
+            "stem": "Hit-and-run ambushes in dense rainforest repeatedly routed ____________ trained only for open European battlefields."
+          }
+        ],
+        "watch_out": "Queen Nanny was a real historical Asante leader documented in colonial Jamaican dispatches, even though British officials tried to dismiss her authority as witchcraft.",
+        "prose_hash": "2458fa7673",
+        "prose_fp": "b72d6d1b",
+        "question_hash": "a0990b92be"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "British exhaustion",
+            "bullet": "Costly jungle defeats forced Governor Edward Trelawny to seek a white-flag truce in 1739"
+          },
+          {
+            "hint": "Sovereign territory",
+            "bullet": "Treaty terms recognized Maroon freedom and granted 1,500 sovereign acres of mountain land"
+          },
+          {
+            "hint": "Fugitive clause",
+            "bullet": "Maroon leaders agreed to return future plantation runaways → protected autonomy through painful compromise"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dual treaties",
+            "bullet": "Cudjoe signed for Leeward Maroons in 1739 before Windward towns accepted similar terms in 1740"
+          },
+          {
+            "hint": "Planter security",
+            "bullet": "Closing mountain refuge routes stabilized Jamaican sugar estates → deepened divisions between Maroons and captives"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HARD-WON VICTORY",
+            "stem": "Exhausted by decades of guerrilla defeats, Governor ____________ formally recognized Maroon freedom and ____________."
+          },
+          {
+            "badge": "PAINFUL COMPROMISE",
+            "stem": "Yet the treaty carried a tragic price because Maroon leaders promised to ____________."
+          },
+          {
+            "badge": "IMPERIAL SIGNIFICANCE",
+            "stem": "Winning a signed peace proved that organized African resistance could force ____________ to negotiate."
+          }
+        ],
+        "watch_out": "The 1739 treaty secured real freedom for existing Maroon communities, yet it deliberately stabilized plantation slavery by cutting off mountain sanctuary for new runaways.",
+        "prose_hash": "ae1911c46a",
+        "prose_fp": "0924c100",
+        "question_hash": "a1163a82fb"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Wartime debt",
+            "bullet": "Seven Years' War victory left Britain £133m in debt → London sought cheaper frontier defence"
+          },
+          {
+            "hint": "Appalachian boundary",
+            "bullet": "George III's 1763 Proclamation banned settlement west of the Appalachians → angered land-hungry colonists"
+          },
+          {
+            "hint": "Quartering troops",
+            "bullet": "Quartering Acts forced colonial towns to house 10,000 redcoats → fuelled fears of military control"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pontiac's War",
+            "bullet": "Indigenous alliances led by Pontiac attacked western forts in 1763 → prompted London's boundary line"
+          },
+          {
+            "hint": "French expulsion",
+            "bullet": "Expelling France from Canada removed a shared enemy → colonists needed British protection far less"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPERIAL DEBT",
+            "stem": "Burdened by a ____________ war debt after 1763, King George III sought to avoid costly frontier clashes with ____________."
+          },
+          {
+            "badge": "BLOCKED EXPANSION",
+            "stem": "Drawing the Proclamation Line along the ____________ outraged settlers who expected access to ____________."
+          },
+          {
+            "badge": "PEACETIME GARRISONS",
+            "stem": "Resentment deepened when the ____________ forced colonial towns to house ____________ in peacetime."
+          }
+        ],
+        "watch_out": "Winning the Seven Years' War ironically weakened Britain's hold on America—removing French Canada made colonists less reliant on British troops just as London demanded higher taxes.",
+        "prose_hash": "64f946f1a6",
+        "prose_fp": "a51bb8b1",
+        "question_hash": "2bc2df84f5"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Constitutional principle",
+            "bullet": "Colonists elected zero Westminster MPs → argued Stamp Act taxes violated freeborn English rights"
+          },
+          {
+            "hint": "Street intimidation",
+            "bullet": "Sons of Liberty burned tax offices and hung effigies → forced royal stamp collectors to resign"
+          },
+          {
+            "hint": "Economic leverage",
+            "bullet": "Coordinated boycotts crippled British manufacturing exports → pressured Parliament into repealing the tax in 1766"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Direct internal tax",
+            "bullet": "Unlike earlier port customs duties, stamps taxed everyday colonial newspapers, wills, and playing cards"
+          },
+          {
+            "hint": "Declaratory Act",
+            "bullet": "Parliament repealed the Stamp Act in 1766 yet asserted full power to legislate over colonies"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "POLITICAL RIGHTS",
+            "stem": "Taxing everyday items such as ____________ provoked fury because colonists held no seats in ____________."
+          },
+          {
+            "badge": "STREET PROTEST",
+            "stem": "Radical groups called the ____________ intimidated officials while merchants organized ____________ across colonial ports."
+          },
+          {
+            "badge": "PARLIAMENTARY RETREAT",
+            "stem": "Slumping British trade hurt London merchants so badly that MPs voted to ____________ in 1766."
+          }
+        ],
+        "watch_out": "Colonists did not protest merely because stamps were expensive—they feared accepting any internal tax passed without elected colonial representatives would destroy self-government.",
+        "prose_hash": "87d122070b",
+        "prose_fp": "0ca233d6",
+        "question_hash": "404c1a2165"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Chaotic confrontation",
+            "bullet": "Panicked redcoats pelted with ice and oyster shells fired into a crowd, killing five"
+          },
+          {
+            "hint": "Visual distortion",
+            "bullet": "Paul Revere's print showed an officer ordering deliberate volleys into peaceful citizens → hid crowd disorder"
+          },
+          {
+            "hint": "Colonial unity",
+            "bullet": "Mass-printed engravings turned Crispus Attucks and four others into martyrs → inflamed anti-British fury"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Townshend duties",
+            "bullet": "Four thousand redcoats occupied Boston to enforce customs duties → sparked daily street clashes"
+          },
+          {
+            "hint": "Courtroom defence",
+            "bullet": "Future Patriot John Adams defended the accused soldiers in court → most won acquittal"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KING STREET CLASH",
+            "stem": "What began on 5 March 1770 with crowds throwing ____________ ended when panicked soldiers killed ____________, including Crispus Attucks."
+          },
+          {
+            "badge": "VISUAL PROPAGANDA",
+            "stem": "Silversmith ____________ circulated a dramatic engraving depicting redcoats firing an ordered volley into ____________."
+          },
+          {
+            "badge": "RADICAL IMPACT",
+            "stem": "Framing the chaotic shooting as a premeditated ____________ united colonists against ____________."
+          }
+        ],
+        "watch_out": "Paul Revere's famous print is propaganda rather than an accurate eyewitness record—it erased the snowballs, clubs, and confusion to portray an ordered execution.",
+        "prose_hash": "bb95fa5c14",
+        "prose_fp": "d8abfdb0",
+        "question_hash": "cc395d8688"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Corporate bailout",
+            "bullet": "Parliament let the struggling East India Company ship 18m pounds of surplus tea direct"
+          },
+          {
+            "hint": "Merchant squeeze",
+            "bullet": "Direct corporate sales undercut smuggled Dutch tea and cut out independent colonial merchants"
+          },
+          {
+            "hint": "Taxation trap",
+            "bullet": "Buying cheaper Company tea still paid Townshend tea duty → conceded Parliament's right to tax"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Bengal crisis",
+            "bullet": "Famine in Bengal crashed East India Company revenues → connected Indian plunder to Boston protests"
+          },
+          {
+            "hint": "Monopoly fears",
+            "bullet": "Colonial traders feared Parliament might next hand corporate monopolies over all American commerce"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COMPANY BAILOUT",
+            "stem": "Designed to rescue the ____________ from 18 million pounds of unsold stock, the 1773 Act granted a ____________."
+          },
+          {
+            "badge": "LOCAL MERCHANTS",
+            "stem": "Even though tea prices fell, shipping direct to chosen agents bypassed ____________ across American ports."
+          },
+          {
+            "badge": "CONSTITUTIONAL TRAP",
+            "stem": "Purchasing the discounted cargo meant silently accepting ____________ without colonial consent."
+          }
+        ],
+        "watch_out": "The 1773 Tea Act actually made legal tea cheaper for Americans, not dearer—colonists rebelled against corporate monopoly and the hidden Parliamentary tax principle.",
+        "prose_hash": "0fe441c9f5",
+        "prose_fp": "9650efca",
+        "question_hash": "65799814d5"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Harbour raid",
+            "bullet": "Disguised Sons of Liberty dumped 342 chests worth £10,000 into Boston harbour on 16 December"
+          },
+          {
+            "hint": "Economic blockade",
+            "bullet": "Parliament's 1774 Coercive Acts closed Boston port until colonists repaid the East India Company"
+          },
+          {
+            "hint": "Suspended self-rule",
+            "bullet": "Crown law stripped Massachusetts of elected self-government → drove all thirteen colonies toward revolution"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Continental solidarity",
+            "bullet": "Rather than isolating Boston, harsh punishment prompted twelve colonies to convene the First Continental Congress"
+          },
+          {
+            "hint": "Military governor",
+            "bullet": "General Thomas Gage took command of Massachusetts → replaced civilian politics with martial confrontation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DESTROYED CARGO",
+            "stem": "Furious after disguised protesters destroyed ____________ worth of Company cargo, King George III demanded harsh retaliation."
+          },
+          {
+            "badge": "PUNITIVE LAWS",
+            "stem": "Through the 1774 ____________, Parliament blockaded ____________ and abolished Massachusetts self-government."
+          },
+          {
+            "badge": "BACKFIRED STRATEGY",
+            "stem": "Instead of intimidating New England into submission, collective punishment united ____________ toward armed resistance."
+          }
+        ],
+        "watch_out": "London intended the 1774 Coercive Acts—called the Intolerable Acts in America—to isolate radical Massachusetts, yet the crackdown rallied the other twelve colonies behind Boston.",
+        "prose_hash": "e8a4a42f8c",
+        "prose_fp": "cbdbd497",
+        "question_hash": "6aadf616c2"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Concord munitions",
+            "bullet": "Redcoats marched to seize Concord weapon stores → triggered deadly militia gunfire at Lexington Green"
+          },
+          {
+            "hint": "Dunmore's emancipation",
+            "bullet": "Governor Dunmore promised freedom to enslaved people fleeing rebel masters to fight for George III"
+          },
+          {
+            "hint": "Southern escalation",
+            "bullet": "Thousands of Black volunteers joined British lines → pushed southern slaveholders firmly into rebellion"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ethiopian Regiment",
+            "bullet": "Dunmore's Black soldiers wore sashes reading Liberty to Slaves → fought for self-emancipation, not empire"
+          },
+          {
+            "hint": "Selective freedom",
+            "bullet": "Dunmore freed only runaways from Patriot rebels → enslaved workers owned by Loyalists stayed chained"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OPEN WARFARE",
+            "stem": "When British soldiers marched toward ____________ to seize weapons in April 1775, bloodshed erupted at ____________."
+          },
+          {
+            "badge": "PROMISE OF FREEDOM",
+            "stem": "Later that year, Virginia's royal governor issued ____________, offering liberty to enslaved people who fled ____________."
+          },
+          {
+            "badge": "WIDENING CONFLICT",
+            "stem": "Seeing thousands of Black workers join Crown forces drove furious ____________ into full rebellion."
+          }
+        ],
+        "watch_out": "Lord Dunmore was not a moral abolitionist—his 1775 proclamation was a military tactic aimed only at rebel slaveholders while keeping Loyalist-owned captives enslaved.",
+        "prose_hash": "853779a52c",
+        "prose_fp": "69d65b81",
+        "question_hash": "15c6f7f776"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Universal ideals",
+            "bullet": "Thomas Jefferson's 1776 Declaration proclaimed all men equal with natural rights to life and liberty"
+          },
+          {
+            "hint": "Slaveholding founders",
+            "bullet": "Forty-one of fifty-six Philadelphia signatories personally enslaved human beings, including Jefferson himself"
+          },
+          {
+            "hint": "Denied liberty",
+            "bullet": "Half a million African Americans remained legally enslaved → exposed a stark contradiction at birth"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Enlightenment roots",
+            "bullet": "Jefferson drew on John Locke's natural rights philosophy while protecting Virginia's tobacco slave economy"
+          },
+          {
+            "hint": "Freedom petitions",
+            "bullet": "Enslaved Africans such as Phillis Wheatley and Massachusetts petitioners immediately used 1776 language against slavery"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NATURAL RIGHTS",
+            "stem": "Meeting in Philadelphia in July 1776, ____________ drafted a declaration claiming ____________ possessed rights to life and liberty."
+          },
+          {
+            "badge": "FOUNDING HYPOCRISY",
+            "stem": "Yet these words concealed a deep contradiction because ____________ of the fifty-six signatories personally ____________."
+          },
+          {
+            "badge": "EXCLUDED MILLIONS",
+            "stem": "Across the thirteen colonies, roughly ____________ remained in chattel bondage without legal freedom."
+          }
+        ],
+        "watch_out": "Do not assume people in 1776 failed to notice this hypocrisy—British critics like Samuel Johnson and African American petitioners immediately pointed out the contradiction.",
+        "prose_hash": "725209971b",
+        "prose_fp": "895c6ef7",
+        "question_hash": "0a1c99a3f7"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Northern breakthrough",
+            "bullet": "Continental forces defeated General Burgoyne at Saratoga in October 1777 → proved rebels could win"
+          },
+          {
+            "hint": "French intervention",
+            "bullet": "King Louis XVI entered the war as America's formal ally, supplying troops and warships"
+          },
+          {
+            "hint": "Caribbean diversion",
+            "bullet": "Britain diverted warships from North America → prioritized defending rich Jamaican and Caribbean sugar islands"
+          }
+        ],
+        "context": [
+          {
+            "hint": "French revenge",
+            "bullet": "Humiliated in the Seven Years' War, Bourbon France sought revenge by splitting Britain's Atlantic empire"
+          },
+          {
+            "hint": "Wider coalition",
+            "bullet": "Spain and the Dutch Republic soon joined France → stretched the Royal Navy across oceans"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DIPLOMATIC TURNING POINT",
+            "stem": "Defeating General Burgoyne in October 1777 convinced ____________ to commit French armies and warships as formal allies."
+          },
+          {
+            "badge": "CARIBBEAN PRIORITY",
+            "stem": "Once France threatened the West Indies, London diverted vital naval squadrons to protect ____________."
+          },
+          {
+            "badge": "OVERSTRETCHED EMPIRE",
+            "stem": "Fighting a worldwide maritime war left British forces in North America short of ____________."
+          }
+        ],
+        "watch_out": "To eighteenth-century British ministers, tiny Caribbean sugar islands like Jamaica generated far greater customs wealth than all thirteen mainland colonies combined.",
+        "prose_hash": "bc82349a98",
+        "prose_fp": "c13b70c2",
+        "question_hash": "9b02e95109"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Peninsula mistake",
+            "bullet": "Lord Cornwallis fortified the coastal Yorktown peninsula in Virginia, relying on Royal Navy supply"
+          },
+          {
+            "hint": "Chesapeake blockade",
+            "bullet": "French Admiral de Grasse sealed Chesapeake Bay by sea → blocked British rescue and supplies"
+          },
+          {
+            "hint": "Allied siege",
+            "bullet": "Washington's Franco-American artillery pounded British trenches → forced 8,000 redcoats to surrender in October 1781"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Naval superiority",
+            "bullet": "Losing temporary command of American waters proved fatal for an army supplied across the Atlantic"
+          },
+          {
+            "hint": "Political collapse",
+            "bullet": "Yorktown broke Parliamentary support for war in London → brought down Lord North's ministry"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NAVAL BLOCKADE",
+            "stem": "Camped on a Virginia peninsula, Cornwallis lost his escape route when ____________ sealed off ____________."
+          },
+          {
+            "badge": "LAND SIEGE",
+            "stem": "Meanwhile, ____________ combined American and French troops by land to bombard British defences with heavy artillery."
+          },
+          {
+            "badge": "FINAL SURRENDER",
+            "stem": "Cut off from reinforcements, ____________ surrendered on 19 October 1781, ending major mainland fighting."
+          }
+        ],
+        "watch_out": "George Washington could not have trapped Cornwallis alone—French Admiral de Grasse's fleet at Chesapeake Bay and thousands of regular French siege troops were decisive.",
+        "prose_hash": "ae50d9a866",
+        "prose_fp": "b34b51f5",
+        "question_hash": "a44919d898"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Carleton's protection",
+            "bullet": "Commander Sir Guy Carleton honoured wartime promises → refused to return 3,000 Black Loyalists"
+          },
+          {
+            "hint": "Book of Negroes",
+            "bullet": "Clerks recorded each person in the Book of Negroes ledger and issued freedom certificates"
+          },
+          {
+            "hint": "Atlantic resettlement",
+            "bullet": "Evacuees sailed from New York to Nova Scotia → many later founded Freetown, Sierra Leone"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Washington's demand",
+            "bullet": "George Washington demanded escaped captives back at New York → Carleton offered compensation instead"
+          },
+          {
+            "hint": "Second Empire",
+            "bullet": "Losing thirteen colonies in 1783 shifted Britain's imperial focus eastward toward Bengal and India"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HONOURED PROMISE",
+            "stem": "After the 1783 Paris treaty recognized American independence, British commander ____________ protected 3,000 Black Loyalists in New York."
+          },
+          {
+            "badge": "FREEDOM CERTIFICATES",
+            "stem": "Military clerks registered families in the ____________ ledger before boarding evacuation ships bound for ____________."
+          },
+          {
+            "badge": "WEST AFRICAN RETURN",
+            "stem": "Facing harsh winters and broken land promises in Canada, many settlers later sailed on to found ____________."
+          }
+        ],
+        "watch_out": "Freedom in Nova Scotia brought harsh winters, poor soil, and racial discrimination, leading over a thousand Black Loyalists to relocate again in 1792 to found Freetown in Sierra Leone.",
+        "prose_hash": "57456b33a5",
+        "prose_fp": "cd45cb54",
+        "question_hash": "d000d447de"
+      }
+    ]
+  }
+}

@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_stone_to_iron_age",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Natural winter shelter",
+            "bullet": "Deep limestone caves like Creswell Crags → shielded Palaeolithic families from freezing Ice Age winds"
+          },
+          {
+            "hint": "Stone tool making",
+            "bullet": "Knapping flint into tear-drop handaxes → let makers chop meat and firewood without metal"
+          },
+          {
+            "hint": "Giant prey",
+            "bullet": "Team hunts for woolly mammoths → supplied meat, warm fur hides, bone, and lamp fat"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Before written books",
+            "bullet": "Zero written records in prehistory → footprints at Happisburgh prove families walked Norfolk mud"
+          },
+          {
+            "hint": "Moving for food",
+            "bullet": "No farms or shops existed → families had to follow wild herds across icy land"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WINTER SHELTER",
+            "stem": "During the freezing Ice Age, Old Stone Age families survived harsh weather by sheltering inside deep ____________ such as ____________."
+          },
+          {
+            "badge": "KNAPPING TOOLS",
+            "stem": "Since nobody had metal yet, makers chipped ____________ flakes to shape sharp ____________ for chopping meat and wood."
+          },
+          {
+            "badge": "TEAM HUNTS",
+            "stem": "Tracking giant ____________ together gave families vital meat, warm ____________, bones, and fat for lamps."
+          }
+        ],
+        "watch_out": "Old Stone Age humans never hunted dinosaurs—dinosaurs died out millions of years before Happisburgh footprints or woolly mammoths.",
+        "prose_hash": "5a3e73dd66",
+        "prose_fp": "9ea04698",
+        "question_hash": "7cb4e22b95"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "New woodland foods",
+            "bullet": "Spreading green forests → brought red deer, wild boar, berries, and hazelnuts to hunt and gather"
+          },
+          {
+            "hint": "Seasonal camps",
+            "bullet": "Small hunter-gatherer groups moved each season → followed river fish and ripening woodland plants"
+          },
+          {
+            "hint": "Wetland hunting gear",
+            "bullet": "Star Carr builders laid wooden platforms → carved red-deer antler headdresses for disguises or dances"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ice Age animals",
+            "bullet": "Giant woolly mammoths disappeared as ice melted → hunters tracked smaller, faster woodland prey instead"
+          },
+          {
+            "hint": "Somerset cave skeleton",
+            "bullet": "Cheddar Man from Gough's Cave → DNA revealed dark skin, dark curls, and blue eyes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WOODLAND DIET",
+            "stem": "Once the ice melted after 10,000 BC, spreading ____________ brought animals like ____________ and wild boar plus hazelnuts."
+          },
+          {
+            "badge": "MOVING BY SEASON",
+            "stem": "Instead of staying in one village all year, Mesolithic ____________ moved camp each season to fish rivers and pick ____________."
+          },
+          {
+            "badge": "LAKESIDE CLUES",
+            "stem": "Beside a Yorkshire lake at ____________, families built wooden ____________ and carved antler ____________ for disguises or dances."
+          }
+        ],
+        "watch_out": "Mesolithic families at Star Carr built wooden platforms, yet they still moved camp seasonally rather than farming all year.",
+        "prose_hash": "1141292469",
+        "prose_fp": "7f5cbf1f",
+        "question_hash": "7c737d5ee1"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Ancient land bridge",
+            "bullet": "Low, marshy Doggerland once joined Britain to Europe → families walked across dry land"
+          },
+          {
+            "hint": "Rising ocean water",
+            "bullet": "Warming northern ice sheets poured water into seas → rising waves and storms drowned Doggerland"
+          },
+          {
+            "hint": "Sea floor clues",
+            "bullet": "North Sea trawlers still snag flint tools and mammoth teeth → proves sunken land held camps"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Marshland hunting",
+            "bullet": "Doggerland rivers teemed with eels, ducks, and beavers → rich hunting grounds vanished underwater"
+          },
+          {
+            "hint": "Future travellers",
+            "bullet": "Cut off by deep sea water → later newcomers had to sail wooden boats to Britain"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LAND BRIDGE",
+            "stem": "For thousands of years before 6500 BC, Doggerland joined Britain to ____________, letting families camp by marshes to catch ____________."
+          },
+          {
+            "badge": "MELTING ICE",
+            "stem": "Huge amounts of water from melting northern ____________ poured into the sea until storms drowned the low marshes forever."
+          },
+          {
+            "badge": "SUNKEN EVIDENCE",
+            "stem": "Today, fishing boats in the ____________ still pull up ancient ____________ and mammoth teeth from the seabed."
+          }
+        ],
+        "watch_out": "Britain was not always an island—until melting ice flooded Doggerland around 6500 BC, people walked straight across from Europe.",
+        "prose_hash": "69e12ae0f7",
+        "prose_fp": "1bf3fa69",
+        "question_hash": "5e381ed40d"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Animals and seeds",
+            "bullet": "Settlers sailed over with sheep, pigs, cattle, wheat, and barley → began Neolithic British farming"
+          },
+          {
+            "hint": "Clearing and harvesting",
+            "bullet": "Polished stone axes cleared thick woods while flint sickles reaped grain → created open crop fields"
+          },
+          {
+            "hint": "Staying in one place",
+            "bullet": "Reliable harvests and coiled clay cooking pots → let families settle in thatched villages all year"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Crossing the sea",
+            "bullet": "Flooded Doggerland made Britain an island → pioneer farmers had to bring livestock on wooden boats"
+          },
+          {
+            "hint": "Hunter-gatherer contrast",
+            "bullet": "Unlike Mesolithic nomads moving camp each season → Neolithic farmers grew food beside permanent homes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PIONEER SETTLERS",
+            "stem": "Around 4000 BC, newcomers crossed the sea in ____________ bringing tame animals like ____________ alongside wheat and barley seeds."
+          },
+          {
+            "badge": "FARMING TOOLS",
+            "stem": "Villagers felled thick forests with smooth ____________ and cut ripe crop stalks using curved ____________."
+          },
+          {
+            "badge": "PERMANENT HOMES",
+            "stem": "Coiling clay ____________ for hot stews and growing steady harvests let families live in ____________ all year."
+          }
+        ],
+        "watch_out": "Neolithic still means New Stone Age—these early farmers cleared forests with polished stone axes, not bronze or iron tools.",
+        "prose_hash": "1254c4956a",
+        "prose_fp": "390a6130",
+        "question_hash": "d531d73ced"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Building without timber",
+            "bullet": "Stacked flat Orkney flagstones → formed eight snug homes linked together by roofed stone passages"
+          },
+          {
+            "hint": "Warmth and sleeping",
+            "bullet": "Central cooking hearths and stone box beds → kept villagers cosy under heather and sheepskins"
+          },
+          {
+            "hint": "Clever home features",
+            "bullet": "Carved stone dressers displayed treasures while indoor drains → carried waste away cleanly"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Windy island landscape",
+            "bullet": "Few trees grew on Orkney → builders used coastal stone slabs instead of timber walls"
+          },
+          {
+            "hint": "Sand dune blanket",
+            "bullet": "Deep sand buried Skara Brae for millennia → preserved furniture that rotted in mainland wooden villages"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FLAGSTONE WALLS",
+            "stem": "Because windy ____________ had very few trees, villagers around 3100 BC stacked flat ____________ into eight linked homes."
+          },
+          {
+            "badge": "COSY FURNITURE",
+            "stem": "Beneath the sand dunes, diggers found ____________ once stuffed with heather, plus a central ____________ for cooking."
+          },
+          {
+            "badge": "INDOOR COMFORTS",
+            "stem": "Each snug house even featured a ____________ for showing treasures and indoor stone ____________."
+          }
+        ],
+        "watch_out": "Skara Brae families were not rough cave dwellers—their linked homes had stone dressers, central hearths, cosy beds, and indoor drains.",
+        "prose_hash": "cccfde4523",
+        "prose_fp": "29636277",
+        "question_hash": "c9126f2511"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Honouring the dead",
+            "bullet": "Five dark stone chambers inside the chalk mound → held the bones of nearly fifty ancestors"
+          },
+          {
+            "hint": "Mourners and offerings",
+            "bullet": "Mourners left clay bowls, beads, and bone pins → communities gathered outside to share feasts"
+          },
+          {
+            "hint": "Claiming farmland",
+            "bullet": "Giant hilltop barrows stood visible for miles → showed rivals that settled families belonged there"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Teamwork after farming",
+            "bullet": "Stored grain harvests fed big work teams → settled villagers could raise huge chalk mounds"
+          },
+          {
+            "hint": "Ties to land",
+            "bullet": "Keeping ancestors near village fields → deepened family roots compared with wandering Ice Age hunters"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CHALK MOUND",
+            "stem": "Raised on a Wiltshire hill around 3650 BC, this long mound hid five dark ____________ behind heavy boulders."
+          },
+          {
+            "badge": "GRAVE OFFERINGS",
+            "stem": "Villagers placed the bones of nearly fifty ____________ inside alongside hand-coiled ____________ and beads."
+          },
+          {
+            "badge": "COMMUNITY ROOTS",
+            "stem": "Sharing ____________ outside a giant hilltop tomb proved to everyone that the farming community ____________ to that land."
+          }
+        ],
+        "watch_out": "West Kennet Long Barrow was not a tomb for one lone king—villagers placed nearly fifty community ancestors inside over generations.",
+        "prose_hash": "5262f63978",
+        "prose_fp": "c80ba728",
+        "question_hash": "60d4dd8074"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "First earth circle",
+            "bullet": "Antler picks and bone shovels → dug a circular chalk henge for cremated ancestors"
+          },
+          {
+            "hint": "Distant mountain quarry",
+            "bullet": "Eighty spotted bluestones came from the Preseli Hills in Wales → 140 miles from Wiltshire"
+          },
+          {
+            "hint": "Hauling heavy rock",
+            "bullet": "Plant ropes and wooden sledges → let huge teams drag Welsh stones across hills and rivers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Before metal spades",
+            "bullet": "Metal tools had not reached Britain in 3000 BC → diggers relied on tough animal bones"
+          },
+          {
+            "hint": "Burial traditions",
+            "bullet": "Burying cremated dead inside the early chalk ring → continued Neolithic ancestor worship from long barrows"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CHALK HENGE",
+            "stem": "Around 3000 BC on Salisbury Plain, workers chipped a circular ditch using ____________ picks and cattle ____________."
+          },
+          {
+            "badge": "DISTANT QUARRY",
+            "stem": "Five centuries later, eighty spotted bluestones were hauled from the ____________ in ____________, roughly ____________ miles away."
+          },
+          {
+            "badge": "TEAM HAULAGE",
+            "stem": "Moving those heavy stones across hills and rivers took woven ____________, wooden ____________, and huge teamwork."
+          }
+        ],
+        "watch_out": "Stonehenge was not built all at once—it began around 3000 BC as a chalk ditch and cremation ground before big stones arrived.",
+        "prose_hash": "e3dc2c9a1b",
+        "prose_fp": "6b43e768",
+        "question_hash": "163ad3d435"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Moving giant blocks",
+            "bullet": "Teams hauled grey sarsen boulders twenty miles on wooden sledges and rollers → pounded them smooth"
+          },
+          {
+            "hint": "Locking top stones",
+            "bullet": "Mortise-and-tenon peg joints → locked heavy lintels onto upright pairs so trilithons never slipped"
+          },
+          {
+            "hint": "Workers' winter camp",
+            "bullet": "Chalk houses two miles away at Durrington Walls → sheltered workers sharing huge winter pork feasts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "No wheels yet",
+            "bullet": "Wooden wheels arrived centuries later in the Bronze Age → Neolithic teams used log rollers instead"
+          },
+          {
+            "hint": "Woodwork into stone",
+            "bullet": "Carpenters already joined house timbers with pegs → masons copied those joints onto giant sarsen blocks"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DRAGGING BOULDERS",
+            "stem": "Without wheels or cranes, crews pulled massive grey blocks twenty miles on ____________ and log ____________."
+          },
+          {
+            "badge": "INTERLOCKING JOINTS",
+            "stem": "To stop top lintels sliding off the uprights, masons carved snug ____________ peg joints."
+          },
+          {
+            "badge": "WINTER FEASTING",
+            "stem": "Two miles away inside warm chalk homes at Durrington Walls, builders shared huge feasts of roast ____________ and ____________."
+          }
+        ],
+        "watch_out": "Top lintel stones were not simply balanced loose on uprights—masons carved snug mortise-and-tenon peg joints just like woodwork.",
+        "prose_hash": "83d1915f2d",
+        "prose_fp": "425094ae",
+        "question_hash": "e404556dfe"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Longest summer day",
+            "bullet": "Midsummer solstice sunrise shines straight over the Heel Stone → marks the year's longest day"
+          },
+          {
+            "hint": "Shortest winter day",
+            "bullet": "Midwinter solstice sunset glows through the tallest trilithon → promises longer, warmer days will return"
+          },
+          {
+            "hint": "Purpose of alignments",
+            "bullet": "Exact sun alignments turned the stone circle into a giant solar calendar and ancestor temple"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Timing farm seasons",
+            "bullet": "Tracking summer and winter turning points → helped Neolithic farmers time planting, harvests, and gatherings"
+          },
+          {
+            "hint": "Winter pig bones",
+            "bullet": "Roast pork feasts at Durrington Walls happened in midwinter → matches the winter sunset alignment"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SUMMER SUNRISE",
+            "stem": "On the ____________ solstice, the rising sun shines straight over the Heel Stone into the stone circle."
+          },
+          {
+            "badge": "WINTER SUNSET",
+            "stem": "Six months later at the ____________ solstice, the setting sun glows right between the tallest ____________."
+          },
+          {
+            "badge": "SACRED CALENDAR",
+            "stem": "Lining the stones up with the sky gave farming communities both a giant ____________ and an ____________ shrine."
+          }
+        ],
+        "watch_out": "Celtic Druids did not build Stonehenge—Neolithic farmers aligned it with the solstice sun roughly two thousand years before Iron Age Druids.",
+        "prose_hash": "3e9b7a4f4f",
+        "prose_fp": "b9085a50",
+        "question_hash": "3d4244d655"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Arrivals from Europe",
+            "bullet": "Beaker newcomers sailed over with comb-stamped clay cups and metalworking know-how → ended Britain's Stone Age"
+          },
+          {
+            "hint": "Two British ores",
+            "bullet": "Miners dug green copper inside Great Orme tunnels while Cornish workers gathered heavy tin ore"
+          },
+          {
+            "hint": "Releasing liquid metal",
+            "bullet": "Smiths crushed ore rock and smelted it over roaring fires → melted pure metal free"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Chipped flint limit",
+            "bullet": "Stone Age makers could only chip solid flint → smelting let smiths pour new shapes"
+          },
+          {
+            "hint": "Long trade journeys",
+            "bullet": "Copper lay in North Wales and tin in Cornwall → sparked long-distance British trade routes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NEW ARRIVALS",
+            "stem": "Sailing from Europe around 2400 BC, the ____________ people brought bell-shaped pots and Britain's first metal skills."
+          },
+          {
+            "badge": "MINING ORES",
+            "stem": "Underground miners at ____________ in Wales dug green ____________, while workers in ____________ gathered heavy tin."
+          },
+          {
+            "badge": "FIERCE HEAT",
+            "stem": "Crushing the rock and ____________ it over hot fires melted the liquid metal free."
+          }
+        ],
+        "watch_out": "Bronze was never dug straight out of the ground ready-made—miners had to find separate copper and tin ores in Wales and Cornwall.",
+        "prose_hash": "3223fd044f",
+        "prose_fp": "bc2dba93",
+        "question_hash": "a8964ae3a3"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Stronger metal recipe",
+            "bullet": "Pure copper bent easily → mixing nine parts copper with one part tin made tough bronze"
+          },
+          {
+            "hint": "Recycling broken blades",
+            "bullet": "Snapped flint stayed ruined forever → broken bronze axes melted down inside stone two-piece moulds"
+          },
+          {
+            "hint": "Farming and wealth",
+            "bullet": "Sharp bronze axes felled thick woodland faster for crops → families guarding metal routes grew rich"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Polished stone effort",
+            "bullet": "Grinding one Neolithic stone axe took days → stone moulds cast identical bronze blades rapidly"
+          },
+          {
+            "hint": "Expanding fields",
+            "bullet": "Faster forest clearance opened bigger sunny fields → fed growing Bronze Age villages across Britain"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BRONZE RECIPE",
+            "stem": "Because pure copper bent against hard oak, smiths mixed ____________ parts copper with one part ____________."
+          },
+          {
+            "badge": "REUSABLE METAL",
+            "stem": "Unlike snapped flint, a broken bronze blade could be melted down and recast inside hollow stone ____________."
+          },
+          {
+            "badge": "WOODLAND AND WEALTH",
+            "stem": "Tough bronze axes cleared thick ____________ much faster for crops, while families guarding ____________ grew rich."
+          }
+        ],
+        "watch_out": "Pure copper alone was too soft for heavy woodcutting—smiths had to alloy copper with Cornish tin to cast hard-wearing bronze.",
+        "prose_hash": "329c5dae8f",
+        "prose_fp": "cdef5fbc",
+        "question_hash": "aa5ed0a971"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Power and status",
+            "bullet": "Dazzling sheet-gold treasures like the Mold Gold Cape → showed off powerful Bronze Age leaders"
+          },
+          {
+            "hint": "Rich Wiltshire grave",
+            "bullet": "Over a hundred grave goods beside the Amesbury Archer → included beakers, copper knives, and gold"
+          },
+          {
+            "hint": "Scientific origin test",
+            "bullet": "Chemical tests on the Archer's tooth enamel → proved he grew up near the snowy Alps"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Changing burial customs",
+            "bullet": "Unlike shared Neolithic ancestor tombs → rich single graves celebrated powerful individual Bronze Age rulers"
+          },
+          {
+            "hint": "European travellers",
+            "bullet": "An Alpine metalworker buried near Stonehenge → proves people and skills travelled right across Europe"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DAZZLING GOLD",
+            "stem": "Master smiths hammered thin gold into treasures like the Welsh ____________ and crescent-moon ____________ collars for leaders."
+          },
+          {
+            "badge": "BURIAL GOODS",
+            "stem": "Buried around 2300 BC with over a hundred items, the Amesbury grave held five clay ____________ and ____________ knives."
+          },
+          {
+            "badge": "TOOTH CHEMISTRY",
+            "stem": "Chemical tests on his ____________ proved this wealthy newcomer had grown up near the snowy ____________."
+          }
+        ],
+        "watch_out": "The Amesbury Archer was not born in Wiltshire—tooth enamel chemistry proved he grew up in central Europe near the Alps.",
+        "prose_hash": "9f51598b8e",
+        "prose_fp": "588fc0d4",
+        "question_hash": "95858340f7"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Houses over water",
+            "bullet": "Cambridgeshire families built thatched wooden roundhouses on oak stilts → stood right above a slow river"
+          },
+          {
+            "hint": "Sudden village disaster",
+            "bullet": "Flames swept through the village around 900 BC → families escaped while burning homes plunged downwards"
+          },
+          {
+            "hint": "Airless river mud",
+            "bullet": "Thick waterlogged mud sealed every fallen object from air → froze daily life like Roman Pompeii"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Fenland timber walkway",
+            "bullet": "Nearby Flag Fen builders drove thousands of wooden posts → carried a causeway across wet marshes"
+          },
+          {
+            "hint": "Preserving fragile clues",
+            "bullet": "Just like sand saved Skara Brae → wet mud stopped Must Farm wood from rotting"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STILT HOMES",
+            "stem": "Around 900 BC in Cambridgeshire, families raised thatched wooden ____________ on sturdy oak ____________ above a slow river."
+          },
+          {
+            "badge": "SUDDEN ESCAPE",
+            "stem": "When a sudden ____________ swept across the roofs, villagers escaped safely as burning homes dropped into the water."
+          },
+          {
+            "badge": "MUD CAPSULE",
+            "stem": "Thick, airless ____________ mud sealed the fallen belongings inside, preserving a snapshot of Bronze Age life."
+          }
+        ],
+        "watch_out": "No volcano erupted in Cambridgeshire—thick waterlogged river mud, not volcanic ash, preserved Must Farm after a sudden house fire.",
+        "prose_hash": "50610f42bf",
+        "prose_fp": "3882e0c3",
+        "question_hash": "82cb81b5b4"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Interrupted mealtime",
+            "bullet": "Clay bowls holding charred porridge and a wooden spoon → showed families fled mid-meal"
+          },
+          {
+            "hint": "Crafts and fishing",
+            "bullet": "Fine plant-fibre cloth, willow eel traps, and hafted bronze axes → proved skilled home crafts"
+          },
+          {
+            "hint": "Transport breakthrough",
+            "bullet": "Complete one-metre wheel made of ash planks → oldest whole wooden wheel ever found in Britain"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dry-land decay",
+            "bullet": "Wood, cloth, and food rot away in dry soil → usually only stone or metal survives"
+          },
+          {
+            "hint": "After log rollers",
+            "bullet": "Stonehenge builders dragged stones on rollers → Must Farm's ash wheel transformed later heavy transport"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MEAL LEFT BEHIND",
+            "stem": "Diggers uncovered clay bowls still holding ____________ with a wooden ____________ resting inside."
+          },
+          {
+            "badge": "EVERYDAY CRAFTS",
+            "stem": "Rare organic finds included woven wicker ____________ for catching fish and finely spun ____________ cloth."
+          },
+          {
+            "badge": "OLDEST FIND",
+            "stem": "Built from ash planks around 900 BC, a complete one-metre ____________ became the oldest whole example found in Britain."
+          }
+        ],
+        "watch_out": "Bronze Age clothing was not rough animal fur—Must Farm's wet mud preserved finely spun, woven plant-fibre textiles.",
+        "prose_hash": "cd49c7b11e",
+        "prose_fp": "d6df52ce",
+        "question_hash": "03ca9645a6"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Boatbuilding without nails",
+            "bullet": "Builders stitched thick oak planks with twisted yew branches → sealed seams tight using soft moss"
+          },
+          {
+            "hint": "Cargo across seas",
+            "bullet": "Crews paddled the Dover sewn-plank boat to France → carried Cornish tin and British bronze"
+          },
+          {
+            "hint": "Exotic imports",
+            "bullet": "Mediterranean glass beads found at Must Farm → proved British rivers linked into distant trade webs"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Gifts to water",
+            "bullet": "Flag Fen villagers lowered shiny bronze swords and shields into marshes → honoured sacred waters"
+          },
+          {
+            "hint": "Before ironworking",
+            "bullet": "Iron nails had not been invented yet → clever plant lashings held sea-going hulls together"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SEWN HULL",
+            "stem": "Before iron nails existed, Dover builders stitched thick ____________ planks together using twisted ____________ branches and moss."
+          },
+          {
+            "badge": "CROSS-CHANNEL CARGO",
+            "stem": "Paddling between Britain and ____________, crews traded heavy metals such as ____________ and bronze."
+          },
+          {
+            "badge": "DISTANT LUXURIES",
+            "stem": "Tiny ____________ crafted in ____________ workshops reached Cambridgeshire along long trade routes."
+          }
+        ],
+        "watch_out": "The Dover Bronze Age Boat used zero metal nails—shipwrights stitched thick oak planks with twisted yew withies and moss caulking.",
+        "prose_hash": "cf7fb6494a",
+        "prose_fp": "1dd6867c",
+        "question_hash": "a8ba177877"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Local metal supply",
+            "bullet": "Reddish iron ore lay across hills and bogs → blacksmiths hammered tough saws, swords, and ploughshares"
+          },
+          {
+            "hint": "Ploughing and grinding",
+            "bullet": "Iron ploughshares sliced heavy clay soil while rotary querns → ground bumper wheat harvests into flour"
+          },
+          {
+            "hint": "Warm family homes",
+            "bullet": "Thatched roundhouses with wattle-and-daub walls → sheltered families weaving bright wool on upright looms"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cheaper than bronze",
+            "bullet": "Unlike rare Cornish tin and Welsh copper → widespread iron ore gave ordinary farmers metal tools"
+          },
+          {
+            "hint": "Rising population",
+            "bullet": "Farming tough clay valleys boosted food supplies → Iron Age villages and tribes grew rapidly"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BLACKSMITH SKILL",
+            "stem": "Heating common reddish ____________ in clay furnaces allowed ____________ to hammer strong saws and swords."
+          },
+          {
+            "badge": "BUMPER CROPS",
+            "stem": "Tough iron ____________ sliced heavy clay soil, and families spun stone ____________ to grind grain into flour."
+          },
+          {
+            "badge": "ROUNDHOUSE LIFE",
+            "stem": "Inside thatched homes built with ____________ walls, villagers wove bright wool on upright ____________."
+          }
+        ],
+        "watch_out": "Iron was not cast in stone moulds like bronze—blacksmiths had to heat red-hot iron and hammer it into shape.",
+        "prose_hash": "0f937692f7",
+        "prose_fp": "e7de35b0",
+        "question_hash": "f1fd0d443d"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Clashes over wealth",
+            "bullet": "Growing populations sparked rivalry for cattle and farmland → tribes fortified high ridges for safety"
+          },
+          {
+            "hint": "Dorset earthworks",
+            "bullet": "Wave-like chalk ramparts and winding gates at Maiden Castle → trapped raiders beneath slingshot fire"
+          },
+          {
+            "hint": "Busy hilltop hubs",
+            "bullet": "Storage pits and iron forges inside the banks → protected tribal grain harvests and smiths"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Surplus worth raiding",
+            "bullet": "Iron ploughs created rich wheat stores and big herds → gave rival warriors tempting prizes"
+          },
+          {
+            "hint": "Chalk hillside art",
+            "bullet": "Oxfordshire tribes carved the giant Uffington White Horse → marked proud tribal territory across miles"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FIERCE RIVALRY",
+            "stem": "As Britain's population grew, competing groups clashed over prized ____________ and fertile ____________."
+          },
+          {
+            "badge": "FORTRESS RAMPARTS",
+            "stem": "At Dorset's ____________, huge chalk ____________ and winding entrances slowed raiders facing river ____________ stones."
+          },
+          {
+            "badge": "PROTECTED STORES",
+            "stem": "Inside the high banks, villagers stored winter ____________ in pits and forged red-hot ____________."
+          }
+        ],
+        "watch_out": "Maiden Castle was not a medieval stone castle—Iron Age hillforts used giant earth and chalk ramparts, deep ditches, and timber gates.",
+        "prose_hash": "04c3e0e46f",
+        "prose_fp": "7fd57f68",
+        "question_hash": "f9e8c8ebb2"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Dazzling metalwork",
+            "bullet": "Twisted neck rings like the Snettisham Great Torc → proved Celtic smiths mastered fine goldwork"
+          },
+          {
+            "hint": "Money and trade",
+            "bullet": "Horse-stamped gold stater coins → showed wealthy British rulers traded across the sea with Rome"
+          },
+          {
+            "hint": "End of prehistory",
+            "bullet": "Emperor Claudius sent four Roman legions in AD 43 → brought written records that ended prehistory"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Sacred priests and rivers",
+            "bullet": "Druids memorised laws while Thames bronze shields → continued ancient water offerings seen at Flag Fen"
+          },
+          {
+            "hint": "800,000-year journey",
+            "bullet": "From Happisburgh flint knappers to coin-minting kingdoms → Britons built complex societies long before Romans arrived"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SACRED METALWORK",
+            "stem": "Twisted neck rings such as the ____________ alongside bronze shields offered to the ____________ prove skilled artistry."
+          },
+          {
+            "badge": "COINAGE AND TRADE",
+            "stem": "By 50 BC, rulers stamped horses onto ____________ and traded across the water with ____________ and Rome."
+          },
+          {
+            "badge": "ROMAN INVASION",
+            "stem": "When ____________ sent four invading ____________ in AD 43, written records ended British prehistory."
+          }
+        ],
+        "watch_out": "Iron Age Britons were not backward savages—before Claudius invaded in AD 43, tribes minted gold coins, forged fine torcs, and traded overseas.",
+        "prose_hash": "09eae621c0",
+        "prose_fp": "3f7a0bde",
+        "question_hash": "9cd738286c"
+      }
+    ]
+  }
+}

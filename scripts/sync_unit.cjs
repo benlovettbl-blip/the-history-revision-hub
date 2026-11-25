@@ -196,6 +196,14 @@ async function runSync() {
         stdio: 'inherit',
         cwd: ROOT_DIR,
       });
+      execSync(`node scripts/sync_spotlight_stage_answers.cjs ${unitId}`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
+      execSync(`node scripts/sync_spotlight_stage_answers.cjs ${unitId} --audit`, {
+        stdio: 'inherit',
+        cwd: ROOT_DIR,
+      });
     } catch (err) {
       console.error(
         `❌ Fatal: Narrative Stage Question answerability/parity gate failed for ${unitId}. Build aborted.`,

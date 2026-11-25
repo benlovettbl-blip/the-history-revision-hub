@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_early_islamic_baghdad",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Central empire spot",
+            "bullet": "Safe central bend on the River Tigris → helped Caliph al-Mansur rule wide Abbasid lands"
+          },
+          {
+            "hint": "Water & farmland",
+            "bullet": "Deep canals linked the Tigris and Euphrates → fresh water grew lush dates and wheat"
+          },
+          {
+            "hint": "Boats & caravans",
+            "bullet": "Reed quffa boats met Silk Road caravans → turned Baghdad into a busy trading crossroads"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Desert survival needs",
+            "bullet": "Surrounding desert lands were dry and hot → great cities needed reliable year-round river water"
+          },
+          {
+            "hint": "Pre-modern transport",
+            "bullet": "Heavy goods moved slowly overland → wide rivers carried food and timber far faster"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FARMING & CANALS",
+            "stem": "Caliph al-Mansur chose the Tigris because deep ____________ linked it to the ____________, watering crops like ____________."
+          },
+          {
+            "badge": "BUSY TRADE LINKS",
+            "stem": "Round woven ____________ boats and overland ____________ caravans met there, bringing rich ____________ and spices."
+          },
+          {
+            "badge": "SAFE CAPITAL SPOT",
+            "stem": "Positioned at a ____________ bend in the empire, this fertile river site helped the ____________ govern wide lands."
+          }
+        ],
+        "watch_out": "Baghdad was not built in dry empty desert—canals between the Tigris and Euphrates made its soil rich and green.",
+        "prose_hash": "0c044f248d",
+        "prose_fp": "a70e2912",
+        "question_hash": "906ab0888c"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Flaming circle plan",
+            "bullet": "Architects lit cotton seeds in a two-kilometre circle → mapped out a bold round city"
+          },
+          {
+            "hint": "Workforce & defences",
+            "bullet": "100,000 builders baked millions of mud bricks → raised thick double walls and a moat"
+          },
+          {
+            "hint": "Gates & centre",
+            "bullet": "Four iron gates and straight streets → pointed inward to the Great Mosque and palace"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Local building clay",
+            "bullet": "Tigris riverbanks had scarce stone → builders shaped abundant river mud into tough sun-baked bricks"
+          },
+          {
+            "hint": "Compass road gates",
+            "bullet": "Each gate faced a major province like Khorasan or Syria → linked Baghdad across the empire"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MAPPING & WALLS",
+            "stem": "After architects traced a ____________ circle in flaming cotton seeds, ____________ workers built thick ____________ and a moat."
+          },
+          {
+            "badge": "GATES & STREETS",
+            "stem": "Four guarded ____________ pierced the outer ring, with straight ____________ leading towards the city heart."
+          },
+          {
+            "badge": "HEART OF PEACE",
+            "stem": "Named Madinat al-Salam, meaning ____________, the centre held the ____________ beside the Green Dome Palace."
+          }
+        ],
+        "watch_out": "Baghdad did not grow by accident—architects planned its exact two-kilometre circle before laying a single mud brick.",
+        "prose_hash": "33333c7d96",
+        "prose_fp": "7fc3df2c",
+        "question_hash": "ed856c1955"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Huge city population",
+            "bullet": "Nearly one million people lived in Baghdad → dwarfed London or Winchester at 10,000 residents"
+          },
+          {
+            "hint": "Streets & facilities",
+            "bullet": "Paved streets, canals, bathhouses, and libraries → made Baghdad far grander than muddy village lanes"
+          },
+          {
+            "hint": "Everyday family homes",
+            "bullet": "Most Anglo-Saxon families lived in smoky thatched timber huts → contrasted with brick-built Baghdad"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Outgrowing the walls",
+            "bullet": "Booming river and caravan trade → pushed markets and gardens far outside the original Round City"
+          },
+          {
+            "hint": "Post-Roman Britain",
+            "bullet": "Old Roman stone towns in Britain had shrunk → most Anglo-Saxons farmed in small villages"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "POPULATION GAP",
+            "stem": "By AD 900, bustling Baghdad held nearly ____________ people, whereas London or Winchester held only ____________."
+          },
+          {
+            "badge": "STREETS & LEARNING",
+            "stem": "While Baghdad’s citizens enjoyed ____________ streets, bathhouses, and ____________, Anglo-Saxon lanes remained ____________."
+          },
+          {
+            "badge": "HOMES & BUILDINGS",
+            "stem": "Most families in Anglo-Saxon Britain lived in smoky ____________ huts with ____________ roofs rather than brick city districts."
+          }
+        ],
+        "watch_out": "Anglo-Saxon Britain was not completely empty of towns, but even London was around one hundred times smaller than Baghdad.",
+        "prose_hash": "b7f2bcd913",
+        "prose_fp": "b39303ee",
+        "question_hash": "b9840e2c90"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Watermill rag recipe",
+            "bullet": "Watermills pulped old cotton and linen rags → produced smooth paper cheaply and quickly"
+          },
+          {
+            "hint": "Costly European skins",
+            "bullet": "Rag paper replaced animal parchment → saved the huge cost of scraping whole calfskin herds"
+          },
+          {
+            "hint": "Booming bookshops",
+            "bullet": "Over 100 shops filled the Paper Sellers’ Market → spread affordable poetry and star charts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Silk Road links",
+            "bullet": "Baghdad’s central Silk Road routes → carried Chinese craft secrets west through Samarkand"
+          },
+          {
+            "hint": "Tigris water power",
+            "bullet": "Fast river canals around Baghdad → drove heavy mill hammers to pulp rags at scale"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RAG PAPER MILLS",
+            "stem": "Using Chinese methods learned via Samarkand, watermills beat ____________ and ____________ rags into cheap, smooth paper."
+          },
+          {
+            "badge": "CHEAPER THAN PARCHMENT",
+            "stem": "Unlike European scribes who scraped costly ____________, Baghdad’s bookmakers could copy texts ____________ and affordably."
+          },
+          {
+            "badge": "BUZZING BOOKSHOPS",
+            "stem": "Affordable paper fuelled over ____________ shops in the ____________, selling star charts and poetry."
+          }
+        ],
+        "watch_out": "Baghdad’s craftworkers did not invent paper from scratch—they adopted Chinese paper-making via Samarkand and scaled it up with watermills.",
+        "prose_hash": "5a4818126f",
+        "prose_fp": "0330a286",
+        "question_hash": "7bd1c82c99"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Gathering rare scrolls",
+            "bullet": "Al-Ma’mun bought fragile Greek, Persian, and Sanskrit scrolls → saved crumbling books from vanishing"
+          },
+          {
+            "hint": "Shared Arabic language",
+            "bullet": "Muslim, Christian, and Jewish translators like Hunayn ibn Ishaq → put world texts into Arabic"
+          },
+          {
+            "hint": "Testing & fixing",
+            "bullet": "Scholars tested ancient claims instead of copying blindly → corrected old scientific mistakes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cheap paper copies",
+            "bullet": "Abundant rag paper from Baghdad’s mills → let scribes copy rescued texts many times over"
+          },
+          {
+            "hint": "Multi-faith capital",
+            "bullet": "One million citizens from varied backgrounds → brought fluency in many ancient languages together"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SAVING ANCIENT SCROLLS",
+            "stem": "Messengers gathered fragile scrolls from ____________, Persia, and ____________ before their pages crumbled away."
+          },
+          {
+            "badge": "SCHOLARS WORKING TOGETHER",
+            "stem": "Inside the House of Wisdom, Muslim, ____________, and ____________ thinkers such as ____________ translated texts into Arabic."
+          },
+          {
+            "badge": "TESTING OLD IDEAS",
+            "stem": "Rather than copying ancient writers ____________, Baghdad’s thinkers ____________ every claim and fixed errors."
+          }
+        ],
+        "watch_out": "House of Wisdom translators were not just copyists—they actively questioned, tested, and corrected errors in ancient Greek books.",
+        "prose_hash": "42d61f3d17",
+        "prose_fp": "780c072a",
+        "question_hash": "f533b267a6"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Fez teaching college",
+            "bullet": "Fatima al-Fihri funded al-Qarawiyyin in Fez in AD 859 → built an enduring mosque college"
+          },
+          {
+            "hint": "Lasting university hub",
+            "bullet": "Students gathered at al-Qarawiyyin for maths, star maps, and law → continues teaching today"
+          },
+          {
+            "hint": "Desert pilgrim wells",
+            "bullet": "Queen Zubayda paid masons for stone wells and pools → saved pilgrims walking to Mecca"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Charity & faith",
+            "bullet": "Islamic teachings praised lasting public charity → inspired wealthy women patrons to fund schools and water"
+          },
+          {
+            "hint": "Harsh Hajj desert",
+            "bullet": "Crossing scorching Arabian sands on foot → made reliable stone reservoirs a life-or-death lifeline"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COLLEGE IN FEZ",
+            "stem": "In AD 859, Fatima al-Fihri used her wealth in ____________ to found ____________ for studying law and maths."
+          },
+          {
+            "badge": "WATER FOR PILGRIMS",
+            "stem": "Along the hot desert road to ____________, Queen Zubayda funded stone ____________ and pools to save travellers."
+          },
+          {
+            "badge": "WOMEN AS PATRONS",
+            "stem": "Both visionary women acted as generous ____________ whose public works shaped ____________ and travel for centuries."
+          }
+        ],
+        "watch_out": "Do not assume only male caliphs funded Golden Age projects—wealthy women like Fatima al-Fihri and Zubayda built major colleges and water networks.",
+        "prose_hash": "1f27aa76ce",
+        "prose_fp": "9c8f5890",
+        "question_hash": "95bf2ff978"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Zero & algebra",
+            "bullet": "Al-Khwarizmi spread digits 0 to 9 and al-Jabr → made sums easier and founded algebra"
+          },
+          {
+            "hint": "Star-mapping brass",
+            "bullet": "Craftworkers like Mariam al-Asturlabi built brass astrolabes → helped travellers navigate and find Mecca"
+          },
+          {
+            "hint": "Water-powered timing",
+            "bullet": "Al-Jazari engineered his Elephant Water Clock with hidden floats → chimed every half hour accurately"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rescued Indian digits",
+            "bullet": "Translators had studied Sanskrit number scrolls → helped Baghdad mathematicians build on Indian zero"
+          },
+          {
+            "hint": "Clumsy Roman numerals",
+            "bullet": "European scribes still used Roman letters like MMDCC → lacked zero for quick place-value sums"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NUMBERS & ALGEBRA",
+            "stem": "Championing Hindu-Arabic numerals including ____________, scholar ____________ wrote a book that gave us ____________."
+          },
+          {
+            "badge": "MAPPING THE STARS",
+            "stem": "Skilled makers such as ____________ crafted brass astrolabes so sailors and travellers could check ____________ and find ____________."
+          },
+          {
+            "badge": "CLEVER ENGINEERING",
+            "stem": "Using hidden water floats, engineer ____________ built the ____________ to mark each half hour with cymbals."
+          }
+        ],
+        "watch_out": "Digits 0 to 9 originated in India, not Arabia alone—Baghdad scholars like al-Khwarizmi adopted, refined, and spread Hindu-Arabic numerals.",
+        "prose_hash": "d5be4e0f8b",
+        "prose_fp": "de86795c",
+        "question_hash": "2293ad401b"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Dark room experiment",
+            "bullet": "Built a pinhole camera obscura in a dark room → disproved ancient Greek eye-ray claims"
+          },
+          {
+            "hint": "Straight light rays",
+            "bullet": "Proved light travels in straight lines into our eyes → laid foundations for modern cameras"
+          },
+          {
+            "hint": "Free public care",
+            "bullet": "Bimaristans gave free clean wards, medicines, and recovery money → treated rich and poor alike"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Testing Greek texts",
+            "bullet": "House of Wisdom scholars questioned translated Greek writers → inspired hands-on experiments over blind trust"
+          },
+          {
+            "hint": "Medieval European care",
+            "bullet": "Early medieval European care mostly offered monastery prayer → lacked Baghdad’s free secular teaching wards"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TESTING HOW WE SEE",
+            "stem": "Inside a dark pinhole ____________, Ibn al-Haytham proved that light travels in ____________ into our ____________."
+          },
+          {
+            "badge": "CLEAN HOSPITAL WARDS",
+            "stem": "Free teaching hospitals welcoming rich and ____________ patients featured clean wards, fountains, and a stocked ____________."
+          },
+          {
+            "badge": "SUPPORT FOR RECOVERY",
+            "stem": "When patients left to rest at home, bimaristans even gave them clean ____________ and ____________."
+          }
+        ],
+        "watch_out": "Ancient Greeks thought rays shot out from human eyes—Ibn al-Haytham proved the exact opposite, showing light enters our eyes in straight lines.",
+        "prose_hash": "c24e0be053",
+        "prose_fp": "cb48a3b5",
+        "question_hash": "17214389d3"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Clean air test",
+            "bullet": "Al-Razi hung fresh meat across Baghdad → built the hospital where clean air slowed rotting"
+          },
+          {
+            "hint": "Careful bedside notes",
+            "bullet": "Detailed patient records and nourishing nursing meals → helped al-Razi separate measles from smallpox"
+          },
+          {
+            "hint": "Tools & stitches",
+            "bullet": "Al-Zahrawi drew 200 surgical instruments and used catgut stitches → dissolved safely inside healing wounds"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Paper medical guides",
+            "bullet": "Cheap rag paper and clear ink diagrams → spread al-Zahrawi’s tool drawings to doctors everywhere"
+          },
+          {
+            "hint": "Teaching hospital wards",
+            "bullet": "Busy bimaristan wards gathered many patients → let doctors compare rashes and fevers side by side"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLEAN AIR & NOTES",
+            "stem": "After hanging ____________ across town to find clean air, al-Razi kept bedside notes separating ____________ from ____________."
+          },
+          {
+            "badge": "SURGICAL GUIDEBOOK",
+            "stem": "Working in Spain around AD 1000, surgeon al-Zahrawi drew over ____________ tools such as ____________ and bone saws."
+          },
+          {
+            "badge": "DISSOLVING STITCHES",
+            "stem": "Using natural ____________ thread, al-Zahrawi closed deep cuts with stitches that ____________ safely inside the body."
+          }
+        ],
+        "watch_out": "Al-Razi did not hang meat around Baghdad as magic—it was a practical test to find the cleanest, freshest air for patients.",
+        "prose_hash": "663635cb12",
+        "prose_fp": "fed195af",
+        "question_hash": "d49ce261bb"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Desert camel trains",
+            "bullet": "Two-humped camel caravans trekked Silk Road trails → carried Chinese silk, porcelain, and Indian spices"
+          },
+          {
+            "hint": "Roadside safe inns",
+            "bullet": "Walled caravanserais stood every thirty kilometres → locked brick gates shielded merchants from night bandits"
+          },
+          {
+            "hint": "Water & rest",
+            "bullet": "Courtyard wells and warm meals refreshed tired caravans → kept goods flowing into Baghdad’s souks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Three-continent hub",
+            "bullet": "Baghdad’s central spot between Asia, Africa, and Europe → drew luxury goods from three continents"
+          },
+          {
+            "hint": "Daily walking distance",
+            "bullet": "Thirty kilometres matched one full day’s camel march → ensured nobody camped unprotected in open desert"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DESERT SILK TRAILS",
+            "stem": "Long trains of two-humped ____________ crossed Silk Road trails carrying goods like ____________, porcelain, and pepper."
+          },
+          {
+            "badge": "WALLED ROADSIDE INNS",
+            "stem": "Spaced every ____________ kilometres, fortified inns called ____________ locked their brick gates against desert ____________."
+          },
+          {
+            "badge": "STOCKED BAZAARS",
+            "stem": "Rested by cool ____________ water each night, merchants safely reached Baghdad’s shaded ____________ to sell their wares."
+          }
+        ],
+        "watch_out": "Merchants rarely walked the entire Silk Road alone—spaced caravanserais every thirty kilometres made dangerous desert journeys safe and regular.",
+        "prose_hash": "3170639c45",
+        "prose_fp": "a80cfcb4",
+        "question_hash": "cc3506f9af"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Ocean sailing ships",
+            "bullet": "Coconut-stitched wooden dhows with triangular sails → rode Indian Ocean winds from Basra to China"
+          },
+          {
+            "hint": "Night star steering",
+            "bullet": "Captains measured star heights with brass astrolabes → guided cargo ships safely across open seas"
+          },
+          {
+            "hint": "Safe paper banking",
+            "bullet": "Bankers wrote signed paper sakk slips → let merchants cash money afar without pirate risks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Tigris river link",
+            "bullet": "River boats sailed straight down the Tigris to Basra → connected Baghdad to ocean shipping"
+          },
+          {
+            "hint": "Paper & science",
+            "bullet": "Baghdad’s rag paper mills and star astrolabes → directly powered safer banking and sea voyages"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OCEAN DHOW SHIPS",
+            "stem": "Sailing south through ____________, wooden dhows stitched with ____________ rope caught winds towards ____________ and China."
+          },
+          {
+            "badge": "STAR NAVIGATION",
+            "stem": "At night on the open Indian Ocean, captains steered accurately by checking stars with brass ____________."
+          },
+          {
+            "badge": "PAPER BANKING",
+            "stem": "Instead of risking heavy ____________ sacks to pirates, traders carried signed paper sakk slips that gave us the word ____________."
+          }
+        ],
+        "watch_out": "A sakk was not paper banknotes like modern cash—it was a signed banker’s promise that gave English our word cheque.",
+        "prose_hash": "411e7693ad",
+        "prose_fp": "b712b492",
+        "question_hash": "6c2508c64f"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Buried Viking silver",
+            "bullet": "Hoards of Abbasid silver dirhams buried near Jorvik → prove Islamic coins reached Viking York"
+          },
+          {
+            "hint": "Russian river routes",
+            "bullet": "Vikings traded furs and swords up Russian rivers → earned pure Arabic-script silver coins"
+          },
+          {
+            "hint": "Offa’s gold copy",
+            "bullet": "King Offa of Mercia minted an AD 774 gold coin → copied an Abbasid Arabic dinar"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Trusted pure metal",
+            "bullet": "Abbasid mints kept silver purity remarkably high → northern traders trusted dirhams by weight everywhere"
+          },
+          {
+            "hint": "Connected early world",
+            "bullet": "Small Anglo-Saxon kingdoms still linked into wide trade → valued prestigious gold designs from afar"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VIKING SILVER HOARDS",
+            "stem": "Flowing north along ____________ rivers, pure Abbasid silver ____________ were prized by Vikings and buried near Jorvik."
+          },
+          {
+            "badge": "KING OFFA’S DINAR",
+            "stem": "Around AD 774, Mercian ruler ____________ struck a famous gold coin copying an Islamic ____________."
+          },
+          {
+            "badge": "ARABIC INSCRIPTIONS",
+            "stem": "Swirling ____________ letters stamped onto coins found in Britain prove that Islamic ____________ networks stretched across Europe."
+          }
+        ],
+        "watch_out": "King Offa of Mercia did not convert to Islam—he copied an Abbasid gold dinar because Islamic coins were widely trusted in international trade.",
+        "prose_hash": "bdaa9ae2ca",
+        "prose_fp": "43b31b3c",
+        "question_hash": "48746ce8fe"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Shaded inner gardens",
+            "bullet": "Thick brick walls enclosed shaded courtyards with fountains → shielded rooms from blazing Iraq sun"
+          },
+          {
+            "hint": "Roof breeze towers",
+            "bullet": "Tall badgir windcatchers scooped breezes down indoors → pushed rising hot air out naturally"
+          },
+          {
+            "hint": "Steamed bathhouses",
+            "bullet": "Neighbourhood hammams offered tiled washrooms, olive-oil soap, and rosewater → kept citizens clean before prayers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Tigris canal pipes",
+            "bullet": "Baghdad’s canal network supplied running water → fed courtyard fountains and dozens of neighbourhood bathhouses"
+          },
+          {
+            "hint": "Cleanliness & health",
+            "bullet": "Regular washing before daily prayers and meals → reduced sickness compared with smoky unwashed huts"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COURTYARDS & FOUNTAINS",
+            "stem": "Thick brick walls surrounded shaded ____________ where splashing ____________ and orange trees cooled the air."
+          },
+          {
+            "badge": "ROOF WINDCATCHERS",
+            "stem": "Rising above rooftops, tall towers called ____________ scooped fresh breezes indoors and pushed ____________ air out."
+          },
+          {
+            "badge": "PUBLIC BATHHOUSES",
+            "stem": "Before daily ____________ and meals, residents visited tiled hammams where they scrubbed with ____________ soap and splashed ____________."
+          }
+        ],
+        "watch_out": "Badgir windcatchers used zero electricity or fans—clever tower angles captured natural breezes to cool rooms in blazing desert heat.",
+        "prose_hash": "9ee96f26b4",
+        "prose_fp": "77190339",
+        "question_hash": "9c2196c3f1"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Orchard fruits & veg",
+            "bullet": "Waterwheel orchards grew lemons, oranges, aubergines, spinach, and pomegranates → enriched everyday Baghdad diets"
+          },
+          {
+            "hint": "Spiced sweet dishes",
+            "bullet": "Cooks simmered spiced stews with almonds and cane sugar → served on shiny lustreware bowls"
+          },
+          {
+            "hint": "Sacred mosque patterns",
+            "bullet": "Tilers crafted geometric stars, arabesque vines, and Qur’an calligraphy → honoured God without statues"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Silk Road crops",
+            "bullet": "Caravans and dhows brought citrus and sugar from Asia → farmers adapted them along Tigris canals"
+          },
+          {
+            "hint": "Maths in tilework",
+            "bullet": "Mastery of geometry and brass compasses → helped artists tile repeating star patterns without gaps"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ORCHARDS & KITCHENS",
+            "stem": "Watered by canals, farmers grew ____________, oranges, and ____________, while cooks sweetened spiced stews with ____________."
+          },
+          {
+            "badge": "SHINING TABLEWARE",
+            "stem": "Families served warm meals inside metallic-glazed ____________ bowls made by skilled Baghdad potters."
+          },
+          {
+            "badge": "MOSQUE WALL ART",
+            "stem": "Avoiding human or animal statues, mosque tilers combined ____________ star patterns, curling ____________ vines, and sacred ____________."
+          }
+        ],
+        "watch_out": "Mosque artists did not avoid statues because they lacked skill—Islamic worship avoided human figures to honour God alone.",
+        "prose_hash": "0b37582c3d",
+        "prose_fp": "d272b0b2",
+        "question_hash": "c25dd2400f"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Embroidered silk bands",
+            "bullet": "Royal looms wove bright silk robes with tiraz bands → displayed embroidered Arabic inscriptions"
+          },
+          {
+            "hint": "Glowing glass craft",
+            "bullet": "Master glassblowers gilded enamelled glass lamps → lit mosques and rooms with glowing verses"
+          },
+          {
+            "hint": "Evening board games",
+            "bullet": "Families sipped fruit syrups on carpets playing shatranj → gave the world chess and checkmate"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Bazaar silk supply",
+            "bullet": "Silk Road trade brought raw silk thread into Baghdad → supplied royal weaving workshops"
+          },
+          {
+            "hint": "Persian & Indian roots",
+            "bullet": "Cultural links with India and Persia → brought early strategy board games into Abbasid courtyards"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FINE SILK ROBES",
+            "stem": "Royal workshops wove bright ____________ robes decorated with embroidered Arabic bands known as ____________."
+          },
+          {
+            "badge": "GLOWING GLASSWARE",
+            "stem": "Skilled glassblowers crafted gilded, enamelled ____________ inscribed with sacred verses to brighten indoor spaces."
+          },
+          {
+            "badge": "COURTYARD GAMES",
+            "stem": "Sitting on woven carpets, families sipped fruit syrups and played ____________, crying Shah mat for ____________."
+          }
+        ],
+        "watch_out": "Checkmate does not mean checking a friend—it comes from the Persian-Arabic shatranj phrase Shah mat, meaning the king is helpless.",
+        "prose_hash": "7bbe504f3b",
+        "prose_fp": "cf936c36",
+        "question_hash": "ccf72343f3"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Divided weak empire",
+            "bullet": "Abbasid lands split into rival kingdoms with a weak army → left borders poorly defended"
+          },
+          {
+            "hint": "Total river encirclement",
+            "bullet": "Hulagu Khan’s vast Mongol cavalry surrounded both Tigris banks → trapped Baghdad without escape"
+          },
+          {
+            "hint": "Stone-hurling siege",
+            "bullet": "Wooden trebuchets smashed Baghdad’s brick walls → Mongol troops burned the House of Wisdom"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mud-brick defences",
+            "bullet": "Al-Mansur’s mud-brick walls had guarded Baghdad for centuries → crumbled under heavy boulder bombardments"
+          },
+          {
+            "hint": "Ruined canal lifelines",
+            "bullet": "Siege destruction wrecked ancient Tigris irrigation canals → crippled surrounding farmland after AD 1258"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WEAKENED DEFENCES",
+            "stem": "After the Abbasid Empire split into ____________ kingdoms, Baghdad’s small ____________ could no longer guard its borders."
+          },
+          {
+            "badge": "SURROUNDED & BATTERED",
+            "stem": "Surrounding both banks of the ____________, Mongol engineers built giant wooden ____________ to smash the brick walls."
+          },
+          {
+            "badge": "END OF ABBASID RULE",
+            "stem": "Once troops stormed inside in February 1258, fires destroyed palaces, canals, and the famous ____________."
+          }
+        ],
+        "watch_out": "Baghdad did not fall simply because Mongols rode fast horses—Abbasid political division and heavy wooden trebuchets broke the city’s defences.",
+        "prose_hash": "9e9f4ae105",
+        "prose_fp": "5eae2e8d",
+        "question_hash": "90473f2deb"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Safe paper copies",
+            "bullet": "Duplicate paper books sat safely in Cairo, Damascus, and Samarkand → survived Baghdad’s burning"
+          },
+          {
+            "hint": "Libraries in Spain",
+            "bullet": "Seventy libraries in Al-Andalus Córdoba → preserved Arabic science far beyond Mongol reach"
+          },
+          {
+            "hint": "Toledo Latin bridge",
+            "bullet": "Muslim, Jewish, and Christian translators in Toledo turned Arabic books into Latin → sparked Europe’s Renaissance"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier paper boom",
+            "bullet": "Cheap rag paper had produced thousands of copies → stopped one fire erasing all learning"
+          },
+          {
+            "hint": "Two translation bridges",
+            "bullet": "Baghdad once translated Greek into Arabic → Toledo now passed enriched Arabic science into Latin"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COPIES ACROSS CITIES",
+            "stem": "Golden Age learning survived 1258 because ____________ copies were stored safely in Damascus, ____________, and Cairo."
+          },
+          {
+            "badge": "SPANISH LIBRARIES",
+            "stem": "Far west in Islamic Spain, called ____________, the city of Córdoba held ____________ libraries filled with books."
+          },
+          {
+            "badge": "SPARKING THE RENAISSANCE",
+            "stem": "Multi-faith translators in Toledo turned works by ____________ and Ibn Sina into ____________ for European readers."
+          }
+        ],
+        "watch_out": "Golden Age science was not lost forever in 1258—cheap paper had already spread duplicate books to libraries from Cairo to Spain.",
+        "prose_hash": "fb7fab0a2e",
+        "prose_fp": "1f08e489",
+        "question_hash": "0fcb15e1fe"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Maths & computing",
+            "bullet": "Digits 0 to 9, algebra, and algorithms → power school sums and modern smartphones"
+          },
+          {
+            "hint": "Lenses & hospitals",
+            "bullet": "Ibn al-Haytham’s optics and clean bimaristan wards → shaped cameras, glasses, and modern hospitals"
+          },
+          {
+            "hint": "Everyday English words",
+            "bullet": "Arabic trade and science gave English words like zero, sugar, lemon, sofa, and cotton"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Toledo to today",
+            "bullet": "Latin translations from Spain entered European universities → carried Baghdad’s discoveries into modern classrooms"
+          },
+          {
+            "hint": "Ideas outlast walls",
+            "bullet": "Mud-brick walls fell to Hulagu Khan in 1258 → shared human knowledge outlived any empire"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NUMBERS & PHONES",
+            "stem": "Whenever we write digits ____________, solve ____________, or run a phone ____________, we use Baghdad’s maths."
+          },
+          {
+            "badge": "OPTICS & MEDICINE",
+            "stem": "Smartphone ____________ and glasses build on Ibn al-Haytham’s light proofs, while ____________ echo clean bimaristans."
+          },
+          {
+            "badge": "WORDS WE SPEAK",
+            "stem": "Everyday English words such as ____________, lemon, ____________, and cotton arrived through Arabic trade and science."
+          }
+        ],
+        "watch_out": "Do not think the Golden Age ended in the past without trace—its numerals, optics, hospital wards, and words remain part of daily life.",
+        "prose_hash": "65832996de",
+        "prose_fp": "eb89f825",
+        "question_hash": "a5207758f1"
+      }
+    ]
+  }
+}

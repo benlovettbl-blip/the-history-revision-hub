@@ -1,0 +1,1140 @@
+{
+  "unit_id": "monarchy_religion_power",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Papal pardon sales",
+            "bullet": "Luther’s 95 arguments attacked friars selling indulgences for Purgatory → challenged papal spiritual authority"
+          },
+          {
+            "hint": "New print technology",
+            "bullet": "Printed copies spread rapidly from Wittenberg across Europe → turned local protest into the Reformation"
+          },
+          {
+            "hint": "Tudor royal reaction",
+            "bullet": "Henry VIII wrote defending Catholic sacraments → Pope Leo X named him Defender of the Faith"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Medieval Church grip",
+            "bullet": "Latin Bibles kept ordinary Christians reliant on priests → Luther’s challenge broke Rome’s monopoly"
+          },
+          {
+            "hint": "Gutenberg’s printing press",
+            "bullet": "Moveable-type presses mass-produced cheap pamphlets → prevented Church authorities silencing Luther like earlier critics"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INDULGENCE PROTEST",
+            "stem": "In October 1517, German monk ____________ challenged Rome by attacking corrupt friars who sold ____________."
+          },
+          {
+            "badge": "EUROPEAN SPREAD",
+            "stem": "Because ____________ carried Luther’s ideas rapidly across Europe, a single protest in ____________ triggered the Reformation."
+          },
+          {
+            "badge": "EARLY ROYAL LOYALTY",
+            "stem": "Initially, King Henry VIII opposed the Reformation by defending ____________, winning the papal title ____________."
+          }
+        ],
+        "watch_out": "In 1521 Henry VIII was a devout Catholic defending the Pope against Luther—do not assume Henry backed Protestantism from 1517.",
+        "prose_hash": "92d0ceec2f",
+        "prose_fp": "a2121c4a",
+        "question_hash": "5474ac679a"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Ageing royal marriage",
+            "bullet": "Catherine of Aragon passed forty with only Princess Mary surviving → left Henry without a son"
+          },
+          {
+            "hint": "Fear of civil war",
+            "bullet": "Lacking a male heir threatened Tudor succession → risked rival nobles plunging England into civil war"
+          },
+          {
+            "hint": "Biblical marriage claim",
+            "bullet": "Infatuated with Anne Boleyn, Henry cited Leviticus → claimed marrying Catherine was cursed before God"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wars of the Roses",
+            "bullet": "Henry VII won the crown in 1485 after bloody wars → Tudor rule still felt fragile"
+          },
+          {
+            "hint": "Prince Arthur’s widow",
+            "bullet": "Catherine had first married Henry’s dead brother Arthur → gave Henry scriptural grounds to challenge validity"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SUCCESSION ANXIETY",
+            "stem": "Driven by fear of ____________, Henry desperately wanted a ____________ because Catherine had borne only Princess Mary."
+          },
+          {
+            "badge": "COURT AMBITION",
+            "stem": "Falling deeply in love with ____________ gave Henry an urgent personal motive to replace ____________ as Queen."
+          },
+          {
+            "badge": "SCRIPTURAL ARGUMENT",
+            "stem": "Citing a strict warning from the Book of ____________, Henry argued his marriage was cursed and demanded an ____________."
+          }
+        ],
+        "watch_out": "Henry sought an annulment declaring his marriage had never legally existed—do not call it a modern divorce.",
+        "prose_hash": "f7e5b499fc",
+        "prose_fp": "8392933b",
+        "question_hash": "d8985f1611"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Sack of Rome",
+            "bullet": "Imperial troops ransacked Rome in May 1527 → trapped Pope Clement VII inside Castel Sant’Angelo"
+          },
+          {
+            "hint": "Habsburg family ties",
+            "bullet": "Emperor Charles V was Catherine of Aragon’s nephew → forbade the captive Pope from humiliating her"
+          },
+          {
+            "hint": "London court collapse",
+            "bullet": "Clement VII revoked Cardinal Wolsey’s London trial to Rome → stalled Henry’s case and ruined Wolsey"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier papal precedent",
+            "bullet": "Pope Julius II had approved Henry’s marriage → cancelling it meant admitting earlier papal error"
+          },
+          {
+            "hint": "Habsburg superpower dominance",
+            "bullet": "Charles V ruled Spain and the Holy Roman Empire → far outweighed Tudor England’s military power"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAPTIVE PAPACY",
+            "stem": "Although popes usually helped monarchs, Clement VII was held prisoner after imperial troops ransacked ____________ in 1527."
+          },
+          {
+            "badge": "DYNASTIC PRESSURE",
+            "stem": "Because Catherine’s powerful nephew ____________ controlled Italy, granting Henry’s annulment risked devastating retaliation."
+          },
+          {
+            "badge": "WOLSEY’S DOWNFALL",
+            "stem": "When the Pope cancelled ____________’s London legatine court, Henry’s legal route through Rome collapsed."
+          }
+        ],
+        "watch_out": "Pope Clement VII refused primarily out of fear of Catherine’s nephew Emperor Charles V—not merely strict religious principle.",
+        "prose_hash": "dcabea1cd2",
+        "prose_fp": "ae6cb4a8",
+        "question_hash": "ccfb4f4529"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Intimidating English bishops",
+            "bullet": "Henry threatened heavy fines under ancient treason laws → forced English clergy into complete royal submission"
+          },
+          {
+            "hint": "Cutting papal revenue",
+            "bullet": "Cromwell’s Reformation Parliament halted annates taxes to Rome → starved the papacy of English church income"
+          },
+          {
+            "hint": "Blocking foreign appeals",
+            "bullet": "1533 Act in Restraint of Appeals banned papal courts → let Archbishop Cranmer crown Anne Boleyn"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Power of statute",
+            "bullet": "Binding MPs into passing statute laws gave Henry’s break stronger legal legitimacy than solo royal decrees"
+          },
+          {
+            "hint": "Anti-clerical MP mood",
+            "bullet": "Wealthy Tudor MPs already resented Church courts and clerical fees → eagerly backed Cromwell’s anti-papal bills"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLERICAL SUBMISSION",
+            "stem": "Guided by lawyer ____________, the Crown threatened ancient treason fines until English bishops accepted royal control."
+          },
+          {
+            "badge": "STATUTORY SIEGE",
+            "stem": "Through the Reformation Parliament, MPs cut ____________ taxes to Rome and passed the 1533 ____________."
+          },
+          {
+            "badge": "ENGLISH VERDICT",
+            "stem": "Once appeals to the Pope were outlawed, Archbishop ____________ annulled Henry’s marriage and crowned ____________."
+          }
+        ],
+        "watch_out": "Do not confuse Tudor Chief Minister Thomas Cromwell with his distant relative Oliver Cromwell from the 1640s Civil War.",
+        "prose_hash": "da7c0d614f",
+        "prose_fp": "b139fc93",
+        "question_hash": "a6f58a3ec0"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Spiritual headship law",
+            "bullet": "1534 Act of Supremacy named Henry Supreme Head → gave him absolute spiritual rule over England"
+          },
+          {
+            "hint": "Treason oath terror",
+            "bullet": "Compulsory loyalty oaths criminalized dissent → objectors such as Sir Thomas More were executed for treason"
+          },
+          {
+            "hint": "Monastic land seizure",
+            "bullet": "Dissolving over 800 monasteries between 1536 and 1540 → flooded Henry’s treasury with vast land wealth"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Northern Catholic uprising",
+            "bullet": "1536 Pilgrimage of Grace protested monastery closures → Henry crushed 30,000 northern rebels to enforce supremacy"
+          },
+          {
+            "hint": "Catholic doctrine kept",
+            "bullet": "Despite seizing papal power and abbeys, Henry stayed traditional in worship → burned outspoken Protestant reformers"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SPIRITUAL SUPREMACY",
+            "stem": "Under the November 1534 ____________, Henry replaced the Pope as ____________ of the Church of England."
+          },
+          {
+            "badge": "ENFORCING OBEDIENCE",
+            "stem": "Subjects who refused compulsory treason oaths, including ____________, were executed to crush opposition."
+          },
+          {
+            "badge": "MONASTIC PLUNDER",
+            "stem": "Between 1536 and 1540, Cromwell dissolved over ____________ monasteries and sold their estates to ____________."
+          }
+        ],
+        "watch_out": "Breaking with Rome made Henry head of the Church, not a strict Protestant—he kept Latin Mass for most of his reign.",
+        "prose_hash": "e8b06ffbab",
+        "prose_fp": "e37590d4",
+        "question_hash": "62db0e60a6"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Marian heresy burnings",
+            "bullet": "Catholic Queen Mary I burned nearly 300 Protestants → martyrs left deep anti-Catholic hatred across England"
+          },
+          {
+            "hint": "Returning Calvinist exiles",
+            "bullet": "Strict Puritans returned from European exile → demanded purging bishops, Latin prayers, and Catholic ritual"
+          },
+          {
+            "hint": "Torn parish loyalties",
+            "bullet": "Rival Catholic traditionalists and militant reformers pulled opposite ways → threatened religious civil war in 1558"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Tudor rollercoaster swings",
+            "bullet": "Edward VI’s radical Protestantism followed by Mary’s Counter-Reformation → exhausted parishes swung repeatedly between faiths"
+          },
+          {
+            "hint": "Foreign Catholic powers",
+            "bullet": "Catholic France and Spain watched closely → harsh anti-Catholic laws risked provoking a foreign crusade"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MARIAN SCARS",
+            "stem": "Inheriting the throne in 1558, Elizabeth faced bitter anger after Mary I burned almost ____________ Protestants as ____________."
+          },
+          {
+            "badge": "PURITAN DEMANDS",
+            "stem": "Simultaneously, strict ____________ returning from European exile pressured Elizabeth to strip away ____________ and bishops."
+          },
+          {
+            "badge": "DANGER OF EXTREMES",
+            "stem": "Caught between loyal Catholics and militant Calvinists, England risked descending into ____________ if Elizabeth chose extremes."
+          }
+        ],
+        "watch_out": "Puritans were strict Calvinist Protestants returning from European exile—do not confuse them with Catholic rebels.",
+        "prose_hash": "963542677b",
+        "prose_fp": "bf3fcc70",
+        "question_hash": "bedc623e82"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Careful royal title",
+            "bullet": "Elizabeth chose Supreme Governor over Supreme Head → calmed moderates uneasy about female spiritual rule"
+          },
+          {
+            "hint": "Clerical loyalty oath",
+            "bullet": "Priests and state officials swore royal allegiance → secured outward obedience across parishes and government"
+          },
+          {
+            "hint": "Replacing Marian bishops",
+            "bullet": "Sacking Catholic bishops who refused the oath → let Elizabeth install loyal moderate Protestant leaders"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Henry’s harsher precedent",
+            "bullet": "Unlike Henry VIII’s 1534 treason executions, Elizabeth avoided early martyrdoms → lowered tensions among Catholic gentry"
+          },
+          {
+            "hint": "Parish priest continuity",
+            "bullet": "Most ordinary parish clergy swore the 1559 oath → prevented chaotic church closures across rural England"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLEVER COMPROMISE",
+            "stem": "To soothe subjects who believed only Christ or the Pope led the Church, Elizabeth took the title ____________."
+          },
+          {
+            "badge": "OATH OF ALLEGIANCE",
+            "stem": "Under the 1559 ____________, every priest and public official had to swear loyalty to the Crown."
+          },
+          {
+            "badge": "FIRM LEADERSHIP",
+            "stem": "When Marian bishops refused the oath, Elizabeth replaced them with ____________ without triggering bloody executions."
+          }
+        ],
+        "watch_out": "Henry VIII claimed the title Supreme Head in 1534, whereas Elizabeth deliberately chose Supreme Governor in 1559.",
+        "prose_hash": "b29d6d8df8",
+        "prose_fp": "b31c6d70",
+        "question_hash": "99b64f70cb"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Shared English liturgy",
+            "bullet": "One English Prayer Book governed every parish → replaced Latin services while keeping familiar ceremonial order"
+          },
+          {
+            "hint": "Blended communion words",
+            "bullet": "Compromise communion wording blended Protestant and Catholic phrasing → allowed moderate believers to worship together"
+          },
+          {
+            "hint": "Modest recusancy fines",
+            "bullet": "Twelve-pence Sunday fines punished absent recusants without probing private beliefs → preserved peace over persecution"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Church visual ornaments",
+            "bullet": "Retaining traditional vestments and church decorations → reassured conservative rural congregations outside Protestant London"
+          },
+          {
+            "hint": "Contrast with Inquisition",
+            "bullet": "Rejecting heresy trials contrasted sharply with Mary I’s burnings → encouraged quiet Catholic conformity"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHARED WORSHIP",
+            "stem": "Through the 1559 ____________, every parish used one English Prayer Book with blended ____________ wording."
+          },
+          {
+            "badge": "RECUSANCY FINES",
+            "stem": "Catholics known as ____________ who skipped Sunday services paid modest fines rather than facing heresy trials."
+          },
+          {
+            "badge": "PRIVATE CONSCIENCE",
+            "stem": "Refusing to make ____________ into men’s souls, Elizabeth demanded outward obedience while tolerating quiet private faith."
+          }
+        ],
+        "watch_out": "Elizabeth’s Via Media was still an officially Protestant Church—it blended elements for peace, not equal Catholic legal status.",
+        "prose_hash": "0d4217b30e",
+        "prose_fp": "a7236efe",
+        "question_hash": "002b85a2b1"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Durham Cathedral revolt",
+            "bullet": "Northern Earls seized Durham Cathedral in 1569 and restored Catholic Mass → defied Elizabeth’s Settlement"
+          },
+          {
+            "hint": "Papal bull decree",
+            "bullet": "Pope Pius V’s 1570 Regnans in Excelsis excommunicated Elizabeth → commanded Catholics to depose her"
+          },
+          {
+            "hint": "Loyalty dilemma created",
+            "bullet": "Papal absolution freed Catholics from royal oaths → turned peaceful English Catholics into suspected traitors"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rival Scottish claimant",
+            "bullet": "Mary, Queen of Scots arrived in England in 1568 → gave Catholic rebels a royal figurehead"
+          },
+          {
+            "hint": "Poor timing mistake",
+            "bullet": "Regnans in Excelsis arrived after the revolt collapsed → failed to rescue the Northern Earls"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NORTHERN REBELLION",
+            "stem": "Violent resistance erupted in 1569 when traditionalist ____________ marched into Durham Cathedral to restore ____________."
+          },
+          {
+            "badge": "PAPAL EXCOMMUNICATION",
+            "stem": "In 1570, Pope Pius V issued ____________, branding Elizabeth a heretic and ordering Catholics to ____________ her."
+          },
+          {
+            "badge": "SUSPECTED TRAITORS",
+            "stem": "Because Rome released Catholics from royal allegiance, Elizabeth’s government increasingly viewed every Catholic as a ____________."
+          }
+        ],
+        "watch_out": "Pope Pius V’s 1570 bull came too late to help the 1569 Northern Earls—Elizabeth had already crushed their revolt.",
+        "prose_hash": "6a0d9667c7",
+        "prose_fp": "df41eeb7",
+        "question_hash": "5c5fa2b6fa"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Beer barrel trap",
+            "bullet": "Walsingham’s double agents monitored letters smuggled inside beer barrels → caught Anthony Babington’s assassination plot"
+          },
+          {
+            "hint": "Codebreaking hard proof",
+            "bullet": "Expert cryptographers deciphered Mary Stuart’s secret code → proved she personally endorsed murdering Queen Elizabeth"
+          },
+          {
+            "hint": "Fotheringhay scaffold outcome",
+            "bullet": "Armed with undeniable treason evidence, Parliament pressured reluctant Elizabeth → Mary was executed in February 1587"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier Catholic plots",
+            "bullet": "Repeated Ridolfi and Throckmorton plots backed by Spain → convinced councillors Mary was a mortal threat"
+          },
+          {
+            "hint": "Anointed monarch taboo",
+            "bullet": "Executing a crowned queen risked dangerous precedent and foreign outrage → explained Elizabeth’s nineteen-year hesitation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ESPIONAGE TRAP",
+            "stem": "Spymaster Sir Francis ____________ intercepted secret letters smuggled inside ____________ during the 1586 Babington Plot."
+          },
+          {
+            "badge": "BROKEN CIPHERS",
+            "stem": "Once royal cryptographers cracked her coded reply, ____________ stood convicted of endorsing Elizabeth’s assassination."
+          },
+          {
+            "badge": "RELUCTANT EXECUTION",
+            "stem": "Pushed by Parliament, Elizabeth signed the death warrant and Mary was beheaded at ____________ in 1587."
+          }
+        ],
+        "watch_out": "Mary, Queen of Scots was Elizabeth’s Catholic cousin Mary Stuart—never confuse her with Elizabeth’s half-sister Queen Mary I.",
+        "prose_hash": "a53bd2cd16",
+        "prose_fp": "553d00ec",
+        "question_hash": "9bae8b3da6"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Dutch rebel aid",
+            "bullet": "Elizabeth sent troops to aid Protestant Dutch rebels → directly undermined Philip II’s rule in Flanders"
+          },
+          {
+            "hint": "Caribbean treasure raids",
+            "bullet": "English privateer Francis Drake plundered Spanish silver ships → crippled Philip’s imperial wealth and pride"
+          },
+          {
+            "hint": "Holy crusade trigger",
+            "bullet": "Mary Stuart’s 1587 execution won papal blessing → Philip planned ferrying Parma’s army to depose Elizabeth"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rejected marriage alliance",
+            "bullet": "Once married to Mary I, Philip II lost English influence when Elizabeth rejected his marriage offer"
+          },
+          {
+            "hint": "Papal crusade promise",
+            "bullet": "Pope Sixtus V promised financial subsidies once Spanish troops landed → framed invasion as holy war"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPERIAL GRIEVANCES",
+            "stem": "Outraged by English support for ____________ in the Netherlands and ____________’s raids on Spanish treasure, Philip II prepared war."
+          },
+          {
+            "badge": "RELIGIOUS TRIGGER",
+            "stem": "Following the 1587 execution of ____________, Philip secured papal blessing for a Catholic crusade against Elizabeth."
+          },
+          {
+            "badge": "INVASION STRATEGY",
+            "stem": "Spain’s Armada aimed to command the Channel and escort the ____________’s veteran army across from Flanders."
+          }
+        ],
+        "watch_out": "Philip II fought for empire, trade, and Dutch control alongside religion—the Armada was never purely a religious war.",
+        "prose_hash": "82ac71c07b",
+        "prose_fp": "10771384",
+        "question_hash": "8e38bb09b0"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Harbour warship losses",
+            "bullet": "Drake raided Cadiz harbour in April 1587 and destroyed thirty warships → crippled Spain’s frontline preparations"
+          },
+          {
+            "hint": "Seasoned barrel staves",
+            "bullet": "Burning seasoned barrel wood forced hasty green-wood casks → rotted the Armada’s food and drinking water"
+          },
+          {
+            "hint": "Crucial year’s delay",
+            "bullet": "Postponing Philip’s invasion until 1588 → gave England twelve vital months to fortify southern coasts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Spanish naval commander",
+            "bullet": "Veteran Admiral Santa Cruz died during the delay → inexperienced nobleman Medina Sidonia inherited command"
+          },
+          {
+            "hint": "Beacon warning chain",
+            "bullet": "Extra preparation time let Elizabeth organize hilltop fire beacons and muster county militias across southern England"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PRE-EMPTIVE STRIKE",
+            "stem": "Sailing boldly into ____________ in April 1587, Francis Drake destroyed thirty warships and delayed Spain’s invasion."
+          },
+          {
+            "badge": "SPOILED SUPPLIES",
+            "stem": "Because Drake burned seasoned ____________, Spanish crews stored provisions in green wood that turned water and bread rotten."
+          },
+          {
+            "badge": "DEFENSIVE BREATHING SPACE",
+            "stem": "Holding back the Armada for ____________ gave Elizabeth vital time to strengthen English coastal defenses."
+          }
+        ],
+        "watch_out": "Burning wooden barrel staves mattered just as much as sinking ships—spoiled water sickened thousands of Spanish sailors in 1588.",
+        "prose_hash": "1032995d28",
+        "prose_fp": "021dd84b",
+        "question_hash": "f3b2cd3866"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Hawkins ship design",
+            "bullet": "John Hawkins’s sleek race-built galleons outsailed towering Spanish castles → kept English crews beyond grappling range"
+          },
+          {
+            "hint": "Long-range brass guns",
+            "bullet": "English ships fired rapid broadsides with long-range brass culverins → battered hulls from safe distance"
+          },
+          {
+            "hint": "Spanish boarding limits",
+            "bullet": "Medina Sidonia’s tight crescent protected slow transports → prevented heavy Spanish soldiers boarding nimble attackers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Gunpowder loading speed",
+            "bullet": "Compact four-wheeled English gun carriages reloaded far faster than cumbersome two-wheeled Spanish land mounts"
+          },
+          {
+            "hint": "Windward weather gauge",
+            "bullet": "Holding the westerly wind behind them at Plymouth → let Howard and Drake dictate combat distance"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLASH OF DESIGNS",
+            "stem": "While Medina Sidonia’s 130 ships sailed in a defensive ____________, English captains used faster ____________ galleons."
+          },
+          {
+            "badge": "STANDOFF GUNNERY",
+            "stem": "Rather than grappling to board, Howard and Drake fired rapid broadsides from afar using long-range ____________."
+          },
+          {
+            "badge": "TACTICAL FRUSTRATION",
+            "stem": "Staying deliberately out of reach neutralized Spain’s advantage in heavy ____________ packed aboard floating castles."
+          }
+        ],
+        "watch_out": "Channel skirmishes alone did not sink the Armada—Spain’s disciplined crescent formation held firm all the way to Calais.",
+        "prose_hash": "e363484e71",
+        "prose_fp": "b821cd20",
+        "question_hash": "cd2d51a120"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Exposed Calais anchorage",
+            "bullet": "Waiting at Calais for Parma’s delayed troops → left Spanish ships crowded in an exposed anchorage"
+          },
+          {
+            "hint": "Midnight pitch fireships",
+            "bullet": "Eight blazing fireships coated in pitch and gunpowder → drifted at midnight into Spain’s anchored fleet"
+          },
+          {
+            "hint": "Severed anchor cables",
+            "bullet": "Panicked captains hacked anchor cables to flee → shattered Spain’s protective crescent formation forever"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dutch shallow blockade",
+            "bullet": "Shallow-water Dutch flyboats blockaded Dunkirk → stopped Parma’s barges ever joining Medina Sidonia’s deep-draught warships"
+          },
+          {
+            "hint": "Antwerp hellburner memory",
+            "bullet": "Spanish sailors feared floating gunpowder bombs used earlier at Antwerp → intensified midnight panic at Calais"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MIDNIGHT TERROR",
+            "stem": "Anchored off Calais awaiting Parma’s troops, the Spanish panicked when England sent eight blazing ____________ at midnight."
+          },
+          {
+            "badge": "LOST ANCHORS",
+            "stem": "Desperate to escape explosion, Spanish captains ordered crews to cut their ____________ and scatter into the dark."
+          },
+          {
+            "badge": "SHATTERED FORMATION",
+            "stem": "Breaking their tight ____________ left isolated Spanish galleons vulnerable to close-range English attack."
+          }
+        ],
+        "watch_out": "The eight Calais fireships did not burn a single Spanish ship directly—their triumph was panicking captains into breaking formation.",
+        "prose_hash": "4a72cda1c6",
+        "prose_fp": "43c4c955",
+        "question_hash": "3ab46da1f3"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Point-blank hull damage",
+            "bullet": "English warships closed to point-blank range at Gravelines → smashed isolated Spanish hulls and killed hundreds"
+          },
+          {
+            "hint": "Forced northern detour",
+            "bullet": "Fierce gales blocked the Channel return → forced Medina Sidonia’s battered fleet north around Scotland"
+          },
+          {
+            "hint": "Atlantic Irish shipwrecks",
+            "bullet": "Ferocious Atlantic storms wrecked anchorless galleons on Irish rocks → barely half the fleet reached Spain"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Missing Calais anchors",
+            "bullet": "Having cut anchors at Calais → battered Spanish galleons could not hold off jagged Irish cliffs"
+          },
+          {
+            "hint": "Tilbury royal propaganda",
+            "bullet": "Elizabeth’s Tilbury speech and Protestant Wind medal → turned survival into lasting proof of God’s favour"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GRAVELINES BROADSIDE",
+            "stem": "Closing to point-blank range at ____________, English guns battered scattered Spanish hulls and drove them into the North Sea."
+          },
+          {
+            "badge": "FATAL NORTHERN ROUTE",
+            "stem": "Forced to sail home around Scotland and ____________, dozens of storm-tossed galleons smashed onto jagged rocks."
+          },
+          {
+            "badge": "PROTESTANT MYTH",
+            "stem": "After only ____________ damaged ships reached Spain, Elizabeth struck medals proclaiming that God blew and scattered her foes."
+          }
+        ],
+        "watch_out": "Weather did not defeat Spain single-handedly—English fireships and gunnery at Gravelines trapped anchorless galleons in the northern storms.",
+        "prose_hash": "3b58fc5636",
+        "prose_fp": "987d5a2d",
+        "question_hash": "5ba53df511"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Divine Right claim",
+            "bullet": "Claiming Divine Right under God alone, Charles ruled eleven years without MPs → silenced parliamentary criticism"
+          },
+          {
+            "hint": "Inland naval tax",
+            "bullet": "Extending coastal Ship Money to inland counties → let Charles raise permanent revenue without parliamentary consent"
+          },
+          {
+            "hint": "Gentry tax boycott",
+            "bullet": "John Hampden’s 1637 refusal to pay Ship Money → sparked widespread tax boycotts among propertied gentry"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Laudian Church reforms",
+            "bullet": "Archbishop Laud imposed ornate altars and ceremonies → convinced Puritan MPs Charles favoured secret popery"
+          },
+          {
+            "hint": "Petition of Right",
+            "bullet": "Unvoted taxes defied the 1628 Petition of Right → convinced MPs Charles trampled ancient liberties"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PERSONAL RULE",
+            "stem": "Convinced by the ____________ of Kings, Charles I dismissed MPs in 1629 and ruled alone for ____________."
+          },
+          {
+            "badge": "UNVOTED TAXATION",
+            "stem": "Charging ____________ to inland counties outraged landowners because kings traditionally needed Parliament’s vote for taxes."
+          },
+          {
+            "badge": "PUBLIC RESISTANCE",
+            "stem": "When ____________ challenged Ship Money in 1637, widespread tax boycotts exposed deep anger toward royal rule."
+          }
+        ],
+        "watch_out": "Ruling without calling Parliament was technically legal—MPs called it tyranny because Charles stretched emergency taxes like Ship Money permanently.",
+        "prose_hash": "5daa09eaa8",
+        "prose_fp": "5201da0c",
+        "question_hash": "201d62b718"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Commons chamber breach",
+            "bullet": "Charles entered the Commons with armed soldiers in January 1642 → shattered parliamentary privilege by force"
+          },
+          {
+            "hint": "River escape humiliation",
+            "bullet": "Warned Five MPs fled by boat into London’s protection → left Charles humiliated before furious citizens"
+          },
+          {
+            "hint": "Nottingham war banner",
+            "bullet": "Charles fled London and raised his banner at Nottingham in August 1642 → triggered civil war"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Scottish Prayer Book",
+            "bullet": "Scottish rebellion against Charles’s Prayer Book → bankrupted the Crown and forced Parliament’s recall in 1640"
+          },
+          {
+            "hint": "Control of militia",
+            "bullet": "After the Commons raid, MPs distrusted Charles with troops → seized control of England’s militia"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARMED COUP",
+            "stem": "Recalled after Scottish rebellion, Parliament broke with Charles when royal guards raided the Commons to arrest ____________."
+          },
+          {
+            "badge": "LONDON DEFIANCE",
+            "stem": "After his targets escaped by river into the ____________, a humiliated King fled his own capital."
+          },
+          {
+            "badge": "OUTBREAK OF WAR",
+            "stem": "Raising the royal war standard at ____________ in August 1642 turned constitutional deadlock into civil war."
+          }
+        ],
+        "watch_out": "No reigning monarch had ever marched armed troops into the House of Commons—that coup destroyed all remaining trust in Charles.",
+        "prose_hash": "8bae39e277",
+        "prose_fp": "5eee1de2",
+        "question_hash": "c2edbfa1cf"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Merit-based professional force",
+            "bullet": "Parliament’s 1645 New Model Army paid full-time redcoats promoted on merit → outclassed amateur regional militias"
+          },
+          {
+            "hint": "Disciplined cavalry charge",
+            "bullet": "Cromwell’s disciplined cavalry crushed royalist flanks at Naseby in June 1645 → routed Charles’s main army"
+          },
+          {
+            "hint": "Captured royal baggage",
+            "bullet": "Parliamentary troops seized royal artillery and secret letters → destroyed Charles’s military power and credibility"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Royalist cavalry flaw",
+            "bullet": "Unlike Rupert’s Cavaliers chasing plunder, Cromwell’s Ironsides regrouped mid-battle → overwhelmed exposed royalist infantry"
+          },
+          {
+            "hint": "Godly Puritan morale",
+            "bullet": "Fervent Puritan soldiers sang psalms into battle → believed God backed their fight against royal tyranny"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PROFESSIONAL REDCOATS",
+            "stem": "Replacing weak regional militias in 1645, the ____________ promoted full-time soldiers on ____________ rather than noble birth."
+          },
+          {
+            "badge": "NASEBY BREAKTHROUGH",
+            "stem": "Under Fairfax and ____________, disciplined cavalry charges smashed the King’s flanks at the Battle of ____________."
+          },
+          {
+            "badge": "TOTAL ROUT",
+            "stem": "Capturing royal artillery alongside Charles’s private ____________ shattered both his army and his political reputation."
+          }
+        ],
+        "watch_out": "Sir Thomas Fairfax was overall Commander-in-Chief of the New Model Army in 1645, while Oliver Cromwell led its cavalry.",
+        "prose_hash": "9aecbe3e7f",
+        "prose_fp": "bbb5860f",
+        "question_hash": "bb4f3ac1ea"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Second war betrayal",
+            "bullet": "Charles plotted with Scots to restart war → Army leaders branded him a man of blood"
+          },
+          {
+            "hint": "Pride’s military purge",
+            "bullet": "Colonel Pride’s troops expelled moderate MPs → left a radical Rump determined to try Charles"
+          },
+          {
+            "hint": "Whitehall regicide verdict",
+            "bullet": "Found guilty of treason against his people, Charles was beheaded in 1649 → abolished England’s monarchy"
+          }
+        ],
+        "context": [
+          {
+            "hint": "King’s courtroom defiance",
+            "bullet": "Charles refused to plead at trial → argued no earthly court held lawful power over kings"
+          },
+          {
+            "hint": "Redefined treason law",
+            "bullet": "Treason once meant attacking the King → 1649 judged a monarch guilty of betraying his people"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MAN OF BLOOD",
+            "stem": "Furious after Charles plotted with Scottish allies to ignite a second war, Army leaders condemned the ____________."
+          },
+          {
+            "badge": "PRIDE’S PURGE",
+            "stem": "In December 1648, ____________ expelled moderate MPs so a radical ____________ Parliament could create a High Court."
+          },
+          {
+            "badge": "REGICIDE AND REPUBLIC",
+            "stem": "Beheaded outside ____________ on 30 January 1649 for treason against his people, Charles’s death turned England into a ____________."
+          }
+        ],
+        "watch_out": "Most elected MPs actually wanted peace talks—regicide happened only after Colonel Pride’s soldiers purged moderates from Parliament.",
+        "prose_hash": "68b54d2074",
+        "prose_fp": "ba67d9d1",
+        "question_hash": "b33966f2ab"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Invited Dutch intervention",
+            "bullet": "William of Orange landed at Torbay in 1688 → Catholic King James II fled to France"
+          },
+          {
+            "hint": "Conditional royal crown",
+            "bullet": "Parliament crowned William and Mary on strict terms → ended Stuart claims to unconditional Divine Right"
+          },
+          {
+            "hint": "Statutory legal limits",
+            "bullet": "1689 Bill of Rights outlawed unvoted taxes and suspending laws → bound monarchs under Parliament"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Catholic heir panic",
+            "bullet": "Birth of James II’s Catholic son in 1688 → raised fears of a permanent Catholic dynasty"
+          },
+          {
+            "hint": "Frequent Parliaments rule",
+            "bullet": "Guaranteeing regular Parliaments and free Commons speech → prevented another Eleven Years’ Personal Rule"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GLORIOUS REVOLUTION",
+            "stem": "Alarmed by Catholic King ____________, Protestant nobles invited ____________ to land at Torbay in 1688."
+          },
+          {
+            "badge": "CONDITIONAL MONARCHY",
+            "stem": "Before crowning William and Mary, MPs required acceptance of the ____________ to bind royal authority."
+          },
+          {
+            "badge": "CONSTITUTIONAL LIMITS",
+            "stem": "Henceforth, monarchs could neither cancel ____________ nor collect ____________ without explicit parliamentary consent."
+          }
+        ],
+        "watch_out": "The 1689 Bill of Rights limited monarchs rather than creating modern democracy—only wealthy property-owning men could vote for MPs.",
+        "prose_hash": "d68f50c32a",
+        "prose_fp": "8b11c48c",
+        "question_hash": "61b63b316f"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Statute over decree",
+            "bullet": "Enacting the Break with Rome via parliamentary statutes → turned MPs into essential lawmaking partners"
+          },
+          {
+            "hint": "National Church control",
+            "bullet": "Ending papal jurisdiction by Act of Parliament → proved King-in-Parliament could reshape even spiritual authority"
+          },
+          {
+            "hint": "Gentry land stake",
+            "bullet": "Selling dissolved monastic estates to local gentry → gave wealthy MPs a permanent stake in reform"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Medieval parliamentary limits",
+            "bullet": "Medieval kings mainly summoned MPs for temporary war taxes → Tudor Reformation expanded Parliament’s permanent reach"
+          },
+          {
+            "hint": "Seven-year sitting length",
+            "bullet": "Meeting across seven years from 1529 → gave the Commons unprecedented confidence and lawmaking experience"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STATUTE PARTNERSHIP",
+            "stem": "Rather than ruling by solo royal decree, Henry VIII used ____________ passed by the Reformation Parliament to break with Rome."
+          },
+          {
+            "badge": "LANDED INTEREST",
+            "stem": "Buying former ____________ estates gave England’s gentry a powerful financial reason to defend ____________."
+          },
+          {
+            "badge": "LONG-TERM LEGACY",
+            "stem": "Using MPs to remake the national Church accidentally laid foundations for future ____________ sovereignty."
+          }
+        ],
+        "watch_out": "Henry VIII intended to boost royal power, yet relying on Acts of Parliament inadvertently elevated MPs’ constitutional authority.",
+        "prose_hash": "df131c4103",
+        "prose_fp": "449422c2",
+        "question_hash": "57e1c2de70"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Pragmatic church settlement",
+            "bullet": "Elizabeth’s 1559 Settlement blended Protestant doctrine with moderate ritual → won broad conformity without heresy trials"
+          },
+          {
+            "hint": "Measured recusant penalties",
+            "bullet": "Modest Sunday church fines penalized Catholic recusants → maintained parish order while avoiding domestic civil war"
+          },
+          {
+            "hint": "Armada patriotic myth",
+            "bullet": "Defeating Spain’s 1588 Armada fused patriotism with Protestantism → convinced subjects God protected Elizabeth’s realm"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Foxe’s Book impact",
+            "bullet": "Chains of English Bibles and Protestant martyr stories in parish churches → deepened popular anti-papal identity"
+          },
+          {
+            "hint": "Crown-Commons war unity",
+            "bullet": "Shared dread of Spanish invasion → rallied Elizabethan MPs to fund and defend the Crown"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OUTWARD CONFORMITY",
+            "stem": "Blending Protestant worship with moderate ceremonies, the 1559 ____________ secured peace through modest ____________ rather than inquisitions."
+          },
+          {
+            "badge": "PROVIDENTIAL VICTORY",
+            "stem": "Crushing the 1588 ____________ forged a powerful patriotic belief that God specially favoured ____________ England."
+          },
+          {
+            "badge": "NATIONAL SOLIDARITY",
+            "stem": "Shared pride in survival rallied subjects and ____________ closely behind Elizabeth’s Protestant Crown."
+          }
+        ],
+        "watch_out": "Anti-Catholic unity forged in 1588 later backfired on Stuart kings whenever MPs suspected the royal court of Catholic sympathies.",
+        "prose_hash": "7bc972f6e4",
+        "prose_fp": "76b47e43",
+        "question_hash": "811873ff7c"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Absolutist royal theory",
+            "bullet": "Stuart kings preached Divine Right → claimed monarchs answered only to God, bypassing parliamentary consent"
+          },
+          {
+            "hint": "Eleven-year fiscal rule",
+            "bullet": "Charles governed eleven years without MPs using unvoted Ship Money → alienated England’s taxpaying gentry"
+          },
+          {
+            "hint": "Scottish rebellion bankruptcy",
+            "bullet": "Scots rebelled against forced prayer books → bankrupted Charles into recalling furious MPs in 1640"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Tudor parliamentary habit",
+            "bullet": "Decades of Tudor lawmaking had accustomed MPs to partnership → made Stuart absolutism feel unlawful"
+          },
+          {
+            "hint": "Three-kingdom religious strain",
+            "bullet": "Ruling England, Presbyterian Scotland, and Catholic Ireland simultaneously → magnified every Stuart religious misstep into crisis"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DIVINE RIGHT CLASH",
+            "stem": "Shattering Tudor partnership, James I and Charles I claimed ____________, insisting monarchs answered to God alone."
+          },
+          {
+            "badge": "FISCAL GRIEVANCES",
+            "stem": "During eleven years without MPs, collecting unvoted ____________ convinced landowners that royal power threatened property rights."
+          },
+          {
+            "badge": "FORCED RECALL",
+            "stem": "Bankrupted when ____________ rebelled against English prayer books, Charles had to summon a hostile Parliament in 1640."
+          }
+        ],
+        "watch_out": "Tudor monarchs could also act autocratically, but unlike Charles I they skillfully worked through Parliament instead of lecturing MPs on absolutism.",
+        "prose_hash": "9646f8563d",
+        "prose_fp": "b2c05cf5",
+        "question_hash": "f8cf36530a"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Battlefield royal defeat",
+            "bullet": "Parliament’s citizen army crushed royalist forces at Naseby → shattered the myth of invincible royal authority"
+          },
+          {
+            "hint": "Commonwealth republic born",
+            "bullet": "Following Pride’s Purge, MPs abolished both monarchy and House of Lords → created a republican Commonwealth"
+          },
+          {
+            "hint": "Monarchs under law",
+            "bullet": "Publicly trying and executing Charles I → proved even anointed monarchs answered to the law"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Short-lived republic",
+            "bullet": "Although monarchy returned in 1660, memory of Whitehall’s scaffold → warned future kings against absolutism"
+          },
+          {
+            "hint": "Public trial choice",
+            "bullet": "Unlike medieval kings murdered in secret castles, Charles I faced open courtroom prosecution in Westminster Hall"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REPUBLICAN EXPERIMENT",
+            "stem": "Defeating royalist forces at ____________ and purging Parliament led radicals to abolish monarchy for a ____________."
+          },
+          {
+            "badge": "LEGAL ACCOUNTABILITY",
+            "stem": "Putting Charles I on public trial established the revolutionary principle that even an anointed king stood beneath ____________."
+          },
+          {
+            "badge": "BROKEN TRUST",
+            "stem": "Executing a sovereign for ____________ against his own people permanently shattered unquestioned Divine Right."
+          }
+        ],
+        "watch_out": "Even though the monarchy was restored in 1660, the 1649 regicide permanently destroyed the idea that kings were untouchable above the law.",
+        "prose_hash": "f38b880779",
+        "prose_fp": "15b09e91",
+        "question_hash": "adbb3411fb"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Binding royal contract",
+            "bullet": "William III and Mary II accepted Parliament’s statutory terms → legally ended absolute Divine Right monarchy"
+          },
+          {
+            "hint": "Tax and law limits",
+            "bullet": "Outlawing unvoted royal taxes and suspending statutes → stripped monarchs of power to govern without MPs"
+          },
+          {
+            "hint": "Supreme sovereign shift",
+            "bullet": "Sovereignty moved from personal royal will to King-in-Parliament → established permanent constitutional monarchy across England"
+          }
+        ],
+        "context": [
+          {
+            "hint": "172-year power arc",
+            "bullet": "From 1517 papal authority through Tudor supremacy → supreme power finally settled in elected parliamentary statutes"
+          },
+          {
+            "hint": "Annual army budgets",
+            "bullet": "Banning peacetime standing armies without parliamentary consent → forced monarchs to summon MPs every single year"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STATUTORY CONTRACT",
+            "stem": "Drafted as a binding legal contract with ____________, the 1689 Bill of Rights ended claims to absolute power."
+          },
+          {
+            "badge": "CURBED PREROGATIVE",
+            "stem": "Monarchs were legally barred from cancelling ____________ or levying ____________ without votes in the Commons."
+          },
+          {
+            "badge": "PARLIAMENTARY SUPREMACY",
+            "stem": "By 1689, ultimate sovereignty had shifted from the personal will of the Crown to ____________."
+          }
+        ],
+        "watch_out": "England became a constitutional monarchy in 1689 rather than a republic—the monarch still reigned, but only through laws passed with Parliament.",
+        "prose_hash": "5e70054c4a",
+        "prose_fp": "b4c523ab",
+        "question_hash": "1fc7ed59cb"
+      }
+    ]
+  }
+}

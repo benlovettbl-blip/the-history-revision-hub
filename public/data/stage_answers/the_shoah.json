@@ -1,0 +1,1594 @@
+{
+  "unit_id": "the_shoah",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Population share",
+            "bullet": "Around 9.5 million Jews lived across Europe → made up under two percent of Europeans"
+          },
+          {
+            "hint": "Eastern heartland",
+            "bullet": "Over sixty percent lived in Poland, Hungary, Romania, and the USSR → spoke Yiddish daily"
+          },
+          {
+            "hint": "Western communities",
+            "bullet": "Smaller communities thrived in Germany, Britain, and France → enriched science, arts, and civic life"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Polish community size",
+            "bullet": "Poland alone was home to over three million Jews → formed Europe's largest Jewish community"
+          },
+          {
+            "hint": "German minority",
+            "bullet": "Fewer than 525,000 Jews lived in Germany in 1933 → under one percent of Germans"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CONTINENTAL SCALE",
+            "stem": "Across 1930s Europe, roughly ____________ Jewish people made up less than ____________ of the total population."
+          },
+          {
+            "badge": "MAJORITY HEARTLAND",
+            "stem": "Over ____________ percent lived in Central and Eastern nations such as ____________ and the Soviet Union."
+          },
+          {
+            "badge": "WESTERN DIVERSITY",
+            "stem": "Smaller communities in ____________, ____________, and France contributed deeply to science, arts, and civic life."
+          }
+        ],
+        "watch_out": "Jews were less than one percent of Germany's population—most European Jews lived further east in Poland and the USSR.",
+        "prose_hash": "b6afa18ef9",
+        "prose_fp": "4eb41b4d",
+        "question_hash": "0d54c8e229"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Shtetls and cities",
+            "bullet": "Millions in rural shtetls and cities like Warsaw → built rich Yiddish theatre, press, and literature"
+          },
+          {
+            "hint": "Vilna's nickname",
+            "bullet": "Vilna earned fame as the Jerusalem of the North → anchored world-renowned talmudic academies"
+          },
+          {
+            "hint": "Modern movements",
+            "bullet": "Socialist parties, Zionist youth groups, and avant-garde artists → created a diverse modern civilisation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shared mother tongue",
+            "bullet": "Yiddish blended Hebrew script with medieval German roots → united millions across Eastern European borders"
+          },
+          {
+            "hint": "Interwar urban growth",
+            "bullet": "Rapid growth in Warsaw and Kraków → made Jewish citizens roughly a third of Warsaw's population"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "YIDDISH CULTURE",
+            "stem": "Throughout rural ____________ and cities like Warsaw, Yiddish ____________, theatre, and newspapers thrived."
+          },
+          {
+            "badge": "SACRED LEARNING",
+            "stem": "Celebrated as the ____________, Vilna was home to world-famous ____________ academies."
+          },
+          {
+            "badge": "MODERN ENERGY",
+            "stem": "Traditional scholarship sat alongside modern ____________ parties, ____________ youth groups, and avant-garde art."
+          }
+        ],
+        "watch_out": "Eastern European Jewish life was not purely rural or traditional—cities like Vilna buzzed with secular politics, theatre, and modern art.",
+        "prose_hash": "bdd529d638",
+        "prose_fp": "ca86d1bc",
+        "question_hash": "9b2104b0ef"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Civic integration",
+            "bullet": "Full legal emancipation in 1871 → German Jews attended universities and entered top professions"
+          },
+          {
+            "hint": "Wartime service",
+            "bullet": "Over 100,000 served in Germany's WWI army and 12,000 died → proved fierce battlefield patriotism"
+          },
+          {
+            "hint": "National identity",
+            "bullet": "Viewed themselves as proud German citizens → drove major breakthroughs in science, industry, and arts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Stab-in-the-back lie",
+            "bullet": "Far-right nationalists spread the 1918 stab-in-the-back myth → falsely blamed patriotic German Jews for WWI defeat"
+          },
+          {
+            "hint": "Weimar democracy",
+            "bullet": "Weimar Germany's 1919 constitution guaranteed equal rights → enabled Jewish figures like Walther Rathenau to serve"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "POST-1871 INTEGRATION",
+            "stem": "Following legal ____________ in 1871, German Jews spoke German and integrated into ____________ and professions."
+          },
+          {
+            "badge": "BATTLEFIELD SACRIFICE",
+            "stem": "During the First World War, over ____________ German Jewish soldiers served and ____________ died fighting."
+          },
+          {
+            "badge": "PATRIOTIC CITIZENS",
+            "stem": "Seeing themselves as ____________ German citizens, they led major achievements in ____________, industry, and arts."
+          }
+        ],
+        "watch_out": "Nazi propaganda falsely claimed Jews betrayed Germany in 1918—in reality, 100,000 German Jews fought for the Kaiser and 12,000 fell.",
+        "prose_hash": "0a03ad0ebf",
+        "prose_fp": "97de78d8",
+        "question_hash": "c673bdbedb"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Spanish roots",
+            "bullet": "Descendants of Jews expelled from Spain in 1492 → preserved Ladino language and Mediterranean traditions"
+          },
+          {
+            "hint": "Majority port city",
+            "bullet": "Jews formed over half of Thessaloniki's population → earned the city title Mother of Israel"
+          },
+          {
+            "hint": "Sabbath port shutdown",
+            "bullet": "Jewish dockers, merchants, and officials ran port trade → the entire harbour closed every Saturday"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ottoman refuge",
+            "bullet": "Ottoman sultans welcomed Spanish exiles after 1492 → fostered centuries of peaceful coexistence in Salonica"
+          },
+          {
+            "hint": "Linguistic diversity",
+            "bullet": "Southern Sephardic Jews spoke Judeo-Spanish Ladino → differed sharply from Yiddish-speaking Ashkenazi communities northwards"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SEPHARDIC HERITAGE",
+            "stem": "Descended from families expelled from ____________ in 1492, Sephardic Jews spoke ____________ across markets and homes."
+          },
+          {
+            "badge": "DEMOGRAPHIC MAJORITY",
+            "stem": "Known as the ____________, Thessaloniki was unique because over ____________ its population was Jewish."
+          },
+          {
+            "badge": "WORKING HARBOUR",
+            "stem": "Because Jewish ____________ and merchants powered harbour trade, the entire port shut on ____________."
+          }
+        ],
+        "watch_out": "Not all European Jews were Yiddish-speaking Ashkenazim—Southern Europe's Sephardic communities spoke Ladino and traced their roots to Spain.",
+        "prose_hash": "ab83701bde",
+        "prose_fp": "6040851d",
+        "question_hash": "c60fa7afe7"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Medieval hatred",
+            "bullet": "Medieval Christian anti-Judaism attacked religious belief → baptism or conversion could theoretically end persecution"
+          },
+          {
+            "hint": "Biological myth",
+            "bullet": "Late nineteenth-century theorists invented pseudo-scientific racial antisemitism → falsely claimed Jewishness lived permanently in blood"
+          },
+          {
+            "hint": "No escape route",
+            "bullet": "Hitler made biological racism core Nazi ideology → conversion could never save anyone from persecution"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Social Darwinist distortion",
+            "bullet": "Pseudo-scientists twisted Darwin's evolutionary ideas → ranked human groups into fake superior and inferior races"
+          },
+          {
+            "hint": "Economic scapegoating",
+            "bullet": "The 1929 Great Depression shattered Weimar Germany → Nazis exploited mass unemployment to peddle racial scapegoating"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RELIGIOUS VS RACIAL",
+            "stem": "Whereas medieval anti-Judaism targeted religious ____________, nineteenth-century racial theorists falsely claimed identity was fixed in ____________."
+          },
+          {
+            "badge": "CONVERSION BARRED",
+            "stem": "Under biological racism, even Christian ____________ offered zero escape from ____________ persecution."
+          },
+          {
+            "badge": "TOTALITARIAN CORE",
+            "stem": "Adolf Hitler placed this ____________ racial theory at the centre of the Nazi ____________ worldview."
+          }
+        ],
+        "watch_out": "Do not say Hitler invented antisemitism—he fused centuries-old anti-Jewish prejudice with nineteenth-century pseudo-scientific racial theory.",
+        "prose_hash": "c915e6f3a5",
+        "prose_fp": "5733d512",
+        "question_hash": "836b16e16b"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Storefront intimidation",
+            "bullet": "On 1 April 1933, uniformed SA picketed Jewish shops → painted Jude across display windows"
+          },
+          {
+            "hint": "Professional boycott",
+            "bullet": "SA placards warned Germans away from Jewish doctors, lawyers, and stores → crippled independent livelihoods"
+          },
+          {
+            "hint": "State job purge",
+            "bullet": "7 April Civil Service Law → sacked Jewish judges, teachers, and civil servants from state posts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dictatorial powers",
+            "bullet": "March 1933 Enabling Act gave Hitler decree power → let Nazis pass discriminatory laws without parliament"
+          },
+          {
+            "hint": "Patriotic veterans betrayed",
+            "bullet": "Integrated German Jewish professionals and WWI families → saw decades of loyal civic service erased overnight"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NATIONWIDE BOYCOTT",
+            "stem": "On 1 April 1933, uniformed ____________ troopers picketed Jewish shops and smeared ____________ across storefront glass."
+          },
+          {
+            "badge": "TARGETED PROFESSIONS",
+            "stem": "Boycott placards also warned German citizens not to visit Jewish ____________ or ____________."
+          },
+          {
+            "badge": "LEGAL PURGE",
+            "stem": "Days later, the ____________ Service Law dismissed Jewish ____________, teachers, and officials from state posts."
+          }
+        ],
+        "watch_out": "Persecution began immediately in spring 1933 through street intimidation and laws—not suddenly with death camps during the war.",
+        "prose_hash": "3829670d86",
+        "prose_fp": "113b7cd3",
+        "question_hash": "958649a6be"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Loss of rights",
+            "bullet": "Reich Citizenship Law revoked full citizenship → downgraded German Jews to powerless subjects of the state"
+          },
+          {
+            "hint": "Marriage ban",
+            "bullet": "Blood and Honour Law banned intermarriage and relationships → criminalised family ties between Jews and Germans"
+          },
+          {
+            "hint": "Ancestry chart",
+            "bullet": "Three or four Jewish grandparents meant racial classification as Jewish → ignored personal faith or conversion"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Biological race theory",
+            "bullet": "Turned nineteenth-century racial antisemitism into criminal law → defined identity strictly by grandparental bloodline"
+          },
+          {
+            "hint": "Olympic facade",
+            "bullet": "Nazis hid anti-Jewish signs for the 1936 Berlin Olympics → masked legal racism from foreigners"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CITIZENSHIP REVOKED",
+            "stem": "Under the Reich ____________ Law, German Jews lost voting rights and became mere ____________ of the state."
+          },
+          {
+            "badge": "BLOOD AND HONOUR",
+            "stem": "A second decree criminalised ____________ and relationships between Jews and ____________ citizens."
+          },
+          {
+            "badge": "GRANDPARENT RULE",
+            "stem": "State charts classified anyone with ____________ or four Jewish ____________ as Jewish regardless of religion."
+          }
+        ],
+        "watch_out": "The Nuremberg Laws judged ancestry rather than religion—Christian converts with three Jewish grandparents were still legally classified as Jews.",
+        "prose_hash": "0debf76e11",
+        "prose_fp": "f79a9412",
+        "question_hash": "9ccf61fc71"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Forced business sales",
+            "bullet": "Systematic Aryanization forced Jewish owners to sell shops cheaply → transferred wealth to non-Jewish buyers"
+          },
+          {
+            "hint": "Public segregation",
+            "bullet": "Over 400 decrees barred Jews from schools, parks, and cinemas → enforced humiliating daily segregation"
+          },
+          {
+            "hint": "Private isolation",
+            "bullet": "Bans on radios and pets alongside neighbours shunning them → isolated Jewish families in social death"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Economic impoverishment",
+            "bullet": "Stripping livelihoods and savings → left families too poor to afford steep foreign emigration fees"
+          },
+          {
+            "hint": "Ordinary profiteers",
+            "bullet": "German competitors bought Jewish firms at rock-bottom prices → gave ordinary citizens a stake in persecution"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ECONOMIC SEIZURE",
+            "stem": "Through forced ____________, Jewish owners had to sell businesses and factories at ____________ prices."
+          },
+          {
+            "badge": "PUBLIC BANISHMENT",
+            "stem": "More than ____________ decrees excluded Jews from state schools, cinemas, parks, and ordinary ____________."
+          },
+          {
+            "badge": "SOCIAL DEATH",
+            "stem": "Forbidden from owning ____________ or pets and shunned by ____________, families suffered total civic isolation."
+          }
+        ],
+        "watch_out": "Social death happened before physical ghetto walls—hundreds of everyday council and state rules cut Jews off from neighbours.",
+        "prose_hash": "cb436e9235",
+        "prose_fp": "03d15dc5",
+        "question_hash": "a32be7d067"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Coordinated terror",
+            "bullet": "Goebbels unleashed SA, SS, and Hitler Youth → burned 1,400 synagogues and smashed 7,500 Jewish businesses"
+          },
+          {
+            "hint": "Murders and arrests",
+            "bullet": "At least 91 Jews were murdered and 30,000 men arrested → deported to brutal concentration camps"
+          },
+          {
+            "hint": "Blaming the victims",
+            "bullet": "Nazis fined the Jewish community one billion marks → forced victims to pay for state-ordered damage"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Expanded Reich",
+            "bullet": "Germany's March 1938 Anschluss with Austria → exposed Vienna's large Jewish population to November pogrom terror"
+          },
+          {
+            "hint": "Escalating turning point",
+            "bullet": "Shifted persecution from legal discrimination to nationwide lethal violence → convinced families they had to flee"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COORDINATED POGROM",
+            "stem": "Unleashed by ____________ across 9–10 November 1938, squads burned over ____________ synagogues and trashed 7,500 shops."
+          },
+          {
+            "badge": "MASS ARRESTS",
+            "stem": "Alongside ninety-one murders, the Gestapo rounded up ____________ Jewish men for ____________ camps."
+          },
+          {
+            "badge": "CYNICAL EXTORTION",
+            "stem": "Adding insult to terror, Berlin imposed a ____________-mark fine on ____________ victims for the damage."
+          }
+        ],
+        "watch_out": "Nazis claimed Kristallnacht was spontaneous public anger—in reality, Goebbels, the SA, and the SS centrally coordinated the attacks.",
+        "prose_hash": "60e1e97095",
+        "prose_fp": "0dd40cd5",
+        "question_hash": "9ebc6493a3"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Évian failure",
+            "bullet": "Thirty-two nations met at Évian in July 1938 → offered sympathy while keeping immigration borders closed"
+          },
+          {
+            "hint": "Visa barriers",
+            "bullet": "Strict foreign quotas blocked tens of thousands at consulates → trapped families inside Nazi territory"
+          },
+          {
+            "hint": "British child rescue",
+            "bullet": "Britain's Kindertransport saved nearly 10,000 unaccompanied children → parents were barred and most perished"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Depression-era fears",
+            "bullet": "High 1930s unemployment and domestic antisemitism → made Western governments reluctant to admit adult refugees"
+          },
+          {
+            "hint": "Stripped of wealth",
+            "bullet": "Nazi flight taxes and Aryanization → left desperate refugees penniless when foreign states demanded financial guarantees"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GLOBAL INACTION",
+            "stem": "At the July 1938 ____________ Conference, delegates from ____________ nations refused to open their borders."
+          },
+          {
+            "badge": "RARE LIFELINE",
+            "stem": "Between December 1938 and August 1939, Britain's ____________ rescued nearly ____________ unaccompanied refugee children."
+          },
+          {
+            "badge": "PAINFUL SEPARATION",
+            "stem": "Because British visas excluded ____________, most rescued children never saw their ____________ again."
+          }
+        ],
+        "watch_out": "German Jews did not simply fail to leave in time—Nazi wealth seizures and closed foreign borders trapped families.",
+        "prose_hash": "4283ec8add",
+        "prose_fp": "234a9a6f",
+        "question_hash": "30b1bdc24d"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "September conquest",
+            "bullet": "Invading western Poland in September 1939 → placed over two million Polish Jews under Nazi control"
+          },
+          {
+            "hint": "Scale jump",
+            "bullet": "Captured ten times Germany's remaining Jewish population → made pre-war forced emigration plans unworkable"
+          },
+          {
+            "hint": "Heydrich's Schnellbrief",
+            "bullet": "Heydrich's 21 September express letter → ordered rural Jews concentrated into cities near railway junctions"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Eastern Yiddish heartland",
+            "bullet": "Poland held Europe's largest Yiddish-speaking community → Nazi conquest trapped vibrant historic centres like Warsaw"
+          },
+          {
+            "hint": "Railway groundwork",
+            "bullet": "Concentrating families beside major rail hubs in 1939 → later enabled rapid mass deportations to camps"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TERRITORIAL SHOCK",
+            "stem": "Germany's September 1939 invasion of ____________ placed over ____________ Polish Jews under Nazi occupation."
+          },
+          {
+            "badge": "DEMOGRAPHIC MULTIPLIER",
+            "stem": "This captured population was ____________ times larger than the Jewish community still left inside ____________."
+          },
+          {
+            "badge": "HEYDRICH'S DIRECTIVE",
+            "stem": "In his secret ____________, Reinhard Heydrich ordered rural communities moved into cities with ____________ junctions."
+          }
+        ],
+        "watch_out": "Heydrich's September 1939 Schnellbrief did not yet build gas chambers—it concentrated Jews near rail hubs for future deportation.",
+        "prose_hash": "d371c57d20",
+        "prose_fp": "5005b10a",
+        "question_hash": "892d493a77"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Visible marking",
+            "bullet": "Compulsory Star of David armbands from age ten → marked Polish Jews for street abuse"
+          },
+          {
+            "hint": "Brutal street labour",
+            "bullet": "Mass roundups forced Jewish men into labour gangs → cleared rubble under humiliating guard"
+          },
+          {
+            "hint": "Stripping community defences",
+            "bullet": "Frozen bank accounts, seized firms, and executed leaders → left communities impoverished and defenceless"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Faster than Germany",
+            "bullet": "Six years of gradual German decrees → escalated into immediate violent plunder across occupied Poland"
+          },
+          {
+            "hint": "Slavic occupation rule",
+            "bullet": "Nazi racial rule treated occupied Poland brutally → stripped Polish courts and police of any protection"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PUBLIC MARKING",
+            "stem": "Ordered from November 1939, white armbands bearing a blue ____________ marked everyone aged ____________ and older."
+          },
+          {
+            "badge": "FORCED LABOUR",
+            "stem": "Occupation police seized Jewish men to clear ____________ and dig ditches in brutal ____________ gangs."
+          },
+          {
+            "badge": "ECONOMIC PLUNDER",
+            "stem": "Authorities froze ____________ accounts, confiscated businesses without pay, and shot ____________ leaders."
+          }
+        ],
+        "watch_out": "Compulsory Jewish badges began in occupied Poland in late 1939—nearly two years before the yellow star was enforced inside Germany.",
+        "prose_hash": "1d948615e7",
+        "prose_fp": "b36faef0",
+        "question_hash": "8229584931"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Physical barrier",
+            "bullet": "Three-metre brick walls topped with barbed wire → sealed Warsaw's ghetto completely off from the city"
+          },
+          {
+            "hint": "Extreme overcrowding",
+            "bullet": "Over 450,000 people packed into 1.3 square miles → jammed seven to nine per room"
+          },
+          {
+            "hint": "Lethal isolation",
+            "bullet": "Cut phone and postal links plus shoot-to-kill gate guards → trapped families without outside contact"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wider ghetto network",
+            "bullet": "Hundreds of ghettos opened across Łódź, Kraków, and Lublin → imprisoned Polish Jewry ahead of deportations"
+          },
+          {
+            "hint": "Manufactured health excuse",
+            "bullet": "Nazis falsely claimed ghettos quarantined disease → overcrowding itself triggered the deadly epidemics that followed"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BRICK ENCLOSURE",
+            "stem": "Behind a ____________-metre brick wall topped with barbed wire, Warsaw became Europe's ____________ ghetto."
+          },
+          {
+            "badge": "CRUSHING DENSITY",
+            "stem": "Cramming ____________ people into just 1.3 square miles meant ____________ to nine shared each room."
+          },
+          {
+            "badge": "TOTAL CUT-OFF",
+            "stem": "Disconnected phone lines and armed guards under ____________ orders isolated prisoners from outside ____________."
+          }
+        ],
+        "watch_out": "Ghettos were not death camps with gas chambers—they were sealed urban prison districts where starvation and disease killed tens of thousands.",
+        "prose_hash": "e16dde0b82",
+        "prose_fp": "4f42cf30",
+        "question_hash": "ba52ff0fd5"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Starvation rations",
+            "bullet": "Official rations gave just 180 to 220 calories daily → deliberately starved Warsaw's imprisoned families"
+          },
+          {
+            "hint": "Mass mortality",
+            "bullet": "Hunger and typhus killed over 80,000 Warsaw residents by 1942 → corpses lined morning pavements"
+          },
+          {
+            "hint": "Lifeline through walls",
+            "bullet": "Small children squeezed through drains and wall gaps → smuggled vital flour, potatoes, and medicine inside"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Deadly shoot-on-sight risk",
+            "bullet": "German guards held orders to shoot smugglers at the wall → young children risked execution daily"
+          },
+          {
+            "hint": "Indirect mass murder",
+            "bullet": "Cutting food and sanitation turned ghettos into death traps → killed tens of thousands before deportations"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WEAPONIZED HUNGER",
+            "stem": "Allotting barely ____________ to 220 calories a day caused over ____________ deaths in Warsaw by 1942."
+          },
+          {
+            "badge": "CHILD LIFELINE",
+            "stem": "Tiny child smugglers crawled through ____________ grates and wall gaps to bring in ____________ and medicine."
+          },
+          {
+            "badge": "LETHAL RISK",
+            "stem": "Every smuggling run defied instant ____________ if caught by ____________ police patrolling the wall."
+          }
+        ],
+        "watch_out": "Ghetto starvation was not an accidental wartime shortage—Nazi officials deliberately calculated 180-calorie rations below human survival levels.",
+        "prose_hash": "a5459d2c3e",
+        "prose_fp": "c1ed699e",
+        "question_hash": "b6465356da"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Underground historians",
+            "bullet": "Historian Emanuel Ringelblum founded the secret Oyneg Shabes team → gathered diaries, decrees, and testimonies"
+          },
+          {
+            "hint": "Hidden metal caches",
+            "bullet": "Sealed thousands of pages inside metal milk cans → buried them deep beneath Warsaw ghetto cellars"
+          },
+          {
+            "hint": "Defeating Nazi erasure",
+            "bullet": "Ensured authentic Jewish voices survived ghetto destruction → proved Nazi crimes from the victims' own perspective"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wider spiritual defiance",
+            "bullet": "Secret schools, soup kitchens, and concerts inside Warsaw → defended human dignity before armed revolt began"
+          },
+          {
+            "hint": "Post-war historical proof",
+            "bullet": "Milk cans unearthed from Warsaw's ruins after 1945 → remain UNESCO-listed primary evidence of ghetto life"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SECRET ARCHIVE",
+            "stem": "Led by historian ____________, the underground ____________ archive collected diaries, decrees, and eyewitness reports."
+          },
+          {
+            "badge": "BURIED CACHES",
+            "stem": "Before the ghetto's destruction, researchers sealed records inside metal ____________ beneath Warsaw ____________."
+          },
+          {
+            "badge": "TRUTH OVER TERROR",
+            "stem": "Unearthed after 1945, these records ensured ____________ voices outlived Nazi attempts to erase the ____________."
+          }
+        ],
+        "watch_out": "Resistance was not only armed fighting—secret schools, soup kitchens, and Ringelblum's archive were vital acts of spiritual resistance.",
+        "prose_hash": "63ae38b5ef",
+        "prose_fp": "e17dfe10",
+        "question_hash": "179000ccb7"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Ideological crusade",
+            "bullet": "Hitler designed June 1941's invasion as a Vernichtungskrieg → waged racial extermination rather than normal warfare"
+          },
+          {
+            "hint": "Judeo-Bolshevism lie",
+            "bullet": "Conspiracy propaganda falsely linked Soviet communism to Jews → cast every Soviet Jew as an enemy"
+          },
+          {
+            "hint": "Illegal execution orders",
+            "bullet": "Pre-invasion Commissar Order scrapped military law → ordered troops to shoot Soviet political officers without trial"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Vast eastern population",
+            "bullet": "Invading Soviet territory trapped millions more Eastern European Jews → escalated Nazi policy into mass murder"
+          },
+          {
+            "hint": "Lebensraum ambition",
+            "bullet": "Hitler sought eastern living space for German settlers → planned starvation and enslavement across Soviet lands"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RACIAL ANNIHILATION",
+            "stem": "Launched on 22 June 1941, Operation ____________ was planned as an ideological war of ____________."
+          },
+          {
+            "badge": "CONSPIRACY MYTH",
+            "stem": "Nazi propaganda pushed the ____________ myth, falsely claiming Jews secretly controlled Soviet ____________."
+          },
+          {
+            "badge": "ILLEGAL DIRECTIVE",
+            "stem": "Breaking the laws of war, the ____________ Order instructed soldiers to execute political officers without ____________."
+          }
+        ],
+        "watch_out": "The regular German army—the Wehrmacht—was not clean of war crimes; generals issued the illegal Commissar Order alongside the SS.",
+        "prose_hash": "8641cbf7e6",
+        "prose_fp": "8e550a38",
+        "question_hash": "9fba6a22f2"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Mobile death squads",
+            "bullet": "Four SS Einsatzgruppen squads followed advancing army lines → hunted Jewish communities town by town"
+          },
+          {
+            "hint": "Order Police backup",
+            "bullet": "Militarized Order Police battalions reinforced small SS squads → supplied manpower to cordon and shoot civilians"
+          },
+          {
+            "hint": "Total family executions",
+            "bullet": "Escalated in August 1941 to murdering women and children → shot 1.5 million beside open ravines"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Reversed transport logic",
+            "bullet": "Instead of deporting victims to camps → mobile killers marched straight to Eastern European hometowns"
+          },
+          {
+            "hint": "Wehrmacht logistics",
+            "bullet": "Front-line German army units supplied trucks, ammunition, and cordons → enabled rapid behind-the-lines massacres"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MOBILE SQUADS",
+            "stem": "Trailing directly behind Wehrmacht combat divisions, four mobile SS ____________ and ____________ Police rounded up townsfolk."
+          },
+          {
+            "badge": "AUGUST ESCALATION",
+            "stem": "From August 1941, killings expanded to entire communities, executing ____________ and ____________ beside open pits."
+          },
+          {
+            "badge": "HOLOCAUST BY BULLETS",
+            "stem": "Across Soviet territory, face-to-face mass shootings murdered more than ____________ Jewish civilians."
+          }
+        ],
+        "watch_out": "Roughly a quarter of all Shoah victims died not in gas chambers, but in open-air mass shootings across Eastern Europe.",
+        "prose_hash": "eb2b190826",
+        "prose_fp": "a79f2112",
+        "question_hash": "8a655f2bbe"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Forced march",
+            "bullet": "Sonderkommando 4a and Order Police marched Kyiv's Jews out → stripped their valuables and clothing"
+          },
+          {
+            "hint": "Ravine slaughter",
+            "bullet": "Victims were forced into Babyn Yar gorge in layers → 33,771 murdered inside thirty-six hours"
+          },
+          {
+            "hint": "Chilling paperwork",
+            "bullet": "Commanders tallied every murder in exact reports to Berlin → proved systematic state-directed genocide"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Deceptive wall posters",
+            "bullet": "Posters ordered Kyiv's Jews to assemble with luggage for resettlement → tricked families into compliance"
+          },
+          {
+            "hint": "Wider ravine killings",
+            "bullet": "Nazis continued using Babyn Yar for two years → also murdered Soviet prisoners, Roma, and partisans"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KYIV DECEPTION",
+            "stem": "Outside Kyiv on 29 September 1941, ____________ 4a and Order Police forced victims to undress at ____________."
+          },
+          {
+            "badge": "THIRTY-SIX HOURS",
+            "stem": "Driven down into the ravine in layers, ____________ Jewish residents were shot dead within ____________ hours."
+          },
+          {
+            "badge": "BUREAUCRATIC RECORD",
+            "stem": "Squad officers filed exact numerical ____________ to Berlin, proving the massacre was centrally ____________."
+          }
+        ],
+        "watch_out": "Babyn Yar was not chaotic battlefield violence—commanders logged the exact figure of 33,771 victims in official reports to Berlin.",
+        "prose_hash": "3ca3c2fa43",
+        "prose_fp": "5cbbcf4c",
+        "question_hash": "d1d1470583"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Local volunteer units",
+            "bullet": "Lithuanian and Latvian auxiliary police volunteered alongside Germans → identified, guarded, and shot Jewish neighbours"
+          },
+          {
+            "hint": "Ponary Forest pits",
+            "bullet": "Killers executed over 70,000 victims in Ponary Forest → devastated historic Vilnius within months"
+          },
+          {
+            "hint": "Baltic death toll",
+            "bullet": "Local manpower multiplied small SS squads → enabled Einsatzgruppe A to murder 250,000 inside six months"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Jerusalem of North",
+            "bullet": "Vilna's centuries-old Yiddish academies and libraries → were virtually wiped out at nearby Ponary Forest"
+          },
+          {
+            "hint": "Anti-Soviet scapegoating",
+            "bullet": "Local nationalists blamed Jews for earlier 1940 Soviet occupation → fuelled deadly collaboration with Nazi invaders"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LOCAL AUXILIARIES",
+            "stem": "Volunteer auxiliary police from ____________ and ____________ helped German squads identify, guard, and shoot neighbours."
+          },
+          {
+            "badge": "PONARY FOREST",
+            "stem": "In wooded pits outside Vilnius at ____________ Forest, killers murdered more than ____________ Jewish victims."
+          },
+          {
+            "badge": "RAPID DESTRUCTION",
+            "stem": "Backed by local collaborators, ____________ A slaughtered nearly ____________ people across the Baltics in six months."
+          }
+        ],
+        "watch_out": "The Einsatzgruppen numbered only around 3,000 men—they relied heavily on tens of thousands of Order Police and local auxiliaries.",
+        "prose_hash": "c46a15d260",
+        "prose_fp": "f1e24094",
+        "question_hash": "de57bb1e97"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Minsk inspection shock",
+            "bullet": "Himmler grew physically sick watching a Minsk shooting → feared open-air executions damaged SS morale"
+          },
+          {
+            "hint": "Perpetrator psychological strain",
+            "bullet": "Executioners suffered nervous breakdowns and heavy drinking → pushed commanders to distance killers from victims"
+          },
+          {
+            "hint": "Chełmno exhaust trucks",
+            "bullet": "Chełmno introduced sealed vans pumping carbon monoxide exhaust → bridged shootings and stationary death camps"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Prior T4 gassing",
+            "bullet": "Nazi technicians had already tested carbon monoxide murdering disabled patients → transferred killing methods eastwards"
+          },
+          {
+            "hint": "Secrecy problem",
+            "bullet": "Open ravine shootings left public witnesses and slow logistics → drove the shift to enclosed camps"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PERPETRATOR STRAIN",
+            "stem": "Shaken during an August 1941 shooting in ____________, Himmler worried about ____________ breakdowns and heavy drinking."
+          },
+          {
+            "badge": "KILLERS' PERSPECTIVE",
+            "stem": "Seeking methods easier on the ____________, Nazi leaders shifted away from face-to-face ____________ executions."
+          },
+          {
+            "badge": "EXHAUST VANS",
+            "stem": "At ____________ in occupied Poland, victims were asphyxiated inside sealed trucks using ____________ exhaust."
+          }
+        ],
+        "watch_out": "Nazis sought 'more humane' killing purely to spare SS shooters psychological stress—never out of mercy toward Jewish victims.",
+        "prose_hash": "f88eaf2d1f",
+        "prose_fp": "e3c271c4",
+        "question_hash": "78e5be893e"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "State ministry alignment",
+            "bullet": "Heydrich united fifteen SS officers and ministry civil servants → aligned government departments behind continental murder"
+          },
+          {
+            "hint": "Railway transport deals",
+            "bullet": "Secured full transport and legal coordination → turned deportations into a smooth bureaucratic state operation"
+          },
+          {
+            "hint": "Eichmann's continental list",
+            "bullet": "Adolf Eichmann tabulated eleven million European Jews → targeted communities across occupied, allied, and neutral states"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Killings already underway",
+            "bullet": "Mass shootings and Chełmno gassings had already begun → Wannsee coordinated continent-wide bureaucracy, not the decision"
+          },
+          {
+            "hint": "Educated bureaucrats",
+            "bullet": "Over half the Wannsee attendees held university doctorates → showed educated civil servants driving genocide"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NINETY-MINUTE SUMMIT",
+            "stem": "Chaired by ____________ on 20 January 1942, fifteen officials aligned civil ministries and ____________ logistics."
+          },
+          {
+            "badge": "CONTINENTAL TARGET",
+            "stem": "Recording the minutes, ____________ presented a list marking ____________ million European Jews for destruction."
+          },
+          {
+            "badge": "STATE MACHINERY",
+            "stem": "Rather than debating whether to kill, Wannsee ensured smooth ____________ cooperation for the ____________ Solution."
+          }
+        ],
+        "watch_out": "Hitler did not attend Wannsee, nor did Wannsee start the killing—mass shootings and Chełmno gassings were already underway.",
+        "prose_hash": "c117ec263c",
+        "prose_fp": "e3f4fcb2",
+        "question_hash": "2b7e28818f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Zero labour selection",
+            "bullet": "Built with no barracks for slave workers → existed solely to murder deportees immediately upon arrival"
+          },
+          {
+            "hint": "Fake station deception",
+            "bullet": "Disguised ramps and shower lies calmed crowds → carbon monoxide killed victims within two hours"
+          },
+          {
+            "hint": "Staggering Polish toll",
+            "bullet": "Murdered roughly 1.7 million Jews across 1942–1943 → destroyed Poland's ancient ghettos before dismantling"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Emptying Polish ghettos",
+            "bullet": "Ghettos in Warsaw, Lublin, and Kraków were liquidated → rail cattle cars fed Operation Reinhard ramps"
+          },
+          {
+            "hint": "Erasing physical evidence",
+            "bullet": "SS demolished Treblinka, Sobibór, and Bełżec in 1943 → planted trees over ground to hide crimes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SOLE PURPOSE",
+            "stem": "Under Operation ____________, Bełżec, Sobibór, and Treblinka held zero ____________ selection and existed solely for murder."
+          },
+          {
+            "badge": "TWO-HOUR DECEPTION",
+            "stem": "Deceived by fake transit stations and ____________ claims, deportees died from ____________ within two hours."
+          },
+          {
+            "badge": "MASSIVE DEATH TOLL",
+            "stem": "Before being dismantled in 1943, these three Polish death camps murdered roughly ____________ Jewish people."
+          }
+        ],
+        "watch_out": "Do not confuse concentration camps with Operation Reinhard death camps—Treblinka, Bełżec, and Sobibór murdered almost everyone within hours.",
+        "prose_hash": "325c2e3d7a",
+        "prose_fp": "796337ab",
+        "question_hash": "f81fc56933"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Dual camp system",
+            "bullet": "Combined giant slave-labour factories with Birkenau gas chambers → exploited strength before murdering the weak"
+          },
+          {
+            "hint": "Ramp doctor selection",
+            "bullet": "SS doctors sorted arriving cattle-train crowds → tattooed healthy adults while sending children straight to death"
+          },
+          {
+            "hint": "Cyanide gas chambers",
+            "bullet": "Zyklon B pellets dropped into underground chambers → murdered 1.1 million victims, including one million Jews"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Continental rail hub",
+            "bullet": "Direct rail spurs linked southern Poland across Europe → brought deportees from France, Greece, and Hungary"
+          },
+          {
+            "hint": "Industrial corporate profit",
+            "bullet": "German corporations like IG Farben used prisoner slave labour → profited directly from starving camp inmates"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DUAL FUNCTION",
+            "stem": "Unlike pure Reinhard camps, ____________ functioned as both a ____________ camp and an extermination centre."
+          },
+          {
+            "badge": "RAMP SELECTION",
+            "stem": "Upon arrival, SS doctors tattooed adults fit for ____________ while directing children and elderly to ____________."
+          },
+          {
+            "badge": "INDUSTRIAL POISON",
+            "stem": "Dropping ____________ pellets through ceiling vents, perpetrators murdered at least ____________ people at Auschwitz."
+          }
+        ],
+        "watch_out": "Not every camp used gas chambers—Dachau and Bergen-Belsen were concentration camps inside Germany, whereas Auschwitz-Birkenau operated industrial gas chambers.",
+        "prose_hash": "6003ec8276",
+        "prose_fp": "18f56238",
+        "question_hash": "ea40b48353"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Youth combat groups",
+            "bullet": "Mordechai Anielewicz's ŻOB and the ŻZW ambushed SS troops → chose armed defiance over Treblinka deportation"
+          },
+          {
+            "hint": "Improvised street weapons",
+            "bullet": "Fought German tanks using smuggled pistols, grenades, and petrol bombs → held out twenty-seven days"
+          },
+          {
+            "hint": "Scorched-earth suppression",
+            "bullet": "General Jürgen Stroop burned apartments block by block → proved poorly armed civilians stalled SS forces"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Prior summer deportations",
+            "bullet": "Summer 1942 deportations had already emptied most of Warsaw → remaining youths knew trains meant Treblinka"
+          },
+          {
+            "hint": "Shattering passivity myths",
+            "bullet": "Warsaw's ghetto held out longer than Poland or France in battle → inspired uprisings elsewhere"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARMED DEFIANCE",
+            "stem": "When SS units entered Warsaw in April 1943, ____________ fighters led by ____________ ambushed them."
+          },
+          {
+            "badge": "UNEQUAL ARMS",
+            "stem": "Wielding smuggled ____________ and petrol bombs against German tanks, fighters resisted for ____________ days."
+          },
+          {
+            "badge": "BRUTAL REPRISAL",
+            "stem": "General Jürgen ____________ only crushed the revolt by burning the entire ghetto ____________ by block."
+          }
+        ],
+        "watch_out": "Warsaw's fighters knew they could not militarily defeat the German army—they fought to die with dignity on their own terms.",
+        "prose_hash": "a331420435",
+        "prose_fp": "d303a507",
+        "question_hash": "c6d44222ed"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Treblinka armoury raid",
+            "bullet": "August 1943 Treblinka prisoners raided the SS armoury → torched camp buildings and helped 300 escape"
+          },
+          {
+            "hint": "Sobibór mass breakout",
+            "bullet": "October 1943 underground fighters ambushed SS officers at Sobibór → enabled 300 inmates to break free"
+          },
+          {
+            "hint": "Auschwitz crematorium blast",
+            "bullet": "October 1944 Sonderkommando prisoners used smuggled explosives → blew up Crematorium IV inside Birkenau"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Female gunpowder couriers",
+            "bullet": "Young Jewish women in munitions factories smuggled gunpowder in pockets → supplied the Birkenau revolt"
+          },
+          {
+            "hint": "Forced camp closures",
+            "bullet": "Uprisings at Treblinka and Sobibór accelerated SS demolitions → shut both killing centres permanently in 1943"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TREBLINKA RAID",
+            "stem": "In August 1943, prisoners raided the ____________ armoury, set buildings ablaze, and enabled ____________ to escape."
+          },
+          {
+            "badge": "SOBIBÓR BREAKOUT",
+            "stem": "Two months later at ____________, an underground committee led another mass breakout of ____________ inmates."
+          },
+          {
+            "badge": "BIRKENAU SABOTAGE",
+            "stem": "Using smuggled explosives in October 1944, Jewish ____________ prisoners blew up ____________ IV at Auschwitz."
+          }
+        ],
+        "watch_out": "Prisoners resisted even inside heavily guarded death camps—uprisings occurred in all three major killing centres of Treblinka, Sobibór, and Auschwitz.",
+        "prose_hash": "a42f008ba9",
+        "prose_fp": "a3db04a7",
+        "question_hash": "fbd90387a1"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Paperwork perpetrators",
+            "bullet": "Civil servants and lawyers acted as desk murderers → drafted citizenship bans and confiscation decrees"
+          },
+          {
+            "hint": "State railway timetables",
+            "bullet": "Deutsche Reichsbahn clerks scheduled deportation cattle trains → kept death-camp transports running alongside military traffic"
+          },
+          {
+            "hint": "Per-kilometre billing",
+            "bullet": "Railway accountants billed the SS per passenger kilometre → treated human murder like routine freight"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wannsee coordination",
+            "bullet": "Following the 1942 Wannsee summit → ordinary German ministries worked seamlessly with Eichmann's transport office"
+          },
+          {
+            "hint": "Hilberg's insight",
+            "bullet": "Historian Raul Hilberg proved genocide needed ordinary professionals → accountants and timetable clerks never fired guns"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DESK MURDERERS",
+            "stem": "Historian Raul ____________ showed that civil servants and ____________ enabled genocide from behind office desks."
+          },
+          {
+            "badge": "RAILWAY LOGISTICS",
+            "stem": "Clerks at the Deutsche ____________ scheduled deportation trains to death camps alongside wartime ____________ traffic."
+          },
+          {
+            "badge": "COLD ACCOUNTING",
+            "stem": "Treating victims like ordinary passengers, railway staff billed the SS per ____________ travelled."
+          }
+        ],
+        "watch_out": "Perpetrators were not only sadistic SS camp guards—unarmed railway clerks, lawyers, and tax officials made continental deportation possible.",
+        "prose_hash": "db8d86f631",
+        "prose_fp": "ac2e8475",
+        "question_hash": "61bac510a8"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Paris stadium roundup",
+            "bullet": "French police under Vichy carried out July 1942 Vel' d'Hiv arrests → seized over 13,000 Jews"
+          },
+          {
+            "hint": "Rapid Hungarian deportations",
+            "bullet": "Hungarian officials and gendarmes assisted Eichmann in 1944 → deported 437,000 Jews inside fifty-four days"
+          },
+          {
+            "hint": "Continental manpower",
+            "bullet": "Local police and railway crews enforced roundups → allowed small SS teams to murder across Europe"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Eastern auxiliary pattern",
+            "bullet": "Matched earlier Baltic collaboration in 1941 → proved local regimes across West and East aided Nazis"
+          },
+          {
+            "hint": "Late-war Auschwitz surge",
+            "bullet": "Spring 1944 Hungarian transports overwhelmed Birkenau → produced the deadliest two months in Auschwitz's history"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VICHY ROUNDUP",
+            "stem": "In July 1942, ____________ police under the collaborationist Vichy regime arrested over ____________ Jews in Paris."
+          },
+          {
+            "badge": "HUNGARIAN SPEED",
+            "stem": "Working alongside Adolf Eichmann in 1944, ____________ authorities deported ____________ people to Auschwitz in fifty-four days."
+          },
+          {
+            "badge": "CONTINENTAL CRIME",
+            "stem": "Without foreign ____________ forces and local railway staff, small SS units could not have deported whole ____________."
+          }
+        ],
+        "watch_out": "German SS troops did not carry out the Paris Vel' d'Hiv roundup—uniformed French police arrested Jewish families themselves.",
+        "prose_hash": "2f3b26e9d2",
+        "prose_fp": "8f55392d",
+        "question_hash": "ea3bd3edd3"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Public street silence",
+            "bullet": "Millions watched neighbours marched to train stations → fear and indifference stopped public protest"
+          },
+          {
+            "hint": "Municipal auction bargains",
+            "bullet": "Townspeople bid at public auctions for stolen furniture and clothing → profited directly from deportations"
+          },
+          {
+            "hint": "Seized family homes",
+            "bullet": "Neighbours moved into emptied Jewish apartments → gained material interest in victims never returning"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Kershaw's verdict",
+            "bullet": "Historian Ian Kershaw noted hatred built the road to Auschwitz → everyday indifference paved it"
+          },
+          {
+            "hint": "Post-war homecoming hostility",
+            "bullet": "Wartime seizure of Jewish homes → fuelled bitter hostility when rare survivors returned in 1945"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SILENT MAJORITY",
+            "stem": "Intimidated by terror or indifferent, millions of ____________ stood watching neighbours marched toward ____________ stations."
+          },
+          {
+            "badge": "MATERIAL GREED",
+            "stem": "Ordinary citizens bought stolen furniture at public ____________ and moved into ____________ stripped from deportees."
+          },
+          {
+            "badge": "KERSHAW'S INSIGHT",
+            "stem": "Historian Ian Kershaw argued the road to Auschwitz was built by ____________, yet paved with ____________."
+          }
+        ],
+        "watch_out": "Bystanders were not always neutral—buying auctioned Jewish possessions or claiming empty flats made ordinary neighbours complicit beneficiaries.",
+        "prose_hash": "bad50e9cfe",
+        "prose_fp": "4b9c2ef7",
+        "question_hash": "11c9e843f9"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Danish nationwide mobilisation",
+            "bullet": "After October 1943 roundup plans leaked → hospitals, neighbours, and fishermen hid Denmark's Jewish citizens"
+          },
+          {
+            "hint": "Sea crossing to Sweden",
+            "bullet": "Fishing boats ferried 7,200 Jews across the Øresund → saved ninety-nine percent in neutral Sweden"
+          },
+          {
+            "hint": "French mountain sanctuary",
+            "bullet": "Pastor André Trocmé's village of Le Chambon-sur-Lignon → sheltered roughly 3,500 refugees from Vichy police"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Yad Vashem honour",
+            "bullet": "Non-Jews who risked execution to save Jewish lives → are honoured as Righteous Among the Nations"
+          },
+          {
+            "hint": "Proof of choice",
+            "bullet": "Collective rescue in Denmark and Le Chambon → proved ordinary communities still retained moral agency"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DANISH SEA RESCUE",
+            "stem": "Warned of Gestapo roundups in October 1943, Danish fishermen ferried ____________ Jews across to neutral ____________."
+          },
+          {
+            "badge": "NEAR-TOTAL SURVIVAL",
+            "stem": "Collective civic action meant over ____________ percent of Denmark's Jewish community survived Nazi ____________."
+          },
+          {
+            "badge": "VILLAGE REFUGE",
+            "stem": "Led by Pastor André ____________, villagers in ____________ sheltered around 3,500 Jewish refugees in France."
+          }
+        ],
+        "watch_out": "Rescue remained tragically rare across Europe—Denmark succeeded uniquely through nationwide unity and proximity to neutral Sweden.",
+        "prose_hash": "98cc15fc10",
+        "prose_fp": "10eede37",
+        "question_hash": "780197ff5c"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Underground eyewitness",
+            "bullet": "Polish courier Jan Karski infiltrated Warsaw's ghetto → delivered eyewitness reports to Eden and Roosevelt"
+          },
+          {
+            "hint": "Public diplomatic warning",
+            "bullet": "Allied governments issued a December 1942 declaration → publicly condemned Nazi cold-blooded extermination across Europe"
+          },
+          {
+            "hint": "No military intervention",
+            "bullet": "Britain and America prioritised winning the war first → refused requests to bomb Auschwitz rail tracks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier closed borders",
+            "bullet": "Echoed pre-war reluctance at the 1938 Évian Conference → Western powers expressed sympathy without bold rescue"
+          },
+          {
+            "hint": "1944 bombing debate",
+            "bullet": "Allied bombers struck IG Farben factories near Auschwitz in 1944 → left Birkenau gas chambers untouched"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EYEWITNESS COURIER",
+            "stem": "Smuggled inside Warsaw's ghetto in 1942, Polish courier ____________ carried direct testimony to London and ____________."
+          },
+          {
+            "badge": "VERBAL CONDEMNATION",
+            "stem": "In December 1942, Allied leaders publicly condemned Germany's policy of cold-blooded ____________."
+          },
+          {
+            "badge": "MILITARY PRIORITY",
+            "stem": "Insisting total ____________ was the fastest rescue, Allied commanders declined requests to bomb ____________ rail lines."
+          }
+        ],
+        "watch_out": "Allied governments did not discover the Holocaust only at 1945 camp liberations—Karski and intelligence reports proved mass murder by late 1942.",
+        "prose_hash": "80dbf6f757",
+        "prose_fp": "81c821c1",
+        "question_hash": "0a8af53f15"
+      }
+    ],
+    "lesson_7": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Preventing Allied liberation",
+            "bullet": "As Soviet and Western armies closed in → Himmler evacuated eastern camps to hide living witnesses"
+          },
+          {
+            "hint": "Lethal winter exposure",
+            "bullet": "Starving prisoners marched in thin cotton uniforms and clogs → froze across sub-zero winter roads"
+          },
+          {
+            "hint": "Roadside executions",
+            "bullet": "SS guards shot anyone collapsing behind → killed up to 250,000 inmates before war's end"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Crammed interior camps",
+            "bullet": "Evacuees from Auschwitz flooded western camps like Bergen-Belsen → triggered catastrophic typhus and starvation"
+          },
+          {
+            "hint": "Fanatical ideology",
+            "bullet": "Diverted guards and trains during military collapse → showed Nazi obsession with terror until defeat"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DESPERATE EVACUATION",
+            "stem": "As Allied armies closed in during winter 1944–1945, ____________ ordered inmates marched into interior ____________."
+          },
+          {
+            "badge": "SUB-ZERO ORDEAL",
+            "stem": "Dressed only in thin cotton uniforms and wooden ____________, starving prisoners marched without ____________ or water."
+          },
+          {
+            "badge": "FINAL DEATH TOLL",
+            "stem": "Shot in ditches or frozen, up to ____________ prisoners perished during the war's final ____________."
+          }
+        ],
+        "watch_out": "Camp terror did not fade as Germany lost the war—roughly a quarter-million prisoners died on death marches in 1944–1945.",
+        "prose_hash": "7606a9bc03",
+        "prose_fp": "96d982a5",
+        "question_hash": "1f23f4bbf9"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Shattered expectations",
+            "bullet": "British troops entered Belsen on 15 April 1945 → found 60,000 starving inmates and 13,000 corpses"
+          },
+          {
+            "hint": "Emergency mass burials",
+            "bullet": "Rampant typhus threatened tens of thousands more → forced army bulldozers to clear decaying corpses"
+          },
+          {
+            "hint": "Shocking radio witness",
+            "bullet": "Weeping BBC reporter Richard Dimbleby broadcast eyewitness horror → confronted British listeners with undeniable Nazi crimes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier eastern liberations",
+            "bullet": "Soviet troops had liberated Majdanek and Auschwitz on 27 January 1945 → marked Holocaust Memorial Day"
+          },
+          {
+            "hint": "Post-liberation deaths",
+            "bullet": "Starvation had damaged bodies beyond recovery → thousands of Belsen inmates died even after British rescue"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "APRIL DISCOVERY",
+            "stem": "Entering Bergen-Belsen on 15 April 1945, British troops found ____________ starving prisoners beside ____________ unburied corpses."
+          },
+          {
+            "badge": "RADIO TESTIMONY",
+            "stem": "BBC correspondent Richard ____________ wept while broadcasting scenes from what he called a world of ____________."
+          },
+          {
+            "badge": "EMERGENCY RESPONSE",
+            "stem": "To halt deadly typhus epidemics, British soldiers had to use ____________ to bury thousands in ____________ graves."
+          }
+        ],
+        "watch_out": "Bergen-Belsen had no gas chambers—its catastrophic corpses resulted from overcrowding, typhus, and starvation after eastern death marches arrived.",
+        "prose_hash": "99fc34f65e",
+        "prose_fp": "ffb3952e",
+        "question_hash": "2d17a9323e"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Hostile homecomings",
+            "bullet": "Returning survivors found families murdered and neighbours occupying homes → met violent post-war hostility"
+          },
+          {
+            "hint": "Years in camps",
+            "bullet": "Over 250,000 lived inside German and Austrian DP camps → waited years while borders stayed restricted"
+          },
+          {
+            "hint": "Exodus and homeland",
+            "bullet": "Turning back the SS Exodus in 1947 shocked world opinion → accelerated Israel's founding in 1948"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lake District sanctuary",
+            "bullet": "Three hundred orphaned survivors reached Britain's Lake District in 1945 → healed together as Windermere Children"
+          },
+          {
+            "hint": "Kielce post-war violence",
+            "bullet": "Deadly post-war attacks in Poland during 1946 → convinced survivors they could not rebuild there"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PAINFUL AFTERMATH",
+            "stem": "Finding families murdered and homes seized by ____________, over ____________ survivors lived in Displaced Persons camps."
+          },
+          {
+            "badge": "EXODUS CRISIS",
+            "stem": "When British warships turned the ____________ away from Palestine in 1947, global sympathy backed ____________ statehood."
+          },
+          {
+            "badge": "WINDERMERE HEALING",
+            "stem": "In August 1945, Britain welcomed ____________ child survivors to recover in the ____________ District."
+          }
+        ],
+        "watch_out": "Liberation in 1945 did not end survivors' trauma—hundreds of thousands spent years stateless behind wire in Displaced Persons camps.",
+        "prose_hash": "8e70a71edf",
+        "prose_fp": "725d333e",
+        "question_hash": "d5559616c6"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Superior orders rejected",
+            "bullet": "Nuremberg's 1945 tribunal scrapped the following-orders excuse → held leaders personally guilty for state crimes"
+          },
+          {
+            "hint": "Crimes against humanity",
+            "bullet": "Judges prosecuted crimes against humanity across borders → sentenced twelve senior Nazi defendants to death"
+          },
+          {
+            "hint": "Naming genocide",
+            "bullet": "Jurist Raphael Lemkin coined the legal term genocide → secured the 1948 UN Genocide Convention"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lemkin's personal loss",
+            "bullet": "Lemkin lost forty-nine family members in the Shoah → drove his lifelong campaign for international law"
+          },
+          {
+            "hint": "Vast perpetrator gap",
+            "bullet": "Only twenty-two top Nazis stood in Nuremberg's main dock → thousands of lower-level killers escaped justice"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NUREMBERG PRECEDENT",
+            "stem": "Convened in November 1945, the ____________ tribunal ruled that obeying superior ____________ was no legal defence."
+          },
+          {
+            "badge": "DEFINING THE CRIME",
+            "stem": "Polish-Jewish scholar Raphael ____________ coined the word ____________ after losing forty-nine relatives."
+          },
+          {
+            "badge": "GLOBAL TREATY",
+            "stem": "His campaign produced the 1948 United Nations ____________ Convention, outlawing group destruction under ____________ law."
+          }
+        ],
+        "watch_out": "Nuremberg tried only a handful of top Nazi leaders—thousands of SS guards, police, and bureaucrats returned quietly to post-war jobs.",
+        "prose_hash": "4eeaabfa12",
+        "prose_fp": "0f2f3d41",
+        "question_hash": "c6278a6fcd"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Human catastrophe",
+            "bullet": "Murdered six million Jews including 1.5 million children → wiped out two-thirds of European Jewry"
+          },
+          {
+            "hint": "Erased cultural world",
+            "bullet": "Extinguished a thousand-year Yiddish and Sephardic heritage → silenced shtetls, academies, and vibrant port communities"
+          },
+          {
+            "hint": "Living moral duty",
+            "bullet": "Survivor testimonies from voices like Primo Levi and Elie Wiesel → challenge every generation against antisemitism"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Remembering whole lives",
+            "bullet": "Recalling pre-war Vilna, Warsaw, and Thessaloniki → honours victims as rich communities rather than mere statistics"
+          },
+          {
+            "hint": "Warning on escalation",
+            "bullet": "The Shoah began with words, boycotts, and indifference → proves hatred must be confronted early"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IRREPLACEABLE LOSS",
+            "stem": "Alongside six million lives—including ____________ million children—a thousand-year ____________ civilisation was destroyed."
+          },
+          {
+            "badge": "SURVIVOR VOICES",
+            "stem": "Testimonies from witnesses such as ____________ Levi and Elie ____________ preserve truth as survivors pass away."
+          },
+          {
+            "badge": "CIVIC PLEDGE",
+            "stem": "Honouring the pledge of ____________ Again means confronting ____________ and defending human rights today."
+          }
+        ],
+        "watch_out": "Never reduce the six million to an abstract statistic—remember the diverse Yiddish and Sephardic families, languages, and cultures destroyed.",
+        "prose_hash": "87efd47ce1",
+        "prose_fp": "f0d2272a",
+        "question_hash": "8611cb2617"
+      }
+    ]
+  }
+}

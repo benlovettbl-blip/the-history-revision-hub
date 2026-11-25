@@ -3,6 +3,12 @@ import { generateKeyIndividualEmbedHTML } from '../key_individuals.js';
 import { appStore } from './store.js';
 import { getAssetUrl } from './assets.js';
 import { WORKBOOK_PAGE_MAP, getWorkbookPageAnchor } from './workbook_page_map.js';
+import {
+  renderClassroomDeskLocatorHTML,
+  renderStageSpotlightBtnHTML,
+  registerActiveLessonStages,
+} from './classroom_spotlight_and_locator.js';
+import { getLessonTextbookLocator } from '../digital_textbook_reader.js';
 import { renderAudioPlaybackBar } from './speech.js';
 import {
   parseDurationToSeconds,
@@ -952,6 +958,7 @@ export function renderLesson(lesson) {
       <div id="progress-container" style="background: rgba(226,232,240,0.5); height: 4px; width: 100%; margin-bottom: 8px; border-radius: 2px; overflow: hidden; backdrop-filter: blur(5px);">
         <div id="progress-bar" style="background: #10b981; height: 100%; width: 0%; transition: width 0.3s;"></div>
       </div>
+      ${renderClassroomDeskLocatorHTML({ unitId, lesson, currentIndex, isKs2, isTrip })}
     `;
 
   const activeUnitData =
@@ -3187,6 +3194,44 @@ export function renderLesson(lesson) {
       return keys;
     };
 
+    const spotlightStagesCollector = [];
+    const prevLessonObj =
+      currentIndex > 0 && Array.isArray(allUnitLessons) ? allUnitLessons[currentIndex - 1] : null;
+    const prevLessonPriorSummary = (() => {
+      if (!prevLessonObj) return '';
+      const pTitle = String(prevLessonObj.title || '')
+        .replace(/^(?:Enquiry|Lesson)\s*\d+:\s*/i, '')
+        .trim();
+      const objDetails =
+        prevLessonObj.teacher_notes && Array.isArray(prevLessonObj.teacher_notes.objectives)
+          ? prevLessonObj.teacher_notes.objectives
+              .map((o) => {
+                const raw = String(o.objective || '');
+                const colonIdx = raw.indexOf(':');
+                return colonIdx !== -1
+                  ? raw
+                      .slice(colonIdx + 1)
+                      .replace(/\.$/, '')
+                      .trim()
+                  : '';
+              })
+              .filter(Boolean)
+              .slice(0, 3)
+          : [];
+      if (objDetails.length > 0) {
+        return `From ${pTitle}: ${objDetails.join(' • ')}`;
+      }
+      const spineItems =
+        (prevLessonObj.causal_domino_spine && prevLessonObj.causal_domino_spine.stages) ||
+        prevLessonObj.workbook_stages ||
+        [];
+      const keyAnchors = spineItems
+        .map((s) => s.consequence || s.model_sentence || s.title || s.event || '')
+        .filter(Boolean)
+        .slice(0, 2);
+      return keyAnchors.length > 0 ? `From ${pTitle}: ${keyAnchors.join(' • ')}` : pTitle;
+    })();
+
     lesson.narrative_blocks.forEach((block, index) => {
       if (block.type === 'interactive_hotspot_map') {
         htmlNarrative += renderInteractiveHotspotMapHTML(block, index);
@@ -4487,10 +4532,59 @@ export function renderLesson(lesson) {
 
       // Uniform App-Wide Standard: Slim 1-Row Dark Stage Question Bar + Compact White-Box Section Eyebrow
       const isHeaderUnified = Boolean(stageQ);
+      const cleanStageQForSpotlight = stageQ
+        ? String(stageQ).replace(/^[“"']+|[”"']+$/g, '').trim()
+        : '';
+
+      spotlightStagesCollector.push({
+        index,
+        stageNum,
+        date: stageDateVal || '',
+        title: cleanHeadingTitle || '',
+        question: cleanStageQForSpotlight,
+        rawText: String(block.text || block.content || ''),
+        htmlProse: styledContent || '',
+        imageUrl: effectiveImage
+          ? getAssetUrl(effectiveImage)
+          : block.stage_hook_map && (block.stage_hook_map.image || block.stage_hook_map.src)
+            ? getAssetUrl(block.stage_hook_map.image || block.stage_hook_map.src)
+            : block.slide_compare &&
+                block.slide_compare.after &&
+                (block.slide_compare.after.image || block.slide_compare.after.src)
+              ? getAssetUrl(block.slide_compare.after.image || block.slide_compare.after.src)
+              : '',
+        imageCaption:
+          effectiveCaption ||
+          (block.stage_hook_map && block.stage_hook_map.title) ||
+          (block.slide_compare && block.slide_compare.title) ||
+          '',
+        studioAudioUrl:
+          block.studio_audio || `/audio/lessons/${unitId}/${lesson.id}_b${index + 1}.mp3`,
+        studioVoiceLabel: block.studio_voice_label || 'Studio Historian',
+        turningPoint:
+          (matchedStage && (matchedStage.catalyst || matchedStage.event || matchedStage.title)) ||
+          (matchedWbStage && matchedWbStage.title) ||
+          '',
+        consequence:
+          (matchedStage &&
+            (matchedStage.consequence ||
+              matchedStage.connective ||
+              matchedStage.significance ||
+              matchedStage.impact ||
+              matchedStage.summary)) ||
+          (matchedWbStage &&
+            (matchedWbStage.model_sentence || matchedWbStage.answer || matchedWbStage.summary)) ||
+          '',
+        priorContext:
+          prevLessonPriorSummary ||
+          (index > 0 && spotlightStagesCollector[index - 1]
+            ? `Earlier in This Lesson (Stage ${index}): ${spotlightStagesCollector[index - 1].title}`
+            : ''),
+      });
 
       let headerBlockHtml = '';
       if (isHeaderUnified) {
-        const cleanStageQ = String(stageQ).replace(/^[“"']+|[”"']+$/g, '').trim();
+        const cleanStageQ = cleanStageQForSpotlight;
         headerBlockHtml = `
           <div class="workbook-stage-question-banner unified-stage-header-card slim-stage-banner" id="stage-banner-${stageNum}" style="margin-bottom: 6px; background: #0f172a; border: 1px solid #334155; border-left: 4px solid #0284c7; border-radius: 7px; padding: 7px 12px; color: #ffffff; box-shadow: 0 2px 5px rgba(15,23,42,0.10);">
             <div class="stage-header-single-row" style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
@@ -4502,6 +4596,7 @@ export function renderLesson(lesson) {
                 <span class="stage-banner-question" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.0rem; font-weight: 700; color: #f8fafc; line-height: 1.32; flex: 1 1 260px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${cleanStageQ}</span>
               </div>
               <div class="narrative-chunk-audio" style="flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px;">
+                ${renderStageSpotlightBtnHTML(index)}
                 ${
                   matchingLetter && isFiveBlockUnit && !blockSourceHtml.trim()
                     ? `
@@ -4527,6 +4622,7 @@ export function renderLesson(lesson) {
               ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
             </div>
             <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px; display: inline-flex; align-items: center; gap: 6px;">
+              ${renderStageSpotlightBtnHTML(index)}
               ${renderAudioPlaybackBar('Read Aloud Paragraph')}
             </div>
           </div>
@@ -5730,6 +5826,19 @@ export function renderLesson(lesson) {
           renderedOralHinge = true;
         }
       }
+    });
+    const tbLocatorForSpotlight = getLessonTextbookLocator(
+      unitId,
+      Math.max(0, currentIndex),
+      lesson,
+    );
+    registerActiveLessonStages(spotlightStagesCollector, {
+      unitId,
+      lessonId: lesson.id || '',
+      lessonIndex: Math.max(0, currentIndex),
+      lessonTitle: cleanLessonHeading,
+      textbookLabel: tbLocatorForSpotlight ? tbLocatorForSpotlight.fullLabel : '',
+      tbLocator: tbLocatorForSpotlight || null,
     });
     htmlNarrative += '</div>';
 

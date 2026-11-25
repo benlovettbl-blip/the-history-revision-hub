@@ -1,0 +1,1512 @@
+{
+  "unit_id": "ks2_ww2",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Morning announcement",
+            "bullet": "At 11:15am, Prime Minister Neville Chamberlain announced over wireless radios that Britain was at war"
+          },
+          {
+            "hint": "Trigger in Europe",
+            "bullet": "Hitler's German army invaded Poland on 1 September → Britain declared war two days later"
+          },
+          {
+            "hint": "Fifteen minutes later",
+            "bullet": "A false-alarm air raid siren wailed across London → families realised modern war threatened ordinary homes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1930s home media",
+            "bullet": "Few families owned televisions in 1939 → wooden wireless sets brought urgent national news indoors"
+          },
+          {
+            "hint": "Earlier precautions",
+            "bullet": "Evacuation trains and Blackout curtains had already started two days earlier on 1 September"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MORNING ANNOUNCEMENT",
+            "stem": "Gathered quietly at 11:15am around ____________, families heard Prime Minister ____________ announce that..."
+          },
+          {
+            "badge": "TRIGGER EVENT",
+            "stem": "Two days after German troops invaded ____________, Britain officially..."
+          },
+          {
+            "badge": "FIRST WARNING",
+            "stem": "Fifteen minutes later, a wailing ____________ sent Londoners hurrying into cellars, showing that..."
+          }
+        ],
+        "watch_out": "That first London air raid siren on 3 September 1939 was a false alarm triggered by a friendly aircraft—heavy Blitz raids did not hit London until September 1940.",
+        "prose_hash": "9aafa1e667",
+        "prose_fp": "3afae282",
+        "question_hash": "941445ab3a"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Past war memories",
+            "bullet": "Memories of First World War poison gas → officials feared enemy bombers would gas crowded towns"
+          },
+          {
+            "hint": "Everyday adult kit",
+            "bullet": "38 million free rubber respirators were carried inside square cardboard boxes on shoulder strings"
+          },
+          {
+            "hint": "Youngest children",
+            "bullet": "Toddlers received bright red-and-blue Mickey Mouse masks and babies used hand-pumped gas helmets"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Classroom routines",
+            "bullet": "Schoolchildren practised gas-mask drills in seconds → safety habits became part of daily school life"
+          },
+          {
+            "hint": "Reach of aircraft",
+            "bullet": "Unlike trench warfare overseas, fast long-range bombers put every British street within enemy reach"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PAST WAR MEMORY",
+            "stem": "Remembering deadly ____________ from the First World War, the government feared enemy planes might..."
+          },
+          {
+            "badge": "SHOULDER BOXES",
+            "stem": "Before war was even declared, ____________ free gas masks were carried inside..."
+          },
+          {
+            "badge": "TODDLERS AND BABIES",
+            "stem": "To make safety kit less frightening for young children, toddlers wore ____________ while babies used..."
+          }
+        ],
+        "watch_out": "Although 38 million civilians carried gas masks everywhere in 1939, poison gas bombs were never actually dropped on British towns during World War II.",
+        "prose_hash": "622e05927e",
+        "prose_fp": "7ec50f88",
+        "question_hash": "cd1b2bd505"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Windows and vehicles",
+            "bullet": "Families hung thick black curtains and dimmed headlamps → German night bombers could not spot cities"
+          },
+          {
+            "hint": "Preventing dark crashes",
+            "bullet": "Councils painted white stripes on kerbs, trees, and lampposts → guided walkers safely in pitch darkness"
+          },
+          {
+            "hint": "Street patrols",
+            "bullet": "1.4 million volunteer ARP wardens in white-W helmets checked windows and shouted to put lights out"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Timing before war",
+            "bullet": "Britain switched off streetlights on 1 September 1939 — two full nights before war was declared"
+          },
+          {
+            "hint": "Road safety cost",
+            "bullet": "Road accidents jumped sharply in pitch-black streets long before any German bombs fell"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HIDING CITIES",
+            "stem": "Starting on 1 September 1939, families hung ____________ and dimmed headlamps so enemy bombers..."
+          },
+          {
+            "badge": "SAFE WALKING",
+            "stem": "Because pitch-dark roads caused accidents, local councils painted ____________ along..."
+          },
+          {
+            "badge": "VOLUNTEER PATROLS",
+            "stem": "Over 1.4 million volunteer ____________ wearing steel helmets marked with a white W patrolled streets to..."
+          }
+        ],
+        "watch_out": "The Blackout began on 1 September 1939—two nights before Britain declared war—and volunteer ARP wardens were ordinary civilian neighbours rather than armed soldiers.",
+        "prose_hash": "2fe8caab24",
+        "prose_fp": "1a732b5a",
+        "question_hash": "337d42427f"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Protecting vulnerable groups",
+            "bullet": "Crowded cities faced expected bombing → 1.5 million children, teachers, and mothers moved to safer countryside"
+          },
+          {
+            "hint": "Pinned to coats",
+            "bullet": "Children carried gas masks and wore cardboard luggage labels showing their name, school, and address"
+          },
+          {
+            "hint": "Station barrier rule",
+            "bullet": "Parents kissed children goodbye outside station barriers → prevented dangerous platform crushing and panic"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pre-war start date",
+            "bullet": "Like the Blackout, Operation Pied Piper began on 1 September — two days before war was declared"
+          },
+          {
+            "hint": "Parents' hard choice",
+            "bullet": "Evacuation was voluntary for parents → families faced a tough choice between separation and bomb danger"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MASS DEPARTURE",
+            "stem": "Beginning on 1 September 1939, ____________ moved around ____________ out of crowded target cities so..."
+          },
+          {
+            "badge": "WHAT THEY CARRIED",
+            "stem": "Walking in school lines with one small bag and a gas mask, every child wore ____________ pinned to..."
+          },
+          {
+            "badge": "STATION BARRIERS",
+            "stem": "To stop dangerous overcrowding on railway platforms, parents had to ____________ outside..."
+          }
+        ],
+        "watch_out": "Operation Pied Piper was voluntary for parents rather than forced by law, and it moved teachers and mothers with infants alongside schoolchildren.",
+        "prose_hash": "14b35c8309",
+        "prose_fp": "576745fa",
+        "question_hash": "bcf3f9bb36"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Exhausting train ride",
+            "bullet": "Long steam-train rides ended in unfamiliar rural counties such as Devon, Cornwall, Norfolk, or Wales"
+          },
+          {
+            "hint": "Matching to homes",
+            "bullet": "A volunteer Billeting Officer assigned tired children to local strangers inside the village hall"
+          },
+          {
+            "hint": "Brothers and sisters",
+            "bullet": "Waiting to be picked felt frightening → siblings worried they would be split between different houses"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Host family law",
+            "bullet": "Unlike city parents choosing evacuation, country householders with spare bedrooms had to host by law"
+          },
+          {
+            "hint": "Weekly food payment",
+            "bullet": "The government paid rural hosts a small weekly sum to cover each evacuee's meals"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "UNFAMILIAR ARRIVAL",
+            "stem": "After hours on steam trains to rural counties such as ____________, tired evacuees walked to..."
+          },
+          {
+            "badge": "HALL MATCHING",
+            "stem": "Inside the hall, a volunteer ____________ matched children with local ____________ who had spare rooms."
+          },
+          {
+            "badge": "SIBLING WORRIES",
+            "stem": "Waiting as strangers chose children felt scary, especially for ____________ hoping not to..."
+          }
+        ],
+        "watch_out": "Sending children away was voluntary for city parents, whereas country householders with spare bedrooms were required by law to take in evacuees.",
+        "prose_hash": "69132dc99e",
+        "prose_fp": "0751d19d",
+        "question_hash": "6fe84fbd41"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "First farmyard sights",
+            "bullet": "Inner-city children saw live cows milked, muddy pigs, and apples on trees for the first time"
+          },
+          {
+            "hint": "Contrasting households",
+            "bullet": "Many found loving hosts and fresh air, while others felt homesick in strict, unfamiliar homes"
+          },
+          {
+            "hint": "Quiet late 1939",
+            "bullet": "No bombs fell during the Phoney War → thousands drifted back home before 1940 raids began"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Hidden city poverty",
+            "bullet": "Shocked country hosts saw thin, poorly clothed evacuees → exposed hidden inner-city poverty across Britain"
+          },
+          {
+            "hint": "1940 return wave",
+            "bullet": "Returning evacuees had to leave cities all over again once heavy Blitz bombing began in 1940"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COUNTRYSIDE SURPRISES",
+            "stem": "Used to smoky city streets, many evacuees were amazed to see ____________, while rural hosts noticed..."
+          },
+          {
+            "badge": "DIFFERENT HOMES",
+            "stem": "While thousands of children enjoyed ____________ and lifelong friendships, others struggled with..."
+          },
+          {
+            "badge": "QUIET AUTUMN",
+            "stem": "When zero bombs fell during the ____________ of late 1939, thousands returned home until..."
+          }
+        ],
+        "watch_out": "Evacuation was never one single story—many evacuees thrived in warm country homes, while others suffered deep homesickness and returned home during the quiet Phoney War.",
+        "prose_hash": "4f3d6095ce",
+        "prose_fp": "b5cdf50f",
+        "question_hash": "f88b91f265"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Long-settled families",
+            "bullet": "Over 9 million Jewish people lived across Europe, including proud German families settled for centuries"
+          },
+          {
+            "hint": "After-school clubs",
+            "bullet": "Jewish children rode bicycles, joined scout groups, played in local football teams, and took holidays"
+          },
+          {
+            "hint": "Starting school tradition",
+            "bullet": "Six-year-olds carried a bright cardboard Schultüte cone packed with sweets, fruit, and new pencils"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Small German share",
+            "bullet": "Jewish citizens made up under one percent of Germany's population and worked in everyday jobs"
+          },
+          {
+            "hint": "Why this matters",
+            "bullet": "Remembering ordinary pre-war childhoods shows Jewish people had full, varied lives before Nazi persecution began"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EUROPEAN COMMUNITIES",
+            "stem": "Before 1933, over ____________ Jewish people lived across Europe, working in everyday jobs such as..."
+          },
+          {
+            "badge": "SHARED HOBBIES",
+            "stem": "Just like their classmates, Jewish children rode bicycles, joined ____________, and played..."
+          },
+          {
+            "badge": "FIRST SCHOOL DAY",
+            "stem": "On their very first day of school, six-year-olds proudly carried a ____________ filled with..."
+          }
+        ],
+        "watch_out": "Jewish families in Germany were not outsiders—they made up less than one percent of the population and had lived as proud German citizens for centuries.",
+        "prose_hash": "bee8d12d84",
+        "prose_fp": "01680969",
+        "question_hash": "33c2de41e8"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Hundreds of decrees",
+            "bullet": "After January 1933, Hitler's Nazi government passed over 400 laws stripping Jewish civil rights"
+          },
+          {
+            "hint": "1935 legal turning point",
+            "bullet": "Stormtroopers boycotted Jewish shops in 1933, and the 1935 Nuremberg Laws removed German citizenship"
+          },
+          {
+            "hint": "Everyday childhood bans",
+            "bullet": "Families were barred from parks, pools, and cinemas, and forced to surrender bicycles, radios, and pets"
+          }
+        ],
+        "context": [
+          {
+            "hint": "False Nazi blame",
+            "bullet": "Nazi propaganda spread racist lies blaming Germany's tiny Jewish minority for national problems"
+          },
+          {
+            "hint": "Cut off outdoors",
+            "bullet": "Losing bicycles, parks, and pets cut Jewish children off from everyday play with neighbours"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HUNDREDS OF LAWS",
+            "stem": "Once ____________ took power in January 1933, the Nazi government passed over ____________ that stripped..."
+          },
+          {
+            "badge": "1935 DECREES",
+            "stem": "Following stormtrooper shop boycotts, the 1935 ____________ took away Jewish people's..."
+          },
+          {
+            "badge": "EVERYDAY BANS",
+            "stem": "Cruel rules shut children out of ____________ and even forced families to hand over..."
+          }
+        ],
+        "watch_out": "Nazi persecution did not begin overnight with camps—after 1933, over 400 government laws stripped away citizenship, livelihoods, and everyday freedoms step by step.",
+        "prose_hash": "51f79d8718",
+        "prose_fp": "76173524",
+        "question_hash": "a295cab502"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Inside state classrooms",
+            "bullet": "Jewish teachers were sacked and Jewish pupils were forced onto separate classroom benches"
+          },
+          {
+            "hint": "Organised street terror",
+            "bullet": "During the November Pogrom, Nazi gangs burned synagogues, smashed shops, and arrested 30,000 Jewish men"
+          },
+          {
+            "hint": "Mid-November school rule",
+            "bullet": "On 15 November 1938, the Nazi Education Minister banned all Jewish children from German state schools"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Urgent search abroad",
+            "bullet": "Open street violence in November 1938 convinced terrified parents to seek foreign rescue for their children"
+          },
+          {
+            "hint": "Beyond Germany's borders",
+            "bullet": "Attacks struck both Germany and Austria, spreading danger to hundreds of thousands more Jewish families"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INSIDE CLASSROOMS",
+            "stem": "Inside state schools, Jewish teachers lost their jobs and pupils were forced onto ____________ while..."
+          },
+          {
+            "badge": "ORGANISED ATTACKS",
+            "stem": "During the violent ____________ in November 1938, Nazi rioters burned ____________, smashed shops, and arrested..."
+          },
+          {
+            "badge": "FIFTEENTH NOVEMBER",
+            "stem": "Days later on 15 November 1938, all Jewish children were barred from ____________, pushing terrified parents to..."
+          }
+        ],
+        "watch_out": "Remember that the November Pogrom—also called Kristallnacht—was organised by Nazi gangs across Germany and Austria, not a spontaneous riot, and led days later to a total school ban.",
+        "prose_hash": "f9aed84b10",
+        "prose_fp": "7cf38581",
+        "question_hash": "22a902f60a"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "News and appeals",
+            "bullet": "Shocking reports of the November Pogrom and charity appeals moved Parliament to speed up permits"
+          },
+          {
+            "hint": "Ten-month rescue",
+            "bullet": "Between December 1938 and September 1939, nearly 10,000 children under seventeen reached Britain"
+          },
+          {
+            "hint": "Strict entry conditions",
+            "bullet": "Parents were barred from travelling with them, and each child needed a £50 British sponsor"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Charity teamwork",
+            "bullet": "Jewish, Quaker, and Christian volunteers worked together to fund travel and find British foster homes"
+          },
+          {
+            "hint": "High sponsor cost",
+            "bullet": "£50 equalled several months' wages in 1939 → rescues depended on generous sponsors and charities"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PARLIAMENT RESPONDS",
+            "stem": "Shocked by news of the ____________ and urged by charities, Parliament sped up travel permits for..."
+          },
+          {
+            "badge": "RESCUE NUMBERS",
+            "stem": "Between December 1938 and September 1939, the ____________ brought nearly ____________ from Nazi-controlled Europe."
+          },
+          {
+            "badge": "PAINFUL CONDITIONS",
+            "stem": "Although children under seventeen reached safety, ____________ could not travel with them and each child needed..."
+          }
+        ],
+        "watch_out": "Do not confuse the Kindertransport with British evacuation—Kindertransport children were refugees fleeing Nazi persecution in Europe without their parents, not British city children moving to the countryside.",
+        "prose_hash": "075b68afe1",
+        "prose_fp": "6909f4af",
+        "question_hash": "ebc36efab3"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "March 1939 occupation",
+            "bullet": "Nazi soldiers occupied Prague in March 1939 → Vera's parents chose to send her to safety"
+          },
+          {
+            "hint": "Strict Nazi limits",
+            "bullet": "Nazi rules allowed only one small suitcase and ten Reichsmarks, banning family jewellery or valuables"
+          },
+          {
+            "hint": "Treasured keepsakes",
+            "bullet": "Nine-year-old Vera packed warm clothes, a signed autograph diary, and her English porcelain doll"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Station platform promise",
+            "bullet": "Wearing a numbered card at Wilson Station in May 1939, Vera bravely promised not to cry"
+          },
+          {
+            "hint": "Prague train network",
+            "bullet": "Vera travelled on one of the eight Prague trains organised by Nicholas Winton's volunteer team"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MARCH 1939 DANGER",
+            "stem": "Once Nazi soldiers marched into ____________ in March 1939, nine-year-old Vera's parents made the painful choice to..."
+          },
+          {
+            "badge": "STRICT PACKING RULES",
+            "stem": "Harsh Nazi limits meant each child could take only ____________ and ten Reichsmarks, with zero..."
+          },
+          {
+            "badge": "TREASURED KEEPSAKES",
+            "stem": "Alongside warm clothes, Vera packed ____________ and her ____________ before waving goodbye at Wilson Station."
+          }
+        ],
+        "watch_out": "Vera's parents did not send her away lightly—Nazi troops had occupied Prague in March 1939, and strict border rules forbade parents from boarding the rescue trains.",
+        "prose_hash": "cb0eafe904",
+        "prose_fp": "b059d756",
+        "question_hash": "9bd7dde6d7"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "First safe border",
+            "bullet": "Crossing from Germany into the Netherlands, Dutch volunteers welcomed relieved children with hot chocolate and bread"
+          },
+          {
+            "hint": "North Sea crossing",
+            "bullet": "Refugees sailed overnight by ferry from the Hook of Holland across to Harwich in Essex"
+          },
+          {
+            "hint": "Final rail arrival",
+            "bullet": "Steam trains carried the children into Liverpool Street Station, where British foster families welcomed them"
+          }
+        ],
+        "context": [
+          {
+            "hint": "September 1939 cutoff",
+            "bullet": "When war broke out in September 1939, European borders closed and rescue trains stopped forever"
+          },
+          {
+            "hint": "Painful lasting separation",
+            "bullet": "Britain gave safety and schooling, yet many Kindertransport refugees like Vera never saw their parents again"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SAFE BORDER",
+            "stem": "After two tense days crossing Germany, kind volunteers in ____________ greeted the children with ____________ free from Nazi guards."
+          },
+          {
+            "badge": "OVERNIGHT CROSSING",
+            "stem": "Sailing overnight by ferry from the Hook of Holland to ____________, the children steamed into..."
+          },
+          {
+            "badge": "LONDON ARRIVAL",
+            "stem": "Waiting at ____________, British foster families gave them schooling and care, though war soon..."
+          }
+        ],
+        "watch_out": "Kindertransport children did not fly to Britain—they travelled two days by train across Germany to the Netherlands, sailed by ferry to Harwich, and steamed into Liverpool Street Station.",
+        "prose_hash": "ba06eb8493",
+        "prose_fp": "671862b9",
+        "question_hash": "dc08132fae"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Urgent friend's call",
+            "bullet": "Friend Martin Blake phoned from Prague → Winton cancelled his Swiss skiing holiday to help"
+          },
+          {
+            "hint": "Winter camp crisis",
+            "bullet": "Tens of thousands of Jewish and anti-Nazi families were trapped in freezing camps around Prague"
+          },
+          {
+            "hint": "Hotel table lists",
+            "bullet": "Choosing to be an upstander, Winton recorded children's names and photographs inside his Prague hotel"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unprotected city",
+            "bullet": "Early Kindertransports focused on Germany and Austria → endangered children in Prague urgently needed rescue"
+          },
+          {
+            "hint": "Everyday day job",
+            "bullet": "Winton was a 29-year-old London stockbroker, showing ordinary citizens could choose action over standing by"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CANCELLED TRIP",
+            "stem": "Packed for a skiing holiday in Switzerland, ____________ changed his plans when ____________ phoned urgently from Prague."
+          },
+          {
+            "badge": "WINTER REFUGEE CAMPS",
+            "stem": "Arriving in December 1938, he saw thousands of families trapped in ____________ after Germany seized..."
+          },
+          {
+            "badge": "UPSTANDER ACTION",
+            "stem": "Refusing to stay a bystander, Winton worked from ____________ to list the names and photos of..."
+          }
+        ],
+        "watch_out": "Nicholas Winton was not a government diplomat or soldier—he was a 29-year-old London stockbroker who gave up his Christmas skiing holiday after a friend's phone call.",
+        "prose_hash": "5982f58600",
+        "prose_fp": "a7b45bbb",
+        "question_hash": "fc6324f874"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Team on ground",
+            "bullet": "Doreen Warriner coordinated Prague relief while teacher Trevor Chadwick led children past armed Nazi guards"
+          },
+          {
+            "hint": "Evening paperwork push",
+            "bullet": "After daytime Stock Exchange work, Winton and his mother Babi pressed officials for entry visas"
+          },
+          {
+            "hint": "Newspaper photo appeals",
+            "bullet": "Printing children's photographs in British newspapers secured hundreds of foster families and £50 sponsors"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Home Office conditions",
+            "bullet": "Like every Kindertransport arrival, each Prague child needed both an entry visa and £50 guarantee"
+          },
+          {
+            "hint": "Danger after March",
+            "bullet": "After Nazi troops occupied Prague in March 1939, Prague volunteers risked arrest with every departure"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PRAGUE VOLUNTEERS",
+            "stem": "Across occupied Prague, ____________ organised relief while schoolteacher ____________ calmly led children past armed guards."
+          },
+          {
+            "badge": "EVENING CAMPAIGN",
+            "stem": "Working every evening after his London day job, Winton and his mother ____________ chased Home Office..."
+          },
+          {
+            "badge": "FINDING SPONSORS",
+            "stem": "By printing children's photographs in newspapers, the team matched refugees with ____________ and required..."
+          }
+        ],
+        "watch_out": "Nicholas Winton never claimed to have acted alone—brave colleagues in Prague like Doreen Warriner and Trevor Chadwick put the children onto trains under Nazi occupation.",
+        "prose_hash": "8a97b797a4",
+        "prose_fp": "690d938c",
+        "question_hash": "cff3f71a15"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Spring-to-summer rescues",
+            "bullet": "Eight trains between March and August 1939 brought 669 children safely to Liverpool Street Station"
+          },
+          {
+            "hint": "First September tragedy",
+            "bullet": "Closed borders on 1 September 1939 stopped a ninth train due to carry 250 children"
+          },
+          {
+            "hint": "1988 attic find",
+            "bullet": "Wife Grete found his 1939 scrapbook in 1988 → BBC television reunited Winton with rescued adults"
+          }
+        ],
+        "context": [
+          {
+            "hint": "May train passenger",
+            "bullet": "Nine-year-old Vera travelled to London on one of those eight Prague trains in May 1939"
+          },
+          {
+            "hint": "Decades of modesty",
+            "bullet": "Keeping the scrapbook quiet for nearly fifty years showed Winton sought to save lives, not fame"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EIGHT RESCUE TRAINS",
+            "stem": "Between March and August 1939, eight trains carried ____________ to London before war halted..."
+          },
+          {
+            "badge": "ATTIC DISCOVERY",
+            "stem": "After nearly fifty quiet years, the rescue came to light in 1988 when Winton's wife ____________ found..."
+          },
+          {
+            "badge": "STUDIO SURPRISE",
+            "stem": "Sitting in the audience of ____________, dozens of adults stood up around Winton because..."
+          }
+        ],
+        "watch_out": "Eight trains rescued 669 children, yet the largest ninth train due to leave Prague on 1 September 1939 was stopped when Germany invaded Poland that very morning.",
+        "prose_hash": "ac76b690f0",
+        "prose_fp": "e9fd152c",
+        "question_hash": "7776fbb5bc"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Aim of raids",
+            "bullet": "Starting on 7 September 1940, Luftwaffe bombers attacked London's East End docks to force British surrender"
+          },
+          {
+            "hint": "Autumn night raids",
+            "bullet": "London endured 57 consecutive nights of high-explosive and fire bombs, while volunteer firewatchers saved St Paul's"
+          },
+          {
+            "hint": "Industrial port targets",
+            "bullet": "Heavy raids targeted ports and industrial cities including Coventry, Liverpool, Plymouth, Hull, Clydebank, and Belfast"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Quiet months end",
+            "bullet": "After months of quiet Phoney War, autumn 1940 turned city streets and docks into battlegrounds"
+          },
+          {
+            "hint": "Nighttime darkness rules",
+            "bullet": "Strict Blackout curtains from 1939 now worked every night to hide targets from German crews"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BLACK SATURDAY",
+            "stem": "On 7 September 1940, over 300 Luftwaffe bombers struck ____________ because Hitler hoped to..."
+          },
+          {
+            "badge": "NATIONWIDE TARGETS",
+            "stem": "Alongside ____________ nights of raids on London, bombers attacked vital ports and factory cities such as..."
+          },
+          {
+            "badge": "PROTECTED DOME",
+            "stem": "Amid thick smoke and incendiary flames, ____________ survived thanks to..."
+          }
+        ],
+        "watch_out": "The Blitz did not target London alone—German bombers heavily attacked vital ports and factory cities across the UK, including Coventry, Liverpool, Hull, Plymouth, Clydebank, and Belfast.",
+        "prose_hash": "b259040172",
+        "prose_fp": "7b899136",
+        "question_hash": "88f58d3333"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Outdoor lawn design",
+            "bullet": "Over 2 million steel Anderson shelters sat three feet deep under fifteen inches of blast-absorbing soil"
+          },
+          {
+            "hint": "Homes without gardens",
+            "bullet": "Gardenless city homes used steel-mesh Morrison shelters to shield sleeping families if upper floors collapsed"
+          },
+          {
+            "hint": "Daytime practical uses",
+            "bullet": "Families grew vegetables atop outdoor shelters and ate daytime meals on indoor Morrison table tops"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cost to poorer families",
+            "bullet": "Providing free Anderson shelters ensured lower-income families with gardens had strong protection against shrapnel"
+          },
+          {
+            "hint": "Roof soil crops",
+            "bullet": "Planting cabbages and flowers on soil-covered shelter roofs supported Britain's home-grown food drive"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GARDEN SHELTERS",
+            "stem": "Digging three feet into the lawn, families bolted steel ____________ together and piled ____________ on top."
+          },
+          {
+            "badge": "INDOOR CAGES",
+            "stem": "Families with zero garden space slept inside ____________, which doubled as ____________ during daytime."
+          },
+          {
+            "badge": "STRENGTHS AND LIMITS",
+            "stem": "Although half-buried garden shelters felt ____________, curved steel and thick soil protected against..."
+          }
+        ],
+        "watch_out": "Keep the two home shelters clear: Anderson shelters were curved steel huts half-buried in gardens, whereas Morrison shelters were steel-mesh table cages kept indoors for homes without gardens.",
+        "prose_hash": "2d16e7be4f",
+        "prose_fp": "2c4237ab",
+        "question_hash": "908f03dfbd"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Underground night routines",
+            "bullet": "Over 150,000 Londoners slept on Tube platforms equipped with triple bunks, first aid, and libraries"
+          },
+          {
+            "hint": "Tackling night blazes",
+            "bullet": "Auxiliary firefighters battled dock blazes while rooftop firewatchers smothered fire bombs with sandbags and stirrup pumps"
+          },
+          {
+            "hint": "Morning street support",
+            "bullet": "Women's Voluntary Services volunteers drove mobile canteens into bombed streets with hot tea and rehousing help"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unpaid local service",
+            "bullet": "Like ARP wardens in the Blackout, unpaid local volunteers kept cities running under heavy bombing"
+          },
+          {
+            "hint": "Deep tunnel safety",
+            "bullet": "Deep underground Tube tunnels shielded sleeping crowds from flying glass and falling masonry overhead"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DEEP UNDERGROUND",
+            "stem": "Queueing with blankets and flasks, over ____________ sheltered each night on ____________ fitted with triple bunks."
+          },
+          {
+            "badge": "BRAVING THE FLAMES",
+            "stem": "Above ground during raids, ____________ fought dockland blazes while rooftop watchers tackled incendiary bombs with..."
+          },
+          {
+            "badge": "MORNING CARE",
+            "stem": "Each morning after raids, ____________ mobile canteens arrived in bombed streets to provide..."
+          }
+        ],
+        "watch_out": "Home Anderson and Morrison shelters withstood nearby blasts and falling rubble, yet neither could survive a direct bomb hit—which led 150,000 Londoners to seek deeper Tube platforms.",
+        "prose_hash": "0f1fd281a5",
+        "prose_fp": "f50ca455",
+        "question_hash": "9401dfb927"
+      }
+    ],
+    "lesson_7": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Reliance on imports",
+            "bullet": "Island Britain imported over seventy percent of its food across the Atlantic on merchant ships"
+          },
+          {
+            "hint": "Danger at sea",
+            "bullet": "German U-boat submarines sank hundreds of supply ships → threatened to starve Britain into surrender"
+          },
+          {
+            "hint": "Preventing unfair prices",
+            "bullet": "Rationing from January 1940 stopped high prices letting wealthy shoppers buy up scarce food"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Growing item list",
+            "bullet": "Starting with bacon, butter, and sugar, rationing soon covered meat, tea, sweets, soap, and clothes"
+          },
+          {
+            "hint": "Sea and sky pressure",
+            "bullet": "While Luftwaffe bombers attacked cities from above, U-boats attacked Britain's food lifeline at sea"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ATLANTIC IMPORTS",
+            "stem": "Because island Britain shipped over ____________ of its food across the Atlantic, German ____________ hunted convoys to..."
+          },
+          {
+            "badge": "FAIR SHARES",
+            "stem": "To stop scarce food becoming affordable only for wealthy shoppers, the ____________ launched..."
+          },
+          {
+            "badge": "EXPANDING LIST",
+            "stem": "Beginning in January 1940 with ____________, rationing soon spread to everyday items such as..."
+          }
+        ],
+        "watch_out": "Rationing did not hand out free food—families still had to pay shopkeepers with money as well as handing over coupons from their ration books.",
+        "prose_hash": "e386542ec0",
+        "prose_fp": "84ebee67",
+        "question_hash": "77dc647cbf"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Shop registration rules",
+            "bullet": "Shopkeepers snipped or stamped coupons in registered ration books so nobody could buy extra shares"
+          },
+          {
+            "hint": "Adult weekly portions",
+            "bullet": "Adults received one fresh egg, two bacon rashers, and 50g of butter and cheese weekly"
+          },
+          {
+            "hint": "Extra vitamin support",
+            "bullet": "Green ration books gave under-fives and expectant mothers extra milk, cod liver oil, and orange juice"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Banning waste and cheats",
+            "bullet": "Wasting edible food became a crime, and inspectors prosecuted illegal coupon-free Black Market trading"
+          },
+          {
+            "hint": "Pantry substitutes",
+            "bullet": "Cooks stretched tiny fresh rations using packet dried egg powder and tinned American Spam"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REGISTERED COUPONS",
+            "stem": "After registering a ____________ with local shops, families watched shopkeepers snip ____________ whenever they paid."
+          },
+          {
+            "badge": "WEEKLY PORTIONS",
+            "stem": "With one adult allowed just ____________ and two bacon rashers weekly, families stretched meals using..."
+          },
+          {
+            "badge": "YOUNGEST PRIORITY",
+            "stem": "Expectant mothers and under-fives carried ____________ for extra vitamins, while inspectors hunted..."
+          }
+        ],
+        "watch_out": "Not every ration book was identical—expectant mothers and children under five carried green ration books granting extra milk and vitamins so growing babies stayed healthy.",
+        "prose_hash": "90693dc8e4",
+        "prose_fp": "cf7be6ea",
+        "question_hash": "e5a422d746"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Unrationed garden plots",
+            "bullet": "Home-grown vegetables were unrationed → families planted 1.4 million allotments across parks, schools, and moats"
+          },
+          {
+            "hint": "Ministry kitchen swaps",
+            "bullet": "Potato Pete, Doctor Carrot, and meat-free Lord Woolton Pie swapped imported wheat for British vegetables"
+          },
+          {
+            "hint": "Diet and growth",
+            "bullet": "Eating far less sugar alongside fresh vegetables and vitamins helped wartime children grow taller and healthier"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Saving cargo space",
+            "bullet": "Growing potatoes at home freed scarce Atlantic cargo ships to carry vital weapons and fuel"
+          },
+          {
+            "hint": "Post-war shortages",
+            "bullet": "Food shortages outlasted the fighting — British families kept using ration books until 1954"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NATIONWIDE ALLOTMENTS",
+            "stem": "Since home-grown vegetables stayed unrationed, families dug up parks and even ____________ to plant..."
+          },
+          {
+            "badge": "HOME-GROWN RECIPES",
+            "stem": "Encouraged by characters like ____________, families baked meat-free ____________ from root vegetables and oatmeal."
+          },
+          {
+            "badge": "HEALTHIER GROWTH",
+            "stem": "Eating far less ____________ alongside fresh greens meant British children grew up..."
+          }
+        ],
+        "watch_out": "Fresh home-grown fruit and vegetables were never rationed, and wartime rationing actually improved British children's health rather than making them weaker.",
+        "prose_hash": "adf7069d10",
+        "prose_fp": "89c725aa",
+        "question_hash": "5eed9e4275"
+      }
+    ],
+    "lesson_8": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Empty workplaces",
+            "bullet": "Millions of men left to fight overseas → farms, shipyards, railways, and factories lacked workers"
+          },
+          {
+            "hint": "December 1941 law",
+            "bullet": "The National Service Act conscripted unmarried women aged twenty to thirty into essential war work"
+          },
+          {
+            "hint": "Three service paths",
+            "bullet": "Conscripted women entered farming, factories, or uniformed services, where Princess Elizabeth trained as a mechanic"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pre-war expectations",
+            "bullet": "Before 1939 most married women were expected to leave paid employment to run the home"
+          },
+          {
+            "hint": "Shifting workplace views",
+            "bullet": "Skilled engineering and mechanical war work proved women could handle jobs previously reserved for men"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WORKER SHORTAGE",
+            "stem": "With millions of men fighting overseas, Britain's farms, shipyards, and ____________ ran dangerously short of..."
+          },
+          {
+            "badge": "DECEMBER 1941 CALL-UP",
+            "stem": "Passing the ____________ in December 1941, Parliament required unmarried women aged ____________ to enter..."
+          },
+          {
+            "badge": "ROYAL EXAMPLE",
+            "stem": "Choosing between farming, factories, and uniformed branches, even eighteen-year-old ____________ trained as..."
+          }
+        ],
+        "watch_out": "The December 1941 National Service Act first conscripted unmarried women aged twenty to thirty into factories, farming, or non-combat armed services—not frontline infantry combat.",
+        "prose_hash": "2fa88dbd58",
+        "prose_fp": "8455e8dc",
+        "question_hash": "170cca9726"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "All-weather farm tasks",
+            "bullet": "Over 80,000 Land Girls ploughed fields, drove tractors, milked cows, and harvested wheat in all weathers"
+          },
+          {
+            "hint": "Heavy forest tools",
+            "bullet": "Lumberjills in the Women's Timber Corps felled tall pine trees using axes and two-person saws"
+          },
+          {
+            "hint": "Uses for timber",
+            "bullet": "Home-cut timber supplied coal-mine pit props, telegraph poles, and packing crates for military gear"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Replacing sea imports",
+            "bullet": "Growing wheat and cutting British timber reduced reliance on Atlantic merchant ships hunted by U-boats"
+          },
+          {
+            "hint": "City recruits",
+            "bullet": "Many Land Girls came from city offices and shops, adapting quickly to tough outdoor farm work"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FARMING BRITAIN",
+            "stem": "Wearing corduroy breeches and boots, over 80,000 ____________ worked from dawn to dusk driving tractors and..."
+          },
+          {
+            "badge": "FELLING FORESTS",
+            "stem": "Across Scottish, Welsh, and English woods, ____________ swung heavy axes and two-person saws to..."
+          },
+          {
+            "badge": "ESSENTIAL WOOD",
+            "stem": "Cutting home-grown pine supplied ____________ for coal mines alongside telegraph poles and..."
+          }
+        ],
+        "watch_out": "Do not mix up the two rural forces: Land Girls grew food on farms, whereas Lumberjills worked in the Women's Timber Corps felling forest trees for pit props and crates.",
+        "prose_hash": "b4388ab848",
+        "prose_fp": "0e57f31b",
+        "question_hash": "d5e144d482"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Toxic shell chemicals",
+            "bullet": "Munitions workers packing toxic TNT and cordite turned bright yellow, earning the nickname Canary Girls"
+          },
+          {
+            "hint": "Strict spark safety",
+            "bullet": "Factory workers wore wooden-soled shoes without metal hairpins because one tiny spark could explode shells"
+          },
+          {
+            "hint": "Delivering new aircraft",
+            "bullet": "168 Air Transport Auxiliary women pilots ferried Spitfires and Lancaster bombers using maps without radios"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1943 pay milestone",
+            "bullet": "From 1943, women Air Transport Auxiliary pilots won equal pay alongside male ferry pilots"
+          },
+          {
+            "hint": "Helping combat squadrons",
+            "bullet": "Delivering fresh aircraft from factories allowed frontline RAF pilots to focus on combat missions"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MUNITIONS HAZARDS",
+            "stem": "Nearly a million women made shells in factories, where toxic ____________ stained skin yellow and banned..."
+          },
+          {
+            "badge": "SOLO FERRY PILOTS",
+            "stem": "Navigating with paper maps and zero radios, 168 ____________ pilots such as Maureen Dunlop flew ____________ to airfields."
+          },
+          {
+            "badge": "FAIR PAY MILESTONE",
+            "stem": "Recognising identical flying skill and danger, from 1943 women ferry pilots earned ____________ alongside..."
+          }
+        ],
+        "watch_out": "Air Transport Auxiliary women pilots ferried Spitfires and heavy four-engine Lancaster bombers solo without radios from factories to airfields, rather than flying armed combat dogfights.",
+        "prose_hash": "5cc0efd261",
+        "prose_fp": "b0969e4c",
+        "question_hash": "700987af32"
+      }
+    ],
+    "lesson_9": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Scrambled radio Morse",
+            "bullet": "British listeners intercepted German Morse radio messages, yet portable Enigma machines scrambled every letter"
+          },
+          {
+            "hint": "Moving inner parts",
+            "bullet": "Spinning wired rotors and a front plugboard created over 158 million million million possible settings"
+          },
+          {
+            "hint": "Daily clock reset",
+            "bullet": "German operators switched Enigma settings every midnight → codebreakers had under twenty-four hours each day"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Atlantic naval orders",
+            "bullet": "Secret Enigma radio orders guided German U-boats hunting Britain's vital Atlantic food convoys"
+          },
+          {
+            "hint": "Limits of hand-checking",
+            "bullet": "Testing millions of daily settings with pencil and paper before midnight was humanly impossible"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SCRAMBLED SIGNALS",
+            "stem": "Although British listeners heard German Morse radio beeps, the portable ____________ turned messages into..."
+          },
+          {
+            "badge": "MOVING PARTS",
+            "stem": "Inside each cipher box, spinning ____________ and an electrical ____________ produced over 158 million million million settings."
+          },
+          {
+            "badge": "DAILY RESET",
+            "stem": "Cracking one code never lasted because German operators changed every setting at ____________ each night."
+          }
+        ],
+        "watch_out": "Breaking Enigma once did not solve it forever—German operators changed the rotor and plugboard settings every single night at midnight.",
+        "prose_hash": "7d84836288",
+        "prose_fp": "589bbaaf",
+        "question_hash": "b67cf10c75"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Early Polish help",
+            "bullet": "Polish mathematicians shared early breakthroughs before codebreakers gathered at Bletchley Park, codenamed Station X"
+          },
+          {
+            "hint": "Fast electric checking",
+            "bullet": "Alan Turing and Gordon Welchman's Bombe machine used weather-forecast clues to rule out wrong settings fast"
+          },
+          {
+            "hint": "1944 computing leap",
+            "bullet": "In 1944, engineer Tommy Flowers built Colossus at Bletchley — the world's first programmable electronic computer"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unusual recruits",
+            "bullet": "Station X recruited chess champions, crossword experts, and linguists alongside brilliant mathematicians"
+          },
+          {
+            "hint": "Beating daily resets",
+            "bullet": "Fast electric machines cracked daily keys in minutes → Allied commanders read German orders on time"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SECRET HEADQUARTERS",
+            "stem": "Building on breakthroughs shared by ____________, British intelligence gathered puzzle experts at ____________ in Buckinghamshire."
+          },
+          {
+            "badge": "ELECTRIC BOMBE",
+            "stem": "Using predictable clues such as daily ____________, Alan Turing and Gordon Welchman's ____________ ruled out wrong settings fast."
+          },
+          {
+            "badge": "FIRST COMPUTER",
+            "stem": "Later in 1944, Post Office engineer Tommy Flowers built ____________ as the world's first..."
+          }
+        ],
+        "watch_out": "Do not mix up the two Bletchley machines: Turing and Welchman built the electric Bombe for Enigma, while Tommy Flowers built Colossus—the first programmable electronic computer—in 1944.",
+        "prose_hash": "93648e3357",
+        "prose_fp": "fb374129",
+        "question_hash": "1667c2c6fc"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Huts day and night",
+            "bullet": "Around 7,500 women, including naval Wrens, wired Bombe drums, logged signals, and translated German messages"
+          },
+          {
+            "hint": "Decades of silence",
+            "bullet": "Staff kept the Official Secrets Act until the 1970s → Germany never knew Enigma was cracked"
+          },
+          {
+            "hint": "Impact of Ultra",
+            "bullet": "Ultra intelligence steered food convoys past U-boats and aided D-Day, shortening war by two years"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Safer food convoys",
+            "bullet": "Steering merchant ships around U-boat traps kept vital food and fuel reaching rationed British homes"
+          },
+          {
+            "hint": "Delayed public credit",
+            "bullet": "Because Bletchley stayed top secret for thirty years, women codebreakers went unrecognised long after 1945"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHIFT WORK IN HUTS",
+            "stem": "Making up three-quarters of Bletchley's 10,000 staff, around ____________ wired Bombe drums and..."
+          },
+          {
+            "badge": "LIFELONG SILENCE",
+            "stem": "Bound by the ____________, workers told not even their parents until the 1970s so enemy leaders..."
+          },
+          {
+            "badge": "SHORTENING THE WAR",
+            "stem": "Codenamed ____________, Bletchley's intelligence guided food convoys past U-boats and shortened war by..."
+          }
+        ],
+        "watch_out": "Had even one worker boasted about Station X, Germany would have replaced Enigma immediately—strict silence under the Official Secrets Act was essential to saving lives.",
+        "prose_hash": "d049de4910",
+        "prose_fp": "d16827e9",
+        "question_hash": "23ea92a32c"
+      }
+    ],
+    "lesson_10": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Afternoon broadcast",
+            "bullet": "At 3:00pm on 8 May 1945, Winston Churchill announced Nazi Germany's unconditional surrender over radio"
+          },
+          {
+            "hint": "Ending wartime darkness",
+            "bullet": "Church bells rang out again as relieved families ripped down hated Blackout curtains"
+          },
+          {
+            "hint": "Outdoor neighbourhood joy",
+            "bullet": "Communities hung red, white, and blue bunting, shared street-party cakes, and danced round bonfires"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Echo of 1939",
+            "bullet": "Just as wireless radios announced war in September 1939, radios united families on VE Day"
+          },
+          {
+            "hint": "Fighting in Asia",
+            "bullet": "Fighting against Japan continued in Asia until VJ Day on 15 August 1945"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THREE O'CLOCK NEWS",
+            "stem": "At 3:00pm on 8 May 1945, Prime Minister ____________ announced Germany's surrender and waved beside..."
+          },
+          {
+            "badge": "STREET PARTIES",
+            "stem": "Ripping down ____________ after nearly six years, neighbours carried tables into roads with ____________ and cakes."
+          },
+          {
+            "badge": "UNFINISHED FIGHTING",
+            "stem": "Amid the bonfires, many families still worried for soldiers fighting Japan until ____________ in August 1945."
+          }
+        ],
+        "watch_out": "Victory in Europe Day on 8 May 1945 ended fighting in Europe only—World War II did not completely end until VJ Day against Japan on 15 August 1945.",
+        "prose_hash": "a769cbd188",
+        "prose_fp": "e3bf5f1c",
+        "question_hash": "73ba017b4d"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Mourning wartime losses",
+            "bullet": "Britain mourned 380,000 service personnel and 67,000 civilians alongside millions across Europe and the Commonwealth"
+          },
+          {
+            "hint": "Urgent new housing",
+            "bullet": "With over two million homes bombed, communities built quick prefab bungalows and new council estates"
+          },
+          {
+            "hint": "1948 healthcare reform",
+            "bullet": "Shared wartime spirit inspired the free National Health Service in 1948 so everyone received medical care"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Nine more rationed years",
+            "bullet": "Huge war debts meant British families continued using wartime food ration books until 1954"
+          },
+          {
+            "hint": "Commonwealth contribution",
+            "bullet": "Volunteers from India, the Caribbean, Africa, Canada, Australia, and New Zealand had fought beside Britain"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "JOY AND SORROW",
+            "stem": "Alongside the celebrations, families mourned ____________ and 67,000 civilians, plus volunteers from..."
+          },
+          {
+            "badge": "REPLACING RUBBLE",
+            "stem": "Because raids had damaged over ____________, communities built council and ____________ homes while rationing lasted until 1954."
+          },
+          {
+            "badge": "FREE HEALTHCARE",
+            "stem": "Determined to build a fairer post-war society, Britain created the free ____________ in..."
+          }
+        ],
+        "watch_out": "Winning the war did not bring instant wealth—bombs had damaged two million homes, Britain owed huge debts, and food rationing lasted nine more years until 1954.",
+        "prose_hash": "529bc336c7",
+        "prose_fp": "0ef2ccfa",
+        "question_hash": "d0aa82a472"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "November gatherings",
+            "bullet": "Communities gather at local memorials and Whitehall's Cenotaph on 11 November and Remembrance Sunday"
+          },
+          {
+            "hint": "Eleven o'clock traditions",
+            "bullet": "At 11:00am people keep a two-minute silence and wear red poppies honouring all war service"
+          },
+          {
+            "hint": "Purpose for today",
+            "bullet": "Remembering wartime sacrifice teaches new generations about ordinary courage and protecting future peace"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier battlefield roots",
+            "bullet": "Wild red poppies first grew on muddy First World War battlefields before honouring later conflicts"
+          },
+          {
+            "hint": "Empty tomb meaning",
+            "bullet": "Cenotaph means empty tomb — giving bereaved families one shared monument for loved ones buried overseas"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "AUTUMN MEMORIALS",
+            "stem": "Each November on Armistice Day and ____________, crowds gather at local memorials and Whitehall's..."
+          },
+          {
+            "badge": "SILENCE AND POPPIES",
+            "stem": "Pausing at 11:00am for a ____________, people wear ____________ that first bloomed across..."
+          },
+          {
+            "badge": "PROTECTING PEACE",
+            "stem": "Honouring everyone who served and suffered teaches each generation about ____________ and our duty to..."
+          }
+        ],
+        "watch_out": "Although the red poppy symbol began after First World War battlefields in 1918, Remembrance Sunday honours everyone from Britain and the Commonwealth who served and suffered in World War II and later conflicts too.",
+        "prose_hash": "fedc91530d",
+        "prose_fp": "426dff5b",
+        "question_hash": "6524cabc4a"
+      }
+    ],
+    "lesson_11": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "May 1945 liberation",
+            "bullet": "Freed from Nazi camps in May 1945, orphaned Holocaust survivors had lost families and homes"
+          },
+          {
+            "hint": "August airlift",
+            "bullet": "Backed by the Central British Fund, ten converted RAF bombers flew 300 children from Prague"
+          },
+          {
+            "hint": "Touchdown in Cumbria",
+            "bullet": "Landing at RAF Crosby-on-Eden on 14 August 1945, coaches carried them to peaceful Lake Windermere"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Repurposed warplanes",
+            "bullet": "Heavy Short Stirling bombers built for wartime raids were refitted to carry young survivors to safety"
+          },
+          {
+            "hint": "Prague connection",
+            "bullet": "Six years after Winton's 1939 rescue trains left Prague, post-war mercy flights departed the same city"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MAY 1945 LIBERATION",
+            "stem": "When Allied troops freed Nazi concentration camps in May 1945, surviving ____________ had lost their families and..."
+          },
+          {
+            "badge": "MERCY AIRLIFT",
+            "stem": "Funded by the ____________, ten converted ____________ flew 300 child survivors from Prague on 14 August 1945."
+          },
+          {
+            "badge": "CUMBRIAN ARRIVAL",
+            "stem": "Touching down at ____________, the young survivors rode by coach to..."
+          }
+        ],
+        "watch_out": "Do not confuse the 1945 Windermere Children with the 1938–1939 Kindertransport—the Windermere group were older orphans flown by RAF bombers after surviving Nazi camps during the Holocaust.",
+        "prose_hash": "887b28815e",
+        "prose_fp": "251920ed",
+        "question_hash": "7d67081bee"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Lasting hunger fears",
+            "bullet": "Haunted by camp hunger, children hid bread under pillows until trusting meals would come daily"
+          },
+          {
+            "hint": "Patient adult team",
+            "bullet": "Dr Oscar Friedman and art teacher Marie Paneth used art, sport, and patience without forcing talk"
+          },
+          {
+            "hint": "Local Cumbrian gift",
+            "bullet": "Locals donated shiny red bicycles → children rode freely down country lanes after years behind wire"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Restoring stolen childhood",
+            "bullet": "Nazi laws had confiscated Jewish children's bicycles in the 1930s, making red Windermere bikes deeply meaningful"
+          },
+          {
+            "hint": "Lakeside wooden chalets",
+            "bullet": "Calgarth Estate's wooden chalets had originally housed wartime flying-boat factory workers beside Lake Windermere"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TRUSTING DAILY MEALS",
+            "stem": "Moving into wooden chalets at ____________, many children secretly hid ____________ under pillows because..."
+          },
+          {
+            "badge": "PATIENT CARE",
+            "stem": "Never forcing anyone to speak too soon, ____________ and art teacher ____________ offered painting, football, and English lessons."
+          },
+          {
+            "badge": "WHEELS OF FREEDOM",
+            "stem": "Generous local people donated ____________, letting the young survivors ride freely along..."
+          }
+        ],
+        "watch_out": "Hiding bread under pillows was not greed or bad behaviour—after years of near-starvation in concentration camps, survivors struggled to believe fresh food would still be there tomorrow.",
+        "prose_hash": "630f3d0a52",
+        "prose_fp": "794898cc",
+        "question_hash": "a4d3659661"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Close lifelong bond",
+            "bullet": "Calling both boys and girls The Boys, survivors became doctors, teachers, engineers, and Olympian Ben Helfgott"
+          },
+          {
+            "hint": "1963 charity group",
+            "bullet": "In 1963 they founded The '45 Aid Society to raise charity funds thanking Britain"
+          },
+          {
+            "hint": "School testimonies",
+            "bullet": "Survivors like Arek Hersh and Sam Laskier shared oral history in schools and guided Tom Palmer"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Starting with nothing",
+            "bullet": "Arriving in 1945 with zero money and little English made their adult achievements extraordinarily resilient"
+          },
+          {
+            "hint": "Preserving eyewitness truth",
+            "bullet": "Recorded oral testimonies preserve firsthand truth now that wartime eyewitnesses are passing into history"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LIFELONG FAMILY",
+            "stem": "Staying close under the nickname ____________, the Windermere survivors built lives as doctors, teachers, and Olympian..."
+          },
+          {
+            "badge": "GIVING BACK",
+            "stem": "Determined to thank Britain through charity work, in 1963 they started ____________ to raise..."
+          },
+          {
+            "badge": "KEEPING VOICES ALIVE",
+            "stem": "Visiting schools across Britain, survivors such as ____________ shared firsthand ____________ and helped author Tom Palmer."
+          }
+        ],
+        "watch_out": "Although the Windermere survivors called their lifelong group The Boys, that affectionate nickname included the girls rescued alongside them in August 1945.",
+        "prose_hash": "c3078c3f05",
+        "prose_fp": "f91342bd",
+        "question_hash": "87dca801d1"
+      }
+    ]
+  }
+}

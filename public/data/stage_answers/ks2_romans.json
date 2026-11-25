@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_romans",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Separate tribal kingdoms",
+            "bullet": "Separate tribes like the Iceni, Catuvellauni, and Brigantes ruled local lands → Britain had no single king"
+          },
+          {
+            "hint": "Hilltop earth defences",
+            "bullet": "Steep earth ramparts, deep ditches, and wooden fences ringed Maiden Castle → sheltered families and cattle"
+          },
+          {
+            "hint": "Early Roman raids",
+            "bullet": "Fierce Celtic chariot warriors fought Julius Caesar in 55 and 54 BC → forced his ships back"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Divided local rulers",
+            "bullet": "Rival tribes often raided neighbours for cattle → rarely united as one army against outsiders"
+          },
+          {
+            "hint": "Earth versus stone",
+            "bullet": "Celtic forts relied on earth banks and timber fences → unlike later Roman stone walls"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TRIBAL RULE",
+            "stem": "Before AD 43, Britain had no ____________ because separate tribes such as the ____________ ruled their own lands."
+          },
+          {
+            "badge": "HILLFORT DEFENCES",
+            "stem": "To protect families and valuable ____________, communities built giant hillforts like ____________ ringed with steep ____________."
+          },
+          {
+            "badge": "EARLY BATTLES",
+            "stem": "When ____________ landed in 55 BC and 54 BC, fast ____________ warriors fought hard until he sailed back."
+          }
+        ],
+        "watch_out": "Julius Caesar raided Britain in 55 and 54 BC, yet he sailed away without conquering the island—full Roman conquest waited nearly a century until AD 43.",
+        "prose_hash": "14508e06de",
+        "prose_fp": "cb20c487",
+        "question_hash": "b715c8c19e"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Walls and roof",
+            "bullet": "Wattle-and-daub clay walls and a chimney-free thatched cone roof → trapped warmth and stopped windblown sparks"
+          },
+          {
+            "hint": "Useful rising woodsmoke",
+            "bullet": "Hearth smoke drifted slowly through the thatch → cured hanging meat and chased biting insects away"
+          },
+          {
+            "hint": "Indoor family chores",
+            "bullet": "Children ground wheat with heavy quern stones → fed families while parents wove woollen cloaks on looms"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Everyday farm materials",
+            "bullet": "Families used local hazel sticks, clay, and straw → built sturdy homes from surrounding farmland"
+          },
+          {
+            "hint": "Centuries of continuity",
+            "bullet": "Roundhouses suited Britain's wet climate → rural farmers kept living in them even under Roman rule"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SMART ROOF DESIGN",
+            "stem": "Builders plastered ____________ walls with clay and left no ____________ in the thatch so wind could not blow sparks inside."
+          },
+          {
+            "badge": "HEARTH AND SMOKE",
+            "stem": "Rising woodsmoke from the central ____________ drifted through the roof, which cured ____________ and chased away ____________."
+          },
+          {
+            "badge": "FOOD AND CLOTHING",
+            "stem": "Inside the warm home, children turned heavy ____________ to make flour while adults wove wool on ____________."
+          }
+        ],
+        "watch_out": "Leaving out a chimney was not a clumsy mistake—a hole in the thatched roof would have drawn fierce draughts and set the dry straw ablaze.",
+        "prose_hash": "77951de5fa",
+        "prose_fp": "132dd139",
+        "question_hash": "e992bdca67"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Fine metalwork treasures",
+            "bullet": "Master smiths twisted pure gold torcs and beat bronze shields → proved advanced artistic skill"
+          },
+          {
+            "hint": "Memory without books",
+            "bullet": "Druids memorised complex tribal laws, stories, and prayers → passed wisdom on without written books"
+          },
+          {
+            "hint": "Cross-Channel sea trade",
+            "bullet": "Ships carried Cornish tin, wheat, and hides to Europe → rulers minted gold stater coins"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Biased outsider writers",
+            "bullet": "Romans called Britons rough savages because Celts wrote no books → surviving treasures prove otherwise"
+          },
+          {
+            "hint": "Tempting distant rulers",
+            "bullet": "Gleaming gold coins and tin exports reached Europe → alerted ambitious Roman emperors to Britain's wealth"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "METALWORK SKILL",
+            "stem": "Far from being rough savages, skilled smiths crafted twisted ____________ and gleaming ____________ for sacred rivers."
+          },
+          {
+            "badge": "ORAL TRADITION",
+            "stem": "Even without written books, wise ____________ kept order by memorising ____________ and religious prayers."
+          },
+          {
+            "badge": "OVERSEAS TRADE",
+            "stem": "Wooden trading boats carried ____________ and wheat across the Channel, while rulers minted ____________ that caught Rome's eye."
+          }
+        ],
+        "watch_out": "Never assume Iron Age Britons were backward just because they left no written books—gold torcs, bronze shields, and stater coins prove high skill.",
+        "prose_hash": "9cb2d3e48d",
+        "prose_fp": "c7e6e63d",
+        "question_hash": "281cb7ddf5"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Proving his leadership",
+            "bullet": "Roman senators doubted Claudius over his limp and stutter → he needed military glory in AD 43"
+          },
+          {
+            "hint": "Underground metal mines",
+            "bullet": "Britain held silver, Cornish tin, lead, and iron → supplied Roman coins, pipes, and weapons"
+          },
+          {
+            "hint": "Grain and revenue",
+            "bullet": "Fertile southern wheat farms and conquered tribes → fed Roman soldiers and paid heavy empire taxes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Beating Caesar's record",
+            "bullet": "Julius Caesar had sailed home twice without conquering Britain → victory there won Claudius huge prestige"
+          },
+          {
+            "hint": "Clues from trade",
+            "bullet": "Cross-Channel stater coins and tin cargoes → already showed Rome how wealthy southern Britain was"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PERSONAL GLORY",
+            "stem": "Doubted by powerful ____________ in Rome, Emperor Claudius needed ____________ in AD 43 to prove himself a strong ruler."
+          },
+          {
+            "badge": "VALUABLE METALS",
+            "stem": "Capturing British mines gave Rome ____________ for coins alongside ____________, lead, and iron for pipes and weapons."
+          },
+          {
+            "badge": "FOOD AND TAX",
+            "stem": "Rich southern farms grew ____________ for the army, while defeated tribes had to pay ____________ to Rome."
+          }
+        ],
+        "watch_out": "Claudius did not invade Britain for one single reason—he combined his personal need to impress Roman senators with greed for metals, wheat, and taxes.",
+        "prose_hash": "0ddc44cace",
+        "prose_fp": "e0069fc3",
+        "question_hash": "8ac1e3372c"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Armour and formations",
+            "bullet": "Flexible lorica segmentata iron strips and locked testudo shields → protected marching legionaries from arrows"
+          },
+          {
+            "hint": "Bending iron weapons",
+            "bullet": "Hurled pilum javelins bent inside enemy shields → weighed them down before close combat began"
+          },
+          {
+            "hint": "Teamwork close up",
+            "bullet": "Full-time legionaries trained daily as one calm unit → stabbed swiftly with short gladius swords"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Professionals versus farmers",
+            "bullet": "Celtic warriors were part-time farmers from separate tribes → faced disciplined full-time Roman soldiers"
+          },
+          {
+            "hint": "Fast daily marches",
+            "bullet": "Sturdy hobnailed caligae sandals gripped muddy tracks → let legions march twenty miles every day"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PROTECTIVE GEAR",
+            "stem": "Full-time legionaries wore flexible ____________ armour and locked curved shields into a ____________ formation against arrows."
+          },
+          {
+            "badge": "CLEVER WEAPONS",
+            "stem": "Throwing a bending ____________ ruined enemy shields before soldiers stepped close to stab with a short ____________."
+          },
+          {
+            "badge": "DAILY DISCIPLINE",
+            "stem": "Unlike part-time tribal fighters, Roman troops trained ____________ to march twenty miles and fight as ____________."
+          }
+        ],
+        "watch_out": "Roman legionaries did not win by swinging giant heavy swords wildly—they stayed calm behind locked shields and stabbed neatly with a short gladius.",
+        "prose_hash": "b07f5eab8d",
+        "prose_fp": "4416cb5d",
+        "question_hash": "3dd87d4200"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Kent landing force",
+            "bullet": "General Aulus Plautius landed at Richborough with four legions → defeated Caratacus at the River Medway"
+          },
+          {
+            "hint": "Halting near rivers",
+            "bullet": "Plautius waited near the Thames for Claudius → let the Emperor personally lead the final march"
+          },
+          {
+            "hint": "Shock beasts arrive",
+            "bullet": "Towering war elephants terrified Celtic horses at Camulodunum → eleven British kings surrendered to Rome"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Carefully staged victory",
+            "bullet": "Generals did the hardest fighting before Claudius arrived → handed the doubted Emperor easy glory"
+          },
+          {
+            "hint": "Continuing western resistance",
+            "bullet": "Taking Camulodunum made southern Britain a Roman province → yet Caratacus kept resisting further west"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INVASION CAMPAIGN",
+            "stem": "Landing at ____________ with around 40,000 troops, General ____________ beat Caratacus in a two-day battle at the ____________."
+          },
+          {
+            "badge": "EMPEROR'S ARRIVAL",
+            "stem": "Near the Thames, the army waited so ____________ could lead towering ____________ that panicked Celtic horses."
+          },
+          {
+            "badge": "SOUTHERN PROVINCE",
+            "stem": "Marching into ____________, Rome took the surrender of ____________ and turned southern Britain into a province."
+          }
+        ],
+        "watch_out": "Emperor Claudius did not fight the whole invasion himself—General Aulus Plautius won the tough River Medway battle first and waited for Claudius to claim glory.",
+        "prose_hash": "0abe0b262c",
+        "prose_fp": "9991b005",
+        "question_hash": "1dd6081579"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Ignored royal will",
+            "bullet": "Dying ally King Prasutagus shared wealth with Emperor Nero → greedy Roman officials broke that promise"
+          },
+          {
+            "hint": "Stolen tribal wealth",
+            "bullet": "Soldiers seized Iceni lands and demanded heavy loans and taxes → stripped the tribe's independence"
+          },
+          {
+            "hint": "Cruel royal humiliation",
+            "bullet": "Roman officers flogged Queen Boudicca and mistreated her daughters → sparked furious rebellion in AD 60"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Client kingdom deal",
+            "bullet": "Friendly tribes initially kept their thrones after AD 43 → betraying Prasutagus shocked British allies"
+          },
+          {
+            "hint": "Wider tribal anger",
+            "bullet": "Harsh Roman taxes and forced loans angered neighbouring Britons → won Boudicca eager rebel allies"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BROKEN WILL",
+            "stem": "Although King ____________ left half his wealth to ____________ to protect his family, greedy officials broke that deal."
+          },
+          {
+            "badge": "GREED AND THEFT",
+            "stem": "Roman troops marched into East Anglia to seize ____________ and demand heavy ____________ and taxes back."
+          },
+          {
+            "badge": "VIOLENT SPARK",
+            "stem": "Outrage boiled over when officers publicly ____________ Queen Boudicca and mistreated ____________."
+          }
+        ],
+        "watch_out": "The Iceni had not fought Rome from the very start—King Prasutagus was a peaceful Roman ally until officials betrayed his will in AD 60.",
+        "prose_hash": "fec97c4eee",
+        "prose_fp": "6a784840",
+        "question_hash": "9c4e2c4011"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Governor far away",
+            "bullet": "Governor Suetonius Paulinus was away fighting in Anglesey → left southern Roman towns poorly defended"
+          },
+          {
+            "hint": "Three torched settlements",
+            "bullet": "United Iceni and Trinovantes burned Camulodunum, Londinium, and Verulamium → destroyed key Roman centres"
+          },
+          {
+            "hint": "Underground fire evidence",
+            "bullet": "Scorched red clay, blackened coins, and melted pots underground → prove fierce fires destroyed timber shops"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Hated symbol targeted",
+            "bullet": "Camulodunum held the grand Roman temple since Claudius's triumph → made it the rebels' first target"
+          },
+          {
+            "hint": "Physical archaeology clues",
+            "bullet": "Britons wrote no rebel accounts → underground destruction layers give physical proof of AD 60"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "UNGUARDED SOUTH",
+            "stem": "With Governor ____________ far away in ____________, Boudicca united the Iceni and ____________ to strike south."
+          },
+          {
+            "badge": "THREE TARGETS",
+            "stem": "Rebel armies first destroyed the temple at ____________, before torching busy ____________ and ____________."
+          },
+          {
+            "badge": "BURIED PROOF",
+            "stem": "Deep beneath modern streets, archaeologists still uncover a scorching ____________ filled with ____________ and melted pots."
+          }
+        ],
+        "watch_out": "Boudicca did not burn just one city—her rebel alliance destroyed three separate Roman settlements: Camulodunum, Londinium, and Verulamium.",
+        "prose_hash": "7df91b80d3",
+        "prose_fp": "0c3f9fc7",
+        "question_hash": "0df460c0a7"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Clever valley ground",
+            "bullet": "Paulinus positioned 10,000 legionaries inside a narrow wooded valley → funnelled and squashed charging Britons"
+          },
+          {
+            "hint": "Disciplined wedge attack",
+            "bullet": "Legionaries hurled javelins and advanced in tight wedges → defeated warriors unable to swing long swords"
+          },
+          {
+            "hint": "Blocked escape route",
+            "bullet": "Parked spectator wagons trapped retreating rebels behind the field → sealed Roman victory and stone-walled Londinium"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Training beats numbers",
+            "bullet": "Shield walls, pilum javelins, and daily drill → let outnumbered Roman soldiers defeat a huge crowd"
+          },
+          {
+            "hint": "Stronger rebuilt capital",
+            "bullet": "After Boudicca died, Rome rebuilt burned Londinium inside thick stone walls → secured provincial control"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLEVER TERRAIN",
+            "stem": "Outnumbered in AD 61, Paulinus chose a ____________ so the huge rebel army could not surround his ____________ legionaries."
+          },
+          {
+            "badge": "TACTICAL ADVANTAGE",
+            "stem": "Squashed together, Britons could barely swing ____________ while disciplined Romans threw javelins and pushed in ____________."
+          },
+          {
+            "badge": "BLOCKED RETREAT",
+            "stem": "Confidence turned into disaster when a ring of ____________ trapped retreating rebels, allowing Rome to rebuild Londinium with ____________."
+          }
+        ],
+        "watch_out": "Having a much bigger army did not guarantee victory—narrow valley ground and parked family wagons turned British numbers into a deadly trap.",
+        "prose_hash": "42cf0ac8d7",
+        "prose_fp": "795ecb50",
+        "question_hash": "9ee8d4cc31"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Sea-to-sea northern frontier",
+            "bullet": "Hadrian ordered a 73-mile stone wall from Wallsend to Bowness-on-Solway → divided Roman Britain from Caledonia"
+          },
+          {
+            "hint": "Guarded mile gates",
+            "bullet": "Stone milecastles stood at every Roman mile → stopped cattle raids and collected border taxes"
+          },
+          {
+            "hint": "Permanent garrison forts",
+            "bullet": "Sixteen large forts like Housesteads backed the Wall → included rainwater-flushed communal stone latrines"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Fixing empire limits",
+            "bullet": "Rather than conquering mountainous Caledonia forever, Hadrian fixed a guarded northern frontier in AD 122"
+          },
+          {
+            "hint": "Controlled border crossings",
+            "bullet": "Milecastle gates let peaceful traders pass after paying duty → controlled movement rather than blocking everyone"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FRONTIER LINE",
+            "stem": "Visiting in AD 122, Emperor Hadrian ordered a ____________ stone wall stretching from ____________ to Bowness-on-Solway."
+          },
+          {
+            "badge": "BORDER CONTROL",
+            "stem": "Guarded gatehouses called ____________ stood every Roman mile to stop ____________ and collect ____________ from travellers."
+          },
+          {
+            "badge": "FORT ENGINEERING",
+            "stem": "Sixteen permanent forts such as ____________ supported the troops and even used rainwater to flush ____________."
+          }
+        ],
+        "watch_out": "Hadrian's Wall does not follow the modern England–Scotland border, and its milecastle gates controlled trade and taxes rather than sealing everyone out.",
+        "prose_hash": "54e193aa53",
+        "prose_fp": "234d7864",
+        "question_hash": "56de82c838"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Airtight wet soil",
+            "bullet": "Wet, oxygen-free mud stopped wood rotting → preserved hundreds of thin ink tablets from AD 100"
+          },
+          {
+            "hint": "Famous party note",
+            "bullet": "Claudia Severa's birthday note to Sulpicia Lepidina → preserves the oldest Latin handwriting by a woman"
+          },
+          {
+            "hint": "Warm winter parcel",
+            "bullet": "A care list of woollen socks, sandals, and underpants → reveals chilly frontier life up north"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rare everyday voices",
+            "bullet": "Thin wood normally rots in damp soil → Vindolanda uniquely reveals ordinary women and chilly soldiers"
+          },
+          {
+            "hint": "Cold northern weather",
+            "bullet": "Troops posted far from warm Mediterranean lands → needed extra woollen clothes against freezing northern winds"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MUDDY TIME CAPSULE",
+            "stem": "Deep beneath Vindolanda Fort, wet ____________ stopped decay and saved hundreds of thin ____________ from around AD 100."
+          },
+          {
+            "badge": "WOMAN'S HANDWRITING",
+            "stem": "Writing to Sulpicia Lepidina, ____________ sent a warm ____________ invitation containing the oldest surviving Latin handwriting by a woman."
+          },
+          {
+            "badge": "CHILLY SOLDIERS",
+            "stem": "Another personal note lists ____________, sandals, and ____________ sent to keep a cold frontier soldier warm."
+          }
+        ],
+        "watch_out": "The Vindolanda tablets were not carved into heavy stone slabs—they were postcard-thin shavings of wood written in ink that only survived in oxygen-free mud.",
+        "prose_hash": "61ec9da155",
+        "prose_fp": "1a3ac173",
+        "question_hash": "2b67d1c56d"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Three-continent regiments",
+            "bullet": "Batavian troops, Syrian archers, and North African Aurelian Moors → patrolled Hadrian's Wall as auxiliary soldiers"
+          },
+          {
+            "hint": "Bustling civilian towns",
+            "bullet": "Busy vici settlements grew outside fort gates → housed soldiers' families, traders, and local shopkeepers"
+          },
+          {
+            "hint": "Carved fort tombstones",
+            "bullet": "Arbeia tombstones for Syrian Barates, British Regina, and African Victor → prove diverse frontier communities"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Vast connected empire",
+            "bullet": "Rome ruled lands across three continents → posted regiments thousands of miles to guard northern Britain"
+          },
+          {
+            "hint": "Local family ties",
+            "bullet": "Barates married Regina from the southern Catuvellauni tribe → blended newcomer customs with British life"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GLOBAL GARRISON",
+            "stem": "Auxiliary soldiers from three continents patrolled the frontier, including ____________ archers and North African ____________ at Burgh-by-Sands."
+          },
+          {
+            "badge": "FRONTIER TOWNS",
+            "stem": "Outside the stone fort gates, lively civilian settlements called ____________ grew up for ____________ and shopkeepers."
+          },
+          {
+            "badge": "STONE MEMORIALS",
+            "stem": "Carved tombstones at ____________ remember ____________ from Syria, his British wife Regina, and Victor from Mauretania."
+          }
+        ],
+        "watch_out": "Not every soldier on Hadrian's Wall came from the city of Rome in Italy—auxiliary troops arrived from Europe, Syria, and North Africa.",
+        "prose_hash": "f971b151fc",
+        "prose_fp": "1d2b696c",
+        "question_hash": "924e365479"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "All-weather straight highways",
+            "bullet": "Surveyors used a groma to build 10,000 miles of cambered roads with ditches → drained rainwater"
+          },
+          {
+            "hint": "Planned town centres",
+            "bullet": "Walled grid towns centred on an open forum and basilica → boosted markets and town government"
+          },
+          {
+            "hint": "Public arena shows",
+            "bullet": "Oval stone amphitheatres like Caerleon in South Wales → seated cheering crowds for gladiator shows"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Faster than tracks",
+            "bullet": "Iron Age carts bogged down on muddy dirt tracks → paved highways sped travel in every season"
+          },
+          {
+            "hint": "Military routes first",
+            "bullet": "Highways like Watling Street first marched legions swiftly → later connected bustling Roman market towns"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ROAD ENGINEERING",
+            "stem": "Using a sighting ____________, surveyors built straight roads with curved stones and ____________ so rainwater drained away."
+          },
+          {
+            "badge": "CIVIC HEART",
+            "stem": "Where highways met, walled grid towns grew around a busy market ____________ and a ____________ town hall."
+          },
+          {
+            "badge": "CROWD ENTERTAINMENT",
+            "stem": "Townspeople and soldiers gathered inside oval stone ____________ such as ____________ to watch gladiator shows."
+          }
+        ],
+        "watch_out": "Roman roads were first engineered to march legions and supplies swiftly across Britain—faster merchant trade was an extra benefit alongside military control.",
+        "prose_hash": "3cda139241",
+        "prose_fp": "d08f4685",
+        "question_hash": "1808ef5c18"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Fresh water channels",
+            "bullet": "Stone aqueducts and lead pipes carried spring water → fed town fountains, sewers, and Aquae Sulis"
+          },
+          {
+            "hint": "Hot air floors",
+            "bullet": "Enslaved workers stoked furnaces pushing hot air between brick pilae stacks → heated hypocaust floors above"
+          },
+          {
+            "hint": "Washing without soap",
+            "bullet": "Daily bathers rubbed olive oil onto skin → scraped away dirt with curved bronze strigils"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mined metal pipes",
+            "bullet": "Lead mined after Claudius's invasion → formed the underground pipes carrying fresh water into towns"
+          },
+          {
+            "hint": "Unpaid furnace labour",
+            "bullet": "Warm bathhouses relied on enslaved workers shovelling wood fuel → Roman luxury depended on forced labour"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WATER CHANNELS",
+            "stem": "Fresh spring water flowed along stone ____________ and underground ____________ into fountains, sewers, and baths like Aquae Sulis."
+          },
+          {
+            "badge": "UNDERFLOOR HEAT",
+            "stem": "Inside a ____________ system, enslaved workers fed a wood furnace so hot air circulated between brick ____________ stacks."
+          },
+          {
+            "badge": "BATHHOUSE ROUTINE",
+            "stem": "Instead of using modern soap, bathers rubbed on ____________ and scraped dirt off with a curved bronze ____________."
+          }
+        ],
+        "watch_out": "Roman bathers did not wash with bars of bubbly soap—they oiled their skin after steaming and scraped grime away using a curved metal strigil.",
+        "prose_hash": "1befb5f5dc",
+        "prose_fp": "9a025cc7",
+        "question_hash": "242741d89e"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Luxury country homes",
+            "bullet": "Wealthy southern leaders built stone villas like Fishbourne Palace → laid mosaic floors from tiny tesserae"
+          },
+          {
+            "hint": "Imported banquet flavours",
+            "bullet": "Rich villa diners ate grapes, cherries, walnuts, and salty garum sauce → adopted Roman elite tastes"
+          },
+          {
+            "hint": "Unchanged rural majority",
+            "bullet": "Nearly nine in ten Britons farmed in thatched roundhouses → kept speaking Celtic while paying taxes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pre-Roman building continuity",
+            "bullet": "Country roundhouses still matched Iron Age homes → Roman luxury mainly reached wealthy landowners"
+          },
+          {
+            "hint": "North-south wealth gap",
+            "bullet": "Grand villas clustered in peaceful southern Britain → northern frontier lands stayed heavily military"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ELITE VILLAS",
+            "stem": "Wealthy landowners in the south built stone villas like ____________ with mosaic floors made from tiny ____________ cubes."
+          },
+          {
+            "badge": "NEW FOODS",
+            "stem": "Rich diners enjoyed imported treats such as cherries, walnuts, and salty ____________ fish sauce."
+          },
+          {
+            "badge": "RURAL CONTINUITY",
+            "stem": "However, almost ____________ out of ten Britons kept speaking Celtic in ____________ while paying Roman taxes."
+          }
+        ],
+        "watch_out": "Do not imagine every Briton moved into a mosaic villa—around nine out of ten ordinary people carried on farming from smoky thatched roundhouses.",
+        "prose_hash": "5863aef29e",
+        "prose_fp": "40f24e56",
+        "question_hash": "5632951f32"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Coastal raiding tribes",
+            "bullet": "Picts, Irish Scotti, and seafaring Angles and Saxons raided coasts → stretched Britain's defences thin"
+          },
+          {
+            "hint": "Danger to Italy",
+            "bullet": "Visigoth armies invaded Italy and threatened Rome → legions sailed away across the Channel"
+          },
+          {
+            "hint": "Imperial reply letter",
+            "bullet": "Emperor Honorius had no spare soldiers in AD 410 → told British towns to defend themselves"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Heartland over frontier",
+            "bullet": "Britain sat on the distant northern edge of the Empire → saving Rome mattered far more"
+          },
+          {
+            "hint": "Four centuries end",
+            "bullet": "Nearly four hundred years after Claudius landed in AD 43 → Roman army rule ended"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COASTAL RAIDS",
+            "stem": "Around AD 400, Britain suffered fierce attacks from Scottish ____________, Irish Scotti, and seafaring ____________."
+          },
+          {
+            "badge": "CRISIS IN ITALY",
+            "stem": "Legions sailed away across the Channel because ____________ armies had invaded Italy and threatened ____________ itself."
+          },
+          {
+            "badge": "AD 410 LETTER",
+            "stem": "When towns begged for soldiers in AD 410, Emperor ____________ replied that Britons must ____________."
+          }
+        ],
+        "watch_out": "Britons did not defeat and drive the Roman army out in AD 410—Rome withdrew its legions to save Italy from Visigoth invaders.",
+        "prose_hash": "3da8548b4d",
+        "prose_fp": "174db7e6",
+        "question_hash": "0252bb0bdd"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Vanishing army pay",
+            "bullet": "Fresh Roman coins stopped arriving for soldiers' wages → town markets shrank and pottery workshops closed"
+          },
+          {
+            "hint": "Unrepaired stone systems",
+            "bullet": "Nobody fixed leaky aqueducts or hypocaust furnaces → grand Roman bathhouses slowly crumbled into ruins"
+          },
+          {
+            "hint": "Hidden Suffolk silver",
+            "bullet": "Rich families buried chests like the Hoxne Hoard and Mildenhall Treasure → never returned home"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Troops drove markets",
+            "bullet": "Roman towns and craft workshops relied on army wages → losing legions shrank everyday trade"
+          },
+          {
+            "hint": "Ploughed field discoveries",
+            "bullet": "Unclaimed silver spoons, coins, and plates in Suffolk → show how coastal raids frightened wealthy families"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHRINKING MARKETS",
+            "stem": "Once fresh ____________ stopped arriving to pay army wages, town markets shrank and ____________ closed down."
+          },
+          {
+            "badge": "DECAYING BUILDINGS",
+            "stem": "Without skilled upkeep, leaky ____________ and underfloor ____________ broke down until bathhouses crumbled into ruins."
+          },
+          {
+            "badge": "BURIED TREASURE",
+            "stem": "Fearing raiders, wealthy families buried silver chests like the ____________ and ____________ in Suffolk, never returning for them."
+          }
+        ],
+        "watch_out": "Buried treasures like the Hoxne Hoard were not thrown away as rubbish—owners hid silver underground for safekeeping and never made it back.",
+        "prose_hash": "21b507e1c3",
+        "prose_fp": "ef7eb6e4",
+        "question_hash": "edeed6026c"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Cities and highways",
+            "bullet": "Londinium became London, A-roads trace Roman routes, and -chester names mark castra → shaped modern maps"
+          },
+          {
+            "hint": "Letters and calendars",
+            "bullet": "Latin ABC letters, clock numerals, and calendar months July and August → still organise daily life"
+          },
+          {
+            "hint": "Faith and wildlife",
+            "bullet": "Romans brought Christianity alongside apples, cabbages, rabbits, and stinging nettles → reshaped British faith and nature"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Deep stone foundations",
+            "bullet": "Straight road foundations engineered by Roman surveyors → stayed solid enough beneath modern British A-roads"
+          },
+          {
+            "hint": "Surviving daily habits",
+            "bullet": "Even after stone bathhouses crumbled around AD 410 → Roman writing, faith, and town sites endured"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PLACES AND ROADS",
+            "stem": "Modern ____________ grew from Londinium, straight A-roads trace Roman routes, and town names ending in ____________ mark old castra forts."
+          },
+          {
+            "badge": "WORDS AND TIME",
+            "stem": "Every day we write with the ____________ alphabet, read ____________ on clock faces, and use a twelve-month calendar."
+          },
+          {
+            "badge": "FAITH AND FOOD",
+            "stem": "Alongside spreading ____________, Romans brought familiar foods and wildlife including ____________, cabbages, and rabbits."
+          }
+        ],
+        "watch_out": "Roman influence did not vanish when the soldiers sailed away in AD 410—our capital city, alphabet, calendar, and town names still carry Rome's imprint.",
+        "prose_hash": "f32274594e",
+        "prose_fp": "5beba3cb",
+        "question_hash": "7107d6fcb0"
+      }
+    ]
+  }
+}

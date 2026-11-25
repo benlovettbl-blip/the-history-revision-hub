@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_anglo_saxons_vikings",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Flooded homelands",
+            "bullet": "Rising tides flooded marshes in Jutland, Angeln, and Saxony → ruined crops pushed families out"
+          },
+          {
+            "hint": "Unguarded valleys",
+            "bullet": "Emperor Honorius withdrew Roman legions in AD 410 → left Britain's green river valleys unguarded"
+          },
+          {
+            "hint": "Farming opportunities",
+            "bullet": "Mild weather and fertile farmland pulled families across in boats like the Nydam oak ship"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Departing soldiers",
+            "bullet": "Nearly four centuries of Roman army protection ended → coastal Britain lay open to newcomers"
+          },
+          {
+            "hint": "Family cargo",
+            "bullet": "Families packed grain seeds, livestock, and iron tools → planned permanent farms rather than quick raids"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PUSH REASONS",
+            "stem": "Across the North Sea, rising tides flooded ____________ and ruined crops, forcing ____________ to seek new homes."
+          },
+          {
+            "badge": "PULL REASONS",
+            "stem": "After Roman soldiers left in ____________, Britain attracted newcomers because of its ____________ and unguarded valleys."
+          },
+          {
+            "badge": "SEA CROSSING",
+            "stem": "Packing seeds and animals into long wooden boats such as the ____________, families rowed up eastern rivers to ____________."
+          }
+        ],
+        "watch_out": "Angles, Saxons, and Jutes did not all come for war—many migrated as farming families escaping flooded homelands.",
+        "prose_hash": "1607e66f06",
+        "prose_fp": "2da50fe0",
+        "question_hash": "3ebad28751"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Riverside locations",
+            "bullet": "Free farmers called ceorls avoided crumbling Roman stone towns → built timber villages beside clear streams"
+          },
+          {
+            "hint": "Sunken workshops",
+            "bullet": "Sunken wattle-and-daub huts with thatched roofs housed upright wool looms and iron-forging hearths"
+          },
+          {
+            "hint": "Central gathering place",
+            "bullet": "A warrior cyning feasted in the timber mead hall → gifted gold rings for fighter loyalty"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Stone ruins",
+            "bullet": "Settlers nicknamed roofless Roman stone walls the work of giants → preferred warm timber buildings"
+          },
+          {
+            "hint": "Archaeological proof",
+            "bullet": "Excavated huts at West Stow in Suffolk prove villagers wove their own cloth and forged tools"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VILLAGE HOMES",
+            "stem": "Instead of living in ruined Roman towns, free farmers called ____________ built timber villages beside ____________."
+          },
+          {
+            "badge": "DAILY CRAFTS",
+            "stem": "Inside sunken ____________ workshops with thatched roofs, skilled villagers wove wool on ____________ and forged iron tools."
+          },
+          {
+            "badge": "THE MEAD HALL",
+            "stem": "At the centre of the settlement, a ____________ shared honey mead and ____________ to keep warriors loyal."
+          }
+        ],
+        "watch_out": "Anglo-Saxons did not move into empty Roman villas—they left stone ruins behind and built timber villages near fresh water.",
+        "prose_hash": "4443632a0e",
+        "prose_fp": "af4f53a9",
+        "question_hash": "fe90d2737e"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Seven kingdoms",
+            "bullet": "Warbands formed the Heptarchy of Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex"
+          },
+          {
+            "hint": "Map endings",
+            "bullet": "Old English endings like -ham, -ton, and -ford still name villages, farms, and river crossings"
+          },
+          {
+            "hint": "Weekday names",
+            "bullet": "Pagan gods Tiw, Woden, Thunor, and Frige gave modern English Tuesday through Friday"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Origin of England",
+            "bullet": "Angle settlers gave southern Britain the name Englaland → gradually became modern England"
+          },
+          {
+            "hint": "Divided island",
+            "bullet": "Seven competing kingdoms meant no single ruler governed all England for hundreds of years"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SEVEN KINGDOMS",
+            "stem": "Over time, smaller warbands joined into seven kingdoms known as the ____________, while Angle settlers inspired the name ____________."
+          },
+          {
+            "badge": "MAP ENDINGS",
+            "stem": "Modern British towns ending in ____________, ____________, or ____________ trace straight back to Old English settlements."
+          },
+          {
+            "badge": "PAGAN WEEKDAYS",
+            "stem": "Early settlers honoured pagan gods such as ____________ and ____________ by naming four days of our week after them."
+          }
+        ],
+        "watch_out": "Early Anglo-Saxon Britain was never one united country—seven rival kingdoms competed for power across the Heptarchy.",
+        "prose_hash": "795f1f1bb7",
+        "prose_fp": "19f20328",
+        "question_hash": "f0a7ec663a"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Ship outline",
+            "bullet": "Rusted iron rivets in Suffolk sand traced a 27-metre ship buried around AD 625"
+          },
+          {
+            "hint": "Skilled metalwork",
+            "bullet": "An iron-and-bronze helmet and patterned gold buckles proved Anglo-Saxon smiths crafted dazzling royal art"
+          },
+          {
+            "hint": "Distant trade links",
+            "bullet": "Indian garnets, Byzantine silver spoons, and Frankish coins linked King Raedwald to distant lands"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dark Ages myth",
+            "bullet": "Sutton Hoo overturned beliefs that early Anglo-Saxons were poor, isolated farmers without fine craftsmanship"
+          },
+          {
+            "hint": "Soil conditions",
+            "bullet": "Acidic sandy soil dissolved oak planks and bones → left a ghost impression in the earth"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THE GHOST SHIP",
+            "stem": "When Basil Brown excavated Mound 1 in 1939, rows of ____________ revealed a 27-metre ship buried for ____________."
+          },
+          {
+            "badge": "MASTER CRAFTSMEN",
+            "stem": "Treasures such as the famous ____________ and intricate gold buckles proved that Anglo-Saxon kings commanded ____________."
+          },
+          {
+            "badge": "WIDE TRADE",
+            "stem": "Red garnets from ____________ alongside silver spoons from ____________ showed East Anglia traded far beyond Britain."
+          }
+        ],
+        "watch_out": "No skeleton survived inside Mound 1 because acidic Suffolk sand dissolved both the body and the oak timbers.",
+        "prose_hash": "1bae32cd29",
+        "prose_fp": "20597ac1",
+        "question_hash": "904cca0a33"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Southern mission",
+            "bullet": "Pope Gregory sent Augustine to Canterbury in AD 597 → founded Britain's first Anglo-Saxon cathedral"
+          },
+          {
+            "hint": "Royal marriage link",
+            "bullet": "Christian Queen Bertha already prayed in Kent → persuaded pagan King Ethelbert to welcome Augustine"
+          },
+          {
+            "hint": "Northern mission",
+            "bullet": "Monk Aidan sailed from Iona in AD 635 → built Lindisfarne monastery beside King Oswald"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Blended burial clues",
+            "bullet": "Sutton Hoo held pagan weapons alongside Christian spoons → showed royal families shifting between beliefs"
+          },
+          {
+            "hint": "Converting rulers first",
+            "bullet": "Missionaries converted powerful regional kings first → encouraged whole Anglo-Saxon kingdoms to accept baptism"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FROM ROME",
+            "stem": "From the south in AD 597, Pope Gregory sent ____________ to Kent, where ____________ and Queen Bertha welcomed him."
+          },
+          {
+            "badge": "FROM IONA",
+            "stem": "Meanwhile in the north, monk ____________ travelled from Iona in AD 635 to establish a monastery on ____________."
+          },
+          {
+            "badge": "ROYAL SUPPORT",
+            "stem": "Winning over rulers like Ethelbert and ____________ mattered because royal protection allowed ____________ to spread peacefully."
+          }
+        ],
+        "watch_out": "Christianity did not reach Anglo-Saxon England from Rome alone—Celtic monks from Iona converted the northern kingdoms.",
+        "prose_hash": "da0e19016e",
+        "prose_fp": "206ff382",
+        "question_hash": "9c70007d12"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "United church rules",
+            "bullet": "Abbess Hilda led monks and nuns at Whitby → hosted the AD 664 Synod uniting churches"
+          },
+          {
+            "hint": "Handmade sacred books",
+            "bullet": "Scriptorium scribes used feather quills on calfskin vellum → painted masterpieces like the Lindisfarne Gospels"
+          },
+          {
+            "hint": "History writing",
+            "bullet": "Venerable Bede completed his famous history at Jarrow in AD 731 → popularised AD dating"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Stone and Latin",
+            "bullet": "Christian monks reintroduced stone churches and Latin literacy → transformed wooden villages with written learning"
+          },
+          {
+            "hint": "Future raid wealth",
+            "bullet": "Jewelled gospel covers and silver altarware filled coastal monasteries → later tempted seaborne Viking raiders"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ILLUMINATED BOOKS",
+            "stem": "Inside quiet monastery ____________, patient scribes wrote with feather quills on ____________ to create treasures like the Lindisfarne Gospels."
+          },
+          {
+            "badge": "CHURCH LEADERSHIP",
+            "stem": "On the cliffs at Whitby, ____________ led both monks and nuns and hosted the ____________ in AD 664."
+          },
+          {
+            "badge": "RECORDING HISTORY",
+            "stem": "Working at Jarrow in AD 731, ____________ wrote a landmark history book and spread the use of ____________."
+          }
+        ],
+        "watch_out": "Monasteries were not just quiet prayer halls—they were Anglo-Saxon Britain's only schools, libraries, and book workshops.",
+        "prose_hash": "b1f445f89b",
+        "prose_fp": "c83f6460",
+        "question_hash": "d5004363ab"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Rich church treasures",
+            "bullet": "Lindisfarne Priory held gleaming silver chalices and gold reliquaries → offered instant portable wealth"
+          },
+          {
+            "hint": "Undefended island",
+            "bullet": "Peaceful unarmed monks lived on an isolated tidal island → lacked soldiers or defensive walls"
+          },
+          {
+            "hint": "Shock across Europe",
+            "bullet": "Scholar Alcuin and the Anglo-Saxon Chronicle recorded terror after heathen raiders wrecked the sacred church"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Sacred northern site",
+            "bullet": "Aidan had founded Lindisfarne in AD 635 → wrecking Northumbria's holiest monastery stunned Christian kings"
+          },
+          {
+            "hint": "Raiders' pagan beliefs",
+            "bullet": "Scandinavian raiders worshipped pagan gods like Odin and Thor → felt no fear attacking Christian altars"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SOFT TARGET",
+            "stem": "Built on an isolated coastal island, Lindisfarne tempted raiders because ____________ guarded priceless ____________ and gold reliquaries."
+          },
+          {
+            "badge": "SEA SURPRISE",
+            "stem": "Landing swiftly on ____________, Scandinavian crews struck straight from the sea and escaped before ____________ could arrive."
+          },
+          {
+            "badge": "CHRISTIAN SHOCK",
+            "stem": "Writers such as ____________ and the Anglo-Saxon Chronicle reacted with horror because ____________ had attacked a holy sanctuary."
+          }
+        ],
+        "watch_out": "Vikings did not attack monasteries simply out of hatred for Christianity—coastal priories were unguarded treasure chests.",
+        "prose_hash": "1fc2cdc3ed",
+        "prose_fp": "643eba98",
+        "question_hash": "c31e3e3c6d"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Flexible hull planks",
+            "bullet": "Overlapping oak strakes riveted together and sealed with tarred wool flexed safely over ocean waves"
+          },
+          {
+            "hint": "Sail and oars",
+            "bullet": "Wide woollen sails and long wooden oars powered crews across seas even when winds dropped"
+          },
+          {
+            "hint": "Shallow river reach",
+            "bullet": "A 1-metre shallow draught and matching pointed ends let warships row upriver and reverse fast"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Slow land armies",
+            "bullet": "Anglo-Saxon kings marched heavy foot armies overland → Viking ships escaped before defenders arrived"
+          },
+          {
+            "hint": "Landing without harbours",
+            "bullet": "Flat-bottomed hulls slid straight onto sandy beaches → raiders struck anywhere without needing stone ports"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STRONG HULLS",
+            "stem": "Crafted from overlapping ____________ sealed with tarred wool, clinker-built hulls rode stormy seas without snapping."
+          },
+          {
+            "badge": "SAIL AND OAR",
+            "stem": "Crews crossed open water under a square ____________, then switched to ____________ and reversed using symmetrical pointed ends."
+          },
+          {
+            "badge": "RIVER RAIDS",
+            "stem": "Thanks to a shallow ____________ of just one metre, longships slipped far up ____________ to ambush inland towns."
+          }
+        ],
+        "watch_out": "Longships were not only ocean vessels—their shallow 1-metre draught let Vikings row deep inland along narrow rivers.",
+        "prose_hash": "69f1923935",
+        "prose_fp": "112f3d70",
+        "question_hash": "7542ca47fc"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Staying over winter",
+            "bullet": "After AD 865, the Great Heathen Army built fortified winter camps like Repton to stay"
+          },
+          {
+            "hint": "Hunger for farmland",
+            "bullet": "Shortages of Scandinavian farmland drove Ivar the Boneless, Halfdan, and Guthrum to conquer whole kingdoms"
+          },
+          {
+            "hint": "Conquered kingdoms",
+            "bullet": "Vikings captured York in AD 866 plus East Anglia and Mercia → left only Wessex standing"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Seventy-year shift",
+            "bullet": "Hit-and-run coastal looting after AD 793 turned into permanent invasion and farming settlement"
+          },
+          {
+            "hint": "Earlier sea settlers",
+            "bullet": "Like the Angles and Saxons centuries earlier, Scandinavian families sought milder Britain's rich ploughland"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NEW TACTICS",
+            "stem": "For seventy years Vikings raided in summer, whereas in AD 865 the ____________ built winter camps like ____________."
+          },
+          {
+            "badge": "WARLORD GOALS",
+            "stem": "Driven by scarce farmland at home, leaders such as ____________ and Guthrum aimed to ____________ rather than loot."
+          },
+          {
+            "badge": "KINGDOMS TOPPLED",
+            "stem": "After seizing York as ____________ in AD 866, Viking armies conquered East Anglia and Mercia until only ____________ survived."
+          }
+        ],
+        "watch_out": "After AD 865 Vikings were no longer summer hit-and-run pirates—the Great Heathen Army stayed all winter to conquer land.",
+        "prose_hash": "990279b9d4",
+        "prose_fp": "4adeb934",
+        "question_hash": "07bf7816a8"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Marshland refuge",
+            "bullet": "After Guthrum's midwinter attack on Chippenham, Alfred survived hidden on Athelney in Somerset's marshes"
+          },
+          {
+            "hint": "Spring rally",
+            "bullet": "Alfred secretly summoned thousands of loyal Wessex fyrd farmer-warriors to gather at Egbert's Stone"
+          },
+          {
+            "hint": "Locked shield wall",
+            "bullet": "Alfred's locked shield wall defeated Guthrum at Edington in May AD 878 → saved Wessex"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Last standing kingdom",
+            "bullet": "Northumbria, East Anglia, and Mercia had already fallen → Wessex stood as Saxon Britain's final stronghold"
+          },
+          {
+            "hint": "Midwinter surprise",
+            "bullet": "Anglo-Saxon armies rarely fought in January → Guthrum struck right after Christmas Twelfth Night feasts"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WINTER ESCAPE",
+            "stem": "Caught off guard at Chippenham in January AD 878, Alfred escaped to ____________ in the Somerset marshes to ____________."
+          },
+          {
+            "badge": "RALLYING WESSEX",
+            "stem": "Riding out that spring to ____________, the king gathered thousands of loyal ____________ farmer-warriors."
+          },
+          {
+            "badge": "VICTORY AT EDINGTON",
+            "stem": "In May AD 878, a tightly locked ____________ defeated ____________ at the Battle of Edington."
+          }
+        ],
+        "watch_out": "Hiding in the Athelney marshes was not cowardly surrender—Alfred used the swamps to regroup and plan his counter-attack.",
+        "prose_hash": "449db3fcf7",
+        "prose_fp": "105d74fc",
+        "question_hash": "46d50fd435"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Rival's baptism",
+            "bullet": "Alfred spared defeated Guthrum → stood as godfather at his Christian baptism as Aethelstan"
+          },
+          {
+            "hint": "Border highway",
+            "bullet": "Their peace treaty drew a frontier along the old Roman road of Watling Street"
+          },
+          {
+            "hint": "Divided territories",
+            "bullet": "Alfred held Wessex, western Mercia, and London → Vikings ruled the northern and eastern Danelaw"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Scandinavian farm endings",
+            "bullet": "Towns ending in -by and -thorpe still mark where Scandinavian families farmed inside the Danelaw"
+          },
+          {
+            "hint": "Royal coin message",
+            "bullet": "Recapturing London in AD 886 let Alfred mint pennies naming himself King of the English"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PEACE THROUGH FAITH",
+            "stem": "Rather than executing his defeated rival, Alfred stood as godfather when Guthrum was baptised as ____________."
+          },
+          {
+            "badge": "WATLING STREET",
+            "stem": "Under their treaty, an agreed border followed ____________, leaving northern and eastern lands inside the ____________."
+          },
+          {
+            "badge": "SAXON HEARTLAND",
+            "stem": "South and west of the line, Alfred governed ____________ and recaptured walled ____________ in AD 886."
+          }
+        ],
+        "watch_out": "King Alfred did not drive every Viking out of Britain—his treaty left northern and eastern England under Danish law.",
+        "prose_hash": "321c07ad44",
+        "prose_fp": "a08988ff",
+        "question_hash": "c773c57f35"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Fortified town network",
+            "bullet": "Thirty-three earth-walled burhs like Wareham meant no Wessex villager lived over 20 miles from safety"
+          },
+          {
+            "hint": "Coastal patrol fleet",
+            "bullet": "Fast 60-oar royal warships patrolled southern waters → intercepted Viking raiders out at sea"
+          },
+          {
+            "hint": "Schools and books",
+            "bullet": "Court schools, Old English translations, the Alfred Jewel, and the Anglo-Saxon Chronicle revived learning"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unique royal title",
+            "bullet": "Combining military defence with scholarship made Alfred the only English monarch called the Great"
+          },
+          {
+            "hint": "Restoring lost libraries",
+            "bullet": "Decades of monastery raids had destroyed libraries → translating Latin into Old English restored education"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DEFENSIVE BURHS",
+            "stem": "To protect every Wessex family within twenty miles, Alfred constructed 33 fortified ____________ and launched ____________ warships."
+          },
+          {
+            "badge": "REVIVING LEARNING",
+            "stem": "Believing wisdom mattered as much as weapons, the king opened ____________ and translated books from ____________ into Old English."
+          },
+          {
+            "badge": "LASTING LEGACY",
+            "stem": "Treasures such as the ____________ and the yearly records of the ____________ helped earn him the title 'the Great'."
+          }
+        ],
+        "watch_out": "Alfred was not called 'the Great' for battles alone—his burh network, navy, and Old English schools secured Wessex.",
+        "prose_hash": "9e274a59e2",
+        "prose_fp": "1a426525",
+        "question_hash": "50ecc9a040"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Waterlogged soil",
+            "bullet": "Wet oxygen-free peat beneath Coppergate stopped decay → preserved over 40,000 Viking wooden and leather finds"
+          },
+          {
+            "hint": "Street craft workshops",
+            "bullet": "Timber workshops produced stitched leather shoes, turned wooden bowls, bone ice-skates, and hnefatafl board games"
+          },
+          {
+            "hint": "Daily grooming tools",
+            "bullet": "Hundreds of deer-antler combs, tweezers, and ear-spoons proved Jorvik families cared about daily hygiene"
+          }
+        ],
+        "context": [
+          {
+            "hint": "One-sided monk records",
+            "bullet": "Monastery chronicles only described bloodthirsty raiders → Coppergate archaeology revealed peaceful town craftworkers"
+          },
+          {
+            "hint": "Different soil conditions",
+            "bullet": "Unlike acidic sand at Sutton Hoo, York's waterlogged mud kept everyday timber and leather intact"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "AMAZING PRESERVATION",
+            "stem": "Between 1976 and 1981, wet ____________ soil under Coppergate saved more than ____________ everyday Viking objects from rotting."
+          },
+          {
+            "badge": "SKILLED WORKSHOPS",
+            "stem": "Along Jorvik's crowded streets, craftworkers shaped ____________, stitched leather shoes, and carved counters for ____________."
+          },
+          {
+            "badge": "NEAT APPEARANCE",
+            "stem": "Discovering hundreds of ____________ and ear-spoons disproved the myth that Vikings were dirty savages."
+          }
+        ],
+        "watch_out": "Written chronicles came from monks who suffered raids—archaeology at Coppergate proves most Jorvik residents were clean craftworkers.",
+        "prose_hash": "a2fb6bffd3",
+        "prose_fp": "e2d0ea89",
+        "question_hash": "9d45906edf"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Exotic York imports",
+            "bullet": "Coppergate held Byzantine silk, Baltic amber, German wine jars, and a Red Sea cowrie shell"
+          },
+          {
+            "hint": "Eastern river trade",
+            "bullet": "Merchants sailed Russian rivers trading furs and ivory for Arabic silver dirhams from Baghdad"
+          },
+          {
+            "hint": "Western ocean voyages",
+            "bullet": "Wide cargo knarrs crossed the icy North Atlantic to reach Iceland, Greenland, and North American Vinland"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Deep cargo hulls",
+            "bullet": "Deep-hulled wooden knarrs carried heavy livestock and trade goods rather than fast raiding warriors"
+          },
+          {
+            "hint": "Centuries before Columbus",
+            "bullet": "Viking sailors reached North America around five hundred years before Christopher Columbus crossed the Atlantic"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EASTERN TRADE",
+            "stem": "Sailing east along Russian rivers, Viking merchants swapped furs and ivory for ____________ minted in ____________."
+          },
+          {
+            "badge": "JORVIK LUXURIES",
+            "stem": "Finds in York such as shimmering ____________ from Byzantium and a ____________ from the Red Sea prove global links."
+          },
+          {
+            "badge": "ATLANTIC VOYAGES",
+            "stem": "Steering wide cargo ships called ____________ westwards, explorers settled Iceland, Greenland, and even reached ____________."
+          }
+        ],
+        "watch_out": "Vikings used wide, deep cargo knarrs for ocean trade and settlement—not sleek, narrow raiding longships.",
+        "prose_hash": "1a99978a09",
+        "prose_fp": "44053119",
+        "question_hash": "9d4bd4d306"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Countryside social ranks",
+            "bullet": "Free karls farmed barley and sheep while enslaved thralls carried out the hardest labour"
+          },
+          {
+            "hint": "Women's legal rights",
+            "bullet": "Married women wore iron household keys → ran farms, owned land, and could legally divorce"
+          },
+          {
+            "hint": "Assemblies and words",
+            "bullet": "Outdoor Thing assemblies settled disputes while Old Norse gave English sky, egg, knife, and window"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Peaceful intermarriage",
+            "bullet": "Scandinavian settlers married Anglo-Saxon neighbours and adopted Christianity → merged customs peacefully across the Danelaw"
+          },
+          {
+            "hint": "Surviving island assembly",
+            "bullet": "Tynwald Hill on the Isle of Man still preserves the outdoor Viking Thing tradition today"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FARM SOCIETY",
+            "stem": "In the Danelaw countryside, free farmers called ____________ worked the land while enslaved ____________ did heavy labour."
+          },
+          {
+            "badge": "WOMEN AND LAWS",
+            "stem": "Viking women wore ____________ as symbols of authority, and free neighbours voted on laws outdoors at a ____________."
+          },
+          {
+            "badge": "NORSE WORDS",
+            "stem": "Everyday modern English words such as ____________, ____________, and ____________ come straight from Old Norse speech."
+          }
+        ],
+        "watch_out": "Danelaw society was not lawless chaos—communities settled disputes by voting at outdoor Thing assemblies.",
+        "prose_hash": "c49e1a5e32",
+        "prose_fp": "4b20ae18",
+        "question_hash": "93b7fa8930"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Mercian fortress builder",
+            "bullet": "Aethelflaed fortified Tamworth and Warwick → led Mercian armies to recapture Viking Derby and Leicester"
+          },
+          {
+            "hint": "Capturing northern York",
+            "bullet": "Her nephew Athelstan captured Viking York in AD 927 → brought the north under Saxon rule"
+          },
+          {
+            "hint": "Crowning battlefield win",
+            "bullet": "Winning the AD 937 Battle of Brunanburh secured Athelstan as first King of All England"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Using Alfred's blueprint",
+            "bullet": "Aethelflaed used her father Alfred's burh-building blueprint to advance north rather than just defend Wessex"
+          },
+          {
+            "hint": "Uniting rival realms",
+            "bullet": "Old Heptarchy rivalries and Danelaw borders finally merged into one united English crown"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LADY OF MERCIANS",
+            "stem": "Known as the Lady of the Mercians, ____________ built burhs at Tamworth and Warwick to recapture ____________ and Leicester."
+          },
+          {
+            "badge": "SEIZING YORK",
+            "stem": "Trained at her court, her nephew ____________ marched north to capture Viking ____________ in AD 927."
+          },
+          {
+            "badge": "ONE KINGDOM",
+            "stem": "Victory at the Battle of ____________ in AD 937 made Athelstan the first true ____________."
+          }
+        ],
+        "watch_out": "Alfred the Great never ruled all of England—his grandson Athelstan became the first King of All England in AD 927.",
+        "prose_hash": "4c281c2fa3",
+        "prose_fp": "4b15d6a7",
+        "question_hash": "fc07c3dd1e"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Failed silver tributes",
+            "bullet": "King Aethelred paid huge Danegeld silver taxes from AD 991 → encouraged Danish fleets to return"
+          },
+          {
+            "hint": "Peaceful North Sea rule",
+            "bullet": "Cnut became king in AD 1016 → ruled England, Denmark, and Norway in a peaceful empire"
+          },
+          {
+            "hint": "Westminster builder",
+            "bullet": "Pious King Edward the Confessor restored Saxon rule and built Westminster Abbey by December 1065"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Contrast with warships",
+            "bullet": "Unlike Alfred's strong burhs and warships, paying Danegeld drained English silver without stopping invasions"
+          },
+          {
+            "hint": "Missing royal heir",
+            "bullet": "Edward the Confessor focused on Westminster Abbey but had no children → triggered a succession crisis"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PAYING DANEGELD",
+            "stem": "Starting in AD 991, King Aethelred paid silver ____________ bribes, yet this only tempted ____________ to demand more."
+          },
+          {
+            "badge": "NORTH SEA EMPIRE",
+            "stem": "Crowned in AD 1016, Danish ruler ____________ married Queen Emma and governed England alongside ____________ and Norway."
+          },
+          {
+            "badge": "SAXON RETURN",
+            "stem": "Later, Saxon monarch ____________ built grand ____________, which opened in December 1065."
+          }
+        ],
+        "watch_out": "King Cnut did not rule England as a brutal Viking raider—he protected English laws and Christian churches.",
+        "prose_hash": "f70a703abd",
+        "prose_fp": "739815dc",
+        "question_hash": "1cb932623b"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Three rival claimants",
+            "bullet": "Childless Edward's death pitted newly crowned Harold Godwinson against Harald Hardrada and Duke William"
+          },
+          {
+            "hint": "Northern Yorkshire clash",
+            "bullet": "Harold marched 185 miles north → crushed Harald Hardrada at Stamford Bridge on 25 September 1066"
+          },
+          {
+            "hint": "Exhausting march south",
+            "bullet": "Tired after marching 250 miles south, Harold's shield wall fell to William at Hastings"
+          }
+        ],
+        "context": [
+          {
+            "hint": "End of Viking raids",
+            "bullet": "Hardrada's death at Stamford Bridge ended nearly three centuries of Scandinavian invasions started at Lindisfarne"
+          },
+          {
+            "hint": "Six centuries ended",
+            "bullet": "Defeat on 14 October 1066 closed six centuries of Anglo-Saxon kingship and began Norman rule"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STAMFORD BRIDGE",
+            "stem": "After the Witan crowned ____________ in January 1066, he marched north to defeat Viking king ____________ on 25 September."
+          },
+          {
+            "badge": "DOUBLE MARCH",
+            "stem": "Just three days after winning in Yorkshire, Harold's tired soldiers had to march ____________ south to face ____________."
+          },
+          {
+            "badge": "HASTINGS TURNING POINT",
+            "stem": "When the Saxon shield wall broke at ____________ on 14 October 1066, Anglo-Saxon rule ended and ____________ rule began."
+          }
+        ],
+        "watch_out": "Do not muddle the two 1066 battles—Stamford Bridge defeated Viking Harald Hardrada, whereas Hastings defeated Saxon Harold Godwinson.",
+        "prose_hash": "99add4229b",
+        "prose_fp": "fc76df21",
+        "question_hash": "bc33c2b88c"
+      }
+    ]
+  }
+}

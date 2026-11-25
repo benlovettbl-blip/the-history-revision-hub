@@ -1,0 +1,2897 @@
+{
+  "unit_id": "eee",
+  "lessons": {
+    "lesson_1_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Income vs debt",
+            "bullet": "£300,000 debt from Mary I’s wars and coin debasement → exceeded £286,000 annual Crown income"
+          },
+          {
+            "hint": "Foreign interest rates",
+            "bullet": "Royal treasurers borrowed abroad in Antwerp at 14% interest → drained scarce Crown revenue"
+          },
+          {
+            "hint": "Trusted chief adviser",
+            "bullet": "Appointed Sir William Cecil on accession day → secured immediate fiscal grip and statecraft"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Parliamentary consent",
+            "bullet": "Raising extraordinary taxes required Parliament → risked unwelcome demands over marriage and religion"
+          },
+          {
+            "hint": "Weak coastal defence",
+            "bullet": "Empty treasury left England unable to fund armies → exposed southern coasts to French invasion"
+          },
+          {
+            "hint": "Debased Tudor coinage",
+            "bullet": "Previous Tudor coin debasement cut silver content → drove inflation and weakened foreign credit"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FISCAL DEFICIT",
+            "stem": "Inheriting a Crown debt of ____________ alongside annual income of barely ____________ meant Elizabeth..."
+          },
+          {
+            "badge": "FOREIGN INTEREST",
+            "stem": "Reliance on loans from ____________ at ____________ interest deepened the crisis because..."
+          },
+          {
+            "badge": "STRATEGIC DANGER",
+            "stem": "Severe financial weakness left the Crown unable to fund ____________, exposing England to..."
+          }
+        ],
+        "watch_out": "Ordinary Crown income was £286,000 while inherited debt hit £300,000—do not confuse the two figures in exam answers.",
+        "prose_hash": "03f88919b6",
+        "prose_fp": "958432a0",
+        "question_hash": "7fc607630a"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Streamlined council",
+            "bullet": "19-man Privy Council met almost daily → directed finance, diplomacy, defence, and statute enforcement"
+          },
+          {
+            "hint": "Balancing court rivals",
+            "bullet": "Played off rival councillors such as Cecil and Dudley → prevented any faction monopolising power"
+          },
+          {
+            "hint": "Crown rewards",
+            "bullet": "Granted offices, Crown land leases, and commercial monopolies → bound ambitious nobles to loyalty"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lack of army",
+            "bullet": "No standing army or salaried police existed → Elizabeth relied on noble consent to govern"
+          },
+          {
+            "hint": "Protecting royal power",
+            "bullet": "Kept sole power to grant or withdraw patronage → preserved royal prerogative without spending cash"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COURT RIVALRIES",
+            "stem": "By deliberately balancing competing court figures like ____________ and ____________, Elizabeth ensured..."
+          },
+          {
+            "badge": "PATRONAGE REWARDS",
+            "stem": "Distributing lucrative ____________, land leases, and court offices bound the nobility to the Crown because..."
+          },
+          {
+            "badge": "EXECUTIVE CONTROL",
+            "stem": "Without a standing army, managing the 19-man ____________ allowed Elizabeth to retain..."
+          }
+        ],
+        "watch_out": "Monopolies rewarded courtiers at zero cost to the Treasury by letting holders control trade in one commodity rather than paying salaries.",
+        "prose_hash": "03802f8f81",
+        "prose_fp": "dad70adf",
+        "question_hash": "605c6b430e"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Papal marriage law",
+            "bullet": "Catholic canon law rejected Henry VIII’s marriage to Anne Boleyn → branded Elizabeth illegitimate"
+          },
+          {
+            "hint": "Past succession laws",
+            "bullet": "Henry VIII’s 1536 Succession Act declared her illegitimate → fuelled doubts despite 1544 restoration"
+          },
+          {
+            "hint": "Sixteenth-century patriarchy",
+            "bullet": "Tudor patriarchal attitudes viewed solo female rule as unnatural → followed Mary I’s unpopular reign"
+          },
+          {
+            "hint": "Need for heir",
+            "bullet": "Unmarried status left England without a Protestant heir → illness risked plunging realm into civil war"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Suitors dilemma",
+            "bullet": "Marrying a foreign prince risked foreign control, while choosing an English noble sparked court jealousy"
+          },
+          {
+            "hint": "Rival Catholic claimant",
+            "bullet": "Mary, Queen of Scots held a legitimate Catholic Tudor claim → offered rebels an alternative monarch"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEGITIMACY DOUBTS",
+            "stem": "Under Roman Catholic canon law and the ____________ Act, critics challenged Elizabeth’s title because..."
+          },
+          {
+            "badge": "PATRIARCHAL VIEWS",
+            "stem": "Sixteenth-century prejudice against ____________ rule weakened confidence in a queen governing without a..."
+          },
+          {
+            "badge": "SUCCESSION RISK",
+            "stem": "Remaining unmarried without a ____________ endangered stability by risking ____________ if Elizabeth died suddenly."
+          }
+        ],
+        "watch_out": "Although Henry VIII’s 1544 Succession Act restored Elizabeth to the line of succession, it never formally repealed her 1536 illegitimacy.",
+        "prose_hash": "fe109ac52f",
+        "prose_fp": "e878c665",
+        "question_hash": "e417e98839"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Militia leadership",
+            "bullet": "Noble Lords Lieutenant mustered and trained county militias → defended shires during invasion emergencies"
+          },
+          {
+            "hint": "Local county courts",
+            "bullet": "Wealthy gentry served unpaid as Justices of the Peace → judged crimes and administered poor laws"
+          },
+          {
+            "hint": "Taxation and laws",
+            "bullet": "Parliament alone passed statutes and granted extraordinary taxation → gave the Commons financial leverage"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unpaid state service",
+            "bullet": "Crown lacked funds for paid regional civil servants → relied on gentry status-seeking to govern"
+          },
+          {
+            "hint": "Infrequent summons",
+            "bullet": "Summoned Parliament only thirteen times in forty-five years → shielded marriage, religion, and foreign policy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHIRE ENFORCEMENT",
+            "stem": "Across the counties, Elizabeth depended on unpaid ____________ and ____________ to maintain order and..."
+          },
+          {
+            "badge": "PARLIAMENTARY ROLE",
+            "stem": "Summoned only occasionally, Parliament remained essential whenever the Crown needed ____________ or..."
+          },
+          {
+            "badge": "ROYAL PREROGATIVE",
+            "stem": "Even while guarding her ____________ over marriage and foreign policy, financial necessity forced Elizabeth to..."
+          }
+        ],
+        "watch_out": "Parliament was not a permanent modern legislature—Elizabeth called and dissolved it at will, using her royal prerogative to silence sensitive debates.",
+        "prose_hash": "8db55655f0",
+        "prose_fp": "1f44e823",
+        "question_hash": "ce5b26ad97"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Lost Channel port",
+            "bullet": "Lost Calais to France in January 1558 → stripped England’s continental foothold and exposed southern coasts"
+          },
+          {
+            "hint": "Scottish border garrison",
+            "bullet": "French troops backed Mary of Guise in Scotland under the Auld Alliance → threatened northern invasion"
+          },
+          {
+            "hint": "Rival royal arms",
+            "bullet": "Mary Stuart married Dauphin Francis and quartered English arms → asserted Catholic claim to Elizabeth’s crown"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Two-front military risk",
+            "bullet": "Empty treasury and no standing army → left England unable to fight France on two fronts"
+          },
+          {
+            "hint": "Franco-Spanish peace",
+            "bullet": "1559 peace between France and Spain → raised fears of a combined Catholic crusade against England"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CHANNEL EXPOSURE",
+            "stem": "Losing ____________ in January 1558 damaged Tudor prestige and left England’s southern coast..."
+          },
+          {
+            "badge": "NORTHERN PINCER",
+            "stem": "Through the traditional ____________, veteran French soldiers stationed in ____________ threatened England’s northern border by..."
+          },
+          {
+            "badge": "DYNASTIC RIVALRY",
+            "stem": "Married to the French Dauphin, ____________ intensified Catholic encirclement when she openly..."
+          }
+        ],
+        "watch_out": "Spain was not England’s main enemy in 1558—Philip II had been Mary I’s husband, whereas France and French-backed Scotland posed the immediate threat.",
+        "prose_hash": "32f35ff010",
+        "prose_fp": "7a01d60d",
+        "question_hash": "b1ce80950d"
+      }
+    ],
+    "lesson_1_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Regional divide",
+            "bullet": "Catholic northern earls and gentry stayed loyal to Rome, while London and the South-East backed reform"
+          },
+          {
+            "hint": "Returning exiles",
+            "bullet": "Calvinist Marian exiles returned from Geneva → demanded a Church stripped of Catholic ritual"
+          },
+          {
+            "hint": "House of Lords",
+            "bullet": "26 Catholic Marian bishops sat in the Lords → blocked Protestant laws, risking civil war"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Crown finances",
+            "bullet": "£300,000 Crown debt → Elizabeth could not afford to fight a domestic religious rebellion"
+          },
+          {
+            "hint": "Foreign powers",
+            "bullet": "Catholic France and Scotland → harsh anti-Catholic persecution risked foreign invasion"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REGIONAL DIVIDE",
+            "stem": "While conservative earls and gentry in ____________ stayed loyal to ____________, south-eastern ports..."
+          },
+          {
+            "badge": "OPPOSING EXTREMES",
+            "stem": "Pressured by returning ____________ on one side and ____________ in the Lords on the other, Elizabeth had to..."
+          },
+          {
+            "badge": "WIDER PRESSURES",
+            "stem": "Alongside severe ____________ inherited in 1558, provoking a religious war risked..."
+          }
+        ],
+        "watch_out": "Marian exiles were radical Protestants fleeing Mary I’s burnings—do not confuse them with Catholics.",
+        "prose_hash": "f71f7eb17b",
+        "question_hash": "8c4e1b17e9",
+        "prose_fp": "8c8d35d2"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Break with Rome",
+            "bullet": "Act of Supremacy ended papal authority → restored royal control over the English Church"
+          },
+          {
+            "hint": "Why 'Governor'",
+            "bullet": "Chose the title 'Supreme Governor' rather than 'Supreme Head' → calmed Catholic and male doubts"
+          },
+          {
+            "hint": "Oath & clergy",
+            "bullet": "Mandatory Oath of Supremacy → 26 Marian bishops lost posts, yet around 8,000 parish priests conformed"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Gender prejudices",
+            "bullet": "Tudor belief in the Great Chain of Being → contemporaries doubted a woman claiming spiritual headship"
+          },
+          {
+            "hint": "Henry VIII precedent",
+            "bullet": "Avoided repeating Henry VIII’s provocative title 'Supreme Head' → lowered the risk of Catholic revolt"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAREFUL WORDING",
+            "stem": "By styling herself ____________ rather than Henry VIII’s title of ____________, Elizabeth sought to..."
+          },
+          {
+            "badge": "CLERICAL CONFORMITY",
+            "stem": "Requiring officials and clergy to swear the ____________ meant that ____________, even though..."
+          },
+          {
+            "badge": "TUDOR ATTITUDES",
+            "stem": "Given sixteenth-century prejudices against ____________, this compromise title helped..."
+          }
+        ],
+        "watch_out": "Ordinary laypeople did not swear the Oath of Supremacy—only clergy, judges, and royal officials.",
+        "prose_hash": "04f646de12",
+        "question_hash": "18271c3197",
+        "prose_fp": "dd21d210"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Church attendance",
+            "bullet": "English Book of Common Prayer made compulsory → recusants fined twelve pence per missed Sunday"
+          },
+          {
+            "hint": "Communion wording",
+            "bullet": "Blended 1549 and 1552 communion sentences → allowed both real-presence and memorial beliefs"
+          },
+          {
+            "hint": "Visual appearance",
+            "bullet": "Ornaments Rubric kept clerical vestments and church decoration → reassured traditional rural parishes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Recusancy fine",
+            "bullet": "Twelve-pence fine hit ordinary labourers hard → wealthy Catholic gentry could afford to pay it quietly"
+          },
+          {
+            "hint": "Puritan reaction",
+            "bullet": "Retaining traditional vestments and ornaments → later provoked the 1560s Puritan Vestments Controversy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEGAL UNIFORMITY",
+            "stem": "Under the 1559 Act of Uniformity, anyone absent from Sunday worship was classed as ____________ and..."
+          },
+          {
+            "badge": "DOCTRINAL COMPROMISE",
+            "stem": "Combining the 1549 and 1552 communion sentences enabled traditionalists to ____________ while Protestants..."
+          },
+          {
+            "badge": "VISUAL CONTINUITY",
+            "stem": "Preserving familiar ____________ under the Ornaments Rubric reassured rural congregations, yet left..."
+          }
+        ],
+        "watch_out": "Recusants were Catholics who stayed away from Church of England services—not violent plotters.",
+        "prose_hash": "ff1be0b16f",
+        "question_hash": "ac96794431",
+        "prose_fp": "21f149ff"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Pulpit & Bible",
+            "bullet": "Ministers preached royal supremacy four times a year + every church displayed an English Bible"
+          },
+          {
+            "hint": "Banned practices",
+            "bullet": "Outlawed Catholic pilgrimages, 'feigned' miracles, shrine processions, and candles before statues"
+          },
+          {
+            "hint": "Retained traditions",
+            "bullet": "Permitted hymns, kneeling at prayer, and clerical marriage approved by a bishop and two JPs"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rural illiteracy",
+            "bullet": "Most Tudor villagers could not read → controlling preaching and parish visuals shaped everyday belief"
+          },
+          {
+            "hint": "William Cecil",
+            "bullet": "Issued by Protestant Secretary William Cecil → steadily steered local parish worship toward reform"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PARISH REFORM",
+            "stem": "Instructing every parish church to display ____________ and denounce ____________ ensured that..."
+          },
+          {
+            "badge": "CHANGE & CONTINUITY",
+            "stem": "Although Cecil’s Injunctions prohibited traditional ____________, they still allowed congregations to..."
+          },
+          {
+            "badge": "RURAL SOCIETY",
+            "stem": "Across largely illiterate rural communities, regulating ____________ was vital for..."
+          }
+        ],
+        "watch_out": "The 57 Royal Injunctions were practical royal instructions issued by Cecil—not a third Act of Parliament.",
+        "prose_hash": "94e8451b4e",
+        "question_hash": "d486d3d09e",
+        "prose_fp": "cb52f43c"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "1559 Visitations",
+            "bullet": "125 royal commissioners inspected churches and altars → only around 400 clergy resigned or were sacked"
+          },
+          {
+            "hint": "Church courts",
+            "bullet": "Church courts policed everyday village morals → prosecuted slander, adultery, heresy, and disputed wills"
+          },
+          {
+            "hint": "Parish governance",
+            "bullet": "Churchwardens collected poor alms and vicars read royal proclamations aloud from the pulpit"
+          }
+        ],
+        "context": [
+          {
+            "hint": "No police or army",
+            "bullet": "Tudor England lacked a police force or standing army → parish pulpits were the Crown’s main mouthpiece"
+          },
+          {
+            "hint": "Northern survival",
+            "bullet": "Cautious early enforcement avoided revolt in 1559 → allowed Catholic sympathy to survive in the North"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ENFORCING COMPLIANCE",
+            "stem": "Appointing 125 royal commissioners to carry out ____________ ensured smooth transition, with only..."
+          },
+          {
+            "badge": "SOCIAL CONTROL",
+            "stem": "Beyond Sunday worship, ____________ maintained local discipline by prosecuting..."
+          },
+          {
+            "badge": "TUDOR GOVERNMENT",
+            "stem": "Without ____________, the Crown depended on parish clergy and churchwardens to..."
+          }
+        ],
+        "watch_out": "Church courts judged moral and spiritual offences such as slander and heresy, not treason or felony crimes.",
+        "prose_hash": "65b2e99dc8",
+        "question_hash": "86847027d2",
+        "prose_fp": "e4b56159"
+      }
+    ],
+    "lesson_1_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Genevan reform demands",
+            "bullet": "Returning Marian exiles condemned organs, stained glass, and silver crucifixes → demanded scripture-only Calvinist worship"
+          },
+          {
+            "hint": "Threatened bishop resignations",
+            "bullet": "Newly appointed Protestant bishops threatened resignation → forced Elizabeth to remove her Royal Chapel crucifix"
+          },
+          {
+            "hint": "Clerical assembly vote",
+            "bullet": "Puritans lost by one vote at 1563 Convocation → activism challenged Elizabeth’s Supreme Governorship"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shortage of bishops",
+            "bullet": "Depriving Marian bishops left Elizabeth short of trained Protestant replacements → could not afford resignations"
+          },
+          {
+            "hint": "Rural Catholic backlash",
+            "bullet": "Stripping rural churches of all traditional crosses risked driving conservative Catholics into open rebellion"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IDOLATRY FEARS",
+            "stem": "Viewing silver ____________ and church organs as popish idolatry, returning Puritan reformers demanded..."
+          },
+          {
+            "badge": "EPISCOPAL PRESSURE",
+            "stem": "When newly appointed Protestant ____________ threatened to resign, Elizabeth backed down in her Royal Chapel because..."
+          },
+          {
+            "badge": "ROYAL PREROGATIVE",
+            "stem": "Clerical activism at the ____________ alarmed Elizabeth because it directly challenged her authority as..."
+          }
+        ],
+        "watch_out": "Elizabeth removed the crucifix from her Royal Chapel only because she lacked replacement Protestant bishops, not because she shared Puritan theology.",
+        "prose_hash": "74598a5904",
+        "prose_fp": "18ec4c44",
+        "question_hash": "2ca8c234ec"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Disputed priestly garments",
+            "bullet": "Puritan clergy refused the white linen surplice and square cap → condemned vestments as popish"
+          },
+          {
+            "hint": "Strict dress rulebook",
+            "bullet": "Archbishop Matthew Parker issued his 1566 Book of Advertisements → enforced strict clerical dress uniformity"
+          },
+          {
+            "hint": "London clergy suspensions",
+            "bullet": "Summoned 110 London ministers and deprived 37 refusers of livings → broke organised Puritan defiance"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lack of alternative",
+            "bullet": "Puritans lacked noble leadership or another Protestant heir → could not plot to depose Elizabeth"
+          },
+          {
+            "hint": "Keeping parish pulpits",
+            "bullet": "Most Puritan ministers grudgingly wore the surplice → preferred keeping parish pulpits to preach scripture"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DRESS CONTROVERSY",
+            "stem": "Condemning the white linen ____________ as a relic of Rome, Puritan ministers defied the..."
+          },
+          {
+            "badge": "PARKER’S CRACKDOWN",
+            "stem": "Through his 1566 ____________ and Lambeth inspection, Archbishop Parker defeated resistance by depriving..."
+          },
+          {
+            "badge": "LIMITED THREAT",
+            "stem": "Most Puritans ultimately conformed rather than lose their livings because they lacked ____________ and..."
+          }
+        ],
+        "watch_out": "Puritans opposed the settlement’s ceremony from within Protestantism, yet they never plotted to assassinate Elizabeth because her heir was Catholic Mary Stuart.",
+        "prose_hash": "7903574258",
+        "prose_fp": "600e3c59",
+        "question_hash": "3b9e288836"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Outward Sunday attendance",
+            "bullet": "Thousands attended Anglican Sunday services as Church Papists → escaped fines while hearing private Mass"
+          },
+          {
+            "hint": "Unpoliced private conscience",
+            "bullet": "Elizabeth avoided probing private beliefs while northern Catholic nobles and JPs ignored recusancy penalties"
+          },
+          {
+            "hint": "Initial papal silence",
+            "bullet": "Pope Pius IV issued no excommunication before 1566 → left English Catholics without papal direction"
+          },
+          {
+            "hint": "Counter-Reformation shift",
+            "bullet": "Pope Pius V banned Anglican attendance in 1566 and Allen founded Douai → hardened recusancy"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Waiting out Elizabeth",
+            "bullet": "Many older Catholics conformed quietly expecting unmarried Elizabeth to wed a Catholic or die young"
+          },
+          {
+            "hint": "Spanish strategic caution",
+            "bullet": "Spain initially opposed papal action against Elizabeth → wanted to block French control via Mary Stuart"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OUTWARD CONFORMITY",
+            "stem": "Many English Catholics acted as ____________, attending parish services to escape fines while..."
+          },
+          {
+            "badge": "CROWN AND ROME",
+            "stem": "Early resistance stayed passive because Elizabeth tolerated quiet loyalty and ____________ gave no clear..."
+          },
+          {
+            "badge": "HARDENING DIVIDES",
+            "stem": "After 1566, the European ____________ sharpened opposition when Pope Pius V and ____________..."
+          }
+        ],
+        "watch_out": "Do not confuse Church Papists—who attended Anglican services outwardly—with recusants, who refused to attend at all despite legal fines.",
+        "prose_hash": "800b881b85",
+        "prose_fp": "1f06d441",
+        "question_hash": "871dab6a13"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Divided French rival",
+            "bullet": "1562 aid to French Huguenots failed at Le Havre → civil war kept France divided"
+          },
+          {
+            "hint": "Veteran army deployment",
+            "bullet": "Philip II sent the Duke of Alba with 10,000 Spanish veterans in 1567 → menaced Channel"
+          },
+          {
+            "hint": "Anti-Protestant tribunal",
+            "bullet": "Alba’s brutal Council of Troubles executed thousands of Dutch Protestants → stoked fears of crusade"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Thames estuary proximity",
+            "bullet": "Dutch ports lay directly opposite the Thames estuary → ideal embarkation base for invading England"
+          },
+          {
+            "hint": "Flemish cloth market",
+            "bullet": "Spanish military grip over Antwerp threatened England’s main export market for woollen cloth"
+          },
+          {
+            "hint": "Protestant refugee wave",
+            "bullet": "Protestant Dutch refugees fled to English ports → heightened religious tension with Catholic Spain"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CHANNEL PROXIMITY",
+            "stem": "Stationing 10,000 veteran Spanish troops under the ____________ just across the narrow sea endangered England because..."
+          },
+          {
+            "badge": "CATHOLIC CRUSADE",
+            "stem": "Alba’s ruthless ____________ executing Dutch Protestants convinced Cecil and the Privy Council that..."
+          },
+          {
+            "badge": "SHIFTING THREATS",
+            "stem": "While civil war after ____________ weakened France, Spanish military rule in Flanders also threatened..."
+          }
+        ],
+        "watch_out": "Elizabeth aided French Huguenots in 1562 mainly hoping to recover Calais rather than fighting an ideological Protestant crusade across Europe.",
+        "prose_hash": "e63eb8badf",
+        "prose_fp": "0b7da527",
+        "question_hash": "a9f41d4d51"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Storm-bound bullion ships",
+            "bullet": "Spanish ships carrying £85,000 of Genoese gold sheltered in English ports → bound for Alba’s army"
+          },
+          {
+            "hint": "Legal ownership claim",
+            "bullet": "Elizabeth claimed Italian bankers still owned the gold → transferred the loan to weaken Alba"
+          },
+          {
+            "hint": "Retaliatory trade halt",
+            "bullet": "Alba seized English merchant ships and imposed an Antwerp embargo → halted London cloth exports"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Starving Spanish soldiers",
+            "bullet": "Starving Alba of bullion delayed Spanish pay → forced harsh Dutch taxes that fuelled rebellion"
+          },
+          {
+            "hint": "English merchant anger",
+            "bullet": "Halted Antwerp cloth trade hurt English merchants and northern nobles → fed 1569 plotters’ grievances"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SEIZING THE GOLD",
+            "stem": "When Spanish vessels carrying ____________ in Italian bullion sheltered in Plymouth and Southampton, Elizabeth..."
+          },
+          {
+            "badge": "STRATEGIC MOTIVE",
+            "stem": "Arguing the money still belonged to ____________, Cecil and Elizabeth impounded it in order to..."
+          },
+          {
+            "badge": "ECONOMIC FALLOUT",
+            "stem": "Outraged by the seizure, the Duke of Alba retaliated by imposing an ____________ that..."
+          }
+        ],
+        "watch_out": "The £85,000 bullion belonged legally to Genoese bankers until reaching Antwerp, so Elizabeth technically borrowed rather than stole Spanish gold.",
+        "prose_hash": "620cc4c5c3",
+        "prose_fp": "f4de21c0",
+        "question_hash": "0e061e386f"
+      }
+    ],
+    "lesson_1_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Legitimate Tudor descent",
+            "bullet": "Granddaughter of Henry VIII’s sister Margaret Tudor → gave Mary an undisputed, legitimate royal bloodline"
+          },
+          {
+            "hint": "Infant male heir",
+            "bullet": "Birth of Prince James VI in June 1566 → strengthened her dynastic appeal over childless Elizabeth"
+          },
+          {
+            "hint": "Catholic focal point",
+            "bullet": "Arrival in Cumbria in May 1568 → created a living magnet for English Catholic plotters"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Catholic succession view",
+            "bullet": "Devout Catholics viewed Elizabeth as illegitimate → saw Mary as England’s rightful reigning Queen"
+          },
+          {
+            "hint": "French noble backing",
+            "bullet": "Mary’s powerful French Catholic Guise relatives → raised fears of foreign backing for her claim"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TUDOR DESCENT",
+            "stem": "Descended directly from Henry VIII’s elder sister ____________, Mary Stuart posed a dynastic threat because..."
+          },
+          {
+            "badge": "PROTESTANT CONTRAST",
+            "stem": "Unlike unmarried Elizabeth, giving birth to ____________ strengthened Mary’s position by providing..."
+          },
+          {
+            "badge": "REBEL MAGNET",
+            "stem": "Arriving inside England in 1568 turned Mary into a dangerous magnet for ____________ hoping to..."
+          }
+        ],
+        "watch_out": "Mary Stuart was Elizabeth’s first cousin once removed through Margaret Tudor—never write that they were sisters or half-sisters.",
+        "prose_hash": "5d2ea02a0a",
+        "prose_fp": "d9423d72",
+        "question_hash": "1b93cd843d"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Poisoned royal marriage",
+            "bullet": "Darnley’s role in murdering secretary David Rizzio → poisoned royal marriage and bred Edinburgh intrigue"
+          },
+          {
+            "hint": "Orchard murder plot",
+            "bullet": "Gunpowder blast and Darnley’s strangulation at Kirk o’ Field → implicated Mary in regicidal conspiracy"
+          },
+          {
+            "hint": "Scandalous rapid wedding",
+            "bullet": "Wedding chief suspect Earl of Bothwell three months later → outraged Protestant Scottish lords"
+          },
+          {
+            "hint": "Rebel lords’ victory",
+            "bullet": "Rebel lords defeated Mary at Carberry Hill in June 1567 → collapsed her royal authority"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Calvinist Kirk hostility",
+            "bullet": "Scotland’s Calvinist Kirk already distrusted Catholic Mary → moral scandal united lords against her"
+          },
+          {
+            "hint": "Lost foreign sympathy",
+            "bullet": "Shock across Catholic courts in France and Spain → left Mary isolated without foreign rescue"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ASSASSINATION SCANDAL",
+            "stem": "Following the explosion and strangulation of ____________ at ____________, suspicion immediately fell upon..."
+          },
+          {
+            "badge": "RECKLESS MARRIAGE",
+            "stem": "Marrying chief murder suspect the ____________ just three months later destroyed Mary’s credibility because..."
+          },
+          {
+            "badge": "NOBLE REBELLION",
+            "stem": "Outraged Protestant Scottish lords rose up at ____________, ending Mary’s rule by..."
+          }
+        ],
+        "watch_out": "Lord Darnley was not killed by the gunpowder explosion at Kirk o’ Field—he was found strangled in the orchard outside.",
+        "prose_hash": "b4fa68df72",
+        "prose_fp": "95132886",
+        "question_hash": "bd65774da1"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Forced castle abdication",
+            "bullet": "Rebel lords imprisoned Mary at Lochleven → forced abdication for infant James VI under Regent Moray"
+          },
+          {
+            "hint": "Defeat and flight",
+            "bullet": "Escaped Lochleven, lost at Langside, and crossed into England → demanded Elizabeth’s military restoration"
+          },
+          {
+            "hint": "Four-way diplomatic trap",
+            "bullet": "Restoring Mary alienated Protestant Scotland, freeing her risked French aid, and keeping her bred plots"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Anointed monarch precedent",
+            "bullet": "Executing or helping rebels depose an anointed monarch → set a dangerous precedent against Elizabeth"
+          },
+          {
+            "hint": "Friendly Protestant regency",
+            "bullet": "Regent Moray kept Scotland safely Protestant and pro-English → restoring Catholic Mary endangered England’s border"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SCOTTISH FLIGHT",
+            "stem": "After escaping ____________ and losing at Langside, Mary fled into England expecting Elizabeth to..."
+          },
+          {
+            "badge": "FOREIGN DILEMMA",
+            "stem": "Helping Mary regain Scotland would alienate friendly ____________, whereas letting her sail to France risked..."
+          },
+          {
+            "badge": "DOMESTIC TRAP",
+            "stem": "Detaining Mary under ____________ inside England solved the immediate border crisis yet invited..."
+          }
+        ],
+        "watch_out": "Elizabeth strongly disapproved of Scottish rebels overthrowing an anointed queen, yet strategic necessity prevented her restoring a Catholic rival.",
+        "prose_hash": "dcea782f4c",
+        "prose_fp": "b660e065",
+        "question_hash": "a92f1307a5"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Political damage goal",
+            "bullet": "York Inquiry aimed to discredit Mary politically → avoided putting an anointed monarch on criminal trial"
+          },
+          {
+            "hint": "Disputed French letters",
+            "bullet": "Regent Moray produced eight French Casket Letters and sonnets → allegedly proved Mary plotted murder"
+          },
+          {
+            "hint": "Inconclusive final ruling",
+            "bullet": "Cecil delivered a deliberately not proven verdict in January 1569 → justified holding Mary captive"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Danger of conviction",
+            "bullet": "Convicting Mary would force her return to Scottish rebels → risked executing an anointed queen"
+          },
+          {
+            "hint": "Danger of acquittal",
+            "bullet": "Clearing Mary would compel Elizabeth to free her → enabled Mary to rally Catholic support"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CASKET EVIDENCE",
+            "stem": "At the York Inquiry, Scottish Regent ____________ presented the ____________ to argue that Mary had..."
+          },
+          {
+            "badge": "AVOIDING EXTREMES",
+            "stem": "Declaring Mary ____________ would have forced her release, whereas a ____________ verdict risked..."
+          },
+          {
+            "badge": "POLITICAL CONVENIENCE",
+            "stem": "Issuing a shrewd ____________ verdict allowed Cecil and Elizabeth to keep Moray governing Scotland while..."
+          }
+        ],
+        "watch_out": "The York and Westminster Inquiry was a diplomatic conference rather than an English criminal court, because Mary was not an English subject.",
+        "prose_hash": "175bf8caf4",
+        "prose_fp": "b5c15b4b",
+        "question_hash": "815c20870b"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Midlands house arrest",
+            "bullet": "Held at Tutbury and Sheffield under Earl of Shrewsbury → kept Mary inside English noble politics"
+          },
+          {
+            "hint": "Secret marriage proposal",
+            "bullet": "Courtiers including Dudley proposed wedding Mary to Protestant Duke of Norfolk → hoped to settle succession"
+          },
+          {
+            "hint": "Northern Catholic aims",
+            "bullet": "Northern Catholic earls widened the secret plan → sought Cecil’s fall and Catholic restoration"
+          },
+          {
+            "hint": "Confession and arrest",
+            "bullet": "Dudley confessed in September 1569 and Elizabeth imprisoned Norfolk → panicked northern earls into rebellion"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Royal prerogative breach",
+            "bullet": "Elizabeth strictly forbade discussing marriage or succession without royal consent → secrecy looked like treason"
+          },
+          {
+            "hint": "Resentful northern earls",
+            "bullet": "Northumberland and Westmorland resented losing influence and copper mines under Elizabeth → joined wider plot"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SUCCESSION SCHEME",
+            "stem": "Even under Shrewsbury’s guard at ____________, courtiers secretly schemed to wed Mary to the..."
+          },
+          {
+            "badge": "WIDENING AGENDA",
+            "stem": "What began among Protestant courtiers as a succession fix grew dangerous when ____________ sought to..."
+          },
+          {
+            "badge": "TRIGGER FOR REVOLT",
+            "stem": "Once ____________ confessed the secret marriage plan in September 1569, Norfolk’s arrest triggered..."
+          }
+        ],
+        "watch_out": "The 1569 Norfolk marriage scheme began with loyal Protestant courtiers like Robert Dudley before Catholic northern earls turned it toward rebellion.",
+        "prose_hash": "b985f7af80",
+        "prose_fp": "be49b77d",
+        "question_hash": "72a28eb3d8"
+      }
+    ],
+    "lesson_2_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Cathedral Mass protest",
+            "bullet": "Northumberland and Westmorland marched 4,600 men into Durham Cathedral → celebrated Mass but lacked strategy"
+          },
+          {
+            "hint": "Missing foreign troops",
+            "bullet": "Promised Spanish troops under Alba never landed at Hartlepool → left rebels without foreign reinforcement"
+          },
+          {
+            "hint": "Loyal northern gentry",
+            "bullet": "Most northern gentry and Lancashire Catholics stayed loyal → refused to risk lands for treason"
+          },
+          {
+            "hint": "Swift royal counter-move",
+            "bullet": "Elizabeth moved Mary to Coventry and sent Sussex’s royal army → crushed revolt and executed 450"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Delayed papal bull",
+            "bullet": "Papal excommunication did not arrive until February 1570 → Catholics lacked papal orders during revolt"
+          },
+          {
+            "hint": "Reshaped northern council",
+            "bullet": "Post-revolt reorganisation under Puritan Earl of Huntingdon → broke traditional Catholic noble autonomy in north"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOMESTIC ISOLATION",
+            "stem": "Despite celebrating Latin Mass inside ____________, the rebel earls failed to rally wider support because..."
+          },
+          {
+            "badge": "MISSING FOREIGN AID",
+            "stem": "Hopes of foreign intervention collapsed when ____________ never landed Spanish troops at..."
+          },
+          {
+            "badge": "DECISIVE ACTION",
+            "stem": "Moving Mary south to ____________ while dispatching a royal army under ____________ prevented..."
+          }
+        ],
+        "watch_out": "Pope Pius V’s papal bull arrived in February 1570 after the Northern Earls had already fled—it did not cause the 1569 revolt.",
+        "prose_hash": "dddedb5a26",
+        "prose_fp": "ab8cf994",
+        "question_hash": "1a055a2e64"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Papal excommunication decree",
+            "bullet": "Regnans in Excelsis excommunicated Elizabeth in February 1570 → released English Catholics from royal allegiance"
+          },
+          {
+            "hint": "Suspected domestic traitors",
+            "bullet": "Turned devout Catholics into suspected traitors overnight → prompted harsh 1571 Treasons Act against bulls"
+          },
+          {
+            "hint": "Coordinated invasion plan",
+            "bullet": "Ridolfi secured Philip II’s promise of 10,000 Alba troops → linked assassination with Spanish invasion"
+          },
+          {
+            "hint": "Intercepted cipher letters",
+            "bullet": "Cecil and Walsingham intercepted coded letters → exposed treason and executed Norfolk in June 1572"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Spanish commander’s caution",
+            "bullet": "Alba doubted English Catholics would rise first → hesitated to launch Spain’s invasion force"
+          },
+          {
+            "hint": "Blocked regicide demands",
+            "bullet": "Terrified MPs demanded Mary Stuart’s execution too → Elizabeth refused to execute an anointed queen"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PAPAL DECREE",
+            "stem": "Issuing the papal bull ____________ in 1570 endangered Elizabeth by ordering English Catholics to..."
+          },
+          {
+            "badge": "INTERNATIONAL CONSPIRACY",
+            "stem": "Florentine banker ____________ heightened the threat in 1571 by combining Norfolk’s treason with..."
+          },
+          {
+            "badge": "COUNTER-INTELLIGENCE",
+            "stem": "Intercepting coded letters allowed Cecil and Walsingham to execute ____________ and pass the..."
+          }
+        ],
+        "watch_out": "Elizabeth agreed to execute the Duke of Norfolk after the Ridolfi Plot in 1572, yet she still refused Parliament’s demands to execute Mary.",
+        "prose_hash": "ca7710abc5",
+        "prose_fp": "26fd4054",
+        "question_hash": "bf93a3d3b2"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Cross-Channel invasion plan",
+            "bullet": "Walsingham uncovered plans for French Duke of Guise to invade Sussex funded by Spanish gold"
+          },
+          {
+            "hint": "Expelled Spanish envoy",
+            "bullet": "Spanish envoy Bernardino de Mendoza financed the plot → expelled from London, severing Madrid ties"
+          },
+          {
+            "hint": "Lethal accountability pledge",
+            "bullet": "1584 Bond of Association pledged death for anyone benefiting from an assassination attempt on Elizabeth"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dutch leader’s murder",
+            "bullet": "July 1584 assassination of Dutch leader William of Orange → terrified ministers Elizabeth faced Catholic murder"
+          },
+          {
+            "hint": "Underground missionary priests",
+            "bullet": "Secret Jesuit and Douai priests entering since 1574 → heightened fears of underground Catholic networks"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FOREIGN SUBVERSION",
+            "stem": "Uncovering courier ____________ revealed a dangerous invasion plan linking the French ____________ with Spanish funding."
+          },
+          {
+            "badge": "DIPLOMATIC RUPTURE",
+            "stem": "Proving ambassador ____________ backed the conspirators forced Elizabeth to expel him and..."
+          },
+          {
+            "badge": "LEGAL DETERRENT",
+            "stem": "Drafted in 1584 and made law in 1585, the ____________ deterred assassins by..."
+          }
+        ],
+        "watch_out": "Under the Bond of Association, Mary could be executed if someone plotted on her behalf even if she claimed no personal knowledge.",
+        "prose_hash": "0d59be93b6",
+        "prose_fp": "d1631742",
+        "question_hash": "19a9b9594f"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Assassination and invasion",
+            "bullet": "Anthony Babington planned to murder Elizabeth, rescue Mary, and welcome 60,000 Franco-Spanish invasion troops"
+          },
+          {
+            "hint": "Smuggled barrel letters",
+            "bullet": "Double agent Gilbert Gifford smuggled Chartley Hall letters in beer barrels → routed copies to Walsingham"
+          },
+          {
+            "hint": "Decoded assassination consent",
+            "bullet": "Codebreaker Thomas Phelippes decoded Mary’s 17 July 1586 letter → proved she endorsed Elizabeth’s assassination"
+          },
+          {
+            "hint": "Forged postscript trap",
+            "bullet": "Phelippes added a postscript requesting the six assassins’ names → trapped the entire conspiracy ring"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Undeniable written proof",
+            "bullet": "Elizabeth refused to act against an anointed cousin without undeniable written proof of personal guilt"
+          },
+          {
+            "hint": "Wartime urgency",
+            "bullet": "Open war with Spain after 1585 → made neutralising Catholic figurehead Mary an urgent priority"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOUBLE AGENT",
+            "stem": "Using double agent ____________ to intercept coded letters hidden inside ____________ allowed Walsingham to..."
+          },
+          {
+            "badge": "BREAKING THE CIPHER",
+            "stem": "Patiently waiting until codebreaker ____________ deciphered Mary’s 17 July reply gave ministers..."
+          },
+          {
+            "badge": "SEALING THE TRAP",
+            "stem": "Adding a forged postscript asking Babington to name ____________ enabled Walsingham to arrest..."
+          }
+        ],
+        "watch_out": "Walsingham could have arrested Babington months earlier, but he waited deliberately until Mary wrote explicit consent to Elizabeth’s murder.",
+        "prose_hash": "12b994e957",
+        "prose_fp": "bfa1951e",
+        "question_hash": "246a74ad5b"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Trial and warrant",
+            "bullet": "Convicted at Fotheringhay in October 1586 under 1585 Safety Act → Privy Council dispatched signed warrant"
+          },
+          {
+            "hint": "Martyrdom symbolism",
+            "bullet": "Executed 8 February 1587 wearing crimson petticoats → staged death as a Catholic martyr"
+          },
+          {
+            "hint": "Domestic Catholic impact",
+            "bullet": "Removed the Catholic heir inside England → left English recusants without a domestic royal figurehead"
+          },
+          {
+            "hint": "Transferred royal claim",
+            "bullet": "Bequeathed her English claim to Philip II → spurred Spain’s Armada while James VI stayed peaceful"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Quiet Scottish border",
+            "bullet": "1586 pension and succession hints to Protestant James VI → ensured Scotland did not avenge Mary"
+          },
+          {
+            "hint": "Scapegoated royal secretary",
+            "bullet": "Elizabeth jailed secretary William Davison claiming premature dispatch → shielded herself from foreign regicide outrage"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOMESTIC SECURITY",
+            "stem": "Executing Mary at ____________ on 8 February 1587 strengthened domestic security by removing..."
+          },
+          {
+            "badge": "SCOTTISH REACTION",
+            "stem": "Careful diplomacy ensured King ____________ accepted Elizabeth’s apology rather than..."
+          },
+          {
+            "badge": "SPANISH ESCALATION",
+            "stem": "Internationally, however, bequeathing her claim to ____________ gave Spain fresh religious motive to..."
+          }
+        ],
+        "watch_out": "Mary’s execution did not start the Anglo-Spanish war—conflict had already begun in 1585, though 1587 gave Philip II direct claim to England’s crown.",
+        "prose_hash": "7846088ec7",
+        "prose_fp": "b8590106",
+        "question_hash": "e1814dd27c"
+      }
+    ],
+    "lesson_2_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Narrow Channel crossing",
+            "bullet": "Low Countries ports lay opposite the Thames estuary → Spanish army risked launching Channel invasion"
+          },
+          {
+            "hint": "Antwerp cloth trade",
+            "bullet": "Antwerp handled most English woollen cloth exports → Spanish control threatened vital Crown customs revenue"
+          },
+          {
+            "hint": "Covert rebel aid",
+            "bullet": "Backed William of Orange with quiet loans, volunteers, and expelling Sea Beggars in 1572"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dutch autonomy goal",
+            "bullet": "Elizabeth wanted autonomous Dutch provinces under nominal Spanish rule → blocked both Spanish tyranny and France"
+          },
+          {
+            "hint": "Religious crusade fears",
+            "bullet": "Post-1570 papal bull and Ridolfi Plot → convinced ministers Philip II led an anti-Protestant crusade"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STRATEGIC GEOGRAPHY",
+            "stem": "Located directly opposite the ____________, Spanish military control of Dutch ports threatened England because..."
+          },
+          {
+            "badge": "VITAL COMMERCE",
+            "stem": "Economically, Spanish disruption around ____________ endangered England’s crucial export trade in..."
+          },
+          {
+            "badge": "COVERT SUPPORT",
+            "stem": "Avoiding open war in the 1570s, Elizabeth undermined Alba indirectly by aiding ____________ and expelling..."
+          }
+        ],
+        "watch_out": "Expelling Dutch Sea Beggars from English ports in 1572 accidentally escalated the Dutch Revolt when they seized the Dutch port of Brielle.",
+        "prose_hash": "aa9d916782",
+        "prose_fp": "295fbb8d",
+        "question_hash": "41d2f5edd3"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Caribbean ambush revenge",
+            "bullet": "1568 Spanish ambush on Hawkins and Drake at San Juan de Ulúa → sparked revenge raids"
+          },
+          {
+            "hint": "Treasure port raids",
+            "bullet": "Drake attacked New World monopoly ports like Nombre de Dios → seized Spanish silver shipments"
+          },
+          {
+            "hint": "Secret Crown investment",
+            "bullet": "Elizabeth privately invested ships and money while denying involvement → shared plunder without declaring war"
+          },
+          {
+            "hint": "Sack of Antwerp",
+            "bullet": "1576 Spanish Fury sack of Antwerp → prompted £100,000 English loan under Pacification of Ghent"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Papal monopoly claim",
+            "bullet": "Papal division granted Spain exclusive New World rights → Protestant England rejected papal trade monopolies"
+          },
+          {
+            "hint": "Spanish army mutinies",
+            "bullet": "Disrupting Atlantic silver weakened Philip II’s credit → worsened mutinies among unpaid troops in Flanders"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BREAKING MONOPOLY",
+            "stem": "Seeking revenge after ____________, Francis Drake challenged Spain’s closed New World empire by raiding..."
+          },
+          {
+            "badge": "PLAUSIBLE DENIABILITY",
+            "stem": "Secretly investing ships and capital allowed Elizabeth to profit from ____________ while officially..."
+          },
+          {
+            "badge": "EUROPEAN LINK",
+            "stem": "Following the 1576 ____________ in Antwerp, Atlantic silver disruption connected directly to Flanders when Elizabeth..."
+          }
+        ],
+        "watch_out": "Privateers sailed with royal backing or letters of marque against rival powers, whereas Spain condemned Drake as an illegal pirate.",
+        "prose_hash": "2d26655206",
+        "prose_fp": "2160b549",
+        "question_hash": "14737907c6"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Unguarded Pacific coast",
+            "bullet": "Sailed through the Strait of Magellan in Golden Hind → struck unguarded Chilean and Peruvian ports"
+          },
+          {
+            "hint": "Captured treasure ship",
+            "bullet": "Captured treasure galleon Cacafuego in March 1579 → seized over £140,000 in silver, gold, and jewels"
+          },
+          {
+            "hint": "Crown debt payoff",
+            "bullet": "Returned to Plymouth in September 1580 with £400,000 → Crown share cleared England’s national debt"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Global trade claims",
+            "bullet": "Claimed Nova Albion in California and signed spice treaties → challenged Iberian global maritime dominance"
+          },
+          {
+            "hint": "Naval war chest",
+            "bullet": "Shareholders including Elizabeth earned 4,700% profit → financed English naval strength before Spanish war"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SURPRISE ASSAULT",
+            "stem": "Passing through the ____________ aboard the Golden Hind allowed Drake to raid undefended ports along..."
+          },
+          {
+            "badge": "TREASURE GALLEON",
+            "stem": "Capturing the Spanish galleon ____________ in March 1579 yielded an enormous haul of..."
+          },
+          {
+            "badge": "FISCAL TRIUMPH",
+            "stem": "Returning to Plymouth in 1580 with roughly ____________ transformed Crown finances by..."
+          }
+        ],
+        "watch_out": "Drake did not originally set out just to circumnavigate the globe—his main secret mission was raiding Spanish Pacific treasure and finding trade routes.",
+        "prose_hash": "5ced5fd65a",
+        "prose_fp": "5b24735e",
+        "question_hash": "105fb8d9e9"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Public deck ceremony",
+            "bullet": "Rejected Mendoza’s demand to hang Drake → publicly knighted him aboard Golden Hind at Deptford"
+          },
+          {
+            "hint": "French diplomatic signal",
+            "bullet": "Handed the sword to a French diplomat while courting Alençon → signalled anti-Spanish Franco-English alignment"
+          },
+          {
+            "hint": "Crown-backed raids",
+            "bullet": "Proved the English Crown officially backed raids on Spain’s empire → humiliated Philip II across Europe"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Portuguese fleet gain",
+            "bullet": "Philip II annexed Portugal and its Atlantic fleet in 1580 → boosted Spanish naval power"
+          },
+          {
+            "hint": "End of deniability",
+            "bullet": "Ended plausible deniability over privateering → pushed Madrid toward backing Catholic plots like Throckmorton"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ROYAL DEFIANCE",
+            "stem": "Instead of punishing Drake as ambassador ____________ demanded, boarding the Golden Hind at ____________ showed..."
+          },
+          {
+            "badge": "DIPLOMATIC SIGNAL",
+            "stem": "Asking a French envoy to dub Drake while courting the ____________ warned Philip II that..."
+          },
+          {
+            "badge": "IMPERIAL INSULT",
+            "stem": "Publicly honouring ____________ infuriated Madrid because it proved the English Crown officially backed..."
+          }
+        ],
+        "watch_out": "Knighting Drake in 1581 ended Elizabeth’s pretence of innocence—and came right after Philip II gained Portugal’s Atlantic fleet in 1580.",
+        "prose_hash": "10ac5faa31",
+        "prose_fp": "a88d445d",
+        "question_hash": "15a4cd2a46"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Dutch rebel crisis",
+            "bullet": "Parma’s advances and William of Orange’s July 1584 assassination → brought Dutch rebels near collapse"
+          },
+          {
+            "hint": "Franco-Spanish Catholic pact",
+            "bullet": "December 1584 Treaty of Joinville allied Philip II with France’s Catholic League → isolated Protestant England"
+          },
+          {
+            "hint": "Open military treaty",
+            "bullet": "Signed Nonsuch in August 1585 after Antwerp fell → sent Dudley with 7,400 English soldiers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lost French counterweight",
+            "bullet": "Death of Alençon and French civil war → prevented France acting as England’s anti-Spanish ally"
+          },
+          {
+            "hint": "Cautionary towns seized",
+            "bullet": "Garrisoning Brill and Flushing breached Spanish sovereignty → Philip II seized English ships and prepared Armada"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DUTCH COLLAPSE",
+            "stem": "Following the assassination of ____________ and the Duke of Parma’s capture of Antwerp, indirect aid..."
+          },
+          {
+            "badge": "CATHOLIC ALLIANCE",
+            "stem": "Signing the ____________ in December 1584 allied Spain with the French Catholic League, leaving England..."
+          },
+          {
+            "badge": "DIRECT INTERVENTION",
+            "stem": "Compelled to act openly under the ____________ in August 1585, Elizabeth sent ____________ with 7,400 troops."
+          }
+        ],
+        "watch_out": "Do not confuse the two treaties—Joinville in 1584 united Catholic Spain and French Guises, forcing Elizabeth to sign Nonsuch with Dutch Protestants in 1585.",
+        "prose_hash": "3b120ea5a2",
+        "prose_fp": "7fc77c81",
+        "question_hash": "46a1d505c5"
+      }
+    ],
+    "lesson_2_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Unauthorised title",
+            "bullet": "Dudley accepted supreme title of Governor-General in January 1586 without consulting Elizabeth → enraged the Queen"
+          },
+          {
+            "hint": "Spanish sovereignty",
+            "bullet": "Title implied England rejected Philip II's lawful sovereignty → ruined Elizabeth's hopes of compromise peace"
+          },
+          {
+            "hint": "Public humiliation",
+            "bullet": "Elizabeth publicly humiliated Dudley and starved troops of funds and guns → alienated Dutch allies"
+          },
+          {
+            "hint": "Unpaid garrisons",
+            "bullet": "Underfunded English soldiers suffered hunger and desertion → fuelled Dutch resentment despite holding Ostend"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Treaty limits",
+            "bullet": "1585 Treaty of Nonsuch promised 7,400 troops for Dutch autonomy → deliberately refused English crown rule"
+          },
+          {
+            "hint": "Divine right",
+            "bullet": "Elizabeth feared backing rebels who deposed an anointed king → risked encouraging Catholic plots at home"
+          },
+          {
+            "hint": "Royal treasury",
+            "bullet": "Limited English Crown revenue → Elizabeth dreaded funding a costly, open-ended land war against Spain"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ROYAL FURY",
+            "stem": "Without consulting Elizabeth, ____________ accepted the supreme title of ____________, implying England openly rejected..."
+          },
+          {
+            "badge": "COMPROMISE PEACE",
+            "stem": "Because Elizabeth still hoped for a ____________ with Madrid, she starved the Dutch campaign of..."
+          },
+          {
+            "badge": "DUTCH FRUSTRATION",
+            "stem": "Publicly humiliating her commander and leaving English troops ____________ angered the ____________, even though garrisons held..."
+          }
+        ],
+        "watch_out": "Under the 1585 Treaty of Nonsuch Elizabeth declined sovereignty over the Netherlands—Dudley's title defied her deliberate caution, not an ambition to annex Dutch provinces.",
+        "prose_hash": "ad6d75b9a7",
+        "prose_fp": "e852d692",
+        "question_hash": "503b3ed40b"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Catholic defectors",
+            "bullet": "Sir William Stanley and Rowland Yorke defected in January 1587 → handed key forts to Parma"
+          },
+          {
+            "hint": "Strategic strongholds",
+            "bullet": "Surrendering Deventer and Zutphen fort erased hard-won gains → cost lives after Philip Sidney's death"
+          },
+          {
+            "hint": "Collapsed trust",
+            "bullet": "Dudley had personally appointed both traitors → shattered Dutch confidence in English military loyalty"
+          },
+          {
+            "hint": "Permanent recall",
+            "bullet": "Rumours of secret Anglo-Spanish peace talks worsened relations with the States-General → forced Dudley's recall"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Spanish veterans",
+            "bullet": "Parma commanded 30,000 battle-hardened Spanish tercios → outnumbered and outclassed Dudley's underpaid English levies"
+          },
+          {
+            "hint": "Papal allegiance",
+            "bullet": "1570 Papal Bull absolved Catholics from loyalty → motivated officers like Stanley to serve Catholic Spain"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOUBLE DEFECTION",
+            "stem": "Appointed personally by Dudley, Catholic officers ____________ and ____________ switched sides and handed ____________ to Parma."
+          },
+          {
+            "badge": "ALLIANCE DISTRUST",
+            "stem": "Combined with rumours of secret ____________, losing these forts wrecked ____________ trust in English loyalty."
+          },
+          {
+            "badge": "CAMPAIGN FAILURE",
+            "stem": "Unable to work smoothly with the ____________ or match Parma's veterans, a discredited ____________ was recalled."
+          }
+        ],
+        "watch_out": "Stanley and Yorke were English officers appointed by Dudley who defected to Spain, not Dutch rebels betraying England.",
+        "prose_hash": "1d96d68f88",
+        "prose_fp": "454e08ee",
+        "question_hash": "062b9dbc5c"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Pre-emptive strike",
+            "bullet": "Drake sailed 24 warships into Cadiz harbour in April 1587 → caught assembling invasion vessels unguarded"
+          },
+          {
+            "hint": "Harbour destruction",
+            "bullet": "Three days of gunfire burned or sank 30 Spanish ships → destroyed tonnes of naval provisions"
+          },
+          {
+            "hint": "Captured spice carrack",
+            "bullet": "Capturing the spice carrack San Felipe yielded £108,000 → funded English defences while starving Spanish credit"
+          },
+          {
+            "hint": "Vital delay",
+            "bullet": "Spanish warships had to chase Drake off Portugal → delayed the Armada's launch until 1588"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Spy network",
+            "bullet": "Walsingham's spy reports early in 1587 revealed Philip II's Armada build-up → prompted pre-emptive royal orders"
+          },
+          {
+            "hint": "Scottish Queen's fate",
+            "bullet": "Mary Stuart's execution in February 1587 removed Catholic hesitation → drove Philip II toward immediate invasion"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HARBOUR RAID",
+            "stem": "Sailing boldly into ____________ in April 1587, ____________ burned or sank ____________ and destroyed vital stores."
+          },
+          {
+            "badge": "TREASURE & DIVERSION",
+            "stem": "After seizing the rich carrack ____________ near the Azores, English raiders forced Spanish warships to..."
+          },
+          {
+            "badge": "STRATEGIC BREATHING SPACE",
+            "stem": "Nicknamed ____________, the raid bought England twelve vital months to prepare coastal defences until ____________."
+          }
+        ],
+        "watch_out": "Drake's 1587 Cadiz raid did not defeat the main Spanish Armada—it delayed Philip II's invasion fleet by twelve crucial months until 1588.",
+        "prose_hash": "4af9f18e4b",
+        "prose_fp": "87e10f4b",
+        "question_hash": "50f871fc1c"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Seasoned timber",
+            "bullet": "Drake burned stockpiles of seasoned oak barrel staves off Cape St Vincent → ruined cask production"
+          },
+          {
+            "hint": "Rotting provisions",
+            "bullet": "Replacement casks made from damp green pine warped and leaked → spoiled drinking water and meat"
+          },
+          {
+            "hint": "Admiral's death",
+            "bullet": "Veteran commander Santa Cruz died suddenly in February 1588 → robbed Spain of experienced naval leadership"
+          },
+          {
+            "hint": "Reluctant replacement",
+            "bullet": "Medina Sidonia suffered chronic seasickness and lacked sea combat experience → bound by rigid royal orders"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Extended voyage",
+            "bullet": "30,000 sailors and soldiers needed months of clean water → spoiled casks crippled crew health offshore"
+          },
+          {
+            "hint": "Autocratic micromanagement",
+            "bullet": "Philip II directed strategy from Madrid → denied Medina Sidonia flexibility to adapt to Channel conditions"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SPOILED SUPPLIES",
+            "stem": "Destroying seasoned ____________ forced Spanish coopers to use damp ____________, causing barrels to leak and..."
+          },
+          {
+            "badge": "LEADERSHIP LOSS",
+            "stem": "Following the sudden death of veteran admiral ____________ in February 1588, Philip II appointed the reluctant ____________."
+          },
+          {
+            "badge": "COMMAND LIMITS",
+            "stem": "Although a capable administrator, Spain's new commander lacked ____________, suffered ____________, and obeyed rigid royal orders."
+          }
+        ],
+        "watch_out": "Medina Sidonia was an able noble administrator who warned Philip II of the fleet's weaknesses, not a foolish volunteer eager for glory.",
+        "prose_hash": "a9bd3aeac8",
+        "prose_fp": "57db40af",
+        "question_hash": "0c58e9a9ba"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Deep-water ports",
+            "bullet": "Parma lacked any deep-water harbour in Flanders → Medina Sidonia's heavy galleons could not dock inshore"
+          },
+          {
+            "hint": "Unarmed barges",
+            "bullet": "Parma's 27,000 troops waited on flat-bottomed canal barges → needed 48 calm hours to embark"
+          },
+          {
+            "hint": "Shallow blockade",
+            "bullet": "Nimble Dutch flyboats under Justin of Nassau patrolled Flemish shallows → trapped Parma's defenceless troop barges"
+          },
+          {
+            "hint": "Broken communications",
+            "bullet": "Slow courier boats carried messages between sea and shore → Sidonia and Parma could never synchronise"
+          }
+        ],
+        "context": [
+          {
+            "hint": "English garrisons",
+            "bullet": "English troops still held deep-water Flushing and Ostend → denied Spain safe Channel anchorage from 1585"
+          },
+          {
+            "hint": "Spring storm damage",
+            "bullet": "Spring gales battered the 130-ship fleet into Corunna for repairs → delayed arrival and drained stores"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MISSING HARBOUR",
+            "stem": "Crucially, Spain controlled no ____________ in Flanders, preventing ____________ from bringing heavy galleons close inshore."
+          },
+          {
+            "badge": "TRAPPED BARGES",
+            "stem": "While Parma's unarmed ____________ needed two calm days to emerge, shallow-draught ____________ blocked the coastal canals."
+          },
+          {
+            "badge": "TIMING FAILURE",
+            "stem": "Relying on slow ____________ across hostile waters meant Spain's fleet and army could never ____________ their junction."
+          }
+        ],
+        "watch_out": "Philip II never intended Medina Sidonia's 130 ships to invade England alone—their mission was to escort Parma's 27,000 troops across from Flanders.",
+        "prose_hash": "c9337a3563",
+        "prose_fp": "99d96a43",
+        "question_hash": "31cc91c92a"
+      }
+    ],
+    "lesson_2_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Defensive crescent",
+            "bullet": "130 Spanish ships sailed in a tight seven-mile crescent → protected slow supply vessels inside"
+          },
+          {
+            "hint": "Armoured wings",
+            "bullet": "Heavy fighting galleons guarded both outer wings → repelled isolated English attacks from Plymouth onward"
+          },
+          {
+            "hint": "Stand-off range",
+            "bullet": "Howard, Drake, and Hawkins avoided Spanish grappling hooks → long-range cannon salvos sank very few ships"
+          },
+          {
+            "hint": "Windward herding",
+            "bullet": "Warping out of Plymouth gave England the weather gauge → blocked Solent anchorage and forced Calais"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Boarding doctrine",
+            "bullet": "Spanish galleons carried packed infantry trained to grapple and board → deterred close-quarters English engagement"
+          },
+          {
+            "hint": "Powder conservation",
+            "bullet": "Limited heavy cannonballs aboard English warships → forced Howard to conserve ammunition during early skirmishes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DEFENSIVE FORMATION",
+            "stem": "Sailing up the Channel in a tight ____________, Medina Sidonia shielded slow transports behind heavy ____________."
+          },
+          {
+            "badge": "STAND-OFF TACTICS",
+            "stem": "After seizing the ____________ behind Spain, English captains fired from long range to avoid ____________."
+          },
+          {
+            "badge": "SOLENT BLOCKED",
+            "stem": "Although few Spanish vessels sank, ____________ prevented Sidonia anchoring in the ____________ and drove him toward..."
+          }
+        ],
+        "watch_out": "Channel skirmishes from Plymouth to the Isle of Wight sank almost no Spanish ships—their real success was denying Spain shelter in the Solent.",
+        "prose_hash": "a1f52ec4cb",
+        "prose_fp": "d68f04f9",
+        "question_hash": "cca25feb01"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Exposed anchorage",
+            "bullet": "Armada anchored in open Calais Roads on 6 August → waited vulnerably while Parma remained unready"
+          },
+          {
+            "hint": "Midnight drift",
+            "bullet": "Howard and Drake drifted eight blazing fireships packed with pitch and gunpowder → struck at midnight"
+          },
+          {
+            "hint": "Hell-burner panic",
+            "bullet": "Captains feared giant explosive hell-burners like Antwerp's → cut main anchor cables in blind panic"
+          },
+          {
+            "hint": "Broken crescent",
+            "bullet": "Scattering into the dark North Sea broke Spain's crescent formation → left warships without spare anchors"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier siege memory",
+            "bullet": "1585 siege of Antwerp saw Italian bomb-ships kill hundreds → terrified Spanish crews off Calais"
+          },
+          {
+            "hint": "Flanders embarkation delay",
+            "bullet": "Parma needed another week to load barges at Dunkirk → trapped Sidonia motionless in exposed water"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EXPOSED WAIT",
+            "stem": "Trapped at anchor off ____________ while waiting for Parma, Spain's fleet lay vulnerable to ____________."
+          },
+          {
+            "badge": "HELL-BURNER TERROR",
+            "stem": "Dreading massive explosive ships like those at Antwerp, panicked captains ____________ and fled into the ____________."
+          },
+          {
+            "badge": "TACTICAL COLLAPSE",
+            "stem": "Even though zero Spanish galleons burned that night, losing ____________ and breaking the ____________ proved fatal."
+          }
+        ],
+        "watch_out": "The eight Calais fireships did not actually burn a single Spanish warship—their decisive impact was panicking captains into cutting anchors and breaking formation.",
+        "prose_hash": "88f2ae5b4d",
+        "prose_fp": "28120dd1",
+        "question_hash": "ea30fb85af"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Sleek hull design",
+            "bullet": "Hawkins's low race-built galleons sailed faster and turned sharper → outmanoeuvred scattered, high-sided Spanish warships"
+          },
+          {
+            "hint": "Close-range salvos",
+            "bullet": "Closing within a hundred yards off Gravelines → bronze culverins smashed Spanish hulls below the waterline"
+          },
+          {
+            "hint": "Rapid reloading",
+            "bullet": "Compact four-wheeled English gun carriages recoiled smoothly → fired three times faster than clumsy Spanish guns"
+          },
+          {
+            "hint": "Invasion ruined",
+            "bullet": "Nine hours of broadsides wrecked five ships and killed 1,000 men → prevented link-up with Parma"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mismatched ammunition",
+            "bullet": "Spanish cannonballs came from diverse European foundries → ill-fitting shot and two-wheeled carriages slowed Spanish reloading"
+          },
+          {
+            "hint": "Dutch coastal screen",
+            "bullet": "Shallow Flemish sandbanks and Dutch flyboats → kept Parma's 27,000 troops pinned helplessly ashore"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHIP AGILITY",
+            "stem": "Designed by ____________, sleek ____________ closed within a hundred yards and out-turned tall Spanish galleons."
+          },
+          {
+            "badge": "GUNNERY EDGE",
+            "stem": "Mounted on compact ____________, English bronze ____________ fired three times faster than Spanish crews trained to..."
+          },
+          {
+            "badge": "DECISIVE OUTCOME",
+            "stem": "Relentless broadsides at ____________ wrecked five warships, inflicted heavy casualties, and ended any hope of ____________."
+          }
+        ],
+        "watch_out": "At Gravelines English captains closed within 100 yards to pierce thick oak hulls—earlier miles-away Channel fire had merely bounced off Spanish timbers.",
+        "prose_hash": "4373339bfc",
+        "prose_fp": "7cbd72af",
+        "question_hash": "4ef25caaaf"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Northward gale",
+            "bullet": "South-westerly gale on 9 August blew battered ships into the North Sea → blocked Channel return"
+          },
+          {
+            "hint": "Perilous detour",
+            "bullet": "Short of shot and drinking foul water → Sidonia forced around stormy Scotland and western Ireland"
+          },
+          {
+            "hint": "Missing anchors",
+            "bullet": "Having cut heavy main cables at Calais → crews could not ride out fierce Atlantic storms"
+          },
+          {
+            "hint": "Chart errors",
+            "bullet": "Inaccurate sea charts of western Ireland → over 25 ships wrecked ashore, losing 15,000 men overall"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1587 raid damage",
+            "bullet": "Rotting green-pine barrels from Drake's 1587 raid → left starving, dehydrated sailors too weak to work"
+          },
+          {
+            "hint": "Hostile coastline",
+            "bullet": "English crown forces in Ireland executed shipwrecked Spanish survivors → feared a Catholic Irish uprising"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FORCED DETOUR",
+            "stem": "Driven north by the gale hailed as the ____________, Spain's battered fleet had to sail around ____________."
+          },
+          {
+            "badge": "ANCHORLESS DRIFT",
+            "stem": "Because captains had cut their ____________ at Calais and lacked accurate ____________, autumn gales drove ships..."
+          },
+          {
+            "badge": "HUMAN COST",
+            "stem": "More than twenty-five vessels wrecked on rocky coasts, leaving barely ____________ to limp back to Spain."
+          }
+        ],
+        "watch_out": "Far more Spanish ships and sailors perished on rocky Scottish and Irish coasts during the Atlantic retreat than in English cannon fire in the Channel.",
+        "prose_hash": "cd3b8bb2e6",
+        "prose_fp": "d33caec0",
+        "question_hash": "5e47dce883"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Militia camp speech",
+            "bullet": "Elizabeth inspected 4,000 Essex militia in a silver breastplate → countered gender doubts with warrior leadership"
+          },
+          {
+            "hint": "Divine providence",
+            "bullet": "Royal medals proclaimed God blew and they were scattered → portrayed victory as Protestant divine favour"
+          },
+          {
+            "hint": "Maritime reputation",
+            "bullet": "Defeating Europe's superpower boosted English naval prestige → proved race-built galleons and gunnery mastered sea warfare"
+          },
+          {
+            "hint": "Strategic survival",
+            "bullet": "Ending immediate invasion peril in 1588 → safeguarded Dutch independence and strengthened Anglo-Dutch Protestant cooperation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ongoing conflict",
+            "bullet": "Anglo-Spanish war dragged on until 1604 → 1588 halted invasion but drained Crown finances afterward"
+          },
+          {
+            "hint": "Domestic unity",
+            "bullet": "Most English Catholics stayed loyal to Elizabeth in 1588 → discredited Philip II's hope of uprising"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ROYAL IMAGE",
+            "stem": "Addressing militia at ____________ on 18 August, Elizabeth overcame Tudor gender prejudices by declaring she possessed..."
+          },
+          {
+            "badge": "PROTESTANT PROPAGANDA",
+            "stem": "Commemorative medals reading ____________ turned Spain's defeat into powerful proof that God favoured ____________."
+          },
+          {
+            "badge": "STRATEGIC IMPACT",
+            "stem": "Alongside elevating English ____________ across Europe, the 1588 triumph preserved ____________ independence from Spanish rule."
+          }
+        ],
+        "watch_out": "Elizabeth delivered her famous Tilbury speech on 18 August 1588 after Gravelines—England still braced in case Parma's army crossed from Flanders.",
+        "prose_hash": "c6429b75fd",
+        "prose_fp": "cd159d60",
+        "question_hash": "5436474731"
+      }
+    ],
+    "lesson_3_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Gendered literacy",
+            "bullet": "Male literacy reached roughly 30% against 10% for women → schooling prioritised boys and wealthier ranks"
+          },
+          {
+            "hint": "Labouring children",
+            "bullet": "Gentry, merchant, and yeoman sons gained literacy → farm labourers' children worked fields from age six"
+          },
+          {
+            "hint": "Elementary divide",
+            "bullet": "Middling boys attended petty schools for hornbooks and arithmetic → girls learned needlework at dame schools"
+          },
+          {
+            "hint": "Social obedience",
+            "bullet": "Teaching reinforced the Great Chain of Being → prepared pupils to accept their fixed social rank"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Protestant scripture",
+            "bullet": "1559 Religious Settlement promoted reading the English Bible → encouraged literacy without seeking social mobility"
+          },
+          {
+            "hint": "Patriarchal expectations",
+            "bullet": "Tudor society expected women to marry and keep house → barred females from professions and universities"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LITERACY GAP",
+            "stem": "Although Protestant belief encouraged Bible reading, literacy reached roughly ____________ of men compared with ____________ of women."
+          },
+          {
+            "badge": "EARLY SCHOOLING",
+            "stem": "While middling-sort boys practiced reading at ____________, girls typically learned domestic ____________ at local dame schools."
+          },
+          {
+            "badge": "SOCIAL ORDER",
+            "stem": "Above all, Elizabethan education upheld the ____________, teaching children obedience rather than encouraging ____________."
+          }
+        ],
+        "watch_out": "Elizabethan schooling was never meant to promote social mobility—it reinforced the Great Chain of Being by preparing each child for their existing station.",
+        "prose_hash": "bff30a6695",
+        "prose_fp": "53cbf8c9",
+        "question_hash": "1374fb45e5"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Benefactor boom",
+            "bullet": "Wealthy Protestants and guilds founded 72 grammar schools in the 1560s–70s → expanded urban male schooling"
+          },
+          {
+            "hint": "Demanding timetable",
+            "bullet": "Fee-paying gentry, merchant, and scholarship boys aged 10–14 → studied strict 6 a.m. to 5 p.m. days"
+          },
+          {
+            "hint": "Classical syllabus",
+            "bullet": "Lessons centred on Latin and Greek authors like Cicero and Virgil → trained rhetoric and governance"
+          },
+          {
+            "hint": "Practical apprenticeships",
+            "bullet": "Craftsmen's and merchants' sons alternatively entered apprenticeships → learned bookkeeping, arithmetic, and skilled urban trades"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Monastic gap",
+            "bullet": "Earlier Tudor dissolution of monasteries closed church schools → spurred secular Protestant benefactors to endow replacements"
+          },
+          {
+            "hint": "Expanding trade",
+            "bullet": "Growth of joint-stock trading companies and town governance → increased demand for literate, numerate urban boys"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RAPID EXPANSION",
+            "stem": "Endowed by wealthy ____________ and merchant guilds, seventy-two new ____________ opened across the 1560s and 1570s."
+          },
+          {
+            "badge": "CLASSICAL FOCUS",
+            "stem": "Studying from 6 a.m. to 5 p.m., boys mastered ____________ and rhetoric alongside strict ____________."
+          },
+          {
+            "badge": "TRADE PATHWAY",
+            "stem": "Rather than studying ancient Greek, many craftsmen's sons moved from petty school into ____________ to learn..."
+          }
+        ],
+        "watch_out": "Grammar schools admitted only boys—even wealthy gentry daughters were educated at home rather than seated alongside town grammar pupils.",
+        "prose_hash": "d8bb6bbaae",
+        "prose_fp": "ee3ec0d8",
+        "question_hash": "52fd260056"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Household tutors",
+            "bullet": "Nobility hired private humanist tutors at home → boys learned classics, French, fencing, and horsemanship"
+          },
+          {
+            "hint": "Noblewomen's curriculum",
+            "bullet": "Noble girls studied languages, music, dancing, and estate management → remained completely barred from university"
+          },
+          {
+            "hint": "Protestant colleges",
+            "bullet": "Sons aged 14–15 entered Oxford and Cambridge → new colleges like Emmanuel trained loyal Anglican clergy"
+          },
+          {
+            "hint": "Legal training",
+            "bullet": "London's Inns of Court taught common law → prepared gentry sons to serve as magistrates"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Clerical shortage",
+            "bullet": "1559 Settlement suffered from poorly educated parish priests → drove Protestant college foundations like Emmanuel"
+          },
+          {
+            "hint": "Local governance",
+            "bullet": "Elizabeth relied on unpaid gentry Justices of the Peace → legal training strengthened royal administration"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NOBLE HOUSEHOLDS",
+            "stem": "Educated privately under ____________, noble boys combined classical languages with ____________, while noble girls learned..."
+          },
+          {
+            "badge": "PROTESTANT UNIVERSITIES",
+            "stem": "Entering ____________ at age fourteen, gentlemen's sons attended new colleges like ____________ to train as clergy."
+          },
+          {
+            "badge": "COMMON LAW",
+            "stem": "Additionally, many gentry heirs studied in London at the ____________ to prepare for public office."
+          }
+        ],
+        "watch_out": "Boys entered Oxford and Cambridge much younger than modern students—typically at age fourteen or fifteen rather than eighteen.",
+        "prose_hash": "6d2f55b3b2",
+        "prose_fp": "d93c95f4",
+        "question_hash": "7c534c81a9"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Exclusive estates",
+            "bullet": "Only nobles and gentry owned deer parks → kept hunting and hawking exclusive to elites"
+          },
+          {
+            "hint": "Courtly refinements",
+            "bullet": "Wealthy gentlemen fenced, played indoor real tennis, danced galliards, and played lute → displayed leisured status"
+          },
+          {
+            "hint": "Parish football",
+            "bullet": "Labourers and apprentices played violent village-wide folk football on holy days → lacked rules or equipment"
+          },
+          {
+            "hint": "Shared bloodsports",
+            "bullet": "Southwark bear-baiting and cock-fighting drew Privy Councillors and apprentices alike → united classes through gambling"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Working hours",
+            "bullet": "Six-day working weeks for farmhands and artisans → restricted plebeian leisure to Sundays and holy days"
+          },
+          {
+            "hint": "Poaching laws",
+            "bullet": "Strict Tudor game laws punished commoners hunting deer → enforced landowning privilege across the countryside"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ELITE PRIVILEGE",
+            "stem": "Restricted by private landownership, pastimes such as ____________, hawking, and indoor ____________ belonged strictly to..."
+          },
+          {
+            "badge": "VILLAGE RECREATION",
+            "stem": "By contrast, labourers and apprentices gathered on holy days for rough ____________, where broken bones were..."
+          },
+          {
+            "badge": "CROSS-CLASS SPECTACLE",
+            "stem": "Nevertheless, gambling at Southwark ____________ and cock-fighting pits brought ____________ and penny-paying workers into one crowd."
+          }
+        ],
+        "watch_out": "Blood sports like bear-baiting and cock-fighting were not exclusively lower-class—Elizabeth herself and leading courtiers enjoyed watching baiting spectacles.",
+        "prose_hash": "5550d2f604",
+        "prose_fp": "948a9eb0",
+        "question_hash": "546816763a"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Noble patronage",
+            "bullet": "1572 Vagabonds Act required actors to hold noble licences → formed professional troupes like Queen's Men"
+          },
+          {
+            "hint": "Suburban playhouses",
+            "bullet": "James Burbage built The Theatre in Shoreditch in 1576 → escaped hostile City of London jurisdiction"
+          },
+          {
+            "hint": "Tiered admission",
+            "bullet": "One-penny yard tickets for groundlings alongside covered gentry galleries → attracted 2,000 spectators across classes"
+          },
+          {
+            "hint": "Puritan hostility",
+            "bullet": "Puritans and aldermen condemned playhouses for plague, crime, and idleness → failed to curb royal support"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Religious censorship",
+            "bullet": "Crown banned medieval Catholic mystery plays → created huge popular appetite for secular gripping drama"
+          },
+          {
+            "hint": "Propaganda value",
+            "bullet": "Privy Council backed troupes like the Queen's Men → toured patriotic Protestant history plays nationwide"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LICENSED TROUPES",
+            "stem": "Following the 1572 Vagabonds Act, touring players needed noble patronage, leading ____________ to open ____________ in 1576."
+          },
+          {
+            "badge": "AFFORDABLE DESIGN",
+            "stem": "Charging poor ____________ just one penny to stand while gentry sat in ____________ drew huge mixed audiences."
+          },
+          {
+            "badge": "FAILED OPPOSITION",
+            "stem": "Although ____________ and city officials linked theatres to ____________ and pickpockets, royal backing kept drama booming."
+          }
+        ],
+        "watch_out": "Shakespeare's Globe opened in 1599, outside our 1558–88 period—cite Burbage's The Theatre in 1576, the Curtain in 1577, or the Rose in 1587 instead.",
+        "prose_hash": "0f44b3d12c",
+        "prose_fp": "39758ec1",
+        "question_hash": "d84d38ab96"
+      }
+    ],
+    "lesson_3_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Demographic surge",
+            "bullet": "Population jumped 35% from 3 million to 4 million → outstripped sluggish farm output across England"
+          },
+          {
+            "hint": "Urban pressure",
+            "bullet": "Fast-growing towns like London and Norwich → drove up bread prices and cottage rents everywhere"
+          },
+          {
+            "hint": "Harvest failures",
+            "bullet": "Wet summers in 1573–77 ruined consecutive grain crops → triggered acute shortages and food inflation"
+          },
+          {
+            "hint": "Falling real wages",
+            "bullet": "Surplus workers competed under the 1563 Statute of Artificers wage cap → real wages dropped sharply"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Coin debasement",
+            "bullet": "Lingering inflation from Henry VIII's debased coinage → lowered purchasing power even after Elizabeth's recoinage"
+          },
+          {
+            "hint": "Monastic charity",
+            "bullet": "Closing monasteries earlier in the century removed traditional almsgiving → left hungry rural families unsupported"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DEMAND OUTSTRIPS SUPPLY",
+            "stem": "Climbing rapidly from ____________ to ____________ by 1588, England's population grew faster than farms could produce..."
+          },
+          {
+            "badge": "HARVEST SHOCKS",
+            "stem": "Consecutive wet summers in the 1570s caused ____________, pushing ____________ and rents sharply upward."
+          },
+          {
+            "badge": "SQUEEZED PAY",
+            "stem": "With surplus labourers competing for work and the ____________ capping pay, rural ____________ fell severely."
+          }
+        ],
+        "watch_out": "Rising population did not create prosperity for farmhands—more mouths meant higher bread prices while surplus labour drove real wages down.",
+        "prose_hash": "a2aa631aa8",
+        "prose_fp": "91b29eb7",
+        "question_hash": "b6065b0e22"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Lucrative wool",
+            "bullet": "Raw wool and cloth exceeded 80% of English exports → tempted gentry landlords into commercial sheep"
+          },
+          {
+            "hint": "Hedging commons",
+            "bullet": "Enclosure fenced open village strips and common grazing → deprived smallholders of shared subsistence land"
+          },
+          {
+            "hint": "Collapsed farm jobs",
+            "bullet": "Tending sheep required one tenth the workforce of arable corn → threw parish labourers out"
+          },
+          {
+            "hint": "Rack-renting evictions",
+            "bullet": "Landlords hiked entry fines through rack-renting → evicted families drifted to towns hit by cloth embargoes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Foreign cloth embargo",
+            "bullet": "Spanish trade embargoes in the Netherlands halted Antwerp cloth sales → caused sudden rural spinning unemployment"
+          },
+          {
+            "hint": "Landless migration",
+            "bullet": "Evicted cottagers walked toward London seeking work → swelled numbers labelled vagrants by nervous magistrates"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PROFITABLE WOOL",
+            "stem": "Driven by wool and cloth making up over ____________ of exports, landlords hedged open fields through ____________."
+          },
+          {
+            "badge": "LABOUR COLLAPSE",
+            "stem": "Because grazing ____________ needed barely a tenth of arable workers, whole parishes lost year-round ____________."
+          },
+          {
+            "badge": "FORCED MIGRATION",
+            "stem": "Pushed off holdings by steep ____________ and hurt by Spanish trade embargoes, evicted families swelled..."
+          }
+        ],
+        "watch_out": "Enclosure meant hedging shared village strips and common land into private sheep pastures—it did not mean fencing whole towns.",
+        "prose_hash": "df38394320",
+        "prose_fp": "bbf8510b",
+        "question_hash": "d3b90fc273"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Deserving relief",
+            "bullet": "Orphans, widows, sick, and elderly formed the impotent poor → physically unable to work, meriting charity"
+          },
+          {
+            "hint": "Able-bodied suspicion",
+            "bullet": "Sturdy beggars were able-bodied adults without masters → suspected of choosing idleness over honest labour"
+          },
+          {
+            "hint": "Sensationalist rogue literature",
+            "bullet": "Thomas Harman's 1567 book exposed con-tricks like counterfeit cranks → inflamed gentry panic over fraud"
+          },
+          {
+            "hint": "Order and rebellion",
+            "bullet": "Lacking a police force, JPs feared masterless vagrants → linked wandering gangs to plague and rebellion"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1569 northern uprising",
+            "bullet": "Rootless poor joined the 1569 Northern Revolt → convinced Privy Councillors vagrancy threatened Crown security"
+          },
+          {
+            "hint": "Printing press",
+            "bullet": "Cheap woodcut pamphlets circulated widely among literate gentry → stereotyped all unemployed migrants as criminals"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TWO CATEGORIES",
+            "stem": "Dividing destitute parishioners in two, authorities aided the ____________ with poor rates while blaming ____________ for laziness."
+          },
+          {
+            "badge": "PRINT PANIC",
+            "stem": "Sensational accounts of fake fits in ____________'s 1567 book convinced propertied readers that beggars used..."
+          },
+          {
+            "badge": "SECURITY FEARS",
+            "stem": "Without a standing ____________, unpaid magistrates feared masterless wanderers spread ____________, crime, and sedition."
+          }
+        ],
+        "watch_out": "Impotent poor meant people physically powerless to work due to age or disability—never confuse the Tudor word with its modern medical meaning.",
+        "prose_hash": "74a1a6f93f",
+        "prose_fp": "21d49376",
+        "question_hash": "5bc83f2dce"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Mandatory tax",
+            "bullet": "JPs registered deserving poor and levied a weekly compulsory poor rate → jailed householders refusing payment"
+          },
+          {
+            "hint": "Local overseers",
+            "bullet": "Parishes appointed Overseers of the Poor → created national administrative machinery for genuine local relief"
+          },
+          {
+            "hint": "Brutal mutilation",
+            "bullet": "Unlicensed able-bodied beggars over fourteen were whipped bloody → bored through the ear with hot iron"
+          },
+          {
+            "hint": "Repeat hanging",
+            "bullet": "Second vagrancy arrest within sixty days carried the death penalty → treated persistent begging as felony"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Post-rebellion timing",
+            "bullet": "Passed soon after the 1569 Northern Revolt and 1571 Ridolfi Plot → reflected heightened state insecurity"
+          },
+          {
+            "hint": "Reluctant executioners",
+            "bullet": "Many local magistrates shrank from hanging mere beggars → exposed limits of pure deterrence by 1576"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COMPULSORY RELIEF",
+            "stem": "Passed after northern unrest, the 1572 Act required ____________ to register deserving locals and collect a ____________."
+          },
+          {
+            "badge": "SAVAGE DETERRENCE",
+            "stem": "Conversely, unlicensed vagrants over fourteen were whipped through town and ____________ with a hot iron."
+          },
+          {
+            "badge": "CAPITAL FELONY",
+            "stem": "Anyone caught begging a second time within ____________ faced execution by ____________ as a felon."
+          }
+        ],
+        "watch_out": "Do not portray the 1572 Vagabonds Act as purely cruel—alongside ear-boring and hanging, it made local poor rates nationally compulsory.",
+        "prose_hash": "1b51e6b157",
+        "prose_fp": "ca25a746",
+        "question_hash": "f26d7c096a"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Unemployment recognised",
+            "bullet": "MPs accepted cloth slumps caused genuine unemployment → recognised able-bodied poor often lacked available work"
+          },
+          {
+            "hint": "Parish materials",
+            "bullet": "Towns bought stocks of raw wool, flax, hemp, and iron → paid jobless locals to spin"
+          },
+          {
+            "hint": "Punitive workhouses",
+            "bullet": "Vagrants refusing parish work entered county Bridewells → punished persistent vagabondage with strict hard labour"
+          },
+          {
+            "hint": "National framework",
+            "bullet": "Combined with 1563 and 1572 statutes → established permanent parish responsibility for poverty and unemployment"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Municipal models",
+            "bullet": "Progressive Protestant towns like Norwich and Ipswich pioneered municipal poor schemes → inspired Parliament's 1576 Act"
+          },
+          {
+            "hint": "Later foundation",
+            "bullet": "1572 and 1576 Acts laid the administrative blueprint → culminated later in the 1601 Poor Law"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHIFT IN ATTITUDE",
+            "stem": "Recognising that trade slumps left willing adults jobless, the 1576 Act ordered parishes to supply ____________."
+          },
+          {
+            "badge": "BRIDEWELL DISCIPLINE",
+            "stem": "Able-bodied vagrants who still refused to work were sent to Houses of Correction called ____________."
+          },
+          {
+            "badge": "LASTING LEGACY",
+            "stem": "Together, the ____________, 1572, and 1576 Acts cemented national ____________ responsibility for tackling poverty."
+          }
+        ],
+        "watch_out": "Keep your dates within 1558–88—focus main analytical paragraphs on the 1563, 1572, and 1576 Acts rather than the famous 1601 Poor Law.",
+        "prose_hash": "f7684f2eb4",
+        "prose_fp": "d02fcf1b",
+        "question_hash": "c898de3737"
+      }
+    ],
+    "lesson_3_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Solar latitude",
+            "bullet": "Brass astrolabes and steadier marine quadrants measured sun or Polaris angles → fixed north-south latitude offshore"
+          },
+          {
+            "hint": "Translated manuals",
+            "bullet": "Martin Cortes's translated 1561 navigation manual → spread Spanish astronomical techniques to English sea captains"
+          },
+          {
+            "hint": "1569 world map",
+            "bullet": "Mercator's 1569 flat grid map aligned latitude and longitude → allowed accurate straight-line compass plotting"
+          },
+          {
+            "hint": "Speed and bearing",
+            "bullet": "Magnetic compasses paired with knotted log-and-line ropes → measured ship speed for safer Atlantic crossings"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Printing accuracy",
+            "bullet": "Printed copperplate sea charts replaced hand-copied portolans → eliminated copying errors across English fleets"
+          },
+          {
+            "hint": "Oceanic ambition",
+            "bullet": "Breaking out of coastal European waters → enabled Hawkins, Frobisher, and Drake to brave open oceans"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FIXING LATITUDE",
+            "stem": "Sighting the midday sun or Polaris with ____________ and steadier ____________ allowed sailors to calculate latitude."
+          },
+          {
+            "badge": "ACCURATE CHARTS",
+            "stem": "In 1569, cartographer ____________ transformed ocean plotting by placing latitude and longitude on a flat ____________."
+          },
+          {
+            "badge": "SAFER CROSSINGS",
+            "stem": "Combining translated Spanish manuals with magnetic compasses and ____________ helped captains cross the ____________ more safely."
+          }
+        ],
+        "watch_out": "Astrolabes and quadrants measured north-south latitude only—Elizabethan sailors still could not measure east-west longitude accurately at sea.",
+        "prose_hash": "d7a9c87181",
+        "prose_fp": "da0c7b2f",
+        "question_hash": "a44e1e6da4"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Low sleek hulls",
+            "bullet": "Hawkins's race-built galleons lowered high medieval forecastles → cut wind drag and rode Atlantic gales safely"
+          },
+          {
+            "hint": "Expanded hold",
+            "bullet": "Longer, deeper hulls carried far larger food and water stores → sustained multi-year ocean voyages"
+          },
+          {
+            "hint": "Hybrid rigging",
+            "bullet": "Square mainsails gave downwind speed while triangular lateen sails → enabled sharp tacking into headwinds"
+          },
+          {
+            "hint": "Broadside gun decks",
+            "bullet": "Full-length decks mounted long-range bronze culverins → protected merchant explorers and overpowered Spanish treasure ships"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dual naval role",
+            "bullet": "Privateering galleons doubled as royal warships in crisis → formed the core fleet at Gravelines"
+          },
+          {
+            "hint": "Royal dockyard reforms",
+            "bullet": "Hawkins reformed Royal Navy dockyards from the 1570s → cut corruption and standardised durable ship construction"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HULL REDESIGN",
+            "stem": "Replacing top-heavy carracks from the 1570s, Hawkins's ____________ used longer, lower hulls to cut ____________ and hold..."
+          },
+          {
+            "badge": "SAIL VERSATILITY",
+            "stem": "Pairing large square sails with triangular ____________ on the mizzenmast let captains tack sharply against ____________."
+          },
+          {
+            "badge": "OCEAN FIREPOWER",
+            "stem": "Full-length gun decks carrying bronze ____________ gave English explorers both transoceanic endurance and devastating ____________."
+          }
+        ],
+        "watch_out": "Race-built galleons aided peaceful exploration as well as naval war—larger holds stored provisions needed to cross the Atlantic and Pacific.",
+        "prose_hash": "e2b0962499",
+        "prose_fp": "35c81468",
+        "question_hash": "4589913731"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Choked cloth trade",
+            "bullet": "Antwerp's market collapse and Spanish embargoes strangled wool exports → forced merchants to find non-Spanish markets"
+          },
+          {
+            "hint": "Joint-stock companies",
+            "bullet": "Investors pooled risk in royal charters → Muscovy and Levant Companies opened Russian and Ottoman trade"
+          },
+          {
+            "hint": "Triangular beginnings",
+            "bullet": "Hawkins sailed to West Africa from 1562 → seized enslaved captives to sell in Spanish colonies"
+          },
+          {
+            "hint": "Arctic quest",
+            "bullet": "Frobisher and Davis braved Arctic ice in 1576–87 → sought a Northwest Passage to Asia"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Iberian monopoly",
+            "bullet": "Spain and Portugal controlled southern routes round Africa and South America → pushed Englishmen northward"
+          },
+          {
+            "hint": "Domestic stability",
+            "bullet": "Diversifying beyond Flemish cloth markets → cushioned English weavers and Crown customs duties against Spanish embargoes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LOST CLOTH MARKET",
+            "stem": "When Spanish embargoes crippled cloth sales at ____________, London investors pooled capital inside chartered ____________."
+          },
+          {
+            "badge": "EASTERN CHARTERS",
+            "stem": "New monopolies such as the ____________ and ____________ imported Russian timber alongside rich Ottoman spices and silks."
+          },
+          {
+            "badge": "NORTHWEST QUEST",
+            "stem": "Meanwhile, explorers like ____________ and John Davis braved Arctic ice above Canada seeking a ____________ to Asia."
+          }
+        ],
+        "watch_out": "The East India Company received its royal charter in December 1600—for 1558–88 trade questions, cite the Muscovy, Eastland, and Levant Companies.",
+        "prose_hash": "886cbe6667",
+        "prose_fp": "dd66b57b",
+        "question_hash": "f2942617ef"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Secret backing",
+            "bullet": "Backed secretly by Elizabeth, Walsingham, and Dudley in 1577 → sought Pacific plunder and revenge"
+          },
+          {
+            "hint": "Southern strait gales",
+            "bullet": "Fierce gales battered five ships in the Strait of Magellan → only Golden Hind entered Pacific"
+          },
+          {
+            "hint": "Pacific treasure",
+            "bullet": "Raided unguarded Valparaíso and captured silver ship Cacafuego → seized vast Spanish bullion offshore"
+          },
+          {
+            "hint": "North America & spices",
+            "bullet": "Welcomed by Miwok locals, claimed Nova Albion in June 1579 → traded Moluccan cloves homeward"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1568 Mexican ambush",
+            "bullet": "Spain's 1568 ambush at San Juan de Ulúa → fuelled Drake's determination to raid Spanish silver"
+          },
+          {
+            "hint": "Unguarded coast",
+            "bullet": "Spanish Pacific ports expected zero English warships beyond South America → left treasure ships lightly defended"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PACIFIC ENTRY",
+            "stem": "Setting sail in December 1577 to avenge ____________, Drake lost four vessels before ____________ cleared the Strait of Magellan."
+          },
+          {
+            "badge": "SILVER & CALIFORNIA",
+            "stem": "After plundering Spanish ports and seizing the ____________, Drake landed in North America to claim ____________."
+          },
+          {
+            "badge": "GLOBAL RETURN",
+            "stem": "Trading for valuable cloves in the ____________, he rounded Africa and reached ____________ in September 1580."
+          }
+        ],
+        "watch_out": "Drake did not set out in 1577 intending to sail round the entire globe—he sailed west across the Pacific to avoid Spanish ambushes on his return.",
+        "prose_hash": "15fa586d82",
+        "prose_fp": "8761215d",
+        "question_hash": "800069df66"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Debt cleared",
+            "bullet": "£400,000 haul yielded a 4,700% investor profit → Elizabeth's share paid off England's entire national debt"
+          },
+          {
+            "hint": "Captured intelligence",
+            "bullet": "Stolen Spanish Pacific charts and Moluccan spice treaties → expanded English oceanic reach and trading ambitions"
+          },
+          {
+            "hint": "Colonial inspiration",
+            "bullet": "Claiming Nova Albion and proving English seamanship → directly inspired Raleigh's North American plans in Virginia"
+          },
+          {
+            "hint": "Public royal knighthood",
+            "bullet": "Elizabeth publicly knighted Drake aboard Golden Hind in April 1581 → outraged Philip II, hastening war"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Annexation of Portugal",
+            "bullet": "Philip II seized Portugal and its fleet in 1580 → made Elizabeth's 1581 provocation deeply risky"
+          },
+          {
+            "hint": "National morale",
+            "bullet": "First English captain to complete a circumnavigation → fostered fearless maritime confidence ahead of 1588"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CROWN FINANCES",
+            "stem": "Returning £400,000 in Spanish treasure delivered a ____________ profit and enabled Elizabeth to wipe out ____________."
+          },
+          {
+            "badge": "EMPIRE & CHARTS",
+            "stem": "Captured Pacific charts and the claim to ____________ directly encouraged ____________ to plan North American colonies."
+          },
+          {
+            "badge": "DIPLOMATIC RUPTURE",
+            "stem": "By staging Drake's public ____________ in April 1581, Elizabeth openly defied Philip II's ____________ monopoly."
+          }
+        ],
+        "watch_out": "Magellan's expedition had circumnavigated earlier in 1519–22—Drake was the first English captain to complete the voyage throughout, and only the second overall.",
+        "prose_hash": "1e770707db",
+        "prose_fp": "40e65a51",
+        "question_hash": "8b5b042a97"
+      }
+    ],
+    "lesson_3_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Six-year patent",
+            "bullet": "March 1584 royal patent granted Raleigh six years to settle North America → raised £40,000 privately"
+          },
+          {
+            "hint": "Reconnaissance mission",
+            "bullet": "Amadas and Barlowe explored Roanoke in 1584 → returned with glowing reports plus Manteo and Wanchese"
+          },
+          {
+            "hint": "Anti-Spanish base",
+            "bullet": "Hakluyt's 1584 Discourse on Western Planting → argued Virginia provided bases to raid Spanish treasure fleets"
+          },
+          {
+            "hint": "Economic self-sufficiency",
+            "bullet": "Promised naval timber, new raw materials, and Algonquian cloth buyers → cut reliance on European imports"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Half-brother's earlier voyage",
+            "bullet": "Humphrey Gilbert drowned returning from Newfoundland in 1583 → passed North American colonial ambition to Raleigh"
+          },
+          {
+            "hint": "Worsening Spanish ties",
+            "bullet": "1584 Treaty of Joinville allied Catholic France and Spain → made Atlantic naval bases urgent"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ROYAL BACKING",
+            "stem": "Granted a six-year ____________ in March 1584, ____________ raised £40,000 from investors and named the land ____________."
+          },
+          {
+            "badge": "ROANOKE RECONNAISSANCE",
+            "stem": "Fact-finding captains Amadas and Barlowe brought back ____________ alongside two Algonquian men, ____________ and Wanchese."
+          },
+          {
+            "badge": "HAKLUYT'S CASE",
+            "stem": "In Discourse on Western Planting, ____________ argued a colony would supply ship timber, buy cloth, and..."
+          }
+        ],
+        "watch_out": "Sir Walter Raleigh never set foot in Virginia himself—Elizabeth forbade her favourite courtier from risking the dangerous Atlantic voyage.",
+        "prose_hash": "2ded693cca",
+        "prose_fp": "7f32ead2",
+        "question_hash": "ea0f400809"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "All-male party",
+            "bullet": "Raleigh recruited 107 men with zero families → resembled a military garrison rather than permanent town"
+          },
+          {
+            "hint": "Divided command",
+            "bullet": "Fiery sea commander Grenville clashed bitterly with governor Ralph Lane → undermined discipline and unity"
+          },
+          {
+            "hint": "Unbalanced skills",
+            "bullet": "Half were soldiers and proud gentlemen chasing gold → refused heavy manual labour ashore"
+          },
+          {
+            "hint": "Missing artisans",
+            "bullet": "Acute shortage of farmers, masons, carpenters, and winter fishermen → left Roanoke unable to feed itself"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Valuable specialists",
+            "bullet": "Scientist Harriot and artist White learned Algonquian from Manteo → could not offset missing farmers"
+          },
+          {
+            "hint": "Spanish gold myth",
+            "bullet": "Stories of easy Aztec and Inca silver → lured greedy gentlemen ill-suited to frontier farming"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEADERSHIP RIFT",
+            "stem": "Divided from the start, sea commander ____________ clashed fiercely with land governor ____________ over colonial priorities."
+          },
+          {
+            "badge": "GOLD HUNTERS",
+            "stem": "Roughly half of the ____________ were soldiers and gentlemen seeking quick gold rather than working as ____________."
+          },
+          {
+            "badge": "FOOD VULNERABILITY",
+            "stem": "Lacking skilled ____________, masons, and winter fishermen meant the settlement could neither build shelter nor ____________."
+          }
+        ],
+        "watch_out": "Do not confuse the 1585 Roanoke expedition of 107 men under Ralph Lane with John White's 1587 family settlement of 118 men, women, and children.",
+        "prose_hash": "aed25b2eb9",
+        "prose_fp": "070d5afa",
+        "question_hash": "aeb165abf7"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Late departure",
+            "bullet": "Sailing from Plymouth on 9 April 1585 → arrived too late to plant spring English crops"
+          },
+          {
+            "hint": "Inlet sandbar grounding",
+            "bullet": "Flagship Tiger hit an Ocracoke sandbar → seawater ruined seed corn, salt, peas, and gunpowder"
+          },
+          {
+            "hint": "Reliance on locals",
+            "bullet": "Settlers relied on Native maize and woven Secotan fish traps → lacked skills to mend them"
+          },
+          {
+            "hint": "Deadly epidemics",
+            "bullet": "Unfamiliar European diseases killed villagers across Roanoke → bred deep Algonquian suspicion toward English demands"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Barrier coastline",
+            "bullet": "Shallow Outer Banks sandbars blocked deep-draught ships → revealed Roanoke Island's poor harbour choice"
+          },
+          {
+            "hint": "Damaged muskets",
+            "bullet": "Ruined gunpowder weakened hunting capacity → forced soldiers to beg or bully Native villages for food"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SANDBAR DISASTER",
+            "stem": "Already arriving too late for spring planting, the flagship ____________ hit a sandbar and flooded vital ____________."
+          },
+          {
+            "badge": "SKILL DEFICIT",
+            "stem": "Once Grenville sailed home, Lane's men depended on Algonquian maize and woven ____________ they could not..."
+          },
+          {
+            "badge": "GROWING MISTRUST",
+            "stem": "Deadly outbreaks of ____________ inside local villages deepened Native suspicion just as English food demands rose."
+          }
+        ],
+        "watch_out": "The flagship Tiger was flooded on a sandbar, not sunk to the seabed—losing its dry seed corn and salt crippled the colony's self-sufficiency.",
+        "prose_hash": "c13b2e9bb1",
+        "prose_fp": "3bc0fc4b",
+        "question_hash": "185a99c09e"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Missing silver cup",
+            "bullet": "Grenville burned Aquascogoc village in July 1585 over one silver cup → poisoned early Secotan goodwill"
+          },
+          {
+            "hint": "Drought resistance",
+            "bullet": "Spring 1586 drought left Secotan families hungry → Chief Wingina halted maize trade and rallied tribes"
+          },
+          {
+            "hint": "Pre-emptive parley trap",
+            "bullet": "Lane staged a pre-emptive parley ambush on 1 June 1586 → killed Wingina but alienated neighbours"
+          },
+          {
+            "hint": "Total food blockade",
+            "bullet": "Algonquians severed all food supplies immediately → starving colonists evacuated on 18 June aboard Drake's fleet"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Caribbean detour",
+            "bullet": "Drake stopped at Roanoke after raiding Spanish Caribbean ports → offered sudden rescue before Grenville's resupply"
+          },
+          {
+            "hint": "Military mindset",
+            "bullet": "Lane treated Roanoke like an Irish garrison → used lethal force instead of patient diplomacy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BROKEN RELATIONS",
+            "stem": "Poisoned early when Grenville burned ____________ over a silver cup, relations collapsed during a severe spring ____________."
+          },
+          {
+            "badge": "FATAL AMBUSH",
+            "stem": "Fearing attack after ____________ halted maize handouts, Governor Lane killed the Secotan leader at ____________."
+          },
+          {
+            "badge": "EMERGENCY FLIGHT",
+            "stem": "Cut off from every Native food source, starving settlers abandoned Roanoke on 18 June aboard ____________'s ships."
+          }
+        ],
+        "watch_out": "Killing Chief Wingina did not secure English control—because colonists could not grow or catch their own food, Native boycotts forced immediate evacuation.",
+        "prose_hash": "a167025e62",
+        "prose_fp": "e6b382b3",
+        "question_hash": "5a4ab0e1e8"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Misplaced landing",
+            "bullet": "118 family settlers aimed for Chesapeake Bay → pilot Simon Fernandez landed them back on Roanoke"
+          },
+          {
+            "hint": "Urgent resupply",
+            "bullet": "Colonist George Howe's death exposed hostility → settlers sent John White home for supplies in August"
+          },
+          {
+            "hint": "Naval requisition",
+            "bullet": "Elizabeth requisitioned every seaworthy English ship against the 1588 Armada → barred White from sailing back"
+          },
+          {
+            "hint": "Deserted post",
+            "bullet": "Three-year delay meant White returned only in August 1590 → found Roanoke empty save carved CROATOAN"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Structural lesson",
+            "bullet": "Private investor funding proved too fragile during national war → guided permanent Jamestown planning after 1607"
+          },
+          {
+            "hint": "Scientific legacy",
+            "bullet": "Harriot's Brief and True Report and White's watercolours → preserved priceless Algonquian knowledge for future colonists"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WRONG DESTINATION",
+            "stem": "Instead of reaching deep-water ____________, pilot Simon Fernandez landed ____________'s 118 men, women, and children on Roanoke."
+          },
+          {
+            "badge": "ARMADA EMBARGO",
+            "stem": "When White returned to England for supplies in August 1587, the approaching ____________ kept every ship at home."
+          },
+          {
+            "badge": "MYSTERIOUS FATE",
+            "stem": "Delayed for three crucial years until ____________, White found the settlement deserted with ____________ carved on a post."
+          }
+        ],
+        "watch_out": "John White did not abandon his granddaughter Virginia Dare willingly—Elizabeth's royal shipping ban during the 1588 Armada crisis trapped his relief vessels in port.",
+        "prose_hash": "3d858144bb",
+        "prose_fp": "400a9f5e",
+        "question_hash": "5af7977b28"
+      }
+    ]
+  }
+}

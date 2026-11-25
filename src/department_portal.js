@@ -659,7 +659,12 @@ function renderActivePortalTab() {
 function renderTrackerTab(container) {
   const pillLink = (href, label, bg, color, border, title = '') => {
     if (!href) return '';
-    return `<a href="${href}" target="_blank" title="${title || label}" style="display:inline-flex;align-items:center;gap:4px;font-size:0.74rem;font-weight:700;padding:3px 8px;border-radius:5px;text-decoration:none;background:${bg};color:${color};border:1px solid ${border};white-space:nowrap;">${label}</a>`;
+    const cleanTitle = String(title || label)
+      .replace(/<[^>]+>/g, ' ')
+      .replace(/\s+/g, ' ')
+      .replace(/"/g, '&quot;')
+      .trim();
+    return `<a href="${href}" target="_blank" title="${cleanTitle}" style="display:inline-flex;align-items:center;gap:4px;font-size:0.74rem;font-weight:700;padding:3px 8px;border-radius:5px;text-decoration:none;background:${bg};color:${color};border:1px solid ${border};white-space:nowrap;">${label}</a>`;
   };
 
   container.innerHTML = `
@@ -713,15 +718,18 @@ function renderTrackerTab(container) {
                 }
               }
 
-              // Build Textbook links across all Editions / Key Topics or single unit
+              // Build Textbook links across all Editions / Key Topics or single unit + 2-Page Flipbook Reader launcher
               const tbPills = [];
               if (cat.textbook && Array.isArray(cat.textbook.editions) && cat.textbook.editions.length > 0) {
+                const firstKt = cat.textbook.editions[0].id || 'KT1';
+                tbPills.push(`<button type="button" onclick="if(window.openDigitalTextbookReader){window.openDigitalTextbookReader('${u.uid}', '${firstKt}', 0);}else if(window.switchView){window.switchView('reader', '${u.uid}:${firstKt}:0');}" title="Launch Interactive 2-Page Flipbook Reader" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; border-radius: 5px; font-size: 0.72rem; font-weight: 800; background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; cursor: pointer; white-space: nowrap;"><i class="fa-solid fa-book-open-reader"></i> Flipbook</button>`);
                 cat.textbook.editions.forEach((ed) => {
                   const shortCode = ed.id === 'western_front' ? 'WF' : ed.id === '18th_19th' ? 'Era 3' : ed.id === 'medieval' ? 'Era 1' : ed.id === 'renaissance' ? 'Era 2' : ed.id === 'modern' ? 'Era 4' : ed.id;
                   const href = ed.pdfUrl && isVerifiedPdf(ed.pdfUrl) ? ed.pdfUrl : ed.htmlUrl;
                   tbPills.push(pillLink(href, `<i class="fa-solid fa-book-open"></i> ${shortCode}`, '#f8fafc', '#0f172a', '#cbd5e1', ed.label));
                 });
               } else if (cat.textbook) {
+                tbPills.push(`<button type="button" onclick="if(window.openDigitalTextbookReader){window.openDigitalTextbookReader('${u.uid}', 'MAIN', 0);}else if(window.switchView){window.switchView('reader', '${u.uid}:MAIN:0');}" title="Launch Interactive 2-Page Flipbook Reader" style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; border-radius: 5px; font-size: 0.72rem; font-weight: 800; background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; cursor: pointer; white-space: nowrap;"><i class="fa-solid fa-book-open-reader"></i> Flipbook</button>`);
                 const href = cat.textbook.pdfUrl && isVerifiedPdf(cat.textbook.pdfUrl) ? cat.textbook.pdfUrl : cat.textbook.htmlUrl;
                 tbPills.push(pillLink(href, `<i class="fa-solid fa-book-open"></i> Textbook (${cat.textbook.pages || 'PDF'})`, '#f8fafc', '#0f172a', '#cbd5e1'));
               }

@@ -1,0 +1,1367 @@
+{
+  "unit_id": "great_war",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Political doctrine",
+            "bullet": "Bismarck’s 1862 Blood and Iron speech prioritised armed force over parliamentary debate → drove unification"
+          },
+          {
+            "hint": "Industrial weaponry",
+            "bullet": "Modern railways and breech-loading Krupp steel guns → gave Prussian armies rapid, lethal firepower"
+          },
+          {
+            "hint": "Northern rivals",
+            "bullet": "Prussia outgunned Denmark and rival Austria → secured unchallenged dominance across Northern Germany"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Customs union",
+            "bullet": "Prussia’s Zollverein trade zone excluded Austria → bound German states economically to Berlin before war"
+          },
+          {
+            "hint": "Fragmented map",
+            "bullet": "Thirty-nine separate German states lacked central authority → enabled industrial Prussia to reshape Central Europe"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOCTRINE SHIFT",
+            "stem": "Rejecting peaceful debate in 1862, ____________ argued that ____________ alone would unite the fragmented German states."
+          },
+          {
+            "badge": "MILITARY EDGE",
+            "stem": "Equipped with ____________ railways and breech-loading ____________ artillery, Prussian forces rapidly outmatched traditional armies."
+          },
+          {
+            "badge": "REGIONAL SUPREMACY",
+            "stem": "Victories over ____________ and ____________ left Prussia as the unchallenged master of Northern Germany."
+          }
+        ],
+        "watch_out": "Prussia was the leading northern German kingdom that unified Germany—do not confuse Prussia with Tsarist Russia.",
+        "prose_hash": "370e64c585",
+        "prose_fp": "6c73c361",
+        "question_hash": "797f6def17"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Southern kingdoms",
+            "bullet": "Bismarck provoked war with France in July 1870 → rallied independent southern German states together"
+          },
+          {
+            "hint": "Military encirclement",
+            "bullet": "Prussian forces trapped Emperor Napoleon III and 80,000 French troops at Sedan → toppled regime"
+          },
+          {
+            "hint": "Imperial coronation",
+            "bullet": "German princes crowned Kaiser Wilhelm I inside Versailles in January 1871 → forged unified Reich"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Balance overturned",
+            "bullet": "Unified Germany replaced France as mainland Europe’s leading industrial and military superpower"
+          },
+          {
+            "hint": "Symbolic venue",
+            "bullet": "Proclaiming the Reich inside France’s royal Hall of Mirrors → deepened lasting French national humiliation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NATIONAL RALLY",
+            "stem": "By provoking conflict with France in July 1870, Bismarck persuaded ____________ to join Prussia."
+          },
+          {
+            "badge": "DECISIVE ENCIRCLEMENT",
+            "stem": "Trapping ____________ alongside ____________ soldiers at Sedan shattered France’s imperial government."
+          },
+          {
+            "badge": "IMPERIAL BIRTH",
+            "stem": "On 18 January 1871, German princes proclaimed ____________ inside Versailles, transforming Europe’s power balance."
+          }
+        ],
+        "watch_out": "Kaiser Wilhelm I was crowned inside France’s Palace of Versailles in 1871—not in Berlin, making French humiliation deliberate.",
+        "prose_hash": "e3d8c44cc1",
+        "prose_fp": "862b7d26",
+        "question_hash": "d4946abf9e"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "War indemnity",
+            "bullet": "France had to pay 5 billion gold francs → crippled French state finances after defeat"
+          },
+          {
+            "hint": "Military occupation",
+            "bullet": "German troops occupied French cities until full payment → served as a daily national humiliation"
+          },
+          {
+            "hint": "Border annexation",
+            "bullet": "Germany seized coal- and iron-rich Alsace-Lorraine → stripped France of vital border land and industry"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Generational grievance",
+            "bullet": "Punitive Frankfurt terms poisoned Franco-German diplomacy for forty years → blocked peaceful reconciliation"
+          },
+          {
+            "hint": "Strategic frontier",
+            "bullet": "Control of Metz and frontier passes → pushed German armies closer to the French heartland"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FINANCIAL PENALTY",
+            "stem": "Under the punitive 1871 settlement, German occupation soldiers stayed in French cities until ____________ was paid."
+          },
+          {
+            "badge": "RESOURCE LOSS",
+            "stem": "Annexing the border provinces of ____________ cost France valuable ____________ reserves alongside loyal citizens."
+          },
+          {
+            "badge": "LONG-TERM LEGACY",
+            "stem": "Rather than securing lasting peace, these harsh terms poisoned ____________ for the next four decades."
+          }
+        ],
+        "watch_out": "Do not confuse the 1871 Treaty of Frankfurt with the 1919 Treaty of Versailles—Frankfurt punished France after 1870.",
+        "prose_hash": "339e1a205a",
+        "prose_fp": "0eb3c2cd",
+        "question_hash": "a2e7b7d4d8"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Classroom mourning",
+            "bullet": "Primary teachers draped Alsace-Lorraine in black crepe on wall maps → kept loss visible daily"
+          },
+          {
+            "hint": "Patriotic schooling",
+            "bullet": "French pupils were taught to mourn lost provinces → raised a generation hungry for revenge"
+          },
+          {
+            "hint": "Mass call-up",
+            "bullet": "Universal conscription at age twenty → trained millions of young Frenchmen for future continental war"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Treaty root",
+            "bullet": "Anger over the 1871 Treaty of Frankfurt → turned reclaiming Alsace-Lorraine into a sacred duty"
+          },
+          {
+            "hint": "Standing reserves",
+            "bullet": "Mass peacetime conscription across Europe → ensured any future diplomatic clash involved million-man armies"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLASSROOM RITUAL",
+            "stem": "Every morning in French primary schools, maps of the eastern border were veiled in ____________ to mourn lost land."
+          },
+          {
+            "badge": "PATRIOTIC MINDSET",
+            "stem": "Growing up under the cult of revanche, pupils viewed liberating ____________ as their patriotic duty."
+          },
+          {
+            "badge": "CITIZEN ARMY",
+            "stem": "Enforcing universal ____________ for men aged ____________ built a vast reserve trained for continental war."
+          }
+        ],
+        "watch_out": "Revanche means national vengeance and recovery of lost territory—do not confuse it with internal political revolution.",
+        "prose_hash": "71d319f69b",
+        "prose_fp": "cc9c7138",
+        "question_hash": "51fc839e3b"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Strategic nightmare",
+            "bullet": "Bismarck dreaded a two-front war against France in the west and Russia in the east"
+          },
+          {
+            "hint": "Secret pact",
+            "bullet": "The secret 1887 Reinsurance Treaty with Tsarist Russia → pledged mutual neutrality in major wars"
+          },
+          {
+            "hint": "French isolation",
+            "bullet": "Keeping St Petersburg tied to Berlin → denied vengeful France any powerful continental ally"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Austrian tie",
+            "bullet": "Bismarck already held the 1879 Dual Alliance with Austria-Hungary → balanced rival eastern empires carefully"
+          },
+          {
+            "hint": "Post-1890 reversal",
+            "bullet": "Dropping this Russian treaty after Bismarck’s 1890 dismissal → drove Russia straight into French arms"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STRATEGIC DREAD",
+            "stem": "Haunted by the prospect of fighting on ____________ simultaneously, Bismarck prioritised cautious continental diplomacy."
+          },
+          {
+            "badge": "NEUTRALITY PACT",
+            "stem": "Negotiating the secret 1887 ____________ secured Russian ____________ if France attacked Germany."
+          },
+          {
+            "badge": "DIPLOMATIC GOAL",
+            "stem": "Preventing a Franco-Russian partnership kept ____________ isolated and unable to wage a war of revanche."
+          }
+        ],
+        "watch_out": "The 1887 Reinsurance Treaty promised neutrality rather than joint invasion—Bismarck wanted peace to protect Germany’s 1871 gains.",
+        "prose_hash": "45cd8d37cb",
+        "prose_fp": "28724430",
+        "question_hash": "a29d893c4e"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Industrial resources",
+            "bullet": "Industrial powers craved rubber, copper, palm oil, and cotton → fuelled fierce competition in Africa"
+          },
+          {
+            "hint": "Preventing war",
+            "bullet": "Bismarck hosted the 1884 Berlin Conference → set agreed rules to stop rival Europeans clashing"
+          },
+          {
+            "hint": "Conquest surge",
+            "bullet": "Demanding proof of effective occupation on the ground → triggered a rapid race inland"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Zero African voice",
+            "bullet": "Zero African rulers were invited to Berlin → arbitrary colonial borders carved through existing kingdoms"
+          },
+          {
+            "hint": "Bismarck’s motive",
+            "bullet": "Bismarck encouraged French colonial expansion overseas → distracted Paris from mourning lost Alsace-Lorraine"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ECONOMIC HUNGER",
+            "stem": "Hungry for industrial raw materials such as ____________, European powers raced to claim African territory."
+          },
+          {
+            "badge": "DIPLOMATIC SUMMIT",
+            "stem": "Hosting the 1884 ____________ allowed Bismarck to regulate colonial claims before rival empires fought."
+          },
+          {
+            "badge": "UNINTENDED RUSH",
+            "stem": "Insisting on proof of ____________ forced European armies to march rapidly into the African interior."
+          }
+        ],
+        "watch_out": "Bismarck hosted the 1884 Berlin Conference to prevent European colonial wars—not to grab the largest empire for Germany.",
+        "prose_hash": "b070bafb46",
+        "prose_fp": "60ba4bda",
+        "question_hash": "e43afda737"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Generational clash",
+            "bullet": "Young Kaiser Wilhelm II dismissed Bismarck in 1890 → scrapped cautious European balance-of-power diplomacy"
+          },
+          {
+            "hint": "Imperial envy",
+            "bullet": "Wilhelm envied vast British and French empires → demanded Germany’s own place in the sun"
+          },
+          {
+            "hint": "Global ambition",
+            "bullet": "Pursuing Weltpolitik across Africa and Asia → required colonies and a fleet rivalling Britain"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lapsed treaty",
+            "bullet": "Wilhelm let the 1887 Reinsurance Treaty expire in 1890 → freed Russia to ally with France"
+          },
+          {
+            "hint": "Industrial might",
+            "bullet": "Surging German steel and coal output after 1871 → emboldened Berlin to demand world-power status"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NEW DIRECTION",
+            "stem": "Dismissing cautious veteran ____________ in 1890, twenty-nine-year-old Wilhelm II steered Germany toward aggressive global expansion."
+          },
+          {
+            "badge": "IMPERIAL JEALOUSY",
+            "stem": "Envious of British and French territories, Berlin demanded ____________ through its assertive new ____________ strategy."
+          },
+          {
+            "badge": "MARITIME CONSEQUENCE",
+            "stem": "Acquiring distant colonies across Africa and the Pacific meant building ____________ that alarmed Great Britain."
+          }
+        ],
+        "watch_out": "Bismarck wanted to keep Germany safe inside Europe, whereas Wilhelm II’s Weltpolitik chased overseas colonies and naval prestige.",
+        "prose_hash": "28a9dffbbe",
+        "prose_fp": "81c259fa",
+        "question_hash": "957b9a9fa9"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Theatrical stunt",
+            "bullet": "Wilhelm paraded through Tangier backing Moroccan independence → directly challenged French control in North Africa"
+          },
+          {
+            "hint": "Alliance test",
+            "bullet": "Berlin probed the 1904 Entente Cordiale → tested whether Britain would truly defend French interests"
+          },
+          {
+            "hint": "Diplomatic wedge",
+            "bullet": "Humiliating Paris publicly aimed to shatter the Anglo-French partnership → leave France isolated again"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Colonial bargain",
+            "bullet": "Under the 1904 Entente Cordiale, Britain backed France in Morocco in return for Egypt"
+          },
+          {
+            "hint": "Russian distraction",
+            "bullet": "France’s ally Russia was reeling from defeat against Japan in 1905 → emboldened Wilhelm’s gamble"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CALCULATED PROVOCATION",
+            "stem": "Landing unannounced in March 1905, Wilhelm declared support for ____________ to block French expansion."
+          },
+          {
+            "badge": "TESTING LONDON",
+            "stem": "Berlin staged this North African crisis to see if ____________ would stand by the 1904 ____________."
+          },
+          {
+            "badge": "STRATEGIC AIM",
+            "stem": "Forcing France to back down was meant to humiliate Paris and split ____________ apart."
+          }
+        ],
+        "watch_out": "Wilhelm II did not care genuinely about Moroccan freedom—he used Tangier as a diplomatic wedge against the Entente Cordiale.",
+        "prose_hash": "2f510379d2",
+        "prose_fp": "eca3cde4",
+        "question_hash": "8ab534df80"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Summit vote",
+            "bullet": "Twelve nations outvoted Germany at Algeciras, leaving only Austria-Hungary loyal → exposed Berlin’s diplomatic isolation"
+          },
+          {
+            "hint": "Staff talks",
+            "bullet": "Britain backed France resolutely and opened secret joint military talks → turned friendship into defence planning"
+          },
+          {
+            "hint": "Encirclement fear",
+            "bullet": "Bullying tactics strengthened the Entente instead of splitting it → heightened German fears of encirclement"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unreliable ally",
+            "bullet": "Even Triple Alliance partner Italy voted against Berlin at Algeciras → exposed cracks in Germany’s bloc"
+          },
+          {
+            "hint": "Russian rapprochement",
+            "bullet": "Shared alarm over German aggression → encouraged Britain and Russia to sign their 1907 Entente"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SUMMIT ISOLATION",
+            "stem": "Outvoted by ____________ at the Spanish summit, Germany found itself backed only by ____________."
+          },
+          {
+            "badge": "DEFENCE COORDINATION",
+            "stem": "Rather than abandoning Paris, London initiated secret ____________ to prepare for potential continental war."
+          },
+          {
+            "badge": "DIPLOMATIC BOOMERANG",
+            "stem": "Wilhelm’s Tangier gamble backfired by cementing Anglo-French ties and deepening German dread of ____________."
+          }
+        ],
+        "watch_out": "The 1904 Entente Cordiale was originally a colonial friendship—German bullying at Algeciras turned it into secret military planning.",
+        "prose_hash": "89f3c88247",
+        "prose_fp": "1c145508",
+        "question_hash": "8cc91a9dbc"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Atlantic threat",
+            "bullet": "Anchoring SMS Panther at Agadir → sparked British fears of a German Atlantic naval base"
+          },
+          {
+            "hint": "Mansion House",
+            "bullet": "Chancellor David Lloyd George publicly warned Berlin → declared Britain would fight rather than yield"
+          },
+          {
+            "hint": "Naval coordination",
+            "bullet": "Germany retreated in humiliation → pushed Britain and France into joint wartime naval planning"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shipping lanes",
+            "bullet": "A German port on Morocco’s Atlantic coast → threatened vital British food and imperial trade routes"
+          },
+          {
+            "hint": "Repeat miscalculation",
+            "bullet": "Like the 1905 Tangier stunt, gunboat diplomacy at Agadir → tightened rather than broke Anglo-French unity"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MARITIME ALARM",
+            "stem": "Anchoring the warship ____________ at Agadir convinced Whitehall that Berlin wanted ____________ on the Atlantic."
+          },
+          {
+            "badge": "PUBLIC WARNING",
+            "stem": "Through his fiery ____________ speech, ____________ signalled that Britain would risk war alongside France."
+          },
+          {
+            "badge": "STRATEGIC FALLOUT",
+            "stem": "Forced into a humiliating climbdown, Berlin watched London and Paris coordinate ____________ for future war."
+          }
+        ],
+        "watch_out": "Do not mix up the two Moroccan crises—Tangier in 1905 involved the Kaiser’s visit, whereas Agadir in 1911 involved SMS Panther.",
+        "prose_hash": "f785ab4583",
+        "prose_fp": "33808101",
+        "question_hash": "f3c59d3be5"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Food imports",
+            "bullet": "Ships carried over sixty percent of Britain’s food → enemy blockade meant rapid civilian starvation"
+          },
+          {
+            "hint": "Statutory benchmark",
+            "bullet": "Parliament’s 1889 law required outmatching French and Russian fleets combined → locked in maritime supremacy"
+          },
+          {
+            "hint": "Imperial lifelines",
+            "bullet": "Unchallenged Royal Navy power protected global merchant shipping lanes → linked distant colonies to Britain"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Small army",
+            "bullet": "Unlike conscript continental powers, island Britain kept a small army → relied on warships against invasion"
+          },
+          {
+            "hint": "Traditional rivals",
+            "bullet": "In 1889 Britain feared French and Russian navies → German dreadnoughts later overturned those calculations"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ISLAND VULNERABILITY",
+            "stem": "Importing over ____________ of its food by sea meant an enemy blockade would starve British civilians."
+          },
+          {
+            "badge": "LEGAL BENCHMARK",
+            "stem": "Codifying the ____________ in 1889 forced the Royal Navy to outmatch ____________ and ____________ combined."
+          },
+          {
+            "badge": "GLOBAL LIFELINES",
+            "stem": "Commanding the oceans safeguarded ____________ lanes connecting Britain to its worldwide empire."
+          }
+        ],
+        "watch_out": "In 1889 the Two-Power Standard targeted France and Russia—Germany had not yet begun building its High Seas Fleet.",
+        "prose_hash": "8268659ef4",
+        "prose_fp": "a58d94f7",
+        "question_hash": "bb98d4926f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Reichstag laws",
+            "bullet": "Tirpitz’s 1898 and 1900 Naval Laws funded a High Seas Fleet → challenged British maritime supremacy"
+          },
+          {
+            "hint": "Strategic gamble",
+            "bullet": "Risk Theory aimed to inflict heavy battle losses → scare Britain into diplomatic neutrality"
+          },
+          {
+            "hint": "Home waters",
+            "bullet": "Concentrating German battleships in North Sea ports → directly menaced Britain’s coastline and survival"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Weltpolitik tool",
+            "bullet": "Kaiser Wilhelm II backed Tirpitz’s battleships → sought naval leverage for Germany’s place in the sun"
+          },
+          {
+            "hint": "Diplomatic backfire",
+            "bullet": "Instead of intimidating London into neutrality, German shipbuilding → drove Britain toward France and Russia"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FLEET EXPANSION",
+            "stem": "Steering Naval Laws through the Reichstag in 1898, ____________ began constructing a powerful ____________."
+          },
+          {
+            "badge": "DETERRENCE GAMBLE",
+            "stem": "According to ____________, making any naval clash too costly would bully Britain into ____________."
+          },
+          {
+            "badge": "NORTH SEA MENACE",
+            "stem": "Massing modern German battleships directly across the ____________ convinced London its home waters faced danger."
+          }
+        ],
+        "watch_out": "Tirpitz’s Risk Theory did not need a fleet larger than Britain’s—only one strong enough to cripple Royal Navy global dominance.",
+        "prose_hash": "1d05064bfb",
+        "prose_fp": "0d5fa3e0",
+        "question_hash": "2076840e23"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Technological leap",
+            "bullet": "Ten 12-inch guns and fast steam turbines → outgunned and outran every existing warship afloat"
+          },
+          {
+            "hint": "Instant obsolescence",
+            "bullet": "Revolutionary design made older pre-dreadnought battleships obsolete overnight → erased Britain’s huge numerical cushion"
+          },
+          {
+            "hint": "Reset scoreboard",
+            "bullet": "Starting the dreadnought count near zero → allowed Germany’s shipyards to compete on equal terms"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Kiel Canal",
+            "bullet": "Germany widened the Kiel Canal for giant dreadnoughts → moved warships safely between Baltic and North seas"
+          },
+          {
+            "hint": "Escalating budgets",
+            "bullet": "Restarting the battleship race from scratch → triggered soaring defence taxes across both empires"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REVOLUTIONARY DESIGN",
+            "stem": "Designed under First Sea Lord ____________, HMS Dreadnought combined ____________ guns with fast ____________ engines."
+          },
+          {
+            "badge": "OBSOLETE FLEETS",
+            "stem": "Making every older battleship outdated overnight meant Britain lost its massive lead in ____________ vessels."
+          },
+          {
+            "badge": "LEVEL PLAYING FIELD",
+            "stem": "With the naval scoreboard reset in 1906, ____________ could now race Britain almost from scratch."
+          }
+        ],
+        "watch_out": "HMS Dreadnought was a triumph of British engineering, yet strategically it helped Germany by making Britain’s older fleet obsolete.",
+        "prose_hash": "a7712a9629",
+        "prose_fp": "7210c605",
+        "question_hash": "a9bf7f1b8d"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Shipyard scare",
+            "bullet": "Intelligence reports warned of accelerating German yards → sparked fears of secret Baltic battleship building"
+          },
+          {
+            "hint": "Press hysteria",
+            "bullet": "Sensational newspaper headlines whipped up invasion panic → crowds demanded immediate government naval spending"
+          },
+          {
+            "hint": "Cabinet decision",
+            "bullet": "Public pressure forced Parliament to fund eight new dreadnoughts in 1909 → preserved Britain’s lead"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Dreadnought reset",
+            "bullet": "Because 1906 wiped out Britain’s older fleet margin → even small German gains terrified voters"
+          },
+          {
+            "hint": "Hostile public",
+            "bullet": "Popular naval rallies turned ordinary British voters against Germany → narrowed room for peaceful compromise"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INTELLIGENCE ALARM",
+            "stem": "Reports of accelerating German shipyards left British voters fearing ____________ along the Baltic coast."
+          },
+          {
+            "badge": "POPULAR PRESSURE",
+            "stem": "Whipped up by ____________, marching crowds demanded the government lay down ____________ immediately."
+          },
+          {
+            "badge": "POLITICAL OUTCOME",
+            "stem": "Bowing to fierce public outcry in 1909, Parliament funded the warships needed to preserve ____________."
+          }
+        ],
+        "watch_out": "The slogan demanding eight meant laying down eight new dreadnought battleships in one year—originally the Cabinet wanted only four.",
+        "prose_hash": "05efcf8e5e",
+        "prose_fp": "7fb7868c",
+        "question_hash": "3a914138df"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "British offer",
+            "bullet": "Haldane offered colonial territory in Africa → hoped Berlin would slow down dreadnought construction"
+          },
+          {
+            "hint": "Neutrality demand",
+            "bullet": "Wilhelm and Tirpitz demanded unconditional British neutrality in Europe → unacceptable price that killed talks"
+          },
+          {
+            "hint": "Fleet redeployment",
+            "bullet": "Britain recalled Mediterranean battleships to guard the North Sea → prepared directly for German war"
+          }
+        ],
+        "context": [
+          {
+            "hint": "French reliance",
+            "bullet": "Leaving France’s fleet to guard the Mediterranean → created a moral obligation to protect France’s Channel coast"
+          },
+          {
+            "hint": "Post-Agadir distrust",
+            "bullet": "Coming just months after the 1911 Agadir gunboat crisis → deep mutual suspicion doomed compromise"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DIPLOMATIC OFFER",
+            "stem": "Travelling to Berlin in 1912, Lord Haldane traded ____________ in exchange for slower German shipbuilding."
+          },
+          {
+            "badge": "DEAL BREAKER",
+            "stem": "Negotiations collapsed when Kaiser Wilhelm and Tirpitz demanded a pledge of ____________ before halting warships."
+          },
+          {
+            "badge": "NORTH SEA SHIFT",
+            "stem": "After talks failed, the Admiralty pulled battleships back from ____________ to defend home waters."
+          }
+        ],
+        "watch_out": "Accepting Germany’s neutrality demand in 1912 would have forced Britain to abandon France and Russia if Germany attacked them.",
+        "prose_hash": "99b5c4573c",
+        "prose_fp": "6914f86d",
+        "question_hash": "8ffc878e5e"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Russian threat",
+            "bullet": "Germany and Austria-Hungary signed the 1879 Dual Alliance → deterred Russian expansion in Eastern Europe"
+          },
+          {
+            "hint": "Italian entry",
+            "bullet": "Italy joined Berlin and Vienna in 1882 → expanded the pact into the Triple Alliance"
+          },
+          {
+            "hint": "Mutual defence",
+            "bullet": "Guaranteed military aid if attacked → split mainland Europe into armed, suspicious power blocs"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Isolating France",
+            "bullet": "Bismarck built this central coalition after 1871 → denied vengeful France potential continental partners"
+          },
+          {
+            "hint": "Fragile link",
+            "bullet": "Italy still coveted Austrian-held border lands → remained the weakest, least reliable member in 1914"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EASTERN SHIELD",
+            "stem": "Forging the 1879 Dual Alliance allowed Berlin and Vienna to counter ____________ ambitions in the Balkans."
+          },
+          {
+            "badge": "EXPANDED COALITION",
+            "stem": "When ____________ joined in 1882, Central Europe united inside the defensive ____________."
+          },
+          {
+            "badge": "CONTINENTAL SPLIT",
+            "stem": "Binding three empires through promises of ____________ began dividing Europe into rival armed camps."
+          }
+        ],
+        "watch_out": "Although Italy joined the Triple Alliance in 1882, Italy stayed neutral in August 1914 because Austria attacked Serbia first.",
+        "prose_hash": "e3dde926a8",
+        "prose_fp": "0531aae3",
+        "question_hash": "9df7b75646"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Railway loans",
+            "bullet": "French loans funded Russian factories and border railways → sealed the 1894 Franco-Russian Military Alliance"
+          },
+          {
+            "hint": "Colonial truce",
+            "bullet": "Settling overseas disputes in the 1904 Entente Cordiale → ended centuries of Anglo-French hostility"
+          },
+          {
+            "hint": "Completed triangle",
+            "bullet": "Britain and Russia resolved Asian rivalries in 1907 → completed the rival Triple Entente"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Bismarck’s nightmare",
+            "bullet": "Allowing the 1887 Reinsurance Treaty to lapse → trapped Germany between allied eastern and western neighbours"
+          },
+          {
+            "hint": "German catalyst",
+            "bullet": "Wilhelm’s Weltpolitik, Tangier stunt, and Tirpitz’s fleet → drove former rivals Britain, France, and Russia together"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FINANCIAL DIPLOMACY",
+            "stem": "Once Berlin dropped its Russian treaty, Paris invested heavily in ____________ to secure the 1894 alliance."
+          },
+          {
+            "badge": "OVERSEAS SETTLEMENT",
+            "stem": "Resolving colonial friction through the 1904 ____________ aligned Great Britain with the French Republic."
+          },
+          {
+            "badge": "COUNTERWEIGHT FORMED",
+            "stem": "Adding the 1907 Anglo-Russian agreement completed the ____________, surrounding the Central Powers."
+          }
+        ],
+        "watch_out": "Unlike the Franco-Russian treaty, Britain’s 1904 and 1907 Ententes were friendly understandings rather than automatic military alliances.",
+        "prose_hash": "e5263eea58",
+        "prose_fp": "c73d8511",
+        "question_hash": "611ba48634"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Power vacuum",
+            "bullet": "Collapsing Ottoman Turkish rule left a power vacuum → young Balkan states fought over territory"
+          },
+          {
+            "hint": "Slavic solidarity",
+            "bullet": "Orthodox Slavic peoples sought national freedom → looked to independent Serbia and protector Russia"
+          },
+          {
+            "hint": "Imperial collision",
+            "bullet": "Expansionist Austria-Hungary clashed directly with Tsarist Russia → turned local disputes into great-power flashpoints"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Multi-ethnic fragility",
+            "bullet": "Slavic nationalism threatened to tear multi-ethnic Austria-Hungary apart → made Vienna desperate to contain Serbia"
+          },
+          {
+            "hint": "Chain-reaction risk",
+            "bullet": "Because Russia and Austria belonged to rival alliances → any Balkan spark risked continental war"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CRUMBLING EMPIRE",
+            "stem": "As the ancient ____________ retreated from south-eastern Europe, rival young nations battled for freed land."
+          },
+          {
+            "badge": "SLAVIC ASPIRATIONS",
+            "stem": "Millions of Orthodox Slavs looked toward ____________ and ____________ to champion their national independence."
+          },
+          {
+            "badge": "RIVAL HEGEMONS",
+            "stem": "Competing ambitions between ____________ and ____________ turned the unstable peninsula into Europe’s powder keg."
+          }
+        ],
+        "watch_out": "Austria-Hungary feared Slav nationalism because millions of Slavs lived inside its own borders—not merely outside them.",
+        "prose_hash": "0c13bba791",
+        "prose_fp": "b192d2fc",
+        "question_hash": "e9902cedec"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Shattered dream",
+            "bullet": "Annexing Slavic Bosnia-Herzegovina blocked Serbia’s dream of a united South Slav state → enraged Belgrade"
+          },
+          {
+            "hint": "German ultimatum",
+            "bullet": "Berlin backed Vienna with a blunt military threat → forced unprepared Russia to stand down"
+          },
+          {
+            "hint": "Tsarist vow",
+            "bullet": "Publicly humiliated in 1908, Russia vowed never to retreat before Austro-German bullying again"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Recent defeat",
+            "bullet": "Defeat against Japan in 1905 left Russia’s army weak → prevented Tsar Nicholas fighting in 1908"
+          },
+          {
+            "hint": "Sarajevo link",
+            "bullet": "Bosnian Serb fury at Austrian rule → spawned underground groups like the Black Hand"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ILLEGAL SEIZURE",
+            "stem": "Formally annexing ____________ in October 1908 outraged Serbs who hoped to build a ____________ state."
+          },
+          {
+            "badge": "BERLIN’S BACKING",
+            "stem": "Unready for major war after a threatening ultimatum from ____________, Tsarist Russia backed down."
+          },
+          {
+            "badge": "DANGEROUS LESSON",
+            "stem": "Bitter humiliation in 1908 ensured St Petersburg would ____________ when the next Balkan crisis struck."
+          }
+        ],
+        "watch_out": "Russia’s 1908 retreat over Bosnia was temporary—humiliation made Tsar Nicholas II determined not to back down in July 1914.",
+        "prose_hash": "9b2db84bce",
+        "prose_fp": "3e290ba1",
+        "question_hash": "f158d6cb84"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Doubled power",
+            "bullet": "Winning two Balkan Wars doubled Serbia’s territory and army strength → transformed Belgrade into a threat"
+          },
+          {
+            "hint": "Internal unrest",
+            "bullet": "Soaring Serbian prestige inspired militant Slav nationalists inside Austria-Hungary → threatened imperial break-up"
+          },
+          {
+            "hint": "Pre-emptive urge",
+            "bullet": "Hawkish generals in Vienna sought an excuse for war → planned to crush Serbia early"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ottoman exit",
+            "bullet": "Driving Turkey almost out of Europe → left Austria-Hungary facing confident Serbia directly across its border"
+          },
+          {
+            "hint": "Russian rearmament",
+            "bullet": "Rapid Russian military recovery since 1908 → convinced Vienna hawks to strike before Russia grew unstoppable"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EXPANDED KINGDOM",
+            "stem": "Emerging triumphant from two regional wars, Serbia doubled its ____________ and ____________ by 1913."
+          },
+          {
+            "badge": "IMPERIAL FEAR",
+            "stem": "Serbia’s rising prestige emboldened ____________ living inside Austria-Hungary, threatening the empire’s survival."
+          },
+          {
+            "badge": "HAWKISH CONCLUSION",
+            "stem": "Terrified of ethnic collapse, Austrian generals waited for a pretext to launch ____________ against Belgrade."
+          }
+        ],
+        "watch_out": "Austria-Hungary was not part of the 1912–1913 Balkan Wars fighting—yet Serbia’s victories terrified Vienna more than anyone else.",
+        "prose_hash": "0a8551fd1e",
+        "prose_fp": "1e2ed458",
+        "question_hash": "d5e3379c1c"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Morning convoy",
+            "bullet": "Franz Ferdinand and Sophie rode through Sarajevo in an open-top car → survived an early grenade"
+          },
+          {
+            "hint": "Driver’s error",
+            "bullet": "A fatal wrong turn halted the royal car directly beside Black Hand conspirator Gavrilo Princip"
+          },
+          {
+            "hint": "Point-blank shots",
+            "bullet": "Princip fired two pistol shots killing the royal couple → ignited the deadly July Crisis"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Annexed capital",
+            "bullet": "Sarajevo was capital of Bosnia, seized by Austria in 1908 → inflamed Bosnian Serb resentment"
+          },
+          {
+            "hint": "Pretext found",
+            "bullet": "Killing the Habsburg heir handed Vienna hawks the excuse they craved to destroy Serbia"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EXPOSED VISIT",
+            "stem": "Touring Bosnian capital Sarajevo on ____________, Archduke Franz Ferdinand narrowly survived an initial ____________ attack."
+          },
+          {
+            "badge": "FATAL CHANCE",
+            "stem": "When the royal chauffeur took a ____________, the car stopped directly in front of ____________."
+          },
+          {
+            "badge": "IMMEDIATE SPARK",
+            "stem": "Two point-blank shots killed the Habsburg heir and Sophie, triggering the diplomatic ____________."
+          }
+        ],
+        "watch_out": "Gavrilo Princip was a Bosnian Serb nationalist backed by the secret Black Hand—not an official soldier of the Serbian army.",
+        "prose_hash": "62ddffc7f7",
+        "prose_fp": "2de25dae",
+        "question_hash": "9d13c25923"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Vienna’s hesitation",
+            "bullet": "Austria wanted to crush Serbia militarily → feared provoking powerful Russian intervention alone"
+          },
+          {
+            "hint": "Unconditional pledge",
+            "bullet": "Kaiser Wilhelm II issued a blank cheque on 5 July → promised total German military backing"
+          },
+          {
+            "hint": "Reckless confidence",
+            "bullet": "Guaranteed German protection removed Vienna’s caution → emboldened Austria to attack regardless of wider war"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1908 precedent",
+            "bullet": "Berlin assumed Russia would back down as in the 1908 Bosnian Crisis → misjudged Tsarist resolve"
+          },
+          {
+            "hint": "Localised gamble",
+            "bullet": "Turning a Balkan murder into an Austro-German test of strength → risked activating the Franco-Russian alliance"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "AUSTRIAN CAUTION",
+            "stem": "Before striking Belgrade, Austrian ministers hesitated because invading Serbia risked military intervention by ____________."
+          },
+          {
+            "badge": "BERLIN’S PROMISE",
+            "stem": "On 5 July 1914, ____________ handed Emperor Franz Joseph an unconditional ____________ of German support."
+          },
+          {
+            "badge": "ESCALATION EFFECT",
+            "stem": "Knowing Germany would fight beside it under all circumstances emboldened Vienna to ____________."
+          }
+        ],
+        "watch_out": "The blank cheque was not financial money—it was Kaiser Wilhelm II’s unconditional promise of German military backing.",
+        "prose_hash": "164707b407",
+        "prose_fp": "07dd53aa",
+        "question_hash": "8b3bd3240e"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Deliberate trap",
+            "bullet": "Vienna’s 23 July forty-eight-hour ultimatum contained harsh demands → drafted deliberately so Serbia would refuse"
+          },
+          {
+            "hint": "Sovereignty breach",
+            "bullet": "Allowing Austrian police inside Belgrade to investigate → stripped Serbia of independent national sovereignty"
+          },
+          {
+            "hint": "First shots",
+            "bullet": "Despite Serbia accepting nine of ten points, Austria declared war and shelled Belgrade on 28 July"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Blank cheque",
+            "bullet": "Secure behind Germany’s 5 July pledge → Vienna rejected compromise and chose military destruction"
+          },
+          {
+            "hint": "Pre-war goal",
+            "bullet": "Ever since Serbia doubled in the Balkan Wars → Austrian hawks had wanted war, not apologies"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPOSSIBLE TERMS",
+            "stem": "Delivered on 23 July with a forty-eight-hour deadline, Vienna’s ____________ was designed to be rejected."
+          },
+          {
+            "badge": "SOVEREIGNTY CLASH",
+            "stem": "Belgrade accepted nine demands, yet allowing ____________ inside Serbia violated its national independence."
+          },
+          {
+            "badge": "OUTBREAK OF FIGHTING",
+            "stem": "Dismissing Serbia’s conciliatory reply, Austria declared war on ____________ and bombarded Belgrade from the Danube."
+          }
+        ],
+        "watch_out": "Serbia actually accepted nine out of ten demands—Austria declared war anyway because Vienna wanted a military invasion, not diplomacy.",
+        "prose_hash": "c06ad35a04",
+        "prose_fp": "aed9cd2a",
+        "question_hash": "db4fc1f644"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Tsarist call-up",
+            "bullet": "Refusing another humiliation over Serbia, Tsar Nicholas II ordered general mobilisation across vast Russia"
+          },
+          {
+            "hint": "Railway schedules",
+            "bullet": "Moving millions of troops relied on rigid train timetables → could not be paused mid-deployment"
+          },
+          {
+            "hint": "Generals’ panic",
+            "bullet": "Delaying mobilisation meant facing enemy armies unready → generals pushed rulers to strike first"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1908 memory",
+            "bullet": "Backing down during the 1908 Bosnian Crisis → made abandoning Slavic Serbia politically impossible in 1914"
+          },
+          {
+            "hint": "Two-front clock",
+            "bullet": "Germany’s war plan depended on beating slow Russian mobilisation → turned Russian trains into war"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SLAVIC HONOUR",
+            "stem": "Determined to defend Serbia from Austrian attack, ____________ ordered general mobilisation across the Russian Empire."
+          },
+          {
+            "badge": "RIGID LOGISTICS",
+            "stem": "Transporting millions of conscripts to the frontier depended on inflexible ____________ planned years earlier."
+          },
+          {
+            "badge": "NO REVERSE GEAR",
+            "stem": "Generals warned that halting troop trains mid-crisis would leave borders defenceless and risk ____________."
+          }
+        ],
+        "watch_out": "In 1914, mobilising mass conscript armies by rail was treated by rival generals as practically equivalent to starting war.",
+        "prose_hash": "1c63f02164",
+        "prose_fp": "7d32c577",
+        "question_hash": "0a5137d358"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Two-front gamble",
+            "bullet": "Germany’s Schlieffen Plan swept through Belgium → aimed to defeat France swiftly before Russia attacked"
+          },
+          {
+            "hint": "Broken guarantee",
+            "bullet": "Invading neutral Belgium violated the 1839 Treaty of London → dismissed by Berlin as paper"
+          },
+          {
+            "hint": "Midnight deadline",
+            "bullet": "When Berlin ignored London’s withdrawal ultimatum → Britain declared war at midnight on 4 August"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Channel ports",
+            "bullet": "German control of Belgian ports directly opposite England → threatened British maritime security across the Channel"
+          },
+          {
+            "hint": "Entente ties",
+            "bullet": "Years of naval rivalry and secret Anglo-French defence plans → primed Britain to oppose German dominance"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WESTERN SWEEP",
+            "stem": "Executing the ____________ to crush France before Russia was ready, German armies marched into Belgium."
+          },
+          {
+            "badge": "TREATY BREACH",
+            "stem": "Chancellor Bethmann-Hollweg scorned the ____________ protecting Belgian neutrality as a mere ____________."
+          },
+          {
+            "badge": "BRITISH ENTRY",
+            "stem": "Refusal to withdraw German troops brought the British Empire into war on ____________."
+          }
+        ],
+        "watch_out": "Britain declared war legally over the 1839 Treaty of London protecting Belgium—not because of a binding military alliance with Serbia.",
+        "prose_hash": "0b8bdaf525",
+        "prose_fp": "48dfc86f",
+        "question_hash": "d4fbd6a656"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Paragraph count",
+            "bullet": "Write three developed PEEL paragraphs on distinct causes → builds a balanced multi-factor explanation"
+          },
+          {
+            "hint": "Analytical focus",
+            "bullet": "Pair precise historical evidence with cause-and-consequence explanation → shows how tensions led to war"
+          },
+          {
+            "hint": "Time discipline",
+            "bullet": "Skip writing a separate conclusion across thirty minutes → avoids wasting time repeating points"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Factor choice",
+            "bullet": "Select three strong themes from unification, empire, dreadnoughts, or alliances → covers long- and short-term causes"
+          },
+          {
+            "hint": "Causal linking",
+            "bullet": "Connect each factor directly back to August 1914 → turns factual description into genuine analysis"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ESSAY BLUEPRINT",
+            "stem": "Across your thirty-minute assessment, construct strictly ____________ analysing separate causes of the 1914 outbreak."
+          },
+          {
+            "badge": "INSIDE EACH PARAGRAPH",
+            "stem": "Support every opening point with precise ____________ before explaining its ____________ for European peace."
+          },
+          {
+            "badge": "PACING RULE",
+            "stem": "Omit ____________ at the end so every minute goes into analytical explanation rather than repetition."
+          }
+        ],
+        "watch_out": "Do not waste your final five minutes writing a summary conclusion—spend all thirty minutes developing three analytical PEEL paragraphs.",
+        "prose_hash": "f02f16099a",
+        "prose_fp": "12fc2eb8",
+        "question_hash": "1526776eec"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "New superpower",
+            "bullet": "Bismarck united thirty-nine German states after defeating France in 1870 → overturned Europe’s power balance"
+          },
+          {
+            "hint": "Annexed borderland",
+            "bullet": "The 1871 Treaty of Frankfurt seized mineral-rich Alsace-Lorraine → crippled and humiliated defeated France"
+          },
+          {
+            "hint": "Bitter revanchism",
+            "bullet": "Forty years of French desire for revanche → permanently divided mainland Europe’s strongest military powers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Conscript armies",
+            "bullet": "French schools mourned lost provinces while conscription trained millions → prepared youth for future war"
+          },
+          {
+            "hint": "Two-front root",
+            "bullet": "Permanent French hostility forced Germany into rigid alliances and the Schlieffen Plan → widened 1914 war"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CONTINENTAL SHIFT",
+            "stem": "Crushing France in 1870 enabled Bismarck to unite ____________ into a dominant continental empire."
+          },
+          {
+            "badge": "TERRITORIAL GRIEVANCE",
+            "stem": "Stripping mineral-rich ____________ from France under the 1871 ____________ left a lasting wound."
+          },
+          {
+            "badge": "CAUSAL LINK",
+            "stem": "Consequently, four decades of French ____________ ensured Paris would back Russia against Germany in 1914."
+          }
+        ],
+        "watch_out": "German unification in 1871 did not make war inevitable by itself—annexing Alsace-Lorraine made lasting Franco-German peace impossible.",
+        "prose_hash": "3fa3abddc9",
+        "prose_fp": "38c3cb08",
+        "question_hash": "3d6ae96986"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Colonial scramble",
+            "bullet": "Industrial empires raced across Africa for rubber and copper → heightened great-power overseas competition"
+          },
+          {
+            "hint": "Assertive policy",
+            "bullet": "Kaiser Wilhelm II’s Weltpolitik demanded a place in the sun → challenged British and French empires"
+          },
+          {
+            "hint": "Moroccan backfire",
+            "bullet": "Aggressive German stunts in Morocco united London and Paris → forged joint defence against Berlin"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Tangier and Agadir",
+            "bullet": "Wilhelm’s 1905 Tangier visit and 1911 Panther gunboat → triggered secret Anglo-French military and naval plans"
+          },
+          {
+            "hint": "Encirclement dread",
+            "bullet": "Diplomatic defeat at the 1906 Algeciras summit → left Berlin isolated apart from Austria-Hungary"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPERIAL CHALLENGE",
+            "stem": "Abandoning cautious diplomacy for ____________, Kaiser Wilhelm II demanded an overseas ____________ rivalling Britain and France."
+          },
+          {
+            "badge": "NORTH AFRICAN FLASHPOINTS",
+            "stem": "Rather than splitting the Entente Cordiale, German interventions in ____________ pushed London and Paris closer."
+          },
+          {
+            "badge": "STRATEGIC OUTCOME",
+            "stem": "Colonial bullying therefore turned rival empires into ____________ prepared to resist German expansion together."
+          }
+        ],
+        "watch_out": "Imperial rivalry never directly triggered fighting in 1914, yet the Moroccan crises turned Anglo-French friendship into joint war planning.",
+        "prose_hash": "8c30da4d86",
+        "prose_fp": "70982972",
+        "question_hash": "fff47c2590"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Maritime lifeline",
+            "bullet": "Island Britain upheld the Two-Power Standard → protected vital sea lanes and food imports"
+          },
+          {
+            "hint": "All-big-gun reset",
+            "bullet": "Launching HMS Dreadnought in 1906 made older fleets obsolete → restarted battleship competition from scratch"
+          },
+          {
+            "hint": "North Sea panic",
+            "bullet": "Tirpitz’s expanding dreadnought fleet alarmed British voters → fuelled popular hostility and war readiness"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1909 chant",
+            "bullet": "Press scares over German shipyards sparked chants for eight dreadnoughts → hardened anti-German public opinion"
+          },
+          {
+            "hint": "Failed truce",
+            "bullet": "After the 1912 Haldane talks collapsed → Royal Navy battleships concentrated in the North Sea"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MARITIME SECURITY",
+            "stem": "Defending an island empire required the Royal Navy to uphold the ____________ against rival fleets."
+          },
+          {
+            "badge": "BATTLESHIP RESET",
+            "stem": "Unveiling all-big-gun ____________ in 1906 wiped out older advantages and let ____________ compete from scratch."
+          },
+          {
+            "badge": "PUBLIC HOSTILITY",
+            "stem": "German warship construction in the North Sea stirred intense ____________, priming voters to oppose Berlin."
+          }
+        ],
+        "watch_out": "While colonial disputes mainly angered diplomats, Tirpitz’s North Sea dreadnoughts directly threatened British survival and turned voters against Germany.",
+        "prose_hash": "757db56b32",
+        "prose_fp": "f6675e26",
+        "question_hash": "7d9ae7426a"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Armed blocs",
+            "bullet": "Europe split between the Triple Alliance and Triple Entente → linked local disputes to continental war"
+          },
+          {
+            "hint": "Sarajevo spark",
+            "bullet": "Gavrilo Princip assassinated Archduke Franz Ferdinand on 28 June 1914 → triggered ruthless Austrian retaliation"
+          },
+          {
+            "hint": "Chain reaction",
+            "bullet": "Mutual alliance pledges and war plans activated rapidly → dragged five great powers in within weeks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Blank cheque",
+            "bullet": "Germany’s 5 July pledge and Russia’s mobilisation for Serbia → turned a Balkan clash continental"
+          },
+          {
+            "hint": "Belgian invasion",
+            "bullet": "Germany’s Schlieffen Plan sweep through neutral Belgium → brought Great Britain into war on 4 August"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RIVAL CAMPS",
+            "stem": "By 1914, mainland powers stood divided between the ____________ and the rival ____________."
+          },
+          {
+            "badge": "BALKAN TRIGGER",
+            "stem": "Following ____________’s assassination of Archduke Franz Ferdinand in Sarajevo, Austria-Hungary moved to crush Serbia."
+          },
+          {
+            "badge": "DOMINO ESCALATION",
+            "stem": "Interlocking alliance pledges and war plans turned a regional shooting into ____________ within five weeks."
+          }
+        ],
+        "watch_out": "Never write that Sarajevo alone caused the Great War—Princip lit the spark, whereas alliances, militarism, and imperialism piled up the gunpowder.",
+        "prose_hash": "345849d89b",
+        "prose_fp": "29c0b221",
+        "question_hash": "7d455ca7d0"
+      }
+    ]
+  }
+}

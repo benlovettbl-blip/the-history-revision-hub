@@ -1,0 +1,1140 @@
+{
+  "unit_id": "second_british_empire",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Exclusive shipping rules",
+            "bullet": "Navigation Acts forced colonies to use British-built ships → monopolised raw sugar and cotton imports"
+          },
+          {
+            "hint": "Domestic factory processing",
+            "bullet": "Cheap colonial sugar and cotton fed home workshops → turned into high-value manufactured exports"
+          },
+          {
+            "hint": "Bullion & finance",
+            "bullet": "Closed colonial trade locked out foreign rivals → merchants amassed gold reserves and commercial dominance"
+          }
+        ],
+        "context": [
+          {
+            "hint": "American loss",
+            "bullet": "Losing Thirteen Colonies in 1783 → pivoted British trade priorities toward Caribbean and Asian markets"
+          },
+          {
+            "hint": "Atlantic plantation labour",
+            "bullet": "Enslaved Caribbean plantation labour harvested cheap sugar and cotton → underpinned Britain's early mercantile wealth"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLOSED TRADE LOOP",
+            "stem": "Under Britain’s ____________ system, colonial producers had to ship ____________ exclusively aboard ____________..."
+          },
+          {
+            "badge": "INDUSTRIAL VALUE",
+            "stem": "Once cheap raw materials reached British ports, domestic manufacturers turned them into ____________, allowing financiers to..."
+          },
+          {
+            "badge": "PROTECTED COMMERCE",
+            "stem": "Guarded across the oceans by ____________, this closed trading network enriched port cities because..."
+          }
+        ],
+        "watch_out": "Mercantilism was strict state protectionism—do not confuse it with the free-trade policies Britain adopted later in the nineteenth century.",
+        "prose_hash": "af3291a56b",
+        "prose_fp": "a128ea20",
+        "question_hash": "77e736cdd2"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Fleet numbers",
+            "bullet": "Outnumbered 27 warships to 33 Franco-Spanish ships → Nelson rejected cautious parallel line-of-battle tactics"
+          },
+          {
+            "hint": "Twin column charge",
+            "bullet": "Split British fleet into two perpendicular columns → pierced the Franco-Spanish line and broke enemy coordination"
+          },
+          {
+            "hint": "Close-range broadsides",
+            "bullet": "Smashed enemy flagships with point-blank broadsides → secured Royal Navy mastery over global shipping lanes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Napoleonic invasion threat",
+            "bullet": "Crushing Napoleon's combined battle fleet → ended French hopes of invading Britain across the Channel"
+          },
+          {
+            "hint": "Mercantile sea lanes",
+            "bullet": "Unchallenged Royal Navy patrols after 1805 → protected colonial sugar, cotton, and Asian trade routes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DARING FORMATION",
+            "stem": "Facing thirty-three ____________ warships off Cape Trafalgar, Admiral ____________ split his twenty-seven ships into..."
+          },
+          {
+            "badge": "DECISIVE FIREPOWER",
+            "stem": "By piercing the enemy line and firing ____________ at ____________ range, British warships..."
+          },
+          {
+            "badge": "CENTURY OF MASTERY",
+            "stem": "Victory in October 1805 secured ____________ over global sea lanes, ensuring merchant fleets could..."
+          }
+        ],
+        "watch_out": "Trafalgar defeated Napoleon at sea rather than on land—Napoleon’s armies continued fighting across Europe until Waterloo in 1815.",
+        "prose_hash": "61aa51b9e2",
+        "prose_fp": "3a311384",
+        "question_hash": "7f42424eb0"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Skilled dockyard workforce",
+            "bullet": "Over 10,000 shipwrights, smiths, and caulkers worked continuously → built and repaired Britain's battle fleets"
+          },
+          {
+            "hint": "1803 assembly line",
+            "bullet": "Marc Brunel installed steam block mills in 1803 → pioneered the world's first mass-production assembly line"
+          },
+          {
+            "hint": "Heavy naval forges",
+            "bullet": "Industrial forges cast iron anchors, cannons, and copper sheathing → kept warships battle-ready across distant seas"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rigging scale",
+            "bullet": "Single wooden warships needed over a thousand pulley blocks → steam automation replaced slow hand-carving"
+          },
+          {
+            "hint": "Sustaining Trafalgar's fleet",
+            "bullet": "Naval victories like Trafalgar depended on industrial dockyards → rapid hull repairs kept fleets at sea"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INDUSTRIAL SCALE",
+            "stem": "Employing more than ____________ skilled workers, Portsmouth Royal Dockyard sustained the Royal Navy by..."
+          },
+          {
+            "badge": "MASS PRODUCTION",
+            "stem": "In 1803, engineer ____________ transformed naval supply by installing steam-powered ____________, creating the first..."
+          },
+          {
+            "badge": "FLEET READINESS",
+            "stem": "Alongside hull repairs, dockyard forges produced ____________ and ____________, ensuring British warships could..."
+          }
+        ],
+        "watch_out": "Do not confuse Marc Brunel, who built the 1803 Portsmouth block mills, with his son Isambard Kingdom Brunel, who built railways and steamships.",
+        "prose_hash": "f51dbaf72d",
+        "prose_fp": "d986fb6e",
+        "question_hash": "59bcf7b069"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Armour & hull",
+            "bullet": "Four-inch wrought-iron armour backed by eighteen-inch teak → bounced enemy shells harmlessly off its hull"
+          },
+          {
+            "hint": "Hybrid propulsion",
+            "bullet": "Combined powerful twin steam engines with ocean-going sails → outran wind-bound wooden ships of the line"
+          },
+          {
+            "hint": "Instant obsolescence",
+            "bullet": "Proved impervious in live firing trials → rendered unarmoured wooden battleships in rival fleets obsolete overnight"
+          }
+        ],
+        "context": [
+          {
+            "hint": "French naval trigger",
+            "bullet": "France launched ironclad La Gloire in 1859 → forced Britain to build a superior ocean-going warship"
+          },
+          {
+            "hint": "Coal & ironworks",
+            "bullet": "Britain's unrivalled coal mines and ironworks → enabled naval engineers to outbuild European competitors"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COMPOSITE ARMOUR",
+            "stem": "Launched in 1860 to counter ____________, HMS Warrior replaced wooden hulls with ____________ backed by ____________..."
+          },
+          {
+            "badge": "STEAM & SAIL",
+            "stem": "Driven by twin ____________ alongside sails, Warrior outmatched traditional warships because..."
+          },
+          {
+            "badge": "NAVAL DETERRENCE",
+            "stem": "When live firing trials showed cannon shells ____________, foreign wooden fleets instantly became..."
+          }
+        ],
+        "watch_out": "HMS Warrior still carried masts and sails because 1860s steam engines burned coal rapidly and global coaling stations remained sparse.",
+        "prose_hash": "c279ccb9e6",
+        "prose_fp": "42287b02",
+        "question_hash": "3021f35c76"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Fleet parity rule",
+            "bullet": "1889 Naval Defence Act → ordered Royal Navy strength to match the next two foreign fleets combined"
+          },
+          {
+            "hint": "Shipbuilding budget",
+            "bullet": "Backed by £21.5 million state funding → Portsmouth and rival yards built dozens of modern battleships"
+          },
+          {
+            "hint": "Rival deterrence",
+            "bullet": "Countered rising French, Russian, and German fleets → deterred coalition attacks on imperial sea lanes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Food & raw imports",
+            "bullet": "Industrial Britain depended on imported grain and colonial raw materials → naval blockade meant national starvation"
+          },
+          {
+            "hint": "Global empire defence",
+            "bullet": "Scramble for Africa and rule over India → stretched Royal Navy squadrons across every ocean"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STATUTORY RULE",
+            "stem": "Threatened by expanding ____________, ____________, and Russian fleets, Parliament passed the 1889 ____________ to..."
+          },
+          {
+            "badge": "COMBINED STRENGTH",
+            "stem": "Under the Two-Power Standard, the Royal Navy had to remain at least as strong as ____________..."
+          },
+          {
+            "badge": "IMPERIAL SECURITY",
+            "stem": "Backed by a ____________ shipbuilding budget, dockyards constructed new battleships so Britain could..."
+          }
+        ],
+        "watch_out": "In 1889 Britain’s naval benchmark targeted France and Russia—Imperial Germany’s High Seas Fleet emerged as the primary rival around 1900.",
+        "prose_hash": "f10bf14d3c",
+        "prose_fp": "53cb8097",
+        "question_hash": "eb25145cd8"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Regional weaving hubs",
+            "bullet": "Bengal and Gujarat weavers crafted fine silk and muslin → supplied over a quarter of world cloth"
+          },
+          {
+            "hint": "Bullion inflows",
+            "bullet": "European trading companies competed for Indian fabrics → paid in silver ingots and gold bullion"
+          },
+          {
+            "hint": "Banking & towns",
+            "bullet": "Steady inflows of foreign silver and gold → enriched Indian banking houses and thriving commercial towns"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pre-colonial prosperity",
+            "bullet": "Mughal India was a rich manufacturing powerhouse before British rule → refutes myths of pre-colonial backwardness"
+          },
+          {
+            "hint": "Early Company status",
+            "bullet": "Before 1757, British merchants operated only at coastal posts → traded strictly by Mughal imperial permission"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARTISANAL MASTERY",
+            "stem": "Across seventeenth-century ____________ and ____________, skilled village weavers produced over a quarter of..."
+          },
+          {
+            "badge": "SILVER FOR SILK",
+            "stem": "Because European merchants craved Indian ____________ and ____________, trading corporations had to pay in..."
+          },
+          {
+            "badge": "URBAN PROSPERITY",
+            "stem": "Continuous shipments of ____________ into Mughal ports enriched ____________ and sustained..."
+          }
+        ],
+        "watch_out": "India was not a poor agrarian economy before British rule—seventeenth-century Mughal Bengal and Gujarat led the world in fine textile manufacturing.",
+        "prose_hash": "ab93f9424c",
+        "prose_fp": "958ed541",
+        "question_hash": "18490e33a4"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Cheap Asian imports",
+            "bullet": "Washable, colourful Indian cottons flooded English shops → undercut heavier domestic wool and silk weavers"
+          },
+          {
+            "hint": "London weaver riots",
+            "bullet": "Riotous London weavers lobbied Parliament and threw acid on calico dresses → forced government intervention"
+          },
+          {
+            "hint": "Statutory import ban",
+            "bullet": "1700 and 1721 Calico Acts outlawed wearing or selling printed Indian cottons → shielded British wool"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mercantilist double standard",
+            "bullet": "Britain shielded home weavers behind strict import bans → later imposed one-way free trade on India"
+          },
+          {
+            "hint": "Spur to mechanisation",
+            "bullet": "Shutting out finished Indian calicoes → spurred British inventors to build spinning machines copying Asian cottons"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOMESTIC BACKLASH",
+            "stem": "Alarmed as popular Indian ____________ undercut home sales, angry London weavers rioted and even..."
+          },
+          {
+            "badge": "STATUTORY BAN",
+            "stem": "Yielding to domestic pressure, Parliament passed the ____________ of 1700 and 1721, outlawing..."
+          },
+          {
+            "badge": "SHELTERED INDUSTRY",
+            "stem": "Blocking Asian cotton imports protected British ____________ producers, proving Britain relied on ____________ before..."
+          }
+        ],
+        "watch_out": "Britain’s textile rise began behind strict state protectionism—the Calico Acts banned rival Indian cloth long before British mills preached free trade.",
+        "prose_hash": "fce15e448b",
+        "prose_fp": "77414e32",
+        "question_hash": "3767034969"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "1765 imperial grant",
+            "bullet": "1765 Diwani of Bengal → gave the Company sovereign power to tax twenty million local inhabitants"
+          },
+          {
+            "hint": "Tax-funded purchases",
+            "bullet": "Company agents bought Indian silk and cotton using Bengali peasant taxes → halted European silver imports"
+          },
+          {
+            "hint": "Inverted wealth flow",
+            "bullet": "Bengali tax revenues financed Company exports to Europe → began draining wealth straight to London"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Corporate army rule",
+            "bullet": "Military victories in Bengal → transformed a London trading corporation into a territorial tax-collecting ruler"
+          },
+          {
+            "hint": "1770 Bengal famine",
+            "bullet": "Relentless Company land-tax collection during crop failure → worsened the catastrophic 1770 Bengal famine"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SOVEREIGN REVENUE",
+            "stem": "Under the 1765 Treaty of ____________, Emperor Shah Alam II granted the ____________, handing the Company..."
+          },
+          {
+            "badge": "HALTING BULLION",
+            "stem": "Instead of shipping ____________ from Europe, Company factors used ____________ wrung from Bengali peasants to..."
+          },
+          {
+            "badge": "WEALTH DRAIN",
+            "stem": "Financing Indian exports out of ____________ inverted historic trade flows and triggered a one-way ____________ to..."
+          }
+        ],
+        "watch_out": "The Diwani was granted to the private East India Company in 1765, not the British Crown—direct royal rule only began in 1858.",
+        "prose_hash": "56ff09d88a",
+        "prose_fp": "f44e1aff",
+        "question_hash": "abf758932d"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Factory mass output",
+            "bullet": "Steam-powered Lancashire mills spun millions of yards rapidly → slashed production costs below handloom prices"
+          },
+          {
+            "hint": "Unequal import duty",
+            "bullet": "Seventy percent British import tariffs on Indian cottons → locked Asian weavers out of European markets"
+          },
+          {
+            "hint": "Duty-free bazaar flood",
+            "bullet": "Lancashire cottons entered Indian ports almost tax-free → flooded local bazaars and ruined village artisans"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Raw cotton reversal",
+            "bullet": "India shifted from exporting fine cloth to shipping raw cotton → supplied Lancashire's steam-powered mills"
+          },
+          {
+            "hint": "Colonial tariff control",
+            "bullet": "Company-ruled India lacked tariff autonomy → could not pass protective laws like Britain's earlier Calico Acts"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STEAM MECHANISATION",
+            "stem": "Powered by steam machinery, factories in ____________ mass-produced cheap cloth that undercut..."
+          },
+          {
+            "badge": "ONE-WAY TARIFFS",
+            "stem": "While Britain slapped a ____________ border tax on Indian cloth, British textiles entered Indian ports..."
+          },
+          {
+            "badge": "ARTISANAL COLLAPSE",
+            "stem": "Flooded with duty-free factory imports, traditional Indian ____________ and ____________ could no longer..."
+          }
+        ],
+        "watch_out": "Indian handlooms did not lose out through fair competition alone—one-sided 70 percent British tariffs and near-zero Indian import duties rigged the market.",
+        "prose_hash": "9e701c1c0e",
+        "prose_fp": "bbacbd3b",
+        "question_hash": "a83ede3255"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Deserted loom cities",
+            "bullet": "Collapsing muslin exports bankrupted workshops in Dhaka → emptied formerly thriving urban weaving centres"
+          },
+          {
+            "hint": "Rural livelihood shift",
+            "bullet": "Destitute handloom families lost craft incomes → forced onto the land as impoverished farm labourers"
+          },
+          {
+            "hint": "1834 official observation",
+            "bullet": "Governor-General Bentinck reported weavers' bones bleaching India's plains → admitted British rule caused mass destitution"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Agrarian vulnerability",
+            "bullet": "Cramming former artisans into low-paid peasant farming → left millions fatally exposed when monsoons later failed"
+          },
+          {
+            "hint": "Economic grievances",
+            "bullet": "Widespread rural poverty and ruined urban crafts → deepened popular anger ahead of the 1857 rebellion"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "URBAN DECLINE",
+            "stem": "Stripped of overseas export markets, famous weaving centres such as ____________ saw their workshops..."
+          },
+          {
+            "badge": "DE-INDUSTRIALISATION",
+            "stem": "Unable to survive against cheap factory cloth, starving handloom families were forced into ____________..."
+          },
+          {
+            "badge": "OFFICIAL WITNESS",
+            "stem": "Even Governor-General ____________ admitted the human catastrophe in 1834, observing that..."
+          }
+        ],
+        "watch_out": "De-industrialisation meant India was pushed backwards from skilled urban manufacturing into subsistence farming—the reverse of Britain’s Industrial Revolution.",
+        "prose_hash": "39aa3c0a32",
+        "prose_fp": "adca6df5",
+        "question_hash": "8eb678674f"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Adopted heirs barred",
+            "bullet": "Dalhousie's Doctrine of Lapse overruled Hindu adoption custom → seized Satara, Nagpur, and Jhansi"
+          },
+          {
+            "hint": "1856 kingdom seizure",
+            "bullet": "Company deposed the Nawab of wealthy Awadh in 1856 → humiliated regional nobles and dispossessed landowners"
+          },
+          {
+            "hint": "Regimental family ties",
+            "bullet": "Many Company sepoys came from Awadh farming families → annexation threatened their ancestral status and taxes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Economic exhaustion",
+            "bullet": "Decades of heavy Company land taxes and ruined textile towns → primed northern India for revolt"
+          },
+          {
+            "hint": "Cultural arrogance",
+            "bullet": "Aggressive Westernizing reforms under Dalhousie → convinced Indian rulers no treaty with the Company was safe"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SUCCESSION OVERRULED",
+            "stem": "Under Governor-General ____________, the Doctrine of Lapse seized princely states such as ____________ whenever..."
+          },
+          {
+            "badge": "KINGDOM DEPOSED",
+            "stem": "Resentment boiled over in 1856 when the Company deposed the Nawab of ____________, outraging..."
+          },
+          {
+            "badge": "MILITARY LINK",
+            "stem": "Deposing Awadh’s ruler proved politically explosive because thousands of ____________ in the Company’s army..."
+          }
+        ],
+        "watch_out": "Awadh was annexed in 1856 on the pretext of misgovernment rather than lack of a male heir—convincing Indian princes that any state could be seized next.",
+        "prose_hash": "8664bac078",
+        "prose_fp": "1f810891",
+        "question_hash": "ea53cc4571"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Loading drill",
+            "bullet": "New Pattern 1853 Enfield rifles required soldiers to bite open greased paper cartridges before loading"
+          },
+          {
+            "hint": "Sacred taboos broken",
+            "bullet": "Cartridge grease rumoured to mix cow and pig fat → defiled both Hindu and Muslim soldiers"
+          },
+          {
+            "hint": "Plot against faith",
+            "bullet": "Sepoys feared deliberate caste pollution → suspected a plot to force mass conversion to Christianity"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Missionary anxieties",
+            "bullet": "Growing Christian missionary preaching in military cantonments → made rumours of forced conversion believable"
+          },
+          {
+            "hint": "Spark vs fuel",
+            "bullet": "Greased cartridges acted as the immediate trigger → ignited deeper anger over Awadh and Company taxes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WEAPON DRILL",
+            "stem": "Issued in early 1857, the ____________ rifle forced sepoys to ____________ greased paper cartridges to..."
+          },
+          {
+            "badge": "DUAL DEFILEMENT",
+            "stem": "Reports of ____________ and ____________ tallow horrified regiments because cows are sacred to Hindus while..."
+          },
+          {
+            "badge": "RELIGIOUS FEAR",
+            "stem": "Beyond the ammunition itself, soldiers feared British officers intended to destroy ____________ and impose..."
+          }
+        ],
+        "watch_out": "Never claim 1857 was caused solely by rifle grease—the Enfield cartridge was the spark that ignited decades of political, tax, and territorial grievances.",
+        "prose_hash": "688f3add2e",
+        "prose_fp": "7817f9b4",
+        "question_hash": "4f41818d40"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "May 1857 garrison revolt",
+            "bullet": "Harsh imprisonment of eighty-five sepoys on 10 May 1857 → sparked open garrison revolt at Meerut"
+          },
+          {
+            "hint": "Mughal figurehead",
+            "bullet": "Mutineers marched overnight to Delhi and proclaimed Bahadur Shah II leader → gave revolt imperial legitimacy"
+          },
+          {
+            "hint": "Cross-community alliance",
+            "bullet": "Hindu and Muslim soldiers fought alongside peasants and nobles → turned army mutiny into popular rebellion"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Symbolic capital",
+            "bullet": "Seizing historic Mughal Delhi → turned a local barrack mutiny into a wider war against Britain"
+          },
+          {
+            "hint": "Dispossessed elites",
+            "bullet": "Landowners and princes hurt by Dalhousie's annexations → joined rebel sepoys across northern India"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GARRISON REVOLT",
+            "stem": "After eighty-five comrades were jailed at ____________ on 10 May 1857, outraged sepoys freed them and..."
+          },
+          {
+            "badge": "IMPERIAL SYMBOL",
+            "stem": "Marching overnight to Delhi, rebel troops rallied behind Emperor ____________, transforming a mutiny into..."
+          },
+          {
+            "badge": "POPULAR UNITY",
+            "stem": "Across northern India, the uprising united ____________ and ____________ soldiers alongside aggrieved peasants and..."
+          }
+        ],
+        "watch_out": "Victorian writers called 1857 merely the Sepoy Mutiny, yet widespread civilian, peasant, and princely participation made it a major anti-colonial rebellion.",
+        "prose_hash": "44955def46",
+        "prose_fp": "e26a30c8",
+        "question_hash": "69020243bb"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Fortress breakout",
+            "bullet": "Defended Jhansi fiercely and rode through British lines at midnight → saved her young adopted son"
+          },
+          {
+            "hint": "Front-line cavalry",
+            "bullet": "Rallied rebel horsemen and fought sword-in-hand against British infantry → inspired resistance across central India"
+          },
+          {
+            "hint": "Last stand",
+            "bullet": "Died fighting at Gwalior in June 1858 → earned lasting renown as a fearless rebel strategist"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Denied succession link",
+            "bullet": "Dalhousie had refused to recognise her adopted son in Jhansi → drove Lakshmibai into armed resistance"
+          },
+          {
+            "hint": "Nationalist memory",
+            "bullet": "Lakshmibai's defiance at Jhansi and Gwalior → made her an enduring hero of Indian independence"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PRINCELY DEFIANCE",
+            "stem": "Driven to take up arms after the Company annexed ____________, Rani Lakshmibai organised..."
+          },
+          {
+            "badge": "DARING ESCAPE",
+            "stem": "When British troops breached her fortress walls, she rode out at midnight with ____________ strapped to..."
+          },
+          {
+            "badge": "FINAL STAND",
+            "stem": "Leading rebel cavalry into front-line combat until her death at ____________ in June 1858, she..."
+          }
+        ],
+        "watch_out": "Rani Lakshmibai took up arms after the East India Company used the Doctrine of Lapse to reject her adopted son’s inheritance and annex Jhansi.",
+        "prose_hash": "3ee92c072e",
+        "prose_fp": "91da7bfd",
+        "question_hash": "c3489152b5"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "End of corporate rule",
+            "bullet": "1858 Government of India Act abolished Company rule → transferred India directly to the British Crown"
+          },
+          {
+            "hint": "Crown representative & pledge",
+            "bullet": "Appointed a royal Viceroy and issued Victoria's Proclamation → pledged religious non-interference to calm unrest"
+          },
+          {
+            "hint": "Racial authoritarianism",
+            "bullet": "Deepened racial segregation and boosted British troop ratios → ruled the Raj through authoritarian military power"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Princely state policy",
+            "bullet": "Britain abandoned Dalhousie's Doctrine of Lapse after 1858 → courted loyal Indian princes as conservative allies"
+          },
+          {
+            "hint": "Army reorganisation",
+            "bullet": "Raj commanders placed artillery strictly in European hands → prevented any repeat of the Meerut uprising"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CROWN TAKEOVER",
+            "stem": "Following the suppression of the rebellion, the 1858 ____________ abolished ____________ and placed India under..."
+          },
+          {
+            "badge": "ROYAL PROMISES",
+            "stem": "Governed through a royal ____________, Queen Victoria’s proclamation sought stability by promising..."
+          },
+          {
+            "badge": "HARDENED RULE",
+            "stem": "In practice, however, the new British Raj deepened ____________ and relied on ____________ to hold power."
+          }
+        ],
+        "watch_out": "Ending East India Company rule in 1858 did not grant Indians self-government—it replaced corporate rule with direct, racially segregated Crown autocracy.",
+        "prose_hash": "96aca02685",
+        "prose_fp": "e24b20e1",
+        "question_hash": "146a31bafe"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Avoiding European war",
+            "bullet": "Otto von Bismarck convened fourteen Western powers in 1884 → agreed rules to partition Africa peacefully"
+          },
+          {
+            "hint": "Map-room borders",
+            "bullet": "Diplomats drew geometric lines across African maps → sliced through ancient kingdoms, languages, and trade routes"
+          },
+          {
+            "hint": "Total African exclusion",
+            "bullet": "Zero African rulers or envoys were invited → denied indigenous peoples any voice over their homelands"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Industrial raw materials",
+            "bullet": "Industrial Europe hungered for rubber, copper, and palm oil → fuelled rival claims across Africa"
+          },
+          {
+            "hint": "Naval & imperial rivalry",
+            "bullet": "Rising German and French ambitions in the 1880s → pressured Britain to secure strategic African territories"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DIPLOMATIC BARGAIN",
+            "stem": "Convened by Chancellor ____________ in November 1884, fourteen Western powers met in Berlin so they could..."
+          },
+          {
+            "badge": "ARTIFICIAL BORDERS",
+            "stem": "By drawing geometric lines across maps, European diplomats split ____________ and ____________ without regard for..."
+          },
+          {
+            "badge": "SILENCED SOVEREIGNTY",
+            "stem": "Revealing deep imperial arrogance, ____________ were invited to decide the future of their own continent."
+          }
+        ],
+        "watch_out": "The Berlin Conference was held to stop European empires fighting each other over colonial spoils—not out of any concern for African welfare.",
+        "prose_hash": "6453852a62",
+        "prose_fp": "5fe088fa",
+        "question_hash": "a5c7cc9064"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Ending paper claims",
+            "bullet": "Coastal forts and paper treaties no longer sufficed → empires had to prove physical inland control"
+          },
+          {
+            "hint": "Troops & garrisons",
+            "bullet": "Powers had to march armies inland and build fortified posts → planted flags over interior kingdoms"
+          },
+          {
+            "hint": "Inland conquest race",
+            "bullet": "Fear of losing territory to European rivals → triggered a rapid military rush into Africa's interior"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier coastal pattern",
+            "bullet": "Before 1880, European presence stayed mostly on Africa's coasts → inland kingdoms remained sovereign"
+          },
+          {
+            "hint": "Coerced treaties",
+            "bullet": "Colonial agents backed uneven treaties with armed force → overrode African leaders who resisted inland takeover"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NEW LEGAL TEST",
+            "stem": "Under Berlin’s rule of ____________, European states could no longer claim vast lands just by holding..."
+          },
+          {
+            "badge": "MILITARY FOOTPRINT",
+            "stem": "To secure legal recognition from rival powers, empires had to send ____________ inland and build..."
+          },
+          {
+            "badge": "ARMED SCRAMBLE",
+            "stem": "Consequently, diplomatic rules in Europe unleashed a violent ____________ across the African interior because..."
+          }
+        ],
+        "watch_out": "Effective Occupation was an agreement strictly among rival European empires—it never required the genuine consent of the African peoples being conquered.",
+        "prose_hash": "20ca28e95c",
+        "prose_fp": "29babfec",
+        "question_hash": "e012b8480c"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Cinchona bark medicine",
+            "bullet": "Quinine medicine prevented fatal malaria → allowed European soldiers to campaign deep inside tropical river basins"
+          },
+          {
+            "hint": "Rapid machine fire",
+            "bullet": "Hiram Maxim's machine gun fired six hundred rounds per minute → created overwhelming battlefield firepower asymmetry"
+          },
+          {
+            "hint": "Battlefield toll 1898",
+            "bullet": "Kitchener's Maxim guns killed ten thousand Sudanese fighters at Omdurman in 1898 → crushed armed resistance"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Disease barrier broken",
+            "bullet": "Malaria had previously made West Africa deadly for Europeans → quinine removed Africa's natural disease shield"
+          },
+          {
+            "hint": "Steamships & telegraphs",
+            "bullet": "River steamboats and telegraph cables worked alongside Maxim guns → sped troops into inland battlegrounds"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SURVIVING MALARIA",
+            "stem": "Derived from cinchona bark, ____________ enabled European troops to survive ____________ and penetrate deep inland."
+          },
+          {
+            "badge": "FIREPOWER GAP",
+            "stem": "On the battlefield, the ____________ fired ____________ per minute, creating a devastating gap against..."
+          },
+          {
+            "badge": "BATTLEFIELD IMPACT",
+            "stem": "This military asymmetry was starkly demonstrated during Kitchener’s 1898 invasion of ____________, where..."
+          }
+        ],
+        "watch_out": "Africans resisted fiercely across the continent—conquest succeeded because industrial weapons like the Maxim gun and quinine tilted survival and firepower decisively.",
+        "prose_hash": "96f5b57d38",
+        "prose_fp": "c4693505",
+        "question_hash": "47b0c34453"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Moral duty claim",
+            "bullet": "Kipling's 1899 poem recast conquest as selfless moral duty → urged Britain and America to expand"
+          },
+          {
+            "hint": "Dehumanising stereotypes",
+            "bullet": "Labelled colonised peoples half-devil and half-child → used racist paternalism to deny non-white self-rule"
+          },
+          {
+            "hint": "Masking economic plunder",
+            "bullet": "Wrapped resource seizure in talk of Christian civilisation → disguised forced labour and violent extraction"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Philippine war context",
+            "bullet": "Written during the 1899 US seizure of the Philippines → encouraged Washington to copy British imperialism"
+          },
+          {
+            "hint": "Post-1857 racial shift",
+            "bullet": "Hardened racial hierarchy seen in the post-1857 Raj → echoed across late-Victorian propaganda toward Africa"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPERIAL PROPAGANDA",
+            "stem": "Published in February 1899, Rudyard Kipling’s poem urged ____________ and ____________ to view conquest as..."
+          },
+          {
+            "badge": "RACIAL PATERNALISM",
+            "stem": "By slurring colonised populations as ____________, Kipling tried to portray conquered societies as incapable of..."
+          },
+          {
+            "badge": "HIDDEN MOTIVE",
+            "stem": "Behind grand claims of ____________ and moral duty, this racial ideology served to mask..."
+          }
+        ],
+        "watch_out": "Treat Kipling’s poem as pro-imperial propaganda rather than objective truth—historians study it to expose how Victorians rationalised violent conquest and racism.",
+        "prose_hash": "110648d79b",
+        "prose_fp": "a4581692",
+        "question_hash": "e877408847"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Forced harvest targets",
+            "bullet": "Leopold II imposed brutal wild-rubber quotas across Congo → forced villagers to harvest wealth for Europe"
+          },
+          {
+            "hint": "Hostages & mutilation",
+            "bullet": "Colonial troops burned villages, seized hostages, and severed hands → punished communities missing rubber targets"
+          },
+          {
+            "hint": "Catastrophic death toll",
+            "bullet": "Systematic terror, exhaustion, and famine enriched European tycoons → killed up to ten million Congolese people"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Hypocrisy of Berlin",
+            "bullet": "Leopold won Congo at Berlin by promising humanitarian rule → exposed the lie of civilising missions"
+          },
+          {
+            "hint": "Industrial tyre boom",
+            "bullet": "Surging European demand for bicycle and motor tyres → drove ruthless rubber extraction across central Africa"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COERCED EXTRACTION",
+            "stem": "Stripping away civilising myths, King ____________ turned the Congo Free State into a regime of forced..."
+          },
+          {
+            "badge": "STATE TERROR",
+            "stem": "Whenever Congolese villages failed to meet ____________, armed enforcers took hostages, burned homes, and..."
+          },
+          {
+            "badge": "HUMAN COST",
+            "stem": "While European tycoons profited from ____________, this system of terror caused an estimated..."
+          }
+        ],
+        "watch_out": "The Congo Free State was neither free nor initially a Belgian state colony—King Leopold II ruled it as his personal profit-making fiefdom until 1908.",
+        "prose_hash": "18a7ea804b",
+        "prose_fp": "a8091076",
+        "question_hash": "f670880cdd"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Hyde Park showcase",
+            "bullet": "Paxton's glass-and-iron Crystal Palace drew six million visitors → celebrated Britain as Workshop of the World"
+          },
+          {
+            "hint": "Industrial supremacy",
+            "bullet": "Displayed cutting-edge steam engines and electric telegraphs → showcased Britain's global lead in factory manufacturing"
+          },
+          {
+            "hint": "Confiscated Sikh treasure",
+            "bullet": "Exhibited the Koh-i-Noor taken from boy-ruler Duleep Singh → advertised military conquest and imperial dominance"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Built on de-industrialisation",
+            "bullet": "Britain's industrial dominance rested on colonial raw materials → came after crushing India's rival handloom exports"
+          },
+          {
+            "hint": "Naval & trade backbone",
+            "bullet": "Royal Navy mastery of sea lanes → protected the global trade networks displayed at Hyde Park"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INDUSTRIAL PRIDE",
+            "stem": "Opened by Queen Victoria inside the ____________ in 1851, the Great Exhibition proclaimed Britain the..."
+          },
+          {
+            "badge": "TECHNOLOGICAL DISPLAY",
+            "stem": "Over six million visitors admired ____________ and ____________, celebrating British industrial leadership."
+          },
+          {
+            "badge": "IMPERIAL TROPHY",
+            "stem": "Displaying the ____________ diamond seized from young Maharaja ____________ revealed how British wealth also rested on..."
+          }
+        ],
+        "watch_out": "The Koh-i-Noor was not a voluntary gift—the East India Company forced young Maharaja Duleep Singh to surrender it after annexing the Punjab in 1849.",
+        "prose_hash": "4e58ae9164",
+        "prose_fp": "f28508ee",
+        "question_hash": "99ae0960a8"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Scale of construction",
+            "bullet": "Engineers laid 25,000 miles of Indian track alongside canals and telegraphs → linked distant provinces"
+          },
+          {
+            "hint": "Commodity extraction",
+            "bullet": "Rail lines linked inland farms to coastal ports → sped raw cotton and grain to Britain"
+          },
+          {
+            "hint": "Rapid troop movement",
+            "bullet": "Tracks and telegraphs moved regiments swiftly across India → designed to crush rebellions after 1857"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Indian taxpayer funding",
+            "bullet": "Indian peasant taxes guaranteed profits for British railway investors → locals paid for imperial infrastructure"
+          },
+          {
+            "hint": "Memory of rebellion",
+            "bullet": "Memory of the 1857 rebellion → drove the Raj to link military garrisons by rail and telegraph"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NETWORK EXPANSION",
+            "stem": "Across colonial India, British engineers built over ____________ of railway alongside ____________ and telegraph lines."
+          },
+          {
+            "badge": "RESOURCE PIPELINE",
+            "stem": "Economically, these tracks served Britain by hauling ____________ from inland regions straight to..."
+          },
+          {
+            "badge": "MILITARY CONTROL",
+            "stem": "Strategically, railways and telegraphs enabled the Raj to rush ____________ anywhere in India to..."
+          }
+        ],
+        "watch_out": "Colonial railways were not built as charitable gifts—they were funded out of Indian taxes primarily to extract export crops and move British troops.",
+        "prose_hash": "5d56a68033",
+        "prose_fp": "e296837d",
+        "question_hash": "d461bcacde"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Rigid market theory",
+            "bullet": "Viceroy Lytton enforced strict free-market dogma → refused to cap wheat prices or ban exports"
+          },
+          {
+            "hint": "Punitive relief camps",
+            "bullet": "Starving peasants had to perform exhausting hard labour → received barely survival rations in relief camps"
+          },
+          {
+            "hint": "Exporting amid famine",
+            "bullet": "Record grain shipments sailed for Britain → an estimated ten million Indians perished from starvation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Railways sped exports",
+            "bullet": "Colonial railways moved grain toward wealthy export ports → priced local food beyond starving peasants' reach"
+          },
+          {
+            "hint": "Lost craft cushion",
+            "bullet": "De-industrialisation had pushed millions into landless farm work → left rural families penniless when monsoons failed"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FREE-MARKET DOGMA",
+            "stem": "When monsoon rains failed in 1876, Viceroy ____________ clung to strict ____________ theory and refused to..."
+          },
+          {
+            "badge": "HARSH RELIEF",
+            "stem": "Desperate villagers seeking state assistance were forced into ____________ camps where rations were..."
+          },
+          {
+            "badge": "LETHAL PARADOX",
+            "stem": "Consequently, around ____________ Indians starved to death at the very moment ____________ flowed to Britain."
+          }
+        ],
+        "watch_out": "Late-Victorian famines were triggered by drought, yet mass mortality resulted from colonial policy choices—especially refusing price controls while continuing grain exports.",
+        "prose_hash": "fecfa5d9c7",
+        "prose_fp": "fd47a4c4",
+        "question_hash": "e22cd69930"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Unrequited tax transfers",
+            "bullet": "Naoroji proved Britain siphoned millions in Indian tax revenue → transferred wealth to London without return"
+          },
+          {
+            "hint": "Pensions & war bills",
+            "bullet": "Indian revenues paid British officials' pensions and imperial wars → starved India of capital for development"
+          },
+          {
+            "hint": "Voice inside Westminster",
+            "bullet": "Elected first Indian Westminster MP in 1892 → used Parliament to demand self-rule and equality"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Origin in 1765",
+            "bullet": "Traced wealth extraction back to the 1765 Diwani → explained why prosperous Bengal grew impoverished"
+          },
+          {
+            "hint": "Early nationalist foundation",
+            "bullet": "Naoroji's statistical critique armed the early Indian National Congress → gave anti-colonial politics hard economic proof"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ECONOMIC CRITIQUE",
+            "stem": "Pioneering his ____________ theory in 1867, scholar ____________ calculated how British rule systematically impoverished India."
+          },
+          {
+            "badge": "SIPHONED REVENUE",
+            "stem": "Millions raised from Indian taxpayers flowed straight to Britain to pay for ____________ and ____________ without..."
+          },
+          {
+            "badge": "PARLIAMENTARY VOICE",
+            "stem": "After winning election as the first Indian ____________ in 1892, Naoroji pressed Westminster for..."
+          }
+        ],
+        "watch_out": "Naoroji did not merely assert that Britain was unfair—he used official British trade and tax statistics to prove an unreturned financial transfer.",
+        "prose_hash": "00be479277",
+        "prose_fp": "4c16e15b",
+        "question_hash": "d7521b1bf8"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Modernisation argument",
+            "bullet": "Niall Ferguson credits Empire with spreading common law, free trade, railways, and parliamentary institutions"
+          },
+          {
+            "hint": "Exploitation argument",
+            "bullet": "Shashi Tharoor argues British rule crushed Indian textiles, drained taxes, and caused preventable mass famines"
+          },
+          {
+            "hint": "Core historical tension",
+            "bullet": "Historians weigh infrastructure and legal legacies against coerced labour, racial rule, and millions of colonial deaths"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Evidence for defenders",
+            "bullet": "Defenders point to 25,000 miles of Indian track, telegraph cables, and global maritime commerce"
+          },
+          {
+            "hint": "Evidence for critics",
+            "bullet": "Critics cite ruined Dhaka weavers, 1857 repression, Omdurman Maxim guns, and Lytton's famine policies"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THE MODERNISING VIEW",
+            "stem": "Defending the Empire’s global impact, historian ____________ argues British rule spread ____________, common law, and..."
+          },
+          {
+            "badge": "THE EXPLOITATION VIEW",
+            "stem": "By contrast, ____________ contends colonial policy ruined ____________, drained tax wealth, and worsened..."
+          },
+          {
+            "badge": "BALANCED VERDICT",
+            "stem": "Ultimately, judging the Second British Empire requires weighing infrastructure such as ____________ against..."
+          }
+        ],
+        "watch_out": "Strong KS3 essays never treat historians’ views as mere opinions—always test Ferguson’s and Tharoor’s claims against specific evidence like railways, tariffs, and famines.",
+        "prose_hash": "8337b16bba",
+        "prose_fp": "023028f5",
+        "question_hash": "6191eb1d3e"
+      }
+    ]
+  }
+}

@@ -75,8 +75,7 @@ window.UNIT_DATA = {
         "source_context": {
           "Source A": "Maize was so precious to the Maya that their creation story taught the gods shaped the very first humans out of yellow and white maize dough! **Hinge Question:** Why did growing reliable harvests of maize allow small Maya villages to grow into bustling stone cities?",
           "Source B": "Without metal ploughs or farm oxen, Maya farmers planted maize, beans, and squash side by side so each plant helped its neighbours thrive. **Hinge Question:** How do maize, climbing beans, and broad-leaved squash each help one another grow in the same mound?",
-          "Source C": "While kings built stone step-pyramids downtown, ordinary Maya families built airy thatched houses on raised stone platforms that stayed cool in tropical heat. **Hinge Question:** Why did steep palm-thatch roofs and whitewashed walls suit hot, rainy Mesoamerican weather so well?",
-          "Source D": "Resplendent quetzals lived only in cool southern highland cloud forests, so lowland rainforest kings traded long distances to wear their emerald tail feathers. **Hinge Question:** What does finding highland quetzal feathers and obsidian in lowland cities prove about Maya trade?"
+          "Source C": "While kings built stone step-pyramids downtown, ordinary Maya families built airy thatched houses on raised stone platforms that stayed cool in tropical heat. **Hinge Question:** Why did steep palm-thatch roofs and whitewashed walls suit hot, rainy Mesoamerican weather so well?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -116,7 +115,7 @@ window.UNIT_DATA = {
               {
                 "time": "08–22m",
                 "label": "Act 3 Reading & Sources C–D",
-                "instruction": "Read Act 3 (stone cities vs Anglo-Saxon Britain c. AD 900) and examine Source C (thatched Yucatec home) and Source D (resplendent quetzal)."
+                "instruction": "Read Act 3 (stone cities vs Anglo-Saxon Britain c. AD 900) and examine Source C (thatched Yucatec home)."
               },
               {
                 "time": "22–42m",
@@ -212,18 +211,6 @@ window.UNIT_DATA = {
           "caption": "Key Stage 2 map of Mesoamerica showing the three Maya zones and major city-states across southern Mexico, Guatemala, Belize, Honduras, and El Salvador.",
           "image_caption": "Key Stage 2 map of Mesoamerica showing the three Maya zones and major city-states across southern Mexico, Guatemala, Belize, Honduras, and El Salvador.",
           "isReversed": false,
-          "sources": []
-        },
-        {
-          "act": 2,
-          "title": "c. 1000 BC–AD 600: Cenotes, Stone Reservoirs & Three Sisters Farming",
-          "text": "<span class=\"para-ref\">[1.3]</span> Dry months tested **Maya** builders because rain sank straight through porous limestone. Families across Yucatán drew water from deep natural sinkholes called **cenotes** [seh-NOH-tayz]. At **Tikal**, engineers plastered huge stone reservoirs and underground **chultuns** [chool-TOONZ] to store monsoon rain. Farmers also built raised **wetland fields** and carved stepped **terraces** onto hillsides.<br><br><span class=\"para-ref\">[1.4]</span> Clever **Three Sisters** companion planting fed tens of thousands of townspeople each year. Tall **maize** stalks gave sturdy poles for climbing **beans** to twist up. Bean roots enriched the soil, while wide **squash** leaves shaded damp earth and blocked weeds!",
-          "content": "<span class=\"para-ref\">[1.3]</span> Dry months tested **Maya** builders because rain sank straight through porous limestone. Families across Yucatán drew water from deep natural sinkholes called **cenotes** [seh-NOH-tayz]. At **Tikal**, engineers plastered huge stone reservoirs and underground **chultuns** [chool-TOONZ] to store monsoon rain. Farmers also built raised **wetland fields** and carved stepped **terraces** onto hillsides.<br><br><span class=\"para-ref\">[1.4]</span> Clever **Three Sisters** companion planting fed tens of thousands of townspeople each year. Tall **maize** stalks gave sturdy poles for climbing **beans** to twist up. Bean roots enriched the soil, while wide **squash** leaves shaded damp earth and blocked weeds!",
-          "image": "/units/ks2_maya_civilisation/assets/sacred_cenote_limestone_sinkhole.jpg",
-          "image_alt": "Deep circular limestone cenote sinkhole with hanging vines and fresh green water in Yucatán",
-          "caption": "A deep natural limestone cenote sinkhole in northern Yucatán — vital year-round freshwater wells where porous rock left no surface rivers.",
-          "image_caption": "A deep natural limestone cenote sinkhole in northern Yucatán — vital year-round freshwater wells where porous rock left no surface rivers.",
-          "isReversed": true,
           "sources": [
             {
               "id": "ks2_maya_civilisation_l1_src_a",
@@ -242,7 +229,20 @@ window.UNIT_DATA = {
               "question": "Inspect Source A. Why was maize the most important crop across every Maya city?",
               "model_answer": "Maize could be dried, stored for months, and ground into nourishing dough for tortillas and warm drinks, feeding tens of thousands of city builders, craftworkers, and rulers.",
               "provenance": "Traditional multi-coloured Mesoamerican maize cobs grown across the Maya region."
-            },
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "c. 1000 BC–AD 600: Cenotes, Stone Reservoirs & Three Sisters Farming",
+          "text": "<span class=\"para-ref\">[1.3]</span> Dry months tested **Maya** builders because rain sank straight through porous limestone. Families across Yucatán drew water from deep natural sinkholes called **cenotes** [seh-NOH-tayz]. At **Tikal**, engineers plastered huge stone reservoirs and underground **chultuns** [chool-TOONZ] to store monsoon rain. Farmers also built raised **wetland fields** and carved stepped **terraces** onto hillsides.<br><br><span class=\"para-ref\">[1.4]</span> Clever **Three Sisters** companion planting fed tens of thousands of townspeople each year. Tall **maize** stalks gave sturdy poles for climbing **beans** to twist up. Bean roots enriched the soil, while wide **squash** leaves shaded damp earth and blocked weeds!",
+          "content": "<span class=\"para-ref\">[1.3]</span> Dry months tested **Maya** builders because rain sank straight through porous limestone. Families across Yucatán drew water from deep natural sinkholes called **cenotes** [seh-NOH-tayz]. At **Tikal**, engineers plastered huge stone reservoirs and underground **chultuns** [chool-TOONZ] to store monsoon rain. Farmers also built raised **wetland fields** and carved stepped **terraces** onto hillsides.<br><br><span class=\"para-ref\">[1.4]</span> Clever **Three Sisters** companion planting fed tens of thousands of townspeople each year. Tall **maize** stalks gave sturdy poles for climbing **beans** to twist up. Bean roots enriched the soil, while wide **squash** leaves shaded damp earth and blocked weeds!",
+          "image": "/units/ks2_maya_civilisation/assets/sacred_cenote_limestone_sinkhole.jpg",
+          "image_alt": "Deep circular limestone cenote sinkhole with hanging vines and fresh green water in Yucatán",
+          "caption": "A deep natural limestone cenote sinkhole in northern Yucatán — vital year-round freshwater wells where porous rock left no surface rivers.",
+          "image_caption": "A deep natural limestone cenote sinkhole in northern Yucatán — vital year-round freshwater wells where porous rock left no surface rivers.",
+          "isReversed": true,
+          "sources": [
             {
               "id": "ks2_maya_civilisation_l1_src_b",
               "letter": "B",
@@ -291,24 +291,6 @@ window.UNIT_DATA = {
               "question": "Study Source C. Why was this house design so clever for hot tropical weather?",
               "model_answer": "Whitewashed limestone walls reflected fierce tropical sunlight to keep rooms cool, while the steep palm-thatch roof shed heavy monsoon downpours and let warm air escape.",
               "provenance": "Archival 1913 photograph of a traditional Yucatec Maya thatched family home in Yucatán."
-            },
-            {
-              "id": "ks2_maya_civilisation_l1_src_d",
-              "letter": "D",
-              "source_letter": "D",
-              "type": "photograph",
-              "src": "/units/ks2_maya_civilisation/assets/resplendent_quetzal_emerald_bird.jpg",
-              "image": "/units/ks2_maya_civilisation/assets/resplendent_quetzal_emerald_bird.jpg",
-              "title": "Source D: Emerald-Green Resplendent Quetzal of the Cloud Forests",
-              "caption": "A male Resplendent Quetzal perched in the misty highland cloud forests of Mesoamerica, famous for its shimmering green plumage and long tail streamers.",
-              "author": "Wildlife Photograph (Mesoamerican Cloud Forest)",
-              "date": "Native Highland Species",
-              "context": "Resplendent quetzals lived only in cool southern highland cloud forests, so lowland rainforest kings traded long distances to wear their emerald tail feathers. **Hinge Question:** What does finding highland quetzal feathers and obsidian in lowland cities prove about Maya trade?",
-              "source_context": "Resplendent quetzals lived only in cool southern highland cloud forests, so lowland rainforest kings traded long distances to wear their emerald tail feathers. **Hinge Question:** What does finding highland quetzal feathers and obsidian in lowland cities prove about Maya trade?",
-              "question_badge": "CLOUD FOREST QUETZAL",
-              "question": "Look at Source D. Why did lowland Maya kings prize highland quetzal feathers so highly?",
-              "model_answer": "Shimmering green quetzal feathers reminded the Maya of fresh growing maize leaves and lived only in misty highland cloud forests, making them rarer and more precious than gold.",
-              "provenance": "Wildlife photograph of a male Resplendent Quetzal in the Mesoamerican highland cloud forest."
             }
           ]
         }
@@ -367,24 +349,6 @@ window.UNIT_DATA = {
           "question": "Study Source C. Why was this house design so clever for hot tropical weather?",
           "model_answer": "Whitewashed limestone walls reflected fierce tropical sunlight to keep rooms cool, while the steep palm-thatch roof shed heavy monsoon downpours and let warm air escape.",
           "provenance": "Archival 1913 photograph of a traditional Yucatec Maya thatched family home in Yucatán."
-        },
-        {
-          "id": "ks2_maya_civilisation_l1_src_d",
-          "letter": "D",
-          "source_letter": "D",
-          "type": "photograph",
-          "src": "/units/ks2_maya_civilisation/assets/resplendent_quetzal_emerald_bird.jpg",
-          "image": "/units/ks2_maya_civilisation/assets/resplendent_quetzal_emerald_bird.jpg",
-          "title": "Source D: Emerald-Green Resplendent Quetzal of the Cloud Forests",
-          "caption": "A male Resplendent Quetzal perched in the misty highland cloud forests of Mesoamerica, famous for its shimmering green plumage and long tail streamers.",
-          "author": "Wildlife Photograph (Mesoamerican Cloud Forest)",
-          "date": "Native Highland Species",
-          "context": "Resplendent quetzals lived only in cool southern highland cloud forests, so lowland rainforest kings traded long distances to wear their emerald tail feathers. **Hinge Question:** What does finding highland quetzal feathers and obsidian in lowland cities prove about Maya trade?",
-          "source_context": "Resplendent quetzals lived only in cool southern highland cloud forests, so lowland rainforest kings traded long distances to wear their emerald tail feathers. **Hinge Question:** What does finding highland quetzal feathers and obsidian in lowland cities prove about Maya trade?",
-          "question_badge": "CLOUD FOREST QUETZAL",
-          "question": "Look at Source D. Why did lowland Maya kings prize highland quetzal feathers so highly?",
-          "model_answer": "Shimmering green quetzal feathers reminded the Maya of fresh growing maize leaves and lived only in misty highland cloud forests, making them rarer and more precious than gold.",
-          "provenance": "Wildlife photograph of a male Resplendent Quetzal in the Mesoamerican highland cloud forest."
         }
       ],
       "causal_domino_spine": {
@@ -983,8 +947,7 @@ window.UNIT_DATA = {
         "source_context": {
           "Source A": "Excavated by archaeologist Alberto Ruz Lhuillier in 1952 deep beneath Palenque’s Temple of the Inscriptions, this mask fitted over two hundred polished jade pieces together. **Hinge Question:** Why did Maya craftworkers carve King Pakal’s funerary mask from green jade rather than yellow gold?",
           "Source B": "Grey Maya ruins were once painted vivid red, blue, yellow, and green, and carved throne panels reminded visitors of the ruler’s sacred authority. **Hinge Question:** How did a Maya Ajaw use clothing, feathers, and carvings in Source B to look god-like?",
-          "Source C": "Preserved under a thin layer of limestone mineral crust inside a small rainforest temple, the Bonampak murals show Maya court ceremonies in living colour! **Hinge Question:** What can painted murals like Source C tell historians that bare stone pyramid steps cannot?",
-          "Source D": "Potters on tiny Jaina Island off the Yucatán coast crafted lifelike clay figurines of rulers, royal women, warriors, and ballplayers with traces of bright Maya blue paint. **Hinge Question:** Why are tiny clay figurines from Jaina Island so helpful for picturing Maya nobles and royal women?"
+          "Source C": "Preserved under a thin layer of limestone mineral crust inside a small rainforest temple, the Bonampak murals show Maya court ceremonies in living colour! **Hinge Question:** What can painted murals like Source C tell historians that bare stone pyramid steps cannot?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -1024,7 +987,7 @@ window.UNIT_DATA = {
               {
                 "time": "08–22m",
                 "label": "Act 3 Reading & Sources C–D",
-                "instruction": "Read Act 3 (Lady Sak K'uk', Lady Six Sky of Naranjo, and Bonampak courts) and examine Source C (Bonampak murals) and Source D (Jaina figurine)."
+                "instruction": "Read Act 3 (Lady Sak K'uk', Lady Six Sky of Naranjo, and Bonampak courts) and examine Source C (Bonampak murals)."
               },
               {
                 "time": "22–42m",
@@ -1126,18 +1089,6 @@ window.UNIT_DATA = {
           "caption": "The stepped limestone Temple of the Inscriptions at Palenque — built as a towering royal monument and sacred tomb for King Pakal.",
           "image_caption": "The stepped limestone Temple of the Inscriptions at Palenque — built as a towering royal monument and sacred tomb for King Pakal.",
           "isReversed": false,
-          "sources": []
-        },
-        {
-          "act": 2,
-          "title": "AD 615–683: King Pakal the Great & Palenque’s Jade Mask",
-          "text": "<span class=\"para-ref\">[2.3]</span> Sacred **Maya** kings wore green **jade** collars, earflares, and sweeping **quetzal** feather headdresses. At **Palenque**, twelve-year-old **K'inich Janaab' Pakal** [pah-KAHL] took the throne in **AD 615**. Guided first by his mother, **Pakal the Great** ruled peacefully for sixty-eight years. His masons built white palaces and a four-storey stone **observation tower**.<br><br><span class=\"para-ref\">[2.4]</span> When King Pakal died in **AD 683**, workers sealed his tomb beneath the **Temple of the Inscriptions**. Archaeologists later found a hidden stairway leading down to his stone coffin. Over Pakal's face shone a life-sized mosaic mask of green **jade**!",
-          "content": "<span class=\"para-ref\">[2.3]</span> Sacred **Maya** kings wore green **jade** collars, earflares, and sweeping **quetzal** feather headdresses. At **Palenque**, twelve-year-old **K'inich Janaab' Pakal** [pah-KAHL] took the throne in **AD 615**. Guided first by his mother, **Pakal the Great** ruled peacefully for sixty-eight years. His masons built white palaces and a four-storey stone **observation tower**.<br><br><span class=\"para-ref\">[2.4]</span> When King Pakal died in **AD 683**, workers sealed his tomb beneath the **Temple of the Inscriptions**. Archaeologists later found a hidden stairway leading down to his stone coffin. Over Pakal's face shone a life-sized mosaic mask of green **jade**!",
-          "image": "/units/ks2_maya_civilisation/assets/palenque_four_storey_palace_tower.jpg",
-          "image_alt": "Four-storey stone observation tower rising above the royal Palace courtyards at Palenque",
-          "caption": "The unique four-storey stone tower of the royal Palace at Palenque, raised during the prosperous reigns of King Pakal and his sons.",
-          "image_caption": "The unique four-storey stone tower of the royal Palace at Palenque, raised during the prosperous reigns of King Pakal and his sons.",
-          "isReversed": true,
           "sources": [
             {
               "id": "ks2_maya_civilisation_l2_src_a",
@@ -1156,7 +1107,20 @@ window.UNIT_DATA = {
               "question": "Inspect Source A. What do the green jade tiles and eyes reveal about King Pakal’s status?",
               "model_answer": "Over two hundred polished jade pieces with shell and obsidian eyes show Pakal was honoured as a sacred K'uhul Ajaw associated with eternal life, breath, and sprouting green maize.",
               "provenance": "Green jade, shell, and obsidian funerary mask of King Pakal from the Temple of the Inscriptions at Palenque (AD 683)."
-            },
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "AD 615–683: King Pakal the Great & Palenque’s Jade Mask",
+          "text": "<span class=\"para-ref\">[2.3]</span> Sacred **Maya** kings wore green **jade** collars, earflares, and sweeping **quetzal** feather headdresses. At **Palenque**, twelve-year-old **K'inich Janaab' Pakal** [pah-KAHL] took the throne in **AD 615**. Guided first by his mother, **Pakal the Great** ruled peacefully for sixty-eight years. His masons built white palaces and a four-storey stone **observation tower**.<br><br><span class=\"para-ref\">[2.4]</span> When King Pakal died in **AD 683**, workers sealed his tomb beneath the **Temple of the Inscriptions**. Archaeologists later found a hidden stairway leading down to his stone coffin. Over Pakal's face shone a life-sized mosaic mask of green **jade**!",
+          "content": "<span class=\"para-ref\">[2.3]</span> Sacred **Maya** kings wore green **jade** collars, earflares, and sweeping **quetzal** feather headdresses. At **Palenque**, twelve-year-old **K'inich Janaab' Pakal** [pah-KAHL] took the throne in **AD 615**. Guided first by his mother, **Pakal the Great** ruled peacefully for sixty-eight years. His masons built white palaces and a four-storey stone **observation tower**.<br><br><span class=\"para-ref\">[2.4]</span> When King Pakal died in **AD 683**, workers sealed his tomb beneath the **Temple of the Inscriptions**. Archaeologists later found a hidden stairway leading down to his stone coffin. Over Pakal's face shone a life-sized mosaic mask of green **jade**!",
+          "image": "/units/ks2_maya_civilisation/assets/palenque_four_storey_palace_tower.jpg",
+          "image_alt": "Four-storey stone observation tower rising above the royal Palace courtyards at Palenque",
+          "caption": "The unique four-storey stone tower of the royal Palace at Palenque, raised during the prosperous reigns of King Pakal and his sons.",
+          "image_caption": "The unique four-storey stone tower of the royal Palace at Palenque, raised during the prosperous reigns of King Pakal and his sons.",
+          "isReversed": true,
+          "sources": [
             {
               "id": "ks2_maya_civilisation_l2_src_b",
               "letter": "B",
@@ -1205,24 +1169,6 @@ window.UNIT_DATA = {
               "question": "Examine Source C. What details of palace life survive in these colourful Bonampak wall paintings?",
               "model_answer": "Source C preserves bright Maya blue backgrounds, woven white cotton robes, jaguar skins, long wooden trumpets, rattles, and royal processions that rotted away everywhere else.",
               "provenance": "Polychrome plaster wall murals inside Room 1, Structure 1, Bonampak, Chiapas, Mexico (c. AD 790)."
-            },
-            {
-              "id": "ks2_maya_civilisation_l2_src_d",
-              "letter": "D",
-              "source_letter": "D",
-              "type": "artefact",
-              "src": "/units/ks2_maya_civilisation/assets/jaina_maya_noble_ceramic_figurine.jpg",
-              "image": "/units/ks2_maya_civilisation/assets/jaina_maya_noble_ceramic_figurine.jpg",
-              "title": "Source D: Classic Maya Clay Figurine of an Ornate Noble from Jaina Island",
-              "caption": "Hand-modelled Classic Maya ceramic figurine from Jaina Island showing a dignified noble wearing a tall headdress, heavy earflares, and a beaded collar.",
-              "author": "Jaina Island Maya Potter",
-              "date": "c. AD 600–900",
-              "context": "Potters on tiny Jaina Island off the Yucatán coast crafted lifelike clay figurines of rulers, royal women, warriors, and ballplayers with traces of bright Maya blue paint. **Hinge Question:** Why are tiny clay figurines from Jaina Island so helpful for picturing Maya nobles and royal women?",
-              "source_context": "Potters on tiny Jaina Island off the Yucatán coast crafted lifelike clay figurines of rulers, royal women, warriors, and ballplayers with traces of bright Maya blue paint. **Hinge Question:** Why are tiny clay figurines from Jaina Island so helpful for picturing Maya nobles and royal women?",
-              "question_badge": "JAINA NOBLE FIGURINE",
-              "question": "Study Source D. What clues does this clay figure give about Classic Maya noble fashion?",
-              "model_answer": "The figurine shows in three dimensions how Maya nobles styled elaborate woven headdresses, wore large round earflares, draped beaded jade collars, and stood with proud poise.",
-              "provenance": "Hand-modelled ceramic noble figurine from Jaina Island, Campeche, Mexico (Classic Maya, c. AD 600–900)."
             }
           ]
         }
@@ -1281,24 +1227,6 @@ window.UNIT_DATA = {
           "question": "Examine Source C. What details of palace life survive in these colourful Bonampak wall paintings?",
           "model_answer": "Source C preserves bright Maya blue backgrounds, woven white cotton robes, jaguar skins, long wooden trumpets, rattles, and royal processions that rotted away everywhere else.",
           "provenance": "Polychrome plaster wall murals inside Room 1, Structure 1, Bonampak, Chiapas, Mexico (c. AD 790)."
-        },
-        {
-          "id": "ks2_maya_civilisation_l2_src_d",
-          "letter": "D",
-          "source_letter": "D",
-          "type": "artefact",
-          "src": "/units/ks2_maya_civilisation/assets/jaina_maya_noble_ceramic_figurine.jpg",
-          "image": "/units/ks2_maya_civilisation/assets/jaina_maya_noble_ceramic_figurine.jpg",
-          "title": "Source D: Classic Maya Clay Figurine of an Ornate Noble from Jaina Island",
-          "caption": "Hand-modelled Classic Maya ceramic figurine from Jaina Island showing a dignified noble wearing a tall headdress, heavy earflares, and a beaded collar.",
-          "author": "Jaina Island Maya Potter",
-          "date": "c. AD 600–900",
-          "context": "Potters on tiny Jaina Island off the Yucatán coast crafted lifelike clay figurines of rulers, royal women, warriors, and ballplayers with traces of bright Maya blue paint. **Hinge Question:** Why are tiny clay figurines from Jaina Island so helpful for picturing Maya nobles and royal women?",
-          "source_context": "Potters on tiny Jaina Island off the Yucatán coast crafted lifelike clay figurines of rulers, royal women, warriors, and ballplayers with traces of bright Maya blue paint. **Hinge Question:** Why are tiny clay figurines from Jaina Island so helpful for picturing Maya nobles and royal women?",
-          "question_badge": "JAINA NOBLE FIGURINE",
-          "question": "Study Source D. What clues does this clay figure give about Classic Maya noble fashion?",
-          "model_answer": "The figurine shows in three dimensions how Maya nobles styled elaborate woven headdresses, wore large round earflares, draped beaded jade collars, and stood with proud poise.",
-          "provenance": "Hand-modelled ceramic noble figurine from Jaina Island, Campeche, Mexico (Classic Maya, c. AD 600–900)."
         }
       ],
       "causal_domino_spine": {
@@ -1897,8 +1825,7 @@ window.UNIT_DATA = {
         "source_context": {
           "Source A": "One of just four surviving pre-Spanish Maya bark-paper books, the Dresden Codex predicts solar eclipses and tracks the planet Venus to within two hours over five hundred years! **Hinge Question:** How can you spot ones, fives, and zeros on the painted columns of Source A?",
           "Source B": "Maya readers read glyph blocks in paired columns from left to right and top to bottom, sounding out exact Mayan words carved over a thousand years ago. **Hinge Question:** Why did mixing whole-word signs with syllable sound signs let Maya scribes write anything they spoke?",
-          "Source C": "Opened flat, the Madrid Codex stretches over six metres long, yet its clever accordion folds let a Maya priest tuck the whole almanac under one arm! **Hinge Question:** Why was an accordion-folded bark-paper codex so practical for Maya priests comparing calendar tables?",
-          "Source D": "Royal Maya scribes were high-ranking artists (often princes and princesses!) who signed fine cacao-drinking vases with bands of painted glyphs around the rim. **Hinge Question:** What does finding neat bands of hieroglyphs painted on palace cups tell us about Maya scribes?"
+          "Source C": "Opened flat, the Madrid Codex stretches over six metres long, yet its clever accordion folds let a Maya priest tuck the whole almanac under one arm! **Hinge Question:** Why was an accordion-folded bark-paper codex so practical for Maya priests comparing calendar tables?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -1938,7 +1865,7 @@ window.UNIT_DATA = {
               {
                 "time": "08–22m",
                 "label": "Act 3 Reading & Sources C–D",
-                "instruction": "Read Act 3 (El Caracol observatory, Venus, Tzolk'in and Haab' calendars) and examine Source C (Madrid Codex) and Source D (jaguar scribe vase)."
+                "instruction": "Read Act 3 (El Caracol observatory, Venus, Tzolk'in and Haab' calendars) and examine Source C (Madrid Codex)."
               },
               {
                 "time": "22–42m",
@@ -2040,18 +1967,6 @@ window.UNIT_DATA = {
           "caption": "Royal Stela M and the 63-step Hieroglyphic Stairway at Copán — carved with over 2,200 Maya glyphs, the longest stone text in ancient America.",
           "image_caption": "Royal Stela M and the 63-step Hieroglyphic Stairway at Copán — carved with over 2,200 Maya glyphs, the longest stone text in ancient America.",
           "isReversed": false,
-          "sources": []
-        },
-        {
-          "act": 2,
-          "title": "c. AD 350–900: Shell, Dot & Bar — Inventing Place-Value Zero",
-          "text": "<span class=\"para-ref\">[3.3]</span> Clever **Maya** mathematicians made history by inventing **place-value zero** all on their own! Rome and Britain still used clumsy Roman numerals without any zero. Meanwhile, Maya scholars used **base-20**, matching ten fingers and ten toes, with three clear symbols.<br><br><span class=\"para-ref\">[3.4]</span> A carved **shell** meant **zero**, a **pebble dot** meant **one**, and a **wooden bar** equalled **five**. Scribes stacked numbers upward in vertical columns of ones, twenties, and four hundreds on bark paper. Market traders tallied cacao beans swiftly. Architects also measured giant stone pyramids accurately!",
-          "content": "<span class=\"para-ref\">[3.3]</span> Clever **Maya** mathematicians made history by inventing **place-value zero** all on their own! Rome and Britain still used clumsy Roman numerals without any zero. Meanwhile, Maya scholars used **base-20**, matching ten fingers and ten toes, with three clear symbols.<br><br><span class=\"para-ref\">[3.4]</span> A carved **shell** meant **zero**, a **pebble dot** meant **one**, and a **wooden bar** equalled **five**. Scribes stacked numbers upward in vertical columns of ones, twenties, and four hundreds on bark paper. Market traders tallied cacao beans swiftly. Architects also measured giant stone pyramids accurately!",
-          "image": "/units/ks2_maya_civilisation/assets/maya_number_calendar_system_ks2.png",
-          "image_alt": "Key Stage 2 diagram showing Maya shell-dot-bar base-20 numbers from 0 to 20 alongside interlocking Tzolk'in and Haab' calendar wheels",
-          "caption": "Key Stage 2 diagram of Maya shell-dot-bar base-20 numbers (shell = 0, dot = 1, bar = 5) and the interlocking 260-day Tzolk'in and 365-day Haab' calendars.",
-          "image_caption": "Key Stage 2 diagram of Maya shell-dot-bar base-20 numbers (shell = 0, dot = 1, bar = 5) and the interlocking 260-day Tzolk'in and 365-day Haab' calendars.",
-          "isReversed": true,
           "sources": [
             {
               "id": "ks2_maya_civilisation_l3_src_a",
@@ -2070,7 +1985,20 @@ window.UNIT_DATA = {
               "question": "Inspect Source A. How did the Maya scribe write numbers and sky tables on bark paper?",
               "model_answer": "Using fine brushes on lime-coated fig-bark paper, the scribe stacked dots for ones, horizontal bars for fives, and painted red shells for zero alongside hieroglyphs tracking Venus and eclipses.",
               "provenance": "Painted fig-bark page from the Dresden Codex showing Maya base-20 numbers and Venus astronomy tables."
-            },
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "c. AD 350–900: Shell, Dot & Bar — Inventing Place-Value Zero",
+          "text": "<span class=\"para-ref\">[3.3]</span> Clever **Maya** mathematicians made history by inventing **place-value zero** all on their own! Rome and Britain still used clumsy Roman numerals without any zero. Meanwhile, Maya scholars used **base-20**, matching ten fingers and ten toes, with three clear symbols.<br><br><span class=\"para-ref\">[3.4]</span> A carved **shell** meant **zero**, a **pebble dot** meant **one**, and a **wooden bar** equalled **five**. Scribes stacked numbers upward in vertical columns of ones, twenties, and four hundreds on bark paper. Market traders tallied cacao beans swiftly. Architects also measured giant stone pyramids accurately!",
+          "content": "<span class=\"para-ref\">[3.3]</span> Clever **Maya** mathematicians made history by inventing **place-value zero** all on their own! Rome and Britain still used clumsy Roman numerals without any zero. Meanwhile, Maya scholars used **base-20**, matching ten fingers and ten toes, with three clear symbols.<br><br><span class=\"para-ref\">[3.4]</span> A carved **shell** meant **zero**, a **pebble dot** meant **one**, and a **wooden bar** equalled **five**. Scribes stacked numbers upward in vertical columns of ones, twenties, and four hundreds on bark paper. Market traders tallied cacao beans swiftly. Architects also measured giant stone pyramids accurately!",
+          "image": "/units/ks2_maya_civilisation/assets/maya_number_calendar_system_ks2.png",
+          "image_alt": "Key Stage 2 diagram showing Maya shell-dot-bar base-20 numbers from 0 to 20 alongside interlocking Tzolk'in and Haab' calendar wheels",
+          "caption": "Key Stage 2 diagram of Maya shell-dot-bar base-20 numbers (shell = 0, dot = 1, bar = 5) and the interlocking 260-day Tzolk'in and 365-day Haab' calendars.",
+          "image_caption": "Key Stage 2 diagram of Maya shell-dot-bar base-20 numbers (shell = 0, dot = 1, bar = 5) and the interlocking 260-day Tzolk'in and 365-day Haab' calendars.",
+          "isReversed": true,
+          "sources": [
             {
               "id": "ks2_maya_civilisation_l3_src_b",
               "letter": "B",
@@ -2119,24 +2047,6 @@ window.UNIT_DATA = {
               "question": "Examine Source C. Why did Maya scribes fold bark-paper codices like an accordion?",
               "model_answer": "Accordion folds let priests open two or three pages side by side for quick calendar checks or stretch a long book wide without cracking the white lime plaster coating.",
               "provenance": "Accordion-folded fig-bark pages from the Maya Madrid Codex."
-            },
-            {
-              "id": "ks2_maya_civilisation_l3_src_d",
-              "letter": "D",
-              "source_letter": "D",
-              "type": "artefact",
-              "src": "/units/ks2_maya_civilisation/assets/maya_codex_jaguar_scribe_vessel.jpg",
-              "image": "/units/ks2_maya_civilisation/assets/maya_codex_jaguar_scribe_vessel.jpg",
-              "title": "Source D: Classic Maya Painted Cylinder Vase With Rim Band of Glyphs",
-              "caption": "Finely painted Classic Maya ceramic cylinder vessel decorated with vivid jaguar imagery below a neat band of painted hieroglyphs naming the vessel’s owner and use.",
-              "author": "Classic Maya Royal Vase Painter",
-              "date": "c. AD 650–800",
-              "context": "Royal Maya scribes were high-ranking artists (often princes and princesses!) who signed fine cacao-drinking vases with bands of painted glyphs around the rim. **Hinge Question:** What does finding neat bands of hieroglyphs painted on palace cups tell us about Maya scribes?",
-              "source_context": "Royal Maya scribes were high-ranking artists (often princes and princesses!) who signed fine cacao-drinking vases with bands of painted glyphs around the rim. **Hinge Question:** What does finding neat bands of hieroglyphs painted on palace cups tell us about Maya scribes?",
-              "question_badge": "PAINTED GLYPH VASE",
-              "question": "Study Source D. What does the painted rim of glyphs show about Maya scribes’ skills?",
-              "model_answer": "Maya scribes were celebrated palace artists who painted elegant calligraphy with fine quill brushes on feasting vessels as well as bark-paper books, naming royal owners and drinks.",
-              "provenance": "Classic Maya painted clay cylinder vase with a rim band of hieroglyphs (c. AD 650–800)."
             }
           ]
         }
@@ -2195,24 +2105,6 @@ window.UNIT_DATA = {
           "question": "Examine Source C. Why did Maya scribes fold bark-paper codices like an accordion?",
           "model_answer": "Accordion folds let priests open two or three pages side by side for quick calendar checks or stretch a long book wide without cracking the white lime plaster coating.",
           "provenance": "Accordion-folded fig-bark pages from the Maya Madrid Codex."
-        },
-        {
-          "id": "ks2_maya_civilisation_l3_src_d",
-          "letter": "D",
-          "source_letter": "D",
-          "type": "artefact",
-          "src": "/units/ks2_maya_civilisation/assets/maya_codex_jaguar_scribe_vessel.jpg",
-          "image": "/units/ks2_maya_civilisation/assets/maya_codex_jaguar_scribe_vessel.jpg",
-          "title": "Source D: Classic Maya Painted Cylinder Vase With Rim Band of Glyphs",
-          "caption": "Finely painted Classic Maya ceramic cylinder vessel decorated with vivid jaguar imagery below a neat band of painted hieroglyphs naming the vessel’s owner and use.",
-          "author": "Classic Maya Royal Vase Painter",
-          "date": "c. AD 650–800",
-          "context": "Royal Maya scribes were high-ranking artists (often princes and princesses!) who signed fine cacao-drinking vases with bands of painted glyphs around the rim. **Hinge Question:** What does finding neat bands of hieroglyphs painted on palace cups tell us about Maya scribes?",
-          "source_context": "Royal Maya scribes were high-ranking artists (often princes and princesses!) who signed fine cacao-drinking vases with bands of painted glyphs around the rim. **Hinge Question:** What does finding neat bands of hieroglyphs painted on palace cups tell us about Maya scribes?",
-          "question_badge": "PAINTED GLYPH VASE",
-          "question": "Study Source D. What does the painted rim of glyphs show about Maya scribes’ skills?",
-          "model_answer": "Maya scribes were celebrated palace artists who painted elegant calligraphy with fine quill brushes on feasting vessels as well as bark-paper books, naming royal owners and drinks.",
-          "provenance": "Classic Maya painted clay cylinder vase with a rim band of hieroglyphs (c. AD 650–800)."
         }
       ],
       "causal_domino_spine": {
@@ -2810,8 +2702,7 @@ window.UNIT_DATA = {
         "source_context": {
           "Source A": "Cacao trees grew only in warm, damp lowlands, making dried cacao beans precious enough to spend as everyday market money and roast into royal drinks. **Hinge Question:** Why could dried cacao beans work so well as money in Maya marketplaces?",
           "Source B": "Chemists testing dark residues inside tall Maya cylinder vases discovered theobromine — scientific proof they held frothy, chilli-spiced cacao. **Hinge Question:** Why did Maya servers pour liquid cacao from one tall vase into another before serving the king?",
-          "Source C": "Set high up a sheer limestone wall at Chichén Itzá, this carved stone hoop left barely enough space for a heavy rubber ball to pass through. **Hinge Question:** Why was knocking a heavy rubber ball through Source C without using hands or feet almost impossible?",
-          "Source D": "Solid rubber balls weighed up to four kilograms and flew fast enough to crush ribs, so Pok-ta-Pok athletes strapped thick padded yokes around their waists. **Hinge Question:** What does the thick waist belt on Source D reveal about the rules and dangers of Pok-ta-Pok?"
+          "Source C": "Set high up a sheer limestone wall at Chichén Itzá, this carved stone hoop left barely enough space for a heavy rubber ball to pass through. **Hinge Question:** Why was knocking a heavy rubber ball through Source C without using hands or feet almost impossible?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -2851,7 +2742,7 @@ window.UNIT_DATA = {
               {
                 "time": "08–22m",
                 "label": "Act 3 Reading & Sources C–D",
-                "instruction": "Read Act 3 (stone ballcourts and Pok-ta-Pok rules) and examine Source C (Chichén Itzá stone ring) and Source D (ballplayer hip yoke)."
+                "instruction": "Read Act 3 (stone ballcourts and Pok-ta-Pok rules) and examine Source C (Chichén Itzá stone ring)."
               },
               {
                 "time": "22–42m",
@@ -2953,18 +2844,6 @@ window.UNIT_DATA = {
           "caption": "Volcanic stone metates and rolling hand-stones used every morning to grind lime-soaked maize kernels into soft dough.",
           "image_caption": "Volcanic stone metates and rolling hand-stones used every morning to grind lime-soaked maize kernels into soft dough.",
           "isReversed": false,
-          "sources": []
-        },
-        {
-          "act": 2,
-          "title": "AD 600–900: Cacao Bean Money, Obsidian Blades & Jade Trade",
-          "text": "<span class=\"para-ref\">[4.3]</span> Busy **Maya** plazas hummed with shaded markets where dried **cacao beans** worked as cash. Ten cacao beans bought a plump rabbit, while one hundred bought a turkey! Cheats sometimes filled empty bean shells with wet clay. Sharp-eyed market judges checked beans carefully.<br><br><span class=\"para-ref\">[4.4]</span> Mesoamerica had no pack horses, oxen, or wheeled carts for heavy loads. Strong human **porters** carried heavy packs along stone causeways using forehead straps. Dugout **canoes** paddled salt, cotton, and **quetzal** feathers, while highland merchants traded black **obsidian** blades and green **jade**.",
-          "content": "<span class=\"para-ref\">[4.3]</span> Busy **Maya** plazas hummed with shaded markets where dried **cacao beans** worked as cash. Ten cacao beans bought a plump rabbit, while one hundred bought a turkey! Cheats sometimes filled empty bean shells with wet clay. Sharp-eyed market judges checked beans carefully.<br><br><span class=\"para-ref\">[4.4]</span> Mesoamerica had no pack horses, oxen, or wheeled carts for heavy loads. Strong human **porters** carried heavy packs along stone causeways using forehead straps. Dugout **canoes** paddled salt, cotton, and **quetzal** feathers, while highland merchants traded black **obsidian** blades and green **jade**.",
-          "image": "/units/ks2_maya_civilisation/assets/maya_jade_royal_earflares.jpg",
-          "image_alt": "Pair of polished bright green Classic Maya jade royal earflare ornaments",
-          "caption": "Polished green jade earflares worn by Classic Maya rulers — traded across hundreds of miles without horses or carts.",
-          "image_caption": "Polished green jade earflares worn by Classic Maya rulers — traded across hundreds of miles without horses or carts.",
-          "isReversed": true,
           "sources": [
             {
               "id": "ks2_maya_civilisation_l4_src_a",
@@ -2983,7 +2862,20 @@ window.UNIT_DATA = {
               "question": "Look closely at Source A. Mention two ways the Classic Maya used cacao beans.",
               "model_answer": "Maya families spent dried cacao beans as everyday market money — ten beans bought a rabbit and one hundred bought a turkey — while nobles roasted them into frothy spiced chocolate drinks.",
               "provenance": "Ripe Mesoamerican cacao pods sliced open to show sweet pulp and valuable cacao seeds inside."
-            },
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "AD 600–900: Cacao Bean Money, Obsidian Blades & Jade Trade",
+          "text": "<span class=\"para-ref\">[4.3]</span> Busy **Maya** plazas hummed with shaded markets where dried **cacao beans** worked as cash. Ten cacao beans bought a plump rabbit, while one hundred bought a turkey! Cheats sometimes filled empty bean shells with wet clay. Sharp-eyed market judges checked beans carefully.<br><br><span class=\"para-ref\">[4.4]</span> Mesoamerica had no pack horses, oxen, or wheeled carts for heavy loads. Strong human **porters** carried heavy packs along stone causeways using forehead straps. Dugout **canoes** paddled salt, cotton, and **quetzal** feathers, while highland merchants traded black **obsidian** blades and green **jade**.",
+          "content": "<span class=\"para-ref\">[4.3]</span> Busy **Maya** plazas hummed with shaded markets where dried **cacao beans** worked as cash. Ten cacao beans bought a plump rabbit, while one hundred bought a turkey! Cheats sometimes filled empty bean shells with wet clay. Sharp-eyed market judges checked beans carefully.<br><br><span class=\"para-ref\">[4.4]</span> Mesoamerica had no pack horses, oxen, or wheeled carts for heavy loads. Strong human **porters** carried heavy packs along stone causeways using forehead straps. Dugout **canoes** paddled salt, cotton, and **quetzal** feathers, while highland merchants traded black **obsidian** blades and green **jade**.",
+          "image": "/units/ks2_maya_civilisation/assets/maya_jade_royal_earflares.jpg",
+          "image_alt": "Pair of polished bright green Classic Maya jade royal earflare ornaments",
+          "caption": "Polished green jade earflares worn by Classic Maya rulers — traded across hundreds of miles without horses or carts.",
+          "image_caption": "Polished green jade earflares worn by Classic Maya rulers — traded across hundreds of miles without horses or carts.",
+          "isReversed": true,
+          "sources": [
             {
               "id": "ks2_maya_civilisation_l4_src_b",
               "letter": "B",
@@ -3032,24 +2924,6 @@ window.UNIT_DATA = {
               "question": "Look at the person inside Source C. Why was scoring through this stone ring so tough?",
               "model_answer": "The carved stone ring hung high up a vertical wall with a narrow hole, and players could only strike the heavy rubber ball using padded hips!",
               "provenance": "Archival 1924 photograph showing scale of the carved stone Pok-ta-Pok ring on the Great Ballcourt at Chichén Itzá, Mexico."
-            },
-            {
-              "id": "ks2_maya_civilisation_l4_src_d",
-              "letter": "D",
-              "source_letter": "D",
-              "type": "artefact",
-              "src": "/units/ks2_maya_civilisation/assets/jaina_maya_ballplayer_hip_belt.jpg",
-              "image": "/units/ks2_maya_civilisation/assets/jaina_maya_ballplayer_hip_belt.jpg",
-              "title": "Source D: Classic Maya Terracotta Figurine of a Pok-ta-Pok Ballplayer (c. AD 600–900)",
-              "caption": "A hand-modelled clay figurine from Jaina Island showing a Maya athlete wearing a thick protective hip yoke and knee pad.",
-              "author": "Classic Maya Sculptor (Jaina Island)",
-              "date": "c. AD 600–900",
-              "context": "Solid rubber balls weighed up to four kilograms and flew fast enough to crush ribs, so Pok-ta-Pok athletes strapped thick padded yokes around their waists. **Hinge Question:** What does the thick waist belt on Source D reveal about the rules and dangers of Pok-ta-Pok?",
-              "source_context": "Solid rubber balls weighed up to four kilograms and flew fast enough to crush ribs, so Pok-ta-Pok athletes strapped thick padded yokes around their waists. **Hinge Question:** What does the thick waist belt on Source D reveal about the rules and dangers of Pok-ta-Pok?",
-              "question_badge": "BALLPLAYER HIP YOKE",
-              "question": "Look at the wide belt around the player in Source D. Why did ballplayers wear it?",
-              "model_answer": "Players wore thick leather-and-wood hip yokes to protect their ribs and bounce the heavy four-kilogram rubber ball forcefully without using hands or feet.",
-              "provenance": "Classic Maya terracotta ballplayer figurine wearing a protective hip yoke, excavated from Jaina Island, Campeche (c. AD 600–900)."
             }
           ]
         }
@@ -3108,24 +2982,6 @@ window.UNIT_DATA = {
           "question": "Look at the person inside Source C. Why was scoring through this stone ring so tough?",
           "model_answer": "The carved stone ring hung high up a vertical wall with a narrow hole, and players could only strike the heavy rubber ball using padded hips!",
           "provenance": "Archival 1924 photograph showing scale of the carved stone Pok-ta-Pok ring on the Great Ballcourt at Chichén Itzá, Mexico."
-        },
-        {
-          "id": "ks2_maya_civilisation_l4_src_d",
-          "letter": "D",
-          "source_letter": "D",
-          "type": "artefact",
-          "src": "/units/ks2_maya_civilisation/assets/jaina_maya_ballplayer_hip_belt.jpg",
-          "image": "/units/ks2_maya_civilisation/assets/jaina_maya_ballplayer_hip_belt.jpg",
-          "title": "Source D: Classic Maya Terracotta Figurine of a Pok-ta-Pok Ballplayer (c. AD 600–900)",
-          "caption": "A hand-modelled clay figurine from Jaina Island showing a Maya athlete wearing a thick protective hip yoke and knee pad.",
-          "author": "Classic Maya Sculptor (Jaina Island)",
-          "date": "c. AD 600–900",
-          "context": "Solid rubber balls weighed up to four kilograms and flew fast enough to crush ribs, so Pok-ta-Pok athletes strapped thick padded yokes around their waists. **Hinge Question:** What does the thick waist belt on Source D reveal about the rules and dangers of Pok-ta-Pok?",
-          "source_context": "Solid rubber balls weighed up to four kilograms and flew fast enough to crush ribs, so Pok-ta-Pok athletes strapped thick padded yokes around their waists. **Hinge Question:** What does the thick waist belt on Source D reveal about the rules and dangers of Pok-ta-Pok?",
-          "question_badge": "BALLPLAYER HIP YOKE",
-          "question": "Look at the wide belt around the player in Source D. Why did ballplayers wear it?",
-          "model_answer": "Players wore thick leather-and-wood hip yokes to protect their ribs and bounce the heavy four-kilogram rubber ball forcefully without using hands or feet.",
-          "provenance": "Classic Maya terracotta ballplayer figurine wearing a protective hip yoke, excavated from Jaina Island, Campeche (c. AD 600–900)."
         }
       ],
       "causal_domino_spine": {
@@ -3725,8 +3581,7 @@ window.UNIT_DATA = {
         "source_context": {
           "Source A": "Too heavy to wear during a fast match, polished greenstone yokes were worn in sacred rituals linking Pok-ta-Pok to the rebirth of the Maize God. **Hinge Question:** Why did Maya believers carve the Maize God onto a ceremonial Pok-ta-Pok hip yoke?",
           "Source B": "Priests burned fragrant pine-tree resin called copal inside tall clay censers like Source B so sweet white smoke rose towards the gods on pyramid tops. **Hinge Question:** Why did Maya priests burn sweet-smelling copal tree resin inside temple censers during prayers?",
-          "Source C": "Maya citizens believed their K'uhul Ajaw acted as a living bridge between humans on Earth and powerful gods in the sky and watery underworld. **Hinge Question:** Why did a Maya king wear carved green jade over his heart when leading religious ceremonies?",
-          "Source D": "By heating blue indigo plant leaves with special white clay, Maya makers invented \"Maya Blue\" — a sacred colour linked to rain god Chaac that never faded! **Hinge Question:** Why did Maya artists paint offerings to the rain god Chaac in bright turquoise Maya Blue?"
+          "Source C": "Maya citizens believed their K'uhul Ajaw acted as a living bridge between humans on Earth and powerful gods in the sky and watery underworld. **Hinge Question:** Why did a Maya king wear carved green jade over his heart when leading religious ceremonies?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -3766,7 +3621,7 @@ window.UNIT_DATA = {
               {
                 "time": "08–22m",
                 "label": "Act 3 Reading & Sources C–D",
-                "instruction": "Read Act 3 (equinox serpent shadow and Kukulkan) and inspect Source C (jade Ajaw plaque) and Source D (Maya Blue ceremonial figure)."
+                "instruction": "Read Act 3 (equinox serpent shadow and Kukulkan) and inspect Source C (jade Ajaw plaque)."
               },
               {
                 "time": "22–42m",
@@ -3868,18 +3723,6 @@ window.UNIT_DATA = {
           "caption": "Carved stone masks of long-nosed rain god Chaac covering the palace wall at Kabah in dry northern Yucatán.",
           "image_caption": "Carved stone masks of long-nosed rain god Chaac covering the palace wall at Kabah in dry northern Yucatán.",
           "isReversed": false,
-          "sources": []
-        },
-        {
-          "act": 2,
-          "title": "AD 800–1100: El Castillo — A 365-Day Calendar Carved in Stone",
-          "text": "<span class=\"para-ref\">[5.3]</span> Every **Maya** temple linked Earth, sky, and the calendar together. At northern **Chichén Itzá**, royal builders raised a great step-pyramid nicknamed **El Castillo**. Dedicated to the feathered serpent god **Kukulkan** [koo-kool-KAHN], its four steep staircases hold ninety-one stone steps each.<br><br><span class=\"para-ref\">[5.4]</span> Multiply ninety-one steps by four sides and add one top platform: **365**! Clever Maya architects carved a giant stone calendar matching every day of the solar year. Priests climbed those steep stairs to watch the stars. From the top, they announced maize planting dates across the plaza.",
-          "content": "<span class=\"para-ref\">[5.3]</span> Every **Maya** temple linked Earth, sky, and the calendar together. At northern **Chichén Itzá**, royal builders raised a great step-pyramid nicknamed **El Castillo**. Dedicated to the feathered serpent god **Kukulkan** [koo-kool-KAHN], its four steep staircases hold ninety-one stone steps each.<br><br><span class=\"para-ref\">[5.4]</span> Multiply ninety-one steps by four sides and add one top platform: **365**! Clever Maya architects carved a giant stone calendar matching every day of the solar year. Priests climbed those steep stairs to watch the stars. From the top, they announced maize planting dates across the plaza.",
-          "image": "/units/ks2_maya_civilisation/assets/chichen_itza_equinox_serpent_shadow.jpg",
-          "image_alt": "Seven sunlit triangles casting a wriggling serpent body shadow down the northern staircase of El Castillo at Chichén Itzá during the equinox",
-          "caption": "Every spring and autumn equinox, afternoon sunlight casts seven triangles down El Castillo’s balustrade like a wriggling serpent!",
-          "image_caption": "Every spring and autumn equinox, afternoon sunlight casts seven triangles down El Castillo’s balustrade like a wriggling serpent!",
-          "isReversed": true,
           "sources": [
             {
               "id": "ks2_maya_civilisation_l5_src_a",
@@ -3898,7 +3741,20 @@ window.UNIT_DATA = {
               "question": "Look at the carved face on Source A. How does it connect Pok-ta-Pok to Maya beliefs?",
               "model_answer": "Source A links the ballgame directly to the Popol Vuh creation story, honouring the Maize God rising anew from the underworld just like sprouting corn!",
               "provenance": "Carved Classic greenstone ceremonial ballgame hip yoke showing the Maize God (c. AD 600–900)."
-            },
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "AD 800–1100: El Castillo — A 365-Day Calendar Carved in Stone",
+          "text": "<span class=\"para-ref\">[5.3]</span> Every **Maya** temple linked Earth, sky, and the calendar together. At northern **Chichén Itzá**, royal builders raised a great step-pyramid nicknamed **El Castillo**. Dedicated to the feathered serpent god **Kukulkan** [koo-kool-KAHN], its four steep staircases hold ninety-one stone steps each.<br><br><span class=\"para-ref\">[5.4]</span> Multiply ninety-one steps by four sides and add one top platform: **365**! Clever Maya architects carved a giant stone calendar matching every day of the solar year. Priests climbed those steep stairs to watch the stars. From the top, they announced maize planting dates across the plaza.",
+          "content": "<span class=\"para-ref\">[5.3]</span> Every **Maya** temple linked Earth, sky, and the calendar together. At northern **Chichén Itzá**, royal builders raised a great step-pyramid nicknamed **El Castillo**. Dedicated to the feathered serpent god **Kukulkan** [koo-kool-KAHN], its four steep staircases hold ninety-one stone steps each.<br><br><span class=\"para-ref\">[5.4]</span> Multiply ninety-one steps by four sides and add one top platform: **365**! Clever Maya architects carved a giant stone calendar matching every day of the solar year. Priests climbed those steep stairs to watch the stars. From the top, they announced maize planting dates across the plaza.",
+          "image": "/units/ks2_maya_civilisation/assets/chichen_itza_equinox_serpent_shadow.jpg",
+          "image_alt": "Seven sunlit triangles casting a wriggling serpent body shadow down the northern staircase of El Castillo at Chichén Itzá during the equinox",
+          "caption": "Every spring and autumn equinox, afternoon sunlight casts seven triangles down El Castillo’s balustrade like a wriggling serpent!",
+          "image_caption": "Every spring and autumn equinox, afternoon sunlight casts seven triangles down El Castillo’s balustrade like a wriggling serpent!",
+          "isReversed": true,
+          "sources": [
             {
               "id": "ks2_maya_civilisation_l5_src_b",
               "letter": "B",
@@ -3947,24 +3803,6 @@ window.UNIT_DATA = {
               "question": "Look closely at the seated ruler on Source C. What religious duty did an Ajaw perform?",
               "model_answer": "Wearing sacred green jade, the K'uhul Ajaw led temple prayers, offerings, and calendar rituals to keep the gods pleased and bring timely rain.",
               "provenance": "Classic Maya carved green jade royal chest pendant showing an enthroned Ajaw (c. AD 600–800)."
-            },
-            {
-              "id": "ks2_maya_civilisation_l5_src_d",
-              "letter": "D",
-              "source_letter": "D",
-              "type": "artefact",
-              "src": "/units/ks2_maya_civilisation/assets/maya_blue_painted_ceremonial_figure.jpg",
-              "image": "/units/ks2_maya_civilisation/assets/maya_blue_painted_ceremonial_figure.jpg",
-              "title": "Source D: Maya Ceramic Ceremonial Figure Painted with Vibrant \"Maya Blue\" (c. AD 600–900)",
-              "caption": "A Classic Maya clay ritual figure still glowing with bright turquoise \"Maya Blue\" pigment after more than a thousand years.",
-              "author": "Classic Maya Ceramic Artist & Chemist",
-              "date": "c. AD 600–900",
-              "context": "By heating blue indigo plant leaves with special white clay, Maya makers invented \"Maya Blue\" — a sacred colour linked to rain god Chaac that never faded! **Hinge Question:** Why did Maya artists paint offerings to the rain god Chaac in bright turquoise Maya Blue?",
-              "source_context": "By heating blue indigo plant leaves with special white clay, Maya makers invented \"Maya Blue\" — a sacred colour linked to rain god Chaac that never faded! **Hinge Question:** Why did Maya artists paint offerings to the rain god Chaac in bright turquoise Maya Blue?",
-              "question_badge": "SACRED MAYA BLUE",
-              "question": "Why has the bright blue paint on Source D survived for over a thousand years?",
-              "model_answer": "Maya makers heated indigo plant leaves with special white clay to create \"Maya Blue\" — a weatherproof turquoise paint honouring Chaac, god of rain!",
-              "provenance": "Classic Maya clay ritual figure painted in unfading turquoise Maya Blue pigment."
             }
           ]
         }
@@ -4023,24 +3861,6 @@ window.UNIT_DATA = {
           "question": "Look closely at the seated ruler on Source C. What religious duty did an Ajaw perform?",
           "model_answer": "Wearing sacred green jade, the K'uhul Ajaw led temple prayers, offerings, and calendar rituals to keep the gods pleased and bring timely rain.",
           "provenance": "Classic Maya carved green jade royal chest pendant showing an enthroned Ajaw (c. AD 600–800)."
-        },
-        {
-          "id": "ks2_maya_civilisation_l5_src_d",
-          "letter": "D",
-          "source_letter": "D",
-          "type": "artefact",
-          "src": "/units/ks2_maya_civilisation/assets/maya_blue_painted_ceremonial_figure.jpg",
-          "image": "/units/ks2_maya_civilisation/assets/maya_blue_painted_ceremonial_figure.jpg",
-          "title": "Source D: Maya Ceramic Ceremonial Figure Painted with Vibrant \"Maya Blue\" (c. AD 600–900)",
-          "caption": "A Classic Maya clay ritual figure still glowing with bright turquoise \"Maya Blue\" pigment after more than a thousand years.",
-          "author": "Classic Maya Ceramic Artist & Chemist",
-          "date": "c. AD 600–900",
-          "context": "By heating blue indigo plant leaves with special white clay, Maya makers invented \"Maya Blue\" — a sacred colour linked to rain god Chaac that never faded! **Hinge Question:** Why did Maya artists paint offerings to the rain god Chaac in bright turquoise Maya Blue?",
-          "source_context": "By heating blue indigo plant leaves with special white clay, Maya makers invented \"Maya Blue\" — a sacred colour linked to rain god Chaac that never faded! **Hinge Question:** Why did Maya artists paint offerings to the rain god Chaac in bright turquoise Maya Blue?",
-          "question_badge": "SACRED MAYA BLUE",
-          "question": "Why has the bright blue paint on Source D survived for over a thousand years?",
-          "model_answer": "Maya makers heated indigo plant leaves with special white clay to create \"Maya Blue\" — a weatherproof turquoise paint honouring Chaac, god of rain!",
-          "provenance": "Classic Maya clay ritual figure painted in unfading turquoise Maya Blue pigment."
         }
       ],
       "causal_domino_spine": {
@@ -4640,8 +4460,7 @@ window.UNIT_DATA = {
         "source_context": {
           "Source A": "Archaeologists digging late 8th- and 9th-century southern cities find hastily built stone walls and piles of obsidian spearheads — evidence of non-stop royal warfare. **Hinge Question:** How did constant warfare between rival kings make food shortages during a drought even worse?",
           "Source B": "Scientists discovered that coating giant pyramids like Source B in gleaming white stucco plaster meant chopping down twenty trees just to burn one square metre of lime! **Hinge Question:** How could chopping down hillside forests to plaster giant pyramids accidentally harm Maya farms and rainfall?",
-          "Source C": "Using the exact same wooden backstrap loom shown on Classic Maya figurines, modern Maya women weave vibrant huipil blouses whose patterns tell which town they call home. **Hinge Question:** How does Source C immediately disprove old newspaper headlines claiming the Maya \"mysteriously vanished\"?",
-          "Source D": "Over seven million Maya people live across Mexico, Guatemala, Belize, Honduras, and El Salvador today, speaking more than thirty Mayan languages and trading in bustling markets like Chichicastenango. **Hinge Question:** Why is it much more accurate to talk about the \"southern city shift\" around AD 900 rather than the \"disappearance of the Maya\"?"
+          "Source C": "Using the exact same wooden backstrap loom shown on Classic Maya figurines, modern Maya women weave vibrant huipil blouses whose patterns tell which town they call home. **Hinge Question:** How does Source C immediately disprove old newspaper headlines claiming the Maya \"mysteriously vanished\"?"
         },
         "delivery_plan": {
           "format": "2-Session Primary Enquiry Sequence (2 × 45–50 mins)",
@@ -4681,7 +4500,7 @@ window.UNIT_DATA = {
               {
                 "time": "08–22m",
                 "label": "Act 3 Reading & Sources C–D",
-                "instruction": "Read Act 3 (shattering the vanished-Maya myth) and examine Source C (Guatemala backstrap weaver) and Source D (Chichicastenango threads)."
+                "instruction": "Read Act 3 (shattering the vanished-Maya myth) and examine Source C (Guatemala backstrap weaver)."
               },
               {
                 "time": "22–42m",
@@ -4783,18 +4602,6 @@ window.UNIT_DATA = {
           "caption": "Stepped limestone temples of the North Acropolis at Tikal, gradually left behind by families between AD 800 and 950.",
           "image_caption": "Stepped limestone temples of the North Acropolis at Tikal, gradually left behind by families between AD 800 and 950.",
           "isReversed": false,
-          "sources": []
-        },
-        {
-          "act": 2,
-          "title": "AD 850–1500: Rival Warfare & Thriving Northern Sea Cities",
-          "text": "<span class=\"para-ref\">[6.3]</span> As southern harvests shrank and wars raged, hungry families lost trust in southern kings. Crucially, the **Maya** people never vanished when southern plazas fell quiet after **AD 900**! Thousands moved north towards Yucatán cities with deep **cenotes**, like **Chichén Itzá** and **Uxmal**.<br><br><span class=\"para-ref\">[6.4]</span> During this vibrant **Postclassic** era from **AD 950 to 1520**, northern towns boomed for centuries. Stone temples rose beside busy coastal harbours and salt flats. Along the Caribbean coast, walled cliffside **Tulum** welcomed giant sea canoes. Merchants traded salt, honey, cotton, and bright feathers!",
-          "content": "<span class=\"para-ref\">[6.3]</span> As southern harvests shrank and wars raged, hungry families lost trust in southern kings. Crucially, the **Maya** people never vanished when southern plazas fell quiet after **AD 900**! Thousands moved north towards Yucatán cities with deep **cenotes**, like **Chichén Itzá** and **Uxmal**.<br><br><span class=\"para-ref\">[6.4]</span> During this vibrant **Postclassic** era from **AD 950 to 1520**, northern towns boomed for centuries. Stone temples rose beside busy coastal harbours and salt flats. Along the Caribbean coast, walled cliffside **Tulum** welcomed giant sea canoes. Merchants traded salt, honey, cotton, and bright feathers!",
-          "image": "/units/ks2_maya_civilisation/assets/tikal_temple_ii_great_plaza.jpg",
-          "image_alt": "Steep limestone staircase and roof comb of Temple II overlooking the grassy Great Plaza at Tikal",
-          "caption": "Temple II on Tikal’s Great Plaza — as southern reservoirs dried up, Maya families moved towards northern cenotes and sea trade.",
-          "image_caption": "Temple II on Tikal’s Great Plaza — as southern reservoirs dried up, Maya families moved towards northern cenotes and sea trade.",
-          "isReversed": true,
           "sources": [
             {
               "id": "ks2_maya_civilisation_l6_src_a",
@@ -4813,7 +4620,20 @@ window.UNIT_DATA = {
               "question": "What do sharp obsidian spear points like Source A suggest happened between rival cities around AD 800?",
               "model_answer": "Piles of obsidian spearheads and defensive walls show fierce warfare flared between rival kings, blocking trade routes and driving families from farms.",
               "provenance": "Collection of Classic Maya chipped volcanic obsidian blades and ceremonial chipped flint eccentrics (c. AD 600–900)."
-            },
+            }
+          ]
+        },
+        {
+          "act": 2,
+          "title": "AD 850–1500: Rival Warfare & Thriving Northern Sea Cities",
+          "text": "<span class=\"para-ref\">[6.3]</span> As southern harvests shrank and wars raged, hungry families lost trust in southern kings. Crucially, the **Maya** people never vanished when southern plazas fell quiet after **AD 900**! Thousands moved north towards Yucatán cities with deep **cenotes**, like **Chichén Itzá** and **Uxmal**.<br><br><span class=\"para-ref\">[6.4]</span> During this vibrant **Postclassic** era from **AD 950 to 1520**, northern towns boomed for centuries. Stone temples rose beside busy coastal harbours and salt flats. Along the Caribbean coast, walled cliffside **Tulum** welcomed giant sea canoes. Merchants traded salt, honey, cotton, and bright feathers!",
+          "content": "<span class=\"para-ref\">[6.3]</span> As southern harvests shrank and wars raged, hungry families lost trust in southern kings. Crucially, the **Maya** people never vanished when southern plazas fell quiet after **AD 900**! Thousands moved north towards Yucatán cities with deep **cenotes**, like **Chichén Itzá** and **Uxmal**.<br><br><span class=\"para-ref\">[6.4]</span> During this vibrant **Postclassic** era from **AD 950 to 1520**, northern towns boomed for centuries. Stone temples rose beside busy coastal harbours and salt flats. Along the Caribbean coast, walled cliffside **Tulum** welcomed giant sea canoes. Merchants traded salt, honey, cotton, and bright feathers!",
+          "image": "/units/ks2_maya_civilisation/assets/tikal_temple_ii_great_plaza.jpg",
+          "image_alt": "Steep limestone staircase and roof comb of Temple II overlooking the grassy Great Plaza at Tikal",
+          "caption": "Temple II on Tikal’s Great Plaza — as southern reservoirs dried up, Maya families moved towards northern cenotes and sea trade.",
+          "image_caption": "Temple II on Tikal’s Great Plaza — as southern reservoirs dried up, Maya families moved towards northern cenotes and sea trade.",
+          "isReversed": true,
+          "sources": [
             {
               "id": "ks2_maya_civilisation_l6_src_b",
               "letter": "B",
@@ -4862,24 +4682,6 @@ window.UNIT_DATA = {
               "question": "How does Source C prove that Maya people and ancient skills never vanished?",
               "model_answer": "Source C shows a modern Maya woman in Guatemala weaving colourful huipil cloth on a traditional backstrap loom used by her ancestors for millennia!",
               "provenance": "Contemporary photograph of an Indigenous Maya woman weaving patterned huipil cloth on a traditional backstrap loom in Guatemala."
-            },
-            {
-              "id": "ks2_maya_civilisation_l6_src_d",
-              "letter": "D",
-              "source_letter": "D",
-              "type": "photograph",
-              "src": "/units/ks2_maya_civilisation/assets/chichicastenango_rainbow_maya_threads.jpg",
-              "image": "/units/ks2_maya_civilisation/assets/chichicastenango_rainbow_maya_threads.jpg",
-              "title": "Source D: Hand-Dyed Rainbow Weaving Threads at Chichicastenango Maya Market (Guatemala)",
-              "caption": "Bundles of vibrant dyed cotton threads sold at the famous K'iche' Maya highland market of Chichicastenango, where the Popol Vuh was preserved.",
-              "author": "K'iche' Maya Textile Merchants at Chichicastenango",
-              "date": "21st Century (Highland Guatemala)",
-              "context": "Over seven million Maya people live across Mexico, Guatemala, Belize, Honduras, and El Salvador today, speaking more than thirty Mayan languages and trading in bustling markets like Chichicastenango. **Hinge Question:** Why is it much more accurate to talk about the \"southern city shift\" around AD 900 rather than the \"disappearance of the Maya\"?",
-              "source_context": "Over seven million Maya people live across Mexico, Guatemala, Belize, Honduras, and El Salvador today, speaking more than thirty Mayan languages and trading in bustling markets like Chichicastenango. **Hinge Question:** Why is it much more accurate to talk about the \"southern city shift\" around AD 900 rather than the \"disappearance of the Maya\"?",
-              "question_badge": "LIVING MAYA MARKET",
-              "question": "What does Chichicastenango market in Source D tell us about Maya culture today?",
-              "model_answer": "Source D shows Maya culture is alive and thriving today, with over seven million Maya people speaking Mayan languages, farming maize, and weaving vibrant textiles!",
-              "provenance": "Photograph of hand-dyed rainbow cotton weaving threads at the K'iche' Maya highland market of Chichicastenango, Guatemala."
             }
           ]
         }
@@ -4938,24 +4740,6 @@ window.UNIT_DATA = {
           "question": "How does Source C prove that Maya people and ancient skills never vanished?",
           "model_answer": "Source C shows a modern Maya woman in Guatemala weaving colourful huipil cloth on a traditional backstrap loom used by her ancestors for millennia!",
           "provenance": "Contemporary photograph of an Indigenous Maya woman weaving patterned huipil cloth on a traditional backstrap loom in Guatemala."
-        },
-        {
-          "id": "ks2_maya_civilisation_l6_src_d",
-          "letter": "D",
-          "source_letter": "D",
-          "type": "photograph",
-          "src": "/units/ks2_maya_civilisation/assets/chichicastenango_rainbow_maya_threads.jpg",
-          "image": "/units/ks2_maya_civilisation/assets/chichicastenango_rainbow_maya_threads.jpg",
-          "title": "Source D: Hand-Dyed Rainbow Weaving Threads at Chichicastenango Maya Market (Guatemala)",
-          "caption": "Bundles of vibrant dyed cotton threads sold at the famous K'iche' Maya highland market of Chichicastenango, where the Popol Vuh was preserved.",
-          "author": "K'iche' Maya Textile Merchants at Chichicastenango",
-          "date": "21st Century (Highland Guatemala)",
-          "context": "Over seven million Maya people live across Mexico, Guatemala, Belize, Honduras, and El Salvador today, speaking more than thirty Mayan languages and trading in bustling markets like Chichicastenango. **Hinge Question:** Why is it much more accurate to talk about the \"southern city shift\" around AD 900 rather than the \"disappearance of the Maya\"?",
-          "source_context": "Over seven million Maya people live across Mexico, Guatemala, Belize, Honduras, and El Salvador today, speaking more than thirty Mayan languages and trading in bustling markets like Chichicastenango. **Hinge Question:** Why is it much more accurate to talk about the \"southern city shift\" around AD 900 rather than the \"disappearance of the Maya\"?",
-          "question_badge": "LIVING MAYA MARKET",
-          "question": "What does Chichicastenango market in Source D tell us about Maya culture today?",
-          "model_answer": "Source D shows Maya culture is alive and thriving today, with over seven million Maya people speaking Mayan languages, farming maize, and weaving vibrant textiles!",
-          "provenance": "Photograph of hand-dyed rainbow cotton weaving threads at the K'iche' Maya highland market of Chichicastenango, Guatemala."
         }
       ],
       "causal_domino_spine": {

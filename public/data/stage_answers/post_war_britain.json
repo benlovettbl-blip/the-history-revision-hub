@@ -1,0 +1,1140 @@
+{
+  "unit_id": "post_war_britain",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "National movement",
+            "bullet": "Seventeen regional groups united under Fawcett in 1897 → built 50,000 peaceful Suffragist members"
+          },
+          {
+            "hint": "Constitutional methods",
+            "bullet": "Used law-abiding mass petitions and parliamentary lobbying → pressured MPs without breaking the law"
+          },
+          {
+            "hint": "Moral argument",
+            "bullet": "Demonstrated calm civic responsibility → aimed to prove women were mature citizens fit to vote"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Victorian exclusion",
+            "bullet": "Nineteenth-century Reform Acts expanded male voting → still excluded all women from parliamentary elections"
+          },
+          {
+            "hint": "Slow progress",
+            "bullet": "MPs repeatedly talked out suffrage bills → peaceful patience later frustrated militant campaigners"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NATIONAL UNITY",
+            "stem": "Uniting seventeen regional groups in 1897, ____________ led over ____________ peaceful Suffragists to..."
+          },
+          {
+            "badge": "LAWFUL TACTICS",
+            "stem": "Through constitutional methods such as ____________ and ____________, the NUWSS sought to..."
+          },
+          {
+            "badge": "CIVIC MATURITY",
+            "stem": "By proving their ____________, Suffragists aimed to convince politicians that women..."
+          }
+        ],
+        "watch_out": "Do not confuse peaceful Suffragists in the NUWSS with militant Suffragettes in the WSPU founded six years later.",
+        "prose_hash": "ea3ab8eb06",
+        "prose_fp": "5b1e19ff",
+        "question_hash": "6b188682fa"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Parliamentary delay",
+            "bullet": "Decades of stalled peaceful lobbying frustrated Emmeline Pankhurst → founded the WSPU in October 1903"
+          },
+          {
+            "hint": "Headline publicity",
+            "bullet": "Chained themselves to railings and disrupted rallies → forced female suffrage onto front-page news"
+          },
+          {
+            "hint": "Military discipline",
+            "bullet": "Operated as a strict hierarchy confronting police → pressured ministers to concede the vote"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Suffragist contrast",
+            "bullet": "Fawcett’s NUWSS relied on patient persuasion → Pankhurst argued polite petitions were ignored by MPs"
+          },
+          {
+            "hint": "Public backlash",
+            "bullet": "Escalating militancy grabbed headlines → risked alienating moderate MPs who claimed women were reckless"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FOUNDING MOTIVE",
+            "stem": "Frustrated by decades of ____________, Emmeline Pankhurst founded the ____________ in Manchester because..."
+          },
+          {
+            "badge": "DIRECT ACTION",
+            "stem": "Adopting the motto ____________, Suffragettes chained themselves to ____________ and disrupted rallies to..."
+          },
+          {
+            "badge": "POLITICAL PRESSURE",
+            "stem": "Unlike peaceful petitioners, the WSPU used a disciplined ____________ to force the government to..."
+          }
+        ],
+        "watch_out": "Suffragettes did not start with extreme violence in 1903—early WSPU militancy focused on heckling, rallies, and headline-grabbing disruption.",
+        "prose_hash": "80a12b83e7",
+        "prose_fp": "2badfd31",
+        "question_hash": "35bdb0469e"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Holloway prisons",
+            "bullet": "Liberal ministers ordered forced tube-feeding with rubber hoses → prevented martyrs but sparked public outrage"
+          },
+          {
+            "hint": "1913 legislation",
+            "bullet": "Passed the 1913 Cat and Mouse Act → released weak hunger strikers on licence"
+          },
+          {
+            "hint": "Cycle of arrest",
+            "bullet": "Police re-arrested Suffragettes once their health recovered → avoided prison deaths while continuing punishment"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Political status",
+            "bullet": "Jailed Suffragettes were classed as ordinary criminals → sparked hunger strikes for political prisoner status"
+          },
+          {
+            "hint": "Propaganda victory",
+            "bullet": "WSPU awarded silver Hunger Strike Medals → turned state brutality into sympathy for the cause"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FORCED FEEDING",
+            "stem": "When imprisoned Suffragettes went on hunger strike in ____________, the Liberal government introduced ____________, which..."
+          },
+          {
+            "badge": "CAT AND MOUSE",
+            "stem": "To avoid public outrage over ____________, Parliament passed the 1913 ____________ so that..."
+          },
+          {
+            "badge": "TEMPORARY LICENCE",
+            "stem": "Severely weakened prisoners were released on licence, only to be ____________ as soon as..."
+          }
+        ],
+        "watch_out": "The 1913 Cat and Mouse Act was not an act of mercy—it let authorities avoid prison deaths while re-imprisoning women repeatedly.",
+        "prose_hash": "96c3abd6b1",
+        "prose_fp": "5a58a2a8",
+        "question_hash": "debaf1582b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Elite unit",
+            "bullet": "WSPU formed a thirty-woman Bodyguard unit → shielded fugitive Emmeline Pankhurst at public speeches"
+          },
+          {
+            "hint": "Martial arts",
+            "bullet": "Edith Garrud trained members in jiu-jitsu → used agility and leverage against heavy police batons"
+          },
+          {
+            "hint": "Hidden weapons",
+            "bullet": "Concealed wooden clubs beneath Edwardian dresses → fought off arresting officers during street raids"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Re-arrest threat",
+            "bullet": "Under the Cat and Mouse Act police hunted Pankhurst → necessitated close physical protection"
+          },
+          {
+            "hint": "Escalating clash",
+            "bullet": "Street battles peaked alongside Emily Davison’s 1913 Epsom Derby death → deepened crisis before war"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "JIU-JITSU TRAINING",
+            "stem": "Directed by martial arts pioneer ____________, the thirty-woman Bodyguard learned ____________ so they could..."
+          },
+          {
+            "badge": "CONCEALED DEFENCE",
+            "stem": "Hiding ____________ beneath their Edwardian dresses, bodyguards surrounded ____________ at public rallies to..."
+          },
+          {
+            "badge": "BAFFLING POLICE",
+            "stem": "In response to escalating ____________, agile self-defence tactics enabled the WSPU unit to..."
+          }
+        ],
+        "watch_out": "The Bodyguard used jiu-jitsu and clubs defensively to stop police re-arresting Pankhurst under the Cat and Mouse Act, not to launch random attacks.",
+        "prose_hash": "0badea0006",
+        "prose_fp": "9af164d3",
+        "question_hash": "7d033260ca"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Truce declared",
+            "bullet": "Outbreak of war in August 1914 halted militancy → Suffragettes and Suffragists backed patriotic mobilisation"
+          },
+          {
+            "hint": "Munitions factories",
+            "bullet": "Over 1.5 million women worked on farms and shells → Canary Girls proved indispensable"
+          },
+          {
+            "hint": "1918 breakthrough",
+            "bullet": "Wartime service shattered MP opposition → Representation of the People Act enfranchised 8.4 million women"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pre-war groundwork",
+            "bullet": "Decades of NUWSS lobbying and WSPU campaigning → kept suffrage ready once war attitudes shifted"
+          },
+          {
+            "hint": "Incomplete equality",
+            "bullet": "1918 law restricted votes to property-holding women over thirty → younger munitions workers waited until 1928"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PATRIOTIC SERVICE",
+            "stem": "Following the outbreak of war in ____________, over ____________ women entered vital roles such as..."
+          },
+          {
+            "badge": "SHATTERED OPPOSITION",
+            "stem": "Hazardous war work by munitions ____________ proved women’s capability, persuading MPs to pass..."
+          },
+          {
+            "badge": "PARTIAL VICTORY",
+            "stem": "Under the February 1918 Act, ____________ women aged over ____________ gained the vote, although..."
+          }
+        ],
+        "watch_out": "The 1918 Act did not give all women the vote—young working-class Canary Girls under thirty were still excluded until 1928.",
+        "prose_hash": "34950ff09b",
+        "prose_fp": "598a1140",
+        "question_hash": "218a6b4ef1"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Pied Piper",
+            "bullet": "Evacuating 1.5 million urban children to rural homes → exposed shocking rickets, lice, and malnutrition"
+          },
+          {
+            "hint": "Home Front",
+            "bullet": "Ration queues, Blitz bombing, and ARP duty → forged cross-class solidarity through shared wartime hardship"
+          },
+          {
+            "hint": "Post-war resolve",
+            "bullet": "Affluent hosts witnessed slum deprivation firsthand → united voters behind ending poverty after victory"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Interwar divide",
+            "bullet": "1930s slum poverty had remained hidden in industrial cities → evacuation forced wealthy Britain to look"
+          },
+          {
+            "hint": "Total war",
+            "bullet": "Like female munitions workers in 1914–1918 → civilian sacrifice fuelled demands for lasting social reform"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HIDDEN POVERTY",
+            "stem": "Relocating 1.5 million city evacuees during ____________ shocked rural hosts by exposing ____________ and..."
+          },
+          {
+            "badge": "SHARED HARDSHIP",
+            "stem": "Across the Home Front, ____________ and serving together as ____________ broke down class barriers by..."
+          },
+          {
+            "badge": "REFORM CONSENSUS",
+            "stem": "Shared wartime sacrifice convinced citizens across classes to eliminate ____________ and build..."
+          }
+        ],
+        "watch_out": "Evacuation did not immediately create harmony—initial shock and prejudice at urban poverty forced wealthier Britons to recognise the need for state welfare.",
+        "prose_hash": "a2daadb869",
+        "prose_fp": "bc3889ac",
+        "question_hash": "425d816147"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Material hardship",
+            "bullet": "Targeted Want and Disease → tackling poverty and unpaid medical bills through universal social security"
+          },
+          {
+            "hint": "Living conditions",
+            "bullet": "Targeted Ignorance, Squalor, and Idleness → demanding better schooling, slum clearance, and full employment"
+          },
+          {
+            "hint": "Lifelong promise",
+            "bullet": "Sold 630,000 copies in December 1942 → promised cradle-to-grave protection against destitution"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wartime morale",
+            "bullet": "Published amid bleak war years → gave civilians and troops a hopeful blueprint worth fighting for"
+          },
+          {
+            "hint": "Patchwork charity",
+            "bullet": "Before 1942, charity and harsh means tests failed → left millions of poor families unprotected"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FIVE GIANTS",
+            "stem": "Published in December 1942, ____________ identified five giants blocking progress: Want, ____________, Ignorance, ____________, and..."
+          },
+          {
+            "badge": "PLAIN MEANINGS",
+            "stem": "In practical terms, slaying Want meant ending ____________, while defeating Squalor and Idleness meant..."
+          },
+          {
+            "badge": "LIFELONG SECURITY",
+            "stem": "Buying over ____________ copies, the public embraced Beveridge’s vision of ____________ protection from..."
+          }
+        ],
+        "watch_out": "Memorise both Beveridge’s Giant names and their everyday meanings—Want meant poverty, Squalor meant slum housing, and Idleness meant unemployment.",
+        "prose_hash": "92667f788c",
+        "prose_fp": "d9c268bb",
+        "question_hash": "2c9c1c69c0"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "1930s memories",
+            "bullet": "Voters blamed Conservatives for 1930s mass unemployment → feared returning to dole queues and Jarrow"
+          },
+          {
+            "hint": "Bold manifesto",
+            "bullet": "Attlee’s Let Us Face the Future pledged welfare reform and nationalisation → matched public reconstruction hopes"
+          },
+          {
+            "hint": "Peace vs war",
+            "bullet": "Voters admired Churchill as war leader → trusted Labour’s 146-seat mandate to build peacetime fairness"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Beveridge appetite",
+            "bullet": "Widespread enthusiasm for the 1942 Beveridge Report → voters backed the party committed to enacting it"
+          },
+          {
+            "hint": "Forces vote",
+            "bullet": "Millions of returning soldiers and Home Front workers → refused a repeat of post-1918 broken promises"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INTERWAR LEGACY",
+            "stem": "Although voters admired ____________ in wartime, many distrusted the Conservatives because of 1930s ____________ and..."
+          },
+          {
+            "badge": "LABOUR PLEDGE",
+            "stem": "Campaigning on the manifesto ____________, Clement Attlee promised to nationalise industries and build..."
+          },
+          {
+            "badge": "POLITICAL MANDATE",
+            "stem": "Winning a ____________ majority in July 1945 gave Labour the parliamentary power to..."
+          }
+        ],
+        "watch_out": "Voters did not turn against Churchill personally in 1945—they rejected Conservative interwar austerity in favour of Labour’s Beveridge welfare pledges.",
+        "prose_hash": "c15c41e31e",
+        "prose_fp": "12f16185",
+        "question_hash": "e936dbf14b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "1946 contributions",
+            "bullet": "Workers, employers, and state paid weekly National Insurance → funded flat-rate sickness, jobless, and pension pay"
+          },
+          {
+            "hint": "1948 abolition",
+            "bullet": "National Assistance Act 1948 abolished Victorian Poor Law workhouses → ended punitive institutional relief forever"
+          },
+          {
+            "hint": "Safety net",
+            "bullet": "Created unconditional National Assistance payments → protected citizens who had not paid enough contributions"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1834 stigma",
+            "bullet": "Victorian 1834 workhouses separated destitute families → punished poverty as a personal moral failing"
+          },
+          {
+            "hint": "Slaying Want",
+            "bullet": "Turned Beveridge’s 1942 plan into law → replaced humiliating charity with statutory citizen rights"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHARED CONTRIBUTIONS",
+            "stem": "Under the ____________ of 1946, weekly payments from workers, employers, and the state funded..."
+          },
+          {
+            "badge": "ENDING WORKHOUSES",
+            "stem": "Two years later, the ____________ formally abolished ____________, ending over a century of..."
+          },
+          {
+            "badge": "UNIVERSAL SAFETY NET",
+            "stem": "Anyone falling outside the insurance scheme still received ____________, ensuring that..."
+          }
+        ],
+        "watch_out": "Do not confuse the 1946 National Insurance Act — funded by weekly worker contributions — with the 1948 National Assistance safety net for non-contributors.",
+        "prose_hash": "0060f34d5c",
+        "prose_fp": "b9425eb0",
+        "question_hash": "72cb112afe"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "BMA resistance",
+            "bullet": "British Medical Association doctors threatened a boycott → feared losing private income as state employees"
+          },
+          {
+            "hint": "Gold compromise",
+            "bullet": "Bevan let hospital consultants keep lucrative private patients in NHS beds → broke medical opposition"
+          },
+          {
+            "hint": "Appointed Day",
+            "bullet": "NHS opened on 5 July 1948 → delivered universal care free at the point of delivery"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pre-1948 barrier",
+            "bullet": "Working-class women and children previously lacked insurance cover → delayed seeing doctors due to fees"
+          },
+          {
+            "hint": "Slaying Disease",
+            "bullet": "Fulfilled Beveridge’s goal against Disease → made healthcare a universal right funded through general taxation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MEDICAL BOYCOTT",
+            "stem": "Facing a threatened boycott from doctors in the ____________, Health Minister ____________ had to overcome fears of..."
+          },
+          {
+            "badge": "PRAGMATIC DEAL",
+            "stem": "Bevan famously stuffed consultants’ mouths with gold by allowing them to treat ____________ inside..."
+          },
+          {
+            "badge": "FREE HEALTHCARE",
+            "stem": "Launching on ____________, the NHS transformed British society by guaranteeing medical treatment..."
+          }
+        ],
+        "watch_out": "Free at the point of delivery did not mean the NHS cost nothing—it was paid for collectively through general taxation rather than upfront doctor bills.",
+        "prose_hash": "ded691ab0c",
+        "prose_fp": "0701bf5a",
+        "question_hash": "b36c74dd74"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Wartime losses",
+            "bullet": "Hundreds of thousands of British deaths and Blitz devastation → created acute post-war labour shortages"
+          },
+          {
+            "hint": "Public services",
+            "bullet": "Newly founded NHS hospitals, railways, and London Transport → urgently needed nurses, drivers, and engineers"
+          },
+          {
+            "hint": "Commonwealth drive",
+            "bullet": "British agencies actively recruited across the Caribbean, India, and Pakistan → staffed national reconstruction"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Labour reforms",
+            "bullet": "Attlee’s nationalised mines, railways, and 1948 NHS → expanded state services faster than domestic staffing"
+          },
+          {
+            "hint": "Wartime bond",
+            "bullet": "Thousands of Caribbean and South Asian volunteers had already served Britain in the Second World War"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RECONSTRUCTION NEED",
+            "stem": "Exhausted by Blitz destruction and heavy ____________, post-war Britain lacked the workforce needed to..."
+          },
+          {
+            "badge": "EXPANDING SERVICES",
+            "stem": "Launching the ____________ in 1948 alongside nationalised ____________ created urgent vacancies for..."
+          },
+          {
+            "badge": "IMPERIAL RECRUITMENT",
+            "stem": "To fill vital shortages, the British government actively invited workers from ____________ to..."
+          }
+        ],
+        "watch_out": "Caribbean and South Asian pioneers did not arrive uninvited—the British government, NHS, and London Transport actively recruited them to rebuild Britain.",
+        "prose_hash": "ce955079fe",
+        "prose_fp": "30dcd053",
+        "question_hash": "a7a3ac6a68"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Shared citizenship",
+            "bullet": "Created Citizens of the UK and Colonies status → covered 800 million people across the Empire"
+          },
+          {
+            "hint": "Visa-free settlement",
+            "bullet": "Granted unrestricted legal entry to Britain → allowed Commonwealth citizens to live and work permanently"
+          },
+          {
+            "hint": "Political equality",
+            "bullet": "Issued British passports with equal Crown subject status → included immediate voting rights in general elections"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Imperial unity",
+            "bullet": "Passed as Dominions wrote own citizenship laws → Attlee sought to preserve Commonwealth ties"
+          },
+          {
+            "hint": "Legal shock",
+            "bullet": "Full statutory rights on paper → clashed sharply with informal racism migrants met on arrival"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STATUTORY STATUS",
+            "stem": "Passed by Attlee’s government, the 1948 Act made 800 million imperial subjects ____________ with..."
+          },
+          {
+            "badge": "RIGHT OF ENTRY",
+            "stem": "Without needing ____________, Commonwealth passport holders gained the unrestricted legal right to..."
+          },
+          {
+            "badge": "DEMOCRATIC VOICE",
+            "stem": "Holding equal status under the Crown meant new arrivals could immediately ____________ in..."
+          }
+        ],
+        "watch_out": "Windrush passengers were not foreign immigrants entering on temporary work permits—under the 1948 Act they arrived as full British citizens.",
+        "prose_hash": "091d97e484",
+        "prose_fp": "3afc1a8b",
+        "question_hash": "ba08f8d4d5"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Tilbury arrival",
+            "bullet": "Docked at Tilbury on 22 June 1948 → brought 492 Caribbean passengers answering labour shortages"
+          },
+          {
+            "hint": "Skilled pioneers",
+            "bullet": "Included returning RAF veterans, nurses, and skilled artisans → staffed British hospitals, transport, and industry"
+          },
+          {
+            "hint": "Cultural symbol",
+            "bullet": "Pathé filmed Lord Kitchener singing London is the place for me → symbolised multicultural Britain"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier presence",
+            "bullet": "Black Britons had lived in port cities for centuries → Windrush began larger post-war Caribbean settlement"
+          },
+          {
+            "hint": "NHS timing",
+            "bullet": "Arrived two weeks before the NHS launched → many pioneers immediately staffed new hospitals"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORIC VOYAGE",
+            "stem": "Docking at ____________ on 22 June 1948, HMT Empire Windrush carried ____________ passengers from..."
+          },
+          {
+            "badge": "SKILLED CONTRIBUTION",
+            "stem": "Among those disembarking were ____________ and ____________ who immediately helped rebuild..."
+          },
+          {
+            "badge": "MEDIA MOMENT",
+            "stem": "Captured on newsreel singing ____________, calypso artist ____________ came to symbolise the birth of..."
+          }
+        ],
+        "watch_out": "Windrush was not the very first ship bringing Black people to Britain, nor did all 492 passengers come only from Jamaica—many sailed from Trinidad and Barbados too.",
+        "prose_hash": "85baea7d58",
+        "prose_fp": "26400f03",
+        "question_hash": "050fabec70"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Landlord exclusion",
+            "bullet": "Signs reading No Blacks, No Dogs, No Irish barred tenants → trapped families in damp slums"
+          },
+          {
+            "hint": "Banking barrier",
+            "bullet": "High-street banks refused mortgages to Black buyers → blocked ordinary routes into home ownership"
+          },
+          {
+            "hint": "Pooled savings",
+            "bullet": "Trusted community members paid weekly into rotating pardner pots → bought freehold houses without bank loans"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Legal gap",
+            "bullet": "Zero anti-discrimination laws existed in the 1950s → landlords enforced an open colour bar legally"
+          },
+          {
+            "hint": "Caribbean heritage",
+            "bullet": "Adapted traditional West Indian cooperative saving → turned collective trust into permanent British roots"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HOUSING BARRIERS",
+            "stem": "Shut out by landlords displaying ____________ signs and banks refusing ____________, Caribbean families faced..."
+          },
+          {
+            "badge": "ROTATING CREDIT",
+            "stem": "To bypass high-street banks, communities organised cooperative ____________ where members contributed..."
+          },
+          {
+            "badge": "ECONOMIC RESILIENCE",
+            "stem": "Pooling weekly savings enabled families to purchase ____________, proving resilient self-help against..."
+          }
+        ],
+        "watch_out": "A pardner hand was not charity or a bank loan—it was a disciplined rotating savings club based on mutual community trust.",
+        "prose_hash": "46867e5c2e",
+        "prose_fp": "7d6fb34a",
+        "question_hash": "41c1af0d12"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "1958 violence",
+            "bullet": "White Teddy Boy mobs attacked Black residents in Notting Hill → exposed police indifference and trauma"
+          },
+          {
+            "hint": "Black press",
+            "bullet": "Claudia Jones founded the West Indian Gazette in Brixton → gave Black Britons a political voice"
+          },
+          {
+            "hint": "Indoor carnival",
+            "bullet": "Staged the 1959 Caribbean Carnival at St Pancras Town Hall → celebrated culture and healed fear"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Decade of hostility",
+            "bullet": "Years of housing colour bars and street hostility → erupted into riots in August 1958"
+          },
+          {
+            "hint": "Lasting legacy",
+            "bullet": "Jones’s televised 1959 indoor showcase → inspired the outdoor Notting Hill Carnival later in the 1960s"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "POLITICAL VOICE",
+            "stem": "After white Teddy Boy mobs attacked Black residents in ____________, Claudia Jones launched ____________ in Brixton to..."
+          },
+          {
+            "badge": "CULTURAL RESISTANCE",
+            "stem": "Organising the January 1959 ____________ inside ____________ used steel bands and dance to..."
+          },
+          {
+            "badge": "LONG-TERM LEGACY",
+            "stem": "Rather than retreating in fear, Jones’s cultural response laid foundations for the later ____________..."
+          }
+        ],
+        "watch_out": "Claudia Jones’s 1959 Caribbean Carnival was held indoors at St Pancras Town Hall in winter—the outdoor Notting Hill street festival developed later in the 1960s.",
+        "prose_hash": "5672536f89",
+        "prose_fp": "0db18d3c",
+        "question_hash": "54672e5fb7"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Segregated roles",
+            "bullet": "Confined Black workers to low-paid garage cleaning → barred them from better-paid driver and conductor jobs"
+          },
+          {
+            "hint": "Union collusion",
+            "bullet": "Local TGWU branch passed a resolution refusing Black crews → protected white workers’ overtime earnings"
+          },
+          {
+            "hint": "Stubborn prejudice",
+            "bullet": "Managers enforced the colour bar despite 200 vacancies → chose daily cancellations over hiring Black staff"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Legal vacuum",
+            "bullet": "Employment racism remained legal in 1963 → even a state-owned bus company could discriminate openly"
+          },
+          {
+            "hint": "London contrast",
+            "bullet": "London Transport had recruited Caribbean bus crews since 1948 → exposed Bristol’s ban as local prejudice"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COMPANY POLICY",
+            "stem": "Despite suffering a shortage of ____________, the state-owned Bristol Omnibus Company restricted Black workers to..."
+          },
+          {
+            "badge": "UNION OPPOSITION",
+            "stem": "Behind the management ban stood the local ____________, whose white members feared losing..."
+          },
+          {
+            "badge": "ECONOMIC IRRATIONALITY",
+            "stem": "Choosing daily ____________ over hiring qualified Black crews exposed how stubbornly..."
+          }
+        ],
+        "watch_out": "Racism in the 1963 bus dispute came from both management and local white TGWU union members, not solely from company bosses.",
+        "prose_hash": "8e284300b6",
+        "prose_fp": "1229ad36",
+        "question_hash": "76f196ee68"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Ideal candidate",
+            "bullet": "Selected qualified 18-year-old Boys’ Brigade officer Guy Bailey → removed any excuse about skills or character"
+          },
+          {
+            "hint": "Telephone test",
+            "bullet": "Paul Stephenson phoned to state Bailey was West Indian → manager immediately cancelled the interview"
+          },
+          {
+            "hint": "Press exposure",
+            "bullet": "Alerted Bristol journalists with direct proof → shattered company denials and sparked citywide outrage"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Previous excuses",
+            "bullet": "Managers had long blamed rejections on failed tests → Stephenson’s trap isolated race as sole factor"
+          },
+          {
+            "hint": "Community leadership",
+            "bullet": "West Indian Development Council united younger activists → challenged cautious older diplomatic approaches"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TEST APPLICATION",
+            "stem": "To expose company excuses, ____________ arranged a conductor interview for qualified 18-year-old ____________, who..."
+          },
+          {
+            "badge": "PHONE REVELATION",
+            "stem": "Once Stephenson telephoned the depot to mention Bailey’s ____________, the manager immediately..."
+          },
+          {
+            "badge": "PUBLIC PROOF",
+            "stem": "Taking this undeniable evidence straight to ____________ turned a hidden colour bar into..."
+          }
+        ],
+        "watch_out": "Guy Bailey was not rejected after failing an interview—the company offered him the interview on merit, then cancelled it solely upon learning he was West Indian.",
+        "prose_hash": "58c35c5648",
+        "prose_fp": "6d74898c",
+        "question_hash": "0ebf139244"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Collective action",
+            "bullet": "West Indian Development Council launched boycott on 30 April 1963 → united 3,000 Black residents"
+          },
+          {
+            "hint": "Financial hit",
+            "bullet": "Black passengers and white allies walked to work → drained daily ticket revenue from buses"
+          },
+          {
+            "hint": "Media spotlight",
+            "bullet": "Sustained peaceful protest drew national newspaper and TV coverage → shamed company managers across Britain"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Alabama inspiration",
+            "bullet": "Modelled on Martin Luther King’s 1955 Montgomery Boycott → brought non-violent protest to Bristol"
+          },
+          {
+            "hint": "Direct action",
+            "bullet": "Like earlier women’s suffrage campaigns → peaceful mass disruption forced ignored injustices onto national headlines"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TRANSATLANTIC MODEL",
+            "stem": "Inspired by the 1955 ____________ in Alabama, organisers Roy Hackett and ____________ called on..."
+          },
+          {
+            "badge": "ECONOMIC LEVERAGE",
+            "stem": "Refusing to board company buses hit ____________ directly while proving solidarity between..."
+          },
+          {
+            "badge": "NATIONAL SCRUTINY",
+            "stem": "Beyond lost fares, four months of peaceful boycotting shamed managers by attracting ____________..."
+          }
+        ],
+        "watch_out": "Do not confuse the 1955 Montgomery Bus Boycott against segregated US seating with the 1963 Bristol Boycott against a ban on hiring Black bus crews.",
+        "prose_hash": "ec20cb27f8",
+        "prose_fp": "acf4bd44",
+        "question_hash": "3e892ac33e"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Student marches",
+            "bullet": "Hundreds of Bristol University students picketed the bus station → broadened local support with church groups"
+          },
+          {
+            "hint": "Local MP",
+            "bullet": "Bristol MP Tony Benn publicly backed boycotters → isolated local union officials defending the colour bar"
+          },
+          {
+            "hint": "National pledge",
+            "bullet": "Opposition leader Harold Wilson condemned the ban in London → promised future laws against racial discrimination"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Coalition building",
+            "bullet": "Cross-racial alliance of Black churches, white students, and MPs → prevented bosses dismissing protest as fringe"
+          },
+          {
+            "hint": "Commonwealth voices",
+            "bullet": "Trinidadian cricketer Learie Constantine also condemned the company → added international diplomatic embarrassment"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LOCAL SOLIDARITY",
+            "stem": "Marching through central Bristol, ____________ and West Indian church groups picketed ____________ to..."
+          },
+          {
+            "badge": "PARLIAMENTARY ALLY",
+            "stem": "Local MP ____________ strengthened the campaign’s legitimacy by publicly refusing to..."
+          },
+          {
+            "badge": "WESTMINSTER PROMISE",
+            "stem": "At a national level, Labour leader ____________ turned Bristol’s dispute into a pledge for..."
+          }
+        ],
+        "watch_out": "Harold Wilson was still Opposition leader in 1963—he pledged anti-racism laws during the boycott and passed them after winning power in 1964.",
+        "prose_hash": "51f10b774b",
+        "prose_fp": "8078b20d",
+        "question_hash": "c92cdc43bd"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "August victory",
+            "bullet": "Union members voted to scrap the colour bar on 28 August 1963 → ended crew exclusion"
+          },
+          {
+            "hint": "Breakthrough hires",
+            "bullet": "Raghbir Singh became Bristol’s first non-white conductor in September → followed quickly by Black colleagues"
+          },
+          {
+            "hint": "Statutory reform",
+            "bullet": "Catalysed the 1965 and 1968 Race Relations Acts → outlawed public, housing, and job discrimination"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1950s contrast",
+            "bullet": "Ended the legal gap behind 1950s No Blacks signs → gave victims statutory protection at last"
+          },
+          {
+            "hint": "Global echo",
+            "bullet": "Fell on the day of King’s Washington speech → linked British and American struggles"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BARRIER BROKEN",
+            "stem": "Capitulating on ____________, the company and union ended the colour bar, hiring ____________ as first..."
+          },
+          {
+            "badge": "FIRST LAWS",
+            "stem": "Fulfilling his boycott pledge, Prime Minister Harold Wilson passed the ____________ of 1965 and 1968 to..."
+          },
+          {
+            "badge": "WIDER PROTECTION",
+            "stem": "By 1968, statutory bans finally outlawed racial discrimination across ____________ and..."
+          }
+        ],
+        "watch_out": "The 1965 Race Relations Act outlawed discrimination only in public places—employment and housing bans were not made illegal until the 1968 Act.",
+        "prose_hash": "2acd1f3360",
+        "prose_fp": "090ff3fe",
+        "question_hash": "14b5ed1400"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "World status",
+            "bullet": "Operation Hurricane in 1952 and Grapple in 1957 → preserved great-power prestige alongside superpowers"
+          },
+          {
+            "hint": "Soviet deterrence",
+            "bullet": "Built atomic and megaton hydrogen bombs → aimed to deter a Soviet invasion of Western Europe"
+          },
+          {
+            "hint": "Strategic independence",
+            "bullet": "Attlee and Churchill backed a national arsenal → avoided relying solely on American nuclear protection"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shrinking empire",
+            "bullet": "Post-war economic debt and imperial retreat → pushed leaders to guard Britain’s global diplomatic seat"
+          },
+          {
+            "hint": "Bipartisan policy",
+            "bullet": "Both Labour under Attlee and Conservatives under Churchill → secretly funded British nuclear weapons"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GLOBAL PRESTIGE",
+            "stem": "Detonating its first atomic bomb in ____________ and H-bomb in ____________ allowed Britain to claim..."
+          },
+          {
+            "badge": "COLD WAR DETERRENCE",
+            "stem": "Both Attlee and Churchill argued an independent arsenal was vital to deter ____________ without..."
+          },
+          {
+            "badge": "ALLIANCE AUTONOMY",
+            "stem": "Rather than depending entirely on ____________ for defence, British leaders wanted..."
+          }
+        ],
+        "watch_out": "Britain’s nuclear bomb was not purely a Conservative project—Labour Prime Minister Clement Attlee initiated the atomic programme alongside building the NHS.",
+        "prose_hash": "158e633896",
+        "prose_fp": "02adf15c",
+        "question_hash": "b0705b40f6"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Fallout horror",
+            "bullet": "Growing alarm over genetic damage from atmospheric H-bomb fallout → sparked CND’s launch in February 1958"
+          },
+          {
+            "hint": "Unilateral goal",
+            "bullet": "Bertrand Russell and Canon Collins demanded Britain scrap nuclear weapons first → set a moral example"
+          },
+          {
+            "hint": "Semaphore design",
+            "bullet": "Gerald Holtom fused naval flag signals for N and D → stood for Nuclear Disarmament"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1957 catalyst",
+            "bullet": "Britain’s 1957 Pacific H-bomb tests → intensified public dread of strontium-90 poisoning milk and bones"
+          },
+          {
+            "hint": "Uncopyrighted icon",
+            "bullet": "Holtom left his 1958 badge uncopyrighted → spread globally as the universal symbol of peace"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MORAL CAMPAIGN",
+            "stem": "Alarmed by radioactive fallout, ____________ and Canon Collins founded CND in 1958 to campaign for..."
+          },
+          {
+            "badge": "UNILATERAL STANCE",
+            "stem": "Unilateral disarmament meant Britain should voluntarily ____________ without waiting for..."
+          },
+          {
+            "badge": "SEMAPHORE SYMBOL",
+            "stem": "Designer ____________ created the iconic CND badge by combining naval semaphore letters ____________ and..."
+          }
+        ],
+        "watch_out": "Unilateral disarmament meant Britain giving up its nuclear weapons independently first, rather than waiting for multilateral treaties with the USA and USSR.",
+        "prose_hash": "f60d79d022",
+        "prose_fp": "27ec6601",
+        "question_hash": "6c29d480f9"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Target site",
+            "bullet": "Marched 52 miles over Easter 1958 → targeted Britain’s nuclear weapons laboratory at Aldermaston"
+          },
+          {
+            "hint": "Broad coalition",
+            "bullet": "Students, young families, pacifists, and jazz bands braved four days of rain → energised peaceful protest"
+          },
+          {
+            "hint": "Youth awakening",
+            "bullet": "Turned nuclear protest into a vibrant youth counter-culture → inspired post-war teenagers to challenge authority"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Peaceful tradition",
+            "bullet": "Echoed earlier NUWSS pilgrimages and Jarrow marchers → used disciplined endurance to win public sympathy"
+          },
+          {
+            "hint": "Generational shift",
+            "bullet": "Teenagers raised in the shadow of the bomb → rejected passive deference toward Whitehall secrecy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SYMBOLIC ROUTE",
+            "stem": "Walking 52 miles over Easter 1958, CND protesters targeted ____________ in Berkshire because..."
+          },
+          {
+            "badge": "CULTURAL MIX",
+            "stem": "Alongside pacifists and families, ____________ and ____________ gave the four-day march a..."
+          },
+          {
+            "badge": "GENERATIONAL IMPACT",
+            "stem": "Braving wind and rain together forged a new post-war ____________ that encouraged young Britons to..."
+          }
+        ],
+        "watch_out": "Aldermaston was not an American missile airbase—it was Britain’s own Atomic Weapons Research Establishment where British warheads were designed.",
+        "prose_hash": "7bfb6ed5d5",
+        "prose_fp": "d866f269",
+        "question_hash": "f56ab2fa81"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Observer network",
+            "bullet": "Served as one of twenty-nine Royal Observer Corps HQs → tracked nuclear blasts and fallout plumes"
+          },
+          {
+            "hint": "Sealed survival",
+            "bullet": "Reinforced concrete walls housed sixty volunteers for thirty days → kept wartime monitoring running underground"
+          },
+          {
+            "hint": "Scientific tracking",
+            "bullet": "Used Geiger counters and triangulation boards → mapped windborne radiation to warn surviving regions"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Public exclusion",
+            "bullet": "No deep public fallout shelters were built for ordinary families → fuelled anger over state secrecy"
+          },
+          {
+            "hint": "Cold War peak",
+            "bullet": "Opened in 1961 amid Berlin and Cuban tensions → reflected real Whitehall fear of thermonuclear war"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FALLOUT MONITORING",
+            "stem": "Constructed behind reinforced concrete in 1961, the York bunker housed ____________ volunteers whose job was to..."
+          },
+          {
+            "badge": "TRACKING RADIATION",
+            "stem": "Sealed underground for up to ____________, officers used ____________ and map boards to plot..."
+          },
+          {
+            "badge": "UNEQUAL PROTECTION",
+            "stem": "While the state funded twenty-nine secret ____________, ordinary British citizens were given..."
+          }
+        ],
+        "watch_out": "The York Cold War Bunker was never a public bomb shelter for York residents—it was a sealed monitoring post exclusively for sixty Royal Observer Corps staff.",
+        "prose_hash": "6c0d6ae7f5",
+        "prose_fp": "2f218a6f",
+        "question_hash": "304424d59a"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Makeshift shelter",
+            "bullet": "Advised leaning wooden doors and mattresses after a four-minute warning → exposed hopeless nuclear defence"
+          },
+          {
+            "hint": "Intellectual critique",
+            "bullet": "Public ridicule inspired E. P. Thompson’s Protest and Survive → revived mass CND membership in 1980"
+          },
+          {
+            "hint": "Embrace the Base",
+            "bullet": "Thirty thousand women encircled Greenham Common’s nine-mile fence in 1982 → protested US cruise missiles"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Second Cold War",
+            "bullet": "Renewed 1980s superpower confrontation and NATO missile deployment → reignited 1950s fears of nuclear annihilation"
+          },
+          {
+            "hint": "Female activism",
+            "bullet": "Greenham’s women-only peace camp echoed Suffragette direct action → sustained non-violent protest for years"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FUTILE ADVICE",
+            "stem": "Telling families to shelter under ____________ and mattresses after a ____________ exposed the absurdity of..."
+          },
+          {
+            "badge": "PUBLIC BACKLASH",
+            "stem": "Outrage at the 1980 booklet inspired historian ____________ to write ____________, arguing that..."
+          },
+          {
+            "badge": "GREENHAM ENCIRCLEMENT",
+            "stem": "In 1982, ____________ women joined hands around RAF Greenham Common to oppose..."
+          }
+        ],
+        "watch_out": "Protect and Survive failed to reassure the public—its flimsy wooden-door shelters convinced millions that preventing nuclear war through protest was the only survival strategy.",
+        "prose_hash": "207f6b1c87",
+        "prose_fp": "79fda9fc",
+        "question_hash": "54015e31ec"
+      }
+    ]
+  }
+}

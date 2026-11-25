@@ -1,0 +1,1140 @@
+{
+  "unit_id": "medieval_england",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Missing royal heir",
+            "bullet": "Edward the Confessor died childless on 5 January 1066 → left no direct bloodline successor"
+          },
+          {
+            "hint": "Anglo-Saxon council",
+            "bullet": "Royal council called the Witan elected monarchs → royal blood alone did not guarantee succession"
+          },
+          {
+            "hint": "Rapid coronation",
+            "bullet": "Witan crowned wealthy Earl Harold Godwinson within twenty-four hours → provoked rival foreign claimants"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cross-Channel ties",
+            "bullet": "Edward’s earlier ties to Normandy → encouraged Duke William to claim he had been promised England"
+          },
+          {
+            "hint": "Scandinavian past",
+            "bullet": "Earlier Danish rule over Anglo-Saxon England → invited Viking monarchs to revive rival dynastic claims"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DYNASTIC VOID",
+            "stem": "When King Edward died ____________ in January 1066, England plunged into crisis because..."
+          },
+          {
+            "badge": "ELECTING A KING",
+            "stem": "Under Anglo-Saxon custom, the ____________ held the constitutional right to elect ____________ rather than..."
+          },
+          {
+            "badge": "CONTESTED CROWN",
+            "stem": "Crowning ____________ within twenty-four hours secured English leadership, yet abroad it triggered..."
+          }
+        ],
+        "watch_out": "Anglo-Saxon crowns did not pass automatically to the eldest blood relative—the Witan legally elected the strongest adult ruler capable of defending England.",
+        "prose_hash": "74b6cd2a52",
+        "prose_fp": "eda5fc5d",
+        "question_hash": "27fb536ab2"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Crowned English earl",
+            "bullet": "King Harold II held the throne inside England → forced to mobilize for a two-front defence"
+          },
+          {
+            "hint": "Norman duke’s case",
+            "bullet": "Duke William cited Edward’s 1051 promise and Harold’s 1064 relic oath → won papal backing"
+          },
+          {
+            "hint": "Norwegian warrior king",
+            "bullet": "Harald Hardrada invoked an older Scandinavian royal pact → launched a Viking invasion from Norway"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Domestic advantage",
+            "bullet": "Swift January election in Westminster → gave Harold immediate control of English troops and taxes"
+          },
+          {
+            "hint": "Papal authority",
+            "bullet": "Pope Alexander II’s banner turned Normandy’s invasion into a holy war → attracted European knights"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NORMAN CLAIM",
+            "stem": "Across the Channel, ____________ argued he deserved the crown based on ____________ and carried a..."
+          },
+          {
+            "badge": "VIKING RIVAL",
+            "stem": "From Scandinavia, ____________ staked a rival claim rooted in ____________, threatening England’s northern..."
+          },
+          {
+            "badge": "TWO-FRONT THREAT",
+            "stem": "Caught between two foreign invaders, ____________ had to prepare English armies to defend..."
+          }
+        ],
+        "watch_out": "Do not confuse the two similarly named rivals—Harold Godwinson was the crowned Anglo-Saxon king, whereas Harald Hardrada was the invading King of Norway.",
+        "prose_hash": "ba0b88fbe8",
+        "prose_fp": "d8ca8a44",
+        "question_hash": "ec513c5874"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Lightning northern march",
+            "bullet": "Harold force-marched 190 miles from London in four days → exhausted his core troops early"
+          },
+          {
+            "hint": "Brutal Yorkshire battle",
+            "bullet": "Savage fighting on 25 September killed Hardrada → inflicted heavy casualties on elite Saxon warriors"
+          },
+          {
+            "hint": "Unguarded south coast",
+            "bullet": "Fighting in Yorkshire left southern shores undefended → Duke William landed unopposed at Pevensey Bay"
+          }
+        ],
+        "context": [
+          {
+            "hint": "End of Viking threat",
+            "bullet": "Shattering 300 longships down to 24 survivor vessels → ended the Norwegian invasion permanently"
+          },
+          {
+            "hint": "Another march ahead",
+            "bullet": "Pevensey lay 250 miles south of Yorkshire → forced depleted troops into an immediate return march"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PHYSICAL EXHAUSTION",
+            "stem": "Marching northward at breakneck speed, Harold covered ____________ in just ____________ to catch..."
+          },
+          {
+            "badge": "COSTLY VICTORY",
+            "stem": "Although ____________ was killed on 25 September, the savage battle depleted Harold’s..."
+          },
+          {
+            "badge": "SOUTHERN EXPOSURE",
+            "stem": "Just two days later, ____________ landed unchallenged at ____________ while England’s army remained..."
+          }
+        ],
+        "watch_out": "Stamford Bridge was a crushing Anglo-Saxon victory over the Vikings, not a defeat—its danger lay in exhausting Harold’s army and leaving the south coast open.",
+        "prose_hash": "4639b4b345",
+        "prose_fp": "99758a30",
+        "question_hash": "71bf4fa380"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "High ground position",
+            "bullet": "Saxons locked shields tightly along Senlac Hill’s ridge → forced Norman horsemen to charge uphill"
+          },
+          {
+            "hint": "Front-rank troops",
+            "bullet": "Elite housecarls armed with two-handed battleaxes stood in front → hacked down advancing cavalry"
+          },
+          {
+            "hint": "Five-hour defence",
+            "bullet": "Overlapping shields deflected blind Norman arrow volleys → held the defensive line for five hours"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Fatigued soldiers",
+            "bullet": "250-mile forced march south without resting in London → made holding defensive high ground vital"
+          },
+          {
+            "hint": "Peasant infantry",
+            "bullet": "Less disciplined fyrd militia stood behind the housecarls → risked breaking formation if tempted downhill"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TERRAIN ADVANTAGE",
+            "stem": "Positioned atop the steep ridge, interlocking shields forced ____________ to lose momentum charging..."
+          },
+          {
+            "badge": "ELITE FRONT LINE",
+            "stem": "Armed with heavy two-handed axes, ____________ anchored the front rank while ____________ stood behind them."
+          },
+          {
+            "badge": "STALEMATE ON HILL",
+            "stem": "For ____________ gruelling hours, neither uphill cavalry assaults nor ____________ could fracture the wall."
+          }
+        ],
+        "watch_out": "Do not treat all Anglo-Saxon soldiers as untrained peasants—the housecarls were professional, heavily armed warriors whose discipline kept the shield wall intact.",
+        "prose_hash": "d0593fc225",
+        "prose_fp": "d5a32469",
+        "question_hash": "3baf8bab46"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Fake cavalry flight",
+            "bullet": "Norman horsemen charged uphill then pretended to flee → lured undisciplined fyrd militia downhill"
+          },
+          {
+            "hint": "Open-ground ambush",
+            "bullet": "Cavalry wheeled round on flat ground → surrounded and slaughtered scattered Saxon pursuers"
+          },
+          {
+            "hint": "High-angled arrows",
+            "bullet": "Gaps thinned the ridge line as archers shot high → killed King Harold and shattered resistance"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Breton panic",
+            "bullet": "Earlier genuine flight by Breton troops on the left flank → inspired William’s deliberate trap"
+          },
+          {
+            "hint": "Conquest begins",
+            "bullet": "Harold’s death left Anglo-Saxon England leaderless → paved the way for William’s Christmas coronation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TACTICAL TRAP",
+            "stem": "By ordering his horsemen to stage fake retreats, William tricked ____________ into abandoning..."
+          },
+          {
+            "badge": "CAVALRY REVERSAL",
+            "stem": "Once pursuers reached open ground below the ridge, Norman cavalry ____________ and..."
+          },
+          {
+            "badge": "FATAL COLLAPSE",
+            "stem": "With the shield wall fractured, ____________ rained down from above until ____________ fell and the army broke."
+          }
+        ],
+        "watch_out": "A feigned retreat was a disciplined tactical trap rather than genuine Norman panic—it only worked because Saxon fyrd troops broke rank to chase them downhill.",
+        "prose_hash": "7a33ae8d00",
+        "prose_fp": "6dcedbd8",
+        "question_hash": "7b1146b6b9"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Rapid forced building",
+            "bullet": "Forced Saxon labour raised castles in eight to fourteen days → secured over 500 strongholds fast"
+          },
+          {
+            "hint": "Elevated watchtower",
+            "bullet": "Ten-metre earth mottes topped with timber keeps → let small garrisons spot local unrest early"
+          },
+          {
+            "hint": "Protected courtyard",
+            "bullet": "Ditched and walled baileys sheltered Norman horsemen → launched swift raids over two million Saxons"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Outnumbered rulers",
+            "bullet": "Victory at Hastings did not end hostility → outnumbered two hundred to one, Normans needed bases"
+          },
+          {
+            "hint": "Timber vulnerability",
+            "bullet": "Wooden palisades rotted in damp weather and burned easily → later replaced by stone keeps"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SPEED OF CONTROL",
+            "stem": "Outnumbered by roughly two million Saxons, Normans used forced labour to build ____________ within..."
+          },
+          {
+            "badge": "DEFENSIVE DESIGN",
+            "stem": "Steep earth ____________ gave lookouts clear views, while the enclosed ____________ below protected..."
+          },
+          {
+            "badge": "MILITARY GRIP",
+            "stem": "Constructing over ____________ fortresses across England intimidated locals and enabled small garrisons to..."
+          }
+        ],
+        "watch_out": "Anglo-Saxons built fortified communal towns called burhs rather than private castles—Motte and Bailey forts were a hated foreign tool of military occupation.",
+        "prose_hash": "abb88b75d9",
+        "prose_fp": "098525cf",
+        "question_hash": "3c310a4244"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "York garrison massacre",
+            "bullet": "Northern rebels and Danish allies slaughtered York’s Norman garrison → threatened William’s northern rule"
+          },
+          {
+            "hint": "Scorched-earth tactics",
+            "bullet": "Troops burned crops, killed livestock, and salted soil → denied rebels food or winter shelter"
+          },
+          {
+            "hint": "Deliberate mass famine",
+            "bullet": "Over 100,000 starved to death according to Orderic Vitalis → broke northern resistance for generations"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Castles proved insufficient",
+            "bullet": "Timber castles alone failed to stop northern uprisings → drove William to unleash state terror"
+          },
+          {
+            "hint": "Wasteland on record",
+            "bullet": "Ruined Yorkshire villages remained empty waste sixteen years later → recorded across the Domesday Book"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REBEL PROVOCATION",
+            "stem": "After northern rebels and ____________ allies wiped out the garrison at ____________, William marched north to..."
+          },
+          {
+            "badge": "SCORCHED EARTH",
+            "stem": "Rather than fighting one pitched battle, Norman cavalry destroyed ____________ and ____________ so rebels could never..."
+          },
+          {
+            "badge": "DEVASTATING IMPACT",
+            "stem": "Chronicler ____________ recorded that over ____________ perished from famine, leaving northern shires desolate for..."
+          }
+        ],
+        "watch_out": "The Harrying of the North was not accidental battlefield damage—William deliberately engineered winter famine to make future northern rebellions impossible.",
+        "prose_hash": "71a54704b5",
+        "prose_fp": "8da2eb58",
+        "question_hash": "797c3822f9"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Permanent stone strength",
+            "bullet": "Thick four-storey limestone keeps replaced flammable timber → withstood fire and prolonged rebel sieges"
+          },
+          {
+            "hint": "Harbour & supply lines",
+            "bullet": "Coastal fortresses inside Roman walls guarded Portsmouth Harbour → secured cross-Channel links to Normandy"
+          },
+          {
+            "hint": "Symbol of dominance",
+            "bullet": "Towering stone masonry dominated southern skylines → deterred French fleets and crushed Saxon defiance"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier earth forts",
+            "bullet": "Freshly heaped earth mottes sank under heavy masonry → required solid ground or Roman enclosures"
+          },
+          {
+            "hint": "Cross-Channel empire",
+            "bullet": "William ruled Normandy alongside England → keeping southern warship harbours secure was vital"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MILITARY UPGRADE",
+            "stem": "Unlike early wooden watchtowers, massive ____________ keeps could not be burned and projected..."
+          },
+          {
+            "badge": "STRATEGIC COASTLINE",
+            "stem": "Built inside third-century ____________ walls beside Portsmouth Harbour, the fortress protected ____________ and deterred..."
+          },
+          {
+            "badge": "IMPERIAL MESSAGE",
+            "stem": "Across southern England, towering stone walls projected ____________ over conquered Anglo-Saxons and proved Norman rule was..."
+          }
+        ],
+        "watch_out": "Normans did not build every stone wall from scratch—at coastal sites such as Portchester, they reused massive Roman fort walls around a new limestone keep.",
+        "prose_hash": "fa39cb688d",
+        "prose_fp": "a3a6a0d5",
+        "question_hash": "e060f3b90b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Danish invasion scare",
+            "bullet": "Fear of invasion by King Cnut IV of Denmark → created urgent demand for war taxes"
+          },
+          {
+            "hint": "Nationwide wealth audit",
+            "bullet": "Royal commissioners counted every shire’s mills, meadows, and livestock → left zero hidden wealth"
+          },
+          {
+            "hint": "Maximum tax collection",
+            "bullet": "Sworn local testimonies fixed exact estate values → guaranteed the Crown extracted every penny owed"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mercenary army costs",
+            "bullet": "Quartering hired soldiers to guard English coasts was costly → pushed William toward strict auditing"
+          },
+          {
+            "hint": "Feudal obligations",
+            "bullet": "Recording exact manor holders → enabled the king to enforce military knight service across England"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INVASION THREAT",
+            "stem": "Alarmed by a threatened Danish invasion under ____________ in 1085, William needed exact records to..."
+          },
+          {
+            "badge": "TOTAL SURVEILLANCE",
+            "stem": "Under sworn oath, royal commissioners toured every shire counting ____________ so landholders could not..."
+          },
+          {
+            "badge": "FISCAL POWER",
+            "stem": "Completed in ____________, the survey ensured the Crown extracted maximum ____________ from every manor."
+          }
+        ],
+        "watch_out": "The Domesday Book was not a modern headcount of every man, woman, and child—it was a royal tax and land register built to maximize Crown revenue.",
+        "prose_hash": "0dde240f50",
+        "prose_fp": "3a9bb1de",
+        "question_hash": "7bd63feea7"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Saxon lords removed",
+            "bullet": "Anglo-Saxon thegns were systematically dispossessed across England → wiped out the old native elite"
+          },
+          {
+            "hint": "New ruling elite",
+            "bullet": "Roughly two hundred Norman tenants-in-chief took the manors → concentrated wealth in foreign hands"
+          },
+          {
+            "hint": "Land for knights",
+            "bullet": "William owned all land and leased estates to barons → guaranteed loyal military knights"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Twenty-year transformation",
+            "bullet": "Military victory in 1066 became legal ownership by 1086 → cemented permanently in Domesday"
+          },
+          {
+            "hint": "Future baronial power",
+            "bullet": "Powerful feudal barons supplying royal armies → later united at Runnymede against King John"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ELITE REPLACEMENT",
+            "stem": "Local records such as the Hundred of Fareham show that native ____________ lost their manors to..."
+          },
+          {
+            "badge": "CONCENTRATED WEALTH",
+            "stem": "Virtually all English estates passed into the hands of roughly ____________ loyal to..."
+          },
+          {
+            "badge": "FEUDAL BARGAIN",
+            "stem": "At the summit of the feudal pyramid, William leased land in exchange for ____________, binding..."
+          }
+        ],
+        "watch_out": "Norman barons did not own their estates outright—King William legally held all English land and leased manors only in return for sworn loyalty and knights.",
+        "prose_hash": "6926ebec1b",
+        "prose_fp": "7c221d5f",
+        "question_hash": "36a615ef92"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Trusted courtier’s role",
+            "bullet": "Becket served ruthlessly as Chancellor from 1154 → proved himself Henry’s closest royal enforcer"
+          },
+          {
+            "hint": "Worldly court lifestyle",
+            "bullet": "Hunting, feasting, and wearing silk robes with Henry → made Becket look thoroughly secular"
+          },
+          {
+            "hint": "Church and Crown",
+            "bullet": "Appointing Becket after Archbishop Theobald died → aimed to bring the Church under royal control"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Independent Church wealth",
+            "bullet": "Medieval bishops ran separate courts and vast estates → limited the king’s power inside England"
+          },
+          {
+            "hint": "Fatal miscalculation",
+            "bullet": "Assuming friendship guaranteed obedience backfired → sparked the fiercest Church-Crown clash of the twelfth century"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TRUSTED COURTIER",
+            "stem": "Having relied on Becket as his ruthless ____________ since 1154, Henry trusted his companion because..."
+          },
+          {
+            "badge": "VACANT PRIMACY",
+            "stem": "Following the death of ____________ in 1161, the king saw a chance to install an ally at..."
+          },
+          {
+            "badge": "ROYAL AMBITION",
+            "stem": "Henry calculated that promoting his luxury-loving friend would fuse ____________ under..."
+          }
+        ],
+        "watch_out": "Becket was not a lifelong monk before 1162—he rose as a wealthy, worldly royal Chancellor, which is exactly why Henry expected an obedient puppet.",
+        "prose_hash": "4d1af82993",
+        "prose_fp": "e4cec1c8",
+        "question_hash": "4667cf312f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Government post",
+            "bullet": "Becket immediately resigned as royal Chancellor → cut his political tie to King Henry"
+          },
+          {
+            "hint": "Clothing and penance",
+            "bullet": "Swapped silk robes for a lice-infested goat hairshirt and washed thirteen paupers’ feet daily"
+          },
+          {
+            "hint": "Spiritual loyalty",
+            "bullet": "Declared supreme allegiance to the Pope alone → placed Catholic Church authority above the Crown"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shocked monarch",
+            "bullet": "Henry had promoted Becket expecting compliance → felt personally betrayed by his former friend"
+          },
+          {
+            "hint": "Papal authority",
+            "bullet": "Medieval archbishops answered spiritually to Rome → created divided loyalties at the top of society"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BREAKING WITH COURT",
+            "stem": "Immediately upon his consecration in June 1162, Becket stunned the king by resigning as ____________ and..."
+          },
+          {
+            "badge": "MONASTIC PENANCE",
+            "stem": "Throwing off silk robes, he wore a ____________ and humbled himself every day by..."
+          },
+          {
+            "badge": "SHIFTED ALLEGIANCE",
+            "stem": "By pledging loyalty solely to ____________, Becket set Canterbury on a collision course with..."
+          }
+        ],
+        "watch_out": "Resigning the Chancellorship was no minor administrative detail—it shattered Henry’s whole plan to govern both state and Church through one loyal minister.",
+        "prose_hash": "18ce0a103d",
+        "prose_fp": "21fe338b",
+        "question_hash": "176a9160f9"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Clerical court loophole",
+            "bullet": "Clergy accused of murder or rape read a Latin psalm → escaped hanging via church courts"
+          },
+          {
+            "hint": "Royal law code",
+            "bullet": "Constitutions of Clarendon demanded royal trials for defrocked priests → restored uniform royal justice"
+          },
+          {
+            "hint": "Archbishop’s refusal",
+            "bullet": "Becket furiously refused to seal the Clarendon document → defended clerical immunity from royal gallows"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lenient church penalties",
+            "bullet": "Church courts forbade shedding blood → violent clerks escaped execution with fines or penance"
+          },
+          {
+            "hint": "Six-year French exile",
+            "bullet": "Bitter deadlock after Clarendon drove Becket into French exile → hardened resentment for six years"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEGAL LOOPHOLE",
+            "stem": "Under the custom of ____________, churchmen accused of violent crimes escaped royal gallows simply by..."
+          },
+          {
+            "badge": "CLARENDON DEMANDS",
+            "stem": "Summoning bishops in January 1164, Henry issued ____________ so defrocked priests would face..."
+          },
+          {
+            "badge": "BITTER STANDOFF",
+            "stem": "Refusing to seal the document, Becket insisted that ____________ alone held authority to judge..."
+          }
+        ],
+        "watch_out": "‘Criminous clerks’ included minor church workers and anyone able to recite a Latin psalm—not just ordained parish priests or senior bishops.",
+        "prose_hash": "778a74bcf8",
+        "prose_fp": "dc44e2f5",
+        "question_hash": "dc9207d8c7"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Punished royal bishops",
+            "bullet": "Returning from exile, Becket excommunicated bishops who backed Henry → reignited royal fury at Christmas"
+          },
+          {
+            "hint": "Reckless royal rage",
+            "bullet": "Henry raged against cowardly courtiers in Normandy → four knights treated his outburst as orders"
+          },
+          {
+            "hint": "Sacrilege at dusk",
+            "bullet": "Becket refused to yield inside Canterbury Cathedral → knights hacked him down beside the altar"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Years of exile",
+            "bullet": "Six years of unresolved exile in France → left both King and Archbishop unwilling to compromise"
+          },
+          {
+            "hint": "Backfire for monarchy",
+            "bullet": "Slaughtering an archbishop on consecrated stone → transformed Becket into a powerful Christian martyr"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CHRISTMAS OUTBURST",
+            "stem": "Provoked when Becket returned in December 1170 and ____________ loyal bishops, Henry shouted at his..."
+          },
+          {
+            "badge": "KNIGHTS CROSS CHANNEL",
+            "stem": "Taking the king’s rage literally, ____________ galloped from Normandy to confront Becket on..."
+          },
+          {
+            "badge": "DEATH AT ALTAR",
+            "stem": "Refusing to yield inside ____________, Becket was struck down with swords, turning a legal feud into..."
+          }
+        ],
+        "watch_out": "Henry II never issued a formal execution order—four knights acted on his reckless fit of temper, causing a catastrophe that ruined Henry’s legal campaign.",
+        "prose_hash": "ba5d15dbe4",
+        "prose_fp": "3d32c22d",
+        "question_hash": "5dd14e4c56"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Outrage & martyrdom",
+            "bullet": "Pope Alexander III canonised Becket within three years → Christian Europe blamed Henry for sacrilege"
+          },
+          {
+            "hint": "Political & spiritual crisis",
+            "bullet": "Threatened with papal interdict and domestic rebellions → Henry needed public forgiveness to survive"
+          },
+          {
+            "hint": "Shrine humiliation",
+            "bullet": "Eighty monks whipped barefoot Henry at Becket’s tomb → saved his crown while preserving church courts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Clarendon defeated",
+            "bullet": "Henry’s campaign to try criminous clerks in royal courts → collapsed, preserving clerical immunity for centuries"
+          },
+          {
+            "hint": "Continuing papal power",
+            "bullet": "Papal threats of interdict proved decisive → later deployed by Innocent III against Henry’s son John"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MARTYR CULT",
+            "stem": "Horrified by the assassination, Europe flocked to Canterbury after ____________ canonised Becket within..."
+          },
+          {
+            "badge": "ROYAL HUMILIATION",
+            "stem": "Facing rebellion and threatened ____________, Henry knelt at the shrine and let ____________ whip him with..."
+          },
+          {
+            "badge": "VICTORY FOR ROME",
+            "stem": "Although public penance stabilized Henry’s throne, ____________ kept their legal privileges intact for..."
+          }
+        ],
+        "watch_out": "Walking barefoot and enduring birch rods was shrewd political survival as well as remorse—it lifted papal threats, though Henry lost the fight over church courts.",
+        "prose_hash": "1d0cb6d690",
+        "prose_fp": "e7a8d7df",
+        "question_hash": "dd267b3675"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Warrior brother contrast",
+            "bullet": "John succeeded crusader hero Richard the Lionheart → lacked his brother’s battlefield skill and respect"
+          },
+          {
+            "hint": "French conquest",
+            "bullet": "King Philip II outmanoeuvred John in 1204 → captured the Anglo-Norman barons’ ancestral homeland"
+          },
+          {
+            "hint": "Crushing war taxes",
+            "bullet": "Mocked for military failure, John squeezed barons with relentless taxes → funded reconquest plans"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1066 cross-Channel roots",
+            "bullet": "Since William’s conquest, English barons held proud Norman estates → losing Normandy felt deeply humiliating"
+          },
+          {
+            "hint": "Drained royal treasury",
+            "bullet": "Richard’s crusades had already drained England’s wealth → left John short of cash from 1199"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MILITARY DISGRACE",
+            "stem": "Compared unfavourably with his crusader brother ____________, John earned scorn after ____________ seized Normandy in 1204."
+          },
+          {
+            "badge": "ANCESTRAL LOSS",
+            "stem": "Losing Normandy alienated English barons because those French estates were their ____________ and..."
+          },
+          {
+            "badge": "FISCAL PRESSURE",
+            "stem": "Obsessed with winning Normandy back, John pushed ____________ to breaking point over the next decade."
+          }
+        ],
+        "watch_out": "‘Softsword’ mocked John’s battlefield failures against Philip II of France rather than laziness—in government, John was an energetic, grasping micromanager.",
+        "prose_hash": "cc7ef583e2",
+        "prose_fp": "c597cc3b",
+        "question_hash": "0ab6a09691"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Canterbury appointment clash",
+            "bullet": "John rejected Stephen Langton at Canterbury → Pope Innocent III placed England under Interdict in 1208"
+          },
+          {
+            "hint": "Daily religious life",
+            "bullet": "Churches stayed locked for five years → stopped church baptisms and forced unhallowed ditch burials"
+          },
+          {
+            "hint": "Royal retaliation & submission",
+            "bullet": "John seized £100,000 of church wealth before excommunication and invasion threats → forced his 1213 surrender"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Echoes of Henry II",
+            "bullet": "Like his father Henry II, John learned defying Rome → risked rebellion and foreign invasion"
+          },
+          {
+            "hint": "Clever papal alliance",
+            "bullet": "Surrendering England as a papal fiefdom in 1213 → later won papal backing against rebel barons"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PAPAL SANCTION",
+            "stem": "Refusing to accept ____________ as Archbishop provoked Pope Innocent III to impose an ____________ in 1208."
+          },
+          {
+            "badge": "SPIRITUAL TERROR",
+            "stem": "For five agonizing years ordinary parishioners suffered because locked churches prevented ____________ and forced the dead into..."
+          },
+          {
+            "badge": "CROWN CAPITULATION",
+            "stem": "After pocketing over ____________ from confiscated church lands, fear of French invasion forced John in 1213 to..."
+          }
+        ],
+        "watch_out": "Do not confuse excommunication with an Interdict—excommunication cut King John personally off from the Church, whereas the Interdict shut parish churches for everyone in England.",
+        "prose_hash": "fc582b6805",
+        "prose_fp": "8f03c909",
+        "question_hash": "034c7f0500"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Coalition war effort",
+            "bullet": "French victory in Flanders in July 1214 → crushed John’s mercenaries and ended reconquest hopes"
+          },
+          {
+            "hint": "Post-defeat tax demand",
+            "bullet": "Bankrupt John demanded fresh scutage from reluctant barons → sparked open aristocratic tax revolt"
+          },
+          {
+            "hint": "Capital & rebel barons",
+            "bullet": "Robert Fitzwalter’s rebel barons renounced homage and captured London in May 1215 → cornered John"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ten years of extortion",
+            "bullet": "Years of harsh taxes since losing Normandy in 1204 → bought military humiliation instead of victory"
+          },
+          {
+            "hint": "Broken feudal contract",
+            "bullet": "Feudal vassalage relied on fair royal lordship → extortionate scutage drove barons to armed revolt"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MILITARY BANKRUPTCY",
+            "stem": "Smashed by French forces in Flanders in July 1214, John lost both his ____________ and any hope of..."
+          },
+          {
+            "badge": "TAX BACKLASH",
+            "stem": "Returning home defeated, his demand for another ____________ tax drove northern and eastern barons to..."
+          },
+          {
+            "badge": "CAPITAL CAPTURED",
+            "stem": "Led by ____________, rebel forces seized ____________ in May 1215, leaving the bankrupt king forced to..."
+          }
+        ],
+        "watch_out": "Scutage meant ‘shield money’ paid instead of serving in the army—barons rebelled because John demanded huge sums repeatedly while losing every campaign.",
+        "prose_hash": "437a81b0ee",
+        "prose_fp": "2b46a5f7",
+        "question_hash": "b92f325400"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Protection from arrest",
+            "bullet": "Stopped the monarch from seizing or imprisoning any free man at royal whim"
+          },
+          {
+            "hint": "Courtroom standard",
+            "bullet": "Guaranteed lawful judgement by a person’s equals or by the law of the land"
+          },
+          {
+            "hint": "Limits on monarchy",
+            "bullet": "Bound the king beneath common law alongside sixty-two other clauses curbing arbitrary taxation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Baronial grievances",
+            "bullet": "Years of arbitrary land seizures and scutage under John → shaped Runnymede’s strict legal checks"
+          },
+          {
+            "hint": "Unfree majority excluded",
+            "bullet": "Unfree peasant serfs formed most of England’s population in 1215 → excluded from free-man rights"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TRIAL BY EQUALS",
+            "stem": "Sealed beside the Thames on 15 June 1215, Clause 39 stated that no ____________ could be imprisoned without..."
+          },
+          {
+            "badge": "RULE OF LAW",
+            "stem": "Crucially, the charter established that even the monarch was not above ____________ and could not..."
+          },
+          {
+            "badge": "WIDER LIMITS",
+            "stem": "Beyond fair trials, the sixty-three clauses protected ____________ and banned arbitrary taxation without..."
+          }
+        ],
+        "watch_out": "In 1215 Magna Carta did not create modern democracy for everyone—‘free men’ applied mainly to barons, knights, and townsmen, excluding unfree peasant serfs.",
+        "prose_hash": "dc5d2975b0",
+        "prose_fp": "fc6790c5",
+        "question_hash": "3824f292d3"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Appeal to Rome",
+            "bullet": "John rejected Runnymede’s limits → persuaded the Pope to annul Magna Carta almost immediately"
+          },
+          {
+            "hint": "Foreign rival invited",
+            "bullet": "Furious barons relaunched rebellion and invited Prince Louis of France → marched troops into London"
+          },
+          {
+            "hint": "Regency compromise",
+            "bullet": "John’s death in October 1216 let William Marshal reissue Magna Carta → secured young Henry III’s crown"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Papal overlordship",
+            "bullet": "John’s 1213 submission as a papal vassal → led Innocent III to tear up the rebel charter"
+          },
+          {
+            "hint": "Enduring legal survival",
+            "bullet": "Reissuing the charter for nine-year-old Henry III → rescued Magna Carta as permanent English law"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PAPAL ANNULMENT",
+            "stem": "Within months of Runnymede, peace collapsed because John asked ____________ to annul..."
+          },
+          {
+            "badge": "FOREIGN CLAIMANT",
+            "stem": "Outraged by the betrayal, rebel barons invited ____________ to enter London and claim..."
+          },
+          {
+            "badge": "SURVIVAL OF CHARTER",
+            "stem": "Only after John lost the crown jewels in ____________ and died in 1216 did ____________ restore peace by..."
+          }
+        ],
+        "watch_out": "King John never signed Magna Carta with a pen or kept its promises—he sealed it in wax under armed threat and had the Pope scrap it within weeks.",
+        "prose_hash": "33afde208c",
+        "prose_fp": "e3b1df79",
+        "question_hash": "38bd7db73c"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Maritime entry point",
+            "bullet": "Merchant ship from Gascony docked at Melcombe Regis in June 1348 → carried plague-infected fleas ashore"
+          },
+          {
+            "hint": "Physical symptoms",
+            "bullet": "Agonizing black buboes, spat blood, and acute fever → killed victims within three to five days"
+          },
+          {
+            "hint": "Death toll",
+            "bullet": "Rapid contagion swept towns and villages by 1350 → wiped out nearly half England’s population"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cross-Channel links",
+            "bullet": "Busy wine and wool trade with English-ruled Gascony → brought continental disease straight into Dorset"
+          },
+          {
+            "hint": "Manorial shockwave",
+            "bullet": "Deserted villages and mass burial trenches → shattered the labour supply underpinning medieval feudalism"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PORT OF ENTRY",
+            "stem": "Arriving aboard a merchant ship from ____________ in June 1348, plague-infected fleas entered Dorset at..."
+          },
+          {
+            "badge": "DEADLY SYMPTOMS",
+            "stem": "Victims developed egg-sized ____________ in the groin and armpits alongside high fever, perishing within..."
+          },
+          {
+            "badge": "SHATTERED SOCIETY",
+            "stem": "By 1350, nearly ____________ of the country had died, leaving entire villages deserted and churchyards..."
+          }
+        ],
+        "watch_out": "Trade ships from Gascony rather than invading armies brought the plague to Dorset in June 1348, carrying infected fleas straight into crowded English ports.",
+        "prose_hash": "5d16416eba",
+        "prose_fp": "17d9caf4",
+        "question_hash": "e673034624"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Unworked manor fields",
+            "bullet": "Empty cottages left wheat rotting in overgrown fields → lords desperately needed scarce reapers"
+          },
+          {
+            "hint": "Competition for farmhands",
+            "bullet": "Landowners competed fiercely for surviving workers → labourers successfully demanded double wages"
+          },
+          {
+            "hint": "Mobility & bondage",
+            "bullet": "Peasants left estates to seek higher pay → refused unpaid feudal labour and weakened serfdom"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Post-1066 feudalism",
+            "bullet": "Centuries of rigid manorial control established since Domesday → cracked once workers became scarce"
+          },
+          {
+            "hint": "Aristocratic backlash",
+            "bullet": "Threatened by rising peasant wages, wealthy lords in Parliament → swiftly passed harsh labour laws"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SCARCE REAPERS",
+            "stem": "With nearly half the workforce dead, ____________ rotted unharvested in the fields and forced lords to..."
+          },
+          {
+            "badge": "BARGAINING LEVERAGE",
+            "stem": "Fierce competition among landowners gave surviving farmhands the power to demand ____________ for their work."
+          },
+          {
+            "badge": "WEAKENED SERFDOM",
+            "stem": "Refusing unpaid ____________, mobile labourers undermined centuries of customary manorial..."
+          }
+        ],
+        "watch_out": "Although the Black Death caused immense human grief, economically it empowered surviving peasants because scarce labour became far harder to replace than land.",
+        "prose_hash": "6c25674132",
+        "prose_fp": "de3ae17b",
+        "question_hash": "f4b5c81cb9"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "1351 labour law",
+            "bullet": "Statute of Labourers froze pay at pre-plague levels → made negotiating higher wages a crime"
+          },
+          {
+            "hint": "Punishing runaway workers",
+            "bullet": "Fugitive serfs risked prison and hot-iron F brands on foreheads → enforced bondage through fear"
+          },
+          {
+            "hint": "1363 dress rules",
+            "bullet": "Sumptuary Laws banned commoners wearing fur, silk, or fine cloth → policed strict social ranks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Landowner Parliament",
+            "bullet": "Medieval Parliament represented lords and wealthy gentry → passed laws protecting estate profits over workers"
+          },
+          {
+            "hint": "Thirty-year resentment",
+            "bullet": "Decades of prosecutions and branding blocked peasant progress → fuelled anger before the 1381 revolt"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WAGE FREEZE",
+            "stem": "Determined to protect lordly profits, the 1351 ____________ forced wages back down to ____________ rates."
+          },
+          {
+            "badge": "BRUTAL ENFORCEMENT",
+            "stem": "Runaway serfs caught leaving their manor faced imprisonment and having ____________ burned onto their..."
+          },
+          {
+            "badge": "CLASS POLICING",
+            "stem": "In 1363, ____________ deepened resentment by banning peasants from wearing ____________ regardless of income."
+          }
+        ],
+        "watch_out": "Sumptuary Laws were not meant to help peasants save money—lords hated seeing prosperous workers wear fine cloth and blur traditional feudal hierarchy.",
+        "prose_hash": "cd38645786",
+        "prose_fp": "e1f265cb",
+        "question_hash": "391515f65e"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Tax per head",
+            "bullet": "Third Poll Tax charged every adult over fifteen twelve pence → cost labourers two weeks’ wages"
+          },
+          {
+            "hint": "War finance pressure",
+            "bullet": "Bankruptcy from the costly Hundred Years’ War in France → dumped royal war debt onto villagers"
+          },
+          {
+            "hint": "May 1381 flashpoint",
+            "bullet": "Commissioner John Bampton pursued tax evaders on 30 May 1381 → Brentwood villagers chased him out"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Decades of wage caps",
+            "bullet": "Thirty years of frozen wages since 1351 → meant flat-rate taxation ignited long-simmering fury"
+          },
+          {
+            "hint": "Taxation flashpoints",
+            "bullet": "Like John’s scutage before Runnymede, expensive French war failures → sparked violent domestic tax resistance"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "UNFAIR BURDEN",
+            "stem": "Desperate to cover debts from the ____________, the Crown demanded a flat ____________ from everyone over fifteen."
+          },
+          {
+            "badge": "HARDSHIP FOR POOR",
+            "stem": "Unlike property taxes, the flat charge hit farm labourers hardest because twelve pence equalled ____________ of hard..."
+          },
+          {
+            "badge": "FLASHPOINT IN ESSEX",
+            "stem": "Widespread evasion turned into armed revolt at ____________ on 30 May 1381 when villagers chased out..."
+          }
+        ],
+        "watch_out": "A ‘poll’ tax meant a tax per head rather than a tax on voting—charging dukes and farmhands the exact same twelve pence made it deeply unfair.",
+        "prose_hash": "701c66d6b1",
+        "prose_fp": "13aa3112",
+        "question_hash": "63e9729269"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Clash during talks",
+            "bullet": "London’s Mayor stabbed rebel leader Wat Tyler during tense Smithfield negotiations on 15 June 1381"
+          },
+          {
+            "hint": "Young king’s response",
+            "bullet": "Fourteen-year-old Richard II rode forward claiming rebel leadership → pledged to abolish serfdom"
+          },
+          {
+            "hint": "Short vs long outcome",
+            "bullet": "Royal forces broke those promises and crushed rebels → yet serfdom withered away over the next century"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Capital under siege",
+            "bullet": "30,000 rebels with priest John Ball stormed the Tower and burned tax rolls → forced royal talks"
+          },
+          {
+            "hint": "Tax abandoned",
+            "bullet": "Fear of another mass uprising ended medieval Poll Taxes → accelerated the decay of feudal bondage"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VIOLENCE AT TALKS",
+            "stem": "During tense negotiations on 15 June 1381, the ____________ stabbed ____________, bringing rebel archers to..."
+          },
+          {
+            "badge": "ROYAL PROMISE",
+            "stem": "Preventing an immediate massacre, fourteen-year-old ____________ rode forward as their leader and promised to end..."
+          },
+          {
+            "badge": "LONG-TERM LEGACY",
+            "stem": "Even though royal troops soon crushed the uprising, ____________ was fatally undermined and faded over..."
+          }
+        ],
+        "watch_out": "Richard II’s bold promise at Smithfield was a clever tactic to disperse 30,000 armed rebels rather than sincere reform—he tore up the freedom charters days later.",
+        "prose_hash": "c66f76bd69",
+        "prose_fp": "8bf45806",
+        "question_hash": "b4ce80e93e"
+      }
+    ]
+  }
+}

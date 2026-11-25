@@ -1,0 +1,1140 @@
+{
+  "unit_id": "industrialisation_and_empire",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "English woodland supply",
+            "bullet": "Smelting demanded vast timber charcoal → stripped ancient oak forests and drove up fuel costs"
+          },
+          {
+            "hint": "Coal smelting problem",
+            "bullet": "Raw coal blast furnaces soaked molten pig iron with carbon and sulphur → fractured under pressure"
+          },
+          {
+            "hint": "Royal Navy imports",
+            "bullet": "Costly Swedish bar iron imports → left naval anchors and weapons vulnerable to wartime blockade"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Coalbrookdale cast iron",
+            "bullet": "Abraham Darby smelted cast iron pots with coke → still too brittle to hammer into naval bars"
+          },
+          {
+            "hint": "Shipbuilding timber rivalry",
+            "bullet": "Eighteenth-century naval wars with France → shipwrights and ironmasters competed fiercely for scarce English oak"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FUEL BOTTLENECK",
+            "stem": "Smelting iron with ____________ stripped Britain's ____________, creating an acute fuel shortage across the realm."
+          },
+          {
+            "badge": "CHEMICAL FLAWS",
+            "stem": "Early coal-fired furnaces tainted molten metal with ____________ and ____________, making British ____________ snap under stress."
+          },
+          {
+            "badge": "NAVAL DEPENDENCE",
+            "stem": "Unable to forge tough domestic bars, the Royal Navy relied on expensive ____________ for ____________ and weapons."
+          }
+        ],
+        "watch_out": "Pig iron was hard yet brittle like glass—do not confuse it with tough, bendable wrought iron needed for naval anchors.",
+        "prose_hash": "566a1ef77b",
+        "prose_fp": "8e180e06",
+        "question_hash": "d334c487dc"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "1769 fuel innovation",
+            "bullet": "Watt patented a separate condenser in 1769 → slashed coal consumption compared to Newcomen pumps"
+          },
+          {
+            "hint": "Soho mechanical motion",
+            "bullet": "Backed by Matthew Boulton in Birmingham → converted piston strokes into smooth rotary shaft motion"
+          },
+          {
+            "hint": "Factory location choice",
+            "bullet": "Continuous steam power in any town → freed mills from upland rivers and unreliable waterwheels"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Newcomen pump limits",
+            "bullet": "Thomas Newcomen’s 1712 atmospheric engines only pumped vertical mine shafts → wasted huge amounts of coal"
+          },
+          {
+            "hint": "Northern coalfield towns",
+            "bullet": "Shallow coal seams in Lancashire and the Midlands → let steam factories cluster inside growing boomtowns"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CONDENSER EFFICIENCY",
+            "stem": "By patenting a ____________ in 1769, James Watt drastically cut the ____________ wasted by older steam engines."
+          },
+          {
+            "badge": "ROTARY DRIVE",
+            "stem": "Partnering with ____________ at the Soho Manufactory, Watt adapted steam engines to produce smooth ____________."
+          },
+          {
+            "badge": "GEOGRAPHIC LIBERATION",
+            "stem": "Unlike ____________ tied to fast-flowing valleys, rotary steam allowed manufacturers to run machinery continuously ____________."
+          }
+        ],
+        "watch_out": "James Watt did not invent the very first steam engine in 1769—he transformed Thomas Newcomen’s fuel-hungry 1712 mine pump.",
+        "prose_hash": "36fd85627c",
+        "prose_fp": "b330d6bd",
+        "question_hash": "1179b8a826"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Furnace chamber layout",
+            "bullet": "Reverberatory furnace kept burning coal separate from molten pig iron → prevented fresh sulphur contamination"
+          },
+          {
+            "hint": "Puddler’s furnace work",
+            "bullet": "Workmen stirred molten puddles with long iron bars → air burned away excess carbon and sulphur"
+          },
+          {
+            "hint": "Metal quality change",
+            "bullet": "Converted cheap British pig iron into malleable wrought iron → tough enough for heavy naval forging"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pre-1775 Swedish monopoly",
+            "bullet": "Before Funtley, tainted coal-smelted iron forced Britain to import costly charcoal-smelted Swedish bar iron"
+          },
+          {
+            "hint": "Hampshire naval link",
+            "bullet": "Funtley Mill sat near Fareham and Portsmouth → ideal for supplying Royal Navy dockyard forges"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CHAMBER SEPARATION",
+            "stem": "Inside Cort’s Funtley ____________, raw burning coal stayed separate from the ____________, stopping chemical taint."
+          },
+          {
+            "badge": "DECARBURISATION",
+            "stem": "Stirring glowing metal puddles with ____________ exposed the iron to air, burning off ____________ and sulphur."
+          },
+          {
+            "badge": "WROUGHT IRON",
+            "stem": "Cort’s breakthrough turned brittle domestic ____________ into bendable, high-grade ____________ without using oak charcoal."
+          }
+        ],
+        "watch_out": "Puddling burned carbon OUT of brittle pig iron to produce malleable wrought iron—it did not add carbon to make steel.",
+        "prose_hash": "abbeba15d9",
+        "prose_fp": "99421be4",
+        "question_hash": "fe44704894"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Forge machine swap",
+            "bullet": "Steam-driven grooved cylinders replaced slow tilt-hammers → processed red-hot puddled iron fifteen times faster"
+          },
+          {
+            "hint": "Rolling pressure effect",
+            "bullet": "Immense cylinder pressure compressed glowing metal → squeezed out remaining slag impurities rapidly"
+          },
+          {
+            "hint": "Bar shape consistency",
+            "bullet": "Cut grooves rolled iron into uniform standard dimensions → supplied bolts and bars to Portsmouth Dockyard"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Steam drive source",
+            "bullet": "Mechanical rotary power drove heavy rolling cylinders → overcame the slow pace of water-powered forge hammers"
+          },
+          {
+            "hint": "Twin Funtley patents",
+            "bullet": "Combined Cort’s 1783 rollers with his 1784 puddling furnace → united chemical refining with mass production"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FIFTEEN-FOLD SPEED",
+            "stem": "Replacing slow forge ____________ with steam-driven ____________ let Cort’s mill shape hot iron ____________ faster."
+          },
+          {
+            "badge": "SLAG EXPULSION",
+            "stem": "Passing puddled iron under immense cylinder pressure squeezed out ____________ while compacting the metal."
+          },
+          {
+            "badge": "NAVAL STANDARDISATION",
+            "stem": "Shaping hot bars into ____________ dimensions enabled rapid supply of structural iron to ____________."
+          }
+        ],
+        "watch_out": "Grooved rollers did not purify pig iron chemically—the metal had to be puddled in the furnace first, then rolled.",
+        "prose_hash": "df7a0ef646",
+        "prose_fp": "dced0ec2",
+        "question_hash": "d1a299fcbc"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Blacksmith forge tests",
+            "bullet": "Admiralty master smiths twisted, bent, and hammered Funtley bars → proved tougher than Swedish imports"
+          },
+          {
+            "hint": "Ocean storm hardware",
+            "bullet": "Forged shatter-resistant anchors and hull fittings → withstood ferocious ocean gales without snapping"
+          },
+          {
+            "hint": "Baltic import reliance",
+            "bullet": "Secured complete British naval independence → supplied domestic wrought iron that forged the Victorian Empire"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mid-century iron shortage",
+            "bullet": "Solved the 1750s timber bottleneck just before Britain fought two decades of Revolutionary and Napoleonic Wars"
+          },
+          {
+            "hint": "Victorian engineering legacy",
+            "bullet": "Cort’s puddled and rolled wrought iron went on to build Britain’s railways, bridges, and steamships"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ADMIRALTY PROOF",
+            "stem": "During the 1787 ____________ trials, naval blacksmiths drop-forged Funtley bars and proved they beat ____________."
+          },
+          {
+            "badge": "SHATTER RESISTANCE",
+            "stem": "Tough puddled iron allowed dockyard smiths to forge storm-proof ____________ and ____________ for warships."
+          },
+          {
+            "badge": "STRATEGIC AUTONOMY",
+            "stem": "Smelting top-grade naval iron with British coal ended foreign reliance and underpinned ____________."
+          }
+        ],
+        "watch_out": "Although Cort’s iron made Britain an industrial superpower, Navy Board seizure of his patents after a partner’s fraud left Cort bankrupt.",
+        "prose_hash": "bfbf5ea222",
+        "prose_fp": "4c395dd9",
+        "question_hash": "c5b752920d"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Workplace shift",
+            "bullet": "Centralised urban steam mills replaced rural cottage handlooms → ended family control over daily working rhythms"
+          },
+          {
+            "hint": "Powerloom work pace",
+            "bullet": "Hundreds of steam-driven powerlooms ran tirelessly → forced operatives to match relentless machine speed"
+          },
+          {
+            "hint": "Daily shift hours",
+            "bullet": "Customary rest breaks disappeared → hands laboured continuously from sunrise to sunset under strict oversight"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rotary steam impact",
+            "bullet": "Watt’s rotary steam engines powered whole floors of looms → undercut independent rural handloom weavers"
+          },
+          {
+            "hint": "Village land enclosure",
+            "bullet": "Parliamentary enclosure of village commons stripped families of grazing rights → pushed rural workers toward factories"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COTTAGE TO MILL",
+            "stem": "Before steam factories, weaving families worked on ____________ in rural cottages and chose their own ____________."
+          },
+          {
+            "badge": "MACHINE SUBORDINATION",
+            "stem": "Huge mills packed with ____________ forced operatives to match the unbroken speed of ____________."
+          },
+          {
+            "badge": "UNBROKEN SHIFTS",
+            "stem": "Surrendering their customary independence, factory hands laboured continuously from ____________ to ____________."
+          }
+        ],
+        "watch_out": "Industrialisation did not invent hard work or child labour—it replaced flexible family cottage rhythms with rigid machine-timed factory discipline.",
+        "prose_hash": "5cf220a85b",
+        "prose_fp": "3ae7d1ef",
+        "question_hash": "80f5082f6e"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Heat and hours",
+            "bullet": "Fourteen-hour shifts in rooms above eighty degrees Fahrenheit → stopped cotton snapping while exhausting mill hands"
+          },
+          {
+            "hint": "Pay-packet penalties",
+            "bullet": "Overseers docked pence for arriving minutes late or sitting down → slashed workers’ meagre weekly wages"
+          },
+          {
+            "hint": "Workroom air hazards",
+            "bullet": "Locked doors and thick airborne cotton dust → caused chronic lung disease and byssinosis"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Trade union ban",
+            "bullet": "Early Combination Laws outlawed workers’ unions → mill hands could not strike legally against fines"
+          },
+          {
+            "hint": "Laissez-faire state policy",
+            "bullet": "MPs favoured laissez-faire economics → refused to cap adult hours or enforce safe mill ventilation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLOCK & FINES",
+            "stem": "Governed strictly by the ____________, mill hands faced harsh ____________ for lateness or sitting down."
+          },
+          {
+            "badge": "SWELTERING WORKROOMS",
+            "stem": "Manufacturers kept spinning rooms above ____________ so delicate ____________ would not snap on the frames."
+          },
+          {
+            "badge": "LUNG DAMAGE",
+            "stem": "Trapped behind locked doors inhaling ____________, thousands of operatives developed chronic illness and ____________."
+          }
+        ],
+        "watch_out": "Spinning rooms were kept stiflingly hot and unventilated on purpose to stop damp cotton threads snapping, not by accidental design.",
+        "prose_hash": "64372f00cb",
+        "prose_fp": "21b7564d",
+        "question_hash": "cf33a679cc"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Parish workhouse supply",
+            "bullet": "Southern parishes shipped destitute orphans north → bound as indentured factory hands without parental protection"
+          },
+          {
+            "hint": "Spinning mule task",
+            "bullet": "Tiny scavengers crawled beneath moving spinning mules → swept loose cotton under slamming heavy carriages"
+          },
+          {
+            "hint": "Machine safety gaps",
+            "bullet": "Unguarded iron gears and leather belts → caused routine crushed fingers, mangled limbs, and hair scalpings"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unpaid indentured labour",
+            "bullet": "Pauper apprentices received only cheap food and dormitory beds → widened northern cotton masters’ profit margins"
+          },
+          {
+            "hint": "Southern ratepayer motive",
+            "bullet": "Sending workhouse orphans to Lancashire and Yorkshire mills → cut poor-relief taxes for southern parish ratepayers"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ORPHAN TRAFFICKING",
+            "stem": "Southern Poor Law parishes transported ____________ to northern mills as indentured hands with zero ____________."
+          },
+          {
+            "badge": "SCAVENGER DANGER",
+            "stem": "Employed as ____________, small children crawled directly beneath moving ____________ to collect loose cotton."
+          },
+          {
+            "badge": "UNGUARDED GEARS",
+            "stem": "Exposed iron cogs and belts routinely inflicted ____________ and horrific ____________ on exhausted children."
+          }
+        ],
+        "watch_out": "Pauper apprentices were legally bound to mill masters until age twenty-one—unlike free wage children, they could not legally walk out.",
+        "prose_hash": "e3ad5a2a56",
+        "prose_fp": "a045d147",
+        "question_hash": "ead3f72102"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Childhood shift length",
+            "bullet": "Matthew Crabtree worked sixteen-hour days in Yorkshire mills from age eight → suffered relentless daily fatigue"
+          },
+          {
+            "hint": "Overlooker punishments",
+            "bullet": "Overlookers beat slowing children with heavy leather straps → terrorised exhausted hands into keeping pace"
+          },
+          {
+            "hint": "Growing bone damage",
+            "bullet": "Years standing crookedly at spinning frames → caused stunted spines, bowed legs, and permanent disability"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Sadler’s witness hearings",
+            "bullet": "MP Michael Sadler interviewed over eighty former child workers in 1832 → shocked middle-class readers nationwide"
+          },
+          {
+            "hint": "1832 political climate",
+            "bullet": "Published alongside the 1832 Great Reform crisis → forced newly elected MPs to confront factory cruelty"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PARLIAMENTARY EVIDENCE",
+            "stem": "Testifying before ____________ committee in 1832, Matthew Crabtree recalled enduring ____________ shifts from age eight."
+          },
+          {
+            "badge": "PHYSICAL COERCION",
+            "stem": "Whenever tired children flagged late at night, mill overlookers struck them with ____________."
+          },
+          {
+            "badge": "BODILY DEFORMITY",
+            "stem": "Relentless childhood strain left whole generations of operatives with ____________ and permanently ____________."
+          }
+        ],
+        "watch_out": "Matthew Crabtree testified in 1832 as a twenty-two-year-old adult recalling childhood trauma, not as an eight-year-old still working.",
+        "prose_hash": "b3dd5b3ac8",
+        "prose_fp": "35ecef1d",
+        "question_hash": "101fa90d98"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Minimum working age",
+            "bullet": "Banned children under nine in textile mills → outlawed infant scavenger labour in cotton and wool"
+          },
+          {
+            "hint": "Hours and classrooms",
+            "bullet": "Capped nine-to-thirteen-year-olds at eight-hour shifts with mandatory daily schooling → curbed sixteen-hour exhaustion"
+          },
+          {
+            "hint": "Official mill policing",
+            "bullet": "Appointed four paid government factory inspectors → established state regulation over private industrial capitalism"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Earlier unenforced laws",
+            "bullet": "Earlier 1802 and 1819 Factory Acts relied on unpaid local magistrates → routinely ignored by mill owners"
+          },
+          {
+            "hint": "Remaining industry gaps",
+            "bullet": "Excluded silk mills and underground coal mines → child colliery labour continued until Shaftesbury’s 1842 Mines Act"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STATUTORY BAN",
+            "stem": "Led in Parliament by ____________, the 1833 Factory Act banned employing children ____________ in textile mills."
+          },
+          {
+            "badge": "CAPS & SCHOOLING",
+            "stem": "Children aged nine to thirteen were limited to ____________ shifts and guaranteed mandatory daily ____________."
+          },
+          {
+            "badge": "ENFORCEMENT BREAKTHROUGH",
+            "stem": "Creating four statutory ____________ proved decisive because the state finally policed private ____________."
+          }
+        ],
+        "watch_out": "The 1833 Factory Act did NOT abolish all child labour—it banned under-nines only in textile mills and had just four inspectors nationwide.",
+        "prose_hash": "6b21e5087b",
+        "prose_fp": "e90b6ee4",
+        "question_hash": "3bf0ec86f0"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Private landlord boom",
+            "bullet": "Millions migrated to Manchester, Leeds, and Sheffield → unregulated builders crammed cheap terraces for quick rent"
+          },
+          {
+            "hint": "Terrace wall layout",
+            "bullet": "Back-to-back houses shared three windowless brick walls → blocked fresh air and daylight in narrow courts"
+          },
+          {
+            "hint": "Basement living rooms",
+            "bullet": "Poorest families rented damp earthen cellars below street level → raw sewage seeped through porous bricks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Walking-distance mill housing",
+            "bullet": "Before cheap trams or trains, factory hands had to live minutes from mill gates → caused extreme crowding"
+          },
+          {
+            "hint": "Missing town bylaws",
+            "bullet": "Laissez-faire councils enforced zero minimum building or drainage standards → left tenants at landlords’ mercy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "URBAN SURGE",
+            "stem": "As millions migrated to northern factory towns, unregulated ____________ packed narrow courts to maximise rent."
+          },
+          {
+            "badge": "AIRLESS COURTS",
+            "stem": "Rows of ____________ dwellings shared windowless party walls that prevented ____________ and natural light."
+          },
+          {
+            "badge": "FLOODED CELLARS",
+            "stem": "Beneath the streets, the poorest families slept in ____________ where ____________ soaked straight through brick walls."
+          }
+        ],
+        "watch_out": "Back-to-back slums were brand-new brick rows thrown up rapidly by speculative landlords, not crumbling medieval cottages.",
+        "prose_hash": "fb9ee3ae85",
+        "prose_fp": "754d32c0",
+        "question_hash": "756f760f3a"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Courtyard toilet ratio",
+            "bullet": "Dozens of households shared one outdoor earth closet → raw sewage overflowed across communal play yards"
+          },
+          {
+            "hint": "Uncollected street waste",
+            "bullet": "Human filth piled into towering nightsoil dunghills → rotted beside cottage doorways for months"
+          },
+          {
+            "hint": "Rainwater and soil",
+            "bullet": "Heavy rain washed sewage down into shallow groundwater → poisoned neighbourhood pumps used for drinking"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cesspool emptying costs",
+            "bullet": "Landlords grudged paying nightsoil carters to clear cesspools → let waste accumulate in working-class courts"
+          },
+          {
+            "hint": "Miasma smell theory",
+            "bullet": "Victorian doctors blamed foul air called miasma rather than waterborne germs → missed poisoned pump water"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHARED PRIVIES",
+            "stem": "Across packed industrial courts, dozens of families shared a single ____________ that overflowed into alleyways."
+          },
+          {
+            "badge": "NIGHTSOIL HEAPS",
+            "stem": "Uncollected human waste built up into festering ____________ right beside families’ front doors."
+          },
+          {
+            "badge": "CONTAMINATED WELLS",
+            "stem": "Rainwater carried filth through the earth into ____________, poisoning the daily ____________ drawn from street pumps."
+          }
+        ],
+        "watch_out": "Cool, clear-looking pump water could still carry lethal cholera bacteria—residents could not detect invisible germs by sight or smell.",
+        "prose_hash": "82f823e832",
+        "prose_fp": "b48290fa",
+        "question_hash": "71c0a58780"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Pump-water outbreak",
+            "bullet": "Asiatic cholera struck Britain in 1831 via contaminated pumps → tore through crowded working-class courts"
+          },
+          {
+            "hint": "Speed of symptoms",
+            "bullet": "Violent vomiting, cramps, and dehydration turned skin blue → killed healthy victims within twelve hours"
+          },
+          {
+            "hint": "Wealthy suburb deaths",
+            "bullet": "Cholera killed rich citizens as well as slum dwellers → shattered laissez-faire attitudes and spurred reform"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Soho Broad Street",
+            "bullet": "In 1854 Doctor John Snow mapped Soho deaths to one Broad Street pump → proved waterborne transmission"
+          },
+          {
+            "hint": "1848 health legislation",
+            "bullet": "A second deadly cholera wave in 1848 pushed MPs to pass Britain’s first Public Health Act"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THE BLUE TERROR",
+            "stem": "Striking Britain in 1831, Asiatic cholera caused agonising dehydration and ____________ collapse within ____________."
+          },
+          {
+            "badge": "WATERBORNE SPREAD",
+            "stem": "Spreading invisibly through ____________, the epidemic devastated densely packed working-class neighbourhoods."
+          },
+          {
+            "badge": "COLLAPSE OF LAISSEZ-FAIRE",
+            "stem": "Because the disease also reached ____________, frightened elites abandoned ____________ and demanded sanitary action."
+          }
+        ],
+        "watch_out": "Although cholera spread via water, most lawmakers in the 1830s and 1840s still believed rotting filth poisoned the air.",
+        "prose_hash": "b6be93b4fc",
+        "prose_fp": "90a739b7",
+        "question_hash": "91553ab60b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "National mortality tables",
+            "bullet": "Edwin Chadwick compiled statistical life-span charts and medical testimony → linked filthy slums directly to early death"
+          },
+          {
+            "hint": "Town versus countryside",
+            "bullet": "Manchester labourers averaged nineteen years of life versus thirty-eight in rural Rutland → shocked Victorian elites"
+          },
+          {
+            "hint": "Taxpayer cost case",
+            "bullet": "Showed epidemic deaths bankrupted parish poor relief → argued clean piped water would save ratepayers money"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Poor Law findings",
+            "bullet": "Working as Poor Law secretary, Chadwick saw preventable disease—not idleness—pushing widows and orphans into workhouses"
+          },
+          {
+            "hint": "Ratepayer MP resistance",
+            "bullet": "MPs dubbed the Dirty Party hated compulsory local sewer rates → kept early sanitary boards optional"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STATISTICAL SHOCK",
+            "stem": "Using hard mortality statistics in 1842, Edwin Chadwick proved Manchester labourers averaged just ____________ versus ____________ in Rutland."
+          },
+          {
+            "badge": "ENVIRONMENTAL PROOF",
+            "stem": "His Sanitary Report showed premature working-class death resulted from ____________ rather than personal moral laziness."
+          },
+          {
+            "badge": "ECONOMIC PERSUASION",
+            "stem": "To win over thrifty ratepayers, Chadwick argued that ____________ would prevent poverty and cut ____________."
+          }
+        ],
+        "watch_out": "An average life expectancy of nineteen in Manchester did not mean adults died at nineteen—huge infant mortality pulled the average down.",
+        "prose_hash": "eff3df9ea9",
+        "prose_fp": "51a949a2",
+        "question_hash": "fc34e29a3b"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Midsummer river state",
+            "bullet": "July 1858 heatwave fermented raw sewage in the Thames → turned London’s river into a bubbling sewer"
+          },
+          {
+            "hint": "Commons window precautions",
+            "bullet": "Noxious fumes engulfed riverside Westminster → MPs soaked curtains in chloride of lime fearing fatal fever"
+          },
+          {
+            "hint": "Underground tunnel network",
+            "bullet": "Parliament rapidly funded Joseph Bazalgette’s eighty-two-mile brick interceptors → diverted sewage east and ended London cholera"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Flush-toilet river surge",
+            "bullet": "Middle-class flush toilets emptied straight into old storm drains → overloaded the tidal River Thames"
+          },
+          {
+            "hint": "1866 East End proof",
+            "bullet": "When cholera returned in 1866, it hit only the one East End district awaiting Bazalgette’s pipes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THE GREAT STINK",
+            "stem": "During the July 1858 heatwave, fermenting sewage in the ____________ forced MPs to drench curtains in ____________."
+          },
+          {
+            "badge": "WESTMINSTER URGENCY",
+            "stem": "Smelling the pestilence directly inside Parliament ended years of delay and funded ____________ sewer blueprint."
+          },
+          {
+            "badge": "INTERCEPTOR TRIUMPH",
+            "stem": "Building eighty-two miles of brick ____________ carried effluent downstream and eradicated ____________ in London."
+          }
+        ],
+        "watch_out": "MPs backed Bazalgette in 1858 out of miasma terror of foul river smells—Pasteur’s 1861 germ theory had not yet been published.",
+        "prose_hash": "c07652d38b",
+        "prose_fp": "c200c376",
+        "question_hash": "5020d2c4b3"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Artisan pay collapse",
+            "bullet": "Factory steam looms undercut skilled handweavers → triggered catastrophic wage cuts and family hunger"
+          },
+          {
+            "hint": "Secret night raids",
+            "bullet": "Organising under mythical General Ned Ludd → craftsmen smashed targeted wide frames in disciplined midnight raids"
+          },
+          {
+            "hint": "Capital law & troops",
+            "bullet": "1812 Frame-Breaking Act made machine-smashing a hanging offence → twelve thousand soldiers occupied northern districts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wartime bread prices",
+            "bullet": "Napoleonic trade blockades and poor harvests → drove bread prices sky-high while northern textile wages collapsed"
+          },
+          {
+            "hint": "Blocked peaceful channels",
+            "bullet": "Banned trade unions and zero working-class MPs → left starving weavers without legal bargaining power"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LIVELIHOOD THREAT",
+            "stem": "Driven to destitution when ____________ crushed skilled wages, northern weavers launched raids under the name ____________."
+          },
+          {
+            "badge": "MIDNIGHT SLEDGEHAMMERS",
+            "stem": "Rather than rioting aimlessly, disciplined Luddites targeted ____________ that undercut fair craft pay."
+          },
+          {
+            "badge": "MILITARY RESPONSE",
+            "stem": "Terrified of rebellion, Parliament passed the 1812 ____________ and deployed ____________ into industrial towns."
+          }
+        ],
+        "watch_out": "Luddites were NOT ignorant technophobes opposed to all machines—they selectively smashed frames used by masters to slash skilled pay.",
+        "prose_hash": "c45ff48aeb",
+        "prose_fp": "759d2fa2",
+        "question_hash": "b00a3393a9"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "St Peter’s Field crowd",
+            "bullet": "Sixty thousand unarmed men, women, and children in Sunday best → rallied peacefully for votes and cheaper food"
+          },
+          {
+            "hint": "Magistrates’ cavalry order",
+            "bullet": "Panicked magistrates sent the Manchester Yeomanry charging with sabres → killed eighteen and injured over six hundred"
+          },
+          {
+            "hint": "Six Acts crackdown",
+            "bullet": "Tory ministers defended the magistrates → passed the Six Acts banning mass rallies and taxing radical papers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1815 Corn Laws",
+            "bullet": "Landowner MPs taxed cheap foreign wheat under the 1815 Corn Laws → kept working-class bread unaffordable"
+          },
+          {
+            "hint": "Zero Manchester MPs",
+            "bullet": "Despite its huge cotton population, Manchester elected zero MPs → pushed reformers toward peaceful mass meetings"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PEACEFUL ASSEMBLY",
+            "stem": "On 16 August 1819, sixty thousand families wore their ____________ to St Peter’s Field to demand ____________."
+          },
+          {
+            "badge": "SABRE MASSACRE",
+            "stem": "Local magistrates panicked and unleashed a ____________ sabre charge that killed ____________ and wounded hundreds."
+          },
+          {
+            "badge": "REPRESSIVE LAWS",
+            "stem": "Backing the authorities, Parliament enacted the ____________ to outlaw large assemblies and tax ____________."
+          }
+        ],
+        "watch_out": "Newspapers coined the ironic name Peterloo to shame cavalrymen who cut down unarmed British citizens four years after Waterloo.",
+        "prose_hash": "218db85726",
+        "prose_fp": "78eb2a5e",
+        "question_hash": "6adda13a89"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Lost winter employment",
+            "bullet": "Mechanised threshing machines replaced hand-flails → wiped out farmhands’ essential winter income"
+          },
+          {
+            "hint": "Common land loss",
+            "bullet": "Enclosure of village commons and falling wages → left Hampshire and Berkshire families facing winter starvation"
+          },
+          {
+            "hint": "Letters and targets",
+            "bullet": "Sent Captain Swing threat letters before smashing threshers and burning hayricks → demanded two shillings a day"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Scarce southern jobs",
+            "bullet": "Unlike northern coalfields, southern counties lacked factory alternatives → trapped labourers on parish poor relief"
+          },
+          {
+            "hint": "French Revolution panic",
+            "bullet": "July 1830 revolution in Paris alarmed English squires → feared night-time rick fires signalled rural uprising"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RURAL HUNGER",
+            "stem": "Across southern England in autumn 1830, ____________ and mechanical ____________ left farmhands facing winter starvation."
+          },
+          {
+            "badge": "SWING RESISTANCE",
+            "stem": "Signing warning letters as ____________, labourers smashed threshing machines and lit nocturnal ____________."
+          },
+          {
+            "badge": "WAGE DEMAND",
+            "stem": "Southern farmhands were fighting for survival rather than revolution, demanding a living wage of ____________."
+          }
+        ],
+        "watch_out": "Captain Swing was never a real rebel leader—starving farmworkers across southern counties shared the fictional signature for protection.",
+        "prose_hash": "d2682fd0cb",
+        "prose_fp": "8f3ce6d7",
+        "question_hash": "b3613d9051"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Special Assize scale",
+            "bullet": "Special Assize judges tried three hundred Hampshire labourers at Winchester Great Hall → staged terrifying state retribution"
+          },
+          {
+            "hint": "Micheldever gallows case",
+            "bullet": "Nineteen-year-old Micheldever ploughboy Henry Cook was publicly hanged → executed for striking magistrate Bingham Baring"
+          },
+          {
+            "hint": "Overseas convict ships",
+            "bullet": "Over four hundred farmworkers sentenced to Australian penal transportation → shattered rural protest across southern England"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Whig property stance",
+            "bullet": "Whig Home Secretary Lord Melbourne enforced harsh sentences → proved parliamentary reformers still guarded landowner property"
+          },
+          {
+            "hint": "Delayed farm machines",
+            "bullet": "Even after crushing the rioters in court, nervous southern farmers quietly delayed reintroducing threshing machines"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WINCHESTER TRIALS",
+            "stem": "Sitting at Winchester Great Hall in December 1830, Special Assize judges tried ____________ for arson and machine-breaking."
+          },
+          {
+            "badge": "PUBLIC EXECUTION",
+            "stem": "Authorities hanged nineteen-year-old ____________ of Micheldever for striking a local ____________ during the unrest."
+          },
+          {
+            "badge": "PENAL EXILE",
+            "stem": "Transporting over four hundred convicted farmhands to ____________ devastated village families and crushed ____________."
+          }
+        ],
+        "watch_out": "Although the 1830 Swing Riots killed zero landowners or magistrates, British courts hanged nineteen farmworkers nationwide and exiled hundreds.",
+        "prose_hash": "f7ee26b739",
+        "prose_fp": "f7a54e34",
+        "question_hash": "5675173e14"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Dorset friendly society",
+            "bullet": "Six Tolpuddle farmhands formed a peaceful friendly society union → resisted crippling wage cuts in Dorset"
+          },
+          {
+            "hint": "1797 oath charge",
+            "bullet": "Magistrates misused an obscure naval-mutiny law on secret oaths → sentenced the six men to seven years’ exile"
+          },
+          {
+            "hint": "Mass union protest",
+            "bullet": "Over one hundred thousand unionists marched peacefully through London → forced the Crown to pardon them in 1836"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1824 legal status",
+            "bullet": "Parliament had legalised trade unions in 1824 → twisting an archaic oath statute outraged public justice"
+          },
+          {
+            "hint": "Post-Swing squire alarm",
+            "bullet": "Coming four years after Captain Swing in rural Dorset → landowners feared peaceful unions would revive unrest"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MUTUAL AID UNION",
+            "stem": "Facing steep farm wage cuts in 1834, six Dorset labourers formed a peaceful ____________ in Tolpuddle."
+          },
+          {
+            "badge": "ARCHAIC STATUTE",
+            "stem": "To crush a legal union, magistrates prosecuted the leaders under an obscure ____________ law and ordered ____________."
+          },
+          {
+            "badge": "LONDON MOBILISATION",
+            "stem": "Giant peaceful marches of over ____________ trade unionists pressured the government into granting a ____________ in 1836."
+          }
+        ],
+        "watch_out": "The Tolpuddle Martyrs were NOT executed—they were peaceful unionists transported to Australia in chains before winning a royal pardon.",
+        "prose_hash": "59381c55e6",
+        "prose_fp": "4435abd7",
+        "question_hash": "c30248342f"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Property voter share",
+            "bullet": "Fewer than five percent of adults could vote → wealthy landed aristocrats monopolised Westminster"
+          },
+          {
+            "hint": "Empty medieval boroughs",
+            "bullet": "Deserted medieval mounds like Old Sarum and Newtown → still returned two MPs with virtually zero voters"
+          },
+          {
+            "hint": "Northern city seats",
+            "bullet": "Industrial giants Manchester, Birmingham, and Leeds had zero MPs → denied millions of urban residents representation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Outdated constituency map",
+            "bullet": "Electoral boundaries reflected medieval rural England → failed to track steam-age growth in the industrial north"
+          },
+          {
+            "hint": "Aristocratic pocket seats",
+            "bullet": "Open voting let wealthy peers buy or bully tiny borough electorates → treated Commons seats as private property"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EXCLUSIVE FRANCHISE",
+            "stem": "Under Britain’s 1830 system, an electorate of ____________ restricted Parliament to rich male ____________."
+          },
+          {
+            "badge": "ROTTEN BOROUGHS",
+            "stem": "Depopulated sites like ____________ sent two MPs to Westminster despite having almost zero resident voters."
+          },
+          {
+            "badge": "UNREPRESENTED CITIES",
+            "stem": "By contrast, booming manufacturing centres such as ____________ and ____________ elected zero MPs at all."
+          }
+        ],
+        "watch_out": "Rotten boroughs were tiny depopulated seats controlled by patrons—do not call Manchester a rotten borough, as it had zero MPs.",
+        "prose_hash": "4d00471159",
+        "prose_fp": "ff36a263",
+        "question_hash": "75f0698629"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "October 1831 unrest",
+            "bullet": "After Tory peers blocked the Reform Bill → Bristol crowds burned the Bishop’s Palace and freed jailed radicals"
+          },
+          {
+            "hint": "May 1832 gold tactic",
+            "bullet": "Political unions chanted Stop the Duke, go for gold → triggered a nationwide Days of May bank run"
+          },
+          {
+            "hint": "Tory peer response",
+            "bullet": "Facing financial panic and potential revolution → the Tory House of Lords yielded and let reform pass"
+          }
+        ],
+        "context": [
+          {
+            "hint": "New Whig peers",
+            "bullet": "King William IV finally agreed to create Whig peers if needed → broke Tory resistance in the Lords"
+          },
+          {
+            "hint": "Political union alliance",
+            "bullet": "Birmingham and London Political Unions united middle-class employers with working-class artisans → amplified extra-parliamentary pressure"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BRISTOL IN FLAMES",
+            "stem": "When the House of Lords rejected reform in October 1831, angry crowds torched the ____________ during the ____________."
+          },
+          {
+            "badge": "DAYS OF MAY",
+            "stem": "Campaigning under the slogan ____________, reformers withdrew gold to trigger a nationwide ____________."
+          },
+          {
+            "badge": "LORDS SURRENDER",
+            "stem": "Confronting financial collapse and mass unrest, Tory peers ____________ and allowed the Reform Bill to pass."
+          }
+        ],
+        "watch_out": "Stop the Duke, go for gold meant withdrawing gold coins from banks to block the Duke of Wellington, not prospecting for gold.",
+        "prose_hash": "e3fca45f8a",
+        "prose_fp": "96e0e857",
+        "question_hash": "554ad045f1"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "New city seats",
+            "bullet": "Disenfranchised fifty-six rotten boroughs → granted long-overdue MPs to Manchester, Birmingham, and Leeds"
+          },
+          {
+            "hint": "Borough property rule",
+            "bullet": "Kept a strict ten-pound householder property rule → barred low-paid industrial workers from voting"
+          },
+          {
+            "hint": "Broken class alliance",
+            "bullet": "Enfranchised middle-class factory masters while excluding manual labourers → sparked bitter cries of betrayal"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Whig middle-class goal",
+            "bullet": "Whig ministers designed 1832 to detach middle-class owners from working-class radicals → stabilised landed rule"
+          },
+          {
+            "hint": "1834 workhouse anger",
+            "bullet": "The newly reformed Parliament quickly passed the harsh 1834 New Poor Law → convinced workers middle-class MPs opposed them"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REDISTRIBUTED SEATS",
+            "stem": "Although the 1832 Act abolished fifty-six ____________ and gave MPs to ____________, it denied full democracy."
+          },
+          {
+            "badge": "TEN-POUND BARRIER",
+            "stem": "Enforcing a strict ____________ in towns gave the ballot to ____________ while shutting out manual workers."
+          },
+          {
+            "badge": "WORKING-CLASS BETRAYAL",
+            "stem": "Labourers called 1832 a ____________ because their protests helped pass a law that still left them ____________."
+          }
+        ],
+        "watch_out": "The 1832 Great Reform Act did NOT bring democracy—around five out of six adult men and every woman remained excluded.",
+        "prose_hash": "f6d3238891",
+        "prose_fp": "494b4233",
+        "question_hash": "11efecdac5"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Franchise and secrecy",
+            "bullet": "Published the 1838 People’s Charter → demanded universal male suffrage and a secret ballot"
+          },
+          {
+            "hint": "Working-class MP barriers",
+            "bullet": "Called for scrapping MP property qualifications and paying MP salaries → enabled working men to sit in Westminster"
+          },
+          {
+            "hint": "Districts and elections",
+            "bullet": "Demanded equal constituencies and annual parliaments → three giant petitions were rejected yet kept democracy central"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Moral versus physical",
+            "bullet": "Chartists divided between William Lovett’s peaceful persuasion and Feargus O’Connor’s militant mass pressure"
+          },
+          {
+            "hint": "Post-1848 statutory legacy",
+            "bullet": "Though Parliament rejected petitions in 1839, 1842, and 1848 → five of the six points became law by 1918"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THE SIX POINTS",
+            "stem": "Published in 1838, the People’s Charter rallied millions behind ____________, annual parliaments, and a ____________."
+          },
+          {
+            "badge": "WORKING-CLASS MPs",
+            "stem": "Abolishing property rules and introducing ____________ mattered so ordinary workers could afford to serve in ____________."
+          },
+          {
+            "badge": "PETITION CAMPAIGNS",
+            "stem": "Between 1839 and 1848, Chartists delivered three ____________ to Westminster, keeping ____________ alive in national politics."
+          }
+        ],
+        "watch_out": "The 1838 People’s Charter demanded universal MALE suffrage rather than votes for women—and only annual parliaments never became British law.",
+        "prose_hash": "e15dbfbd1c",
+        "prose_fp": "ce64d31f",
+        "question_hash": "57643a9bd3"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "End of hustings",
+            "bullet": "Gladstone’s 1872 Ballot Act abolished open wooden hustings → ended public spectacle, bribery, and crowd intimidation"
+          },
+          {
+            "hint": "Polling station method",
+            "bullet": "Introduced private voting booths and liquorice-wax-sealed ballot boxes → guaranteed strict electoral secrecy"
+          },
+          {
+            "hint": "Tenant & worker safety",
+            "bullet": "Protected tenant farmers and factory hands from landlord eviction or sacking → created independent modern elections"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1867 urban electorate",
+            "bullet": "After the 1867 Second Reform Act gave skilled urban workers the vote → protecting working voters became urgent"
+          },
+          {
+            "hint": "Realised Chartist aim",
+            "bullet": "Enacted a core demand of the 1838 People’s Charter → showed Chartism succeeded over the longer term"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ABOLISHED HUSTINGS",
+            "stem": "Before 1872, declaring choices openly on wooden ____________ exposed ordinary voters to employer bribery and ____________."
+          },
+          {
+            "badge": "SEALED PRIVACY",
+            "stem": "Gladstone’s Ballot Act brought in ____________ and ballot boxes secured with ____________ to keep votes confidential."
+          },
+          {
+            "badge": "INDEPENDENT BALLOT",
+            "stem": "Secret voting freed ____________ and mill workers from the threat of ____________ or losing their jobs."
+          }
+        ],
+        "watch_out": "The 1872 Secret Ballot Act protected HOW existing voters cast ballots—it did not expand WHO could vote to rural labourers or women.",
+        "prose_hash": "4722f9c248",
+        "prose_fp": "1fac3219",
+        "question_hash": "efc29fa851"
+      }
+    ]
+  }
+}

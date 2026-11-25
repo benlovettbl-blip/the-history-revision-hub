@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_maya_civilisation",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Highland treasures",
+            "bullet": "Volcanic highlands supplied black obsidian, green jade, and emerald quetzal feathers → prized across Mesoamerica"
+          },
+          {
+            "hint": "Lowlands and coast",
+            "bullet": "Hot rainforest lowlands and flat Yucatán limestone plains → offered timber, building stone, and farmland"
+          },
+          {
+            "hint": "Trail and river trade",
+            "bullet": "Rivers and trails linked all three zones → villages swapped goods and grew into cities"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Tools and transport",
+            "bullet": "Maya builders had no metal ploughs or wheeled carts → human skill powered every early settlement"
+          },
+          {
+            "hint": "Sharp volcanic glass",
+            "bullet": "Highland obsidian cut sharper than iron → lowland farmers traded crops to get volcanic blades"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HIGHLAND RESOURCES",
+            "stem": "In the southern volcanic highlands, workers gathered ____________ and ____________ to trade with neighbouring regions."
+          },
+          {
+            "badge": "CONTRASTING LANDSCAPES",
+            "stem": "North of the mountains lay the hot ____________ and the flat ____________ built on limestone rock."
+          },
+          {
+            "badge": "GROWING VILLAGES",
+            "stem": "Because trails and rivers linked all three zones, early villages could ____________ and grow into ____________."
+          }
+        ],
+        "watch_out": "Maya lands were not all steaming jungle—they stretched across cool volcanic mountains, rainforest lowlands, and dry limestone plains.",
+        "prose_hash": "cc4dfd3504",
+        "prose_fp": "2017fde8",
+        "question_hash": "929d3ae5ea"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Sinkholes and storage",
+            "bullet": "Natural cenote sinkholes, plastered Tikal reservoirs, and underground chultuns → stored water through dry months"
+          },
+          {
+            "hint": "Shaping the land",
+            "bullet": "Raised wetland beds and stepped hillside terraces → created fertile farmland across swamps and slopes"
+          },
+          {
+            "hint": "Three companion crops",
+            "bullet": "Maize poles, soil-enriching beans, and shady squash leaves → grew together to feed huge populations"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Thirsty bedrock",
+            "bullet": "Porous Yucatán limestone drained rainwater underground → cities collapsed without clever stone water storage"
+          },
+          {
+            "hint": "Hand-dug farming",
+            "bullet": "Farmers worked without oxen or iron ploughs → companion planting boosted harvests using wooden digging sticks"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STORING RAINWATER",
+            "stem": "Since rainwater drained straight through porous rock, families relied on deep ____________ and plastered ____________."
+          },
+          {
+            "badge": "COMPANION CROPS",
+            "stem": "Through Three Sisters farming, tall ____________ supported climbing ____________, while wide ____________ kept soil damp."
+          },
+          {
+            "badge": "FEEDING THOUSANDS",
+            "stem": "Combining clever water storage with ____________ and ____________ allowed Maya farmers to feed tens of thousands."
+          }
+        ],
+        "watch_out": "Cenotes were natural limestone sinkholes formed underground—do not confuse them with human-made stone reservoirs and chultuns at Tikal.",
+        "prose_hash": "3c32911a35",
+        "prose_fp": "f6659219",
+        "question_hash": "b9cc6d8374"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Stone city centres",
+            "bullet": "Uxmal and Tikal raised tall limestone step-pyramids and observatories → towered above busy market plazas"
+          },
+          {
+            "hint": "Anglo-Saxon settlements",
+            "bullet": "Anglo-Saxon families lived in small timber villages → kings ruled wooden halls, not stone palaces"
+          },
+          {
+            "hint": "Different farming tools",
+            "bullet": "Britons farmed with iron-tipped ploughs → Maya builders raised giant cities using stone tools alone"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Everyday Maya homes",
+            "bullet": "Ordinary Maya families lived in palm-thatched courtyard houses → only temples and palaces used stone roofs"
+          },
+          {
+            "hint": "Plaza trade goods",
+            "bullet": "Lowland and coastal traders filled city plazas → swapped cacao beans, cotton, salt, flint, and honey"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STONE VERSUS TIMBER",
+            "stem": "Around AD 900, Maya masons at ____________ built tall ____________, whereas Anglo-Saxon kings ruled from ____________."
+          },
+          {
+            "badge": "EVERYDAY COURTYARDS",
+            "stem": "Away from the painted plazas, ordinary Maya families lived in ____________ homes arranged around ____________."
+          },
+          {
+            "badge": "TOOLS AND TRADE",
+            "stem": "Even though Anglo-Saxon farmers owned ____________, Maya cities grew far larger with thriving markets selling ____________."
+          }
+        ],
+        "watch_out": "Ordinary Maya families did not live inside stone pyramids—they slept in whitewashed, palm-thatched homes around family courtyards.",
+        "prose_hash": "5174d20713",
+        "prose_fp": "a51dc8e9",
+        "question_hash": "13e016d4e9"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Forty rival kingdoms",
+            "bullet": "Over forty independent city-states like Tikal and Calakmul → fought wars and formed shifting alliances"
+          },
+          {
+            "hint": "Sacred royal title",
+            "bullet": "Each city obeyed a K'uhul Ajaw or holy lord → trusted to bring rain and harvests"
+          },
+          {
+            "hint": "Pyramid stagecraft",
+            "bullet": "Rulers performed ceremonies atop tall limestone step-pyramids → whole crowds watched from red stucco plazas"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Greek comparison",
+            "bullet": "Like Ancient Greek city-states → Maya kingdoms shared gods and writing yet ruled themselves independently"
+          },
+          {
+            "hint": "Forest trade routes",
+            "bullet": "City-states battled to control river trails → winning rulers taxed jade, obsidian, and cacao trade"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RIVAL CITY-STATES",
+            "stem": "Between AD 250 and 900, the Classic Maya lived in over forty ____________ such as ____________ and ____________."
+          },
+          {
+            "badge": "SACRED KINGSHIP",
+            "stem": "Citizens obeyed a holy ruler titled ____________ because they believed he spoke with ____________ to bring ____________."
+          },
+          {
+            "badge": "FESTIVAL ARCHITECTURE",
+            "stem": "Standing high beneath narrow ____________ atop limestone pyramids, kings led ceremonies above ____________."
+          }
+        ],
+        "watch_out": "Never call the Classic Maya a single united empire—each city-state had its own independent Ajaw king and rival army.",
+        "prose_hash": "444d001799",
+        "prose_fp": "36c4df36",
+        "question_hash": "74d530170c"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Sixty-eight-year reign",
+            "bullet": "Crowned aged twelve, Pakal ruled Palenque for sixty-eight years → built white palaces and a tower"
+          },
+          {
+            "hint": "Hidden pyramid burial",
+            "bullet": "Masons sealed Pakal's coffin beneath the Temple of the Inscriptions → honoured his sacred royal power"
+          },
+          {
+            "hint": "Precious burial treasures",
+            "bullet": "A life-sized green jade mosaic mask covered Pakal's face → displayed royal wealth and eternal life"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Distant highland stone",
+            "bullet": "Jade and quetzal feathers came from distant volcanic highlands → proved Palenque commanded long-distance trade"
+          },
+          {
+            "hint": "Rare pyramid burial",
+            "bullet": "Most Maya pyramids hosted open-air rituals on top → Pakal's hidden pyramid tomb was unusually grand"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LONG ROYAL REIGN",
+            "stem": "After taking the throne aged twelve in AD 615, ____________ transformed Palenque by building ____________."
+          },
+          {
+            "badge": "HIDDEN BURIAL",
+            "stem": "Beneath the ____________, archaeologists climbed down a secret stairway to discover Pakal's ____________."
+          },
+          {
+            "badge": "SACRED WEALTH",
+            "stem": "Covering the dead king's face with a ____________ and ____________ showed how deeply citizens revered their ruler."
+          }
+        ],
+        "watch_out": "Unlike Egyptian pyramids built purely as tombs, most Maya step-pyramids were topped by working temples—Pakal’s tomb inside one was special.",
+        "prose_hash": "9aec6996d0",
+        "prose_fp": "c2d928f5",
+        "question_hash": "43ed844abe"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Palenque's wise regent",
+            "bullet": "Lady Sak K'uk' governed Palenque and crowned young Pakal → kept the royal dynasty stable"
+          },
+          {
+            "hint": "Naranjo's warrior ruler",
+            "bullet": "Lady Six Sky rebuilt Naranjo in AD 682 → carved stelae show her victorious like a king"
+          },
+          {
+            "hint": "Bonampak wall paintings",
+            "bullet": "Vivid Bonampak murals show horns, turtle-shell drums, and jaguar-pelt dancers → courts united nobles through feasts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rainforest luxury dress",
+            "bullet": "Spotted jaguar pelts and woven lowland cotton → turned palace feasts into displays of royal status"
+          },
+          {
+            "hint": "Diplomatic alliances",
+            "bullet": "Royal women moved between rival city-states like Dos Pilas and Naranjo → sealed powerful peace alliances"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FEMALE LEADERSHIP",
+            "stem": "Powerful royal women shaped kingdoms, including ____________ at Palenque and ____________, who rebuilt ____________."
+          },
+          {
+            "badge": "CARVED MONUMENTS",
+            "stem": "Tall limestone ____________ proved women could wield supreme authority by showing them holding ____________."
+          },
+          {
+            "badge": "PALACE FEASTS",
+            "stem": "Painted walls at ____________ reveal noisy court celebrations featuring ____________, ____________, and nobles dressed in jaguar pelts."
+          }
+        ],
+        "watch_out": "Do not assume only men held power in Maya cities—women like Lady Six Sky ruled, led wars, and appeared on royal stone stelae.",
+        "prose_hash": "648fa80f89",
+        "prose_fp": "85da0064",
+        "question_hash": "17742b2afa"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Words and sounds",
+            "bullet": "Over 800 glyphs mixed whole-word signs with syllable sounds → scribes could spell any spoken sentence"
+          },
+          {
+            "hint": "Public stone history",
+            "bullet": "Masons chiselled royal births and wars onto stelae and Copán's 63-step stairway → proclaimed kingly power"
+          },
+          {
+            "hint": "Folded bark books",
+            "bullet": "Turkey-quill brushes painted lime-coated fig-bark paper → created accordion-folded codices like the Dresden Codex"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ancient American first",
+            "bullet": "Maya scribes built ancient America's fullest writing system → preserved exact royal names and dates"
+          },
+          {
+            "hint": "Royal court power",
+            "bullet": "Ajaw kings and queens funded trained scribes → stone monuments proved their right to rule"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HOW GLYPHS WORKED",
+            "stem": "By combining signs for whole words with signs for ____________, skilled scribes mastered over ____________."
+          },
+          {
+            "badge": "STONE MONUMENTS",
+            "stem": "Across plazas like Copán, carvers chiselled royal histories onto ____________ and the ____________."
+          },
+          {
+            "badge": "BARK-PAPER BOOKS",
+            "stem": "To make folded ____________, makers beat inner ____________, coated it with lime paste, and painted with ____________."
+          }
+        ],
+        "watch_out": "Maya glyphs were not simple picture drawings—they combined word signs and syllable sounds to spell complete spoken Mayan sentences.",
+        "prose_hash": "b51e841a67",
+        "prose_fp": "2688c047",
+        "question_hash": "6dba63f586"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Three simple symbols",
+            "bullet": "A shell meant zero, a dot meant one, and a bar equalled five → wrote huge sums"
+          },
+          {
+            "hint": "Vertical number columns",
+            "bullet": "Base-20 columns stacked ones, twenties, and four hundreds upward → place-value zero held empty rows"
+          },
+          {
+            "hint": "Practical daily uses",
+            "bullet": "Fast bark-paper sums helped traders count cacao beans → let architects measure giant stone pyramids"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ahead of Europe",
+            "bullet": "Roman and Anglo-Saxon numerals had no zero at all → Maya place-value maths calculated far faster"
+          },
+          {
+            "hint": "Human body counting",
+            "bullet": "Counting ten fingers and ten toes inspired base-20 → differed from modern base-10 tens and hundreds"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THREE SYMBOLS",
+            "stem": "Using just three signs, Maya mathematicians drew a ____________ for zero, a ____________ for one, and a ____________ for five."
+          },
+          {
+            "badge": "VERTICAL PLACE VALUE",
+            "stem": "Rather than using base-10, scribes stacked numbers upward in ____________ columns of ones, ____________, and four hundreds."
+          },
+          {
+            "badge": "REAL-WORLD MATHS",
+            "stem": "Inventing place-value zero centuries before Europe helped merchants ____________ and builders ____________."
+          }
+        ],
+        "watch_out": "Maya numbers stacked vertically in powers of twenty rather than reading left-to-right in tens—one dot on the second row meant twenty, not ten!",
+        "prose_hash": "7cc06af84e",
+        "prose_fp": "aeab525c",
+        "question_hash": "80e31b51f5"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Stone sky tower",
+            "bullet": "Narrow dome windows inside Chichén Itzá's El Caracol → tracked bright Venus without glass telescopes"
+          },
+          {
+            "hint": "Two cogwheel calendars",
+            "bullet": "The 260-day sacred Tzolk'in meshed with the 365-day solar Haab' → guided festivals and maize farming"
+          },
+          {
+            "hint": "Shared starting day",
+            "bullet": "Both interlocking calendars aligned again every 52 years → marked major religious celebrations across cities"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Maths behind astronomy",
+            "bullet": "Place-value zero and bark-paper codices → let priests record planet paths across hundreds of years"
+          },
+          {
+            "hint": "Feeding the city",
+            "bullet": "Accurate solar Haab' dates warned farmers when rains arrived → protected vital Three Sisters harvests"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WATCHING VENUS",
+            "stem": "Without glass telescopes, priests climbed ____________ at Chichén Itzá to sight ____________ through narrow dome windows."
+          },
+          {
+            "badge": "TWO CALENDARS",
+            "stem": "While the ____________ guided holy festivals, the ____________ tracked the solar year for maize farmers."
+          },
+          {
+            "badge": "COGWHEEL CYCLE",
+            "stem": "Turning together like interlocking gears, both calendars returned to the exact same starting date every ____________."
+          }
+        ],
+        "watch_out": "Maya astronomers worked completely without glass telescopes—they tracked Venus and eclipses using naked-eye sightlines built into stone towers.",
+        "prose_hash": "0cfb15a66c",
+        "prose_fp": "ce1d10a0",
+        "question_hash": "bd78ad7871"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Overnight soaking",
+            "bullet": "Soaking dried maize in limewater made nixtamal → softened skins and unlocked vital healthy nutrients"
+          },
+          {
+            "hint": "Grinding and cooking",
+            "bullet": "Volcanic stone metates ground corn dough → families baked flat tortillas and steamed husk-wrapped tamales"
+          },
+          {
+            "hint": "Spiced royal drink",
+            "bullet": "Roasted cacao poured from tall vases → made frothy drinks spiced with chilli and honey"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Highland kitchen stone",
+            "bullet": "Heavy metate grinding stones came from volcanic highlands → linked everyday kitchens to regional trade"
+          },
+          {
+            "hint": "Daily farm harvest",
+            "bullet": "Terraced and wetland farms grew huge maize crops → supplied every household's daily tortillas and tamales"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HEALTHY NIXTAMAL",
+            "stem": "Every evening, cooks soaked dried maize in ____________ to soften tough skins and unlock ____________."
+          },
+          {
+            "badge": "GRINDING DOUGH",
+            "stem": "Kneeling at a volcanic stone ____________, workers crushed softened corn to bake ____________ or steam ____________."
+          },
+          {
+            "badge": "FROTHY CACAO",
+            "stem": "Unlike modern sweet chocolate bars, royal Maya cacao was poured from ____________ and spiced with ____________."
+          }
+        ],
+        "watch_out": "Maya chocolate was not a solid sweet milk bar—it was a bitter, frothy liquid spiced with chilli peppers and wild honey.",
+        "prose_hash": "7f042368e9",
+        "prose_fp": "f1dae44b",
+        "question_hash": "621312d652"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Edible market currency",
+            "bullet": "Dried cacao beans worked as cash → market judges checked shells to stop clay counterfeits"
+          },
+          {
+            "hint": "Human overland carriers",
+            "bullet": "Human porters wore forehead straps along stone causeways → hauled heavy packs without horses or carts"
+          },
+          {
+            "hint": "Waterway cargo",
+            "bullet": "Dugout canoes paddled rivers and coasts → moved salt, cotton, obsidian blades, and green jade"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Fast market sums",
+            "bullet": "Shell, dot, and bar maths → helped plaza merchants tally hundreds of cacao beans quickly"
+          },
+          {
+            "hint": "Three-zone exchange",
+            "bullet": "Coastal salt, lowland cacao, and highland jade → united Mesoamerica's three landscapes in city plazas"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BEAN CURRENCY",
+            "stem": "Inside shaded plaza markets, traders used dried ____________ instead of metal coins, guarded by sharp-eyed ____________."
+          },
+          {
+            "badge": "OVERLAND PORTERS",
+            "stem": "Because Mesoamerica had no ____________ or wheeled carts, human porters carried loads using ____________."
+          },
+          {
+            "badge": "CANOE NETWORKS",
+            "stem": "Wooden ____________ glided along rivers and coasts to exchange lowland salt and cotton for highland ____________."
+          }
+        ],
+        "watch_out": "Mesoamerica had zero horses, oxen, or wheeled carts before 1500—all heavy goods moved via human porters and dugout canoes.",
+        "prose_hash": "b2b25b94b4",
+        "prose_fp": "00930786",
+        "question_hash": "3b5b10fdd8"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Protective waist gear",
+            "bullet": "Players chased a solid four-kilogram rubber ball → wore thick leather-and-wood hip yokes to protect ribs"
+          },
+          {
+            "hint": "Strict body rules",
+            "bullet": "Hands and feet were strictly banned → athletes dived to strike the ball off padded hips"
+          },
+          {
+            "hint": "Religious meaning",
+            "bullet": "Sloping stone ballcourts stood right beside pyramids → matches honoured the sun and rain gods"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rainforest tree sap",
+            "bullet": "Latex sap from lowland rubber trees → gave Mesoamerican athletes bouncing balls unknown in medieval Europe"
+          },
+          {
+            "hint": "City-state spectacle",
+            "bullet": "Ajaw kings built grand ballcourts in rival plazas → games settled disputes and united crowds"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TOUGH EQUIPMENT",
+            "stem": "Because the solid ____________ weighed up to four kilograms, athletes strapped thick ____________ around their waists."
+          },
+          {
+            "badge": "BALLCOURT RULES",
+            "stem": "Without ever touching the ball with ____________, players dived low to bounce it towards ____________."
+          },
+          {
+            "badge": "SACRED PURPOSE",
+            "stem": "Built directly beside tall step-pyramids, roaring Pok-ta-Pok matches were played to honour ____________."
+          }
+        ],
+        "watch_out": "Pok-ta-Pok was not football or basketball—touching the heavy rubber ball with hands or feet broke the rules, so players used padded hips.",
+        "prose_hash": "c283b063a5",
+        "prose_fp": "a447a454",
+        "question_hash": "2171b2f44f"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Sacred creation story",
+            "bullet": "Popol Vuh gods kneaded maize dough into grateful humans → made corn farming a sacred duty"
+          },
+          {
+            "hint": "Underworld ballgame myth",
+            "bullet": "The Hero Twins defeated Xibalba's underworld lords at Pok-ta-Pok → helped the Maize God rise again"
+          },
+          {
+            "hint": "Cave and sinkhole offerings",
+            "bullet": "Priests entered caves and cenotes → burned copal resin for rain god Chaac near Xibalba's doorway"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Daily food link",
+            "bullet": "Maize tortillas fed every Maya family daily → explains why gods formed people from corn dough"
+          },
+          {
+            "hint": "Dry limestone threat",
+            "bullet": "Porous Yucatán rock held no surface rivers → farmers depended on Chaac's rains to survive"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SACRED CREATION",
+            "stem": "According to the ____________, mud and wood failed, so the gods finally kneaded ____________ into humans."
+          },
+          {
+            "badge": "MYTHICAL BALLGAME",
+            "stem": "When the ____________ defeated the lords of ____________ at Pok-ta-Pok, the Maize God rose like sprouting corn."
+          },
+          {
+            "badge": "HONOURING CHAAC",
+            "stem": "Seeing deep caves and ____________ as doorways to the underworld, priests burned ____________ to ask ____________ for rain."
+          }
+        ],
+        "watch_out": "Cenotes were not just drinking-water wells—the Maya revered caves and sinkholes as sacred portals to Xibalba and rain god Chaac.",
+        "prose_hash": "4d181d5e67",
+        "prose_fp": "f82fb0ef",
+        "question_hash": "7784d84c95"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Feathered serpent temple",
+            "bullet": "Northern builders at Chichén Itzá raised El Castillo → honoured the feathered serpent god Kukulkan"
+          },
+          {
+            "hint": "Exact step maths",
+            "bullet": "Four staircases of ninety-one steps plus one top platform → equalled all 365 solar days"
+          },
+          {
+            "hint": "Guiding the harvest",
+            "bullet": "Priests watched stars from the summit → announced exact maize planting dates across the plaza"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Solar calendar link",
+            "bullet": "El Castillo's 365 steps matched the solar Haab' calendar → turned astronomy maths into solid limestone"
+          },
+          {
+            "hint": "Stone-tool precision",
+            "bullet": "Masons cut exact calendar staircases without metal tools → proved advanced Maya geometry and planning"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DEDICATED PYRAMID",
+            "stem": "At northern Chichén Itzá, royal architects designed the great step-pyramid of ____________ to honour ____________."
+          },
+          {
+            "badge": "SOLAR STEP MATHS",
+            "stem": "Multiplying ____________ steps across four staircases and adding the ____________ gives ____________ days."
+          },
+          {
+            "badge": "FARMING ANNOUNCEMENTS",
+            "stem": "Climbing to the high summit allowed priests to track ____________ and tell farmers when to ____________."
+          }
+        ],
+        "watch_out": "Do not forget the single top temple platform—four staircases of 91 steps only reach 364 until you add that final step to make 365!",
+        "prose_hash": "8172315e80",
+        "prose_fp": "88458d0d",
+        "question_hash": "010a3dec0d"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Equal day and night",
+            "bullet": "Every spring and autumn equinox, afternoon sunlight hits nine terraces → casts seven sunlit triangles"
+          },
+          {
+            "hint": "Shadow on stone",
+            "bullet": "Triangles join Kukulkan's carved stone head at the base → a glowing serpent appears to descend"
+          },
+          {
+            "hint": "Seasonal farming festivals",
+            "bullet": "Crowds offered unfading Maya Blue gifts → celebrated spring planting rains and autumn maize harvests"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Durable temple pigment",
+            "bullet": "Heating indigo leaves with white clay created Maya Blue → resisted tropical rain for centuries"
+          },
+          {
+            "hint": "Naked-eye sky science",
+            "bullet": "Years of careful solar tracking → let architects angle pyramid walls to catch exact equinox light"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EQUINOX SUNLIGHT",
+            "stem": "Twice a year on the ____________, afternoon sun hits nine terraces to cast ____________ down the staircase."
+          },
+          {
+            "badge": "DESCENDING GOD",
+            "stem": "Meeting the carved stone jaws at the bottom, the shadow makes ____________ look as if it glides to Earth."
+          },
+          {
+            "badge": "SACRED CELEBRATIONS",
+            "stem": "Crowds gathered with bright ____________ offerings to celebrate vital ____________ in spring and harvests in autumn."
+          }
+        ],
+        "watch_out": "Kukulkan’s serpent shadow only appears twice a year on the spring and autumn equinoxes—not every sunny afternoon at Chichén Itzá.",
+        "prose_hash": "43a862cce5",
+        "prose_fp": "c7c47f00",
+        "question_hash": "5e5e56f1b1"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Climate shell clues",
+            "bullet": "Lake-bed snail shells prove severe multi-year droughts → emptied Tikal's stone reservoirs and ruined crops"
+          },
+          {
+            "hint": "Plaster and soil",
+            "bullet": "Cutting trees to burn pyramid lime plaster caused deforestation → fertile hillside soil washed away"
+          },
+          {
+            "hint": "Blocked trade routes",
+            "bullet": "Fierce city-state warfare blocked food trade → families abandoned southern plazas around AD 900"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Missing northern wells",
+            "bullet": "Southern cities like Tikal lacked deep northern cenotes → failed monsoons quickly drained plastered reservoirs"
+          },
+          {
+            "hint": "Lost royal trust",
+            "bullet": "Ajaw kings promised rain from the gods → endless drought broke citizens' trust in royal rule"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLIMATE EVIDENCE",
+            "stem": "Tiny snail shells from lake beds prove that severe ____________ dried up southern ____________ around AD 900."
+          },
+          {
+            "badge": "ENVIRONMENTAL DAMAGE",
+            "stem": "Burning huge amounts of timber to make lime plaster caused ____________, letting fertile ____________ wash away."
+          },
+          {
+            "badge": "MULTI-CAUSAL LINK",
+            "stem": "Combined with rival ____________ blocking trade routes, these three linked pressures forced families to leave ____________."
+          }
+        ],
+        "watch_out": "Historians reject single-disaster myths—Tikal and Palenque emptied gradually over a century through drought, soil loss, and war combined.",
+        "prose_hash": "4a0eaf02ac",
+        "prose_fp": "0a289143",
+        "question_hash": "7a14606fc5"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Northern water supply",
+            "bullet": "Families moved north to Chichén Itzá and Uxmal → deep Yucatán cenotes gave reliable water"
+          },
+          {
+            "hint": "Six thriving centuries",
+            "bullet": "Postclassic northern cities boomed from AD 950 to 1520 → proved Maya civilisation never disappeared"
+          },
+          {
+            "hint": "Caribbean sea trade",
+            "bullet": "Cliffside Tulum welcomed giant coastal canoes → merchants traded salt, honey, cotton, and bright feathers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Bigger cargo loads",
+            "bullet": "Sea-going Caribbean canoes carried far heavier loads than forest porters → boosted northern merchant wealth"
+          },
+          {
+            "hint": "Northern sky monuments",
+            "bullet": "Northern architects built Chichén Itzá's El Castillo during these centuries → Maya astronomy kept flourishing"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MOVING NORTH",
+            "stem": "When southern plazas fell quiet after AD 900, thousands migrated north to ____________ and ____________ near deep cenotes."
+          },
+          {
+            "badge": "POSTCLASSIC BOOM",
+            "stem": "Across the ____________ era from AD 950 to 1520, northern stone cities thrived beside ____________."
+          },
+          {
+            "badge": "CLIFFSIDE HARBOUR",
+            "stem": "Perched on Caribbean cliffs, walled ____________ welcomed giant sea canoes trading ____________, ____________, and cotton."
+          }
+        ],
+        "watch_out": "The AD 900 decline only hit southern rainforest cities—northern Yucatán cities like Chichén Itzá and Tulum thrived for another six hundred years!",
+        "prose_hash": "e0d7228461",
+        "prose_fp": "3abc8f0a",
+        "question_hash": "4af4133236"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Island town resistance",
+            "bullet": "Spanish forces burned books and spread disease → yet island Maya towns resisted conquest until 1697"
+          },
+          {
+            "hint": "Living millions today",
+            "bullet": "Over seven million Maya live across Mexico and Central America → speak thirty-plus Mayan languages"
+          },
+          {
+            "hint": "Living skills and scripts",
+            "bullet": "Families farm maize and weave bright huipil blouses → modern Maya scholars also read ancient glyphs"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Surviving bark books",
+            "bullet": "Spanish friars burned thousands of bark-paper books → only four ancient codices like Dresden survived"
+          },
+          {
+            "hint": "Four-thousand-year thread",
+            "bullet": "Maize farming and weaving link families from 2000 BC to today → show unbroken living culture"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BRAVE RESISTANCE",
+            "stem": "Even after Spanish friars burned all but ____________ bark-paper codices, island Maya towns resisted conquest until ____________."
+          },
+          {
+            "badge": "LIVING MILLIONS",
+            "stem": "Today, over ____________ Maya people live across Mexico and Central America, speaking more than thirty ____________."
+          },
+          {
+            "badge": "PROUD TRADITIONS",
+            "stem": "Modern families keep heritage alive by farming ____________, weaving bright ____________ blouses, and reading ancient ____________."
+          }
+        ],
+        "watch_out": "Never say the Maya vanished or went extinct—over seven million Maya people keep Mayan languages, maize farming, and weaving alive today!",
+        "prose_hash": "982c059509",
+        "prose_fp": "352a31ca",
+        "question_hash": "af62b48a8a"
+      }
+    ]
+  }
+}

@@ -100,11 +100,22 @@ if (typeof window !== 'undefined') {
 
     const pagesEl = card.querySelector('.urb-pages-badge');
     const readBtn = card.querySelector('.urb-btn-read');
+    const flipBtn = card.querySelector('.urb-btn-flipbook');
     const pdfLink = card.querySelector('.urb-btn-pdf');
     const msBtn = card.querySelector('.urb-btn-ms');
 
     if (pagesEl && ed.pages) pagesEl.textContent = ed.pages;
     const safeTitle = String(ed.label || bucket.title || '').replace(/'/g, "\\'");
+
+    if (flipBtn && bucketKey === 'textbook') {
+      flipBtn.onclick = () => {
+        if (typeof window.openDigitalTextbookReader === 'function') {
+          window.openDigitalTextbookReader(unitId, ed.id || 'MAIN', 0);
+        } else if (typeof window.switchView === 'function') {
+          window.switchView('reader', `${unitId}:${ed.id || 'MAIN'}:0`);
+        }
+      };
+    }
 
     if (readBtn) {
       readBtn.onclick = () => {
@@ -244,8 +255,15 @@ function renderBookletCard(unitId, bucketKey, bucket, accentColor, badgeClass, s
         ${selectHtml}
         ${staffPrintNote}
       </div>
-      <div style="display: flex; align-items: center; gap: 6px; padding-top: 8px; border-top: 1px solid #f1f5f9;">
-        <button type="button" class="urb-btn-read" onclick="window.openCurricularPillar('${htmlUrl}', '${safeTitle}', '${pdfUrl || ''}', '${bucket.label.toUpperCase()}')" style="flex: 1.15; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
+      <div style="display: flex; align-items: center; gap: 6px; padding-top: 8px; border-top: 1px solid #f1f5f9; flex-wrap: wrap;">
+        ${
+          bucketKey === 'textbook'
+            ? `<button type="button" class="urb-btn-flipbook" onclick="if(window.openDigitalTextbookReader){window.openDigitalTextbookReader('${unitId}', '${defaultItem.id || 'MAIN'}', 0);}else if(window.switchView){window.switchView('reader', '${unitId}:${defaultItem.id || 'MAIN'}:0');}" style="flex: 1.25; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 800; background: #0284c7; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 5px;" title="Open Interactive 2-Page Flipbook Textbook Reader">
+                <i class="fa-solid fa-book-open"></i> <span>Flipbook</span>
+              </button>`
+            : ''
+        }
+        <button type="button" class="urb-btn-read" onclick="window.openCurricularPillar('${htmlUrl}', '${safeTitle}', '${pdfUrl || ''}', '${bucket.label.toUpperCase()}')" style="flex: 1.05; padding: 7px 10px; border-radius: 6px; font-size: 0.76rem; font-weight: 700; background: #0f172a; color: #ffffff; border: none; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 5px;">
           <i class="fa-solid fa-book-open-reader"></i> <span>Read</span>
         </button>
         ${pdfActionHtml}

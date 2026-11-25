@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_ancient_greece",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Mainland barriers",
+            "bullet": "Steep mountains sliced mainland Greece into narrow valleys → slow mountain tracks kept towns apart"
+          },
+          {
+            "hint": "Scattered coastline",
+            "bullet": "Over a thousand Aegean islands lay scattered offshore → separating towns across open water"
+          },
+          {
+            "hint": "Independent towns",
+            "bullet": "Towns formed rival poleis like Athens and Sparta → guarding their own laws and coins"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Early sea kingdoms",
+            "bullet": "Earlier Minoan island palaces and Mycenaean hilltop forts → already grew as separate regional strongholds"
+          },
+          {
+            "hint": "Everyday journeys",
+            "bullet": "Wooden boats beat carts over rocky mountain tracks → Greeks travelled faster by sea"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RUGGED LANDSCAPE",
+            "stem": "Across the Greek mainland, steep ____________ and narrow valleys meant towns remained ____________."
+          },
+          {
+            "badge": "ISLAND GEOGRAPHY",
+            "stem": "Scattered across the ____________ Sea, over a thousand ____________ stopped Greece becoming one single kingdom."
+          },
+          {
+            "badge": "RIVAL POLEIS",
+            "stem": "Because travel between valleys was slow, independent ____________ such as ____________ and ____________ made their own laws and coins."
+          }
+        ],
+        "watch_out": "Ancient Greece was never one single united country under one king—it was a patchwork of rival independent city-states called poleis.",
+        "prose_hash": "086f5dec88",
+        "prose_fp": "e23414ec",
+        "question_hash": "81f285754f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Hilltop stronghold",
+            "bullet": "Walled Acropolis rose high above town roofs → sheltered families safely whenever enemy armies attacked"
+          },
+          {
+            "hint": "Sacred skyline",
+            "bullet": "Citizens built marble temples atop the Acropolis → honoured the patron god protecting their polis"
+          },
+          {
+            "hint": "Lowland marketplace",
+            "bullet": "Sunny lowland Agora hosted food and pottery stalls → men gathered daily to debate laws"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rival neighbours",
+            "bullet": "Rival poleis often clashed over border land → cities needed hilltop walls against sudden raids"
+          },
+          {
+            "hint": "Citizen voices",
+            "bullet": "Morning arguments in the open Agora → planted early habits of public debate and voting"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DEFENCE AND WORSHIP",
+            "stem": "High above the city roofs, the walled ____________ protected families from attack and held marble ____________."
+          },
+          {
+            "badge": "DAILY TRADING",
+            "stem": "Down on flat ground, farmers and potters used the open ____________ to sell ____________ and painted clay bowls."
+          },
+          {
+            "badge": "TWO SHARED SPACES",
+            "stem": "Together, the high city gave a polis ____________ and worship, while the busy marketplace handled ____________ and political debate."
+          }
+        ],
+        "watch_out": "Do not mix up the two Greek names—the Acropolis was the high fortified temple hill, whereas the Agora was the flat open marketplace below.",
+        "prose_hash": "420076ac8e",
+        "prose_fp": "34a99283",
+        "question_hash": "421c29c07b"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Shared identity",
+            "bullet": "Greeks called themselves Hellenes → spoke one shared language and worshipped the same Olympian gods"
+          },
+          {
+            "hint": "Written signs",
+            "bullet": "Greeks adapted Phoenician signs into a twenty-four-letter alphabet → vowels let towns carve readable laws"
+          },
+          {
+            "hint": "Overseas cargo",
+            "bullet": "Ships exported olive oil and painted jars → brought home vital wheat for rocky towns"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Thin hillside soil",
+            "bullet": "Rocky mountain slopes grew little wheat → farmers planted hardy olive trees and grapevines instead"
+          },
+          {
+            "hint": "Shared festivals",
+            "bullet": "Common speech and Olympian gods → later drew rival poleis together at pan-Greek festivals"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ONE FAMILY",
+            "stem": "Even though rival poleis fought, Greeks called themselves ____________ and shared one ____________ and religion."
+          },
+          {
+            "badge": "NEW ALPHABET",
+            "stem": "Around 800 BC, sea traders adapted ____________ signs by adding vowels to create the twenty-four-letter ____________."
+          },
+          {
+            "badge": "SEA TRADE LINKS",
+            "stem": "Because rocky hillsides had thin soil, ships swapped Greek ____________ and ____________ overseas for vital wheat grain."
+          }
+        ],
+        "watch_out": "Ancient Greeks did not call themselves Greeks—they called themselves Hellenes and named their homeland Hellas, sharing culture rather than one government.",
+        "prose_hash": "38b02a2c46",
+        "prose_fp": "8582045c",
+        "question_hash": "5e1771c09c"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Hillside voting",
+            "bullet": "Adult male citizens met on the Pnyx hill → voted by hand on every law"
+          },
+          {
+            "hint": "Checks on power",
+            "bullet": "Ostrakon shards banished bossy leaders → kleroterion machines picked five hundred jurors fairly by chance"
+          },
+          {
+            "hint": "Excluded residents",
+            "bullet": "Athenian democracy barred women, enslaved people, and foreign metics → most adults had zero vote"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Busy sea port",
+            "bullet": "Sea trade drew foreign metics to Athens → they worked in the polis without voting"
+          },
+          {
+            "hint": "Marketplace habits",
+            "bullet": "Daily debates in the open Agora → prepared male citizens to argue on the Pnyx"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DIRECT VOTING",
+            "stem": "On the rocky ____________ hill, adult male citizens debated laws themselves and raised hands in ____________."
+          },
+          {
+            "badge": "FAIRNESS TOOLS",
+            "stem": "To stop cheats or tyrants, voters scratched names on ____________ shards and chose jurors using a marble ____________."
+          },
+          {
+            "badge": "LEFT WITHOUT VOTES",
+            "stem": "Despite calling their system people-power, Athens excluded ____________, ____________, and foreign-born ____________."
+          }
+        ],
+        "watch_out": "Athenian direct democracy was very different from modern voting—citizens voted on every law in person, yet women, enslaved people, and metics were completely excluded.",
+        "prose_hash": "0ffa702383",
+        "prose_fp": "fb4c74b4",
+        "question_hash": "bbd94d8d68"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Army leadership",
+            "bullet": "Two kings ruled beside older nobles → Sparta prized strict obedience over open debate"
+          },
+          {
+            "hint": "Forced farm labour",
+            "bullet": "Conquered helots worked the fields → freed Spartan citizen men to train full-time for war"
+          },
+          {
+            "hint": "Childhood barracks",
+            "bullet": "Seven-year-old boys entered the harsh agoge → went barefoot, slept on reeds, and practised stealth"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Inland geography",
+            "bullet": "Ringed inland by steep mountains → Sparta built land armies rather than sea-trading fleets"
+          },
+          {
+            "hint": "Outnumbered rulers",
+            "bullet": "Helot farmworkers outnumbered Spartan citizens → fear of rebellion drove Sparta’s tough military lifestyle"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SPARTAN GOVERNMENT",
+            "stem": "Unlike democratic Athens, inland Sparta was led by ____________ alongside a council of ____________, relying on conquered ____________ to farm."
+          },
+          {
+            "badge": "BARRACKS TRAINING",
+            "stem": "Once a Spartan boy turned ____________, he left home for the ____________ to build toughness and obedience."
+          },
+          {
+            "badge": "HARSH DAILY TESTS",
+            "stem": "Inside the barracks, boys walked ____________ in winter, slept on ____________, and ate thin dark broth."
+          }
+        ],
+        "watch_out": "Sparta did not have one single all-powerful king—two kings ruled side by side with a council of older nobles so neither king held total control.",
+        "prose_hash": "02c1aafe78",
+        "prose_fp": "fbc619a8",
+        "question_hash": "285a2b1d21"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Athenian indoors",
+            "bullet": "Athenian girls rarely attended school → stayed indoors learning weaving under male guardians"
+          },
+          {
+            "hint": "Outdoor athletics",
+            "bullet": "Spartan girls trained outdoors in running and wrestling → fit mothers raised strong soldiers"
+          },
+          {
+            "hint": "Land and voice",
+            "bullet": "Husbands lived in barracks → Spartan women owned land, ran estates, and spoke publicly"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wealthy brothers",
+            "bullet": "Wealthy Athenian boys studied reading, geometry, and speechmaking → preparing for Pnyx debates"
+          },
+          {
+            "hint": "Political limits",
+            "bullet": "Even in freer Sparta → women still could not sit on councils or command armies"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ATHENIAN HOMES",
+            "stem": "Inside wealthy Athenian households, boys studied with tutors while girls stayed indoors learning ____________ under male ____________."
+          },
+          {
+            "badge": "SPARTAN FITNESS",
+            "stem": "Outdoors in Sparta, girls practised ____________, wrestling, and javelin because citizens believed strong mothers raised ____________."
+          },
+          {
+            "badge": "RUNNING ESTATES",
+            "stem": "Because Spartan husbands lived away in ____________, Spartan women could own ____________ and manage farms themselves."
+          }
+        ],
+        "watch_out": "Do not assume Athens gave women more freedom because it was a democracy—Spartan women actually owned land and exercised outdoors far more freely than Athenian women.",
+        "prose_hash": "7d66379424",
+        "prose_fp": "77278cb5",
+        "question_hash": "41b4057826"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Mountain rulers",
+            "bullet": "Twelve Olympian gods ruled from Mount Olympus → governing forces like thunder, seas, and wisdom"
+          },
+          {
+            "hint": "Marble god-homes",
+            "bullet": "Cities built marble temples like the Parthenon → sheltered towering statues of their patron god"
+          },
+          {
+            "hint": "Open-air offerings",
+            "bullet": "Worshippers gathered outdoors at stone altars → poured wine and burned meat offerings for gods"
+          }
+        ],
+        "context": [
+          {
+            "hint": "High city shrines",
+            "bullet": "Athens built its marble Parthenon high on the Acropolis → visible to sailors miles offshore"
+          },
+          {
+            "hint": "One Greek faith",
+            "bullet": "Rival poleis chose different patron gods → yet all Hellenes honoured Zeus’s Olympian family"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MOUNT OLYMPUS",
+            "stem": "Greeks believed twelve immortal gods ruled from snowy ____________, led by thunderbolt-hurling ____________ and queen ____________."
+          },
+          {
+            "badge": "TEMPLE HOMES",
+            "stem": "To honour their patron goddess, Athenians built the marble ____________ housing a huge gold-and-ivory statue of ____________."
+          },
+          {
+            "badge": "OUTDOOR ALTARS",
+            "stem": "Rather than praying quietly inside, crowds stood outdoors at stone ____________ to pour ____________ and roast meat."
+          }
+        ],
+        "watch_out": "Greek temples like the Parthenon were not churches where crowds sat inside—temples housed the god’s statue, while citizens worshipped outdoors around smoky stone altars.",
+        "prose_hash": "cbce605e10",
+        "prose_fp": "c04c72bf",
+        "question_hash": "7e188b9cca"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Sacred mountain advice",
+            "bullet": "Generals and sailors climbed Delphi before big decisions → priestess Pythia spoke Apollo’s mysterious riddles"
+          },
+          {
+            "hint": "Spoken hero tales",
+            "bullet": "Poets chanted myths of Heracles and Odysseus → taught bravery and wit through monster quests"
+          },
+          {
+            "hint": "Everyday pottery art",
+            "bullet": "Potters painted black-figure and red-figure myths on jars → brought hero stories to supper tables"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Busy potter stalls",
+            "bullet": "Merchant ships traded painted Greek pottery abroad → carried Olympian myths across the sea"
+          },
+          {
+            "hint": "Reading without books",
+            "bullet": "Handwritten papyrus scrolls stayed rare and costly → spoken songs and painted vases taught everyone"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "APOLLO'S ORACLE",
+            "stem": "Before launching wars or voyages, Greek leaders climbed ____________ to hear riddles spoken by the priestess ____________."
+          },
+          {
+            "badge": "HEROES AND MONSTERS",
+            "stem": "Chanted myths kept beliefs alive through tales of ____________ battling the Hydra and ____________ outwitting giants."
+          },
+          {
+            "badge": "PAINTED POTTERY",
+            "stem": "Craftworkers decorated glossy ____________ and ____________ clay vases so everyday jars retold famous sacred stories."
+          }
+        ],
+        "watch_out": "The Pythia at Delphi never gave plain yes-or-no instructions—she spoke puzzling riddles from Apollo that kings and generals could easily misread.",
+        "prose_hash": "fa9d5f2c75",
+        "prose_fp": "d1951c1c",
+        "question_hash": "e59bb2d218"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Peace for travel",
+            "bullet": "Messengers declared a Sacred Truce across Greece → paused wars so athletes travelled safely"
+          },
+          {
+            "hint": "Religious sport",
+            "bullet": "Athletes swore fair-play oaths to Zeus → raced barefoot and competed in wrestling and chariots"
+          },
+          {
+            "hint": "Shared honour",
+            "bullet": "Winners wore a wild-olive kotinos crown → earned lasting glory for their home polis"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Location trap",
+            "bullet": "Sunny Olympia lay in southern Greece → far away from snowy Mount Olympus"
+          },
+          {
+            "hint": "Pan-Greek pride",
+            "bullet": "Only Greek-speaking Hellenes competed together at Olympia → strengthened shared identity across rival city-states"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SACRED TRUCE",
+            "stem": "Every four summers from ____________, messengers announced the ____________ so warring city-states paused fighting for safe travel."
+          },
+          {
+            "badge": "HONOURING ZEUS",
+            "stem": "At the shrine of ____________, athletes swore beside ____________ never to cheat before racing in the stadion and chariots."
+          },
+          {
+            "badge": "OLIVE VICTORY",
+            "stem": "Instead of gold or silver medals, Olympic champions wore a wild-olive ____________ to bring glory to their ____________."
+          }
+        ],
+        "watch_out": "Do not confuse Olympia with Mount Olympus—the Olympic Games took place at the valley shrine of Olympia in southern Greece, not on top of snowy Mount Olympus—and winners wore olive wreaths, never gold medals.",
+        "prose_hash": "ed8b5880f9",
+        "prose_fp": "aba82aa2",
+        "question_hash": "d946d999c9"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Armoured wall",
+            "bullet": "Athenian citizen hoplites locked bronze shields and spears together → formed an unbroken fighting phalanx"
+          },
+          {
+            "hint": "Surprise charge",
+            "bullet": "Greek phalanx charged fast across Marathon plain → smashed lighter Persian archers at close range"
+          },
+          {
+            "hint": "Victory run",
+            "bullet": "Legend says Pheidippides ran twenty-six miles to warn Athens → inspired today’s long-distance marathon race"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Citizen stakes",
+            "bullet": "Athenian hoplites defended their young democracy → voted themselves to march out rather than surrender"
+          },
+          {
+            "hint": "Empire contrast",
+            "bullet": "Vast Persian Empire ruled millions under King Darius → expected one small polis to surrender"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INVASION CAUSE",
+            "stem": "When Persian King ____________ invaded in 490 BC to punish Athens, his archers landed on the plain of ____________."
+          },
+          {
+            "badge": "PHALANX TACTICS",
+            "stem": "Locking bronze shields and long spears into a tight ____________, citizen ____________ charged fast to break Persian lines."
+          },
+          {
+            "badge": "LASTING MEMORY",
+            "stem": "Athenians buried fallen soldiers beneath a grassy ____________, while ____________’s twenty-six-mile run inspired the modern marathon."
+          }
+        ],
+        "watch_out": "Spartan soldiers did not win the Battle of Marathon in 490 BC—Athenian citizen hoplites defeated Darius’s Persians before Sparta’s army arrived.",
+        "prose_hash": "ba5f481fc5",
+        "prose_fp": "0978ba4c",
+        "question_hash": "c57381b912"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Natural bottleneck",
+            "bullet": "Steep cliffs and crashing sea squeezed Thermopylae narrow → cancelled out King Xerxes’s huge numbers"
+          },
+          {
+            "hint": "Spartan discipline",
+            "bullet": "Leonidas’s Spartans and Greek allies locked shields → held off elite Immortals for three days"
+          },
+          {
+            "hint": "Betrayed rear path",
+            "bullet": "A traitor showed Xerxes a mountain track → Leonidas stayed behind so Greek allies escaped"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lifelong training",
+            "bullet": "Harsh agoge training from age seven → prepared Leonidas’s Spartans never to break ranks"
+          },
+          {
+            "hint": "Rare Greek alliance",
+            "bullet": "Old rivals Sparta and Athens united in 480 BC → defended Hellene freedom together"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLEVER TERRAIN",
+            "stem": "Squeezed between steep ____________ and the sea, the narrow pass of ____________ stopped Xerxes using his huge numbers."
+          },
+          {
+            "badge": "THREE-DAY STAND",
+            "stem": "Led by Spartan King ____________, three hundred Spartans and Greek allies held back the Persian ____________ for three days."
+          },
+          {
+            "badge": "HIDDEN TRACK",
+            "stem": "Once a traitor revealed a secret ____________, Leonidas stayed fighting to buy time for ____________ to retreat."
+          }
+        ],
+        "watch_out": "Thermopylae was a heroic Persian victory rather than a Greek win, and the three hundred Spartans did not fight completely alone—thousands of other Greek allies guarded the pass beside them.",
+        "prose_hash": "56cd78902b",
+        "prose_fp": "ce969086",
+        "question_hash": "cf5d229bed"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "False message",
+            "bullet": "Themistocles sent Xerxes a trick message → lured the Persian fleet into narrow Salamis"
+          },
+          {
+            "hint": "Jammed sea channel",
+            "bullet": "Narrow strait jammed Persian warships together → crowded crews crashed without room to turn"
+          },
+          {
+            "hint": "Warship design",
+            "bullet": "Fast triremes rowed by 170 oarsmen → smashed trapped Persian hulls with waterline bronze rams"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Evacuated polis",
+            "bullet": "Families evacuated Athens before Persians burned it → saved lives while warships fought offshore"
+          },
+          {
+            "hint": "Golden age spark",
+            "bullet": "Winning at Salamis and Plataea kept Greece free → sparked Athens’s golden age of culture"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TRIREME POWER",
+            "stem": "Trusting fast wooden ____________ rowed by 170 oarsmen, Admiral ____________ relied on speed and heavy ____________ rams."
+          },
+          {
+            "badge": "CLEVER BAIT",
+            "stem": "By sending King Xerxes a ____________, the Greeks lured the massive Persian fleet into the narrow ____________."
+          },
+          {
+            "badge": "TRAPPED FLEET",
+            "stem": "Jammed inside tight waters, big Persian ships ____________ together while nimble Greek warships rammed them to save ____________."
+          }
+        ],
+        "watch_out": "Greek triremes did not sink enemy ships with cannons or gunpowder—three tiers of oarsmen rowed fast to smash enemy hulls with a heavy bronze ram at the waterline.",
+        "prose_hash": "990114e319",
+        "prose_fp": "818eb35b",
+        "question_hash": "f1228ebc59"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Hillside acoustics",
+            "bullet": "Curved hillside stone rows at Epidaurus → carried actors’ whispers clearly to fourteen thousand spectators"
+          },
+          {
+            "hint": "Masks and genres",
+            "bullet": "Actors wore bold wide-mouthed masks → back rows spotted sad tragedies and funny comedies"
+          },
+          {
+            "hint": "Tickets for all",
+            "bullet": "City coin tokens let poor citizens attend → everyone watched and debated justice together"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Civic training",
+            "bullet": "Tragedies explored pride, duty, and tough moral choices → sharpened citizens’ judgement for Pnyx votes"
+          },
+          {
+            "hint": "Religious roots",
+            "bullet": "Plays honoured Olympian wine-god Dionysus → theatre grew directly out of public religious festivals"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OPEN-AIR DESIGN",
+            "stem": "Carved into sunny hillsides like ____________, curved stone rows carried clear voices to ____________ spectators without microphones."
+          },
+          {
+            "badge": "STAGE CRAFT",
+            "stem": "During festivals for ____________, male actors wore exaggerated ____________ to perform serious ____________ and lively comedies."
+          },
+          {
+            "badge": "WHOLE POLIS",
+            "stem": "Giving coin tokens to ____________ meant theatre united citizens to reflect on justice and human choices."
+          }
+        ],
+        "watch_out": "Ancient Greek theatres had no electric lights, roofs, or female actors—performances happened in bright daylight, and male actors switched painted masks to play every male and female character.",
+        "prose_hash": "bd292b6006",
+        "prose_fp": "710f7ac3",
+        "question_hash": "bebbe6c2fe"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Questioning habits",
+            "bullet": "Barefoot Socrates questioned citizens daily in the Agora → pushed Athenians to test unproven beliefs"
+          },
+          {
+            "hint": "Courage for truth",
+            "bullet": "Condemned by jurors in 399 BC, Socrates drank poison → refused to abandon honest questioning"
+          },
+          {
+            "hint": "Observing nature",
+            "bullet": "Aristotle observed and grouped hundreds of plants and animals → built early roots for science"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Chain of schools",
+            "bullet": "Plato preserved Socrates’s talks at Athens’s Academy → taught young Aristotle before Aristotle’s own Lyceum"
+          },
+          {
+            "hint": "Royal pupil ahead",
+            "bullet": "Aristotle’s wide learning → soon made him royal tutor to young Alexander of Macedon"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SOCRATIC QUESTIONS",
+            "stem": "Walking barefoot through the ____________, ____________ became famous for asking sharp questions that tested citizens’ beliefs."
+          },
+          {
+            "badge": "CHAIN OF THINKERS",
+            "stem": "After Socrates died in 399 BC, his pupil ____________ founded the Academy and taught young ____________."
+          },
+          {
+            "badge": "ROOTS OF SCIENCE",
+            "stem": "At his ____________ school, Aristotle advanced science by ____________, measuring, and grouping real plants and animals."
+          }
+        ],
+        "watch_out": "Socrates never wrote a single book himself—we know his famous questioning method because his devoted pupil Plato wrote down their conversations afterward.",
+        "prose_hash": "c062a85ef5",
+        "prose_fp": "fd113bf2",
+        "question_hash": "703102bbd6"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Bedside medicine",
+            "bullet": "Hippocrates studied natural symptoms and bedside notes → replaced magic cures with careful observation"
+          },
+          {
+            "hint": "Doctors' promise",
+            "bullet": "Hippocrates’s ethical Oath bound doctors to help patients → shaped medical duty for centuries"
+          },
+          {
+            "hint": "Shapes and levers",
+            "bullet": "Pythagoras and Euclid unlocked triangle and geometry rules → Archimedes mastered levers and water displacement"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Older beliefs",
+            "bullet": "Sick Greeks once blamed illnesses on angry gods → checking natural causes transformed healing"
+          },
+          {
+            "hint": "Practical building",
+            "bullet": "Exact Greek geometry and lever maths → helped engineers raise balanced marble temples and lighthouses"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NATURAL HEALING",
+            "stem": "Instead of blaming angry gods for sickness, ____________ on Kos observed natural ____________ and kept bedside notes."
+          },
+          {
+            "badge": "MEDICAL ETHICS",
+            "stem": "Prescribing clean food and rest, Greek doctors promised to care ethically for patients under the ____________."
+          },
+          {
+            "badge": "MATHS AND MACHINES",
+            "stem": "While ____________ studied triangles and ____________ wrote a geometry guide, ____________ mastered levers and shouted Eureka!"
+          }
+        ],
+        "watch_out": "Hippocrates did not discover modern germs or antibiotics—his breakthrough was observing natural bodily symptoms and patient care instead of blaming angry gods.",
+        "prose_hash": "39a4fd5a67",
+        "prose_fp": "18c9a2f9",
+        "question_hash": "9729f05f03"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Northern springboard",
+            "bullet": "Crowned king of Macedon in 336 BC → young Alexander united Greece before marching east"
+          },
+          {
+            "hint": "Unbeaten campaigns",
+            "bullet": "Bold cavalry charges rode undefeated for eleven years → conquered Egypt, Persia, and north-west India"
+          },
+          {
+            "hint": "Cultural blending",
+            "bullet": "New Alexandria cities mixed Greek speech with eastern customs → created the connected Hellenistic world"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Famous tutor",
+            "bullet": "Philosopher Aristotle tutored young Prince Alexander → inspired him to carry Greek learning east"
+          },
+          {
+            "hint": "Old Persian foe",
+            "bullet": "Persia had once invaded Greece at Marathon and Salamis → Alexander now conquered Persia itself"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "YOUNG CONQUEROR",
+            "stem": "Tutored as a prince by ____________ and riding ____________, Alexander became king of ____________ aged twenty."
+          },
+          {
+            "badge": "THREE CONTINENTS",
+            "stem": "Over eleven unbeaten years from 336 BC, his armies marched across ____________, ____________, and north-west ____________."
+          },
+          {
+            "badge": "HELLENISTIC WORLD",
+            "stem": "By founding cities named ____________ that mixed Greek speech with local customs, he shaped the ____________ era."
+          }
+        ],
+        "watch_out": "Alexander the Great was not born in Athens or Sparta—he ruled the northern kingdom of Macedon before uniting the Greek city-states under his command.",
+        "prose_hash": "8363927256",
+        "prose_fp": "8588a579",
+        "question_hash": "bb3dc81d89"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Egyptian wonder-port",
+            "bullet": "Alexandria’s Great Library held vast papyrus scrolls → scholars studied stars, maps, and Euclid’s geometry"
+          },
+          {
+            "hint": "Military conquest",
+            "bullet": "Roman legions conquered mainland Greece in 146 BC → ended independent rule for old poleis"
+          },
+          {
+            "hint": "Cultural admiration",
+            "bullet": "Dazzled Romans copied marble statues, hired Greek tutors, and matched their own gods to Olympians"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shared scholarly tongue",
+            "bullet": "Alexander’s conquests made Greek an international language → let distant scholars share scrolls in Egypt"
+          },
+          {
+            "hint": "Passing the torch",
+            "bullet": "Rome carried Greek myths, columns, and poetry across Europe → preserved Hellene ideas for Britain"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CENTRE OF LEARNING",
+            "stem": "Beside the tall ____________ in Egypt, scholars inside Alexandria’s ____________ studied stars, maps, and geometry on papyrus scrolls."
+          },
+          {
+            "badge": "ROMAN TAKEOVER",
+            "stem": "Although tough legions from the ____________ conquered mainland Greece in ____________, Greek culture did not disappear."
+          },
+          {
+            "badge": "ADMIRING WINNERS",
+            "stem": "Wealthy Romans copied Greek ____________, hired ____________ for their children, and matched Roman gods to Mount Olympus."
+          }
+        ],
+        "watch_out": "Alexandria’s famous Great Library and Pharos Lighthouse stood in Egypt on the North African coast, not on the Greek mainland—and Roman conquest spread Greek ideas rather than erasing them.",
+        "prose_hash": "b290c91a0a",
+        "prose_fp": "51c7f6d5",
+        "question_hash": "4db1b4a7f9"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Law and voting",
+            "bullet": "Modern elections and twelve-person courtroom juries → echo Athens’s bold experiments in citizen democracy"
+          },
+          {
+            "hint": "Words and buildings",
+            "bullet": "Everyday English words like school and planet join Doric, Ionic, and Corinthian columns on public buildings"
+          },
+          {
+            "hint": "Revived games",
+            "bullet": "Fourteen nations gathered in Athens in 1896 → revived Olympia’s festival as the Modern Olympics"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wider citizen rights",
+            "bullet": "Unlike Athens’s male-only Pnyx votes → modern democracy gives women and all adults equal votes"
+          },
+          {
+            "hint": "Ancient marathon echo",
+            "bullet": "Modern Olympic marathons still cover twenty-six miles → remembering Pheidippides’s legendary run in 490 BC"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CITIZEN RIGHTS",
+            "stem": "Whenever citizens vote in elections or serve on ____________, we see the lasting legacy of Athenian ____________."
+          },
+          {
+            "badge": "LANGUAGE AND STONE",
+            "stem": "Greek roots live on in everyday words like ____________ and ____________, alongside Doric, Ionic, and ____________ columns."
+          },
+          {
+            "badge": "OLYMPIC REVIVAL",
+            "stem": "In ____________, athletes from fourteen nations met inside Athens’s marble stadium to launch the ____________."
+          }
+        ],
+        "watch_out": "Modern democracy improved on ancient Athens rather than copying it identically—today adults elect representatives and women have equal voting rights, unlike the male-only Pnyx.",
+        "prose_hash": "8e5fdde8f3",
+        "prose_fp": "0f512797",
+        "question_hash": "12c2591471"
+      }
+    ]
+  }
+}

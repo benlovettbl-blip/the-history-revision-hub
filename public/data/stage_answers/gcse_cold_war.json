@@ -1,0 +1,2973 @@
+{
+  "unit_id": "gcse_cold_war",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Ideological clash",
+            "bullet": "Multi-party capitalism clashed directly with Stalin’s one-party Communist dictatorship and command economy"
+          },
+          {
+            "hint": "Interwar grievances",
+            "bullet": "1918 Western Civil War intervention and Stalin’s 1939 Nazi-Soviet Pact bred deep mutual suspicion"
+          },
+          {
+            "hint": "Common Axis enemy",
+            "bullet": "Hitler’s June 1941 invasion and Pearl Harbor forced a purely temporary marriage of convenience"
+          },
+          {
+            "hint": "Second Front delay",
+            "bullet": "Despite US Lend-Lease aid, Stalin suspected allies delayed invading France to bleed Russia dry"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Eastern Front losses",
+            "bullet": "Catastrophic Red Army casualties against Nazi Germany → heightened Stalin’s demand for post-war security"
+          },
+          {
+            "hint": "Pre-war appeasement",
+            "bullet": "Excluding Moscow at Munich in 1938 → convinced Stalin Britain hoped Hitler would attack eastward"
+          },
+          {
+            "hint": "Western post-war aims",
+            "bullet": "Anglo-American pledges of post-war free elections and free trade → threatened Stalin’s territorial ambitions"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IDEOLOGICAL DIVIDE",
+            "stem": "Ideologically, Western ____________ clashed fundamentally with Soviet ____________ over multi-party democracy and..."
+          },
+          {
+            "badge": "HISTORICAL DISTRUST",
+            "stem": "Mutual suspicion stretching back to ____________ and the August 1939 ____________ meant only common Axis enemies..."
+          },
+          {
+            "badge": "WARTIME FRICTION",
+            "stem": "Even while shipping American ____________ supplies, Western delays over opening a ____________ convinced Stalin that..."
+          }
+        ],
+        "watch_out": "Do not confuse the August 1939 Nazi-Soviet Pact with the 1941 Grand Alliance—Hitler broke that pact by invading the USSR, pushing Stalin alongside Britain and America.",
+        "prose_hash": "383cfff036",
+        "prose_fp": "c290b53a",
+        "question_hash": "b059b6e1dc"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Cross-Channel pledge",
+            "bullet": "Britain and America promised a Second Front into Nazi-occupied France by May 1944"
+          },
+          {
+            "hint": "Balkan plan rejected",
+            "bullet": "Roosevelt sided with Stalin to block Churchill’s rival proposal to invade through the Balkans"
+          },
+          {
+            "hint": "Pacific and UN",
+            "bullet": "Stalin pledged Soviet war against Japan after Nazi defeat and backed Roosevelt’s United Nations"
+          },
+          {
+            "hint": "Polish border shift",
+            "bullet": "Allies let Moscow keep eastern Poland seized in 1939 → compensated Poland westward with German land"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Battlefield leverage",
+            "bullet": "Major Red Army victories at Stalingrad and Kursk → gave Stalin strong military bargaining leverage"
+          },
+          {
+            "hint": "Churchill’s strategic fear",
+            "bullet": "Churchill wanted Western troops in south-eastern Europe → aimed to prevent Red Army dominance there"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WESTERN CONCESSION",
+            "stem": "At Tehran, Roosevelt won Stalin’s cooperation by promising ____________ by May 1944 while overruling Churchill’s..."
+          },
+          {
+            "badge": "SOVIET PLEDGES",
+            "stem": "In exchange for Western military relief, Stalin agreed to join ____________ and declare war on ____________ once..."
+          },
+          {
+            "badge": "EASTERN FRONTIERS",
+            "stem": "Territorially, the Big Three redrew Poland by letting the USSR retain ____________ while compensating Warsaw with..."
+          }
+        ],
+        "watch_out": "Churchill was isolated at Tehran rather than leading a united Western bloc—Roosevelt prioritized winning Stalin’s trust and rejected Churchill’s Balkan strategy.",
+        "prose_hash": "83dcab55e9",
+        "prose_fp": "cc0cc903",
+        "question_hash": "32f6b45319"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Four-zone division",
+            "bullet": "Defeated Germany and Berlin deep inside the Soviet zone split into four occupation zones"
+          },
+          {
+            "hint": "Reparations and Japan",
+            "bullet": "Set German reparations at $20 billion—half for Moscow—and confirmed Soviet entry against Japan"
+          },
+          {
+            "hint": "Liberated Europe pledge",
+            "bullet": "Stalin signed the Declaration on Liberated Europe → promised democratic free elections across Eastern Europe"
+          },
+          {
+            "hint": "Rival Polish factions",
+            "bullet": "Stalin backed Communist Lublin Poles for buffer security, clashing with Churchill’s exiled London Poles"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Military reality",
+            "bullet": "Red Army troops already occupied Poland and Eastern Europe → gave Stalin physical control on the ground"
+          },
+          {
+            "hint": "Pacific war need",
+            "bullet": "Before atomic weapons existed, Roosevelt needed Soviet troops against Japan → softened US pressure over Poland"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GERMAN SETTLEMENT",
+            "stem": "Broad consensus emerged at Yalta to divide both ____________ and ____________ into four zones alongside $20 billion in..."
+          },
+          {
+            "badge": "DEMOCRATIC PROMISE",
+            "stem": "Officially, Stalin signed the ____________ pledging ____________ across Eastern Europe and promised war against Japan within..."
+          },
+          {
+            "badge": "POLISH TENSION",
+            "stem": "Underlying friction surfaced over Poland because Moscow championed the pro-Soviet ____________ whereas Britain backed the..."
+          }
+        ],
+        "watch_out": "Berlin did not sit on the border between East and West zones—Yalta placed four-power Berlin deep inside the Soviet occupation zone.",
+        "prose_hash": "c3da3683b5",
+        "prose_fp": "3673e967",
+        "question_hash": "aca274c75d"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Vanished common enemy",
+            "bullet": "Nazi Germany’s defeat removed the shared existential threat holding the rival superpowers together"
+          },
+          {
+            "hint": "New Western leaders",
+            "bullet": "Fiercely anti-communist Truman replaced Roosevelt, while Attlee defeated Churchill midway through the summit"
+          },
+          {
+            "hint": "Broken Polish promises",
+            "bullet": "Truman confronted Stalin for arresting non-communist Poles and installing a Communist regime in Warsaw"
+          },
+          {
+            "hint": "Reparations clash",
+            "bullet": "Truman blocked heavy western German reparations → restricted each power mainly to its own zone"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lessons of 1919",
+            "bullet": "Western leaders remembered harsh Versailles reparations → feared an impoverished, starving Germany turning Communist"
+          },
+          {
+            "hint": "Soviet war ruin",
+            "bullet": "27 million Soviet dead and shattered industry → drove Stalin’s insistence on stripping German factories"
+          },
+          {
+            "hint": "Remaining narrow deals",
+            "bullet": "Even while confirming war-crimes trials and Poland’s Oder-Neisse border, personal trust vanished completely"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEADERSHIP CHANGE",
+            "stem": "With Nazi Germany defeated, wartime rapport evaporated as ____________ succeeded Roosevelt and ____________ replaced Churchill..."
+          },
+          {
+            "badge": "POLISH CONFRONTATION",
+            "stem": "Angered by broken Yalta pledges, Truman challenged Stalin for arresting ____________ and imposing a Communist..."
+          },
+          {
+            "badge": "REPARATIONS DISPUTE",
+            "stem": "Over Germany’s recovery, Truman resisted crippling ____________ from western zones lest poverty push Germans toward..."
+          }
+        ],
+        "watch_out": "Roosevelt never attended Potsdam—he died in April 1945, meaning anti-communist Harry S. Truman led US negotiations alongside Attlee and Stalin.",
+        "prose_hash": "d1ac786b3c",
+        "prose_fp": "7b32791a",
+        "question_hash": "0f8b77cece"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "New Mexico test",
+            "bullet": "Successful 16 July atomic test meant Washington no longer needed Red Army help against Japan"
+          },
+          {
+            "hint": "Potsdam nuclear hint",
+            "bullet": "Truman boasted of unusual destructive force on 24 July, though Manhattan Project spies already briefed Stalin"
+          },
+          {
+            "hint": "August bombings",
+            "bullet": "Hiroshima and Nagasaki forced Japan’s surrender without Soviet mainland occupation → seen as atomic intimidation"
+          },
+          {
+            "hint": "Buffer and arms",
+            "bullet": "US nuclear monopoly backfired → drove Stalin to tighten Eastern Europe and build a Soviet bomb"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Atomic espionage",
+            "bullet": "Soviet spy rings inside Los Alamos → helped Lavrentiy Beria’s physicists break America’s monopoly by August 1949"
+          },
+          {
+            "hint": "Conventional counterweight",
+            "bullet": "Until Soviet nuclear parity arrived, Stalin kept millions of Red Army soldiers stationed across Europe"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHIFTED LEVERAGE",
+            "stem": "Following the successful ____________ test on 16 July 1945, Truman stiffened his diplomacy because America no longer needed..."
+          },
+          {
+            "badge": "ATOMIC INTIMIDATION",
+            "stem": "Destroying ____________ and ____________ in August 1945 convinced Stalin that Washington used nuclear weapons to..."
+          },
+          {
+            "badge": "SOVIET BACKLASH",
+            "stem": "Instead of making Moscow compliant, America’s monopoly pushed Stalin to tighten ____________ and order ____________ to..."
+          }
+        ],
+        "watch_out": "Stalin was not caught off guard when Truman mentioned a powerful new weapon at Potsdam—Soviet spies inside the Manhattan Project had already informed him.",
+        "prose_hash": "658f1288ff",
+        "prose_fp": "0f2c6244",
+        "question_hash": "e8a5f54ed3"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "February 1946 speech",
+            "bullet": "Stalin’s February 1946 claim that capitalism made war inevitable alarmed leaders in Washington"
+          },
+          {
+            "hint": "American Moscow cable",
+            "bullet": "Kennan’s Long Telegram warned insecure Soviets sought capitalism’s destruction → urged firm containment short of war"
+          },
+          {
+            "hint": "Soviet Washington cable",
+            "bullet": "Novikov’s September telegram claimed post-Roosevelt America used overseas bases and atomic might for world supremacy"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Hostile lens",
+            "bullet": "Confidential intelligence assessments replaced wartime summit talks → framed every rival move as calculated aggression"
+          },
+          {
+            "hint": "Nuclear imbalance",
+            "bullet": "Exclusive US possession of atomic bombs in 1946 → deepened Kremlin fears of capitalist encirclement"
+          },
+          {
+            "hint": "Defensive buffer logic",
+            "bullet": "Novikov’s warning reinforced Stalin’s belief that tight Eastern European control was vital for defence"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WASHINGTON’S VIEW",
+            "stem": "Reporting from Moscow in February 1946, ____________ warned that insecure Soviet leaders would expand unless met with firm..."
+          },
+          {
+            "badge": "MOSCOW’S MIRROR",
+            "stem": "Seven months later, Soviet Ambassador ____________ claimed that post-Roosevelt America was pursuing ____________ through bases and..."
+          },
+          {
+            "badge": "MUTUAL MISTRUST",
+            "stem": "Taken together, both secret cables hardened ____________ by convincing each superpower that its rival sought..."
+          }
+        ],
+        "watch_out": "Keep the two authors straight—George Kennan was the American diplomat in Moscow urging containment, while Nikolai Novikov was the Soviet ambassador in Washington.",
+        "prose_hash": "0d1d019936",
+        "prose_fp": "1034b53d",
+        "question_hash": "1663b19761"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Fulton speech warning",
+            "bullet": "Churchill’s March 1946 speech beside Truman warned an Iron Curtain divided Europe under Moscow’s grip"
+          },
+          {
+            "hint": "Step-by-step takeover",
+            "bullet": "Salami tactics used coalition cabinets to seize interior police, rig ballots, and arrest opposition leaders"
+          },
+          {
+            "hint": "Rigged 1947 ballots",
+            "bullet": "Manipulated elections installed loyal one-party Communist regimes across Poland, Romania, Bulgaria, and Hungary"
+          },
+          {
+            "hint": "Prague February coup",
+            "bullet": "Communists seized sole power in Czechoslovakia in February 1948 amid Jan Masaryk’s suspicious death"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Occupying garrisons",
+            "bullet": "Red Army troops stationed across liberated states → intimidated non-communists and backed local secret police"
+          },
+          {
+            "hint": "Invasion memories",
+            "bullet": "Twice invaded across Poland in thirty years, Stalin demanded obedient buffer regimes shielding Soviet borders"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SALAMI TACTICS",
+            "stem": "Systematically between 1945 and 1948, Moscow-backed Communists joined coalitions before seizing ____________ and rigging..."
+          },
+          {
+            "badge": "SATELLITE BELT",
+            "stem": "One-party regimes consolidated power across ____________ by 1947, culminating in the February 1948 coup in..."
+          },
+          {
+            "badge": "FULTON WARNING",
+            "stem": "Speaking in Missouri in March 1946, Churchill condemned Soviet control by declaring an ____________ had descended from..."
+          }
+        ],
+        "watch_out": "Churchill was no longer British Prime Minister when he gave his March 1946 Iron Curtain speech—he spoke as opposition leader alongside President Truman.",
+        "prose_hash": "efe836bf0b",
+        "prose_fp": "e68b85ab",
+        "question_hash": "e8c2367778"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "British cash crisis",
+            "bullet": "Bankrupt Britain told Washington in February 1947 it could no longer fund Greece or Turkey"
+          },
+          {
+            "hint": "Mediterranean flashpoints",
+            "bullet": "Greek royalists fought Communist guerrillas while Soviet pressure threatened Turkey near the Dardanelles"
+          },
+          {
+            "hint": "Stark ideological choice",
+            "bullet": "Truman’s 12 March 1947 speech contrasted democratic majority rule against totalitarian terror and coercion"
+          },
+          {
+            "hint": "Aid and containment",
+            "bullet": "$400 million for Greece and Turkey → permanently ended US isolationism and made containment official policy"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1946 diplomatic blueprint",
+            "bullet": "Turned Kennan’s 1946 Long Telegram analysis into public presidential doctrine backed by American dollars"
+          },
+          {
+            "hint": "Balkan rebel aid",
+            "bullet": "Tito rather than Stalin supplied Greek guerrillas → showed Washington now treated all communism as one bloc"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BRITISH WITHDRAWAL",
+            "stem": "Prompted by exhausted Britain’s announcement in February 1947, Truman feared ____________ and neighbouring ____________ would fall..."
+          },
+          {
+            "badge": "CONGRESSIONAL PACKAGE",
+            "stem": "Addressing Congress on 12 March 1947, Truman secured ____________ in aid to help free peoples resist..."
+          },
+          {
+            "badge": "POLICY TURNING POINT",
+            "stem": "Crucially, the Truman Doctrine abandoned peacetime ____________ and committed America to ____________ the spread of..."
+          }
+        ],
+        "watch_out": "Containment aimed to stop communism spreading into new nations—it did not pledge US military force to overturn existing regimes inside Stalin’s Eastern Bloc.",
+        "prose_hash": "03353689ea",
+        "prose_fp": "d099880b",
+        "question_hash": "1576b2b3eb"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Anti-poverty logic",
+            "bullet": "George Marshall targeted post-war hunger and ruin so desperate Europeans would reject Communist parties"
+          },
+          {
+            "hint": "Massive dollar recovery",
+            "bullet": "After the February 1948 Czech coup, Congress sent over $13 billion across 16 Western states"
+          },
+          {
+            "hint": "Open-book conditions",
+            "bullet": "Recipient states had to open national financial records and trade freely with the United States"
+          },
+          {
+            "hint": "Kremlin boycott order",
+            "bullet": "Stalin condemned dollar imperialism → forbade Poland and Czechoslovakia from attending Paris aid talks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "American export boom",
+            "bullet": "Prosperous Western European trading partners → prevented a post-war US slump by buying American goods"
+          },
+          {
+            "hint": "Soviet cash shortage",
+            "bullet": "War-torn Russia could not match US billions → risked losing satellite loyalty without strict prohibition"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OPEN-BOOK RULES",
+            "stem": "Although George Marshall offered over ____________ in recovery aid, participating nations had to reveal ____________ and trade..."
+          },
+          {
+            "badge": "STALIN’S SUSPICION",
+            "stem": "Denouncing the programme as ____________, Stalin feared American money would lure ____________ away from Moscow’s..."
+          },
+          {
+            "badge": "FORCED REFUSAL",
+            "stem": "To protect his buffer zone, Stalin barred ____________ and ____________ from joining the Paris talks, splitting Europe..."
+          }
+        ],
+        "watch_out": "Distinguish the two halves of containment—the March 1947 Truman Doctrine set the political commitment, while the June 1947 Marshall Plan supplied the economic recovery billions.",
+        "prose_hash": "057862ca98",
+        "prose_fp": "e7107d7f",
+        "question_hash": "59fdecdf1d"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Political coordination",
+            "bullet": "Cominform from September 1947 enforced strict Kremlin ideological discipline across European Communist parties"
+          },
+          {
+            "hint": "Strikes and expulsion",
+            "bullet": "Ordered French and Italian anti-Marshall strikes, and expelled Tito’s independent Yugoslavia in 1948"
+          },
+          {
+            "hint": "Economic counter-bloc",
+            "bullet": "Comecon launched in January 1949 answered Marshall Aid without injecting massive Soviet cash grants"
+          },
+          {
+            "hint": "Directed bloc trade",
+            "bullet": "Specialised satellite production around Soviet priorities—like Czech heavy industry—while cutting Western trade"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Anti-Titoist purges",
+            "bullet": "Yugoslavia’s 1948 split triggered Stalinist purges → removed Eastern leaders suspected of independent national communism"
+          },
+          {
+            "hint": "Unequal trade prices",
+            "bullet": "Bilateral barter deals forced satellites to supply cheap raw materials → depressed Eastern living standards"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IDEOLOGICAL CONTROL",
+            "stem": "Politically, Stalin founded ____________ in September 1947 to direct Communist parties and expel defiant leaders like ____________ in..."
+          },
+          {
+            "badge": "PLANNED INTEGRATION",
+            "stem": "Economically, Moscow created ____________ in January 1949 to specialise satellite industries around ____________ rather than..."
+          },
+          {
+            "badge": "HARDENED CAMPS",
+            "stem": "By banning commerce with ____________ and staging Western strikes against Marshall Aid, Stalin locked Europe into..."
+          }
+        ],
+        "watch_out": "Never confuse Cominform and Comecon—Cominform enforced political and ideological obedience from 1947, whereas Comecon coordinated Eastern Bloc state economies from 1949.",
+        "prose_hash": "352840734a",
+        "prose_fp": "dbaf4cb4",
+        "question_hash": "90299f4091"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Geographic vulnerability",
+            "bullet": "Four-power Berlin sat 100 miles inside the Soviet zone, relying on Western transit routes"
+          },
+          {
+            "hint": "Merged western zones",
+            "bullet": "Britain, America, and France united their zones into Bizonia and Trizonia backed by Marshall Aid"
+          },
+          {
+            "hint": "New June currency",
+            "bullet": "Western Allies introduced the Deutschmark across Trizonia and West Berlin in June 1948 without consent"
+          },
+          {
+            "hint": "Severed transit links",
+            "bullet": "Stalin cut road, rail, and canal routes on 24 June → aimed to starve 2.1 million West Berliners"
+          }
+        ],
+        "context": [
+          {
+            "hint": "German revival fear",
+            "bullet": "Twice invaded by Germany since 1914, Stalin wanted Germany kept weak, divided, and stripped of reparations"
+          },
+          {
+            "hint": "Capitalist window",
+            "bullet": "Prosperous Western sectors inside Berlin visibly exposed harsher economic conditions across the surrounding Soviet zone"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WESTERN RECOVERY",
+            "stem": "Alarmed as Britain, America, and France merged zones into ____________ and ____________ using Marshall Aid, Stalin feared..."
+          },
+          {
+            "badge": "CURRENCY TRIGGER",
+            "stem": "Tensions snapped in June 1948 when Western powers introduced the ____________ into Trizonia and West Berlin..."
+          },
+          {
+            "badge": "LAND BLOCKADE",
+            "stem": "Exploiting Berlin’s isolation 100 miles inside ____________, Stalin severed land and canal links to force..."
+          }
+        ],
+        "watch_out": "Stalin did not build a wall in June 1948—the 1948–49 crisis was a road, rail, and canal blockade of West Berlin, thirteen years before the 1961 Wall.",
+        "prose_hash": "8a025a59cb",
+        "prose_fp": "5d58202f",
+        "question_hash": "22c986a91a"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Avoiding two extremes",
+            "bullet": "Truman refused either to abandon containment in Berlin or risk war with armed tank convoys"
+          },
+          {
+            "hint": "Agreed air corridors",
+            "bullet": "Operation Vittles and Operation Plainfare flew unarmed planes along three 20-mile air corridors"
+          },
+          {
+            "hint": "Round-the-clock flights",
+            "bullet": "275,000 flights into Tempelhof, Gatow, and Tegel delivered thousands of tons of coal and food daily"
+          },
+          {
+            "hint": "May 1949 climbdown",
+            "bullet": "Shooting down unarmed planes risked war → Stalin reopened land routes on 12 May 1949"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Bombers in Britain",
+            "bullet": "Stationing US B-29 bombers in Britain → warned Stalin that attacking supply aircraft risked nuclear retaliation"
+          },
+          {
+            "hint": "Moral victory",
+            "bullet": "Allied aircrews and West Berliners’ resilience turned international opinion sharply against Soviet coercion"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NON-VIOLENT LIFELINE",
+            "stem": "Refusing either to surrender West Berlin or ram tanks eastward, Truman launched ____________ along three agreed..."
+          },
+          {
+            "badge": "DAILY TONNAGE",
+            "stem": "Landing every 90 seconds at airports including ____________ and newly built ____________, Allied pilots supplied..."
+          },
+          {
+            "badge": "STALIN’S DILEMMA",
+            "stem": "Because Moscow could only halt unarmed cargo aircraft by ____________, Stalin admitted failure and lifted..."
+          }
+        ],
+        "watch_out": "Operation Vittles was the American codename and Operation Plainfare was the British codename for the same 1948–49 Berlin Airlift.",
+        "prose_hash": "10fec0fb61",
+        "prose_fp": "74bd7032",
+        "question_hash": "7175033f1a"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Reunification hopes dead",
+            "bullet": "Eleven months of confrontation destroyed any four-power prospect of reuniting Germany as one state"
+          },
+          {
+            "hint": "Western German state",
+            "bullet": "Western Allies merged Trizonia on 23 May 1949 into the Federal Republic under Konrad Adenauer"
+          },
+          {
+            "hint": "Eastern German state",
+            "bullet": "Stalin turned the Soviet zone in October 1949 into the Communist German Democratic Republic under Ulbricht"
+          },
+          {
+            "hint": "Surviving Berlin enclave",
+            "bullet": "West Berlin endured as a capitalist outpost deep inside East Germany → triggered future refugee exodus"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rival legitimacy claims",
+            "bullet": "Bonn refused to recognise East Germany officially → entrenched Europe’s central territorial divide for decades"
+          },
+          {
+            "hint": "Diverging living standards",
+            "bullet": "West Germany’s Marshall-fuelled industrial miracle soon outpaced East Germany’s reparations-drained command economy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WEST GERMANY",
+            "stem": "Eleven days after the blockade ended, Western powers united Trizonia into the ____________ governed from ____________ under..."
+          },
+          {
+            "badge": "EAST GERMANY",
+            "stem": "Five months later in October 1949, Stalin established the one-party ____________ in the east led by..."
+          },
+          {
+            "badge": "FUTURE FLASHPOINT",
+            "stem": "Deep inside Communist territory, ____________ remained an open capitalist enclave that soon attracted millions of..."
+          }
+        ],
+        "watch_out": "Keep the German initials distinct—the FRG was democratic West Germany with its capital at Bonn, whereas the GDR was Communist East Germany.",
+        "prose_hash": "eb5be59fbd",
+        "prose_fp": "d772a1c0",
+        "question_hash": "50bfd70958"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "European vulnerability",
+            "bullet": "After the Czech coup and Berlin Blockade, Ernest Bevin feared Western Europe could not match Soviet troops"
+          },
+          {
+            "hint": "Twelve-nation treaty",
+            "bullet": "USA, Britain, France, Canada, and eight allies founded NATO on 4 April 1949 during the airlift"
+          },
+          {
+            "hint": "Article 5 guarantee",
+            "bullet": "Collective security pledged that an armed attack on one member counted as an attack on all"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historic American shift",
+            "bullet": "Entered Washington’s first binding peacetime military alliance → stationed US troops and bombers permanently in Europe"
+          },
+          {
+            "hint": "Brussels Treaty roots",
+            "bullet": "Expanded 1948 Western European defence cooperation by locking in decisive American nuclear and conventional protection"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WESTERN ALARM",
+            "stem": "Convinced by the 1948 ____________ and Stalin’s blockade that Western Europe needed protection, leaders like ____________ pushed..."
+          },
+          {
+            "badge": "COLLECTIVE DEFENCE",
+            "stem": "Signed in April 1949, ____________ bound twelve nations under ____________ so attacking any single ally meant..."
+          },
+          {
+            "badge": "PEACETIME PRESENCE",
+            "stem": "Strategically, NATO placed American ____________ and strategic bombers permanently on European soil to deter..."
+          }
+        ],
+        "watch_out": "Moscow did not create the Warsaw Pact immediately in 1949—the rival Soviet military alliance formed six years later in May 1955.",
+        "prose_hash": "65fdc85d06",
+        "prose_fp": "961dda60",
+        "question_hash": "4be373c5d2"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Monopoly shattered",
+            "bullet": "Successful Soviet atomic test in August 1949 ended America’s four-year nuclear monopoly"
+          },
+          {
+            "hint": "Thermonuclear escalation",
+            "bullet": "US hydrogen bomb in November 1952—1,000 times Hiroshima—was matched by Moscow in August 1953"
+          },
+          {
+            "hint": "West German rearmament",
+            "bullet": "NATO’s admission of a rearmed West Germany in May 1955 deeply alarmed Soviet leaders"
+          },
+          {
+            "hint": "Unified Soviet bloc",
+            "bullet": "Khrushchev founded the Warsaw Pact on 14 May 1955, placing seven satellites under Soviet command"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Intercontinental missiles",
+            "bullet": "Development of Soviet ICBMs by 1957 → meant nuclear warheads could strike North America directly"
+          },
+          {
+            "hint": "Internal bloc policing",
+            "bullet": "Unified Warsaw Pact command both countered NATO externally and kept Eastern European satellites obedient internally"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NUCLEAR ESCALATION",
+            "stem": "Once the USSR tested an atomic bomb in ____________, superpower rivalry accelerated into 1,000-times stronger ____________ by 1953..."
+          },
+          {
+            "badge": "MAY 1955 TRIGGER",
+            "stem": "Conventional tensions surged when NATO admitted a rearmed ____________ in May 1955, reviving Soviet fears of..."
+          },
+          {
+            "badge": "MILITARY COUNTER-BLOC",
+            "stem": "Within days, Khrushchev bound Moscow and ____________ into the ____________ under unified Soviet military command..."
+          }
+        ],
+        "watch_out": "West Germany joining NATO in May 1955—not the original April 1949 founding of NATO—was the direct trigger for Khrushchev launching the Warsaw Pact.",
+        "prose_hash": "a260f73515",
+        "prose_fp": "88cdf650",
+        "question_hash": "1613692d5f"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Secret police terror",
+            "bullet": "Mátyás Rákosi’s ÁVH arrested 380,000 citizens, executed thousands, censored newspapers, and jailed Cardinal Mindszenty"
+          },
+          {
+            "hint": "Economic bloc drain",
+            "bullet": "Comecon forced Hungary to ship cheap coal and machinery to Russia while living standards dropped"
+          },
+          {
+            "hint": "February 1956 speech",
+            "bullet": "Khrushchev’s Secret Speech denounced Stalin’s purges and promised peaceful coexistence, raising hopes of reform"
+          },
+          {
+            "hint": "October student march",
+            "bullet": "Inspired by Polish protests, Budapest students marched on 23 October demanding free elections and Soviet withdrawal"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wounded national pride",
+            "bullet": "Compulsory Russian-language schooling and Red Army garrisons humiliated patriotic Hungarians across everyday life"
+          },
+          {
+            "hint": "Hardline successor error",
+            "bullet": "Replacing Rákosi with equally Stalinist Ernő Gerő in July 1956 deepened public fury in Budapest"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STALINIST REPRESSION",
+            "stem": "Years of brutal dictatorship under ____________ bred hatred as the ____________ secret police imprisoned hundreds of thousands and..."
+          },
+          {
+            "badge": "FALLING LIVING STANDARDS",
+            "stem": "Economically, Hungarians resented ____________ rules that diverted cheap coal and machinery to Moscow while wages..."
+          },
+          {
+            "badge": "DE-STALINISATION SPARK",
+            "stem": "Encouraged by Khrushchev’s February 1956 ____________ and Polish protests, Budapest students marched on 23 October demanding..."
+          }
+        ],
+        "watch_out": "Khrushchev’s February 1956 Secret Speech attacked Stalin’s personal crimes rather than one-party Communism—Hungarians misread de-Stalinisation as licence for full democracy.",
+        "prose_hash": "2017333fc8",
+        "prose_fp": "f7af8795",
+        "question_hash": "4344822a2f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Initial calming move",
+            "bullet": "Appointed Prime Minister on 24 October, Imre Nagy initially secured Red Army withdrawal from Budapest"
+          },
+          {
+            "hint": "Ending police state",
+            "bullet": "Dissolved the hated ÁVH secret police and released imprisoned political dissidents"
+          },
+          {
+            "hint": "Multi-party democracy",
+            "bullet": "Ended one-party Communist rule, inviting non-communists into a coalition cabinet promising free elections"
+          },
+          {
+            "hint": "1 November announcement",
+            "bullet": "Declared Hungary would leave the Warsaw Pact, become neutral like Austria, and seek UN protection"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Polish contrast",
+            "bullet": "Polish reformer Gomułka kept Poland inside the Warsaw Pact → avoided Soviet tank invasion unlike Nagy"
+          },
+          {
+            "hint": "1955 Austrian precedent",
+            "bullet": "Soviet withdrawal from neutral Austria in 1955 → misled Nagy into hoping Moscow would accept neutrality"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOMESTIC LIBERALISATION",
+            "stem": "Appointed on 24 October to calm street fighting, Imre Nagy dismantled Stalinist rule by dissolving ____________ and ending..."
+          },
+          {
+            "badge": "DEMOCRATIC COALITION",
+            "stem": "Going far beyond Polish reforms, Nagy brought non-communist parties into government and promised ____________ across..."
+          },
+          {
+            "badge": "FATEFUL WITHDRAWAL",
+            "stem": "Most decisively on 1 November, Nagy announced Hungary would quit ____________ and appeal to ____________ as a neutral..."
+          }
+        ],
+        "watch_out": "Imre Nagy was a reformist Communist initially appointed by Khrushchev—Moscow turned against him only when he ended one-party rule and quit the Warsaw Pact.",
+        "prose_hash": "06ba9416da",
+        "prose_fp": "c74c769b",
+        "question_hash": "3ea9bb2313"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Buffer zone dominoes",
+            "bullet": "Allowing Hungarian neutrality risked shattering Moscow’s buffer across Poland, East Germany, and Czechoslovakia"
+          },
+          {
+            "hint": "Hardline Communist pressure",
+            "bullet": "Kremlin hardliners and China’s Mao Zedong demanded decisive force to defend Communist authority"
+          },
+          {
+            "hint": "4 November invasion",
+            "bullet": "Operation Whirlwind sent 1,000 Soviet tanks into Budapest → killed 2,500 Hungarians and drove 200,000 abroad"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Khrushchev’s Kremlin survival",
+            "bullet": "Having only recently succeeded Stalin, Khrushchev risked losing power in Moscow if Eastern Europe fractured"
+          },
+          {
+            "hint": "Middle East cover",
+            "bullet": "Simultaneous Anglo-French military fighting in Suez distracted world attention as Soviet tanks rolled in"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOMINO THREAT",
+            "stem": "Strategically, letting Hungary leave the Warsaw Pact threatened to unravel Soviet control across ____________ and..."
+          },
+          {
+            "badge": "COMMUNIST HARDLINERS",
+            "stem": "Politically, Khrushchev faced intense pressure from Kremlin conservatives and Chinese leader ____________ to crush..."
+          },
+          {
+            "badge": "TANK OFFENSIVE",
+            "stem": "Launching ____________ at dawn on 4 November, Khrushchev sent ____________ into Budapest, killing roughly 2,500..."
+          }
+        ],
+        "watch_out": "Early domestic reforms did not trigger Operation Whirlwind—Nagy’s 1 November withdrawal from the Warsaw Pact crossed Khrushchev’s non-negotiable red line.",
+        "prose_hash": "91d1d87278",
+        "prose_fp": "48405c4f",
+        "question_hash": "00dbcaad39"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "New loyalist leader",
+            "bullet": "Installed János Kádár, whose 15-point programme restored one-party Communist control and Warsaw Pact loyalty"
+          },
+          {
+            "hint": "Mass activist arrests",
+            "bullet": "Security forces arrested roughly 35,000 anti-Soviet Hungarians and executed around 300 uprising fighters"
+          },
+          {
+            "hint": "Embassy safe-conduct trap",
+            "bullet": "Soviet agents seized Nagy leaving the Yugoslav Embassy on 22 November despite written safe-conduct promises"
+          },
+          {
+            "hint": "1958 treason execution",
+            "bullet": "Hanged Nagy after a secret June 1958 trial as a deterrent lesson to socialist leaders"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Gradual living improvements",
+            "bullet": "Once opposition ended, Kádár eased everyday economic hardships → prevented another mass revolt in Hungary"
+          },
+          {
+            "hint": "Bloc warning precedent",
+            "bullet": "Established clearly that Moscow would use overwhelming military force against any rebellious Warsaw Pact state"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RESTORED ORTHODOXY",
+            "stem": "Crushing armed resistance, Moscow installed ____________, whose 15-point programme reimposed ____________ and kept Hungary inside..."
+          },
+          {
+            "badge": "PURGE AND ARRESTS",
+            "stem": "To stamp out opposition, Kádár’s regime arrested around ____________ activists and executed roughly ____________ while..."
+          },
+          {
+            "badge": "NAGY’S FATE",
+            "stem": "Despite promising safe passage from the ____________, Soviet agents abducted Imre Nagy and ____________ him in June 1958..."
+          }
+        ],
+        "watch_out": "Imre Nagy did not die during the November 1956 street battles—he was seized outside the Yugoslav Embassy and hanged after a secret trial in June 1958.",
+        "prose_hash": "d7eed380e0",
+        "prose_fp": "586429f2",
+        "question_hash": "cefe1266b6"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Thermonuclear war risk",
+            "bullet": "Mutual hydrogen-bomb arsenals meant US troop intervention inside the Warsaw Pact risked World War Three"
+          },
+          {
+            "hint": "Middle East split",
+            "bullet": "Anglo-French invasion of Egypt during the Suez Crisis divided NATO and blunted Western condemnation"
+          },
+          {
+            "hint": "Humanitarian limits",
+            "bullet": "Reaction stayed non-military—UN resolutions, $20 million US relief, refugee resettlement, and Melbourne Olympic boycotts"
+          },
+          {
+            "hint": "Ideological disillusionment",
+            "bullet": "Tightened Soviet bloc obedience while exposing peaceful coexistence as hollow to Western European Communists"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Misleading radio broadcasts",
+            "bullet": "US-funded Radio Free Europe rollback rhetoric → falsely led Hungarian fighters to expect American military rescue"
+          },
+          {
+            "hint": "Security Council veto",
+            "bullet": "Permanent Soviet veto power at the United Nations blocked any binding military enforcement action"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NUCLEAR DETERRENCE",
+            "stem": "Despite rollback talk on ____________, President Eisenhower refused military intervention because both superpowers held ____________ and..."
+          },
+          {
+            "badge": "SUEZ DISTRACTION",
+            "stem": "Simultaneously, Britain and France’s military action in ____________ divided NATO and undermined Western moral..."
+          },
+          {
+            "badge": "NON-MILITARY RESPONSE",
+            "stem": "Instead of troops, Western states offered ____________ in aid, resettled ____________ refugees, and boycotted the..."
+          }
+        ],
+        "watch_out": "Eisenhower upheld containment rather than rollback—Washington never intended to fight a nuclear war over states already inside Moscow’s sphere of influence.",
+        "prose_hash": "b8a7dbb698",
+        "prose_fp": "b74b7b09",
+        "question_hash": "ec2a3dc4cb"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Capitalist showcase contrast",
+            "bullet": "Marshall-backed West Berlin displayed prosperity and freedom alongside East German low wages and Stasi repression"
+          },
+          {
+            "hint": "Open border exodus",
+            "bullet": "Between 1949 and 1961, nearly 3 million East Germans crossed into West Berlin to flee westward"
+          },
+          {
+            "hint": "Skilled worker loss",
+            "bullet": "Crippling brain drain of young doctors, engineers, and teachers pushed Ulbricht’s GDR toward economic collapse"
+          },
+          {
+            "hint": "November 1958 demand",
+            "bullet": "Khrushchev gave Western powers six months to withdraw troops and make West Berlin a free city"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Western intelligence base",
+            "bullet": "Allied intelligence agencies operated freely from West Berlin → infuriated Moscow and undermined Ulbricht’s regime"
+          },
+          {
+            "hint": "Diplomatic recognition lever",
+            "bullet": "Threatening to hand access routes to East Germany aimed to force Western recognition of the GDR"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHOWCASE CONTRAST",
+            "stem": "Throughout the 1950s, prosperous ____________ stood inside East Germany as a sharp contrast to ____________ repression and..."
+          },
+          {
+            "badge": "ECONOMIC BRAIN DRAIN",
+            "stem": "Losing nearly ____________ citizens—including skilled ____________ and engineers—threatened to bankrupt Ulbricht’s Communist state..."
+          },
+          {
+            "badge": "SIX-MONTH DEMAND",
+            "stem": "On 27 November 1958, Khrushchev demanded Allied troop withdrawal within ____________ to turn West Berlin into..."
+          }
+        ],
+        "watch_out": "Do not confuse the 1948 and 1958 Berlin crises—Stalin blockaded land routes in 1948, whereas Khrushchev issued a six-month diplomatic ultimatum in 1958 over the refugee brain drain.",
+        "prose_hash": "18e9482217",
+        "prose_fp": "4038c4ae",
+        "question_hash": "9d7b8f7c0f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Early summit rapport",
+            "bullet": "Geneva talks and September 1959 Camp David meeting persuaded Khrushchev to withdraw his six-month ultimatum"
+          },
+          {
+            "hint": "1 May shoot-down",
+            "bullet": "Soviet missile downed Francis Gary Powers’s American U-2 spy plane deep over the USSR"
+          },
+          {
+            "hint": "Exposed cover story",
+            "bullet": "Washington claimed an off-course weather plane until Khrushchev revealed Powers alive with intact spy cameras"
+          },
+          {
+            "hint": "Paris walkout",
+            "bullet": "Eisenhower refused to apologise at the May 1960 Paris Summit → Khrushchev walked out, wrecking talks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Hardline Communist critics",
+            "bullet": "Soviet generals and Beijing criticised Camp David → forced Khrushchev to take an uncompromising line in Paris"
+          },
+          {
+            "hint": "Intelligence necessity",
+            "bullet": "High-altitude U-2 flights monitored real Soviet ICBM numbers → made Eisenhower reluctant to apologise publicly"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PROMISING THAW",
+            "stem": "Promising progress at ____________ in September 1959, where Khrushchev dropped his ultimatum, collapsed on 1 May 1960 when..."
+          },
+          {
+            "badge": "WEATHER PLANE LIE",
+            "stem": "Caught claiming a ____________ had strayed off course, Washington was humiliated when Moscow produced pilot ____________ and..."
+          },
+          {
+            "badge": "SUMMIT BREAKDOWN",
+            "stem": "When Eisenhower refused to ____________ in May 1960, Khrushchev stormed out of the ____________ before Berlin talks..."
+          }
+        ],
+        "watch_out": "Camp David in September 1959 actually improved relations temporarily—it was the May 1960 Paris Summit that collapsed following the U-2 spy-plane incident.",
+        "prose_hash": "795c483bdf",
+        "prose_fp": "3a68416e",
+        "question_hash": "65427f09a0"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Testing young president",
+            "bullet": "After April 1961 Bay of Pigs failure, Khrushchev judged 43-year-old Kennedy inexperienced and tried bullying"
+          },
+          {
+            "hint": "Renewed six-month threat",
+            "bullet": "Reissued his Berlin Ultimatum at Vienna, threatening an East German treaty controlling Western access routes"
+          },
+          {
+            "hint": "American military buildup",
+            "bullet": "Kennedy called up 250,000 reservists, expanded fallout shelters, and added $3.2 billion to US defence"
+          },
+          {
+            "hint": "July refugee surge",
+            "bullet": "War fears triggered panic across East Germany → over 30,000 citizens fled westward in July alone"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Conventional force boost",
+            "bullet": "Expanding conventional army reserves gave Kennedy credible military options alongside strategic nuclear weapons"
+          },
+          {
+            "hint": "Careful Western scope",
+            "bullet": "Kennedy pledged to defend West Berliners’ freedom rather than East Berlin → signalled clear US limits"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VIENNA SHOWDOWN",
+            "stem": "Emboldened by Kennedy’s recent ____________ fiasco in Cuba, Khrushchev reissued his ____________ at Vienna in June 1961..."
+          },
+          {
+            "badge": "KENNEDY’S RESOLVE",
+            "stem": "Refusing to abandon West Berlin, Kennedy mobilised ____________, expanded shelters, and raised defence spending by..."
+          },
+          {
+            "badge": "BORDER PANIC",
+            "stem": "Fearing war or imminent border closure, over ____________ East Germans escaped into West Berlin during..."
+          }
+        ],
+        "watch_out": "Vienna in June 1961 produced deadlock rather than agreement—Khrushchev’s renewed ultimatum and Kennedy’s military buildup accelerated the refugee rush that triggered the Wall.",
+        "prose_hash": "a2c4ce95ec",
+        "prose_fp": "6f2dc007",
+        "question_hash": "e213b6a53b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Early August rush",
+            "bullet": "40,000 refugees crossed in early August 1961 → Ulbricht urged Khrushchev to seal the border immediately"
+          },
+          {
+            "hint": "Calculated Soviet gamble",
+            "bullet": "Kennedy would fight to defend West Berlin, yet would not risk war inside East Berlin"
+          },
+          {
+            "hint": "13 August barrier",
+            "bullet": "East German troops strung barbed wire overnight, soon replaced by a 3.6-metre concrete wall and Death Strip"
+          },
+          {
+            "hint": "Tanks and shootings",
+            "bullet": "Tanks stood 100 metres apart at Checkpoint Charlie in October while guards shot escapers like Peter Fechter"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Eastern sector ground",
+            "bullet": "Constructing barriers strictly inside East Berlin avoided encroaching physically on Allied territory in West Berlin"
+          },
+          {
+            "hint": "Trapped skilled workforce",
+            "bullet": "Halting emigration overnight stabilized East Germany’s factories, hospitals, and planned economy through the 1960s"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "AUGUST EXODUS",
+            "stem": "Desperate after ____________ refugees crossed in early August 1961, Ulbricht persuaded Khrushchev to close the frontier on..."
+          },
+          {
+            "badge": "CONCRETE FORTIFICATION",
+            "stem": "Beginning with barbed wire, East Germany built a concrete wall backed by watchtowers and a mined ____________ where..."
+          },
+          {
+            "badge": "TANK STANDOFF",
+            "stem": "Danger peaked on 27 October 1961 at ____________, where US and Soviet tanks faced off for 18 hours before..."
+          }
+        ],
+        "watch_out": "The Berlin Wall did not run along the central frontier between East and West Germany—it encircled West Berlin deep inside Communist East Germany.",
+        "prose_hash": "039c0fb6db",
+        "prose_fp": "ae6b0b2e",
+        "question_hash": "977c351888"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Defused nuclear flashpoint",
+            "bullet": "Stopping the brain drain stabilised East Germany → let Khrushchev quietly drop his 1958 ultimatum"
+          },
+          {
+            "hint": "Western rights intact",
+            "bullet": "Allied garrisons stayed safe in West Berlin, prompting Kennedy to note a wall beat a war"
+          },
+          {
+            "hint": "Global propaganda blow",
+            "bullet": "Concrete barriers and shootings proved worldwide that Communism had to imprison its own people"
+          },
+          {
+            "hint": "June 1963 speech",
+            "bullet": "Kennedy proclaimed Ich bin ein Berliner before 120,000 cheering West Berliners to champion Western freedom"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shift toward Cuba",
+            "bullet": "Unable to push Western troops out of Berlin, Khrushchev gambled next by deploying missiles in Cuba"
+          },
+          {
+            "hint": "Settled European frontier",
+            "bullet": "Accepted territorial lines in Berlin reduced immediate European war danger until the Wall fell in 1989"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LOWERED WAR RISK",
+            "stem": "Paradoxically, the Wall eased immediate war danger because Ulbricht halted the ____________ while Allied rights in ____________ survived..."
+          },
+          {
+            "badge": "MORAL DEFEAT",
+            "stem": "In global propaganda, however, shooting citizens at the wire proved Communism had to ____________ rather than..."
+          },
+          {
+            "badge": "BERLIN SOLIDARITY",
+            "stem": "Visiting in June 1963, Kennedy declared ____________ to turn encircled West Berlin into an enduring symbol of..."
+          }
+        ],
+        "watch_out": "Strong answers explain both sides of the Berlin Wall paradox—it inflicted human tragedy and Soviet propaganda shame, yet removed Berlin as an immediate nuclear trigger.",
+        "prose_hash": "d6a7528ce1",
+        "prose_fp": "e9c9949f",
+        "question_hash": "ad3ecb8e56"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "January 1959 revolution",
+            "bullet": "Fidel Castro and Che Guevara overthrew US-backed dictator Batista and nationalised American-owned Cuban businesses"
+          },
+          {
+            "hint": "Non-recognition and sugar",
+            "bullet": "Following US refusal to recognise Castro’s government, Eisenhower slashed Cuban sugar imports in July 1960"
+          },
+          {
+            "hint": "Embargo and diplomatic break",
+            "bullet": "October 1960 US trade embargo and severed diplomatic ties in January 1961 threatened economic ruin"
+          },
+          {
+            "hint": "Soviet trade rescue",
+            "bullet": "Khrushchev bought Cuban sugar from February 1960 in exchange for Soviet oil, loans, and weapons"
+          }
+        ],
+        "context": [
+          {
+            "hint": "90-mile proximity",
+            "bullet": "Situated just 90 miles south of Florida, Cuba directly challenged traditional US dominance in the Americas"
+          },
+          {
+            "hint": "Nationalist starting point",
+            "bullet": "Castro initially fought to end Batista’s corruption and US corporate control rather than install Soviet Communism"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CUBAN OVERTHROW",
+            "stem": "After toppling US-backed dictator ____________ in January 1959, Castro alarmed Washington by nationalising American ____________ and..."
+          },
+          {
+            "badge": "ECONOMIC SANCTIONS",
+            "stem": "Following America’s refusal to recognise Castro, Eisenhower cut ____________ imports and imposed a sweeping ____________ in October 1960..."
+          },
+          {
+            "badge": "MOSCOW PARTNERSHIP",
+            "stem": "Facing economic collapse, Havana turned to ____________, swapping Cuban sugar for vital Soviet ____________ and weapons..."
+          }
+        ],
+        "watch_out": "Castro did not seize power in January 1959 as a Kremlin puppet—hostile US sanctions and non-recognition pushed his nationalist government into Khrushchev’s arms.",
+        "prose_hash": "95e52a7332",
+        "prose_fp": "9905da84",
+        "question_hash": "b495394af2"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Exile beach landing",
+            "bullet": "1,400 CIA-trained Brigade 2506 Cuban exiles landed on 17 April 1961 while Kennedy withheld air cover"
+          },
+          {
+            "hint": "72-hour defeat",
+            "bullet": "Cubans rallied behind Castro → 20,000 Cuban troops defeated and captured 1,189 exiles within three days"
+          },
+          {
+            "hint": "December 1961 shift",
+            "bullet": "Fearing direct US military invasion, Castro declared Cuba Communist and requested Soviet nuclear protection"
+          },
+          {
+            "hint": "May 1962 deployment",
+            "bullet": "Khrushchev secretly shipped medium-range missiles to defend Cuba and balance US Jupiter missiles in Turkey"
+          }
+        ],
+        "context": [
+          {
+            "hint": "ICBM missile gap",
+            "bullet": "Possessing far fewer long-range ICBMs than Washington, Khrushchev used Cuba to double short-warning strike reach"
+          },
+          {
+            "hint": "Damaged presidential standing",
+            "bullet": "Public humiliation at the Bay of Pigs emboldened Khrushchev to try intimidating Kennedy at Vienna"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COVERT FAILURE",
+            "stem": "Intended to spark an uprising, the ____________ landing collapsed in 72 hours because Kennedy withheld ____________ and..."
+          },
+          {
+            "badge": "CUBAN DEFENCE PLEA",
+            "stem": "Convinced Washington would invade directly next, Castro declared Cuba ____________ in December 1961 and asked Khrushchev for..."
+          },
+          {
+            "badge": "STRATEGIC BALANCE",
+            "stem": "Deploying medium-range missiles from May 1962 let Moscow shield Cuba while countering American ____________ stationed in..."
+          }
+        ],
+        "watch_out": "US Army troops did not land at the Bay of Pigs—Brigade 2506 comprised CIA-trained Cuban exiles, though Castro and Moscow knew Washington directed the plot.",
+        "prose_hash": "de5a2fb18b",
+        "prose_fp": "679a7bde",
+        "question_hash": "be963eb93f"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "14 October photographs",
+            "bullet": "American U-2 spy plane photographed Soviet medium-range missile sites at San Cristóbal within 10-minute strike range"
+          },
+          {
+            "hint": "Agonising ExComm choices",
+            "bullet": "Airstrikes or invasion risked nuclear war, whereas diplomatic protest alone left Cuban missiles operational"
+          },
+          {
+            "hint": "22 October television address",
+            "bullet": "Kennedy raised forces to DEFCON 2 and ordered a 500-mile naval quarantine around Cuba"
+          },
+          {
+            "hint": "Freighters turn back",
+            "bullet": "On 24 October Khrushchev ordered missile-carrying Soviet vessels approaching US warships to stop and turn around"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Careful legal wording",
+            "bullet": "Labelling the barrier a naval quarantine rather than a blockade avoided committing a formal act of war"
+          },
+          {
+            "hint": "Hidden battlefield warheads",
+            "bullet": "Unbeknownst to ExComm, Soviet troops already inside Cuba possessed tactical nuclear weapons to repel an invasion"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MISSILE DISCOVERY",
+            "stem": "Confronted on 14 October with U-2 photographs of sites at ____________, Kennedy convened ____________ to weigh airstrikes against..."
+          },
+          {
+            "badge": "NAVAL QUARANTINE",
+            "stem": "Addressing Americans on 22 October, Kennedy raised readiness to ____________ and ordered a 500-mile ____________ around Cuba..."
+          },
+          {
+            "badge": "OCEAN STANDOFF",
+            "stem": "Crucially, naval pressure prevented immediate clash on 24 October when Soviet ships carrying ____________ halted and..."
+          }
+        ],
+        "watch_out": "Kennedy deliberately chose the word quarantine rather than blockade because under international law a peacetime blockade counted as an act of war.",
+        "prose_hash": "008d13889e",
+        "prose_fp": "aa5d283d",
+        "question_hash": "f27c5c293f"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Sites nearing readiness",
+            "bullet": "Soviet crews already inside Cuba raced toward nuclear launch capability despite the naval quarantine"
+          },
+          {
+            "hint": "Two contrasting letters",
+            "bullet": "26 October offered removal for non-invasion; 27 October added removing US Jupiter missiles from Turkey"
+          },
+          {
+            "hint": "Black Saturday escalation",
+            "bullet": "Shooting down U-2 pilot Rudolf Anderson on 27 October pushed US generals to demand airstrikes"
+          },
+          {
+            "hint": "Public-private compromise",
+            "bullet": "Kennedy publicly pledged non-invasion while Robert Kennedy secretly promised Dobrynin Turkish missile withdrawal"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Protecting NATO unity",
+            "bullet": "Keeping the Turkish Jupiter concession secret prevented NATO allies accusing Washington of trading European defence"
+          },
+          {
+            "hint": "Fear of miscalculation",
+            "bullet": "Both leaders recognised local military incidents over Cuba could spiral rapidly into uncontrollable thermonuclear war"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BLACK SATURDAY",
+            "stem": "With tension peaking on 27 October after a Soviet missile killed ____________, both leaders dreaded stumbling into..."
+          },
+          {
+            "badge": "PUBLIC PLEDGE",
+            "stem": "Adopting Robert Kennedy’s tactic, Washington publicly answered Khrushchev’s first letter by promising ____________ in return for..."
+          },
+          {
+            "badge": "SECRET TURKEY DEAL",
+            "stem": "Privately, Robert Kennedy assured Ambassador ____________ that American ____________ in Turkey would follow, securing peace on..."
+          }
+        ],
+        "watch_out": "Do not portray 28 October as a one-sided Soviet surrender—ending the crisis depended on Kennedy’s secret promise to withdraw US Jupiter missiles from Turkey.",
+        "prose_hash": "462afc5e5f",
+        "prose_fp": "cd9a04f1",
+        "question_hash": "aa2559859b"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Direct crisis link",
+            "bullet": "June 1963 Moscow-Washington teletype hotline enabled rapid leader-to-leader communication during future emergencies"
+          },
+          {
+            "hint": "1963 test ban",
+            "bullet": "August 1963 Limited Test Ban Treaty barred nuclear testing in the atmosphere, space, and underwater"
+          },
+          {
+            "hint": "Space and proliferation",
+            "bullet": "1967 Outer Space Treaty banned space weapons; 1968 Non-Proliferation Treaty curbed spread to non-nuclear states"
+          },
+          {
+            "hint": "Contrasting leader fates",
+            "bullet": "Secret Turkish deal boosted Kennedy’s prestige while Kremlin rivals removed humiliated Khrushchev in October 1964"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shared nuclear vulnerability",
+            "bullet": "Recognition of MAD convinced both superpowers that nuclear war was unwinnable and required clear guardrails"
+          },
+          {
+            "hint": "Soviet ICBM buildup",
+            "bullet": "Determination never to back down again simultaneously drove Moscow to match US nuclear numbers by 1970"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RAPID COMMUNICATION",
+            "stem": "Shaken by brushing against Mutually Assured Destruction, Washington and Moscow installed a direct ____________ in June 1963..."
+          },
+          {
+            "badge": "ARMS CONTROL",
+            "stem": "Diplomatic caution yielded the August 1963 ____________, followed by the 1967 ____________ and 1968 Non-Proliferation Treaty..."
+          },
+          {
+            "badge": "POLITICAL FALLOUT",
+            "stem": "Because the Turkish missile swap stayed secret, ____________ won global praise whereas Kremlin rivals ousted ____________ in 1964..."
+          }
+        ],
+        "watch_out": "The 1963 Limited Test Ban Treaty did not abolish nuclear arsenals or underground blasts—it prohibited nuclear testing only in the atmosphere, outer space, and underwater.",
+        "prose_hash": "d5c185afe1",
+        "prose_fp": "4de69f0a",
+        "question_hash": "31dbbaee0d"
+      }
+    ],
+    "lesson_7": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Political repression",
+            "bullet": "Novotný rejected de-Stalinisation → StB secret police enforced press censorship and kept purge victims jailed"
+          },
+          {
+            "hint": "Regional grievances",
+            "bullet": "Prague centralised power and dismissed Slovak complaints → alienated Slovak Communists from Novotný’s leadership"
+          },
+          {
+            "hint": "Trade bloc rules",
+            "bullet": "Comecon forced factories to supply Soviet heavy industry → consumer shortages lowered Czech living standards"
+          },
+          {
+            "hint": "University protest",
+            "bullet": "Police brutally beat Prague students protesting hostel power cuts in October 1967 → shattered party support"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1956 Moscow speech",
+            "bullet": "Khrushchev’s 1956 Secret Speech encouraged reform elsewhere → highlighted Novotný’s stubborn refusal to modernise"
+          },
+          {
+            "hint": "Pre-1948 heritage",
+            "bullet": "Strong pre-1948 democratic and industrial traditions → deepened Czech resentment toward economic stagnation"
+          },
+          {
+            "hint": "Kremlin impatience",
+            "bullet": "Even Brezhnev saw Novotný’s rigid mismanagement as destabilising → left him without Soviet rescue"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "POLITICAL REPRESSION",
+            "stem": "Opposition mounted from 1957 because Novotný refused ____________ and relied on the ____________ to silence critics."
+          },
+          {
+            "badge": "ECONOMIC DECLINE",
+            "stem": "Under ____________ rules, Czech industry prioritised Soviet heavy goods over ____________, causing living standards to..."
+          },
+          {
+            "badge": "OCTOBER FLASHPOINT",
+            "stem": "Simmering discontent boiled over in October 1967 when police attacked ____________ marching over ____________, destroying..."
+          }
+        ],
+        "watch_out": "Czechoslovakia’s crisis grew from internal economic stagnation and StB repression under Novotný—do not confuse its origins with an anti-Soviet street uprising like Hungary in 1956.",
+        "prose_hash": "540696e81d",
+        "prose_fp": "05ff3d67",
+        "question_hash": "43f4d1270b"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Reform programme",
+            "bullet": "April 1968 Action Programme launched Socialism with a human face → aimed to renew Communist popularity"
+          },
+          {
+            "hint": "Media and police",
+            "bullet": "Abolished press, radio, and television censorship while curbing arbitrary StB arrests → unleashed open political debate"
+          },
+          {
+            "hint": "Citizen freedoms",
+            "bullet": "Granted citizens freedom of speech and Western travel alongside rehabilitating Stalinist show-trial victims"
+          },
+          {
+            "hint": "Factory & union rules",
+            "bullet": "Ota Šik decentralised state planning and expanded trade union rights → shifted factories toward consumer goods"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ideological loyalty",
+            "bullet": "Soviet-educated Dubček remained a devout Marxist → sought to save Communist rule rather than restore capitalism"
+          },
+          {
+            "hint": "Economic backdrop",
+            "bullet": "Reversing Novotný’s rigid command quotas directly tackled the 1960s industrial slump that had sparked unrest"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ACTION PROGRAMME",
+            "stem": "Appointed in January 1968, Dubček unveiled the ____________ to build ____________ without abandoning Communist rule."
+          },
+          {
+            "badge": "CIVIL FREEDOMS",
+            "stem": "Across Czechoslovak society, ending ____________ and curbing the ____________ allowed citizens to debate openly and travel..."
+          },
+          {
+            "badge": "ECONOMIC SHIFT",
+            "stem": "Meanwhile, economists led by ____________ introduced market ____________ so factories could finally supply consumer demand."
+          }
+        ],
+        "watch_out": "Dubček was a devout Communist who wanted to popularise socialism—never claim he tried to introduce Western capitalism or overthrow Communist rule.",
+        "prose_hash": "246fec017c",
+        "prose_fp": "8efe4738",
+        "question_hash": "913a542a64"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Military alignment",
+            "bullet": "Dubček repeatedly guaranteed Czechoslovakia would stay inside the Warsaw Pact and never declare Cold War neutrality"
+          },
+          {
+            "hint": "Economic & party rule",
+            "bullet": "Pledged continued membership of Comecon alongside preserving the leading political role of the Communist Party"
+          },
+          {
+            "hint": "Runaway press debates",
+            "bullet": "Uncensored debates, non-communist clubs like KAN, and Vaculík’s Two Thousand Words manifesto undermined his assurances"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1956 precedent",
+            "bullet": "Nagy’s 1956 announcement to leave the Warsaw Pact had triggered brutal Soviet tank intervention in Hungary"
+          },
+          {
+            "hint": "Buffer zone security",
+            "bullet": "Moscow treated Warsaw Pact unity as non-negotiable security against NATO → neutrality meant instant invasion"
+          },
+          {
+            "hint": "Press dilemma",
+            "bullet": "Ending censorship meant Dubček could not silence anti-Soviet newspapers without betraying his own Action Programme"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ALLIANCE GUARANTEES",
+            "stem": "Mindful of Hungary in 1956, Dubček promised Moscow that Prague would remain loyal to both ____________ and ____________."
+          },
+          {
+            "badge": "ONE-PARTY PLEDGE",
+            "stem": "To calm Kremlin hardliners, he insisted the ____________ would retain its leading role rather than declaring ____________."
+          },
+          {
+            "badge": "UNINTENDED RADICALISM",
+            "stem": "However, new groups such as ____________ and Ludvík Vaculík’s ____________ pushed reform far faster than Dubček planned."
+          }
+        ],
+        "watch_out": "Unlike Imre Nagy in Hungary in 1956, Dubček never threatened to leave the Warsaw Pact—this crucial difference is a favourite Edexcel comparison point.",
+        "prose_hash": "d20d3d2ca6",
+        "prose_fp": "da2d68d2",
+        "question_hash": "5ceefd3eea"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Neighbouring regimes",
+            "bullet": "East German leader Ulbricht and Poland’s Gomułka feared Czech free speech would spark unrest at home"
+          },
+          {
+            "hint": "Central European frontier",
+            "bullet": "Shared borders with West Germany and the USSR meant losing Prague would split the Eastern Bloc"
+          },
+          {
+            "hint": "Cross-border trade",
+            "bullet": "Brezhnev feared West German trade loans and NATO influence would draw a reformed Czechoslovakia westward"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unrest in Poland",
+            "bullet": "Gomułka already faced March 1968 student protests in Warsaw → made uncensored Prague broadcasts acutely dangerous"
+          },
+          {
+            "hint": "Fragile northern ally",
+            "bullet": "Dependent on the Berlin Wall since 1961, Ulbricht dreaded reform destabilising fragile East German rule"
+          },
+          {
+            "hint": "Industrial output",
+            "bullet": "Czechoslovakia supplied vital armaments and machinery to Comecon → autonomy threatened wider Soviet military strength"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NEIGHBOURING REGIMES",
+            "stem": "Hardline allies led by ____________ and ____________ warned Brezhnev that Prague’s reforms would spread across..."
+          },
+          {
+            "badge": "STRATEGIC GEOGRAPHY",
+            "stem": "Geographically, Czechoslovakia shared vital frontiers with capitalist ____________ and the USSR, risking a fatal wedge inside..."
+          },
+          {
+            "badge": "WESTERN INFLUENCE",
+            "stem": "Kremlin leaders also worried that closer economic ties and loans from ____________ would pull Prague toward ____________."
+          }
+        ],
+        "watch_out": "Pressure to crush the Prague Spring came heavily from East German and Polish leaders Ulbricht and Gomułka, not solely from Brezhnev in Moscow.",
+        "prose_hash": "1cf0e9e741",
+        "prose_fp": "6b19a595",
+        "question_hash": "29b71e52e5"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Summer troop manoeuvres",
+            "bullet": "Moscow staged June Warsaw Pact military manoeuvres inside Czechoslovakia and delayed pulling Soviet tanks out"
+          },
+          {
+            "hint": "Joint diplomatic warning",
+            "bullet": "The 15 July Warsaw Letter warned Dubček that counter-revolution endangered every Warsaw Pact state"
+          },
+          {
+            "hint": "Bilateral & bloc talks",
+            "bullet": "At Čierna nad Tisou and Bratislava summits, Brezhnev demanded Dubček curb anti-Soviet press and protect socialism"
+          },
+          {
+            "hint": "Visiting Balkan leaders",
+            "bullet": "Brezhnev issued an angry 13 August phone warning after Prague cheered independent leaders Tito and Ceaușescu"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Reluctance to invade",
+            "bullet": "Remembering global outrage after Hungary in 1956, Brezhnev preferred coercing Dubček into self-censorship over invading"
+          },
+          {
+            "hint": "Rival socialist model",
+            "bullet": "Yugoslavia and Romania already defied Moscow → cheering Tito and Ceaușescu suggested an independent Communist alliance"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MILITARY INTIMIDATION",
+            "stem": "Before resorting to invasion, Moscow used ____________ exercises on Czech soil and sent the stern ____________ on 15 July."
+          },
+          {
+            "badge": "SUMMIT DIPLOMACY",
+            "stem": "During tense summer talks at ____________ and ____________, Dubček promised loyalty yet refused to reimpose harsh..."
+          },
+          {
+            "badge": "FINAL STRAW",
+            "stem": "Kremlin patience snapped in August after cheering Prague crowds welcomed independent leaders ____________ and ____________."
+          }
+        ],
+        "watch_out": "Do not skip straight from April’s Action Programme to August’s tanks—Moscow spent months using exercises, the Warsaw Letter, and two summits to coerce Dubček first.",
+        "prose_hash": "e97a8e1642",
+        "prose_fp": "2f55e05c",
+        "question_hash": "7c2fc5986e"
+      }
+    ],
+    "lesson_8": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Overnight frontier crossing",
+            "bullet": "Roughly 500,000 troops from the USSR, Poland, Hungary, and Bulgaria crossed Czech borders on 20–21 August"
+          },
+          {
+            "hint": "Airborne & tank tactics",
+            "bullet": "Soviet paratroopers captured Ruzyňe Airport via a fake emergency landing while white-striped tanks entered Prague"
+          },
+          {
+            "hint": "Official Soviet pretext",
+            "bullet": "Soviet media claimed Czechoslovak Communists had requested fraternal assistance → disguised invasion despite zero signed appeal"
+          },
+          {
+            "hint": "Czechoslovak army orders",
+            "bullet": "President Svoboda kept the Czechoslovak army inside its barracks → prevented pitched battle and rapid bloodshed"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Coalition optics",
+            "bullet": "Using four Warsaw Pact allies rather than Soviet troops alone framed intervention as collective socialist defence"
+          },
+          {
+            "hint": "1938 historical memory",
+            "bullet": "East German units stayed behind the frontier → avoided inflammatory memories of Hitler’s 1938 invasion"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OVERNIGHT INVASION",
+            "stem": "On the night of 20–21 August 1968, around ____________ Warsaw Pact soldiers entered Czechoslovakia while paratroopers seized ____________."
+          },
+          {
+            "badge": "KREMLIN PRETEXT",
+            "stem": "Moscow justified the assault as ____________ requested by local Communists, even though no senior leader had..."
+          },
+          {
+            "badge": "AVOIDING BLOODSHED",
+            "stem": "Rapid occupation succeeded without pitched war because President ____________ ordered Czechoslovak soldiers to remain in..."
+          }
+        ],
+        "watch_out": "It was a joint Warsaw Pact invasion involving Soviet, Polish, Hungarian, and Bulgarian troops—not a unilateral Red Army invasion alone.",
+        "prose_hash": "4bb617a625",
+        "prose_fp": "e451f40b",
+        "question_hash": "dced5afa43"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "1956 casualty lesson",
+            "bullet": "Remembering thousands killed in Hungary in 1956, Dubček used radio appeals to prevent futile armed slaughter"
+          },
+          {
+            "hint": "Denying harsh reprisals",
+            "bullet": "Peaceful protest denied Moscow any violent excuse to stage mass executions or claim armed counter-revolution"
+          },
+          {
+            "hint": "Street-level tactics",
+            "bullet": "Citizens altered road signs and argued with Soviet conscripts → exposed Kremlin lies about Western invaders"
+          },
+          {
+            "hint": "Casualties & Wenceslas Square",
+            "bullet": "Passive defiance kept August deaths below 100, though student Jan Palach burned himself in January 1969"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Military imbalance",
+            "bullet": "Facing 500,000 Warsaw Pact troops with zero NATO aid made armed resistance militarily hopeless"
+          },
+          {
+            "hint": "International image",
+            "bullet": "Images of unarmed youths confronting Soviet tanks won worldwide moral sympathy and humiliated Moscow politically"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HUNGARIAN LESSON",
+            "stem": "Haunted by the bloody crushing of ____________ in 1956, Dubček urged citizens to avoid giving Moscow an excuse for..."
+          },
+          {
+            "badge": "CIVIL DEFIANCE",
+            "stem": "Instead of fighting, civilians tore down ____________, ran secret radio studios, and challenged bewildered ____________ in Russian."
+          },
+          {
+            "badge": "HUMAN COST",
+            "stem": "Although non-violence kept August fatalities under ____________, deepening despair drove student ____________ to protest in Wenceslas Square."
+          }
+        ],
+        "watch_out": "Fewer than 100 people died during the August 1968 Prague invasion compared with thousands in Budapest in 1956—passive resistance explains the sharp contrast.",
+        "prose_hash": "a591c54032",
+        "prose_fp": "b3ce31ed",
+        "question_hash": "b7519cbc55"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "August Moscow terms",
+            "bullet": "Handcuffed in Moscow, Dubček signed the Moscow Protocol → reinstated censorship and accepted Soviet garrisons"
+          },
+          {
+            "hint": "Leadership replacement",
+            "bullet": "Moscow removed Dubček in April 1969, demoting him to forestry clerk while installing hardliner Gustáv Husák"
+          },
+          {
+            "hint": "Party membership purges",
+            "bullet": "Husák’s normalisation purged nearly 500,000 reformist members from the Czechoslovak Communist Party"
+          },
+          {
+            "hint": "Jobs & secret police",
+            "bullet": "Thousands of teachers, journalists, and academics were forced into manual labour under restored StB police surveillance"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Avoiding martyrdom",
+            "bullet": "Unlike Imre Nagy’s execution after 1956, Dubček was humiliated and sidelined → avoided creating a martyr"
+          },
+          {
+            "hint": "Quietism bargain",
+            "bullet": "Normalisation traded steady consumer supplies for total political obedience → froze Czech reform until 1989"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MOSCOW PROTOCOL",
+            "stem": "Following his arrest, Dubček was forced to sign the ____________, restoring censorship and accepting Red Army..."
+          },
+          {
+            "badge": "NORMALISATION PURGES",
+            "stem": "Replaced by hardliner ____________ in April 1969, Czechoslovakia endured ____________ that expelled nearly 500,000 party members."
+          },
+          {
+            "badge": "SILENCING INTELLECTUALS",
+            "stem": "Reform-minded journalists and academics were pushed into ____________ while the ____________ resumed strict surveillance."
+          }
+        ],
+        "watch_out": "Dubček was NOT executed like Imre Nagy in 1958—Moscow demoted him to Ambassador to Turkey and then a forestry clerk to avoid creating a martyr.",
+        "prose_hash": "73c9ab46e1",
+        "prose_fp": "10631b2d",
+        "question_hash": "a64d744fcd"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Need for justification",
+            "bullet": "Because Dubček never left the Warsaw Pact, Brezhnev needed an ideological excuse for invading an ally"
+          },
+          {
+            "hint": "Sovereignty vs socialism",
+            "bullet": "Published in Pravda in September 1968, it declared socialist rule irreversible and above national sovereignty"
+          },
+          {
+            "hint": "Alliance rules",
+            "bullet": "Threatening one-party Communist rule or Warsaw Pact unity gave all socialist states a duty to intervene"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Warning to satellites",
+            "bullet": "Warned reformers across Poland and Hungary that Moscow would crush any challenge to one-party monopoly"
+          },
+          {
+            "hint": "Later 1979 precedent",
+            "bullet": "Established the legalistic doctrine Brezhnev later invoked in December 1979 to justify invading Communist Afghanistan"
+          },
+          {
+            "hint": "Duration of control",
+            "bullet": "Cemented Kremlin control over Eastern Europe until Gorbachev formally abandoned the doctrine in 1988–89"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IDEOLOGICAL EXCUSE",
+            "stem": "Since Prague had stayed loyal to the ____________, Brezhnev outlined a new doctrine in ____________ to justify invasion."
+          },
+          {
+            "badge": "RED LINES",
+            "stem": "Under the Brezhnev Doctrine, no satellite state could abandon ____________ rule or detach itself from the..."
+          },
+          {
+            "badge": "BLOC CONSEQUENCE",
+            "stem": "Claiming a collective duty to intervene locked Eastern Europe under Kremlin obedience until ____________ renounced it in..."
+          }
+        ],
+        "watch_out": "Know the two non-negotiable pillars of the Brezhnev Doctrine: every satellite had to remain a one-party Communist state AND stay inside the Warsaw Pact.",
+        "prose_hash": "634b51cbf4",
+        "prose_fp": "19990d01",
+        "question_hash": "9a64523e62"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Washington’s diplomatic response",
+            "bullet": "President Johnson cancelled a Moscow summit and backed a UN resolution that the USSR swiftly vetoed"
+          },
+          {
+            "hint": "American military limits",
+            "bullet": "Bogged down with 500,000 troops in Vietnam and respecting spheres of influence, Washington avoided military action"
+          },
+          {
+            "hint": "Communist states’ reaction",
+            "bullet": "Ceaușescu’s Romania refused to join the invasion and condemned Soviet imperialism alongside Yugoslavia and Mao’s China"
+          },
+          {
+            "hint": "Western Communist parties",
+            "bullet": "French and Italian Communist Parties denounced Moscow’s tanks → accelerated independent democratic Eurocommunism"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Spheres of influence",
+            "bullet": "Because America accepted Prague lay in Moscow’s sphere, the diplomatic freeze proved brief before 1970s Détente"
+          },
+          {
+            "hint": "Sino-Soviet tension",
+            "bullet": "Mao feared Moscow might apply the Brezhnev Doctrine against China → deepened the bitter Sino-Soviet split"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WESTERN RESTRAINT",
+            "stem": "Although President Johnson cancelled a planned summit, ____________ in Vietnam meant Washington took zero military action."
+          },
+          {
+            "badge": "COMMUNIST DEFIANCE",
+            "stem": "Within the Communist world, Warsaw Pact member ____________ refused to send troops and joined ____________ in condemning Moscow."
+          },
+          {
+            "badge": "WESTERN EUROPEAN PARTIES",
+            "stem": "Outraged French and Italian Communists distanced themselves from Kremlin control, fueling the growth of ____________."
+          }
+        ],
+        "watch_out": "The 1968 invasion damaged Soviet authority inside world Communism far more permanently than it damaged superpower relations, as Détente still followed within four years.",
+        "prose_hash": "493cdce44b",
+        "prose_fp": "9a98266c",
+        "question_hash": "2bda87d8b6"
+      }
+    ],
+    "lesson_9": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Post-1962 nuclear risk",
+            "bullet": "Fear of Mutually Assured Destruction after 1962 pushed both superpowers to curb ruinous nuclear spending"
+          },
+          {
+            "hint": "Costly Asian war",
+            "bullet": "Vietnam cost over $150 billion and 58,000 US lives → sparked inflation and protests under Nixon"
+          },
+          {
+            "hint": "Soviet living standards",
+            "bullet": "Brezhnev needed Western grain imports and modern technology to rescue stagnant Soviet living standards"
+          },
+          {
+            "hint": "Beijing factor",
+            "bullet": "Sino-Soviet border clashes and Nixon’s February 1972 China visit made Moscow fear diplomatic isolation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Strategic missile balance",
+            "bullet": "Achieving nuclear parity by 1970 allowed Brezhnev to negotiate with Washington from equal strength"
+          },
+          {
+            "hint": "West German diplomacy",
+            "bullet": "West German Chancellor Willy Brandt’s Ostpolitik was already easing European border tensions → smoothed superpower talks"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "AMERICAN PRESSURES",
+            "stem": "Nixon and Kissinger sought Détente because the ____________ had drained over ____________ and fuelled fierce protests at home."
+          },
+          {
+            "badge": "SOVIET NEEDS",
+            "stem": "Equally, Brezhnev wanted reduced arms spending alongside Western ____________ and ____________ to revive stagnant industry."
+          },
+          {
+            "badge": "GEOPOLITICAL LEVERAGE",
+            "stem": "Fearing isolation after the Sino-Soviet split and Nixon’s 1972 trip to ____________, Moscow had strong reason to negotiate."
+          }
+        ],
+        "watch_out": "Détente meant a pragmatic relaxation of tension driven by economic exhaustion and nuclear fear—it did NOT mean the end of ideological Cold War rivalry.",
+        "prose_hash": "b7b3331a5c",
+        "prose_fp": "118241f6",
+        "question_hash": "3ee0960f4f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Defensive shield limits",
+            "bullet": "May 1972 ABM Treaty restricted each side to two defensive sites → preserved nuclear deterrence"
+          },
+          {
+            "hint": "Offensive launcher totals",
+            "bullet": "A five-year Interim Agreement froze strategic ICBM and submarine-launched SLBM launchers at existing totals"
+          },
+          {
+            "hint": "Diplomatic conduct rules",
+            "bullet": "The Basic Principles Agreement committed Washington and Moscow to avoid military clashes and uphold peaceful coexistence"
+          },
+          {
+            "hint": "Major warhead loophole",
+            "bullet": "Omitted MIRVs and froze rather than cut launchers → warhead stockpiles kept multiplying in the 1970s"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Verification method",
+            "bullet": "Spy satellites allowed each side to count missile silos without intrusive on-site inspections that Moscow opposed"
+          },
+          {
+            "hint": "Heavy bomber gap",
+            "bullet": "Long-range heavy bombers—where America held a clear advantage—also remained outside the Interim Agreement freeze"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TREATY LIMITS",
+            "stem": "Signed at the May 1972 Moscow Summit, SALT 1 capped each nation at two ____________ sites and froze ____________ launchers."
+          },
+          {
+            "badge": "DIPLOMATIC PLEDGE",
+            "stem": "Alongside hardware caps, the ____________ committed both nuclear powers to prevent direct military confrontation."
+          },
+          {
+            "badge": "CRITICAL LOOPHOLE",
+            "stem": "Yet because the accord ignored ____________ carrying multiple warheads, nuclear stockpiles continued to grow across the 1970s."
+          }
+        ],
+        "watch_out": "SALT 1 stands for Strategic Arms Limitation Talks, not reduction—it froze launcher totals while leaving multi-warhead MIRVs completely unrestricted.",
+        "prose_hash": "2c3d182fb4",
+        "prose_fp": "7c8f7793",
+        "question_hash": "dbc2f70f33"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Reciprocal leader summits",
+            "bullet": "Reciprocal 1973 Washington and 1974 Moscow summits produced agreements on trade, agriculture, and preventing nuclear war"
+          },
+          {
+            "hint": "Agricultural trade",
+            "bullet": "Millions of tonnes of American grain shipped to Soviet ports → eased severe domestic food shortages"
+          },
+          {
+            "hint": "Joint 1975 mission",
+            "bullet": "July 1975 Apollo–Soyuz docking linked Stafford and Leonov in orbit → symbolised partnership replacing space rivalry"
+          },
+          {
+            "hint": "Underlying proxy limits",
+            "bullet": "Beneath televised warmth, covert superpower competition persisted across the Middle East and developing nations"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1973 Middle East test",
+            "bullet": "Rival backing during the October 1973 Yom Kippur War briefly triggered a US nuclear alert"
+          },
+          {
+            "hint": "White House transition",
+            "bullet": "After Nixon resigned over Watergate in August 1974, Gerald Ford maintained Kissinger’s Détente diplomacy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TRADE AND SUMMITS",
+            "stem": "Between 1973 and 1974, reciprocal summits expanded commercial links and brought millions of tonnes of US ____________ to Soviet ports."
+          },
+          {
+            "badge": "SPACE SYMBOLISM",
+            "stem": "Public cooperation peaked in July 1975 during the joint ____________ mission when commanders shook hands in orbit."
+          },
+          {
+            "badge": "PERSISTENT RIVALRY",
+            "stem": "Even at this high watermark, covert superpower competition continued across the ____________ and Third World."
+          }
+        ],
+        "watch_out": "Apollo–Soyuz in July 1975 was primarily a symbolic propaganda triumph—do not exaggerate its military impact while proxy rivalries continued in the Middle East.",
+        "prose_hash": "0ec1a90b45",
+        "prose_fp": "6b024193",
+        "question_hash": "626e3fceca"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "European frontiers",
+            "bullet": "Basket 1 recognised post-1945 borders and East Germany → secured Western acceptance of Moscow’s Eastern Bloc"
+          },
+          {
+            "hint": "Trade & technology",
+            "bullet": "Basket 2 expanded East–West commercial trade, industrial technology transfers, and joint scientific research"
+          },
+          {
+            "hint": "Civil liberties clause",
+            "bullet": "Basket 3 pledged all 35 nations to respect free speech, religion, press access, and movement"
+          },
+          {
+            "hint": "Eastern Bloc activists",
+            "bullet": "Soviet Helsinki Watch groups and Czech Charter 77 exposed political arrests → embarrassed Brezhnev internationally"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Kremlin miscalculation",
+            "bullet": "Brezhnev treated Basket 3 as harmless window-dressing → unintentionally gave dissidents a signed legal weapon"
+          },
+          {
+            "hint": "US conservative critique",
+            "bullet": "American conservatives attacked Gerald Ford for legitimising Soviet domination over captive Eastern European nations"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KREMLIN VICTORY",
+            "stem": "Agreed across 35 states in August 1975, ____________ rewarded Brezhnev by recognising post-1945 frontiers and ____________."
+          },
+          {
+            "badge": "SHARED COOPERATION",
+            "stem": "Alongside territorial stability, ____________ boosted Soviet access to Western trade, technology, and scientific research."
+          },
+          {
+            "badge": "HUMAN RIGHTS BOOMERANG",
+            "stem": "However, ____________ backfired on Moscow when activists formed ____________ and Charter 77 to publicise state repression."
+          }
+        ],
+        "watch_out": "Students often confuse the three Helsinki Baskets: Basket 1 covered European borders, Basket 2 covered economic and scientific cooperation, and Basket 3 covered human rights.",
+        "prose_hash": "31d32aa685",
+        "prose_fp": "d16d0535",
+        "question_hash": "2b26370468"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "White House priorities",
+            "bullet": "Carter backed dissident Sakharov and linked trade to human rights → Brezhnev resented internal meddling"
+          },
+          {
+            "hint": "Africa & European missiles",
+            "bullet": "Soviet-backed interventions in Angola and Ethiopia plus new SS-20 missiles inflamed anti-Détente US Senators"
+          },
+          {
+            "hint": "US Senate resistance",
+            "bullet": "June 1979 SALT 2 capped launchers at 2,400 and curbed MIRVs, but Senate hawks blocked ratification"
+          },
+          {
+            "hint": "December 1979 crisis",
+            "bullet": "Moscow’s December 1979 invasion of Afghanistan led Carter to withdraw SALT 2 in January 1980"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Domestic US mood",
+            "bullet": "Amid the 1979 Iran crisis, US conservatives argued Moscow was exploiting Détente for unilateral gain"
+          },
+          {
+            "hint": "NATO missile decision",
+            "bullet": "Soviet SS-20 missiles prompted NATO to approve deploying US Pershing II and Cruise missiles in Europe"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DIPLOMATIC FRICTION",
+            "stem": "From 1977, Carter’s vocal support for Soviet dissidents like ____________ clashed with Moscow’s backing of Marxists in ____________ and Ethiopia."
+          },
+          {
+            "badge": "SENATE OPPOSITION",
+            "stem": "Although Carter and Brezhnev signed ____________ in Vienna to cap launchers at 2,400, US hawks attacked Soviet ____________ missiles."
+          },
+          {
+            "badge": "FATAL TRIGGER",
+            "stem": "Ratification died permanently after December 1979 when Soviet forces invaded ____________, prompting Carter to withdraw the treaty."
+          }
+        ],
+        "watch_out": "SALT 2 was signed by Carter and Brezhnev in June 1979, NOT rejected at Vienna—it failed because Carter withdrew it from the US Senate after Afghanistan.",
+        "prose_hash": "ef2b327be2",
+        "prose_fp": "f527f77c",
+        "question_hash": "65572fc224"
+      }
+    ],
+    "lesson_10": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Kabul power struggle",
+            "bullet": "PDPA secular reforms sparked Mujahideen guerrilla revolt, worsened when Hafizullah Amin murdered Taraki in September 1979"
+          },
+          {
+            "hint": "Central Asian border",
+            "bullet": "Following Iran’s 1979 Revolution, Brezhnev feared Islamic fundamentalism spreading to 30 million Soviet Central Asian Muslims"
+          },
+          {
+            "hint": "Suspected US links",
+            "bullet": "Suspecting Amin of US contacts, Soviet forces killed him in December 1979 and installed Babrak Karmal"
+          },
+          {
+            "hint": "Ideological justification",
+            "bullet": "Brezhnev invoked the Brezhnev Doctrine to prevent a bordering pro-Soviet Communist regime from collapsing"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Fading Détente stakes",
+            "bullet": "Because US Senators were already stalling SALT 2, Brezhnev felt Moscow risked little by intervening"
+          },
+          {
+            "hint": "Military miscalculation",
+            "bullet": "Expecting a swift Prague-style takeover, Kremlin generals fatally underestimated mountainous terrain and Mujahideen resistance"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KABUL INSTABILITY",
+            "stem": "Communist rule in Afghanistan fractured in 1979 as ____________ rebels fought the government and ____________ seized power from Taraki."
+          },
+          {
+            "badge": "BORDER SECURITY",
+            "stem": "Watching the nearby ____________ Revolution, Brezhnev feared Islamic fundamentalism spreading among 30 million Muslims in..."
+          },
+          {
+            "badge": "DOCTRINE IN ACTION",
+            "stem": "Invoking the ____________ in December 1979, Soviet troops stormed Kabul to replace Amin with ____________."
+          }
+        ],
+        "watch_out": "Afghanistan already had a Communist government since April 1978—Soviet troops invaded to replace unreliable Communist leader Hafizullah Amin with Babrak Karmal, not to overthrow a Western democracy.",
+        "prose_hash": "d7e5e06cbb",
+        "prose_fp": "17a4f926",
+        "question_hash": "9a784e84b7"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Regional security pledge",
+            "bullet": "Proclaimed the Carter Doctrine → vowed military force to block Soviet control of the Persian Gulf"
+          },
+          {
+            "hint": "Treaty & defence budget",
+            "bullet": "Shelved SALT 2, formed a Rapid Deployment Force, and raised defence spending by 5 per cent"
+          },
+          {
+            "hint": "Economic embargoes",
+            "bullet": "Imposed a grain embargo alongside banning computer and oil-drilling technology exports to strain the Soviet economy"
+          },
+          {
+            "hint": "Secret CIA pipeline",
+            "bullet": "Launched CIA Operation Cyclone → funneled cash and weapons via Pakistan to arm Afghan Mujahideen fighters"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1947 containment echo",
+            "bullet": "Echoed the 1947 Truman Doctrine by extending US military containment to vital Middle Eastern oil routes"
+          },
+          {
+            "hint": "Presidential election pressure",
+            "bullet": "Facing Ronald Reagan in the 1980 election, Carter adopted hawkish sanctions to shed his soft image"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STRATEGIC DOCTRINE",
+            "stem": "In January 1980, the ____________ warned Moscow that America would use military force to defend the oil-rich ____________."
+          },
+          {
+            "badge": "ECONOMIC SANCTIONS",
+            "stem": "Alongside shelving SALT 2, Washington imposed a punishing ____________ embargo and banned exports of ____________ technology."
+          },
+          {
+            "badge": "COVERT AID",
+            "stem": "Through CIA ____________, the USA secretly channelled money and arms via Pakistan to supply the ____________."
+          }
+        ],
+        "watch_out": "Do not credit Ronald Reagan alone with ending Détente or arming the Mujahideen—Jimmy Carter killed Détente, raised military spending, and launched Operation Cyclone in January 1980.",
+        "prose_hash": "3552178a81",
+        "prose_fp": "03f0d042",
+        "question_hash": "ff3daca910"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "1980 US-led walkout",
+            "bullet": "Over 60 US-led nations boycotted the 1980 Moscow Games after Brezhnev ignored Carter’s Afghan withdrawal ultimatum"
+          },
+          {
+            "hint": "Lost propaganda prestige",
+            "bullet": "Rival Liberty Bell Classic games and missing Western stars denied Moscow global prestige after spending billions"
+          },
+          {
+            "hint": "Allied splits",
+            "bullet": "Some Western athletes including Britons still competed under the neutral Olympic flag, yet Kremlin humiliation lingered"
+          },
+          {
+            "hint": "1984 Soviet response",
+            "bullet": "Moscow led 14 Eastern Bloc allies to boycott the 1984 Los Angeles Games, underscoring frozen relations"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historic Communist host",
+            "bullet": "As the first Communist Olympic host, Moscow had counted on 1980 to showcase socialist superiority worldwide"
+          },
+          {
+            "hint": "Global TV impact",
+            "bullet": "Replacing diplomacy with televised sporting snubs brought Second Cold War hostility into ordinary households globally"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MOSCOW SNUB",
+            "stem": "When Soviet troops stayed in Afghanistan past February 1980, Washington led over ____________ countries to boycott the ____________ Olympics."
+          },
+          {
+            "badge": "PROPAGANDA BLOW",
+            "stem": "Staging rival games in Philadelphia ruined the Kremlin’s showcase, even though some Westerners competed under the neutral ____________."
+          },
+          {
+            "badge": "TIT-FOR-TAT REVENGE",
+            "stem": "Four years later, Moscow cited athlete security to lead ____________ Eastern Bloc states out of the ____________ Games."
+          }
+        ],
+        "watch_out": "Remember the exact sequence and locations: the USA led over 60 countries out of Moscow in 1980, and the USSR led 14 allies out of Los Angeles in 1984.",
+        "prose_hash": "ca73149126",
+        "prose_fp": "183e18af",
+        "question_hash": "788ebf5ba3"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Defence budget surge",
+            "bullet": "Dismissing Détente, Reagan launched a $1 trillion defence build-up to confront Moscow from overwhelming strength"
+          },
+          {
+            "hint": "Bombers, subs & missiles",
+            "bullet": "Funded B-1 bombers, Trident submarines, stealth aircraft, neutron bombs, and European Pershing II and Cruise missiles"
+          },
+          {
+            "hint": "1983 presidential rhetoric",
+            "bullet": "Branded the USSR an Evil Empire in March 1983 → turned diplomacy into open ideological confrontation"
+          },
+          {
+            "hint": "Insurgent funding abroad",
+            "bullet": "Reagan Doctrine armed anti-communist insurgents from Nicaragua’s Contras to Stinger missiles for Afghan Mujahideen"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shift beyond containment",
+            "bullet": "Unlike earlier containment, the Reagan Doctrine sought to roll back Soviet-backed regimes across the developing world"
+          },
+          {
+            "hint": "European missile range",
+            "bullet": "Stationing Pershing II missiles within minutes of Moscow heightened Kremlin fears of a sudden NATO strike"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MASSIVE REARMAMENT",
+            "stem": "Convinced Détente favoured Moscow, Reagan spent ____________ on weapons including Trident submarines and ____________ missiles in Europe."
+          },
+          {
+            "badge": "MORAL CRUSADE",
+            "stem": "Rhetorically, his March 1983 speech branded the Soviet Union an ____________, ending polite diplomatic language."
+          },
+          {
+            "badge": "GLOBAL ROLLBACK",
+            "stem": "Under the ____________, Washington armed anti-communist guerrillas such as Nicaragua’s Contras and supplied ____________ missiles in Afghanistan."
+          }
+        ],
+        "watch_out": "Distinguish the Carter Doctrine from the Reagan Doctrine: Carter vowed to defend the Persian Gulf, whereas Reagan funded anti-communist insurgents worldwide to roll back Soviet influence.",
+        "prose_hash": "fddf692046",
+        "prose_fp": "4d823ed4",
+        "question_hash": "6c5f9fbb53"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Proposed orbital system",
+            "bullet": "March 1983 Star Wars plan proposed space-based lasers to intercept Soviet ICBMs before hitting America"
+          },
+          {
+            "hint": "Nuclear balance impact",
+            "bullet": "Bypassed the 1972 ABM Treaty and overturned Mutually Assured Destruction by shielding only the United States"
+          },
+          {
+            "hint": "Kremlin military fear",
+            "bullet": "Kremlin leaders feared an orbital shield would neutralise Soviet deterrence and hand Washington first-strike capability"
+          },
+          {
+            "hint": "Computing & cost gap",
+            "bullet": "Lacking advanced microchips and supercomputers, Moscow knew competing in space weapons would bankrupt the USSR"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Threat to parity",
+            "bullet": "Threatened to erase the nuclear parity Moscow had spent decades of heavy military budgets achieving"
+          },
+          {
+            "hint": "Push toward summits",
+            "bullet": "Economic strain from Star Wars later pushed Gorbachev to seek deep arms cuts with Reagan"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ORBITAL SHIELD",
+            "stem": "Unveiled in March 1983, the ____________ proposed space-based lasers to shoot down Soviet missiles and bypass the 1972 ____________."
+          },
+          {
+            "badge": "STRATEGIC IMBALANCE",
+            "stem": "Soviet leaders feared Star Wars would overturn ____________ and hand Washington a decisive ____________ capability."
+          },
+          {
+            "badge": "ECONOMIC TRAP",
+            "stem": "Because Soviet industry lagged badly in ____________ and supercomputers, trying to match America in space risked..."
+          }
+        ],
+        "watch_out": "Star Wars did NOT deploy working space lasers in 1983—it was an unbuilt research programme, yet the mere threat of technological bankruptcy terrified the Kremlin.",
+        "prose_hash": "5cfb358fa5",
+        "prose_fp": "0ae9cf20",
+        "question_hash": "5ef8696947"
+      }
+    ],
+    "lesson_11": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Industrial & oil slump",
+            "bullet": "Central planning, rusting factories, and falling oil income produced chronic food queues and economic stagnation"
+          },
+          {
+            "hint": "Military share of GDP",
+            "bullet": "Arms spending swallowed roughly 25 per cent of Soviet GDP trying to counter Reagan’s Star Wars"
+          },
+          {
+            "hint": "Costly foreign war",
+            "bullet": "Unwinnable fighting in Afghanistan drained $8 billion annually and cost 15,000 Soviet soldiers’ lives"
+          },
+          {
+            "hint": "April 1986 catastrophe",
+            "bullet": "April 1986 Chernobyl explosion spread radiation across Europe → exposed Soviet technological decay and state cover-ups"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Aging Kremlin leadership",
+            "bullet": "Rapid deaths of elderly leaders Brezhnev, Andropov, and Chernenko between 1982 and 1985 had paralysed reform"
+          },
+          {
+            "hint": "Satellite bloc subsidies",
+            "bullet": "Propping up indebted Warsaw Pact satellites with cheap Soviet oil further drained Kremlin resources"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOMESTIC STAGNATION",
+            "stem": "Taking office in March 1985 after three elderly leaders died, Gorbachev inherited rusting factories and defence costs absorbing ____________ of GDP."
+          },
+          {
+            "badge": "FOREIGN DRAIN",
+            "stem": "Abroad, the prolonged war in ____________ cost the Soviet treasury ____________ every year alongside 15,000 lives."
+          },
+          {
+            "badge": "TECHNOLOGICAL WAKE-UP",
+            "stem": "Crisis deepened in April 1986 when the ____________ nuclear disaster exposed industrial decay and official secrecy."
+          }
+        ],
+        "watch_out": "Compare superpower economies carefully: military spending absorbed roughly 25 per cent of a much smaller Soviet GDP compared with around 6–7 per cent in the wealthier USA.",
+        "prose_hash": "0c895e57ec",
+        "prose_fp": "e972ff95",
+        "question_hash": "385b90c347"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Underlying political goal",
+            "bullet": "A committed Marxist-Leninist, Gorbachev designed New Thinking to modernise and save communism rather than abolish it"
+          },
+          {
+            "hint": "Economic quota changes",
+            "bullet": "Perestroika relaxed state quotas, legalised small private cooperatives in 1987–88, and invited Western joint ventures"
+          },
+          {
+            "hint": "Press & censorship rules",
+            "bullet": "Glasnost loosened censorship so media could expose Stalinist terror, corruption, economic waste, and Chernobyl"
+          },
+          {
+            "hint": "Prisoners & ballot boxes",
+            "bullet": "Freed exiled dissident Andrei Sakharov in December 1986 and introduced 1989 multi-candidate Congress elections"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Arms budget link",
+            "bullet": "Perestroika could only fund civilian consumer goods if summit treaties slashed ruinous nuclear arms budgets"
+          },
+          {
+            "hint": "Destabilising side-effects",
+            "bullet": "Relaxing quotas disrupted supply chains while Glasnost let critics attack Communist Party rule itself"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ECONOMIC RESTRUCTURING",
+            "stem": "To revive socialism rather than end it, ____________ relaxed state quotas and legalised small ____________ businesses."
+          },
+          {
+            "badge": "POLITICAL OPENNESS",
+            "stem": "Simultaneously, ____________ curbed state censorship so journalists could investigate corruption, Stalinist crimes, and Chernobyl."
+          },
+          {
+            "badge": "DEMOCRATIC STEPS",
+            "stem": "Reform extended to freeing dissident physicist ____________ in 1986 and holding multi-candidate elections to the ____________."
+          }
+        ],
+        "watch_out": "Never mix up the two Russian terms: Perestroika meant economic restructuring of industry and markets, whereas Glasnost meant political openness and reduced censorship.",
+        "prose_hash": "29a6b88ce2",
+        "prose_fp": "7a3dbccf",
+        "question_hash": "ea86aa67e1"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "November 1985 chemistry",
+            "bullet": "November 1985 Geneva fireside talks forged warm personal trust between Reagan and Gorbachev"
+          },
+          {
+            "hint": "Joint Geneva statement",
+            "bullet": "Geneva joint statement declared that a nuclear war cannot be won and must never be fought"
+          },
+          {
+            "hint": "October 1986 proposals",
+            "bullet": "At Reykjavik in October 1986, Gorbachev proposed 50 per cent strategic cuts and abolishing ballistic missiles"
+          },
+          {
+            "hint": "Cause of deadlock",
+            "bullet": "Reykjavik collapsed without an accord because Reagan refused Gorbachev’s demand to confine Star Wars to laboratories"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Domestic financial urgency",
+            "bullet": "Meeting six months after Chernobyl made slashing nuclear costs even more urgent for Gorbachev at Reykjavik"
+          },
+          {
+            "hint": "Blueprint for 1987",
+            "bullet": "Agreeing verification principles at Reykjavik paved the direct path to the December 1987 INF Treaty"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GENEVA WARMTH",
+            "stem": "Meeting first at ____________ in November 1985, fireside talks built rapport and affirmed that a nuclear war cannot be..."
+          },
+          {
+            "badge": "REYKJAVIK AMBITION",
+            "stem": "In October 1986 at ____________, Gorbachev proposed cutting strategic arsenals by ____________ and abolishing ballistic missiles."
+          },
+          {
+            "badge": "SUMMIT STUMBLING BLOCK",
+            "stem": "Talks broke down without a signed treaty only because Reagan refused to restrict ____________ research to the laboratory."
+          }
+        ],
+        "watch_out": "Although Reykjavik ended without a formal treaty over Star Wars, examiners reward explaining why it still succeeded by proving massive nuclear cuts were negotiable.",
+        "prose_hash": "4a3c76860b",
+        "prose_fp": "24443693",
+        "question_hash": "c07cf530ab"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Scientific advice shift",
+            "bullet": "Advised Star Wars was unproven and cheap to counter, Gorbachev uncoupled missile talks in February 1987"
+          },
+          {
+            "hint": "Brandenburg Gate speech",
+            "bullet": "Reagan’s June 1987 Brandenburg Gate speech challenged Gorbachev to prove his sincerity on European freedom"
+          },
+          {
+            "hint": "Banned weapon category",
+            "bullet": "December 1987 Washington INF Treaty abolished all land-based missiles with ranges of 500 to 5,500 km"
+          },
+          {
+            "hint": "Numbers & inspections",
+            "bullet": "Destroyed over 2,600 Soviet SS-20 and US Pershing II and Cruise missiles under intrusive on-site inspections"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Difference from SALT",
+            "bullet": "Unlike SALT caps on growth, INF was the first treaty to physically destroy existing nuclear weapons"
+          },
+          {
+            "hint": "Domestic economic relief",
+            "bullet": "Halting expensive European missile competition freed vital Soviet funds to support Gorbachev’s domestic Perestroika reforms"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DIPLOMATIC UNBLOCKING",
+            "stem": "Deadlock ended in February 1987 once Soviet scientists persuaded Gorbachev to uncouple missile cuts from ____________."
+          },
+          {
+            "badge": "FIRST REAL CUTS",
+            "stem": "Signed at Washington in December 1987, the ____________ eliminated all land-based missiles with ranges between ____________ km."
+          },
+          {
+            "badge": "STRICT VERIFICATION",
+            "stem": "Over 2,600 Soviet ____________ and American Pershing II and Cruise missiles were destroyed under mutual ____________ inspections."
+          }
+        ],
+        "watch_out": "Highlight WHY the December 1987 INF Treaty differed from SALT 1: SALT merely limited future growth, whereas INF physically destroyed an entire class of missiles.",
+        "prose_hash": "afc32ba1ed",
+        "prose_fp": "4b2a03b2",
+        "question_hash": "5ef147b5ab"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "1988 Moscow visit",
+            "bullet": "Visiting Moscow in mid-1988, Reagan declared the USSR was no longer an Evil Empire"
+          },
+          {
+            "hint": "December 1988 UN pledge",
+            "bullet": "Gorbachev’s December 1988 UN speech cut 500,000 troops and renounced the 1968 Brezhnev Doctrine"
+          },
+          {
+            "hint": "February 1989 withdrawal",
+            "bullet": "Full Soviet withdrawal from Afghanistan in February 1989 removed a major barrier to Western trust"
+          },
+          {
+            "hint": "December 1989 summit",
+            "bullet": "Gorbachev and President Bush declared the Cold War officially over at the December 1989 Malta Summit"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Impact on satellites",
+            "bullet": "Keeping Soviet tanks in barracks removed the military prop sustaining Eastern Europe’s Communist regimes"
+          },
+          {
+            "hint": "Autumn 1989 proof",
+            "bullet": "Letting Eastern Europe reform peacefully in autumn 1989 convinced Bush of Gorbachev’s sincerity at Malta"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SYMBOLIC RECONCILIATION",
+            "stem": "Strolling across Red Square in 1988, Reagan withdrew his ____________ remark before Gorbachev announced ____________ troop cuts at the UN."
+          },
+          {
+            "badge": "ENDING INTERVENTION",
+            "stem": "Crucially, Gorbachev abandoned the ____________ and pulled the last Soviet soldiers out of ____________ in February 1989."
+          },
+          {
+            "badge": "MALTA DECLARATION",
+            "stem": "Finally, meeting new US President ____________ at the December 1989 ____________ Summit, both leaders declared the Cold War over."
+          }
+        ],
+        "watch_out": "Watch presidential chronology: Gorbachev negotiated Geneva, Reykjavik, INF, and Moscow with Ronald Reagan, but declared the Cold War over at Malta in December 1989 with George H. W. Bush.",
+        "prose_hash": "a5081bc48c",
+        "prose_fp": "85d5b3f0",
+        "question_hash": "b5c4ec1726"
+      }
+    ],
+    "lesson_12": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "New Kremlin stance",
+            "bullet": "Gorbachev’s Sinatra Doctrine ended Red Army intervention → let Warsaw Pact states choose their own path"
+          },
+          {
+            "hint": "Trade union pressure",
+            "bullet": "Crippling Polish strikes forced General Jaruzelski to re-legalise Lech Wałęsa’s trade union Solidarity and hold elections"
+          },
+          {
+            "hint": "June 1989 election",
+            "bullet": "Winning 99 Senate seats in June 1989 made Solidarity’s Tadeusz Mazowiecki Prime Minister without Kremlin interference"
+          },
+          {
+            "hint": "Border fence removal",
+            "bullet": "Reformist Hungary dismantled its barbed-wire border fence with neutral Austria between May and September 1989"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Contrast with 1968",
+            "bullet": "Unlike 1956 and 1968, Gorbachev refused military force because invasion would wreck Western trade and Perestroika"
+          },
+          {
+            "hint": "Opposition strength",
+            "bullet": "Decade-long underground Solidarity networks and economic debt left Jaruzelski unable to govern without compromise"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KREMLIN GREEN LIGHT",
+            "stem": "Christened the ____________ by Gennady Gerasimov, Gorbachev’s refusal to send tanks left Eastern Bloc regimes defenceless."
+          },
+          {
+            "badge": "POLISH BREAKTHROUGH",
+            "stem": "In Poland, strikes forced talks with ____________, whose movement won 99 Senate seats and made ____________ Prime Minister."
+          },
+          {
+            "badge": "IRON CURTAIN BREACH",
+            "stem": "Meanwhile, reformist ____________ tore down its border fence with neutral ____________, opening an escape route westwards."
+          }
+        ],
+        "watch_out": "Poland and Hungary broke Communist monopoly BEFORE the Berlin Wall fell in November 1989—Hungary’s open Austrian border actually triggered the East German exodus.",
+        "prose_hash": "2a94dbc38c",
+        "prose_fp": "1a5ed706",
+        "question_hash": "38adcea622"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Escape route west",
+            "bullet": "Tens of thousands of East Germans fled westwards via Hungary’s newly opened frontier with Austria"
+          },
+          {
+            "hint": "Street marches & leadership",
+            "bullet": "With Soviet troops in barracks, 70,000 Leipzig protesters forced Honecker out in favour of Egon Krenz"
+          },
+          {
+            "hint": "9 November press conference",
+            "bullet": "On 9 November 1989, unprepared spokesman Günter Schabowski mistakenly announced checkpoints were open immediately, without delay"
+          },
+          {
+            "hint": "Border guards’ decision",
+            "bullet": "Thousands surged to the Wall → outnumbered border guards refused to shoot and opened the gates"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1961 Cold War symbol",
+            "bullet": "Built in August 1961 to stop emigration, the Wall’s collapse shattered Europe’s prime Cold War symbol"
+          },
+          {
+            "hint": "Intended visa reform",
+            "bullet": "Krenz intended orderly exit visas to stabilise East German rule, not dismantle the frontier overnight"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "POPULAR PRESSURE",
+            "stem": "As refugees escaped through Hungary and over 70,000 marched in ____________, East Germany replaced Honecker with ____________."
+          },
+          {
+            "badge": "TELEVISED BLUNDER",
+            "stem": "On the evening of 9 November 1989, fumbled notes led spokesman ____________ to declare travel rules applied ____________."
+          },
+          {
+            "badge": "FALL OF THE WALL",
+            "stem": "Outnumbered border guards refused to ____________ as jubilant crowds surged through checkpoints and hammered down the Wall."
+          }
+        ],
+        "watch_out": "Egon Krenz’s government did NOT deliberately demolish the Berlin Wall—spokesman Günter Schabowski accidentally announced orderly visa rules as taking effect immediately.",
+        "prose_hash": "ecada189f0",
+        "prose_fp": "19ae6c57",
+        "question_hash": "a9e3b4a397"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "1989 satellite upheavals",
+            "bullet": "Czechoslovakia’s peaceful Velvet Revolution elected Václav Havel, Bulgaria ousted Zhivkov, and Romanians violently executed Nicolae Ceaușescu"
+          },
+          {
+            "hint": "October 1990 settlement",
+            "bullet": "Helmut Kohl used Western loans to secure Gorbachev’s consent for October 1990 German reunification inside NATO"
+          },
+          {
+            "hint": "Red Army troop exits",
+            "bullet": "Newly elected democratic governments in Poland, Hungary, and Czechoslovakia demanded the removal of Red Army garrisons"
+          },
+          {
+            "hint": "Fate of military bloc",
+            "bullet": "Stripped of satellite members, the Warsaw Pact dissolved militarily in March 1991 and ended in July"
+          }
+        ],
+        "context": [
+          {
+            "hint": "End of 1949 split",
+            "bullet": "Reunification ended the forty-one-year split between West and East Germany established after the 1948–49 Berlin Blockade"
+          },
+          {
+            "hint": "Soviet military resentment",
+            "bullet": "Losing the 1945 buffer zone and accepting united Germany inside NATO enraged Kremlin military hardliners"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOMINO REVOLUTIONS",
+            "stem": "Before 1989 ended, peaceful strikes brought ____________ to power in Prague while Romania’s bloody uprising executed ____________."
+          },
+          {
+            "badge": "UNITED GERMANY",
+            "stem": "In October 1990, Chancellor ____________ secured Gorbachev’s agreement for formal ____________ with the nation remaining in NATO."
+          },
+          {
+            "badge": "END OF THE PACT",
+            "stem": "Once newly elected states expelled Soviet garrisons, the ____________ formally dissolved on 1 July 1991."
+          }
+        ],
+        "watch_out": "Romania was the violent exception in 1989 where dictator Nicolae Ceaușescu was overthrown and shot—whereas Czechoslovakia’s Velvet Revolution was entirely peaceful.",
+        "prose_hash": "82f6b8e6c7",
+        "prose_fp": "228f94e1",
+        "question_hash": "a89545ebb8"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Republic independence bids",
+            "bullet": "Inflation and Glasnost spurred Lithuania, Latvia, and Estonia to declare full independence starting in March 1990"
+          },
+          {
+            "hint": "Hardliners’ August plot",
+            "bullet": "Hardliners detained Gorbachev in Crimea on 19 August 1991 to block the decentralised New Union Treaty"
+          },
+          {
+            "hint": "Opposition outside parliament",
+            "bullet": "Russian President Boris Yeltsin climbed a Moscow tank → rallied vast crowds against martial law"
+          },
+          {
+            "hint": "Soldiers’ crucial choice",
+            "bullet": "Elite Soviet army units refused orders to storm parliament → collapsed the coup within seventy-two hours"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Electoral legitimacy",
+            "bullet": "Yeltsin possessed direct democratic authority from Russian voters, whereas unelected coup plotters lacked public legitimacy"
+          },
+          {
+            "hint": "Backlash on Party",
+            "bullet": "Rather than saving the USSR, the failed plot discredited Communist rule and empowered republic presidents"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COUP MOTIVE",
+            "stem": "Alarmed by Baltic independence in ____________ and Gorbachev’s proposed ____________, the Gang of Eight detained him in Crimea."
+          },
+          {
+            "badge": "MOSCOW RESISTANCE",
+            "stem": "Plotters miscalculated when Russian President ____________ climbed a tank outside parliament to rally citizens against martial law."
+          },
+          {
+            "badge": "RAPID COLLAPSE",
+            "stem": "When elite ____________ units refused to attack protesters, the hardline takeover collapsed within ____________ hours."
+          }
+        ],
+        "watch_out": "The August 1991 coup was launched by hardline Communists trying to SAVE the USSR from breaking up, NOT by anti-communist democrats—yet its failure accelerated Soviet collapse.",
+        "prose_hash": "0203f51452",
+        "prose_fp": "3211ff9d",
+        "question_hash": "c92e9943c3"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Party ban & referendum",
+            "bullet": "Yeltsin suspended Russia’s Communist Party and Ukraine voted 90 per cent for independence in December 1991"
+          },
+          {
+            "hint": "8 December republic pact",
+            "bullet": "Russia, Ukraine, and Belarus signed the Belavezha Accords → replaced the USSR with the loose CIS"
+          },
+          {
+            "hint": "25 December broadcast",
+            "bullet": "After eight more republics joined the CIS, president-without-a-state Gorbachev resigned on television on 25 December 1991"
+          },
+          {
+            "hint": "Global power shift",
+            "bullet": "Splitting the USSR into fifteen states left America sole superpower and ended the Cold War"
+          }
+        ],
+        "context": [
+          {
+            "hint": "End of 1945 rivalry",
+            "bullet": "Dissolving the Soviet state ended the ideological rivalry between capitalism and communism that began in 1941–45"
+          },
+          {
+            "hint": "Reform’s unintended end",
+            "bullet": "Gorbachev’s reforms had sought to rescue Soviet communism, yet unleashed republic nationalism that dismantled the state"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REPUBLIC BREAKAWAY",
+            "stem": "Following Ukraine’s landslide vote, leaders of Russia, Ukraine, and Belarus signed the ____________ to form the loose ____________."
+          },
+          {
+            "badge": "FINAL RESIGNATION",
+            "stem": "Left without a country to govern, ____________ resigned on live television on ____________ as the Soviet flag came down."
+          },
+          {
+            "badge": "GLOBAL OUTCOME",
+            "stem": "Breaking the USSR into ____________ independent states left the ____________ as sole superpower and ended the Cold War."
+          }
+        ],
+        "watch_out": "Do not confuse the fall of the Berlin Wall in November 1989 with the dissolution of the USSR—the Soviet Union itself survived two more years until 25 December 1991.",
+        "prose_hash": "75299d9836",
+        "prose_fp": "1aa74084",
+        "question_hash": "4ed8b2296c"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3805 @@
+{
+  "unit_id": "weimar_nazi_germany",
+  "lessons": {
+    "lesson_1_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Allied naval blockade",
+            "bullet": "Four-year British blockade cut food and fuel imports → Turnip Winter starvation killed over 750,000 civilians"
+          },
+          {
+            "hint": "Suicidal fleet order",
+            "bullet": "Admirals ordered a hopeless final battle against Britain → exhausted sailors refused to put to sea"
+          },
+          {
+            "hint": "Kiel naval mutiny",
+            "bullet": "40,000 armed sailors and dockworkers seized Kiel on 3 November → sparked nationwide revolutionary strikes"
+          },
+          {
+            "hint": "Workers' councils",
+            "bullet": "Workers' and soldiers' councils seized German town halls → proved imperial leaders had lost armed control"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Western Front retreat",
+            "bullet": "Allied counter-offensives and fresh US troops broke German lines → military defeat was already inevitable"
+          },
+          {
+            "hint": "Autumn influenza wave",
+            "bullet": "Deadly 1918 influenza hit malnourished civilians and garrisons → deepened home-front exhaustion and mutiny"
+          },
+          {
+            "hint": "Russian Revolution fear",
+            "bullet": "1917 Bolshevik councils in Russia inspired mutinous sailors → terrified generals into seeking rapid peace"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HOME-FRONT STARVATION",
+            "stem": "At home, four years of the ____________ cut vital imports and caused ____________ that killed over 750,000 civilians."
+          },
+          {
+            "badge": "NAVAL REVOLT",
+            "stem": "Refusing a suicidal battle order, 40,000 sailors launched the ____________ and set up ____________ across German cities."
+          },
+          {
+            "badge": "COLLAPSE OF AUTHORITY",
+            "stem": "Combined with retreat on the ____________, losing control of the fleet forced military commanders to ____________."
+          }
+        ],
+        "watch_out": "Germany was never invaded in 1918—imperial collapse came from the Allied blockade, Western Front retreat, and mutiny spreading from Kiel.",
+        "prose_hash": "31f0e766f7",
+        "prose_fp": "98e0ec94",
+        "question_hash": "41bb33afc0"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Berlin general strike",
+            "bullet": "Mass strikes paralysed central Berlin on 9 November → crowds surrounded ministries demanding immediate change"
+          },
+          {
+            "hint": "Loss of army loyalty",
+            "bullet": "Hindenburg warned Kaiser Wilhelm that troops would disobey orders → forced immediate imperial abdication"
+          },
+          {
+            "hint": "Rival Soviet threat",
+            "bullet": "Communists prepared to declare a Soviet republic → Scheidemann proclaimed a democratic republic first"
+          },
+          {
+            "hint": "Provisional SPD handover",
+            "bullet": "Power passed to moderate SPD leader Friedrich Ebert → kept parliamentary democrats in charge of Berlin"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Liebknecht's rival speech",
+            "bullet": "Two hours later Karl Liebknecht proclaimed a socialist republic → confirmed Scheidemann’s fear of Bolshevik takeover"
+          },
+          {
+            "hint": "Prince Max's delay",
+            "bullet": "Imperial Chancellor Prince Max announced abdication before Wilhelm agreed → forced SPD leaders to seize control fast"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPERIAL ABDICATION",
+            "stem": "Once Field Marshal ____________ warned that soldiers would no longer obey, ____________ fled into Dutch exile."
+          },
+          {
+            "badge": "OUTRACING RADICALS",
+            "stem": "Fearing extreme left-wing rivals would declare a ____________ first, ____________ proclaimed the Republic from a Reichstag window."
+          },
+          {
+            "badge": "MODERATE CONTROL",
+            "stem": "Moving decisively enabled moderate ____________ leaders under ____________ to form a provisional government."
+          }
+        ],
+        "watch_out": "Scheidemann acted without Ebert’s permission—Ebert was furious because he wanted an elected constituent assembly, not a window speech, to decide Germany’s constitution.",
+        "prose_hash": "0677425f3b",
+        "prose_fp": "c79328bc",
+        "question_hash": "8bfa1d36e9"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Berlin street chaos",
+            "bullet": "Revolutionary street fighting threatened the fragile republic → Ebert urgently needed disciplined troops for order"
+          },
+          {
+            "hint": "Anti-communist pledge",
+            "bullet": "General Groener promised military backing on 10 November → guaranteed army force against Bolshevik risings"
+          },
+          {
+            "hint": "Preserving army autonomy",
+            "bullet": "Ebert pledged not to reform or purge the conservative officer corps → protected traditional military independence"
+          }
+        ],
+        "context": [
+          {
+            "hint": "November Criminals slur",
+            "bullet": "Civilian envoy Matthias Erzberger signed the Compiègne armistice → let Hindenburg and Ludendorff dodge blame for defeat"
+          },
+          {
+            "hint": "Unreformed elite threat",
+            "bullet": "Keeping monarchist officers in command → left Weimar vulnerable when generals refused to crush later right-wing putsches"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NEED FOR ORDER",
+            "stem": "Surrounded by revolutionary unrest in Berlin, Chancellor ____________ needed armed backing to prevent a ____________ revolution."
+          },
+          {
+            "badge": "THE TELEPHONE BARGAIN",
+            "stem": "Through the secret pact with ____________, the army promised loyalty provided Ebert preserved the ____________."
+          },
+          {
+            "badge": "LONG-TERM PRICE",
+            "stem": "While civilian ____________ took nationalist blame for the armistice, sparing monarchist generals weakened future republican security."
+          }
+        ],
+        "watch_out": "Generals Hindenburg and Ludendorff never signed the 11 November Armistice—civilian politician Matthias Erzberger signed it, letting generals fuel betrayal myths.",
+        "prose_hash": "74e132e50c",
+        "prose_fp": "847e1f77",
+        "question_hash": "bbf8fb5c96"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Dangerous capital streets",
+            "bullet": "Continuing communist strikes and armed clashes made Berlin unsafe → risked mob intimidation of deputies"
+          },
+          {
+            "hint": "Quiet provincial refuge",
+            "bullet": "Convening 150 miles south at Weimar’s National Theatre → shielded delegates while writing the constitution"
+          },
+          {
+            "hint": "Strong democratic mandate",
+            "bullet": "83% voter turnout gave SPD, Centre, and DDP a clear majority → legitimized electing Ebert first President"
+          },
+          {
+            "hint": "Cultural symbolism",
+            "bullet": "Associating the new state with Goethe and Schiller → distanced republican Germany from Prussian militarism"
+          }
+        ],
+        "context": [
+          {
+            "hint": "January bloodshed",
+            "bullet": "Violent Spartacist street fighting in Berlin weeks earlier → proved the capital remained too volatile for parliament"
+          },
+          {
+            "hint": "Signal to Allies",
+            "bullet": "Showcasing peaceful Enlightenment heritage before Paris peacemakers → hoped to secure milder Allied peace terms"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VIOLENCE IN BERLIN",
+            "stem": "Following January’s armed ____________ and strikes, Berlin remained far too dangerous for newly elected ____________."
+          },
+          {
+            "badge": "SAFE CONSTITUTIONAL WORK",
+            "stem": "Meeting 150 miles south in ____________ allowed the moderate ____________ coalition to draft laws in peace."
+          },
+          {
+            "badge": "SYMBOLIC REBRANDING",
+            "stem": "Linking the Republic to the cultural home of ____________ signalled a peaceful break from ____________."
+          }
+        ],
+        "watch_out": "Weimar was only the temporary assembly venue in 1919—once order returned and the constitution was signed, government ministries operated back in Berlin.",
+        "prose_hash": "6bbdfa5588",
+        "prose_fp": "0b6cb40a",
+        "question_hash": "6532f52bee"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Splintered parliaments",
+            "bullet": "Proportional representation matched seats to exact vote shares → tiny extremist parties entered the Reichstag"
+          },
+          {
+            "hint": "Fragile coalitions",
+            "bullet": "No single party ever won an overall majority → multi-party cabinets argued and collapsed during crises"
+          },
+          {
+            "hint": "Rule by decree",
+            "bullet": "Article 48 empowered the President to issue emergency laws → bypassed elected Reichstag deputies altogether"
+          },
+          {
+            "hint": "Suspended liberties",
+            "bullet": "Presidential decrees could suspend free speech and assembly → handed future dictators a legal authoritarian tool"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cabinet instability",
+            "bullet": "Twenty short-lived coalition governments rose and fell between 1919 and 1933 → eroded public trust in democracy"
+          },
+          {
+            "hint": "1930s presidential rule",
+            "bullet": "Hindenburg relied on Article 48 decrees under Brüning and after the Reichstag Fire → dismantled parliamentary rule"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PARLIAMENTARY SPLINTERING",
+            "stem": "Under ____________, even small fringe movements won seats, preventing stable majorities and forcing weak ____________."
+          },
+          {
+            "badge": "EMERGENCY LOOPHOLE",
+            "stem": "Worst of all, ____________ permitted the President to suspend civil rights and legislate by ____________ without MPs."
+          },
+          {
+            "badge": "DESTRUCTIVE COMBINATION",
+            "stem": "Deadlocked coalitions paired with presidential decrees normalized authoritarian rule long before ____________ took office."
+          }
+        ],
+        "watch_out": "Universal suffrage at age twenty made Weimar exceptionally progressive—its fatal weakness lay in combining fractured coalitions with unchecked Article 48 decrees.",
+        "prose_hash": "9281c115b0",
+        "prose_fp": "cade5a67",
+        "question_hash": "07133fe5a9"
+      }
+    ],
+    "lesson_1_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Mass armed rising",
+            "bullet": "Over 100,000 armed workers under Liebknecht and Luxemburg seized Berlin offices → threatened to topple Ebert"
+          },
+          {
+            "hint": "No loyal police",
+            "bullet": "Ebert’s fledgling government lacked reliable Berlin police → required battle-hardened soldiers immediately"
+          },
+          {
+            "hint": "Freikorps firepower",
+            "bullet": "Defence Minister Noske deployed volunteer Freikorps units with machine guns → crushed street rebels ruthlessly"
+          },
+          {
+            "hint": "Poisoned left wing",
+            "bullet": "Freikorps murder of Luxemburg and Liebknecht → created permanent hatred between Social Democrats and Communists"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Anti-Bolshevik veterans",
+            "bullet": "250,000 nationalist ex-frontline troops hated communism → gladly crushed workers despite despising Weimar democracy"
+          },
+          {
+            "hint": "Fatal 1932 legacy",
+            "bullet": "Bitter KPD distrust of the SPD lasted into the Depression → prevented a united left stopping Hitler"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REVOLUTIONARY THREAT",
+            "stem": "Confronted by over 100,000 ____________ insurgents and lacking loyal police, Ebert relied on Defence Minister ____________."
+          },
+          {
+            "badge": "PARAMILITARY FORCE",
+            "stem": "Demobilized right-wing ____________ troops crushed the rising with heavy weapons and murdered ____________ and ____________."
+          },
+          {
+            "badge": "PERMANENT RIFT",
+            "stem": "Surviving via nationalist paramilitaries empowered the far right while splitting the ____________ and ____________ forever."
+          }
+        ],
+        "watch_out": "The Freikorps rescued Ebert only because they hated communism—they despised Weimar democracy too and launched the right-wing Kapp Putsch in 1920.",
+        "prose_hash": "3b23793a3c",
+        "prose_fp": "2bbc3a0a",
+        "question_hash": "94e9fc473f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Dictated settlement",
+            "bullet": "Allied invasion threats forced signing without negotiation → Germans condemned Versailles as a humiliating Diktat"
+          },
+          {
+            "hint": "Guilt and debt",
+            "bullet": "Article 231 imposed sole War Guilt and £6.6 billion reparations → fuelled outrage at crippling tribute"
+          },
+          {
+            "hint": "Land and military cuts",
+            "bullet": "Losing 13% of European land, all colonies, and capping the army at 100,000 → wounded national pride"
+          },
+          {
+            "hint": "Betrayal conspiracy",
+            "bullet": "Nationalists spread the Dolchstoss stab-in-the-back myth → falsely blamed socialists and Jews for military defeat"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Fourteen Points hope",
+            "bullet": "Germans expected fair self-determination under Wilson’s Fourteen Points → losing territory to Poland felt doubly unjust"
+          },
+          {
+            "hint": "Uninvaded homeland",
+            "bullet": "German regiments marched home in formation from foreign trenches → made claims of an unbeaten army plausible"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HUMILIATING DIKTAT",
+            "stem": "Forced to sign under threat of invasion, Weimar politicians carried blame for ____________ War Guilt and ____________ reparations."
+          },
+          {
+            "badge": "STRATEGIC AMPUTATION",
+            "stem": "Stripping 13% of European territory, demilitarising the ____________, and capping troops at ____________ humiliated patriots."
+          },
+          {
+            "badge": "WEAPONIZED MYTH",
+            "stem": "Right-wing agitators promoted the ____________ myth, claiming democratic ____________ had betrayed an undefeated army."
+          }
+        ],
+        "watch_out": "In June 1919 Germany signed Article 231 as a blank cheque—the exact £6.6 billion reparations figure was fixed later by the Allied commission in 1921.",
+        "prose_hash": "42ba20c0bd",
+        "prose_fp": "23463618",
+        "question_hash": "dae81c88f6"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Disbandment spark",
+            "bullet": "Versailles troop limits forced disbanding Freikorps brigades → provoked Wolfgang Kapp’s 5,000-man march on Berlin"
+          },
+          {
+            "hint": "Refusal to shoot",
+            "bullet": "General von Seeckt declared Reichswehr does not fire upon Reichswehr → officers spared fellow nationalist veterans"
+          },
+          {
+            "hint": "Government flight",
+            "bullet": "Deprived of military protection, Ebert’s cabinet fled to Stuttgart → exposed the Republic’s physical helplessness"
+          },
+          {
+            "hint": "General strike rescue",
+            "bullet": "Berlin trade unions cut gas, water, and trams → paralysed Kapp’s regime within four days"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1918 pact backfire",
+            "bullet": "Ebert’s earlier pact left conservative officers unpurged → allowed generals to pick when to defend democracy"
+          },
+          {
+            "hint": "Hypocritical brutality",
+            "bullet": "Weeks later the same Reichswehr ruthlessly shot left-wing Ruhr strikers → proved one-sided right-wing loyalty"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FREIKORPS REBELLION",
+            "stem": "Ordered to disband under Versailles limits, 5,000 paramilitaries seized Berlin behind right-wing nationalist ____________."
+          },
+          {
+            "badge": "MILITARY DEFIANCE",
+            "stem": "Army chief ____________ refused to fire on fellow veterans, forcing Ebert to appeal for a Berlin ____________."
+          },
+          {
+            "badge": "EXPOSED WEAKNESS",
+            "stem": "Although halting utilities defeated the coup in four days, the crisis proved Weimar could not trust its own ____________."
+          }
+        ],
+        "watch_out": "The German army did not crush the Kapp Putsch—when Seeckt refused to intervene, ordinary Berlin workers saved Weimar by shutting down essential services.",
+        "prose_hash": "639fc6ddad",
+        "prose_fp": "fee4d204",
+        "question_hash": "d33922b0d8"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Secret murder squads",
+            "bullet": "Ex-Freikorps gunmen in Organisation Consul assassinated Erzberger and Rathenau → targeted prominent democratic ministers"
+          },
+          {
+            "hint": "Scale of killings",
+            "bullet": "Over 350 political assassinations struck Germany between 1919 and 1922 → overwhelmingly committed by far-right extremists"
+          },
+          {
+            "hint": "Sympathetic magistrates",
+            "bullet": "Right-wing imperial judges admired nationalists’ patriotic motives → handed right-wing killers lenient prison terms"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unpurged judiciary",
+            "bullet": "Weimar’s constitution guaranteed job security for Kaiser-era judges → kept anti-republican conservatives on the bench"
+          },
+          {
+            "hint": "Stark sentencing gap",
+            "bullet": "Zero of 354 right-wing murders brought death sentences, whereas ten of 22 left-wing murders brought execution"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TARGETED ASSASSINATIONS",
+            "stem": "Between 1919 and 1922, secret ____________ squads murdered Armistice signatory ____________ and Jewish Foreign Minister ____________."
+          },
+          {
+            "badge": "JUDICIAL SYMPATHY",
+            "stem": "Holdover conservative ____________ excused nationalist terror as patriotic duty and handed down remarkably ____________."
+          },
+          {
+            "badge": "ENCOURAGING EXTREMISM",
+            "stem": "Executing left-wing rebels while sparing right-wing gunmen undermined the rule of law and emboldened future ____________."
+          }
+        ],
+        "watch_out": "Do not muddle the victims’ roles—Matthias Erzberger was assassinated in 1921 for signing the 1918 Armistice, whereas Walther Rathenau was Foreign Minister killed in 1922.",
+        "prose_hash": "ff60bc7374",
+        "prose_fp": "17e7a6f5",
+        "question_hash": "8897e99c51"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Ruhr occupation",
+            "bullet": "Missed coal reparations brought 60,000 French and Belgian troops into the Ruhr → paralysed German industry"
+          },
+          {
+            "hint": "Paid strike policy",
+            "bullet": "Chancellor Cuno ordered passive resistance → promised striking Ruhr miners and rail workers full government pay"
+          },
+          {
+            "hint": "Reckless money-printing",
+            "bullet": "Lacking coal output and tax income, Berlin printed trillions of unbacked marks → destroyed currency value"
+          },
+          {
+            "hint": "Ruined middle class",
+            "bullet": "Bread hit 201 billion marks by autumn 1923 → wiped out middle-class life savings and fixed pensions"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wartime debt legacy",
+            "bullet": "Imperial war borrowing had already eroded the mark since 1914 → 1923 money-printing triggered final collapse"
+          },
+          {
+            "hint": "Unequal winners",
+            "bullet": "Big landowners and industrialists paid off loans in worthless marks → deepened resentment among ruined savers"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OCCUPATION & STRIKE",
+            "stem": "After French and Belgian soldiers occupied the industrial ____________, Chancellor Cuno instructed workers to wage ____________."
+          },
+          {
+            "badge": "MONETARY COLLAPSE",
+            "stem": "Starved of coal revenues, the Treasury printed unbacked ____________ to pay strikers, unleashing runaway ____________."
+          },
+          {
+            "badge": "POLITICAL ALIENATION",
+            "stem": "Watching lifetime savings and ____________ vanish overnight turned previously moderate ____________ voters against Weimar."
+          }
+        ],
+        "watch_out": "Hyperinflation did not make everyone poor equally—people on fixed pensions and middle-class savers were ruined, whereas debtors and mortgage-holders cleared loans cheaply.",
+        "prose_hash": "0a809e258c",
+        "prose_fp": "c97f3cb4",
+        "question_hash": "575d8fc7f7"
+      }
+    ],
+    "lesson_1_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Ending Ruhr payouts",
+            "bullet": "Stresemann called off passive resistance in September 1923 → halted ruinous state payouts to strikers"
+          },
+          {
+            "hint": "Balanced state budget",
+            "bullet": "Cutting civil service jobs and ministry spending → proved Berlin would stop printing unbacked cash"
+          },
+          {
+            "hint": "Land-backed currency",
+            "bullet": "Strictly limited Rentenmark notes backed by agricultural and industrial land → restored instant shopkeeper confidence"
+          },
+          {
+            "hint": "Permanent Reichsmark",
+            "bullet": "Independent Reichsbank introduced the gold-backed Reichsmark in 1924 → locked in five years of price stability"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Far-right fury",
+            "bullet": "Surrendering the Ruhr strike outraged nationalists as treason → helped trigger Hitler’s Munich Putsch in November 1923"
+          },
+          {
+            "hint": "Unrestored savings",
+            "bullet": "Currency stabilization never refunded wiped-out 1923 bank savings → left middle-class savers bitter toward Weimar"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FISCAL DISCIPLINE",
+            "stem": "Upon becoming Chancellor, ____________ ended ____________ in the Ruhr and slashed government expenditure."
+          },
+          {
+            "badge": "RESTORING TRUST",
+            "stem": "Issuing a strictly capped ____________ backed by German ____________ convinced citizens to accept money again."
+          },
+          {
+            "badge": "PERMANENT FOOTING",
+            "stem": "Transitioning to the ____________ in 1924 stabilized prices, even though ruined middle-class ____________ remained uncompensated."
+          }
+        ],
+        "watch_out": "Stresemann was Chancellor for barely three months in late 1923—from November 1923 until his death in 1929 he served continuously as Foreign Minister.",
+        "prose_hash": "3a7954ee6b",
+        "prose_fp": "2eff0577",
+        "question_hash": "fa0bb37b23"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Scaled reparations",
+            "bullet": "1924 Dawes Plan lowered annual payments to 1 billion marks → rose only alongside German industrial output"
+          },
+          {
+            "hint": "Wall Street capital",
+            "bullet": "800 million gold marks in US loans plus private investment → modernized factories, railways, and housing"
+          },
+          {
+            "hint": "Fragile US reliance",
+            "bullet": "Recovery depended on short-term American bank credit → tied German survival directly to Wall Street stability"
+          }
+        ],
+        "context": [
+          {
+            "hint": "French Ruhr exit",
+            "bullet": "Resuming regular Dawes instalments persuaded French troops to leave the Ruhr by 1925 → revived coal output"
+          },
+          {
+            "hint": "Maturity mismatch",
+            "bullet": "German towns spent short-term US loans on long-term projects → ensured instant bankruptcy if credit was recalled"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "AFFORDABLE SCHEDULE",
+            "stem": "Negotiated in 1924, the ____________ cut annual reparations to 1 billion marks and unlocked ____________ gold marks in loans."
+          },
+          {
+            "badge": "INDUSTRIAL REVIVAL",
+            "stem": "Influxes of ____________ capital financed modern factories and public infrastructure, cutting unemployment."
+          },
+          {
+            "badge": "STRUCTURAL VULNERABILITY",
+            "stem": "Yet building prosperity on short-term foreign credit meant Stresemann later warned Germany was ____________."
+          }
+        ],
+        "watch_out": "The 1924 Dawes Plan did not reduce the total £6.6 billion reparations figure—it only eased annual instalments; the 1929 Young Plan reduced the overall debt.",
+        "prose_hash": "f6cd5f9045",
+        "prose_fp": "7c3aff96",
+        "question_hash": "2253406798"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Voluntary equal treaty",
+            "bullet": "Germany signed Locarno freely alongside Britain and France → contrasted sharply with the Versailles Diktat"
+          },
+          {
+            "hint": "Fixed western borders",
+            "bullet": "Stresemann permanently accepted French Alsace-Lorraine and Belgian Eupen-Malmedy → calmed French invasion fears"
+          },
+          {
+            "hint": "Ruhr security pledge",
+            "bullet": "France renounced future Ruhr occupations and backed Rhineland demilitarization → protected German heavy industry"
+          },
+          {
+            "hint": "Cologne troop exit",
+            "bullet": "Warm Spirit of Locarno won international trust → secured Allied troop withdrawal from Cologne"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Open eastern frontier",
+            "bullet": "Stresemann refused to guarantee Polish and Czech borders at Locarno → kept peaceful eastern border revision alive"
+          },
+          {
+            "hint": "Nationalist anger",
+            "bullet": "Right-wing DNVP ministers quit the cabinet in protest → hated voluntarily confirming any Versailles land loss"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VOLUNTARY DIPLOMACY",
+            "stem": "Signed voluntarily in October 1925, the ____________ treated Germany as an equal partner rather than a defeated outcast."
+          },
+          {
+            "badge": "MUTUAL SECURITY",
+            "stem": "Guaranteeing western borders and permanent ____________ ensured French troops would never again seize the ____________."
+          },
+          {
+            "badge": "END OF ISOLATION",
+            "stem": "Reassuring Britain and France generated the Spirit of Locarno and paved the way for ____________ admission."
+          }
+        ],
+        "watch_out": "Locarno guaranteed only Germany’s western borders—Stresemann deliberately left eastern borders with Poland and Czechoslovakia open for future peaceful negotiation.",
+        "prose_hash": "1092cc2eed",
+        "prose_fp": "fa61de20",
+        "question_hash": "96e521ea37"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Reversing pariah status",
+            "bullet": "September 1926 League admission ended post-1919 exclusion → restored Germany to international diplomacy"
+          },
+          {
+            "hint": "Permanent Council seat",
+            "bullet": "Joining the League Council alongside Britain and France → gave Germany equal great-power veto status"
+          },
+          {
+            "hint": "Peaceful revision lever",
+            "bullet": "Geneva diplomacy advanced Rhineland evacuations, minority rights, and Young Plan talks → delivered practical gains"
+          },
+          {
+            "hint": "Nobel Peace Prize",
+            "bullet": "Stresemann shared the December 1926 Nobel Peace Prize with Briand → sealed Weimar’s global prestige"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Soviet neutrality balance",
+            "bullet": "1926 Treaty of Berlin reassured Moscow that League entry was not anti-Soviet → balanced East and West"
+          },
+          {
+            "hint": "Right-wing condemnation",
+            "bullet": "Hitler and nationalists denounced the League as a victors’ club enforcing Versailles → rejected Stresemann’s triumph"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GREAT-POWER RETURN",
+            "stem": "Excluded from Geneva in 1919, Germany gained ____________ admission in 1926 with a permanent seat on the ____________."
+          },
+          {
+            "badge": "DIPLOMATIC LEVERAGE",
+            "stem": "Sitting as an equal allowed ____________ to press peacefully for Rhineland troop withdrawals and the later ____________."
+          },
+          {
+            "badge": "INTERNATIONAL PRESTIGE",
+            "stem": "Sharing the 1926 ____________ with French Minister Aristide Briand confirmed Germany’s diplomatic rehabilitation."
+          }
+        ],
+        "watch_out": "Joining the League was not symbolic fluff—securing a permanent Council seat gave Germany great-power veto status to negotiate Rhineland evacuation and debt cuts.",
+        "prose_hash": "1227a2e52a",
+        "prose_fp": "bde551d5",
+        "question_hash": "b61d8998f3"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Generations of debt",
+            "bullet": "Even cut to £2 billion, Young Plan payments ran until 1988 → outraged nationalists over taxing unborn Germans"
+          },
+          {
+            "hint": "Accepting War Guilt",
+            "bullet": "Signing any new reparations schedule meant accepting Article 231 blame → furious revisionists demanded zero tribute"
+          },
+          {
+            "hint": "Hugenberg-Hitler front",
+            "bullet": "Press baron Alfred Hugenberg and Hitler led a fierce campaign → branded Young Plan ministers traitors"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Free national publicity",
+            "bullet": "Hugenberg’s vast newspaper and cinema empire gave Hitler respectable national exposure and funding before the Crash"
+          },
+          {
+            "hint": "Early Rhineland exit",
+            "bullet": "Allies agreed under the Young Plan to pull final troops out of the Rhineland five years early in 1930"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LONG PAYMENT TIMELINE",
+            "stem": "Even though the 1929 ____________ slashed total reparations from £6.6 billion to ____________, instalments lasted until 1988."
+          },
+          {
+            "badge": "NATIONALIST COALITION",
+            "stem": "Media mogul ____________ joined forces with ____________ to demand criminal prosecution of ministers who signed."
+          },
+          {
+            "badge": "BOOST FOR HITLER",
+            "stem": "Leading the anti-Young Plan campaign handed the Nazis mainstream press coverage weeks before the ____________."
+          }
+        ],
+        "watch_out": "Right-wing nationalists opposed the Young Plan despite its huge £4.6 billion debt reduction because paying anything until 1988 kept Versailles War Guilt alive.",
+        "prose_hash": "5bf78477e5",
+        "prose_fp": "5ff09040",
+        "question_hash": "b6aba229d7"
+      }
+    ],
+    "lesson_1_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Rising real wages",
+            "bullet": "Factory recovery raised real wages over 10% and up to 25% by 1928 → made German workers Europe’s best paid"
+          },
+          {
+            "hint": "Shorter working week",
+            "bullet": "Legislation enforced a standard eight-hour industrial day → improved factory health and urban leisure time"
+          },
+          {
+            "hint": "Jobless safety net",
+            "bullet": "1927 Unemployment Insurance Act pooled 3% wage contributions → guaranteed weekly benefits for 17 million workers"
+          },
+          {
+            "hint": "Modern council homes",
+            "bullet": "Municipal councils built over 2 million homes with plumbing and electricity → eased acute post-war housing shortages"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Veterans' war pensions",
+            "bullet": "1920 Reich Pension Law paid state aid to disabled veterans and war widows → widened social security"
+          },
+          {
+            "hint": "Excluded rural farmers",
+            "bullet": "Slumping global grain prices pushed German farmers into debt by 1928 → rural voters resented urban welfare taxes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PAY & CONDITIONS",
+            "stem": "Across industrial cities, economic recovery lifted ____________ by up to 25% alongside a legal ____________ working day."
+          },
+          {
+            "badge": "WELFARE & HOUSING",
+            "stem": "Passing the 1927 ____________ protected 17 million earners while town councils constructed over ____________ modern homes."
+          },
+          {
+            "badge": "UNEVEN RECOVERY",
+            "stem": "Despite urban gains, indebted ____________ and uncompensated middle-class savers felt excluded from Golden Twenties prosperity."
+          }
+        ],
+        "watch_out": "Living standards did not rise for all Germans—industrial union workers prospered, whereas indebted farmers and white-collar graduates already faced hardship by 1928.",
+        "prose_hash": "1d7e4afe07",
+        "prose_fp": "f427f819",
+        "question_hash": "e88a83a5e5"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Constitutional equality",
+            "bullet": "Article 109 guaranteed equal voting and civil service access → elected higher shares of female MPs than Britain"
+          },
+          {
+            "hint": "White-collar employment",
+            "bullet": "Young city women entered office, retail, medical, and teaching careers → earned independent disposable wages"
+          },
+          {
+            "hint": "Independent city leisure",
+            "bullet": "Unchaperoned Neue Frau wore Bubikopf bobbed hair, cosmetics, and shorter skirts → defied pre-war social norms"
+          },
+          {
+            "hint": "Unequal pay and pressure",
+            "bullet": "Women still earned lower pay and married wives faced pressure to quit → preserved traditional gender barriers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Post-war job dismissals",
+            "bullet": "Demobilization decrees pushed women out of wartime factory jobs for ex-soldiers → overall female employment barely rose"
+          },
+          {
+            "hint": "Falling birth rates",
+            "bullet": "Sharp drops in German birth rates alarmed churches and nationalists → fuelled attacks on female emancipation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CIVIC EQUALITY",
+            "stem": "Guaranteed equal rights under ____________, millions of female voters elected dozens of ____________ during the 1920s."
+          },
+          {
+            "badge": "URBAN EMANCIPATION",
+            "stem": "Wage-earning city women embraced the ____________ image, wearing ____________ hair and visiting dance halls unchaperoned."
+          },
+          {
+            "badge": "PERSISTENT CONSERVATISM",
+            "stem": "Nevertheless, lower ____________ for female workers and rural hostility toward working wives kept traditional roles entrenched."
+          }
+        ],
+        "watch_out": "The liberated New Woman represented mainly young, unmarried urban earners—most working-class and rural German women still faced low wages and heavy domestic duties.",
+        "prose_hash": "f90bb4d90e",
+        "prose_fp": "c8028929",
+        "question_hash": "2cadedb97f"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Uniting art and craft",
+            "bullet": "Walter Gropius founded Bauhaus in 1919 to merge fine art with factory production → modernized everyday objects"
+          },
+          {
+            "hint": "Form follows function",
+            "bullet": "Designers rejected heavy nineteenth-century carving → shaped furniture and lettering purely around practical daily use"
+          },
+          {
+            "hint": "Industrial building materials",
+            "bullet": "1925 Dessau campus used steel frames, reinforced concrete, and glass curtain walls → created bright geometric spaces"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Affordable worker flats",
+            "bullet": "Clean Bauhaus blueprints enabled Weimar councils to mass-produce sunlit, hygienic social housing estates cheaply"
+          },
+          {
+            "hint": "Nationalist hostility",
+            "bullet": "Conservatives attacked flat-roofed glass buildings as soulless and un-German → Nazis closed Bauhaus in 1933"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DESIGN PHILOSOPHY",
+            "stem": "Founded by architect ____________ in 1919, the Bauhaus school taught that everyday ____________ must follow practical function."
+          },
+          {
+            "badge": "GEOMETRIC MODERNISM",
+            "stem": "Showcased at its ____________ campus, Bauhaus replaced heavy ornament with tubular steel, concrete, and ____________."
+          },
+          {
+            "badge": "PUBLIC IMPACT",
+            "stem": "Bridging fine art with ____________ production reshaped European housing and furniture while provoking traditionalist scorn."
+          }
+        ],
+        "watch_out": "Bauhaus covered far more than buildings—Gropius redesigned lamps, steel-tube chairs, sans-serif typography, and textiles for affordable factory production.",
+        "prose_hash": "c142b8a61d",
+        "prose_fp": "fd7c85ea",
+        "question_hash": "ea8b25adb2"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Trench warfare trauma",
+            "bullet": "First World War slaughter destroyed romantic illusions → veteran artists refused to glorify militarism or war"
+          },
+          {
+            "hint": "Unsparing urban realism",
+            "bullet": "Harsh city poverty and inequality demanded blunt honesty → Neue Sachlichkeit painted Weimar life without sentiment"
+          },
+          {
+            "hint": "Crippled war veterans",
+            "bullet": "Otto Dix depicted mutilated trench amputees begging beside wealthy passers-by → exposed forgotten victims of war"
+          },
+          {
+            "hint": "Biting elite satire",
+            "bullet": "George Grosz caricatured greedy industrialists and corrupt generals → mocked powerful elites escaping wartime sacrifice"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Abolition of censorship",
+            "bullet": "Constitutional free expression ended Kaiser-era state censorship → let painters satirize army officers and profiteers openly"
+          },
+          {
+            "hint": "Conservative outrage",
+            "bullet": "Militarists prosecuted Grosz for insulting the army → Nazis later branded both painters Degenerate Art"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "POST-WAR REALISM",
+            "stem": "Haunted by First World War carnage, pioneers of ____________ rejected romantic beauty for cold, blunt social truth."
+          },
+          {
+            "badge": "UNSPARING CRITIQUE",
+            "stem": "While veteran ____________ painted crippled trench amputees, ____________ lampooned corrupt generals and Berlin industrialists."
+          },
+          {
+            "badge": "CREATIVE FREEDOM",
+            "stem": "Freed by Weimar’s removal of state ____________, modernist painters turned art into Europe’s sharpest political commentary."
+          }
+        ],
+        "watch_out": "Neue Sachlichkeit translates as New Objectivity—unlike emotional pre-war Expressionism, Dix and Grosz used clinical, unsentimental detail to indict war and greed.",
+        "prose_hash": "d34e5e0b2f",
+        "prose_fp": "82203dbc",
+        "question_hash": "d9df68704f"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Cabaret sexual openness",
+            "bullet": "Uninhibited Berlin cabaret nightlife and Marlene Dietrich’s Blue Angel → shocked churchgoing and rural moral codes"
+          },
+          {
+            "hint": "Experimental UFA cinema",
+            "bullet": "Avant-garde Babelsberg films like Fritz Lang’s Metropolis → felt alien and threatening to traditional audiences"
+          },
+          {
+            "hint": "Moral decay charges",
+            "bullet": "Right-wing critics branded modernist art un-German and degenerate → claimed Weimar democracy poisoned family values"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Berlin versus provinces",
+            "bullet": "Sharp cultural gulf divided cosmopolitan Berlin from conservative small towns → deepened political polarization"
+          },
+          {
+            "hint": "Nazi cultural scapegoating",
+            "bullet": "Hitler blamed Jewish and Marxist influence for modernist cultural Bolshevism → rallied traditionalist voters"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MODERNIST EXPERIMENTATION",
+            "stem": "Despite international fame for ____________ cinema such as Fritz Lang’s Metropolis, Berlin nightlife alienated provincial Germans."
+          },
+          {
+            "badge": "TRADITIONALIST OUTRAGE",
+            "stem": "Churches and right-wing nationalists condemned cabaret freedom and avant-garde art as morally ____________ and un-German."
+          },
+          {
+            "badge": "POLITICAL WEAPON",
+            "stem": "Exploiting this ____________ divide, Nazis promised to purge modern decadence and restore traditional German family values."
+          }
+        ],
+        "watch_out": "International praise for Weimar culture was a political double-edged sword—the bolder Berlin cabarets and galleries became, the more provincial conservatives turned against democracy.",
+        "prose_hash": "b8f38da387",
+        "prose_fp": "4aa6c755",
+        "question_hash": "70d78e0bda"
+      }
+    ],
+    "lesson_2_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Army surveillance order",
+            "bullet": "Reichswehr intelligence sent Corporal Hitler to monitor fringe Munich clubs → brought him to Sterneckerbräu"
+          },
+          {
+            "hint": "Tiny DAP cellar group",
+            "bullet": "Locksmith Anton Drexler’s German Workers’ Party had just fifty members and scant funds → needed dynamic speakers"
+          },
+          {
+            "hint": "Anti-separatist outburst",
+            "bullet": "Hitler’s fiery nationalist rebuttal against Bavarian separatism → stunned listeners and impressed founder Drexler"
+          },
+          {
+            "hint": "Propaganda takeover",
+            "bullet": "Invited to join in September 1919, Hitler soon led propaganda → turned cellar talks into packed rallies"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Munich Soviet reaction",
+            "bullet": "Crushing a brief Munich Communist republic in spring 1919 → turned Bavaria into a haven for far-right nationalists"
+          },
+          {
+            "hint": "Inflated card numbering",
+            "bullet": "DAP began membership numbers at 500 to appear larger → made Hitler member 555 despite tiny ranks"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "INTELLIGENCE ASSIGNMENT",
+            "stem": "Ordered by army commanders in ____________ to spy on fringe groups, Hitler visited ____________’s tiny German Workers’ Party."
+          },
+          {
+            "badge": "ORATORICAL DISCOVERY",
+            "stem": "Attacking a speaker who backed Bavarian separatism showcased Hitler’s ____________ and prompted an instant invitation to join."
+          },
+          {
+            "badge": "RAPID ASCENDANCY",
+            "stem": "Entering a fifty-member club let Hitler take charge of ____________ and transform beer-cellar talks into mass meetings."
+          }
+        ],
+        "watch_out": "Hitler did not found the party—Anton Drexler founded the DAP in January 1919, and card 555 reflected numbering starting at 500 rather than 555 members.",
+        "prose_hash": "ea9a7ca266",
+        "prose_fp": "ba541cd5",
+        "question_hash": "0b47598010"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Scrapping Versailles",
+            "bullet": "Demanded abolishing the Versailles Treaty and uniting all Germans in Greater Germany → rallied bitter nationalists"
+          },
+          {
+            "hint": "Anti-capitalist worker pledges",
+            "bullet": "Promised generous old-age pensions and state profit-sharing in giant trusts → appealed to disillusioned workers"
+          },
+          {
+            "hint": "Racial citizenship test",
+            "bullet": "Point 4 restricted German citizenship strictly to racial blood → excluded Jewish Germans and demanded expulsions"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Small shopkeeper appeal",
+            "bullet": "Pledges to break up big department stores courted squeezed Mittelstand traders → widened lower-middle-class backing"
+          },
+          {
+            "hint": "Racial not Marxist",
+            "bullet": "Framing welfare solely for ethnic Germans rather than international workers → separated Nazism sharply from Communism"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NATIONALIST DEMANDS",
+            "stem": "Unveiled at Munich’s Hofbräuhaus in February 1920, the ____________ pledged to tear up ____________ and unite all Germans."
+          },
+          {
+            "badge": "POPULIST ECONOMICS",
+            "stem": "To pull manual workers away from Marxism, Hitler and Drexler promised ____________ and profit-sharing in big industries."
+          },
+          {
+            "badge": "RACIAL SCAPEGOATING",
+            "stem": "At its core, Point 4 stripped ____________ of citizenship, fusing economic populism with racial antisemitism."
+          }
+        ],
+        "watch_out": "Despite socialist-sounding promises on pensions and giant trusts, the 25-Point Programme was fiercely anti-Marxist—rights applied solely to racially defined Germans.",
+        "prose_hash": "de40e17785",
+        "prose_fp": "ab43690f",
+        "question_hash": "10a95e370e"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Dual-appeal party title",
+            "bullet": "Renaming DAP to NSDAP in summer 1920 → combined Nationalist and Socialist labels in one banner"
+          },
+          {
+            "hint": "Swastika colour scheme",
+            "bullet": "Red background rivalled socialist flags while imperial red-white-black colours and crooked swastika → gave instant recognition"
+          },
+          {
+            "hint": "Party daily newspaper",
+            "bullet": "Buying the Völkischer Beobachter in December 1920 → carried anti-Weimar and racial propaganda far beyond beer halls"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rivaling left-wing marches",
+            "bullet": "Communist and SPD rallies dominated streets with red banners → Hitler matched left-wing pageantry visually"
+          },
+          {
+            "hint": "Wealthy Munich patrons",
+            "bullet": "Sympathetic nationalist donors and army slush funds helped purchase the newspaper → expanded membership past 3,000 by 1921"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STRATEGIC REBRANDING",
+            "stem": "Rebranding the movement as the ____________ in 1920 signalled an appeal to both patriots and manual workers."
+          },
+          {
+            "badge": "THEATRICAL EMBLEM",
+            "stem": "Designing the red, white, and black ____________ banner gave street marches unmistakable visual discipline."
+          },
+          {
+            "badge": "PRINT MEGAPHONE",
+            "stem": "Purchasing the Munich newspaper ____________ in December 1920 spread Hitler’s message daily across Bavaria."
+          }
+        ],
+        "watch_out": "Hitler deliberately used Kaiser-era red, white, and black colours on the Nazi banner rather than Weimar’s black, red, and gold—visibly rejecting the Republic.",
+        "prose_hash": "7d0932f978",
+        "prose_fp": "a80e1def",
+        "question_hash": "9d06d7d189"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Indispensable crowd pull",
+            "bullet": "Hitler’s magnetic speeches packed Munich halls with paying crowds → made party survival dependent on him"
+          },
+          {
+            "hint": "Committee merger dispute",
+            "bullet": "Drexler’s committee pursued mergers with rival nationalist groups in July 1921 → threatened Hitler’s dominance"
+          },
+          {
+            "hint": "Resignation ultimatum",
+            "bullet": "Hitler threatened to resign unless granted sole dictatorial leadership → committee surrendered within days"
+          },
+          {
+            "hint": "Führerprinzip enforced",
+            "bullet": "Drexler was sidelined into an honorary post as internal voting ended → bound all branches to Hitler"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Gate-money dependence",
+            "bullet": "Admission fees and collections at Hitler’s speeches funded NSDAP bills → committee rivals could not replace him"
+          },
+          {
+            "hint": "Model for 1933 state",
+            "bullet": "Abolishing committee democracy under the Führerprinzip in 1921 → previewed how Hitler later ruled Germany"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "POWER STRUGGLE",
+            "stem": "When founder ____________ explored merging with rival groups in July 1921, Hitler gambled on a dramatic ____________."
+          },
+          {
+            "badge": "ORATORICAL MONOPOLY",
+            "stem": "Because packed halls and ticket funds depended on Hitler’s ____________, the committee capitulated immediately."
+          },
+          {
+            "badge": "TOP-DOWN OBEDIENCE",
+            "stem": "Replacing committee votes with the ____________ gave Hitler unquestioned personal command over the NSDAP."
+          }
+        ],
+        "watch_out": "Führerprinzip began inside the Nazi Party in July 1921 when Hitler ousted Anton Drexler—thirteen years before Hitler became Führer of Germany in 1934.",
+        "prose_hash": "49927fa970",
+        "prose_fp": "953edb9d",
+        "question_hash": "2f0dfde96f"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Defending beer-hall speakers",
+            "bullet": "Formed in August 1921 from ex-soldiers and Freikorps → Brownshirts violently ejected socialist and communist hecklers"
+          },
+          {
+            "hint": "Attacking rival parties",
+            "bullet": "Armed SA squads raided left-wing offices and beat rival paper-sellers → intimidated opponents off Munich streets"
+          },
+          {
+            "hint": "Röhm's military pipeline",
+            "bullet": "Captain Ernst Röhm channelled hidden Reichswehr weapons to 6,000 stormtroopers → built a feared private army"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unemployed veteran recruits",
+            "bullet": "Versailles army cuts left thousands of bitter young ex-soldiers jobless → SA uniforms offered meals and comradeship"
+          },
+          {
+            "hint": "Dual loyalty tension",
+            "bullet": "Many unruly SA brawlers stayed personally loyal to commander Röhm → sowed seeds of future party tension"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MEETING SECURITY",
+            "stem": "Recruited from unemployed veterans and Freikorps fighters in August 1921, the ____________ guarded Nazi speakers from hecklers."
+          },
+          {
+            "badge": "STREET INTIMIDATION",
+            "stem": "Led by army officer ____________, 6,000 armed Brownshirts smashed ____________ meetings across Bavaria."
+          },
+          {
+            "badge": "PROJECTION OF STRENGTH",
+            "stem": "Parading in surplus brown uniforms projected disciplined force while giving jobless men ____________ and purpose."
+          }
+        ],
+        "watch_out": "Keep Nazi paramilitaries distinct—Ernst Röhm’s brown-shirted SA formed in 1921 as street brawlers, whereas the smaller black-shirted SS formed in 1925 as Hitler’s bodyguard.",
+        "prose_hash": "614253b2ee",
+        "prose_fp": "b5eac549",
+        "question_hash": "95adfb6926"
+      }
+    ],
+    "lesson_2_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Coerced Bavarian leaders",
+            "bullet": "Hitler forced Bavarian leader von Kahr to back him at gunpoint → Kahr alerted police once released"
+          },
+          {
+            "hint": "Lack of army support",
+            "bullet": "Enlisting war hero Ludendorff failed to sway regular commanders → Bavarian Reichswehr and police opposed the coup"
+          },
+          {
+            "hint": "Munich street shootout",
+            "bullet": "Armed state police blocked 600 SA marchers on 9 November → gunfire killed 16 Nazis and crushed revolt"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Overnight fatal release",
+            "bullet": "Ludendorff trusted Kahr, Lossow, and Seisser to leave the Bürgerbräukeller → let them mobilize loyal police cordons"
+          },
+          {
+            "hint": "Mussolini miscalculation",
+            "bullet": "Copying Mussolini’s 1922 March on Rome amid Ruhr anger failed → Ebert and Seeckt held Berlin firm"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GUNPOINT COERCION",
+            "stem": "Storming the Bürgerbräukeller on 8 November 1923, Hitler forced Bavarian commissioner ____________ to promise support at gunpoint."
+          },
+          {
+            "badge": "LOSS OF BACKING",
+            "stem": "Despite parading war hero ____________, releasing Bavarian officials overnight let loyal ____________ barricade central Munich."
+          },
+          {
+            "badge": "COLLAPSE UNDER FIRE",
+            "stem": "Outgunned on 9 November with sixteen marchers killed, Hitler’s bid to copy Mussolini’s march ended in ____________."
+          }
+        ],
+        "watch_out": "Hitler’s coup collapsed because Bavarian state police and the army stayed loyal to Kahr once Ludendorff foolishly let Kahr leave the beer hall.",
+        "prose_hash": "267ea9ab4b",
+        "prose_fp": "bc614148",
+        "question_hash": "3e1cd2cf08"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Biased right-wing bench",
+            "bullet": "Sympathetic nationalist Munich judges indulged Hitler → let him deliver long uninterrupted attacks on Weimar"
+          },
+          {
+            "hint": "Patriotic martyr defence",
+            "bullet": "Hitler proudly owned his coup attempt → framed overthrowing November Criminals as patriotic national duty"
+          },
+          {
+            "hint": "Front-page media reach",
+            "bullet": "Daily press coverage broadcast every courtroom speech nationwide → turned a Bavarian agitator into a national leader"
+          },
+          {
+            "hint": "Token prison sentence",
+            "bullet": "Judges imposed the minimum five-year sentence rather than life → released Hitler on parole after nine months"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Consistent judicial bias",
+            "bullet": "Echoing lenient sentences for Organisation Consul killers, Weimar’s unpurged judiciary shielded anti-republican nationalists"
+          },
+          {
+            "hint": "Waived deportation rule",
+            "bullet": "Judges refused to deport Austrian-born Hitler under Weimar treason law → Ludendorff walked free altogether"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COURTROOM PLATFORM",
+            "stem": "Charged with High Treason in February 1924, Hitler won indulgence from sympathetic right-wing ____________."
+          },
+          {
+            "badge": "NATIONAL FAME",
+            "stem": "Front-page ____________ coverage across Germany transformed defeat on Munich’s streets into a ____________ victory."
+          },
+          {
+            "badge": "LENIENT VERDICT",
+            "stem": "Spared life imprisonment and deportation, Hitler served barely ____________ in comfortable Landsberg rooms."
+          }
+        ],
+        "watch_out": "Although the Munich Putsch failed militarily in twenty-four hours, the February 1924 treason trial succeeded brilliantly by making Hitler famous across all Germany.",
+        "prose_hash": "8e1d6fa622",
+        "prose_fp": "68233a46",
+        "question_hash": "bda2f7c801"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Racial hierarchy creed",
+            "bullet": "Mein Kampf preached Aryan master-race supremacy and destroying Jews and communism → codified core Nazi ideology"
+          },
+          {
+            "hint": "Eastern living space",
+            "bullet": "Demanded conquering Lebensraum across Eastern Europe and Russia → sought vast empire beyond 1914 borders"
+          },
+          {
+            "hint": "Total Führerprinzip state",
+            "bullet": "Rejected parliamentary majority voting → demanded absolute obedience to one supreme national Führer"
+          },
+          {
+            "hint": "Constitutional ballot pivot",
+            "bullet": "Police bullets proved armed coups failed → Hitler resolved to win Reichstag elections to dismantle Weimar legally"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lenient fortress regime",
+            "bullet": "Spacious Landsberg rooms, visitors, and secretary Rudolf Hess → gave Hitler time to rethink party strategy"
+          },
+          {
+            "hint": "Trojan horse elections",
+            "bullet": "Entering the Reichstag aimed not to preserve democracy → sought legal votes to abolish parliament from inside"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IDEOLOGICAL BLUEPRINT",
+            "stem": "Dictating Mein Kampf to Rudolf Hess inside ____________, Hitler fused Aryan racial supremacy with hatred of ____________."
+          },
+          {
+            "badge": "TERRITORIAL AMBITION",
+            "stem": "Looking east toward Poland and Russia, he demanded conquered ____________ to feed a Greater German empire."
+          },
+          {
+            "badge": "STRATEGIC SHIFT",
+            "stem": "Abandoning armed putsches after 1923, Hitler committed the NSDAP to winning power through ____________."
+          }
+        ],
+        "watch_out": "Choosing the legal path in Landsberg did not make Hitler moderate—he openly planned to use Weimar’s democratic ballot box to destroy democracy legally.",
+        "prose_hash": "b2a134ebf6",
+        "prose_fp": "4a651c3b",
+        "question_hash": "65ed4cc4e9"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Ending the party ban",
+            "bullet": "Promising strict legality in February 1925 → convinced Bavarian leaders to lift the post-putsch NSDAP ban"
+          },
+          {
+            "hint": "Specialist national leagues",
+            "bullet": "Munich headquarters built youth, student, women’s, and teachers’ branches plus the black-shirted SS → tightened structure"
+          },
+          {
+            "hint": "Northern socialist challenge",
+            "bullet": "Gregor Strasser’s northern wing backed anticapitalist land seizures → risked splitting the party and scaring donors"
+          },
+          {
+            "hint": "Bamberg authority speech",
+            "bullet": "Five-hour February 1926 Bamberg speech crushed Strasser and won Goebbels → locked every branch under Führerprinzip"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Prison leadership chaos",
+            "bullet": "Rival Nazi factions had splintered bitterly during Hitler’s detention → demanded decisive reunification after release"
+          },
+          {
+            "hint": "Reassuring wealthy donors",
+            "bullet": "Dropping Strasser’s attacks on aristocratic estates reassured industrialists and landowners → kept elite funding doors open"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PARTY RELAUNCH",
+            "stem": "Re-founding the NSDAP in February 1925 depended on pledging ____________ so Bavarian officials unbanned the party."
+          },
+          {
+            "badge": "CRUSHING DISSENT",
+            "stem": "Summoning leaders to the 1926 ____________, Hitler defeated ____________’s socialist wing and restored the Führerprinzip."
+          },
+          {
+            "badge": "DISCIPLINED INSTRUMENT",
+            "stem": "Winning over ____________ as Berlin chief alongside forming the elite ____________ created an obedient national machine."
+          }
+        ],
+        "watch_out": "Joseph Goebbels initially sided with Gregor Strasser’s northern anti-capitalist faction before Hitler charmed him at Bamberg in 1926 and made him Berlin Gauleiter.",
+        "prose_hash": "cae21a0c5f",
+        "prose_fp": "e8b6e727",
+        "question_hash": "f0062a7ab8"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Stresemann-era prosperity",
+            "bullet": "Stable Rentenmark prices, rising wages, and Dawes loans → removed the economic desperation extremists needed"
+          },
+          {
+            "hint": "Tiny Reichstag vote",
+            "bullet": "Moderate parties thrived in May 1928 while Nazis won just 2.6% and 12 seats → stayed marginal"
+          },
+          {
+            "hint": "National Gau network",
+            "bullet": "Hitler divided Germany into 35 electoral regions under loyal Gauleiters → grew membership past 100,000 activists"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Calmer foreign prestige",
+            "bullet": "Locarno and League Council membership eased national humiliation → blunted Nazi fury against Versailles temporarily"
+          },
+          {
+            "hint": "Rural tactical pivot",
+            "bullet": "Shut out of SPD urban strongholds in 1928, Nazis pivoted propaganda toward debt-hit Protestant farmers"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PROSPERITY BARRIER",
+            "stem": "During the Golden Twenties, stable currency and ____________ loans left satisfied voters backing moderate democrats."
+          },
+          {
+            "badge": "ELECTORAL NADIR",
+            "stem": "In the May 1928 election, Nazi support slumped to ____________ of the national vote and just ____________ Reichstag seats."
+          },
+          {
+            "badge": "HIDDEN READINESS",
+            "stem": "Even so, organizing 35 regional branches under loyal ____________ built a 100,000-member machine ready for the 1929 Crash."
+          }
+        ],
+        "watch_out": "Never write off 1924–1929 as wasted years for Hitler—votes stayed tiny at 2.6%, yet building 35 regional Gaus let the Nazis exploit 1929 nationwide.",
+        "prose_hash": "3da8750dde",
+        "prose_fp": "585d5ab3",
+        "question_hash": "54a8057575"
+      }
+    ],
+    "lesson_2_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Recalled US credit",
+            "bullet": "Panicked American banks recalled short-term Dawes loans after October 1929 → drained German capital reserves overnight"
+          },
+          {
+            "hint": "Bank and firm failures",
+            "bullet": "Major German banks collapsed and over 50,000 businesses went bankrupt → paralysed domestic credit and trade"
+          },
+          {
+            "hint": "Forty percent slump",
+            "bullet": "Industrial factory output plunged by 40% → fulfilled Stresemann’s warning about dancing on a volcano"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1931 Danatbank panic",
+            "bullet": "Collapse of major lenders such as Danatbank in summer 1931 → triggered bank runs that froze savings"
+          },
+          {
+            "hint": "Shrinking world trade",
+            "bullet": "Foreign tariff barriers choked off German manufactured exports → prevented factories earning cash to survive"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WALL STREET TRIGGER",
+            "stem": "Because Weimar industry depended on short-term Dawes credit, the October 1929 ____________ sparked immediate loan recalls."
+          },
+          {
+            "badge": "FINANCIAL MELTDOWN",
+            "stem": "Starved of US capital, major German ____________ shut down, 50,000 firms failed, and industrial output fell ____________."
+          },
+          {
+            "badge": "POLITICAL FALLOUT",
+            "stem": "Shattering Golden Twenties prosperity overnight destroyed voter confidence in moderate ____________ coalitions."
+          }
+        ],
+        "watch_out": "Germany suffered worse than Britain or France after Wall Street crashed because Weimar factories and councils were uniquely dependent on recallable short-term US loans.",
+        "prose_hash": "d5ea00ba43",
+        "prose_fp": "a496c523",
+        "question_hash": "eea988266e"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Six million jobless",
+            "bullet": "Registered unemployment reached six million workers by winter 1932 → drove mass soup-kitchen queues and homelessness"
+          },
+          {
+            "hint": "Grand Coalition collapse",
+            "bullet": "Coalition partners split over Unemployment Insurance costs in March 1930 → ended majority parliamentary government"
+          },
+          {
+            "hint": "Deflationary Hunger cuts",
+            "bullet": "Brüning slashed state wages, pensions, and dole benefits while raising taxes → choked consumer demand further"
+          },
+          {
+            "hint": "Presidential decree rule",
+            "bullet": "Reichstag MPs rejected austerity budgets → Brüning governed via Hindenburg’s Article 48 emergency decrees"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1923 inflation trauma",
+            "bullet": "Fear of repeating 1923 hyperinflation stopped Brüning printing money or borrowing to fund public works"
+          },
+          {
+            "hint": "Ending reparations aim",
+            "bullet": "Brüning hoped visible German suffering would convince Allies to cancel reparations → alienated desperate voters instead"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "AUSTERITY SPIRAL",
+            "stem": "Nicknamed the Hunger Chancellor, ____________ slashed wages and dole pay even as registered unemployment hit ____________."
+          },
+          {
+            "badge": "DEEPENED SLUMP",
+            "stem": "Cutting workers’ spending power shrank factory sales further while memories of 1923 blocked deficit ____________."
+          },
+          {
+            "badge": "SIDELINING PARLIAMENT",
+            "stem": "Relying on Hindenburg’s ____________ decrees after March 1930 fatally weakened Reichstag democracy from within."
+          }
+        ],
+        "watch_out": "Do not confuse the two crises—1923 hyperinflation destroyed savings through runaway prices, whereas the 1929–1932 Depression caused falling output and six million unemployed.",
+        "prose_hash": "96766ac7ba",
+        "prose_fp": "a45f0a55",
+        "question_hash": "b488dd8a10"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Rising Communist vote",
+            "bullet": "Jobless urban workers lifted the KPD past 100 Reichstag seats → terrified property owners with revolution"
+          },
+          {
+            "hint": "Street battle chaos",
+            "bullet": "Bloody street brawls between Communist fighters and SA stormtroopers → made Weimar authorities appear impotent"
+          },
+          {
+            "hint": "Mittelstand safeguards",
+            "bullet": "Hitler promised anxious shopkeepers and farmers protection from Marxist confiscation and rival department stores"
+          },
+          {
+            "hint": "Big business backing",
+            "bullet": "Industrialists such as steel magnate Fritz Thyssen feared Bolshevism → channelled vital donations to the Nazis"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Soviet Russia example",
+            "bullet": "Reports of Stalin seizing private farms and factories in Soviet Russia → deepened middle-class anti-communist panic"
+          },
+          {
+            "hint": "Arsonist firefighter tactic",
+            "bullet": "SA stormtroopers fuelled street violence themselves → simultaneously convinced conservative voters only Nazism could restore order"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BOLSHEVIK PANIC",
+            "stem": "Watching the Communist ____________ pass 100 seats and battle in the streets terrified property-owning ____________ families."
+          },
+          {
+            "badge": "TARGETED REASSURANCE",
+            "stem": "Hitler courted small shopkeepers and farmers by pledging to defend ____________ against Marxist seizure."
+          },
+          {
+            "badge": "INDUSTRIALIST FUNDING",
+            "stem": "Shared dread of a Communist rising persuaded wealthy magnates such as ____________ to help finance Nazi campaigns."
+          }
+        ],
+        "watch_out": "Large industrialists remained cautious before January 1933—figures like Fritz Thyssen funded Hitler early, though many tycoons still preferred traditional conservatives until Papen’s deal.",
+        "prose_hash": "b9c47d0b7c",
+        "prose_fp": "132c825d",
+        "question_hash": "201fef0d97"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Work and Bread",
+            "bullet": "Goebbels saturated cities with bold posters and loudspeaker vans promising Work and Bread → countered Brüning’s despair"
+          },
+          {
+            "hint": "Chartered campaign flights",
+            "bullet": "Hitler over Germany flights carried Hitler to four or five cities daily → reached millions face-to-face"
+          },
+          {
+            "hint": "Dynamic saviour cult",
+            "bullet": "Synchronized rallies, banners, and broadcasts projected unstoppable modern energy → cast Hitler as national redeemer"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Audience-specific promises",
+            "bullet": "Goebbels kept promises deliberately flexible → bread for jobless workers, debt relief and tariffs for farmers"
+          },
+          {
+            "hint": "1932 presidential tour",
+            "bullet": "Flying nationwide during spring 1932 Presidential races against Hindenburg → lifted Hitler past 13 million votes"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SATURATION SLOGANS",
+            "stem": "Orchestrated by propaganda chief ____________, posters and loudspeaker vans cut through gloom with the slogan ____________."
+          },
+          {
+            "badge": "AIRBORNE REACH",
+            "stem": "Chartering planes for the ____________ campaign enabled Hitler to address rallies in up to five cities a day."
+          },
+          {
+            "badge": "PROJECTED MOMENTUM",
+            "stem": "Staging disciplined torchlight spectacles made the Nazis look dynamic compared with deadlocked ____________ politicians."
+          }
+        ],
+        "watch_out": "Weimar governments barred Nazis from state radio for most of 1930–1932—Goebbels built momentum mainly via posters, vans, films, newspapers, and airborne rallies.",
+        "prose_hash": "a0de10f129",
+        "prose_fp": "ac81ae6f",
+        "question_hash": "966f89d544"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "July 1932 breakthrough",
+            "bullet": "Anger at Depression misery lifted Nazis from 107 seats to 230 seats and 37.3% in July 1932"
+          },
+          {
+            "hint": "Short of majority",
+            "bullet": "Even 13.4 million votes fell short of an overall 50% Reichstag majority → prevented one-party rule"
+          },
+          {
+            "hint": "Hindenburg's refusal",
+            "bullet": "President Hindenburg despised Hitler as a vulgar corporal → refused to appoint the largest party’s leader"
+          },
+          {
+            "hint": "Anti-Weimar deadlock",
+            "bullet": "Nazis and Communists held over half the seats combined → paralysed parliament and invited palace intrigue"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rejected deputy offer",
+            "bullet": "Hitler refused mere Vice-Chancellorship under Papen in August 1932 → gambled boldly on winning full power"
+          },
+          {
+            "hint": "Presidential appointment power",
+            "bullet": "Under Article 53 only the President appointed the Chancellor → Hindenburg’s aristocratic disdain blocked Hitler"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LARGEST PARTY",
+            "stem": "Capturing 37.3% and ____________ Reichstag seats in July 1932 doubled Nazi strength, yet remained below a ____________."
+          },
+          {
+            "badge": "PRESIDENTIAL SNOBBERY",
+            "stem": "Field Marshal ____________ distrusted SA street thuggery and refused to make a former ____________ Chancellor."
+          },
+          {
+            "badge": "REICHSTAG PARALYSIS",
+            "stem": "Because Nazis and Communists blocked any democratic coalition, real power shifted to Hindenburg’s ____________ circle."
+          }
+        ],
+        "watch_out": "July 1932 was the highest share—37.3%—the Nazis ever won in a free Weimar election; Hitler was never voted straight into the Chancellery by a majority.",
+        "prose_hash": "4d373a4a64",
+        "prose_fp": "8d069048",
+        "question_hash": "4c74343f69"
+      }
+    ],
+    "lesson_2_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Two million lost votes",
+            "bullet": "November 1932 elections cost the Nazis two million votes and 34 seats → dropped tally to 196"
+          },
+          {
+            "hint": "Voter campaign fatigue",
+            "bullet": "Endless 1932 ballots and violent SA thuggery → alienated moderate middle-class voters hoping for calm"
+          },
+          {
+            "hint": "Party financial exhaustion",
+            "bullet": "Four nationwide campaigns in eight months drained NSDAP cash → brought the party near bankruptcy"
+          },
+          {
+            "hint": "Strasser's December rift",
+            "bullet": "Gregor Strasser urged joining a coalition before Nazi votes shrank further → sparked an internal mutiny"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Communist seat gains",
+            "bullet": "KPD support climbed to 100 seats in November 1932 → alarmed conservatives even as Nazi momentum stalled"
+          },
+          {
+            "hint": "Slight economic uptick",
+            "bullet": "Faint signs of autumn economic stabilization and reparations relief → briefly dulled protest voting for Hitler"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NOVEMBER REVERSAL",
+            "stem": "Exhausted by repeated elections and SA violence, voters cut Nazi strength by ____________ votes and ____________ seats."
+          },
+          {
+            "badge": "FINANCIAL STRAIN",
+            "stem": "Non-stop campaigning throughout 1932 pushed NSDAP finances toward ____________ by winter."
+          },
+          {
+            "badge": "INTERNAL SPLIT",
+            "stem": "Fearing the movement had passed its electoral peak, ____________ urged entering a coalition before support evaporated."
+          }
+        ],
+        "watch_out": "Even after losing 34 seats in November 1932, the Nazis with 196 seats remained by far the largest party in the Reichstag—weakened, but still indispensable.",
+        "prose_hash": "7271960975",
+        "prose_fp": "2954514a",
+        "question_hash": "cb89192d80"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Toppling Franz von Papen",
+            "bullet": "Schleicher warned Hindenburg the army could not stop civil war → forced Papen’s Cabinet of Barons out"
+          },
+          {
+            "hint": "Failed Strasser gambit",
+            "bullet": "Hitler forced Strasser to resign rather than become Schleicher’s Vice-Chancellor → denied Schleicher Reichstag votes"
+          },
+          {
+            "hint": "Prussian land reform",
+            "bullet": "Proposing to divide bankrupt Junker estates for jobless workers → infuriated Hindenburg’s East Prussian landlord friends"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Osthilfe subsidy scandal",
+            "bullet": "Investigations into misused Osthilfe farm handouts to Prussian aristocrats → turned Junkers fiercely against Schleicher"
+          },
+          {
+            "hint": "Papen's earlier blunders",
+            "bullet": "Papen had already lifted the SA ban and deposed Prussia’s elected government → strengthened Nazi street power"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BLOCKED COALITION",
+            "stem": "Replacing Papen in December 1932, General ____________ failed to split the Nazis when Hitler silenced ____________."
+          },
+          {
+            "badge": "LANDOWNER BACKLASH",
+            "stem": "Suggesting bankrupt Prussian ____________ be broken up for unemployed settlers outraged aristocratic Junkers."
+          },
+          {
+            "badge": "LOSS OF TRUST",
+            "stem": "Lacking a Reichstag majority and opposed by landowners, Schleicher quickly lost ____________’s backing."
+          }
+        ],
+        "watch_out": "Keep the two conservative chancellors straight—Franz von Papen led the aristocratic Cabinet of Barons from June 1932; General von Schleicher replaced him for just 57 days.",
+        "prose_hash": "731cacaa06",
+        "prose_fp": "87d293e5",
+        "question_hash": "65b1ca972f"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Thirst for revenge",
+            "bullet": "Bitter at Schleicher for engineering his December fall, Franz von Papen plotted to return via Hitler"
+          },
+          {
+            "hint": "Schröder villa talks",
+            "bullet": "Secret 4 January 1933 meeting at banker Kurt von Schröder’s Cologne villa → forged a Hitler-Papen alliance"
+          },
+          {
+            "hint": "Chancellor-deputy bargain",
+            "bullet": "Papen agreed Hitler would become Chancellor with Papen as Vice-Chancellor → linked Nazi seats to Hindenburg"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rescued party finances",
+            "bullet": "Schröder and Ruhr industrialists arranged fresh credit to clear NSDAP debts → saved Hitler from financial ruin"
+          },
+          {
+            "hint": "Complementary weaknesses",
+            "bullet": "Hitler possessed 196 Reichstag seats without palace access; Papen possessed Hindenburg’s personal trust without voters"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RIVALRY & REVENGE",
+            "stem": "Determined to topple rival Chancellor ____________, ousted aristocrat ____________ opened secret negotiations with Hitler."
+          },
+          {
+            "badge": "COLOGNE PACT",
+            "stem": "Meeting on 4 January 1933 at banker ____________’s villa, Papen offered Hitler the ____________ alongside himself as deputy."
+          },
+          {
+            "badge": "FINANCIAL LIFELINE",
+            "stem": "Collusion rescued the Nazis from December’s ____________ while giving Papen mass parliamentary backing."
+          }
+        ],
+        "watch_out": "Hitler reached power when Nazi votes were actually falling—Papen’s personal vendetta against Schleicher rescued Hitler at his moment of greatest financial vulnerability.",
+        "prose_hash": "0f028e5c84",
+        "prose_fp": "8fcab379",
+        "question_hash": "2f7e16ea6e"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Palace inner circle",
+            "bullet": "Papen enlisted Oskar von Hindenburg and Otto Meissner → persuaded the reluctant President behind closed doors"
+          },
+          {
+            "hint": "Outnumbered Nazi ministers",
+            "bullet": "Only three of eleven cabinet seats went to Nazis → eight conservative barons surrounded Hitler"
+          },
+          {
+            "hint": "Squeezed corner boast",
+            "bullet": "Papen boasted conservatives would push Hitler into a corner within two months → fatally underestimated him"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Crucial police posts",
+            "bullet": "Handing Frick the Interior Ministry and Göring Prussian police → gave those three Nazis real armed power"
+          },
+          {
+            "hint": "Refusal of decrees",
+            "bullet": "When Hindenburg refused Schleicher emergency decrees on 28 January → left Hitler-Papen as the sole palace option"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BACKSTAIRS LOBBYING",
+            "stem": "Lobbying inside the palace with Oskar von Hindenburg and Meissner, ____________ wore down the President’s doubts."
+          },
+          {
+            "badge": "CABINET RATIO",
+            "stem": "Elites felt secure because Nazis held just ____________ of eleven cabinet posts against eight conservatives."
+          },
+          {
+            "badge": "FATAL HUBRIS",
+            "stem": "Boasting they had hired Hitler and would squeeze him into a ____________, conservatives overlooked Nazi control of the police."
+          }
+        ],
+        "watch_out": "Counting cabinet heads misled Hindenburg—although Nazis held only three of eleven seats, Hermann Göring’s Prussian post handed Hitler command of Germany’s largest police force.",
+        "prose_hash": "80d91bd98a",
+        "prose_fp": "0da27ca9",
+        "question_hash": "a61aa9d468"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Industrialist petition",
+            "bullet": "Leading bankers and industrialists formally petitioned Hindenburg → urged appointing Hitler to secure anti-communist stability"
+          },
+          {
+            "hint": "Constitutional swearing-in",
+            "bullet": "Hindenburg appointed Hitler legally on 30 January 1933 under Weimar rules → fulfilled the post-1924 legal path"
+          },
+          {
+            "hint": "Brandenburg Gate torches",
+            "bullet": "25,000 uniformed stormtroopers marched by torchlight past the Chancellery → staged a triumphant national revolution"
+          },
+          {
+            "hint": "Ludendorff's dark warning",
+            "bullet": "1923 putsch ally Ludendorff warned Hindenburg that this accursed man would cast Germany into national ruin"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Still constrained initially",
+            "bullet": "On 30 January Hitler remained subject to Hindenburg, the army, and Reichstag → dictatorship took until August 1934"
+          },
+          {
+            "hint": "Ten-year contrast",
+            "bullet": "Where armed coup failed in Munich in 1923, conservative elite intrigue handed Hitler the Chancellery legally"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEGAL APPOINTMENT",
+            "stem": "Backed by elite petitions and conservative intrigue, Hindenburg swore Hitler in legally on ____________ under the ____________."
+          },
+          {
+            "badge": "TORCHLIGHT SPECTACLE",
+            "stem": "That evening, 25,000 stormtroopers paraded through the ____________ to celebrate a revolutionary triumph."
+          },
+          {
+            "badge": "OMINOUS PROPHECY",
+            "stem": "Even former Munich Putsch partner ____________ telegraphed Hindenburg warning Hitler would bring catastrophe."
+          }
+        ],
+        "watch_out": "30 January 1933 made Hitler Chancellor of a conservative-majority coalition, not yet Führer—destroying democracy still required the Reichstag Fire Decree and Enabling Act.",
+        "prose_hash": "33b17a629f",
+        "prose_fp": "0e78d9f1",
+        "question_hash": "3700072be6"
+      }
+    ],
+    "lesson_3_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Lone arson suspect",
+            "bullet": "Dutch communist Marinus van der Lubbe arrested inside → blamed on the entire KPD"
+          },
+          {
+            "hint": "Manufactured coup plot",
+            "bullet": "Hitler and Göring claimed the blaze signalled a nationwide Communist armed insurrection"
+          },
+          {
+            "hint": "Press fear campaign",
+            "bullet": "Nazi papers invented plots to poison water → whipped up panic for a crackdown"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Minority cabinet status",
+            "bullet": "Appointed in January 1933 with only two Nazi ministers → Hitler lacked a Reichstag majority"
+          },
+          {
+            "hint": "Imminent March election",
+            "bullet": "Fresh Reichstag elections scheduled for 5 March → crippling left-wing rivals before polling proved vital"
+          },
+          {
+            "hint": "Middle-class Red fear",
+            "bullet": "Industrialists and middle-class voters already feared Bolshevism after six million unemployed polarised politics"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARSON PRETEXT",
+            "stem": "Seizing upon the arrest of ____________ on 27 February 1933, Hitler and Göring framed the blaze as..."
+          },
+          {
+            "badge": "PUBLIC PANIC",
+            "stem": "By spreading sensational press claims of ____________, Nazi leaders engineered widespread fear to justify..."
+          },
+          {
+            "badge": "ELECTORAL TIMING",
+            "stem": "Occurring days before the ____________, this manufactured Communist scare helped a minority Nazi cabinet..."
+          }
+        ],
+        "watch_out": "Van der Lubbe insisted he acted alone—do not state as fact that the KPD organised the fire, only that Hitler claimed they did.",
+        "prose_hash": "68cd949c20",
+        "prose_fp": "9bad1618",
+        "question_hash": "53d35575e8"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Constitutional emergency power",
+            "bullet": "Hindenburg signed the Reichstag Fire Decree under Article 48 → handed police sweeping emergency powers"
+          },
+          {
+            "hint": "Suspended civil liberties",
+            "bullet": "Abolished free speech, press freedom, and assembly → silenced Communist election campaigning overnight"
+          },
+          {
+            "hint": "Indefinite police detention",
+            "bullet": "Removed habeas corpus protections → police held political suspects indefinitely without charge or trial"
+          },
+          {
+            "hint": "Mass dawn raids",
+            "bullet": "50,000 SA auxiliaries and police jailed over 4,000 KPD officials within forty-eight hours"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Article 48 precedent",
+            "bullet": "Brüning and Papen had normalised presidential decree rule since 1930 → Hindenburg readily signed"
+          },
+          {
+            "hint": "Prussian police grip",
+            "bullet": "Göring controlled Prussia's vast interior ministry → deputised SA stormtroopers as armed state auxiliaries"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEGAL SUSPENSION",
+            "stem": "Signed under ____________ on 28 February, the decree stripped away ____________ and allowed detention without trial."
+          },
+          {
+            "badge": "PHYSICAL CRACKDOWN",
+            "stem": "Backed by 50,000 armed ____________, police raided homes and imprisoned ____________ ahead of the March poll."
+          },
+          {
+            "badge": "LONG-TERM IMPACT",
+            "stem": "Rather than expiring after the election, this emergency decree remained in force to underpin ____________."
+          }
+        ],
+        "watch_out": "The Reichstag Fire Decree did not formally ban the KPD on 28 February—keeping Communist candidates on the ballot split the anti-Nazi vote in March.",
+        "prose_hash": "42f775ea37",
+        "prose_fp": "c1c9f53f",
+        "question_hash": "5f98f53625"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Short of majority",
+            "bullet": "Winning 43.9% in March 1933 left Hitler needing a two-thirds vote to alter the constitution"
+          },
+          {
+            "hint": "Paramilitary intimidation",
+            "bullet": "Jailed KPD deputies were absent while SS and SA guards surrounded Kroll Opera House"
+          },
+          {
+            "hint": "Centre Party bargain",
+            "bullet": "False promises to protect Catholic liberties persuaded the Centre Party → passed 444 to 94"
+          },
+          {
+            "hint": "Four-year dictatorship",
+            "bullet": "Allowed Hitler's cabinet to enact laws for four years without Reichstag or Presidential consent"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Bamberg legal strategy",
+            "bullet": "Fulfilled Hitler's post-Munich Putsch strategy → destroying Weimar democracy legally from inside parliament"
+          },
+          {
+            "hint": "One-party consolidation",
+            "bullet": "Enabled crushing trade unions in May 1933 and outlawing all rival parties in July"
+          },
+          {
+            "hint": "Isolated Social Democrats",
+            "bullet": "Years of bitter KPD hostility toward the SPD left Otto Wels's Social Democrats standing alone"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PARLIAMENTARY BYPASS",
+            "stem": "Passed by 444 votes to 94 at ____________, the Enabling Act empowered Hitler to make laws without ____________."
+          },
+          {
+            "badge": "COERCION AND DECEIT",
+            "stem": "Combining ____________ outside the hall with false assurances to ____________ secured the required two-thirds majority."
+          },
+          {
+            "badge": "ONE-PARTY OUTCOME",
+            "stem": "Once freed from parliamentary scrutiny, Hitler used these powers to abolish ____________ by July 1933."
+          }
+        ],
+        "watch_out": "Do not confuse the February Reichstag Fire Decree, which suspended civil rights via Hindenburg, with the March Enabling Act, which bypassed parliament and Hindenburg.",
+        "prose_hash": "518df0f1df",
+        "prose_fp": "e3adf0ec",
+        "question_hash": "41bc64a1e7"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Second revolution threat",
+            "bullet": "Ernst Röhm led three million SA men and demanded a socialist second revolution"
+          },
+          {
+            "hint": "Military rivalry",
+            "bullet": "Röhm wanted to merge the regular army into the SA → alarmed Blomberg and Hindenburg"
+          },
+          {
+            "hint": "June blood purge",
+            "bullet": "SS squads executed Röhm, Schleicher, Strasser, and roughly 400 rivals → won army gratitude"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Big business backing",
+            "bullet": "Industrialists who funded Hitler at the Schroeder meeting hated Röhm's anti-capitalist street radicalism"
+          },
+          {
+            "hint": "Treaty army cap",
+            "bullet": "Versailles capped the Reichswehr at 100,000 soldiers → outnumbered thirty-to-one by unruly stormtroopers"
+          },
+          {
+            "hint": "Rise of Himmler",
+            "bullet": "Eliminating SA leadership elevated Himmler's disciplined SS as the regime's premier terror organisation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RADICAL CHALLENGE",
+            "stem": "Commanding three million stormtroopers, ____________ threatened Hitler's alliance with conservative elites by demanding ____________."
+          },
+          {
+            "badge": "ARMY ULTIMATUM",
+            "stem": "Anxious to preserve its independence, the regular army led by ____________ pressured Hitler to curb SA ambitions."
+          },
+          {
+            "badge": "POLITICAL PAYOFF",
+            "stem": "Ordering SS squads to execute ____________ on 30 June 1934 silenced internal rivals and secured ____________."
+          }
+        ],
+        "watch_out": "The Night of the Long Knives targeted internal SA leaders and conservative rivals like Schleicher—do not confuse it with Kristallnacht against Jews in 1938.",
+        "prose_hash": "c5794f212f",
+        "prose_fp": "fde872fb",
+        "question_hash": "3fbc8ce5fd"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Final check removed",
+            "bullet": "President Hindenburg died on 2 August 1934 → removed the last figure able to dismiss Hitler"
+          },
+          {
+            "hint": "Merged state offices",
+            "bullet": "Cabinet law combined President and Chancellor → Hitler became sole Führer and supreme commander"
+          },
+          {
+            "hint": "Personal loyalty pledge",
+            "bullet": "Blomberg's army oath bound every soldier unconditionally to Adolf Hitler personally, not the constitution"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Prussian officer code",
+            "bullet": "Strict Prussian military honour made breaking a sworn personal oath unthinkable for conservative officers"
+          },
+          {
+            "hint": "August plebiscite vote",
+            "bullet": "Heavy propaganda won 90% approval in the 19 August plebiscite → lent pseudo-democratic legitimacy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CONSTITUTIONAL VACUUM",
+            "stem": "Within hours of ____________ dying on 2 August 1934, Hitler merged the presidency and chancellorship into ____________."
+          },
+          {
+            "badge": "UNCONDITIONAL ALLEGIANCE",
+            "stem": "Crucially, Defence Minister Blomberg rewrote the military oath so troops pledged obedience to ____________ rather than ____________."
+          },
+          {
+            "badge": "LOCKED IN LOYALTY",
+            "stem": "Backed by an August ____________ and military honour, the armed forces could no longer act as an independent check."
+          }
+        ],
+        "watch_out": "Soldiers previously swore loyalty to the Weimar Constitution and Fatherland—shifting the oath to Hitler personally trapped officers by their own honour code.",
+        "prose_hash": "666ce4d49e",
+        "prose_fp": "e43972fe",
+        "question_hash": "35d1a28fc9"
+      }
+    ],
+    "lesson_3_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Rapid elite expansion",
+            "bullet": "Himmler expanded the SS from a small bodyguard into a 240,000-strong ideological force by 1939"
+          },
+          {
+            "hint": "Racial ancestry vetting",
+            "bullet": "Recruits proved pure Aryan ancestry to 1750 → trained in fanatical obedience above civil law"
+          },
+          {
+            "hint": "Permanent camp network",
+            "bullet": "Opened Dachau in March 1933 → ran concentration camps holding political prisoners in protective custody"
+          },
+          {
+            "hint": "Internal intelligence arm",
+            "bullet": "Heydrich's SD security service monitored public opinion and hunted suspected dissidents across the Reich"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Post-Röhm monopoly",
+            "bullet": "Crushing Ernst Röhm's SA in June 1934 freed the SS to monopolise Nazi policing"
+          },
+          {
+            "hint": "Fire Decree foundation",
+            "bullet": "Indefinite protective custody rested legally on the February 1933 suspension of habeas corpus"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ELITE TRANSFORMATION",
+            "stem": "Under ____________, the black-uniformed SS grew into a 240,000-man elite vetted for ____________."
+          },
+          {
+            "badge": "CAMP SYSTEM",
+            "stem": "Starting with ____________ in March 1933, SS guards detained political opponents indefinitely under ____________."
+          },
+          {
+            "badge": "SURVEILLANCE REACH",
+            "stem": "Working alongside camp guards, ____________ led the SD to track public mood and root out dissent."
+          }
+        ],
+        "watch_out": "Distinguish the brown-shirted SA street brawlers side-lined after 1934 from Himmler's disciplined black-uniformed SS who ran the police state and camps.",
+        "prose_hash": "effc3e9c0e",
+        "prose_fp": "227a723a",
+        "question_hash": "f9b60062fd"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Small force paradox",
+            "bullet": "Only 32,000 Gestapo agents policed 70 million Germans → relied on voluntary civilian denunciations"
+          },
+          {
+            "hint": "Above judicial review",
+            "bullet": "Operated with legal immunity → tapped phones, opened mail, and tortured suspects without oversight"
+          },
+          {
+            "hint": "Fear of informers",
+            "bullet": "Threat of trial-free protective custody in Dachau bred mutual suspicion → paralysed open resistance"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Local street wardens",
+            "bullet": "Neighbourhood Block Wardens snooped on households and reported anti-Nazi jokes or missed salutes"
+          },
+          {
+            "hint": "Self-policing society",
+            "bullet": "Ordinary citizens often denounced neighbours over personal grudges → made the Gestapo seem omnipresent"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MYTH OF OMNIPRESENCE",
+            "stem": "Despite numbering only ____________ for 70 million citizens, the Gestapo relied heavily on ____________ from neighbours and Block Wardens."
+          },
+          {
+            "badge": "UNCHECKED POWERS",
+            "stem": "Operating entirely above ____________, agents used wiretaps, torture, and ____________ to lock suspects in camps like Dachau."
+          },
+          {
+            "badge": "PSYCHOLOGICAL EFFECT",
+            "stem": "Constant dread of unseen informers fostered mutual suspicion that ____________ before opposition could organise."
+          }
+        ],
+        "watch_out": "Avoid claiming a Gestapo agent stood on every street corner—with just 32,000 officers, terror worked mainly through civilian informers and fear.",
+        "prose_hash": "a150b11579",
+        "prose_fp": "f35a9bb6",
+        "question_hash": "dbf2c0cfa1"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Mandatory legal league",
+            "bullet": "Judges had to join the Nazi lawyers' league → interpreted laws by racial ideology"
+          },
+          {
+            "hint": "Special treason tribunal",
+            "bullet": "Hitler created the People's Court in 1934 under fanatics like Roland Freisler for treason"
+          },
+          {
+            "hint": "Rigged courtroom rules",
+            "bullet": "Secret hearings lacked juries, independent defence, or appeal rights → delivered thousands of death sentences"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Weimar judicial bias",
+            "bullet": "Conservative Weimar judges already favoured nationalists, shown by Hitler's lenient 1924 Munich treason sentence"
+          },
+          {
+            "hint": "Civil Service purge",
+            "bullet": "April 1933 Civil Service Act had already dismissed Jewish and democratic judges from German benches"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAPTURED JUDICIARY",
+            "stem": "Forcing all magistrates into ____________ ensured verdicts served Nazi racial goals rather than impartial law."
+          },
+          {
+            "badge": "PEOPLE'S COURT",
+            "stem": "Established in 1934, the ____________ tried political treason in secret without ____________ or appeal rights."
+          },
+          {
+            "badge": "DEATH OF LEGALITY",
+            "stem": "Presided over by fanatics such as ____________, courts became instruments of state murder rather than protections for citizens."
+          }
+        ],
+        "watch_out": "German courts were not abolished altogether—instead, existing judges and the new People's Court twisted legal procedures into weapons of Nazi terror.",
+        "prose_hash": "ae376dc3a0",
+        "prose_fp": "ef1b7eb7",
+        "question_hash": "120e385b71"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Initial July bargain",
+            "bullet": "July 1933 Concordat traded Centre Party dissolution and clerical neutrality for protected Catholic schools"
+          },
+          {
+            "hint": "Broken treaty promises",
+            "bullet": "Once secure, Hitler disbanded Catholic youth leagues, shut parochial schools, and removed classroom crucifixes"
+          },
+          {
+            "hint": "Clerical smear trials",
+            "bullet": "Gestapo censored Catholic press and staged priest show trials on currency and morality charges"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rival foreign loyalty",
+            "bullet": "Transnational Catholic allegiance to Pope Pius XI in Rome clashed with totalitarian loyalty to Hitler"
+          },
+          {
+            "hint": "Youth monopoly drive",
+            "bullet": "Baldur von Schirach demanded all teenagers enter the Hitler Youth without competing Catholic clubs"
+          },
+          {
+            "hint": "Papal protest letter",
+            "bullet": "Systematic breaches provoked Pope Pius XI's 1937 encyclical Mit brennender Sorge condemning Nazi racism"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TACTICAL COMPROMISE",
+            "stem": "Signed in July 1933 to neutralise ____________, the Concordat initially promised Rome protection for ____________."
+          },
+          {
+            "badge": "TOTALITARIAN RIVALRY",
+            "stem": "Because totalitarian indoctrination tolerated no rival loyalties, the regime soon ____________ and removed crucifixes from classrooms."
+          },
+          {
+            "badge": "SMEAR CAMPAIGNS",
+            "stem": "Staging public show trials of priests on ____________ charges aimed to discredit Catholic moral authority among families."
+          }
+        ],
+        "watch_out": "Signing the 1933 Concordat was a temporary tactical manoeuvre to neutralise Catholic political opposition, not genuine Nazi respect for Catholicism.",
+        "prose_hash": "f5c4b29b7a",
+        "prose_fp": "988c6271",
+        "question_hash": "ed153182aa"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Centralised Nazi church",
+            "bullet": "Hitler merged Protestant churches into a Reich Church under Reich Bishop Ludwig Müller"
+          },
+          {
+            "hint": "German Christian radicals",
+            "bullet": "German Christians hung swastikas beside altars and tried purging the Jewish Old Testament"
+          },
+          {
+            "hint": "Racial clergy purge",
+            "bullet": "Enforced the Aryan Paragraph sacking pastors of Jewish descent → violated Christian baptism doctrine"
+          },
+          {
+            "hint": "Confessional split",
+            "bullet": "Martin Niemöller and Dietrich Bonhoeffer founded the Confessional Church in 1934 → 800 pastors arrested"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Protestant regionalism",
+            "bullet": "Forty million Protestants were historically split into regional churches → resented forced Berlin centralisation"
+          },
+          {
+            "hint": "Theological focus",
+            "bullet": "Most Confessional pastors defended scripture and church autonomy rather than plotting democratic regime change"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PAGAN INTRUSION",
+            "stem": "Appointing ____________ as Reich Bishop and placing swastikas on altars alienated orthodox Protestants across Germany."
+          },
+          {
+            "badge": "DOCTRINAL CLASH",
+            "stem": "Enforcing the ____________ against Jewish-born clergy and attacking the Old Testament directly contradicted core Christian scripture."
+          },
+          {
+            "badge": "CONFESSIONAL RESPONSE",
+            "stem": "Led by ____________ and Dietrich Bonhoeffer, dissident clergy formed the ____________ in May 1934 despite camp arrests."
+          }
+        ],
+        "watch_out": "Do not merge the Reich Church and Confessional Church—Ludwig Müller's Reich Church was pro-Nazi, whereas Niemöller's Confessional Church opposed Nazification.",
+        "prose_hash": "553bd51de2",
+        "prose_fp": "bdb0a794",
+        "question_hash": "3215ce768e"
+      }
+    ],
+    "lesson_3_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Centralised propaganda hub",
+            "bullet": "Goebbels led the March 1933 Propaganda Ministry → won active loyalty alongside police terror"
+          },
+          {
+            "hint": "Seven cultural branches",
+            "bullet": "Reich Chamber of Culture controlled press, radio, literature, art, music, theatre, and cinema"
+          },
+          {
+            "hint": "Compulsory membership vetting",
+            "bullet": "Mandatory membership excluded Jews, socialists, and modernists → stripped non-conformists of their livelihood"
+          }
+        ],
+        "context": [
+          {
+            "hint": "October Editor's Law",
+            "bullet": "1933 Editor's Law held newspaper editors personally liable for printing unapproved or critical articles"
+          },
+          {
+            "hint": "Pre-1933 campaign mastery",
+            "bullet": "Built on Goebbels's slick 1930–32 election campaigns using aircraft tours, bold posters, and film"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CARROT AND STICK",
+            "stem": "Recognising that terror alone could not secure hearts and minds, ____________ established a central ministry in March 1933."
+          },
+          {
+            "badge": "OCCUPATIONAL BAN",
+            "stem": "Divided into seven branches, the ____________ barred ____________ from working unless vetted for ideological loyalty."
+          },
+          {
+            "badge": "UNIFORM MESSAGE",
+            "stem": "Through daily ministry briefings and strict censorship, independent journalism gave way to ____________."
+          }
+        ],
+        "watch_out": "Propaganda and terror worked together as twin pillars—never argue Goebbels relied purely on persuasion without Gestapo censorship backing him up.",
+        "prose_hash": "e54de39bcc",
+        "prose_fp": "113a0fd7",
+        "question_hash": "c6271db307"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Subsidised low price",
+            "bullet": "Mass-produced at just 76 marks → brought state broadcasts into ordinary working-class homes"
+          },
+          {
+            "hint": "Short-range receiver",
+            "bullet": "Engineered with limited reception range and legal bans → blocked foreign stations like the BBC"
+          },
+          {
+            "hint": "Record European reach",
+            "bullet": "Over 70% of German households owned radios by 1939 → Europe's highest ownership rate"
+          },
+          {
+            "hint": "Inescapable public audio",
+            "bullet": "6,000 public loudspeakers broadcast speeches across squares, cafés, and factories → prevented tuning out"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Spoken oratorical power",
+            "bullet": "Live audio carried Hitler's emotional vocal charisma into living rooms far better than print"
+          },
+          {
+            "hint": "Communal warden checks",
+            "bullet": "Local Block Wardens organised communal listening for major Führer speeches and noted absentees"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MASS ACCESSIBILITY",
+            "stem": "Priced affordably at ____________, the People's Receiver lifted German household radio ownership past ____________ by 1939."
+          },
+          {
+            "badge": "TECHNICAL CENSORSHIP",
+            "stem": "Deliberately built with ____________ alongside prison penalties for foreign listening, sets shut out stations like the BBC."
+          },
+          {
+            "badge": "COMMUNAL REACH",
+            "stem": "Combined with 6,000 ____________ in workplaces and streets, Nazi broadcasts became unavoidable in daily life."
+          }
+        ],
+        "watch_out": "Owning a Volksempfänger did not just entertain families—its deliberately restricted range trapped listeners inside an echo chamber free from foreign news.",
+        "prose_hash": "a4ee9e7094",
+        "prose_fp": "bfcf669d",
+        "question_hash": "e2cb9be78a"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Scale of Nuremberg",
+            "bullet": "Up to 500,000 uniformed marchers filled Zeppelin Field every September → projected unstoppable national unity"
+          },
+          {
+            "hint": "Searchlight spectacle",
+            "bullet": "Albert Speer's 152 anti-aircraft searchlights formed a Cathedral of Light → inspired quasi-religious awe"
+          },
+          {
+            "hint": "Cinematic amplification",
+            "bullet": "Leni Riefenstahl's film Triumph of the Will broadcast Hitler's saviour myth to millions in cinemas"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Weimar chaos contrast",
+            "bullet": "Disciplined torchlight order deliberately contrasted with memories of fractious Weimar coalitions and street brawls"
+          },
+          {
+            "hint": "Crowd conformity pressure",
+            "bullet": "Submerging individuals inside chanting crowds made private doubt feel isolated, futile, and dangerous"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CROWD IMMERSION",
+            "stem": "Gathering up to ____________ uniformed participants at Nuremberg submerged individual doubts beneath collective belonging."
+          },
+          {
+            "badge": "THEATRICAL DESIGN",
+            "stem": "Architect ____________ encircled Zeppelin Field with 152 searchlights to create an awe-inspiring ____________."
+          },
+          {
+            "badge": "NATIONWIDE REACH",
+            "stem": "Even Germans unable to attend experienced the Führer cult through ____________'s propaganda film Triumph of the Will."
+          }
+        ],
+        "watch_out": "Rallies did not merely preach dry policy details—Speer and Riefenstahl used light, rhythm, and scale to turn politics into emotional quasi-religion.",
+        "prose_hash": "43ea264310",
+        "prose_fp": "6e48dc5c",
+        "question_hash": "589d3c35e2"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Modern stadium showcase",
+            "bullet": "Built a 100,000-seat Berlin stadium filmed with television cameras → showcased modern German efficiency"
+          },
+          {
+            "hint": "Sanitised street facade",
+            "bullet": "Temporarily hid anti-Jewish signs, paused SA violence, and allowed hotel jazz to reassure foreigners"
+          },
+          {
+            "hint": "Medal table triumph",
+            "bullet": "Germany won 33 gold medals → Goebbels's press hailed national rebirth and Aryan athleticism"
+          },
+          {
+            "hint": "Racial myth punctured",
+            "bullet": "African American athlete Jesse Owens won four golds and broke records → undermined Aryan supremacy"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rhineland diplomacy",
+            "bullet": "Hitler had remilitarised the Rhineland in March 1936 → needed a peaceful facade to deter intervention"
+          },
+          {
+            "hint": "Foreign boycott pressure",
+            "bullet": "Calls in America and Britain to boycott Berlin after the 1935 Nuremberg Laws forced temporary restraint"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DIPLOMATIC CAMOUFLAGE",
+            "stem": "Hosting foreign journalists in August 1936, officials temporarily hid ____________ to disguise Nazi persecution."
+          },
+          {
+            "badge": "DOMESTIC PRESTIGE",
+            "stem": "Topping the medal table with ____________ inside a vast 100,000-seat arena bolstered pride in national recovery."
+          },
+          {
+            "badge": "UNINTENDED BACKFIRE",
+            "stem": "However, four gold medals won by ____________ publicly contradicted Nazi claims of Aryan biological superiority."
+          }
+        ],
+        "watch_out": "Awarding Berlin the 1936 Games happened in 1931 under Weimar—the Nazis inherited the fixture and exploited it to mask rearmament and antisemitism.",
+        "prose_hash": "53eccf11cb",
+        "prose_fp": "b9fe9854",
+        "question_hash": "97baa9a8ae"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "University book bonfires",
+            "bullet": "May 1933 student burnings destroyed 20,000 books by Jewish and Marxist thinkers like Einstein and Freud"
+          },
+          {
+            "hint": "Ridiculing Weimar painters",
+            "bullet": "1937 Degenerate Art exhibition mocked Otto Dix and Paul Klee as corrupting German morale"
+          },
+          {
+            "hint": "Banned cosmopolitan styles",
+            "bullet": "Outlawed functional Bauhaus design and American jazz as un-German, Jewish, or Black cultural threats"
+          },
+          {
+            "hint": "Approved Aryan themes",
+            "bullet": "Replaced modernism with heroic soldiers, fertile peasant mothers, and Speer's monumental neoclassical stone buildings"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Weimar culture backlash",
+            "bullet": "Tapped deep conservative resentment against Golden Twenties cabaret, Neue Sachlichkeit war critiques, and modernism"
+          },
+          {
+            "hint": "Anti-war art threat",
+            "bullet": "Weimar artists like Otto Dix depicted crippled trench veterans → clashed directly with Nazi militarism"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ERASING WEIMAR",
+            "stem": "Starting with ____________ in May 1933, Goebbels purged Jewish, Marxist, and pacifist thinkers from German libraries."
+          },
+          {
+            "badge": "MOCKING MODERNISM",
+            "stem": "Mounting the 1937 ____________ exhibition alongside bans on ____________ framed Weimar experimentation as racial decay."
+          },
+          {
+            "badge": "IDEOLOGICAL REPLACEMENT",
+            "stem": "Instead, state-approved painting and Speer's ____________ promoted military heroism, family fertility, and eternal Reich power."
+          }
+        ],
+        "watch_out": "Munich's 1937 Degenerate Art exhibition actually drew over two million curious visitors—far more than the official Nazi art gallery nearby.",
+        "prose_hash": "2349e76eeb",
+        "prose_fp": "45bffcc7",
+        "question_hash": "ccc1dfe565"
+      }
+    ],
+    "lesson_3_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Jobs and pride",
+            "bullet": "Unemployment fell from six million below half a million → won genuine gratitude alongside restored pride"
+          },
+          {
+            "hint": "Subsidised worker perks",
+            "bullet": "Cheap KdF holidays and leisure schemes gave workers visible rewards for outward compliance"
+          },
+          {
+            "hint": "Fear of wardens",
+            "bullet": "Snooping Block Wardens and camp threats kept dissent down to private grumbling and jokes"
+          }
+        ],
+        "context": [
+          {
+            "hint": "No legal opposition",
+            "bullet": "Unions and rival parties were crushed in 1933 → left discontented citizens zero legal outlet"
+          },
+          {
+            "hint": "Versailles grievances reversed",
+            "bullet": "Tearing up hated Versailles restrictions satisfied nationalist voters who previously despised Weimar weakness"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GENUINE APPROVAL",
+            "stem": "According to exiled Sopade reports, falling ____________ and perks like ____________ earned real working-class acceptance."
+          },
+          {
+            "badge": "COERCIVE DETERRENT",
+            "stem": "Where enthusiasm lacked, fear of ____________ and Gestapo camps deterred citizens from risking open protest."
+          },
+          {
+            "badge": "PRIVATE DISSENT",
+            "stem": "Consequently, everyday dissatisfaction stayed confined to ____________ rather than organised political rebellion."
+          }
+        ],
+        "watch_out": "Distinguish active resistance aimed at toppling Hitler from everyday grumbling—telling anti-Nazi jokes in private was non-conformity, not organised revolt.",
+        "prose_hash": "2024d59bc4",
+        "prose_fp": "fcb5f926",
+        "question_hash": "5e9b1bcfd4"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Exiled Prague hub",
+            "bullet": "Exiled SPD Sopade leaders in Prague gathered courier mood reports on life inside Nazi Germany"
+          },
+          {
+            "hint": "Disguised underground booklets",
+            "bullet": "Smuggled miniature papers and Tarnschriften pamphlets hidden inside soap wrappers and classic book covers"
+          },
+          {
+            "hint": "Workplace disruption",
+            "bullet": "Secret KPD and SPD factory cells staged work slow-downs, sabotage, and anti-rearmament leaflet drops"
+          },
+          {
+            "hint": "Infiltration and division",
+            "bullet": "Socialist-communist distrust and Gestapo informers enabled People's Court trials that shattered cells by 1938"
+          }
+        ],
+        "context": [
+          {
+            "hint": "1933 leadership arrests",
+            "bullet": "Mass arrests after the Reichstag Fire had already stripped the KPD and SPD of experienced leaders"
+          },
+          {
+            "hint": "Legacy of 1919",
+            "bullet": "Bitter memories of 1919 Spartacist bloodshed prevented Socialists and Communists uniting underground"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CROSS-BORDER SMUGGLING",
+            "stem": "Operating from exile in ____________, Social Democrats smuggled disguised ____________ across the border via couriers."
+          },
+          {
+            "badge": "INDUSTRIAL DEFIANCE",
+            "stem": "Inside arms plants, underground KPD and SPD cells risked execution to organise ____________."
+          },
+          {
+            "badge": "SHATTERED BY 1938",
+            "stem": "Yet persistent ____________ combined with Gestapo infiltration allowed the regime to break most networks before war."
+          }
+        ],
+        "watch_out": "Left-wing underground cells kept anti-Nazi ideas alive, yet fierce SPD-KPD rivalry and Gestapo arrests prevented them threatening Hitler's grip on power.",
+        "prose_hash": "38f5c9d48f",
+        "prose_fp": "0712f4ca",
+        "question_hash": "1a91e05bd1"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Resenting compulsory drill",
+            "bullet": "Compulsory Hitler Youth regimentation from 1936 alienated working-class Rhineland teenagers aged fourteen to seventeen"
+          },
+          {
+            "hint": "Mixed-gender freedom",
+            "bullet": "Boys and girls wore check shirts and white edelweiss badges → camped freely together at weekends"
+          },
+          {
+            "hint": "Street brawls",
+            "bullet": "Sang banned parodies, painted anti-Nazi slogans, and ambushed Hitler Youth patrols across industrial cities"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Factory school-leavers",
+            "bullet": "Working-class youths left school at fourteen for exhausting factory shifts → resented evening HJ orders"
+          },
+          {
+            "hint": "Pre-war punishment limits",
+            "bullet": "Before 1939, police used beatings and head-shaving rather than executions to avoid alienating working families"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RESENTING REGIMENTATION",
+            "stem": "After Hitler Youth drill turned compulsory from ____________, teenagers in Rhineland cities like ____________ formed rival gangs."
+          },
+          {
+            "badge": "SUBCULTURAL IDENTITY",
+            "stem": "Rejecting single-sex military uniforms, boys and girls mixed freely wearing ____________ and camping unchaperoned."
+          },
+          {
+            "badge": "ACTIVE CLASHES",
+            "stem": "Beyond hiking, Pirates painted anti-regime graffiti and physically ____________, prompting Gestapo round-ups."
+          }
+        ],
+        "watch_out": "Pre-1939 Edelweiss Pirates resented authoritarian youth control and fought HJ patrols—their public hanging for wartime resistance in Cologne happened later in 1944.",
+        "prose_hash": "3f4cf82dc7",
+        "prose_fp": "d4bf90b4",
+        "question_hash": "3624ea45f1"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Affluent urban base",
+            "bullet": "Middle- and upper-class teens in Hamburg and Berlin had money for gramophones and records"
+          },
+          {
+            "hint": "Banned American swing",
+            "bullet": "Danced to banned jazz by Benny Goodman and Louis Armstrong → rejected Volkisch cultural rules"
+          },
+          {
+            "hint": "Inclusive counter-style",
+            "bullet": "Wore English tweed, long hair, and makeup while welcoming Jewish friends → provoked Gestapo raids"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Racial slur on jazz",
+            "bullet": "Goebbels banned American swing as degenerate Jewish-Black music corrupting Aryan military discipline"
+          },
+          {
+            "hint": "Class contrast",
+            "bullet": "Unlike working-class Pirates fighting on streets, Swing Youth rebelled culturally inside private urban clubs"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "AFFLUENT SUBCULTURE",
+            "stem": "Drawn mainly from ____________ families in cities like Hamburg, Swing Youth rebelled through lifestyle rather than politics."
+          },
+          {
+            "badge": "CULTURAL REJECTION",
+            "stem": "Listening to banned records by ____________ and wearing ____________ mocked Nazi ideals of uniform Aryan discipline."
+          },
+          {
+            "badge": "RACIAL DEFIANCE",
+            "stem": "Accepting ____________ into illegal dance clubs infuriated Himmler, triggering Gestapo closures and camp detentions."
+          }
+        ],
+        "watch_out": "Exam questions frequently contrast youth groups: Edelweiss Pirates were working-class street hikers, whereas Swing Youth were middle-class urban jazz fans.",
+        "prose_hash": "13553d97b3",
+        "prose_fp": "3c7b5b2a",
+        "question_hash": "3e5b036c0f"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Fear of martyrdom",
+            "bullet": "Executing famous clergy risked sparking mass outrage among millions of loyal Christian voters and soldiers"
+          },
+          {
+            "hint": "Niemöller's confinement",
+            "bullet": "Confined Pastor Niemöller in Sachsenhausen and Dachau from 1937 as Hitler's prisoner rather than executing him"
+          },
+          {
+            "hint": "Smuggled papal letter",
+            "bullet": "Pope Pius XI smuggled Mit brennender Sorge into Catholic pulpits in 1937 without facing open rupture"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Deep religious allegiance",
+            "bullet": "Roughly 95% of Germans belonged to Protestant or Catholic churches → churchgoing outweighed party membership"
+          },
+          {
+            "hint": "Non-revolutionary aims",
+            "bullet": "Pre-war church critics mostly defended religious autonomy rather than calling to overthrow the Nazi state"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FEAR OF BACKLASH",
+            "stem": "Fearing that Christian martyrs would alienate ____________, Hitler avoided executing prominent pre-war churchmen."
+          },
+          {
+            "badge": "CONTAINMENT STRATEGY",
+            "stem": "Instead of a death sentence, Confessing Church leader ____________ was held in ____________ from July 1937."
+          },
+          {
+            "badge": "CATHOLIC PROTEST",
+            "stem": "Even when Pope Pius XI had ____________ read from pulpits in 1937, the regime relied on arrests and censorship."
+          }
+        ],
+        "watch_out": "Dietrich Bonhoeffer's Finkenwalde seminary was shut in 1937, yet his execution came in April 1945 during World War Two—keep exam answers strictly within 1933–39.",
+        "prose_hash": "87b658e88d",
+        "prose_fp": "065d6133",
+        "question_hash": "ae5c501155"
+      }
+    ],
+    "lesson_4_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Professional dismissals",
+            "bullet": "Barred women from serving as judges, lawyers, and senior civil servants from 1933"
+          },
+          {
+            "hint": "University cap",
+            "bullet": "Capped female university entry at 10% → blocked young women entering graduate professions"
+          },
+          {
+            "hint": "Domestic training league",
+            "bullet": "Gertrud Scholtz-Klink's six-million-strong Nazi Women's League taught cooking, thrift, and infant care"
+          },
+          {
+            "hint": "Traditional dress code",
+            "bullet": "Preached Kinder, Küche, Kirche alongside unpainted faces, braided hair, and traditional long skirts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Weimar New Woman",
+            "bullet": "Directly reversed Weimar freedoms where women voted, won 10% of Reichstag seats, and entered professions"
+          },
+          {
+            "hint": "Vacancies for men",
+            "bullet": "Pushing married women out of offices freed scarce vacancies for unemployed men during the Depression"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAREER EXCLUSION",
+            "stem": "Reversing Weimar advances, laws from 1933 dismissed women as ____________ and capped female university intake at ____________."
+          },
+          {
+            "badge": "DOMESTIC TRAINING",
+            "stem": "Under Reich Women's Leader ____________, six million members learned ____________ aligned with Kinder, Küche, Kirche."
+          },
+          {
+            "badge": "CULTURAL POLICING",
+            "stem": "Propaganda also attacked cosmopolitan fashion, demanding ____________ instead of cosmetics, trousers, or slimming."
+          }
+        ],
+        "watch_out": "Gertrud Scholtz-Klink held the title Reich Women's Leader, yet she had zero cabinet power—her role was enforcing male Nazi policy on women.",
+        "prose_hash": "e826c01fca",
+        "prose_fp": "0a498536",
+        "question_hash": "b8b646d512"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Generous furniture vouchers",
+            "bullet": "June 1933 Marriage Law gave Aryan newlyweds interest-free 1,000-mark furniture loan coupons"
+          },
+          {
+            "hint": "Job-quitting condition",
+            "bullet": "Brides had to leave paid work → vacated jobs for unemployed men and cut official figures"
+          },
+          {
+            "hint": "Childbirth debt relief",
+            "bullet": "Each child born cancelled 25% of the loan → four children wiped out the entire debt"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Demographic decline fear",
+            "bullet": "German annual births had halved between 1900 and 1933 → threatened future Wehrmacht troop numbers"
+          },
+          {
+            "hint": "Tax surcharges",
+            "bullet": "Childless couples and unmarried adults paid extra income taxes that helped fund marriage loans"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DUAL ECONOMIC GOAL",
+            "stem": "Enacted in June 1933, interest-free ____________ loans required brides to ____________, instantly trimming male unemployment."
+          },
+          {
+            "badge": "REPRODUCTIVE INCENTIVE",
+            "stem": "Because each baby wrote off ____________ of the debt, bearing ____________ cancelled repayment completely."
+          },
+          {
+            "badge": "FISCAL PRESSURE",
+            "stem": "At the same time, childless households faced ____________ to penalise small families."
+          }
+        ],
+        "watch_out": "Marriage loans were issued as store vouchers for household goods rather than cash—stimulating German furniture factories while boosting births.",
+        "prose_hash": "c1e144becb",
+        "prose_fp": "141d53d6",
+        "question_hash": "d29a351d8d"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Tiered motherhood medals",
+            "bullet": "Mother's Cross awarded bronze for four children, silver for six, and gold for eight"
+          },
+          {
+            "hint": "Public civic honours",
+            "bullet": "Gold medal mothers won reserved seats and compulsory salutes from Hitler Youth members"
+          },
+          {
+            "hint": "SS maternity homes",
+            "bullet": "Himmler's 1935 Lebensborn programme encouraged unmarried Nordic women to bear children by SS officers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Future war manpower",
+            "bullet": "Expanding the pure Aryan birth rate aimed to supply millions of soldiers for eastern conquest"
+          },
+          {
+            "hint": "Banned birth control",
+            "bullet": "Alongside positive honours, authorities closed contraception clinics and imposed harsh penalties on Aryan abortions"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CIVIC PRESTIGE",
+            "stem": "Presented annually on Hitler's mother's birthday, the ____________ rewarded mothers of four, six, and eight children."
+          },
+          {
+            "badge": "UNMARRIED BREEDING",
+            "stem": "Going beyond traditional marriage morality, Himmler founded ____________ clinics in 1935 so unmarried Aryan women could bear SS children."
+          },
+          {
+            "badge": "POPULATION GOAL",
+            "stem": "Together, public honours and SS maternity homes treated female fertility as a racial duty to ____________."
+          }
+        ],
+        "watch_out": "Lebensborn before 1939 was not a forced brothel—it began as secret SS maternity homes shielding unmarried racially vetted mothers from social stigma.",
+        "prose_hash": "b1408d6039",
+        "prose_fp": "985f2913",
+        "question_hash": "2a33c01a41"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Genetic Health Courts",
+            "bullet": "July 1933 Hereditary Health Law set up special courts ordering compulsory sterilisation"
+          },
+          {
+            "hint": "Targeted conditions",
+            "bullet": "Targeted hereditary blindness, deafness, epilepsy, schizophrenia, and severe alcoholism → barred deemed-unfit births"
+          },
+          {
+            "hint": "Scale and marriage checks",
+            "bullet": "Over 400,000 citizens forcibly sterilised, while the 1935 Marital Health Law required fitness certificates"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Anti-natalist flipside",
+            "bullet": "Pro-natalist loans and medals applied solely to healthy Aryans → eugenics ruthlessly blocked non-preferred births"
+          },
+          {
+            "hint": "Welfare burden propaganda",
+            "bullet": "School maths textbooks and posters branded disabled citizens unproductive burdens draining national tax revenue"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEGAL COMPULSION",
+            "stem": "Under the July 1933 ____________, Genetic Health Courts ordered forced sterilisation for conditions such as ____________."
+          },
+          {
+            "badge": "HUMAN TOLL",
+            "stem": "More than ____________ German citizens—disproportionately working-class—lost their right to have children against their will."
+          },
+          {
+            "badge": "MARRIAGE SCREENING",
+            "stem": "Tightening biological control further, the 1935 ____________ demanded medical fitness certificates before couples could wed."
+          }
+        ],
+        "watch_out": "Nazi family policy was not universally pro-birth—it boosted healthy Aryan births while forcibly sterilising over 400,000 disabled or deemed-unfit Germans.",
+        "prose_hash": "460d33262a",
+        "prose_fp": "38094a9f",
+        "question_hash": "d22824fed3"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Conscription labour shortage",
+            "bullet": "Rapid rearmament and male conscription under the 1936 Four-Year Plan starved factories of workers"
+          },
+          {
+            "hint": "Loan rules relaxed",
+            "bullet": "Marriage-loan wives were allowed back into paid jobs in 1937 without forfeiting their loans"
+          },
+          {
+            "hint": "Duty Year surge",
+            "bullet": "1938 compulsory Duty Year in farming or textiles helped push working women to 14.6 million"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cheaper female wages",
+            "bullet": "Factory bosses eagerly hired women because female wages stayed roughly a third lower than men's"
+          },
+          {
+            "hint": "Exhausting double burden",
+            "bullet": "Ideological u-turns left working wives juggling munitions shifts alongside housework and rationing queues"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ECONOMIC CONTRADICTION",
+            "stem": "Once Göring launched the ____________ for war readiness, male conscription created acute ____________ across industry."
+          },
+          {
+            "badge": "POLICY U-TURN",
+            "stem": "Forced to retreat from domestic dogma, officials let ____________ return to work in 1937 and introduced a compulsory ____________."
+          },
+          {
+            "badge": "WORKFORCE OUTCOME",
+            "stem": "By May 1939, female employment had climbed from 11.6 million to ____________, proving war needs trumped ideology."
+          }
+        ],
+        "watch_out": "Nazi policies failed to keep women permanently at home—by 1939, more German women worked in paid jobs than when Hitler took office.",
+        "prose_hash": "ee77297c29",
+        "prose_fp": "46b03ed9",
+        "question_hash": "48d42b771a"
+      }
+    ],
+    "lesson_4_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Combat sports focus",
+            "bullet": "Baldur von Schirach's Hitlerjugend prioritised boxing, obstacle courses, and rifle shooting over classroom study"
+          },
+          {
+            "hint": "Weekend fieldcraft camps",
+            "bullet": "Over eight million members practised route marches, trench map reading, and military signalling"
+          },
+          {
+            "hint": "Engraved dagger oath",
+            "bullet": "Fitness graduates received Blood and Honour daggers → cemented personal loyalty to Hitler"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Bypassing Versailles limits",
+            "bullet": "Youth military drill built a combat-ready reserve before formal conscription returned in March 1935"
+          },
+          {
+            "hint": "Weakening family authority",
+            "bullet": "Uniformed weekend camps pulled boys away from parents and churches toward obedience to the state"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MILITARY CONDITIONING",
+            "stem": "Led by Reich Youth Leader ____________, the Hitlerjugend prepared boys aged 14 to 18 through ____________."
+          },
+          {
+            "badge": "BATTLEFIELD SKILLS",
+            "stem": "Weekend field camps drilled recruits in ____________ so teenagers entered the Wehrmacht already hardened for combat."
+          },
+          {
+            "badge": "FANATICAL LOYALTY",
+            "stem": "Awarding engraved daggers stamped ____________ bound boys emotionally to the Führer above their own families."
+          }
+        ],
+        "watch_out": "Younger boys aged 10 to 14 joined the Deutsches Jungvolk first before advancing into the full Hitlerjugend at fourteen.",
+        "prose_hash": "3649178a67",
+        "prose_fp": "a57a3398",
+        "question_hash": "c621b9c66f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Fitness for childbirth",
+            "bullet": "League of German Maidens drilled girls aged 14–18 in gymnastics, swimming, and running for healthy motherhood"
+          },
+          {
+            "hint": "Domestic craft training",
+            "bullet": "Weekly meetings taught thrifty cooking, needlework, bed-making, and infant hygiene for family life"
+          },
+          {
+            "hint": "Racial mate selection",
+            "bullet": "Compulsory Rassenkunde lessons used genealogical charts so girls chose racially pure Aryan husbands"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mirroring adult policy",
+            "bullet": "BDM training reinforced Scholtz-Klink's Kinder, Küche, Kirche ideal and the 1935 Nuremberg Blood Law"
+          },
+          {
+            "hint": "Rural harvest service",
+            "bullet": "Farm harvest placements prepared teenage girls for the 1938 compulsory agricultural Duty Year"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "PHYSICAL HEALTH",
+            "stem": "Although girls in the ____________ wore uniforms and exercised outdoors, fitness aimed to produce ____________ rather than soldiers."
+          },
+          {
+            "badge": "HOMEMAKING SKILLS",
+            "stem": "Weekly sessions trained 14-to-18-year-olds in ____________ alongside rural harvest work for the national community."
+          },
+          {
+            "badge": "EUGENIC INDOCTRINATION",
+            "stem": "Studying ____________ taught girls to reject intermarriage and select healthy Aryan partners."
+          }
+        ],
+        "watch_out": "Always use the full specification title League of German Maidens alongside BDM—and stress that girls' athletics served fertility, not gender equality.",
+        "prose_hash": "c3cd2a9990",
+        "prose_fp": "6ba2412a",
+        "question_hash": "bbf6efa608"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Crushing rival clubs",
+            "bullet": "Scouts, sports clubs, and church leagues were banned so the Hitler Youth held a monopoly"
+          },
+          {
+            "hint": "Closing participation gaps",
+            "bullet": "Despite the December 1936 Hitler Youth Law, stubborn holdouts forced strict compulsory conscription in March 1939"
+          },
+          {
+            "hint": "Growing teen resentment",
+            "bullet": "Relentless military drill alienated teenagers like the Edelweiss Pirates → required legal force as war neared"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Broken Concordat pledge",
+            "bullet": "Disbanding Catholic youth clubs violated Hitler's 1933 Vatican Concordat to eliminate competing moral influences"
+          },
+          {
+            "hint": "Imminent European war",
+            "bullet": "By March 1939 Hitler was seizing Prague and planning war → demanded total youth mobilisation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ELIMINATING RIVALS",
+            "stem": "To monopolise leisure time, authorities systematically banned ____________ before passing the first Hitler Youth Law in ____________."
+          },
+          {
+            "badge": "CLOSING LOOPHOLES",
+            "stem": "Because hundreds of thousands still avoided joining, a second decree in ____________ enforced strict legal compulsion."
+          },
+          {
+            "badge": "COUNTERPRODUCTIVE RIGIDITY",
+            "stem": "Replacing fun campfires with harsh military drill actually pushed resentful teenagers toward dissident groups like ____________."
+          }
+        ],
+        "watch_out": "Distinguish the two laws: the December 1936 law established the principle of state youth service, while the March 1939 Youth Service Duty made attendance strictly compulsory.",
+        "prose_hash": "fc63fb7cce",
+        "prose_fp": "7398ad6e",
+        "question_hash": "7962ef2cdf"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Purging disloyal staff",
+            "bullet": "April 1933 Civil Service Law sacked Jewish, socialist, and democratic teachers from classrooms"
+          },
+          {
+            "hint": "Near-total league membership",
+            "bullet": "97% of teachers joined the National Socialist Teachers' League by 1937 to keep their jobs"
+          },
+          {
+            "hint": "Camps and salutes",
+            "bullet": "Mandatory NSLB holiday camps trained staff, while pupil denunciations and lesson salutes enforced zeal"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Hitler Youth informers",
+            "bullet": "Hitler Youth pupils were encouraged to report lukewarm teachers to local Party officials"
+          },
+          {
+            "hint": "Six-day reinforcement",
+            "bullet": "Controlling teachers ensured schools echoed Hitler Youth indoctrination throughout the working week"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STAFFROOM PURGE",
+            "stem": "Using the ____________, authorities dismissed Jewish and politically unreliable educators within months of taking power."
+          },
+          {
+            "badge": "IDEOLOGICAL RETRAINING",
+            "stem": "Enrolling 97% of staff, the ____________ drilled teachers in racial biology during mandatory holiday camps."
+          },
+          {
+            "badge": "CLASSROOM SURVEILLANCE",
+            "stem": "Starting every lesson with ____________ while risking denunciation by pupils forced hesitant teachers into line."
+          }
+        ],
+        "watch_out": "High NSLB membership of 97% reflected career survival as much as fanaticism—refusing to join meant losing one's teaching licence and pension.",
+        "prose_hash": "06aba8f996",
+        "prose_fp": "f4a74ff0",
+        "question_hash": "2f041d7940"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Twisted history texts",
+            "bullet": "History textbooks framed the past around Versailles betrayal and an endless struggle against Jews"
+          },
+          {
+            "hint": "Weaponised mathematics",
+            "bullet": "Maths questions calculated artillery bombing trajectories and the tax cost of disabled care"
+          },
+          {
+            "hint": "Racial skull lessons",
+            "bullet": "Compulsory racial biology and eugenics measured skulls to rank Aryan masters above subhumans"
+          },
+          {
+            "hint": "Elite cadet schools",
+            "bullet": "SS-backed Napolas boarding academies trained selected boys through harsh military discipline as future leaders"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Expanded PE timetable",
+            "bullet": "Physical Education expanded to 15% of school timetables → sacrificed academic depth for fitness"
+          },
+          {
+            "hint": "Conditioning for persecution",
+            "bullet": "Dehumanising Jews and disabled people in school lessons conditioned young Germans for later persecution"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REWRITTEN TEXTBOOKS",
+            "stem": "Across classrooms, history framed human progress as racial struggle while maths problems calculated ____________."
+          },
+          {
+            "badge": "BIOLOGICAL RACISM",
+            "stem": "Mandatory lessons in ____________ taught children to measure physical traits and treat minorities as inferior."
+          },
+          {
+            "badge": "ELITE ACADEMIES",
+            "stem": "For future SS and Party commanders, boarding schools known as ____________ replaced ordinary schooling with brutal military training."
+          }
+        ],
+        "watch_out": "Academic standards actually declined under Nazi schooling because timetable hours shifted heavily away from science and humanities toward PE and racial dogma.",
+        "prose_hash": "2df559f5fe",
+        "prose_fp": "d74ef0cc",
+        "question_hash": "c78f4760fd"
+      }
+    ],
+    "lesson_4_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "May 1933 raids",
+            "bullet": "SA and SS squads seized union offices on 2 May 1933 and jailed labour leaders"
+          },
+          {
+            "hint": "Single state front",
+            "bullet": "Robert Ley's German Labour Front absorbed workers and bosses together → banned strikes and froze pay"
+          },
+          {
+            "hint": "Compulsory Work Books",
+            "bullet": "1935 Arbeitsbuch prevented employees switching jobs without their employer's written release"
+          },
+          {
+            "hint": "Mandatory payroll dues",
+            "bullet": "Compulsory DAF deductions cut into take-home pay while tying workers to arms factories"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Repaying industrialists",
+            "bullet": "Crushing unions rewarded industrialists like Krupp and Thyssen who backed Hitler in 1932–33"
+          },
+          {
+            "hint": "Preventing general strikes",
+            "bullet": "Eliminating independent unions ensured workers could never repeat the 1920 general strike that defeated Kapp"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "UNION DESTRUCTION",
+            "stem": "Following nationwide raids on 2 May 1933, ____________ replaced all independent unions with the ____________."
+          },
+          {
+            "badge": "LOST BARGAINING POWER",
+            "stem": "Banning strikes and introducing compulsory ____________ in 1935 stopped skilled workers moving to higher-paying employers."
+          },
+          {
+            "badge": "STATE CONTROL",
+            "stem": "Deducting compulsory dues while freezing wage rates subordinated workers' living standards to ____________."
+          }
+        ],
+        "watch_out": "The German Labour Front—DAF—was not a genuine trade union protecting employees; it included bosses and existed to enforce discipline and boost output.",
+        "prose_hash": "a57382f227",
+        "prose_fp": "57a7f4c0",
+        "question_hash": "21ed824559"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Compulsory youth labour",
+            "bullet": "From July 1935, Konstantin Hierl's RAD required six months' labour from unmarried men aged 18–25"
+          },
+          {
+            "hint": "Manual infrastructure works",
+            "bullet": "Conscripts built Autobahnen, drained marshes, and planted forests using spades rather than heavy machinery"
+          },
+          {
+            "hint": "Pocket-money barracks",
+            "bullet": "Camp barracks, uniforms, and tiny pay absorbed hundreds of thousands cheaply off jobless registers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Weimar origins",
+            "bullet": "Autobahn plans and voluntary labour camps actually began under Weimar governments before Hitler expanded them"
+          },
+          {
+            "hint": "Pre-military conditioning",
+            "bullet": "Marching with spades in RAD camps toughened young men physically for Wehrmacht conscription"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MANDATORY SERVICE",
+            "stem": "Made compulsory in July 1935, the ____________ drafted men aged 18 to 25 for ____________ of state labour."
+          },
+          {
+            "badge": "PUBLIC INFRASTRUCTURE",
+            "stem": "Working by hand on ____________ and land reclamation maximised job creation at minimal treasury cost."
+          },
+          {
+            "badge": "HIDDEN HARDSHIP",
+            "stem": "Although official unemployment tumbled, RAD conscripts endured ____________ and pocket-money wages."
+          }
+        ],
+        "watch_out": "Hitler did not invent the Autobahn—initial plans were drawn up during the Weimar Republic, though Goebbels claimed personal credit for Hitler.",
+        "prose_hash": "e4c053981c",
+        "prose_fp": "f88833e1",
+        "question_hash": "c44dbe0d46"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Conscription absorption",
+            "bullet": "Reintroducing military conscription in March 1935 pulled 1.4 million men off civilian job registers by 1939"
+          },
+          {
+            "hint": "Excluded citizens",
+            "bullet": "Sacked Jews and married women pushed out of professions were omitted from official jobless counts"
+          },
+          {
+            "hint": "Camp and RAD omissions",
+            "bullet": "RAD conscripts, concentration camp inmates, and part-time workers counted as employed → created invisible unemployment"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Secret debt financing",
+            "bullet": "Booming arms jobs relied on Schacht's secret Mefo bills rather than self-sustaining peacetime consumer growth"
+          },
+          {
+            "hint": "Global trade recovery",
+            "bullet": "World trade was already recovering from the 1929 Wall Street Crash across industrialised democracies"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MILITARY DRAFT",
+            "stem": "Reintroducing ____________ in March 1935 removed 1.4 million young men from the labour market into the Wehrmacht."
+          },
+          {
+            "badge": "STATISTICAL EXCLUSIONS",
+            "stem": "Historians call the gap ____________ because dismissed ____________ were simply erased from unemployment registers."
+          },
+          {
+            "badge": "ARTIFICIAL MIRACLE",
+            "stem": "Counting RAD spadesmen and ____________ as employed disguised how heavily job growth depended on coercion and war."
+          }
+        ],
+        "watch_out": "Falling unemployment from 6 million to under 300,000 combined real rearmament hiring with statistical trickery via invisible unemployment—always explain both.",
+        "prose_hash": "7bc1058734",
+        "prose_fp": "803e3124",
+        "question_hash": "407326cfe1"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Subsidised KdF perks",
+            "bullet": "Strength Through Joy offered cheap theatre tickets, sports, hikes, and ocean cruises to loyal workers"
+          },
+          {
+            "hint": "Unpaid factory upgrades",
+            "bullet": "Beauty of Labour promoted cleaner canteens, washrooms, and lighting—though workers often renovated unpaid after shifts"
+          },
+          {
+            "hint": "People's Car savings",
+            "bullet": "Five-mark weekly Volkswagen savings promised car ownership, yet factories switched to military production in 1939"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Classless community myth",
+            "bullet": "Cruises and concerts projected a classless Volksgemeinschaft to soften frozen wages and banned strikes"
+          },
+          {
+            "hint": "Supervised free time",
+            "bullet": "Organising leisure inside DAF groups allowed Party wardens to monitor workers even outside factory gates"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SUBSIDISED LEISURE",
+            "stem": "To soften anger over crushed unions, ____________ gave workers access to cheap theatre trips, sports, and cruises."
+          },
+          {
+            "badge": "WORKPLACE CONDITIONS",
+            "stem": "Meanwhile, ____________ improved factory canteens and washrooms, even though employees had to complete upgrades unpaid."
+          },
+          {
+            "badge": "UNFULFILLED PROMISE",
+            "stem": "Collecting five marks weekly for the ____________ soaked up disposable wages without delivering a single civilian car."
+          }
+        ],
+        "watch_out": "Ocean cruises mostly went to Party officials and wealthier staff, and zero civilian Volkswagens were delivered before war broke out in 1939.",
+        "prose_hash": "4ad6875c05",
+        "prose_fp": "c1a29910",
+        "question_hash": "8281a013ea"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Four-Year Plan autarky",
+            "bullet": "Göring's 1936 Four-Year Plan poured billions into costly synthetic rubber, oil, and iron for autarky"
+          },
+          {
+            "hint": "Guns before butter",
+            "bullet": "Prioritising arms imports over food caused civilian shortages and rationing of butter, meat, and goods"
+          },
+          {
+            "hint": "Longer working weeks",
+            "bullet": "Average hours rose from 43 to 49 weekly by 1939 while real wages barely matched 1928"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Schacht forced out",
+            "bullet": "Economics Minister Hjalmar Schacht resigned in 1937 warning reckless arms spending risked inflation and food shortages"
+          },
+          {
+            "hint": "Sectoral wage divide",
+            "bullet": "Skilled munitions engineers earned overtime bonuses, whereas consumer-goods workers faced stagnant pay and pricier food"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WAR ECONOMY",
+            "stem": "Appointed to run the Four-Year Plan in 1936, ____________ chased economic self-sufficiency—known as ____________—for war within four years."
+          },
+          {
+            "badge": "CONSUMER SACRIFICE",
+            "stem": "Choosing military ____________ restricted food imports, creating everyday shortages of butter, meat, and textiles."
+          },
+          {
+            "badge": "WORKLOAD SQUEEZE",
+            "stem": "Although pay packets rose slightly because working weeks climbed to ____________, real hourly purchasing power stagnated."
+          }
+        ],
+        "watch_out": "Workers took home slightly more cash by 1939 mainly because they worked six extra hours a week—hourly rates stayed frozen while food grew scarce.",
+        "prose_hash": "f22299c6e0",
+        "prose_fp": "21bba26f",
+        "question_hash": "bdfd74f847"
+      }
+    ],
+    "lesson_4_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Biological racial hierarchy",
+            "bullet": "Social Darwinist propaganda exalted Nordic Aryan Herrenvolk while branding Jews, Slavs, and Roma subhuman Untermenschen"
+          },
+          {
+            "hint": "April shop boycott",
+            "bullet": "SA men painted Stars of David and boycotted Jewish shops and clinics on 1 April 1933"
+          },
+          {
+            "hint": "Civil Service purge",
+            "bullet": "7 April Civil Service Act legally dismissed Jewish civil servants, judges, and state teachers"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Early Party manifesto",
+            "bullet": "Fulfilled Hitler's 1920 Twenty-Five Point Programme and Mein Kampf pledge to strip Jews of civic status"
+          },
+          {
+            "hint": "Hindenburg's veteran check",
+            "bullet": "Lukewarm public response and Hindenburg's veteran exemption briefly restrained street boycotts in favour of gradual laws"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IDEOLOGICAL FOUNDATION",
+            "stem": "Rooted in biological racism, Nazi propaganda ranked Aryan ____________ at the top and branded minorities ____________."
+          },
+          {
+            "badge": "STREET INTIMIDATION",
+            "stem": "State action opened on ____________ when armed SA pickets staged a nationwide boycott of Jewish businesses."
+          },
+          {
+            "badge": "LEGAL EXCLUSION",
+            "stem": "Days later, the ____________ moved persecution into statute by sacking Jewish judges, teachers, and officials."
+          }
+        ],
+        "watch_out": "German Jews made up less than 1% of the 1933 population and were deeply integrated—early boycotts relied on SA intimidation rather than spontaneous public demand.",
+        "prose_hash": "6a54e8a921",
+        "prose_fp": "eed7e7fa",
+        "question_hash": "7b16e2e338"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Stripped civic status",
+            "bullet": "September 1935 Reich Citizenship Law stripped Jews of German citizenship, voting rights, and public office"
+          },
+          {
+            "hint": "Blood Protection ban",
+            "bullet": "Outlawed marriage and sexual relations between Jews and Aryans as criminal racial defilement"
+          },
+          {
+            "hint": "Ancestral definition",
+            "bullet": "Defined Jewishness biologically by three or four Jewish grandparents rather than religious practice"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Hindenburg gone",
+            "bullet": "President Hindenburg's death in August 1934 removed veteran exemptions and conservative checks on radical racial laws"
+          },
+          {
+            "hint": "Legalised pariah status",
+            "bullet": "Turning Jews into stateless subjects stripped away constitutional protection against later property seizures"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LOSS OF CITIZENSHIP",
+            "stem": "Proclaimed in September 1935, the ____________ downgraded German Jews from citizens into stateless subjects."
+          },
+          {
+            "badge": "BIOLOGICAL SEPARATION",
+            "stem": "Simultaneously, the Law for the Protection of German Blood criminalised ____________ between Jews and Aryans."
+          },
+          {
+            "badge": "RACIAL DEFINITION",
+            "stem": "Defining someone as Jewish through ____________ meant Christian conversion offered zero legal escape."
+          }
+        ],
+        "watch_out": "Nuremberg defined Jewish identity by grandparents' ancestry rather than synagogue attendance—even practising Christians with three Jewish grandparents were classified as Jews.",
+        "prose_hash": "76e0ee851c",
+        "prose_fp": "a17ca56e",
+        "question_hash": "f8bd362646"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Slavs and Roma",
+            "bullet": "Branded Slavs subhuman labourers and interned registered Roma and Sinti families in camps like Berlin-Marzahn"
+          },
+          {
+            "hint": "Paragraph 175 arrests",
+            "bullet": "Tightened Paragraph 175 as a birth-rate threat → jailed over 15,000 gay men wearing pink triangles"
+          },
+          {
+            "hint": "Forced sterilisations",
+            "bullet": "July 1933 Sterilisation Law empowered Hereditary Health Courts to sterilise around 400,000 disabled citizens"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Volksgemeinschaft boundary",
+            "bullet": "Purging racial and social outsiders defined membership of the pure Aryan national community"
+          },
+          {
+            "hint": "Pre-Olympic round-up",
+            "bullet": "Police rounded Berlin Roma into Marzahn ahead of the 1936 Olympics to hide them from visitors"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RACIAL OUTSIDERS",
+            "stem": "Excluded from the Volksgemeinschaft, ____________ were confined in municipal camps like ____________ from 1936."
+          },
+          {
+            "badge": "DEMOGRAPHIC POLICING",
+            "stem": "Viewing homosexuality as a threat to Aryan births, police used ____________ to send thousands to camps."
+          },
+          {
+            "badge": "EUGENIC COERCION",
+            "stem": "Targeting people with hereditary disabilities, courts ordered the compulsory sterilisation of roughly ____________ citizens."
+          }
+        ],
+        "watch_out": "Always cover non-Jewish minorities named in the specification—Roma and Sinti, Slavs, gay men under Paragraph 175, and disabled citizens—when asked about minority persecution.",
+        "prose_hash": "a50080b926",
+        "prose_fp": "742ef8b0",
+        "question_hash": "3d5092b206"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Paris assassination pretext",
+            "bullet": "Goebbels exploited diplomat vom Rath's shooting in Paris to unleash plainclothes SA and SS mobs"
+          },
+          {
+            "hint": "Complicit police orders",
+            "bullet": "Police and fire brigades stood back on orders while synagogues and Jewish homes burned"
+          },
+          {
+            "hint": "Nationwide pogrom damage",
+            "bullet": "Over 1,000 synagogues burned, 7,500 shops smashed, and 91 Jews murdered on 9–10 November 1938"
+          },
+          {
+            "hint": "Mass camp round-ups",
+            "bullet": "30,000 Jewish men deported to Dachau, Buchenwald, and Sachsenhausen to terrorise families into emigrating"
+          }
+        ],
+        "context": [
+          {
+            "hint": "End of Olympic restraint",
+            "bullet": "After the 1936 Olympics and Munich Agreement, Hitler no longer cared about Western diplomatic opinion"
+          },
+          {
+            "hint": "Austrian annexation impact",
+            "bullet": "Annexing Austria in March 1938 added 200,000 Jews → radicalised SS pressure for rapid forced emigration"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STATE ORCHESTRATION",
+            "stem": "Exploiting the shooting of ____________ in Paris, Goebbels directed SA and SS squads while police deliberately stood aside."
+          },
+          {
+            "badge": "PHYSICAL DEVASTATION",
+            "stem": "Across 9–10 November 1938, mobs torched over ____________, wrecked 7,500 shops, and murdered 91 people."
+          },
+          {
+            "badge": "CAMP ESCALATION",
+            "stem": "Rounding up ____________ Jewish men into concentration camps shifted policy from gradual laws to mass terror."
+          }
+        ],
+        "watch_out": "Goebbels claimed Kristallnacht was spontaneous public anger, yet secret orders telling police not to intervene prove it was state-directed terror.",
+        "prose_hash": "cb8807aabe",
+        "prose_fp": "87478a87",
+        "question_hash": "d65f324bac"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Punitive collective fine",
+            "bullet": "Göring confiscated insurance payouts and fined the Jewish community one billion marks for Kristallnacht damage"
+          },
+          {
+            "hint": "Total social exclusion",
+            "bullet": "Decrees barred Jews from parks, cinemas, and pools while expelling Jewish pupils from state schools"
+          },
+          {
+            "hint": "Forced Aryanisation",
+            "bullet": "Compulsory Aryanisation transferred remaining Jewish shops, factories, and property to Aryans at rock-bottom prices"
+          },
+          {
+            "hint": "Plundered emigration",
+            "bullet": "Heydrich's Reich Office for Jewish Emigration seized emigrants' wealth as over half fled before September 1939"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rearmament budget plunder",
+            "bullet": "Confiscated Jewish fines and assets helped plug Göring's desperate Four-Year Plan rearmament deficit"
+          },
+          {
+            "hint": "Foreign visa barriers",
+            "bullet": "Stripping emigrants penniless made securing foreign entry visas harder after the 1938 Evian Conference"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BLAMING VICTIMS",
+            "stem": "Adding financial ruin to violence, Göring seized insurance payouts and imposed a ____________ collective fine."
+          },
+          {
+            "badge": "ECONOMIC SEIZURE",
+            "stem": "Through compulsory ____________, Jewish businesses and homes were handed to Aryan buyers for a fraction of their value."
+          },
+          {
+            "badge": "COERCED EXODUS",
+            "stem": "Supervised by Heydrich's ____________, persecution forced over half of German Jews out before war began in 1939."
+          }
+        ],
+        "watch_out": "Prior to September 1939, Nazi policy aimed at economic plunder and forced emigration—systematic mass extermination camps began later during World War Two.",
+        "prose_hash": "9f65ffb6b6",
+        "prose_fp": "34c3ff6d",
+        "question_hash": "fd9a3d1381"
+      }
+    ]
+  }
+}

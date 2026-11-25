@@ -1,0 +1,2793 @@
+{
+  "unit_id": "cme_new",
+  "lessons": {
+    "lesson_0": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Suez maritime route",
+            "bullet": "Ottoman alliance with Germany threatened the Suez Canal → Britain desperately needed Arab allies"
+          },
+          {
+            "hint": "Bargain with Mecca",
+            "bullet": "McMahon pledged British backing for an independent Arab state → secured the 1916 Arab Revolt"
+          },
+          {
+            "hint": "Ambiguous territorial wording",
+            "bullet": "Vague geographic exemptions never explicitly excluded Jerusalem or Palestine → Arabs assumed Palestine was included"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Centuries of rule",
+            "bullet": "Four centuries of Turkish Ottoman rule → fuelled rising Arab nationalist desire for self-government"
+          },
+          {
+            "hint": "Eastern Front strain",
+            "bullet": "Stalemate in Gallipoli and Mesopotamia → forced Britain to divert Turkish divisions via internal rebellion"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STRATEGIC BARGAIN",
+            "stem": "Desperate to protect the ____________ from Ottoman attack, Sir ____________ offered Sharif Hussein..."
+          },
+          {
+            "badge": "REVOLT FOR INDEPENDENCE",
+            "stem": "In return for launching the ____________ against Turkish rule in 1916, Arab leaders believed Britain had pledged..."
+          },
+          {
+            "badge": "GEOGRAPHIC AMBIGUITY",
+            "stem": "Because McMahon used ____________ rather than explicitly naming ____________, Hussein assumed..."
+          }
+        ],
+        "watch_out": "McMahon exchanged secret diplomatic letters rather than a formal treaty—do not confuse his correspondence with the 1917 Balfour Declaration.",
+        "prose_hash": "f02bfa45c6",
+        "prose_fp": "c9e27f53",
+        "question_hash": "7b9ccf4499"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Covert Allied carve-up",
+            "bullet": "Mark Sykes and François Georges-Picot secretly divided Ottoman Arab lands into British and French spheres"
+          },
+          {
+            "hint": "Imperial map lines",
+            "bullet": "Britain claimed Iraq and Transjordan while France took Syria and Lebanon → denied unified Arab independence"
+          },
+          {
+            "hint": "Internationalised Holy Land",
+            "bullet": "Palestine became an Allied international zone, and Bolshevik publication in 1917 exposed British double-dealing"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wartime Arab sacrifice",
+            "bullet": "Sharif Hussein’s forces were actively fighting Ottoman troops based on McMahon’s earlier independence pledge"
+          },
+          {
+            "hint": "Oil and sea-lanes",
+            "bullet": "Mosul oilfields and Mediterranean ports → drove Anglo-French imperial expansion ahead of Arab self-determination"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COVERT DIVISION",
+            "stem": "Even while Arab forces fought the Ottomans, diplomats ____________ and ____________ secretly carved the region into..."
+          },
+          {
+            "badge": "SPHERES OF CONTROL",
+            "stem": "Instead of granting an independent Arab state, Britain claimed ____________ while designating Palestine as an ____________."
+          },
+          {
+            "badge": "EXPOSURE IN 1917",
+            "stem": "Once ____________ published the secret terms in late 1917, Arab nationalists condemned Britain for..."
+          }
+        ],
+        "watch_out": "Sykes-Picot placed Palestine under joint international administration rather than sole British rule—Britain only gained full Mandate control later.",
+        "prose_hash": "00b9aa5b04",
+        "prose_fp": "d870f73d",
+        "question_hash": "f93f03d9cd"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Pledge to Rothschild",
+            "bullet": "Balfour’s 2 November 1917 statement backed establishing a national home for the Jewish people in Palestine"
+          },
+          {
+            "hint": "Demographic reality",
+            "bullet": "Arab Muslims and Christians formed over 90% of Palestine’s population → rejected minority Zionist claims"
+          },
+          {
+            "hint": "Incompatible dual clause",
+            "bullet": "Protecting non-Jewish civil rights clashed directly with mass Zionist settlement and prior pledges to Hussein"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Allied war effort",
+            "bullet": "Severe 1917 Western Front losses → Britain courted American and Russian Jewish support for the war"
+          },
+          {
+            "hint": "Suez buffer zone",
+            "bullet": "British strategists hoped a pro-British Jewish settlement in Palestine would guard the northern Suez flank"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ZIONIST PLEDGE",
+            "stem": "On 2 November 1917, Foreign Secretary ____________ wrote to ____________ pledging British support for..."
+          },
+          {
+            "badge": "CONTRADICTORY CLAUSE",
+            "stem": "Although the declaration promised to protect non-Jewish rights, over ____________ of Palestine’s inhabitants were..."
+          },
+          {
+            "badge": "TRIPLE PROMISE TRAP",
+            "stem": "Courting Zionist support in ____________ and ____________ left Britain trapped between incompatible wartime promises to..."
+          }
+        ],
+        "watch_out": "Balfour carefully wrote a national home rather than an immediate Jewish state, deliberately leaving Palestine’s political future ambiguous.",
+        "prose_hash": "ff26512fc4",
+        "prose_fp": "e181c711",
+        "question_hash": "7495c63aed"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "League Mandate terms",
+            "bullet": "1922 League of Nations Mandate wrote Balfour into law → facilitated immigration through the Jewish Agency"
+          },
+          {
+            "hint": "Land and evictions",
+            "bullet": "Zionist agricultural land purchases evicted Arab tenant farmers → sparked deadly riots in Jaffa and Jerusalem"
+          },
+          {
+            "hint": "Refugees from Nazism",
+            "bullet": "1930s Nazi persecution in Europe surged migration → raised Palestine’s Jewish population toward 30% by 1936"
+          },
+          {
+            "hint": "Fear of displacement",
+            "bullet": "Palestinian Arabs lacked state institutions → feared becoming a dispossessed minority in their ancestral homeland"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Hitler’s rise",
+            "bullet": "1933 Nazi takeover and 1935 Nuremberg Laws → drove desperate German and Polish Jews toward Palestine"
+          },
+          {
+            "hint": "Western entry quotas",
+            "bullet": "Strict US and British domestic immigration caps → left Mandatory Palestine the main refuge open"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MANDATE OBLIGATION",
+            "stem": "Under the 1922 ____________ Mandate, Britain facilitated Jewish settlement and land buying via the ____________."
+          },
+          {
+            "badge": "RURAL GRIEVANCES",
+            "stem": "As Zionist funds bought farmland, ____________ were evicted from holdings, triggering communal riots in ____________."
+          },
+          {
+            "badge": "DEMOGRAPHIC SURGE",
+            "stem": "Fleeing ____________ in Europe during the 1930s, refugees pushed the Jewish share of population to nearly ____________."
+          }
+        ],
+        "watch_out": "Britain did not conquer Palestine for the League—Allenby captured Jerusalem in 1917, and the League formalised the Mandate in 1922.",
+        "prose_hash": "d6f262489f",
+        "prose_fp": "3443391c",
+        "question_hash": "75e04fc658"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Strict migration quota",
+            "bullet": "May 1939 White Paper capped Jewish immigration at 75,000 over five years, requiring Arab consent thereafter"
+          },
+          {
+            "hint": "Abandoning Jewish statehood",
+            "bullet": "Promised a single independent Palestine within ten years → guaranteed permanent Arab majority rule over Jews"
+          },
+          {
+            "hint": "European persecution crisis",
+            "bullet": "Shut Palestine’s gates just as Nazi persecution intensified → Zionists condemned Britain’s betrayal of Balfour"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Looming world war",
+            "bullet": "Imminent war with Hitler in 1939 → forced Britain to appease Arab rulers and protect oil"
+          },
+          {
+            "hint": "Pipeline sabotage pressure",
+            "bullet": "Three years of Arab Revolt strikes and IPC pipeline attacks → proved pro-Zionist policy cost troops"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPERIAL APPEASEMENT",
+            "stem": "Facing imminent war with ____________ after the three-year ____________, Britain sought to secure Middle Eastern oil by..."
+          },
+          {
+            "badge": "WHITE PAPER CAPS",
+            "stem": "Published in May 1939, the ____________ restricted Jewish arrivals to ____________ over five years and promised..."
+          },
+          {
+            "badge": "ZIONIST OUTRAGE",
+            "stem": "Zionists viewed these restrictions as a fatal betrayal because European Jews were trapped facing ____________."
+          }
+        ],
+        "watch_out": "Do not confuse the 1936–39 Arab Revolt against Britain with the post-1945 Zionist insurgency triggered by the 1939 White Paper.",
+        "prose_hash": "4acf79a8ba",
+        "prose_fp": "21f8b7e5",
+        "question_hash": "134dd01ca8"
+      }
+    ],
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Survivors and Washington",
+            "bullet": "250,000 Holocaust survivors in DP camps and President Truman demanded 100,000 immediate immigration certificates"
+          },
+          {
+            "hint": "Arab nationalist stance",
+            "bullet": "The Arab Higher Committee demanded an immediate halt to immigration and majority-rule Arab independence"
+          },
+          {
+            "hint": "Bevin’s oil dilemma",
+            "bullet": "Bevin enforced the 1,500 monthly quota to protect Arab oil and bases → alienated both sides"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Moral impact of Shoah",
+            "bullet": "Liberation of Nazi death camps → turned international and American public opinion strongly behind Zionist statehood"
+          },
+          {
+            "hint": "Post-war sterling crisis",
+            "bullet": "Bankrupt post-1945 Britain relied on US loans yet depended on Middle Eastern oil and Suez bases"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "JEWISH & US PRESSURE",
+            "stem": "Backed by US President ____________, the Jewish Agency demanded ____________ certificates for Holocaust survivors in DP camps."
+          },
+          {
+            "badge": "ARAB OPPOSITION",
+            "stem": "Conversely, the ____________ insisted Britain halt all Jewish migration and grant immediate ____________."
+          },
+          {
+            "badge": "BEVIN’S QUOTA TRAP",
+            "stem": "Fearing an Arab backlash against British ____________, Foreign Secretary ____________ kept the 1,500 monthly limit, pleasing nobody."
+          }
+        ],
+        "watch_out": "President Truman demanded 100,000 immediate certificates in 1945, whereas Foreign Secretary Ernest Bevin kept the 1,500 monthly limit.",
+        "prose_hash": "ea314c0c5f",
+        "prose_fp": "5bd4d874",
+        "question_hash": "7e1461e234"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "United underground coalition",
+            "bullet": "Haganah joined Begin’s Irgun and radical Lehi in Tenuat HaMeri → coordinated nationwide anti-British sabotage"
+          },
+          {
+            "hint": "Transport and radar strikes",
+            "bullet": "Paramilitaries bombed railways, bridges, and coastal radar stations → paralysed British interception of migrant ships"
+          },
+          {
+            "hint": "Costly garrison clampdown",
+            "bullet": "Tied down 100,000 British troops and provoked Operation Agatha arrests → turned Jewish civilians against Britain"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wartime combat training",
+            "bullet": "Thousands of Haganah fighters gained British military training during World War Two → enhanced sabotage skill"
+          },
+          {
+            "hint": "Imperial overstretch",
+            "bullet": "Maintaining one soldier for every six Jewish residents drained Britain’s rationing-era treasury and domestic morale"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "JOINT INSURGENCY",
+            "stem": "Uniting in October 1945 as the ____________, the mainstream ____________ coordinated attacks alongside Irgun and Lehi."
+          },
+          {
+            "badge": "INFRASTRUCTURE SABOTAGE",
+            "stem": "By blowing up ____________, bridges, and ____________, militants sought to make Mandatory Palestine ungovernable."
+          },
+          {
+            "badge": "COUNTER-INSURGENCY DRAIN",
+            "stem": "Deploying ____________ soldiers and launching ____________ failed to crush resistance and alienated the Jewish public."
+          }
+        ],
+        "watch_out": "Haganah was the mainstream Zionist defence force targeting infrastructure, whereas Irgun and Lehi were radical splinter groups attacking British personnel.",
+        "prose_hash": "0d25fc2509",
+        "prose_fp": "81b8a15b",
+        "question_hash": "2503aa29ac"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Nerve centre struck",
+            "bullet": "Irgun bombed the King David Hotel in July 1946 → destroyed Britain’s central Mandate headquarters"
+          },
+          {
+            "hint": "Heavy human toll",
+            "bullet": "350 kilograms of explosives killed 91 British, Arab, and Jewish staff → shocked British public opinion"
+          },
+          {
+            "hint": "Coalition split",
+            "bullet": "Ben-Gurion’s Haganah dissolved the United Resistance coalition, yet Irgun and Lehi escalated lethal guerrilla attacks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Fortress bunker rule",
+            "bullet": "Surviving British officials retreated behind barbed-wire Jerusalem security zones → crippled everyday civil governance"
+          },
+          {
+            "hint": "Operation Agatha retaliation",
+            "bullet": "Carried out to avenge Operation Agatha raids → proved military crackdowns could not deter Irgun"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HEADQUARTERS DESTROYED",
+            "stem": "Targeting the Jerusalem nerve centre of British rule, ____________ operatives smuggled explosives into the ____________."
+          },
+          {
+            "badge": "SHOCKWAVE IN BRITAIN",
+            "stem": "Demolishing six floors and killing ____________ people, the July 1946 blast convinced many Britons that..."
+          },
+          {
+            "badge": "FRACTURED MILITIAS",
+            "stem": "Although ____________ broke off the united alliance after the atrocity, radical ____________ attacks continued unabated."
+          }
+        ],
+        "watch_out": "The 91 victims included Jewish and Arab civil servants alongside British officers—and Irgun carried it out, not the Haganah alone.",
+        "prose_hash": "71265661cf",
+        "prose_fp": "01ca691b",
+        "question_hash": "4cbd1395ec"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Retaliatory hangings",
+            "bullet": "Irgun hanged kidnapped British sergeants Martin and Paice in Netanya and booby-trapped their bodies"
+          },
+          {
+            "hint": "Domestic British fury",
+            "bullet": "Outrage sparked riots across British cities and press demands to bring conscripted soldiers home"
+          },
+          {
+            "hint": "Post-war bankruptcy",
+            "bullet": "Crippling World War Two debt made funding 100,000 troops in an unwinnable Mandate impossible"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Harsh winter crisis",
+            "bullet": "Severe 1947 domestic coal shortages, rationing, and sterling weakness → forced Labour to slash overseas commitments"
+          },
+          {
+            "hint": "Retreat from Empire",
+            "bullet": "Indian independence in August 1947 reduced Britain’s strategic need to hold Palestine as a route buffer"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NETANYA OUTRAGE",
+            "stem": "When Menachem Begin ordered the hanging and booby-trapping of sergeants ____________ and ____________, British newspapers..."
+          },
+          {
+            "badge": "PUBLIC & MP BACKLASH",
+            "stem": "Furious domestic riots and parliamentary anger reinforced demands that British soldiers stop dying in ____________."
+          },
+          {
+            "badge": "ECONOMIC EXHAUSTION",
+            "stem": "Exhausted by ____________ after World War Two, Attlee’s government could no longer afford to police..."
+          }
+        ],
+        "watch_out": "Britain announced its referral to the UN in February 1947, and the July 1947 Sergeants Affair cemented irreversible withdrawal.",
+        "prose_hash": "6de892be7a",
+        "prose_fp": "4ee2db8a",
+        "question_hash": "1383fbefcf"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Forced return to Germany",
+            "bullet": "Bevin forced 4,500 Holocaust survivors aboard SS Exodus back to camps in British-occupied Germany"
+          },
+          {
+            "hint": "Global moral humiliation",
+            "bullet": "World media coverage of caged survivors shattered Britain’s international reputation and strengthened UN partition support"
+          },
+          {
+            "hint": "UN partition plan",
+            "bullet": "UN Resolution 181 on 29 November 1947 divided Palestine into separate Jewish and Arab states"
+          },
+          {
+            "hint": "Jerusalem and rejection",
+            "bullet": "Jerusalem became an international zone; the Jewish Agency accepted partition while Arab leaders rejected it"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unfair land ratio",
+            "bullet": "Resolution 181 awarded 55% of Palestine to the Jewish state despite Jews forming one-third of residents"
+          },
+          {
+            "hint": "Superpower rare unity",
+            "bullet": "Rare US and Soviet backing for Resolution 181 → secured the required two-thirds General Assembly vote"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MORAL DISASTER",
+            "stem": "Forcibly returning 4,500 Holocaust survivors from ____________ to camps in ____________ destroyed British moral authority."
+          },
+          {
+            "badge": "RESOLUTION 181 TERMS",
+            "stem": "Passed on 29 November 1947, ____________ proposed separate Jewish and Arab states alongside an international ____________."
+          },
+          {
+            "badge": "OPPOSING REACTIONS",
+            "stem": "While the ____________ accepted the UNSCOP partition map, Arab leaders rejected it, igniting immediate ____________."
+          }
+        ],
+        "watch_out": "UN Resolution 181 did not award Jerusalem to either state—it placed Jerusalem under international United Nations trusteeship.",
+        "prose_hash": "92c6422546",
+        "prose_fp": "ede509cf",
+        "question_hash": "8624173efd"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Midnight Mandate expiry",
+            "bullet": "Ben-Gurion proclaimed Israel hours before Britain’s Mandate ended on 14 May 1948 → prevented a vacuum"
+          },
+          {
+            "hint": "Superpower diplomatic shield",
+            "bullet": "Asserted Jewish self-determination → secured immediate diplomatic recognition from both Truman and the Soviet Union"
+          },
+          {
+            "hint": "Five-state intervention",
+            "bullet": "Egypt, Transjordan, Syria, Lebanon, and Iraq invaded on 15 May → sought to overturn UN partition"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ongoing civil war",
+            "bullet": "Months of inter-communal fighting since November 1947 and refugee flight pressured Arab governments to intervene"
+          },
+          {
+            "hint": "Divided Arab aims",
+            "bullet": "King Abdullah of Transjordan quietly sought the West Bank → prevented a unified Arab military command"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SEIZING STATEHOOD",
+            "stem": "Hours before British rule expired on ____________, David Ben-Gurion proclaimed Israel and won swift ____________ recognition."
+          },
+          {
+            "badge": "ARAB LEAGUE INVASION",
+            "stem": "At dawn on 15 May, armies from five ____________ states invaded to stop partition, though they lacked a ____________."
+          },
+          {
+            "badge": "INITIAL BATTLEFIELD CRISIS",
+            "stem": "Short of heavy weapons, outnumbered Israeli forces fought on multiple fronts as Jordan’s ____________ captured East Jerusalem."
+          }
+        ],
+        "watch_out": "Five Arab League states invaded on 15 May, yet they lacked a single command and pursued rival territorial ambitions.",
+        "prose_hash": "61b05be9d1",
+        "prose_fp": "6f10063d",
+        "question_hash": "59e546ab88"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Four-week breathing space",
+            "bullet": "Bernadotte’s June 1948 UN truce halted Arab momentum → gave exhausted Israeli defenders time to reorganise"
+          },
+          {
+            "hint": "Soviet-backed weapons airlift",
+            "bullet": "Clandestine Czech arms deal supplied rifles, machine guns, and Avia fighters despite the international embargo"
+          },
+          {
+            "hint": "Single national command",
+            "bullet": "Ben-Gurion merged underground militias into the unified IDF → seized the offensive across all fronts"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Arab resupply freeze",
+            "bullet": "Britain honoured the UN arms embargo → starved Egypt, Iraq, and Jordan’s Arab Legion of ammunition"
+          },
+          {
+            "hint": "Altalena discipline test",
+            "bullet": "Forcing Irgun under central IDF authority ended rival militia freelancing and streamlined Israeli troop deployment"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VITAL FOUR-WEEK PAUSE",
+            "stem": "Brokered by UN mediator ____________ in June 1948, the First Truce rescued Israel from acute ____________ shortages."
+          },
+          {
+            "badge": "REARMAMENT BREAKTHROUGH",
+            "stem": "Bypassing the arms embargo via a Soviet-approved ____________, Israel airlifted thousands of rifles and ____________ aircraft."
+          },
+          {
+            "badge": "UNIFIED COMMAND",
+            "stem": "Simultaneously, Ben-Gurion forged disparate militias into the ____________, enabling Israel to break Egyptian lines in July."
+          }
+        ],
+        "watch_out": "Do not confuse Israel’s 1948 Czech arms deal during the First War with Nasser’s later 1955 Czech arms deal.",
+        "prose_hash": "dc1dec15f1",
+        "prose_fp": "65e6e0d3",
+        "question_hash": "170cb7ae47"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Plan Dalet clearances",
+            "bullet": "Plan Dalet operations captured Arab villages along strategic roads, expelling inhabitants from Israeli-held zones"
+          },
+          {
+            "hint": "Deir Yassin panic",
+            "bullet": "Irgun and Lehi’s April 1948 Deir Yassin massacre killed over 100 villagers → sparked mass flight"
+          },
+          {
+            "hint": "Scale of Nakba",
+            "bullet": "Over 700,000 Palestinians became stateless camp refugees across Gaza, Jordan, Lebanon, Syria, and the West Bank"
+          },
+          {
+            "hint": "UNRWA and barred return",
+            "bullet": "UN created UNRWA for camp relief, while Israel blocked Resolution 194 return to preserve its majority"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Collapsed local leadership",
+            "bullet": "Early departure of wealthier Palestinian urban elites after late 1947 left rural communities disorganised and vulnerable"
+          },
+          {
+            "hint": "Absentee property laws",
+            "bullet": "Israeli seizure of abandoned Arab homes and farmland → made refugee displacement permanent across generations"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TERROR & EXPULSION",
+            "stem": "Implemented in April 1948 alongside the ____________ massacre by Irgun and Lehi, ____________ drove villagers to flee."
+          },
+          {
+            "badge": "THE NAKBA",
+            "stem": "Over ____________ Palestinian Arabs were displaced from more than 400 villages into camps administered by ____________."
+          },
+          {
+            "badge": "BLOCKED REPATRIATION",
+            "stem": "Despite UN Resolution 194, Israel permanently barred refugee return in order to safeguard a ____________."
+          }
+        ],
+        "watch_out": "UNRWA was created specifically for Palestinian refugee relief in 1949—do not confuse it with UNSCOP or UNEF peacekeepers.",
+        "prose_hash": "94d6e23db6",
+        "prose_fp": "6c0293a2",
+        "question_hash": "b1654c7ab0"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Expanded Green Line",
+            "bullet": "Bunche’s Rhodes armistices drew the Green Line → expanded Israel from 55% to 78% of Palestine"
+          },
+          {
+            "hint": "Partitioned Arab remnants",
+            "bullet": "Jordan annexed the West Bank and East Jerusalem while Egypt administered Gaza → left Palestinians stateless"
+          },
+          {
+            "hint": "Ceasefire without peace",
+            "bullet": "Arab states refused peace treaties, Egypt barred Suez transit, and fedayeen border raids triggered reprisals"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Indefensible narrow waist",
+            "bullet": "Green Line left Israel barely nine miles wide near Netanya → heightened Israeli security anxieties"
+          },
+          {
+            "hint": "Divided Jerusalem",
+            "bullet": "Barbed wire divided Jerusalem, barring Jewish access to holy sites inside Jordan’s Old City"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TERRITORIAL EXPANSION",
+            "stem": "Negotiated on Rhodes by ____________, the 1949 Green Line left Israel holding ____________ of Mandatory Palestine."
+          },
+          {
+            "badge": "STATELESS PALESTINIANS",
+            "stem": "Rather than creating an Arab Palestine, ____________ annexed the West Bank while ____________ occupied the Gaza Strip."
+          },
+          {
+            "badge": "UNRESOLVED HOSTILITY",
+            "stem": "Because the agreements were military ceasefires rather than ____________, Suez blockades and ____________ raids persisted."
+          }
+        ],
+        "watch_out": "The 1949 Rhodes Agreements were temporary military armistices, not peace treaties—Arab states still refused to recognise Israel.",
+        "prose_hash": "909f292cf5",
+        "prose_fp": "4a5bd984",
+        "question_hash": "eb0ced5c06"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Demographic doubling",
+            "bullet": "1950 Law of Return and airlifts like Operation Magic Carpet doubled Israel’s population past 1.4 million"
+          },
+          {
+            "hint": "Citizen-soldier defence",
+            "bullet": "Compulsory IDF conscription and trained reserve service populated vulnerable frontiers and enabled rapid wartime mobilisation"
+          },
+          {
+            "hint": "American financial lifeline",
+            "bullet": "A $100 million US bank loan and private Jewish fundraising funded housing and prevented economic collapse"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Mizrahi exodus",
+            "bullet": "Backlash across Iraq and Yemen drove hundreds of thousands of Middle Eastern Jews into Israel"
+          },
+          {
+            "hint": "West German reparations",
+            "bullet": "1952 West German Holocaust reparations supplemented US aid → financed industrial infrastructure beyond transit camps"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MASS IMMIGRATION",
+            "stem": "Passed in July 1950, the ____________ alongside airlifts such as ____________ doubled Israel’s Jewish population by 1952."
+          },
+          {
+            "badge": "FRONTIER SECURITY",
+            "stem": "Pairing new border settlements with compulsory ____________ and reserve duty allowed Israel to mobilise rapidly."
+          },
+          {
+            "badge": "ECONOMIC SURVIVAL",
+            "stem": "Amid severe rationing and canvas transit camps, a ____________ US loan and private donations kept Israel solvent."
+          }
+        ],
+        "watch_out": "Half of Israel’s post-1948 immigrants arrived from Arab states like Iraq and Yemen via airlifts, not solely from Europe.",
+        "prose_hash": "0d2fc5f6cc",
+        "prose_fp": "f0dae1a4",
+        "question_hash": "d90b8fb150"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Operation Black Arrow",
+            "bullet": "Israeli paratroopers stormed Egypt’s Gaza garrison in February 1955 → killed 38 Egyptian soldiers"
+          },
+          {
+            "hint": "Blow to prestige",
+            "bullet": "Exposed glaring Egyptian military weakness → humiliated Nasser before his own Free Officers army regime"
+          },
+          {
+            "hint": "Urgent rearmament drive",
+            "bullet": "Convinced Nasser Egypt needed modern jets and tanks while escalating state-backed fedayeen border raids"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lavon Affair backdrop",
+            "bullet": "Recent Israeli covert sabotage trials in Cairo had already poisoned secret diplomatic restraint with Ben-Gurion"
+          },
+          {
+            "hint": "Baghdad Pact rivalry",
+            "bullet": "Nasser’s Pan-Arab leadership claims meant failing to answer Israeli strikes risked military coup at home"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GAZA GARRISON STRIKE",
+            "stem": "Authorised by Ben-Gurion in February 1955, ____________ killed ____________ Egyptian troops inside Gaza."
+          },
+          {
+            "badge": "POLITICAL HUMILIATION",
+            "stem": "Exposing the weakness of Egypt’s armed forces threatened Nasser’s prestige as champion of ____________."
+          },
+          {
+            "badge": "ARMS RACE TRIGGER",
+            "stem": "Determined never to be defenceless again, Nasser sought ____________ abroad and intensified ____________ raids."
+          }
+        ],
+        "watch_out": "Before the February 1955 Gaza Raid, Nasser focused primarily on domestic reform and removing British bases rather than war with Israel.",
+        "prose_hash": "7cf8ade3de",
+        "prose_fp": "e82e5e49",
+        "question_hash": "5c5b86e8ab"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Western Cold War strings",
+            "bullet": "Washington and London tied weapons sales to anti-Soviet pacts → clashed with Nasser’s Non-Aligned independence"
+          },
+          {
+            "hint": "Cotton for MiGs",
+            "bullet": "September 1955 Czech deal traded cotton for 200 Soviet MiG-15 jets and 300 modern tanks"
+          },
+          {
+            "hint": "Choking Eilat trade",
+            "bullet": "Tightening the Straits of Tiran blockade choked Israel’s Red Sea port of Eilat and boosted Nasser"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Tripartite arms balance",
+            "bullet": "1950 Western Tripartite Declaration had rationed regional weapons → Soviet entry shattered the military balance"
+          },
+          {
+            "hint": "Israeli pre-emptive fear",
+            "bullet": "Dayan and Ben-Gurion feared waiting until Egyptian crews mastered Soviet jets would prove fatal"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NON-ALIGNED DEFIANCE",
+            "stem": "Refusing to join Western anti-Soviet pacts after the Gaza raid, Nasser turned to Moscow via ____________."
+          },
+          {
+            "badge": "SOVIET ARSENAL",
+            "stem": "Announced in September 1955, the deal exchanged Egyptian cotton for ____________ and 300 modern tanks."
+          },
+          {
+            "badge": "RED SEA BLOCKADE",
+            "stem": "Tightening the naval blockade of the ____________ cut off Israeli shipping to ____________ and alarmed Tel Aviv."
+          }
+        ],
+        "watch_out": "Czechoslovakia acted as a front for Moscow—the MiG-15 jets and tanks supplied to Egypt in 1955 were Soviet.",
+        "prose_hash": "08dc55b850",
+        "prose_fp": "30119770",
+        "question_hash": "75b07cc9b8"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Industrialisation flagship",
+            "bullet": "Nasser needed the Aswan High Dam for Nile flood control, hydroelectricity, and feeding Egypt’s growing population"
+          },
+          {
+            "hint": "Dulles’s loan punishment",
+            "bullet": "After Nasser recognised Communist China, Dulles cancelled the $56 million Western loan to punish neutralism"
+          },
+          {
+            "hint": "Tolls and defiance",
+            "bullet": "Nationalising the Anglo-French Suez Canal on 26 July 1956 used transit tolls to fund the dam"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Anti-colonial grievance",
+            "bullet": "Built by Egyptian labour yet owned in London and Paris, the canal symbolised lingering imperial exploitation"
+          },
+          {
+            "hint": "European oil artery",
+            "bullet": "Two-thirds of Western Europe’s Middle Eastern oil passed through Suez → triggered panic in Eden’s cabinet"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LOAN WITHDRAWN",
+            "stem": "Punishing Cairo for recognising ____________, US Secretary of State ____________ cancelled $56 million in Aswan Dam funding."
+          },
+          {
+            "badge": "REVENUE SOLUTION",
+            "stem": "On 26 July 1956, Nasser nationalised the ____________ so shipping tolls could finance the ____________ directly."
+          },
+          {
+            "badge": "IMPERIAL OUTRAGE",
+            "stem": "Seizing the British- and French-owned waterway enraged London and Paris, who depended on it for ____________."
+          }
+        ],
+        "watch_out": "Nasser legally compensated Canal shareholders and kept commercial shipping moving—Israel alone remained barred from Suez transit.",
+        "prose_hash": "724726822a",
+        "prose_fp": "4d82961b",
+        "question_hash": "fa4785454b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Covert Paris protocol",
+            "bullet": "Eden, French leaders, and Ben-Gurion signed the secret Sèvres Agreement to manufacture an invasion pretext"
+          },
+          {
+            "hint": "Sinai trigger attack",
+            "bullet": "Israeli paratroopers dropped near the Mitla Pass on 29 October 1956, sweeping rapidly across Sinai"
+          },
+          {
+            "hint": "Staged peacekeeping ultimatum",
+            "bullet": "Britain and France demanded withdrawal from the canal, then bombed Egyptian airfields and seized Port Said"
+          }
+        ],
+        "context": [
+          {
+            "hint": "French Algerian motive",
+            "bullet": "France wanted Nasser toppled because Cairo backed FLN anti-colonial nationalists fighting French rule in Algeria"
+          },
+          {
+            "hint": "Eden’s Munich obsession",
+            "bullet": "Eden equated Nasser with 1930s fascist dictators, hiding the Sèvres plot completely from President Eisenhower"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COVER-STORY PLOT",
+            "stem": "Meeting secretly outside Paris, ____________, France, and ____________ signed the Sèvres Agreement to topple Nasser."
+          },
+          {
+            "badge": "ISRAELI THRUST",
+            "stem": "Launching the plan on 29 October, Israeli forces struck near the ____________ and raced across ____________."
+          },
+          {
+            "badge": "ANGLO-FRENCH SEIZURE",
+            "stem": "Posing as neutral peacekeepers separating combatants, Anglo-French forces bombed airfields and landed paratroopers at ____________."
+          }
+        ],
+        "watch_out": "Britain and France were not neutral peacekeepers—they secretly pre-arranged Israel’s Sinai attack at Sèvres to justify reoccupying the canal.",
+        "prose_hash": "14b9626ef7",
+        "prose_fp": "d049308e",
+        "question_hash": "c037736df3"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Financial stranglehold",
+            "bullet": "Eisenhower blocked IMF loans and threatened the pound → forced a humiliating ceasefire on 6 November"
+          },
+          {
+            "hint": "Cold War timing",
+            "bullet": "Allied aggression undermined Western condemnation of the simultaneous Soviet tank invasion of Hungary"
+          },
+          {
+            "hint": "UNEF and Tiran",
+            "bullet": "US pressure forced Israeli Sinai withdrawal as UNEF peacekeepers deployed and reopened the Straits of Tiran"
+          },
+          {
+            "hint": "Pan-Arab triumph",
+            "bullet": "Keeping Suez crowned Nasser an Arab hero → produced the 1958 Egypt-Syria United Arab Republic"
+          }
+        ],
+        "context": [
+          {
+            "hint": "End of imperial Britain",
+            "bullet": "Eden resigned in disgrace → confirmed Washington and Moscow had replaced British regional dominance"
+          },
+          {
+            "hint": "Ten-year Israeli quiet",
+            "bullet": "UNEF border patrols gave Israel ten years of quiet frontiers and Red Sea shipping"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EISENHOWER’S COERCION",
+            "stem": "Outraged during the Soviet invasion of Hungary, President ____________ threatened ____________ loans and forced Britain to retreat."
+          },
+          {
+            "badge": "SINAI SETTLEMENT",
+            "stem": "Israel withdrew from Sinai in 1957 only after ____________ peacekeepers deployed and reopened the ____________."
+          },
+          {
+            "badge": "PAN-ARAB SURGE",
+            "stem": "Emerging triumphant with the canal intact, Nasser united Egypt and Syria into the ____________ in 1958."
+          }
+        ],
+        "watch_out": "Militarily Egypt lost Sinai in days, yet politically Nasser won Suez because American financial pressure forced all invaders out.",
+        "prose_hash": "8cd621288e",
+        "prose_fp": "b224ee4a",
+        "question_hash": "f104edfb72"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Water crisis summit",
+            "bullet": "Nasser convened the January 1964 Cairo Summit to coordinate opposition against Israel’s National Water Carrier"
+          },
+          {
+            "hint": "Avoiding premature war",
+            "bullet": "Nasser cautioned Arab states were militarily unready for open war → restrained reckless Syrian escalation"
+          },
+          {
+            "hint": "Supervised Palestinian body",
+            "bullet": "Establishing the PLO under Ahmad Shukeiri voiced refugee statehood claims while keeping militants under Arab control"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Collapse of UAR",
+            "bullet": "Syria’s 1961 breakaway from the United Arab Republic fuelled bitter Arab rivalries over confronting Israel"
+          },
+          {
+            "hint": "Yemen war drain",
+            "bullet": "Egyptian troops bogged down in Yemen’s civil war → made Nasser reluctant to fight Israel"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAIRO SUMMIT",
+            "stem": "Convening the First Arab League Summit in January 1964, Nasser sought to counter Israel’s ____________ without..."
+          },
+          {
+            "badge": "FOUNDING THE PLO",
+            "stem": "Led initially by ____________ in May 1964, the ____________ declared Israel’s establishment null and void."
+          },
+          {
+            "badge": "CONTROLLED RESISTANCE",
+            "stem": "Sponsoring an official Palestinian body allowed Arab regimes to represent refugees while restraining ____________."
+          }
+        ],
+        "watch_out": "In 1964 the PLO was founded under Ahmad Shukeiri and Nasser’s supervision—Yasser Arafat only became PLO Chairman in 1969.",
+        "prose_hash": "8a0b770241",
+        "prose_fp": "f1a83a49",
+        "question_hash": "9fe15b1971"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Negev irrigation lifeline",
+            "bullet": "Israel’s 1964 National Water Carrier pumped Sea of Galilee water south to irrigate the Negev desert"
+          },
+          {
+            "hint": "Arab tributary diversion",
+            "bullet": "Syria and Jordan launched the Headwater Diversion Plan to cut off northern River Jordan tributaries"
+          },
+          {
+            "hint": "Tank and air strikes",
+            "bullet": "Israeli tanks and jets bombed Syrian earth-moving machinery in 1965–66 → destroyed the diversion channels"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Existential resource stakes",
+            "bullet": "Arid climate meant blocking Galilee water threatened Israel’s demographic absorption and economic survival"
+          },
+          {
+            "hint": "Failed Johnston diplomacy",
+            "bullet": "Earlier collapse of US water-sharing proposals left resource disputes dependent on military force"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ISRAELI PIPELINE",
+            "stem": "Completed in 1964, Israel’s ____________ pumped water from the ____________ to develop the Negev desert."
+          },
+          {
+            "badge": "ARAB COUNTER-PROJECT",
+            "stem": "Condemning this extraction, Syria and Jordan began the ____________ to redirect northern tributaries."
+          },
+          {
+            "badge": "MILITARY ESCALATION",
+            "stem": "Between 1965 and 1966, Israeli ____________ and aircraft destroyed Syrian construction gear, normalising border clashes."
+          }
+        ],
+        "watch_out": "Water disputes occurred along the northern Syrian and Jordanian River Jordan headwaters, not along the Suez Canal.",
+        "prose_hash": "88ff2c8303",
+        "prose_fp": "552a89c6",
+        "question_hash": "9de4746a22"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Entanglement strategy",
+            "bullet": "Arafat’s Fatah launched independent guerrilla sabotage from January 1965 → aimed to spark wider Arab-Israeli war"
+          },
+          {
+            "hint": "Damascus sanctuary",
+            "bullet": "Syria’s radical 1966 military regime armed, trained, and sheltered Fatah fighters for cross-border raids"
+          },
+          {
+            "hint": "Golan artillery fire",
+            "bullet": "Syrian gunners atop the Golan Heights shelled Hula Valley kibbutzim → prompted fierce Israeli warnings"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Algerian revolutionary model",
+            "bullet": "Inspired by Algerian guerrillas defeating France, Fatah believed armed struggle rather than summits liberated homelands"
+          },
+          {
+            "hint": "Transit via Jordan",
+            "bullet": "Syria often sent Fatah raiders into Israel across Jordanian territory → deflected Israeli reprisals onto Hussein"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "FATAH’S STRATEGY",
+            "stem": "Rejecting cautious Arab summitry, ____________ founded ____________ to trigger wider war through guerrilla sabotage."
+          },
+          {
+            "badge": "BA’ATHIST PATRONAGE",
+            "stem": "After seizing power in 1966, Damascus’s radical regime supplied militants with ____________ and training sanctuaries."
+          },
+          {
+            "badge": "GOLAN SHELLING",
+            "stem": "Routine Syrian artillery fire from the ____________ onto Israeli farms below pushed both states toward war."
+          }
+        ],
+        "watch_out": "Fatah began as an independent guerrilla group rival to Shukeiri’s Cairo-backed PLO before Arafat took over the PLO after 1967.",
+        "prose_hash": "bd6af485ae",
+        "prose_fp": "f6ec108a",
+        "question_hash": "d356044347"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Heavy West Bank strike",
+            "bullet": "4,000 Israeli troops, tanks, and jets struck Samu on 13 November 1966 after a Fatah mine"
+          },
+          {
+            "hint": "Jordanian losses",
+            "bullet": "Killed 15 Jordanian soldiers and demolished over 100 homes → humiliated pro-Western King Hussein"
+          },
+          {
+            "hint": "Anti-Hashemite riots",
+            "bullet": "Furious West Bank Palestinian riots threatened Hussein’s throne → forced him to harden rhetoric against Israel"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Wrong target blunder",
+            "bullet": "Punishing moderate Jordan rather than Fatah’s Syrian sponsors pushed Hussein into Nasser’s May 1967 military pact"
+          },
+          {
+            "hint": "Palestinian majority pressure",
+            "bullet": "Annexation after 1948 gave Jordan a restive West Bank Palestinian population demanding weapons against Israel"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DAYLIGHT REPRISAL",
+            "stem": "Following a fatal Fatah landmine, Israel sent 4,000 soldiers into ____________ in the Jordanian-ruled ____________."
+          },
+          {
+            "badge": "MONARCH HUMILIATED",
+            "stem": "Killing 15 Jordanian troops and flattening homes discredited ____________, who had maintained secret restraint with Israel."
+          },
+          {
+            "badge": "DOMESTIC DESTABILISATION",
+            "stem": "Sweeping riots across West Bank towns forced Hussein to abandon moderation and move closer to ____________."
+          }
+        ],
+        "watch_out": "Although Syria sponsored Fatah, Israel struck Jordan at Samu—a miscalculation that drove King Hussein into Nasser’s wartime alliance.",
+        "prose_hash": "63c62138c8",
+        "prose_fp": "7fc10fc1",
+        "question_hash": "db04013d51"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "DMZ tractor clash",
+            "bullet": "Ploughing disputed demilitarized fields sparked Golan shelling and Israeli Mirage air strikes on 7 April 1967"
+          },
+          {
+            "hint": "Six-nil dogfight rout",
+            "bullet": "Israeli pilots shot down six Syrian MiG-21s for zero losses and buzzed the skies over Damascus"
+          },
+          {
+            "hint": "Defence pact pressure",
+            "bullet": "Public humiliation drove Damascus to demand Nasser activate the November 1966 Egyptian-Syrian defence pact"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Soviet client alarm",
+            "bullet": "Fearing Israeli retaliation might topple its Damascus ally, Moscow soon fed Cairo false invasion warnings"
+          },
+          {
+            "hint": "Arab radio taunts",
+            "bullet": "Jordanian and Syrian broadcasts mocked Nasser for hiding behind UNEF peacekeepers while Syria burned"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "BORDER ESCALATION",
+            "stem": "Sparked when Syrian guns shelled an Israeli tractor in the ____________, French-built ____________ jets struck the Golan."
+          },
+          {
+            "badge": "AERIAL ROUT",
+            "stem": "Shooting down ____________ Syrian MiG-21s without a single loss and flying over ____________ publicly humiliated Syria."
+          },
+          {
+            "badge": "ALLIANCE TRIGGER",
+            "stem": "Exposed as defenceless, Syrian leaders demanded Cairo honour their ____________, pulling Egypt toward the May crisis."
+          }
+        ],
+        "watch_out": "Before June 1967 Israel’s frontline fighter jets were French-built Mirages, whereas Syria and Egypt flew Soviet-built MiGs.",
+        "prose_hash": "ebe439785c",
+        "prose_fp": "69ae2421",
+        "question_hash": "c51181f8d5"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Fabricated troop report",
+            "bullet": "Moscow falsely warned Cairo on 13 May that ten Israeli brigades massed to invade Syria"
+          },
+          {
+            "hint": "Pan-Arab prestige trap",
+            "bullet": "Protecting his Pan-Arab leadership, Nasser marched 100,000 troops into Sinai and demanded UNEF peacekeepers withdraw"
+          },
+          {
+            "hint": "U Thant’s total pullout",
+            "bullet": "Sudden UNEF withdrawal left Egyptian forces holding Sharm el-Sheikh, exposing Nasser to Arab taunts"
+          },
+          {
+            "hint": "Crossing Israel’s red line",
+            "bullet": "Closing the Straits of Tiran on 22 May choked Eilat oil imports — Israel’s explicit casus belli"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rival Arab taunts",
+            "bullet": "Months of Jordanian and Saudi radio broadcasts had mocked Nasser for sheltering behind UNEF peacekeepers"
+          },
+          {
+            "hint": "Iranian oil dependency",
+            "bullet": "Nearly 90% of Israel’s crude oil arrived via Eilat through the Straits of Tiran"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SOVIET MISINFORMATION",
+            "stem": "Acting on a false ____________ report of brigades near Syria, Nasser deployed 100,000 troops into ____________."
+          },
+          {
+            "badge": "PEACEKEEPERS REMOVED",
+            "stem": "Once U Thant withdrew ____________ from Sharm el-Sheikh, Arab pressure pushed Nasser to close the ____________."
+          },
+          {
+            "badge": "ACT OF WAR",
+            "stem": "Blocking oil tankers bound for ____________ on 22 May crossed the red line Israel had set in 1957."
+          }
+        ],
+        "watch_out": "UN observers confirmed no Israeli brigades were massed on Syria’s border—the 13 May Soviet intelligence report was false.",
+        "prose_hash": "c9c6dd8d3a",
+        "prose_fp": "1fdd36bb",
+        "question_hash": "8bdef9b001"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Three-front encirclement",
+            "bullet": "Hussein’s 30 May Defence Pact placed Jordan’s army under Egyptian command alongside deploying Iraqi troops"
+          },
+          {
+            "hint": "Stalled naval convoy",
+            "bullet": "President Johnson urged restraint yet failed to assemble an international fleet to reopen Tiran"
+          },
+          {
+            "hint": "Unity war cabinet",
+            "bullet": "Besieged Israel appointed Moshe Dayan Defence Minister on 1 June alongside Rabin to strike first"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Reserve mobilisation paralysis",
+            "bullet": "Keeping citizen-soldier reservists mobilised on three borders paralysed Israel’s economy, farms, and factories"
+          },
+          {
+            "hint": "Vietnam preoccupation",
+            "bullet": "Deep entanglement in the Vietnam War made the US Congress unwilling to risk unilateral military action"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EASTERN ENCIRCLEMENT",
+            "stem": "Encircled on three borders after ____________ signed the 30 May Joint Defence Pact in Cairo, Israel faced..."
+          },
+          {
+            "badge": "DIPLOMATIC DEADLOCK",
+            "stem": "Although President ____________ warned against firing first, Washington failed to organise a naval convoy through ____________."
+          },
+          {
+            "badge": "HAWKISH CABINET",
+            "stem": "Appointing ____________ as Defence Minister on 1 June signalled Israel’s decision to launch a pre-emptive strike."
+          }
+        ],
+        "watch_out": "President Johnson opposed unilateral action at first due to Vietnam, only tacitly accepting Israeli pre-emption once naval diplomacy stalled.",
+        "prose_hash": "abcecf493d",
+        "prose_fp": "8edf6ea0",
+        "question_hash": "ce925a3f3a"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Tactical 07:45 timing",
+            "bullet": "Struck at 07:45 rather than dawn → caught Egyptian patrols grounded and commanders in Cairo traffic"
+          },
+          {
+            "hint": "Radar evasion route",
+            "bullet": "Nearly 200 Israeli jets flew wave-skimming across the Mediterranean under strict radio silence"
+          },
+          {
+            "hint": "Runway-cratering munitions",
+            "bullet": "Specialised cratering bombs shattered runways first → trapped 300 Egyptian MiGs and bombers for cannon strafing"
+          },
+          {
+            "hint": "Multi-front air sweep",
+            "bullet": "Afternoon strikes crippled Jordanian and Syrian airbases → left Arab tank columns exposed across open desert"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Eight-minute ground turnarounds",
+            "bullet": "Israeli ground crews refuelled and rearmed returning jets inside eight minutes → multiplied strike waves"
+          },
+          {
+            "hint": "Unprotected tarmac rows",
+            "bullet": "Egyptian aircraft sat parked wingtip-to-wingtip without hardened concrete hangars → maximised cannon destruction"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SURPRISE TIMING",
+            "stem": "Launching at 07:45 under strict ____________, nearly 200 Israeli jets flew low over the ____________ to evade radar."
+          },
+          {
+            "badge": "TRAPPED ON TARMAC",
+            "stem": "Dropping specialised ____________ bombs first trapped over ____________ Egyptian aircraft on the ground for cannon fire."
+          },
+          {
+            "badge": "BATTLEFIELD DECISIVENESS",
+            "stem": "Wiping out Egyptian, Jordanian, and Syrian airpower on 5 June left Arab armies completely exposed in ____________."
+          }
+        ],
+        "watch_out": "Operation Focus struck at 07:45 rather than dawn, deliberately waiting until routine Egyptian dawn fighter patrols had landed.",
+        "prose_hash": "0f8920c9c0",
+        "prose_fp": "9f363256",
+        "question_hash": "bd4eafa1fe"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Sinai armoured breakthrough",
+            "bullet": "Tal, Yoffe, and Sharon smashed Gaza and Abu Ageila defences, routing retreating Egyptians at Mitla Pass"
+          },
+          {
+            "hint": "False Cairo broadcasts",
+            "bullet": "Deceived by false Egyptian victory claims, Hussein shelled West Jerusalem despite Israeli pleas for neutrality"
+          },
+          {
+            "hint": "Old City stormed",
+            "bullet": "Israeli paratroopers captured East Jerusalem and the Western Wall on 7 June, clearing the West Bank"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Amer’s chaotic retreat",
+            "bullet": "Field Marshal Amer’s panicked 6 June retreat order turned Egyptian Sinai divisions into defenceless desert convoys"
+          },
+          {
+            "hint": "Sacred Zionist milestone",
+            "bullet": "Capturing the Western Wall fulfilled centuries of religious longing and hardened Israeli refusal to return Jerusalem"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SINAI ROUT",
+            "stem": "Shielded by uncontested airpower, Israeli armour broke Abu Ageila and decimated retreating columns at the ____________."
+          },
+          {
+            "badge": "HUSSEIN MISLED",
+            "stem": "Deceived by false ____________ broadcasts on 5 June, Jordanian artillery shelled ____________ despite Israeli warnings."
+          },
+          {
+            "badge": "JERUSALEM CAPTURED",
+            "stem": "Counter-attacking across the West Bank, Israeli paratroopers stormed the Old City and seized the ____________ on 7 June."
+          }
+        ],
+        "watch_out": "Israel initially urged King Hussein via the UN to stay out of the war—Jordan lost the West Bank only after shelling West Jerusalem.",
+        "prose_hash": "70486de517",
+        "prose_fp": "74ed962f",
+        "question_hash": "5a890c2ce6"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Uphill bunker assault",
+            "bullet": "Dayan’s 9 June offensive used airpower and armoured bulldozers to capture Syrian bunkers and Quneitra"
+          },
+          {
+            "hint": "Tripled territorial buffer",
+            "bullet": "By the 10 June ceasefire, Israel held Sinai, Gaza, East Jerusalem, the West Bank, and Golan"
+          },
+          {
+            "hint": "Occupation dilemma",
+            "bullet": "Victory secured deep strategic buffers yet placed over one million Palestinians under Israeli military occupation"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Northern kibbutz lobbying",
+            "bullet": "Galilee border farmers pressured Eshkol and Dayan not to accept a ceasefire while Syrian guns remained"
+          },
+          {
+            "hint": "Land-for-peace shift",
+            "bullet": "Holding Arab territories created the bargaining chips behind UN Resolution 242 and future settler movements"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "NORTHERN OFFENSIVE",
+            "stem": "Once Egypt and Jordan collapsed, Moshe Dayan ordered armoured bulldozers up the ____________ to capture ____________."
+          },
+          {
+            "badge": "TRIPLED TERRITORY",
+            "stem": "Before the UN ceasefire on ____________, Israel seized five territories, gaining deep strategic buffers along Suez and Jordan."
+          },
+          {
+            "badge": "LONG-TERM LEGACY",
+            "stem": "Shattering three Arab armies placed over ____________ Palestinians under military occupation, reshaping the entire conflict."
+          }
+        ],
+        "watch_out": "Israel captured five distinct territories in June 1967—Sinai and Gaza from Egypt, West Bank and East Jerusalem from Jordan, and Golan from Syria.",
+        "prose_hash": "38f40d9505",
+        "prose_fp": "af758330",
+        "question_hash": "3b3a2eff4b"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Military rule imposed",
+            "bullet": "Occupying Gaza and the West Bank → placed over one million Palestinians under Israeli military rule"
+          },
+          {
+            "hint": "New refugee wave",
+            "bullet": "300,000 displaced refugees fled into Jordan and Syria → deepened camp overcrowding and border instability"
+          },
+          {
+            "hint": "Old City annexation",
+            "bullet": "Paratroopers captured the Western Wall → Knesset formally annexed East Jerusalem as Israel’s eternal capital"
+          },
+          {
+            "hint": "International legal reaction",
+            "bullet": "UN condemned unilateral annexation as illegal → insisted Jerusalem’s final status required bilateral talks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Pre-1967 divided city",
+            "bullet": "Jordanian rule since 1949 had divided Jerusalem → barred Jewish worshippers from visiting the Western Wall"
+          },
+          {
+            "hint": "Second Palestinian uprooting",
+            "bullet": "Many 1967 evacuees were already refugees from the 1948 Nakba → suffered displacement for a second time"
+          },
+          {
+            "hint": "Shift in conflict",
+            "bullet": "Governing densely populated Arab territories → turned interstate border rivalry into prolonged military occupation"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "OCCUPIED POPULATION",
+            "stem": "Capturing the West Bank and Gaza transformed the conflict by placing ____________ under ____________ while displacing ____________."
+          },
+          {
+            "badge": "JERUSALEM ANNEXATION",
+            "stem": "Weeks after troops under Motta Gur reached ____________, the Knesset formally ____________ despite condemnation from ____________."
+          },
+          {
+            "badge": "WIDER TRANSFORMATION",
+            "stem": "Compounding the earlier 1948 refugee crisis, absorbing populated Arab lands shifted Israel from defending borders to ____________."
+          }
+        ],
+        "watch_out": "Do not confuse capturing the Old City with international recognition—the UN condemned Israel’s annexation of East Jerusalem as illegal under international law.",
+        "prose_hash": "24f92e01f2",
+        "prose_fp": "f0f84b36",
+        "question_hash": "4a666da5f5"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Negotiating from weakness",
+            "bullet": "Eight Arab heads of state met in Sudan stunned by 1967 losses → refused talks from military weakness"
+          },
+          {
+            "hint": "Hardliners overrule moderates",
+            "bullet": "Syria and Algeria demanded military defiance → outweighed moderates such as King Hussein who favoured diplomacy"
+          },
+          {
+            "hint": "Hardened Israeli opinion",
+            "bullet": "Pledging no peace, recognition, or negotiations → convinced Israelis that trading captured land for peace was impossible"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Six-day military trauma",
+            "bullet": "Operation Focus and rapid territorial rout shattered regime prestige → Arab rulers feared overthrow if they conceded"
+          },
+          {
+            "hint": "Gulf financial backing",
+            "bullet": "Oil-rich Gulf monarchies pledged subsidies to Egypt and Jordan → enabled frontline states to sustain defiance"
+          },
+          {
+            "hint": "Pan-Arab street pressure",
+            "bullet": "Decades of nationalist anti-Zionist pledges → made public recognition of Israel politically fatal across Arab capitals"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SUMMIT DIVISIONS",
+            "stem": "Meeting in Sudan after catastrophic territorial losses, hardline regimes in ____________ overruled moderates like ____________."
+          },
+          {
+            "badge": "UNCOMPROMISING FORMULA",
+            "stem": "Adopted on 1 September 1967, the resolution bound Arab states to ____________, ____________, and ____________."
+          },
+          {
+            "badge": "DIPLOMATIC BACKFIRE",
+            "stem": "Far from pressuring Israel into unilateral withdrawal, this defiant stance convinced Israeli voters that ____________."
+          }
+        ],
+        "watch_out": "Arab leaders were not united hardliners at Khartoum—Jordan’s King Hussein quietly favoured diplomacy to recover the West Bank, whereas Syria and Algeria pushed defiance.",
+        "prose_hash": "223e002c6b",
+        "prose_fp": "8d61f7e0",
+        "question_hash": "a75cb57d8e"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Reciprocal peace bargain",
+            "bullet": "Drafted by Lord Caradon → exchanged Israeli military withdrawal for peace inside secure, recognised boundaries"
+          },
+          {
+            "hint": "Deliberate English ambiguity",
+            "bullet": "Omitting the word all before territories occupied → allowed Israel to argue for partial, defensible withdrawals"
+          },
+          {
+            "hint": "Sidelined national rights",
+            "bullet": "Referred solely to a refugee problem rather than statehood → prompted the PLO to reject it outright"
+          }
+        ],
+        "context": [
+          {
+            "hint": "French translation clash",
+            "bullet": "Official French wording specified withdrawal from the territories → fuelled Arab demands for full 1967 borders"
+          },
+          {
+            "hint": "Superpower consensus",
+            "bullet": "Both Washington and Moscow backed unanimous Security Council passage → sought stability after June’s war scare"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CORE PRINCIPLE",
+            "stem": "Adopted unanimously in November 1967, the resolution tied Israeli withdrawal from ____________ to every regional state’s right to ____________."
+          },
+          {
+            "badge": "TEXTUAL AMBIGUITY",
+            "stem": "Disputes erupted immediately over the English phrasing because omitting ____________ let Israel claim ____________."
+          },
+          {
+            "badge": "PALESTINIAN REJECTION",
+            "stem": "Describing displaced Palestinians merely as a ____________ while ignoring self-determination led ____________ to reject the text."
+          }
+        ],
+        "watch_out": "The PLO did not reject Resolution 242 over border lines alone—it rejected the resolution because it treated Palestinians purely as refugees rather than a nation entitled to statehood.",
+        "prose_hash": "22e1b94303",
+        "prose_fp": "2010b987",
+        "question_hash": "c24033f28a"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Blocked international canal",
+            "bullet": "Mines and sunken ships closed the Suez Canal from 1967 → turned the waterway into a static front"
+          },
+          {
+            "hint": "Fortified sand rampart",
+            "bullet": "Haim Bar-Lev built a 20-metre sand wall and concrete bunkers → entrenched Israeli hold along the east bank"
+          },
+          {
+            "hint": "Cross-canal bombardments",
+            "bullet": "Nasser launched artillery duels and raids to prevent permanent borders → bred dangerous Israeli military complacency"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lost shipping tolls",
+            "bullet": "Canal closure starved Egypt of vital transit revenues → intensified economic pressure on Cairo to challenge occupation"
+          },
+          {
+            "hint": "Soviet arms resupply",
+            "bullet": "Moscow rapidly replaced Egyptian tanks and guns lost in 1967 → enabled sustained bombardment across Suez"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EAST BANK DEFENCES",
+            "stem": "Along the east bank of the blocked waterway, Israeli engineers erected a ____________ reinforced with ____________."
+          },
+          {
+            "badge": "NASSER’S OBJECTIVE",
+            "stem": "Determined to stop the 1967 ceasefire solidifying into a permanent frontier, Egypt waged ____________ across the canal."
+          },
+          {
+            "badge": "FALSE INVINCIBILITY",
+            "stem": "Holding static bunkers under heavy shellfire fostered an Israeli sense of ____________ that proved costly in ____________."
+          }
+        ],
+        "watch_out": "Place the Bar-Lev Line accurately on the map—it ran along the east bank of the Suez Canal in occupied Sinai, not along Israel’s Jordanian or Syrian borders.",
+        "prose_hash": "f13d2e6302",
+        "prose_fp": "2aa151e0",
+        "question_hash": "58e39433a2"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Perimeter security buffers",
+            "bullet": "Yigal Allon’s plan sited farming outposts along the Jordan Valley → buffered Israel’s narrow coastal plain"
+          },
+          {
+            "hint": "Religious nationalist movement",
+            "bullet": "Gush Emunim planted ideological settlements deep inside Judea and Samaria → claimed biblical West Bank hilltops"
+          },
+          {
+            "hint": "Expanded state subsidies",
+            "bullet": "Menachem Begin’s 1977 Likud government heavily subsidised expansion → embedded settlers, fragmenting land for two states"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Vulnerable pre-1967 waist",
+            "bullet": "Pre-1967 borders left Israel’s coastal heartland perilously narrow → drove Labour commanders to seek Jordan Valley depth"
+          },
+          {
+            "hint": "International law breach",
+            "bullet": "Moving civilian citizens into occupied territory breached international conventions → strained relations with Western allies"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SECURITY TO IDEOLOGY",
+            "stem": "Initially approved under Labour as military buffers in ____________, settlement building shifted when ____________ targeted central West Bank hilltops."
+          },
+          {
+            "badge": "STATE SUBSIDIES",
+            "stem": "Once ____________ took office in 1977, generous government incentives embedded ____________ deep inside occupied territory."
+          },
+          {
+            "badge": "TWO-STATE OBSTACLE",
+            "stem": "Scattering permanent Jewish towns and roads across Palestinian areas created physical barriers against any viable ____________."
+          }
+        ],
+        "watch_out": "Israeli settlements did not start under Likud in 1977—Labour initiated strategic Jordan Valley outposts after 1967 under the Allon Plan before Likud accelerated ideological West Bank expansion.",
+        "prose_hash": "6f9e589f23",
+        "prose_fp": "e09c8702",
+        "question_hash": "73a8f0b75b"
+      }
+    ],
+    "lesson_7": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Cross-river IDF raid",
+            "bullet": "Israeli armour crossed into Jordan in March 1968 → Fatah fighters and Jordanian artillery stood firm at Karameh"
+          },
+          {
+            "hint": "Shattered invincibility myth",
+            "bullet": "Inflicting 28 Israeli deaths and tank losses → enabled Arafat to celebrate a heroic moral victory"
+          },
+          {
+            "hint": "Guerrilla political takeover",
+            "bullet": "Thousands of new volunteers joined Fatah → propelled Yasser Arafat to PLO Chairman in February 1969"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Disillusionment after 1967",
+            "bullet": "Swift collapse of regular Arab armies in June 1967 → convinced Palestinians to lead their own armed struggle"
+          },
+          {
+            "hint": "Transformation of PLO",
+            "bullet": "Created by Arab governments at Cairo in 1964 → shifted from state-sponsored body to independent guerrilla movement"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CLOSE-QUARTERS STAND",
+            "stem": "Refusing to melt away when Israeli tanks attacked across the Jordan, Fatah guerrillas alongside ____________ inflicted losses that boosted ____________."
+          },
+          {
+            "badge": "SURGE IN SUPPORT",
+            "stem": "Waves of camp volunteers strengthened Fatah’s authority, securing ____________’s election as ____________ in February 1969."
+          },
+          {
+            "badge": "SELF-RELIANT STRUGGLE",
+            "stem": "Following the humiliation of Arab state armies in 1967, Karameh placed ____________ firmly in charge of Palestinian politics."
+          }
+        ],
+        "watch_out": "Karameh was not a conventional military defeat of Israel—IDF troops demolished the camp, yet standing firm against Israeli tanks handed Fatah a decisive propaganda triumph.",
+        "prose_hash": "84de9bf928",
+        "prose_fp": "a56d2cbd",
+        "question_hash": "2dd3a264dd"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Radical splinter faction",
+            "bullet": "George Habash’s Marxist PFLP challenged Arafat → used international skyjackings to seize global media attention"
+          },
+          {
+            "hint": "Coordinated hostage leverage",
+            "bullet": "Operatives including Leila Khaled targeted four Western airliners → demanded release of Palestinian prisoners in Europe and Israel"
+          },
+          {
+            "hint": "Televised desert explosions",
+            "bullet": "Evacuating 300 hostages before blowing up three empty jets at Dawson’s Field → humiliated King Hussein"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ignored statelessness grievance",
+            "bullet": "International diplomacy treated Palestinians solely as refugees → drove radical factions toward spectacular overseas stunts"
+          },
+          {
+            "hint": "Internal PLO factionalism",
+            "bullet": "As an umbrella body rather than one unified army → Arafat struggled to restrain militant Marxist splinter groups"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GLOBAL PUBLICITY",
+            "stem": "Determined to force Palestinian grievances onto world television, Marxist militants from ____________ led by ____________ pioneered skyjackings."
+          },
+          {
+            "badge": "PRISONER DEMANDS",
+            "stem": "Forcing three Western passenger aircraft onto ____________ gave operatives leverage to demand ____________."
+          },
+          {
+            "badge": "DEFIANCE IN JORDAN",
+            "stem": "Blowing up empty airliners before international cameras openly mocked the royal authority of ____________."
+          }
+        ],
+        "watch_out": "Do not blame Yasser Arafat’s Fatah directly for Dawson’s Field—the hijackings were staged by Dr George Habash’s radical Marxist rival faction, the PFLP.",
+        "prose_hash": "5cd4ad4fc3",
+        "prose_fp": "6226634d",
+        "question_hash": "0f5004c116"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Rival armed authority",
+            "bullet": "Armed checkpoints, illegal taxes, and street defiance in Amman → turned PLO militias into a state-within-a-state"
+          },
+          {
+            "hint": "Royal military offensive",
+            "bullet": "King Hussein ordered his Bedouin army into action on 16 September 1970 → shelled camps and repulsed Syrian tanks"
+          },
+          {
+            "hint": "Forced northward exile",
+            "bullet": "Completed PLO expulsion from Jordan by mid-1971 → relocated guerrilla headquarters and fighters into Lebanon"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Jordanian demographic balance",
+            "bullet": "Huge 1948 and 1967 refugee populations inside Jordan → made Hashemite royal survival precarious if militias went unchecked"
+          },
+          {
+            "hint": "Weak Lebanese state",
+            "bullet": "Lebanon’s fragile sectarian government and small army → lacked strength to stop exiled guerrillas establishing southern bases"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THREAT TO THRONE",
+            "stem": "Armed guerrilla checkpoints, illegal taxation, and Dawson’s Field convinced ____________ to unleash his ____________ on 16 September 1970."
+          },
+          {
+            "badge": "URBAN CIVIL WAR",
+            "stem": "Heavy tank shelling across Amman and the defeat of an armoured ____________ intervention crushed militant power in Jordan."
+          },
+          {
+            "badge": "NEW SANCTUARY",
+            "stem": "Driven completely out of Jordan by mid-1971, the PLO shifted its command offices and fighters to ____________."
+          }
+        ],
+        "watch_out": "Keep the two meanings of Black September distinct—it names both the September 1970 Jordanian civil war and the covert militant cell later created to avenge that expulsion.",
+        "prose_hash": "658c530f50",
+        "prose_fp": "c36b3b79",
+        "question_hash": "a7641cd697"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Olympic quarters raid",
+            "bullet": "Eight Black September gunmen scaled Munich’s village fence → killed two Israelis and took nine hostages"
+          },
+          {
+            "hint": "Prisoner exchange demand",
+            "bullet": "Attackers demanded Israel free over 200 jailed Palestinians → turned global games into a televised hostage drama"
+          },
+          {
+            "hint": "Botched airfield ambush",
+            "bullet": "Bungled West German police rescue at Fürstenfeldbruck airfield → killed all nine hostages, leaving eleven murdered"
+          }
+        ],
+        "context": [
+          {
+            "hint": "West German policing limits",
+            "bullet": "Post-war constitutional limits and refusal of IDF commando help → left untrained German police unprepared at the airfield"
+          },
+          {
+            "hint": "Turn to transnational terror",
+            "bullet": "Losing Jordan’s long border after 1970–71 → pushed extreme militants toward shocking European terror attacks"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "VILLAGE SEIZURE",
+            "stem": "Scaling the Olympic fence on 5 September 1972, eight ____________ gunmen murdered two Israelis and held ____________ to demand ____________."
+          },
+          {
+            "badge": "AIRFIELD DISASTER",
+            "stem": "After West German officials declined Israeli commando assistance, a chaotic police ambush at ____________ left ____________."
+          },
+          {
+            "badge": "SECURITY LEGACY",
+            "stem": "Watched live by hundreds of millions on television, the atrocity reshaped global ____________ and Olympic policing."
+          }
+        ],
+        "watch_out": "State the casualty figures accurately—two Israelis died initially inside the Olympic Village and nine hostages died at Fürstenfeldbruck airfield, totalling eleven Israeli victims.",
+        "prose_hash": "2c4b52c533",
+        "prose_fp": "99d6ec6d",
+        "question_hash": "2d34d429c7"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Air raids and Mossad",
+            "bullet": "Golda Meir bombed PLO camps in Lebanon and Syria → authorised Mossad’s covert Operation Wrath of God"
+          },
+          {
+            "hint": "European hit squads",
+            "bullet": "Israeli agents assassinated Black September planners across Europe → mistakenly shot an innocent waiter in Lillehammer"
+          },
+          {
+            "hint": "Western diplomatic boycott",
+            "bullet": "Western states fiercely condemned Olympic terrorism → refused official diplomatic contact with the PLO"
+          },
+          {
+            "hint": "Spotlight on statelessness",
+            "bullet": "Massive television reach forced world leaders to recognise → Palestine could no longer remain a mere refugee issue"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Escalating Lebanese reprisals",
+            "bullet": "Heavy Israeli air strikes on camps inside Lebanon → deepened sectarian tensions and militant recruitment north of Israel"
+          },
+          {
+            "hint": "Rethinking pure violence",
+            "bullet": "Seeing terrorism harden Western boycotts → gradually encouraged Arafat to pursue UN diplomatic legitimacy alongside armed struggle"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COVERT ASSASSINATIONS",
+            "stem": "Under Prime Minister ____________, Israel bombed guerrilla camps and launched ____________ to eliminate Munich organisers across Europe."
+          },
+          {
+            "badge": "LILLEHAMMER SCANDAL",
+            "stem": "Covert tracking drew sharp international criticism in 1973 when Mossad agents mistakenly killed ____________ in ____________."
+          },
+          {
+            "badge": "DUAL GLOBAL EFFECT",
+            "stem": "Although Western governments shunned the PLO over terror, global broadcasts simultaneously forced leaders to acknowledge ____________."
+          }
+        ],
+        "watch_out": "Examine both sides of Munich’s international impact—it revulsed Western public opinion against Palestinian terrorism while making Palestinian statelessness impossible for world powers to ignore.",
+        "prose_hash": "67fc8915cd",
+        "prose_fp": "56cc9633",
+        "question_hash": "c7cb2fa79d"
+      }
+    ],
+    "lesson_8": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Targeting casualty sensitivity",
+            "bullet": "Nasser launched sustained Suez shelling in March 1969 → bled Israeli manpower so 1967 lines would not turn permanent"
+          },
+          {
+            "hint": "Deep raids and escalation",
+            "bullet": "Israeli jets bombed deep into Egypt → USSR deployed advanced surface-to-air missiles and combat pilots near Cairo"
+          },
+          {
+            "hint": "Brokered August truce",
+            "bullet": "Acute danger of direct US-Soviet combat → pushed both nations to accept an American-brokered ceasefire in August 1970"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Frozen Sinai diplomacy",
+            "bullet": "Deadlock over Resolution 242 and new Bar-Lev bunkers → convinced Nasser diplomacy alone would never recover Sinai"
+          },
+          {
+            "hint": "Strain on reservists",
+            "bullet": "Israel depended on citizen-soldier reservists → months of static artillery attrition strained morale and economic output"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ATTRITION LOGIC",
+            "stem": "Calculating that Israel was acutely sensitive to steady military casualties, Nasser shelled ____________ to prevent ____________."
+          },
+          {
+            "badge": "SOVIET INTERVENTION",
+            "stem": "Retaliatory Israeli air strikes deep inside Egypt prompted ____________ to send ____________ and combat pilots."
+          },
+          {
+            "badge": "AUGUST 1970 TRUCE",
+            "stem": "Alarmed that proxy escalation could spark superpower war, Cairo and Jerusalem accepted ____________ in August 1970."
+          }
+        ],
+        "watch_out": "Do not confuse the 1969–1970 War of Attrition with the October 1973 war—Nasser waged static cross-canal bombardments, whereas Sadat launched a full canal crossing in 1973.",
+        "prose_hash": "924013c169",
+        "prose_fp": "11dc6709",
+        "question_hash": "6831f8d082"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Spurned 1971 peace offer",
+            "bullet": "Golda Meir and Henry Kissinger dismissed Sadat’s 1971 canal-for-pullback offer → convinced Cairo only war could unlock talks"
+          },
+          {
+            "hint": "Ousting Moscow’s military",
+            "bullet": "Frustrated by Soviet détente and withheld offensive bombers → Sadat expelled 15,000 Soviet advisers in July 1972"
+          },
+          {
+            "hint": "Dual diplomatic-military plan",
+            "bullet": "Signalled Egyptian independence from Moscow to Washington → secretly planned a missile-shielded two-front war alongside Syria"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Crippling economic burden",
+            "bullet": "Lost Suez Canal tolls and huge military budgets drained Egypt → made endless Sinai stalemate unsustainable for Sadat"
+          },
+          {
+            "hint": "American diplomatic leverage",
+            "bullet": "Sadat realised Moscow could supply weapons yet never move Israel → only Washington could broker Sinai’s return"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DISMISSED INITIATIVE",
+            "stem": "After Golda Meir and ____________ rejected his February 1971 offer to reopen Suez, Sadat concluded that Israel would never negotiate while ____________."
+          },
+          {
+            "badge": "JULY 1972 EXPULSION",
+            "stem": "Angered by cautious Soviet détente policies, Sadat ordered ____________ out of Egypt to signal ____________."
+          },
+          {
+            "badge": "LIMITED WAR PACT",
+            "stem": "Behind the scenes, Cairo coordinated a secret offensive alliance with ____________ backed by Soviet anti-tank and anti-aircraft missiles."
+          }
+        ],
+        "watch_out": "Sadat did not expel Soviet advisers to abandon war—he removed Moscow’s restraint while keeping Soviet missiles to fight a limited war that would force US diplomacy.",
+        "prose_hash": "12071604a6",
+        "prose_fp": "9e0689a1",
+        "question_hash": "c803a9a9ec"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Holy day surprise",
+            "bullet": "Attacked at 14:00 on Yom Kippur during Ramadan → caught demobilised Israel off guard after intelligence misread drills"
+          },
+          {
+            "hint": "Hydraulic rampart breach",
+            "bullet": "Under a 2,000-gun barrage, Egyptian engineers used high-pressure water monitors → washed open Bar-Lev sand walls in hours"
+          },
+          {
+            "hint": "Simultaneous Golan assault",
+            "bullet": "Hundreds of Syrian tanks surged across the Golan Heights → stretched Israeli forces in a two-front existential crisis"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Post-1967 Israeli hubris",
+            "bullet": "Six-Day War triumph and Bar-Lev fortifications bred overconfidence → Israeli commanders underestimated Arab planning and discipline"
+          },
+          {
+            "hint": "Soviet missile umbrella",
+            "bullet": "Dense Egyptian SAM batteries and portable anti-tank missiles → blunted the IDF’s once-dominant jets and tanks"
+          },
+          {
+            "hint": "Syrian territorial goal",
+            "bullet": "Damascus joined Sadat’s offensive to recapture the Golan Heights lost in June 1967 → forced Israel to split reserves"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "STRATEGIC SURPRISE",
+            "stem": "Launching their assault on ____________, Egypt and Syria achieved surprise because Israeli intelligence misread troop concentrations as ____________."
+          },
+          {
+            "badge": "BREACHING BAR-LEV",
+            "stem": "Covered by 2,000 artillery pieces, Egyptian combat engineers cut through the 20-metre sand rampart using ____________."
+          },
+          {
+            "badge": "NORTHERN TANK SURGE",
+            "stem": "Simultaneously, hundreds of ____________ broke through defences on ____________, threatening northern Israel."
+          }
+        ],
+        "watch_out": "Never describe the 1973 Yom Kippur War as an easy Israeli blitzkrieg like 1967—Egypt and Syria inflicted heavy early losses that shook Israel to its core.",
+        "prose_hash": "673d121160",
+        "prose_fp": "9aaa22b3",
+        "question_hash": "9ff3d3da05"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Emergency American airlift",
+            "bullet": "Severe missile losses drained IDF stocks → Nixon’s Operation Nickel Grass flew in 22,000 tons of US arms"
+          },
+          {
+            "hint": "West bank encirclement",
+            "bullet": "General Ariel Sharon crossed to the west bank of Suez → trapped Egypt’s Third Army and advanced toward Cairo"
+          },
+          {
+            "hint": "Nuclear alert brinkmanship",
+            "bullet": "Soviet threats to intervene triggered a brief US nuclear alert → drove both superpowers to enforce ceasefire"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Cold War détente tested",
+            "bullet": "Competing Soviet and American airlifts nearly triggered superpower war → exposed how Middle East crises endangered détente"
+          },
+          {
+            "hint": "Washington’s dual leverage",
+            "bullet": "Resupplying Israel then restraining Sharon from crushing Egypt’s Third Army → positioned America as essential mediator"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EMERGENCY RESUPPLY",
+            "stem": "Facing critical tank and shell shortages against Soviet missiles, Israel recovered through Nixon’s ____________ starting on 14 October."
+          },
+          {
+            "badge": "CROSSING WESTWARD",
+            "stem": "Counter-attacking across the Suez Canal, General ____________ encircled ____________ and threatened the road to Cairo."
+          },
+          {
+            "badge": "SUPERPOWER CRISIS",
+            "stem": "When Moscow threatened direct military intervention, Washington briefly raised ____________ before jointly imposing a truce."
+          }
+        ],
+        "watch_out": "Keep the operations straight—Operation Nickel Grass was the US cargo airlift to Israel, whereas Ariel Sharon led the IDF armoured crossing west of the Suez Canal.",
+        "prose_hash": "01643b3fb7",
+        "prose_fp": "5a5275a9",
+        "question_hash": "0cab118c96"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Quadrupled oil prices",
+            "bullet": "Arab OPEC ministers cut output and embargoed America → quadrupled crude prices, causing Western fuel shortages and recession"
+          },
+          {
+            "hint": "Ceasefire and talks",
+            "bullet": "UN Resolution 338 halted fighting on 22 October → mandated immediate direct negotiations rooted in Resolution 242"
+          },
+          {
+            "hint": "Restored Arab honour",
+            "bullet": "Heavy IDF losses ended Israeli invulnerability while canal gains restored Egyptian pride → unlocked genuine peace talks"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Western energy dependence",
+            "bullet": "Surging early-1970s Western reliance on Gulf oil → made the 1973 OPEC boycott vastly stronger than 1967’s failure"
+          },
+          {
+            "hint": "Political reckoning in Israel",
+            "bullet": "Public trauma over heavy 1973 casualties and intelligence blunders → convinced Israeli leaders Sinai peace beat endless war"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "THE OIL WEAPON",
+            "stem": "Deploying economic leverage on 17 October 1973, Arab ministers in ____________ embargoed Israel’s allies and ____________ global oil prices."
+          },
+          {
+            "badge": "SECURITY COUNCIL DEMAND",
+            "stem": "Passed on 22 October, ____________ paired an immediate battlefield truce with direct talks grounded in ____________."
+          },
+          {
+            "badge": "PSYCHOLOGICAL EQUALITY",
+            "stem": "Despite Israel’s late battlefield recovery, heavy casualties shattered ____________ and gave Sadat the prestige needed to negotiate."
+          }
+        ],
+        "watch_out": "Judge 1973 both militarily and politically—Israel ended the war ahead on the battlefield, yet Sadat won his strategic goal by breaking diplomatic deadlock and drawing in Washington.",
+        "prose_hash": "58f6fbb97c",
+        "prose_fp": "39e667eb",
+        "question_hash": "57c28300b9"
+      }
+    ],
+    "lesson_9": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Step-by-step airborne diplomacy",
+            "bullet": "Henry Kissinger flew repeatedly between Jerusalem, Cairo, and Damascus → pursued practical bilateral pullbacks over grand conferences"
+          },
+          {
+            "hint": "Phased disengagement deals",
+            "bullet": "Brokered Sinai I, May 1974 Golan pullback, and Sinai II → separated rival armies across UN buffer zones"
+          },
+          {
+            "hint": "Canal reopened",
+            "bullet": "Israeli pullback enabled Sadat to reopen the Suez Canal in June 1975 → restored tolls and cemented US-Egyptian ties"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lifting the oil embargo",
+            "bullet": "Demonstrating serious American mediation via Sinai I → persuaded Arab OPEC producers to end the crippling oil embargo"
+          },
+          {
+            "hint": "Freezing out Moscow",
+            "bullet": "Bilateral US-led agreements sidelined multi-nation Geneva diplomacy → excluded the Soviet Union from Middle East peacemaking"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SHUTTLE MEDIATION",
+            "stem": "Spurred by quadrupled oil prices and Cold War competition, ____________ flew between regional capitals to broker ____________."
+          },
+          {
+            "badge": "DISENGAGEMENT ACCORDS",
+            "stem": "Step-by-step pullbacks under ____________, a Golan agreement, and ____________ moved Israeli forces back from the canal."
+          },
+          {
+            "badge": "ECONOMIC AND STRATEGIC SHIFT",
+            "stem": "Reopening ____________ in June 1975 restored vital Egyptian shipping revenue while pivoting Cairo firmly toward ____________."
+          }
+        ],
+        "watch_out": "Kissinger’s shuttle diplomacy achieved interim military disengagement pullbacks in 1974–1975, not a final peace treaty—full Egyptian-Israeli peace came later under Jimmy Carter.",
+        "prose_hash": "5f4010aa5c",
+        "prose_fp": "90141e58",
+        "question_hash": "0891b5c3c7"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Domestic unrest and deadlock",
+            "bullet": "January 1977 Egyptian bread riots and fears of stalled Geneva talks → pushed Sadat toward dramatic personal diplomacy"
+          },
+          {
+            "hint": "Historic parliamentary address",
+            "bullet": "Sadat flew to Jerusalem in November 1977 → offered full recognition and peace in return for occupied Arab land"
+          },
+          {
+            "hint": "December summit stalemate",
+            "bullet": "Likud Prime Minister Menachem Begin met Sadat at Ismailia in December → broke taboos yet stalled over settlements and autonomy"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shattering Khartoum’s ban",
+            "bullet": "Addressing Israel’s parliament in person overturned Khartoum’s 1967 Three Noes → electrified global opinion while angering Arab hardliners"
+          },
+          {
+            "hint": "Begin’s strategic calculus",
+            "bullet": "Former Irgun leader Begin was willing to yield Sinai for peace → determined to keep biblical Judea and Samaria"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOMESTIC URGENCY",
+            "stem": "Pressured at home by January 1977 ____________ and anxious to avoid a stalled Soviet-backed conference, Sadat offered to visit ____________."
+          },
+          {
+            "badge": "BREAKING THE TABOO",
+            "stem": "Addressing the ____________ in November 1977, Egypt’s president offered full diplomatic peace in exchange for ____________."
+          },
+          {
+            "badge": "ISMAILIA DEADLOCK",
+            "stem": "Although right-wing leader ____________ reciprocated at ____________ in December 1977, bilateral talks stalled over Sinai settlements and Palestinian rule."
+          }
+        ],
+        "watch_out": "Do not assume right-wing Likud leader Menachem Begin opposed every territorial concession—he accepted trading Sinai for peace with Egypt while refusing to give up the West Bank.",
+        "prose_hash": "3a79e49aa9",
+        "prose_fp": "fc0031c0",
+        "question_hash": "9e68136cdf"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Thirteen-day Maryland retreat",
+            "bullet": "President Jimmy Carter isolated Begin and Sadat at Camp David → drafted compromises personally when direct talks collapsed"
+          },
+          {
+            "hint": "Bilateral Sinai framework",
+            "bullet": "First framework mapped out a binding Egypt-Israel peace treaty → paired Sinai’s return with full diplomatic recognition"
+          },
+          {
+            "hint": "Vague Palestinian autonomy",
+            "bullet": "Second framework promised five-year West Bank and Gaza self-rule → avoided Palestinian statehood and East Jerusalem’s status"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Clashing leader personalities",
+            "bullet": "Begin’s strict legalism clashed bitterly with Sadat’s broad strategic style → made Carter’s shuttle between cabins essential"
+          },
+          {
+            "hint": "Excluded Palestinian voices",
+            "bullet": "Neither the PLO nor Jordan participated at Camp David → Palestinians dismissed vague autonomy negotiated without them"
+          },
+          {
+            "hint": "Cold War white house goal",
+            "bullet": "Locking Egypt and Israel into an American-sponsored framework → secured US strategic dominance across the eastern Mediterranean"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CARTER’S MEDIATION",
+            "stem": "Sequestering rival delegations for thirteen days in Maryland, ____________ kept negotiations alive whenever ____________ and ____________ deadlocked."
+          },
+          {
+            "badge": "TWO FRAMEWORKS",
+            "stem": "Signed on 17 September 1978, the accords paired clear terms for ____________ with a looser pledge of five-year ____________."
+          },
+          {
+            "badge": "OMITTED FLASHPOINTS",
+            "stem": "Crucially, the Palestinian framework left both sovereign ____________ and the contested status of ____________ unresolved."
+          }
+        ],
+        "watch_out": "Do not conflate the September 1978 Camp David Accords with the final peace treaty—Camp David set two frameworks, whereas the formal Treaty of Washington was signed in March 1979.",
+        "prose_hash": "5767cf04ba",
+        "prose_fp": "316fd130",
+        "question_hash": "2bff5d91fe"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Diplomatic normalisation",
+            "bullet": "Signed at the White House on 26 March 1979 → established embassies, trade, and removed Egypt from Arab war coalitions"
+          },
+          {
+            "hint": "Full peninsula evacuation",
+            "bullet": "Israel evacuated the entire Sinai Peninsula and oil fields → dismantled Jewish settlements including Yamit"
+          },
+          {
+            "hint": "Waterways and financial backing",
+            "bullet": "Egypt demilitarised Sinai and guaranteed Suez and Tiran shipping → Washington backed both states with billions in annual aid"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Land for Peace enacted",
+            "bullet": "First bilateral treaty implementing UN Resolution 242 → proved occupied territory could be traded for recognised borders"
+          },
+          {
+            "hint": "Southern military security",
+            "bullet": "Neutralising the Arab world’s largest army → transformed Israel’s strategic security along its entire southern frontier"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "END OF WAR",
+            "stem": "Witnessed by Jimmy Carter on 26 March 1979, the Treaty of Washington established ____________ and removed Egypt from ____________."
+          },
+          {
+            "badge": "SINAI WITHDRAWAL",
+            "stem": "Israel agreed to return the entire ____________ along with its oil fields while dismantling settlements such as ____________."
+          },
+          {
+            "badge": "SHIPPING AND AID",
+            "stem": "In return, Cairo demilitarised Sinai, guaranteed free Israeli passage through ____________, and received ____________ alongside Israel."
+          }
+        ],
+        "watch_out": "Israel returned the Sinai Peninsula to Egypt in 1979, not the Gaza Strip—Gaza stayed under Israeli military occupation even though Egypt had administered it from 1949 to 1967.",
+        "prose_hash": "53aab4968a",
+        "prose_fp": "5618811b",
+        "question_hash": "c1ef8ff499"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Suspended regional membership",
+            "bullet": "Arab states accused Sadat of betraying Palestine for Sinai → suspended Egypt and moved Arab League headquarters to Tunis"
+          },
+          {
+            "hint": "Severed ties and boycotts",
+            "bullet": "Arab capitals broke diplomatic relations and boycotted Egyptian businesses → isolated Cairo politically and economically"
+          },
+          {
+            "hint": "Cairo parade assassination",
+            "bullet": "Egyptian Islamic Jihad branded Sadat a traitor to Islam → assassinated him at a military parade on 6 October 1981"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Surge of Islamist militancy",
+            "bullet": "Iran’s 1979 Islamic Revolution and persistent Egyptian poverty → fuelled domestic fundamentalist fury at Sadat’s Western alliance"
+          },
+          {
+            "hint": "Durable cold peace",
+            "bullet": "Egypt’s new president upheld the 1979 treaty while rebuilding Arab ties → kept peace intact despite Sadat’s death"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARAB LEAGUE OSTRACISM",
+            "stem": "Accusing Cairo of abandoning Palestinian rights through a separate deal, the ____________ suspended Egypt and shifted its seat to ____________."
+          },
+          {
+            "badge": "OCTOBER 1981 MURDER",
+            "stem": "Condemned by domestic fundamentalists, Sadat was shot dead by ____________ soldiers while reviewing ____________ in Cairo."
+          },
+          {
+            "badge": "CONTINUITY AFTER SADAT",
+            "stem": "Rather than tearing up the treaty, Sadat’s successor preserved ____________ while gradually repairing relations with ____________."
+          }
+        ],
+        "watch_out": "Sadat’s assassination in October 1981 did not collapse the peace settlement—Egypt’s successor government honoured the 1979 treaty with Israel while gradually rejoining the Arab fold.",
+        "prose_hash": "14af623767",
+        "prose_fp": "3dd9354a",
+        "question_hash": "9422a4feb9"
+      }
+    ],
+    "lesson_10": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Olive branch UN speech",
+            "bullet": "Arafat’s November 1974 UN address paired diplomacy with armed struggle → won the PLO official observer status"
+          },
+          {
+            "hint": "Coastal raids and reprisals",
+            "bullet": "Fatah raids from Fatahland and the 1978 Coastal Road Massacre → provoked Israel’s Operation Litani and UNIFIL deployment"
+          },
+          {
+            "hint": "London assassination attempt",
+            "bullet": "Abu Nidal gunmen shot Ambassador Shlomo Argov in June 1982 → Ariel Sharon launched Operation Peace for Galilee"
+          },
+          {
+            "hint": "Beirut siege and evacuation",
+            "bullet": "Advancing past cabinet limits to besiege Beirut for ten weeks → forced Arafat and 14,000 fighters out to Tunis"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Relocation after Black September",
+            "bullet": "Expelled from Jordan in 1970–71 → PLO guerrillas built autonomous bases across southern Lebanon’s borderlands"
+          },
+          {
+            "hint": "Neutralised Egyptian border",
+            "bullet": "The 1979 peace treaty neutralized Egypt in the south → gave Begin and Sharon freedom to invade Lebanon"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "UN STATUS AND RAIDS",
+            "stem": "Even after winning UN ____________ in November 1974, PLO attacks from southern Lebanon such as ____________ triggered Israeli reprisals."
+          },
+          {
+            "badge": "JUNE 1982 INVASION",
+            "stem": "Seizing on the London shooting of ____________ by Abu Nidal’s group, Defence Minister ____________ drove north to besiege Beirut."
+          },
+          {
+            "badge": "MEDITERRANEAN EXILE",
+            "stem": "After ten weeks under bombardment, US mediation evacuated Arafat and 14,000 guerrillas by sea to distant ____________."
+          }
+        ],
+        "watch_out": "Arafat’s PLO did not shoot Ambassador Shlomo Argov in London—the gunmen belonged to Abu Nidal’s rival breakaway group, which hoped to provoke an Israeli invasion against the PLO.",
+        "prose_hash": "e2a58eaa2c",
+        "prose_fp": "8ebae05f",
+        "question_hash": "0c5b427e07"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Assassination and camp perimeter",
+            "bullet": "After President-elect Bachir Gemayel’s assassination → IDF troops ringed Sabra and Shatila and let Christian Phalangists inside"
+          },
+          {
+            "hint": "Massacre and public inquiry",
+            "bullet": "Phalangists slaughtered 800 to 2,000 unarmed civilians → 400,000 Israelis protested and the Kahan Commission forced Sharon’s resignation"
+          },
+          {
+            "hint": "Southern buffer and militia",
+            "bullet": "Withdrawing to a southern security zone by 1985 → trapped Israel in guerrilla fighting against Iranian-backed Hezbollah"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lebanese sectarian hatreds",
+            "bullet": "Bitter Christian-Muslim-Palestinian civil warfare in Lebanon since 1975 → made unleashing vengeful Phalangist militia into camps reckless"
+          },
+          {
+            "hint": "Fractured Israeli consensus",
+            "bullet": "Viewed inside Israel as an offensive war of choice rather than survival → sparked unprecedented domestic anti-war protest"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REFUGEE CAMP ENTRY",
+            "stem": "Days after ____________ died in a Beirut bombing, Israeli troops surrounded ____________ and permitted allied ____________ militiamen to enter."
+          },
+          {
+            "badge": "DOMESTIC RECKONING",
+            "stem": "Outrage from ____________ in Tel Aviv led the independent ____________ to rule that Ariel Sharon bore personal responsibility."
+          },
+          {
+            "badge": "NEW MILITANT RIVAL",
+            "stem": "Although PLO fighters had left for Tunis, Israel’s southern Lebanese buffer soon faced fierce attacks from ____________."
+          }
+        ],
+        "watch_out": "Be exact about responsibility at Sabra and Shatila—Lebanese Christian Phalangist militiamen carried out the killings inside the camps while IDF forces sealed the outer perimeter and fired flares.",
+        "prose_hash": "11e1c311a4",
+        "prose_fp": "c07539a9",
+        "question_hash": "9e05eef5f3"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Two decades under rule",
+            "bullet": "Twenty years of military occupation, economic stagnation, and denied civil rights → fuelled deep Palestinian frustration"
+          },
+          {
+            "hint": "Gaza road collision spark",
+            "bullet": "December 1987 IDF transport crash killed four Gaza workers → funeral marches rapidly ignited mass uprising"
+          },
+          {
+            "hint": "Grassroots civil resistance",
+            "bullet": "Underground UNLU coordinated strikes, tax boycotts, and stone-throwing youths → transformed global media sympathy toward Palestinians"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Exiled Tunis leadership",
+            "bullet": "With Arafat isolated in Tunis after 1982 and Arab summits side-lining Palestine → local residents led resistance themselves"
+          },
+          {
+            "hint": "Expanding settler footprint",
+            "bullet": "Surging West Bank and Gaza settlement construction since 1977 → intensified daily land seizures, checkpoints, and anger"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ACCUMULATED GRIEVANCES",
+            "stem": "Two decades of ____________, economic hardship, and denied rights meant a December 1987 Gaza ____________ sparked territory-wide revolt."
+          },
+          {
+            "badge": "POPULAR RESISTANCE",
+            "stem": "Directed locally by the underground ____________, communities combined stone-throwing demonstrations with ____________ and tax boycotts."
+          },
+          {
+            "badge": "SHIFTING WORLD IMAGE",
+            "stem": "Global broadcasts of teenagers confronting heavy armour recast the conflict and discredited the permanent ____________."
+          }
+        ],
+        "watch_out": "Do not write that Yasser Arafat launched the First Intifada from Tunis—it broke out spontaneously among local Palestinians in Gaza and the West Bank before the PLO sought to steer it.",
+        "prose_hash": "d06bdc2c3c",
+        "prose_fp": "87e3fa9e",
+        "question_hash": "335da64688"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Iron Fist crackdown",
+            "bullet": "Defence Minister Yitzhak Rabin used live fire, curfews, mass arrests, and home demolitions → failed to extinguish protests"
+          },
+          {
+            "hint": "Damaged global standing",
+            "bullet": "Televised beatings of unarmed youths triggered moral soul-searching inside Israel → eroded diplomatic support across Western capitals"
+          },
+          {
+            "hint": "Islamist rival founded",
+            "bullet": "Sheikh Ahmed Yassin founded Hamas in Gaza in December 1987 → rejected compromise, demanding armed jihad across Palestine"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Limits of military force",
+            "bullet": "Conscripts trained to fight Arab tank armies struggled to police civilian streets → convinced Rabin occupation needed political solutions"
+          },
+          {
+            "hint": "Grassroots welfare network",
+            "bullet": "Mosques, clinics, and charities across impoverished Gaza → helped Hamas challenge the secular nationalist PLO"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "REPRESSION AND REPUTATION",
+            "stem": "Authorised by Defence Minister ____________, curfews, demolitions, and filmed beatings severely damaged ____________ among Western allies."
+          },
+          {
+            "badge": "EMERGENCE OF HAMAS",
+            "stem": "Founded in Gaza in December 1987 by ____________, Hamas rivalled the secular PLO by declaring historic Palestine an ____________."
+          },
+          {
+            "badge": "REJECTIONIST CHARTER",
+            "stem": "Refusing all territorial partition or peace talks, Hamas pledged to eliminate Israel through ____________."
+          }
+        ],
+        "watch_out": "Distinguish Hamas clearly from the PLO—the PLO was a secular nationalist umbrella that moved toward two-state talks, whereas Hamas was an Islamist movement rejecting Israel’s existence.",
+        "prose_hash": "6924e5314c",
+        "prose_fp": "c124b152",
+        "question_hash": "1604e5791d"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Jordanian withdrawal and rivals",
+            "bullet": "King Hussein’s July 1988 West Bank disengagement and Hamas rivalry → spurred Arafat to seize diplomatic leadership"
+          },
+          {
+            "hint": "November council proclamation",
+            "bullet": "November 1988 Algiers PNC proclaimed the State of Palestine → implicitly endorsed a two-state partition alongside Israel"
+          },
+          {
+            "hint": "December UN declaration",
+            "bullet": "Arafat’s 13 December 1988 Geneva speech renounced terrorism and accepted Resolution 242 → opened official US-PLO dialogue"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Strict 1975 US conditions",
+            "bullet": "Since 1975 Washington had banned PLO talks → required explicit acceptance of Resolution 242 and Israel’s right to exist"
+          },
+          {
+            "hint": "Evolution since 1974",
+            "bullet": "Moving beyond his 1974 gun-and-olive-branch speech → Arafat traded maximalist armed liberation for negotiated statehood"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ALGIERS PROCLAMATION",
+            "stem": "After Jordan dropped its territorial claim to ____________ in July 1988, the PNC met in Algiers to proclaim ____________."
+          },
+          {
+            "badge": "GENEVA COMMITMENTS",
+            "stem": "Speaking before the UN in Geneva in December 1988, Arafat explicitly renounced ____________ and accepted ____________ and 338."
+          },
+          {
+            "badge": "WASHINGTON DIALOGUE",
+            "stem": "Satisfying long-standing American preconditions led President ____________’s administration to authorise official talks with ____________."
+          }
+        ],
+        "watch_out": "Do not confuse Arafat’s 1974 and 1988 UN speeches—in 1974 in New York he upheld armed struggle, whereas in December 1988 in Geneva he renounced terrorism and accepted Resolution 242.",
+        "prose_hash": "8376a48d46",
+        "prose_fp": "61f1a582",
+        "question_hash": "409c99e7c3"
+      }
+    ],
+    "lesson_11": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Lost Soviet superpower backing",
+            "bullet": "Soviet collapse in 1991 ended arms, funding, and UN vetoes for Arab hardliners → left America sole diplomatic broker"
+          },
+          {
+            "hint": "Costly Gulf War alignment",
+            "bullet": "Arafat backed Iraq’s Saddam Hussein in 1990–91 → alienated Saudi and Kuwaiti donors, bankrupting the PLO"
+          },
+          {
+            "hint": "Madrid face-to-face summit",
+            "bullet": "Bush and Baker convened October 1991 Madrid talks → broke taboos despite Likud leader Yitzhak Shamir stalling deals"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Joint Jordanian-Palestinian team",
+            "bullet": "Because Shamir barred direct PLO delegates → local occupied-territory Palestinians attended inside Jordan’s delegation"
+          },
+          {
+            "hint": "American loan leverage",
+            "bullet": "Israel needed US loan guarantees to house Soviet Jewish immigrants → gave Bush and Baker strong diplomatic leverage"
+          },
+          {
+            "hint": "Coalition prestige",
+            "bullet": "Leading an Arab-Western coalition to liberate Kuwait in 1991 → gave Washington unprecedented credibility across Arab capitals"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "COLD WAR ENDGAME",
+            "stem": "With the collapse of ____________ ending patronage for Arab hardliners, Washington emerged from the 1991 Gulf War as sole superpower mediator."
+          },
+          {
+            "badge": "PLO BANKRUPTCY",
+            "stem": "Backing ____________ during the Gulf War cost Arafat vital subsidies from ____________, leaving the PLO desperate for diplomacy."
+          },
+          {
+            "badge": "TABOO BROKEN",
+            "stem": "Co-sponsored by Bush and Baker in October 1991, ____________ brought Israel face to face with Arab delegations despite ____________’s hardline stance."
+          }
+        ],
+        "watch_out": "Madrid broke huge psychological taboos through face-to-face talks, yet it produced zero immediate territorial treaties—substantive breakthroughs only emerged later via secret talks in Oslo.",
+        "prose_hash": "8b8b5ad925",
+        "prose_fp": "928b9851",
+        "question_hash": "307f6d796f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Labour election victory",
+            "bullet": "Yitzhak Rabin and Shimon Peres won power in June 1992 → favoured land-for-peace as public Washington talks stalled"
+          },
+          {
+            "hint": "Secluded diplomatic backchannel",
+            "bullet": "Norwegian diplomats hosted secret talks outside Oslo → shielded Israeli academics and PLO envoys from media and spoilers"
+          },
+          {
+            "hint": "Drafted interim bargain",
+            "bullet": "Agreed the Declaration of Principles → paired mutual recognition and non-violence with five-year Gaza and Jericho self-rule"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Shared Hamas threat",
+            "bullet": "Rising Islamist support for Hamas inside Gaza → gave both Rabin and Arafat urgent incentive to empower PLO moderates"
+          },
+          {
+            "hint": "Intifada policing fatigue",
+            "bullet": "Years of draining First Intifada street clashes → convinced veteran general Rabin that occupying Gaza weakened Israeli security"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "POLITICAL OPENING",
+            "stem": "Elected in June 1992 on a platform of territorial compromise, Prime Minister ____________ and ____________ authorised quiet talks when Washington deadlocked."
+          },
+          {
+            "badge": "BACKCHANNEL SECRECY",
+            "stem": "Operating privately in rural ____________ away from cameras and domestic extremists allowed negotiators to make candid compromises."
+          },
+          {
+            "badge": "INTERIM FRAMEWORK",
+            "stem": "Drafting the ____________, both sides traded mutual diplomatic recognition for phased Palestinian self-government starting in ____________."
+          }
+        ],
+        "watch_out": "Washington did not broker the secret 1993 negotiations—Norwegian mediators hosted the clandestine talks near Oslo while formal US-hosted talks in Washington remained deadlocked.",
+        "prose_hash": "48a5bf87a2",
+        "prose_fp": "7d89d1b6",
+        "question_hash": "9abd02a3d6"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Letters and lawn handshake",
+            "bullet": "After exchanging formal mutual recognition letters → Rabin and Arafat shook hands beside Bill Clinton on 13 September 1993"
+          },
+          {
+            "hint": "Interim governing authority",
+            "bullet": "IDF pulled out of Gaza and Jericho in May 1994 → returned Arafat’s new PNA assumed taxation, civil, and police rule"
+          },
+          {
+            "hint": "Postponed core disputes",
+            "bullet": "Deferred Jerusalem, refugees, settlements, security, and final borders for five years → left the hardest issues unsettled"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Unchecked settlement growth",
+            "bullet": "Oslo I contained no freeze on West Bank settlement expansion → steadily eroded Palestinian confidence during the interim period"
+          },
+          {
+            "hint": "Security burden on Arafat",
+            "bullet": "Israel expected PNA police to crush Hamas attacks → exposed Arafat to Palestinian accusations of policing for Israel"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MUTUAL RECOGNITION",
+            "stem": "Days after exchanging formal letters of ____________, Rabin and Arafat signed Oslo I on the White House lawn beside ____________."
+          },
+          {
+            "badge": "MAY 1994 TRANSFER",
+            "stem": "Following Israeli troop withdrawal from ____________, the newly established ____________ took over civil administration and internal policing."
+          },
+          {
+            "badge": "DEFERRED FINAL STATUS",
+            "stem": "Crucially, Oslo I postponed explosive final-status questions—including ____________, ____________, and permanent borders—for five years."
+          }
+        ],
+        "watch_out": "Oslo I did not establish a sovereign Palestinian state—it created an interim Palestinian National Authority in Gaza and Jericho while deferring statehood, Jerusalem, and refugees.",
+        "prose_hash": "e9fec4430a",
+        "prose_fp": "11d975ba",
+        "question_hash": "62629673de"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Arava desert treaty",
+            "bullet": "King Hussein and Rabin signed the October 1994 peace treaty → settled borders, River Jordan water, and opened frontiers"
+          },
+          {
+            "hint": "Urban Palestinian zone",
+            "bullet": "September 1995 Oslo II created Area A in West Bank cities → granted full Palestinian civil and security control"
+          },
+          {
+            "hint": "Shared rural zone",
+            "bullet": "Area B covered Palestinian towns and villages → combined Palestinian civil administration with joint Israeli security control"
+          },
+          {
+            "hint": "Sixty percent Israeli zone",
+            "bullet": "Area C kept 60 percent of the West Bank under full Israeli control → retained settlements and strategic roads"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Diplomatic cover for Jordan",
+            "bullet": "Once Arafat signed Oslo I directly with Israel → King Hussein could sign open peace without Sadat-style Arab ostracism"
+          },
+          {
+            "hint": "Patchwork enclave map",
+            "bullet": "Dividing Areas A and B into non-contiguous islands surrounded by Area C → kept movement dependent on Israeli checkpoints"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SECOND ARAB TREATY",
+            "stem": "Capitalising on Oslo’s diplomatic breakthrough in October 1994, ____________ signed formal peace with Israel, resolving borders and ____________."
+          },
+          {
+            "badge": "AREAS A AND B",
+            "stem": "Under September 1995’s Oslo II accord, Palestinians gained full control in ____________ and civil rule alongside joint security in ____________."
+          },
+          {
+            "badge": "AREA C MAJORITY",
+            "stem": "Meanwhile, ____________ covered 60 percent of the West Bank, leaving Israeli settlements and strategic roads under ____________."
+          }
+        ],
+        "watch_out": "Do not reverse Areas A and C in exams—Area A gave full Palestinian civil and security control over major towns, whereas Area C left 60 percent of the West Bank under full Israeli control.",
+        "prose_hash": "506e0e4c75",
+        "prose_fp": "531f1009",
+        "question_hash": "f7307f9276"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Hebron mosque massacre",
+            "bullet": "Radical settler Baruch Goldstein murdered 29 Palestinian worshippers in Hebron in February 1994 → inflamed deadly retaliation"
+          },
+          {
+            "hint": "Suicide bus bombings",
+            "bullet": "Hamas and Islamic Jihad unleashed suicide bombings in Tel Aviv and Jerusalem → shattered Israeli public trust in Oslo"
+          },
+          {
+            "hint": "Tel Aviv rally murder",
+            "bullet": "Orthodox Jewish extremist Yigal Amir assassinated Rabin on 4 November 1995 → dealt peace momentum a devastating blow"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Rabin’s military authority",
+            "bullet": "As victorious 1967 Chief of Staff, Rabin possessed unmatched security credibility → his murder deprived peace of its strongest guarantor"
+          },
+          {
+            "hint": "Mutually reinforcing spoilers",
+            "bullet": "Extremist violence on each side hardened anger on the other → polarized voters and stalled phased West Bank handovers"
+          },
+          {
+            "hint": "Biblical land opposition",
+            "bullet": "Hardline Israeli nationalists viewed ceding Judea and Samaria as religious betrayal → fuelled fierce anti-Rabin incitement rallies"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CYCLE OF EXTREMISM",
+            "stem": "After extremist settler ____________ slaughtered 29 worshippers in Hebron, suicide bus attacks by ____________ eroded Israeli faith in peace."
+          },
+          {
+            "badge": "NOVEMBER 1995 ASSASSINATION",
+            "stem": "Branded a traitor by right-wing hardliners for ceding biblical land, Rabin was shot dead after a Tel Aviv peace rally by ____________."
+          },
+          {
+            "badge": "STALLED IMPLEMENTATION",
+            "stem": "Losing the soldier-statesman trusted on security deepened domestic Israeli divisions and slowed ____________."
+          }
+        ],
+        "watch_out": "Yitzhak Rabin was assassinated in November 1995 by Yigal Amir, an orthodox Jewish extremist opposed to handing over West Bank land—not by Hamas or a Palestinian militant.",
+        "prose_hash": "fdb5412701",
+        "prose_fp": "7cbcf2ef",
+        "question_hash": "ef9e28f005"
+      }
+    ]
+  }
+}
