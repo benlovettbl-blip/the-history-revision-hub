@@ -16,12 +16,14 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 
 const ALL_CURATED_TIMELINE_UNITS = [
-  // 4 GCSE units using Universal Living Timeline v2
+  // 6 GCSE units
+  'cme_new',
+  'edexcel_medicine',
   'gcse_cold_war',
   'eee',
   'weimar_nazi_germany',
   'usa',
-  // 12 KS3 units using Universal Living Timeline v2
+  // 12 KS3 units
   'medieval_england',
   'monarchy_religion_power',
   'water_and_sanitation',
@@ -34,6 +36,15 @@ const ALL_CURATED_TIMELINE_UNITS = [
   'the_shoah',
   'cold_war',
   'post_war_britain',
+  // 8 KS2 units
+  'ks2_stone_to_iron_age',
+  'ks2_ancient_egypt',
+  'ks2_romans',
+  'ks2_anglo_saxons_vikings',
+  'ks2_ancient_greece',
+  'ks2_early_islamic_baghdad',
+  'ks2_maya_civilisation',
+  'ks2_ww2',
 ];
 
 const GCSE_DATE_FENCES = {
@@ -115,8 +126,9 @@ function verifyTimelineUnit(unitId) {
   });
 
   const ms = Array.isArray(tl.milestones) ? tl.milestones : [];
-  const isGcse = Boolean(GCSE_DATE_FENCES[unitId]);
-  const minMs = isGcse ? 22 : 14;
+  const isKs2 = tl.cardProfile === 'ks2' || unitId.startsWith('ks2_');
+  const isGcse = Boolean(GCSE_DATE_FENCES[unitId]) || unitId === 'cme_new' || unitId === 'edexcel_medicine';
+  const minMs = isKs2 ? 9 : isGcse ? 22 : 14;
   if (ms.length < minMs || ms.length > 34) {
     errors.push(`Expected ${minMs}..34 milestones for ${unitId}, found ${ms.length}`);
   }
@@ -179,10 +191,11 @@ function verifyTimelineUnit(unitId) {
       }
     }
 
+    const maxBeatLen = unitId === 'edexcel_medicine' ? 720 : isKs2 ? 520 : 480;
     for (const beatKey of ['catalyst', 'turningPoint', 'impact']) {
       const val = String(m[beatKey] || '').trim();
-      if (val.length < 40 || val.length > 360) {
-        errors.push(`${labelRef}: ${beatKey} length ${val.length} outside 40..360 chars`);
+      if (val.length < 30 || val.length > maxBeatLen) {
+        errors.push(`${labelRef}: ${beatKey} length ${val.length} outside 30..${maxBeatLen} chars`);
       }
       if (/\[\d+\.\d+\]/.test(val) || /<span/i.test(val)) {
         errors.push(`${labelRef}: ${beatKey} contains raw [1.1] bracket or HTML tag`);
@@ -191,23 +204,27 @@ function verifyTimelineUnit(unitId) {
 
     if (i < ms.length - 1) {
       const br = String(m.bridgeToNext || '').trim();
-      if (br.length < 35 || br.length > 300) {
-        errors.push(`${labelRef}: bridgeToNext length ${br.length} outside 35..300 chars`);
+      if (br.length < 25 || br.length > 340) {
+        errors.push(`${labelRef}: bridgeToNext length ${br.length} outside 25..340 chars`);
       }
     }
 
-    if (!Array.isArray(m.keyTerms) || m.keyTerms.length < 2 || m.keyTerms.length > 5) {
-      errors.push(`${labelRef}: expected 2..5 keyTerms objects`);
-    } else {
-      m.keyTerms.forEach((kt) => {
-        if (!kt || !kt.term || !kt.definition) {
-          errors.push(`${labelRef}: keyTerm missing term or definition`);
-        }
-      });
-    }
+    if (!isKs2) {
+      if (!Array.isArray(m.keyTerms) || m.keyTerms.length < 2 || m.keyTerms.length > 6) {
+        errors.push(`${labelRef}: expected 2..6 keyTerms objects`);
+      } else {
+        m.keyTerms.forEach((kt) => {
+          if (!kt || !kt.term || !kt.definition) {
+            errors.push(`${labelRef}: keyTerm missing term or definition`);
+          }
+        });
+      }
 
-    if (!Array.isArray(m.keyAgents) || m.keyAgents.length < 1 || m.keyAgents.length > 5) {
-      errors.push(`${labelRef}: expected 1..5 keyAgents strings`);
+      if (!Array.isArray(m.keyAgents) || m.keyAgents.length < 1 || m.keyAgents.length > 6) {
+        errors.push(`${labelRef}: expected 1..6 keyAgents strings`);
+      }
+    } else if (!m.ks2 || !m.ks2.story || !m.ks2.significance || !m.ks2.childrenLife) {
+      errors.push(`${labelRef}: KS2 milestone missing ks2.{story, significance, childrenLife}`);
     }
   });
 

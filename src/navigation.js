@@ -1930,44 +1930,6 @@ async function loadUnit(unitId) {
       }));
     }
 
-    // CME Living Timeline Integration
-    if (unitId === 'cme_new' || unitId === 'gcse_middle_east_1945_1995') {
-      try {
-        const cmeTl = await import('./data/cme/timeline_data.js');
-        if (cmeTl && cmeTl.CME_TIMELINE_MILESTONES) {
-          state.activeUnitData.timelineMilestones = cmeTl.CME_TIMELINE_MILESTONES;
-          state.activeUnitData.eras = cmeTl.CME_ERAS;
-          state.activeUnitData.timelineEvents = cmeTl.CME_TIMELINE_MILESTONES.map((m) => ({
-            year: m.date,
-            title: m.title,
-            text: m.action || m.trigger || '',
-            ...m,
-          }));
-        }
-      } catch (err) {
-        console.error('Failed to load CME timeline data:', err);
-      }
-    }
-
-    // Medicine Living Timeline Integration
-    if (unitId === 'edexcel_medicine') {
-      try {
-        const medTl = await import('./data/medicine/timeline_data.js');
-        if (medTl && medTl.MEDICINE_TIMELINE_MILESTONES) {
-          state.activeUnitData.timelineMilestones = medTl.MEDICINE_TIMELINE_MILESTONES;
-          state.activeUnitData.eras = medTl.MED_ERAS;
-          state.activeUnitData.timelineEvents = medTl.MEDICINE_TIMELINE_MILESTONES.map((m) => ({
-            year: m.date,
-            title: m.title,
-            text: m.breakthrough || m.continuityContext || '',
-            ...m,
-          }));
-        }
-      } catch (err) {
-        console.error('Failed to load Medicine timeline data:', err);
-      }
-    }
-
     // Add loaded questions to general index to support Leitner status mapping
     if (!state.allQuestions) state.allQuestions = [];
     if (state.activeUnitData.quizData) {

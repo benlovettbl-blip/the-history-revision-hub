@@ -58,8 +58,8 @@
   ],
   "milestones": [
     {
-      "id": "cold_war_ms_1",
       "num": 1,
+      "id": "cold_war_ms_1",
       "era": "part_1",
       "date": "1917 – August 1939",
       "shortDate": "1917–1939",
@@ -95,8 +95,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_2",
       "num": 2,
+      "id": "cold_war_ms_2",
       "era": "part_1",
       "date": "4–11 February 1945",
       "shortDate": "Feb 1945",
@@ -132,8 +132,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_3",
       "num": 3,
+      "id": "cold_war_ms_3",
       "era": "part_1",
       "date": "16 July – 2 August 1945",
       "shortDate": "Jul 1945",
@@ -165,8 +165,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_4",
       "num": 4,
+      "id": "cold_war_ms_4",
       "era": "part_1",
       "date": "6–9 August 1945",
       "shortDate": "Aug 1945",
@@ -198,8 +198,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_5",
       "num": 5,
+      "id": "cold_war_ms_5",
       "era": "part_1",
       "date": "Late 1945",
       "shortDate": "Late 1945",
@@ -231,8 +231,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_6",
       "num": 6,
+      "id": "cold_war_ms_6",
       "era": "part_1",
       "date": "February 1946",
       "shortDate": "Feb 1946",
@@ -265,8 +265,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_7",
       "num": 7,
+      "id": "cold_war_ms_7",
       "era": "part_1",
       "date": "March 1946 – June 1947",
       "shortDate": "1946–Jun 1947",
@@ -305,8 +305,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_8",
       "num": 8,
+      "id": "cold_war_ms_8",
       "era": "part_1",
       "date": "February 1948 – May 1949",
       "shortDate": "1948–May 1949",
@@ -340,8 +340,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_9",
       "num": 9,
+      "id": "cold_war_ms_9",
       "era": "part_1",
       "date": "April – October 1949",
       "shortDate": "Apr–Oct 1949",
@@ -375,8 +375,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_10",
       "num": 10,
+      "id": "cold_war_ms_10",
       "era": "part_2",
       "date": "October 1949 – July 1953",
       "shortDate": "1949–Jul 1953",
@@ -414,8 +414,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_11",
       "num": 11,
+      "id": "cold_war_ms_11",
       "era": "part_2",
       "date": "1953 – 1956",
       "shortDate": "1953–1956",
@@ -446,8 +446,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_12",
       "num": 12,
+      "id": "cold_war_ms_12",
       "era": "part_2",
       "date": "October 1957 – April 1961",
       "shortDate": "1957–Apr 1961",
@@ -479,8 +479,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_13",
       "num": 13,
+      "id": "cold_war_ms_13",
       "era": "part_2",
       "date": "13 August – October 1961",
       "shortDate": "Aug–Oct 1961",
@@ -512,8 +512,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_14",
       "num": 14,
+      "id": "cold_war_ms_14",
       "era": "part_3",
       "date": "Summer – 14 October 1962",
       "shortDate": "14 Oct 1962",
@@ -548,8 +548,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_15",
       "num": 15,
+      "id": "cold_war_ms_15",
       "era": "part_3",
       "date": "22–27 October 1962",
       "shortDate": "22–27 Oct 1962",
@@ -584,8 +584,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_16",
       "num": 16,
+      "id": "cold_war_ms_16",
       "era": "part_3",
       "date": "28 October 1962 – August 1963",
       "shortDate": "Oct 1962–1963",
@@ -617,8 +617,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_17",
       "num": 17,
+      "id": "cold_war_ms_17",
       "era": "part_3",
       "date": "August 1964 – 1967",
       "shortDate": "1964–1967",
@@ -655,8 +655,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_18",
       "num": 18,
+      "id": "cold_war_ms_18",
       "era": "part_3",
       "date": "January 1968 – April 1975",
       "shortDate": "1968–Apr 1975",
@@ -690,8 +690,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_19",
       "num": 19,
+      "id": "cold_war_ms_19",
       "era": "part_3",
       "date": "July 1975 – Late 1970s",
       "shortDate": "1975–Late 70s",
@@ -724,8 +724,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_20",
       "num": 20,
+      "id": "cold_war_ms_20",
       "era": "part_4",
       "date": "December 1979 – 1988",
       "shortDate": "1979–1988",
@@ -757,8 +757,8 @@
       ]
     },
     {
-      "id": "cold_war_ms_21",
       "num": 21,
+      "id": "cold_war_ms_21",
       "era": "part_4",
       "date": "9 November 1989 – 25 December 1991",
       "shortDate": "1989–Dec 1991",

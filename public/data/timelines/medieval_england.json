@@ -47,8 +47,8 @@
   ],
   "milestones": [
     {
-      "id": "medieval_england_ms_1",
       "num": 1,
+      "id": "medieval_england_ms_1",
       "era": "part_1",
       "date": "5–6 January 1066",
       "shortDate": "Jan 1066",
@@ -83,8 +83,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_2",
       "num": 2,
+      "id": "medieval_england_ms_2",
       "era": "part_1",
       "date": "25 September 1066",
       "shortDate": "25 Sep 1066",
@@ -118,8 +118,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_3",
       "num": 3,
+      "id": "medieval_england_ms_3",
       "era": "part_1",
       "date": "14 October 1066",
       "shortDate": "14 Oct 1066",
@@ -153,8 +153,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_4",
       "num": 4,
+      "id": "medieval_england_ms_4",
       "era": "part_1",
       "date": "1066–1068",
       "shortDate": "1066–1068",
@@ -187,8 +187,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_5",
       "num": 5,
+      "id": "medieval_england_ms_5",
       "era": "part_1",
       "date": "Winter 1069–1070",
       "shortDate": "1069–1070",
@@ -221,8 +221,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_6",
       "num": 6,
+      "id": "medieval_england_ms_6",
       "era": "part_1",
       "date": "1085–1086",
       "shortDate": "1085–1086",
@@ -255,8 +255,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_7",
       "num": 7,
+      "id": "medieval_england_ms_7",
       "era": "part_2",
       "date": "June 1162",
       "shortDate": "Jun 1162",
@@ -288,8 +288,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_8",
       "num": 8,
+      "id": "medieval_england_ms_8",
       "era": "part_2",
       "date": "January 1164",
       "shortDate": "Jan 1164",
@@ -321,8 +321,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_9",
       "num": 9,
+      "id": "medieval_england_ms_9",
       "era": "part_2",
       "date": "29 Dec 1170 – July 1174",
       "shortDate": "Dec 1170",
@@ -354,8 +354,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_10",
       "num": 10,
+      "id": "medieval_england_ms_10",
       "era": "part_2",
       "date": "1204–1213",
       "shortDate": "1204–1213",
@@ -387,8 +387,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_11",
       "num": 11,
+      "id": "medieval_england_ms_11",
       "era": "part_2",
       "date": "July 1214 – May 1215",
       "shortDate": "1214–1215",
@@ -420,8 +420,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_12",
       "num": 12,
+      "id": "medieval_england_ms_12",
       "era": "part_2",
       "date": "15 June 1215 – 1216",
       "shortDate": "15 Jun 1215",
@@ -453,8 +453,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_13",
       "num": 13,
+      "id": "medieval_england_ms_13",
       "era": "part_3",
       "date": "June 1348 – 1350",
       "shortDate": "1348–1350",
@@ -488,8 +488,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_14",
       "num": 14,
+      "id": "medieval_england_ms_14",
       "era": "part_3",
       "date": "1351 – May 1381",
       "shortDate": "1351–1381",
@@ -523,8 +523,8 @@
       ]
     },
     {
-      "id": "medieval_england_ms_15",
       "num": 15,
+      "id": "medieval_england_ms_15",
       "era": "part_3",
       "date": "15 June 1381",
       "shortDate": "15 Jun 1381",

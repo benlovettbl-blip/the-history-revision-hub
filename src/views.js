@@ -1581,67 +1581,6 @@ window.submitQuizAnswer = function (qid, chosen, btnElement) {
 export async function renderTimeline() {
   const container = document.getElementById('main-content');
   const unitId = state.selectedUnitId || window.currentUnitId;
-
-  if (unitId === 'cme_new' || unitId === 'gcse_middle_east_1945_1995') {
-    const { renderCmeLivingTimeline } = await import('./cme_living_timeline.js');
-    renderCmeLivingTimeline(container);
-    return;
-  }
-
-  if (unitId === 'edexcel_medicine') {
-    const { renderMedicineLivingTimeline } = await import('./medicine_living_timeline.js');
-    renderMedicineLivingTimeline(container);
-    return;
-  }
-
-  if (unitId === 'ks2_ww2') {
-    const { renderKs2TimelineSlider } = await import('./ks2_chronology_slider.js');
-    renderKs2TimelineSlider(container);
-    return;
-  }
-
-  if (unitId === 'ks2_stone_to_iron_age') {
-    const { renderKs2StoneAgeTimelineSlider } = await import('./ks2_stone_age_chronology_slider.js');
-    renderKs2StoneAgeTimelineSlider(container);
-    return;
-  }
-
-  if (unitId === 'ks2_romans') {
-    const { renderKs2RomansTimelineSlider } = await import('./ks2_romans_chronology_slider.js');
-    renderKs2RomansTimelineSlider(container);
-    return;
-  }
-
-  if (unitId === 'ks2_anglo_saxons_vikings') {
-    const { renderKs2SaxonsTimelineSlider } = await import('./ks2_saxons_chronology_slider.js');
-    renderKs2SaxonsTimelineSlider(container);
-    return;
-  }
-
-  if (unitId === 'ks2_ancient_egypt') {
-    const { renderKs2EgyptTimelineSlider } = await import('./ks2_egypt_chronology_slider.js');
-    renderKs2EgyptTimelineSlider(container);
-    return;
-  }
-
-  if (unitId === 'ks2_ancient_greece') {
-    const { renderKs2GreeceTimelineSlider } = await import('./ks2_greece_chronology_slider.js');
-    renderKs2GreeceTimelineSlider(container);
-    return;
-  }
-
-  if (unitId === 'ks2_early_islamic_baghdad') {
-    const { renderKs2BaghdadTimelineSlider } = await import('./ks2_baghdad_chronology_slider.js');
-    renderKs2BaghdadTimelineSlider(container);
-    return;
-  }
-
-  if (unitId === 'ks2_maya_civilisation') {
-    const { renderKs2MayaTimelineSlider } = await import('./ks2_maya_chronology_slider.js');
-    renderKs2MayaTimelineSlider(container);
-    return;
-  }
-
   const { renderUniversalLivingTimeline } = await import('./universal_living_timeline.js');
   renderUniversalLivingTimeline(container, unitId, state.activeUnitData);
 }

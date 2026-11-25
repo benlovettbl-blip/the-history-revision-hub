@@ -67,8 +67,8 @@
   ],
   "milestones": [
     {
-      "id": "usa_ms_1",
       "num": 1,
+      "id": "usa_ms_1",
       "era": "kt1",
       "stream": "civil_rights",
       "date": "Early 1950s",
@@ -107,8 +107,8 @@
       ]
     },
     {
-      "id": "usa_ms_2",
       "num": 2,
+      "id": "usa_ms_2",
       "era": "kt1",
       "stream": "civil_rights",
       "date": "17 May 1954",
@@ -143,8 +143,8 @@
       ]
     },
     {
-      "id": "usa_ms_3",
       "num": 3,
+      "id": "usa_ms_3",
       "era": "kt3",
       "stream": "vietnam",
       "date": "May – July 1954",
@@ -179,8 +179,8 @@
       ]
     },
     {
-      "id": "usa_ms_4",
       "num": 4,
+      "id": "usa_ms_4",
       "era": "kt1",
       "stream": "civil_rights",
       "date": "July 1954 – Sept 1955",
@@ -218,8 +218,8 @@
       ]
     },
     {
-      "id": "usa_ms_5",
       "num": 5,
+      "id": "usa_ms_5",
       "era": "kt3",
       "stream": "vietnam",
       "date": "Oct 1955 – 1956",
@@ -253,8 +253,8 @@
       ]
     },
     {
-      "id": "usa_ms_6",
       "num": 6,
+      "id": "usa_ms_6",
       "era": "kt1",
       "stream": "civil_rights",
       "date": "1 Dec 1955 – Jan 1957",
@@ -291,8 +291,8 @@
       ]
     },
     {
-      "id": "usa_ms_7",
       "num": 7,
+      "id": "usa_ms_7",
       "era": "kt1",
       "stream": "civil_rights",
       "date": "Sept 1957 – 1959",
@@ -330,8 +330,8 @@
       ]
     },
     {
-      "id": "usa_ms_8",
       "num": 8,
+      "id": "usa_ms_8",
       "era": "kt2",
       "stream": "civil_rights",
       "date": "Feb – Aug 1960",
@@ -365,8 +365,8 @@
       ]
     },
     {
-      "id": "usa_ms_9",
       "num": 9,
+      "id": "usa_ms_9",
       "era": "kt3",
       "stream": "vietnam",
       "date": "Dec 1960 – 1961",
@@ -402,8 +402,8 @@
       ]
     },
     {
-      "id": "usa_ms_10",
       "num": 10,
+      "id": "usa_ms_10",
       "era": "kt2",
       "stream": "civil_rights",
       "date": "May 1961 – Oct 1962",
@@ -439,8 +439,8 @@
       ]
     },
     {
-      "id": "usa_ms_11",
       "num": 11,
+      "id": "usa_ms_11",
       "era": "kt2",
       "stream": "civil_rights",
       "date": "April – Aug 1963",
@@ -474,8 +474,8 @@
       ]
     },
     {
-      "id": "usa_ms_12",
       "num": 12,
+      "id": "usa_ms_12",
       "era": "kt3",
       "stream": "vietnam",
       "date": "1962 – Nov 1963",
@@ -509,8 +509,8 @@
       ]
     },
     {
-      "id": "usa_ms_13",
       "num": 13,
+      "id": "usa_ms_13",
       "era": "kt2",
       "stream": "civil_rights",
       "date": "June – 2 July 1964",
@@ -544,8 +544,8 @@
       ]
     },
     {
-      "id": "usa_ms_14",
       "num": 14,
+      "id": "usa_ms_14",
       "era": "kt3",
       "stream": "vietnam",
       "date": "2 – 7 Aug 1964",
@@ -579,8 +579,8 @@
       ]
     },
     {
-      "id": "usa_ms_15",
       "num": 15,
+      "id": "usa_ms_15",
       "era": "kt2",
       "stream": "civil_rights",
       "date": "1963 – 21 Feb 1965",
@@ -612,8 +612,8 @@
       ]
     },
     {
-      "id": "usa_ms_16",
       "num": 16,
+      "id": "usa_ms_16",
       "era": "kt3",
       "stream": "vietnam",
       "date": "2 – 8 March 1965",
@@ -646,8 +646,8 @@
       ]
     },
     {
-      "id": "usa_ms_17",
       "num": 17,
+      "id": "usa_ms_17",
       "era": "kt2",
       "stream": "civil_rights",
       "date": "7 March – 6 Aug 1965",
@@ -681,8 +681,8 @@
       ]
     },
     {
-      "id": "usa_ms_18",
       "num": 18,
+      "id": "usa_ms_18",
       "era": "kt3",
       "stream": "vietnam",
       "date": "1965 – 1967",
@@ -719,8 +719,8 @@
       ]
     },
     {
-      "id": "usa_ms_19",
       "num": 19,
+      "id": "usa_ms_19",
       "era": "kt2",
       "stream": "civil_rights",
       "date": "June – Oct 1966",
@@ -754,8 +754,8 @@
       ]
     },
     {
-      "id": "usa_ms_20",
       "num": 20,
+      "id": "usa_ms_20",
       "era": "kt2",
       "stream": "civil_rights",
       "date": "Aug 1965 – Feb 1968",
@@ -794,8 +794,8 @@
       ]
     },
     {
-      "id": "usa_ms_21",
       "num": 21,
+      "id": "usa_ms_21",
       "era": "kt3",
       "stream": "vietnam",
       "date": "30 Jan – 31 March 1968",
@@ -831,8 +831,8 @@
       ]
     },
     {
-      "id": "usa_ms_22",
       "num": 22,
+      "id": "usa_ms_22",
       "era": "kt2",
       "stream": "civil_rights",
       "date": "4 – 11 April 1968",
@@ -865,8 +865,8 @@
       ]
     },
     {
-      "id": "usa_ms_23",
       "num": 23,
+      "id": "usa_ms_23",
       "era": "kt2",
       "stream": "civil_rights",
       "date": "16 Oct 1968 – 1975",
@@ -899,8 +899,8 @@
       ]
     },
     {
-      "id": "usa_ms_24",
       "num": 24,
+      "id": "usa_ms_24",
       "era": "kt3",
       "stream": "vietnam",
       "date": "1969 – 1971",
@@ -938,8 +938,8 @@
       ]
     },
     {
-      "id": "usa_ms_25",
       "num": 25,
+      "id": "usa_ms_25",
       "era": "kt4",
       "stream": "vietnam",
       "date": "Nov 1969 – May 1970",
@@ -978,8 +978,8 @@
       ]
     },
     {
-      "id": "usa_ms_26",
       "num": 26,
+      "id": "usa_ms_26",
       "era": "kt4",
       "stream": "vietnam",
       "date": "Nov 1969 – Nov 1972",
@@ -1013,8 +1013,8 @@
       ]
     },
     {
-      "id": "usa_ms_27",
       "num": 27,
+      "id": "usa_ms_27",
       "era": "kt4",
       "stream": "vietnam",
       "date": "June 1971 – Aug 1974",
@@ -1050,8 +1050,8 @@
       ]
     },
     {
-      "id": "usa_ms_28",
       "num": 28,
+      "id": "usa_ms_28",
       "era": "kt4",
       "stream": "vietnam",
       "date": "Jan – 30 April 1975",

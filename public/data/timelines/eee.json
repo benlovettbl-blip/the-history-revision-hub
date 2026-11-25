@@ -47,8 +47,8 @@
   ],
   "milestones": [
     {
-      "id": "eee_ms_1",
       "num": 1,
+      "id": "eee_ms_1",
       "era": "kt1",
       "date": "17 Nov – Dec 1558",
       "shortDate": "Nov 1558",
@@ -85,8 +85,8 @@
       ]
     },
     {
-      "id": "eee_ms_2",
       "num": 2,
+      "id": "eee_ms_2",
       "era": "kt1",
       "date": "Jan 1558 – 1560",
       "shortDate": "1558–60",
@@ -122,8 +122,8 @@
       ]
     },
     {
-      "id": "eee_ms_3",
       "num": 3,
+      "id": "eee_ms_3",
       "era": "kt1",
       "date": "May – Summer 1559",
       "shortDate": "May 1559",
@@ -159,8 +159,8 @@
       ]
     },
     {
-      "id": "eee_ms_4",
       "num": 4,
+      "id": "eee_ms_4",
       "era": "kt1",
       "date": "Autumn 1559 – 1563",
       "shortDate": "1559–63",
@@ -196,8 +196,8 @@
       ]
     },
     {
-      "id": "eee_ms_5",
       "num": 5,
+      "id": "eee_ms_5",
       "era": "kt3",
       "date": "1560s – 1570s",
       "shortDate": "1560s–70s",
@@ -233,8 +233,8 @@
       ]
     },
     {
-      "id": "eee_ms_6",
       "num": 6,
+      "id": "eee_ms_6",
       "era": "kt1",
       "date": "March 1566",
       "shortDate": "Mar 1566",
@@ -266,8 +266,8 @@
       ]
     },
     {
-      "id": "eee_ms_7",
       "num": 7,
+      "id": "eee_ms_7",
       "era": "kt1",
       "date": "1567 – Nov 1568",
       "shortDate": "1567–68",
@@ -305,8 +305,8 @@
       ]
     },
     {
-      "id": "eee_ms_8",
       "num": 8,
+      "id": "eee_ms_8",
       "era": "kt1",
       "date": "May 1568 – Jan 1569",
       "shortDate": "1568–69",
@@ -342,8 +342,8 @@
       ]
     },
     {
-      "id": "eee_ms_9",
       "num": 9,
+      "id": "eee_ms_9",
       "era": "kt3",
       "date": "1569 – 1570s",
       "shortDate": "1569–70s",
@@ -379,8 +379,8 @@
       ]
     },
     {
-      "id": "eee_ms_10",
       "num": 10,
+      "id": "eee_ms_10",
       "era": "kt2",
       "date": "Nov 1569 – Jan 1570",
       "shortDate": "Nov 1569",
@@ -416,8 +416,8 @@
       ]
     },
     {
-      "id": "eee_ms_11",
       "num": 11,
+      "id": "eee_ms_11",
       "era": "kt2",
       "date": "Feb 1570 – June 1572",
       "shortDate": "1570–72",
@@ -453,8 +453,8 @@
       ]
     },
     {
-      "id": "eee_ms_12",
       "num": 12,
+      "id": "eee_ms_12",
       "era": "kt3",
       "date": "1572",
       "shortDate": "1572",
@@ -489,8 +489,8 @@
       ]
     },
     {
-      "id": "eee_ms_13",
       "num": 13,
+      "id": "eee_ms_13",
       "era": "kt3",
       "date": "1576",
       "shortDate": "1576",
@@ -522,8 +522,8 @@
       ]
     },
     {
-      "id": "eee_ms_14",
       "num": 14,
+      "id": "eee_ms_14",
       "era": "kt3",
       "date": "1576 – 1587",
       "shortDate": "1576–87",
@@ -559,8 +559,8 @@
       ]
     },
     {
-      "id": "eee_ms_15",
       "num": 15,
+      "id": "eee_ms_15",
       "era": "kt3",
       "date": "Dec 1577 – Sept 1580",
       "shortDate": "1577–80",
@@ -595,8 +595,8 @@
       ]
     },
     {
-      "id": "eee_ms_16",
       "num": 16,
+      "id": "eee_ms_16",
       "era": "kt2",
       "date": "April 1581",
       "shortDate": "Apr 1581",
@@ -629,8 +629,8 @@
       ]
     },
     {
-      "id": "eee_ms_17",
       "num": 17,
+      "id": "eee_ms_17",
       "era": "kt2",
       "date": "Nov 1583 – 1584",
       "shortDate": "1583–84",
@@ -664,8 +664,8 @@
       ]
     },
     {
-      "id": "eee_ms_18",
       "num": 18,
+      "id": "eee_ms_18",
       "era": "kt3",
       "date": "March 1584 – June 1586",
       "shortDate": "1584–86",
@@ -705,8 +705,8 @@
       ]
     },
     {
-      "id": "eee_ms_19",
       "num": 19,
+      "id": "eee_ms_19",
       "era": "kt2",
       "date": "Aug 1585 – Jan 1587",
       "shortDate": "1585–87",
@@ -744,8 +744,8 @@
       ]
     },
     {
-      "id": "eee_ms_20",
       "num": 20,
+      "id": "eee_ms_20",
       "era": "kt2",
       "date": "July – Sept 1586",
       "shortDate": "Jul 1586",
@@ -779,8 +779,8 @@
       ]
     },
     {
-      "id": "eee_ms_21",
       "num": 21,
+      "id": "eee_ms_21",
       "era": "kt2",
       "date": "8 Feb 1587",
       "shortDate": "Feb 1587",
@@ -814,8 +814,8 @@
       ]
     },
     {
-      "id": "eee_ms_22",
       "num": 22,
+      "id": "eee_ms_22",
       "era": "kt2",
       "date": "19 April – Summer 1587",
       "shortDate": "Apr 1587",
@@ -848,8 +848,8 @@
       ]
     },
     {
-      "id": "eee_ms_23",
       "num": 23,
+      "id": "eee_ms_23",
       "era": "kt3",
       "date": "May 1587 – 1588",
       "shortDate": "1587–88",
@@ -883,8 +883,8 @@
       ]
     },
     {
-      "id": "eee_ms_24",
       "num": 24,
+      "id": "eee_ms_24",
       "era": "kt2",
       "date": "29 July – Aug 1588",
       "shortDate": "Aug 1588",

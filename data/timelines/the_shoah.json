@@ -58,8 +58,8 @@
   ],
   "milestones": [
     {
-      "id": "the_shoah_ms_1",
       "num": 1,
+      "id": "the_shoah_ms_1",
       "era": "part_1",
       "date": "1871 – 1918",
       "shortDate": "1871–1918",
@@ -90,8 +90,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_2",
       "num": 2,
+      "id": "the_shoah_ms_2",
       "era": "part_1",
       "date": "1920s",
       "shortDate": "1920s",
@@ -126,8 +126,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_3",
       "num": 3,
+      "id": "the_shoah_ms_3",
       "era": "part_1",
       "date": "c. 1930 – January 1933",
       "shortDate": "c. 1930–1932",
@@ -161,8 +161,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_4",
       "num": 4,
+      "id": "the_shoah_ms_4",
       "era": "part_1",
       "date": "30 January – 7 April 1933",
       "shortDate": "Jan–Apr 1933",
@@ -194,8 +194,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_5",
       "num": 5,
+      "id": "the_shoah_ms_5",
       "era": "part_1",
       "date": "15 September 1935 – 1938",
       "shortDate": "Sep 1935–1938",
@@ -226,8 +226,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_6",
       "num": 6,
+      "id": "the_shoah_ms_6",
       "era": "part_1",
       "date": "July 1938 – August 1939",
       "shortDate": "Nov–Dec 1938",
@@ -262,8 +262,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_7",
       "num": 7,
+      "id": "the_shoah_ms_7",
       "era": "part_2",
       "date": "1 September – November 1939",
       "shortDate": "Sep–Nov 1939",
@@ -297,8 +297,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_8",
       "num": 8,
+      "id": "the_shoah_ms_8",
       "era": "part_2",
       "date": "1940 – Early 1941",
       "shortDate": "1940–1941",
@@ -332,8 +332,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_9",
       "num": 9,
+      "id": "the_shoah_ms_9",
       "era": "part_2",
       "date": "November 1940 – 1941",
       "shortDate": "Nov 1940–1941",
@@ -365,8 +365,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_10",
       "num": 10,
+      "id": "the_shoah_ms_10",
       "era": "part_2",
       "date": "22 June – August 1941",
       "shortDate": "Jun–Aug 1941",
@@ -403,8 +403,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_11",
       "num": 11,
+      "id": "the_shoah_ms_11",
       "era": "part_2",
       "date": "29–30 September 1941",
       "shortDate": "29–30 Sep 1941",
@@ -437,8 +437,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_12",
       "num": 12,
+      "id": "the_shoah_ms_12",
       "era": "part_2",
       "date": "July – December 1941",
       "shortDate": "Late 1941",
@@ -469,8 +469,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_13",
       "num": 13,
+      "id": "the_shoah_ms_13",
       "era": "part_3",
       "date": "20 January – Summer 1942",
       "shortDate": "Jan–Sum 1942",
@@ -503,8 +503,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_14",
       "num": 14,
+      "id": "the_shoah_ms_14",
       "era": "part_3",
       "date": "16–17 July 1942",
       "shortDate": "Jul 1942",
@@ -540,8 +540,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_15",
       "num": 15,
+      "id": "the_shoah_ms_15",
       "era": "part_3",
       "date": "19 April – 16 May 1943",
       "shortDate": "Apr–May 1943",
@@ -572,8 +572,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_16",
       "num": 16,
+      "id": "the_shoah_ms_16",
       "era": "part_3",
       "date": "August – October 1943",
       "shortDate": "Aug–Oct 1943",
@@ -607,8 +607,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_17",
       "num": 17,
+      "id": "the_shoah_ms_17",
       "era": "part_3",
       "date": "October 1943",
       "shortDate": "Oct 1943",
@@ -641,8 +641,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_18",
       "num": 18,
+      "id": "the_shoah_ms_18",
       "era": "part_3",
       "date": "May – July 1944",
       "shortDate": "May–Jul 1944",
@@ -673,8 +673,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_19",
       "num": 19,
+      "id": "the_shoah_ms_19",
       "era": "part_4",
       "date": "Winter 1944 – April 1945",
       "shortDate": "Jan–Apr 1945",
@@ -705,8 +705,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_20",
       "num": 20,
+      "id": "the_shoah_ms_20",
       "era": "part_4",
       "date": "November 1945 – July 1947",
       "shortDate": "1945–Jul 1947",
@@ -741,8 +741,8 @@
       ]
     },
     {
-      "id": "the_shoah_ms_21",
       "num": 21,
+      "id": "the_shoah_ms_21",
       "era": "part_4",
       "date": "December 1948 & Legacy",
       "shortDate": "1948 & Legacy",

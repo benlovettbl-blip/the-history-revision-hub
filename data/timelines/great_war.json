@@ -47,8 +47,8 @@
   ],
   "milestones": [
     {
-      "id": "great_war_ms_1",
       "num": 1,
+      "id": "great_war_ms_1",
       "era": "part_1",
       "date": "1862 – 2 September 1870",
       "shortDate": "1862–Sep 1870",
@@ -81,8 +81,8 @@
       ]
     },
     {
-      "id": "great_war_ms_2",
       "num": 2,
+      "id": "great_war_ms_2",
       "era": "part_1",
       "date": "18 January – 10 May 1871",
       "shortDate": "Jan–May 1871",
@@ -115,8 +115,8 @@
       ]
     },
     {
-      "id": "great_war_ms_3",
       "num": 3,
+      "id": "great_war_ms_3",
       "era": "part_1",
       "date": "1879–1882",
       "shortDate": "1879–1882",
@@ -150,8 +150,8 @@
       ]
     },
     {
-      "id": "great_war_ms_4",
       "num": 4,
+      "id": "great_war_ms_4",
       "era": "part_1",
       "date": "November 1884 – February 1885",
       "shortDate": "1884–1885",
@@ -184,8 +184,8 @@
       ]
     },
     {
-      "id": "great_war_ms_5",
       "num": 5,
+      "id": "great_war_ms_5",
       "era": "part_1",
       "date": "18 June 1887",
       "shortDate": "Jun 1887",
@@ -219,8 +219,8 @@
       ]
     },
     {
-      "id": "great_war_ms_6",
       "num": 6,
+      "id": "great_war_ms_6",
       "era": "part_1",
       "date": "1889–1890",
       "shortDate": "1889–1890",
@@ -254,8 +254,8 @@
       ]
     },
     {
-      "id": "great_war_ms_7",
       "num": 7,
+      "id": "great_war_ms_7",
       "era": "part_1",
       "date": "1894–1900",
       "shortDate": "1894–1900",
@@ -287,8 +287,8 @@
       ]
     },
     {
-      "id": "great_war_ms_8",
       "num": 8,
+      "id": "great_war_ms_8",
       "era": "part_2",
       "date": "April 1904 – 31 March 1905",
       "shortDate": "1904–Mar 1905",
@@ -322,8 +322,8 @@
       ]
     },
     {
-      "id": "great_war_ms_9",
       "num": 9,
+      "id": "great_war_ms_9",
       "era": "part_2",
       "date": "January – April 1906",
       "shortDate": "Jan–Apr 1906",
@@ -357,8 +357,8 @@
       ]
     },
     {
-      "id": "great_war_ms_10",
       "num": 10,
+      "id": "great_war_ms_10",
       "era": "part_2",
       "date": "February 1906 – August 1907",
       "shortDate": "1906–1907",
@@ -393,8 +393,8 @@
       ]
     },
     {
-      "id": "great_war_ms_11",
       "num": 11,
+      "id": "great_war_ms_11",
       "era": "part_2",
       "date": "October 1908",
       "shortDate": "Oct 1908",
@@ -432,8 +432,8 @@
       ]
     },
     {
-      "id": "great_war_ms_12",
       "num": 12,
+      "id": "great_war_ms_12",
       "era": "part_2",
       "date": "1909",
       "shortDate": "1909",
@@ -465,8 +465,8 @@
       ]
     },
     {
-      "id": "great_war_ms_13",
       "num": 13,
+      "id": "great_war_ms_13",
       "era": "part_2",
       "date": "July 1911",
       "shortDate": "Jul 1911",
@@ -500,8 +500,8 @@
       ]
     },
     {
-      "id": "great_war_ms_14",
       "num": 14,
+      "id": "great_war_ms_14",
       "era": "part_2",
       "date": "1912–1913",
       "shortDate": "1912–1913",
@@ -535,8 +535,8 @@
       ]
     },
     {
-      "id": "great_war_ms_15",
       "num": 15,
+      "id": "great_war_ms_15",
       "era": "part_3",
       "date": "28 June 1914",
       "shortDate": "28 Jun 1914",
@@ -570,8 +570,8 @@
       ]
     },
     {
-      "id": "great_war_ms_16",
       "num": 16,
+      "id": "great_war_ms_16",
       "era": "part_3",
       "date": "5–28 July 1914",
       "shortDate": "5–28 Jul 1914",
@@ -605,8 +605,8 @@
       ]
     },
     {
-      "id": "great_war_ms_17",
       "num": 17,
+      "id": "great_war_ms_17",
       "era": "part_3",
       "date": "30 July – 4 August 1914",
       "shortDate": "30 Jul–4 Aug",
@@ -640,8 +640,8 @@
       ]
     },
     {
-      "id": "great_war_ms_18",
       "num": 18,
+      "id": "great_war_ms_18",
       "era": "part_3",
       "date": "August 1914 & Historiography",
       "shortDate": "1914 Verdict",

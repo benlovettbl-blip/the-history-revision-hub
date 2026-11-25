@@ -775,8 +775,13 @@ export default defineConfig({
               priority: 75,
             },
             {
-              name: 'blurt-past-bank',
-              test: /src[\\/](blurt_past_papers_curriculum|blurt_past_papers_cold_war)\.js/,
+              name: 'blurt-past-p1p2',
+              test: /src[\\/]blurt_past_papers_p1_p2\.js/,
+              priority: 74,
+            },
+            {
+              name: 'blurt-past-p3',
+              test: /src[\\/](blurt_past_papers_p3|blurt_past_papers_cold_war|blurt_past_papers_curriculum)\.js/,
               priority: 73,
             },
             {

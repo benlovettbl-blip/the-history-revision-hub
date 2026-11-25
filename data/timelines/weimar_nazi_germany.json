@@ -58,8 +58,8 @@
   ],
   "milestones": [
     {
-      "id": "weimar_nazi_germany_ms_1",
       "num": 1,
+      "id": "weimar_nazi_germany_ms_1",
       "era": "kt1",
       "date": "3 – 11 Nov 1918",
       "shortDate": "Nov 1918",
@@ -99,8 +99,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_2",
       "num": 2,
+      "id": "weimar_nazi_germany_ms_2",
       "era": "kt1",
       "date": "5 – 15 Jan 1919",
       "shortDate": "Jan 1919",
@@ -133,8 +133,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_3",
       "num": 3,
+      "id": "weimar_nazi_germany_ms_3",
       "era": "kt1",
       "date": "28 June 1919",
       "shortDate": "Jun 1919",
@@ -170,8 +170,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_4",
       "num": 4,
+      "id": "weimar_nazi_germany_ms_4",
       "era": "kt1",
       "date": "11 Aug 1919",
       "shortDate": "Aug 1919",
@@ -208,8 +208,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_5",
       "num": 5,
+      "id": "weimar_nazi_germany_ms_5",
       "era": "kt2",
       "date": "Sept 1919 – Feb 1920",
       "shortDate": "Feb 1920",
@@ -245,8 +245,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_6",
       "num": 6,
+      "id": "weimar_nazi_germany_ms_6",
       "era": "kt1",
       "date": "March 1920",
       "shortDate": "Mar 1920",
@@ -279,8 +279,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_7",
       "num": 7,
+      "id": "weimar_nazi_germany_ms_7",
       "era": "kt2",
       "date": "July – Aug 1921",
       "shortDate": "Jul–Aug 1921",
@@ -313,8 +313,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_8",
       "num": 8,
+      "id": "weimar_nazi_germany_ms_8",
       "era": "kt1",
       "date": "Jan – Nov 1923",
       "shortDate": "1923",
@@ -352,8 +352,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_9",
       "num": 9,
+      "id": "weimar_nazi_germany_ms_9",
       "era": "kt2",
       "date": "8 – 9 Nov 1923",
       "shortDate": "Nov 1923",
@@ -389,8 +389,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_10",
       "num": 10,
+      "id": "weimar_nazi_germany_ms_10",
       "era": "kt1",
       "date": "Nov 1923 – Aug 1924",
       "shortDate": "1923–24",
@@ -421,8 +421,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_11",
       "num": 11,
+      "id": "weimar_nazi_germany_ms_11",
       "era": "kt2",
       "date": "Feb – Dec 1924",
       "shortDate": "1924",
@@ -455,8 +455,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_12",
       "num": 12,
+      "id": "weimar_nazi_germany_ms_12",
       "era": "kt1",
       "date": "Oct 1925 – Sept 1926",
       "shortDate": "1925–26",
@@ -490,8 +490,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_13",
       "num": 13,
+      "id": "weimar_nazi_germany_ms_13",
       "era": "kt2",
       "date": "Feb 1926 – May 1928",
       "shortDate": "1926–28",
@@ -526,8 +526,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_14",
       "num": 14,
+      "id": "weimar_nazi_germany_ms_14",
       "era": "kt1",
       "date": "1924 – 1929",
       "shortDate": "1924–29",
@@ -564,8 +564,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_15",
       "num": 15,
+      "id": "weimar_nazi_germany_ms_15",
       "era": "kt2",
       "date": "Aug 1928 – Oct 1929",
       "shortDate": "Oct 1929",
@@ -598,8 +598,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_16",
       "num": 16,
+      "id": "weimar_nazi_germany_ms_16",
       "era": "kt2",
       "date": "March 1930 – July 1932",
       "shortDate": "1930–Jul 1932",
@@ -633,8 +633,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_17",
       "num": 17,
+      "id": "weimar_nazi_germany_ms_17",
       "era": "kt2",
       "date": "Nov 1932 – 30 Jan 1933",
       "shortDate": "Jan 1933",
@@ -668,8 +668,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_18",
       "num": 18,
+      "id": "weimar_nazi_germany_ms_18",
       "era": "kt3",
       "date": "27 Feb – July 1933",
       "shortDate": "Feb–Mar 1933",
@@ -707,8 +707,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_19",
       "num": 19,
+      "id": "weimar_nazi_germany_ms_19",
       "era": "kt4",
       "date": "June 1933 – 1939",
       "shortDate": "Jun 1933–39",
@@ -745,8 +745,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_20",
       "num": 20,
+      "id": "weimar_nazi_germany_ms_20",
       "era": "kt3",
       "date": "July 1933 – May 1934",
       "shortDate": "1933–34",
@@ -784,8 +784,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_21",
       "num": 21,
+      "id": "weimar_nazi_germany_ms_21",
       "era": "kt3",
       "date": "30 June – 2 Aug 1934",
       "shortDate": "Jun–Aug 1934",
@@ -819,8 +819,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_22",
       "num": 22,
+      "id": "weimar_nazi_germany_ms_22",
       "era": "kt3",
       "date": "1933 – 1936",
       "shortDate": "1933–36",
@@ -858,8 +858,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_23",
       "num": 23,
+      "id": "weimar_nazi_germany_ms_23",
       "era": "kt4",
       "date": "April 1933 – Sept 1935",
       "shortDate": "Sep 1935",
@@ -896,8 +896,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_24",
       "num": 24,
+      "id": "weimar_nazi_germany_ms_24",
       "era": "kt3",
       "date": "1933 – 1937",
       "shortDate": "Aug 1936",
@@ -934,8 +934,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_25",
       "num": 25,
+      "id": "weimar_nazi_germany_ms_25",
       "era": "kt4",
       "date": "1935 – 1939",
       "shortDate": "1935–39",
@@ -971,8 +971,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_26",
       "num": 26,
+      "id": "weimar_nazi_germany_ms_26",
       "era": "kt4",
       "date": "Dec 1936 – March 1939",
       "shortDate": "1936–39",
@@ -1007,8 +1007,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_27",
       "num": 27,
+      "id": "weimar_nazi_germany_ms_27",
       "era": "kt3",
       "date": "1937 – 1939",
       "shortDate": "1937–39",
@@ -1046,8 +1046,8 @@
       ]
     },
     {
-      "id": "weimar_nazi_germany_ms_28",
       "num": 28,
+      "id": "weimar_nazi_germany_ms_28",
       "era": "kt4",
       "date": "9 – 10 Nov 1938 – Aug 1939",
       "shortDate": "Nov 1938–39",

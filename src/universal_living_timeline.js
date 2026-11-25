@@ -51,6 +51,7 @@ const ERA_PALETTE = [
 ];
 
 const UNIT_ID_ALIASES = {
+  gcse_middle_east_1945_1995: 'cme_new',
   gcse_usa_1954_1975: 'usa',
   gcse_usa: 'usa',
   early_elizabethan_england: 'eee',
@@ -890,6 +891,8 @@ function normalizeCuratedMilestones(curatedSidecar, unitData, isGcse) {
   const individualsCatalog = Array.isArray(unitData?.key_individuals) ? unitData.key_individuals : [];
   const eraById = new Map((curatedSidecar.eras || []).map((e) => [e.id, e]));
   const beatCfg = curatedSidecar.beatLabels || {};
+  const isKs2 = curatedSidecar.cardProfile === 'ks2';
+  const mapTabLabel = beatCfg.mapTabLabel || '🗺️ Reference Map';
 
   return (curatedSidecar.milestones || []).map((m, idx) => {
     const eraCfg = eraById.get(m.era) || curatedSidecar.eras?.[0] || {
@@ -902,7 +905,9 @@ function normalizeCuratedMilestones(curatedSidecar, unitData, isGcse) {
     };
     const lIdx = Math.max(0, Math.min(Math.max(0, lessons.length - 1), m.lessonIndex ?? 0));
     const lesson = lessons[lIdx] || null;
-    const lessonShort = deriveLessonShortCode(lesson, lIdx, isGcse);
+    const lessonShort = isKs2
+      ? `Enquiry ${lIdx + 1}`
+      : deriveLessonShortCode(lesson, lIdx, isGcse);
     const lessonTitleClean = stripToPlain(lesson?.title || `Lesson ${lIdx + 1}`);
 
     const catalystHtml = formatTimelineProse(m.catalyst || '');
@@ -910,27 +915,54 @@ function normalizeCuratedMilestones(curatedSidecar, unitData, isGcse) {
     const impactHtml = formatTimelineProse(m.impact || '');
     const bridgeSummaryHtml = formatTimelineProse(m.bridgeToNext || m.impact || '');
 
-    const agentItems = (Array.isArray(m.keyAgents) ? m.keyAgents : []).map((rawName) => {
-      const cleanName = stripToPlain(typeof rawName === 'string' ? rawName : rawName?.name || '');
-      const matched = individualsCatalog.find(
-        (p) => stripToPlain(p?.name || '').toLowerCase() === cleanName.toLowerCase(),
-      );
-      return {
-        name: cleanName,
-        role: stripToPlain(matched?.role || ''),
-        isOrg: isEntityOrganisation(matched || { name: cleanName }),
-      };
-    }).filter((a) => a.name);
+    const ks2Block = m.ks2
+      ? {
+          storyHtml: formatTimelineProse(m.ks2.story || m.catalyst || ''),
+          significanceHtml: formatTimelineProse(m.ks2.significance || m.impact || ''),
+          childrenLifeHtml: formatTimelineProse(m.ks2.childrenLife || m.turningPoint || ''),
+          quoteHtml: formatTimelineProse(m.ks2.quote || ''),
+          detectiveQuestion: stripToPlain(m.ks2.detectiveQuestion || ''),
+          detectiveAnswerHtml: formatTimelineProse(m.ks2.detectiveAnswer || ''),
+        }
+      : null;
 
-    const vocabItems = (Array.isArray(m.keyTerms) ? m.keyTerms : []).map((v) => ({
-      term: stripToPlain(v?.term || ''),
-      definition: stripToPlain(v?.definition || ''),
-      phonetic: stripToPlain(v?.phonetic || ''),
-    })).filter((v) => v.term && v.definition);
+    const q3Comp = m.q3Comparison
+      ? {
+          examQuestion: stripToPlain(m.q3Comparison.examQuestion || ''),
+          pairedEra: stripToPlain(m.q3Comparison.pairedEra || ''),
+          pairedMilestoneId: String(m.q3Comparison.pairedMilestoneId || '').trim(),
+          type: stripToPlain(m.q3Comparison.type || 'Comparison'),
+          comparisonTitle: stripToPlain(m.q3Comparison.comparisonTitle || ''),
+          explanationHtml: formatTimelineProse(m.q3Comparison.explanation || ''),
+        }
+      : null;
+
+    const agentItems = (Array.isArray(m.keyAgents) ? m.keyAgents : [])
+      .map((rawName) => {
+        const cleanName = stripToPlain(typeof rawName === 'string' ? rawName : rawName?.name || '');
+        const matched = individualsCatalog.find(
+          (p) => stripToPlain(p?.name || '').toLowerCase() === cleanName.toLowerCase(),
+        );
+        return {
+          name: cleanName,
+          role: stripToPlain(matched?.role || ''),
+          isOrg: isEntityOrganisation(matched || { name: cleanName }),
+        };
+      })
+      .filter((a) => a.name);
+
+    const vocabItems = (Array.isArray(m.keyTerms) ? m.keyTerms : [])
+      .map((v) => ({
+        term: stripToPlain(v?.term || ''),
+        definition: stripToPlain(v?.definition || ''),
+        phonetic: stripToPlain(v?.phonetic || ''),
+      }))
+      .filter((v) => v.term && v.definition);
 
     const cleanTitlePlain = stripToPlain(m.title);
     const shortTitle = stripToPlain(m.shortTitle || deriveShortTitle(cleanTitlePlain));
     const shortDate = stripToPlain(m.shortDate || deriveShortDate(m.date, lessonShort));
+    const resolvedColor = m.badgeColor || eraCfg.color;
 
     const searchHaystack = [
       cleanTitlePlain,
@@ -938,6 +970,7 @@ function normalizeCuratedMilestones(curatedSidecar, unitData, isGcse) {
       m.date,
       shortDate,
       m.specTag || '',
+      m.categoryLabel || '',
       lessonShort,
       lessonTitleClean,
       m.enquiryQuestion || '',
@@ -945,6 +978,10 @@ function normalizeCuratedMilestones(curatedSidecar, unitData, isGcse) {
       stripToPlain(turningPointHtml),
       stripToPlain(impactHtml),
       stripToPlain(bridgeSummaryHtml),
+      q3Comp ? `${q3Comp.comparisonTitle} ${stripToPlain(q3Comp.explanationHtml)}` : '',
+      ks2Block
+        ? `${stripToPlain(ks2Block.quoteHtml)} ${ks2Block.detectiveQuestion} ${stripToPlain(ks2Block.detectiveAnswerHtml)}`
+        : '',
       ...agentItems.map((a) => a.name),
       ...vocabItems.map((v) => `${v.term} ${v.definition}`),
     ]
@@ -952,13 +989,15 @@ function normalizeCuratedMilestones(curatedSidecar, unitData, isGcse) {
       .toLowerCase();
 
     return {
+      isKs2,
       era: eraCfg.id,
-      eraBadge: eraCfg.badge,
-      eraColor: eraCfg.color,
-      eraAccent: eraCfg.accent || eraCfg.color,
+      eraBadge: m.categoryLabel ? m.categoryLabel.toUpperCase() : eraCfg.badge,
+      eraColor: resolvedColor,
+      eraAccent: eraCfg.accent || resolvedColor,
       eraSoftBg: eraCfg.softBg || '#eff6ff',
       eraSoftBorder: eraCfg.softBorder || '#bfdbfe',
       stream: m.stream || '',
+      factors: Array.isArray(m.factors) ? m.factors : [],
       lessonIndex: lIdx,
       lessonShort,
       lessonTitle: lessonTitleClean,
@@ -969,12 +1008,17 @@ function normalizeCuratedMilestones(curatedSidecar, unitData, isGcse) {
       cleanTitlePlain,
       shortTitle,
       specTag: stripToPlain(m.specTag || ''),
-      enquiryQuestion: stripToPlain(m.enquiryQuestion || ''),
+      enquiryQuestion: isKs2 ? '' : stripToPlain(m.enquiryQuestion || ''),
       statCallout: stripToPlain(m.specTag || ''),
       imageUrl: m.imageUrl || '',
       imageCaption: stripToPlain(m.imageCaption || `${cleanTitlePlain} (${m.date})`),
+      provenance: stripToPlain(m.provenance || ''),
+      refTextbook: stripToPlain(m.refTextbook || ''),
+      textbookUrl: m.textbookUrl || '',
+      worksheetUrl: m.worksheetUrl || '',
       mapUrl: m.mapUrl || '',
       mapCaption: stripToPlain(m.mapCaption || 'Historical Reference Map'),
+      mapTabLabel,
       hasMap: Boolean(m.mapUrl && m.mapUrl !== m.imageUrl),
       catalystHtml,
       turningPointHtml,
@@ -985,6 +1029,8 @@ function normalizeCuratedMilestones(curatedSidecar, unitData, isGcse) {
       beatTurningLabel: beatCfg.turningPoint || 'Key Turning Point',
       beatImpactLabel: beatCfg.impact || 'Historical Significance',
       bridgeBadgeLabel: beatCfg.bridgeBadge || 'Leads To →',
+      ks2Block,
+      q3Comp,
       vocabItems,
       agentItems,
       globalIdx: idx,
@@ -1072,6 +1118,15 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     curatedSidecar && Array.isArray(curatedSidecar.streamFilters)
       ? curatedSidecar.streamFilters
       : [];
+  const factorFilters =
+    curatedSidecar && Array.isArray(curatedSidecar.factorFilters)
+      ? curatedSidecar.factorFilters
+      : [];
+  const factorById = new Map(factorFilters.map((f) => [f.id, f]));
+  const isKs2Profile = curatedSidecar?.cardProfile === 'ks2';
+  const heroGradient = curatedSidecar?.heroGradient || '';
+  const heroSubtitle = stripToPlain(curatedSidecar?.subtitle || '');
+  const ks2TextbookLabel = stripToPlain(curatedSidecar?.textbookLabel || 'Classroom Textbook');
 
   function buildMilestonesForDensity(mode) {
     if (mode === 'turning_points' && curatedSidecar) {
@@ -1123,11 +1178,15 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
   let visualMode = 'source'; // 'source' | 'map'
   let currentEraFilter = 'all';
   let currentStreamFilter = 'all';
+  let currentFactorFilter = 'all';
   let searchQuery = '';
   let activeVocabTerm = null;
   let isTourPlaying = false;
   let recallMode = false;
+  let mobileFiltersOpen = false;
+  let mobileJumpOpen = false;
   const revealedConseqIdx = new Set();
+  const revealedDetectiveIdx = new Set();
   let lightboxState = { open: false, milestoneIdx: 0, mode: 'source' };
 
   function getActiveEraList() {
@@ -1139,9 +1198,40 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     return allMilestones.filter((m) => {
       if (currentEraFilter !== 'all' && m.era !== currentEraFilter) return false;
       if (currentStreamFilter !== 'all' && m.stream && m.stream !== currentStreamFilter) return false;
+      if (
+        currentFactorFilter !== 'all' &&
+        Array.isArray(m.factors) &&
+        m.factors.length > 0 &&
+        !m.factors.includes(currentFactorFilter)
+      ) {
+        return false;
+      }
       if (q && !m.searchHaystack.includes(q)) return false;
       return true;
     });
+  }
+
+  function computeMobileFilterSummary(filteredCount) {
+    const parts = [];
+    if (currentEraFilter !== 'all') {
+      const eraObj = getActiveEraList().find((e) => e.id === currentEraFilter);
+      if (eraObj) parts.push(eraObj.pillLabel);
+    }
+    if (currentFactorFilter !== 'all') {
+      const fac = factorById.get(currentFactorFilter);
+      if (fac) parts.push(fac.label);
+    }
+    if (currentStreamFilter !== 'all') {
+      const st = streamFilters.find((s) => s.id === currentStreamFilter);
+      if (st) parts.push(st.label);
+    }
+    if (searchQuery.trim()) {
+      parts.push(`"${searchQuery.trim()}"`);
+    }
+    if (parts.length === 0) {
+      return `All ${filteredCount} Milestones`;
+    }
+    return `${parts.join(' • ')} (${filteredCount})`;
   }
 
   function ensureValidSelection(filtered) {
@@ -1216,27 +1306,28 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
       </div>
 
       <!-- Compact Museum Header -->
-      <header class="ult-museum-header">
+      <header class="ult-museum-header" style="${heroGradient ? `background: ${escapeAttr(heroGradient)};` : ''}">
         <div class="ult-title-col">
           <div class="ult-eyebrow">
             <i class="fa-solid fa-compass"></i>
             <span id="ult-eyebrow-count">${escapeHtml(headerEyebrowBase)} &bull; ${allMilestones.length} Milestones</span>
           </div>
           <h1>${escapeHtml(unitTitleClean)}: Living Timeline</h1>
+          ${heroSubtitle ? `<p class="ult-hero-subtitle">${escapeHtml(heroSubtitle)}</p>` : ''}
         </div>
 
         <div class="ult-header-controls">
           <div class="ult-mode-seg" role="tablist" aria-label="Timeline view mode">
             <button type="button" class="ult-mode-btn active" data-view-mode="explorer" id="ult-mode-explorer-btn">
-              🧭 Explorer View
+              🧭 <span class="ult-desk-lbl">Explorer View</span>
             </button>
             <button type="button" class="ult-mode-btn" data-view-mode="grid" id="ult-mode-grid-btn">
-              🗂️ Grid View (${allMilestones.length})
+              🗂️ <span class="ult-desk-lbl">Grid View </span><span id="ult-grid-count-lbl">(${allMilestones.length})</span>
             </button>
           </div>
 
           <button type="button" class="ult-hdr-btn" id="ult-recall-btn" title="Blur Consequences & Bridges to test active recall!">
-            🙈 Recall Test
+            🙈 <span id="ult-recall-lbl">Recall<span class="ult-desk-lbl"> Test</span></span>
           </button>
 
           <button type="button" class="ult-hdr-btn" id="ult-tour-btn">
@@ -1244,62 +1335,87 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
           </button>
 
           <button type="button" class="ult-hdr-btn ult-staff-print-btn" id="ult-print-btn" title="Print A4 Landscape Chronological Revision or Recall Sheet">
-            🖨️ Print
+            🖨️ <span class="ult-desk-lbl">Print</span>
           </button>
         </div>
       </header>
 
       <!-- Era / Key Topic Filter Pills + Density Switcher + 16px Live Search -->
-      <div class="ult-filter-bar">
-        <div class="ult-filter-row-main">
-          <div class="ult-era-pills" id="ult-era-pills">
-            ${renderEraPillsInnerHTML()}
-          </div>
+      <div class="ult-filter-bar" id="ult-filter-bar">
+        <button type="button" class="ult-mobile-filter-toggle" id="ult-mobile-filter-toggle" aria-expanded="false">
+          <span class="ult-mobile-filter-summary">
+            <i class="fa-solid fa-sliders" style="color: var(--ult-unit-accent, #2563eb);"></i>
+            <span id="ult-mobile-filter-summary-text">All ${allMilestones.length} Milestones</span>
+          </span>
+          <span class="ult-mobile-filter-cta" id="ult-mobile-filter-cta">🔍 Filter &amp; Search ▾</span>
+        </button>
 
-          <div class="ult-controls-right">
-            ${
-              totalStagesCount > turningPointsCount
-                ? `
-              <div class="ult-density-seg" role="group" aria-label="Milestone granularity">
-                <button type="button" class="ult-density-btn active" data-density="turning_points">
-                  ${curatedSidecar ? 'Curated' : 'Turning Points'} (${turningPointsCount})
-                </button>
-                <button type="button" class="ult-density-btn" data-density="all_stages">
-                  All Stages (${totalStagesCount})
-                </button>
+        <div class="ult-filter-drawer-body" id="ult-filter-drawer-body">
+          <div class="ult-filter-row-main">
+            <div class="ult-era-pills" id="ult-era-pills">
+              ${renderEraPillsInnerHTML()}
+            </div>
+
+            <div class="ult-controls-right">
+              ${
+                !isKs2Profile && totalStagesCount > turningPointsCount
+                  ? `
+                <div class="ult-density-seg" role="group" aria-label="Milestone granularity">
+                  <button type="button" class="ult-density-btn active" data-density="turning_points">
+                    ${curatedSidecar ? 'Curated' : 'Turning Points'} (${turningPointsCount})
+                  </button>
+                  <button type="button" class="ult-density-btn" data-density="all_stages">
+                    All Stages (${totalStagesCount})
+                  </button>
+                </div>
+              `
+                  : ''
+              }
+
+              <div class="ult-search-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  type="search"
+                  id="ult-search-input"
+                  class="ult-search-input"
+                  placeholder="${isKs2Profile ? 'Find event, person, date...' : 'Search dates, events, key terms, figures...'}"
+                  aria-label="Search timeline milestones"
+                />
+                <button type="button" class="ult-search-clear" id="ult-search-clear" title="Clear search">&times;</button>
+              </div>
+            </div>
+          </div>
+          ${
+            streamFilters.length > 0
+              ? `
+              <div class="ult-stream-pills" id="ult-stream-pills">
+                <span style="font-size:0.7rem;font-weight:800;text-transform:uppercase;color:#64748b;letter-spacing:0.05em;">Thematic Stream:</span>
+                <button type="button" class="ult-stream-pill active" data-stream="all">All Streams</button>
+                ${streamFilters
+                  .map(
+                    (sf) => `<button type="button" class="ult-stream-pill" data-stream="${escapeAttr(sf.id)}">${escapeHtml(sf.label)}</button>`,
+                  )
+                  .join('')}
               </div>
             `
-                : ''
-            }
-
-            <div class="ult-search-wrap">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input
-                type="search"
-                id="ult-search-input"
-                class="ult-search-input"
-                placeholder="Search dates, events, key terms, figures..."
-                aria-label="Search timeline milestones"
-              />
-              <button type="button" class="ult-search-clear" id="ult-search-clear" title="Clear search">&times;</button>
-            </div>
-          </div>
+              : ''
+          }
+          ${
+            factorFilters.length > 0
+              ? `
+              <div class="ult-factor-pills" id="ult-factor-pills">
+                <span style="font-size:0.7rem;font-weight:800;text-transform:uppercase;color:#64748b;letter-spacing:0.05em;">Paper 1 Factors:</span>
+                <button type="button" class="ult-factor-pill active" data-factor="all" style="--factor-col:#0f172a;">All Factors</button>
+                ${factorFilters
+                  .map(
+                    (ff) => `<button type="button" class="ult-factor-pill" data-factor="${escapeAttr(ff.id)}" style="--factor-col:${escapeAttr(ff.color)};"><i class="fa-solid ${escapeAttr(ff.icon)}"></i> <span>${escapeHtml(ff.label)}</span></button>`,
+                  )
+                  .join('')}
+              </div>
+            `
+              : ''
+          }
         </div>
-        ${
-          streamFilters.length > 0
-            ? `
-            <div class="ult-stream-pills" id="ult-stream-pills">
-              <span style="font-size:0.7rem;font-weight:800;text-transform:uppercase;color:#64748b;letter-spacing:0.05em;">Thematic Stream:</span>
-              <button type="button" class="ult-stream-pill active" data-stream="all">All Streams</button>
-              ${streamFilters
-                .map(
-                  (sf) => `<button type="button" class="ult-stream-pill" data-stream="${escapeAttr(sf.id)}">${escapeHtml(sf.label)}</button>`,
-                )
-                .join('')}
-            </div>
-          `
-            : ''
-        }
       </div>
 
       <!-- Dynamic Stage / Grid Container -->
@@ -1384,10 +1500,12 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
   function syncHeaderButtons() {
     if (!rootEl) return;
     const totalCount = allMilestones.length;
+    const filteredNow = getFilteredList();
     rootEl.querySelectorAll('.ult-mode-btn').forEach((btn) => {
       btn.classList.toggle('active', btn.dataset.viewMode === viewMode);
       if (btn.dataset.viewMode === 'grid') {
-        btn.textContent = `🗂️ Grid View (${totalCount})`;
+        const gSpan = btn.querySelector('#ult-grid-count-lbl');
+        if (gSpan) gSpan.textContent = `(${totalCount})`;
       }
     });
     rootEl.querySelectorAll('.ult-era-filter-pill').forEach((pill) => {
@@ -1411,7 +1529,12 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     const recallBtn = rootEl.querySelector('#ult-recall-btn');
     if (recallBtn) {
       recallBtn.classList.toggle('tour-active', recallMode);
-      recallBtn.textContent = recallMode ? '🙈 Recall ON' : '🙈 Recall Test';
+      const rLbl = recallBtn.querySelector('#ult-recall-lbl');
+      if (rLbl) {
+        rLbl.innerHTML = recallMode
+          ? 'Recall ON'
+          : 'Recall<span class="ult-desk-lbl"> Test</span>';
+      }
     }
     rootEl.querySelectorAll('.ult-stream-pill').forEach((sp) => {
       sp.classList.toggle('active', sp.dataset.stream === currentStreamFilter);
@@ -1419,6 +1542,25 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     const streamWrap = rootEl.querySelector('#ult-stream-pills');
     if (streamWrap) {
       streamWrap.style.display = densityMode === 'turning_points' ? 'flex' : 'none';
+    }
+    rootEl.querySelectorAll('.ult-factor-pill').forEach((fp) => {
+      fp.classList.toggle('active', fp.dataset.factor === currentFactorFilter);
+    });
+    const factorWrap = rootEl.querySelector('#ult-factor-pills');
+    if (factorWrap) {
+      factorWrap.style.display = densityMode === 'turning_points' ? 'flex' : 'none';
+    }
+    const filterBarEl = rootEl.querySelector('#ult-filter-bar');
+    const filterToggleEl = rootEl.querySelector('#ult-mobile-filter-toggle');
+    const filterSummaryEl = rootEl.querySelector('#ult-mobile-filter-summary-text');
+    const filterCtaEl = rootEl.querySelector('#ult-mobile-filter-cta');
+    if (filterBarEl) filterBarEl.classList.toggle('mobile-open', mobileFiltersOpen);
+    if (filterToggleEl) filterToggleEl.setAttribute('aria-expanded', mobileFiltersOpen ? 'true' : 'false');
+    if (filterSummaryEl) {
+      filterSummaryEl.textContent = computeMobileFilterSummary(filteredNow.length);
+    }
+    if (filterCtaEl) {
+      filterCtaEl.textContent = mobileFiltersOpen ? 'Close ▴' : '🔍 Filter & Search ▾';
     }
     if (searchClearBtn) {
       searchClearBtn.classList.toggle('visible', searchQuery.length > 0);
@@ -1457,7 +1599,9 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     if (m.hasMap && m.imageUrl) {
       lightboxSwitchBtn.style.display = 'inline-flex';
       lightboxSwitchBtn.textContent =
-        effectiveMode === 'map' ? '📷 View Archival Plate' : '🗺️ View Reference Map';
+        effectiveMode === 'map'
+          ? '📷 View Archival Plate'
+          : `View ${m.mapTabLabel || '🗺️ Reference Map'}`;
     } else {
       lightboxSwitchBtn.style.display = 'none';
     }
@@ -1516,14 +1660,60 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     restoreScrollAnchors(anchors);
   }
 
+  function renderFactorEssayBannerHTML() {
+    if (currentFactorFilter === 'all' || densityMode !== 'turning_points') return '';
+    const fac = factorById.get(currentFactorFilter);
+    if (!fac || !fac.essaySummary) return '';
+    return `
+      <div class="ult-factor-essay-banner" style="--factor-col: ${escapeAttr(fac.color)};">
+        <div>
+          <strong style="color: ${escapeAttr(fac.color)};"><i class="fa-solid ${escapeAttr(fac.icon)}"></i> ${escapeHtml(fac.fullLabel || fac.label)} (Paper 1 Factor Synthesis):</strong>
+          ${formatTimelineProse(fac.essaySummary)}
+        </div>
+        <button type="button" class="ult-grid-inspect-btn" data-action="clear-factor" style="flex-shrink:0;">All Factors</button>
+      </div>
+    `;
+  }
+
   function renderHighwayHTML(filtered, activePos) {
     const firstBound = filtered[0]?.shortDate || 'Start';
     const lastBound = filtered[filtered.length - 1]?.shortDate || 'End';
     const maxVal = Math.max(1, filtered.length - 1);
     const pct = filtered.length <= 1 ? 100 : Math.round((activePos / maxVal) * 1000) / 10;
+    const cur = filtered[activePos];
 
     return `
-      <section class="ult-highway-card" id="ult-highway-card" aria-label="Horizontal Milestone Highway">
+      <!-- Mobile <= 932px Sticky Milestone Stepper + 1-Tap Jump Trigger -->
+      <div class="ult-mobile-stepper-bar" id="ult-mobile-stepper-bar" style="--era-color: ${cur.eraColor};">
+        <button
+          type="button"
+          class="ult-mob-step-arrow"
+          id="ult-mob-prev-btn"
+          data-action="step-prev"
+          aria-label="Previous milestone"
+          ${activePos <= 0 ? 'disabled' : ''}
+        >&larr;</button>
+        <button
+          type="button"
+          class="ult-mob-jump-pill"
+          id="ult-mob-jump-btn"
+          data-action="toggle-mobile-jump"
+          aria-expanded="${mobileJumpOpen ? 'true' : 'false'}"
+        >
+          <span class="ult-mob-jump-txt" id="ult-mob-jump-txt">#${cur.num} &bull; ${escapeHtml(cur.shortDate)} &mdash; ${escapeHtml(cur.shortTitle)}</span>
+          <span class="ult-mob-jump-count" id="ult-mob-jump-count">${activePos + 1}/${filtered.length} ${mobileJumpOpen ? '▴' : '▾'}</span>
+        </button>
+        <button
+          type="button"
+          class="ult-mob-step-arrow"
+          id="ult-mob-next-btn"
+          data-action="step-next"
+          aria-label="Next milestone"
+          ${activePos >= filtered.length - 1 ? 'disabled' : ''}
+        >&rarr;</button>
+      </div>
+
+      <section class="ult-highway-card ${mobileJumpOpen ? 'mobile-jump-open' : ''}" id="ult-highway-card" aria-label="Horizontal Milestone Highway">
         <div class="ult-highway-top">
           <div class="ult-highway-label">
             <i class="fa-solid fa-route" style="color: #d97706;"></i>
@@ -1677,6 +1867,149 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     `;
   }
 
+  function renderFactorChipsHTML(m) {
+    if (!Array.isArray(m.factors) || m.factors.length === 0 || factorById.size === 0) return '';
+    return `
+      <div class="ult-tax-row">
+        <span class="ult-tax-heading"><i class="fa-solid fa-layer-group"></i> Factors:</span>
+        ${m.factors
+          .map((fid) => {
+            const fac = factorById.get(fid);
+            if (!fac) return '';
+            const isAct = currentFactorFilter === fid;
+            return `
+              <button
+                type="button"
+                class="ult-factor-pill ${isAct ? 'active' : ''}"
+                data-factor="${escapeAttr(fid)}"
+                style="--factor-col: ${escapeAttr(fac.color)}; padding: 3px 9px; font-size: 0.71rem;"
+              >
+                <i class="fa-solid ${escapeAttr(fac.icon)}"></i>
+                <span>${escapeHtml(fac.label)}</span>
+              </button>
+            `;
+          })
+          .join('')}
+      </div>
+    `;
+  }
+
+  function renderQ3ComparisonHTML(m) {
+    if (!m.q3Comp) return '';
+    const q3 = m.q3Comp;
+    const isBlurred = recallMode && !revealedConseqIdx.has(m.globalIdx);
+    const pairedIdx = q3.pairedMilestoneId
+      ? allMilestones.findIndex((x) => x.id === q3.pairedMilestoneId)
+      : -1;
+    const pairedMs = pairedIdx >= 0 ? allMilestones[pairedIdx] : null;
+    return `
+      <div class="ult-q3-card">
+        <div class="ult-q3-hdr">
+          <div style="display:inline-flex;align-items:center;gap:6px;flex-wrap:wrap;">
+            <span class="ult-q3-badge">Paper 1 Q3 [4m] &bull; ${escapeHtml(q3.type)}</span>
+            ${q3.pairedEra ? `<span style="font-size:0.71rem;font-weight:800;color:#6d28d9;">vs ${escapeHtml(q3.pairedEra)}</span>` : ''}
+          </div>
+          ${
+            isBlurred
+              ? `<button type="button" data-action="reveal-conseq" data-global-idx="${m.globalIdx}" style="background:#7c3aed;color:#fff;border:none;border-radius:4px;padding:2px 8px;font-size:0.66rem;font-weight:800;cursor:pointer;">👁️ Reveal Q3</button>`
+              : ''
+          }
+        </div>
+        ${q3.examQuestion ? `<div class="ult-q3-question">${escapeHtml(q3.examQuestion)}</div>` : ''}
+        <div class="ult-q3-answer ${isBlurred ? 'ult-recall-blur' : ''}" data-action="reveal-conseq" data-global-idx="${m.globalIdx}">
+          ${q3.explanationHtml}
+        </div>
+        ${
+          pairedMs
+            ? `
+            <button type="button" class="ult-q3-jump-btn" data-action="q3-jump" data-global-idx="${pairedMs.globalIdx}">
+              ⇄ Compare with #${pairedMs.num} (${escapeHtml(pairedMs.shortDate)}: ${escapeHtml(pairedMs.shortTitle)}) &rarr;
+            </button>
+          `
+            : ''
+        }
+      </div>
+    `;
+  }
+
+  function renderKs2RightBodyHTML(m) {
+    const kb = m.ks2Block;
+    const whyBlurred = recallMode && !revealedConseqIdx.has(m.globalIdx);
+    const detShown = revealedDetectiveIdx.has(m.globalIdx);
+    return `
+      <p class="ult-ks2-story">${kb.storyHtml}</p>
+
+      <div class="ult-ks2-callouts">
+        <div class="ult-ks2-callout" style="--era-color: ${m.eraColor};">
+          <div class="ult-ks2-callout-hd">
+            <span><i class="fa-solid fa-lightbulb"></i> Why It Mattered</span>
+            ${
+              whyBlurred
+                ? `<button type="button" data-action="reveal-conseq" data-global-idx="${m.globalIdx}" style="background:#f59e0b;color:#fff;border:none;border-radius:4px;padding:2px 7px;font-size:0.65rem;font-weight:800;cursor:pointer;">Reveal</button>`
+                : ''
+            }
+          </div>
+          <div class="ult-ks2-callout-txt ${whyBlurred ? 'ult-recall-blur' : ''}" data-action="reveal-conseq" data-global-idx="${m.globalIdx}">
+            ${kb.significanceHtml}
+          </div>
+        </div>
+
+        <div class="ult-ks2-callout children">
+          <div class="ult-ks2-callout-hd">
+            <span><i class="fa-solid fa-children"></i> Life for Children</span>
+          </div>
+          <div class="ult-ks2-callout-txt">${kb.childrenLifeHtml}</div>
+        </div>
+      </div>
+
+      ${
+        kb.quoteHtml
+          ? `<div class="ult-ks2-quote"><i class="fa-solid fa-quote-left" style="margin-right:6px;opacity:0.65;"></i>${kb.quoteHtml}</div>`
+          : ''
+      }
+
+      ${
+        kb.detectiveQuestion
+          ? `
+          <div class="ult-ks2-detective">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px;">
+              <span style="font-size:0.72rem;font-weight:800;text-transform:uppercase;color:#92400e;"><i class="fa-solid fa-magnifying-glass"></i> Historical Detective Check</span>
+              <button type="button" data-action="toggle-detective" data-global-idx="${m.globalIdx}" style="background:#ca8a04;color:#fff;border:none;border-radius:5px;padding:3px 9px;font-size:0.71rem;font-weight:800;cursor:pointer;">
+                ${detShown ? 'Hide Answer' : 'Reveal Answer'}
+              </button>
+            </div>
+            <div style="font-size:0.84rem;font-weight:700;color:inherit;">${escapeHtml(kb.detectiveQuestion)}</div>
+            ${
+              detShown
+                ? `<div class="ult-ks2-det-ans"><strong>Answer:</strong> ${kb.detectiveAnswerHtml}</div>`
+                : ''
+            }
+          </div>
+        `
+          : ''
+      }
+
+      ${
+        m.textbookUrl || m.worksheetUrl
+          ? `
+          <div style="display:flex;gap:8px;flex-wrap:wrap;">
+            ${
+              m.textbookUrl
+                ? `<a href="${escapeAttr(m.textbookUrl)}" target="_blank" class="ult-staff-doc-link"><i class="fa-solid fa-book-open"></i> ${escapeHtml(ks2TextbookLabel)} (${escapeHtml((m.refTextbook || '').split('•')[0].trim() || 'Read')})</a>`
+                : ''
+            }
+            ${
+              m.worksheetUrl
+                ? `<a href="${escapeAttr(m.worksheetUrl)}" target="_blank" class="ult-staff-doc-link"><i class="fa-solid fa-file-pen"></i> Worksheet</a>`
+                : ''
+            }
+          </div>
+        `
+          : ''
+      }
+    `;
+  }
+
   function renderShowcaseCardHTML(filtered, activePos) {
     const m = filtered[activePos];
     const totalCount = allMilestones.length;
@@ -1686,6 +2019,7 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     const activeImgSrc = isMap ? m.mapUrl : m.imageUrl;
     const activeCaption = isMap ? m.mapCaption : m.imageCaption;
     const hasImg = Boolean(activeImgSrc);
+    const mapLabel = m.mapTabLabel || '🗺️ Reference Map';
 
     const showCatalyst = Boolean(m.catalystHtml && m.catalystHtml !== m.turningPointHtml);
     const showImpact = Boolean(
@@ -1720,7 +2054,7 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
                     data-action="set-vis-mode"
                     data-vis-mode="map"
                   >
-                    🗺️ Reference Map
+                    ${escapeHtml(mapLabel)}
                   </button>
                 </div>
               `
@@ -1786,7 +2120,7 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
             }
             <div>${formatTimelineProse(activeCaption || `${m.cleanTitlePlain} (${m.date})`)}</div>
             <div class="ult-placard-subrow">
-              <span>${escapeHtml(m.lessonShort)} &bull; Stage ${m.stageNum}</span>
+              <span>${escapeHtml(m.provenance ? m.provenance : `${m.lessonShort} • Stage ${m.stageNum}`)}</span>
               ${
                 m.hasMap && m.imageUrl
                   ? `
@@ -1796,7 +2130,7 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
                     data-action="set-vis-mode"
                     data-vis-mode="${isMap ? 'source' : 'map'}"
                   >
-                    ${isMap ? 'Switch to 📷 Archival Plate &rarr;' : 'Switch to 🗺️ Reference Map &rarr;'}
+                    ${isMap ? 'Switch to 📷 Archival Plate &rarr;' : `Switch to ${escapeHtml(mapLabel)} &rarr;`}
                   </button>
                 `
                   : `<span class="ult-swipe-hint">&larr; Swipe card to step &rarr;</span>`
@@ -1822,7 +2156,7 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
                 data-lesson-idx="${m.lessonIndex}"
                 data-global-idx="${m.globalIdx}"
               >
-                <span>📖 Study Lesson (${escapeHtml(m.lessonShort)}) &rarr;</span>
+                <span>📖 ${m.isKs2 ? `Open ${escapeHtml(m.lessonShort)} Lesson` : `Study Lesson (${escapeHtml(m.lessonShort)})`} &rarr;</span>
               </button>
             </div>
 
@@ -1834,102 +2168,111 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
             }
           </div>
 
-          <!-- Historical Turning Point & Causal Beats -->
-          <div class="ult-causal-chain">
-            ${
-              showCatalyst
-                ? `
-                <div class="ult-beat-card beat-catalyst">
-                  <span class="ult-beat-label">${escapeHtml(m.beatCatalystLabel || 'Context & Catalyst')}</span>
-                  <div class="ult-beat-text">${m.catalystHtml}</div>
-                </div>
-              `
-                : ''
-            }
-            <div class="ult-beat-card beat-turning">
-              <span class="ult-beat-label">${escapeHtml(m.beatTurningLabel || 'Key Turning Point')}</span>
-              <div class="ult-beat-text">${m.turningPointHtml || m.catalystHtml || escapeHtml(m.lessonTitle)}</div>
-            </div>
-            ${
-              showImpact
-                ? `
-                <div class="ult-beat-card beat-impact">
-                  <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
-                    <span class="ult-beat-label">${escapeHtml(m.beatImpactLabel || 'Historical Significance')}</span>
-                    ${
-                      recallMode && !revealedConseqIdx.has(m.globalIdx)
-                        ? `<button type="button" data-action="reveal-conseq" data-global-idx="${m.globalIdx}" style="background:#059669;color:#fff;border:none;border-radius:4px;padding:2px 8px;font-size:0.66rem;font-weight:800;cursor:pointer;">👁️ Reveal &amp; Check</button>`
-                        : ''
-                    }
+          ${
+            m.ks2Block
+              ? renderKs2RightBodyHTML(m)
+              : `
+                <!-- Historical Turning Point & Causal Beats -->
+                <div class="ult-causal-chain">
+                  ${
+                    showCatalyst
+                      ? `
+                      <div class="ult-beat-card beat-catalyst">
+                        <span class="ult-beat-label">${escapeHtml(m.beatCatalystLabel || 'Context & Catalyst')}</span>
+                        <div class="ult-beat-text">${m.catalystHtml}</div>
+                      </div>
+                    `
+                      : ''
+                  }
+                  <div class="ult-beat-card beat-turning">
+                    <span class="ult-beat-label">${escapeHtml(m.beatTurningLabel || 'Key Turning Point')}</span>
+                    <div class="ult-beat-text">${m.turningPointHtml || m.catalystHtml || escapeHtml(m.lessonTitle)}</div>
                   </div>
-                  <div class="ult-beat-text ${recallMode && !revealedConseqIdx.has(m.globalIdx) ? 'ult-recall-blur' : ''}" data-action="reveal-conseq" data-global-idx="${m.globalIdx}">${m.impactHtml}</div>
+                  ${
+                    showImpact
+                      ? `
+                      <div class="ult-beat-card beat-impact">
+                        <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
+                          <span class="ult-beat-label">${escapeHtml(m.beatImpactLabel || 'Historical Significance')}</span>
+                          ${
+                            recallMode && !revealedConseqIdx.has(m.globalIdx)
+                              ? `<button type="button" data-action="reveal-conseq" data-global-idx="${m.globalIdx}" style="background:#059669;color:#fff;border:none;border-radius:4px;padding:2px 8px;font-size:0.66rem;font-weight:800;cursor:pointer;">👁️ Reveal &amp; Check</button>`
+                              : ''
+                          }
+                        </div>
+                        <div class="ult-beat-text ${recallMode && !revealedConseqIdx.has(m.globalIdx) ? 'ult-recall-blur' : ''}" data-action="reveal-conseq" data-global-idx="${m.globalIdx}">${m.impactHtml}</div>
+                      </div>
+                    `
+                      : ''
+                  }
                 </div>
-              `
-                : ''
-            }
-          </div>
 
-          <!-- "Leads To ->" Causal Consequence Bridge -->
-          <div class="ult-leads-bridge">
-            <div class="ult-bridge-copy">
-              <div class="ult-bridge-heading">
-                <span class="ult-bridge-pill">${escapeHtml(m.bridgeBadgeLabel || 'Leads To →')}</span>
-                <span>
+                ${renderQ3ComparisonHTML(m)}
+
+                <!-- "Leads To ->" Causal Consequence Bridge -->
+                <div class="ult-leads-bridge">
+                  <div class="ult-bridge-copy">
+                    <div class="ult-bridge-heading">
+                      <span class="ult-bridge-pill">${escapeHtml(m.bridgeBadgeLabel || 'Leads To →')}</span>
+                      <span>
+                        ${
+                          nextMilestone
+                            ? `${escapeHtml(nextMilestone.shortDate)}: ${escapeHtml(nextMilestone.shortTitle)}`
+                            : 'Course Synthesis & Final Legacy'
+                        }
+                      </span>
+                    </div>
+                    <div class="ult-bridge-text ${recallMode && !revealedConseqIdx.has(m.globalIdx) ? 'ult-recall-blur' : ''}" data-action="reveal-conseq" data-global-idx="${m.globalIdx}">
+                      ${
+                        m.bridgeTag && nextMilestone
+                          ? `<strong>${escapeHtml(m.bridgeTag)}:</strong> `
+                          : ''
+                      }${m.bridgeSummaryHtml || escapeHtml(nextMilestone ? `Advances the chronological spine into ${nextMilestone.cleanTitlePlain}.` : 'Completes the chronological spine across all enquiries in this unit.')}
+                    </div>
+                  </div>
+
                   ${
                     nextMilestone
-                      ? `${escapeHtml(nextMilestone.shortDate)}: ${escapeHtml(nextMilestone.shortTitle)}`
-                      : 'Course Synthesis & Final Legacy'
+                      ? `
+                      <button
+                        type="button"
+                        class="ult-leads-btn"
+                        data-action="leads-to-next"
+                        data-global-idx="${nextMilestone.globalIdx}"
+                      >
+                        <span>Leads To: ${escapeHtml(nextMilestone.shortTitle)} &rarr;</span>
+                      </button>
+                    `
+                      : `
+                      <button
+                        type="button"
+                        class="ult-leads-btn"
+                        data-action="leads-to-next"
+                        data-global-idx="0"
+                      >
+                        <span>&circlearrowleft; Restart at ${escapeHtml(allMilestones[0]?.shortDate || 'Milestone 1')}</span>
+                      </button>
+                    `
                   }
-                </span>
-              </div>
-              <div class="ult-bridge-text ${recallMode && !revealedConseqIdx.has(m.globalIdx) ? 'ult-recall-blur' : ''}" data-action="reveal-conseq" data-global-idx="${m.globalIdx}">
-                ${
-                  m.bridgeTag && nextMilestone
-                    ? `<strong>${escapeHtml(m.bridgeTag)}:</strong> `
-                    : ''
-                }${m.bridgeSummaryHtml || escapeHtml(nextMilestone ? `Advances the chronological spine into ${nextMilestone.cleanTitlePlain}.` : 'Completes the chronological spine across all enquiries in this unit.')}
-              </div>
-            </div>
+                </div>
 
-            ${
-              nextMilestone
-                ? `
-                <button
-                  type="button"
-                  class="ult-leads-btn"
-                  data-action="leads-to-next"
-                  data-global-idx="${nextMilestone.globalIdx}"
-                >
-                  <span>Leads To: ${escapeHtml(nextMilestone.shortTitle)} &rarr;</span>
-                </button>
-              `
-                : `
-                <button
-                  type="button"
-                  class="ult-leads-btn"
-                  data-action="leads-to-next"
-                  data-global-idx="0"
-                >
-                  <span>&circlearrowleft; Restart at ${escapeHtml(allMilestones[0]?.shortDate || 'Milestone 1')}</span>
-                </button>
-              `
-            }
-          </div>
-
-          <!-- Key Figures & Interactive Vocabulary Chips -->
-          <div class="ult-taxonomy-box">
-            ${
-              m.agentItems && m.agentItems.length > 0
-                ? `
-                <div class="ult-tax-row">
-                  <span class="ult-tax-heading"><i class="fa-solid fa-address-card"></i> Key Figures:</span>
-                  ${renderAgentChipsHTML(m)}
+                <!-- Key Figures, Thematic Factors & Interactive Vocabulary Chips -->
+                <div class="ult-taxonomy-box">
+                  ${renderFactorChipsHTML(m)}
+                  ${
+                    m.agentItems && m.agentItems.length > 0
+                      ? `
+                      <div class="ult-tax-row">
+                        <span class="ult-tax-heading"><i class="fa-solid fa-address-card"></i> Key Figures:</span>
+                        ${renderAgentChipsHTML(m)}
+                      </div>
+                    `
+                      : ''
+                  }
+                  ${renderVocabSectionHTML(m)}
                 </div>
               `
-                : ''
-            }
-            ${renderVocabSectionHTML(m)}
-          </div>
+          }
 
           <!-- Docked [<- Prev] · Milestone X of N · [Next ->] Bar -->
           <div class="ult-card-dock-nav" aria-label="Milestone step controls">
@@ -1959,8 +2302,13 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
   }
 
   function renderGridHTML(filtered) {
-    const hasFilter = currentEraFilter !== 'all' || Boolean(searchQuery.trim());
+    const hasFilter =
+      currentEraFilter !== 'all' ||
+      currentStreamFilter !== 'all' ||
+      currentFactorFilter !== 'all' ||
+      Boolean(searchQuery.trim());
     return `
+      ${renderFactorEssayBannerHTML()}
       <div class="ult-grid-summary-bar">
         <span>Showing <strong>${filtered.length}</strong> of ${allMilestones.length} Milestones</span>
         ${
@@ -2056,8 +2404,8 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
                       m.impactHtml && m.impactHtml !== m.turningPointHtml
                         ? `
                         <div class="ult-grid-beat-row">
-                          <span class="ult-grid-beat-tag c">Impact</span>
-                          <span>${m.impactHtml}</span>
+                          <span class="ult-grid-beat-tag c">${m.isKs2 ? 'Why It Mattered' : 'Impact'}</span>
+                          <span class="${recallMode && !revealedConseqIdx.has(m.globalIdx) ? 'ult-recall-blur' : ''}" data-action="reveal-conseq" data-global-idx="${m.globalIdx}">${m.impactHtml}</span>
                         </div>
                       `
                         : ''
@@ -2105,11 +2453,28 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     const highwayEl = stageContainer?.querySelector('#ult-highway-card');
     if (!highwayEl) return;
 
-    const activeGlobalIdx = filtered[activePos]?.globalIdx;
+    const activeItem = filtered[activePos];
+    const activeGlobalIdx = activeItem?.globalIdx;
+    highwayEl.classList.toggle('mobile-jump-open', mobileJumpOpen);
     highwayEl.querySelectorAll('.ult-rail-node').forEach((btn) => {
       const btnIdx = parseInt(btn.dataset.globalIdx, 10);
       btn.classList.toggle('active', btnIdx === activeGlobalIdx);
     });
+
+    const mobBar = stageContainer?.querySelector('#ult-mobile-stepper-bar');
+    if (mobBar && activeItem) {
+      mobBar.style.setProperty('--era-color', activeItem.eraColor);
+      const mPrev = mobBar.querySelector('#ult-mob-prev-btn');
+      if (mPrev) mPrev.disabled = activePos <= 0;
+      const mNext = mobBar.querySelector('#ult-mob-next-btn');
+      if (mNext) mNext.disabled = activePos >= filtered.length - 1;
+      const mJumpBtn = mobBar.querySelector('#ult-mob-jump-btn');
+      if (mJumpBtn) mJumpBtn.setAttribute('aria-expanded', mobileJumpOpen ? 'true' : 'false');
+      const mTxt = mobBar.querySelector('#ult-mob-jump-txt');
+      if (mTxt) mTxt.textContent = `#${activeItem.num} • ${activeItem.shortDate} — ${activeItem.shortTitle}`;
+      const mCnt = mobBar.querySelector('#ult-mob-jump-count');
+      if (mCnt) mCnt.textContent = `${activePos + 1}/${filtered.length} ${mobileJumpOpen ? '▴' : '▾'}`;
+    }
 
     const prevBtn = highwayEl.querySelector('#ult-step-prev-btn');
     if (prevBtn) prevBtn.disabled = activePos <= 0;
@@ -2158,7 +2523,7 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
       return;
     }
 
-    const nextHighwayKey = `${densityMode}|${filtered.map((m) => m.globalIdx).join(',')}`;
+    const nextHighwayKey = `${densityMode}|${currentFactorFilter}|${filtered.map((m) => m.globalIdx).join(',')}`;
     const existingSlot = stageContainer.querySelector('#ult-showcase-card-slot');
     const existingHighway = stageContainer.querySelector('#ult-highway-card');
 
@@ -2177,6 +2542,7 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
 
     renderedHighwayKey = nextHighwayKey;
     stageContainer.innerHTML = `
+      ${renderFactorEssayBannerHTML()}
       ${renderHighwayHTML(filtered, activePos)}
       <div id="ult-showcase-card-slot">${renderShowcaseCardHTML(filtered, activePos)}</div>
     `;
@@ -2313,6 +2679,21 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
       return;
     }
 
+    if (e.target.closest('#ult-mobile-filter-toggle')) {
+      mobileFiltersOpen = !mobileFiltersOpen;
+      syncHeaderButtons();
+      return;
+    }
+
+    const factorPill = e.target.closest('.ult-factor-pill');
+    if (factorPill) {
+      const nextFac = factorPill.dataset.factor || 'all';
+      currentFactorFilter = currentFactorFilter === nextFac && nextFac !== 'all' ? 'all' : nextFac;
+      activeVocabTerm = null;
+      renderStageArea(false);
+      return;
+    }
+
     const streamPill = e.target.closest('.ult-stream-pill');
     if (streamPill) {
       currentStreamFilter = streamPill.dataset.stream || 'all';
@@ -2359,11 +2740,42 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
       if (!Number.isNaN(gIdx) && allMilestones[gIdx]) {
         selectedGlobalIdx = gIdx;
         activeVocabTerm = null;
+        mobileJumpOpen = false;
         if (typeof window !== 'undefined') {
           window._cmeActiveMilestoneIdx = gIdx;
           window._ultActiveMilestoneIdx = gIdx;
         }
         renderStageArea(true);
+      }
+    } else if (action === 'toggle-mobile-jump') {
+      mobileJumpOpen = !mobileJumpOpen;
+      const filteredNow = getFilteredList();
+      const posNow = ensureValidSelection(filteredNow);
+      syncHighwayInPlace(filteredNow, posNow, false, true);
+    } else if (action === 'clear-factor') {
+      currentFactorFilter = 'all';
+      renderStageArea(false);
+    } else if (action === 'q3-jump') {
+      const gIdx = parseInt(actionEl.dataset.globalIdx, 10);
+      if (!Number.isNaN(gIdx) && allMilestones[gIdx]) {
+        currentEraFilter = 'all';
+        currentFactorFilter = 'all';
+        searchQuery = '';
+        if (searchInput) searchInput.value = '';
+        selectedGlobalIdx = gIdx;
+        activeVocabTerm = null;
+        if (typeof window !== 'undefined') {
+          window._cmeActiveMilestoneIdx = gIdx;
+          window._ultActiveMilestoneIdx = gIdx;
+        }
+        renderStageArea(true);
+      }
+    } else if (action === 'toggle-detective') {
+      const gIdx = parseInt(actionEl.dataset.globalIdx, 10);
+      if (!Number.isNaN(gIdx)) {
+        if (revealedDetectiveIdx.has(gIdx)) revealedDetectiveIdx.delete(gIdx);
+        else revealedDetectiveIdx.add(gIdx);
+        renderStageArea(false);
       }
     } else if (action === 'step-prev') {
       stepByDelta(-1);
@@ -2439,6 +2851,7 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     } else if (action === 'reset-filters') {
       currentEraFilter = 'all';
       currentStreamFilter = 'all';
+      currentFactorFilter = 'all';
       searchQuery = '';
       activeVocabTerm = null;
       if (searchInput) searchInput.value = '';
