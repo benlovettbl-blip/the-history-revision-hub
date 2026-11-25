@@ -889,6 +889,8 @@ function autoFitPedagogyDock() {
   const availH = Math.max(140, dock.clientHeight - 28);
 
   if (mode === 'read') {
+    dock.style.justifyContent = 'center';
+    dock.style.overflowY = 'hidden';
     const img = dock.querySelector('img.srs-stage-plate-img');
     const cap = dock.querySelector('.srs-plate-caption');
     if (img) {
@@ -903,6 +905,20 @@ function autoFitPedagogyDock() {
   const prosePx = proseEl ? parseFloat(getComputedStyle(proseEl).fontSize) || 24 : 24;
   const maxProportionalScale = Math.max(0.95, Math.min(1.42, (prosePx * 0.8) / 15));
 
+  if (mode === 'hints') {
+    // Pin top edge & lock one steady scale for all-expanded hints so tapping a hint NEVER resizes or shifts other hints
+    dock.style.justifyContent = 'flex-start';
+    const totalChips = dock.querySelectorAll('[data-hint-peek]').length || 5;
+    const steadyScale = Math.min(
+      maxProportionalScale,
+      dock.clientHeight >= 760 ? 1.18 : totalChips >= 6 ? 0.88 : 0.96,
+    );
+    dock.style.setProperty('--srs-rp-scale', steadyScale.toFixed(3));
+    dock.style.overflowY = inner.scrollHeight > availH + 4 ? 'auto' : 'hidden';
+    return;
+  }
+
+  dock.style.justifyContent = 'center';
   let low = 0.66;
   let high = maxProportionalScale;
   let best = low;
@@ -1143,21 +1159,17 @@ function renderRightPanelInnerHTML(stage, entry) {
         <div style="background: rgba(14, 165, 233, 0.08); border: 1px solid rgba(56, 189, 248, 0.32); border-left: 4px solid #38bdf8; border-radius: 9px; padding: calc(10px * var(--srs-rp-scale, 1)) calc(14px * var(--srs-rp-scale, 1));">
           <div style="font-size: calc(0.68rem * var(--srs-rp-scale, 1)); font-weight: 900; text-transform: uppercase; letter-spacing: 0.06em; color: #7dd3fc; margin-bottom: calc(8px * var(--srs-rp-scale, 1)); display: flex; justify-content: space-between; align-items: center;">
             <span><i class="fa-regular fa-lightbulb"></i> Look in the Passage For &bull; Tap to Peek</span>
-            ${
-              anyPeeked
-                ? `<button type="button" id="srs-btn-reset-hints" style="background: rgba(255,255,255,0.12); color: #e2e8f0; border: none; border-radius: 4px; padding: 2px 8px; font-size: 0.66rem; font-weight: 800; cursor: pointer;">Collapse All</button>`
-                : ''
-            }
+            <button type="button" id="srs-btn-reset-hints" style="visibility: ${anyPeeked ? 'visible' : 'hidden'}; background: rgba(255,255,255,0.12); color: #e2e8f0; border: none; border-radius: 4px; padding: 2px 8px; font-size: 0.66rem; font-weight: 800; cursor: pointer;">Collapse All</button>
           </div>
-          <div style="display: flex; flex-direction: column; gap: calc(7px * var(--srs-rp-scale, 1)); align-items: flex-start;">
+          <div style="display: flex; flex-direction: column; gap: calc(7px * var(--srs-rp-scale, 1));">
             ${passageItems
               .map((item, idx) => {
                 const key = `p_${idx}`;
                 const isPeeked = Boolean(peekMap[key]);
                 return `
-                  <button type="button" class="srs-hint-chip" data-hint-peek="${key}" style="padding: calc(6px * var(--srs-rp-scale, 1)) calc(12px * var(--srs-rp-scale, 1)); font-size: calc(0.88rem * var(--srs-rp-scale, 1)); border-radius: ${isPeeked ? '7px' : '999px'}; text-align: left; line-height: 1.35; width: ${isPeeked ? '100%' : 'auto'};" title="Tap to peek or hide this point">
+                  <button type="button" class="srs-hint-chip" data-hint-peek="${key}" data-hint-group="passage" data-hint-idx="${idx}" style="padding: calc(6px * var(--srs-rp-scale, 1)) calc(12px * var(--srs-rp-scale, 1)); font-size: calc(0.88rem * var(--srs-rp-scale, 1)); border-radius: 7px; text-align: left; line-height: 1.35; width: 100%; justify-content: flex-start;" title="Tap to peek or hide this point">
                     <i class="fa-solid ${isPeeked ? 'fa-check' : 'fa-magnifying-glass'}" style="font-size: calc(0.7rem * var(--srs-rp-scale, 1)); color: #38bdf8; flex-shrink: 0;"></i>
-                    <span>${isPeeked ? formatCausalBulletHTML(item.bullet) : escHtml(item.hint)}</span>
+                    <span class="srs-hint-label">${isPeeked ? formatCausalBulletHTML(item.bullet) : escHtml(item.hint)}</span>
                   </button>
                 `;
               })
@@ -1172,15 +1184,15 @@ function renderRightPanelInnerHTML(stage, entry) {
             <div style="font-size: calc(0.68rem * var(--srs-rp-scale, 1)); font-weight: 900; text-transform: uppercase; letter-spacing: 0.06em; color: #fcd34d; margin-bottom: calc(8px * var(--srs-rp-scale, 1));">
               <i class="fa-solid fa-link"></i> Wider Context Prompts &bull; Tap to Peek
             </div>
-            <div style="display: flex; flex-direction: column; gap: calc(7px * var(--srs-rp-scale, 1)); align-items: flex-start;">
+            <div style="display: flex; flex-direction: column; gap: calc(7px * var(--srs-rp-scale, 1));">
               ${contextItems
                 .map((item, idx) => {
                   const key = `c_${idx}`;
                   const isPeeked = Boolean(peekMap[key]);
                   return `
-                    <button type="button" class="srs-hint-chip is-context" data-hint-peek="${key}" style="padding: calc(6px * var(--srs-rp-scale, 1)) calc(12px * var(--srs-rp-scale, 1)); font-size: calc(0.88rem * var(--srs-rp-scale, 1)); border-radius: ${isPeeked ? '7px' : '999px'}; text-align: left; line-height: 1.35; width: ${isPeeked ? '100%' : 'auto'};" title="Tap to peek or hide wider context link">
+                    <button type="button" class="srs-hint-chip is-context" data-hint-peek="${key}" data-hint-group="context" data-hint-idx="${idx}" style="padding: calc(6px * var(--srs-rp-scale, 1)) calc(12px * var(--srs-rp-scale, 1)); font-size: calc(0.88rem * var(--srs-rp-scale, 1)); border-radius: 7px; text-align: left; line-height: 1.35; width: 100%; justify-content: flex-start;" title="Tap to peek or hide wider context link">
                       <i class="fa-solid ${isPeeked ? 'fa-check' : 'fa-plus'}" style="font-size: calc(0.7rem * var(--srs-rp-scale, 1)); color: #fbbf24; flex-shrink: 0;"></i>
-                      <span>${isPeeked ? formatCausalBulletHTML(item.bullet) : escHtml(item.hint)}</span>
+                      <span class="srs-hint-label">${isPeeked ? formatCausalBulletHTML(item.bullet) : escHtml(item.hint)}</span>
                     </button>
                   `;
                 })
@@ -1300,20 +1312,58 @@ function updatePedagogyDockInPlace() {
   });
 
   dock.innerHTML = renderRightPanelInnerHTML(stage, bespokeEntry);
+
+  const toggleSingleHintChipInPlace = (chip) => {
+    const k = chip.getAttribute('data-hint-peek');
+    const grp = chip.getAttribute('data-hint-group');
+    const idx = Number(chip.getAttribute('data-hint-idx'));
+    if (!k || !grp || Number.isNaN(idx)) return;
+
+    const list = grp === 'context' ? bespokeEntry.context || [] : bespokeEntry.passage || [];
+    const item = list[idx];
+    if (!item) return;
+
+    const nextPeeked = !activeLessonSpotlightState.peekedHintIndices[k];
+    activeLessonSpotlightState.peekedHintIndices[k] = nextPeeked;
+
+    const icon = chip.querySelector('i');
+    const lbl = chip.querySelector('.srs-hint-label');
+    if (icon) {
+      icon.className = nextPeeked
+        ? 'fa-solid fa-check'
+        : grp === 'context'
+          ? 'fa-solid fa-plus'
+          : 'fa-solid fa-magnifying-glass';
+    }
+    if (lbl) {
+      lbl.innerHTML = nextPeeked ? formatCausalBulletHTML(item.bullet) : escHtml(item.hint);
+    }
+
+    const collapseBtn = dock.querySelector('#srs-btn-reset-hints');
+    if (collapseBtn) {
+      const anyPeeked = Object.values(activeLessonSpotlightState.peekedHintIndices).some(Boolean);
+      collapseBtn.style.visibility = anyPeeked ? 'visible' : 'hidden';
+    }
+    const inner = dock.querySelector('.srs-dock-inner');
+    if (inner) {
+      const availH = Math.max(140, dock.clientHeight - 28);
+      dock.style.overflowY = inner.scrollHeight > availH + 4 ? 'auto' : 'hidden';
+    }
+  };
+
   dock.querySelectorAll('[data-hint-peek]').forEach((chip) => {
-    chip.onclick = () => {
-      const k = chip.getAttribute('data-hint-peek');
-      if (!k) return;
-      activeLessonSpotlightState.peekedHintIndices[k] =
-        !activeLessonSpotlightState.peekedHintIndices[k];
-      updatePedagogyDockInPlace();
-    };
+    chip.onclick = () => toggleSingleHintChipInPlace(chip);
   });
+
   const collapseHintsBtn = dock.querySelector('#srs-btn-reset-hints');
   if (collapseHintsBtn) {
     collapseHintsBtn.onclick = () => {
-      activeLessonSpotlightState.peekedHintIndices = {};
-      updatePedagogyDockInPlace();
+      dock.querySelectorAll('[data-hint-peek]').forEach((chip) => {
+        const k = chip.getAttribute('data-hint-peek');
+        if (k && activeLessonSpotlightState.peekedHintIndices[k]) {
+          toggleSingleHintChipInPlace(chip);
+        }
+      });
     };
   }
   autoFitPedagogyDock();
