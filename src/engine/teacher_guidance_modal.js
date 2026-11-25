@@ -1212,6 +1212,7 @@ export async function openUnifiedTeacherGuidance(lessonId, lessonIndex, unitId, 
 
   const closeModal = () => {
     window.removeEventListener('keydown', handleEsc);
+    overlay.style.pointerEvents = 'none';
     overlay.style.opacity = '0';
     setTimeout(() => overlay.remove(), 220);
   };

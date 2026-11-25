@@ -154,10 +154,6 @@ export function renderHomepage() {
             </h2>
             ${launchpadHTML}
             <div class="hero-banner-inspect-wrap no-print">
-              <button type="button" class="btn-banner-inspect" data-action="open-modal" data-src="${heroImageUrl}" data-caption="${safeUnitCoverCap}" data-banner-clue="${safeUnitCoverCap}" aria-label="Inspect unit cover artwork: ${safeUnitCoverCap}">
-                <i class="fa-solid fa-magnifying-glass-plus"></i>
-                <span>Inspect artwork</span>
-              </button>
               <div class="lesson-banner-tooltip hero-unit-tooltip" role="tooltip">${safeUnitCoverCap}</div>
             </div>
             ${appStore.state.activeUnitData.cover_caption ? `<p class="hero-caption">${appStore.state.activeUnitData.cover_caption}</p>` : ''}

@@ -326,7 +326,7 @@ export function initEventDelegation() {
           (target.classList.contains('lesson-hero') ||
             target.classList.contains('hero-container')) &&
           e.target.closest(
-            'button:not(.btn-banner-inspect), a, select, input, details, summary, .hero-curricular-launchpad, .spec-anchor-btn, .lesson-hero-cameo, .btn-banner-gallery',
+            'button, a, select, input, details, summary, .hero-curricular-launchpad, .spec-anchor-btn, .lesson-hero-cameo, .btn-banner-gallery',
           )
         ) {
           break;

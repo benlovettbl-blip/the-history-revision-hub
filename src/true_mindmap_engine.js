@@ -2042,6 +2042,38 @@ function bindStudioInteractions(layout) {
     }
   });
 
+  // Safety net: clear activePointers if pointer releases outside #tmm-viewport (touch/pen/mouse) or window blurs
+  const onGlobalPointerEnd = (e) => {
+    if (!document.body.contains(vp)) {
+      window.removeEventListener('pointerup', onGlobalPointerEnd, true);
+      window.removeEventListener('pointercancel', onGlobalPointerEnd, true);
+      window.removeEventListener('blur', onWindowBlurReset);
+      return;
+    }
+    if (activePointers.has(e.pointerId)) {
+      finishPointer(e);
+    }
+  };
+  const onWindowBlurReset = () => {
+    if (!document.body.contains(vp)) {
+      window.removeEventListener('pointerup', onGlobalPointerEnd, true);
+      window.removeEventListener('pointercancel', onGlobalPointerEnd, true);
+      window.removeEventListener('blur', onWindowBlurReset);
+      return;
+    }
+    if (activePointers.size > 0) {
+      activePointers.clear();
+      isPanning = false;
+      wasMultiTouch = false;
+      movedBeyondTapSlop = false;
+      lastPinchDist = 0;
+      vp.classList.remove('is-dragging');
+    }
+  };
+  window.addEventListener('pointerup', onGlobalPointerEnd, true);
+  window.addEventListener('pointercancel', onGlobalPointerEnd, true);
+  window.addEventListener('blur', onWindowBlurReset);
+
   let gestureBaseZoom = 1;
   vp.addEventListener(
     'gesturestart',

@@ -430,7 +430,11 @@ export function initTeacherMode() {
   }
 }
 
-window.addEventListener('DOMContentLoaded', async () => {
+const bootHistoryHubApp = async () => {
+  if (typeof window !== 'undefined') {
+    if (window.__hhMainAppBooted) return;
+    window.__hhMainAppBooted = true;
+  }
   // Execute GDPR cache, storage, and service worker scrub
   purgeGDPRHistoricalCache();
 
@@ -650,6 +654,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       }
     } catch (err) {}
   };
+  window.__hhFlushDraftState = flushDraftState;
   window.addEventListener('beforeunload', () => {
     cancelSpeech();
     flushDraftState();
@@ -885,9 +890,10 @@ window.addEventListener('DOMContentLoaded', async () => {
     }, 300);
   }
 
-  // Intelligent Popstate Handler: URL-Aware & Scroll-Restoring
-  window.addEventListener('popstate', (e) => {
-    flushDraftState();
+  // Fallback Popstate Handler (only attached if navigation.js unified popstate router is not active)
+  if (!window.__hhNavPopstateBound) {
+    window.addEventListener('popstate', (e) => {
+      flushDraftState();
 
     // Check if triggered by an in-page hash jump (e.g. #year11-section)
     if (window.location.hash && window.location.hash.includes('-section')) {
@@ -1014,7 +1020,8 @@ window.addEventListener('DOMContentLoaded', async () => {
       });
       setTimeout(applyPopScroll, 180);
     });
-  });
+    });
+  }
 
   // Offline / Online Connectivity Indicator for Battlefield Tour
   const updateNetworkStatus = () => {
@@ -1076,4 +1083,10 @@ window.addEventListener('DOMContentLoaded', async () => {
       }
     }, 1800);
   });
-});
+};
+
+if (document.readyState === 'loading') {
+  window.addEventListener('DOMContentLoaded', bootHistoryHubApp, { once: true });
+} else {
+  bootHistoryHubApp();
+}

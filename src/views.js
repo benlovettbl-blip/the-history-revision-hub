@@ -666,33 +666,33 @@ window.launchSubApp = function (subAppName) {
     return;
   }
 
-  // Show the curtain
   const curtain = document.getElementById('page-curtain');
-  if (curtain) {
-    curtain.classList.remove('hidden');
-  }
 
-  setTimeout(async () => {
-    if (subAppName === 'gcse_middle_east_1945_1995') {
-      window.location.href = '/cme/';
-      return;
-    }
-    let mappedName = subAppName;
-    if (subAppName === 'gcse_middle_east_1945_1995_new') mappedName = 'cme_new';
-    if (subAppName === 'gcse_usa_1954_1975') mappedName = 'usa';
-    if (subAppName === 'gcse_elizabethan_england') mappedName = 'eee';
-    if (subAppName === 'great_war_v2') mappedName = 'great_war';
+  (async () => {
+    try {
+      if (subAppName === 'gcse_middle_east_1945_1995') {
+        window.location.href = '/cme/';
+        return;
+      }
+      let mappedName = subAppName;
+      if (subAppName === 'gcse_middle_east_1945_1995_new') mappedName = 'cme_new';
+      if (subAppName === 'gcse_usa_1954_1975') mappedName = 'usa';
+      if (subAppName === 'gcse_elizabethan_england') mappedName = 'eee';
+      if (subAppName === 'great_war_v2') mappedName = 'great_war';
 
-    if (window.switchView) {
-      await window.switchView('lessons', mappedName);
-    } else {
-      window.location.href = `/?view=lessons&unit=${mappedName}`;
+      if (window.switchView) {
+        await window.switchView('lessons', mappedName);
+      } else {
+        window.location.href = `/?view=lessons&unit=${mappedName}`;
+      }
+    } catch (err) {
+      console.error('[launchSubApp] Unit switch error:', err);
+    } finally {
+      if (curtain) {
+        curtain.classList.add('hidden');
+      }
     }
-
-    if (curtain) {
-      setTimeout(() => curtain.classList.add('hidden'), 150);
-    }
-  }, 180);
+  })();
 };
 
 export function extractUnitSelfQuizCards(unitData, topicFilter = 'all') {

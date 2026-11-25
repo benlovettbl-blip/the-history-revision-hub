@@ -928,10 +928,6 @@ export function renderLesson(lesson) {
     ? `
       <div class="lesson-hero-bottom-tools no-print">
         ${hasHeroCameo ? '' : bannerGalleryBtn}
-        <button type="button" class="btn-banner-inspect" data-action="open-modal" data-src="${resolvedHeroImage}" data-caption="${safeBannerCap}" data-banner-clue="${safeBannerCap}" aria-label="Inspect banner artwork: ${safeBannerCap}">
-          <i class="fa-solid fa-magnifying-glass-plus"></i>
-          <span>Inspect artwork</span>
-        </button>
         ${safeBannerCap ? `<div class="lesson-banner-tooltip" role="tooltip">${safeBannerCap}</div>` : ''}
       </div>
     `

@@ -647,6 +647,9 @@ export function initNavigationUI() {
     }, 320);
 
     window.addEventListener('popstate', (e) => {
+      if (typeof window.__hhFlushDraftState === 'function') {
+        window.__hhFlushDraftState();
+      }
       if (window.__hhSuppressPopstateOnce) {
         window.__hhSuppressPopstateOnce = false;
         e.stopImmediatePropagation();
@@ -1328,9 +1331,21 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     param = state.selectedUnitId || window.currentUnitId || 'cme_new';
   }
 
-  // Stop active speech playback & close any stuck full-screen diagnostic overlay on view transition
+  // Stop active speech playback & sweep any lingering fullscreen modals/backdrops/locks on view transition
   if (typeof window !== 'undefined' && typeof window.cancelSpeech === 'function') {
     window.cancelSpeech();
+  }
+  if (typeof window !== 'undefined' && typeof window.hideVocabPopover === 'function') {
+    window.hideVocabPopover(true);
+  }
+  if (typeof window !== 'undefined' && typeof window.hideDossierPopover === 'function') {
+    window.hideDossierPopover();
+  }
+  if (typeof window !== 'undefined' && typeof window.closeInfographicModal === 'function') {
+    const infoEl = typeof document !== 'undefined' && document.getElementById('hub-infographic-modal');
+    if (infoEl && infoEl.style.display !== 'none') {
+      window.closeInfographicModal();
+    }
   }
   if (typeof window !== 'undefined' && typeof window.closeDiagnosticModal === 'function') {
     const diagEl = typeof document !== 'undefined' && document.getElementById('diagnostic-benchmark-modal');
@@ -1338,8 +1353,49 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       window.closeDiagnosticModal(true);
     }
   }
-  if (typeof document !== 'undefined' && document.body && viewName !== 'arcade') {
-    document.body.classList.remove('hh-arcade-playing');
+  if (typeof document !== 'undefined') {
+    [
+      'global-image-modal',
+      'unifiedTeacherGuidanceModalOverlay',
+      'tmm-print-modal-backdrop',
+      'teacherPrintPreviewModal',
+      'emergencyCoverModal',
+      'teacherGuideModal',
+      'parentBriefingModal',
+      'ks2WorksheetModalOverlay',
+      'ks2GuidanceModalOverlay',
+      'hotspot-whiteboard-lightbox',
+      'ehub-q-drawer-backdrop',
+      'ehub-rescue-backdrop',
+    ].forEach((id) => {
+      document.getElementById(id)?.remove();
+    });
+    document
+      .querySelectorAll(
+        '.video-theater-overlay, .slide-compare-lightbox, .cw-fullscreen-lightbox, .sem-modal-backdrop, .masterpiece-projector-overlay, .donow-speedrun-overlay',
+      )
+      .forEach((el) => el.remove());
+    ['quizModal', 'debateModal', 'milestoneModal'].forEach((id) => {
+      const m = document.getElementById(id);
+      if (m && m.style.display !== 'none') {
+        m.style.opacity = '0';
+        m.style.pointerEvents = 'none';
+        m.style.display = 'none';
+      }
+    });
+    document.getElementById('page-curtain')?.classList.add('hidden');
+    document.querySelector('.sidebar-overlay')?.classList.remove('active');
+    document.getElementById('app-sidebar')?.classList.remove('mobile-open');
+    if (document.body) {
+      document.body.style.overflow = '';
+      document.body.classList.remove('mobile-fullscreen-quiz-active', 'search-modal-open');
+      if (viewName !== 'mindmap') {
+        document.body.classList.remove('tmm-fullscreen-active');
+      }
+      if (viewName !== 'arcade') {
+        document.body.classList.remove('hh-arcade-playing', 'cc-fullscreen-body-lock');
+      }
+    }
   }
 
   // Capture outgoing view/unit/lesson context before mutating scroll or state

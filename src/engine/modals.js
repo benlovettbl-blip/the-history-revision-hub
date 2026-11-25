@@ -1505,7 +1505,12 @@ window.injectDebateModalIfNeeded = function () {
 window.openDebateModal = function () {
   window.injectDebateModalIfNeeded();
   const modal = document.getElementById('debateModal');
+  if (modal._closeTimer) {
+    clearTimeout(modal._closeTimer);
+    modal._closeTimer = null;
+  }
   modal.style.display = 'flex';
+  modal.style.pointerEvents = 'auto';
   // Trigger reflow
   void modal.offsetWidth;
   modal.style.opacity = '1';
@@ -1516,10 +1521,13 @@ window.openDebateModal = function () {
 window.closeDebateModal = function () {
   const modal = document.getElementById('debateModal');
   if (modal) {
+    if (modal._closeTimer) clearTimeout(modal._closeTimer);
+    modal.style.pointerEvents = 'none';
     modal.style.opacity = '0';
     modal.querySelector('.modal-content').style.transform = 'scale(0.95)';
-    setTimeout(() => {
+    modal._closeTimer = setTimeout(() => {
       modal.style.display = 'none';
+      modal._closeTimer = null;
     }, 300);
   }
 };
@@ -1628,7 +1636,12 @@ window.showMilestoneModal = function (id) {
 
   const modal = document.getElementById('milestoneModal');
   if (modal) {
+    if (modal._closeTimer) {
+      clearTimeout(modal._closeTimer);
+      modal._closeTimer = null;
+    }
     modal.style.display = 'flex';
+    modal.style.pointerEvents = 'auto';
     // Trigger reflow
     void modal.offsetWidth;
     modal.style.opacity = '1';
@@ -1639,10 +1652,13 @@ window.showMilestoneModal = function (id) {
 window.closeMilestoneModal = function () {
   const modal = document.getElementById('milestoneModal');
   if (modal) {
+    if (modal._closeTimer) clearTimeout(modal._closeTimer);
+    modal.style.pointerEvents = 'none';
     modal.style.opacity = '0';
     modal.querySelector('.modal-content').style.transform = 'scale(0.95)';
-    setTimeout(() => {
+    modal._closeTimer = setTimeout(() => {
       modal.style.display = 'none';
+      modal._closeTimer = null;
     }, 300);
   }
 };
@@ -1822,7 +1838,12 @@ window.startQuiz = function (lessonId, isFullscreen = false) {
   window.renderQuizQuestion();
 
   if (modal) {
+    if (modal._closeTimer) {
+      clearTimeout(modal._closeTimer);
+      modal._closeTimer = null;
+    }
     modal.style.display = 'flex';
+    modal.style.pointerEvents = 'auto';
     void modal.offsetWidth; // Trigger reflow
     modal.style.opacity = '1';
     if (content && !isMobile) {
@@ -2099,11 +2120,14 @@ window.closeQuizModal = function () {
   document.body.classList.remove('mobile-fullscreen-quiz-active');
   const modal = document.getElementById('quizModal');
   if (modal) {
+    if (modal._closeTimer) clearTimeout(modal._closeTimer);
     modal.classList.remove('fullscreen-modal');
+    modal.style.pointerEvents = 'none';
     modal.style.opacity = '0';
     const content = modal.querySelector('.modal-content');
     if (content) content.style.transform = 'scale(0.95)';
-    setTimeout(() => {
+    modal._closeTimer = setTimeout(() => {
+      modal._closeTimer = null;
       modal.style.display = 'none';
       modal.style.background = 'rgba(15, 23, 42, 0.85)';
       modal.style.alignItems = 'center';
@@ -2170,8 +2194,12 @@ window.openModal = function (src, options = {}) {
   modal.style.touchAction = 'none';
   modal.style.cursor = 'default';
 
+  let onWinMouseMove = null;
+  let onWinMouseUp = null;
   const cleanupAndClose = () => {
     window.removeEventListener('keydown', onKeyDown);
+    if (onWinMouseMove) window.removeEventListener('mousemove', onWinMouseMove);
+    if (onWinMouseUp) window.removeEventListener('mouseup', onWinMouseUp);
     modal.remove();
   };
 
@@ -2457,21 +2485,22 @@ window.openModal = function (src, options = {}) {
     }
   });
 
-  window.addEventListener('mousemove', (e) => {
+  onWinMouseMove = (e) => {
     if (isDragging) {
       hasDragged = true;
       posX = e.clientX - startX;
       posY = e.clientY - startY;
       updateTransform();
     }
-  });
-
-  window.addEventListener('mouseup', () => {
+  };
+  onWinMouseUp = () => {
     if (isDragging) {
       isDragging = false;
       updateTransform();
     }
-  });
+  };
+  window.addEventListener('mousemove', onWinMouseMove);
+  window.addEventListener('mouseup', onWinMouseUp);
 
   // Touch gestures for tablet/touchscreen (Pinch to zoom + 1-finger pan + double tap)
   let initialPinchDistance = null;
@@ -2957,6 +2986,7 @@ window.openParentBriefingModal = function () {
   const closeBtn = document.getElementById('closeParentBriefingBtn');
   const closeModal = () => {
     window.removeEventListener('keydown', keyHandler);
+    modal.style.pointerEvents = 'none';
     modal.style.opacity = '0';
     setTimeout(() => modal.remove(), 250);
   };
@@ -3085,6 +3115,7 @@ window.openTeacherPrintPreview = function (fileBaseName, title, pdfUrl) {
 
   const closeModal = () => {
     window.removeEventListener('keydown', handleKeyDown);
+    overlay.style.pointerEvents = 'none';
     overlay.style.opacity = '0';
     modalContent.style.transform = 'scale(0.97)';
     setTimeout(() => overlay.remove(), 250);
@@ -5533,6 +5564,7 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
   // Close handlers
   const closeModal = () => {
     window.removeEventListener('keydown', handleEsc);
+    overlay.style.pointerEvents = 'none';
     overlay.style.opacity = '0';
     setTimeout(() => overlay.remove(), 250);
   };

@@ -1170,8 +1170,20 @@ export function closeAnyOpenMobileModalOrDrawer() {
     return { closed: true, hadHistoryEntry: false };
   }
 
-  // 9. Other Removable Modals
+  // 9. Teacher Guidance, Mind Map Print, Video Cinema & Dynamic Fullscreen Modals
   const removableModals = [
+    'unifiedTeacherGuidanceModalOverlay',
+    'tmm-print-modal-backdrop',
+    'teacherPrintPreviewModal',
+    'emergencyCoverModal',
+    'teacherGuideModal',
+    'parentBriefingModal',
+    'ks2WorksheetModalOverlay',
+    'ks2GuidanceModalOverlay',
+    'langemarckModal',
+    'hotspot-whiteboard-lightbox',
+    'ehub-q-drawer-backdrop',
+    'ehub-rescue-backdrop',
     'reading-qr-modal-overlay',
     'task-whiteboard-modal',
     'vocab-whiteboard-modal',
@@ -1179,10 +1191,60 @@ export function closeAnyOpenMobileModalOrDrawer() {
   ];
   for (const id of removableModals) {
     const el = document.getElementById(id);
-    if (el && el.innerHTML.trim() !== '' && window.getComputedStyle(el).display !== 'none') {
-      el.remove();
+    if (el && window.getComputedStyle(el).display !== 'none') {
+      if (id === 'task-whiteboard-modal' || id === 'vocab-whiteboard-modal') {
+        el.classList.remove('visible');
+        el.style.display = 'none';
+      } else {
+        el.remove();
+      }
+      document.body.style.overflow = '';
       return { closed: true, hadHistoryEntry: false };
     }
+  }
+
+  const dynamicClassOverlays = document.querySelectorAll(
+    '.video-theater-overlay, .slide-compare-lightbox, .cw-fullscreen-lightbox, .sem-modal-backdrop, .masterpiece-projector-overlay, .donow-speedrun-overlay',
+  );
+  for (const el of dynamicClassOverlays) {
+    if (window.getComputedStyle(el).display !== 'none') {
+      el.remove();
+      document.body.style.overflow = '';
+      return { closed: true, hadHistoryEntry: false };
+    }
+  }
+
+  // 10. Persistent Singleton Modals (#quizModal, #debateModal, #milestoneModal)
+  if (typeof window.closeQuizModal === 'function') {
+    const qm = document.getElementById('quizModal');
+    if (qm && window.getComputedStyle(qm).display !== 'none' && window.getComputedStyle(qm).opacity !== '0') {
+      window.closeQuizModal();
+      return { closed: true, hadHistoryEntry: false };
+    }
+  }
+  if (typeof window.closeDebateModal === 'function') {
+    const dm = document.getElementById('debateModal');
+    if (dm && window.getComputedStyle(dm).display !== 'none' && window.getComputedStyle(dm).opacity !== '0') {
+      window.closeDebateModal();
+      return { closed: true, hadHistoryEntry: false };
+    }
+  }
+  if (typeof window.closeMilestoneModal === 'function') {
+    const mm = document.getElementById('milestoneModal');
+    if (mm && window.getComputedStyle(mm).display !== 'none' && window.getComputedStyle(mm).opacity !== '0') {
+      window.closeMilestoneModal();
+      return { closed: true, hadHistoryEntry: false };
+    }
+  }
+
+  // 11. Mind Map True Fullscreen Mode -> Exit fullscreen before stepping back view
+  if (document.body.classList.contains('tmm-fullscreen-active')) {
+    document.body.classList.remove('tmm-fullscreen-active');
+    document.querySelector('.tmm-wrapper.is-true-fullscreen')?.classList.remove('is-true-fullscreen');
+    if (document.fullscreenElement && document.exitFullscreen) {
+      document.exitFullscreen().catch(() => {});
+    }
+    return { closed: true, hadHistoryEntry: false };
   }
 
   if (typeof window.closeCmeTheaterMapModal === 'function') {
