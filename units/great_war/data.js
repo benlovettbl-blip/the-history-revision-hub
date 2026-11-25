@@ -896,7 +896,7 @@ export default {
         {
           "type": "extended_writing",
           "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "question": "Explain why the creation of the German Empire in 1871 created long-term instability in Europe.",
+          "question": "Explain why the creation of the German Empire in 1871 created long-term instability in Europe. [12 marks]",
           "stimulus": [
             "The annexation of Alsace-Lorraine",
             "Bismarck’s dread of a two-front war"
@@ -963,7 +963,8 @@ export default {
               "Two-Front War"
             ]
           },
-          "model_answer": "A primary reason the creation of the German Empire in 1871 created long-term instability was that it radically altered the European balance of power. After defeating France, unified Germany became the dominant military and industrial superpower in central Europe. To prevent French revenge for the loss of Alsace-Lorraine, Chancellor Otto von Bismarck created complex alliances that divided Europe into competing camps.<br><br>Furthermore, Kaiser Wilhelm II’s aggressive foreign policy ('Weltpolitik') after 1890 increased friction. Demanding Germany's 'place in the sun', the Kaiser challenged British naval supremacy and meddled in colonial disputes, triggering a dangerous atmosphere of suspicion."
+          "model_answer": "A primary reason the creation of the German Empire in 1871 created long-term instability was that it radically altered the European balance of power. After defeating France, unified Germany became the dominant military and industrial superpower in central Europe. To prevent French revenge for the loss of Alsace-Lorraine, Chancellor Otto von Bismarck created complex alliances that divided Europe into competing camps.<br><br>Furthermore, Kaiser Wilhelm II’s aggressive foreign policy ('Weltpolitik') after 1890 increased friction. Demanding Germany's 'place in the sun', the Kaiser challenged British naval supremacy and meddled in colonial disputes, triggering a dangerous atmosphere of suspicion.",
+          "tariff": "Question 2: Explain Why [12 marks • 15 mins]"
         }
       ],
       "quiz": [
@@ -2485,14 +2486,15 @@ export default {
           "type": "short_answer",
           "topic": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
           "qNum": 1,
-          "question": "Describe two features of the 1911 Agadir Crisis (Second Moroccan Crisis).",
+          "question": "Describe two features of the 1911 Agadir Crisis (Second Moroccan Crisis). [4 marks]",
           "starter": "One feature of the 1911 Agadir Crisis was... A second feature was...",
-          "model_answer": "One feature of the 1911 Agadir Crisis was the dispatch of the German gunboat SMS Panther to the Moroccan port of Agadir to challenge French influence. Another feature was British diplomatic intervention through Lloyd George’s Mansion House speech, warning Germany that Britain would fight alongside France."
+          "model_answer": "One feature of the 1911 Agadir Crisis was the dispatch of the German gunboat SMS Panther to the Moroccan port of Agadir to challenge French influence. Another feature was British diplomatic intervention through Lloyd George’s Mansion House speech, warning Germany that Britain would fight alongside France.",
+          "tariff": "Question 1: Describe Two Features [4 marks • 5 mins]"
         },
         {
           "type": "extended_writing",
           "topic": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
-          "question": "Explain one consequence of the Moroccan Crises for relations between Great Britain and France.",
+          "question": "Explain one consequence of the Moroccan Crises for relations between Great Britain and France. [4 marks]",
           "stimulus": [
             "The 1906 Algeciras Conference",
             "The 1911 Mansion House Speech"
@@ -2553,7 +2555,8 @@ export default {
               "Entente Cordiale"
             ]
           },
-          "model_answer": "One consequence of the Moroccan Crises was the strengthening of the Anglo-French Entente Cordiale. Specifically, British and French leaders grew deeply suspicious of German aggression, leading to secret military naval talks where Britain agreed to guard the North Sea while the French navy protected the Mediterranean."
+          "model_answer": "One consequence of the Moroccan Crises was the strengthening of the Anglo-French Entente Cordiale. Specifically, British and French leaders grew deeply suspicious of German aggression, leading to secret military naval talks where Britain agreed to guard the North Sea while the French navy protected the Mediterranean.",
+          "tariff": "Question 2: Explain One Consequence [4 marks • 5 mins]"
         }
       ],
       "quiz": [
@@ -3925,103 +3928,100 @@ export default {
       },
       "tasks": [
         {
-          "type": "historical_interpretations",
-          "topic": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "title": "Historiographical Analysis: The Impact of the Naval Arms Race",
-          "tariff": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "question": "Study Interpretations 1 and 2. How do they differ about the causes and impact of the Anglo-German naval arms race? Suggest one reason why they differ.",
-          "interp1": {
-            "title": "Interpretation 1: The Naval Race as Primary Catalyst",
-            "badge": "Orthodox Historiography",
-            "author": "Professor Paul Kennedy • The Rise of Anglo-German Antagonism",
-            "text": "The naval race was the single most dangerous element in pre-1914 European diplomacy. For Britain, naval supremacy was not a luxury; it was the foundation of national survival and empire. When Germany began massing battleships directly across the North Sea, it transformed what had been friendly commercial relations into bitter existential suspicion. British leaders concluded that a German battlefleet could only be designed for one purpose: to destroy British naval power and dominate Europe.",
-            "extract": "The naval race was the single most dangerous element in pre-1914 European diplomacy. For Britain, naval supremacy was not a luxury; it was the foundation of national survival and empire. When Germany began massing battleships directly across the North Sea, it transformed what had been friendly commercial relations into bitter existential suspicion. British leaders concluded that a German battlefleet could only be designed for one purpose: to destroy British naval power and dominate Europe."
-          },
-          "interp2": {
-            "title": "Interpretation 2: Secondary Factor Overcome by 1912",
-            "badge": "Revisionist Historiography",
-            "author": "Professor Christopher Clark • The Sleepwalkers",
-            "text": "Historians have greatly exaggerated the fatal impact of the naval race. By 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army, while Britain retained an insurmountable dreadnought lead. What ultimately triggered the catastrophe was not steel battleships in the North Sea, but unstable ethnic nationalism, crumbling imperial frontiers, and fatal alliance commitments in the volatile Balkan peninsula.",
-            "extract": "Historians have greatly exaggerated the fatal impact of the naval race. By 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army, while Britain retained an insurmountable dreadnought lead. What ultimately triggered the catastrophe was not steel battleships in the North Sea, but unstable ethnic nationalism, crumbling imperial frontiers, and fatal alliance commitments in the volatile Balkan peninsula."
-          },
-          "matrix": [
-            {
-              "col": "1. INTERPRETATION 1 (KENNEDY)",
-              "text": "Argues the naval race was the primary existential catalyst that poisoned pre-1914 relations and made war inevitable."
-            },
-            {
-              "col": "2. INTERPRETATION 2 (CLARK)",
-              "text": "Argues the naval race was secondary, already resolved by 1912, and overshadowed by Balkan nationalism and land armies."
-            },
-            {
-              "col": "3. HISTORIOGRAPHICAL VERDICT",
-              "text": "Weigh both interpretations: Did naval rivalry create the structural hostility that made the 1914 July Crisis uncontrollable?"
-            }
+          "id": "gw1_l3_q1_interp_diff",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART B",
+          "tariff": "Question 3(b): Contrasting Interpretations [4 marks • 5 mins]",
+          "title": "Question 3(b): Contrasting Interpretations [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Difference in Views (1 Paragraph • 5 mins)",
+          "question": "Study Interpretations 1 and 2. How do they differ about the causes of the Anglo-German naval arms race? [4 marks]",
+          "stimulus": [
+            "Interpretation 1 • Professor Paul Kennedy, The Rise of Anglo-German Antagonism: “The naval race was the single most dangerous element in pre-1914 European diplomacy. For Britain, naval supremacy was not a luxury; it was the foundation of national survival and empire. When Germany began massing battleships directly across the North Sea, it transformed what had been friendly commercial relations into bitter existential suspicion. British leaders concluded that a German battlefleet could only be designed for one purpose: to destroy British naval power and dominate Europe.”",
+            "Interpretation 2 • Professor Christopher Clark, The Sleepwalkers: “Historians have greatly exaggerated the fatal impact of the naval race. By 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army, while Britain retained an insurmountable dreadnought lead. What ultimately triggered the catastrophe was not steel battleships in the North Sea, but unstable ethnic nationalism, crumbling imperial frontiers, and fatal alliance commitments in the volatile Balkan peninsula.”"
           ],
-          "connectives": [
-            "Interpretation 1 contends that...",
-            "Paul Kennedy emphasizes that naval supremacy was...",
-            "In sharp contrast, Interpretation 2 argues that...",
-            "Christopher Clark maintains that by 1912...",
-            "One reason why Interpretations 1 and 2 differ is because they have a different focus...",
-            "Specifically, Interpretation 1 focuses primarily on the long-term diplomatic polarization between 1898 and 1911...",
-            "In contrast, Interpretation 2 focuses more on the immediate short-term Balkan triggers of 1912–1914...",
-            "Weighing both perspectives against historical evidence, I conclude that..."
+          "hints": [
+            "Point: State clearly that the historians disagree on how dangerous and decisive the Anglo-German naval arms race was in causing war before 1914.",
+            "Interpretation 1 (Paul Kennedy): Cite Kennedy’s view that the North Sea battleship build-up was “the single most dangerous element” in diplomacy, convincing Britain that Germany aimed to destroy British naval survival.",
+            "Interpretation 2 (Christopher Clark): Contrast with Clark’s argument that historians have “greatly exaggerated” the naval race—noting Britain had already won it by 1912—and pointing instead to Balkan nationalism and alliances."
           ],
-          "model_answer": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the causes and impact of the Anglo-German naval arms race. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 views the naval arms race as the single most dangerous catalyst that made European war inevitable, whereas Interpretation 2 argues that the impact of the naval race has been exaggerated and that it was effectively over by 1912.<br><br>Interpretation 1 states that the naval race was \"the single most dangerous element in pre-1914 European diplomacy\" and that German battleships directly across the North Sea convinced Britain that Germany was an \"implacable foe seeking European hegemony\".<br><br>In contrast, Interpretation 2 contends that \"historians have greatly exaggerated the fatal impact of the naval race\", stating that \"by 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the naval arms race. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on British strategic documents like Source B, which reflects Admiralty alarms warning that the German fleet was \"a menace of the gravest character\" and that naval defeat would mean \"the British Empire ceases to exist within twenty-four hours\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains German War Ministry records showing that by 1912 \"battleship building must be curtailed\" because \"the army expansion bill must take absolute priority\" for a land war in Europe.<br><br>Because the two historians gave weight to different sets of historical records—British naval panic in 1908 versus German budgetary reallocation to land armies in 1912—they reached contrasting conclusions.</div>",
-          "interpretation_1": {
-            "title": "Interpretation 1: The Naval Race as Primary Catalyst",
-            "badge": "Orthodox Historiography",
-            "author": "Professor Paul Kennedy • The Rise of Anglo-German Antagonism",
-            "text": "The naval race was the single most dangerous element in pre-1914 European diplomacy. For Britain, naval supremacy was not a luxury; it was the foundation of national survival and empire. When Germany began massing battleships directly across the North Sea, it transformed what had been friendly commercial relations into bitter existential suspicion. British leaders concluded that a German battlefleet could only be designed for one purpose: to destroy British naval power and dominate Europe.",
-            "extract": "The naval race was the single most dangerous element in pre-1914 European diplomacy. For Britain, naval supremacy was not a luxury; it was the foundation of national survival and empire. When Germany began massing battleships directly across the North Sea, it transformed what had been friendly commercial relations into bitter existential suspicion. British leaders concluded that a German battlefleet could only be designed for one purpose: to destroy British naval power and dominate Europe."
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Core Difference): State how Interpretations 1 and 2 disagree about the threat and impact of the naval race.",
+              "Sentence 2 (Interpretation 1): Quote or summarise Paul Kennedy on German North Sea battleships creating existential Anglo-German suspicion.",
+              "Sentences 3–4 (Interpretation 2): Contrast with Christopher Clark arguing the race was effectively over by 1912 and Balkan crises caused war."
+            ],
+            "sentence_starters": [
+              "Interpretations 1 and 2 differ sharply about the impact and danger of the naval arms race...",
+              "Interpretation 1 argues that the naval race was...",
+              "In contrast, Interpretation 2 contends that historians have exaggerated the naval race because...",
+              "This is a clear difference because..."
+            ],
+            "word_bank": [
+              "Paul Kennedy",
+              "Christopher Clark",
+              "HMS Dreadnought (1906)",
+              "Admiral von Tirpitz",
+              "North Sea battlefleet",
+              "1912 naval lead",
+              "Balkan peninsula"
+            ],
+            "connective_bank": [
+              "Interpretations 1 and 2 differ on...",
+              "Interpretation 1 argues that...",
+              "In contrast, Interpretation 2 suggests that...",
+              "This is a difference because..."
+            ]
           },
-          "interpretation_2": {
-            "title": "Interpretation 2: Secondary Factor Overcome by 1912",
-            "badge": "Revisionist Historiography",
-            "author": "Professor Christopher Clark • The Sleepwalkers",
-            "text": "Historians have greatly exaggerated the fatal impact of the naval race. By 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army, while Britain retained an insurmountable dreadnought lead. What ultimately triggered the catastrophe was not steel battleships in the North Sea, but unstable ethnic nationalism, crumbling imperial frontiers, and fatal alliance commitments in the volatile Balkan peninsula.",
-            "extract": "Historians have greatly exaggerated the fatal impact of the naval race. By 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army, while Britain retained an insurmountable dreadnought lead. What ultimately triggered the catastrophe was not steel battleships in the North Sea, but unstable ethnic nationalism, crumbling imperial frontiers, and fatal alliance commitments in the volatile Balkan peninsula."
+          "model_answer": "Interpretations 1 and 2 differ sharply over how dangerous and decisive the Anglo-German naval arms race was before 1914. Interpretation 1 (Paul Kennedy) argues it was “the single most dangerous element” in European diplomacy because massing German battleships across the North Sea convinced British leaders that Germany sought to destroy Britain’s naval survival. In contrast, Interpretation 2 (Christopher Clark) argues the naval race has been “greatly exaggerated”, pointing out that Britain held an unassailable dreadnought lead by 1912 and that Balkan nationalism and alliance commitments—not North Sea battleships—triggered war.",
+          "model": "Interpretations 1 and 2 differ sharply over how dangerous and decisive the Anglo-German naval arms race was before 1914. Interpretation 1 (Paul Kennedy) argues it was “the single most dangerous element” in European diplomacy because massing German battleships across the North Sea convinced British leaders that Germany sought to destroy Britain’s naval survival. In contrast, Interpretation 2 (Christopher Clark) argues the naval race has been “greatly exaggerated”, pointing out that Britain held an unassailable dreadnought lead by 1912 and that Balkan nationalism and alliance commitments—not North Sea battleships—triggered war."
+        },
+        {
+          "id": "gw1_l3_q2_interp_why",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART C",
+          "tariff": "Question 3(c): Why Interpretations Differ [4 marks • 5 mins]",
+          "title": "Question 3(c): Why Interpretations Differ [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Explaining Why Views Differ (1 Paragraph • 5 mins)",
+          "question": "Suggest one reason why Interpretations 1 and 2 differ about the causes of the naval arms race. [4 marks]",
+          "stimulus": [
+            "Interpretation 1 • Professor Paul Kennedy, The Rise of Anglo-German Antagonism: “The naval race was the single most dangerous element in pre-1914 European diplomacy. For Britain, naval supremacy was not a luxury; it was the foundation of national survival and empire. When Germany began massing battleships directly across the North Sea, it transformed what had been friendly commercial relations into bitter existential suspicion. British leaders concluded that a German battlefleet could only be designed for one purpose: to destroy British naval power and dominate Europe.”",
+            "Interpretation 2 • Professor Christopher Clark, The Sleepwalkers: “Historians have greatly exaggerated the fatal impact of the naval race. By 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army, while Britain retained an insurmountable dreadnought lead. What ultimately triggered the catastrophe was not steel battleships in the North Sea, but unstable ethnic nationalism, crumbling imperial frontiers, and fatal alliance commitments in the volatile Balkan peninsula.”"
+          ],
+          "hints": [
+            "Reason: Identify that the two historians examine different geographical arenas, time horizons, and archival sources.",
+            "Paul Kennedy: Explain that Kennedy focuses specifically on long-term Anglo-German bilateral antagonism, British Admiralty records, and Tirpitz’s 1898–1909 Naval Laws explaining why Britain aligned against Germany [3.2–3.4].",
+            "Christopher Clark: Explain that Clark focuses on the multi-polar continental crisis of 1912–1914 across Vienna, Belgrade, and St Petersburg, showing how land armies and Balkan flashpoints actually sparked war in July 1914 [3.5]."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Identify Reason): State that the historians focus on different geographical theatres and evidence bases.",
+              "Sentence 2 (Kennedy’s Focus): Explain Kennedy’s focus on British and German Admiralty planning and why Britain feared North Sea encirclement.",
+              "Sentences 3–4 (Clark’s Focus): Contrast with Clark’s multi-polar focus on Eastern European diplomacy, land armies, and the 1912–1914 Balkan crises."
+            ],
+            "sentence_starters": [
+              "One reason why Interpretations 1 and 2 differ is because the historians focus on different theatres and evidence...",
+              "Specifically, Paul Kennedy focuses primarily on Anglo-German naval archives and...",
+              "In contrast, Christopher Clark examines multi-power continental diplomacy in the Balkans between 1912 and 1914...",
+              "As a result, the authors reach different conclusions because..."
+            ],
+            "word_bank": [
+              "Admiralty archives",
+              "Tirpitz’s Naval Laws",
+              "British naval anxiety",
+              "multi-polar diplomacy",
+              "continental land armies",
+              "Balkan Wars (1912–1913)",
+              "July Crisis (1914)"
+            ],
+            "connective_bank": [
+              "One reason why Interpretations 1 and 2 differ is because...",
+              "Specifically, Interpretation 1 focuses primarily on...",
+              "In contrast, Interpretation 2 examines...",
+              "As a result, the authors reach different conclusions because..."
+            ]
           },
-          "source_b": {
-            "label": "Source B",
-            "title": "Source B: British Admiralty Confidential Memorandum (1908)",
-            "badge": "Admiralty Strategic Report • 1908",
-            "author": "First Sea Lord Sir John Fisher, Confidential Memorandum to the Cabinet (1908)",
-            "text": "The rapid expansion of the German High Seas Fleet directly opposite our shores is a menace of the gravest character. If Germany achieves naval parity or superiority in the North Sea, the British Empire ceases to exist within twenty-four hours. Our naval estimates must ensure two keels to one against any possible German combination to secure national survival."
-          },
-          "source1": {
-            "label": "Source B",
-            "title": "Source B: British Admiralty Confidential Memorandum (1908)",
-            "badge": "Admiralty Strategic Report • 1908",
-            "author": "First Sea Lord Sir John Fisher, Confidential Memorandum to the Cabinet (1908)",
-            "text": "The rapid expansion of the German High Seas Fleet directly opposite our shores is a menace of the gravest character. If Germany achieves naval parity or superiority in the North Sea, the British Empire ceases to exist within twenty-four hours. Our naval estimates must ensure two keels to one against any possible German combination to secure national survival."
-          },
-          "source_c": {
-            "label": "Source C",
-            "title": "Source C: German Imperial Treasury & War Ministry Report (1912)",
-            "badge": "Imperial Financial Return • 1912",
-            "author": "German Imperial War Ministry Memorandum to Chancellor Theobald von Bethmann-Hollweg (1912)",
-            "text": "The Army Expansion Bill must take absolute priority over all naval construction. The international crisis in the Balkans proves that the decisive battle for the Reich will be fought on land against France and Russia. Battleship building under Admiral Tirpitz must be curtailed to allocate all imperial revenues to modernising infantry artillery and field corps."
-          },
-          "source2": {
-            "label": "Source C",
-            "title": "Source C: German Imperial Treasury & War Ministry Report (1912)",
-            "badge": "Imperial Financial Return • 1912",
-            "author": "German Imperial War Ministry Memorandum to Chancellor Theobald von Bethmann-Hollweg (1912)",
-            "text": "The Army Expansion Bill must take absolute priority over all naval construction. The international crisis in the Balkans proves that the decisive battle for the Reich will be fought on land against France and Russia. Battleship building under Admiral Tirpitz must be curtailed to allocate all imperial revenues to modernising infantry artillery and field corps."
-          },
-          "sub_question_b": {
-            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the causes and impact of the Anglo-German naval arms race. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-            "model": "The main difference between Interpretations 1 and 2 is that Interpretation 1 views the naval arms race as the single most dangerous catalyst that made European war inevitable, whereas Interpretation 2 argues that the impact of the naval race has been exaggerated and that it was effectively over by 1912.<br><br>Interpretation 1 states that the naval race was \"the single most dangerous element in pre-1914 European diplomacy\" and that German battleships directly across the North Sea convinced Britain that Germany was an \"implacable foe seeking European hegemony\".<br><br>In contrast, Interpretation 2 contends that \"historians have greatly exaggerated the fatal impact of the naval race\", stating that \"by 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army\"."
-          },
-          "model_answer_b": "The main difference between Interpretations 1 and 2 is that Interpretation 1 views the naval arms race as the single most dangerous catalyst that made European war inevitable, whereas Interpretation 2 argues that the impact of the naval race has been exaggerated and that it was effectively over by 1912.<br><br>Interpretation 1 states that the naval race was \"the single most dangerous element in pre-1914 European diplomacy\" and that German battleships directly across the North Sea convinced Britain that Germany was an \"implacable foe seeking European hegemony\".<br><br>In contrast, Interpretation 2 contends that \"historians have greatly exaggerated the fatal impact of the naval race\", stating that \"by 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army\".",
-          "sub_question_c": {
-            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the naval arms race. You may use Sources B and C to help explain your answer.",
-            "model": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on British strategic documents like Source B, which reflects Admiralty alarms warning that the German fleet was \"a menace of the gravest character\" and that naval defeat would mean \"the British Empire ceases to exist within twenty-four hours\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains German War Ministry records showing that by 1912 \"battleship building must be curtailed\" because \"the army expansion bill must take absolute priority\" for a land war in Europe.<br><br>Because the two historians gave weight to different sets of historical records—British naval panic in 1908 versus German budgetary reallocation to land armies in 1912—they reached contrasting conclusions."
-          },
-          "model_answer_c": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on British strategic documents like Source B, which reflects Admiralty alarms warning that the German fleet was \"a menace of the gravest character\" and that naval defeat would mean \"the British Empire ceases to exist within twenty-four hours\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains German War Ministry records showing that by 1912 \"battleship building must be curtailed\" because \"the army expansion bill must take absolute priority\" for a land war in Europe.<br><br>Because the two historians gave weight to different sets of historical records—British naval panic in 1908 versus German budgetary reallocation to land armies in 1912—they reached contrasting conclusions.",
-          "model": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the causes and impact of the Anglo-German naval arms race. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 views the naval arms race as the single most dangerous catalyst that made European war inevitable, whereas Interpretation 2 argues that the impact of the naval race has been exaggerated and that it was effectively over by 1912.<br><br>Interpretation 1 states that the naval race was \"the single most dangerous element in pre-1914 European diplomacy\" and that German battleships directly across the North Sea convinced Britain that Germany was an \"implacable foe seeking European hegemony\".<br><br>In contrast, Interpretation 2 contends that \"historians have greatly exaggerated the fatal impact of the naval race\", stating that \"by 1912, the battleship race was effectively over: Germany had abandoned the contest to concentrate resources on its land army\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the naval arms race. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on British strategic documents like Source B, which reflects Admiralty alarms warning that the German fleet was \"a menace of the gravest character\" and that naval defeat would mean \"the British Empire ceases to exist within twenty-four hours\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains German War Ministry records showing that by 1912 \"battleship building must be curtailed\" because \"the army expansion bill must take absolute priority\" for a land war in Europe.<br><br>Because the two historians gave weight to different sets of historical records—British naval panic in 1908 versus German budgetary reallocation to land armies in 1912—they reached contrasting conclusions.</div>"
+          "model_answer": "One primary reason why Interpretations 1 and 2 differ is that the two historians focus on different geographical arenas and questions. Paul Kennedy specifically investigates long-term Anglo-German bilateral relations using British Cabinet and German Admiralty records (such as Tirpitz’s Naval Laws), which highlight why North Sea dreadnoughts drove Britain toward the Triple Entente. In contrast, Christopher Clark examines all European capitals in the final years 1912–1914—focusing on Serbian nationalism, Austro-Russian rivalry, and continental army budgets—which leads him to conclude that Balkan flashpoints, rather than battleships, triggered the 1914 war.",
+          "model": "One primary reason why Interpretations 1 and 2 differ is that the two historians focus on different geographical arenas and questions. Paul Kennedy specifically investigates long-term Anglo-German bilateral relations using British Cabinet and German Admiralty records (such as Tirpitz’s Naval Laws), which highlight why North Sea dreadnoughts drove Britain toward the Triple Entente. In contrast, Christopher Clark examines all European capitals in the final years 1912–1914—focusing on Serbian nationalism, Austro-Russian rivalry, and continental army budgets—which leads him to conclude that Balkan flashpoints, rather than battleships, triggered the 1914 war."
         }
       ],
       "quiz": [
@@ -5472,7 +5472,7 @@ export default {
         {
           "type": "extended_writing",
           "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
-          "question": "Write a narrative account analysing how crises in the Balkans between 1908 and 1913 increased European tension.",
+          "question": "Write a narrative account analysing how crises in the Balkans between 1908 and 1913 increased European tension. [8 marks]",
           "stimulus": [
             "The Bosnian Annexation Crisis (1908)",
             "The Balkan Wars (1912–1913)"
@@ -5540,12 +5540,13 @@ export default {
               "pre-emptive war"
             ]
           },
-          "model_answer": "Initially, tension in the Balkans erupted in 1908 when Austria-Hungary annexed Bosnia, outraging Serbia and Russia. Germany forced Russia to back down by threatening military support for Austria.<br><br>Following this, the Balkan Wars of 1912–1913 expelled the Ottoman Empire and doubled the size of Serbia. Serbia emerged as an aggressive Slavic power determined to liberate Serbs living under Austro-Hungarian rule.<br><br>Finally, the crisis peaked on 28 June 1914 when Bosnian Serb nationalist Gavrilo Princip assassinated Archduke Franz Ferdinand in Sarajevo. Austria-Hungary issued an ultimatum to crush Serbia, triggering the alliance system and dragging all European great powers into war."
+          "model_answer": "Initially, tension in the Balkans erupted in 1908 when Austria-Hungary annexed Bosnia, outraging Serbia and Russia. Germany forced Russia to back down by threatening military support for Austria.<br><br>Following this, the Balkan Wars of 1912–1913 expelled the Ottoman Empire and doubled the size of Serbia. Serbia emerged as an aggressive Slavic power determined to liberate Serbs living under Austro-Hungarian rule.<br><br>Finally, the crisis peaked on 28 June 1914 when Bosnian Serb nationalist Gavrilo Princip assassinated Archduke Franz Ferdinand in Sarajevo. Austria-Hungary issued an ultimatum to crush Serbia, triggering the alliance system and dragging all European great powers into war.",
+          "tariff": "Question 1: Narrative Account [8 marks • 10 mins]"
         },
         {
           "type": "extended_writing",
           "topic": "Extended Historical Explanation • Historical Importance (2 Paragraphs • 10 mins)",
-          "question": "Explain the importance of the alliance systems for relations between European great powers before 1914.",
+          "question": "Explain the importance of the alliance systems for relations between European great powers before 1914. [8 marks]",
           "stimulus": [
             "The Triple Alliance (1882)",
             "The Triple Entente (1907)"
@@ -5607,7 +5608,8 @@ export default {
               "Domino Effect"
             ]
           },
-          "model_answer": "The alliance systems were of crucial importance because they transformed a localized Balkan quarrel into a continent-wide conflict. By 1914, Europe was divided into two armed camps: the Triple Alliance (Germany, Austria-Hungary, Italy) and the Triple Entente (Britain, France, Russia). When Germany gave Austria a 'blank cheque' to attack Serbia, Russia mobilised to protect its Slavic ally, which automatically triggered the German Schlieffen Plan against France, drawing Britain into war to defend Belgian neutrality."
+          "model_answer": "The alliance systems were of crucial importance because they transformed a localized Balkan quarrel into a continent-wide conflict. By 1914, Europe was divided into two armed camps: the Triple Alliance (Germany, Austria-Hungary, Italy) and the Triple Entente (Britain, France, Russia). When Germany gave Austria a 'blank cheque' to attack Serbia, Russia mobilised to protect its Slavic ally, which automatically triggered the German Schlieffen Plan against France, drawing Britain into war to defend Belgian neutrality.",
+          "tariff": "Question 2: Explain Importance [8 marks • 10 mins]"
         }
       ],
       "quiz": [
@@ -6980,7 +6982,7 @@ export default {
         {
           "type": "extended_writing",
           "topic": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
-          "question": "“The main cause of the First World War was alliance rivalries.” How far do you agree? Explain your answer.",
+          "question": "“The main cause of the First World War was alliance rivalries.” How far do you agree? Explain your answer. [12 marks]",
           "stimulus": [
             "The Triple Alliance and Triple Entente rivalries",
             "The assassination of Archduke Franz Ferdinand"
@@ -7055,7 +7057,8 @@ export default {
               "Neutrality of Belgium"
             ]
           },
-          "model_answer": "On the one hand, alliance rivalries were a vital cause of the war because they bound great powers together through mutual defense treaties. Germany’s unconditional 'blank cheque' encouraged Austria-Hungary to declare war on Serbia. Because Russia mobilised to defend Serbia, Germany invaded France via Belgium, forcing Britain into the conflict.<br><br>On the other hand, militarism and imperial rivalries were equally decisive in causing war. The Anglo-German naval arms race created intense paranoia, while rigid military timetables like Germany's Schlieffen Plan left no room for diplomatic compromise once mobilisation began. Therefore, while alliances created the chain reaction, aggressive militarism ensured that European leaders were willing to gamble on war in July 1914."
+          "model_answer": "On the one hand, alliance rivalries were a vital cause of the war because they bound great powers together through mutual defense treaties. Germany’s unconditional 'blank cheque' encouraged Austria-Hungary to declare war on Serbia. Because Russia mobilised to defend Serbia, Germany invaded France via Belgium, forcing Britain into the conflict.<br><br>On the other hand, militarism and imperial rivalries were equally decisive in causing war. The Anglo-German naval arms race created intense paranoia, while rigid military timetables like Germany's Schlieffen Plan left no room for diplomatic compromise once mobilisation began. Therefore, while alliances created the chain reaction, aggressive militarism ensured that European leaders were willing to gamble on war in July 1914.",
+          "tariff": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]"
         }
       ],
       "quiz": [

@@ -937,9 +937,9 @@ export default {
         {
           "id": "pwb_l1_explain_why_suffrage_1918",
           "type": "extended_writing",
-          "tariff": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "tariff": "Question 2: Explain Why [12 marks • 15 mins]",
           "title": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "question": "Explain why British women over the age of thirty were granted the parliamentary vote in 1918.",
+          "question": "Explain why British women over the age of thirty were granted the parliamentary vote in 1918. [12 marks]",
           "stimulus": [
             "The pre-war campaigning of the Suffragists (NUWSS) and Suffragettes (WSPU)",
             "Women’s industrial, agricultural, and munitions work during the First World War"
@@ -2760,9 +2760,9 @@ export default {
         {
           "id": "pwb_l2_two_features_beveridge",
           "type": "two_features",
-          "tariff": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
-          "title": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
-          "question": "Describe two features of the 1942 Beveridge Report on Social Insurance.",
+          "tariff": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "title": "Question 1: Describe Two Features [4 marks • 5 mins]",
+          "question": "Describe two features of the 1942 Beveridge Report. [4 marks]",
           "feature_1": {
             "prompt": "Feature 1: Identify the \"Five Giants\" or the principle of comprehensive universal protection.",
             "starter": "One key feature was... For instance, the report aimed to slay...",
@@ -2778,48 +2778,51 @@ export default {
           "model": "One key feature was the ambition to slay the \"Five Giants\" of Want, Disease, Ignorance, Squalor, and Idleness [2.2]. For instance, Sir William Beveridge proposed a comprehensive welfare safety net protecting all citizens \"from the cradle to the grave\". A second key feature was universal flat-rate national insurance [2.3]. Specifically, every employed worker and employer paid a weekly stamp contribution, entitling all citizens equally to unemployment benefits, pensions, and healthcare without a humiliating means test."
         },
         {
-          "id": "pwb_l2_consequence_nhs_creation",
+          "id": "pwb_l2_q2_consequence_ww2_nhs",
           "type": "extended_writing",
-          "tariff": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
-          "title": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
-          "question": "Explain one consequence of the creation of the National Health Service on 5 July 1948 for working-class health in Britain.",
+          "tariff": "Question 2: Explain One Consequence [4 marks • 5 mins]",
+          "title": "Question 2: Explain One Consequence [4 marks • 5 mins]",
+          "topic": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
+          "question": "Explain one consequence of the Second World War for the creation of the National Health Service in 1948. [4 marks]",
+          "stimulus": [
+            "The experience of evacuation and rationing",
+            "The July 1945 general election landslide"
+          ],
           "hints": [
-            "Point: Explain how Minister of Health Aneurin Bevan established healthcare free at the point of delivery based on clinical need, not ability to pay [2.4, 2.5].",
-            "Evidence: Cite the millions of free prescriptions, glasses, and dental treatments issued in the first year and the dramatic drop in infant mortality.",
-            "Explanation: Explain how removing the fear of medical doctor bills transformed the physical well-being and security of working-class families."
+            "Point: State how shared wartime sacrifices (evacuation, Blitz, Emergency Medical Service) created overwhelming public demand for universal healthcare [2.1, 2.2].",
+            "Evidence: Cite the 600,000 copies sold of the 1942 Beveridge Report, Clement Attlee’s July 1945 Labour landslide, and Aneurin Bevan’s 1946 NHS Act [2.2–2.4].",
+            "Explanation: Show how wartime state planning proved government could organise fair shares for all, leading directly to free healthcare at the point of need on 5 July 1948 [2.4, 2.5]."
           ],
           "scaffolding": {
             "structure_strip": [
-              "Point: Identify the primary consequence—the elimination of financial barriers to healthcare and immediate transformation of working-class health.",
-              "Evidence: Reference Aneurin Bevan, 5 July 1948, free hospital care, and millions receiving dentures, spectacles, and prescriptions for the first time [2.4, 2.5].",
-              "Explanation: Explain how ending private medical fees eradicated untreated chronic ailments and brought universal security to working families."
+              "Sentence 1 (Consequence): Identify how WWII shifted public attitudes and politics toward state-funded universal healthcare [2.1, 2.3].",
+              "Sentences 2–3 (Supporting Detail & Link): Cite evacuation exposing urban poverty, the July 1945 Labour landslide, and Aneurin Bevan launching the NHS on 5 July 1948 [2.3, 2.4]."
             ],
             "sentence_starters": [
-              "A decisive consequence of the founding of the NHS on 5 July 1948 was...",
-              "Prior to 1948, working-class families frequently avoided seeking medical help because...",
-              "Minister of Health Aneurin Bevan ensured that for the first time in British history, healthcare was...",
-              "In the first year alone, millions of citizens received free...",
-              "Consequently, this transformed public health and eliminated..."
-            ],
-            "connective_bank": [
-              "A decisive consequence was that...",
-              "For instance, evidence indicates that...",
-              "Furthermore, this led directly to...",
-              "Consequently, public health was transformed because..."
+              "A decisive consequence of the Second World War was that shared wartime solidarity...",
+              "This happened because evacuation and the Emergency Medical Service exposed...",
+              "As a direct result, voters elected Clement Attlee’s Labour government in July 1945, leading to..."
             ],
             "word_bank": [
-              "National Health Service (NHS)",
-              "5 July 1948",
-              "Aneurin Bevan",
-              "free at the point of delivery",
+              "William Beveridge",
+              "Five Giants",
+              "Want & Disease",
+              "evacuation & rationing",
               "Clement Attlee",
-              "British Medical Association (BMA)",
-              "prescriptions",
-              "working-class health"
+              "1945 Landslide",
+              "Aneurin Bevan",
+              "5 July 1948"
+            ],
+            "connective_bank": [
+              "A decisive consequence was...",
+              "This happened because...",
+              "As a direct result...",
+              "Consequently, this led to...",
+              "Ultimately, this meant that..."
             ]
           },
-          "model_answer": "One consequence of the creation of the National Health Service on 5 July 1948 was the elimination of the financial barrier to medical care for working-class families, establishing universal healthcare free at the point of delivery based on clinical need rather than ability to pay. Specifically, millions of working-class citizens who had previously delayed seeing a doctor due to the terror of medical bills immediately accessed treatment, with over 187 million prescriptions dispensed and millions of pairs of free spectacles and dental dentures fitted in the first year alone. This transformed public health, dramatically reducing infant and maternal mortality and eliminating untreated chronic infections across industrial Britain.",
-          "topic": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)"
+          "model_answer": "One decisive consequence of the Second World War was that shared Home Front experiences generated overwhelming public and political support for universal state healthcare, leading directly to the creation of the NHS on 5 July 1948. Wartime evacuation exposed shocking untreated illness among poor city children to wealthier countryside hosts, while rationing and the Emergency Medical Service proved that central government planning could deliver fair shares for all. Consequently, voters delivered a landslide victory to Clement Attlee’s Labour Party in July 1945, empowering Health Minister Aneurin Bevan to establish healthcare free at the point of use.",
+          "model": "One decisive consequence of the Second World War was that shared Home Front experiences generated overwhelming public and political support for universal state healthcare, leading directly to the creation of the NHS on 5 July 1948. Wartime evacuation exposed shocking untreated illness among poor city children to wealthier countryside hosts, while rationing and the Emergency Medical Service proved that central government planning could deliver fair shares for all. Consequently, voters delivered a landslide victory to Clement Attlee’s Labour Party in July 1945, empowering Health Minister Aneurin Bevan to establish healthcare free at the point of use."
         }
       ],
       "quiz": [
@@ -4717,76 +4720,97 @@ export default {
       ],
       "tasks": [
         {
-          "id": "pwb_l3_contrasting_interpretations",
-          "type": "historical_interpretations",
-          "tariff": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "title": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "question": "Explain how Interpretations 1 and 2 differ on the reception faced by the Windrush Generation in post-war Britain and suggest why they reach contrasting conclusions.",
-          "interpretation_1": {
-            "author": "Official Government Narrative / Newsreel (1948)",
-            "work": "Pathé News Report: \"Welcome to Britain\"",
-            "extract": "Britain warmly welcomes these sons and daughters of the Empire who have crossed the oceans to rebuild the mother country. With plentiful jobs in transport and healthcare, their arrival represents the harmonious family of the British Commonwealth.",
-            "text": "Britain warmly welcomes these sons and daughters of the Empire who have crossed the oceans to rebuild the mother country. With plentiful jobs in transport and healthcare, their arrival represents the harmonious family of the British Commonwealth."
+          "id": "pwb_l3_q1_interp_diff",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART B",
+          "tariff": "Question 3(b): Contrasting Interpretations [4 marks • 5 mins]",
+          "title": "Question 3(b): Contrasting Interpretations [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Difference in Views (1 Paragraph • 5 mins)",
+          "question": "Question 3(b): Study Interpretations 1 and 2. How do they differ about the reception faced by the Windrush Generation in post-war Britain? [4 marks]",
+          "stimulus": [
+            "Interpretation 1 • Historian Peter Fryer, Staying Power: The History of Black People in Britain (1984): “The Windrush pioneers arrived with high hopes, believing they were returning to their ancestral Mother Country as proud British subjects. Instead, they were met with cold weather, squalid housing, and an open colour bar. Landlords slammed doors in their faces, and employers relegated skilled tradesmen to the most menial jobs. Yet through mutual-aid ‘Pardner’ schemes, church fellowships, and sheer resilience, they built vibrant communities that enriched the cultural life of the nation.”",
+            "Interpretation 2 • Sociologist Sheila Patterson, Dark Strangers: A Study of West Indians in London (1963): “Post-war British society was not intentionally hostile, but rather deeply insular and bewildered by sudden cultural diversity. The initial friction in housing and employment was primarily a clash of customs, dialects, and social expectations rather than systemic racial prejudice. Given time, full employment, and gradual assimilation into British working-class neighbourhoods, Commonwealth migrants would be absorbed harmoniously into the fabric of British life.”"
+          ],
+          "hints": [
+            "Point: State clearly that the two authors disagree on whether Caribbean arrivals faced an open racial “colour bar” or temporary cultural unfamiliarity.",
+            "Interpretation 1 (Peter Fryer, 1984): Cite Fryer’s evidence of slammed doors, squalid housing, and skilled tradesmen forced into menial jobs by racial discrimination.",
+            "Interpretation 2 (Sheila Patterson, 1963): Contrast with Patterson’s claim that Britain was “not intentionally hostile” and friction came from a temporary “clash of customs, dialects, and social expectations”."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Core Difference): State how Interpretations 1 and 2 disagree about the British reception of Windrush migrants.",
+              "Sentence 2 (Interpretation 1): Quote or summarise Peter Fryer (1984) on the open colour bar in housing and jobs.",
+              "Sentences 3–4 (Interpretation 2): Contrast with Sheila Patterson (1963) arguing Britain was merely insular rather than racially hostile."
+            ],
+            "sentence_starters": [
+              "Interpretations 1 and 2 differ fundamentally about the reception faced by the Windrush Generation...",
+              "Interpretation 1 argues that Caribbean pioneers confronted...",
+              "In contrast, Interpretation 2 claims that post-war British society was...",
+              "This is a clear difference because..."
+            ],
+            "word_bank": [
+              "Peter Fryer (1984)",
+              "Sheila Patterson (1963)",
+              "HMT Empire Windrush (1948)",
+              "colour bar",
+              "Pardner schemes",
+              "cultural assimilation"
+            ],
+            "connective_bank": [
+              "Interpretations 1 and 2 differ on...",
+              "Interpretation 1 argues that...",
+              "In contrast, Interpretation 2 suggests that...",
+              "This is a difference because..."
+            ]
           },
-          "interpretation_2": {
-            "author": "Historian David Olusoga",
-            "work": "Black and British: A Forgotten History (2016)",
-            "extract": "The arrival of the Empire Windrush was greeted by government hostility and widespread racial discrimination. Migrants were barred from rental accommodation with signs proclaiming \"No Coloureds\", relegated to low-paid night shifts, and subjected to racist violence.",
-            "text": "The arrival of the Empire Windrush was greeted by government hostility and widespread racial discrimination. Migrants were barred from rental accommodation with signs proclaiming \"No Coloureds\", relegated to low-paid night shifts, and subjected to racist violence."
+          "model_answer": "Interpretations 1 and 2 differ fundamentally on whether Caribbean migrants faced systemic racism or temporary cultural misunderstanding. Interpretation 1 (Peter Fryer) argues that the Windrush Generation met an “open colour bar”, with landlords slamming doors in their faces and employers downgrading skilled workers to menial labour, forcing migrants to rely on “Pardner” savings clubs. In contrast, Interpretation 2 (Sheila Patterson) claims British society was “not intentionally hostile”, attributing housing and job friction to a temporary clash of customs and dialects that would fade through gradual assimilation.",
+          "model": "Interpretations 1 and 2 differ fundamentally on whether Caribbean migrants faced systemic racism or temporary cultural misunderstanding. Interpretation 1 (Peter Fryer) argues that the Windrush Generation met an “open colour bar”, with landlords slamming doors in their faces and employers downgrading skilled workers to menial labour, forcing migrants to rely on “Pardner” savings clubs. In contrast, Interpretation 2 (Sheila Patterson) claims British society was “not intentionally hostile”, attributing housing and job friction to a temporary clash of customs and dialects that would fade through gradual assimilation."
+        },
+        {
+          "id": "pwb_l3_q2_interp_why",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART C",
+          "tariff": "Question 3(c): Why Interpretations Differ [8 marks • 10 mins]",
+          "title": "Question 3(c): Why Interpretations Differ [8 marks • 10 mins]",
+          "topic": "Comparing Historical Interpretations • Explaining Why Views Differ (2 Paragraphs • 10 mins)",
+          "question": "Question 3(c): Suggest one reason why Interpretations 1 and 2 give different views about the experiences of Caribbean migrants. [8 marks]",
+          "stimulus": [
+            "Interpretation 1 • Historian Peter Fryer, Staying Power: The History of Black People in Britain (1984): “The Windrush pioneers arrived with high hopes, believing they were returning to their ancestral Mother Country as proud British subjects. Instead, they were met with cold weather, squalid housing, and an open colour bar. Landlords slammed doors in their faces, and employers relegated skilled tradesmen to the most menial jobs. Yet through mutual-aid ‘Pardner’ schemes, church fellowships, and sheer resilience, they built vibrant communities that enriched the cultural life of the nation.”",
+            "Interpretation 2 • Sociologist Sheila Patterson, Dark Strangers: A Study of West Indians in London (1963): “Post-war British society was not intentionally hostile, but rather deeply insular and bewildered by sudden cultural diversity. The initial friction in housing and employment was primarily a clash of customs, dialects, and social expectations rather than systemic racial prejudice. Given time, full employment, and gradual assimilation into British working-class neighbourhoods, Commonwealth migrants would be absorbed harmoniously into the fabric of British life.”"
+          ],
+          "hints": [
+            "Paragraph 1 (Historical Hindsight & Context — 1963 vs 1984): Explain that Sheila Patterson wrote in 1963 from a white liberal sociological “stranger-assimilation” model before later riots and legislation, whereas Peter Fryer wrote in 1984 with hindsight of the 1958 Notting Hill riots, 1962/1968 Immigration Acts, and structural anti-racist struggles [3.3–3.5].",
+            "Paragraph 2 (Source Selection & Perspective): Explain that Fryer centred Black British voices, Caribbean newspapers (West Indian Gazette), and grassroots community testimony (“Pardner” networks), whereas Patterson observed migrants externally as “Dark Strangers” adapting to British norms."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Paragraph 1 (Different Historical Contexts — 1963 vs 1984): Contrast Patterson’s optimistic early-1960s assimilation theory with Fryer’s 1984 hindsight of sustained institutional racism.",
+              "Paragraph 2 (Different Sources & Perspectives): Contrast Patterson’s external sociological observation of “strangers” with Fryer’s use of Black community testimony, Claudia Jones’s activism, and Pardner records."
+            ],
+            "sentence_starters": [
+              "One key reason why Interpretations 1 and 2 give different views is that the authors wrote in very different historical periods...",
+              "Writing in 1963, sociologist Sheila Patterson assumed that...",
+              "In contrast, writing in 1984, historian Peter Fryer had hindsight of...",
+              "Furthermore, they relied on different perspectives and sources because Fryer centred..."
+            ],
+            "word_bank": [
+              "Peter Fryer (1984)",
+              "Sheila Patterson (1963)",
+              "British Nationality Act (1948)",
+              "Notting Hill riots (1958)",
+              "Claudia Jones",
+              "Pardner networks",
+              "assimilation model"
+            ],
+            "connective_bank": [
+              "One reason why Interpretations 1 and 2 differ is...",
+              "Specifically, writing in 1963...",
+              "In contrast, by 1984...",
+              "Furthermore, their source focus differed because..."
+            ]
           },
-          "sub_question_b": {
-            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the reception faced by the Windrush Generation in post-war Britain. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-            "model": "The main difference between Interpretations 1 and 2 is that Interpretation 1 gives a positive view of a welcoming mother country offering employment, whereas Interpretation 2 presents the reception as defined by widespread racism, government hostility, and social discrimination.<br><br>Interpretation 1 emphasizes that Britain \"warmly welcomes these sons and daughters of the Empire\" and claims their arrival represented the \"harmonious family of the British Commonwealth\" with \"plentiful jobs in transport and healthcare\".<br><br>In contrast, Interpretation 2 argues that their arrival was met with \"government hostility and widespread racial discrimination\", stressing that migrants were \"barred from rental accommodation with signs proclaiming 'No Coloureds'\" and subjected to \"low-paid night shifts and racist violence\"."
-          },
-          "sub_question_c": {
-            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the reception faced by the Windrush Generation. You may use Sources B and C to help explain your answer.",
-            "model": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which focuses on post-war labor recruitment, showing that Caribbean migrants were welcomed as \"British subjects stepping forward with patriotism and skill\" to fill \"thousands of unfilled vacancies in British Railways, London transport, and the NHS\".<br><br>On the other hand, Interpretation 2 is supported by firsthand testimony like Source C, which reveals the everyday reality of racial hostility and housing exclusion, where \"windows of boarding houses openly displayed notices saying 'No Coloureds, No Irish, No Dogs'\" and migrants were forced into squalid basements.<br><br>Because the two historians gave weight to contrasting types of evidence—official government labor bulletins versus personal migrant accounts of racial discrimination—they arrived at contrasting interpretations."
-          },
-          "topic": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "interp1": {
-            "author": "Official Government Narrative / Newsreel (1948)",
-            "work": "Pathé News Report: \"Welcome to Britain\"",
-            "extract": "Britain warmly welcomes these sons and daughters of the Empire who have crossed the oceans to rebuild the mother country. With plentiful jobs in transport and healthcare, their arrival represents the harmonious family of the British Commonwealth.",
-            "text": "Britain warmly welcomes these sons and daughters of the Empire who have crossed the oceans to rebuild the mother country. With plentiful jobs in transport and healthcare, their arrival represents the harmonious family of the British Commonwealth."
-          },
-          "interp2": {
-            "author": "Historian David Olusoga",
-            "work": "Black and British: A Forgotten History (2016)",
-            "extract": "The arrival of the Empire Windrush was greeted by government hostility and widespread racial discrimination. Migrants were barred from rental accommodation with signs proclaiming \"No Coloureds\", relegated to low-paid night shifts, and subjected to racist violence.",
-            "text": "The arrival of the Empire Windrush was greeted by government hostility and widespread racial discrimination. Migrants were barred from rental accommodation with signs proclaiming \"No Coloureds\", relegated to low-paid night shifts, and subjected to racist violence."
-          },
-          "source_b": {
-            "label": "Source B",
-            "title": "Source B: Ministry of Labour Official Statement (June 1948)",
-            "badge": "Official Government Record • 1948",
-            "author": "Ministry of Labour & National Service Press Release (June 1948)",
-            "text": "The arrival of citizens from Jamaica and the West Indies is a welcome event for our recovering economy. British industry faces severe manpower shortages in vital sectors. There are thousands of unfilled vacancies in British Railways, London transport, and our newly founded National Health Service. These British subjects are stepping forward with patriotism and skill to assist the mother country."
-          },
-          "source1": {
-            "label": "Source B",
-            "title": "Source B: Ministry of Labour Official Statement (June 1948)",
-            "badge": "Official Government Record • 1948",
-            "author": "Ministry of Labour & National Service Press Release (June 1948)",
-            "text": "The arrival of citizens from Jamaica and the West Indies is a welcome event for our recovering economy. British industry faces severe manpower shortages in vital sectors. There are thousands of unfilled vacancies in British Railways, London transport, and our newly founded National Health Service. These British subjects are stepping forward with patriotism and skill to assist the mother country."
-          },
-          "source_c": {
-            "label": "Source C",
-            "title": "Source C: Eyewitness Account of the Housing \"Colour Bar\" (1950s)",
-            "badge": "Firsthand Immigrant Testimony • 1950s",
-            "author": "Firsthand Testimony of a Jamaican arrival in Notting Hill (1952)",
-            "text": "When we walked down the streets seeking a place to live, every door was slammed in our faces. Windows of boarding houses openly displayed handwritten notices saying: \"No Coloureds, No Irish, No Dogs\". Even when rooms were advertised as vacant, the moment landlords saw our dark skin, they lied and said the room was taken. We were forced into overcrowded, unheated basements and charged extortionate rents."
-          },
-          "source2": {
-            "label": "Source C",
-            "title": "Source C: Eyewitness Account of the Housing \"Colour Bar\" (1950s)",
-            "badge": "Firsthand Immigrant Testimony • 1950s",
-            "author": "Firsthand Testimony of a Jamaican arrival in Notting Hill (1952)",
-            "text": "When we walked down the streets seeking a place to live, every door was slammed in our faces. Windows of boarding houses openly displayed handwritten notices saying: \"No Coloureds, No Irish, No Dogs\". Even when rooms were advertised as vacant, the moment landlords saw our dark skin, they lied and said the room was taken. We were forced into overcrowded, unheated basements and charged extortionate rents."
-          },
-          "model_answer_b": "The main difference between Interpretations 1 and 2 is that Interpretation 1 gives a positive view of a welcoming mother country offering employment, whereas Interpretation 2 presents the reception as defined by widespread racism, government hostility, and social discrimination.<br><br>Interpretation 1 emphasizes that Britain \"warmly welcomes these sons and daughters of the Empire\" and claims their arrival represented the \"harmonious family of the British Commonwealth\" with \"plentiful jobs in transport and healthcare\".<br><br>In contrast, Interpretation 2 argues that their arrival was met with \"government hostility and widespread racial discrimination\", stressing that migrants were \"barred from rental accommodation with signs proclaiming 'No Coloureds'\" and subjected to \"low-paid night shifts and racist violence\".",
-          "model_answer_c": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which focuses on post-war labor recruitment, showing that Caribbean migrants were welcomed as \"British subjects stepping forward with patriotism and skill\" to fill \"thousands of unfilled vacancies in British Railways, London transport, and the NHS\".<br><br>On the other hand, Interpretation 2 is supported by firsthand testimony like Source C, which reveals the everyday reality of racial hostility and housing exclusion, where \"windows of boarding houses openly displayed notices saying 'No Coloureds, No Irish, No Dogs'\" and migrants were forced into squalid basements.<br><br>Because the two historians gave weight to contrasting types of evidence—official government labor bulletins versus personal migrant accounts of racial discrimination—they arrived at contrasting interpretations.",
-          "model_answer": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the reception faced by the Windrush Generation in post-war Britain. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 gives a positive view of a welcoming mother country offering employment, whereas Interpretation 2 presents the reception as defined by widespread racism, government hostility, and social discrimination.<br><br>Interpretation 1 emphasizes that Britain \"warmly welcomes these sons and daughters of the Empire\" and claims their arrival represented the \"harmonious family of the British Commonwealth\" with \"plentiful jobs in transport and healthcare\".<br><br>In contrast, Interpretation 2 argues that their arrival was met with \"government hostility and widespread racial discrimination\", stressing that migrants were \"barred from rental accommodation with signs proclaiming 'No Coloureds'\" and subjected to \"low-paid night shifts and racist violence\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the reception faced by the Windrush Generation. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which focuses on post-war labor recruitment, showing that Caribbean migrants were welcomed as \"British subjects stepping forward with patriotism and skill\" to fill \"thousands of unfilled vacancies in British Railways, London transport, and the NHS\".<br><br>On the other hand, Interpretation 2 is supported by firsthand testimony like Source C, which reveals the everyday reality of racial hostility and housing exclusion, where \"windows of boarding houses openly displayed notices saying 'No Coloureds, No Irish, No Dogs'\" and migrants were forced into squalid basements.<br><br>Because the two historians gave weight to contrasting types of evidence—official government labor bulletins versus personal migrant accounts of racial discrimination—they arrived at contrasting interpretations.</div>",
-          "model": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the reception faced by the Windrush Generation in post-war Britain. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 gives a positive view of a welcoming mother country offering employment, whereas Interpretation 2 presents the reception as defined by widespread racism, government hostility, and social discrimination.<br><br>Interpretation 1 emphasizes that Britain \"warmly welcomes these sons and daughters of the Empire\" and claims their arrival represented the \"harmonious family of the British Commonwealth\" with \"plentiful jobs in transport and healthcare\".<br><br>In contrast, Interpretation 2 argues that their arrival was met with \"government hostility and widespread racial discrimination\", stressing that migrants were \"barred from rental accommodation with signs proclaiming 'No Coloureds'\" and subjected to \"low-paid night shifts and racist violence\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the reception faced by the Windrush Generation. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which focuses on post-war labor recruitment, showing that Caribbean migrants were welcomed as \"British subjects stepping forward with patriotism and skill\" to fill \"thousands of unfilled vacancies in British Railways, London transport, and the NHS\".<br><br>On the other hand, Interpretation 2 is supported by firsthand testimony like Source C, which reveals the everyday reality of racial hostility and housing exclusion, where \"windows of boarding houses openly displayed notices saying 'No Coloureds, No Irish, No Dogs'\" and migrants were forced into squalid basements.<br><br>Because the two historians gave weight to contrasting types of evidence—official government labor bulletins versus personal migrant accounts of racial discrimination—they arrived at contrasting interpretations.</div>"
+          "model_answer": "One major reason why Interpretations 1 and 2 give different views is that the authors wrote in different historical decades with contrasting analytical frameworks. Sociologist Sheila Patterson published Dark Strangers in 1963 using an optimistic “host-stranger” assimilation model, assuming that friction in London neighbourhoods was merely temporary unfamiliarity that full employment would soon smooth away. By contrast, historian Peter Fryer wrote Staying Power in 1984 after decades of persistent housing discrimination, the 1958 Notting Hill violence, and restrictive immigration laws had proved that the colour bar did not simply vanish with time.<br><br>Furthermore, the authors prioritised different voices and sources. Patterson observed West Indian arrivals from an external British sociological viewpoint focused on how newcomers adapted to majority customs. Conversely, Fryer centred Black British oral testimony, community organisations like Claudia Jones’s West Indian Gazette, and cooperative “Pardner” networks, highlighting both the reality of institutional racism and Black community resilience.",
+          "model": "One major reason why Interpretations 1 and 2 give different views is that the authors wrote in different historical decades with contrasting analytical frameworks. Sociologist Sheila Patterson published Dark Strangers in 1963 using an optimistic “host-stranger” assimilation model, assuming that friction in London neighbourhoods was merely temporary unfamiliarity that full employment would soon smooth away. By contrast, historian Peter Fryer wrote Staying Power in 1984 after decades of persistent housing discrimination, the 1958 Notting Hill violence, and restrictive immigration laws had proved that the colour bar did not simply vanish with time.<br><br>Furthermore, the authors prioritised different voices and sources. Patterson observed West Indian arrivals from an external British sociological viewpoint focused on how newcomers adapted to majority customs. Conversely, Fryer centred Black British oral testimony, community organisations like Claudia Jones’s West Indian Gazette, and cooperative “Pardner” networks, highlighting both the reality of institutional racism and Black community resilience."
         }
       ],
       "quiz": [
@@ -6522,9 +6546,9 @@ export default {
         {
           "id": "pwb_l4_narrative_account_bus_boycott",
           "type": "narrative_account",
-          "tariff": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
-          "title": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
-          "question": "Write a narrative account analysing how the 1963 Bristol Bus Boycott led to the defeat of the company's colour bar.",
+          "tariff": "Question 1: Narrative Account [8 marks • 10 mins]",
+          "title": "Question 1: Narrative Account [8 marks • 10 mins]",
+          "question": "Write a narrative account analysing how the 1963 Bristol Bus Boycott led to the defeat of the company's colour bar. [8 marks]",
           "hints": [
             "Beginning (April 1963): Bristol Omnibus Company enforcing an open colour bar refusing to employ Black and Asian bus drivers and conductors [4.1, 4.2].",
             "Middle (May–July 1963): Paul Stephenson, Roy Hackett, and the West Indian Development Council launching a 60-day boycott inspired by Rosa Parks [4.3].",
@@ -6563,7 +6587,59 @@ export default {
             ]
           },
           "model_answer": "Initially, in April 1963, 18-year-old student Guy Bailey was refused a job interview by the Bristol Omnibus Company because of their strict \"colour bar\" ban on employing Black and Asian crews. Outraged by this blatant racial discrimination, civil rights leaders Paul Stephenson, Roy Hackett, and the West Indian Development Council launched a total boycott of the city's bus network.<br><br>As a result, the boycott gained massive public momentum, attracting national media coverage and active solidarity from Bristol University students, local churches, and prominent politicians including Bristol South MP Tony Benn and Labour leader Harold Wilson. For four months, thousands of West Indian and white supporters refused to use municipal transport, causing significant revenue loss and severe moral embarrassment to the transport company.<br><br>Finally, on 28 August 1963—the same day Martin Luther King delivered his \"I Have a Dream\" speech in Washington—the Transport and General Workers' Union voted to abolish the colour bar, with the company hiring its first non-white conductor, Raghbir Singh, in September. This landmark victory demonstrated the power of peaceful direct action and directly pressured Harold Wilson's government into enacting Britain's first anti-discrimination law, the Race Relations Act of 1965.",
-          "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)"
+          "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
+          "stimulus": [
+            "Guy Bailey’s cancelled job interview (March 1963)",
+            "The student protest marches and pickets (May 1963)"
+          ]
+        },
+        {
+          "id": "pwb_l4_q2_importance",
+          "type": "extended_writing",
+          "tariff": "Question 2: Explain Importance [8 marks • 10 mins]",
+          "title": "Question 2: Explain Importance [8 marks • 10 mins]",
+          "topic": "Extended Historical Explanation • Historical Importance (2 Paragraphs • 10 mins)",
+          "question": "Explain the importance of the 1963 Bristol Bus Boycott for the development of civil rights legislation in post-war Britain. [8 marks]",
+          "stimulus": [
+            "The capitulation on 28 August 1963",
+            "Harold Wilson’s 1965 and 1968 Race Relations Acts"
+          ],
+          "hints": [
+            "Impact 1 (Breaking Employment Segregation & National Visibility): Explain how the 28 August 1963 victory—followed by Raghbir Singh becoming Bristol’s first non-white bus conductor—proved peaceful direct action could defeat workplace colour bars and drew national political backing from Tony Benn and Harold Wilson [4.4].",
+            "Impact 2 (Catalyst for Statutory Civil Rights Laws): Explain how exposing the fact that racial discrimination was completely legal in 1963 directly spurred Harold Wilson’s Labour government to pass the landmark 1965 and 1968 Race Relations Acts outlawing discrimination in public places, housing, and employment [4.5]."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Paragraph 1 (National Turning Point & Victory of 28 August 1963): Explain how Stephenson, Hackett, and Bailey forced the bus company to end its colour bar and won support from Tony Benn and Labour leader Harold Wilson [4.3, 4.4].",
+              "Paragraph 2 (Statutory Reform — 1965 & 1968 Race Relations Acts): Evaluate how the boycott exposed the lack of legal protection and directly inspired Parliament’s first anti-discrimination laws [4.5]."
+            ],
+            "sentence_starters": [
+              "A decisive reason why the 1963 Bristol Bus Boycott was important was that its victory on 28 August 1963...",
+              "This was important because support from figures such as Tony Benn and Harold Wilson pushed racial discrimination onto...",
+              "Furthermore, the boycott directly influenced parliamentary law-making when...",
+              "Ultimately, this meant that the 1965 and 1968 Race Relations Acts..."
+            ],
+            "word_bank": [
+              "Paul Stephenson",
+              "Roy Hackett",
+              "Guy Bailey",
+              "28 August 1963",
+              "Raghbir Singh",
+              "Tony Benn",
+              "Harold Wilson",
+              "Race Relations Act 1965",
+              "Race Relations Act 1968"
+            ],
+            "connective_bank": [
+              "A decisive factor was...",
+              "This was important because...",
+              "Furthermore...",
+              "As a direct result...",
+              "Ultimately, this meant that..."
+            ]
+          },
+          "model_answer": "One reason the 1963 Bristol Bus Boycott was vitally important was that its victory on 28 August 1963 shattered open workplace segregation and made racial justice a front-page national political issue. Organised by Paul Stephenson, Roy Hackett, Owen Henry, and Guy Bailey, the four-month boycott won vocal support from Bristol MP Tony Benn and Labour leader Harold Wilson, culminating in Raghbir Singh becoming Bristol’s first non-white bus conductor and proving organised Black British activism could defeat entrenched colour bars.<br><br>Furthermore, the boycott was a direct catalyst for Britain’s first statutory civil rights laws. In 1963, the Bristol Omnibus Company had broken no law because racial discrimination was entirely legal in Britain. After winning the 1964 election, Harold Wilson’s government passed the Race Relations Act 1965—banning discrimination in public places—followed by the Race Relations Act 1968 extending legal protection to employment and housing.",
+          "model": "One reason the 1963 Bristol Bus Boycott was vitally important was that its victory on 28 August 1963 shattered open workplace segregation and made racial justice a front-page national political issue. Organised by Paul Stephenson, Roy Hackett, Owen Henry, and Guy Bailey, the four-month boycott won vocal support from Bristol MP Tony Benn and Labour leader Harold Wilson, culminating in Raghbir Singh becoming Bristol’s first non-white bus conductor and proving organised Black British activism could defeat entrenched colour bars.<br><br>Furthermore, the boycott was a direct catalyst for Britain’s first statutory civil rights laws. In 1963, the Bristol Omnibus Company had broken no law because racial discrimination was entirely legal in Britain. After winning the 1964 election, Harold Wilson’s government passed the Race Relations Act 1965—banning discrimination in public places—followed by the Race Relations Act 1968 extending legal protection to employment and housing."
         }
       ],
       "quiz": [
@@ -8443,46 +8519,37 @@ export default {
       ],
       "tasks": [
         {
-          "id": "pwb_l5_evaluative_essay_nuclear",
+          "id": "pwb_l5_q1_nuclear_culture_essay",
           "type": "extended_writing",
-          "tariff": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
-          "title": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
-          "question": "‘Civil defence preparations in post-war Britain were designed to maintain public morale rather than survive a real nuclear war.’ How far do you agree? Explain your answer.",
+          "tariff": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]",
+          "title": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]",
+          "topic": "Synoptic Historical Verdict • Evaluative Essay (3 Paragraphs • 15 mins)",
+          "question": "“The fear of nuclear war completely transformed British domestic life and popular culture during the Cold War.” How far do you agree? Explain your answer. [12 marks]",
           "stimulus": [
-            "The government booklet Protect and Survive, the Four-Minute Warning, and fallout shelters",
-            "The Campaign for Nuclear Disarmament (CND), the Aldermaston Marches, and Greenham Common"
+            "The Campaign for Nuclear Disarmament (CND) and Aldermaston Marches",
+            "The York Cold War Bunker and \"Protect and Survive\""
           ],
           "hints": [
-            "Point: Explain how official advice in Protect and Survive (doors against walls, sandbags) was absurdly inadequate against megaton hydrogen bombs [5.3, 5.4].",
-            "Evidence: Cite the 1980 Protect and Survive pamphlet, the BBC film The War Game (banned in 1965 for depicting total social breakdown), and the four-minute warning sirens [5.3].",
-            "Explanation: Contrast this with the government’s secret bunker network (e.g. York Cold War Bunker, Burlington bunker) built exclusively for elite political and military survival [5.2].",
-            "Link: Evaluate whether government pamphlets were psychological propaganda to prevent anti-nuclear protest like CND and Greenham Common."
+            "Agree (Mass Protest & Popular Culture): Explain how H-bomb anxiety sparked CND (1958), Gerald Holtom’s peace symbol, the Aldermaston Marches, the 30,000-strong Greenham Common women’s camp (1982), and bleak nuclear films/pop music like The War Game and Threads [5.2, 5.4, 5.5].",
+            "Agree (State Civil Defence Intrusion): Cite the Four-Minute Warning network, Royal Observer Corps bunkers (like the York Cold War Bunker), and the 1980 Protect and Survive household pamphlet bringing nuclear terror into family living rooms [5.3, 5.4].",
+            "Counter-Argument / Nuance: Weigh how for many ordinary families during calmer Détente years, prosperity, consumerism, and scepticism toward makeshift shelters meant daily routines continued largely unchanged outside peak crisis moments like Cuba (1962) and the early 1980s."
           ],
           "scaffolding": {
             "structure_strip": [
-              "PEEL 1 (The Illusion of Civilian Protection): Absurdity of Protect and Survive (whitewashing windows, cardboard lean-tos) against thermonuclear firestorms [5.3, 5.4].",
-              "PEEL 2 (Elite Continuity of Government): Secret subterranean command bunkers built exclusively for ministers, civil servants, and military officers [5.2].",
-              "PEEL 3 (Public Resistance & The Anti-Nuclear Movement): CND, Bertrand Russell, Gerald Holtom’s peace symbol, and Greenham Common women’s peace camp [5.1, 5.5].",
-              "Conclusion: Reach a verdict on whether civil defence was cynical psychological reassurance to sustain Britain’s nuclear deterrent."
+              "Paragraph 1 (Anti-Nuclear Protest & Cultural Impact): Analyse how CND, Aldermaston Marches, Greenham Common, and media like The War Game reshaped youth protest and popular culture [5.2, 5.5].",
+              "Paragraph 2 (Domestic Civil Defence & State Planning): Examine the Four-Minute Warning, subterranean bunkers (York Bunker), and Protect and Survive entering British homes [5.3, 5.4].",
+              "Paragraph 3 (Balanced Verdict): Weigh why nuclear dread transformed political protest and 1980s culture deeply, even though everyday domestic routines often persisted calmly between crises."
             ],
             "sentence_starters": [
-              "One decisive reason was that British civil defence preparations were a psychological illusion designed to maintain morale because...",
-              "Official publications such as the 1980 booklet Protect and Survive advised citizens to construct makeshift shelters using...",
-              "In reality, against multi-megaton hydrogen bombs that would create 100-mile firestorms, such advice was...",
-              "Furthermore, the government quietly invested millions in subterranean nuclear bunkers such as the York Bunker and Burlington, which were reserved exclusively for...",
-              "On the other hand, the anti-nuclear movement fiercely challenged this deception through the Campaign for Nuclear Disarmament (CND) and...",
-              "In conclusion, civil defence was fundamentally intended to preserve public compliance and justify Britain’s nuclear deterrent rather than ensure real physical survival."
-            ],
-            "connective_bank": [
-              "On one hand, it can be argued that...",
-              "A decisive factor supporting this is...",
-              "On the other hand, evidence shows that...",
-              "Crucially, government actions demonstrated that...",
-              "In the final analysis, civil defence was..."
+              "On one hand, it can be argued that nuclear fear profoundly reshaped British culture and protest because...",
+              "A decisive factor supporting this is the rise of CND, the Aldermaston Marches, and...",
+              "Furthermore, state civil defence entered ordinary homes through Protect and Survive and...",
+              "On the other hand, an alternative argument is that for much of the public, daily domestic life...",
+              "In the final analysis, fear of nuclear war transformed popular culture and protest deeply, although..."
             ],
             "word_bank": [
               "Independent Deterrent",
-              "CND",
+              "CND (1958)",
               "Bertrand Russell",
               "Gerald Holtom",
               "Aldermaston Marches",
@@ -8490,12 +8557,18 @@ export default {
               "York Bunker",
               "Four-Minute Warning",
               "Protect and Survive",
-              "Greenham Common",
-              "The War Game"
+              "Greenham Common"
+            ],
+            "connective_bank": [
+              "On one hand, it can be argued that...",
+              "A decisive factor supporting this is...",
+              "On the other hand...",
+              "An alternative argument is that...",
+              "In the final analysis..."
             ]
           },
-          "model_answer": "On the one hand, public-facing civil defence preparations were largely cosmetic exercises in morale maintenance rather than genuine survival strategies against thermonuclear attack. Government advice pamphlets like \"Protect and Survive\" instructed families to build makeshift \"fallout rooms\" inside their homes using doors, mattresses, and whitewashed windows to deflect thermal radiation. In reality, given the catastrophic blast radius, firestorms, and radioactive fallout of modern Soviet multi-megaton hydrogen bombs, these flimsy domestic measures would have offered zero protection, serving primarily to project an illusion of control and suppress public hysteria and CND anti-nuclear protests.<br><br>On the other hand, genuine, heavily funded survival infrastructure was constructed to preserve military command and continuity of government. Massive hardened subterranean bunker complexes, such as the 35-acre Central Government War Headquarters (\"Burlington\") at Corsham, were engineered with self-contained air filtration, communication networks, and food stockpiles to keep political and military elites alive for months. Furthermore, the Royal Observer Corps operated a nationwide network of 1,500 monitoring posts to calculate nuclear blast vectors. Therefore, while civil defence for the ordinary population was an exercise in morale, the state invested immense resources into elite survival and military retaliation.",
-          "topic": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)"
+          "model_answer": "On the one hand, fear of nuclear annihilation profoundly transformed British protest movements, civil defence, and popular culture. After Britain tested its hydrogen bomb, Bertrand Russell and canon activists founded the Campaign for Nuclear Disarmament (CND) in 1958, marching 52 miles to Aldermaston beneath Gerald Holtom’s peace symbol. In the 1980s, over 30,000 women joined hands around RAF Greenham Common against US cruise missiles, while the government’s Protect and Survive booklet—advising families to whitewash windows and shelter under doors during a Four-Minute Warning—and stark dramas like The War Game brought atomic dread directly into British living rooms.<br><br>On the other hand, saying nuclear fear “completely transformed” all domestic life overstates its daily grip across four decades. While secret sites like the York Cold War Bunker and Royal Observer Corps posts operated continuously underground, most British households did not build garden fallout shelters, and during calmer decades of rising wages, television, and consumerism, nuclear anxiety receded behind everyday work and family concerns.<br><br>In the final analysis, nuclear fear decisively transformed British youth activism, peace protest, and Cold War popular culture—especially around 1958–1962 and the early 1980s—even if everyday domestic routines remained resilient rather than paralysed.",
+          "model": "On the one hand, fear of nuclear annihilation profoundly transformed British protest movements, civil defence, and popular culture. After Britain tested its hydrogen bomb, Bertrand Russell and canon activists founded the Campaign for Nuclear Disarmament (CND) in 1958, marching 52 miles to Aldermaston beneath Gerald Holtom’s peace symbol. In the 1980s, over 30,000 women joined hands around RAF Greenham Common against US cruise missiles, while the government’s Protect and Survive booklet—advising families to whitewash windows and shelter under doors during a Four-Minute Warning—and stark dramas like The War Game brought atomic dread directly into British living rooms.<br><br>On the other hand, saying nuclear fear “completely transformed” all domestic life overstates its daily grip across four decades. While secret sites like the York Cold War Bunker and Royal Observer Corps posts operated continuously underground, most British households did not build garden fallout shelters, and during calmer decades of rising wages, television, and consumerism, nuclear anxiety receded behind everyday work and family concerns.<br><br>In the final analysis, nuclear fear decisively transformed British youth activism, peace protest, and Cold War popular culture—especially around 1958–1962 and the early 1980s—even if everyday domestic routines remained resilient rather than paralysed."
         }
       ],
       "quiz": [

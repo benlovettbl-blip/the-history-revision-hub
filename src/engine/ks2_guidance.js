@@ -204,121 +204,112 @@ export const KS2_WORKSHEETS_MAP = {
     id: 'lesson_1',
     title: 'Enquiry 1: Outbreak 1939 & Home Front Mobilisation',
     subtitle: 'Cardboard Gas Mask Boxes & Blackout Preparations in September 1939',
-    enquiryQuestion:
-      'Why did ordinary British families carry cardboard boxes and tape their windows in September 1939?',
+    enquiryQuestion: 'Why did British families carry gas masks and black out windows in 1939?',
     html: '/units/ks2_ww2/worksheets/lesson_01_outbreak_gasmasks_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_01_outbreak_gasmasks_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet with gas mask inspection, September 1939 timeline, gas mask box sketch, and contrasting viewpoints.`,
+    desc: '2-page A4 enquiry worksheet with civilian gas mask inspection, 3-stage September 1939 timeline, illustrated Home Front kit & carrier label SVG, and contrasting viewpoints.',
   },
   lesson_2: {
     num: 2,
     id: 'lesson_2',
     title: 'Enquiry 2: Operation Pied Piper & British Evacuation',
     subtitle: '1.5 Million Children Sent to the Countryside with Brown Luggage Labels',
-    enquiryQuestion:
-      'What was it like for 1.5 million British children to be sent away from home with a brown paper luggage label?',
+    enquiryQuestion: 'What was it like for evacuated children to be sent away in 1939?',
     html: '/units/ks2_ww2/worksheets/lesson_02_evacuation_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_02_evacuation_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet plus optional Sheet 3 vintage suitcase activity on Operation Pied Piper and billeting.`,
+    hasOptionalCraftPage3: true,
+    desc: '2-page core A4 enquiry worksheet (Evacuation GIS map, 3-stage timeline, tie-on coat label SVG & postcard) + optional Sheet 3 stitched suitcase craft.',
   },
   lesson_3: {
     num: 3,
     id: 'lesson_3',
     title: 'Enquiry 3: Pre-War Life & Rights Lost (1933–1938)',
     subtitle: 'Everyday Childhoods & How Anti-Jewish Laws Took Away Rights Step by Step',
-    enquiryQuestion:
-      'What was everyday life like for Jewish children in Europe before 1933, and how were their rights taken away step by step?',
+    enquiryQuestion: 'How were Jewish children’s everyday rights taken away in Nazi Germany?',
     html: '/units/ks2_ww2/worksheets/lesson_03_prewar_life_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_03_prewar_life_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet contrasting pre-war childhoods, the step-by-step loss of rights (1933–1938), and contrasting viewpoints.`,
+    desc: '2-page A4 enquiry worksheet contrasting pre-war sports & family life, exclusion signs, the 1933–1938 step-down staircase SVG, and contrasting viewpoints.',
   },
   lesson_4: {
     num: 4,
     id: 'lesson_4',
-    title: "Enquiry 4: One Small Suitcase — The Kindertransport (1938–1939)",
+    title: 'Enquiry 4: One Small Suitcase — The Kindertransport (1938–1939)',
     subtitle: '10,000 Unaccompanied Refugee Children Rescued Across Europe to Britain',
-    enquiryQuestion:
-      'How did 10,000 refugee children travel alone across Europe to safety in Britain in 1938–1939?',
+    enquiryQuestion: 'How did 10,000 Kindertransport children travel alone to safety in Britain?',
     html: '/units/ks2_ww2/worksheets/lesson_04_kindertransport_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_04_kindertransport_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet plus optional Sheet 3 vintage suitcase activity following nine-year-old Vera Löwyová's (later Vera Schaufeld) journey from Prague to London.`,
+    hasOptionalCraftPage3: true,
+    desc: "2-page core A4 enquiry worksheet (Kindertransport GIS route map, 3-stage timeline & Vera's numbered pass SVG) + optional Sheet 3 stitched suitcase craft.",
   },
   lesson_5: {
     num: 5,
     id: 'lesson_5',
     title: 'Enquiry 5: Who Were the Rescuers? (1938–1939)',
     subtitle: 'Nicholas Winton, Trevor Chadwick & The Rescue of 669 Children from Prague',
-    enquiryQuestion:
-      'How did ordinary volunteers like Nicholas Winton and Trevor Chadwick rescue 669 children from Prague before war broke out?',
+    enquiryQuestion: 'How did ordinary volunteers rescue 669 children from Prague before war began?',
     html: '/units/ks2_ww2/worksheets/lesson_05_rescuers_winton_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_05_rescuers_winton_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet exploring Nicholas Winton's scrapbook, the Prague-to-London rescue chain, and moral courage.`,
+    desc: "2-page A4 enquiry worksheet exploring Nicholas Winton's 1939 newspaper foster appeal, the Prague-to-London rescue chain SVG, and being an upstander.",
   },
   lesson_6: {
     num: 6,
     id: 'lesson_6',
     title: 'Enquiry 6: The Blitz & Air Raids (1940–1941)',
     subtitle: '57 Consecutive Nights of Bombing, Shelters & Community Survival',
-    enquiryQuestion:
-      'How did ordinary families protect themselves when bombs fell night after night during the Blitz?',
+    enquiryQuestion: 'How did British families keep safe when bombs fell during the Blitz?',
     html: '/units/ks2_ww2/worksheets/lesson_06_the_blitz_shelters_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_06_the_blitz_shelters_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet exploring Anderson and Morrison shelters, London Underground platforms, and fire watchers.`,
+    desc: '2-page A4 enquiry worksheet with Anderson vs Morrison shelter architectural cutaway SVG, Underground platforms, and fire watchers.',
   },
   lesson_7: {
     num: 7,
     id: 'lesson_7',
     title: 'Enquiry 7: Dig for Victory & Wartime Rationing (1940–1945)',
     subtitle: 'Coupon Books, Atlantic Convoys & Growing Vegetables Across Britain',
-    enquiryQuestion:
-      'Why did the British government ration butter, sugar, and meat, and ask families to "Dig for Victory"?',
+    enquiryQuestion: 'Why did Britain ration food and ask families to ‘Dig for Victory’?',
     html: '/units/ks2_ww2/worksheets/lesson_07_dig_for_victory_rationing_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_07_dig_for_victory_rationing_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet on coupon rationing, Atlantic U-boat blockades, and Dig for Victory allotments.`,
+    desc: '2-page A4 enquiry worksheet with coupon book & poster enquiry, 1942 weekly adult ration plate & allotment basket SVG, and wartime menu planning.',
   },
   lesson_8: {
     num: 8,
     id: 'lesson_8',
     title: 'Enquiry 8: Women at War (1941–1945)',
     subtitle: 'Munitions Factories, Lumberjills & 80,000 Women in the Land Army',
-    enquiryQuestion:
-      'How did women on farms, in forests, and in factories keep Britain fighting during the Second World War?',
+    enquiryQuestion: 'How did women’s work on farms and in factories keep Britain fighting?',
     html: '/units/ks2_ww2/worksheets/lesson_08_women_at_war_land_army_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_08_women_at_war_land_army_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet on the Women's Land Army, Lumberjills in the Timber Corps, munitions factories, and the ATS.`,
+    desc: "2-page A4 enquiry worksheet on the Women's Land Army, Lumberjills, Canary Girls, ATA ferry pilots, and four wartime role insignia SVG.",
   },
   lesson_9: {
     num: 9,
     id: 'lesson_9',
     title: 'Enquiry 9: Secret Codebreakers & Bletchley Park (1941–1945)',
-    subtitle: 'Enigma Machines, Alan Turing, Bombe Computers & Keeping Ultra Secret',
-    enquiryQuestion:
-      'How did secret codebreakers working in wooden huts at Bletchley Park help shorten the Second World War?',
+    subtitle: 'Enigma Machines, Alan Turing, Bombe Machines & Keeping Station X Secret',
+    enquiryQuestion: 'How did secret codebreakers at Bletchley Park help win the war?',
     html: '/units/ks2_ww2/worksheets/lesson_09_bletchley_codebreakers_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_09_bletchley_codebreakers_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet examining Enigma rotors, Alan Turing's Bombe machine, and the women who ran Station X.`,
+    desc: "2-page A4 enquiry worksheet examining Enigma rotors, Alan Turing's Bombe, the Station X cipher wheel SVG ('HUT EIGHT'), and the Official Secrets Act.",
   },
   lesson_10: {
     num: 10,
     id: 'lesson_10',
     title: 'Enquiry 10: VE Day, Rebuilding Britain & Remembrance (1945)',
     subtitle: '8 May 1945 Celebrations, Mixed Emotions & Remembering Sacrifice',
-    enquiryQuestion:
-      'Why was VE Day on 8 May 1945 a day of both joyful street parties and quiet sadness for British families?',
+    enquiryQuestion: 'Why did VE Day bring both street parties and sadness across Britain?',
     html: '/units/ks2_ww2/worksheets/lesson_10_ve_day_remembrance_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_10_ve_day_remembrance_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet exploring VE Day celebrations, post-war rebuilding, and why we remember.`,
+    desc: '2-page A4 enquiry worksheet exploring VE Day street parties, VJ Day, the 1948 NHS, the 1945–1954 milestone ribbon SVG, and Remembrance.',
   },
   lesson_11: {
     num: 11,
     id: 'lesson_11',
     title: 'Enquiry 11: After the War — The Windermere Children (1945)',
     subtitle: 'From Prague to Lake Windermere • The Calgarth Estate & Rebuilding Lives',
-    enquiryQuestion:
-      'How did 300 child survivors begin to rebuild their lives by Lake Windermere in August 1945?',
+    enquiryQuestion: 'How did 300 child survivors rebuild their lives by Lake Windermere?',
     html: '/units/ks2_ww2/worksheets/lesson_11_windermere_children_worksheet.html',
     pdf: '/pdfs/ks2_ww2/lesson_11_windermere_children_worksheet.pdf',
-    desc: `2-page A4 enquiry worksheet exploring the August 1945 RAF Stirling flight to Carlisle, Calgarth Estate, and Tom Palmer's After the War.`,
+    desc: '2-page A4 enquiry worksheet exploring the August 1945 RAF Stirling airlift to Carlisle, healing at Calgarth Estate, and Kindertransport vs Windermere SVG.',
   },
 };
 
@@ -326,557 +317,265 @@ export const KS2_TEACHER_GUIDANCE_DATA = {
   lesson_1: {
     curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Home Front: Outbreak & Civilian Defences).`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          'Pupils complete the 5-question retrieval starter checking prior knowledge of 1939 Britain, maps of Europe, and air travel.',
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Primary Source Enquiry',
-        activity:
-          'Project Source A (school gas mask drill) and Source B (blackout poster). Discuss using the Hinge Question.',
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          'Pupils complete Task 1 (Source Detective), Task 2 (September 1939 Timeline), Task 3 (Gas Mask Box & Home Front Kit), and Task 4 (Thinking Heads).',
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Quiz',
-        activity:
-          'Pupils write their Task 5 Mission Challenge paragraph and complete the 5-question retrieval check.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Pupils complete the retrieval starter checking prior knowledge of 1914–18, maps of Europe, wireless radio, and Britain in 1939.' },
+      { time: '10–25 mins', phase: 'Primary Source Enquiry', activity: 'Project Source A (schoolchildren practising a playground gas mask drill) and Source B (1939 civilian black rubber gas mask & filter tin). Discuss using the Hinge Question.' },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: 'Pupils complete Task 1 (Gas Mask Detective), Task 2 (3-Stage September 1939 Timeline synced with the board), Task 3 (Home Front Emergency Kit & Carrier Label), and Task 4 (Thinking Heads).' },
+      { time: '50–60 mins', phase: 'Plenary & Quiz', activity: 'Pupils write their Task 5 Mission Challenge paragraph answering the Enquiry Question and complete the retrieval check.' },
     ],
-    subjectPrimer: `On 1 September 1939, Nazi Germany invaded Poland and Britain immediately enforced a nationwide Blackout at sunset. Two days later, on Sunday 3 September 1939 at 11:15am, Prime Minister Neville Chamberlain announced on BBC wireless radio that Britain was at war with Germany. Within minutes, a false-alarm air raid siren wailed across London. Remembering poison gas from the First World War, the government issued 38 million rubber gas masks in cardboard boxes with string shoulder straps. Streetlamps were switched off, car headlights were fitted with slotted covers, windows were covered with heavy black curtains, and families taped brown gummed paper across glass panes to stop flying splinters. Every citizen also received a National Identity Card.`,
+    subjectPrimer: `On 1 September 1939, Nazi Germany invaded Poland and Britain immediately enforced a nationwide Blackout at sunset. Two days later, on Sunday 3 September 1939 at 11:15am, Prime Minister Neville Chamberlain announced on BBC wireless radio that Britain was at war with Germany. Within minutes, a false-alarm air raid siren wailed across London. Remembering poison gas from the First World War, the government issued 38 million rubber gas masks in cardboard boxes with string shoulder straps (including bright "Mickey Mouse" masks for toddlers). Streetlamps were switched off, car headlights were hooded, windows were covered with thick black curtains, and families taped brown gummed paper across glass panes to stop flying splinters.`,
     misconceptions: [
-      {
-        misconception: `Children often believe heavy German bombing started on the very first day of the war.`,
-        correction: `Explain that the first eight months in Britain became known as the "Phoney War" because heavy bombing of cities did not begin until late summer 1940. Gas masks, blackout curtains, and shelters were prepared early to protect families in advance.`,
-      },
-      {
-        misconception: `Children assume gas masks were optional or only given to soldiers.`,
-        correction: `Gas masks were issued to every civilian. Toddlers aged two to four were given bright red and blue "Mickey Mouse" masks so they would be less frightened, and babies had enclosed gas helmets with hand-pumped air bellows.`,
-      },
+      { misconception: `Children often believe heavy German bombing started on the very first day of the war.`, correction: `Explain that the first eight months in Britain became known as the "Phoney War" because heavy night bombing of cities did not begin until September 1940. Gas masks, blackout curtains, and wardens prepared families early.` },
+      { misconception: `Children assume gas masks were optional or only given to soldiers.`, correction: `Gas masks were issued free to every civilian—38 million in total. Toddlers aged two to four received bright red-and-blue "Mickey Mouse" masks, and babies had enclosed gas helmets with hand-pumped bellows.` },
     ],
     hingeQuestion: `Why did the British government give a gas mask to every baby, child, and adult before a single bomb had fallen on Britain?`,
-    hingeGuidance: `Look for pupils explaining that leaders remembered poison gas in the First World War and feared enemy bomber planes might drop gas on crowded cities without warning, so families had to be ready first.`,
+    hingeGuidance: `Look for pupils explaining that leaders remembered poison gas in the First World War and feared enemy bomber planes might drop gas on crowded cities without warning, so families had to be protected in advance.`,
     answers: {
-      task1: `1) Gas Mask Design: Made of thick black rubber with a clear eyepiece and a metal filter tin at the front to clean poisonous gas from the air. 2) Cardboard Box & String Strap: Carried over the shoulder everywhere (to school, the shops, and play) so nobody would be caught outside without protection if a gas warning sounded, while keeping the rubber safe from damage.`,
-      task2: `Step 1: Germany invades Poland and the British Blackout begins at sunset (1 September 1939). Step 2: Prime Minister Neville Chamberlain announces on BBC radio that Britain is at war (3 September 1939, 11:15am). Step 3: Air raid sirens sound a false alarm over London minutes later. Step 4: 38 million gas masks, taped windows, and ARP wardens become part of daily life.`,
-      task3: `1) Cardboard Gas Mask Box: Kept the rubber mask safe and dry over your shoulder. 2) Anti-Dimming Stick: Rubbed onto the eyepieces so warm breath did not steam up the glass. 3) Criss-Cross Window Tape: Stopped glass shattering into sharp flying splinters during bomb blasts. 4) National Identity Card: Proved who every citizen was and helped reunite separated families.`,
-      task4: `Perspective 1 (10-Year-Old Schoolchild): Nervous and uncomfortable smelling hot rubber during school drills, finding it hard to talk through the mask, yet comforted that classmates are practising together. Perspective 2 (ARP Warden): Serious and watchful walking pitch-black streets at night, checking that no chink of light shows from curtains ("Put that light out!").`,
-      task5_wagoll: `In September 1939, ordinary British families carried cardboard boxes and taped their windows because the government feared enemy planes would drop poison gas and high-explosive bombs on towns and cities. Every man, woman, and child was given one of 38 million rubber gas masks to carry on a string strap wherever they went. At home, families hung thick blackout curtains on 1 September so enemy pilots could not spot towns from the sky, and stuck criss-cross paper tape onto glass panes to stop sharp splinters flying indoors. Even before the big air raids began, ordinary streets and homes had become part of the Home Front.`,
+      task1: `1) Rubber Mask, Eyepiece & Filter Tin: The tight black rubber seal kept poisoned air out, the clear window let the wearer see, and chemicals inside the front green metal filter tin cleaned poisonous gas from the air breathed in. 2) Cardboard Box & String Strap: Carried over the shoulder everywhere (school, shops, and play) so nobody would be caught outdoors without protection if a gas rattle sounded, while protecting the rubber mask from tearing.`,
+      task2: `Stage 1 (How families heard war had begun on 3 Sept 1939): Families gathered around wooden wireless radios at 11:15am on Sunday 3 September 1939 to hear Prime Minister Neville Chamberlain broadcast from 10 Downing Street. Stage 2 (Why 38 million gas masks were given out): Leaders remembered deadly poison gas in WWI and feared enemy bombers would drop gas on British towns. Stage 3 (How families & ARP wardens kept streets dark): Streetlamps were switched off, families hung thick black curtains over windows, kerbs were painted white, and 1.4 million volunteer ARP wardens patrolled calling "Put that light out!"`,
+      task3: `1) Cardboard Box & String Strap: Protected the rubber mask from knocks and rain while leaving both hands free. 2) Anti-Dimming Stick: Rubbed inside the eyepieces so warm breath would not mist up the clear window. 3) Criss-Cross Window Tape: Stopped glass panes shattering into sharp flying splinters during bomb blasts. 4) National Identity Card: Proved every citizen’s identity for rationing and helped reunite families separated in air raids.`,
+      task4: `Viewpoint 1 (10-Year-Old Schoolchild): Hot rubber smells strange and makes voices sound muffled, yet practising together with classmates and teachers makes air raid drills feel calmer. Viewpoint 2 (ARP Warden): Even one chink of bedroom light could guide night bombers towards the whole neighbourhood, so checking curtains protects every neighbour on the street.`,
+      task5_wagoll: `In September 1939, British families carried cardboard gas mask boxes and blacked out their windows because the government feared enemy planes would drop poison gas and high-explosive bombs on towns and cities. Every citizen received one of 38 million rubber gas masks to carry on a shoulder string wherever they went. At sunset, strict Blackout curtains hid towns from bombers overhead, criss-cross brown paper tape stopped glass splintering indoors, and 1.4 million volunteer ARP wardens patrolled dark streets to keep the Home Front safe.`,
     },
   },
 
   lesson_2: {
     curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Home Front: Evacuation & Operation Pied Piper).`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          '5-question retrieval check recapping Lesson 1 (3 September 1939, Blackout, gas masks, and ARP wardens).',
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Dual Source Enquiry',
-        activity:
-          'Examine Source A (children walking with luggage labels and gas mask boxes) and Source B (British Evacuation Map of danger zones and reception areas).',
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          'Pupils complete Task 1 (Luggage Label Detective), Task 2 (Pied Piper Timeline), Task 3 (Evacuee Suitcase List), and Task 4 (Thinking Heads).',
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Postcard',
-        activity:
-          'Pupils write their Task 5 Postcard Home to Mum and Dad and complete the 5-question retrieval check.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Retrieval check recapping Lesson 1 (11:15am 3 September 1939, 38 million gas masks, Blackout, and ARP wardens).' },
+      { time: '10–25 mins', phase: 'Dual Source Enquiry', activity: 'Examine Source A (schoolchildren walking to a station wearing luggage labels and gas mask boxes) and Source B (Operation Pied Piper GIS Map of danger cities and rural reception areas).' },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: 'Pupils complete Task 1 (Luggage Label & Map Detective), Task 2 (3-Stage Pied Piper Timeline), Task 3 (Coat Label SVG & Packing List), and Task 4 (Thinking Heads). Optional Sheet 3 suitcase craft available.' },
+      { time: '50–60 mins', phase: 'Plenary & Postcard', activity: 'Pupils write their Task 5 Postcard Home to Mum and Dad and complete the retrieval check.' },
     ],
-    subjectPrimer: `On Friday 1 September 1939—two days before war was officially declared—the government launched Operation Pied Piper. Across three days, 1.5 million schoolchildren, teachers, and mothers with children under five left industrial cities such as London, Manchester, Liverpool, Birmingham, and Glasgow for safer countryside "reception areas" in Devon, Cornwall, Wales, and rural counties. Each child wore a brown cardboard luggage label tied to their coat showing their name, school, and destination. At village halls, Billeting Officers matched children with local host families. Experiences varied hugely: many city children loved seeing cows, orchards, and green fields for the first time, while others felt terribly homesick or were placed with strict, unkind hosts.`,
+    subjectPrimer: `On Friday 1 September 1939—two days before war was officially declared—the government launched Operation Pied Piper. Across three days, 1.5 million schoolchildren, teachers, and mothers with children under five left industrial and port cities such as London, Manchester, Liverpool, Birmingham, and Glasgow for safer countryside "reception areas" in Devon, Cornwall, Wales, East Anglia, and rural counties. Each child wore a brown cardboard luggage label tied to their coat. At village halls, Billeting Officers matched children with local host families.`,
     misconceptions: [
-      {
-        misconception: `Pupils often assume every evacuee had a happy countryside holiday—or that every host family was cruel.`,
-        correction: `Show pupils that experiences were mixed. Some evacuees stayed in touch with loving host families for the rest of their lives, while others missed home terribly or faced unkindness and returned to cities during the quiet "Phoney War" months.`,
-      },
-      {
-        misconception: `Children assume parents travelled on the trains with school-age evacuees.`,
-        correction: `Explain that mothers only travelled with babies and toddlers under five. School-age children travelled in class groups with their schoolteachers and waved goodbye to their parents at railway barriers.`,
-      },
+      { misconception: `Pupils often assume every evacuee had a happy countryside holiday—or that every host family was unkind.`, correction: `Show pupils that experiences varied enormously: many loved farm life and stayed friends with host families for decades, while others felt terribly homesick or faced strict, unkind hosts.` },
+      { misconception: `Children assume parents travelled on the trains with school-age evacuees.`, correction: `Mothers only travelled with babies and toddlers under five. School-age children travelled in school groups with their teachers and WVS helpers.` },
     ],
-    hingeQuestion: `Looking at the map of Britain, why did trains take London children west to Devon, Cornwall, and Wales rather than south-east to Kent?`,
-    hingeGuidance: `Guide pupils to spot that Kent lay closest to mainland Europe underneath bomber flight paths, whereas western countryside counties were much further from enemy airfields and had fewer large factories or docks.`,
+    hingeQuestion: `Looking at Source B (the Evacuation Map), why did trains take London children west to Devon, Cornwall, and Wales rather than south-east to Kent?`,
+    hingeGuidance: `Guide pupils to spot that Kent lay closest to mainland Europe directly beneath enemy bomber flight paths, whereas western rural counties were much further away and had fewer large factories or docks.`,
     answers: {
-      task1: `1) Brown Luggage Label: Pinned or tied to each child's coat with their full name, home address, school, and reception area so teachers and officials would not lose track of any child among 1.5 million travellers. 2) Helpers at the Station: Police officers, railway staff, and Women's Voluntary Services helpers guided school lines safely onto the right steam trains.`,
-      task2: `Step 1: Operation Pied Piper begins on 1 September 1939 before war is even declared. Step 2: 1.5 million children wave goodbye to parents at city railway stations with teachers. Step 3: Steam trains arrive in country towns and children gather in village halls. Step 4: Billeting Officers place children into rural host homes.`,
-      task3: `Essential Suitcase Items: 1) Gas mask in its cardboard box (compulsory everywhere). 2) Change of underwear, nightclothes, and warm woollen jumper (for cold country houses). 3) Toothbrush, comb, towel, and soap. 4) Strong walking boots or plimsolls. 5) Packet of sandwiches, an apple, and a family photo or postcard to write home.`,
-      task4: `Perspective 1 (City Evacuee Child): Heartbroken waving goodbye at the station and nervous standing in the village hall waiting to be chosen, amazed by pitch-dark country lanes and farm animals. Perspective 2 (Country Host Mother): Wanting to keep city children safe from bombs, busy making up spare beds and cooking extra meals for tired, homesick strangers.`,
-      task5_wagoll: `Dear Mum and Dad, I arrived safely in Devon after a very long steam train ride with my school class. My brown luggage label stayed tied to my coat all the way, and I kept my gas mask box over my shoulder just like you told me! At the village hall, the Billeting Officer introduced me to Mrs Evans, who lives in a stone cottage near a dairy farm. Today I saw real cows being milked for the first time, though the dark country lanes feel strangely quiet without London buses. I miss you both every night, so please write back soon. Lots of love, Tommy.`,
+      task1: `1) Brown Luggage Label & Helpers: Every child wore a tied coat label showing their name, school, and destination so nobody got lost among 1.5 million travellers; schoolteachers, railway staff, police, and WVS volunteers guided lines onto the trains. 2) Why West to Devon, Cornwall & Wales Instead of Kent: Source B shows Kent lay right across the narrow English Channel near enemy bomber routes, whereas western countryside counties were far away from bomber airfields and crowded city docks.`,
+      task2: `Stage 1 (Why Operation Pied Piper moved 1.5 million people): To move schoolchildren and mothers with toddlers out of industrial and port cities at high risk of bombing into safer rural reception areas before raids began. Stage 2 (Why evacuees felt nervous in the village hall): Tired after a long journey without their parents, children had to wait for Billeting Officers to match them with complete strangers. Stage 3 (Why city children had such different lives on farms): Country villages had green fields, farm animals, and fresh air—some host families were warm and loving, while other children felt homesick or worked for strict hosts.`,
+      task3: `1) Compulsory Gas Mask: Enemy planes might still fly over or drop gas near country towns, so masks had to be carried everywhere. 2) Warm Jumper, Nightclothes & Boots: Country cottages had cold bedrooms and muddy lanes in autumn and winter. 3) Wash Kit (Toothbrush, Towel & Soap): Host families had limited supplies, so each child brought their own hygiene kit. 4) Sandwiches, Apple & Stamped Postcard: Kept children fed on long delayed train journeys and let them post their safe arrival address straight home to worried parents.`,
+      task4: `Viewpoint 1 (City Evacuee in the Village Hall): Missing Mum and Dad after waving goodbye at the barrier, amazed by green fields and cows, yet anxious wondering which stranger will take me home. Viewpoint 2 (Countryside Host Mother): Preparing spare beds, hot soup, and a warm welcome to keep tired, homesick city children safe from air raids.`,
+      task5_wagoll: `Dear Mum and Dad, I arrived safely in Devon after a long steam train ride with my school class! My brown luggage label stayed tied to my coat and I kept my gas mask box safe over my shoulder. At the village hall, the Billeting Officer placed me with Mrs Evans, who lives in a stone cottage beside a farm. Today I helped feed pigs and saw orchards for the first time, though it feels very quiet at night without London buses. I miss you both lots—please write soon! Love, Sam.`,
     },
   },
 
   lesson_3: {
     curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: Pre-War Jewish Life & Step-by-Step Loss of Rights, 1933–1938). Grounded in trauma-informed primary history safeguarding principles.`,
-    safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 3):</strong> Always begin with rich pre-war Jewish family life, hobbies, and individuality before introducing Nazi persecution. <strong>Never</strong> use classroom roleplay, simulations, or "imagine you are banned" segregation games, and <strong>never</strong> display graphic atrocity imagery to KS2 pupils. Check pastorally in advance for pupils with refugee backgrounds or family experiences of discrimination.`,
+    safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 3):</strong> Always begin with rich pre-war Jewish family life, hobbies, and individuality before introducing Nazi persecution. <strong>Never</strong> use classroom roleplay, simulations, or "imagine you are banned" segregation games, and <strong>never</strong> display graphic atrocity imagery to KS2 pupils.`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          '5-question retrieval check recapping Lessons 1–2 (outbreak of war, blackout, and Operation Pied Piper).',
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Dual Source Enquiry',
-        activity:
-          'Examine Source A (1935 Jewish boys’ football team photograph) and Source B (c. 1935–1937 German anti-Jewish exclusion sign reading "Juden werden hier nicht bedient" / "Jews are not served here"), alongside the November 1938 decree banning Jewish children from German state schools.',
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          'Pupils complete Task 1 (Pre-War Photo & Exclusion Sign Detective), Task 2 (1933–1938 Rights Lost Timeline), Task 3 (Before & After 1938 Comparison), and Task 4 (Thinking Heads).',
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Reflection',
-        activity:
-          'Pupils write their Task 5 Mission Challenge paragraph on why learning about pre-war family life matters and complete the 5-question quiz.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Retrieval check recapping Lessons 1–2 (Operation Pied Piper, Billeting Officers, reception areas, and September 1939).' },
+      { time: '10–25 mins', phase: 'Dual Source Enquiry', activity: 'Examine Source A (1925 SC Hakoah Vienna Jewish sports club football team) and Source B (c. 1935–1937 German anti-Jewish exclusion sign reading "Juden werden hier nicht bedient" / "Jews are not served here").' },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: 'Pupils complete Task 1 (Photo & Exclusion Sign Detective), Task 2 (3-Stage 1933–1938 Timeline), Task 3 (Step-by-Step Rights Staircase Comparison), and Task 4 (Thinking Heads).' },
+      { time: '50–60 mins', phase: 'Plenary & Reflection', activity: 'Pupils write their Task 5 Mission Challenge paragraph and complete the retrieval quiz.' },
     ],
-    subjectPrimer: `Before Adolf Hitler and the Nazi Party took power in Germany in January 1933, Jewish families across Germany, Austria, and Czechoslovakia lived ordinary, settled lives as neighbours, doctors, shopkeepers, musicians, teachers, and schoolchildren. Children played in local football teams, swam at public lidos, rode bicycles, and studied alongside non-Jewish friends. Between 1933 and 1938, the Nazi government passed hundreds of unfair anti-Jewish laws step by step: putting up street and shop exclusion signs (such as <em>"Juden werden hier nicht bedient"</em> — "Jews are not served here"), excluding Jewish people from sports clubs and public parks, stripping away German citizenship under the 1935 Nuremberg Laws, attacking synagogues and Jewish shops on 9–10 November 1938 (Kristallnacht), and banning Jewish children from state schools days later.`,
+    subjectPrimer: `Before Adolf Hitler and the Nazi Party took power in Germany in January 1933, Jewish families across Germany, Austria, and Czechoslovakia lived ordinary, settled lives as neighbours, doctors, shopkeepers, musicians, teachers, and schoolchildren. Between 1933 and 1938—before WWII began—the Nazi government passed hundreds of unfair anti-Jewish laws step by step: putting up exclusion signs ("Jews are not served here"), banning Jewish people from sports clubs and parks, stripping German citizenship under the 1935 Nuremberg Laws, attacking synagogues and shops on 9–10 November 1938 (Kristallnacht), and expelling all Jewish children from state schools on 15 November 1938.`,
     misconceptions: [
-      {
-        misconception: `Pupils sometimes imagine Jewish families lived completely separately from everyone else before 1933.`,
-        correction: `Show pupils through pre-war family and sports photographs that Jewish families were proud citizens who went to the same schools, supported the same football clubs, and loved their home towns.`,
-      },
-      {
-        misconception: `Pupils assume all rights vanished on a single day in 1939 when war began.`,
-        correction: `Explain that unfair laws built up gradually over five peacetime years (1933–1938)—from shop exclusion signs, park benches, and swimming pools to citizenship and schools—making life unsafe before the war had even started.`,
-      },
+      { misconception: `Pupils sometimes imagine Jewish families lived completely separately from everyone else before 1933.`, correction: `Show through pre-war sports and school photos (like six-year-olds carrying their Schultüte sweet cones) that Jewish families were proud citizens integrated into everyday town life.` },
+      { misconception: `Pupils assume all rights vanished on a single day in 1939 when war began.`, correction: `Explain that unfair laws built up step by step across five peacetime years (1933–1938), making life unsafe before war had even started.` },
     ],
-    hingeQuestion: `What does the 1935 photograph of the boys' football team prove about life for Jewish children before anti-Jewish laws shut them out?`,
-    hingeGuidance: `Look for pupils explaining that Jewish children had ordinary hobbies, teammates, pride, and friendships just like pupils today, showing how much was unfairly taken from them between 1933 and 1938.`,
+    hingeQuestion: `What does Source A (the Jewish sports club football team) prove about Jewish communities before Nazi laws shut them out?`,
+    hingeGuidance: `Look for pupils explaining that Jewish families enjoyed ordinary sports, teamwork, community pride, and everyday life, showing how much was unfairly taken away between 1933 and 1938.`,
     answers: {
-      task1: `1) Source A — Football Team Photograph (1935): Shows eleven boys standing proudly in numbered football shirts with a trophy/football, proving Jewish children enjoyed ordinary sports, clubs, and friendships. 2) Source B — Anti-Jewish Exclusion Sign ("Juden werden hier nicht bedient" / "Jews are not served here", Germany, c. 1935–1937): Proves how unfair public signs openly excluded Jewish families from everyday shops, cafés, and community spaces step by step, culminating in the November 1938 ban from state schools.`,
-      task2: `Step 1: January 1933 — Hitler becomes Chancellor of Germany; early boycotts and bans from sports clubs begin. Step 2: September 1935 — Nuremberg Laws take away German citizenship from Jewish people and exclusion signs spread across towns. Step 3: 9–10 November 1938 — Kristallnacht attacks burn synagogues and smash Jewish shop windows. Step 4: 15 November 1938 — Official order expels all Jewish children from German state schools.`,
-      task3: `1) Everyday Life Before 1933: Attending local school with friends, playing in football clubs, visiting swimming pools and cinemas, and celebrating birthdays and Jewish festivals freely. 2) Rights Lost by Late 1938: Turned away by shop exclusion signs, shut out of state schools, banned from public parks, cinemas, and pools, stripped of citizenship, and frightened after Kristallnacht.`,
-      task4: `Perspective 1 (Jewish Pupil Shut Out of School, Nov 1938): Upset, confused, and lonely standing outside the school gates, missing classmates and lessons despite having done nothing wrong. Perspective 2 (Non-Jewish Classmate Inside): Uncomfortable staring at a best friend's empty desk, afraid to speak out against unfair adult rules.`,
-      task5_wagoll: `Learning about Jewish children's everyday lives before 1933 is important because it shows us who they really were as ordinary boys and girls with hobbies, families, and dreams. Photographs from cities like Berlin, Vienna, and Prague show children smiling in football teams, playing music, and learning beside their friends. Between 1933 and 1938, unfair Nazi laws and public signs ("Jews are not served here") took away their rights step by step: the 1935 Nuremberg Laws removed their citizenship, and after Kristallnacht in November 1938 Jewish children were banned from state schools altogether. Seeing their happy lives first helps us understand how cruel those laws were and why Jewish parents urgently looked for ways to get their children to safety.`,
+      task1: `1) What Source A Proves: Shows proud footballers of Jewish club SC Hakoah Vienna before a packed stadium, proving Jewish communities had thriving hobbies, sports teams, pride, and ordinary everyday lives. 2) Why Study Pre-War Photos First: Seeing real families and children enjoying normal life first helps historians remember them as full human beings rather than only looking at Nazi exclusion signs like Source B.`,
+      task2: `Stage 1 (Everyday childhoods before the war): Jewish children went to local schools with friends, carried a Schultüte sweet cone on their first school day, played in football teams, and rode bicycles. Stage 2 (How Nazi laws took away rights after 1933): Step by step, unfair laws banned Jewish people from sports clubs, parks, and pools, and the 1935 Nuremberg Laws stripped away citizenship. Stage 3 (November 1938): On 9–10 November 1938 (Kristallnacht), synagogues and Jewish shops were violently attacked, and on 15 November all Jewish children were expelled from German state schools.`,
+      task3: `1) School & Friendships: Before 1933 Jewish children learned beside classmates in local schools; on 15 Nov 1938 they were banned from state schools altogether. 2) Football, Pools & Parks: Shut out of sports teams, swimming baths, cinemas, and park benches by exclusion signs. 3) 1935 Nuremberg Laws: Stripped German Jewish families of citizenship and equal legal protection. 4) After Kristallnacht (Nov 1938): Violent attacks on synagogues, homes, and shops showed staying had become physically dangerous, so parents searched urgently for rescue visas.`,
+      task4: `Viewpoint 1 (Jewish Pupil Shut Out of School, Nov 1938): Hurt, bewildered, and lonely standing outside closed school gates despite having done nothing wrong. Viewpoint 2 (Non-Jewish Classmate Inside): Troubled looking at a friend’s empty desk, realising how unfair adult laws have separated classmates.`,
+      task5_wagoll: `Jewish children’s everyday rights in Nazi Germany were taken away step by step between 1933 and 1938 before the war even began. Before 1933, Jewish families in cities like Berlin and Vienna lived settled lives, sharing schools and sports clubs. After Hitler took power in 1933, exclusion signs ("Jews are not served here") shut families out of shops, parks, and swimming pools, and the 1935 Nuremberg Laws stripped away their citizenship. Finally, after the violent Kristallnacht attacks in November 1938, Jewish children were banned from state schools altogether, forcing parents to seek urgent safety abroad.`,
     },
   },
 
   lesson_4: {
-    curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: One Small Suitcase — The Kindertransport, 1938–1939). Grounded in trauma-informed primary history safeguarding principles.`,
-    safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 4):</strong> Frame the Kindertransport honestly—celebrating rescue while acknowledging painful family separation without graphic detail. Avoid asking pupils "What would you pack if you never saw your parents again?"; instead ask historically grounded questions ("What did nine-year-old Vera pack in her suitcase and why?"). Be especially mindful of looked-after, adopted, refugee, or bereaved pupils.`,
+    curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: One Small Suitcase — The Kindertransport, 1938–1939).`,
+    safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 4):</strong> Celebrate rescue while acknowledging painful family separation gently. Ask historically grounded questions ("What did nine-year-old Vera pack and why?") rather than personal trauma prompts ("What if you never saw your parents again?").`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          '5-question retrieval check recapping Lesson 3 (1935 Nuremberg Laws, exclusion signs, Kristallnacht in November 1938, school bans, and why families sought safety).',
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Dual Source Enquiry',
-        activity:
-          'Investigate Source A (refugee children arriving in Britain wearing numbered tags) and Source B (Kindertransport railway and ferry map across Europe to Harwich and London).',
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          "Pupils complete Task 1 (Identity Tag Detective), Task 2 (Kindertransport Rescue Timeline), Task 3 (One Small Suitcase Packing Choice), and Task 4 (Thinking Heads).",
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Quiz',
-        activity:
-          'Pupils write their Task 5 Mission Challenge paragraph explaining why the Kindertransport brought both safety and heartbreak, then complete the 5-question quiz.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Retrieval check recapping Lesson 3 (pre-war Jewish life, 1935 Nuremberg Laws, Kristallnacht, and November 1938 school ban).' },
+      { time: '10–25 mins', phase: 'Dual Source Enquiry', activity: 'Investigate Source A (Kindertransport children arriving in Britain with numbered tags) and Source B (GIS Kindertransport Route Map via Bentheim, Hook of Holland, Harwich, and Liverpool Street).' },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: "Pupils complete Task 1 (Identity Tag & Map Detective), Task 2 (3-Stage Kindertransport Timeline), Task 3 (Vera's One Small Suitcase & Pass), and Task 4 (Thinking Heads). Optional Sheet 3 suitcase craft available." },
+      { time: '50–60 mins', phase: 'Plenary & Quiz', activity: 'Pupils write their Task 5 Mission Challenge paragraph and complete the retrieval check.' },
     ],
-    subjectPrimer: `Just days after Kristallnacht in November 1938, refugee charities appealed to Prime Minister Neville Chamberlain and the British Parliament. Britain agreed to waive normal visa delays for unaccompanied refugee children aged under seventeen, provided private sponsors guaranteed £50 per child (worth over £3,000 today). Parents were not allowed to travel with them. Between December 1938 and the outbreak of war in September 1939, nearly 10,000 mostly Jewish children travelled from Germany, Austria, Czechoslovakia, and Poland by train across the Dutch border at Bentheim, took the ferry from Hook of Holland to Harwich in Essex, and rode steam trains into London Liverpool Street Station. Nine-year-old Vera Löwyová (later Vera Schaufeld) left Prague in May 1939 carrying one small suitcase, an English porcelain doll, and a little autograph diary signed by her parents.`,
+    subjectPrimer: `Days after Kristallnacht in November 1938, Parliament agreed to admit unaccompanied refugee children aged under 17 quickly if sponsors promised a £50 guarantee per child, though parents were not given visas. Between December 1938 and August 1939, nearly 10,000 mostly Jewish children escaped from Berlin, Vienna, Prague, and Frankfurt across the Dutch border to Hook of Holland, sailed overnight to Harwich, and took boat trains to London Liverpool Street Station. Nine-year-old Vera Löwyová (later Vera Schaufeld) left Prague in May 1939 with one small suitcase, her porcelain doll, and an autograph diary signed by her parents.`,
     misconceptions: [
-      {
-        misconception: `Pupils confuse British evacuation (Operation Pied Piper) with the Kindertransport.`,
-        correction: `Draw a clear contrast: British evacuees moved inside Britain in September 1939 to escape air raids and most went home to their parents; Kindertransport children fled Nazi persecution in Europe BEFORE war started (Dec 1938–Aug 1939), spoke little or no English, and most never saw their parents again.`,
-      },
-      {
-        misconception: `Pupils assume the British government paid for the trains and let whole families enter together.`,
-        correction: `Explain that adult parents were refused visas under the scheme and private charities and British families had to raise the £50 guarantee for every child.`,
-      },
+      { misconception: `Pupils confuse British evacuation (Operation Pied Piper) with the Kindertransport.`, correction: `British evacuees moved inside the UK in Sept 1939 to escape air raids; Kindertransport children fled persecution across borders BEFORE war started (Dec 1938–Aug 1939), spoke little English, and most never saw their parents again.` },
+      { misconception: `Pupils assume the government paid for the trains and let parents travel too.`, correction: `Parents were refused visas under the scheme, and charities and British families had to guarantee £50 per child.` },
     ],
-    hingeQuestion: `Why did crossing the border into the Netherlands feel like the first moment of real safety for children on Kindertransport trains?`,
-    hingeGuidance: `Use the route map: while inside German-controlled territory, armed border guards searched suitcases and frightened children; once across the Dutch border, kind Dutch volunteers handed out hot cocoa, buns, and smiles before the ferry to Harwich.`,
+    hingeQuestion: `Using Source B (the Route Map), why did crossing the border at Bentheim into the Netherlands feel like the first real moment of safety?`,
+    hingeGuidance: `Inside Nazi-controlled territory, armed guards searched trains and suitcases; once across the Dutch border into the neutral Netherlands, kind volunteers welcomed the children with hot cocoa, buns, and reassurance before the ferry to Harwich.`,
     answers: {
-      task1: `1) Numbered Neck Tag: Worn on string around each child's neck showing their transport number and name so British helpers at Harwich and Liverpool Street could match children who spoke no English with their foster families. 2) What the Photo Shows: The children carry small suitcases and dolls safely in Britain, yet look tired and bewildered after leaving their parents behind.`,
-      task2: `Step 1: After Kristallnacht (November 1938), Parliament allows unaccompanied refugee children into Britain with a £50 sponsor guarantee. Step 2: Nine-year-old Vera Löwyová waves goodbye to her parents in Prague with one suitcase (May 1939). Step 3: The train crosses the Dutch border to safety and children sail from Hook of Holland to Harwich. Step 4: Trains pull into London Liverpool Street Station where foster families meet the children.`,
-      task3: `Vera's One Small Suitcase: Allowed only one small case and no money or valuables. Key items: 1) Warm coat, dresses, and sturdy shoes. 2) Family photograph of Mum, Dad, and Grandmother. 3) Vera's treasured English porcelain doll for comfort. 4) Her small autograph diary containing loving messages written by her parents in Czech.`,
-      task4: `Perspective 1 (Nine-Year-Old Vera on the Train): Heartbroken watching her parents grow smaller on Prague station platform, clutching her doll and diary, nervous about arriving in a country where she cannot yet speak English. Perspective 2 (British Foster Mother at Liverpool Street): Waiting warmly on the station platform, determined to make a frightened refugee child feel safe and welcome in a strange new home.`,
-      task5_wagoll: `The Kindertransport of 1938–1939 saved nearly 10,000 children's lives, yet it was also full of heartbreak for their families. After Kristallnacht in November 1938, Britain allowed unaccompanied refugee children in if a sponsor paid a £50 guarantee, but mothers and fathers were not allowed to come with them. Nine-year-old Vera Löwyová (later Vera Schaufeld) had to say goodbye to her parents at Prague station with just one suitcase, her porcelain doll, and an autograph diary, before travelling by train and ferry to Harwich and London Liverpool Street. Although kind foster families kept Vera safe in Britain, war broke out in September 1939 and most Kindertransport children never saw their parents again.`,
+      task1: `1) Numbered Neck Tags: Worn on string around each child’s neck so British helpers at Harwich and London Liverpool Street could safely match young children who spoke no English yet with their sponsors and foster families. 2) Crossing Into the Netherlands: Inside Nazi Germany armed guards inspected trains, so crossing the border at Bentheim meant leaving Nazi control behind and being greeted with hot cocoa and kindness by Dutch volunteers.`,
+      task2: `Stage 1 (Why Parliament allowed 10,000 children in): British MPs and charities were shocked by the violent Kristallnacht attacks in November 1938 and waived visa delays for under-17s with a £50 sponsor guarantee. Stage 2 (Why Vera’s parents sent her with one suitcase): Nazi rules allowed only one small case with no valuables, and parents were refused visas, so sending nine-year-old Vera alone was the only way to save her life. Stage 3 (How trains & ferries brought children to London): Sealed steam trains crossed Europe into the Netherlands to Hook of Holland, overnight ferries sailed to Harwich in Essex, and boat trains steamed into London Liverpool Street Station.`,
+      task3: `1) Slightly Larger Warm Clothes: Vera’s mother knew Vera was growing and did not know how long they would be apart. 2) Family Photograph: Kept precious faces of Mum, Dad, and Grandmother close in a strange country. 3) English Porcelain Doll: Familiar comfort object for a frightened 9-year-old travelling alone. 4) Signed Autograph Diary: Held her parents’ loving handwritten Czech messages, which Vera treasured all her life.`,
+      task4: `Viewpoint 1 (Nine-Year-Old Vera on the Train): Trying to be brave waving to Mum and Dad on Prague platform, clutching my doll and diary while wondering what England will be like. Viewpoint 2 (British Foster Mother at Liverpool Street): Smiling gently, using simple gestures, a warm meal, and a cosy bedroom to help a tired Czech-speaking child feel safe.`,
+      task5_wagoll: `Nearly 10,000 Kindertransport children travelled alone to safety in Britain between December 1938 and August 1939 after Parliament allowed under-17s in with a £50 sponsor guarantee following Kristallnacht. Because parents were not granted visas, nine-year-old Vera Löwyová (Vera Schaufeld) had to wave goodbye to her mother and father in Prague carrying just one small suitcase, her doll, and a signed diary. Travelling on sealed trains across the Dutch border, by overnight ferry from Hook of Holland to Harwich, and into London Liverpool Street Station brought life-saving safety alongside deep family heartbreak.`,
     },
   },
 
   lesson_5: {
-    curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: Rescuers & Upstanders, 1938–1939). Grounded in trauma-informed primary history safeguarding principles.`,
-    safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 5):</strong> Highlight practical moral courage and teamwork (Nicholas Winton, Babette Winton, Doreen Warriner, Trevor Chadwick, and Jewish parents) without turning history into a simplistic fairy tale—handle the cancelled 1 September 1939 train gently and factually without graphic speculation.`,
+    curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: Rescuers & Upstanders, 1938–1939).`,
+    safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 5):</strong> Highlight practical moral courage and teamwork across Prague and London, handling the stopped ninth train on 1 September 1939 factually and gently without graphic detail.`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          "5-question retrieval check recapping Lesson 4 (10,000 Kindertransport children, £50 guarantee, Vera's Prague journey, and Harwich/Liverpool Street).",
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Dual Source Enquiry',
-        activity:
-          "Examine Source A (Nicholas Winton holding a young child in Prague) and Source B (page from Winton's scrapbook of rescued children).",
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          "Pupils complete Task 1 (Scrapbook Detective), Task 2 (Prague Rescue Chain), Task 3 (The 50-Year Attic Secret), and Task 4 (Thinking Heads).",
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Quiz',
-        activity:
-          'Pupils write their Task 5 Mission Challenge paragraph explaining what makes someone an "upstander" and complete the 5-question quiz.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: "Retrieval check recapping Lesson 4 (Kristallnacht, £50 guarantee, Vera's suitcase, Hook of Holland, and Liverpool Street)." },
+      { time: '10–25 mins', phase: 'Dual Source Enquiry', activity: 'Examine Source A (Für Das Kind Kindertransport bronze sculpture at Liverpool Street) and Source B (1939 Stoke-on-Trent newspaper appeal pasted inside Nicholas Winton’s scrapbook).' },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: 'Pupils complete Task 1 (Scrapbook Appeal Detective), Task 2 (3-Stage Rescue Chain), Task 3 (Attic Secret & Upstanders), and Task 4 (Thinking Heads).' },
+      { time: '50–60 mins', phase: 'Plenary & Quiz', activity: 'Pupils write their Task 5 Mission Challenge paragraph and complete the retrieval check.' },
     ],
-    subjectPrimer: `Most early Kindertransport trains left Berlin and Vienna, leaving refugee children in Prague in terrible danger without an organised rescue scheme. In December 1938, a 29-year-old London stockbroker named Nicholas Winton cancelled his Swiss skiing holiday after a friend asked him to come to Prague. Shocked by freezing refugee camps, Winton set up a desk in his hotel dining room to take parents' applications. Returning to his day job in London, he worked every evening with his mother Babette, while British schoolteacher Trevor Chadwick and Doreen Warriner stayed in Prague facing Nazi secret police (Gestapo) checks and putting children onto trains. Between March and August 1939, eight trains brought 669 children from Prague to London. A ninth train for 1 September 1939 was stopped when Germany invaded Poland. Winton kept his scrapbook in his attic without seeking praise until 1988.`,
+    subjectPrimer: `In December 1938, 29-year-old London office worker Nicholas Winton cancelled his Swiss skiing holiday to visit refugee camps in Prague. Setting up a desk in the Hotel Alcron dining room, he listed thousands of endangered children. Back in London, Winton and his mother Babette placed newspaper photo appeals to find British foster homes and £50 guarantees, while schoolteacher Trevor Chadwick and Doreen Warriner organised eight trains in Prague—saving 669 children before war closed the borders on 1 September 1939. Winton kept his scrapbook quietly in his attic until 1988.`,
     misconceptions: [
-      {
-        misconception: `Pupils assume Nicholas Winton was a famous government minister with official power.`,
-        correction: `Clarify that Winton was an ordinary 29-year-old office worker who used his own holiday and evenings to write letters, print photo cards, and persuade officials and foster families to help.`,
-      },
-      {
-        misconception: `Pupils think Nicholas Winton rescued all 669 children single-handedly.`,
-        correction: `Highlight the teamwork: Doreen Warriner, schoolteacher Trevor Chadwick on the platforms in Prague, Babette Winton in London, and hundreds of British foster families who paid £50 guarantees and opened their homes.`,
-      },
+      { misconception: `Pupils assume Nicholas Winton was a powerful politician or worked alone.`, correction: `Winton was an ordinary 29-year-old clerk working evenings in London alongside his mother Babette, Doreen Warriner, Trevor Chadwick in Prague, and hundreds of British foster families.` },
     ],
-    hingeQuestion: `Why did Nicholas Winton need a team of helpers in both Prague and London for even a single train to leave safely?`,
-    hingeGuidance: `Look for pupils connecting both ends of the rescue chain: Trevor Chadwick and Doreen Warriner had to gather children and exit papers in Prague, while Winton and his mother in London had to find a named British foster home and £50 guarantee before the Home Office issued each visa.`,
+    hingeQuestion: `Why could neither London volunteers nor Prague volunteers have rescued the 669 children without the other?`,
+    hingeGuidance: `In London, Winton and Babette had to secure a named foster family and £50 Home Office permit for every child; in Prague, Chadwick and Warriner had to gather travel papers and get the children safely onto sealed trains.`,
     answers: {
-      task1: `1) Winton's Scrapbook: Contains small black-and-white identity photos, children's names, dates of birth, and the names and addresses of British foster families for the 669 rescued children. 2) Why Careful Records Mattered: Matched every child safely to a verified home in Britain and preserved proof of who they were so grown-up survivors could trace their story fifty years later.`,
-      task2: `Link 1: December 1938 — Nicholas Winton visits Prague instead of going skiing and records thousands of endangered children's details. Link 2: Spring–Summer 1939 — Winton and his mother find British foster families and £50 guarantees in London while Trevor Chadwick organises trains in Prague. Link 3: March–August 1939 — Eight trains carry 669 children safely to London. Link 4: 1 September 1939 — War breaks out and borders slam shut, stopping the ninth train.`,
-      task3: `1) Kept Quiet for 50 Years: Winton put the scrapbook in his attic after the war and got on with ordinary life because he did not help children to win medals or fame, and he felt deep sorrow for the 250 children on the ninth train that never left on 1 September 1939. 2) Upstander vs Bystander: An upstander steps forward to help when others are treated unfairly instead of looking away.`,
-      task4: `Perspective 1 (Trevor Chadwick on Prague Platform): Staying calm while armed guards watch the platform, checking every child's travel permit and comforting crying parents as the train doors close. Perspective 2 (Nicholas Winton in London): Working late into the night after his office job, writing letters to newspapers and chasing Home Office permits before war starts.`,
-      task5_wagoll: `Ordinary volunteers like Nicholas Winton and Trevor Chadwick rescued 669 children from Prague because they chose to be upstanders rather than bystanders. In December 1938, 29-year-old Nicholas Winton cancelled his skiing holiday to visit Prague and began listing endangered children in his hotel room. Back in London, he and his mother worked late every night finding British foster families and £50 guarantees, while teacher Trevor Chadwick stayed in Prague putting children safely onto eight trains before war closed the borders on 1 September 1939. Winton did not even talk about his attic scrapbook for fifty years, proving that ordinary people working together can save hundreds of lives.`,
+      task1: `1) Newspaper Appeals (Source B): Placing children’s photographs and urgent appeals in local British papers like Stoke-on-Trent reached ordinary families across Britain willing to offer a foster home and £50 guarantee. 2) Why Accurate Scrapbook Records Mattered: Ensured every arriving child matched a verified foster address in 1939, and fifty years later in 1988 allowed grown-up "Nicky’s Children" to trace how they had been rescued.`,
+      task2: `Stage 1 (Why Winton cancelled his ski holiday in Dec 1938): Friend Martin Blake asked him to come to Prague instead, where Winton saw families in freezing refugee camps and set up a rescue desk at his hotel. Stage 2 (How volunteers in Prague & London got children to safety): Winton and his mother Babette found British foster sponsors and £50 visas in London while Trevor Chadwick and Doreen Warriner organised 8 trains from Prague. Stage 3 (How the world discovered the scrapbook in 1988): Winton’s wife Grete found the 1939 scrapbook in their attic, leading to the famous BBC That’s Life! reunion with rescued survivors.`,
+      task3: `1) Fitting Rescue Around a Day Job: Worked at the London Stock Exchange by day, then typed Home Office letters and foster appeals late every evening. 2) Kept Quiet for 50 Years: He helped children out of moral duty rather than for fame, and felt lasting sorrow for the ninth train stopped on 1 September 1939. 3) Upstander: Someone who steps forward to help others facing unfairness or danger instead of looking away as a bystander. 4) British Foster Families: Without hundreds of ordinary families opening their homes and promising £50, the Home Office would not have issued visas.`,
+      task4: `Viewpoint 1 (Trevor Chadwick on Prague Platform): Keeping a steady voice while armed Gestapo guards watch, checking every visa stamp and comforting crying parents as the whistle blows. Viewpoint 2 (Nicholas Winton Late at Night in London): Every extra foster sponsor and Home Office permit completed tonight means another child reaches Britain before war slams borders shut.`,
+      task5_wagoll: `Ordinary volunteers rescued 669 children from Prague before war began through determined teamwork across two countries. After cancelling his skiing holiday in December 1938, 29-year-old Nicholas Winton listed endangered children at Prague’s Hotel Alcron, then worked every evening in London with his mother Babette placing newspaper appeals for British foster homes and £50 guarantees. Meanwhile, Doreen Warriner and schoolteacher Trevor Chadwick braved danger in Prague to put children onto eight trains before war broke out on 1 September 1939—showing what ordinary upstanders can achieve.`,
     },
   },
 
   lesson_6: {
     curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Home Front: The Blitz & Air Raid Defences, 1940–1941).`,
-    safeguardingNote: `<strong>Sensory &amp; Conflict-Sensitive Classroom Note (Enquiry 6):</strong> Be mindful of pupils who have experienced modern armed conflict, displacement, house fires, or sensory anxiety around loud alarms. Warn the class before playing any wartime siren audio clip, keep volume low, and emphasise how neighbours, ARP wardens, and firefighters worked together to keep people safe.`,
+    safeguardingNote: `<strong>Sensory &amp; Conflict-Sensitive Classroom Note (Enquiry 6):</strong> Warn the class before playing any wartime siren audio clip, keep volume low, and emphasise community teamwork and protection.`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          '5-question retrieval check recapping Lessons 1–5 (Blackout, evacuation reception areas, and pre-war rescue timelines).',
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Dual Source Enquiry',
-        activity:
-          'Examine Source A/B (Anderson garden shelter & families sheltering on Underground platforms) alongside the Map of Blitz Target Cities.',
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          'Pupils complete Task 1 (Shelter Detective), Task 2 (Night in the Blitz Timeline), Task 3 (Anderson Shelter Diagram & Kit), and Task 4 (Thinking Heads).',
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Quiz',
-        activity:
-          'Pupils write their Task 5 Mission Challenge paragraph explaining how families and wardens survived the Blitz, then complete the 5-question quiz.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Retrieval check recapping Lesson 5 (Nicholas Winton, Prague, Trevor Chadwick, 669 children, and 1988 scrapbook).' },
+      { time: '10–25 mins', phase: 'Dual Source Enquiry', activity: 'Examine Source A (family outside a soil-covered garden Anderson shelter) and Source B (Londoners sleeping on a deep Underground platform), alongside the GIS Map of Blitz Cities.' },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: 'Pupils complete Task 1 (Shelter Detective), Task 2 (3-Stage Blitz Timeline), Task 3 (Shelter Cutaway SVG & Night Survival Kit), and Task 4 (Thinking Heads).' },
+      { time: '50–60 mins', phase: 'Plenary & Quiz', activity: 'Pupils write their Task 5 Mission Challenge paragraph and complete the retrieval check.' },
     ],
-    subjectPrimer: `From 7 September 1940 ("Black Saturday") until May 1941, the German air force (Luftwaffe) launched the Blitz—from the German word Blitzkrieg ("lightning war"). London was bombed for 57 nights in a row, alongside major ports and factory cities including Coventry, Liverpool, Birmingham, Plymouth, Portsmouth, Glasgow (Clydebank), Hull, Bristol, and Belfast. Families with gardens half-buried corrugated steel Anderson shelters under 15 inches of soil, while families without gardens used indoor steel-mesh Morrison table cages or bought tickets to sleep on deep London Underground platforms. Above ground, ARP wardens, the Auxiliary Fire Service (AFS), and rooftop fire watchers tackled incendiary bombs and rescued trapped neighbours, as over 43,000 British civilians lost their lives.`,
+    subjectPrimer: `From 7 September 1940 ("Black Saturday") until May 1941, the Luftwaffe launched the Blitz—bombing London for 57 consecutive nights alongside major ports and industrial cities including Coventry, Liverpool, Birmingham, Plymouth, Portsmouth, Clydebank (Glasgow), Hull, Bristol, and Belfast. Households with gardens buried corrugated steel Anderson shelters under 15 inches of soil; families without gardens slept inside steel-mesh Morrison table cages (from 1941) or deep Underground stations, while ARP wardens and Auxiliary Firefighters battled blazes above.`,
     misconceptions: [
-      {
-        misconception: `Pupils often think the Blitz only happened in London.`,
-        correction: `Point to Coventry, Liverpool, Plymouth, Clydebank, Hull, Birmingham, and Belfast on the Blitz map—ports, shipyards, and aircraft factories across the whole UK were heavily bombed.`,
-      },
-      {
-        misconception: `Pupils assume every family had an Anderson shelter in a back garden.`,
-        correction: `Explain that inner-city flats and terraced houses often had concrete yards or no gardens at all, which is why steel indoor Morrison table shelters (from 1941) and Underground stations were so important.`,
-      },
+      { misconception: `Pupils often think the Blitz only hit London.`, correction: `Show on the GIS Blitz Map that Clydebank (Glasgow), Belfast, Liverpool, Hull, Coventry, Birmingham, and Plymouth were all heavily raided for their docks, shipyards, and Spitfire/shell factories.` },
+      { misconception: `Pupils assume every family could dig an Anderson shelter.`, correction: `City flats and terraced streets often had no gardens, making indoor steel Morrison cages and deep Tube platforms essential.` },
     ],
-    hingeQuestion: `Why did German bombers target port cities like Liverpool and factory cities like Coventry as fiercely as London?`,
-    hingeGuidance: `Look for pupils explaining that Liverpool's docks unloaded food and supplies from ships, while Coventry's factories built aircraft engines—destroying ports and factories aimed to stop Britain fighting.`,
+    hingeQuestion: `Why did German bombers target port cities like Liverpool and Clydebank and factory cities like Coventry alongside London?`,
+    hingeGuidance: `Liverpool and Clydebank unloaded and built Atlantic ships, while Coventry made aircraft engines—raiding ports and factories aimed to break Britain’s supplies and morale.`,
     answers: {
-      task1: `1) Shelter Protection: Deep Underground Tube platforms protected thousands of city dwellers under thick earth and concrete, while corrugated steel Anderson shelters cushioned blast waves and flying shrapnel in back gardens. 2) Everyday Life in Shelters: Families brought blankets, flasks of hot tea, knitting, and singing to keep spirits up during noisy night raids.`,
-      task2: `Step 1: Dusk falls, blackout curtains are drawn, and the rising-and-falling air raid siren warns bombers are approaching. Step 2: Families hurry into garden Anderson shelters, indoor Morrison cages, or Underground stations. Step 3: Bombs fall overhead while AFS firefighters and rooftop fire watchers put out incendiary blazes with sand and stirrup pumps. Step 4: The steady "All Clear" siren sounds at dawn and neighbours help clear rubble.`,
-      task3: `1) Anderson Shelter Design: Six curved corrugated steel sheets bolted together, sunk 3 feet into the garden and covered with at least 15 inches of earth (families often grew vegetables on top!). 2) Shelter Survival Kit: Warm woollen blankets, torch, flask of sweet tea, biscuits, first-aid tin, and storybooks or cards.`,
-      task4: `Perspective 1 (Child Inside a Damp Anderson Shelter): Shivering under blankets, listening to the whistle and thud of bombs outside, singing songs with Mum to block out the noise. Perspective 2 (Auxiliary Firefighter / Fire Watcher): Braving sparks and falling shrapnel in the dark street to pump water onto burning buildings and keep neighbours safe.`,
-      task5_wagoll: `During the Blitz of 1940–1941, ordinary British families protected themselves through clever shelters, strict air raid rules, and brave teamwork. When the wailing siren sounded across cities like London, Coventry, and Liverpool, families with gardens hurried into corrugated steel Anderson shelters covered with 15 inches of earth. Families without gardens slept inside steel-mesh Morrison table cages in their living rooms or deep down on London Underground station platforms. Meanwhile, ARP wardens and Auxiliary Firefighters risked their lives putting out incendiary fires above ground until the steady All Clear siren sounded at dawn.`,
+      task1: `1) How Anderson & Tube Shelters Protected Families: Curved corrugated steel buried under 15 inches of garden soil absorbed blast waves and flying shrapnel, while deep Underground Tube platforms lay tens of feet beneath London clay. 2) Why Not Everyone Built an Anderson Shelter & Keeping Spirits Up: Families in flats or paved terraces had no garden soil to dig into; underground, people shared blankets, WVS mugs of hot tea, and community singing.`,
+      task2: `Stage 1 (Why Hitler launched The Blitz in Sept 1940): After failing to defeat the RAF in the Battle of Britain, Hitler ordered night raids on London, ports, and factories to break British morale and war production. Stage 2 (How Anderson & Morrison shelters protected families): Garden Anderson shelters used curved steel under 15 inches of earth against blasts, while indoor steel-topped Morrison cages shielded sleepers if upstairs ceilings collapsed. Stage 3 (Tube stations & rooftop teams): Up to 177,000 Londoners slept safely on Tube bunks below while ARP wardens, fire watchers, and Auxiliary Firefighters tackled incendiary bombs above.`,
+      task3: `1) 15 Inches of Garden Soil: Thick earth cushioned blast shockwaves and stopped sharp metal shrapnel (and families even grew vegetables on top!). 2) Indoor Morrison Cage: Its thick steel tabletop supported falling brickwork if upper floors collapsed during a raid. 3) Blankets, Hot Tea & Biscuits: Sunken garden shelters were freezing and damp on winter nights. 4) Torch, First-Aid Tin & Games: Blackout rules meant pitch darkness, and quiet card games, knitting, or songs calmed frightened children during long raids.`,
+      task4: `Viewpoint 1 (Child in a Garden Anderson Shelter): Shivering under woollen blankets listening to distant thuds, feeling braver singing together with Mum by torchlight. Viewpoint 2 (Auxiliary Firefighter / Fire Watcher): Braving smoke, sparks, and falling shrapnel with sand buckets and hoses so incendiary fires do not spread down the street.`,
+      task5_wagoll: `British families kept safe during the Blitz of 1940–1941 through clever shelter engineering and brave community teamwork. When the wailing siren sounded across cities from London to Coventry, Liverpool, and Clydebank, families with gardens hurried into corrugated steel Anderson shelters buried under 15 inches of blast-absorbing soil. Families without gardens slept inside strong steel-mesh Morrison table cages indoors or on deep London Underground platforms, while ARP wardens and Auxiliary Firefighters risked their lives fighting fires until the All Clear sounded at dawn.`,
     },
   },
 
   lesson_7: {
     curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Home Front: Rationing & Dig for Victory, 1940–1945).`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          '5-question retrieval check recapping Lesson 6 (7 September 1940, Anderson vs Morrison shelters, Coventry/Liverpool, and All Clear sirens).',
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Dual Source Enquiry',
-        activity:
-          'Investigate Source A/C (Ration Books & the Dig for Victory poster) alongside Source B (Atlantic Convoy & U-Boat Map).',
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          'Pupils complete Task 1 (Ration & Poster Detective), Task 2 (Feeding Britain Timeline), Task 3 (Weekly Ration Ledger & Woolton Pie Menu), and Task 4 (Thinking Heads).',
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Quiz',
-        activity:
-          'Pupils write their Task 5 Mission Challenge paragraph explaining why rationing meant "fair shares for all" and complete the 5-question quiz.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Retrieval check recapping Lesson 6 (Black Saturday 7 Sept 1940, Anderson & Morrison shelters, Tube platforms, and Blitz cities).' },
+      { time: '10–25 mins', phase: 'Dual Source Enquiry', activity: 'Investigate Source A (1940 Ministry of Food Ration Book) and Source B (Dig for Victory poster), alongside the GIS Atlantic Lifeline Map.' },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: 'Pupils complete Task 1 (Ration Book & Poster Detective), Task 2 (3-Stage Rationing Timeline), Task 3 (1942 Weekly Ration Plate SVG & Wartime Menu), and Task 4 (Thinking Heads).' },
+      { time: '50–60 mins', phase: 'Plenary & Quiz', activity: 'Pupils write their Task 5 Mission Challenge paragraph and complete the retrieval check.' },
     ],
-    subjectPrimer: `Before 1939, island Britain imported more than two-thirds of its food—around 55 million tons a year—by merchant ship across the oceans. During the Battle of the Atlantic, German U-boat submarines hunted merchant convoys to starve Britain into surrender. In January 1940, the Ministry of Food introduced rationing using coupon books (buff for adults, green with extra milk and vitamins for expectant mothers and children under five, blue for older children). Money alone could not buy rationed bacon, butter, or sugar without coupons. At the same time, the "Dig for Victory" campaign turned over 1.4 million allotments, parks, school fields, and even the Tower of London moat into vegetable patches. Families cooked inventive dishes like Lord Woolton Pie (made from carrots, potatoes, swede, and oatmeal pastry) and dried egg omelettes.`,
+    subjectPrimer: `Before 1939, island Britain imported over two-thirds of its food across the Atlantic. When German U-boats attacked merchant convoys, the Ministry of Food introduced coupon rationing in January 1940 under "Fair Shares for All" (buff books for adults, green priority books with extra milk and vitamins for expectant mothers and toddlers). Meanwhile, "Dig for Victory" turned 1.4 million allotments, parks, and school fields into unrationed vegetable patches.`,
     misconceptions: [
-      {
-        misconception: `Pupils assume British children starved and became less healthy under rationing.`,
-        correction: `Surprise pupils with the historical evidence: because sweets and fats were limited, vegetables were plentiful, and poor families received guaranteed rations plus free milk and cod liver oil, British children grew taller and healthier than in the 1930s!`,
-      },
-      {
-        misconception: `Pupils think vegetables and potatoes were heavily rationed just like sugar and bacon.`,
-        correction: `Clarify that home-grown vegetables and potatoes remained unrationed during the war—which is why "Dig for Victory" allotments were so helpful for filling hungry stomachs.`,
-      },
+      { misconception: `Pupils assume British children grew weaker and less healthy under rationing.`, correction: `With guaranteed fair rations, less sugar, plenty of home-grown vegetables, and free milk and cod liver oil, British children actually grew taller and healthier than before the war!` },
+      { misconception: `Pupils think home-grown potatoes and carrots were rationed.`, correction: `Fresh garden vegetables and potatoes stayed unrationed throughout the war.` },
     ],
-    hingeQuestion: `Looking at the map of Atlantic ship convoys, how did planting potatoes in a British back garden help save sailors' lives at sea?`,
-    hingeGuidance: `Guide pupils to link home allotments with ocean shipping: every sack of potatoes and carrots grown in Britain freed up space on merchant ships for fuel and equipment, meaning fewer sailors had to risk crossing U-boat danger zones.`,
+    hingeQuestion: `How did growing potatoes and carrots in a British back garden help protect merchant sailors crossing the Atlantic Ocean?`,
+    hingeGuidance: `Every ton of food grown at home freed up cargo space on ships and meant fewer sailors had to risk crossing U-boat wolf-pack danger zones.`,
     answers: {
-      task1: `1) Ration Book & Dig for Victory Poster: Shopkeepers clipped or stamped weekly coupons so rich families could not buy up all the food, while the poster shows even a young child with a garden spade helping grow vegetables. 2) Why Fair Shares Mattered: Kept everyone fed fairly and stopped food running out in poorer neighbourhoods.`,
-      task2: `Step 1: German U-boats attack merchant ships bringing imported food across the Atlantic Ocean. Step 2: Ministry of Food introduces ration books in January 1940 (starting with bacon, butter, and sugar). Step 3: Families dig up lawns, parks, and school fields for "Dig for Victory" vegetable allotments. Step 4: Home cooks invent wartime recipes like Lord Woolton Pie and carrot biscuits.`,
-      task3: `1) Typical Weekly Adult Ration: 4oz bacon/ham, 2oz butter, 2oz cheese, 4oz margarine, 8oz sugar, 2oz tea, and 1 fresh egg per week (plus dried egg powder). 2) Wartime Menu: Vegetable soup, Lord Woolton Pie with potatoes and carrots, and carrot pudding—nutritious meals using unrationed garden produce.`,
-      task4: `Perspective 1 (Shopkeeper / Grocer): Carefully snipping coupons from customers' registered ration books and explaining politely when bananas or sweets are unavailable. Perspective 2 (Parent Cooking at Home): Queuing outside shops with a basket, tending cabbages on the allotment, and mashing carrots and parsnips to feed growing children.`,
-      task5_wagoll: `The British government rationed food and asked families to "Dig for Victory" because before the war Britain imported over two-thirds of its food by sea, and German U-boat submarines were sinking merchant ships in the Atlantic. From January 1940, everyone had to register a ration book with local shops so rich and poor families received the same fair share, such as 8oz of sugar, 2oz of butter, and just 1 fresh egg per week. Because vegetables were not rationed, families dug up flowerbeds and public parks to grow over a million allotments of potatoes and carrots, keeping British children healthy throughout the war.`,
+      task1: `1) Coupons in Source A: Shopkeepers snipped or stamped dated coupons for every rationed item, so wealthy shoppers could not buy extra bacon, butter, or sugar without coupons. 2) Source B ("Dig for Victory" Poster): Showing a young child in a sunhat proudly carrying a spade and hoe persuaded everyone—even schoolchildren—that growing vegetables at home directly helped win the war.`,
+      task2: `Stage 1 (Why U-boat attacks forced Britain to ration food): Britain imported over two-thirds of its food by sea, and German submarines were sinking merchant ships in the Atlantic. Stage 2 (How ration books & coupons ensured fair shares): Every citizen registered with local shops and used weekly coupons (e.g. 1 fresh egg, 2oz butter, 4oz bacon) so rich and poor received equal shares. Stage 3 (How Dig for Victory helped children grow healthier): Families planted 1.4 million unrationed vegetable allotments and Priority green books gave toddlers extra milk, orange juice, and vitamins.`,
+      task3: `1) Baking with 1 Egg & 2oz Butter: Cooks reconstituted tins of dried egg powder with water and grated naturally sweet carrots into cakes and puddings instead of sugar and fat. 2) Digging Up Lawns & Parks: Fresh vegetables and potatoes were unrationed and filled hungry stomachs while saving ship space. 3) Lord Woolton Pie: Chopped carrots, potatoes, cauliflower, and swede baked under oatmeal pastry instead of rationed beef. 4) Sample 1942 Dinner: Allotment leek & potato soup, Lord Woolton vegetable pie, and steamed carrot sponge pudding.`,
+      task4: `Viewpoint 1 (Local Corner Grocer): Clipping every registered coupon book strictly and fairly guarantees poorer families down the road still get their weekly share of butter, bacon, and tea. Viewpoint 2 (Parent Tending an Allotment): Combining small weekly meat and cheese rations with baskets of home-grown potatoes, cabbages, and carrots keeps my children full and healthy.`,
+      task5_wagoll: `Britain rationed food from January 1940 and asked families to "Dig for Victory" because the island imported over two-thirds of its food by ship and German U-boats were attacking Atlantic convoys. Registered coupon books guaranteed "Fair Shares for All"—such as 1 fresh egg, 2oz of butter, and 4oz of bacon per adult each week—so wealthy shoppers could not buy everything. Meanwhile, growing unrationed potatoes and carrots across 1.4 million allotments saved vital ship space and helped British children grow up healthier.`,
     },
   },
 
   lesson_8: {
     curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Home Front: Women's Wartime Work, 1941–1945).`,
-    safeguardingNote: `<strong>Classroom Framing Note (Enquiry 8):</strong> When explaining why munitions workers were nicknamed "Canary Girls", describe the yellow skin staining from TNT powder factually as an example of tough industrial conditions rather than dwelling on graphic factory injuries, and highlight the skill and pride of women across Britain and the wider Empire.`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          '5-question retrieval check recapping Lesson 7 (U-boats, January 1940 rationing, Dig for Victory, and Lord Woolton Pie).',
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Visual & Poster Enquiry',
-        activity:
-          'Examine the war artist watercolour of Women’s Land Army workers resting beside a haystack with pitchforks and wartime factory photographs.',
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          'Pupils complete Task 1 (Source Detective), Task 2 (Women Mobilised Timeline), Task 3 (Land Girls, Lumberjills & Canary Girls Roles), and Task 4 (Thinking Heads).',
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Quiz',
-        activity:
-          'Pupils write their Task 5 Mission Challenge paragraph explaining how women kept Britain fighting and complete the 5-question quiz.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Retrieval check recapping Lesson 7 (Atlantic imports, January 1940 rationing, 1.4 million allotments, and Woolton Pie).' },
+      { time: '10–25 mins', phase: 'Visual Source Enquiry', activity: 'Examine Source A (wartime watercolour of Women’s Land Army harvest workers) and Source B (1942 photograph of women inspecting artillery shells).' },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: 'Pupils complete Task 1 (Visual Source Detective), Task 2 (3-Stage Mobilisation Timeline), Task 3 (Four Wartime Role Badges SVG), and Task 4 (Thinking Heads).' },
+      { time: '50–60 mins', phase: 'Plenary & Quiz', activity: 'Pupils write their Task 5 Mission Challenge paragraph and complete the retrieval check.' },
     ],
-    subjectPrimer: `With millions of men away in the armed forces, Britain faced severe shortages of farmworkers, engineers, and factory staff. In December 1941, Parliament passed the National Service Act (No. 2), making Britain the first country in the war to conscript unmarried women aged 20–30 into vital war work or the auxiliary services. Over 80,000 women joined the Women's Land Army ("Land Girls"), ploughing fields, milking cows at dawn, and harvesting crops, while the Women's Timber Corps ("Lumberjills") felled trees for coal-mine pit props and telegraph poles. Nearly a million women worked in munitions factories filling explosive shells—nicknamed "Canary Girls" because toxic TNT powder turned their skin and hair bright yellow—while hundreds of thousands served in the ATS (operating searchlights and anti-aircraft predictors), WAAF, and WRNS.`,
+    subjectPrimer: `With millions of men away in the armed forces, Parliament passed the National Service Act in December 1941 calling up unmarried women aged 20–30 for essential war work. Over 80,000 Land Girls ploughed fields and milked cows, Lumberjills in the Women’s Timber Corps felled trees for coal-mine pit props, nearly a million women made shells and aircraft ("Canary Girls"), 168 ATA women pilots ferried Spitfires and Lancaster bombers, and hundreds of thousands served in the ATS, WAAF, and WRNS.`,
     misconceptions: [
-      {
-        misconception: `Pupils assume Land Girls only did light gardening in sunny weather.`,
-        correction: `Explain that farm and forest work meant 48-to-50-hour weeks in winter mud and frost: lifting heavy milk churns, driving tractors, clearing ditches, catching farm rats, and sawing tall pine trees as Lumberjills.`,
-      },
-      {
-        misconception: `Pupils think all women chose war work purely as volunteers.`,
-        correction: `While millions volunteered proudly from 1939, from December 1941 unmarried women aged 20–30 were legally called up (conscripted) and chose between farming, factory engineering, or uniformed auxiliary branches.`,
-      },
+      { misconception: `Pupils think all women volunteered informally or only did light chores.`, correction: `From December 1941 unmarried women aged 20–30 were legally conscripted into demanding, skilled industrial, agricultural, and technical roles.` },
     ],
-    hingeQuestion: `Why did Parliament pass a law in December 1941 calling up women aged 20 to 30 for war work?`,
-    hingeGuidance: `Look for pupils explaining that millions of men were away fighting overseas, so factories making Spitfire planes and farms growing Britain's food would have ground to a halt without millions of women stepping into those skilled jobs.`,
+    hingeQuestion: `Why did Parliament take the historic step of calling up unmarried women aged 20 to 30 in December 1941?`,
+    hingeGuidance: `Millions of men were fighting overseas, so without women stepping into farms, forests, shell factories, and radar stations, Britain’s food supply and air defence could not continue.`,
     answers: {
-      task1: `1) Land Army Watercolour & Recruitment Posters: Shows Land Girls in practical jumpers, breeches, boots, and headscarves resting briefly by a haystack with pitchforks after heavy harvest labour. 2) Why Their Work Mattered: Replaced male farmworkers called into the army so Britain could harvest grain, milk, and timber during the U-boat blockade.`,
-      task2: `Step 1: Millions of British men join the army, navy, and air force, leaving farms and factories short of workers. Step 2: Volunteers join the revived Women's Land Army, factories, and nursing services (1939–1940). Step 3: December 1941 — National Service Act calls up unmarried women aged 20–30. Step 4: Over 7 million British women work across farms, forests, factories, and uniformed services by 1943.`,
-      task3: `1) Land Girls & Lumberjills: 80,000 WLA farmworkers ploughed fields and milked herds; Timber Corps Lumberjills felled trees for pit props. 2) Canary Girls & Engineers: Welded Spitfire wings and packed explosive artillery shells in munitions factories where TNT turned skin yellow. 3) ATS, WAAF & WRNS: Operated radar screens, searchlights, dispatch motorcycles, and naval communications.`,
-      task4: `Perspective 1 (Canary Girl in a Munitions Factory): Working long noisy night shifts wearing hairnets and overalls, careful with explosive powder that stains skin yellow, proud to supply the troops. Perspective 2 (City Office Clerk Turned Land Girl): Waking at 5:00am with blistered hands in muddy fields, proud to drive a tractor and feed the country.`,
-      task5_wagoll: `Women kept Britain fighting during the Second World War by taking on tough, skilled jobs across farms, forests, factories, and the armed services. After millions of men left to fight overseas, Parliament passed the December 1941 National Service Act calling up unmarried women aged 20 to 30. Over 80,000 Land Girls ploughed fields and harvested crops, while Lumberjills cut timber for coal mines. In dangerous munitions factories, "Canary Girls" packed explosive shells even though toxic powder turned their skin yellow, and women in the ATS and WAAF operated searchlights and radar. Without women's hard work, Britain could not have fed its people or built its planes.`,
+      task1: `1) Practical Clothes & Tools (Sources A & B): Land Girls wear sturdy jumpers, breeches, and boots with pitchforks for heavy harvest labour; munitions workers wear protective overalls and hair coverings while measuring metal shells with precision gauges. 2) Why Britain Needed Millions of Women: With millions of men away in the forces, women harvested food during the U-boat blockade and built the shells, Spitfires, and radar networks defending Britain.`,
+      task2: `Stage 1 (Why Parliament called up unmarried women in Dec 1941): Millions of men were away fighting, creating an urgent shortage of workers on farms, in factories, and in defence services. Stage 2 (How Land Girls & Lumberjills kept Britain supplied): Over 80,000 Land Girls ploughed fields, milked cows, and harvested grain, while Lumberjills felled forest pine trees for coal-mine pit props and railways. Stage 3 (Canary Girls & ATA women pilots): Canary Girls packed explosive TNT shells in dangerous munitions factories, while 168 ATA female pilots ferried new Spitfires and four-engine bombers from factories to RAF airfields.`,
+      task3: `1) Women’s Land Army (80,000): Milking cows before dawn, driving tractors, ploughing clay fields, digging ditches, and harvesting crops. 2) Lumberjills (Timber Corps): Sawing down tall pine trees so coal mines had wooden pit props to stay open. 3) Canary Girls: Toxic yellow TNT powder stained their skin and hair bright yellow, and a single metal spark could cause an explosion. 4) ATS, WAAF, WRNS & ATA: Operated coastal radar screens and anti-aircraft searchlights, crewed naval bases, and ferried warplanes.`,
+      task4: `Viewpoint 1 ("Canary Girl" on Night Shift): Wearing wooden-soled shoes with no metal hairpins so nothing sparks near TNT powder—my hands and hair are stained yellow, but every shell protects our troops. Viewpoint 2 (Former Typist Turned Land Girl): My hands are calloused from tractor steering wheels and frosty 5am milking, yet I feel proud seeing fields of wheat ready for harvest.`,
+      task5_wagoll: `Women’s work on farms, in forests, and in factories kept Britain fighting throughout the Second World War. After Parliament passed the December 1941 National Service Act calling up unmarried women aged 20 to 30, over 80,000 Land Girls harvested food and Lumberjills cut timber for coal mines. In munitions factories, nearly a million women including "Canary Girls" filled artillery shells despite dangerous TNT powder, while women in the ATS, WAAF, and ATA operated radar and ferried Spitfires to RAF airfields.`,
     },
   },
 
   lesson_9: {
     curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Home Front: Bletchley Park & Secret Intelligence, 1941–1945).`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          '5-question retrieval check recapping Lesson 8 (December 1941 call-up, Land Girls, Lumberjills, and Canary Girls).',
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Dual Source Enquiry',
-        activity:
-          "Examine Source A (German Enigma cipher machine) and Source B (Alan Turing and Gordon Welchman's Bombe machine operated by Wrens at Bletchley Park).",
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          'Pupils complete Task 1 (Bombe Detective), Task 2 (Secret Signal Pipeline), Task 3 (How Enigma & Secrecy Worked), and Task 4 (Thinking Heads).',
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Quiz',
-        activity:
-          'Pupils write their Task 5 Mission Challenge paragraph explaining how Bletchley Park helped shorten the war and complete the 5-question quiz.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Retrieval check recapping Lesson 8 (December 1941 National Service Act, Land Girls, Lumberjills, Canary Girls, and ATA pilots).' },
+      { time: '10–25 mins', phase: 'Dual Source Enquiry', activity: "Examine Source A (3-rotor German Enigma machine) and Source B (Alan Turing and Gordon Welchman's spinning Bombe machine operated by Wrens at Bletchley Park)." },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: "Pupils complete Task 1 (Machine Detective), Task 2 (3-Stage Signal Pipeline), Task 3 (Station X Cipher Wheel — decoding 'HUT EIGHT' — & 30-Year Secret), and Task 4 (Thinking Heads)." },
+      { time: '50–60 mins', phase: 'Plenary & Quiz', activity: 'Pupils write their Task 5 Mission Challenge paragraph and complete the retrieval check.' },
     ],
-    subjectPrimer: `At Bletchley Park ("Station X"), a Victorian country estate in Buckinghamshire, Britain ran its top-secret wartime codebreaking centre. German commanders sent radio orders scrambled by the portable Enigma cipher machine, whose rotating wheels and plugboard wires created over 158 million million million possible settings—and German operators changed those settings every midnight! Building on earlier breakthroughs shared by Polish mathematicians, Alan Turing and Gordon Welchman designed the electromechanical Bombe machine, whose spinning drums rapidly ruled out impossible settings each morning. Around three-quarters of Bletchley Park's 10,000 staff were women (including Wrens of the WRNS and civilian clerks). Everyone signed the Official Secrets Act and kept silent for thirty years so no enemy ever knew Enigma had been broken.`,
+    subjectPrimer: `At Bletchley Park ("Station X") in Buckinghamshire, Britain ran its top-secret codebreaking headquarters. German forces scrambled radio messages on portable Enigma machines with over 158 million million million settings that reset every midnight. Building on Polish maths breakthroughs, Alan Turing and Gordon Welchman designed the electromechanical Bombe machine. Around 75% of Bletchley’s 10,000 staff were women, and everyone kept total silence for 30 years under the Official Secrets Act.`,
     misconceptions: [
-      {
-        misconception: `Pupils often picture Alan Turing working completely alone in a shed with pencil and paper.`,
-        correction: `Explain that Bletchley Park grew to around 10,000 people—around 75% of them women—building on Polish maths breakthroughs, wireless Y-station listeners, engineers, and Wrens running Bombe machines in shifts.`,
-      },
-      {
-        misconception: `Pupils assume Bletchley Park codebreakers were celebrated with parades straight after VE Day in 1945.`,
-        correction: `Explain that because they signed the Official Secrets Act, codebreakers could not even tell their parents, husbands, or wives what they had done until the secret became public in the 1970s.`,
-      },
+      { misconception: `Pupils picture Alan Turing working completely alone.`, correction: `Bletchley Park grew to 10,000 staff—around 7,500 of them women (Wrens and clerks)—building on Polish breakthroughs and wireless Y-station listeners.` },
     ],
-    hingeQuestion: `Why would the whole Enigma breakthrough have failed if just one worker at Bletchley Park had boasted about their job?`,
-    hingeGuidance: `Ensure pupils grasp that if German commanders had discovered Britain could read Enigma messages, they would immediately have replaced or redesigned their cipher machines, leaving Allied ships in the dark again.`,
+    hingeQuestion: `What would have happened if just one Bletchley Park worker had boasted in a café that Britain could read Enigma?`,
+    hingeGuidance: `Germany would immediately have changed its cipher machines, blinding Allied commanders and putting Atlantic food convoys back in mortal danger.`,
     answers: {
-      task1: `1) The Bombe Machine: A large cabinet filled with rows of spinning metal drums designed by Alan Turing and Gordon Welchman to test Enigma wheel positions automatically. 2) Why Humans Needed a Machine: Because Enigma had over 158 million million million settings and reset at midnight every 24 hours, checking by hand would have taken far too long.`,
-      task2: `Step 1: German commanders type secret U-boat or army orders into an Enigma machine and send Morse code by radio. Step 2: British wireless Y-stations listen in, write down the scrambled letters, and rush them to Bletchley Park. Step 3: Mathematicians and Wrens run Bombe machines in wooden huts to find that day's Enigma key. Step 4: Decoded "Ultra" intelligence helps the Royal Navy steer food convoys safely past U-boats.`,
-      task3: `1) Inside Enigma: Pressing a letter key sent electricity through spinning numbered rotors and front plugboard wires so a completely different letter lit up on the lampboard. 2) Official Secrets Act: All 10,000 staff promised total silence—even to their own families—so Germany never suspected its code was broken.`,
-      task4: `Perspective 1 (Alan Turing in Hut 8): Focused on solving logical puzzles under huge time pressure before midnight resets, designing machines to help save sailors at sea. Perspective 2 (Young Wren Operating a Bombe): Working 8-hour shifts beside clattering hot metal drums, unable to tell her parents why her "typing job" is so important.`,
-      task5_wagoll: `Secret codebreakers at Bletchley Park helped shorten the Second World War by cracking Germany's Enigma cipher and protecting Allied ships and soldiers. Every midnight, German operators reset their Enigma machines across millions of millions of possible combinations, making them impossible to solve quickly by hand. Mathematicians Alan Turing and Gordon Welchman designed the spinning Bombe machine to hunt down the right daily settings, while thousands of women—who made up three-quarters of Bletchley's 10,000 staff—ran the machines and logged secret messages. Because everyone obeyed the Official Secrets Act, Allied leaders could steer Atlantic food convoys safely away from U-boat wolf packs.`,
+      task1: `1) Why Pencil & Paper Alone Couldn’t Crack Enigma in Time: Enigma had over 158 million million million possible settings and German operators changed the key every midnight, giving codebreakers less than 24 hours. 2) How the Bombe Helped (Source B): Its rows of spinning electrical drums tested thousands of wheel combinations automatically using clues like German weather reports to rule out wrong settings each morning.`,
+      task2: `Stage 1 (Why German Enigma was almost impossible to crack): Moving wired rotors and plugboard cables created 158 million million million combinations that reset at midnight every night. Stage 2 (How Alan Turing’s Bombe helped at Station X): Built on Polish maths clues, spinning Bombe machines rapidly eliminated impossible rotor settings to find that day’s Enigma key. Stage 3 (How 7,500 women & strict secrecy shortened the war): Women ran Bombe rooms and wireless stations round the clock while keeping total silence under the Official Secrets Act, steering convoys away from U-boats and shortening the war by up to two years.`,
+      task3: `Cipher Wheel Solution: I V U  F J H I U = H U T  E I G H T ("HUT EIGHT" — Alan Turing’s Naval Enigma hut!). 1) Pressing the Same Key Twice: Each key press stepped the rotors forward a notch, creating a brand-new electrical path so pressing A twice lit up two different letters. 2) Giant Team Effort (75% Women): Needed wireless listeners, engineers, mathematicians, and thousands of Wrens and clerks working 24-hour shifts. 3) Official Secrets Act: If Germany suspected Enigma was broken, it would replace the cipher immediately. 4) Silent for 30 Years: Wartime oaths remained classified until the 1970s, so workers never even told their parents.`,
+      task4: `Viewpoint 1 (Alan Turing in Hut 8): Every hour saved finding today’s Naval Enigma key before midnight means Atlantic merchant ships can dodge U-boat wolf packs tonight. Viewpoint 2 (Young Wren Operating a Bombe): My ears ring from clattering metal drums on night shift, yet when I go home on leave I simply smile and say I do dull office filing.`,
+      task5_wagoll: `Secret codebreakers at Bletchley Park helped win and shorten the Second World War by cracking Germany’s Enigma cipher. Because Enigma had 158 million million million settings and reset every midnight, Alan Turing and Gordon Welchman designed spinning Bombe machines to find the daily key rapidly. Around 7,500 women—three-quarters of Station X’s 10,000 staff—operated machines and wireless stations while keeping total silence under the Official Secrets Act, allowing "Ultra" warnings to steer Atlantic food convoys safely past U-boats.`,
     },
   },
 
   lesson_10: {
     curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Home Front: VE Day, Rebuilding & Remembrance, 1945).`,
-    safeguardingNote: `<strong>Bereavement &amp; Service-Family Sensitivity Note (Enquiry 10):</strong> Handle discussions of wartime bereavement ("empty chairs at the street party") gently and pastorally, particularly if any pupils in the class have experienced recent family bereavement or have close relatives serving in the armed forces today.`,
+    safeguardingNote: `<strong>Bereavement &amp; Service-Family Sensitivity Note (Enquiry 10):</strong> Handle discussions of wartime bereavement ("empty chairs at the table") gently, particularly for bereaved pupils or service families.`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          '5-question retrieval check recapping Lesson 9 (Bletchley Park, Enigma, Alan Turing’s Bombe, and the Official Secrets Act).',
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Archival Photograph Enquiry',
-        activity:
-          'Project photographs of cheering crowds in Trafalgar Square and children waving Union Flags beside bomb-damaged London streets on 8 May 1945.',
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          'Pupils complete Task 1 (VE Day Photo Detective), Task 2 (May 1945 Peace Timeline), Task 3 (Street Party & Rebuilding Ledger), and Task 4 (Thinking Heads).',
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Quiz',
-        activity:
-          'Pupils write their Task 5 Mission Challenge paragraph explaining why VE Day mixed joy with sorrow and complete the 5-question quiz.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Retrieval check recapping Lesson 9 (Enigma, Station X, Alan Turing’s Bombe, 75% women staff, and two years shortened).' },
+      { time: '10–25 mins', phase: 'Archival Photograph Enquiry', activity: 'Examine Source A (jubilant crowds on Whitehall on 8 May 1945) and Source B (children smiling at a neighbourhood VE Day street party beside bombed buildings).' },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: 'Pupils complete Task 1 (VE Day Photo Detective), Task 2 (3-Stage Peace & Rebuilding Timeline), Task 3 ("Laughter Through Tears" & Milestone Ribbon SVG), and Task 4 (Thinking Heads).' },
+      { time: '50–60 mins', phase: 'Plenary & Quiz', activity: 'Pupils write their Task 5 Mission Challenge paragraph and complete the retrieval check.' },
     ],
-    subjectPrimer: `Following Nazi Germany's unconditional surrender on 7 May 1945, Tuesday 8 May 1945 was declared Victory in Europe (VE) Day. At 3:00pm, Prime Minister Winston Churchill broadcast to the nation over BBC radio that the war in Europe was won, and King George VI, Queen Elizabeth, and Princesses Elizabeth and Margaret waved to cheering crowds from Buckingham Palace balcony. Across Britain, blackout curtains came down, bonfires were lit, and neighbours carried kitchen tables into streets still scarred by bomb rubble, pooling saved sugar and jam coupons to give children street parties. Yet feelings were deeply mixed: over 450,000 British service personnel and civilians had died, rationing continued until 1954, millions of homes needed rebuilding, and fighting against Japan in Asia and the Pacific continued until VJ Day on 15 August 1945.`,
+    subjectPrimer: `After Germany surrendered unconditionally, Tuesday 8 May 1945 became Victory in Europe (VE) Day. At 3:00pm, Winston Churchill broadcast peace in Europe on BBC radio and waved beside King George VI on Buckingham Palace balcony. Blackout curtains came down for street parties, yet over 450,000 British lives had been lost, fighting continued in Asia until VJ Day (15 August 1945), Britain founded the free NHS in July 1948, and food rationing lasted until July 1954.`,
     misconceptions: [
-      {
-        misconception: `Pupils assume VE Day on 8 May 1945 ended all fighting everywhere in the world—and ended rationing straight away.`,
-        correction: `Clarify two key facts: first, fighting in the Pacific continued for three more months until VJ Day (15 August 1945); second, food rationing in Britain did not fully end until July 1954!`,
-      },
-      {
-        misconception: `Pupils think everyone on VE Day felt pure excitement with no sadness.`,
-        correction: `Help pupils empathise with bereaved families whose fathers, brothers, sons, daughters, or neighbours had died, and servicemen still fighting far away in Asia.`,
-      },
+      { misconception: `Pupils assume VE Day ended all fighting worldwide and ended rationing overnight.`, correction: `Fighting in Asia continued until VJ Day on 15 August 1945, and food rationing in Britain lasted nine more years until July 1954!` },
     ],
-    hingeQuestion: `Why did so many British adults describe VE Day on 8 May 1945 as a day of "laughter through tears"?`,
-    hingeGuidance: `Look for pupils balancing both emotions: huge relief that nightly air raids and blackouts in Europe were finally over, alongside grief for empty chairs at family tables, bombed homes, and troops still fighting in the Pacific.`,
+    hingeQuestion: `Why did many British families describe VE Day on 8 May 1945 as a day of "laughter through tears"?`,
+    hingeGuidance: `Balance joyful relief that European air raids and blackouts were over with quiet grief for fallen loved ones, bombed homes, and troops still fighting in Asia.`,
     answers: {
-      task1: `1) VE Day Photographs: Show huge cheering crowds packed beneath Nelson's Column in Trafalgar Square and young girls waving Union Flags on piles of bomb rubble, alongside trestle-table street parties. 2) Contrast in the Photos: Joyful flags and smiling children sit right beside bombed bricks, showing how communities celebrated peace even amid heavy war damage.`,
-      task2: `Step 1: Germany signs unconditional surrender (7 May 1945). Step 2: Winston Churchill announces Victory in Europe at 3:00pm on Tuesday 8 May 1945 (VE Day); crowds cheer outside Buckingham Palace. Step 3: War in Asia and the Pacific ends three months later on VJ Day (15 August 1945). Step 4: Britain rebuilds bombed towns, launches the NHS in 1948, and finally ends food rationing in 1954.`,
-      task3: `1) Street Party Sharing: Neighbours pooled saved margarine, flour, jam, and sugar coupons to make paste sandwiches, scones, and homemade red-white-and-blue bunting. 2) Why Remembrance Matters: Honouring soldiers, sailors, pilots, Commonwealth volunteers, and Home Front civilians on Remembrance Sunday ensures we value peace.`,
-      task4: `Perspective 1 (Young Child at a VE Day Street Party): Thrilled to stay up late with bright streetlamps switched back on, wearing a paper crown and eating jam sandwiches without fearing sirens. Perspective 2 (Mother Whose Husband Died Overseas): Smiling bravely for the children's party while quietly grieving for a loved one who will never walk home.`,
-      task5_wagoll: `VE Day on 8 May 1945 was a day of both joyful celebration and quiet sadness across Britain. When Prime Minister Winston Churchill announced at 3:00pm that the war in Europe was over, crowds cheered in Trafalgar Square and outside Buckingham Palace, tore down blackout curtains, and laid long tables in the street using shared ration coupons to make sandwiches and cakes for children. However, many families also felt deep sorrow for the 450,000 British soldiers and civilians who had died, for bombed homes, and for troops still fighting in the Pacific until VJ Day in August 1945.`,
+      task1: `1) Celebrating Peace (Sources A & B): Huge crowds cheered along Whitehall, tore down blackout curtains, hung Union Flag bunting, and laid long tables in neighbourhood streets for children’s parties. 2) Bomb-Damaged Streets & Rationed Food: Over 2 million British homes had been damaged by raids, and neighbours pooled saved sugar, jam, and margarine coupons so every child on the street could share sandwiches and cake.`,
+      task2: `Stage 1 (How families celebrated VE Day on 8 May 1945): Listened to Churchill’s 3:00pm radio broadcast, tore down blackout curtains, hung red-white-and-blue bunting, lit bonfires, and held street parties. Stage 2 (How Britain rebuilt homes & cared for families by 1948): Built prefab and council homes on bombed sites and launched the free National Health Service (NHS) in July 1948. Stage 3 (How people remember war dead each autumn): Wearing red poppies and keeping a two-minute silence on Armistice Day (11 November) and Remembrance Sunday at the Cenotaph and local memorials.`,
+      task3: `1) Sharing Saved Coupons: Neighbours each brought a spoonful of saved sugar, jam, flour, or margarine to bake cakes together for the street’s children. 2) Empty Chairs: Over 450,000 British soldiers and civilians had died, and families still worried for loved ones fighting in Asia until VJ Day (15 Aug 1945). 3) Rebuilding & the 1948 NHS: Sharing wartime hardships inspired people to build new homes and free healthcare for rich and poor alike. 4) Poppies & Remembrance: Honours service and sacrifice across Britain and the Commonwealth so future generations value peace.`,
+      task4: `Viewpoint 1 (Young Child at a VE Day Street Party): Magical staying up late seeing glowing streetlamps, bonfires, and red-white-and-blue flags without ever fearing the air raid siren again! Viewpoint 2 (Bereaved Parent at the Party): Clapping and smiling for the children’s joy while quietly remembering a loved one who never came home.`,
+      task5_wagoll: `VE Day on 8 May 1945 brought both joyful street parties and quiet sadness across Britain. After Winston Churchill announced at 3:00pm that war in Europe was won, neighbours tore down blackout curtains, hung bunting, and pooled saved ration coupons to give children cakes and sandwiches in the street. At the same time, families grieved for over 450,000 British military and civilian dead, stood beside bombed houses, and worried for soldiers still fighting in Asia until VJ Day in August 1945.`,
     },
   },
 
   lesson_11: {
     curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Holocaust: The Windermere Children & Post-War Healing, August 1945).`,
-    safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 11):</strong> Focus on post-war sanctuary, patient care, friendship, and recovery at Calgarth Estate by Lake Windermere. <strong>Never</strong> ask pupils to imagine or describe camp conditions, and <strong>never</strong> show liberation/atrocity photographs. Explain details such as hiding bread under pillows gently as evidence of why patient kindness mattered.`,
+    safeguardingNote: `<strong>HET Primary Safeguarding &amp; Trauma-Informed Practice (Enquiry 11):</strong> Focus on post-war sanctuary, patient care, friendship, and recovery by Lake Windermere. Never ask pupils to imagine camp conditions or show graphic liberation imagery.`,
     timeline: [
-      {
-        time: '00–10 mins',
-        phase: 'Do Now Starter',
-        activity:
-          '5-question retrieval check bridging Kindertransport (1938–39) and VE Day (May 1945) to set up August 1945.',
-      },
-      {
-        time: '10–25 mins',
-        phase: 'Archival & Literary Enquiry',
-        activity:
-          "Explore photographs of the Calgarth Estate by Lake Windermere and Tom Palmer's novel After the War, discussing how historical fiction uses real survivor memories.",
-      },
-      {
-        time: '25–50 mins',
-        phase: 'Worksheet Application',
-        activity:
-          'Pupils complete Task 1 (Archive & Novel Detective), Task 2 (Prague to Windermere Timeline), Task 3 (Calgarth Sanctuary & Recovery), and Task 4 (Thinking Heads).',
-      },
-      {
-        time: '50–60 mins',
-        phase: 'Plenary & Unit Synthesis',
-        activity:
-          'Pupils write their Task 5 Mission Challenge paragraph on how kindness helped the Windermere Children heal and complete the final 5-question quiz.',
-      },
+      { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Retrieval check recapping Lesson 10 (VE Day 8 May 1945, 3:00pm Churchill broadcast, Cenotaph, and the 1948 NHS).' },
+      { time: '10–25 mins', phase: 'Primary Photograph Enquiry', activity: 'Examine Source A (RAF Short Stirling aircraft at Prague Airport) and Source B (smiling child survivors lifted gently down the aircraft steps on arrival in Cumbria, August 1945), alongside the GIS Airlift Map.' },
+      { time: '25–50 mins', phase: 'Worksheet Application', activity: 'Pupils complete Task 1 (Arrival & Recovery Detective), Task 2 (3-Stage Prague-to-Windermere Timeline), Task 3 (Kindertransport vs Windermere Comparison SVG & Calgarth Healing), and Task 4 (Thinking Heads).' },
+      { time: '50–60 mins', phase: 'Plenary & Unit Synthesis', activity: 'Pupils write their Task 5 Mission Challenge paragraph and complete the final retrieval check.' },
     ],
-    subjectPrimer: `In August 1945—three months after VE Day—the British government permitted the Central British Fund for German Jewry (led by Leonard Montefiore) to bring child survivors of Nazi camps to Britain. Ten converted RAF Short Stirling heavy bombers flew the first 300 orphaned teenagers and children (such as Arek Hersh, Ben Helfgott, and Salek Falinower) from Prague to Crosby-on-Eden airfield near Carlisle. From there, coaches drove them to wooden wartime huts on the Calgarth Estate beside Lake Windermere in the Lake District. Under caring staff including Dr Oscar Friedman and art therapist Marie Paneth, the children received nourishing meals, clean beds, English lessons, art, football, swimming, and donated bicycles. Having lost most of their families, they formed a lifelong family of friends known as the '45 Aid Society. Author Tom Palmer worked closely with survivors and the Lake District Holocaust Project to write his children's novel After the War.`,
+    subjectPrimer: `In August 1945—three months after VE Day—Leonard Montefiore and the Central British Fund arranged for orphaned Jewish child camp survivors to recover in Britain. On 14 August 1945, ten converted RAF Short Stirling heavy bombers flew the first 300 children from Prague to RAF Crosby-on-Eden near Carlisle, and coaches brought them to the peaceful Calgarth Estate beside Lake Windermere. Cared for by Dr Oscar Friedman and art therapist Marie Paneth, they rebuilt their strength and formed a lifelong family in the ’45 Aid Society.`,
     misconceptions: [
-      {
-        misconception: `Pupils confuse the Windermere Children (August 1945) with Kindertransport refugees (1938–1939).`,
-        correction: `Use the timeline clearly: Kindertransport children escaped to Britain BEFORE war broke out in 1938–39; the Windermere Children had been trapped inside Nazi-occupied Europe throughout the war, survived ghettos and camps, and arrived in August 1945 AFTER victory in Europe.`,
-      },
-      {
-        misconception: `Pupils think that once the war ended, camp survivors felt completely safe straight away.`,
-        correction: `Explain gently why many children hid crusts of bread under their pillows at night—years of terrible hunger meant it took patient, gentle reassurance from staff before they trusted that breakfast would always be there tomorrow.`,
-      },
+      { misconception: `Pupils confuse the Windermere Children (August 1945) with Kindertransport refugees (1938–1939).`, correction: `Use the Task 3 Comparison SVG: Kindertransport rescued ~10,000 children by train and ferry BEFORE war started; Windermere flew 300 camp survivors in 10 RAF bombers AFTER VE Day in August 1945.` },
     ],
-    hingeQuestion: `Why did caring staff at Calgarth Estate let the children keep bread under their pillows instead of telling them off?`,
-    hingeGuidance: `Look for empathetic understanding: staff recognised that hiding bread came from years of starvation and fear, so showing patience and plenty of food each morning helped the children trust adults and feel safe again.`,
+    hingeQuestion: `Why did caring staff at Calgarth Estate let newly arrived children hide crusts of bread under their pillows instead of scolding them?`,
+    hingeGuidance: `Years of terrible hunger made children fear food might vanish overnight; gentle patience and plentiful breakfasts every morning helped them slowly trust that they were safe.`,
     answers: {
-      task1: `1) Clues in Source B (IWM CH 15903 Arrival Photograph): Older boys smile down from the doorway of the converted RAF Short Stirling holding their small suitcase while a gentle British helper lifts the youngest child safely down the ladder onto British soil, showing relief, protection, and a fresh start (later shared with schools and authors by The '45 Aid Society). 2) Bread Under Pillows: Years of starvation in Nazi camps made children fear food would vanish overnight; gentle Calgarth staff never scolded them so they could rebuild trust at their own pace.`,
-      task2: `Step 1: Camps are liberated in 1945 and Leonard Montefiore's charity arranges homes in Britain for child survivors. Step 2: August 1945 — 10 RAF Short Stirling bombers fly 300 children from Prague to Carlisle. Step 3: Children stay at the Calgarth Estate by Lake Windermere with clean beds, English classes, art, swimming, and bicycles. Step 4: Survivors stay lifelong friends and form the '45 Aid Society.`,
-      task3: `1) Healing at Calgarth Estate: Peaceful mountains and lake water, three hot meals a day, football matches, painting with Marie Paneth, and freedom on bicycles. 2) Giving Back: Many survivors built remarkable lives in Britain—for example, Ben Helfgott captained Britain's Olympic weightlifting team and survivors visited schools for decades to teach kindness and tolerance.`,
-      task4: `Perspective 1 (Young Survivor Arriving at Windermere): Amazed to sleep in white sheets with no guards outside, quietly tucking bread under the pillow at first before feeling free riding a bicycle beside the lake. Perspective 2 (Calgarth Care Worker / Marie Paneth): Listening patiently without rushing the children, using art, sport, and kindness to help them smile and trust again.`,
-      task5_wagoll: `In August 1945, 300 orphaned child survivors began to rebuild their lives by Lake Windermere thanks to patient kindness and their own courage. Flown from Prague to Carlisle inside 10 RAF Short Stirling bombers, the children arrived at the Calgarth Estate exhausted and afraid, even hiding bread under their pillows in case food ran out. Instead of scolding them, caring helpers like Dr Oscar Friedman and Marie Paneth gave them hot meals, art lessons, English classes, football, and bicycles by the peaceful lake. Although most had lost their families during the war, the Windermere Children supported each other for life through the '45 Aid Society.`,
+      task1: `1) Clues in Source B: Boys peer out smiling with their small suitcase while a British helper gently lifts the youngest child down the aircraft steps in his arms, showing safety, warmth, and a hopeful new start. 2) Hiding Bread Under Pillows: Years of starvation left children afraid food would run out; kind Calgarth staff never scolded them, letting plentiful daily meals rebuild trust naturally.`,
+      task2: `Stage 1 (How 300 orphaned survivors reached Lake Windermere): Funded by the Central British Fund on 14 August 1945, 10 converted RAF Short Stirling bombers flew them from Prague to Carlisle, followed by coaches to Lake Windermere. Stage 2 (How gentle care & red bicycles helped them heal): Clean white beds, nourishing meals, Marie Paneth’s quiet art room, football, English lessons, and donated red bicycles restored freedom and joy. Stage 3 (How survivors thanked Britain): Forming the ’45 Aid Society in 1963, survivors became doctors, engineers, teachers, and Olympic captain Sir Ben Helfgott, sharing lessons of kindness across British schools.`,
+      task3: `1) Plentiful Breakfasts & Clean Beds: Seeing warm food on the table every single morning proved they would never go hungry again. 2) Art Therapy & English Classes: Painting with Marie Paneth expressed feelings without forcing painful talk, while English unlocked new friendships and jobs. 3) Football, Swimming & Bicycles: After years locked behind barbed wire, pedalling freely along quiet Lake District lanes felt like pure freedom. 4) Lifelong ’45 Aid Society: Having lost parents and siblings, the 300 survivors supported one another as brothers and sisters for over 75 years.`,
+      task4: `Viewpoint 1 (Teenage Survivor at Lake Windermere): Sleeping in clean white sheets with no guards outside and riding a bicycle beside sparkling water feels "like arriving in paradise". Viewpoint 2 (Care Worker / Marie Paneth): Never rushing or scolding traumatised children—offering hot food, quiet art materials, and patient kindness lets trust grow day by day.`,
+      task5_wagoll: `In August 1945, 300 orphaned child survivors rebuilt their lives by Lake Windermere through patient British kindness and their own resilience. Flown from Prague to Carlisle inside 10 converted RAF Short Stirling bombers, they arrived at the Calgarth Estate exhausted and frightened, even hiding bread under their pillows at night. Caring helpers like Dr Oscar Friedman and art therapist Marie Paneth gave them nourishing meals, painting, English classes, football, and red bicycles, helping them form a lifelong family in the ’45 Aid Society.`,
     },
   },
 };
@@ -1228,7 +927,7 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
           <div>
             <div style="display: flex; align-items: center; gap: 8px;">
               <span style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(59, 130, 246, 0.2); color: #93c5fd; padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(59, 130, 246, 0.3);">KS2 Print Materials</span>
-              <span id="activeDocModeLabel" style="font-size: 0.72rem; font-weight: 600; color: #94a3b8;">Lesson ${currentSheet.num} of ${Object.keys(activeWsMap).length}</span>
+              <span id="activeDocModeLabel" style="font-size: 0.72rem; font-weight: 600; color: #94a3b8;">Lesson ${currentSheet.num} of ${Object.keys(activeWsMap).length}${currentSheet.hasOptionalCraftPage3 ? " • Pages 1–2 Core + Optional p.3 Craft" : " • 2-Page A4 Worksheet"}</span>
             </div>
             <h2 id="activeDocTitle" style="margin: 3px 0 0 0; font-size: 1.15rem; font-weight: 800; color: #ffffff; letter-spacing: -0.01em;">${currentSheet.title}</h2>
           </div>

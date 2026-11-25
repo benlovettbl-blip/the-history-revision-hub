@@ -1083,7 +1083,7 @@ export default {
           "type": "extended_writing",
           "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
           "title": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "question": "Explain why William of Normandy achieved victory at the Battle of Hastings in 1066.",
+          "question": "Explain why William of Normandy achieved victory at the Battle of Hastings in 1066. [12 marks]",
           "stimulus": [
             "Norman military tactics, heavy cavalry, and the feigned retreat",
             "Anglo-Saxon exhaustion and loss of shield-wall discipline"
@@ -1102,7 +1102,8 @@ export default {
             "Own Knowledge"
           ],
           "gold_challenge": "Historian Challenge: Compare the relative weight of Norman tactical skill (cavalry and feigned retreat) against Anglo-Saxon exhaustion to explain which was the ultimate turning point.",
-          "model_answer": "One decisive reason why William of Normandy won the Battle of Hastings was Anglo-Saxon exhaustion caused by fighting a war on two fronts [1.2, 1.3]. In September 1066, King Harold marched his army 190 miles north in just four days to defeat Viking king Harald Hardrada at Stamford Bridge, suffering heavy losses among his elite housecarls before force-marching 250 miles back south [1.3, 1.4]. Although Harold’s shield wall held firm atop Senlac Hill for five gruelling hours, his tired army contained many part-time fyrd militia whose discipline weakened by late afternoon [1.4, 1.5].<br><br>Furthermore, Duke William’s tactical skill and combined-arms army turned this stalemate into victory [1.4, 1.5]. Seeing Breton troops panic on his left flank, William ordered his heavy cavalry to stage repeated feigned retreats, charging up Senlac Hill before pretending to flee in terror [1.5]. Tempted by the sight of retreating horsemen, undisciplined Saxon fyrdmen broke rank and chased downhill onto open ground, where Norman knights wheeled round and cut them to pieces [1.5].<br><br>Ultimately, both factors worked together, though William’s tactical leadership proved the final turning point [1.5]. Once the feigned retreats opened fatal gaps in the Saxon shield wall, William ordered his archers to shoot high into the air, mortally wounding King Harold and shattering the remaining Anglo-Saxon army [1.5]. Saxon fatigue made Harold’s men vulnerable to mistakes, but it was William’s clever feigned retreat that actually broke the shield wall."
+          "model_answer": "One decisive reason why William of Normandy won the Battle of Hastings was Anglo-Saxon exhaustion caused by fighting a war on two fronts [1.2, 1.3]. In September 1066, King Harold marched his army 190 miles north in just four days to defeat Viking king Harald Hardrada at Stamford Bridge, suffering heavy losses among his elite housecarls before force-marching 250 miles back south [1.3, 1.4]. Although Harold’s shield wall held firm atop Senlac Hill for five gruelling hours, his tired army contained many part-time fyrd militia whose discipline weakened by late afternoon [1.4, 1.5].<br><br>Furthermore, Duke William’s tactical skill and combined-arms army turned this stalemate into victory [1.4, 1.5]. Seeing Breton troops panic on his left flank, William ordered his heavy cavalry to stage repeated feigned retreats, charging up Senlac Hill before pretending to flee in terror [1.5]. Tempted by the sight of retreating horsemen, undisciplined Saxon fyrdmen broke rank and chased downhill onto open ground, where Norman knights wheeled round and cut them to pieces [1.5].<br><br>Ultimately, both factors worked together, though William’s tactical leadership proved the final turning point [1.5]. Once the feigned retreats opened fatal gaps in the Saxon shield wall, William ordered his archers to shoot high into the air, mortally wounding King Harold and shattering the remaining Anglo-Saxon army [1.5]. Saxon fatigue made Harold’s men vulnerable to mistakes, but it was William’s clever feigned retreat that actually broke the shield wall.",
+          "tariff": "Question 2: Explain Why [12 marks • 15 mins]"
         }
       ],
       "teacher_notes": {
@@ -2843,10 +2844,10 @@ export default {
         {
           "id": "me_l2_q1_features",
           "type": "two_features",
-          "tariff": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "tariff": "Question 1: Describe Two Features [4 marks • 5 mins]",
           "topic": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
           "title": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
-          "question": "Describe two features of Norman motte-and-bailey castles.",
+          "question": "Describe two features of Norman motte-and-bailey castles. [4 marks]",
           "hints": [
             "Feature 1: Identify the raised earth mound (motte) topped by a wooden keep tower for observation and last defence [2.1].",
             "Detail 1: Support with specific facts: over 500 castles built rapidly using local forced Saxon labour and timber palisades [2.1].",
@@ -2867,10 +2868,10 @@ export default {
         {
           "id": "me_l2_q2_consequence",
           "type": "extended_writing",
-          "tariff": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
+          "tariff": "Question 2: Explain One Consequence [4 marks • 5 mins]",
           "topic": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
           "title": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
-          "question": "Explain one consequence of the motte-and-bailey blitz for Anglo-Saxon resistance against Norman rule.",
+          "question": "Explain one consequence of the motte-and-bailey blitz for Anglo-Saxon resistance against Norman rule. [4 marks]",
           "hints": [
             "Consequence: State how the network of 500+ castles crippled Anglo-Saxon ability to launch organized rebellions [2.1, 2.2].",
             "Evidence & Impact: Explain how cavalry garrisons could ride out within hours to suppress uprisings, turning military conquest into permanent feudal occupation [2.1–2.5]."
@@ -4480,31 +4481,100 @@ export default {
       ],
       "tasks": [
         {
-          "id": "me_l3_q2_explain_why",
+          "id": "med_l3_q1_interp_diff",
           "type": "extended_writing",
-          "tariff": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "title": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "question": "Explain why King Henry II clashed with Archbishop Thomas Becket between 1162 and 1170.",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART B",
+          "tariff": "Question 3(b): Contrasting Interpretations [4 marks • 5 mins]",
+          "title": "Question 3(b): Contrasting Interpretations [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Difference in Views (1 Paragraph • 5 mins)",
+          "question": "Explain how Interpretations 1 and 2 differ on Thomas Becket’s motives and character. [4 marks]",
           "stimulus": [
-            "The Constitutions of Clarendon and criminous clerks (1164)",
-            "Becket’s personal transformation and allegiance to the Pope"
+            "Interpretation 1 • Edward Grim, Eyewitness Monk & Chronicler, Life of St Thomas (c. 1175): “The glorious martyr Thomas stood like a rock before the altar, refusing to yield the sacred liberties of Christ’s holy Church to earthly tyrants. He offered his neck to the wicked swords of the four knights, dying willingly so that God’s law might triumph over royal pride.”",
+            "Interpretation 2 • Historian Frank Barlow, Thomas Becket (1986): “Becket was vain, stubborn, and obsessively confrontational. Having served Henry faithfully as chancellor, his dramatic conversion into an unbending champion of clerical privilege was theatrical extremism. By shielding rapists and murderers in holy orders from secular law, Becket provoked a needless crisis.”"
           ],
           "hints": [
-            "Point 1: Explain the constitutional dispute over \"criminous clerks\": Henry wanted churchmen tried in royal courts under the Constitutions of Clarendon [3.3].",
-            "Point 2: Explain Becket’s dramatic spiritual transformation from worldly Chancellor to ascetic defender of papal supremacy [3.1, 3.2].",
-            "Point 3 (Own Knowledge): Explain the escalation caused by Becket excommunicating royal bishops and the fatal royal outburst leading to his murder [3.4].",
-            "Link: Conclude with a sustained comparative judgment on whether the conflict was driven by state law or religious authority [3.1–3.5]."
+            "Point: State clearly that the two interpretations disagree on whether Becket was a courageous, selfless Christian martyr or a vain, confrontational extremist.",
+            "Interpretation 1 (Edward Grim, c. 1175): Quote or summarise Grim praising Becket as a “glorious martyr” who stood “like a rock” defending God’s Church against royal tyranny.",
+            "Interpretation 2 (Frank Barlow, 1986): Contrast with Barlow calling Becket “vain, stubborn, and obsessively confrontational” for shielding criminous clerks and provoking a needless crisis."
           ],
-          "starter": "A decisive factor explaining why King Henry II clashed with Archbishop Thomas Becket was...",
-          "key_terms": [
-            "Constitutions of Clarendon",
-            "Criminous Clerks",
-            "Papal Supremacy",
-            "Own Knowledge"
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Overall Difference): State how Interpretations 1 and 2 disagree on Becket’s character and motives.",
+              "Sentence 2 (Interpretation 1): Support with detail or wording from monk Edward Grim (c. 1175).",
+              "Sentences 3–4 (Interpretation 2): Contrast directly with historian Frank Barlow (1986)."
+            ],
+            "sentence_starters": [
+              "Interpretations 1 and 2 differ sharply on Thomas Becket’s motives and character...",
+              "Interpretation 1 argues that Becket was...",
+              "In contrast, Interpretation 2 suggests that Becket was...",
+              "This is a clear difference because..."
+            ],
+            "word_bank": [
+              "Edward Grim (c. 1175)",
+              "Frank Barlow (1986)",
+              "glorious martyr",
+              "clerical privilege",
+              "criminous clerks",
+              "Constitutions of Clarendon",
+              "Canterbury Cathedral (1170)"
+            ],
+            "connective_bank": [
+              "Interpretations 1 and 2 differ on...",
+              "Interpretation 1 argues that...",
+              "In contrast, Interpretation 2 suggests that...",
+              "This is a difference because..."
+            ]
+          },
+          "model_answer": "Interpretations 1 and 2 differ sharply on Thomas Becket’s character and motives. Interpretation 1 (Edward Grim) portrays Becket as a noble, selfless “glorious martyr” who bravely defended the sacred liberties of the Church against earthly tyranny at the cost of his life. In contrast, Interpretation 2 (Frank Barlow) depicts Becket as “vain, stubborn, and obsessively confrontational”, arguing that his theatrical extremism in shielding criminal clergymen from royal courts provoked an unnecessary political crisis.",
+          "model": "Interpretations 1 and 2 differ sharply on Thomas Becket’s character and motives. Interpretation 1 (Edward Grim) portrays Becket as a noble, selfless “glorious martyr” who bravely defended the sacred liberties of the Church against earthly tyranny at the cost of his life. In contrast, Interpretation 2 (Frank Barlow) depicts Becket as “vain, stubborn, and obsessively confrontational”, arguing that his theatrical extremism in shielding criminal clergymen from royal courts provoked an unnecessary political crisis."
+        },
+        {
+          "id": "med_l3_q2_interp_why",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART C",
+          "tariff": "Question 3(c): Why Interpretations Differ [4 marks • 5 mins]",
+          "title": "Question 3(c): Why Interpretations Differ [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Explaining Why Views Differ (1 Paragraph • 5 mins)",
+          "question": "Suggest one reason why Interpretations 1 and 2 differ on Becket’s clash with King Henry II. [4 marks]",
+          "stimulus": [
+            "Interpretation 1 • Edward Grim, Eyewitness Monk & Chronicler, Life of St Thomas (c. 1175): “The glorious martyr Thomas stood like a rock before the altar, refusing to yield the sacred liberties of Christ’s holy Church to earthly tyrants. He offered his neck to the wicked swords of the four knights, dying willingly so that God’s law might triumph over royal pride.”",
+            "Interpretation 2 • Historian Frank Barlow, Thomas Becket (1986): “Becket was vain, stubborn, and obsessively confrontational. Having served Henry faithfully as chancellor, his dramatic conversion into an unbending champion of clerical privilege was theatrical extremism. By shielding rapists and murderers in holy orders from secular law, Becket provoked a needless crisis.”"
           ],
-          "gold_challenge": "Historian Challenge: Evaluate whether the conflict was fundamentally a legal struggle over royal sovereignty or a personal feud between former allies.",
-          "model_answer": "One major reason King Henry II clashed with Thomas Becket was a fierce legal dispute over ‘criminous clerks’ and the power of Church courts [3.3]. In twelfth-century England, any churchman accused of serious crimes such as robbery, rape, or murder could read a Latin verse to claim ‘benefit of clergy’ and be tried in lenient Church courts that never imposed the death penalty [3.3]. Determined to enforce uniform royal justice across his realm, Henry issued the Constitutions of Clarendon in January 1164 demanding that defrocked priests be handed over to royal courts for punishment, which Becket flatly refused to seal [3.3].<br><br>A second crucial cause was Becket’s dramatic personal transformation after becoming Archbishop of Canterbury in June 1162 [3.1, 3.2]. Henry had appointed his luxury-loving Chancellor and hunting companion expecting an obedient ally who would bend the Church to the King’s will [3.1]. Instead, Becket immediately resigned the Chancellorship, swapped silk robes for a lice-infested goat hairshirt, and declared himself loyal only to the Pope and Catholic Church rather than the Crown [3.2].<br><br>Finally, six years of bitter exile and stubborn pride turned this legal disagreement into a deadly personal feud [3.4]. Upon returning from France in December 1170, Becket immediately excommunicated royalist bishops who had supported Henry, provoking the King’s furious Christmas outburst that prompted four knights to murder Becket at the altar of Canterbury Cathedral [3.4]. Overall, while personal anger triggered the final tragedy, the root cause of the clash was an irreconcilable struggle over whether Crown law or Church authority held supreme power."
+          "hints": [
+            "Reason: Identify that the authors have completely different historical contexts, purposes, and points of focus.",
+            "Edward Grim (c. 1175): Explain that Grim was a medieval monk who personally witnessed the 1170 Canterbury murder and wrote hagiography to celebrate St Thomas’s canonisation and inspire Christian pilgrims [3.4, 3.5].",
+            "Frank Barlow (1986): Explain that Barlow is a modern secular historian focusing on royal law-making and Henry II’s effort to try “criminous clerks” in royal courts under the Constitutions of Clarendon [3.2]."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Identify Reason): State that the authors write with contrasting purposes and points of focus.",
+              "Sentence 2 (Grim’s Focus): Explain Grim’s role as an eyewitness medieval monk writing saintly biography (hagiography) in c. 1175.",
+              "Sentences 3–4 (Barlow’s Focus): Contrast with Frank Barlow writing in 1986 to evaluate secular law, royal justice, and criminous clerks."
+            ],
+            "sentence_starters": [
+              "One reason why Interpretations 1 and 2 differ is because they have a different focus and purpose...",
+              "Specifically, Interpretation 1 focuses primarily on celebrating...",
+              "In contrast, Interpretation 2 focuses more on secular law and...",
+              "As a result, the authors reach different conclusions because..."
+            ],
+            "word_bank": [
+              "eyewitness monk",
+              "medieval hagiography",
+              "canonisation (1173)",
+              "modern secular historian",
+              "Constitutions of Clarendon (1164)",
+              "criminous clerks",
+              "royal justice"
+            ],
+            "connective_bank": [
+              "One reason why Interpretations 1 and 2 differ is because they have a different focus...",
+              "Specifically, Interpretation 1 focuses primarily on...",
+              "In contrast, Interpretation 2 focuses more on...",
+              "As a result, the authors reach different conclusions because..."
+            ]
+          },
+          "model_answer": "One primary reason why Interpretations 1 and 2 differ is that the authors write from contrasting eras with very different purposes and points of focus. Edward Grim was a medieval Catholic monk who stood beside Becket during his murder in Canterbury Cathedral in 1170; writing around 1175 after Becket’s canonisation, Grim focused on spiritual martyrdom to honour St Thomas and inspire pilgrims. In contrast, Frank Barlow is a modern secular historian writing in 1986 who focuses on practical royal governance and law—specifically how Becket’s defence of “criminous clerks” blocked Henry II’s legal reforms under the Constitutions of Clarendon.",
+          "model": "One primary reason why Interpretations 1 and 2 differ is that the authors write from contrasting eras with very different purposes and points of focus. Edward Grim was a medieval Catholic monk who stood beside Becket during his murder in Canterbury Cathedral in 1170; writing around 1175 after Becket’s canonisation, Grim focused on spiritual martyrdom to honour St Thomas and inspire pilgrims. In contrast, Frank Barlow is a modern secular historian writing in 1986 who focuses on practical royal governance and law—specifically how Becket’s defence of “criminous clerks” blocked Henry II’s legal reforms under the Constitutions of Clarendon."
         }
       ],
       "teacher_notes": {
@@ -6098,10 +6168,10 @@ export default {
         {
           "id": "me_l4_q2_narrative_account",
           "type": "narrative_account",
-          "tariff": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 12 mins)",
+          "tariff": "Question 2: Narrative Account [8 marks • 12 mins]",
           "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 12 mins)",
           "title": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 12 mins)",
-          "question": "Write a narrative account analysing the key events leading from the loss of Normandy (1204) to the sealing of Magna Carta at Runnymede (1215).",
+          "question": "Write a narrative account analysing the key events leading from the loss of Normandy (1204) to the sealing of Magna Carta (1215). [8 marks]",
           "stimulus": [
             "The loss of Normandy (1204) and heavy scutage taxation",
             "The defeat at the Battle of Bouvines (1214)"
@@ -7863,10 +7933,10 @@ export default {
         {
           "id": "me_l5_q5_evaluative_essay",
           "type": "extended_writing",
-          "tariff": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "tariff": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]",
           "topic": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
           "title": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
-          "question": "‘The Black Death of 1348 was the main cause of the breakdown of the feudal system in medieval England.’ How far do you agree?",
+          "question": "‘The Black Death of 1348 was the main cause of the breakdown of the feudal system in medieval England.’ How far do you agree? [12 marks]",
           "stimulus": [
             "The demographic collapse and labour shortage caused by the Black Death (1348–1350)",
             "The 1351 Statute of Labourers and the Peasants’ Revolt of 1381"

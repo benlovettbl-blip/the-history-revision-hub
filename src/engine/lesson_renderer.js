@@ -6192,7 +6192,14 @@ export function renderLesson(lesson) {
             task.type === 'narrative_account_8m' ||
             task.type === 'causation_12m' ||
             task.type === 'consequence_4m' ||
+            task.type === 'evaluative_essay' ||
             task.type === 'evaluative_essay_12m' ||
+            task.type === 'source_utility' ||
+            task.type === 'historical_interpretations' ||
+            task.type === 'interpretations_diff_4m' ||
+            task.type === 'interpretations_reason_4m' ||
+            task.type === 'explain_importance_8m' ||
+            task.type === 'explain_difference_4m' ||
             task.type === 'source_clues' ||
             task.type === 'historical_explanation' ||
             task.type === 'living_history' ||
@@ -6280,13 +6287,31 @@ export function renderLesson(lesson) {
 
             let stimulusHtml = '';
             if (stimulusList.length > 0) {
+              const isInterpStimulus = stimulusList.some((st) => /^Interpretation\s*[12]\b/i.test(String(st).trim()));
+              const isSourceStimulus = !isInterpStimulus && stimulusList.some((st) => /^Source\s*[A-E]\b/i.test(String(st).trim()));
+              const isPureInterpDiff =
+                isInterpStimulus &&
+                /\bdiffer\b/i.test(questionPrompt) &&
+                !/\bwhy\b|\breason\b/i.test(questionPrompt);
+              const stimHeader = isInterpStimulus
+                ? 'Historical Interpretations for This Enquiry:'
+                : isSourceStimulus
+                  ? 'Primary Sources for This Enquiry:'
+                  : 'You may use the following in your answer:';
+              const stimFooter = isPureInterpDiff
+                ? 'Support your comparison with specific details from both interpretations.'
+                : isInterpStimulus
+                  ? 'Explain your answer using the interpretations and your contextual historical knowledge.'
+                  : isSourceStimulus
+                    ? 'Evaluate both content and provenance using your contextual historical knowledge.'
+                    : 'You must also use information of your own.';
               stimulusHtml = `
                 <div class="edexcel-stimulus-bullet-box" style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 4px solid #0284c7; border-radius: 6px; padding: 10px 14px; margin: 0 0 12px 0; font-size: 0.88rem; color: #0c4a6e;">
-                  <strong style="text-transform: uppercase; font-size: 0.74rem; letter-spacing: 0.5px; color: #0284c7; display: block; margin-bottom: 5px;"><i class="fa-solid fa-list-check" style="margin-right: 5px;"></i> You may use the following in your answer:</strong>
+                  <strong style="text-transform: uppercase; font-size: 0.74rem; letter-spacing: 0.5px; color: #0284c7; display: block; margin-bottom: 5px;"><i class="fa-solid ${isInterpStimulus || isSourceStimulus ? 'fa-scroll' : 'fa-list-check'}" style="margin-right: 5px;"></i> ${stimHeader}</strong>
                   <ul style="margin: 0; padding-left: 20px; line-height: 1.5;">
-                    ${stimulusList.map((st) => `<li>${formatBold ? formatBold(st) : st}</li>`).join('')}
+                    ${stimulusList.map((st) => `<li style="margin-bottom: ${isInterpStimulus || isSourceStimulus ? '6px' : '2px'};">${formatBold ? formatBold(st) : st}</li>`).join('')}
                   </ul>
-                  <span style="display: block; font-size: 0.78rem; font-style: italic; color: #64748b; margin-top: 4px;">You must also use information of your own.</span>
+                  <span style="display: block; font-size: 0.78rem; font-style: italic; color: #64748b; margin-top: 4px;">${stimFooter}</span>
                 </div>
               `;
             }
@@ -6639,12 +6664,18 @@ export function renderLesson(lesson) {
           const minsMatch = rawHeader.match(/(\d+)\s*mins?/i);
           const rawQLower = `${rawHeader} ${task.type || ''} ${task.question || task.text || ''}`.toLowerCase();
           const ks3SkillLabel =
-            task.type === 'two_features' || /describe\s+(?:one|two)\s+(?:key\s+)?features?/.test(rawQLower)
-              ? 'Two Key Features'
-              : task.type === 'narrative_account' ||
-                  task.type === 'narrative_account_8m' ||
-                  /narrative\s+account/.test(rawQLower)
-                ? 'Narrative Account'
+            /describe\s+one\s+(?:key\s+)?feature/.test(rawQLower)
+              ? 'Key Feature'
+              : task.type === 'two_features' || /describe\s+two\s+(?:key\s+)?features?/.test(rawQLower)
+                ? 'Two Key Features'
+                : /interpretations?\s*1\s*and\s*2|historiograph/.test(rawQLower)
+                  ? 'Interpretations'
+                  : /explain\s+one\s+way\s+in\s+which|different\s+from|similar\s+to/.test(rawQLower)
+                    ? 'Historical Comparison'
+                    : task.type === 'narrative_account' ||
+                        task.type === 'narrative_account_8m' ||
+                        /narrative\s+account/.test(rawQLower)
+                      ? 'Narrative Account'
                 : /how\s+far\s+do\s+you\s+agree|evaluative/.test(rawQLower)
                   ? 'Evaluative Judgement'
                   : /explain\s+the\s+importance|significance/.test(rawQLower)

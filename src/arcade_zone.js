@@ -159,19 +159,6 @@ const VISUAL_SHOWCASES = [
     ),
   },
   {
-    id: 'blitz_warden',
-    emoji: '🔦',
-    title: 'Put That Light Out! Blitz & Enigma',
-    subtitle: 'Interactive Blackout, Shelters & 3-Rotor Enigma',
-    accent: '#f59e0b',
-    featuredUnits: ['ks2_ww2', 'the_shoah', 'post_war_britain'],
-    badge: 'ILLUSTRATED HOME FRONT & CODEBREAKER',
-    desc: 'Click glowing windows before bombers spot the street, match families to Anderson & Morrison shelters or Kindertransport trains, and dial 3 brass Enigma rotors at Bletchley Park!',
-    mount: lazyShowcaseMount(() =>
-      import('./arcade/games/blitz_warden_enigma.js').then((m) => m.mountBlitzWardenEnigma),
-    ),
-  },
-  {
     id: 'weimar_desk',
     emoji: '💼',
     title: 'Chancellor on the Brink (1919–33)',

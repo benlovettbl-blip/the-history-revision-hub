@@ -299,7 +299,73 @@ const UNIT_DATA = {
               "studio_voice_label": "ARP Blackout Order (Sept 1939)"
             }
           ],
-          "content": "<span class=\"para-ref\">[1.5]</span> Two nights before war was declared — on **1 September 1939** — Britain switched off its lights. Under strict **Blackout** rules, every streetlight went dark and car headlamps wore narrow slotted hoods. Families hung thick black curtains over every window so German night bombers could not spot cities below.<br><br><span class=\"para-ref\">[1.6]</span> Pitch-dark streets soon caused bumps and road accidents. Councils painted **white stripes along kerbs, tree trunks, lampposts, and gateposts** to guide pedestrians safely. Over **1.4 million** volunteer **Air Raid Precautions (ARP) wardens** patrolled streets in **black steel helmets painted with a white \"W\"**. Whenever light shone through a curtain, they shouted, <em>\"Put that light out!\"</em>"
+          "content": "<span class=\"para-ref\">[1.5]</span> Two nights before war was declared — on **1 September 1939** — Britain switched off its lights. Under strict **Blackout** rules, every streetlight went dark and car headlamps wore narrow slotted hoods. Families hung thick black curtains over every window so German night bombers could not spot cities below.<br><br><span class=\"para-ref\">[1.6]</span> Pitch-dark streets soon caused bumps and road accidents. Councils painted **white stripes along kerbs, tree trunks, lampposts, and gateposts** to guide pedestrians safely. Over **1.4 million** volunteer **Air Raid Precautions (ARP) wardens** patrolled streets in **black steel helmets painted with a white \"W\"**. Whenever light shone through a curtain, they shouted, <em>\"Put that light out!\"</em>",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "KS2 Interactive Home Front Inspector",
+            "title": "1 September 1939: How Families & Wardens Blacked Out Every Street",
+            "default_index": 0,
+            "caption": "Click or slide across the three defences to inspect how ordinary British streets hid from night bombers.",
+            "stops": [
+              {
+                "short_label": "1. Blackout Windows",
+                "label": "Thick Black Curtains & Criss-Cross Window Tape",
+                "color": "#1d4ed8",
+                "bg_color": "rgba(29, 78, 216, 0.16)",
+                "summary": "Every window and skylight had to be covered from sunset so not a single chink of light guided enemy bombers overhead.",
+                "traits": [
+                  {
+                    "icon": "shield",
+                    "category": "Heavy Curtains",
+                    "value": "Blocked indoor lamplight from shining into the night sky"
+                  },
+                  {
+                    "icon": "home",
+                    "category": "Gummed Paper Tape",
+                    "value": "Stopped glass panes shattering into sharp flying splinters"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Pitch-Dark Streets",
+                "label": "Dimmed Headlights & White-Striped Pavements",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.16)",
+                "summary": "Council workers switched off streetlamps, fitted hooded slits over car headlights, and painted white stripes at street level.",
+                "traits": [
+                  {
+                    "icon": "road",
+                    "category": "White Kerbs & Trees",
+                    "value": "Guided pedestrians safely along pitch-black pavements"
+                  },
+                  {
+                    "icon": "car",
+                    "category": "Slotted Headlamps",
+                    "value": "Pointed a dim beam downwards so pilots above saw nothing"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. 1.4M ARP Wardens",
+                "label": "Volunteer Air Raid Wardens on Night Patrol",
+                "color": "#059669",
+                "bg_color": "rgba(5, 150, 105, 0.16)",
+                "summary": "Over 1.4 million local ARP volunteers wore steel helmets marked W, blew whistles, and called \"Put that light out!\"",
+                "traits": [
+                  {
+                    "icon": "users",
+                    "category": "Neighbourhood Patrol",
+                    "value": "Checked every street’s curtains and guided families to shelter"
+                  },
+                  {
+                    "icon": "bell",
+                    "category": "Warning Signals",
+                    "value": "Wailing siren = Take Cover • Wooden rattle = Gas Alert"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "tasks": [
@@ -403,18 +469,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 1,
-          "question": "On what date did Adolf Hitler's German army invade Poland, two days before Britain declared war?",
-          "q": "On what date did Adolf Hitler's German army invade Poland, two days before Britain declared war?",
+          "question": "Why did Britain declare war on Germany in September 1939?",
+          "q": "Why did Britain declare war on Germany in September 1939?",
           "options": [
-            "1 September 1939",
-            "3 September 1939",
-            "11 November 1938",
-            "10 May 1940"
+            "Adolf Hitler's German army had invaded Poland",
+            "German ships had blocked the River Thames",
+            "Germany had shut down British wireless radios",
+            "Enemy bombers had already destroyed London"
           ],
           "correct": 0,
-          "answer": "1 September 1939",
-          "a": "1 September 1939",
-          "explanation": "Adolf Hitler's German army invaded Poland on 1 September 1939, prompting Britain to declare war two days later."
+          "answer": "Adolf Hitler's German army had invaded Poland",
+          "a": "Adolf Hitler's German army had invaded Poland",
+          "explanation": "Britain declared war on Germany two days after Adolf Hitler's German army invaded Poland."
         },
         {
           "stage": 1,
@@ -538,18 +604,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 3,
-          "question": "On what date did the wartime Blackout begin across Britain?",
-          "q": "On what date did the wartime Blackout begin across Britain?",
+          "question": "Why did British families hang thick black curtains over every window during the Blackout?",
+          "q": "Why did British families hang thick black curtains over every window during the Blackout?",
           "options": [
-            "25 December 1939",
-            "7 September 1940",
-            "8 May 1945",
-            "1 September 1939"
+            "To keep out freezing winter wind",
+            "To help babies sleep during the afternoon",
+            "To stop sunlight from fading their furniture",
+            "So German night bombers could not spot cities below"
           ],
           "correct": 3,
-          "answer": "1 September 1939",
-          "a": "1 September 1939",
-          "explanation": "The nationwide Blackout started on Friday 1 September 1939, two days before Britain's formal declaration of war."
+          "answer": "So German night bombers could not spot cities below",
+          "a": "So German night bombers could not spot cities below",
+          "explanation": "Families covered every window with thick black curtains so enemy bombers flying at night could not see lit-up towns and cities."
         },
         {
           "stage": 3,
@@ -1090,15 +1156,15 @@ const UNIT_DATA = {
           },
           {
             "stage": 3,
-            "question": "On what date did the wartime Blackout begin across Britain?",
-            "answer": "1 September 1939",
-            "explanation": "The nationwide Blackout started on Friday 1 September 1939, two days before Britain's formal declaration of war."
+            "question": "Why did British families hang thick black curtains over every window during the Blackout?",
+            "answer": "So German night bombers could not spot cities below",
+            "explanation": "Families covered every window with thick black curtains so enemy bombers flying at night could not see lit-up towns and cities."
           },
           {
             "stage": 1,
-            "question": "On what date did Adolf Hitler's German army invade Poland, two days before Britain declared war?",
-            "answer": "1 September 1939",
-            "explanation": "Adolf Hitler's German army invaded Poland on 1 September 1939, prompting Britain to declare war two days later."
+            "question": "Why did Britain declare war on Germany in September 1939?",
+            "answer": "Adolf Hitler's German army had invaded Poland",
+            "explanation": "Britain declared war on Germany two days after Adolf Hitler's German army invaded Poland."
           },
           {
             "stage": 2,
@@ -1497,18 +1563,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 3,
-          "question": "When did Operation Pied Piper begin moving children out of British cities?",
-          "q": "When did Operation Pied Piper begin moving children out of British cities?",
+          "question": "Why do historians say British evacuees had mixed experiences in the countryside?",
+          "q": "Why do historians say British evacuees had mixed experiences in the countryside?",
           "options": [
-            "10 May 1940",
-            "7 September 1940",
-            "1 September 1939",
-            "6 June 1944"
+            "Every evacuee was sent back to the city after one week",
+            "All evacuees were forced to work in coal mines",
+            "Some were treated like family, while others felt lonely or lived in strict homes",
+            "Only older teenagers were allowed to stay with host families"
           ],
           "correct": 2,
-          "answer": "1 September 1939",
-          "a": "1 September 1939",
-          "explanation": "Evacuation trains began departing city stations at dawn on Friday 1 September 1939, the day Germany invaded Poland."
+          "answer": "Some were treated like family, while others felt lonely or lived in strict homes",
+          "a": "Some were treated like family, while others felt lonely or lived in strict homes",
+          "explanation": "Evacuees had very different experiences: thousands enjoyed warm beds, fresh air, and lifelong friendships, while others felt homesick or lived in strict homes."
         },
         {
           "stage": 3,
@@ -2039,9 +2105,9 @@ const UNIT_DATA = {
           },
           {
             "stage": 3,
-            "question": "When did Operation Pied Piper begin moving children out of British cities?",
-            "answer": "1 September 1939",
-            "explanation": "Evacuation trains began departing city stations at dawn on Friday 1 September 1939, the day Germany invaded Poland."
+            "question": "Why do historians say British evacuees had mixed experiences in the countryside?",
+            "answer": "Some were treated like family, while others felt lonely or lived in strict homes",
+            "explanation": "Evacuees had very different experiences: thousands enjoyed warm beds, fresh air, and lifelong friendships, while others felt homesick or lived in strict homes."
           },
           {
             "stage": 1,
@@ -2358,11 +2424,11 @@ const UNIT_DATA = {
             "Training as fighter pilots at primary school",
             "Living on ocean liners all year",
             "Working night shifts in coal mines",
-            "Playing in football teams, riding bicycles, and joining scout groups"
+            "They played in local football teams, rode bicycles, and joined scout groups"
           ],
           "correct": 3,
-          "answer": "Playing in football teams, riding bicycles, and joining scout groups",
-          "a": "Playing in football teams, riding bicycles, and joining scout groups",
+          "answer": "They played in local football teams, rode bicycles, and joined scout groups",
+          "a": "They played in local football teams, rode bicycles, and joined scout groups",
           "explanation": "Before 1933, Jewish children shared the same everyday hobbies, sports teams, bicycles, and holidays as their friends."
         },
         {
@@ -5039,7 +5105,73 @@ const UNIT_DATA = {
               "studio_voice_label": "Anderson Shelter Guide (1939)"
             }
           ],
-          "content": "<span class=\"para-ref\">[6.3]</span> As raids lasted 57 nights in a row, the government gave over **2 million corrugated steel Anderson shelters** free to poorer families with gardens. Families dug a pit **3 feet deep** in the lawn and bolted six curved steel sheets together. Then they piled **15 inches of soil** on top and grew vegetables and flowers on the roof! Though cold and damp, Anderson shelters stood firm against bomb blasts.<br><br><span class=\"para-ref\">[6.4]</span> Millions of city families had no garden. From early 1941, they received indoor **Morrison shelters** — strong steel-mesh cages shaped like dining tables. Families ate meals on top by day and slept safely inside the cage at night."
+          "content": "<span class=\"para-ref\">[6.3]</span> As raids lasted 57 nights in a row, the government gave over **2 million corrugated steel Anderson shelters** free to poorer families with gardens. Families dug a pit **3 feet deep** in the lawn and bolted six curved steel sheets together. Then they piled **15 inches of soil** on top and grew vegetables and flowers on the roof! Though cold and damp, Anderson shelters stood firm against bomb blasts.<br><br><span class=\"para-ref\">[6.4]</span> Millions of city families had no garden. From early 1941, they received indoor **Morrison shelters** — strong steel-mesh cages shaped like dining tables. Families ate meals on top by day and slept safely inside the cage at night.",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "KS2 Shelter Engineering Explorer",
+            "title": "Three Ways British Families Sheltered During the Blitz (1940–41)",
+            "default_index": 0,
+            "caption": "Compare how families with gardens, families without gardens, and inner-city Londoners stayed safe during night raids.",
+            "stops": [
+              {
+                "short_label": "1. Anderson Shelter",
+                "label": "Garden Anderson Shelter (From 1939)",
+                "color": "#15803d",
+                "bg_color": "rgba(21, 128, 61, 0.16)",
+                "summary": "Six curved corrugated steel sheets bolted together, sunk 3 feet into the back garden and covered with 15 inches of soil.",
+                "traits": [
+                  {
+                    "icon": "shield",
+                    "category": "Blast Protection",
+                    "value": "Thick earth cushioned shockwaves and stopped sharp shrapnel"
+                  },
+                  {
+                    "icon": "snowflake",
+                    "category": "Night Conditions",
+                    "value": "Cold and damp in winter—families brought blankets and flasks"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Morrison Cage",
+                "label": "Indoor Steel Morrison Table Shelter (From 1941)",
+                "color": "#2563eb",
+                "bg_color": "rgba(37, 99, 235, 0.16)",
+                "summary": "Designed for terraced houses and flats with no garden—a heavy steel-topped cage that doubled as a kitchen table by day.",
+                "traits": [
+                  {
+                    "icon": "home",
+                    "category": "Ceiling Collapse Shield",
+                    "value": "Thick steel roof and wire-mesh sides protected sleepers indoors"
+                  },
+                  {
+                    "icon": "users",
+                    "category": "Warmth Indoors",
+                    "value": "Warmer and drier than a muddy winter garden shelter"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Tube Platforms",
+                "label": "Deep London Underground Stations",
+                "color": "#b45309",
+                "bg_color": "rgba(180, 83, 9, 0.16)",
+                "summary": "Up to 177,000 Londoners sheltered nightly on deep Underground platforms fitted with triple-tier bunks and WVS tea stalls.",
+                "traits": [
+                  {
+                    "icon": "train",
+                    "category": "Deep Below Streets",
+                    "value": "Tens of feet of London clay muffled bomb blasts overhead"
+                  },
+                  {
+                    "icon": "heart",
+                    "category": "Community Spirit",
+                    "value": "Singing, first-aid posts, and hot sweet tea kept spirits high"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "act": 3,
@@ -5157,18 +5289,18 @@ const UNIT_DATA = {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date (\"Black Saturday\") did the London Blitz begin?",
-          "q": "On what date (\"Black Saturday\") did the London Blitz begin?",
+          "question": "Why did Adolf Hitler order German bombers to attack London and other British cities during the Blitz?",
+          "q": "Why did Adolf Hitler order German bombers to attack London and other British cities during the Blitz?",
           "options": [
-            "7 September 1940",
-            "3 September 1939",
-            "7 December 1941",
-            "8 May 1945"
+            "To try to force Britain to surrender",
+            "To rescue German soldiers trapped in the River Thames",
+            "To search for hidden Roman treasure under St Paul's Cathedral",
+            "To stop British farmers from growing garden vegetables"
           ],
           "correct": 0,
-          "answer": "7 September 1940",
-          "a": "7 September 1940",
-          "explanation": "Heavy daylight and night raids on London's East End docks began on Saturday 7 September 1940, remembered as \"Black Saturday\"."
+          "answer": "To try to force Britain to surrender",
+          "a": "To try to force Britain to surrender",
+          "explanation": "Hitler launched the Blitz against London and major UK ports and factory cities to try to break British spirit and force Britain to surrender."
         },
         {
           "stage": 1,
@@ -5846,9 +5978,9 @@ const UNIT_DATA = {
         "items": [
           {
             "stage": 1,
-            "question": "On what date (\"Black Saturday\") did the London Blitz begin?",
-            "answer": "7 September 1940",
-            "explanation": "Heavy daylight and night raids on London's East End docks began on Saturday 7 September 1940, remembered as \"Black Saturday\"."
+            "question": "Why did Adolf Hitler order German bombers to attack London and other British cities during the Blitz?",
+            "answer": "To try to force Britain to surrender",
+            "explanation": "Hitler launched the Blitz against London and major UK ports and factory cities to try to break British spirit and force Britain to surrender."
           },
           {
             "stage": 2,
@@ -5998,7 +6130,73 @@ const UNIT_DATA = {
               "studio_voice_label": "Child’s Ration Book Rules (1940)"
             }
           ],
-          "content": "<span class=\"para-ref\">[7.3]</span> Everyone received a paper **ration book** filled with **coupons** and registered with local shops. Shopkeepers snipped or stamped a coupon whenever a family paid. One adult's weekly ration allowed just **one fresh egg**, **50g of butter**, **50g of cheese**, and **two rashers of bacon**. Families eked out meals with dried egg powder and tinned **Spam**.<br><br><span class=\"para-ref\">[7.4]</span> Expectant mothers and children under five were given green ration books. These provided extra milk, **free cod liver oil**, and **concentrated orange juice** for vitamins. **Wasting edible food** became a crime, and inspectors hunted cheats trading without coupons on the illegal **Black Market**."
+          "content": "<span class=\"para-ref\">[7.3]</span> Everyone received a paper **ration book** filled with **coupons** and registered with local shops. Shopkeepers snipped or stamped a coupon whenever a family paid. One adult's weekly ration allowed just **one fresh egg**, **50g of butter**, **50g of cheese**, and **two rashers of bacon**. Families eked out meals with dried egg powder and tinned **Spam**.<br><br><span class=\"para-ref\">[7.4]</span> Expectant mothers and children under five were given green ration books. These provided extra milk, **free cod liver oil**, and **concentrated orange juice** for vitamins. **Wasting edible food** became a crime, and inspectors hunted cheats trading without coupons on the illegal **Black Market**.",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "KS2 Wartime Kitchen Explorer",
+            "title": "Fair Shares for All: Ration Books vs Unrationed Allotments",
+            "default_index": 0,
+            "caption": "Explore how weekly ration coupons and 1.4 million allotments kept rich and poor children healthy.",
+            "stops": [
+              {
+                "short_label": "1. Adult Ration Book",
+                "label": "Buff Ration Book: Typical Adult Weekly Share",
+                "color": "#b45309",
+                "bg_color": "rgba(180, 83, 9, 0.16)",
+                "summary": "Every shopper registered with local grocers who snipped or stamped coupons—money alone could not buy extra bacon or sugar.",
+                "traits": [
+                  {
+                    "icon": "scale-balanced",
+                    "category": "Weekly Fats & Meat",
+                    "value": "1 fresh egg, 2oz butter, 2oz cheese, and 4oz bacon (~4 rashers)"
+                  },
+                  {
+                    "icon": "utensils",
+                    "category": "Store-Cupboard Swap",
+                    "value": "8oz sugar, 2oz tea, plus tins of dried egg powder for baking"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Green Priority Book",
+                "label": "Extra Milk & Vitamins for Mothers and Toddlers",
+                "color": "#0284c7",
+                "bg_color": "rgba(2, 132, 199, 0.16)",
+                "summary": "Expectant mothers and children under five received green ration books guaranteeing extra milk, eggs, and vitamins.",
+                "traits": [
+                  {
+                    "icon": "heart",
+                    "category": "Growing Stronger",
+                    "value": "Daily milk, concentrated orange juice, and cod liver oil"
+                  },
+                  {
+                    "icon": "award",
+                    "category": "Surprise Result",
+                    "value": "British children grew taller and healthier than in the 1930s!"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Dig for Victory",
+                "label": "1.4 Million Unrationed Vegetable Allotments",
+                "color": "#15803d",
+                "bg_color": "rgba(21, 128, 61, 0.16)",
+                "summary": "Home-grown potatoes, carrots, cabbages, and swedes were never rationed—saving vital cargo space on Atlantic ships.",
+                "traits": [
+                  {
+                    "icon": "seedling",
+                    "category": "Every Spare Patch",
+                    "value": "Lawns, railway banks, school fields, and the Tower of London moat"
+                  },
+                  {
+                    "icon": "carrot",
+                    "category": "Lord Woolton Pie",
+                    "value": "Root vegetables & oatmeal pastry replaced rationed beef"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "act": 3,
@@ -6182,11 +6380,11 @@ const UNIT_DATA = {
             "Because British shops had run out of coins and banknotes",
             "To stop farmers growing wheat and potatoes in Britain",
             "Because refrigerators had not been invented yet",
-            "Otherwise wealthy shoppers could buy everything while poorer families went hungry"
+            "So wealthy shoppers could not buy everything while poorer families went hungry"
           ],
           "correct": 3,
-          "answer": "Otherwise wealthy shoppers could buy everything while poorer families went hungry",
-          "a": "Otherwise wealthy shoppers could buy everything while poorer families went hungry",
+          "answer": "So wealthy shoppers could not buy everything while poorer families went hungry",
+          "a": "So wealthy shoppers could not buy everything while poorer families went hungry",
           "explanation": "Without rationing, soaring food prices would have left poorer families hungry while wealthy shoppers bought scarce supplies."
         },
         {
@@ -7250,11 +7448,11 @@ const UNIT_DATA = {
             "Dropping paratroopers over Germany",
             "Operating radar masts on the coast",
             "Driving mobile tea vans in London",
-            "Ferrying newly built Spitfires and bombers from factories to RAF airfields"
+            "They ferried new Spitfires, Hurricanes, and Lancaster bombers from factories to RAF airfields"
           ],
           "correct": 3,
-          "answer": "Ferrying newly built Spitfires and bombers from factories to RAF airfields",
-          "a": "Ferrying newly built Spitfires and bombers from factories to RAF airfields",
+          "answer": "They ferried new Spitfires, Hurricanes, and Lancaster bombers from factories to RAF airfields",
+          "a": "They ferried new Spitfires, Hurricanes, and Lancaster bombers from factories to RAF airfields",
           "explanation": "168 skilled female ATA pilots ferried Spitfires, Hurricanes, and four-engine Lancaster bombers from factories to RAF airfields."
         },
         {
@@ -7801,7 +7999,7 @@ const UNIT_DATA = {
           {
             "stage": 3,
             "question": "What vital job did the 168 female pilots of the Air Transport Auxiliary (ATA) perform?",
-            "answer": "Ferrying newly built Spitfires and bombers from factories to RAF airfields",
+            "answer": "They ferried new Spitfires, Hurricanes, and Lancaster bombers from factories to RAF airfields",
             "explanation": "168 skilled female ATA pilots ferried Spitfires, Hurricanes, and four-engine Lancaster bombers from factories to RAF airfields."
           },
           {
@@ -7888,7 +8086,73 @@ const UNIT_DATA = {
               "source_context": "The Enigma machine scrambled secret military radio messages into random letters using three or four rotors and a plugboard, producing 158 million million million (158,962,555,217,826,360,000) possible daily settings. The German military believed it was 100% unbreakable. **Hinge Question:** Why were German military commanders so utterly convinced that no human or machine could ever crack the Enigma code?"
             }
           ],
-          "content": "<span class=\"para-ref\">[9.1]</span> During World War II, German generals and U-boat captains sent secret battle orders as Morse code beeps over radio waves. British listeners could hear every beep, yet the letters looked like nonsense. A portable German cipher machine called the **Enigma machine** had scrambled every message.<br><br><span class=\"para-ref\">[9.2]</span> Inside each Enigma box sat spinning **wired wheels (rotors)** and an electrical **plugboard** at the front. Pressing \"A\" might light up \"Q\" first, then \"M\" next! Altogether, Enigma had **over 158 million million million** possible settings, and German operators changed the settings at **midnight every night**."
+          "content": "<span class=\"para-ref\">[9.1]</span> During World War II, German generals and U-boat captains sent secret battle orders as Morse code beeps over radio waves. British listeners could hear every beep, yet the letters looked like nonsense. A portable German cipher machine called the **Enigma machine** had scrambled every message.<br><br><span class=\"para-ref\">[9.2]</span> Inside each Enigma box sat spinning **wired wheels (rotors)** and an electrical **plugboard** at the front. Pressing \"A\" might light up \"Q\" first, then \"M\" next! Altogether, Enigma had **over 158 million million million** possible settings, and German operators changed the settings at **midnight every night**.",
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "KS2 Station X Codebreaker Explorer",
+            "title": "From German Enigma Signal to Bletchley Park \"Ultra\" Warning",
+            "default_index": 0,
+            "caption": "Step through how Enigma scrambled every letter—and how 10,000 staff at Bletchley Park cracked it.",
+            "stops": [
+              {
+                "short_label": "1. Enigma Scrambler",
+                "label": "Spinning Rotors & Plugboard Wires",
+                "color": "#dc2626",
+                "bg_color": "rgba(220, 38, 38, 0.16)",
+                "summary": "Pressing one letter key sent electricity through three spinning wheels and plugboard cables so a different bulb lit up every time.",
+                "traits": [
+                  {
+                    "icon": "gears",
+                    "category": "Moving Wheels",
+                    "value": "Pressing A three times in a row lit up three different letters!"
+                  },
+                  {
+                    "icon": "clock",
+                    "category": "Midnight Reset",
+                    "value": "158 million million million settings—reset every 24 hours"
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Turing’s Bombe",
+                "label": "Alan Turing & Gordon Welchman’s Bombe Machine",
+                "color": "#2563eb",
+                "bg_color": "rgba(37, 99, 235, 0.16)",
+                "summary": "Building on Polish maths clues, spinning Bombe drums tested wheel positions at high speed using predictable German weather words.",
+                "traits": [
+                  {
+                    "icon": "bolt",
+                    "category": "High-Speed Logic",
+                    "value": "Ruled out thousands of wrong Enigma settings before breakfast"
+                  },
+                  {
+                    "icon": "users",
+                    "category": "Team Effort",
+                    "value": "75% of Bletchley Park’s 10,000 workers were women (Wrens & clerks)"
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Ultra & Secrecy",
+                "label": "Saving Atlantic Ships & Keeping Silent for 30 Years",
+                "color": "#059669",
+                "bg_color": "rgba(5, 150, 105, 0.16)",
+                "summary": "Decoded \"Ultra\" warnings steered Allied food convoys away from U-boat wolf packs and shortened the war by up to two years.",
+                "traits": [
+                  {
+                    "icon": "ship",
+                    "category": "Lifesaving Warnings",
+                    "value": "Helped merchant ships bring wheat and fuel safely to Britain"
+                  },
+                  {
+                    "icon": "lock",
+                    "category": "Official Secrets Act",
+                    "value": "Workers never breathed a word—even to parents—until the 1970s"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -9017,18 +9281,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 1,
-          "question": "On what exact date was Victory in Europe (VE) Day celebrated across Britain?",
-          "q": "On what exact date was Victory in Europe (VE) Day celebrated across Britain?",
+          "question": "What event finally brought nearly six years of fighting in Europe to an end on VE Day?",
+          "q": "What event finally brought nearly six years of fighting in Europe to an end on VE Day?",
           "options": [
-            "3 September 1939",
-            "15 August 1945",
-            "8 May 1945",
-            "11 November 1945"
+            "Britain finished building two million new homes",
+            "Food rationing ended across every British town",
+            "Nazi Germany surrendered unconditionally",
+            "The National Health Service opened its first hospital"
           ],
           "correct": 2,
-          "answer": "8 May 1945",
-          "a": "8 May 1945",
-          "explanation": "Nazi Germany's unconditional surrender was celebrated across Britain on Tuesday 8 May 1945 — VE Day."
+          "answer": "Nazi Germany surrendered unconditionally",
+          "a": "Nazi Germany surrendered unconditionally",
+          "explanation": "VE Day (Victory in Europe Day) was celebrated after Nazi Germany surrendered unconditionally, ending nearly six years of war in Europe."
         },
         {
           "stage": 1,
@@ -9036,29 +9300,29 @@ const UNIT_DATA = {
           "q": "How did neighbours in towns and villages celebrate VE Day together once blackout curtains came down?",
           "options": [
             "Going on skiing holidays across Europe",
-            "Holding street parties with bunting, cakes, and bonfires",
+            "With street parties, red, white, and blue bunting, cakes, and bonfires",
             "Ending all food rationing that same evening",
             "Taking steam trains back to wartime shelters"
           ],
           "correct": 1,
-          "answer": "Holding street parties with bunting, cakes, and bonfires",
-          "a": "Holding street parties with bunting, cakes, and bonfires",
+          "answer": "With street parties, red, white, and blue bunting, cakes, and bonfires",
+          "a": "With street parties, red, white, and blue bunting, cakes, and bonfires",
           "explanation": "Neighbours carried tables into roads, hung red, white, and blue bunting, and pooled rations to bake cakes for children's street parties."
         },
         {
           "stage": 1,
-          "question": "On what date did the Second World War finally end in Asia with Victory over Japan (VJ) Day?",
-          "q": "On what date did the Second World War finally end in Asia with Victory over Japan (VJ) Day?",
+          "question": "Why did many British families still feel worried on VE Day even as crowds celebrated in the streets?",
+          "q": "Why did many British families still feel worried on VE Day even as crowds celebrated in the streets?",
           "options": [
-            "15 August 1945",
-            "8 May 1945",
-            "6 June 1944",
-            "25 December 1945"
+            "Soldiers were still fighting Japan in Asia until VJ Day",
+            "Blackout curtains were not allowed to be taken down yet",
+            "Church bells were still banned from ringing in Britain",
+            "King George VI had not yet returned to London"
           ],
           "correct": 0,
-          "answer": "15 August 1945",
-          "a": "15 August 1945",
-          "explanation": "Fighting against Japan in Asia continued for three more months after VE Day until VJ Day on 15 August 1945."
+          "answer": "Soldiers were still fighting Japan in Asia until VJ Day",
+          "a": "Soldiers were still fighting Japan in Asia until VJ Day",
+          "explanation": "Even though the war in Europe was over on VE Day, many families still worried for loved ones fighting against Japan in Asia until VJ Day."
         },
         {
           "stage": 2,
@@ -9167,18 +9431,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 3,
-          "question": "On what date every autumn is Armistice Day commemorated across the United Kingdom?",
-          "q": "On what date every autumn is Armistice Day commemorated across the United Kingdom?",
+          "question": "According to the lesson, what does remembering World War II teach each new generation today?",
+          "q": "According to the lesson, what does remembering World War II teach each new generation today?",
           "options": [
-            "11 November",
-            "8 May",
-            "3 September",
-            "7 September"
+            "About ordinary courage and our duty to protect peace",
+            "How to build wooden wireless radios at home",
+            "How to sew thick black curtains for house windows",
+            "Why street parties should only happen in autumn"
           ],
           "correct": 0,
-          "answer": "11 November",
-          "a": "11 November",
-          "explanation": "Every year on 11 November (Armistice Day) and Remembrance Sunday, communities gather at war memorials."
+          "answer": "About ordinary courage and our duty to protect peace",
+          "a": "About ordinary courage and our duty to protect peace",
+          "explanation": "Remembering World War II honours everyone who served and suffered, teaching each generation about ordinary courage and our duty to protect peace."
         },
         {
           "stage": 3,
@@ -9720,9 +9984,9 @@ const UNIT_DATA = {
           },
           {
             "stage": 1,
-            "question": "On what exact date was Victory in Europe (VE) Day celebrated across Britain?",
-            "answer": "8 May 1945",
-            "explanation": "Nazi Germany's unconditional surrender was celebrated across Britain on Tuesday 8 May 1945 — VE Day."
+            "question": "What event finally brought nearly six years of fighting in Europe to an end on VE Day?",
+            "answer": "Nazi Germany surrendered unconditionally",
+            "explanation": "VE Day (Victory in Europe Day) was celebrated after Nazi Germany surrendered unconditionally, ending nearly six years of war in Europe."
           },
           {
             "stage": 2,
@@ -9732,14 +9996,14 @@ const UNIT_DATA = {
           },
           {
             "stage": 3,
-            "question": "On what date every autumn is Armistice Day commemorated across the United Kingdom?",
-            "answer": "11 November",
-            "explanation": "Every year on 11 November (Armistice Day) and Remembrance Sunday, communities gather at war memorials."
+            "question": "According to the lesson, what does remembering World War II teach each new generation today?",
+            "answer": "About ordinary courage and our duty to protect peace",
+            "explanation": "Remembering World War II honours everyone who served and suffered, teaching each generation about ordinary courage and our duty to protect peace."
           },
           {
             "stage": 1,
             "question": "How did neighbours in towns and villages celebrate VE Day together once blackout curtains came down?",
-            "answer": "Holding street parties with bunting, cakes, and bonfires",
+            "answer": "With street parties, red, white, and blue bunting, cakes, and bonfires",
             "explanation": "Neighbours carried tables into roads, hung red, white, and blue bunting, and pooled rations to bake cakes for children's street parties."
           }
         ]
@@ -10002,18 +10266,18 @@ const UNIT_DATA = {
         },
         {
           "stage": 1,
-          "question": "On what date did ten converted RAF bombers fly 300 orphaned child survivors from Prague to Cumbria?",
-          "q": "On what date did ten converted RAF bombers fly 300 orphaned child survivors from Prague to Cumbria?",
+          "question": "Why did the 300 young Holocaust survivors need Britain to offer them a safe home in 1945?",
+          "q": "Why did the 300 young Holocaust survivors need Britain to offer them a safe home in 1945?",
           "options": [
-            "14 August 1945",
-            "8 May 1945",
-            "1 September 1939",
-            "15 November 1938"
+            "Their families had been murdered and their old homes were gone",
+            "They were visiting Lake Windermere on a summer school holiday",
+            "They wanted to train as Royal Air Force pilots in Cumbria",
+            "Their parents had sent them to learn how to build flying boats"
           ],
           "correct": 0,
-          "answer": "14 August 1945",
-          "a": "14 August 1945",
-          "explanation": "On 14 August 1945, ten RAF Short Stirling bombers carried 300 child survivors on a mercy airlift from Prague."
+          "answer": "Their families had been murdered and their old homes were gone",
+          "a": "Their families had been murdered and their old homes were gone",
+          "explanation": "Freed from Nazi concentration camps, these orphaned Jewish children and teenagers had lost their families and homes and had nowhere safe to live."
         },
         {
           "stage": 1,
@@ -11907,4 +12171,9 @@ const UNIT_DATA = {
     }
   ]
 };
+
+if (typeof window !== 'undefined') {
+  window.UNIT_DATA = UNIT_DATA;
+}
+
 export default UNIT_DATA;

@@ -5,7 +5,7 @@
  * Designed specifically for Key Stage 2 pupils (Years 5–6) and front-of-class interactive whiteboards.
  *
  * Features:
- * - 13 Curated Landmark Milestones aligned 1:1 with the 11 Canonical Enquiries & 20-Page Master Textbook
+ * - 13 Curated Landmark Milestones aligned 1:1 with the 11 Canonical Enquiries & 16-Page Master Textbook
  * - Interactive horizontal highway track with synchronized range slider & clickable stepper nodes
  * - Automatic "Classroom Tour" presentation mode with smooth auto-advancing timer
  * - Filter pills (All 13 Milestones, Evacuation & Children, Air Raids & Defence, Daily Life & Rationing, Secret War & Victory)
@@ -24,10 +24,10 @@ export const KS2_WW2_MILESTONES = [
     categoryLabel: 'Evacuation & Children',
     image: '/units/ks2_ww2/assets/hakoah_vienna_football_1925.jpg',
     imageCaption:
-      'Eleven boys from a Jewish youth football team posing proudly in striped team shirts before Nazi laws banned them from public sports pitches (c. 1935).',
-    provenance: 'United States Holocaust Memorial Museum / Pre-War Family Archive',
-    refTextbook: 'p. 6 • Enquiry 3',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-6',
+      'Footballers of Jewish sports club SC Hakoah Vienna standing proudly before a packed stadium with their Star of David banner before Nazi laws banned Jewish athletes (1925).',
+    provenance: 'Public Domain Historical Sports Archive',
+    refTextbook: 'p. 5 • Enquiry 3',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-5',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_03_prewar_life_worksheet.html',
     badgeColor: '#7c3aed',
     story:
@@ -54,8 +54,8 @@ export const KS2_WW2_MILESTONES = [
     imageCaption:
       'Young unaccompanied refugee children carrying dolls and small suitcases as they arrive at Harwich Docks in Essex off the ferry from the Netherlands (December 1938).',
     provenance: 'Imperial War Museum / Topical Press',
-    refTextbook: 'p. 7 • Enquiry 4',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-7',
+    refTextbook: 'p. 6 • Enquiry 4',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-6',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_04_kindertransport_worksheet.html',
     badgeColor: '#b45309',
     story:
@@ -80,10 +80,10 @@ export const KS2_WW2_MILESTONES = [
     categoryLabel: 'Evacuation & Children',
     image: '/units/ks2_ww2/assets/fuer_das_kind_winton_memorial_liverpool_st.jpg',
     imageCaption:
-      'Volunteer rescuer Nicholas Winton holding a young refugee child in Prague while organising safe train transports to Britain (1939).',
-    provenance: 'Nicholas Winton Family Archive',
-    refTextbook: 'p. 8 • Enquiry 5',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-8',
+      'Bronze Kindertransport memorial sculpture "Für Das Kind" ("For the Child") at London Liverpool Street Station, unveiled by rescuer Sir Nicholas Winton in 2003.',
+    provenance: 'Liverpool Street Station Memorial (CC BY-SA 2.0)',
+    refTextbook: 'p. 7 • Enquiry 5',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-7',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_05_rescuers_winton_worksheet.html',
     badgeColor: '#0284c7',
     story:
@@ -110,8 +110,8 @@ export const KS2_WW2_MILESTONES = [
     imageCaption:
       'British schoolchildren walking to the railway station with gas mask boxes and brown luggage labels tied to their coats (September 1939).',
     provenance: 'Imperial War Museum / National Archives',
-    refTextbook: 'p. 5 • Enquiry 2',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-5',
+    refTextbook: 'p. 4 • Enquiry 2',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-4',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_02_evacuation_worksheet.html',
     badgeColor: '#1e3a8a',
     story:
@@ -138,8 +138,8 @@ export const KS2_WW2_MILESTONES = [
     imageCaption:
       'British schoolchildren practising a gas mask drill with their cardboard carrying boxes in autumn 1939.',
     provenance: 'Imperial War Museum Photographic Archive',
-    refTextbook: 'p. 4 • Enquiry 1',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-4',
+    refTextbook: 'p. 3 • Enquiry 1',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-3',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_01_outbreak_gasmasks_worksheet.html',
     badgeColor: '#0f172a',
     story:
@@ -166,8 +166,8 @@ export const KS2_WW2_MILESTONES = [
     imageCaption:
       'Official Ministry of Food ration books with weekly coupons ensuring rich and poor families received fair shares (1940).',
     provenance: 'The National Archives / Ministry of Food',
-    refTextbook: 'p. 10 • Enquiry 7',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-10',
+    refTextbook: 'p. 9 • Enquiry 7',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-9',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_07_dig_for_victory_rationing_worksheet.html',
     badgeColor: '#15803d',
     story:
@@ -194,8 +194,8 @@ export const KS2_WW2_MILESTONES = [
     imageCaption:
       'British women factory workers cutting shiny aluminium-coated "Window" foil strips dropped by Royal Air Force crews to confuse enemy radar.',
     provenance: 'Imperial War Museum (D 21061)',
-    refTextbook: 'p. 9 & p. 11 • Enquiries 6 & 8',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-9',
+    refTextbook: 'p. 8 & p. 10 • Enquiries 6 & 8',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-8',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_08_women_at_war_land_army_worksheet.html',
     badgeColor: '#1d4ed8',
     story:
@@ -222,8 +222,8 @@ export const KS2_WW2_MILESTONES = [
     imageCaption:
       'London families sleeping side by side along a deep Underground station platform during night bombing in autumn 1940.',
     provenance: 'Imperial War Museum (D 1568)',
-    refTextbook: 'p. 9 • Enquiry 6',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-9',
+    refTextbook: 'p. 8 • Enquiry 6',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-8',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_06_the_blitz_shelters_worksheet.html',
     badgeColor: '#991b1b',
     story:
@@ -250,8 +250,8 @@ export const KS2_WW2_MILESTONES = [
     imageCaption:
       'Wartime campaign poster ("Come and help with the Victory Harvest") calling women and girls to help gather vital farm crops.',
     provenance: 'Wartime Harvest Poster Archive',
-    refTextbook: 'p. 11 • Enquiry 8',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-11',
+    refTextbook: 'p. 10 • Enquiry 8',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-10',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_08_women_at_war_land_army_worksheet.html',
     badgeColor: '#047857',
     story:
@@ -278,8 +278,8 @@ export const KS2_WW2_MILESTONES = [
     imageCaption:
       'Wrens operating the spinning drums of a Turing-Welchman Bombe machine to test daily Enigma settings.',
     provenance: 'Bletchley Park / Wartime Archive',
-    refTextbook: 'p. 12 • Enquiry 9',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-12',
+    refTextbook: 'p. 11 • Enquiry 9',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-11',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_09_bletchley_codebreakers_worksheet.html',
     badgeColor: '#4f46e5',
     story:
@@ -302,12 +302,12 @@ export const KS2_WW2_MILESTONES = [
     title: 'VE Day: Victory in Europe & Street Celebrations',
     category: 'victory',
     categoryLabel: 'Secret War & Victory',
-    image: '/units/ks2_ww2/assets/ve_day_street_party_1945.jpg',
+    image: '/units/ks2_ww2/assets/ve_day_trafalgar_square_1945.jpg',
     imageCaption:
-      'Huge crowds cheering beneath Nelson’s Column in Trafalgar Square, London, on Victory in Europe (VE) Day, 8 May 1945.',
+      'Jubilant crowds packed along Whitehall in London around a double-decker bus celebrating Victory in Europe (VE) Day, 8 May 1945.',
     provenance: 'Imperial War Museum Archive',
-    refTextbook: 'p. 13 • Enquiry 10',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-13',
+    refTextbook: 'p. 12 • Enquiry 10',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-12',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_10_ve_day_remembrance_worksheet.html',
     badgeColor: '#b91c1c',
     story:
@@ -334,8 +334,8 @@ export const KS2_WW2_MILESTONES = [
     imageCaption:
       'An RAF Transport Command Short Stirling aircraft parked on the tarmac at Prague Airport during the August 1945 airlift bringing 300 orphaned child camp survivors to Carlisle and Lake Windermere.',
     provenance: 'Imperial War Museum (CH 15898)',
-    refTextbook: 'p. 14 • Enquiry 11',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-14',
+    refTextbook: 'p. 13 • Enquiry 11',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-13',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_11_windermere_children_worksheet.html',
     badgeColor: '#059669',
     story:
@@ -362,8 +362,8 @@ export const KS2_WW2_MILESTONES = [
     imageCaption:
       'Crowds gathered in Whitehall, London, for the unveiling of the permanent Cenotaph draped in Union Flags on 11 November 1920—later inscribed with the dates 1939–1945 to honour Second World War sacrifice.',
     provenance: 'Imperial War Museum (Q 31488)',
-    refTextbook: 'p. 13 & p. 20 • Enquiry 10',
-    textbookUrl: '/units/ks2_ww2/textbook.html#page-20',
+    refTextbook: 'p. 12 & p. 16 • Enquiry 10',
+    textbookUrl: '/units/ks2_ww2/textbook.html#page-12',
     worksheetUrl: '/units/ks2_ww2/worksheets/lesson_10_ve_day_remembrance_worksheet.html',
     badgeColor: '#6b21a8',
     story:
@@ -950,7 +950,7 @@ export function renderKs2TimelineSlider(container) {
           </div>
           <div style="display: flex; gap: 8px; flex-shrink: 0;">
             <a href="/units/ks2_ww2/textbook.html" target="_blank" class="btn" style="background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); font-weight: 700; font-size: 0.85rem; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-book-open"></i> 20-Page Master Textbook
+              <i class="fa-solid fa-book-open"></i> 16-Page Master Textbook
             </a>
           </div>
         </div>

@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <title>KS2 History Worksheet • Lesson 7: Dig for Victory & Wartime Rationing (1940–1945)</title>
+  <title>KS2 History Worksheet • Lesson 7: Dig for Victory &amp; Wartime Rationing (1940–1945)</title>
   <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,12 +10,12 @@
   <style>
     :root {
       --ink: #0f172a;
-      --ink-muted: #475569;
+      --ink-muted: #334155;
       --navy-primary: #1e3a8a;
       --navy-deep: #0f172a;
       --parchment: #fdfbf7;
       --accent-gold: #b45309;
-      --border-gray: #cbd5e1;
+      --border-gray: #94a3b8;
       --cut-guide: #94a3b8;
     }
 
@@ -26,6 +26,8 @@
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
+
+    svg g { opacity: 1 !important; }
 
     @page {
       size: 210mm 297mm;
@@ -53,6 +55,8 @@
       position: sticky;
       top: 0;
       z-index: 50;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
     .screen-toolbar-title {
@@ -64,6 +68,7 @@
     .screen-toolbar-actions {
       display: flex;
       gap: 8px;
+      align-items: center;
     }
 
     .screen-toolbar a,
@@ -93,7 +98,7 @@
       background: #ffffff;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
       margin: 8mm auto;
-      padding: 7.5mm 8mm 6.5mm 8mm;
+      padding: 7mm 8mm 6mm 8mm;
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -104,12 +109,8 @@
     }
 
     @media print {
-      body {
-        background: #ffffff;
-      }
-      .screen-toolbar {
-        display: none !important;
-      }
+      body { background: #ffffff; }
+      .screen-toolbar { display: none !important; }
       .worksheet-page {
         margin: 0;
         box-shadow: none !important;
@@ -126,13 +127,12 @@
       min-height: 0;
       border: 1.5px dashed var(--cut-guide);
       border-radius: 6px;
-      padding: 4.5mm 5.5mm 4mm 5.5mm;
+      padding: 4.2mm 5.2mm 3.8mm 5.2mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       position: relative;
       background: #ffffff;
-      overflow: visible;
     }
 
     .cut-indicator {
@@ -141,9 +141,9 @@
       left: 12mm;
       background: #ffffff;
       padding: 0 6px;
-      font-size: 7.5pt;
+      font-size: 7.4pt;
       font-weight: 700;
-      color: #64748b;
+      color: #475569;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       line-height: 1;
@@ -153,44 +153,51 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 10px;
       border-bottom: 2px solid var(--navy-deep);
-      padding-bottom: 1.8mm;
-      margin-bottom: 2mm;
+      padding-bottom: 1.6mm;
+      margin-bottom: 1.8mm;
       flex-shrink: 0;
     }
 
     .brand-left {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 7px;
+      min-width: 0;
     }
 
     .brand-badge {
       background: var(--navy-deep);
       color: #ffffff;
       font-family: 'Cinzel', serif;
-      font-size: 7.5pt;
+      font-size: 7.2pt;
       font-weight: 800;
       padding: 1.5px 6px;
       border-radius: 3px;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .brand-text {
-      font-size: 7.6pt;
+      font-size: 7.3pt;
       font-weight: 800;
       color: var(--navy-primary);
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
+      line-height: 1.15;
     }
 
     .student-fields {
       display: flex;
-      gap: 10px;
-      font-size: 8pt;
+      gap: 9px;
+      font-size: 7.8pt;
       font-weight: 700;
       color: var(--ink);
       align-items: center;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .field-item {
@@ -201,31 +208,29 @@
 
     .field-line {
       display: inline-block;
-      width: 34mm;
+      width: 31mm;
       border-bottom: 1.2px solid var(--ink);
-      height: 3.5mm;
+      height: 3.4mm;
     }
 
-    .field-line.short {
-      width: 20mm;
-    }
+    .field-line.short { width: 18mm; }
 
     .enquiry-banner {
       background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
       color: #ffffff;
       border-radius: 5px;
-      padding: 2.4mm 3.5mm;
+      padding: 2.2mm 3.4mm;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 3mm;
-      margin-bottom: 2.2mm;
+      margin-bottom: 2mm;
       flex-shrink: 0;
     }
 
     .enquiry-title-group h1 {
       font-family: 'Cinzel', serif;
-      font-size: 10.6pt;
+      font-size: 10.3pt;
       font-weight: 800;
       letter-spacing: 0.02em;
       line-height: 1.18;
@@ -235,37 +240,36 @@
       font-family: 'Lora', Georgia, serif;
       font-size: 8pt;
       font-style: italic;
-      color: #e2e8f0;
-      margin-top: 0.6mm;
-      line-height: 1.25;
+      color: #fde68a;
+      margin-top: 0.5mm;
+      line-height: 1.24;
     }
 
     .lesson-badge {
       background: rgba(255, 255, 255, 0.16);
       border: 1px solid rgba(255, 255, 255, 0.35);
-      padding: 1.6mm 3mm;
+      padding: 1.5mm 2.8mm;
       border-radius: 4px;
       text-align: center;
-      font-size: 7.5pt;
+      font-size: 7.4pt;
       font-weight: 800;
       letter-spacing: 0.04em;
       white-space: nowrap;
       flex-shrink: 0;
     }
 
-    /* STORY & SOURCE A */
     .story-evidence-grid {
       display: grid;
       grid-template-columns: 64mm 1fr;
-      gap: 3mm;
-      margin-bottom: 2.2mm;
+      gap: 2.8mm;
+      margin-bottom: 2mm;
       flex-shrink: 0;
     }
 
     .archival-plate-box {
-      border: 1px solid var(--border-gray);
+      border: 1.2px solid var(--border-gray);
       border-radius: 4px;
-      padding: 1.6mm;
+      padding: 1.5mm;
       background: #ffffff;
       display: flex;
       flex-direction: column;
@@ -275,7 +279,7 @@
 
     .archival-img {
       width: 100%;
-      height: 40mm;
+      height: 39mm;
       object-fit: contain;
       background: #f8fafc;
       border-radius: 3px;
@@ -283,8 +287,8 @@
     }
 
     .archival-caption {
-      font-size: 7.5pt;
-      line-height: 1.24;
+      font-size: 7.2pt;
+      line-height: 1.22;
       color: var(--ink-muted);
       margin-top: 1mm;
       text-align: center;
@@ -292,79 +296,75 @@
 
     .story-text-box {
       background: var(--parchment);
-      border: 1px solid #fed7aa;
-      border-left: 3.5px solid var(--accent-gold);
+      border: 1.2px solid #d97706;
+      border-left: 3.8px solid var(--accent-gold);
       border-radius: 4px;
-      padding: 2.2mm 3mm;
+      padding: 2mm 2.8mm;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
     .story-header {
-      font-size: 7.8pt;
+      font-size: 7.6pt;
       font-weight: 800;
       color: var(--navy-deep);
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      margin-bottom: 1mm;
+      margin-bottom: 0.9mm;
     }
 
     .story-prose {
       font-family: 'Lora', Georgia, serif;
-      font-size: 8.4pt;
-      line-height: 1.42;
-      color: #1e293b;
+      font-size: 8.3pt;
+      line-height: 1.4;
+      color: #0f172a;
     }
 
-    .story-prose strong {
-      color: var(--navy-primary);
-    }
+    .story-prose strong { color: var(--navy-primary); }
 
-    /* TASK CARDS */
     .task-card {
       background: #ffffff;
       border: 1.2px solid var(--border-gray);
       border-radius: 5px;
-      padding: 2.2mm 3mm;
+      padding: 2mm 2.8mm;
       display: flex;
       flex-direction: column;
-      margin-bottom: 2mm;
+      margin-bottom: 1.8mm;
       min-height: 0;
     }
 
-    .task-card.last {
-      margin-bottom: 0;
-    }
+    .task-card.last { margin-bottom: 0; }
 
-    .p1-task1 { flex: 1.12; }
-    .p1-task2 { flex: 1.02; }
-    .p2-task3 { flex: 1.34; }
-    .p2-task4 { flex: 0.86; }
-    .p2-task5 { flex: 0.84; }
+    .p1-task1 { flex: 1.1; }
+    .p1-task2 { flex: 1.04; }
+    .p2-task3 { flex: 1.36; }
+    .p2-task4 { flex: 0.84; }
+    .p2-task5 { flex: 0.82; }
 
     .task-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 1.5mm;
-      padding-bottom: 1mm;
-      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 1.4mm;
+      padding-bottom: 0.9mm;
+      border-bottom: 1px solid #cbd5e1;
       flex-shrink: 0;
     }
 
     .task-num-title {
-      font-size: 8.5pt;
+      font-size: 8.4pt;
       font-weight: 800;
       color: var(--navy-deep);
     }
 
     .task-tag {
-      font-size: 7.5pt;
-      font-weight: 700;
+      font-size: 7.2pt;
+      font-weight: 800;
       text-transform: uppercase;
       background: #e0e7ff;
-      color: #3730a3;
+      color: #1e3a8a;
+      border: 1px solid #93c5fd;
       padding: 1px 6px;
       border-radius: 3px;
     }
@@ -372,20 +372,20 @@
     .artifact-detective-grid {
       display: grid;
       grid-template-columns: 60mm 1fr;
-      gap: 3mm;
+      gap: 2.8mm;
       flex: 1;
       min-height: 0;
     }
 
     .artifact-container {
       background: #fdfbf7;
-      border: 1px dashed #d97706;
+      border: 1.2px dashed #b45309;
       border-radius: 4px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      padding: 1.8mm;
+      padding: 1.5mm;
       min-height: 0;
     }
 
@@ -393,18 +393,18 @@
       width: 100%;
       flex: 1;
       min-height: 0;
-      max-height: 58mm;
+      max-height: 57mm;
       object-fit: contain;
       border-radius: 3px;
       background: #ffffff;
     }
 
     .artifact-caption {
-      font-size: 7.5pt;
-      line-height: 1.22;
+      font-size: 7.1pt;
+      line-height: 1.2;
       color: var(--ink-muted);
       text-align: center;
-      margin-top: 1mm;
+      margin-top: 0.9mm;
       flex-shrink: 0;
     }
 
@@ -412,7 +412,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 1.8mm;
+      gap: 1.6mm;
       flex: 1;
       min-height: 0;
     }
@@ -426,10 +426,10 @@
     }
 
     .q-item {
-      font-size: 8pt;
+      font-size: 7.9pt;
       font-weight: 700;
       color: var(--navy-deep);
-      line-height: 1.24;
+      line-height: 1.22;
       margin-bottom: 0.4mm;
       flex-shrink: 0;
     }
@@ -443,7 +443,7 @@
     }
 
     .ruled-line {
-      height: 7.2mm;
+      height: 7mm;
       border-bottom: 1.2px dashed #94a3b8;
       width: 100%;
     }
@@ -451,25 +451,24 @@
     .ruled-lines-box .ruled-line {
       flex: 1;
       height: auto;
-      min-height: 5.0mm;
-      max-height: 7.8mm;
+      min-height: 4.8mm;
+      max-height: 7.5mm;
     }
 
-    /* TASK 2: 3-STEP TIMELINE */
     .timeline-3col {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 2.6mm;
+      gap: 2.4mm;
       flex: 1;
       min-height: 0;
     }
 
     .timeline-step-card {
       background: #f8fafc;
-      border: 1px solid #cbd5e1;
+      border: 1.1px solid #94a3b8;
       border-top: 3.5px solid var(--navy-primary);
       border-radius: 4px;
-      padding: 1.8mm 2.2mm;
+      padding: 1.6mm 2mm;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -477,42 +476,42 @@
     }
 
     .step-badge {
-      font-size: 7.5pt;
+      font-size: 7pt;
       font-weight: 800;
       color: var(--navy-primary);
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
     }
 
     .step-title {
-      font-size: 8pt;
+      font-size: 7.7pt;
       font-weight: 800;
       color: var(--navy-deep);
       margin: 0.3mm 0;
+      line-height: 1.16;
     }
 
     .step-desc {
-      font-size: 7.5pt;
+      font-size: 7.1pt;
       color: var(--ink-muted);
-      line-height: 1.22;
-      margin-bottom: 1mm;
+      line-height: 1.18;
+      margin-bottom: 0.8mm;
     }
 
     .step-prompt {
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       font-weight: 700;
       color: #1e3a8a;
-      line-height: 1.2;
-      padding-top: 1mm;
+      line-height: 1.18;
+      padding-top: 0.8mm;
       border-top: 1px dashed #cbd5e1;
-      margin-bottom: 0.4mm;
+      margin-bottom: 0.3mm;
       flex-shrink: 0;
     }
 
-    /* PAGE 2: TASK 3 */
     .visual-investigation-grid {
       display: grid;
-      grid-template-columns: 60mm 1fr;
-      gap: 3mm;
+      grid-template-columns: 62mm 1fr;
+      gap: 2.8mm;
       flex: 1;
       min-height: 0;
     }
@@ -521,46 +520,47 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border: 1.5px dashed #b45309;
+      border: 1.2px dashed #b45309;
       border-radius: 5px;
       background: #fdfbf7;
-      padding: 2.5mm;
+      padding: 1.8mm;
+      min-height: 0;
     }
 
-    .craft-mini-box {
+    .svg-showcase-slot {
       width: 100%;
-      border-radius: 5px;
-      padding: 3mm;
       flex: 1;
+      min-height: 0;
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+      align-items: center;
+      justify-content: center;
     }
 
     .canvas-subcaption {
-      font-size: 7.5pt;
+      font-size: 7.1pt;
       font-weight: 700;
-      color: #92400e;
+      color: #78350f;
       text-align: center;
-      margin-top: 1.5mm;
-      line-height: 1.22;
+      margin-top: 1mm;
+      line-height: 1.18;
+      flex-shrink: 0;
     }
 
     .investigation-ledger {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 1.4mm;
+      gap: 1.3mm;
       flex: 1;
       min-height: 0;
     }
 
     .ledger-row {
       background: #ffffff;
-      border: 1px solid #cbd5e1;
+      border: 1px solid #94a3b8;
       border-left: 3.5px solid var(--navy-primary);
       border-radius: 4px;
-      padding: 1.3mm 2.2mm;
+      padding: 1.2mm 2mm;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -569,32 +569,31 @@
     }
 
     .ledger-item-title {
-      font-size: 7.8pt;
+      font-size: 7.7pt;
       font-weight: 800;
       color: var(--navy-deep);
     }
 
     .ledger-reason-prompt {
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       color: var(--ink-muted);
-      line-height: 1.18;
+      line-height: 1.16;
       margin-bottom: 0.2mm;
     }
 
-    /* TASK 4: THINKING HEADS */
     .thinking-heads-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 3mm;
+      gap: 2.8mm;
       flex: 1;
       min-height: 0;
     }
 
     .head-card {
       background: #f8fafc;
-      border: 1px solid var(--border-gray);
+      border: 1.1px solid var(--border-gray);
       border-radius: 5px;
-      padding: 1.8mm 2.5mm;
+      padding: 1.6mm 2.3mm;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -605,47 +604,46 @@
       display: flex;
       align-items: center;
       gap: 6px;
-      margin-bottom: 0.6mm;
+      margin-bottom: 0.5mm;
       flex-shrink: 0;
     }
 
     .head-badge {
-      width: 18px;
-      height: 18px;
+      width: 17px;
+      height: 17px;
       border-radius: 50%;
       background: var(--navy-primary);
       color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       font-weight: 800;
       flex-shrink: 0;
     }
 
     .head-name {
-      font-size: 7.8pt;
+      font-size: 7.6pt;
       font-weight: 800;
       color: var(--navy-deep);
-      line-height: 1.2;
+      line-height: 1.18;
     }
 
     .thought-prompt {
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       color: var(--navy-primary);
       font-weight: 600;
-      line-height: 1.22;
-      margin-bottom: 0.4mm;
+      line-height: 1.2;
+      margin-bottom: 0.3mm;
       flex-shrink: 0;
     }
 
-    /* TASK 5: MISSION CHALLENGE */
     .synthesis-container {
       background: #fdfbf7;
-      border: 1.2px solid #fed7aa;
+      border: 1.2px solid #d97706;
       border-left: 4px solid var(--accent-gold);
       border-radius: 5px;
-      padding: 1.8mm 2.8mm;
+      padding: 1.6mm 2.6mm;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -653,15 +651,25 @@
       min-height: 0;
     }
 
-    .wb-scaffold-strip { font-size: 6.9pt; line-height: 1.2; color: #334155; background: #fffbeb; border: 1px solid #fde68a; border-radius: 3px; padding: 0.6mm 1.5mm; margin-bottom: 0.4mm; flex-shrink: 0; }
+    .wb-scaffold-strip {
+      font-size: 6.9pt;
+      line-height: 1.2;
+      color: #1e293b;
+      background: #fffbeb;
+      border: 1px solid #f59e0b;
+      border-radius: 3px;
+      padding: 0.6mm 1.5mm;
+      margin-bottom: 0.4mm;
+      flex-shrink: 0;
+    }
 
     .synthesis-header {
       font-family: 'Lora', Georgia, serif;
-      font-size: 8.2pt;
+      font-size: 8pt;
       font-style: italic;
       color: var(--navy-primary);
       font-weight: 700;
-      line-height: 1.24;
+      line-height: 1.22;
       margin-bottom: 0.4mm;
       flex-shrink: 0;
     }
@@ -670,10 +678,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 1.5mm;
-      margin-top: 1.5mm;
+      padding-top: 1.3mm;
+      margin-top: 1.3mm;
       border-top: 1px solid #cbd5e1;
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       font-weight: 600;
       color: var(--ink-muted);
       flex-shrink: 0;
@@ -684,43 +692,43 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 3.5mm;
+      gap: 3mm;
       min-height: 0;
     }
 
     .suitcase-checklist-card {
       background: #fdfbf7;
-      border: 1.2px solid #d97706;
+      border: 1.2px solid #b45309;
       border-radius: 5px;
-      padding: 2.5mm 3.5mm;
+      padding: 2.2mm 3.2mm;
       flex-shrink: 0;
     }
 
     .checklist-heading {
-      font-size: 8.2pt;
+      font-size: 8pt;
       font-weight: 800;
       color: #78350f;
-      margin-bottom: 1.5mm;
+      margin-bottom: 1.3mm;
     }
 
     .checklist-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1.2mm 4mm;
+      gap: 1.1mm 4mm;
     }
 
     .checklist-item {
       display: flex;
       align-items: center;
       gap: 5px;
-      font-size: 7.8pt;
-      color: #1e293b;
+      font-size: 7.6pt;
+      color: #0f172a;
       font-weight: 600;
     }
 
     .tick-box {
-      width: 3.4mm;
-      height: 3.4mm;
+      width: 3.3mm;
+      height: 3.3mm;
       border: 1.2px solid #78350f;
       border-radius: 2px;
       background: #ffffff;
@@ -729,74 +737,63 @@
     }
 
     .checklist-note {
-      margin-top: 1.8mm;
-      padding-top: 1.4mm;
-      border-top: 1px dashed #fbbf24;
-      font-size: 7.6pt;
+      margin-top: 1.5mm;
+      padding-top: 1.2mm;
+      border-top: 1px dashed #d97706;
+      font-size: 7.4pt;
       font-weight: 700;
       color: #1e3a8a;
     }
 
-    .vintage-suitcase-outer {
+    .suitcase-svg-frame {
       flex: 1;
-      border: 3px solid #78350f;
-      border-radius: 10px;
-      background: #fef3c7;
-      padding: 5mm 5mm 4mm 5mm;
       position: relative;
       display: flex;
       flex-direction: column;
-      gap: 3mm;
-      margin-top: 3mm;
+      min-height: 0;
+      padding: 11mm 7mm 6mm 7mm;
+    }
+
+    .suitcase-bg-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .suitcase-inner-content {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2.8mm;
       min-height: 0;
     }
-
-    .suitcase-top-handle {
-      position: absolute;
-      top: -5mm;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 38mm;
-      height: 5mm;
-      border: 3px solid #78350f;
-      border-bottom: none;
-      border-radius: 6px 6px 0 0;
-      background: transparent;
-    }
-
-    .suitcase-clasp {
-      position: absolute;
-      top: -2.2mm;
-      width: 9mm;
-      height: 4.4mm;
-      background: #f59e0b;
-      border: 1.5px solid #78350f;
-      border-radius: 2px;
-    }
-    .suitcase-clasp.left { left: 26mm; }
-    .suitcase-clasp.right { right: 26mm; }
 
     .suitcase-travel-tag {
       background: #ffffff;
       border: 1.5px solid #b45309;
       border-radius: 4px;
-      padding: 1.6mm 3mm;
+      padding: 1.5mm 3mm;
       text-align: center;
       flex-shrink: 0;
     }
 
     .tag-title {
-      font-size: 8pt;
+      font-size: 7.9pt;
       font-weight: 800;
       color: #78350f;
       letter-spacing: 0.04em;
     }
 
     .tag-route {
-      font-size: 7.6pt;
+      font-size: 7.5pt;
       font-weight: 700;
       color: #1e3a8a;
-      margin-top: 0.4mm;
+      margin-top: 0.3mm;
     }
 
     .suitcase-canvas-area {
@@ -807,14 +804,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 6mm;
+      padding: 5mm;
       min-height: 0;
     }
 
     .suitcase-watermark {
-      font-size: 9pt;
+      font-size: 8.8pt;
       font-weight: 800;
-      color: rgba(120, 53, 15, 0.25);
+      color: rgba(120, 53, 15, 0.28);
       text-align: center;
       letter-spacing: 0.06em;
       max-width: 120mm;
@@ -823,9 +820,9 @@
 
     .suitcase-caption-box {
       background: #ffffff;
-      border: 1px solid #d97706;
+      border: 1.2px solid #b45309;
       border-radius: 5px;
-      padding: 2mm 3mm;
+      padding: 1.8mm 2.8mm;
       flex-shrink: 0;
     }
   </style>
@@ -833,16 +830,16 @@
 <body>
 
   <div class="screen-toolbar">
-    <div class="screen-toolbar-title">KS2 World War II • Lesson 07 of 11: Dig for Victory & Wartime Rationing (1940–1945)</div>
+    <div class="screen-toolbar-title">KS2 World War II • Lesson 07 of 11: Dig for Victory &amp; Wartime Rationing (1940–1945)</div>
     <div class="screen-toolbar-actions">
-      <a href="/?view=lessons&unit=ks2_ww2">← Back to KS2 Unit</a>
+      <a href="/?view=lessons&amp;unit=ks2_ww2">← Back to KS2 Unit</a>
       <a href="/pdfs/ks2_ww2/lesson_07_dig_for_victory_rationing_worksheet.pdf" download>⬇ Download PDF</a>
       <button class="print-btn" onclick="window.print()">🖨 Print Worksheet</button>
     </div>
   </div>
 
   <!-- ========================================================
-       PAGE 1: SOURCE ENQUIRY & CHRONOLOGY (SHEET 1)
+       PAGE 1: SOURCE ENQUIRY & APP-SYNCED CHRONOLOGY (SHEET 1)
        ======================================================== -->
   <div class="worksheet-page" id="sheet-page-1">
     <div class="exercise-book-cutline">
@@ -863,11 +860,11 @@
 
       <div class="enquiry-banner">
         <div class="enquiry-title-group">
-          <h1>Dig for Victory & Wartime Rationing (1940–1945)</h1>
-          <p class="enquiry-question">Enquiry Question: Why did the British government ration butter, sugar, and meat, and ask families to "Dig for Victory"?</p>
+          <h1>Dig for Victory &amp; Wartime Rationing (1940–1945)</h1>
+          <p class="enquiry-question">Enquiry Question: Why did Britain ration food and ask families to ‘Dig for Victory’?</p>
         </div>
         <div class="lesson-badge">
-          LESSON 07<br><span style="font-size: 7pt; font-weight:600;">OF 11 • KS2</span>
+          LESSON 07<br><span style="font-size: 6.8pt; font-weight:600;">OF 11 • KS2</span>
         </div>
       </div>
 
@@ -884,7 +881,7 @@
 
       <div class="task-card p1-task1">
         <div class="task-header">
-          <span class="task-num-title">Task 1: Ration Book & Poster Detective • Fair Shares for All</span>
+          <span class="task-num-title">Task 1: Ration Book &amp; Poster Detective • Fair Shares for All</span>
           <span class="task-tag">Primary Evidence</span>
         </div>
         <div class="artifact-detective-grid">
@@ -916,17 +913,17 @@
       <div class="task-card p1-task2 last">
         <div class="task-header">
           <span class="task-num-title">Task 2: Feeding Island Britain • From Atlantic Ships to Allotments</span>
-          <span class="task-tag">Cause & Consequence</span>
+          <span class="task-tag">Cause &amp; Consequence</span>
         </div>
         <div class="timeline-3col">
-          
+
           <div class="timeline-step-card">
             <div style="flex-shrink:0;">
-              <div class="step-badge">STEP 1 • ATLANTIC OCEAN</div>
-              <div class="step-title">U-Boat Wolf Packs</div>
-              <p class="step-desc">German submarines sink merchant ships carrying imported sugar, meat, wheat, and fruit.</p>
+              <div class="step-badge">STAGE 1 • AUTUMN 1939</div>
+              <div class="step-title">The Atlantic Lifeline &amp; Why Rationing Started</div>
+              <p class="step-desc">Island Britain imported two-thirds of its food by sea; German U-boat attacks on Atlantic merchant convoys forced rationing in Jan 1940.</p>
             </div>
-            <p class="step-prompt">How did growing potatoes in Britain help save merchant sailors at sea?</p>
+            <p class="step-prompt">Why did U-boat attacks in the Atlantic force Britain to ration food?</p>
             <div class="ruled-lines-box">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -934,13 +931,14 @@
               <div class="ruled-line"></div>
             </div>
           </div>
+
           <div class="timeline-step-card">
             <div style="flex-shrink:0;">
-              <div class="step-badge">STEP 2 • JAN 1940</div>
-              <div class="step-title">Ration Books Begin</div>
-              <p class="step-desc">Every citizen registers with local shops; buff books for adults, green for toddlers & mothers.</p>
+              <div class="step-badge">STAGE 2 • JANUARY 1940</div>
+              <div class="step-title">Ration Books, Weekly Allowances &amp; Fair Shares</div>
+              <p class="step-desc">Registered coupon books guaranteed fair weekly shares (such as 1 fresh egg, 2oz butter, and 4oz bacon) for rich and poor alike.</p>
             </div>
-            <p class="step-prompt">Why did toddlers and expectant mothers get extra milk and orange juice?</p>
+            <p class="step-prompt">How did ration books and coupons make sure food was shared fairly?</p>
             <div class="ruled-lines-box">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -948,13 +946,14 @@
               <div class="ruled-line"></div>
             </div>
           </div>
+
           <div class="timeline-step-card">
             <div style="flex-shrink:0;">
-              <div class="step-badge">STEP 3 • HOME KITCHENS</div>
-              <div class="step-title">Allotments & Woolton Pie</div>
-              <p class="step-desc">Unrationed garden vegetables fill plates in dishes like Lord Woolton Pie and carrot scones.</p>
+              <div class="step-badge">STAGE 3 • 1941–1945</div>
+              <div class="step-title">Dig for Victory, Potato Pete &amp; Healthier Children</div>
+              <p class="step-desc">Families planted 1.4 million &quot;Dig for Victory&quot; allotments, ate Potato Pete &amp; Woolton dishes, and children grew up healthier.</p>
             </div>
-            <p class="step-prompt">Why did British children actually grow healthier under rationing?</p>
+            <p class="step-prompt">How did &quot;Dig for Victory&quot; help British children grow up healthier?</p>
             <div class="ruled-lines-box">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -973,7 +972,7 @@
   </div>
 
   <!-- ========================================================
-       PAGE 2: INVESTIGATION, PERSPECTIVES & CHALLENGE (SHEET 2)
+       PAGE 2: VISUAL INVESTIGATION, PERSPECTIVES & CHALLENGE
        ======================================================== -->
   <div class="worksheet-page" id="sheet-page-2">
     <div class="exercise-book-cutline">
@@ -984,7 +983,7 @@
       <div class="sheet-masthead">
         <div class="brand-left">
           <span class="brand-badge">KS2 ENQUIRY</span>
-          <span class="brand-text">Atlantic Convoys, Coupon Ration Books & 1.4 Million Allotments</span>
+          <span class="brand-text">Atlantic Convoys, Coupon Ration Books &amp; 1.4 Million Allotments</span>
         </div>
         <div class="student-fields">
           <div class="field-item">Name: <span class="field-line"></span></div>
@@ -994,30 +993,56 @@
 
       <div class="task-card p2-task3">
         <div class="task-header">
-          <span class="task-num-title">Task 3: Weekly Adult Ration Allowance & Wartime Kitchen Menu</span>
-          <span class="task-tag">Numerical & Practical Enquiry</span>
+          <span class="task-num-title">Task 3: Weekly Adult Ration Allowance &amp; Wartime Kitchen Menu</span>
+          <span class="task-tag">Numerical &amp; Practical Enquiry</span>
         </div>
         <div class="visual-investigation-grid">
           <div class="canvas-drawing-col">
-            
-        <div class="craft-mini-box" style="background:#fefce8; border:2px solid #a16207;">
-          <div style="font-size:8pt; font-weight:800; color:#854d0e; text-transform:uppercase; margin-bottom:1.5mm; text-align:center;">Ministry of Food Weekly Allowance</div>
-          <div style="font-size:7.5pt; line-height:1.58; color:#1e293b;">
-            • <strong>Bacon / Ham:</strong> 4 oz (approx. 4 rashers)<br>
-            • <strong>Butter:</strong> 2 oz &amp; <strong>Margarine:</strong> 4 oz<br>
-            • <strong>Cheese:</strong> 2 oz &amp; <strong>Tea:</strong> 2 oz<br>
-            • <strong>Sugar:</strong> 8 oz &amp; <strong>Sweets:</strong> 3 oz<br>
-            • <strong>Fresh Eggs:</strong> <strong>1 egg per week</strong> (+ dried egg)<br>
-            • <strong>Garden Veg &amp; Potatoes:</strong> UNRATIONED!
-          </div>
-        </div>
+            <div class="svg-showcase-slot">
+              
+    <svg viewBox="0 0 220 310" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="4" width="212" height="302" rx="6" fill="#fffbeb" stroke="#78350f" stroke-width="1.6"/>
+      <rect x="4" y="4" width="212" height="23" rx="5" fill="#78350f"/>
+      <text x="110" y="19" text-anchor="middle" font-size="8.2" font-weight="900" fill="#ffffff" letter-spacing="0.4">1942 ADULT WEEKLY RATION PLATE</text>
+      <!-- Divided Ration Plate -->
+      <circle cx="110" cy="108" r="70" fill="#ffffff" stroke="#78350f" stroke-width="2.2"/>
+      <circle cx="110" cy="108" r="62" fill="#fef9c3" stroke="#d97706" stroke-width="1" stroke-dasharray="3,2"/>
+      <line x1="110" y1="46" x2="110" y2="170" stroke="#d97706" stroke-width="1.2"/>
+      <line x1="48" y1="108" x2="172" y2="108" stroke="#d97706" stroke-width="1.2"/>
+      <!-- Q1: 1 Egg -->
+      <ellipse cx="80" cy="76" rx="9" ry="12" fill="#ffffff" stroke="#78350f" stroke-width="1.5"/>
+      <text x="80" y="99" text-anchor="middle" font-size="7.4" font-weight="900" fill="#0f172a">1 Fresh Egg</text>
+      <!-- Q2: Butter & Cheese -->
+      <rect x="128" y="66" width="24" height="14" rx="2" fill="#fde047" stroke="#854d0e" stroke-width="1.3"/>
+      <text x="140" y="92" text-anchor="middle" font-size="7.1" font-weight="800" fill="#0f172a">Butter: 2 oz</text>
+      <text x="140" y="102" text-anchor="middle" font-size="7.1" font-weight="800" fill="#0f172a">Cheese: 2 oz</text>
+      <!-- Q3: Bacon 4oz -->
+      <path d="M64,122 Q78,118 94,124 M64,130 Q78,126 94,132" fill="none" stroke="#b91c1c" stroke-width="2.6"/>
+      <text x="80" y="146" text-anchor="middle" font-size="7.2" font-weight="800" fill="#0f172a">Bacon: 4 oz</text>
+      <text x="80" y="156" text-anchor="middle" font-size="6.6" font-weight="700" fill="#475569">(~4 rashers)</text>
+      <!-- Q4: Sugar & Tea -->
+      <rect x="130" y="118" width="20" height="16" rx="2" fill="#ffffff" stroke="#475569" stroke-width="1.3"/>
+      <text x="140" y="146" text-anchor="middle" font-size="7.1" font-weight="800" fill="#0f172a">Sugar: 8 oz</text>
+      <text x="140" y="156" text-anchor="middle" font-size="7.1" font-weight="800" fill="#0f172a">Tea: 2 oz</text>
+      <!-- Bottom: UNRATIONED ALLOTMENT BASKET -->
+      <rect x="16" y="190" width="188" height="106" rx="6" fill="#dcfce7" stroke="#15803d" stroke-width="1.6"/>
+      <text x="110" y="207" text-anchor="middle" font-size="8.2" font-weight="900" fill="#14532d">DIG FOR VICTORY • UNRATIONED!</text>
+      <!-- Basket + Veg -->
+      <polygon points="48,252 172,252 158,282 62,282" fill="#fde68a" stroke="#78350f" stroke-width="1.8"/>
+      <circle cx="78" cy="244" r="11" fill="#eab308" stroke="#78350f" stroke-width="1.3"/>
+      <polygon points="104,252 114,224 124,252" fill="#f97316" stroke="#9a3412" stroke-width="1.3"/>
+      <circle cx="144" cy="242" r="12" fill="#4ade80" stroke="#166534" stroke-width="1.3"/>
+      <text x="110" y="220" text-anchor="middle" font-size="7.2" font-weight="700" fill="#166534">Potatoes • Carrots • Cabbages • Swedes</text>
+      <text x="110" y="293" text-anchor="middle" font-size="7" font-weight="800" fill="#14532d">1.4 Million Allotments Saved Cargo Space</text>
+    </svg>
+            </div>
             <p class="canvas-subcaption">Rationing continued after VE Day and finally ended in July 1954</p>
           </div>
           <div class="investigation-ledger">
             
             <div class="ledger-row">
               <div style="flex-shrink:0;">
-                <div class="ledger-item-title">1. Only 1 Fresh Egg & 2 oz of Butter Per Week</div>
+                <div class="ledger-item-title">1. Only 1 Fresh Egg &amp; 2 oz of Butter Per Week</div>
                 <p class="ledger-reason-prompt">How did cooks bake cakes and omelettes using dried egg powder and carrots?</p>
               </div>
               <div class="ruled-lines-box">
@@ -1027,7 +1052,7 @@
             </div>
             <div class="ledger-row">
               <div style="flex-shrink:0;">
-                <div class="ledger-item-title">2. Unrationed Potatoes, Carrots, Cabbages & Swedes</div>
+                <div class="ledger-item-title">2. Unrationed Potatoes, Carrots, Cabbages &amp; Swedes</div>
                 <p class="ledger-reason-prompt">Why did families dig up flower lawns and park grass for allotments?</p>
               </div>
               <div class="ruled-lines-box">
@@ -1065,6 +1090,7 @@
           <span class="task-tag">Perspectives</span>
         </div>
         <div class="thinking-heads-grid">
+          
           <div class="head-card">
             <div style="flex-shrink:0;">
               <div class="head-title-row">
@@ -1084,7 +1110,7 @@
             <div style="flex-shrink:0;">
               <div class="head-title-row">
                 <span class="head-badge">2</span>
-                <span class="head-name">Parent Tending an Allotment & Cooking Dinner</span>
+                <span class="head-name">Parent Tending an Allotment &amp; Cooking Dinner</span>
               </div>
               <p class="thought-prompt">How do you use your garden vegetables and small weekly rations to keep your growing children full and healthy?</p>
             </div>
@@ -1104,7 +1130,7 @@
           <span class="task-tag">Extended Writing</span>
         </div>
         <div class="synthesis-container">
-          <p class="synthesis-header">Enquiry Answer: Why did the British government ration food from January 1940 and ask families to "Dig for Victory"?</p>
+          <p class="synthesis-header">Enquiry Answer: Why did Britain ration food and ask families to ‘Dig for Victory’?</p>
           <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"The British government rationed food from January 1940 and asked families to &quot;Dig for Victory&quot; because..."</em> &bull; <strong>Word Bank:</strong> Atlantic convoys  •  U-boats  •  ration book  •  Dig for Victory</div>
           <div class="ruled-lines-box">
             <div class="ruled-line"></div>
@@ -1121,7 +1147,6 @@
       </div>
     </div>
   </div>
-
 
 </body>
 </html>

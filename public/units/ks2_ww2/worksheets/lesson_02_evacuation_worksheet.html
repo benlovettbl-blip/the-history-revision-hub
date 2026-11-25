@@ -2,7 +2,7 @@
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <title>KS2 History Worksheet • Lesson 2: Operation Pied Piper & British Evacuation</title>
+  <title>KS2 History Worksheet • Lesson 2: Operation Pied Piper &amp; British Evacuation</title>
   <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,12 +10,12 @@
   <style>
     :root {
       --ink: #0f172a;
-      --ink-muted: #475569;
+      --ink-muted: #334155;
       --navy-primary: #1e3a8a;
       --navy-deep: #0f172a;
       --parchment: #fdfbf7;
       --accent-gold: #b45309;
-      --border-gray: #cbd5e1;
+      --border-gray: #94a3b8;
       --cut-guide: #94a3b8;
     }
 
@@ -26,6 +26,8 @@
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
+
+    svg g { opacity: 1 !important; }
 
     @page {
       size: 210mm 297mm;
@@ -53,6 +55,8 @@
       position: sticky;
       top: 0;
       z-index: 50;
+      gap: 12px;
+      flex-wrap: wrap;
     }
 
     .screen-toolbar-title {
@@ -64,6 +68,7 @@
     .screen-toolbar-actions {
       display: flex;
       gap: 8px;
+      align-items: center;
     }
 
     .screen-toolbar a,
@@ -93,7 +98,7 @@
       background: #ffffff;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
       margin: 8mm auto;
-      padding: 7.5mm 8mm 6.5mm 8mm;
+      padding: 7mm 8mm 6mm 8mm;
       display: flex;
       flex-direction: column;
       overflow: hidden;
@@ -104,12 +109,8 @@
     }
 
     @media print {
-      body {
-        background: #ffffff;
-      }
-      .screen-toolbar {
-        display: none !important;
-      }
+      body { background: #ffffff; }
+      .screen-toolbar { display: none !important; }
       .worksheet-page {
         margin: 0;
         box-shadow: none !important;
@@ -126,13 +127,12 @@
       min-height: 0;
       border: 1.5px dashed var(--cut-guide);
       border-radius: 6px;
-      padding: 4.5mm 5.5mm 4mm 5.5mm;
+      padding: 4.2mm 5.2mm 3.8mm 5.2mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       position: relative;
       background: #ffffff;
-      overflow: visible;
     }
 
     .cut-indicator {
@@ -141,9 +141,9 @@
       left: 12mm;
       background: #ffffff;
       padding: 0 6px;
-      font-size: 7.5pt;
+      font-size: 7.4pt;
       font-weight: 700;
-      color: #64748b;
+      color: #475569;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       line-height: 1;
@@ -153,44 +153,51 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 10px;
       border-bottom: 2px solid var(--navy-deep);
-      padding-bottom: 1.8mm;
-      margin-bottom: 2mm;
+      padding-bottom: 1.6mm;
+      margin-bottom: 1.8mm;
       flex-shrink: 0;
     }
 
     .brand-left {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 7px;
+      min-width: 0;
     }
 
     .brand-badge {
       background: var(--navy-deep);
       color: #ffffff;
       font-family: 'Cinzel', serif;
-      font-size: 7.5pt;
+      font-size: 7.2pt;
       font-weight: 800;
       padding: 1.5px 6px;
       border-radius: 3px;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .brand-text {
-      font-size: 7.6pt;
+      font-size: 7.3pt;
       font-weight: 800;
       color: var(--navy-primary);
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
       text-transform: uppercase;
+      line-height: 1.15;
     }
 
     .student-fields {
       display: flex;
-      gap: 10px;
-      font-size: 8pt;
+      gap: 9px;
+      font-size: 7.8pt;
       font-weight: 700;
       color: var(--ink);
       align-items: center;
+      white-space: nowrap;
+      flex-shrink: 0;
     }
 
     .field-item {
@@ -201,31 +208,29 @@
 
     .field-line {
       display: inline-block;
-      width: 34mm;
+      width: 31mm;
       border-bottom: 1.2px solid var(--ink);
-      height: 3.5mm;
+      height: 3.4mm;
     }
 
-    .field-line.short {
-      width: 20mm;
-    }
+    .field-line.short { width: 18mm; }
 
     .enquiry-banner {
       background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
       color: #ffffff;
       border-radius: 5px;
-      padding: 2.4mm 3.5mm;
+      padding: 2.2mm 3.4mm;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 3mm;
-      margin-bottom: 2.2mm;
+      margin-bottom: 2mm;
       flex-shrink: 0;
     }
 
     .enquiry-title-group h1 {
       font-family: 'Cinzel', serif;
-      font-size: 10.6pt;
+      font-size: 10.3pt;
       font-weight: 800;
       letter-spacing: 0.02em;
       line-height: 1.18;
@@ -235,37 +240,36 @@
       font-family: 'Lora', Georgia, serif;
       font-size: 8pt;
       font-style: italic;
-      color: #e2e8f0;
-      margin-top: 0.6mm;
-      line-height: 1.25;
+      color: #fde68a;
+      margin-top: 0.5mm;
+      line-height: 1.24;
     }
 
     .lesson-badge {
       background: rgba(255, 255, 255, 0.16);
       border: 1px solid rgba(255, 255, 255, 0.35);
-      padding: 1.6mm 3mm;
+      padding: 1.5mm 2.8mm;
       border-radius: 4px;
       text-align: center;
-      font-size: 7.5pt;
+      font-size: 7.4pt;
       font-weight: 800;
       letter-spacing: 0.04em;
       white-space: nowrap;
       flex-shrink: 0;
     }
 
-    /* STORY & SOURCE A */
     .story-evidence-grid {
       display: grid;
       grid-template-columns: 64mm 1fr;
-      gap: 3mm;
-      margin-bottom: 2.2mm;
+      gap: 2.8mm;
+      margin-bottom: 2mm;
       flex-shrink: 0;
     }
 
     .archival-plate-box {
-      border: 1px solid var(--border-gray);
+      border: 1.2px solid var(--border-gray);
       border-radius: 4px;
-      padding: 1.6mm;
+      padding: 1.5mm;
       background: #ffffff;
       display: flex;
       flex-direction: column;
@@ -275,7 +279,7 @@
 
     .archival-img {
       width: 100%;
-      height: 40mm;
+      height: 39mm;
       object-fit: contain;
       background: #f8fafc;
       border-radius: 3px;
@@ -283,8 +287,8 @@
     }
 
     .archival-caption {
-      font-size: 7.5pt;
-      line-height: 1.24;
+      font-size: 7.2pt;
+      line-height: 1.22;
       color: var(--ink-muted);
       margin-top: 1mm;
       text-align: center;
@@ -292,100 +296,96 @@
 
     .story-text-box {
       background: var(--parchment);
-      border: 1px solid #fed7aa;
-      border-left: 3.5px solid var(--accent-gold);
+      border: 1.2px solid #d97706;
+      border-left: 3.8px solid var(--accent-gold);
       border-radius: 4px;
-      padding: 2.2mm 3mm;
+      padding: 2mm 2.8mm;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
     .story-header {
-      font-size: 7.8pt;
+      font-size: 7.6pt;
       font-weight: 800;
       color: var(--navy-deep);
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      margin-bottom: 1mm;
+      margin-bottom: 0.9mm;
     }
 
     .story-prose {
       font-family: 'Lora', Georgia, serif;
-      font-size: 8.4pt;
-      line-height: 1.42;
-      color: #1e293b;
+      font-size: 8.3pt;
+      line-height: 1.4;
+      color: #0f172a;
     }
 
-    .story-prose strong {
-      color: var(--navy-primary);
-    }
+    .story-prose strong { color: var(--navy-primary); }
 
-    /* TASK CARDS */
     .task-card {
       background: #ffffff;
       border: 1.2px solid var(--border-gray);
       border-radius: 5px;
-      padding: 2.2mm 3mm;
+      padding: 2mm 2.8mm;
       display: flex;
       flex-direction: column;
-      margin-bottom: 2mm;
+      margin-bottom: 1.8mm;
       min-height: 0;
     }
 
-    .task-card.last {
-      margin-bottom: 0;
-    }
+    .task-card.last { margin-bottom: 0; }
 
-    .p1-task1 { flex: 1.12; }
-    .p1-task2 { flex: 1.02; }
-    .p2-task3 { flex: 1.34; }
-    .p2-task4 { flex: 0.86; }
-    .p2-task5 { flex: 0.84; }
+    .p1-task1 { flex: 1.1; }
+    .p1-task2 { flex: 1.04; }
+    .p2-task3 { flex: 1.36; }
+    .p2-task4 { flex: 0.84; }
+    .p2-task5 { flex: 0.82; }
 
     .task-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 1.5mm;
-      padding-bottom: 1mm;
-      border-bottom: 1px solid #e2e8f0;
+      margin-bottom: 1.4mm;
+      padding-bottom: 0.9mm;
+      border-bottom: 1px solid #cbd5e1;
       flex-shrink: 0;
     }
 
     .task-num-title {
-      font-size: 8.5pt;
+      font-size: 8.4pt;
       font-weight: 800;
       color: var(--navy-deep);
     }
 
     .task-tag {
-      font-size: 7.5pt;
-      font-weight: 700;
+      font-size: 7.2pt;
+      font-weight: 800;
       text-transform: uppercase;
       background: #e0e7ff;
-      color: #3730a3;
+      color: #1e3a8a;
+      border: 1px solid #93c5fd;
       padding: 1px 6px;
       border-radius: 3px;
     }
 
     .artifact-detective-grid {
       display: grid;
-      grid-template-columns: 60mm 1fr;
-      gap: 3mm;
+      grid-template-columns: 74mm 1fr;
+      gap: 2.8mm;
       flex: 1;
       min-height: 0;
     }
 
     .artifact-container {
       background: #fdfbf7;
-      border: 1px dashed #d97706;
+      border: 1.2px dashed #b45309;
       border-radius: 4px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      padding: 1.8mm;
+      padding: 1.5mm;
       min-height: 0;
     }
 
@@ -393,18 +393,18 @@
       width: 100%;
       flex: 1;
       min-height: 0;
-      max-height: 58mm;
+      max-height: 57mm;
       object-fit: contain;
       border-radius: 3px;
       background: #ffffff;
     }
 
     .artifact-caption {
-      font-size: 7.5pt;
-      line-height: 1.22;
+      font-size: 7.1pt;
+      line-height: 1.2;
       color: var(--ink-muted);
       text-align: center;
-      margin-top: 1mm;
+      margin-top: 0.9mm;
       flex-shrink: 0;
     }
 
@@ -412,7 +412,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 1.8mm;
+      gap: 1.6mm;
       flex: 1;
       min-height: 0;
     }
@@ -426,10 +426,10 @@
     }
 
     .q-item {
-      font-size: 8pt;
+      font-size: 7.9pt;
       font-weight: 700;
       color: var(--navy-deep);
-      line-height: 1.24;
+      line-height: 1.22;
       margin-bottom: 0.4mm;
       flex-shrink: 0;
     }
@@ -443,7 +443,7 @@
     }
 
     .ruled-line {
-      height: 7.2mm;
+      height: 7mm;
       border-bottom: 1.2px dashed #94a3b8;
       width: 100%;
     }
@@ -451,25 +451,24 @@
     .ruled-lines-box .ruled-line {
       flex: 1;
       height: auto;
-      min-height: 5.0mm;
-      max-height: 7.8mm;
+      min-height: 4.8mm;
+      max-height: 7.5mm;
     }
 
-    /* TASK 2: 3-STEP TIMELINE */
     .timeline-3col {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 2.6mm;
+      gap: 2.4mm;
       flex: 1;
       min-height: 0;
     }
 
     .timeline-step-card {
       background: #f8fafc;
-      border: 1px solid #cbd5e1;
+      border: 1.1px solid #94a3b8;
       border-top: 3.5px solid var(--navy-primary);
       border-radius: 4px;
-      padding: 1.8mm 2.2mm;
+      padding: 1.6mm 2mm;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -477,42 +476,42 @@
     }
 
     .step-badge {
-      font-size: 7.5pt;
+      font-size: 7pt;
       font-weight: 800;
       color: var(--navy-primary);
-      letter-spacing: 0.03em;
+      letter-spacing: 0.02em;
     }
 
     .step-title {
-      font-size: 8pt;
+      font-size: 7.7pt;
       font-weight: 800;
       color: var(--navy-deep);
       margin: 0.3mm 0;
+      line-height: 1.16;
     }
 
     .step-desc {
-      font-size: 7.5pt;
+      font-size: 7.1pt;
       color: var(--ink-muted);
-      line-height: 1.22;
-      margin-bottom: 1mm;
+      line-height: 1.18;
+      margin-bottom: 0.8mm;
     }
 
     .step-prompt {
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       font-weight: 700;
       color: #1e3a8a;
-      line-height: 1.2;
-      padding-top: 1mm;
+      line-height: 1.18;
+      padding-top: 0.8mm;
       border-top: 1px dashed #cbd5e1;
-      margin-bottom: 0.4mm;
+      margin-bottom: 0.3mm;
       flex-shrink: 0;
     }
 
-    /* PAGE 2: TASK 3 */
     .visual-investigation-grid {
       display: grid;
-      grid-template-columns: 60mm 1fr;
-      gap: 3mm;
+      grid-template-columns: 62mm 1fr;
+      gap: 2.8mm;
       flex: 1;
       min-height: 0;
     }
@@ -521,46 +520,47 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border: 1.5px dashed #b45309;
+      border: 1.2px dashed #b45309;
       border-radius: 5px;
       background: #fdfbf7;
-      padding: 2.5mm;
+      padding: 1.8mm;
+      min-height: 0;
     }
 
-    .craft-mini-box {
+    .svg-showcase-slot {
       width: 100%;
-      border-radius: 5px;
-      padding: 3mm;
       flex: 1;
+      min-height: 0;
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+      align-items: center;
+      justify-content: center;
     }
 
     .canvas-subcaption {
-      font-size: 7.5pt;
+      font-size: 7.1pt;
       font-weight: 700;
-      color: #92400e;
+      color: #78350f;
       text-align: center;
-      margin-top: 1.5mm;
-      line-height: 1.22;
+      margin-top: 1mm;
+      line-height: 1.18;
+      flex-shrink: 0;
     }
 
     .investigation-ledger {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 1.4mm;
+      gap: 1.3mm;
       flex: 1;
       min-height: 0;
     }
 
     .ledger-row {
       background: #ffffff;
-      border: 1px solid #cbd5e1;
+      border: 1px solid #94a3b8;
       border-left: 3.5px solid var(--navy-primary);
       border-radius: 4px;
-      padding: 1.3mm 2.2mm;
+      padding: 1.2mm 2mm;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -569,32 +569,31 @@
     }
 
     .ledger-item-title {
-      font-size: 7.8pt;
+      font-size: 7.7pt;
       font-weight: 800;
       color: var(--navy-deep);
     }
 
     .ledger-reason-prompt {
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       color: var(--ink-muted);
-      line-height: 1.18;
+      line-height: 1.16;
       margin-bottom: 0.2mm;
     }
 
-    /* TASK 4: THINKING HEADS */
     .thinking-heads-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 3mm;
+      gap: 2.8mm;
       flex: 1;
       min-height: 0;
     }
 
     .head-card {
       background: #f8fafc;
-      border: 1px solid var(--border-gray);
+      border: 1.1px solid var(--border-gray);
       border-radius: 5px;
-      padding: 1.8mm 2.5mm;
+      padding: 1.6mm 2.3mm;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -605,47 +604,46 @@
       display: flex;
       align-items: center;
       gap: 6px;
-      margin-bottom: 0.6mm;
+      margin-bottom: 0.5mm;
       flex-shrink: 0;
     }
 
     .head-badge {
-      width: 18px;
-      height: 18px;
+      width: 17px;
+      height: 17px;
       border-radius: 50%;
       background: var(--navy-primary);
       color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       font-weight: 800;
       flex-shrink: 0;
     }
 
     .head-name {
-      font-size: 7.8pt;
+      font-size: 7.6pt;
       font-weight: 800;
       color: var(--navy-deep);
-      line-height: 1.2;
+      line-height: 1.18;
     }
 
     .thought-prompt {
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       color: var(--navy-primary);
       font-weight: 600;
-      line-height: 1.22;
-      margin-bottom: 0.4mm;
+      line-height: 1.2;
+      margin-bottom: 0.3mm;
       flex-shrink: 0;
     }
 
-    /* TASK 5: MISSION CHALLENGE */
     .synthesis-container {
       background: #fdfbf7;
-      border: 1.2px solid #fed7aa;
+      border: 1.2px solid #d97706;
       border-left: 4px solid var(--accent-gold);
       border-radius: 5px;
-      padding: 1.8mm 2.8mm;
+      padding: 1.6mm 2.6mm;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -653,15 +651,25 @@
       min-height: 0;
     }
 
-    .wb-scaffold-strip { font-size: 6.9pt; line-height: 1.2; color: #334155; background: #fffbeb; border: 1px solid #fde68a; border-radius: 3px; padding: 0.6mm 1.5mm; margin-bottom: 0.4mm; flex-shrink: 0; }
+    .wb-scaffold-strip {
+      font-size: 6.9pt;
+      line-height: 1.2;
+      color: #1e293b;
+      background: #fffbeb;
+      border: 1px solid #f59e0b;
+      border-radius: 3px;
+      padding: 0.6mm 1.5mm;
+      margin-bottom: 0.4mm;
+      flex-shrink: 0;
+    }
 
     .synthesis-header {
       font-family: 'Lora', Georgia, serif;
-      font-size: 8.2pt;
+      font-size: 8pt;
       font-style: italic;
       color: var(--navy-primary);
       font-weight: 700;
-      line-height: 1.24;
+      line-height: 1.22;
       margin-bottom: 0.4mm;
       flex-shrink: 0;
     }
@@ -670,10 +678,10 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding-top: 1.5mm;
-      margin-top: 1.5mm;
+      padding-top: 1.3mm;
+      margin-top: 1.3mm;
       border-top: 1px solid #cbd5e1;
-      font-size: 7.5pt;
+      font-size: 7.3pt;
       font-weight: 600;
       color: var(--ink-muted);
       flex-shrink: 0;
@@ -684,43 +692,43 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      gap: 3.5mm;
+      gap: 3mm;
       min-height: 0;
     }
 
     .suitcase-checklist-card {
       background: #fdfbf7;
-      border: 1.2px solid #d97706;
+      border: 1.2px solid #b45309;
       border-radius: 5px;
-      padding: 2.5mm 3.5mm;
+      padding: 2.2mm 3.2mm;
       flex-shrink: 0;
     }
 
     .checklist-heading {
-      font-size: 8.2pt;
+      font-size: 8pt;
       font-weight: 800;
       color: #78350f;
-      margin-bottom: 1.5mm;
+      margin-bottom: 1.3mm;
     }
 
     .checklist-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 1.2mm 4mm;
+      gap: 1.1mm 4mm;
     }
 
     .checklist-item {
       display: flex;
       align-items: center;
       gap: 5px;
-      font-size: 7.8pt;
-      color: #1e293b;
+      font-size: 7.6pt;
+      color: #0f172a;
       font-weight: 600;
     }
 
     .tick-box {
-      width: 3.4mm;
-      height: 3.4mm;
+      width: 3.3mm;
+      height: 3.3mm;
       border: 1.2px solid #78350f;
       border-radius: 2px;
       background: #ffffff;
@@ -729,74 +737,63 @@
     }
 
     .checklist-note {
-      margin-top: 1.8mm;
-      padding-top: 1.4mm;
-      border-top: 1px dashed #fbbf24;
-      font-size: 7.6pt;
+      margin-top: 1.5mm;
+      padding-top: 1.2mm;
+      border-top: 1px dashed #d97706;
+      font-size: 7.4pt;
       font-weight: 700;
       color: #1e3a8a;
     }
 
-    .vintage-suitcase-outer {
+    .suitcase-svg-frame {
       flex: 1;
-      border: 3px solid #78350f;
-      border-radius: 10px;
-      background: #fef3c7;
-      padding: 5mm 5mm 4mm 5mm;
       position: relative;
       display: flex;
       flex-direction: column;
-      gap: 3mm;
-      margin-top: 3mm;
+      min-height: 0;
+      padding: 11mm 7mm 6mm 7mm;
+    }
+
+    .suitcase-bg-svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .suitcase-inner-content {
+      position: relative;
+      z-index: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2.8mm;
       min-height: 0;
     }
-
-    .suitcase-top-handle {
-      position: absolute;
-      top: -5mm;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 38mm;
-      height: 5mm;
-      border: 3px solid #78350f;
-      border-bottom: none;
-      border-radius: 6px 6px 0 0;
-      background: transparent;
-    }
-
-    .suitcase-clasp {
-      position: absolute;
-      top: -2.2mm;
-      width: 9mm;
-      height: 4.4mm;
-      background: #f59e0b;
-      border: 1.5px solid #78350f;
-      border-radius: 2px;
-    }
-    .suitcase-clasp.left { left: 26mm; }
-    .suitcase-clasp.right { right: 26mm; }
 
     .suitcase-travel-tag {
       background: #ffffff;
       border: 1.5px solid #b45309;
       border-radius: 4px;
-      padding: 1.6mm 3mm;
+      padding: 1.5mm 3mm;
       text-align: center;
       flex-shrink: 0;
     }
 
     .tag-title {
-      font-size: 8pt;
+      font-size: 7.9pt;
       font-weight: 800;
       color: #78350f;
       letter-spacing: 0.04em;
     }
 
     .tag-route {
-      font-size: 7.6pt;
+      font-size: 7.5pt;
       font-weight: 700;
       color: #1e3a8a;
-      margin-top: 0.4mm;
+      margin-top: 0.3mm;
     }
 
     .suitcase-canvas-area {
@@ -807,14 +804,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 6mm;
+      padding: 5mm;
       min-height: 0;
     }
 
     .suitcase-watermark {
-      font-size: 9pt;
+      font-size: 8.8pt;
       font-weight: 800;
-      color: rgba(120, 53, 15, 0.25);
+      color: rgba(120, 53, 15, 0.28);
       text-align: center;
       letter-spacing: 0.06em;
       max-width: 120mm;
@@ -823,9 +820,9 @@
 
     .suitcase-caption-box {
       background: #ffffff;
-      border: 1px solid #d97706;
+      border: 1.2px solid #b45309;
       border-radius: 5px;
-      padding: 2mm 3mm;
+      padding: 1.8mm 2.8mm;
       flex-shrink: 0;
     }
   </style>
@@ -833,16 +830,16 @@
 <body>
 
   <div class="screen-toolbar">
-    <div class="screen-toolbar-title">KS2 World War II • Lesson 02 of 11: Operation Pied Piper & British Evacuation</div>
+    <div class="screen-toolbar-title">KS2 World War II • Lesson 02 of 11: Operation Pied Piper &amp; British Evacuation (Pages 1–2 Core Worksheet + Optional Page 3 Suitcase Craft)</div>
     <div class="screen-toolbar-actions">
-      <a href="/?view=lessons&unit=ks2_ww2">← Back to KS2 Unit</a>
+      <a href="/?view=lessons&amp;unit=ks2_ww2">← Back to KS2 Unit</a>
       <a href="/pdfs/ks2_ww2/lesson_02_evacuation_worksheet.pdf" download>⬇ Download PDF</a>
       <button class="print-btn" onclick="window.print()">🖨 Print Worksheet</button>
     </div>
   </div>
 
   <!-- ========================================================
-       PAGE 1: SOURCE ENQUIRY & CHRONOLOGY (SHEET 1)
+       PAGE 1: SOURCE ENQUIRY & APP-SYNCED CHRONOLOGY (SHEET 1)
        ======================================================== -->
   <div class="worksheet-page" id="sheet-page-1">
     <div class="exercise-book-cutline">
@@ -863,11 +860,11 @@
 
       <div class="enquiry-banner">
         <div class="enquiry-title-group">
-          <h1>Operation Pied Piper & British Evacuation</h1>
-          <p class="enquiry-question">Enquiry Question: What was it like for 1.5 million British children to be sent away from home with a brown paper luggage label?</p>
+          <h1>Operation Pied Piper &amp; British Evacuation</h1>
+          <p class="enquiry-question">Enquiry Question: What was it like for evacuated children to be sent away in 1939?</p>
         </div>
         <div class="lesson-badge">
-          LESSON 02<br><span style="font-size: 7pt; font-weight:600;">OF 11 • KS2</span>
+          LESSON 02<br><span style="font-size: 6.8pt; font-weight:600;">OF 11 • KS2</span>
         </div>
       </div>
 
@@ -884,12 +881,12 @@
 
       <div class="task-card p1-task1">
         <div class="task-header">
-          <span class="task-num-title">Task 1: Luggage Label & Map Detective • Operation Pied Piper</span>
+          <span class="task-num-title">Task 1: Luggage Label &amp; Map Detective • Operation Pied Piper</span>
           <span class="task-tag">Dual Source Enquiry</span>
         </div>
         <div class="artifact-detective-grid">
           <div class="artifact-container">
-            <img src="../assets/evacuation_map_ks2_pupil.png" class="artifact-img" alt="Source B">
+            <img src="../assets/evacuation_map_ks2_pupil.svg" class="artifact-img" alt="Source B">
             <p class="artifact-caption"><strong>Source B (Map):</strong> City danger zones (ports and factories) and safer countryside reception areas in 1939.</p>
           </div>
           <div class="detective-questions">
@@ -919,14 +916,14 @@
           <span class="task-tag">Chronology</span>
         </div>
         <div class="timeline-3col">
-          
+
           <div class="timeline-step-card">
             <div style="flex-shrink:0;">
-              <div class="step-badge">STEP 1 • 1 SEPT 1939</div>
-              <div class="step-title">Goodbye at the Station</div>
-              <p class="step-desc">1.5 million children wave goodbye to parents at city barriers and board steam trains with teachers.</p>
+              <div class="step-badge">STAGE 1 • 1 SEPTEMBER 1939</div>
+              <div class="step-title">Operation Pied Piper Begins</div>
+              <p class="step-desc">On 1 Sept 1939, 1.5 million schoolchildren, teachers, and mothers with under-fives board trains from cities to safer rural counties.</p>
             </div>
-            <p class="step-prompt">Why did school-age children travel with teachers rather than parents?</p>
+            <p class="step-prompt">Why did Operation Pied Piper move 1.5 million people out of cities?</p>
             <div class="ruled-lines-box">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -934,13 +931,14 @@
               <div class="ruled-line"></div>
             </div>
           </div>
+
           <div class="timeline-step-card">
             <div style="flex-shrink:0;">
-              <div class="step-badge">STEP 2 • TRAIN JOURNEY</div>
-              <div class="step-title">Heading to Reception Areas</div>
-              <p class="step-desc">Long steam train ride eating packed sandwiches; signs hidden and destinations often kept quiet.</p>
+              <div class="step-badge">STAGE 2 • AUTUMN 1939</div>
+              <div class="step-title">The Village Hall &amp; The Billeting Officer</div>
+              <p class="step-desc">Wearing brown luggage labels on their coats, children gather in village halls where Billeting Officers place them with host families.</p>
             </div>
-            <p class="step-prompt">What sights out of the carriage window surprised city children?</p>
+            <p class="step-prompt">Why did many evacuees feel nervous waiting in the village hall?</p>
             <div class="ruled-lines-box">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -948,13 +946,14 @@
               <div class="ruled-line"></div>
             </div>
           </div>
+
           <div class="timeline-step-card">
             <div style="flex-shrink:0;">
-              <div class="step-badge">STEP 3 • VILLAGE HALL</div>
-              <div class="step-title">Billeting Officer Placement</div>
-              <p class="step-desc">Children gather in village halls where Billeting Officers match them with local host homes.</p>
+              <div class="step-badge">STAGE 3 • 1940 ONWARDS</div>
+              <div class="step-title">Countryside Shocks &amp; Mixed Experiences</div>
+              <p class="step-desc">Many city children love farm animals and orchards for the first time, while others feel terribly homesick or face strict hosts.</p>
             </div>
-            <p class="step-prompt">Why were evacuee experiences so varied from home to home?</p>
+            <p class="step-prompt">Why did city children have such different lives on country farms?</p>
             <div class="ruled-lines-box">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -973,7 +972,7 @@
   </div>
 
   <!-- ========================================================
-       PAGE 2: INVESTIGATION, PERSPECTIVES & CHALLENGE (SHEET 2)
+       PAGE 2: VISUAL INVESTIGATION, PERSPECTIVES & CHALLENGE
        ======================================================== -->
   <div class="worksheet-page" id="sheet-page-2">
     <div class="exercise-book-cutline">
@@ -999,16 +998,34 @@
         </div>
         <div class="visual-investigation-grid">
           <div class="canvas-drawing-col">
-            
-        <div class="craft-mini-box" style="background:#fef3c7; border:2px solid #92400e;">
-          <div style="width:6mm; height:6mm; border-radius:50%; border:2px solid #78350f; background:#ffffff; margin:0 auto 2mm;"></div>
-          <div style="font-size:8pt; font-weight:800; color:#78350f; text-align:center; border-bottom:1px solid #d97706; padding-bottom:1mm; margin-bottom:2mm;">OPERATION PIED PIPER TAG</div>
-          <div style="width:100%; font-size:7.6pt; line-height:1.75; color:#1e293b;">
-            <strong>CHILD:</strong> _______________________<br>
-            <strong>CITY SCHOOL:</strong> _________________<br>
-            <strong>RECEPTION AREA:</strong> Devon / Wales
-          </div>
-        </div>
+            <div class="svg-showcase-slot">
+              
+    <svg viewBox="0 0 220 310" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <!-- Twine loop at top -->
+      <path d="M110,4 C82,4 86,44 110,48 C134,44 138,4 110,4 Z" fill="none" stroke="#92400e" stroke-width="2.4" stroke-dasharray="4,2"/>
+      <!-- Chamfered Manila Luggage Label -->
+      <polygon points="48,34 172,34 198,62 198,296 22,296 22,62" fill="#fef3c7" stroke="#78350f" stroke-width="2.2"/>
+      <polygon points="52,40 168,40 192,65 192,290 28,290 28,65" fill="none" stroke="#d97706" stroke-width="1" stroke-dasharray="3,2"/>
+      <!-- Reinforced Brass Eyelet -->
+      <circle cx="110" cy="54" r="11" fill="#b45309" stroke="#78350f" stroke-width="2"/>
+      <circle cx="110" cy="54" r="5.5" fill="#ffffff" stroke="#78350f" stroke-width="1.5"/>
+      <!-- Header Stamp -->
+      <rect x="38" y="76" width="144" height="24" rx="3" fill="#78350f"/>
+      <text x="110" y="88" text-anchor="middle" font-size="7.8" font-weight="900" fill="#ffffff" letter-spacing="0.5">OPERATION PIED PIPER</text>
+      <text x="110" y="97" text-anchor="middle" font-size="6.5" font-weight="700" fill="#fde68a">SEPT 1939 EVACUEE COAT LABEL</text>
+      <!-- Fillable Lines -->
+      <rect x="36" y="110" width="148" height="142" rx="4" fill="#ffffff" stroke="#b45309" stroke-width="1.3"/>
+      <text x="44" y="132" font-size="7.8" font-weight="800" fill="#0f172a">CHILD’S NAME:</text>
+      <line x1="44" y1="148" x2="176" y2="148" stroke="#64748b" stroke-width="1.1" stroke-dasharray="2,2"/>
+      <text x="44" y="168" font-size="7.8" font-weight="800" fill="#0f172a">CITY SCHOOL:</text>
+      <line x1="44" y1="184" x2="176" y2="184" stroke="#64748b" stroke-width="1.1" stroke-dasharray="2,2"/>
+      <text x="44" y="204" font-size="7.8" font-weight="800" fill="#0f172a">HOME CITY:</text>
+      <line x1="44" y1="220" x2="176" y2="220" stroke="#64748b" stroke-width="1.1" stroke-dasharray="2,2"/>
+      <text x="44" y="241" font-size="7.6" font-weight="800" fill="#15803d">BILLET: Devon / Rural Wales</text>
+      <text x="110" y="272" text-anchor="middle" font-size="7.3" font-weight="800" fill="#78350f">TIE SECURELY TO COAT LAPEL</text>
+      <text x="110" y="284" text-anchor="middle" font-size="6.8" font-weight="700" fill="#92400e">1.5 Million Evacuated • 1–3 Sept 1939</text>
+    </svg>
+            </div>
             <p class="canvas-subcaption">Fill in an authentic September 1939 luggage tag above</p>
           </div>
           <div class="investigation-ledger">
@@ -1025,7 +1042,7 @@
             </div>
             <div class="ledger-row">
               <div style="flex-shrink:0;">
-                <div class="ledger-item-title">2. Warm Woollen Jumper, Nightclothes & Boots</div>
+                <div class="ledger-item-title">2. Warm Woollen Jumper, Nightclothes &amp; Boots</div>
                 <p class="ledger-reason-prompt">Why did government lists insist on warm clothes and sturdy boots?</p>
               </div>
               <div class="ruled-lines-box">
@@ -1035,7 +1052,7 @@
             </div>
             <div class="ledger-row">
               <div style="flex-shrink:0;">
-                <div class="ledger-item-title">3. Toothbrush, Comb, Towel & Soap</div>
+                <div class="ledger-item-title">3. Toothbrush, Comb, Towel &amp; Soap</div>
                 <p class="ledger-reason-prompt">Why did each child pack their own wash kit for their host family?</p>
               </div>
               <div class="ruled-lines-box">
@@ -1045,7 +1062,7 @@
             </div>
             <div class="ledger-row">
               <div style="flex-shrink:0;">
-                <div class="ledger-item-title">4. Sandwiches, Apple & Stamped Postcard Home</div>
+                <div class="ledger-item-title">4. Sandwiches, Apple &amp; Stamped Postcard Home</div>
                 <p class="ledger-reason-prompt">Why was a pre-addressed postcard so important on arrival?</p>
               </div>
               <div class="ruled-lines-box">
@@ -1063,6 +1080,7 @@
           <span class="task-tag">Perspectives</span>
         </div>
         <div class="thinking-heads-grid">
+          
           <div class="head-card">
             <div style="flex-shrink:0;">
               <div class="head-title-row">
@@ -1102,7 +1120,7 @@
           <span class="task-tag">Extended Writing</span>
         </div>
         <div class="synthesis-container">
-          <p class="synthesis-header">Postcard Home: Write a short postcard to Mum and Dad describing your train ride, brown luggage label, and new countryside billet.</p>
+          <p class="synthesis-header">Postcard Home (What was it like for evacuated children to be sent away in 1939?): Write a short postcard to Mum and Dad describing your train ride, brown luggage label, and new countryside billet.</p>
           <div class="wb-scaffold-strip"><strong>Starter:</strong> <em>"Dear Mum and Dad, I arrived safely in the countryside after a long steam train ride with my school class..."</em> &bull; <strong>Word Bank:</strong> steam train  •  luggage label  •  Billeting Officer  •  host family</div>
           <div class="ruled-lines-box">
             <div class="ruled-line"></div>
@@ -1155,37 +1173,54 @@
           <div class="checklist-heading">Sept 1939 Government Packing Checklist (Tick as you draw):</div>
           <div class="checklist-grid">
             <div class="checklist-item"><span class="tick-box"></span><span>Gas mask in cardboard box</span></div>
-            <div class="checklist-item"><span class="tick-box"></span><span>Warm woollen jumper & coat</span></div>
-            <div class="checklist-item"><span class="tick-box"></span><span>Change of underwear & nightclothes</span></div>
-            <div class="checklist-item"><span class="tick-box"></span><span>Toothbrush, soap, towel & comb</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Warm woollen jumper &amp; coat</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Change of underwear &amp; nightclothes</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Toothbrush, soap, towel &amp; comb</span></div>
             <div class="checklist-item"><span class="tick-box"></span><span>Strong walking boots / plimsolls</span></div>
-            <div class="checklist-item"><span class="tick-box"></span><span>Packet of sandwiches & an apple</span></div>
-            <div class="checklist-item"><span class="tick-box"></span><span>Family photograph & postcard home</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Packet of sandwiches &amp; an apple</span></div>
+            <div class="checklist-item"><span class="tick-box"></span><span>Family photograph &amp; postcard home</span></div>
           </div>
           <div class="checklist-note">Remember: Food rationing did not start until January 1940, so September 1939 evacuees did NOT carry a ration book yet!</div>
         </div>
 
-        <div class="vintage-suitcase-outer">
-          <div class="suitcase-top-handle"></div>
-          <div class="suitcase-clasp left"></div>
-          <div class="suitcase-clasp right"></div>
+        <div class="suitcase-svg-frame">
+          <svg viewBox="0 0 680 560" width="100%" height="100%" preserveAspectRatio="none" class="suitcase-bg-svg" xmlns="http://www.w3.org/2000/svg">
+            <!-- Stitched Leather Handle -->
+            <path d="M268,28 L268,10 Q268,4 276,4 L404,4 Q412,4 412,10 L412,28" fill="none" stroke="#78350f" stroke-width="7" stroke-linecap="round"/>
+            <path d="M282,28 L282,15 L398,15 L398,28" fill="none" stroke="#b45309" stroke-width="2" stroke-dasharray="4,3"/>
+            <!-- Main Fibreboard Case Body -->
+            <rect x="6" y="26" width="668" height="528" rx="18" fill="#fef3c7" stroke="#78350f" stroke-width="4"/>
+            <rect x="15" y="35" width="650" height="510" rx="13" fill="none" stroke="#b45309" stroke-width="1.6" stroke-dasharray="6,4"/>
+            <!-- Leather Corner Reinforcements + Brass Rivets -->
+            <path d="M6,62 L6,40 Q6,26 20,26 L46,26 L6,62 Z" fill="#92400e"/>
+            <path d="M674,62 L674,40 Q674,26 660,26 L634,26 L674,62 Z" fill="#92400e"/>
+            <path d="M6,518 L6,540 Q6,554 20,554 L46,554 L6,518 Z" fill="#92400e"/>
+            <path d="M674,518 L674,540 Q674,554 660,554 L634,554 L674,518 Z" fill="#92400e"/>
+            <!-- Twin Brass Toggle Clasps -->
+            <rect x="132" y="18" width="44" height="22" rx="4" fill="#f59e0b" stroke="#78350f" stroke-width="2.5"/>
+            <circle cx="154" cy="29" r="3.5" fill="#78350f"/>
+            <rect x="504" y="18" width="44" height="22" rx="4" fill="#f59e0b" stroke="#78350f" stroke-width="2.5"/>
+            <circle cx="526" cy="29" r="3.5" fill="#78350f"/>
+          </svg>
 
-          <div class="suitcase-travel-tag">
-            <div class="tag-title">L.C.C. EVACUATION LABEL • SEPT 1939</div>
-            <div class="tag-route">LONDON → COUNTRYSIDE RECEPTION AREA</div>
-          </div>
-
-          <div class="suitcase-canvas-area">
-            <div class="suitcase-watermark">
-              DRAW, COLOUR &amp; LABEL YOUR PACKED BELONGINGS INSIDE THIS SUITCASE
+          <div class="suitcase-inner-content">
+            <div class="suitcase-travel-tag">
+              <div class="tag-title">L.C.C. EVACUATION LABEL • SEPT 1939</div>
+              <div class="tag-route">LONDON → SAFER COUNTRYSIDE RECEPTION AREA</div>
             </div>
-          </div>
 
-          <div class="suitcase-caption-box">
-            <div class="q-item">My Most Precious Item &amp; Why I Chose It:</div>
-            <div class="ruled-line" style="height:6.4mm;"></div>
-            <div class="ruled-line" style="height:6.4mm;"></div>
-            <div class="ruled-line" style="height:6.4mm;"></div>
+            <div class="suitcase-canvas-area">
+              <div class="suitcase-watermark">
+                DRAW, COLOUR &amp; LABEL YOUR PACKED BELONGINGS INSIDE THIS SUITCASE
+              </div>
+            </div>
+
+            <div class="suitcase-caption-box">
+              <div class="q-item">My Most Precious Item &amp; Why I Chose It:</div>
+              <div class="ruled-line" style="height:6.2mm;"></div>
+              <div class="ruled-line" style="height:6.2mm;"></div>
+              <div class="ruled-line" style="height:6.2mm;"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -1196,6 +1231,5 @@
       </div>
     </div>
   </div>
-
 </body>
 </html>

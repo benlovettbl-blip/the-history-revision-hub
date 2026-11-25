@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Full Interactive Headless Chrome Click-Through E2E Suite (Mobile App Mode v2)
  * Actively clicks, types, pairs, reorders, toggles offline mode, and verifies DOM transitions across:
  *   - All 6 Quiz Arena modes + Zero-Account HRH1: Backup Round-Trip
@@ -713,29 +713,6 @@ async function runE2E() {
           document.querySelector('.qac-opt-btn[data-idx="0"]')?.click();
           await new Promise((r) => setTimeout(r, 80));
           return Boolean(document.querySelector('.qac-outcome-card')) && Boolean(document.querySelector('#qac-next-btn'));
-        },
-      },
-      {
-        game: 'blitz_warden',
-        unit: 'ks2_ww2',
-        label: 'Blitz & Enigma',
-        interact: async () => {
-          await new Promise((r) => setTimeout(r, 250));
-          const shutters = Array.from(document.querySelectorAll('.bw-window-btn, .bw-window-target'));
-          const clickedWins = new Set();
-          for (const el of shutters) {
-            const w = el.getAttribute('data-win');
-            if (w !== null && !clickedWins.has(w)) {
-              clickedWins.add(w);
-              el.click();
-              await new Promise((r) => setTimeout(r, 30));
-            }
-          }
-          document.querySelector('.bw-q1-btn[data-ok="true"]')?.click();
-          await new Promise((r) => setTimeout(r, 60));
-          document.querySelector('#bw-to-act2')?.click();
-          await new Promise((r) => setTimeout(r, 80));
-          return (document.querySelector('#arcade-active-stage')?.innerText || '').includes('Act 2/3');
         },
       },
       {

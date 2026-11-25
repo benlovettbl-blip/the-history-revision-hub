@@ -1420,9 +1420,9 @@ export default {
         {
           "id": "fbe_l1_explain_why_eic",
           "type": "extended_writing",
-          "tariff": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "tariff": "Question 2: Explain Why [12 marks • 15 mins]",
           "title": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "question": "Explain why the East India Company was able to expand its territorial control across Bengal and India between 1600 and 1765.",
+          "question": "Explain why the East India Company was able to expand its territorial control across Bengal and India between 1600 and 1765. [12 marks]",
           "stimulus": [
             "Royal charters granting trade monopolies and company private armies",
             "The grant of the Diwani (1765) by Mughal Emperor Shah Alam II"
@@ -1475,17 +1475,17 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did Queen Elizabeth I grant an exclusive royal monopoly charter to the East India Company?",
-          "q": "On what date did Queen Elizabeth I grant an exclusive royal monopoly charter to the East India Company?",
+          "question": "Why did 218 London merchants pool £68,000 under Queen Elizabeth I's 1600 royal charter?",
+          "q": "Why did 218 London merchants pool £68,000 under Queen Elizabeth I's 1600 royal charter?",
           "options": [
-            "On 5 March 1770",
-            "On New Year’s Eve in 1600",
-            "On 23 June 1757",
-            "On 16 December 1773"
+            "To fund a permanent royal navy to conquer the Mughal capital immediately",
+            "To build free public hospitals across coastal ports in India",
+            "To purchase American tobacco plantations from Spanish rivals",
+            "To gain an exclusive monopoly and huge private profits from Asian spice and cotton trade"
           ],
-          "answer": "On New Year’s Eve in 1600",
-          "a": "On New Year’s Eve in 1600",
-          "explanation": "Queen Elizabeth I signed the East India Company’s founding royal charter on New Year’s Eve in 1600."
+          "answer": "To gain an exclusive monopoly and huge private profits from Asian spice and cotton trade",
+          "a": "To gain an exclusive monopoly and huge private profits from Asian spice and cotton trade",
+          "explanation": "Queen Elizabeth I's royal monopoly charter allowed London merchants to send armed galleons to Asia, returning with pepper and cotton for profits of over 300%."
         },
         {
           "stage": 1,
@@ -1671,17 +1671,17 @@ export default {
         },
         {
           "stage": 4,
-          "question": "On what date in 1757 was the decisive Battle of Plassey fought in Bengal?",
-          "q": "On what date in 1757 was the decisive Battle of Plassey fought in Bengal?",
+          "question": "Why was Robert Clive able to defeat Nawab Siraj ud-Daulah's much larger army at the Battle of Plassey in 1757?",
+          "q": "Why was Robert Clive able to defeat Nawab Siraj ud-Daulah's much larger army at the Battle of Plassey in 1757?",
           "options": [
-            "5 March 1770",
-            "19 October 1781",
-            "31 December 1600",
-            "23 June 1757"
+            "Mir Jafar's bribed divisions stood motionless while British gunpowder stayed dry under tarpaulins during a monsoon downpour",
+            "The Mughal Emperor marched from Delhi to fight alongside Clive's British soldiers",
+            "Siraj ud-Daulah surrendered Fort William without firing a single cannon",
+            "British warships sailed inland to bombard the Nawab's camp"
           ],
-          "answer": "23 June 1757",
-          "a": "23 June 1757",
-          "explanation": "On 23 June 1757 at Plassey, Clive’s artillery shattered Siraj ud-Daulah’s forces amid Mir Jafar’s betrayal."
+          "answer": "Mir Jafar's bribed divisions stood motionless while British gunpowder stayed dry under tarpaulins during a monsoon downpour",
+          "a": "Mir Jafar's bribed divisions stood motionless while British gunpowder stayed dry under tarpaulins during a monsoon downpour",
+          "explanation": "Outnumbered, Clive secured victory at Plassey through Mir Jafar's betrayal and by protecting British gunpowder from the heavy monsoon rain that soaked Siraj's exposed powder."
         },
         {
           "stage": 4,
@@ -3475,9 +3475,9 @@ export default {
         {
           "id": "fbe_l2_two_features_middle_passage",
           "type": "two_features",
-          "tariff": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "tariff": "Question 1: Describe Two Features [4 marks • 5 mins]",
           "title": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
-          "question": "Describe two features of conditions endured by enslaved Africans during the Middle Passage.",
+          "question": "Describe two features of conditions endured by enslaved Africans during the Middle Passage. [4 marks]",
           "feature_1": {
             "prompt": "Feature 1: Identify one physical condition or confinement hazard on slave ships and provide supporting detail.",
             "starter": "One key feature was... Specifically, on slave ships captives were...",
@@ -3495,9 +3495,9 @@ export default {
         {
           "id": "fbe_l2_consequence_zong_massacre",
           "type": "extended_writing",
-          "tariff": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
+          "tariff": "Question 2: Explain One Consequence [4 marks • 5 mins]",
           "title": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
-          "question": "Explain one consequence of the Zong massacre (1781) for the British abolitionist movement.",
+          "question": "Explain one consequence of the Zong massacre (1781) for the British abolitionist movement. [4 marks]",
           "hints": [
             "Point: State how the Zong court case (Gregson v Gilbert) exposed the dehumanising legal fiction of treating human beings as insured cargo [2.5].",
             "Evidence: Cite Granville Sharp and Olaudah Equiano bringing the murder of 133 enslaved Africans to national public attention.",
@@ -5198,76 +5198,101 @@ export default {
       ],
       "tasks": [
         {
-          "id": "fbe_l3_contrasting_interpretations",
-          "type": "historical_interpretations",
-          "tariff": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "title": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "question": "Explain how Interpretations 1 and 2 differ on the nature of enslaved African resistance and suggest why they reach contrasting conclusions.",
-          "interpretation_1": {
-            "author": "Edward Long (Planter & Colonial Official)",
-            "work": "History of Jamaica (1774)",
-            "extract": "The plantation negroes are naturally indolent and require the perpetual surveillance and discipline of the driver’s whip to extract labour. Without European mastery, order would instantly dissolve into ruin.",
-            "text": "The plantation negroes are naturally indolent and require the perpetual surveillance and discipline of the driver’s whip to extract labour. Without European mastery, order would instantly dissolve into ruin."
+          "id": "fbe_l3_q1_interp_diff",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART B",
+          "tariff": "Question 3(b): Contrasting Interpretations [4 marks • 5 mins]",
+          "title": "Question 3(b): Contrasting Interpretations [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Difference in Views (1 Paragraph • 5 mins)",
+          "question": "Explain how Interpretations 1 and 2 differ on the nature of enslaved African resistance. [4 marks]",
+          "stimulus": [
+            "Interpretation 1 • Planter Edward Long, History of Jamaica (1774): “The plantation negroes are naturally indolent and require the perpetual surveillance and discipline of the driver’s whip to extract labour. Without European mastery, order would instantly dissolve into ruin.”",
+            "Interpretation 2 • Historian Hilary Beckles, Caribbean Freedom (2004): “Enslaved Africans waged an unrelenting war of resistance through daily sabotage, spiritual preservation, and armed guerrilla struggle. Queen Nanny proved that African military strategy could humble the British imperial army.”"
+          ],
+          "hints": [
+            "Point: State clearly that the two interpretations disagree on whether enslaved Africans were passive or waged active, organised resistance.",
+            "Interpretation 1 (Edward Long, 1774): Quote or summarise Long’s claim that enslaved people were “naturally indolent” and only worked under the driver’s whip.",
+            "Interpretation 2 (Hilary Beckles, 2004): Contrast this with Beckles’s argument that Africans waged an “unrelenting war of resistance” through sabotage and Queen Nanny’s guerrilla strategy."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Overall Difference): State how Interpretations 1 and 2 disagree about enslaved African resistance.",
+              "Sentence 2 (Interpretation 1 Detail): Support with a brief quote or detail from Edward Long (1774).",
+              "Sentences 3–4 (Interpretation 2 Contrast): Contrast directly with a quote or detail from Hilary Beckles (2004)."
+            ],
+            "sentence_starters": [
+              "Interpretations 1 and 2 differ fundamentally on...",
+              "Interpretation 1 argues that enslaved people were...",
+              "In contrast, Interpretation 2 suggests that enslaved Africans...",
+              "This is a clear difference because..."
+            ],
+            "word_bank": [
+              "Edward Long (1774)",
+              "Hilary Beckles (2004)",
+              "driver’s whip",
+              "daily sabotage",
+              "guerrilla struggle",
+              "Queen Nanny",
+              "Blue Mountains",
+              "Maroon Treaty (1739)"
+            ],
+            "connective_bank": [
+              "Interpretations 1 and 2 differ on...",
+              "Interpretation 1 argues that...",
+              "In contrast, Interpretation 2 suggests that...",
+              "This is a difference because..."
+            ]
           },
-          "interpretation_2": {
-            "author": "Hilary Beckles (Academic Historian)",
-            "work": "Caribbean Freedom (2004)",
-            "extract": "Enslaved Africans waged an unrelenting war of resistance through daily sabotage, spiritual preservation, and armed guerrilla struggle. Queen Nanny proved that African military strategy could humble the British imperial army.",
-            "text": "Enslaved Africans waged an unrelenting war of resistance through daily sabotage, spiritual preservation, and armed guerrilla struggle. Queen Nanny proved that African military strategy could humble the British imperial army."
+          "model_answer": "Interpretations 1 and 2 differ fundamentally on the agency and resistance of enslaved Africans. Interpretation 1 (Edward Long) portrays enslaved people as passive and “naturally indolent”, claiming that only constant surveillance and the driver’s whip maintained plantation order. In sharp contrast, Interpretation 2 (Hilary Beckles) argues that enslaved Africans waged an “unrelenting war of resistance” through daily sabotage, cultural survival, and skilled guerrilla warfare led by Queen Nanny of the Maroons, which humbled the British army.",
+          "model": "Interpretations 1 and 2 differ fundamentally on the agency and resistance of enslaved Africans. Interpretation 1 (Edward Long) portrays enslaved people as passive and “naturally indolent”, claiming that only constant surveillance and the driver’s whip maintained plantation order. In sharp contrast, Interpretation 2 (Hilary Beckles) argues that enslaved Africans waged an “unrelenting war of resistance” through daily sabotage, cultural survival, and skilled guerrilla warfare led by Queen Nanny of the Maroons, which humbled the British army."
+        },
+        {
+          "id": "fbe_l3_q2_interp_why",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART C",
+          "tariff": "Question 3(c): Why Interpretations Differ [4 marks • 5 mins]",
+          "title": "Question 3(c): Why Interpretations Differ [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Explaining Why Views Differ (1 Paragraph • 5 mins)",
+          "question": "Suggest one reason why Interpretations 1 and 2 differ on the reality of plantation control. [4 marks]",
+          "stimulus": [
+            "Interpretation 1 • Planter Edward Long, History of Jamaica (1774): “The plantation negroes are naturally indolent and require the perpetual surveillance and discipline of the driver’s whip to extract labour. Without European mastery, order would instantly dissolve into ruin.”",
+            "Interpretation 2 • Historian Hilary Beckles, Caribbean Freedom (2004): “Enslaved Africans waged an unrelenting war of resistance through daily sabotage, spiritual preservation, and armed guerrilla struggle. Queen Nanny proved that African military strategy could humble the British imperial army.”"
+          ],
+          "hints": [
+            "Reason: Identify that the authors write from completely different historical contexts, motives, and evidence bases.",
+            "Edward Long (1774): Explain that Long was an 18th-century Jamaican slaveholder writing pro-slavery propaganda to justify plantation brutality and protect profits [3.2].",
+            "Hilary Beckles (2004): Explain that Beckles is a modern Caribbean historian examining colonial military archives, Maroon treaties, and oral traditions to recover African agency [3.3–3.5]."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Identify Reason): State that the authors have contrasting backgrounds, motives, or evidence bases.",
+              "Sentence 2 (Interpretation 1 Origin/Focus): Explain Edward Long’s position as a 1774 slave-owning planter justifying chattel slavery.",
+              "Sentences 3–4 (Interpretation 2 Origin/Focus): Contrast with Hilary Beckles writing in 2004 using Maroon and military records."
+            ],
+            "sentence_starters": [
+              "One reason why Interpretations 1 and 2 differ is because the authors write with different motives and evidence...",
+              "Specifically, Interpretation 1 was written in 1774 by a Jamaican planter whose focus was...",
+              "In contrast, Interpretation 2 was written in 2004 by a modern historian focusing on...",
+              "As a result, the authors reach different conclusions because..."
+            ],
+            "word_bank": [
+              "Jamaican planter",
+              "pro-slavery justification",
+              "chattel slavery",
+              "modern historian",
+              "colonial military records",
+              "Maroon oral history",
+              "1739 Maroon Treaty"
+            ],
+            "connective_bank": [
+              "One reason why Interpretations 1 and 2 differ is because...",
+              "Specifically, Interpretation 1 focuses primarily on...",
+              "In contrast, Interpretation 2 focuses more on...",
+              "As a result, the authors reach different conclusions because..."
+            ]
           },
-          "sub_question_b": {
-            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the nature of enslaved African resistance. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-            "model": "The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays enslaved Africans as naturally passive and requiring forced discipline to perform labor, whereas Interpretation 2 presents them as determined resisters who waged an active, heroic campaign of guerrilla warfare against slavery.<br><br>Interpretation 1 states that \"plantation negroes are naturally indolent and require the perpetual surveillance and discipline of the driver’s whip to extract labour\", claiming that without European mastery order would dissolve.<br><br>In contrast, Interpretation 2 argues that \"enslaved Africans waged an unrelenting war of resistance through daily sabotage, spiritual preservation, and armed guerrilla struggle\", highlighting that \"Queen Nanny proved that African military strategy could humble the British imperial army\"."
-          },
-          "sub_question_c": {
-            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about enslaved African resistance. You may use Sources B and C to help explain your answer.",
-            "model": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on pro-slavery documents like Source B, which reflects plantation overseers' biased journals claiming that enslaved workers were \"disinclined to labour unless the driver stands continually over them with the whip\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains colonial military despatches describing how Maroon fighters under Queen Nanny used \"guerrilla tactics, tactical horn-calls, and mountain ambushes that inflicted heavy casualties on our regulars\".<br><br>Because the historians gave weight to contrasting types of evidence—plantation management logs written by slaveholders versus British military reports of armed resistance—they reached contrasting conclusions."
-          },
-          "topic": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "interp1": {
-            "author": "Edward Long (Planter & Colonial Official)",
-            "work": "History of Jamaica (1774)",
-            "extract": "The plantation negroes are naturally indolent and require the perpetual surveillance and discipline of the driver’s whip to extract labour. Without European mastery, order would instantly dissolve into ruin.",
-            "text": "The plantation negroes are naturally indolent and require the perpetual surveillance and discipline of the driver’s whip to extract labour. Without European mastery, order would instantly dissolve into ruin."
-          },
-          "interp2": {
-            "author": "Hilary Beckles (Academic Historian)",
-            "work": "Caribbean Freedom (2004)",
-            "extract": "Enslaved Africans waged an unrelenting war of resistance through daily sabotage, spiritual preservation, and armed guerrilla struggle. Queen Nanny proved that African military strategy could humble the British imperial army.",
-            "text": "Enslaved Africans waged an unrelenting war of resistance through daily sabotage, spiritual preservation, and armed guerrilla struggle. Queen Nanny proved that African military strategy could humble the British imperial army."
-          },
-          "source_b": {
-            "label": "Source B",
-            "title": "Source B: Jamaican Plantation Management Journal (c. 1770)",
-            "badge": "Plantation Management Record • c. 1770",
-            "author": "Estate Manager’s Instruction Book, St. Catherine Parish, Jamaica (c. 1770)",
-            "text": "The field hands on this sugar estate are disinclined to labour unless the driver stands continually over them with the whip. When left unsupervised in the cane-pieces, they loiter, feign sickness, or spoil the cutting knives. Firm discipline and constant vigilance are necessary to maintain the production of sugar on which the colony depends."
-          },
-          "source1": {
-            "label": "Source B",
-            "title": "Source B: Jamaican Plantation Management Journal (c. 1770)",
-            "badge": "Plantation Management Record • c. 1770",
-            "author": "Estate Manager’s Instruction Book, St. Catherine Parish, Jamaica (c. 1770)",
-            "text": "The field hands on this sugar estate are disinclined to labour unless the driver stands continually over them with the whip. When left unsupervised in the cane-pieces, they loiter, feign sickness, or spoil the cutting knives. Firm discipline and constant vigilance are necessary to maintain the production of sugar on which the colony depends."
-          },
-          "source_c": {
-            "label": "Source C",
-            "title": "Source C: British Military Despatch on the First Maroon War (1734)",
-            "badge": "Military Despatch • 1734",
-            "author": "Captain Stoddart’s Official Despatch to Governor Edward Trelawny (1734)",
-            "text": "Our detachment engaged the rebel Maroons commanded by Queen Nanny in the Blue Mountains. The rebels fought from behind rocky parapets, employing guerrilla tactics, tactical horn-calls, and mountain ambushes that inflicted heavy casualties on our regulars. Their scouts know every defile, making it impossible to dislodge them without severe loss."
-          },
-          "source2": {
-            "label": "Source C",
-            "title": "Source C: British Military Despatch on the First Maroon War (1734)",
-            "badge": "Military Despatch • 1734",
-            "author": "Captain Stoddart’s Official Despatch to Governor Edward Trelawny (1734)",
-            "text": "Our detachment engaged the rebel Maroons commanded by Queen Nanny in the Blue Mountains. The rebels fought from behind rocky parapets, employing guerrilla tactics, tactical horn-calls, and mountain ambushes that inflicted heavy casualties on our regulars. Their scouts know every defile, making it impossible to dislodge them without severe loss."
-          },
-          "model_answer_b": "The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays enslaved Africans as naturally passive and requiring forced discipline to perform labor, whereas Interpretation 2 presents them as determined resisters who waged an active, heroic campaign of guerrilla warfare against slavery.<br><br>Interpretation 1 states that \"plantation negroes are naturally indolent and require the perpetual surveillance and discipline of the driver’s whip to extract labour\", claiming that without European mastery order would dissolve.<br><br>In contrast, Interpretation 2 argues that \"enslaved Africans waged an unrelenting war of resistance through daily sabotage, spiritual preservation, and armed guerrilla struggle\", highlighting that \"Queen Nanny proved that African military strategy could humble the British imperial army\".",
-          "model_answer_c": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on pro-slavery documents like Source B, which reflects plantation overseers' biased journals claiming that enslaved workers were \"disinclined to labour unless the driver stands continually over them with the whip\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains colonial military despatches describing how Maroon fighters under Queen Nanny used \"guerrilla tactics, tactical horn-calls, and mountain ambushes that inflicted heavy casualties on our regulars\".<br><br>Because the historians gave weight to contrasting types of evidence—plantation management logs written by slaveholders versus British military reports of armed resistance—they reached contrasting conclusions.",
-          "model_answer": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the nature of enslaved African resistance. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays enslaved Africans as naturally passive and requiring forced discipline to perform labor, whereas Interpretation 2 presents them as determined resisters who waged an active, heroic campaign of guerrilla warfare against slavery.<br><br>Interpretation 1 states that \"plantation negroes are naturally indolent and require the perpetual surveillance and discipline of the driver’s whip to extract labour\", claiming that without European mastery order would dissolve.<br><br>In contrast, Interpretation 2 argues that \"enslaved Africans waged an unrelenting war of resistance through daily sabotage, spiritual preservation, and armed guerrilla struggle\", highlighting that \"Queen Nanny proved that African military strategy could humble the British imperial army\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about enslaved African resistance. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on pro-slavery documents like Source B, which reflects plantation overseers' biased journals claiming that enslaved workers were \"disinclined to labour unless the driver stands continually over them with the whip\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains colonial military despatches describing how Maroon fighters under Queen Nanny used \"guerrilla tactics, tactical horn-calls, and mountain ambushes that inflicted heavy casualties on our regulars\".<br><br>Because the historians gave weight to contrasting types of evidence—plantation management logs written by slaveholders versus British military reports of armed resistance—they reached contrasting conclusions.</div>",
-          "model": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the nature of enslaved African resistance. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays enslaved Africans as naturally passive and requiring forced discipline to perform labor, whereas Interpretation 2 presents them as determined resisters who waged an active, heroic campaign of guerrilla warfare against slavery.<br><br>Interpretation 1 states that \"plantation negroes are naturally indolent and require the perpetual surveillance and discipline of the driver’s whip to extract labour\", claiming that without European mastery order would dissolve.<br><br>In contrast, Interpretation 2 argues that \"enslaved Africans waged an unrelenting war of resistance through daily sabotage, spiritual preservation, and armed guerrilla struggle\", highlighting that \"Queen Nanny proved that African military strategy could humble the British imperial army\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about enslaved African resistance. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on pro-slavery documents like Source B, which reflects plantation overseers' biased journals claiming that enslaved workers were \"disinclined to labour unless the driver stands continually over them with the whip\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains colonial military despatches describing how Maroon fighters under Queen Nanny used \"guerrilla tactics, tactical horn-calls, and mountain ambushes that inflicted heavy casualties on our regulars\".<br><br>Because the historians gave weight to contrasting types of evidence—plantation management logs written by slaveholders versus British military reports of armed resistance—they reached contrasting conclusions.</div>"
+          "model_answer": "One primary reason why Interpretations 1 and 2 differ is that the authors write from contrasting historical contexts, motives, and sources. Edward Long was an eighteenth-century Jamaican planter and slave owner writing in 1774 to defend chattel slavery and convince British readers that violent whip discipline was economically necessary, leading him to erase African resistance. In contrast, Hilary Beckles is a modern historian writing in 2004 using British military dispatches—such as the 1739 Maroon peace treaty—and Caribbean oral histories to document how enslaved people and Maroons actively resisted plantation control.",
+          "model": "One primary reason why Interpretations 1 and 2 differ is that the authors write from contrasting historical contexts, motives, and sources. Edward Long was an eighteenth-century Jamaican planter and slave owner writing in 1774 to defend chattel slavery and convince British readers that violent whip discipline was economically necessary, leading him to erase African resistance. In contrast, Hilary Beckles is a modern historian writing in 2004 using British military dispatches—such as the 1739 Maroon peace treaty—and Caribbean oral histories to document how enslaved people and Maroons actively resisted plantation control."
         }
       ],
       "teacher_notes": {
@@ -7313,9 +7338,9 @@ export default {
         {
           "id": "fbe_l4_narrative_account_tea_party",
           "type": "narrative_account",
-          "tariff": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
-          "title": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
-          "question": "Write a narrative account analysing the key events leading from the Stamp Act (1765) to the Boston Tea Party (1773).",
+          "tariff": "Question 2: Narrative Account [8 marks • 10 mins]",
+          "title": "Question 2: Narrative Account [8 marks • 10 mins]",
+          "question": "Write a narrative account analysing the key events leading from the Stamp Act (1765) to the Boston Tea Party (1773). [8 marks]",
           "hints": [
             "Beginning (1765): Explain how the Stamp Act introduced direct imperial taxation without colonial consent, sparking the rallying cry \"No taxation without representation\" [4.1].",
             "Middle (1767–1770): Explain how the Townshend Acts and the arrival of British redcoats led directly to street clashes and the Boston Massacre of 1770 [4.2].",
@@ -7355,6 +7380,47 @@ export default {
           },
           "model_answer": "Initially, colonial anger erupted in December 1773 when the Sons of Liberty dumped 342 chests of British tea into Boston harbour to protest the Tea Act ('No taxation without representation').<br><br>In response, Britain passed the harsh 'Intolerable Acts' of 1774, closing Boston port and imposing military rule. The Thirteen Colonies formed the First Continental Congress to coordinate resistance, leading to the first military clashes at Lexington and Concord in April 1775.<br><br>Finally, seeing compromise was impossible, the Second Continental Congress adopted Thomas Jefferson’s Declaration of Independence on 4 July 1776, severing all political ties with the British Crown.",
           "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)"
+        },
+        {
+          "id": "fbe_l4_q2_importance",
+          "type": "extended_writing",
+          "tariff": "Question 3: Explain Importance [8 marks • 10 mins]",
+          "title": "Question 3: Explain Importance [8 marks • 10 mins]",
+          "topic": "Extended Historical Explanation • Historical Importance (2 Paragraphs • 10 mins)",
+          "question": "Explain the importance of the Boston Tea Party (1773) for relations between Britain and the American colonies. [8 marks]",
+          "hints": [
+            "Impact 1 (Harsh British Retaliation): Explain how destroying £10,000 of East India Company tea provoked King George III and Parliament to pass the 1774 Coercive (Intolerable) Acts, closing Boston Harbour and imposing military rule [4.5].",
+            "Impact 2 (Colonial Unity): Explain how punishing Massachusetts backfired by uniting twelve colonies at the First Continental Congress (1774) to boycott trade and arm local militias, leading directly to war [4.5]."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Paragraph 1 (Imperial Retaliation — Coercive Acts): Explain why Parliament responded by closing Boston Harbour and placing Massachusetts under General Gage’s military rule [4.5].",
+              "Paragraph 2 (Continental Unification): Explain how British punishment united the Thirteen Colonies in solidarity at the 1774 First Continental Congress, making armed conflict likely [4.5]."
+            ],
+            "sentence_starters": [
+              "The primary importance of the Boston Tea Party was that it provoked...",
+              "In response, imperial authorities decided to pass the 1774 Coercive Acts, which...",
+              "Crucially, this had the wider effect of uniting the other colonies when...",
+              "Consequently, relations deteriorated beyond repair because..."
+            ],
+            "word_bank": [
+              "Boston Tea Party (1773)",
+              "342 tea chests",
+              "King George III",
+              "Coercive Acts (Intolerable Acts)",
+              "Boston Harbour",
+              "General Gage",
+              "First Continental Congress (1774)"
+            ],
+            "connective_bank": [
+              "The primary importance was that...",
+              "In response, imperial authorities decided to...",
+              "Crucially, this had the effect of...",
+              "Consequently, relations deteriorated because..."
+            ]
+          },
+          "model_answer": "One reason the Boston Tea Party (1773) was vitally important was that it provoked harsh punitive retaliation from the British Crown and Parliament. Viewing the dumping of 342 chests of East India Company tea into Boston Harbour as open rebellion, King George III backed the 1774 Coercive Acts (labelled the “Intolerable Acts” by colonists). These laws shut Boston Harbour to trade, suspended Massachusetts self-government, and installed General Thomas Gage as military governor, destroying hopes of peaceful compromise.<br><br>Furthermore, the Tea Party was important because British retaliation united previously divided colonies into a single revolutionary movement. Instead of isolating Massachusetts, the Coercive Acts alarmed neighbouring colonies that their own liberties could be stripped next. In September 1774, delegates from twelve colonies met at the First Continental Congress, coordinating a continental trade boycott and preparing colonial militias—putting Britain and America on the direct path to war in 1775.",
+          "model": "One reason the Boston Tea Party (1773) was vitally important was that it provoked harsh punitive retaliation from the British Crown and Parliament. Viewing the dumping of 342 chests of East India Company tea into Boston Harbour as open rebellion, King George III backed the 1774 Coercive Acts (labelled the “Intolerable Acts” by colonists). These laws shut Boston Harbour to trade, suspended Massachusetts self-government, and installed General Thomas Gage as military governor, destroying hopes of peaceful compromise.<br><br>Furthermore, the Tea Party was important because British retaliation united previously divided colonies into a single revolutionary movement. Instead of isolating Massachusetts, the Coercive Acts alarmed neighbouring colonies that their own liberties could be stripped next. In September 1774, delegates from twelve colonies met at the First Continental Congress, coordinating a continental trade boycott and preparing colonial militias—putting Britain and America on the direct path to war in 1775."
         }
       ],
       "quiz": [
@@ -7472,17 +7538,17 @@ export default {
         },
         {
           "stage": 3,
-          "question": "On what date did British soldiers fire into a crowd on Boston’s icy King Street during the Boston Massacre?",
-          "q": "On what date did British soldiers fire into a crowd on Boston’s icy King Street during the Boston Massacre?",
+          "question": "What immediately triggered panicked British soldiers to open fire on colonists during the 1770 Boston Massacre?",
+          "q": "What immediately triggered panicked British soldiers to open fire on colonists during the 1770 Boston Massacre?",
           "options": [
-            "16 December 1773",
-            "23 June 1757",
-            "5 March 1770",
-            "19 October 1781"
+            "Colonists attempted to sink three British tea ships in Boston Harbour",
+            "A hostile crowd surrounded a sentry post, pelting the soldiers with snowballs, ice, and oyster shells while daring them to fire",
+            "The Sons of Liberty opened fire on the British barracks with captured cannons",
+            "King George III sent written orders from London to shoot protesters in Boston"
           ],
-          "answer": "5 March 1770",
-          "a": "5 March 1770",
-          "explanation": "On 5 March 1770, panicked British redcoats fired on a hostile crowd on King Street in Boston."
+          "answer": "A hostile crowd surrounded a sentry post, pelting the soldiers with snowballs, ice, and oyster shells while daring them to fire",
+          "a": "A hostile crowd surrounded a sentry post, pelting the soldiers with snowballs, ice, and oyster shells while daring them to fire",
+          "explanation": "In the confusion of being surrounded and pelted with ice and oyster shells on King Street, panicked redcoats fired their muskets, killing five colonists."
         },
         {
           "stage": 3,
@@ -9170,12 +9236,12 @@ export default {
         {
           "id": "fbe_l5_evaluative_essay_independence",
           "type": "extended_writing",
-          "tariff": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "tariff": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]",
           "title": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
-          "question": "‘British defeat in the American Revolutionary War was caused primarily by French naval intervention rather than American military strength.’ How far do you agree?",
+          "question": "‘British defeat in the American Revolutionary War was caused primarily by French naval intervention rather than American military strength.’ How far do you agree? [12 marks]",
           "stimulus": [
-            "George Washington and the Continental Army’s strategy of survival",
-            "French naval intervention and the Battle of the Chesapeake (1781)"
+            "The Battle of Saratoga and the French Alliance (1777–1778)",
+            "George Washington and the Continental Army at Valley Forge"
           ],
           "hints": [
             "Point: Assess how French naval intervention cut off British army resupply at Yorktown in 1781 [5.4].",

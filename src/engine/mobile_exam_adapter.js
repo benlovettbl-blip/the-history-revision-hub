@@ -13,8 +13,6 @@ import {
   getCanonicalGcsePaperCode,
   getNonDuplicateExtraMockQuestions,
 } from './lesson_exam_practice_panel.js';
-import { BLURT_PAST_QUESTIONS_DATABASE } from '../blurt_past_papers_curriculum.js';
-import { BLURT_TOPICS_DATABASE } from '../blurt_topics_curriculum.js';
 
 const STORAGE_PINNED_UNITS = 'hh_pinned_units';
 
@@ -1422,7 +1420,7 @@ function buildExaminerDrill(rawQObj, qInfo) {
 /**
  * Builds Drill 4: Speak / Blurt (Specification keyword & date matcher + missed high-tariff suggestions).
  */
-function buildBlurtDrill(qInfo, lesson, blurtMatch = null) {
+function buildBlurtDrill(qInfo, lesson) {
   const targets = [];
   const seenLower = new Set();
 
@@ -1477,14 +1475,7 @@ function buildBlurtDrill(qInfo, lesson, blurtMatch = null) {
     }
   });
 
-  // 3. Blurt step2_wordbank if matched
-  if (blurtMatch?.scaffoldLadder?.step2_wordbank) {
-    blurtMatch.scaffoldLadder.step2_wordbank.forEach((wb) => {
-      addTarget(wb, 'term', 'Core Edexcel specification term for this topic.');
-    });
-  }
-
-  // 4. Lesson vocab terms that appear in the model answer (first), then general lesson vocab
+  // 3. Lesson vocab terms that appear in the model answer (first), then general lesson vocab
   const modelLower = String(qInfo.plainModelText || '').toLowerCase();
   const lessonVocab = Array.isArray(lesson?.vocab) ? lesson.vocab : [];
   lessonVocab.forEach((v) => {
@@ -1498,7 +1489,7 @@ function buildBlurtDrill(qInfo, lesson, blurtMatch = null) {
     }
   });
 
-  // 5. Workbook stages milestones if still < 6 targets
+  // 4. Workbook stages milestones if still < 6 targets
   if (targets.length < 6 && Array.isArray(lesson?.workbook_stages)) {
     lesson.workbook_stages.forEach((st) => {
       if (targets.length < 8 && st?.title) {
@@ -1514,7 +1505,6 @@ function buildBlurtDrill(qInfo, lesson, blurtMatch = null) {
 
   const starterHint =
     qInfo.starterSentence ||
-    blurtMatch?.scaffoldLadder?.step3_starters?.[0] ||
     'Speak or bullet-point key dates, names, and causal links — then tap Instant Self-Mark!';
 
   return {
@@ -1522,52 +1512,6 @@ function buildBlurtDrill(qInfo, lesson, blurtMatch = null) {
     specTargets: targets.slice(0, 10),
     checklistPoints,
   };
-}
-
-function tokenizeForTopicMatch(str) {
-  const stop = new Set([
-    'the', 'and', 'for', 'with', 'from', 'into', 'about', 'that', 'this', 'were', 'was',
-    'explain', 'describe', 'why', 'how', 'what', 'two', 'one', 'years', 'period', 'marks',
-    'key', 'events', 'consequences', 'consequence', 'importance', 'features', 'feature',
-  ]);
-  return String(str || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, ' ')
-    .split(/\s+/)
-    .filter((w) => w.length > 2 && !stop.has(w));
-}
-
-function findMatchingBlurtEntry(unitId, lesson, lessonMeta, questionStem) {
-  const unitPast = BLURT_PAST_QUESTIONS_DATABASE.filter((b) => b.unitId === unitId);
-  const qTokens = new Set(tokenizeForTopicMatch(`${questionStem} ${lessonMeta.cleanTitle}`));
-  let best = null;
-  let bestScore = 0;
-
-  for (const item of unitPast) {
-    let score = 0;
-    const specStr = String(item.specTopic || '');
-    if (
-      lessonMeta.lessonCode &&
-      specStr.toLowerCase().includes(lessonMeta.lessonCode.replace(/\s+/g, '').toLowerCase())
-    ) {
-      score += 4;
-    }
-    const itemTokens = tokenizeForTopicMatch(`${item.topicName || ''} ${item.drivingQuestion || ''}`);
-    for (const t of itemTokens) {
-      if (qTokens.has(t)) score += 1;
-    }
-    if (score > bestScore) {
-      bestScore = score;
-      best = item;
-    }
-  }
-
-  if (bestScore >= 3) return best;
-
-  const topicMatch = BLURT_TOPICS_DATABASE.find(
-    (t) => t.relatedLesson?.unit === unitId && t.relatedLesson?.index === lessonMeta.lessonIndex,
-  );
-  return topicMatch || null;
 }
 
 function defaultExaminerTipForFamily(family, marks) {
@@ -1884,20 +1828,13 @@ export async function buildUnitExamDirectory(rawUnitId, { forceRefresh = false }
           rawPrimaryQs,
         );
 
-        const blurtMatch = findMatchingBlurtEntry(unitId, lesson, lessonMeta, questionStem);
-
         const indicativeContent = Array.isArray(rawQ.indicativeContent)
           ? rawQ.indicativeContent
           : Array.isArray(rawQ.mark_scheme)
             ? rawQ.mark_scheme
-            : Array.isArray(blurtMatch?.indicativeContent)
-              ? blurtMatch.indicativeContent
-              : [];
+            : [];
 
-        const starterSentence =
-          rawQ?.scaffolding?.sentence_starters?.[0] ||
-          blurtMatch?.scaffoldLadder?.step3_starters?.[0] ||
-          '';
+        const starterSentence = rawQ?.scaffolding?.sentence_starters?.[0] || '';
 
         const examinerTip = stripHtml(
           rawQ.examiner_tip ||
@@ -1956,7 +1893,7 @@ export async function buildUnitExamDirectory(rawUnitId, { forceRefresh = false }
           peel: buildPeelDrill(plainModelText, questionStem, vocabChips, lessonStages),
           plan: buildPlanDrill(baseInfo, lesson, rawLessons),
           examiner: buildExaminerDrill(rawQ, baseInfo),
-          blurt: buildBlurtDrill(baseInfo, lesson, blurtMatch),
+          blurt: buildBlurtDrill(baseInfo, lesson),
         };
 
         const searchHaystack = [

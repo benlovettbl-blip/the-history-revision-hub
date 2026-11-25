@@ -318,8 +318,8 @@
                 "phase": "Phase 3: Edexcel Exam Practice (20 mins)",
                 "time": "20m",
                 "label": "Exam Writing",
-                "activity": "Timed Edexcel Paper 2 Section B (1HI0/B4) practice: complete Q1(a)/(b) Describe two features (French threat in 1558; Elizabeth’s character and strengths [4m: 2×2m]) and Q2 Explain why Elizabeth’s legitimacy, gender, and marriage were a problem in 1558 [12m].",
-                "instruction": "Timed Edexcel Paper 2 Section B (1HI0/B4) practice: complete Q1(a)/(b) Describe two features (French threat in 1558; Elizabeth’s character and strengths [4m: 2×2m]) and Q2 Explain why Elizabeth’s legitimacy, gender, and marriage were a problem in 1558 [12m]."
+                "activity": "Timed Edexcel Paper 2 Section B (1HI0/B4) practice: complete Q1(a)/(b) Describe two features (French threat in 1558; Elizabeth’s character and strengths [4m: 2×2m]) and Q2 Explain why Elizabeth faced challenges on becoming queen in 1558 [12m].",
+                "instruction": "Timed Edexcel Paper 2 Section B (1HI0/B4) practice: complete Q1(a)/(b) Describe two features (French threat in 1558; Elizabeth’s character and strengths [4m: 2×2m]) and Q2 Explain why Elizabeth faced challenges on becoming queen in 1558 [12m]."
               },
               {
                 "phase": "Phase 4: Consolidate & Exemplar DIRT (5 mins)",
@@ -431,23 +431,23 @@
             "type": "explain_why_12",
             "marks": 12,
             "workbook_badge": "In Printed Workbook • Page 3 (KT1 Booklet)",
-            "question": "2. Explain why Elizabeth’s legitimacy, gender and marriage were a problem for her in 1558. [12 marks]",
+            "question": "2. Explain why Elizabeth faced challenges on becoming queen in 1558. [12 marks]",
             "stimulus": [
-              "Henry VIII’s marriage to Anne Boleyn",
-              "The succession"
+              "Elizabeth’s legitimacy",
+              "Financial weaknesses"
             ],
             "bullet_points": [
-              "Henry VIII’s marriage to Anne Boleyn",
-              "The succession"
+              "Elizabeth’s legitimacy",
+              "Financial weaknesses"
             ],
-            "model": "<p>Elizabeth’s disputed legitimacy posed an acute dynastic threat in 1558 because devout Catholics at home and abroad rejected Henry VIII’s divorce from Catherine of Aragon and his 1533 marriage to Anne Boleyn. Under Roman Catholic canon law—and even Henry VIII’s own 1536 Act of Succession passed after Anne Boleyn’s execution—Elizabeth was viewed by strict Catholics as illegitimate and barred from inheriting the throne. Consequently, Catholic powers such as France promoted Elizabeth’s cousin Mary, Queen of Scots—married to the French Dauphin Francis—as England’s rightful Catholic monarch, encouraging Mary to quarter the English royal coat of arms alongside her own.</p><p>Second, sixteenth-century patriarchal attitudes made Elizabeth’s gender an immediate political problem. Contemporary society believed the Great Chain of Being placed men in authority over women, viewing female monarchs as emotionally weak, indecisive, and incapable of leading royal armies into battle. Recent painful memories of Mary I’s reign—marked by disastrous harvests, nearly 300 Protestant burnings, financial ruin, and the humiliating loss of Calais in January 1558—deepened elite prejudice that a woman ruling alone would invite domestic rebellion and foreign invasion.</p><p>Finally, the problem of marriage and the succession trapped Elizabeth in an almost impossible political dilemma. Because Elizabeth ascended at twenty-five with no Protestant heir, her death from illness such as smallpox threatened to plunge England into civil war, prompting the Privy Council and Parliament to press her relentlessly to marry. Yet marrying an English nobleman like Robert Dudley risked fierce court faction fighting, whereas marrying a foreign Catholic prince such as Philip II of Spain risked repeating Mary I’s unpopular Spanish marriage and surrendering English independence to foreign control.</p>",
+            "model": "<p>First, Elizabeth’s disputed legitimacy posed an immediate dynastic challenge in 1558 because devout Catholics at home and abroad rejected Henry VIII’s divorce from Catherine of Aragon and his 1533 marriage to Anne Boleyn. Under Roman Catholic canon law—and even Henry VIII’s own 1536 Act of Succession passed after Anne Boleyn’s execution—Elizabeth was viewed by strict Catholics as illegitimate and barred from inheriting the Crown. Consequently, Catholic powers promoted Elizabeth’s cousin Mary, Queen of Scots—married to the French Dauphin Francis—as England’s rightful Catholic monarch, encouraging Mary to quarter the English royal coat of arms alongside her own.</p><p>Second, severe financial weaknesses crippled the Tudor Crown’s ability to defend or govern England securely on Elizabeth’s accession. Elizabeth inherited a crushing £300,000 debt from Mary I’s war with France against an ordinary royal revenue of roughly £286,000 a year, compounded by decades of currency debasement and reliance on high-interest 14% loans from the Antwerp money market. Because raising extraordinary taxation through Parliament risked provoking domestic rebellion, this financial crisis left Elizabeth dangerously short of funds to equip armies, maintain royal forts, or buy political loyalty.</p><p>Finally, Elizabeth faced dangerous foreign encirclement alongside deep sixteenth-century doubts over her gender and the succession. Having lost Calais in January 1558, England confronted battle-hardened French garrisons stationed in Scotland under Regent Mary of Guise via the Auld Alliance, threatening a two-front Catholic invasion. At the same time, patriarchal belief in the Great Chain of Being led elites—scarred by Mary I’s troubled reign—to doubt a woman ruling alone, while twenty-five-year-old Elizabeth’s unmarried status left England without a Protestant heir yet trapped between factional English suitors and unpopular foreign Catholic princes.</p>",
             "scaffolding": {
               "acronym": "3 PEEL Reasons • Own Knowledge Required (Cap 6/12) • 15m",
               "button_label": "Starters & Word Bank",
               "acronym_title": "",
               "guidance": "",
               "sentence_starters": [
-                "First, one major reason why Elizabeth’s legitimacy, gender and marriage were a problem for her in 1558 was...",
+                "First, one major reason why Elizabeth faced challenges on becoming queen in 1558 was...",
                 "Second, another key reason was...",
                 "Finally, a third reason was..."
               ],
@@ -478,23 +478,23 @@
                 "title": "3/12 Simple Statements",
                 "score": "3 / 12 Marks",
                 "level": "Level 1 (Simple Statements)",
-                "text": "<p>Elizabeth had problems in 1558 because many Catholics thought her parents were not properly married, so she should not be queen. People also thought a woman was too weak to rule England on her own and wanted her to get married quickly so she could have a baby.</p>",
-                "verdict": "Level 1 (3/12) — Simple general points; needs specific Tudor facts, dates (e.g. 1536 Act of Succession, Mary, Queen of Scots), and 'because / this meant that' explanation."
+                "text": "<p>Elizabeth faced big challenges in 1558 because many Catholics thought her parents were not properly married, so she should not be queen. Also, the Crown owed a huge amount of money from war, and England was threatened by France and Scotland while people doubted a woman ruling alone.</p>",
+                "verdict": "Level 1 (3/12) — Simple general points; needs specific Tudor facts, dates (e.g. £300,000 debt, Calais, Mary, Queen of Scots), and 'because / this meant that' explanation."
               },
               "tier_6m": {
                 "title": "6/12 Descriptive / Stimulus-Bound",
                 "score": "6 / 12 Marks",
                 "level": "Level 2 (Stimulus-Bound Cap)",
-                "text": "<p>First, Henry VIII married Anne Boleyn in 1533 after breaking with Rome to divorce his first wife, Catherine of Aragon. The Pope refused to recognise this divorce, meaning devout Catholics believed Catherine was still Henry’s lawful wife when Elizabeth was born. In 1536 Henry executed Anne Boleyn and passed an Act declaring Elizabeth illegitimate.</p><p>Second, the succession worried politicians when twenty-five-year-old Elizabeth became queen in November 1558. She was unmarried and had no Protestant child to inherit the throne if she died suddenly from illness. Consequently, her Privy Councillors and MPs in Parliament immediately urged her to choose either an English nobleman or a foreign prince as a husband.</p>",
-                "verdict": "Level 2 (6/12) — Accurate detail, but capped at 6/12 for sticking only to the two stimulus bullets. Add a 3rd own-knowledge point (e.g. prejudice against female rulers or Mary I's reign) and explain WHY."
+                "text": "<p>First, Henry VIII married Anne Boleyn in 1533 after breaking with Rome to divorce Catherine of Aragon. The Pope refused to recognise this divorce, meaning devout Catholics believed Elizabeth was illegitimate, especially after Henry passed the 1536 Act of Succession following Anne Boleyn’s execution.</p><p>Second, the Crown suffered severe financial weaknesses in November 1558 because Mary I left behind £300,000 of debt from fighting France. Ordinary royal income was only around £286,000 a year, and the Crown owed high-interest 14% loans to bankers in Antwerp while English coins had been debased.</p>",
+                "verdict": "Level 2 (6/12) — Accurate detail, but capped at 6/12 for sticking only to the two stimulus bullets. Add a 3rd own-knowledge reason (e.g. the French threat via the Auld Alliance or patriarchal doubts over gender and marriage) and explain WHY."
               },
               "tier_12m": {
                 "title": "12/12 Grade 9 Exam ★",
                 "score": "12 / 12 Marks",
                 "level": "Level 4 Top (Pearson Benchmark)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "<p>Elizabeth’s disputed legitimacy posed an acute dynastic threat in 1558 because devout Catholics at home and abroad rejected Henry VIII’s divorce from Catherine of Aragon and his 1533 marriage to Anne Boleyn. Under Roman Catholic canon law—and even Henry VIII’s own 1536 Act of Succession passed after Anne Boleyn’s execution—Elizabeth was viewed by strict Catholics as illegitimate and barred from inheriting the throne. Consequently, Catholic powers such as France promoted Elizabeth’s cousin Mary, Queen of Scots—married to the French Dauphin Francis—as England’s rightful Catholic monarch, encouraging Mary to quarter the English royal coat of arms alongside her own.</p><p>Second, sixteenth-century patriarchal attitudes made Elizabeth’s gender an immediate political problem. Contemporary society believed the Great Chain of Being placed men in authority over women, viewing female monarchs as emotionally weak, indecisive, and incapable of leading royal armies into battle. Recent painful memories of Mary I’s reign—marked by disastrous harvests, nearly 300 Protestant burnings, financial ruin, and the humiliating loss of Calais in January 1558—deepened elite prejudice that a woman ruling alone would invite domestic rebellion and foreign invasion.</p><p>Finally, the problem of marriage and the succession trapped Elizabeth in an almost impossible political dilemma. Because Elizabeth ascended at twenty-five with no Protestant heir, her death from illness such as smallpox threatened to plunge England into civil war, prompting the Privy Council and Parliament to press her relentlessly to marry. Yet marrying an English nobleman like Robert Dudley risked fierce court faction fighting, whereas marrying a foreign Catholic prince such as Philip II of Spain risked repeating Mary I’s unpopular Spanish marriage and surrendering English independence to foreign control.</p>",
-                "verdict": "Level 4 (12/12) — Three clear PEEL reasons combining precise Tudor detail with independent own knowledge beyond the stimulus (attitudes to female rulers, Mary I's failures, and Mary Stuart's claim)."
+                "text": "<p>First, Elizabeth’s disputed legitimacy posed an immediate dynastic challenge in 1558 because devout Catholics at home and abroad rejected Henry VIII’s divorce from Catherine of Aragon and his 1533 marriage to Anne Boleyn. Under Roman Catholic canon law—and even Henry VIII’s own 1536 Act of Succession passed after Anne Boleyn’s execution—Elizabeth was viewed by strict Catholics as illegitimate and barred from inheriting the Crown. Consequently, Catholic powers promoted Elizabeth’s cousin Mary, Queen of Scots—married to the French Dauphin Francis—as England’s rightful Catholic monarch, encouraging Mary to quarter the English royal coat of arms alongside her own.</p><p>Second, severe financial weaknesses crippled the Tudor Crown’s ability to defend or govern England securely on Elizabeth’s accession. Elizabeth inherited a crushing £300,000 debt from Mary I’s war with France against an ordinary royal revenue of roughly £286,000 a year, compounded by decades of currency debasement and reliance on high-interest 14% loans from the Antwerp money market. Because raising extraordinary taxation through Parliament risked provoking domestic rebellion, this financial crisis left Elizabeth dangerously short of funds to equip armies, maintain royal forts, or buy political loyalty.</p><p>Finally, Elizabeth faced dangerous foreign encirclement alongside deep sixteenth-century doubts over her gender and the succession. Having lost Calais in January 1558, England confronted battle-hardened French garrisons stationed in Scotland under Regent Mary of Guise via the Auld Alliance, threatening a two-front Catholic invasion. At the same time, patriarchal belief in the Great Chain of Being led elites—scarred by Mary I’s troubled reign—to doubt a woman ruling alone, while twenty-five-year-old Elizabeth’s unmarried status left England without a Protestant heir yet trapped between factional English suitors and unpopular foreign Catholic princes.</p>",
+                "verdict": "Level 4 (12/12) — Three clear PEEL reasons combining precise Tudor detail with independent own knowledge beyond the stimulus (Franco-Scottish encirclement via Calais and the Auld Alliance, plus gender and succession pressures)."
               }
             }
           }
@@ -2040,9 +2040,9 @@
           },
           {
             "stage": 3,
-            "question": "Which Scottish Protestant reformer published 'The First Blast of the Trumpet' in 1558, reflecting sixteenth-century prejudice against the Virgin Queen's gender?",
+            "question": "Which Scottish Protestant reformer published the polemic 'The First Blast of the Trumpet Against the Monstrous Regiment of Women' in 1558?",
             "answer": "John Knox",
-            "explanation": "John Knox argued that female rule was unnatural, illustrating the gender prejudice Elizabeth overcame through her sharp character and political skill."
+            "explanation": "John Knox argued that female political authority was unnatural and contrary to scripture."
           },
           {
             "stage": 4,
@@ -2070,7 +2070,7 @@
           },
           {
             "stage": 3,
-            "question": "Why did devout Roman Catholics challenge Elizabeth's legitimacy upon her accession to Elizabethan England in 1558?",
+            "question": "Why did devout Roman Catholics consider Elizabeth illegitimate and barred from the English crown?",
             "answer": "They viewed Henry VIII's marriage to Anne Boleyn as invalid",
             "explanation": "Under Catholic canon law, Henry VIII’s marriage to Catherine of Aragon remained valid, making Elizabeth’s birth illegitimate."
           },
@@ -7468,8 +7468,8 @@
           {
             "stage": 1,
             "question": "Which Catholic Scottish Queen returned to Edinburgh in 1561 following the sudden death of her husband King Francis II of France?",
-            "answer": "Mary, Queen of Scots",
-            "explanation": "Mary, Queen of Scots returned to Edinburgh in 1561 to assume direct monarchical rule over a Protestant realm."
+            "answer": "Mary Stuart, Queen of Scots",
+            "explanation": "Mary returned to Scotland in 1561 to assume direct monarchical rule over a Protestant realm."
           },
           {
             "stage": 2,
@@ -18265,8 +18265,8 @@
           {
             "stage": 1,
             "question": "How did England's population change between 1558 and 1588, placing severe pressure on food supplies, rents, and jobs?",
-            "answer": "From roughly 3 million to nearly 4 million people",
-            "explanation": "Rapid population growth of roughly 35% outstripped food output, fuelling inflation and rising vagabondage."
+            "answer": "It rose from roughly 3 million to nearly 4 million people",
+            "explanation": "A ~35% population rise toward 4 million outstripped grain output, fuelling food inflation, falling real wages, and rising vagabondage."
           },
           {
             "stage": 2,
@@ -18282,7 +18282,7 @@
           },
           {
             "stage": 4,
-            "question": "What punishment was prescribed under the 1572 Vagabonds Act for a first offence of sturdy vagabondage (vagrancy)?",
+            "question": "What punishment was prescribed under the 1572 Vagabonds Act for a first offence of sturdy vagabondage?",
             "answer": "Whipped through the town until bloody and bored through the ear with a hot iron",
             "explanation": "A one-inch hole was burned through the gristle of the right ear with a hot iron."
           },

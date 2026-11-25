@@ -1599,9 +1599,9 @@ export default {
         {
           "id": "aus_l1_explain_why_terra_nullius",
           "type": "extended_writing",
-          "tariff": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "tariff": "Question 2: Explain Why [12 marks • 15 mins]",
           "title": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "question": "Explain why the British Empire claimed eastern Australia and declared it terra nullius between 1768 and 1788.",
+          "question": "Explain why the British Empire claimed eastern Australia and declared it terra nullius between 1768 and 1788. [12 marks]",
           "stimulus": [
             "Secret Admiralty instructions to locate the Great Southern Land",
             "Joseph Banks’s reports of Botany Bay and European property law"
@@ -3541,9 +3541,9 @@ export default {
         {
           "id": "aus_l2_two_features_prison_hulks",
           "type": "two_features",
-          "tariff": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "tariff": "Question 1: Describe Two Features [4 marks • 5 mins]",
           "title": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
-          "question": "Describe two features of life on board the Thames prison hulks in the 1780s.",
+          "question": "Describe two features of life on board the Thames prison hulks in the 1780s. [4 marks]",
           "feature_1": {
             "prompt": "Feature 1: Identify one physical condition or sanitation hazard on the prison hulks.",
             "starter": "One key feature was... For instance, prisoners endured...",
@@ -3561,9 +3561,9 @@ export default {
         {
           "id": "aus_l2_source_utility_sydney_cove",
           "type": "extended_writing",
-          "tariff": "Primary Source Enquiry • Content & Provenance (2 Paragraphs • 10 mins)",
+          "tariff": "Question 2: How Useful are Sources A and B [8 marks • 10 mins]",
           "title": "Primary Source Enquiry • Content & Provenance (2 Paragraphs • 10 mins)",
-          "question": "How useful are Sources A and B for an enquiry into the challenges faced by convicts and colonial authorities during the founding of Sydney Cove (1788–1792)?",
+          "question": "How useful are Sources A and B for an enquiry into the challenges faced by convicts and colonial authorities during the founding of Sydney Cove (1780–1792)? [8 marks]",
           "hints": [
             "Content: Evaluate what the sources reveal about starvation, poor soil, lack of farming tools, and conflict [2.3, 2.4].",
             "Provenance: Consider the perspective of Governor Arthur Phillip and convict journal writers like Watkin Tench.",
@@ -3785,17 +3785,17 @@ export default {
         },
         {
           "stage": 3,
-          "question": "On what date in 1788 did the First Fleet raise the flag at Sydney Cove to found New South Wales?",
-          "q": "On what date in 1788 did the First Fleet raise the flag at Sydney Cove to found New South Wales?",
+          "question": "What key advantages led Governor Arthur Phillip to establish the permanent settlement at Sydney Cove inside Port Jackson?",
+          "q": "What key advantages led Governor Arthur Phillip to establish the permanent settlement at Sydney Cove inside Port Jackson?",
           "options": [
-            "22 June 1948",
-            "26 January 1788",
-            "3 December 1854",
-            "5 March 1770"
+            "Large alluvial goldfields discovered near the beach",
+            "Deep-water anchorages in a sheltered natural harbour alongside a reliable fresh water stream",
+            "Rich dark farmland already cleared and planted with English wheat",
+            "Existing stone forts built earlier by Dutch explorers"
           ],
-          "answer": "26 January 1788",
-          "a": "26 January 1788",
-          "explanation": "On 26 January 1788, marines cleared eucalyptus trees and raised the British flag at Sydney Cove."
+          "answer": "Deep-water anchorages in a sheltered natural harbour alongside a reliable fresh water stream",
+          "a": "Deep-water anchorages in a sheltered natural harbour alongside a reliable fresh water stream",
+          "explanation": "Unlike swampy, exposed Botany Bay, Port Jackson offered deep-water anchorages and a fresh water stream at Sydney Cove, making it suitable for founding New South Wales."
         },
         {
           "stage": 4,
@@ -5334,9 +5334,9 @@ export default {
         {
           "id": "aus_l3_narrative_account_resistance",
           "type": "narrative_account",
-          "tariff": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
-          "title": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
-          "question": "Write a narrative account analysing the key events of Indigenous resistance and frontier conflict in New South Wales between 1788 and 1802.",
+          "tariff": "Question 2: Narrative Account [8 marks • 10 mins]",
+          "title": "Question 2: Narrative Account [8 marks • 10 mins]",
+          "question": "Write a narrative account analysing the key events of Indigenous resistance and frontier conflict in New South Wales between 1788 and 1802. [8 marks]",
           "hints": [
             "Beginning (1788–1790): Initial contact, the catastrophic smallpox epidemic wiping out over 50% of the coastal population, and Bennelong’s mediation [3.1, 3.2].",
             "Middle (1792–1797): Pemulwuy’s guerrilla resistance in the Hawkesbury and Parramatta basins, including burning settler crops and the Battle of Parramatta [3.3].",
@@ -5403,6 +5403,47 @@ export default {
           },
           "model_answer": "Initially, relations between the Eora people and British settlers deteriorated in 1788 as colonists cleared land, felled trees, and cut off Aboriginal hunting grounds and fishing coves around Sydney.<br><br>Following this, widespread frontier violence erupted as Indigenous clans fiercely defended their homelands. From 1790, Bidjigal warrior Pemulwuy led a brilliant 12-year guerrilla campaign, ambushing settlers, burning crops, and raiding colonial outposts along the Hawkesbury River.<br><br>Finally, British troops mounted punitive military expeditions, using muskets to overwhelm Indigenous spears. After Pemulwuy was killed in 1802, British expansion continued inland, displacing Aboriginal nations through violent frontier conflict.",
           "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)"
+        },
+        {
+          "id": "aus_l3_q2_importance",
+          "type": "extended_writing",
+          "tariff": "Question 3: Explain the Importance [8 marks • 10 mins]",
+          "title": "Question 3: Explain the Importance [8 marks • 10 mins]",
+          "topic": "Extended Historical Explanation • Historical Importance (2 Paragraphs • 10 mins)",
+          "question": "Explain the importance of Pemulwuy’s guerrilla campaign (1790–1802) for Indigenous resistance against British colonisation. [8 marks]",
+          "hints": [
+            "Impact 1 (Military Strategy & Multi-Clan Unity): Explain how Pemulwuy united Bidjigal, Dharug, and Eora warriors, raiding crops and exploiting slow British musket reloads from 1790 to the 1797 Battle of Parramatta [3.3, 3.4].",
+            "Impact 2 (Spiritual Symbol & Lasting Frontier Legacy): Explain how surviving seven gunshot wounds and escaping in leg-irons made Pemulwuy a powerful symbol of defiance, forcing Governor King’s 1801 outlaw order and inspiring later Indigenous resistance [3.4, 3.5]."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Paragraph 1 (Strategic Resistance & Clan Alliance): Analyse how Pemulwuy’s crop-burning raids and 1797 Battle of Parramatta challenged settler expansion and disproved passive settlement myths [3.3, 3.4].",
+              "Paragraph 2 (Enduring Cultural & Political Impact): Evaluate why his survival and twelve-year campaign forced official military proclamations under Governor King and inspired First Nations resistance [3.4, 3.5]."
+            ],
+            "sentence_starters": [
+              "The primary importance of Pemulwuy’s guerrilla campaign was that...",
+              "In response to settler expansion, Pemulwuy united clans to...",
+              "Crucially, his survival after the 1797 Battle of Parramatta had the effect of...",
+              "Consequently, his twelve-year campaign mattered deeply because..."
+            ],
+            "word_bank": [
+              "Pemulwuy",
+              "Bidjigal clan",
+              "guerrilla tactics",
+              "burning crops",
+              "Battle of Parramatta (1797)",
+              "Governor King",
+              "frontier warfare"
+            ],
+            "connective_bank": [
+              "The primary importance of this campaign was that...",
+              "In response to settler expansion, resistance leaders were able to...",
+              "Crucially, this had the effect of...",
+              "Consequently, it challenged imperial authority because..."
+            ]
+          },
+          "model_answer": "One reason Pemulwuy’s guerrilla campaign (1790–1802) was vitally important was that it united Sydney Basin clans in coordinated military resistance that seriously disrupted British colonial expansion. Recognising that British flintlock muskets were slow to reload, Bidjigal warrior Pemulwuy led raids burning settler maize fields and livestock across Parramatta and the Hawkesbury, culminating in the 1797 Battle of Parramatta. This proved that First Nations peoples actively defended Country rather than surrendering under terra nullius.<br><br>Furthermore, Pemulwuy’s twelve-year defiance became a powerful spiritual and political symbol of Indigenous survival. After surviving seven gunshot wounds in 1797 and escaping hospital with leg-irons still attached, many Eora people believed ancestral spirits protected him. His authority alarmed colonial officials so deeply that Governor King outlawed him in 1801, cementing Pemulwuy’s legacy as a pioneering leader of First Nations resistance.",
+          "model": "One reason Pemulwuy’s guerrilla campaign (1790–1802) was vitally important was that it united Sydney Basin clans in coordinated military resistance that seriously disrupted British colonial expansion. Recognising that British flintlock muskets were slow to reload, Bidjigal warrior Pemulwuy led raids burning settler maize fields and livestock across Parramatta and the Hawkesbury, culminating in the 1797 Battle of Parramatta. This proved that First Nations peoples actively defended Country rather than surrendering under terra nullius.<br><br>Furthermore, Pemulwuy’s twelve-year defiance became a powerful spiritual and political symbol of Indigenous survival. After surviving seven gunshot wounds in 1797 and escaping hospital with leg-irons still attached, many Eora people believed ancestral spirits protected him. His authority alarmed colonial officials so deeply that Governor King outlawed him in 1801, cementing Pemulwuy’s legacy as a pioneering leader of First Nations resistance."
         }
       ],
       "quiz": [
@@ -7170,76 +7211,100 @@ export default {
       ],
       "tasks": [
         {
-          "id": "aus_l4_contrasting_interpretations",
-          "type": "historical_interpretations",
-          "tariff": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "title": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "question": "Explain how Interpretations 1 and 2 differ on the nature of the Australian Frontier Wars and suggest why they reach contrasting conclusions.",
-          "interpretation_1": {
-            "author": "Keith Windschuttle (Revisionist Historian)",
-            "work": "The Fabrication of Aboriginal History (2002)",
-            "extract": "Frontier conflict in Australia was minimal and consisted mostly of isolated criminal murders and livestock theft rather than warfare. British authorities consistently sought to uphold the rule of law and protect Indigenous people from rogue bushrangers.",
-            "text": "Frontier conflict in Australia was minimal and consisted mostly of isolated criminal murders and livestock theft rather than warfare. British authorities consistently sought to uphold the rule of law and protect Indigenous people from rogue bushrangers."
+          "id": "aus_l4_q1_interp_diff",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART B",
+          "tariff": "Question 3(b): Contrasting Interpretations [4 marks • 5 mins]",
+          "title": "Question 3(b): Contrasting Interpretations [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Difference in Views (1 Paragraph • 5 mins)",
+          "question": "Explain how Interpretations 1 and 2 differ on the nature and scale of frontier conflict in Australia. [4 marks]",
+          "stimulus": [
+            "Interpretation 1 • Historian Henry Reynolds, The Other Side of the Frontier (1981): “The European occupation of Australia was resisted from the beginning by Indigenous peoples using guerrilla tactics. It was not a peaceful settlement, but a protracted, bloody war that cost the lives of at least 20,000 Aboriginal people defending their lands.”",
+            "Interpretation 2 • Historian Keith Windschuttle, The Fabrication of Aboriginal History (2002): “There was no systematic warfare or frontier genocide in colonial Australia. The conflicts that occurred were uncoordinated, small-scale criminal skirmishes over stolen goods and sheep, and the death tolls cited by orthodox historians have been drastically fabricated without documentary proof.”"
+          ],
+          "hints": [
+            "Point: State clearly that the historians disagree on whether frontier violence was a widespread war of territorial defence or minor criminal skirmishes.",
+            "Interpretation 1 (Henry Reynolds, 1981): Cite Reynolds’s view that occupation met organised guerrilla resistance in a “protracted, bloody war” costing at least 20,000 Aboriginal lives.",
+            "Interpretation 2 (Keith Windschuttle, 2002): Contrast with Windschuttle’s claim that there was “no systematic warfare”, only small-scale criminal clashes over sheep and goods with exaggerated death tolls."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Core Difference): Identify how Interpretations 1 and 2 disagree on the nature and scale of frontier conflict.",
+              "Sentence 2 (Interpretation 1): Quote or summarise Henry Reynolds (1981) on guerrilla warfare and 20,000 deaths.",
+              "Sentences 3–4 (Interpretation 2): Contrast directly with Keith Windschuttle (2002) denying systematic war."
+            ],
+            "sentence_starters": [
+              "Interpretations 1 and 2 differ fundamentally on...",
+              "Interpretation 1 argues that European occupation...",
+              "In contrast, Interpretation 2 suggests that...",
+              "This is a clear difference because..."
+            ],
+            "word_bank": [
+              "Henry Reynolds (1981)",
+              "Keith Windschuttle (2002)",
+              "guerrilla tactics",
+              "20,000 Aboriginal lives",
+              "Black War",
+              "Myall Creek (1838)",
+              "History Wars"
+            ],
+            "connective_bank": [
+              "Interpretations 1 and 2 differ on...",
+              "Interpretation 1 argues that...",
+              "In contrast, Interpretation 2 suggests that...",
+              "This is a difference because..."
+            ]
           },
-          "interpretation_2": {
-            "author": "Henry Reynolds (Academic Historian)",
-            "work": "The Other Side of the Frontier (1981)",
-            "extract": "A protracted, bloody war of conquest was fought across the entire continent. At least 20,000 Indigenous Australians died defending their ancestral lands against military forces, mounted police, and squatter vigilantes in a true war of national resistance.",
-            "text": "A protracted, bloody war of conquest was fought across the entire continent. At least 20,000 Indigenous Australians died defending their ancestral lands against military forces, mounted police, and squatter vigilantes in a true war of national resistance."
+          "model_answer": "Interpretations 1 and 2 differ fundamentally on both the nature and human scale of colonial frontier violence. Interpretation 1 (Henry Reynolds) argues that First Nations peoples fought an organised guerrilla war defending their lands in a “protracted, bloody war” that killed at least 20,000 Aboriginal people. In contrast, Interpretation 2 (Keith Windschuttle) denies that systematic warfare occurred at all, claiming clashes were merely “uncoordinated, small-scale criminal skirmishes” over livestock and alleging that high casualty figures were fabricated.",
+          "model": "Interpretations 1 and 2 differ fundamentally on both the nature and human scale of colonial frontier violence. Interpretation 1 (Henry Reynolds) argues that First Nations peoples fought an organised guerrilla war defending their lands in a “protracted, bloody war” that killed at least 20,000 Aboriginal people. In contrast, Interpretation 2 (Keith Windschuttle) denies that systematic warfare occurred at all, claiming clashes were merely “uncoordinated, small-scale criminal skirmishes” over livestock and alleging that high casualty figures were fabricated."
+        },
+        {
+          "id": "aus_l4_q2_interp_why",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART C",
+          "tariff": "Question 3(c): Why Interpretations Differ [4 marks • 5 mins]",
+          "title": "Question 3(c): Why Interpretations Differ [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Explaining Why Views Differ (1 Paragraph • 5 mins)",
+          "question": "Suggest one reason why Interpretations 1 and 2 differ on the reality of the Frontier Wars. [4 marks]",
+          "stimulus": [
+            "Interpretation 1 • Historian Henry Reynolds, The Other Side of the Frontier (1981): “The European occupation of Australia was resisted from the beginning by Indigenous peoples using guerrilla tactics. It was not a peaceful settlement, but a protracted, bloody war that cost the lives of at least 20,000 Aboriginal people defending their lands.”",
+            "Interpretation 2 • Historian Keith Windschuttle, The Fabrication of Aboriginal History (2002): “There was no systematic warfare or frontier genocide in colonial Australia. The conflicts that occurred were uncoordinated, small-scale criminal skirmishes over stolen goods and sheep, and the death tolls cited by orthodox historians have been drastically fabricated without documentary proof.”"
+          ],
+          "hints": [
+            "Reason: State that the historians rely on different historical sources and methods during Australia’s “History Wars”.",
+            "Henry Reynolds (1981): Explain that Reynolds examines settler diaries, missionary letters, police dispatches, and First Nations oral histories because frontier killings were often concealed [4.2–4.5].",
+            "Keith Windschuttle (2002): Explain that Windschuttle accepts only formal British court and coroner body-counts, leading him to dismiss unrecorded frontier massacres."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Core Reason): State that the historians use contrasting source criteria and methods.",
+              "Sentence 2 (Reynolds’s Evidence): Explain how Reynolds uses settler letters, missionary diaries, and Indigenous oral testimony.",
+              "Sentences 3–4 (Windschuttle’s Evidence): Contrast with Windschuttle counting only official colonial court records."
+            ],
+            "sentence_starters": [
+              "One reason why Interpretations 1 and 2 differ is because they rely on different historical sources...",
+              "Specifically, Interpretation 1 uses settler letters, diaries, and First Nations oral testimony to...",
+              "In contrast, Interpretation 2 focuses strictly on official British court reports, which...",
+              "As a result, the authors reach different conclusions because..."
+            ],
+            "word_bank": [
+              "History Wars",
+              "settler diaries",
+              "First Nations oral history",
+              "official court records",
+              "code of silence",
+              "Black Line (1830)",
+              "Myall Creek Massacre (1838)"
+            ],
+            "connective_bank": [
+              "One reason why Interpretations 1 and 2 differ is because they rely on different historical sources...",
+              "Specifically, Interpretation 1 uses...",
+              "In contrast, Interpretation 2 focuses primarily on...",
+              "As a result, the authors reach different conclusions because..."
+            ]
           },
-          "sub_question_b": {
-            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the nature of the Australian Frontier Wars. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-            "model": "The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays frontier conflict as minimal and isolated criminal skirmishes where British authorities upheld the rule of law, whereas Interpretation 2 portrays it as a protracted, continent-wide war of military conquest and mass dispossession.<br><br>Interpretation 1 claims that frontier conflict \"consisted mostly of isolated criminal murders and livestock theft rather than warfare\" and emphasizes that \"British authorities consistently sought to uphold the rule of law and protect Indigenous people\".<br><br>In contrast, Interpretation 2 argues that \"a protracted, bloody war of conquest was fought across the entire continent\", stressing that \"at least 20,000 Indigenous Australians died defending their ancestral lands against military forces, mounted police, and squatter vigilantes in a true war of national resistance\"."
-          },
-          "sub_question_c": {
-            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the Australian Frontier Wars. You may use Sources B and C to help explain your answer.",
-            "model": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which reflects colonial proclamations declaring that native inhabitants were \"under the sovereign protection of British law\" and that violence against them would be \"prosecuted with utmost rigor\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains firsthand squatter depositions and pastoral journals describing how armed horsemen \"pursued the tribe into the ranges at dawn\" and killed thirty Indigenous defenders to secure grazing land.<br><br>Because the two historians drew upon contrasting bodies of evidence—official legal proclamations versus private station records of vigilante violence—they formed opposing historical interpretations."
-          },
-          "topic": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "interp1": {
-            "author": "Keith Windschuttle (Revisionist Historian)",
-            "work": "The Fabrication of Aboriginal History (2002)",
-            "extract": "Frontier conflict in Australia was minimal and consisted mostly of isolated criminal murders and livestock theft rather than warfare. British authorities consistently sought to uphold the rule of law and protect Indigenous people from rogue bushrangers.",
-            "text": "Frontier conflict in Australia was minimal and consisted mostly of isolated criminal murders and livestock theft rather than warfare. British authorities consistently sought to uphold the rule of law and protect Indigenous people from rogue bushrangers."
-          },
-          "interp2": {
-            "author": "Henry Reynolds (Academic Historian)",
-            "work": "The Other Side of the Frontier (1981)",
-            "extract": "A protracted, bloody war of conquest was fought across the entire continent. At least 20,000 Indigenous Australians died defending their ancestral lands against military forces, mounted police, and squatter vigilantes in a true war of national resistance.",
-            "text": "A protracted, bloody war of conquest was fought across the entire continent. At least 20,000 Indigenous Australians died defending their ancestral lands against military forces, mounted police, and squatter vigilantes in a true war of national resistance."
-          },
-          "source_b": {
-            "label": "Source B",
-            "title": "Source B: Colonial Government Official Proclamation (1828)",
-            "badge": "Official Legal Proclamation • 1828",
-            "author": "Lieutenant-Governor George Arthur, Proclamation to the Settlers of Van Diemen’s Land (1828)",
-            "text": "The native inhabitants of this territory are under the sovereign protection of British law. Any settler, stockman, or convict who shall commit murder, unprovoked assault, or cruelty against an Aboriginal person will be prosecuted with the same utmost rigor of the law as if the offense were committed against a white subject."
-          },
-          "source1": {
-            "label": "Source B",
-            "title": "Source B: Colonial Government Official Proclamation (1828)",
-            "badge": "Official Legal Proclamation • 1828",
-            "author": "Lieutenant-Governor George Arthur, Proclamation to the Settlers of Van Diemen’s Land (1828)",
-            "text": "The native inhabitants of this territory are under the sovereign protection of British law. Any settler, stockman, or convict who shall commit murder, unprovoked assault, or cruelty against an Aboriginal person will be prosecuted with the same utmost rigor of the law as if the offense were committed against a white subject."
-          },
-          "source_c": {
-            "label": "Source C",
-            "title": "Source C: Frontier Squatter Deposition & Station Journal (1838)",
-            "badge": "Frontier Settler Deposition • 1838",
-            "author": "Sworn Deposition from the Gwydir District, New South Wales (1838)",
-            "text": "The blacks have speared over twenty bullocks and cannot be tolerated on the cattle runs. Our stockmen formed an armed party of ten horsemen, pursued the tribe into the ranges at dawn, and surrounded their camp. Shots were exchanged and thirty natives were killed so that our grazing lands could be secured from further molestation."
-          },
-          "source2": {
-            "label": "Source C",
-            "title": "Source C: Frontier Squatter Deposition & Station Journal (1838)",
-            "badge": "Frontier Settler Deposition • 1838",
-            "author": "Sworn Deposition from the Gwydir District, New South Wales (1838)",
-            "text": "The blacks have speared over twenty bullocks and cannot be tolerated on the cattle runs. Our stockmen formed an armed party of ten horsemen, pursued the tribe into the ranges at dawn, and surrounded their camp. Shots were exchanged and thirty natives were killed so that our grazing lands could be secured from further molestation."
-          },
-          "model_answer_b": "The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays frontier conflict as minimal and isolated criminal skirmishes where British authorities upheld the rule of law, whereas Interpretation 2 portrays it as a protracted, continent-wide war of military conquest and mass dispossession.<br><br>Interpretation 1 claims that frontier conflict \"consisted mostly of isolated criminal murders and livestock theft rather than warfare\" and emphasizes that \"British authorities consistently sought to uphold the rule of law and protect Indigenous people\".<br><br>In contrast, Interpretation 2 argues that \"a protracted, bloody war of conquest was fought across the entire continent\", stressing that \"at least 20,000 Indigenous Australians died defending their ancestral lands against military forces, mounted police, and squatter vigilantes in a true war of national resistance\".",
-          "model_answer_c": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which reflects colonial proclamations declaring that native inhabitants were \"under the sovereign protection of British law\" and that violence against them would be \"prosecuted with utmost rigor\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains firsthand squatter depositions and pastoral journals describing how armed horsemen \"pursued the tribe into the ranges at dawn\" and killed thirty Indigenous defenders to secure grazing land.<br><br>Because the two historians drew upon contrasting bodies of evidence—official legal proclamations versus private station records of vigilante violence—they formed opposing historical interpretations.",
-          "model_answer": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the nature of the Australian Frontier Wars. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays frontier conflict as minimal and isolated criminal skirmishes where British authorities upheld the rule of law, whereas Interpretation 2 portrays it as a protracted, continent-wide war of military conquest and mass dispossession.<br><br>Interpretation 1 claims that frontier conflict \"consisted mostly of isolated criminal murders and livestock theft rather than warfare\" and emphasizes that \"British authorities consistently sought to uphold the rule of law and protect Indigenous people\".<br><br>In contrast, Interpretation 2 argues that \"a protracted, bloody war of conquest was fought across the entire continent\", stressing that \"at least 20,000 Indigenous Australians died defending their ancestral lands against military forces, mounted police, and squatter vigilantes in a true war of national resistance\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the Australian Frontier Wars. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which reflects colonial proclamations declaring that native inhabitants were \"under the sovereign protection of British law\" and that violence against them would be \"prosecuted with utmost rigor\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains firsthand squatter depositions and pastoral journals describing how armed horsemen \"pursued the tribe into the ranges at dawn\" and killed thirty Indigenous defenders to secure grazing land.<br><br>Because the two historians drew upon contrasting bodies of evidence—official legal proclamations versus private station records of vigilante violence—they formed opposing historical interpretations.</div>",
-          "model": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the nature of the Australian Frontier Wars. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays frontier conflict as minimal and isolated criminal skirmishes where British authorities upheld the rule of law, whereas Interpretation 2 portrays it as a protracted, continent-wide war of military conquest and mass dispossession.<br><br>Interpretation 1 claims that frontier conflict \"consisted mostly of isolated criminal murders and livestock theft rather than warfare\" and emphasizes that \"British authorities consistently sought to uphold the rule of law and protect Indigenous people\".<br><br>In contrast, Interpretation 2 argues that \"a protracted, bloody war of conquest was fought across the entire continent\", stressing that \"at least 20,000 Indigenous Australians died defending their ancestral lands against military forces, mounted police, and squatter vigilantes in a true war of national resistance\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the Australian Frontier Wars. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official government records like Source B, which reflects colonial proclamations declaring that native inhabitants were \"under the sovereign protection of British law\" and that violence against them would be \"prosecuted with utmost rigor\".<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains firsthand squatter depositions and pastoral journals describing how armed horsemen \"pursued the tribe into the ranges at dawn\" and killed thirty Indigenous defenders to secure grazing land.<br><br>Because the two historians drew upon contrasting bodies of evidence—official legal proclamations versus private station records of vigilante violence—they formed opposing historical interpretations.</div>"
+          "model_answer": "One main reason why Interpretations 1 and 2 differ is that the two historians apply completely different rules for historical evidence. Writing in 1981, Henry Reynolds drew upon private settler letters, missionary journals, governors’ martial-law dispatches, and First Nations oral histories, recognising that stockmen maintained a code of silence after frontier killings like Myall Creek. In contrast, writing in 2002, Keith Windschuttle insisted on counting only deaths formally certified in British colonial court or coroner files; because perpetrators rarely reported massacres to magistrates, his narrow source filter produces a far lower estimate.",
+          "model": "One main reason why Interpretations 1 and 2 differ is that the two historians apply completely different rules for historical evidence. Writing in 1981, Henry Reynolds drew upon private settler letters, missionary journals, governors’ martial-law dispatches, and First Nations oral histories, recognising that stockmen maintained a code of silence after frontier killings like Myall Creek. In contrast, writing in 2002, Keith Windschuttle insisted on counting only deaths formally certified in British colonial court or coroner files; because perpetrators rarely reported massacres to magistrates, his narrow source filter produces a far lower estimate."
         }
       ],
       "quiz": [
@@ -8947,9 +9012,9 @@ export default {
         {
           "id": "aus_l5_evaluative_essay_eureka",
           "type": "extended_writing",
-          "tariff": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "tariff": "Question 5: Evaluative Statement Essay [12 marks • 15 mins]",
           "title": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
-          "question": "‘The discovery of gold and the Eureka Stockade were the most important turning points in 19th-century Australian history.’ How far do you agree? Explain your answer.",
+          "question": "‘The discovery of gold and the Eureka Stockade were the most important turning points in 19th-century Australian history.’ How far do you agree? Explain your answer. [12 marks]",
           "stimulus": [
             "The Ballarat gold rush, democratic manhood suffrage, and the Southern Cross flag",
             "Pastoral wool expansion, the Frontier Wars, and First Nations dispossession"
@@ -9162,17 +9227,17 @@ export default {
         },
         {
           "stage": 3,
-          "question": "On what date did British redcoats storm the Eureka Stockade in Ballarat?",
-          "q": "On what date did British redcoats storm the Eureka Stockade in Ballarat?",
+          "question": "Although the Eureka Stockade rebellion was crushed in fifteen minutes, why is it remembered as a turning point in Australian history?",
+          "q": "Although the Eureka Stockade rebellion was crushed in fifteen minutes, why is it remembered as a turning point in Australian history?",
           "options": [
-            "3 December 1854",
-            "26 January 1788",
-            "26 January 1938",
-            "10 May 1857"
+            "It persuaded the British government to close all goldfields at Ballarat and Bendigo",
+            "It immediately granted Native Title and full citizenship to First Nations Australians",
+            "Public sympathy for the miners forced authorities to abolish mining licences and introduce democratic reforms",
+            "The miners defeated the redcoats and declared Victoria an independent republic"
           ],
-          "answer": "3 December 1854",
-          "a": "3 December 1854",
-          "explanation": "At dawn on 3 December 1854, nearly three hundred redcoats and police stormed the wooden Eureka Stockade."
+          "answer": "Public sympathy for the miners forced authorities to abolish mining licences and introduce democratic reforms",
+          "a": "Public sympathy for the miners forced authorities to abolish mining licences and introduce democratic reforms",
+          "explanation": "Even though the redcoats crushed the stockade in 15 minutes, overwhelming public support forced Victorian authorities to scrap mining licences and introduce the secret ballot and universal suffrage."
         },
         {
           "stage": 3,

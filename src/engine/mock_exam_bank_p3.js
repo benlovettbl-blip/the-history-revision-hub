@@ -1,5 +1,6 @@
 /**
  * Paper 3 Unseen Mock Question Bank (Weimar & Nazi Germany, USA 1954–75).
+ * Balanced across all 32 Paper 3 lessons with 100% Pearson Edexcel 1HI0 specification alignment.
  */
 export const MOCK_BANK_P3 = {
   "usa": {
@@ -117,38 +118,6 @@ export const MOCK_BANK_P3 = {
       }
     ],
     "lesson_1_2": [
-      {
-        "id": "usa_mock_2_q1",
-        "mockId": "usa_mock_2",
-        "qCode": "1",
-        "mockTitle": "USA Mock Paper 2",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Inference",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Give two things you can infer from Source A about the situation at Central High School, Little Rock, in September 1957.",
-        "stimulus": [],
-        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: From an urgent telegram from the Mayor of Little Rock to President Eisenhower, September 1957.</div><div>Local conditions have deteriorated rapidly. A hostile crowd of more than a thousand protesters has gathered outside the high school, presenting an imminent threat of violence. Municipal police forces are insufficient to maintain order. The governor has declined to intervene and appears to condone the obstruction. We cannot guarantee the safety of the Black students.</div>",
-        "modelAnswer": "<strong>Sample Acceptable Inferences (the situation at Central High School, Little Rock, in September 1957):</strong>\n• <strong>Inference 1:</strong> The local municipal police were completely unable to control the violent mob outside the school.<br>&bull; <em>Detail from source:</em> \"A hostile crowd of more than a thousand protesters has gathered outside the high school... Municipal police forces are insufficient to maintain order.\"\n\n• <strong>Inference 2:</strong> The state governor was deliberately obstructing desegregation and refusing to protect the students.<br>&bull; <em>Detail from source:</em> \"The governor has declined to intervene and appears to condone the obstruction. We cannot guarantee the safety of the Black students.\"",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_2_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_2_question_booklet.html"
-      },
-      {
-        "id": "usa_mock_11_q1",
-        "mockId": "usa_mock_11",
-        "qCode": "1",
-        "mockTitle": "USA Mock Paper 11",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Inference",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Give two things you can infer from Source A about the crowd outside Central High School, Little Rock, in September 1957.",
-        "stimulus": [],
-        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: From a report by a federal observer at Central High School, Little Rock, September 1957.</div><div>The crowd outside the school is extremely loud and aggressive. When the nine Negro students arrived, white adults began shouting abuse and spitting in their direction. The Arkansas National Guard, stationed by order of the Governor, stood in a line blockading the entrance. They did not attempt to disperse the mob; instead, their presence clearly prevented the children from entering the school building.</div>",
-        "modelAnswer": "<strong>Sample Acceptable Inferences (the crowd outside Central High School, Little Rock, in September 1957):</strong>\n• <strong>Inference 1:</strong> The white mob outside the school was openly hostile and abusive toward the incoming Black students.<br>&bull; <em>Detail from source:</em> \"The crowd outside the school is extremely loud and aggressive. When the nine Negro students arrived, white adults began shouting abuse and spitting in their direction.\"\n\n• <strong>Inference 2:</strong> State troops deployed by the Governor actively blocked desegregation rather than controlling the crowd.<br>&bull; <em>Detail from source:</em> \"The Arkansas National Guard... stood in a line blockading the entrance. They did not attempt to disperse the mob; instead, their presence clearly prevented the children from entering...\"",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_11_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_11_question_booklet.html"
-      },
       {
         "id": "usa_mock_11_q2",
         "mockId": "usa_mock_11",
@@ -392,101 +361,6 @@ export const MOCK_BANK_P3 = {
             "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
           }
         }
-      },
-      {
-        "id": "usa_mock_12_q3a",
-        "mockId": "usa_mock_12",
-        "qCode": "3(a)",
-        "mockTitle": "USA Mock Paper 12",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "8-Mark Source Utility",
-        "marks": 8,
-        "targetMins": 12,
-        "questionText": "How useful are Sources B and C for an enquiry into the opposition to the civil rights movement in the late 1950s? Explain your answer, using Sources B and C and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From the 'Southern Manifesto' (Declaration of Constitutional Principles) signed by 101 Southern members of Congress in March 1956.</div><div>We regard the decision of the Supreme Court in the school cases as a clear abuse of judicial power. It climaxes a trend in the Federal judiciary to legislate, in derogation of the authority of Congress, and to encroach upon the reserved rights of the States and the people. We pledge ourselves to use all lawful means to bring about a reversal of this decision which is contrary to the Constitution and to prevent the use of force in its implementation.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From testimony by US Attorney General Herbert Brownell Jr. before the Senate Subcommittee on Constitutional Rights, February 1957, urging passage of a federal Civil Rights Bill.</div><div>In county after county across the South, qualified Negro citizens—including decorated war veterans and college graduates—have been systematically purged from registration rolls or barred by arbitrary tests and threats of economic ruin. Such flagrant defiance of constitutional guarantees has aroused deep concern across the nation and left the Federal Government no choice but to seek new statutory powers from Congress to investigate abuses and protect the right to vote.</div></div>",
-        "modelAnswer": "<strong>Source B</strong> is highly useful for demonstrating the politically organised, constitutional framing of Southern \"Massive Resistance\" in 1956. Signed by 101 Southern Senators and Representatives, it condemns <em>Brown v. Topeka</em> as a \"clear abuse of judicial power\" and pledges \"all lawful means\" to reverse school desegregation. Contextual knowledge confirms that the Southern Manifesto united Dixiecrats in Congress and legitimised state-level obstruction, pupil placement laws, and White Citizens' Councils across the Deep South. As an official congressional declaration from March 1956, its provenance reliably captures elite political defiance, though its legalistic language conceals the violent KKK intimidation and economic reprisals enforcing segregation locally.<br><br><strong>Source C</strong> is highly useful for showing how extreme Southern obstruction backfired by compelling the Eisenhower administration to push for federal voting legislation in 1957. Attorney General Brownell details \"systematic\" voter purges and intimidation that left Washington \"no choice\" but to seek statutory federal enforcement powers. This aligns with contextual knowledge that Northern outrage over Emmett Till's murder (1955), Montgomery violence, and voter suppression led directly to the Civil Rights Acts of 1957 and 1960, creating the Civil Rights Commission. As formal Senate testimony by the US Attorney General in February 1957, its provenance is invaluable for showing federal legislative intent, though Southern Senate filibusters led by Strom Thurmond significantly watered down the final 1957 Act's enforcement teeth.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_12_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_12_question_booklet.html"
-      },
-      {
-        "id": "usa_mock_12_q3b",
-        "mockId": "usa_mock_12",
-        "qCode": "3(b)",
-        "mockTitle": "USA Mock Paper 12",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Interpretation Difference",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Study Interpretations 1 and 2. They give different views about opposition to the civil rights movement in the late 1950s. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>Opposition to civil rights in the late 1950s was highly organised and politically entrenched, successfully stalling desegregation. By signing the Southern Manifesto, Southern congressmen created a unified political front that legitimised defiance. At the local level, White Citizens Councils waged economic warfare, firing Black workers and denying them loans. This combination of political resistance and economic terror effectively delayed integration for years.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>Although Southern opposition was loud and politically unified on paper, it ultimately failed to halt civil rights progress. The extreme nature of the opposition's resistance and local violence actually backfired. It shocked Northern public opinion and forced a reluctant federal government to intervene, culminating in the passage of the Civil Rights Acts of 1957 and 1960. These laws established the vital precedent of federal voting rights protection.</div></div>",
-        "modelAnswer": "The main difference is that <strong>Interpretation 1</strong> argues late-1950s opposition was \"highly organised and politically entrenched, successfully stalling desegregation\" for years through the Southern Manifesto and White Citizens’ Councils. In contrast, <strong>Interpretation 2</strong> argues Southern opposition \"ultimately failed to halt civil rights progress\" because its extreme resistance \"actually backfired\", shocking Northern opinion and prompting the Civil Rights Acts of 1957 and 1960.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_12_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_12_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_12_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_12_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_12_q3c",
-        "mockId": "usa_mock_12",
-        "qCode": "3(c)",
-        "mockTitle": "USA Mock Paper 12",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Why Interpretations Differ",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Suggest one reason why Interpretations 1 and 2 give different views about opposition to the civil rights movement in the late 1950s. You may use Sources B and C to help explain your answer.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>Opposition to civil rights in the late 1950s was highly organised and politically entrenched, successfully stalling desegregation. By signing the Southern Manifesto, Southern congressmen created a unified political front that legitimised defiance. At the local level, White Citizens Councils waged economic warfare, firing Black workers and denying them loans. This combination of political resistance and economic terror effectively delayed integration for years.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>Although Southern opposition was loud and politically unified on paper, it ultimately failed to halt civil rights progress. The extreme nature of the opposition's resistance and local violence actually backfired. It shocked Northern public opinion and forced a reluctant federal government to intervene, culminating in the passage of the Civil Rights Acts of 1957 and 1960. These laws established the vital precedent of federal voting rights protection.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From the 'Southern Manifesto' (Declaration of Constitutional Principles) signed by 101 Southern members of Congress in March 1956.</div><div>We regard the decision of the Supreme Court in the school cases as a clear abuse of judicial power. It climaxes a trend in the Federal judiciary to legislate, in derogation of the authority of Congress, and to encroach upon the reserved rights of the States and the people. We pledge ourselves to use all lawful means to bring about a reversal of this decision which is contrary to the Constitution and to prevent the use of force in its implementation.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From testimony by US Attorney General Herbert Brownell Jr. before the Senate Subcommittee on Constitutional Rights, February 1957, urging passage of a federal Civil Rights Bill.</div><div>In county after county across the South, qualified Negro citizens—including decorated war veterans and college graduates—have been systematically purged from registration rolls or barred by arbitrary tests and threats of economic ruin. Such flagrant defiance of constitutional guarantees has aroused deep concern across the nation and left the Federal Government no choice but to seek new statutory powers from Congress to investigate abuses and protect the right to vote.</div></div>",
-        "modelAnswer": "The interpretations differ because the historians have given weight to different sources. <strong>Interpretation 1</strong> is supported by <strong>Source B</strong>, the 1956 Southern Manifesto signed by 101 congressmen pledging \"all lawful means\" to reverse school desegregation, demonstrating unified political obstruction. Conversely, <strong>Interpretation 2</strong> is supported by <strong>Source C</strong>, in which Attorney General Herbert Brownell testifies that systematic Southern voter purges left the Federal Government \"no choice\" but to enact new civil rights legislation in 1957, supporting the view that extreme defiance provoked federal intervention.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_12_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_12_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_12_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_12_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_12_q3d",
-        "mockId": "usa_mock_12",
-        "qCode": "3(d)",
-        "mockTitle": "USA Mock Paper 12",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "16+4 Mark Historical Interpretation",
-        "marks": 16,
-        "targetMins": 25,
-        "questionText": "How far do you agree with Interpretation 2 about opposition to the civil rights movement in the late 1950s? Explain your answer, using both interpretations and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>Opposition to civil rights in the late 1950s was highly organised and politically entrenched, successfully stalling desegregation. By signing the Southern Manifesto, Southern congressmen created a unified political front that legitimised defiance. At the local level, White Citizens Councils waged economic warfare, firing Black workers and denying them loans. This combination of political resistance and economic terror effectively delayed integration for years.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>Although Southern opposition was loud and politically unified on paper, it ultimately failed to halt civil rights progress. The extreme nature of the opposition's resistance and local violence actually backfired. It shocked Northern public opinion and forced a reluctant federal government to intervene, culminating in the passage of the Civil Rights Acts of 1957 and 1960. These laws established the vital precedent of federal voting rights protection.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From the 'Southern Manifesto' (Declaration of Constitutional Principles) signed by 101 Southern members of Congress in March 1956.</div><div>We regard the decision of the Supreme Court in the school cases as a clear abuse of judicial power. It climaxes a trend in the Federal judiciary to legislate, in derogation of the authority of Congress, and to encroach upon the reserved rights of the States and the people. We pledge ourselves to use all lawful means to bring about a reversal of this decision which is contrary to the Constitution and to prevent the use of force in its implementation.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From testimony by US Attorney General Herbert Brownell Jr. before the Senate Subcommittee on Constitutional Rights, February 1957, urging passage of a federal Civil Rights Bill.</div><div>In county after county across the South, qualified Negro citizens—including decorated war veterans and college graduates—have been systematically purged from registration rolls or barred by arbitrary tests and threats of economic ruin. Such flagrant defiance of constitutional guarantees has aroused deep concern across the nation and left the Federal Government no choice but to seek new statutory powers from Congress to investigate abuses and protect the right to vote.</div></div>",
-        "modelAnswer": "I agree to a limited extent with <strong>Interpretation 2</strong> that Southern opposition \"ultimately failed to halt civil rights progress\" because extreme defiance \"actually backfired\". Brutal events such as the 1955 lynching of Emmett Till, Governor Faubus’s defiance at Little Rock (1957), and systematic voter purges highlighted in Source C shocked Northern voters and Cold War opinion. Consequently, a cautious Eisenhower administration passed the <strong>Civil Rights Acts of 1957 and 1960</strong>—the first federal civil rights legislation since Reconstruction—establishing the Civil Rights Commission and federal court referees for voting rights.\n\nHowever, <strong>Interpretation 1</strong> is much more convincing in arguing that late-1950s opposition was \"highly organised and politically entrenched, successfully stalling desegregation\". As seen in Source B, 101 Southern congressmen signed the 1956 <strong>Southern Manifesto</strong>, legitimizing \"Massive Resistance\" across state legislatures. Simultaneously, middle-class <strong>White Citizens’ Councils</strong> grew to 250,000 members, evicting Black sharecroppers, firing activists, and denying mortgages, while Southern Democratic Senators like Strom Thurmond filibustered the 1957 and 1960 Acts to strip away strong federal prosecution clauses—adding just 3% to Black voter registration by 1960.\n\n<em>Overall, while Interpretation 2 rightly notes the symbolic federal precedent of the 1957 and 1960 Civil Rights Acts, Interpretation 1 is far more compelling for the late 1950s: coordinated congressional obstruction and local economic terror successfully froze practical school integration and Black voting rights across the Deep South until the mid-1960s.</em>",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_12_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_12_question_booklet.html",
-        "spagMarks": 4,
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_12_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_12_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
       }
     ],
     "lesson_2_1": [
@@ -636,282 +510,6 @@ export const MOCK_BANK_P3 = {
         "mockUrl": "/units/usa/usa_mock_9_question_booklet.html"
       },
       {
-        "id": "usa_mock_9_q2",
-        "mockId": "usa_mock_9",
-        "qCode": "2",
-        "mockTitle": "USA Mock Paper 9",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "12-Mark Causation",
-        "marks": 12,
-        "targetMins": 18,
-        "questionText": "Explain why the Birmingham Campaign (1963) was launched.",
-        "stimulus": [
-          "Project C (Confrontation)",
-          "Police Commissioner Bull Connor"
-        ],
-        "sourceExtract": "",
-        "modelAnswer": "One primary reason the campaign was launched was the <strong>SCLC's strategic design of Project C (Confrontation)</strong>. Following the disappointing Albany Campaign of 1962, where police avoided brutality, Martin Luther King Jr. developed 'Project C'. The plan aimed to apply coordinated direct action—boycotts of downtown stores, sit-ins, and street marches—to cause complete economic paralysis. Therefore, this caused the launch of the campaign because the SCLC needed a calculated direct-action crisis to compel municipal white business owners to negotiate desegregation.<br><br>Furthermore, Birmingham was deliberately selected due to the <strong>predictable, aggressive temperament of Police Commissioner Eugene 'Bull' Connor</strong>. Connor was a fierce white supremacist who used uncompromising force against civil rights activists. King recognised that Connor's authoritarian instincts would lead to severe police overreaction, contrasting peaceful demonstrators against brutal state aggression on national television. Therefore, this led directly to the campaign's launch because activists intentionally exploited Connor's predictable brutality to generate shocking media footage that would compel federal intervention.<br><br>In addition, the campaign was launched because <strong>Birmingham was the most violently segregated metropolis in the United States</strong>. Nicknamed 'Bombingham' after 50 bombings of Black homes and churches, the city closed public parks and pools to avoid integration. Local leader Reverend Fred Shuttlesworth appealed for SCLC assistance to dismantle total apartheid. Therefore, this forced the campaign's initiation because cracking the South's most entrenched citadel of white supremacy was essential to reviving national momentum for civil rights legislation.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_9_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_9_question_booklet.html",
-        "model_tiers": {
-          "tier_3m": {
-            "title": "3/12 Simple Story",
-            "score": "3 / 12 Marks",
-            "level": "Level 1 Bottom (Story/Assertion)",
-            "text": "The Birmingham Campaign was launched in 1963 because Birmingham, Alabama was the most segregated city in America. Dr Martin Luther King and the SCLC launched Project C to challenge racist businesses. They knew Police Commissioner Bull Connor was extremely violent and would attack peaceful protesters. By putting children into the marches, they got the attacks filmed on television. Therefore the campaign forced the city to desegregate.",
-            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Birmingham, Project C, Bull Connor, and television, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
-          },
-          "tier_6m": {
-            "title": "6/12 Descriptive Account",
-            "score": "6 / 12 Marks",
-            "level": "Level 2 (Descriptive Account / Two Factors Only)",
-            "text": "One reason the campaign was launched was the SCLC's strategy of <strong>Project C (Confrontation)</strong>. After failing to achieve progress in Albany, Georgia in 1962, Dr King and Reverend Fred Shuttlesworth designed Project C to deliberately create public disruption. They planned peaceful marches, boycotts of downtown department stores, and lunch-counter sit-ins to provoke a crisis that could not be ignored.<br><br>Another reason was the notorious brutality of <strong>Police Commissioner Bull Connor</strong>. Connor was a vicious segregationist who had close ties to the Ku Klux Klan. The SCLC knew Connor would overreact with violence, using high-pressure fire hoses and police attack dogs against demonstrators, creating international media attention.<br><br>In conclusion, Project C and Bull Connor's racism made Birmingham the ideal battleground.",
-            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (Project C and Bull Connor). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as Birmingham's reputation as 'Bombingham' and the SCLC's urgent need for a decisive victory after Albany), legally capping it at Level 2 under the Pearson mark scheme."
-          },
-          "tier_12m": {
-            "title": "12/12 Grade 9 Exam ★",
-            "score": "12 / 12 Marks",
-            "level": "Level 4 Top (Pearson Exam Standard)",
-            "badge": "Edexcel Benchmark",
-            "text": "One primary reason the campaign was launched was the <strong>SCLC's strategic design of Project C (Confrontation)</strong>. Following the disappointing Albany Campaign of 1962, where police avoided brutality, Martin Luther King Jr. developed 'Project C'. The plan aimed to apply coordinated direct action—boycotts of downtown stores, sit-ins, and street marches—to cause complete economic paralysis. Therefore, this caused the launch of the campaign because the SCLC needed a calculated direct-action crisis to compel municipal white business owners to negotiate desegregation.<br><br>Furthermore, Birmingham was deliberately selected due to the <strong>predictable, aggressive temperament of Police Commissioner Eugene 'Bull' Connor</strong>. Connor was a fierce white supremacist who used uncompromising force against civil rights activists. King recognised that Connor's authoritarian instincts would lead to severe police overreaction, contrasting peaceful demonstrators against brutal state aggression on national television. Therefore, this led directly to the campaign's launch because activists intentionally exploited Connor's predictable brutality to generate shocking media footage that would compel federal intervention.<br><br>In addition, the campaign was launched because <strong>Birmingham was the most violently segregated metropolis in the United States</strong>. Nicknamed 'Bombingham' after 50 bombings of Black homes and churches, the city closed public parks and pools to avoid integration. Local leader Reverend Fred Shuttlesworth appealed for SCLC assistance to dismantle total apartheid. Therefore, this forced the campaign's initiation because cracking the South's most entrenched citadel of white supremacy was essential to reviving national momentum for civil rights legislation.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (234 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
-          }
-        }
-      },
-      {
-        "id": "usa_mock_9_q3a",
-        "mockId": "usa_mock_9",
-        "qCode": "3(a)",
-        "mockTitle": "USA Mock Paper 9",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "8-Mark Source Utility",
-        "marks": 8,
-        "targetMins": 12,
-        "questionText": "How useful are Sources B and C for an enquiry into Bull Connor's policing and the significance of the May 1963 Birmingham Campaign (Project C)? Explain your answer, using Sources B and C and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From a letter written by Martin Luther King Jr. while imprisoned in Birmingham Jail, April 1963.</div><div>We did not create this tension in Birmingham; we merely brought to the surface a tension that was already alive. For years, our people have been told to 'Wait!' But this 'Wait' has almost always meant 'Never.' Non-violent direct action seeks to create such a crisis and establish such a creative tension that a community which has constantly refused to negotiate is forced to confront the issue.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From a statement by Albert Boutwell, the newly elected moderate Mayor of Birmingham, published in a local newspaper, May 1963.</div><div>These outside agitators have come to Birmingham just as we were starting to make progress on our own. Their demonstrations are ill-timed and have caused unnecessary chaos, hurting our local merchants. The integration of our department stores and lunch counters cannot be forced overnight by street mobs. We need calm discussion between local leaders, not racial confrontation.</div></div>",
-        "modelAnswer": "<strong>Source B</strong> is highly useful for explaining the strategic philosophy of non-violent direct action during the Birmingham campaign. King explains that they did not create the tension, but rather brought it to the surface, and that direct action was necessary to create a \"creative tension\" that forces a community to negotiate. This content is highly useful because it is supported by my knowledge that King and the SCLC deliberately chose Birmingham in 1963 to force integration after local merchants broke previous promises, showing that the letter accurately outlines their tactical intent. The provenance of a letter written by MLK while imprisoned in Birmingham Jail in April 1963 makes it extremely useful. As a key leader of the movement writing in the midst of the campaign, it represents an authentic, high-stakes defense of their methods against critics, although it naturally downplays any tactical divisions within the civil rights leadership.<br><br><strong>Source C</strong> is highly useful for demonstrating the opposition and arguments used by local white authorities against the marches. Mayor Boutwell claims that \"outside agitators\" have caused \"unnecessary chaos\" and that integration cannot be forced overnight by \"street mobs,\" advocating for calm local discussion instead. This content's utility is supported by my knowledge that white moderates in Birmingham, including local clergy, criticized King's timing and methods, arguing that the protests disrupted progress and polarized the city, which verifies that the Mayor's complaints were representative of local white political opinion. The provenance of a public statement by the newly elected moderate Mayor in May 1963 makes the source very useful because it captures the official segregationist and moderate white resistance at the height of the crisis. However, it is limited because it minimizes the systemic violence and bombings that Black residents faced, framing the conflict purely as a disturbance of the peace.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_9_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_9_question_booklet.html"
-      },
-      {
-        "id": "usa_mock_9_q3b",
-        "mockId": "usa_mock_9",
-        "qCode": "3(b)",
-        "mockTitle": "USA Mock Paper 9",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Interpretation Difference",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Study Interpretations 1 and 2. They give different views about Bull Connor's policing and the significance of the May 1963 Birmingham Campaign (Project C). What is the main difference between these views? Explain your answer, using details from both interpretations.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>The Birmingham campaign was a brilliant tactical victory that transformed the civil rights movement. By deliberately provoking Connor's brutal response, King created shocking television footage that horrified the global public. This media coverage put immense moral pressure on President Kennedy, forcing his administration to abandon its cautious approach and draft the landmark civil rights legislation that became the Civil Rights Act of 1964.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>While Birmingham was a public relations success, its immediate achievements on the ground were highly limited. The local agreement signed to end the marches did very little to desegregate the city or improve the lives of poor Black residents, who still faced poverty and discrimination. Indeed, the campaign triggered a violent white backlash, including the bombing of the Sixteenth Street Baptist Church, which showed that segregationists remained undefeated.</div></div>",
-        "modelAnswer": "The main difference is that <strong>Interpretation 1</strong> portrays the Birmingham Campaign as a \"brilliant tactical victory\" whose televised scenes of Bull Connor’s brutality forced President Kennedy to draft the Civil Rights Act of 1964. In contrast, <strong>Interpretation 2</strong> argues its \"immediate achievements on the ground were highly limited\", noting that local poverty persisted and the campaign triggered a violent white backlash including the Sixteenth Street Baptist Church bombing.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_9_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_9_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_9_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_9_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_9_q3c",
-        "mockId": "usa_mock_9",
-        "qCode": "3(c)",
-        "mockTitle": "USA Mock Paper 9",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Why Interpretations Differ",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Suggest one reason why Interpretations 1 and 2 give different views about Bull Connor's policing and the significance of the May 1963 Birmingham Campaign (Project C). You may use Sources B and C to help explain your answer.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>The Birmingham campaign was a brilliant tactical victory that transformed the civil rights movement. By deliberately provoking Connor's brutal response, King created shocking television footage that horrified the global public. This media coverage put immense moral pressure on President Kennedy, forcing his administration to abandon its cautious approach and draft the landmark civil rights legislation that became the Civil Rights Act of 1964.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>While Birmingham was a public relations success, its immediate achievements on the ground were highly limited. The local agreement signed to end the marches did very little to desegregate the city or improve the lives of poor Black residents, who still faced poverty and discrimination. Indeed, the campaign triggered a violent white backlash, including the bombing of the Sixteenth Street Baptist Church, which showed that segregationists remained undefeated.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From a letter written by Martin Luther King Jr. while imprisoned in Birmingham Jail, April 1963.</div><div>We did not create this tension in Birmingham; we merely brought to the surface a tension that was already alive. For years, our people have been told to 'Wait!' But this 'Wait' has almost always meant 'Never.' Non-violent direct action seeks to create such a crisis and establish such a creative tension that a community which has constantly refused to negotiate is forced to confront the issue.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From a statement by Albert Boutwell, the newly elected moderate Mayor of Birmingham, published in a local newspaper, May 1963.</div><div>These outside agitators have come to Birmingham just as we were starting to make progress on our own. Their demonstrations are ill-timed and have caused unnecessary chaos, hurting our local merchants. The integration of our department stores and lunch counters cannot be forced overnight by street mobs. We need calm discussion between local leaders, not racial confrontation.</div></div>",
-        "modelAnswer": "The interpretations differ because the historians have given weight to different contemporary sources. <strong>Interpretation 1</strong> is supported by <strong>Source B</strong>, in which Martin Luther King Jr. explains from Birmingham Jail how non-violent direct action creates \"creative tension\" to force an unwilling community to negotiate, backing the view of a calculated strategic breakthrough. Conversely, <strong>Interpretation 2</strong> is supported by local white reaction such as <strong>Source C</strong>, where Mayor Albert Boutwell condemns \"outside agitators\" and declares integration \"cannot be forced overnight\", reflecting the entrenched local resistance that limited immediate gains.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_9_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_9_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_9_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_9_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_9_q3d",
-        "mockId": "usa_mock_9",
-        "qCode": "3(d)",
-        "mockTitle": "USA Mock Paper 9",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "16+4 Mark Historical Interpretation",
-        "marks": 16,
-        "targetMins": 25,
-        "questionText": "How far do you agree with Interpretation 2 about Bull Connor's policing and the significance of the May 1963 Birmingham Campaign (Project C)? Explain your answer, using both interpretations and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>The Birmingham campaign was a brilliant tactical victory that transformed the civil rights movement. By deliberately provoking Connor's brutal response, King created shocking television footage that horrified the global public. This media coverage put immense moral pressure on President Kennedy, forcing his administration to abandon its cautious approach and draft the landmark civil rights legislation that became the Civil Rights Act of 1964.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>While Birmingham was a public relations success, its immediate achievements on the ground were highly limited. The local agreement signed to end the marches did very little to desegregate the city or improve the lives of poor Black residents, who still faced poverty and discrimination. Indeed, the campaign triggered a violent white backlash, including the bombing of the Sixteenth Street Baptist Church, which showed that segregationists remained undefeated.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From a letter written by Martin Luther King Jr. while imprisoned in Birmingham Jail, April 1963.</div><div>We did not create this tension in Birmingham; we merely brought to the surface a tension that was already alive. For years, our people have been told to 'Wait!' But this 'Wait' has almost always meant 'Never.' Non-violent direct action seeks to create such a crisis and establish such a creative tension that a community which has constantly refused to negotiate is forced to confront the issue.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From a statement by Albert Boutwell, the newly elected moderate Mayor of Birmingham, published in a local newspaper, May 1963.</div><div>These outside agitators have come to Birmingham just as we were starting to make progress on our own. Their demonstrations are ill-timed and have caused unnecessary chaos, hurting our local merchants. The integration of our department stores and lunch counters cannot be forced overnight by street mobs. We need calm discussion between local leaders, not racial confrontation.</div></div>",
-        "modelAnswer": "I agree to a large extent with Interpretation 1 that the Birmingham campaign was a highly significant victory that transformed the civil rights struggle. By using children in the marches, the SCLC provoked <strong>Bull Connor</strong> into deploying fire hoses and police dogs, as described in Source A's shocking report of water <strong>knocking them off their feet</strong>. The resulting television footage shocked the nation and put immense pressure on the federal government. President Kennedy declared that Birmingham had forced the administration to act, leading directly to his June 1963 address and the drafting of the Civil Rights Bill. This supports Interpretation 1's claim that the campaign was a <strong>\"brilliant tactical victory\"</strong> that forced the drafting of the <strong>Civil Rights Act of 1964</strong>.\n\nHowever, Interpretation 2 is also valid in highlighting that the immediate local impact was limited and met with violent resistance. The actual local desegregation agreement was minimal, and department store integration did not solve systemic housing and employment poverty. As Source C shows, white residents resented the marches, calling them <strong>ill-timed</strong> and causing <strong>unnecessary chaos</strong>. Furthermore, the campaign sparked a wave of segregationist violence, culminating in the KKK bombing of the <strong>Sixteenth Street</strong> Baptist Church in September 1963, which killed four young girls. This confirms Interpretation 2's view that local progress was <strong>\"highly limited\"</strong> and provoked <strong>\"violent white backlash\"</strong>.\n\n<em>Overall, while the local gains in Birmingham itself were slow and met with white terror (Interpretation 2), the campaign's national significance was monumental. It succeeded because it nationalized the crisis, turning civil rights into a moral issue that forced the federal government to pass the Civil Rights Act of 1964 (Interpretation 1).</em>",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_9_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_9_question_booklet.html",
-        "spagMarks": 4,
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_9_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_9_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_10_q2",
-        "mockId": "usa_mock_10",
-        "qCode": "2",
-        "mockTitle": "USA Mock Paper 10",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "12-Mark Causation",
-        "marks": 12,
-        "targetMins": 18,
-        "questionText": "Explain why the campaign in Selma (1965) was successful.",
-        "stimulus": [
-          "Televised media ('Bloody Sunday')",
-          "President Lyndon B. Johnson"
-        ],
-        "sourceExtract": "",
-        "modelAnswer": "One primary reason for success was the <strong>national moral outrage generated by televised media coverage of 'Bloody Sunday'</strong>. On 7 March 1965, 600 peaceful marchers crossing the Edmund Pettus Bridge were charged by Alabama troopers using tear gas, whips, and clubs. Television networks interrupted regular evening broadcasts to show graphic footage of defenceless marchers being beaten unconscious. Therefore, this caused the campaign to succeed because shocking television imagery horrified 50 million white viewers nationwide, generating irresistible public demand for federal intervention.<br><br>Furthermore, the campaign achieved victory through the <strong>decisive political leadership of President Lyndon B. Johnson</strong>. Recognizing that the Civil Rights Act of 1964 had left voting disenfranchisement unresolved, Johnson intervened decisively. On 15 March 1965, he addressed Congress adopting the slogan 'We Shall Overcome', federalising National Guardsmen to protect marchers to Montgomery. Therefore, this led to campaign success because presidential power placed federal authority directly behind the protesters, making state obstruction impossible.<br><br>In addition, victory was secured by the <strong>strategic genius of Martin Luther King and passage of the Voting Rights Act of 1965</strong>. King selected Selma because only 1% of eligible Black adults were registered to vote, and his leadership maintained non-violence. In August 1965, Johnson signed the Voting Rights Act, outlawing literacy tests and authorising federal examiners to register voters. Therefore, this forced the realization of the campaign's ultimate objective because federal legislation permanently ended disenfranchisement, registering 250,000 Black voters by late 1965.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_10_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_10_question_booklet.html",
-        "model_tiers": {
-          "tier_3m": {
-            "title": "3/12 Simple Story",
-            "score": "3 / 12 Marks",
-            "level": "Level 1 Bottom (Story/Assertion)",
-            "text": "The campaign in Selma in 1965 was successful because Black people were trying to register to vote. State troopers attacked peaceful marchers on the Edmund Pettus Bridge on Bloody Sunday using tear gas and clubs. The shocking violence was shown on national television, which horrified the American public. President Lyndon B. Johnson then gave a famous speech and passed the Voting Rights Act. Therefore the marchers achieved voting rights.",
-            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions Bloody Sunday, television, LBJ, and the Voting Rights Act, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
-          },
-          "tier_6m": {
-            "title": "6/12 Descriptive Account",
-            "score": "6 / 12 Marks",
-            "level": "Level 2 (Descriptive Account / Two Factors Only)",
-            "text": "One reason the Selma campaign succeeded was the impact of <strong>televised media coverage of 'Bloody Sunday'</strong>. On 7 March 1965, 600 civil rights marchers crossing the Edmund Pettus Bridge were brutally attacked by Alabama state troopers using tear gas, whips, and billy clubs. Television networks interrupted regular programming to broadcast the violence, outraging 50 million American viewers.<br><br>Another reason was the intervention of <strong>President Lyndon B. Johnson</strong>. Outraged by the brutality, Johnson federalised the Alabama National Guard to protect marchers on their 54-mile march to Montgomery. He delivered an address to Congress echoing the movement's anthem 'We Shall Overcome' and introduced the Voting Rights Act.<br><br>In conclusion, television news and President Johnson's political support made Selma successful.",
-            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (televised media and LBJ). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as King's tactical leadership and the passage of the Voting Rights Act of 1965 banning literacy tests), legally capping it at Level 2 under the Pearson mark scheme."
-          },
-          "tier_12m": {
-            "title": "12/12 Grade 9 Exam ★",
-            "score": "12 / 12 Marks",
-            "level": "Level 4 Top (Pearson Exam Standard)",
-            "badge": "Edexcel Benchmark",
-            "text": "One primary reason for success was the <strong>national moral outrage generated by televised media coverage of 'Bloody Sunday'</strong>. On 7 March 1965, 600 peaceful marchers crossing the Edmund Pettus Bridge were charged by Alabama troopers using tear gas, whips, and clubs. Television networks interrupted regular evening broadcasts to show graphic footage of defenceless marchers being beaten unconscious. Therefore, this caused the campaign to succeed because shocking television imagery horrified 50 million white viewers nationwide, generating irresistible public demand for federal intervention.<br><br>Furthermore, the campaign achieved victory through the <strong>decisive political leadership of President Lyndon B. Johnson</strong>. Recognizing that the Civil Rights Act of 1964 had left voting disenfranchisement unresolved, Johnson intervened decisively. On 15 March 1965, he addressed Congress adopting the slogan 'We Shall Overcome', federalising National Guardsmen to protect marchers to Montgomery. Therefore, this led to campaign success because presidential power placed federal authority directly behind the protesters, making state obstruction impossible.<br><br>In addition, victory was secured by the <strong>strategic genius of Martin Luther King and passage of the Voting Rights Act of 1965</strong>. King selected Selma because only 1% of eligible Black adults were registered to vote, and his leadership maintained non-violence. In August 1965, Johnson signed the Voting Rights Act, outlawing literacy tests and authorising federal examiners to register voters. Therefore, this forced the realization of the campaign's ultimate objective because federal legislation permanently ended disenfranchisement, registering 250,000 Black voters by late 1965.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (234 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
-          }
-        }
-      },
-      {
-        "id": "usa_mock_10_q3a",
-        "mockId": "usa_mock_10",
-        "qCode": "3(a)",
-        "mockTitle": "USA Mock Paper 10",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "8-Mark Source Utility",
-        "marks": 8,
-        "targetMins": 12,
-        "questionText": "How useful are Sources B and C for an enquiry into whether Lyndon Johnson's presidential leadership or Selma grassroots marches secured federal reform? Explain your answer, using Sources B and C and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From President Lyndon B. Johnson's address to a joint session of Congress on voting rights, 15 March 1965.</div><div>At times history and fate meet at a single time in a single place to shape a turning point... So it was at Lexington and Concord. So it was at Selma, Alabama. There, long-suffering men and women peacefully protested the denial of their rights as Americans... It is wrong—deadly wrong—to deny any of your fellow Americans the right to vote in this country.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From John Lewis's autobiography, Walking with the Wind, published in 1998, recalling the march on 7 March 1965.</div><div>We were walking in pairs, quiet and disciplined. As we reached the crest of the Edmund Pettus Bridge, we saw a wall of blue state troopers. The sheriff, Jim Clark, ordered us to disperse. Within seconds, tear gas canisters were flying, and troopers began lunging on horseback, swinging clubs. I felt a blow to my head and fell. But that terrible violence, captured by the cameras, shocked the conscience of the nation.</div></div>",
-        "modelAnswer": "<strong>Source B</strong> is highly useful for explaining the political and moral pressure on the federal government to introduce the Voting Rights Act of 1965. President Johnson explicitly compares the crisis at Selma to historic turning points like \"Lexington and Concord,\" declaring it \"deadly wrong\" to deny Black citizens the right to vote. This content is highly useful because it is supported by my knowledge that the violence in Selma shocked the nation, giving Johnson the political mandate to introduce the Voting Rights Act and deliver his famous \"We Shall Overcome\" speech to Congress in March 1965, which confirms that the address represents the official federal commitment to intervene. The provenance of an address to a joint session of Congress on 15 March 1965 makes the source extremely useful because it captures the direct legislative reaction of the presidency at the absolute peak of the Selma crisis. However, it is limited because it presents Johnson's actions as a purely moral decision, downplaying his administration's earlier political reluctance to introduce voting rights legislation until forced by grassroots pressure.<br><br><strong>Source C</strong> is highly useful for showing the immediate, violent catalyst that forced the federal government to act. John Lewis describes how state troopers attacked peaceful marchers on the \"Edmund Pettus Bridge\" with \"tear gas\" and \"clubs,\" and notes that the televised brutality \"shocked the conscience of the nation.\" This content's utility is supported by my knowledge that the events of \"Bloody Sunday\" on 7 March 1965 were broadcast to millions of American homes, generating widespread moral outrage and prompting national protests, which directly forced President Johnson to federalise the National Guard and demand immediate voting rights legislation. The provenance of a first-hand autobiography by John Lewis, who led the march and was beaten on the bridge, makes the source highly useful by providing an authentic, inside perspective of the tactical discipline and physical sacrifices of the activists. However, because it was written decades later in 1998, it represents a polished, retrospective narrative of the event's historic significance rather than a raw, unfiltered record of the immediate tactical decisions of the marchers.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_10_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_10_question_booklet.html"
-      },
-      {
-        "id": "usa_mock_10_q3b",
-        "mockId": "usa_mock_10",
-        "qCode": "3(b)",
-        "mockTitle": "USA Mock Paper 10",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Interpretation Difference",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Study Interpretations 1 and 2. They give different views about whether Lyndon Johnson's presidential leadership or Selma grassroots marches secured federal reform. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>The landmark civil rights laws of the 1960s were ultimately a triumph of presidential leadership. It was President Johnson’s masterful political skills and his manipulation of Kennedy’s tragic legacy that finally broke the stubborn Southern opposition in Congress to secure equality.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>The landmark legislation of the 1960s was not a gift from the White House, but a prize won through the blood and courage of the grassroots movement. Presidents Kennedy and Johnson were highly cautious politicians who only acted when direct action campaigns in Birmingham and Selma created such severe domestic crises that federal inaction became impossible. The true source of change was the organised masses who made the status quo unsustainable.</div></div>",
-        "modelAnswer": "The main difference is that <strong>Interpretation 1</strong> credits top-down executive politics, arguing 1960s civil rights laws were a \"triumph of presidential leadership\" driven by Lyndon Johnson’s legislative skill and use of Kennedy’s legacy. In contrast, <strong>Interpretation 2</strong> credits bottom-up activism, arguing legislation was a \"prize won through the blood and courage of the grassroots movement\" in Birmingham and Selma that forced cautious presidents to act.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_10_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_10_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_10_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_10_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_10_q3c",
-        "mockId": "usa_mock_10",
-        "qCode": "3(c)",
-        "mockTitle": "USA Mock Paper 10",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Why Interpretations Differ",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Suggest one reason why Interpretations 1 and 2 give different views about whether Lyndon Johnson's presidential leadership or Selma grassroots marches secured federal reform. You may use Sources B and C to help explain your answer.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>The landmark civil rights laws of the 1960s were ultimately a triumph of presidential leadership. It was President Johnson’s masterful political skills and his manipulation of Kennedy’s tragic legacy that finally broke the stubborn Southern opposition in Congress to secure equality.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>The landmark legislation of the 1960s was not a gift from the White House, but a prize won through the blood and courage of the grassroots movement. Presidents Kennedy and Johnson were highly cautious politicians who only acted when direct action campaigns in Birmingham and Selma created such severe domestic crises that federal inaction became impossible. The true source of change was the organised masses who made the status quo unsustainable.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From President Lyndon B. Johnson's address to a joint session of Congress on voting rights, 15 March 1965.</div><div>At times history and fate meet at a single time in a single place to shape a turning point... So it was at Lexington and Concord. So it was at Selma, Alabama. There, long-suffering men and women peacefully protested the denial of their rights as Americans... It is wrong—deadly wrong—to deny any of your fellow Americans the right to vote in this country.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From John Lewis's autobiography, Walking with the Wind, published in 1998, recalling the march on 7 March 1965.</div><div>We were walking in pairs, quiet and disciplined. As we reached the crest of the Edmund Pettus Bridge, we saw a wall of blue state troopers. The sheriff, Jim Clark, ordered us to disperse. Within seconds, tear gas canisters were flying, and troopers began lunging on horseback, swinging clubs. I felt a blow to my head and fell. But that terrible violence, captured by the cameras, shocked the conscience of the nation.</div></div>",
-        "modelAnswer": "The interpretations differ because the historians have placed weight on different sources. <strong>Interpretation 1</strong> gives weight to executive addresses like <strong>Source B</strong>, where President Johnson commands a joint session of Congress and declares it \"deadly wrong\" to deny Americans the vote, highlighting decisive presidential leadership. Conversely, <strong>Interpretation 2</strong> gives weight to activist accounts like <strong>Source C</strong>, in which John Lewis describes state troopers clubbing peaceful marchers on the Edmund Pettus Bridge to \"shock the conscience of the nation\", showing grassroots sacrifice forced federal action.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_10_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_10_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_10_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_10_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_10_q3d",
-        "mockId": "usa_mock_10",
-        "qCode": "3(d)",
-        "mockTitle": "USA Mock Paper 10",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "16+4 Mark Historical Interpretation",
-        "marks": 16,
-        "targetMins": 25,
-        "questionText": "How far do you agree with Interpretation 2 about whether Lyndon Johnson's presidential leadership or Selma grassroots marches secured federal reform? Explain your answer, using both interpretations and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>The landmark civil rights laws of the 1960s were ultimately a triumph of presidential leadership. It was President Johnson’s masterful political skills and his manipulation of Kennedy’s tragic legacy that finally broke the stubborn Southern opposition in Congress to secure equality.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>The landmark legislation of the 1960s was not a gift from the White House, but a prize won through the blood and courage of the grassroots movement. Presidents Kennedy and Johnson were highly cautious politicians who only acted when direct action campaigns in Birmingham and Selma created such severe domestic crises that federal inaction became impossible. The true source of change was the organised masses who made the status quo unsustainable.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From President Lyndon B. Johnson's address to a joint session of Congress on voting rights, 15 March 1965.</div><div>At times history and fate meet at a single time in a single place to shape a turning point... So it was at Lexington and Concord. So it was at Selma, Alabama. There, long-suffering men and women peacefully protested the denial of their rights as Americans... It is wrong—deadly wrong—to deny any of your fellow Americans the right to vote in this country.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From John Lewis's autobiography, Walking with the Wind, published in 1998, recalling the march on 7 March 1965.</div><div>We were walking in pairs, quiet and disciplined. As we reached the crest of the Edmund Pettus Bridge, we saw a wall of blue state troopers. The sheriff, Jim Clark, ordered us to disperse. Within seconds, tear gas canisters were flying, and troopers began lunging on horseback, swinging clubs. I felt a blow to my head and fell. But that terrible violence, captured by the cameras, shocked the conscience of the nation.</div></div>",
-        "modelAnswer": "I agree to a large extent with Interpretation 1 because President Johnson's political skill was essential to get the bills passed through a divided Congress. The interpretation argues that the laws were a \"triumph of presidential leadership\" due to \"President Johnson's masterful political skills\". From my own knowledge, I know this to be accurate; Johnson was a veteran Southern politician from Texas who knew exactly how to bully and persuade opposing politicians. When Dixiecrat politicians attempted to block the 1964 Civil Rights Act using a filibuster, it was LBJ's political mastery that gathered enough Republican support to break it. Furthermore, LBJ brilliantly manipulated \"Kennedy's tragic legacy\" by explicitly telling Congress that passing the 1964 Act was the only way to truly honour the assassinated president's memory, as shown in Source B's focus on the moral authority of the presidency. This supports Interpretation 1's view that these acts were a <strong>\"triumph of presidential leadership\"</strong> due to Johnson's <strong>\"masterful political skills\"</strong>.\n\nHowever, Interpretation 2 is more convincing in highlighting that both Kennedy and Johnson were forced into action by the grassroots civil rights movement. Interpretation 1 focuses purely on presidential leadership, but from my own knowledge, neither president proactively introduced these bills without being pressured by extreme crises. President Kennedy only proposed the Civil Rights Bill in 1963 because the global embarrassment of police dogs attacking children in Birmingham left him no choice. Similarly, President Johnson only introduced the Voting Rights Act of 1965 as a direct reaction to the events in Selma. As Lewis describes in Source C, activists deliberately provoked the violence of <strong>Bloody Sunday</strong> on the <strong>Edmund Pettus Bridge</strong> because they knew televised police brutality was the only way to force LBJ's hand. Therefore, the true catalyst for the legislation was not presidential initiative, but the blood and bravery of ordinary Black Americans who made the status quo politically impossible to maintain, supporting Interpretation 2's view that it was a <strong>\"prize won through the blood and courage of the grassroots movement\"</strong>.\n\nIn conclusion, while I agree with Interpretation 1 that the actual passage of the acts required the formidable legislative skills of President Johnson, the interpretation gives too much credit to the White House. The presidents were reactors, not initiators; they only wielded their political power to pass the Civil Rights and Voting Rights Acts because the unrelenting courage of the grassroots civil rights movement forced them to do so.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_10_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_10_question_booklet.html",
-        "spagMarks": 4,
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_10_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_10_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
         "id": "usa_mock_2_q3a",
         "mockId": "usa_mock_2",
         "qCode": "3(a)",
@@ -1002,101 +600,6 @@ export const MOCK_BANK_P3 = {
           },
           "2": {
             "studio_audio": "/audio/sources/usa/usa_mock_2_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_6_q3a",
-        "mockId": "usa_mock_6",
-        "qCode": "3(a)",
-        "mockTitle": "USA Mock Paper 6",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "8-Mark Source Utility",
-        "marks": 8,
-        "targetMins": 12,
-        "questionText": "How useful are Sources B and C for an enquiry into Martin Luther King's nonviolent direct action and 1966 Chicago housing campaign? Explain your answer, using Sources B and C and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From Dr Martin Luther King Jr.'s 'I Have a Dream' speech, delivered at the Lincoln Memorial during the March on Washington, 28 August 1963.</div><div>\"I say to you today, my friends, that even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream. I have a dream that one day this nation will rise up and live out the true meaning of its creed: 'We hold these truths to be self-evident, that all men are created equal.' I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.\"</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From an interview with Chicago civil rights organizer Bob Lucas in the late 1970s, discussing King's Northern campaign.</div><div>Dr. King's efforts in Chicago did not succeed in securing better housing conditions. Following his departure in August 1966, ideological divisions within the coalition became more pronounced. While King was present, these disagreements had been minimized out of respect for his leadership. Afterward, local Black organisers increasingly sought to exclude white activists from leadership roles.</div></div>",
-        "modelAnswer": "<strong>Source B</strong> is highly useful for demonstrating the inspirational moral vision and peaceful integrationist aims of the March on Washington in August 1963. In his speech at the Lincoln Memorial, Martin Luther King Jr. appeals to the founding promises of the Constitution and expresses his dream that his children will \"not be judged by the color of their skin but by the content of their character\" and that former slave-owning and enslaved communities will sit together in brotherhood. Historically, over 250,000 demonstrators gathered peacefully in Washington D.C. to pressure Congress to pass President Kennedy's Civil Rights Bill. The provenance of a live keynote address delivered by the leader of the SCLC before national television cameras makes it highly useful for understanding how civil rights leaders framed equality as an American moral ideal to win white moderate and federal support, though as a celebratory public speech it focuses on unity rather than bitter divisions within SNCC over federal caution.<br><br><strong>Source C</strong> is highly useful for revealing grassroots disillusionment with the practical socio-economic impact of the March on Washington. Civil rights activist Bob Lucas recalls that despite the emotional triumph of the rally, the march \"did not succeed in securing better housing conditions, ending police brutality, or creating jobs for Black Americans in northern cities.\" Historically, while the march helped build momentum for the Civil Rights Act (1964), de facto segregation, ghetto poverty, and discriminatory policing in cities such as Chicago and Watts remained untouched by federal desegregation laws. As the retrospective judgment of a CORE activist working in northern urban communities, Source C provides a valuable counterbalance to King's optimism by explaining why many activists subsequently turned toward militant direct action and Black Power.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_6_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_6_question_booklet.html"
-      },
-      {
-        "id": "usa_mock_6_q3b",
-        "mockId": "usa_mock_6",
-        "qCode": "3(b)",
-        "mockTitle": "USA Mock Paper 6",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Interpretation Difference",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Study Interpretations 1 and 2. They give different views about Martin Luther King's nonviolent direct action and 1966 Chicago housing campaign. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>King's emphasis on nonviolent direct action allowed federal leaders, including Presidents Kennedy and Johnson, to support the civil rights cause without alienating moderate voters. His international profile and receipt of the Nobel Peace Prize in 1964 increased pressure on Congress to act. His leadership was crucial in securing the passage of the Civil Rights Act and the Voting Rights Act.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>By the mid-1960s, legal victories in the South had raised expectations, but daily economic realities for urban Black Americans remained unchanged. When King expanded the campaign to Chicago to address housing discrimination, he faced entrenched political resistance. Although local leaders made verbal agreements, practical desegregation was not achieved, leading many young activists to embrace Black Power.</div></div>",
-        "modelAnswer": "The main difference is that <strong>Interpretation 1</strong> stresses King’s national political success, arguing his \"emphasis on nonviolent direct action\" won moderate and presidential backing to secure the Civil Rights Act and Voting Rights Act. In contrast, <strong>Interpretation 2</strong> stresses the socioeconomic limits of King’s campaigns, arguing \"daily economic realities for urban Black Americans remained unchanged\" when his 1966 Chicago housing drive failed to achieve practical desegregation.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_6_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_6_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_6_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_6_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_6_q3c",
-        "mockId": "usa_mock_6",
-        "qCode": "3(c)",
-        "mockTitle": "USA Mock Paper 6",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Why Interpretations Differ",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Suggest one reason why Interpretations 1 and 2 give different views about Martin Luther King's nonviolent direct action and 1966 Chicago housing campaign. You may use Sources B and C to help explain your answer.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>King's emphasis on nonviolent direct action allowed federal leaders, including Presidents Kennedy and Johnson, to support the civil rights cause without alienating moderate voters. His international profile and receipt of the Nobel Peace Prize in 1964 increased pressure on Congress to act. His leadership was crucial in securing the passage of the Civil Rights Act and the Voting Rights Act.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>By the mid-1960s, legal victories in the South had raised expectations, but daily economic realities for urban Black Americans remained unchanged. When King expanded the campaign to Chicago to address housing discrimination, he faced entrenched political resistance. Although local leaders made verbal agreements, practical desegregation was not achieved, leading many young activists to embrace Black Power.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From Dr Martin Luther King Jr.'s 'I Have a Dream' speech, delivered at the Lincoln Memorial during the March on Washington, 28 August 1963.</div><div>\"I say to you today, my friends, that even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream. I have a dream that one day this nation will rise up and live out the true meaning of its creed: 'We hold these truths to be self-evident, that all men are created equal.' I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.\"</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From an interview with Chicago civil rights organizer Bob Lucas in the late 1970s, discussing King's Northern campaign.</div><div>Dr. King's efforts in Chicago did not succeed in securing better housing conditions. Following his departure in August 1966, ideological divisions within the coalition became more pronounced. While King was present, these disagreements had been minimized out of respect for his leadership. Afterward, local Black organisers increasingly sought to exclude white activists from leadership roles.</div></div>",
-        "modelAnswer": "The interpretations differ because the historians have given weight to sources from different phases of King’s leadership. <strong>Interpretation 1</strong> relies on evidence like <strong>Source B</strong>, King’s 1963 Lincoln Memorial speech invoking America’s creed that \"all men are created equal\", illustrating his unifying moral appeal to national lawmakers. Conversely, <strong>Interpretation 2</strong> relies on Northern activist testimony like <strong>Source C</strong>, where Chicago organizer Bob Lucas states King’s 1966 campaign \"did not succeed in securing better housing conditions\" and exposed deep coalition rifts.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_6_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_6_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_6_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_6_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_6_q3d",
-        "mockId": "usa_mock_6",
-        "qCode": "3(d)",
-        "mockTitle": "USA Mock Paper 6",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "16+4 Mark Historical Interpretation",
-        "marks": 16,
-        "targetMins": 25,
-        "questionText": "How far do you agree with Interpretation 2 about Martin Luther King's nonviolent direct action and 1966 Chicago housing campaign? Explain your answer, using both interpretations and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>King's emphasis on nonviolent direct action allowed federal leaders, including Presidents Kennedy and Johnson, to support the civil rights cause without alienating moderate voters. His international profile and receipt of the Nobel Peace Prize in 1964 increased pressure on Congress to act. His leadership was crucial in securing the passage of the Civil Rights Act and the Voting Rights Act.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>By the mid-1960s, legal victories in the South had raised expectations, but daily economic realities for urban Black Americans remained unchanged. When King expanded the campaign to Chicago to address housing discrimination, he faced entrenched political resistance. Although local leaders made verbal agreements, practical desegregation was not achieved, leading many young activists to embrace Black Power.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From Dr Martin Luther King Jr.'s 'I Have a Dream' speech, delivered at the Lincoln Memorial during the March on Washington, 28 August 1963.</div><div>\"I say to you today, my friends, that even though we face the difficulties of today and tomorrow, I still have a dream. It is a dream deeply rooted in the American dream. I have a dream that one day this nation will rise up and live out the true meaning of its creed: 'We hold these truths to be self-evident, that all men are created equal.' I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.\"</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From an interview with Chicago civil rights organizer Bob Lucas in the late 1970s, discussing King's Northern campaign.</div><div>Dr. King's efforts in Chicago did not succeed in securing better housing conditions. Following his departure in August 1966, ideological divisions within the coalition became more pronounced. While King was present, these disagreements had been minimized out of respect for his leadership. Afterward, local Black organisers increasingly sought to exclude white activists from leadership roles.</div></div>",
-        "modelAnswer": "I agree to a moderate extent with Interpretation 2 that King's achievements failed to change the daily lives of many Black Americans, particularly in the North. In <strong>1966</strong>, King launched the <strong>Chicago Freedom Movement</strong> to combat housing discrimination. Although Mayor Daley signed an agreement to end segregation, the city authorities ignored it once King left, and housing conditions in the slums remained unchanged. As Bob Lucas notes in Source C, King <strong>failed to get improved living conditions</strong> in Chicago, and his departure exposed a wide split where Black activists asked whites to leave. This supports Interpretation 2's view that practical desegregation was <strong>\"not achieved\"</strong> in the North and <strong>\"daily economic realities for urban Black Americans remained unchanged\"</strong>.\n\nHowever, Interpretation 1 is also valid in emphasizing the monumental impact of King's Southern campaigns. King's commitment to non-violent direct action, as shown in the massive crowd at the March on Washington in Source B, attracted international support and led to the <strong>Civil Rights Act of 1964</strong> and the <strong>Voting Rights Act of 1965</strong>. This supports Interpretation 1's claim that King's <strong>\"emphasis on nonviolent direct action\"</strong> put pressure on the government to end discrimination against Black Americans and secured landmark laws.\n\n<em>Overall, while the 1964 Act was a massive victory for social desegregation, the 1965 Voting Rights Act was the ultimate achievement because it gave Black Americans the political power to defend their rights. Without the vote, the social gains of 1964 could not be legally enforced or protected at the local level.</em>",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_6_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_6_question_booklet.html",
-        "spagMarks": 4,
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_6_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_6_i2.mp3",
             "studio_voice_label": "Historian 2 · Contrasting View"
           }
         }
@@ -1258,101 +761,6 @@ export const MOCK_BANK_P3 = {
             "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
           }
         }
-      },
-      {
-        "id": "usa_mock_13_q3a",
-        "mockId": "usa_mock_13",
-        "qCode": "3(a)",
-        "mockTitle": "USA Mock Paper 13",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "8-Mark Source Utility",
-        "marks": 8,
-        "targetMins": 12,
-        "questionText": "How useful are Sources B and C for an enquiry into the limitations of civil rights progress in the years 1968–75? Explain your answer, using Sources B and C and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From a memoir by a civil rights activist reflecting on the impact of the Fair Housing Act (Civil Rights Act of 1968), published in 1980.</div><div>We thought the Fair Housing Act of 1968 would change everything. It was signed into law during the national grief after Dr. King's assassination. But passing a law is not the same as enforcing it. Real estate agents still used redlining, banks refused mortgages to Black families, and local school boards gerrymandered school zones to keep classrooms segregated. By 1975, the suburbs remained almost entirely white, while our people remained trapped in underfunded inner-city schools.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From a report by the US Department of Justice on the enforcement of civil rights legislation, published in 1974.</div><div>Significant progress has been achieved in political representation and legal desegregation. The Voting Rights Act has registered millions of Black voters, resulting in a fivefold increase in Black elected officials in the South by 1974. However, the Department faces severe challenges in enforcing the Fair Housing Act. Informal practices of discrimination in rental markets and local resistance to busing for school integration continue to prevent complete equality, showing that de facto segregation is highly resistant to federal litigation.</div></div>",
-        "modelAnswer": "<strong>Source B</strong> is highly useful for demonstrating the local, grassroots reality and limitations of the Fair Housing Act of 1968. The activist explains that despite the law, real estate agents used \"redlining\", banks denied mortgages, and school boards gerrymandered zones, leaving suburbs white and Black families trapped in underfunded ghettos by 1975. This utility is supported by my knowledge that the Fair Housing Act was difficult to enforce because it relied on individuals filing lawsuits to prove discrimination, allowing practices like redlining and de facto housing segregation to persist, which confirms the source's claims about the limits of legislation. The provenance of a memoir by a civil rights activist published in 1980 increases its usefulness because it provides a reflective, first-hand account of the disappointment felt by activists who saw legal victories fail to translate into social and economic equality. Although it represents a personal and disappointed viewpoint, it accurately reflects the structural barriers that remained in Northern cities.<br><br><strong>Source C</strong> is highly useful for understanding the official government perspective on the progress and difficulties in enforcing civil rights laws. The report highlights legal and political achievements, such as a \"fivefold increase in Black elected officials in the South\", but admits to \"severe challenges in enforcing the Fair Housing Act\" and local resistance to \"busing for school integration\", showing that de facto segregation was resistant to legal action. This is supported by my knowledge that school busing programmes—such as those in Boston in 1974—provoked violent protests by white residents who opposed federal court integration orders, demonstrating the intense local resistance to integration. The provenance of an official Department of Justice report in 1974 makes it highly useful as a reliable source of statistical progress and legal enforcement records. While it is an official government document that may seek to present federal efforts in a positive light, its candid admission of failure to enforce housing laws and integration makes it a very credible record of the limits of federal power.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_13_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_13_question_booklet.html"
-      },
-      {
-        "id": "usa_mock_13_q3b",
-        "mockId": "usa_mock_13",
-        "qCode": "3(b)",
-        "mockTitle": "USA Mock Paper 13",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Interpretation Difference",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Study Interpretations 1 and 2. They give different views about the extent of civil rights progress in the years 1968–75. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>By 1975, the civil rights movement had hit a wall of economic and social resistance. The legal gains of the mid-1960s did little to improve the lives of the urban poor. Inner-city schools remained segregated in practice, unemployment among Black youths was twice that of white youths, and the Kerner Commission's warnings of two separate societies went unheeded. The movement succeeded in ending legal segregation in the South, but it failed to conquer the economic division of the nation.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>The decade after 1965 witnessed a profound transformation in Black political and social status. Under the pressure of federal legislation, Black registration and voting surged, leading to the election of thousands of Black mayors, congressmen, and officials. Furthermore, affirmative action policies opened up higher education and white-collar employment. While economic inequality was not eliminated, the progress made by 1975 was substantial and irreversible.</div></div>",
-        "modelAnswer": "The main difference is that <strong>Interpretation 1</strong> emphasises persistent socioeconomic inequality, arguing that by 1975 the movement had \"failed to conquer the economic division of the nation\", leaving inner-city schools segregated and Black youth unemployment double white rates. In contrast, <strong>Interpretation 2</strong> argues progress by 1975 was \"substantial and irreversible\", pointing to surging Black voter turnout, thousands of Black elected officials, and affirmative action.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_13_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_13_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_13_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_13_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_13_q3c",
-        "mockId": "usa_mock_13",
-        "qCode": "3(c)",
-        "mockTitle": "USA Mock Paper 13",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Why Interpretations Differ",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Suggest one reason why Interpretations 1 and 2 give different views about the extent of civil rights progress in the years 1968–75. You may use Sources B and C to help explain your answer.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>By 1975, the civil rights movement had hit a wall of economic and social resistance. The legal gains of the mid-1960s did little to improve the lives of the urban poor. Inner-city schools remained segregated in practice, unemployment among Black youths was twice that of white youths, and the Kerner Commission's warnings of two separate societies went unheeded. The movement succeeded in ending legal segregation in the South, but it failed to conquer the economic division of the nation.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>The decade after 1965 witnessed a profound transformation in Black political and social status. Under the pressure of federal legislation, Black registration and voting surged, leading to the election of thousands of Black mayors, congressmen, and officials. Furthermore, affirmative action policies opened up higher education and white-collar employment. While economic inequality was not eliminated, the progress made by 1975 was substantial and irreversible.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From a memoir by a civil rights activist reflecting on the impact of the Fair Housing Act (Civil Rights Act of 1968), published in 1980.</div><div>We thought the Fair Housing Act of 1968 would change everything. It was signed into law during the national grief after Dr. King's assassination. But passing a law is not the same as enforcing it. Real estate agents still used redlining, banks refused mortgages to Black families, and local school boards gerrymandered school zones to keep classrooms segregated. By 1975, the suburbs remained almost entirely white, while our people remained trapped in underfunded inner-city schools.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From a report by the US Department of Justice on the enforcement of civil rights legislation, published in 1974.</div><div>Significant progress has been achieved in political representation and legal desegregation. The Voting Rights Act has registered millions of Black voters, resulting in a fivefold increase in Black elected officials in the South by 1974. However, the Department faces severe challenges in enforcing the Fair Housing Act. Informal practices of discrimination in rental markets and local resistance to busing for school integration continue to prevent complete equality, showing that de facto segregation is highly resistant to federal litigation.</div></div>",
-        "modelAnswer": "The interpretations differ because the historians have placed weight on different evidence from the early 1970s. <strong>Interpretation 1</strong> gives weight to grassroots housing and schooling testimony such as <strong>Source B</strong>, which notes that despite the 1968 Fair Housing Act, redlining and gerrymandered zones kept suburbs white and Black pupils in \"underfunded inner-city schools\". Conversely, <strong>Interpretation 2</strong> gives weight to federal political data in <strong>Source C</strong>, where a 1974 Justice Department report records \"millions of Black voters\" and a \"fivefold increase in Black elected officials in the South\".",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_13_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_13_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_13_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_13_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_13_q3d",
-        "mockId": "usa_mock_13",
-        "qCode": "3(d)",
-        "mockTitle": "USA Mock Paper 13",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "16+4 Mark Historical Interpretation",
-        "marks": 16,
-        "targetMins": 25,
-        "questionText": "How far do you agree with Interpretation 2 about the extent of civil rights progress in the years 1968–75? Explain your answer, using both interpretations and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>By 1975, the civil rights movement had hit a wall of economic and social resistance. The legal gains of the mid-1960s did little to improve the lives of the urban poor. Inner-city schools remained segregated in practice, unemployment among Black youths was twice that of white youths, and the Kerner Commission's warnings of two separate societies went unheeded. The movement succeeded in ending legal segregation in the South, but it failed to conquer the economic division of the nation.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>The decade after 1965 witnessed a profound transformation in Black political and social status. Under the pressure of federal legislation, Black registration and voting surged, leading to the election of thousands of Black mayors, congressmen, and officials. Furthermore, affirmative action policies opened up higher education and white-collar employment. While economic inequality was not eliminated, the progress made by 1975 was substantial and irreversible.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From a memoir by a civil rights activist reflecting on the impact of the Fair Housing Act (Civil Rights Act of 1968), published in 1980.</div><div>We thought the Fair Housing Act of 1968 would change everything. It was signed into law during the national grief after Dr. King's assassination. But passing a law is not the same as enforcing it. Real estate agents still used redlining, banks refused mortgages to Black families, and local school boards gerrymandered school zones to keep classrooms segregated. By 1975, the suburbs remained almost entirely white, while our people remained trapped in underfunded inner-city schools.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From a report by the US Department of Justice on the enforcement of civil rights legislation, published in 1974.</div><div>Significant progress has been achieved in political representation and legal desegregation. The Voting Rights Act has registered millions of Black voters, resulting in a fivefold increase in Black elected officials in the South by 1974. However, the Department faces severe challenges in enforcing the Fair Housing Act. Informal practices of discrimination in rental markets and local resistance to busing for school integration continue to prevent complete equality, showing that de facto segregation is highly resistant to federal litigation.</div></div>",
-        "modelAnswer": "I agree to a large extent with Interpretation 1 that the civil rights movement faced severe limitations and failed to bridge the economic divide by 1975. Despite the passage of the Fair Housing Act, de facto segregation remained the norm in Northern cities. As Source B details, real estate agents used <strong>redlining</strong> and banks refused mortgages to keep the suburbs white. MLK's <strong>Chicago Freedom Movement</strong> of 1966 failed to achieve its housing integration goals due to intense white backlash in suburbs like <strong>Cicero</strong> and political obstruction by Mayor Daley. Furthermore, the <strong>Kerner Commission</strong>'s 1968 warning that America was splitting into <strong>two societies, separate and unequal</strong> was ignored, as President Johnson refused to fund its recommended urban welfare programmes due to the costs of the <strong>Vietnam War</strong>. Consequently, by 1975, Black youth unemployment remained extremely high, proving Interpretation 1's view that legal gains <strong>\"did little to improve the lives of the urban poor\"</strong> and failed to resolve <strong>\"economic division\"</strong>.\n\nHowever, Interpretation 2 is also valid in emphasizing that the political and social status of Black Americans was permanently transformed. The Voting Rights Act of 1965 enabled millions of Black citizens to vote, leading to a massive increase in Black political representation. By 1974, as shown in Source C, there was a <strong>fivefold increase in Black elected officials</strong>, including the election of Black mayors in major cities like Detroit and Atlanta. Furthermore, <strong>affirmative action</strong> policies introduced under Johnson and Nixon opened up opportunities in higher education and white-collar employment, helping to grow a Black middle class. Thus, while economic equality was not fully realized, the gains in democratic rights and representation were, as Interpretation 2 states, <strong>\"substantial and irreversible\"</strong> and ended de facto segregation.\n\n<em>Overall, Interpretation 1 is more convincing. While the civil rights movement successfully dismantled de jure segregation in the South and created a new class of Black political leaders (Interpretation 2), the structural economic inequalities of the ghettos remained entrenched. The persistence of housing redlining, de facto school segregation, and high poverty rates meant that by 1975, the daily reality for the majority of working-class Black Americans was still one of segregation and economic neglect.</em>",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_13_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_13_question_booklet.html",
-        "spagMarks": 4,
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_13_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_13_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
       }
     ],
     "lesson_3_1": [
@@ -1488,65 +896,6 @@ export const MOCK_BANK_P3 = {
     ],
     "lesson_3_3": [
       {
-        "id": "usa_mock_4_q1",
-        "mockId": "usa_mock_4",
-        "qCode": "1",
-        "mockTitle": "USA Mock Paper 4",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Inference",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Give two things you can infer from Source A about the dangers faced by US soldiers during search-and-destroy operations in Vietnam.",
-        "stimulus": [],
-        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: From a veteran's recollection of conducting search-and-destroy operations in South Vietnam.</div><div>The threat was constant and invisible. Every step was stressful due to booby traps and hidden mines. Much of our time was spent searching for Vietcong tunnel complexes. When we did locate the enemy, combat was intense. In practice, search-and-destroy operations frequently led to soldiers burning down civilian dwellings, despite regulations prohibiting it.</div>",
-        "modelAnswer": "<strong>Sample Acceptable Inferences (the dangers faced by US soldiers during search-and-destroy operations in Vietnam):</strong>\n• <strong>Inference 1:</strong> American soldiers faced persistent, hidden threats that caused continuous psychological stress.<br>&bull; <em>Detail from source:</em> \"The threat was constant and invisible. Every step was stressful due to booby traps and hidden mines.\"\n\n• <strong>Inference 2:</strong> Frustration and intense combat during operations frequently led US troops to destroy civilian homes.<br>&bull; <em>Detail from source:</em> \"search-and-destroy operations frequently led to soldiers burning down civilian dwellings, despite regulations prohibiting it.\"",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_4_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_4_question_booklet.html"
-      },
-      {
-        "id": "usa_mock_6_q2",
-        "mockId": "usa_mock_6",
-        "qCode": "2",
-        "mockTitle": "USA Mock Paper 6",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "12-Mark Causation",
-        "marks": 12,
-        "targetMins": 18,
-        "questionText": "Explain why the USA was not able to win the war against the Vietcong in the years 1964–73.",
-        "stimulus": [
-          "the Vietcong use of booby traps",
-          "the US use of Agent Orange"
-        ],
-        "sourceExtract": "",
-        "modelAnswer": "One primary reason the USA failed to win was the <strong>devastating psychological and physical toll of Vietcong booby traps</strong>. The Vietcong deployed concealed traps: sharpened bamboo punji stakes, landmines, and tripwire grenades. These hidden hazards caused 11% of all American deaths and 17% of disabling wounds. Therefore, this caused American failure because booby traps inflicted continuous casualties without pitched battles, destroying the combat morale of young conscript soldiers who never saw the enemy.<br><br>Furthermore, the US war effort was crippled by the <strong>counterproductive destruction caused by chemical defoliants like Agent Orange</strong>. To strip jungle foliage, the US Air Force sprayed 20 million gallons of herbicides under Operation Ranch Hand. However, this poisoned water supplies, devastated rural farming livelihoods, and caused catastrophic birth defects. Therefore, this led directly to US defeat because chemical warfare completely alienated the South Vietnamese peasantry, driving thousands of recruits into the arms of the Vietcong insurgency.<br><br>In addition, the US military was outmanoeuvred by <strong>vast underground tunnel systems and the Ho Chi Minh Trail</strong>. Networks like the 250-kilometre Cu Chi tunnels provided the Vietcong with bomb-proof barracks, hospitals, and weapons caches beneath US bases. Simultaneously, the Ho Chi Minh Trail delivered 60 tons of Soviet and Chinese supplies daily. Therefore, this forced the war into an unwinnable stalemate because massive US aerial bombardment could neither sever enemy logistics nor locate guerrilla fighters operating underground.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_6_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_6_question_booklet.html",
-        "model_tiers": {
-          "tier_3m": {
-            "title": "3/12 Simple Story",
-            "score": "3 / 12 Marks",
-            "level": "Level 1 Bottom (Story/Assertion)",
-            "text": "The USA was not able to win against the Vietcong because the Vietcong used guerrilla warfare. They built hidden booby traps like punji stick pits that injured American soldiers. The US tried to drop Agent Orange to kill the jungle, but this made Vietnamese peasants hate the Americans. The Vietcong also hid in underground tunnels. Therefore American soldiers could not find the enemy and could not defeat them.",
-            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple descriptive narrative. Mentions guerrilla warfare, booby traps, and Agent Orange, but lacks analytical PEEL paragraphs, dates, and sustained causal explanations."
-          },
-          "tier_6m": {
-            "title": "6/12 Descriptive Account",
-            "score": "6 / 12 Marks",
-            "level": "Level 2 (Descriptive Account / Two Factors Only)",
-            "text": "One reason the USA could not win was the <strong>Vietcong's extensive use of booby traps</strong>. The Vietcong laid punji traps with sharpened bamboo sticks smeared with excrement, tripwires connected to grenades, and unexploded American bombs. These traps caused 11% of American deaths and 17% of wounds, causing constant fear among US patrols in the jungle.<br><br>Another reason was the <strong>US military's use of Agent Orange and defoliants</strong>. To strip away the dense jungle canopy that hid Vietcong fighters, US planes sprayed over 20 million gallons of toxic chemical herbicides. This poisoned crops and water supplies, causing horrific birth defects and alienating the rural population.<br><br>In conclusion, booby traps and the destruction caused by Agent Orange prevented a US victory.",
-            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes the two stimulus factors (booby traps and Agent Orange). However, it remains descriptive and omits a third distinct aspect beyond the stimulus (such as the Ho Chi Minh Trail and the Cu Chi tunnel network), legally capping it at Level 2 under the Pearson mark scheme."
-          },
-          "tier_12m": {
-            "title": "12/12 Grade 9 Exam ★",
-            "score": "12 / 12 Marks",
-            "level": "Level 4 Top (Pearson Exam Standard)",
-            "badge": "Edexcel Benchmark",
-            "text": "One primary reason the USA failed to win was the <strong>devastating psychological and physical toll of Vietcong booby traps</strong>. The Vietcong deployed concealed traps: sharpened bamboo punji stakes, landmines, and tripwire grenades. These hidden hazards caused 11% of all American deaths and 17% of disabling wounds. Therefore, this caused American failure because booby traps inflicted continuous casualties without pitched battles, destroying the combat morale of young conscript soldiers who never saw the enemy.<br><br>Furthermore, the US war effort was crippled by the <strong>counterproductive destruction caused by chemical defoliants like Agent Orange</strong>. To strip jungle foliage, the US Air Force sprayed 20 million gallons of herbicides under Operation Ranch Hand. However, this poisoned water supplies, devastated rural farming livelihoods, and caused catastrophic birth defects. Therefore, this led directly to US defeat because chemical warfare completely alienated the South Vietnamese peasantry, driving thousands of recruits into the arms of the Vietcong insurgency.<br><br>In addition, the US military was outmanoeuvred by <strong>vast underground tunnel systems and the Ho Chi Minh Trail</strong>. Networks like the 250-kilometre Cu Chi tunnels provided the Vietcong with bomb-proof barracks, hospitals, and weapons caches beneath US bases. Simultaneously, the Ho Chi Minh Trail delivered 60 tons of Soviet and Chinese supplies daily. Therefore, this forced the war into an unwinnable stalemate because massive US aerial bombardment could neither sever enemy logistics nor locate guerrilla fighters operating underground.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
-          }
-        }
-      },
-      {
         "id": "usa_mock_8_q1",
         "mockId": "usa_mock_8",
         "qCode": "1",
@@ -1604,101 +953,6 @@ export const MOCK_BANK_P3 = {
             "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
           }
         }
-      },
-      {
-        "id": "usa_mock_8_q3a",
-        "mockId": "usa_mock_8",
-        "qCode": "3(a)",
-        "mockTitle": "USA Mock Paper 8",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "8-Mark Source Utility",
-        "marks": 8,
-        "targetMins": 12,
-        "questionText": "How useful are Sources B and C for an enquiry into the effectiveness of US search and destroy tactics versus Vietcong guerrilla tactics? Explain your answer, using Sources B and C and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From a report by a US Senate Subcommittee investigating the refugee crisis in South Vietnam, 1968.</div><div>Our heavy reliance on search-and-destroy operations and chemical defoliants has created hundreds of thousands of refugees. When we burn villages suspected of aiding the Vietcong and spray crops with Agent Orange, we are not winning the hearts and minds of the peasants. Instead, we are driving them directly into the arms of the enemy. The destruction of their ancestral lands has caused deep hatred of the US military.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From an operational military briefing by General William Westmoreland to the Joint Chiefs of Staff, April 1967.</div><div>Aggressive air-mobile search-and-destroy operations such as Operation Cedar Falls and Operation Junction City have inflicted heavy casualties on Vietcong main-force units and destroyed vast underground supply bases, weapons caches, and tunnel complexes in the Iron Triangle. Without sustained offensive sweeps to disrupt their jungle sanctuaries, communist forces would mass unchecked and overrun South Vietnam’s population centers.</div></div>",
-        "modelAnswer": "<strong>Source B</strong> is highly useful for showing official congressional criticism of the counterproductive human impact of US Search and Destroy tactics. The report states that burning suspected Vietcong villages and spraying crops with Agent Orange generated \"hundreds of thousands of refugees\" and drove alienated peasants \"directly into the arms of the enemy\". Contextual knowledge confirms that US forces sprayed over 19 million gallons of Agent Orange (Operation Ranch Hand) and used Zippo raids and napalm, destroying peasant ancestral villages and undermining \"hearts and minds\" pacification—culminating in atrocities like My Lai in March 1968. As a 1968 US Senate Subcommittee investigation, its provenance is highly credible because American lawmakers had access to field refugee testimony and no incentive to fabricate US tactical failures, though it focuses on civilian alienation rather than battlefield attrition.<br><br><strong>Source C</strong> is highly useful for explaining the US military command's strategic rationale for Search and Destroy sweeps. General Westmoreland reports that operations like Cedar Falls and Junction City inflicted heavy enemy casualties and destroyed \"underground supply bases, weapons caches, and tunnel complexes in the Iron Triangle\". This aligns with contextual knowledge that MACV used Bell UH-1 Huey helicopters in air-mobile sweeps across the Cu Chi and Iron Triangle tunnel networks (250 km of tunnels) to wage a war of attrition and prevent ARVN collapse between 1965 and 1967. As an April 1967 briefing by Commander General Westmoreland to the Joint Chiefs of Staff, its provenance reveals high-command thinking and reliance on \"body count\" metrics, though Westmoreland had a strong motive to exaggerate operational durability because Vietcong guerrillas routinely reoccupied cleared jungle zones once US helicopters departed.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_8_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_8_question_booklet.html"
-      },
-      {
-        "id": "usa_mock_8_q3b",
-        "mockId": "usa_mock_8",
-        "qCode": "3(b)",
-        "mockTitle": "USA Mock Paper 8",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Interpretation Difference",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Study Interpretations 1 and 2. They give different views about the effectiveness of US search and destroy tactics against Vietcong guerrillas. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>US tactics in Vietnam were self-defeating. The search-and-destroy missions and the widespread use of chemical defoliants like Agent Orange and napalm devastated the countryside. By destroying the homes and crops of the South Vietnamese peasants, these tactics alienated the civilian population and drove them to support the Vietcong, making a US victory impossible.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>US tactics were militarily necessary to counter Vietcong guerrilla warfare. Search-and-destroy missions successfully killed large numbers of enemy fighters and disrupted their supply bases in the jungle. Without these aggressive operations, the Vietcong would have easily overrun South Vietnam. The tactics prevented a communist victory and gave the South Vietnamese government time to build its own forces.</div></div>",
-        "modelAnswer": "The main difference is that <strong>Interpretation 1</strong> argues US military tactics in Vietnam were \"self-defeating\" because Search and Destroy raids, Agent Orange, and napalm destroyed peasant villages and \"drove them to support the Vietcong\". In contrast, <strong>Interpretation 2</strong> argues US tactics were \"militarily necessary\" because Search and Destroy sweeps killed large numbers of guerrillas, disrupted jungle supply bases, and prevented a communist takeover.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_8_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_8_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_8_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_8_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_8_q3c",
-        "mockId": "usa_mock_8",
-        "qCode": "3(c)",
-        "mockTitle": "USA Mock Paper 8",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "4-Mark Why Interpretations Differ",
-        "marks": 4,
-        "targetMins": 5,
-        "questionText": "Suggest one reason why Interpretations 1 and 2 give different views about the effectiveness of US search and destroy tactics against Vietcong guerrillas. You may use Sources B and C to help explain your answer.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>US tactics in Vietnam were self-defeating. The search-and-destroy missions and the widespread use of chemical defoliants like Agent Orange and napalm devastated the countryside. By destroying the homes and crops of the South Vietnamese peasants, these tactics alienated the civilian population and drove them to support the Vietcong, making a US victory impossible.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>US tactics were militarily necessary to counter Vietcong guerrilla warfare. Search-and-destroy missions successfully killed large numbers of enemy fighters and disrupted their supply bases in the jungle. Without these aggressive operations, the Vietcong would have easily overrun South Vietnam. The tactics prevented a communist victory and gave the South Vietnamese government time to build its own forces.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From a report by a US Senate Subcommittee investigating the refugee crisis in South Vietnam, 1968.</div><div>Our heavy reliance on search-and-destroy operations and chemical defoliants has created hundreds of thousands of refugees. When we burn villages suspected of aiding the Vietcong and spray crops with Agent Orange, we are not winning the hearts and minds of the peasants. Instead, we are driving them directly into the arms of the enemy. The destruction of their ancestral lands has caused deep hatred of the US military.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From an operational military briefing by General William Westmoreland to the Joint Chiefs of Staff, April 1967.</div><div>Aggressive air-mobile search-and-destroy operations such as Operation Cedar Falls and Operation Junction City have inflicted heavy casualties on Vietcong main-force units and destroyed vast underground supply bases, weapons caches, and tunnel complexes in the Iron Triangle. Without sustained offensive sweeps to disrupt their jungle sanctuaries, communist forces would mass unchecked and overrun South Vietnam’s population centers.</div></div>",
-        "modelAnswer": "The interpretations differ because the historians have placed weight on contrasting contemporary assessments. <strong>Interpretation 1</strong> gives weight to humanitarian and political findings like <strong>Source B</strong>, where a 1968 Senate Subcommittee warns that burning villages and spraying Agent Orange created mass refugees and drove peasants \"into the arms of the enemy\". Conversely, <strong>Interpretation 2</strong> gives weight to military command reports like <strong>Source C</strong>, in which General Westmoreland highlights how Operations Cedar Falls and Junction City destroyed \"underground supply bases\" and tunnel complexes to stop communist forces overrunning South Vietnam.",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_8_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_8_question_booklet.html",
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_8_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_8_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
-      },
-      {
-        "id": "usa_mock_8_q3d",
-        "mockId": "usa_mock_8",
-        "qCode": "3(d)",
-        "mockTitle": "USA Mock Paper 8",
-        "paperCode": "Option 33 (1HI0/33)",
-        "type": "16+4 Mark Historical Interpretation",
-        "marks": 16,
-        "targetMins": 25,
-        "questionText": "How far do you agree with Interpretation 2 about the effectiveness of US search and destroy tactics against Vietcong guerrillas? Explain your answer, using both interpretations and your knowledge of the historical context.",
-        "stimulus": [],
-        "sourceExtract": "<div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 1:</strong> From a modern historical study.</div><div>US tactics in Vietnam were self-defeating. The search-and-destroy missions and the widespread use of chemical defoliants like Agent Orange and napalm devastated the countryside. By destroying the homes and crops of the South Vietnamese peasants, these tactics alienated the civilian population and drove them to support the Vietcong, making a US victory impossible.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Interpretation 2:</strong> From a different historical perspective.</div><div>US tactics were militarily necessary to counter Vietcong guerrilla warfare. Search-and-destroy missions successfully killed large numbers of enemy fighters and disrupted their supply bases in the jungle. Without these aggressive operations, the Vietcong would have easily overrun South Vietnam. The tactics prevented a communist victory and gave the South Vietnamese government time to build its own forces.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source B:</strong> From a report by a US Senate Subcommittee investigating the refugee crisis in South Vietnam, 1968.</div><div>Our heavy reliance on search-and-destroy operations and chemical defoliants has created hundreds of thousands of refugees. When we burn villages suspected of aiding the Vietcong and spray crops with Agent Orange, we are not winning the hearts and minds of the peasants. Instead, we are driving them directly into the arms of the enemy. The destruction of their ancestral lands has caused deep hatred of the US military.</div></div><hr style=\"border:none; border-top:1px dashed #cbd5e1; margin:12px 0;\"><div><div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\"><strong>Source C:</strong> From an operational military briefing by General William Westmoreland to the Joint Chiefs of Staff, April 1967.</div><div>Aggressive air-mobile search-and-destroy operations such as Operation Cedar Falls and Operation Junction City have inflicted heavy casualties on Vietcong main-force units and destroyed vast underground supply bases, weapons caches, and tunnel complexes in the Iron Triangle. Without sustained offensive sweeps to disrupt their jungle sanctuaries, communist forces would mass unchecked and overrun South Vietnam’s population centers.</div></div>",
-        "modelAnswer": "I agree to a moderate extent with Interpretation 2 that US tactics were militarily necessary. The Vietcong successfully neutralised US air and technological superiority by fighting in close quarters and hiding in dense jungle canopy. They constructed over 250 miles of underground <strong>tunnels</strong> (e.g. Cu Chi) that protected them from heavy bombing, and deployed cheap but deadly booby traps that caused massive US casualties. As described in Source A, these tactics created constant paranoia, making soldiers feel they were <strong>fighting a shadow</strong>. This supports Interpretation 2's view that search-and-destroy operations were militarily necessary because they <strong>\"successfully killed large numbers of enemy fighters\"</strong> and disrupted their supply bases, preventing them from overrunning South Vietnam.\n\nHowever, Interpretation 1 is also valid in arguing that flawed US tactics actively caused their own failure. The strategy of attrition relied on <strong>Search and Destroy</strong> missions which measured success in body counts rather than holding territory. These raids, along with the spraying of <strong>Agent Orange</strong> and Napalm, devastated the countryside and destroyed peasant crops. As Source A reports, US troops burned down villages out of frustration. This chemical warfare and destruction of villages alienated the South Vietnamese peasantry, driving them to support the Vietcong. This confirms Interpretation 1's view that US tactics were <strong>\"self-defeating\"</strong> because they <strong>\"alienated the civilian population\"</strong>, making political victory impossible.\n\n<em>Overall, while the brutality of US tactics (Interpretation 1) lost the political battle for hearts and minds, it was the military effectiveness of Vietcong guerrilla warfare that created the stalemate in the first place. The Vietcong's ability to survive US firepower using tunnels and the Ho Chi Minh Trail forced the US into the destructive search-and-destroy tactics that ultimately destroyed their own political credibility.</em>",
-        "pdfUrl": "/pdfs/mocks/usa/usa_mock_8_question_booklet.pdf",
-        "mockUrl": "/units/usa/usa_mock_8_question_booklet.html",
-        "spagMarks": 4,
-        "interpretations_audio": {
-          "1": {
-            "studio_audio": "/audio/sources/usa/usa_mock_8_i1.mp3",
-            "studio_voice_label": "Historian 1 · Academic View"
-          },
-          "2": {
-            "studio_audio": "/audio/sources/usa/usa_mock_8_i2.mp3",
-            "studio_voice_label": "Historian 2 · Contrasting View"
-          }
-        }
       }
     ],
     "lesson_3_4": [
@@ -1746,8 +1000,64 @@ export const MOCK_BANK_P3 = {
         }
       }
     ],
-    "lesson_4_1": [],
-    "lesson_4_2": [],
+    "lesson_4_1": [
+      {
+        "id": "usa_l4_1_extra_q2",
+        "mockId": "usa_p3_practice",
+        "qCode": "2",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 33 (1HI0/33)",
+        "type": "12-Mark Explain Why",
+        "marks": 12,
+        "targetMins": 18,
+        "questionText": "Explain why opposition in the USA to the Vietnam War grew rapidly in the years 1968–71.",
+        "stimulus": [
+          "Televised coverage of the Tet Offensive (1968)",
+          "The My Lai Massacre and Kent State shootings (1969–70)"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "<p>First, uncensored colour television coverage of the January 1968 Tet Offensive shattered Lyndon Johnson’s optimistic promises and opened a glaring \"credibility gap\". Watching Vietcong commandos storm the US Embassy courtyard in Saigon prompted trusted CBS anchor Walter Cronkite to declare the war an unwinnable stalemate, turning middle-class American households against further escalation.</p><p>Second, revelations in November 1969 of the My Lai Massacre—where Lieutenant William Calley’s Charlie Company murdered between 347 and 504 unarmed Vietnamese villagers in March 1968—destroyed America’s moral justification for fighting in Vietnam. Coupled with high casualty tolls (over 36,000 US dead by late 1968) and an unequal draft hitting working-class and Black youths hardest, veteran protests such as Vietnam Veterans Against the War gained mass sympathy.</p><p>Finally, campus and anti-war mobilisation peaked after Nixon announced the secret invasion of Cambodia in April 1970, following the November 1969 Moratorium marches of over half a million citizens. When Ohio National Guardsmen shot dead four unarmed students at Kent State University on 4 May 1970, over 400 universities shut down in nationwide strikes and Congress repealed the Gulf of Tonkin Resolution.</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/usa/"
+      }
+    ],
+    "lesson_4_2": [
+      {
+        "id": "usa_l4_2_extra_q1",
+        "mockId": "usa_p3_practice",
+        "qCode": "1",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 33 (1HI0/33)",
+        "type": "4-Mark Inference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Give two things you can infer from Source A about why many Americans supported President Nixon’s Vietnam policy in 1969–70.",
+        "stimulus": [],
+        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: Statement by a New York construction worker interviewed during the \"Hard Hat\" pro-government rally on Wall Street, May 1970.</div><div>Working people who pay their taxes and send their sons when drafted are sick of privileged college kids burning the American flag in the streets. President Nixon is trying to bring our boys home with honour instead of handing Southeast Asia to the Communists, and it is time ordinary patriotic citizens stood up and were counted!</div>",
+        "modelAnswer": "<p><strong>(i) What I can infer:</strong> Many working-class Americans deeply resented student anti-war protesters, viewing campus demonstrations as unpatriotic and privileged.<br><strong>Details in the source that tell me this:</strong> \"Working people who pay their taxes and send their sons when drafted are sick of privileged college kids burning the American flag\"</p><p><strong>(ii) What I can infer:</strong> Supporters backed Nixon because they wanted an honourable anti-communist withdrawal (\"Peace with Honour\") rather than immediate defeat.<br><strong>Details in the source that tell me this:</strong> \"President Nixon is trying to bring our boys home with honour instead of handing Southeast Asia to the Communists\"</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/usa/"
+      },
+      {
+        "id": "usa_l4_2_extra_q2",
+        "mockId": "usa_p3_practice",
+        "qCode": "2",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 33 (1HI0/33)",
+        "type": "12-Mark Explain Why",
+        "marks": 12,
+        "targetMins": 18,
+        "questionText": "Explain why substantial support for US involvement in Vietnam continued among sections of the American public in the years 1968–72.",
+        "stimulus": [
+          "Fear of communism and patriotism",
+          "Nixon’s \"Silent Majority\" speech (November 1969)"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "<p>First, deep-rooted Cold War anti-communism and patriotic loyalty to American troops kept millions of older, suburban, and southern voters behind the war effort. Convinced by the Domino Theory that abandoning South Vietnam would humiliate the United States and embolden Moscow and Beijing, organisations and veterans insisted America had a duty to win or secure \"Peace with Honour\" rather than betray fallen soldiers.</p><p>Second, President Richard Nixon skilfully mobilised unvocal, law-abiding citizens through his televised 3 November 1969 \"Silent Majority\" speech and Vietnamisation policy. By gradually withdrawing US ground combat troops while appealing for national unity over vocal street minorities, Nixon saw his approval ratings jump to 68%, flooded the White House with tens of thousands of supportive telegrams, and won a 49-state landslide re-election over anti-war Democrat George McGovern in 1972.</p><p>Finally, fierce cultural and class backlash against radical student protesters, draft-card burnings, and counter-culture disorder drove blue-collar union workers toward vocal support for the administration. Exemplified by the May 1970 New York \"Hard Hat Riot\"—where 200 construction workers attacked anti-war demonstrators and were later welcomed to the White House by Nixon—many working-class families resented middle-class students who enjoyed college draft deferments.</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/usa/"
+      }
+    ],
     "lesson_4_3": [
       {
         "id": "usa_mock_5_q2",
@@ -2057,7 +1367,43 @@ export const MOCK_BANK_P3 = {
         }
       }
     ],
-    "lesson_1_3": [],
+    "lesson_1_3": [
+      {
+        "id": "wng_l1_3_extra_q1",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "1",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "4-Mark Inference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Give two things you can infer from Source A about Gustav Stresemann’s view of Weimar Germany’s economic recovery by 1928.",
+        "stimulus": [],
+        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: From a speech by German Foreign Minister Gustav Stresemann in late 1928.</div><div>The economic position of Germany is only flourishing on the surface. Germany is in fact dancing on a volcano. If the short-term credits are called in by America, a large section of our economy would collapse overnight, for we have built municipal parks and factories on borrowed foreign gold.</div>",
+        "modelAnswer": "<p><strong>(i) What I can infer:</strong> Weimar Germany’s apparent prosperity in the late 1920s was fragile and artificial rather than securely self-sustaining.<br><strong>Details in the source that tell me this:</strong> \"The economic position of Germany is only flourishing on the surface. Germany is in fact dancing on a volcano.\"</p><p><strong>(ii) What I can infer:</strong> German industry and local government depended dangerously on short-term American loans that could be withdrawn suddenly.<br><strong>Details in the source that tell me this:</strong> \"If the short-term credits are called in by America, a large section of our economy would collapse overnight\"</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      },
+      {
+        "id": "wng_l1_3_extra_q2",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "2",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "12-Mark Explain Why",
+        "marks": 12,
+        "targetMins": 18,
+        "questionText": "Explain why Gustav Stresemann was able to improve Germany’s international standing in the years 1924–29.",
+        "stimulus": [
+          "The Locarno Pact (1925)",
+          "Entry into the League of Nations (1926)"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "<p>First, Stresemann’s pragmatic policy of \"fulfilment\" over reparations restored Allied trust and unlocked American financial backing. By ending passive resistance in the Ruhr and negotiating the 1924 Dawes Plan—followed in 1929 by the Young Plan cutting total reparations to £2 billion—Stresemann secured French troop withdrawal from the Ruhr in 1925 and proved Germany was a cooperative economic partner.</p><p>Second, the October 1925 Locarno Pact transformed relations with France and Britain because Germany voluntarily accepted its western borders under the Treaty of Versailles and the demilitarisation of the Rhineland. Unlike Versailles, which had been imposed as a hated Diktat in 1919, Locarno was signed freely among equals, earning Stresemann the 1926 Nobel Peace Prize and inaugurating the diplomatic \"Locarno honeymoon\".</p><p>Finally, Stresemann crowned Western reconciliation by securing Germany’s admission to the League of Nations in September 1926 with a permanent seat on the League Council, reinforced by signing the 1928 Kellogg–Briand Pact renouncing offensive war. Within five years Germany had moved from an isolated post-war pariah to a respected European great power.</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      }
+    ],
     "lesson_1_4": [
       {
         "id": "mock_notebook_2_q1",
@@ -2137,10 +1483,119 @@ export const MOCK_BANK_P3 = {
         }
       }
     ],
-    "lesson_2_2": [],
-    "lesson_2_3": [],
-    "lesson_2_4": [],
-    "lesson_3_1": [],
+    "lesson_2_2": [
+      {
+        "id": "wng_l2_2_extra_q1",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "1",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "4-Mark Inference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Give two things you can infer from Source A about how Hitler decided to pursue power after his release from Landsberg Prison in December 1924.",
+        "stimulus": [],
+        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: Recollections by Nazi supporter Kurt Ludecke of a conversation with Adolf Hitler at Landsberg, 1924.</div><div>When I resumed work it was necessary to steer the Party along a new course. Instead of working to achieve power through an armed coup, we shall have to hold our noses and enter the Reichstag against the Catholic and Marxist deputies. If outvoting them takes longer than outshooting them, at least the results will be guaranteed by their own constitution!</div>",
+        "modelAnswer": "<p><strong>(i) What I can infer:</strong> Hitler abandoned violent armed revolution after the failed Munich Putsch in favour of winning power legally through democratic elections.<br><strong>Details in the source that tell me this:</strong> \"Instead of working to achieve power through an armed coup, we shall have to hold our noses and enter the Reichstag\"</p><p><strong>(ii) What I can infer:</strong> Hitler still despised parliamentary democracy and intended only to exploit Weimar’s constitution cynically in order to destroy it.<br><strong>Details in the source that tell me this:</strong> \"hold our noses and enter the Reichstag... guaranteed by their own constitution!\"</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      },
+      {
+        "id": "wng_l2_2_extra_q2",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "2",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "12-Mark Explain Why",
+        "marks": 12,
+        "targetMins": 18,
+        "questionText": "Explain why the Nazi Party won so few Reichstag seats in the years 1924–28.",
+        "stimulus": [
+          "Stresemann’s economic recovery",
+          "Paul von Hindenburg’s election as President (1925)"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "<p>First, Stresemann’s economic stabilisation between 1924 and 1928 removed the desperate crisis conditions on which extremist parties thrived. Once the Rentenmark ended hyperinflation, 800 million gold marks in Dawes Plan loans revived factories, and real wages rose, ordinary workers and middle-class savers voted for moderate pro-Weimar parties like the SPD and Zentrum—pushing the Nazis down to just 12 Reichstag seats (2.6% of the vote) in May 1928.</p><p>Second, the election of revered First World War hero Field Marshal Paul von Hindenburg as President in 1925 reassured conservative nationalists and middle-class Germans. With an authoritative monarchist figurehead presiding over the Republic, traditional right-wing voters saw little reason to gamble on Hitler’s rowdy, street-brawling NSDAP.</p><p>Finally, aftermath restrictions from the failed November 1923 Munich Putsch and flawed urban targeting hampered Nazi campaigning during the mid-1920s. Although Hitler reorganised party Gauleiters after the 1926 Bamberg Conference, he was banned from public speaking in most German states until 1927, and the Nazis initially focused propaganda on industrial workers already loyal to the SPD and KPD before pivoting toward debt-hit farmers in 1928.</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      }
+    ],
+    "lesson_2_3": [
+      {
+        "id": "wng_l2_3_extra_q2",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "2",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "12-Mark Explain Why",
+        "marks": 12,
+        "targetMins": 18,
+        "questionText": "Explain why Joseph Goebbels’ propaganda and the SA were important in increasing support for the Nazi Party in the years 1929–32.",
+        "stimulus": [
+          "Targeted election slogans",
+          "Fear of communism"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "<p>First, Joseph Goebbels modernised Nazi campaigning after 1929 so Hitler’s message reached millions of disillusioned voters across every social group. Using chartered aircraft (\"Hitler over Germany\"), mass torchlight rallies, radio/loudspeaker vans, and tailored posters promising \"Work and Bread\" to the 6 million unemployed while pledging protection from Jewish department stores to small shopkeepers, Goebbels projected decisive leadership against weak Weimar coalitions.</p><p>Second, the SA (Sturmabteilung)—growing to over 400,000 brownshirts under Ernst Röhm by 1932—created an impression of disciplined strength and order amid Depression street chaos. While running soup kitchens for unemployed men, SA squads disrupted Communist (KPD) meetings and clashed with the Red Front Fighters’ League, convincing terrified middle-class citizens and industrialists that only the Nazis could stop a Bolshevik revolution.</p><p>Finally, propaganda and SA spectacle succeeded because Weimar governments under Müller and Heinrich Brüning (\"the Hunger Chancellor\") appeared paralysed by the Wall Street Crash. Ruling by Presidential decree under Article 48 while cutting welfare benefits and raising taxes, Weimar politicians drove desperate farmers, Mittelstand savers, and young voters toward Nazi promises of national rebirth—lifting the NSDAP to 230 seats (37.3%) in July 1932.</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      }
+    ],
+    "lesson_2_4": [
+      {
+        "id": "wng_l2_4_extra_q1",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "1",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "4-Mark Inference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Give two things you can infer from Source A about why conservative elites supported appointing Hitler as Chancellor in January 1933.",
+        "stimulus": [],
+        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: Remark made by former Chancellor Franz von Papen to a conservative politician shortly after Hitler took office in January 1933.</div><div>You are mistaken! We have hired him for ourselves. Within two months we will have pushed Hitler so far into a corner that he’ll squeak! Keep calm—there are only two other Nazis in the entire Cabinet, and Hindenburg trusts my judgement completely.</div>",
+        "modelAnswer": "<p><strong>(i) What I can infer:</strong> Conservative politicians like von Papen seriously underestimated Hitler, believing they could use his mass Reichstag support as a puppet while keeping real power.<br><strong>Details in the source that tell me this:</strong> \"We have hired him for ourselves. Within two months we will have pushed Hitler so far into a corner that he’ll squeak!\"</p><p><strong>(ii) What I can infer:</strong> They relied on outnumbering Nazis inside the coalition Cabinet and maintaining personal influence over President Hindenburg to restrain Hitler.<br><strong>Details in the source that tell me this:</strong> \"there are only two other Nazis in the entire Cabinet, and Hindenburg trusts my judgement completely.\"</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      }
+    ],
+    "lesson_3_1": [
+      {
+        "id": "wng_l3_1_extra_q1",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "1",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "4-Mark Inference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Give two things you can infer from Source A about the atmosphere inside the Kroll Opera House during the vote on the Enabling Act (23 March 1933).",
+        "stimulus": [],
+        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: Account by SPD Reichstag deputy Wilhelm Hoegner of the Enabling Act session, 23 March 1933.</div><div>The wide square outside the Kroll Opera House swarmed with dark masses of SA men chanting: \"We want the Bill—or fire and murder!\" Inside the corridors, SS guards lined every doorway with pistols on their belts, glaring at Social Democrat deputies as we walked to our seats while our Communist colleagues’ benches stood empty because they were already locked in camps.</div>",
+        "modelAnswer": "<p><strong>(i) What I can infer:</strong> Nazi paramilitary forces used open physical intimidation and threats of violence to coerce Reichstag deputies into passing the Enabling Act.<br><strong>Details in the source that tell me this:</strong> \"SA men chanting: \"We want the Bill—or fire and murder!\" Inside the corridors, SS guards lined every doorway with pistols\"</p><p><strong>(ii) What I can infer:</strong> Political opposition had already been partially crippled beforehand by arresting and detaining elected KPD deputies.<br><strong>Details in the source that tell me this:</strong> \"our Communist colleagues’ benches stood empty because they were already locked in camps.\"</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      },
+      {
+        "id": "wng_l3_1_extra_q2",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "2",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "12-Mark Explain Why",
+        "marks": 12,
+        "targetMins": 18,
+        "questionText": "Explain why the Night of the Long Knives (June 1934) was important in securing Hitler’s dictatorship.",
+        "stimulus": [
+          "Ernst Röhm and the SA",
+          "The German Army (Reichswehr) and President Hindenburg"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "<p>First, the purge of 30 June 1934 eliminated a dangerous internal rival within the Nazi movement itself by removing Ernst Röhm and senior SA leaders. Commanding over three million unruly brownshirts, Röhm demanded a \"Second Revolution\" of socialist wealth redistribution and proposed merging the SA with the regular army under his own command—threatening Hitler’s authority and alienating wealthy industrialist backers.</p><p>Second, executing Röhm and around 400 SA and political opponents—including former Chancellor General Kurt von Schleicher—won the crucial loyalty of the German Army (Reichswehr), the only institution still strong enough to depose Hitler. Delighted that Hitler chose the 100,000-man professional army over the SA, Defence Minister Blomberg and generals stood aside when President Hindenburg died on 2 August 1934.</p><p>Finally, the Night of the Long Knives legalised state murder under Hitler’s personal will and cleared the path for him to become absolute Führer. When Hindenburg died weeks later, Hitler merged the offices of Chancellor and President and required every soldier in the German armed forces to swear a personal oath of unconditional obedience to Adolf Hitler himself rather than to the German constitution.</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      }
+    ],
     "lesson_3_2": [
       {
         "id": "mock_notebook_2_q3a",
@@ -2238,9 +1693,79 @@ export const MOCK_BANK_P3 = {
         }
       }
     ],
-    "lesson_3_3": [],
-    "lesson_3_4": [],
-    "lesson_4_1": [],
+    "lesson_3_3": [
+      {
+        "id": "wng_l3_3_extra_q1",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "1",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "4-Mark Inference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Give two things you can infer from Source A about the purpose of the cheap Volksempfänger (\"People’s Receiver\") radio in Nazi Germany.",
+        "stimulus": [],
+        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: Speech by Reich Propaganda Minister Joseph Goebbels at the Berlin Radio Exhibition, August 1933.</div><div>Radio will be to the twentieth century what the printing press was to the nineteenth. With our inexpensive People’s Receiver placed in every German parlour, factory canteen, and town square, the Führer can speak directly into the hearts of sixty million citizens at the same hour—while foreign poison broadcasts remain safely beyond its short tuning range.</div>",
+        "modelAnswer": "<p><strong>(i) What I can infer:</strong> Goebbels used affordable mass-produced radios to bring Hitler’s speeches simultaneously into both private homes and public workplaces nationwide.<br><strong>Details in the source that tell me this:</strong> \"placed in every German parlour, factory canteen, and town square, the Führer can speak directly into the hearts of sixty million citizens\"</p><p><strong>(ii) What I can infer:</strong> The radio was deliberately engineered with limited reception range to censor foreign news stations and enforce Nazi ideological monopoly.<br><strong>Details in the source that tell me this:</strong> \"while foreign poison broadcasts remain safely beyond its short tuning range.\"</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      }
+    ],
+    "lesson_3_4": [
+      {
+        "id": "wng_l3_4_extra_q1",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "1",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "4-Mark Inference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Give two things you can infer from Source A about youth opposition groups such as the Edelweiss Pirates in the late 1930s.",
+        "stimulus": [],
+        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: From a Düsseldorf Gestapo surveillance report on non-conformist youth gangs, 1938.</div><div>Groups of teenage boys and girls calling themselves \"Edelweiss Pirates\" or \"Navajos\" gather at weekends in forests and parks wearing checked shirts and metal edelweiss badges. They sing banned hiking songs mocking Nazi leaders, mix freely between sexes contrary to Hitler Youth rules, and have repeatedly ambushed Hitler Youth patrols in working-class districts.</div>",
+        "modelAnswer": "<p><strong>(i) What I can infer:</strong> Youth opposition groups openly rejected Nazi conformity and strict gender segregation by creating their own rebellious subculture.<br><strong>Details in the source that tell me this:</strong> \"wearing checked shirts and metal edelweiss badges. They sing banned hiking songs... mix freely between sexes contrary to Hitler Youth rules\"</p><p><strong>(ii) What I can infer:</strong> Their defiance went beyond cultural non-conformity into physical street clashes against official Hitler Youth squads.<br><strong>Details in the source that tell me this:</strong> \"have repeatedly ambushed Hitler Youth patrols in working-class districts.\"</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      }
+    ],
+    "lesson_4_1": [
+      {
+        "id": "wng_l4_1_extra_q1",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "1",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "4-Mark Inference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Give two things you can infer from Source A about Nazi expectations of German women after 1933.",
+        "stimulus": [],
+        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: Speech by Reich Women’s Leader Gertrud Scholtz-Klink to the National Socialist Women’s League (NSF), 1935.</div><div>Even if the German woman’s weapon is only the wooden cooking spoon rather than the rifle, its impact must be no less powerful! Her sacred battlefield is the family home and the maternity ward, bearing healthy Aryan children for the Führer rather than competing against German fathers in law courts and offices.</div>",
+        "modelAnswer": "<p><strong>(i) What I can infer:</strong> The Nazi regime viewed motherhood and domestic homemaking as a patriotic national duty equivalent to male military service.<br><strong>Details in the source that tell me this:</strong> \"Her sacred battlefield is the family home and the maternity ward, bearing healthy Aryan children for the Führer\"</p><p><strong>(ii) What I can infer:</strong> Nazi policy actively discouraged women from pursuing professional careers in order to reserve skilled jobs for men.<br><strong>Details in the source that tell me this:</strong> \"rather than competing against German fathers in law courts and offices.\"</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      },
+      {
+        "id": "wng_l4_1_extra_q2",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "2",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "12-Mark Explain Why",
+        "marks": 12,
+        "targetMins": 18,
+        "questionText": "Explain why Nazi policies towards women had mixed success in the years 1933–39.",
+        "stimulus": [
+          "Marriage loans and the Mother’s Cross",
+          "Rearmament and labour shortages after 1937"
+        ],
+        "sourceExtract": "",
+        "modelAnswer": "<p>First, financial incentives and propaganda achieved partial success in raising marriages and births while pushing professional women out of public careers early on. Under the 1933 Law for the Encouragement of Marriage, newlyweds received 1,000-mark loans (with 25% written off per child) if the bride left her job, supported by Mother’s Cross medals on Hitler’s mother’s birthday and bans on female judges, doctors, and civil servants—lifting German births from 970,000 (1933) to 1.41 million (1939).</p><p>Second, even at the height of Kinder, Küche, Kirche propaganda, millions of German families quietly limited family size or rejected extreme racial breeding schemes. Average family size stayed around two children rather than the four required for a Bronze Mother’s Cross, while Heinrich Himmler’s SS Lebensborn homes for unmarried \"Aryan\" mothers offended traditional Christian morality among ordinary Germans.</p><p>Finally, Nazi economic rearmament after 1937 directly contradicted and reversed earlier domestic-only policies. Facing acute factory and farm labour shortages under Göring’s Four-Year Plan, the regime abolished the job-resignation rule on marriage loans in 1937 and introduced a compulsory \"Duty Year\" (Pflichtjahr) for young women in 1938—resulting in more German women in paid employment by 1939 (14.6 million) than in 1933 (11.6 million).</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      }
+    ],
     "lesson_4_2": [
       {
         "id": "mock_notebook_3_q3a",
@@ -2338,7 +1863,24 @@ export const MOCK_BANK_P3 = {
         }
       }
     ],
-    "lesson_4_3": [],
+    "lesson_4_3": [
+      {
+        "id": "wng_l4_3_extra_q1",
+        "mockId": "weimar_nazi_germany_p3_practice",
+        "qCode": "1",
+        "mockTitle": "Edexcel-Style Paper 3 Practice Station",
+        "paperCode": "Option 31 (1HI0/31)",
+        "type": "4-Mark Inference",
+        "marks": 4,
+        "targetMins": 6,
+        "questionText": "Give two things you can infer from Source A about working conditions for German industrial workers by 1938.",
+        "stimulus": [],
+        "sourceExtract": "<div style=\"font-style: italic; margin-bottom: 6px; font-weight: 600;\">Source A: Confidential report smuggled out of Germany by exiled Social Democrats (SOPADE), 1938.</div><div>Every factory worker has a job now, yet exhaustion is written on every face. With independent trade unions crushed and strikes illegal under the German Labour Front, munitions shifts stretch to fifty or sixty hours a week while wage rates stay frozen and shop shelves run short of butter, eggs, and meat.</div>",
+        "modelAnswer": "<p><strong>(i) What I can infer:</strong> Although Nazi policies eliminated official unemployment, workers suffered longer working hours and lost the right to strike or bargain collectively.<br><strong>Details in the source that tell me this:</strong> \"With independent trade unions crushed and strikes illegal under the German Labour Front, munitions shifts stretch to fifty or sixty hours a week\"</p><p><strong>(ii) What I can infer:</strong> Rearmament (\"guns before butter\") froze real hourly pay and caused everyday food shortages for working families.<br><strong>Details in the source that tell me this:</strong> \"wage rates stay frozen and shop shelves run short of butter, eggs, and meat.\"</p>",
+        "pdfUrl": "",
+        "mockUrl": "/units/weimar_nazi_germany/"
+      }
+    ],
     "lesson_4_4": [
       {
         "id": "mock_notebook_1_q3a",

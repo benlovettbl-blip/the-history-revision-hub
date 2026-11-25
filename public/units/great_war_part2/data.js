@@ -564,9 +564,9 @@ export default {
         {
           "id": "gw2_l1_q2_explain_why",
           "type": "extended_writing",
-          "tariff": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
+          "tariff": "Enquiry Writing Task [12 marks • 15 mins]",
           "title": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "question": "Explain why young British men volunteered in such massive numbers in the autumn of 1914.",
+          "question": "Explain why young British men volunteered in such massive numbers in the autumn of 1914. [12 marks]",
           "stimulus": [
             "The moral outrage surrounding the German invasion of Belgium (1914)",
             "The creation of civic Pals Battalions (e.g. Pompey Pals)"
@@ -1858,9 +1858,9 @@ export default {
         {
           "id": "gw2_l2_q1_describe_two_features",
           "type": "two_features",
-          "tariff": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
+          "tariff": "Task A: Describe Two Features [4 marks • 5 mins]",
           "title": "Short Historical Focus • Two Key Features (2 Sentences • 5 mins)",
-          "question": "Describe two features of the trench defensive systems on the Western Front.",
+          "question": "Describe two features of the trench defensive systems on the Western Front. [4 marks]",
           "feature_1": {
             "prompt": "Feature 1: Identify one structural feature of the trench layout and provide supporting historical detail.",
             "starter": "One key feature of the trench defensive systems was... Specifically, this meant that...",
@@ -1878,9 +1878,9 @@ export default {
         {
           "id": "gw2_l2_q2_explain_why_somme",
           "type": "extended_writing",
-          "tariff": "Extended Historical Writing • Causal Explanation (2 Paragraphs • 10 mins)",
+          "tariff": "Task B: Explain Why [8 marks • 10 mins]",
           "title": "Extended Historical Writing • Causal Explanation (2 Paragraphs • 10 mins)",
-          "question": "Explain why the First Day of the Somme (1 July 1916) resulted in catastrophic British casualties.",
+          "question": "Explain why the First Day of the Somme (1 July 1916) resulted in catastrophic British casualties. [8 marks]",
           "stimulus": [
             "The failure of the 7-day artillery bombardment to cut German barbed wire",
             "German soldiers sheltering in deep underground concrete dugouts"
@@ -2493,17 +2493,17 @@ export default {
         },
         {
           "stage": 4,
-          "question": "On what date did the British Army suffer 57,470 casualties on the first day of the Battle of the Somme?",
-          "q": "On what date did the British Army suffer 57,470 casualties on the first day of the Battle of the Somme?",
+          "question": "Why did the seven-day British artillery bombardment fail to prevent catastrophic casualties on the first day of the Somme?",
+          "q": "Why did the seven-day British artillery bombardment fail to prevent catastrophic casualties on the first day of the Somme?",
           "options": [
-            "4 August 1914",
-            "11 November 1918",
-            "28 June 1919",
-            "1 July 1916"
+            "German forces had already retreated twenty miles behind the Somme river",
+            "Heavy snowfall prevented British infantry from leaving their trenches",
+            "Shrapnel shells left German barbed wire intact and defenders survived safely in deep reinforced underground shelters",
+            "British artillery ran out of ammunition after only two hours of firing"
           ],
-          "answer": "1 July 1916",
-          "a": "1 July 1916",
-          "explanation": "On 1 July 1916, the British Army suffered 57,470 casualties, including 19,240 dead, on the bloodiest day in its military history."
+          "answer": "Shrapnel shells left German barbed wire intact and defenders survived safely in deep reinforced underground shelters",
+          "a": "Shrapnel shells left German barbed wire intact and defenders survived safely in deep reinforced underground shelters",
+          "explanation": "Despite 1.5 million shells being fired, German barbed wire remained uncut and machine-gunners emerged from deep dugouts to inflict 57,470 British casualties."
         },
         {
           "stage": 4,
@@ -3975,98 +3975,98 @@ export default {
       },
       "tasks": [
         {
-          "id": "gw2_l3_q3_contrasting_interpretations",
-          "type": "historical_interpretations",
-          "tariff": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "title": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "question": "Study Interpretations 1 and 2. How and why do they differ regarding the experiences and contributions of colonial troops in the Great War?",
-          "interpretation_1": {
-            "author": "Lord Curzon, British War Cabinet Minister, Speech at the Royal Albert Hall (1917)",
-            "badge": "Interpretation 1: The Imperial Unity Orthodoxy (1917)",
-            "text": "“The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”",
-            "extract": "“The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”"
-          },
-          "interpretation_2": {
-            "author": "David Olusoga, Modern British Historian, The World’s War (2014)",
-            "badge": "Interpretation 2: The Modern Critical Revisionism (2014)",
-            "text": "“Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”",
-            "extract": "“Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”"
-          },
-          "matrix": [
-            {
-              "col": "1. QUESTION 3(B): CONTENT & DIFFERENCE [4 MARKS]",
-              "text": "Contrast the main arguments: Curzon emphasizes voluntary devotion, mutual brotherhood, and shared imperial loyalty, whereas Olusoga emphasizes systemic racism, unequal treatment, and post-war whitewashing."
-            },
-            {
-              "col": "2. QUESTION 3(C): DIFFERENT FOCUS & EMPHASIS [4 MARKS]",
-              "text": "Explain why they differ: Curzon focuses primarily on wartime imperial mobilization and official battlefield solidarity, whereas Olusoga focuses on institutional inequality, postwar discrimination, and the erasure of colonial casualties from national memory."
-            },
-            {
-              "col": "3. HISTORICAL JUDGEMENT",
-              "text": "Evaluate which interpretation provides a more rigorous historical perspective on the reality of the Great War."
-            }
+          "id": "gw2_l3_task_a_interp_diff",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART B",
+          "tariff": "Task A: Contrasting Interpretations [4 marks • 5 mins]",
+          "title": "Task A: Contrasting Interpretations [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Difference in Views (1 Paragraph • 5 mins)",
+          "question": "Task A: Explain how Interpretations 1 and 2 differ about the experiences of colonial troops. [4 marks]",
+          "stimulus": [
+            "Interpretation 1 • Lord Curzon, British War Cabinet Minister, Speech at Royal Albert Hall (1917): “The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”",
+            "Interpretation 2 • David Olusoga, Modern British Historian, The World’s War (2014): “Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”"
           ],
-          "connectives": [
-            "Interpretation 1 emphasizes that colonial troops were treated with...",
-            "In sharp contrast, Interpretation 2 argues that their service was characterized by...",
-            "Specifically, Interpretation 1 claims that... whereas Interpretation 2 reveals that...",
-            "One primary reason why the interpretations differ is because they have a different focus...",
-            "Interpretation 1 focuses primarily on wartime imperial mobilization and battlefield camaraderie...",
-            "In contrast, Interpretation 2 focuses more on institutional racism, military hierarchies, and postwar commemoration..."
+          "hints": [
+            "Point: State clearly that the interpretations disagree on whether Empire troops experienced equal “imperial brotherhood” or systemic racial discrimination.",
+            "Interpretation 1 (Lord Curzon, 1917): Cite Curzon’s claim that Indian and Dominion troops fought “side by side with their British brothers-in-arms” out of mutual love and loyalty.",
+            "Interpretation 2 (David Olusoga, 2014): Contrast with Olusoga’s evidence of unequal pay, bans on non-white officers, floggings, and the denial of individual headstones to African dead."
           ],
-          "model_answer_b": "The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays colonial troops as voluntarily devoted to defending the Empire in a spirit of imperial brotherhood, whereas Interpretation 2 highlights that non-white troops faced systemic racism, unequal treatment, and deliberate historical erasure.<br><br>Interpretation 1 states that colonial troops \"rushed forward with magnificent devotion to defend the King-Emperor\" and claims this proved the Empire was held together by \"mutual love, loyalty, and common sacrifice\".<br><br>In contrast, Interpretation 2 argues that their treatment was \"defined by systemic racism\", pointing out that non-white soldiers were \"barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings\", with their sacrifice \"whitewashed from British national memory\".",
-          "model_answer_c": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official wartime propaganda like Source B, which celebrated the \"magnificent gallantry, loyalty, and unhesitating devotion\" of Indian troops fighting in Flanders to project imperial unity.<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains confidential War Office court records revealing that colonial soldiers were subjected to \"discriminatory pay, barred from officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers\".<br><br>Because the historians drew upon contrasting sources—wartime public propaganda versus confidential military reports detailing racial injustice—they formed opposing historical interpretations.",
-          "model_answer": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the experiences and contributions of colonial troops in the Great War. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays colonial troops as voluntarily devoted to defending the Empire in a spirit of imperial brotherhood, whereas Interpretation 2 highlights that non-white troops faced systemic racism, unequal treatment, and deliberate historical erasure.<br><br>Interpretation 1 states that colonial troops \"rushed forward with magnificent devotion to defend the King-Emperor\" and claims this proved the Empire was held together by \"mutual love, loyalty, and common sacrifice\".<br><br>In contrast, Interpretation 2 argues that their treatment was \"defined by systemic racism\", pointing out that non-white soldiers were \"barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings\", with their sacrifice \"whitewashed from British national memory\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the experiences of colonial troops. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official wartime propaganda like Source B, which celebrated the \"magnificent gallantry, loyalty, and unhesitating devotion\" of Indian troops fighting in Flanders to project imperial unity.<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains confidential War Office court records revealing that colonial soldiers were subjected to \"discriminatory pay, barred from officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers\".<br><br>Because the historians drew upon contrasting sources—wartime public propaganda versus confidential military reports detailing racial injustice—they formed opposing historical interpretations.</div>",
-          "topic": "Comparing Historical Interpretations • Contrasting Views (2 Paragraphs • 10 mins)",
-          "interp1": {
-            "author": "Lord Curzon, British War Cabinet Minister, Speech at the Royal Albert Hall (1917)",
-            "badge": "Interpretation 1: The Imperial Unity Orthodoxy (1917)",
-            "text": "“The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”",
-            "extract": "“The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”"
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Overall Difference): State how Interpretations 1 and 2 disagree about the treatment and experiences of colonial troops.",
+              "Sentence 2 (Interpretation 1): Quote or summarise Lord Curzon (1917) on loyal “imperial brotherhood”.",
+              "Sentences 3–4 (Interpretation 2): Contrast with David Olusoga (2014) on systemic racism, unequal wages, and erased memorials."
+            ],
+            "sentence_starters": [
+              "Interpretation 1 emphasizes that colonial troops were treated with...",
+              "In contrast, Interpretation 2 argues that their service was characterized by...",
+              "Specifically, Interpretation 1 claims shared brotherhood, whereas Interpretation 2 reveals..."
+            ],
+            "word_bank": [
+              "Lord Curzon (1917)",
+              "David Olusoga (2014)",
+              "Indian Army",
+              "imperial brotherhood",
+              "systemic racism",
+              "Imperial War Graves Commission",
+              "whitewashed memory"
+            ],
+            "connective_bank": [
+              "Interpretations 1 and 2 differ on...",
+              "Interpretation 1 emphasizes that...",
+              "In contrast, Interpretation 2 argues that...",
+              "Specifically, whereas Interpretation 1 claims..."
+            ]
           },
-          "interp2": {
-            "author": "David Olusoga, Modern British Historian, The World’s War (2014)",
-            "badge": "Interpretation 2: The Modern Critical Revisionism (2014)",
-            "text": "“Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”",
-            "extract": "“Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”"
+          "model_answer": "Interpretations 1 and 2 differ fundamentally about how colonial troops experienced service in the British Empire’s war effort. Interpretation 1 (Lord Curzon) portrays an idealised “imperial brotherhood”, claiming Indian and Dominion soldiers fought willingly side by side with British troops out of mutual love and loyalty. In sharp contrast, Interpretation 2 (David Olusoga) argues that four million non-white personnel faced “systemic racism”—barred from becoming officers, paid lower wages, subjected to floggings, and denied individual headstones after 1918.",
+          "model": "Interpretations 1 and 2 differ fundamentally about how colonial troops experienced service in the British Empire’s war effort. Interpretation 1 (Lord Curzon) portrays an idealised “imperial brotherhood”, claiming Indian and Dominion soldiers fought willingly side by side with British troops out of mutual love and loyalty. In sharp contrast, Interpretation 2 (David Olusoga) argues that four million non-white personnel faced “systemic racism”—barred from becoming officers, paid lower wages, subjected to floggings, and denied individual headstones after 1918."
+        },
+        {
+          "id": "gw2_l3_task_b_interp_why",
+          "type": "extended_writing",
+          "badge": "HISTORIOGRAPHICAL ANALYSIS • PART C",
+          "tariff": "Task B: Why Interpretations Differ [4 marks • 5 mins]",
+          "title": "Task B: Why Interpretations Differ [4 marks • 5 mins]",
+          "topic": "Comparing Historical Interpretations • Explaining Why Views Differ (1 Paragraph • 5 mins)",
+          "question": "Task B: Suggest one reason why Interpretations 1 and 2 differ about the role of empire soldiers. [4 marks]",
+          "stimulus": [
+            "Interpretation 1 • Lord Curzon, British War Cabinet Minister, Speech at Royal Albert Hall (1917): “The Indian Army and the troops from our dominions have rushed forward with magnificent devotion to defend the King-Emperor. Side by side with their British brothers-in-arms, they have shed their blood on the plains of Flanders, Gallipoli, and Egypt. This imperial brotherhood proves that the British Empire is held together not by force, but by mutual love, loyalty, and common sacrifice.”",
+            "Interpretation 2 • David Olusoga, Modern British Historian, The World’s War (2014): “Over four million non-white men were mobilised as combatants and labourers by Britain. Yet their treatment was defined by systemic racism. Black and Asian soldiers were barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings. After 1918, the Imperial War Graves Commission deliberately refused to give African dead individual headstones. Their sacrifice was whitewashed from British national memory.”"
+          ],
+          "hints": [
+            "Reason: Identify that the authors have completely contrasting wartime political motives versus modern archival purposes.",
+            "Lord Curzon (1917): Explain that Curzon was a senior British War Cabinet minister speaking at the Royal Albert Hall in 1917 to boost home-front morale and sustain recruitment across the Empire [3.1, 3.2].",
+            "David Olusoga (2014): Explain that Olusoga is a modern historian using declassified colonial files, soldiers’ censored letters, and Imperial War Graves Commission archives to uncover forgotten racial inequalities [3.4, 3.5]."
+          ],
+          "scaffolding": {
+            "structure_strip": [
+              "Sentence 1 (Identify Reason): State that the authors have different contexts, motives, and access to archival evidence.",
+              "Sentence 2 (Curzon’s Motive): Explain Curzon’s role in 1917 delivering public wartime propaganda to sustain Empire recruitment.",
+              "Sentences 3–4 (Olusoga’s Focus): Contrast with Olusoga writing at the 2014 centenary using declassified military and war-graves records."
+            ],
+            "sentence_starters": [
+              "One reason why Interpretations 1 and 2 differ is because they have a different purpose and source base...",
+              "Specifically, Interpretation 1 was a public wartime speech in 1917 designed to...",
+              "In contrast, Interpretation 2 was written in 2014 using declassified records to...",
+              "As a result, the authors reach different conclusions because..."
+            ],
+            "word_bank": [
+              "War Cabinet propaganda (1917)",
+              "imperial recruitment",
+              "centenary scholarship (2014)",
+              "declassified archives",
+              "censored letters",
+              "Unremembered Report"
+            ],
+            "connective_bank": [
+              "One reason why Interpretations 1 and 2 differ is because they have a different focus...",
+              "Specifically, Interpretation 1 focuses primarily on...",
+              "In contrast, Interpretation 2 focuses more on...",
+              "As a result, the authors reach different conclusions because..."
+            ]
           },
-          "source_b": {
-            "label": "Source B",
-            "title": "Source B: British War Propaganda Bureau Press Bulletin (1915)",
-            "badge": "Official Imperial Bulletin • 1915",
-            "author": "Official Government Press Release, London (1915)",
-            "text": "The King-Emperor sends his warmest greeting to the brave soldiers of the Indian Army and the overseas Dominions fighting in the trenches of Flanders. Their magnificent gallantry, loyalty, and unhesitating devotion prove to the civilized world the indissoluble bond of mutual brotherhood uniting all races of the British Empire in this righteous struggle."
-          },
-          "source1": {
-            "label": "Source B",
-            "title": "Source B: British War Propaganda Bureau Press Bulletin (1915)",
-            "badge": "Official Imperial Bulletin • 1915",
-            "author": "Official Government Press Release, London (1915)",
-            "text": "The King-Emperor sends his warmest greeting to the brave soldiers of the Indian Army and the overseas Dominions fighting in the trenches of Flanders. Their magnificent gallantry, loyalty, and unhesitating devotion prove to the civilized world the indissoluble bond of mutual brotherhood uniting all races of the British Empire in this righteous struggle."
-          },
-          "source_c": {
-            "label": "Source C",
-            "title": "Source C: Confidential War Office Report on Colonial Battalions (1918)",
-            "badge": "Confidential Military Report • 1918",
-            "author": "War Office Court of Inquiry into Discontent at Taranto Depot (December 1918)",
-            "text": "Discontent among colonial battalions at Taranto arose from deep-seated racial grievances. Soldiers of the British West Indies Regiment were subjected to discriminatory pay, denied combat parity, barred from holding commissioned officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers."
-          },
-          "source2": {
-            "label": "Source C",
-            "title": "Source C: Confidential War Office Report on Colonial Battalions (1918)",
-            "badge": "Confidential Military Report • 1918",
-            "author": "War Office Court of Inquiry into Discontent at Taranto Depot (December 1918)",
-            "text": "Discontent among colonial battalions at Taranto arose from deep-seated racial grievances. Soldiers of the British West Indies Regiment were subjected to discriminatory pay, denied combat parity, barred from holding commissioned officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers."
-          },
-          "sub_question_b": {
-            "prompt": "3(b). Study Interpretations 1 and 2. They give different views about the experiences and contributions of colonial troops in the Great War. What is the main difference between these views? Explain your answer, using details from both interpretations.",
-            "model": "The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays colonial troops as voluntarily devoted to defending the Empire in a spirit of imperial brotherhood, whereas Interpretation 2 highlights that non-white troops faced systemic racism, unequal treatment, and deliberate historical erasure.<br><br>Interpretation 1 states that colonial troops \"rushed forward with magnificent devotion to defend the King-Emperor\" and claims this proved the Empire was held together by \"mutual love, loyalty, and common sacrifice\".<br><br>In contrast, Interpretation 2 argues that their treatment was \"defined by systemic racism\", pointing out that non-white soldiers were \"barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings\", with their sacrifice \"whitewashed from British national memory\"."
-          },
-          "sub_question_c": {
-            "prompt": "3(c). Suggest one reason why Interpretations 1 and 2 give different views about the experiences of colonial troops. You may use Sources B and C to help explain your answer.",
-            "model": "One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official wartime propaganda like Source B, which celebrated the \"magnificent gallantry, loyalty, and unhesitating devotion\" of Indian troops fighting in Flanders to project imperial unity.<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains confidential War Office court records revealing that colonial soldiers were subjected to \"discriminatory pay, barred from officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers\".<br><br>Because the historians drew upon contrasting sources—wartime public propaganda versus confidential military reports detailing racial injustice—they formed opposing historical interpretations."
-          },
-          "model": "<strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (b) [4 marks]: 3(b). Study Interpretations 1 and 2. They give different views about the experiences and contributions of colonial troops in the Great War. What is the main difference between these views? Explain your answer, using details from both interpretations. [4 marks]</strong><div style=\"line-height: 1.6;\">The main difference between Interpretations 1 and 2 is that Interpretation 1 portrays colonial troops as voluntarily devoted to defending the Empire in a spirit of imperial brotherhood, whereas Interpretation 2 highlights that non-white troops faced systemic racism, unequal treatment, and deliberate historical erasure.<br><br>Interpretation 1 states that colonial troops \"rushed forward with magnificent devotion to defend the King-Emperor\" and claims this proved the Empire was held together by \"mutual love, loyalty, and common sacrifice\".<br><br>In contrast, Interpretation 2 argues that their treatment was \"defined by systemic racism\", pointing out that non-white soldiers were \"barred from becoming officers, paid a fraction of British wages, and subjected to brutal floggings\", with their sacrifice \"whitewashed from British national memory\".</div><div style=\"margin: 14px 0; border-top: 1px dashed #ddd6fe;\"></div><strong style=\"color: #6d28d9; display: block; margin-bottom: 6px;\">Part (c) [4 marks]: 3(c). Suggest one reason why Interpretations 1 and 2 give different views about the experiences of colonial troops. You may use Sources B and C to help explain your answer. [4 marks]</strong><div style=\"line-height: 1.6;\">One reason why Interpretations 1 and 2 give different views is that the authors have relied on different sources of evidence.<br><br>Interpretation 1 could be based on official wartime propaganda like Source B, which celebrated the \"magnificent gallantry, loyalty, and unhesitating devotion\" of Indian troops fighting in Flanders to project imperial unity.<br><br>On the other hand, Interpretation 2 is supported by evidence like Source C, which contains confidential War Office court records revealing that colonial soldiers were subjected to \"discriminatory pay, barred from officer rank, and ordered to perform degrading physical fatigues, including cleaning latrines for white soldiers\".<br><br>Because the historians drew upon contrasting sources—wartime public propaganda versus confidential military reports detailing racial injustice—they formed opposing historical interpretations.</div>"
+          "model_answer": "One primary reason why Interpretations 1 and 2 differ is that the authors write with completely different purposes and access to sources. Speaking at the Royal Albert Hall in 1917 at the height of total war, War Cabinet minister Lord Curzon delivered patriotic propaganda intended to boost morale and sustain imperial recruitment, so he deliberately praised loyal harmony. In contrast, writing in 2014 for the war’s centenary, historian David Olusoga examined declassified War Office files, censored Indian soldiers’ letters, and Imperial War Graves Commission records to expose racial inequalities hidden from wartime audiences.",
+          "model": "One primary reason why Interpretations 1 and 2 differ is that the authors write with completely different purposes and access to sources. Speaking at the Royal Albert Hall in 1917 at the height of total war, War Cabinet minister Lord Curzon delivered patriotic propaganda intended to boost morale and sustain imperial recruitment, so he deliberately praised loyal harmony. In contrast, writing in 2014 for the war’s centenary, historian David Olusoga examined declassified War Office files, censored Indian soldiers’ letters, and Imperial War Graves Commission records to expose racial inequalities hidden from wartime audiences."
         }
       ],
       "prologue": "While history books often focus on the Western Front, the First World War was a truly global conflict. Over four million non-white colonial soldiers from India, Africa, and the Caribbean served as combatants and labourers in France, Gallipoli, and Mesopotamia. How much of a 'World' War was it, and why were empire troops forgotten?",
@@ -5365,9 +5365,9 @@ export default {
         {
           "id": "gw2_l4_q2_narrative_account",
           "type": "narrative_account",
-          "tariff": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
+          "tariff": "Task A: Narrative Account [8 marks • 10 mins]",
           "title": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
-          "question": "Write a narrative account analysing the key events leading from the Shell Crisis of 1915 to the introduction of compulsory conscription in 1916.",
+          "question": "Write a narrative account analysing the key events leading from the Shell Crisis of 1915 to the introduction of compulsory conscription in 1916. [8 marks]",
           "stimulus": [
             "The 1915 Shell Crisis and the Daily Mail headlines",
             "The passing of the Military Service Act in January 1916"
@@ -5411,9 +5411,9 @@ export default {
         {
           "id": "gw2_l4_q3_explain_importance",
           "type": "extended_writing",
-          "tariff": "Extended Historical Explanation • Historical Importance (2 Paragraphs • 10 mins)",
+          "tariff": "Task B: Explain Importance [8 marks • 10 mins]",
           "title": "Extended Historical Explanation • Historical Importance (2 Paragraphs • 10 mins)",
-          "question": "Explain the importance of female munitions workers to the British war effort in the period 1915–1918.",
+          "question": "Explain the importance of female munitions workers to the British war effort in the period 1915–1918. [8 marks]",
           "stimulus": [
             "The production of 80% of all British weaponry and shells",
             "The dangerous working conditions and toxic jaundice (\"Canary Girls\")"
@@ -6506,17 +6506,17 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what exact date and time did the Armistice take effect on the Western Front, ending the fighting?",
-          "q": "On what exact date and time did the Armistice take effect on the Western Front, ending the fighting?",
+          "question": "Which combination of pressures caused the German war effort to collapse in autumn 1918?",
+          "q": "Which combination of pressures caused the German war effort to collapse in autumn 1918?",
           "options": [
-            "28 June 1919",
-            "11:00 am on 11 November 1918",
-            "1 July 1916",
-            "4 August 1914"
+            "A surprise Russian invasion of Berlin combined with the collapse of the Ottoman Empire",
+            "The signing of the Treaty of Versailles before any Allied troops crossed the border",
+            "A decision by Kaiser Wilhelm II to surrender Germany's colonies to Britain in 1917",
+            "The Allied Hundred Days Offensive, the naval blockade, and revolutionary mutinies and strikes at home"
           ],
-          "answer": "11:00 am on 11 November 1918",
-          "a": "11:00 am on 11 November 1918",
-          "explanation": "Hostilities officially ceased at 11:00 am on 11 November 1918 (the eleventh hour of the eleventh day of the eleventh month)."
+          "answer": "The Allied Hundred Days Offensive, the naval blockade, and revolutionary mutinies and strikes at home",
+          "a": "The Allied Hundred Days Offensive, the naval blockade, and revolutionary mutinies and strikes at home",
+          "explanation": "Battered by the Allied Hundred Days Offensive and starved by the naval blockade, Germany's war effort broke down completely when the Kiel naval mutiny sparked nationwide strikes and revolution."
         },
         {
           "stage": 1,
@@ -6534,17 +6534,17 @@ export default {
         },
         {
           "stage": 1,
-          "question": "On what date did Kaiser Wilhelm II abdicate the German imperial throne before fleeing into Dutch exile?",
-          "q": "On what date did Kaiser Wilhelm II abdicate the German imperial throne before fleeing into Dutch exile?",
+          "question": "What happened to the German monarchy as military defeat and domestic revolution swept Germany in autumn 1918?",
+          "q": "What happened to the German monarchy as military defeat and domestic revolution swept Germany in autumn 1918?",
           "options": [
-            "11 November 1918",
-            "28 June 1919",
-            "1 August 1914",
-            "9 November 1918"
+            "Kaiser Wilhelm II fled into exile in Holland as the German monarchy collapsed",
+            "Kaiser Wilhelm II personally signed the Armistice inside the railway carriage at Compiègne",
+            "The German navy defeated the British blockade and kept the Kaiser on the throne",
+            "The Big Three allowed the Kaiser to remain head of the new Weimar Republic"
           ],
-          "answer": "9 November 1918",
-          "a": "9 November 1918",
-          "explanation": "Kaiser Wilhelm II abdicated on 9 November 1918, leading to the proclamation of the German democratic republic."
+          "answer": "Kaiser Wilhelm II fled into exile in Holland as the German monarchy collapsed",
+          "a": "Kaiser Wilhelm II fled into exile in Holland as the German monarchy collapsed",
+          "explanation": "Realising total military defeat was unavoidable amid mutiny and revolution, Kaiser Wilhelm II fled to Holland, ending the German monarchy."
         },
         {
           "stage": 1,
@@ -6830,9 +6830,9 @@ export default {
         {
           "id": "gw2_l5_q5_evaluative_essay",
           "type": "extended_writing",
-          "tariff": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
+          "tariff": "Enquiry Writing Task [12 marks • 15 mins]",
           "title": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
-          "question": "‘The Treaty of Versailles was so harsh that it made another European war inevitable.’ How far do you agree with this statement?",
+          "question": "‘The Treaty of Versailles was so harsh that it made another European war inevitable.’ How far do you agree with this statement? [12 marks]",
           "stimulus": [
             "Article 231 (the War Guilt Clause) and £6.6 billion reparations",
             "Modern revisionist arguments regarding Allied failure to enforce the treaty (Margaret MacMillan)"

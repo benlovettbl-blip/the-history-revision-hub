@@ -1105,37 +1105,69 @@ export default {
       },
       "tasks": [
         {
+          "id": "mrp_l1_q1_explain_why",
           "type": "extended_writing",
-          "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "question": "Explain why King Henry VIII broke with Rome in the period 1527–1534. Evaluate which motive was decisive: his dynastic need for a male heir, financial greed for church wealth, or craving for absolute royal sovereignty.",
+          "tariff": "Question 4: Explain Why [12 marks • 15 mins]",
+          "title": "Question 4: Explain Why [12 marks • 15 mins]",
+          "topic": "Extended Historical Writing • Causal Explanation (3 Paragraphs • 15 mins)",
+          "question": "Explain why King Henry VIII broke with the Roman Catholic Church in the period 1527–1534. [12 marks]",
+          "stimulus": [
+            "The succession and Catherine of Aragon",
+            "Crown finances and monastic wealth"
+          ],
           "scaffolding": {
-            "guidance": "Write a structured 3-paragraph PEEL response. Use the exact words from the question stem in your Point and in your Link/Judgment for every paragraph.",
+            "guidance": "Write a structured 3-paragraph PEEL response. Use the words from the question stem in your opening Point and closing Link for each paragraph.",
             "structure_strip": [
               {
-                "col": "1. Dynastic Urgency",
-                "prompt": "Explain how Catherine of Aragon’s failure to produce a surviving male heir and fear of civil war forced Henry to seek an annulment [1.2, 1.3].",
-                "starter": "The most urgent catalyst explaining why King Henry VIII broke with Rome in the period 1527–1534 was his desperate dynastic need for a legitimate male heir..."
+                "col": "1. Dynastic Succession",
+                "prompt": "Explain how Catherine of Aragon’s failure to produce a surviving male heir and Pope Clement VII’s refusal to grant an annulment forced a crisis [1.2, 1.3].",
+                "starter": "A primary factor explaining why King Henry VIII broke with the Roman Catholic Church in the period 1527–1534 was his urgent need for a male heir..."
               },
               {
-                "col": "2. Royal Sovereignty",
-                "prompt": "Explain how Thomas Cromwell used the 1534 Act of Supremacy to make Henry Supreme Head and eliminate papal jurisdiction [1.4, 1.5].",
-                "starter": "A deeper structural cause explaining why King Henry VIII broke with Rome in the period 1527–1534 was his growing craving for absolute royal sovereignty..."
+                "col": "2. Crown Finances",
+                "prompt": "Explain how the Crown’s financial pressures and the vast wealth of English monasteries tempted Henry to subordinate the Church [1.4, 1.5].",
+                "starter": "Furthermore, a second key factor was the financial incentive of redirecting Church taxes and monastic wealth to the royal treasury..."
               },
               {
-                "col": "3. Financial Wealth & Verdict",
-                "prompt": "Weigh how the Dissolution of the Monasteries (1536–1540) enriched the Crown, but evaluate why dynastic succession was the decisive trigger [1.5].",
-                "starter": "Finally, financial greed for church wealth was a powerful secondary factor explaining why King Henry VIII broke with Rome in the period 1527–1534, although..."
+                "col": "3. Imperial Sovereignty",
+                "prompt": "Evaluate how Thomas Cromwell used Parliament and the 1534 Act of Supremacy to make Henry Supreme Head of the Church of England [1.4, 1.5].",
+                "starter": "Finally, the decisive constitutional factor was Henry’s determination to assert absolute royal sovereignty over England..."
               }
+            ],
+            "sentence_starters": [
+              "A primary factor was that...",
+              "In particular, this caused...",
+              "Furthermore, this was significant because...",
+              "As a direct result...",
+              "Consequently, this led to..."
+            ],
+            "word_bank": [
+              "Royal Supremacy",
+              "Act of Supremacy (1534)",
+              "annulment",
+              "Catherine of Aragon",
+              "Anne Boleyn",
+              "Thomas Cromwell",
+              "Pope Clement VII",
+              "Emperor Charles V",
+              "Act in Restraint of Appeals (1533)"
+            ],
+            "connective_bank": [
+              "A primary factor was...",
+              "In particular, this caused...",
+              "Furthermore, this was significant because...",
+              "As a direct result...",
+              "Consequently, this led to..."
             ]
           },
           "hints": [
-            "Point: State your central thesis: evaluate whether dynastic panic, financial greed, or royal power was the primary spark.",
-            "Evidence: Deploy specific factual evidence: Catherine of Aragon, Anne Boleyn, the 1534 Act of Supremacy, and the Dissolution of 800 Monasteries (1536–1540).",
-            "Explanation: Explain how these factors interacted: show how Henry used Protestant legal ideas purely to serve his political and dynastic needs.",
-            "Link: Conclude decisively: explain why one factor was the non-negotiable catalyst that drove the Break with Rome."
+            "Point: State a clear causal factor (dynastic succession, Crown finances, or royal sovereignty) directly answering why Henry broke with Rome.",
+            "Evidence: Deploy precise historical knowledge: Catherine of Aragon, Anne Boleyn, Pope Clement VII, Thomas Cromwell, and the 1534 Act of Supremacy.",
+            "Explanation: Show how European politics blocked an annulment and how Cromwell’s parliamentary statutes legally ended papal authority in England.",
+            "Link: Connect each paragraph back to the question and weigh why dynastic urgency triggered a permanent constitutional revolution."
           ],
-          "model_answer": "A primary reason was Henry VIII’s dynastic desperation for a legitimate male heir. Catherine of Aragon had failed to produce a surviving son, and Henry feared the Tudor dynasty would collapse into civil war without a male successor. When Pope Clement VII refused to annul his marriage, Henry broke with the Catholic Church in 1534 so he could marry Anne Boleyn.<br><br>Furthermore, Henry desired royal supremacy and Church wealth. By passing the Act of Supremacy, Henry made himself supreme head of the Church of England, gaining total sovereignty. Dissolving the monasteries allowed him to seize vast monastic lands, doubling royal income and securing the loyalty of English nobles.",
-          "model": "A primary reason was Henry VIII’s dynastic desperation for a legitimate male heir. Catherine of Aragon had failed to produce a surviving son, and Henry feared the Tudor dynasty would collapse into civil war without a male successor. When Pope Clement VII refused to annul his marriage, Henry broke with the Catholic Church in 1534 so he could marry Anne Boleyn.<br><br>Furthermore, Henry desired royal supremacy and Church wealth. By passing the Act of Supremacy, Henry made himself supreme head of the Church of England, gaining total sovereignty. Dissolving the monasteries allowed him to seize vast monastic lands, doubling royal income and securing the loyalty of English nobles."
+          "model_answer": "A primary reason was Henry VIII’s dynastic desperation for a legitimate male heir. Catherine of Aragon had failed to produce a surviving son, and Henry feared the Tudor dynasty would collapse into civil war without a male successor. Because Emperor Charles V controlled Pope Clement VII after 1527, the Pope refused an annulment, driving Henry to break with Rome so he could marry Anne Boleyn.<br><br>Furthermore, Henry desired absolute royal sovereignty and Church wealth. Guided by Thomas Cromwell, Parliament banned legal appeals to Rome in 1533 and passed the 1534 Act of Supremacy, making Henry Supreme Head of the Church of England. Subordinating the Church also opened the door to seizing vast ecclesiastical revenues and monastic lands, enriching the Crown and binding English nobles to the Reformation.",
+          "model": "A primary reason was Henry VIII’s dynastic desperation for a legitimate male heir. Catherine of Aragon had failed to produce a surviving son, and Henry feared the Tudor dynasty would collapse into civil war without a male successor. Because Emperor Charles V controlled Pope Clement VII after 1527, the Pope refused an annulment, driving Henry to break with Rome so he could marry Anne Boleyn.<br><br>Furthermore, Henry desired absolute royal sovereignty and Church wealth. Guided by Thomas Cromwell, Parliament banned legal appeals to Rome in 1533 and passed the 1534 Act of Supremacy, making Henry Supreme Head of the Church of England. Subordinating the Church also opened the door to seizing vast ecclesiastical revenues and monastic lands, enriching the Crown and binding English nobles to the Reformation."
         }
       ],
       "right_page_task": {
@@ -2820,37 +2852,109 @@ export default {
       },
       "tasks": [
         {
+          "id": "mrp_l2_q1_difference",
           "type": "extended_writing",
-          "topic": "Extended Historical Explanation • Historical Importance (2 Paragraphs • 10 mins)",
-          "question": "Explain the importance of the Elizabethan Religious Settlement (1559) for religious stability in England. Evaluate whether the Via Media succeeded because it was a genuine religious compromise or because Elizabeth enforced strict legal obedience.",
+          "tariff": "Question 3(a): Explain One Difference [4 marks • 5 mins]",
+          "title": "Question 3(a): Explain One Difference [4 marks • 5 mins]",
+          "topic": "Short Historical Comparison • Religious Policy Difference (1 Paragraph • 5 mins)",
+          "question": "Explain one way in which Elizabeth I’s religious policy in 1559 was different from Mary I’s religious policy (1553–1558). [4 marks]",
+          "prompt": "Compare how state religious enforcement shifted from Mary I’s active Catholic heresy burnings to Elizabeth I’s moderate Protestant compromise demanding outward legal conformity.",
           "scaffolding": {
-            "guidance": "Write a structured 3-paragraph PEEL response. Use the exact words from the question stem in your Point and in your Link/Judgment for every paragraph.",
+            "guidance": "Write one concise comparative paragraph: state the key difference, give specific factual detail on Mary I (1553–1558), and contrast it directly with Elizabeth I’s 1559 Settlement.",
             "structure_strip": [
               {
-                "col": "1. Political Compromise",
-                "prompt": "Explain how choosing the title \"Supreme Governor\" instead of \"Supreme Head\" resolved theological tensions and avoided civil strife [2.2].",
-                "starter": "First, the Elizabethan Religious Settlement of 1559 was of vital importance for religious stability in England because it established a pragmatic political compromise..."
+                "col": "1. Identify Difference",
+                "prompt": "State a clear difference in royal church authority or treatment of religious dissenters [2.1, 2.2].",
+                "starter": "One key difference was that Mary I enforced strict Catholic restoration through heresy executions, whereas Elizabeth I..."
               },
               {
-                "col": "2. The Via Media Liturgy",
-                "prompt": "Explain how the 1559 Book of Common Prayer allowed ambiguous communion beliefs without \"making windows into men’s souls\" [2.3].",
-                "starter": "Second, the Elizabethan Religious Settlement of 1559 was of vital importance for religious stability in England because the Via Media balanced Protestant theology with..."
-              },
-              {
-                "col": "3. Legal Enforcement & Verdict",
-                "prompt": "Weigh how 12d recusancy fines maintained order, and evaluate whether compromise or legal enforcement was decisive [2.3, 2.4].",
-                "starter": "Third, the Elizabethan Religious Settlement of 1559 was of vital importance for religious stability in England because it enforced obedience through moderate legal penalties..."
+                "col": "2. Mary I vs Elizabeth I Detail",
+                "prompt": "Contrast Mary restoring papal authority and burning nearly 300 Protestants with Elizabeth’s 1559 Via Media and 12d recusancy fines [2.1–2.3].",
+                "starter": "In the earlier period under Mary I... In contrast, in 1559 Elizabeth I..."
               }
+            ],
+            "sentence_starters": [
+              "One key difference was that...",
+              "In the earlier period under Mary I...",
+              "In contrast, in the later period Elizabeth I...",
+              "This was a significant difference because..."
+            ],
+            "word_bank": [
+              "Mary I",
+              "Papal authority",
+              "heresy burnings",
+              "Via Media (Middle Way)",
+              "Supreme Governor",
+              "Act of Uniformity (1559)",
+              "12d recusancy fines",
+              "outward conformity"
+            ],
+            "connective_bank": [
+              "One key difference was that...",
+              "In the earlier period...",
+              "In contrast, in the later period...",
+              "This was a difference because..."
             ]
           },
           "hints": [
-            "Point: State your thesis: explain how the Via Media avoided immediate civil war while securing the Protestant state.",
-            "Evidence: Detail specific terms: \"Supreme Governor\", the 1559 Book of Common Prayer, 12d recusancy fines, and outward conformity.",
-            "Explanation: Explain how allowing private ambiguity while demanding public uniformity prevented moderate Catholics from rebelling.",
-            "Link: Evaluate the long-term impact: explain how papal excommunication (1570) eventually disrupted this delicate compromise."
+            "Point: Identify one clear policy difference (e.g. treatment of religious dissenters or royal vs papal authority over the Church).",
+            "Evidence (Mary I, 1553–1558): Cite Mary restoring the Pope’s authority, reviving heresy laws, and burning nearly 300 Protestants at the stake [2.1].",
+            "Explanation (Elizabeth I, 1559): Contrast this with Elizabeth taking the moderate title 'Supreme Governor' and imposing 12d Sunday recusancy fines rather than burning dissenters, seeking outward conformity rather than 'windows into men’s souls' [2.2, 2.3]."
           ],
-          "model_answer": "The 1559 Religious Settlement was very important because it brought much-needed stability after years of violent religious turmoil under Edward VI and Mary I. Elizabeth created a moderate 'Middle Way' (Via Media) that combined Protestant doctrine with traditional Catholic ceremonies to avoid civil war.<br><br>The Act of Supremacy made Elizabeth 'Supreme Governor' rather than 'Head', soothing Catholic consciences. Meanwhile, the Act of Uniformity introduced an English Book of Common Prayer but allowed candles and vestments. By fining recusants moderately rather than executing them, Elizabeth successfully united the majority of the population and established long-term religious peace.",
-          "model": "The 1559 Religious Settlement was very important because it brought much-needed stability after years of violent religious turmoil under Edward VI and Mary I. Elizabeth created a moderate 'Middle Way' (Via Media) that combined Protestant doctrine with traditional Catholic ceremonies to avoid civil war.<br><br>The Act of Supremacy made Elizabeth 'Supreme Governor' rather than 'Head', soothing Catholic consciences. Meanwhile, the Act of Uniformity introduced an English Book of Common Prayer but allowed candles and vestments. By fining recusants moderately rather than executing them, Elizabeth successfully united the majority of the population and established long-term religious peace."
+          "model_answer": "One key difference was how the two queens enforced religious conformity and treated dissenters. Under Mary I (1553–1558), England restored papal authority and revived medieval heresy laws, burning nearly 300 Protestants at the stake to enforce strict Catholicism. In contrast, Elizabeth I’s 1559 Religious Settlement established a moderate Protestant 'Middle Way' (Via Media): she took the compromise title 'Supreme Governor' and fined Catholic recusants 12 pence for missing Sunday services rather than executing them for their private beliefs.",
+          "model": "One key difference was how the two queens enforced religious conformity and treated dissenters. Under Mary I (1553–1558), England restored papal authority and revived medieval heresy laws, burning nearly 300 Protestants at the stake to enforce strict Catholicism. In contrast, Elizabeth I’s 1559 Religious Settlement established a moderate Protestant 'Middle Way' (Via Media): she took the compromise title 'Supreme Governor' and fined Catholic recusants 12 pence for missing Sunday services rather than executing them for their private beliefs."
+        },
+        {
+          "id": "mrp_l2_q2_importance",
+          "type": "extended_writing",
+          "tariff": "Question 3(b): Explain Importance [8 marks • 10 mins]",
+          "title": "Question 3(b): Explain Importance [8 marks • 10 mins]",
+          "topic": "Extended Historical Explanation • Historical Importance (2 Paragraphs • 10 mins)",
+          "question": "Explain the importance of the Elizabethan Religious Settlement (1559) for religious stability in England. [8 marks]",
+          "scaffolding": {
+            "guidance": "Write two structured PEEL paragraphs explaining two distinct ways the 1559 Religious Settlement shaped religious stability in England.",
+            "structure_strip": [
+              {
+                "col": "1. Theological Compromise",
+                "prompt": "Analyse how choosing 'Supreme Governor', keeping traditional vestments, and using ambiguous communion wording in the 1559 Book of Common Prayer defused rebellion [2.2, 2.3].",
+                "starter": "First, the Elizabethan Religious Settlement (1559) was of vital importance for religious stability in England because its theological compromise..."
+              },
+              {
+                "col": "2. Enforcement & Conformity",
+                "prompt": "Evaluate how loyalty oaths and moderate 12d recusancy fines secured outward obedience and prevented immediate religious civil war [2.2, 2.3].",
+                "starter": "Furthermore, the 1559 Settlement was important for religious stability because its measured legal enforcement..."
+              }
+            ],
+            "sentence_starters": [
+              "This was of significant importance because...",
+              "In particular, this meant that...",
+              "Furthermore, this led to...",
+              "Consequently, the impact on stability was..."
+            ],
+            "word_bank": [
+              "Via Media",
+              "Act of Supremacy (1559)",
+              "Supreme Governor",
+              "Act of Uniformity",
+              "Book of Common Prayer",
+              "recusancy fines (12d)",
+              "outward conformity"
+            ],
+            "connective_bank": [
+              "This was of significant importance because...",
+              "In particular, this meant that...",
+              "Furthermore, this led to...",
+              "Consequently, the impact was..."
+            ]
+          },
+          "hints": [
+            "Point: State clearly why the 1559 Settlement mattered for calming religious divisions after Edward VI and Mary I.",
+            "Evidence: Detail specific terms: 'Supreme Governor', the 1559 Book of Common Prayer, traditional vestments, and 12d recusancy fines.",
+            "Explanation: Explain how allowing private conscience while requiring outward conformity reassured moderate Catholics and avoided French-style religious civil wars.",
+            "Link: Conclude how this settlement anchored thirty years of domestic stability before external Catholic threats escalated after 1570."
+          ],
+          "model_answer": "The 1559 Religious Settlement was of vital importance because it brought immediate domestic stability after decades of violent religious upheaval under Edward VI and Mary I. Through the Act of Supremacy and Act of Uniformity, Elizabeth created a moderate 'Middle Way' (Via Media) that blended Protestant doctrine with familiar Catholic traditions, using ambiguous communion wording in the 1559 Book of Common Prayer and retaining bishops and vestments so moderate Catholics did not rebel.<br><br>Furthermore, the settlement’s measured legal enforcement secured royal authority without provoking civil war. Taking the title 'Supreme Governor' rather than 'Supreme Head' calmed conservative consciences, while moderate 12-pence recusancy fines demanded outward Sunday conformity rather than 'making windows into men’s souls'. Consequently, the overwhelming majority of English parishes accepted the new national church peacefully.",
+          "model": "The 1559 Religious Settlement was of vital importance because it brought immediate domestic stability after decades of violent religious upheaval under Edward VI and Mary I. Through the Act of Supremacy and Act of Uniformity, Elizabeth created a moderate 'Middle Way' (Via Media) that blended Protestant doctrine with familiar Catholic traditions, using ambiguous communion wording in the 1559 Book of Common Prayer and retaining bishops and vestments so moderate Catholics did not rebel.<br><br>Furthermore, the settlement’s measured legal enforcement secured royal authority without provoking civil war. Taking the title 'Supreme Governor' rather than 'Supreme Head' calmed conservative consciences, while moderate 12-pence recusancy fines demanded outward Sunday conformity rather than 'making windows into men’s souls'. Consequently, the overwhelming majority of English parishes accepted the new national church peacefully."
         }
       ],
       "right_page_task": {
@@ -4561,37 +4665,117 @@ export default {
       },
       "tasks": [
         {
+          "id": "mrp_l3_q1_feature",
           "type": "extended_writing",
-          "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 12 mins)",
-          "question": "Write a narrative account analysing the key events of the Spanish Armada campaign in the summer of 1588. Explain why Philip II’s invasion failed, evaluating English naval tactics and the role of severe weather.",
+          "tariff": "Question 1: Describe One Feature [4 marks • 5 mins]",
+          "title": "Question 1: Describe One Feature [4 marks • 5 mins]",
+          "topic": "Short Disciplinary Drill • Key Feature (1 Paragraph • 5 mins)",
+          "question": "Describe one key feature of the English race-built warships designed by Sir John Hawkins. [4 marks]",
+          "prompt": "Identify one clear architectural or gunnery feature of Sir John Hawkins’s race-built galleons and develop it with precise supporting historical detail.",
           "scaffolding": {
-            "guidance": "Write a chronological 3-paragraph PEEL narrative account. Use the exact words from the question stem in your Point and in your Link/Judgment for every paragraph.",
+            "guidance": "Identify one specific feature in your first sentence, then add 2–3 sentences of supporting technical and tactical detail.",
             "structure_strip": [
               {
-                "col": "1. Channel Standoff",
-                "prompt": "Explain how Hawkins’ race-built galleons and long-range culverin cannons prevented the Spanish crescent from boarding [3.2, 3.3].",
-                "starter": "At the outset, the Spanish Armada campaign in the summer of 1588 failed because English maritime strategy disrupted Spanish preparations and..."
+                "col": "1. Identify Feature",
+                "prompt": "Name a specific design feature such as sleeker, lower-profile hulls or long-range culverin gun decks [3.3].",
+                "starter": "One key feature of the English race-built warships designed by Sir John Hawkins was their sleek, low-profile hull design..."
               },
               {
-                "col": "2. Calais Fireships & Gravelines",
-                "prompt": "Explain how the midnight fireships forced the Spanish to cut their anchors, allowing English ships to pound them at Gravelines [3.4, 3.5].",
-                "starter": "Crucially, the Spanish Armada campaign in the summer of 1588 failed because the midnight fireship attack at Calais shattered Spanish discipline and..."
-              },
-              {
-                "col": "3. Atlantic Gales & Verdict",
-                "prompt": "Explain how the \"Protestant Wind\" wrecked anchorless ships off Scotland and Ireland, and evaluate the decisive cause of defeat [3.5].",
-                "starter": "Finally, the Spanish Armada campaign in the summer of 1588 failed because severe weather and treacherous Atlantic gales decimated the..."
+                "col": "2. Supporting Detail",
+                "prompt": "Explain how removing high bow and stern castles increased speed and manoeuvrability, letting English ships fire broadsides from afar without being boarded [3.3].",
+                "starter": "In detail, this involved cutting down towering forecastles so English galleons could sail faster and..."
               }
+            ],
+            "sentence_starters": [
+              "One key feature was...",
+              "In detail, this involved...",
+              "This meant that English warships could..."
+            ],
+            "word_bank": [
+              "Sir John Hawkins",
+              "race-built galleons",
+              "low forecastles",
+              "manoeuvrability",
+              "culverin cannons",
+              "long-range broadsides"
+            ],
+            "connective_bank": [
+              "One key feature was...",
+              "In detail, this involved...",
+              "This meant that..."
             ]
           },
           "hints": [
-            "Chronology: Structure your narrative across three phases: (1) The Channel crescent and standoff gunnery, (2) The midnight fireships at Calais and Gravelines, (3) The retreat around Scotland and the Atlantic gales.",
-            "Causal Connectives: Use analytical links: \"Consequently\", \"As a direct result\", \"Crucially, this forced\", \"Ultimately\".",
-            "Historical Specifics: Deploy precise evidence: race-built galleons, culverins, cutting anchor cables, and the \"Protestant Wind\".",
-            "Analytical Judgment: State clearly whether English tactical innovation or atrocious weather was the decisive factor."
+            "Point: Identify one clear feature of Hawkins’s race-built galleons (streamlined hull profile or long-range artillery configuration).",
+            "Evidence: Cite the removal of towering medieval forecastles, longer narrower keels, and heavy long-range culverin cannons mounted on four-wheeled carriages [3.3].",
+            "Explanation: Show how this let English captains out-sail heavier Spanish galleons, stay out of grappling range, and reload broadsides rapidly."
           ],
-          "model_answer": "Initially, King Philip II of Spain launched 130 ships in May 1588 to invade England and overthrow Protestant Queen Elizabeth. The Spanish sailed up the English Channel in a rigid defensive crescent, aiming to join the Duke of Parma's army in the Netherlands.<br><br>However, English tactics disrupted the invasion. Lord Howard and Sir Francis Drake used faster, more manoeuvrable ships with long-range culverin cannons. At Calais, the English launched eight blazing fireships at midnight, causing the terrified Spanish fleet to cut their anchors and scatter in disarray. At the Battle of Gravelines, English gunners battered the disorganised Spanish ships.<br><br>Finally, severe Atlantic storms ('the Protestant Wind') wrecked dozens of Spanish galleons along the rocky coasts of Scotland and Ireland, ending Philip's invasion attempt.",
-          "model": "Initially, King Philip II of Spain launched 130 ships in May 1588 to invade England and overthrow Protestant Queen Elizabeth. The Spanish sailed up the English Channel in a rigid defensive crescent, aiming to join the Duke of Parma's army in the Netherlands.<br><br>However, English tactics disrupted the invasion. Lord Howard and Sir Francis Drake used faster, more manoeuvrable ships with long-range culverin cannons. At Calais, the English launched eight blazing fireships at midnight, causing the terrified Spanish fleet to cut their anchors and scatter in disarray. At the Battle of Gravelines, English gunners battered the disorganised Spanish ships.<br><br>Finally, severe Atlantic storms ('the Protestant Wind') wrecked dozens of Spanish galleons along the rocky coasts of Scotland and Ireland, ending Philip's invasion attempt."
+          "model_answer": "One key feature of the English race-built warships designed by Sir John Hawkins was their streamlined, low-profile hull design built for speed and long-range gunnery. In detail, Hawkins cut down the towering forecastles and sterncastles found on traditional warships and lengthened the keel, making English galleons far faster and more manoeuvrable in Channel winds. Armed with long-range culverin cannons on fast-reloading carriages, these ships could stay safely outside Spanish boarding range while pounding enemy hulls with repeated broadsides.",
+          "model": "One key feature of the English race-built warships designed by Sir John Hawkins was their streamlined, low-profile hull design built for speed and long-range gunnery. In detail, Hawkins cut down the towering forecastles and sterncastles found on traditional warships and lengthened the keel, making English galleons far faster and more manoeuvrable in Channel winds. Armed with long-range culverin cannons on fast-reloading carriages, these ships could stay safely outside Spanish boarding range while pounding enemy hulls with repeated broadsides."
+        },
+        {
+          "id": "mrp_l3_q2_narrative",
+          "type": "narrative_account",
+          "tariff": "Question 2: Narrative Account [8 marks • 10 mins]",
+          "title": "Question 2: Narrative Account [8 marks • 10 mins]",
+          "topic": "Chronological Historical Narrative • Analytical Account (3 Paragraphs • 10 mins)",
+          "question": "Write a narrative account analysing the key events of the Spanish Armada campaign in the summer of 1588. [8 marks]",
+          "stimulus": [
+            "The crescent formation in the Channel",
+            "The fireships at Calais"
+          ],
+          "scaffolding": {
+            "guidance": "Write a chronological 3-paragraph analytical narrative (Beginning -> Turning Point -> Outcome), using causal connectives to show how each stage led to the next.",
+            "structure_strip": [
+              {
+                "col": "1. Initial Engagements",
+                "prompt": "Analyse how Medina Sidonia’s 130-ship crescent formation sailed up the Channel under English long-range standoff gunnery before anchoring at Calais [3.3, 3.4].",
+                "starter": "Initially, the Armada campaign began in July 1588 when Philip II’s 130 ships entered the English Channel in a tight crescent formation..."
+              },
+              {
+                "col": "2. Tactical Turning Point",
+                "prompt": "Evaluate how eight midnight fireships at Calais forced Spanish captains to cut their anchor cables in panic, scattering their defensive formation [3.4].",
+                "starter": "A decisive turning point occurred on the night of 7–8 August at Calais when the English launched eight burning fireships..."
+              },
+              {
+                "col": "3. Retreat & Adverse Conditions",
+                "prompt": "Explain how close-range English broadsides at Gravelines and fierce North Sea and Atlantic gales wrecked the anchorless fleet around Scotland and Ireland [3.5].",
+                "starter": "Consequently, at the Battle of Gravelines the scattered Spanish ships were pounded at close range, which ultimately resulted in..."
+              }
+            ],
+            "sentence_starters": [
+              "Initially, the events began when...",
+              "Following this, the next development was...",
+              "A turning point occurred when...",
+              "Consequently, at the Battle of Gravelines...",
+              "This ultimately resulted in..."
+            ],
+            "word_bank": [
+              "Spanish Armada",
+              "Medina Sidonia",
+              "crescent formation",
+              "Calais",
+              "fireships (hellburners)",
+              "Battle of Gravelines",
+              "race-built galleons",
+              "culverins",
+              "Protestant Wind"
+            ],
+            "connective_bank": [
+              "Initially, the events began when...",
+              "Following this, the next development was...",
+              "A turning point occurred when...",
+              "Consequently...",
+              "This ultimately resulted in..."
+            ]
+          },
+          "hints": [
+            "Beginning (Trigger): Trace the Armada’s 130 ships entering the Channel in July 1588 in crescent formation while English race-built ships harried them from afar toward Calais [3.3].",
+            "Middle (Development): Explain why anchoring at Calais to await Parma’s army exposed the Spanish to eight midnight fireships, forcing captains to cut their anchor cables [3.4].",
+            "End (Outcome): Show how breaking formation enabled destructive English broadsides at Gravelines and forced the anchorless fleet north into Atlantic gales off Scotland and Ireland [3.5]."
+          ],
+          "model_answer": "Initially, in July 1588, King Philip II’s 130 warships entered the English Channel under the Duke of Medina Sidonia in a tight defensive crescent formation, aiming to link up with the Duke of Parma’s army in the Netherlands. Using faster race-built galleons and long-range culverin cannons, Lord Howard and Sir Francis Drake harried the Armada up the Channel without letting the Spanish board, forcing Medina Sidonia to anchor off Calais.<br><br>A decisive turning point occurred around midnight on 7–8 August when the English sent eight blazing fireships packed with pitch and gunpowder drifting toward the crowded Calais anchorage. In panic, Spanish captains cut their heavy anchor cables and scattered into the dark, shattering their protective crescent.<br><br>Consequently, on 8 August at the Battle of Gravelines, English gunners closed in and battered the disorganised Spanish hulls. Unable to return down the Channel or anchor safely, the damaged fleet was driven north into fierce Atlantic gales ('the Protestant Wind'), wrecking dozens of ships along the coasts of Scotland and Ireland and ending Philip’s invasion.",
+          "model": "Initially, in July 1588, King Philip II’s 130 warships entered the English Channel under the Duke of Medina Sidonia in a tight defensive crescent formation, aiming to link up with the Duke of Parma’s army in the Netherlands. Using faster race-built galleons and long-range culverin cannons, Lord Howard and Sir Francis Drake harried the Armada up the Channel without letting the Spanish board, forcing Medina Sidonia to anchor off Calais.<br><br>A decisive turning point occurred around midnight on 7–8 August when the English sent eight blazing fireships packed with pitch and gunpowder drifting toward the crowded Calais anchorage. In panic, Spanish captains cut their heavy anchor cables and scattered into the dark, shattering their protective crescent.<br><br>Consequently, on 8 August at the Battle of Gravelines, English gunners closed in and battered the disorganised Spanish hulls. Unable to return down the Channel or anchor safely, the damaged fleet was driven north into fierce Atlantic gales ('the Protestant Wind'), wrecking dozens of ships along the coasts of Scotland and Ireland and ending Philip’s invasion."
         }
       ],
       "right_page_task": {
@@ -6152,37 +6336,71 @@ export default {
       },
       "tasks": [
         {
+          "id": "mrp_l4_q1_explain_why",
           "type": "extended_writing",
-          "topic": "Extended Historical Writing • Causal Explanation (2–3 Paragraphs • 15 mins)",
-          "question": "Explain why Parliament put King Charles I on trial and executed him in January 1649. Evaluate whether the regicide was caused primarily by Charles I’s refusal to accept constitutional limits, or the radicalization of the New Model Army.",
+          "tariff": "Question 4: Explain Why [12 marks • 15 mins]",
+          "title": "Question 4: Explain Why [12 marks • 15 mins]",
+          "topic": "Extended Historical Writing • Causal Explanation (3 Paragraphs • 15 mins)",
+          "question": "Explain why Parliament put King Charles I on trial and executed him in January 1649. [12 marks]",
+          "stimulus": [
+            "Charles I’s refusal to accept constitutional limits",
+            "The outbreak of the Second Civil War (1648)"
+          ],
           "scaffolding": {
-            "guidance": "Write a structured 3-paragraph PEEL response. Use the exact words from the question stem in your Point and in your Link/Judgment for every paragraph.",
+            "guidance": "Write a structured 3-paragraph PEEL response. Use the words from the question stem in your Point and Link for every paragraph.",
             "structure_strip": [
               {
-                "col": "1. Tyranny & Divine Right",
-                "prompt": "Explain how Personal Rule, Ship Money, and the attempted arrest of the 5 MPs destroyed constitutional trust [4.1, 4.2].",
-                "starter": "First, Parliament put King Charles I on trial and executed him in January 1649 because of his stubborn adherence to Divine Right absolutism and..."
+                "col": "1. Ideological Obstinacy",
+                "prompt": "Analyse Charles I’s adherence to Divine Right, Personal Rule, Ship Money, and his refusal to accept binding constitutional limits [4.1, 4.2].",
+                "starter": "A decisive factor explaining why Parliament put King Charles I on trial and executed him in January 1649 was his refusal to accept constitutional limits..."
               },
               {
-                "col": "2. The \"Man of Blood\"",
-                "prompt": "Explain how Charles’s secret pact with the Scots provoked the Second Civil War (1648) and convinced the Army he could not be trusted [4.3].",
-                "starter": "Second, Parliament put King Charles I on trial and executed him in January 1649 because the King’s obstinate duplicity made lasting peace..."
+                "col": "2. Second Civil War (1648)",
+                "prompt": "Explain how Charles’s secret pact with the Scots restarted bloodshed in 1648 and branded him a treacherous 'man of blood' [4.3].",
+                "starter": "Furthermore, an additional cause was Charles I’s secret alliance with the Scots, which provoked the Second Civil War in 1648..."
               },
               {
-                "col": "3. Army Purge & Verdict",
-                "prompt": "Explain how Pride’s Purge created the Rump Parliament and evaluate whether Charles’s duplicity or army radicalism was decisive [4.4].",
-                "starter": "Third, Parliament put King Charles I on trial and executed him in January 1649 because the radicalized New Model Army seized control of the state to..."
+                "col": "3. Political Radicalisation",
+                "prompt": "Evaluate how the New Model Army carried out Pride’s Purge to remove moderate MPs and establish the High Court of Justice [4.4].",
+                "starter": "Consequently, this culminated in the radicalised New Model Army purging Parliament in December 1648 so that..."
               }
+            ],
+            "sentence_starters": [
+              "A decisive factor was...",
+              "In particular, this led to...",
+              "Furthermore, an additional cause was...",
+              "Crucially, this exacerbated tensions because...",
+              "Consequently, this culminated in..."
+            ],
+            "word_bank": [
+              "Divine Right of Kings",
+              "Personal Rule (1629–1640)",
+              "Ship Money",
+              "Oliver Cromwell",
+              "New Model Army",
+              "Battle of Naseby",
+              "‘Man of Blood’",
+              "Second Civil War (1648)",
+              "Pride’s Purge",
+              "Rump Parliament",
+              "Regicide (30 Jan 1649)"
+            ],
+            "connective_bank": [
+              "A decisive factor was...",
+              "In particular, this led to...",
+              "Furthermore, an additional cause was...",
+              "Crucially, this exacerbated tensions because...",
+              "Consequently, this culminated in..."
             ]
           },
           "hints": [
-            "Point: State your thesis: evaluate whether Charles’s unyielding belief in Divine Right or the New Model Army’s demand for justice was the decisive factor.",
-            "Evidence: Deploy specific historical evidence: Personal Rule (1629–1640), Ship Money, the Second Civil War (1648), Pride’s Purge, and the High Court of Justice.",
-            "Explanation: Explain how Charles’s duplicity in peace negotiations convinced soldiers that lasting peace was impossible while the King lived.",
-            "Link: Conclude decisively: explain why execution became seen as a \"cruel necessity\" to prevent endless civil conflict."
+            "Point: Identify a clear reason why Charles I was brought to trial and executed (constitutional obstinacy, the 1648 Second Civil War, or Army radicalisation).",
+            "Evidence: Deploy specific historical evidence: Divine Right, Personal Rule (1629–1640), Ship Money, the Second Civil War (1648), Pride’s Purge, and the Rump Parliament.",
+            "Explanation: Show how restarting civil war in 1648 convinced Cromwell and New Model Army officers that peace was impossible while the 'man of blood' lived.",
+            "Link: Connect back to the question, explaining why Pride’s Purge made judicial regicide possible on 30 January 1649."
           ],
-          "model_answer": "A primary reason was Charles I’s refusal to accept constitutional limits. Charles believed in the Divine Right of Kings, ruling without Parliament for eleven years during the 'Personal Rule'. After losing the Civil War, Charles refused all peace treaties and secretly allied with the Scots to restart the war in 1648, convincing Oliver Cromwell and the New Model Army that the King was a 'man of blood' who could never be trusted.<br><br>Furthermore, the radicalisation of the New Model Army made execution inevitable. Purged of moderate MPs by Pride’s Purge, the remaining 'Rump Parliament' put Charles on trial for high treason. Charles refused to plead, insisting no court had authority over the monarch. Believing peace was impossible while the King lived, Parliament beheaded him on 30 January 1649.",
-          "model": "A primary reason was Charles I’s refusal to accept constitutional limits. Charles believed in the Divine Right of Kings, ruling without Parliament for eleven years during the 'Personal Rule'. After losing the Civil War, Charles refused all peace treaties and secretly allied with the Scots to restart the war in 1648, convincing Oliver Cromwell and the New Model Army that the King was a 'man of blood' who could never be trusted.<br><br>Furthermore, the radicalisation of the New Model Army made execution inevitable. Purged of moderate MPs by Pride’s Purge, the remaining 'Rump Parliament' put Charles on trial for high treason. Charles refused to plead, insisting no court had authority over the monarch. Believing peace was impossible while the King lived, Parliament beheaded him on 30 January 1649."
+          "model_answer": "A decisive factor was Charles I’s refusal to accept constitutional limits. Believing in the Divine Right of Kings, Charles had ruled without Parliament for eleven years during the Personal Rule and levied Ship Money without consent. Even after defeat at Naseby, he stalled peace negotiations, convincing MPs he could not be trusted to rule within the law.<br><br>Furthermore, Charles’s secret pact with the Scots provoked the Second Civil War in 1648, forcing soldiers to fight and die all over again and branding the King a 'man of blood' in the eyes of Oliver Cromwell and the New Model Army. Consequently, in December 1648, Colonel Pride purged moderate MPs, leaving the Rump Parliament to establish a High Court of Justice, convict Charles of treason, and execute him at Whitehall on 30 January 1649.",
+          "model": "A decisive factor was Charles I’s refusal to accept constitutional limits. Believing in the Divine Right of Kings, Charles had ruled without Parliament for eleven years during the Personal Rule and levied Ship Money without consent. Even after defeat at Naseby, he stalled peace negotiations, convincing MPs he could not be trusted to rule within the law.<br><br>Furthermore, Charles’s secret pact with the Scots provoked the Second Civil War in 1648, forcing soldiers to fight and die all over again and branding the King a 'man of blood' in the eyes of Oliver Cromwell and the New Model Army. Consequently, in December 1648, Colonel Pride purged moderate MPs, leaving the Rump Parliament to establish a High Court of Justice, convict Charles of treason, and execute him at Whitehall on 30 January 1649."
         }
       ],
       "right_page_task": {
@@ -6367,17 +6585,17 @@ export default {
         },
         {
           "stage": 4,
-          "question": "On what exact date was King Charles I publicly beheaded outside Whitehall Banqueting House?",
-          "q": "On what exact date was King Charles I publicly beheaded outside Whitehall Banqueting House?",
+          "question": "For what unprecedented crime was King Charles I put on trial and found guilty by the High Court of Justice in January 1649?",
+          "q": "For what unprecedented crime was King Charles I put on trial and found guilty by the High Court of Justice in January 1649?",
           "options": [
-            "5 November 1605",
-            "18 January 1871",
-            "30 January 1649",
-            "28 June 1645"
+            "Refusing to pay Ship Money to coastal towns",
+            "Converting the New Model Army to Catholicism",
+            "Breaking the 1689 Bill of Rights",
+            "High treason against his own people"
           ],
-          "answer": "30 January 1649",
-          "a": "30 January 1649",
-          "explanation": "Charles I was executed on 30 January 1649, wearing two shirts against the freezing weather."
+          "answer": "High treason against his own people",
+          "a": "High treason against his own people",
+          "explanation": "In an unprecedented constitutional act, the High Court of Justice found Charles I guilty of high treason against his people, leading to his execution and the abolition of the monarchy."
         },
         {
           "stage": 4,
@@ -7907,9 +8125,10 @@ export default {
         {
           "id": "mrp_l5_q1_consequence",
           "type": "extended_writing",
-          "tariff": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
-          "title": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
-          "question": "Explain one consequence of the Bill of Rights passed by Parliament in 1689.",
+          "tariff": "Question 1: Explain One Consequence [4 marks • 5 mins]",
+          "title": "Question 1: Explain One Consequence [4 marks • 5 mins]",
+          "topic": "Short Historical Explanation • Consequence (1 Paragraph • 5 mins)",
+          "question": "Explain one consequence of the Bill of Rights passed by Parliament in 1689. [4 marks]",
           "prompt": "Explain one direct consequence of the 1689 Bill of Rights on the balance of sovereign power between Crown and Parliament.",
           "hints": [
             "Point: State the permanent transfer of sovereign authority over taxation, standing armies, and legislative suspension to the elected assembly [5.5].",
@@ -7919,44 +8138,50 @@ export default {
           "scaffolding": {
             "sentence_starters": [
               "One major consequence of the Bill of Rights was that...",
-              "Specifically, this meant that the monarch could no longer...",
+              "In detail, this meant that the monarch could no longer...",
               "As a direct result, sovereign power shifted permanently to..."
             ],
-            "connective_bank": [
+            "word_bank": [
               "Bill of Rights (1689)",
               "Parliamentary Sovereignty",
               "Constitutional Monarchy",
               "taxation by consent",
               "suspension of laws",
               "William and Mary"
+            ],
+            "connective_bank": [
+              "One major consequence was that...",
+              "In detail, this occurred because...",
+              "As a direct result..."
             ]
           },
-          "model_answer": "One consequence of the 1688 Glorious Revolution was the permanent establishment of a constitutional monarchy in England. Specifically, Parliament offered the crown to William and Mary only on condition that they accepted the 1689 Bill of Rights. This prevented future monarchs from suspending laws, raising taxes without consent, or maintaining a standing army in peacetime.",
-          "model": "One consequence of the 1688 Glorious Revolution was the permanent establishment of a constitutional monarchy in England. Specifically, Parliament offered the crown to William and Mary only on condition that they accepted the 1689 Bill of Rights. This prevented future monarchs from suspending laws, raising taxes without consent, or maintaining a standing army in peacetime."
+          "model_answer": "One major consequence of the 1689 Bill of Rights was the permanent establishment of a constitutional monarchy in England. Specifically, Parliament offered the crown to William III and Mary II only on condition that they accepted statutory limits forbidding the monarch from suspending laws, levying taxes without parliamentary consent, or keeping a peacetime standing army. As a direct result, Parliamentary Sovereignty permanently replaced the Stuart doctrine of Divine Right.",
+          "model": "One major consequence of the 1689 Bill of Rights was the permanent establishment of a constitutional monarchy in England. Specifically, Parliament offered the crown to William III and Mary II only on condition that they accepted statutory limits forbidding the monarch from suspending laws, levying taxes without parliamentary consent, or keeping a peacetime standing army. As a direct result, Parliamentary Sovereignty permanently replaced the Stuart doctrine of Divine Right."
         },
         {
           "id": "mrp_l5_q2_turning_point",
           "type": "extended_writing",
-          "tariff": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
-          "title": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 15 mins)",
-          "question": "‘The execution of Charles I in 1649 was the most significant turning point in the struggle between Crown and Parliament.’ How far do you agree?",
+          "tariff": "Question 5: Evaluative Judgement [12 marks • 12 mins]",
+          "title": "Question 5: Evaluative Judgement [12 marks • 12 mins]",
+          "topic": "Evaluative Historical Essay • Balanced Judgement (3 Paragraphs • 12 mins)",
+          "question": "‘The execution of Charles I in 1649 was the most significant turning point in the struggle between Crown and Parliament.’ How far do you agree? [12 marks]",
           "prompt": "Weigh whether the radical trial and execution of Charles I (1649) or the permanent statutory settlement of the Bill of Rights (1689) was the more decisive turning point in the struggle between Crown and Parliament.",
           "scaffolding": {
             "acronym": "PEEL Evaluative Essay Framework",
             "acronym_title": "12-Mark Evaluative Judgement Standard",
             "structure_strip": [
-              "Paragraph 1 (Regicide & Abolition): Analyse how judicial regicide shattered the sacrosanct status of Divine Right and temporarily abolished monarchical governance [5.4].",
+              "Paragraph 1 (Radical Regicide & Abolition): Analyse how judicial regicide shattered the sacrosanct status of Divine Right and temporarily abolished monarchical governance [5.4].",
               "Paragraph 2 (Statutory Settlement): Evaluate how permanent statutory limits bound the Crown to legal governance, parliamentary consent, and financial oversight in 1689 [5.5].",
-              "Conclusion: Reach a weighed comparative verdict: weigh whether physical overthrow and republican experiments represented a more profound transformation than permanent statutory compromise [5.1–5.5]."
+              "Paragraph 3 (Comparative Verdict): Weigh whether physical overthrow and republican experiments represented a more profound transformation than permanent statutory compromise [5.1–5.5]."
             ],
             "sentence_starters": [
-              "Overall, the strongest judgement is that...",
+              "To a large extent, it can be argued that...",
               "On the one hand, a key factor was...",
               "Furthermore, this was significant because...",
               "On the other hand, an alternative perspective is that...",
               "In conclusion, the decisive turning point was... because..."
             ],
-            "connective_bank": [
+            "word_bank": [
               "Regicide (1649)",
               "Divine Right of Kings",
               "High Court of Justice",
@@ -7965,6 +8190,13 @@ export default {
               "William and Mary",
               "Constitutional Monarchy",
               "Parliamentary Sovereignty"
+            ],
+            "connective_bank": [
+              "To a large extent, it can be argued that...",
+              "On the one hand, a key factor was...",
+              "Furthermore, this was significant because...",
+              "On the other hand, an alternative perspective is that...",
+              "In conclusion, the decisive turning point was... because..."
             ]
           },
           "hints": [
@@ -7973,8 +8205,8 @@ export default {
             "Evidence for 1689 (Bill of Rights): Detail how William and Mary accepted statutory limits on taxes, armies, and law suspension, making annual Parliaments legally indispensable.",
             "Comparative Conclusion: Synthesize why 1649 was a temporary military upheaval followed by the 1660 Restoration, whereas 1689 was the permanent constitutional victory."
           ],
-          "model_answer": "On the one hand, the public execution of King Charles I in January 1649 was an unprecedented revolutionary turning point. By putting an anointed monarch on trial for high treason against his own people, Parliament irreversibly shattered the Divine Right of Kings. The regicide abolished both the monarchy and the House of Lords, creating England’s first and only republic (the Commonwealth under Oliver Cromwell), demonstrating that a king was legally accountable to the law and to the nation.<br><br>On the other hand, the constitutional impact of 1649 proved fragile and short-lived compared to the lasting settlement of 1688–1689. Following Cromwell’s military dictatorship, the Commonwealth collapsed, resulting in the 1660 Restoration where Charles II and James II attempted to reassert absolute royal prerogative. In contrast, the Glorious Revolution of 1688 and the 1689 Bill of Rights permanently established constitutional monarchy and parliamentary supremacy. The Crown agreed never to suspend laws, maintain an army, or levy taxes without parliamentary consent, creating a permanent constitutional framework that endures to this day. Therefore, while 1649 was the most radical ideological shock, 1688 was the more enduring and successful turning point.",
-          "model": "On the one hand, the public execution of King Charles I in January 1649 was an unprecedented revolutionary turning point. By putting an anointed monarch on trial for high treason against his own people, Parliament irreversibly shattered the Divine Right of Kings. The regicide abolished both the monarchy and the House of Lords, creating England’s first and only republic (the Commonwealth under Oliver Cromwell), demonstrating that a king was legally accountable to the law and to the nation.<br><br>On the other hand, the constitutional impact of 1649 proved fragile and short-lived compared to the lasting settlement of 1688–1689. Following Cromwell’s military dictatorship, the Commonwealth collapsed, resulting in the 1660 Restoration where Charles II and James II attempted to reassert absolute royal prerogative. In contrast, the Glorious Revolution of 1688 and the 1689 Bill of Rights permanently established constitutional monarchy and parliamentary supremacy. The Crown agreed never to suspend laws, maintain an army, or levy taxes without parliamentary consent, creating a permanent constitutional framework that endures to this day. Therefore, while 1649 was the most radical ideological shock, 1688 was the more enduring and successful turning point."
+          "model_answer": "On the one hand, the public execution of King Charles I in January 1649 was an unprecedented revolutionary turning point. By putting an anointed monarch on trial for high treason against his own people, Parliament irreversibly shattered the Divine Right of Kings. The regicide abolished both the monarchy and the House of Lords, creating England’s first and only republic (the Commonwealth under Oliver Cromwell), demonstrating that a king was legally accountable to the law and to the nation.<br><br>On the other hand, the constitutional impact of 1649 proved fragile and short-lived compared to the lasting settlement of 1688–1689. Following Cromwell’s military dictatorship, the Commonwealth collapsed, resulting in the 1660 Restoration where Charles II and James II attempted to reassert absolute royal prerogative. In contrast, the Glorious Revolution of 1688 and the 1689 Bill of Rights permanently established constitutional monarchy and parliamentary supremacy. The Crown agreed never to suspend laws, maintain an army, or levy taxes without parliamentary consent, creating a permanent constitutional framework that endures to this day. Therefore, while 1649 was the most radical ideological shock, 1688–1689 was the more enduring and decisive turning point.",
+          "model": "On the one hand, the public execution of King Charles I in January 1649 was an unprecedented revolutionary turning point. By putting an anointed monarch on trial for high treason against his own people, Parliament irreversibly shattered the Divine Right of Kings. The regicide abolished both the monarchy and the House of Lords, creating England’s first and only republic (the Commonwealth under Oliver Cromwell), demonstrating that a king was legally accountable to the law and to the nation.<br><br>On the other hand, the constitutional impact of 1649 proved fragile and short-lived compared to the lasting settlement of 1688–1689. Following Cromwell’s military dictatorship, the Commonwealth collapsed, resulting in the 1660 Restoration where Charles II and James II attempted to reassert absolute royal prerogative. In contrast, the Glorious Revolution of 1688 and the 1689 Bill of Rights permanently established constitutional monarchy and parliamentary supremacy. The Crown agreed never to suspend laws, maintain an army, or levy taxes without parliamentary consent, creating a permanent constitutional framework that endures to this day. Therefore, while 1649 was the most radical ideological shock, 1688–1689 was the more enduring and decisive turning point."
         }
       ],
       "right_page_task": {
