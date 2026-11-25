@@ -1,0 +1,23 @@
+{
+  "clips": {
+    "cover_welcome": "8076dfb84afc422932acc7b19c5bfd885fb2ce867c2d68e4e535368dadc87cf1",
+    "beat0_swamp_splash": "55cb591d77bf99ec65dc2ba61ff8768583f35283b2631f63df2a34a9b47c8183",
+    "beat0_survived_village": "ba3f22200f5b9a1ab45c608a969d0eef6b1f1e80db30704107316f6421d4ca2a",
+    "beat1_guy_chicken": "0fa289453d45be71daca0b88f7362d1b032ba481086f5f77db9b6bb40bb47fe5",
+    "beat2_guy_haircut": "dbf142e1782a11161f8ef2353553a61e4dcfad0acce0f8bfd00e7d76f35bb15f",
+    "beat3_clerk_demand": "4a6641c9ac7da9b06dd9eac5b4052e7fbd9935c22cc9b2332235ef1c160120b2",
+    "cover_bennet_poke": "461227e7864d33e69b3872f7a24f01100ce11cc83c2d53ec97b4ba21b20b5081",
+    "beat0_bennet_swamp": "814e9fef02b9e202e1eef4031ef369e6b9724924e466463e3a183db2a7d72403",
+    "beat1_odo_oath": "f985ff56440e90a87c3c68b3ae59db5bd75894ca5961af7306e0a9a427bdefd6",
+    "beat1_bennet_creek": "3d332f4c4c1ee10967aa5f646eab85e4018f4f99b516baa9e8ae1773921b24e2",
+    "beat1_mills_caught": "87ea6f9ba3d8d764a501dd627eabf38805a0c754915f5e1b8eed8f8ec8f8caf8",
+    "beat3_villager_plea": "4143713435cf2f2b56341c12a599d40e712a5efac5d812456023515bfae9d631",
+    "beat1_gyrth_servi": "16ea3d3b9cced3d43e446040baf9ad1ab3cb68074e78b2c000bf553c2bf33817",
+    "beat2_hugh_boast": "916221eb88e9c10acf2d2098ad0107343d5184344997cecc822b0d27d71fda80",
+    "beat3_real_verdict": "3004e6da3e51040c9cf3577a0a5f507aaaa945bf72d6a5496c1f5f036baeebf8",
+    "beat4_monk_myth": "3ef86b3724321a3ca30c357f36c874ea12c4c38cae84118a3c89e384cfb9d779",
+    "beat5_stubitone_latin": "619dc05dd4f61decdf6fa6e47b84d7f6bb141b3e420cdec2199dd3f54a21e150",
+    "beat4_edith_door": "f8075ffb388c99cba11051818d465bbbfc64eab23f35b5a4c2ad0db8e9745521",
+    "beat5_debrief_historian": "9c030a977b9429d12e9096fdccbb8139e44ee8d6238a625f4bcb468dda1c0605"
+  }
+}

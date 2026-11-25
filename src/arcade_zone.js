@@ -171,6 +171,19 @@ const VISUAL_SHOWCASES = [
       import('./arcade/games/weimar_crisis_desk.js').then((m) => m.mountWeimarCrisisDesk),
     ),
   },
+  {
+    id: 'domesday_stubitone',
+    emoji: '🏰',
+    title: 'The Secret of Stubitone™: The 1086 Domesday Audit',
+    subtitle: 'Voiced Point-and-Poke Adventure Across Fareham, Stubbington & The Solent',
+    accent: '#f59e0b',
+    featuredUnits: ['medieval_england'],
+    badge: '60 FPS LIVING 1086 ADVENTURE',
+    desc: 'Rewind your own Solent coastline 940 years, catch Sweating Reeve Odo hiding Fareham’s 5 watermills, rule on King Edward’s Viking tax break, decode Stubbington’s real 1086 Latin parchment, and spot what Domesday missed!',
+    mount: lazyShowcaseMount(() =>
+      import('./interactive_labs/domesday_stubitone.js').then((m) => m.mountDomesdayStubitone),
+    ),
+  },
 ];
 
 const ARCADE_GAMES_CATALOG = [

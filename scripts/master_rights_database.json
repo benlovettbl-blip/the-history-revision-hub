@@ -41440,5 +41440,77 @@
     "license": "Public Domain / Original Hub IP",
     "commercial_use_permitted": true,
     "unit": "ks2_ww2"
+  },
+  "/images/arcade/domesday/cover_secret_of_stubitone.webp": {
+    "title": "The Secret of Stubitone — 1086 Solent & Fareham Domesday Arcade Splash Illustration",
+    "date": "2026 (Original Arcade Graphic-Novel Artwork grounded in 1086 Hampshire Domesday Folios)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP / Open Domesday Data (CC-BY-SA 3.0)",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://opendomesday.org/place/SU5503/stubbington/",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP / Open Domesday CC-BY-SA 3.0 Data",
+    "commercial_use_permitted": true,
+    "unit": "medieval_england"
+  },
+  "/images/arcade/domesday/scene_1_bennet_swamp.webp": {
+    "title": "1086 Solent Salt-Marsh & Creek Peasant Cameo Arcade Diorama",
+    "date": "2026 (Original Arcade Graphic-Novel Artwork)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://opendomesday.org/place/SU5706/fareham/",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP",
+    "commercial_use_permitted": true,
+    "unit": "medieval_england"
+  },
+  "/images/arcade/domesday/scene_2_fareham_mills.webp": {
+    "title": "1086 Fareham Creek Five Watermills, Woodland Swine & Relic Oath Arcade Diorama",
+    "date": "2026 (Original Arcade Graphic-Novel Artwork)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP / Open Domesday Data (CC-BY-SA 3.0)",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://opendomesday.org/place/SU5706/fareham/",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP",
+    "commercial_use_permitted": true,
+    "unit": "medieval_england"
+  },
+  "/images/arcade/domesday/scene_3_royal_assize.webp": {
+    "title": "1086 Hampshire Royal Assize Hall Witness & Exchequer Inquiry Arcade Diorama",
+    "date": "2026 (Original Arcade Graphic-Novel Artwork)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://opendomesday.org/place/SU5706/fareham/",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP",
+    "commercial_use_permitted": true,
+    "unit": "medieval_england"
+  },
+  "/images/arcade/domesday/scene_4_stubbington_hut.webp": {
+    "title": "1086 Stubbington ('Stubitone') Household Cutaway & Tree-Stump Clearing Arcade Diorama",
+    "date": "2026 (Original Arcade Graphic-Novel Artwork)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP / Open Domesday Data (CC-BY-SA 3.0)",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://opendomesday.org/place/SU5503/stubbington/",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP",
+    "commercial_use_permitted": true,
+    "unit": "medieval_england"
+  },
+  "/images/arcade/domesday/scene_5_fareham_servi.webp": {
+    "title": "1086 Fareham Dawn Plough-Team & Enslaved Agricultural Workforce ('Servi') Diorama",
+    "date": "2026 (Original Arcade Graphic-Novel Artwork)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP / Open Domesday Data (CC-BY-SA 3.0)",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://opendomesday.org/place/SU5706/fareham/",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP",
+    "commercial_use_permitted": true,
+    "unit": "medieval_england"
   }
 }
