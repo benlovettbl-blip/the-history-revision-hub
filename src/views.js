@@ -1642,39 +1642,8 @@ export async function renderTimeline() {
     return;
   }
 
-  const events = state.activeUnitData ? state.activeUnitData.timelineEvents : null;
-
-  if (!events || events.length === 0) {
-    const { renderUniversalLivingTimeline } = await import('./universal_living_timeline.js');
-    renderUniversalLivingTimeline(container, unitId, state.activeUnitData);
-    return;
-  }
-
-  // Sort chronological order
-  const sortedEvents = [...events].sort((a, b) => parseInt(a.year, 10) - parseInt(b.year, 10));
-
-  container.innerHTML = `
-    <div class="card">
-      <h3 style="margin-bottom: 24px;"><i class="fa-solid fa-timeline text-primary"></i> Interactive Chronology Timeline</h3>
-      <div class="timeline-wrapper">
-        ${sortedEvents
-          .map((evt, idx) => {
-            const eventTitle = evt.title || evt.event || '';
-            const eventDetail = evt.text || evt.detail || evt.description || '';
-            return `
-          <div class="timeline-item ${idx % 2 === 0 ? 'left' : 'right'}">
-            <div class="timeline-badge">${evt.year}</div>
-            <div class="timeline-panel">
-              <h4>${evt.year}${eventTitle ? ` · ${eventTitle}` : ''}</h4>
-              <p>${eventDetail}</p>
-            </div>
-          </div>
-        `;
-          })
-          .join('')}
-      </div>
-    </div>
-  `;
+  const { renderUniversalLivingTimeline } = await import('./universal_living_timeline.js');
+  renderUniversalLivingTimeline(container, unitId, state.activeUnitData);
 }
 
 export function renderIndividualsView() {

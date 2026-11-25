@@ -1,0 +1,547 @@
+{
+  "unitId": "post_war_britain",
+  "schemaVersion": "v1-curated-living-timeline",
+  "courseTitle": "Rights, Protest & Post-War Britain (1900–Present)",
+  "eyebrow": "KEY STAGE 3 HISTORY • YEAR 9 ENQUIRY CHRONOLOGY • 15 MILESTONES",
+  "beatLabels": {
+    "catalyst": "1. Context & Trigger",
+    "turningPoint": "2. Key Turning Point",
+    "impact": "3. Historical Consequence",
+    "bridgeBadge": "🔗 Leads To Next"
+  },
+  "streamFilters": [],
+  "eras": [
+    {
+      "id": "part_1",
+      "code": "Part 1",
+      "badge": "PART 1 • 1897–1946",
+      "pillLabel": "Part 1: Suffrage & Welfare",
+      "title": "Part 1: Votes for Women, Total War & Blueprint for the Welfare State (1897–1946)",
+      "color": "#1e3a8a",
+      "accent": "#2563eb",
+      "softBg": "#eff6ff",
+      "softBorder": "#bfdbfe"
+    },
+    {
+      "id": "part_2",
+      "code": "Part 2",
+      "badge": "PART 2 • 1948–1959",
+      "pillLabel": "Part 2: Windrush, NHS & CND",
+      "title": "Part 2: Empire Windrush, Founding the NHS & Birth of the Anti-Nuclear Movement (1948–1959)",
+      "color": "#991b1b",
+      "accent": "#dc2626",
+      "softBg": "#fef2f2",
+      "softBorder": "#fecaca"
+    },
+    {
+      "id": "part_3",
+      "code": "Part 3",
+      "badge": "PART 3 • 1963–1983",
+      "pillLabel": "Part 3: Civil Rights & Protest",
+      "title": "Part 3: The Bristol Bus Boycott, Race Relations Laws & Greenham Common (1963–1983)",
+      "color": "#0f766e",
+      "accent": "#0d9488",
+      "softBg": "#f0fdfa",
+      "softBorder": "#99f6e4"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "post_war_britain_ms_1",
+      "num": 1,
+      "era": "part_1",
+      "date": "1897 – October 1903",
+      "shortDate": "1897–1903",
+      "shortTitle": "Suffragists vs WSPU Militancy",
+      "title": "Fawcett’s Constitutional NUWSS & Pankhurst’s Militant WSPU",
+      "specTag": "Enquiry 1 • Suffrage Split",
+      "enquiryQuestion": "How did women’s campaigning and wartime work win the vote in 1918?",
+      "lessonIndex": 0,
+      "stageNum": 1,
+      "imageUrl": "/images/post_war_britain/millicent_fawcett_portrait.jpg",
+      "imageCaption": "Dame Millicent Garrett Fawcett (1847–1929), President of the NUWSS: Uniting 17 societies in 1897 into a 50,000-strong peaceful movement before Emmeline Pankhurst founded the militant WSPU in 1903.",
+      "catalyst": "Excluded from parliamentary elections throughout the nineteenth century, regional women’s suffrage groups united in **1897** under **Dame Millicent Garrett Fawcett** to form the **NUWSS**.",
+      "turningPoint": "While Fawcett’s **50,000 Suffragists** used peaceful petitions and lobbying, **Emmeline Pankhurst** founded the **WSPU** in Manchester in **October 1903** under the motto **'Deeds, not words'**.",
+      "impact": "The **Suffragettes** chained themselves to railings and disrupted rallies, putting female enfranchisement on every newspaper front page while dividing opinion over direct action.",
+      "bridgeToNext": "As arrests mounted in Holloway Prison after 1909, confrontation between Suffragettes and the Liberal government escalated into hunger strikes and street battles.",
+      "keyAgents": [
+        "Dame Millicent Garrett Fawcett",
+        "Emmeline Pankhurst"
+      ],
+      "keyTerms": [
+        {
+          "term": "Suffrage",
+          "definition": "The legal right of citizens to vote in national parliamentary and local government elections."
+        },
+        {
+          "term": "Militancy",
+          "definition": "The use of confrontational, disruptive, or physical direct-action tactics to achieve political reform."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_2",
+      "num": 2,
+      "era": "part_1",
+      "date": "1909 – June 1913",
+      "shortDate": "1909–1913",
+      "shortTitle": "Hunger Strikes & Cat and Mouse",
+      "title": "Holloway Force-Feeding, Cat and Mouse Act & Epsom Derby",
+      "specTag": "Enquiry 1 • Prison & Protest",
+      "enquiryQuestion": "How did women’s campaigning and wartime work win the vote in 1918?",
+      "lessonIndex": 0,
+      "stageNum": 3,
+      "imageUrl": "/images/post_war_britain/pwb_l1_b2_cat_and_mouse_poster_1913.jpg",
+      "imageCaption": "WSPU poster condemning the 1913 'Cat and Mouse Act' (LSE Women’s Library): Attacking the government’s temporary discharge and re-arrest of weakened suffragette hunger strikers.",
+      "catalyst": "Denied political-prisoner status in Holloway Jail, imprisoned Suffragettes launched **hunger strikes** in 1909, prompting brutal **forced tube-feeding** by prison doctors.",
+      "turningPoint": "Parliament passed the **1913 'Cat and Mouse Act'** to release and re-arrest weakened strikers, **Edith Garrud** trained a **jiu-jitsu Bodyguard**, and **Emily Wilding Davison** died after stepping before King George V’s horse at the **June 1913 Epsom Derby**.",
+      "impact": "Public revulsion at force-feeding and 5,000 mourners marching at Davison’s London funeral kept suffrage central, though militant arson also hardened parliamentary critics.",
+      "bridgeToNext": "When the First World War broke out in August 1914, both wings of the suffrage movement suspended protests to mobilise women for total war.",
+      "keyAgents": [
+        "Emmeline Pankhurst"
+      ],
+      "keyTerms": [
+        {
+          "term": "Civil Disobedience",
+          "definition": "Deliberate refusal to obey state laws or prison rules as a moral protest against political injustice."
+        },
+        {
+          "term": "Martyrdom",
+          "definition": "Suffering severe persecution or death—such as Emily Wilding Davison in 1913—for a political or moral cause."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_3",
+      "num": 3,
+      "era": "part_1",
+      "date": "1914 – February 1918",
+      "shortDate": "Feb 1918",
+      "shortTitle": "Wartime Work & 1918 Franchise",
+      "title": "Munitions 'Canary Girls' & The Representation of the People Act",
+      "specTag": "Enquiry 1 • Constitutional Victory",
+      "enquiryQuestion": "How did women’s campaigning and wartime work win the vote in 1918?",
+      "lessonIndex": 0,
+      "stageNum": 5,
+      "imageUrl": "/images/post_war_britain/canary_girls_chilwell_1917.jpg",
+      "imageCaption": "Female munitions workers ('Canary Girls') at Chilwell Shell Filling Factory (July 1917, IWM Q 30040): Wartime industrial service helped win the Representation of the People Act in February 1918.",
+      "catalyst": "Suspending suffrage militancy in August 1914, over **1.5 million women** entered factories, farms, transport, and hospitals while millions of men fought overseas.",
+      "turningPoint": "Risking toxic TNT poisoning and deadly blasts as **'Canary Girls'**, women proved indispensable, persuading Parliament to pass the **Representation of the People Act in February 1918**.",
+      "impact": "The Act enfranchised **8.4 million women aged over 30** who met a property qualification (alongside all men over 21), paving the way for equal votes at 21 in 1928.",
+      "bridgeToNext": "Two decades later, a second total war and mass civilian evacuation exposed deep urban poverty and sparked demands for a post-war Welfare State.",
+      "keyAgents": [
+        "Dame Millicent Garrett Fawcett",
+        "Emmeline Pankhurst"
+      ],
+      "keyTerms": [
+        {
+          "term": "Franchise",
+          "definition": "The constitutional right allowing qualified citizens to cast a ballot in parliamentary elections."
+        },
+        {
+          "term": "Disenfranchisement",
+          "definition": "Being legally deprived of the right to vote—still affecting women aged 21–29 until equal suffrage in 1928."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_4",
+      "num": 4,
+      "era": "part_1",
+      "date": "September 1939 – December 1942",
+      "shortDate": "1939–Dec 1942",
+      "shortTitle": "Evacuation & Beveridge Report",
+      "title": "Operation Pied Piper & Sir William Beveridge’s 'Five Giants'",
+      "specTag": "Enquiry 2 • Blueprint for Welfare",
+      "enquiryQuestion": "Why and how did post-war Britain create the Welfare State and free NHS?",
+      "lessonIndex": 1,
+      "stageNum": 2,
+      "imageUrl": "/images/post_war_britain/beveridge_report_title_page_1942.jpg",
+      "imageCaption": "Title page of Sir William Beveridge’s landmark report Social Insurance and Allied Services (November/December 1942, Cmd. 6404), selling over 630,000 copies.",
+      "catalyst": "**Operation Pied Piper** (September 1939) evacuated **1.5 million urban children and mothers** to rural homes, shocking host families with inner-city rickets, lice, and malnutrition while the Blitz forged cross-class solidarity.",
+      "turningPoint": "In **December 1942**, civil servant **Sir William Beveridge** published his bestselling report (*630,000+ copies sold*), proposing **'cradle to grave'** social insurance to slay **Five Giants**: Want, Disease, Ignorance, Squalor, and Idleness.",
+      "impact": "Queues formed outside bookshops as soldiers and civilians embraced Beveridge’s vision that post-war Britain must never return to 1930s poverty.",
+      "bridgeToNext": "When Nazi Germany surrendered in 1945, British voters went to the polls determined to turn Beveridge’s wartime blueprint into law.",
+      "keyAgents": [
+        "Sir William Beveridge"
+      ],
+      "keyTerms": [
+        {
+          "term": "Beveridge Report",
+          "definition": "The 1942 government report proposing universal social insurance to defeat Want, Disease, Ignorance, Squalor, and Idleness."
+        },
+        {
+          "term": "Social Security",
+          "definition": "State financial protection against sickness, unemployment, and old age funded through compulsory national insurance."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_5",
+      "num": 5,
+      "era": "part_1",
+      "date": "July 1945 – 1946",
+      "shortDate": "Jul 1945",
+      "shortTitle": "Attlee Landslide & Welfare Laws",
+      "title": "The 1945 Labour Landslide & Abolition of the Poor Law",
+      "specTag": "Enquiry 2 • Building Welfare",
+      "enquiryQuestion": "Why and how did post-war Britain create the Welfare State and free NHS?",
+      "lessonIndex": 1,
+      "stageNum": 3,
+      "imageUrl": "/images/upgraded/ks3-modern/pwb_l2_src_c_clement_attlee_portrait.jpg",
+      "imageCaption": "Prime Minister Clement Attlee (1883–1967): Winning a 146-seat Labour landslide in July 1945 on Let Us Face the Future to build the Welfare State and abolish Victorian workhouses.",
+      "catalyst": "Although voters admired Winston Churchill’s wartime leadership, millions associated the Conservatives with **1930s mass unemployment**, means-tested dole queues, and the **1936 Jarrow March**.",
+      "turningPoint": "Campaigning on *Let Us Face the Future*, **Clement Attlee’s Labour Party** won a **146-seat landslide in July 1945** and passed the **National Insurance Act (1946)** alongside nationalising key industries.",
+      "impact": "Coupled with the 1948 National Assistance Act, Labour permanently **abolished Victorian Poor Law workhouses**, replacing charity stigma with universal flat-rate pensions and benefits.",
+      "bridgeToNext": "Rebuilding Blitz-damaged cities and staffing new public services soon created an acute post-war labour shortage across Britain.",
+      "keyAgents": [
+        "Sir William Beveridge",
+        "Aneurin 'Nye' Bevan"
+      ],
+      "keyTerms": [
+        {
+          "term": "Welfare State",
+          "definition": "A system in which government protects every citizen’s health and social security from cradle to grave."
+        },
+        {
+          "term": "Nationalisation",
+          "definition": "Transferring private industries such as coal, railways, and utilities into public state ownership."
+        },
+        {
+          "term": "Austerity",
+          "definition": "Post-war rationing and tight spending controls maintained to rebuild Britain’s war-exhausted economy."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_6",
+      "num": 6,
+      "era": "part_2",
+      "date": "22 June 1948",
+      "shortDate": "22 Jun 1948",
+      "shortTitle": "Empire Windrush at Tilbury",
+      "title": "The British Nationality Act & Arrival of HMT Empire Windrush",
+      "specTag": "Enquiry 3 • Windrush Pioneers",
+      "enquiryQuestion": "Why did the Windrush generation come to Britain, and what hostility did they face?",
+      "lessonIndex": 2,
+      "stageNum": 3,
+      "imageUrl": "/images/post_war_britain/windrush_passenger_manifest_1948.jpg",
+      "imageCaption": "Official passenger manifest for HMT Empire Windrush docking at Tilbury on 22 June 1948 (The National Archives BT 26/1237), listing mechanics, nurses, clerks, and RAF veterans.",
+      "mapUrl": "/images/post_war_britain/maps/ks3_pwb_map_l3_empire_windrush_voyage_1948.svg",
+      "mapCaption": "Reference Map: The 8,000-mile voyage of HMT Empire Windrush from Trinidad and Jamaica to Tilbury Docks (May–June 1948) and London settlement hubs.",
+      "catalyst": "Clearing Blitz ruins and running railways, buses, and hospitals demanded hundreds of thousands of workers, while the **British Nationality Act 1948** confirmed full **CUKC citizenship** for 800 million Empire subjects.",
+      "turningPoint": "On **22 June 1948**, **HMT Empire Windrush** docked at **Tilbury** carrying **492 Caribbean passengers**—including RAF veterans, nurses, and calypsonian **Lord Kitchener** singing *'London is the Place for Me'*.",
+      "impact": "Commonwealth citizens arrived legally with British passports and voting rights to help rebuild post-war Britain, laying the foundations of modern multicultural society.",
+      "bridgeToNext": "Thirteen days after the Windrush docked at Tilbury, Health Minister Aneurin Bevan opened the doors of the free National Health Service.",
+      "keyAgents": [
+        "Claudia Jones"
+      ],
+      "keyTerms": [
+        {
+          "term": "British Nationality Act",
+          "definition": "The 1948 statute confirming Citizens of the UK and Colonies (CUKC) status and unrestricted right of entry for Empire and Commonwealth subjects."
+        },
+        {
+          "term": "Commonwealth",
+          "definition": "The association of Britain and former territories of the British Empire whose citizens helped rebuild post-war Britain."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_7",
+      "num": 7,
+      "era": "part_2",
+      "date": "5 July 1948",
+      "shortDate": "5 Jul 1948",
+      "shortTitle": "Bevan Launches the Free NHS",
+      "title": "'The Appointed Day': Aneurin Bevan Opens the National Health Service",
+      "specTag": "Enquiry 2 • Universal Healthcare",
+      "enquiryQuestion": "Why and how did post-war Britain create the Welfare State and free NHS?",
+      "lessonIndex": 1,
+      "stageNum": 5,
+      "imageUrl": "/images/bevan_first_day_nhs_1948.jpg",
+      "imageCaption": "Health Minister Aneurin Bevan visiting 13-year-old patient Sylvia Beckingham at Park Hospital, Manchester on 'The Appointed Day' (5 July 1948), launching free universal healthcare.",
+      "catalyst": "Private doctors in the **British Medical Association (BMA)** fiercely resisted becoming salaried state employees, threatening to boycott Labour’s planned health service.",
+      "turningPoint": "Health Minister **Aneurin 'Nye' Bevan** won consultants over (*'stuffed their mouths with gold'*) by allowing private pay-beds, opening the **National Health Service** on **5 July 1948**.",
+      "impact": "Funded through general taxation, hospital care, family doctors, dental work, and **NHS spectacles** became **free at the point of delivery** for every resident—staffed increasingly by Windrush nurses.",
+      "bridgeToNext": "Even as Caribbean nurses and rail staff sustained Britain’s new public services, they encountered a harsh informal 'colour bar' in 1950s housing.",
+      "keyAgents": [
+        "Aneurin 'Nye' Bevan"
+      ],
+      "keyTerms": [
+        {
+          "term": "Universal Healthcare",
+          "definition": "Medical treatment provided to every resident based on clinical need rather than ability to pay."
+        },
+        {
+          "term": "Welfare State",
+          "definition": "Post-war Britain’s system of tax- and insurance-funded healthcare, pensions, and social security."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_8",
+      "num": 8,
+      "era": "part_2",
+      "date": "Early–Mid 1950s",
+      "shortDate": "1950s",
+      "shortTitle": "Housing Colour Bar & Pardners",
+      "title": "'No Blacks, No Dogs, No Irish' & Caribbean 'Pardner' Resilience",
+      "specTag": "Enquiry 3 • Everyday Discrimination",
+      "enquiryQuestion": "Why did the Windrush generation come to Britain, and what hostility did they face?",
+      "lessonIndex": 2,
+      "stageNum": 4,
+      "imageUrl": "/images/post_war_britain/pwb_l3_b3_brixton_electric_avenue_market.jpg",
+      "imageCaption": "Electric Avenue in Brixton Market: Shut out by private landlords’ 'colour bar' signs and bank mortgage refusals, Caribbean families pooled weekly 'pardner' savings to buy homes.",
+      "catalyst": "With no anti-discrimination laws on Britain’s statute books in the 1950s, landlords and employers could openly turn away Black and Irish citizens.",
+      "turningPoint": "Boarding-house windows displayed notorious **'No Blacks, No Dogs, No Irish'** signs and banks refused mortgages, prompting Caribbean families to form cooperative weekly **'pardner' savings clubs**.",
+      "impact": "Pooling community funds enabled Windrush families to buy freehold homes and build vibrant cultural and commercial hubs in **Brixton**, **Notting Hill**, and cities across Britain.",
+      "bridgeToNext": "Alongside domestic struggles over equality in the 1950s, Cold War Britain raced to build atomic and thermonuclear weapons.",
+      "keyAgents": [
+        "Claudia Jones"
+      ],
+      "keyTerms": [
+        {
+          "term": "Colour Bar",
+          "definition": "Informal or institutional racial discrimination excluding Black and Asian citizens from housing, jobs, and public venues."
+        },
+        {
+          "term": "Migration",
+          "definition": "The movement of people from one region or country to settle and build communities in another."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_9",
+      "num": 9,
+      "era": "part_2",
+      "date": "October 1952 – May 1957",
+      "shortDate": "1952–1957",
+      "shortTitle": "British A-Bomb & H-Bomb Tests",
+      "title": "Operation Hurricane & Operation Grapple: Britain’s Nuclear Arsenal",
+      "specTag": "Enquiry 5 • Nuclear Deterrence",
+      "enquiryQuestion": "How did the threat of nuclear war spark protest and shape British life?",
+      "lessonIndex": 4,
+      "stageNum": 1,
+      "imageUrl": "/images/post_war_britain/pwb_l5_b0_operation_grapple_hbomb_1957.jpg",
+      "imageCaption": "Mushroom cloud of Britain’s Operation Grapple thermonuclear test off Malden Island in the Pacific (15 May 1957), five years after the 1952 Operation Hurricane atomic test.",
+      "catalyst": "Determined to preserve great-power prestige and not rely solely on Washington against Soviet aggression, both **Attlee** and **Churchill** backed an independent British nuclear deterrent.",
+      "turningPoint": "Britain became the **third nuclear power** with **Operation Hurricane** off Western Australia (**October 1952**) and detonated its first megaton hydrogen bomb in **Operation Grapple** (**May 1957**).",
+      "impact": "Thermonuclear blasts a thousand times stronger than Hiroshima—and growing scientific alarm over **radioactive fallout**—convinced critics that nuclear war meant national extinction.",
+      "bridgeToNext": "Horror at atmospheric H-bomb fallout galvanized philosophers, church leaders, and artists in London to launch a mass peace movement in February 1958.",
+      "keyAgents": [
+        "Bertrand Russell"
+      ],
+      "keyTerms": [
+        {
+          "term": "Disarmament",
+          "definition": "The reduction or complete abolition of conventional or nuclear weapons arsenals."
+        },
+        {
+          "term": "Civil Defence",
+          "definition": "Government measures intended to protect civilian populations and state continuity during wartime attack."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_10",
+      "num": 10,
+      "era": "part_2",
+      "date": "February – Easter 1958",
+      "shortDate": "Spring 1958",
+      "shortTitle": "CND & First Aldermaston March",
+      "title": "Gerald Holtom’s Peace Symbol, CND & The 52-Mile Aldermaston March",
+      "specTag": "Enquiry 5 • Anti-Nuclear Protest",
+      "enquiryQuestion": "How did the threat of nuclear war spark protest and shape British life?",
+      "lessonIndex": 4,
+      "stageNum": 2,
+      "imageUrl": "/images/post_war_britain/aldermaston_cnd_demo.jpg",
+      "imageCaption": "CND marchers carrying regional banners through Berkshire: Over Easter 1958, thousands walked 52 miles to the Atomic Weapons Research Establishment at Aldermaston.",
+      "mapUrl": "/images/post_war_britain/maps/ks3_pwb_map_l5_protest_rights_nuclear_britain_1958_83.svg",
+      "mapCaption": "Reference Map: Post-War Protest & Nuclear Britain (1958–1983)—plotting the 52-mile Aldermaston route, Bristol Bus Boycott, York ROC Bunker, and RAF Greenham Common.",
+      "catalyst": "Moral outrage over hydrogen-bomb testing united philosopher **Bertrand Russell**, St Paul’s **Canon John Collins**, students, and pacifists behind **unilateral nuclear disarmament**.",
+      "turningPoint": "Launching **CND** in **February 1958** with **Gerald Holtom’s** semaphore **'N' and 'D'** peace logo, tens of thousands marched **52 miles** over **Easter 1958** to the weapons laboratory at **Aldermaston**.",
+      "impact": "Holtom’s badge became the universal global symbol of peace, and the annual Aldermaston marches gave birth to a vibrant post-war youth protest culture.",
+      "bridgeToNext": "Later that same year, violent racist attacks in West London tested the resilience of Britain’s Caribbean community and sparked cultural resistance.",
+      "keyAgents": [
+        "Bertrand Russell"
+      ],
+      "keyTerms": [
+        {
+          "term": "Disarmament",
+          "definition": "Unilateral disarmament argued Britain should scrap its nuclear weapons voluntarily as a moral lead to the world."
+        },
+        {
+          "term": "Direct Action",
+          "definition": "Public marches, vigils, and demonstrations aimed at shifting national policy outside routine parliamentary debate."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_11",
+      "num": 11,
+      "era": "part_2",
+      "date": "August 1958 – January 1959",
+      "shortDate": "1958–Jan 1959",
+      "shortTitle": "Notting Hill & Claudia Jones",
+      "title": "The 1958 Notting Hill Riots & Claudia Jones’s Caribbean Carnival",
+      "specTag": "Enquiry 3 • Cultural Defiance",
+      "enquiryQuestion": "Why did the Windrush generation come to Britain, and what hostility did they face?",
+      "lessonIndex": 2,
+      "stageNum": 5,
+      "imageUrl": "/images/post_war_britain/pwb_l3_b4_notting_hill_carnival_parade.jpg",
+      "imageCaption": "Young masquerader at the Notting Hill Carnival: Founded indoors at St Pancras Town Hall by Trinidadian journalist Claudia Jones in January 1959 to heal trauma after the 1958 riots.",
+      "catalyst": "In late **August 1958**, white **'Teddy Boy'** mobs armed with iron bars and petrol bombs attacked Black residents in **Notting Hill** while police offered little protection.",
+      "turningPoint": "Answering fear with pride, Trinidadian activist **Claudia Jones** founded the **West Indian Gazette** in Brixton and staged the first indoor **Caribbean Carnival** at St Pancras Town Hall in **January 1959**.",
+      "impact": "Broadcast by the BBC with steel bands and calypso, Jones’s festival asserted *'a people’s art is the genesis of their freedom'* and grew into **Notting Hill Carnival**.",
+      "bridgeToNext": "Four years later in Bristol, Black activists moved from cultural resilience to an organised economic boycott against workplace segregation.",
+      "keyAgents": [
+        "Claudia Jones"
+      ],
+      "keyTerms": [
+        {
+          "term": "Assimilation",
+          "definition": "Pressure on minority groups to abandon their own heritage—challenged by Claudia Jones’s celebration of Caribbean culture."
+        },
+        {
+          "term": "Prejudice",
+          "definition": "Hostile attitudes directed against individuals or communities on the basis of race or background."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_12",
+      "num": 12,
+      "era": "part_3",
+      "date": "April – May 1963",
+      "shortDate": "Apr–May 1963",
+      "shortTitle": "Guy Bailey & Bristol Boycott",
+      "title": "Exposing the Bus Colour Bar: Guy Bailey & Paul Stephenson",
+      "specTag": "Enquiry 4 • Civil Rights Action",
+      "enquiryQuestion": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
+      "lessonIndex": 3,
+      "stageNum": 2,
+      "imageUrl": "/images/post_war_britain/pwb_l4_b1_bristol_omnibus_bus_1257.jpg",
+      "imageCaption": "Preserved Bristol Omnibus Company double-decker: When managers cancelled qualified 18-year-old applicant Guy Bailey’s interview on learning he was West Indian, activists launched a citywide boycott.",
+      "catalyst": "Despite a shortage of 200 crew members, the state-owned **Bristol Omnibus Company**—backed by a local **TGWU union** vote—refused to hire Black or Asian bus drivers and conductors.",
+      "turningPoint": "Youth worker **Paul Stephenson** arranged an interview for qualified 18-year-old **Guy Bailey**; when managers cancelled it on learning Bailey was West Indian, the **West Indian Development Council** launched a boycott on **30 April 1963**.",
+      "impact": "Inspired by the 1955 **Montgomery Bus Boycott**, Roy Hackett, Owen Henry, Audley Evans, and Stephenson rallied thousands of Bristolians to walk to work and starve the company of fares.",
+      "bridgeToNext": "As empty green-and-cream buses lost money through the summer of 1963, students and national politicians joined the Bristol campaign.",
+      "keyAgents": [
+        "Paul Stephenson OBE"
+      ],
+      "keyTerms": [
+        {
+          "term": "Boycott",
+          "definition": "Refusing to use or buy from a company as a coordinated, non-violent protest against injustice."
+        },
+        {
+          "term": "Discrimination",
+          "definition": "Unjust exclusion of qualified applicants—such as Guy Bailey—solely on the grounds of race."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_13",
+      "num": 13,
+      "era": "part_3",
+      "date": "May – 28 August 1963",
+      "shortDate": "28 Aug 1963",
+      "shortTitle": "Bristol Colour Bar Defeated",
+      "title": "Student Marches, Political Backing & Victory on 28 August 1963",
+      "specTag": "Enquiry 4 • Breaking Segregation",
+      "enquiryQuestion": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
+      "lessonIndex": 3,
+      "stageNum": 4,
+      "imageUrl": "/images/post_war_britain/bristol_bus_boycott_student_march_1963.jpg",
+      "imageCaption": "University of Bristol students marching in May 1963 with 'No Colour Bar' placards alongside backing from local MP Tony Benn and Labour leader Harold Wilson.",
+      "catalyst": "Pickets by **University of Bristol students**, church groups, and the High Commissioner for Trinidad & Tobago turned a local dispute into a national scandal.",
+      "turningPoint": "Bristol South East MP **Tony Benn** and Labour leader **Harold Wilson** publicly backed the boycott, forcing the company and union to scrap the colour bar on **28 August 1963**—the very day of Martin Luther King’s *'I Have a Dream'* speech.",
+      "impact": "In September 1963, Sikh graduate **Raghbir Singh** became Bristol’s first non-white bus conductor, soon joined by **Norman Samuels** and fellow Black and Asian crews.",
+      "bridgeToNext": "Victory on Bristol’s buses gave Harold Wilson a clear mandate when Labour won office the following year to outlaw racial discrimination nationwide.",
+      "keyAgents": [
+        "Paul Stephenson OBE"
+      ],
+      "keyTerms": [
+        {
+          "term": "Segregation",
+          "definition": "Institutional separation or exclusion of racial groups in workplaces, transport, or public facilities."
+        },
+        {
+          "term": "Direct Action",
+          "definition": "Citizen marches, pickets, and consumer boycotts used to overturn entrenched institutional prejudice."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_14",
+      "num": 14,
+      "era": "part_3",
+      "date": "1965 – 1968",
+      "shortDate": "1965–1968",
+      "shortTitle": "Race Relations Acts Enacted",
+      "title": "Harold Wilson’s Race Relations Acts of 1965 and 1968",
+      "specTag": "Enquiry 4 • Statutory Civil Rights",
+      "enquiryQuestion": "How did the 1963 Bristol Bus Boycott help win Britain’s first Race Relations laws?",
+      "lessonIndex": 3,
+      "stageNum": 5,
+      "imageUrl": "/images/bristol_bus_boycott_mural.jpg",
+      "imageCaption": "'Equality 63' mural in Bristol recording how the 1963 bus boycott victory paved the way for Britain’s landmark Race Relations Acts of 1965 and 1968.",
+      "catalyst": "The Bristol Bus Boycott proved that without parliamentary legislation, private landlords and employers across Britain could still practise open racial exclusion.",
+      "turningPoint": "Prime Minister **Harold Wilson’s** government passed the **Race Relations Act 1965** banning discrimination in public places, then extended legal protection to **housing and employment** in the **Race Relations Act 1968**.",
+      "impact": "These pioneering statutes laid the legal cornerstone for later British equality laws, culminating in the modern Equality Act framework.",
+      "bridgeToNext": "As civil-rights campaigns reshaped British law, renewed Cold War missile tensions in the early 1980s ignited a dramatic second wave of anti-nuclear protest.",
+      "keyAgents": [
+        "Paul Stephenson OBE"
+      ],
+      "keyTerms": [
+        {
+          "term": "Race Relations Act",
+          "definition": "Britain’s 1965 statute outlawing racial discrimination in public places, expanded in 1968 to cover housing and jobs."
+        },
+        {
+          "term": "Discrimination",
+          "definition": "Unlawful unequal treatment on grounds of race, colour, or ethnic or national origins."
+        }
+      ]
+    },
+    {
+      "id": "post_war_britain_ms_15",
+      "num": 15,
+      "era": "part_3",
+      "date": "May 1980 – December 1982",
+      "shortDate": "1980–Dec 1982",
+      "shortTitle": "Protect & Survive and Greenham",
+      "title": "'Protect and Survive' vs The Greenham Common Women’s Peace Camp",
+      "specTag": "Enquiry 5 • Second Cold War Protest",
+      "enquiryQuestion": "How did the threat of nuclear war spark protest and shape British life?",
+      "lessonIndex": 4,
+      "stageNum": 5,
+      "imageUrl": "/images/post_war_britain/greenham_common_embracing_base_1982.jpg",
+      "imageCaption": "Women linking hands around the perimeter fence of RAF Greenham Common in Berkshire (12 December 1982), opposing the stationing of 96 US nuclear cruise missiles.",
+      "mapUrl": "/images/post_war_britain/maps/ks3_pwb_map_l5_protest_rights_nuclear_britain_1958_83.svg",
+      "mapCaption": "Reference Map: Whitehall’s Protect and Survive, the semi-subterranean York ROC Bunker, and the Women’s Peace Camp at RAF Greenham Common.",
+      "catalyst": "While officials manned reinforced **Royal Observer Corps bunkers** like York (1961), the Home Office’s **May 1980 *Protect and Survive* booklet** told families facing a four-minute warning to shelter behind indoor doors and sandbags.",
+      "turningPoint": "Historian **E. P. Thompson** countered with *Protest and Survive*, and in **December 1982** **30,000 women** linked hands to **'Embrace the Base'** around the nine-mile fence at **RAF Greenham Common** against US cruise missiles.",
+      "impact": "From Suffragettes and Windrush pioneers to Bristol boycotters and Greenham women, twentieth-century citizen protest repeatedly expanded democratic rights and public accountability across Britain.",
+      "bridgeToNext": "Peaceful civic direct action—from 1918 suffrage and the 1948 NHS to 1960s civil rights and 1980s peace camps—remains a defining force in modern British democracy.",
+      "keyAgents": [
+        "Bertrand Russell"
+      ],
+      "keyTerms": [
+        {
+          "term": "Fallout Shelter",
+          "definition": "A radiation-shielded underground bunker—built for state ROC monitoring crews while ordinary households lacked public shelters."
+        },
+        {
+          "term": "Civil Defence",
+          "definition": "Home Office emergency guidance such as the controversial 1980 Protect and Survive nuclear booklet."
+        },
+        {
+          "term": "Paranoia",
+          "definition": "Widespread Cold War dread of sudden four-minute nuclear warning sirens and thermonuclear annihilation."
+        }
+      ]
+    }
+  ]
+}

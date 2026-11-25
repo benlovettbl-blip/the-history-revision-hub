@@ -1,0 +1,555 @@
+{
+  "unitId": "monarchy_religion_power",
+  "schemaVersion": "v1-curated-living-timeline",
+  "courseTitle": "Crown, Church, or Parliament (1517–1689)",
+  "eyebrow": "KEY STAGE 3 HISTORY • YEAR 7 ENQUIRY CHRONOLOGY • 15 MILESTONES",
+  "beatLabels": {
+    "catalyst": "1. Context & Trigger",
+    "turningPoint": "2. Key Turning Point",
+    "impact": "3. Historical Consequence",
+    "bridgeBadge": "🔗 Leads To Next"
+  },
+  "streamFilters": [],
+  "eras": [
+    {
+      "id": "part_1",
+      "code": "Part 1",
+      "badge": "PART 1 • 1517–1547",
+      "pillLabel": "Part 1: Tudor Reformation",
+      "title": "Part 1: Luther, Henry VIII & The Break with Rome (1517–1547)",
+      "color": "#1e3a8a",
+      "accent": "#2563eb",
+      "softBg": "#eff6ff",
+      "softBorder": "#bfdbfe"
+    },
+    {
+      "id": "part_2",
+      "code": "Part 2",
+      "badge": "PART 2 • 1558–1588",
+      "pillLabel": "Part 2: Elizabeth & Armada",
+      "title": "Part 2: Elizabeth I’s Middle Way & The Spanish Armada (1558–1588)",
+      "color": "#991b1b",
+      "accent": "#dc2626",
+      "softBg": "#fef2f2",
+      "softBorder": "#fecaca"
+    },
+    {
+      "id": "part_3",
+      "code": "Part 3",
+      "badge": "PART 3 • 1603–1689",
+      "pillLabel": "Part 3: Civil War & Parliament",
+      "title": "Part 3: Stuart Divine Right, Regicide & Parliamentary Supremacy (1603–1689)",
+      "color": "#0f766e",
+      "accent": "#0d9488",
+      "softBg": "#f0fdfa",
+      "softBorder": "#99f6e4"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "monarchy_religion_power_ms_1",
+      "num": 1,
+      "era": "part_1",
+      "date": "October 1517 – 1521",
+      "shortDate": "Oct 1517",
+      "shortTitle": "Luther’s 95 Theses",
+      "title": "Martin Luther’s 95 Theses & Spark of the Reformation",
+      "specTag": "Enquiry 1 • Religious Schism",
+      "enquiryQuestion": "Why did Henry VIII break with Rome and destroy the monasteries?",
+      "lessonIndex": 0,
+      "stageNum": 1,
+      "imageUrl": "/images/ks3_mrp/mrp_l1_s0_martin_luther_cranach_1529.jpg",
+      "imageCaption": "Lucas Cranach the Elder, Portrait of Martin Luther (1529, Uffizi Gallery): German monk whose 1517 protest against papal indulgences ignited the European Reformation.",
+      "catalyst": "Across early sixteenth-century Europe, anger grew at Catholic officials selling **indulgences**—certificates claiming money could buy forgiveness and shorten time in **Purgatory**.",
+      "turningPoint": "In **October 1517**, German monk **Martin Luther** nailed **95 arguments** to the Wittenberg church door, using the printing press to challenge papal authority across Europe.",
+      "impact": "Protestant ideas spread rapidly, though young **King Henry VIII** initially defended Catholic sacraments and won Pope Leo X’s proud title **Defender of the Faith**.",
+      "bridgeToNext": "Within ten years, Henry’s desperate need for a male Tudor heir turned Rome’s champion into the Pope’s fiercest royal rival.",
+      "keyAgents": [
+        "Martin Luther",
+        "King Henry VIII"
+      ],
+      "keyTerms": [
+        {
+          "term": "Reformation",
+          "definition": "A 16th-century religious movement that challenged papal Catholic authority and created Protestant churches."
+        },
+        {
+          "term": "Indulgence",
+          "definition": "A certificate sold by Catholic officials promising forgiveness of sins and reduced time in Purgatory."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_2",
+      "num": 2,
+      "era": "part_1",
+      "date": "1527–1529",
+      "shortDate": "1527–1529",
+      "shortTitle": "Henry’s Great Matter",
+      "title": "Henry VIII’s Dynastic Crisis & The Roman Deadlock",
+      "specTag": "Enquiry 1 • Dynastic Succession Crisis",
+      "enquiryQuestion": "Why did Henry VIII break with Rome and destroy the monasteries?",
+      "lessonIndex": 0,
+      "stageNum": 3,
+      "imageUrl": "/images/ks3_mrp/mrp_l1_b2_cardinal_thomas_wolsey_portrait.jpg",
+      "imageCaption": "Cardinal Thomas Wolsey (National Trust): Henry VIII’s chief minister who fell from power in 1529 after Pope Clement VII revoked the Blackfriars annulment trial.",
+      "catalyst": "Fearing civil war because Queen **Catherine of Aragon** had borne no surviving son, **Henry VIII** fell in love with **Anne Boleyn** and demanded a papal **annulment**.",
+      "turningPoint": "Because Catherine’s nephew **Emperor Charles V** sacked Rome in May 1527 and held **Pope Clement VII** prisoner, the Pope cancelled Cardinal Wolsey’s London trial in 1529.",
+      "impact": "Wolsey was stripped of office and arrested, convincing Henry that no foreign Pope should hold legal power over the English Crown.",
+      "bridgeToNext": "To bypass Rome legally, sharp-minded lawyer Thomas Cromwell turned to England’s Reformation Parliament.",
+      "keyAgents": [
+        "King Henry VIII",
+        "Cardinal Thomas Wolsey & Thomas Cromwell"
+      ],
+      "keyTerms": [
+        {
+          "term": "Dynastic",
+          "definition": "Relating to a hereditary line of rulers from the same family and the struggle to secure their unbroken succession."
+        },
+        {
+          "term": "Annulment",
+          "definition": "A legal or religious declaration that a marriage was invalid from the beginning and never truly existed."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_3",
+      "num": 3,
+      "era": "part_1",
+      "date": "1529–1533",
+      "shortDate": "1529–1533",
+      "shortTitle": "Break with Rome Statutes",
+      "title": "Thomas Cromwell & The Reformation Parliament’s Break with Rome",
+      "specTag": "Enquiry 1 • Statutory Revolution",
+      "enquiryQuestion": "Why did Henry VIII break with Rome and destroy the monasteries?",
+      "lessonIndex": 0,
+      "stageNum": 4,
+      "imageUrl": "/images/thomas_cromwell.jpg",
+      "imageCaption": "Hans Holbein the Younger, Portrait of Thomas Cromwell (1532–1533, Frick Collection): Chief minister who drafted the parliamentary statutes severing England from papal rule.",
+      "catalyst": "Blocked by papal diplomacy, chief minister **Thomas Cromwell** realised Henry could sever Rome’s authority using binding **statute laws** voted by MPs.",
+      "turningPoint": "Between 1529 and 1533, the **Reformation Parliament** halted church tax payments to Rome and passed the **1533 Act in Restraint of Appeals**, banning legal appeals to the Pope.",
+      "impact": "Archbishop Cranmer annulled Henry’s first marriage and crowned **Anne Boleyn**, unintentionally elevating **King-in-Parliament** as England’s supreme law-making partnership.",
+      "bridgeToNext": "Having broken Rome’s legal grip, Henry and Cromwell moved in 1534 to seize direct leadership and wealth of the English Church.",
+      "keyAgents": [
+        "Cardinal Thomas Wolsey & Thomas Cromwell",
+        "King Henry VIII"
+      ],
+      "keyTerms": [
+        {
+          "term": "Statute",
+          "definition": "A formal written law passed by Parliament and approved by the monarch, possessing supreme legal power."
+        },
+        {
+          "term": "Sovereignty",
+          "definition": "Supreme, independent power and legal authority over a state, free from any external control or foreign ruler."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_4",
+      "num": 4,
+      "era": "part_1",
+      "date": "1534–1540",
+      "shortDate": "1534–1540",
+      "shortTitle": "Supremacy & Monasteries",
+      "title": "The 1534 Act of Supremacy & Dissolution of 800 Monasteries",
+      "specTag": "Enquiry 1 • Royal Supremacy & Wealth",
+      "enquiryQuestion": "Why did Henry VIII break with Rome and destroy the monasteries?",
+      "lessonIndex": 0,
+      "stageNum": 5,
+      "imageUrl": "/images/monarchy_religion_power/fountains_abbey_ruins.jpg",
+      "imageCaption": "Ruins of Fountains Abbey, North Yorkshire: Dissolved in 1539 when Henry VIII and Thomas Cromwell closed over 800 monasteries and sold their estates.",
+      "catalyst": "To cement total religious control and replenish the royal treasury, Henry demanded sworn loyalty oaths and ordered Cromwell to survey Church wealth.",
+      "turningPoint": "Parliament’s **1534 Act of Supremacy** named Henry **Supreme Head of the Church of England**; dissenters like **Sir Thomas More** were executed, and over **800 monasteries** were dissolved (1536–1540).",
+      "impact": "Selling monastic estates enriched the Crown and gave landowning gentry a lasting financial stake in keeping England Protestant in Parliament.",
+      "bridgeToNext": "After fierce Protestant shifts under Edward VI and nearly 300 Marian Catholic burnings, Elizabeth I inherited a fractured kingdom in 1558.",
+      "keyAgents": [
+        "King Henry VIII",
+        "Cardinal Thomas Wolsey & Thomas Cromwell"
+      ],
+      "keyTerms": [
+        {
+          "term": "Supremacy",
+          "definition": "The state of holding ultimate, unquestioned legal and religious authority within a kingdom."
+        },
+        {
+          "term": "Dissolution",
+          "definition": "The official dismantling, closure, and confiscation of Catholic monasteries and abbeys by Henry VIII."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_5",
+      "num": 5,
+      "era": "part_2",
+      "date": "Nov 1558 – May 1559",
+      "shortDate": "May 1559",
+      "shortTitle": "Elizabeth’s Middle Way",
+      "title": "Elizabeth I’s 1559 Religious Settlement & The Via Media",
+      "specTag": "Enquiry 2 • Religious Compromise",
+      "enquiryQuestion": "How did Elizabeth I try to settle England’s religious divisions after 1558?",
+      "lessonIndex": 1,
+      "stageNum": 3,
+      "imageUrl": "/images/book_of_common_prayer_1559.jpg",
+      "imageCaption": "Title page of Queen Elizabeth I’s 1559 Book of Common Prayer (British Library), establishing one English prayer book across every parish.",
+      "catalyst": "Inheriting England in **1558** after Mary I burned nearly **300 Protestant martyrs** while returning **Puritans** demanded strict reform, **Elizabeth I** needed peace to avoid civil war.",
+      "turningPoint": "Parliament’s **1559 Acts of Supremacy and Uniformity** styled Elizabeth **Supreme Governor** and introduced one English **Book of Common Prayer** backed by **12-pence** recusancy fines.",
+      "impact": "Elizabeth’s **Via Media** (‘Middle Way’) secured broad outward conformity across parishes without making ‘windows into men’s souls’.",
+      "bridgeToNext": "Peace did not last: the arrival of Catholic claimant Mary, Queen of Scots in 1568 soon sparked rebellion and papal fury.",
+      "keyAgents": [
+        "Queen Elizabeth I"
+      ],
+      "keyTerms": [
+        {
+          "term": "Supreme Governor",
+          "definition": "The compromise legal title chosen by Elizabeth I in 1559 to appease Catholics and Puritans."
+        },
+        {
+          "term": "Via Media",
+          "definition": "Latin for \"The Middle Way\": Elizabeth I’s strategic policy of balancing Protestant and Catholic practices."
+        },
+        {
+          "term": "Recusant",
+          "definition": "A person (almost always Catholic) who refused to attend compulsory Church of England services on Sundays."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_6",
+      "num": 6,
+      "era": "part_2",
+      "date": "Nov 1569 – Feb 1570",
+      "shortDate": "1569–1570",
+      "shortTitle": "Northern Revolt & Papal Bull",
+      "title": "Revolt of the Northern Earls & Pope Pius V’s Excommunication",
+      "specTag": "Enquiry 2 • Catholic Rebellion",
+      "enquiryQuestion": "How did Elizabeth I try to settle England’s religious divisions after 1558?",
+      "lessonIndex": 1,
+      "stageNum": 4,
+      "imageUrl": "/images/eee/kt2/pope_pius_v_passarotti_walters.jpg",
+      "imageCaption": "Bartolomeo Passarotti, Portrait of Pope Pius V (Walters Art Museum): Issued the 1570 papal bull Regnans in Excelsis excommunicating Elizabeth I.",
+      "catalyst": "Traditionalist Catholic **Northern Earls** rebelled in **1569**, storming Durham Cathedral to smash Protestant communion tables and celebrate Latin Mass.",
+      "turningPoint": "After Elizabeth crushed the revolt and executed **400 rebels**, **Pope Pius V** issued the **February 1570 papal bull *Regnans in Excelsis*** excommunicating Elizabeth as a heretic.",
+      "impact": "By releasing English Catholics from their oath of allegiance, the Pope turned every practising Catholic into a suspected traitor in the eyes of Parliament.",
+      "bridgeToNext": "Encouraged by Rome’s decree, underground conspirators plotted to assassinate Elizabeth and crown Mary, Queen of Scots.",
+      "keyAgents": [
+        "Queen Elizabeth I",
+        "Mary, Queen of Scots"
+      ],
+      "keyTerms": [
+        {
+          "term": "Excommunication",
+          "definition": "An official decree by the Pope expelling someone from the Catholic Church and declaring them damned."
+        },
+        {
+          "term": "Papal Bull",
+          "definition": "A formal proclamation, letter, or charter issued by the Pope, bearing an authentic lead seal (bulla)."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_7",
+      "num": 7,
+      "era": "part_2",
+      "date": "1586 – 8 February 1587",
+      "shortDate": "Feb 1587",
+      "shortTitle": "Babington Plot & Mary’s End",
+      "title": "Walsingham’s Spies, The Babington Plot & Execution of Mary Stuart",
+      "specTag": "Enquiry 2 • Espionage & Regicide",
+      "enquiryQuestion": "How did Elizabeth I try to settle England’s religious divisions after 1558?",
+      "lessonIndex": 1,
+      "stageNum": 5,
+      "imageUrl": "/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg",
+      "imageCaption": "Contemporary engraving of the execution of Mary, Queen of Scots in the Great Hall of Fotheringhay Castle on 8 February 1587.",
+      "catalyst": "Imprisoned in England, **Mary, Queen of Scots** became the focal point for Catholic plots, culminating in **Anthony Babington’s 1586 conspiracy** to murder Elizabeth.",
+      "turningPoint": "Protestant spymaster **Sir Francis Walsingham** intercepted coded letters smuggled inside **beer barrels**, proving Mary’s treason and leading to her execution at **Fotheringhay** on **8 February 1587**.",
+      "impact": "Beheading an anointed Catholic queen removed Elizabeth’s domestic rival, but handed **King Philip II of Spain** papal backing to invade England.",
+      "bridgeToNext": "Before Philip II’s invasion fleet could sail from Spain, Sir Francis Drake launched a daring pre-emptive strike on Cadiz.",
+      "keyAgents": [
+        "Sir Francis Walsingham",
+        "Mary, Queen of Scots",
+        "Queen Elizabeth I"
+      ],
+      "keyTerms": [
+        {
+          "term": "Espionage",
+          "definition": "The practice of spying or using secret agents to uncover government treason and foreign plots."
+        },
+        {
+          "term": "Cipher",
+          "definition": "A secret code or mathematical system of writing used to disguise the meaning of conspiratorial letters."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_8",
+      "num": 8,
+      "era": "part_2",
+      "date": "April 1587",
+      "shortDate": "Apr 1587",
+      "shortTitle": "Drake Raids Cadiz Harbour",
+      "title": "Singeing the King of Spain’s Beard: Drake’s Raid on Cadiz",
+      "specTag": "Enquiry 3 • Naval Logistics Raid",
+      "enquiryQuestion": "Why did Philip II’s Spanish Armada fail to invade England in 1588?",
+      "lessonIndex": 2,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_mrp/mrp_l3_s1_drake_cadiz_attack_1587.jpg",
+      "imageCaption": "Sir Francis Drake’s April 1587 raid on Cadiz harbour, destroying Spanish warships and burning seasoned oak barrel staves.",
+      "mapUrl": "/images/monarchy_religion_power/maps/mrp7_map_l3_spanish_armada_voyage_wrecks_1588.svg",
+      "mapCaption": "Reference Map: Voyage & Wrecks of the 1588 Spanish Armada from Spain through the English Channel and around Scotland and Ireland.",
+      "catalyst": "Angered by English aid to Dutch Protestant rebels, Drake’s Caribbean raids, and Mary Stuart’s execution, **King Philip II** assembled a vast Catholic **Armada**.",
+      "turningPoint": "In **April 1587**, **Sir Francis Drake** sailed straight into **Cadiz harbour**, destroying **30 Spanish vessels** and burning warehouses of seasoned oak barrel staves.",
+      "impact": "Drake’s raid delayed the Armada by a full year and forced Spain to store water and food in green-wood casks that rotted at sea.",
+      "bridgeToNext": "Even with rotting supplies, 130 Spanish ships entered the English Channel in July 1588 in a tight crescent formation.",
+      "keyAgents": [
+        "Sir Francis Drake",
+        "King Philip II of Spain"
+      ],
+      "keyTerms": [
+        {
+          "term": "Privateer",
+          "definition": "An armed, privately owned warship commissioned by a government to raid enemy merchant shipping."
+        },
+        {
+          "term": "Logistics",
+          "definition": "The detailed coordination and management of complex military operations, supplies, and food at sea."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_9",
+      "num": 9,
+      "era": "part_2",
+      "date": "July–September 1588",
+      "shortDate": "Aug 1588",
+      "shortTitle": "Fireships & Armada Defeat",
+      "title": "Calais Fireships, Gravelines & Defeat of the Spanish Armada",
+      "specTag": "Enquiry 3 • Protestant Naval Victory",
+      "enquiryQuestion": "Why did Philip II’s Spanish Armada fail to invade England in 1588?",
+      "lessonIndex": 2,
+      "stageNum": 5,
+      "imageUrl": "/images/monarchy_religion_power/armada_fireships_calais_1588.jpg",
+      "imageCaption": "English fireships packed with pitch and gunpowder drift toward the anchored Spanish Armada off Calais at midnight on 7–8 August 1588 (National Maritime Museum).",
+      "mapUrl": "/images/monarchy_religion_power/maps/mrp7_map_l3_spanish_armada_voyage_wrecks_1588.svg",
+      "mapCaption": "Reference Map: Midnight fireships at Calais, the Battle of Gravelines, and Atlantic shipwrecks off Scotland and Ireland (August–September 1588).",
+      "catalyst": "Shadowed up the Channel by nimble English **race-built galleons**, the **130-ship Armada** anchored off **Calais** on 7 August 1588 awaiting the Duke of Parma’s army.",
+      "turningPoint": "At midnight, English captains sent **eight blazing fireships** into the anchorage; panicked Spanish ships cut their cables, lost formation, and were battered by **culverin broadsides** at **Gravelines**.",
+      "impact": "Fierce **‘Protestant Wind’** gales wrecked dozens of ships off Scotland and Ireland; only **67 vessels** returned, cementing England’s Protestant patriotic identity.",
+      "bridgeToNext": "When Elizabeth died childless in 1603, the new Stuart kings shattered Tudor cooperation with Parliament by claiming absolute Divine Right.",
+      "keyAgents": [
+        "Queen Elizabeth I",
+        "Sir Francis Drake",
+        "King Philip II of Spain"
+      ],
+      "keyTerms": [
+        {
+          "term": "Fireship",
+          "definition": "A wooden ship packed with gunpowder, pitch, and tar, set ablaze and steered into anchored enemy fleets."
+        },
+        {
+          "term": "Broadside",
+          "definition": "The simultaneous firing of all artillery guns mounted along one side of a warship."
+        },
+        {
+          "term": "Providence",
+          "definition": "The protective care and direct intervention of God in human affairs and historical battles."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_10",
+      "num": 10,
+      "era": "part_3",
+      "date": "1603–1629",
+      "shortDate": "1603–1629",
+      "shortTitle": "Stuart Divine Right Clash",
+      "title": "Stuart Accession & The Doctrine of Divine Right of Kings",
+      "specTag": "Enquiry 5 • Absolutism vs Parliament",
+      "enquiryQuestion": "Which turning point shifted power most decisively from monarchs to Parliament?",
+      "lessonIndex": 4,
+      "stageNum": 3,
+      "imageUrl": "/images/ks3_mrp/mrp_l5_b2_king_james_i_decritz_npg.jpg",
+      "imageCaption": "John de Critz the Elder, King James I of England and VI of Scotland (c. 1606): First Stuart monarch of England, who asserted the Divine Right of Kings before Parliament.",
+      "catalyst": "While Tudor monarchs had governed in partnership with MPs through statute law, the Stuart dynasty inherited the English throne under **James I** in **1603**.",
+      "turningPoint": "**James I** and his son **Charles I** championed the **Divine Right of Kings**, insisting monarchs were God’s lieutenants on earth and stood above parliamentary criticism.",
+      "impact": "Repeated clashes over royal finances, foreign war, and religion poisoned trust at Westminster and led Charles I to dismiss MPs completely in **1629**.",
+      "bridgeToNext": "Ruling alone without MPs for eleven years, Charles I stretched ancient royal taxes across inland England.",
+      "keyAgents": [
+        "King James I & King Charles I"
+      ],
+      "keyTerms": [
+        {
+          "term": "Absolutism",
+          "definition": "A political system in which a monarch holds total, unrestricted power over government and subjects."
+        },
+        {
+          "term": "Statute Law",
+          "definition": "Written laws formally passed by Parliament and approved by the monarch, superior to royal decrees."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_11",
+      "num": 11,
+      "era": "part_3",
+      "date": "1629–1640",
+      "shortDate": "1629–1640",
+      "shortTitle": "Personal Rule & Ship Money",
+      "title": "The Eleven Years’ Tyranny & John Hampden’s Ship Money Stand",
+      "specTag": "Enquiry 4 • Taxation Without Parliament",
+      "enquiryQuestion": "Why did conflict with Parliament cost King Charles I his head—and reshape monarchy?",
+      "lessonIndex": 3,
+      "stageNum": 1,
+      "imageUrl": "/images/monarchy_religion_power/john_hampden_portrait.jpg",
+      "imageCaption": "John Hampden (c. 1595–1643): Buckinghamshire MP whose 1637 refusal to pay inland Ship Money rallied resistance against Charles I’s Personal Rule.",
+      "catalyst": "Dismissing MPs in **1629**, **Charles I** governed alone during the **Eleven Years’ Personal Rule**, while **Archbishop William Laud** enforced ceremonial Church reforms that angered Puritans.",
+      "turningPoint": "To raise money without parliamentary votes, Charles extended coastal **Ship Money** to inland counties; in **1637**, landowner **John Hampden** refused to pay, sparking nationwide tax boycotts.",
+      "impact": "When Scottish rebels resisted Laud’s prayer book and bankrupted the Crown, Charles was forced to recall a furious Parliament in **1640**.",
+      "bridgeToNext": "Returning MPs attacked royal courts and ministers until Charles marched armed guards into the Commons chamber.",
+      "keyAgents": [
+        "King James I & King Charles I",
+        "Archbishop William Laud"
+      ],
+      "keyTerms": [
+        {
+          "term": "Personal Rule",
+          "definition": "The period from 1629 to 1640 when King Charles I ruled England without summoning Parliament (the Eleven Years’ Tyranny)."
+        },
+        {
+          "term": "Ship Money",
+          "definition": "An ancient coastal tax that Charles I illegally extended to inland counties without parliamentary consent to raise royal funds."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_12",
+      "num": 12,
+      "era": "part_3",
+      "date": "Jan–August 1642",
+      "shortDate": "Jan 1642",
+      "shortTitle": "Five MPs Raid & Civil War",
+      "title": "Attempted Arrest of the Five MPs & Outbreak of Civil War",
+      "specTag": "Enquiry 4 • Constitutional Breakdown",
+      "enquiryQuestion": "Why did conflict with Parliament cost King Charles I his head—and reshape monarchy?",
+      "lessonIndex": 3,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_mrp/mrp_l5_card_charles_i_house_of_commons_copley.jpg",
+      "imageCaption": "John Singleton Copley, Charles I Demanding the Surrender of the Five Impeached Members in the House of Commons (4 January 1642).",
+      "catalyst": "Recalled in 1640, Parliament abolished royal prerogative courts, impeached the King’s ministers, and demanded control over ministers and militias.",
+      "turningPoint": "On **4 January 1642**, **Charles I** marched armed guards into the **House of Commons** to arrest **Five MPs** for treason, only to find the warned MPs had escaped by river into London.",
+      "impact": "Humiliated by his failed coup, Charles fled the capital and raised his royal war flag at **Nottingham in August 1642**, plunging England into civil war.",
+      "bridgeToNext": "After three years of inconclusive regional fighting, Parliament forged Britain’s first professional national army in 1645.",
+      "keyAgents": [
+        "King James I & King Charles I"
+      ],
+      "keyTerms": [
+        {
+          "term": "Impeachment",
+          "definition": "A formal charge of treason or high crimes brought by Parliament against a royal official or minister."
+        },
+        {
+          "term": "Divine Right",
+          "definition": "The belief that a monarch’s authority comes directly from God and that no earthly court or parliament can judge them."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_13",
+      "num": 13,
+      "era": "part_3",
+      "date": "14 June 1645",
+      "shortDate": "14 Jun 1645",
+      "shortTitle": "New Model Army at Naseby",
+      "title": "The New Model Army & Decisive Victory at Naseby",
+      "specTag": "Enquiry 4 • Parliamentary Victory",
+      "enquiryQuestion": "Why did conflict with Parliament cost King Charles I his head—and reshape monarchy?",
+      "lessonIndex": 3,
+      "stageNum": 3,
+      "imageUrl": "/images/monarchy_religion_power/battle_of_naseby_1645.jpg",
+      "imageCaption": "The Battle of Naseby, 14 June 1645 (National Army Museum): Sir Thomas Fairfax and Oliver Cromwell’s New Model Army routs King Charles I’s Royalist forces.",
+      "catalyst": "Early Royalist successes exposed the weakness of local militias, prompting Parliament in **1645** to form the professional, merit-promoted **New Model Army**.",
+      "turningPoint": "Commanded by **Sir Thomas Fairfax** and **Oliver Cromwell**, disciplined redcoat cavalry smashed Charles I’s flanks at the **Battle of Naseby** on **14 June 1645**.",
+      "impact": "Parliament captured Royalist artillery and Charles’s secret letters seeking foreign troops, destroying the King’s military hopes.",
+      "bridgeToNext": "Refusing to accept defeat, Charles secretly sparked a Second Civil War—convincing Army leaders the ‘man of blood’ had to stand trial.",
+      "keyAgents": [
+        "Oliver Cromwell & The New Model Army",
+        "King James I & King Charles I"
+      ],
+      "keyTerms": [
+        {
+          "term": "New Model Army",
+          "definition": "Oliver Cromwell’s professional, disciplined Parliamentary force, promoted on military ability rather than aristocratic birth."
+        },
+        {
+          "term": "High Treason",
+          "definition": "The crime of betraying the sovereign state or attempting to overthrow its lawful government and constitution."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_14",
+      "num": 14,
+      "era": "part_3",
+      "date": "Dec 1648 – 30 January 1649",
+      "shortDate": "30 Jan 1649",
+      "shortTitle": "Trial & Execution of King",
+      "title": "Pride’s Purge, Regicide of Charles I & The Commonwealth",
+      "specTag": "Enquiry 4 • Judicial Regicide",
+      "enquiryQuestion": "Why did conflict with Parliament cost King Charles I his head—and reshape monarchy?",
+      "lessonIndex": 3,
+      "stageNum": 4,
+      "imageUrl": "/images/monarchy_religion_power/trial_charles_i_westminster_1649.jpg",
+      "imageCaption": "The Trial of King Charles I in Westminster Hall, January 1649 (Library of Congress): An anointed English monarch tried for high treason against his own people.",
+      "catalyst": "Outraged after Charles plotted a second civil war with Scottish allies, **Colonel Pride’s troops** purged moderate MPs from Westminster in December 1648, leaving the radical **Rump Parliament**.",
+      "turningPoint": "Tried before a High Court of Justice for treason against his people, **King Charles I** was publicly beheaded outside **Whitehall** on **30 January 1649**.",
+      "impact": "Parliament abolished the monarchy and House of Lords to declare a republican **Commonwealth**, proving an anointed king was subject to the law.",
+      "bridgeToNext": "Although the monarchy returned in 1660, fears of Catholic absolutism under James II triggered one final revolution in 1688–1689.",
+      "keyAgents": [
+        "Oliver Cromwell & The New Model Army",
+        "King James I & King Charles I"
+      ],
+      "keyTerms": [
+        {
+          "term": "Regicide",
+          "definition": "The deliberate public trial and execution of a reigning monarch (such as King Charles I in January 1649)."
+        },
+        {
+          "term": "Commonwealth",
+          "definition": "The republican government of England, Scotland, and Ireland established after the execution of Charles I (1649–1660)."
+        }
+      ]
+    },
+    {
+      "id": "monarchy_religion_power_ms_15",
+      "num": 15,
+      "era": "part_3",
+      "date": "Nov 1688 – December 1689",
+      "shortDate": "Dec 1689",
+      "shortTitle": "1689 Bill of Rights",
+      "title": "The Glorious Revolution, Bill of Rights & Parliamentary Supremacy",
+      "specTag": "Enquiry 5 • Constitutional Monarchy",
+      "enquiryQuestion": "Which turning point shifted power most decisively from monarchs to Parliament?",
+      "lessonIndex": 4,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_mrp/mrp_l4_b4_coronation_william_mary_westminster_1689.jpg",
+      "imageCaption": "Romeyn de Hooghe, Joint Coronation of King William III and Queen Mary II, April 1689 (Rijksmuseum): Crowned under the binding conditions of the 1689 Bill of Rights.",
+      "catalyst": "After the **1660 Restoration**, Catholic **King James II** alarmed Protestant nobles, who invited Dutch Prince **William of Orange** to land at Torbay in November 1688 as James fled to France.",
+      "turningPoint": "In the **Glorious Revolution**, Parliament crowned **William III and Mary II** only after binding them to the **December 1689 Bill of Rights**.",
+      "impact": "Kings could never again suspend laws, levy taxes, or keep a peacetime army without MPs’ consent, permanently enthroning **constitutional monarchy** and Parliamentary supremacy.",
+      "bridgeToNext": "Lasting Legacy: Across 1517–1689, supreme power in Britain shifted permanently from Rome and absolute monarchs to elected MPs in Parliament.",
+      "keyAgents": [
+        "William III & Mary II (1689 Bill of Rights)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Bill of Rights",
+          "definition": "The landmark 1689 law establishing that the Crown cannot suspend laws, levy taxes, or maintain an army without Parliament."
+        },
+        {
+          "term": "Constitutional Monarchy",
+          "definition": "A system of governance in which a monarch shares power with an elected parliament and rules strictly under the law."
+        }
+      ]
+    }
+  ]
+}

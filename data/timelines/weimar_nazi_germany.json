@@ -1,0 +1,1090 @@
+{
+  "unitId": "weimar_nazi_germany",
+  "schemaVersion": "v1-curated-living-timeline",
+  "courseTitle": "Weimar and Nazi Germany, 1918–39",
+  "eyebrow": "EDEXCEL GCSE OPTION 31 (PAPER 3) • SPECIFICATION CHRONOLOGY • 28 MILESTONES",
+  "beatLabels": {
+    "catalyst": "1. Causes & Context (12m Why)",
+    "turningPoint": "2. Key Turning Point",
+    "impact": "3. Impact & Interpretation Lens (20m Q3d)",
+    "bridgeBadge": "🔗 Chronological Bridge"
+  },
+  "streamFilters": [],
+  "eras": [
+    {
+      "id": "kt1",
+      "code": "KT 1",
+      "badge": "KEY TOPIC 1",
+      "pillLabel": "KT 1: Weimar Republic (1918–29)",
+      "title": "Key Topic 1: The Weimar Republic, 1918–29",
+      "color": "#1e3a8a",
+      "accent": "#2563eb",
+      "softBg": "#eff6ff",
+      "softBorder": "#bfdbfe"
+    },
+    {
+      "id": "kt2",
+      "code": "KT 2",
+      "badge": "KEY TOPIC 2",
+      "pillLabel": "KT 2: Hitler's Rise (1919–33)",
+      "title": "Key Topic 2: Hitler’s Rise to Power, 1919–33",
+      "color": "#5b21b6",
+      "accent": "#7c3aed",
+      "softBg": "#f5f3ff",
+      "softBorder": "#ddd6fe"
+    },
+    {
+      "id": "kt3",
+      "code": "KT 3",
+      "badge": "KEY TOPIC 3",
+      "pillLabel": "KT 3: Dictatorship (1933–39)",
+      "title": "Key Topic 3: Nazi Control and Dictatorship, 1933–39",
+      "color": "#991b1b",
+      "accent": "#dc2626",
+      "softBg": "#fef2f2",
+      "softBorder": "#fecaca"
+    },
+    {
+      "id": "kt4",
+      "code": "KT 4",
+      "badge": "KEY TOPIC 4",
+      "pillLabel": "KT 4: Life in Nazi Germany",
+      "title": "Key Topic 4: Life in Nazi Germany, 1933–39",
+      "color": "#0f766e",
+      "accent": "#0d9488",
+      "softBg": "#f0fdfa",
+      "softBorder": "#99f6e4"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "weimar_nazi_germany_ms_1",
+      "num": 1,
+      "era": "kt1",
+      "date": "3 – 11 Nov 1918",
+      "shortDate": "Nov 1918",
+      "shortTitle": "Kiel Mutiny & Armistice",
+      "title": "Kiel Naval Mutiny, Abdication of the Kaiser & The Armistice",
+      "specTag": "KT 1.1 • End of the War, Revolution & Birth of the Republic",
+      "enquiryQuestion": "How did defeat in November 1918 create the Weimar Republic—and stain it from birth?",
+      "lessonIndex": 0,
+      "stageNum": 2,
+      "imageUrl": "/images/weimar_nazi_germany/kt1/wng_l01_b2_compiegne_armistice_1918.jpg",
+      "imageCaption": "Allied commanders led by Marshal Foch confronting the German armistice delegation at Compiègne on 11 November 1918.",
+      "mapUrl": "/images/weimar_nazi_germany/maps/wng_map_l1_german_revolution_weimar_1918_19.svg",
+      "mapCaption": "Reference Map: The Allied naval blockade, 3 November 1918 Kiel Mutiny, urban workers' councils, and the Compiègne Armistice.",
+      "catalyst": "Four years of the British **Allied naval blockade** caused **Turnip Winter starvation** (~750,000 civilian deaths) and military collapse; when admirals ordered a final fleet sortie, **40,000 sailors mutinied at Kiel** on 3 November 1918.",
+      "turningPoint": "Strikes and workers' councils forced **Kaiser Wilhelm II's abdication (9 Nov)**; **Philipp Scheidemann** proclaimed a Republic, **Friedrich Ebert** struck the **Ebert-Groener Pact** with the army, and **Matthias Erzberger** signed the **Armistice (11 Nov 1918)**.",
+      "impact": "Averted Bolshevik civil war and ended First World War slaughter, yet historians debate whether Ebert's pact saved democracy or preserved anti-republican generals who branded democrats **'November Criminals'**.",
+      "bridgeToNext": "Before delegates could draft a democratic constitution, radical Communists rose in Berlin in January 1919 to replace Ebert's republic with Soviet councils.",
+      "keyAgents": [
+        "Kaiser Wilhelm II",
+        "Friedrich Ebert",
+        "Philipp Scheidemann",
+        "Matthias Erzberger"
+      ],
+      "keyTerms": [
+        {
+          "term": "Kiel Mutiny (3 Nov 1918)",
+          "definition": "Naval uprising against a suicidal fleet battle order that sparked workers' and soldiers' councils across German cities."
+        },
+        {
+          "term": "Ebert-Groener Pact",
+          "definition": "10 November 1918 deal in which General Groener pledged army backing against communism if Ebert left the officer corps unpurged."
+        },
+        {
+          "term": "Armistice (11 Nov 1918)",
+          "definition": "Ceasefire signed at Compiègne ending First World War fighting while leaving Weimar politicians to take the blame for defeat."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_2",
+      "num": 2,
+      "era": "kt1",
+      "date": "5 – 15 Jan 1919",
+      "shortDate": "Jan 1919",
+      "shortTitle": "The Spartacist Uprising",
+      "title": "The Spartacist Uprising & Freikorps Repression in Berlin",
+      "specTag": "KT 1.2 • Left-Wing Armed Challenge to the Republic",
+      "enquiryQuestion": "Why did Ebert rely on right-wing Freikorps paramilitaries to crush the Spartacists?",
+      "lessonIndex": 1,
+      "stageNum": 1,
+      "imageUrl": "/images/weimar_nazi_germany/kt1/wng_l02_b0_spartacist_wilhelmstrasse_1919.jpg",
+      "imageCaption": "Armed Spartacist workers marching in Berlin during the January 1919 left-wing uprising against Ebert's government.",
+      "catalyst": "Radical Communists in the **Spartacist League** led by **Rosa Luxemburg** and **Karl Liebknecht** rejected Ebert's moderate parliamentary republic and demanded rule by workers' and soldiers' councils.",
+      "turningPoint": "In **January 1919**, **100,000 demonstrators** and armed Spartacists seized Berlin newspaper offices; Defence Minister Noske deployed **Freikorps** ex-soldier units who crushed the rising in bloody street fighting and murdered Luxemburg and Liebknecht.",
+      "impact": "Enabled January 1919 National Assembly elections (83% turnout) to proceed at Weimar, yet permanently poisoned relations between **Social Democrats (SPD)** and **Communists (KPD)**—preventing a united left against Hitler in 1932–33.",
+      "bridgeToNext": "Having survived left-wing revolt, the new Weimar coalition suffered a devastating nationalist blow at Paris in June 1919.",
+      "keyAgents": [
+        "Rosa Luxemburg",
+        "Karl Liebknecht",
+        "Friedrich Ebert"
+      ],
+      "keyTerms": [
+        {
+          "term": "Spartacist League",
+          "definition": "Revolutionary German Communist movement led by Rosa Luxemburg and Karl Liebknecht seeking a Soviet-style republic."
+        },
+        {
+          "term": "Freikorps",
+          "definition": "Fiercely nationalistic, anti-communist volunteer paramilitary units of demobilised ex-soldiers used by Ebert against left-wing risings."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_3",
+      "num": 3,
+      "era": "kt1",
+      "date": "28 June 1919",
+      "shortDate": "Jun 1919",
+      "shortTitle": "Treaty of Versailles (Diktat)",
+      "title": "The Treaty of Versailles & The ‘Stab in the Back’ Theory",
+      "specTag": "KT 1.2 • Key Terms of Versailles & Early Unpopularity",
+      "enquiryQuestion": "How did the Treaty of Versailles fuel nationalist hatred and the 'stab in the back' myth?",
+      "lessonIndex": 1,
+      "stageNum": 2,
+      "imageUrl": "/images/weimar_nazi_germany/kt1/wng_l02_s1_dolchstosslegende_poster_1924.jpg",
+      "imageCaption": "Right-wing nationalist Dolchstoßlegende ('Stab in the Back') poster depicting a civilian politician stabbing a German soldier from behind.",
+      "mapUrl": "/images/weimar_nazi_germany/maps/wng_map_l2_versailles_losses_ruhr_1919_23.svg",
+      "mapCaption": "Reference Map: German territorial losses (13% of European land), demilitarised Rhineland, Polish Corridor, and Ruhr industrial zone.",
+      "catalyst": "Excluded from Allied talks at Paris and threatened with renewed invasion if Berlin refused, Weimar ministers had no choice on **28 June 1919** but to sign what Germans condemned as a **Diktat** (dictated peace).",
+      "turningPoint": "Under **Article 231 (War Guilt)**, Germany accepted blame for the war, owed **£6.6 billion reparations** (set 1921), lost **13% of European land** and all colonies, demilitarised the **Rhineland**, and had its army capped at **100,000** with zero tanks, submarines, or air force.",
+      "impact": "Became the sharpest cause of Weimar's early unpopularity: **Ludendorff** and **Hindenburg** promoted **the 'stab in the back' theory** (*Dolchstoßlegende*), claiming socialists and Jews had betrayed an undefeated army.",
+      "bridgeToNext": "Six weeks after Versailles, Weimar delegates signed a remarkably democratic constitution—carrying two hidden structural time-bombs.",
+      "keyAgents": [
+        "Friedrich Ebert",
+        "Woodrow Wilson",
+        "General Erich Ludendorff",
+        "Paul von Hindenburg"
+      ],
+      "keyTerms": [
+        {
+          "term": "Diktat & Article 231",
+          "definition": "Bitter German term for the dictated Versailles peace and its War Guilt clause justifying £6.6 billion in Allied reparations."
+        },
+        {
+          "term": "Stab in the Back (Dolchstoß)",
+          "definition": "Right-wing nationalist myth claiming the German army was never beaten at the front but betrayed by 'November Criminals' at home."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_4",
+      "num": 4,
+      "era": "kt1",
+      "date": "11 Aug 1919",
+      "shortDate": "Aug 1919",
+      "shortTitle": "The Weimar Constitution",
+      "title": "The Weimar Constitution: Democratic Rights, PR & Article 48",
+      "specTag": "KT 1.1 • Strengths & Weaknesses of the Weimar Constitution",
+      "enquiryQuestion": "Why did proportional representation and Article 48 weaken an advanced democracy?",
+      "lessonIndex": 0,
+      "stageNum": 5,
+      "imageUrl": "/images/weimar_assembly_1919.jpg",
+      "imageCaption": "Elected delegates gathered at the Weimar National Assembly in 1919 to frame the Republic's democratic constitution.",
+      "mapUrl": "/images/weimar_republic_states_map_auth.png",
+      "mapCaption": "Reference Map: The 18 federal states (Länder) of the Weimar Republic represented in the upper-house Reichsrat.",
+      "catalyst": "Meeting safely away from Berlin street fighting in **Weimar**, the SPD-Centre-DDP coalition sought to replace autocratic Kaiser rule with Europe's most modern parliamentary democracy.",
+      "turningPoint": "Signed on **11 August 1919**, the **Weimar Constitution** granted **universal suffrage at age 20** for men and women, free speech, and an elected President (7 years) and **Reichstag**—paired with pure **Proportional Representation (PR)** and **Article 48** presidential decree powers.",
+      "impact": "Historians weigh its genuine democratic strengths against fatal institutional flaws: **PR** bred **29+ splinter parties** and fragile short-lived coalitions, while **Article 48** later enabled Brüning, Papen, and Hitler to bypass parliament legally.",
+      "bridgeToNext": "Within six months of the constitution taking effect, a young army corporal in Munich helped launch a radical anti-Weimar nationalist programme.",
+      "keyAgents": [
+        "Friedrich Ebert"
+      ],
+      "keyTerms": [
+        {
+          "term": "Proportional Representation (PR)",
+          "definition": "Voting system awarding 1 Reichstag seat per 60,000 votes, fair on paper but producing fragmented multi-party coalitions."
+        },
+        {
+          "term": "Article 48",
+          "definition": "Emergency clause allowing the Reich President to suspend civil liberties and rule by decree without Reichstag approval."
+        },
+        {
+          "term": "Reichstag & Reichsrat",
+          "definition": "The elected national parliament passing laws alongside the upper chamber representing Germany's 18 regional states (Länder)."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_5",
+      "num": 5,
+      "era": "kt2",
+      "date": "Sept 1919 – Feb 1920",
+      "shortDate": "Feb 1920",
+      "shortTitle": "DAP & 25-Point Programme",
+      "title": "Hitler Joins the DAP & Unveils the Twenty-Five Point Programme",
+      "specTag": "KT 2.1 • Hitler's Early Career & Setting Up the Nazi Party",
+      "enquiryQuestion": "How did the February 1920 25-Point Programme blend nationalism, socialism, and antisemitism?",
+      "lessonIndex": 4,
+      "stageNum": 2,
+      "imageUrl": "/images/weimar_nazi_germany/kt2/wng_l2_1_b0_anton_drexler_desk.jpg",
+      "imageCaption": "Munich railway locksmith Anton Drexler, founder of the German Workers' Party (DAP) joined by Adolf Hitler in September 1919.",
+      "catalyst": "Sent by army intelligence in **September 1919** to spy on fringe groups in Munich, **Adolf Hitler** attended a tiny beer-hall meeting of **Anton Drexler**'s **German Workers' Party (DAP)** and joined to take charge of propaganda.",
+      "turningPoint": "On **24 February 1920** at Munich's Hofbräuhaus, Hitler and Drexler announced **the Twenty-Five Point Programme** and rebranded the party **NSDAP** with a **swastika** flag and the newspaper ***Völkischer Beobachter*** (Dec 1920).",
+      "impact": "Broadened early Bavarian appeal by combining nationalist demands (scrapping Versailles, *Lebensraum*), populist worker pledges (pensions, profit-sharing), and **Point 4 racial antisemitism** stripping Jews of German citizenship.",
+      "bridgeToNext": "Three weeks after the 25-Point Programme in Munich, furious Freikorps brigades marched directly into Berlin to overthrow Ebert's republic.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "Anton Drexler"
+      ],
+      "keyTerms": [
+        {
+          "term": "DAP & NSDAP",
+          "definition": "Anton Drexler's German Workers' Party (1919), renamed the National Socialist German Workers' Party (Nazi Party) in 1920."
+        },
+        {
+          "term": "Twenty-Five Point Programme",
+          "definition": "February 1920 Nazi manifesto demanding the abolition of Versailles, Greater Germany, state welfare, and stripping Jews of citizenship."
+        },
+        {
+          "term": "Völkischer Beobachter",
+          "definition": "Munich newspaper purchased by the NSDAP in December 1920 as the official print voice of Nazi propaganda."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_6",
+      "num": 6,
+      "era": "kt1",
+      "date": "March 1920",
+      "shortDate": "Mar 1920",
+      "shortTitle": "The Kapp Putsch & Strike",
+      "title": "The Kapp Putsch & The Berlin Workers’ General Strike",
+      "specTag": "KT 1.2 • Right-Wing Armed Challenge & Army Disloyalty",
+      "enquiryQuestion": "Why did the Reichswehr refuse to fire on Kapp's rebels—and how did workers save Weimar?",
+      "lessonIndex": 1,
+      "stageNum": 3,
+      "imageUrl": "/images/weimar_nazi_germany/kt1/wng_l02_b2_kapp_putsch_general_strike_1920.jpg",
+      "imageCaption": "Berlin workers rallying in the 15 March 1920 general strike that paralysed the capital and defeated the right-wing Kapp Putsch.",
+      "catalyst": "Ordered to disband **Freikorps** brigades to comply with Versailles's 100,000-man army cap, right-wing politician **Wolfgang Kapp** and General von Lüttwitz marched **5,000 Freikorps** into Berlin in **March 1920**.",
+      "turningPoint": "Army chief **General von Seeckt** refused to defend Ebert (*'Reichswehr does not fire upon Reichswehr'*), forcing the cabinet to flee; Berlin **trade unions** called a **general strike** cutting water, gas, coal, and trams until Kapp fled after four days.",
+      "impact": "Proved working-class Berliners would defend the Republic against military dictatorship, yet exposed judicial and army bias—followed by **350+ right-wing assassinations** including **Matthias Erzberger (1921)** and **Walther Rathenau (1922)**.",
+      "bridgeToNext": "Disbanded Freikorps brawlers in Bavaria soon flowed into Munich, where Hitler seized absolute control of the NSDAP and built his own private stormtrooper army.",
+      "keyAgents": [
+        "Wolfgang Kapp",
+        "Friedrich Ebert",
+        "Walther Rathenau"
+      ],
+      "keyTerms": [
+        {
+          "term": "Kapp Putsch (March 1920)",
+          "definition": "Failed right-wing Freikorps coup in Berlin defeated after four days by a massive trade-union general strike."
+        },
+        {
+          "term": "Organisation Consul",
+          "definition": "Secret right-wing nationalist terrorist group that assassinated Weimar ministers Matthias Erzberger (1921) and Walther Rathenau (1922)."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_7",
+      "num": 7,
+      "era": "kt2",
+      "date": "July – Aug 1921",
+      "shortDate": "Jul–Aug 1921",
+      "shortTitle": "Führerprinzip & SA Brownshirts",
+      "title": "Hitler’s Führerprinzip Takeover & Creation of the SA (Brownshirts)",
+      "specTag": "KT 2.1 • Hitler's Party Leadership & Role of the SA",
+      "enquiryQuestion": "How did Hitler's oratory and Ernst Röhm's SA transform the early Nazi Party by 1922?",
+      "lessonIndex": 4,
+      "stageNum": 5,
+      "imageUrl": "/images/weimar_sa_rohm_munich_1924.jpg",
+      "imageCaption": "SA commander Ernst Röhm in Munich, who organised unemployed ex-soldiers and Freikorps into the Nazi Party's paramilitary Brownshirts.",
+      "catalyst": "Hitler's electrifying beer-hall speeches grew NSDAP membership past 3,000, sparking a **July 1921** clash when founder **Anton Drexler** proposed merging with rival nationalist groups.",
+      "turningPoint": "Threatening to resign, Hitler sidelined Drexler to enforce absolute personal obedience (**Führerprinzip**, July 1921) and in **August 1921** founded the **Sturmabteilung (SA / Brownshirts)** under **Ernst Röhm**.",
+      "impact": "Gave Hitler unchecked dictatorship inside the NSDAP alongside thousands of uniformed ex-soldiers who guarded Nazi rallies, intimidated rivals, and violently disrupted Communist and SPD meetings across Bavaria.",
+      "bridgeToNext": "Hitler's growing Bavarian movement got its golden insurrection opportunity in 1923 when French troops invaded the Ruhr and destroyed the German currency.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "Ernst Röhm",
+        "Anton Drexler"
+      ],
+      "keyTerms": [
+        {
+          "term": "Führerprinzip (July 1921)",
+          "definition": "The 'Leadership Principle' abolishing internal party voting and giving Hitler unquestioned personal command over the NSDAP."
+        },
+        {
+          "term": "SA (Sturmabteilung)",
+          "definition": "Nazi paramilitary 'Brownshirts' established in August 1921 under Ernst Röhm to protect Nazi speakers and beat up left-wing opponents."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_8",
+      "num": 8,
+      "era": "kt1",
+      "date": "Jan – Nov 1923",
+      "shortDate": "1923",
+      "shortTitle": "Ruhr Crisis & Hyperinflation",
+      "title": "French Occupation of the Ruhr & The 1923 Hyperinflation Catastrophe",
+      "specTag": "KT 1.2 • Reasons for & Effects of Ruhr Occupation & Hyperinflation",
+      "enquiryQuestion": "How did passive resistance in the Ruhr trigger runaway hyperinflation across Germany?",
+      "lessonIndex": 1,
+      "stageNum": 5,
+      "imageUrl": "/images/upgraded/gcse-p3/weimar_l02_b4_hyperinflation_berlin_bread_1923.jpg",
+      "imageCaption": "Berlin shoppers carrying bundles of depreciated million-mark banknotes during the autumn 1923 hyperinflation crisis.",
+      "mapUrl": "/images/weimar_nazi_germany/maps/wng_map_l2_versailles_losses_ruhr_1919_23.svg",
+      "mapCaption": "Reference Map: The January 1923 Franco-Belgian occupation of Germany's industrial Ruhr heartland.",
+      "catalyst": "When Weimar defaulted on coal and timber **reparations**, **60,000 French and Belgian troops** occupied the industrial **Ruhr** in **January 1923** to seize factories and mines handling 80% of German coal and steel.",
+      "turningPoint": "Chancellor Cuno ordered **passive resistance** strikes and printed trillions of unbacked paper marks to pay idle workers while tax revenues collapsed—driving the price of one loaf of bread to **201 billion marks** by November 1923.",
+      "impact": "While debtors and speculators paid off loans effortlessly, **middle-class (*Mittelstand*) life savings** and elderly fixed pensions vanished overnight, permanently alienating millions of savers from Weimar democracy.",
+      "bridgeToNext": "When new Chancellor Gustav Stresemann called off passive resistance in autumn 1923, furious nationalists in Munich backed Hitler's armed bid to seize power.",
+      "keyAgents": [
+        "Gustav Stresemann",
+        "Friedrich Ebert"
+      ],
+      "keyTerms": [
+        {
+          "term": "Ruhr Occupation (Jan 1923)",
+          "definition": "Invasion of Germany's industrial Ruhr valley by 60,000 French and Belgian soldiers after Germany missed reparations deliveries."
+        },
+        {
+          "term": "Passive Resistance",
+          "definition": "Weimar-backed strike by Ruhr miners and rail workers funded by printing paper money, triggering catastrophic hyperinflation."
+        },
+        {
+          "term": "Hyperinflation (1923)",
+          "definition": "Runaway currency collapse making paper marks worthless (201bn marks for a loaf) and wiping out middle-class savings and pensions."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_9",
+      "num": 9,
+      "era": "kt2",
+      "date": "8 – 9 Nov 1923",
+      "shortDate": "Nov 1923",
+      "shortTitle": "The Munich Beer Hall Putsch",
+      "title": "The Munich Beer Hall Putsch: Failure in the Streets",
+      "specTag": "KT 2.2 • Reasons for & Events of the Munich Putsch (Nov 1923)",
+      "enquiryQuestion": "Why did Hitler launch the November 1923 Munich Putsch—and why did it collapse in 24 hours?",
+      "lessonIndex": 5,
+      "stageNum": 1,
+      "imageUrl": "/images/weimar_nazi_germany/kt2/wng_l2_2_b0_munich_putsch_barricade_1923.jpg",
+      "imageCaption": "Armed Nazi putschists manning a Munich street barricade during the failed Beer Hall Putsch of 8–9 November 1923.",
+      "mapUrl": "/images/weimar_nazi_germany/maps/wng_map_l6_munich_putsch_nsdap_gau_network_1923_28.svg",
+      "mapCaption": "Reference Map: Route of the 8–9 November 1923 Munich Putsch, Landsberg Fortress, and subsequent NSDAP Gau network.",
+      "catalyst": "Inspired by **Mussolini's 1922 March on Rome**, 55,000 NSDAP members, and nationalist fury at Stresemann calling off Ruhr resistance, Hitler enlisted war hero **General Erich Ludendorff** for a coup.",
+      "turningPoint": "On **8 November 1923**, Hitler and **600 SA men** stormed Munich's **Bürgerbräukeller** to coerce Bavarian leaders **Kahr, Lossow, and Seisser** at gunpoint; once released by Ludendorff, Kahr alerted police who shot **16 Nazis** dead on 9 November.",
+      "impact": "Short-term disaster—Hitler was arrested, the **NSDAP was banned**, and armed rebellion failed—yet Q3d interpretations stress it forced Hitler onto the far deadlier **constitutional path** to power.",
+      "bridgeToNext": "Just days after Hitler's arrest, Gustav Stresemann stabilised Germany's currency and secured American loans that transformed Weimar's fortunes.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "General Erich Ludendorff",
+        "Gustav von Kahr",
+        "Ernst Röhm"
+      ],
+      "keyTerms": [
+        {
+          "term": "Munich Putsch (8–9 Nov 1923)",
+          "definition": "Hitler and Ludendorff's failed armed attempt to seize Bavaria at the Bürgerbräukeller and march on Berlin."
+        },
+        {
+          "term": "Bavarian Triumvirate",
+          "definition": "State Commissioner Gustav von Kahr, Army Commander Lossow, and Police Chief Seisser, who repudiated their coerced gunpoint support."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_10",
+      "num": 10,
+      "era": "kt1",
+      "date": "Nov 1923 – Aug 1924",
+      "shortDate": "1923–24",
+      "shortTitle": "Rentenmark & The Dawes Plan",
+      "title": "Stresemann’s Economic Stabilization: The Rentenmark & Dawes Plan",
+      "specTag": "KT 1.3 • Causes of Economic Recovery (1924–29)",
+      "enquiryQuestion": "How did Stresemann's Rentenmark and the 1924 Dawes Plan end hyperinflation—and at what risk?",
+      "lessonIndex": 2,
+      "stageNum": 2,
+      "imageUrl": "/images/weimar_nazi_germany/kt1/wng_l03_b0_deutsche_rentenbank_board_1923.jpg",
+      "imageCaption": "Founding board of the Deutsche Rentenbank (1923) convened under Gustav Stresemann to replace worthless paper marks.",
+      "catalyst": "Appointed Chancellor in August 1923 at the peak of hyperinflation, **Gustav Stresemann** ended Ruhr passive resistance and slashed state spending to restore fiscal credibility.",
+      "turningPoint": "Stresemann introduced the land-backed **Rentenmark (Nov 1923)**—converted into the gold-backed **Reichsmark (1924)**—and negotiated the **August 1924 Dawes Plan**: affordable staged reparations, French Ruhr withdrawal, and **800m gold marks** in US loans.",
+      "impact": "Q3d Core Debate: **Genuine Recovery** points to doubled industrial output by 1928 and ended inflation, whereas the **'Dancing on a Volcano'** view stresses total dependence on recallable short-term **American loans and investment**.",
+      "bridgeToNext": "While Stresemann stabilised the mark in 1924, sympathetic Munich judges turned Hitler's treason trial and prison stay into a national launchpad.",
+      "keyAgents": [
+        "Gustav Stresemann"
+      ],
+      "keyTerms": [
+        {
+          "term": "Rentenmark & Reichsmark",
+          "definition": "Temporary land-backed currency (Nov 1923) and permanent gold-backed currency (1924) introduced under Stresemann to halt hyperinflation."
+        },
+        {
+          "term": "Dawes Plan (1924)",
+          "definition": "US-brokered pact scaling annual reparations to German capacity and injecting 800 million gold marks in Wall Street loans."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_11",
+      "num": 11,
+      "era": "kt2",
+      "date": "Feb – Dec 1924",
+      "shortDate": "1924",
+      "shortTitle": "Trial, Landsberg & Mein Kampf",
+      "title": "Hitler’s Treason Trial, Landsberg Prison & Mein Kampf",
+      "specTag": "KT 2.2 • Consequences of the Munich Putsch & Nazi Ideology",
+      "enquiryQuestion": "How did Hitler turn his 1924 trial and Landsberg imprisonment into a political triumph?",
+      "lessonIndex": 5,
+      "stageNum": 3,
+      "imageUrl": "/images/hitler_landsberg_1924.jpg",
+      "imageCaption": "Adolf Hitler (left) with deputy Rudolf Hess and fellow putschists inside comfortable rooms at Landsberg Fortress in 1924.",
+      "catalyst": "Tried for high treason in **February 1924**, Hitler benefited from right-wing judges who let him deliver front-page nationalist speeches attacking Weimar's 'November Criminals'.",
+      "turningPoint": "Acquitting Ludendorff, judges gave Hitler the minimum **five-year sentence**, of which he served **barely nine months** at **Landsberg Fortress**, dictating ***Mein Kampf* ('My Struggle')** to **Rudolf Hess** before release in December 1924.",
+      "impact": "Transformed Hitler from a regional Bavarian hothead into a **national right-wing figure**, codified core Nazi beliefs (**Aryan supremacy**, antisemitism, *Lebensraum*, *Führerprinzip*), and pivoted the NSDAP to **winning Reichstag elections legally**.",
+      "bridgeToNext": "Released into a prospering Weimar Republic, Hitler found voters far more impressed by Foreign Minister Stresemann's international breakthroughs of 1925–26.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "Rudolf Hess",
+        "General Erich Ludendorff"
+      ],
+      "keyTerms": [
+        {
+          "term": "Mein Kampf ('My Struggle')",
+          "definition": "Hitler's 1924 ideological book dictated in Landsberg setting out Aryan racial supremacy, antisemitism, anti-communism, and Lebensraum."
+        },
+        {
+          "term": "Lebensraum ('Living Space')",
+          "definition": "Hitler's foreign-policy goal of conquering land in Eastern Europe and Russia to feed and settle an expanded Aryan population."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_12",
+      "num": 12,
+      "era": "kt1",
+      "date": "Oct 1925 – Sept 1926",
+      "shortDate": "1925–26",
+      "shortTitle": "Locarno Pact & League Entry",
+      "title": "Stresemann Abroad: The Locarno Pact & League of Nations Council",
+      "specTag": "KT 1.3 • Gaining International Acceptance Abroad",
+      "enquiryQuestion": "How did the Locarno Pact and League of Nations entry restore Germany's status?",
+      "lessonIndex": 2,
+      "stageNum": 4,
+      "imageUrl": "/images/weimar_nazi_germany/kt1/wng_l03_b3_stresemann_geneva_league_1926.jpg",
+      "imageCaption": "Foreign Minister Gustav Stresemann arriving in Geneva as Germany joined the League of Nations in September 1926.",
+      "mapUrl": "/images/weimar_nazi_germany/maps/wng_map_l3_stresemann_locarno_recovery_1924_29.svg",
+      "mapCaption": "Reference Map: Stresemann's foreign-policy recovery—guaranteed western borders under Locarno (1925) and staged Allied Rhineland evacuation.",
+      "catalyst": "Foreign Minister **Gustav Stresemann** pursued *Erfüllungspolitik* (fulfilment), calculating that peaceful Western cooperation was the surest way to end post-1919 diplomatic isolation and revise Versailles.",
+      "turningPoint": "Voluntarily signing the **Locarno Pact (Oct 1925)**, Germany guaranteed its western borders with France and Belgium and Rhineland demilitarisation; in **September 1926**, Germany entered the **League of Nations** with a permanent Council seat.",
+      "impact": "Won Stresemann the **1926 Nobel Peace Prize**, ended Allied occupation of Cologne, and bolstered moderate Weimar coalitions (plus Hindenburg's calm 1925 presidency)—even as nationalists attacked Locarno for accepting Versailles borders.",
+      "bridgeToNext": "Shut out of mainstream voters' favour during Stresemann's 'Golden Years', Hitler spent 1925–28 quietly building a disciplined national party machine.",
+      "keyAgents": [
+        "Gustav Stresemann",
+        "Paul von Hindenburg"
+      ],
+      "keyTerms": [
+        {
+          "term": "Locarno Pact (Oct 1925)",
+          "definition": "Voluntary treaty with Britain, France, Belgium, and Italy accepting Germany's western borders and barring future Ruhr invasions."
+        },
+        {
+          "term": "League of Nations (Sept 1926)",
+          "definition": "International peacekeeping body in Geneva that admitted Germany with a permanent Council seat, restoring great-power status."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_13",
+      "num": 13,
+      "era": "kt2",
+      "date": "Feb 1926 – May 1928",
+      "shortDate": "1926–28",
+      "shortTitle": "Bamberg & The 'Lean Years'",
+      "title": "Nazi Party Reorganisation, The Bamberg Conference & 2.6% in 1928",
+      "specTag": "KT 2.2 • Limited Nazi Support & Party Reorganisation (1924–28)",
+      "enquiryQuestion": "Why did the Nazis win only 2.6% in May 1928 despite nationwide reorganisation?",
+      "lessonIndex": 5,
+      "stageNum": 4,
+      "imageUrl": "/images/hitler_rednerposen_oratory_1927.jpg",
+      "imageCaption": "Studio sequence by Heinrich Hoffmann (1927) showing Adolf Hitler rehearsing dramatic oratorical gestures during the 'Lean Years'.",
+      "mapUrl": "/images/weimar_nazi_germany/maps/wng_map_l6_munich_putsch_nsdap_gau_network_1923_28.svg",
+      "mapCaption": "Reference Map: Nationwide reorganisation of the NSDAP into regional Gaue after the February 1926 Bamberg Conference.",
+      "catalyst": "Re-founding the NSDAP in February 1925, Hitler faced northern Nazis led by **Gregor Strasser** and **Joseph Goebbels** demanding socialist land and factory nationalisation.",
+      "turningPoint": "At the **February 1926 Bamberg Conference**, Hitler crushed socialist dissent, won Goebbels over as Berlin *Gauleiter*, created 35 regional **Gaue**, founded the elite **SS**, and expanded youth/women's leagues—yet won just **12 seats (2.6%) in May 1928**.",
+      "impact": "Stresemann-era stability kept extremists on the margins (SPD won 153 seats in 1928), yet historians stress Hitler's **100,000+ disciplined members** and rural shift built a ready-made national machine awaiting an economic crisis.",
+      "bridgeToNext": "Meanwhile across Weimar cities between 1924 and 1929, rising wages, emancipated 'New Women', and avant-garde art sparked both pride and conservative anger.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "Gregor Strasser",
+        "Joseph Goebbels"
+      ],
+      "keyTerms": [
+        {
+          "term": "Bamberg Conference (Feb 1926)",
+          "definition": "Party summit where Hitler defeated Gregor Strasser's socialist wing, reasserted the 25 Points, and won Joseph Goebbels's loyalty."
+        },
+        {
+          "term": "Gauleiter",
+          "definition": "Regional Nazi Party leader appointed directly by Hitler to run one of Germany's electoral districts (Gaue)."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_14",
+      "num": 14,
+      "era": "kt1",
+      "date": "1924 – 1929",
+      "shortDate": "1924–29",
+      "shortTitle": "Golden Twenties Society & Art",
+      "title": "Weimar Society: Living Standards, The ‘New Woman’ & Modernist Culture",
+      "specTag": "KT 1.4 • Standard of Living, Women & Cultural Changes (1924–29)",
+      "enquiryQuestion": "How far did living standards, women's lives, and culture genuinely transform Weimar Germany?",
+      "lessonIndex": 3,
+      "stageNum": 2,
+      "imageUrl": "/images/weimar_nazi_germany/kt1/wng_l04_b2_bauhaus_dessau_gropius.jpg",
+      "imageCaption": "Walter Gropius's glass-and-steel Bauhaus school at Dessau (1925–26), icon of Weimar modernist architecture.",
+      "catalyst": "Industrial recovery, Article 109 gender equality, and lifting imperial censorship unleashed social welfare reforms and bold modernist experimentation across 1920s cities.",
+      "turningPoint": "Real wages rose **10–25%**, **2m+ new homes** were built, and the **1927 Unemployment Insurance Act** covered 17m workers; urban **'New Women'** voted, served as MPs, and entered professions alongside **Walter Gropius's Bauhaus**, **Otto Dix / George Grosz** (*New Objectivity*), and **Fritz Lang's *Metropolis***.",
+      "impact": "Q3d Core Debate: **Progressive Golden Era** highlights European leadership in welfare, female rights, and cinema, whereas **Deep Polarisation** stresses indebted farmers, persistent gender pay gaps, and rural outrage against 'degenerate' Berlin cabaret.",
+      "bridgeToNext": "Weeks after negotiating the 1929 Young Plan, Stresemann died—and days later, the Wall Street Crash shattered Weimar's loan-funded prosperity.",
+      "keyAgents": [
+        "Walter Gropius",
+        "George Grosz & Otto Dix",
+        "Marlene Dietrich"
+      ],
+      "keyTerms": [
+        {
+          "term": "Unemployment Insurance Act (1927)",
+          "definition": "Welfare law requiring workers and employers to fund national unemployment and sickness benefits for 17 million workers."
+        },
+        {
+          "term": "New Woman (Neue Frau)",
+          "definition": "Independent, voting, wage-earning young urban women of 1920s Weimar who wore bobbed hair, shorter skirts, and visited cafés freely."
+        },
+        {
+          "term": "Bauhaus & New Objectivity",
+          "definition": "Gropius's functionalist architecture school and gritty realist art (Dix, Grosz) exposing wartime trauma and social inequality."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_15",
+      "num": 15,
+      "era": "kt2",
+      "date": "Aug 1928 – Oct 1929",
+      "shortDate": "Oct 1929",
+      "shortTitle": "Young Plan & Wall Street Crash",
+      "title": "Kellogg-Briand, The Young Plan & The October 1929 Wall Street Crash",
+      "specTag": "KT 1.3 & KT 2.3 • End of Recovery & Onset of the Great Depression",
+      "enquiryQuestion": "How did the October 1929 Wall Street Crash expose Weimar's reliance on US loans?",
+      "lessonIndex": 6,
+      "stageNum": 1,
+      "imageUrl": "/images/weimar_nazi_germany/kt2/wng_l2_3_b0_wall_street_crash_nyse_1929.jpg",
+      "imageCaption": "Crowds gathered outside the New York Stock Exchange in October 1929 as the Wall Street Crash triggered global loan recalls.",
+      "catalyst": "After signing the **1928 Kellogg-Briand Pact**, Stresemann agreed the **1929 Young Plan** cutting reparations to **£2bn** over 59 years—giving Hitler national publicity alongside press baron Alfred Hugenberg's anti-Young Plan campaign.",
+      "turningPoint": "When New York shares collapsed in the **October 1929 Wall Street Crash**, panicked American banks immediately recalled short-term **Dawes Plan loans**, bankrupting **50,000 German businesses**, shutting major banks, and slashing industrial output by **40%**.",
+      "impact": "Confirmed Stresemann's warning that Germany was *'dancing on a volcano'*, shattering the Grand Coalition over unemployment pay in March 1930 and opening the door to political extremism.",
+      "bridgeToNext": "As factories closed and soup queues lengthened, Chancellor Brüning's harsh austerity and Article 48 decrees drove millions toward Communists and Nazis.",
+      "keyAgents": [
+        "Gustav Stresemann",
+        "Adolf Hitler",
+        "Heinrich Brüning"
+      ],
+      "keyTerms": [
+        {
+          "term": "Young Plan (1929)",
+          "definition": "Final reparations deal cutting Germany's bill from £6.6bn to £2bn until 1988 and securing early Allied Rhineland withdrawal."
+        },
+        {
+          "term": "Wall Street Crash (Oct 1929)",
+          "definition": "US stock-market collapse that prompted American banks to recall German loans, triggering mass bankruptcy and depression."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_16",
+      "num": 16,
+      "era": "kt2",
+      "date": "March 1930 – July 1932",
+      "shortDate": "1930–Jul 1932",
+      "shortTitle": "6m Jobless & Nazi Breakthrough",
+      "title": "6 Million Unemployed, Brüning’s Decrees & The July 1932 Nazi Surge",
+      "specTag": "KT 2.3 • Growth of Unemployment, KPD & Nazi Support (1929–32)",
+      "enquiryQuestion": "Why did the Great Depression make the Nazis Germany's largest party by July 1932?",
+      "lessonIndex": 6,
+      "stageNum": 4,
+      "imageUrl": "/images/weimar_nazi_germany/kt2/wng_l2_3_b3_hitler_goebbels_lustgarten_1932.jpg",
+      "imageCaption": "Adolf Hitler addressing mass crowds with Joseph Goebbels in Berlin during the 1932 election campaigns.",
+      "catalyst": "Registered unemployment hit **6 million** by winter 1932 while **'Hunger Chancellor' Heinrich Brüning** cut wages and dole benefits via **Article 48 decrees**, driving desperate workers to the **Communist Party (KPD, 100 seats)**.",
+      "turningPoint": "**Joseph Goebbels** ran modern **'Work and Bread'** poster, radio, and **'Hitler over Germany'** flight campaigns while **400,000 SA men** fought KPD street battles; Nazi support surged from **107 seats (1930)** to **230 seats (37.3%) in July 1932**.",
+      "impact": "Q3d Core Debate: **Structural Economic Despair** stresses mass unemployment, KPD fear among middle-class *Mittelstand*/industrialists (Thyssen), and Weimar failure, whereas **Hitler & Propaganda** highlights flexible Nazi cross-class appeal and charisma.",
+      "bridgeToNext": "Despite holding 230 seats, Hindenburg despised the 'vulgar corporal'—forcing conservative elites into reckless backroom manoeuvres in late 1932.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "Joseph Goebbels",
+        "Heinrich Brüning",
+        "Ernst Thälmann"
+      ],
+      "keyTerms": [
+        {
+          "term": "Hunger Chancellor (Brüning)",
+          "definition": "Centre Party Chancellor (1930–32) whose wage/welfare cuts and reliance on Article 48 decrees deepened misery and sidelined parliament."
+        },
+        {
+          "term": "Work and Bread",
+          "definition": "Goebbels's simple, high-impact Nazi campaign slogan promising jobs for workers alongside protection from Communism for the middle class."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_17",
+      "num": 17,
+      "era": "kt2",
+      "date": "Nov 1932 – 30 Jan 1933",
+      "shortDate": "Jan 1933",
+      "shortTitle": "Backstairs Plot: Hitler Named",
+      "title": "Papen, Schleicher, Hindenburg & Hitler’s Appointment as Chancellor",
+      "specTag": "KT 2.4 • Causes of Hitler Becoming Chancellor (Jan 1933)",
+      "enquiryQuestion": "Why did Hindenburg and Franz von Papen hand Hitler the Chancellorship when Nazi votes were falling?",
+      "lessonIndex": 7,
+      "stageNum": 5,
+      "imageUrl": "/images/weimar_nazi_germany/kt2/wng_l2_4_b4_brandenburg_gate_30jan1933_labw.jpg",
+      "imageCaption": "SA stormtroopers marching in a torchlight parade through Berlin's Brandenburg Gate on the night of 30 January 1933.",
+      "catalyst": "Although the Nazis **lost 2 million votes (falling to 196 seats)** in **November 1932** and neared bankruptcy, neither **Franz von Papen**'s 'Cabinet of Barons' nor **General Kurt von Schleicher** (Dec 1932) could command a Reichstag majority.",
+      "turningPoint": "Plotting revenge on Schleicher, **Papen** met Hitler secretly on **4 January 1933** and persuaded **President Hindenburg** that a cabinet with **only 3 Nazis out of 11 ministers** would let conservatives *'push Hitler into a corner until he squeaked'*; Hitler became **Chancellor on 30 January 1933**.",
+      "impact": "Q3d Core Debate: **Backstairs Elite Intrigue** stresses Papen and Hindenburg rescued a fading NSDAP through arrogance, whereas **Mass Movement Power** argues no right-wing government could rule without Hitler's 196-seat bloc.",
+      "bridgeToNext": "Far from being tamed by Papen, Hitler called fresh March elections—and within four weeks a dramatic blaze in Berlin handed him emergency powers.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "Paul von Hindenburg",
+        "Franz von Papen",
+        "Kurt von Schleicher"
+      ],
+      "keyTerms": [
+        {
+          "term": "Backstairs Intrigue",
+          "definition": "January 1933 secret deal brokered by Franz von Papen, Oskar von Hindenburg, and industrialists persuading President Hindenburg to appoint Hitler."
+        },
+        {
+          "term": "Cabinet of Barons",
+          "definition": "Unelected conservative government led by Papen in 1932 that governed solely via Hindenburg's Article 48 decrees."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_18",
+      "num": 18,
+      "era": "kt3",
+      "date": "27 Feb – July 1933",
+      "shortDate": "Feb–Mar 1933",
+      "shortTitle": "Reichstag Fire & Enabling Act",
+      "title": "The Reichstag Fire, Enabling Act & One-Party Gleichschaltung",
+      "specTag": "KT 3.1 • Destroying Democracy, Parties & Trade Unions (1933)",
+      "enquiryQuestion": "How did Hitler exploit the Reichstag Fire and Enabling Act to destroy Weimar democracy?",
+      "lessonIndex": 8,
+      "stageNum": 3,
+      "imageUrl": "/images/kroll_opera_enabling_act_1933.jpg",
+      "imageCaption": "Adolf Hitler addressing Reichstag deputies beneath a giant swastika at the Kroll Opera House during passage of the Enabling Act, 23 March 1933.",
+      "catalyst": "On **27 February 1933**, Dutch Communist **Marinus van der Lubbe** was caught inside the burning **Reichstag**; Hitler and Göring blamed a Communist plot to secure Hindenburg's **28 February Decree** suspending civil rights and jailing **4,000+ Communists**.",
+      "turningPoint": "Winning **43.9%** in March 1933, Hitler barred 81 KPD deputies, promised Catholic Centre protection, and used SA intimidation at the **Kroll Opera House (23 March 1933)** to pass the **Enabling Act (444–94)**—smashing **trade unions (May)** and **banning all other parties (July)**.",
+      "impact": "Legally dismantled the Weimar Constitution from within: Hitler could now enact laws for four years without Reichstag or Presidential consent, establishing a one-party totalitarian state.",
+      "bridgeToNext": "Even as political opposition vanished in spring 1933, the new regime immediately launched ideological policies to reshape women's lives and marriage.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "Hermann Goering",
+        "Marinus van der Lubbe",
+        "Paul von Hindenburg"
+      ],
+      "keyTerms": [
+        {
+          "term": "Reichstag Fire Decree (28 Feb 1933)",
+          "definition": "Article 48 emergency decree suspending free speech, press, assembly, and trial rights—remained the legal basis of Nazi police rule."
+        },
+        {
+          "term": "Enabling Act (23 March 1933)",
+          "definition": "Constitutional amendment giving Hitler's cabinet power to pass laws without the Reichstag for four years."
+        },
+        {
+          "term": "Gleichschaltung",
+          "definition": "Nazi 'coordination' bringing regional states (Länder), trade unions, civil service, and political life under one-party control."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_19",
+      "num": 19,
+      "era": "kt4",
+      "date": "June 1933 – 1939",
+      "shortDate": "Jun 1933–39",
+      "shortTitle": "Nazi Policies Towards Women",
+      "title": "Kinder, Küche, Kirche, Marriage Loans, Mother’s Cross & Labour Reversal",
+      "specTag": "KT 4.1 • Nazi Views & Policies on Women, Family, Work & Appearance",
+      "enquiryQuestion": "How successful were Nazi policies aimed at reshaping women's family roles and employment?",
+      "lessonIndex": 12,
+      "stageNum": 2,
+      "imageUrl": "/images/upgraded/gcse-p3/weimar_l13_b3_mothers_cross_award.jpg",
+      "imageCaption": "The Cross of Honour of the German Mother (Mutterkreuz), awarded in bronze (4 children), silver (6), and gold (8+).",
+      "catalyst": "Alarmed by falling birth rates and Weimar's emancipated 'New Woman', Nazi ideology under **Gertrud Scholtz-Klink** preached ***Kinder, Küche, Kirche*** alongside unpainted faces, braided hair, and traditional dress.",
+      "turningPoint": "Women were sacked from legal/medical/civil posts (universities capped at 10%), offered **1,000-mark Marriage Loans (June 1933)** cancelled by 25% per child, honoured via the **Mother's Cross** and SS **Lebensborn** clinics (1935)—before **rearmament labour shortages (1937–39)** forced wives back into factories.",
+      "impact": "Q3d Core Debate: **Ideological Impact** notes German births rose from 970,000 (1933) to 1.4m (1939), whereas **Pragmatic Failure** stresses average family size stayed near two children and female workers rose from **11.6m to 14.6m** by 1939.",
+      "bridgeToNext": "Alongside reshaping family life in summer 1933, Hitler moved to bring Germany's Catholic and Protestant Churches under state control.",
+      "keyAgents": [
+        "Gertrud Scholtz-Klink",
+        "Heinrich Himmler",
+        "Adolf Hitler"
+      ],
+      "keyTerms": [
+        {
+          "term": "Kinder, Küche, Kirche",
+          "definition": "'Children, Kitchen, Church'—slogan summarising Nazi belief that Aryan women belonged in motherhood and homemaking."
+        },
+        {
+          "term": "Marriage Loans (June 1933)",
+          "definition": "Interest-free 1,000-mark vouchers for newlywed Aryan couples if the bride left work, with 25% written off for each child born."
+        },
+        {
+          "term": "Mother's Cross & Lebensborn",
+          "definition": "State medals rewarding mothers of 4, 6, or 8+ children alongside Himmler's SS maternity homes for 'racially pure' births."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_20",
+      "num": 20,
+      "era": "kt3",
+      "date": "July 1933 – May 1934",
+      "shortDate": "1933–34",
+      "shortTitle": "Concordat & The Reich Church",
+      "title": "Controlling the Churches: The Catholic Concordat & Protestant Reich Church",
+      "specTag": "KT 3.3 • Nazi Attempts to Control the Catholic & Protestant Churches",
+      "enquiryQuestion": "How did Hitler try to subordinate Germany's Catholic and Protestant Churches?",
+      "lessonIndex": 9,
+      "stageNum": 4,
+      "imageUrl": "/images/weimar_nazi_germany/kt3/wng_l10_b4_hitler_ludwig_mueller_1934.jpg",
+      "imageCaption": "Adolf Hitler greeting Reich Bishop Ludwig Müller in September 1934 during the campaign to build a Nazified Protestant Reich Church.",
+      "catalyst": "Nearly all Germans belonged to either the **Protestant (two-thirds)** or **Catholic (one-third)** Church, whose Christian teachings of universal love and loyalty to God rivalled Nazi racial obedience.",
+      "turningPoint": "Hitler signed the **July 1933 Concordat** with **Pope Pius XI** (trading Centre Party dissolution for promised Catholic school/youth freedom, soon broken by closing leagues and arresting priests) and merged Protestants into a Nazified **Reich Church** under **Ludwig Müller**.",
+      "impact": "While 'German Christians' displayed swastikas beside altars and sacked Jewish-born pastors, **Pastor Martin Niemöller** and **Dietrich Bonhoeffer** founded the breakaway **Confessing Church (May 1934)**, proving Nazi ideological control over faith stayed incomplete.",
+      "bridgeToNext": "By summer 1934, a far more immediate threat to Hitler's power erupted inside his own three-million-strong SA Brownshirts.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "Pope Pius XI",
+        "Martin Niemöller",
+        "Dietrich Bonhoeffer"
+      ],
+      "keyTerms": [
+        {
+          "term": "Concordat (July 1933)",
+          "definition": "Treaty with the Vatican guaranteeing Catholic schools and youth groups if clergy stayed out of politics—rapidly violated by Hitler."
+        },
+        {
+          "term": "Reich Church",
+          "definition": "Unified Protestant state church led by Reich Bishop Ludwig Müller and 'German Christians' blending Christianity with Nazi racism."
+        },
+        {
+          "term": "Confessing Church (May 1934)",
+          "definition": "Breakaway Protestant church co-founded by Pastor Niemöller and Bonhoeffer rejecting Nazi interference in Christian doctrine."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_21",
+      "num": 21,
+      "era": "kt3",
+      "date": "30 June – 2 Aug 1934",
+      "shortDate": "Jun–Aug 1934",
+      "shortTitle": "Night of the Long Knives & Oath",
+      "title": "Night of the Long Knives, Death of Hindenburg & The Army Oath",
+      "specTag": "KT 3.1 • Crushing the SA Threat & Becoming Führer (1934)",
+      "enquiryQuestion": "How did purging Ernst Röhm and Hindenburg's death complete Hitler's dictatorship in August 1934?",
+      "lessonIndex": 8,
+      "stageNum": 5,
+      "imageUrl": "/images/weimar_nazi_germany/kt3/wng_l9_b3_hitler_ernst_roehm_1933.jpg",
+      "imageCaption": "Adolf Hitler standing beside SA Chief of Staff Ernst Röhm in 1933, ten months before ordering Röhm's execution.",
+      "catalyst": "**Ernst Röhm**'s **3 million SA stormtroopers** demanded a socialist 'Second Revolution' and merger with the 100,000-man army, prompting Reichswehr generals and **President Hindenburg** to threaten martial law unless Hitler curbed the SA.",
+      "turningPoint": "On **30 June 1934** (**Night of the Long Knives**), **Himmler's SS** murdered **~400 rivals** including Röhm, Schleicher, and Gregor Strasser; when **Hindenburg died on 2 August 1934**, Hitler merged Chancellor and President as **Führer** and took a personal **army oath of allegiance**.",
+      "impact": "Eliminated the last internal party rivals, elevated the **SS** above the tamed SA, legalised political murder, and bound every German soldier by personal honour to obey Adolf Hitler unconditionally.",
+      "bridgeToNext": "Backed by the army and unchecked by any president, Heinrich Himmler and Reinhard Heydrich expanded a nationwide machinery of police terror and courts.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "Ernst Röhm",
+        "Heinrich Himmler",
+        "Paul von Hindenburg"
+      ],
+      "keyTerms": [
+        {
+          "term": "Night of the Long Knives",
+          "definition": "30 June 1934 SS purge executing Ernst Röhm, senior SA commanders, and political rivals to win regular army loyalty."
+        },
+        {
+          "term": "Führer & Army Oath (2 Aug 1934)",
+          "definition": "Hitler's merger of President and Chancellor upon Hindenburg's death, backed by an unconditional personal military oath of loyalty."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_22",
+      "num": 22,
+      "era": "kt3",
+      "date": "1933 – 1936",
+      "shortDate": "1933–36",
+      "shortTitle": "SS, Gestapo & Police State",
+      "title": "Himmler’s Police State: SS, Gestapo, Concentration Camps & People’s Court",
+      "specTag": "KT 3.2 • Terror Apparatus & Nazi Control of the Legal System",
+      "enquiryQuestion": "How did a relatively small Gestapo force and Nazi courts paralyse open opposition?",
+      "lessonIndex": 9,
+      "stageNum": 2,
+      "imageUrl": "/images/weimar_nazi_germany/kt3/wng_l10_b1_gestapo_hq_berlin_1933.jpg",
+      "imageCaption": "Gestapo Headquarters at Prinz-Albrecht-Straße 8 in Berlin, nerve centre of secret-police surveillance and protective custody.",
+      "mapUrl": "/images/weimar_nazi_germany/maps/wng_map_l10_nazi_police_state_camps_1933_39.svg",
+      "mapCaption": "Reference Map: Pre-1939 Nazi concentration camps (Dachau, Sachsenhausen, Buchenwald) and SS/Gestapo control across Germany.",
+      "catalyst": "To enforce *Gleichschaltung* across 70 million citizens, Hitler placed all German police forces under **Heinrich Himmler** (240,000-strong **SS**) and intelligence chief **Reinhard Heydrich** (**SD** and **Gestapo**).",
+      "turningPoint": "Operating above the law via **protective custody**, **~30,000 Gestapo agents** relied on neighbourly denunciations and local **Block Wardens** to send suspects without trial to **concentration camps** (**Dachau**, opened March 1933), while the **People's Court (1934)** tried treason without juries.",
+      "impact": "Q3d Core Debate: **Omnipotent Police Terror** stresses camp fear and Nazified judges crushed dissent, whereas **Self-Policing Consent** highlights that ordinary citizens' voluntary tip-offs powered a tiny Gestapo staff.",
+      "bridgeToNext": "Police terror soon enforced codified racial persecution against Jewish Germans and minority groups at the September 1935 Nuremberg Rally.",
+      "keyAgents": [
+        "Heinrich Himmler",
+        "Reinhard Heydrich"
+      ],
+      "keyTerms": [
+        {
+          "term": "SS, SD & Gestapo",
+          "definition": "Himmler's black-uniformed racial elite (SS), Heydrich's intelligence service (SD), and non-uniformed Secret State Police (Gestapo)."
+        },
+        {
+          "term": "Concentration Camps",
+          "definition": "SS-run prisons starting with Dachau (March 1933) holding political opponents, 'asocials', and minorities in indefinite protective custody."
+        },
+        {
+          "term": "People's Court (Volksgerichtshof)",
+          "definition": "Secret Nazi political court created in 1934 without juries or appeal rights, handing down harsh treason death sentences."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_23",
+      "num": 23,
+      "era": "kt4",
+      "date": "April 1933 – Sept 1935",
+      "shortDate": "Sep 1935",
+      "shortTitle": "1933 Boycott & Nuremberg Laws",
+      "title": "Early Persecution of Minorities & The September 1935 Nuremberg Laws",
+      "specTag": "KT 4.4 • Racial Beliefs, Minorities & Legal Persecution of Jews",
+      "enquiryQuestion": "How did Nazi racial beliefs escalate from the 1933 shop boycott to the 1935 Nuremberg Laws?",
+      "lessonIndex": 15,
+      "stageNum": 2,
+      "imageUrl": "/images/nuremberg_laws_chart_1935.jpg",
+      "imageCaption": "Official 1935 Nuremberg Laws racial chart classifying individuals by the ancestry of their four grandparents.",
+      "catalyst": "Driven by **Social Darwinism** and Aryan *Herrenvolk* ideology, the regime staged the **1 April 1933 boycott of Jewish shops**, purged Jewish civil servants, forcibly **sterilised ~400,000 disabled people** (July 1933 Law), and persecuted **Roma/Sinti**, **Slavs**, and **homosexuals** (Paragraph 175).",
+      "turningPoint": "At the **September 1935** rally, Hitler enacted two **Nuremberg Laws**: the **Reich Citizenship Law** stripped Jewish people of German citizenship and voting rights, and the **Law for the Protection of German Blood** outlawed marriage or relations between Jews and Aryans.",
+      "impact": "Codified antisemitism into permanent Reich statute defined by **grandparent ancestry** rather than religion, turning German Jews into stateless outsiders excluded legally from the *Volksgemeinschaft*.",
+      "bridgeToNext": "Just eleven months after Nuremberg, Goebbels temporarily hid anti-Jewish signs in Berlin to dazzle foreign visitors at the 1936 Olympic Games.",
+      "keyAgents": [
+        "Adolf Hitler",
+        "Julius Streicher",
+        "Heinrich Himmler"
+      ],
+      "keyTerms": [
+        {
+          "term": "Nuremberg Laws (Sept 1935)",
+          "definition": "Twin racial statutes stripping German Jews of citizenship (Reich Citizenship Law) and banning Jewish-Aryan marriage (Blood Law)."
+        },
+        {
+          "term": "Hereditary Sterilisation (1933)",
+          "definition": "July 1933 eugenics law under which Hereditary Health Courts forcibly sterilised ~400,000 citizens with disabilities or hereditary conditions."
+        },
+        {
+          "term": "Roma, Sinti & Paragraph 175",
+          "definition": "Racial registration and municipal camp internment (e.g. Berlin-Marzahn 1936) of Roma/Sinti alongside camp arrest of gay men."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_24",
+      "num": 24,
+      "era": "kt3",
+      "date": "1933 – 1937",
+      "shortDate": "Aug 1936",
+      "shortTitle": "Goebbels, Olympics & Culture",
+      "title": "Goebbels’ Propaganda: Volksempfänger, Nuremberg Rallies, 1936 Olympics & Art",
+      "specTag": "KT 3.3 • Censorship, Media, Rallies, Sport & Control of Culture",
+      "enquiryQuestion": "How did Goebbels use radio, rallies, the 1936 Olympics, and cultural censorship to mould attitudes?",
+      "lessonIndex": 10,
+      "stageNum": 4,
+      "imageUrl": "/images/weimar_nazi_germany/kt3/wng_l11_b3_jesse_owens_berlin_1936.jpg",
+      "imageCaption": "African American sprinter Jesse Owens winning four gold medals at the August 1936 Berlin Olympic Stadium.",
+      "catalyst": "Appointed Propaganda Minister in March 1933, **Joseph Goebbels** knew terror needed mass persuasion, forcing all journalists, filmmakers, and artists into the seven-branch **Reich Chamber of Culture**.",
+      "turningPoint": "Goebbels put cheap **Volksempfänger radios** into **70% of homes**, staged **Albert Speer**'s 'Cathedral of Light' **Nuremberg Rallies**, showcased a 100,000-seat stadium at the **August 1936 Berlin Olympics** (where **Jesse Owens** won 4 golds), burned books (1933), and mocked **Degenerate Art (1937)**.",
+      "impact": "Projected dazzling national unity and order at home and abroad while banning Weimar modernism, jazz, and Jewish writers—reinforcing the **'Hitler Myth'** even when citizens grumbled at local Party bosses.",
+      "bridgeToNext": "Simultaneously, Nazi economic planners mobilized German workers for rearmament while replacing lost union rights with state leisure schemes.",
+      "keyAgents": [
+        "Joseph Goebbels",
+        "Albert Speer",
+        "Jesse Owens"
+      ],
+      "keyTerms": [
+        {
+          "term": "Volksempfänger ('People's Receiver')",
+          "definition": "Cheap 76-mark state-subsidised radio (in 70% of German homes by 1939) unable to pick up distant foreign broadcasts."
+        },
+        {
+          "term": "Reich Chamber of Culture",
+          "definition": "Compulsory Nazi body policing press, literature, art, music, theatre, radio, and cinema, barring Jews and modernists."
+        },
+        {
+          "term": "Degenerate Art (Entartete Kunst)",
+          "definition": "Nazi label for confiscated modernist Weimar artworks (Dix, Grosz, Bauhaus) ridiculed in Munich's 1937 exhibition."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_25",
+      "num": 25,
+      "era": "kt4",
+      "date": "1935 – 1939",
+      "shortDate": "1935–39",
+      "shortTitle": "RAD, Rearmament, KdF & SdA",
+      "title": "Employment & Living Standards: RAD, Rearmament, Strength Through Joy & Beauty of Labour",
+      "specTag": "KT 4.3 • Reducing Unemployment, DAF, KdF & Beauty of Labour",
+      "enquiryQuestion": "Did Nazi economic policies genuinely improve living standards for ordinary German workers?",
+      "lessonIndex": 14,
+      "stageNum": 4,
+      "imageUrl": "/images/weimar_nazi_germany/kt4/wng_kt4_l15_b3_alt_kdf_wagen_1938.jpg",
+      "imageCaption": "Presentation of the Strength Through Joy (KdF) 'People's Car' prototype in 1938—for which no saver ever received a car.",
+      "catalyst": "Inheriting **6m unemployed**, Hitler abolished unions for **Robert Ley**'s **German Labour Front (DAF)**, made six-month **National Labour Service (RAD)** on **Autobahns** compulsory (1935), reintroduced **conscription (1.4m troops by 1939)**, and put **Hermann Göring** over the **1936 Four-Year Plan**.",
+      "turningPoint": "Official unemployment plunged below **300,000** (aided by **Invisible Unemployment** omitting sacked Jews, married women, and RAD conscripts), while **Strength Through Joy (KdF)** offered cheap holidays/theatre and **Beauty of Labour (SdA)** upgraded factory canteens.",
+      "impact": "Q3d Core Debate: **Worker Gains** notes secure jobs, national pride, and KdF trips, whereas **Exploitation & 'Guns before Butter'** highlights frozen wages, **49-hour weeks**, food shortages under **Autarky**, and zero delivered KdF cars.",
+      "bridgeToNext": "Preparing Germany for war within four years also demanded total ideological and physical capture of the next generation in schools and youth leagues.",
+      "keyAgents": [
+        "Hermann Goering",
+        "Adolf Hitler"
+      ],
+      "keyTerms": [
+        {
+          "term": "Invisible Unemployment",
+          "definition": "Statistical manipulation hiding dismissed Jews, married women pushed out of work, RAD conscripts, and camp detainees from jobless totals."
+        },
+        {
+          "term": "Strength Through Joy (KdF)",
+          "definition": "DAF leisure branch providing subsidised holidays, cruises, theatre tickets, and the unfulfilled Volkswagen car-savings scheme."
+        },
+        {
+          "term": "Beauty of Labour (SdA)",
+          "definition": "DAF scheme improving factory lighting, washrooms, and canteens—often built unpaid by workers themselves in their spare time."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_26",
+      "num": 26,
+      "era": "kt4",
+      "date": "Dec 1936 – March 1939",
+      "shortDate": "1936–39",
+      "shortTitle": "Hitler Youth, BDM & Schools",
+      "title": "Nazi Control of the Young: Hitler Youth, League of German Maidens & Schools",
+      "specTag": "KT 4.2 • Hitler Youth, League of German Maidens & Education",
+      "enquiryQuestion": "How did the Nazis use schools and compulsory youth movements to indoctrinate young Germans?",
+      "lessonIndex": 13,
+      "stageNum": 2,
+      "imageUrl": "/images/weimar_nazi_germany/kt4/wng_kt4_l14_b1_bdm_danzig_1937.jpg",
+      "imageCaption": "Teenage girls of the League of German Maidens (Bund Deutscher Mädel) lined up in uniform in 1937.",
+      "catalyst": "Believing *'he who owns the youth gains the future'*, Hitler banned rival Scout and church clubs while Education Minister **Bernhard Rust** purged Jewish/democratic teachers and enrolled **97% of teachers** in the **Nazi Teachers' League (NSLB)**.",
+      "turningPoint": "School curricula taught **Eugenics / Race Studies**, military PE (15% of timetable), and biased history/maths, while Baldur von Schirach's **Hitler Youth** (boys: rifle drill, marches) and **League of German Maidens** (girls: gymnastics, cooking, racial motherhood) became compulsory (**1936 & March 1939 Laws**, 8m+ members).",
+      "impact": "Created millions of devoted young Nazis willing to inform on hesitant parents or teachers, though relentless military drill after 1936 provoked growing boredom and teenage non-conformity.",
+      "bridgeToNext": "That growing teenage resentment—alongside brave church pastors and underground workers—fuelled pockets of pre-war resistance between 1937 and 1939.",
+      "keyAgents": [
+        "Adolf Hitler"
+      ],
+      "keyTerms": [
+        {
+          "term": "Hitler Youth (Hitlerjugend)",
+          "definition": "Nazi boys' movement (ages 14–18, after Jungvolk) drilling teenagers in route marches, map-reading, rifle shooting, and loyalty to Hitler."
+        },
+        {
+          "term": "League of German Maidens",
+          "definition": "Bund Deutscher Mädel (BDM) for girls aged 14–18 training future Aryan mothers through gymnastics, domestic skills, and racial hygiene."
+        },
+        {
+          "term": "Nazi Teachers' League (NSLB)",
+          "definition": "Organisation enrolling 97% of German teachers to enforce Nazi salutes, rewritten textbooks, and compulsory Eugenics lessons."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_27",
+      "num": 27,
+      "era": "kt3",
+      "date": "1937 – 1939",
+      "shortDate": "1937–39",
+      "shortTitle": "Church & Youth Opposition",
+      "title": "Conformity vs Resistance: Niemöller, Edelweiss Pirates & Swing Youth",
+      "specTag": "KT 3.4 • Scale of Support; Church & Youth Opposition (1933–39)",
+      "enquiryQuestion": "Why did most Germans conform—and how did church leaders and youth groups resist?",
+      "lessonIndex": 11,
+      "stageNum": 3,
+      "imageUrl": "/images/edelweiss_pirates_gestapo_cell_graffiti.jpg",
+      "imageCaption": "Prison cell wall inscription inside Cologne's Gestapo headquarters recording defiance by young Rhineland dissidents.",
+      "catalyst": "Falling unemployment, national pride (Rhineland/Austria), propaganda, and Gestapo fear meant most Germans conformed outwardly, limiting dissent to private grumbling while exiled SPD (*Sopade*) and KPD cells were broken.",
+      "turningPoint": "In **1937**, **Pope Pius XI** smuggled ***Mit Brennender Sorge*** into Catholic pulpits and Gestapo arrested **Pastor Martin Niemöller** (+800 Confessing pastors); meanwhile working-class **Edelweiss Pirates** ambushed Hitler Youth patrols and middle-class **Swing Youth** danced to banned American jazz.",
+      "impact": "Q3d Core Debate: **Courageous Moral Defiance** highlights religious and cultural limits to totalitarian control, whereas **Limited Political Threat** notes neither churches nor youth gangs came close to toppling Hitler (even lone carpenter **Georg Elser's Nov 1939 bomb** missed him by 13 minutes).",
+      "bridgeToNext": "With domestic opposition contained and foreign appeasement emboldening the regime, Nazi antisemitism exploded into open nationwide terror in November 1938.",
+      "keyAgents": [
+        "Martin Niemöller",
+        "Dietrich Bonhoeffer",
+        "Pope Pius XI",
+        "George Elser"
+      ],
+      "keyTerms": [
+        {
+          "term": "Mit Brennender Sorge (March 1937)",
+          "definition": "Papal encyclical ('With Burning Anxiety') by Pope Pius XI read secretly in German Catholic churches condemning Nazi racism and treaty breaches."
+        },
+        {
+          "term": "Edelweiss Pirates",
+          "definition": "Working-class Rhineland teenagers wearing check shirts and edelweiss badges who camped freely, sang banned songs, and fought Hitler Youth patrols."
+        },
+        {
+          "term": "Swing Youth",
+          "definition": "Affluent urban teenagers in Hamburg and Berlin who rejected Nazi militarism by wearing English fashion, welcoming Jews, and playing American swing."
+        }
+      ]
+    },
+    {
+      "id": "weimar_nazi_germany_ms_28",
+      "num": 28,
+      "era": "kt4",
+      "date": "9 – 10 Nov 1938 – Aug 1939",
+      "shortDate": "Nov 1938–39",
+      "shortTitle": "Kristallnacht & Emigration",
+      "title": "Kristallnacht (‘Night of Broken Glass’), Aryanisation & Forced Emigration",
+      "specTag": "KT 4.4 • Escalation of Anti-Jewish Persecution (1938–39)",
+      "enquiryQuestion": "How did Kristallnacht mark a violent turning point in Nazi persecution by September 1939?",
+      "lessonIndex": 15,
+      "stageNum": 4,
+      "imageUrl": "/images/kristallnacht_berlin_aftermath_1938.jpg",
+      "imageCaption": "A burning synagogue during the state-directed Kristallnacht pogrom of 9–10 November 1938 while fire brigades stood back.",
+      "mapUrl": "/images/weimar_nazi_germany/maps/wng_map_l16_kristallnacht_persecution_emigration_1938_39.svg",
+      "mapCaption": "Reference Map: Destroyed synagogues across the Reich during Kristallnacht (Nov 1938), camp round-ups of 30,000 Jewish men, and forced emigration.",
+      "catalyst": "After young Polish Jew Herschel Grynszpan shot German diplomat Ernst vom Rath in Paris (Nov 1938), **Joseph Goebbels** and Hitler used his death to unleash nationwide state-sponsored violence.",
+      "turningPoint": "On **9–10 November 1938 ('Kristallnacht')**, plainclothes SA and SS squads burned **1,000+ synagogues**, smashed **7,500 Jewish shops**, murdered **~100 Jews**, and sent **30,000 Jewish men** to Dachau, Buchenwald, and Sachsenhausen; Göring then fined Jews **1 billion marks** and completed forced **Aryanisation**.",
+      "impact": "Shifted Nazi policy from legal discrimination to open physical terror and total economic exclusion—expelling Jewish children from state schools and driving **over half of Germany's Jews** into stripped, forced emigration via Heydrich's Reich Office before September 1939.",
+      "bridgeToNext": "Twenty-one years after the 1918 Armistice, Weimar's democratic experiment had been replaced by a racial police dictatorship poised on the brink of European war in September 1939.",
+      "keyAgents": [
+        "Joseph Goebbels",
+        "Hermann Goering",
+        "Reinhard Heydrich",
+        "Judith Kerr"
+      ],
+      "keyTerms": [
+        {
+          "term": "Kristallnacht (9–10 Nov 1938)",
+          "definition": "State-orchestrated 'Night of Broken Glass' pogrom destroying synagogues and Jewish shops across Germany and Austria and arresting 30,000 men."
+        },
+        {
+          "term": "Aryanisation",
+          "definition": "Forced seizure or rock-bottom transfer of Jewish-owned businesses, homes, and property to non-Jewish Germans, completed after Nov 1938."
+        },
+        {
+          "term": "Reich Office for Jewish Emigration",
+          "definition": "Agency created under Reinhard Heydrich in early 1939 to force German and Austrian Jews to emigrate while confiscating their wealth."
+        }
+      ]
+    }
+  ]
+}

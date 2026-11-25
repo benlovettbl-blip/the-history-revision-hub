@@ -1,0 +1,927 @@
+{
+  "unitId": "eee",
+  "schemaVersion": "v1-curated-living-timeline",
+  "courseTitle": "Early Elizabethan England, 1558–88",
+  "eyebrow": "EDEXCEL GCSE OPTION B4 (PAPER 2B) • SPECIFICATION CHRONOLOGY • 24 MILESTONES",
+  "beatLabels": {
+    "catalyst": "1. Causes & Motives (12m Why)",
+    "turningPoint": "2. Key Features & Action (4m)",
+    "impact": "3. Significance & Debate (16m)",
+    "bridgeBadge": "🔗 Causal Bridge"
+  },
+  "streamFilters": [],
+  "eras": [
+    {
+      "id": "kt1",
+      "code": "KT 1",
+      "badge": "KEY TOPIC 1",
+      "pillLabel": "KT 1: Crown & Church (1558–69)",
+      "title": "Key Topic 1: Queen, Government and Religion, 1558–69",
+      "color": "#1e3a8a",
+      "accent": "#2563eb",
+      "softBg": "#eff6ff",
+      "softBorder": "#bfdbfe"
+    },
+    {
+      "id": "kt2",
+      "code": "KT 2",
+      "badge": "KEY TOPIC 2",
+      "pillLabel": "KT 2: Plots & Spain (1569–88)",
+      "title": "Key Topic 2: Challenges to Elizabeth at Home and Abroad, 1569–88",
+      "color": "#991b1b",
+      "accent": "#dc2626",
+      "softBg": "#fef2f2",
+      "softBorder": "#fecaca"
+    },
+    {
+      "id": "kt3",
+      "code": "KT 3",
+      "badge": "KEY TOPIC 3",
+      "pillLabel": "KT 3: Society & Sea (1558–88)",
+      "title": "Key Topic 3: Elizabethan Society in the Age of Exploration, 1558–88",
+      "color": "#0f766e",
+      "accent": "#0d9488",
+      "softBg": "#f0fdfa",
+      "softBorder": "#99f6e4"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "eee_ms_1",
+      "num": 1,
+      "era": "kt1",
+      "date": "17 Nov – Dec 1558",
+      "shortDate": "Nov 1558",
+      "shortTitle": "Accession of the Virgin Queen",
+      "title": "Accession of the Virgin Queen: Legitimacy, Debt & Privy Council",
+      "specTag": "KT 1.1 • Society, Government & Problems of Accession (1558)",
+      "enquiryQuestion": "Why did doubts over legitimacy, gender, marriage, and Crown debt threaten Elizabeth in 1558?",
+      "lessonIndex": 0,
+      "stageNum": 1,
+      "imageUrl": "/images/eee/iconic/elizabeth_i_coronation_portrait_npg_hires.jpg",
+      "imageCaption": "Queen Elizabeth I in her cloth-of-gold coronation robes holding the orb and sceptre after ascending the throne in November 1558.",
+      "catalyst": "Aged twenty-five in November 1558, **the Virgin Queen** inherited **£300,000** in Crown debt (borrowing in Antwerp at 14% interest) alongside patriarchal prejudice over her **gender** and Catholic doubts over her **legitimacy** as Anne Boleyn's daughter.",
+      "turningPoint": "Fluent in six languages and resolute in character, Elizabeth immediately appointed **Sir William Cecil** Principal Secretary, streamlined a 19-man **Privy Council**, and used royal **patronage** to bind rival nobles to her court.",
+      "impact": "Established firm administrative grip without surrendering her royal prerogative over **marriage**, though refusing to wed left England without a Protestant child heir while unpaid **Justices of the Peace** enforced local order.",
+      "bridgeToNext": "Domestic fiscal and dynastic fragility was compounded immediately by military humiliation across the Channel and a rival Catholic claimant to the north.",
+      "keyAgents": [
+        "Queen Elizabeth I",
+        "Sir William Cecil (Lord Burghley)",
+        "Queen Mary I (Mary Tudor)"
+      ],
+      "keyTerms": [
+        {
+          "term": "The Virgin Queen",
+          "definition": "Image cultivated by unmarried Elizabeth I turning her refusal to take a foreign or factional husband into a symbol of devotion to England."
+        },
+        {
+          "term": "Legitimacy",
+          "definition": "Lawful right to inherit the Crown; devout Catholics viewed Elizabeth as illegitimate because the Pope never annulled Henry VIII's first marriage."
+        },
+        {
+          "term": "Privy Council & Patronage",
+          "definition": "Elite 19-man executive council managed by Elizabeth through grants of Crown offices, land leases, and commercial monopolies."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_2",
+      "num": 2,
+      "era": "kt1",
+      "date": "Jan 1558 – 1560",
+      "shortDate": "1558–60",
+      "shortTitle": "Calais Lost & French Threat",
+      "title": "Loss of Calais, The Auld Alliance & Early Foreign Encirclement",
+      "specTag": "KT 1.1 • Challenges from Abroad: France, Scotland & Spain",
+      "enquiryQuestion": "Why did losing Calais and the Franco-Scottish Auld Alliance endanger England in 1558?",
+      "lessonIndex": 0,
+      "stageNum": 5,
+      "imageUrl": "/images/eee/kt1/antwerp_bourse_1531_borcht.jpg",
+      "imageCaption": "Sixteenth-century engraving of the Old Bourse at Antwerp, where the indebted Tudor Crown borrowed money to fund coastal defence.",
+      "mapUrl": "/images/eee/kt1/eee_map_l1_england_foreign_threats_1558.svg",
+      "mapCaption": "Reference Map: Strategic encirclement of England in 1558 by Catholic France, French-garrisoned Scotland, and Habsburg Spain.",
+      "catalyst": "Mary I's costly war alongside Spain had lost **Calais**—England's last continental foothold—in January 1558, while France stationed veteran troops in Scotland under the **Auld Alliance**.",
+      "turningPoint": "Catholic claimant **Mary, Queen of Scots**, married to French Dauphin **Francis II**, quartered the English royal arms with her own; Elizabeth wisely signed the **Treaty of Cateau-Cambrésis (1559)** and backed Scottish Protestants in 1560.",
+      "impact": "Avoided a ruinous two-front Catholic crusade when England lacked a standing army or cash, though French civil war after 1562 and Elizabeth's failed Le Havre venture ended hopes of regaining Calais.",
+      "bridgeToNext": "To prevent foreign Catholic powers exploiting unrest inside England, Elizabeth summoned Parliament in early 1559 to settle the nation's bitter religious divide.",
+      "keyAgents": [
+        "Queen Elizabeth I",
+        "Mary, Queen of Scots (Mary Stuart)",
+        "Francis II",
+        "Sir William Cecil (Lord Burghley)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Loss of Calais (Jan 1558)",
+          "definition": "Humiliating surrender of England's last French port under Mary I, leaving the southern English coast exposed across the Channel."
+        },
+        {
+          "term": "Auld Alliance",
+          "definition": "Traditional military alliance between Catholic France and Scotland that placed French troops along England's northern border."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_3",
+      "num": 3,
+      "era": "kt1",
+      "date": "May – Summer 1559",
+      "shortDate": "May 1559",
+      "shortTitle": "1559 Religious Settlement",
+      "title": "Elizabeth’s Religious Settlement: Supremacy, Uniformity & Injunctions",
+      "specTag": "KT 1.2 • Features of the 1559 Settlement of Religion",
+      "enquiryQuestion": "How did Elizabeth's 1559 Religious Settlement balance Protestant doctrine with traditional form?",
+      "lessonIndex": 1,
+      "stageNum": 3,
+      "imageUrl": "/images/book_of_common_prayer_1559_authentic.png",
+      "imageCaption": "Printed title page of the 1559 Elizabethan Book of Common Prayer establishing a single English pattern of parish worship.",
+      "catalyst": "England was split between conservative Catholic earls and northern gentry, 26 Marian bishops in the House of Lords, and returning **Marian exiles** demanding a Calvinist church.",
+      "turningPoint": "Parliament passed the **Act of Supremacy** (making Elizabeth **Supreme Governor** via a clergy oath) and **Act of Uniformity** (English **Book of Common Prayer**, Ornaments Rubric, and **12d recusancy fine**), backed by **57 Royal Injunctions**.",
+      "impact": "Created an inclusive Protestant *via media* ('middle way'): ambiguous communion wording and traditional vestments calmed moderate **Church Papists** while securing Protestant royal control over the Church.",
+      "bridgeToNext": "Passing statutes at Westminster was only half the task; royal commissioners now toured every diocese while strict Puritans attacked remaining Catholic ornaments.",
+      "keyAgents": [
+        "Queen Elizabeth I",
+        "Sir William Cecil (Lord Burghley)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Act of Supremacy (1559)",
+          "definition": "Statute severing ties with Rome and naming Elizabeth 'Supreme Governor' rather than 'Supreme Head' to calm Catholic and male critics."
+        },
+        {
+          "term": "Act of Uniformity (1559)",
+          "definition": "Law enforcing the 1559 English Book of Common Prayer across every parish and fining Sunday absentees (recusants) one shilling (12d)."
+        },
+        {
+          "term": "Royal Injunctions (1559)",
+          "definition": "Fifty-seven practical instructions ordering English parish Bibles and preaching royal supremacy while banning pilgrimages and 'feigned' miracles."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_4",
+      "num": 4,
+      "era": "kt1",
+      "date": "Autumn 1559 – 1563",
+      "shortDate": "1559–63",
+      "shortTitle": "Visitations & Crucifix Clash",
+      "title": "Enforcing the Settlement, Church Role & The Puritan Crucifix Challenge",
+      "specTag": "KT 1.2–1.3 • Role of the Church of England & Early Puritan Challenge",
+      "enquiryQuestion": "How did visitations enforce order—and why did Puritans challenge royal crucifixes?",
+      "lessonIndex": 1,
+      "stageNum": 5,
+      "imageUrl": "/images/eee/kt1/b0_l2_bishops_bible_elizabeth_frontispiece.jpg",
+      "imageCaption": "Hand-coloured frontispiece of the Elizabethan Bishops' Bible depicting Queen Elizabeth I flanked by Justice and Mercy.",
+      "catalyst": "While **Church courts** policed village morals and pulpits preached royal obedience, zealous returning **Puritans** condemned organs, holy days, and silver **crucifixes** as popish superstition.",
+      "turningPoint": "In autumn 1559, 125 royal commissioners conducted **visitations** (only **~400 of 8,000 clergy** refused the oath); when Protestant bishops threatened resignation over Elizabeth's Royal Chapel crucifix, she removed it, and Puritans lost by **one vote** at the **1563 Convocation**.",
+      "impact": "Demonstrated overwhelming parish compliance across rural England while showing Elizabeth would yield tactically on a chapel ornament yet block any clerical vote to alter her statutory settlement.",
+      "bridgeToNext": "Alongside parish pulpits, Protestant humanism and rising commercial wealth fuelled rapid growth in town grammar schools and class-stratified Elizabethan leisure.",
+      "keyAgents": [
+        "Queen Elizabeth I",
+        "James Pilkington"
+      ],
+      "keyTerms": [
+        {
+          "term": "Visitations",
+          "definition": "Official diocesan inspections ensuring clergy swore the Oath of Supremacy, used the English Prayer Book, and removed superstitious images."
+        },
+        {
+          "term": "Church Courts",
+          "definition": "Ecclesiastical courts enforcing everyday parish morality by prosecuting slander, adultery, heresy, sabbath-breaking, and disputed wills."
+        },
+        {
+          "term": "Crucifix Controversy",
+          "definition": "Early 1560s clash when Puritan bishops forced Elizabeth to remove her Royal Chapel crucifix where rural parishes lacked replacement clergy."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_5",
+      "num": 5,
+      "era": "kt3",
+      "date": "1560s – 1570s",
+      "shortDate": "1560s–70s",
+      "shortTitle": "Grammar Schools & Pastimes",
+      "title": "Humanist Education, Endowed Grammar Schools & Social Pastimes",
+      "specTag": "KT 3.1 • Education in the Home & Schools; Sport & Pastimes",
+      "enquiryQuestion": "How did Elizabethan schooling and leisure reflect both humanist growth and social rank?",
+      "lessonIndex": 8,
+      "stageNum": 2,
+      "imageUrl": "/images/eee/kt3/l9_s1_tudor_schoolroom_woodcut.jpg",
+      "imageCaption": "Sixteenth-century English woodcut of a Tudor town grammar schoolroom with schoolmaster, birch rod, and Latin scholars.",
+      "catalyst": "Protestant emphasis on Bible reading, humanist scholarship, and expanding urban trade encouraged wealthy benefactors and guilds to endow **42 grammar schools in the 1560s** and **30 more in the 1570s**.",
+      "turningPoint": "Nobility hired private tutors; gentry and merchant boys studied Latin and Greek at **grammar schools** (after **petty schools**) before **Oxford, Cambridge**, or the Inns of Court, while leisure split noble **hunting, hawking, and real tennis** from village **folk football** and shared **bear-baiting**.",
+      "impact": "Male literacy rose to roughly **30%** (and female literacy to **10%**) by the 1580s, yet schooling reinforced the **Great Chain of Being**: farm labourers' children worked from age six and women remained barred from universities.",
+      "bridgeToNext": "Educated Protestant clergy remained divided over church dress, bringing Elizabeth and Archbishop Parker into open confrontation with London Puritans in 1566.",
+      "keyAgents": [
+        "Queen Elizabeth I",
+        "Thomas Harriot"
+      ],
+      "keyTerms": [
+        {
+          "term": "Grammar Schools",
+          "definition": "Fee-paying town schools for gentry, merchant, and yeoman boys aged 10–14 teaching classical Latin, Greek, rhetoric, and obedience."
+        },
+        {
+          "term": "Petty & Dame Schools",
+          "definition": "Elementary home-based schools teaching basic hornbook reading, arithmetic, or needlework before apprenticeships or grammar school."
+        },
+        {
+          "term": "Social Pastimes",
+          "definition": "Rank-divided leisure pitting noble deer-hunting, hawking, and fencing against rough parish football and cross-class Southwark bear-baiting."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_6",
+      "num": 6,
+      "era": "kt1",
+      "date": "March 1566",
+      "shortDate": "Mar 1566",
+      "shortTitle": "Parker & Vestments Clash",
+      "title": "Archbishop Parker’s Book of Advertisements & The Vestments Controversy",
+      "specTag": "KT 1.3 • Scope & Impact of the Puritan Challenge",
+      "enquiryQuestion": "How did Archbishop Parker defeat Puritan defiance over clerical vestments in 1566?",
+      "lessonIndex": 2,
+      "stageNum": 2,
+      "imageUrl": "/images/eee/kt1/archbishop_matthew_parker_lambeth.jpg",
+      "imageCaption": "Matthew Parker, moderate Protestant Archbishop of Canterbury appointed by Elizabeth I to enforce clerical uniformity.",
+      "catalyst": "Puritan ministers refused to wear the white linen **surplice** and square cap required by the 1559 Ornaments Rubric, condemning special priestly dress as *'rags of Rome'*.",
+      "turningPoint": "Ordered by Elizabeth to enforce uniformity, Archbishop **Matthew Parker** issued his March 1566 **Book of Advertisements**, exhibited approved garments at Lambeth Palace, and deprived **37 non-conforming London Puritan priests** of their livings.",
+      "impact": "Exposed the limits of the Puritan challenge: lacking noble leadership, foreign backing, or any Protestant alternative to Elizabeth, most Puritans conformed rather than lose their pulpits.",
+      "bridgeToNext": "While domestic Puritan resistance subsided after 1566, militant Counter-Reformation Catholicism surged dangerously across the Narrow Sea in the Spanish Netherlands.",
+      "keyAgents": [
+        "Queen Elizabeth I",
+        "Sir William Cecil (Lord Burghley)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Vestment Controversy",
+          "definition": "Mid-1560s refusal by zealous Puritan clergy to wear the prescribed white linen surplice during parish worship."
+        },
+        {
+          "term": "Book of Advertisements (1566)",
+          "definition": "Archbishop Matthew Parker's rulebook enforcing uniform clerical dress and depriving 37 defiant London ministers."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_7",
+      "num": 7,
+      "era": "kt1",
+      "date": "1567 – Nov 1568",
+      "shortDate": "1567–68",
+      "shortTitle": "Alba & The Genoese Loan",
+      "title": "The Duke of Alba in Flanders & Seizure of the Genoese Loan",
+      "specTag": "KT 1.3 • Catholic Challenge from the Papacy & Foreign Powers",
+      "enquiryQuestion": "Why did Alba's Spanish army in Flanders and the Genoese Loan spark a trade crisis?",
+      "lessonIndex": 2,
+      "stageNum": 5,
+      "imageUrl": "/images/eee/kt1/duke_of_alba_antonis_mor_1549.jpg",
+      "imageCaption": "Fernando Álvarez de Toledo, 3rd Duke of Alba, commander of King Philip II's Spanish army sent to crush Dutch Protestantism in 1567.",
+      "catalyst": "Pope Pius V's **Counter-Reformation** hardened Catholic attitudes from 1566, William Allen founded the **Douai** seminary (1568), and King **Philip II** sent the **Duke of Alba** with **10,000 veteran Spanish troops** into the Netherlands (1567).",
+      "turningPoint": "In **November 1568**, five Spanish ships carrying **£85,000** in gold bullion (**the Genoese Loan** bound to pay Alba's army) sheltered in English ports; advised by Cecil, Elizabeth legally impounded the gold for the English Crown.",
+      "impact": "Starved Alba's army in Flanders of vital pay right across the Channel, but provoked Spain's retaliatory **Antwerp trade embargo**, halting English woollen cloth exports and souring Anglo-Spanish relations.",
+      "bridgeToNext": "Just months before the Genoese Loan clash, Catholic Mary, Queen of Scots fled across the Solway Firth into Cumbria—handing English Catholics a rival figurehead inside England.",
+      "keyAgents": [
+        "The Duke of Alba",
+        "King Philip II of Spain",
+        "Queen Elizabeth I",
+        "Sir William Cecil (Lord Burghley)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Council of Troubles (1567)",
+          "definition": "The Duke of Alba's notorious 'Council of Blood' in the Spanish Netherlands that executed thousands of Dutch Protestants."
+        },
+        {
+          "term": "Genoese Loan (Nov 1568)",
+          "definition": "£85,000 in Italian bank bullion bound for Alba's army in Antwerp that Elizabeth impounded when Spanish ships sheltered in English ports."
+        },
+        {
+          "term": "Douai Seminary (1568)",
+          "definition": "Catholic college in Flanders founded by William Allen to train missionary priests to keep Catholicism alive in England."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_8",
+      "num": 8,
+      "era": "kt1",
+      "date": "May 1568 – Jan 1569",
+      "shortDate": "1568–69",
+      "shortTitle": "Mary Stuart & York Inquiry",
+      "title": "Flight of Mary, Queen of Scots & The York Casket Letters Inquiry",
+      "specTag": "KT 1.4 • Mary Stuart's Claim & Relations with Elizabeth (1568–69)",
+      "enquiryQuestion": "Why was Mary, Queen of Scots' arrival in May 1568 an impossible dilemma for Elizabeth?",
+      "lessonIndex": 3,
+      "stageNum": 4,
+      "imageUrl": "/images/upgraded/gcse-med-eee/eee_mary_queen_of_scots_hilliard.jpg",
+      "imageCaption": "Miniature portrait of Mary, Queen of Scots, legitimate Catholic great-granddaughter of Henry VII held in English captivity from 1568.",
+      "mapUrl": "/images/eee/kt1/eee_map_l4_mary_stuart_scotland_flight_1567_69.svg",
+      "mapCaption": "Reference Map: Lord Darnley's murder, Mary's escape from Lochleven, flight into Cumbria (May 1568), and English castle captivity.",
+      "catalyst": "After **Lord Darnley**'s 1567 murder at Kirk o' Field and Mary's scandalous marriage to Bothwell, Protestant Scottish lords forced her abdication for infant **James VI**; escaping **Lochleven**, Mary fled into England in **May 1568**.",
+      "turningPoint": "Trapped because restoring, releasing, or executing an anointed cousin all carried grave risks, Elizabeth held the **York Inquiry (Oct 1568–Jan 1569)** over the **Casket Letters**, delivering a **'not proven'** verdict to keep Mary under house arrest.",
+      "impact": "Preserved friendly Protestant Regency rule in Scotland without trying a fellow queen, yet keeping Catholic **heir presumptive** Mary inside England immediately inspired a court plot to wed her to the **Duke of Norfolk**.",
+      "bridgeToNext": "While court intrigue brewed around Mary in 1569, Flemish mapmaking and English shipyard breakthroughs were simultaneously laying the technical foundations of oceanic power.",
+      "keyAgents": [
+        "Mary, Queen of Scots (Mary Stuart)",
+        "Queen Elizabeth I",
+        "Lord Darnley (Henry Stuart)",
+        "The Duke of Norfolk (Thomas Howard)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Heir Presumptive",
+          "definition": "Mary Stuart's strong dynastic status as Henry VII's great-granddaughter while unmarried Elizabeth lacked a child of her own."
+        },
+        {
+          "term": "Casket Letters",
+          "definition": "Eight French letters and love sonnets produced by Regent Moray at York as alleged proof Mary plotted Lord Darnley's murder."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_9",
+      "num": 9,
+      "era": "kt3",
+      "date": "1569 – 1570s",
+      "shortDate": "1569–70s",
+      "shortTitle": "Mercator Maps & Galleon Design",
+      "title": "Mercator’s 1569 World Map, Navigational Science & Race-Built Galleons",
+      "specTag": "KT 3.3 • New Technology on Ships, Navigation & Trade Expansion",
+      "enquiryQuestion": "How did Mercator maps, astrolabes, and race-built galleons transform English voyages?",
+      "lessonIndex": 10,
+      "stageNum": 1,
+      "imageUrl": "/images/eee/kt3/l11_s0_mercator_world_map_1569.jpg",
+      "imageCaption": "Gerardus Mercator's 1569 navigational world map projection plotting compass bearings across parallel latitude and longitude grids.",
+      "catalyst": "Antwerp's cloth-trade collapse (from 1568) forced London merchants into joint-stock ventures like the **Muscovy**, **Eastland**, and **Levant** Companies while captains needed safer open-ocean navigation.",
+      "turningPoint": "Flemish cartographer **Gerardus Mercator** published his **1569 projection map** alongside brass **astrolabes**, **quadrants**, and **log-and-line** speed gauges, while Naval Treasurer **Sir John Hawkins** designed fast, low **race-built galleons** armed with long-range **culverins**.",
+      "impact": "Combined square and triangular **lateen sails** with heavy broadside firepower and ocean endurance—enabling both global exploration (Drake, Frobisher) and England's decisive 1588 naval superiority over Spain.",
+      "bridgeToNext": "Back in northern England in autumn 1569, Elizabeth's arrest of the Duke of Norfolk triggered the reign's only major domestic armed rebellion.",
+      "keyAgents": [
+        "Sir John Hawkins",
+        "Sir Francis Drake"
+      ],
+      "keyTerms": [
+        {
+          "term": "Mercator Projection (1569)",
+          "definition": "Navigational world map placing latitude and longitude on a grid so sailors could plot straight constant-compass courses across oceans."
+        },
+        {
+          "term": "Astrolabe & Quadrant",
+          "definition": "Precision brass instruments measuring the angle of the midday sun or Polaris to calculate north-south latitude at sea."
+        },
+        {
+          "term": "Race-Built Galleons",
+          "definition": "Sleek, lower-hulled English warships pioneered by John Hawkins combining Atlantic stability, agile lateen sails, and heavy culverin gun decks."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_10",
+      "num": 10,
+      "era": "kt2",
+      "date": "Nov 1569 – Jan 1570",
+      "shortDate": "Nov 1569",
+      "shortTitle": "Revolt of the Northern Earls",
+      "title": "The Revolt of the Northern Earls: Durham Mass & Royal Retribution",
+      "specTag": "KT 2.1 • Reasons for & Significance of the Northern Revolt (1569–70)",
+      "enquiryQuestion": "Why did the 1569 Revolt of the Northern Earls break out—and why did it fail?",
+      "lessonIndex": 4,
+      "stageNum": 1,
+      "imageUrl": "/images/upgraded/gcse-med-eee/eee_thomas_percy_northumberland_1566.jpg",
+      "imageCaption": "Thomas Percy, 7th Earl of Northumberland, who rose with the Earl of Westmorland in November 1569 to restore Catholicism.",
+      "mapUrl": "/images/eee/kt2/eee_map_l5_northern_earls_revolt_1569.svg",
+      "mapCaption": "Reference Map: March of the Northern Earls through Durham Cathedral, Hartlepool, and Barnard Castle before royal suppression (Nov–Dec 1569).",
+      "catalyst": "Catholic earls **Northumberland** and **Westmorland** resented losing northern power and income under Protestant Bishop **James Pilkington** and feared arrest when the **Norfolk marriage plot** collapsed in September 1569.",
+      "turningPoint": "In **November 1569**, **4,600 rebels** tore up the English Bible in **Durham Cathedral** and celebrated Latin Mass; when Alba sent no Spanish troops to Hartlepool and Elizabeth moved Mary to Coventry, royal troops crushed the rising and executed **450 rebels**.",
+      "impact": "Proved most English Catholics and northern gentry remained loyal to the Tudor Crown, yet prompted harsher treason statutes, confiscated rebel estates, and a reconstructed Protestant **Council of the North** under Huntingdon.",
+      "bridgeToNext": "Only weeks after the northern rising collapsed, Pope Pius V fatally escalated religious conflict by excommunicating Elizabeth from Rome.",
+      "keyAgents": [
+        "The Earl of Northumberland (Thomas Percy)",
+        "The Earl of Westmorland (Charles Neville)",
+        "The Duke of Norfolk (Thomas Howard)",
+        "James Pilkington"
+      ],
+      "keyTerms": [
+        {
+          "term": "Revolt of the Northern Earls",
+          "definition": "November 1569 Catholic rebellion by Northumberland and Westmorland aiming to free Mary Stuart, restore Latin Mass, and oust Cecil."
+        },
+        {
+          "term": "Council of the North",
+          "definition": "Royal administrative council in York reorganised under Protestant President Henry Hastings, Earl of Huntingdon, after the 1569 rebellion."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_11",
+      "num": 11,
+      "era": "kt2",
+      "date": "Feb 1570 – June 1572",
+      "shortDate": "1570–72",
+      "shortTitle": "Papal Bull & Ridolfi Plot",
+      "title": "Regnans in Excelsis (1570), The Ridolfi Plot & Execution of Norfolk",
+      "specTag": "KT 2.1 • Papal Excommunication & Catholic Conspiracy (1570–72)",
+      "enquiryQuestion": "How did the 1570 Papal Bull and 1571 Ridolfi Plot transform the Catholic threat?",
+      "lessonIndex": 4,
+      "stageNum": 2,
+      "imageUrl": "/images/regnans_in_excelsis_1570.jpg",
+      "imageCaption": "Pope Pius V's February 1570 papal bull Regnans in Excelsis excommunicating Elizabeth I and releasing Catholics from allegiance.",
+      "mapUrl": "/images/elizabethan_england_catholic_revolt_mary_scots_map.jpg",
+      "mapCaption": "Reference Map: Catholic noble strongholds, Mary Stuart's prison transfers, and foreign invasion schemes against Elizabethan England.",
+      "catalyst": "**Pope Pius V**'s February 1570 bull ***Regnans in Excelsis*** excommunicated Elizabeth as a heretic and ordered English Catholics to depose her, turning religious loyalty into suspected treason (**1571 Treasons Act**).",
+      "turningPoint": "In **1571**, Italian banker **Roberto Ridolfi** plotted with **Philip II**, Alba (**10,000 Spanish troops**), Mary Stuart, and the **Duke of Norfolk** to overthrow Elizabeth; Cecil and Walsingham intercepted coded letters and executed Norfolk in **June 1572**.",
+      "impact": "Revealed Spain's willingness to back Elizabeth's overthrow and ended leniency toward Catholic plotters, though Elizabeth still resisted parliamentary calls to execute anointed monarch Mary Stuart.",
+      "bridgeToNext": "Fear that rural poverty and wandering vagrants could fuel further rebellion prompted Parliament in 1572 to pass sweeping national poor legislation.",
+      "keyAgents": [
+        "Roberto Ridolfi",
+        "The Duke of Norfolk (Thomas Howard)",
+        "Sir William Cecil (Lord Burghley)",
+        "Sir Francis Walsingham"
+      ],
+      "keyTerms": [
+        {
+          "term": "Regnans in Excelsis (1570)",
+          "definition": "Papal bull excommunicating Elizabeth I and absolving English Catholics of their oaths of loyalty to the Crown."
+        },
+        {
+          "term": "Ridolfi Plot (1571)",
+          "definition": "Foiled international conspiracy by banker Roberto Ridolfi to land 10,000 Spanish troops, depose Elizabeth, and wed Mary Stuart to Norfolk."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_12",
+      "num": 12,
+      "era": "kt3",
+      "date": "1572",
+      "shortDate": "1572",
+      "shortTitle": "Poverty & 1572 Vagabonds Act",
+      "title": "Population Growth, Sheep Enclosure & The 1572 Vagabonds Act",
+      "specTag": "KT 3.2 • Increase in Poverty & Vagabondage; Early Policy",
+      "enquiryQuestion": "Why did poverty and vagabondage rise—and how did the 1572 Act respond?",
+      "lessonIndex": 9,
+      "stageNum": 4,
+      "imageUrl": "/images/eee/kt3/l10_s3_harman_caveat_vagabonds_1567.jpg",
+      "imageCaption": "Woodcut from Thomas Harman's A Caveat for Common Cursitors (1567) warning magistrates against sturdy beggars and vagabonds.",
+      "catalyst": "England's population surged **35% (from 3m to 4m)** alongside bad harvests, coin-debasement inflation, **rack-renting**, and **enclosure** for lucrative **sheep farming** (needing a tenth the workers of arable grain), fuelling widespread **vagabondage**.",
+      "turningPoint": "Guided by Thomas Harman's warnings against **'sturdy beggars'**, the **1572 Vagabonds Act** combined a **compulsory weekly poor rate** for the **impotent poor** with harsh punishment: unlicensed vagrants were whipped and **bored through the ear** (hanging for repeat offences).",
+      "impact": "Established national compulsory local taxation for deserving parish poor for the first time, while reflecting gentry terror (without a police force) that masterless vagrants spread crime, plague, and sedition.",
+      "bridgeToNext": "Recurring cloth-trade slumps in the mid-1570s soon convinced MPs that many able-bodied poor genuinely lacked jobs rather than choosing idleness.",
+      "keyAgents": [
+        "Sir William Cecil (Lord Burghley)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Enclosure",
+          "definition": "Hedging open village fields and common land into private sheep pastures for wool exports, evicting rural farm labourers."
+        },
+        {
+          "term": "Vagabondage",
+          "definition": "Wandering without a settled parish home or master; feared by Tudor JPs as a cause of crime, disease, and rebellion."
+        },
+        {
+          "term": "Impotent vs Able-Bodied Poor",
+          "definition": "Tudor distinction between deserving orphans, elderly, and sick unable to work versus physically capable ('sturdy') unemployed adults."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_13",
+      "num": 13,
+      "era": "kt3",
+      "date": "1576",
+      "shortDate": "1576",
+      "shortTitle": "1576 Poor Relief & Bridewells",
+      "title": "Changing Attitudes: The 1576 Poor Relief Act & Houses of Correction",
+      "specTag": "KT 3.2 • Changing Attitudes & Policies Towards the Poor",
+      "enquiryQuestion": "How did the 1576 Poor Relief Act mark a turning point in attitudes toward unemployment?",
+      "lessonIndex": 9,
+      "stageNum": 5,
+      "imageUrl": "/images/eee/kt3/eee_l10_s3_tudor_sturdy_beggar_woodcut.jpg",
+      "imageCaption": "Sixteenth-century English woodcut depicting an able-bodied vagrant ('Upright Man') during the Elizabethan poor-law debates.",
+      "catalyst": "Antwerp cloth embargoes and poor harvests (1573–77) proved that thousands of **able-bodied poor** wanted honest work yet could not find employment through no fault of their own.",
+      "turningPoint": "Parliament passed the **1576 Poor Relief Act** (*Act for Setting the Poor on Work*), ordering Justices of the Peace to supply **raw wool, flax, hemp, and iron** so the unemployed could earn wages, while sending refusers to county **Bridewells** (Houses of Correction).",
+      "impact": "Marked a constructive shift from pure physical deterrence to state-organised employment relief—forming with the 1563 and 1572 Acts a national framework of parish responsibility that endured throughout Elizabeth's reign.",
+      "bridgeToNext": "That same year—helped by the 1572 Vagabonds Act licensing noble acting troupes—Elizabethan popular culture blossomed in London's first permanent playhouse.",
+      "keyAgents": [
+        "Sir William Cecil (Lord Burghley)",
+        "Queen Elizabeth I"
+      ],
+      "keyTerms": [
+        {
+          "term": "1576 Poor Relief Act",
+          "definition": "Statute requiring towns and parishes to provide raw wool, hemp, and flax to employ able-bodied poor unable to find work."
+        },
+        {
+          "term": "Houses of Correction (Bridewells)",
+          "definition": "County institutions established under the 1576 Act where persistent vagrants who refused parish work faced strict hard labour."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_14",
+      "num": 14,
+      "era": "kt3",
+      "date": "1576 – 1587",
+      "shortDate": "1576–87",
+      "shortTitle": "Rise of Elizabethan Theatre",
+      "title": "Burbage’s ‘The Theatre’ (1576), Penny Groundlings & Puritan Opposition",
+      "specTag": "KT 3.1 • Growth of Secular Drama & The Theatre",
+      "enquiryQuestion": "Why did purpose-built London playhouses thrive across all classes despite Puritan anger?",
+      "lessonIndex": 8,
+      "stageNum": 5,
+      "imageUrl": "/images/tudor_wooden_hornbook_alphabet.jpg",
+      "imageCaption": "Authentic Elizabethan wooden hornbook used to teach foundational literacy in petty schools as print and playgoing expanded.",
+      "catalyst": "Because the **1572 Vagabonds Act** required touring actors to hold a nobleman's licence, professional companies like **Leicester's Men** and **the Queen's Men (1583)** formed as mystery plays were suppressed.",
+      "turningPoint": "In **1576**, actor **James Burbage** opened England's first purpose-built playhouse, **'The Theatre'**, in Shoreditch outside City of London jurisdiction, followed by **The Curtain (1577)** and **The Rose (1587)**, drawing 2,000 spectators per show.",
+      "impact": "United Elizabethan society under one roof—poor **groundlings** stood in the open yard for **1d** while gentry sat in covered **2d–3d galleries**—despite **Puritan** and City aldermen protests over plague, crime, and idleness.",
+      "bridgeToNext": "Just one year after 'The Theatre' opened in London, Francis Drake sailed secretly from Plymouth to challenge Spain's Pacific empire around the globe.",
+      "keyAgents": [
+        "Robert Dudley (Earl of Leicester)",
+        "Queen Elizabeth I"
+      ],
+      "keyTerms": [
+        {
+          "term": "The Theatre (1576)",
+          "definition": "England's first permanent purpose-built playhouse erected by James Burbage in Shoreditch in 1576."
+        },
+        {
+          "term": "Groundlings",
+          "definition": "Ordinary labourers and apprentices who paid one penny to stand in the open pit around the thrust stage."
+        },
+        {
+          "term": "Queen's Men (1583)",
+          "definition": "Licensed royal acting company formed under Walsingham's patronage, touring Protestant patriotic plays across England."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_15",
+      "num": 15,
+      "era": "kt3",
+      "date": "Dec 1577 – Sept 1580",
+      "shortDate": "1577–80",
+      "shortTitle": "Drake's Circumnavigation",
+      "title": "Sir Francis Drake’s Circumnavigation of the Globe in the Golden Hind",
+      "specTag": "KT 3.3 & KT 2.2 • Reasons for & Significance of Drake's Voyage",
+      "enquiryQuestion": "Why was Drake's 1577–80 circumnavigation so significant for English wealth and sea power?",
+      "lessonIndex": 10,
+      "stageNum": 4,
+      "imageUrl": "/images/eee/kt2/drake_golden_hind_cacafuego_1579.jpg",
+      "imageCaption": "Sixteenth-century engraving of Francis Drake's flagship Golden Hind capturing Spain's Pacific treasure ship Cacafuego in March 1579.",
+      "mapUrl": "/images/eee/kt3/eee_map_l11_drake_circumnavigation_1577_80.svg",
+      "mapCaption": "Reference Map: Global route of Francis Drake's circumnavigation (1577–80) via the Strait of Magellan, Peru, Nova Albion, and the Moluccas.",
+      "catalyst": "Seeking to avenge Spain's **1568 San Juan de Ulúa** ambush, break Philip II's Pacific trade monopoly, and win royal plunder, **Francis Drake** sailed from Plymouth in December 1577 with secret backing from Elizabeth, Walsingham, and Leicester.",
+      "turningPoint": "Navigating the stormy **Strait of Magellan** in his flagship ***Golden Hind***, Drake raided Chile and Peru, captured the treasure ship ***Cacafuego*** (£140,000), claimed **Nova Albion** in North America, traded Moluccan cloves, and returned in **Sept 1580 with £400,000**.",
+      "impact": "Delivered investors a **4,700% profit**, cleared England's entire Crown debt from Elizabeth's share, proved English mariners could circle the globe, and inspired **Raleigh's Virginia** plans while infuriating Madrid.",
+      "bridgeToNext": "When King Philip II—newly strengthened by annexing Portugal in 1580—demanded Drake's head as a pirate, Elizabeth staged a brazen public reply on the Thames.",
+      "keyAgents": [
+        "Sir Francis Drake",
+        "Queen Elizabeth I",
+        "Sir Francis Walsingham"
+      ],
+      "keyTerms": [
+        {
+          "term": "Golden Hind & Cacafuego",
+          "definition": "Drake's renamed flagship (formerly Pelican) that captured Spain's rich Pacific silver galleon Cacafuego off Ecuador in March 1579."
+        },
+        {
+          "term": "Nova Albion (June 1579)",
+          "definition": "North American Pacific coast ('New England', likely California) welcomed by Miwok people and claimed by Drake for Queen Elizabeth."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_16",
+      "num": 16,
+      "era": "kt2",
+      "date": "April 1581",
+      "shortDate": "Apr 1581",
+      "shortTitle": "Drake's Deptford Knighting",
+      "title": "Anglo-Spanish Rivalry & Elizabeth’s Defiant Knighting of Drake at Deptford",
+      "specTag": "KT 2.2 • Political, Religious & Commercial Rivalry with Spain",
+      "enquiryQuestion": "Why did publicly knighting Francis Drake at Deptford in April 1581 infuriate Philip II?",
+      "lessonIndex": 5,
+      "stageNum": 4,
+      "imageUrl": "/images/eee/kt2/sir_francis_drake_hondius_1583.jpg",
+      "imageCaption": "Contemporary portrait engraving by Jodocus Hondius of Sir Francis Drake, knighted by Elizabeth I aboard the Golden Hind in April 1581.",
+      "catalyst": "Tensions over **privateering**, English indirect loans to ** Dutch Protestant rebels** after the **1576 Spanish Fury** in Antwerp, and Philip II's **1580 annexation of Portugal** brought Madrid and London close to confrontation.",
+      "turningPoint": "Defying Spanish Ambassador Mendoza's demand to punish 'El Draque', Elizabeth boarded the ***Golden Hind*** at **Deptford** in **April 1581** and had a French envoy dub **Sir Francis Drake** a knight while she funded the French Duke of Alençon in Flanders.",
+      "impact": "Publicly endorsed privateering raids against Spain's New World empire, signalled an anti-Spanish alignment with France, and convinced **Philip II** that Elizabeth was an open enemy of Habsburg Catholic power.",
+      "bridgeToNext": "Determined to remove England's Protestant queen, Spanish ambassador Mendoza and French Catholic nobles financed a secret invasion plot around Mary Stuart in 1583.",
+      "keyAgents": [
+        "Queen Elizabeth I",
+        "Sir Francis Drake",
+        "King Philip II of Spain"
+      ],
+      "keyTerms": [
+        {
+          "term": "Privateering",
+          "definition": "Crown-licensed raids by private armed English vessels against Spanish treasure ships and ports, yielding royal profit with deniability."
+        },
+        {
+          "term": "Spanish Fury (Nov 1576)",
+          "definition": "Mutinous sack of Antwerp by unpaid Spanish troops that briefly united all 17 Dutch provinces under the Pacification of Ghent."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_17",
+      "num": 17,
+      "era": "kt2",
+      "date": "Nov 1583 – 1584",
+      "shortDate": "1583–84",
+      "shortTitle": "Throckmorton Plot & Bond",
+      "title": "The Throckmorton Plot, Expulsion of Mendoza & The Bond of Association",
+      "specTag": "KT 2.1 • Jesuit Mission, Throckmorton Plot & Spy Network",
+      "enquiryQuestion": "How did uncovering the 1583 Throckmorton Plot sever ties with Spain and trap Mary Stuart?",
+      "lessonIndex": 4,
+      "stageNum": 3,
+      "imageUrl": "/images/eee/kt2/sir_francis_walsingham_npg.jpg",
+      "imageCaption": "Sir Francis Walsingham, Principal Secretary and spymaster whose surveillance network broke the 1583 Throckmorton and 1586 Babington plots.",
+      "catalyst": "Underground **Jesuit missionaries** (like **Edmund Campion**, executed 1581) prompted **£20 monthly recusancy fines**, driving desperate Catholic conspirators to seek Franco-Spanish military intervention.",
+      "turningPoint": "In **November 1583**, **Sir Francis Walsingham** arrested courier **Francis Throckmorton**, exposing a Spanish-funded plan for Mary's cousin, the French **Duke of Guise**, to invade Sussex; Elizabeth expelled Ambassador **Mendoza** and Cecil drafted the **1584 Bond of Association**.",
+      "impact": "Severed formal diplomatic relations between England and Spain (Mendoza was never replaced) and created the legal mechanism (made statute in **1585**) under which Mary Stuart would face death if anyone plotted on her behalf.",
+      "bridgeToNext": "As Anglo-Spanish diplomacy collapsed in 1584, Sir Walter Raleigh secured a royal patent to plant an English Protestant base in North America to rival Spain.",
+      "keyAgents": [
+        "Sir Francis Walsingham",
+        "Francis Throckmorton",
+        "The Duke of Guise",
+        "Edmund Campion"
+      ],
+      "keyTerms": [
+        {
+          "term": "Throckmorton Plot (1583)",
+          "definition": "Foiled plan for French Catholic forces under the Duke of Guise—paid by Spain and backed by the Pope—to invade England and free Mary."
+        },
+        {
+          "term": "Bond of Association (1584)",
+          "definition": "Pledge signed by nobles (enacted as statute in 1585) to execute anyone attempting or benefiting from Elizabeth's assassination."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_18",
+      "num": 18,
+      "era": "kt3",
+      "date": "March 1584 – June 1586",
+      "shortDate": "1584–86",
+      "shortTitle": "Raleigh & First Virginia Colony",
+      "title": "Sir Walter Raleigh’s Patent & Failure of the First Roanoke Settlement",
+      "specTag": "KT 3.4 • Causes & Failure of the First Virginia Settlement (1585–86)",
+      "enquiryQuestion": "Why did Raleigh promote Virginia—and why did the 1585–86 Roanoke colony fail?",
+      "lessonIndex": 11,
+      "stageNum": 3,
+      "imageUrl": "/images/john_white_village_secotan.jpg",
+      "imageCaption": "John White's 1585 watercolour of the Algonquian village of Secotan in Virginia showing Native maize fields and dwellings.",
+      "mapUrl": "/images/eee/kt3/eee_map_l12_raleigh_roanoke_virginia_1584_90.svg",
+      "mapCaption": "Reference Map: Roanoke Island, Ocracoke Inlet (where the Tiger grounded in June 1585), and Algonquian villages along coastal Virginia.",
+      "catalyst": "Granted a **March 1584 royal patent** (and backed by Richard Hakluyt's *Discourse on Western Planting* plus 1584 envoy liaisons **Manteo and Wanchese**), **Sir Walter Raleigh** sought a North American base to raid Spanish silver ships, supply ship timber, and expand trade.",
+      "turningPoint": "Sailing late in **April 1585** with **107 male colonists** (too many soldiers/gentlemen, too few farmers) under **Sir Richard Grenville** and **Ralph Lane**, flagship ***Tiger*** hit an Ocracoke sandbar ruining seed corn; famine and Lane's **June 1586 killing of Chief Wingina** forced evacuation with Drake.",
+      "impact": "Highlighted how late departure, spoiled supplies, poor skill balance, and violent alienation of Algonquian hosts doomed England's first colony—though **Thomas Harriot** and **John White** mapped valuable American resources.",
+      "bridgeToNext": "While Lane's colonists struggled on Roanoke in summer 1585, Protestant disaster in the Netherlands forced Elizabeth into open continental war with Spain.",
+      "keyAgents": [
+        "Sir Walter Raleigh",
+        "Sir Richard Grenville",
+        "Thomas Harriot",
+        "Chief Wingina"
+      ],
+      "keyTerms": [
+        {
+          "term": "Virginia & Roanoke",
+          "definition": "North American territory named for the Virgin Queen and Outer Banks island site of Raleigh's 1585 and 1587 colonial attempts."
+        },
+        {
+          "term": "Wreck of the Tiger (June 1585)",
+          "definition": "Grounding of Grenville's flagship at Ocracoke Inlet that flooded the colonists' seed corn and forced reliance on Algonquian food."
+        },
+        {
+          "term": "Chief Wingina (Pemisapan)",
+          "definition": "Secotan Algonquian ruler who halted food trade during drought and was killed in Ralph Lane's pre-emptive June 1586 ambush."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_19",
+      "num": 19,
+      "era": "kt2",
+      "date": "Aug 1585 – Jan 1587",
+      "shortDate": "1585–87",
+      "shortTitle": "Treaty of Nonsuch & Dudley",
+      "title": "The Treaty of Nonsuch (1585) & Robert Dudley’s Campaign in the Netherlands",
+      "specTag": "KT 2.3 • Outbreak of War with Spain: Direct Intervention in Flanders",
+      "enquiryQuestion": "Why did Nonsuch trigger war with Spain—and why did Dudley's Dutch campaign struggle?",
+      "lessonIndex": 6,
+      "stageNum": 1,
+      "imageUrl": "/images/eee/kt2/nonsuch_palace_hoefnagel_1568.jpg",
+      "imageCaption": "Sixteenth-century engraving of Nonsuch Palace in Surrey, where Elizabeth I signed the Anglo-Dutch alliance in August 1585.",
+      "catalyst": "Following **William of Orange's July 1584 assassination**, the **Duke of Parma**'s rapid reconquest of Antwerp, and Spain's **December 1584 Treaty of Joinville** with French Catholics, Dutch collapse threatened England's Channel security.",
+      "turningPoint": "Signing the **Treaty of Nonsuch (10 Aug 1585)**, Elizabeth garrisoned Flushing and Brielle and sent **7,400 troops** under **Robert Dudley, Earl of Leicester**—who enraged Elizabeth by accepting **Governor-General** (Jan 1586) before suffering betrayals at **Deventer** and **Zutphen** (Jan 1587).",
+      "impact": "Philip II treated Nonsuch as an open declaration of war and began building the **Enterprise of England** (Armada); although underfunded and distrusted after Stanley and Yorke defected, Dudley kept deep-water **Ostend** out of Parma's hands.",
+      "bridgeToNext": "With England and Spain effectively at war in Flanders, Catholic plotters inside England launched one final conspiracy in summer 1586 to murder Elizabeth.",
+      "keyAgents": [
+        "Robert Dudley (Earl of Leicester)",
+        "The Duke of Parma",
+        "Queen Elizabeth I",
+        "King Philip II of Spain"
+      ],
+      "keyTerms": [
+        {
+          "term": "Treaty of Joinville (Dec 1584)",
+          "definition": "Franco-Spanish Catholic alliance between Philip II and the French Catholic League that isolated Protestant England."
+        },
+        {
+          "term": "Treaty of Nonsuch (Aug 1585)",
+          "definition": "Anglo-Dutch alliance committing 7,400 English soldiers under Leicester to defend Dutch Protestants—triggering open war with Spain."
+        },
+        {
+          "term": "Deventer & Zutphen (Jan 1587)",
+          "definition": "Dutch strongholds betrayed to Parma by Catholic English officers William Stanley and Rowland Yorke, wrecking Dutch trust in Leicester."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_20",
+      "num": 20,
+      "era": "kt2",
+      "date": "July – Sept 1586",
+      "shortDate": "Jul 1586",
+      "shortTitle": "Walsingham & Babington Plot",
+      "title": "Walsingham’s Beer-Barrel Trap & The Babington Plot",
+      "specTag": "KT 2.1 • Walsingham's Spy Network & Entrapment of Mary Stuart",
+      "enquiryQuestion": "How did Walsingham's double agents and codebreakers trap Babington and Mary in July 1586?",
+      "lessonIndex": 4,
+      "stageNum": 4,
+      "imageUrl": "/images/babington_cipher_postscript.jpg",
+      "imageCaption": "Deciphered Babington Plot postscript annotated by Walsingham's cryptographer Thomas Phelippes with a gallows mark in July 1586.",
+      "catalyst": "Young Catholic gentleman **Anthony Babington** organised six conspirators to assassinate Elizabeth, free **Mary Stuart** from Chartley Hall, and welcome a **60,000-strong Franco-Spanish invasion**.",
+      "turningPoint": "Walsingham's double agent **Gilbert Gifford** intercepted every coded letter smuggled inside **beer barrels**, while codebreaker **Thomas Phelippes** deciphered Mary's **17 July 1586** reply explicitly approving Elizabeth's *'dispatch'* (murder).",
+      "impact": "Handed Walsingham incontrovertible written proof of Mary's treason under the **1585 Act for the Preservation of the Queen's Safety**; Babington and his fellow plotters were executed in September 1586 and Mary was convicted in October.",
+      "bridgeToNext": "Despite Parliament's unanimous demand for Mary's death, Elizabeth agonised for four months before signing the fatal execution warrant in February 1587.",
+      "keyAgents": [
+        "Sir Francis Walsingham",
+        "Anthony Babington",
+        "Thomas Phelippes",
+        "Gilbert Gifford"
+      ],
+      "keyTerms": [
+        {
+          "term": "Babington Plot (July 1586)",
+          "definition": "Catholic conspiracy to murder Elizabeth and rescue Mary Stuart, monitored from start to finish by Walsingham's intelligence ring."
+        },
+        {
+          "term": "Beer-Barrel Cipher Trap",
+          "definition": "Double agent Gilbert Gifford's courier channel routing Mary's coded Chartley Hall letters directly to cryptographer Thomas Phelippes."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_21",
+      "num": 21,
+      "era": "kt2",
+      "date": "8 Feb 1587",
+      "shortDate": "Feb 1587",
+      "shortTitle": "Execution of Mary Stuart",
+      "title": "The Execution of Mary, Queen of Scots at Fotheringhay Castle",
+      "specTag": "KT 2.1 • Reasons for & Significance of Mary's Execution (1587)",
+      "enquiryQuestion": "Why was the February 1587 execution of Mary, Queen of Scots a decisive turning point?",
+      "lessonIndex": 4,
+      "stageNum": 5,
+      "imageUrl": "/images/mary_queen_of_scots_execution_fotheringhay_1587.jpg",
+      "imageCaption": "Execution of Mary, Queen of Scots inside the Great Hall of Fotheringhay Castle on 8 February 1587.",
+      "catalyst": "Open war with Spain, repeated assassination plots, and Phelippes's deciphered Babington letter convinced Privy Councillors that Elizabeth's life remained in mortal peril while Mary lived.",
+      "turningPoint": "After Elizabeth signed the warrant on 1 February 1587, Privy Councillors secretly dispatched it; on **8 February 1587** at **Fotheringhay Castle**, Mary Stuart went to the block wearing crimson Catholic martyr's petticoats.",
+      "impact": "Permanently eliminated the domestic Catholic alternative monarch inside England without provoking war from her Protestant son **James VI** (kept loyal via a £4,000 pension), yet Mary bequeathed her English throne claim directly to **Philip II of Spain**.",
+      "bridgeToNext": "With Philip II now claiming the English crown directly and assembling an invasion fleet in Spanish ports, Elizabeth unleashed Francis Drake on a pre-emptive strike.",
+      "keyAgents": [
+        "Mary, Queen of Scots (Mary Stuart)",
+        "Queen Elizabeth I",
+        "Sir William Cecil (Lord Burghley)",
+        "King Philip II of Spain"
+      ],
+      "keyTerms": [
+        {
+          "term": "Fotheringhay Castle (8 Feb 1587)",
+          "definition": "Northamptonshire fortress where Mary, Queen of Scots was tried in October 1586 and beheaded for high treason."
+        },
+        {
+          "term": "Treaty of Berwick (1586)",
+          "definition": "Anglo-Scottish alliance paying Protestant King James VI an annual £4,000 subsidy, ensuring Scotland did not avenge Mary's execution."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_22",
+      "num": 22,
+      "era": "kt2",
+      "date": "19 April – Summer 1587",
+      "shortDate": "Apr 1587",
+      "shortTitle": "Drake's Raid on Cadiz",
+      "title": "Drake’s Raid on Cadiz: ‘Singeing the King of Spain’s Beard’",
+      "specTag": "KT 2.3 • Pre-Emptive Strike & Logistical Disruption of the Armada",
+      "enquiryQuestion": "How did Drake's April 1587 raid on Cadiz weaken Spain's Armada before it sailed?",
+      "lessonIndex": 6,
+      "stageNum": 3,
+      "imageUrl": "/images/drake_cadiz_1587.jpg",
+      "imageCaption": "Sir Francis Drake's squadron bombarding and burning Spanish warships and stores inside Cadiz harbour in April 1587.",
+      "catalyst": "Walsingham's intelligence network warned in early 1587 that **Philip II** was gathering warships and supplies across Iberian harbours to invade England following Nonsuch and Mary Stuart's execution.",
+      "turningPoint": "On **19 April 1587**, **Sir Francis Drake** led 24 ships into **Cadiz**, burning **30 Spanish vessels**, before destroying seasoned oak **barrel staves** off Cape St Vincent and capturing the treasure carrack ***San Felipe*** (£108,000).",
+      "impact": "Delayed the Spanish Armada by **twelve vital months** so England could fortify its coast, and forced Spain to pack food and water in leaky green-pine casks that rotted at sea during the 1588 campaign.",
+      "bridgeToNext": "One month after Cadiz, Raleigh dispatched a second family colony to Virginia—only for the delayed Spanish Armada emergency to cut off their relief ships.",
+      "keyAgents": [
+        "Sir Francis Drake",
+        "King Philip II of Spain",
+        "The Duke of Medina Sidonia"
+      ],
+      "keyTerms": [
+        {
+          "term": "Singeing the King's Beard",
+          "definition": "Drake's nickname for his daring April 1587 raid on Cadiz destroying 30 ships and delaying Spain's Armada until 1588."
+        },
+        {
+          "term": "Barrel Staves",
+          "definition": "Seasoned oak cask timbers burned by Drake off Cape St Vincent, forcing Spain to use damp pine barrels that spoiled Armada provisions."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_23",
+      "num": 23,
+      "era": "kt3",
+      "date": "May 1587 – 1588",
+      "shortDate": "1587–88",
+      "shortTitle": "Second Roanoke 'Lost Colony'",
+      "title": "John White’s Second Roanoke Settlement & The ‘Lost Colony’",
+      "specTag": "KT 3.4 • Second Attempted Colonisation of Virginia & Maritime War",
+      "enquiryQuestion": "Why did John White's 1587 Roanoke settlement become the 'Lost Colony'?",
+      "lessonIndex": 11,
+      "stageNum": 5,
+      "imageUrl": "/images/john_white_roanoke_map_1585_authentic.jpg",
+      "imageCaption": "Artist-governor John White's hand-drawn watercolour map of coastal Virginia and Roanoke Island.",
+      "mapUrl": "/images/eee/kt3/eee_map_l12_raleigh_roanoke_virginia_1584_90.svg",
+      "mapCaption": "Reference Map: Roanoke Island, Croatoan Island, and the Chesapeake Bay destination intended for John White's 1587 settlers.",
+      "catalyst": "Learning from 1585's all-male military failure, **Raleigh** sent artist-governor **John White** in **May 1587** with **118 men, women, and children** promised 500-acre family farms on Chesapeake Bay.",
+      "turningPoint": "Pilot Simon Fernandez landed them back on hostile **Roanoke** instead; after colonist George Howe was killed, White sailed home for urgent supplies in **August 1587**, but Elizabeth requisitioned **every seaworthy English ship in 1588** to fight the **Spanish Armada**.",
+      "impact": "Cut off relief for three crucial years, leaving the **'Lost Colony'** vanished with only **'CROATOAN'** carved on a post—proving early English colonisation lacked Crown funding and survival skills while teaching vital lessons for later plantations.",
+      "bridgeToNext": "Those requisitioned English ships gathered at Plymouth in July 1588 as Medina Sidonia's 130-ship Spanish Armada entered the English Channel.",
+      "keyAgents": [
+        "Sir Walter Raleigh",
+        "Queen Elizabeth I"
+      ],
+      "keyTerms": [
+        {
+          "term": "Lost Colony (1587)",
+          "definition": "John White's 118-settler family colony at Roanoke stranded without supplies when Elizabeth held back all ships against the 1588 Armada."
+        },
+        {
+          "term": "Manteo",
+          "definition": "Friendly Croatoan Algonquian ally named Lord of Roanoke in August 1587 to try to rebuild local Native diplomacy."
+        }
+      ]
+    },
+    {
+      "id": "eee_ms_24",
+      "num": 24,
+      "era": "kt2",
+      "date": "29 July – Aug 1588",
+      "shortDate": "Aug 1588",
+      "shortTitle": "Defeat of the Spanish Armada",
+      "title": "Defeat of the Spanish Armada: Calais Fireships, Gravelines & Tilbury",
+      "specTag": "KT 2.4 • Spanish Invasion Plans, Key Events & Reasons for English Victory",
+      "enquiryQuestion": "Why did England defeat Philip II's Spanish Armada in July–August 1588?",
+      "lessonIndex": 7,
+      "stageNum": 3,
+      "imageUrl": "/images/eee/kt2/gravelines_broadsides_rmg_bhc0262.jpg",
+      "imageCaption": "English race-built galleons firing close-range broadsides into scattered Spanish warships at the Battle of Gravelines, 8 August 1588.",
+      "mapUrl": "/images/eee/kt2/eee_map_l8_spanish_armada_campaign_1588.svg",
+      "mapCaption": "Reference Map: Track of the 1588 Spanish Armada through the Channel, Calais fireships, Gravelines, and gale-swept wrecks off Scotland and Ireland.",
+      "catalyst": "Philip II ordered the **Duke of Medina Sidonia**'s **130 ships** (30,000 men) to escort the **Duke of Parma**'s 27,000 Flanders troops across to Kent, yet Parma lacked a **deep-water port** and **Dutch flyboats** blockaded his shallow-canal barges.",
+      "turningPoint": "Chased past Plymouth and the Isle of Wight to exposed **Calais Roads**, Spain's crescent was scattered by **eight midnight English fireships (7 Aug)**; on **8 August** at **Gravelines**, rapid English broadsides battered the fleet before **'Protestant Wind'** gales wrecked >25 anchorless ships off Scotland and Ireland.",
+      "impact": "Only **67 Spanish ships** limped home; combined with Elizabeth's rousing **Tilbury speech (18 Aug 1588)**, victory secured Protestant England, preserved Dutch independence, and cemented Tudor royal authority and naval prestige.",
+      "bridgeToNext": "Thirty years after ascending an indebted, divided throne in 1558, Elizabeth I emerged in 1588 with her Protestant settlement intact and England's oceanic future launched.",
+      "keyAgents": [
+        "Queen Elizabeth I",
+        "Sir Francis Drake",
+        "Sir John Hawkins",
+        "The Duke of Medina Sidonia"
+      ],
+      "keyTerms": [
+        {
+          "term": "Calais Fireships (7 Aug 1588)",
+          "definition": "Eight tar-and-gunpowder vessels drifted into Calais anchorage at midnight, panicking Spanish captains into cutting their main anchors."
+        },
+        {
+          "term": "Battle of Gravelines (8 Aug 1588)",
+          "definition": "Decisive nine-hour battle off Flanders where agile English race-built galleons fired three times faster than Spanish boarding ships."
+        },
+        {
+          "term": "Protestant Wind & Tilbury",
+          "definition": "Fierce gales driving Spain's battered fleet onto Scottish/Irish rocks while Elizabeth rallied troops at Tilbury ('heart and stomach of a king')."
+        }
+      ]
+    }
+  ]
+}

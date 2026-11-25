@@ -1,0 +1,796 @@
+{
+  "unitId": "cold_war",
+  "schemaVersion": "v1-curated-living-timeline",
+  "courseTitle": "The Cold War & Global Flashpoints (1945–1991)",
+  "eyebrow": "KEY STAGE 3 HISTORY • YEAR 9 ENQUIRY CHRONOLOGY • 21 MILESTONES",
+  "beatLabels": {
+    "catalyst": "1. Context & Trigger",
+    "turningPoint": "2. Key Turning Point",
+    "impact": "3. Historical Consequence",
+    "bridgeBadge": "🔗 Leads To Next"
+  },
+  "streamFilters": [],
+  "eras": [
+    {
+      "id": "part_1",
+      "code": "Part 1",
+      "badge": "PART 1 • 1917–1949",
+      "pillLabel": "Part 1: Origins & Division",
+      "title": "Part 1: Ideological Roots, Grand Alliance Breakdown & Divided Europe (1917–1949)",
+      "color": "#1e3a8a",
+      "accent": "#2563eb",
+      "softBg": "#eff6ff",
+      "softBorder": "#bfdbfe"
+    },
+    {
+      "id": "part_2",
+      "code": "Part 2",
+      "badge": "PART 2 • 1949–1961",
+      "pillLabel": "Part 2: Arms, Space & Berlin",
+      "title": "Part 2: Korean War, H-Bombs, Space Race & Building the Berlin Wall (1949–1961)",
+      "color": "#991b1b",
+      "accent": "#dc2626",
+      "softBg": "#fef2f2",
+      "softBorder": "#fecaca"
+    },
+    {
+      "id": "part_3",
+      "code": "Part 3",
+      "badge": "PART 3 • 1962–1975",
+      "pillLabel": "Part 3: Cuba & Vietnam Wars",
+      "title": "Part 3: Nuclear Brinkmanship in Cuba, Vietnam & Global Proxy Toll (1962–1975)",
+      "color": "#0f766e",
+      "accent": "#0d9488",
+      "softBg": "#f0fdfa",
+      "softBorder": "#99f6e4"
+    },
+    {
+      "id": "part_4",
+      "code": "Part 4",
+      "badge": "PART 4 • 1979–1991",
+      "pillLabel": "Part 4: Collapse of the USSR",
+      "title": "Part 4: Afghanistan, Gorbachev, Fall of the Berlin Wall & Soviet Collapse (1979–1991)",
+      "color": "#b45309",
+      "accent": "#d97706",
+      "softBg": "#fffbeb",
+      "softBorder": "#fde68a"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "cold_war_ms_1",
+      "num": 1,
+      "era": "part_1",
+      "date": "1917 – August 1939",
+      "shortDate": "1917–1939",
+      "shortTitle": "Ideology & Pre-War Distrust",
+      "title": "Capitalism vs Communism & Pre-1945 Mutual Betrayals",
+      "specTag": "Enquiry 1 • Ideological Roots",
+      "enquiryQuestion": "Why did rival ideas turn the USA and USSR into enemies after 1945?",
+      "lessonIndex": 0,
+      "stageNum": 3,
+      "imageUrl": "/images/cold_war/molotov_ribbentrop_pact_1939.jpg",
+      "imageCaption": "Joseph Stalin shaking hands with Nazi Foreign Minister Joachim von Ribbentrop in Moscow (23 August 1939): Decades of pre-war suspicion poisoned East–West trust before 1945.",
+      "catalyst": "American **free-market capitalism** and multi-party democracy clashed fundamentally with Soviet **Marxist-Leninist socialism** and one-party Communist Politburo rule.",
+      "turningPoint": "Bitter memories deepened distrust: Western troops aided anti-Bolshevik Whites after **1917**, 1930s appeasement alarmed Moscow, and Stalin shocked democracies by signing the **August 1939 Nazi-Soviet Pact**.",
+      "impact": "Only Hitler’s 1941 invasion of Russia forced Britain, the USA, and the USSR into an uneasy wartime **Grand Alliance**.",
+      "bridgeToNext": "As Allied armies closed in on Nazi Germany in February 1945, the Big Three met at Yalta to bargain over post-war Europe.",
+      "keyAgents": [
+        "Joseph Stalin",
+        "Winston Churchill"
+      ],
+      "keyTerms": [
+        {
+          "term": "Capitalism",
+          "definition": "An economic system in which trade, factories, and property are owned privately for profit alongside multi-party elections."
+        },
+        {
+          "term": "Communism",
+          "definition": "A one-party socialist system abolishing private enterprise in favour of state-owned industry and central economic planning."
+        },
+        {
+          "term": "Ideology",
+          "definition": "A system of core political and economic beliefs shaping how a state organises society and views rival powers."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_2",
+      "num": 2,
+      "era": "part_1",
+      "date": "4–11 February 1945",
+      "shortDate": "Feb 1945",
+      "shortTitle": "Yalta Summit & Polish Dispute",
+      "title": "The Yalta Conference: Fragile Consensus & The Polish Buffer",
+      "specTag": "Enquiry 2 • Wartime Diplomacy",
+      "enquiryQuestion": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?",
+      "lessonIndex": 1,
+      "stageNum": 1,
+      "imageUrl": "/images/ks3_cold_war/cw_l2_b0_yalta_livadia_palace_nara_197001.jpg",
+      "imageCaption": "The Big Three at Livadia Palace, Yalta (February 1945, NARA 197001): Roosevelt, Churchill, and Stalin agreed on four-zone Germany and the UN while clashing over Poland.",
+      "catalyst": "Having suffered **27 million wartime deaths**, **Joseph Stalin** demanded a friendly Eastern European **buffer zone** so Russia could never again be invaded through Poland.",
+      "turningPoint": "At **Yalta (February 1945)**, **Roosevelt, Churchill, and Stalin** agreed to split defeated Germany and Berlin into **four occupation zones**, found the **United Nations**, and sign the **Declaration on Liberated Europe**.",
+      "impact": "Despite promising free elections, Stalin installed the communist **Lublin Poles** and sidelined democratic **London Poles**, eroding Western faith in Kremlin pledges.",
+      "bridgeToNext": "Five months later at Potsdam, new Western leaders and a secret atomic breakthrough turned strained diplomacy into open confrontation.",
+      "keyAgents": [
+        "Joseph Stalin",
+        "Winston Churchill"
+      ],
+      "keyTerms": [
+        {
+          "term": "Grand Alliance",
+          "definition": "The wartime coalition of Britain, the United States, and the Soviet Union united against Nazi Germany."
+        },
+        {
+          "term": "Buffer Zone",
+          "definition": "A belt of Soviet-controlled border states across Eastern Europe sought by Stalin to block future western invasions."
+        },
+        {
+          "term": "Self-Determination",
+          "definition": "The right of liberated nations to choose their own governments through free, democratic elections."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_3",
+      "num": 3,
+      "era": "part_1",
+      "date": "16 July – 2 August 1945",
+      "shortDate": "Jul 1945",
+      "shortTitle": "Potsdam & Trinity Atomic Test",
+      "title": "Changing of the Guard at Potsdam & Truman’s Atomic Hint",
+      "specTag": "Enquiry 2 • Atomic Diplomacy",
+      "enquiryQuestion": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?",
+      "lessonIndex": 1,
+      "stageNum": 4,
+      "imageUrl": "/images/cold_war/potsdam_conference_1945.jpg",
+      "imageCaption": "Clement Attlee, Harry S. Truman, and Joseph Stalin at Cecilienhof Palace, Potsdam (August 1945): Emboldened by the 16 July Trinity test, Truman took a tougher line with Stalin.",
+      "catalyst": "Roosevelt’s death in April 1945 brought staunchly anti-communist **Harry S. Truman** to the presidency, while **Clement Attlee** replaced Churchill mid-summit after Labour’s election victory.",
+      "turningPoint": "After the **16 July 1945 Trinity atomic test** in New Mexico, Truman privately told Stalin at **Potsdam** on **24 July** that America possessed *'a new weapon of unusual destructive force'*.",
+      "impact": "Informed already by Soviet spies, Stalin showed calm on the surface yet read Truman’s hint as **atomic blackmail** aimed at bullying Moscow in Europe.",
+      "bridgeToNext": "Days after Potsdam ended, two American atomic bombs over Japan demonstrated the terrifying reality of nuclear warfare.",
+      "keyAgents": [
+        "Harry S. Truman",
+        "Joseph Stalin"
+      ],
+      "keyTerms": [
+        {
+          "term": "Atomic Monopoly",
+          "definition": "Exclusive US possession of nuclear weapons between July 1945 and the first Soviet test in August 1949."
+        },
+        {
+          "term": "Spheres of Influence",
+          "definition": "Regions in which either the United States or the Soviet Union exercised dominant political and military control."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_4",
+      "num": 4,
+      "era": "part_1",
+      "date": "6–9 August 1945",
+      "shortDate": "Aug 1945",
+      "shortTitle": "Hiroshima & Atomic Monopoly",
+      "title": "Hiroshima, Nagasaki & Launch of the Superpower Arms Race",
+      "specTag": "Enquiry 1 • Balance of Terror",
+      "enquiryQuestion": "Why did rival ideas turn the USA and USSR into enemies after 1945?",
+      "lessonIndex": 0,
+      "stageNum": 4,
+      "imageUrl": "/images/cold_war/hiroshima_atomic_cloud_1945.jpg",
+      "imageCaption": "Atomic mushroom cloud rising above Hiroshima (6 August 1945): America’s nuclear monopoly prompted Stalin to order a crash Soviet atomic weapons programme.",
+      "catalyst": "Seeking to force Japan’s swift surrender without a costly mainland invasion—and showcase American military power—Truman authorised combat use of the atomic bomb.",
+      "turningPoint": "US bombers destroyed **Hiroshima (6 August)** and **Nagasaki (9 August 1945)**, ending the Second World War while handing Washington sole possession of atomic weapons.",
+      "impact": "Refusing to bow to America’s **nuclear monopoly**, **Joseph Stalin** ordered Soviet physicists to build an atomic bomb at top speed, igniting a forty-year **nuclear arms race**.",
+      "bridgeToNext": "Meanwhile in defeated Germany, bitter clashes over reparations carved Europe’s heartland into separate occupation zones.",
+      "keyAgents": [
+        "Harry S. Truman",
+        "Joseph Stalin"
+      ],
+      "keyTerms": [
+        {
+          "term": "Atomic Monopoly",
+          "definition": "The four-year window (1945–1949) when only the United States possessed atomic bombs."
+        },
+        {
+          "term": "Coexistence",
+          "definition": "Rival ideological systems living without direct war—strained immediately by nuclear suspicion."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_5",
+      "num": 5,
+      "era": "part_1",
+      "date": "Late 1945",
+      "shortDate": "Late 1945",
+      "shortTitle": "Four-Zone Germany & Reparations",
+      "title": "Clashes Over $20 Billion Reparations & Four-Sector Berlin",
+      "specTag": "Enquiry 2 • Grand Alliance Ends",
+      "enquiryQuestion": "Why did wartime allies turn into bitter rivals between Yalta and Potsdam?",
+      "lessonIndex": 1,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_cold_war/cw_l2_b4_allies_brandenburg_gate_1945.jpg",
+      "imageCaption": "Allied commanders before the ruined Brandenburg Gate in four-sector Berlin (1945, IWM): Reparations disputes split Germany into rival eastern and western economic zones.",
+      "catalyst": "Because Nazi armies had devastated western Russia, **Stalin demanded $20 billion** in German reparations, whereas **Truman and Attlee** refused to repeat Versailles’ economic collapse.",
+      "turningPoint": "Under the **Allied Control Council**, each power took **reparations** mainly from its own occupation zone, leaving four-sector **Berlin** an isolated island deep inside Soviet East Germany.",
+      "impact": "Meeting face to face across a ruined European power vacuum, the wartime **Grand Alliance** dissolved into rival **bipolar spheres of influence**.",
+      "bridgeToNext": "Early in 1946, blunt speeches in Moscow and secret cables to Washington turned quiet distrust into declared Cold War strategy.",
+      "keyAgents": [
+        "Joseph Stalin",
+        "Harry S. Truman"
+      ],
+      "keyTerms": [
+        {
+          "term": "Reparations",
+          "definition": "Post-war compensation in money, machinery, or goods taken from defeated Germany by the occupying powers."
+        },
+        {
+          "term": "Spheres of Influence",
+          "definition": "Eastern Soviet and Western Allied zones hardening into rival political blocs across post-war Europe."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_6",
+      "num": 6,
+      "era": "part_1",
+      "date": "February 1946",
+      "shortDate": "Feb 1946",
+      "shortTitle": "Bolshoi Speech & Long Telegram",
+      "title": "Stalin’s Bolshoi Speech & George Kennan’s 'Long Telegram'",
+      "specTag": "Enquiry 1 • Birth of Containment",
+      "enquiryQuestion": "Why did rival ideas turn the USA and USSR into enemies after 1945?",
+      "lessonIndex": 0,
+      "stageNum": 5,
+      "imageUrl": "/images/cold_war/stalin_bolshoi_speech_1946.jpg",
+      "imageCaption": "Soviet Premier Joseph Stalin delivering his landmark Bolshoi Theatre election speech in Moscow (9 February 1946), answered days later by George Kennan’s Long Telegram.",
+      "catalyst": "With Europe’s pre-war empires shattered, Washington and Moscow each interpreted the other’s security moves as aggressive expansion.",
+      "turningPoint": "On **9 February 1946**, **Stalin** warned in Moscow that capitalism made future conflict inevitable; on **22 February**, US diplomat **George F. Kennan** sent his **8,000-word 'Long Telegram'** urging firm **containment**.",
+      "impact": "Kennan’s dispatch convinced Truman’s administration that Moscow respected strength rather than concessions, forming the blueprint for forty years of US foreign policy.",
+      "bridgeToNext": "Weeks later in Fulton, Missouri, Winston Churchill gave a vivid name to the barrier descending across Europe.",
+      "keyAgents": [
+        "George F. Kennan",
+        "Joseph Stalin",
+        "Harry S. Truman"
+      ],
+      "keyTerms": [
+        {
+          "term": "Containment",
+          "definition": "The US strategy proposed by George Kennan to stop Soviet communism expanding beyond its existing borders."
+        },
+        {
+          "term": "Proletariat",
+          "definition": "The industrial working class in whose name the Soviet Communist Party claimed one-party rule."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_7",
+      "num": 7,
+      "era": "part_1",
+      "date": "March 1946 – June 1947",
+      "shortDate": "1946–Jun 1947",
+      "shortTitle": "Iron Curtain & Marshall Plan",
+      "title": "Churchill’s 'Iron Curtain', Truman Doctrine & $13bn Marshall Aid",
+      "specTag": "Enquiry 3 • Economic Containment",
+      "enquiryQuestion": "How did containment and the Berlin Blockade divide Europe into rival blocs?",
+      "lessonIndex": 2,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_cold_war/cw_l3_b1_marshall_plan_germany_nara_541691.jpg",
+      "imageCaption": "Rebuilding West Berlin with Marshall Plan aid (NARA 541691): Following Churchill’s 1946 Fulton speech and the March 1947 Truman Doctrine, the US sent over $13bn to revive Western Europe.",
+      "mapUrl": "/images/cold_war/maps/ks3_cw_map_l3_iron_curtain_berlin_airlift_1946_49.svg",
+      "mapCaption": "Reference Map: The Stettin-to-Trieste Iron Curtain, Marshall Plan recipients, and Soviet satellite states across Europe.",
+      "catalyst": "Using **'salami tactics'**—rigged elections and secret-police arrests—Moscow installed communist regimes across Eastern Europe while bankrupt Britain withdrew aid from **Greece and Turkey**.",
+      "turningPoint": "After **Churchill’s March 1946 'Iron Curtain' speech** at Fulton, Truman pledged containment in the **March 1947 Truman Doctrine**, and **George Marshall** unveiled **over $13 billion** in **Marshall Plan** recovery aid (**June 1947**).",
+      "impact": "Marshall Aid revived Western European industry and undermined communist appeal, while Stalin branded it **'dollar imperialism'** and barred Eastern satellites from accepting funds.",
+      "bridgeToNext": "Determined to tighten Kremlin control and halt Western recovery in Germany, Stalin triggered the Cold War’s first major European crisis in 1948.",
+      "keyAgents": [
+        "Winston Churchill",
+        "Harry S. Truman",
+        "Joseph Stalin"
+      ],
+      "keyTerms": [
+        {
+          "term": "Iron Curtain",
+          "definition": "Winston Churchill’s famous March 1946 phrase for the political and ideological barrier dividing Soviet Eastern Europe from the West."
+        },
+        {
+          "term": "Truman Doctrine",
+          "definition": "President Truman’s March 1947 pledge of US money and military aid to help free peoples resist communist takeover."
+        },
+        {
+          "term": "Marshall Plan",
+          "definition": "Over $13 billion in US economic recovery funds (1948–1952) rebuilding Western Europe to prevent poverty fuelling communism."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_8",
+      "num": 8,
+      "era": "part_1",
+      "date": "February 1948 – May 1949",
+      "shortDate": "1948–May 1949",
+      "shortTitle": "Prague Coup & Berlin Airlift",
+      "title": "Cominform, The Prague Coup & Operation Vittles Over Berlin",
+      "specTag": "Enquiry 3 • Siege of West Berlin",
+      "enquiryQuestion": "How did containment and the Berlin Blockade divide Europe into rival blocs?",
+      "lessonIndex": 2,
+      "stageNum": 4,
+      "imageUrl": "/images/ks3_cold_war/cw_l3_b3_c54_skymaster_berlin_airlift_1948.jpg",
+      "imageCaption": "Loading a USAF C-54 Skymaster during the Berlin Airlift (1948–49): Allied crews flew 2.3 million tons of coal and food into blockaded West Berlin over 324 days.",
+      "mapUrl": "/images/cold_war/berlin_blockade_air_corridors_map.png",
+      "mapCaption": "Cartographic map of the three 20-mile-wide Allied air corridors crossing Soviet-occupied East Germany into West Berlin.",
+      "catalyst": "Following **Cominform (1947)** and the **February 1948 Prague Coup**, Britain, France, and the US merged their western German zones into **Trizonia** and launched the **Deutsche Mark** currency.",
+      "turningPoint": "On **24 June 1948**, Stalin cut all road, rail, and canal links to West Berlin; led by General Lucius Clay and Ernest Bevin, the **Berlin Airlift (*Operation Vittles*)** flew in **2.3 million tons** of supplies.",
+      "impact": "Refusing either to abandon West Berlin or shoot down Allied planes, **Stalin lifted the blockade after 324 days in May 1949**—a major moral victory for containment.",
+      "bridgeToNext": "The Berlin crisis destroyed any remaining hope of a united Germany and locked Europe into rival military alliances.",
+      "keyAgents": [
+        "Harry S. Truman",
+        "Joseph Stalin"
+      ],
+      "keyTerms": [
+        {
+          "term": "Blockade",
+          "definition": "Stalin’s June 1948–May 1949 closure of all overland road, rail, and canal routes into Allied-held West Berlin."
+        },
+        {
+          "term": "Berlin Airlift",
+          "definition": "The 324-day Allied aerial supply bridge ('Operation Vittles') delivering 2.3 million tons of food and fuel to West Berliners."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_9",
+      "num": 9,
+      "era": "part_1",
+      "date": "April – October 1949",
+      "shortDate": "Apr–Oct 1949",
+      "shortTitle": "NATO & Two German States",
+      "title": "Founding of NATO & Partition into West and East Germany",
+      "specTag": "Enquiry 3 • Armed Blocs",
+      "enquiryQuestion": "How did containment and the Berlin Blockade divide Europe into rival blocs?",
+      "lessonIndex": 2,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_cold_war/cw_l3_s4_truman_signing_nato_treaty_1949.jpg",
+      "imageCaption": "President Harry S. Truman signing the North Atlantic Treaty instrument in the Oval Office (1949, NARA 200163), binding the US and Western Europe in collective defence.",
+      "mapUrl": "/images/cold_war/maps/ks3_cw_map_l3_iron_curtain_berlin_airlift_1946_49.svg",
+      "mapCaption": "Reference Map: Partition of West Germany (FRG) and East Germany (GDR) alongside NATO and Warsaw Pact alliances.",
+      "catalyst": "Convinced by the Prague Coup and Berlin Blockade that Western Europe needed permanent US military backing, twelve Western states met in Washington.",
+      "turningPoint": "In **April 1949**, the Allies founded **NATO** pledging mutual defence, while Germany split into the democratic **Federal Republic of Germany (FRG, May 1949)** and communist **German Democratic Republic (GDR, October 1949)**.",
+      "impact": "When West Germany later joined NATO in **1955**, Moscow answered with the **Warsaw Pact**, cementing two heavily armed military blocs across Europe.",
+      "bridgeToNext": "Even as European borders froze in late 1949, two dramatic shocks in the USSR and China turned the Cold War into a hot war in Asia.",
+      "keyAgents": [
+        "NATO & The Warsaw Pact",
+        "Harry S. Truman"
+      ],
+      "keyTerms": [
+        {
+          "term": "NATO",
+          "definition": "North Atlantic Treaty Organization (April 1949), a Western collective-defence alliance promising an attack on one is an attack on all."
+        },
+        {
+          "term": "Satellite State",
+          "definition": "An Eastern European country formally independent on paper but controlled politically and militarily by Moscow."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_10",
+      "num": 10,
+      "era": "part_2",
+      "date": "October 1949 – July 1953",
+      "shortDate": "1949–Jul 1953",
+      "shortTitle": "Mao, NSC-68 & The Korean War",
+      "title": "Communist China, NSC-68 & Stalemate Along Korea’s 38th Parallel",
+      "specTag": "Enquiry 5 • Asian Proxy War",
+      "enquiryQuestion": "Why did the Cold War turn into deadly wars in Korea and Vietnam?",
+      "lessonIndex": 4,
+      "stageNum": 2,
+      "imageUrl": "/images/cold_war/korean_war_inchon_landing_1950.jpg",
+      "imageCaption": "US Marines landing at Inchon (15 September 1950, US DoD): After Kim Il-sung invaded South Korea, UN and Chinese armies fought to a bloody 1953 stalemate at the 38th Parallel.",
+      "mapUrl": "/images/cold_war/maps/ks3_cw_map_l5_asia_proxy_wars_korea_vietnam_1950_75.svg",
+      "mapCaption": "Reference Map: Cold War Proxy Wars in Asia (1949–1975)—Communist China, Korea’s 38th Parallel DMZ, and Indochina.",
+      "catalyst": "In **1949**, the **Soviet atomic test (RDS-1)** and **Mao Zedong’s** proclamation of **Communist China** prompted **NSC-68 (April 1950)** and fear of the Asian **Domino Theory**.",
+      "turningPoint": "After **Kim Il-sung’s** Soviet-armed North Korean army invaded South Korea in **June 1950**, **General MacArthur’s** UN landing at **Inchon** pushed north until massive **Chinese intervention** forced a **July 1953** armistice.",
+      "impact": "Korea remained divided along the **38th Parallel Demilitarized Zone** after **over three million deaths**, proving Cold War containment had become global and bloody.",
+      "bridgeToNext": "In the years immediately after the Korean ceasefire, thermonuclear hydrogen bombs and covert spy agencies escalated superpower rivalry worldwide.",
+      "keyAgents": [
+        "Harry S. Truman",
+        "Joseph Stalin"
+      ],
+      "keyTerms": [
+        {
+          "term": "Proxy War",
+          "definition": "A regional war in which rival superpowers arm, fund, or back opposing sides without fighting an all-out war between their homelands."
+        },
+        {
+          "term": "Domino Theory",
+          "definition": "US belief that if one Asian country fell to communism, neighbouring states would topple one after another."
+        },
+        {
+          "term": "Demilitarized Zone",
+          "definition": "Fortified buffer strip along Korea’s 38th Parallel separating North and South Korea since the July 1953 armistice."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_11",
+      "num": 11,
+      "era": "part_2",
+      "date": "1953 – 1956",
+      "shortDate": "1953–1956",
+      "shortTitle": "CIA/KGB Covert War & H-Bombs",
+      "title": "Castle Bravo H-Bomb & Covert CIA–KGB Shadow Operations",
+      "specTag": "Enquiry 7 • Thermonuclear & Covert War",
+      "enquiryQuestion": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?",
+      "lessonIndex": 6,
+      "stageNum": 3,
+      "imageUrl": "/images/cold_war/castle_bravo_thermonuclear_test_1954.jpg",
+      "imageCaption": "Mushroom cloud of America’s 15-megaton Castle Bravo hydrogen bomb test at Bikini Atoll (1 March 1954)—1,000 times more powerful than Hiroshima.",
+      "catalyst": "Hydrogen bombs like **Castle Bravo (March 1954, 15 megatons)** turned open superpower war into collective suicide under **Mutually Assured Destruction (MAD)**.",
+      "turningPoint": "Keeping conflict below nuclear war, the **CIA** backed covert coups toppling elected governments in **Iran (*Operation Ajax*, 1953)** and **Guatemala (1954)** while the **Soviet KGB** and East German **Stasi** ran spy networks.",
+      "impact": "Shadowy coups, foreign arms sales, and secret-police informers destabilised newly independent Global South nations while policing dissent behind the Iron Curtain.",
+      "bridgeToNext": "Alongside covert intelligence wars on Earth, superpower competition rocketed into orbit in October 1957.",
+      "keyAgents": [
+        "Nikita Khrushchev"
+      ],
+      "keyTerms": [
+        {
+          "term": "Mutually Assured Destruction",
+          "definition": "Nuclear doctrine (MAD) in which a full-scale attack guarantees total annihilation of both superpowers."
+        },
+        {
+          "term": "Espionage",
+          "definition": "Covert intelligence gathering, spy planes, and undercover operations waged by the CIA, KGB, and Stasi."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_12",
+      "num": 12,
+      "era": "part_2",
+      "date": "October 1957 – April 1961",
+      "shortDate": "1957–Apr 1961",
+      "shortTitle": "Sputnik, Gagarin & Space Race",
+      "title": "Sputnik 1, Yuri Gagarin & Ideological Rivalry in Orbit",
+      "specTag": "Enquiry 7 • Space & Missile Race",
+      "enquiryQuestion": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?",
+      "lessonIndex": 6,
+      "stageNum": 4,
+      "imageUrl": "/images/cold_war/sputnik_1_satellite_1957.jpg",
+      "imageCaption": "Soviet Sputnik 1 satellite (launched 4 October 1957): Followed by Yuri Gagarin’s April 1961 orbital flight, Soviet space triumphs spurred America’s NASA Apollo Moon programme.",
+      "catalyst": "Both superpowers treated rocket science as proof of which economic system—socialism or capitalism—owned the technological future.",
+      "turningPoint": "Soviet engineers stunned the West by launching **Sputnik 1** (**October 1957**) and sending cosmonaut **Yuri Gagarin** into orbit (**April 1961**), spurring massive US funding for **NASA** (culminating in **Apollo 11** in 1969).",
+      "impact": "Rockets capable of putting satellites in space could also hurl **ICBM nuclear warheads** across continents in minutes, intensifying strategic anxiety.",
+      "bridgeToNext": "Four months after Gagarin’s flight, a refugee crisis in divided Berlin pushed East Germany and Khrushchev to seal the city in concrete.",
+      "keyAgents": [
+        "Nikita Khrushchev",
+        "John F. Kennedy"
+      ],
+      "keyTerms": [
+        {
+          "term": "ICBM",
+          "definition": "Intercontinental Ballistic Missile—long-range rockets developed alongside Space Race launchers to deliver nuclear warheads."
+        },
+        {
+          "term": "Deterrence",
+          "definition": "Maintaining vast nuclear missile stockpiles so neither rival dares strike first."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_13",
+      "num": 13,
+      "era": "part_2",
+      "date": "13 August – October 1961",
+      "shortDate": "Aug–Oct 1961",
+      "shortTitle": "Building the Berlin Wall",
+      "title": "Stopping the 'Brain Drain': Construction of the Berlin Wall",
+      "specTag": "Enquiry 6 • Concrete Partition",
+      "enquiryQuestion": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?",
+      "lessonIndex": 5,
+      "stageNum": 1,
+      "imageUrl": "/images/ks3_cold_war/cw_l6_s1_east_berlin_border_1961_cia.jpg",
+      "imageCaption": "East German border guard stringing barbed wire in August 1961 (CIA Historical Collection): Built overnight on 13 August 1961 after 2.7 million East Germans fled west.",
+      "catalyst": "Between 1949 and 1961, **over 2.7 million East Germans**—including young doctors, teachers, and engineers—escaped **Walter Ulbricht’s** harsh rule through open Berlin sectors.",
+      "turningPoint": "Overnight on **13 August 1961**, Khrushchev backed Ulbricht’s troops in rolling out barbed wire and building the concrete **Berlin Wall**, followed in October by a tense US–Soviet tank standoff at **Checkpoint Charlie**.",
+      "impact": "Splitting families for twenty-eight years, the Berlin Wall stabilised East Germany’s workforce yet stood worldwide—as **Kennedy** declared in 1963—as proof of communist repression.",
+      "bridgeToNext": "One year after sealing Berlin, Khrushchev gambled on secretly placing nuclear missiles ninety miles off the coast of Florida.",
+      "keyAgents": [
+        "Nikita Khrushchev",
+        "John F. Kennedy"
+      ],
+      "keyTerms": [
+        {
+          "term": "Satellite State",
+          "definition": "East Germany (GDR) and fellow Warsaw Pact regimes kept in power by Soviet backing and fortified borders."
+        },
+        {
+          "term": "Brain Drain",
+          "definition": "The mass flight of 2.7 million skilled East German workers and professionals to West Berlin before August 1961."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_14",
+      "num": 14,
+      "era": "part_3",
+      "date": "Summer – 14 October 1962",
+      "shortDate": "14 Oct 1962",
+      "shortTitle": "Operation Anadyr & U-2 Photo",
+      "title": "Castro’s Alliance, Operation Anadyr & U-2 Discovery Over Cuba",
+      "specTag": "Enquiry 4 • Missiles in Cuba",
+      "enquiryQuestion": "How close did Cuba bring nuclear war in 1962—and how was it avoided?",
+      "lessonIndex": 3,
+      "stageNum": 2,
+      "imageUrl": "/images/cold_war/u2_cuba_missile_site_1962.jpg",
+      "imageCaption": "Declassified CIA U-2 reconnaissance photograph taken by Major Richard Heyser over San Cristóbal, Cuba (14 October 1962), revealing Soviet nuclear missile sites.",
+      "mapUrl": "/images/cold_war/maps/ks3_cw_map_l4_cuban_missile_crisis_1959_62.svg",
+      "mapCaption": "Reference Map: San Cristóbal missile sites, Soviet nuclear strike ranges across the US, and Kennedy’s naval quarantine line.",
+      "catalyst": "After **Fidel Castro’s** 1959 revolution, US trade embargoes, and Kennedy’s failed **April 1961 Bay of Pigs** exile landing, Khrushchev sought to shield Cuba and offset America’s **17-to-1 ICBM lead** and **Jupiter missiles in Turkey**.",
+      "turningPoint": "Under secret **Operation Anadyr**, Moscow shipped **40,000 troops** and nuclear missiles to Cuba until **Major Richard Heyser’s U-2 spy plane** photographed launch pads at **San Cristóbal on 14 October 1962**.",
+      "impact": "Briefed on 16 October, **President John F. Kennedy** convened **ExComm**, knowing Soviet missiles in Cuba could obliterate Washington and major US cities within minutes.",
+      "bridgeToNext": "Over the next thirteen days, the world stood closer to thermonuclear war than at any other moment in human history.",
+      "keyAgents": [
+        "John F. Kennedy",
+        "Nikita Khrushchev",
+        "Fidel Castro"
+      ],
+      "keyTerms": [
+        {
+          "term": "Brinkmanship",
+          "definition": "Pushing a dangerous superpower confrontation to the very edge of nuclear war to extract concessions."
+        },
+        {
+          "term": "ICBM",
+          "definition": "Long-range ballistic missiles in which the United States held a 17-to-1 warhead advantage over Moscow in 1962."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_15",
+      "num": 15,
+      "era": "part_3",
+      "date": "22–27 October 1962",
+      "shortDate": "22–27 Oct 1962",
+      "shortTitle": "Quarantine & Submarine B-59",
+      "title": "Thirteen Days at DEFCON 2 & Vasili Arkhipov’s Veto",
+      "specTag": "Enquiry 4 • Thirteen Days on the Brink",
+      "enquiryQuestion": "How close did Cuba bring nuclear war in 1962—and how was it avoided?",
+      "lessonIndex": 3,
+      "stageNum": 3,
+      "imageUrl": "/images/cold_war/us_navy_p2_neptune_cuban_missile_1962.jpg",
+      "imageCaption": "US Navy P-2H Neptune patrolling above a Soviet freighter during the October 1962 Cuba quarantine while strategic bombers and missile crews stood at DEFCON 2.",
+      "mapUrl": "/images/cold_war/maps/ks3_cw_map_l4_cuban_missile_crisis_1959_62.svg",
+      "mapCaption": "Reference Map: The US Navy quarantine blockade ring around Cuba and Soviet convoy turn-backs in October 1962.",
+      "catalyst": "ExComm generals urged immediate airstrikes and invasion of Cuba, yet **Kennedy** feared killing Soviet troops would trigger a Soviet counter-attack on **West Berlin**.",
+      "turningPoint": "Kennedy ordered a naval **'quarantine'** on **22 October** at **DEFCON 2**; on **'Black Saturday' (27 October)**, a U-2 was shot down over Cuba and Soviet officer **Vasili Arkhipov** aboard submarine **B-59** refused to launch a nuclear torpedo.",
+      "impact": "Arkhipov’s calm refusal under US practice depth charges—combined with Kennedy’s restraint—averted an accidental nuclear exchange at sea.",
+      "bridgeToNext": "That very night of 27 October, urgent back-channel diplomacy in Washington unlocked a face-saving exit from the abyss.",
+      "keyAgents": [
+        "John F. Kennedy",
+        "Vasili Arkhipov",
+        "Nikita Khrushchev"
+      ],
+      "keyTerms": [
+        {
+          "term": "Naval Quarantine",
+          "definition": "Kennedy’s selective naval blockade around Cuba, carefully named to avoid declaring formal war."
+        },
+        {
+          "term": "DEFCON",
+          "definition": "US Defense Readiness Condition—raised to DEFCON 2 (one step below nuclear war) during October 1962."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_16",
+      "num": 16,
+      "era": "part_3",
+      "date": "28 October 1962 – August 1963",
+      "shortDate": "Oct 1962–1963",
+      "shortTitle": "Cuba–Turkey Deal & Test Ban",
+      "title": "Secret Diplomacy, The Moscow Hotline & Partial Test Ban Treaty",
+      "specTag": "Enquiry 4 • De-escalation",
+      "enquiryQuestion": "How close did Cuba bring nuclear war in 1962—and how was it avoided?",
+      "lessonIndex": 3,
+      "stageNum": 5,
+      "imageUrl": "/images/cold_war/jfk_cuba_address_oval_office_1962.jpg",
+      "imageCaption": "President John F. Kennedy in the Oval Office (October 1962): Secret back-channel talks resolved the missile crisis and led to the 1963 Hotline and Partial Test Ban Treaty.",
+      "catalyst": "Both **Kennedy** and **Khrushchev** recognised that another communication delay or rogue clash could spiral instantly beyond political control.",
+      "turningPoint": "Attorney General **Robert Kennedy** and Ambassador **Anatoly Dobrynin** struck a deal (**28 October 1962**): Moscow withdrew Cuban missiles for a US non-invasion pledge and secret removal of **US Jupiter missiles in Turkey**.",
+      "impact": "To prevent future miscalculation, Washington and Moscow installed the **June 1963 Hotline** teletype link and signed the **August 1963 Partial Nuclear Test Ban Treaty**.",
+      "bridgeToNext": "Stepping back from direct nuclear war after Cuba, Washington escalated military intervention half a world away in Vietnam.",
+      "keyAgents": [
+        "John F. Kennedy",
+        "Nikita Khrushchev"
+      ],
+      "keyTerms": [
+        {
+          "term": "Mutually Assured Destruction",
+          "definition": "Shared recognition after October 1962 that nuclear war would destroy both superpowers completely."
+        },
+        {
+          "term": "Deterrence",
+          "definition": "Preventing superpower war through balanced retaliatory arsenals and crisis communication links like the 1963 Hotline."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_17",
+      "num": 17,
+      "era": "part_3",
+      "date": "August 1964 – 1967",
+      "shortDate": "1964–1967",
+      "shortTitle": "Tonkin & Vietnam Tunnel War",
+      "title": "Gulf of Tonkin Escalation & Guerrilla War in the Cu Chi Tunnels",
+      "specTag": "Enquiry 5 • Asymmetric Warfare",
+      "enquiryQuestion": "Why did the Cold War turn into deadly wars in Korea and Vietnam?",
+      "lessonIndex": 4,
+      "stageNum": 4,
+      "imageUrl": "/images/ks3_cold_war/cw_l5_b3_huey_combat_landing_vietnam.jpg",
+      "imageCaption": "US infantry disembarking from UH-1D Huey helicopters in South Vietnam (NARA): Over 500,000 US troops fought asymmetric Vietcong guerrilla tactics and 250 km of Cu Chi tunnels.",
+      "mapUrl": "/images/cold_war/maps/ks3_cw_map_l5_asia_proxy_wars_korea_vietnam_1950_75.svg",
+      "mapCaption": "Reference Map: Vietnam divided at the 17th Parallel, the Ho Chi Minh Trail, and Cu Chi tunnel operations.",
+      "catalyst": "After **Ho Chi Minh** defeated France at **Dien Bien Phu (1954)** and Vietnam split at the **17th Parallel**, communist **Vietcong** guerrillas fought South Vietnam’s US-backed regime.",
+      "turningPoint": "Following the **August 1964 Gulf of Tonkin Resolution**, over **500,000 US troops** waged helicopter raids with **napalm** and **Agent Orange** against fighters supplied down the **Ho Chi Minh Trail** inside **250 km of Cu Chi tunnels**.",
+      "impact": "Heavy bombing and rural civilian casualties alienated Vietnamese villagers while televised bloodshed ignited mass anti-war protests across the United States.",
+      "bridgeToNext": "In January 1968, a coordinated Vietcong offensive across South Vietnam shattered official US claims that victory was close.",
+      "keyAgents": [
+        "Ho Chi Minh"
+      ],
+      "keyTerms": [
+        {
+          "term": "Guerrilla Warfare",
+          "definition": "Irregular tactics using ambushes, booby traps, and underground tunnels to neutralise superior conventional firepower."
+        },
+        {
+          "term": "Vietcong",
+          "definition": "South Vietnamese communist guerrilla movement backed by Ho Chi Minh’s North Vietnam down the Ho Chi Minh Trail."
+        },
+        {
+          "term": "War of Attrition",
+          "definition": "US strategy of trying to wear down enemy forces through body counts, air mobility, and heavy bombardment."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_18",
+      "num": 18,
+      "era": "part_3",
+      "date": "January 1968 – April 1975",
+      "shortDate": "1968–Apr 1975",
+      "shortTitle": "Tet Offensive & Fall of Saigon",
+      "title": "The 1968 Tet Shock, Vietnamization & The Fall of Saigon",
+      "specTag": "Enquiry 5 • Superpower Limits",
+      "enquiryQuestion": "Why did the Cold War turn into deadly wars in Korea and Vietnam?",
+      "lessonIndex": 4,
+      "stageNum": 5,
+      "imageUrl": "/images/usa/kt4/usa_kt4_l16_b1_frequent_wind_evacuees_1975.jpg",
+      "imageCaption": "South Vietnamese evacuees aboard USS Hancock during Operation Frequent Wind as Saigon fell (April 1975, US Navy / NARA), ending America’s longest Cold War intervention.",
+      "mapUrl": "/images/vietnam_war_tet_offensive_theater_map.png",
+      "mapCaption": "Strategic theatre map of the January 1968 Tet strikes across over 100 South Vietnamese towns and cities.",
+      "catalyst": "In **January 1968**, Vietcong and North Vietnamese units struck **over 100 towns** and the US Embassy in the **Tet Offensive**, stunning American television audiences.",
+      "turningPoint": "**Richard Nixon** shifted to **Vietnamization** and signed the **1973 Paris Peace Accords** withdrawing US combat troops; in **April 1975**, North Vietnamese tanks captured **Saigon**.",
+      "impact": "Uniting Vietnam under communist rule after **over two million deaths**, the war exposed the clear limits of superpower military might against determined nationalism.",
+      "bridgeToNext": "Even as diplomats celebrated European détente in 1975, historians note the Cold War stayed lethally hot across the Global South.",
+      "keyAgents": [
+        "Ho Chi Minh",
+        "Richard Nixon & Leonid Brezhnev"
+      ],
+      "keyTerms": [
+        {
+          "term": "Tet Offensive (1968)",
+          "definition": "Surprise lunar-new-year assault across South Vietnam that turned American public opinion decisively against the war."
+        },
+        {
+          "term": "Proxy War",
+          "definition": "Vietnam demonstrated how superpower rivalry devastated post-colonial nations even when Moscow and Washington avoided direct combat."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_19",
+      "num": 19,
+      "era": "part_3",
+      "date": "July 1975 – Late 1970s",
+      "shortDate": "1975–Late 70s",
+      "shortTitle": "Helsinki Détente vs Proxy Wars",
+      "title": "Europe’s 'Long Peace' at Helsinki vs 20 Million Global Dead",
+      "specTag": "Enquiry 7 • Global Reckoning",
+      "enquiryQuestion": "Why do historians argue the ‘Cold War’ was never truly cold outside Europe?",
+      "lessonIndex": 6,
+      "stageNum": 1,
+      "imageUrl": "/images/upgraded/gcse-cw-cme/cw_l9_helsinki_csce_finlandia_hall_1975.jpg",
+      "imageCaption": "Thirty-five nations convening in Finlandia Hall for the July 1975 Helsinki Accords: While Europe kept a nuclear 'Long Peace', proxy wars killed over 20 million across the Global South.",
+      "mapUrl": "/images/cold_war/cold_war_global_alliances_map_1980.svg",
+      "mapCaption": "Reference Map: Rival superpower alliances and Global South proxy battlegrounds across Asia, Africa, and Latin America.",
+      "catalyst": "During 1970s **détente**, 35 nations signed the **July 1975 Helsinki Accords**, leading Western historians like John Lewis Gaddis to call 1945–91 Europe’s **'Long Peace'**.",
+      "turningPoint": "Global historians challenge that **Eurocentric view**: while Berlin and Paris avoided war, Washington and Moscow armed dictatorships and insurgencies from **Angola** and the Middle East to **Latin America**.",
+      "impact": "Across Asia, Africa, the Middle East, and Latin America, Cold War proxy conflicts killed **over twenty million people** and left millions of refugees and landmines.",
+      "bridgeToNext": "In December 1979, Soviet tanks rolled into Afghanistan—shattering détente and fatally overstretching Moscow’s stagnant economy.",
+      "keyAgents": [
+        "Richard Nixon & Leonid Brezhnev"
+      ],
+      "keyTerms": [
+        {
+          "term": "Détente",
+          "definition": "The 1970s easing of direct US–Soviet tensions through summits, arms treaties, and the 1975 Helsinki Accords."
+        },
+        {
+          "term": "Proxy War",
+          "definition": "Superpower-backed conflicts across the Global South that claimed over 20 million lives between 1945 and 1991."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_20",
+      "num": 20,
+      "era": "part_4",
+      "date": "December 1979 – 1988",
+      "shortDate": "1979–1988",
+      "shortTitle": "Afghanistan, SDI & Gorbachev",
+      "title": "Afghan Quagmire, Reagan’s 'Star Wars' & Gorbachev’s Reforms",
+      "specTag": "Enquiry 6 • Reform & Overstretch",
+      "enquiryQuestion": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?",
+      "lessonIndex": 5,
+      "stageNum": 3,
+      "imageUrl": "/images/cold_war/reagan_gorbachev_geneva_summit_1985.jpg",
+      "imageCaption": "Ronald Reagan and Mikhail Gorbachev at the Geneva Summit (November 1985): Facing economic stagnation and the Afghan war, Gorbachev launched Glasnost, Perestroika, and non-intervention.",
+      "catalyst": "Stagnating with food queues while spending a quarter of national wealth on arms, the USSR invaded **Afghanistan (December 1979)** against **mujahideen** fighters as **Ronald Reagan** proposed **SDI ('Star Wars')**.",
+      "turningPoint": "Becoming Soviet leader in **March 1985**, **Mikhail Gorbachev** launched **Glasnost** ('openness') and **Perestroika** ('restructuring') and replaced the Brezhnev Doctrine with the non-interventionist **'Sinatra Doctrine'**.",
+      "impact": "Once Eastern Europeans realised Red Army tanks would no longer crush reform, peaceful mass movements rose immediately to demand free elections.",
+      "bridgeToNext": "Across 1989, peaceful revolutions swept from Poland and Hungary straight to the checkpoints of the Berlin Wall.",
+      "keyAgents": [
+        "Mikhail Gorbachev",
+        "Ronald Reagan"
+      ],
+      "keyTerms": [
+        {
+          "term": "Glasnost",
+          "definition": "Gorbachev’s policy of political openness, permitting freer journalism, public debate, and criticism of Soviet mistakes."
+        },
+        {
+          "term": "Perestroika",
+          "definition": "Gorbachev’s economic restructuring allowing limited private enterprise to revive the stalled Soviet command economy."
+        }
+      ]
+    },
+    {
+      "id": "cold_war_ms_21",
+      "num": 21,
+      "era": "part_4",
+      "date": "9 November 1989 – 25 December 1991",
+      "shortDate": "1989–Dec 1991",
+      "shortTitle": "Berlin Wall Falls & USSR Ends",
+      "title": "Breaching the Berlin Wall (1989) & Dissolution of the USSR (1991)",
+      "specTag": "Enquiry 6 • End of the Cold War",
+      "enquiryQuestion": "Why did Soviet rule in Eastern Europe—and the USSR itself—collapse by 1991?",
+      "lessonIndex": 5,
+      "stageNum": 4,
+      "imageUrl": "/images/upgraded/gcse-cw-cme/cw_l12_berlin_wall_mauerfall_nov_1989.jpg",
+      "imageCaption": "Crowds dismantling the Berlin Wall (9–10 November 1989): Followed by German reunification in 1990 and Mikhail Gorbachev’s resignation ending the USSR on 25 December 1991.",
+      "catalyst": "In 1989, Lech Wałęsa’s **Solidarity** union won free elections in Poland and Hungary opened its Austrian border, before East German spokesman **Günter Schabowski** misspoke on live TV on **9 November 1989**.",
+      "turningPoint": "Jubilant Berliners breached the **Berlin Wall** (**German reunification, 1990**); after **Boris Yeltsin** defeated an **August 1991 hardline coup** in Moscow, **Gorbachev resigned on 25 December 1991**.",
+      "impact": "As the red hammer-and-sickle flag came down over the Kremlin and **fifteen republics** gained independence, the forty-six-year Cold War ended without superpower nuclear war.",
+      "bridgeToNext": "The collapse of the Soviet Union ended Europe’s forty-year division while leaving lasting geopolitical legacies across Eastern Europe and the Global South.",
+      "keyAgents": [
+        "Mikhail Gorbachev"
+      ],
+      "keyTerms": [
+        {
+          "term": "Solidarity",
+          "definition": "Independent Polish trade union led by Lech Wałęsa whose June 1989 election victory spearheaded Eastern Europe’s peaceful revolutions."
+        },
+        {
+          "term": "Reunification",
+          "definition": "The peaceful political and territorial union of East and West Germany in October 1990 after the fall of the Berlin Wall."
+        },
+        {
+          "term": "Coup D’état",
+          "definition": "The failed August 1991 attempt by Communist hardliners to overthrow Gorbachev, hastening the breakup of the USSR."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,776 @@
+{
+  "unitId": "the_shoah",
+  "schemaVersion": "v1-curated-living-timeline",
+  "courseTitle": "The Shoah: Understanding the Holocaust",
+  "eyebrow": "KEY STAGE 3 HISTORY • YEAR 9 ENQUIRY CHRONOLOGY • 21 MILESTONES",
+  "beatLabels": {
+    "catalyst": "1. Context & Trigger",
+    "turningPoint": "2. Key Turning Point",
+    "impact": "3. Historical Consequence",
+    "bridgeBadge": "🔗 Leads To Next"
+  },
+  "streamFilters": [],
+  "eras": [
+    {
+      "id": "part_1",
+      "code": "Part 1",
+      "badge": "PART 1 • 1871–1939",
+      "pillLabel": "Part 1: Pre-War Life & Laws",
+      "title": "Part 1: Pre-War Jewish Diversity, Racial Antisemitism & Persecution in Nazi Germany (1871–1939)",
+      "color": "#1e3a8a",
+      "accent": "#2563eb",
+      "softBg": "#eff6ff",
+      "softBorder": "#bfdbfe"
+    },
+    {
+      "id": "part_2",
+      "code": "Part 2",
+      "badge": "PART 2 • 1939–1941",
+      "pillLabel": "Part 2: Ghettos & Bullets",
+      "title": "Part 2: Invasion of Poland, Sealed Ghettos & The Holocaust by Bullets (1939–1941)",
+      "color": "#991b1b",
+      "accent": "#dc2626",
+      "softBg": "#fef2f2",
+      "softBorder": "#fecaca"
+    },
+    {
+      "id": "part_3",
+      "code": "Part 3",
+      "badge": "PART 3 • 1942–1944",
+      "pillLabel": "Part 3: Death Camps & Revolt",
+      "title": "Part 3: Wannsee, Death Camps, Complicity, Resistance & Rescue (1942–1944)",
+      "color": "#0f766e",
+      "accent": "#0d9488",
+      "softBg": "#f0fdfa",
+      "softBorder": "#99f6e4"
+    },
+    {
+      "id": "part_4",
+      "code": "Part 4",
+      "badge": "PART 4 • 1944–1948",
+      "pillLabel": "Part 4: Liberation & Justice",
+      "title": "Part 4: Death Marches, Camp Liberation, Nuremberg Trials & Living Memory (1944–1948)",
+      "color": "#b45309",
+      "accent": "#d97706",
+      "softBg": "#fffbeb",
+      "softBorder": "#fde68a"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "the_shoah_ms_1",
+      "num": 1,
+      "era": "part_1",
+      "date": "1871 – 1918",
+      "shortDate": "1871–1918",
+      "shortTitle": "Emancipation & Racial Hatred",
+      "title": "Civic Emancipation vs The Invention of Modern Racial Antisemitism",
+      "specTag": "Enquiry 1 • Roots of Antisemitism",
+      "enquiryQuestion": "Who were the Jews of Europe before the Second World War?",
+      "lessonIndex": 0,
+      "stageNum": 5,
+      "imageUrl": "/images/upgraded/ks3-modern/shoah_l1_src_e_wilhelm_marr_1879.jpg",
+      "imageCaption": "Title page of Wilhelm Marr’s 1879 pamphlet popularising modern racial 'Antisemitismus', treating Jewish identity as biological blood rather than religious faith.",
+      "catalyst": "Following legal emancipation in **1871**, German and Western European Jews integrated deeply into civic life—with **100,000 German Jewish soldiers** serving in WWI and **12,000 killed** in action.",
+      "turningPoint": "Late nineteenth-century agitators like **Wilhelm Marr (1879)** mutated medieval religious anti-Judaism into pseudo-scientific **racial antisemitism**, claiming Jewishness was an unchangeable biological 'race'.",
+      "impact": "Unlike religious prejudice, biological racism argued conversion could never make Jews equal citizens—handing Adolf Hitler and the Nazi Party the core myth of their worldview.",
+      "bridgeToNext": "Despite rising racial conspiracy theories, Jewish cultural life flourished across interwar Eastern and Southern Europe during the 1920s.",
+      "keyAgents": [
+        "Richard Stern"
+      ],
+      "keyTerms": [
+        {
+          "term": "Racial Antisemitism",
+          "definition": "A 19th-century pseudo-scientific doctrine falsely claiming that Jewish identity was a fixed biological race in the blood."
+        },
+        {
+          "term": "Assimilation",
+          "definition": "Integrating into wider civic society—adopting national language, universities, and patriotic service while keeping personal heritage."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_2",
+      "num": 2,
+      "era": "part_1",
+      "date": "1920s",
+      "shortDate": "1920s",
+      "shortTitle": "Yiddishland & Sephardic Life",
+      "title": "Interwar Flourishing: Eastern Yiddishland & Sephardic Salonica",
+      "specTag": "Enquiry 1 • Cultural Diversity",
+      "enquiryQuestion": "Who were the Jews of Europe before the Second World War?",
+      "lessonIndex": 0,
+      "stageNum": 2,
+      "imageUrl": "/images/the_shoah/shoah_l1_b3_salonica_port_prewar.jpg",
+      "imageCaption": "The commercial waterfront of Thessaloniki (Salonica): Known as the 'Mother of Israel', over half the city’s population was Sephardic Jewish, closing the port every Saturday for the Sabbath.",
+      "catalyst": "Across interwar Europe, Jewish communities were never a single uniform group, spanning secular socialists, Zionist youth clubs, religious scholars, and Mediterranean dockworkers.",
+      "turningPoint": "In Eastern Europe’s **shtetls** and cities like Warsaw and **Vilna** ('Jerusalem of the North'), **Yiddish** theatre and press thrived alongside **Ladino-speaking Sephardic** communities in **Thessaloniki**.",
+      "impact": "Centuries-old traditions of scholarship, trade guilds, literature, and music enriched urban and rural life from the Baltic Sea to the Aegean.",
+      "bridgeToNext": "By the early 1930s, this diverse continental mosaic numbered roughly 9.5 million men, women, and children on the eve of Nazi power.",
+      "keyAgents": [
+        "Dawid Sierakowiak"
+      ],
+      "keyTerms": [
+        {
+          "term": "Shtetl",
+          "definition": "A small market town in Central and Eastern Europe with a close-knit Yiddish-speaking Jewish community."
+        },
+        {
+          "term": "Yiddish",
+          "definition": "The historical language of Ashkenazi Jews in Central and Eastern Europe, blending German, Hebrew, and Slavic roots."
+        },
+        {
+          "term": "Sephardic Jews",
+          "definition": "Jewish communities descended from families expelled from Spain and Portugal in 1492 who settled across the Mediterranean speaking Ladino."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_3",
+      "num": 3,
+      "era": "part_1",
+      "date": "c. 1930 – January 1933",
+      "shortDate": "c. 1930–1932",
+      "shortTitle": "9.5 Million Lives Pre-1933",
+      "title": "The European Mosaic on the Eve of Dictatorship: 9.5 Million Lives",
+      "specTag": "Enquiry 1 • Pre-1933 Panorama",
+      "enquiryQuestion": "Who were the Jews of Europe before the Second World War?",
+      "lessonIndex": 0,
+      "stageNum": 1,
+      "imageUrl": "/images/upgraded/ks3-modern/shoah_l1_block1_tarbut_school_poland_1933.jpg",
+      "imageCaption": "Pupils and teachers of the Jewish 'Tarbut' school in Kostopol, Poland (1933), illustrating the vibrant educational life of pre-war European Jewry.",
+      "mapUrl": "/images/the_shoah/maps/shoah_map_l1_prewar_jewish_life_europe_1933.svg",
+      "mapCaption": "Reference Map: Pre-war European Jewish population distribution (c. 1933), led by Poland (~3.3m) and the Western USSR (~2.5m) alongside Germany (565,000).",
+      "catalyst": "Before 1933, approximately **9.5 million Jewish people** lived across Europe—under **two percent** of the continent’s total population, and under one percent in Germany (**565,000**).",
+      "turningPoint": "Over **sixty percent** lived in Central and Eastern Europe—above all **Poland (~3.3 million)** and the **Soviet Union (~2.5 million)**—while integrated citizens flourished in Berlin, Vienna, Paris, and London.",
+      "impact": "Understanding the richness of these nine and a half million ordinary lives reveals the true human scale of the civilisation soon targeted for destruction.",
+      "bridgeToNext": "On 30 January 1933, Adolf Hitler’s appointment as German Chancellor turned racial antisemitism into official state policy overnight.",
+      "keyAgents": [
+        "Professor Victor Klemperer",
+        "Richard Stern"
+      ],
+      "keyTerms": [
+        {
+          "term": "Assimilation",
+          "definition": "Full civic participation of German and Western European Jews as doctors, scientists, teachers, and WWI veterans."
+        },
+        {
+          "term": "Yiddish",
+          "definition": "Mother tongue of millions across Poland, Lithuania, Romania, and the western Soviet Union before 1939."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_4",
+      "num": 4,
+      "era": "part_1",
+      "date": "30 January – 7 April 1933",
+      "shortDate": "Jan–Apr 1933",
+      "shortTitle": "Nazi Takeover & Shop Boycott",
+      "title": "Hitler Appointed Chancellor, SA Boycott & Civil Service Purge",
+      "specTag": "Enquiry 2 • State Exclusion Begins",
+      "enquiryQuestion": "How were German Jews progressively stripped of citizenship and rights (1933–1939)?",
+      "lessonIndex": 1,
+      "stageNum": 1,
+      "imageUrl": "/images/the_shoah/shoah_l2_b0_sa_boycott_shop_window_1933.jpg",
+      "imageCaption": "Nationwide Nazi boycott in Berlin (1 April 1933, NARA / USHMM): Uniformed SA stormtroopers paste antisemitic placards onto Jewish-owned shopfronts to intimidate customers.",
+      "catalyst": "Appointed German Chancellor on **30 January 1933**, **Adolf Hitler** rapidly dismantled Weimar democracy and moved to isolate Germany’s Jewish minority.",
+      "turningPoint": "On **1 April 1933**, uniformed **SA stormtroopers** picketed Jewish shops, doctors, and lawyers, and on **7 April** the **Civil Service Law** dismissed Jewish judges, teachers, and state officials.",
+      "impact": "Even decorated WWI veterans like **Richard Stern**—who stood outside his Cologne shop wearing his Iron Cross—saw legal equality replaced by state-sanctioned intimidation.",
+      "bridgeToNext": "Two years later at Nuremberg, the Nazi regime moved from street boycotts to stripping German Jews of citizenship altogether.",
+      "keyAgents": [
+        "Richard Stern",
+        "Professor Victor Klemperer"
+      ],
+      "keyTerms": [
+        {
+          "term": "SA Boycott (1 April 1933)",
+          "definition": "The Nazi regime’s first nationwide anti-Jewish campaign, stationing stormtroopers outside Jewish-owned businesses."
+        },
+        {
+          "term": "Social Death",
+          "definition": "Systematic legal and social exclusion cutting a targeted group off from professions, schools, and neighbours."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_5",
+      "num": 5,
+      "era": "part_1",
+      "date": "15 September 1935 – 1938",
+      "shortDate": "Sep 1935–1938",
+      "shortTitle": "Nuremberg Laws & Social Death",
+      "title": "The 1935 Nuremberg Laws, Aryanization & 'Social Death'",
+      "specTag": "Enquiry 2 • Legal Disenfranchisement",
+      "enquiryQuestion": "How were German Jews progressively stripped of citizenship and rights (1933–1939)?",
+      "lessonIndex": 1,
+      "stageNum": 2,
+      "imageUrl": "/images/the_shoah/shoah_l2_b1_nuremberg_laws_rgbl_1146.jpg",
+      "imageCaption": "Official Reichsgesetzblatt page enacting the 15 September 1935 Nuremberg Laws—revoking Jewish citizenship and outlawing marriage between Jews and 'German-blooded' citizens.",
+      "catalyst": "Nazi lawyers sought a rigid bureaucratic definition of 'Jewish blood' to turn racial ideology into enforceable criminal law across Germany.",
+      "turningPoint": "Enacted on **15 September 1935**, the **Nuremberg Laws** revoked Jewish citizenship ('subjects of the state') and banned intermarriage using **four-grandparent ancestry charts**, backed by **400+ anti-Jewish decrees**.",
+      "impact": "Forced **Aryanization** seized Jewish businesses at rock-bottom prices while bans from parks, cinemas, and schools—recorded in **Victor Klemperer’s** secret Dresden diary—inflicted **'social death'**.",
+      "bridgeToNext": "In 1938, bureaucratic exclusion exploded into open nationwide terror while foreign governments slammed their borders shut.",
+      "keyAgents": [
+        "Professor Victor Klemperer"
+      ],
+      "keyTerms": [
+        {
+          "term": "Nuremberg Laws",
+          "definition": "Two September 1935 Nazi statutes—the Reich Citizenship Law and Blood Protection Law—stripping Jews of citizenship and banning intermarriage."
+        },
+        {
+          "term": "Social Death",
+          "definition": "Progressive isolation of German Jews from public spaces, livelihoods, and friendships before physical deportation began."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_6",
+      "num": 6,
+      "era": "part_1",
+      "date": "July 1938 – August 1939",
+      "shortDate": "Nov–Dec 1938",
+      "shortTitle": "Kristallnacht & Kindertransport",
+      "title": "Évian Closed Borders, Kristallnacht Pogrom & The Kindertransport",
+      "specTag": "Enquiry 2 • Nationwide Pogrom & Refugees",
+      "enquiryQuestion": "How were German Jews progressively stripped of citizenship and rights (1933–1939)?",
+      "lessonIndex": 1,
+      "stageNum": 4,
+      "imageUrl": "/images/the_shoah/shoah_l2_b4_kindertransport_arrival_harwich_1938.jpg",
+      "imageCaption": "Unaccompanied Jewish refugee children arriving at Harwich, Essex on the first British Kindertransport (December 1938), weeks after the Kristallnacht pogrom.",
+      "catalyst": "At the **July 1938 Évian Conference**, delegates from **32 nations** expressed sympathy yet refused to lift tight immigration quotas for fleeing German and Austrian Jews.",
+      "turningPoint": "On **9–10 November 1938** (**Kristallnacht**), SA and SS squads burned **1,400+ synagogues**, trashed **7,500 shops**, murdered **91 Jews**, arrested **30,000 men**, and fined the Jewish community **1 billion marks**.",
+      "impact": "Shattering all hope of safety in Germany, Britain’s emergency **Kindertransport** rescued nearly **10,000 unaccompanied children** between December 1938 and August 1939—most never seeing their parents again.",
+      "bridgeToNext": "Days after the final Kindertransport train left in late August 1939, Hitler invaded Poland and trapped millions more Jewish people under Nazi rule.",
+      "keyAgents": [
+        "Professor Victor Klemperer"
+      ],
+      "keyTerms": [
+        {
+          "term": "Kristallnacht (November Pogrom)",
+          "definition": "State-directed pogrom on 9–10 November 1938 destroying synagogues and Jewish businesses across Germany and Austria."
+        },
+        {
+          "term": "Evian Conference",
+          "definition": "July 1938 international conference in France where 32 countries failed to open their borders to Jewish refugees."
+        },
+        {
+          "term": "Kindertransport",
+          "definition": "Rescue mission bringing roughly 10,000 unaccompanied Jewish children from Nazi-ruled territories to safety in Britain (1938–1939)."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_7",
+      "num": 7,
+      "era": "part_2",
+      "date": "1 September – November 1939",
+      "shortDate": "Sep–Nov 1939",
+      "shortTitle": "Poland Invaded & Schnellbrief",
+      "title": "Conquest of Poland, Heydrich’s Schnellbrief & The Star Armband",
+      "specTag": "Enquiry 3 • Wartime Radicalisation",
+      "enquiryQuestion": "How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?",
+      "lessonIndex": 2,
+      "stageNum": 1,
+      "imageUrl": "/images/the_shoah/shoah_l3_b0_german_soldiers_jews_sanok_1939.jpg",
+      "imageCaption": "Wehrmacht troops guarding rounded-up Polish Jews in Sanok (September 1939): Heydrich’s 21 September Schnellbrief ordered rural communities concentrated near railway junctions.",
+      "mapUrl": "/images/the_shoah/maps/shoah_map_l4_ghettos_barbarossa_bullets_1939_42.svg",
+      "mapCaption": "Reference Map: Major sealed ghettos along railway hubs in occupied Poland (1939–1940) ahead of the June 1941 invasion of the USSR.",
+      "catalyst": "Invading Poland on **1 September 1939** brought over **two million Polish Jews** under German rule—ten times the Jewish population left inside Germany.",
+      "turningPoint": "On **21 September 1939**, RSHA chief **Reinhard Heydrich** issued his secret **Schnellbrief**, ordering rural Jews concentrated in cities beside **railway junctions**, followed in November by mandatory **Star of David armbands**.",
+      "impact": "Polish Jews had bank accounts frozen, property seized, and men dragged off streets into **forced labour gangs**, laying the groundwork for sealed urban ghettos.",
+      "bridgeToNext": "Throughout 1940, German occupation governors built brick walls and barbed-wire fences to seal these concentrated communities off from the world.",
+      "keyAgents": [
+        "Reinhard Heydrich",
+        "Dawid Sierakowiak"
+      ],
+      "keyTerms": [
+        {
+          "term": "Schnellbrief",
+          "definition": "Reinhard Heydrich’s confidential 21 September 1939 directive ordering Polish Jews concentrated into cities on main rail lines."
+        },
+        {
+          "term": "Judenrat",
+          "definition": "Jewish Councils established by Nazi decree inside occupied cities and coerced into administering German orders."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_8",
+      "num": 8,
+      "era": "part_2",
+      "date": "1940 – Early 1941",
+      "shortDate": "1940–1941",
+      "shortTitle": "Sealed Ghettos & Starvation",
+      "title": "Brick Walls, Starvation Rations & Child Smugglers in Warsaw",
+      "specTag": "Enquiry 3 • Ghetto Imprisonment",
+      "enquiryQuestion": "How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?",
+      "lessonIndex": 2,
+      "stageNum": 3,
+      "imageUrl": "/images/the_shoah/shoah_l3_b2_warsaw_ghetto_wall_zelaznej_bramy.jpg",
+      "imageCaption": "The three-metre brick wall sealing the Warsaw Ghetto (1940–41), imprisoning over 450,000 Jewish people inside 1.3 square miles on starvation rations.",
+      "mapUrl": "/images/warsaw_ghetto_plan_1940_map.png",
+      "mapCaption": "Official October 1940 German street map demarcating the sealed Warsaw Ghetto boundary.",
+      "catalyst": "Claiming falsely that Jews spread typhus, Nazi authorities in **1940** enclosed communities inside sealed **ghettos** across occupied Poland, including **Łódź**, Kraków, and **Warsaw**.",
+      "turningPoint": "Behind Warsaw’s **3-metre brick wall**, over **450,000 people** were crammed into **1.3 square miles** (7–9 per room) on official rations of barely **180–220 calories a day**.",
+      "impact": "Over **80,000 Warsaw Ghetto residents died** of hunger and typhus between 1940 and 1942, while brave **child smugglers** squeezed through wall gaps risking instant execution for food.",
+      "bridgeToNext": "Even amid starvation and epidemic disease, imprisoned scholars and teachers organised secret cultural defiance to preserve the truth.",
+      "keyAgents": [
+        "Dawid Sierakowiak",
+        "Emanuel Ringelblum & The Oneg Shabbat Archive"
+      ],
+      "keyTerms": [
+        {
+          "term": "Ghetto",
+          "definition": "A walled, guarded district of an occupied city where Nazis imprisoned Jewish families in lethal overcrowding and starvation."
+        },
+        {
+          "term": "Judenrat",
+          "definition": "Ghetto councils placed under impossible moral pressure to manage soup kitchens, housing, and German labour quotas."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_9",
+      "num": 9,
+      "era": "part_2",
+      "date": "November 1940 – 1941",
+      "shortDate": "Nov 1940–1941",
+      "shortTitle": "Oyneg Shabes Secret Archive",
+      "title": "Spiritual Resistance: Emanuel Ringelblum & The Milk-Can Archive",
+      "specTag": "Enquiry 3 • Spiritual Defiance",
+      "enquiryQuestion": "How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?",
+      "lessonIndex": 2,
+      "stageNum": 5,
+      "imageUrl": "/images/oneg_shabbat_milk_can_1942.jpg",
+      "imageCaption": "Sealed aluminium milk can excavated beneath ruined Warsaw in 1950, preserving thousands of eyewitness documents collected by Emanuel Ringelblum’s Oyneg Shabes archive.",
+      "catalyst": "Nazi propaganda sought not only to starve ghetto inmates physically, but also to erase Jewish culture, education, and historical voice completely.",
+      "turningPoint": "Alongside clandestine schools, soup kitchens, and concerts, historian **Emanuel Ringelblum** founded the secret **Oyneg Shabes** ('Joy of the Sabbath') archive in **November 1940** to collect diaries, art, and decrees.",
+      "impact": "Buried later inside **aluminium milk cans** and metal boxes beneath Warsaw cellars, these recovered testimonies ensured victims spoke in their own voices rather than through Nazi records.",
+      "bridgeToNext": "In June 1941, Hitler’s surprise invasion of the Soviet Union crossed the threshold from ghetto attrition to systematic face-to-face mass murder.",
+      "keyAgents": [
+        "Emanuel Ringelblum & The Oneg Shabbat Archive",
+        "Dawid Sierakowiak"
+      ],
+      "keyTerms": [
+        {
+          "term": "Oneg Shabbat",
+          "definition": "Secret Warsaw Ghetto historical archive led by Emanuel Ringelblum that buried eyewitness records in milk cans and metal boxes."
+        },
+        {
+          "term": "Spiritual Resistance",
+          "definition": "Non-violent defiance preserving human dignity, secret schooling, faith, and historical truth under Nazi terror."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_10",
+      "num": 10,
+      "era": "part_2",
+      "date": "22 June – August 1941",
+      "shortDate": "Jun–Aug 1941",
+      "shortTitle": "Barbarossa & Einsatzgruppen",
+      "title": "Operation Barbarossa & The Deployment of SS Einsatzgruppen",
+      "specTag": "Enquiry 4 • Holocaust by Bullets",
+      "enquiryQuestion": "How and why did persecution turn into systematic mass murder (1941–1942)?",
+      "lessonIndex": 3,
+      "stageNum": 2,
+      "imageUrl": "/images/einsatzgruppen_ivangorod_1942.jpg",
+      "imageCaption": "Einsatzgruppe member aiming at a Jewish woman shielding a child near Ivanhorod, Ukraine, exemplifying the face-to-face 'Holocaust by Bullets'.",
+      "mapUrl": "/images/the_shoah/maps/shoah_map_l4_ghettos_barbarossa_bullets_1939_42.svg",
+      "mapCaption": "Reference Map: The 22 June 1941 Operation Barbarossa invasion line and Einsatzgruppen A–D mass-shooting sites across Eastern Europe.",
+      "catalyst": "Launching **Operation Barbarossa** on **22 June 1941** with three million Axis troops, Hitler framed war against the USSR as an ideological war of annihilation (*Vernichtungskrieg*) fuelled by the **'Judeo-Bolshevik'** lie and **Commissar Order**.",
+      "turningPoint": "Four mobile **SS Einsatzgruppen (A–D)** and **Order Police battalions** followed the Wehrmacht, escalating by **August 1941** to shooting entire communities of Jewish men, women, and children beside ravines.",
+      "impact": "Across occupied Soviet territories, this **'Holocaust by Bullets'** murdered **over 1.5 million Jewish civilians** in open-air mass executions.",
+      "bridgeToNext": "At the end of September 1941 outside Kyiv, mobile killing units carried out the largest single two-day shooting massacre of the war.",
+      "keyAgents": [
+        "Reinhard Heydrich"
+      ],
+      "keyTerms": [
+        {
+          "term": "Operation Barbarossa",
+          "definition": "Nazi Germany’s 22 June 1941 invasion of the Soviet Union, waged as a racial war of ideological annihilation."
+        },
+        {
+          "term": "Einsatzgruppen",
+          "definition": "Four mobile SS paramilitary killing squads (A, B, C, D) tasked with mass shootings behind the Eastern Front."
+        },
+        {
+          "term": "Holocaust by Bullets",
+          "definition": "The systematic murder of roughly 1.5 to 2 million Jews in mass-shooting pits and ravines across Eastern Europe."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_11",
+      "num": 11,
+      "era": "part_2",
+      "date": "29–30 September 1941",
+      "shortDate": "29–30 Sep 1941",
+      "shortTitle": "Babyn Yar & Baltic Massacres",
+      "title": "33,771 Murdered at Babyn Yar & Collaboration in the Baltics",
+      "specTag": "Enquiry 4 • Ravines & Auxiliaries",
+      "enquiryQuestion": "How and why did persecution turn into systematic mass murder (1941–1942)?",
+      "lessonIndex": 3,
+      "stageNum": 3,
+      "imageUrl": "/images/the_shoah/shoah_l4_b2_babi_yar_clothes_haehle_1941.jpg",
+      "imageCaption": "Victim clothing piled at the Babyn Yar ravine outside Kyiv (early October 1941, Johannes Hähle), where Sonderkommando 4a and police shot 33,771 Jews in 36 hours.",
+      "mapUrl": "/images/stahlecker_einsatzgruppe_a_report_map_1941.jpg",
+      "mapCaption": "Top-secret Stahlecker Report map tallying Einsatzgruppe A and auxiliary mass shootings across Lithuania, Latvia, Estonia, and Belarus.",
+      "catalyst": "Occupying Kyiv and the Baltic states, small SS detachments relied heavily on German **Order Police** and **local auxiliary police** volunteers to round up Jewish neighbours.",
+      "turningPoint": "On **29–30 September 1941**, **Sonderkommando 4a** and police battalions shot **33,771 Jews in 36 hours** at **Babyn Yar**, while **Einsatzgruppe A** and Baltic auxiliaries murdered ~250,000 Jews including **70,000 at Ponary Forest**.",
+      "impact": "Meticulous tallies sent back to Berlin proved mass murder had become routine state policy, shattering centuries-old Jewish centres like Vilna.",
+      "bridgeToNext": "Concerned about psychological strain among execution squads, SS chief Heinrich Himmler ordered a shift from open shootings to sealed poison gas.",
+      "keyAgents": [
+        "Reinhard Heydrich"
+      ],
+      "keyTerms": [
+        {
+          "term": "Babi Yar",
+          "definition": "Ravine outside Kyiv where SS Sonderkommando 4a, German police, and auxiliaries murdered 33,771 Jews on 29–30 September 1941."
+        },
+        {
+          "term": "Reserve Police Battalion 101",
+          "definition": "Middle-aged German Order Policemen studied by Christopher Browning who carried out mass shootings despite having the option to step aside."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_12",
+      "num": 12,
+      "era": "part_2",
+      "date": "July – December 1941",
+      "shortDate": "Late 1941",
+      "shortTitle": "Göring Directive & Chełmno Vans",
+      "title": "From Bullets to Gas: Göring’s Authorization & Chełmno Vans",
+      "specTag": "Enquiry 4 • Shift to Poison Gas",
+      "enquiryQuestion": "How and why did persecution turn into systematic mass murder (1941–1942)?",
+      "lessonIndex": 3,
+      "stageNum": 5,
+      "imageUrl": "/images/chelmno_gas_van_site_1942.jpg",
+      "imageCaption": "Magirus-Deutz gas van recovered near Chełmno (Kulmhof), where SS crews pumped lethal carbon monoxide exhaust into sealed rear compartments beginning in December 1941.",
+      "catalyst": "On **31 July 1941**, Hermann Göring authorized Heydrich to plan a continent-wide **'Final Solution'**, while **Heinrich Himmler**—sickened watching a Minsk shooting in August—worried about shooter breakdowns.",
+      "turningPoint": "Seeking a more impersonal killing method to spare perpetrators rather than victims, the SS opened **Chełmno** in occupied Poland in **December 1941**, asphyxiating victims inside **carbon-monoxide gas vans**.",
+      "impact": "Crossing into mechanized murder with poison gas created the lethal prototype soon scaled up into permanent rail-fed extermination camps.",
+      "bridgeToNext": "Six weeks after Chełmno began operating, fifteen senior German officials met at Wannsee in Berlin to coordinate deportations across all of Europe.",
+      "keyAgents": [
+        "Reinhard Heydrich"
+      ],
+      "keyTerms": [
+        {
+          "term": "Chełmno (Kulmhof)",
+          "definition": "First stationary Nazi killing facility (December 1941), murdering Polish Jews and Roma inside sealed carbon-monoxide exhaust vans."
+        },
+        {
+          "term": "Extermination Camp",
+          "definition": "A Nazi facility engineered specifically for rapid mass murder by poison gas rather than ordinary detention."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_13",
+      "num": 13,
+      "era": "part_3",
+      "date": "20 January – Summer 1942",
+      "shortDate": "Jan–Sum 1942",
+      "shortTitle": "Wannsee & Operation Reinhard",
+      "title": "The Wannsee Conference & Operation Reinhard Death Camps",
+      "specTag": "Enquiry 5 • Industrial Annihilation",
+      "enquiryQuestion": "How did the \"Final Solution\" operate, and how did Jews resist?",
+      "lessonIndex": 4,
+      "stageNum": 1,
+      "imageUrl": "/images/wannsee_heydrich_endlosung_directive_1941.jpg",
+      "imageCaption": "Reinhard Heydrich’s February 1942 cover letter transmitting the top-secret 20 January 1942 Wannsee Conference Protocol to coordinate deportations with Adolf Eichmann.",
+      "mapUrl": "/images/the_shoah/maps/shoah_map_l5_final_solution_resistance_1942_44.svg",
+      "mapCaption": "Reference Map: Continental deportation railways after Wannsee, Operation Reinhard camps (Bełżec, Sobibór, Treblinka), and Auschwitz-Birkenau.",
+      "catalyst": "Executing continent-wide genocide required seamless cooperation from civil ministries, lawyers, police, and railway timetables across every occupied territory.",
+      "turningPoint": "On **20 January 1942** at **Wannsee**, **Heydrich** and **Adolf Eichmann** coordinated **15 senior officials** targeting **11 million European Jews**, launching **Operation Reinhard** pure death camps at **Bełżec, Sobibór, and Treblinka**.",
+      "impact": "With zero labour selection, victims at Bełżec, Sobibór, and Treblinka were murdered with carbon monoxide within two hours of arrival—killing **~1.7 million people** by late 1943.",
+      "bridgeToNext": "Feeding those death camps across Western and Central Europe depended on civil-service 'desk murderers' and collaborating foreign police.",
+      "keyAgents": [
+        "Reinhard Heydrich"
+      ],
+      "keyTerms": [
+        {
+          "term": "Wannsee Conference",
+          "definition": "Ninety-minute meeting at a Berlin villa on 20 January 1942 coordinating ministry and railway logistics for the 'Final Solution'."
+        },
+        {
+          "term": "Operation Reinhard",
+          "definition": "Secret SS programme operating the pure extermination camps of Bełżec, Sobibór, and Treblinka in occupied Poland (1942–1943)."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_14",
+      "num": 14,
+      "era": "part_3",
+      "date": "16–17 July 1942",
+      "shortDate": "Jul 1942",
+      "shortTitle": "Desk Murderers & Vichy Roundup",
+      "title": "Reichsbahn Tariffs, Bystanders & France’s Vél d’Hiv Roundup",
+      "specTag": "Enquiry 6 • Bureaucracy & Complicity",
+      "enquiryQuestion": "Who was responsible, who collaborated, and who tried to save?",
+      "lessonIndex": 5,
+      "stageNum": 2,
+      "imageUrl": "/images/the_shoah/shoah_l6_b1_vichy_fichier_juif_paris.jpg",
+      "imageCaption": "Vichy France’s 1940 Fichier Juif ('Jewish Card Index') in Paris, used by French police to arrest over 13,000 Jews during the July 1942 Vél d’Hiv roundup.",
+      "catalyst": "Historian **Raul Hilberg** showed genocide relied on **'desk murderers'** (*Schreibtischtäter*)—**Deutsche Reichsbahn** clerks billing per-kilometre cattle-car fares—and bystander indifference or auction profiteering.",
+      "turningPoint": "Across occupied Europe foreign regimes collaborated actively: on **16–17 July 1942**, **French Vichy police** used their own card index to arrest **13,000+ Parisian Jews** (including 4,000 children) in the **Vél d’Hiv roundup**.",
+      "impact": "Interned in French transit camps before deportation to **Auschwitz**, the victims proved the SS could never have murdered at continental scale without non-German collaborators.",
+      "bridgeToNext": "As deportations emptied ghettos into the death camps through 1942–43, underground Jewish youth movements prepared armed insurrection in Warsaw.",
+      "keyAgents": [
+        "Reinhard Heydrich",
+        "Sophie Scholl & Rescuers of Conscience (Chiune Sugihara)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Collaboration",
+          "definition": "Active cooperation by non-German governments, police forces, and auxiliaries in rounding up and deporting Jewish residents."
+        },
+        {
+          "term": "Vel’ d’Hiv Roundup",
+          "definition": "Mass arrest in Paris on 16–17 July 1942 in which French police seized over 13,000 Jewish men, women, and children for deportation."
+        },
+        {
+          "term": "Complicity",
+          "definition": "Assisting or profiting from persecution through bureaucratic paperwork, auctions of stolen homes, or passive silence."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_15",
+      "num": 15,
+      "era": "part_3",
+      "date": "19 April – 16 May 1943",
+      "shortDate": "Apr–May 1943",
+      "shortTitle": "Warsaw Ghetto Armed Uprising",
+      "title": "27 Days of Defiance: Mordechai Anielewicz & The Warsaw Uprising",
+      "specTag": "Enquiry 5 • Urban Insurrection",
+      "enquiryQuestion": "How did the \"Final Solution\" operate, and how did Jews resist?",
+      "lessonIndex": 4,
+      "stageNum": 4,
+      "imageUrl": "/images/the_shoah/shoah_l5_b3_warsaw_ghetto_uprising_burning_1943.jpg",
+      "imageCaption": "Smoke rising over the Warsaw Ghetto (April–May 1943, Stroop Report, NARA): Unable to defeat ŻOB and ŻZW fighters in bunker combat, SS troops burned the ghetto block by block.",
+      "catalyst": "After mass deportations to Treblinka left roughly 60,000 people in Warsaw, young underground fighters chose to choose how they would fight and die.",
+      "turningPoint": "When SS troops entered on **19 April 1943**, **24-year-old Mordechai Anielewicz’s Jewish Combat Organisation (ŻOB)** and the **ŻZW** ambushed German tanks with smuggled pistols and petrol bombs for **27 days**.",
+      "impact": "The first mass urban uprising in Nazi-occupied Europe was crushed only when General **Jürgen Stroop** burned the ghetto building by building, inspiring resistance across Poland.",
+      "bridgeToNext": "Months after Warsaw burned, prisoners inside the most heavily guarded extermination camps staged daring armed breakouts of their own.",
+      "keyAgents": [
+        "Emanuel Ringelblum & The Oneg Shabbat Archive"
+      ],
+      "keyTerms": [
+        {
+          "term": "ŻOB (Jewish Combat Organization)",
+          "definition": "Underground Warsaw Ghetto resistance force led by Mordechai Anielewicz during the 27-day uprising of April–May 1943."
+        },
+        {
+          "term": "Spiritual Resistance",
+          "definition": "Alongside armed combat, preserving human solidarity and defiance inside bunkers until the final day."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_16",
+      "num": 16,
+      "era": "part_3",
+      "date": "August – October 1943",
+      "shortDate": "Aug–Oct 1943",
+      "shortTitle": "Sobibór, Treblinka & Birkenau",
+      "title": "Auschwitz-Birkenau Industrial Murder & Death Camp Revolts",
+      "specTag": "Enquiry 5 • Camp Revolts",
+      "enquiryQuestion": "How did the \"Final Solution\" operate, and how did Jews resist?",
+      "lessonIndex": 4,
+      "stageNum": 5,
+      "imageUrl": "/images/the_shoah/shoah_l5_b4_stanislaw_szmajzner_sobibor.jpg",
+      "imageCaption": "Teenage survivor Stanisław 'Shlomo' Szmajzner, who smuggled rifles from the SS armoury during the 14 October 1943 Sobibór mass breakout of 300 prisoners.",
+      "mapUrl": "/images/extermination_camps_poland_map.png",
+      "mapCaption": "Archival logistics map of the six extermination camps in occupied Poland and Birkenau Crematorium II blueprint.",
+      "catalyst": "While **Auschwitz-Birkenau** combined slave-labour selection with **Zyklon B** gas chambers (**1.1 million+ murdered**), prisoners inside the death camps plotted desperate revolts.",
+      "turningPoint": "Inmates raided the armoury and torched **Treblinka** (**August 1943**), **300 prisoners broke out of Sobibór** (**14 October 1943**), and **Roza Robota’s** smuggled gunpowder helped Birkenau’s *Sonderkommando* blow up Crematorium IV (1944).",
+      "impact": "Soon after the Treblinka and Sobibór uprisings, the SS demolished both camps, while escaped fighters joined anti-Nazi forest **partisans**.",
+      "bridgeToNext": "That exact same month of October 1943, citizens in Nazi-occupied Denmark proved mass civilian rescue was possible when conscience defied terror.",
+      "keyAgents": [
+        "Roza Robota",
+        "Heinz Salvator Kounio & Primo Levi"
+      ],
+      "keyTerms": [
+        {
+          "term": "Sonderkommando",
+          "definition": "Jewish prisoner units forced under threat of death to work in crematoria—who staged armed revolts at Treblinka, Sobibór, and Birkenau."
+        },
+        {
+          "term": "Extermination Camp",
+          "definition": "Purpose-built murder complexes including Bełżec, Sobibór, Treblinka, Chełmno, Majdanek, and Auschwitz-Birkenau."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_17",
+      "num": 17,
+      "era": "part_3",
+      "date": "October 1943",
+      "shortDate": "Oct 1943",
+      "shortTitle": "Danish Rescue & Righteous Aid",
+      "title": "Boats to Sweden, Le Chambon & Righteous Rescuers of Conscience",
+      "specTag": "Enquiry 6 • Rescue Defying Terror",
+      "enquiryQuestion": "Who was responsible, who collaborated, and who tried to save?",
+      "lessonIndex": 5,
+      "stageNum": 4,
+      "imageUrl": "/images/the_shoah/shoah_l6_s4_danish_jews_boat_sweden_1943.jpg",
+      "imageCaption": "Danish Jewish families aboard a small fishing boat crossing to neutral Sweden (October 1943, Nationalmuseet Copenhagen): Over 7,200 people—more than 95% of Danish Jewry—were saved.",
+      "mapUrl": "/images/the_shoah/maps/shoah_map_l5_final_solution_resistance_1942_44.svg",
+      "mapCaption": "Reference Map: Highlighting the October 1943 Øresund sea rescue from occupied Denmark to neutral Sweden alongside continental deportation routes.",
+      "catalyst": "Though rescuing Jews carried prison or death across occupied Europe, courageous individuals, diplomats, and communities refused to stand by.",
+      "turningPoint": "Tipped off in **October 1943**, Danish citizens and fishermen hid neighbours and ferried **over 7,200 Jews** across the Øresund to neutral **Sweden**, while **Pastor André Trocmé’s** village of **Le Chambon-sur-Lignon** sheltered ~3,500 refugees.",
+      "impact": "Alongside diplomats **Chiune Sugihara** (6,000+ transit visas) and **Raoul Wallenberg**, and Munich’s **White Rose** students (**Sophie Scholl**), these **Righteous Among the Nations** proved moral choice remained possible.",
+      "bridgeToNext": "In spring 1944, however, collaboration in Hungary triggered the fastest deportation wave of the war beneath the lenses of Allied reconnaissance planes.",
+      "keyAgents": [
+        "Sophie Scholl & Rescuers of Conscience (Chiune Sugihara)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Righteous Among the Nations",
+          "definition": "Official Yad Vashem honour recognising non-Jews who risked their lives without financial reward to save Jews during the Shoah."
+        },
+        {
+          "term": "White Rose",
+          "definition": "Munich university student group including Sophie and Hans Scholl executed in 1943 for distributing leaflets denouncing Nazi crimes."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_18",
+      "num": 18,
+      "era": "part_3",
+      "date": "May – July 1944",
+      "shortDate": "May–Jul 1944",
+      "shortTitle": "Hungarian Trains & Allied Recon",
+      "title": "437,000 Deported from Hungary & The Allied Bombing Dilemma",
+      "specTag": "Enquiry 6 • Allied Knowledge",
+      "enquiryQuestion": "Who was responsible, who collaborated, and who tried to save?",
+      "lessonIndex": 5,
+      "stageNum": 5,
+      "imageUrl": "/images/the_shoah/shoah_l6_b4_auschwitz_birkenau_aerial_1944_nara.jpg",
+      "imageCaption": "USAAF high-altitude aerial reconnaissance over Auschwitz-Birkenau (26 June 1944, NARA 305897), photographed during the height of the Hungarian deportations.",
+      "catalyst": "Polish courier **Jan Karski** had already brought eyewitness accounts to London and Washington in late 1942, prompting the **December 1942 Allied declaration** condemning Nazi extermination.",
+      "turningPoint": "Between **May and July 1944**, Adolf Eichmann and Hungarian gendarmes deported **437,000 Hungarian Jews to Auschwitz in 54 days**, while **June 1944 USAAF reconnaissance** photographed Birkenau from above.",
+      "impact": "Arguing fastest military victory over Germany was the surest way to halt the killings, Allied commanders declined pleas to bomb the railway lines or gas chambers at Birkenau.",
+      "bridgeToNext": "As Soviet and Western armies closed in on the Reich in winter 1944–45, the SS evacuated surviving prisoners onto lethal winter death marches.",
+      "keyAgents": [
+        "Heinz Salvator Kounio & Primo Levi"
+      ],
+      "keyTerms": [
+        {
+          "term": "Jan Karski",
+          "definition": "Polish underground courier smuggled into the Warsaw Ghetto who delivered firsthand eyewitness testimony to Allied leaders in 1942–43."
+        },
+        {
+          "term": "Collaboration",
+          "definition": "Cooperation by Hungarian officials and gendarmes enabling 437,000 deportations to Auschwitz in under two months in 1944."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_19",
+      "num": 19,
+      "era": "part_4",
+      "date": "Winter 1944 – April 1945",
+      "shortDate": "Jan–Apr 1945",
+      "shortTitle": "Death Marches & Camp Liberation",
+      "title": "Freezing Death Marches, Auschwitz (27 Jan) & Bergen-Belsen (15 Apr)",
+      "specTag": "Enquiry 7 • Liberation Shock",
+      "enquiryQuestion": "What was lost, and what does survivor testimony teach us?",
+      "lessonIndex": 6,
+      "stageNum": 2,
+      "imageUrl": "/images/bergen_belsen_liberation_british_1945.jpg",
+      "imageCaption": "British 11th Armoured Division and RAMC medical personnel entering Bergen-Belsen (15 April 1945), discovering 60,000 starving prisoners and 13,000 unburied dead.",
+      "catalyst": "Refusing to let inmates fall alive into Allied hands, **Heinrich Himmler** forced starving prisoners onto sub-zero **death marches** in winter 1944–45, killing **200,000–250,000 people**.",
+      "turningPoint": "Soviet troops liberated **Auschwitz on 27 January 1945**, American units entered **Buchenwald** and Dachau, and British forces liberated **Bergen-Belsen on 15 April 1945**, broadcast by weeping BBC reporter **Richard Dimbleby**.",
+      "impact": "Discovering 60,000 typhus-stricken survivors beside 13,000 unburied corpses at Belsen confronted the world with undeniable proof of Nazi crimes.",
+      "bridgeToNext": "Liberation ended Nazi terror, yet hundreds of thousands of homeless survivors faced destroyed communities while Allied courts prepared war-crimes trials.",
+      "keyAgents": [
+        "Heinz Salvator Kounio & Primo Levi"
+      ],
+      "keyTerms": [
+        {
+          "term": "Death Marches",
+          "definition": "Forced winter evacuations of starving camp inmates on foot in 1944–1945 in which tens of thousands froze or were shot by SS guards."
+        },
+        {
+          "term": "Holocaust Memorial Day",
+          "definition": "Observed internationally on 27 January, marking the Soviet Red Army’s liberation of Auschwitz-Birkenau in 1945."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_20",
+      "num": 20,
+      "era": "part_4",
+      "date": "November 1945 – July 1947",
+      "shortDate": "1945–Jul 1947",
+      "shortTitle": "Nuremberg Trials & DP Crisis",
+      "title": "The Nuremberg Tribunal, Displaced Persons & Windermere Children",
+      "specTag": "Enquiry 7 • Justice & Aftermath",
+      "enquiryQuestion": "What was lost, and what does survivor testimony teach us?",
+      "lessonIndex": 6,
+      "stageNum": 3,
+      "imageUrl": "/images/nuremberg_trial_defendants_dock_1945.jpg",
+      "imageCaption": "Principal Nazi defendants in the dock at the Palace of Justice during the Nuremberg International Military Tribunal (November 1945).",
+      "catalyst": "Returning survivors often met destroyed towns and hostile neighbours, leaving **over 250,000 Jewish refugees** waiting inside Allied **Displaced Persons (DP) camps**.",
+      "turningPoint": "Beginning in **November 1945**, the Allied **Nuremberg Trials** prosecuted senior Nazi leaders—ruling **'following superior orders'** was no defence—while **300 Windermere Children** healed in Britain and the **July 1947 *SS Exodus*** crisis spotlighted homeless survivors.",
+      "impact": "Twelve leading defendants were sentenced to death for **crimes against humanity**, and global outrage over displaced survivors accelerated the 1948 founding of Israel.",
+      "bridgeToNext": "Beyond prosecuting Nazi leaders, Polish-Jewish jurist Raphael Lemkin fought to give the nameless crime a permanent name in international law.",
+      "keyAgents": [
+        "Heinz Salvator Kounio & Primo Levi"
+      ],
+      "keyTerms": [
+        {
+          "term": "Nuremberg Trials",
+          "definition": "Allied International Military Tribunal (1945–1946) prosecuting leading Nazi officials for war crimes and crimes against humanity."
+        },
+        {
+          "term": "Displaced Persons (DP) Camps",
+          "definition": "Allied refugee camps in Germany, Austria, and Italy housing over 250,000 homeless Holocaust survivors after 1945."
+        },
+        {
+          "term": "Windermere Children",
+          "definition": "Around 300 orphaned child Holocaust survivors brought to England’s Lake District in August 1945 for care and recovery."
+        }
+      ]
+    },
+    {
+      "id": "the_shoah_ms_21",
+      "num": 21,
+      "era": "part_4",
+      "date": "December 1948 & Legacy",
+      "shortDate": "1948 & Legacy",
+      "shortTitle": "UN Genocide Law & Living Memory",
+      "title": "Raphael Lemkin’s Genocide Convention & Bearing Witness",
+      "specTag": "Enquiry 7 • Imperative of Memory",
+      "enquiryQuestion": "What was lost, and what does survivor testimony teach us?",
+      "lessonIndex": 6,
+      "stageNum": 5,
+      "imageUrl": "/images/the_shoah/shoah_l7_b4_berlin_stelae_corridor_clean.jpg",
+      "imageCaption": "Berlin’s Memorial to the Murdered Jews of Europe (2,711 concrete stelae): Honouring the six million Jewish victims—including 1.5 million children—murdered in the Shoah.",
+      "catalyst": "The Shoah murdered **six million Jewish people**—two-thirds of European Jewry, including **1.5 million children**—and shattered a thousand-year Yiddish and Sephardic civilisation.",
+      "turningPoint": "Polish-Jewish legal scholar **Raphael Lemkin**—who lost 49 relatives—coined the word **'genocide'**, driving adoption of the **United Nations Genocide Convention** in **December 1948**.",
+      "impact": "Anchored by eyewitness writers **Primo Levi** (*If This Is a Man*) and **Elie Wiesel** (*Night*), Holocaust remembrance calls on every generation to confront antisemitism and defend human dignity.",
+      "bridgeToNext": "Preserving eyewitness testimony and international human-rights law ensures the six million individuals murdered in the Shoah are remembered as human lives, never mere statistics.",
+      "keyAgents": [
+        "Heinz Salvator Kounio & Primo Levi"
+      ],
+      "keyTerms": [
+        {
+          "term": "Genocide",
+          "definition": "Legal term coined by Raphael Lemkin in 1944 for acts committed with intent to destroy, in whole or in part, a national, ethnic, racial, or religious group."
+        },
+        {
+          "term": "Primo Levi",
+          "definition": "Italian-Jewish chemist and Auschwitz survivor whose 1947 memoir If This Is a Man became a cornerstone of Holocaust testimony."
+        }
+      ]
+    }
+  ]
+}

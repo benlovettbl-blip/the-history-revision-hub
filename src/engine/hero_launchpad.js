@@ -384,16 +384,8 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
     )
     .join('');
 
-  // 5. Build Games, Quiz & Timeline Panel
-  const hasTimeline = Boolean(
-    cfg.timelineUrl ||
-      unitId === 'cme_new' ||
-      unitId === 'edexcel_medicine' ||
-      unitId === 'usa' ||
-      unitId === 'weimar_nazi_germany' ||
-      unitId === 'eee' ||
-      (Array.isArray(unitData?.timeline) && unitData.timeline.length > 0),
-  );
+  // 5. Build Games, Quiz & Timeline Panel (enabled across all 26 active curriculum units)
+  const hasTimeline = Boolean(unitId);
   const individualsCount = Array.isArray(unitData?.key_individuals) ? unitData.key_individuals.length : 0;
 
   const hasExamHub = Boolean(
@@ -592,20 +584,11 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
 
             ${
               hasTimeline
-                ? cfg.timelineUrl
-                  ? `
-                <a href="${cfg.timelineUrl}" target="_blank" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 13px 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left; text-decoration: none;">
-                  <div style="width: 38px; height: 38px; border-radius: 8px; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                  <div>
-                    <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">Interactive Timeline</div>
-                    <div style="font-size: 0.73rem; color: #64748b;">Visual chronological slider</div>
-                  </div>
-                </a>`
-                  : `
+                ? `
                 <button type="button" onclick="window.switchView && window.switchView('timeline', '${unitId}')" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 13px 15px; display: flex; align-items: center; gap: 12px; cursor: pointer; text-align: left;">
                   <div style="width: 38px; height: 38px; border-radius: 8px; background: #ecfdf5; color: #059669; display: flex; align-items: center; justify-content: center; font-size: 1.05rem; flex-shrink: 0;"><i class="fa-solid fa-clock-rotate-left"></i></div>
                   <div>
-                    <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">Living Timeline</div>
+                    <div style="font-size: 0.86rem; font-weight: 800; color: #0f172a;">${isKs2 ? 'Interactive Chronology' : 'Living Timeline'}</div>
                     <div style="font-size: 0.73rem; color: #64748b;">Explore turning-point milestones</div>
                   </div>
                 </button>`

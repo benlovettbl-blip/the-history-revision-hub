@@ -1,0 +1,568 @@
+{
+  "unitId": "australia",
+  "schemaVersion": "v1-curated-living-timeline",
+  "courseTitle": "Colonial Australia: First Nations, Colonisation & Resistance (1770–1901)",
+  "eyebrow": "Key Stage 3 History • Colonial Australia Enquiry",
+  "beatLabels": {
+    "catalyst": "1. Context & Trigger",
+    "turningPoint": "2. Key Turning Point",
+    "impact": "3. Historical Consequence",
+    "bridgeBadge": "🔗 Leads To Next"
+  },
+  "streamFilters": [],
+  "eras": [
+    {
+      "id": "part_1",
+      "code": "Part 1",
+      "badge": "PART 1 • PRE-1770–1787",
+      "pillLabel": "Part 1: Country, Cook & Fleet",
+      "title": "Part 1: First Nations Custodianship, Cook’s Claim & The First Fleet (Pre-1770–1787)",
+      "color": "#1e3a8a",
+      "accent": "#2563eb",
+      "softBg": "#eff6ff",
+      "softBorder": "#bfdbfe"
+    },
+    {
+      "id": "part_2",
+      "code": "Part 2",
+      "badge": "PART 2 • 1788–1838",
+      "pillLabel": "Part 2: Sydney & Frontier Wars",
+      "title": "Part 2: Sydney Cove, Pemulwuy’s Resistance & The Black War (1788–1838)",
+      "color": "#991b1b",
+      "accent": "#dc2626",
+      "softBg": "#fef2f2",
+      "softBorder": "#fecaca"
+    },
+    {
+      "id": "part_3",
+      "code": "Part 3",
+      "badge": "PART 3 • 1851–1992",
+      "pillLabel": "Part 3: Gold, Eureka & Mabo",
+      "title": "Part 3: The Gold Rush, Eureka Democracy & Enduring Reckoning (1851–1992)",
+      "color": "#0f766e",
+      "accent": "#0d9488",
+      "softBg": "#f0fdfa",
+      "softBorder": "#99f6e4"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "australia_ms_1",
+      "num": 1,
+      "era": "part_1",
+      "date": "65,000+ Years – Pre-1770",
+      "shortDate": "Pre-1770",
+      "shortTitle": "First Nations Custodianship",
+      "title": "65,000 Years of First Nations Sovereignty, Songlines & Fire-Stick Farming",
+      "specTag": "World’s Oldest Continuous Culture",
+      "enquiryQuestion": "How did First Nations peoples care for country for over 65,000 years?",
+      "lessonIndex": 2,
+      "stageNum": 1,
+      "imageUrl": "/images/ks3_aus/aus_l3_b0_eora_rock_engraving_sydney.jpg",
+      "imageCaption": "Ancient Eora sandstone rock engraving on the Sydney coast (Bondi, Gadigal/Birrabirragal Country): Over 250 First Nations cared for ancestral Country across more than 65,000 years.",
+      "catalyst": "Across more than **65,000 years** before European arrival, over **250 distinct First Nations** inhabited sovereign territories spanning every ecosystem of the Australian continent.",
+      "turningPoint": "Communities cared for Country through **seasonal fire-stick farming**—burning dry scrub to prevent catastrophic bushfires and regenerate grazing—guided by sacred **Songlines** and customary law.",
+      "impact": "Sustained thriving populations, sustainable marine fisheries, and deep spiritual kinship that completely contradicted later European claims of an \"uncultivated\" wilderness.",
+      "bridgeToNext": "In **1768**, the British Admiralty dispatched Lieutenant **James Cook** into the Pacific carrying secret orders to locate and claim the Great Southern Land.",
+      "keyAgents": [
+        "Woollarawarre Bennelong",
+        "Pemulwuy"
+      ],
+      "keyTerms": [
+        {
+          "term": "Custodianship",
+          "definition": "The sacred, inherited duty to care for, protect, and sustain ancestral Country, waterways, and law for future generations."
+        },
+        {
+          "term": "Songlines",
+          "definition": "Sacred ancestral tracks across Australia linking creation stories, customary law, navigation routes, and clan boundaries."
+        },
+        {
+          "term": "Sovereignty",
+          "definition": "Supreme, self-governing authority exercised by First Nations peoples over their ancestral lands and communities."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_2",
+      "num": 2,
+      "era": "part_1",
+      "date": "1768 – April 1770",
+      "shortDate": "1768–Apr 1770",
+      "shortTitle": "Tupaia & HMS Endeavour",
+      "title": "Secret Admiralty Orders & Tupaia’s Polynesian Star Navigation",
+      "specTag": "Indigenous Pacific Navigation & Imperial Ambition",
+      "enquiryQuestion": "How did Tupaia’s star navigation and chart guide Cook’s Pacific voyage?",
+      "lessonIndex": 0,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_aus/aus_l1_b1_tupaia_maori_banks_exchange_1769.jpg",
+      "imageCaption": "Watercolour painted c. 1769 aboard HMS Endeavour by Raʻiātean master navigator Tupaia showing a Māori man and Joseph Banks exchanging crayfish for barkcloth (British Library Add MS 15508).",
+      "mapUrl": "/images/tupaia_map_1769.jpg",
+      "mapCaption": "Tupaia’s Chart of the Pacific (c. 1769, British Library Add MS 21593 C): Mapping dozens of islands across 3,000 miles of Oceania without European instruments.",
+      "catalyst": "Sailing aboard **HMS Endeavour** in 1768 to observe the transit of Venus in Tahiti, **James Cook** carried locked **secret Admiralty orders** to search south for *Terra Australis*.",
+      "turningPoint": "In Tahiti Cook enlisted **Tupaia**, a Raʻiātean high priest and master navigator who read stars, ocean swells, and bird paths, charted **over 130 Pacific islands**, and mediated with Māori in New Zealand.",
+      "impact": "Proved Oceania had been expertly mapped and navigated by Indigenous voyagers for centuries before guiding *Endeavour* westward toward eastern Australia.",
+      "bridgeToNext": "In **late April 1770**, *Endeavour* dropped anchor inside Kamay (**Botany Bay**), triggering an armed shoreline confrontation with **Gweagal** defenders.",
+      "keyAgents": [
+        "Tupaia",
+        "Captain James Cook"
+      ],
+      "keyTerms": [
+        {
+          "term": "Tupaia",
+          "definition": "Raʻiātean Arioi high priest and master star navigator whose Pacific chart and translation guided HMS Endeavour."
+        },
+        {
+          "term": "Admiralty",
+          "definition": "British naval department whose locked 1768 instructions ordered Cook to seek Terra Australis with native consent."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_3",
+      "num": 3,
+      "era": "part_1",
+      "date": "29 April 1770",
+      "shortDate": "29 Apr 1770",
+      "shortTitle": "Gweagal Defence at Botany Bay",
+      "title": "Two Gweagal Warriors Confront Cook’s Landing at Kamay (Botany Bay)",
+      "specTag": "Sovereign Boundary Defence vs Musket Fire",
+      "enquiryQuestion": "What happened when Gweagal warriors met Cook’s boats at Botany Bay?",
+      "lessonIndex": 0,
+      "stageNum": 3,
+      "imageUrl": "/images/ks3_aus/aus_l1_b2_gweagal_bark_shield_botany_bay_1770.jpg",
+      "imageCaption": "Pierced Gweagal red-mangrove bark shield linked to Cook’s April 1770 armed landing at Kamay (Botany Bay), held in the British Museum (Oc1978,Q.839).",
+      "mapUrl": "/images/australia/maps/aus_map_l2_cook_first_fleet_sydney_cove_1770_1792.svg",
+      "mapCaption": "Reference Map: Cook’s 1770 East Coast Claim at Kamay (Botany Bay) and Possession Island alongside the 1787–1788 First Fleet route.",
+      "catalyst": "When *Endeavour’s* pinnace rowed toward the shore of **Kamay (Botany Bay)** on **29 April 1770**, the landing party entered sacred **Dharawal** Country without permission.",
+      "turningPoint": "**Two Gweagal warriors** marched to the water’s edge holding bark shields and spears, shouting warnings to forbid entry; Cook answered with **musket shot**, wounding one warrior in the leg.",
+      "impact": "Forced the Gweagal behind coastal dunes and set an ominous colonial pattern: Indigenous defence of sovereign boundaries was met immediately with British gunfire.",
+      "bridgeToNext": "Sailing north for four months along reef-lined waters, Cook landed on **Possession Island in August 1770** to claim the entire eastern coast.",
+      "keyAgents": [
+        "Captain James Cook"
+      ],
+      "keyTerms": [
+        {
+          "term": "Sovereignty",
+          "definition": "Ancestral authority over Country defended by Gweagal warriors when Cook’s boats approached Kamay in April 1770."
+        },
+        {
+          "term": "Navigation",
+          "definition": "Maritime charting conducted by Cook along 2,000 miles of Australia’s eastern coastline between April and August 1770."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_4",
+      "num": 4,
+      "era": "part_1",
+      "date": "22 August 1770",
+      "shortDate": "22 Aug 1770",
+      "shortTitle": "Cook’s Claim & Terra Nullius",
+      "title": "Cook’s Possession Island Claim & The Legal Fiction of Terra Nullius",
+      "specTag": "Broken Admiralty Consent Orders",
+      "enquiryQuestion": "How did the claim of terra nullius strip First Nations of land rights?",
+      "lessonIndex": 0,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_aus/aus_l1_s3_cook_endeavour_journal_august_1770.jpg",
+      "imageCaption": "Holograph page (August 1770) from Lieutenant James Cook’s Endeavour journal recording his claim of eastern Australia at Possession Island (National Library of Australia MS 1).",
+      "mapUrl": "/images/australia/maps/aus_map_l2_cook_first_fleet_sydney_cove_1770_1792.svg",
+      "mapCaption": "Reference Map: Possession Island in the Torres Strait (August 1770) and the eastern Australian claim renamed New South Wales.",
+      "catalyst": "Cook’s secret 1768 Admiralty instructions explicitly ordered him to take possession of inhabited territories **only \"with the Consent of the Natives\"**.",
+      "turningPoint": "On **22 August 1770** at **Possession Island** off Cape York, Cook hoisted the Union Jack and claimed eastern Australia (**New South Wales**) for King George III **without Indigenous consent or treaties**.",
+      "impact": "Relying on **Sir William Blackstone’s** European property rules requiring iron ploughs and stone towns, Britain treated Australia as **terra nullius** (\"nobody’s land\"), initiating two centuries of dispossession.",
+      "bridgeToNext": "Thirteen years later, **losing the American War of Independence (1783)** gave London an urgent penal motive to colonise New South Wales.",
+      "keyAgents": [
+        "Captain James Cook",
+        "Sir William Blackstone"
+      ],
+      "keyTerms": [
+        {
+          "term": "Terra Nullius",
+          "definition": "Latin legal fiction meaning \"land belonging to no one\", used by Britain to seize Australia without treaties or compensation."
+        },
+        {
+          "term": "Dispossession",
+          "definition": "The stripping of First Nations peoples’ legal and physical access to their ancestral Country without consent."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_5",
+      "num": 5,
+      "era": "part_1",
+      "date": "1783 – May 1787",
+      "shortDate": "1783–May 1787",
+      "shortTitle": "Prison Hulks & First Fleet",
+      "title": "Thames Prison Hulks & Departure of the First Fleet from Portsmouth",
+      "specTag": "Bloody Code Crisis & 15,000-Mile Convoy",
+      "enquiryQuestion": "How did Arthur Phillip keep convict deaths low on the First Fleet voyage?",
+      "lessonIndex": 1,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_aus/aus_l2_b1_first_fleet_portsmouth_bradley_1787.jpg",
+      "imageCaption": "Lieutenant William Bradley’s 13 May 1787 watercolour of HMS Sirius, HMS Supply, and the First Fleet departing Portsmouth past the Needles (State Library of NSW Safe 1/14).",
+      "mapUrl": "/images/australia/maps/aus_map_l2_cook_first_fleet_sydney_cove_1770_1792.svg",
+      "mapCaption": "Reference Map: The 15,000-mile First Fleet voyage from Portsmouth via Rio de Janeiro and Cape Town to New South Wales (1787–1788).",
+      "catalyst": "American independence in **1783** closed Britain’s transatlantic convict outlet just as harsh **Bloody Code** sentences packed thousands of offenders into typhus-ridden **Thames and Portsmouth prison hulks**.",
+      "turningPoint": "On **13 May 1787**, **Captain Arthur Phillip** sailed from Portsmouth commanding **11 First Fleet ships** carrying roughly **750 convicts and 250 Royal Marines** across **15,000 miles**.",
+      "impact": "Enforcing clean water, fresh supplies at Rio and Cape Town, and deck ventilation, Phillip completed the eight-month crossing with **under fifty deaths**.",
+      "bridgeToNext": "Reaching Australia in **January 1788**, Phillip rejected exposed Botany Bay to plant Britain’s penal colony inside **Port Jackson**.",
+      "keyAgents": [
+        "Governor Arthur Phillip"
+      ],
+      "keyTerms": [
+        {
+          "term": "Prison Hulk",
+          "definition": "Decommissioned, dismasted warship moored in British rivers and harbours to hold overflowing convict populations."
+        },
+        {
+          "term": "Bloody Code",
+          "definition": "Harsh eighteenth-century British criminal code prescribing death or transportation for over 200 mostly minor property offences."
+        },
+        {
+          "term": "Transportation",
+          "definition": "Judicial sentence exiling convicted offenders overseas to perform forced labour in a penal colony."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_6",
+      "num": 6,
+      "era": "part_2",
+      "date": "26 January 1788 – 1790",
+      "shortDate": "26 Jan 1788",
+      "shortTitle": "Sydney Cove & Starvation Years",
+      "title": "Founding Sydney Cove on Gadigal Land & The Starvation Years",
+      "specTag": "Penal Settlement & Ration Crisis",
+      "enquiryQuestion": "Why did the new penal colony nearly starve during its first two years?",
+      "lessonIndex": 1,
+      "stageNum": 3,
+      "imageUrl": "/images/ks3_aus/aus_l2_b3_sydney_cove_port_jackson_bradley_1788.jpg",
+      "imageCaption": "William Bradley’s 1788 watercolour view of Sydney Cove, Port Jackson (State Library of NSW): Isolated 15,000 miles from Britain, the infant settlement nearly starved between 1788 and 1790.",
+      "mapUrl": "/images/francis_fowkes_sydney_cove_1788.jpg",
+      "mapCaption": "Francis Fowkes, Convict Sketch & Plan of the Settlement at Sydney Cove, Port Jackson (16 April 1788, State Library of NSW).",
+      "catalyst": "Finding Botany Bay shallow, swampy, and exposed to surf, **Governor Phillip** scouted eight miles north into deep-water **Port Jackson** on Gadigal Country.",
+      "turningPoint": "Raising the British flag at **Sydney Cove on 26 January 1788**, the colony soon plunged into the **1788–1790 Starvation Years** as sandy soil, snapping hoes, and the iceberg wreck of **HMS Guardian** ruined supplies.",
+      "impact": "Weekly rations were slashed to subsistence levels and 200 convicts were rushed to Norfolk Island, pushing the isolated settlement to the brink of collapse.",
+      "bridgeToNext": "Fifteen months after British landing, an apocalyptic **April 1789 smallpox epidemic** tore through the Eora clans around Port Jackson.",
+      "keyAgents": [
+        "Governor Arthur Phillip"
+      ],
+      "keyTerms": [
+        {
+          "term": "Rations",
+          "definition": "Strictly measured weekly allowances of salted meat and flour cut to survival levels during the 1788–1790 food crisis."
+        },
+        {
+          "term": "Transportation",
+          "definition": "Forced exile of urban British convicts who initially lacked farming tools and skills suited to Sydney’s sandstone soils."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_7",
+      "num": 7,
+      "era": "part_2",
+      "date": "April 1789 – 1795",
+      "shortDate": "Apr 1789",
+      "shortTitle": "Smallpox & Bennelong’s Dilemma",
+      "title": "The 1789 Gal-galla Smallpox Catastrophe & Woollarawarre Bennelong",
+      "specTag": "Demographic Shock & Cultural Intermediary",
+      "enquiryQuestion": "Why did Bennelong end up trapped between British and Indigenous worlds?",
+      "lessonIndex": 2,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_aus/aus_l3_s2_bennelong_neagle_1798.jpg",
+      "imageCaption": "James Neagle, Portrait of Ben-nil-long in his European Dress (1798): Captured on Phillip’s orders in 1789, Wangal diplomat Woollarawarre Bennelong travelled to London in 1793.",
+      "catalyst": "With zero biological immunity to Eurasian crowd diseases, Sydney’s **Eora** clans were struck in **April 1789** by a devastating outbreak of **gal-galla (smallpox)**.",
+      "turningPoint": "Smallpox killed **50% to 70% of the Eora population** within weeks, while Phillip kidnapped Wangal man **Woollarawarre Bennelong** (November 1789) to serve as translator—later taking him to **London in 1793**.",
+      "impact": "Massive loss of elders fractured clan Songlines just as British farms expanded, leaving Bennelong tragically alienated between unyielding British rule and dispossessed kin.",
+      "bridgeToNext": "To make the starving penal colony self-sufficient, Phillip paired brutal **convict lash discipline** with **30-acre emancipist farms** inland.",
+      "keyAgents": [
+        "Woollarawarre Bennelong",
+        "Governor Arthur Phillip"
+      ],
+      "keyTerms": [
+        {
+          "term": "Epidemic",
+          "definition": "Rapid infectious outbreak—specifically the April 1789 gal-galla smallpox catastrophe that killed up to 70% of Sydney’s Eora people."
+        },
+        {
+          "term": "Intermediary",
+          "definition": "A diplomatic go-between and translator—such as Woollarawarre Bennelong—caught between colonisers and First Nations clans."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_8",
+      "num": 8,
+      "era": "part_2",
+      "date": "1789–1792",
+      "shortDate": "1789–1792",
+      "shortTitle": "Convict Lash & Emancipists",
+      "title": "Convict Chain Gangs, The Cat-o’-Nine-Tails & Emancipist Land Grants",
+      "specTag": "Penal Terror & Settler Farming",
+      "enquiryQuestion": "How did Phillip combine harsh punishments with land grants for convicts?",
+      "lessonIndex": 1,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_aus/aus_l2_b4_convict_gang_sydney_earle.jpg",
+      "imageCaption": "Augustus Earle, A Government Jail Gang, Sydney, N.S.W. (1830, National Library of Australia): Convict gangs quarried sandstone under the lash, while emancipists like James Ruse earned farms.",
+      "catalyst": "Running New South Wales as an open-air prison, magistrates punished theft or absconding with **50 to 300 lashes** of the knotted **cat-o’-nine-tails**.",
+      "turningPoint": "Recognising that reward spurred food output, **Governor Phillip** granted **30-acre farms** to pardoned **emancipists**—led by former convict **James Ruse**, who grew self-sustaining wheat at Rose Hill (Parramatta) by **1791**.",
+      "impact": "Secured colonial survival through agriculture, yet every new farm cleared inland stripped **Dharug and Bidjigal** clans of hunting grounds and yam beds.",
+      "bridgeToNext": "Defending Bidjigal and Dharug Country against expanding Parramatta and Hawkesbury farms, warrior **Pemulwuy** launched twelve years of guerrilla war.",
+      "keyAgents": [
+        "Governor Arthur Phillip"
+      ],
+      "keyTerms": [
+        {
+          "term": "Emancipist",
+          "definition": "A convict who completed their sentence or earned a pardon, regaining freedom and eligibility for colonial land grants."
+        },
+        {
+          "term": "Cat-o'-Nine-Tails",
+          "definition": "Multi-tailed knotted rope whip used by colonial guards to inflict severe corporal punishment on convicts."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_9",
+      "num": 9,
+      "era": "part_2",
+      "date": "1790 – June 1802",
+      "shortDate": "1790–1802",
+      "shortTitle": "Pemulwuy & Hawkesbury War",
+      "title": "Pemulwuy’s Guerrilla Resistance, Parramatta & The Hawkesbury War",
+      "specTag": "Twelve-Year Sydney Basin Frontier War",
+      "enquiryQuestion": "How did Pemulwuy lead Bidjigal warriors against British farms by 1797?",
+      "lessonIndex": 2,
+      "stageNum": 4,
+      "imageUrl": "/images/ks3_aus/aus_l3_b3_aborigines_spears_clash_lycett.jpg",
+      "imageCaption": "Joseph Lycett’s c. 1820 watercolour of Aboriginal warriors defending a New South Wales shoreline with barbed spears (National Library of Australia).",
+      "mapUrl": "/images/australia/maps/aus_map_l2_cook_first_fleet_sydney_cove_1770_1792.svg",
+      "mapCaption": "Reference Map: Parramatta and the fertile Hawkesbury River frontier northwest of Sydney Cove.",
+      "catalyst": "Settler farms clearing fertile **Parramatta and Hawkesbury River** riverbanks destroyed Dharug yam beds and blocked Indigenous access to freshwater fishing grounds.",
+      "turningPoint": "Bidjigal cleverman **Pemulwuy** united clans in guerrilla raids on crops and cattle, leading **100 warriors** at the **1797 Battle of Parramatta** and escaping hospital in leg-irons before Governor King issued **1801 shoot-on-sight** orders.",
+      "impact": "Assassinated by musket ambush in **June 1802**—with his severed head shipped to London—Pemulwuy shattered the colonial myth of peaceful settlement.",
+      "bridgeToNext": "Over the next two decades, booming British textile demand drove **wealthy Merino squatters** across the Blue Mountains and into **Van Diemen’s Land**.",
+      "keyAgents": [
+        "Pemulwuy"
+      ],
+      "keyTerms": [
+        {
+          "term": "Guerrilla Warfare",
+          "definition": "Fast-moving ambushes, crop-burning raids, and tactical retreats waged by Pemulwuy’s warriors against musket-armed troops."
+        },
+        {
+          "term": "Frontier War",
+          "definition": "Protracted armed conflict fought across Australia as First Nations clans defended Country against colonial land seizures."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_10",
+      "num": 10,
+      "era": "part_2",
+      "date": "1820–1830",
+      "shortDate": "1820s–1830",
+      "shortTitle": "Squatters & Merino Wool Boom",
+      "title": "John Macarthur, Merino Sheep & The Great Squatter Land Grab",
+      "specTag": "Pastoral Capitalism & Inland Invasion",
+      "enquiryQuestion": "How did the Merino wool boom drive squatters onto Indigenous lands?",
+      "lessonIndex": 3,
+      "stageNum": 4,
+      "imageUrl": "/images/upgraded/ks3-empire-gw/aus_l4_blk3_macarthur_estate_parramatta_lycett.jpg",
+      "imageCaption": "Joseph Lycett, Residence of John Macarthur Esq. near Parramatta, N.S.W. (c. 1824, National Library of Australia): Merino wool exports drove squatters across inland grasslands.",
+      "mapUrl": "/images/australia/maps/aus_map_l4_frontier_wars_tasmania_gold_rush_1803_1854.svg",
+      "mapCaption": "Reference Map: Inland pastoral squatter expansion across Bathurst and New South Wales alongside Tasmania and Victoria (1803–1854).",
+      "catalyst": "Pioneered by pastoralists like **John Macarthur**, fine Australian **Merino fleece** fed booming **Yorkshire woollen mills** during Britain’s Industrial Revolution.",
+      "turningPoint": "Throughout the **1820s**, wealthy **squatters** drove millions of sheep beyond official colonial limits across inland grasslands, fencing creeks and seizing sacred waterholes without treaties.",
+      "impact": "Hard-hooved sheep trampled native **yam daisy** staple crops and drove off kangaroos, forcing starving mainland clans into desperate frontier reprisals.",
+      "bridgeToNext": "Simultaneously across Bass Strait in **Van Diemen’s Land (Tasmania)**, pastoral invasion triggered **martial law** and the **Black War (1828–1835)**.",
+      "keyAgents": [
+        "John Macarthur"
+      ],
+      "keyTerms": [
+        {
+          "term": "Squatter",
+          "definition": "Wealthy colonial pastoralist who occupied vast tracts of Indigenous and Crown land beyond official boundaries to graze sheep."
+        },
+        {
+          "term": "Pastoralism",
+          "definition": "Large-scale livestock grazing—especially Merino wool production—that drove rapid inland dispossession across Australia."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_11",
+      "num": 11,
+      "era": "part_2",
+      "date": "1828–1835",
+      "shortDate": "1828–1835",
+      "shortTitle": "Black War & Wybalenna Exile",
+      "title": "Tasmania’s Black War, The 1830 Black Line & Truganini’s Exile",
+      "specTag": "Martial Law & Betrayed Flinders Island Truce",
+      "enquiryQuestion": "What happened to the 200 Palawa people exiled to Wybalenna camp?",
+      "lessonIndex": 3,
+      "stageNum": 3,
+      "imageUrl": "/images/truganini_portrait_1835.jpg",
+      "imageCaption": "Hobart studio portrait of Nuenonne envoy Truganini wearing a traditional shell necklace (Charles Woolley, 1866, National Library of Australia).",
+      "mapUrl": "/images/australia/maps/aus_map_l4_frontier_wars_tasmania_gold_rush_1803_1854.svg",
+      "mapCaption": "Reference Map: Van Diemen’s Land (Tasmania), the 1830 Black Line cordon, and forced Palawa exile to Flinders Island.",
+      "catalyst": "Following the **1804 Risdon Cove** shootings and pastoral seizure of Tasmanian Midlands, fierce **Palawa** guerrilla resistance prompted **Governor George Arthur** to declare **martial law in 1828**.",
+      "turningPoint": "After Arthur’s **£30,000, 2,200-man \"Black Line\" (October 1830)** captured only two Palawa, Nuenonne envoy **Truganini** aided **George Augustus Robinson’s** truce—only for **200 survivors** to be exiled to **Wybalenna** on Flinders Island.",
+      "impact": "Respiratory disease, cold, and cultural trauma killed **over 150 exiled Palawa** within a decade, making Truganini an enduring symbol of Palawa survival and colonial betrayal.",
+      "bridgeToNext": "Back on the mainland frontier in **June 1838**, an unprovoked slaughter at **Myall Creek** tested whether British law would ever punish white killers.",
+      "keyAgents": [
+        "Truganini"
+      ],
+      "keyTerms": [
+        {
+          "term": "Martial Law",
+          "definition": "Military rule declared by Governor Arthur in 1828 authorising troops and settlers to shoot Palawa people on sight."
+        },
+        {
+          "term": "Exile",
+          "definition": "Forced removal of 200 surviving Palawa people from mainland Tasmania to the windswept Wybalenna camp on Flinders Island."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_12",
+      "num": 12,
+      "era": "part_2",
+      "date": "June – December 1838",
+      "shortDate": "Jun–Dec 1838",
+      "shortTitle": "Myall Creek Massacre & Trial",
+      "title": "The Myall Creek Massacre & Landmark December 1838 Hangings",
+      "specTag": "Unprecedented Verdict & Settler Code of Silence",
+      "enquiryQuestion": "Why was the 1838 Myall Creek murder verdict a landmark in colonial law?",
+      "lessonIndex": 3,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_aus/aus_l4_b4_myall_creek_massacre_1838_engraving.jpg",
+      "imageCaption": "Hablot Knight Browne (\"Phiz\"), 1841 engraving in The Chronicles of Crime depicting mounted white stockmen roping unarmed Wirrayaraay families at Myall Creek in June 1838.",
+      "mapUrl": "/images/australia/maps/aus_map_l4_frontier_wars_tasmania_gold_rush_1803_1854.svg",
+      "mapCaption": "Reference Map: Myall Creek Station (June 1838) in northern New South Wales.",
+      "catalyst": "On **10 June 1838**, eleven white stockmen rode into a peaceful station camp at **Myall Creek**, roped together **28 unarmed Wirrayaraay women, children, and elders**, murdered them, and burned their bodies.",
+      "turningPoint": "Station manager William Hobbs reported the crime, and **Governor George Gipps** pursued two Sydney Supreme Court trials that convicted and **publicly hanged seven perpetrators in December 1838**.",
+      "impact": "Marked the rare occasion white colonists were executed for murdering Aboriginal people—provoking furious **squatter backlash** that drove later poisonings and massacres behind rural secrecy.",
+      "bridgeToNext": "Thirteen years later in **1851**, alluvial **gold discoveries** at Bathurst, Ballarat, and Bendigo transformed Australia’s population and politics.",
+      "keyAgents": [
+        "John Macarthur"
+      ],
+      "keyTerms": [
+        {
+          "term": "Massacre",
+          "definition": "Deliberate slaughter of unarmed people—such as the 28 Wirrayaraay elders, women, and children murdered at Myall Creek in 1838."
+        },
+        {
+          "term": "Frontier War",
+          "definition": "Mainland violence that grew increasingly covert after white stockmen were hanged following the 1838 Myall Creek trials."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_13",
+      "num": 13,
+      "era": "part_3",
+      "date": "1851–1854",
+      "shortDate": "1851–1854",
+      "shortTitle": "Gold Rush & Licence Hunts",
+      "title": "Ballarat & Bendigo Gold Fever & Armed 30-Shilling Licence Hunts",
+      "specTag": "Mass Migration & Taxation Without Votes",
+      "enquiryQuestion": "Why did the 30-shilling monthly licence fee anger Ballarat gold diggers?",
+      "lessonIndex": 4,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_aus/aus_l5_b1_licence_inspected_st_gill_1852.jpg",
+      "imageCaption": "S. T. Gill, License Inspected, Forrest Creek (1852 lithograph, British Museum 1969,0614.32): Armed Victorian police conducting hated \"digger hunts\" for 30-shilling monthly licences.",
+      "mapUrl": "/images/australia/maps/aus_map_l4_frontier_wars_tasmania_gold_rush_1803_1854.svg",
+      "mapCaption": "Reference Map: Bathurst (1851) and the Victorian goldfields of Ballarat and Bendigo.",
+      "catalyst": "Following **Edward Hargraves’s February 1851** Bathurst gold strike and richer finds at **Ballarat and Bendigo**, **500,000 migrants** tripled Australia’s colonial population to **1.2 million** inside a decade.",
+      "turningPoint": "Victorian officials imposed a compulsory **30-shilling monthly mining licence** whether diggers struck gold or not, sending armed police on humiliating **\"digger hunts\"** to chain unlicensed miners to logs.",
+      "impact": "Outraged at paying heavy taxes while denied the vote, **10,000 diggers** rallied on **Bakery Hill** under the **Ballarat Reform League** to burn their licences.",
+      "bridgeToNext": "Refusing to back down, Ballarat miners built a timber stockade beneath the **Southern Cross flag**, clashing with British redcoats on **3 December 1854**.",
+      "keyAgents": [
+        "Ballarat Reform League (Eureka Stockade)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Gold Rush",
+          "definition": "Massive post-1851 influx of prospectors from Britain, Europe, America, and China that tripled Australia’s colonial population."
+        },
+        {
+          "term": "Suffrage",
+          "definition": "The constitutional right to vote in parliamentary elections, demanded by taxed gold diggers at Bakery Hill."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_14",
+      "num": 14,
+      "era": "part_3",
+      "date": "3 December 1854",
+      "shortDate": "3 Dec 1854",
+      "shortTitle": "The Eureka Stockade",
+      "title": "Oath of the Southern Cross & Dawn Assault at Eureka Stockade",
+      "specTag": "Goldfields Rebellion Wins Male Democracy",
+      "enquiryQuestion": "How did the 1854 Eureka Stockade clash lead to democratic voting reforms?",
+      "lessonIndex": 4,
+      "stageNum": 3,
+      "imageUrl": "/images/ks3_aus/aus_l5_b2_eureka_flag_southern_cross_1854.jpg",
+      "imageCaption": "Original conserved 1854 wool-and-cotton Eureka Flag (Flag of the Southern Cross) flown above Ballarat’s Eureka Stockade on 3 December 1854 (Art Gallery of Ballarat).",
+      "mapUrl": "/images/australia/maps/aus_map_l4_frontier_wars_tasmania_gold_rush_1803_1854.svg",
+      "mapCaption": "Reference Map: Site of the December 1854 Eureka Stockade uprising at Ballarat, Victoria.",
+      "catalyst": "Led by **Peter Lalor**, Ballarat diggers swore allegiance beneath the blue-and-white **Southern Cross flag**: *\"We swear by the Southern Cross to stand truly by each other\"* in defence of civil rights.",
+      "turningPoint": "At dawn on **3 December 1854**, nearly **300 British soldiers and police** stormed the wooden **Eureka Stockade** in a brutal **15-minute battle**, killing at least **22 diggers** and six soldiers.",
+      "impact": "Melbourne juries **acquitted all thirteen treason defendants**, forcing Victoria to abolish the monthly licence and introduce a £1 Miner’s Right, the **secret ballot**, and **colonial male suffrage**.",
+      "bridgeToNext": "Yet settler democracy carried deep racial exclusions—targeting **Chinese miners** in 1901 and shutting out **First Nations peoples** until the 1938–1992 civil rights struggle.",
+      "keyAgents": [
+        "Ballarat Reform League (Eureka Stockade)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Eureka Stockade",
+          "definition": "December 1854 armed rebellion of Ballarat gold miners under the Southern Cross flag that catalyzed Australian electoral reform."
+        },
+        {
+          "term": "Suffrage",
+          "definition": "Voting rights won by white male colonists in Victoria after Eureka, while First Nations and Chinese communities faced exclusion."
+        }
+      ]
+    },
+    {
+      "id": "australia_ms_15",
+      "num": 15,
+      "era": "part_3",
+      "date": "1861 – 1901 – 1992",
+      "shortDate": "1901–1992",
+      "shortTitle": "White Australia, 1938 & Mabo",
+      "title": "1901 White Australia, The 1938 Day of Mourning & The 1992 Mabo Ruling",
+      "specTag": "Racial Exclusion to Overturning Terra Nullius",
+      "enquiryQuestion": "How did the 1992 Mabo ruling overturn the myth of terra nullius?",
+      "lessonIndex": 4,
+      "stageNum": 5,
+      "imageUrl": "/images/upgraded/ks3-empire-gw/aus_l5_srce_day_of_mourning_hall_1938.jpg",
+      "imageCaption": "Aborigines Progressive Association delegates outside the Australian Hall, Sydney, on 26 January 1938 proclaiming \"Day of Mourning\" and \"Aborigines Claim Citizen Rights!\" (State Library of NSW).",
+      "catalyst": "Violent goldfield attacks on **40,000 Chinese miners**—culminating at **Lambing Flat (1861)**—led newly federated Australia to pass the **1901 Immigration Restriction Act** while excluding Indigenous people and removing **Stolen Generations** children.",
+      "turningPoint": "First Nations leaders staged the **26 January 1938 Day of Mourning** in Sydney demanding full citizenship, spearheading decades of campaigning that culminated in **Eddie Mabo’s 1992 High Court victory**.",
+      "impact": "The landmark **1992 Mabo decision** recognised **Native Title** under Australian law, legally overturning the 222-year imperial fiction of **terra nullius**.",
+      "bridgeToNext": "Completes the chronological arc from 65,000 years of First Nations custodianship and 1770 dispossession to the legal recognition of Native Title.",
+      "keyAgents": [
+        "Aborigines Progressive Association (1938 Day of Mourning)"
+      ],
+      "keyTerms": [
+        {
+          "term": "White Australia Policy",
+          "definition": "Discriminatory 1901 federal immigration regime using arbitrary European dictation tests to exclude non-European migrants."
+        },
+        {
+          "term": "Stolen Generations",
+          "definition": "Aboriginal and Torres Strait Islander children forcibly removed from their families by Australian state and church authorities."
+        },
+        {
+          "term": "Native Title",
+          "definition": "High Court recognition in Mabo (1992) that Indigenous Australians hold enduring legal land rights grounded in traditional law."
+        }
+      ]
+    }
+  ]
+}

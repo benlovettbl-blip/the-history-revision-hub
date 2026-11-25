@@ -518,7 +518,12 @@ export async function saveUnitOffline(unitId, btnEl = null) {
       await ensureUnitLoaded(cleanId);
       if (typeof window !== 'undefined' && 'caches' in window) {
         const cache = await window.caches.open(DYNAMIC_CACHE_FALLBACK);
-        const urls = [`/data/${cleanId}.json`, '/data/database_index.json'];
+        const urls = [
+          `/data/${cleanId}.json`,
+          `/data/timelines/${cleanId}.json`,
+          `/data/mindmaps/${cleanId}.json`,
+          '/data/database_index.json',
+        ];
         await Promise.allSettled(
           urls.map(async (u) => {
             const res = await fetch(u, { cache: 'no-cache' });

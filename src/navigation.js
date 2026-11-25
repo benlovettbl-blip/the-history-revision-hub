@@ -2266,20 +2266,8 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     };
   }
 
-  // Living Chronological Timeline (promoted for Middle East, KS2 units, and units with timelines)
-  const hasTimeline =
-    unitId === 'cme_new' ||
-    unitId === 'gcse_middle_east_1945_1995' ||
-    unitId === 'ks2_ww2' ||
-    unitId === 'ks2_stone_to_iron_age' ||
-    unitId === 'ks2_romans' ||
-    unitId === 'ks2_anglo_saxons_vikings' ||
-    unitId === 'ks2_ancient_egypt' ||
-    unitId === 'ks2_ancient_greece' ||
-    unitId === 'ks2_early_islamic_baghdad' ||
-    unitId === 'ks2_maya_civilisation' ||
-    Boolean(unitData.timelineEvents && unitData.timelineEvents.length > 0) ||
-    Boolean(unitData.timeline && unitData.timeline.length > 0);
+  // Universal Living Chronological Timeline (visible across all 26 curriculum units)
+  const hasTimeline = Boolean(unitId);
 
   if (navTimeline && hasTimeline) {
     navTimeline.style.display = 'flex';

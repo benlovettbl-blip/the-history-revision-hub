@@ -610,6 +610,8 @@ export function renderMedicineLivingTimeline(container) {
   let currentFactorFilter = 'all'; // 'all' | 'individuals' | 'institutions' | 'science' | 'war' | 'communication' | 'attitudes'
   let searchQuery = '';
   let isTourPlaying = false;
+  let recallMode = false;
+  const revealedImpactIdx = new Set();
   let lightboxState = { open: false, milestoneIdx: 0, mode: 'source' };
 
   function getFilteredList(overrideEra = currentEraFilter, overrideFactor = currentFactorFilter) {
@@ -2575,6 +2577,24 @@ export function renderMedicineLivingTimeline(container) {
         border-color: rgba(94, 234, 212, 0.45);
       }
 
+      @media (min-width: 933px) {
+        body:has(.app-header.has-back-btn) .med-tl-return-pill {
+          display: none;
+        }
+        body:has(.app-header.has-back-btn) .med-tl-topbar {
+          justify-content: flex-end;
+          margin-bottom: 6px;
+        }
+      }
+      body.hh-mobile-pupil-mode:not(.staff-mode-active) .med-staff-print-btn {
+        display: none !important;
+      }
+      .med-recall-blur {
+        filter: blur(5.5px);
+        user-select: none;
+        cursor: pointer;
+        transition: filter 0.18s ease;
+      }
       @media print {
         .med-tl-topbar,
         .med-tl-header-controls,
@@ -2617,11 +2637,15 @@ export function renderMedicineLivingTimeline(container) {
             </button>
           </div>
 
+          <button type="button" class="med-tl-hdr-btn" id="med-tl-recall-btn" title="Blur Impact & Limits to test active recall!">
+            🙈 Recall Test
+          </button>
+
           <button type="button" class="med-tl-hdr-btn" id="med-tl-tour-btn">
             ▶ Classroom Tour
           </button>
 
-          <a href="/units/edexcel_medicine/timeline.html" target="_blank" rel="noopener" class="med-tl-hdr-btn" style="text-decoration:none;">
+          <a href="/units/edexcel_medicine/timeline.html" target="_blank" rel="noopener" class="med-tl-hdr-btn med-staff-print-btn" style="text-decoration:none;">
             🖨️ Print A4 Booklet
           </a>
         </div>
@@ -2756,6 +2780,11 @@ export function renderMedicineLivingTimeline(container) {
     if (tourBtn) {
       tourBtn.classList.toggle('tour-active', isTourPlaying);
       tourBtn.textContent = isTourPlaying ? '⏸ Pause Tour' : '▶ Classroom Tour';
+    }
+    const recallBtn = rootEl.querySelector('#med-tl-recall-btn');
+    if (recallBtn) {
+      recallBtn.classList.toggle('tour-active', recallMode);
+      recallBtn.textContent = recallMode ? '🙈 Recall ON' : '🙈 Recall Test';
     }
     if (searchClearBtn) {
       searchClearBtn.classList.toggle('visible', searchQuery.length > 0);
@@ -3129,8 +3158,15 @@ export function renderMedicineLivingTimeline(container) {
             </div>
 
             <div class="med-beat-card beat-impact">
-              <span class="med-beat-label">3. IMPACT &amp; LIMITS</span>
-              <div class="med-beat-text">${formatCleanText(m.impactAndLimits)}</div>
+              <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
+                <span class="med-beat-label">3. IMPACT &amp; LIMITS</span>
+                ${
+                  recallMode && !revealedImpactIdx.has(m.globalIdx)
+                    ? `<button type="button" data-action="reveal-impact" data-global-idx="${m.globalIdx}" style="background:#059669;color:#fff;border:none;border-radius:4px;padding:2px 8px;font-size:0.66rem;font-weight:800;cursor:pointer;">👁️ Reveal &amp; Check</button>`
+                    : ''
+                }
+              </div>
+              <div class="med-beat-text ${recallMode && !revealedImpactIdx.has(m.globalIdx) ? 'med-recall-blur' : ''}" data-action="reveal-impact" data-global-idx="${m.globalIdx}">${formatCleanText(m.impactAndLimits)}</div>
             </div>
           </div>
 
@@ -3530,6 +3566,13 @@ export function renderMedicineLivingTimeline(container) {
       return;
     }
 
+    if (e.target.closest('#med-tl-recall-btn')) {
+      recallMode = !recallMode;
+      revealedImpactIdx.clear();
+      renderStageArea(false);
+      return;
+    }
+
     const eraPill = e.target.closest('.med-era-filter-pill');
     if (eraPill) {
       const nextEra = eraPill.dataset.era || 'all';
@@ -3588,7 +3631,13 @@ export function renderMedicineLivingTimeline(container) {
     if (!actionEl) return;
     const action = actionEl.dataset.action;
 
-    if (action === 'select-milestone') {
+    if (action === 'reveal-impact' && recallMode) {
+      const gIdx = parseInt(actionEl.dataset.globalIdx, 10);
+      if (!Number.isNaN(gIdx) && !revealedImpactIdx.has(gIdx)) {
+        revealedImpactIdx.add(gIdx);
+        renderStageArea(false);
+      }
+    } else if (action === 'select-milestone') {
       const gIdx = parseInt(actionEl.dataset.globalIdx, 10);
       if (!Number.isNaN(gIdx) && allMilestones[gIdx]) {
         selectedGlobalIdx = gIdx;

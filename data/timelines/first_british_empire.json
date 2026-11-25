@@ -1,0 +1,582 @@
+{
+  "unitId": "first_british_empire",
+  "schemaVersion": "v1-curated-living-timeline",
+  "courseTitle": "The First British Empire (1600–1783)",
+  "eyebrow": "KEY STAGE 3 HISTORY • YEAR 8 ENQUIRY CHRONOLOGY • 15 MILESTONES",
+  "beatLabels": {
+    "catalyst": "1. Context & Trigger",
+    "turningPoint": "2. Key Turning Point",
+    "impact": "3. Historical Consequence",
+    "bridgeBadge": "🔗 Leads To Next"
+  },
+  "streamFilters": [],
+  "eras": [
+    {
+      "id": "part_1",
+      "code": "Part 1",
+      "badge": "PART 1 • 1600–1740",
+      "pillLabel": "Part 1: Trade, Slavery & Maroons",
+      "title": "Part 1: Chartered Companies, Plantation Slavery & Maroon Resistance (1600–1740)",
+      "color": "#1e3a8a",
+      "accent": "#2563eb",
+      "softBg": "#eff6ff",
+      "softBorder": "#bfdbfe"
+    },
+    {
+      "id": "part_2",
+      "code": "Part 2",
+      "badge": "PART 2 • 1756–1773",
+      "pillLabel": "Part 2: Bengal & Colonial Crisis",
+      "title": "Part 2: Conquest of Bengal & Crisis in the Thirteen Colonies (1756–1773)",
+      "color": "#991b1b",
+      "accent": "#dc2626",
+      "softBg": "#fef2f2",
+      "softBorder": "#fecaca"
+    },
+    {
+      "id": "part_3",
+      "code": "Part 3",
+      "badge": "PART 3 • 1775–1807",
+      "pillLabel": "Part 3: Revolution & Abolition",
+      "title": "Part 3: American Independence, Black Loyalists & Slave Trade Abolition (1775–1807)",
+      "color": "#0f766e",
+      "accent": "#0d9488",
+      "softBg": "#f0fdfa",
+      "softBorder": "#99f6e4"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "first_british_empire_ms_1",
+      "num": 1,
+      "era": "part_1",
+      "date": "31 December 1600",
+      "shortDate": "Dec 1600",
+      "shortTitle": "East India Company Charter",
+      "title": "Queen Elizabeth I Grants the East India Company Charter",
+      "specTag": "Enquiry 1 • Corporate Monopoly",
+      "enquiryQuestion": "How did a London trading company seize military control of Mughal Bengal?",
+      "lessonIndex": 0,
+      "stageNum": 1,
+      "imageUrl": "/images/east_india_house.jpg",
+      "imageCaption": "East India House on Leadenhall Street, London: Headquarters of the joint-stock monopoly chartered by Queen Elizabeth I on 31 December 1600.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l1_eic_mughal_india_bengal_1600_1765.svg",
+      "mapCaption": "Reference Map: East India Company coastal factories across Mughal India and the conquest of Bengal (1600–1765).",
+      "catalyst": "Eager to break into lucrative Asian spice and textile markets, **218 London merchants** pooled **£68,000** to fit out armed ocean-going galleons carrying silver bullion.",
+      "turningPoint": "On **New Year’s Eve 1600**, Queen Elizabeth I granted an exclusive royal **monopoly charter** creating **The East India Company (EIC)** under commander James Lancaster.",
+      "impact": "Early voyages returning with pepper and cotton earned profits above **300%**, fusing private City finance with royal state backing.",
+      "bridgeToNext": "To trade permanently on the Indian mainland, English merchants had to seek permission from the mighty Mughal Emperor.",
+      "keyAgents": [
+        "The East India Company (EIC)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Charter",
+          "definition": "A formal royal document granting exclusive trading rights, legal powers, or land to a private corporation."
+        },
+        {
+          "term": "Monopoly",
+          "definition": "Complete and exclusive control over the trade or supply of a specific commodity in a given region."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_2",
+      "num": 2,
+      "era": "part_1",
+      "date": "1615–1619",
+      "shortDate": "1615–1619",
+      "shortTitle": "Mughal Factories at Surat",
+      "title": "Sir Thomas Roe & Fortified Mughal Coastal Factories",
+      "specTag": "Enquiry 1 • Armed Trading Enclaves",
+      "enquiryQuestion": "How did a London trading company seize military control of Mughal Bengal?",
+      "lessonIndex": 0,
+      "stageNum": 2,
+      "imageUrl": "/images/upgraded/ks3-early/fbe_l1_b1_sir_thomas_roe_mierevelt.jpg",
+      "imageCaption": "Sir Thomas Roe (National Portrait Gallery): Ambassador sent by King James I to Emperor Jahangir’s Mughal court in 1615 to secure Surat factory rights.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l1_eic_mughal_india_bengal_1600_1765.svg",
+      "mapCaption": "Reference Map: Fortified East India Company trading factories established at Surat, Madras, Bombay, and Calcutta.",
+      "catalyst": "Mughal India produced a quarter of the world’s manufactured goods, making English merchants petitioners at a far wealthier Asian empire’s court.",
+      "turningPoint": "Dispatched by James I in **1615**, ambassador **Sir Thomas Roe** persuaded Mughal **Emperor Jahangir** to permit permanent English warehouses (**factories**) at **Surat**.",
+      "impact": "Over the seventeenth century, the Company expanded fortified coastal bases across **Surat, Madras, Bombay, and Calcutta**, guarded by privately hired **sepoy** infantry.",
+      "bridgeToNext": "While trading textiles in Asia, England expanded westward in 1655 by seizing Caribbean sugar territory from Spain.",
+      "keyAgents": [
+        "Sir Thomas Roe",
+        "The East India Company (EIC)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Factory",
+          "definition": "In early modern trade, a fortified commercial trading post and warehouse managed by a company \"factor\"."
+        },
+        {
+          "term": "Sepoy",
+          "definition": "An Indian soldier recruited, armed, and trained under European officers to fight in the East India Company’s army."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_3",
+      "num": 3,
+      "era": "part_1",
+      "date": "1655",
+      "shortDate": "1655",
+      "shortTitle": "Jamaica & Free Maroons",
+      "title": "Cromwell’s Seizure of Jamaica & Birth of the Free Maroons",
+      "specTag": "Enquiry 3 • Caribbean Conquest & Escape",
+      "enquiryQuestion": "How did enslaved Africans and Queen Nanny resist plantation slavery in Jamaica?",
+      "lessonIndex": 2,
+      "stageNum": 1,
+      "imageUrl": "/images/ks3_fbe/fbe_l3_b0_port_royal_jamaica_conquest_17c.jpg",
+      "imageCaption": "Edward Barlow’s seventeenth-century chart of Port Royal harbour and Jamaica’s rugged Blue Mountains (Royal Museums Greenwich).",
+      "catalyst": "Seeking wealthy Caribbean colonies under his **Western Design**, Oliver Cromwell sent an English expeditionary fleet against Spanish-ruled **Jamaica** in **1655**.",
+      "turningPoint": "Amid the chaos of England’s invasion, enslaved Africans broke free and escaped into Jamaica’s forested **Blue Mountains** to establish autonomous **Maroon** towns.",
+      "impact": "While British planters turned coastal plains into brutal **sugar monoculture** estates, free Maroon strongholds defied colonial recapture from the mountain interior.",
+      "bridgeToNext": "To feed labour-hungry Caribbean sugar estates, the Stuart Crown organized a royal slave-trading monopoly in West Africa.",
+      "keyAgents": [
+        "Oliver Cromwell",
+        "Queen Nanny of the Maroons"
+      ],
+      "keyTerms": [
+        {
+          "term": "Maroon",
+          "definition": "A self-liberated formerly enslaved African who established independent, fortified free settlements in remote wilderness."
+        },
+        {
+          "term": "Plantation",
+          "definition": "A large commercial agricultural estate dedicated to the monoculture cultivation of cash crops like sugar or tobacco."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_4",
+      "num": 4,
+      "era": "part_1",
+      "date": "1672–1713",
+      "shortDate": "1672–1713",
+      "shortTitle": "Royal African Company",
+      "title": "The Royal African Company, Triangular Trade & The 1713 Asiento",
+      "specTag": "Enquiry 2 • State-Backed Slave Trafficking",
+      "enquiryQuestion": "How did the transatlantic slave trade operate, and how was it challenged?",
+      "lessonIndex": 1,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_fbe/fbe_l2_b1_elmina_castle_gold_coast.jpg",
+      "imageCaption": "Coastal slave fortress at Elmina on the Gold Coast (Ghana), where kidnapped captives were imprisoned in barracoons before Atlantic embarkation.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l2_triangular_trade_middle_passage_1619_1807.svg",
+      "mapCaption": "Reference Map: The Transatlantic Triangular Trade linking Bristol and Liverpool, West African forts, and American plantations.",
+      "catalyst": "Ships from **London, Bristol, and Liverpool** carried guns, iron bars, and textiles to West Africa in a lucrative **triangular trade** for human captives.",
+      "turningPoint": "King Charles II chartered **The Royal African Company (RAC)** in **1672**—branding captives **‘RAC’** on the chest—before Britain won Spain’s **1713 Asiento** slave-supply contract.",
+      "impact": "Royal backing made Britain the dominant **transatlantic slave-trading power**, enriching British ports, banks, and Caribbean planters.",
+      "bridgeToNext": "Millions of kidnapped African men, women, and children were forced below deck onto the deadly Middle Passage and sugar gangs.",
+      "keyAgents": [
+        "The Royal African Company (RAC)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Transatlantic Trade",
+          "definition": "The three-legged commercial trade system connecting Britain, West Africa, and the American plantation colonies."
+        },
+        {
+          "term": "Asiento",
+          "definition": "The lucrative monopoly contract granted by the Spanish Crown to supply 4,800 enslaved people per year to Spanish America."
+        },
+        {
+          "term": "Barracoon",
+          "definition": "A fortified coastal cage or holding pen where captured Africans were imprisoned before being loaded onto ships."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_5",
+      "num": 5,
+      "era": "part_1",
+      "date": "1713–1730",
+      "shortDate": "1713–1730",
+      "shortTitle": "Middle Passage & Sugar Gangs",
+      "title": "The Middle Passage, Sugar Gang System & Everyday Resistance",
+      "specTag": "Enquiry 2 & 3 • Chattel Bondage & Survival",
+      "enquiryQuestion": "How did the transatlantic slave trade operate, and how was it challenged?",
+      "lessonIndex": 1,
+      "stageNum": 3,
+      "imageUrl": "/images/ks3_fbe/fbe_l2_b2_marie_seraphique_slave_deck_1770.jpg",
+      "imageCaption": "Cutaway painting of the cramped slave deck aboard La Marie-Séraphique (1770, Musée d’Histoire de Nantes), showing captives chained below deck.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l2_triangular_trade_middle_passage_1619_1807.svg",
+      "mapCaption": "Reference Map: Middle Passage ocean crossings to Caribbean sugar islands and North American colonies.",
+      "catalyst": "Treated legally as **chattel property**, captive Africans endured an eight-week **Middle Passage** chained on airless wooden shelves where roughly **one in six died** of dysentery and fever.",
+      "turningPoint": "Survivors sold onto Jamaican sugar plantations worked **18-hour harvest shifts** under whip-wielding **overseers** beside crushing rollers and scalding boiling houses.",
+      "impact": "Enslaved communities resisted daily by breaking tools, slowing production, preserving West African herbal medicine, and telling **Anansi** trickster stories.",
+      "bridgeToNext": "High in Jamaica’s Blue Mountains, Queen Nanny turned resistance into full-scale guerrilla war against British regiments.",
+      "keyAgents": [
+        "Queen Nanny of the Maroons",
+        "The Royal African Company (RAC)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Middle Passage",
+          "definition": "The traumatic sea crossing of the Atlantic Ocean transporting captive enslaved Africans to the Americas."
+        },
+        {
+          "term": "Chattel Slavery",
+          "definition": "A legal system where human beings are owned, bought, and sold as permanent private property like livestock."
+        },
+        {
+          "term": "Gang System",
+          "definition": "The division of enslaved field labourers into work gangs based on physical strength, driven by armed drivers with whips."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_6",
+      "num": 6,
+      "era": "part_1",
+      "date": "1728–1739",
+      "shortDate": "1728–1739",
+      "shortTitle": "Queen Nanny & 1739 Treaty",
+      "title": "Queen Nanny’s Guerrilla War & The 1739 Maroon Peace Treaty",
+      "specTag": "Enquiry 3 • Armed Maroon Victory",
+      "enquiryQuestion": "How did enslaved Africans and Queen Nanny resist plantation slavery in Jamaica?",
+      "lessonIndex": 2,
+      "stageNum": 4,
+      "imageUrl": "/images/ks3_fbe/fbe_l3_s4_old_cudjoe_making_peace_1739.jpg",
+      "imageCaption": "Old Cudjoe Making Peace (1739 engraving): Maroon commander Captain Cudjoe negotiates the 1739 Articles of Pacification with British officers.",
+      "catalyst": "British colonial troops marched repeatedly into Jamaica’s rugged interior to destroy free **Windward and Leeward Maroon** towns during the First Maroon War.",
+      "turningPoint": "Asante leader **Queen Nanny** defeated British soldiers using **living-branch camouflage** and **abeng** cow-horn signals, forcing Governor Trelawny to sign the **1739 Peace Treaty**.",
+      "impact": "Britain recognized Maroon **freedom** and **1,500 sovereign acres**, though the treaty forced a painful compromise requiring Maroons to return future plantation runaways.",
+      "bridgeToNext": "Seventeen years later, imperial war shifted eastward as the East India Company clashed with the Nawab of Bengal.",
+      "keyAgents": [
+        "Queen Nanny of the Maroons",
+        "Captain Cudjoe"
+      ],
+      "keyTerms": [
+        {
+          "term": "Guerrilla Warfare",
+          "definition": "Irregular military tactics involving fast ambushes, camouflage, hit-and-run raids, and exploiting rugged terrain."
+        },
+        {
+          "term": "Abeng",
+          "definition": "A hollowed cow-horn instrument used by Jamaican Maroons to communicate coded tactical signals across mountain valleys."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_7",
+      "num": 7,
+      "era": "part_2",
+      "date": "June 1756 – 23 June 1757",
+      "shortDate": "23 Jun 1757",
+      "shortTitle": "Battle of Plassey in Bengal",
+      "title": "Calcutta Crisis, Mir Jafar’s Betrayal & The Battle of Plassey",
+      "specTag": "Enquiry 1 • Conquest of Bengal",
+      "enquiryQuestion": "How did a London trading company seize military control of Mughal Bengal?",
+      "lessonIndex": 0,
+      "stageNum": 4,
+      "imageUrl": "/images/first_british_empire/battle_of_plassey_1757.jpg",
+      "imageCaption": "Tactical survey plan of the Battle of Plassey (23 June 1757), showing Robert Clive’s troops facing Nawab Siraj ud-Daulah’s army along the Bhagirathi River.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l1_eic_mughal_india_bengal_1600_1765.svg",
+      "mapCaption": "Reference Map: Fort William (Calcutta) and Robert Clive’s campaign culminating at the Battle of Plassey (June 1757).",
+      "catalyst": "When Company officials mounted unauthorized cannons on Calcutta’s **Fort William** in **1756**, young **Nawab Siraj ud-Daulah** stormed the fort, followed by deaths in the **Black Hole** dungeon.",
+      "turningPoint": "**Robert Clive** secretly bribed Bengal army commander **Mir Jafar** with promises of the throne and kept British gunpowder dry under tarpaulins to win the **Battle of Plassey** on **23 June 1757**.",
+      "impact": "Installing Mir Jafar as a **puppet ruler** turned a London merchant company into the military kingmaker of rich Mughal Bengal.",
+      "bridgeToNext": "Winning global battles against France in India and North America left Britain triumphant in 1763—but buried under £133 million of war debt.",
+      "keyAgents": [
+        "Robert Clive (1st Baron Clive)",
+        "Nawab Siraj ud-Daulah",
+        "The East India Company (EIC)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Nawab",
+          "definition": "A semi-independent provincial governor or Muslim ruler within the Mughal Empire, such as the ruler of Bengal."
+        },
+        {
+          "term": "Puppet Ruler",
+          "definition": "A figurehead ruler who appears sovereign but is secretly directed and manipulated by an outside imperial power."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_8",
+      "num": 8,
+      "era": "part_2",
+      "date": "7 October 1763",
+      "shortDate": "Oct 1763",
+      "shortTitle": "1763 Royal Proclamation",
+      "title": "Seven Years’ War Debt & The 1763 Proclamation Line",
+      "specTag": "Enquiry 4 • Imperial Debt & Frontier Ban",
+      "enquiryQuestion": "Why did British taxes push the Thirteen Colonies toward open rebellion by 1773?",
+      "lessonIndex": 3,
+      "stageNum": 1,
+      "imageUrl": "/images/first_british_empire/royal_proclamation_1763.jpg",
+      "imageCaption": "Official broadside of King George III’s Royal Proclamation of 7 October 1763 banning colonial settlement west of the Appalachian Mountains.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l4_thirteen_colonies_revolution_1763_1783.svg",
+      "mapCaption": "Reference Map: The Thirteen Colonies and King George III’s 1763 Royal Proclamation Line along the Appalachian Mountains.",
+      "catalyst": "Victory in the **Seven Years’ War** handed Britain vast North American territory from France, but burdened London with a crushing **£133 million war debt**.",
+      "turningPoint": "To prevent costly frontier wars with Native American nations, **King George III** issued the **Proclamation of 1763** barring white settlement west of the **Appalachians** alongside **Quartering Acts**.",
+      "impact": "American colonists felt cheated out of western lands they had fought for and resented housing **10,000 British redcoats** in peacetime.",
+      "bridgeToNext": "To make colonists help pay for imperial defence, Parliament introduced a direct tax on paper across America in March 1765.",
+      "keyAgents": [
+        "King George III"
+      ],
+      "keyTerms": [
+        {
+          "term": "Quartering",
+          "definition": "The forced housing and feeding of military troops in civilian barns, taverns, or unoccupied buildings."
+        },
+        {
+          "term": "Redcoat",
+          "definition": "A colloquial 18th-century term for a British soldier, named after their distinctive scarlet wool uniform jackets."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_9",
+      "num": 9,
+      "era": "part_2",
+      "date": "March 1765 – March 1766",
+      "shortDate": "1765–1766",
+      "shortTitle": "Stamp Act & Boycotts",
+      "title": "The 1765 Stamp Act & ‘No Taxation Without Representation’",
+      "specTag": "Enquiry 4 • Constitutional Tax Revolt",
+      "enquiryQuestion": "Why did British taxes push the Thirteen Colonies toward open rebellion by 1773?",
+      "lessonIndex": 3,
+      "stageNum": 2,
+      "imageUrl": "/images/stamp_act_skull_1765.jpg",
+      "imageCaption": "Skull-and-crossbones Stamp Act protest emblem from William Bradford’s Pennsylvania Journal (31 October 1765).",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l4_thirteen_colonies_revolution_1763_1783.svg",
+      "mapCaption": "Reference Map: Port cities across the Thirteen Colonies where Sons of Liberty boycotts defeated the 1765 Stamp Act.",
+      "catalyst": "In **March 1765**, Parliament passed the **Stamp Act**, requiring revenue stamps on colonial newspapers, legal documents, pamphlets, and playing cards.",
+      "turningPoint": "Declaring **‘no taxation without representation’**, the **Sons of Liberty** intimidated stamp agents and organized sweeping **boycotts** of British imports.",
+      "impact": "Slumping trade forced Parliament to **repeal** the Stamp Act in **1766**, while uniting the Thirteen Colonies around a shared protest network.",
+      "bridgeToNext": "That same summer of 1765, halfway across the world, the East India Company seized formal tax rule over twenty million people in Bengal.",
+      "keyAgents": [
+        "Sons of Liberty",
+        "King George III"
+      ],
+      "keyTerms": [
+        {
+          "term": "Boycott",
+          "definition": "A concerted commercial protest refusing to purchase goods from a particular country or merchant."
+        },
+        {
+          "term": "Sons of Liberty",
+          "definition": "A radical grassroots organisation formed in American port cities to resist British imperial taxation."
+        },
+        {
+          "term": "Repeal",
+          "definition": "The official parliamentary revocation, cancellation, or withdrawal of a statute law."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_10",
+      "num": 10,
+      "era": "part_2",
+      "date": "August 1765 – 1770",
+      "shortDate": "Aug 1765",
+      "shortTitle": "Diwani Treaty & Famine",
+      "title": "The 1765 Diwani Treaty of Allahabad & The 1770 Bengal Famine",
+      "specTag": "Enquiry 1 • Corporate Tax Rule",
+      "enquiryQuestion": "How did a London trading company seize military control of Mughal Bengal?",
+      "lessonIndex": 0,
+      "stageNum": 5,
+      "imageUrl": "/images/shah_alam_clive.jpg",
+      "imageCaption": "Benjamin West, Shah ‘Alam Conveying the Grant of the Diwani to Lord Clive, August 1765: Handing Bengal’s land-tax revenues to the East India Company.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l1_eic_mughal_india_bengal_1600_1765.svg",
+      "mapCaption": "Reference Map: Buxar and the August 1765 Diwani grant across Bengal, Bihar, and Orissa.",
+      "catalyst": "Following further Company battlefield victories at Buxar, Robert Clive cornered Mughal **Emperor Shah Alam II** into signing the **Treaty of Allahabad** in **August 1765**.",
+      "turningPoint": "The treaty granted the Company the **Diwani**—the sovereign legal right to collect land taxes across **Bengal, Bihar, and Orissa**.",
+      "impact": "Relentless Company tax extraction during severe drought worsened the **1770 Bengal Famine**, in which roughly **ten million people** died while Company debts mounted in London.",
+      "bridgeToNext": "To bail out the debt-ridden East India Company’s 18 million pounds of unsold tea, Parliament passed the 1773 Tea Act—igniting Boston.",
+      "keyAgents": [
+        "Robert Clive (1st Baron Clive)",
+        "The East India Company (EIC)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Diwani",
+          "definition": "The sovereign constitutional right to collect land revenues and administer civil justice across Bengal."
+        },
+        {
+          "term": "Plunder",
+          "definition": "The violent or corrupt extraction of wealth, goods, and tax revenues from a conquered people."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_11",
+      "num": 11,
+      "era": "part_2",
+      "date": "1770 – 16 December 1773",
+      "shortDate": "16 Dec 1773",
+      "shortTitle": "Boston Tea Party & Crisis",
+      "title": "The Boston Massacre, 1773 Tea Act & The Boston Tea Party",
+      "specTag": "Enquiry 4 • Direct Colonial Defiance",
+      "enquiryQuestion": "Why did British taxes push the Thirteen Colonies toward open rebellion by 1773?",
+      "lessonIndex": 3,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_fbe/fbe_l4_b4_boston_tea_party_cooper_1789.jpg",
+      "imageCaption": "W. D. Cooper, Americans Throwing the Cargoes of the Tea Ships into the River, at Boston (1789, Library of Congress): Dumping 342 chests of tea on 16 December 1773.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l4_thirteen_colonies_revolution_1763_1783.svg",
+      "mapCaption": "Reference Map: Boston Harbour, Griffin’s Wharf, and the 1774 Coercive Acts clampdown on Massachusetts.",
+      "catalyst": "Anger after the **March 1770 Boston Massacre**—where five died including **Crispus Attucks**—boiled over when the **May 1773 Tea Act** gave the East India Company a colonial tea monopoly.",
+      "turningPoint": "On **16 December 1773**, **Sons of Liberty** disguised as Mohawks boarded three ships in Boston Harbour and dumped **342 chests** (£10,000) of tea into the sea.",
+      "impact": "King George III retaliated with the **1774 Coercive Acts**, closing Boston port, suspending Massachusetts self-government, and pushing the colonies to armed revolt.",
+      "bridgeToNext": "Sixteen months later, musket fire on Lexington Green turned tax protests into an all-out Revolutionary War.",
+      "keyAgents": [
+        "Sons of Liberty",
+        "King George III",
+        "Crispus Attucks"
+      ],
+      "keyTerms": [
+        {
+          "term": "Coercive Acts",
+          "definition": "A series of punitive laws passed by British Parliament in 1774 to punish Massachusetts for the Boston Tea Party."
+        },
+        {
+          "term": "Propaganda",
+          "definition": "Information, imagery, or rumours deliberately spread to influence public opinion and provoke political outrage."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_12",
+      "num": 12,
+      "era": "part_3",
+      "date": "April 1775 – 4 July 1776",
+      "shortDate": "4 Jul 1776",
+      "shortTitle": "1776 Declaration Paradox",
+      "title": "Lexington, Dunmore’s Offer & The 1776 Declaration of Independence",
+      "specTag": "Enquiry 5 • Liberty & Hypocrisy",
+      "enquiryQuestion": "How did the American Revolution win independence while leaving slavery intact?",
+      "lessonIndex": 4,
+      "stageNum": 2,
+      "imageUrl": "/images/declaration_of_independence.jpg",
+      "imageCaption": "John Trumbull, Declaration of Independence (US Capitol): Thomas Jefferson and the Committee of Five present the draft Declaration in July 1776.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l4_thirteen_colonies_revolution_1763_1783.svg",
+      "mapCaption": "Reference Map: Lexington and Concord (April 1775), Virginia’s Dunmore Proclamation, and Philadelphia’s 1776 Continental Congress.",
+      "catalyst": "Fighting erupted at **Lexington and Concord in April 1775**, while Virginia Governor **Lord Dunmore** promised freedom to enslaved people who fled rebel masters to join British lines.",
+      "turningPoint": "Inspired by Thomas Paine’s *Common Sense*, **Thomas Jefferson** drafted the **4 July 1776 Declaration of Independence** proclaiming that **‘all men are created equal’**.",
+      "impact": "Yet **41 of the 56 signatories** owned enslaved people, exposing a stark paradox that left half a million African Americans in bondage inside the new republic.",
+      "bridgeToNext": "To defeat Britain’s powerful army and navy, George Washington’s Patriots needed European superpower allies.",
+      "keyAgents": [
+        "Thomas Jefferson & George Washington",
+        "Lord Dunmore’s Ethiopian Regiment & The Black Loyalists"
+      ],
+      "keyTerms": [
+        {
+          "term": "Unalienable Rights",
+          "definition": "Fundamental human rights (such as life, liberty, and happiness) that cannot be taken away or surrendered to any government."
+        },
+        {
+          "term": "Hypocrisy",
+          "definition": "Claiming to have moral principles or beliefs to which one’s own actual behaviour and actions do not conform."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_13",
+      "num": 13,
+      "era": "part_3",
+      "date": "Oct 1777 – 19 October 1781",
+      "shortDate": "Oct 1781",
+      "shortTitle": "Saratoga & Yorktown Defeat",
+      "title": "Saratoga, French Intervention & British Surrender at Yorktown",
+      "specTag": "Enquiry 5 • Global War & Defeat",
+      "enquiryQuestion": "How did the American Revolution win independence while leaving slavery intact?",
+      "lessonIndex": 4,
+      "stageNum": 4,
+      "imageUrl": "/images/surrender_of_cornwallis_1781.jpg",
+      "imageCaption": "John Trumbull, Surrender of Lord Cornwallis at Yorktown, Virginia (19 October 1781): 8,000 besieged British troops lay down their arms.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l4_thirteen_colonies_revolution_1763_1783.svg",
+      "mapCaption": "Reference Map: American victory at Saratoga (1777) and the Franco-American trap at Yorktown on Chesapeake Bay (October 1781).",
+      "catalyst": "General Burgoyne’s surrender at **Saratoga in October 1777** persuaded **King Louis XVI’s France** to enter the war, forcing Britain to divert warships to guard rich Caribbean sugar islands.",
+      "turningPoint": "In **October 1781**, **George Washington’s** army by land and **Admiral de Grasse’s** French fleet in Chesapeake Bay trapped **Lord Cornwallis** into surrendering **8,000 redcoats** at **Yorktown**.",
+      "impact": "Yorktown shattered Parliament’s political will to fight on in North America and forced London to open peace talks.",
+      "bridgeToNext": "As British diplomats signed peace in Paris in 1783, 3,000 Black Loyalists in New York demanded the freedom Britain had promised them.",
+      "keyAgents": [
+        "Thomas Jefferson & George Washington",
+        "Lord Cornwallis"
+      ],
+      "keyTerms": [
+        {
+          "term": "Allied Intervention",
+          "definition": "The entry of foreign military powers (such as France and Spain) into a conflict to aid one of the warring sides."
+        },
+        {
+          "term": "Militia",
+          "definition": "A military force raised from the civilian population to supplement a regular army in times of emergency."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_14",
+      "num": 14,
+      "era": "part_3",
+      "date": "September–November 1783",
+      "shortDate": "Sep 1783",
+      "shortTitle": "Treaty of Paris & Exodus",
+      "title": "The 1783 Treaty of Paris & The Book of Negroes Evacuation",
+      "specTag": "Enquiry 5 • End of First Empire",
+      "enquiryQuestion": "How did the American Revolution win independence while leaving slavery intact?",
+      "lessonIndex": 4,
+      "stageNum": 5,
+      "imageUrl": "/images/first_british_empire/book_of_negroes_inspection_1783.png",
+      "imageCaption": "Inspection pass from The Book of Negroes (1783), certifying an emancipated Black Loyalist to board British evacuation ships in New York Harbour.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l4_thirteen_colonies_revolution_1763_1783.svg",
+      "mapCaption": "Reference Map: 1783 evacuation of 3,000 Black Loyalists from New York Harbour to Birchtown and Shelburne in Nova Scotia.",
+      "catalyst": "Signed on **3 September 1783**, the **Treaty of Paris** formally recognized the United States of America and ended the First British Empire in the Thirteen Colonies.",
+      "turningPoint": "Refusing George Washington’s demand to return formerly enslaved soldiers, British commander **Sir Guy Carleton** registered **3,000 Black Loyalists** in the **Book of Negroes** and evacuated them to **Nova Scotia**.",
+      "impact": "Black Loyalists forged free communities in Canada and later **Freetown, Sierra Leone**, while Britain pivoted its imperial ambitions eastward toward India.",
+      "bridgeToNext": "Shocked by the 1781 Zong atrocity and American hypocrisy, British and African campaigners now mobilized to outlaw the slave trade itself.",
+      "keyAgents": [
+        "Lord Dunmore’s Ethiopian Regiment & The Black Loyalists",
+        "Sir Guy Carleton"
+      ],
+      "keyTerms": [
+        {
+          "term": "Treaty of Paris",
+          "definition": "The 1783 peace agreement in which Great Britain formally recognised the independence of the United States of America."
+        },
+        {
+          "term": "Black Loyalist",
+          "definition": "An enslaved African who escaped rebel masters to fight for the British Crown in exchange for guaranteed freedom."
+        }
+      ]
+    },
+    {
+      "id": "first_british_empire_ms_15",
+      "num": 15,
+      "era": "part_3",
+      "date": "1781–1807",
+      "shortDate": "1788–1807",
+      "shortTitle": "Equiano & 1807 Abolition",
+      "title": "The Zong Outrage, Olaudah Equiano & The 1807 Abolition Act",
+      "specTag": "Enquiry 2 • Abolition of Slave Trading",
+      "enquiryQuestion": "How did the transatlantic slave trade operate, and how was it challenged?",
+      "lessonIndex": 1,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_fbe/fbe_l2_s3_olaudah_equiano_frontispiece_1789.jpg",
+      "imageCaption": "Frontispiece portrait from The Interesting Narrative of the Life of Olaudah Equiano (1789), whose testimony galvanized British abolitionism.",
+      "mapUrl": "/images/first_british_empire/maps/fbe_map_l2_triangular_trade_middle_passage_1619_1807.svg",
+      "mapCaption": "Reference Map: Transatlantic slave-trading routes outlawed for British vessels under Parliament’s 1807 Abolition Act.",
+      "catalyst": "Public outrage erupted after Captain Luke Collingwood threw **133 sick captives** off the slave ship **Zong in November 1781** so the owners could claim cargo insurance.",
+      "turningPoint": "Freed African author **Olaudah Equiano** published his **1789 autobiography** alongside **Thomas Clarkson’s** tours, Wedgwood’s medallion, and the **1788 *Brookes* ship diagram**.",
+      "impact": "Mass petitions and testimony forced Parliament to pass the **Abolition of the Slave Trade Act in 1807**, outlawing human trafficking on British ships.",
+      "bridgeToNext": "Lasting Legacy: Losing the Thirteen Colonies ended the First British Empire in 1783, yet Company rule in India and Caribbean slavery persisted past 1807.",
+      "keyAgents": [
+        "Olaudah Equiano",
+        "Thomas Clarkson"
+      ],
+      "keyTerms": [
+        {
+          "term": "Abolitionist",
+          "definition": "A campaigner or activist who campaigned to legally ban the slave trade and emancipate enslaved people."
+        },
+        {
+          "term": "Forensic",
+          "definition": "Using detailed, factual, and scientific evidence to investigate crimes, abuses, or historical atrocities."
+        }
+      ]
+    }
+  ]
+}

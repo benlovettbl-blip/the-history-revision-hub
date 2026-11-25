@@ -1,0 +1,585 @@
+{
+  "unitId": "great_war_part2",
+  "schemaVersion": "v1-curated-living-timeline",
+  "courseTitle": "The Great War: Apocalypse & Aftermath (1914–1919)",
+  "eyebrow": "KEY STAGE 3 HISTORY • YEAR 9 ENQUIRY CHRONOLOGY • 15 MILESTONES",
+  "beatLabels": {
+    "catalyst": "1. Context & Trigger",
+    "turningPoint": "2. Key Turning Point",
+    "impact": "3. Historical Consequence",
+    "bridgeBadge": "🔗 Leads To Next"
+  },
+  "streamFilters": [],
+  "eras": [
+    {
+      "id": "part_1",
+      "code": "Part 1",
+      "badge": "PART 1 • 1914",
+      "pillLabel": "Part 1: 1914 Mobilisation",
+      "title": "Part 1: Rush to the Colours, DORA & Western Front Stalemate (August–December 1914)",
+      "color": "#1e3a8a",
+      "accent": "#2563eb",
+      "softBg": "#eff6ff",
+      "softBorder": "#bfdbfe"
+    },
+    {
+      "id": "part_2",
+      "code": "Part 2",
+      "badge": "PART 2 • 1915–1917",
+      "pillLabel": "Part 2: Total War, 1915–17",
+      "title": "Part 2: Trenches, Global Empire, Conscription & The Somme (1915–1917)",
+      "color": "#991b1b",
+      "accent": "#dc2626",
+      "softBg": "#fef2f2",
+      "softBorder": "#fecaca"
+    },
+    {
+      "id": "part_3",
+      "code": "Part 3",
+      "badge": "PART 3 • 1918–1919",
+      "pillLabel": "Part 3: Armistice & Peace",
+      "title": "Part 3: Rationing, Combined-Arms Breakthrough & The Treaty of Versailles (1918–1919)",
+      "color": "#0f766e",
+      "accent": "#0d9488",
+      "softBg": "#f0fdfa",
+      "softBorder": "#99f6e4"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "great_war_part2_ms_1",
+      "num": 1,
+      "era": "part_1",
+      "date": "4 August 1914",
+      "shortDate": "4 Aug 1914",
+      "shortTitle": "Invasion of Neutral Belgium",
+      "title": "The Invasion of Neutral Belgium & Britain’s Moral Crusade",
+      "specTag": "Enquiry 1 • Outbreak & Enlistment",
+      "enquiryQuestion": "Why were young British men so desperate to volunteer for the slaughter of 1914?",
+      "lessonIndex": 0,
+      "stageNum": 2,
+      "imageUrl": "/images/great_war_part2/gw2_l1_b1_louvain_library_ruins_1914.jpg",
+      "imageCaption": "Gutted interior of the Catholic University Library of Louvain, Belgium (burned August 1914): Destroying over 300,000 medieval books alongside civilian executions outraged British opinion.",
+      "catalyst": "Imperial Germany marched across neutral Belgium in August 1914, dismissing the **1839 Treaty of London** protecting Belgian independence as a mere 'scrap of paper'.",
+      "turningPoint": "Britain declared war on **4 August 1914** as reports of German executions of Belgian civilians and the burning of **Louvain’s medieval library** swept British newspapers.",
+      "impact": "Public outrage framed enlistment as a righteous **moral crusade** to defend international law and small nations, driving a massive first wave of British volunteers.",
+      "bridgeToNext": "Four days after declaring war, Parliament rushed through sweeping emergency laws to place Britain’s civilian Home Front under state control.",
+      "keyAgents": [
+        "Field Marshal Lord Kitchener"
+      ],
+      "keyTerms": [
+        {
+          "term": "Treaty of London (1839)",
+          "definition": "The international agreement signed by European powers, including Britain and Prussia, guaranteeing Belgian neutrality."
+        },
+        {
+          "term": "Jingoism",
+          "definition": "Extreme, enthusiastic patriotism marked by eager public support for war and national honour."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_2",
+      "num": 2,
+      "era": "part_1",
+      "date": "8 August 1914",
+      "shortDate": "8 Aug 1914",
+      "shortTitle": "DORA & State Emergency Rule",
+      "title": "Parliament Enacts the Defence of the Realm Act (DORA)",
+      "specTag": "Enquiry 4 • Authoritarian Home Front",
+      "enquiryQuestion": "How far did the First World War transform life on Britain’s Home Front?",
+      "lessonIndex": 3,
+      "stageNum": 1,
+      "imageUrl": "/images/great_war_part2/gw2_l4_b0_dora_zeppelin_poster_1915.jpg",
+      "imageCaption": "Wartime air-raid and blackout poster over silhouetted London (1915): Under DORA (August 1914), the state enforced urban blackouts, censorship, factory requisitioning, and pub curfews.",
+      "catalyst": "Modern industrial war demanded total coordination of factories, railways, and civilian morale, making Britain’s peacetime tradition of **laissez-faire** liberty impossible to maintain.",
+      "turningPoint": "On **8 August 1914**, Parliament passed the **Defence of the Realm Act (DORA)**, empowering ministers to commandeer factories and land, censor letters and newspapers, and impose blackouts.",
+      "impact": "DORA reshaped everyday habits—shortening pub hours and **watering down beer** to boost factory output—turning Britain into a tightly regulated wartime state.",
+      "bridgeToNext": "While DORA organised the Home Front, Britain still lacked a mass conscript army and needed hundreds of thousands of frontline volunteers immediately.",
+      "keyAgents": [
+        "Home Front Munitionettes (\"Canary Girls\") & DORA",
+        "David Lloyd George"
+      ],
+      "keyTerms": [
+        {
+          "term": "DORA",
+          "definition": "The Defence of the Realm Act (August 1914), emergency legislation granting the British government sweeping control over civilian life."
+        },
+        {
+          "term": "Home Front",
+          "definition": "The civilian population and domestic industrial war effort of a nation whose armed forces are fighting abroad."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_3",
+      "num": 3,
+      "era": "part_1",
+      "date": "August–September 1914",
+      "shortDate": "Aug–Sep 1914",
+      "shortTitle": "Kitchener & Pals Battalions",
+      "title": "Kitchener’s Call for 500,000 & The Birth of Pals Battalions",
+      "specTag": "Enquiry 1 • Volunteer Mobilisation",
+      "enquiryQuestion": "Why were young British men so desperate to volunteer for the slaughter of 1914?",
+      "lessonIndex": 0,
+      "stageNum": 3,
+      "imageUrl": "/images/great_war_part2/gw2_l1_b0_kitchener_wants_you_leete_1914.jpg",
+      "imageCaption": "Alfred Leete’s September 1914 design 'Britons: [Kitchener] Wants YOU' (IWM PST 2734): Lacking peacetime conscription, War Secretary Lord Kitchener appealed directly for mass volunteers.",
+      "catalyst": "Unlike continental powers with millions of conscripts, Britain entered the war relying on naval power and a small regular **British Expeditionary Force** of **120,000 professional soldiers**.",
+      "turningPoint": "Warning the war would last years, War Secretary **Lord Kitchener** appealed for **500,000 volunteers**, while the War Office let friends and workmates enlist together in local **Pals Battalions**.",
+      "impact": "Patriotism, local pride in units like the **Pompey Pals**, and guaranteed pay, hot food, and sturdy boots ('taking the **King’s Shilling**') drew hundreds of thousands into uniform.",
+      "bridgeToNext": "While Kitchener’s New Armies trained in Britain, the outnumbered regular BEF in Flanders needed urgent reinforcement from the British Empire.",
+      "keyAgents": [
+        "Field Marshal Lord Kitchener"
+      ],
+      "keyTerms": [
+        {
+          "term": "British Expeditionary Force",
+          "definition": "The small, highly trained professional British army of roughly 120,000 men sent to France and Belgium in August 1914."
+        },
+        {
+          "term": "Pals Battalions",
+          "definition": "British Army units formed of friends, neighbours, and work colleagues who enlisted and trained side by side."
+        },
+        {
+          "term": "Pragmatism",
+          "definition": "Enlisting for practical material security—regular wages, hot meals, and warm boots—rather than purely romantic ideals."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_4",
+      "num": 4,
+      "era": "part_1",
+      "date": "October–November 1914",
+      "shortDate": "Oct 1914",
+      "shortTitle": "Indian Corps & Khudadad Khan",
+      "title": "Indian Troops Hold Flanders & Khudadad Khan Wins the VC",
+      "specTag": "Enquiry 3 • Imperial Lifeline",
+      "enquiryQuestion": "Why were over four million colonial and dominion troops erased from popular memory?",
+      "lessonIndex": 2,
+      "stageNum": 2,
+      "imageUrl": "/images/great_war_part2/gw2_l3_b1_indian_mg_crew_flanders_1914.jpg",
+      "imageCaption": "Indian Expeditionary Force machine-gun crew in Flanders (winter 1914–15, IWM): Rushed to France in thin cotton uniforms, 130,000 Indian Corps soldiers helped halt the German drive to the Channel.",
+      "mapUrl": "/images/great_war_part2/maps/gw2_map_l3_global_empire_forgotten_fronts_1914_18.svg",
+      "mapCaption": "Reference Map: Global mobilisation of over four million British Empire and Dominion troops, sailors, and labourers across five continents (1914–1918).",
+      "catalyst": "Heavy autumn casualties left Britain’s regular army close to collapse in Belgium, prompting London to rush the **Indian Expeditionary Force** to the Western Front.",
+      "turningPoint": "Fighting in freezing mud in thin khaki cotton at **First Ypres**, wounded machine-gunner **Sepoy Khudadad Khan** (129th Baluchis) held his gun alone at Hollebeke on **31 October 1914**.",
+      "impact": "Indian regiments blocked the German push toward the Channel ports, and Khudadad Khan became the **first South Asian soldier** awarded the **Victoria Cross**.",
+      "bridgeToNext": "As First Ypres ground to a halt, rival armies abandoned open manoeuvre and dug continuous fortifications from the North Sea to Switzerland.",
+      "keyAgents": [
+        "Sepoy Khudadad Khan VC",
+        "British Empire & Colonial Forces (Indian Army, BWIR, ANZAC & CLC)"
+      ],
+      "keyTerms": [
+        {
+          "term": "Sepoy",
+          "definition": "An Indian infantry soldier serving within the British Indian Army."
+        },
+        {
+          "term": "Victoria Cross",
+          "definition": "Britain’s highest military decoration for valour in the face of the enemy, awarded to Sepoy Khudadad Khan in 1914."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_5",
+      "num": 5,
+      "era": "part_1",
+      "date": "Autumn–Winter 1914",
+      "shortDate": "Late 1914",
+      "shortTitle": "Race to the Sea & Trenches",
+      "title": "The Race to the Sea & The 400-Mile Trench Stalemate",
+      "specTag": "Enquiry 2 • Trench Architecture",
+      "enquiryQuestion": "Why was the Somme so costly—and does General Haig deserve the blame?",
+      "lessonIndex": 1,
+      "stageNum": 1,
+      "imageUrl": "/images/great_war_part2/gw2_l2_s0_war_office_fire_trench_diagram_1914.jpg",
+      "imageCaption": "War Office cross-section schematic of a standard fire trench (1914): Engineers dug three-tier zig-zag bays with sandbagged parapets, fire-steps, barbed wire, and deep dugouts.",
+      "mapUrl": "/images/great_war_part2/maps/gw2_map_l2_western_front_stalemate_somme_1914_18.svg",
+      "mapCaption": "Reference Map: The unbroken Western Front trench line stretching from Nieuwpoort on the Belgian coast to the neutral Swiss border (1914–1918).",
+      "catalyst": "Outflanking attempts in the **Race to the Sea** ended at the English Channel, while rapid-fire **machine guns** and shrapnel **artillery** made crossing open ground suicidal.",
+      "turningPoint": "Both sides dug an unbroken **400-mile three-tier trench network**—front, support, and reserve lines—built in **zig-zag traverses** behind dense belts of barbed wire.",
+      "impact": "Defensive firepower locked the Western Front in a costly **stalemate**, forcing commanders to search for distant overseas theatres to break the deadlock.",
+      "bridgeToNext": "Hoping to bypass the Western Front deadlock entirely, Allied strategists launched an amphibious invasion against Germany’s Ottoman ally in April 1915.",
+      "keyAgents": [
+        "Field Marshal Sir Douglas Haig"
+      ],
+      "keyTerms": [
+        {
+          "term": "Stalemate",
+          "definition": "A deadlocked military situation in which neither side can advance, outflank, or win a quick breakthrough."
+        },
+        {
+          "term": "No Man's Land",
+          "definition": "The shell-cratered ground between opposing front-line trenches, swept by machine-gun and artillery fire."
+        },
+        {
+          "term": "Artillery",
+          "definition": "Heavy long-range guns and howitzers responsible for roughly 60% of all Western Front battlefield casualties."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_6",
+      "num": 6,
+      "era": "part_2",
+      "date": "April–December 1915",
+      "shortDate": "Apr–Dec 1915",
+      "shortTitle": "Gallipoli & ANZAC Campaign",
+      "title": "The Gallipoli Landings & The Forging of ANZAC Identity",
+      "specTag": "Enquiry 3 • Global Theatres",
+      "enquiryQuestion": "Why were over four million colonial and dominion troops erased from popular memory?",
+      "lessonIndex": 2,
+      "stageNum": 3,
+      "imageUrl": "/images/gw_empire_needs_men.jpg",
+      "imageCaption": "Parliamentary Recruiting Committee Poster No. 58, 'The Empire Needs Men!' (March 1915): Dominion and colonial troops fought across Europe, Gallipoli, Mesopotamia, Palestine, and East Africa.",
+      "mapUrl": "/images/great_war_part2/maps/gw2_map_l3_global_empire_forgotten_fronts_1914_18.svg",
+      "mapCaption": "Reference Map: Allied imperial campaigns from Gallipoli and Suez to Mesopotamia, East Africa, and the Western Front.",
+      "catalyst": "Blocked by Western Front trenches, British leaders planned a naval and amphibious offensive at **Gallipoli** to knock the **Ottoman Empire** out of the war.",
+      "turningPoint": "Landing at dawn in **April 1915**, **Australian and New Zealand Army Corps (ANZAC)** and British troops were pinned beneath steep cliffs at Anzac Cove by entrenched Ottoman machine guns.",
+      "impact": "Eight months of brutal stalemate ended in total Allied evacuation, yet Dominion courage and sacrifice forged lasting **ANZAC national pride** in Australia and New Zealand.",
+      "bridgeToNext": "Mounting casualties at Gallipoli and in France slowed voluntary recruitment back in Britain, intensifying coercive social pressure on civilian men.",
+      "keyAgents": [
+        "British Empire & Colonial Forces (Indian Army, BWIR, ANZAC & CLC)"
+      ],
+      "keyTerms": [
+        {
+          "term": "British Empire",
+          "definition": "Britain’s global network of dominions, colonies, and protectorates, mobilising over four million personnel during 1914–1918."
+        },
+        {
+          "term": "Self-Determination",
+          "definition": "The political principle that nations and peoples have the right to govern themselves independently."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_7",
+      "num": 7,
+      "era": "part_2",
+      "date": "May 1915",
+      "shortDate": "May 1915",
+      "shortTitle": "White Feathers & Propaganda",
+      "title": "Coercive Patriotism: Posters, Verse & The White Feather",
+      "specTag": "Enquiry 1 • Social Coercion",
+      "enquiryQuestion": "Why were young British men so desperate to volunteer for the slaughter of 1914?",
+      "lessonIndex": 0,
+      "stageNum": 5,
+      "imageUrl": "/images/great_war_part2/gw2_l1_b4_women_of_britain_say_go_1915.jpg",
+      "imageCaption": "E. J. Kealey, Parliamentary Recruiting Committee Poster No. 75, 'Women of Britain Say—\"GO!\"' (May 1915, IWM PST 2763): Official posters and white feathers shamed hesitant men into uniform.",
+      "catalyst": "Once hopes that the war would be **'over by Christmas'** vanished under heavy 1915 casualty lists, early waves of eager volunteers began to dry up.",
+      "turningPoint": "Official posters like *'Women of Britain Say—GO!'*, **Jessie Pope’s** newspaper poems, and the civilian **White Feather Movement** publicly shamed men out of uniform as cowards.",
+      "impact": "Relentless social humiliation made staying in civilian clothes psychologically unbearable for thousands, yet even moral pressure could not replace industrial battlefield losses.",
+      "bridgeToNext": "At the very same moment in May 1915, an acute shortage of high-explosive shells sparked a political crisis and transformed British industry.",
+      "keyAgents": [
+        "Jessie Pope",
+        "Field Marshal Lord Kitchener"
+      ],
+      "keyTerms": [
+        {
+          "term": "White Feather",
+          "definition": "A traditional emblem of cowardice handed by civilian women to young men out of uniform to shame them into enlisting."
+        },
+        {
+          "term": "Jingoism",
+          "definition": "Aggressive, uncompromising wartime patriotism promoted through newspapers, music halls, and recruitment verse."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_8",
+      "num": 8,
+      "era": "part_2",
+      "date": "May 1915 – January 1916",
+      "shortDate": "1915–Jan 1916",
+      "shortTitle": "Shell Crisis & Conscription",
+      "title": "The 1915 Shell Crisis, Ministry of Munitions & Conscription",
+      "specTag": "Enquiry 4 • State Mobilisation",
+      "enquiryQuestion": "How far did the First World War transform life on Britain’s Home Front?",
+      "lessonIndex": 3,
+      "stageNum": 2,
+      "imageUrl": "/images/great_war_part2/gw2_l4_b1_ministry_of_munitions_shells_q30013.jpg",
+      "imageCaption": "Mass shell stockpiles inside a National Shell Filling Factory (Horace Nicholls, IWM Q 30013): David Lloyd George’s Ministry of Munitions ended the 1915 ammunition famine before conscription began in January 1916.",
+      "catalyst": "Frontline shell shortages exposed by *Daily Mail* headlines in **May 1915** collided with dwindling volunteer numbers by late 1915.",
+      "turningPoint": "**David Lloyd George** headed the new **Ministry of Munitions** building state factories, and in **January 1916** Parliament passed the **Military Service Act** introducing compulsory conscription.",
+      "impact": "State-directed industry multiplied shell output while conscripting men aged 18–41, though roughly **16,000 conscientious objectors**—including the **Richmond Sixteen**—refused service on moral grounds.",
+      "bridgeToNext": "Armed with vast new shell stockpiles and Kitchener’s citizen divisions, General Haig launched Britain’s biggest offensive on the Somme in July 1916.",
+      "keyAgents": [
+        "David Lloyd George",
+        "Field Marshal Lord Kitchener"
+      ],
+      "keyTerms": [
+        {
+          "term": "Conscription",
+          "definition": "Compulsory military service enforced by law under the Military Service Act of January 1916."
+        },
+        {
+          "term": "Conscientious Objector",
+          "definition": "A citizen who refused military combat on religious, moral, or political grounds, facing tribunal hearings or prison."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_9",
+      "num": 9,
+      "era": "part_2",
+      "date": "1 July 1916",
+      "shortDate": "1 Jul 1916",
+      "shortTitle": "Catastrophe on the Somme",
+      "title": "1 July 1916: The First Day of the Battle of the Somme",
+      "specTag": "Enquiry 2 • Attrition & Trauma",
+      "enquiryQuestion": "Why was the Somme so costly—and does General Haig deserve the blame?",
+      "lessonIndex": 1,
+      "stageNum": 4,
+      "imageUrl": "/images/great_war_part2/gw2_l2_b3_thiepval_memorial_somme.jpg",
+      "imageCaption": "Sir Edwin Lutyens’s Thiepval Memorial to the Missing of the Somme: Inscribed with over 72,000 British and South African servicemen with no known grave after the offensive opened on 1 July 1916.",
+      "mapUrl": "/images/great_war_part2/maps/gw2_map_l2_western_front_stalemate_somme_1914_18.svg",
+      "mapCaption": "Reference Map: The Somme sector in Picardy (1 July – November 1916), launched to relieve French forces besieged at Verdun.",
+      "catalyst": "Ordered to relieve French armies bleeding at **Verdun**, **General Sir Douglas Haig** preceded the Somme assault with a seven-day bombardment of **1.5 million shells**.",
+      "turningPoint": "Shrapnel shells failed to cut thick barbed wire and German defenders sheltered inside **30-foot concrete dugouts**, emerging with machine guns as Pals Battalions walked into No Man’s Land.",
+      "impact": "Britain suffered **57,470 casualties** (over 19,000 killed) on **1 July 1916**—the bloodiest day in British military history—devastating entire industrial towns.",
+      "bridgeToNext": "Sustaining vast offensives like the Somme required an immense global logistics network of colonial troops, carriers, and labourers behind the lines.",
+      "keyAgents": [
+        "Field Marshal Sir Douglas Haig"
+      ],
+      "keyTerms": [
+        {
+          "term": "Attrition",
+          "definition": "A strategy of wearing down an enemy army through continuous losses of soldiers, equipment, and morale."
+        },
+        {
+          "term": "Field Marshal Douglas Haig",
+          "definition": "Commander-in-Chief of the British Expeditionary Force (1915–1918), fiercely debated as either 'Butcher of the Somme' or modernising general."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_10",
+      "num": 10,
+      "era": "part_2",
+      "date": "1916–1918",
+      "shortDate": "1916–1918",
+      "shortTitle": "Imperial Carriers & Labour",
+      "title": "Sustaining Total War: BWIR, Chinese Labour & African Porters",
+      "specTag": "Enquiry 3 • Forgotten Fronts & Erasure",
+      "enquiryQuestion": "Why were over four million colonial and dominion troops erased from popular memory?",
+      "lessonIndex": 2,
+      "stageNum": 4,
+      "imageUrl": "/images/great_war_part2/gw2_l3_s3_chinese_labour_corps_boulogne_1917_q3915.jpg",
+      "imageCaption": "Chinese Labour Corps workers unloading heavy 9.2-inch artillery shells at Boulogne, France (12 August 1917, IWM Q 3915): Around 140,000 Chinese workers sustained Allied Western Front logistics.",
+      "mapUrl": "/images/great_war_part2/maps/gw2_map_l3_global_empire_forgotten_fronts_1914_18.svg",
+      "mapCaption": "Reference Map: Transoceanic shipping lifelines, 140,000 Chinese Labour Corps workers, 15,600 Caribbean BWIR troops, and over one million African Carrier Corps porters.",
+      "catalyst": "Industrial warfare devoured millions of tons of shells, rail tracks, and food while tsetse flies killed pack horses across the **East African campaign**.",
+      "turningPoint": "Over **140,000 Chinese Labour Corps** workers unloaded munitions in France, **15,600 British West Indies Regiment** volunteers served overseas, and over **one million African porters** hauled supplies on foot.",
+      "impact": "Despite vital service—alongside pioneering Black British officer **Walter Tull**—colonial workers faced camp segregation, unmarked East African graves, and exclusion from the **1919 London Victory Parade**.",
+      "bridgeToNext": "Just as imperial shipping sustained the armies abroad, German submarines struck Atlantic trade routes in 1917 to starve Britain’s Home Front.",
+      "keyAgents": [
+        "British Empire & Colonial Forces (Indian Army, BWIR, ANZAC & CLC)",
+        "Second Lieutenant Walter Tull"
+      ],
+      "keyTerms": [
+        {
+          "term": "Chinese Labour Corps",
+          "definition": "Roughly 140,000 Chinese civilian workers recruited to dig trenches, repair railways, and unload shells on the Western Front."
+        },
+        {
+          "term": "British West Indies Regiment",
+          "definition": "Over 15,600 Caribbean volunteers who served in Europe and the Middle East while facing harsh racial discrimination."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_11",
+      "num": 11,
+      "era": "part_3",
+      "date": "1917 – Early 1918",
+      "shortDate": "1917–Early 1918",
+      "shortTitle": "Canary Girls & Food Rationing",
+      "title": "Munitionettes, Unrestricted U-Boats & Compulsory Ration Books",
+      "specTag": "Enquiry 4 • Women’s War & Siege",
+      "enquiryQuestion": "How far did the First World War transform life on Britain’s Home Front?",
+      "lessonIndex": 3,
+      "stageNum": 5,
+      "imageUrl": "/images/great_war_part2/gw2_l4_b3_forbes_the_munition_girls_1918.jpg",
+      "imageCaption": "Stanhope Alexander Forbes, The Munition Girls (1918): Nearly one million female workers forged 80% of Britain’s shells while Compulsory Rationing answered the 1917 U-boat crisis.",
+      "catalyst": "With millions of men at the front, nearly **one million women** entered arms factories, while in early 1917 German **unrestricted U-boat warfare** cut Britain’s wheat reserves to six weeks.",
+      "turningPoint": "Female **'Canary Girls'** produced **80% of British shells** despite toxic TNT jaundice and the **1917 Silvertown explosion** (73 killed), while the state introduced **compulsory ration books** in early 1918.",
+      "impact": "Fair rationing of meat, sugar, and butter preserved civilian health alongside naval convoys, and women’s war service helped win the **Representation of the People Act (1918)**.",
+      "bridgeToNext": "Supplied by female factory workers at home, British armies on the Western Front combined new weapons and tactics to break the trench deadlock in 1918.",
+      "keyAgents": [
+        "Home Front Munitionettes (\"Canary Girls\") & DORA",
+        "David Lloyd George"
+      ],
+      "keyTerms": [
+        {
+          "term": "Canary Girls",
+          "definition": "Female munitions workers whose skin and hair turned bright yellow from daily exposure to toxic TNT powder."
+        },
+        {
+          "term": "Compulsory Rationing",
+          "definition": "State ration books introduced in early 1918 for sugar, meat, butter, and jam to guarantee fair shares during U-boat shortages."
+        },
+        {
+          "term": "Representation of the People Act",
+          "definition": "Landmark February 1918 law granting the parliamentary vote to all men over 21 and property-owning women over 30."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_12",
+      "num": 12,
+      "era": "part_3",
+      "date": "1917 – Autumn 1918",
+      "shortDate": "1917–Aut 1918",
+      "shortTitle": "Trauma & Combined-Arms War",
+      "title": "Trench Trauma, Haig’s Learning Curve & The Hundred Days",
+      "specTag": "Enquiry 2 • Tactical Evolution",
+      "enquiryQuestion": "Why was the Somme so costly—and does General Haig deserve the blame?",
+      "lessonIndex": 1,
+      "stageNum": 5,
+      "imageUrl": "/images/great_war_part2/gw2_l2_b2_flooded_trench_western_front_q4665.jpg",
+      "imageCaption": "Waterlogged frontline trench (January 1917, IWM Q 4665): Surviving freezing mud, trench foot, and shell shock, British forces evolved combined-arms tactics that broke the Hindenburg Line in 1918.",
+      "mapUrl": "/images/great_war_part2/maps/gw2_map_l2_western_front_stalemate_somme_1914_18.svg",
+      "mapCaption": "Reference Map: Western Front sectors from flooded Flanders mud at Ypres to the decisive August–November 1918 Allied Hundred Days advance.",
+      "catalyst": "Years of waterlogged mud and ceaseless howitzer fire inflicted agonising **trench foot** and psychological **shell shock**, fueling bitter criticism of Haig’s costly offensives.",
+      "turningPoint": "Revisionist historians highlight an industrial **learning curve**: British armies mastered **creeping artillery barrages**, **tanks**, aircraft reconnaissance, and infantry squad tactics during the **1918 Hundred Days Offensive**.",
+      "impact": "Combined-arms warfare shattered German defences from Amiens (August 1918) onward, though historians still debate whether Haig’s earlier attrition cost far too many lives.",
+      "bridgeToNext": "Reeling from the Allied Hundred Days advance and strangled by the naval blockade, Imperial Germany’s navy and home front erupted in mutiny.",
+      "keyAgents": [
+        "Field Marshal Sir Douglas Haig"
+      ],
+      "keyTerms": [
+        {
+          "term": "Trench Foot",
+          "definition": "A painful, necrotic infection caused by standing for days in freezing trench water and mud."
+        },
+        {
+          "term": "Shell Shock",
+          "definition": "Severe psychological and neurological trauma caused by prolonged concussive artillery bombardment."
+        },
+        {
+          "term": "Creeping Barrage",
+          "definition": "A rolling curtain of artillery fire timed to advance just ahead of attacking infantry to keep enemy gunners pinned down."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_13",
+      "num": 13,
+      "era": "part_3",
+      "date": "11 November 1918",
+      "shortDate": "11 Nov 1918",
+      "shortTitle": "Kiel Mutiny & 1918 Armistice",
+      "title": "German Collapse, Kaiser’s Flight & The Compiègne Armistice",
+      "specTag": "Enquiry 5 • Collapse & Ceasefire",
+      "enquiryQuestion": "Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?",
+      "lessonIndex": 4,
+      "stageNum": 1,
+      "imageUrl": "/images/great_war_part2/gw2_l5_b0_compiegne_armistice_carriage_1918.jpg",
+      "imageCaption": "Signing the Armistice inside Marshal Foch’s railway carriage at Compiègne (5:10 a.m., 11 November 1918): Following the Kiel naval mutiny and Kaiser Wilhelm II’s flight, fighting ceased at 11 a.m.",
+      "catalyst": "Defeated on the Western Front and starving under the Allied naval blockade, **German sailors at Kiel mutinied** when admirals ordered a suicidal final sea battle.",
+      "turningPoint": "Workers’ strikes swept German cities, **Kaiser Wilhelm II fled into exile in Holland**, and German envoys signed the **Armistice** in Marshal Foch’s railway carriage at **Compiègne** on **11 November 1918**.",
+      "impact": "Four years of industrial slaughter ended at 11 a.m., leaving the fledgling German **Weimar Republic** to face victorious Allied peacemakers in Paris.",
+      "bridgeToNext": "Two months later in January 1919, Allied leaders gathered in Paris with sharply clashing visions of vengeance, trade, and idealism.",
+      "keyAgents": [
+        "Georges Clemenceau",
+        "David Lloyd George",
+        "Woodrow Wilson"
+      ],
+      "keyTerms": [
+        {
+          "term": "Armistice",
+          "definition": "The formal military ceasefire signed at Compiègne on 11 November 1918 ending combat on the Western Front."
+        },
+        {
+          "term": "The Big Three",
+          "definition": "The three principal Allied leaders at Paris in 1919: Georges Clemenceau (France), David Lloyd George (Britain), and Woodrow Wilson (USA)."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_14",
+      "num": 14,
+      "era": "part_3",
+      "date": "January–May 1919",
+      "shortDate": "Jan–May 1919",
+      "shortTitle": "Paris & The Clashing Big Three",
+      "title": "The Paris Peace Conference & Conflicting Allied Agendas",
+      "specTag": "Enquiry 5 • Peacemaking Clashes",
+      "enquiryQuestion": "Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?",
+      "lessonIndex": 4,
+      "stageNum": 2,
+      "imageUrl": "/images/great_war_part2/gw2_l5_s2_big_four_paris_1919.jpg",
+      "imageCaption": "The Council of Four in Paris (27 May 1919, NARA 111-SC-45625): David Lloyd George, Vittorio Orlando, Georges Clemenceau, and Woodrow Wilson debated post-war Europe’s borders and reparations.",
+      "catalyst": "Invaded twice by Germany within fifty years and devastated along its northern provinces, France demanded ironclad security while undefeated America had suffered far lighter losses.",
+      "turningPoint": "At Paris, US President **Woodrow Wilson** pushed his **Fourteen Points** and **League of Nations**, French Premier **Georges Clemenceau** demanded crippling **reparations**, and **David Lloyd George** sought a middle course.",
+      "impact": "Locked out of the negotiations entirely, German delegates were handed an uncompromising compromise package backed by the threat of renewed Allied invasion.",
+      "bridgeToNext": "Presented with non-negotiable terms in the Hall of Mirrors, Germany was forced to sign the Treaty of Versailles on 28 June 1919.",
+      "keyAgents": [
+        "Woodrow Wilson",
+        "Georges Clemenceau",
+        "David Lloyd George"
+      ],
+      "keyTerms": [
+        {
+          "term": "Georges Clemenceau",
+          "definition": "Prime Minister of France ('The Tiger'), who demanded heavy reparations and military restrictions to shield France from future invasion."
+        },
+        {
+          "term": "Woodrow Wilson",
+          "definition": "US President who championed the idealistic Fourteen Points, national self-determination, and the League of Nations."
+        },
+        {
+          "term": "League of Nations",
+          "definition": "An international organisation founded in 1920 to keep world peace through collective security, initially excluding Germany."
+        }
+      ]
+    },
+    {
+      "id": "great_war_part2_ms_15",
+      "num": 15,
+      "era": "part_3",
+      "date": "28 June 1919",
+      "shortDate": "28 Jun 1919",
+      "shortTitle": "Versailles Treaty & Keynes",
+      "title": "The Treaty of Versailles, 'Diktat' & Warnings of Future War",
+      "specTag": "Enquiry 5 • The Flawed Peace",
+      "enquiryQuestion": "Did the Treaty of Versailles solve the problems of 1914, or create the nightmares of 1939?",
+      "lessonIndex": 4,
+      "stageNum": 3,
+      "imageUrl": "/images/great_war_part2/gw2_l5_b2_treaty_of_versailles_english_cover_1919.jpg",
+      "imageCaption": "Official British edition of the Treaty of Peace signed at Versailles (28 June 1919, HMSO): Enforcing Article 231 War Guilt, £6.6bn reparations, a 100,000-man army cap, and 13% territorial loss.",
+      "mapUrl": "/images/weimar_versailles_losses_1919_map_auth.png",
+      "mapCaption": "Reference Map: German European territorial losses (13%) and the demilitarised Rhineland imposed under the June 1919 Treaty of Versailles.",
+      "catalyst": "Forced to sign without negotiation, Germans across every political party condemned the settlement as a humiliating **'Diktat'** (dictated peace).",
+      "turningPoint": "Signed on **28 June 1919**, Versailles imposed **Article 231 War Guilt**, **£6.6 billion reparations**, loss of all colonies and **13% of European land**, a **demilitarised Rhineland**, and a **100,000-man army** cap.",
+      "impact": "Economist **John Maynard Keynes** warned of a destructive **'Carthaginian peace'** and cartoonist **Will Dyson** wept for the **'1940 Class'**—fears borne out when Allied enforcement collapsed in the 1930s.",
+      "bridgeToNext": "Bitter resentment over Versailles and the shock of the Great Depression destabilised Weimar democracy and paved the road toward a second global conflict in 1939.",
+      "keyAgents": [
+        "John Maynard Keynes",
+        "Georges Clemenceau",
+        "Woodrow Wilson",
+        "David Lloyd George"
+      ],
+      "keyTerms": [
+        {
+          "term": "Article 231",
+          "definition": "The 'War Guilt Clause' of the Treaty of Versailles forcing Germany to accept sole moral and legal blame for causing the war."
+        },
+        {
+          "term": "Diktat",
+          "definition": "German term for a 'dictated peace', expressing fury that Germany was barred from talks and forced to sign under threat of invasion."
+        },
+        {
+          "term": "Reparations",
+          "definition": "Compulsory financial compensation demanded from defeated Germany, fixed at £6.6 billion in 1921."
+        },
+        {
+          "term": "Demilitarized Zone",
+          "definition": "A border region—such as the German Rhineland after 1919—where troops, weapons, and fortifications are banned by treaty."
+        }
+      ]
+    }
+  ]
+}

@@ -20,6 +20,7 @@
  */
 
 import * as CmeTimelineData from './data/cme/timeline_data.js';
+import { openTimelinePrintModal } from './engine/timeline_print_helper.js';
 
 const ERA_CONFIG = {
   kt1: {
@@ -748,6 +749,8 @@ export function renderCMELivingTimeline(container) {
   let currentEraFilter = 'all'; // 'all' | 'kt1' | 'kt2' | 'kt3a' | 'kt3b'
   let searchQuery = '';
   let isTourPlaying = false;
+  let recallMode = false;
+  const revealedConseqIdx = new Set();
   let lightboxState = { open: false, milestoneIdx: 0, mode: 'source' };
 
   function getFilteredList() {
@@ -2356,6 +2359,24 @@ export function renderCMELivingTimeline(container) {
         border-color: rgba(94, 234, 212, 0.45);
       }
 
+      @media (min-width: 933px) {
+        body:has(.app-header.has-back-btn) .cme-tl-return-pill {
+          display: none;
+        }
+        body:has(.app-header.has-back-btn) .cme-tl-topbar {
+          justify-content: flex-end;
+          margin-bottom: 6px;
+        }
+      }
+      body.hh-mobile-pupil-mode:not(.staff-mode-active) .cme-staff-print-btn {
+        display: none !important;
+      }
+      .cme-recall-blur {
+        filter: blur(5.5px);
+        user-select: none;
+        cursor: pointer;
+        transition: filter 0.18s ease;
+      }
       @media print {
         .cme-tl-topbar,
         .cme-tl-header-controls,
@@ -2398,8 +2419,16 @@ export function renderCMELivingTimeline(container) {
             </button>
           </div>
 
+          <button type="button" class="cme-tl-hdr-btn" id="cme-tl-recall-btn" title="Blur Consequences & Narrative Bridges to test active recall!">
+            🙈 Recall Test
+          </button>
+
           <button type="button" class="cme-tl-hdr-btn" id="cme-tl-tour-btn">
             ▶ Classroom Tour
+          </button>
+
+          <button type="button" class="cme-tl-hdr-btn cme-staff-print-btn" id="cme-tl-print-btn" title="Print A4 Landscape Revision or Recall Sheet">
+            🖨️ Print
           </button>
         </div>
       </header>
@@ -2489,6 +2518,11 @@ export function renderCMELivingTimeline(container) {
     if (tourBtn) {
       tourBtn.classList.toggle('tour-active', isTourPlaying);
       tourBtn.textContent = isTourPlaying ? '⏸ Pause Tour' : '▶ Classroom Tour';
+    }
+    const recallBtn = rootEl.querySelector('#cme-tl-recall-btn');
+    if (recallBtn) {
+      recallBtn.classList.toggle('tour-active', recallMode);
+      recallBtn.textContent = recallMode ? '🙈 Recall ON' : '🙈 Recall Test';
     }
     if (searchClearBtn) {
       searchClearBtn.classList.toggle('visible', searchQuery.length > 0);
@@ -2752,8 +2786,15 @@ export function renderCMELivingTimeline(container) {
             </div>
 
             <div class="cme-beat-card beat-consequence">
-              <span class="cme-beat-label">3. HISTORICAL CONSEQUENCE</span>
-              <div class="cme-beat-text">${formatCleanText(m.consequence)}</div>
+              <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
+                <span class="cme-beat-label">3. HISTORICAL CONSEQUENCE</span>
+                ${
+                  recallMode && !revealedConseqIdx.has(m.globalIdx)
+                    ? `<button type="button" data-action="reveal-conseq" data-global-idx="${m.globalIdx}" style="background:#059669;color:#fff;border:none;border-radius:4px;padding:2px 8px;font-size:0.66rem;font-weight:800;cursor:pointer;">👁️ Reveal &amp; Check</button>`
+                    : ''
+                }
+              </div>
+              <div class="cme-beat-text ${recallMode && !revealedConseqIdx.has(m.globalIdx) ? 'cme-recall-blur' : ''}" data-action="reveal-conseq" data-global-idx="${m.globalIdx}">${formatCleanText(m.consequence)}</div>
             </div>
           </div>
 
@@ -2769,7 +2810,7 @@ export function renderCMELivingTimeline(container) {
                 </span>
                 <span class="cme-bridge-q2-tag">8-Mark Narrative Account</span>
               </div>
-              <div class="cme-bridge-text">${formatCleanText(m.narrativeLinkToNext)}</div>
+              <div class="cme-bridge-text ${recallMode && !revealedConseqIdx.has(m.globalIdx) ? 'cme-recall-blur' : ''}" data-action="reveal-conseq" data-global-idx="${m.globalIdx}">${formatCleanText(m.narrativeLinkToNext)}</div>
             </div>
 
             ${nextMilestone
@@ -3078,6 +3119,30 @@ export function renderCMELivingTimeline(container) {
       return;
     }
 
+    if (e.target.closest('#cme-tl-recall-btn')) {
+      recallMode = !recallMode;
+      revealedConseqIdx.clear();
+      renderStageArea(false);
+      return;
+    }
+
+    if (e.target.closest('#cme-tl-print-btn')) {
+      openTimelinePrintModal({
+        courseTitle: 'Conflict in the Middle East, 1945–1995 (1HI0/P5)',
+        subtitle: 'Edexcel Paper 2 Period Study • Living Chronology',
+        colHeaders: ['Date & Key Topic', 'Turning Point & Spec Terms', 'Trigger & Key Action', 'Consequence & Q2 Narrative Link'],
+        rows: allMilestones.map((m) => ({
+          eraBadge: m.ktBadge,
+          date: m.date,
+          title: m.title,
+          terms: (m.keyTerms || []).join(' • '),
+          col3: `${m.trigger} ${m.action}`,
+          col4: `${m.consequence} → ${m.narrativeLinkToNext || ''}`,
+        })),
+      });
+      return;
+    }
+
     const eraPill = e.target.closest('.cme-era-filter-pill');
     if (eraPill) {
       currentEraFilter = eraPill.dataset.era || 'all';
@@ -3136,6 +3201,12 @@ export function renderCMELivingTimeline(container) {
       const gIdx = parseInt(actionEl.dataset.globalIdx, 10);
       const mMode = actionEl.dataset.visMode || 'source';
       if (!Number.isNaN(gIdx)) openLightbox(gIdx, mMode);
+    } else if (action === 'reveal-conseq' && recallMode) {
+      const gIdx = parseInt(actionEl.dataset.globalIdx, 10);
+      if (!Number.isNaN(gIdx) && !revealedConseqIdx.has(gIdx)) {
+        revealedConseqIdx.add(gIdx);
+        renderStageArea(false);
+      }
     } else if (action === 'bridge-step-global') {
       const gIdx = parseInt(actionEl.dataset.globalIdx, 10);
       if (!Number.isNaN(gIdx) && allMilestones[gIdx]) {

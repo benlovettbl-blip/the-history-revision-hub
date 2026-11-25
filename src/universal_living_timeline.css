@@ -54,6 +54,71 @@
   margin-bottom: 10px;
 }
 
+@media (min-width: 933px) {
+  body:has(.app-header.has-back-btn) .ult-return-pill {
+    display: none;
+  }
+  body:has(.app-header.has-back-btn) .ult-topbar {
+    justify-content: flex-end;
+    margin-bottom: 6px;
+  }
+}
+
+body.hh-mobile-pupil-mode:not(.staff-mode-active) .ult-staff-print-btn {
+  display: none !important;
+}
+
+.ult-recall-blur {
+  filter: blur(5.5px);
+  user-select: none;
+  cursor: pointer;
+  transition: filter 0.18s ease;
+}
+
+.ult-stream-pills {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding-top: 7px;
+  margin-top: 7px;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.ult-stream-pill {
+  background: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  color: #334155;
+  border-radius: 999px;
+  padding: 4px 11px;
+  font-size: 0.74rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.ult-stream-pill.active {
+  background: #1e3a8a;
+  border-color: #1e3a8a;
+  color: #ffffff;
+}
+
+[data-theme='space'] .ult-stream-pills {
+  border-top-color: #334155;
+}
+
+[data-theme='space'] .ult-stream-pill {
+  background: #0f172a;
+  border-color: #475569;
+  color: #e2e8f0;
+}
+
+[data-theme='space'] .ult-stream-pill.active {
+  background: #2563eb;
+  border-color: #60a5fa;
+  color: #ffffff;
+}
+
 .ult-return-pill {
   display: inline-flex;
   align-items: center;

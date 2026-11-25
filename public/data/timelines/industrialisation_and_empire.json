@@ -1,0 +1,577 @@
+{
+  "unitId": "industrialisation_and_empire",
+  "schemaVersion": "v1-curated-living-timeline",
+  "courseTitle": "The Industrial Revolution: Steam, Protest & Reform (1750–1872)",
+  "eyebrow": "Key Stage 3 History • Industrial Britain Enquiry",
+  "beatLabels": {
+    "catalyst": "1. Context & Trigger",
+    "turningPoint": "2. Key Turning Point",
+    "impact": "3. Historical Consequence",
+    "bridgeBadge": "🔗 Leads To Next"
+  },
+  "streamFilters": [],
+  "eras": [
+    {
+      "id": "part_1",
+      "code": "Part 1",
+      "badge": "PART 1 • 1750–1810",
+      "pillLabel": "Part 1: Steam, Iron & Mills",
+      "title": "Part 1: Coal, Henry Cort’s Iron & The Rise of Steam Factories (1750–1810)",
+      "color": "#1e3a8a",
+      "accent": "#2563eb",
+      "softBg": "#eff6ff",
+      "softBorder": "#bfdbfe"
+    },
+    {
+      "id": "part_2",
+      "code": "Part 2",
+      "badge": "PART 2 • 1811–1836",
+      "pillLabel": "Part 2: Protest & Early Reform",
+      "title": "Part 2: Popular Protest, Cholera & The First Reform Wave (1811–1836)",
+      "color": "#991b1b",
+      "accent": "#dc2626",
+      "softBg": "#fef2f2",
+      "softBorder": "#fecaca"
+    },
+    {
+      "id": "part_3",
+      "code": "Part 3",
+      "badge": "PART 3 • 1838–1872",
+      "pillLabel": "Part 3: Health & Democracy",
+      "title": "Part 3: Sanitary Engineering, Chartism & The Secret Ballot (1838–1872)",
+      "color": "#0f766e",
+      "accent": "#0d9488",
+      "softBg": "#f0fdfa",
+      "softBorder": "#99f6e4"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "industrialisation_and_empire_ms_1",
+      "num": 1,
+      "era": "part_1",
+      "date": "1750–1770",
+      "shortDate": "1750–1770",
+      "shortTitle": "Charcoal Crisis & Pig Iron",
+      "title": "The Charcoal Bottleneck & Brittle Pig Iron Crisis",
+      "specTag": "Resource Bottleneck & Naval Vulnerability",
+      "enquiryQuestion": "Why did wood shortages and brittle pig iron hold back British industry?",
+      "lessonIndex": 0,
+      "stageNum": 1,
+      "imageUrl": "/images/ks3_ind/ind_l1_s0_coalbrookdale_by_night_1801.jpg",
+      "imageCaption": "Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801, Science Museum London 1952-446): Coke-fired blast furnaces in Shropshire symbolising Britain’s shift from scarce woodland charcoal to mineral coal.",
+      "mapUrl": "/images/industrialisation_and_empire/maps/ind_map_l1_britain_coalfields_steam_iron_1750_1830.svg",
+      "mapCaption": "Reference Map: Britain’s Industrial Revolution (1750–1830)—major coalfields, Boulton & Watt rotary steam engines, Lancashire cotton mills, Coalbrookdale, and Henry Cort’s Funtley Ironworks.",
+      "catalyst": "Centuries of shipbuilding and smelting stripped England’s ancient **oak woodlands**, creating a severe **charcoal shortage** across mid-eighteenth-century Britain.",
+      "turningPoint": "Early coal-fired blast furnaces produced **brittle pig iron** poisoned with carbon and sulphur impurities that shattered under heavy forge hammers.",
+      "impact": "Britain was forced to import **50,000 tons of Swedish Orgrounds iron** annually across vulnerable Baltic sea lanes to equip the **Royal Navy**.",
+      "bridgeToNext": "Expanding coal mines and metalworks urgently needed reliable mechanical power, inspiring **James Watt** to revolutionise the steam engine.",
+      "keyAgents": [
+        "Henry Cort",
+        "Royal Navy"
+      ],
+      "keyTerms": [
+        {
+          "term": "Pig Iron",
+          "definition": "Crude, brittle iron straight from a blast furnace containing excessive carbon and sulphur impurities that snapped under pressure."
+        },
+        {
+          "term": "Baltic Bottleneck",
+          "definition": "Britain’s dangerous wartime dependence on importing over 50,000 tons of malleable iron annually from Sweden and Russia."
+        },
+        {
+          "term": "Orgrounds Iron",
+          "definition": "High-grade Swedish charcoal-smelted wrought iron long used as the benchmark for Royal Navy warship anchors and fittings."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_2",
+      "num": 2,
+      "era": "part_1",
+      "date": "1769–1781",
+      "shortDate": "1769–1781",
+      "shortTitle": "Watt’s Rotary Steam Engine",
+      "title": "James Watt, Soho & The Rotary Steam Revolution",
+      "specTag": "Coal Energy & Factory Mobility",
+      "enquiryQuestion": "How did James Watt’s rotary steam engine free factories from rivers?",
+      "lessonIndex": 0,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_ind/ind_l1_b1_watt_rotative_diagram_1782.jpg",
+      "imageCaption": "Technical Cross-Section of James Watt’s Double-Acting Rotative Steam Engine (1782, Soho / Birmingham): Combining the separate condenser with sun-and-planet gearing freed British factories from rural river valleys.",
+      "mapUrl": "/images/industrialisation_and_empire/maps/ind_map_l1_britain_coalfields_steam_iron_1750_1830.svg",
+      "mapCaption": "Reference Map: Major British coalfields and Boulton & Watt rotary steam engine centres (1750–1830).",
+      "catalyst": "Waterwheels froze in winter frosts and stalled in summer droughts, while Thomas Newcomen’s early atmospheric steam engines wasted vast amounts of coal.",
+      "turningPoint": "In 1769 **James Watt** patented his fuel-saving **separate condenser**, then partnered with **Matthew Boulton** in Birmingham to engineer smooth **rotary shaft motion** by 1781.",
+      "impact": "Liberated heavy manufacturing from remote river valleys so giant mills and ironworks could operate continuously wherever **pit coal** could be delivered.",
+      "bridgeToNext": "Steam-powered factories and warships demanded tough domestic wrought iron, driving **Henry Cort** at Funtley to solve Britain’s metallurgical crisis.",
+      "keyAgents": [
+        "James Watt",
+        "Matthew Boulton"
+      ],
+      "keyTerms": [
+        {
+          "term": "Industrial Revolution",
+          "definition": "The rapid transformation of manufacturing, transport, and daily life driven by coal, steam, and iron from 1750."
+        },
+        {
+          "term": "Domestic System",
+          "definition": "The traditional method of handcrafting textiles and goods in rural cottages using muscle, wind, or seasonal water power."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_3",
+      "num": 3,
+      "era": "part_1",
+      "date": "1775 – March 1787",
+      "shortDate": "1775–Mar 1787",
+      "shortTitle": "Cort’s Funtley Iron Trials",
+      "title": "Henry Cort’s Puddling Furnace, Grooved Rollers & Portsmouth Trials",
+      "specTag": "Metallurgy & Naval Self-Sufficiency",
+      "enquiryQuestion": "What did the 1787 Portsmouth Dockyard trials prove about Cort’s iron?",
+      "lessonIndex": 0,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_ind/ind_l1_b3_iron_grooved_rolling_mill_pass.jpg",
+      "imageCaption": "J. Pass, Rolling Mill — Machines for Rolling Bars and Plates of Iron (1826, Wellcome Collection V0024519): Collared and grooved cylinders of the type patented by Henry Cort at Funtley in 1783–1784.",
+      "mapUrl": "/images/industrialisation_and_empire/maps/ind_map_l1_britain_coalfields_steam_iron_1750_1830.svg",
+      "mapCaption": "Reference Map: Hampshire inset showing Henry Cort’s Funtley Ironworks on the River Meon and Portsmouth Royal Dockyard.",
+      "catalyst": "Leasing **Funtley Ironworks** in Hampshire in 1775, Fareham naval agent **Henry Cort** sought to refine cheap British pig iron using abundant pit coal without sulphur contamination.",
+      "turningPoint": "Cort patented his **reverberatory puddling furnace** and **grooved rolling mill** (1783–1784)—shaping wrought-iron bars **fifteen times faster** than hammers—before passing gruelling **March 1787 Portsmouth Dockyard** forge trials.",
+      "impact": "Ended dependence on Swedish imports, boosted British wrought-iron output **400%**, and forged shatter-resistant anchors and machinery for the Victorian Empire.",
+      "bridgeToNext": "Cheap wrought iron and rotary steam engines concentrated spinning mules and powerlooms inside **centralised textile mills**, transforming daily working life.",
+      "keyAgents": [
+        "Henry Cort",
+        "Isambard Kingdom Brunel"
+      ],
+      "keyTerms": [
+        {
+          "term": "Puddling Process",
+          "definition": "Cort’s method of stirring molten pig iron in a reverberatory furnace to burn away carbon impurities without touching coal fuel."
+        },
+        {
+          "term": "Grooved Rolling Mill",
+          "definition": "Cort’s mechanized grooved iron cylinders that squeezed out glassy slag and shaped bars fifteen times faster than forge hammers."
+        },
+        {
+          "term": "Wrought Iron",
+          "definition": "Tough, malleable low-carbon iron capable of bending and enduring heavy shock without shattering."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_4",
+      "num": 4,
+      "era": "part_1",
+      "date": "c. 1785–1810",
+      "shortDate": "1785–1810",
+      "shortTitle": "Steam Mills & Factory Clocks",
+      "title": "Death of Cottage Handlooms & Tyranny of the Factory Clock",
+      "specTag": "Mechanisation & Industrial Discipline",
+      "enquiryQuestion": "How did strict clocks, fines, and cotton dust harm textile mill hands?",
+      "lessonIndex": 1,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_ind/ind_l2_b1_crompton_spinning_mule_mill.jpg",
+      "imageCaption": "Thomas Allom, Mule Spinning (1834, Wellcome Collection V0024077): Overhead belt line-shafting drove hundreds of spinning-mule spindles in sweltering, dust-filled rooms governed by the factory clock.",
+      "catalyst": "Rural families who once wove cloth on **domestic handlooms** at their own pace could no longer compete with the output and low prices of steam-driven textile machinery.",
+      "turningPoint": "Multi-storey **textile mills** enforced rigid **fourteen-hour shifts** in temperatures above **80°F**, using locked doors and **pence-deduction fines** for arriving minutes late or opening a window.",
+      "impact": "Destroyed artisan independence, trapping thousands of mill hands—and **pauper child scavengers** crawling beneath moving mules—in choking cotton dust and unguarded gears.",
+      "bridgeToNext": "As steam powerlooms slashed artisan cloth wages toward starvation, skilled northern weavers turned to nocturnal machine-breaking under **General Ned Ludd**.",
+      "keyAgents": [
+        "Lord Shaftesbury"
+      ],
+      "keyTerms": [
+        {
+          "term": "Textile Mill",
+          "definition": "Large steam-powered factories where cotton and wool were spun and woven into cloth by industrial machines."
+        },
+        {
+          "term": "Child Labour",
+          "definition": "The widespread employment of young children—often destitute workhouse apprentices—as scavengers and piecers in hazardous mills."
+        },
+        {
+          "term": "Workhouse",
+          "definition": "Harsh parish Poor Law institutions from which orphan apprentices were frequently sent north into textile factories."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_5",
+      "num": 5,
+      "era": "part_2",
+      "date": "1811–1816",
+      "shortDate": "1811–1816",
+      "shortTitle": "General Ludd’s Machine Raids",
+      "title": "The Luddite Rebellion & The 1812 Frame-Breaking Act",
+      "specTag": "Artisan Sabotage & State Repression",
+      "enquiryQuestion": "Why did northern weavers smash steam looms under \"General Ned Ludd\"?",
+      "lessonIndex": 3,
+      "stageNum": 1,
+      "imageUrl": "/images/leader_of_the_luddites.jpg",
+      "imageCaption": "The Leader of the Luddites (May 1812, British Museum 1873,0712.809): Hand-coloured etching of a follower of mythical \"General Ned Ludd\" leading nocturnal machine-breaking raids across northern textile districts.",
+      "catalyst": "Rapid introduction of wide knitting frames and steam powerlooms triggered catastrophic **wage collapses** and winter hunger among skilled textile artisans across Nottinghamshire, Yorkshire, and Lancashire.",
+      "turningPoint": "Organising secretly under mythical **\"General Ned Ludd\"**, masked craftsmen launched disciplined midnight **sledgehammer raids** to smash wage-cutting frames; Parliament answered with the **1812 Frame-Breaking Act**.",
+      "impact": "Machine-breaking became a **capital hanging offence** as Westminster stationed **12,000 soldiers** across the industrial north—more troops than Wellington commanded in Spain.",
+      "bridgeToNext": "With workplace sabotage crushed by troops and gallows, northern workers turned to mass peaceful rallies for **parliamentary reform**, culminating at St Peter’s Field in 1819.",
+      "keyAgents": [
+        "Earl Grey",
+        "William Lovett"
+      ],
+      "keyTerms": [
+        {
+          "term": "Franchise",
+          "definition": "The constitutional right to cast a vote in parliamentary or municipal elections."
+        },
+        {
+          "term": "Laissez-faire",
+          "definition": "The doctrine that governments should not regulate wages or protect craft workers from mechanised competition."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_6",
+      "num": 6,
+      "era": "part_2",
+      "date": "16 August 1819",
+      "shortDate": "16 Aug 1819",
+      "shortTitle": "The Peterloo Massacre",
+      "title": "Sabres at St Peter’s Field: The Peterloo Massacre",
+      "specTag": "Democratic Protest & Tory Repression",
+      "enquiryQuestion": "What happened when 60,000 peaceful protesters met in Manchester in 1819?",
+      "lessonIndex": 3,
+      "stageNum": 2,
+      "imageUrl": "/images/ks3_ind/ind_l4_b1_peterloo_dreadful_scene_1819.jpg",
+      "imageCaption": "A Meeting of the Radical Reformers on St Peter’s Place, Manchester (27 August 1819): Unarmed families in Sunday best carrying \"Universal Suffrage\" banners cut down by the Manchester Yeomanry.",
+      "mapUrl": "/images/industrialisation_and_empire/maps/ind_map_l5_rotten_boroughs_protest_reform_1819_1872.svg",
+      "mapCaption": "Reference Map: Protest, Rotten Boroughs & Parliamentary Reform in Great Britain (1819–1872)—marking Peterloo in unrepresented Manchester.",
+      "catalyst": "Excluded from voting despite booming populations, **60,000 unarmed men, women, and children** dressed in their Sunday best gathered peacefully at **St Peter’s Field, Manchester**, demanding suffrage and cheaper bread.",
+      "turningPoint": "Panicked local magistrates ordered the mounted **Manchester Yeomanry** to charge the packed crowd with drawn sabres, **killing eighteen** citizens and injuring over **six hundred**.",
+      "impact": "Instead of punishing the magistrates, Lord Liverpool’s government passed the repressive **Tory Six Acts**, outlawing large reform meetings and taxing radical newspapers.",
+      "bridgeToNext": "Eleven years later, mechanisation and starvation wages ignited southern England’s countryside in the **1830 Captain Swing harvest riots**.",
+      "keyAgents": [
+        "William Lovett",
+        "Earl Grey"
+      ],
+      "keyTerms": [
+        {
+          "term": "Peterloo Massacre",
+          "definition": "The fatal cavalry charge into a peaceful crowd of 60,000 reform demonstrators at St Peter’s Field, Manchester, on 16 August 1819."
+        },
+        {
+          "term": "Rotten Borough",
+          "definition": "A decayed rural constituency with tiny voter numbers that returned two MPs while Manchester had zero."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_7",
+      "num": 7,
+      "era": "part_2",
+      "date": "November – December 1830",
+      "shortDate": "Nov–Dec 1830",
+      "shortTitle": "Swing Riots & Winchester Trials",
+      "title": "Captain Swing Harvest Riots & The Winchester Special Assizes",
+      "specTag": "Rural Revolt & Penal Transportation",
+      "enquiryQuestion": "How harshly did the 1830 Winchester trials punish Hampshire rioters?",
+      "lessonIndex": 3,
+      "stageNum": 4,
+      "imageUrl": "/images/captain_swing_portrait.jpg",
+      "imageCaption": "An Original Portrait of Captain Swing (December 1830, British Museum 1948,0214.941): Satirical print personifying the mythical leader of the southern harvest riots out of burning straw ricks.",
+      "mapUrl": "/images/industrialisation_and_empire/maps/ind_map_l5_rotten_boroughs_protest_reform_1819_1872.svg",
+      "mapCaption": "Reference Map: Southern England agrarian unrest, Winchester, and Tolpuddle alongside Britain’s parliamentary reform flashpoints (1819–1872).",
+      "catalyst": "Enclosure of common land and newly introduced **mechanical threshing machines** wiped out winter farm wages across Hampshire and southern England, leaving rural families facing starvation.",
+      "turningPoint": "Sending letters signed **\"Captain Swing\"** demanding two shillings a day, labourers smashed threshers and burned hayricks—until **December 1830 Winchester Special Assizes** tried 300 Hampshire workers.",
+      "impact": "Judges publicly hanged nineteen-year-old **Henry Cook** of Micheldever and sentenced over **400 farmhands** nationwide to **Australian penal transportation**, crushing open rural revolt.",
+      "bridgeToNext": "While countryside protests were crushed, overcrowded northern factory boomtowns collided in **October 1831** with a terrifying waterborne pandemic: **Asiatic cholera**.",
+      "keyAgents": [
+        "Earl Grey"
+      ],
+      "keyTerms": [
+        {
+          "term": "Swing Riots",
+          "definition": "The 1830 wave of southern agricultural protest involving threshing-machine breaking and hayrick burning for living wages."
+        },
+        {
+          "term": "Workhouse",
+          "definition": "Parish institution dreaded by impoverished farm labourers whose winter wages vanished to threshing machines."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_8",
+      "num": 8,
+      "era": "part_2",
+      "date": "1800 – October 1831",
+      "shortDate": "Oct 1831",
+      "shortTitle": "Slum Courts & King Cholera",
+      "title": "Back-to-Back Industrial Slums & The 1831 Cholera Pandemic",
+      "specTag": "Urban Squalor & Epidemic Crisis",
+      "enquiryQuestion": "Why did the 1831 cholera epidemic frighten rich districts into action?",
+      "lessonIndex": 2,
+      "stageNum": 3,
+      "imageUrl": "/images/ks3_ind/ind_l3_b0_industrial_slum_court_annan.jpg",
+      "imageCaption": "Thomas Annan, Broad Close, No. 167 High Street (1868): Narrow, sunless urban tenement closes and back-to-back courts where families shared overflowing privies and contaminated street pumps.",
+      "catalyst": "Unregulated speculative landlords packed migrant mill families into airless **back-to-back courts** and flooded cellars where overflowing privies seeped into shallow drinking wells.",
+      "turningPoint": "In **October 1831**, waterborne **Asiatic cholera** (\"the Blue Terror\") struck Britain, killing victims within **twelve hours** through violent dehydration as doctors mistakenly blamed **miasma**.",
+      "impact": "Because cholera killed wealthy ratepayers as well as slum dwellers, epidemic terror began shattering **laissez-faire** complacency toward municipal filth.",
+      "bridgeToNext": "During the same autumn of **October 1831**, House of Lords resistance to voting reform sparked fiery riots in Bristol and a constitutional crisis.",
+      "keyAgents": [
+        "Edwin Chadwick"
+      ],
+      "keyTerms": [
+        {
+          "term": "Urbanisation",
+          "definition": "The rapid migration of rural populations into overcrowded industrial towns such as Manchester, Leeds, and Sheffield."
+        },
+        {
+          "term": "Cholera",
+          "definition": "A deadly waterborne bacterial disease spread through sewage-contaminated pumps that swept Victorian towns from 1831."
+        },
+        {
+          "term": "Cesspool",
+          "definition": "An unlined underground sewage pit beneath tenements that frequently leaked waste into nearby drinking wells."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_9",
+      "num": 9,
+      "era": "part_2",
+      "date": "October 1831 – June 1832",
+      "shortDate": "Jun 1832",
+      "shortTitle": "1832 Great Reform Act",
+      "title": "Bristol Riots, Days of May & The 1832 Great Reform Act",
+      "specTag": "Rotten Boroughs Abolished & £10 Franchise",
+      "enquiryQuestion": "Why did working-class labourers feel betrayed by the 1832 Reform Act?",
+      "lessonIndex": 4,
+      "stageNum": 3,
+      "imageUrl": "/images/ks3_ind/ind_l5_b2_earl_grey_lawrence_npg.jpg",
+      "imageCaption": "Charles Grey, 2nd Earl Grey (after Sir Thomas Lawrence, National Portrait Gallery NPG 51): Whig Prime Minister whose June 1832 Great Reform Act abolished 56 rotten boroughs while keeping a £10 voter threshold.",
+      "mapUrl": "/images/ks3_ind/ind_l5_s0_map_rotten_boroughs_1832.jpg",
+      "mapCaption": "W. & A. K. Johnston, Parliamentary Representation Down to the Reform Bill of 1832 (1902): Highlighting decayed southern rotten boroughs like Old Sarum disenfranchised in 1832.",
+      "catalyst": "Under **5% of adult men** could vote: deserted **Old Sarum** returned two MPs while **Manchester, Birmingham, and Leeds** had zero—and Lords rejection sparked the **October 1831 Bristol Riots**.",
+      "turningPoint": "After the May 1832 **\"Stop the Duke, go for gold\"** bank run forced the Lords to yield, **Earl Grey’s June 1832 Great Reform Act** abolished **56 rotten boroughs** and enfranchised industrial cities.",
+      "impact": "By restricting borough votes to **£10 male householders**, the Act enfranchised middle-class factory owners while shutting out working-class labourers in a **\"Great Betrayal\"**.",
+      "bridgeToNext": "That same reformed Parliament immediately confronted shocking **1832 Sadler Committee** evidence exposing the mutilation and beating of mill children.",
+      "keyAgents": [
+        "Earl Grey",
+        "William Lovett"
+      ],
+      "keyTerms": [
+        {
+          "term": "1832 Great Reform Act",
+          "definition": "Landmark statute abolishing 56 rotten boroughs and granting MPs to industrial cities while restricting votes to £10 householders."
+        },
+        {
+          "term": "Pocket Borough",
+          "definition": "A parliamentary seat controlled (\"in the pocket of\") a single wealthy landowner who dictated election outcomes."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_10",
+      "num": 10,
+      "era": "part_2",
+      "date": "March 1832 – August 1833",
+      "shortDate": "Aug 1833",
+      "shortTitle": "Sadler Report & 1833 Act",
+      "title": "Matthew Crabtree’s Testimony & Lord Shaftesbury’s 1833 Factory Act",
+      "specTag": "Statutory Child Protection & Inspection",
+      "enquiryQuestion": "How did the 1833 Factory Act begin protecting young mill children?",
+      "lessonIndex": 1,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_ind/ind_l2_b4_lord_shaftesbury_watts_npg.jpg",
+      "imageCaption": "Anthony Ashley-Cooper, 7th Earl of Shaftesbury (G. F. Watts, National Portrait Gallery NPG 1012): Parliamentary champion of the landmark 1833 Factory Act and statutory factory inspection.",
+      "catalyst": "In March 1832 former child worker **Matthew Crabtree** testified to **Michael Sadler’s Committee** about starting mill work at age eight, enduring **14–16 hour shifts**, leather-strap beatings, and bowed legs.",
+      "turningPoint": "Championed by **Lord Shaftesbury**, Parliament passed the **August 1833 Factory Act**, banning textile work under age **nine**, capping hours for ages 9–13 at eight hours, and mandating two hours’ schooling.",
+      "impact": "Crucially appointed Britain’s **first four statutory factory inspectors**, establishing the principle that state law could regulate private industrial capitalism.",
+      "bridgeToNext": "While Parliament cautiously regulated child mill hours, rural magistrates in Dorset moved in **1834** to crush peaceful farmworker trade unions at **Tolpuddle**.",
+      "keyAgents": [
+        "Lord Shaftesbury"
+      ],
+      "keyTerms": [
+        {
+          "term": "Factory Acts",
+          "definition": "Parliamentary statutes beginning in 1833 that banned very young children, capped shifts, and created paid government factory inspectors."
+        },
+        {
+          "term": "Child Labour",
+          "definition": "Employment of young children as mill piecers and scavengers whose spinal deformities shocked the 1832 Sadler Inquiry."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_11",
+      "num": 11,
+      "era": "part_2",
+      "date": "March 1834 – March 1836",
+      "shortDate": "1834–1836",
+      "shortTitle": "The Tolpuddle Martyrs",
+      "title": "The Tolpuddle Martyrs & The Right to Organise Unions",
+      "specTag": "Trade Union Solidarity & Royal Pardon",
+      "enquiryQuestion": "Why did sentencing six Tolpuddle union men spark giant London marches?",
+      "lessonIndex": 3,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_ind/ind_l4_b4_tolpuddle_martyrs_march_1834.jpg",
+      "imageCaption": "The Copenhagen Fields Trade Union Procession of 21 April 1834 (Islington Mural): Over 100,000 unionists marched peacefully to Whitehall demanding freedom for the six Dorset farm labourers.",
+      "mapUrl": "/images/industrialisation_and_empire/maps/ind_map_l5_rotten_boroughs_protest_reform_1819_1872.svg",
+      "mapCaption": "Reference Map: Tolpuddle in Dorset and London’s mass protest centres (1819–1872).",
+      "catalyst": "Remembering the 1830 Swing hangings, six Dorset farmworkers led by Methodist preacher **George Loveless** peacefully formed a **Friendly Society** in Tolpuddle when wages were cut toward six shillings a week.",
+      "turningPoint": "In March 1834 magistrates weaponised an obscure **1797 naval mutiny secret-oaths law** to sentence all six men to **seven years’ penal transportation** in Australia.",
+      "impact": "Over **100,000 trade unionists** marched from Copenhagen Fields with an 800,000-signature petition, forcing the Crown to grant **full pardons in 1836** and defending union rights.",
+      "bridgeToNext": "Convinced that workers would never be safe without political power and clean towns, reformers launched **Chartism (1838)** and **Chadwick’s Sanitary Inquiry (1842)**.",
+      "keyAgents": [
+        "William Lovett"
+      ],
+      "keyTerms": [
+        {
+          "term": "Tolpuddle Martyrs",
+          "definition": "Six Dorset farm labourers sentenced to seven years’ Australian transportation in 1834 for swearing a trade union oath, pardoned in 1836."
+        },
+        {
+          "term": "Moral vs Physical Force",
+          "definition": "The debate within working-class movements between peaceful mass petitions and militant confrontation."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_12",
+      "num": 12,
+      "era": "part_3",
+      "date": "July 1842",
+      "shortDate": "Jul 1842",
+      "shortTitle": "Chadwick’s Sanitary Report",
+      "title": "Edwin Chadwick’s 1842 Sanitary Report & The 1848 Health Act",
+      "specTag": "Statistical Mortality & Public Health Law",
+      "enquiryQuestion": "What did Edwin Chadwick’s 1842 Report prove about Manchester life spans?",
+      "lessonIndex": 2,
+      "stageNum": 4,
+      "imageUrl": "/images/ks3_ind/ind_l3_b3_edwin_chadwick_portrait.jpg",
+      "imageCaption": "Sir Edwin Chadwick (Wellcome Collection M0010963): Poor Law Secretary whose July 1842 Sanitary Report proved Manchester labourers lived an average of just nineteen years.",
+      "mapUrl": "/images/snow_cholera_map.jpg",
+      "mapCaption": "Dr John Snow’s Epidemiological Dot-Map of Soho (1854, Wellcome Collection L0063431): Proving cholera spread via the sewage-contaminated Broad Street water pump rather than miasma.",
+      "catalyst": "Repeated typhus and cholera outbreaks drained parish Poor Law budgets as breadwinners died young in unsewered northern industrial tenements.",
+      "turningPoint": "In **July 1842**, civil servant **Edwin Chadwick** published statistical surveys proving **Manchester labourers averaged 17–19 years of life** compared with **38 years in rural Rutland**.",
+      "impact": "Proving clean piped water cost less than supporting widows propelled the **1848 Public Health Act**, before Dr John Snow’s **1854 Soho pump map** confirmed cholera was waterborne.",
+      "bridgeToNext": "Alongside sanitary reform, millions of disenfranchised workers rallied behind **Chartism**, culminating in the April 1848 Kennington Common demonstration.",
+      "keyAgents": [
+        "Edwin Chadwick"
+      ],
+      "keyTerms": [
+        {
+          "term": "Public Health",
+          "definition": "Government laws and municipal engineering providing clean water, sewage drainage, and epidemic prevention."
+        },
+        {
+          "term": "Miasma Theory",
+          "definition": "The mistaken belief—held even by Chadwick—that foul air from rotting waste, rather than waterborne bacteria, spread cholera."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_13",
+      "num": 13,
+      "era": "part_3",
+      "date": "May 1838 – 10 April 1848",
+      "shortDate": "1838–Apr 1848",
+      "shortTitle": "Chartism & Six Points",
+      "title": "The People’s Charter & The 1848 Kennington Common Rally",
+      "specTag": "Working-Class Mass Democracy",
+      "enquiryQuestion": "What six democratic changes did the 1838 People’s Charter demand?",
+      "lessonIndex": 4,
+      "stageNum": 4,
+      "imageUrl": "/images/ks3_ind/ind_l5_s3_chartist_kennington_common_1848.jpg",
+      "imageCaption": "William Edward Kilburn, View of the Great Chartist Meeting on Kennington Common (10 April 1848 daguerreotype, Royal Collection RCIN 2932484): Tens of thousands assembled behind the third People’s Charter petition.",
+      "mapUrl": "/images/industrialisation_and_empire/maps/ind_map_l5_rotten_boroughs_protest_reform_1819_1872.svg",
+      "mapCaption": "Reference Map: Chartist centres and parliamentary reform across Great Britain (1819–1872).",
+      "catalyst": "Shut out by the 1832 £10 property rule and angered by the harsh 1834 Poor Law, **William Lovett** drafted the **May 1838 People’s Charter** demanding **Six Points** for working-class democracy.",
+      "turningPoint": "Demanding **universal male suffrage, secret ballots, paid MPs, equal districts, no property rules, and annual parliaments**, Chartists delivered three giant petitions (1839, 1842, and **10 April 1848 at Kennington Common**).",
+      "impact": "Although MPs rejected all three petitions, Chartism forged Britain’s first nationwide working-class movement—and **five of its Six Points** later became British law.",
+      "bridgeToNext": "Ten summers after Kennington Common, a blistering **July 1858 heatwave** turned the sewage-choked River Thames into a parliamentary emergency.",
+      "keyAgents": [
+        "William Lovett"
+      ],
+      "keyTerms": [
+        {
+          "term": "Chartism",
+          "definition": "The nationwide working-class movement (1838–1848) campaigning for the Six Points of the People’s Charter."
+        },
+        {
+          "term": "Moral vs Physical Force",
+          "definition": "Strategic split between William Lovett’s peaceful petitioning (\"Moral Force\") and Feargus O’Connor’s militant rhetoric (\"Physical Force\")."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_14",
+      "num": 14,
+      "era": "part_3",
+      "date": "July 1858 – 1865",
+      "shortDate": "1858–1865",
+      "shortTitle": "Great Stink & Sewers",
+      "title": "The 1858 Great Stink & Bazalgette’s Interceptor Sewers",
+      "specTag": "Civil Engineering Defeats Cholera",
+      "enquiryQuestion": "How did the 1858 Great Stink push MPs to back Bazalgette’s sewers?",
+      "lessonIndex": 2,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_ind/ind_l3_b4_thames_embankment_bazalgette_1867.jpg",
+      "imageCaption": "Section of the Thames Embankment Showing Sir Joseph Bazalgette’s Low-Level Interceptor Sewer (Illustrated London News, 1867, Wellcome Collection M0010346).",
+      "catalyst": "Flushing toilets emptied untreated waste straight into the tidal **River Thames**, which fermented under a blistering **July 1858** heatwave into the suffocating **\"Great Stink\"**.",
+      "turningPoint": "With Commons curtains soaked in chloride of lime failing to block the stench, MPs rushed through **£3 million** in eighteen days for **Sir Joseph Bazalgette** to build **82 miles of brick interceptor sewers**.",
+      "impact": "Using **318 million bricks** and **1,100 miles** of street drains beneath the new Thames Embankment (opened 1865), Bazalgette diverted waste eastward and **banished cholera** from sewaged London.",
+      "bridgeToNext": "As municipal engineering transformed cities and the **1867 Reform Act** enfranchised urban working men, reformers moved in **1872** to abolish open-air voter intimidation.",
+      "keyAgents": [
+        "Edwin Chadwick"
+      ],
+      "keyTerms": [
+        {
+          "term": "Public Health",
+          "definition": "State-funded sanitary engineering—exemplified by Bazalgette’s 82 miles of London interceptor tunnels—that ended urban cholera."
+        },
+        {
+          "term": "Laissez-faire",
+          "definition": "Hands-off government orthodoxy finally abandoned by MPs when the July 1858 Great Stink invaded Westminster."
+        }
+      ]
+    },
+    {
+      "id": "industrialisation_and_empire_ms_15",
+      "num": 15,
+      "era": "part_3",
+      "date": "August 1872",
+      "shortDate": "Aug 1872",
+      "shortTitle": "1872 Secret Ballot Act",
+      "title": "Gladstone’s 1872 Secret Ballot Act & Pontefract’s Wax Box",
+      "specTag": "Ending Landlord & Employer Coercion",
+      "enquiryQuestion": "How did the 1872 Ballot Act protect voters from bullying by landlords?",
+      "lessonIndex": 4,
+      "stageNum": 5,
+      "imageUrl": "/images/ks3_ind/ind_l5_s4_pontefract_secret_ballot_box_1872.jpg",
+      "imageCaption": "The locked wooden ballot box sealed with red liquorice-stamp wax at the 15 August 1872 Pontefract by-election—Britain’s first parliamentary vote under the Secret Ballot Act (Pontefract Museum).",
+      "mapUrl": "/images/industrialisation_and_empire/maps/ind_map_l5_rotten_boroughs_protest_reform_1819_1872.svg",
+      "mapCaption": "Reference Map: Pontefract (1872) and the geographic march of British parliamentary reform from 1819 to 1872.",
+      "catalyst": "Even after urban working men won votes in 1867, elections took place on open wooden **hustings** where landlords and mill bosses watched how tenants and employees voted.",
+      "turningPoint": "Prime Minister **William Gladstone’s Ballot Act 1872** abolished public hustings and introduced private booths and wax-sealed ballot boxes—first used at **Pontefract on 15 August 1872**.",
+      "impact": "Fulfilled a core **Chartist** demand by ending eviction threats and open bribery, securing independent voting rights on the road to universal suffrage.",
+      "bridgeToNext": "Completes the chronological journey from 1750s coal and Hampshire iron to Victorian public health and secret democratic ballots.",
+      "keyAgents": [
+        "William Lovett",
+        "Earl Grey"
+      ],
+      "keyTerms": [
+        {
+          "term": "Secret Ballot Act 1872",
+          "definition": "Law requiring parliamentary votes to be cast privately on printed papers inside booths, ending open bribery and intimidation."
+        },
+        {
+          "term": "Hustings",
+          "definition": "Open-air wooden platforms where electors previously had to declare their choices aloud in front of landlords and employers."
+        },
+        {
+          "term": "Franchise Expansion",
+          "definition": "The step-by-step extension of voting rights across 1832, 1867, 1872, and 1884 toward modern British democracy."
+        }
+      ]
+    }
+  ]
+}

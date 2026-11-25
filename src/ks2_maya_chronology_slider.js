@@ -1,3 +1,5 @@
+import { renderKs2LivingChronology } from './engine/ks2_living_chronology.js';
+
 /**
  * KS2 The Ancient Maya Chronology Slider (c. 2000 BC – Present Day)
  * Interactive horizontal milestone timeline for Key Stage 2 Primary History.
@@ -208,307 +210,36 @@ export const KS2_MAYA_MILESTONES = [
 ];
 
 export function renderKs2MayaTimelineSlider(container) {
-  if (!container) return;
-
-  let activeFilter = 'all';
-  let activeIndex = 0;
-  let isPlaying = false;
-  let playInterval = null;
-
-  function getFilteredMilestones() {
-    if (activeFilter === 'all') return KS2_MAYA_MILESTONES;
-    return KS2_MAYA_MILESTONES.filter((m) => m.category === activeFilter);
-  }
-
-  function render() {
-    const list = getFilteredMilestones();
-    if (activeIndex >= list.length) activeIndex = 0;
-    const current = list[activeIndex] || KS2_MAYA_MILESTONES[0];
-
-    container.innerHTML = `
-      <style>
-        .ks2-slider-view { max-width: 1220px; margin: 0 auto; padding: 20px 20px 48px 20px; font-family: 'Inter', sans-serif; }
-        .ks2-slider-hero {
-          background: linear-gradient(135deg, #052e16 0%, #166534 55%, #15803d 100%);
-          border-radius: 14px; padding: 22px 28px; color: #ffffff;
-          display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;
-          margin-bottom: 16px; border: 1.5px solid rgba(255, 255, 255, 0.28);
-          box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.28);
-        }
-        .ks2-hero-badge {
-          display: inline-flex; align-items: center; gap: 6px;
-          background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.42);
-          color: #fef08a; font-size: 0.72rem; font-weight: 800; text-transform: uppercase;
-          letter-spacing: 0.07em; padding: 3px 10px; border-radius: 20px; margin-bottom: 8px;
-        }
-        .ks2-hero-title-wrap h1 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.55rem; font-weight: 800; margin: 0 0 6px 0; }
-        .ks2-hero-subtitle { font-size: 0.88rem; color: #f1f5f9; max-width: 740px; line-height: 1.45; margin: 0; }
-        .ks2-filter-strip { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
-        .ks2-filter-chip {
-          background: #ffffff; border: 1.5px solid #cbd5e1; color: #334155;
-          padding: 7px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700;
-          cursor: pointer; transition: all 0.15s; display: inline-flex; align-items: center; gap: 6px;
-        }
-        .ks2-filter-chip.active { background: #166534; border-color: #166534; color: #ffffff; }
-        .ks2-highway-card { background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 18px 22px; margin-bottom: 20px; box-shadow: 0 4px 14px rgba(0,0,0,0.04); }
-        .ks2-highway-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 12px; }
-        .ks2-highway-label { font-size: 0.82rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #166534; display: flex; align-items: center; gap: 6px; }
-        .ks2-highway-controls { display: flex; align-items: center; gap: 8px; }
-        .ks2-ctrl-btn {
-          background: #f1f5f9; border: 1px solid #cbd5e1; color: #1e293b;
-          padding: 6px 12px; border-radius: 6px; font-size: 0.82rem; font-weight: 600;
-          cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
-        }
-        .ks2-ctrl-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-        .ks2-ctrl-btn.play-btn { background: #166534; color: #ffffff; border-color: #052e16; }
-        .ks2-slider-container { position: relative; padding: 18px 8px 6px 8px; }
-        .ks2-range-input { -webkit-appearance: none; width: 100%; height: 8px; border-radius: 4px; background: #bbf7d0; outline: none; cursor: pointer; }
-        .ks2-range-input::-webkit-slider-thumb {
-          -webkit-appearance: none; width: 26px; height: 26px; border-radius: 50%;
-          background: #166534; border: 3.5px solid #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.35); cursor: grab;
-        }
-        .ks2-nodes-track { display: flex; justify-content: space-between; margin-top: 12px; gap: 4px; }
-        .ks2-node-item { display: flex; flex-direction: column; align-items: center; cursor: pointer; flex: 1; }
-        .ks2-node-dot { width: 12px; height: 12px; border-radius: 50%; background: #cbd5e1; border: 2px solid #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.2); margin-bottom: 6px; }
-        .ks2-node-item.active .ks2-node-dot { background: #166534; transform: scale(1.45); box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.2); }
-        .ks2-node-year { font-size: 0.68rem; font-weight: 700; color: #64748b; text-align: center; }
-        .ks2-node-item.active .ks2-node-year { color: #166534; font-weight: 800; }
-        .ks2-milestone-card {
-          background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 14px; overflow: hidden;
-          box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08); display: grid; grid-template-columns: 420px 1fr; align-items: stretch;
-        }
-        @media (max-width: 960px) { .ks2-milestone-card { grid-template-columns: 1fr; } }
-        .ks2-card-visual { background: #0f172a; display: flex; flex-direction: column; justify-content: space-between; border-right: 1.5px solid #cbd5e1; }
-        .ks2-visual-img-wrap { flex: 1; min-height: 310px; padding: 14px; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%); }
-        .ks2-visual-img { max-width: 100%; max-height: 340px; object-fit: contain; border-radius: 6px; box-shadow: 0 6px 18px rgba(0,0,0,0.45); }
-        .ks2-visual-caption-box { padding: 12px 16px; background: #1e293b; color: #f1f5f9; font-size: 0.8rem; line-height: 1.4; border-top: 1px solid rgba(255,255,255,0.12); }
-        .ks2-provenance-tag { font-size: 0.68rem; color: #94a3b8; font-weight: 600; text-transform: uppercase; margin-top: 5px; display: flex; align-items: center; gap: 5px; }
-        .ks2-card-detail { padding: 22px 28px; display: flex; flex-direction: column; justify-content: space-between; background: #fdfbf7; }
-        .ks2-detail-top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
-        .ks2-date-pill { background: ${current.badgeColor || '#166534'}; color: #ffffff; font-size: 0.76rem; font-weight: 800; padding: 4px 10px; border-radius: 4px; text-transform: uppercase; }
-        .ks2-step-counter { font-size: 0.76rem; font-weight: 700; color: #64748b; text-transform: uppercase; }
-        .ks2-milestone-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; font-weight: 800; color: #0f172a; margin: 0 0 10px 0; line-height: 1.25; }
-        .ks2-story-box { font-size: 0.94rem; line-height: 1.55; color: #334155; margin-bottom: 14px; }
-        .ks2-callouts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
-        @media (max-width: 600px) { .ks2-callouts-grid { grid-template-columns: 1fr; } }
-        .ks2-callout-card { background: #ffffff; border: 1px solid #e2e8f0; border-left: 3.5px solid #166534; border-radius: 6px; padding: 10px 12px; }
-        .ks2-callout-title { font-size: 0.72rem; font-weight: 800; color: #166534; text-transform: uppercase; margin-bottom: 4px; display: flex; align-items: center; gap: 5px; }
-        .ks2-callout-text { font-size: 0.83rem; line-height: 1.42; color: #1e293b; }
-        .ks2-quote-strip { background: #fffbeb; border: 1px dashed #fcd34d; border-radius: 6px; padding: 9px 14px; font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 0.88rem; color: #78350f; line-height: 1.42; margin-bottom: 14px; }
-        .ks2-detective-box { background: #fefce8; border: 1.5px solid #fef08a; border-left: 4px solid #ca8a04; border-radius: 6px; padding: 10px 14px; margin-bottom: 16px; }
-        .ks2-detective-header { font-size: 0.74rem; font-weight: 800; color: #92400e; text-transform: uppercase; display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
-        .ks2-detective-q { font-size: 0.85rem; font-weight: 700; color: #1e293b; margin-bottom: 4px; }
-        .ks2-reveal-btn { background: #ca8a04; color: #ffffff; border: none; font-size: 0.72rem; font-weight: 700; padding: 3px 9px; border-radius: 4px; cursor: pointer; }
-        .ks2-detective-a { font-size: 0.82rem; color: #713f12; background: #fffbeb; padding: 6px 10px; border-radius: 4px; margin-top: 6px; display: none; border: 1px solid #fef08a; }
-        .ks2-actions-row { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #cbd5e1; padding-top: 12px; flex-wrap: wrap; gap: 10px; }
-        .ks2-action-links { display: flex; gap: 8px; flex-wrap: wrap; }
-        .ks2-link-btn { font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
-        .ks2-link-btn.primary { background: #166534; color: #ffffff; }
-        .ks2-link-btn.secondary { background: #ffffff; border: 1px solid #cbd5e1; color: #334155; }
-      </style>
-
-      <div class="ks2-slider-view">
-        <div class="ks2-slider-hero">
-          <div class="ks2-hero-title-wrap">
-            <span class="ks2-hero-badge"><i class="fa-solid fa-sun"></i> Key Stage 2 Historical Timeline</span>
-            <h1><i class="fa-solid fa-clock-rotate-left"></i> The Ancient Maya Chronology Slider (c. 2000 BC–Today)</h1>
-            <p class="ks2-hero-subtitle">Step through 10 turning points across Mesoamerica—from early maize villages, cenotes, glyphs, and zero to Pakal’s jade mask, Tikal’s rainforest pyramids, Pok-ta-Pok, cacao, Chichén Itzá, AD 900 droughts, and living Maya people today.</p>
-          </div>
-          <div style="display: flex; gap: 8px; flex-shrink: 0;">
-            <a href="/units/ks2_maya_civilisation/textbook.html" target="_blank" style="background: rgba(255,255,255,0.16); color: #ffffff; border: 1px solid rgba(255,255,255,0.35); font-weight: 700; font-size: 0.85rem; padding: 8px 14px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-book-open"></i> 12-Page Classroom Textbook
-            </a>
-          </div>
-        </div>
-
-        <div class="ks2-filter-strip">
-          <span style="font-size: 0.76rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.06em; margin-right: 4px;">Filter Timeline:</span>
-          <button class="ks2-filter-chip ${activeFilter === 'all' ? 'active' : ''}" data-filter="all">
-            <i class="fa-solid fa-layer-group"></i> All ${KS2_MAYA_MILESTONES.length} Milestones
-          </button>
-          <button class="ks2-filter-chip ${activeFilter === 'origins' ? 'active' : ''}" data-filter="origins">
-            <i class="fa-solid fa-seedling"></i> Maize, Cenotes & Zero
-          </button>
-          <button class="ks2-filter-chip ${activeFilter === 'classic' ? 'active' : ''}" data-filter="classic">
-            <i class="fa-solid fa-gopuram"></i> Classic Pyramid Cities
-          </button>
-          <button class="ks2-filter-chip ${activeFilter === 'life' ? 'active' : ''}" data-filter="life">
-            <i class="fa-solid fa-mug-hot"></i> Cacao, Ballgame & Sky
-          </button>
-          <button class="ks2-filter-chip ${activeFilter === 'change' ? 'active' : ''}" data-filter="change">
-            <i class="fa-solid fa-people-group"></i> AD 900 & Living Maya
-          </button>
-        </div>
-
-        <div class="ks2-highway-card">
-          <div class="ks2-highway-header">
-            <div class="ks2-highway-label">
-              <i class="fa-solid fa-route" style="color: #166534;"></i> Chronological Highway (c. 2000 BC – Present Day)
-            </div>
-            <div class="ks2-highway-controls">
-              <button class="ks2-ctrl-btn" id="ks2-btn-prev" ${activeIndex === 0 ? 'disabled' : ''}>
-                <i class="fa-solid fa-arrow-left"></i> Previous
-              </button>
-              <button class="ks2-ctrl-btn play-btn" id="ks2-btn-play">
-                <i class="fa-solid ${isPlaying ? 'fa-pause' : 'fa-play'}"></i> ${isPlaying ? 'Pause Tour (Auto 6s)' : 'Classroom Tour'}
-              </button>
-              <button class="ks2-ctrl-btn" id="ks2-btn-next" ${activeIndex === list.length - 1 ? 'disabled' : ''}>
-                Next <i class="fa-solid fa-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-
-          <div class="ks2-slider-container">
-            <input type="range" class="ks2-range-input" id="ks2-range-slider" min="0" max="${list.length - 1}" value="${activeIndex}" step="1" />
-            <div class="ks2-nodes-track">
-              ${list
-                .map(
-                  (m, idx) => `
-                <div class="ks2-node-item ${idx === activeIndex ? 'active' : ''}" data-index="${idx}">
-                  <div class="ks2-node-dot"></div>
-                  <span class="ks2-node-year">${m.year}</span>
-                </div>
-              `
-                )
-                .join('')}
-            </div>
-          </div>
-        </div>
-
-        <div class="ks2-milestone-card">
-          <div class="ks2-card-visual">
-            <div class="ks2-visual-img-wrap">
-              <img class="ks2-visual-img" src="${current.image}" alt="${current.title}" />
-            </div>
-            <div class="ks2-visual-caption-box">
-              ${current.imageCaption}
-              <div class="ks2-provenance-tag">
-                <i class="fa-solid fa-building-columns"></i> ${current.provenance}
-              </div>
-            </div>
-          </div>
-
-          <div class="ks2-card-detail">
-            <div>
-              <div class="ks2-detail-top-row">
-                <span class="ks2-date-pill">${current.month}</span>
-                <span class="ks2-step-counter">Milestone ${activeIndex + 1} of ${list.length} • ${current.refTextbook}</span>
-              </div>
-
-              <h2 class="ks2-milestone-title">${current.title}</h2>
-              <p class="ks2-story-box">${current.story}</p>
-
-              <div class="ks2-callouts-grid">
-                <div class="ks2-callout-card">
-                  <div class="ks2-callout-title"><i class="fa-solid fa-lightbulb"></i> Why It Mattered</div>
-                  <div class="ks2-callout-text">${current.significance}</div>
-                </div>
-                <div class="ks2-callout-card" style="border-left-color: #047857;">
-                  <div class="ks2-callout-title" style="color: #047857;"><i class="fa-solid fa-children"></i> Life for Children</div>
-                  <div class="ks2-callout-text">${current.childrenLife}</div>
-                </div>
-              </div>
-
-              <div class="ks2-quote-strip">
-                <i class="fa-solid fa-quote-left" style="margin-right: 6px; opacity: 0.6;"></i>
-                ${current.quote}
-              </div>
-
-              <div class="ks2-detective-box">
-                <div class="ks2-detective-header">
-                  <span><i class="fa-solid fa-magnifying-glass"></i> Quick History Check</span>
-                  <button class="ks2-reveal-btn" id="ks2-btn-reveal">Reveal Answer</button>
-                </div>
-                <div class="ks2-detective-q">${current.detectiveQuestion}</div>
-                <div class="ks2-detective-a" id="ks2-detective-answer">
-                  <strong>Answer:</strong> ${current.detectiveAnswer}
-                </div>
-              </div>
-            </div>
-
-            <div class="ks2-actions-row">
-              <div class="ks2-action-links">
-                <a href="${current.textbookUrl}" target="_blank" class="ks2-link-btn primary">
-                  <i class="fa-solid fa-book-open"></i> Master Textbook (${current.refTextbook.split('•')[0].trim()})
-                </a>
-                <a href="${current.worksheetUrl}" target="_blank" class="ks2-link-btn secondary">
-                  <i class="fa-solid fa-file-pen"></i> Open Lesson Worksheet
-                </a>
-              </div>
-              <span style="font-size: 0.74rem; color: #64748b; font-weight: 600;">
-                <i class="fa-solid fa-keyboard" style="margin-right: 4px;"></i> Use &larr; &rarr; arrow keys to step through
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    `;
-
-    const rangeSlider = container.querySelector('#ks2-range-slider');
-    if (rangeSlider) {
-      rangeSlider.addEventListener('input', (e) => {
-        activeIndex = parseInt(e.target.value, 10);
-        render();
-      });
-    }
-    container.querySelectorAll('.ks2-node-item').forEach((node) => {
-      node.addEventListener('click', () => {
-        activeIndex = parseInt(node.getAttribute('data-index'), 10);
-        render();
-      });
-    });
-    const btnPrev = container.querySelector('#ks2-btn-prev');
-    const btnNext = container.querySelector('#ks2-btn-next');
-    if (btnPrev) btnPrev.addEventListener('click', () => { if (activeIndex > 0) { activeIndex--; render(); } });
-    if (btnNext) btnNext.addEventListener('click', () => { if (activeIndex < list.length - 1) { activeIndex++; render(); } });
-    const btnPlay = container.querySelector('#ks2-btn-play');
-    if (btnPlay) {
-      btnPlay.addEventListener('click', () => {
-        isPlaying = !isPlaying;
-        if (isPlaying) {
-          playInterval = setInterval(() => {
-            const cur = getFilteredMilestones();
-            activeIndex = activeIndex < cur.length - 1 ? activeIndex + 1 : 0;
-            render();
-          }, 6000);
-        } else {
-          clearInterval(playInterval);
-        }
-        render();
-      });
-    }
-    container.querySelectorAll('.ks2-filter-chip').forEach((chip) => {
-      chip.addEventListener('click', () => {
-        activeFilter = chip.getAttribute('data-filter');
-        activeIndex = 0;
-        render();
-      });
-    });
-    const btnReveal = container.querySelector('#ks2-btn-reveal');
-    const ansBox = container.querySelector('#ks2-detective-answer');
-    if (btnReveal && ansBox) {
-      btnReveal.addEventListener('click', () => {
-        const isShown = ansBox.style.display === 'block';
-        ansBox.style.display = isShown ? 'none' : 'block';
-        btnReveal.textContent = isShown ? 'Reveal Answer' : 'Hide Answer';
-      });
-    }
-  }
-
-  const keyHandler = (e) => {
-    if (!document.getElementById('ks2-range-slider')) {
-      window.removeEventListener('keydown', keyHandler);
-      return;
-    }
-    const list = getFilteredMilestones();
-    if ((e.key === 'ArrowRight' || e.key === 'PageDown') && activeIndex < list.length - 1) {
-      activeIndex++;
-      render();
-    } else if ((e.key === 'ArrowLeft' || e.key === 'PageUp') && activeIndex > 0) {
-      activeIndex--;
-      render();
-    }
-  };
-  window.addEventListener('keydown', keyHandler);
-  render();
+  return renderKs2LivingChronology(container, {
+    unitId: "ks2_maya_civilisation",
+    title: "The Ancient Maya: Living Chronology (c. 2000 BC–Today)",
+    subtitle: "Step through 10 turning points across Mesoamerica—from early maize villages, cenotes, glyphs, and zero to Pakal's jade mask, Tikal's pyramids, Pok-ta-Pok, Chichen Itza, and living Maya people today.",
+    heroGradient: "linear-gradient(135deg, #052e16 0%, #166534 55%, #15803d 100%)",
+    accentColor: "#15803d",
+    textbookUrl: "/units/ks2_maya_civilisation/textbook.html",
+    textbookLabel: "12-Page Classroom Textbook",
+    filters: [
+          {
+                "id": "all",
+                "label": "All 10 Milestones"
+          },
+          {
+                "id": "origins",
+                "label": "Maize, Cenotes & Zero"
+          },
+          {
+                "id": "classic",
+                "label": "Classic Pyramid Cities"
+          },
+          {
+                "id": "life",
+                "label": "Cacao, Ballgame & Sky"
+          },
+          {
+                "id": "change",
+                "label": "AD 900 & Living Maya"
+          }
+    ],
+    milestones: KS2_MAYA_MILESTONES,
+  });
 }
