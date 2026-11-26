@@ -22,7 +22,8 @@ const path = require('path');
 const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
 const pdfParse = require('pdf-parse');
-const { renderStandardBackCover } = require('./components/render_standard_cover.cjs');
+const { renderKs2Ks3BackCover } = require('./components/render_ks2_ks3_back_cover.cjs');
+const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -707,8 +708,7 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
 
           <!-- Full-Width Ruled Note-Taking Lines (Trigger-Free Golden Standard) -->
           <div style="display: flex; flex: 1; min-height: 0; align-items: stretch;">
-            <div class="stage-writing-col">
-              <div class="ruled-line"></div>
+            <div class="stage-writing-col" style="padding: 0 4px;">
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
               <div class="ruled-line"></div>
@@ -727,19 +727,22 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
   <div class="page page-container ${pageClass}" id="page-${pageNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full">
       
-      <!-- Lesson Header with Inquiry Question Title -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 2px 8px; border-radius: 2px;">
-            ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
-            EDEXCEL GCSE (9–1) HISTORY &bull; SUPERPOWER RELATIONS &amp; THE COLD WAR, 1941–91
-          </span>
+      <!-- Lesson Header with Inquiry Question Title & 14mm Micro-QR -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.4pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #ffffff; color: #000000; border: 1.5px solid #000000; padding: 2px 8px; border-radius: 2px;">
+              ENQUIRY ${cfg.lessonNum} &bull; LESSON NOTEBOOK
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000; white-space: nowrap;">
+              YEAR 9 &bull; THE COLD WAR &amp; GLOBAL FLASHPOINTS (1945–1991)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 12.6pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
+            ${cfg.enquiryQuestion}
+          </h2>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.6pt; color: #000000; margin: 2px 0 2px 0; font-weight: 900; line-height: 1.22;">
-          ${cfg.enquiryQuestion}
-        </h2>
+        ${renderVersoLessonQr({ unitId: 'cold_war', lessonId: cfg.id || `lesson_${cfg.lessonNum}` })}
       </div>
 
       <!-- Chronological Inquiry Spine & Note-Taking Canvas -->
@@ -764,7 +767,7 @@ function renderRightPage(cfg, pageNum, totalPages = 20) {
 
   if (rp.type === 'single_12') {
     let linesHtml = '';
-    const numLines = 24;
+    const numLines = 18;
     for (let i = 0; i < numLines; i++) {
       linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
     }
@@ -842,7 +845,7 @@ ${linesHtml}        </div>
 
   if (rp.type === 'narrative_8') {
     let linesHtml = '';
-    const numLines = 26;
+    const numLines = 19;
     for (let i = 0; i < numLines; i++) {
       linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
     }
@@ -899,7 +902,7 @@ ${linesHtml}        </div>
 
   if (rp.type === 'sources_8') {
     let linesHtml = '';
-    const numLines = 18;
+    const numLines = 14;
     for (let i = 0; i < numLines; i++) {
       linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
     }
@@ -973,11 +976,11 @@ ${linesHtml}        </div>
 
   // Type: split (Feature drill + Structured consequence)
   let linesPartA = '';
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 10; i++) {
     linesPartA += `            <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
   }
   let linesPartB = '';
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 10; i++) {
     linesPartB += `            <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
   }
 
@@ -1144,21 +1147,24 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
   <!-- PAGE ${pLeftNum}: CENTREFOLD MIND-MAP CANVAS PART 1 -->
   <div class="page page-container verso-page" id="page-${pLeftNum}" style="padding: 4mm 6mm; color: #000000;">
     <div class="page-body-full" style="position: relative;">
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
-            CENTREFOLD SPREAD &bull; PART 1
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            SUPERPOWER RELATIONS &bull; SPECIFICATION ANCHORS (1945–1962)
-          </span>
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 6px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              CENTREFOLD SPREAD &bull; PART 1
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              YEAR 9 COLD WAR &bull; CURRICULUM ANCHORS (1945–1962)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.2pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
+            Broken Alliance, Containment, Berlin Crises &amp; Nuclear Brinkmanship
+          </h2>
+          <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #000000; line-height: 1.22;">
+            <strong>REVISION MIND-MAP CANVAS:</strong> Scan the QR code for the interactive Mind-Map or use each lesson’s summary to branch out your key facts across the open page (Origins &amp; Flashpoints to the left &bull; Allied Actions &amp; Outcomes to the right).
+          </div>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
-          Broken Alliance, Containment, Berlin Crises &amp; Nuclear Brinkmanship
-        </h2>
-        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #000000; line-height: 1.22;">
-          <strong>REVISION MIND-MAP CANVAS:</strong> At the end of each lesson, use the app's <em>Consolidate Station</em> to retrieve your keywords and branch out your mind-map across the open page (Origins &amp; Flashpoints to the left &bull; Allied Actions &amp; Outcomes to the right).
-        </div>
+        ${renderVersoLessonQr({ hubUrl: 'https://historyrevisionhub.co.uk/?view=mindmap&unit=cold_war', label: 'Mind-Map', sizeMm: 13.5 })}
       </div>
 
       <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 6px 0 2px 0;">
@@ -1180,21 +1186,24 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
   <!-- PAGE ${pRightNum}: CENTREFOLD MIND-MAP CANVAS PART 2 -->
   <div class="page page-container recto-page" id="page-${pRightNum}" style="padding: 4mm 6mm; color: #000000;">
     <div class="page-body-full" style="position: relative;">
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.2pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
-            CENTREFOLD SPREAD &bull; PART 2
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            SUPERPOWER RELATIONS &bull; SPECIFICATION ANCHORS (1950–1991)
-          </span>
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 6px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              CENTREFOLD SPREAD &bull; PART 2
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              YEAR 9 COLD WAR &bull; CURRICULUM ANCHORS (1950–1991)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.2pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
+            Asian Proxy Wars, Gorbachev&rsquo;s Reforms, Fall of the Wall &amp; Soviet Collapse
+          </h2>
+          <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #000000; line-height: 1.22;">
+            <strong>REVISION MIND-MAP CANVAS:</strong> Scan the QR code for the interactive Living Timeline or use each lesson’s summary to branch out your key facts across the open page (Proxy Escalation &amp; Pressures to the left &bull; Reforms &amp; Collapse to the right).
+          </div>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.5pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
-          Asian Proxy Wars, Gorbachev&rsquo;s Reforms, Fall of the Wall &amp; Soviet Collapse
-        </h2>
-        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.4pt; color: #000000; line-height: 1.22;">
-          <strong>REVISION MIND-MAP CANVAS:</strong> At the end of each lesson, use the app's <em>Consolidate Station</em> to retrieve your keywords and branch out your mind-map across the open page (Proxy Escalation &amp; Pressures to the left &bull; Reforms &amp; Collapse to the right).
-        </div>
+        ${renderVersoLessonQr({ hubUrl: 'https://historyrevisionhub.co.uk/?view=timeline&unit=cold_war', label: 'Timeline', sizeMm: 13.5 })}
       </div>
 
       <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 6px 0 2px 0;">
@@ -1621,50 +1630,26 @@ function renderCoverPage() {
 // PAGE 20: OUTSIDE BACK COVER
 // ============================================================================
 function renderBackCover() {
-  const taskMeta = [
-    { extType: 'Q1 Feat (4m) + Q2 Conseq (4m)', extMarks: 8 },
-    { extType: 'Q2 Narrative Account', extMarks: 8 },
-    { extType: 'Q1 Feat (4m) + Q2 Conseq (4m)', extMarks: 8 },
-    { extType: 'Q4 Evaluative Essay', extMarks: 12 },
-    { extType: 'Q2 Narrative Account', extMarks: 8 },
-    { extType: 'Q4 Evaluative Essay', extMarks: 12 },
-    { extType: 'Q4 Evaluative Essay', extMarks: 12 },
+  const checkpoints = [
+    ...enquiryConfigs.map((cfg) => ({
+      title: `Enquiry ${cfg.lessonNum}: ${cfg.title.replace(/^Enquiry\s*\d+:\s*/i, '')}`,
+      focus: cfg.enquiryQuestion,
+    })),
+    {
+      title: 'Teacher-Designated Synoptic Cold War Assessment',
+      focus: 'Was the Cold War Truly "Cold"? Evaluative Essay & Timeline Synthesis',
+    },
   ];
 
-  return renderStandardBackCover({
+  return renderKs2Ks3BackCover({
     unitId: 'cold_war',
-    paperTitle: 'EDEXCEL GCSE (9–1) HISTORY • PAPER 2: SUPERPOWER RELATIONS & THE COLD WAR, 1941–1991',
-    keyTopicNum: 1,
-    trackerTitle: 'STUDENT ASSESSMENT RECORD • COLD WAR UNIT TRACKER',
-    trackerSubtitle: 'Paper 2: Superpower Relations and the Cold War, 1941–1991 • 7 Core Historical Enquiries',
-    enquiries: enquiryConfigs.map((cfg, idx) => {
-      const meta = taskMeta[idx] || { extType: 'Task', extMarks: 8 };
-      return {
-        num: cfg.lessonNum,
-        code: `Enquiry ${cfg.lessonNum}`,
-        title: cfg.title.replace(/^Enquiry\s*\d+:\s*/, ''),
-        enquiryQuestion: cfg.enquiryQuestion,
-        doNowMarks: 10,
-        extType: meta.extType,
-        extMarks: meta.extMarks,
-        totalMarks: 10 + meta.extMarks,
-      };
-    }),
-    feedback: {
-      signature: '____________________________',
-      date: '____________________',
-    },
-    qrLessons: [
-      { label: 'L1: Ideology', url: 'https://historyrevisionhub.co.uk/?unit=cold_war&quiz=lesson_1' },
-      { label: 'L2: Yalta-Potsdam', url: 'https://historyrevisionhub.co.uk/?unit=cold_war&quiz=lesson_2' },
-      { label: 'L3: Iron Curtain', url: 'https://historyrevisionhub.co.uk/?unit=cold_war&quiz=lesson_3' },
-      { label: 'L4: Cuban Crisis', url: 'https://historyrevisionhub.co.uk/?unit=cold_war&quiz=lesson_4' },
-      { label: 'L5: Proxy Wars', url: 'https://historyrevisionhub.co.uk/?unit=cold_war&quiz=lesson_5' },
-      { label: 'L6: Berlin Wall', url: 'https://historyrevisionhub.co.uk/?unit=cold_war&quiz=lesson_6' },
-      { label: 'L7: Cold War End', url: 'https://historyrevisionhub.co.uk/?unit=cold_war&quiz=lesson_7' },
-    ],
-    footerQuip: 'Unit Complete • Superpower Relations and the Cold War (1941–1991) • Retain this assessment record for parent consultations and GCSE revision monitoring.',
-    totalPageCount: 20,
+    pageNum: 20,
+    totalPages: 20,
+    mode: 'ks3',
+    keyStageBadge: 'KEY STAGE 3 HISTORY &bull; YEAR 9',
+    pagePadding: '5mm 6mm',
+    checkpoints,
+    footerQuip: 'The History Revision Hub • KS3 Cold War & Global Flashpoints Workbook • Independent Curriculum Resource',
     renderFooterStrip,
   });
 }
@@ -1801,8 +1786,9 @@ async function compileColdWarWorkbook() {
       box-sizing: border-box;
     }
     .ruled-line {
-      height: 8.2mm;
-      border-bottom: 0.8px solid #000000;
+      flex: 1;
+      min-height: 0;
+      border-bottom: 0.85px solid #000000;
       box-sizing: border-box;
     }
     .ruled-line:last-child {

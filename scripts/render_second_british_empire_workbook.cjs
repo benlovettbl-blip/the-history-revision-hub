@@ -4,6 +4,7 @@ const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
 const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 const { renderKs3CentrefoldSpine, assertPdfPageCount } = require('./components/render_ks3_centrefold_spine.cjs');
+const { renderKs2Ks3BackCover } = require('./components/render_ks2_ks3_back_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -137,7 +138,7 @@ const enquiryConfigs = [
         'Portsmouth Dockyard &bull; HMS Warrior &bull; Two-Power Standard &bull; mercantilism &bull; ironclad &bull; Royal Navy &bull; Pax Britannica &bull; naval supremacy',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to <strong>Pages 8–9</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1783–1805 Portsmouth Dockyard</strong>, <strong>1860 HMS Warrior</strong>, and <strong>1889 Two-Power Standard</strong> nodes.',
+        'Turn to <strong>Pages 8–9</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1783–1805 Portsmouth Dockyard</strong>, <strong>1860 HMS Warrior</strong>, and <strong>1889 Two-Power Standard</strong> nodes.',
     },
     leftPageQuip:
       'Portsmouth Royal Dockyard was the industrial beating heart of the British Empire, building the ironclads that commanded the oceans.',
@@ -239,7 +240,7 @@ const enquiryConfigs = [
         'De-industrialisation &bull; captive market &bull; Calico Acts &bull; Dhaka muslin &bull; tariff disparity &bull; Lancashire cotton &bull; Diwani &bull; Lord William Bentinck',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to <strong>Page 8</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1813–34 Bengal Handloom Crisis</strong> node (Calico Acts, Lancashire factory cotton, Bentinck&rsquo;s 1834 report).',
+        'Turn to <strong>Page 8</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1813–34 Bengal Handloom Crisis</strong> node (Calico Acts, Lancashire factory cotton, Bentinck&rsquo;s 1834 report).',
     },
     leftPageQuip:
       'Before British rule, India produced 25% of the world’s manufactured goods; by 1947, colonial de-industrialisation reduced that share to under 2%.',
@@ -335,7 +336,7 @@ const enquiryConfigs = [
         'Sepoy &bull; Doctrine of Lapse &bull; Awadh &bull; Enfield rifle &bull; Rani Lakshmibai &bull; Bahadur Shah Zafar &bull; Azamgarh Proclamation &bull; British Raj &bull; Queen Victoria',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to <strong>Page 8</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1857 Meerut Uprising</strong> and <strong>1858 Rani Lakshmibai &amp; British Raj</strong> nodes (Doctrine of Lapse, Enfield cartridges, EIC dissolved).',
+        'Turn to <strong>Page 8</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1857 Meerut Uprising</strong> and <strong>1858 Rani Lakshmibai &amp; British Raj</strong> nodes (Doctrine of Lapse, Enfield cartridges, EIC dissolved).',
     },
     leftPageQuip:
       'Rani Lakshmibai declared "I shall not give up my Jhansi!" and died fighting on horseback, respected even by her British adversaries.',
@@ -433,7 +434,7 @@ const enquiryConfigs = [
         'Scramble for Africa &bull; Berlin Conference &bull; Effective Occupation &bull; Maxim gun &bull; quinine &bull; Battle of Omdurman &bull; Rudyard Kipling &bull; E. D. Morel &bull; resource extraction',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to <strong>Page 9</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1884–85 Berlin Conference</strong> and <strong>1898–1901 Maxim Guns &amp; Drain of Wealth</strong> nodes (Effective Occupation, quinine, Omdurman).',
+        'Turn to <strong>Page 9</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1884–85 Berlin Conference</strong> and <strong>1898–1901 Maxim Guns &amp; Drain of Wealth</strong> nodes (Effective Occupation, quinine, Omdurman).',
     },
     leftPageQuip:
       'Hilaire Belloc captured the brutal technological reality of the Scramble: "Whatever happens, we have got / The Maxim Gun, and they have not."',
@@ -537,7 +538,7 @@ const enquiryConfigs = [
         'Drain of Wealth &bull; Dadabhai Naoroji &bull; Crystal Palace &bull; Great Exhibition &bull; famine &bull; infrastructure &bull; railways &bull; Optimist vs Pessimist &bull; historiography',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to <strong>Page 9</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1898–1901 Drain of Wealth &amp; Imperial Verdict</strong> node (1851 Crystal Palace, 25,000 rail miles, Naoroji &amp; Victorian famines).',
+        'Turn to <strong>Page 9</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1898–1901 Drain of Wealth &amp; Imperial Verdict</strong> node (1851 Crystal Palace, 25,000 rail miles, Naoroji &amp; Victorian famines).',
     },
     leftPageQuip:
       'Dadabhai Naoroji, Britain’s first Indian MP, used official British records to prove that colonial taxation bled India of industrial capital.',
@@ -601,9 +602,7 @@ function renderSpinePage(cfg, pageNum) {
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
-            <div class="ruled-line"></div>
-            <div class="ruled-line"></div>
-          </div>
+            <div class="ruled-line"></div></div>
         </div>`;
     })
     .join('');
@@ -700,7 +699,7 @@ function renderRightPage(cfg, pageNum) {
         <strong style="color: #000000;">Task:</strong> Using the vocabulary and connectives above, write your analytical response below:
       </div>
       <div style="display: flex; flex-direction: column; gap: 0; margin-bottom: 4px; flex: 1; min-height: 0;">
-        ${Array(20)
+        ${Array(16)
           .fill(
             '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
           )
@@ -773,7 +772,7 @@ function renderRightPage(cfg, pageNum) {
         </div>
         ${rp.stemsB ? `<div style="border: 1px solid #000000; border-radius: 2px; padding: 2px 5px; background: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.0pt; line-height: 1.2; margin-bottom: 2px;"><strong style="color: #000000;">Sentence Stems:</strong> <span style="color: #000000;">${rp.stemsB}</span></div>` : ''}
         <div style="display: flex; flex-direction: column; gap: 0; flex: 1; min-height: 0;">
-          ${Array(9)
+          ${Array(7)
             .fill(
               '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
             )
@@ -796,7 +795,7 @@ function renderRightPage(cfg, pageNum) {
         </div>
         ${rp.stemsC || rp.stems ? `<div style="border: 1px solid #000000; border-radius: 2px; padding: 2px 5px; background: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.0pt; line-height: 1.2; margin-bottom: 2px;"><strong style="color: #000000;">Scaffolded Sentence Stems:</strong> <span style="color: #000000;">${rp.stemsC || rp.stems}</span></div>` : ''}
         <div style="display: flex; flex-direction: column; gap: 0; flex: 1; min-height: 0;">
-          ${Array(9)
+          ${Array(7)
             .fill(
               '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
             )
@@ -896,7 +895,7 @@ function renderRightPage(cfg, pageNum) {
 
         <!-- Ruled Writing Lines (18 Lines • Matching GCSE 7.8mm pitch) -->
         <div style="display: flex; flex-direction: column; gap: 0; margin-bottom: 4px; flex: 1; min-height: 0;">
-          ${Array(18).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
+          ${Array(14).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
         </div>
 
         <!-- Timeline Mission Box -->
@@ -927,7 +926,7 @@ function renderNotesPage(pageNum, quip) {
   const pageClass = isEven ? 'verso-page' : 'recto-page';
 
   // 32 ruled lines for standard ~8mm pitch filling the page perfectly
-  const numLines = 32;
+  const numLines = 23;
   let linesHtml = '';
   for (let i = 0; i < numLines; i++) {
     linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
@@ -1061,8 +1060,9 @@ function compileEmpireWorkbook() {
       box-sizing: border-box;
     }
     .ruled-line {
-      height: 8.2mm;
-      border-bottom: 0.8px solid #000000;
+      flex: 1;
+      min-height: 0;
+      border-bottom: 0.85px solid #000000;
       box-sizing: border-box;
     }
     .ruled-line:last-child {
@@ -1075,6 +1075,7 @@ function compileEmpireWorkbook() {
       box-sizing: border-box;
       margin: 0;
     }
+    .ruled-lines-block .task-line { height: 9.0mm; }
     .ruled-lines-block {
       display: flex;
       flex-direction: column;
@@ -1269,7 +1270,7 @@ function compileEmpireWorkbook() {
             <!-- Targeted Disciplinary Hinge Question -->
             <div style="background: #ffffff; border: 1.2px solid #0f284e; border-radius: 3px; padding: 2.5px 6px;">
               <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">Disciplinary Hinge Question:</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">Key Discussion Question:</span>
                 <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 700; color: #64748b; text-transform: uppercase;">Evaluation</span>
               </div>
               <div style="font-family: 'Georgia', serif; font-size: 6.9pt; font-style: italic; color: #1e293b; line-height: 1.18; margin-top: 1px;">
@@ -1414,6 +1415,7 @@ function compileEmpireWorkbook() {
   // PAGES 8–9: CENTER-SPINE CURRICULUM MIND-MAP CANVAS IN THE CENTREFOLD
   // ====================================================================
   html += renderKs3CentrefoldSpine({
+    unitId: 'second_british_empire',
     leftPageNum: 8,
     rightPageNum: 9,
     totalPages: 16,
@@ -1519,260 +1521,47 @@ function compileEmpireWorkbook() {
   // ====================================================================
   // PAGE 16: OUTSIDE BACK COVER (PROGRESS LEDGER + 5 QR CODES - MEDICINE STYLE)
   // ====================================================================
-  html += `
-  <!-- PAGE 16: OUTSIDE BACK COVER -->
-  <div class="page page-container verso-page" id="page-16" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <!-- Back Cover Header Strip -->
-      <div style="border-bottom: 2px solid #0f284e; padding-bottom: 3px; margin-bottom: 6px;">
-        <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11.5pt; color: #0f284e; text-transform: uppercase; font-weight: 900; letter-spacing: 0.5px;">
-          Key Stage 3 History &bull; Pupil Progress &amp; Assessment Record
-        </h2>
-      </div>
-
-      <!-- Pupil Details & Target Level Strip -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 7px 12px; background: #ffffff; display: grid; grid-template-columns: 2fr 1fr 1.3fr; gap: 14px; align-items: center; margin-bottom: 5px;">
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Pupil Name:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Class:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Target KS3 Level:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px; text-align: center; font-weight: 900; color: #0f284e;"></div>
-        </div>
-      </div>
-
-      <!-- KS3 History Progress Pathways & Descriptors (Universal KS3 Years 7–9 Standard) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 5.5px 6px; background: #ffffff; margin-bottom: 6px; font-family: 'Inter', sans-serif;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; background: #ffffff; padding: 2.5px 6px; margin-bottom: 3px;">
-          <strong style="font-size: 7.4pt; text-transform: uppercase; letter-spacing: 0.5px; color: #000000;">
-            Key Stage 3 History Assessment Pathways &bull; Level Descriptors &amp; Criteria
-          </strong>
-          <span style="font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1px 6px; border-radius: 2px; text-transform: uppercase;">
-            Years 7–9 Standards
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.3;">
-          
-          <!-- Emerging &bull; 35% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging &bull; 35%
-            </div>
-            <div style="color: #000000;">
-              Identifies key names, dates, and terms; describes what happened using simple statements and structured writing frames.
-            </div>
-          </div>
-
-          <!-- Emerging+ &bull; 50% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging+ &bull; 50%
-            </div>
-            <div style="color: #000000;">
-              Describes reasons why events occurred; begins to explain causes and consequences supported by basic historical facts.
-            </div>
-          </div>
-
-          <!-- Expected &bull; 65% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected &bull; 65%
-            </div>
-            <div style="color: #000000;">
-              Constructs structured paragraphs explaining multiple causes and consequences; substantiates arguments with precise historical dates, key terms, and named figures.
-            </div>
-          </div>
-
-          <!-- Expected+ &bull; 80% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected+ &bull; 80%
-            </div>
-            <div style="color: #000000;">
-              Weighs competing factors and perspectives; explains why certain causes were more decisive than others using detailed, accurate evidence across the unit.
-            </div>
-          </div>
-
-          <!-- Greater Depth &bull; 90% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Greater Depth &bull; 90%
-            </div>
-            <div style="color: #000000;">
-              Crafts sustained, analytically rigorous arguments reaching a substantiated historical judgement; masterfully synthesizes evidence across the unit to evaluate complex turning points and long-term significance.
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Streamlined KS3 Marking Grid (Low-Friction & Periodic Marking Standard) -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; overflow: hidden; margin-bottom: 5px; flex: 1; display: flex; flex-direction: column;">
-        <table style="width: 100%; height: 100%; flex: 1; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 8pt;">
-          <thead>
-            <tr style="background: #0f284e; color: #ffffff;">
-              <th style="padding: 6px 4px; width: 9%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Date</th>
-              <th style="padding: 6px 8px; width: 38%; text-align: left; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Enquiry &bull; Assessment Focus</th>
-              <th style="padding: 6px 4px; width: 14%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Do Now (/5)</th>
-              <th style="padding: 6px 4px; width: 15%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">KS3 Level / Effort</th>
-              <th style="padding: 6px 8px; width: 24%; text-align: left; font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Teacher Comment / Spellings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 5px 6px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.2pt; color: #0f284e;">Enquiry 1: Engines of Empire: Mercantilism &amp; Portsmouth Dockyard</div>
-                <div style="font-size: 7.2pt; color: #475569; margin-top: 1px;">Explain Why Essay: Maritime Supremacy &amp; Two-Power Standard (1783–1889)</div>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 5px 6px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 5px 6px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.2pt; color: #0f284e;">Enquiry 2: The De-industrialisation of India &amp; Handloom Crisis</div>
-                <div style="font-size: 7.2pt; color: #475569; margin-top: 1px;">Explain Why Essay: Tariffs, Lancashire Steam &amp; Weavers (1700–1850)</div>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 5px 6px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 5px 6px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.2pt; color: #0f284e;">Enquiry 3: The 1857 Indian Rebellion &amp; Rani Lakshmibai</div>
-                <div style="font-size: 7.2pt; color: #475569; margin-top: 1px;">Explain Why Essay: Sepoy Mutiny, Cartridge Crisis &amp; The Raj (1848–1858)</div>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 5px 6px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 5px 6px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.2pt; color: #0f284e;">Enquiry 4: The Scramble for Africa &amp; Imperial Ideology</div>
-                <div style="font-size: 7.2pt; color: #475569; margin-top: 1px;">Explain Why Essay: Berlin Conference, Maxim Guns &amp; Quinine (1884–1920)</div>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 5px 6px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 5px 6px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.2pt; color: #0f284e;">Enquiry 5: The Imperial Verdict: Workshop or Exploitation?</div>
-                <div style="font-size: 7.2pt; color: #475569; margin-top: 1px;">Explain Why Essay: Naoroji Drain of Wealth vs Infrastructure (1851–1901)</div>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 5px 6px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="background: #ffffff; border-top: 1.5px solid #0f284e;">
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 5px 6px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.2pt; color: #0f284e;">Teacher-Designated Assessment Task</div>
-              </td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
-              <td style="padding: 5px 4px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 5px 6px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-top: 1.5px solid #0f284e; background: #f8fafc;">
-              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; color: #0f284e; font-size: 8pt;">★</td>
-              <td style="padding: 6px 8px; border-right: 1px solid #cbd5e1; font-weight: 900; font-size: 8pt; color: #0f284e; text-transform: uppercase;">
-                Unit Retrieval Starter Total:
-              </td>
-              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; font-size: 8.5pt; color: #0f284e;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 25</strong></span>
-              </td>
-              <td colspan="2" style="padding: 4px 8px; font-size: 6.4pt; line-height: 1.2; color: #475569; vertical-align: middle;">
-                <strong>Overall Progress Category:</strong><br>[ Em (35%) &bull; Em+ (50%) &bull; Ex (65%) &bull; Ex+ (80%) &bull; GD (90%) ]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Interactive Digital Quizzing Hub (Medicine Style) -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 6px 8px; background: #ffffff;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #0f284e; background: #f0f4f9; padding: 3px 6px; margin-bottom: 4px; border-radius: 2px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.2pt; text-transform: uppercase; color: #0f284e;">
-            📱 Interactive Digital Quizzing Hub &bull; Scan for Instant Retrieval Practice
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7pt; font-weight: 800; background: #0f284e; color: #ffffff; border: 1px solid #0f284e; padding: 1px 5px; border-radius: 2px;">
-            ONLINE RECALL
-          </span>
-        </div>
-                <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; text-align: center;">
-          ${enquiryConfigs
-            .map((cfg, idx) => {
-              const lessonIndices = [0, 1, 1, 3, 4];
-              const quizUrl = `https://historyrevisionhub.co.uk/?unit=second_british_empire&lesson=${lessonIndices[idx]}&quiz=true`;
-              const qrSvg = generateQrSvg(quizUrl);
-              const shortLabels = [
-                'Portsmouth & Navy',
-                'India De-industrial',
-                '1857 Rebellion',
-                'Scramble Africa',
-                'Imperial Verdict',
-              ];
-              return `
-          <div style="border: 1.2px solid #0f284e; border-radius: 3px; padding: 4px 2px; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; margin-bottom: 1px; color: #0f284e;">
-              Enquiry ${cfg.lessonNum}
-            </div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 700; color: #475569; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
-              ${shortLabels[idx]}
-            </div>
-            <div style="width: 21mm; height: 21mm; margin: 0 auto 2px auto;">
-              ${qrSvg}
-            </div>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 800; text-transform: uppercase; background: #0f284e; color: #ffffff; padding: 1px 5px; border-radius: 2px; margin-bottom: 2px;">
-              Scan to Quiz
-            </span>
-            <div style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 900; color: #0f284e; margin-top: 1px; white-space: nowrap;">
-              Best Score: [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 8</strong> ]
-            </div>
-          </div>`;
-            })
-            .join('')}
-        </div>
-      </div>
-
-      ${renderFooterStrip(16, 'From Portsmouth Royal Dockyard to the plains of Bengal, revision is the key to historical mastery. Scan to test your recall.', 16)}
-    </div>
-  </div>
-</body>
-</html>
-`;
+  html += renderKs2Ks3BackCover({
+    unitId: 'second_british_empire',
+    pageNum: 16,
+    totalPages: 16,
+    mode: 'ks3',
+    keyStageBadge: 'KEY STAGE 3 HISTORY &bull; YEAR 8',
+    pagePadding: '4mm 6mm',
+    checkpoints: [
+          {
+                "title": "Enquiry 1: Mercantilism & Naval Dockyards",
+                "focus": "Explain Why: Maritime Supremacy & Two-Power Standard"
+          },
+          {
+                "title": "Enquiry 2: De-industrialisation of India",
+                "focus": "Explain Why: Tariffs, Lancashire Steam & Handloom Crisis"
+          },
+          {
+                "title": "Enquiry 3: The 1857 Indian Rebellion",
+                "focus": "Explain Why: Sepoy Mutiny, Cartridge Crisis & The Raj"
+          },
+          {
+                "title": "Enquiry 4: Scramble for Africa & Ideology",
+                "focus": "Explain Why: Berlin Conference, Maxim Guns & Quinine"
+          },
+          {
+                "title": "Enquiry 5: The Imperial Verdict",
+                "focus": "Evaluative Essay: Drain of Wealth vs Infrastructure Debate"
+          },
+          {
+                "title": "Independent Study & Notes Portfolio",
+                "focus": "Pages 14–15 Enquiry Notes, Reflection & Revision Tasks"
+          },
+          {
+                "title": "Teacher-Designated Assessment Task",
+                "focus": "Synoptic Imperial History Assessment Task"
+          }
+    ],
+    footerQuip: "The History Revision Hub • KS3 Second British Empire Workbook • Independent Curriculum Resource",
+    renderFooterStrip,
+  });
+  html += `\n</body>\n</html>\n`;
 
   return html;
 }

@@ -3,6 +3,8 @@ const path = require('path');
 const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
 const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
+const { renderKs2Ks3BackCover } = require('./components/render_ks2_ks3_back_cover.cjs');
+const { assertPdfPageCount } = require('./components/render_ks3_centrefold_spine.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 const SHOAH_DATA_PATH = path.join(ROOT_DIR, 'data', 'the_shoah.json');
@@ -509,10 +511,10 @@ function renderNotesPage(pageNum, quip, totalPages = 20) {
   const isEven = pageNum % 2 === 0;
   const pageClass = isEven ? 'verso-page' : 'recto-page';
 
-  const numLines = 34;
+  const numLines = 24;
   let linesHtml = '';
   for (let i = 0; i < numLines; i++) {
-    linesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
+    linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
   }
 
   return `
@@ -759,13 +761,13 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
   }).join('');
 
   // 2. Generate 24 Full-Width A4 Ruled Exercise Book Lines with Stage Badges in the 26mm Left Margin
-  const totalRuledLines = 25;
+  const totalRuledLines = 20;
   const stageBadgesByLine = {
     0: { num: 1, date: cfg.stages[0]?.date || '' },
-    5: { num: 2, date: cfg.stages[1]?.date || '' },
-    10: { num: 3, date: cfg.stages[2]?.date || '' },
-    15: { num: 4, date: cfg.stages[3]?.date || '' },
-    20: { num: 5, date: cfg.stages[4]?.date || '' }
+    4: { num: 2, date: cfg.stages[1]?.date || '' },
+    8: { num: 3, date: cfg.stages[2]?.date || '' },
+    12: { num: 4, date: cfg.stages[3]?.date || '' },
+    16: { num: 5, date: cfg.stages[4]?.date || '' }
   };
 
   let ruledLinesHtml = '';
@@ -779,7 +781,7 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
     }
 
     ruledLinesHtml += `
-            <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; display: flex; width: 100%; box-sizing: border-box; margin: 0;">
+            <div style="flex: 1; min-height: 0; border-bottom: 0.85px solid #000000; display: flex; width: 100%; box-sizing: border-box; margin: 0;">
               <!-- 26mm Left Margin Rule -->
               <div style="width: 26mm; flex-shrink: 0; border-right: 1.5px solid #000000; padding-right: 2mm; display: flex; align-items: center; justify-content: flex-start; gap: 3px; box-sizing: border-box;">
                 ${marginContent}
@@ -847,9 +849,9 @@ function renderRightPage(cfg, pageNum, totalPages = 20) {
   // 12-MARK EVALUATIVE STATEMENT ESSAY (ENQUIRY 7)
   if (rp.type === 'single_12') {
     let linesHtml = '';
-    const numLines = 27;
+    const numLines = 20;
     for (let i = 0; i < numLines; i++) {
-      linesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
+      linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
     }
 
     return `
@@ -937,9 +939,9 @@ ${linesHtml}      </div>
   // 8-MARK NARRATIVE ACCOUNT (ENQUIRY 2)
   if (rp.type === 'narrative_8') {
     let linesHtml = '';
-    const numLines = 29;
+    const numLines = 21;
     for (let i = 0; i < numLines; i++) {
-      linesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
+      linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
     }
 
     return `
@@ -1009,9 +1011,9 @@ ${linesHtml}      </div>
   // 8-MARK SOURCE UTILITY (ENQUIRIES 3 & 6 • TWO SOURCES FOCUS)
   if (rp.type === 'source_utility_8') {
     let linesHtml = '';
-    const numLines = 27;
+    const numLines = 20;
     for (let i = 0; i < numLines; i++) {
-      linesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
+      linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
     }
 
     return `
@@ -1095,9 +1097,9 @@ ${linesHtml}      </div>
   // 8-MARK HISTORICAL INTERPRETATIONS (ENQUIRY 4 • TWO INTERPRETATIONS FOCUS)
   if (rp.type === 'interpretations_8') {
     let linesHtml = '';
-    const numLines = 27;
+    const numLines = 20;
     for (let i = 0; i < numLines; i++) {
-      linesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
+      linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
     }
 
     return `
@@ -1180,9 +1182,9 @@ ${linesHtml}      </div>
 
   // Default: Split Short Drills (4m Features + 4m Consequence / 8m Why) (ENQUIRIES 1 & 5)
   let partBLinesHtml = '';
-  const numPartBLines = 21;
+  const numPartBLines = 15;
   for (let i = 0; i < numPartBLines; i++) {
-    partBLinesHtml += `          <div class="note-line" style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
+    partBLinesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 0.85px solid #000000; box-sizing: border-box; margin: 0; width: 100%;"></div>\n`;
   }
 
   return `
@@ -1232,8 +1234,8 @@ ${linesHtml}      </div>
         </div>
         <!-- Ruled Lines for Part A @ consistent 7.8mm -->
         <div class="ruled-lines-block" style="margin-top: 1px;">
-          ${Array.from({ length: 8 })
-            .map(() => `<div class="task-line"></div>`)
+          ${Array.from({ length: 6 })
+            .map(() => `<div class="task-line" style="height: 9.6mm;"></div>`)
             .join('')}
         </div>
       </div>
@@ -1270,22 +1272,25 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
   <div class="page page-container verso-page" id="page-${pLeftNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full" style="display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
       
-      <!-- Top Spread Masthead -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2.5px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
-            CENTREFOLD SPREAD &bull; PART I
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            SIX LIVES: MICRO-HISTORIES OF THE HOLOCAUST (1933–1945)
-          </span>
+      <!-- Top Spread Masthead with Mind-Map QR -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2.5px; display: flex; justify-content: space-between; align-items: flex-start; gap: 6px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              CENTREFOLD SPREAD &bull; PART I
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              SIX LIVES: MICRO-HISTORIES OF THE HOLOCAUST (1933–1945)
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.6pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.16;">
+            Diversity, Persecution &amp; The Enclosed Ghettos
+          </h2>
+          <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.5pt; color: #000000; line-height: 1.2;">
+            <strong style="text-transform: uppercase;">Disciplinary Anchor:</strong> Six million is not a statistic; it was six million individual human lives. Scan the QR code to explore the interactive Unit Mind-Map alongside these six lives.
+          </div>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.0pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.16;">
-          Diversity, Persecution &amp; The Enclosed Ghettos
-        </h2>
-        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2.5px 6px; font-family: 'Inter', sans-serif; font-size: 8.2pt; color: #000000; line-height: 1.22;">
-          <strong style="text-transform: uppercase;">Disciplinary Anchor:</strong> Six million is not a statistic; it was six million individual human lives. By investigating real micro-histories across diverse regions, pupils trace how state persecution dismantled individual worlds.
-        </div>
+        ${renderVersoLessonQr({ hubUrl: 'https://historyrevisionhub.co.uk/?view=mindmap&unit=the_shoah', label: 'Mind-Map', sizeMm: 13.5 })}
       </div>
 
       <!-- 3 Case Study Cards on Left Page -->
@@ -1323,11 +1328,9 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 1 &bull; 2</span>
             </div>
             <div style="display: flex; flex-direction: column;">
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-            </div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div></div>
           </div>
         </div>
 
@@ -1363,11 +1366,9 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 1 &bull; 5</span>
             </div>
             <div style="display: flex; flex-direction: column;">
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-            </div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div></div>
           </div>
         </div>
 
@@ -1403,11 +1404,9 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 3</span>
             </div>
             <div style="display: flex; flex-direction: column;">
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-            </div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div></div>
           </div>
         </div>
 
@@ -1422,22 +1421,25 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
   <div class="page page-container recto-page" id="page-${pRightNum}" style="padding: 4mm 6mm;">
     <div class="page-body-full" style="display: flex; flex-direction: column; height: 100%; justify-content: space-between;">
       
-      <!-- Top Spread Masthead -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2.5px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            SIX LIVES: MICRO-HISTORIES OF THE HOLOCAUST (1933–1945)
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
-            CENTREFOLD SPREAD &bull; PART II
-          </span>
+      <!-- Top Spread Masthead with Timeline QR -->
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 2.5px; display: flex; justify-content: space-between; align-items: flex-start; gap: 6px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              SIX LIVES: MICRO-HISTORIES OF THE HOLOCAUST (1933–1945)
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              CENTREFOLD SPREAD &bull; PART II
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.6pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.16;">
+            Resistance, Moral Witness &amp; Rebuilding Life
+          </h2>
+          <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.5pt; color: #000000; line-height: 1.2;">
+            <strong style="text-transform: uppercase;">Disciplinary Anchor:</strong> Across ghettos, camps, and post-war Europe, individuals asserted agency through revolt, witness, and rebuilding life. Scan the QR code for the Living Timeline.
+          </div>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 12.0pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.16;">
-          Resistance, Moral Witness &amp; Rebuilding Life
-        </h2>
-        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2.5px 6px; font-family: 'Inter', sans-serif; font-size: 8.2pt; color: #000000; line-height: 1.22;">
-          <strong style="text-transform: uppercase;">Disciplinary Anchor:</strong> Across concentration camps, transit depots, and post-war Europe, individuals asserted agency: through clandestine armed revolt, unyielding moral witness, and the courageous determination to rebuild life.
-        </div>
+        ${renderVersoLessonQr({ hubUrl: 'https://historyrevisionhub.co.uk/?view=timeline&unit=the_shoah', label: 'Timeline', sizeMm: 13.5 })}
       </div>
 
       <!-- 3 Case Study Cards on Right Page -->
@@ -1475,11 +1477,9 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 5</span>
             </div>
             <div style="display: flex; flex-direction: column;">
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-            </div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div></div>
           </div>
         </div>
 
@@ -1515,11 +1515,9 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 3 &bull; 5</span>
             </div>
             <div style="display: flex; flex-direction: column;">
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-            </div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div></div>
           </div>
         </div>
 
@@ -1555,11 +1553,9 @@ function renderCentrefold(pLeftNum, pRightNum, totalPages = 20) {
               <span style="font-size: 7.2pt; font-weight: 800; text-transform: uppercase; color: #000000;">Ref: Enquiry 7</span>
             </div>
             <div style="display: flex; flex-direction: column;">
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-              <div style="height: 8.0mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
-            </div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div>
+              <div style="height: 10.2mm; border-bottom: 0.85px solid #000000; box-sizing: border-box;"></div></div>
           </div>
         </div>
 
@@ -1738,218 +1734,28 @@ function renderCoverPage() {
 }
 
 function renderBackCover() {
-  const shoahTableRowsHtml = enquiryConfigs.map((enq) => {
-    const url = `https://historyrevisionhub.co.uk/?unit=the_shoah&lesson=${enq.lessonNum}&quiz=true`;
-    const qrSvg = generateQrSvg(url);
-      return `
-        <tr style="border-bottom: 1.5px solid #000000;">
-          <!-- Column 1: HW Dates & QR Code (Medicine Standard 21mm) -->
-          <td style="padding: 2px 2px 2px 2px; border-right: 1.5px solid #000000; vertical-align: top; width: 21mm;">
-            <div style="display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 100%; min-height: 25mm; box-sizing: border-box;">
-              <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; white-space: nowrap; margin-top: 1px;">
-                SET: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 11mm;">&nbsp;</span>
-              </div>
-              <div style="width: 14mm; height: 14mm; margin: auto 0; display: flex; align-items: center; justify-content: center;">
-                ${qrSvg}
-              </div>
-              <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 900; color: #000000; white-space: nowrap; margin-bottom: 1px;">
-                DUE: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 11mm;">&nbsp;</span>
-              </div>
-            </div>
-          </td>
+  const checkpoints = [
+    ...enquiryConfigs.map((enq) => ({
+      title: `Enquiry ${enq.lessonNum}: ${enq.title.replace(/^Enquiry\s*\d+:\s*/i, '')}`,
+      focus: enq.enquiryQuestion,
+    })),
+    {
+      title: 'Teacher-Designated Synoptic Assessment & Portfolio',
+      focus: 'Six Lives Analysis (pp. 10–11), Notes (pp. 18–19) & Depth Study Verdict',
+    },
+  ];
 
-          <!-- Column 2: Enquiry & Homework Passport -->
-          <td style="padding: 3px 6px; border-right: 1.5px solid #000000; vertical-align: top;">
-            <div style="display: flex; flex-direction: column; height: 100%; justify-content: space-between; box-sizing: border-box;">
-              <div>
-                <div style="font-weight: 900; color: #000000; font-size: 10.2pt; line-height: 1.22;">
-                  Enquiry ${enq.lessonNum}: ${enq.title}
-                </div>
-                <div style="font-size: 8.0pt; color: #1e293b; font-style: italic; margin-top: 2px; line-height: 1.25;">
-                  &ldquo;${enq.enquiryQuestion}&rdquo;
-                </div>
-              </div>
-
-              <!-- Homework Passport Strip (Clean Borderless Format) -->
-              <div style="padding-top: 2px; margin-top: 2px;">
-                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 7.2pt; font-family: 'Inter', sans-serif; font-weight: 800; color: #000000; white-space: nowrap;">
-                  <span><span style="font-size: 8.0pt;">&#9633;</span> <strong>Read Aloud / Audio Tracked</strong></span>
-                  <span style="margin-left: 6px;"><strong>5-Q Online Quiz:</strong> <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 10mm; margin: 0 2px;">&nbsp;</span><strong style="font-size: 8.6pt;">/ 5</strong></span>
-                </div>
-                <div style="display: flex; align-items: flex-end; font-size: 7.2pt; font-family: 'Inter', sans-serif; font-weight: 900; color: #000000; margin-top: 1px;">
-                  <span style="white-space: nowrap; margin-right: 6px;">Parent / Carer Signature:</span>
-                  <div style="flex: 1; border-bottom: 1.4px solid #000000; height: 13px;"></div>
-                </div>
-              </div>
-            </div>
-          </td>
-
-          <!-- Column 3: In-Class Do Now (Recall) -->
-          <td style="padding: 2px 2px; border-right: 1.5px solid #000000; text-align: center; vertical-align: middle; width: 18mm; white-space: nowrap;">
-            <span style="font-size: 9.6pt; font-weight: 900;"><span style="display: inline-block; border-bottom: 1.5px solid #000; width: 10mm; margin-right: 2px;">&nbsp;</span><strong>/ 5</strong></span>
-          </td>
-
-          <!-- Column 4: KS3 Level / Effort (Open Cell for Teacher Hand-Marking) -->
-          <td style="padding: 4px 4px; border-right: 1.5px solid #000000; text-align: center; vertical-align: middle; width: 22mm;">
-            &nbsp;
-          </td>
-
-          <!-- Column 5: Spellings / Feedback (Clean Writing Lines for the Teacher) -->
-          <td style="padding: 3px 5px; vertical-align: middle; width: 34mm;">
-            <div style="display: flex; flex-direction: column; justify-content: space-between; height: 23mm; box-sizing: border-box; padding: 1px 0;">
-              <div style="border-bottom: 1px dashed #cbd5e1; height: 6.5mm;"></div>
-              <div style="border-bottom: 1px dashed #cbd5e1; height: 6.5mm;"></div>
-              <div style="border-bottom: 1px dashed #cbd5e1; height: 6.5mm;"></div>
-            </div>
-          </td>
-        </tr>
-      `;
-    })
-    .join('\n');
-
-  return `
-  <!-- PAGE 20: OUTSIDE BACK COVER (COLOR COVERS) -->
-  <div class="page page-container recto-page" id="page-20" style="padding: 4mm 6mm; background: #ffffff;">
-    <div class="page-body-full" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; box-sizing: border-box;">
-      
-      <!-- Top Departmental Header Bar -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 3px;" data-department-name="The History Department">
-        <div style="display: flex; justify-content: space-between; align-items: baseline;">
-          <span class="school-brand-target" style="font-family: 'Inter', sans-serif; font-size: 11pt; font-weight: 900; letter-spacing: 1.5px; text-transform: uppercase;">The History Department</span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: #000000;">
-            Key Stage 3 Progress &amp; Homework Passport
-          </span>
-        </div>
-      </div>
-
-      <!-- Pupil Information & Target Level Strip -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 4px 10px; background: #ffffff; display: grid; grid-template-columns: 2.2fr 1fr 1.6fr; gap: 12px; align-items: center; margin-bottom: 3px;">
-        <div style="display: flex; align-items: baseline; gap: 6px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; text-transform: uppercase;">Pupil Name:</span>
-          <div style="border-bottom: 1.4px solid #000000; flex: 1; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline; gap: 6px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; text-transform: uppercase;">Class:</span>
-          <div style="border-bottom: 1.4px solid #000000; flex: 1; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline; gap: 6px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 900; text-transform: uppercase;">Target KS3 Level:</span>
-          <div style="border-bottom: 1.4px solid #000000; flex: 1; height: 14px;"></div>
-        </div>
-      </div>
-
-      <!-- KS3 History Progress Pathways & Descriptors (Universal KS3 Years 7–9 Standard) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 5.5px 6px; background: #ffffff; margin-bottom: 6px; font-family: 'Inter', sans-serif;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; background: #ffffff; padding: 2.5px 6px; margin-bottom: 3px;">
-          <strong style="font-size: 7.4pt; text-transform: uppercase; letter-spacing: 0.5px; color: #000000;">
-            Key Stage 3 History Assessment Pathways &bull; Level Descriptors &amp; Criteria
-          </strong>
-          <span style="font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1px 6px; border-radius: 2px; text-transform: uppercase;">
-            Years 7–9 Standards
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.3;">
-          
-          <!-- Emerging &bull; 35% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging &bull; 35%
-            </div>
-            <div style="color: #000000;">
-              Identifies key names, dates, and terms; describes what happened using simple statements and structured writing frames.
-            </div>
-          </div>
-
-          <!-- Emerging+ &bull; 50% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging+ &bull; 50%
-            </div>
-            <div style="color: #000000;">
-              Describes reasons why events occurred; begins to explain causes and consequences supported by basic historical facts.
-            </div>
-          </div>
-
-          <!-- Expected &bull; 65% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected &bull; 65%
-            </div>
-            <div style="color: #000000;">
-              Constructs structured paragraphs explaining multiple causes and consequences; substantiates arguments with precise historical dates, key terms, and named figures.
-            </div>
-          </div>
-
-          <!-- Expected+ &bull; 80% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected+ &bull; 80%
-            </div>
-            <div style="color: #000000;">
-              Weighs competing factors and perspectives; explains why certain causes were more decisive than others using detailed, accurate evidence across the unit.
-            </div>
-          </div>
-
-          <!-- Greater Depth &bull; 90% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Greater Depth &bull; 90%
-            </div>
-            <div style="color: #000000;">
-              Crafts sustained, analytically rigorous arguments reaching a substantiated historical judgement; masterfully synthesizes evidence across the unit to evaluate complex turning points and long-term significance.
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Main Assessment Ledger Table (Medicine Style, Zero Mark Tallying) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; overflow: hidden; margin-bottom: 3px; flex: 1; display: flex; flex-direction: column;">
-        <table style="width: 100%; height: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; flex: 1;">
-          <thead>
-            <tr style="border-bottom: 1.5px solid #000000; background: #f8fafc; height: 7.5mm;">
-              <th style="padding: 2px 2px; width: 21mm; text-align: center; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; border-right: 1.5px solid #000000;">
-                HW &amp; QR
-              </th>
-              <th style="padding: 2px 6px; text-align: left; font-size: 7.6pt; font-weight: 900; text-transform: uppercase; border-right: 1.5px solid #000000;">
-                Enquiry / Disciplinary Inquiry Focus
-              </th>
-              <th style="padding: 2px 2px; width: 18mm; text-align: center; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; border-right: 1.5px solid #000000;">
-                Do Now (/5)
-              </th>
-              <th style="padding: 2px 2px; width: 22mm; text-align: center; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; border-right: 1.5px solid #000000;">
-                KS3 Level / Effort
-              </th>
-              <th style="padding: 2px 5px; width: 34mm; text-align: left; font-size: 7.4pt; font-weight: 900; text-transform: uppercase;">
-                Spellings / Feedback
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            ${shoahTableRowsHtml}
-            <!-- Formative Unit Sign-off Row (Zero Mark Tallying) -->
-            <tr style="background: #f8fafc; border-top: 1.8px solid #000000;">
-              <td colspan="2" style="padding: 4px 8px; border-right: 1.5px solid #000000; font-size: 7.8pt; font-weight: 900; text-transform: uppercase;">
-                Unit Overall Outcome: &nbsp;&nbsp;
-                <span style="font-weight: 700; color: #475569; font-size: 7.2pt;">[ Em (35%) &bull; Em+ (50%) &bull; Ex (65%) &bull; Ex+ (80%) &bull; GD (90%) ]</span>
-              </td>
-              <td colspan="3" style="padding: 4px 8px; font-size: 7.4pt; font-weight: 800; color: #000000;">
-                Teacher Signature: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 30mm; margin-right: 8px;">&nbsp;</span> 
-                Date: <span style="display: inline-block; border-bottom: 1.4px solid #000000; width: 18mm;">&nbsp;</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Reprographics Running Footer -->
-      <div style="font-family: 'Inter', sans-serif; font-size: 6.8pt; color: #475569; display: flex; justify-content: space-between; border-top: 1.2px solid #000000; padding-top: 2px;">
-        <span>The History Revision Hub &bull; Key Stage 3 Master Curriculum Series &bull; Retain for Parent Consultations</span>
-        <span>Page 20 / 20</span>
-      </div>
-
-    </div>
-  </div>`;
+  return renderKs2Ks3BackCover({
+    unitId: 'the_shoah',
+    pageNum: 20,
+    totalPages: 20,
+    mode: 'ks3',
+    keyStageBadge: 'KEY STAGE 3 HISTORY &bull; YEAR 9 DEPTH STUDY',
+    pagePadding: '5mm 6mm',
+    checkpoints,
+    footerQuip: 'The History Revision Hub • KS3 The Shoah (1933–1945) Pupil Workbook • Independent Curriculum Resource',
+    renderFooterStrip,
+  });
 }
 
 // ============================================================================
@@ -2141,6 +1947,10 @@ async function compileTheShoahWorkbook() {
         page-break-after: always !important;
         break-after: page !important;
       }
+      .page-container:last-of-type {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
     }
   </style>
 </head>
@@ -2183,6 +1993,7 @@ ${pagesHtml}
       margin: { top: 0, right: 0, bottom: 0, left: 0 },
     });
     await browser.close();
+    await assertPdfPageCount(pdfOutPath, 20);
     console.log(`🎉 Successfully rendered 20-Page Gold Standard PDF to: ${pdfOutPath}`);
   } catch (err) {
     console.warn(`⚠️ Puppeteer PDF generation failed or skipped: ${err.message}`);

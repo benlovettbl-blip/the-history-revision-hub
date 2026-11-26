@@ -26,6 +26,7 @@ const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
 const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 const { renderKs3CentrefoldSpine, assertPdfPageCount } = require('./components/render_ks3_centrefold_spine.cjs');
+const { renderKs2Ks3BackCover } = require('./components/render_ks2_ks3_back_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DATA_PATH = path.join(ROOT_DIR, 'data', 'ks2_ww2.json');
@@ -1033,17 +1034,8 @@ function buildSpineWorkbookHtml(unitData) {
   );
 
   // =========================================================================
-  // PAGE 28: OUTSIDE BACK COVER (PRIMARY ASSESSMENT PATHWAYS + MARKING + QRS)
+  // PAGE 28: OUTSIDE BACK COVER (SHARED KS2/KS3 ENGINE)
   // =========================================================================
-  const qrSpots = [
-    { label: 'All 11 Lessons', sub: 'Unit Hub & Audio', url: 'https://historyrevisionhub.co.uk/?view=lessons&unit=ks2_ww2' },
-    { label: 'Mind-Map Hub', sub: '11-Enquiry Map', url: 'https://historyrevisionhub.co.uk/?view=mindmap&unit=ks2_ww2' },
-    { label: 'Living Timeline', sub: '1933–45 Milestones', url: 'https://historyrevisionhub.co.uk/?view=timeline&unit=ks2_ww2' },
-    { label: 'Quizzes & Cards', sub: 'Self-Marking Recall', url: 'https://historyrevisionhub.co.uk/?view=quiz&unit=ks2_ww2' },
-    { label: 'Revision Arcade', sub: 'Wartime Games', url: 'https://historyrevisionhub.co.uk/?view=arcade&unit=ks2_ww2' },
-    { label: 'Story Companion', sub: 'Read-Aloud Audio', url: 'https://historyrevisionhub.co.uk/?view=reading&unit=ks2_ww2' },
-  ];
-
   const markingCheckpoints = [
     { title: 'Enquiries 1–2: Outbreak 1939 & Operation Pied Piper', focus: 'Gas masks, Blackout rules & 1.5 million child evacuees' },
     { title: 'Enquiry 3: Pre-War Jewish Life & Rights Lost (1933–38)', focus: 'Pre-war everyday childhoods & step-by-step anti-Jewish laws' },
@@ -1054,141 +1046,18 @@ function buildSpineWorkbookHtml(unitData) {
     { title: 'Teacher-Designated End-of-Unit Assessment Task', focus: 'Overall KS2 Historical Enquiry & Vocabulary Mastery' },
   ];
 
-  html += `
-  <!-- PAGE 28: OUTSIDE BACK COVER -->
-  <div class="page verso-page" id="page-28">
-    <div class="page-body-full">
-      <div style="border-bottom:2px solid #0f284e;padding-bottom:3px;margin-bottom:6px;display:flex;justify-content:space-between;align-items:baseline;">
-        <h2 style="margin:0;font-family:'Inter',sans-serif;font-size:11.0pt;color:#0f284e;text-transform:uppercase;font-weight:900;letter-spacing:0.4px;white-space:nowrap;">
-          Pupil Progress &amp; Teacher Feedback Record
-        </h2>
-        <span style="font-family:'Inter',sans-serif;font-size:7.4pt;font-weight:800;color:#0f284e;white-space:nowrap;">KEY STAGE 2 HISTORY &bull; YEARS 5–6</span>
-      </div>
-
-      <!-- 5-Band Historian Progress Descriptors (Unified KS2 -> KS3 Scale) -->
-      <div style="border:1.5px solid #000000;border-radius:4px;padding:5px 6px;background:#ffffff;margin-bottom:6px;font-family:'Inter',sans-serif;">
-        <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1.2px solid #000000;padding-bottom:2px;margin-bottom:4px;">
-          <strong style="font-size:7.3pt;text-transform:uppercase;letter-spacing:0.4px;color:#000000;">
-            Historian Writing &amp; Progress Descriptors (Emerging &rarr; Greater Depth)
-          </strong>
-          <span style="font-size:6.6pt;font-weight:900;background:#000000;color:#ffffff;padding:1px 6px;border-radius:2px;">5-BAND PROGRESS SCALE</span>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:4px;font-size:6.6pt;line-height:1.24;color:#000000;">
-          <div style="border:1px solid #000000;border-radius:3px;padding:3.5px 4.5px;">
-            <div style="font-weight:900;text-transform:uppercase;border-bottom:1px solid #000000;padding-bottom:1.5px;margin-bottom:2px;">Emerging (Em)</div>
-            Recalls key wartime words and dates; writes simple sentences using the starter stems.
-          </div>
-          <div style="border:1px solid #000000;border-radius:3px;padding:3.5px 4.5px;">
-            <div style="font-weight:900;text-transform:uppercase;border-bottom:1px solid #000000;padding-bottom:1.5px;margin-bottom:2px;">Emerging+ (Em+)</div>
-            Describes wartime events accurately using key terms and specific facts from the spine.
-          </div>
-          <div style="border:1px solid #000000;border-radius:3px;padding:3.5px 4.5px;">
-            <div style="font-weight:900;text-transform:uppercase;border-bottom:1px solid #000000;padding-bottom:1.5px;margin-bottom:2px;">Expected (Ex)</div>
-            Writes two clear paragraphs explaining <em>why</em> events happened with accurate dates and evidence.
-          </div>
-          <div style="border:1px solid #000000;border-radius:3px;padding:3.5px 4.5px;">
-            <div style="font-weight:900;text-transform:uppercase;border-bottom:1px solid #000000;padding-bottom:1.5px;margin-bottom:2px;">Expected+ (Ex+)</div>
-            Connects causes and consequences smoothly; compares different wartime experiences.
-          </div>
-          <div style="border:1px solid #000000;border-radius:3px;padding:3.5px 4.5px;">
-            <div style="font-weight:900;text-transform:uppercase;border-bottom:1px solid #000000;padding-bottom:1.5px;margin-bottom:2px;">Greater Depth (GD)</div>
-            Writes fluent, independent historical explanations weaving evidence across the whole unit.
-          </div>
-        </div>
-      </div>
-
-      <!-- Low-Friction Primary Checkpoint Marking Grid -->
-      <div style="border:1.5px solid #0f284e;border-radius:4px;overflow:hidden;margin-bottom:6px;flex:1;display:flex;flex-direction:column;">
-        <table style="width:100%;height:100%;border-collapse:collapse;font-family:'Inter',sans-serif;font-size:7.6pt;">
-          <thead>
-            <tr style="background:#0f284e;color:#ffffff;">
-              <th style="padding:5px 4px;width:9.5%;text-align:center;border-right:1px solid rgba(255,255,255,0.25);font-size:6.8pt;text-transform:uppercase;">Date</th>
-              <th style="padding:5px 7px;width:33%;text-align:left;border-right:1px solid rgba(255,255,255,0.25);font-size:6.8pt;text-transform:uppercase;">Enquiry Checkpoint &bull; Focus</th>
-              <th style="padding:5px 3px;width:11.5%;text-align:center;border-right:1px solid rgba(255,255,255,0.25);font-size:6.6pt;text-transform:uppercase;line-height:1.1;">Standard /<br>Effort</th>
-              <th style="padding:5px 8px;width:46%;text-align:left;font-size:6.8pt;text-transform:uppercase;">Teacher Comment / Quiz Score / Next Step</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${markingCheckpoints
-              .map(
-                (row, idx) => `
-              <tr style="border-bottom:1px solid #94a3b8;background:${idx === markingCheckpoints.length - 1 ? '#f8fafc' : '#ffffff'};">
-                <td style="padding:4px 3px;border-right:1px solid #94a3b8;text-align:center;vertical-align:middle;">
-                  <div style="font-size:6.5pt;font-weight:700;color:#64748b;letter-spacing:0.3px;padding-top:3mm;">
-                    <span style="display:inline-block;width:5.5mm;border-bottom:0.9px solid #94a3b8;"></span>/<span style="display:inline-block;width:5.5mm;border-bottom:0.9px solid #94a3b8;"></span>
-                  </div>
-                </td>
-                <td style="padding:5px 7px;border-right:1px solid #94a3b8;vertical-align:middle;">
-                  <div style="font-weight:800;font-size:7.7pt;color:#0f284e;line-height:1.2;">${esc(row.title)}</div>
-                  <div style="font-size:6.7pt;color:#334155;margin-top:2px;line-height:1.18;">${esc(row.focus)}</div>
-                </td>
-                <td style="padding:4px 4px;border-right:1px solid #94a3b8;text-align:center;vertical-align:middle;">
-                  <div style="display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:3.2mm;">
-                    <div>
-                      <div style="display:grid;grid-template-columns:repeat(3,5.6mm);gap:2.5px;font-size:5.8pt;font-weight:800;color:#0f172a;justify-content:center;">
-                        <span style="border:1px solid #64748b;border-radius:2px;height:4.5mm;display:flex;align-items:center;justify-content:center;background:#ffffff;">Em</span>
-                        <span style="border:1px solid #64748b;border-radius:2px;height:4.5mm;display:flex;align-items:center;justify-content:center;background:#ffffff;">Em+</span>
-                        <span style="border:1px solid #64748b;border-radius:2px;height:4.5mm;display:flex;align-items:center;justify-content:center;background:#ffffff;">Ex</span>
-                      </div>
-                      <div style="display:grid;grid-template-columns:repeat(2,5.6mm);gap:2.5px;font-size:5.8pt;font-weight:800;color:#0f172a;justify-content:center;margin-top:2.5px;">
-                        <span style="border:1px solid #64748b;border-radius:2px;height:4.5mm;display:flex;align-items:center;justify-content:center;background:#ffffff;">Ex+</span>
-                        <span style="border:1px solid #64748b;border-radius:2px;height:4.5mm;display:flex;align-items:center;justify-content:center;background:#ffffff;">GD</span>
-                      </div>
-                    </div>
-                    <div style="font-size:6.0pt;font-weight:800;color:#334155;white-space:nowrap;border-top:0.8px dashed #cbd5e1;padding-top:1.5mm;width:100%;">
-                      Effort: <span style="display:inline-block;width:7.5mm;border-bottom:1px solid #475569;"></span>
-                    </div>
-                  </div>
-                </td>
-                <td style="padding:2px 8px 3px 8px;vertical-align:middle;">
-                  <div style="border-bottom:0.9px solid #94a3b8;height:6.2mm;"></div>
-                  <div style="border-bottom:0.9px solid #94a3b8;height:6.2mm;"></div>
-                  <div style="border-bottom:0.9px solid #94a3b8;height:6.2mm;"></div>
-                </td>
-              </tr>`,
-              )
-              .join('')}
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Pupil Proud Moment / Historian Reflection Box -->
-      <div style="border:1.3px solid #0f284e;border-radius:4px;padding:4.5px 8px 6px 8px;background:#f8fafc;margin-bottom:6px;font-family:'Inter',sans-serif;font-size:7.3pt;">
-        <div style="display:flex;justify-content:space-between;align-items:baseline;">
-          <strong style="color:#0f284e;text-transform:uppercase;">★ My Proudest Piece of Historical Writing in This Booklet:</strong>
-          <span style="font-size:6.8pt;font-weight:700;color:#334155;">Enquiry # ______ &bull; Page ______</span>
-        </div>
-        <div style="display:flex;align-items:baseline;gap:6px;margin-top:1.5mm;">
-          <span style="font-size:6.9pt;font-style:italic;color:#475569;white-space:nowrap;">I am proud of this paragraph because:</span>
-          <div style="flex:1;border-bottom:1.1px solid #0f284e;height:4.5mm;"></div>
-        </div>
-      </div>
-
-      <!-- 6-Code Interactive Audio & Quiz Hub -->
-      <div style="border:1.5px solid #0f284e;border-radius:4px;padding:5px 7px;background:#ffffff;">
-        <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #cbd5e1;padding-bottom:2.5px;margin-bottom:4px;font-family:'Inter',sans-serif;">
-          <strong style="font-size:7.6pt;color:#0f284e;text-transform:uppercase;">📱 Scan for Unit Read-Aloud Audio, Mind-Map, Timeline, Quizzes &amp; Games</strong>
-          <span style="font-size:6.5pt;font-weight:800;background:#0f284e;color:#ffffff;padding:1px 5px;border-radius:2px;">FREE HOME REVISION</span>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:5px;text-align:center;font-family:'Inter',sans-serif;">
-          ${qrSpots
-            .map(
-              (q) => `
-            <div style="border:1px solid #cbd5e1;border-radius:3px;padding:3.5px 2px;display:flex;flex-direction:column;align-items:center;">
-              <div style="font-size:6.3pt;font-weight:900;color:#0f284e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;">${esc(q.label)}</div>
-              <div style="font-size:5.7pt;color:#475569;margin-bottom:2px;">${esc(q.sub)}</div>
-              <div style="width:17mm;height:17mm;">${generateQrSvg(q.url)}</div>
-            </div>`,
-            )
-            .join('')}
-        </div>
-      </div>
-
-      ${renderFooterStrip(28, 'The History Revision Hub • KS2 World War II Structured Spine Workbook • Independent Curriculum Resource')}
-    </div>
-  </div>
-</body>
-</html>`;
+  html += renderKs2Ks3BackCover({
+    unitId: 'ks2_ww2',
+    pageNum: 28,
+    totalPages: TOTAL_PAGES,
+    mode: 'ks2',
+    keyStageBadge: 'KEY STAGE 2 HISTORY &bull; YEARS 5–6',
+    pagePadding: '9mm 11mm 8.5mm 11mm',
+    checkpoints: markingCheckpoints,
+    footerQuip: 'The History Revision Hub • KS2 World War II Structured Spine Workbook • Independent Curriculum Resource',
+    renderFooterStrip: (p, q) => renderFooterStrip(p, q),
+  });
+  html += '\n</body>\n</html>';
 
   return html;
 }

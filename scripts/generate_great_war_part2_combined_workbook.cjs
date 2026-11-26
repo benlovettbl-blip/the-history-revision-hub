@@ -39,6 +39,7 @@ const {
 const {
   renderKs3CentrefoldSpine,
 } = require('./components/render_ks3_centrefold_spine.cjs');
+const { renderKs2Ks3BackCover } = require('./components/render_ks2_ks3_back_cover.cjs');
 
 function adaptSpreadTo24Pages(fragment) {
   return fragment
@@ -398,10 +399,11 @@ const COMBINED_CSS = `
     box-sizing: border-box;
   }
   .ruled-line {
-    height: 8.2mm;
-    border-bottom: 0.8px solid #000000;
-    box-sizing: border-box;
-  }
+      flex: 1;
+      min-height: 0;
+      border-bottom: 0.85px solid #000000;
+      box-sizing: border-box;
+    }
   .ruled-line:last-child {
     border-bottom: none;
   }
@@ -718,6 +720,7 @@ const COMBINED_CSS = `
 
 function renderCombinedCentrefold(totalPages = 24) {
   return renderKs3CentrefoldSpine({
+    unitId: 'great_war_part2',
     leftPageNum: 12,
     rightPageNum: 13,
     totalPages,
@@ -1055,7 +1058,7 @@ async function compileCombinedWorkbook() {
           <strong>Weekly Disciplinary Learning Architecture:</strong>
           <strong>1. Classroom Inquiry:</strong> Complete the 5-Stage Inquiry Spine and construct extended writing tasks in class.<br>
           <strong>2. Oral Home Reading:</strong> Read the facing literary extract aloud to a parent with fluency and expression.<br>
-          <strong>3. Parent Discussion:</strong> Discuss the targeted hinge question together. Parent initials the verification box.<br>
+          <strong>3. Parent Discussion:</strong> Discuss the targeted discussion question together. Parent initials the verification box.<br>
           <strong>4. Closed-Book Retrieval:</strong> Complete the 6-question quiz from memory and scan QR to self-check.
         </div>
         <div class="cover-qr-card">
@@ -1121,80 +1124,47 @@ async function compileCombinedWorkbook() {
   // ==========================================================================
   // PAGE 24: MASTER BACK COVER (SYNOPTIC PROGRESS & ASSESSMENT PATHWAYS)
   // ==========================================================================
-  html += `
-  <div class="page page-container verso-page a4-page-pad" id="page-24">
-    <div class="page-body-full">
-      <div>
-        <div class="page-header-strip">
-          <div>
-            <h2>KS3 Synoptic Progress Ledger &amp; Department Assessment Pathways</h2>
-            <p>Formative Tracking, Diagnostic Marking &amp; Online Answer Validation</p>
-          </div>
-          <span class="page-tag">Verso &bull; Page 24</span>
-        </div>
-
-        <div style="background: #000000; color: #ffffff; padding: 4px 8px; border-radius: 3px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
-          <span style="font-size: 7.6pt; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px;">Key Stage 3 Historical Assessment Criteria</span>
-          <span style="font-size: 6.8pt; font-weight: 700;">Year 9 Pathway</span>
-        </div>
-
-        <!-- Assessment Pathways Grid -->
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; margin-bottom: 4px;">
-          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff;">
-            <strong style="display: block; font-size: 6.8pt; text-transform: uppercase; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">Emerging (1–3)</strong>
-            <span style="font-size: 6.3pt; line-height: 1.22; display: block; color: #334155;">Identifies key chronological milestones (1914 enlistment, trenches, 1918 Armistice) using simple statements and structured frames.</span>
-          </div>
-          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff;">
-            <strong style="display: block; font-size: 6.8pt; text-transform: uppercase; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">Emerging+ (3–4)</strong>
-            <span style="font-size: 6.3pt; line-height: 1.22; display: block; color: #334155;">Describes reasons why trench stalemate and total war developed; begins to explain causes supported by basic facts.</span>
-          </div>
-          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff;">
-            <strong style="display: block; font-size: 6.8pt; text-transform: uppercase; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">Expected (4–5)</strong>
-            <span style="font-size: 6.3pt; line-height: 1.22; display: block; color: #334155;">Constructs structured paragraphs explaining multiple causes and consequences on the Western Front with precise dates and terms.</span>
-          </div>
-          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff;">
-            <strong style="display: block; font-size: 6.8pt; text-transform: uppercase; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">Expected+ (6–7)</strong>
-            <span style="font-size: 6.3pt; line-height: 1.22; display: block; color: #334155;">Weighs competing military, imperial, and domestic factors; explains why key turning points were decisive using accurate evidence.</span>
-          </div>
-          <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 4px 5px; background: #ffffff;">
-            <strong style="display: block; font-size: 6.8pt; text-transform: uppercase; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">Greater Depth (8–9)</strong>
-            <span style="font-size: 6.3pt; line-height: 1.22; display: block; color: #334155;">Critically evaluates historical debates (e.g. Haig’s learning curve vs "Butcher" critique; Keynes on Versailles) in sustained judgements.</span>
-          </div>
-        </div>
-
-        <!-- Marking Bank Hero Card -->
-        <div style="border: 1.4px solid #000000; border-radius: 3px; padding: 6px 8px; background: #f8fafc; margin-top: 4px; display: grid; grid-template-columns: 1fr 36mm; gap: 8px; align-items: center;">
-          <div>
-            <strong style="font-size: 8.4pt; text-transform: uppercase; display: block; margin-bottom: 2px;">Digital Department Marking Bank:</strong>
-            <p style="font-size: 7.0pt; line-height: 1.35; margin: 0; color: #334155;">
-              Scan the QR code to access the official department model answers, core factual criteria, and historical explanations for all 30 homework retrieval questions.
-            </p>
-          </div>
-          <div style="text-align: center; border-left: 1.2px solid #000000; padding-left: 8px;">
-            <img src="${markingQrDataUrl}" alt="Marking Bank QR" style="width: 25mm; height: 25mm; display: block; margin: 0 auto;">
-            <span style="font-size: 5.6pt; font-weight: 800; text-transform: uppercase; display: block; margin-top: 2px;">Scan for Answers</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Teacher Synoptic Verdict Strip -->
-      <div style="border: 1.4px solid #000000; border-radius: 3px; padding: 6px 8px; background: #ffffff; margin-top: 4px;">
-        <strong style="font-size: 7.4pt; text-transform: uppercase; display: block; margin-bottom: 2px;">Teacher Termly Progress Category Verdict:</strong>
-        <div style="display: flex; gap: 10px; font-size: 7.0pt; margin-bottom: 6px;">
-          <span>[&nbsp;&nbsp;] Emerging</span>
-          <span>[&nbsp;&nbsp;] Emerging+</span>
-          <span>[&nbsp;&nbsp;] Expected</span>
-          <span>[&nbsp;&nbsp;] Expected+</span>
-          <span>[&nbsp;&nbsp;] Greater Depth</span>
-        </div>
-        <div style="border-bottom: 1.2px solid #000000; height: 14px; margin-bottom: 4px;"></div>
-        <div style="border-bottom: 1.2px solid #000000; height: 14px;"></div>
-      </div>
-
-      ${renderFooterStrip(24, 'The History Revision Hub &bull; Master 24-Page Saddle-Stitch Scholar Workbook Standard &bull; All Rights Reserved.', TOTAL_PAGES)}
-    </div>
-  </div>
-`;
+  html += renderKs2Ks3BackCover({
+    unitId: 'great_war_part2',
+    pageNum: 24,
+    totalPages: TOTAL_PAGES,
+    mode: 'ks3',
+    keyStageBadge: 'KEY STAGE 3 HISTORY &bull; YEAR 9 EXTENDED EDITION',
+    pagePadding: '5mm 6mm',
+    extraPageClass: 'a4-page-pad',
+    checkpoints: [
+        {
+            "title": "Enquiry 1: 1914 & Rush to the Colours",
+            "focus": "Enlistment, Pals Battalions + Recruitment Reading & Quiz"
+        },
+        {
+            "title": "Enquiry 2: Trench Warfare & The Somme",
+            "focus": "Attrition Analysis + Trench Voices Reading & Quiz"
+        },
+        {
+            "title": "Enquiry 3: Global Empire Troops & Memory",
+            "focus": "Interpretations + Global Fronts Reading & Quiz"
+        },
+        {
+            "title": "Enquiry 4: The Home Front, DORA & Women",
+            "focus": "Narrative Account + Munitions Reading & Quiz"
+        },
+        {
+            "title": "Enquiry 5: Armistice & Treaty of Versailles",
+            "focus": "Evaluative Essay + 1918–19 Peace Reading & Quiz"
+        },
+        {
+            "title": "Centrefold Living Timeline (pp. 12–13)",
+            "focus": "1914–1919 Mind-Map Branches & Chronological Synthesis"
+        },
+        {
+            "title": "Teacher-Designated Synoptic Assessment",
+            "focus": "Overall WWI Extended Workbook & Retrieval Mastery"
+        }
+    ],
+    footerQuip: 'The History Revision Hub • Master 24-Page Saddle-Stitch Scholar Workbook • Independent Curriculum Resource',
+    renderFooterStrip,
+  });
 
   html += `
 </body>

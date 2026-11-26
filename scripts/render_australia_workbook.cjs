@@ -7,6 +7,7 @@ const {
   renderKs3CentrefoldSpine,
   assertPdfPageCount,
 } = require('./components/render_ks3_centrefold_spine.cjs');
+const { renderKs2Ks3BackCover } = require('./components/render_ks2_ks3_back_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -145,7 +146,7 @@ const enquiryConfigs = [
         'Captain James Cook &bull; Admiralty secret orders &bull; Tupaia &bull; Endeavour &bull; Botany Bay &bull; Gweagal clan &bull; Possession Island &bull; King George III &bull; terra nullius &bull; dispossession',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        '<strong>Milestones 1 &amp; 2 (1770–1788):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out Cook &amp; Tupaia&rsquo;s 1770 Botany Bay voyage, the 1788 First Fleet arrival at Sydney Cove, and the myth of <em>terra nullius</em>.',
+        '<strong>Milestones 1 &amp; 2 (1770–1788):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out Cook &amp; Tupaia&rsquo;s 1770 Botany Bay voyage, the 1788 First Fleet arrival at Sydney Cove, and the myth of <em>terra nullius</em>.',
     },
     leftPageQuip:
       'Polynesian navigator Tupaia could map 130 Pacific islands across 3,000 miles entirely from memory.',
@@ -251,7 +252,7 @@ const enquiryConfigs = [
       },
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        '<strong>Milestone 3 (1789):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out the 1789 <em>gal-galla</em> smallpox epidemic, 50–70% Eora mortality, and the loss of clan elders and law-keepers.',
+        '<strong>Milestone 3 (1789):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the 1789 <em>gal-galla</em> smallpox epidemic, 50–70% Eora mortality, and the loss of clan elders and law-keepers.',
     },
     leftPageQuip:
       'Convict Mary Wade was sentenced to transportation at age 11 for stealing an 8-penny cotton frock.',
@@ -371,7 +372,7 @@ const enquiryConfigs = [
       },
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        '<strong>Milestone 4 (1797):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out Pemulwuy&rsquo;s Bidjigal guerrilla war, crop raids defending Country, and the 1797 Battle of Parramatta.',
+        '<strong>Milestone 4 (1797):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out Pemulwuy&rsquo;s Bidjigal guerrilla war, crop raids defending Country, and the 1797 Battle of Parramatta.',
     },
     leftPageQuip:
       'First Nations Australians have maintained continuous cultural custodianship of the continent for 65,000 years.',
@@ -465,7 +466,7 @@ const enquiryConfigs = [
         'One reason why Interpretations 1 and 2 differ is because they rely on different historical sources... &bull; Specifically, Interpretation 1 uses... &bull; In contrast, Interpretation 2 focuses primarily on... &bull; As a result, the authors reach different conclusions because...',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        '<strong>Milestones 5 &amp; 6 (1828–1838):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out Tasmanian martial law &amp; the 1830 Black Line alongside the 1838 Myall Creek Massacre and trials.',
+        '<strong>Milestones 5 &amp; 6 (1828–1838):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out Tasmanian martial law &amp; the 1830 Black Line alongside the 1838 Myall Creek Massacre and trials.',
     },
     leftPageQuip:
       'The 1830 ‘Black Line’ swept 2,200 armed men across Tasmania for seven weeks—and captured just two people.',
@@ -583,7 +584,7 @@ const enquiryConfigs = [
         'Edward Hargraves &bull; Ballarat &bull; 30-shilling licence &bull; Southern Cross flag &bull; Peter Lalor &bull; manhood suffrage &bull; squatter pastoralists &bull; Merino wool &bull; Myall Creek &bull; terra nullius &bull; First Nations survival',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        '<strong>Milestones 7 &amp; 8 (1851–1854):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out the 1851 Ballarat gold rush, the 30-shilling licence tax, and the 1854 Eureka Stockade democratic uprising.',
+        '<strong>Milestones 7 &amp; 8 (1851–1854):</strong> Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the 1851 Ballarat gold rush, the 30-shilling licence tax, and the 1854 Eureka Stockade democratic uprising.',
     },
     leftPageQuip:
       'The Southern Cross flag was sewn from silk petticoats by women on the Ballarat goldfield in 1854.',
@@ -647,9 +648,7 @@ function renderSpinePage(cfg, pageNum) {
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
-            <div class="ruled-line"></div>
-            <div class="ruled-line"></div>
-          </div>
+            <div class="ruled-line"></div></div>
         </div>`;
     })
     .join('');
@@ -764,7 +763,7 @@ function renderRightPage(cfg, pageNum) {
         <strong style="color: #000000;">Task:</strong> Using the vocabulary and connectives above, write your analytical response below:
       </div>
       <div style="display: flex; flex-direction: column; gap: 0; margin-bottom: 4px; flex: 1; min-height: 0;">
-        ${Array(20)
+        ${Array(16)
           .fill(
             '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
           )
@@ -837,7 +836,7 @@ function renderRightPage(cfg, pageNum) {
         </div>
         ${rp.stemsB ? `<div style="border: 1px solid #000000; border-radius: 2px; padding: 2px 5px; background: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.0pt; line-height: 1.2; margin-bottom: 2px;"><strong style="color: #000000;">Sentence Stems:</strong> <span style="color: #000000;">${rp.stemsB}</span></div>` : ''}
         <div style="display: flex; flex-direction: column; gap: 0; flex: 1; min-height: 0;">
-          ${Array(10)
+          ${Array(8)
             .fill(
               '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
             )
@@ -860,7 +859,7 @@ function renderRightPage(cfg, pageNum) {
         </div>
         ${rp.stemsC ? `<div style="border: 1px solid #000000; border-radius: 2px; padding: 2px 5px; background: #ffffff; font-family: 'Inter', sans-serif; font-size: 7.0pt; line-height: 1.2; margin-bottom: 2px;"><strong style="color: #000000;">Scaffolded Sentence Stems:</strong> <span style="color: #000000;">${rp.stemsC}</span></div>` : ''}
         <div style="display: flex; flex-direction: column; gap: 0; flex: 1; min-height: 0;">
-          ${Array(10)
+          ${Array(8)
             .fill(
               '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
             )
@@ -961,7 +960,7 @@ function renderRightPage(cfg, pageNum) {
 
         <!-- Ruled Writing Lines (18 Lines • Standard 7.8mm pitch) -->
         <div style="display: flex; flex-direction: column; gap: 0; margin-bottom: 3px; flex: 1; min-height: 0;">
-          ${Array(18)
+          ${Array(14)
             .fill(
               '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
             )
@@ -996,7 +995,7 @@ function renderNotesPage(pageNum, quip) {
   const pageClass = isEven ? 'verso-page' : 'recto-page';
 
   // 32 ruled lines for standard ~8mm pitch filling the page perfectly
-  const numLines = 32;
+  const numLines = 23;
   let linesHtml = '';
   for (let i = 0; i < numLines; i++) {
     linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
@@ -1132,8 +1131,9 @@ function compileAustraliaWorkbook() {
       box-sizing: border-box;
     }
     .ruled-line {
-      height: 8.2mm;
-      border-bottom: 0.8px solid #000000;
+      flex: 1;
+      min-height: 0;
+      border-bottom: 0.85px solid #000000;
       box-sizing: border-box;
     }
     .ruled-line:last-child {
@@ -1146,6 +1146,7 @@ function compileAustraliaWorkbook() {
       box-sizing: border-box;
       margin: 0;
     }
+    .ruled-lines-block .task-line { height: 9.0mm; }
     .ruled-lines-block {
       display: flex;
       flex-direction: column;
@@ -1340,7 +1341,7 @@ function compileAustraliaWorkbook() {
             <!-- Targeted Disciplinary Hinge Question -->
             <div style="background: #ffffff; border: 1.2px solid #0f284e; border-radius: 3px; padding: 2.5px 6px;">
               <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">Disciplinary Hinge Question:</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">Key Discussion Question:</span>
                 <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 700; color: #64748b; text-transform: uppercase;">Evaluation</span>
               </div>
               <div style="font-family: 'Georgia', serif; font-size: 6.9pt; font-style: italic; color: #1e293b; line-height: 1.18; margin-top: 1px;">
@@ -1485,6 +1486,7 @@ function compileAustraliaWorkbook() {
   // PAGES 8–9: CENTREFOLD CURRICULUM MIND-MAP CANVAS
   // ====================================================================
   html += renderKs3CentrefoldSpine({
+    unitId: 'australia',
     leftPageNum: 8,
     rightPageNum: 9,
     totalPages: 16,
@@ -1588,259 +1590,47 @@ function compileAustraliaWorkbook() {
   // ====================================================================
   // PAGE 16: OUTSIDE BACK COVER (PROGRESS LEDGER + 5 QR CODES)
   // ====================================================================
-  html += `
-  <!-- PAGE 16: OUTSIDE BACK COVER -->
-  <div class="page page-container verso-page" id="page-16" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <!-- Back Cover Header Strip -->
-      <div style="border-bottom: 2px solid #0f284e; padding-bottom: 3px; margin-bottom: 6px;">
-        <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11.5pt; color: #0f284e; text-transform: uppercase; font-weight: 900; letter-spacing: 0.5px;">
-          Key Stage 3 History &bull; Pupil Progress &amp; Assessment Record
-        </h2>
-      </div>
-
-      <!-- Pupil Details & Target Level Strip -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 7px 12px; background: #ffffff; display: grid; grid-template-columns: 2fr 1fr 1.3fr; gap: 14px; align-items: center; margin-bottom: 5px;">
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Pupil Name:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Class:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Target KS3 Level:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px; text-align: center; font-weight: 900; color: #0f284e;"></div>
-        </div>
-      </div>
-
-      <!-- KS3 History Progress Pathways & Descriptors (Universal KS3 Years 7–9 Standard) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 5.5px 6px; background: #ffffff; margin-bottom: 6px; font-family: 'Inter', sans-serif;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; background: #ffffff; padding: 2.5px 6px; margin-bottom: 3px;">
-          <strong style="font-size: 7.4pt; text-transform: uppercase; letter-spacing: 0.5px; color: #000000;">
-            Key Stage 3 History Assessment Pathways &bull; Level Descriptors &amp; Criteria
-          </strong>
-          <span style="font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1px 6px; border-radius: 2px; text-transform: uppercase;">
-            Years 7–9 Standards
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.3;">
-          
-          <!-- Emerging &bull; 35% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging &bull; 35%
-            </div>
-            <div style="color: #000000;">
-              Identifies key names, dates, and terms; describes what happened using simple statements and structured writing frames.
-            </div>
-          </div>
-
-          <!-- Emerging+ &bull; 50% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging+ &bull; 50%
-            </div>
-            <div style="color: #000000;">
-              Describes reasons why events occurred; begins to explain causes and consequences supported by basic historical facts.
-            </div>
-          </div>
-
-          <!-- Expected &bull; 65% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected &bull; 65%
-            </div>
-            <div style="color: #000000;">
-              Constructs structured paragraphs explaining multiple causes and consequences; substantiates arguments with precise historical dates, key terms, and named figures.
-            </div>
-          </div>
-
-          <!-- Expected+ &bull; 80% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected+ &bull; 80%
-            </div>
-            <div style="color: #000000;">
-              Weighs competing factors and perspectives; explains why certain causes were more decisive than others using detailed, accurate evidence across the unit.
-            </div>
-          </div>
-
-          <!-- Greater Depth &bull; 90% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Greater Depth &bull; 90%
-            </div>
-            <div style="color: #000000;">
-              Crafts sustained, analytically rigorous arguments reaching a substantiated historical judgement; masterfully synthesizes evidence across the unit to evaluate complex turning points and long-term significance.
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Streamlined KS3 Marking Grid (Low-Friction & Periodic Marking Standard) -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; overflow: hidden; margin-bottom: 5px; flex: 1; display: flex; flex-direction: column;">
-        <table style="width: 100%; height: 100%; flex: 1; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 8pt;">
-          <thead>
-            <tr style="background: #0f284e; color: #ffffff;">
-              <th style="padding: 6px 4px; width: 9%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Date</th>
-              <th style="padding: 6px 8px; width: 38%; text-align: left; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Enquiry &bull; Assessment Focus</th>
-              <th style="padding: 6px 4px; width: 14%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Do Now (/5)</th>
-              <th style="padding: 6px 4px; width: 15%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">KS3 Level / Effort</th>
-              <th style="padding: 6px 8px; width: 24%; text-align: left; font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Teacher Comment / Spellings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 1: Cook, Tupaia &amp; Terra Nullius</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Causal Explanation: Pacific Claims &amp; Terra Nullius (1768–1788)</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 2: The First Fleet &amp; Penal Colony</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Feature Drill &amp; Source Utility: Hulks &amp; Sydney Settlement</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 3: Frontier Warfare &amp; Pemulwuy</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Narrative Account &amp; Importance: Sydney Frontier Resistance</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 4: Pastoralism &amp; The Black War</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Contrasting Interpretations: Reynolds vs Windschuttle</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 5: Gold Rush &amp; Eureka Stockade</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Evaluative Judgement: Turning Points in Australian History</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="background: #ffffff; border-top: 1.5px solid #0f284e;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Teacher-Designated Assessment Task</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-top: 1.5px solid #0f284e; background: #f8fafc;">
-              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; color: #0f284e; font-size: 8pt;">★</td>
-              <td style="padding: 6px 8px; border-right: 1px solid #cbd5e1; font-weight: 900; font-size: 8pt; color: #0f284e; text-transform: uppercase;">
-                Unit Retrieval Starter Total:
-              </td>
-              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; font-size: 8.5pt; color: #0f284e;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 25</strong></span>
-              </td>
-              <td colspan="2" style="padding: 4px 8px; font-size: 6.4pt; line-height: 1.2; color: #475569; vertical-align: middle;">
-                <strong>Overall Progress Category:</strong><br>[ Em (35%) &bull; Em+ (50%) &bull; Ex (65%) &bull; Ex+ (80%) &bull; GD (90%) ]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Interactive Digital Quizzing Hub -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 6px 8px; background: #ffffff;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #0f284e; background: #f0f4f9; padding: 3px 6px; margin-bottom: 4px; border-radius: 2px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.2pt; text-transform: uppercase; color: #0f284e;">
-            📱 Interactive Digital Quizzing Hub &bull; Scan for Instant Retrieval Practice
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7pt; font-weight: 800; background: #0f284e; color: #ffffff; border: 1px solid #0f284e; padding: 1px 5px; border-radius: 2px;">
-            ONLINE RECALL
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; text-align: center;">
-          ${enquiryConfigs
-            .map((cfg, idx) => {
-              const quizUrl = `https://historyrevisionhub.co.uk/?unit=australia&lesson=${idx}&quiz=true`;
-              const qrSvg = generateQrSvg(quizUrl);
-              const shortLabels = [
-                'Cook & Terra Nullius',
-                'First Fleet & Hulks',
-                'Pemulwuy & Frontier',
-                'Pastoralism & Black War',
-                'Eureka & Democracy',
-              ];
-              return `
-          <div style="border: 1.2px solid #0f284e; border-radius: 3px; padding: 4px 2px; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; margin-bottom: 1px; color: #0f284e;">
-              Enquiry ${cfg.lessonNum}
-            </div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 700; color: #475569; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
-              ${shortLabels[idx]}
-            </div>
-            <div style="width: 21mm; height: 21mm; margin: 0 auto 2px auto;">
-              ${qrSvg}
-            </div>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 800; text-transform: uppercase; background: #0f284e; color: #ffffff; padding: 1px 5px; border-radius: 2px; margin-bottom: 2px;">
-              Scan to Quiz
-            </span>
-            <div style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 900; color: #0f284e; margin-top: 1px; white-space: nowrap;">
-              Best Score: [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 8</strong> ]
-            </div>
-          </div>`;
-            })
-            .join('')}
-        </div>
-      </div>
-
-      ${renderFooterStrip(16, 'From Botany Bay to Eureka, colonisation in Australia was marked by First Nations resistance and the struggle for freedom.', 16)}
-    </div>
-  </div>
-</body>
-</html>
-`;
+  html += renderKs2Ks3BackCover({
+    unitId: 'australia',
+    pageNum: 16,
+    totalPages: 16,
+    mode: 'ks3',
+    keyStageBadge: 'KEY STAGE 3 HISTORY &bull; YEAR 8',
+    pagePadding: '4mm 6mm',
+    checkpoints: [
+          {
+                "title": "Enquiry 1: Cook, Tupaia & Terra Nullius",
+                "focus": "Causal Explanation: Pacific Claims & Terra Nullius (1768–88)"
+          },
+          {
+                "title": "Enquiry 2: The First Fleet & Penal Colony",
+                "focus": "Feature Drill & Source Utility: Hulks & Sydney Settlement"
+          },
+          {
+                "title": "Enquiry 3: Frontier Warfare & Pemulwuy",
+                "focus": "Narrative Account & Importance: Eora Frontier Resistance"
+          },
+          {
+                "title": "Enquiry 4: Pastoralism & The Black War",
+                "focus": "Contrasting Interpretations: Frontier Violence & Myall Creek"
+          },
+          {
+                "title": "Enquiry 5: Gold Rush & Eureka Stockade",
+                "focus": "Evaluative Judgement: Democratic Turning Points (1851–54)"
+          },
+          {
+                "title": "Independent Study & Notes Portfolio",
+                "focus": "Pages 14–15 Enquiry Notes, Reflection & Revision Tasks"
+          },
+          {
+                "title": "Teacher-Designated Assessment Task",
+                "focus": "Synoptic Colonial & Indigenous History Assessment Task"
+          }
+    ],
+    footerQuip: "The History Revision Hub • KS3 Invasion & Survival in Australia Workbook • Independent Curriculum Resource",
+    renderFooterStrip,
+  });
+  html += `\n</body>\n</html>\n`;
 
   return html;
 }

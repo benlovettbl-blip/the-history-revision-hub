@@ -26,6 +26,7 @@ const QRCode = require('qrcode');
 const { renderKs3BackCover } = require('./components/render_standard_cover.cjs');
 const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 const { renderKs3CentrefoldSpine, assertPdfPageCount } = require('./components/render_ks3_centrefold_spine.cjs');
+const { renderKs2Ks3BackCover } = require('./components/render_ks2_ks3_back_cover.cjs');
 
 const ROOT_DIR = path.join(__dirname, '..');
 const dataPath = path.join(ROOT_DIR, 'units', 'water_and_sanitation', 'data.js');
@@ -133,12 +134,12 @@ const lessonConfigs = canonicalLessons.map((l, idx) => {
         : 'Aqueduct &bull; Cloaca &bull; Thermae &bull; Miasma &bull; Cesspit',
       timelineMissionTitle: `Mind-Map Mission &bull; pp. 8–9`,
       timelineMission: [
-        'Turn to <strong>Page 8</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>c.AD 75 Roman Aqueducts &amp; Fishbourne</strong> node (aqueducts, lead pipes, thermae &amp; latrines).',
-        'Turn to <strong>Page 8</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>c.1165 Monastic Conduits</strong> and <strong>1388 Statute of Cambridge</strong> nodes.',
-        'Turn to <strong>Page 8</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1596–1660 Harington WC &amp; New River Mains</strong> node (valve flush, elm pipes, Pepys&rsquo;s cellar).',
-        'Turn to <strong>Page 9</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1831–42 Chadwick Report</strong> and <strong>1858–65 Bazalgette Sewers</strong> nodes.',
-        'Turn to <strong>Page 9</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1854 Broad Street Pump</strong> and <strong>1875–84 Public Health Act &amp; Koch</strong> nodes.',
-      ][lessonNum - 1] || `Turn to <strong>Pages 8–9</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out your curriculum mind-map nodes.`,
+        'Turn to <strong>Page 8</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>c.AD 75 Roman Aqueducts &amp; Fishbourne</strong> node (aqueducts, lead pipes, thermae &amp; latrines).',
+        'Turn to <strong>Page 8</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>c.1165 Monastic Conduits</strong> and <strong>1388 Statute of Cambridge</strong> nodes.',
+        'Turn to <strong>Page 8</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1596–1660 Harington WC &amp; New River Mains</strong> node (valve flush, elm pipes, Pepys&rsquo;s cellar).',
+        'Turn to <strong>Page 9</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1831–42 Chadwick Report</strong> and <strong>1858–65 Bazalgette Sewers</strong> nodes.',
+        'Turn to <strong>Page 9</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1854 Broad Street Pump</strong> and <strong>1875–84 Public Health Act &amp; Koch</strong> nodes.',
+      ][lessonNum - 1] || `Turn to <strong>Pages 8–9</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out your curriculum mind-map nodes.`,
     },
     leftPageQuip:
       l.did_you_know ||
@@ -247,9 +248,7 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
-            <div class="ruled-line"></div>
-            <div class="ruled-line"></div>
-          </div>
+            <div class="ruled-line"></div></div>
         </div>`;
     })
     .join('');
@@ -362,7 +361,7 @@ function renderRightPage(cfg, pageNum, totalPages = 20) {
 
       <!-- Ruled Handwriting Lines (Standard 8.8mm Pitch) -->
       <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border-top: 1.2px solid #000000; margin-bottom: 4px;">
-        ${Array.from({ length: 21 })
+        ${Array.from({ length: 16 })
           .map(
             () =>
               `<div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>`,
@@ -381,7 +380,7 @@ function renderNotesPage(pageNum, quip, totalPages = 20) {
   const pageClass = isEven ? 'verso-page' : 'recto-page';
 
   // 32 ruled lines for standard ~8mm pitch filling the page perfectly
-  const numLines = 32;
+  const numLines = 23;
   let linesHtml = '';
   for (let i = 0; i < numLines; i++) {
     linesHtml += `<div class="exercise-ruled-line" style="flex: 1; border-bottom: 0.8px solid #94a3b8; min-height: 0; box-sizing: border-box;"></div>`;
@@ -548,7 +547,7 @@ function generateWorkbookHtml() {
             <!-- 6. Targeted Disciplinary Hinge Question -->
             <div style="background: #ffffff; border: 1.2px solid #000000; border-radius: 3px; padding: 3px 7px;">
               <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; color: #000000;">Disciplinary Hinge Question:</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; color: #000000;">Key Discussion Question:</span>
                 <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 700; color: #64748b; text-transform: uppercase;">Historical Evaluation</span>
               </div>
               <div style="font-family: 'Georgia', serif; font-size: 7.3pt; font-style: italic; color: #1e293b; line-height: 1.20; margin-top: 1px;">
@@ -559,7 +558,7 @@ function generateWorkbookHtml() {
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #ffffff; padding: 3px 8px; border-top: 1.5px solid #000000; background: #000000;">
           <span><strong>Primary Visual Evidence:</strong> <em>On the Mode of Communication of Cholera</em> &bull; Wellcome Collection Archive (1855)</span>
-          <span style="font-weight: 700; color: #ffffff; white-space: nowrap;">WELLCOME ARCHIVE &bull; ACCESSION EPID-1854-SNOW</span>
+          <span style="font-weight: 700; color: #ffffff; white-space: nowrap;">WELLCOME COLLECTION &bull; PUBLIC DOMAIN</span>
         </div>
       </div>
 
@@ -639,6 +638,7 @@ function generateWorkbookHtml() {
 
   // PAGES 8–9: Center-Spine Curriculum Mind-Map Canvas (Laying flat across saddle-stitch fold)
   pagesHtml += renderKs3CentrefoldSpine({
+    unitId: 'water_and_sanitation',
     leftPageNum: 8,
     rightPageNum: 9,
     totalPages: 16,
@@ -741,252 +741,46 @@ function generateWorkbookHtml() {
   // ====================================================================
   // PAGE 16: OUTSIDE BACK COVER (PROGRESS LEDGER + 5 QR CODES - GOLD STANDARD)
   // ====================================================================
-  pagesHtml += `
-  <!-- PAGE 16: OUTSIDE BACK COVER -->
-  <div class="page page-container verso-page" id="page-16" style="padding: 13.0mm 6mm;">
-    <div class="page-body-full">
-      <!-- Back Cover Header Strip -->
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 3px; margin-bottom: 6px;">
-        <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11.5pt; color: #000000; text-transform: uppercase; font-weight: 900; letter-spacing: 0.5px;">
-          Key Stage 3 History &bull; Pupil Progress &amp; Assessment Record
-        </h2>
-      </div>
-
-      <!-- Pupil Details & Target Level Strip -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 7px 12px; background: #ffffff; display: grid; grid-template-columns: 2fr 1fr 1.3fr; gap: 14px; align-items: center; margin-bottom: 5px;">
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #000000; text-transform: uppercase; margin-right: 8px;">Pupil Name:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #000000; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #000000; text-transform: uppercase; margin-right: 8px;">Class:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #000000; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #000000; text-transform: uppercase; margin-right: 8px;">Target KS3 Level:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #000000; height: 14px; text-align: center; font-weight: 900; color: #000000;"></div>
-        </div>
-      </div>
-
-      <!-- KS3 History Progress Pathways & Descriptors (Universal KS3 Years 7–9 Standard) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 5.5px 6px; background: #ffffff; margin-bottom: 6px; font-family: 'Inter', sans-serif;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; background: #ffffff; padding: 2.5px 6px; margin-bottom: 3px;">
-          <strong style="font-size: 7.4pt; text-transform: uppercase; letter-spacing: 0.5px; color: #000000;">
-            Key Stage 3 History Assessment Pathways &bull; Level Descriptors &amp; Criteria
-          </strong>
-          <span style="font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1px 6px; border-radius: 2px; text-transform: uppercase;">
-            Years 7–9 Standards
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.3;">
-          
-          <!-- Emerging &bull; 35% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging &bull; 35%
-            </div>
-            <div style="color: #000000;">
-              Identifies key names, dates, and terms; describes what happened using simple statements and structured writing frames.
-            </div>
-          </div>
-
-          <!-- Emerging+ &bull; 50% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging+ &bull; 50%
-            </div>
-            <div style="color: #000000;">
-              Describes reasons why events occurred; begins to explain causes and consequences supported by basic historical facts.
-            </div>
-          </div>
-
-          <!-- Expected &bull; 65% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected &bull; 65%
-            </div>
-            <div style="color: #000000;">
-              Constructs structured paragraphs explaining multiple causes and consequences; substantiates arguments with precise historical dates, key terms, and named figures.
-            </div>
-          </div>
-
-          <!-- Expected+ &bull; 80% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected+ &bull; 80%
-            </div>
-            <div style="color: #000000;">
-              Weighs competing factors and perspectives; explains why certain causes were more decisive than others using detailed, accurate evidence across the unit.
-            </div>
-          </div>
-
-          <!-- Greater Depth &bull; 90% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Greater Depth &bull; 90%
-            </div>
-            <div style="color: #000000;">
-              Crafts sustained, analytically rigorous arguments reaching a substantiated historical judgement; masterfully synthesizes evidence across the unit to evaluate complex turning points and long-term significance.
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Streamlined KS3 Marking Grid (Calibrated for Optimal Space Utilization) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; overflow: hidden; margin-bottom: 5px;">
-        <table style="width: 100%; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 8pt;">
-          <thead>
-            <tr style="background: #000000; color: #ffffff;">
-              <th style="padding: 6px 4px; width: 9%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Date</th>
-              <th style="padding: 6px 8px; width: 38%; text-align: left; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Enquiry &bull; Assessment Focus</th>
-              <th style="padding: 6px 4px; width: 14%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Do Now (/5)</th>
-              <th style="padding: 6px 4px; width: 15%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">KS3 Level / Effort</th>
-              <th style="padding: 6px 8px; width: 24%; text-align: left; font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Teacher Comment / Spellings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #000000;">Enquiry 1: Roman Britain &amp; Fishbourne</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Aqueducts, thermae &amp; imperial hygiene infrastructure</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #000000;">Enquiry 2: Middle Ages &amp; Monastic Conduits</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Monastic settling tanks vs urban filth &amp; 1388 Statute</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #000000;">Enquiry 3: Early Modern Cesspits &amp; Harington</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">The 1596 WC, New River 1613 &amp; Pepys’s cellar overflow</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #000000;">Enquiry 4: Boomtown Squalor &amp; Bazalgette</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">1831 Asiatic cholera, Chadwick 1842 &amp; Great Stink 1858</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #000000;">Enquiry 5: Germ Theory, Snow &amp; 1875 Revolution</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Broad Street pump 1854, Koch 1884 &amp; 1875 Public Health Act</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #000000; background: #f8fafc;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #000000;">Independent Study &amp; Notes Portfolio</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Pages 14–15 Enquiry Notes, Reflection &amp; Revision Tasks</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #f8fafc;">&nbsp;</td>
-            </tr>
-            <tr style="background: #ffffff; border-top: 1.5px solid #000000;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #000000;">November Assessment Masterclass Task</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">12-Mark Timed Disciplinary Assessment Paper</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">&nbsp;</td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-top: 1.5px solid #000000; background: #f8fafc;">
-              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; color: #000000; font-size: 8pt;">★</td>
-              <td style="padding: 6px 8px; border-right: 1px solid #cbd5e1; font-weight: 900; font-size: 8pt; color: #000000; text-transform: uppercase;">
-                Unit Retrieval Starter Total:
-              </td>
-              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; font-size: 8.5pt; color: #000000;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 25</strong></span>
-              </td>
-              <td colspan="2" style="padding: 4px 8px; font-size: 6.4pt; line-height: 1.2; color: #475569; vertical-align: middle;">
-                <strong>Overall Progress Category:</strong><br>[ Em (35%) &bull; Em+ (50%) &bull; Ex (65%) &bull; Ex+ (80%) &bull; GD (90%) ]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Interactive Digital Quizzing Hub (Medicine Style) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 6px 8px; background: #ffffff;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; background: #f8fafc; padding: 3px 6px; margin-bottom: 4px; border-radius: 2px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.2pt; text-transform: uppercase; color: #000000;">
-            📱 Interactive Digital Quizzing Hub &bull; Scan for Instant Retrieval Practice
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7pt; font-weight: 800; background: #000000; color: #ffffff; border: 1px solid #000000; padding: 1px 5px; border-radius: 2px;">
-            ONLINE RECALL
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; text-align: center;">
-          ${lessonConfigs
-            .map((cfg, idx) => {
-              const quizUrl = `https://historyrevisionhub.co.uk/?unit=water_and_sanitation&quiz=lesson_${idx + 1}`;
-              const qrSvg = generateQrSvg(quizUrl);
-              const shortLabels = [
-                'Roman Britain',
-                'Middle Ages',
-                'Early Modern',
-                'Squalor & Sewers',
-                'Snow & 1875 Act',
-              ];
-              return (
-                '<div style="border: 1.2px solid #000000; border-radius: 3px; padding: 5px 2px; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">' +
-                '<div style="font-family: \'Inter\', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; margin-bottom: 1px; color: #000000;">Enquiry ' +
-                cfg.lessonNum +
-                '</div>' +
-                '<div style="font-family: \'Inter\', sans-serif; font-size: 6.5pt; font-weight: 700; color: #475569; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">' +
-                shortLabels[idx] +
-                '</div>' +
-                '<div style="width: 24mm; height: 24mm; margin: 0 auto 2px auto;">' +
-                qrSvg +
-                '</div>' +
-                '<span style="font-family: \'Inter\', sans-serif; font-size: 6.2pt; font-weight: 800; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1px 5px; border-radius: 2px; margin-bottom: 2px;">Scan to Quiz</span>' +
-                '<div style="font-family: \'Inter\', sans-serif; font-size: 8.5pt; font-weight: 900; color: #000000; margin-top: 1px; white-space: nowrap;">Best Score: [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 8</strong> ]</div>' +
-                '</div>'
-              );
-            })
-            .join('')}
-        </div>
-      </div>
-
-      ${renderFooterStrip(16, 'The History Revision Hub &bull; Master Saddle-Stitch Pupil Workbook Standard &bull; All Rights Reserved.', 16)}
-    </div>
-  </div>`;
+  pagesHtml += renderKs2Ks3BackCover({
+    unitId: 'water_and_sanitation',
+    pageNum: 16,
+    totalPages: 16,
+    mode: 'ks3',
+    keyStageBadge: 'KEY STAGE 3 HISTORY &bull; YEAR 7',
+    pagePadding: '5mm 6mm',
+    checkpoints: [
+          {
+                "title": "Enquiry 1: Roman Britain & Fishbourne Palace",
+                "focus": "Aqueducts, thermae & imperial hygiene infrastructure"
+          },
+          {
+                "title": "Enquiry 2: Middle Ages & Monastic Conduits",
+                "focus": "Monastic settling tanks vs urban filth & 1388 Statute"
+          },
+          {
+                "title": "Enquiry 3: Early Modern Cesspits & Harington",
+                "focus": "The 1596 WC, New River 1613 & Pepys’s cellar overflow"
+          },
+          {
+                "title": "Enquiry 4: Boomtown Squalor & Bazalgette",
+                "focus": "1831 Asiatic cholera, Chadwick 1842 & Great Stink 1858"
+          },
+          {
+                "title": "Enquiry 5: Germ Theory, Snow & 1875 Revolution",
+                "focus": "Broad Street pump 1854, Koch 1884 & 1875 Public Health Act"
+          },
+          {
+                "title": "Independent Study & Notes Portfolio",
+                "focus": "Pages 14–15 Enquiry Notes, Reflection & Revision Tasks"
+          },
+          {
+                "title": "Teacher-Designated End-of-Unit Assessment",
+                "focus": "12-Mark Timed Disciplinary Assessment & Synoptic Review"
+          }
+    ],
+    footerQuip: "The History Revision Hub • KS3 Water & Sanitation Pupil Workbook • Independent Curriculum Resource",
+    renderFooterStrip,
+  });
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -1055,8 +849,9 @@ function generateWorkbookHtml() {
       box-sizing: border-box;
     }
     .ruled-line {
-      height: 8.2mm;
-      border-bottom: 0.8px solid #000000;
+      flex: 1;
+      min-height: 0;
+      border-bottom: 0.85px solid #000000;
       box-sizing: border-box;
     }
     .ruled-line:last-child {

@@ -25,6 +25,7 @@ const {
   renderKs3CentrefoldSpine,
   assertPdfPageCount,
 } = require('./components/render_ks3_centrefold_spine.cjs');
+const { renderKs2Ks3BackCover } = require('./components/render_ks2_ks3_back_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -181,7 +182,7 @@ const enquiryConfigs = [
         'Otto von Bismarck &bull; Realpolitik &bull; Blood and Iron &bull; Hall of Mirrors &bull; Treaty of Frankfurt &bull; Alsace-Lorraine &bull; Revanche &bull; Balance of Power &bull; Two-Front War',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out the 1871 Proclamation of the German Empire at Versailles and the seizure of Alsace-Lorraine.',
+        'Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the 1871 Proclamation of the German Empire at Versailles and the seizure of Alsace-Lorraine.',
     },
     leftPageQuip:
       'In 1871, Bismarck crowned Wilhelm I inside the Hall of Mirrors at Versailles, deliberately inflicting a deep wound on French national pride.',
@@ -286,7 +287,7 @@ const enquiryConfigs = [
       },
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out the 1884–85 Berlin Conference, the 1905 Tangier Crisis, and the 1911 Panther at Agadir.',
+        'Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the 1884–85 Berlin Conference, the 1905 Tangier Crisis, and the 1911 Panther at Agadir.',
     },
     leftPageQuip:
       'The Berlin Conference of 1884–85 carved up the African continent with rulers and pencils, completely ignoring indigenous cultures and borders.',
@@ -388,7 +389,7 @@ const enquiryConfigs = [
         'Suggest one reason why Interpretations 1 and 2 differ about the causes of the naval arms race. [4 marks]',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out the 1906 launch of HMS Dreadnought, Tirpitz&rsquo;s Naval Laws, and the Anglo-German battleship race.',
+        'Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the 1906 launch of HMS Dreadnought, Tirpitz&rsquo;s Naval Laws, and the Anglo-German battleship race.',
     },
     leftPageQuip:
       'HMS Dreadnought possessed ten 12-inch guns and turbine engines, rendering every battleship on earth instantly obsolete on 10 February 1906.',
@@ -498,7 +499,7 @@ const enquiryConfigs = [
       },
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out Kaiser Wilhelm II&rsquo;s 1890 dismissal of Bismarck, the Triple Alliance vs Triple Entente, and Balkan encirclement.',
+        'Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out Kaiser Wilhelm II&rsquo;s 1890 dismissal of Bismarck, the Triple Alliance vs Triple Entente, and Balkan encirclement.',
     },
     leftPageQuip:
       'The European alliance system was designed to deter war through mutual balance; instead, it acted like a string of linked dynamite.',
@@ -601,7 +602,7 @@ const enquiryConfigs = [
         'Alliance Rivalries &bull; Triple Alliance &bull; Triple Entente &bull; Balance of Power &bull; Franz Ferdinand &bull; Blank Cheque &bull; Sarajevo &bull; Schlieffen Plan &bull; Neutrality of Belgium',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Using the app&rsquo;s <em>Consolidate Station</em>, branch out the 28 June 1914 Sarajevo assassination, Germany&rsquo;s Blank Cheque, and the July Crisis mobilisations.',
+        'Turn to the Centrefold Mind-Map Canvas (Pages 8–9). Scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the 28 June 1914 Sarajevo assassination, Germany&rsquo;s Blank Cheque, and the July Crisis mobilisations.',
     },
     leftPageQuip:
       'A wrong turn by Franz Ferdinand’s chauffeur outside Schiller’s Delicatessen brought the Archduke face to face with Gavrilo Princip.',
@@ -649,9 +650,7 @@ function renderSpinePage(cfg, pageNum) {
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
-            <div class="ruled-line"></div>
-            <div class="ruled-line"></div>
-          </div>
+            <div class="ruled-line"></div></div>
         </div>`;
     })
     .join('');
@@ -750,7 +749,7 @@ function renderRightPage(cfg, pageNum) {
         <strong style="color: #0f284e;">Task:</strong> Using the vocabulary and connectives above, write your analytical response below:
       </div>
       <div style="display: flex; flex-direction: column; gap: 0; margin-bottom: 4px; flex: 1; min-height: 0;">
-        ${Array(25).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
+        ${Array(18).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
       </div>
 
       <!-- Timeline Mission Box -->
@@ -818,7 +817,7 @@ function renderRightPage(cfg, pageNum) {
           </span>
         </div>
         <div style="display: flex; flex-direction: column; gap: 0; flex: 1; min-height: 0;">
-          ${Array(11).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
+          ${Array(9).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
         </div>
       </div>
 
@@ -834,7 +833,7 @@ function renderRightPage(cfg, pageNum) {
             </span>
           </div>
           <div style="display: flex; flex-direction: column; gap: 0; flex: 1; min-height: 0; margin-bottom: 3px;">
-            ${Array(11).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
+            ${Array(9).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
           </div>
         </div>
 
@@ -895,7 +894,7 @@ function renderRightPage(cfg, pageNum) {
           ${partA.wordBank ? `<div style="margin-top: 1.5px;"><strong style="color: #0f284e;">Key Terms:</strong> <span style="color: #1e293b;">${partA.wordBank}</span></div>` : ''}
         </div>
         <div style="display: flex; flex-direction: column; gap: 0; flex: 1; min-height: 0;">
-          ${Array(14).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
+          ${Array(11).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
         </div>
       </div>
 
@@ -928,7 +927,7 @@ function renderRightPage(cfg, pageNum) {
             ${partB.wordBank ? `<div style="margin-top: 1.5px;"><strong style="color: #0f284e;">Key Terms:</strong> <span style="color: #1e293b;">${partB.wordBank}</span></div>` : ''}
           </div>
           <div style="display: flex; flex-direction: column; gap: 0; flex: 1; min-height: 0; margin-bottom: 3px;">
-            ${Array(14).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
+            ${Array(11).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
           </div>
         </div>
 
@@ -1016,7 +1015,7 @@ function renderRightPage(cfg, pageNum) {
 
         <!-- Ruled Writing Lines (18 Lines • Matching GCSE 7.8mm pitch) -->
         <div style="display: flex; flex-direction: column; gap: 0; margin-bottom: 4px; flex: 1; min-height: 0;">
-          ${Array(18).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
+          ${Array(14).fill('<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>').join('')}
         </div>
 
         <!-- Timeline Mission Box -->
@@ -1043,7 +1042,7 @@ function renderRightPage(cfg, pageNum) {
 
 function renderNotesPage(pageNum, quip) {
   if (pageNum === 14) {
-    const ruledRows = Array(27)
+    const ruledRows = Array(22)
       .fill(
         '<div class="lined-row"><div class="lined-margin-cell"></div><div class="lined-content-cell"></div></div>',
       )
@@ -1067,7 +1066,7 @@ function renderNotesPage(pageNum, quip) {
     </div>
   </div>`;
   } else {
-    const ruledRows = Array(29)
+    const ruledRows = Array(23)
       .fill(
         '<div class="lined-row"><div class="lined-margin-cell"></div><div class="lined-content-cell"></div></div>',
       )
@@ -1179,13 +1178,15 @@ function compileGreatWarWorkbook() {
       box-sizing: border-box;
     }
     .ruled-line {
-      height: 8.2mm;
-      border-bottom: 0.8px solid #000000;
+      flex: 1;
+      min-height: 0;
+      border-bottom: 0.85px solid #000000;
       box-sizing: border-box;
     }
     .ruled-line:last-child {
       border-bottom: none;
     }
+    .ruled-lines-block .task-line { height: 9.0mm; }
     .ruled-lines-block {
       display: flex;
       flex-direction: column;
@@ -1341,7 +1342,7 @@ function compileGreatWarWorkbook() {
 
             <!-- 5. Targeted Hinge Question -->
             <div style="background: #ffffff; border: 1.2px solid #0f284e; border-radius: 3px; padding: 2px 5px;">
-              <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">Hinge Question:</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">Key Discussion Question:</span>
               <div style="font-family: 'Georgia', serif; font-size: 6.6pt; font-style: italic; color: #1e293b; line-height: 1.15; margin-top: 1px;">
                 Did the launch of HMS Dreadnought protect British imperial security, or did it dangerously erase Britain's established naval advantage?
               </div>
@@ -1512,6 +1513,7 @@ function compileGreatWarWorkbook() {
   // PAGES 8–9: CENTREFOLD CURRICULUM MIND-MAP CANVAS
   // ====================================================================
   html += renderKs3CentrefoldSpine({
+    unitId: 'great_war',
     leftPageNum: 8,
     rightPageNum: 9,
     totalPages: 16,
@@ -1615,258 +1617,46 @@ function compileGreatWarWorkbook() {
   // ====================================================================
   // PAGE 16: OUTSIDE BACK COVER (PROGRESS LEDGER + 5 QR REVISION CARDS)
   // ====================================================================
-  html += `
-  <!-- PAGE 16: OUTSIDE BACK COVER -->
-  <div class="page page-container verso-page" id="page-16" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <!-- Back Cover Header Strip -->
-      <div style="border-bottom: 2px solid #0f284e; padding-bottom: 3px; margin-bottom: 6px;">
-        <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11.5pt; color: #0f284e; text-transform: uppercase; font-weight: 900; letter-spacing: 0.5px;">
-          Key Stage 3 History &bull; Pupil Progress &amp; Assessment Record
-        </h2>
-      </div>
-
-      <!-- Pupil Details & Target Level Strip -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 7px 12px; background: #ffffff; display: grid; grid-template-columns: 2fr 1fr 1.3fr; gap: 14px; align-items: center; margin-bottom: 5px;">
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Pupil Name:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Class:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Target KS3 Level:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px; text-align: center; font-weight: 900; color: #0f284e;"></div>
-        </div>
-      </div>
-
-      <!-- KS3 History Progress Pathways & Descriptors (Universal KS3 Years 7–9 Standard) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 5.5px 6px; background: #ffffff; margin-bottom: 6px; font-family: 'Inter', sans-serif;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; background: #ffffff; padding: 2.5px 6px; margin-bottom: 3px;">
-          <strong style="font-size: 7.4pt; text-transform: uppercase; letter-spacing: 0.5px; color: #000000;">
-            Key Stage 3 History Assessment Pathways &bull; Level Descriptors &amp; Criteria
-          </strong>
-          <span style="font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1px 6px; border-radius: 2px; text-transform: uppercase;">
-            Years 7–9 Standards
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.3;">
-          
-          <!-- Emerging &bull; 35% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging &bull; 35%
-            </div>
-            <div style="color: #000000;">
-              Identifies key names, dates, and terms; describes what happened using simple statements and structured writing frames.
-            </div>
-          </div>
-
-          <!-- Emerging+ &bull; 50% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging+ &bull; 50%
-            </div>
-            <div style="color: #000000;">
-              Describes reasons why events occurred; begins to explain causes and consequences supported by basic historical facts.
-            </div>
-          </div>
-
-          <!-- Expected &bull; 65% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected &bull; 65%
-            </div>
-            <div style="color: #000000;">
-              Constructs structured paragraphs explaining multiple causes and consequences; substantiates arguments with precise historical dates, key terms, and named figures.
-            </div>
-          </div>
-
-          <!-- Expected+ &bull; 80% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected+ &bull; 80%
-            </div>
-            <div style="color: #000000;">
-              Weighs competing factors and perspectives; explains why certain causes were more decisive than others using detailed, accurate evidence across the unit.
-            </div>
-          </div>
-
-          <!-- Greater Depth &bull; 90% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Greater Depth &bull; 90%
-            </div>
-            <div style="color: #000000;">
-              Crafts sustained, analytically rigorous arguments reaching a substantiated historical judgement; masterfully synthesizes evidence across the unit to evaluate complex turning points and long-term significance.
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Streamlined KS3 Marking Grid (Low-Friction & Periodic Marking Standard) -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; overflow: hidden; margin-bottom: 5px; flex: 1; display: flex; flex-direction: column;">
-        <table style="width: 100%; height: 100%; flex: 1; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 8pt;">
-          <thead>
-            <tr style="background: #0f284e; color: #ffffff;">
-              <th style="padding: 6px 4px; width: 9%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Date</th>
-              <th style="padding: 6px 8px; width: 38%; text-align: left; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Enquiry &bull; Assessment Focus</th>
-              <th style="padding: 6px 4px; width: 14%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Do Now (/5)</th>
-              <th style="padding: 6px 4px; width: 15%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">KS3 Level / Effort</th>
-              <th style="padding: 6px 8px; width: 24%; text-align: left; font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Teacher Comment / Spellings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 1: German Unification, Franco-Prussian &amp; Bismarck</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Causal Analysis: Why did the German Empire create instability?</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 2: Imperial Rivalry &amp; Moroccan Crises</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Feature Drill &amp; Consequence of Weltpolitik</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 3: Naval Arms Race &amp; HMS Dreadnought</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Contrasting Interpretations: Causes of Naval Race</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 4: Alliance Systems &amp; Balkan Powder Keg</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Narrative Account &amp; Importance of Alliances</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 5: The July Crisis &amp; Sarajevo Outbreak</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Evaluative Essay: Causes of General European War</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="background: #ffffff; border-top: 1.5px solid #0f284e;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Teacher-Designated Assessment Task</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-top: 1.5px solid #0f284e; background: #f8fafc;">
-              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; color: #0f284e; font-size: 8pt;">★</td>
-              <td style="padding: 6px 8px; border-right: 1px solid #cbd5e1; font-weight: 900; font-size: 8pt; color: #0f284e; text-transform: uppercase;">
-                Unit Retrieval Starter Total:
-              </td>
-              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; font-size: 8.5pt; color: #0f284e;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 25</strong></span>
-              </td>
-              <td colspan="2" style="padding: 4px 8px; font-size: 6.4pt; line-height: 1.2; color: #475569; vertical-align: middle;">
-                <strong>Overall Progress Category:</strong><br>[ Em (35%) &bull; Em+ (50%) &bull; Ex (65%) &bull; Ex+ (80%) &bull; GD (90%) ]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Interactive Digital Quizzing Hub -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 6px 8px; background: #ffffff;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #0f284e; background: #f0f4f9; padding: 3px 6px; margin-bottom: 4px; border-radius: 2px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.2pt; text-transform: uppercase; color: #0f284e;">
-            📱 Interactive Digital Quizzing Hub &bull; Scan for Instant Retrieval Practice
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7pt; font-weight: 800; background: #0f284e; color: #ffffff; border: 1px solid #0f284e; padding: 1px 5px; border-radius: 2px;">
-            ONLINE RECALL
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; text-align: center;">
-          ${enquiryConfigs
-            .map((cfg, idx) => {
-              const targetLesson = idx + 1;
-              const quizUrl =
-                'https://historyrevisionhub.co.uk/?unit=great_war&lesson=' +
-                targetLesson +
-                '&quiz=true';
-              const qrSvg = generateQrSvg(quizUrl);
-              const shortLabels = [
-                'Unification 1871',
-                'Morocco & Africa',
-                'Dreadnought Race',
-                'Alliances & Balkans',
-                'Sarajevo 1914',
-              ];
-              return (
-                '<div style="border: 1.2px solid #0f284e; border-radius: 3px; padding: 5px 2px; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">' +
-                '<div style="font-family: \'Inter\', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; margin-bottom: 1px; color: #0f284e;">Enquiry ' +
-                cfg.lessonNum +
-                '</div>' +
-                '<div style="font-family: \'Inter\', sans-serif; font-size: 6.5pt; font-weight: 700; color: #475569; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">' +
-                shortLabels[idx] +
-                '</div>' +
-                '<div style="width: 24mm; height: 24mm; margin: 0 auto 2px auto;">' +
-                qrSvg +
-                '</div>' +
-                '<span style="font-family: \'Inter\', sans-serif; font-size: 6.2pt; font-weight: 800; text-transform: uppercase; background: #0f284e; color: #ffffff; padding: 1px 5px; border-radius: 2px; margin-bottom: 2px;">Scan to Quiz</span>' +
-                '<div style="font-family: \'Inter\', sans-serif; font-size: 8.5pt; font-weight: 900; color: #0f284e; margin-top: 1px; white-space: nowrap;">Best Score: [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 8</strong> ]</div>' +
-                '</div>'
-              );
-            })
-            .join('')}
-        </div>
-      </div>
-
-      ${renderFooterStrip(16, 'The History Revision Hub &bull; Master Saddle-Stitch Pupil Workbook Standard &bull; All Rights Reserved.', 16)}
-    </div>
-  </div>
-`;
+  html += renderKs2Ks3BackCover({
+    unitId: 'great_war',
+    pageNum: 16,
+    totalPages: 16,
+    mode: 'ks3',
+    keyStageBadge: 'KEY STAGE 3 HISTORY &bull; YEAR 9',
+    pagePadding: '4mm 6mm',
+    checkpoints: [
+          {
+                "title": "Enquiry 1: German Unification & Bismarck",
+                "focus": "Causal Analysis: Why did 1871 shift European power?"
+          },
+          {
+                "title": "Enquiry 2: Imperial Rivalry & Morocco",
+                "focus": "Feature Drill & Consequence of Weltpolitik (1905–11)"
+          },
+          {
+                "title": "Enquiry 3: Naval Arms Race & Dreadnought",
+                "focus": "Contrasting Interpretations: Anglo-German Naval Rivalry"
+          },
+          {
+                "title": "Enquiry 4: Alliances & Balkan Powder Keg",
+                "focus": "Narrative Account & Importance of Alliance Systems"
+          },
+          {
+                "title": "Enquiry 5: July Crisis & Sarajevo Outbreak",
+                "focus": "Evaluative Essay: Causes of General War in August 1914"
+          },
+          {
+                "title": "Independent Study & Notes Portfolio",
+                "focus": "Pages 14–15 Enquiry Notes, Reflection & Revision Tasks"
+          },
+          {
+                "title": "Teacher-Designated Assessment Task",
+                "focus": "Synoptic Causes of WWI Assessment Task"
+          }
+    ],
+    footerQuip: "The History Revision Hub • KS3 Causes of the Great War Workbook • Independent Curriculum Resource",
+    renderFooterStrip,
+  });
 
   html += `
 </body>

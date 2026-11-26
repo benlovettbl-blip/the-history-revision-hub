@@ -399,6 +399,7 @@ export const VERIFIED_PDFS = new Set([
   "/pdfs/second_british_empire_retrieval_companion.pdf",
   "/pdfs/second_british_empire_scheme_of_work.pdf",
   "/pdfs/second_british_empire_textbook.pdf",
+  "/pdfs/The_Course_of_the_Great_War_Combined_Master_Scholar_Workbook.pdf",
   "/pdfs/the_shoah/the_shoah_source_bibliography.pdf",
   "/pdfs/the_shoah_literary_companion.pdf",
   "/pdfs/the_shoah_pupil_workbook.pdf",

@@ -4,6 +4,7 @@ const QRCode = require('qrcode');
 const puppeteer = require('puppeteer');
 const { renderVersoLessonQr } = require('./components/render_verso_lesson_qr.cjs');
 const { renderKs3CentrefoldSpine, assertPdfPageCount } = require('./components/render_ks3_centrefold_spine.cjs');
+const { renderKs2Ks3BackCover } = require('./components/render_ks2_ks3_back_cover.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 
@@ -136,7 +137,7 @@ const enquiryConfigs = [
         'Royal Supremacy &bull; Act of Supremacy (1534) &bull; annulment &bull; Catherine of Aragon &bull; Anne Boleyn &bull; Thomas Cromwell &bull; Pope Clement VII &bull; Emperor Charles V &bull; Valor Ecclesiasticus &bull; Act in Restraint of Appeals (1533)',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to <strong>Page 8</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1517 Martin Luther</strong> and <strong>1534–40 Royal Supremacy &amp; Monasteries</strong> nodes (95 Theses, Act of Supremacy, 800 abbeys dissolved).',
+        'Turn to <strong>Page 8</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1517 Martin Luther</strong> and <strong>1534–40 Royal Supremacy &amp; Monasteries</strong> nodes (95 Theses, Act of Supremacy, 800 abbeys dissolved).',
     },
     leftPageQuip:
       'In 1534, questioning Henry VIII’s marriage was high treason punishable by death at Tower Hill.',
@@ -239,7 +240,7 @@ const enquiryConfigs = [
       },
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to <strong>Page 8</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1559 Elizabethan Religious Settlement</strong> node (Supreme Governor, Book of Common Prayer Via Media, recusancy fines).',
+        'Turn to <strong>Page 8</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1559 Elizabethan Religious Settlement</strong> node (Supreme Governor, Book of Common Prayer Via Media, recusancy fines).',
     },
     leftPageQuip:
       'Elizabeth I had ‘no desire to make windows into men’s souls’—pay your Sunday fines and keep private doubts to yourself.',
@@ -349,7 +350,7 @@ const enquiryConfigs = [
       },
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to <strong>Page 8</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1588 Defeat of the Spanish Armada</strong> node (Cadiz raid, Calais fireships, Gravelines broadsides &amp; gales).',
+        'Turn to <strong>Page 8</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1588 Defeat of the Spanish Armada</strong> node (Cadiz raid, Calais fireships, Gravelines broadsides &amp; gales).',
     },
     leftPageQuip:
       'The Armada carried 130 ships and 30,000 soldiers. Unfortunately for Philip II, none of it stopped English fireships.',
@@ -457,7 +458,7 @@ const enquiryConfigs = [
         'Divine Right of Kings &bull; Personal Rule (1629–1640) &bull; Ship Money &bull; Oliver Cromwell &bull; New Model Army &bull; Battle of Naseby &bull; ‘Man of Blood’ &bull; Second Civil War (1648) &bull; Pride’s Purge &bull; Rump Parliament &bull; Regicide (30 Jan 1649)',
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to <strong>Page 9</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1629–40 Personal Rule</strong> and <strong>1649 Regicide of Charles I</strong> nodes (Ship Money, Naseby, Pride&rsquo;s Purge &amp; Whitehall trial).',
+        'Turn to <strong>Page 9</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1629–40 Personal Rule</strong> and <strong>1649 Regicide of Charles I</strong> nodes (Ship Money, Naseby, Pride&rsquo;s Purge &amp; Whitehall trial).',
     },
     leftPageQuip:
       'Charles I insisted no earthly court could try a king; three days later, Parliament had him beheaded outside Whitehall.',
@@ -574,7 +575,7 @@ const enquiryConfigs = [
       },
       timelineMissionTitle: 'Mind-Map Mission &bull; pp. 8–9',
       timelineMission:
-        'Turn to <strong>Page 9</strong> and use the app&rsquo;s <em>Consolidate Station</em> to branch out the <strong>1688 Glorious Revolution</strong> and <strong>1689 Bill of Rights</strong> nodes (William of Orange, end of Divine Right, Parliamentary Sovereignty).',
+        'Turn to <strong>Page 9</strong> and scan the Centrefold QR code (or use the Interactive Mind-Map) to branch out the <strong>1688 Glorious Revolution</strong> and <strong>1689 Bill of Rights</strong> nodes (William of Orange, end of Divine Right, Parliamentary Sovereignty).',
     },
     leftPageQuip:
       'In 1689, William III accepted the Bill of Rights to secure war taxes, legally subordinating the Crown to Parliament.',
@@ -1110,7 +1111,7 @@ function renderNotesPage(pageNum, quip) {
   const pageClass = isEven ? 'verso-page' : 'recto-page';
 
   // 32 ruled lines for standard ~8mm pitch filling the page perfectly
-  const numLines = 32;
+  const numLines = 23;
   let linesHtml = '';
   for (let i = 0; i < numLines; i++) {
     linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
@@ -1288,9 +1289,7 @@ function renderSpinePage(cfg, pageNum) {
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
             <div class="ruled-line"></div>
-            <div class="ruled-line"></div>
-            <div class="ruled-line"></div>
-          </div>
+            <div class="ruled-line"></div></div>
         </div>`;
     })
     .join('');
@@ -1387,7 +1386,7 @@ function renderRightPage(cfg, pageNum) {
         <strong style="color: #000000;">Task:</strong> Using the vocabulary and connectives above, write your analytical response below:
       </div>
       <div style="display: flex; flex-direction: column; gap: 0; margin-bottom: 4px; flex: 1; min-height: 0;">
-        ${Array(20)
+        ${Array(16)
           .fill(
             '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
           )
@@ -1766,8 +1765,9 @@ function compileMonarchyWorkbook() {
       box-sizing: border-box;
     }
     .ruled-line {
-      height: 8.2mm;
-      border-bottom: 0.8px solid #000000;
+      flex: 1;
+      min-height: 0;
+      border-bottom: 0.85px solid #000000;
       box-sizing: border-box;
     }
     .ruled-line:last-child {
@@ -1780,6 +1780,7 @@ function compileMonarchyWorkbook() {
       box-sizing: border-box;
       margin: 0;
     }
+    .ruled-lines-block .task-line { height: 9.0mm; }
     .ruled-lines-block {
       display: flex;
       flex-direction: column;
@@ -1970,7 +1971,7 @@ function compileMonarchyWorkbook() {
             <!-- 6. Targeted Disciplinary Hinge Question -->
             <div style="background: #ffffff; border: 1.2px solid #0f284e; border-radius: 3px; padding: 3px 7px;">
               <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">Disciplinary Hinge Question:</span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; text-transform: uppercase; color: #0f284e;">Key Discussion Question:</span>
                 <span style="font-family: 'Inter', sans-serif; font-size: 6.8pt; font-weight: 700; color: #64748b; text-transform: uppercase;">Historical Evaluation</span>
               </div>
               <div style="font-family: 'Georgia', serif; font-size: 7.3pt; font-style: italic; color: #1e293b; line-height: 1.20; margin-top: 1px;">
@@ -2113,6 +2114,7 @@ function compileMonarchyWorkbook() {
   // PAGES 8–9: CENTER-SPINE CURRICULUM MIND-MAP CANVAS IN THE CENTREFOLD
   // ====================================================================
   html += renderKs3CentrefoldSpine({
+    unitId: 'monarchy_religion_power',
     leftPageNum: 8,
     rightPageNum: 9,
     totalPages: 16,
@@ -2218,259 +2220,47 @@ function compileMonarchyWorkbook() {
   // ====================================================================
   // PAGE 16: OUTSIDE BACK COVER (PROGRESS LEDGER + 5 QR CODES - MEDICINE STYLE)
   // ====================================================================
-  html += `
-  <!-- PAGE 16: OUTSIDE BACK COVER -->
-  <div class="page page-container verso-page" id="page-16" style="padding: 4mm 6mm;">
-    <div class="page-body-full">
-      <!-- Back Cover Header Strip -->
-      <div style="border-bottom: 2px solid #0f284e; padding-bottom: 3px; margin-bottom: 6px;">
-        <h2 style="margin: 0; font-family: 'Inter', sans-serif; font-size: 11.5pt; color: #0f284e; text-transform: uppercase; font-weight: 900; letter-spacing: 0.5px;">
-          Key Stage 3 History &bull; Pupil Progress &amp; Assessment Record
-        </h2>
-      </div>
-
-      <!-- Pupil Details & Target Level Strip -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 7px 12px; background: #ffffff; display: grid; grid-template-columns: 2fr 1fr 1.3fr; gap: 14px; align-items: center; margin-bottom: 5px;">
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Pupil Name:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Class:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px;"></div>
-        </div>
-        <div style="display: flex; align-items: baseline;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.5pt; color: #0f284e; text-transform: uppercase; margin-right: 8px;">Target KS3 Level:</strong>
-          <div style="flex: 1; border-bottom: 1.5px solid #0f284e; height: 14px; text-align: center; font-weight: 900; color: #0f284e;"></div>
-        </div>
-      </div>
-
-      <!-- KS3 History Progress Pathways & Descriptors (Universal KS3 Years 7–9 Standard) -->
-      <div style="border: 1.5px solid #000000; border-radius: 4px; padding: 5.5px 6px; background: #ffffff; margin-bottom: 6px; font-family: 'Inter', sans-serif;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #000000; background: #ffffff; padding: 2.5px 6px; margin-bottom: 3px;">
-          <strong style="font-size: 7.4pt; text-transform: uppercase; letter-spacing: 0.5px; color: #000000;">
-            Key Stage 3 History Assessment Pathways &bull; Level Descriptors &amp; Criteria
-          </strong>
-          <span style="font-size: 6.8pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1px 6px; border-radius: 2px; text-transform: uppercase;">
-            Years 7–9 Standards
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 4px; font-family: 'Inter', sans-serif; font-size: 7.2pt; line-height: 1.3;">
-          
-          <!-- Emerging &bull; 35% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging &bull; 35%
-            </div>
-            <div style="color: #000000;">
-              Identifies key names, dates, and terms; describes what happened using simple statements and structured writing frames.
-            </div>
-          </div>
-
-          <!-- Emerging+ &bull; 50% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Emerging+ &bull; 50%
-            </div>
-            <div style="color: #000000;">
-              Describes reasons why events occurred; begins to explain causes and consequences supported by basic historical facts.
-            </div>
-          </div>
-
-          <!-- Expected &bull; 65% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected &bull; 65%
-            </div>
-            <div style="color: #000000;">
-              Constructs structured paragraphs explaining multiple causes and consequences; substantiates arguments with precise historical dates, key terms, and named figures.
-            </div>
-          </div>
-
-          <!-- Expected+ &bull; 80% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Expected+ &bull; 80%
-            </div>
-            <div style="color: #000000;">
-              Weighs competing factors and perspectives; explains why certain causes were more decisive than others using detailed, accurate evidence across the unit.
-            </div>
-          </div>
-
-          <!-- Greater Depth &bull; 90% -->
-          <div style="border: 1px solid #000000; border-radius: 3px; padding: 4.5px 5px; background: #ffffff; display: flex; flex-direction: column;">
-            <div style="font-weight: 900; font-size: 7.0pt; text-transform: uppercase; color: #000000; border-bottom: 1px solid #000000; padding-bottom: 2px; margin-bottom: 3px;">
-              Greater Depth &bull; 90%
-            </div>
-            <div style="color: #000000;">
-              Crafts sustained, analytically rigorous arguments reaching a substantiated historical judgement; masterfully synthesizes evidence across the unit to evaluate complex turning points and long-term significance.
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Streamlined KS3 Marking Grid (Low-Friction & Periodic Marking Standard) -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; overflow: hidden; margin-bottom: 5px; flex: 1; display: flex; flex-direction: column;">
-        <table style="width: 100%; height: 100%; flex: 1; border-collapse: collapse; font-family: 'Inter', sans-serif; font-size: 8pt;">
-          <thead>
-            <tr style="background: #0f284e; color: #ffffff;">
-              <th style="padding: 6px 4px; width: 9%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Date</th>
-              <th style="padding: 6px 8px; width: 38%; text-align: left; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Enquiry &bull; Assessment Focus</th>
-              <th style="padding: 6px 4px; width: 14%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Do Now (/5)</th>
-              <th style="padding: 6px 4px; width: 15%; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">KS3 Level / Effort</th>
-              <th style="padding: 6px 8px; width: 24%; text-align: left; font-size: 7.2pt; text-transform: uppercase; color: #ffffff;">Teacher Comment / Spellings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 1: Henry VIII &amp; Break with Rome</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Causal Explanation: Break with Rome (1527–34)</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 2: Elizabeth I &amp; Religious Settlement</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Source Utility &amp; Consequence of Middle Way</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 3: Spanish Armada &amp; Naval Power</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Analytical Narrative: Defeat of the Armada (1588)</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 4: Causes of the English Civil War</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Causal Essay: Divine Right vs Parliament (1642)</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Enquiry 5: Trial of Charles I &amp; Bill of Rights</div>
-                <div style="font-size: 7.5pt; color: #475569; margin-top: 2px;">Evaluative Judgement: Turning point in Crown vs Parliament</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; font-weight: 800; vertical-align: middle;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 5</strong></span>
-              </td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="background: #ffffff; border-top: 1.5px solid #0f284e;">
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center;">&nbsp;</td>
-              <td style="padding: 8px 8px; border-right: 1px solid #cbd5e1;">
-                <div style="font-weight: 900; font-size: 8.5pt; color: #0f284e;">Teacher-Designated Assessment Task</div>
-              </td>
-              <td style="padding: 8px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-size: 8.5pt; color: #94a3b8; vertical-align: middle;">—</td>
-              <td style="padding: 8px 6px; border-right: 1px solid #cbd5e1; text-align: center; vertical-align: middle;">
-                &nbsp;
-              </td>
-              <td style="padding: 8px 8px; background: #ffffff;">&nbsp;</td>
-            </tr>
-            <tr style="border-top: 1.5px solid #0f284e; background: #f8fafc;">
-              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; color: #0f284e; font-size: 8pt;">★</td>
-              <td style="padding: 6px 8px; border-right: 1px solid #cbd5e1; font-weight: 900; font-size: 8pt; color: #0f284e; text-transform: uppercase;">
-                Unit Retrieval Starter Total:
-              </td>
-              <td style="padding: 6px 4px; border-right: 1px solid #cbd5e1; text-align: center; font-weight: 900; font-size: 8.5pt; color: #0f284e;">
-                <span style="color: #64748b;">&nbsp;&nbsp;&nbsp;&nbsp;<strong>/ 25</strong></span>
-              </td>
-              <td colspan="2" style="padding: 4px 8px; font-size: 6.4pt; line-height: 1.2; color: #475569; vertical-align: middle;">
-                <strong>Overall Progress Category:</strong><br>[ Em (35%) &bull; Em+ (50%) &bull; Ex (65%) &bull; Ex+ (80%) &bull; GD (90%) ]
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Interactive Digital Quizzing Hub (Medicine Style) -->
-      <div style="border: 1.5px solid #0f284e; border-radius: 4px; padding: 6px 8px; background: #ffffff;">
-        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.2px solid #0f284e; background: #f0f4f9; padding: 3px 6px; margin-bottom: 4px; border-radius: 2px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 8.2pt; text-transform: uppercase; color: #0f284e;">
-            📱 Interactive Digital Quizzing Hub &bull; Scan for Instant Retrieval Practice
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7pt; font-weight: 800; background: #0f284e; color: #ffffff; border: 1px solid #0f284e; padding: 1px 5px; border-radius: 2px;">
-            ONLINE RECALL
-          </span>
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; text-align: center;">
-          ${enquiryConfigs
-            .map((cfg, idx) => {
-              const quizUrl = `https://historyrevisionhub.co.uk/?unit=monarchy_religion_power&lesson=${idx}&quiz=true`;
-              const qrSvg = generateQrSvg(quizUrl);
-              const shortLabels = [
-                'Reformation',
-                'Middle Way',
-                'Armada 1588',
-                'Civil War',
-                'Bill of Rights',
-              ];
-              return `
-          <div style="border: 1.2px solid #0f284e; border-radius: 3px; padding: 5px 2px; background: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: space-between;">
-            <div style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; text-transform: uppercase; margin-bottom: 1px; color: #0f284e;">
-              Enquiry ${cfg.lessonNum}
-            </div>
-            <div style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 700; color: #475569; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
-              ${shortLabels[idx]}
-            </div>
-            <div style="width: 24mm; height: 24mm; margin: 0 auto 2px auto;">
-              ${qrSvg}
-            </div>
-            <span style="font-family: 'Inter', sans-serif; font-size: 6.2pt; font-weight: 800; text-transform: uppercase; background: #0f284e; color: #ffffff; padding: 1px 5px; border-radius: 2px; margin-bottom: 2px;">
-              Scan to Quiz
-            </span>
-            <div style="font-family: 'Inter', sans-serif; font-size: 8.5pt; font-weight: 900; color: #0f284e; margin-top: 1px; white-space: nowrap;">
-              Best Score: [ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>/ 8</strong> ]
-            </div>
-          </div>`;
-            })
-            .join('')}
-        </div>
-      </div>
-
-      ${renderFooterStrip(16, "Unlike Charles I in 1642, scanning these revision QR codes won't cost your head. Test yourself regularly.", 16)}
-    </div>
-  </div>
-</body>
-</html>
-`;
+  html += renderKs2Ks3BackCover({
+    unitId: 'monarchy_religion_power',
+    pageNum: 16,
+    totalPages: 16,
+    mode: 'ks3',
+    keyStageBadge: 'KEY STAGE 3 HISTORY &bull; YEAR 8',
+    pagePadding: '4mm 6mm',
+    checkpoints: [
+          {
+                "title": "Enquiry 1: Henry VIII & Break with Rome",
+                "focus": "Causal Explanation: Break with Rome (1527–34)"
+          },
+          {
+                "title": "Enquiry 2: Elizabeth I & Religious Settlement",
+                "focus": "Source Utility & Consequence of the Middle Way"
+          },
+          {
+                "title": "Enquiry 3: Spanish Armada & Naval Power",
+                "focus": "Analytical Narrative: Defeat of the Armada (1588)"
+          },
+          {
+                "title": "Enquiry 4: Causes of the English Civil War",
+                "focus": "Causal Essay: Divine Right vs Parliament (1642)"
+          },
+          {
+                "title": "Enquiry 5: Trial of Charles I & Bill of Rights",
+                "focus": "Evaluative Judgement: Turning Point in Crown vs Parliament"
+          },
+          {
+                "title": "Independent Study & Notes Portfolio",
+                "focus": "Pages 14–15 Enquiry Notes, Reflection & Revision Tasks"
+          },
+          {
+                "title": "Teacher-Designated Assessment Task",
+                "focus": "Synoptic Early Modern Assessment & Vocabulary Mastery"
+          }
+    ],
+    footerQuip: "The History Revision Hub • KS3 Crown, Church & Parliament Workbook • Independent Curriculum Resource",
+    renderFooterStrip,
+  });
+  html += `\n</body>\n</html>\n`;
 
   return html;
 }
