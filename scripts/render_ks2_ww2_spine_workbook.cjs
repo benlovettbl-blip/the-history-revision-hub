@@ -401,14 +401,14 @@ function renderKs2RectoTasksPage(lesson, wCfg, pageNum) {
           </div>
         </div>
         <div class="recto-lines-stack">
-          ${Array(8).fill('<div class="wide-ruled-line"></div>').join('')}
+          ${Array(9).fill('<div class="wide-ruled-line"></div>').join('')}
         </div>
       </div>
 
       <!-- SOLID MONOCHROME DIVIDER -->
       <div style="border-top:1.6px solid #000000;margin:5px 0 5px 0;"></div>
 
-      <!-- TASK 2: ANSWER TODAY'S BIG ENQUIRY QUESTION (9 WIDE LINES) -->
+      <!-- TASK 2: ANSWER TODAY'S BIG ENQUIRY QUESTION (10 WIDE LINES) -->
       <div class="recto-task-block" style="flex:1.08;">
         <div>
           <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px;gap:6px;">
@@ -422,16 +422,17 @@ function renderKs2RectoTasksPage(lesson, wCfg, pageNum) {
           </div>
         </div>
         <div class="recto-lines-stack">
-          ${Array(9).fill('<div class="wide-ruled-line"></div>').join('')}
+          ${Array(10).fill('<div class="wide-ruled-line"></div>').join('')}
         </div>
       </div>
 
-      <!-- BOTTOM CENTREFOLD MIND-MAP MISSION STRIP -->
-      <div class="mindmap-mission-strip">
-        <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;">
-          <span><strong>Mind-Map Mission:</strong> Add 2–3 key facts from Enquiry ${wCfg.lessonNum} to <strong>${esc(wCfg.mindMapNode)}</strong> &mdash; scan the QR code on your Centrefold Timeline for help.</span>
-          <span style="font-weight:900;white-space:nowrap;">Centrefold pp. 14–15 &rarr;</span>
-        </div>
+      <!-- BOTTOM KEY TERMS / SPELLINGS STRIP -->
+      <div class="spellings-strip" style="border-top: 1px solid #000000; padding: 2.5px 2px 1.5px 2px; margin-top: 2px; display: flex; align-items: baseline; gap: 8px; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #000000; flex-shrink: 0;">
+        <strong style="font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Key Terms / Spellings:</strong>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>1.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>2.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>3.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>4.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
       </div>
 
       ${renderFooterStrip(pageNum, wCfg.rightQuip)}

@@ -1174,6 +1174,10 @@ async function compileCombinedWorkbook() {
   // Write Master HTML
   const outHtmlPath = path.join(ROOT_DIR, 'public', 'units', 'great_war_part2', 'great_war_part2_combined_workbook.html');
   fs.writeFileSync(outHtmlPath, html, 'utf8');
+  const unitsHtmlMirror = path.join(ROOT_DIR, 'units', 'great_war_part2', 'great_war_part2_combined_workbook.html');
+  if (fs.existsSync(path.dirname(unitsHtmlMirror))) {
+    fs.writeFileSync(unitsHtmlMirror, html, 'utf8');
+  }
   console.log(`📄 Wrote Master 24-Page HTML: ${outHtmlPath}`);
 
   // Compile PDF via Puppeteer
@@ -1238,7 +1242,11 @@ async function compileCombinedWorkbook() {
     throw new Error(`CRITICAL REPROGRAPHIC FAILURE: Expected exactly ${TOTAL_PAGES} pages, but PDF rendered ${parsed.numpages} pages!`);
   }
 
+  const mirrorPdfPath = path.join(ROOT_DIR, 'public', 'pdfs', 'great_war_part2_combined_workbook.pdf');
+  fs.copyFileSync(outPdfPath, mirrorPdfPath);
+
   console.log(`✅ Generated Master 24-Page Saddle-Stitch PDF: ${outPdfPath}`);
+  console.log(`✅ Mirrored Master 24-Page Saddle-Stitch PDF: ${mirrorPdfPath}`);
   console.log('🎉 100% Reprographic Perfection: Exactly 24 pages with ZERO overflow!\n');
 }
 

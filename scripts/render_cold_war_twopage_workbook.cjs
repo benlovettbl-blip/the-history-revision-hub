@@ -760,6 +760,16 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
 // ============================================================================
 // RIGHT PAGE RENDERER: ROTATING DISCIPLINARY WRITING
 // ============================================================================
+function renderSpellingsStrip() {
+  return `<div class="spellings-strip" style="border-top: 1px solid #000000; padding: 2.5px 2px 1.5px 2px; margin-top: 2px; display: flex; align-items: baseline; gap: 8px; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #000000; flex-shrink: 0;">
+  <strong style="font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Key Terms / Spellings:</strong>
+  <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>1.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+  <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>2.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+  <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>3.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+  <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>4.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+</div>`;
+}
+
 function renderRightPage(cfg, pageNum, totalPages = 20) {
   const rp = cfg.rightPage;
   const isEven = pageNum % 2 === 0;
@@ -767,7 +777,7 @@ function renderRightPage(cfg, pageNum, totalPages = 20) {
 
   if (rp.type === 'single_12') {
     let linesHtml = '';
-    const numLines = 18;
+    const numLines = 20;
     for (let i = 0; i < numLines; i++) {
       linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
     }
@@ -833,10 +843,7 @@ function renderRightPage(cfg, pageNum, totalPages = 20) {
 ${linesHtml}        </div>
       </div>
 
-      <!-- Timeline Mission & Footer -->
-      <div style="flex-shrink: 0; margin-top: 2px; border-top: 1px solid #cbd5e1; padding-top: 2px; font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #1e293b; line-height: 1.2;">
-        <strong style="color: #000000;">${rp.timelineMissionTitle}:</strong> ${rp.timelineMission}
-      </div>
+      ${renderSpellingsStrip()}
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
@@ -845,7 +852,7 @@ ${linesHtml}        </div>
 
   if (rp.type === 'narrative_8') {
     let linesHtml = '';
-    const numLines = 19;
+    const numLines = 21;
     for (let i = 0; i < numLines; i++) {
       linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
     }
@@ -891,9 +898,7 @@ ${linesHtml}        </div>
 ${linesHtml}        </div>
       </div>
 
-      <div style="flex-shrink: 0; margin-top: 2px; border-top: 1px solid #cbd5e1; padding-top: 2px; font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #1e293b; line-height: 1.2;">
-        <strong style="color: #000000;">${rp.timelineMissionTitle}:</strong> ${rp.timelineMission}
-      </div>
+      ${renderSpellingsStrip()}
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
@@ -902,7 +907,7 @@ ${linesHtml}        </div>
 
   if (rp.type === 'sources_8') {
     let linesHtml = '';
-    const numLines = 14;
+    const numLines = 19;
     for (let i = 0; i < numLines; i++) {
       linesHtml += `          <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
     }
@@ -965,9 +970,7 @@ ${linesHtml}        </div>
 ${linesHtml}        </div>
       </div>
 
-      <div style="flex-shrink: 0; margin-top: 2px; border-top: 1px solid #cbd5e1; padding-top: 2px; font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #1e293b; line-height: 1.2;">
-        <strong style="color: #000000;">${rp.timelineMissionTitle}:</strong> ${rp.timelineMission}
-      </div>
+      ${renderSpellingsStrip()}
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
@@ -976,11 +979,11 @@ ${linesHtml}        </div>
 
   // Type: split (Feature drill + Structured consequence)
   let linesPartA = '';
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 11; i++) {
     linesPartA += `            <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
   }
   let linesPartB = '';
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 11; i++) {
     linesPartB += `            <div class="note-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>\n`;
   }
 
@@ -1046,9 +1049,7 @@ ${linesPartB}          </div>
         </div>
       </div>
 
-      <div style="flex-shrink: 0; margin-top: 2px; border-top: 1px solid #cbd5e1; padding-top: 2px; font-family: 'Inter', sans-serif; font-size: 6.5pt; color: #1e293b; line-height: 1.2;">
-        <strong style="color: #000000;">${rp.timelineMissionTitle}:</strong> ${rp.timelineMission}
-      </div>
+      ${renderSpellingsStrip()}
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>

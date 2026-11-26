@@ -841,6 +841,16 @@ function renderSpinePage(cfg, pageNum, totalPages = 20) {
   </div>`;
 }
 
+function renderSpellingsStrip() {
+  return `<div class="spellings-strip" style="border-top: 1px solid #000000; padding: 2.5px 2px 1.5px 2px; margin-top: 2px; display: flex; align-items: baseline; gap: 8px; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #000000; flex-shrink: 0;">
+  <strong style="font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Key Terms / Spellings:</strong>
+  <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>1.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+  <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>2.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+  <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>3.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+  <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>4.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+</div>`;
+}
+
 function renderRightPage(cfg, pageNum, totalPages = 20) {
   const rp = cfg.rightPage;
   const isEven = pageNum % 2 === 0;
@@ -931,6 +941,8 @@ function renderRightPage(cfg, pageNum, totalPages = 20) {
       <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 3px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
 ${linesHtml}      </div>
 
+      ${renderSpellingsStrip()}
+
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
   </div>`;
@@ -1002,6 +1014,8 @@ ${linesHtml}      </div>
       <!-- Ruled Writing Area: flex: 1 fills ALL remaining space down to footer strip -->
       <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 3px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
 ${linesHtml}      </div>
+
+      ${renderSpellingsStrip()}
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
@@ -1089,6 +1103,8 @@ ${linesHtml}      </div>
       <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 3px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
 ${linesHtml}      </div>
 
+      ${renderSpellingsStrip()}
+
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
   </div>`;
@@ -1175,6 +1191,8 @@ ${linesHtml}      </div>
       <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 3px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
 ${linesHtml}      </div>
 
+      ${renderSpellingsStrip()}
+
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
   </div>`;
@@ -1260,6 +1278,8 @@ ${linesHtml}      </div>
       <!-- Ruled Lines for Part B: flex: 1 fills ALL remaining space down to footer strip -->
       <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin-top: 3px; margin-bottom: 3px; border-top: 1.2px solid #000000;">
 ${partBLinesHtml}      </div>
+
+      ${renderSpellingsStrip()}
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
     </div>
@@ -1996,10 +2016,8 @@ ${pagesHtml}
     await assertPdfPageCount(pdfOutPath, 20);
     console.log(`🎉 Successfully rendered 20-Page Gold Standard PDF to: ${pdfOutPath}`);
   } catch (err) {
-    console.warn(`⚠️ Puppeteer PDF generation failed or skipped: ${err.message}`);
-    console.log(
-      `(HTML output remains valid and printable directly via browser at ${publicHtmlPath})`,
-    );
+    console.error(`❌ Puppeteer PDF generation failed: ${err.message}`);
+    throw err;
   }
 }
 

@@ -764,6 +764,17 @@ function renderSpinePage(cfg, pageNum) {
   </div>`;
 }
 
+function renderSpellingsStrip() {
+  return `
+      <div class="spellings-strip" style="border-top: 1px solid #000000; padding: 2.5px 2px 1.5px 2px; margin-top: 2px; display: flex; align-items: baseline; gap: 8px; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #000000; flex-shrink: 0;">
+        <strong style="font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Key Terms / Spellings:</strong>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>1.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>2.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>3.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>4.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+      </div>`;
+}
+
 // ============================================================================
 // RIGHT PAGE RENDERER: ROTATING DISCIPLINARY SKILLS WRITING (STRICTLY MONOCHROME)
 // ============================================================================
@@ -818,26 +829,11 @@ function renderRightPage(cfg, pageNum) {
         <strong style="color: #000000;">Task:</strong> Using the vocabulary and connectives above, write your analytical response below:
       </div>
       <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border-top: 1.2px solid #000000; margin-bottom: 4px;">
-        ${Array(16)
+        ${Array(18)
           .fill(
             '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
           )
           .join('\n        ')}
-      </div>
-
-      <!-- Centrefold Sketch Challenge Mission Box -->
-      <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 3px 6px; background: #ffffff; margin-bottom: 3px;">
-        <div style="display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #000000; padding-bottom: 1.5px; margin-bottom: 2px;">
-          <strong style="font-family: 'Inter', sans-serif; font-size: 7.2pt; text-transform: uppercase; color: #000000; background: #000000; color: #ffffff; padding: 1.5px 5px; border-radius: 2px;">
-            ${rp.timelineMissionTitle || 'Mind-Map Mission'}
-          </strong>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000; text-transform: uppercase;">
-            Turn to Centrefold (Pages 8–9) &rarr;
-          </span>
-        </div>
-        <div style="font-family: 'Georgia', serif; font-size: 7.4pt; color: #000000; line-height: 1.22; margin-top: 1px;">
-          ${rp.timelineMission}
-        </div>
       </div>
 
       <!-- Teacher Feedback Strip -->
@@ -853,6 +849,8 @@ function renderRightPage(cfg, pageNum) {
           <span>[ ] Greater Depth</span>
         </div>
       </div>
+
+      ${renderSpellingsStrip()}
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, 16)}
     </div>
@@ -938,21 +936,6 @@ function renderRightPage(cfg, pageNum) {
         </div>
       </div>
 
-      <!-- Timeline Mission Box -->
-      <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 3px 6px; background: #ffffff; margin-top: 2px; margin-bottom: 2px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2px; border-bottom: 1px solid #000000; padding-bottom: 1.5px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.3px;">
-            ${rp.timelineMissionTitle || 'Mind-Map Mission'}
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
-            Turn to Centrefold &bull; Pages 8–9 &rarr;
-          </span>
-        </div>
-        <div style="font-family: 'Georgia', serif; font-size: 7.4pt; color: #000000; line-height: 1.22;">
-          ${rp.timelineMission}
-        </div>
-      </div>
-
       <!-- Teacher Feedback Strip -->
       <div style="border: 1.2px solid #000000; border-radius: 3px; padding: 3px 6px; background: #ffffff; display: flex; justify-content: space-between; align-items: center; margin-top: 2px;">
         <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: #000000;">
@@ -966,6 +949,8 @@ function renderRightPage(cfg, pageNum) {
           <span>[ ] Greater Depth</span>
         </div>
       </div>
+
+      ${renderSpellingsStrip()}
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, 16)}
     </div>
@@ -1034,26 +1019,11 @@ function renderRightPage(cfg, pageNum) {
 
         <!-- Ruled Writing Lines (Calibrated ~9.2mm GCSE pitch: 21 Lines) -->
         <div style="display: flex; flex-direction: column; gap: 0; margin-bottom: 3px; flex: 1; min-height: 0;">
-          ${Array(16)
+          ${Array(18)
             .fill(
               '<div class="task-line" style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box; margin: 0;"></div>',
             )
             .join('')}
-        </div>
-
-        <!-- Centrefold Sketch Challenge Mission Box -->
-        <div style="border: 1.2px solid #000000; border-radius: 4px; padding: 3px 6px; background: #ffffff; margin-top: 1px; margin-bottom: 2px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px; border-bottom: 1px solid #000000; padding-bottom: 1px;">
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 5px; border-radius: 2px; text-transform: uppercase; letter-spacing: 0.3px;">
-              ${rp.timelineMissionTitle || 'Mind-Map Mission'}
-            </span>
-            <span style="font-family: 'Inter', sans-serif; font-size: 7.2pt; font-weight: 800; color: #000000;">
-              Turn to Centrefold &bull; Pages 8–9 &rarr;
-            </span>
-          </div>
-          <div style="font-family: 'Georgia', serif; font-size: 7.4pt; color: #000000; line-height: 1.22;">
-            ${rp.timelineMission}
-          </div>
         </div>
 
         <!-- Teacher Feedback Strip -->
@@ -1071,6 +1041,8 @@ function renderRightPage(cfg, pageNum) {
         </div>
 
       </div>
+
+      ${renderSpellingsStrip()}
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, 16)}
     </div>

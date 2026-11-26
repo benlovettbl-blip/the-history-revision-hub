@@ -349,24 +349,22 @@ function renderRightPage(cfg, pageNum, totalPages = 20) {
         </div>
       </div>
 
-      <!-- Centrefold Mind-Map Mission Box -->
-      <div style="border: 1.2px dashed #000000; border-radius: 3px; padding: 3px 7px; background: #ffffff; margin-bottom: 5px; display: flex; align-items: center; gap: 8px;">
-        <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; font-weight: 900; background: #000000; color: #ffffff; padding: 1.5px 6px; border-radius: 2px; text-transform: uppercase; flex-shrink: 0;">
-          Mind-Map Mission
-        </span>
-        <span style="font-family: 'Inter', sans-serif; font-size: 7.4pt; line-height: 1.2; color: #000000;">
-          ${rp.timelineMission}
-        </span>
-      </div>
-
-      <!-- Ruled Handwriting Lines (Standard 8.8mm Pitch) -->
+      <!-- Ruled Handwriting Lines (Standard Pitch) -->
       <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; border-top: 1.2px solid #000000; margin-bottom: 4px;">
-        ${Array.from({ length: 16 })
+        ${Array.from({ length: 18 })
           .map(
             () =>
               `<div style="flex: 1; min-height: 0; border-bottom: 1.2px solid #000000; box-sizing: border-box;"></div>`,
           )
           .join('')}
+      </div>
+
+      <div class="spellings-strip" style="border-top: 1px solid #000000; padding: 2.5px 2px 1.5px 2px; margin-top: 2px; display: flex; align-items: baseline; gap: 8px; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #000000; flex-shrink: 0;">
+        <strong style="font-weight: 900; text-transform: uppercase; letter-spacing: 0.3px; white-space: nowrap;">Key Terms / Spellings:</strong>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>1.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>2.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>3.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
+        <span style="flex: 1; display: flex; align-items: baseline; gap: 3px;"><strong>4.</strong><span style="flex: 1; border-bottom: 0.9px solid #000000; height: 3.8mm;"></span></span>
       </div>
 
       ${renderFooterStrip(pageNum, cfg.rightPageQuip, totalPages)}
