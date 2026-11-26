@@ -143,6 +143,12 @@
 .ww2-step-pill.is-done {
   border-color: #22c55e;
   color: #86efac;
+  background: rgba(22, 163, 74, 0.16);
+}
+.ww2-step-pill.is-wrong {
+  border-color: #ef4444;
+  background: rgba(220, 38, 38, 0.25);
+  color: #fecaca;
 }
 
 .ww2-ctrl-group {
@@ -190,6 +196,149 @@
   border-color: #fde047;
   background: rgba(234, 179, 8, 0.2);
   color: #fef08a;
+}
+.ww2-icon-btn.is-armed-warn {
+  border-color: #f97316;
+  background: rgba(234, 88, 12, 0.28);
+  color: #fed7aa;
+}
+
+.ww2-replay-vo-btn {
+  appearance: none;
+  border: 1px solid rgba(146, 64, 14, 0.55);
+  background: rgba(255, 251, 235, 0.78);
+  color: #7c2d12;
+  border-radius: 999px;
+  padding: 1px 8px;
+  font-size: 0.65rem;
+  font-weight: 900;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  touch-action: manipulation;
+}
+.ww2-replay-vo-btn:hover {
+  background: #ffffff;
+  border-color: #9a3412;
+}
+
+/* Tactile Stage 5 Brass Enigma 3-Rotor Wheel Box */
+.ww2-rotor-cabinet {
+  background: linear-gradient(180deg, #1c1917 0%, #090d16 100%);
+  border: 1.5px solid #d97706;
+  border-radius: 11px;
+  padding: 9px 10px;
+  margin-bottom: 10px;
+}
+
+.ww2-rotor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.ww2-rotor-slot {
+  background: linear-gradient(180deg, #451a03 0%, #292524 100%);
+  border: 1.5px solid #b45309;
+  border-radius: 9px;
+  padding: 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.ww2-rotor-slot.is-locked {
+  border-color: #22c55e;
+  background: linear-gradient(180deg, #14532d 0%, #052e16 100%);
+}
+
+.ww2-rotor-step-btn {
+  appearance: none;
+  width: 100%;
+  min-height: 28px;
+  border-radius: 6px;
+  border: 1px solid #78350f;
+  background: rgba(251, 191, 36, 0.14);
+  color: #fde68a;
+  font-size: 0.72rem;
+  font-weight: 900;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.ww2-rotor-step-btn:hover {
+  background: rgba(251, 191, 36, 0.28);
+}
+
+.ww2-rotor-letter {
+  font-family: 'Courier New', ui-monospace, monospace;
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #fef08a;
+  letter-spacing: 1px;
+}
+.ww2-rotor-slot.is-locked .ww2-rotor-letter {
+  color: #86efac;
+}
+
+/* Stage 6 VE Day Celebration Banner & Historian Certificate */
+.ww2-veday-banner {
+  position: relative;
+  width: 100%;
+  height: 126px;
+  border-radius: 13px;
+  overflow: hidden;
+  border: 2px solid #f59e0b;
+  margin-bottom: 12px;
+  background: #0f172a;
+}
+.ww2-veday-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 82% 48%;
+  display: block;
+}
+.ww2-veday-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.55) 56%, rgba(15, 23, 42, 0.18) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 18px;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.ww2-cert-card {
+  margin-top: 12px;
+  padding: 13px 15px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(20, 83, 45, 0.42) 0%, rgba(120, 53, 15, 0.42) 100%);
+  border: 2px solid #fde047;
+  color: #fef9c3;
+}
+.ww2-cert-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 10px;
+}
+.ww2-cert-pill {
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid #86efac;
+  color: #dcfce7;
+}
+.ww2-cert-pill.is-pending {
+  border-color: #64748b;
+  color: #cbd5e1;
 }
 
 /* =========================================================================
@@ -523,6 +672,34 @@
   border: 1.5px solid #334155;
   border-radius: 14px;
   padding: 13px 15px;
+}
+
+.ww2-route-info-card {
+  background: #0f172a;
+  border: 1.5px solid #f59e0b;
+  border-radius: 11px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  min-height: 158px;
+}
+
+@media (max-width: 768px) {
+  .ww2-route-info-card {
+    min-height: 224px;
+  }
+  .ww2-beat4-card {
+    min-height: 545px;
+  }
+  .ww2-speech-speaker {
+    flex-wrap: nowrap;
+  }
+  .ww2-speech-speaker > span:first-child {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 
 .ww2-choice-btn {

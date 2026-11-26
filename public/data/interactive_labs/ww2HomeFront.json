@@ -7,11 +7,11 @@
     {
       "id": "london",
       "city": "London & East End Docks",
-      "x": 635,
-      "y": 428,
-      "destName": "Kent, Devon, Cornwall & South Wales",
-      "destX": 438,
-      "destY": 465,
+      "x": 586,
+      "y": 430,
+      "destName": "Devon, Cornwall, Kent & South Wales",
+      "destX": 405,
+      "destY": 476,
       "evacuees": "over 600,000 children & mothers",
       "riskReason": "Britain's capital, Parliament, railways, and Thames docklands made London the #1 Luftwaffe target.",
       "receptionNote": "Special steam trains left Waterloo, Paddington, and Liverpool Street every few minutes from 1 September 1939, carrying children to quiet villages across Devon, Cornwall, Kent, and Wales."
@@ -19,11 +19,11 @@
     {
       "id": "midlands",
       "city": "Coventry & Birmingham",
-      "x": 545,
-      "y": 368,
+      "x": 518,
+      "y": 366,
       "destName": "Worcestershire, Shropshire & Herefordshire",
-      "destX": 456,
-      "destY": 374,
+      "destX": 448,
+      "destY": 372,
       "evacuees": "over 140,000 schoolchildren",
       "riskReason": "Packed with Spitfire, tank, and munitions factories that powered Britain's war effort.",
       "receptionNote": "Children from industrial Midlands streets travelled west to apple-orchard farms and market towns along the Welsh Marches."
@@ -31,11 +31,11 @@
     {
       "id": "northwest",
       "city": "Manchester, Salford & Liverpool",
-      "x": 486,
-      "y": 292,
+      "x": 478,
+      "y": 298,
       "destName": "North Wales, Cheshire & Rural Lancashire",
-      "destX": 398,
-      "destY": 318,
+      "destX": 404,
+      "destY": 326,
       "evacuees": "over 260,000 children",
       "riskReason": "Liverpool's Atlantic food-convoy docks and Manchester's Trafford Park factories faced heavy night raids.",
       "receptionNote": "Many Merseyside and Salford children heard the Welsh language for the very first time in rural Snowdonia and Anglesey!"
@@ -43,11 +43,11 @@
     {
       "id": "scotland",
       "city": "Glasgow & Clydebank Shipyards",
-      "x": 418,
-      "y": 152,
+      "x": 424,
+      "y": 168,
       "destName": "Scottish Highlands, Ayrshire & Dumfries",
-      "destX": 372,
-      "destY": 96,
+      "destX": 398,
+      "destY": 92,
       "evacuees": "over 175,000 Scottish evacuees",
       "riskReason": "River Clyde shipyards built Royal Navy warships and merchant vessels vital to Britain's survival.",
       "receptionNote": "Operation Pied Piper moved children from Glasgow tenements to Highland glens, island crofts, and Ayrshire farms."
@@ -55,11 +55,11 @@
     {
       "id": "northeast",
       "city": "Newcastle, Tyneside & Hull",
-      "x": 558,
-      "y": 236,
+      "x": 532,
+      "y": 228,
       "destName": "Yorkshire Dales & Northumberland",
-      "destX": 496,
-      "destY": 244,
+      "destX": 484,
+      "destY": 246,
       "evacuees": "over 130,000 children",
       "riskReason": "East-coast ports and shipyards sat directly across the North Sea from German airfields—Hull became one of the most heavily bombed cities in Britain.",
       "receptionNote": "Evacuee trains steamed inland into stone villages across the Yorkshire Dales and rural Northumberland."
@@ -67,14 +67,26 @@
     {
       "id": "southcoast",
       "city": "Portsmouth, Southampton & Plymouth",
-      "x": 562,
+      "x": 528,
       "y": 468,
       "destName": "Dorset, Wiltshire & Hampshire Downs",
-      "destX": 512,
+      "destX": 482,
       "destY": 442,
       "evacuees": "over 95,000 coastal children",
       "riskReason": "Home to Royal Navy dockyards and Spitfire workshops right across the English Channel.",
       "receptionNote": "Naval-port schoolchildren were billeted inland across chalk-downland villages in Wiltshire, Dorset, and rural Hampshire."
+    },
+    {
+      "id": "belfast",
+      "city": "Belfast Shipyards & Docks",
+      "x": 344,
+      "y": 236,
+      "destName": "County Antrim, Fermanagh & Rural Ulster",
+      "destX": 292,
+      "destY": 244,
+      "evacuees": "over 70,000 Northern Ireland evacuees",
+      "riskReason": "Harland & Wolff shipyards and aircraft works made Belfast a major target during the devastating April–May 1941 Belfast Blitz.",
+      "receptionNote": "Families and schoolchildren evacuated from Belfast's dockland streets to country towns and farms across rural Northern Ireland."
     }
   ],
   "suitcaseItems": [

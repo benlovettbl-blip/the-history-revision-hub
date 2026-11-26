@@ -57,13 +57,16 @@ export function mountWw2HomeFrontFX(containerEl, presetKey = 'cover', getExtraSt
     r: 1 + Math.random() * 1.8,
   }));
 
-  const confetti = Array.from({ length: presetKey === 'bletchley_veday' ? 22 : 0 }, () => ({
-    x: 0.66 + Math.random() * 0.32,
-    y: Math.random(),
-    spd: 0.003 + Math.random() * 0.0025,
-    col: ['#ef4444', '#f8fafc', '#3b82f6'][Math.floor(Math.random() * 3)],
-    sway: Math.random() * Math.PI * 2,
-  }));
+  const confetti = Array.from(
+    { length: presetKey === 'bletchley_veday' || presetKey === 'veday_banner' ? 26 : 0 },
+    () => ({
+      x: presetKey === 'veday_banner' ? Math.random() : 0.66 + Math.random() * 0.32,
+      y: Math.random(),
+      spd: 0.003 + Math.random() * 0.0025,
+      col: ['#ef4444', '#f8fafc', '#3b82f6', '#fde047'][Math.floor(Math.random() * 4)],
+      sway: Math.random() * Math.PI * 2,
+    }),
+  );
 
   const bursts = [];
 
@@ -353,6 +356,18 @@ export function mountWw2HomeFrontFX(containerEl, presetKey = 'cover', getExtraSt
       else if (presetKey === 'blitz_shelter') renderBlitzShelter(t, dt60);
       else if (presetKey === 'kitchen_ration') renderKitchenRation(t, dt60);
       else if (presetKey === 'bletchley_veday') renderBletchleyVeDay(t, dt60);
+      else if (presetKey === 'veday_banner') {
+        drawWarmGlow(50, 18, 32, 0.18, t, 1.8);
+        confetti.forEach((c) => {
+          c.y = (c.y + c.spd * dt60) % 1;
+          const cx = (c.x + Math.sin(t * 2.4 + c.sway) * 0.015) * width;
+          const cy = c.y * height;
+          ctx.fillStyle = c.col;
+          ctx.globalAlpha = 0.85;
+          ctx.fillRect(cx, cy, 4.5, 3);
+          ctx.globalAlpha = 1;
+        });
+      }
     }
 
     for (let i = bursts.length - 1; i >= 0; i--) {

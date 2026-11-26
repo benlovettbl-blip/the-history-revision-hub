@@ -25,5 +25,16 @@ export const WW2_HOMEFRONT_VO_CLIPS = new Set([
   "beat4_bombe_drums",
   "beat4_code_cracked",
   "beat5_veday_bells",
-  "beat5_iwm_quest"
+  "beat5_iwm_quest",
+  "cover_arthur_suitcase",
+  "beat0_carriage_wave",
+  "beat0_clothes_packed",
+  "beat0_sandwiches_packed",
+  "beat0_teddy_packed",
+  "beat1_horse_captain",
+  "beat1_orchard_harvest",
+  "beat2_window_tape",
+  "beat3_sugar_tea",
+  "beat3_kitchen_wireless",
+  "beat4_veday_peek"
 ]);

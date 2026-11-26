@@ -123,7 +123,17 @@ export async function openInteractiveClassroomLab(labId, preferFullscreen = true
   document.body.classList.add('hh-arcade-playing');
 
   const onKeyDown = (e) => {
-    if (e.key === 'Escape') closeModal();
+    if (e.key === 'Escape') {
+      if (!preferFullscreen) {
+        const innerFsBtn = modal.querySelector('.ww2-shell.ww2-is-fullscreen #ww2-fs-btn, .dst-shell.dst-is-fullscreen #dst-fs-btn');
+        if (innerFsBtn) {
+          e.preventDefault();
+          innerFsBtn.click();
+          return;
+        }
+      }
+      closeModal();
+    }
   };
 
   const closeModal = () => {

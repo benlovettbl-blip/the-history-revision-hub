@@ -180,6 +180,74 @@ const CLIPS = [
     style: 'warm, inspiring British museum curator inviting pupils to explore real Imperial War Museums archives',
     text: "Now step into the real Imperial War Museums archive! Check the wartime evidence yourself, bring back two final answers, and claim your Junior Historian Medal!",
   },
+
+  // v2 Complete Hotspot Coverage (Zero Silent Objects Across All 6 Scenes!)
+  {
+    id: 'cover_arthur_suitcase',
+    voiceKey: 'ww1_british_woman',
+    style: 'warm, affectionate older sister describing her little brother and their packed brown leather suitcase on Platform Four',
+    text: "Inside our battered brown suitcase we've tucked clean woollen socks, a bar of soap, and a stamped postcard ready to send Mum our safe village address!",
+  },
+  {
+    id: 'beat0_carriage_wave',
+    voiceKey: 'ww1_british_woman',
+    style: 'earnest, vivid young British evacuee describing classmates waving from a steam-train carriage window',
+    text: "Whole school classes travelled together with their teachers, waving bravely out of the carriage window without knowing which village family would choose them!",
+  },
+  {
+    id: 'beat0_clothes_packed',
+    voiceKey: 'ww1_british_woman',
+    style: 'bright, practical young British evacuee checking off her Ministry clothing list',
+    text: "One warm knitted jumper, spare socks, plimsolls, toothbrush, comb, towel, and tin mug—every single item on the official nineteen thirty-nine Ministry list!",
+  },
+  {
+    id: 'beat0_sandwiches_packed',
+    voiceKey: 'ww1_british_woman',
+    style: 'cheerful young evacuee tucking brown-paper sandwiches into her suitcase',
+    text: "Evacuation steam trains took hours and had no buffet cars, so Mum tied up cheese sandwiches and a crisp red apple in brown paper string!",
+  },
+  {
+    id: 'beat0_teddy_packed',
+    voiceKey: 'ww1_british_woman',
+    style: 'warm, gentle young evacuee tucking a small teddy bear into the corner of her suitcase',
+    text: "There's just enough room in the corner for little Barnaby Bear and a stamped postcard so Mum and Dad know where we've arrived safely!",
+  },
+  {
+    id: 'beat1_horse_captain',
+    voiceKey: 'ww1_british_tommy',
+    style: 'kindly, chuckling West Country farmer introducing his gentle Shire horse to city children',
+    text: "Steady there, old Captain! Many city youngsters stepping off the train had never seen a real Shire horse, cow, or laying hen in their lives!",
+  },
+  {
+    id: 'beat1_orchard_harvest',
+    voiceKey: 'ww1_british_tommy',
+    style: 'warm, appreciative country farmer praising evacuee helpers in his autumn orchard',
+    text: "With young farmhands away in uniform, evacuees pitched right in—picking orchard apples, collecting warm eggs, and bringing in the autumn harvest!",
+  },
+  {
+    id: 'beat2_window_tape',
+    voiceKey: 'ww1_british_officer',
+    style: 'calm, knowledgeable British ARP Warden explaining taped window panes during the Blitz',
+    text: "Crisscross sticky paper tape won't stop a direct hit, youngsters, yet it helps stop glass panes shattering into dangerous flying splinters!",
+  },
+  {
+    id: 'beat3_sugar_tea',
+    voiceKey: 'female_historian',
+    style: 'cheerful, brisk 1941 village grocer scooping sugar and loose tea leaves onto brass scales',
+    text: "Eight ounces of sugar and just two ounces of loose tea leaves for the week—and from July nineteen forty-two, even sweets were rationed to three ounces!",
+  },
+  {
+    id: 'beat3_kitchen_wireless',
+    voiceKey: 'female_historian',
+    style: 'warm, lively 1940s British wireless announcer sharing wartime Kitchen Front tips',
+    text: "Every morning at eight-fifteen, families gathered round the wireless for The Kitchen Front to hear clever recipes like carrot fudge and eggless sponge!",
+  },
+  {
+    id: 'beat4_veday_peek',
+    voiceKey: 'ww1_british_woman',
+    style: 'excited, hopeful young narrator peeking out of a Bletchley hut doorway toward sunlit bunting',
+    text: "Look through the hut doors—red, white, and blue bunting is going up in the sunshine! Crack our three-step convoy alert so we can celebrate Victory in Europe Day!",
+  },
 ];
 
 function sha256(s) {

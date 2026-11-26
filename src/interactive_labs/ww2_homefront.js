@@ -1,12 +1,15 @@
 /**
- * THE SUITCASE ON PLATFORM FOUR: A Child's Wartime Home Front Journey (1939–1945)
+ * THE SUITCASE ON PLATFORM FOUR: A Child's Wartime Home Front Journey (1939–1945) — v2.1
  * Flagship Key Stage 2 (Ages 9–11) Interactive Storybook Adventure & National UK Evacuation Lab
  *
- * Built on `story_lab_engine.js` (Zero-Jump Persistent DOM, `CLS = 0`, `Δscroll = 0px`):
- *  - Zero text labels over paintings: discreet 12px shiny hover glint dots on desktop, breathing firefly glints on touch.
- *  - 6 bespoke 60 FPS Canvas FX presets (`ww2_homefront_fx.js`), including real-time blackout curtain sealing in Stage 3!
- *  - 24 acted Studio TTS character voices + 1940s wireless score (`story`, `nightwatch`, `veday`) auto-paused on tab switch.
- *  - Universal All-UK 1939 Evacuation Map (England, Scotland, Wales & Northern Ireland) + Live Imperial War Museums Quest.
+ * v2.1 Upgrades & Bug Fixes:
+ *  - 35/35 100% Studio-voiced scene hotspots & objects (zero silent clicks!) + 1-tap `🔊 Replay` in dialogue bar.
+ *  - True task-based stage completion (`isStepTrulyComplete`) — green checkmarks reflect real mastery, never mere tab visits.
+ *  - Score-farming guards + partial recovery credit (+6 pts) & crisp red `.is-wrong` badge on Stage 6 Fact Checks.
+ *  - 7-Region Accurate All-UK Evacuation Map (`uk_homefront_svg_map.js` v2 — England, Scotland, Wales & Belfast NI + moving train).
+ *  - Tactile 3-Dial Brass Enigma Rotor Puzzle (`B - R - K`) on Stage 5 Bletchley Park Hut 8.
+ *  - Stage 6 VE Day Confetti Panorama + 6-Pillar Junior Home Front Historian Certificate (with printable certificate view).
+ *  - 2-tap `"↺ Sure?"` reset confirmation guard so primary pupils never wipe progress by accident.
  */
 
 import './ww2_homefront.css';
@@ -22,7 +25,7 @@ import { mountWw2HomeFrontFX } from './ww2_homefront_fx.js';
 import { renderUkHomeFrontMapSVG } from './uk_homefront_svg_map.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
 
-const SESSION_SAVE_KEY = 'hh_ww2_homefront_session_v1';
+const SESSION_SAVE_KEY = 'hh_ww2_homefront_session_v2';
 
 const preloadNextStage = createStageAssetPreloader({
   cover: [
@@ -60,6 +63,13 @@ const STEPS = [
   { id: 'beat4', short: '5. Bletchley Code', mob: '5/6 Code' },
   { id: 'beat5', short: '6. VE Day & IWM', mob: '6/6 VE Day' },
 ];
+
+const ROTOR_WHEELS = [
+  ['A', 'B', 'C', 'D'],
+  ['P', 'Q', 'R', 'S'],
+  ['J', 'K', 'L', 'M'],
+];
+const TARGET_ROTORS = ['B', 'R', 'K'];
 
 const SPEAKER_AVATARS = {
   clara: { img: '/images/arcade/ww2_homefront/cover_platform_four.webp', pos: '60.5% 49%', size: '680%' },
@@ -107,15 +117,16 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   let data = null;
   let unmounted = false;
   let shimmerTimeout = null;
+  let resetArmTimeout = null;
   let mountedSceneSignature = '';
 
   const scrollLock = createScrollLockManager(() => shellEl);
 
   const state = {
     step: ctx.startAtBeat0 ? 'beat0' : 'cover',
-    completedSteps: new Set(),
     isFullscreen: Boolean(ctx.autoFullscreen),
     hintShimmer: false,
+    resetArmed: false,
     score: 0,
     xpAwarded: false,
 
@@ -124,10 +135,11 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     speechText: isCoarseTouchUI()
       ? 'Tap glowing spots on Platform Four to meet our wartime cast—or press BEGIN 1939 HOME FRONT JOURNEY!'
       : 'Hover over Platform Four to uncover discreet shiny clues—or press BEGIN 1939 HOME FRONT JOURNEY!',
+    lastVoClipId: 'cover_clara_welcome',
 
     coverSpotsFound: new Set(),
 
-    // Beat 0: Platform Suitcase Packing + All-UK Evacuation Map
+    // Beat 0: Platform Suitcase Packing + 7-Region All-UK Evacuation Map
     beat0Tab: 'pack', // 'pack' | 'map'
     packedItems: new Set(),
     gramophoneTried: false,
@@ -150,17 +162,43 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     rationExtrasFound: new Set(),
     unrationedQuiz: null, // 'veg' | 'bacon'
 
-    // Beat 4: Women at War & Bletchley Park Codebreakers
+    // Beat 4: Women at War & Bletchley Park 3-Rotor + Cipher Desk
     bletchleySpotsFound: new Set(),
     cipherStepIdx: 0,
     solvedCipherIds: new Set(),
     wrongCipherOpt: '',
+    rotors: ['A', 'P', 'M'],
+    rotorsRewarded: false,
 
     // Beat 5: VE Day 1945 Truth Check & Live Imperial War Museums Archive Quest
     factAnswers: {}, // { fc1: true/false, ... }
+    fcCredited: new Set(),
+    fcHadWrong: new Set(),
     iwmBounty1: null, // '1.5m' | '50k'
     iwmBounty2: null, // '1954' | '1945'
   };
+
+  function areRotorsLocked() {
+    return (
+      state.rotors[0] === TARGET_ROTORS[0] &&
+      state.rotors[1] === TARGET_ROTORS[1] &&
+      state.rotors[2] === TARGET_ROTORS[2]
+    );
+  }
+
+  function isStepTrulyComplete(stepId) {
+    if (!data) return false;
+    if (stepId === 'beat0') return state.packedItems.size >= 4 && state.visitedRoutes.size >= 2;
+    if (stepId === 'beat1') return state.kinderQ1 === 'refugee' && state.kinderQ2 === 'phoney';
+    if (stepId === 'beat2') return state.blitzChecks.size >= 4 && state.morrisonAnswer === 'morrison';
+    if (stepId === 'beat3') return state.rationBasket.size >= 4 && state.unrationedQuiz === 'veg';
+    if (stepId === 'beat4') return state.solvedCipherIds.size >= data.bletchleyClues.length;
+    if (stepId === 'beat5') {
+      const allFactsCorrect = data.factChecks.every((fc) => state.factAnswers[fc.id] === fc.isTrue);
+      return allFactsCorrect && state.iwmBounty1 === '1.5m' && state.iwmBounty2 === '1954';
+    }
+    return false;
+  }
 
   function syncBestScore() {
     if (state.score > 0) {
@@ -178,7 +216,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       step: state.step,
       score: state.score,
       xpAwarded: state.xpAwarded,
-      completedSteps: [...state.completedSteps],
       coverSpotsFound: [...state.coverSpotsFound],
       beat0Tab: state.beat0Tab,
       packedItems: [...state.packedItems],
@@ -198,7 +235,11 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       bletchleySpotsFound: [...state.bletchleySpotsFound],
       cipherStepIdx: state.cipherStepIdx,
       solvedCipherIds: [...state.solvedCipherIds],
+      rotors: state.rotors,
+      rotorsRewarded: state.rotorsRewarded,
       factAnswers: state.factAnswers,
+      fcCredited: [...state.fcCredited],
+      fcHadWrong: [...state.fcHadWrong],
       iwmBounty1: state.iwmBounty1,
       iwmBounty2: state.iwmBounty2,
     });
@@ -210,7 +251,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     if (STEPS.some((s) => s.id === saved.step)) state.step = saved.step;
     if (typeof saved.score === 'number') state.score = saved.score;
     state.xpAwarded = Boolean(saved.xpAwarded);
-    if (Array.isArray(saved.completedSteps)) state.completedSteps = new Set(saved.completedSteps);
     if (Array.isArray(saved.coverSpotsFound)) state.coverSpotsFound = new Set(saved.coverSpotsFound);
     if (saved.beat0Tab === 'pack' || saved.beat0Tab === 'map') state.beat0Tab = saved.beat0Tab;
     if (Array.isArray(saved.packedItems)) state.packedItems = new Set(saved.packedItems);
@@ -230,7 +270,11 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     if (Array.isArray(saved.bletchleySpotsFound)) state.bletchleySpotsFound = new Set(saved.bletchleySpotsFound);
     if (typeof saved.cipherStepIdx === 'number') state.cipherStepIdx = saved.cipherStepIdx;
     if (Array.isArray(saved.solvedCipherIds)) state.solvedCipherIds = new Set(saved.solvedCipherIds);
+    if (Array.isArray(saved.rotors) && saved.rotors.length === 3) state.rotors = saved.rotors;
+    state.rotorsRewarded = Boolean(saved.rotorsRewarded);
     if (saved.factAnswers && typeof saved.factAnswers === 'object') state.factAnswers = saved.factAnswers;
+    if (Array.isArray(saved.fcCredited)) state.fcCredited = new Set(saved.fcCredited);
+    if (Array.isArray(saved.fcHadWrong)) state.fcHadWrong = new Set(saved.fcHadWrong);
     if (saved.iwmBounty1) state.iwmBounty1 = saved.iwmBounty1;
     if (saved.iwmBounty2) state.iwmBounty2 = saved.iwmBounty2;
   }
@@ -251,7 +295,10 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     state.avatarKey = avatarKey;
     state.speakerName = speakerName;
     state.speechText = text;
-    if (voClipId) audio.playVoice(voClipId);
+    if (voClipId) {
+      state.lastVoClipId = voClipId;
+      audio.playVoice(voClipId);
+    }
   }
 
   function destroyFx() {
@@ -274,10 +321,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   }
 
   function setStep(nextStep) {
-    if (state.step !== 'cover') {
-      state.completedSteps.add(state.step);
-    }
     state.step = nextStep;
+    state.resetArmed = false;
 
     if (nextStep === 'cover') {
       audio.setMode('story');
@@ -353,7 +398,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   function resetAdventure() {
     persistence.clear();
     state.step = 'cover';
-    state.completedSteps.clear();
+    state.resetArmed = false;
     state.score = 0;
     state.xpAwarded = false;
     state.coverSpotsFound.clear();
@@ -376,7 +421,11 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     state.cipherStepIdx = 0;
     state.solvedCipherIds.clear();
     state.wrongCipherOpt = '';
+    state.rotors = ['A', 'P', 'M'];
+    state.rotorsRewarded = false;
     state.factAnswers = {};
+    state.fcCredited.clear();
+    state.fcHadWrong.clear();
     state.iwmBounty1 = null;
     state.iwmBounty2 = null;
     audio.setMode('story');
@@ -387,6 +436,52 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       'cover_clara_welcome',
     );
     updateLab(true);
+  }
+
+  function openPrintableCertificate() {
+    if (typeof window === 'undefined') return;
+    const win = window.open('', '_blank', 'width=860,height=640');
+    if (!win) return;
+    const dateStr = new Date().toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+    win.document.write(`<!DOCTYPE html>
+      <html lang="en"><head><meta charset="utf-8"><title>Junior Home Front Historian Certificate</title>
+      <style>
+        body { font-family: Georgia, serif; background: #f8fafc; margin: 0; padding: 28px; text-align: center; color: #0f172a; }
+        .cert { max-width: 720px; margin: 0 auto; padding: 36px 40px; background: #fffbeb; border: 6px double #b45309; border-radius: 16px; box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
+        .kicker { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 1.5px; color: #92400e; text-transform: uppercase; }
+        h1 { font-size: 30px; margin: 10px 0 6px; color: #1e293b; }
+        .medal { font-size: 44px; margin: 8px 0; }
+        .sub { font-size: 16px; color: #334155; margin-bottom: 18px; }
+        .pillars { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 16px 0 22px; font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; }
+        .pill { padding: 5px 12px; border-radius: 999px; background: #dcfce7; border: 1px solid #16a34a; color: #14532d; }
+        .line { display: inline-block; width: 260px; border-bottom: 2px solid #334155; margin: 14px 0 4px; height: 24px; }
+        @media print { .no-print { display: none; } body { background: #fff; padding: 0; } }
+      </style></head><body>
+      <div class="cert">
+        <div class="kicker">The History Revision Hub • Key Stage 2 British Home Front (1939–1945)</div>
+        <div class="medal">🏅</div>
+        <h1>Junior Home Front Historian Medal</h1>
+        <p class="sub">Awarded for completing <em>The Suitcase on Platform Four</em> &amp; verifying primary records in the Imperial War Museums Archive</p>
+        <div><span class="line"></span><div style="font-size:12px;color:#475569;">Historian’s Name</div></div>
+        <div class="pillars">
+          <span class="pill">✓ 1939 Evacuation Suitcase</span>
+          <span class="pill">✓ All-UK Pied Piper Atlas</span>
+          <span class="pill">✓ Kindertransport Empathy</span>
+          <span class="pill">✓ 1940 Blitz &amp; Shelters</span>
+          <span class="pill">✓ 1941 Fair-Shares Rationing</span>
+          <span class="pill">✓ Bletchley Park Enigma Crib</span>
+          <span class="pill">✓ IWM Archive Verified (${state.score} pts)</span>
+        </div>
+        <div style="font-size:13px;color:#475569;">Completed on ${dateStr}</div>
+        <div class="no-print" style="margin-top:20px;">
+          <button onclick="window.print()" style="padding:10px 22px;font-weight:800;border-radius:8px;border:none;background:#d97706;color:#fff;cursor:pointer;">🖨️ Print / Save as PDF</button>
+        </div>
+      </div></body></html>`);
+    win.document.close();
   }
 
   function getSceneSignature() {
@@ -408,9 +503,9 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     return `
       <div class="ww2-step-strip" role="tablist" aria-label="Home Front Adventure Stages">
         ${STEPS.map((s) => {
-          const cls =
-            state.step === s.id ? 'is-active' : state.completedSteps.has(s.id) ? 'is-done' : '';
-          return `<button type="button" class="ww2-step-pill ${cls}" data-step-jump="${s.id}">${s.short}</button>`;
+          const done = isStepTrulyComplete(s.id);
+          const cls = state.step === s.id ? 'is-active' : done ? 'is-done' : '';
+          return `<button type="button" class="ww2-step-pill ${cls}" data-step-jump="${s.id}">${done && state.step !== s.id ? '✓ ' : ''}${s.short}</button>`;
         }).join('')}
       </div>
 
@@ -419,10 +514,10 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           <i class="fa-solid fa-chevron-left"></i>
         </button>
         <select id="ww2-mobile-step-select" class="ww2-mobile-step-select" aria-label="Jump to Adventure Stage">
-          ${STEPS.map(
-            (s) =>
-              `<option value="${s.id}" ${state.step === s.id ? 'selected' : ''}>${state.completedSteps.has(s.id) && state.step !== s.id ? '✓ ' : ''}${s.mob}</option>`,
-          ).join('')}
+          ${STEPS.map((s) => {
+            const done = isStepTrulyComplete(s.id);
+            return `<option value="${s.id}" ${state.step === s.id ? 'selected' : ''}>${done && state.step !== s.id ? '✓ ' : ''}${s.mob}</option>`;
+          }).join('')}
         </select>
         <button type="button" class="ww2-mob-arrow-btn" data-step-jump="${nextStepId}" ${!nextStepId ? 'disabled' : ''} aria-label="Next Stage">
           <i class="fa-solid fa-chevron-right"></i>
@@ -444,8 +539,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         </button>
         ${
           state.score > 0 || state.step !== 'cover'
-            ? `<button type="button" class="ww2-icon-btn ww2-hide-narrow" id="ww2-reset-btn" title="Restart 1939 Journey from Platform Four">
-                 <i class="fa-solid fa-rotate-left"></i>
+            ? `<button type="button" class="ww2-icon-btn ww2-hide-narrow ${state.resetArmed ? 'is-armed-warn' : ''}" id="ww2-reset-btn" title="${state.resetArmed ? 'Click again to confirm restart' : 'Restart 1939 Journey'}">
+                 <i class="fa-solid fa-rotate-left"></i>${state.resetArmed ? ' <span class="ww2-btn-lbl">Sure?</span>' : ''}
                </button>`
             : ''
         }
@@ -464,16 +559,28 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     `;
   }
 
+  function getContextHintLabel() {
+    if (state.step === 'beat5') return '🏅 Complete Part 1 & Part 2 below';
+    if (state.step === 'beat0' && state.beat0Tab === 'map') return '🗺️ Tap any of the 7 UK target cities';
+    return isCoarseTouchUI() ? '✨ Tap glowing spots on the picture' : '✨ Hover over picture for shiny spots';
+  }
+
   function renderSpeechInnerHTML() {
-    const touchHint = isCoarseTouchUI()
-      ? '✨ Tap glowing spots on the picture'
-      : '✨ Hover over picture for shiny spots';
     return `
       <div class="ww2-avatar-medallion" style="${avatarStyle(state.avatarKey)}"></div>
       <div style="flex:1;min-width:0;">
         <div class="ww2-speech-speaker">
           <span>${state.speakerName}</span>
-          <span class="ww2-speech-hint-chip">${touchHint}</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;">
+            ${
+              state.lastVoClipId
+                ? `<button type="button" class="ww2-replay-vo-btn" data-replay-vo="1" title="Listen to character voice line again">
+                     <i class="fa-solid fa-volume-high"></i> Replay
+                   </button>`
+                : ''
+            }
+            <span class="ww2-speech-hint-chip">${getContextHintLabel()}</span>
+          </span>
         </div>
         <p class="ww2-speech-text">“${state.speechText}”</p>
       </div>
@@ -583,6 +690,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   }
 
   function renderBeat0RightHTML() {
+    const totalRoutes = data.evacuationRoutes.length;
     if (state.beat0Tab === 'pack') {
       const officialDone = state.packedItems.size >= 4;
       return `
@@ -624,7 +732,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           ${
             officialDone
               ? `<button type="button" class="ww2-next-btn" data-b0-switch="map">
-                   🗺️ Next: Trace UK Evacuation Trains (${state.visitedRoutes.size}/6 Cities) <i class="fa-solid fa-arrow-right"></i>
+                   🗺️ Next: Trace UK Evacuation Trains (${state.visitedRoutes.size}/${totalRoutes} Cities) <i class="fa-solid fa-arrow-right"></i>
                  </button>`
               : ''
           }
@@ -643,11 +751,11 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             🚂 ALL-UK OPERATION PIED PIPER ROUTES
           </span>
           <span style="font-size:0.75rem;font-weight:800;color:#86efac;">
-            ${state.visitedRoutes.size}/6 Regions Explored
+            ${state.visitedRoutes.size}/${totalRoutes} Regions Explored
           </span>
         </div>
 
-        <div style="background:#0f172a;border:1.5px solid #f59e0b;border-radius:11px;padding:10px 12px;margin-bottom:10px;">
+        <div class="ww2-route-info-card">
           <div style="font-size:0.9rem;font-weight:900;color:#fef08a;margin-bottom:3px;">
             🔴 From: ${activeRoute.city}
           </div>
@@ -667,7 +775,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             .map((r) => {
               const isSel = r.id === state.selectedRouteId;
               const seen = state.visitedRoutes.has(r.id);
-              const shortLabel = r.city.split('&')[0].split(',')[0].trim();
+              const shortLabel = r.city.split('&')[0].split(',')[0].replace('Shipyards', '').trim();
               return `
                 <button type="button" class="ww2-step-pill ${isSel ? 'is-active' : seen ? 'is-done' : ''}"
                         style="width:100%;text-align:center;font-size:0.74rem;"
@@ -886,13 +994,40 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     `;
   }
 
+  function renderRotorCabinetHTML() {
+    const locked = areRotorsLocked();
+    return `
+      <div class="ww2-rotor-cabinet">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:0.72rem;font-weight:900;">
+          <span style="color:#fde047;">⚙️ BRASS ROTOR DIALS (TARGET SETTING: B - R - K)</span>
+          <span style="color:${locked ? '#86efac' : '#fca5a5'};">${locked ? '🟢 ROTORS LOCKED!' : '🔴 SPIN TO B - R - K'}</span>
+        </div>
+        <div class="ww2-rotor-grid">
+          ${state.rotors
+            .map((letter, idx) => {
+              const ok = letter === TARGET_ROTORS[idx];
+              return `
+                <div class="ww2-rotor-slot ${ok ? 'is-locked' : ''}">
+                  <div style="font-size:0.65rem;color:#cbd5e1;font-weight:800;">ROTOR ${idx + 1}</div>
+                  <button type="button" class="ww2-rotor-step-btn" data-rotor-idx="${idx}" data-rotor-dir="1" aria-label="Spin Rotor ${idx + 1} Up">▲</button>
+                  <div class="ww2-rotor-letter">${letter}</div>
+                  <button type="button" class="ww2-rotor-step-btn" data-rotor-idx="${idx}" data-rotor-dir="-1" aria-label="Spin Rotor ${idx + 1} Down">▼</button>
+                </div>
+              `;
+            })
+            .join('')}
+        </div>
+      </div>
+    `;
+  }
+
   function renderBeat4RightHTML() {
     const allCracked = state.solvedCipherIds.size >= data.bletchleyClues.length;
     const activeClue =
       data.bletchleyClues[Math.min(state.cipherStepIdx, data.bletchleyClues.length - 1)];
 
     return `
-      <div class="ww2-card-panel">
+      <div class="ww2-card-panel ww2-beat4-card">
         <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px;">
           <span style="font-size:0.73rem;font-weight:900;color:#fbbf24;text-transform:uppercase;">
             🔐 HUT 8 ENIGMA DESK • WOMEN AT WAR
@@ -909,6 +1044,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             ${activeClue.stepBadge}
           </div>
           <div class="ww2-cipher-strip">${activeClue.cipherLine}</div>
+          ${renderRotorCabinetHTML()}
           <p style="margin:0 0 9px;font-size:0.83rem;color:#f1f5f9;font-weight:700;line-height:1.36;">
             ${activeClue.question}
           </p>
@@ -925,6 +1061,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             .join('')}
         `
             : `
+          ${renderRotorCabinetHTML()}
           <div class="ww2-cipher-strip" style="border-color:#22c55e;color:#86efac;">
             ✅ ULTRA ALERT SENT: ATLANTIC FOOD CONVOY SAFELY REROUTED AROUND U-BOATS!
           </div>
@@ -943,7 +1080,19 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   function renderBeat5InnerHTML() {
     const bountySolvedCount =
       (state.iwmBounty1 === '1.5m' ? 1 : 0) + (state.iwmBounty2 === '1954' ? 1 : 0);
+    const allFactsRight = data.factChecks.every((fc) => state.factAnswers[fc.id] === fc.isTrue);
     const medalUnlocked = bountySolvedCount === 2;
+
+    const pillars = [
+      { label: '1939 Suitcase (4/4)', ok: state.packedItems.size >= 4 },
+      { label: 'All-UK Atlas', ok: state.visitedRoutes.size >= 2 },
+      { label: 'Kindertransport Check', ok: isStepTrulyComplete('beat1') },
+      { label: 'Blitz Blackout & Shelter', ok: isStepTrulyComplete('beat2') },
+      { label: '1941 Ration Basket', ok: isStepTrulyComplete('beat3') },
+      { label: 'Bletchley Enigma Crib', ok: isStepTrulyComplete('beat4') },
+      { label: 'VE Day Truth Check', ok: allFactsRight },
+      { label: 'IWM Archive Bounties', ok: medalUnlocked },
+    ];
 
     return `
       <!-- PART 1: 3-CARD WARTIME FACT OR MYTH CHECK -->
@@ -953,7 +1102,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             🎉 PART 1: VE DAY (8 MAY 1945) — TRUE OR WARTIME MYTH?
           </span>
           <span style="font-size:0.75rem;font-weight:800;color:#86efac;">
-            Stamped: ${Object.keys(state.factAnswers).length} / ${data.factChecks.length}
+            Verified: ${data.factChecks.filter((f) => state.factAnswers[f.id] === f.isTrue).length} / ${data.factChecks.length}
           </span>
         </div>
 
@@ -963,25 +1112,29 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
               const ans = state.factAnswers[fc.id];
               const answered = typeof ans === 'boolean';
               const right = answered && ans === fc.isTrue;
+              const trueCls =
+                answered && ans === true ? (fc.isTrue ? 'is-done' : 'is-wrong') : '';
+              const mythCls =
+                answered && ans === false ? (!fc.isTrue ? 'is-done' : 'is-wrong') : '';
               return `
-                <div style="background:#0f172a;border:1.5px solid ${answered ? (right ? '#22c55e' : '#f59e0b') : '#334155'};border-radius:12px;padding:11px 12px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;">
+                <div style="background:#0f172a;border:1.5px solid ${answered ? (right ? '#22c55e' : '#ef4444') : '#334155'};border-radius:12px;padding:11px 12px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;">
                   <p style="margin:0;font-size:0.83rem;font-weight:700;color:#f8fafc;line-height:1.36;">
                     “${fc.statement}”
                   </p>
                   <div style="display:flex;gap:6px;">
-                    <button type="button" class="ww2-step-pill ${answered && ans === true ? (fc.isTrue ? 'is-done' : 'is-active') : ''}"
+                    <button type="button" class="ww2-step-pill ${trueCls}"
                             style="flex:1;" data-fc-id="${fc.id}" data-fc-val="true">
                       ✅ TRUE
                     </button>
-                    <button type="button" class="ww2-step-pill ${answered && ans === false ? (!fc.isTrue ? 'is-done' : 'is-active') : ''}"
+                    <button type="button" class="ww2-step-pill ${mythCls}"
                             style="flex:1;" data-fc-id="${fc.id}" data-fc-val="false">
                       🚫 MYTH
                     </button>
                   </div>
                   ${
                     answered
-                      ? `<div style="font-size:0.76rem;color:${right ? '#bbf7d0' : '#fde68a'};line-height:1.35;">
-                           ${right ? '🌟 Spot-on! ' : '💡 Look closely: '}${fc.note}
+                      ? `<div style="font-size:0.76rem;color:${right ? '#bbf7d0' : '#fecaca'};line-height:1.35;">
+                           ${right ? '🌟 Spot-on! ' : '❌ Not quite — tap the other stamp! '}${fc.note}
                          </div>`
                       : ''
                   }
@@ -1050,8 +1203,26 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
 
         ${
           medalUnlocked
-            ? `<div style="margin-top:10px;padding:11px 14px;border-radius:11px;background:linear-gradient(90deg,rgba(22,163,74,0.28),rgba(217,119,6,0.28));border:2px solid #fde047;color:#fef9c3;font-size:0.86rem;font-weight:800;">
-                 🏅 <strong>Junior Home Front Historian Medal Awarded!</strong> Final Score: <strong>${state.score} pts</strong> — saved to your KS2 World War II Revision Arcade record!
+            ? `<div class="ww2-cert-card">
+                 <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
+                   <div style="font-size:0.94rem;font-weight:900;color:#fde047;">
+                     🏅 Junior Home Front Historian Medal Awarded! • Final Score: ${state.score} pts
+                   </div>
+                   <button type="button" class="ww2-icon-btn" id="ww2-print-cert-btn" style="border-color:#fde047;color:#fef08a;">
+                     <i class="fa-solid fa-print"></i> <span>Print Certificate</span>
+                   </button>
+                 </div>
+                 <div class="ww2-cert-pillars">
+                   ${pillars
+                     .map(
+                       (p) =>
+                         `<span class="ww2-cert-pill ${p.ok ? '' : 'is-pending'}">${p.ok ? '✓' : '○'} ${p.label}</span>`,
+                     )
+                     .join('')}
+                 </div>
+                 <div style="font-size:0.78rem;color:#dcfce7;">
+                   Saved automatically to your KS2 World War II Revision Arcade Personal Best!
+                 </div>
                </div>`
             : ''
         }
@@ -1096,6 +1267,18 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       return `
         <div class="ww2-body">
           <div class="ww2-speech-box" id="ww2-speech-slot">${renderSpeechInnerHTML()}</div>
+          <div class="ww2-veday-banner" id="ww2-fx-stage">
+            <img src="/images/arcade/ww2_homefront/scene_5_bletchley_veday.webp"
+                 alt="Sunlit 8 May 1945 VE Day celebration with red, white, and blue bunting and children waving Union flags" />
+            <div class="ww2-veday-banner-overlay">
+              <div style="font-size:0.7rem;font-weight:900;color:#fde047;letter-spacing:1px;text-transform:uppercase;">
+                🎊 8 MAY 1945 • VICTORY IN EUROPE DAY &amp; ARCHIVE FINALE
+              </div>
+              <div style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(1.05rem,2.2vw,1.45rem);font-weight:900;color:#ffffff;">
+                Six Years After Platform Four: What Happened Next?
+              </div>
+            </div>
+          </div>
           <div id="ww2-beat5-slot">${renderBeat5InnerHTML()}</div>
         </div>
       `;
@@ -1467,14 +1650,15 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   }
 
   function renderBeat0SubtabInnerHTML() {
+    const totalRoutes = data.evacuationRoutes.length;
     return `
       <button type="button" class="ww2-step-pill ${state.beat0Tab === 'pack' ? 'is-active' : state.packedItems.size >= 4 ? 'is-done' : ''}" data-b0-switch="pack">
         <span class="ww2-lbl-full">🧳 Part A: Pack the 1939 Suitcase (${state.packedItems.size}/4)</span>
         <span class="ww2-lbl-short">🧳 A: Suitcase (${state.packedItems.size}/4)</span>
       </button>
       <button type="button" class="ww2-step-pill ${state.beat0Tab === 'map' ? 'is-active' : state.visitedRoutes.size >= 2 ? 'is-done' : ''}" data-b0-switch="map">
-        <span class="ww2-lbl-full">🗺️ Part B: All-UK Evacuation Map (${state.visitedRoutes.size}/6)</span>
-        <span class="ww2-lbl-short">🗺️ B: UK Map (${state.visitedRoutes.size}/6)</span>
+        <span class="ww2-lbl-full">🗺️ Part B: All-UK Evacuation Map (${state.visitedRoutes.size}/${totalRoutes})</span>
+        <span class="ww2-lbl-short">🗺️ B: UK Map (${state.visitedRoutes.size}/${totalRoutes})</span>
       </button>
     `;
   }
@@ -1489,7 +1673,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     if (state.step === 'beat0' && state.beat0Tab === 'map') {
       return `
         <span><strong>National 1939 Evacuation Map</strong> • England, Scotland, Wales &amp; NI</span>
-        <span class="ww2-caption-mid">Tap any red target city!</span>
+        <span class="ww2-caption-mid">Tap any of the 7 red target cities!</span>
       `;
     }
     if (state.step === 'beat1') {
@@ -1577,6 +1761,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     else if (sig === 'beat2') preset = 'blitz_shelter';
     else if (sig === 'beat3') preset = 'kitchen_ration';
     else if (sig === 'beat4') preset = 'bletchley_veday';
+    else if (sig === 'beat5') preset = 'veday_banner';
 
     activeFx = mountWw2HomeFrontFX(fxStage, preset, () => ({
       blackoutShut: state.blackoutShut,
@@ -1610,7 +1795,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         if (stageSlot) stageSlot.innerHTML = renderStageSceneHTML(nextSig);
         mountSceneFxIfNeeded(nextSig);
       } else {
-        // ZERO-TEARDOWN IN-PLACE UPDATES (CLS = 0, Δscroll = 0px!)
         const speechSlot = shellEl.querySelector('#ww2-speech-slot');
         if (speechSlot) speechSlot.innerHTML = renderSpeechInnerHTML();
 
@@ -1660,7 +1844,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   shellEl = stageEl.querySelector('.ww2-shell');
   scrollLock.bindShellPointerGuards(shellEl);
 
-  // Delegated click & change handlers
   shellEl.addEventListener('change', (e) => {
     const sel = e.target.closest('#ww2-mobile-step-select');
     if (sel && sel.value) {
@@ -1670,6 +1853,18 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
 
   shellEl.addEventListener('click', (e) => {
     if (!data) return;
+
+    // Replay current voice clip
+    if (e.target.closest('[data-replay-vo]')) {
+      if (state.lastVoClipId) audio.playVoice(state.lastVoClipId);
+      return;
+    }
+
+    // Print Certificate
+    if (e.target.closest('#ww2-print-cert-btn')) {
+      openPrintableCertificate();
+      return;
+    }
 
     // 1. Step navigation
     const stepBtn = e.target.closest('[data-step-jump]');
@@ -1700,8 +1895,22 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       return;
     }
 
+    // 2-Tap Reset Safeguard
     if (e.target.closest('#ww2-reset-btn')) {
-      resetAdventure();
+      if (!state.resetArmed) {
+        state.resetArmed = true;
+        audio.softWarn();
+        if (resetArmTimeout) clearTimeout(resetArmTimeout);
+        resetArmTimeout = setTimeout(() => {
+          if (unmounted) return;
+          state.resetArmed = false;
+          updateLab(false);
+        }, 3500);
+        updateLab(false);
+      } else {
+        if (resetArmTimeout) clearTimeout(resetArmTimeout);
+        resetAdventure();
+      }
       return;
     }
 
@@ -1718,7 +1927,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       return;
     }
 
-    // 2. Cover hotspots
+    // 2. Cover hotspots (5/5 uniquely voiced!)
     const covSpot = e.target.closest('[data-cover-spot]');
     if (covSpot) {
       const spot = covSpot.getAttribute('data-cover-spot');
@@ -1744,13 +1953,22 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           'All aboard the Operation Pied Piper special! Hold your little brother’s hand tight, keep your suitcase close, and wave bravely!',
           'cover_guard_whistle',
         );
-      } else if (spot === 'suitcase' || spot === 'children') {
+      } else if (spot === 'suitcase') {
         audio.suitcaseClick();
-        activeFx?.burst(58, 72, 'gold');
+        activeFx?.burst(52, 82, 'gold');
+        say(
+          'clara',
+          'Clara • Our Packed Leather Suitcase',
+          'Inside our battered brown suitcase we’ve tucked clean woollen socks, a bar of soap, and a stamped postcard ready to send Mum our safe village address!',
+          'cover_arthur_suitcase',
+        );
+      } else if (spot === 'children') {
+        audio.suitcaseClick();
+        activeFx?.burst(63, 65, 'gold');
         say(
           'clara',
           'Clara & Arthur • 1939 Evacuees',
-          'Mum pinned brown labels to our coats, hung gas-mask boxes over our shoulders, and tucked a postcard inside our suitcase!',
+          '1 September 1939! Mum pinned brown labels to our coats, handed us our gas-mask boxes, and walked us to Platform Four.',
           'cover_clara_welcome',
         );
       } else if (spot === 'warden') {
@@ -1768,7 +1986,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       return;
     }
 
-    // 3. Stage 1 (Beat 0): Suitcase Packing & All-UK Map
+    // 3. Stage 1 (Beat 0): Suitcase Packing & 7-Region UK Map
     const b0Switch = e.target.closest('[data-b0-switch]');
     if (b0Switch) {
       const nextTab = b0Switch.getAttribute('data-b0-switch');
@@ -1778,7 +1996,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         say(
           'guard',
           '1939 All-UK Evacuation Atlas',
-          'Evacuation happened right across the UK! Tap London, the Midlands, Liverpool, Glasgow, Tyneside, or the South Coast.',
+          'Evacuation happened right across the UK! Tap London, the Midlands, Liverpool, Glasgow, Tyneside, Belfast, or the South Coast.',
           'beat0_uk_map_intro',
         );
       }
@@ -1790,7 +2008,10 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     const b0Extra = e.target.closest('[data-b0-extra]');
     if (b0Extra) {
       const k = b0Extra.getAttribute('data-b0-extra');
-      state.stationExtrasFound.add(k);
+      if (!state.stationExtrasFound.has(k)) {
+        state.stationExtrasFound.add(k);
+        addPoints(5);
+      }
       if (k === 'guard') {
         audio.trainWhistle();
         activeFx?.burst(15, 48, 'gold');
@@ -1806,7 +2027,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         say(
           'clara',
           'Clara • Carriage Window',
-          'Whole school classes travelled together with their teachers—nobody knew which village family would pick them at the Billeting Hall!',
+          'Whole school classes travelled together with their teachers, waving bravely without knowing which village family would choose them!',
+          'beat0_carriage_wave',
         );
       }
       saveSession();
@@ -1837,7 +2059,14 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         audio.suitcaseClick();
         activeFx?.burst(64, 76, 'green');
 
-        if (state.packedItems.size >= 4) {
+        const itemVoMap = {
+          gasmask: 'beat0_gasmask_packed',
+          clothes_wash: 'beat0_clothes_packed',
+          sandwiches: 'beat0_sandwiches_packed',
+          teddy: 'beat0_teddy_packed',
+        };
+
+        if (state.packedItems.size >= 4 && wasNew) {
           audio.chimeSuccess();
           say(
             'clara',
@@ -1845,10 +2074,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             'All four official Ministry items packed! Now tap Part B: All-UK Evacuation Map to trace steam trains right across Britain!',
             'beat0_suitcase_ready',
           );
-        } else if (item.id === 'gasmask') {
-          say('clara', 'Clara • Gas-Mask Box', item.note, 'beat0_gasmask_packed');
         } else {
-          say('clara', `Packed: ${item.label}`, item.note);
+          say('clara', `Packed: ${item.label}`, item.note, itemVoMap[item.id] || null);
         }
       }
       saveSession();
@@ -1878,7 +2105,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       return;
     }
 
-    // 4. Stage 2 (Beat 1): Country Billet & Kindertransport
+    // 4. Stage 2 (Beat 1): Country Billet & Kindertransport (5/5 uniquely voiced!)
     const billetSpot = e.target.closest('[data-billet-spot]');
     if (billetSpot) {
       const s = billetSpot.getAttribute('data-billet-spot');
@@ -1887,12 +2114,20 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         addPoints(6);
       }
       audio.suitcaseClick();
-      if (s === 'farmer' || s === 'horse') {
-        activeFx?.burst(26, 42, 'gold');
+      if (s === 'horse') {
+        activeFx?.burst(16, 36, 'gold');
+        say(
+          'farmer',
+          'Mr Oakley • Captain the Shire Horse',
+          'Steady there, old Captain! Many city youngsters stepping off the train had never seen a real Shire horse, cow, or laying hen in their lives!',
+          'beat1_horse_captain',
+        );
+      } else if (s === 'farmer') {
+        activeFx?.burst(34, 46, 'gold');
         say(
           'farmer',
           'Mr Oakley • Meadowbrook Farm',
-          'Many city evacuees had never seen a real cow, sheep, or Shire horse before—country life was a huge shock after smoky city streets!',
+          'Welcome to Meadowbrook Farm! Mind old Captain the Shire horse—he loves a crisp orchard apple, and Mrs Oakley has warm bread waiting indoors.',
           'beat1_farmer_welcome',
         );
       } else if (s === 'lotte') {
@@ -1916,7 +2151,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         say(
           'farmer',
           'Mr Oakley • Orchard Harvest',
-          'Evacuees helped pick orchard apples, collect hens’ eggs, and bring in the autumn harvest while farm workers served away!',
+          'With young farmhands away in uniform, evacuees pitched right in—picking orchard apples, collecting warm eggs, and bringing in the harvest!',
+          'beat1_orchard_harvest',
         );
       }
       saveSession();
@@ -1973,7 +2209,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       return;
     }
 
-    // 5. Stage 3 (Beat 2): Blitz Night & Anderson Shelter Cutaway
+    // 5. Stage 3 (Beat 2): Blitz Night & Anderson Shelter Cutaway (4/4 voiced!)
     const blitzBtn = e.target.closest('[data-blitz-check]');
     if (blitzBtn) {
       const checkId = blitzBtn.getAttribute('data-blitz-check');
@@ -1997,7 +2233,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         say(
           'warden',
           'ARP Warden Miller • Blast-Taped Windows',
-          'Crisscross sticky paper tape wouldn’t stop a direct hit, yet it helped stop window panes shattering into flying glass splinters!',
+          'Crisscross sticky paper tape won’t stop a direct hit, youngsters, yet it helps stop glass panes shattering into dangerous flying splinters!',
+          'beat2_window_tape',
         );
       } else if (checkId === 'stirrup') {
         audio.suitcaseClick();
@@ -2045,11 +2282,14 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       return;
     }
 
-    // 6. Stage 4 (Beat 3): 1941 Village Grocer & Ration Counter
+    // 6. Stage 4 (Beat 3): 1941 Village Grocer & Ration Counter (7/7 voiced!)
     const b3Extra = e.target.closest('[data-b3-extra]');
     if (b3Extra) {
       const k = b3Extra.getAttribute('data-b3-extra');
-      state.rationExtrasFound.add(k);
+      if (!state.rationExtrasFound.has(k)) {
+        state.rationExtrasFound.add(k);
+        addPoints(5);
+      }
       audio.suitcaseClick();
       if (k === 'book' || k === 'grocer') {
         activeFx?.burst(32, 58, 'gold');
@@ -2064,7 +2304,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         say(
           'grocer',
           '1940s Kitchen Wireless • “The Kitchen Front”',
-          'Every morning at 8:15 AM, BBC radio broadcast clever wartime recipes like carrot fudge, eggless sponge, and Lord Woolton Pie!',
+          'Every morning at 8:15 AM, families gathered round the wireless for The Kitchen Front to hear clever recipes like carrot fudge and eggless sponge!',
+          'beat3_kitchen_wireless',
         );
       }
       saveSession();
@@ -2088,7 +2329,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       } else if (id === 'egg' || id === 'butter_bacon') {
         say('grocer', `Weighed: ${item.name}`, item.fact, 'beat3_egg_butter');
       } else {
-        say('grocer', `Weighed: ${item.name}`, item.fact);
+        say('grocer', `Weighed: ${item.name}`, item.fact, 'beat3_sugar_tea');
       }
       saveSession();
       updateLab(false);
@@ -2118,7 +2359,33 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       return;
     }
 
-    // 7. Stage 5 (Beat 4): Women at War & Bletchley Park Hut
+    // 7. Stage 5 (Beat 4): Women at War & Bletchley Park 3-Rotor + Cipher Desk
+    const rotorBtn = e.target.closest('[data-rotor-idx]');
+    if (rotorBtn) {
+      const rIdx = Number(rotorBtn.getAttribute('data-rotor-idx'));
+      const dir = Number(rotorBtn.getAttribute('data-rotor-dir')) || 1;
+      const wheel = ROTOR_WHEELS[rIdx];
+      if (wheel) {
+        const curPos = Math.max(0, wheel.indexOf(state.rotors[rIdx]));
+        state.rotors[rIdx] = wheel[(curPos + dir + wheel.length) % wheel.length];
+        audio.morseBeep();
+        if (areRotorsLocked() && !state.rotorsRewarded) {
+          state.rotorsRewarded = true;
+          addPoints(15);
+          audio.chimeSuccess();
+          activeFx?.burst(54, 67, 'green');
+          say(
+            'wren',
+            'Leading Wren Miss Bennett • Rotors Locked (B - R - K)!',
+            'Clicks into place! All three brass rotors match today’s weather crib—now choose what secret messages Britain can read!',
+          );
+        }
+        saveSession();
+        updateLab(false);
+      }
+      return;
+    }
+
     const blSpot = e.target.closest('[data-bletchley-spot]');
     if (blSpot) {
       const s = blSpot.getAttribute('data-bletchley-spot');
@@ -2148,7 +2415,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         say(
           'clara',
           'Through the Hut Doors • 8 May 1945',
-          'Finish cracking our 3-step convoy alert so everyone can step out into the sunshine for VE Day!',
+          'Red, white, and blue bunting is going up in the sunshine! Crack our 3-step convoy alert so we can celebrate Victory in Europe Day!',
+          'beat4_veday_peek',
         );
       }
       saveSession();
@@ -2164,10 +2432,23 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       const chosen = clue.options.find((o) => o.id === optId);
       if (!chosen) return;
 
+      if (clue.id === 'bc2' && chosen.correct && !areRotorsLocked()) {
+        // Auto-snap rotors if pupil clicks answer directly, or prompt gently? Let's require spinning the rotors first so they engage with the tactile dial!
+        audio.softWarn();
+        say(
+          'wren',
+          'Spin the 3 Brass Rotor Dials First!',
+          'Almost there! Use the ▲ / ▼ buttons on the Brass Rotor Dials above to lock B - R - K until the light turns green, then select the U-boat answer!',
+        );
+        updateLab(false);
+        return;
+      }
+
       if (chosen.correct) {
         state.wrongCipherOpt = '';
+        const wasNew = !state.solvedCipherIds.has(clue.id);
         state.solvedCipherIds.add(clue.id);
-        addPoints(15);
+        if (wasNew) addPoints(15);
         audio.morseBeep();
         audio.chimeSuccess();
         activeFx?.burst(54, 65, 'green');
@@ -2194,12 +2475,15 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       const val = fcBtn.getAttribute('data-fc-val') === 'true';
       const item = data.factChecks.find((x) => x.id === fcId);
       if (item) {
-        const firstTime = typeof state.factAnswers[fcId] !== 'boolean';
         state.factAnswers[fcId] = val;
         if (val === item.isTrue) {
-          if (firstTime) addPoints(12);
+          if (!state.fcCredited.has(fcId)) {
+            state.fcCredited.add(fcId);
+            addPoints(state.fcHadWrong.has(fcId) ? 6 : 12);
+          }
           audio.chimeSuccess();
         } else {
+          state.fcHadWrong.add(fcId);
           audio.softWarn();
         }
         say('clara', 'VE Day Historian Check', item.note);
@@ -2276,6 +2560,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   return () => {
     unmounted = true;
     if (shimmerTimeout) clearTimeout(shimmerTimeout);
+    if (resetArmTimeout) clearTimeout(resetArmTimeout);
     scrollLock.dispose();
     fsController.dispose();
     destroyFx();
