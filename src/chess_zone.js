@@ -26,6 +26,11 @@ import {
 } from './chess_realtime.js';
 import { verifyStaffPasskeySync } from './engine/staff_auth.js';
 import QRCode from 'qrcode';
+import {
+  createDefaultClubModesState,
+  renderClubGameModesView,
+  registerClubGameModeHandlers,
+} from './chess_club_modes.js';
 
 export function isChessViewActive() {
   if (typeof window === 'undefined') return false;
@@ -38,7 +43,8 @@ export function isChessViewActive() {
     if (
       document.getElementById('chess-hub-root') ||
       document.getElementById('projector-whiteboard-root') ||
-      document.getElementById('ko-fullscreen-arena')
+      document.getElementById('ko-fullscreen-arena') ||
+      document.getElementById('club-modes-tv-fullscreen')
     ) {
       return true;
     }
@@ -648,8 +654,12 @@ let chessState = {
   adjudicationCalc: { white: 0, black: 0 },
   autoRePairEnabled: true,
   sessionActive: false,
-  sessionTimeRemaining: 0,
+  sessionTimeRemaining: 600,
+  roundTimerDuration: 600,
+  roundTimerExpiredAlert: false,
   sessionTimerRunning: false,
+  undoStack: [],
+  clubModes: createDefaultClubModesState(),
   activePuzzleBoard: null,
   activePuzzleIndex: 0,
   selectedSquare: null,
@@ -659,29 +669,115 @@ let chessState = {
   puzzleFeedback: null,
 };
 
+const UNDO_STORAGE_KEY = 'history_chess_undo_stack_v1';
+const MAX_UNDO_STEPS = 25;
+
+function loadChessUndoStack() {
+  if (typeof window === 'undefined' || !window.sessionStorage) return;
+  try {
+    const raw = window.sessionStorage.getItem(UNDO_STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) {
+        chessState.undoStack = parsed.slice(-MAX_UNDO_STEPS);
+      }
+    }
+  } catch (e) {}
+}
+
+function persistChessUndoStack() {
+  if (typeof window === 'undefined' || !window.sessionStorage) return;
+  try {
+    window.sessionStorage.setItem(
+      UNDO_STORAGE_KEY,
+      JSON.stringify((chessState.undoStack || []).slice(-MAX_UNDO_STEPS)),
+    );
+  } catch (e) {}
+}
+
+export function pushChessUndoSnapshot(label = 'Match result') {
+  try {
+    if (!Array.isArray(chessState.undoStack)) chessState.undoStack = [];
+    const snapshot = JSON.parse(
+      JSON.stringify({
+        label,
+        timestamp: Date.now(),
+        players: chessState.players || [],
+        matches: chessState.matches || [],
+        checkedInPlayerIds: chessState.checkedInPlayerIds || [],
+        activePairings: chessState.activePairings || [],
+        knockoutBracket: chessState.knockoutBracket || null,
+        clubModes: chessState.clubModes || null,
+      }),
+    );
+    chessState.undoStack.push(snapshot);
+    if (chessState.undoStack.length > MAX_UNDO_STEPS) {
+      chessState.undoStack = chessState.undoStack.slice(-MAX_UNDO_STEPS);
+    }
+    persistChessUndoStack();
+  } catch (err) {
+    console.warn('Undo snapshot skipped:', err);
+  }
+}
+
+export function getLastUndoLabel() {
+  if (!Array.isArray(chessState.undoStack) || chessState.undoStack.length === 0) return '';
+  return chessState.undoStack[chessState.undoStack.length - 1]?.label || 'Last action';
+}
+
+export function playTournamentBellChime() {
+  if (typeof window === 'undefined') return;
+  try {
+    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+    if (!AudioCtx) return;
+    const ctx = new AudioCtx();
+    const notes = [
+      { freq: 659.25, start: 0, dur: 0.35 },
+      { freq: 783.99, start: 0.22, dur: 0.35 },
+      { freq: 1046.5, start: 0.45, dur: 0.75 },
+    ];
+    notes.forEach(({ freq, start, dur }) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'triangle';
+      osc.frequency.setValueAtTime(freq, ctx.currentTime + start);
+      gain.gain.setValueAtTime(0.001, ctx.currentTime + start);
+      gain.gain.exponentialRampToValueAtTime(0.28, ctx.currentTime + start + 0.03);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + start + dur);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(ctx.currentTime + start);
+      osc.stop(ctx.currentTime + start + dur + 0.05);
+    });
+  } catch (e) {}
+}
+
 // Timer State Map for Historical Drills
 const drillTimers = {};
 
-// Toast feedback system
+// Toast feedback system — Single non-blocking bottom-center pill (never stacks over right-hand TV buttons or chessboards!)
 export function showChessToast(message, type = 'success') {
   let toastCont = document.getElementById('chess-toast-container');
   if (!toastCont) {
     toastCont = document.createElement('div');
     toastCont.id = 'chess-toast-container';
     toastCont.style.cssText =
-      'position: fixed; top: 80px; right: 20px; z-index: 100000; display: flex; flex-direction: column; gap: 8px; pointer-events: none;';
+      'position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); z-index: 100000; display: flex; flex-direction: column; align-items: center; gap: 6px; pointer-events: none;';
     document.body.appendChild(toastCont);
   }
+
+  // Clear previous toasts immediately so rapid classroom taps never pile up on screen
+  toastCont.innerHTML = '';
 
   const toast = document.createElement('div');
   const bg =
     type === 'success'
-      ? '#10b981'
+      ? '#059669'
       : type === 'warning'
-        ? '#f59e0b'
+        ? '#d97706'
         : type === 'error'
-          ? '#ef4444'
-          : '#3b82f6';
+          ? '#dc2626'
+          : '#0284c7';
   const icon =
     type === 'success'
       ? 'fa-circle-check'
@@ -694,61 +790,82 @@ export function showChessToast(message, type = 'success') {
   toast.style.cssText = `
     background: ${bg};
     color: #ffffff;
-    padding: 10px 18px;
-    border-radius: 8px;
+    padding: 9px 20px;
+    border-radius: 999px;
+    border: 1.5px solid rgba(255,255,255,0.35);
     font-size: 0.88rem;
-    font-weight: 700;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.25);
-    display: flex;
+    font-weight: 800;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.32);
+    display: inline-flex;
     align-items: center;
     gap: 8px;
-    pointer-events: auto;
-    max-width: 380px;
+    pointer-events: none;
+    max-width: min(90vw, 620px);
     font-family: 'Outfit', sans-serif;
-    animation: fadeInDown 0.25s ease-out;
   `;
   toast.innerHTML = `<i class="fa-solid ${icon}"></i> <span>${message}</span>`;
   toastCont.appendChild(toast);
 
-  setTimeout(() => {
+  if (window.__chessToastTimer) clearTimeout(window.__chessToastTimer);
+  window.__chessToastTimer = setTimeout(() => {
     toast.style.opacity = '0';
-    toast.style.transition = 'opacity 0.3s ease';
-    setTimeout(() => toast.remove(), 300);
-  }, 2800);
+    toast.style.transition = 'opacity 0.25s ease';
+    setTimeout(() => {
+      if (toast.parentElement) toast.remove();
+    }, 260);
+  }, 2100);
 }
 window.showChessToast = showChessToast;
 
-// Global Session Clock & Auto-Ticker for Period 6
+// Global Session & Tournament Round Clock Ticker
 if (typeof window !== 'undefined' && !window.__historySessionInterval) {
   window.__historySessionInterval = setInterval(() => {
-    // Hard Guardrail: NEVER tick down or conclude session unless chess hub is active
+    // Hard Guardrail: NEVER tick down unless chess hub is active
     if (!isChessViewActive()) return;
 
     if (
       chessState &&
-      chessState.sessionActive &&
       chessState.sessionTimerRunning &&
       typeof chessState.sessionTimeRemaining === 'number' &&
       chessState.sessionTimeRemaining > 0
     ) {
       chessState.sessionTimeRemaining--;
+      const m = Math.floor(chessState.sessionTimeRemaining / 60);
+      const s = chessState.sessionTimeRemaining % 60;
+      const formatted = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+      const isUrgent = chessState.sessionTimeRemaining <= 120;
+
       const clockEl = document.getElementById('whiteboard-session-clock');
       if (clockEl) {
-        const m = Math.floor(chessState.sessionTimeRemaining / 60);
-        const s = chessState.sessionTimeRemaining % 60;
-        clockEl.textContent = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
-        if (chessState.sessionTimeRemaining <= 120) {
-          clockEl.style.color = '#f87171';
-          clockEl.style.textShadow = '0 0 20px rgba(248, 113, 113, 0.6)';
-        } else {
-          clockEl.style.color = '#4ade80';
-          clockEl.style.textShadow = '0 0 20px rgba(74, 222, 128, 0.4)';
-        }
+        clockEl.textContent = formatted;
+        clockEl.style.color = isUrgent ? '#f87171' : '#4ade80';
+        clockEl.style.textShadow = isUrgent
+          ? '0 0 20px rgba(248, 113, 113, 0.6)'
+          : '0 0 20px rgba(74, 222, 128, 0.4)';
       }
-      if (chessState.sessionTimeRemaining === 0) {
-        if (typeof window.concludePeriod6Session === 'function') {
-          window.concludePeriod6Session();
+
+      document.querySelectorAll('.chess-live-round-clock').forEach((el) => {
+        el.textContent = formatted;
+        const isDarkBg = el.getAttribute('data-dark') === 'true';
+        if (chessState.sessionTimeRemaining === 0) {
+          el.style.color = '#ef4444';
+        } else if (isUrgent) {
+          el.style.color = isDarkBg ? '#fbbf24' : '#dc2626';
+        } else {
+          el.style.color = isDarkBg ? '#4ade80' : '#0f172a';
         }
+      });
+
+      if (chessState.sessionTimeRemaining === 0) {
+        chessState.sessionTimerRunning = false;
+        chessState.roundTimerExpiredAlert = true;
+        playTournamentBellChime();
+        saveChessState();
+        renderChessHubView();
+        showChessToast(
+          '⏰ Round Time Up! Hands off pieces — score finished boards or count piece points!',
+          'warning',
+        );
       }
     }
   }, 1000);
@@ -800,15 +917,42 @@ if (typeof window !== 'undefined' && !window.__historyKeydownBound) {
     const isChessActive =
       document.getElementById('chess-hub-root') ||
       document.getElementById('ko-fullscreen-arena') ||
+      document.getElementById('club-modes-tv-fullscreen') ||
       (window.state && window.state.currentView === 'chess') ||
       (window.appStore && window.appStore.state && window.appStore.state.currentView === 'chess');
     if (!isChessActive) return;
 
-    if (e.key === 'Escape' && chessState && chessState.bracketFullscreen) {
-      if (typeof window.toggleBracketFullscreen === 'function') {
-        window.toggleBracketFullscreen(false);
+    if ((e.ctrlKey || e.metaKey) && (e.key === 'z' || e.key === 'Z') && !e.shiftKey) {
+      if (chessState && chessState.userRole === 'teacher' && typeof window.undoTournamentAction === 'function') {
+        e.preventDefault();
+        window.undoTournamentAction();
       }
       return;
+    }
+
+    if (e.key === 'Escape') {
+      const openModal = document.getElementById('chess-modal-container');
+      if (openModal && openModal.innerHTML.trim() !== '') {
+        if (typeof window.closeChessModal === 'function') window.closeChessModal();
+        return;
+      }
+      if (chessState && chessState.showAdjudicationModal) {
+        chessState.showAdjudicationModal = false;
+        renderChessHubView();
+        return;
+      }
+      if (chessState && chessState.bracketFullscreen) {
+        if (typeof window.toggleBracketFullscreen === 'function') {
+          window.toggleBracketFullscreen(false);
+        }
+        return;
+      }
+      if (chessState && chessState.clubModes && chessState.clubModes.tvFullscreen) {
+        if (typeof window.toggleClubModesFullscreen === 'function') {
+          window.toggleClubModesFullscreen(false);
+        }
+        return;
+      }
     }
 
     if (
@@ -880,6 +1024,9 @@ function initChessState(forceClean = false) {
   }
 
   let loaded = false;
+  if (!Array.isArray(chessState.undoStack) || chessState.undoStack.length === 0) {
+    loadChessUndoStack();
+  }
 
   // 0. 1-Click URL Sync Key Auto-Importer (?chess_sync=...)
   if (typeof window !== 'undefined' && window.location.search) {
@@ -893,10 +1040,18 @@ function initChessState(forceClean = false) {
         const jsonStr = decodeURIComponent(atob(b64));
         const syncData = JSON.parse(jsonStr);
         if (Array.isArray(syncData.players) && syncData.players.length > 0) {
+          if (syncData.realNames && typeof syncData.realNames === 'object') {
+            try {
+              localStorage.setItem('chess_local_roster_names', JSON.stringify(syncData.realNames));
+            } catch (e) {}
+          }
           chessState.players = syncData.players;
           chessState.matches = Array.isArray(syncData.matches) ? syncData.matches : [];
           chessState.checkedInPlayerIds = Array.isArray(syncData.checkedInPlayerIds)
             ? syncData.checkedInPlayerIds
+            : [];
+          chessState.activePairings = Array.isArray(syncData.activePairings)
+            ? syncData.activePairings
             : [];
           chessState.knockoutBracket = syncData.knockoutBracket || null;
           loaded = true;
@@ -905,7 +1060,7 @@ function initChessState(forceClean = false) {
           window.history.replaceState({}, document.title, cleanUrl);
           setTimeout(() => {
             showChessToast(
-              `🎉 Synchronized ${chessState.players.length} pupils via 1-Click Sync Link!`,
+              `🎉 Loaded ${chessState.players.length} pupils & tournament progress via Sync Link!`,
               'success',
             );
           }, 400);
@@ -944,6 +1099,14 @@ function initChessState(forceClean = false) {
           : [];
         if (parsed.leagueTableViewMode) chessState.leagueTableViewMode = parsed.leagueTableViewMode;
         chessState.knockoutBracket = parsed.knockoutBracket || null;
+        if (!chessState.__clubModesHydrated && parsed.clubModes && typeof parsed.clubModes === 'object') {
+          chessState.clubModes = {
+            ...createDefaultClubModesState(),
+            ...parsed.clubModes,
+            tvFullscreen: Boolean(chessState.clubModes?.tvFullscreen),
+          };
+          chessState.__clubModesHydrated = true;
+        }
         if (parsed.autoRePairEnabled !== undefined)
           chessState.autoRePairEnabled = parsed.autoRePairEnabled;
         if (parsed.sessionActive !== undefined) chessState.sessionActive = parsed.sessionActive;
@@ -1022,6 +1185,11 @@ function initChessState(forceClean = false) {
 
   // Auto-sort active roster strictly by points (largest to smallest) on load
   autoSortPlayersByPoints();
+
+  // Auto-heal / reconcile any active knockout tournament bracket (including R1 bye -> Plate routing)
+  if (chessState.knockoutBracket && typeof reconcileKnockoutProgression === 'function') {
+    reconcileKnockoutProgression(chessState.knockoutBracket);
+  }
 
   // 4. Fallback check from IndexedDB offline database if still empty
   if (!loaded && typeof window !== 'undefined') {
@@ -1109,6 +1277,9 @@ function saveChessState(isIntentionalReset = false) {
     pairingsHistory: (chessState.pairingsHistory || []).slice(-10),
     leagueTableViewMode: chessState.leagueTableViewMode || 'matrix',
     knockoutBracket: chessState.knockoutBracket,
+    clubModes: chessState.clubModes
+      ? { ...chessState.clubModes, tvFullscreen: false, chaosSpinning: false }
+      : null,
     autoRePairEnabled: chessState.autoRePairEnabled,
     sessionActive: chessState.sessionActive,
     sessionTimeRemaining: chessState.sessionTimeRemaining,
@@ -1141,10 +1312,12 @@ export function calculatePlayerPoints(p) {
   const draws = p.drawn || 0;
   const losses = p.lost || 0;
   const byes = p.byesReceived || 0;
+  const bonus = p.bonusPoints || 0;
   return (
     wins * SCORING_RULES.WIN +
     draws * SCORING_RULES.DRAW +
-    (losses + byes) * SCORING_RULES.PARTICIPATION
+    (losses + byes) * SCORING_RULES.PARTICIPATION +
+    bonus
   );
 }
 
@@ -1230,6 +1403,10 @@ function calculateHouseTotals() {
         totals[bH].draws++;
         totals[bH].games++;
       }
+    } else if (m.result === 'BONUS') {
+      if (totals[wH]) {
+        totals[wH].points += Number(m.bonusPoints || 0);
+      }
     }
   });
 
@@ -1275,6 +1452,15 @@ export function renderChessHubView() {
   // Full-Screen Tournament Bracket Arena
   if (chessState.bracketFullscreen && chessState.knockoutBracket) {
     container.innerHTML = renderKnockoutFullscreenArena(sortedHouses);
+    return;
+  }
+
+  // Full-Screen TV Club Game Modes Arena
+  if (chessState.clubModes && chessState.clubModes.tvFullscreen) {
+    container.innerHTML = renderClubGameModesView(chessState, {
+      getPlayerButtonShortName,
+      sortedHouses,
+    });
     return;
   }
 
@@ -1430,6 +1616,9 @@ export function renderChessHubView() {
           <button id="tab-btn-knockout" type="button" onclick="window.switchChessTab('knockout')" style="${getTabStyle(currentTab === 'knockout')}">
             <span>👑</span> Tournament Cup ${chessState.knockoutBracket ? `<span style="background: ${currentTab === 'knockout' ? 'rgba(255,255,255,0.25)' : '#fef3c7'}; color: ${currentTab === 'knockout' ? '#ffffff' : '#b45309'}; padding: 1px 6px; border-radius: 10px; font-size: 0.68rem; font-weight: 800;">Live</span>` : ''}
           </button>
+          <button id="tab-btn-modes" type="button" onclick="window.switchChessTab('modes')" style="${currentTab === 'modes' ? 'background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%); color: #ffffff; border: 1.5px solid #c084fc; font-weight: 900; padding: 6px 13px; border-radius: 7px; font-size: 0.78rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);' : 'background: linear-gradient(135deg, #faf5ff 0%, #fdf2f8 100%); color: #7c3aed; border: 1.5px solid #d8b4fe; font-weight: 900; padding: 6px 13px; border-radius: 7px; font-size: 0.78rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;'}">
+            <span>🎮</span> Club Game Modes <span style="background: ${currentTab === 'modes' ? 'rgba(255,255,255,0.25)' : '#f3e8ff'}; color: ${currentTab === 'modes' ? '#ffffff' : '#6b21a8'}; padding: 1px 6px; border-radius: 10px; font-size: 0.68rem; font-weight: 900;">7 New!</span>
+          </button>
         </div>
 
         ${
@@ -1448,8 +1637,8 @@ export function renderChessHubView() {
       <!-- Championship Podium (Top 3 Contenders - Visible on Ladder tab) -->
       ${currentTab === 'ladder' ? renderChampionshipPodium(filteredPlayers) : ''}
 
-      <!-- Teacher Quick Desk (1-Tap Match & Points Logger - Authenticated Teachers Only) -->
-      ${chessState.userRole === 'teacher' && chessState.showQuickDesk ? renderTeacherQuickDeskSection(filteredPlayers) : ''}
+  <!-- Teacher Quick Desk (1-Tap Match & Points Logger - Authenticated Teachers Only, hidden inside Club Game Modes to keep TV clean) -->
+      ${chessState.userRole === 'teacher' && chessState.showQuickDesk && currentTab !== 'modes' ? renderTeacherQuickDeskSection(filteredPlayers) : ''}
 
       <!-- House Filter Controls Bar (Visible on Ladder & Cross-Table tabs) -->
       ${
@@ -1491,6 +1680,7 @@ export function renderChessHubView() {
         ${renderActiveTabContent(filteredPlayers)}
       </div>
 
+      ${renderAdjudicationModalOverlay()}
     </div>
   `;
 
@@ -1506,6 +1696,13 @@ function renderActiveTabContent(filteredPlayers) {
     return renderLeagueTableTab(filteredPlayers);
   } else if (tab === 'knockout') {
     return renderKnockoutTab();
+  } else if (tab === 'modes') {
+    const houseTotals = calculateHouseTotals();
+    const sortedHouses = Object.values(houseTotals).sort((a, b) => b.points - a.points);
+    return renderClubGameModesView(chessState, {
+      getPlayerButtonShortName,
+      sortedHouses,
+    });
   } else {
     return renderLadderTab(filteredPlayers);
   }
@@ -4245,7 +4442,8 @@ if (typeof window !== 'undefined') {
   };
 
   window.fitKnockoutBracket = function () {
-    const wrap = document.getElementById('ko-bracket-scroll-wrap');
+    const fsBody = document.getElementById('ko-fullscreen-scroll-body');
+    const wrap = document.getElementById('ko-bracket-scroll-wrap') || fsBody;
     const stage = document.getElementById('ko-bracket-zoom-stage');
     const goldTree = document.getElementById('ko-gold-tree');
     if (!wrap || !stage) {
@@ -4255,9 +4453,30 @@ if (typeof window !== 'undefined') {
     stage.style.zoom = '1';
     const targetEl = goldTree || stage;
     const naturalW = targetEl.scrollWidth || 940;
-    const availW = Math.max(320, wrap.clientWidth - 12);
+    const availW = Math.max(320, (fsBody ? fsBody.clientWidth - 52 : wrap.clientWidth - 12));
     const fitPct = Math.max(55, Math.min(135, Math.floor((availW / naturalW) * 100)));
     applyBracketZoomInPlace(fitPct);
+  };
+
+  window.scrollBracketViewport = function (dy = 0, dx = 0) {
+    const fsBody = document.getElementById('ko-fullscreen-scroll-body');
+    if (fsBody) {
+      fsBody.scrollBy({ top: dy, left: dx, behavior: 'smooth' });
+      return;
+    }
+    const wrap = document.getElementById('ko-bracket-scroll-wrap');
+    if (wrap && dx !== 0) {
+      wrap.scrollBy({ left: dx, behavior: 'smooth' });
+    }
+    if (dy !== 0) {
+      window.scrollBy({ top: dy, behavior: 'smooth' });
+    }
+  };
+
+  window.jumpToBracketSection = function (sectionId) {
+    const el = document.getElementById(sectionId);
+    if (!el) return;
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   window.setBracketTierFilter = function (tier) {
@@ -4291,7 +4510,8 @@ if (typeof window !== 'undefined') {
     if (next) {
       setTimeout(() => {
         if (typeof window.fitKnockoutBracket === 'function') {
-          const wrap = document.getElementById('ko-bracket-scroll-wrap');
+          const fsBody = document.getElementById('ko-fullscreen-scroll-body');
+          const wrap = fsBody || document.getElementById('ko-bracket-scroll-wrap');
           const tree = document.getElementById('ko-gold-tree');
           if (wrap && tree && tree.scrollWidth > wrap.clientWidth) {
             window.fitKnockoutBracket();
@@ -4303,17 +4523,39 @@ if (typeof window !== 'undefined') {
 
   if (!window.__koZoomPanBound) {
     window.__koZoomPanBound = true;
-    let isDraggingBracket = false;
+    let panPointerId = null;
+    let panCandidate = false;
+    let panActivated = false;
+    let suppressNextClickUntil = 0;
     let dragStartX = 0;
     let dragStartY = 0;
     let startScrollLeft = 0;
     let startScrollTop = 0;
+    let activeHorizEl = null;
+    let activeVertEl = null;
+
+    // Suppress accidental button click right after a touch/mouse drag-pan gesture on smartboards
+    window.addEventListener(
+      'click',
+      (e) => {
+        if (Date.now() < suppressNextClickUntil) {
+          e.preventDefault();
+          e.stopPropagation();
+          suppressNextClickUntil = 0;
+        }
+      },
+      true,
+    );
 
     window.addEventListener(
       'wheel',
       (e) => {
-        const wrap = e.target && e.target.closest && e.target.closest('#ko-bracket-scroll-wrap');
-        if (!wrap) return;
+        const inBracket =
+          e.target &&
+          e.target.closest &&
+          (e.target.closest('#ko-fullscreen-scroll-body') ||
+            e.target.closest('#ko-bracket-scroll-wrap'));
+        if (!inBracket) return;
         if (e.ctrlKey || e.metaKey) {
           e.preventDefault();
           window.adjustBracketZoom(e.deltaY < 0 ? 8 : -8);
@@ -4322,35 +4564,67 @@ if (typeof window !== 'undefined') {
       { passive: false },
     );
 
-    window.addEventListener('mousedown', (e) => {
+    // Unified Pointer Drag-to-Pan: works anywhere on big classroom Touch TVs (HID mouse, pen, or touch)
+    window.addEventListener('pointerdown', (e) => {
+      if (e.button !== undefined && e.button !== 0) return;
+      const fsBody =
+        e.target && e.target.closest && e.target.closest('#ko-fullscreen-scroll-body');
       const wrap = e.target && e.target.closest && e.target.closest('#ko-bracket-scroll-wrap');
-      if (!wrap) return;
-      if (e.target.closest('button, a, select, input')) return;
-      isDraggingBracket = true;
+      if (!fsBody && !wrap) return;
+      if (e.target.closest('input, select, textarea')) return;
+
+      // For native finger touch on modern browsers, CSS touch-action: pan-x pan-y handles momentum scroll natively;
+      // for smartboards sending mouse/pen events (or if browser doesn't scroll), pointer pan handles both X and Y!
+      if (e.pointerType === 'touch') return;
+
+      panPointerId = e.pointerId;
+      panCandidate = true;
+      panActivated = false;
       dragStartX = e.clientX;
       dragStartY = e.clientY;
-      startScrollLeft = wrap.scrollLeft;
-      startScrollTop = wrap.scrollTop;
-      wrap.style.cursor = 'grabbing';
+      activeHorizEl = fsBody || wrap;
+      activeVertEl = fsBody || document.scrollingElement || document.documentElement;
+      startScrollLeft = activeHorizEl ? activeHorizEl.scrollLeft : 0;
+      startScrollTop = activeVertEl ? activeVertEl.scrollTop : 0;
     });
 
-    window.addEventListener('mousemove', (e) => {
-      if (!isDraggingBracket) return;
-      const wrap = document.getElementById('ko-bracket-scroll-wrap');
-      if (!wrap) {
-        isDraggingBracket = false;
+    window.addEventListener('pointermove', (e) => {
+      if (!panCandidate || e.pointerId !== panPointerId) return;
+      const dx = e.clientX - dragStartX;
+      const dy = e.clientY - dragStartY;
+
+      if (!panActivated) {
+        if (Math.hypot(dx, dy) < 8) return;
+        panActivated = true;
+        if (activeHorizEl) activeHorizEl.style.cursor = 'grabbing';
+      }
+
+      if (activeHorizEl) {
+        activeHorizEl.scrollLeft = startScrollLeft - dx;
+      }
+      if (activeVertEl) {
+        activeVertEl.scrollTop = startScrollTop - dy;
+      }
+    });
+
+    const endBracketPan = (e) => {
+      if (!panCandidate) return;
+      if (e && e.pointerId !== undefined && panPointerId !== null && e.pointerId !== panPointerId) {
         return;
       }
-      wrap.scrollLeft = startScrollLeft - (e.clientX - dragStartX);
-      wrap.scrollTop = startScrollTop - (e.clientY - dragStartY);
-    });
+      if (panActivated) {
+        suppressNextClickUntil = Date.now() + 260;
+        if (activeHorizEl) activeHorizEl.style.cursor = 'grab';
+      }
+      panCandidate = false;
+      panActivated = false;
+      panPointerId = null;
+      activeHorizEl = null;
+      activeVertEl = null;
+    };
 
-    window.addEventListener('mouseup', () => {
-      if (!isDraggingBracket) return;
-      isDraggingBracket = false;
-      const wrap = document.getElementById('ko-bracket-scroll-wrap');
-      if (wrap) wrap.style.cursor = 'grab';
-    });
+    window.addEventListener('pointerup', endBracketPan);
+    window.addEventListener('pointercancel', endBracketPan);
   }
 }
 
@@ -4371,50 +4645,250 @@ function renderBracketZoomControlsHTML(isFullscreen = false) {
   `;
 }
 
+function renderUndoAndSaveButtonsHTML(isFullscreen = false) {
+  if (chessState.userRole !== 'teacher') return '';
+  const undoCount = Array.isArray(chessState.undoStack) ? chessState.undoStack.length : 0;
+  const lastLabel = getLastUndoLabel();
+  const hasUndo = undoCount > 0;
+
+  return `
+    <button type="button" onclick="window.undoTournamentAction()" ${!hasUndo ? 'disabled' : ''} style="background: ${hasUndo ? (isFullscreen ? '#f59e0b' : '#fef3c7') : (isFullscreen ? '#1e293b' : '#f8fafc')}; color: ${hasUndo ? (isFullscreen ? '#0f172a' : '#92400e') : '#94a3b8'}; border: 1.5px solid ${hasUndo ? '#f59e0b' : (isFullscreen ? '#334155' : '#e2e8f0')}; padding: ${isFullscreen ? '5px 10px' : '7px 12px'}; border-radius: 6px; font-weight: 800; font-size: ${isFullscreen ? '0.74rem' : '0.8rem'}; cursor: ${hasUndo ? 'pointer' : 'not-allowed'}; display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;" title="${hasUndo ? `Undo: ${lastLabel} (Ctrl+Z)` : 'Nothing to undo yet'}">
+      <span>↩️</span> Undo${hasUndo ? ` (${undoCount})` : ''}
+    </button>
+    <button type="button" onclick="window.openTournamentSaveModal()" style="background: ${isFullscreen ? '#0284c7' : '#e0f2fe'}; color: ${isFullscreen ? '#ffffff' : '#0369a1'}; border: 1.5px solid ${isFullscreen ? '#38bdf8' : '#7dd3fc'}; padding: ${isFullscreen ? '5px 10px' : '7px 12px'}; border-radius: 6px; font-weight: 800; font-size: ${isFullscreen ? '0.74rem' : '0.8rem'}; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;" title="Copy tournament save code to paste in next week (or restore saved progress)">
+      <span>💾</span> Save / Next Week
+    </button>
+  `;
+}
+
+function renderTournamentTimerBarHTML(isFullscreen = false) {
+  const secsTotal =
+    typeof chessState.sessionTimeRemaining === 'number' && chessState.sessionTimeRemaining >= 0
+      ? chessState.sessionTimeRemaining
+      : 600;
+  const m = Math.floor(secsTotal / 60);
+  const s = secsTotal % 60;
+  const formatted = `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  const isUrgent = secsTotal > 0 && secsTotal <= 120;
+  const isZero = secsTotal === 0;
+  const running = Boolean(chessState.sessionTimerRunning);
+  const isTeacher = chessState.userRole === 'teacher';
+
+  if (isFullscreen) {
+    return `
+      <div style="display: inline-flex; align-items: center; gap: 5px; background: #020617; border: 1.5px solid ${isZero ? '#ef4444' : isUrgent ? '#f59e0b' : '#334155'}; border-radius: 8px; padding: 3px 8px;">
+        <span style="font-size: 0.7rem; color: #94a3b8; font-weight: 800;">⏱</span>
+        <span class="chess-live-round-clock" data-dark="true" style="font-family: 'JetBrains Mono', monospace; font-size: 1.05rem; font-weight: 900; min-width: 52px; text-align: center; color: ${isZero ? '#ef4444' : isUrgent ? '#fbbf24' : '#4ade80'};">
+          ${formatted}
+        </span>
+        ${
+          isTeacher
+            ? `
+          <button type="button" onclick="window.toggleSessionTimer()" style="background: ${running ? '#334155' : '#16a34a'}; color: #ffffff; border: none; border-radius: 4px; padding: 3px 8px; font-size: 0.7rem; font-weight: 800; cursor: pointer;">
+            ${running ? '⏸ Pause' : '▶ Start'}
+          </button>
+          <button type="button" onclick="window.setRoundTimer(5)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; border-radius: 4px; padding: 2px 5px; font-size: 0.66rem; font-weight: 800; cursor: pointer; font-family: monospace;" title="Start 5-minute round">5m</button>
+          <button type="button" onclick="window.setRoundTimer(8)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; border-radius: 4px; padding: 2px 5px; font-size: 0.66rem; font-weight: 800; cursor: pointer; font-family: monospace;" title="Start 8-minute round">8m</button>
+          <button type="button" onclick="window.setRoundTimer(10)" style="background: #1e293b; color: #fbbf24; border: 1px solid #d97706; border-radius: 4px; padding: 2px 5px; font-size: 0.66rem; font-weight: 900; cursor: pointer; font-family: monospace;" title="Start 10-minute round">10m</button>
+          <button type="button" onclick="window.setRoundTimer(15)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; border-radius: 4px; padding: 2px 5px; font-size: 0.66rem; font-weight: 800; cursor: pointer; font-family: monospace;" title="Start 15-minute round">15m</button>
+          <button type="button" onclick="window.adjustRoundTimer(60)" style="background: #1e293b; color: #38bdf8; border: 1px solid #0284c7; border-radius: 4px; padding: 2px 5px; font-size: 0.66rem; font-weight: 800; cursor: pointer; font-family: monospace;" title="Add 1 extra minute">+1m</button>
+          <button type="button" onclick="window.openAdjudicationModal()" style="background: #78350f; color: #fde68a; border: 1px solid #d97706; border-radius: 4px; padding: 2px 6px; font-size: 0.66rem; font-weight: 800; cursor: pointer;" title="Open Piece Values & Rapid Tally Guide">⚖️ Pts</button>
+        `
+            : ''
+        }
+      </div>
+    `;
+  }
+
+  return `
+    <div style="background: #f8fafc; border: 1.5px solid ${isZero ? '#fca5a5' : isUrgent ? '#fcd34d' : '#e2e8f0'}; border-radius: 10px; padding: 9px 14px; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+      <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+        <div style="display: inline-flex; align-items: center; gap: 7px; background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 4px 12px;">
+          <span style="font-size: 0.85rem;">⏱</span>
+          <span style="font-size: 0.72rem; font-weight: 800; color: #64748b; text-transform: uppercase;">Round Timer:</span>
+          <span class="chess-live-round-clock" data-dark="false" style="font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; font-weight: 900; color: ${isZero ? '#dc2626' : isUrgent ? '#d97706' : '#0f172a'}; min-width: 58px; text-align: center;">
+            ${formatted}
+          </span>
+        </div>
+        ${
+          isTeacher
+            ? `
+          <button type="button" onclick="window.toggleSessionTimer()" style="background: ${running ? '#334155' : '#16a34a'}; color: #ffffff; border: none; border-radius: 6px; padding: 6px 12px; font-size: 0.78rem; font-weight: 800; cursor: pointer;">
+            ${running ? '⏸ Pause' : '▶ Start Round'}
+          </button>
+          <button type="button" onclick="window.resetSessionTimer()" style="background: #ffffff; color: #475569; border: 1px solid #cbd5e1; border-radius: 6px; padding: 6px 9px; font-size: 0.74rem; font-weight: 700; cursor: pointer;" title="Reset round clock">
+            ↺ Reset
+          </button>
+        `
+            : ''
+        }
+      </div>
+
+      ${
+        isTeacher
+          ? `
+        <div style="display: flex; align-items: center; gap: 5px; flex-wrap: wrap;">
+          <span style="font-size: 0.72rem; font-weight: 700; color: #64748b;">Presets:</span>
+          <button type="button" onclick="window.setRoundTimer(5)" style="background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; border-radius: 5px; padding: 4px 8px; font-size: 0.74rem; font-weight: 800; cursor: pointer; font-family: monospace;">5m</button>
+          <button type="button" onclick="window.setRoundTimer(8)" style="background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; border-radius: 5px; padding: 4px 8px; font-size: 0.74rem; font-weight: 800; cursor: pointer; font-family: monospace;">8m</button>
+          <button type="button" onclick="window.setRoundTimer(10)" style="background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; border-radius: 5px; padding: 4px 8px; font-size: 0.74rem; font-weight: 900; cursor: pointer; font-family: monospace;">10m</button>
+          <button type="button" onclick="window.setRoundTimer(12)" style="background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; border-radius: 5px; padding: 4px 8px; font-size: 0.74rem; font-weight: 800; cursor: pointer; font-family: monospace;">12m</button>
+          <button type="button" onclick="window.setRoundTimer(15)" style="background: #ffffff; color: #0f172a; border: 1px solid #cbd5e1; border-radius: 5px; padding: 4px 8px; font-size: 0.74rem; font-weight: 800; cursor: pointer; font-family: monospace;">15m</button>
+          <button type="button" onclick="window.adjustRoundTimer(60)" style="background: #e0f2fe; color: #0369a1; border: 1px solid #7dd3fc; border-radius: 5px; padding: 4px 8px; font-size: 0.74rem; font-weight: 800; cursor: pointer; font-family: monospace;">+1m</button>
+          <button type="button" onclick="window.openAdjudicationModal()" style="background: #fffbeb; color: #92400e; border: 1px solid #fcd34d; border-radius: 5px; padding: 4px 10px; font-size: 0.74rem; font-weight: 800; cursor: pointer;">
+            ⚖️ Piece Values
+          </button>
+        </div>
+      `
+          : ''
+      }
+    </div>
+  `;
+}
+
+function renderRoundTimeUpBannerHTML() {
+  if (!chessState.roundTimerExpiredAlert) return '';
+  return `
+    <div style="background: linear-gradient(135deg, #7f1d1d 0%, #991b1b 100%); color: #ffffff; border: 2px solid #f59e0b; border-radius: 10px; padding: 10px 16px; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; box-shadow: 0 6px 18px rgba(153, 27, 27, 0.28);">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="font-size: 1.4rem;">⏰</span>
+        <div>
+          <div style="font-weight: 900; font-size: 0.95rem; color: #fde68a; text-transform: uppercase; letter-spacing: 0.03em;">
+            Round Time Up! Hands Off the Pieces!
+          </div>
+          <div style="font-size: 0.8rem; color: #fecaca;">
+            Count surviving piece points (♙1 · ♘3 · ♗3 · ♖5 · ♕9) to decide unfinished boards and move the tournament to the next round!
+          </div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <button type="button" onclick="window.openAdjudicationModal()" style="background: #fbbf24; color: #0f172a; border: none; font-weight: 900; font-size: 0.78rem; padding: 6px 12px; border-radius: 6px; cursor: pointer;">
+          ⚖️ Open Material Tally Calculator
+        </button>
+        <button type="button" onclick="window.dismissRoundTimerAlert()" style="background: rgba(255,255,255,0.15); color: #ffffff; border: 1px solid rgba(255,255,255,0.3); font-weight: 700; font-size: 0.75rem; padding: 6px 10px; border-radius: 6px; cursor: pointer;">
+          Dismiss ✕
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+function renderRapidRepairingSectionHTML(bracket) {
+  if (!bracket) return '';
+  const isTeacher = chessState.userRole === 'teacher';
+  return `
+    <!-- SECTION 4: ⚡ Instant Re-Pairing for Idle Pupils (Casual Rapid Games) -->
+    <div id="ko-sec-rapid" style="margin-top: 24px; background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 12px; padding: 18px 20px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <span style="font-size: 1.1rem; color: #0284c7;">⚡</span>
+            <h4 style="margin: 0; font-size: 1.05rem; color: #0f172a; font-weight: 800;">
+              Period 6 Rapid Re-Pairing (Keep Every Pupil Playing!)
+            </h4>
+          </div>
+          <div style="font-size: 0.82rem; color: #64748b; margin-top: 2px;">
+            Pupils finished their tournament game early? Tap below to pair all free pupils for 10-minute rapid games (Win = +3 pts, Draw = +2 pts each)!
+          </div>
+        </div>
+
+        ${
+          isTeacher
+            ? `
+          <button type="button" onclick="window.repairFreePupilsCasual()" style="background: #0284c7; color: #ffffff; border: none; font-weight: 800; font-size: 0.84rem; padding: 9px 16px; border-radius: 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25);">
+            <i class="fa-solid fa-bolt"></i> ⚡ Re-Pair Free Pupils
+          </button>
+        `
+            : ''
+        }
+      </div>
+
+      ${
+        bracket.casualMatches && bracket.casualMatches.length > 0
+          ? `
+        <div style="margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); gap: 10px;">
+          ${bracket.casualMatches
+            .map((cm) => {
+              const h1 = HOUSES[cm.p1.house];
+              const h2 = HOUSES[cm.p2.house];
+              return `
+              <div style="background: #ffffff; border: 1.5px solid ${cm.winner ? '#86efac' : cm.isDraw ? '#fcd34d' : '#cbd5e1'}; border-radius: 8px; padding: 10px 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; font-size: 0.72rem; font-weight: 800; color: #64748b;">
+                  <span>CASUAL RAPID</span>
+                  <span style="color: #0284c7;">${cm.time}</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.86rem; font-weight: 700; margin-bottom: 8px; gap: 6px;">
+                  <span style="color: ${h1 ? h1.color : '#0f172a'};">${cm.p1.name}</span>
+                  <span style="color: #94a3b8; font-size: 0.74rem;">vs</span>
+                  <span style="color: ${h2 ? h2.color : '#0f172a'};">${cm.p2.name}</span>
+                </div>
+                ${
+                  !cm.winner && !cm.isDraw && isTeacher
+                    ? `
+                  <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 5px;">
+                    <button type="button" onclick="window.advanceCasualMatch('${cm.id}', '${cm.p1.id}')" style="background: #f8fafc; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 800; padding: 6px 4px; border-radius: 5px; cursor: pointer; color: ${h1 ? h1.color : '#0f172a'};" title="${cm.p1.name} Wins (+3 House pts)">
+                      ${getPlayerButtonShortName(cm.p1)} Won
+                    </button>
+                    <button type="button" onclick="window.advanceCasualMatch('${cm.id}', 'draw')" style="background: #fffbeb; border: 1px solid #fcd34d; font-size: 0.72rem; font-weight: 800; padding: 6px 8px; border-radius: 5px; cursor: pointer; color: #92400e;" title="Draw (+2 House pts each)">
+                      🤝 Draw
+                    </button>
+                    <button type="button" onclick="window.advanceCasualMatch('${cm.id}', '${cm.p2.id}')" style="background: #f8fafc; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 800; padding: 6px 4px; border-radius: 5px; cursor: pointer; color: ${h2 ? h2.color : '#0f172a'};" title="${cm.p2.name} Wins (+3 House pts)">
+                      ${getPlayerButtonShortName(cm.p2)} Won
+                    </button>
+                  </div>
+                `
+                    : cm.isDraw
+                      ? `
+                  <div style="text-align: center; font-size: 0.73rem; font-weight: 800; color: #b45309; border-top: 1px solid #fef3c7; padding-top: 5px;">
+                    🤝 Draw: ½–½ (+2 House pts each)
+                  </div>
+                `
+                      : cm.winner
+                        ? `
+                  <div style="text-align: center; font-size: 0.73rem; font-weight: 800; color: #15803d; border-top: 1px solid #dcfce7; padding-top: 5px;">
+                    ✓ Winner: ${cm.winner.name} (+3 pts)
+                  </div>
+                `
+                        : ''
+                }
+              </div>
+            `;
+            })
+            .join('')}
+        </div>
+      `
+          : ''
+      }
+    </div>
+  `;
+}
+
 function renderKnockoutBracketStagesHTML(bracket, options = {}) {
   const isFullscreen = Boolean(options.isFullscreen);
   const tierFilter = isFullscreen ? chessState.bracketTierFilter || 'all' : 'all';
 
+  if (typeof reconcileKnockoutProgression === 'function') {
+    reconcileKnockoutProgression(bracket);
+  }
+
   let grandWinner = null;
   const finalMatch = bracket.rounds[bracket.rounds.length - 1][0];
-  if (finalMatch && finalMatch.winner) grandWinner = finalMatch.winner;
+  if (finalMatch && finalMatch.winner && !finalMatch.winner.isBye) grandWinner = finalMatch.winner;
 
   let plateWinner = null;
   if (bracket.plateRounds && bracket.plateRounds.length > 0) {
     const plateFinalMatch = bracket.plateRounds[bracket.plateRounds.length - 1][0];
-    if (plateFinalMatch && plateFinalMatch.winner) plateWinner = plateFinalMatch.winner;
-  }
-
-  // Auto-heal / initialize woodenSpoonMatch & cupBronzeMatch if 8-player bracket
-  if (bracket.tournamentSize === 8) {
-    if (!bracket.woodenSpoonMatch && bracket.plateRounds && bracket.plateRounds[0]) {
-      bracket.woodenSpoonMatch = {
-        id: 'wooden_spoon_final',
-        p1: null,
-        p2: null,
-        winner: null,
-        loser: null,
-      };
-      if (bracket.plateRounds[0][0]?.loser)
-        bracket.woodenSpoonMatch.p1 = bracket.plateRounds[0][0].loser;
-      if (bracket.plateRounds[0][1]?.loser)
-        bracket.woodenSpoonMatch.p2 = bracket.plateRounds[0][1].loser;
-    }
-    if (!bracket.cupBronzeMatch && bracket.rounds && bracket.rounds[1]) {
-      bracket.cupBronzeMatch = {
-        id: 'cup_bronze_final',
-        p1: null,
-        p2: null,
-        winner: null,
-        loser: null,
-      };
-      if (bracket.rounds[1][0]?.loser) bracket.cupBronzeMatch.p1 = bracket.rounds[1][0].loser;
-      if (bracket.rounds[1][1]?.loser) bracket.cupBronzeMatch.p2 = bracket.rounds[1][1].loser;
+    if (plateFinalMatch && plateFinalMatch.winner && !plateFinalMatch.winner.isBye) {
+      plateWinner = plateFinalMatch.winner;
     }
   }
 
   let woodenSpoonWinner = null;
-  if (bracket.woodenSpoonMatch && bracket.woodenSpoonMatch.winner) {
+  if (
+    bracket.woodenSpoonMatch &&
+    bracket.woodenSpoonMatch.winner &&
+    !bracket.woodenSpoonMatch.winner.isBye
+  ) {
     woodenSpoonWinner = bracket.woodenSpoonMatch.winner;
   }
 
@@ -4422,14 +4896,21 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
   const showCup = tierFilter === 'all' || tierFilter === 'cup';
   const showPlate = tierFilter === 'all' || tierFilter === 'plate';
   const showSpoon = tierFilter === 'all' || tierFilter === 'spoon';
+  const showRapid = tierFilter === 'all' || tierFilter === 'rapid';
+
+  // In fullscreen, #ko-fullscreen-scroll-body is the single 2D touch/drag scroll container (avoids nested scroll traps on smartboards)
+  const wrapOverflowStyle = isFullscreen
+    ? 'overflow: visible; cursor: grab; padding: 2px 2px 10px 2px;'
+    : 'overflow-x: auto; overflow-y: visible; -webkit-overflow-scrolling: touch; touch-action: pan-x pan-y; cursor: grab; padding: 2px 2px 10px 2px;';
 
   return `
-    <div id="ko-bracket-scroll-wrap" style="overflow: auto; cursor: grab; padding: 2px 2px 10px 2px;">
+    <div id="ko-bracket-scroll-wrap" style="${wrapOverflowStyle}">
       <div id="ko-bracket-zoom-stage" style="zoom: ${(z / 100).toFixed(3)}; transform-origin: top left;">
         ${
           showCup
             ? `
           <!-- SECTION 1: 🏆 Championship Cup (Gold Tier) -->
+          <div id="ko-sec-cup">
           ${
             grandWinner
               ? `
@@ -4470,19 +4951,19 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
                       .map((m, mIdx) => {
                         const p1 = m.p1;
                         const p2 = m.p2;
-                        const h1 = p1 ? HOUSES[p1.house] : null;
-                        const h2 = p2 ? HOUSES[p2.house] : null;
+                        const h1 = p1 && !p1.isBye ? HOUSES[p1.house] : null;
+                        const h2 = p2 && !p2.isBye ? HOUSES[p2.house] : null;
 
                         return `
                         <div style="background: #f8fafc; border: 1.5px solid ${m.isBye ? '#86efac' : m.winner ? '#10b981' : '#cbd5e1'}; border-radius: 8px; padding: 9px 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.02); position: relative;">
                           
                           <!-- P1 Slot -->
-                          <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${m.winner && m.winner.id === (p1 && p1.id) ? '#dcfce7' : '#ffffff'}; margin-bottom: 4px;">
-                            <span style="font-weight: 700; font-size: 0.82rem; color: #0f172a; line-height: 1.2; display: flex; align-items: center; gap: 5px; min-width: 0;">
-                              ${p1?.seed ? `<span style="background: #e2e8f0; color: #334155; font-size: 0.64rem; font-weight: 800; padding: 1px 5px; border-radius: 4px; flex-shrink: 0;">#${p1.seed}</span>` : ''}
-                              <span style="word-break: break-word;">${p1 ? p1.name : 'TBD'}</span>
+                          <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${m.winner && m.winner.id === (p1 && p1.id) ? '#dcfce7' : p1?.isBye ? '#f1f5f9' : '#ffffff'}; margin-bottom: 4px;">
+                            <span style="font-weight: 700; font-size: 0.82rem; color: ${p1?.isBye ? '#94a3b8' : '#0f172a'}; line-height: 1.2; display: flex; align-items: center; gap: 5px; min-width: 0;">
+                              ${p1?.seed && !p1?.isBye ? `<span style="background: #e2e8f0; color: #334155; font-size: 0.64rem; font-weight: 800; padding: 1px 5px; border-radius: 4px; flex-shrink: 0;">#${p1.seed}</span>` : ''}
+                              <span style="word-break: break-word;">${p1 ? (p1.isBye ? '— [BYE] —' : p1.name) : 'TBD'}</span>
                             </span>
-                            ${h1 && !p1?.isBye ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${h1.color}; flex-shrink: 0;">${h1.name}</span>` : ''}
+                            ${h1 ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${h1.color}; flex-shrink: 0;">${h1.name}</span>` : ''}
                           </div>
 
                           <!-- P2 Slot -->
@@ -4491,18 +4972,24 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
                               ${p2?.seed && !p2?.isBye ? `<span style="background: #e2e8f0; color: #334155; font-size: 0.64rem; font-weight: 800; padding: 1px 5px; border-radius: 4px; flex-shrink: 0;">#${p2.seed}</span>` : ''}
                               <span style="word-break: break-word;">${p2 ? (p2.isBye ? '— [BYE] —' : p2.name) : 'TBD'}</span>
                             </span>
-                            ${h2 && !p2?.isBye ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${h2.color}; flex-shrink: 0;">${h2.name}</span>` : ''}
+                            ${h2 ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${h2.color}; flex-shrink: 0;">${h2.name}</span>` : ''}
                           </div>
 
                           <!-- Action Button -->
                           ${
-                            p1 && p2 && !m.winner && !m.isBye && chessState.userRole === 'teacher'
+                            p1 &&
+                            p2 &&
+                            !p1.isBye &&
+                            !p2.isBye &&
+                            !m.winner &&
+                            !m.isBye &&
+                            chessState.userRole === 'teacher'
                               ? `
                             <div style="display: flex; gap: 5px; margin-top: 7px; border-top: 1px dashed #cbd5e1; padding-top: 6px;">
-                              <button onclick="window.advanceKnockoutWinner(${rIdx}, ${mIdx}, '${p1.id}')" style="flex: 1; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: ${h1 ? h1.color : '#0f172a'};" title="Advance ${p1.name}">
+                              <button type="button" onclick="window.advanceKnockoutWinner(${rIdx}, ${mIdx}, '${p1.id}')" style="flex: 1; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 800; line-height: 1.2; padding: 6px 4px; border-radius: 4px; cursor: pointer; color: ${h1 ? h1.color : '#0f172a'};" title="Advance ${p1.name}">
                                 ${getPlayerButtonShortName(p1)} Wins
                               </button>
-                              <button onclick="window.advanceKnockoutWinner(${rIdx}, ${mIdx}, '${p2.id}')" style="flex: 1; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: ${h2 ? h2.color : '#0f172a'};" title="Advance ${p2.name}">
+                              <button type="button" onclick="window.advanceKnockoutWinner(${rIdx}, ${mIdx}, '${p2.id}')" style="flex: 1; background: #ffffff; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 800; line-height: 1.2; padding: 6px 4px; border-radius: 4px; cursor: pointer; color: ${h2 ? h2.color : '#0f172a'};" title="Advance ${p2.name}">
                                 ${getPlayerButtonShortName(p2)} Wins
                               </button>
                             </div>
@@ -4538,41 +5025,44 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
             ${
               bracket.cupBronzeMatch
                 ? `
-              <div style="min-width: 208px; flex: 1 1 0; border-left: 2px dashed #fcd34d; padding-left: 14px;">
-                <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #b45309; margin-bottom: 10px; text-align: center; letter-spacing: 0.04em; white-space: nowrap;">
+              <div style="min-width: 208px; flex: 1 1 0; border-left: 2px dashed #fcd34d; padding-left: 14px; display: flex; flex-direction: column; justify-content: center;">
+                <div style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; color: #b45309; margin-bottom: 8px; text-align: center; letter-spacing: 0.04em; white-space: nowrap;">
                   🥉 3rd Place Playoff
                 </div>
-                <div style="display: flex; flex-direction: column; justify-content: center; height: calc(100% - 28px); min-height: 330px;">
+                <div>
                   <div style="background: #fffbeb; border: 1.5px solid ${bracket.cupBronzeMatch.winner ? '#f59e0b' : '#fcd34d'}; border-radius: 8px; padding: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">
                     <div style="font-size: 0.68rem; font-weight: 800; color: #92400e; text-transform: uppercase; margin-bottom: 6px; text-align: center;">
                       Cup Semi-Final Losers
                     </div>
                     <!-- P1 -->
                     <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${bracket.cupBronzeMatch.winner && bracket.cupBronzeMatch.winner.id === bracket.cupBronzeMatch.p1?.id ? '#fef3c7' : '#ffffff'}; margin-bottom: 4px;">
-                      <span style="font-weight: 700; font-size: 0.82rem; color: #0f172a; line-height: 1.2;">
-                        ${bracket.cupBronzeMatch.p1 ? bracket.cupBronzeMatch.p1.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting SF 1 Loser</span>'}
+                      <span style="font-weight: 700; font-size: 0.82rem; color: ${bracket.cupBronzeMatch.p1?.isBye ? '#94a3b8' : '#0f172a'}; line-height: 1.2;">
+                        ${bracket.cupBronzeMatch.p1 ? (bracket.cupBronzeMatch.p1.isBye ? '— [BYE / In Plate] —' : bracket.cupBronzeMatch.p1.name) : `<span style="color: #94a3b8; font-style: italic;">${bracket.cupBronzeMatch.p1PendingLabel || 'Awaiting SF 1 Loser'}</span>`}
                       </span>
-                      ${bracket.cupBronzeMatch.p1 ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${HOUSES[bracket.cupBronzeMatch.p1.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.cupBronzeMatch.p1.house]?.name || ''}</span>` : ''}
+                      ${bracket.cupBronzeMatch.p1 && !bracket.cupBronzeMatch.p1.isBye ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${HOUSES[bracket.cupBronzeMatch.p1.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.cupBronzeMatch.p1.house]?.name || ''}</span>` : ''}
                     </div>
                     <!-- P2 -->
                     <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${bracket.cupBronzeMatch.winner && bracket.cupBronzeMatch.winner.id === bracket.cupBronzeMatch.p2?.id ? '#fef3c7' : '#ffffff'};">
-                      <span style="font-weight: 700; font-size: 0.82rem; color: #0f172a; line-height: 1.2;">
-                        ${bracket.cupBronzeMatch.p2 ? bracket.cupBronzeMatch.p2.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting SF 2 Loser</span>'}
+                      <span style="font-weight: 700; font-size: 0.82rem; color: ${bracket.cupBronzeMatch.p2?.isBye ? '#94a3b8' : '#0f172a'}; line-height: 1.2;">
+                        ${bracket.cupBronzeMatch.p2 ? (bracket.cupBronzeMatch.p2.isBye ? '— [BYE / In Plate] —' : bracket.cupBronzeMatch.p2.name) : `<span style="color: #94a3b8; font-style: italic;">${bracket.cupBronzeMatch.p2PendingLabel || 'Awaiting SF 2 Loser'}</span>`}
                       </span>
-                      ${bracket.cupBronzeMatch.p2 ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${HOUSES[bracket.cupBronzeMatch.p2.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.cupBronzeMatch.p2.house]?.name || ''}</span>` : ''}
+                      ${bracket.cupBronzeMatch.p2 && !bracket.cupBronzeMatch.p2.isBye ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${HOUSES[bracket.cupBronzeMatch.p2.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.cupBronzeMatch.p2.house]?.name || ''}</span>` : ''}
                     </div>
                     <!-- Actions -->
                     ${
                       bracket.cupBronzeMatch.p1 &&
                       bracket.cupBronzeMatch.p2 &&
+                      !bracket.cupBronzeMatch.p1.isBye &&
+                      !bracket.cupBronzeMatch.p2.isBye &&
+                      !bracket.cupBronzeMatch.isBye &&
                       !bracket.cupBronzeMatch.winner &&
                       chessState.userRole === 'teacher'
                         ? `
                       <div style="display: flex; gap: 5px; margin-top: 7px; border-top: 1px dashed #fcd34d; padding-top: 6px;">
-                        <button onclick="window.advanceCupBronzeWinner('${bracket.cupBronzeMatch.p1.id}')" style="flex: 1; background: #ffffff; border: 1px solid #fcd34d; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: #b45309;">
+                        <button type="button" onclick="window.advanceCupBronzeWinner('${bracket.cupBronzeMatch.p1.id}')" style="flex: 1; background: #ffffff; border: 1px solid #fcd34d; font-size: 0.72rem; font-weight: 800; line-height: 1.2; padding: 6px 4px; border-radius: 4px; cursor: pointer; color: #b45309;">
                           ${getPlayerButtonShortName(bracket.cupBronzeMatch.p1)} Wins
                         </button>
-                        <button onclick="window.advanceCupBronzeWinner('${bracket.cupBronzeMatch.p2.id}')" style="flex: 1; background: #ffffff; border: 1px solid #fcd34d; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: #b45309;">
+                        <button type="button" onclick="window.advanceCupBronzeWinner('${bracket.cupBronzeMatch.p2.id}')" style="flex: 1; background: #ffffff; border: 1px solid #fcd34d; font-size: 0.72rem; font-weight: 800; line-height: 1.2; padding: 6px 4px; border-radius: 4px; cursor: pointer; color: #b45309;">
                           ${getPlayerButtonShortName(bracket.cupBronzeMatch.p2)} Wins
                         </button>
                       </div>
@@ -4580,10 +5070,10 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
                         : ''
                     }
                     ${
-                      bracket.cupBronzeMatch.winner
+                      bracket.cupBronzeMatch.winner && !bracket.cupBronzeMatch.winner.isBye
                         ? `
                       <div style="font-size: 0.72rem; font-weight: 800; color: #b45309; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #fcd34d;">
-                        🥉 3rd Place Bronze: ${bracket.cupBronzeMatch.winner.name} (+2 pts)
+                        🥉 3rd Place Bronze: ${bracket.cupBronzeMatch.winner.name}${bracket.cupBronzeMatch.isBye ? ' (Walkover)' : ' (+3 pts)'}
                       </div>
                     `
                         : ''
@@ -4595,6 +5085,7 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
                 : ''
             }
           </div>
+          </div>
         `
             : ''
         }
@@ -4603,17 +5094,17 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
         ${
           showPlate && bracket.plateRounds && bracket.plateRounds.length > 0
             ? `
-          <div style="margin-top: ${showCup ? '22px' : '4px'}; ${showCup ? 'border-top: 2px dashed #cbd5e1; padding-top: 20px;' : ''}">
+          <div id="ko-sec-plate" style="margin-top: ${showCup ? '22px' : '4px'}; ${showCup ? 'border-top: 2px dashed #cbd5e1; padding-top: 20px;' : ''}">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
               <div>
                 <div style="display: inline-flex; align-items: center; gap: 6px; background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 3px 10px; border-radius: 12px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase;">
-                  🥈 Silver Tier · Second Chance Championship
+                  🥈 Silver Tier · First-Loss Second Chance Championship
                 </div>
                 <h3 style="font-family: 'Playfair Display', serif; font-size: 1.25rem; color: #1e293b; margin: 4px 0 0 0;">
                   The Challenger Plate
                 </h3>
                 <div style="font-size: 0.82rem; color: #64748b; margin-top: 2px;">
-                  Round 1 Quarter-Final non-advancers advance here! Winners of the Plate Semi-Finals contest the Challenger Plate Final (+2 House Points)!
+                  Every pupil who loses their first game (in Round 1, OR in Round 2 after receiving a Round 1 Bye) enters the Challenger Plate!
                 </div>
               </div>
             </div>
@@ -4627,7 +5118,7 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
                   CHALLENGER PLATE CHAMPION: ${plateWinner.name}!
                 </h3>
                 <div style="font-size: 0.92rem; font-weight: 800; color: ${HOUSES[plateWinner.house]?.color || '#475569'}; text-transform: uppercase;">
-                  ${HOUSES[plateWinner.house]?.name || plateWinner.house} House (+2 House Points Awarded)
+                  ${HOUSES[plateWinner.house]?.name || plateWinner.house} House (+3 House Points Awarded)
                 </div>
               </div>
             `
@@ -4650,33 +5141,39 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
                         .map((m, mIdx) => {
                           const p1 = m.p1;
                           const p2 = m.p2;
-                          const h1 = p1 ? HOUSES[p1.house] : null;
-                          const h2 = p2 ? HOUSES[p2.house] : null;
+                          const h1 = p1 && !p1.isBye ? HOUSES[p1.house] : null;
+                          const h2 = p2 && !p2.isBye ? HOUSES[p2.house] : null;
 
                           return `
-                          <div style="background: #ffffff; border: 1.5px solid ${m.winner ? '#64748b' : '#cbd5e1'}; border-radius: 8px; padding: 9px 11px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
-                            <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${m.winner && m.winner.id === (p1 && p1.id) ? '#f1f5f9' : '#fafafa'}; margin-bottom: 4px;">
-                              <span style="font-weight: 700; font-size: 0.83rem; color: #0f172a; line-height: 1.2;">
-                                ${p1 ? p1.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting R1 Loser</span>'}
+                          <div style="background: #ffffff; border: 1.5px solid ${m.isBye ? '#93c5fd' : m.winner ? '#64748b' : '#cbd5e1'}; border-radius: 8px; padding: 9px 11px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                            <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${m.winner && p1 && !p1.isBye && m.winner.id === p1.id ? '#e0f2fe' : '#fafafa'}; margin-bottom: 4px;">
+                              <span style="font-weight: 700; font-size: 0.82rem; color: ${p1?.isBye ? '#94a3b8' : '#0f172a'}; line-height: 1.2;">
+                                ${p1 ? (p1.isBye ? '— [PLATE BYE] —' : p1.name) : `<span style="color: #64748b; font-style: italic; font-size: 0.75rem;">${m.p1PendingLabel || 'Awaiting Contender'}</span>`}
                               </span>
                               ${h1 ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${h1.color}; flex-shrink: 0;">${h1.name}</span>` : ''}
                             </div>
 
-                            <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${m.winner && m.winner.id === (p2 && p2.id) ? '#f1f5f9' : '#fafafa'};">
-                              <span style="font-weight: 700; font-size: 0.83rem; color: #0f172a; line-height: 1.2;">
-                                ${p2 ? p2.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting R1 Loser</span>'}
+                            <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 5px 7px; border-radius: 4px; background: ${m.winner && p2 && !p2.isBye && m.winner.id === p2.id ? '#e0f2fe' : '#fafafa'};">
+                              <span style="font-weight: 700; font-size: 0.82rem; color: ${p2?.isBye ? '#94a3b8' : '#0f172a'}; line-height: 1.2;">
+                                ${p2 ? (p2.isBye ? '— [PLATE BYE] —' : p2.name) : `<span style="color: #64748b; font-style: italic; font-size: 0.75rem;">${m.p2PendingLabel || 'Awaiting Contender'}</span>`}
                               </span>
                               ${h2 ? `<span style="font-size: 0.68rem; font-weight: 800; color: ${h2.color}; flex-shrink: 0;">${h2.name}</span>` : ''}
                             </div>
 
                             ${
-                              p1 && p2 && !m.winner && chessState.userRole === 'teacher'
+                              p1 &&
+                              p2 &&
+                              !p1.isBye &&
+                              !p2.isBye &&
+                              !m.isBye &&
+                              !m.winner &&
+                              chessState.userRole === 'teacher'
                                 ? `
                               <div style="display: flex; gap: 5px; margin-top: 7px; border-top: 1px dashed #cbd5e1; padding-top: 6px;">
-                                <button onclick="window.advancePlateWinner(${rIdx}, ${mIdx}, '${p1.id}')" style="flex: 1; background: #f8fafc; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: ${h1 ? h1.color : '#0f172a'};" title="Plate Win for ${p1.name}">
+                                <button type="button" onclick="window.advancePlateWinner(${rIdx}, ${mIdx}, '${p1.id}')" style="flex: 1; background: #f8fafc; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 800; line-height: 1.2; padding: 6px 4px; border-radius: 4px; cursor: pointer; color: ${h1 ? h1.color : '#0f172a'};" title="Plate Win for ${p1.name}">
                                   ${getPlayerButtonShortName(p1)} Wins
                                 </button>
-                                <button onclick="window.advancePlateWinner(${rIdx}, ${mIdx}, '${p2.id}')" style="flex: 1; background: #f8fafc; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 800; line-height: 1.2; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: ${h2 ? h2.color : '#0f172a'};" title="Plate Win for ${p2.name}">
+                                <button type="button" onclick="window.advancePlateWinner(${rIdx}, ${mIdx}, '${p2.id}')" style="flex: 1; background: #f8fafc; border: 1px solid #cbd5e1; font-size: 0.72rem; font-weight: 800; line-height: 1.2; padding: 6px 4px; border-radius: 4px; cursor: pointer; color: ${h2 ? h2.color : '#0f172a'};" title="Plate Win for ${p2.name}">
                                   ${getPlayerButtonShortName(p2)} Wins
                                 </button>
                               </div>
@@ -4684,13 +5181,19 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
                                 : ''
                             }
                             ${
-                              m.winner
+                              m.isBye
                                 ? `
-                              <div style="font-size: 0.71rem; font-weight: 800; color: #475569; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #e2e8f0;">
-                                <i class="fa-solid fa-check"></i> Plate Winner: ${m.winner.name} (+2 pts)
+                              <div style="font-size: 0.7rem; font-weight: 800; color: #0284c7; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #e0f2fe;">
+                                ${m.winner && !m.winner.isBye ? `<i class="fa-solid fa-forward"></i> ${m.winner.name} Auto-Advances` : 'Plate Bye Slot'}
                               </div>
                             `
-                                : ''
+                                : m.winner && !m.winner.isBye
+                                  ? `
+                              <div style="font-size: 0.71rem; font-weight: 800; color: #334155; text-align: center; margin-top: 6px; padding-top: 4px; border-top: 1px solid #e2e8f0;">
+                                <i class="fa-solid fa-check"></i> Plate Winner: ${m.winner.name} (+3 pts)
+                              </div>
+                            `
+                                  : ''
                             }
                           </div>
                         `;
@@ -4711,7 +5214,7 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
         ${
           showSpoon && bracket.woodenSpoonMatch
             ? `
-          <div style="margin-top: ${showCup || showPlate ? '22px' : '4px'}; ${showCup || showPlate ? 'border-top: 2px dashed #e2e8f0; padding-top: 20px;' : ''}">
+          <div id="ko-sec-spoon" style="margin-top: ${showCup || showPlate ? '22px' : '4px'}; ${showCup || showPlate ? 'border-top: 2px dashed #e2e8f0; padding-top: 20px;' : ''}">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 10px;">
               <div>
                 <div style="display: inline-flex; align-items: center; gap: 6px; background: #fef3c7; color: #92400e; border: 1px solid #fde68a; padding: 3px 10px; border-radius: 12px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase;">
@@ -4721,7 +5224,7 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
                   The Wooden Spoon Shield
                 </h3>
                 <div style="font-size: 0.82rem; color: #64748b; margin-top: 2px;">
-                  Non-advancers from the Plate Semi-Finals face off head-to-head here. The winner claims the Wooden Spoon Shield (+1 House Point)!
+                  Non-advancers from the Challenger Plate face off here so nobody sits out!
                 </div>
               </div>
             </div>
@@ -4735,63 +5238,129 @@ function renderKnockoutBracketStagesHTML(bracket, options = {}) {
                   WOODEN SPOON SHIELD CHAMPION: ${woodenSpoonWinner.name}!
                 </h3>
                 <div style="font-size: 0.92rem; font-weight: 800; color: ${HOUSES[woodenSpoonWinner.house]?.color || '#b45309'}; text-transform: uppercase;">
-                  ${HOUSES[woodenSpoonWinner.house]?.name || woodenSpoonWinner.house} House (+1 House Point Awarded)
+                  ${HOUSES[woodenSpoonWinner.house]?.name || woodenSpoonWinner.house} House
                 </div>
               </div>
             `
                 : ''
             }
 
-            <div style="max-width: 480px; margin: 0 auto; background: #ffffff; border: 1.5px solid ${bracket.woodenSpoonMatch.winner ? '#b45309' : '#cbd5e1'}; border-radius: 10px; padding: 14px 16px; box-shadow: 0 3px 8px rgba(0,0,0,0.03);">
-              <div style="font-size: 0.74rem; font-weight: 800; color: #92400e; text-transform: uppercase; margin-bottom: 8px; text-align: center;">
-                🥄 Wooden Spoon Shield Final
-              </div>
-
-              <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 5px; background: ${bracket.woodenSpoonMatch.winner && bracket.woodenSpoonMatch.winner.id === bracket.woodenSpoonMatch.p1?.id ? '#fef3c7' : '#fafafa'}; margin-bottom: 6px;">
-                <span style="font-weight: 700; font-size: 0.86rem; color: #0f172a;">
-                  ${bracket.woodenSpoonMatch.p1 ? bracket.woodenSpoonMatch.p1.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting Plate SF 1 Loser</span>'}
-                </span>
-                ${bracket.woodenSpoonMatch.p1 ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${HOUSES[bracket.woodenSpoonMatch.p1.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.woodenSpoonMatch.p1.house]?.name || ''}</span>` : ''}
-              </div>
-
-              <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 5px; background: ${bracket.woodenSpoonMatch.winner && bracket.woodenSpoonMatch.winner.id === bracket.woodenSpoonMatch.p2?.id ? '#fef3c7' : '#fafafa'};">
-                <span style="font-weight: 700; font-size: 0.86rem; color: #0f172a;">
-                  ${bracket.woodenSpoonMatch.p2 ? bracket.woodenSpoonMatch.p2.name : '<span style="color: #94a3b8; font-style: italic;">Awaiting Plate SF 2 Loser</span>'}
-                </span>
-                ${bracket.woodenSpoonMatch.p2 ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${HOUSES[bracket.woodenSpoonMatch.p2.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.woodenSpoonMatch.p2.house]?.name || ''}</span>` : ''}
-              </div>
-
+            <div style="display: flex; gap: 18px; align-items: center; justify-content: center; flex-wrap: wrap;">
               ${
-                bracket.woodenSpoonMatch.p1 &&
-                bracket.woodenSpoonMatch.p2 &&
-                !bracket.woodenSpoonMatch.winner &&
-                chessState.userRole === 'teacher'
+                Array.isArray(bracket.woodenSpoonSemiFinals) &&
+                bracket.woodenSpoonSemiFinals.some((ssf) => !(ssf.p1?.isBye && ssf.p2?.isBye))
                   ? `
-                <div style="display: flex; gap: 8px; margin-top: 10px; border-top: 1px dashed #cbd5e1; padding-top: 8px;">
-                  <button onclick="window.advanceWoodenSpoonWinner('${bracket.woodenSpoonMatch.p1.id}')" style="flex: 1; background: #fffbeb; border: 1.5px solid #fcd34d; font-size: 0.74rem; font-weight: 800; padding: 6px; border-radius: 5px; cursor: pointer; color: #78350f;" title="Spoon Win for ${bracket.woodenSpoonMatch.p1.name}">
-                    ${getPlayerButtonShortName(bracket.woodenSpoonMatch.p1)} Wins Spoon
-                  </button>
-                  <button onclick="window.advanceWoodenSpoonWinner('${bracket.woodenSpoonMatch.p2.id}')" style="flex: 1; background: #fffbeb; border: 1.5px solid #fcd34d; font-size: 0.74rem; font-weight: 800; padding: 6px; border-radius: 5px; cursor: pointer; color: #78350f;" title="Spoon Win for ${bracket.woodenSpoonMatch.p2.name}">
-                    ${getPlayerButtonShortName(bracket.woodenSpoonMatch.p2)} Wins Spoon
-                  </button>
+                <div style="min-width: 240px; flex: 1 1 260px; max-width: 360px; display: flex; flex-direction: column; gap: 12px;">
+                  <div style="font-size: 0.76rem; font-weight: 800; color: #92400e; text-transform: uppercase; text-align: center;">
+                    🥄 Spoon Semi-Finals
+                  </div>
+                  ${bracket.woodenSpoonSemiFinals
+                    .map((ssf, sIdx) => {
+                      const sp1 = ssf.p1;
+                      const sp2 = ssf.p2;
+                      const sh1 = sp1 && !sp1.isBye ? HOUSES[sp1.house] : null;
+                      const sh2 = sp2 && !sp2.isBye ? HOUSES[sp2.house] : null;
+                      return `
+                      <div style="background: #ffffff; border: 1.5px solid ${ssf.winner ? '#d97706' : '#cbd5e1'}; border-radius: 8px; padding: 9px 11px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 4px 6px; border-radius: 4px; background: ${ssf.winner && sp1 && !sp1.isBye && ssf.winner.id === sp1.id ? '#fef3c7' : '#fafafa'}; margin-bottom: 4px;">
+                          <span style="font-weight: 700; font-size: 0.8rem; color: ${sp1?.isBye ? '#94a3b8' : '#0f172a'};">
+                            ${sp1 ? (sp1.isBye ? '— [SPOON BYE] —' : sp1.name) : `<span style="color: #94a3b8; font-style: italic; font-size: 0.74rem;">${ssf.p1PendingLabel || 'Awaiting Contender'}</span>`}
+                          </span>
+                          ${sh1 ? `<span style="font-size: 0.66rem; font-weight: 800; color: ${sh1.color};">${sh1.name}</span>` : ''}
+                        </div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 4px 6px; border-radius: 4px; background: ${ssf.winner && sp2 && !sp2.isBye && ssf.winner.id === sp2.id ? '#fef3c7' : '#fafafa'};">
+                          <span style="font-weight: 700; font-size: 0.8rem; color: ${sp2?.isBye ? '#94a3b8' : '#0f172a'};">
+                            ${sp2 ? (sp2.isBye ? '— [SPOON BYE] —' : sp2.name) : `<span style="color: #94a3b8; font-style: italic; font-size: 0.74rem;">${ssf.p2PendingLabel || 'Awaiting Contender'}</span>`}
+                          </span>
+                          ${sh2 ? `<span style="font-size: 0.66rem; font-weight: 800; color: ${sh2.color};">${sh2.name}</span>` : ''}
+                        </div>
+                        ${
+                          sp1 &&
+                          sp2 &&
+                          !sp1.isBye &&
+                          !sp2.isBye &&
+                          !ssf.isBye &&
+                          !ssf.winner &&
+                          chessState.userRole === 'teacher'
+                            ? `
+                          <div style="display: flex; gap: 5px; margin-top: 6px; border-top: 1px dashed #cbd5e1; padding-top: 6px;">
+                            <button type="button" onclick="window.advanceWoodenSpoonSemiWinner(${sIdx}, '${sp1.id}')" style="flex: 1; background: #fffbeb; border: 1px solid #fcd34d; font-size: 0.7rem; font-weight: 800; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: #78350f;">
+                              ${getPlayerButtonShortName(sp1)} Wins
+                            </button>
+                            <button type="button" onclick="window.advanceWoodenSpoonSemiWinner(${sIdx}, '${sp2.id}')" style="flex: 1; background: #fffbeb; border: 1px solid #fcd34d; font-size: 0.7rem; font-weight: 800; padding: 5px 4px; border-radius: 4px; cursor: pointer; color: #78350f;">
+                              ${getPlayerButtonShortName(sp2)} Wins
+                            </button>
+                          </div>
+                        `
+                            : ssf.isBye && ssf.winner && !ssf.winner.isBye
+                              ? `<div style="font-size: 0.68rem; font-weight: 800; color: #b45309; text-align: center; margin-top: 5px;">${ssf.winner.name} Auto-Advances</div>`
+                              : ''
+                        }
+                      </div>
+                    `;
+                    })
+                    .join('')}
                 </div>
               `
                   : ''
               }
-              ${
-                bracket.woodenSpoonMatch.winner
-                  ? `
-                <div style="font-size: 0.76rem; font-weight: 800; color: #78350f; text-align: center; margin-top: 8px; padding-top: 6px; border-top: 1px solid #fef3c7;">
-                  🥄 Wooden Spoon Shield Winner: ${bracket.woodenSpoonMatch.winner.name} (+1 pt)
+
+              <div style="min-width: 260px; flex: 1 1 320px; max-width: 480px; background: #ffffff; border: 1.5px solid ${bracket.woodenSpoonMatch.winner ? '#b45309' : '#cbd5e1'}; border-radius: 10px; padding: 14px 16px; box-shadow: 0 3px 8px rgba(0,0,0,0.03);">
+                <div style="font-size: 0.74rem; font-weight: 800; color: #92400e; text-transform: uppercase; margin-bottom: 8px; text-align: center;">
+                  🥄 Wooden Spoon Shield Final
                 </div>
-              `
-                  : ''
-              }
+
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 5px; background: ${bracket.woodenSpoonMatch.winner && bracket.woodenSpoonMatch.p1 && !bracket.woodenSpoonMatch.p1.isBye && bracket.woodenSpoonMatch.winner.id === bracket.woodenSpoonMatch.p1.id ? '#fef3c7' : '#fafafa'}; margin-bottom: 6px;">
+                  <span style="font-weight: 700; font-size: 0.86rem; color: ${bracket.woodenSpoonMatch.p1?.isBye ? '#94a3b8' : '#0f172a'};">
+                    ${bracket.woodenSpoonMatch.p1 ? (bracket.woodenSpoonMatch.p1.isBye ? '— [SPOON BYE] —' : bracket.woodenSpoonMatch.p1.name) : `<span style="color: #94a3b8; font-style: italic;">${bracket.woodenSpoonMatch.p1PendingLabel || 'Awaiting Contender'}</span>`}
+                  </span>
+                  ${bracket.woodenSpoonMatch.p1 && !bracket.woodenSpoonMatch.p1.isBye ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${HOUSES[bracket.woodenSpoonMatch.p1.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.woodenSpoonMatch.p1.house]?.name || ''}</span>` : ''}
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 6px; padding: 7px 10px; border-radius: 5px; background: ${bracket.woodenSpoonMatch.winner && bracket.woodenSpoonMatch.p2 && !bracket.woodenSpoonMatch.p2.isBye && bracket.woodenSpoonMatch.winner.id === bracket.woodenSpoonMatch.p2.id ? '#fef3c7' : '#fafafa'};">
+                  <span style="font-weight: 700; font-size: 0.86rem; color: ${bracket.woodenSpoonMatch.p2?.isBye ? '#94a3b8' : '#0f172a'};">
+                    ${bracket.woodenSpoonMatch.p2 ? (bracket.woodenSpoonMatch.p2.isBye ? '— [SPOON BYE] —' : bracket.woodenSpoonMatch.p2.name) : `<span style="color: #94a3b8; font-style: italic;">${bracket.woodenSpoonMatch.p2PendingLabel || 'Awaiting Contender'}</span>`}
+                  </span>
+                  ${bracket.woodenSpoonMatch.p2 && !bracket.woodenSpoonMatch.p2.isBye ? `<span style="font-size: 0.7rem; font-weight: 800; color: ${HOUSES[bracket.woodenSpoonMatch.p2.house]?.color || '#94a3b8'}; flex-shrink: 0;">${HOUSES[bracket.woodenSpoonMatch.p2.house]?.name || ''}</span>` : ''}
+                </div>
+
+                ${
+                  bracket.woodenSpoonMatch.p1 &&
+                  bracket.woodenSpoonMatch.p2 &&
+                  !bracket.woodenSpoonMatch.p1.isBye &&
+                  !bracket.woodenSpoonMatch.p2.isBye &&
+                  !bracket.woodenSpoonMatch.isBye &&
+                  !bracket.woodenSpoonMatch.winner &&
+                  chessState.userRole === 'teacher'
+                    ? `
+                  <div style="display: flex; gap: 8px; margin-top: 10px; border-top: 1px dashed #cbd5e1; padding-top: 8px;">
+                    <button type="button" onclick="window.advanceWoodenSpoonWinner('${bracket.woodenSpoonMatch.p1.id}')" style="flex: 1; background: #fffbeb; border: 1.5px solid #fcd34d; font-size: 0.74rem; font-weight: 800; padding: 6px; border-radius: 5px; cursor: pointer; color: #78350f;" title="Spoon Win for ${bracket.woodenSpoonMatch.p1.name}">
+                      ${getPlayerButtonShortName(bracket.woodenSpoonMatch.p1)} Wins Spoon
+                    </button>
+                    <button type="button" onclick="window.advanceWoodenSpoonWinner('${bracket.woodenSpoonMatch.p2.id}')" style="flex: 1; background: #fffbeb; border: 1.5px solid #fcd34d; font-size: 0.74rem; font-weight: 800; padding: 6px; border-radius: 5px; cursor: pointer; color: #78350f;" title="Spoon Win for ${bracket.woodenSpoonMatch.p2.name}">
+                      ${getPlayerButtonShortName(bracket.woodenSpoonMatch.p2)} Wins Spoon
+                    </button>
+                  </div>
+                `
+                    : ''
+                }
+                ${
+                  bracket.woodenSpoonMatch.winner && !bracket.woodenSpoonMatch.winner.isBye
+                    ? `
+                  <div style="font-size: 0.76rem; font-weight: 800; color: #78350f; text-align: center; margin-top: 8px; padding-top: 6px; border-top: 1px solid #fef3c7;">
+                    🥄 Wooden Spoon Shield Winner: ${bracket.woodenSpoonMatch.winner.name}${bracket.woodenSpoonMatch.isBye ? ' (Walkover)' : ' (+3 pts)'}
+                  </div>
+                `
+                    : ''
+                }
+              </div>
             </div>
           </div>
         `
             : ''
         }
+
+        ${showRapid ? renderRapidRepairingSectionHTML(bracket) : ''}
       </div>
     </div>
   `;
@@ -4802,61 +5371,73 @@ function renderKnockoutFullscreenArena(sortedHouses) {
   if (!bracket) return '';
   const tier = chessState.bracketTierFilter || 'all';
   const tierBtnStyle = (active) =>
-    `background: ${active ? '#f59e0b' : '#1e293b'}; color: ${active ? '#0f172a' : '#cbd5e1'}; border: 1px solid ${active ? '#fbbf24' : '#475569'}; font-weight: 800; font-size: 0.74rem; padding: 4px 10px; border-radius: 6px; cursor: pointer;`;
+    `background: ${active ? '#f59e0b' : '#1e293b'}; color: ${active ? '#0f172a' : '#cbd5e1'}; border: 1px solid ${active ? '#fbbf24' : '#475569'}; font-weight: 800; font-size: 0.74rem; padding: 5px 10px; border-radius: 6px; cursor: pointer;`;
 
   return `
     <div id="ko-fullscreen-arena" style="position: fixed; inset: 0; z-index: 99995; background: #f8fafc; display: flex; flex-direction: column; overflow: hidden; font-family: 'Outfit', sans-serif;">
-      <!-- Sticky Single-Row Top Full-Screen Command Bar -->
-      <div style="background: #0f172a; color: #ffffff; padding: 7px 16px; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; border-bottom: 2px solid #f59e0b; box-shadow: 0 4px 16px rgba(0,0,0,0.22); flex-shrink: 0;">
-        <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-          <div style="display: flex; align-items: center; gap: 7px;">
-            <span style="font-size: 1.15rem;">🏆</span>
-            <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.98rem; font-weight: 800; color: #ffffff; white-space: nowrap;">
-              Tournament Bracket
-            </div>
-          </div>
+      <style>
+        #ko-fullscreen-scroll-body::-webkit-scrollbar { width: 18px; height: 18px; }
+        #ko-fullscreen-scroll-body::-webkit-scrollbar-track { background: #e2e8f0; }
+        #ko-fullscreen-scroll-body::-webkit-scrollbar-thumb { background: #64748b; border-radius: 9px; border: 3px solid #e2e8f0; }
+        #ko-fullscreen-scroll-body::-webkit-scrollbar-thumb:hover { background: #334155; }
+      </style>
 
-          <div style="display: flex; gap: 4px; align-items: center; flex-wrap: wrap;">
+      <!-- Sticky Top Full-Screen Command Bar (Compact Single-Row Layout at 1440px+) -->
+      <div style="background: #0f172a; color: #ffffff; padding: 6px 12px; display: flex; align-items: center; justify-content: space-between; gap: 6px; flex-wrap: wrap; border-bottom: 2px solid #f59e0b; box-shadow: 0 4px 16px rgba(0,0,0,0.22); flex-shrink: 0;">
+        <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+          <span style="font-family: 'Playfair Display', Georgia, serif; font-size: 0.9rem; font-weight: 800; color: #fbbf24; white-space: nowrap;">
+            🏆 Arena
+          </span>
+          <div style="display: flex; gap: 3px; align-items: center; flex-wrap: wrap;">
             ${(sortedHouses || [])
               .map((hStats) => {
                 const h = HOUSES[hStats.id];
                 if (!h) return '';
-                return `<span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); padding: 2px 7px; border-radius: 12px; font-size: 0.68rem; font-weight: 800; color: #f8fafc; white-space: nowrap;">${h.name}: <strong style="color: #fbbf24;">${hStats.points}</strong></span>`;
+                return `<span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); padding: 2px 6px; border-radius: 10px; font-size: 0.66rem; font-weight: 800; color: #f8fafc; white-space: nowrap;">${h.name}: <strong style="color: #fbbf24;">${hStats.points}</strong></span>`;
               })
               .join('')}
           </div>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 5px; flex-wrap: wrap;">
-          <button type="button" onclick="window.setBracketTierFilter('all')" style="${tierBtnStyle(tier === 'all')}">All Tiers</button>
+        <!-- Center: Tier Switcher + Live Round Timer -->
+        <div style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+          <button type="button" onclick="window.setBracketTierFilter('all')" style="${tierBtnStyle(tier === 'all')}">All</button>
           <button type="button" onclick="window.setBracketTierFilter('cup')" style="${tierBtnStyle(tier === 'cup')}">🏆 Cup</button>
           <button type="button" onclick="window.setBracketTierFilter('plate')" style="${tierBtnStyle(tier === 'plate')}">🥈 Plate</button>
           <button type="button" onclick="window.setBracketTierFilter('spoon')" style="${tierBtnStyle(tier === 'spoon')}">🥄 Spoon</button>
+          <button type="button" onclick="window.setBracketTierFilter('rapid')" style="${tierBtnStyle(tier === 'rapid')}">⚡ Rapid</button>
+          ${renderTournamentTimerBarHTML(true)}
         </div>
 
-        <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+        <!-- Right: Undo, Save, Zoom, Exit -->
+        <div style="display: flex; align-items: center; gap: 4px; flex-wrap: wrap;">
+          ${renderUndoAndSaveButtonsHTML(true)}
           ${renderBracketZoomControlsHTML(true)}
-          ${
-            chessState.userRole === 'teacher'
-              ? `
-            <button type="button" onclick="window.generateKnockoutTournament()" style="background: #1e293b; color: #e2e8f0; border: 1px solid #475569; padding: 5px 9px; border-radius: 6px; font-weight: 700; font-size: 0.72rem; cursor: pointer; white-space: nowrap;" title="Re-seed bracket">
-              <i class="fa-solid fa-rotate"></i> Re-Seed
-            </button>
-          `
-              : ''
-          }
-          <button type="button" onclick="window.toggleBracketFullscreen(false)" style="background: #dc2626; color: #ffffff; border: 1px solid #f87171; padding: 5px 10px; border-radius: 6px; font-weight: 800; font-size: 0.74rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; white-space: nowrap;" title="Exit Full Screen (Esc)">
-            <i class="fa-solid fa-compress"></i> Exit (Esc)
+          <button type="button" onclick="window.toggleBracketFullscreen(false)" style="background: #dc2626; color: #ffffff; border: 1px solid #f87171; padding: 5px 9px; border-radius: 6px; font-weight: 800; font-size: 0.72rem; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; white-space: nowrap;" title="Exit Full Screen (Esc)">
+            ✕ Exit
           </button>
         </div>
       </div>
 
-      <!-- Full-Screen Scroll & Zoom Canvas -->
-      <div style="flex: 1; overflow-y: auto; padding: 18px 24px 32px 24px;">
-        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 14px; padding: 20px 22px; box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);">
+      <!-- Unified 2D Touch & Drag Scroll Viewport -->
+      <div id="ko-fullscreen-scroll-body" style="flex: 1; overflow: auto; -webkit-overflow-scrolling: touch; touch-action: pan-x pan-y; overscroll-behavior: contain; cursor: grab; padding: 14px 56px 40px 56px; position: relative;">
+        ${renderRoundTimeUpBannerHTML()}
+        <div style="background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 14px; padding: 18px 20px; box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06); display: inline-block; min-width: 100%; box-sizing: border-box;">
           ${renderKnockoutBracketStagesHTML(bracket, { isFullscreen: true })}
         </div>
       </div>
+
+      <!-- Dual-Side Big Touch TV Scroll Buttons (Accessible from BOTH Left & Right sides of a 75" Smartboard!) -->
+      <div style="position: fixed; left: 8px; bottom: 18px; z-index: 99997; display: flex; flex-direction: column; gap: 6px;">
+        <button type="button" onclick="window.scrollBracketViewport(-320, 0)" style="width: 42px; height: 46px; border-radius: 10px; background: rgba(15, 23, 42, 0.88); color: #ffffff; border: 1.5px solid #475569; font-size: 1.1rem; font-weight: 900; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.25);" title="Scroll Up">▲</button>
+        <button type="button" onclick="window.scrollBracketViewport(320, 0)" style="width: 42px; height: 46px; border-radius: 10px; background: rgba(15, 23, 42, 0.88); color: #ffffff; border: 1.5px solid #475569; font-size: 1.1rem; font-weight: 900; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.25);" title="Scroll Down">▼</button>
+      </div>
+      <div style="position: fixed; right: 24px; bottom: 18px; z-index: 99997; display: flex; flex-direction: column; gap: 6px;">
+        <button type="button" onclick="window.scrollBracketViewport(-320, 0)" style="width: 42px; height: 46px; border-radius: 10px; background: rgba(15, 23, 42, 0.88); color: #ffffff; border: 1.5px solid #475569; font-size: 1.1rem; font-weight: 900; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.25);" title="Scroll Up">▲</button>
+        <button type="button" onclick="window.scrollBracketViewport(320, 0)" style="width: 42px; height: 46px; border-radius: 10px; background: rgba(15, 23, 42, 0.88); color: #ffffff; border: 1.5px solid #475569; font-size: 1.1rem; font-weight: 900; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.25);" title="Scroll Down">▼</button>
+      </div>
+
+      ${renderAdjudicationModalOverlay()}
     </div>
   `;
 }
@@ -4876,11 +5457,22 @@ function renderKnockoutTab() {
           Thursday Period 6 Knockout Cup
         </h2>
         <p style="color: #64748b; max-width: 580px; margin: 0 auto 24px; font-size: 0.95rem; line-height: 1.6;">
-          Keep it fully digital! Mark attending pupils above as they arrive, then tap <strong>Auto-Populate Seeded Bracket</strong>. The app automatically balances the draw by official player rankings and awards Round 1 Byes to top seeds!
+          Keep it fully digital! Mark attending pupils above as they arrive, then tap <strong>Auto-Populate Seeded Bracket</strong>. Top seeds receive Round 1 Byes — and if a Round 1 Bye recipient loses their first game, they drop straight into the <strong>Challenger Plate</strong> so everyone stays involved!
         </p>
-        <button onclick="window.generateKnockoutTournament()" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 800; font-size: 1rem; padding: 12px 26px; border-radius: 8px; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);">
-          <i class="fa-solid fa-sitemap"></i> Auto-Populate Seeded Bracket
-        </button>
+        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+          <button type="button" onclick="window.generateKnockoutTournament()" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #000; font-weight: 800; font-size: 1rem; padding: 12px 26px; border-radius: 8px; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);">
+            <i class="fa-solid fa-sitemap"></i> Auto-Populate Seeded Bracket
+          </button>
+          ${
+            chessState.userRole === 'teacher'
+              ? `
+            <button type="button" onclick="window.openTournamentSaveModal()" style="background: #e0f2fe; color: #0369a1; border: 1.5px solid #7dd3fc; font-weight: 800; font-size: 0.92rem; padding: 12px 20px; border-radius: 8px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+              💾 Paste Saved Tournament Progress
+            </button>
+          `
+              : ''
+          }
+        </div>
       </div>
     `;
   }
@@ -4889,101 +5481,37 @@ function renderKnockoutTab() {
     ${renderKnockoutAttendanceBar()}
     <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 20px 20px 24px 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
       
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 12px;">
         <div>
           <div style="display: inline-flex; align-items: center; gap: 6px; background: #fef3c7; color: #b45309; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase;">
-            <i class="fa-solid fa-trophy"></i> Single-Elimination Knockout
+            <i class="fa-solid fa-trophy"></i> Multi-Tier Inclusive Knockout
           </div>
           <h2 style="font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #0f172a; margin: 4px 0 0 0;">
             Thursday Period 6 Championship Tournament
           </h2>
           <div style="font-size: 0.84rem; color: #64748b; margin-top: 2px;">
-            3-Tier Trophy System: 🏆 Championship Cup · 🥈 Challenger Plate · 🥄 Wooden Spoon Shield
+            🏆 Championship Cup · 🥈 Challenger Plate (incl. R1 Bye 1st-loss entry) · 🥄 Wooden Spoon · ⚡ Rapid Re-Pair
           </div>
         </div>
 
-        <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        <div style="display: flex; align-items: center; gap: 7px; flex-wrap: wrap;">
+          ${renderUndoAndSaveButtonsHTML(false)}
           ${renderBracketZoomControlsHTML(false)}
           <button type="button" onclick="window.toggleBracketFullscreen(true)" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: #ffffff; border: 1px solid #1e3a8a; padding: 7px 13px; border-radius: 6px; font-weight: 800; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(15, 23, 42, 0.18);" title="Expand Tournament Bracket to Full Screen (Shortcut: F)">
-            <i class="fa-solid fa-expand"></i> Full Screen
+            <i class="fa-solid fa-expand"></i> Full Screen TV
           </button>
-          <button onclick="window.generateKnockoutTournament()" style="background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 7px 12px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; cursor: pointer;" title="Re-seed bracket using currently arrived pupils">
-            <i class="fa-solid fa-rotate"></i> Re-Seed Bracket
+          <button type="button" onclick="window.generateKnockoutTournament()" style="background: #f1f5f9; color: #334155; border: 1px solid #cbd5e1; padding: 7px 12px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; cursor: pointer;" title="Re-seed bracket using currently arrived pupils">
+            <i class="fa-solid fa-rotate"></i> Re-Seed
           </button>
-          <button onclick="window.resetKnockoutTournament()" style="background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; padding: 7px 12px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; cursor: pointer;">
-            Clear Tournament
+          <button type="button" onclick="window.resetKnockoutTournament()" style="background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; padding: 7px 12px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; cursor: pointer;">
+            Clear
           </button>
         </div>
       </div>
 
+      ${renderTournamentTimerBarHTML(false)}
+      ${renderRoundTimeUpBannerHTML()}
       ${renderKnockoutBracketStagesHTML(bracket, { isFullscreen: false })}
-
-      <!-- SECTION 4: ⚡ Instant Re-Pairing for Idle Pupils (Casual Rapid Games) -->
-      <div style="margin-top: 24px; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 18px 20px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
-          <div>
-            <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="font-size: 1.1rem; color: #0284c7;">⚡</span>
-              <h4 style="margin: 0; font-size: 1.05rem; color: #0f172a; font-weight: 800;">
-                Period 6 Rapid Re-Pairing (Full 60-Minute Engagement)
-              </h4>
-            </div>
-            <div style="font-size: 0.82rem; color: #64748b; margin-top: 2px;">
-              Pupils finished their game early? Click below to instantly pair all idle pupils for 10-minute rapid games so nobody sits waiting!
-            </div>
-          </div>
-
-          <button onclick="window.repairFreePupilsCasual()" style="background: #0284c7; color: #ffffff; border: none; font-weight: 700; font-size: 0.82rem; padding: 8px 16px; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 8px rgba(2, 132, 199, 0.25);">
-            <i class="fa-solid fa-bolt"></i> ⚡ Re-Pair Free Pupils
-          </button>
-        </div>
-
-        ${
-          bracket.casualMatches && bracket.casualMatches.length > 0
-            ? `
-          <div style="margin-top: 14px; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px;">
-            ${bracket.casualMatches
-              .map((cm) => {
-                const h1 = HOUSES[cm.p1.house];
-                const h2 = HOUSES[cm.p2.house];
-                return `
-                <div style="background: #ffffff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 10px 12px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; font-size: 0.72rem; font-weight: 800; color: #64748b;">
-                    <span>CASUAL RAPID</span>
-                    <span style="color: #0284c7;">${cm.time}</span>
-                  </div>
-                  <div style="display: flex; justify-content: space-between; align-items: center; font-size: 0.85rem; font-weight: 700; margin-bottom: 8px;">
-                    <span style="color: ${h1 ? h1.color : '#0f172a'};">${cm.p1.name}</span>
-                    <span style="color: #94a3b8; font-size: 0.75rem;">vs</span>
-                    <span style="color: ${h2 ? h2.color : '#0f172a'};">${cm.p2.name}</span>
-                  </div>
-                  ${
-                    !cm.winner
-                      ? `
-                    <div style="display: flex; gap: 6px;">
-                      <button onclick="window.advanceCasualMatch('${cm.id}', '${cm.p1.id}')" style="flex: 1; background: #f1f5f9; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 700; padding: 4px; border-radius: 4px; cursor: pointer;">
-                        ${getPlayerButtonShortName(cm.p1)} Won
-                      </button>
-                      <button onclick="window.advanceCasualMatch('${cm.id}', '${cm.p2.id}')" style="flex: 1; background: #f1f5f9; border: 1px solid #cbd5e1; font-size: 0.7rem; font-weight: 700; padding: 4px; border-radius: 4px; cursor: pointer;">
-                        ${getPlayerButtonShortName(cm.p2)} Won
-                      </button>
-                    </div>
-                  `
-                      : `
-                    <div style="text-align: center; font-size: 0.72rem; font-weight: 800; color: #15803d; border-top: 1px solid #e2e8f0; padding-top: 4px;">
-                      ✓ Winner: ${cm.winner.name} (+3 pts)
-                    </div>
-                  `
-                  }
-                </div>
-              `;
-              })
-              .join('')}
-          </div>
-        `
-            : ''
-        }
-      </div>
 
     </div>
   `;
@@ -6249,6 +6777,8 @@ window.recordDirectTeacherMatch = function (outcome) {
     return;
   }
 
+  pushChessUndoSnapshot(`Quick Desk: ${p1.name} vs ${p2.name}`);
+
   p1.games = (p1.games || 0) + 1;
   p2.games = (p2.games || 0) + 1;
 
@@ -6457,6 +6987,8 @@ window.recordQuickMatchResult = function (boardNum, resultWinner) {
   const pBlack = isCoachMatch ? p.black : chessState.players.find((x) => x.id === p.black.id);
   if (!pWhite || !pBlack) return;
 
+  pushChessUndoSnapshot(`Board ${boardNum}: ${pWhite.name} vs ${pBlack.name}`);
+
   pWhite.games = (pWhite.games || 0) + 1;
   if (!isCoachMatch) pBlack.games = (pBlack.games || 0) + 1;
 
@@ -6587,6 +7119,555 @@ window.setLeagueTableViewMode = function (mode) {
   renderChessHubView();
 };
 
+// Helper: Synchronize match stat deltas directly onto canonical chessState.players AND mirror onto bracket slot objects
+function applyCanonicalPlayerMatchStats(slotPlayerA, slotPlayerB, outcome, eloWin = 15, eloLoss = 15) {
+  const canonicalA =
+    slotPlayerA && !slotPlayerA.isBye
+      ? chessState.players.find((p) => p.id === slotPlayerA.id) || slotPlayerA
+      : null;
+  const canonicalB =
+    slotPlayerB && !slotPlayerB.isBye
+      ? chessState.players.find((p) => p.id === slotPlayerB.id) || slotPlayerB
+      : null;
+
+  if (canonicalA) {
+    canonicalA.games = (canonicalA.games || 0) + 1;
+    if (outcome === 'p1') {
+      canonicalA.won = (canonicalA.won || 0) + 1;
+      canonicalA.rating = (canonicalA.rating || 1000) + eloWin;
+    } else if (outcome === 'p2') {
+      canonicalA.lost = (canonicalA.lost || 0) + 1;
+      canonicalA.rating = Math.max(800, (canonicalA.rating || 1000) - eloLoss);
+    } else if (outcome === 'draw') {
+      canonicalA.drawn = (canonicalA.drawn || 0) + 1;
+    }
+    if (slotPlayerA && slotPlayerA !== canonicalA) {
+      slotPlayerA.games = canonicalA.games;
+      slotPlayerA.won = canonicalA.won;
+      slotPlayerA.lost = canonicalA.lost;
+      slotPlayerA.drawn = canonicalA.drawn;
+      slotPlayerA.rating = canonicalA.rating;
+    }
+  }
+
+  if (canonicalB) {
+    canonicalB.games = (canonicalB.games || 0) + 1;
+    if (outcome === 'p2') {
+      canonicalB.won = (canonicalB.won || 0) + 1;
+      canonicalB.rating = (canonicalB.rating || 1000) + eloWin;
+    } else if (outcome === 'p1') {
+      canonicalB.lost = (canonicalB.lost || 0) + 1;
+      canonicalB.rating = Math.max(800, (canonicalB.rating || 1000) - eloLoss);
+    } else if (outcome === 'draw') {
+      canonicalB.drawn = (canonicalB.drawn || 0) + 1;
+    }
+    if (slotPlayerB && slotPlayerB !== canonicalB) {
+      slotPlayerB.games = canonicalB.games;
+      slotPlayerB.won = canonicalB.won;
+      slotPlayerB.lost = canonicalB.lost;
+      slotPlayerB.drawn = canonicalB.drawn;
+      slotPlayerB.rating = canonicalB.rating;
+    }
+  }
+
+  autoSortPlayersByPoints();
+}
+
+function makeBracketByeSlot(slotKey, label = 'BYE') {
+  return {
+    id: `bye_slot_${slotKey}`,
+    name: label,
+    nickname: label,
+    realName: label,
+    isBye: true,
+    house: 'none',
+  };
+}
+
+// Self-Healing Bracket & Consolation Progression Engine
+// Guarantees:
+// 1. Round 1 real losers enter Challenger Plate.
+// 2. Round 1 Bye recipients who lose their FIRST played match (Round 2) ALSO enter Challenger Plate!
+// 3. Round 1 Bye slots whose recipient WINS Round 2 automatically resolve as Plate Byes so no Plate slot ever stalls!
+// 4. 3rd Place Bronze Playoff & Wooden Spoon Shield work across BOTH 8-player and 16-player brackets!
+export function reconcileKnockoutProgression(bracket) {
+  if (!bracket || !Array.isArray(bracket.rounds) || bracket.rounds.length === 0) return bracket;
+
+  const refreshPlayerMeta = (slotP) => {
+    if (!slotP || slotP.isBye) return slotP;
+    const canon = chessState.players.find((p) => p.id === slotP.id);
+    if (canon) {
+      slotP.name = canon.name;
+      slotP.realName = canon.realName || canon.name;
+      slotP.nickname = canon.nickname || canon.name;
+      slotP.house = canon.house;
+      slotP.rating = canon.rating;
+    }
+    return slotP;
+  };
+
+  // 1. Reconcile Round 1 Byes & propagate Championship Cup winners
+  const r0 = bracket.rounds[0];
+  r0.forEach((m, mIdx) => {
+    m.p1 = refreshPlayerMeta(m.p1);
+    m.p2 = refreshPlayerMeta(m.p2);
+    if (m.p1?.isBye || m.p2?.isBye) {
+      m.isBye = true;
+      const realP = m.p1 && !m.p1.isBye ? m.p1 : m.p2 && !m.p2.isBye ? m.p2 : null;
+      if (realP) {
+        realP.hadR1Bye = true;
+        m.winner = realP;
+        m.loser = m.p1 === realP ? m.p2 : m.p1;
+      } else {
+        m.winner = makeBracketByeSlot(`cup_r0_${mIdx}`);
+        m.loser = m.p2 || makeBracketByeSlot(`cup_r0_l_${mIdx}`);
+      }
+    }
+  });
+
+  for (let rIdx = 0; rIdx < bracket.rounds.length; rIdx++) {
+    const rnd = bracket.rounds[rIdx];
+    rnd.forEach((m, mIdx) => {
+      m.p1 = refreshPlayerMeta(m.p1);
+      m.p2 = refreshPlayerMeta(m.p2);
+
+      // Validate existing winner still belongs to p1 or p2
+      if (m.winner && !m.isBye) {
+        const wId = m.winner.id;
+        if ((!m.p1 || m.p1.id !== wId) && (!m.p2 || m.p2.id !== wId)) {
+          m.winner = null;
+          m.loser = null;
+        } else {
+          m.winner = m.p1 && m.p1.id === wId ? m.p1 : m.p2;
+          m.loser = m.p1 && m.p1.id === wId ? m.p2 : m.p1;
+        }
+      }
+
+      if (rIdx > 0 && m.p1 && m.p2 && (m.p1.isBye || m.p2.isBye)) {
+        m.isBye = true;
+        if (!m.p1.isBye) {
+          m.winner = m.p1;
+          m.loser = m.p2;
+        } else if (!m.p2.isBye) {
+          m.winner = m.p2;
+          m.loser = m.p1;
+        } else {
+          m.winner = makeBracketByeSlot(`cup_r${rIdx}_${mIdx}`);
+          m.loser = m.p2;
+        }
+      }
+
+      if (rIdx + 1 < bracket.rounds.length) {
+        const nextMatch = bracket.rounds[rIdx + 1][Math.floor(mIdx / 2)];
+        if (nextMatch) {
+          if (mIdx % 2 === 0) {
+            nextMatch.p1 = m.winner || null;
+          } else {
+            nextMatch.p2 = m.winner || null;
+          }
+        }
+      }
+    });
+  }
+
+  // 2. Reconcile Challenger Plate (First-Loss Entry: R1 Real Losers + R1-Bye Recipients who lose R2!)
+  if (Array.isArray(bracket.plateRounds) && bracket.plateRounds.length > 0) {
+    const r2RoundLabel =
+      (bracket.roundNames && bracket.roundNames[1]
+        ? bracket.roundNames[1].replace(/s$/, '')
+        : 'Round 2');
+
+    const resolvePlateFeeder = (sideIdx) => {
+      const r1Match = bracket.rounds[0][sideIdx];
+      const r2Idx = Math.floor(sideIdx / 2);
+      const r2Match = bracket.rounds[1] ? bracket.rounds[1][r2Idx] : null;
+      if (!r1Match) {
+        return { player: makeBracketByeSlot(`plate_empty_${sideIdx}`), pendingLabel: null };
+      }
+
+      // Case A: Real Round 1 Match -> Loser enters Challenger Plate
+      if (!r1Match.isBye) {
+        if (r1Match.winner && r1Match.loser && !r1Match.loser.isBye) {
+          return { player: refreshPlayerMeta(r1Match.loser), pendingLabel: null };
+        }
+        return { player: null, pendingLabel: `Awaiting R1 Match ${sideIdx + 1} Loser` };
+      }
+
+      // Case B: Round 1 Bye -> Top-seed bye recipient enters Plate ONLY IF they lose their first match in Round 2!
+      const byeRecipient = r1Match.winner && !r1Match.winner.isBye ? r1Match.winner : null;
+      if (!byeRecipient || !r2Match || r2Match.isBye) {
+        return { player: makeBracketByeSlot(`plate_r1bye_${sideIdx}`), pendingLabel: null };
+      }
+
+      if (r2Match.winner) {
+        if (r2Match.loser && r2Match.loser.id === byeRecipient.id) {
+          return { player: refreshPlayerMeta(byeRecipient), pendingLabel: null };
+        }
+        // Bye recipient WON Round 2 -> stays in Championship Cup, Plate slot resolves to automatic Plate Bye!
+        return { player: makeBracketByeSlot(`plate_r2won_${sideIdx}`), pendingLabel: null };
+      }
+
+      const shortSeed = byeRecipient.seed ? `#${byeRecipient.seed} ` : '';
+      return {
+        player: null,
+        pendingLabel: `If ${shortSeed}${getPlayerButtonShortName(byeRecipient)} loses ${r2RoundLabel} ${r2Idx + 1}`,
+      };
+    };
+
+    for (let prIdx = 0; prIdx < bracket.plateRounds.length; prIdx++) {
+      const pRound = bracket.plateRounds[prIdx];
+      pRound.forEach((pm, pmIdx) => {
+        if (prIdx === 0) {
+          const left = resolvePlateFeeder(pmIdx * 2);
+          const right = resolvePlateFeeder(pmIdx * 2 + 1);
+          pm.p1 = left.player;
+          pm.p1PendingLabel = left.pendingLabel;
+          pm.p2 = right.player;
+          pm.p2PendingLabel = right.pendingLabel;
+        } else {
+          pm.p1 = refreshPlayerMeta(pm.p1);
+          pm.p2 = refreshPlayerMeta(pm.p2);
+          pm.p1PendingLabel = pm.p1 ? null : 'Awaiting Plate Winner';
+          pm.p2PendingLabel = pm.p2 ? null : 'Awaiting Plate Winner';
+        }
+
+        // Validate previously played Plate match result if players changed
+        if (pm.winner && !pm.isBye) {
+          const wId = pm.winner.id;
+          if ((!pm.p1 || pm.p1.id !== wId) && (!pm.p2 || pm.p2.id !== wId)) {
+            pm.winner = null;
+            pm.loser = null;
+          } else {
+            pm.winner = pm.p1 && pm.p1.id === wId ? pm.p1 : pm.p2;
+            pm.loser = pm.p1 && pm.p1.id === wId ? pm.p2 : pm.p1;
+          }
+        } else if (pm.isBye) {
+          // Re-evaluate bye state cleanly whenever upstream changes
+          pm.isBye = false;
+          pm.winner = null;
+          pm.loser = null;
+        }
+
+        if (pm.p1 && pm.p2) {
+          if (pm.p1.isBye && pm.p2.isBye) {
+            pm.isBye = true;
+            pm.winner = makeBracketByeSlot(`plate_dbl_${prIdx}_${pmIdx}`);
+            pm.loser = pm.p2;
+          } else if (pm.p1.isBye && !pm.p2.isBye) {
+            pm.isBye = true;
+            pm.winner = pm.p2;
+            pm.loser = pm.p1;
+          } else if (!pm.p1.isBye && pm.p2.isBye) {
+            pm.isBye = true;
+            pm.winner = pm.p1;
+            pm.loser = pm.p2;
+          }
+        }
+
+        if (prIdx + 1 < bracket.plateRounds.length) {
+          const nextPlateMatch = bracket.plateRounds[prIdx + 1][Math.floor(pmIdx / 2)];
+          if (nextPlateMatch) {
+            if (pmIdx % 2 === 0) {
+              nextPlateMatch.p1 = pm.winner || null;
+            } else {
+              nextPlateMatch.p2 = pm.winner || null;
+            }
+          }
+        }
+      });
+    }
+  }
+
+  // 3. Reconcile 3rd Place Bronze Playoff (works for BOTH 8-player and 16-player brackets!)
+  if (bracket.tournamentSize >= 8 && bracket.rounds.length >= 2) {
+    if (!bracket.cupBronzeMatch) {
+      bracket.cupBronzeMatch = {
+        id: 'cup_bronze_final',
+        p1: null,
+        p2: null,
+        winner: null,
+        loser: null,
+        title: '3rd Place Bronze Playoff',
+      };
+    }
+    const sfRoundIdx = bracket.rounds.length - 2;
+    const sf0 = bracket.rounds[sfRoundIdx]?.[0];
+    const sf1 = bracket.rounds[sfRoundIdx]?.[1];
+
+    const resolveBronzeSlot = (sfMatch, idx) => {
+      if (!sfMatch || !sfMatch.winner) {
+        return { player: null, pending: `Awaiting SF ${idx + 1} Loser` };
+      }
+      if (!sfMatch.loser || sfMatch.loser.isBye) {
+        return { player: makeBracketByeSlot(`bronze_bye_${idx}`), pending: null };
+      }
+      // In an 8-player bracket, Round 2 IS Semi-Finals: if a Round 1 Bye recipient lost SF, they dropped into Challenger Plate!
+      if (bracket.tournamentSize === 8 && sfMatch.loser.hadR1Bye) {
+        return { player: makeBracketByeSlot(`bronze_in_plate_${idx}`), pending: null };
+      }
+      return { player: refreshPlayerMeta(sfMatch.loser), pending: null };
+    };
+
+    const b1 = resolveBronzeSlot(sf0, 0);
+    const b2 = resolveBronzeSlot(sf1, 1);
+    const bm = bracket.cupBronzeMatch;
+    bm.p1 = b1.player;
+    bm.p1PendingLabel = b1.pending;
+    bm.p2 = b2.player;
+    bm.p2PendingLabel = b2.pending;
+
+    if (bm.winner && !bm.isBye) {
+      const wId = bm.winner.id;
+      if ((!bm.p1 || bm.p1.id !== wId) && (!bm.p2 || bm.p2.id !== wId)) {
+        bm.winner = null;
+        bm.loser = null;
+      }
+    } else if (bm.isBye) {
+      bm.isBye = false;
+      bm.winner = null;
+      bm.loser = null;
+    }
+
+    if (bm.p1 && bm.p2) {
+      if (bm.p1.isBye && bm.p2.isBye) {
+        bm.isBye = true;
+        bm.winner = null;
+      } else if (bm.p1.isBye && !bm.p2.isBye) {
+        bm.isBye = true;
+        bm.winner = bm.p2;
+        bm.loser = bm.p1;
+      } else if (!bm.p1.isBye && bm.p2.isBye) {
+        bm.isBye = true;
+        bm.winner = bm.p1;
+        bm.loser = bm.p2;
+      }
+    }
+  }
+
+  // 4. Reconcile Wooden Spoon Shield (works for BOTH 8-player and 16-player brackets!)
+  if (bracket.tournamentSize >= 8 && Array.isArray(bracket.plateRounds) && bracket.plateRounds.length > 0) {
+    if (!bracket.woodenSpoonMatch) {
+      bracket.woodenSpoonMatch = {
+        id: 'wooden_spoon_final',
+        p1: null,
+        p2: null,
+        winner: null,
+        loser: null,
+        title: 'Wooden Spoon Shield Final',
+      };
+    }
+
+    if (bracket.tournamentSize === 8) {
+      bracket.woodenSpoonSemiFinals = null;
+      const psf0 = bracket.plateRounds[0]?.[0];
+      const psf1 = bracket.plateRounds[0]?.[1];
+      const resolveSpoon8 = (psf, idx) => {
+        if (!psf || !psf.winner) return { player: null, pending: `Awaiting Plate SF ${idx + 1} Loser` };
+        if (psf.isBye || !psf.loser || psf.loser.isBye) {
+          return { player: makeBracketByeSlot(`spoon8_${idx}`), pending: null };
+        }
+        return { player: refreshPlayerMeta(psf.loser), pending: null };
+      };
+      const s1 = resolveSpoon8(psf0, 0);
+      const s2 = resolveSpoon8(psf1, 1);
+      const sm = bracket.woodenSpoonMatch;
+      sm.p1 = s1.player;
+      sm.p1PendingLabel = s1.pending;
+      sm.p2 = s2.player;
+      sm.p2PendingLabel = s2.pending;
+
+      if (sm.winner && !sm.isBye) {
+        const wId = sm.winner.id;
+        if ((!sm.p1 || sm.p1.id !== wId) && (!sm.p2 || sm.p2.id !== wId)) {
+          sm.winner = null;
+          sm.loser = null;
+        }
+      } else if (sm.isBye) {
+        sm.isBye = false;
+        sm.winner = null;
+        sm.loser = null;
+      }
+
+      if (sm.p1 && sm.p2) {
+        if (sm.p1.isBye && sm.p2.isBye) {
+          sm.isBye = true;
+          sm.winner = null;
+        } else if (sm.p1.isBye && !sm.p2.isBye) {
+          sm.isBye = true;
+          sm.winner = sm.p2;
+          sm.loser = sm.p1;
+        } else if (!sm.p1.isBye && sm.p2.isBye) {
+          sm.isBye = true;
+          sm.winner = sm.p1;
+          sm.loser = sm.p2;
+        }
+      }
+    } else if (bracket.tournamentSize === 16) {
+      // In 16-player brackets: check Plate Quarter-Finals (plateRounds[0], 4 matches) vs Plate Semi-Finals (plateRounds[1], 2 matches)
+      const pqfs = bracket.plateRounds[0] || [];
+      const psfs = bracket.plateRounds[1] || [];
+      const allPqfsResolved = pqfs.length === 4 && pqfs.every((m) => Boolean(m.winner));
+      const realPqfLosers = pqfs
+        .filter((m) => m.winner && !m.isBye && m.loser && !m.loser.isBye)
+        .map((m) => refreshPlayerMeta(m.loser));
+
+      // If all 4 Plate QFs resolved as Byes (e.g. 9 players where Seed 1 won QF 1 -> 0 Plate QF losers),
+      // feed Wooden Spoon Final directly from the 2 Plate Semi-Final losers!
+      if (allPqfsResolved && realPqfLosers.length === 0) {
+        bracket.woodenSpoonSemiFinals = null;
+        const resolveFromPsf = (psf, idx) => {
+          if (!psf || !psf.winner) return { player: null, pending: `Awaiting Plate SF ${idx + 1} Loser` };
+          if (psf.isBye || !psf.loser || psf.loser.isBye) {
+            return { player: makeBracketByeSlot(`spoon16_psf_${idx}`), pending: null };
+          }
+          return { player: refreshPlayerMeta(psf.loser), pending: null };
+        };
+        const s1 = resolveFromPsf(psfs[0], 0);
+        const s2 = resolveFromPsf(psfs[1], 1);
+        const sm = bracket.woodenSpoonMatch;
+        sm.p1 = s1.player;
+        sm.p1PendingLabel = s1.pending;
+        sm.p2 = s2.player;
+        sm.p2PendingLabel = s2.pending;
+      } else if (allPqfsResolved && realPqfLosers.length === 1) {
+        // Exactly 1 real loser in Plate QFs + 2 Plate SF losers -> 3-player Wooden Spoon (Spoon Play-In Semi + Final!)
+        if (!Array.isArray(bracket.woodenSpoonSemiFinals) || bracket.woodenSpoonSemiFinals.length !== 2) {
+          bracket.woodenSpoonSemiFinals = [
+            { id: 'spoon_sf_0', p1: null, p2: null, winner: null, loser: null },
+            { id: 'spoon_sf_1', p1: null, p2: null, winner: null, loser: null },
+          ];
+        }
+        const ssf0 = bracket.woodenSpoonSemiFinals[0];
+        ssf0.p1 = realPqfLosers[0];
+        ssf0.p2 = makeBracketByeSlot('spoon_lone_bye');
+        ssf0.isBye = true;
+        ssf0.winner = realPqfLosers[0];
+
+        const ssf1 = bracket.woodenSpoonSemiFinals[1];
+        ssf1.p1 = psfs[0]?.winner
+          ? psfs[0].loser && !psfs[0].loser.isBye
+            ? refreshPlayerMeta(psfs[0].loser)
+            : makeBracketByeSlot('spoon_psf0')
+          : null;
+        ssf1.p1PendingLabel = ssf1.p1 ? null : 'Awaiting Plate SF 1 Loser';
+        ssf1.p2 = psfs[1]?.winner
+          ? psfs[1].loser && !psfs[1].loser.isBye
+            ? refreshPlayerMeta(psfs[1].loser)
+            : makeBracketByeSlot('spoon_psf1')
+          : null;
+        ssf1.p2PendingLabel = ssf1.p2 ? null : 'Awaiting Plate SF 2 Loser';
+
+        if (ssf1.winner && !ssf1.isBye) {
+          const wId = ssf1.winner.id;
+          if ((!ssf1.p1 || ssf1.p1.id !== wId) && (!ssf1.p2 || ssf1.p2.id !== wId)) {
+            ssf1.winner = null;
+            ssf1.loser = null;
+          }
+        } else if (ssf1.isBye) {
+          ssf1.isBye = false;
+          ssf1.winner = null;
+        }
+        if (ssf1.p1 && ssf1.p2 && (ssf1.p1.isBye || ssf1.p2.isBye)) {
+          ssf1.isBye = true;
+          ssf1.winner = !ssf1.p1.isBye ? ssf1.p1 : !ssf1.p2.isBye ? ssf1.p2 : makeBracketByeSlot('spoon_ssf1_dbl');
+        }
+
+        bracket.woodenSpoonMatch.p1 = ssf0.winner;
+        bracket.woodenSpoonMatch.p1PendingLabel = null;
+        bracket.woodenSpoonMatch.p2 = ssf1.winner || null;
+        bracket.woodenSpoonMatch.p2PendingLabel = ssf1.winner ? null : 'Awaiting Spoon Semi Winner';
+      } else {
+        // Standard 16-player Wooden Spoon: 4 Plate QF feeders -> 2 Spoon Semi-Finals -> 1 Wooden Spoon Final
+        if (!Array.isArray(bracket.woodenSpoonSemiFinals) || bracket.woodenSpoonSemiFinals.length !== 2) {
+          bracket.woodenSpoonSemiFinals = [
+            { id: 'spoon_sf_0', p1: null, p2: null, winner: null, loser: null },
+            { id: 'spoon_sf_1', p1: null, p2: null, winner: null, loser: null },
+          ];
+        }
+        const resolvePqfLoser = (pqf, idx) => {
+          if (!pqf || !pqf.winner) return { player: null, pending: `Awaiting Plate QF ${idx + 1} Loser` };
+          if (pqf.isBye || !pqf.loser || pqf.loser.isBye) {
+            return { player: makeBracketByeSlot(`spoon_pqf_${idx}`), pending: null };
+          }
+          return { player: refreshPlayerMeta(pqf.loser), pending: null };
+        };
+
+        bracket.woodenSpoonSemiFinals.forEach((ssf, sIdx) => {
+          const left = resolvePqfLoser(pqfs[sIdx * 2], sIdx * 2);
+          const right = resolvePqfLoser(pqfs[sIdx * 2 + 1], sIdx * 2 + 1);
+          ssf.p1 = left.player;
+          ssf.p1PendingLabel = left.pending;
+          ssf.p2 = right.player;
+          ssf.p2PendingLabel = right.pending;
+
+          if (ssf.winner && !ssf.isBye) {
+            const wId = ssf.winner.id;
+            if ((!ssf.p1 || ssf.p1.id !== wId) && (!ssf.p2 || ssf.p2.id !== wId)) {
+              ssf.winner = null;
+              ssf.loser = null;
+            }
+          } else if (ssf.isBye) {
+            ssf.isBye = false;
+            ssf.winner = null;
+            ssf.loser = null;
+          }
+
+          if (ssf.p1 && ssf.p2) {
+            if (ssf.p1.isBye && ssf.p2.isBye) {
+              ssf.isBye = true;
+              ssf.winner = makeBracketByeSlot(`spoon_ssf_dbl_${sIdx}`);
+            } else if (ssf.p1.isBye && !ssf.p2.isBye) {
+              ssf.isBye = true;
+              ssf.winner = ssf.p2;
+              ssf.loser = ssf.p1;
+            } else if (!ssf.p1.isBye && ssf.p2.isBye) {
+              ssf.isBye = true;
+              ssf.winner = ssf.p1;
+              ssf.loser = ssf.p2;
+            }
+          }
+        });
+
+        bracket.woodenSpoonMatch.p1 = bracket.woodenSpoonSemiFinals[0].winner || null;
+        bracket.woodenSpoonMatch.p1PendingLabel = bracket.woodenSpoonMatch.p1 ? null : 'Awaiting Spoon Semi 1';
+        bracket.woodenSpoonMatch.p2 = bracket.woodenSpoonSemiFinals[1].winner || null;
+        bracket.woodenSpoonMatch.p2PendingLabel = bracket.woodenSpoonMatch.p2 ? null : 'Awaiting Spoon Semi 2';
+      }
+
+      // Finalize Wooden Spoon Final bye/winner check for 16-player
+      const sm = bracket.woodenSpoonMatch;
+      if (sm.winner && !sm.isBye) {
+        const wId = sm.winner.id;
+        if ((!sm.p1 || sm.p1.id !== wId) && (!sm.p2 || sm.p2.id !== wId)) {
+          sm.winner = null;
+          sm.loser = null;
+        }
+      } else if (sm.isBye) {
+        sm.isBye = false;
+        sm.winner = null;
+        sm.loser = null;
+      }
+      if (sm.p1 && sm.p2) {
+        if (sm.p1.isBye && sm.p2.isBye) {
+          sm.isBye = true;
+          sm.winner = null;
+        } else if (sm.p1.isBye && !sm.p2.isBye) {
+          sm.isBye = true;
+          sm.winner = sm.p2;
+          sm.loser = sm.p1;
+        } else if (!sm.p1.isBye && sm.p2.isBye) {
+          sm.isBye = true;
+          sm.winner = sm.p1;
+          sm.loser = sm.p2;
+        }
+      }
+    }
+  }
+
+  return bracket;
+}
+window.reconcileKnockoutProgression = reconcileKnockoutProgression;
+
 // Knockout Cup Generator & Progression (Audio 3)
 window.generateKnockoutTournament = function (forceSize = null) {
   // 1. Gather all pupils who are checked in / present today
@@ -6612,6 +7693,10 @@ window.generateKnockoutTournament = function (forceSize = null) {
     );
     return;
   }
+
+  pushChessUndoSnapshot(
+    chessState.knockoutBracket ? 'Re-Seed Tournament Bracket' : 'Create Tournament Bracket',
+  );
 
   // 2. Strict Rank & Rating Seeding: Seed 1 = #1 ranked, Seed 2 = #2, etc.
   presentPupils.sort(
@@ -6639,6 +7724,7 @@ window.generateKnockoutTournament = function (forceSize = null) {
       participants.push({
         ...presentPupils[i],
         seed: i + 1,
+        hadR1Bye: false,
       });
     } else {
       participants.push({
@@ -6695,12 +7781,13 @@ window.generateKnockoutTournament = function (forceSize = null) {
       isBye: Boolean(p1?.isBye || p2?.isBye),
     };
 
-    // Auto-advance if one participant is a BYE!
     if (match.isBye) {
       if (p1 && !p1.isBye) {
+        p1.hadR1Bye = true;
         match.winner = p1;
         match.loser = p2;
       } else if (p2 && !p2.isBye) {
+        p2.hadR1Bye = true;
         match.winner = p2;
         match.loser = p1;
       }
@@ -6714,48 +7801,34 @@ window.generateKnockoutTournament = function (forceSize = null) {
 
   if (tournamentSize === 4) {
     roundNames = ['Semi-Finals', 'Championship Final'];
-    rounds.push([{ id: 'ko_final', p1: null, p2: null, winner: null }]);
+    rounds.push([{ id: 'ko_final', p1: null, p2: null, winner: null, loser: null }]);
   } else if (tournamentSize === 8) {
     roundNames = ['Quarter-Finals', 'Semi-Finals', 'Championship Final'];
     rounds.push([
-      { id: 'ko_sf_0', p1: null, p2: null, winner: null },
-      { id: 'ko_sf_1', p1: null, p2: null, winner: null },
+      { id: 'ko_sf_0', p1: null, p2: null, winner: null, loser: null },
+      { id: 'ko_sf_1', p1: null, p2: null, winner: null, loser: null },
     ]);
-    rounds.push([{ id: 'ko_final', p1: null, p2: null, winner: null }]);
+    rounds.push([{ id: 'ko_final', p1: null, p2: null, winner: null, loser: null }]);
   } else if (tournamentSize === 16) {
     roundNames = ['Round of 16', 'Quarter-Finals', 'Semi-Finals', 'Championship Final'];
     rounds.push([
-      { id: 'ko_qf_0', p1: null, p2: null, winner: null },
-      { id: 'ko_qf_1', p1: null, p2: null, winner: null },
-      { id: 'ko_qf_2', p1: null, p2: null, winner: null },
-      { id: 'ko_qf_3', p1: null, p2: null, winner: null },
+      { id: 'ko_qf_0', p1: null, p2: null, winner: null, loser: null },
+      { id: 'ko_qf_1', p1: null, p2: null, winner: null, loser: null },
+      { id: 'ko_qf_2', p1: null, p2: null, winner: null, loser: null },
+      { id: 'ko_qf_3', p1: null, p2: null, winner: null, loser: null },
     ]);
     rounds.push([
-      { id: 'ko_sf_0', p1: null, p2: null, winner: null },
-      { id: 'ko_sf_1', p1: null, p2: null, winner: null },
+      { id: 'ko_sf_0', p1: null, p2: null, winner: null, loser: null },
+      { id: 'ko_sf_1', p1: null, p2: null, winner: null, loser: null },
     ]);
-    rounds.push([{ id: 'ko_final', p1: null, p2: null, winner: null }]);
+    rounds.push([{ id: 'ko_final', p1: null, p2: null, winner: null, loser: null }]);
   }
 
-  // Pre-advance any Round 1 BYE winners into Round 2 slots
-  round1Matches.forEach((m, mIdx) => {
-    if (m.winner && m.isBye && rounds[1]) {
-      const nextMIdx = Math.floor(mIdx / 2);
-      const nextMatch = rounds[1][nextMIdx];
-      if (nextMatch) {
-        if (mIdx % 2 === 0) {
-          nextMatch.p1 = m.winner;
-        } else {
-          nextMatch.p2 = m.winner;
-        }
-      }
-    }
-  });
-
-  // Setup Challenger Plate & Bronze Match
+  // Setup Challenger Plate, Wooden Spoon & Bronze Match
   let plateRounds = [];
   let plateRoundNames = [];
   let woodenSpoonMatch = null;
+  let woodenSpoonSemiFinals = null;
   let cupBronzeMatch = null;
 
   if (tournamentSize === 8) {
@@ -6798,6 +7871,10 @@ window.generateKnockoutTournament = function (forceSize = null) {
       ],
       [{ id: 'plate_final', p1: null, p2: null, winner: null, loser: null }],
     ];
+    woodenSpoonSemiFinals = [
+      { id: 'spoon_sf_0', p1: null, p2: null, winner: null, loser: null },
+      { id: 'spoon_sf_1', p1: null, p2: null, winner: null, loser: null },
+    ];
     woodenSpoonMatch = {
       id: 'wooden_spoon_final',
       p1: null,
@@ -6819,18 +7896,19 @@ window.generateKnockoutTournament = function (forceSize = null) {
     plateRounds = [[{ id: 'plate_final', p1: null, p2: null, winner: null, loser: null }]];
   }
 
-  chessState.knockoutBracket = {
+  chessState.knockoutBracket = reconcileKnockoutProgression({
     tournamentSize,
     roundNames,
     rounds,
     cupBronzeMatch,
     plateRoundNames,
     plateRounds,
+    woodenSpoonSemiFinals,
     woodenSpoonMatch,
     casualMatches: [],
     seededAt: Date.now(),
     participantCount: N,
-  };
+  });
 
   saveChessState();
   chessState.activeTab = 'knockout';
@@ -6838,7 +7916,7 @@ window.generateKnockoutTournament = function (forceSize = null) {
 
   const byeCount = tournamentSize - N;
   showChessToast(
-    `⚡ Seeded ${N} pupils by ranking into a ${tournamentSize}-bracket! ${byeCount > 0 ? `(${byeCount} Top-Seed Byes awarded)` : ''}`,
+    `⚡ Seeded ${N} pupils into a ${tournamentSize}-bracket! ${byeCount > 0 ? `(${byeCount} R1 Byes — first-loss Plate protection active!)` : ''}`,
     'success',
   );
 };
@@ -6847,12 +7925,16 @@ window.advanceKnockoutWinner = function (roundIdx, matchIdx, winnerId) {
   const bracket = chessState.knockoutBracket;
   if (!bracket) return;
 
-  const match = bracket.rounds[roundIdx][matchIdx];
+  const match = bracket.rounds[roundIdx]?.[matchIdx];
   if (!match || !match.p1 || !match.p2) return;
   if (match.isBye || match.winner) return;
 
   const winner = match.p1.id === winnerId ? match.p1 : match.p2;
   const loser = match.p1.id === winnerId ? match.p2 : match.p1;
+  const roundLabel = bracket.roundNames?.[roundIdx] || 'Championship Match';
+
+  pushChessUndoSnapshot(`${winner.name} won ${roundLabel}`);
+
   match.winner = winner;
   match.loser = loser;
 
@@ -6860,80 +7942,41 @@ window.advanceKnockoutWinner = function (roundIdx, matchIdx, winnerId) {
   chessState.matches.push({
     id: 'ko_m_' + Date.now(),
     date: 'Thursday Period 6 Championship',
-    round: bracket.roundNames[roundIdx] || 'Championship Match',
+    round: roundLabel,
     white: match.p1.name,
     black: match.p2.name,
+    whiteId: match.p1.id,
+    blackId: match.p2.id,
     whiteHouse: match.p1.house,
     blackHouse: match.p2.house,
     result: winner.id === match.p1.id ? '1-0' : '0-1',
     opening: 'Championship Cup Match',
   });
 
-  // Update player stats
-  winner.won++;
-  winner.games++;
-  winner.rating += 15;
-  loser.lost++;
-  loser.games++;
-  loser.rating = Math.max(800, loser.rating - 15);
+  // Update canonical player stats
+  applyCanonicalPlayerMatchStats(
+    match.p1,
+    match.p2,
+    winner.id === match.p1.id ? 'p1' : 'p2',
+    15,
+    15,
+  );
 
-  // Advance winner in the Championship Cup tree
-  if (roundIdx + 1 < bracket.rounds.length) {
-    const nextMatchIdx = Math.floor(matchIdx / 2);
-    const nextMatch = bracket.rounds[roundIdx + 1][nextMatchIdx];
-    if (nextMatch) {
-      if (matchIdx % 2 === 0) {
-        nextMatch.p1 = winner;
-      } else {
-        nextMatch.p2 = winner;
-      }
-    }
-  }
+  // Reconcile Cup, First-Loss Challenger Plate (including R1 Bye recipients losing in R2!), Bronze & Spoon!
+  reconcileKnockoutProgression(bracket);
 
-  // Route Round 1 losers into the Challenger Plate (ignoring BYEs)
-  if (roundIdx === 0 && bracket.plateRounds && bracket.plateRounds.length > 0 && loser && !loser.isBye) {
-    if (bracket.tournamentSize === 16 || bracket.tournamentSize === 8) {
-      const plateMatchIdx = Math.floor(matchIdx / 2);
-      const plateMatch = bracket.plateRounds[0][plateMatchIdx];
-      if (plateMatch) {
-        if (matchIdx % 2 === 0) {
-          plateMatch.p1 = loser;
-        } else {
-          plateMatch.p2 = loser;
-        }
-      }
-    } else if (bracket.tournamentSize === 4) {
-      const plateFinal = bracket.plateRounds[0][0];
-      if (plateFinal) {
-        if (matchIdx === 0) {
-          plateFinal.p1 = loser;
-        } else {
-          plateFinal.p2 = loser;
-        }
-      }
-    }
-  }
-
-  // Route Cup Semi-Final losers into 3rd Place Bronze Playoff!
-  if (roundIdx === 1 && bracket.tournamentSize === 8) {
-    if (!bracket.cupBronzeMatch) {
-      bracket.cupBronzeMatch = {
-        id: 'cup_bronze_final',
-        p1: null,
-        p2: null,
-        winner: null,
-        loser: null,
-      };
-    }
-    if (matchIdx === 0) {
-      bracket.cupBronzeMatch.p1 = loser;
-    } else {
-      bracket.cupBronzeMatch.p2 = loser;
-    }
-  }
+  const droppedToPlate =
+    (roundIdx === 0 && loser && !loser.isBye) ||
+    (roundIdx === 1 && loser && !loser.isBye && loser.hadR1Bye);
 
   saveChessState();
   renderChessHubView();
+  if (droppedToPlate && roundIdx === 1) {
+    showChessToast(
+      `🏆 ${winner.name} advances! ${loser.name} (had R1 Bye) enters the Challenger Plate!`,
+      'success',
+    );
+  }
   if (chessState.autoRePairEnabled && chessState.sessionActive) {
     setTimeout(() => {
       window.checkAndAutoPairFreePupils();
@@ -6945,15 +7988,17 @@ window.advancePlateWinner = function (roundIdx, matchIdx, winnerId) {
   const bracket = chessState.knockoutBracket;
   if (!bracket || !bracket.plateRounds) return;
 
-  const match = bracket.plateRounds[roundIdx][matchIdx];
-  if (!match || !match.p1 || !match.p2) return;
+  const match = bracket.plateRounds[roundIdx]?.[matchIdx];
+  if (!match || !match.p1 || !match.p2 || match.isBye || match.winner) return;
 
   const winner = match.p1.id === winnerId ? match.p1 : match.p2;
   const loser = match.p1.id === winnerId ? match.p2 : match.p1;
+  const roundName = bracket.plateRoundNames?.[roundIdx] || `Plate Round ${roundIdx + 1}`;
+
+  pushChessUndoSnapshot(`${winner.name} won ${roundName}`);
+
   match.winner = winner;
   match.loser = loser;
-
-  const roundName = bracket.plateRoundNames[roundIdx] || `Plate Round ${roundIdx + 1}`;
 
   // Record official match in history
   chessState.matches.push({
@@ -6962,50 +8007,23 @@ window.advancePlateWinner = function (roundIdx, matchIdx, winnerId) {
     round: roundName,
     white: match.p1.name,
     black: match.p2.name,
+    whiteId: match.p1.id,
+    blackId: match.p2.id,
     whiteHouse: match.p1.house,
     blackHouse: match.p2.house,
     result: winner.id === match.p1.id ? '1-0' : '0-1',
     opening: 'Challenger Plate Match',
   });
 
-  // Update player stats (+2 House points for Plate wins!)
-  winner.won++;
-  winner.games++;
-  winner.rating += 10;
-  loser.lost++;
-  loser.games++;
-  loser.rating = Math.max(800, loser.rating - 10);
+  applyCanonicalPlayerMatchStats(
+    match.p1,
+    match.p2,
+    winner.id === match.p1.id ? 'p1' : 'p2',
+    10,
+    10,
+  );
 
-  // If there is a next round in the Plate (e.g. from SF to Final in 8-player)
-  if (roundIdx + 1 < bracket.plateRounds.length) {
-    const nextMatchIdx = Math.floor(matchIdx / 2);
-    const nextMatch = bracket.plateRounds[roundIdx + 1][nextMatchIdx];
-    if (nextMatch) {
-      if (matchIdx % 2 === 0) {
-        nextMatch.p1 = winner;
-      } else {
-        nextMatch.p2 = winner;
-      }
-    }
-  }
-
-  // Route Plate Semi-Final losers into the Wooden Spoon Shield match!
-  if (roundIdx === 0 && bracket.tournamentSize === 8) {
-    if (!bracket.woodenSpoonMatch) {
-      bracket.woodenSpoonMatch = {
-        id: 'wooden_spoon_final',
-        p1: null,
-        p2: null,
-        winner: null,
-        loser: null,
-      };
-    }
-    if (matchIdx === 0) {
-      bracket.woodenSpoonMatch.p1 = loser;
-    } else {
-      bracket.woodenSpoonMatch.p2 = loser;
-    }
-  }
+  reconcileKnockoutProgression(bracket);
 
   saveChessState();
   renderChessHubView();
@@ -7016,15 +8034,61 @@ window.advancePlateWinner = function (roundIdx, matchIdx, winnerId) {
   }
 };
 
+window.advanceWoodenSpoonSemiWinner = function (semiIdx, winnerId) {
+  const bracket = chessState.knockoutBracket;
+  if (!bracket || !Array.isArray(bracket.woodenSpoonSemiFinals)) return;
+
+  const match = bracket.woodenSpoonSemiFinals[semiIdx];
+  if (!match || !match.p1 || !match.p2 || match.isBye || match.winner) return;
+
+  const winner = match.p1.id === winnerId ? match.p1 : match.p2;
+  const loser = match.p1.id === winnerId ? match.p2 : match.p1;
+
+  pushChessUndoSnapshot(`${winner.name} won Spoon Semi ${semiIdx + 1}`);
+
+  match.winner = winner;
+  match.loser = loser;
+
+  chessState.matches.push({
+    id: 'spoon_sf_m_' + Date.now(),
+    date: 'Thursday Period 6 Wooden Spoon',
+    round: `Wooden Spoon Semi-Final ${semiIdx + 1}`,
+    white: match.p1.name,
+    black: match.p2.name,
+    whiteId: match.p1.id,
+    blackId: match.p2.id,
+    whiteHouse: match.p1.house,
+    blackHouse: match.p2.house,
+    result: winner.id === match.p1.id ? '1-0' : '0-1',
+    opening: 'Wooden Spoon Consolation',
+  });
+
+  applyCanonicalPlayerMatchStats(
+    match.p1,
+    match.p2,
+    winner.id === match.p1.id ? 'p1' : 'p2',
+    8,
+    5,
+  );
+
+  reconcileKnockoutProgression(bracket);
+  saveChessState();
+  renderChessHubView();
+  showChessToast(`🥄 ${winner.name} advances to the Wooden Spoon Shield Final!`, 'success');
+};
+
 window.advanceWoodenSpoonWinner = function (winnerId) {
   const bracket = chessState.knockoutBracket;
   if (!bracket || !bracket.woodenSpoonMatch) return;
 
   const match = bracket.woodenSpoonMatch;
-  if (!match.p1 || !match.p2) return;
+  if (!match.p1 || !match.p2 || match.isBye || match.winner) return;
 
   const winner = match.p1.id === winnerId ? match.p1 : match.p2;
   const loser = match.p1.id === winnerId ? match.p2 : match.p1;
+
+  pushChessUndoSnapshot(`${winner.name} won Wooden Spoon Shield`);
+
   match.winner = winner;
   match.loser = loser;
 
@@ -7034,23 +8098,27 @@ window.advanceWoodenSpoonWinner = function (winnerId) {
     round: 'Wooden Spoon Shield Final',
     white: match.p1.name,
     black: match.p2.name,
+    whiteId: match.p1.id,
+    blackId: match.p2.id,
     whiteHouse: match.p1.house,
     blackHouse: match.p2.house,
     result: winner.id === match.p1.id ? '1-0' : '0-1',
     opening: 'Wooden Spoon Consolation',
   });
 
-  winner.won++;
-  winner.games++;
-  winner.rating += 8;
-  loser.lost++;
-  loser.games++;
-  loser.rating = Math.max(800, loser.rating - 5);
+  applyCanonicalPlayerMatchStats(
+    match.p1,
+    match.p2,
+    winner.id === match.p1.id ? 'p1' : 'p2',
+    8,
+    5,
+  );
 
+  reconcileKnockoutProgression(bracket);
   saveChessState();
   renderChessHubView();
   showChessToast(
-    `🥄 Wooden Spoon Shield won by ${winner.name} (+1 House Point)! Fantastic fighting spirit!`,
+    `🥄 Wooden Spoon Shield won by ${winner.name} (+3 House Points)! Fantastic fighting spirit!`,
     'success',
   );
   if (chessState.autoRePairEnabled && chessState.sessionActive) {
@@ -7065,10 +8133,13 @@ window.advanceCupBronzeWinner = function (winnerId) {
   if (!bracket || !bracket.cupBronzeMatch) return;
 
   const match = bracket.cupBronzeMatch;
-  if (!match.p1 || !match.p2) return;
+  if (!match.p1 || !match.p2 || match.isBye || match.winner) return;
 
   const winner = match.p1.id === winnerId ? match.p1 : match.p2;
   const loser = match.p1.id === winnerId ? match.p2 : match.p1;
+
+  pushChessUndoSnapshot(`${winner.name} won 3rd Place Playoff`);
+
   match.winner = winner;
   match.loser = loser;
 
@@ -7078,22 +8149,26 @@ window.advanceCupBronzeWinner = function (winnerId) {
     round: '3rd Place Bronze Playoff',
     white: match.p1.name,
     black: match.p2.name,
+    whiteId: match.p1.id,
+    blackId: match.p2.id,
     whiteHouse: match.p1.house,
     blackHouse: match.p2.house,
     result: winner.id === match.p1.id ? '1-0' : '0-1',
     opening: '3rd Place Bronze Match',
   });
 
-  winner.won++;
-  winner.games++;
-  winner.rating += 12;
-  loser.lost++;
-  loser.games++;
-  loser.rating = Math.max(800, loser.rating - 8);
+  applyCanonicalPlayerMatchStats(
+    match.p1,
+    match.p2,
+    winner.id === match.p1.id ? 'p1' : 'p2',
+    12,
+    8,
+  );
 
+  reconcileKnockoutProgression(bracket);
   saveChessState();
   renderChessHubView();
-  showChessToast(`🥉 3rd Place Bronze Medal won by ${winner.name} (+2 House Points)!`, 'success');
+  showChessToast(`🥉 3rd Place Bronze Medal won by ${winner.name} (+3 House Points)!`, 'success');
   if (chessState.autoRePairEnabled && chessState.sessionActive) {
     setTimeout(() => {
       window.checkAndAutoPairFreePupils();
@@ -7105,51 +8180,28 @@ window.repairFreePupilsCasual = function () {
   const bracket = chessState.knockoutBracket;
   if (!bracket) return;
 
+  reconcileKnockoutProgression(bracket);
+
   const busyIds = new Set();
-  bracket.rounds.forEach((rnd) => {
-    rnd.forEach((m) => {
-      if (m.p1 && m.p2 && !m.winner) {
-        busyIds.add(m.p1.id);
-        busyIds.add(m.p2.id);
-      }
-    });
-  });
+  const markBusyIfLive = (m) => {
+    if (m && m.p1 && m.p2 && !m.p1.isBye && !m.p2.isBye && !m.isBye && !m.winner && !m.isDraw) {
+      busyIds.add(m.p1.id);
+      busyIds.add(m.p2.id);
+    }
+  };
+
+  bracket.rounds.forEach((rnd) => rnd.forEach(markBusyIfLive));
   if (bracket.plateRounds) {
-    bracket.plateRounds.forEach((rnd) => {
-      rnd.forEach((m) => {
-        if (m.p1 && m.p2 && !m.winner) {
-          busyIds.add(m.p1.id);
-          busyIds.add(m.p2.id);
-        }
-      });
-    });
+    bracket.plateRounds.forEach((rnd) => rnd.forEach(markBusyIfLive));
+  }
+  if (bracket.woodenSpoonSemiFinals) {
+    bracket.woodenSpoonSemiFinals.forEach(markBusyIfLive);
   }
   if (bracket.casualMatches) {
-    bracket.casualMatches.forEach((m) => {
-      if (m.p1 && m.p2 && !m.winner) {
-        busyIds.add(m.p1.id);
-        busyIds.add(m.p2.id);
-      }
-    });
+    bracket.casualMatches.forEach(markBusyIfLive);
   }
-  if (
-    bracket.woodenSpoonMatch &&
-    bracket.woodenSpoonMatch.p1 &&
-    bracket.woodenSpoonMatch.p2 &&
-    !bracket.woodenSpoonMatch.winner
-  ) {
-    busyIds.add(bracket.woodenSpoonMatch.p1.id);
-    busyIds.add(bracket.woodenSpoonMatch.p2.id);
-  }
-  if (
-    bracket.cupBronzeMatch &&
-    bracket.cupBronzeMatch.p1 &&
-    bracket.cupBronzeMatch.p2 &&
-    !bracket.cupBronzeMatch.winner
-  ) {
-    busyIds.add(bracket.cupBronzeMatch.p1.id);
-    busyIds.add(bracket.cupBronzeMatch.p2.id);
-  }
+  markBusyIfLive(bracket.woodenSpoonMatch);
+  markBusyIfLive(bracket.cupBronzeMatch);
 
   const pool = chessState.players.filter(
     (p) => chessState.checkedInPlayerIds.includes(p.id) && !busyIds.has(p.id),
@@ -7163,19 +8215,37 @@ window.repairFreePupilsCasual = function () {
     return;
   }
 
-  const shuffled = [...pool].sort(() => 0.5 - Math.random());
+  pushChessUndoSnapshot(`Rapid Re-Pair (${Math.floor(pool.length / 2) * 2} pupils)`);
+
+  // Smart rapid pairing: balance by rating & avoid recent repeat opponents or same house when possible
+  const sortedPool = [...pool].sort((a, b) => (b.rating || 1000) - (a.rating || 1000));
   if (!bracket.casualMatches) bracket.casualMatches = [];
 
   let count = 0;
-  while (shuffled.length >= 2) {
-    const p1 = shuffled.shift();
-    const p2 = shuffled.shift();
+  while (sortedPool.length >= 2) {
+    const p1 = sortedPool.shift();
+    let partnerIdx = sortedPool.findIndex(
+      (cand) =>
+        cand.house !== p1.house &&
+        !bracket.casualMatches.some(
+          (cm) =>
+            (cm.p1?.id === p1.id && cm.p2?.id === cand.id) ||
+            (cm.p1?.id === cand.id && cm.p2?.id === p1.id),
+        ),
+    );
+    if (partnerIdx === -1) {
+      partnerIdx = sortedPool.findIndex((cand) => cand.house !== p1.house);
+    }
+    if (partnerIdx === -1) partnerIdx = 0;
+    const p2 = sortedPool.splice(partnerIdx, 1)[0];
+
     bracket.casualMatches.push({
       id: 'casual_' + Date.now() + '_' + count,
-      p1,
-      p2,
+      p1: { ...p1 },
+      p2: { ...p2 },
       time: '10-Min Rapid',
       winner: null,
+      isDraw: false,
     });
     count++;
   }
@@ -7183,19 +8253,52 @@ window.repairFreePupilsCasual = function () {
   saveChessState();
   renderChessHubView();
   showChessToast(
-    `⚡ Paired ${count * 2} free pupils for 10-minute rapid games! Nobody sits idle.`,
+    `⚡ Paired ${count * 2} free pupils for rapid games! Nobody sits idle.`,
     'success',
   );
 };
 
-window.advanceCasualMatch = function (casualId, winnerId) {
+window.advanceCasualMatch = function (casualId, winnerIdOrDraw) {
   const bracket = chessState.knockoutBracket;
   if (!bracket || !bracket.casualMatches) return;
   const match = bracket.casualMatches.find((m) => m.id === casualId);
-  if (!match || match.winner) return;
+  if (!match || match.winner || match.isDraw) return;
 
-  const winner = match.p1.id === winnerId ? match.p1 : match.p2;
-  const loser = match.p1.id === winnerId ? match.p2 : match.p1;
+  if (winnerIdOrDraw === 'draw') {
+    pushChessUndoSnapshot(`Rapid Draw: ${match.p1.name} vs ${match.p2.name}`);
+    match.isDraw = true;
+
+    chessState.matches.push({
+      id: 'cas_m_' + Date.now(),
+      date: 'Thursday Period 6 Casual Rapid',
+      round: 'Casual Rapid Match',
+      white: match.p1.name,
+      black: match.p2.name,
+      whiteId: match.p1.id,
+      blackId: match.p2.id,
+      whiteHouse: match.p1.house,
+      blackHouse: match.p2.house,
+      result: '½-½',
+      opening: 'Period 6 Rapid Draw',
+    });
+
+    applyCanonicalPlayerMatchStats(match.p1, match.p2, 'draw', 0, 0);
+    saveChessState();
+    renderChessHubView();
+    showChessToast(
+      `🤝 Draw logged: ${match.p1.name} ½–½ ${match.p2.name} (+2 House points each)!`,
+      'info',
+    );
+    if (chessState.autoRePairEnabled && chessState.sessionActive) {
+      setTimeout(() => {
+        window.checkAndAutoPairFreePupils();
+      }, 120);
+    }
+    return;
+  }
+
+  const winner = match.p1.id === winnerIdOrDraw ? match.p1 : match.p2;
+  pushChessUndoSnapshot(`Rapid Win: ${winner.name}`);
   match.winner = winner;
 
   chessState.matches.push({
@@ -7204,22 +8307,25 @@ window.advanceCasualMatch = function (casualId, winnerId) {
     round: 'Casual Rapid Match',
     white: match.p1.name,
     black: match.p2.name,
+    whiteId: match.p1.id,
+    blackId: match.p2.id,
     whiteHouse: match.p1.house,
     blackHouse: match.p2.house,
     result: winner.id === match.p1.id ? '1-0' : '0-1',
     opening: 'Period 6 Rapid Game',
   });
 
-  winner.won++;
-  winner.games++;
-  winner.rating += 8;
-  loser.lost++;
-  loser.games++;
-  loser.rating = Math.max(800, loser.rating - 8);
+  applyCanonicalPlayerMatchStats(
+    match.p1,
+    match.p2,
+    winner.id === match.p1.id ? 'p1' : 'p2',
+    8,
+    8,
+  );
 
   saveChessState();
   renderChessHubView();
-  showChessToast(`Logged match! ${winner.name} won (+3 House points).`, 'success');
+  showChessToast(`🏆 Logged rapid match! ${winner.name} won (+3 House points).`, 'success');
   if (chessState.autoRePairEnabled && chessState.sessionActive) {
     setTimeout(() => {
       window.checkAndAutoPairFreePupils();
@@ -7228,6 +8334,9 @@ window.advanceCasualMatch = function (casualId, winnerId) {
 };
 
 window.resetKnockoutTournament = function () {
+  if (chessState.knockoutBracket) {
+    pushChessUndoSnapshot('Clear Tournament Bracket');
+  }
   chessState.knockoutBracket = null;
   saveChessState();
   renderChessHubView();
@@ -7275,7 +8384,7 @@ export function getActiveMatches() {
     if (Array.isArray(bracket.rounds)) {
       bracket.rounds.forEach((round, rIdx) => {
         round.forEach((m, mIdx) => {
-          if (m.p1 && m.p2 && !m.winner && !m.isDraw) {
+          if (m.p1 && m.p2 && !m.p1.isBye && !m.p2.isBye && !m.isBye && !m.winner && !m.isDraw) {
             active.push({
               type: 'knockout',
               rIdx,
@@ -7294,7 +8403,7 @@ export function getActiveMatches() {
     if (Array.isArray(bracket.plateRounds)) {
       bracket.plateRounds.forEach((round, rIdx) => {
         round.forEach((m, mIdx) => {
-          if (m.p1 && m.p2 && !m.winner && !m.isDraw) {
+          if (m.p1 && m.p2 && !m.p1.isBye && !m.p2.isBye && !m.isBye && !m.winner && !m.isDraw) {
             active.push({
               type: 'plate',
               rIdx,
@@ -7308,6 +8417,23 @@ export function getActiveMatches() {
             });
           }
         });
+      });
+    }
+    if (Array.isArray(bracket.woodenSpoonSemiFinals)) {
+      bracket.woodenSpoonSemiFinals.forEach((m, mIdx) => {
+        if (m.p1 && m.p2 && !m.p1.isBye && !m.p2.isBye && !m.isBye && !m.winner && !m.isDraw) {
+          active.push({
+            type: 'spoon_semi',
+            rIdx: 0,
+            mIdx,
+            id: m.id || `spoon_sf_${mIdx}`,
+            boardNum: boardIdx++,
+            p1: getCleanMatchPlayer(m.p1),
+            p2: getCleanMatchPlayer(m.p2),
+            title: `Wooden Spoon Semi ${mIdx + 1}`,
+            badge: 'Wooden Spoon Shield',
+          });
+        }
       });
     }
     if (Array.isArray(bracket.casualMatches)) {
@@ -7331,6 +8457,9 @@ export function getActiveMatches() {
       bracket.cupBronzeMatch &&
       bracket.cupBronzeMatch.p1 &&
       bracket.cupBronzeMatch.p2 &&
+      !bracket.cupBronzeMatch.p1.isBye &&
+      !bracket.cupBronzeMatch.p2.isBye &&
+      !bracket.cupBronzeMatch.isBye &&
       !bracket.cupBronzeMatch.winner &&
       !bracket.cupBronzeMatch.isDraw
     ) {
@@ -7350,6 +8479,9 @@ export function getActiveMatches() {
       bracket.woodenSpoonMatch &&
       bracket.woodenSpoonMatch.p1 &&
       bracket.woodenSpoonMatch.p2 &&
+      !bracket.woodenSpoonMatch.p1.isBye &&
+      !bracket.woodenSpoonMatch.p2.isBye &&
+      !bracket.woodenSpoonMatch.isBye &&
       !bracket.woodenSpoonMatch.winner &&
       !bracket.woodenSpoonMatch.isDraw
     ) {
@@ -7522,33 +8654,30 @@ window.recordBoardResult = function (type, rIdx, mIdx, resultWinnerId, matchId) 
       window.advancePlateWinner(rIdx, mIdx, resultWinnerId);
     }
   } else if (type === 'casual') {
-    const match = bracket.casualMatches?.find((m) => m.id === matchId);
-    if (!match || match.winner || match.isDraw) return;
+    window.advanceCasualMatch(matchId, resultWinnerId === 'draw' ? 'draw' : resultWinnerId);
+  } else if (type === 'spoon_semi') {
     if (resultWinnerId === 'draw') {
-      match.isDraw = true;
-      match.p1.drawn = (match.p1.drawn || 0) + 1;
-      match.p2.drawn = (match.p2.drawn || 0) + 1;
-      match.p1.games++;
-      match.p2.games++;
-      chessState.matches.push({
-        id: 'cas_m_' + Date.now(),
-        date: 'Thursday Period 6 Casual Rapid',
-        round: 'Casual Rapid Match',
-        white: match.p1.name,
-        black: match.p2.name,
-        whiteHouse: match.p1.house,
-        blackHouse: match.p2.house,
-        result: '½-½',
-        opening: 'Period 6 Rapid Game',
-      });
-      saveChessState();
-      renderChessHubView();
-      showChessToast(
-        `Logged: Draw between ${match.p1.name} and ${match.p2.name} (+2 House pts each)!`,
-        'info',
-      );
+      const match = bracket.woodenSpoonSemiFinals?.[mIdx];
+      if (match && match.p1 && match.p2) {
+        pushChessUndoSnapshot(`Spoon Semi Draw: ${match.p1.name} vs ${match.p2.name}`);
+        match.isDraw = true;
+        applyCanonicalPlayerMatchStats(match.p1, match.p2, 'draw', 0, 0);
+        chessState.matches.push({
+          id: 'spoon_sf_m_' + Date.now(),
+          date: 'Thursday Period 6 Wooden Spoon',
+          round: `Wooden Spoon Semi-Final ${mIdx + 1}`,
+          white: match.p1.name,
+          black: match.p2.name,
+          whiteHouse: match.p1.house,
+          blackHouse: match.p2.house,
+          result: '½-½',
+          opening: 'Wooden Spoon Draw',
+        });
+        saveChessState();
+        renderChessHubView();
+      }
     } else {
-      window.advanceCasualMatch(matchId, resultWinnerId);
+      window.advanceWoodenSpoonSemiWinner(mIdx, resultWinnerId);
     }
   } else if (type === 'wooden_spoon') {
     const match = bracket.woodenSpoonMatch;
@@ -7691,33 +8820,101 @@ window.resumePeriod6Session = function () {
 };
 
 window.toggleSessionTimer = function () {
+  if (!chessState.sessionTimeRemaining || chessState.sessionTimeRemaining <= 0) {
+    chessState.sessionTimeRemaining = chessState.roundTimerDuration || 600;
+  }
+  chessState.roundTimerExpiredAlert = false;
+  chessState.sessionActive = true;
   chessState.sessionTimerRunning = !chessState.sessionTimerRunning;
+  saveChessState();
   renderChessHubView();
   showChessToast(
-    chessState.sessionTimerRunning ? '▶ Session clock running' : '⏸ Session clock paused',
+    chessState.sessionTimerRunning ? '▶ Round timer started!' : '⏸ Round timer paused.',
     'info',
   );
 };
 
 window.resetSessionTimer = function () {
-  chessState.sessionTimeRemaining = 3600;
-  chessState.sessionTimerRunning = true;
-  chessState.sessionActive = true;
+  const dur = chessState.roundTimerDuration || 600;
+  chessState.sessionTimeRemaining = dur;
+  chessState.roundTimerExpiredAlert = false;
+  chessState.sessionTimerRunning = false;
   saveChessState();
   renderChessHubView();
-  showChessToast('⏱ Session clock reset to 60:00.', 'info');
+  showChessToast(`⏱ Timer reset to ${Math.round(dur / 60)}:00.`, 'info');
 };
 
 window.setRoundTimer = function (mins) {
-  chessState.sessionTimeRemaining = mins * 60;
+  const secs = Math.max(60, Math.round(mins * 60));
+  chessState.roundTimerDuration = secs;
+  chessState.sessionTimeRemaining = secs;
+  chessState.roundTimerExpiredAlert = false;
   chessState.sessionTimerRunning = true;
   chessState.sessionActive = true;
   saveChessState();
   renderChessHubView();
-  showChessToast(`⏱ Round countdown set to ${mins}:00!`, 'info');
+  showChessToast(`⏱ Round countdown started: ${mins}:00!`, 'info');
+};
+
+window.adjustRoundTimer = function (deltaSecs) {
+  const cur = typeof chessState.sessionTimeRemaining === 'number' ? chessState.sessionTimeRemaining : 600;
+  chessState.sessionTimeRemaining = Math.max(0, cur + deltaSecs);
+  if (chessState.sessionTimeRemaining > 0) {
+    chessState.roundTimerExpiredAlert = false;
+  }
+  saveChessState();
+  renderChessHubView();
+};
+
+window.dismissRoundTimerAlert = function () {
+  chessState.roundTimerExpiredAlert = false;
+  renderChessHubView();
+};
+
+window.undoTournamentAction = function () {
+  if (chessState.userRole !== 'teacher') {
+    showChessToast('🔒 Teacher mode required to undo actions.', 'error');
+    return;
+  }
+  if (!Array.isArray(chessState.undoStack) || chessState.undoStack.length === 0) {
+    loadChessUndoStack();
+  }
+  if (!Array.isArray(chessState.undoStack) || chessState.undoStack.length === 0) {
+    showChessToast('Nothing left to undo!', 'info');
+    return;
+  }
+
+  const snap = chessState.undoStack.pop();
+  persistChessUndoStack();
+
+  chessState.players = snap.players || chessState.players;
+  chessState.matches = snap.matches || [];
+  chessState.checkedInPlayerIds = snap.checkedInPlayerIds || [];
+  chessState.activePairings = snap.activePairings || [];
+  chessState.knockoutBracket = snap.knockoutBracket || null;
+  if (snap.clubModes) {
+    const keepFs = Boolean(chessState.clubModes?.tvFullscreen);
+    chessState.clubModes = { ...snap.clubModes, tvFullscreen: keepFs };
+  }
+  if (chessState.knockoutBracket) {
+    reconcileKnockoutProgression(chessState.knockoutBracket);
+  }
+  autoSortPlayersByPoints();
+  saveChessState();
+  renderChessHubView();
+
+  const remaining = chessState.undoStack.length;
+  showChessToast(
+    `↩️ Undid: ${snap.label}${remaining > 0 ? ` (${remaining} more undo step${remaining === 1 ? '' : 's'} ready)` : ''}`,
+    'info',
+  );
 };
 
 window.undoLastMatchResult = function () {
+  if (Array.isArray(chessState.undoStack) && chessState.undoStack.length > 0) {
+    window.undoTournamentAction();
+    return;
+  }
   if (!chessState.matches || chessState.matches.length === 0) {
     showChessToast('No matches to undo.', 'info');
     return;
@@ -7765,9 +8962,7 @@ window.undoLastMatchResult = function () {
     }
   }
 
-  // Auto-sort pupils by points (largest to smallest) after undo
   autoSortPlayersByPoints();
-
   saveChessState();
   renderChessHubView();
   showChessToast(`↩️ Reopened Board: ${lastMatch.white} vs ${lastMatch.black}!`, 'success');
@@ -8267,215 +9462,198 @@ export function renderWhiteboardModeView(sortedHouses) {
         </div>
       </div>
 
-      <!-- PIECE VALUES & 5-MINUTE RAPID ADJUDICATION MODAL OVERLAY -->
-      ${
-        chessState.showAdjudicationModal
-          ? `
-        <div id="adjudication-modal-overlay" style="position: fixed; inset: 0; background: rgba(3, 7, 18, 0.88); z-index: 99999; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(8px); padding: 18px; box-sizing: border-box;" onclick="if(event.target===this)window.closeAdjudicationModal()">
-          <div style="background: linear-gradient(145deg, #111827 0%, #0f172a 100%); border: 2px solid #d97706; border-radius: 18px; max-width: 860px; width: 100%; max-height: 92vh; overflow-y: auto; padding: 24px 28px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 35px rgba(217, 119, 6, 0.25); box-sizing: border-box; color: #f8fafc;">
-            
-            <!-- Modal Header -->
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px; border-bottom: 1.5px solid rgba(255,255,255,0.1); padding-bottom: 14px;">
-              <div style="display: flex; align-items: center; gap: 12px;">
-                <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(217, 119, 6, 0.15); border: 2px solid #d97706; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #fbbf24;">
-                  ⚖️
-                </div>
-                <div>
-                  <span style="font-size: 0.68rem; font-family: monospace; font-weight: 800; color: #fbbf24; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(217, 119, 6, 0.2); padding: 2px 7px; border-radius: 4px; border: 1px solid #d97706;">
-                    5-MINUTE RAPID ADJUDICATION
-                  </span>
-                  <h2 style="margin: 3px 0 0 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; color: #ffffff; font-weight: 800;">
-                    Piece Values & Material Count Rules
-                  </h2>
-                </div>
-              </div>
-              <button onclick="window.closeAdjudicationModal()" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #cbd5e1; font-size: 1.1rem; width: 34px; height: 34px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center;" title="Close (Esc)">
-                ✕
-              </button>
+      ${renderAdjudicationModalOverlay()}
+
+    </div>
+  `;
+}
+
+// Reusable Piece Values & Rapid Material Tally Calculator Modal (Works in Tournament Full Screen, Cup Tab & Whiteboard Mode)
+function renderAdjudicationModalOverlay() {
+  if (!chessState.showAdjudicationModal) return '';
+  return `
+    <div id="adjudication-modal-overlay" style="position: fixed; inset: 0; background: rgba(3, 7, 18, 0.88); z-index: 99999; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(8px); padding: 18px; box-sizing: border-box; font-family: 'Outfit', sans-serif;" onclick="if(event.target===this)window.closeAdjudicationModal()">
+      <div style="background: linear-gradient(145deg, #111827 0%, #0f172a 100%); border: 2px solid #d97706; border-radius: 18px; max-width: 860px; width: 100%; max-height: 92vh; overflow-y: auto; padding: 24px 28px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 35px rgba(217, 119, 6, 0.25); box-sizing: border-box; color: #f8fafc;">
+        
+        <!-- Modal Header -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px; border-bottom: 1.5px solid rgba(255,255,255,0.1); padding-bottom: 14px;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(217, 119, 6, 0.15); border: 2px solid #d97706; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #fbbf24;">
+              ⚖️
             </div>
-
-            <!-- Official Piece Values Cards -->
-            <div style="margin-bottom: 20px;">
-              <div style="font-size: 0.74rem; font-family: monospace; font-weight: 800; color: #94a3b8; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.05em;">
-                Official Chess Piece Point Values:
-              </div>
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px;">
-                
-                <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
-                  <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♙</div>
-                  <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">Pawn</div>
-                  <div style="font-size: 1.5rem; font-weight: 900; color: #4ade80; font-family: 'JetBrains Mono', monospace; line-height: 1.2;">1 pt</div>
-                  <div style="font-size: 0.65rem; color: #94a3b8;">Foot soldier</div>
-                </div>
-
-                <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
-                  <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♘</div>
-                  <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">Knight</div>
-                  <div style="font-size: 1.5rem; font-weight: 900; color: #38bdf8; font-family: 'JetBrains Mono', monospace; line-height: 1.2;">3 pts</div>
-                  <div style="font-size: 0.65rem; color: #94a3b8;">Jumping horse</div>
-                </div>
-
-                <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
-                  <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♗</div>
-                  <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">Bishop</div>
-                  <div style="font-size: 1.5rem; font-weight: 900; color: #a78bfa; font-family: 'JetBrains Mono', monospace; line-height: 1.2;">3 pts</div>
-                  <div style="font-size: 0.65rem; color: #94a3b8;">Diagonal ranger</div>
-                </div>
-
-                <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
-                  <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♖</div>
-                  <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">Rook</div>
-                  <div style="font-size: 1.5rem; font-weight: 900; color: #fbbf24; font-family: 'JetBrains Mono', monospace; line-height: 1.2;">5 pts</div>
-                  <div style="font-size: 0.65rem; color: #94a3b8;">Castle tower</div>
-                </div>
-
-                <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
-                  <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♕</div>
-                  <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">Queen</div>
-                  <div style="font-size: 1.5rem; font-weight: 900; color: #f43f5e; font-family: 'JetBrains Mono', monospace; line-height: 1.2;">9 pts</div>
-                  <div style="font-size: 0.65rem; color: #94a3b8;">Most powerful</div>
-                </div>
-
-                <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
-                  <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♔</div>
-                  <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">King</div>
-                  <div style="font-size: 1rem; font-weight: 900; color: #e2e8f0; font-family: 'JetBrains Mono', monospace; line-height: 1.8;">Infinite</div>
-                  <div style="font-size: 0.65rem; color: #94a3b8;">The Sovereign</div>
-                </div>
-
-              </div>
+            <div>
+              <span style="font-size: 0.68rem; font-family: monospace; font-weight: 800; color: #fbbf24; text-transform: uppercase; letter-spacing: 0.08em; background: rgba(217, 119, 6, 0.2); padding: 2px 7px; border-radius: 4px; border: 1px solid #d97706;">
+                ROUND TIMER ADJUDICATION
+              </span>
+              <h2 style="margin: 3px 0 0 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; color: #ffffff; font-weight: 800;">
+                Piece Values &amp; Material Count Rules
+              </h2>
             </div>
+          </div>
+          <button type="button" onclick="window.closeAdjudicationModal()" style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #cbd5e1; font-size: 1.1rem; width: 34px; height: 34px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center;" title="Close (Esc)">
+            ✕
+          </button>
+        </div>
 
-            <!-- 3-Step Pupil Adjudication Instructions -->
-            <div style="background: rgba(255, 255, 255, 0.03); border: 1.5px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 14px 18px; margin-bottom: 18px;">
-              <div style="font-size: 0.74rem; font-family: monospace; font-weight: 800; color: #fbbf24; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 0.05em;">
-                3-Step Pupil Adjudication Instructions:
-              </div>
-              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px;">
-                <div style="display: flex; gap: 10px;">
-                  <span style="width: 26px; height: 26px; border-radius: 50%; background: #ef4444; color: #fff; font-weight: 900; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.8rem;">1</span>
-                  <div>
-                    <strong style="color: #ffffff; font-size: 0.88rem;">"Hands Off the Pieces!"</strong>
-                    <p style="margin: 3px 0 0 0; font-size: 0.78rem; color: #94a3b8; line-height: 1.35;">
-                      When the 5-minute timer expires, all play ceases immediately. No further moves may be played.
-                    </p>
-                  </div>
-                </div>
-                <div style="display: flex; gap: 10px;">
-                  <span style="width: 26px; height: 26px; border-radius: 50%; background: #3b82f6; color: #fff; font-weight: 900; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.8rem;">2</span>
-                  <div>
-                    <strong style="color: #ffffff; font-size: 0.88rem;">Count Surviving Pieces</strong>
-                    <p style="margin: 3px 0 0 0; font-size: 0.78rem; color: #94a3b8; line-height: 1.35;">
-                      Add up the point values of all pieces surviving on your side of the board (e.g. ♖ 5 + ♗ 3 + ♙ 1 = 9 pts).
-                    </p>
-                  </div>
-                </div>
-                <div style="display: flex; gap: 10px;">
-                  <span style="width: 26px; height: 26px; border-radius: 50%; background: #10b981; color: #fff; font-weight: 900; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.8rem;">3</span>
-                  <div>
-                    <strong style="color: #ffffff; font-size: 0.88rem;">Compare & Score</strong>
-                    <p style="margin: 3px 0 0 0; font-size: 0.78rem; color: #94a3b8; line-height: 1.35;">
-                      • <strong>Higher Total:</strong> WINNER (+3 House pts)<br>
-                      • <strong>Tied Total:</strong> DRAW (+2 House pts each)<br>
-                      Tap your result directly on the smartboard!
-                    </p>
-                  </div>
-                </div>
-              </div>
+        <!-- Official Piece Values Cards -->
+        <div style="margin-bottom: 20px;">
+          <div style="font-size: 0.74rem; font-family: monospace; font-weight: 800; color: #94a3b8; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.05em;">
+            Official Chess Piece Point Values:
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px;">
+            <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
+              <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♙</div>
+              <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">Pawn</div>
+              <div style="font-size: 1.5rem; font-weight: 900; color: #4ade80; font-family: 'JetBrains Mono', monospace; line-height: 1.2;">1 pt</div>
+              <div style="font-size: 0.65rem; color: #94a3b8;">Foot soldier</div>
             </div>
-
-            <!-- Quick Live Material Tally Calculator -->
-            <div style="background: rgba(3, 7, 18, 0.7); border: 1.5px solid #334155; border-radius: 12px; padding: 14px 18px;">
-              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
-                <div style="display: flex; align-items: center; gap: 8px;">
-                  <span style="font-size: 1rem; color: #38bdf8;">🧮</span>
-                  <span style="font-weight: 800; font-size: 0.86rem; color: #f8fafc;">Interactive Rapid Material Tally Calculator</span>
-                </div>
-                <button onclick="window.resetAdjudicationCalc()" style="background: #1e293b; color: #94a3b8; border: 1px solid #475569; font-size: 0.7rem; padding: 2px 7px; border-radius: 4px; cursor: pointer;">
-                  ↺ Reset Tally
-                </button>
-              </div>
-
-              <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center;">
-                
-                <!-- White Tally -->
-                <div style="background: rgba(255,255,255,0.03); border: 1.5px solid #38bdf8; border-radius: 8px; padding: 10px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                    <strong style="color: #ffffff; font-size: 0.88rem;">♔ White Material</strong>
-                    <span style="font-size: 1.5rem; font-weight: 900; color: #38bdf8; font-family: monospace;">${chessState.adjudicationCalc?.white || 0} pts</span>
-                  </div>
-                  <div style="display: flex; flex-wrap: wrap; gap: 3px;">
-                    <button onclick="window.updateAdjudicationCalc('white', 1)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">+1 ♙</button>
-                    <button onclick="window.updateAdjudicationCalc('white', 3)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">+3 ♘</button>
-                    <button onclick="window.updateAdjudicationCalc('white', 3)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">+3 ♗</button>
-                    <button onclick="window.updateAdjudicationCalc('white', 5)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">+5 ♖</button>
-                    <button onclick="window.updateAdjudicationCalc('white', 9)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">+9 ♕</button>
-                    <button onclick="window.updateAdjudicationCalc('white', -1)" style="background: #1e293b; color: #f87171; border: 1px solid #7f1d1d; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;" title="Minus 1">-1</button>
-                  </div>
-                </div>
-
-                <div style="font-weight: 900; color: #64748b; font-size: 1rem; text-align: center;">
-                  VS
-                </div>
-
-                <!-- Black Tally -->
-                <div style="background: rgba(255,255,255,0.03); border: 1.5px solid #dc2626; border-radius: 8px; padding: 10px;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-                    <strong style="color: #ffffff; font-size: 0.88rem;">♚ Black Material</strong>
-                    <span style="font-size: 1.5rem; font-weight: 900; color: #f87171; font-family: monospace;">${chessState.adjudicationCalc?.black || 0} pts</span>
-                  </div>
-                  <div style="display: flex; flex-wrap: wrap; gap: 3px;">
-                    <button onclick="window.updateAdjudicationCalc('black', 1)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">+1 ♙</button>
-                    <button onclick="window.updateAdjudicationCalc('black', 3)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">+3 ♘</button>
-                    <button onclick="window.updateAdjudicationCalc('black', 3)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">+3 ♗</button>
-                    <button onclick="window.updateAdjudicationCalc('black', 5)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">+5 ♖</button>
-                    <button onclick="window.updateAdjudicationCalc('black', 9)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">+9 ♕</button>
-                    <button onclick="window.updateAdjudicationCalc('black', -1)" style="background: #1e293b; color: #f87171; border: 1px solid #7f1d1d; padding: 3px 6px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer;" title="Minus 1">-1</button>
-                  </div>
-                </div>
-
-              </div>
-
-              <!-- Live Verdict Banner -->
-              <div style="margin-top: 12px; padding: 8px 12px; border-radius: 6px; text-align: center; font-weight: 800; font-size: 0.88rem; background: ${
-                (chessState.adjudicationCalc?.white || 0) >
-                (chessState.adjudicationCalc?.black || 0)
-                  ? 'rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid #0284c7;'
-                  : (chessState.adjudicationCalc?.black || 0) >
-                      (chessState.adjudicationCalc?.white || 0)
-                    ? 'rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid #dc2626;'
-                    : (chessState.adjudicationCalc?.white || 0) > 0
-                      ? 'rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid #ca8a04;'
-                      : 'rgba(255, 255, 255, 0.05); color: #94a3b8; border: 1px solid #334155;'
-              }">
-                ${
-                  (chessState.adjudicationCalc?.white || 0) >
-                  (chessState.adjudicationCalc?.black || 0)
-                    ? `🏆 White leads by ${(chessState.adjudicationCalc?.white || 0) - (chessState.adjudicationCalc?.black || 0)} pts → White Wins (+3 House Points)!`
-                    : (chessState.adjudicationCalc?.black || 0) >
-                        (chessState.adjudicationCalc?.white || 0)
-                      ? `🏆 Black leads by ${(chessState.adjudicationCalc?.black || 0) - (chessState.adjudicationCalc?.white || 0)} pts → Black Wins (+3 House Points)!`
-                      : (chessState.adjudicationCalc?.white || 0) > 0
-                        ? `⚖️ Equal Material (${chessState.adjudicationCalc?.white || 0} pts each) → Drawn Game (+2 House Points each)!`
-                        : 'Tap the piece buttons above to calculate a live rapid adjudication verdict.'
-                }
-              </div>
-
+            <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
+              <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♘</div>
+              <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">Knight</div>
+              <div style="font-size: 1.5rem; font-weight: 900; color: #38bdf8; font-family: 'JetBrains Mono', monospace; line-height: 1.2;">3 pts</div>
+              <div style="font-size: 0.65rem; color: #94a3b8;">Jumping horse</div>
             </div>
-
-            <!-- Close Action -->
-            <div style="margin-top: 16px; text-align: right;">
-              <button onclick="window.closeAdjudicationModal()" style="background: #ffffff; color: #09090b; border: none; font-weight: 800; font-size: 0.88rem; padding: 8px 20px; border-radius: 6px; cursor: pointer; box-shadow: 0 4px 12px rgba(255,255,255,0.2);">
-                Close Adjudication Guide (Esc)
-              </button>
+            <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
+              <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♗</div>
+              <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">Bishop</div>
+              <div style="font-size: 1.5rem; font-weight: 900; color: #a78bfa; font-family: 'JetBrains Mono', monospace; line-height: 1.2;">3 pts</div>
+              <div style="font-size: 0.65rem; color: #94a3b8;">Diagonal ranger</div>
             </div>
-
+            <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
+              <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♖</div>
+              <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">Rook</div>
+              <div style="font-size: 1.5rem; font-weight: 900; color: #fbbf24; font-family: 'JetBrains Mono', monospace; line-height: 1.2;">5 pts</div>
+              <div style="font-size: 0.65rem; color: #94a3b8;">Castle tower</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
+              <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♕</div>
+              <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">Queen</div>
+              <div style="font-size: 1.5rem; font-weight: 900; color: #f43f5e; font-family: 'JetBrains Mono', monospace; line-height: 1.2;">9 pts</div>
+              <div style="font-size: 0.65rem; color: #94a3b8;">Most powerful</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.04); border: 1.5px solid #334155; border-radius: 10px; padding: 10px; text-align: center;">
+              <div style="font-size: 2rem; line-height: 1; margin-bottom: 2px;">♔</div>
+              <div style="font-weight: 800; font-size: 0.9rem; color: #f8fafc;">King</div>
+              <div style="font-size: 1rem; font-weight: 900; color: #e2e8f0; font-family: 'JetBrains Mono', monospace; line-height: 1.8;">Infinite</div>
+              <div style="font-size: 0.65rem; color: #94a3b8;">The Sovereign</div>
+            </div>
           </div>
         </div>
-      `
-          : ''
-      }
 
+        <!-- 3-Step Pupil Adjudication Instructions -->
+        <div style="background: rgba(255, 255, 255, 0.03); border: 1.5px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 14px 18px; margin-bottom: 18px;">
+          <div style="font-size: 0.74rem; font-family: monospace; font-weight: 800; color: #fbbf24; text-transform: uppercase; margin-bottom: 10px; letter-spacing: 0.05em;">
+            3-Step Pupil Adjudication Instructions:
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px;">
+            <div style="display: flex; gap: 10px;">
+              <span style="width: 26px; height: 26px; border-radius: 50%; background: #ef4444; color: #fff; font-weight: 900; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.8rem;">1</span>
+              <div>
+                <strong style="color: #ffffff; font-size: 0.88rem;">"Hands Off the Pieces!"</strong>
+                <p style="margin: 3px 0 0 0; font-size: 0.78rem; color: #94a3b8; line-height: 1.35;">
+                  When the round timer rings, all play ceases immediately.
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+              <span style="width: 26px; height: 26px; border-radius: 50%; background: #3b82f6; color: #fff; font-weight: 900; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.8rem;">2</span>
+              <div>
+                <strong style="color: #ffffff; font-size: 0.88rem;">Count Surviving Pieces</strong>
+                <p style="margin: 3px 0 0 0; font-size: 0.78rem; color: #94a3b8; line-height: 1.35;">
+                  Add up the point values of all pieces surviving on your side of the board.
+                </p>
+              </div>
+            </div>
+            <div style="display: flex; gap: 10px;">
+              <span style="width: 26px; height: 26px; border-radius: 50%; background: #10b981; color: #fff; font-weight: 900; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 0.8rem;">3</span>
+              <div>
+                <strong style="color: #ffffff; font-size: 0.88rem;">Compare &amp; Score</strong>
+                <p style="margin: 3px 0 0 0; font-size: 0.78rem; color: #94a3b8; line-height: 1.35;">
+                  • <strong>Higher Total:</strong> WINNER (+3 pts)<br>
+                  • <strong>Tied:</strong> Sudden-death next capture (Cup) or DRAW (+2 pts each, Rapid)!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Live Material Tally Calculator -->
+        <div style="background: rgba(3, 7, 18, 0.7); border: 1.5px solid #334155; border-radius: 12px; padding: 14px 18px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1rem; color: #38bdf8;">🧮</span>
+              <span style="font-weight: 800; font-size: 0.86rem; color: #f8fafc;">Interactive Material Tally Calculator</span>
+            </div>
+            <button type="button" onclick="window.resetAdjudicationCalc()" style="background: #1e293b; color: #94a3b8; border: 1px solid #475569; font-size: 0.7rem; padding: 3px 8px; border-radius: 4px; cursor: pointer;">
+              ↺ Reset Tally
+            </button>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center;">
+            <div style="background: rgba(255,255,255,0.03); border: 1.5px solid #38bdf8; border-radius: 8px; padding: 10px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <strong style="color: #ffffff; font-size: 0.88rem;">♔ White Material</strong>
+                <span style="font-size: 1.5rem; font-weight: 900; color: #38bdf8; font-family: monospace;">${chessState.adjudicationCalc?.white || 0} pts</span>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+                <button type="button" onclick="window.updateAdjudicationCalc('white', 1)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">+1 ♙</button>
+                <button type="button" onclick="window.updateAdjudicationCalc('white', 3)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">+3 ♘</button>
+                <button type="button" onclick="window.updateAdjudicationCalc('white', 3)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">+3 ♗</button>
+                <button type="button" onclick="window.updateAdjudicationCalc('white', 5)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">+5 ♖</button>
+                <button type="button" onclick="window.updateAdjudicationCalc('white', 9)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">+9 ♕</button>
+                <button type="button" onclick="window.updateAdjudicationCalc('white', -1)" style="background: #1e293b; color: #f87171; border: 1px solid #7f1d1d; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">-1</button>
+              </div>
+            </div>
+
+            <div style="font-weight: 900; color: #64748b; font-size: 1rem; text-align: center;">VS</div>
+
+            <div style="background: rgba(255,255,255,0.03); border: 1.5px solid #dc2626; border-radius: 8px; padding: 10px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <strong style="color: #ffffff; font-size: 0.88rem;">♚ Black Material</strong>
+                <span style="font-size: 1.5rem; font-weight: 900; color: #f87171; font-family: monospace;">${chessState.adjudicationCalc?.black || 0} pts</span>
+              </div>
+              <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+                <button type="button" onclick="window.updateAdjudicationCalc('black', 1)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">+1 ♙</button>
+                <button type="button" onclick="window.updateAdjudicationCalc('black', 3)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">+3 ♘</button>
+                <button type="button" onclick="window.updateAdjudicationCalc('black', 3)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">+3 ♗</button>
+                <button type="button" onclick="window.updateAdjudicationCalc('black', 5)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">+5 ♖</button>
+                <button type="button" onclick="window.updateAdjudicationCalc('black', 9)" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">+9 ♕</button>
+                <button type="button" onclick="window.updateAdjudicationCalc('black', -1)" style="background: #1e293b; color: #f87171; border: 1px solid #7f1d1d; padding: 5px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">-1</button>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 12px; padding: 8px 12px; border-radius: 6px; text-align: center; font-weight: 800; font-size: 0.88rem; background: ${
+            (chessState.adjudicationCalc?.white || 0) > (chessState.adjudicationCalc?.black || 0)
+              ? 'rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid #0284c7;'
+              : (chessState.adjudicationCalc?.black || 0) >
+                  (chessState.adjudicationCalc?.white || 0)
+                ? 'rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid #dc2626;'
+                : (chessState.adjudicationCalc?.white || 0) > 0
+                  ? 'rgba(250, 204, 21, 0.15); color: #facc15; border: 1px solid #ca8a04;'
+                  : 'rgba(255, 255, 255, 0.05); color: #94a3b8; border: 1px solid #334155;'
+          }">
+            ${
+              (chessState.adjudicationCalc?.white || 0) >
+              (chessState.adjudicationCalc?.black || 0)
+                ? `🏆 White leads by ${(chessState.adjudicationCalc?.white || 0) - (chessState.adjudicationCalc?.black || 0)} pts → White Wins!`
+                : (chessState.adjudicationCalc?.black || 0) >
+                    (chessState.adjudicationCalc?.white || 0)
+                  ? `🏆 Black leads by ${(chessState.adjudicationCalc?.black || 0) - (chessState.adjudicationCalc?.white || 0)} pts → Black Wins!`
+                  : (chessState.adjudicationCalc?.white || 0) > 0
+                    ? `⚖️ Equal Material (${chessState.adjudicationCalc?.white || 0} pts each)!`
+                    : 'Tap the piece buttons above to calculate a live rapid adjudication verdict.'
+            }
+          </div>
+        </div>
+
+        <div style="margin-top: 16px; text-align: right;">
+          <button type="button" onclick="window.closeAdjudicationModal()" style="background: #ffffff; color: #09090b; border: none; font-weight: 800; font-size: 0.88rem; padding: 8px 20px; border-radius: 6px; cursor: pointer;">
+            Close Guide (Esc)
+          </button>
+        </div>
+
+      </div>
     </div>
   `;
 }
@@ -9007,94 +10185,6 @@ window.downloadAssemblySlidePNG = function () {
   const leadingHouse = HOUSES[sorted[0].id] || { name: 'Victory', color: '#f59e0b' };
 
   // Individual Grandmaster Champion
-  const sortedByPoints = [...chessState.players].sort((a, b) => {
-    const ptsA =
-      (a.won || 0) * SCORING_RULES.WIN +
-      (a.drawn || 0) * SCORING_RULES.DRAW +
-      Math.max(0, (a.games || 0) - (a.won || 0) - (a.drawn || 0)) * SCORING_RULES.PARTICIPATION;
-    const ptsB =
-      (b.won || 0) * SCORING_RULES.WIN +
-      (b.drawn || 0) * SCORING_RULES.DRAW +
-      Math.max(0, (b.games || 0) - (b.won || 0) - (b.drawn || 0)) * SCORING_RULES.PARTICIPATION;
-    if (ptsB !== ptsA) return ptsB - ptsA;
-    return (a.rank || 99) - (b.rank || 99);
-  });
-  const champ = chessState.players.find((p) => p.rank === 1) ||
-    sortedByPoints[0] || {
-      name: 'Club Champion',
-      house: 'invincible',
-      rating: 1000,
-      won: 1,
-      drawn: 0,
-      games: 1,
-    };
-  const champPts =
-    (champ.won || 0) * SCORING_RULES.WIN +
-    (champ.drawn || 0) * SCORING_RULES.DRAW +
-    Math.max(0, (champ.games || 0) - (champ.won || 0) - (champ.drawn || 0)) *
-      SCORING_RULES.PARTICIPATION;
-  const champHouse = HOUSES[champ.house] || { name: champ.house, color: '#38bdf8' };
-  const champLosses = Math.max(0, (champ.games || 0) - (champ.won || 0) - (champ.drawn || 0));
-
-  const canvas = document.createElement('canvas');
-  canvas.width = 1920;
-  canvas.height = 1080;
-  const ctx = canvas.getContext('2d');
-
-  // Background Gradient
-  const grad = ctx.createLinearGradient(0, 0, 1920, 1080);
-  grad.addColorStop(0, '#090d16');
-  grad.addColorStop(1, '#1e1b4b');
-  ctx.fillStyle = grad;
-  ctx.fillRect(0, 0, 1920, 1080);
-
-  // Outer Border
-  ctx.strokeStyle = '#3b82f6';
-  ctx.lineWidth = 10;
-  ctx.strokeRect(30, 30, 1860, 1020);
-
-  // Header Subtitle & Title
-  ctx.fillStyle = '#93c5fd';
-  ctx.font = 'bold 34px sans-serif';
-  ctx.fillText('The History Portal · PERIOD 6 CHESS CLUB', 80, 105);
-
-  ctx.fillStyle = '#ffffff';
-  ctx.font = 'bold 64px Georgia, serif';
-  ctx.fillText('Weekly House Championship & Grandmaster Honors', 80, 185);
-
-  // Top Right Leader Pill
-  ctx.fillStyle = '#f59e0b';
-  ctx.font = 'bold 32px sans-serif';
-  ctx.textAlign = 'right';
-  ctx.fillText(
-    `CURRENT LEADER: ${leadingHouse.name.toUpperCase()} (${sorted[0].points} PTS)`,
-    1840,
-    140,
-  );
-  ctx.textAlign = 'left';
-
-  // 1. CHAMPION SPOTLIGHT CARD (x: 80, y: 220, width: 1760, height: 250)
-  const cX = 80;
-  const cY = 220;
-  const cW = 1760;
-  const cH = 240;
-
-  // Gold gradient background
-  const cGrad = ctx.createLinearGradient(cX, cY, cX + cW, cY + cH);
-  cGrad.addColorStop(0, 'rgba(234, 179, 8, 0.22)');
-  cGrad.addColorStop(1, 'rgba(180, 83, 9, 0.35)');
-  ctx.fillStyle = cGrad;
-  ctx.fillRect(cX, cY, cW, cH);
-
-  ctx.strokeStyle = '#facc15';
-  ctx.lineWidth = 4;
-  ctx.strokeRect(cX, cY, cW, cH);
-
-  // Large Crown Icon
-  ctx.fillStyle = '#fde047';
-  ctx.font = 'bold 80px sans-serif';
-  ctx.fillText('♔', cX + 40, cY + 115);
-
   // Grandmaster Tag
   ctx.fillStyle = '#eab308';
   ctx.font = 'bold 26px sans-serif';
@@ -9565,16 +10655,112 @@ window.openDataVaultModal = function () {
   `;
 };
 
-// Cross-Device Instant Sync Key Tools
-window.copySyncKey = function () {
-  const exportPayload = {
-    v: 5,
+function buildFullSyncExportPayload() {
+  let localNames = {};
+  try {
+    const raw = localStorage.getItem('chess_local_roster_names');
+    if (raw) localNames = JSON.parse(raw);
+  } catch (e) {}
+
+  return {
+    v: 6,
     t: Date.now(),
     players: chessState.players,
     matches: chessState.matches,
     checkedInPlayerIds: chessState.checkedInPlayerIds,
+    activePairings: chessState.activePairings || [],
     knockoutBracket: chessState.knockoutBracket,
+    clubModes: chessState.clubModes
+      ? { ...chessState.clubModes, tvFullscreen: false, chaosSpinning: false }
+      : null,
+    realNames: localNames,
   };
+}
+
+// 1-Click Tournament Save & Next-Week Resume Modal (Accessible directly from Tournament Cup & Full Screen TV)
+window.openTournamentSaveModal = function () {
+  const modalCont = getChessModalContainer();
+  if (!modalCont) return;
+
+  let currentCode = '';
+  try {
+    const jsonStr = JSON.stringify(buildFullSyncExportPayload());
+    currentCode = `HISTORY-CHESS:${btoa(encodeURIComponent(jsonStr))}`;
+  } catch (e) {}
+
+  const hasBracket = Boolean(chessState.knockoutBracket);
+  const playerCount = chessState.players.length;
+  const matchCount = chessState.matches.length;
+
+  modalCont.innerHTML = `
+    <div style="position: fixed; inset: 0; background: rgba(15, 23, 42, 0.82); display: flex; align-items: center; justify-content: center; z-index: 99999; padding: 18px;" onclick="if(event.target === this) window.closeChessModal();">
+      <div style="background: #ffffff; border-radius: 14px; max-width: 600px; width: 100%; max-height: 92vh; overflow-y: auto; padding: 24px 26px; box-shadow: 0 24px 48px rgba(0,0,0,0.35); font-family: 'Outfit', sans-serif;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 14px;">
+          <div>
+            <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.35rem; color: #0f172a;">
+              💾 Save &amp; Resume Tournament Next Week
+            </h2>
+            <div style="font-size: 0.82rem; color: #64748b; margin-top: 3px;">
+              Keep your exact Cup, Challenger Plate, Wooden Spoon, Rapid games &amp; House points safe!
+            </div>
+          </div>
+          <button type="button" onclick="window.closeChessModal()" style="background: none; border: none; font-size: 1.35rem; color: #64748b; cursor: pointer;">&times;</button>
+        </div>
+
+        <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 8px; padding: 10px 14px; margin-bottom: 14px; font-size: 0.82rem; color: #166534; line-height: 1.45;">
+          <strong>✓ Auto-Save Active on This Browser:</strong> Your progress (${playerCount} pupils, ${matchCount} matches${hasBracket ? ', live Tournament Bracket' : ''}) saves automatically in this browser. <strong>However</strong>, school PCs &amp; TV boards often wipe browser data overnight — so copy the Save Code below into an email/Word doc to yourself just in case!
+        </div>
+
+        <!-- Step 1: Copy Progress for Next Week -->
+        <div style="background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
+          <div style="font-weight: 800; font-size: 0.92rem; color: #0f172a; margin-bottom: 6px;">
+            1. Copy Today's Progress (End of Session)
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;">
+            <button type="button" onclick="window.copySyncKey()" style="background: #0284c7; color: #ffffff; border: none; padding: 9px 16px; border-radius: 6px; font-size: 0.82rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+              📋 Copy Progress Code
+            </button>
+            <button type="button" onclick="window.copySyncLink()" style="background: #ffffff; color: #0f172a; border: 1.5px solid #94a3b8; padding: 9px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+              🔗 Copy 1-Click Resume Link
+            </button>
+            <button type="button" onclick="window.downloadChessBackupJSON()" style="background: #1e293b; color: #ffffff; border: none; padding: 9px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
+              📥 Download Save File (.json)
+            </button>
+          </div>
+          <textarea readonly onclick="this.select()" style="width: 100%; height: 54px; padding: 6px 8px; border-radius: 6px; border: 1px solid #cbd5e1; background: #ffffff; font-family: monospace; font-size: 0.7rem; color: #475569; resize: none;" title="Tap to select all">${currentCode}</textarea>
+        </div>
+
+        <!-- Step 2: Paste Progress Next Week -->
+        <div style="background: #fffbeb; border: 1.5px solid #fcd34d; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px;">
+          <div style="font-weight: 800; font-size: 0.92rem; color: #78350f; margin-bottom: 6px;">
+            2. Paste Saved Progress (Start of Next Week)
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <input type="text" id="vault-sync-key-input" placeholder="Paste your HISTORY-CHESS:... code or link here" style="flex: 1; min-width: 220px; padding: 9px 11px; border-radius: 6px; border: 1.5px solid #fbbf24; font-family: monospace; font-size: 0.8rem; background: #ffffff;">
+            <button type="button" onclick="window.applySyncKey()" style="background: #d97706; color: #ffffff; border: none; padding: 9px 16px; border-radius: 6px; font-weight: 800; font-size: 0.82rem; cursor: pointer;">
+              ⚡ Load Progress
+            </button>
+          </div>
+          <div style="margin-top: 8px; font-size: 0.76rem; color: #92400e; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;">
+            <span>Or upload a downloaded <code>.json</code> save file:</span>
+            <label style="background: #ffffff; color: #78350f; border: 1px solid #d97706; padding: 4px 10px; border-radius: 5px; font-weight: 800; font-size: 0.74rem; cursor: pointer;">
+              📂 Upload .json File
+              <input type="file" accept=".json" onchange="window.handleRestoreBackupFile(event)" style="display: none;">
+            </label>
+          </div>
+        </div>
+
+        <div style="text-align: right;">
+          <button type="button" onclick="window.closeChessModal()" style="background: #e2e8f0; color: #0f172a; border: none; padding: 8px 18px; border-radius: 6px; font-weight: 800; font-size: 0.82rem; cursor: pointer;">Done</button>
+        </div>
+      </div>
+    </div>
+  `;
+};
+
+// Cross-Device Instant Sync Key Tools
+window.copySyncKey = function () {
+  const exportPayload = buildFullSyncExportPayload();
   try {
     const jsonStr = JSON.stringify(exportPayload);
     const b64 = btoa(encodeURIComponent(jsonStr));
@@ -9585,31 +10771,24 @@ window.copySyncKey = function () {
         .writeText(syncKey)
         .then(() => {
           showChessToast(
-            '🔑 Sync Key copied! Paste it in the Sync box on your other laptop or iPad.',
+            '📋 Tournament Save Code copied! Paste it into an email/note for next week.',
             'success',
           );
         })
         .catch(() => {
-          prompt('Copy your Sync Key below:', syncKey);
+          prompt('Copy your Tournament Save Code below:', syncKey);
         });
     } else {
-      prompt('Copy your Sync Key below:', syncKey);
+      prompt('Copy your Tournament Save Code below:', syncKey);
     }
   } catch (err) {
     console.error('Failed to generate Sync Key:', err);
-    showChessToast('Failed to generate Sync Key.', 'error');
+    showChessToast('Failed to generate Save Code.', 'error');
   }
 };
 
 window.copySyncLink = function () {
-  const exportPayload = {
-    v: 5,
-    t: Date.now(),
-    players: chessState.players,
-    matches: chessState.matches,
-    checkedInPlayerIds: chessState.checkedInPlayerIds,
-    knockoutBracket: chessState.knockoutBracket,
-  };
+  const exportPayload = buildFullSyncExportPayload();
   try {
     const jsonStr = JSON.stringify(exportPayload);
     const b64 = btoa(encodeURIComponent(jsonStr));
@@ -9622,43 +10801,66 @@ window.copySyncLink = function () {
         .writeText(syncUrl)
         .then(() => {
           showChessToast(
-            '🔗 1-Click Sync Link copied! Open this link on your other device to sync instantly.',
+            '🔗 1-Click Resume Link copied! Open this link next week to restore everything.',
             'success',
           );
         })
         .catch(() => {
-          prompt('Copy your 1-Click Sync Link below:', syncUrl);
+          prompt('Copy your 1-Click Resume Link below:', syncUrl);
         });
     } else {
-      prompt('Copy your 1-Click Sync Link below:', syncUrl);
+      prompt('Copy your 1-Click Resume Link below:', syncUrl);
     }
   } catch (err) {
     console.error('Failed to generate 1-Click Sync Link:', err);
-    showChessToast('Failed to generate 1-Click Sync Link.', 'error');
+    showChessToast('Failed to generate 1-Click Resume Link.', 'error');
   }
 };
 
 window.applySyncKey = function () {
   const input = document.getElementById('vault-sync-key-input');
   if (!input || !input.value.trim()) {
-    showChessToast('Please paste a valid Sync Key into the box first.', 'warning');
+    showChessToast('Please paste your saved code or link into the box first.', 'warning');
     return;
   }
   let raw = input.value.trim();
-  raw = raw.replace(/^[^:]+:/, '');
+  // Support pasting either a full ?chess_sync= URL OR a HISTORY-CHESS:... string
+  if (raw.includes('chess_sync=')) {
+    try {
+      const qPart = raw.split('chess_sync=')[1] || '';
+      raw = qPart.split(/[&#]/)[0].trim();
+    } catch (e) {}
+  }
+  raw = raw.replace(/^(?:HISTORY-CHESS|CHESS-SYNC):/i, '');
   try {
     const jsonStr = decodeURIComponent(atob(raw));
     const syncData = JSON.parse(jsonStr);
     if (!Array.isArray(syncData.players)) {
-      showChessToast('Invalid Sync Key: missing player records.', 'error');
+      showChessToast('Invalid Save Code: missing player records.', 'error');
       return;
+    }
+    pushChessUndoSnapshot('Before Loading Saved Progress');
+    if (syncData.realNames && typeof syncData.realNames === 'object') {
+      try {
+        localStorage.setItem('chess_local_roster_names', JSON.stringify(syncData.realNames));
+      } catch (e) {}
     }
     chessState.players = syncData.players;
     chessState.matches = Array.isArray(syncData.matches) ? syncData.matches : [];
     chessState.checkedInPlayerIds = Array.isArray(syncData.checkedInPlayerIds)
       ? syncData.checkedInPlayerIds
       : [];
+    chessState.activePairings = Array.isArray(syncData.activePairings)
+      ? syncData.activePairings
+      : [];
     chessState.knockoutBracket = syncData.knockoutBracket || null;
+    if (syncData.clubModes && typeof syncData.clubModes === 'object') {
+      chessState.clubModes = {
+        ...createDefaultClubModesState(),
+        ...syncData.clubModes,
+        tvFullscreen: false,
+      };
+    }
     hydratePlayerRealNames(chessState.players);
     if (Array.isArray(chessState.matches)) {
       chessState.matches.forEach((m) => {
@@ -9666,17 +10868,22 @@ window.applySyncKey = function () {
         if (CALLSIGN_TO_FIRST_NAME[m.black]) m.black = CALLSIGN_TO_FIRST_NAME[m.black];
       });
     }
+    if (chessState.knockoutBracket) {
+      reconcileKnockoutProgression(chessState.knockoutBracket);
+      chessState.activeTab = 'knockout';
+    }
+    autoSortPlayersByPoints();
     saveChessState(true);
     window.closeChessModal();
     renderChessHubView();
     showChessToast(
-      `🎉 Successfully synchronized ${chessState.players.length} pupils and ${chessState.matches.length} matches!`,
+      `🎉 Restored ${chessState.players.length} pupils, ${chessState.matches.length} matches${chessState.knockoutBracket ? ' & live Tournament Bracket' : ''}!`,
       'success',
     );
   } catch (err) {
     console.error('Failed to apply Sync Key:', err);
     showChessToast(
-      'Failed to apply Sync Key. Please check that you copied the complete key.',
+      'Could not read Save Code. Please check that you copied the entire code.',
       'error',
     );
   }
@@ -10540,3 +11747,16 @@ window.toggleAirgapMode = function () {
   );
   window.openAirgapInfoModal();
 };
+
+// Register all 7 Interactive Classroom & Touch-TV Game Mode Controllers
+registerClubGameModeHandlers({
+  getState: () => chessState,
+  saveChessState: () => saveChessState(),
+  renderChessHubView: () => renderChessHubView(),
+  showChessToast: (msg, type) => showChessToast(msg, type),
+  pushChessUndoSnapshot: (label) => pushChessUndoSnapshot(label),
+  applyCanonicalPlayerMatchStats: (pA, pB, out, ew, el) =>
+    applyCanonicalPlayerMatchStats(pA, pB, out, ew, el),
+  autoSortPlayersByPoints: () => autoSortPlayersByPoints(),
+  isChessViewActive: () => isChessViewActive(),
+});
