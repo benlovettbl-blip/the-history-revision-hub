@@ -899,8 +899,8 @@ function printKs2TeacherGuide(sheet, guide, liveLesson) {
  * Open KS2 Worksheet Modal
  * Displays current lesson worksheet with quick 1-click toggle to Full 28-Page Pupil Workbook
  */
-export function openKs2WorksheetModal(lessonId, lessonIndex) {
-  const cfg = getActiveKs2UnitConfig();
+export function openKs2WorksheetModal(lessonId, lessonIndex, explicitUnitId) {
+  const cfg = getActiveKs2UnitConfig(explicitUnitId);
   const activeWsMap = cfg.worksheetsMap;
   let targetId = lessonId;
   if (!targetId || !activeWsMap[targetId]) {

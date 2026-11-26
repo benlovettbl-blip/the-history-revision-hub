@@ -1297,7 +1297,13 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   const lockedUnit =
     (urlParams && urlParams.get('unit')) || state.selectedUnitId || window.currentUnitId;
 
-    if (isLocked && lockedUnit) {
+  const isReaderView = viewName === 'reader' || viewName === 'textbook-reader';
+  const paramBaseUnit =
+    isReaderView && typeof param === 'string' && param.includes(':')
+      ? param.split(':')[0]
+      : param;
+
+  if (isLocked && lockedUnit) {
     const restrictedViews = [
       'dashboard',
       'schools',
@@ -1315,9 +1321,9 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       );
       viewName = 'lessons';
       param = lockedUnit;
-    } else if (param && param !== lockedUnit && param !== 'all') {
+    } else if (paramBaseUnit && paramBaseUnit !== lockedUnit && paramBaseUnit !== 'all') {
       console.warn(
-        `[Safeguard Mode] Prevented switch to unit ${param} while locked to ${lockedUnit}`,
+        `[Safeguard Mode] Prevented switch to unit ${paramBaseUnit} while locked to ${lockedUnit}`,
       );
       param = lockedUnit;
     }
@@ -1441,6 +1447,8 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     viewName === 'exam-trainer' ||
     viewName === 'reading' ||
     viewName === 'guided-reading' ||
+    viewName === 'reader' ||
+    viewName === 'textbook-reader' ||
     viewName === 'interactive' ||
     viewName === 'arcade' ||
     viewName === 'marking';
@@ -1463,13 +1471,18 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     } catch (e) {}
   }
 
+  const effectiveTargetUnit =
+    (viewName === 'reader' || viewName === 'textbook-reader') && typeof param === 'string'
+      ? param.split(':')[0]
+      : param;
+
   if (
     !skipHistory &&
     !options.returningToOrigin &&
     typeof window !== 'undefined' &&
     isUnitToolTarget
   ) {
-    const targetUnitForTool = param || previousUnit;
+    const targetUnitForTool = effectiveTargetUnit || previousUnit;
     const recentlySaved =
       window._unitReturnOriginSavedTs && Date.now() - window._unitReturnOriginSavedTs < 150;
     if (!recentlySaved && previousUnit && targetUnitForTool === previousUnit) {
@@ -1490,10 +1503,10 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   if (
     typeof window !== 'undefined' &&
     window._unitReturnOrigin &&
-    param &&
-    param !== 'all' &&
+    effectiveTargetUnit &&
+    effectiveTargetUnit !== 'all' &&
     window._unitReturnOrigin.unitId &&
-    window._unitReturnOrigin.unitId !== param
+    window._unitReturnOrigin.unitId !== effectiveTargetUnit
   ) {
     window._unitReturnOrigin = null;
   }
@@ -1515,8 +1528,8 @@ export async function switchView(viewName, param = null, skipHistory = false, op
   if (typeof document !== 'undefined' && document.body) {
     document.body.setAttribute('data-active-view', viewName);
   }
-  syncKs2PortalState(param || state.selectedUnitId, state.activeUnitData, viewName);
-  syncDynamicSeoMetadata(viewName, param || state.selectedUnitId);
+  syncKs2PortalState(effectiveTargetUnit || state.selectedUnitId, state.activeUnitData, viewName);
+  syncDynamicSeoMetadata(viewName, effectiveTargetUnit || state.selectedUnitId);
   appStore.state.currentView = viewName;
 
   if (!skipHistory) {
@@ -1525,8 +1538,8 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       url.searchParams.get('locked') === 'true' ||
       url.searchParams.get('mode') === 'pupil' ||
       url.searchParams.get('safeguard') === 'true';
-    const cleanUnitPath = getCleanPathForUnit(param);
-    const isPureDashboard = viewName === 'dashboard' && !param && !isLockedSession;
+    const cleanUnitPath = getCleanPathForUnit(effectiveTargetUnit);
+    const isPureDashboard = viewName === 'dashboard' && !effectiveTargetUnit && !isLockedSession;
     const isPureSchools = viewName === 'schools' && !isLockedSession;
     const isPureUnitOverview =
       viewName === 'lessons' &&
@@ -1547,8 +1560,17 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       url.pathname = '/';
       url.searchParams.set('view', viewName);
       url.searchParams.delete('stage');
-      if (param) url.searchParams.set('unit', param);
+      if (effectiveTargetUnit) url.searchParams.set('unit', effectiveTargetUnit);
       else url.searchParams.delete('unit');
+      if (
+        (viewName === 'reader' || viewName === 'textbook-reader') &&
+        typeof param === 'string' &&
+        param.includes(':')
+      ) {
+        url.searchParams.set('book', param.split(':').slice(1).join(':'));
+      } else {
+        url.searchParams.delete('book');
+      }
       if (!isLockedSession) {
         url.searchParams.delete('portal');
       }
@@ -1812,15 +1834,20 @@ export async function switchView(viewName, param = null, skipHistory = false, op
       state.selectedUnitId ||
       window.currentUnitId ||
       'cme_new';
-    if (unitTarget === 'ks2_ww2') {
-      await loadUnit('ks2_ww2');
-      await renderReadingView(options);
-    } else {
-      if (unitTarget && unitTarget !== state.selectedUnitId) {
-        await loadUnit(unitTarget);
-      }
-      await renderDigitalReaderView(param);
+    if (unitTarget && unitTarget !== state.selectedUnitId) {
+      await loadUnit(unitTarget);
     }
+    const bookQuery =
+      typeof window !== 'undefined'
+        ? new URLSearchParams(window.location.search).get('book')
+        : null;
+    const resolvedReaderSpec =
+      param && typeof param === 'string' && param.includes(':')
+        ? param
+        : bookQuery
+          ? `${unitTarget}:${bookQuery}`
+          : param || unitTarget;
+    await renderDigitalReaderView(resolvedReaderSpec);
   } else if (viewName === 'reading' || viewName === 'guided-reading') {
     const targetUnit = param || state.selectedUnitId || window.currentUnitId || 'great_war_part2';
     await loadUnit(targetUnit);

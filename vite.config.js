@@ -795,6 +795,11 @@ export default defineConfig({
               priority: 55,
             },
             {
+              name: 'classroom-reader-tools',
+              test: /src[\\/](digital_textbook_reader|engine[\\/](classroom_spotlight_and_locator|teacher_guidance_modal)|interactive_labs[\\/]lab_registry)\.js/,
+              priority: 45,
+            },
+            {
               name: 'lesson-helpers',
               test: /src[\\/](engine[\\/](lesson_renderer_helpers|lesson_consolidate_station|disciplinary_glossary|narrative_annotator)|key_individuals)\.js/,
               priority: 40,

@@ -456,8 +456,9 @@ const bootHistoryHubApp = async () => {
 
   // Load ~5 KB course index immediately (plus target unit JSON in parallel on direct unit URLs)
   const bootUrlParams = new URLSearchParams(window.location.search);
-  const bootTargetUnit =
+  const rawBootUnit =
     bootUrlParams.get('unit') || resolveUnitIdFromPathname(window.location.pathname);
+  const bootTargetUnit = rawBootUnit ? String(rawBootUnit).split(':')[0] : null;
 
   await Promise.all([
     loadDatabaseIndex(),
@@ -761,6 +762,11 @@ const bootHistoryHubApp = async () => {
       lessonIndex: resolvedEqLesson.index >= 0 ? resolvedEqLesson.index : undefined,
       questionNum: eqNum,
     });
+  } else if (view === 'reader' && unit) {
+    const bookBoot = urlParams.get('book');
+    const readerBootSpec =
+      String(unit).includes(':') || !bookBoot ? unit : `${unit}:${bookBoot}`;
+    await switchView('reader', readerBootSpec, true);
   } else {
     await switchView(view, unit, true);
   }

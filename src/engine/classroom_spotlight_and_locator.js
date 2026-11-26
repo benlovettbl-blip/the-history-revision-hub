@@ -561,7 +561,7 @@ export function renderClassroomDeskLocatorHTML({
   const tbHtml = tbLoc
     ? `
       <span class="cdl-pill-group">
-        <button type="button" class="cdl-pill-btn cdl-pill-tb-main" onclick="if(window.openDigitalTextbookReader){window.openDigitalTextbookReader('${tbLoc.unitId}', '${tbLoc.ktId}', ${tbLoc.spreadIndex}, ${tbLoc.page});}" title="Open Interactive 2-Page Flipbook Textbook directly at ${escHtml(tbLoc.pageLabel)}">
+        <button type="button" class="cdl-pill-btn cdl-pill-tb-main" onclick="if(window.openDigitalTextbookReader){window.openDigitalTextbookReader('${tbLoc.unitId}', '${tbLoc.ktId}', ${tbLoc.spreadIndex}, ${tbLoc.page});}else if(window.switchView){window.switchView('reader', '${tbLoc.unitId}:${tbLoc.ktId}:${tbLoc.spreadIndex}:${tbLoc.page}');}" title="Open Interactive 2-Page Flipbook Textbook directly at ${escHtml(tbLoc.pageLabel)}">
           <i class="fa-solid fa-book-open" style="color: #0284c7;"></i>
           <span>${escHtml(tbLoc.fullLabel)}</span>
           <span style="font-size: 0.66rem; font-weight: 800; background: #0284c7; color: #ffffff; padding: 1px 5px; border-radius: 4px; margin-left: 2px;">Flipbook</span>
@@ -610,7 +610,7 @@ export function renderClassroomDeskLocatorHTML({
   const wsHtml =
     isKs2 && lesson && lesson.id
       ? `
-        <button type="button" class="cdl-pill-btn cdl-pill-ws" onclick="window.openKs2WorksheetModal && window.openKs2WorksheetModal('${escHtml(lesson.id)}', ${safeIdx})" title="Open Printable A4 Companion Worksheet for Lesson ${safeIdx + 1}">
+        <button type="button" class="cdl-pill-btn cdl-pill-ws" onclick="window.openKs2WorksheetModal && window.openKs2WorksheetModal('${escHtml(lesson.id)}', ${safeIdx}, '${escHtml(unitId)}')" title="Open Printable A4 Companion Worksheet for Lesson ${safeIdx + 1}">
           <i class="fa-solid fa-file-lines" style="color: #16a34a;"></i>
           <span>Worksheet: Lesson ${safeIdx + 1}</span>
         </button>
@@ -1828,5 +1828,11 @@ if (typeof window !== 'undefined') {
   window.openStageReadingSpotlight = openStageReadingSpotlight;
   if (!window.openDigitalTextbookReader) {
     window.openDigitalTextbookReader = openDigitalTextbookReader;
+  }
+  if (!window.openKs2WorksheetModal) {
+    window.openKs2WorksheetModal = (lessonId, lessonIndex, unitId) =>
+      import('./ks2_guidance.js').then((m) =>
+        m.openKs2WorksheetModal(lessonId, lessonIndex, unitId),
+      );
   }
 }

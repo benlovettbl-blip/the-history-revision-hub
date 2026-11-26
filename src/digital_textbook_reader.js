@@ -1108,8 +1108,20 @@ export async function renderDigitalReaderView(param, targetContainer = null) {
   let initialSpread = 0;
   let explicitPage = null;
 
-  if (param) {
-    const parts = String(param).split(':');
+  let resolvedParam = param;
+  if (
+    resolvedParam &&
+    !String(resolvedParam).includes(':') &&
+    typeof window !== 'undefined'
+  ) {
+    const bookParam = new URLSearchParams(window.location.search).get('book');
+    if (bookParam) {
+      resolvedParam = `${resolvedParam}:${bookParam}`;
+    }
+  }
+
+  if (resolvedParam) {
+    const parts = String(resolvedParam).split(':');
     if (parts[0] && TEXTBOOK_CATALOG[parts[0]]) {
       initialUnit = parts[0];
       initialKT = getDefaultKtId(initialUnit);

@@ -1,5 +1,5 @@
-const CACHE_NAME = 'history-hub-cache-v20-gdpr';
-const DYNAMIC_CACHE = 'history-hub-dynamic-v20-gdpr';
+const CACHE_NAME = 'history-hub-cache-v21-desk-copies';
+const DYNAMIC_CACHE = 'history-hub-dynamic-v21-desk-copies';
 
 const CORE_ASSETS = [
   '/',
@@ -127,6 +127,11 @@ self.addEventListener('fetch', (event) => {
 
   // Skip Chrome extensions and non-http schemes
   if (!url.protocol.startsWith('http')) return;
+
+  // Never intercept /pdfs/* requests so native browser PDF viewers can stream HTTP 206 byte ranges and jump directly to #page=N
+  if (url.pathname.startsWith('/pdfs/')) {
+    return;
+  }
 
   // 1. Navigation Requests (HTML SPA Pages): Network-First
   // Guarantees online pupils always get the fresh index.html pointing to current Vite asset hashes.

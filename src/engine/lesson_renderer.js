@@ -772,7 +772,7 @@ export function renderLesson(lesson) {
       : `
               ${isKs2
         ? `
-                    <button type="button" class="btn btn-ks2-worksheet-launcher" onclick="window.openKs2WorksheetModal('${lesson.id}', ${currentIndex})" style="padding: 6px 12px; font-size: 0.88rem; background: #eff6ff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(30, 58, 138, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Open A4 Companion Worksheet (PDF & Print)"><i class="fa-solid fa-file-pdf" style="color: #2563eb;"></i> <span>Enquiry Worksheet</span></button>
+                    <button type="button" class="btn btn-ks2-worksheet-launcher" onclick="window.openKs2WorksheetModal && window.openKs2WorksheetModal('${lesson.id}', ${currentIndex}, '${unitId}')" style="padding: 6px 12px; font-size: 0.88rem; background: #eff6ff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(30, 58, 138, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Open A4 Companion Worksheet (PDF & Print)"><i class="fa-solid fa-file-pdf" style="color: #2563eb;"></i> <span>Enquiry Worksheet</span></button>
                   `
         : ''
       }

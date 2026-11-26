@@ -43,14 +43,6 @@ export const WORKBOOK_PAGE_MAP = {
     }
   },
   "cme_new": {
-    "lesson_0": {
-      "page": 2,
-      "endPage": 3,
-      "spread": "pp. 2–3",
-      "booklet": "Key Topic 1 Booklet (12p)",
-      "unitId": "cme_new",
-      "lessonIndex": 0
-    },
     "lesson_1": {
       "page": 2,
       "endPage": 3,
