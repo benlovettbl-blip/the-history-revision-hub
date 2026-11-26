@@ -348,6 +348,16 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
   const bookletCards = [
     renderBookletCard(unitId, 'textbook', cfg.textbook, '#2563eb', 'background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;', staffActive),
     renderBookletCard(unitId, 'workbook', cfg.workbook, '#d97706', 'background:#fffbeb;color:#b45309;border:1px solid #fde68a;', staffActive),
+    cfg.spineWorkbook
+      ? renderBookletCard(
+          unitId,
+          'spineWorkbook',
+          cfg.spineWorkbook,
+          '#0f172a',
+          'background:#f1f5f9;color:#0f172a;border:1px solid #94a3b8;',
+          staffActive,
+        )
+      : '',
     renderBookletCard(unitId, 'retrieval', cfg.retrieval, '#7c3aed', 'background:#f5f3ff;color:#6d28d9;border:1px solid #ddd6fe;', staffActive),
     isKs2OrKs3
       ? renderBookletCard(

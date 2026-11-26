@@ -191,6 +191,8 @@ function getActiveKs2UnitConfig(explicitUnitId) {
     workbookPagesLabel: '28-Page',
     fullWorkbookUrl: '/units/ks2_ww2/pupil_workbook.html',
     fullWorkbookPdf: '/pdfs/ks2_ww2_pupil_workbook.pdf',
+    spineWorkbookUrl: '/units/ks2_ww2/pupil_workbook_spine.html',
+    spineWorkbookPdf: '/pdfs/ks2_ww2_pupil_workbook_spine.pdf',
     sowUrl: '/units/ks2_ww2/ks2_ww2_scheme_of_work.html',
     sowLabel: '11-Lesson Scheme of Work',
     wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
@@ -898,6 +900,8 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
   const currentSheet = activeWsMap[targetId] || activeWsMap.lesson_1;
   const fullWorkbookUrl = cfg.fullWorkbookUrl;
   const fullWorkbookPdf = cfg.fullWorkbookPdf;
+  const spineWorkbookUrl = cfg.spineWorkbookUrl || null;
+  const spineWorkbookPdf = cfg.spineWorkbookPdf || null;
 
   // Close teacher guidance modal if open to prevent stacked modal overlays
   const existingGuidance = document.getElementById('ks2TeacherGuidanceModalOverlay');
@@ -934,15 +938,23 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
         </div>
 
         <!-- Center: Quick View Toggle (This Lesson vs Full Master Workbook) -->
-        <div style="background: #0f172a; padding: 3px; border-radius: 8px; border: 1px solid #334155; display: flex; gap: 2px;">
+        <div style="background: #0f172a; padding: 3px; border-radius: 8px; border: 1px solid #334155; display: flex; gap: 2px; flex-wrap: wrap;">
           <button id="toggleSingleWorksheet" class="active-doc-toggle" style="background: #2563eb; color: #ffffff; border: none; padding: 6px 14px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
             <i class="fa-solid fa-file-lines"></i>
             <span>This Lesson Worksheet</span>
           </button>
           <button id="toggleMasterWorkbook" class="inactive-doc-toggle" style="background: transparent; color: #94a3b8; border: none; padding: 6px 14px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
             <i class="fa-solid fa-book-bookmark" style="color: #f59e0b;"></i>
-            <span>Full ${cfg.workbookPagesLabel} Pupil Workbook</span>
+            <span>Full ${cfg.workbookPagesLabel} Workbook${spineWorkbookUrl ? ' (Illustrated)' : ''}</span>
           </button>
+          ${
+            spineWorkbookUrl
+              ? `<button id="toggleSpineWorkbook" class="inactive-doc-toggle" style="background: transparent; color: #94a3b8; border: none; padding: 6px 14px; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s ease;">
+            <i class="fa-solid fa-pen-nib" style="color: #38bdf8;"></i>
+            <span>KS3-Style Spine Workbook</span>
+          </button>`
+              : ''
+          }
         </div>
 
         <!-- Right: Actions & Close -->
@@ -1007,6 +1019,7 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
   const iframe = overlay.querySelector('#worksheetPreviewFrame');
   const singleBtn = overlay.querySelector('#toggleSingleWorksheet');
   const masterBtn = overlay.querySelector('#toggleMasterWorkbook');
+  const spineBtn = overlay.querySelector('#toggleSpineWorkbook');
   const titleEl = overlay.querySelector('#activeDocTitle');
   const modeLabel = overlay.querySelector('#activeDocModeLabel');
   const downloadLink = overlay.querySelector('#downloadPdfLink');
@@ -1028,12 +1041,16 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
     singleBtn.style.color = '#ffffff';
     masterBtn.style.background = 'transparent';
     masterBtn.style.color = '#94a3b8';
+    if (spineBtn) {
+      spineBtn.style.background = 'transparent';
+      spineBtn.style.color = '#94a3b8';
+    }
   };
 
   const setMasterView = () => {
     isViewingMaster = true;
     iframe.src = fullWorkbookUrl;
-    titleEl.textContent = `${cfg.workbookPagesLabel} Master Pupil Workbook`;
+    titleEl.textContent = `${cfg.workbookPagesLabel} Master Pupil Workbook${spineWorkbookUrl ? ' (Illustrated)' : ''}`;
     modeLabel.textContent = `Complete ${cfg.totalLessons}-Enquiry Course Companion`;
     downloadLink.href = fullWorkbookPdf;
     lessonSelect.style.display = 'none';
@@ -1042,10 +1059,34 @@ export function openKs2WorksheetModal(lessonId, lessonIndex) {
     masterBtn.style.color = '#0f172a';
     singleBtn.style.background = 'transparent';
     singleBtn.style.color = '#94a3b8';
+    if (spineBtn) {
+      spineBtn.style.background = 'transparent';
+      spineBtn.style.color = '#94a3b8';
+    }
+  };
+
+  const setSpineView = () => {
+    if (!spineWorkbookUrl) return;
+    isViewingMaster = true;
+    iframe.src = spineWorkbookUrl;
+    titleEl.textContent = `${cfg.workbookPagesLabel} KS3-Style Spine Pupil Workbook`;
+    modeLabel.textContent = `Complete ${cfg.totalLessons}-Enquiry B&W Chronological Spine & Extended Writing Companion`;
+    downloadLink.href = spineWorkbookPdf || spineWorkbookUrl;
+    lessonSelect.style.display = 'none';
+
+    if (spineBtn) {
+      spineBtn.style.background = '#0ea5e9';
+      spineBtn.style.color = '#ffffff';
+    }
+    singleBtn.style.background = 'transparent';
+    singleBtn.style.color = '#94a3b8';
+    masterBtn.style.background = 'transparent';
+    masterBtn.style.color = '#94a3b8';
   };
 
   singleBtn.onclick = () => setSingleView(lessonSelect.value);
   masterBtn.onclick = () => setMasterView();
+  if (spineBtn) spineBtn.onclick = () => setSpineView();
 
   lessonSelect.onchange = (e) => {
     setSingleView(e.target.value);
@@ -1258,6 +1299,13 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
               <a href="${cfg.fullWorkbookPdf}" target="_blank" style="background: #ffffff; color: #1e3a8a; border: 1.5px solid #bfdbfe; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
                 <i class="fa-solid fa-book-bookmark"></i> ${cfg.workbookPagesLabel} Pupil Workbook (PDF)
               </a>
+              ${
+                cfg.spineWorkbookPdf
+                  ? `<a href="${cfg.spineWorkbookPdf}" target="_blank" style="background: #ffffff; color: #0f172a; border: 1.5px solid #cbd5e1; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
+                <i class="fa-solid fa-pen-nib"></i> KS3-Style Spine Workbook (PDF)
+              </a>`
+                  : ''
+              }
               <a href="${cfg.sowUrl}" target="_blank" style="background: #ffffff; color: #0f766e; border: 1.5px solid #99f6e4; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 5px; text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">
                 <i class="fa-solid fa-table-list"></i> ${cfg.sowLabel}
               </a>

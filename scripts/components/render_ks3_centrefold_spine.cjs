@@ -1,11 +1,15 @@
 const fs = require('fs');
 const pdfParse = require('pdf-parse');
+const { renderVersoLessonQr } = require('./render_verso_lesson_qr.cjs');
 
 /**
  * Shared 100% Pure #000000 Photocopier-Safe Center-Spine Mind-Map Canvas
- * for Key Stage 3 Saddle-Stitch Pupil Workbooks.
+ * for Key Stage 2 / Key Stage 3 Saddle-Stitch Pupil Workbooks.
  */
 function renderKs3CentrefoldSpine({
+  unitId = '',
+  mindMapQrUrl = '',
+  timelineQrUrl = '',
   leftPageNum = 8,
   rightPageNum = 9,
   totalPages = 16,
@@ -24,6 +28,26 @@ function renderKs3CentrefoldSpine({
   renderFooterStrip,
   pagePadding = '4mm 6mm',
 }) {
+  const leftQrTarget =
+    mindMapQrUrl ||
+    (unitId
+      ? `https://historyrevisionhub.co.uk/?view=mindmap&unit=${unitId}`
+      : 'https://historyrevisionhub.co.uk/');
+  const rightQrTarget =
+    timelineQrUrl ||
+    (unitId
+      ? `https://historyrevisionhub.co.uk/?view=timeline&unit=${unitId}`
+      : 'https://historyrevisionhub.co.uk/');
+  const leftQrHtml = renderVersoLessonQr({
+    hubUrl: leftQrTarget,
+    label: 'Mind-Map',
+    sizeMm: 13.5,
+  });
+  const rightQrHtml = renderVersoLessonQr({
+    hubUrl: rightQrTarget,
+    label: 'Timeline',
+    sizeMm: 13.5,
+  });
   const renderNodes = (nodes) =>
     nodes
       .map(
@@ -61,21 +85,24 @@ function renderKs3CentrefoldSpine({
   <!-- PAGE ${leftPageNum}: CENTREFOLD MIND-MAP CANVAS PART 1 -->
   <div class="page page-container verso-page" id="page-${leftPageNum}" style="padding: ${pagePadding}; color: #000000;">
     <div class="page-body-full" style="position: relative; color: #000000;">
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
-            CENTREFOLD SPREAD &bull; PART 1
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            ${part1KickerRight}
-          </span>
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 6px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              CENTREFOLD SPREAD &bull; PART 1
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              ${part1KickerRight}
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.2pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
+            ${part1Heading}
+          </h2>
+          <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #000000; line-height: 1.22;">
+            <strong style="color: #000000;">REVISION MIND-MAP CANVAS:</strong> Scan the QR code for the interactive Mind-Map or use each lesson&rsquo;s summary to branch out your key facts across the open page (${part1CueHint}).
+          </div>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.2pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
-          ${part1Heading}
-        </h2>
-        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.3pt; color: #000000; line-height: 1.22;">
-          <strong style="color: #000000;">REVISION MIND-MAP CANVAS:</strong> At the end of each lesson, use the app&rsquo;s <em style="color: #000000;">Consolidate Station</em> to retrieve your keywords and branch out your mind-map across the open page (${part1CueHint}).
-        </div>
+        ${leftQrHtml}
       </div>
 
       <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 6px 0 2px 0;">
@@ -96,21 +123,24 @@ function renderKs3CentrefoldSpine({
   <!-- PAGE ${rightPageNum}: CENTREFOLD MIND-MAP CANVAS PART 2 -->
   <div class="page page-container recto-page" id="page-${rightPageNum}" style="padding: ${pagePadding}; color: #000000;">
     <div class="page-body-full" style="position: relative; color: #000000;">
-      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
-          <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
-            CENTREFOLD SPREAD &bull; PART 2
-          </span>
-          <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000;">
-            ${part2KickerRight}
-          </span>
+      <div style="border-bottom: 2px solid #000000; padding-bottom: 2px; margin-bottom: 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 6px;">
+        <div style="flex: 1; min-width: 0;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5px;">
+            <span style="font-family: 'Inter', sans-serif; font-size: 8.0pt; font-weight: 900; letter-spacing: 0.5px; text-transform: uppercase; background: #000000; color: #ffffff; padding: 1.5px 7px; border-radius: 2px;">
+              CENTREFOLD SPREAD &bull; PART 2
+            </span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 7.8pt; font-weight: 800; text-transform: uppercase; color: #000000;">
+              ${part2KickerRight}
+            </span>
+          </div>
+          <h2 style="font-family: 'Playfair Display', serif; font-size: 11.2pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
+            ${part2Heading}
+          </h2>
+          <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.2pt; color: #000000; line-height: 1.22;">
+            <strong style="color: #000000;">REVISION MIND-MAP CANVAS:</strong> Scan the QR code for the interactive Living Timeline or use each lesson&rsquo;s summary to branch out your key facts across the open page (${part2CueHint}).
+          </div>
         </div>
-        <h2 style="font-family: 'Playfair Display', serif; font-size: 11.2pt; color: #000000; margin: 1px 0 2px 0; font-weight: 900; line-height: 1.15;">
-          ${part2Heading}
-        </h2>
-        <div style="border: 1.2px solid #000000; border-radius: 2.5px; background: #ffffff; padding: 2px 6px; font-family: 'Inter', sans-serif; font-size: 7.3pt; color: #000000; line-height: 1.22;">
-          <strong style="color: #000000;">REVISION MIND-MAP CANVAS:</strong> At the end of each lesson, use the app&rsquo;s <em style="color: #000000;">Consolidate Station</em> to retrieve your keywords and branch out your mind-map across the open page (${part2CueHint}).
-        </div>
+        ${rightQrHtml}
       </div>
 
       <div style="position: relative; flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0; margin: 6px 0 2px 0;">

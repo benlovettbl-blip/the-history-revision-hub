@@ -346,6 +346,13 @@ function renderPrintableLinksBarHTML(unitId) {
           <i class="fa-solid fa-book-bookmark" style="color: #2563eb;"></i> ${escHtml(wbLabel)}
         </a>
         ${
+          cat.spineWorkbook?.pdfUrl
+            ? `<a href="${escHtml(cat.spineWorkbook.pdfUrl)}" target="_blank" rel="noopener" style="background: #ffffff; color: #0f172a; border: 1.5px solid #94a3b8; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
+                <i class="fa-solid fa-file-lines" style="color: #0f172a;"></i> ${escHtml(cat.spineWorkbook.pages ? cat.spineWorkbook.pages + ' ' : '')}KS3-Style Spine Workbook (PDF)
+              </a>`
+            : ''
+        }
+        ${
           msPdf
             ? `<a href="${escHtml(msPdf)}" target="_blank" rel="noopener" style="background: #ecfdf5; color: #065f46; border: 1.5px solid #6ee7b7; font-size: 0.78rem; font-weight: 700; padding: 6px 12px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;">
                 <i class="fa-solid fa-check-double" style="color: #059669;"></i> Workbook Mark Scheme (PDF)

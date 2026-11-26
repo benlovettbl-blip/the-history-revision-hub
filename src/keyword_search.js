@@ -611,6 +611,7 @@ export function buildKeywordSearchIndex(db) {
 
     pushDoc(cat.textbook, 'Classroom Textbook', 'TEXTBOOK');
     pushDoc(cat.workbook, 'Pupil Workbook', 'WORKBOOK');
+    pushDoc(cat.spineWorkbook, 'Structured Spine Pupil Workbook (KS3-Style B&W)', 'WORKBOOK');
     pushDoc(cat.retrieval, 'Retrieval Companion', 'RETRIEVAL');
     pushDoc(cat.revisionGuide, 'Condensed Revision Guide', 'REVISION_GUIDE');
     pushDoc(cat.masteryExamPack, 'Mastery Exam Pack', 'MASTERY_PACK');

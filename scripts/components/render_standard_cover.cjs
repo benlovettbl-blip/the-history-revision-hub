@@ -2527,7 +2527,7 @@ function renderWorkbookCoverCenterpiece({
                   ? `
               <div style="background: #ffffff; border: 1.2px solid ${borderColor}; border-radius: 3px; padding: 2.5px 6px;">
                 <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                  <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: ${themeColor};">Disciplinary Hinge Question:</span>
+                  <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: ${themeColor};">Key Discussion Question:</span>
                   <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 700; color: #64748b; text-transform: uppercase;">${typeof hingeQuestion === 'object' ? hingeQuestion.badge || 'Evaluation' : 'Evaluation'}</span>
                 </div>
                 <div style="font-family: 'Georgia', serif; font-size: 7.0pt; font-style: italic; color: #1e293b; line-height: 1.18; margin-top: 1px;">
@@ -2626,7 +2626,7 @@ function renderWorkbookCoverCenterpiece({
               ? `
           <div style="background: #ffffff; border: 1.2px solid ${borderColor}; border-radius: 3px; padding: 2.5px 6px;">
             <div style="display: flex; justify-content: space-between; align-items: baseline;">
-              <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: ${themeColor};">Disciplinary Hinge Question:</span>
+              <span style="font-family: 'Inter', sans-serif; font-size: 7.0pt; font-weight: 900; text-transform: uppercase; color: ${themeColor};">Key Discussion Question:</span>
               <span style="font-family: 'Inter', sans-serif; font-size: 6.5pt; font-weight: 700; color: #64748b; text-transform: uppercase;">${typeof hingeQuestion === 'object' ? hingeQuestion.badge || 'Evaluation' : 'Evaluation'}</span>
             </div>
             <div style="font-family: 'Georgia', serif; font-size: 6.9pt; font-style: italic; color: #1e293b; line-height: 1.18; margin-top: 1px;">

@@ -717,6 +717,10 @@ function renderTrackerTab(container) {
                   wbPills.push(pillLink(msHref, `<i class="fa-solid fa-key"></i> Mark Scheme`, '#ecfdf5', '#065f46', '#a7f3d0'));
                 }
               }
+              if (cat.spineWorkbook) {
+                const spHref = cat.spineWorkbook.pdfUrl && isVerifiedPdf(cat.spineWorkbook.pdfUrl) ? cat.spineWorkbook.pdfUrl : cat.spineWorkbook.htmlUrl;
+                wbPills.push(pillLink(spHref, `<i class="fa-solid fa-file-lines"></i> Spine WB (${cat.spineWorkbook.pages || 'PDF'})`, '#f1f5f9', '#0f172a', '#94a3b8', cat.spineWorkbook.title));
+              }
 
               // Build Textbook links across all Editions / Key Topics or single unit + 2-Page Flipbook Reader launcher
               const tbPills = [];
