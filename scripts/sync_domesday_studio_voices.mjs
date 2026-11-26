@@ -138,6 +138,66 @@ const CLIPS = [
     style: 'warm, clear, engaging British history teacher summarizing a lesson with authority and warmth',
     text: "Audit complete! Every village figure you just investigated comes straight from the real ten eighty-six Domesday Book, while characters like Bennet, Edith, and Odo give voice to the nameless locals whom King William's taxmen never named.",
   },
+  {
+    id: 'cover_odo_pigs',
+    voiceKey: 'ww1_british_tommy',
+    style: 'panicked, breathless, guilty medieval village reeve sitting on a wooden crate and stammering nervously',
+    text: "Nothing inside this crate, my Lord! Definitely NOT thirteen fat Fareham woodland pigs! Stop poking the lid before they oink!",
+  },
+  {
+    id: 'cover_gull_squawk',
+    voiceKey: 'ww1_british_tommy',
+    style: 'grumpy, indignant Hampshire mud-peasant shouting up at a cheeky seagull',
+    text: "Shoo, you thieving Solent gull! That's my only turnip for the winter! Go peck the Norman clerk's shiny boots instead!",
+  },
+  {
+    id: 'beat1_mills_spot',
+    voiceKey: 'ww1_british_tommy',
+    style: 'flustered medieval village reeve caught red-handed hiding watermills',
+    text: "Aha, cursed splashing! Alright, five spinning watermills worth forty-one shillings! And peasants are banned by law from grinding flour at home without paying the Bishop!",
+  },
+  {
+    id: 'beat1_pigs_spot',
+    voiceKey: 'ww1_british_tommy',
+    style: 'groaning, defeated medieval village reeve caught hiding woodland pigs',
+    text: "Mercy! Thirteen fat hogs rooting for acorns in the Bishop's oak woods! Even a peasant's pig tax goes straight into King William's book!",
+  },
+  {
+    id: 'beat1_church_spot',
+    voiceKey: 'ww1_british_officer',
+    style: 'triumphant, sharp-eyed Norman royal clerk uncovering hidden village wealth',
+    text: "Got him! One stone parish church, ninety households, and forty-one acres of hay-meadow, making Fareham one of the largest towns on the coast!",
+  },
+  {
+    id: 'beat3_bishop_bailiff',
+    voiceKey: 'male_historian',
+    style: 'stern, haughty Norman cathedral official demanding maximum rent without sympathy',
+    text: "Bishop Walkelin is rebuilding vast Winchester Cathedral in Norman stone! He demands twenty pounds a year from Fareham whether the villagers like it or not!",
+  },
+  {
+    id: 'beat4_five_kids',
+    voiceKey: 'ww1_british_woman',
+    style: 'fiery, quick-witted English village mother pointing out her children inside a smoky cottage',
+    text: "Count them yourself! One toddler by the pot, two sharing pottage, and two stacking logs! Zero children are listed anywhere in your Domesday Book!",
+  },
+  {
+    id: 'beat4_grandma',
+    voiceKey: 'ww1_british_woman',
+    style: 'warm, spirited English village mother defending her elderly mother spinning wool',
+    text: "Grandma remembers Viking ships in the Solent under King Cnut, yet because she doesn't pay geld tax, Domesday pretends she isn't even here!",
+  },
+  {
+    id: 'beat4_pets',
+    voiceKey: 'ww1_british_officer',
+    style: 'haughty Norman treasury clerk scoffing dismissively at farmyard pets',
+    text: "Brother Aldwin exaggerated! Royal scribes ignored farm dogs, cottage hens, and turnip patches because King William couldn't squeeze silver tax out of them!",
+  },
+  {
+    id: 'beat4_bennet_stump',
+    voiceKey: 'ww1_british_tommy',
+    style: 'cheeky, conspiratorial Hampshire peasant whispering from behind a mossy tree stump',
+    text: "Psst! Stubitone literally means Tree-Stump Farm! Still zero oxen, still hugging my wormy turnip, and still worth naught pounds, naught shillings, and naught pence to the King!",
+  },
 ];
 
 function sha256(s) {

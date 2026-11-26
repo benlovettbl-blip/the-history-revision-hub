@@ -79,6 +79,7 @@ export class DomesdayAudioDirector {
     this.step = 0;
     this.timerId = null;
     this.activeVoAudio = null;
+    this.sharedVoEl = null;
     this.onVoStateChange = null;
 
     try {
@@ -326,7 +327,14 @@ export class DomesdayAudioDirector {
     if (!DOMESDAY_VO_CLIPS.has(clipId)) return;
 
     try {
-      const audio = new Audio(`/audio/labs/domesday/${clipId}.mp3`);
+      if (!this.sharedVoEl) {
+        this.sharedVoEl = new Audio();
+        this.sharedVoEl.preload = 'auto';
+      }
+      const audio = this.sharedVoEl;
+      audio.onended = null;
+      audio.onerror = null;
+      audio.src = `/audio/labs/domesday/${clipId}.mp3`;
       audio.volume = 0.96;
       this.activeVoAudio = audio;
       this.isDucked = true;
@@ -341,8 +349,8 @@ export class DomesdayAudioDirector {
           this.onVoStateChange?.(clipId, false);
         }
       };
-      audio.addEventListener('ended', finish, { once: true });
-      audio.addEventListener('error', finish, { once: true });
+      audio.onended = finish;
+      audio.onerror = finish;
       audio.play().catch(finish);
     } catch (_) {
       this.isDucked = false;

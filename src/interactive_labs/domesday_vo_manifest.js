@@ -20,5 +20,15 @@ export const DOMESDAY_VO_CLIPS = new Set([
   "beat4_monk_myth",
   "beat4_edith_door",
   "beat5_stubitone_latin",
-  "beat5_debrief_historian"
+  "beat5_debrief_historian",
+  "cover_odo_pigs",
+  "cover_gull_squawk",
+  "beat1_mills_spot",
+  "beat1_pigs_spot",
+  "beat1_church_spot",
+  "beat3_bishop_bailiff",
+  "beat4_five_kids",
+  "beat4_grandma",
+  "beat4_pets",
+  "beat4_bennet_stump"
 ]);
