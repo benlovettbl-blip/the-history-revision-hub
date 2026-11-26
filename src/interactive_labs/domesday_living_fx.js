@@ -40,9 +40,16 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
   let width = 640;
   let height = 360;
   let rafId = 0;
+  let lastTs = 0;
   let destroyed = false;
+  let isOffscreen = false;
   let wheelBoost = 0;
   let gullSquawkTimer = 0;
+  let cachedQuillGlow = null;
+  let cachedAssizeBeam = null;
+
+  const reducedMotionQuery =
+    typeof window !== 'undefined' ? window.matchMedia?.('(prefers-reduced-motion: reduce)') : null;
 
   // Scene-specific state pools
   let lightningBolt = null;
@@ -111,6 +118,22 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
 
   const bursts = [];
 
+  function rebuildCachedGradients() {
+    if (presetKey === 'cover') {
+      const qx = 0.662 * width;
+      const qy = 0.245 * height;
+      const g = ctx.createRadialGradient(qx, qy, 2, qx, qy, width * 0.09);
+      g.addColorStop(0, 'rgba(254, 240, 138, 0.42)');
+      g.addColorStop(1, 'rgba(254, 240, 138, 0)');
+      cachedQuillGlow = g;
+    } else if (presetKey === 'assize') {
+      const bg = ctx.createLinearGradient(width * 0.9, height * 0.12, width * 0.58, height * 0.72);
+      bg.addColorStop(0, 'rgba(186, 230, 253, 0.16)');
+      bg.addColorStop(1, 'rgba(186, 230, 253, 0)');
+      cachedAssizeBeam = bg;
+    }
+  }
+
   function syncSize() {
     if (!containerEl.isConnected) return;
     const rect = containerEl.getBoundingClientRect();
@@ -121,6 +144,7 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       canvas.width = Math.round(width * dpr);
       canvas.height = Math.round(height * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      rebuildCachedGradients();
     }
   }
 
@@ -130,7 +154,7 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
 
   const imgEl = containerEl.querySelector('.domesday-diorama-img');
   const onPointerMove = (e) => {
-    if (!imgEl) return;
+    if (!imgEl || reducedMotionQuery?.matches) return;
     const rect = containerEl.getBoundingClientRect();
     if (!rect.width || !rect.height) return;
     const nx = (e.clientX - rect.left) / rect.width - 0.5;
@@ -195,7 +219,7 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
   // =========================================================================
   // 1. COVER: FORKED STORM LIGHTNING + QUILL STARDUST + DRAGON WAKE
   // =========================================================================
-  function renderCoverScene(ts, t) {
+  function renderCoverScene(ts, t, dt60) {
     if (ts > nextBoltAt) {
       const startX = (0.28 + Math.random() * 0.26) * width;
       const pts = [{ x: startX, y: 0 }];
@@ -222,22 +246,21 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       lightningBolt.pts.forEach((p, idx) => (idx === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y)));
       ctx.stroke();
       ctx.restore();
-      lightningBolt.alpha *= 0.84;
+      lightningBolt.alpha *= Math.pow(0.84, dt60);
     }
 
-    // Golden cutlass-quill stardust sparkles (around x=66%, y=25%)
     const qx = 0.662 * width;
     const qy = 0.245 * height;
-    const qGlow = ctx.createRadialGradient(qx, qy, 2, qx, qy, width * 0.09);
-    qGlow.addColorStop(0, 'rgba(254, 240, 138, 0.42)');
-    qGlow.addColorStop(1, 'rgba(254, 240, 138, 0)');
-    ctx.fillStyle = qGlow;
-    ctx.beginPath();
-    ctx.arc(qx, qy, width * 0.09, 0, Math.PI * 2);
-    ctx.fill();
+    if (!cachedQuillGlow) rebuildCachedGradients();
+    if (cachedQuillGlow) {
+      ctx.fillStyle = cachedQuillGlow;
+      ctx.beginPath();
+      ctx.arc(qx, qy, width * 0.09, 0, Math.PI * 2);
+      ctx.fill();
+    }
 
     quillSparks.forEach((sp, i) => {
-      sp.prog = (sp.prog + 0.008) % 1;
+      sp.prog = (sp.prog + 0.008 * dt60) % 1;
       const sx = qx + Math.cos(sp.ang + t * 0.8) * (sp.dist + sp.prog * 22);
       const sy = qy + Math.sin(sp.ang + t * 0.8) * (sp.dist * 0.6) + sp.prog * 18;
       const a = Math.sin(sp.prog * Math.PI);
@@ -247,7 +270,6 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       ctx.fill();
     });
 
-    // Torch on left post + Viking prow wake ripple
     drawTorchFlame(11.8, 40.5, 1.05, t, 1);
     const vx = 0.39 * width;
     const vy = 0.59 * height;
@@ -262,10 +284,9 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
   // =========================================================================
   // 2. SWAMP: BUZZING TURNIP FLIES + WRIGGLING WORM + MARSH GAS + SEAGULL
   // =========================================================================
-  function renderSwampScene(t) {
-    // Rising green-amber marsh gas bubbles around Bennet's muddy knees
+  function renderSwampScene(t, dt60) {
     marshBubbles.forEach((b) => {
-      b.prog += b.spd;
+      b.prog += b.spd * dt60;
       if (b.prog >= 1) {
         b.prog = 0;
         b.rx = 0.28 + Math.random() * 0.48;
@@ -282,7 +303,6 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
         ctx.fill();
         ctx.stroke();
       } else {
-        // Bubble pop ring!
         const popP = (b.prog - 0.82) / 0.18;
         ctx.strokeStyle = `rgba(217, 249, 157, ${(0.55 * (1 - popP)).toFixed(2)})`;
         ctx.beginPath();
@@ -291,7 +311,6 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       }
     });
 
-    // Wriggling pink worm poking out of Bennet's gnarly turnip (x=66.2%, y=43.5%)
     const wx = 0.662 * width;
     const wy = 0.438 * height;
     ctx.save();
@@ -304,7 +323,6 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     ctx.stroke();
     ctx.restore();
 
-    // Exclusive Buzzing Figure-Eight Turnip Dung-Flies!
     const fcx = 0.635 * width;
     const fcy = 0.295 * height;
     const spread = width * 0.048;
@@ -324,7 +342,6 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       ctx.fill();
     }
 
-    // Pitch-torch flame & Living Grumpy Seagull blink/squawk
     drawTorchFlame(77.8, 46.2, 1.15, t, 2);
     const gx = 0.808 * width;
     const gy = 0.122 * height;
@@ -345,13 +362,12 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       }
     }
 
-    // Driving sideways coastal squall rain
     ctx.strokeStyle = 'rgba(186, 230, 253, 0.28)';
     ctx.lineWidth = 1.3;
     ctx.beginPath();
     squallDrops.forEach((d) => {
-      d.y += d.spd;
-      d.x -= d.spd * 0.22;
+      d.y += d.spd * dt60;
+      d.x -= d.spd * 0.22 * dt60;
       if (d.y > 1.04) {
         d.y = -0.04;
         d.x = Math.random();
@@ -368,14 +384,12 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
   // =========================================================================
   // 3. FAREHAM MILLS: FLOWING RIVER CURRENTS + ROTATING MILL PADDLES + ODO SWEAT
   // =========================================================================
-  function renderFarehamMillsScene(t) {
-    // Flowing silver S-bend river current ribbons along Fareham Creek / Wallington River
+  function renderFarehamMillsScene(t, dt60) {
     ctx.save();
     ctx.lineCap = 'round';
     riverCurrents.forEach((rc) => {
-      rc.prog = (rc.prog + rc.spd * (1 + wheelBoost * 1.5)) % 1;
+      rc.prog = (rc.prog + rc.spd * (1 + wheelBoost * 1.5) * dt60) % 1;
       const p = rc.prog;
-      // Follow creek path from (52%, 47%) -> (58%, 64%) -> (78%, 88%)
       const x1 = (0.5 + p * 0.34 + Math.sin(p * Math.PI * 1.6) * 0.04 + rc.lane) * width;
       const y1 = (0.46 + p * 0.48) * height;
       const alpha = Math.sin(p * Math.PI) * 0.38;
@@ -465,27 +479,25 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
   // =========================================================================
   // 4. ROYAL ASSIZE: SLANTED WINDOW MOONBEAMS + SILVER COIN GLINTS + TORCHES
   // =========================================================================
-  function renderAssizeScene(t) {
-    // Diagonal cool moonbeam shaft from arched stone window (top-right x=89%, y=16%)
-    ctx.save();
-    const beamGrad = ctx.createLinearGradient(width * 0.9, height * 0.12, width * 0.58, height * 0.72);
-    beamGrad.addColorStop(0, 'rgba(186, 230, 253, 0.16)');
-    beamGrad.addColorStop(1, 'rgba(186, 230, 253, 0)');
-    ctx.fillStyle = beamGrad;
-    ctx.beginPath();
-    ctx.moveTo(width * 0.86, height * 0.08);
-    ctx.lineTo(width * 0.92, height * 0.24);
-    ctx.lineTo(width * 0.66, height * 0.78);
-    ctx.lineTo(width * 0.52, height * 0.68);
-    ctx.closePath();
-    ctx.fill();
-    ctx.restore();
+  function renderAssizeScene(t, dt60) {
+    if (!cachedAssizeBeam) rebuildCachedGradients();
+    if (cachedAssizeBeam) {
+      ctx.save();
+      ctx.fillStyle = cachedAssizeBeam;
+      ctx.beginPath();
+      ctx.moveTo(width * 0.86, height * 0.08);
+      ctx.lineTo(width * 0.92, height * 0.24);
+      ctx.lineTo(width * 0.66, height * 0.78);
+      ctx.lineTo(width * 0.52, height * 0.68);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
 
-    // Floating illuminated hall dust-motes
     ctx.fillStyle = 'rgba(254, 243, 199, 0.42)';
     hallMotes.forEach((m) => {
-      m.x += m.vx;
-      m.y += m.vy;
+      m.x += m.vx * dt60;
+      m.y += m.vy * dt60;
       if (m.x < 0.45 || m.y > 0.88) {
         m.x = 0.82 + Math.random() * 0.12;
         m.y = 0.12 + Math.random() * 0.25;
@@ -521,11 +533,9 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
   // =========================================================================
   // 5. STUBBINGTON HUT: BUBBLING CAULDRON + LADLE DRIP + HEARTH SMOKE + EAVES DRIPS
   // =========================================================================
-  function renderStubbingtonHutScene(t) {
-    // Crackling floor hearth fire
+  function renderStubbingtonHutScene(t, dt60) {
     drawTorchFlame(44.2, 68.5, 1.05, t, 5);
 
-    // Bubbling golden pottage stew inside iron cauldron rim (x=44.2%, y=60.5%)
     for (let b = 0; b < 5; b++) {
       const pr = (t * 1.4 + b * 0.2) % 1;
       const bx = (0.425 + b * 0.0085) * width;
@@ -536,7 +546,6 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       ctx.fill();
     }
 
-    // Periodic soup droplet dripping off Edith's angry wooden ladle (x=25.4%, y=67.5%)
     const dripProg = (t * 0.75) % 1;
     if (dripProg < 0.7) {
       const p = dripProg / 0.7;
@@ -548,11 +557,10 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       ctx.fill();
     }
 
-    // Spiralling grey woodsmoke rising from cauldron toward thatch rafters
     const sx0 = 0.438 * width;
     const sy0 = 0.56 * height;
     smokePuffs.forEach((p) => {
-      p.prog = (p.prog + 0.0042) % 1;
+      p.prog = (p.prog + 0.0042 * dt60) % 1;
       const px = sx0 + Math.sin(t * 1.5 + p.sway + p.prog * 4.5) * (14 * p.prog);
       const py = sy0 - p.prog * height * 0.44;
       const rad = 6 + p.prog * 22;
@@ -562,12 +570,11 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       ctx.fill();
     });
 
-    // Outdoor vertical roof-thatch rain drips strictly outside open doorway (x=84..99%)
     ctx.strokeStyle = 'rgba(186, 230, 253, 0.34)';
     ctx.lineWidth = 1.3;
     ctx.beginPath();
     eavesDrips.forEach((d) => {
-      d.y = (d.y + d.spd) % 1;
+      d.y = (d.y + d.spd * dt60) % 1;
       const px = d.x * width;
       const py = (0.18 + d.y * 0.74) * height;
       ctx.moveTo(px, py);
@@ -575,14 +582,13 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     });
     ctx.stroke();
 
-    // Sneaky wiggling turnip tuft behind front-right mossy oak tree-stump (x=92%, y=76%)
     drawSneakyBennetTurnipTuft(92.0, 76.5, t);
   }
 
   // =========================================================================
   // 6. SERVI PLOUGH: GOLDEN SUNRISE RAYS + VALLEY MIST + OXEN BREATH + DAWN ROOKS
   // =========================================================================
-  function renderServiPloughScene(t) {
+  function renderServiPloughScene(t, dt60) {
     // Fanning golden dawn rays from upper-left horizon
     ctx.save();
     const sx = 0.12 * width;
@@ -637,7 +643,7 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     ctx.strokeStyle = 'rgba(51, 65, 85, 0.55)';
     ctx.lineWidth = 1.4;
     dawnBirds.forEach((b) => {
-      b.x = (b.x + b.spd) % 1.08;
+      b.x = (b.x + b.spd * dt60) % 1.08;
       const bx = (b.x - 0.04) * width;
       const by = b.y * height + Math.sin(t * 2 + b.phase) * 3;
       const flap = Math.sin(t * 6.5 + b.phase) * 3.5;
@@ -649,32 +655,87 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     });
   }
 
+  function ensureLoopRunning() {
+    if (destroyed || rafId) return;
+    if ((typeof document !== 'undefined' && document.hidden) || isOffscreen) return;
+    lastTs = 0;
+    rafId = requestAnimationFrame(drawFrame);
+  }
+
+  function pauseLoop() {
+    if (rafId) {
+      cancelAnimationFrame(rafId);
+      rafId = 0;
+    }
+    lastTs = 0;
+  }
+
+  const onVisChange = () => {
+    if (typeof document !== 'undefined' && document.hidden) pauseLoop();
+    else ensureLoopRunning();
+  };
+  if (typeof document !== 'undefined') {
+    document.addEventListener('visibilitychange', onVisChange);
+  }
+
+  const io =
+    typeof IntersectionObserver !== 'undefined'
+      ? new IntersectionObserver(
+          (entries) => {
+            const entry = entries[0];
+            if (!entry) return;
+            isOffscreen = !entry.isIntersecting;
+            if (isOffscreen) pauseLoop();
+            else ensureLoopRunning();
+          },
+          { threshold: 0.01 },
+        )
+      : null;
+  io?.observe(containerEl);
+
   function drawFrame(ts) {
     if (destroyed) return;
+    if ((typeof document !== 'undefined' && document.hidden) || isOffscreen) {
+      rafId = 0;
+      lastTs = 0;
+      return;
+    }
+
+    // Wait until underlying .webp diorama has decoded so FX never float over an unloaded black frame!
+    if (imgEl && (!imgEl.complete || imgEl.naturalWidth === 0)) {
+      rafId = requestAnimationFrame(drawFrame);
+      return;
+    }
+
+    const dt60 = lastTs ? Math.min(2.5, Math.max(0.2, ((ts - lastTs) / 1000) * 60)) : 1;
+    lastTs = ts;
+
     const t = ts * 0.001;
     ctx.clearRect(0, 0, width, height);
 
-    wheelBoost = Math.max(0, wheelBoost * 0.96);
-    gullSquawkTimer = Math.max(0, gullSquawkTimer - 0.025);
+    wheelBoost = Math.max(0, wheelBoost * Math.pow(0.96, dt60));
+    gullSquawkTimer = Math.max(0, gullSquawkTimer - 0.025 * dt60);
 
-    if (presetKey === 'cover') renderCoverScene(ts, t);
-    else if (presetKey === 'swamp') renderSwampScene(t);
-    else if (presetKey === 'fareham_mills') renderFarehamMillsScene(t);
-    else if (presetKey === 'assize') renderAssizeScene(t);
-    else if (presetKey === 'stubbington_hut') renderStubbingtonHutScene(t);
-    else if (presetKey === 'servi_plough') renderServiPloughScene(t);
+    if (!reducedMotionQuery?.matches) {
+      if (presetKey === 'cover') renderCoverScene(ts, t, dt60);
+      else if (presetKey === 'swamp') renderSwampScene(t, dt60);
+      else if (presetKey === 'fareham_mills') renderFarehamMillsScene(t, dt60);
+      else if (presetKey === 'assize') renderAssizeScene(t, dt60);
+      else if (presetKey === 'stubbington_hut') renderStubbingtonHutScene(t, dt60);
+      else if (presetKey === 'servi_plough') renderServiPloughScene(t, dt60);
+    }
 
-    // Interactive Tap-Burst Particles
+    // Interactive Tap-Burst Particles (dt60 frame-rate normalized)
     for (let i = bursts.length - 1; i >= 0; i--) {
       const b = bursts[i];
-      b.life -= 0.036;
+      b.life -= 0.036 * dt60;
       if (b.life <= 0) {
         bursts.splice(i, 1);
         continue;
       }
-      b.x += b.vx;
-      b.y += b.vy;
-      b.vy += 0.2;
+      b.x += b.vx * dt60;
+      b.y += b.vy * dt60;
+      b.vy += 0.2 * dt60;
       ctx.fillStyle = b.color;
       ctx.globalAlpha = Math.max(0, b.life);
       ctx.beginPath();
@@ -686,7 +747,7 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     rafId = requestAnimationFrame(drawFrame);
   }
 
-  rafId = requestAnimationFrame(drawFrame);
+  ensureLoopRunning();
 
   return {
     burst(xPct, yPct, kind = 'gold') {
@@ -716,8 +777,12 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     },
     destroy() {
       destroyed = true;
-      if (rafId) cancelAnimationFrame(rafId);
+      pauseLoop();
       ro?.disconnect();
+      io?.disconnect();
+      if (typeof document !== 'undefined') {
+        document.removeEventListener('visibilitychange', onVisChange);
+      }
       containerEl.removeEventListener('pointermove', onPointerMove);
       if (canvas.parentNode) canvas.parentNode.removeChild(canvas);
     },

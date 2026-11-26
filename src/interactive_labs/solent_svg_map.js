@@ -17,6 +17,7 @@ export function renderSolentGisSvgHTML({
   showModernGhost = false,
   spyglassPos = { x: 58, y: 74 },
   foundBlindSpots = new Set(),
+  svgUid = 'sol0',
 }) {
   const pins = data?.modernPins || [];
   const manors = data?.manors || [];
@@ -104,34 +105,40 @@ export function renderSolentGisSvgHTML({
   const clampedLabelX = Math.max(96, Math.min(796, splitX)) - splitX;
   const svgTouchAction = mode === 'xray' ? 'pan-y' : 'manipulation';
 
+  const seaId = `solentSeaGrad-${svgUid}`;
+  const land66Id = `vellumLand1066-${svgUid}`;
+  const land86Id = `vellumLand1086-${svgUid}`;
+  const clipLId = `clipLeft1066-${svgUid}`;
+  const clipRId = `clipRight1086-${svgUid}`;
+
   return `
-    <svg viewBox="0 0 900 540" class="solent-gis-svg" id="solent-gis-svg" style="width:100%;height:100%;display:block;touch-action:${svgTouchAction};user-select:none;">
+    <svg viewBox="0 0 900 540" class="solent-gis-svg" style="width:100%;height:100%;display:block;touch-action:${svgTouchAction};user-select:none;">
       <defs>
-        <linearGradient id="solentSeaGrad" x1="0" y1="0" x2="0" y2="1">
+        <linearGradient id="${seaId}" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#1e3a5f"/>
           <stop offset="55%" stop-color="#164e63"/>
           <stop offset="100%" stop-color="#0f2942"/>
         </linearGradient>
-        <linearGradient id="vellumLand1066" x1="0" y1="0" x2="1" y2="1">
+        <linearGradient id="${land66Id}" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0%" stop-color="#ecfccb"/>
           <stop offset="60%" stop-color="#d9f99d"/>
           <stop offset="100%" stop-color="#bef264"/>
         </linearGradient>
-        <linearGradient id="vellumLand1086" x1="0" y1="0" x2="1" y2="1">
+        <linearGradient id="${land86Id}" x1="0" y1="0" x2="1" y2="1">
           <stop offset="0%" stop-color="#f5ecd7"/>
           <stop offset="65%" stop-color="#e7d6b5"/>
           <stop offset="100%" stop-color="#d6be92"/>
         </linearGradient>
-        <clipPath id="clipLeft1066">
-          <rect x="0" y="0" width="${splitX}" height="540"/>
+        <clipPath id="${clipLId}">
+          <rect data-clip-role="left1066" x="0" y="0" width="${splitX}" height="540"/>
         </clipPath>
-        <clipPath id="clipRight1086">
-          <rect x="${splitX}" y="0" width="${900 - splitX}" height="540"/>
+        <clipPath id="${clipRId}">
+          <rect data-clip-role="right1086" x="${splitX}" y="0" width="${900 - splitX}" height="540"/>
         </clipPath>
       </defs>
 
       <!-- Sea Background -->
-      <rect width="900" height="540" fill="url(#solentSeaGrad)"/>
+      <rect width="900" height="540" fill="url(#${seaId})"/>
 
       <!-- Subtle Tidal Wave Lines -->
       <g stroke="rgba(186,230,253,0.2)" stroke-width="1.5" fill="none" pointer-events="none">
@@ -143,8 +150,8 @@ export function renderSolentGisSvgHTML({
       ${
         mode === 'xray'
           ? `
-        <g clip-path="url(#clipLeft1066)">
-          <path d="${mainlandPath}" fill="url(#vellumLand1066)" stroke="#365314" stroke-width="3"/>
+        <g clip-path="url(#${clipLId})">
+          <path d="${mainlandPath}" fill="url(#${land66Id})" stroke="#365314" stroke-width="3"/>
           <path d="${portseaIslandPath}" fill="#d9f99d" stroke="#365314" stroke-width="2.5"/>
           <path d="${wightPath}" fill="#a3e635" opacity="0.65"/>
           <path d="${riverMeonPath}" fill="none" stroke="#0284c7" stroke-width="5" stroke-linecap="round"/>
@@ -153,8 +160,8 @@ export function renderSolentGisSvgHTML({
           ${manors.map((m) => renderManorShield(m, false)).join('')}
         </g>
 
-        <g clip-path="url(#clipRight1086)">
-          <path d="${mainlandPath}" fill="url(#vellumLand1086)" stroke="#451a03" stroke-width="3"/>
+        <g clip-path="url(#${clipRId})">
+          <path d="${mainlandPath}" fill="url(#${land86Id})" stroke="#451a03" stroke-width="3"/>
           <path d="${portseaIslandPath}" fill="#e7d6b5" stroke="#451a03" stroke-width="2.5"/>
           <path d="${wightPath}" fill="#cbb286" opacity="0.65"/>
           <path d="${riverMeonPath}" fill="none" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round"/>
@@ -164,7 +171,7 @@ export function renderSolentGisSvgHTML({
         </g>
       `
           : `
-        <path d="${mainlandPath}" fill="url(#vellumLand1086)" stroke="#451a03" stroke-width="3.2"/>
+        <path d="${mainlandPath}" fill="url(#${land86Id})" stroke="#451a03" stroke-width="3.2"/>
         <path d="${portseaIslandPath}" fill="#e7d6b5" stroke="#451a03" stroke-width="2.5" stroke-dasharray="${rewound1086 ? '6 4' : 'none'}"/>
         <path d="${wightPath}" fill="#cbb286" opacity="0.65" stroke="#451a03" stroke-width="2"/>
         <path d="${riverMeonPath}" fill="none" stroke="#1e40af" stroke-width="5.2" stroke-linecap="round"/>

@@ -81,10 +81,39 @@ export class DomesdayAudioDirector {
     this.activeVoAudio = null;
     this.sharedVoEl = null;
     this.onVoStateChange = null;
+    this._voPausedByVisibility = false;
 
     try {
       this.muted = localStorage.getItem(STORAGE_MUTE_KEY) === 'true';
     } catch (_) {}
+
+    this._onVisibilityChange = () => this.handleVisibilityChange();
+    if (typeof document !== 'undefined') {
+      document.addEventListener('visibilitychange', this._onVisibilityChange);
+    }
+  }
+
+  handleVisibilityChange() {
+    if (typeof document === 'undefined') return;
+    if (document.hidden) {
+      if (this.activeVoAudio && !this.activeVoAudio.paused) {
+        this._voPausedByVisibility = true;
+        try {
+          this.activeVoAudio.pause();
+        } catch (_) {}
+      }
+      if (this.ctx && this.ctx.state === 'running') {
+        this.ctx.suspend().catch(() => {});
+      }
+    } else {
+      if (!this.muted && this.isPlaying && this.ctx && this.ctx.state === 'suspended') {
+        this.ctx.resume().catch(() => {});
+      }
+      if (this._voPausedByVisibility && !this.muted && this.activeVoAudio) {
+        this._voPausedByVisibility = false;
+        this.activeVoAudio.play().catch(() => {});
+      }
+    }
   }
 
   ensureContext() {
@@ -202,6 +231,7 @@ export class DomesdayAudioDirector {
 
     const stepMs = 235;
     this.timerId = setInterval(() => {
+      if (typeof document !== 'undefined' && document.hidden) return;
       if (!this.ctx || this.muted || !this.musicEnabled) return;
       if (this.ctx.state !== 'running') return;
       this.playMusicStep(this.step++);
@@ -597,6 +627,9 @@ export class DomesdayAudioDirector {
   }
 
   destroy() {
+    if (typeof document !== 'undefined' && this._onVisibilityChange) {
+      document.removeEventListener('visibilitychange', this._onVisibilityChange);
+    }
     this.stopVoice();
     if (this.timerId) {
       clearInterval(this.timerId);

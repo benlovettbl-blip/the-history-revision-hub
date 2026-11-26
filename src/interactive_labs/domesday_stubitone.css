@@ -889,8 +889,9 @@
 }
 
 @media (max-width: 520px) {
-  .dst-mob-arrow-btn {
-    display: none;
+  .dst-mob-arrow-btn,
+  .dst-hide-narrow {
+    display: none !important;
   }
   .dst-topbar .dst-icon-btn {
     width: 32px;

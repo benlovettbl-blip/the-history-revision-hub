@@ -15,6 +15,42 @@ import './domesday_stubitone.css';
 import { DomesdayAudioDirector } from './domesday_music.js';
 import { mountLivingDioramaFX } from './domesday_living_fx.js';
 import { renderSolentGisSvgHTML } from './solent_svg_map.js';
+import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
+
+const SESSION_SAVE_KEY = 'hh_domesday_session_v1';
+
+const STAGE_PRELOAD_MAP = {
+  cover: ['/images/arcade/domesday/scene_1_bennet_swamp.webp', '/audio/labs/domesday/cover_welcome.mp3'],
+  beat0: ['/images/arcade/domesday/scene_2_fareham_mills.webp', '/audio/labs/domesday/beat1_odo_oath.mp3'],
+  beat1: ['/images/arcade/domesday/scene_5_fareham_servi.webp', '/images/arcade/domesday/scene_3_royal_assize.webp'],
+  beat2: ['/images/arcade/domesday/scene_3_royal_assize.webp', '/audio/labs/domesday/beat3_villager_plea.mp3'],
+  beat3: ['/images/arcade/domesday/scene_4_stubbington_hut.webp', '/audio/labs/domesday/beat4_monk_myth.mp3'],
+  beat4: ['/audio/labs/domesday/beat5_stubitone_latin.mp3', '/audio/labs/domesday/beat5_debrief_historian.mp3'],
+};
+
+const preloadedUrls = new Set();
+function preloadUpcomingStageAssets(stepId) {
+  const list = STAGE_PRELOAD_MAP[stepId];
+  if (!list || typeof window === 'undefined') return;
+  const run = () => {
+    list.forEach((url) => {
+      if (preloadedUrls.has(url)) return;
+      preloadedUrls.add(url);
+      if (url.endsWith('.webp')) {
+        const img = new Image();
+        img.decoding = 'async';
+        img.src = url;
+      } else if (url.endsWith('.mp3')) {
+        fetch(url, { cache: 'force-cache' }).catch(() => {});
+      }
+    });
+  };
+  if (typeof window.requestIdleCallback === 'function') {
+    window.requestIdleCallback(run, { timeout: 1200 });
+  } else {
+    setTimeout(run, 420);
+  }
+}
 
 const STEPS = [
   { id: 'cover', short: '🏰 Cover', mob: '🏰 Cover' },
@@ -123,12 +159,14 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   if (!stageEl) return () => {};
 
   const audio = new DomesdayAudioDirector();
+  const instanceSvgUid = `sol${Math.random().toString(36).slice(2, 7)}`;
   let activeFx = null;
   let data = null;
   let unmounted = false;
   let shimmerTimeout = null;
   let shellEl = null;
   let mountedSceneSignature = '';
+  let enteredBrowserFs = false;
   let pointerDownSnap = null;
   let pointerDownPos = null;
   let pointerMovedDuringTap = false;
@@ -193,6 +231,139 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     archiveBounty1: null, // 'small40' | 'large20'
     archiveBounty2: null, // 'meon' | 'funtley'
   };
+
+  function persistSessionState() {
+    if (typeof sessionStorage === 'undefined') return;
+    try {
+      const payload = {
+        step: state.step,
+        score: state.score,
+        xpAwarded: state.xpAwarded,
+        completedSteps: [...state.completedSteps],
+        bennetSightings: [...state.bennetSightings],
+        coverSecretsFound: [...state.coverSecretsFound],
+        selectedPinId: state.selectedPinId,
+        rewound1086: state.rewound1086,
+        swampSecretsFound: [...state.swampSecretsFound],
+        beat1SubMode: state.beat1SubMode,
+        foundFarehamAssets: [...state.foundFarehamAssets],
+        farehamExtrasFound: [...state.farehamExtrasFound],
+        serviReflected: state.serviReflected,
+        xraySplitPct: state.xraySplitPct,
+        selectedManorId: state.selectedManorId,
+        b2MissionIdx: state.b2MissionIdx,
+        b2Solved: [...state.b2Solved],
+        assizeSpotsHeard: [...state.assizeSpotsHeard],
+        rulingVikings: state.rulingVikings,
+        rulingBishop: state.rulingBishop,
+        assizeVerdictRevealed: state.assizeVerdictRevealed,
+        beat4Tab: state.beat4Tab,
+        hutPeopleGroups: [...state.hutPeopleGroups],
+        foundBlindSpots: [...state.foundBlindSpots],
+        translationPct: state.translationPct,
+        b5ClueStep: state.b5ClueStep,
+        b5SolvedClues: [...state.b5SolvedClues],
+        stampAnswers: state.stampAnswers,
+        archiveBounty1: state.archiveBounty1,
+        archiveBounty2: state.archiveBounty2,
+      };
+      sessionStorage.setItem(SESSION_SAVE_KEY, JSON.stringify(payload));
+    } catch (_) {}
+    if (state.step === 'beat5' && state.score > 0) {
+      saveArcadePersonalBest('medieval_england', 'domesday_stubitone', 'all', state.score);
+    }
+  }
+
+  function hydrateSessionState() {
+    if (ctx.freshSession || typeof sessionStorage === 'undefined') return;
+    try {
+      const raw = sessionStorage.getItem(SESSION_SAVE_KEY);
+      if (!raw) return;
+      const s = JSON.parse(raw);
+      if (!s || typeof s !== 'object') return;
+      if (s.step && STEPS.some((x) => x.id === s.step)) state.step = s.step;
+      if (typeof s.score === 'number') state.score = s.score;
+      state.xpAwarded = Boolean(s.xpAwarded);
+      if (Array.isArray(s.completedSteps)) state.completedSteps = new Set(s.completedSteps);
+      if (Array.isArray(s.bennetSightings)) state.bennetSightings = new Set(s.bennetSightings);
+      if (Array.isArray(s.coverSecretsFound)) state.coverSecretsFound = new Set(s.coverSecretsFound);
+      if (s.selectedPinId) state.selectedPinId = s.selectedPinId;
+      state.rewound1086 = Boolean(s.rewound1086);
+      if (Array.isArray(s.swampSecretsFound)) state.swampSecretsFound = new Set(s.swampSecretsFound);
+      if (s.beat1SubMode) state.beat1SubMode = s.beat1SubMode;
+      if (Array.isArray(s.foundFarehamAssets)) state.foundFarehamAssets = new Set(s.foundFarehamAssets);
+      if (Array.isArray(s.farehamExtrasFound)) state.farehamExtrasFound = new Set(s.farehamExtrasFound);
+      state.serviReflected = Boolean(s.serviReflected);
+      if (typeof s.xraySplitPct === 'number') state.xraySplitPct = s.xraySplitPct;
+      if (s.selectedManorId) state.selectedManorId = s.selectedManorId;
+      if (typeof s.b2MissionIdx === 'number') state.b2MissionIdx = s.b2MissionIdx;
+      if (Array.isArray(s.b2Solved)) state.b2Solved = new Set(s.b2Solved);
+      if (Array.isArray(s.assizeSpotsHeard)) state.assizeSpotsHeard = new Set(s.assizeSpotsHeard);
+      state.rulingVikings = s.rulingVikings || null;
+      state.rulingBishop = s.rulingBishop || null;
+      state.assizeVerdictRevealed = Boolean(s.assizeVerdictRevealed);
+      if (s.beat4Tab) state.beat4Tab = s.beat4Tab;
+      if (Array.isArray(s.hutPeopleGroups)) state.hutPeopleGroups = new Set(s.hutPeopleGroups);
+      if (Array.isArray(s.foundBlindSpots)) state.foundBlindSpots = new Set(s.foundBlindSpots);
+      if (typeof s.translationPct === 'number') state.translationPct = s.translationPct;
+      if (typeof s.b5ClueStep === 'number') state.b5ClueStep = s.b5ClueStep;
+      if (Array.isArray(s.b5SolvedClues)) state.b5SolvedClues = new Set(s.b5SolvedClues);
+      if (s.stampAnswers && typeof s.stampAnswers === 'object') state.stampAnswers = s.stampAnswers;
+      state.archiveBounty1 = s.archiveBounty1 || null;
+      state.archiveBounty2 = s.archiveBounty2 || null;
+    } catch (_) {}
+  }
+
+  function resetAuditProgress() {
+    try {
+      sessionStorage.removeItem(SESSION_SAVE_KEY);
+    } catch (_) {}
+    state.step = 'cover';
+    state.completedSteps.clear();
+    state.score = 0;
+    state.bennetSightings.clear();
+    state.coverSecretsFound.clear();
+    state.selectedPinId = 'gosport';
+    state.rewound1086 = false;
+    state.peekSwampAnyway = false;
+    state.swampSecretsFound.clear();
+    state.beat1SubMode = 'hunt';
+    state.foundFarehamAssets.clear();
+    state.farehamExtrasFound.clear();
+    state.serviReflected = false;
+    state.xraySplitPct = 20;
+    state.selectedManorId = 'stubbington';
+    state.showModernGhost = false;
+    state.b2MissionIdx = 0;
+    state.b2Solved.clear();
+    state.b2WrongAttempt = '';
+    state.assizeSpotsHeard.clear();
+    state.rulingVikings = null;
+    state.rulingBishop = null;
+    state.assizeVerdictRevealed = false;
+    state.beat4Tab = 'hut';
+    state.hutPeopleGroups = new Set(['husband_head']);
+    state.foundBlindSpots.clear();
+    state.translationPct = 0;
+    state.activeChunkIdx = 0;
+    state.b5ClueStep = 0;
+    state.b5SolvedClues.clear();
+    state.b5WrongChunkIdx = -1;
+    state.stampAnswers = {};
+    state.archiveBounty1 = null;
+    state.archiveBounty2 = null;
+    setSpeech(
+      'guy',
+      'Sir Guy de Rouen • Royal Exchequer Clerk',
+      isTouchUI()
+        ? 'Tap glowing spots on the painting to poke 1086 secrets—or press BEGIN 1086 ROYAL AUDIT to test your hometown!'
+        : 'Hover over the painting to spot discreet shiny secrets—or press BEGIN 1086 ROYAL AUDIT to test your hometown!',
+    );
+    mountedSceneSignature = '';
+    render({ isStepNavigation: true });
+  }
+
+  hydrateSessionState();
 
   function cleanupFx() {
     if (activeFx) {
@@ -345,7 +516,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       if (!state.xpAwarded) {
         state.xpAwarded = true;
         window.hhAwardXp?.({ amount: 35, source: 'domesday_stubitone', unitId: 'medieval_england' });
+        ctx.onRoundComplete?.();
       }
+      saveArcadePersonalBest('medieval_england', 'domesday_stubitone', 'all', state.score);
       setSpeech(
         'monk',
         'Great Domesday Folio 46v • STVBITONE',
@@ -353,6 +526,8 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         'beat5_stubitone_latin',
       );
     }
+    persistSessionState();
+    preloadUpcomingStageAssets(nextStep);
     render({ isStepNavigation: true });
   }
 
@@ -360,11 +535,31 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     state.isFullscreen = !state.isFullscreen;
     shellEl?.classList.toggle('dst-is-fullscreen', state.isFullscreen);
     if (state.isFullscreen) {
-      if (shellEl?.requestFullscreen) shellEl.requestFullscreen().catch(() => {});
+      if (shellEl?.requestFullscreen) {
+        shellEl
+          .requestFullscreen()
+          .then(() => {
+            enteredBrowserFs = true;
+          })
+          .catch(() => {});
+      }
     } else if (document.fullscreenElement && document.exitFullscreen) {
+      enteredBrowserFs = false;
       document.exitFullscreen().catch(() => {});
     }
     syncHudOnly();
+  }
+
+  const onBrowserFsChange = () => {
+    if (enteredBrowserFs && typeof document !== 'undefined' && !document.fullscreenElement) {
+      enteredBrowserFs = false;
+      state.isFullscreen = false;
+      shellEl?.classList.remove('dst-is-fullscreen');
+      syncHudOnly();
+    }
+  };
+  if (typeof document !== 'undefined') {
+    document.addEventListener('fullscreenchange', onBrowserFsChange);
   }
 
   // =========================================================================
@@ -414,6 +609,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             const isDone = state.completedSteps.has(s.id);
             return `<option value="${s.id}" ${isAct ? 'selected' : ''}>${isDone && !isAct ? '✓ ' : ''}${s.mob}</option>`;
           }).join('')}
+          ${state.score > 0 || state.completedSteps.size > 0 ? `<option value="__reset__">↺ Restart Audit</option>` : ''}
         </select>
         <button type="button" class="dst-mob-arrow-btn" id="dst-mob-next" ${nextStep ? `data-goto-step="${nextStep}"` : 'disabled'} aria-label="Next Stage">
           <i class="fa-solid fa-chevron-right"></i>
@@ -424,6 +620,11 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         <span class="dst-score-chip">
           🪙 ${state.score}<span class="dst-score-verb"> pts</span> • ${state.bennetSightings.size >= 3 ? '🥕 3/3★' : `🥕<span class="dst-score-verb"> Turnips</span> ${state.bennetSightings.size}/3`}
         </span>
+        ${
+          state.score > 0 || state.completedSteps.size > 0
+            ? `<button type="button" class="dst-icon-btn dst-hide-narrow" data-dst-action="reset" title="Restart 1086 Audit from Scratch" aria-label="Restart Audit"><i class="fa-solid fa-rotate-left"></i></button>`
+            : ''
+        }
         <button type="button" class="dst-icon-btn ${!audio.muted ? 'is-active' : ''}" data-dst-action="mute" title="Toggle Voiceovers & Sound Effects" aria-label="Toggle Audio">
           <i class="fa-solid ${audio.muted ? 'fa-volume-xmark' : 'fa-volume-high'}"></i>
           <span class="dst-btn-lbl">${audio.muted ? 'Muted' : 'Audio On'}</span>
@@ -505,7 +706,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         </div>
 
         <div class="dst-cover-footer">
-          <div class="dst-cover-quote-wrap" id="dst-cover-quote-slot" style="flex:1;min-width:min(100%,240px);">
+          <div class="dst-cover-quote-wrap" id="dst-cover-quote-slot" role="status" aria-live="polite" style="flex:1;min-width:min(100%,240px);">
             ${renderCoverQuoteInnerHTML()}
           </div>
 
@@ -528,6 +729,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           mode: 'swamp',
           rewound1086: state.rewound1086,
           selectedPinId: state.selectedPinId,
+          svgUid: `${instanceSvgUid}-b0`,
         })}
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
@@ -603,7 +805,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
     return `
       <div class="dst-body">
-        <div class="dst-speech-box" id="dst-speech-slot">${renderSpeechInnerHTML()}</div>
+        <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
         <div class="dst-split">
           <div id="dst-b0-left-slot">
             ${renderBeat0LeftMapAndPillsHTML()}
@@ -713,7 +915,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
     return `
       <div class="dst-body">
-        <div class="dst-speech-box" id="dst-speech-slot">${renderSpeechInnerHTML()}</div>
+        <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
         <div class="dst-subtab-bar" id="dst-b1-subtabs-slot">${renderBeat1SubtabsInnerHTML()}</div>
 
         ${
@@ -898,7 +1100,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   function renderBeat2HTML() {
     return `
       <div class="dst-body">
-        <div class="dst-speech-box" id="dst-speech-slot">${renderSpeechInnerHTML()}</div>
+        <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
         <div class="dst-split">
           <div>
             <div class="dst-map-frame" id="dst-xray-map-wrap">
@@ -909,6 +1111,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                 selectedManorId: state.selectedManorId,
                 targetTapManorMode: state.b2MissionIdx === 1 && !state.b2Solved.has('m2'),
                 showModernGhost: state.showModernGhost,
+                svgUid: `${instanceSvgUid}-b2`,
               })}
             </div>
 
@@ -999,7 +1202,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   function renderBeat3HTML() {
     return `
       <div class="dst-body">
-        <div class="dst-speech-box" id="dst-speech-slot">${renderSpeechInnerHTML()}</div>
+        <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
         <div class="dst-split">
           <div>
             <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="assize">
@@ -1108,7 +1311,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
     return `
       <div class="dst-body">
-        <div class="dst-speech-box" id="dst-speech-slot">${renderSpeechInnerHTML()}</div>
+        <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
         <div class="dst-subtab-bar" id="dst-b4-subtabs-slot">${renderBeat4SubtabsInnerHTML()}</div>
 
         <div class="dst-split">
@@ -1140,6 +1343,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                   mode: 'spyglass',
                   spyglassPos: state.spyglassPos,
                   foundBlindSpots: state.foundBlindSpots,
+                  svgUid: `${instanceSvgUid}-b4`,
                 })}
               </div>
             `
@@ -1367,7 +1571,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
     return `
       <div class="dst-body">
-        <div class="dst-speech-box" id="dst-speech-slot">${renderSpeechInnerHTML()}</div>
+        <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
 
         <div class="dst-split" style="margin-bottom:16px;">
           <div class="dst-parchment-box">
@@ -1508,6 +1712,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
   function syncHudOnly() {
     if (!shellEl) return;
+    persistSessionState();
     preserveScrollPosition(() => {
       const topSlot = shellEl.querySelector('#dst-slot-topbar');
       if (topSlot) topSlot.innerHTML = renderTopBarInnerHTML();
@@ -1529,10 +1734,10 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     const splitX = Math.round((pct / 100) * 900);
     const clampedLabelX = Math.max(96, Math.min(796, splitX)) - splitX;
 
-    const leftRect = shellEl.querySelector('#clipLeft1066 rect');
+    const leftRect = shellEl.querySelector('[data-clip-role="left1066"]');
     if (leftRect) leftRect.setAttribute('width', String(splitX));
 
-    const rightRect = shellEl.querySelector('#clipRight1086 rect');
+    const rightRect = shellEl.querySelector('[data-clip-role="right1086"]');
     if (rightRect) {
       rightRect.setAttribute('x', String(splitX));
       rightRect.setAttribute('width', String(900 - splitX));
@@ -1598,6 +1803,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             selectedManorId: state.selectedManorId,
             targetTapManorMode: state.b2MissionIdx === 1 && !state.b2Solved.has('m2'),
             showModernGhost: state.showModernGhost,
+            svgUid: `${instanceSvgUid}-b2`,
           });
         }
         const ghostLbl = shellEl.querySelector('#dst-ghost-btn-lbl');
@@ -1632,6 +1838,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
               mode: 'spyglass',
               spyglassPos: state.spyglassPos,
               foundBlindSpots: state.foundBlindSpots,
+              svgUid: `${instanceSvgUid}-b4`,
             });
           }
         }
@@ -1846,6 +2053,10 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     shellEl.addEventListener('change', (e) => {
       const sel = e.target.closest('#dst-mob-step-select');
       if (sel) {
+        if (sel.value === '__reset__') {
+          resetAuditProgress();
+          return;
+        }
         audio.ensureContext();
         goToStep(sel.value);
       }
@@ -1880,6 +2091,8 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         if (act === 'mute') {
           audio.toggleMute();
           syncHudOnly();
+        } else if (act === 'reset') {
+          resetAuditProgress();
         } else if (act === 'fs') {
           toggleFullscreenMode();
         } else if (act === 'close') {
@@ -2552,6 +2765,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   loadDomesdayData()
     .then((json) => {
       data = json;
+      preloadUpcomingStageAssets(state.step);
       render({ isStepNavigation: true });
     })
     .catch((err) => {
@@ -2562,6 +2776,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
   return () => {
     unmounted = true;
+    if (typeof document !== 'undefined') {
+      document.removeEventListener('fullscreenchange', onBrowserFsChange);
+    }
     if (shimmerTimeout) clearTimeout(shimmerTimeout);
     cleanupFx();
     audio.destroy();
