@@ -18,14 +18,21 @@ import { mountLivingDioramaFX } from './domesday_living_fx.js';
 import { renderSolentGisSvgHTML } from './solent_svg_map.js';
 
 const STEPS = [
-  { id: 'cover', short: '🏰 Cover' },
-  { id: 'beat0', short: '1. Rewind' },
-  { id: 'beat1', short: '2. Fareham' },
-  { id: 'beat2', short: '3. Wipeout' },
-  { id: 'beat3', short: '4. Trial' },
-  { id: 'beat4', short: '5. Hut & Map' },
-  { id: 'beat5', short: '6. Latin & Truth' },
+  { id: 'cover', short: '🏰 Cover', mob: '🏰 Cover' },
+  { id: 'beat0', short: '1. Rewind', mob: '1/6 Rewind' },
+  { id: 'beat1', short: '2. Fareham', mob: '2/6 Fareham' },
+  { id: 'beat2', short: '3. Wipeout', mob: '3/6 Wipeout' },
+  { id: 'beat3', short: '4. Trial', mob: '4/6 Trial' },
+  { id: 'beat4', short: '5. Hut & Map', mob: '5/6 Hut & Map' },
+  { id: 'beat5', short: '6. Latin & Truth', mob: '6/6 Latin' },
 ];
+
+function isTouchUI() {
+  return (
+    typeof window !== 'undefined' &&
+    Boolean(window.matchMedia?.('(hover: none), (pointer: coarse)')?.matches)
+  );
+}
 
 // Portrait avatar crop coordinates from our 6 high-res dioramas
 const SPEAKER_AVATARS = {
@@ -102,8 +109,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
     avatarKey: 'guy',
     speakerName: 'Sir Guy de Rouen • Royal Exchequer Clerk',
-    speechText:
-      'Hover over the painting to spot discreet shiny secrets—or press BEGIN 1086 ROYAL AUDIT to test your hometown!',
+    speechText: isTouchUI()
+      ? 'Tap glowing spots on the painting to poke 1086 secrets—or press BEGIN 1086 ROYAL AUDIT to test your hometown!'
+      : 'Hover over the painting to spot discreet shiny secrets—or press BEGIN 1086 ROYAL AUDIT to test your hometown!',
 
     // Secret Bennet Luvet cameo tracker (3 sightings -> Bonus Sticker #0!)
     bennetSightings: new Set(),
@@ -140,7 +148,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     beat4Tab: 'hut', // 'hut' | 'map'
     hutPeopleGroups: new Set(['husband_head']), // starts at 1 (only household head counted by Domesday!) -> 'edith' (+1), 'five_kids' (+5), 'grandma' (+1) => 8 people!
     foundBlindSpots: new Set(), // 'edith_family' | 'untaxed_pets' | 'bs_portchester' | 'bs_gosport' | 'bs_portsmouth' | 'bs_chark'
-    spyglassPos: { x: 24, y: 78 },
+    spyglassPos: { x: 48, y: 34 },
 
     // Beat 5: Stubitone Parchment Curtain + Stamp Quiz + Truth Debrief
     translationPct: 0,
@@ -196,7 +204,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       setSpeech(
         'odo',
         'Sweating Reeve Odo • Fareham',
-        'I swear on Saint Swithin’s holy bones, my Lord—barely two squeaky little watermills in all of Fareham! Move your cursor across the creek to check if I’m lying!',
+        isTouchUI()
+          ? 'I swear on Saint Swithin’s holy bones, my Lord—barely two squeaky little watermills in all of Fareham! Tap around the creek to check if I’m lying!'
+          : 'I swear on Saint Swithin’s holy bones, my Lord—barely two squeaky little watermills in all of Fareham! Move your cursor across the creek to check if I’m lying!',
         'beat1_odo_oath',
       );
     } else if (nextStep === 'beat2') {
@@ -211,7 +221,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       setSpeech(
         'villager',
         'Fareham Villager • Sworn Witness',
-        'Hover over the witnesses in the torch-lit hall to hear both sides—then cast your Royal Verdict on Fareham’s Viking discount and £20 rent squeeze!',
+        isTouchUI()
+          ? 'Tap the witnesses in the torch-lit hall to hear both sides—then cast your Royal Verdict on Fareham’s Viking discount and £20 rent squeeze!'
+          : 'Hover over the witnesses in the torch-lit hall to hear both sides—then cast your Royal Verdict on Fareham’s Viking discount and £20 rent squeeze!',
         'beat3_villager_plea',
       );
     } else if (nextStep === 'beat4') {
@@ -219,7 +231,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       setSpeech(
         'monk',
         'Brother Aldwin • Winchester Chronicler',
-        'Domesday says Stubbington has "9 households"—hover inside Hut #3 to count how many REAL human beings are hiding in just ONE household!',
+        isTouchUI()
+          ? 'Domesday says Stubbington has "9 households"—tap inside Hut #3 to count how many REAL human beings are hiding in just ONE household!'
+          : 'Domesday says Stubbington has "9 households"—hover inside Hut #3 to count how many REAL human beings are hiding in just ONE household!',
         'beat4_monk_myth',
       );
     } else if (nextStep === 'beat5') {
@@ -252,7 +266,25 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   // =========================================================================
   // VIEW RENDERERS
   // =========================================================================
+  function getStageMicroHint() {
+    const touch = isTouchUI();
+    if (state.step === 'beat2' || (state.step === 'beat4' && state.beat4Tab === 'map')) {
+      return '🗺️ Tap shields & pins on the Solent map';
+    }
+    if (state.step === 'beat0' && !state.rewound1086) {
+      return '📍 Tap any coastal town pin on the map';
+    }
+    if (state.step === 'beat5') {
+      return '📜 Slide curtain & tap Latin lines to decode';
+    }
+    return touch ? '✨ Tap glowing spots on painting' : '✨ Hover scene for shiny glint dots';
+  }
+
   function renderTopBarHTML() {
+    const curIdx = Math.max(0, STEPS.findIndex((s) => s.id === state.step));
+    const prevStep = curIdx > 0 ? STEPS[curIdx - 1].id : '';
+    const nextStep = curIdx < STEPS.length - 1 ? STEPS[curIdx + 1].id : '';
+
     return `
       <div class="dst-topbar">
         <div class="dst-step-strip" role="tablist" aria-label="1086 Domesday Stages">
@@ -269,21 +301,37 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           }).join('')}
         </div>
 
-        <div class="dst-ctrl-group">
-          <span style="font-size:0.75rem;font-weight:900;color:#fde047;background:#292524;border:1px solid #78350f;padding:5px 10px;border-radius:8px;">
-            🪙 ${state.score} pts • ${state.bennetSightings.size >= 3 ? '🥕 BOGGY BENNET UNLOCKED!' : `🥕 Cameos ${state.bennetSightings.size}/3`}
-          </span>
-          <button type="button" class="dst-icon-btn ${!audio.muted ? 'is-active' : ''}" id="dst-btn-mute" title="Toggle Voiceovers & Sound Effects">
-            <i class="fa-solid ${audio.muted ? 'fa-volume-xmark' : 'fa-volume-high'}"></i>
-            <span>${audio.muted ? 'Muted' : 'Audio On'}</span>
+        <div class="dst-mobile-step-nav" aria-label="Mobile Stage Switcher">
+          <button type="button" class="dst-mob-arrow-btn" id="dst-mob-prev" ${prevStep ? `data-goto-step="${prevStep}"` : 'disabled'} aria-label="Previous Stage">
+            <i class="fa-solid fa-chevron-left"></i>
           </button>
-          <button type="button" class="dst-icon-btn ${state.isFullscreen ? 'is-active' : ''}" id="dst-btn-fs" title="Toggle Full-Screen Smartboard / Tablet View">
+          <select id="dst-mob-step-select" class="dst-mobile-step-select" aria-label="Choose 1086 Domesday Stage">
+            ${STEPS.map((s) => {
+              const isAct = state.step === s.id;
+              const isDone = state.completedSteps.has(s.id);
+              return `<option value="${s.id}" ${isAct ? 'selected' : ''}>${isDone && !isAct ? '✓ ' : ''}${s.mob}</option>`;
+            }).join('')}
+          </select>
+          <button type="button" class="dst-mob-arrow-btn" id="dst-mob-next" ${nextStep ? `data-goto-step="${nextStep}"` : 'disabled'} aria-label="Next Stage">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="dst-ctrl-group">
+          <span class="dst-score-chip">
+            🪙 ${state.score}<span class="dst-score-verb"> pts</span> • ${state.bennetSightings.size >= 3 ? '🥕 3/3★' : `🥕<span class="dst-score-verb"> Cameos</span> ${state.bennetSightings.size}/3`}
+          </span>
+          <button type="button" class="dst-icon-btn ${!audio.muted ? 'is-active' : ''}" id="dst-btn-mute" title="Toggle Voiceovers & Sound Effects" aria-label="Toggle Audio">
+            <i class="fa-solid ${audio.muted ? 'fa-volume-xmark' : 'fa-volume-high'}"></i>
+            <span class="dst-btn-lbl">${audio.muted ? 'Muted' : 'Audio On'}</span>
+          </button>
+          <button type="button" class="dst-icon-btn ${state.isFullscreen ? 'is-active' : ''}" id="dst-btn-fs" title="Toggle Full-Screen Smartboard / Tablet View" aria-label="Toggle Full Screen">
             <i class="fa-solid ${state.isFullscreen ? 'fa-compress' : 'fa-expand'}"></i>
-            <span>${state.isFullscreen ? 'Windowed' : 'Full Screen'}</span>
+            <span class="dst-btn-lbl">${state.isFullscreen ? 'Windowed' : 'Full Screen'}</span>
           </button>
           ${
             typeof ctx.onCloseModal === 'function'
-              ? `<button type="button" class="dst-icon-btn" id="dst-btn-close" style="border-color:#ef4444;color:#fecaca;"><i class="fa-solid fa-xmark"></i><span>Close</span></button>`
+              ? `<button type="button" class="dst-icon-btn" id="dst-btn-close" style="border-color:#ef4444;color:#fecaca;" aria-label="Close Adventure"><i class="fa-solid fa-xmark"></i><span class="dst-btn-lbl">Close</span></button>`
               : ''
           }
         </div>
@@ -301,7 +349,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         <div style="flex:1;min-width:0;">
           <div class="dst-speech-speaker">
             <span>🎙️ ${state.speakerName}</span>
-            <span style="font-size:0.68rem;color:#78350f;">Hover scene for shiny glint dots</span>
+            <span class="dst-speech-hint-chip">${getStageMicroHint()}</span>
           </div>
           <p class="dst-speech-text">&ldquo;${state.speechText}&rdquo;</p>
         </div>
@@ -312,8 +360,8 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   function renderSceneFooterBarHTML(secretFoundCount, secretTotalCount, captionText) {
     return `
       <div class="dst-scene-caption-strip">
-        <span>✨ <strong>Scene Secrets:</strong> ${secretFoundCount} / ${secretTotalCount} discovered</span>
-        <span style="color:#a8a29e;">${captionText}</span>
+        <span>✨ <strong>Secrets:</strong> ${secretFoundCount} / ${secretTotalCount}</span>
+        <span class="dst-caption-mid" style="color:#a8a29e;">${captionText}</span>
         <button type="button" class="dst-icon-btn" data-action="hint-shimmer" style="min-height:30px;padding:3px 9px;font-size:0.72rem;">
           ✨ Glint Hint
         </button>
@@ -324,39 +372,41 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   function renderCoverHTML() {
     return `
       <div class="dst-cover-wrap">
-        <div class="dst-cover-art-box" id="dst-fx-stage" data-fx-preset="cover">
-          <img src="/images/arcade/domesday/cover_secret_of_stubitone.webp"
-               alt="The Secret of Stubitone — 1086 Domesday Adventure Cover"
-               class="domesday-diorama-img" />
-          <div class="dst-cover-top-shade"></div>
+        <div class="dst-cover-stage">
+          <div class="dst-cover-art-box" id="dst-fx-stage" data-fx-preset="cover">
+            <img src="/images/arcade/domesday/cover_secret_of_stubitone.webp"
+                 alt="The Secret of Stubitone — 1086 Domesday Adventure Cover"
+                 class="domesday-diorama-img" />
+            <div class="dst-cover-top-shade"></div>
 
-          <div class="dst-cover-logo-wrap">
-            <div class="dst-lucas-kicker">⚔ KING WILLIAM EXCHEQUER STUDIOS PRESENTS ⚔</div>
-            <h2 class="dst-lucas-title">THE SECRET OF STUBITONE™</h2>
-            <p class="dst-lucas-sub">A Point-and-Poke 1086 Domesday Adventure Across Fareham, Stubbington &amp; The Solent</p>
+            <div class="dst-cover-logo-wrap">
+              <div class="dst-lucas-kicker">⚔ KING WILLIAM EXCHEQUER STUDIOS PRESENTS ⚔</div>
+              <h2 class="dst-lucas-title">THE SECRET OF STUBITONE™</h2>
+              <p class="dst-lucas-sub">A Point-and-Poke 1086 Domesday Adventure Across Fareham, Stubbington &amp; The Solent</p>
+            </div>
+
+            <!-- 5 Discreet Shiny Glint Hotspots (Zero Text Over Painting!) -->
+            ${hitZoneHTML({ id: 'dst-cover-bennet', x: 24, y: 69, w: 16, h: 32, found: state.coverSecretsFound.has('bennet'), ariaLabel: 'Inspect muddy peasant with turnip' })}
+            ${hitZoneHTML({ id: 'dst-cover-gull', x: 9.5, y: 23, w: 12, h: 18, found: state.coverSecretsFound.has('gull'), ariaLabel: 'Inspect glaring seagull' })}
+            ${hitZoneHTML({ id: 'dst-cover-pigs', x: 61, y: 74, w: 24, h: 28, found: state.coverSecretsFound.has('pigs'), ariaLabel: 'Inspect Reeve Odo on bursting pig crate' })}
+            ${hitZoneHTML({ id: 'dst-cover-quill', x: 74, y: 28, w: 22, h: 32, found: state.coverSecretsFound.has('quill'), ariaLabel: 'Inspect Norman Royal Clerk and glowing quill' })}
+            ${hitZoneHTML({ id: 'dst-cover-edith', x: 88, y: 65, w: 13, h: 24, found: state.coverSecretsFound.has('edith'), ariaLabel: 'Inspect Edith waving ladle in cottage doorway' })}
           </div>
-
-          <!-- 5 Discreet Hover-Only Shiny Glint Hotspots (Zero Text Over Painting!) -->
-          ${hitZoneHTML({ id: 'dst-cover-bennet', x: 24, y: 69, w: 16, h: 32, found: state.coverSecretsFound.has('bennet'), ariaLabel: 'Inspect muddy peasant with turnip' })}
-          ${hitZoneHTML({ id: 'dst-cover-gull', x: 9.5, y: 23, w: 12, h: 18, found: state.coverSecretsFound.has('gull'), ariaLabel: 'Inspect glaring seagull' })}
-          ${hitZoneHTML({ id: 'dst-cover-pigs', x: 61, y: 74, w: 24, h: 28, found: state.coverSecretsFound.has('pigs'), ariaLabel: 'Inspect Reeve Odo on bursting pig crate' })}
-          ${hitZoneHTML({ id: 'dst-cover-quill', x: 74, y: 28, w: 22, h: 32, found: state.coverSecretsFound.has('quill'), ariaLabel: 'Inspect Norman Royal Clerk and glowing quill' })}
-          ${hitZoneHTML({ id: 'dst-cover-edith', x: 88, y: 65, w: 13, h: 24, found: state.coverSecretsFound.has('edith'), ariaLabel: 'Inspect Edith waving ladle in cottage doorway' })}
         </div>
 
         <!-- Clean Unobstructed Docked Footer Below Cover Painting -->
         <div class="dst-cover-footer">
-          <div style="flex:1;min-width:240px;">
-            <div style="font-size:0.74rem;font-weight:900;color:#fbbf24;text-transform:uppercase;margin-bottom:2px;">
-              🎙️ ${state.speakerName} • (${state.coverSecretsFound.size}/5 Cover Secrets Poked)
+          <div style="flex:1;min-width:min(100%,240px);">
+            <div style="font-size:0.71rem;font-weight:900;color:#fbbf24;text-transform:uppercase;margin-bottom:2px;">
+              🎙️ ${state.speakerName} • (${state.coverSecretsFound.size}/5 Secrets)
             </div>
-            <div style="font-size:0.9rem;font-weight:700;color:#fef3c7;line-height:1.35;">
+            <div style="font-size:0.85rem;font-weight:700;color:#fef3c7;line-height:1.32;">
               &ldquo;${state.speechText}&rdquo;
             </div>
           </div>
 
-          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center;">
-            <button type="button" class="dst-icon-btn" data-action="hint-shimmer">✨ Glint Hint</button>
+          <div class="dst-cover-cta-row">
+            <button type="button" class="dst-icon-btn" data-action="hint-shimmer">✨ Hint</button>
             <button type="button" class="dst-start-cta" id="dst-btn-start-adventure">
               ▶ BEGIN 1086 ROYAL AUDIT
             </button>
@@ -441,7 +491,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                 ${renderSceneFooterBarHTML(
                   state.swampSecretsFound.size + (state.bennetSightings.has('swamp') ? 1 : 0),
                   4,
-                  'Hover swamp to poke Bennet, seagull & creek!',
+                  isTouchUI() ? 'Tap swamp to poke Bennet, seagull & creek!' : 'Hover swamp to poke Bennet, seagull & creek!',
                 )}
               `
                   : `
@@ -485,17 +535,21 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     const all3Found = foundCount >= 3;
     const totalFarehamSecrets =
       foundCount + state.farehamExtrasFound.size + (state.bennetSightings.has('creek') ? 1 : 0);
+    const touch = isTouchUI();
+    const actVerb = touch ? 'Tap' : 'Hover';
 
     return `
       <div class="dst-body">
         ${renderSpeechBannerHTML()}
 
-        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;">
+        <div class="dst-subtab-bar">
           <button type="button" class="dst-step-pill ${state.beat1SubMode === 'hunt' ? 'is-active' : ''}" id="dst-b1-tab-hunt">
-            🔎 Part A: Hunt Fareham's Hidden Wealth (${foundCount}/3 Assets)
+            <span class="dst-lbl-full">🔎 Part A: Hunt Fareham's Hidden Wealth (${foundCount}/3 Assets)</span>
+            <span class="dst-lbl-short">🔎 Part A: Wealth (${foundCount}/3)</span>
           </button>
           <button type="button" class="dst-step-pill ${state.beat1SubMode === 'servi' ? 'is-active' : ''} ${state.serviReflected ? 'is-done' : ''}" id="dst-b1-tab-servi">
-            ⚖️ Part B: Meet Gyrth — Fareham's 10 Enslaved Workers ${all3Found ? '' : '🔒'}
+            <span class="dst-lbl-full">⚖️ Part B: Meet Gyrth — Fareham's 10 Enslaved Workers ${all3Found ? '' : '🔒'}</span>
+            <span class="dst-lbl-short">⚖️ Part B: 10 Servi ${all3Found ? '' : '🔒'}</span>
           </button>
         </div>
 
@@ -516,7 +570,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                 ${hitZoneHTML({ dataAttr: 'data-b1-spot="chickens"', x: 56, y: 86, w: 24, h: 20, found: state.farehamExtrasFound.has('chickens'), ariaLabel: 'Inspect pecking farmyard chickens' })}
                 ${hitZoneHTML({ dataAttr: 'data-b1-spot="bennet"', x: 8.5, y: 85, w: 13, h: 20, found: state.bennetSightings.has('creek'), ariaLabel: 'Inspect wiggling turnip tuft on riverbank' })}
               </div>
-              ${renderSceneFooterBarHTML(totalFarehamSecrets, 7, 'Sweep cursor across river, woods, hills & riverbank!')}
+              ${renderSceneFooterBarHTML(totalFarehamSecrets, 7, touch ? 'Tap river, woods, hills & riverbank!' : 'Sweep cursor across river, woods, hills & riverbank!')}
             </div>
 
             <div class="dst-card-panel">
@@ -524,18 +578,18 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                 ROYAL EXCHEQUER TALLY • FAREHAM (FERHAM, 1086)
               </div>
               <p style="margin:0 0 10px 0;font-size:0.87rem;color:#d6d3d1;line-height:1.4;">
-                Hover over the Fareham Creek painting to find shiny glint dots and expose all <strong>3 real taxable money-makers</strong> Reeve Odo is hiding:
+                ${touch ? 'Tap glowing spots on the Fareham Creek painting' : 'Hover over the Fareham Creek painting to find shiny glint dots'} and expose all <strong>3 real taxable money-makers</strong> Reeve Odo is hiding:
               </p>
 
               <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:12px;">
                 <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('mills') ? '#22c55e' : '#44403c'};font-size:0.84rem;">
-                  ${state.foundFarehamAssets.has('mills') ? '✅ <strong>5 Spinning Watermills (41 shillings):</strong> Peasants were BANNED by law from grinding bread flour at home—forcing everyone to pay Bishop Walkelin’s mills!' : '⬜ Asset #1: Hover along the rushing Wallington River...'}
+                  ${state.foundFarehamAssets.has('mills') ? '✅ <strong>5 Spinning Watermills (41 shillings):</strong> Peasants were BANNED by law from grinding bread flour at home—forcing everyone to pay Bishop Walkelin’s mills!' : `⬜ Asset #1: ${actVerb} along the rushing Wallington River...`}
                 </div>
                 <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('pigs') ? '#22c55e' : '#44403c'};font-size:0.84rem;">
-                  ${state.foundFarehamAssets.has('pigs') ? '✅ <strong>Woodland for 13 Fat Pigs:</strong> Peasants paid "pannage" tax in live pigs just to let hogs eat acorns in the Bishop’s oak woods!' : '⬜ Asset #2: Hover over the steaming oak bushes on the right...'}
+                  ${state.foundFarehamAssets.has('pigs') ? '✅ <strong>Woodland for 13 Fat Pigs:</strong> Peasants paid "pannage" tax in live pigs just to let hogs eat acorns in the Bishop’s oak woods!' : `⬜ Asset #2: ${actVerb} the steaming oak bushes on the right...`}
                 </div>
                 <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('church_meadow') ? '#22c55e' : '#44403c'};font-size:0.84rem;">
-                  ${state.foundFarehamAssets.has('church_meadow') ? '✅ <strong>1 Parish Church, 90 Households & 41 Hay-Meadow Acres:</strong> Making Fareham one of the top 20% largest towns in 1086 England!' : '⬜ Asset #3: Hover over the green hill & church spire...'}
+                  ${state.foundFarehamAssets.has('church_meadow') ? '✅ <strong>1 Parish Church, 90 Households & 41 Hay-Meadow Acres:</strong> Making Fareham one of the top 20% largest towns in 1086 England!' : `⬜ Asset #3: ${actVerb} the green hill & church spire...`}
                 </div>
               </div>
 
@@ -562,7 +616,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                 ${hitZoneHTML({ dataAttr: 'data-servi-spot="oxen"', x: 82, y: 50, w: 28, h: 36, found: state.farehamExtrasFound.has('oxen'), ariaLabel: 'Inspect heavy eight-ox medieval plough team' })}
                 ${hitZoneHTML({ dataAttr: 'data-servi-spot="overseer"', x: 13, y: 23, w: 12, h: 18, found: state.farehamExtrasFound.has('overseer'), ariaLabel: 'Inspect mounted Norman bailiff on ridge' })}
               </div>
-              ${renderSceneFooterBarHTML(1 + (state.farehamExtrasFound.has('oxen') ? 1 : 0) + (state.farehamExtrasFound.has('overseer') ? 1 : 0), 3, 'Hover Gyrth, the steaming oxen, or the distant ridge')}
+              ${renderSceneFooterBarHTML(1 + (state.farehamExtrasFound.has('oxen') ? 1 : 0) + (state.farehamExtrasFound.has('overseer') ? 1 : 0), 3, touch ? 'Tap Gyrth, the steaming oxen, or the distant ridge' : 'Hover Gyrth, the steaming oxen, or the distant ridge')}
             </div>
 
             <div class="dst-card-panel" style="border-color:#64748b;">
@@ -609,10 +663,10 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             </div>
 
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:8px;">
-              <div style="display:flex;align-items:center;gap:6px;flex:1;min-width:200px;">
+              <div style="display:flex;align-items:center;gap:6px;flex:1 1 180px;min-width:0;">
                 <span style="font-size:0.75rem;font-weight:900;color:#86efac;">1066</span>
                 <input type="range" id="dst-xray-range" min="0" max="100" value="${state.xraySplitPct}"
-                       style="flex:1;height:28px;accent-color:#f59e0b;cursor:pointer;" aria-label="1066 to 1086 X-Ray Curtain" />
+                       style="flex:1;min-width:75px;height:28px;accent-color:#f59e0b;cursor:pointer;" aria-label="1066 to 1086 X-Ray Curtain" />
                 <span style="font-size:0.75rem;font-weight:900;color:#fca5a5;">1086</span>
               </div>
               <button type="button" class="dst-icon-btn" id="dst-btn-ghost-toggle">
@@ -761,7 +815,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
               ${hitZoneHTML({ dataAttr: 'data-assize-spot="hugh"', x: 78, y: 42, w: 14, h: 32, found: state.assizeSpotsHeard.has('hugh'), ariaLabel: 'Inspect Sheriff Hugh and silver coin stacks' })}
               ${hitZoneHTML({ dataAttr: 'data-assize-spot="bishop_monk"', x: 90, y: 46, w: 13, h: 36, found: state.assizeSpotsHeard.has('bishop_monk'), ariaLabel: 'Inspect Bishop Walkelin representative' })}
             </div>
-            ${renderSceneFooterBarHTML(state.assizeSpotsHeard.size, 5, 'Hover witnesses, Viking shield & silver coins!')}
+            ${renderSceneFooterBarHTML(state.assizeSpotsHeard.size, 5, isTouchUI() ? 'Tap witnesses, Viking shield & silver coins!' : 'Hover witnesses, Viking shield & silver coins!')}
 
             <!-- Visual Fareham Squeeze Meter -->
             <div style="margin-top:8px;padding:10px 12px;border-radius:10px;background:#1c1917;border:1px solid #44403c;font-size:0.8rem;">
@@ -836,19 +890,23 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     const peopleCount = computeHutPeopleCount();
     const spotsCount = state.foundBlindSpots.size;
     const readyNext = spotsCount >= 4;
+    const touch = isTouchUI();
+    const actVerb = touch ? 'Tap' : 'Hover';
 
     return `
       <div class="dst-body">
         ${renderSpeechBannerHTML()}
 
-        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px;align-items:center;">
+        <div class="dst-subtab-bar">
           <button type="button" class="dst-step-pill ${state.beat4Tab === 'hut' ? 'is-active' : ''}" data-b4-tab="hut">
-            🏠 Part A: Inside Stubbington Hut #3 (${peopleCount}/8 People Counted)
+            <span class="dst-lbl-full">🏠 Part A: Inside Stubbington Hut #3 (${peopleCount}/8 People Counted)</span>
+            <span class="dst-lbl-short">🏠 Hut #3 (${peopleCount}/8)</span>
           </button>
           <button type="button" class="dst-step-pill ${state.beat4Tab === 'map' ? 'is-active' : ''}" data-b4-tab="map">
-            🔎 Part B: Solent Coast Spyglass
+            <span class="dst-lbl-full">🔎 Part B: Solent Coast Spyglass</span>
+            <span class="dst-lbl-short">🔎 Coast Spyglass</span>
           </button>
-          <span style="margin-left:auto;font-size:0.78rem;font-weight:900;color:#fde047;">
+          <span class="dst-subtab-counter" style="margin-left:auto;font-size:0.78rem;font-weight:900;color:#fde047;">
             Blind Spots Uncovered: ${spotsCount} / 4+
           </span>
         </div>
@@ -872,7 +930,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
               ${renderSceneFooterBarHTML(
                 (state.hutPeopleGroups.size - 1) + (state.foundBlindSpots.has('untaxed_pets') ? 1 : 0) + (state.bennetSightings.has('stumps') ? 1 : 0),
                 5,
-                'Hover Edith, kids, Grandma, dog/hens & tree-stumps!',
+                `${actVerb} Edith, kids, Grandma, dog/hens & tree-stumps!`,
               )}
             `
                 : `
@@ -904,10 +962,10 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
             <div style="display:flex;flex-direction:column;gap:6px;font-size:0.82rem;">
               <div style="padding:8px 10px;border-radius:8px;background:#292524;border:1px solid ${state.foundBlindSpots.has('edith_family') ? '#22c55e' : '#44403c'};">
-                ${state.foundBlindSpots.has('edith_family') ? `✅ <strong>Invisible Women, Kids & Elders (${peopleCount}/8 found in Hut #3):</strong> Stubbington’s "9 households" really meant ~45–50 villagers!` : '⬜ Blind Spot 1 (Hut #3): Hover over Edith, the children, or Grandma...'}
+                ${state.foundBlindSpots.has('edith_family') ? `✅ <strong>Invisible Women, Kids & Elders (${peopleCount}/8 found in Hut #3):</strong> Stubbington’s "9 households" really meant ~45–50 villagers!` : `⬜ Blind Spot 1 (Hut #3): ${actVerb} Edith, the children, or Grandma...`}
               </div>
               <div style="padding:8px 10px;border-radius:8px;background:#292524;border:1px solid ${state.foundBlindSpots.has('untaxed_pets') ? '#22c55e' : '#44403c'};">
-                ${state.foundBlindSpots.has('untaxed_pets') ? '✅ <strong>Dogs, Hens & Veg Plots:</strong> The chronicler exaggerated! If William couldn’t tax it, scribes ignored it.' : '⬜ Blind Spot 2 (Hut #3): Hover over the floor dog or beam chickens...'}
+                ${state.foundBlindSpots.has('untaxed_pets') ? '✅ <strong>Dogs, Hens & Veg Plots:</strong> The chronicler exaggerated! If William couldn’t tax it, scribes ignored it.' : `⬜ Blind Spot 2 (Hut #3): ${actVerb} the floor dog or beam chickens...`}
               </div>
               <div style="padding:8px 10px;border-radius:8px;background:#292524;border:1px solid ${state.foundBlindSpots.has('bs_portchester') ? '#22c55e' : '#44403c'};">
                 ${state.foundBlindSpots.has('bs_portchester') ? '✅ <strong>No Stone Keep at Portchester Yet:</strong> 1086 only lists Roman walls + "a fishery for the hall" (stone keep built 1120s)!' : '⬜ Blind Spot 3 (Spyglass Map Tab): Tap Portchester on the harbour...'}
@@ -955,12 +1013,12 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
               📜 ${data.stubitoneParchment.folioHeader}
             </div>
 
-            <div style="display:flex;align-items:center;gap:10px;background:rgba(120,53,15,0.12);padding:8px 12px;border-radius:10px;margin-bottom:10px;flex-wrap:wrap;">
-              <span style="font-size:0.75rem;font-weight:900;color:#78350f;">1086 LATIN</span>
+            <div class="dst-slider-bar">
+              <span style="font-size:0.73rem;font-weight:900;color:#78350f;white-space:nowrap;">LATIN</span>
               <input type="range" id="dst-latin-slider" min="0" max="100" value="${state.translationPct}"
-                     style="flex:1;min-width:140px;height:28px;accent-color:#b91c1c;cursor:pointer;"
+                     style="flex:1;min-width:70px;height:28px;accent-color:#b91c1c;cursor:pointer;"
                      aria-label="Slide across to translate Stubbington's 1086 Latin entry into English" />
-              <span style="font-size:0.75rem;font-weight:900;color:#15803d;">ENGLISH (${state.translationPct}%)</span>
+              <span style="font-size:0.73rem;font-weight:900;color:#15803d;white-space:nowrap;">ENG (${state.translationPct}%)</span>
             </div>
 
             <div class="dst-chunk-grid">
@@ -1028,7 +1086,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           <div style="font-size:0.78rem;font-weight:900;color:#fde047;text-transform:uppercase;margin-bottom:8px;">
             🔨 30-SECOND HISTORIAN STAMP TEST: REAL IN THE 1086 BOOK OR COMEDY INVENTION?
           </div>
-          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;">
+          <div class="dst-stamp-grid">
             ${STAMP_CHALLENGES.map((sc) => {
               const picked = state.stampAnswers[sc.id];
               const answered = picked !== undefined;
@@ -1129,6 +1187,11 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         audio.ensureContext();
         goToStep(btn.dataset.gotoStep);
       });
+    });
+
+    stageEl.querySelector('#dst-mob-step-select')?.addEventListener('change', (e) => {
+      audio.ensureContext();
+      goToStep(e.target.value);
     });
 
     stageEl.querySelectorAll('[data-action="hint-shimmer"]').forEach((btn) => {

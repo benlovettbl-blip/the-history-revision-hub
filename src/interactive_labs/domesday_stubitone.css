@@ -1,6 +1,9 @@
 /**
- * The Secret of Stubitone™ — 1086 Domesday Adventure Scoped Styles (v2 Point-and-Click Edition)
- * Zero text over artwork • Discreet shiny hover glints • Zero truncation across all viewports.
+ * The Secret of Stubitone™ — 1086 Domesday Adventure Scoped Styles (v2.1 Multi-Viewport Edition)
+ *  - Zero text over artwork • Discreet shiny hover glints on desktop, gentle firefly pulse on touch
+ *  - True-16:9 uncropped cover stage across 1280x720 / 1366x768 / 1440x900 projectors & laptops
+ *  - Single-row compact mobile nav (<select> font-size >= 16px) + sticky reaction speech strip on phones
+ *  - 2-column side-by-side layout preserved on 844x390 mobile landscape
  */
 
 .dst-shell,
@@ -17,7 +20,7 @@
   border: 2px solid #b45309;
   border-radius: 18px;
   color: #f8fafc;
-  overflow: hidden;
+  overflow-x: clip;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   user-select: none;
@@ -37,17 +40,18 @@
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* =========================================================================
-   TOP NAVIGATION BAR (ZERO TRUNCATION — WRAPS CLEANLY ON ALL SCREENS)
+   TOP NAVIGATION BAR (7 PILLS ON DESKTOP/TABLET • 1-ROW SELECT ON PHONES)
    ========================================================================= */
 .dst-topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 9px 14px;
+  padding: 8px 14px;
   background: linear-gradient(90deg, #1c1917 0%, #292524 50%, #1c1917 100%);
   border-bottom: 1.5px solid rgba(245, 158, 11, 0.45);
   flex-wrap: wrap;
@@ -60,9 +64,55 @@
   flex-wrap: wrap;
 }
 
+.dst-mobile-step-nav {
+  display: none;
+  align-items: center;
+  gap: 4px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.dst-mob-arrow-btn {
+  appearance: none;
+  width: 34px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1.5px solid #57534e;
+  background: #292524;
+  color: #fde68a;
+  font-size: 0.8rem;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  touch-action: manipulation;
+}
+.dst-mob-arrow-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.dst-mobile-step-select {
+  flex: 1 1 auto;
+  min-width: 132px;
+  height: 36px;
+  padding: 0 4px 0 8px;
+  border-radius: 8px;
+  border: 1.5px solid #f59e0b;
+  background-color: #1c1917;
+  color: #fef3c7;
+  font-family: inherit;
+  font-size: 16px !important; /* Prevents iOS Safari zoom on tap (AGENTS.md 6.4) */
+  font-weight: 800;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
 .dst-step-pill {
   appearance: none;
-  min-height: 36px;
+  min-height: 35px;
   padding: 5px 11px;
   border-radius: 999px;
   border: 1.5px solid #44403c;
@@ -97,9 +147,20 @@
   flex-wrap: wrap;
 }
 
+.dst-score-chip {
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: #fde047;
+  background: #292524;
+  border: 1px solid #78350f;
+  padding: 5px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
 .dst-icon-btn {
   appearance: none;
-  min-height: 38px;
+  min-height: 36px;
   padding: 5px 11px;
   border-radius: 9px;
   border: 1.5px solid #57534e;
@@ -162,7 +223,7 @@
   box-shadow: 0 0 10px 3px rgba(134, 239, 172, 0.88), 0 0 18px 5px rgba(34, 197, 94, 0.4);
 }
 
-/* Reveal discreet small shiny dot ONLY when user hovers or focuses! */
+/* Reveal discreet small shiny dot ONLY when desktop user hovers or focuses! */
 .dst-hit-zone:hover .dst-glint-dot,
 .dst-hit-zone:focus-visible .dst-glint-dot,
 .dst-hit-zone:active .dst-glint-dot {
@@ -170,39 +231,62 @@
   transform: scale(1);
 }
 
-/* Optional 1.8s firefly shimmer when pupil taps "Glint Hint" or on non-hover touch tablets */
 @keyframes dstFireflyShimmer {
   0%, 100% { opacity: 0; transform: scale(0.5); }
-  50% { opacity: 0.92; transform: scale(1.08); }
+  50% { opacity: 0.94; transform: scale(1.1); }
 }
 
 .dst-shell.dst-hint-shimmer .dst-hit-zone:not(.is-found) .dst-glint-dot {
   animation: dstFireflyShimmer 0.9s ease-in-out 2;
 }
 
-@media (hover: none) and (pointer: coarse) {
+@keyframes dstTouchFirefly {
+  0%, 100% { opacity: 0.28; transform: scale(0.72); }
+  50% { opacity: 0.78; transform: scale(0.95); }
+}
+
+/* Touch devices without hover get subtle breathing firefly glints so spots are discoverable without clutter */
+@media (hover: none), (pointer: coarse) {
   .dst-hit-zone:not(.is-found) .dst-glint-dot {
-    opacity: 0.42;
-    transform: scale(0.78);
+    opacity: 0.52;
+    transform: scale(0.84);
+    animation: dstTouchFirefly 2.4s ease-in-out infinite;
   }
 }
 
 /* =========================================================================
-   LUCASARTS / MONKEY ISLAND COVER (UNOBSTRUCTED 16:9 ART + DOCKED FOOTER)
+   LUCASARTS / MONKEY ISLAND COVER (TRUE 16:9 UNCROPPED + ABOVE-FOLD FIT)
    ========================================================================= */
 .dst-cover-wrap {
   display: flex;
   flex-direction: column;
   background: #090d16;
+  flex: 1;
 }
 
+.dst-cover-stage {
+  width: 100%;
+  background: radial-gradient(circle at 50% 50%, #151e32 0%, #090d16 78%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Constrain width from available viewport height * (16/9) so Cover stays 100% true 16:9 with ZERO face/foot cropping! */
 .dst-cover-art-box {
   position: relative;
   width: 100%;
+  max-width: min(100%, calc((100dvh - 255px) * 16 / 9));
   aspect-ratio: 16 / 9;
-  max-height: 64dvh;
+  margin: 0 auto;
   overflow: hidden;
   background: #090d16;
+  box-shadow: 0 0 38px rgba(0, 0, 0, 0.75);
+}
+
+.dst-shell.dst-is-fullscreen .dst-cover-art-box,
+#hh-classroom-lab-modal .dst-cover-art-box {
+  max-width: min(100%, calc((100dvh - 152px) * 16 / 9));
 }
 
 .domesday-diorama-img {
@@ -235,14 +319,15 @@
 
 .dst-lucas-kicker {
   display: inline-block;
+  max-width: 100%;
   padding: 2px 11px;
   border-radius: 999px;
   background: rgba(12, 10, 9, 0.84);
   border: 1px solid #f59e0b;
   color: #fde68a;
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 900;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
   text-transform: uppercase;
   margin-bottom: 3px;
 }
@@ -250,10 +335,10 @@
 .dst-lucas-title {
   margin: 0;
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(1.4rem, 3.8vw, 3.05rem);
+  font-size: clamp(1.22rem, 3.6vw, 2.9rem);
   font-weight: 900;
   line-height: 1.04;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.6px;
   background: linear-gradient(180deg, #fffbeb 0%, #fde047 38%, #f59e0b 72%, #b45309 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -262,34 +347,42 @@
 
 .dst-lucas-sub {
   margin: 4px auto 0;
-  font-size: clamp(0.74rem, 1.35vw, 0.94rem);
+  font-size: clamp(0.72rem, 1.3vw, 0.92rem);
   font-weight: 700;
   color: #fef3c7;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95);
 }
 
 .dst-cover-footer {
-  padding: 12px 18px 16px;
+  padding: 10px 18px 12px;
   background: linear-gradient(180deg, #141210 0%, #0c0a09 100%);
   border-top: 2px solid #78350f;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
+  gap: 12px;
   flex-wrap: wrap;
+}
+
+.dst-cover-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .dst-start-cta {
   appearance: none;
-  min-height: 50px;
-  padding: 11px 26px;
+  min-height: 46px;
+  padding: 10px 24px;
   border-radius: 999px;
   border: 2.5px solid #fef08a;
   background: linear-gradient(180deg, #ea580c 0%, #9a3412 100%);
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.96rem;
   font-weight: 900;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   cursor: pointer;
   touch-action: manipulation;
   box-shadow: 0 6px 20px rgba(234, 88, 12, 0.5);
@@ -297,7 +390,7 @@
 }
 .dst-start-cta:hover,
 .dst-start-cta:active {
-  transform: scale(1.03);
+  transform: scale(1.02);
   box-shadow: 0 8px 26px rgba(251, 191, 36, 0.65);
 }
 
@@ -305,7 +398,7 @@
    DIALOGUE STRIP WITH EXPRESSIVE SPEAKER PORTRAIT MEDALLIONS
    ========================================================================= */
 .dst-body {
-  padding: 13px 16px 18px;
+  padding: 12px 16px 18px;
   flex: 1;
 }
 
@@ -317,14 +410,14 @@
   color: #1c1917;
   border: 2.5px solid #78350f;
   border-radius: 14px;
-  padding: 10px 14px;
+  padding: 9px 14px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .dst-avatar-medallion {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
   border: 2.5px solid #78350f;
   background-color: #292524;
@@ -339,20 +432,40 @@
   justify-content: space-between;
   gap: 8px;
   flex-wrap: wrap;
-  font-size: 0.73rem;
+  font-size: 0.72rem;
   font-weight: 900;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
   color: #9a3412;
   margin-bottom: 2px;
 }
 
+.dst-speech-hint-chip {
+  font-size: 0.67rem;
+  color: #78350f;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
 .dst-speech-text {
   margin: 0;
-  font-size: 0.93rem;
+  font-size: 0.91rem;
   font-weight: 700;
-  line-height: 1.38;
+  line-height: 1.36;
   color: #1c1917;
+}
+
+.dst-subtab-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dst-lbl-short {
+  display: none;
 }
 
 /* =========================================================================
@@ -393,12 +506,12 @@
   justify-content: space-between;
   gap: 8px;
   flex-wrap: wrap;
-  margin-top: 7px;
-  padding: 6px 11px;
+  margin-top: 6px;
+  padding: 5px 10px;
   border-radius: 9px;
   background: #1c1917;
   border: 1px solid #44403c;
-  font-size: 0.77rem;
+  font-size: 0.76rem;
   color: #d6d3d1;
 }
 
@@ -406,19 +519,19 @@
   background: #1c1917;
   border: 1.5px solid #44403c;
   border-radius: 14px;
-  padding: 14px 16px;
+  padding: 13px 15px;
 }
 
 .dst-choice-btn {
   appearance: none;
   width: 100%;
-  min-height: 46px;
-  padding: 10px 13px;
+  min-height: 45px;
+  padding: 9px 13px;
   border-radius: 11px;
   border: 1.5px solid #57534e;
   background: #292524;
   color: #f8fafc;
-  font-size: 0.88rem;
+  font-size: 0.87rem;
   font-weight: 700;
   line-height: 1.32;
   text-align: left;
@@ -448,13 +561,13 @@
 .dst-next-btn {
   appearance: none;
   width: 100%;
-  min-height: 48px;
-  padding: 11px 16px;
+  min-height: 46px;
+  padding: 10px 15px;
   border-radius: 12px;
   border: 2px solid #fde047;
   background: linear-gradient(180deg, #d97706 0%, #92400e 100%);
   color: #ffffff;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 900;
   line-height: 1.25;
   display: inline-flex;
@@ -475,20 +588,31 @@
   border: 3px solid #78350f;
   background: radial-gradient(circle at 50% 35%, #fcf6e5 0%, #efe0bb 70%, #dcc394 100%);
   color: #292524;
-  padding: 16px;
+  padding: 15px;
   box-shadow: inset 0 0 28px rgba(120, 53, 15, 0.26), 0 10px 24px rgba(0, 0, 0, 0.4);
 }
 
 .dst-parchment-header {
   font-family: Georgia, serif;
-  font-size: 0.75rem;
+  font-size: 0.74rem;
   font-weight: 900;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   color: #991b1b;
   border-bottom: 1.5px solid rgba(153, 27, 27, 0.35);
   padding-bottom: 6px;
   margin-bottom: 10px;
   text-transform: uppercase;
+}
+
+.dst-slider-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(120, 53, 15, 0.12);
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  flex-wrap: nowrap;
 }
 
 .dst-chunk-grid {
@@ -499,7 +623,7 @@
 
 .dst-latin-row {
   position: relative;
-  min-height: 46px;
+  min-height: 45px;
   border-radius: 8px;
   border: 1.5px solid rgba(120, 53, 15, 0.35);
   background: rgba(255, 251, 235, 0.72);
@@ -539,6 +663,12 @@
   font-weight: 900;
 }
 
+.dst-stamp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 10px;
+}
+
 .dst-debrief-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -552,47 +682,257 @@
   padding: 13px 14px;
 }
 
-/* Responsive Tablet & 390px Mobile Rules (Zero Truncation!) */
-@media (max-width: 920px) {
+/* =========================================================================
+   RESPONSIVE BREAKPOINTS: TABLET, PORTRAIT MOBILE & LANDSCAPE PHONE
+   ========================================================================= */
+@media (max-width: 920px) and (orientation: portrait) {
   .dst-split {
     grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
   }
   .dst-debrief-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+  .dst-cover-art-box,
+  .dst-shell.dst-is-fullscreen .dst-cover-art-box,
+  #hh-classroom-lab-modal .dst-cover-art-box {
+    max-width: 100%;
   }
   .dst-cover-footer {
     flex-direction: column;
     align-items: stretch;
     text-align: center;
+    padding: 9px 12px 11px;
+    gap: 8px;
+  }
+}
+
+/* Single-Row Compact Topbar & Sticky Speech Strip on Phones (<= 768px) */
+@media (max-width: 768px) {
+  .dst-topbar {
+    padding: 6px 8px;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+  .dst-step-strip {
+    display: none !important;
+  }
+  .dst-mobile-step-nav {
+    display: flex;
+  }
+  .dst-ctrl-group {
+    gap: 4px;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+  }
+  .dst-icon-btn .dst-btn-lbl {
+    display: none;
+  }
+  .dst-topbar .dst-icon-btn {
+    padding: 0;
+    width: 35px;
+    min-height: 36px;
+  }
+  .dst-score-chip {
+    font-size: 0.68rem;
+    padding: 4px 6px;
+  }
+  .dst-score-chip .dst-score-verb {
+    display: none;
+  }
+
+  .dst-body {
+    padding: 8px 10px calc(18px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Sticky compact dialogue strip so tapping hotspots at the bottom of a scene shows reaction immediately! */
+  .dst-speech-box {
+    position: sticky;
+    top: 4px;
+    z-index: 30;
+    padding: 7px 10px;
+    gap: 8px;
+    margin-bottom: 8px;
+    border-radius: 11px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  }
+  .dst-avatar-medallion {
+    width: 36px;
+    height: 36px;
+    border-width: 2px;
+  }
+  .dst-speech-speaker {
+    font-size: 0.65rem;
+    margin-bottom: 1px;
+  }
+  .dst-speech-hint-chip {
+    display: none;
+  }
+  .dst-speech-text {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .dst-lbl-full {
+    display: none;
+  }
+  .dst-lbl-short {
+    display: inline;
+  }
+  .dst-subtab-bar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  .dst-subtab-bar .dst-step-pill {
+    width: 100%;
+    padding: 5px 7px;
+    font-size: 0.71rem;
+    min-height: 34px;
+    text-align: center;
+  }
+  .dst-subtab-bar .dst-subtab-counter {
+    grid-column: 1 / -1;
+    margin-left: 0 !important;
+    text-align: center;
+    font-size: 0.72rem !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .dst-mob-arrow-btn {
+    display: none;
+  }
+  .dst-topbar .dst-icon-btn {
+    width: 32px;
+    min-height: 34px;
+  }
+  .dst-score-chip {
+    font-size: 0.65rem;
+    padding: 4px 5px;
   }
 }
 
 @media (max-width: 640px) {
-  .dst-body {
-    padding: 10px 10px calc(24px + env(safe-area-inset-bottom, 0px));
-  }
-  .dst-step-pill {
-    font-size: 0.7rem;
-    padding: 4px 8px;
-    min-height: 32px;
-  }
   .dst-lucas-kicker {
-    font-size: 0.49rem;
-    letter-spacing: 0.6px;
-    padding: 2px 7px;
+    font-size: 0.44rem;
+    letter-spacing: 0.45px;
+    padding: 2px 6px;
     white-space: nowrap;
   }
   .dst-lucas-title {
-    font-size: 1.32rem;
+    font-size: clamp(1.12rem, 5.2vw, 1.38rem);
   }
   .dst-lucas-sub {
     display: none;
   }
+  .dst-cover-cta-row {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .dst-cover-cta-row .dst-start-cta {
+    flex: 1 1 auto;
+    min-height: 44px;
+    padding: 8px 12px;
+    font-size: 0.86rem;
+  }
+  .dst-cover-cta-row .dst-icon-btn {
+    padding: 6px 9px;
+    min-height: 44px;
+    font-size: 0.74rem;
+    flex-shrink: 0;
+  }
+  .dst-scene-caption-strip .dst-caption-mid {
+    display: none;
+  }
+  .dst-parchment-box {
+    padding: 11px;
+  }
+}
+
+/* Sideways Phone Landscape Mode (e.g. 844x390 iPhone / Android Landscape) */
+@media (max-height: 520px) and (orientation: landscape) {
+  .dst-topbar {
+    padding: 4px 10px;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+  .dst-step-strip {
+    display: none !important;
+  }
+  .dst-mobile-step-nav {
+    display: flex;
+  }
+  .dst-icon-btn .dst-btn-lbl {
+    display: none;
+  }
+  .dst-topbar .dst-icon-btn {
+    padding: 0;
+    width: 34px;
+    min-height: 32px;
+  }
+  .dst-mobile-step-select,
+  .dst-mob-arrow-btn {
+    height: 32px;
+  }
+  .dst-cover-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr);
+    align-items: stretch;
+  }
+  .dst-cover-art-box,
+  .dst-shell.dst-is-fullscreen .dst-cover-art-box,
+  #hh-classroom-lab-modal .dst-cover-art-box {
+    max-width: min(100%, calc((100dvh - 46px) * 16 / 9));
+  }
+  .dst-cover-footer {
+    border-top: none;
+    border-left: 2px solid #78350f;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 12px;
+  }
+  .dst-lucas-sub {
+    display: none;
+  }
+  .dst-body {
+    padding: 6px 10px 10px;
+  }
+  .dst-speech-box {
+    position: static;
+    padding: 4px 9px;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
   .dst-avatar-medallion {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+  }
+  .dst-speech-speaker {
+    font-size: 0.62rem;
+    margin-bottom: 0;
   }
   .dst-speech-text {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    line-height: 1.24;
+  }
+  .dst-subtab-bar {
+    margin-bottom: 5px;
+    gap: 6px;
+  }
+  .dst-subtab-bar .dst-step-pill {
+    min-height: 28px;
+    padding: 3px 9px;
+    font-size: 0.7rem;
+  }
+  .dst-split {
+    grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr) !important;
+    gap: 10px;
+  }
+  .dst-diorama-frame {
+    max-width: min(100%, calc((100dvh - 155px) * 16 / 9));
+    margin: 0 auto;
   }
 }

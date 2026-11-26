@@ -27,8 +27,8 @@ export function getInlineLessonLabHTML(unitId, lessonId, blockIndex) {
   if (!spec) return '';
 
   return `
-    <div id="hh-inline-lab-${spec.labId}" class="hh-inline-lab-card no-print" style="margin: 18px 0 26px 0; border-radius: 16px; overflow: hidden; border: 2.5px solid #d97706; background: linear-gradient(135deg, #1c1917 0%, #0f172a 100%); box-shadow: 0 14px 32px rgba(15, 23, 42, 0.24); color: #f8fafc;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); align-items: stretch;">
+    <div id="hh-inline-lab-${spec.labId}" class="hh-inline-lab-card no-print" style="margin: 18px 0 26px 0; border-radius: 16px; overflow: hidden; border: 2.5px solid #d97706; background: linear-gradient(135deg, #1c1917 0%, #0f172a 100%); box-shadow: 0 14px 32px rgba(15, 23, 42, 0.24); color: #f8fafc; max-width: 100%;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); align-items: stretch;">
         <div style="position: relative; min-height: 205px; background: #090d16; overflow: hidden; cursor: pointer;"
              onclick="window.openInteractiveClassroomLab && window.openInteractiveClassroomLab('${spec.labId}', true)">
           <img src="${spec.coverImg}" alt="${spec.title}" loading="lazy"
@@ -106,7 +106,12 @@ export async function openInteractiveClassroomLab(labId, preferFullscreen = true
 
   document.body.classList.add('hh-arcade-playing');
 
+  const onKeyDown = (e) => {
+    if (e.key === 'Escape') closeModal();
+  };
+
   const closeModal = () => {
+    window.removeEventListener('keydown', onKeyDown);
     document.body.classList.remove('hh-arcade-playing');
     if (activeLabCleanup) {
       try {
@@ -119,6 +124,11 @@ export async function openInteractiveClassroomLab(labId, preferFullscreen = true
     }
     modal.remove();
   };
+
+  window.addEventListener('keydown', onKeyDown);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal && !preferFullscreen) closeModal();
+  });
 
   const mountFn = await entry.loadMount();
   const stageEl = modal.querySelector('#hh-classroom-lab-stage');

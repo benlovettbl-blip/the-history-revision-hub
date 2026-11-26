@@ -70,6 +70,7 @@ export function renderSolentGisSvgHTML({
 
     return `
       <g class="solent-manor-node" data-manor-id="${m.id}" transform="translate(${m.x}, ${m.y})" style="cursor:pointer;">
+        <circle r="30" fill="transparent" />
         ${
           targetTapManorMode
             ? `<circle r="28" fill="rgba(250,204,21,0.16)" stroke="#fde047" stroke-width="2" stroke-dasharray="4 3"/>`
@@ -100,9 +101,11 @@ export function renderSolentGisSvgHTML({
   ];
 
   const splitX = Math.round((xraySplitPct / 100) * 900);
+  const clampedLabelX = Math.max(96, Math.min(796, splitX)) - splitX;
+  const svgTouchAction = mode === 'xray' ? 'pan-y' : 'manipulation';
 
   return `
-    <svg viewBox="0 0 900 540" class="solent-gis-svg" id="solent-gis-svg" style="width:100%;height:100%;display:block;touch-action:none;user-select:none;">
+    <svg viewBox="0 0 900 540" class="solent-gis-svg" id="solent-gis-svg" style="width:100%;height:100%;display:block;touch-action:${svgTouchAction};user-select:none;">
       <defs>
         <linearGradient id="solentSeaGrad" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#1e3a5f"/>
@@ -237,6 +240,7 @@ export function renderSolentGisSvgHTML({
                 const pillW = Math.max(82, labelText.length * 6.8 + 20);
                 return `
                   <g class="solent-home-pin" data-pin-id="${p.id}" transform="translate(${p.x}, ${p.y})" style="cursor:pointer;">
+                    <circle r="30" fill="transparent" />
                     ${isSel ? `<circle r="26" fill="rgba(251,191,36,0.28)" stroke="#fde047" stroke-width="3"/>` : ''}
                     <circle r="17" fill="${badgeFill}" stroke="#ffffff" stroke-width="2.4"/>
                     <text y="5" text-anchor="middle" font-size="14" pointer-events="none">
@@ -253,16 +257,18 @@ export function renderSolentGisSvgHTML({
           : ''
       }
 
-      <!-- BEAT 2: DRAGGABLE 1066 <-> 1086 X-RAY HANDLE (Handle positioned at y=488 in open Solent water so it never covers manor labels!) -->
+      <!-- BEAT 2: DRAGGABLE 1066 <-> 1086 X-RAY HANDLE (Handle positioned at y=492 in open Solent water; top badges clamped inside viewBox!) -->
       ${
         mode === 'xray'
           ? `
         <g id="solent-xray-divider" transform="translate(${splitX}, 0)" style="cursor:ew-resize;">
           <line x1="0" y1="0" x2="0" y2="540" stroke="#fde047" stroke-width="3.5"/>
-          <rect x="-92" y="10" width="84" height="22" rx="6" fill="#14532d" stroke="#86efac" stroke-width="1.5"/>
-          <text x="-50" y="25" text-anchor="middle" font-size="10.5" font-weight="900" fill="#dcfce7">◄ 1066 SAXON</text>
-          <rect x="8" y="10" width="90" height="22" rx="6" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1.5"/>
-          <text x="53" y="25" text-anchor="middle" font-size="10.5" font-weight="900" fill="#fee2e2">1086 NORMAN ►</text>
+          <g transform="translate(${clampedLabelX}, 0)" pointer-events="none">
+            <rect x="-92" y="10" width="84" height="22" rx="6" fill="#14532d" stroke="#86efac" stroke-width="1.5"/>
+            <text x="-50" y="25" text-anchor="middle" font-size="10.5" font-weight="900" fill="#dcfce7">◄ 1066 SAXON</text>
+            <rect x="8" y="10" width="90" height="22" rx="6" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1.5"/>
+            <text x="53" y="25" text-anchor="middle" font-size="10.5" font-weight="900" fill="#fee2e2">1086 NORMAN ►</text>
+          </g>
           <circle cx="0" cy="492" r="21" fill="#f59e0b" stroke="#0f172a" stroke-width="3"/>
           <text x="0" y="497" text-anchor="middle" font-size="13" font-weight="900" fill="#0f172a">⇄</text>
         </g>
@@ -278,12 +284,17 @@ export function renderSolentGisSvgHTML({
           .filter((m) => ['stubbington', 'fareham', 'titchfield'].includes(m.id))
           .map((m) => renderManorShield(m, true))
           .join('')}
+        <g id="solent-spyglass-ring" transform="translate(${(spyglassPos.x / 100) * 900}, ${(spyglassPos.y / 100) * 540})" pointer-events="none" opacity="0.82">
+          <circle r="34" fill="rgba(254,240,138,0.08)" stroke="#f59e0b" stroke-width="3.5"/>
+          <line x1="24" y1="24" x2="46" y2="46" stroke="#78350f" stroke-width="7" stroke-linecap="round"/>
+        </g>
         ${blindSpotNodes
           .map((bs) => {
             const found = foundBlindSpots.has(bs.id);
             const pillW = Math.max(122, bs.label.length * 6.8 + 18);
             return `
               <g class="solent-blindspot-node" data-bs-id="${bs.id}" transform="translate(${bs.x}, ${bs.y})" style="cursor:pointer;">
+                <circle r="30" fill="transparent" />
                 <circle r="19" fill="${found ? 'rgba(22,163,74,0.9)' : 'rgba(234,179,8,0.28)'}" stroke="${found ? '#86efac' : '#fde047'}" stroke-width="2.8" stroke-dasharray="${found ? 'none' : '5 3'}"/>
                 <text y="5" text-anchor="middle" font-size="13.5" pointer-events="none">${found ? '✓' : '?'}</text>
                 <g transform="translate(0, ${bs.pillY})" pointer-events="none">
@@ -294,10 +305,6 @@ export function renderSolentGisSvgHTML({
             `;
           })
           .join('')}
-        <g id="solent-spyglass-ring" transform="translate(${(spyglassPos.x / 100) * 900}, ${(spyglassPos.y / 100) * 540})" pointer-events="none" opacity="0.82">
-          <circle r="34" fill="rgba(254,240,138,0.08)" stroke="#f59e0b" stroke-width="3.5"/>
-          <line x1="24" y1="24" x2="46" y2="46" stroke="#78350f" stroke-width="7" stroke-linecap="round"/>
-        </g>
       `
           : ''
       }
