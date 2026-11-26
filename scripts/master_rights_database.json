@@ -41512,5 +41512,77 @@
     "license": "Original Hub IP",
     "commercial_use_permitted": true,
     "unit": "medieval_england"
+  },
+  "/images/arcade/ww2_homefront/cover_platform_four.webp": {
+    "title": "The Suitcase on Platform Four — 1939 Evacuation Station Cover Illustration",
+    "date": "2026 (Original KS2 Interactive Storybook Artwork grounded in IWM & National Archives 1939–1945 Home Front Records)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://www.iwm.org.uk/history/the-evacuated-children-of-the-second-world-war",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP (100% Commercial Multi-School Cleared)",
+    "commercial_use_permitted": true,
+    "unit": "ks2_ww2"
+  },
+  "/images/arcade/ww2_homefront/scene_1_station_1939.webp": {
+    "title": "Operation Pied Piper (Sept 1939) — Railway Platform & Official Evacuee Suitcase Illustration",
+    "date": "2026 (Original KS2 Interactive Storybook Artwork grounded in IWM & National Archives 1939–1945 Home Front Records)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://www.iwm.org.uk/history/the-evacuated-children-of-the-second-world-war",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP (100% Commercial Multi-School Cleared)",
+    "commercial_use_permitted": true,
+    "unit": "ks2_ww2"
+  },
+  "/images/arcade/ww2_homefront/scene_2_country_billet.webp": {
+    "title": "Rural Farmhouse Billet & Kindertransport Refugee Arrival (1939) Storybook Illustration",
+    "date": "2026 (Original KS2 Interactive Storybook Artwork grounded in IWM & National Archives 1939–1945 Home Front Records)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://www.iwm.org.uk/history/the-evacuated-children-of-the-second-world-war",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP (100% Commercial Multi-School Cleared)",
+    "commercial_use_permitted": true,
+    "unit": "ks2_ww2"
+  },
+  "/images/arcade/ww2_homefront/scene_3_anderson_blitz.webp": {
+    "title": "The Blitz (1940–1941) — Back-Garden Blackout & Anderson Steel Shelter Cutaway Illustration",
+    "date": "2026 (Original KS2 Interactive Storybook Artwork grounded in IWM & National Archives 1939–1945 Home Front Records)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://www.iwm.org.uk/history/the-evacuated-children-of-the-second-world-war",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP (100% Commercial Multi-School Cleared)",
+    "commercial_use_permitted": true,
+    "unit": "ks2_ww2"
+  },
+  "/images/arcade/ww2_homefront/scene_4_wartime_kitchen.webp": {
+    "title": "Wartime Rationing & Dig for Victory (1941) — Village Grocer Counter & Woolton Pie Illustration",
+    "date": "2026 (Original KS2 Interactive Storybook Artwork grounded in IWM & National Archives 1939–1945 Home Front Records)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://www.iwm.org.uk/history/the-evacuated-children-of-the-second-world-war",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP (100% Commercial Multi-School Cleared)",
+    "commercial_use_permitted": true,
+    "unit": "ks2_ww2"
+  },
+  "/images/arcade/ww2_homefront/scene_5_bletchley_veday.webp": {
+    "title": "Women at Bletchley Park & VE Day Street Celebration (8 May 1945) Split-Scene Illustration",
+    "date": "2026 (Original KS2 Interactive Storybook Artwork grounded in IWM & National Archives 1939–1945 Home Front Records)",
+    "creator": "The History Revision Hub Interactive Arcade Studio",
+    "archive": "The History Revision Hub Original Arcade IP",
+    "repository": "The History Revision Hub Original Arcade IP",
+    "url": "https://www.iwm.org.uk/history/the-evacuated-children-of-the-second-world-war",
+    "rights_tier": "Original Hub IP",
+    "license": "Original Hub IP (100% Commercial Multi-School Cleared)",
+    "commercial_use_permitted": true,
+    "unit": "ks2_ww2"
   }
 }

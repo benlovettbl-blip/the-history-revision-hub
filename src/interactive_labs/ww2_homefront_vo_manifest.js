@@ -1,0 +1,29 @@
+/**
+ * Auto-generated Studio TTS Voiceover Manifest for The Suitcase on Platform Four (KS2 WWII Home Front Lab)
+ */
+export const WW2_HOMEFRONT_VO_CLIPS = new Set([
+  "cover_clara_welcome",
+  "cover_guard_whistle",
+  "cover_warden_lantern",
+  "cover_engine_steam",
+  "beat0_guard_suitcase",
+  "beat0_gasmask_packed",
+  "beat0_gramophone_heavy",
+  "beat0_suitcase_ready",
+  "beat0_uk_map_intro",
+  "beat1_farmer_welcome",
+  "beat1_lotte_story",
+  "beat1_lotte_photo",
+  "beat2_warden_blackout",
+  "beat2_blackout_shut",
+  "beat2_anderson_cocoa",
+  "beat2_stirrup_pump",
+  "beat3_grocer_welcome",
+  "beat3_egg_butter",
+  "beat3_woolton_pie",
+  "beat4_wren_welcome",
+  "beat4_bombe_drums",
+  "beat4_code_cracked",
+  "beat5_veday_bells",
+  "beat5_iwm_quest"
+]);

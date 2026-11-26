@@ -11,6 +11,8 @@ const LAB_CATALOG = {
     labId: 'domesday_stubitone',
     unitId: 'medieval_england',
     lessonIndex: 1,
+    launcherIcon: 'fa-chess-rook',
+    launcherLabel: '1086 Domesday Lab',
     kicker: '🏰 LOCAL HISTORY INTERACTIVE ADVENTURE • FAREHAM, STUBBINGTON & THE SOLENT (1086)',
     title: 'The Secret of Stubitone™: The 1086 Royal Domesday Audit',
     subtitle:
@@ -18,6 +20,20 @@ const LAB_CATALOG = {
     coverImg: '/images/arcade/domesday/cover_secret_of_stubitone.webp',
     badges: ['Full-Screen Touch Ready', '60 FPS Living Scenes', 'Acted Studio Voices', 'Open Domesday 1086 Data'],
     loadMount: () => import('./domesday_stubitone.js').then((m) => m.mountDomesdayStubitone),
+  },
+  'ks2_ww2:lesson_2:2': {
+    labId: 'ww2_homefront',
+    unitId: 'ks2_ww2',
+    lessonIndex: 1,
+    launcherIcon: 'fa-suitcase',
+    launcherLabel: '1939 Home Front Lab',
+    kicker: '🚂 KS2 INTERACTIVE STORYBOOK ADVENTURE • BRITAIN’S HOME FRONT (1939–1945)',
+    title: 'The Suitcase on Platform Four: A Child’s Wartime Journey (1939–1945)',
+    subtitle:
+      'Pack your 1939 evacuee suitcase, trace Operation Pied Piper trains across the whole UK, welcome a Kindertransport friend from Prague, seal the Blitz blackout curtain, weigh 1941 rations, crack a Bletchley Park weather crib, and explore the Imperial War Museums archive!',
+    coverImg: '/images/arcade/ww2_homefront/cover_platform_four.webp',
+    badges: ['KS2 Ages 9–11', '60 FPS Storybook Scenes', 'Acted Studio Voices', 'Live IWM Archive Quest'],
+    loadMount: () => import('./ww2_homefront.js').then((m) => m.mountWw2HomeFront),
   },
 };
 
@@ -141,7 +157,9 @@ export function renderTopBarLabLauncherHTML(unitId, lessonId) {
   const match = Object.entries(LAB_CATALOG).find(([k]) => k.startsWith(`${unitId}:${lessonId}:`));
   if (!match) return '';
   const spec = match[1];
-  return `<button type="button" class="btn btn-lesson-lab-launcher no-print" onclick="window.openInteractiveClassroomLab && window.openInteractiveClassroomLab('${spec.labId}', true)" style="padding: 6px 12px; font-size: 0.86rem; background: linear-gradient(180deg, #ea580c 0%, #9a3412 100%); color: #fef08a; border: 1.5px solid #fde047; font-weight: 800; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap; box-shadow: 0 2px 8px rgba(234, 88, 12, 0.35);" title="Launch Full-Screen Interactive Local History Adventure: ${spec.title}"><i class="fa-solid fa-chess-rook" style="color: #fde047;"></i> <span>1086 Domesday Lab</span></button>`;
+  const iconCls = spec.launcherIcon || 'fa-chess-rook';
+  const btnLabel = spec.launcherLabel || 'Interactive Lab';
+  return `<button type="button" class="btn btn-lesson-lab-launcher no-print" onclick="window.openInteractiveClassroomLab && window.openInteractiveClassroomLab('${spec.labId}', true)" style="padding: 6px 12px; font-size: 0.86rem; background: linear-gradient(180deg, #ea580c 0%, #9a3412 100%); color: #fef08a; border: 1.5px solid #fde047; font-weight: 800; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap; box-shadow: 0 2px 8px rgba(234, 88, 12, 0.35);" title="Launch Full-Screen Interactive History Adventure: ${spec.title}"><i class="fa-solid ${iconCls}" style="color: #fde047;"></i> <span>${btnLabel}</span></button>`;
 }
 
 if (typeof window !== 'undefined') {

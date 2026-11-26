@@ -184,6 +184,19 @@ const VISUAL_SHOWCASES = [
       import('./interactive_labs/domesday_stubitone.js').then((m) => m.mountDomesdayStubitone),
     ),
   },
+  {
+    id: 'ww2_homefront',
+    emoji: '🚂',
+    title: 'The Suitcase on Platform Four: Wartime Home Front (1939–1945)',
+    subtitle: 'Voiced KS2 Storybook Adventure Across Evacuation, Blitz, Rationing & Bletchley Park',
+    accent: '#d97706',
+    featuredUnits: ['ks2_ww2'],
+    badge: 'KS2 60 FPS STORYBOOK ADVENTURE',
+    desc: 'Pack a 1939 evacuee suitcase on Platform Four, trace Operation Pied Piper steam trains across the UK, welcome a Kindertransport friend from Prague, seal the Blitz blackout curtain, weigh 1941 rations, crack a Bletchley Park weather crib, and explore the Imperial War Museums archive!',
+    mount: lazyShowcaseMount(() =>
+      import('./interactive_labs/ww2_homefront.js').then((m) => m.mountWw2HomeFront),
+    ),
+  },
 ];
 
 const ARCADE_GAMES_CATALOG = [
@@ -464,7 +477,7 @@ export async function renderArcadeView(options = {}) {
               <span class="arcade-mgb-title-text">${shortGameTitle}</span>
             </div>
             ${
-              isGraphicNovelMode || currentGameId === 'domesday_stubitone'
+              isGraphicNovelMode || currentGameId === 'domesday_stubitone' || currentGameId === 'ww2_homefront'
                 ? ''
                 : `
               <select id="arcade-mobile-scope-select" class="arcade-mgb-scope" aria-label="Select Lesson Scope">
@@ -498,7 +511,7 @@ export async function renderArcadeView(options = {}) {
 
           <div class="arcade-controls-cluster">
             ${
-              isGraphicNovelMode || currentGameId === 'domesday_stubitone'
+              isGraphicNovelMode || currentGameId === 'domesday_stubitone' || currentGameId === 'ww2_homefront'
                 ? ''
                 : `
               <select id="arcade-scope-select" class="arcade-scope-select" aria-label="Select Lesson Scope">

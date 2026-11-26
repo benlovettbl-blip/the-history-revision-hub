@@ -1,0 +1,960 @@
+/**
+ * The Suitcase on Platform Four (1939–1945) — KS2 WWII Home Front Adventure Scoped Styles
+ *  - Zero text over artwork • Discreet 12px shiny hover glints on desktop, gentle breathing glints on touch
+ *  - True-16:9 uncropped cover stage across 1280x720 / 1366x768 / 1440x900 projectors & laptops
+ *  - Single-row compact mobile nav (<select> font-size >= 16px) + locked-height sticky speech box (CLS = 0)
+ *  - 2-column side-by-side layout preserved on 844x390 mobile landscape
+ */
+
+.ww2-shell,
+.ww2-shell * {
+  box-sizing: border-box;
+}
+
+.ww2-shell {
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  background: radial-gradient(circle at 50% 0%, #172554 0%, #0f172a 48%, #090d16 100%);
+  border: 2px solid #d97706;
+  border-radius: 18px;
+  color: #f8fafc;
+  overflow-x: clip;
+  overflow-anchor: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ww2-shell.ww2-is-fullscreen {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  z-index: 99999 !important;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overflow-anchor: none;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* =========================================================================
+   TOP NAVIGATION BAR (7 PILLS ON DESKTOP/TABLET • 1-ROW SELECT ON PHONES)
+   ========================================================================= */
+.ww2-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 14px;
+  background: linear-gradient(90deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  border-bottom: 1.5px solid rgba(245, 158, 11, 0.48);
+  flex-wrap: wrap;
+}
+
+.ww2-step-strip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.ww2-mobile-step-nav {
+  display: none;
+  align-items: center;
+  gap: 4px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.ww2-mob-arrow-btn {
+  appearance: none;
+  width: 34px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1.5px solid #475569;
+  background: #1e293b;
+  color: #fde68a;
+  font-size: 0.8rem;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  touch-action: manipulation;
+}
+.ww2-mob-arrow-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.ww2-mobile-step-select {
+  flex: 1 1 auto;
+  min-width: 132px;
+  height: 36px;
+  padding: 0 4px 0 8px;
+  border-radius: 8px;
+  border: 1.5px solid #f59e0b;
+  background-color: #0f172a;
+  color: #fef3c7;
+  font-family: inherit;
+  font-size: 16px !important; /* Prevents iOS Safari zoom on tap (AGENTS.md 6.4) */
+  font-weight: 800;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ww2-step-pill {
+  appearance: none;
+  min-height: 33px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  border: 1.5px solid #334155;
+  background: #0f172a;
+  color: #cbd5e1;
+  font-size: 0.73rem;
+  font-weight: 800;
+  line-height: 1.2;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: all 0.16s ease;
+  white-space: nowrap;
+}
+.ww2-step-pill:hover {
+  border-color: #f59e0b;
+  color: #ffffff;
+}
+.ww2-step-pill.is-active {
+  background: linear-gradient(180deg, #f59e0b 0%, #b45309 100%);
+  color: #fffbeb;
+  border-color: #fde68a;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.38);
+}
+.ww2-step-pill.is-done {
+  border-color: #22c55e;
+  color: #86efac;
+}
+
+.ww2-ctrl-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.ww2-score-chip {
+  font-size: 0.75rem;
+  font-weight: 900;
+  color: #fde047;
+  background: #1e293b;
+  border: 1px solid #b45309;
+  padding: 5px 10px;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.ww2-icon-btn {
+  appearance: none;
+  min-height: 33px;
+  padding: 4px 9px;
+  border-radius: 9px;
+  border: 1.5px solid #475569;
+  background: #1e293b;
+  color: #f8fafc;
+  font-size: 0.74rem;
+  font-weight: 800;
+  line-height: 1.2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+.ww2-icon-btn:hover {
+  border-color: #fbbf24;
+  background: #334155;
+}
+.ww2-icon-btn.is-active {
+  border-color: #fde047;
+  background: rgba(234, 179, 8, 0.2);
+  color: #fef08a;
+}
+
+/* =========================================================================
+   DISCREET SHINY HOVER DOT SYSTEM (ZERO TEXT OVER PICTURES!)
+   ========================================================================= */
+.ww2-hit-zone {
+  appearance: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+  outline: none;
+}
+
+.ww2-glint-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0%, #fef08a 45%, #f59e0b 82%, rgba(245, 158, 11, 0) 100%);
+  box-shadow: 0 0 10px 3px rgba(253, 224, 71, 0.92), 0 0 20px 6px rgba(245, 158, 11, 0.48);
+  opacity: 0;
+  transform: scale(0.45);
+  transition: opacity 0.18s ease, transform 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+.ww2-hit-zone.is-found .ww2-glint-dot {
+  background: radial-gradient(circle, #ffffff 0%, #bbf7d0 48%, #22c55e 85%, rgba(34, 197, 94, 0) 100%);
+  box-shadow: 0 0 10px 3px rgba(134, 239, 172, 0.88), 0 0 18px 5px rgba(34, 197, 94, 0.4);
+}
+
+.ww2-hit-zone:hover .ww2-glint-dot,
+.ww2-hit-zone:focus-visible .ww2-glint-dot,
+.ww2-hit-zone:active .ww2-glint-dot {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@keyframes ww2FireflyShimmer {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.96; transform: scale(1.14); }
+}
+
+.ww2-shell.ww2-hint-shimmer .ww2-hit-zone:not(.is-found) .ww2-glint-dot {
+  animation: ww2FireflyShimmer 0.9s ease-in-out 2;
+}
+
+@keyframes ww2TouchFirefly {
+  0%, 100% { opacity: 0.3; transform: scale(0.72); }
+  50% { opacity: 0.8; transform: scale(0.96); }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .ww2-hit-zone:not(.is-found) .ww2-glint-dot {
+    opacity: 0.54;
+    transform: scale(0.84);
+    animation: ww2TouchFirefly 2.4s ease-in-out infinite;
+  }
+}
+
+/* =========================================================================
+   STORYBOOK COVER (TRUE 16:9 UNCROPPED + ABOVE-FOLD FIT)
+   ========================================================================= */
+.ww2-cover-wrap {
+  display: flex;
+  flex-direction: column;
+  background: #090d16;
+  flex: 1;
+}
+
+.ww2-cover-stage {
+  width: 100%;
+  background: radial-gradient(circle at 50% 50%, #172554 0%, #090d16 80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ww2-cover-art-box {
+  position: relative;
+  width: 100%;
+  max-width: min(100%, calc((100dvh - 255px) * 16 / 9));
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  overflow: hidden;
+  background: #090d16;
+  box-shadow: 0 0 38px rgba(0, 0, 0, 0.75);
+}
+
+.ww2-shell.ww2-is-fullscreen .ww2-cover-art-box,
+#hh-classroom-lab-modal .ww2-cover-art-box {
+  max-width: min(100%, calc((100dvh - 172px) * 16 / 9));
+}
+
+.ww2-diorama-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.25s ease-out;
+}
+
+.ww2-cover-top-shade {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 36%;
+  background: linear-gradient(180deg, rgba(9, 13, 22, 0.8) 0%, rgba(9, 13, 22, 0) 100%);
+  pointer-events: none;
+  z-index: 4;
+}
+
+.ww2-cover-logo-wrap {
+  position: absolute;
+  top: 2.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(94%, 760px);
+  text-align: center;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.ww2-cover-kicker {
+  display: inline-block;
+  max-width: 100%;
+  padding: 2px 11px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.86);
+  border: 1px solid #f59e0b;
+  color: #fde68a;
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.ww2-cover-title {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.22rem, 3.5vw, 2.75rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+  background: linear-gradient(180deg, #fffbeb 0%, #fde047 40%, #f59e0b 76%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 3px 0 #1e1b4b) drop-shadow(0 6px 16px rgba(0, 0, 0, 0.92));
+}
+
+.ww2-cover-sub {
+  margin: 4px auto 0;
+  font-size: clamp(0.72rem, 1.3vw, 0.92rem);
+  font-weight: 700;
+  color: #fef3c7;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95);
+}
+
+.ww2-cover-footer {
+  padding: 10px 18px 12px;
+  background: linear-gradient(180deg, #0f172a 0%, #090d16 100%);
+  border-top: 2px solid #b45309;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ww2-cover-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.ww2-start-cta {
+  appearance: none;
+  min-height: 46px;
+  padding: 10px 24px;
+  border-radius: 999px;
+  border: 2.5px solid #fef08a;
+  background: linear-gradient(180deg, #d97706 0%, #92400e 100%);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  touch-action: manipulation;
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.48);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.ww2-start-cta:hover,
+.ww2-start-cta:active {
+  transform: scale(1.02);
+  box-shadow: 0 8px 26px rgba(251, 191, 36, 0.65);
+}
+
+/* =========================================================================
+   DIALOGUE STRIP WITH SPEAKER PORTRAIT MEDALLIONS
+   ========================================================================= */
+.ww2-body {
+  padding: 12px 16px 18px;
+  flex: 1;
+}
+
+.ww2-speech-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(180deg, #fef3c7 0%, #fde68a 100%);
+  color: #1c1917;
+  border: 2.5px solid #92400e;
+  border-radius: 14px;
+  padding: 9px 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
+  margin-bottom: 11px;
+}
+
+.ww2-avatar-medallion {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2.5px solid #78350f;
+  background-color: #1e293b;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.ww2-speech-speaker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #9a3412;
+  margin-bottom: 2px;
+}
+
+.ww2-speech-hint-chip {
+  font-size: 0.67rem;
+  color: #78350f;
+  font-weight: 800;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.ww2-speech-text {
+  margin: 0;
+  font-size: 0.91rem;
+  font-weight: 700;
+  line-height: 1.36;
+  color: #1c1917;
+}
+
+.ww2-subtab-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ww2-lbl-short {
+  display: none;
+}
+
+/* =========================================================================
+   DIORAMA & MAP WORKSPACE GRID
+   ========================================================================= */
+.ww2-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.24fr) minmax(0, 0.96fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.ww2-diorama-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid #b45309;
+  background: #090d16;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+}
+
+.ww2-map-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 900 / 540;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid #d97706;
+  background: #0b243b;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+}
+
+.ww2-scene-caption-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  padding: 5px 10px;
+  border-radius: 9px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  font-size: 0.76rem;
+  color: #cbd5e1;
+}
+
+.ww2-card-panel {
+  background: #141e30;
+  border: 1.5px solid #334155;
+  border-radius: 14px;
+  padding: 13px 15px;
+}
+
+.ww2-choice-btn {
+  appearance: none;
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 13px;
+  border-radius: 11px;
+  border: 1.5px solid #475569;
+  background: #1e293b;
+  color: #f8fafc;
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1.32;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  touch-action: manipulation;
+  margin-bottom: 8px;
+  transition: border-color 0.14s ease, background 0.14s ease;
+}
+.ww2-choice-btn:hover {
+  border-color: #fbbf24;
+  background: #283548;
+}
+.ww2-choice-btn.is-correct {
+  border-color: #22c55e;
+  background: rgba(22, 163, 74, 0.22);
+  color: #dcfce7;
+}
+.ww2-choice-btn.is-selected-wrong {
+  border-color: #ef4444;
+  background: rgba(220, 38, 38, 0.22);
+  color: #fee2e2;
+}
+
+.ww2-next-btn {
+  appearance: none;
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 2px solid #fde047;
+  background: linear-gradient(180deg, #d97706 0%, #92400e 100%);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 900;
+  line-height: 1.25;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  touch-action: manipulation;
+  margin-top: 10px;
+}
+
+/* =========================================================================
+   RATION COUPON BOOK, BLETCHLEY CIPHER CARD & IWM ARCHIVE QUEST
+   ========================================================================= */
+.ww2-ration-book {
+  border-radius: 12px;
+  border: 2px solid #92400e;
+  background: linear-gradient(180deg, #fef9c3 0%, #fde68a 100%);
+  color: #1c1917;
+  padding: 11px 13px;
+  margin-bottom: 10px;
+  box-shadow: inset 0 0 16px rgba(146, 64, 14, 0.16);
+}
+
+.ww2-cipher-strip {
+  font-family: 'Courier New', ui-monospace, monospace;
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  color: #fde047;
+  background: #090d16;
+  border: 1.5px solid #f59e0b;
+  border-radius: 9px;
+  padding: 8px 11px;
+  margin: 8px 0 10px;
+}
+
+.ww2-archive-quest-box {
+  background: linear-gradient(135deg, #0f172a 0%, #172554 100%);
+  border: 2px solid #38bdf8;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.18);
+}
+
+.ww2-ext-link-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 12px;
+}
+
+.ww2-ext-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 42px;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #38bdf8;
+  background: rgba(14, 116, 144, 0.28);
+  color: #e0f2fe;
+  font-size: 0.81rem;
+  font-weight: 800;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.ww2-ext-link-btn:hover {
+  background: rgba(2, 132, 199, 0.45);
+  border-color: #fde047;
+  color: #ffffff;
+}
+.ww2-ext-link-btn.is-primary {
+  background: linear-gradient(180deg, #0284c7 0%, #0369a1 100%);
+  border-color: #7dd3fc;
+  color: #ffffff;
+  font-weight: 900;
+}
+
+.ww2-archive-drawer {
+  background: #0f172a;
+  border: 2px solid #b45309;
+  border-radius: 14px;
+  padding: 12px 15px;
+}
+.ww2-archive-drawer > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.92rem;
+  font-weight: 900;
+  color: #fde047;
+}
+.ww2-archive-drawer > summary::-webkit-details-marker {
+  display: none;
+}
+
+.ww2-stamp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: 10px;
+}
+
+.ww2-debrief-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.ww2-debrief-col {
+  background: #141e30;
+  border: 1.5px solid #334155;
+  border-radius: 12px;
+  padding: 13px 14px;
+}
+
+/* =========================================================================
+   RESPONSIVE BREAKPOINTS: TABLET, PORTRAIT MOBILE & LANDSCAPE PHONE
+   ========================================================================= */
+@media (max-width: 920px) and (orientation: portrait) {
+  .ww2-split {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .ww2-debrief-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ww2-cover-art-box,
+  .ww2-shell.ww2-is-fullscreen .ww2-cover-art-box,
+  #hh-classroom-lab-modal .ww2-cover-art-box {
+    max-width: 100%;
+  }
+  .ww2-cover-footer {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 9px 12px 11px;
+    gap: 8px;
+  }
+}
+
+/* Single-Row Compact Topbar & Locked-Height Sticky Speech Strip on Phones (<= 768px) */
+@media (max-width: 768px) {
+  .ww2-topbar {
+    padding: 6px 8px;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+  .ww2-step-strip {
+    display: none !important;
+  }
+  .ww2-mobile-step-nav {
+    display: flex;
+  }
+  .ww2-ctrl-group {
+    gap: 4px;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+  }
+  .ww2-icon-btn .ww2-btn-lbl {
+    display: none;
+  }
+  .ww2-topbar .ww2-icon-btn {
+    padding: 0;
+    width: 35px;
+    min-height: 36px;
+  }
+  .ww2-score-chip {
+    font-size: 0.68rem;
+    padding: 4px 6px;
+  }
+  .ww2-score-chip .ww2-score-verb {
+    display: none;
+  }
+
+  .ww2-body {
+    padding: 8px 10px calc(18px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* Locked-height sticky speech box so quote length changes shift buttons/artwork by 0.00px! */
+  .ww2-speech-box {
+    position: sticky;
+    top: 4px;
+    z-index: 30;
+    height: 100px;
+    min-height: 100px;
+    max-height: 100px;
+    overflow-y: auto;
+    padding: 7px 10px;
+    gap: 8px;
+    margin-bottom: 8px;
+    border-radius: 11px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+  }
+  .ww2-cover-quote-wrap {
+    min-height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .ww2-avatar-medallion {
+    width: 36px;
+    height: 36px;
+    border-width: 2px;
+  }
+  .ww2-speech-speaker {
+    font-size: 0.65rem;
+    margin-bottom: 1px;
+  }
+  .ww2-speech-hint-chip {
+    display: none;
+  }
+  .ww2-speech-text {
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .ww2-lbl-full {
+    display: none;
+  }
+  .ww2-lbl-short {
+    display: inline;
+  }
+  .ww2-subtab-bar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  .ww2-subtab-bar .ww2-step-pill {
+    width: 100%;
+    padding: 5px 7px;
+    font-size: 0.71rem;
+    min-height: 34px;
+    text-align: center;
+  }
+  .ww2-subtab-bar .ww2-subtab-counter {
+    grid-column: 1 / -1;
+    margin-left: 0 !important;
+    text-align: center;
+    font-size: 0.72rem !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .ww2-mob-arrow-btn,
+  .ww2-hide-narrow {
+    display: none !important;
+  }
+  .ww2-topbar .ww2-icon-btn {
+    width: 32px;
+    min-height: 34px;
+  }
+  .ww2-score-chip {
+    font-size: 0.65rem;
+    padding: 4px 5px;
+  }
+}
+
+@media (max-width: 640px) {
+  .ww2-cover-kicker {
+    font-size: 0.44rem;
+    letter-spacing: 0.45px;
+    padding: 2px 6px;
+    white-space: nowrap;
+  }
+  .ww2-cover-title {
+    font-size: clamp(1.12rem, 5.2vw, 1.38rem);
+  }
+  .ww2-cover-sub {
+    display: none;
+  }
+  .ww2-cover-cta-row {
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .ww2-cover-cta-row .ww2-start-cta {
+    flex: 1 1 auto;
+    min-height: 44px;
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+  .ww2-cover-cta-row .ww2-icon-btn {
+    padding: 6px 9px;
+    min-height: 44px;
+    font-size: 0.74rem;
+    flex-shrink: 0;
+  }
+  .ww2-scene-caption-strip .ww2-caption-mid {
+    display: none;
+  }
+}
+
+/* Sideways Phone Landscape Mode (e.g. 844x390 iPhone / Android Landscape) */
+@media (max-height: 520px) and (orientation: landscape) {
+  .ww2-topbar {
+    padding: 4px 10px;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+  .ww2-step-strip {
+    display: none !important;
+  }
+  .ww2-mobile-step-nav {
+    display: flex;
+  }
+  .ww2-icon-btn .ww2-btn-lbl {
+    display: none;
+  }
+  .ww2-topbar .ww2-icon-btn {
+    padding: 0;
+    width: 34px;
+    min-height: 32px;
+  }
+  .ww2-mobile-step-select,
+  .ww2-mob-arrow-btn {
+    height: 32px;
+  }
+  .ww2-cover-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.85fr);
+    align-items: stretch;
+  }
+  .ww2-cover-art-box,
+  .ww2-shell.ww2-is-fullscreen .ww2-cover-art-box,
+  #hh-classroom-lab-modal .ww2-cover-art-box {
+    max-width: min(100%, calc((100dvh - 46px) * 16 / 9));
+  }
+  .ww2-cover-footer {
+    border-top: none;
+    border-left: 2px solid #b45309;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 12px;
+  }
+  .ww2-cover-sub {
+    display: none;
+  }
+  .ww2-body {
+    padding: 6px 10px 10px;
+  }
+  .ww2-speech-box {
+    position: static;
+    height: auto;
+    min-height: 52px;
+    max-height: none;
+    padding: 4px 9px;
+    gap: 8px;
+    margin-bottom: 5px;
+  }
+  .ww2-avatar-medallion {
+    width: 30px;
+    height: 30px;
+  }
+  .ww2-speech-speaker {
+    font-size: 0.62rem;
+    margin-bottom: 0;
+  }
+  .ww2-speech-text {
+    font-size: 0.75rem;
+    line-height: 1.24;
+  }
+  .ww2-subtab-bar {
+    margin-bottom: 5px;
+    gap: 6px;
+  }
+  .ww2-subtab-bar .ww2-step-pill {
+    min-height: 28px;
+    padding: 3px 9px;
+    font-size: 0.7rem;
+  }
+  .ww2-split {
+    grid-template-columns: minmax(0, 1.04fr) minmax(0, 0.96fr) !important;
+    gap: 10px;
+  }
+  .ww2-diorama-frame {
+    max-width: min(100%, calc((100dvh - 155px) * 16 / 9));
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "clips": {
+    "cover_warden_lantern": "40b4c023505aae09c870eaa1814585e0ab94da59c6fd251afbf13addd8996067",
+    "beat2_warden_blackout": "dfbbdcc381a0fb579b9d8dd346c214642482c2bdb263a02d3cc713a54fd85912",
+    "beat2_blackout_shut": "e195595337d6b282cd70649ed08bc7acf1d0c7a0fc9086c322717a6fcba45182",
+    "cover_clara_welcome": "68ceb0a847c339d2042730d7f20c3b0bd2bcc4e492590f983fd22b7684d23dda",
+    "beat0_gasmask_packed": "0abd7824a8d51f62b8987ef6f4b32b9a7a4b5516956e9adc9a960d8794e9a703",
+    "beat0_suitcase_ready": "9a36b323dc3f7a01ca14db2c21879e17627f6f269ce8f32a284360fd67d7502e",
+    "beat1_lotte_photo": "a0d19432b7d103604360fd24bb436c7cf9f88f515ee1b56fe65aaec435c002cb",
+    "beat2_anderson_cocoa": "1261d531ad20b4b68284d134c68c255c7179dd4d5495b4f6ddc58356cf89a718",
+    "beat3_woolton_pie": "cfbbd0c48473b5a51a1e368e8de205377fe1eee9756b639663940e611506b6bd",
+    "beat5_veday_bells": "05db2f3827d29236d533eac3fd1f01b41d22accce4d6818fc3c02fba8ba4de5a",
+    "cover_guard_whistle": "eb0679a7fab0829a35d9a8c8274778617c4562953641151863beb84de35b18ae",
+    "beat0_guard_suitcase": "2ee4c370cf46549bd7844706f6a9e25533b625abff04694a8617f5aeed013ad1",
+    "beat0_gramophone_heavy": "da19a36cb43712b0bbf42bb324a8712b3c5ea91b84ab3691a5318b750dd26516",
+    "beat1_farmer_welcome": "61baabaa766c388a63177336d1c55ab86c6612ed46e719bdb56fbc703df60bb4",
+    "beat1_lotte_story": "1f805fb2cec7ae7ab1e36f58e109c81be8e21d06c90d349f87611c17acbf2570",
+    "beat3_grocer_welcome": "421fc59f568faa981577bd48aadad5df13d2f2e721a6d571f31d014fea4d31e2",
+    "beat3_egg_butter": "8d4ee334d899d97d1d8d2143fed186bc0e8da303553fa3c065ef81425894b487",
+    "beat4_wren_welcome": "087ccac0b359a2f997cbcd2cfaf9d559fabf3f3b092d13b2afa854c2fc656f00",
+    "beat4_code_cracked": "2b8abd9d342f891cdaca92c56208d7f726cb7e2fbf94835a186aac14a77f5544",
+    "cover_engine_steam": "59b6197a84086bbb16450c655f642a2394240f91dfbf92d4df2d0baa0b240c4d",
+    "beat0_uk_map_intro": "a2df37f7bb202b6aa5578d5e0b2c9829e311865973b567a6570ad9cb28cbbe04",
+    "beat2_stirrup_pump": "bd3604f3558c0dfa5d02c46fab6d8f456b0da466f5de5d4f3f6711fc1c553270",
+    "beat4_bombe_drums": "fc0cc1da15a4a59bb0ac762749b31ee1a0c80890af48435bb5b0e53bd2a206c6",
+    "beat5_iwm_quest": "7b916ba87c5557a619c5eff827560d3d69374803c480d22cec2401b2aa4470a5"
+  }
+}

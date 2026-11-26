@@ -1,0 +1,217 @@
+{
+  "id": "ww2_homefront_1939_1945",
+  "title": "The Suitcase on Platform Four",
+  "subtitle": "A Child's Wartime Home Front Journey (1939–1945)",
+  "sourceAttribution": "Grounded in Imperial War Museums (IWM) & The National Archives UK 1939–1945 Home Front Records",
+  "evacuationRoutes": [
+    {
+      "id": "london",
+      "city": "London & East End Docks",
+      "x": 635,
+      "y": 428,
+      "destName": "Kent, Devon, Cornwall & South Wales",
+      "destX": 438,
+      "destY": 465,
+      "evacuees": "over 600,000 children & mothers",
+      "riskReason": "Britain's capital, Parliament, railways, and Thames docklands made London the #1 Luftwaffe target.",
+      "receptionNote": "Special steam trains left Waterloo, Paddington, and Liverpool Street every few minutes from 1 September 1939, carrying children to quiet villages across Devon, Cornwall, Kent, and Wales."
+    },
+    {
+      "id": "midlands",
+      "city": "Coventry & Birmingham",
+      "x": 545,
+      "y": 368,
+      "destName": "Worcestershire, Shropshire & Herefordshire",
+      "destX": 456,
+      "destY": 374,
+      "evacuees": "over 140,000 schoolchildren",
+      "riskReason": "Packed with Spitfire, tank, and munitions factories that powered Britain's war effort.",
+      "receptionNote": "Children from industrial Midlands streets travelled west to apple-orchard farms and market towns along the Welsh Marches."
+    },
+    {
+      "id": "northwest",
+      "city": "Manchester, Salford & Liverpool",
+      "x": 486,
+      "y": 292,
+      "destName": "North Wales, Cheshire & Rural Lancashire",
+      "destX": 398,
+      "destY": 318,
+      "evacuees": "over 260,000 children",
+      "riskReason": "Liverpool's Atlantic food-convoy docks and Manchester's Trafford Park factories faced heavy night raids.",
+      "receptionNote": "Many Merseyside and Salford children heard the Welsh language for the very first time in rural Snowdonia and Anglesey!"
+    },
+    {
+      "id": "scotland",
+      "city": "Glasgow & Clydebank Shipyards",
+      "x": 418,
+      "y": 152,
+      "destName": "Scottish Highlands, Ayrshire & Dumfries",
+      "destX": 372,
+      "destY": 96,
+      "evacuees": "over 175,000 Scottish evacuees",
+      "riskReason": "River Clyde shipyards built Royal Navy warships and merchant vessels vital to Britain's survival.",
+      "receptionNote": "Operation Pied Piper moved children from Glasgow tenements to Highland glens, island crofts, and Ayrshire farms."
+    },
+    {
+      "id": "northeast",
+      "city": "Newcastle, Tyneside & Hull",
+      "x": 558,
+      "y": 236,
+      "destName": "Yorkshire Dales & Northumberland",
+      "destX": 496,
+      "destY": 244,
+      "evacuees": "over 130,000 children",
+      "riskReason": "East-coast ports and shipyards sat directly across the North Sea from German airfields—Hull became one of the most heavily bombed cities in Britain.",
+      "receptionNote": "Evacuee trains steamed inland into stone villages across the Yorkshire Dales and rural Northumberland."
+    },
+    {
+      "id": "southcoast",
+      "city": "Portsmouth, Southampton & Plymouth",
+      "x": 562,
+      "y": 468,
+      "destName": "Dorset, Wiltshire & Hampshire Downs",
+      "destX": 512,
+      "destY": 442,
+      "evacuees": "over 95,000 coastal children",
+      "riskReason": "Home to Royal Navy dockyards and Spitfire workshops right across the English Channel.",
+      "receptionNote": "Naval-port schoolchildren were billeted inland across chalk-downland villages in Wiltshire, Dorset, and rural Hampshire."
+    }
+  ],
+  "suitcaseItems": [
+    {
+      "id": "gasmask",
+      "label": "Cardboard Gas-Mask Box",
+      "isOfficial": true,
+      "note": "Compulsory! Every British child carried a rubber respirator in a small cardboard box on a shoulder string everywhere they went."
+    },
+    {
+      "id": "clothes_wash",
+      "label": "Spare Jumper, Toothbrush & Tin Mug",
+      "isOfficial": true,
+      "note": "On the official 1939 Ministry of Health list: one change of warm clothes, nightwear, plimsolls, toothbrush, comb, towel, and soap!"
+    },
+    {
+      "id": "sandwiches",
+      "label": "Packet of Sandwiches & Apple for the Train",
+      "isOfficial": true,
+      "note": "Essential! Evacuation trains took many hours with no buffet cars, so every child brought food for the journey (plus a brown identity label pinned to their coat)."
+    },
+    {
+      "id": "teddy",
+      "label": "One Small Toy or Postcard for Mum",
+      "isOfficial": true,
+      "note": "Allowed if it squeezed inside! A tiny soft toy and a stamped postcard to tell Mum & Dad your safe new address meant everything on night one."
+    },
+    {
+      "id": "gramophone",
+      "label": "Heavy Brass Gramophone & 12 Records",
+      "isOfficial": false,
+      "note": "Too heavy! Every ten-year-old had to carry their own suitcase unaided from the train to the village Billeting Hall!"
+    }
+  ],
+  "rationItems": [
+    {
+      "id": "egg",
+      "name": "1 Single Fresh Egg",
+      "oz": "1 egg / week",
+      "couponRequired": true,
+      "isCorrectWeekly": true,
+      "fact": "Just ONE fresh shell egg per person a week! Families used tins of American dried egg powder for scrambled eggs and cakes."
+    },
+    {
+      "id": "butter_bacon",
+      "name": "2oz Butter & 4oz Bacon",
+      "oz": "Tiny slices!",
+      "couponRequired": true,
+      "isCorrectWeekly": true,
+      "fact": "2 ounces of butter is barely four teaspoons! Rationing started on 8 January 1940 so rich and poor shared scarce ship imports fairly."
+    },
+    {
+      "id": "sugar_tea",
+      "name": "8oz Sugar & 2oz Tea Leaves",
+      "oz": "1 small cup",
+      "couponRequired": true,
+      "isCorrectWeekly": true,
+      "fact": "Sweets and chocolate were rationed too (from July 1942)—children got just 3 ounces of sweets a week!"
+    },
+    {
+      "id": "woolton_veg",
+      "name": "Home-Grown Carrots, Potatoes & Woolton Pie",
+      "oz": "UNRATIONED!",
+      "couponRequired": false,
+      "isCorrectWeekly": true,
+      "fact": "The secret lifesaver! Fresh vegetables were NEVER rationed—millions dug up lawns and parks ('Dig for Victory') to bake Lord Woolton Pie!"
+    }
+  ],
+  "bletchleyClues": [
+    {
+      "id": "bc1",
+      "stepBadge": "Intercept Step 1 of 3 • Spot the Daily Weather Crib",
+      "cipherLine": "06:00 AM INTERCEPT:  X Q L T M R   K P V Z F G",
+      "question": "German operators carelessly started almost every 6:00 AM morning message with the exact same two words! Which English crib phrase matches a 6:00 AM weather report?",
+      "options": [
+        { "id": "weather", "label": "🌦️ 'WEATHER REPORT' (German: WETTERBERICHT)", "correct": true },
+        { "id": "birthday", "label": "🎂 'HAPPY BIRTHDAY'", "correct": false }
+      ],
+      "explain": "Brilliant! Real Bletchley Park codebreakers like Alan Turing and Hut 8's Wrens used predictable 'cribs' like morning weather forecasts to work out that day's rotor settings!"
+    },
+    {
+      "id": "bc2",
+      "stepBadge": "Intercept Step 2 of 3 • Lock the Brass Rotors",
+      "cipherLine": "ROTOR MATCH FOUND:  W ➔ X  |  E ➔ Q  |  T ➔ L   (Setting: B - R - K)",
+      "question": "Over three-quarters of Bletchley Park's 10,000 staff were WOMEN (WRNS 'Wrens' & civilian codebreakers). Once they locked the rotor setting on the Bombe machine, what could Britain read?",
+      "options": [
+        { "id": "uboat", "label": "🚢 Secret U-boat wolfpack positions in the Atlantic Ocean", "correct": true },
+        { "id": "football", "label": "⚽ Saturday afternoon football scores in London", "correct": false }
+      ],
+      "explain": "Spot-on! Reading Enigma ('Ultra' intelligence) let the Royal Navy steer food and medicine convoys safely around U-boat ambushes!"
+    },
+    {
+      "id": "bc3",
+      "stepBadge": "Intercept Step 3 of 3 • Keep the Secret!",
+      "cipherLine": "DECODED MESSAGE: 'U-BOAT PACK AT GRID 44 NORTH — REROUTE BRITISH FOOD CONVOY IMMEDIATELY'",
+      "question": "Every young Wren and codebreaker signed the Official Secrets Act. How long did Bletchley Park staff keep their wartime work secret—even from their own parents?",
+      "options": [
+        { "id": "thirty", "label": "🤫 Roughly 30 years (until the 1970s!)", "correct": true },
+        { "id": "veday", "label": "📰 They told newspapers the day after VE Day in 1945", "correct": false }
+      ],
+      "explain": "Incredible discipline! For nearly thirty years after 1945, families had no idea the quiet clerk or Wren at home had helped shorten the Second World War by up to two years!"
+    }
+  ],
+  "factChecks": [
+    {
+      "id": "fc1",
+      "statement": "The moment Britain celebrated VE Day on 8 May 1945, all food rationing ended straight away.",
+      "isTrue": false,
+      "note": "MYTH! Ships, farms, and finances were so damaged that rationing actually lasted NINE MORE YEARS—finally ending with meat in July 1954!"
+    },
+    {
+      "id": "fc2",
+      "statement": "Unlike British evacuees who could write home to their parents, nearly 10,000 Kindertransport refugee children escaped Nazi territories unaccompanied—and many never saw their parents again.",
+      "isTrue": true,
+      "note": "TRUE. Operation Pied Piper moved children inside Britain away from bombs, whereas the Kindertransport rescued Jewish children from Nazi persecution before borders closed in September 1939."
+    },
+    {
+      "id": "fc3",
+      "statement": "Families WITH gardens dug curved steel Anderson shelters outside, while families in upstairs flats WITHOUT gardens slept inside steel-topped indoor Morrison table-cages.",
+      "isTrue": true,
+      "note": "TRUE! Both shelters saved thousands of lives during the 1940–1941 Blitz across London, Coventry, Liverpool, Plymouth, Hull, Clydebank, and Belfast."
+    }
+  ],
+  "debriefColumns": {
+    "homeFrontFacts": [
+      "Operation Pied Piper (1–3 Sept 1939): 1.5 million children, mothers with infants, and teachers were evacuated from target cities in just three days.",
+      "The Kindertransport (Dec 1938 – Sept 1939): Nearly 10,000 unaccompanied mostly Jewish children escaped Germany, Austria, and Czechoslovakia (including 669 from Prague) to British foster homes.",
+      "The Blitz (Sept 1940 – May 1941): Over 43,000 British civilians were killed; families used blackout curtains, taped windows, Anderson garden shelters, indoor Morrison cages, and London Tube platforms.",
+      "Rationing & Dig for Victory (Jan 1940 – July 1954): Coupon books shared scarce imported food fairly (1 fresh egg, 2oz butter, 4oz bacon a week), topped up by unrationed home-grown vegetables."
+    ],
+    "storyCharacters": [
+      "Clara & Arthur (our 10-year-old evacuees), Farmer Mr Oakley, Lotte from Prague, Mrs Wilkins the grocer, and Wren Officer Miss Bennett are historical composite characters created for this story.",
+      "Every object they hold—from the cardboard gas-mask box and brown coat label to Lotte's numbered refugee tag, the stirrup-pump, the buff ration book, and the Bletchley weather crib—is 100% historically real."
+    ],
+    "nuanceAndMyths": [
+      "Not every evacuee had a happy time: while many loved farm life, others felt terribly homesick or faced unfair treatment—and thousands drifted home during the quiet 'Phoney War' winter of 1939 before the Blitz began!",
+      "War didn't end everywhere on VE Day (8 May 1945): war in Asia and the Pacific continued until VJ Day (15 August 1945), and food rationing in Britain lasted until 1954."
+    ]
+  }
+}
