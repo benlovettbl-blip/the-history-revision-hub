@@ -25,7 +25,7 @@ export const GREAT_WAR_CORNERS = {
         label: "BISMARCK'S SECRET TREATIES",
         title: "Complex Web of Defensive Pacts & Secret Clauses",
         detail: "Bismarck constructed secret overlapping alliances (Dual Alliance, Reinsurance Treaty) that created deep suspicion and divided Europe into armed camps.",
-        starter: "&ldquo;Our corner was decisive because secret diplomacy and paranoid overlapping pacts divided Europe into suspicious armed armed camps...&rdquo;"
+        starter: "&ldquo;Our corner was decisive because secret diplomacy and paranoid overlapping pacts divided Europe into suspicious armed camps...&rdquo;"
       },
       {
         corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",

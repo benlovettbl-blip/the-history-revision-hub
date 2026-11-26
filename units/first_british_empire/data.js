@@ -67,48 +67,96 @@ export default {
       "definition": "A formal legal document issued by a monarch granting special rights, land, or trade monopolies to a company or colony."
     },
     {
-      "term": "Mercantilism",
-      "definition": "An economic system where European empires controlled colonial trade to maximise exports and hoard gold and silver."
+      "term": "Monopoly",
+      "definition": "The exclusive legal right of a single company or organisation to control all trade or supply of a particular good."
     },
     {
-      "term": "Monopoly",
-      "definition": "The exclusive legal right of a single company or organisation to control all trade or production of a particular good."
+      "term": "Mercantilism",
+      "definition": "An economic system where European empires controlled colonial trade to maximise exports and accumulate gold and silver."
+    },
+    {
+      "term": "Factory",
+      "definition": "In early modern Asian and African trade, a fortified coastal warehouse and trading post managed by company agents called factors."
+    },
+    {
+      "term": "Sepoy",
+      "definition": "An Indian infantry soldier recruited, drilled, and armed under European officers to serve in the East India Company’s private army."
+    },
+    {
+      "term": "Nawab",
+      "definition": "A provincial governor or semi-independent Muslim ruler within the Mughal Empire, such as the ruler of Bengal."
     },
     {
       "term": "Diwani",
-      "definition": "The sovereign right to collect all land revenues and taxes in Bengal, granted to the British East India Company in 1765."
+      "definition": "The sovereign legal right to collect all land revenues and taxes across Bengal, Bihar, and Orissa, granted to the East India Company in 1765."
     },
     {
       "term": "Transatlantic Trade",
-      "definition": "The triangular trade system linking Britain, West Africa, and the Americas through manufactured goods, enslaved humans, and raw sugar."
+      "definition": "The triangular trade network linking Britain, West Africa, and the Americas through manufactured goods, enslaved Africans, and plantation crops."
+    },
+    {
+      "term": "Barracoon",
+      "definition": "A fortified coastal enclosure or stone dungeon in West Africa where kidnapped captives were imprisoned before boarding slave ships."
+    },
+    {
+      "term": "Asiento",
+      "definition": "The lucrative 1713 contract granted by Spain giving British merchants the exclusive right to supply enslaved Africans to Spanish America."
     },
     {
       "term": "Middle Passage",
-      "definition": "The horrific, forced sea voyage of enslaved Africans across the Atlantic Ocean in overcrowded, diseased slave ships."
+      "definition": "The horrific forced sea voyage of chained Africans across the Atlantic Ocean inside overcrowded, disease-ridden slave ships."
     },
     {
       "term": "Chattel Slavery",
-      "definition": "A brutal legal system where human beings are classified as personal property, bought and sold, with children inheriting slave status for life."
+      "definition": "A legal system where human beings are classified as personal property to be bought and sold, with children inheriting enslaved status for life."
+    },
+    {
+      "term": "Abolitionist",
+      "definition": "A campaigner who fought to outlaw the transatlantic slave trade and emancipate enslaved people through petitions, boycotts, and print."
+    },
+    {
+      "term": "Plantation",
+      "definition": "A large colonial estate in the Caribbean or Americas using enslaved labour to grow cash crops such as sugar, tobacco, or cotton."
+    },
+    {
+      "term": "Gang System",
+      "definition": "A brutal plantation labour regime dividing enslaved workers into regimented field groups driven from dawn to dusk under an overseer’s whip."
     },
     {
       "term": "Maroon",
-      "definition": "A self-liberated formerly enslaved African who established independent, fortified free communities in remote mountain wildernesses."
+      "definition": "A self-liberated formerly enslaved African who built and defended independent free communities inside remote mountain rainforests."
+    },
+    {
+      "term": "Guerrilla Warfare",
+      "definition": "Irregular military tactics using forest camouflage, steep terrain, and sudden hit-and-run ambushes to defeat larger conventional armies."
+    },
+    {
+      "term": "Abeng",
+      "definition": "A curved cow-horn instrument blown by Jamaican Maroon lookouts to send coded warnings and commands across mountain ridges."
+    },
+    {
+      "term": "Quartering",
+      "definition": "The compulsory housing and supplying of British regular soldiers in American colonial towns under Parliamentary statutes."
     },
     {
       "term": "Boycott",
-      "definition": "A coordinated refusal to buy, use, or trade certain goods as a peaceful political protest against unfair taxes or laws."
+      "definition": "A coordinated refusal to buy, import, or use British goods as an economic and political protest against unrepresentative taxes."
     },
     {
       "term": "Sons of Liberty",
-      "definition": "A secretive political organisation of American colonists founded in 1765 to resist British imperial taxation through direct action."
+      "definition": "A political network of American colonial artisans and merchants founded in 1765 to resist British taxation through protests and boycotts."
+    },
+    {
+      "term": "Coercive Acts",
+      "definition": "Four punitive 1774 laws passed by Parliament after the Boston Tea Party, closing Boston Port and suspending Massachusetts self-government."
     },
     {
       "term": "Declaration",
-      "definition": "A formal public statement announcing a revolutionary political decision, such as the American colonies severing ties with Britain in 1776."
+      "definition": "A formal public statement announcing a sovereign political break, such as the Thirteen Colonies severing ties with Britain in July 1776."
     },
     {
       "term": "Black Loyalist",
-      "definition": "An enslaved African who escaped rebel masters to fight for the British Crown during the American Revolution in exchange for freedom."
+      "definition": "An enslaved African American who escaped rebel Patriot masters to serve the British Crown during the American Revolution in exchange for freedom."
     }
   ],
   "quizzing_pack": {
@@ -336,11 +384,11 @@ export default {
             "title": "The Royal Charter & London Merchants",
             "actor": "Queen Elizabeth I & 218 Merchants",
             "tag": "📜 ROYAL CHARTER",
-            "trigger": "Queen Elizabeth I granted a royal monopoly charter to 218 London merchants, incorporating the East India Company to trade in Asian spices, pepper, and fine calicos.",
-            "connective": "Combined private venture capital with royal authority, creating a protected commercial monopoly backed by the English state.",
+            "trigger": "Queen Elizabeth I granted a 1600 royal charter and exclusive monopoly to 218 London merchants, who pooled £68,000 for galleons carrying silver bullion and broadcloth.",
+            "connective": "James Lancaster returned with pepper and cotton textiles, delivering private profits over 300% and founding the East India Company.",
             "question": "Why did Queen Elizabeth I grant London merchants a charter in 1600?",
             "para_ref": "[1.1]",
-            "prose_hash": "9d9aa72d9c"
+            "prose_hash": "481faa785b"
           },
           {
             "step": 2,
@@ -348,11 +396,11 @@ export default {
             "title": "Fortified Coastal Factories in India",
             "actor": "Emperor Jahangir & Company Factors",
             "tag": "🏭 TRADING FACTORIES",
-            "trigger": "Sir Thomas Roe secured imperial trade decrees from Mughal Emperor Jahangir, enabling the Company to construct fortified coastal warehouses at Surat, Madras, and Calcutta.",
-            "connective": "Established heavily defended territorial bridgeheads on the Indian subcontinent, garrisoned by privately hired sepoy troops.",
+            "trigger": "Ambassador Sir Thomas Roe won an imperial decree from Mughal Emperor Jahangir in 1615 to build permanent walled factories at Surat.",
+            "connective": "Multiplied into fortified coastal enclaves at Madras, Calcutta, and Bombay defended by recruited Indian sepoy infantry.",
             "question": "How did the East India Company build armed coastal forts in India?",
             "para_ref": "[1.2]",
-            "prose_hash": "71fa5af260"
+            "prose_hash": "17e6ff6410"
           },
           {
             "step": 3,
@@ -360,11 +408,11 @@ export default {
             "title": "Tensions Erupt: Nawab Siraj ud-Daulah",
             "actor": "Nawab of Bengal & Company Officials",
             "tag": "⚔️ CALCUTTA CRISIS",
-            "trigger": "The new Nawab of Bengal, Siraj ud-Daulah, ordered the British to stop mounting unauthorized heavy artillery at Fort William, storming the settlement when they refused.",
-            "connective": "Triggered the British military expedition under Robert Clive, transforming a commercial dispute into an aggressive war for territorial conquest.",
+            "trigger": "When British clerks mounted unauthorized heavy cannons on Fort William in 1756, Nawab Siraj ud-Daulah marched 50,000 soldiers on Calcutta.",
+            "connective": "Overnight suffocation deaths inside the Black Hole dungeon guardroom were sensationalized by London pamphleteers to justify conquest.",
             "question": "Why did Nawab Siraj ud-Daulah march 50,000 soldiers on Calcutta?",
             "para_ref": "[1.3]",
-            "prose_hash": "8c8fdc8c1d"
+            "prose_hash": "8c47260f6d"
           },
           {
             "step": 4,
@@ -372,11 +420,11 @@ export default {
             "title": "The Battle of Plassey & Clive’s Victory",
             "actor": "Robert Clive & Mir Jafar",
             "tag": "💥 PLASSEY VICTORY",
-            "trigger": "Robert Clive bribed the Nawab’s army commander Mir Jafar to betray his master, while British troops kept their gunpowder dry during a torrential monsoon downpour.",
-            "connective": "Annihilated the Nawab’s army, placing a puppet ruler on the throne and handing the Company sovereign political supremacy over Bengal.",
+            "trigger": "Outnumbered at Plassey in June 1757, Robert Clive bribed general Mir Jafar with the Nawab’s throne while tarpaulins kept British gunpowder dry during a monsoon downpour.",
+            "connective": "Mir Jafar’s divisions stood motionless while dry British artillery shattered loyal Bengali charges and won the Battle of Plassey.",
             "question": "How did Robert Clive’s secret bribes win the Battle of Plassey?",
             "para_ref": "[1.4]",
-            "prose_hash": "43f3eb9450"
+            "prose_hash": "588a0e712f"
           },
           {
             "step": 5,
@@ -384,11 +432,11 @@ export default {
             "title": "The 1765 Diwani & Bengal Taxation",
             "actor": "Emperor Shah Alam II & Lord Clive",
             "tag": "👑 THE DIWANI TREATY",
-            "trigger": "Mughal Emperor Shah Alam II signed the Treaty of Allahabad, granting the Company the Diwani—the legal right to collect all agricultural taxes from 20 million Bengalis.",
-            "connective": "Transformed a commercial trading corporation into an imperial sovereign ruler, enabling ruthless tax extraction that worsened the devastating 1770 Famine.",
+            "trigger": "After Buxar, defeated Emperor Shah Alam II signed the 1765 Treaty of Allahabad granting the Company the Diwani right to collect land taxes across Bengal, Bihar, and Orissa.",
+            "connective": "Relentless corporate tax extraction from Bengali peasants during severe drought triggered the 1770 Bengal famine in which ten million people starved.",
             "question": "How did the 1765 Diwani turn the Company into Bengal’s tax ruler?",
             "para_ref": "[1.5]",
-            "prose_hash": "a8edcae95d"
+            "prose_hash": "5e609f73e6"
           }
         ]
       },
@@ -535,7 +583,7 @@ export default {
         {
           "act": 1,
           "title": "The London Charter & Elizabethan Monopoly (1600–1615)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> On New Year’s Eve in 1600, Queen Elizabeth I granted an exclusive royal monopoly charter to 218 London merchants and City financiers. Seeking enormous fortunes in Asian spice markets, the syndicate pooled £68,000 to fit out armed ocean-going galleons loaded with silver bullion and English broadcloth.</p><p class=\"prose-p\">Commanded by James Lancaster, their ships returned laden with precious pepper & cotton cargo, generating sensational private trade profits of over 300%. This commercial triumph laid the permanent corporate foundation of the <strong>East India Company</strong>.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> By candlelight on New Year’s Eve in 1600, Queen Elizabeth I pressed the Great Seal into heavy wax—outsourcing the perils of Asian spice trading without risking a penny of Crown gold. Her royal charter granted 218 London merchants an exclusive monopoly, and the syndicate pooled £68,000 for armed galleons carrying silver bullion and English broadcloth.</p><p class=\"prose-p\">Commanded by sea captain James Lancaster, those battered vessels weathered scurvy and storms before returning to the Thames crammed with fragrant pepper and fine cotton textiles. Investors pocketed sensational private profits of over 300%, turning a cramped Leadenhall Street counting-house into the formidable <strong>East India Company</strong>.</p>",
           "image": "/images/east_india_house.jpg",
           "image_alt": "Hand-coloured Georgian architectural engraving titled A View of the East-India House, Leadenhall Street, London showing its classical portico and merchant carriages in 1802",
           "caption": "East India House on Leadenhall Street, London (published by Bowles & Carver, 1802): London headquarters of the East India Company monopoly originally chartered by Queen Elizabeth I on New Year’s Eve 1600.",
@@ -595,13 +643,13 @@ export default {
           ],
           "theme_heading": "The London Charter & Elizabethan Monopoly (1600–1615)",
           "heading": "The London Charter & Elizabethan Monopoly (1600–1615)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> On New Year’s Eve in 1600, Queen Elizabeth I granted an exclusive royal monopoly charter to 218 London merchants and City financiers. Seeking enormous fortunes in Asian spice markets, the syndicate pooled £68,000 to fit out armed ocean-going galleons loaded with silver bullion and English broadcloth.</p><p class=\"prose-p\">Commanded by James Lancaster, their ships returned laden with precious pepper & cotton cargo, generating sensational private trade profits of over 300%. This commercial triumph laid the permanent corporate foundation of the <strong>East India Company</strong>.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> On New Year’s Eve in 1600, Queen Elizabeth I granted an exclusive royal monopoly charter to 218 London merchants and City financiers. Seeking enormous fortunes in Asian spice markets, the syndicate pooled £68,000 to fit out armed ocean-going galleons loaded with silver bullion and English broadcloth.</p><p class=\"prose-p\">Commanded by James Lancaster, their ships returned laden with precious pepper & cotton cargo, generating sensational private trade profits of over 300%. This commercial triumph laid the permanent corporate foundation of the <strong>East India Company</strong>.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> By candlelight on New Year’s Eve in 1600, Queen Elizabeth I pressed the Great Seal into heavy wax—outsourcing the perils of Asian spice trading without risking a penny of Crown gold. Her royal charter granted 218 London merchants an exclusive monopoly, and the syndicate pooled £68,000 for armed galleons carrying silver bullion and English broadcloth.</p><p class=\"prose-p\">Commanded by sea captain James Lancaster, those battered vessels weathered scurvy and storms before returning to the Thames crammed with fragrant pepper and fine cotton textiles. Investors pocketed sensational private profits of over 300%, turning a cramped Leadenhall Street counting-house into the formidable <strong>East India Company</strong>.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> By candlelight on New Year’s Eve in 1600, Queen Elizabeth I pressed the Great Seal into heavy wax—outsourcing the perils of Asian spice trading without risking a penny of Crown gold. Her royal charter granted 218 London merchants an exclusive monopoly, and the syndicate pooled £68,000 for armed galleons carrying silver bullion and English broadcloth.</p><p class=\"prose-p\">Commanded by sea captain James Lancaster, those battered vessels weathered scurvy and storms before returning to the Thames crammed with fragrant pepper and fine cotton textiles. Investors pocketed sensational private profits of over 300%, turning a cramped Leadenhall Street counting-house into the formidable <strong>East India Company</strong>.</p>"
         },
         {
           "act": 2,
           "title": "Coastal Fortresses & Mughal Factories (1615–1700)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> In 1615, King James I dispatched diplomat Sir Thomas Roe to negotiate with Mughal Emperor Jahangir at his royal court. Roe secured an imperial royal decree permitting English merchants to construct permanent fortified warehouses known as factories at the port of Surat.</p><p class=\"prose-p\">Over the seventeenth century, the Company established vital commercial coastal enclaves across Surat, Madras, Calcutta, and Bombay. These bustling depots were defended by armed sepoy garrisons of recruited Indian infantry, transforming merchant warehouses into formidable corporate fortresses.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> When ambassador Sir Thomas Roe bowed inside Mughal Emperor Jahangir’s jewel-hung pavilion in 1615, King James I’s modest English gifts looked almost comical beside chests of imperial rubies. Yet patient flattery won Roe an imperial decree allowing English merchants to build permanent walled warehouses, called factories, at the bustling port of Surat.</p><p class=\"prose-p\">Across the seventeenth century, this humble foothold multiplied into fortified coastal enclaves at Surat, Madras, Calcutta, and Bombay. Behind stone bastions, Company clerks quietly recruited, drilled, and armed local Indian infantry known as sepoys—turning commercial spice depots into armed corporate fortresses along the Mughal shoreline.</p>",
           "source": {
             "id": "fbe_l1_src_b",
             "letter": "B",
@@ -658,8 +706,8 @@ export default {
           ],
           "theme_heading": "Coastal Fortresses & Mughal Factories (1615–1700)",
           "heading": "Coastal Fortresses & Mughal Factories (1615–1700)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> In 1615, King James I dispatched diplomat Sir Thomas Roe to negotiate with Mughal Emperor Jahangir at his royal court. Roe secured an imperial royal decree permitting English merchants to construct permanent fortified warehouses known as factories at the port of Surat.</p><p class=\"prose-p\">Over the seventeenth century, the Company established vital commercial coastal enclaves across Surat, Madras, Calcutta, and Bombay. These bustling depots were defended by armed sepoy garrisons of recruited Indian infantry, transforming merchant warehouses into formidable corporate fortresses.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> In 1615, King James I dispatched diplomat Sir Thomas Roe to negotiate with Mughal Emperor Jahangir at his royal court. Roe secured an imperial royal decree permitting English merchants to construct permanent fortified warehouses known as factories at the port of Surat.</p><p class=\"prose-p\">Over the seventeenth century, the Company established vital commercial coastal enclaves across Surat, Madras, Calcutta, and Bombay. These bustling depots were defended by armed sepoy garrisons of recruited Indian infantry, transforming merchant warehouses into formidable corporate fortresses.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> When ambassador Sir Thomas Roe bowed inside Mughal Emperor Jahangir’s jewel-hung pavilion in 1615, King James I’s modest English gifts looked almost comical beside chests of imperial rubies. Yet patient flattery won Roe an imperial decree allowing English merchants to build permanent walled warehouses, called factories, at the bustling port of Surat.</p><p class=\"prose-p\">Across the seventeenth century, this humble foothold multiplied into fortified coastal enclaves at Surat, Madras, Calcutta, and Bombay. Behind stone bastions, Company clerks quietly recruited, drilled, and armed local Indian infantry known as sepoys—turning commercial spice depots into armed corporate fortresses along the Mughal shoreline.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> When ambassador Sir Thomas Roe bowed inside Mughal Emperor Jahangir’s jewel-hung pavilion in 1615, King James I’s modest English gifts looked almost comical beside chests of imperial rubies. Yet patient flattery won Roe an imperial decree allowing English merchants to build permanent walled warehouses, called factories, at the bustling port of Surat.</p><p class=\"prose-p\">Across the seventeenth century, this humble foothold multiplied into fortified coastal enclaves at Surat, Madras, Calcutta, and Bombay. Behind stone bastions, Company clerks quietly recruited, drilled, and armed local Indian infantry known as sepoys—turning commercial spice depots into armed corporate fortresses along the Mughal shoreline.</p>",
           "image": "/images/upgraded/ks3-early/fbe_l1_b1_sir_thomas_roe_mierevelt.jpg",
           "caption": "Sir Thomas Roe (c. 1581–1644), English ambassador sent by King James I to the Mughal court of Emperor Jahangir (1615–1619) to secure imperial permission for East India Company coastal factories at Surat (National Portrait Gallery, NPG 1354).",
           "image_alt": "Oval oil portrait of English royal ambassador Sir Thomas Roe wearing a dark fur-trimmed cloak and gold medallion (after Michiel Jansz. van Mierevelt, National Portrait Gallery)"
@@ -667,7 +715,7 @@ export default {
         {
           "act": 3,
           "title": "The Storm at Calcutta & The Black Hole Myth (1756)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> By 1756, the lush province of Bengal had become the Company’s most lucrative trading territory. When British merchants began mounting heavy cannons around Fort William without permission, twenty-three-year-old Nawab Siraj ud-Daulah marched 50,000 soldiers against Calcutta to halt unauthorized fortifications.</p><p class=\"prose-p\">Following the swift three-day siege of Fort William, captured British soldiers were locked overnight in the Black Hole dungeon guardroom, where dozens died of suffocation. British imperial accounts sensationalized the tragedy to whip up public fury for conquest.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> On the ramparts of Fort William in 1756, British clerks hoisted heavy cannons over the Hooghly River without bothering to ask Bengal’s sovereign ruler. Outraged by such armed trespassing inside his richest province, twenty-three-year-old Nawab Siraj ud-Daulah marched 50,000 soldiers on Calcutta to strip the unauthorized guns down.</p><p class=\"prose-p\">After a swift three-day siege, victorious Bengali guards crammed captured British prisoners overnight into the tiny, airless Black Hole dungeon guardroom, where dozens died of suffocation. Back in London, pampered Company pamphleteers sensationalized that grim guardroom tragedy—conveniently forgetting their own illegal cannons—to whip up public clamour for conquest.</p>",
           "image": "/images/siraj_ud_daulah.jpg",
           "image_alt": "Eighteenth-century Mughal miniature painting showing Nawab Siraj ud-Daulah of Bengal seated on gold-brocade cushions on a palace terrace beneath a starry night sky",
           "caption": "Nawab Siraj ud-Daulah of Bengal (r. 1756–1757, Mughal court miniature): In June 1756, the young ruler marched 50,000 soldiers to capture Calcutta after East India Company officials mounted unauthorized cannons on Fort William.",
@@ -727,13 +775,13 @@ export default {
           ],
           "theme_heading": "The Storm at Calcutta & The Black Hole Myth (1756)",
           "heading": "The Storm at Calcutta & The Black Hole Myth (1756)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> By 1756, the lush province of Bengal had become the Company’s most lucrative trading territory. When British merchants began mounting heavy cannons around Fort William without permission, twenty-three-year-old Nawab Siraj ud-Daulah marched 50,000 soldiers against Calcutta to halt unauthorized fortifications.</p><p class=\"prose-p\">Following the swift three-day siege of Fort William, captured British soldiers were locked overnight in the Black Hole dungeon guardroom, where dozens died of suffocation. British imperial accounts sensationalized the tragedy to whip up public fury for conquest.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> By 1756, the lush province of Bengal had become the Company’s most lucrative trading territory. When British merchants began mounting heavy cannons around Fort William without permission, twenty-three-year-old Nawab Siraj ud-Daulah marched 50,000 soldiers against Calcutta to halt unauthorized fortifications.</p><p class=\"prose-p\">Following the swift three-day siege of Fort William, captured British soldiers were locked overnight in the Black Hole dungeon guardroom, where dozens died of suffocation. British imperial accounts sensationalized the tragedy to whip up public fury for conquest.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> On the ramparts of Fort William in 1756, British clerks hoisted heavy cannons over the Hooghly River without bothering to ask Bengal’s sovereign ruler. Outraged by such armed trespassing inside his richest province, twenty-three-year-old Nawab Siraj ud-Daulah marched 50,000 soldiers on Calcutta to strip the unauthorized guns down.</p><p class=\"prose-p\">After a swift three-day siege, victorious Bengali guards crammed captured British prisoners overnight into the tiny, airless Black Hole dungeon guardroom, where dozens died of suffocation. Back in London, pampered Company pamphleteers sensationalized that grim guardroom tragedy—conveniently forgetting their own illegal cannons—to whip up public clamour for conquest.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> On the ramparts of Fort William in 1756, British clerks hoisted heavy cannons over the Hooghly River without bothering to ask Bengal’s sovereign ruler. Outraged by such armed trespassing inside his richest province, twenty-three-year-old Nawab Siraj ud-Daulah marched 50,000 soldiers on Calcutta to strip the unauthorized guns down.</p><p class=\"prose-p\">After a swift three-day siege, victorious Bengali guards crammed captured British prisoners overnight into the tiny, airless Black Hole dungeon guardroom, where dozens died of suffocation. Back in London, pampered Company pamphleteers sensationalized that grim guardroom tragedy—conveniently forgetting their own illegal cannons—to whip up public clamour for conquest.</p>"
         },
         {
           "act": 4,
           "title": "Treachery at Plassey & Mir Jafar's Betrayal (June 1757)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> In 1757, Lieutenant-Colonel Robert Clive arrived with troops to retake Calcutta. Realizing he was hopelessly outnumbered, Clive used secret gold bribes to corrupt Mir Jafar, commander of Bengal’s army, promising him the Nawab’s throne in return for betrayal.</p><p class=\"prose-p\">On 23 June at Plassey, a heavy monsoon downpour soaked Siraj’s exposed cannon gunpowder while Clive protected British powder under tarpaulins. Mir Jafar’s treason ensured his divisions stood motionless, allowing British artillery to shatter Siraj’s forces.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Beneath mango trees outside Plassey on 23 June 1757, outnumbered commander Robert Clive staked Bengal not on battlefield heroism, but on secret gold bribes and canvas sheets. Having retaken Calcutta, Clive quietly promised general Mir Jafar the Nawab’s throne if he betrayed Siraj ud-Daulah once the cannons roared.</p><p class=\"prose-p\">When a sudden midday monsoon downpour drenched the plain, British gunners hauled tarpaulins over their gunpowder to keep it dry while Siraj’s exposed powder turned to mud. True to his bribe, Mir Jafar and his divisions stood motionless as dry British artillery shattered loyal Bengali charges and won the Battle of Plassey.</p>",
           "source": {
             "id": "fbe_l1_src_d",
             "letter": "D",
@@ -790,8 +838,8 @@ export default {
           ],
           "theme_heading": "Treachery at Plassey & Mir Jafar's Betrayal (June 1757)",
           "heading": "Treachery at Plassey & Mir Jafar's Betrayal (June 1757)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> In 1757, Lieutenant-Colonel Robert Clive arrived with troops to retake Calcutta. Realizing he was hopelessly outnumbered, Clive used secret gold bribes to corrupt Mir Jafar, commander of Bengal’s army, promising him the Nawab’s throne in return for betrayal.</p><p class=\"prose-p\">On 23 June at Plassey, a heavy monsoon downpour soaked Siraj’s exposed cannon gunpowder while Clive protected British powder under tarpaulins. Mir Jafar’s treason ensured his divisions stood motionless, allowing British artillery to shatter Siraj’s forces.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> In 1757, Lieutenant-Colonel Robert Clive arrived with troops to retake Calcutta. Realizing he was hopelessly outnumbered, Clive used secret gold bribes to corrupt Mir Jafar, commander of Bengal’s army, promising him the Nawab’s throne in return for betrayal.</p><p class=\"prose-p\">On 23 June at Plassey, a heavy monsoon downpour soaked Siraj’s exposed cannon gunpowder while Clive protected British powder under tarpaulins. Mir Jafar’s treason ensured his divisions stood motionless, allowing British artillery to shatter Siraj’s forces.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Beneath mango trees outside Plassey on 23 June 1757, outnumbered commander Robert Clive staked Bengal not on battlefield heroism, but on secret gold bribes and canvas sheets. Having retaken Calcutta, Clive quietly promised general Mir Jafar the Nawab’s throne if he betrayed Siraj ud-Daulah once the cannons roared.</p><p class=\"prose-p\">When a sudden midday monsoon downpour drenched the plain, British gunners hauled tarpaulins over their gunpowder to keep it dry while Siraj’s exposed powder turned to mud. True to his bribe, Mir Jafar and his divisions stood motionless as dry British artillery shattered loyal Bengali charges and won the Battle of Plassey.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Beneath mango trees outside Plassey on 23 June 1757, outnumbered commander Robert Clive staked Bengal not on battlefield heroism, but on secret gold bribes and canvas sheets. Having retaken Calcutta, Clive quietly promised general Mir Jafar the Nawab’s throne if he betrayed Siraj ud-Daulah once the cannons roared.</p><p class=\"prose-p\">When a sudden midday monsoon downpour drenched the plain, British gunners hauled tarpaulins over their gunpowder to keep it dry while Siraj’s exposed powder turned to mud. True to his bribe, Mir Jafar and his divisions stood motionless as dry British artillery shattered loyal Bengali charges and won the Battle of Plassey.</p>",
           "image": "/images/first_british_empire/maps/fbe_map_l1_eic_mughal_india_bengal_1600_1765.svg",
           "image_alt": "KS3 Year 8 historical GIS atlas map of the undivided Mughal Indian Subcontinent and zoomed Bengal and Ganges Delta inset (1600–1765), showing Delhi, Agra, EIC coastal factories at Surat, Madras, Bombay, and Calcutta (Fort William), Robert Clive and Mir Jafar at the Battle of Plassey (1757), Murshidabad, Buxar (1764), and the 1765 Treaty of Allahabad Diwani",
           "caption": "Reference Map: East India Company (EIC) coastal factories across undivided Mughal India and the conquest of Bengal (1600–1765)—from Surat, Madras, and Bombay to Fort William (Calcutta), Robert Clive and Mir Jafar’s betrayal at the Battle of Plassey (1757), Buxar, and the 1765 Diwani Treaty of Allahabad.",
@@ -975,7 +1023,7 @@ export default {
         {
           "act": 5,
           "title": "The Treaty of Allahabad & Corporate Plunder (1765–1770)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Following further military triumphs at Buxar, Clive forced defeated Mughal Emperor Shah Alam II to sign the 1765 Treaty of Allahabad. This granted the Company the <em>Diwani</em>: the sovereign right of collecting land revenue and taxes across Bengal, Bihar, and Orissa.</p><p class=\"prose-p\">Corporate agents ruthlessly extracted millions from Indian peasants. When severe drought struck, unbending tax enforcement triggered the catastrophic 1770 Bengal famine, leading to the starvation of an estimated ten million people while Company profits soared.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Inside a crimson army tent after victory at Buxar, Robert Clive handed defeated Mughal Emperor Shah Alam II a pen to sign the 1765 Treaty of Allahabad. In minutes, a London trading firm acquired the <em>Diwani</em>—the sovereign legal right to collect land taxes across Bengal, Bihar, and Orissa.</p><p class=\"prose-p\">Instead of shipping English silver to buy Asian cloth, Company clerks now paid for Indian exports using taxes wrung straight from Bengali peasants. When scorching drought parched the fields, relentless corporate tax collectors still stripped villages bare, triggering the 1770 Bengal famine in which ten million people starved while shareholder dividends climbed.</p>",
           "source": {
             "id": "fbe_l1_src_e",
             "letter": "E",
@@ -1032,8 +1080,8 @@ export default {
           ],
           "theme_heading": "The Treaty of Allahabad & Corporate Plunder (1765–1770)",
           "heading": "The Treaty of Allahabad & Corporate Plunder (1765–1770)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Following further military triumphs at Buxar, Clive forced defeated Mughal Emperor Shah Alam II to sign the 1765 Treaty of Allahabad. This granted the Company the <em>Diwani</em>: the sovereign right of collecting land revenue and taxes across Bengal, Bihar, and Orissa.</p><p class=\"prose-p\">Corporate agents ruthlessly extracted millions from Indian peasants. When severe drought struck, unbending tax enforcement triggered the catastrophic 1770 Bengal famine, leading to the starvation of an estimated ten million people while Company profits soared.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Following further military triumphs at Buxar, Clive forced defeated Mughal Emperor Shah Alam II to sign the 1765 Treaty of Allahabad. This granted the Company the <em>Diwani</em>: the sovereign right of collecting land revenue and taxes across Bengal, Bihar, and Orissa.</p><p class=\"prose-p\">Corporate agents ruthlessly extracted millions from Indian peasants. When severe drought struck, unbending tax enforcement triggered the catastrophic 1770 Bengal famine, leading to the starvation of an estimated ten million people while Company profits soared.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Inside a crimson army tent after victory at Buxar, Robert Clive handed defeated Mughal Emperor Shah Alam II a pen to sign the 1765 Treaty of Allahabad. In minutes, a London trading firm acquired the <em>Diwani</em>—the sovereign legal right to collect land taxes across Bengal, Bihar, and Orissa.</p><p class=\"prose-p\">Instead of shipping English silver to buy Asian cloth, Company clerks now paid for Indian exports using taxes wrung straight from Bengali peasants. When scorching drought parched the fields, relentless corporate tax collectors still stripped villages bare, triggering the 1770 Bengal famine in which ten million people starved while shareholder dividends climbed.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> Inside a crimson army tent after victory at Buxar, Robert Clive handed defeated Mughal Emperor Shah Alam II a pen to sign the 1765 Treaty of Allahabad. In minutes, a London trading firm acquired the <em>Diwani</em>—the sovereign legal right to collect land taxes across Bengal, Bihar, and Orissa.</p><p class=\"prose-p\">Instead of shipping English silver to buy Asian cloth, Company clerks now paid for Indian exports using taxes wrung straight from Bengali peasants. When scorching drought parched the fields, relentless corporate tax collectors still stripped villages bare, triggering the 1770 Bengal famine in which ten million people starved while shareholder dividends climbed.</p>",
           "concept_widget": {
             "type": "profile_deck",
             "eyebrow": "Year 8 Imperial Turning Point",
@@ -1481,10 +1529,10 @@ export default {
             "To fund a permanent royal navy to conquer the Mughal capital immediately",
             "To build free public hospitals across coastal ports in India",
             "To purchase American tobacco plantations from Spanish rivals",
-            "To gain an exclusive monopoly and huge private profits from Asian spice and cotton trade"
+            "To win an exclusive monopoly and huge profits from Asian spice trade"
           ],
-          "answer": "To gain an exclusive monopoly and huge private profits from Asian spice and cotton trade",
-          "a": "To gain an exclusive monopoly and huge private profits from Asian spice and cotton trade",
+          "answer": "To win an exclusive monopoly and huge profits from Asian spice trade",
+          "a": "To win an exclusive monopoly and huge profits from Asian spice trade",
           "explanation": "Queen Elizabeth I's royal monopoly charter allowed London merchants to send armed galleons to Asia, returning with pepper and cotton for profits of over 300%."
         },
         {
@@ -1674,13 +1722,13 @@ export default {
           "question": "Why was Robert Clive able to defeat Nawab Siraj ud-Daulah's much larger army at the Battle of Plassey in 1757?",
           "q": "Why was Robert Clive able to defeat Nawab Siraj ud-Daulah's much larger army at the Battle of Plassey in 1757?",
           "options": [
-            "Mir Jafar's bribed divisions stood motionless while British gunpowder stayed dry under tarpaulins during a monsoon downpour",
+            "Bribed general Mir Jafar stood motionless while tarpaulins kept British gunpowder dry",
             "The Mughal Emperor marched from Delhi to fight alongside Clive's British soldiers",
             "Siraj ud-Daulah surrendered Fort William without firing a single cannon",
             "British warships sailed inland to bombard the Nawab's camp"
           ],
-          "answer": "Mir Jafar's bribed divisions stood motionless while British gunpowder stayed dry under tarpaulins during a monsoon downpour",
-          "a": "Mir Jafar's bribed divisions stood motionless while British gunpowder stayed dry under tarpaulins during a monsoon downpour",
+          "answer": "Bribed general Mir Jafar stood motionless while tarpaulins kept British gunpowder dry",
+          "a": "Bribed general Mir Jafar stood motionless while tarpaulins kept British gunpowder dry",
           "explanation": "Outnumbered, Clive secured victory at Plassey through Mir Jafar's betrayal and by protecting British gunpowder from the heavy monsoon rain that soaked Siraj's exposed powder."
         },
         {
@@ -2068,7 +2116,8 @@ export default {
           "question": "Why did Queen Elizabeth I grant London merchants a charter in 1600?",
           "heading": "Why did Queen Elizabeth I grant London merchants a charter in 1600?",
           "focus_clue": "Why did Queen Elizabeth I grant London merchants a charter in 1600?",
-          "prose_hash": "9d9aa72d9c"
+          "prose_hash": "481faa785b",
+          "para_ref": "[1.1]"
         },
         {
           "step": 2,
@@ -2101,7 +2150,8 @@ export default {
           "question": "How did the East India Company build armed coastal forts in India?",
           "heading": "How did the East India Company build armed coastal forts in India?",
           "focus_clue": "How did the East India Company build armed coastal forts in India?",
-          "prose_hash": "71fa5af260"
+          "prose_hash": "17e6ff6410",
+          "para_ref": "[1.2]"
         },
         {
           "step": 3,
@@ -2134,7 +2184,8 @@ export default {
           "question": "Why did Nawab Siraj ud-Daulah march 50,000 soldiers on Calcutta?",
           "heading": "Why did Nawab Siraj ud-Daulah march 50,000 soldiers on Calcutta?",
           "focus_clue": "Why did Nawab Siraj ud-Daulah march 50,000 soldiers on Calcutta?",
-          "prose_hash": "8c8fdc8c1d"
+          "prose_hash": "8c47260f6d",
+          "para_ref": "[1.3]"
         },
         {
           "step": 4,
@@ -2167,7 +2218,8 @@ export default {
           "question": "How did Robert Clive’s secret bribes win the Battle of Plassey?",
           "heading": "How did Robert Clive’s secret bribes win the Battle of Plassey?",
           "focus_clue": "How did Robert Clive’s secret bribes win the Battle of Plassey?",
-          "prose_hash": "43f3eb9450"
+          "prose_hash": "588a0e712f",
+          "para_ref": "[1.4]"
         },
         {
           "step": 5,
@@ -2200,7 +2252,8 @@ export default {
           "question": "How did the 1765 Diwani turn the Company into Bengal’s tax ruler?",
           "heading": "How did the 1765 Diwani turn the Company into Bengal’s tax ruler?",
           "focus_clue": "How did the 1765 Diwani turn the Company into Bengal’s tax ruler?",
-          "prose_hash": "a8edcae95d"
+          "prose_hash": "5e609f73e6",
+          "para_ref": "[1.5]"
         }
       ],
       "enquiry_question": "How did a London trading company seize military control of Mughal Bengal?",
@@ -2239,8 +2292,9 @@ export default {
             "stat": "218 Merchants Pool £68,000 for Spice Ships",
             "html": "In <strong>1600</strong>, Elizabeth I granted London merchants an Asian trade <strong>monopoly</strong>. Ships returned with pepper and cotton, earning 300% profits for the <strong>East India Company</strong>.",
             "spoken": "How did a private London trading company conquer Mughal Bengal? <short pause> In 1600 , Elizabeth I granted London merchants an Asian trade monopoly . Ships returned with pepper and cotton, earning 300% profits for the East India Company .",
-            "paired_prose_hash": "9d9aa72d9c",
-            "connective": "How did a private London trading company conquer Mughal Bengal?"
+            "paired_prose_hash": "481faa785b",
+            "connective": "How did a private London trading company conquer Mughal Bengal?",
+            "prose_hash": "481faa785b"
           },
           {
             "badge": "Stage 2",
@@ -2251,8 +2305,9 @@ export default {
             "stat": "Fortified Coastal Depots at Surat & Calcutta",
             "html": "Envoy <strong>Sir Thomas Roe</strong> won Mughal permission to build coastal depots called <strong>factories</strong>. Soon the Company hired Indian <strong>sepoy</strong> troops to guard Madras and Calcutta.",
             "spoken": "English merchants started as polite guests at the Mughal court. <short pause> Envoy Sir Thomas Roe won Mughal permission to build coastal depots called factories . Soon the Company hired Indian sepoy troops to guard Madras and Calcutta.",
-            "paired_prose_hash": "71fa5af260",
-            "connective": "English merchants started as polite guests at the Mughal court."
+            "paired_prose_hash": "17e6ff6410",
+            "connective": "English merchants started as polite guests at the Mughal court.",
+            "prose_hash": "17e6ff6410"
           },
           {
             "badge": "Stage 3",
@@ -2263,8 +2318,9 @@ export default {
             "stat": "Nawab Marches 50,000 Troops on Fort William",
             "html": "When merchants mounted illegal cannons at Calcutta, <strong>Nawab Siraj ud-Daulah</strong> seized <strong>Fort William</strong>. Captives died in the <strong>Black Hole</strong> cell, sparking British fury.",
             "spoken": "Unauthorized British cannons in Bengal soon triggered open conflict. <short pause> When merchants mounted illegal cannons at Calcutta, Nawab Siraj ud-Daulah seized Fort William . Captives died in the Black Hole cell, sparking British fury.",
-            "paired_prose_hash": "8c8fdc8c1d",
-            "connective": "Unauthorized British cannons in Bengal soon triggered open conflict."
+            "paired_prose_hash": "8c47260f6d",
+            "connective": "Unauthorized British cannons in Bengal soon triggered open conflict.",
+            "prose_hash": "8c47260f6d"
           },
           {
             "badge": "Stage 4",
@@ -2275,8 +2331,9 @@ export default {
             "stat": "Secret Gold Bribes Bought Mir Jafar’s Treason",
             "html": "Outnumbered officer <strong>Robert Clive</strong> secretly bribed Bengal’s general <strong>Mir Jafar</strong> with the throne. At <strong>Plassey</strong>, Mir Jafar held back his troops while dry British cannons won.",
             "spoken": "Robert Clive used secret gold bribes to win Plassey. <short pause> Outnumbered officer Robert Clive secretly bribed Bengal’s general Mir Jafar with the throne. At Plassey , Mir Jafar held back his troops while dry British cannons won.",
-            "paired_prose_hash": "43f3eb9450",
-            "connective": "Robert Clive used secret gold bribes to win Plassey."
+            "paired_prose_hash": "588a0e712f",
+            "connective": "Robert Clive used secret gold bribes to win Plassey.",
+            "prose_hash": "588a0e712f"
           },
           {
             "badge": "Stage 5",
@@ -2288,8 +2345,9 @@ export default {
             "stat": "10 Million Died in the 1770 Bengal Famine",
             "html": "In <strong>1765</strong>, Emperor Shah Alam II handed Clive the <strong>Diwani</strong> right to collect Bengal’s taxes. Ruthless Company tax collection worsened the deadly <strong>1770 Bengal famine</strong>.",
             "spoken": "Victory turned a London company into Bengal’s ruthless tax collector. <short pause> In 1765 , Emperor Shah Alam II handed Clive the Diwani right to collect Bengal’s taxes. Ruthless Company tax collection worsened the deadly 1770 Bengal famine .",
-            "paired_prose_hash": "a8edcae95d",
-            "connective": "Victory turned a London company into Bengal’s ruthless tax collector."
+            "paired_prose_hash": "5e609f73e6",
+            "connective": "Victory turned a London company into Bengal’s ruthless tax collector.",
+            "prose_hash": "5e609f73e6"
           },
           {
             "badge": "⚡ Outcome",
@@ -2376,11 +2434,11 @@ export default {
             "title": "The Mechanics of the Triangular Trade",
             "actor": "British Merchants & West African Rulers",
             "tag": "🚢 TRIANGULAR TRADE",
-            "trigger": "British merchants established a vast triangular trade: carrying manufactured guns and brass to Africa, kidnapped human captives to the Americas, and raw sugar to Britain.",
-            "connective": "Enriched British port cities like Bristol and Liverpool, embedding colonial slavery into the core foundation of British maritime wealth.",
+            "trigger": "Liverpool and Bristol hulls carried Birmingham guns, brass pans, iron bars, and textiles to West Africa to exchange for kidnapped human captives.",
+            "connective": "Survivors were sold onto brutal plantations across the Americas while ships sailed homeward with slave-grown sugar, rum, tobacco, and cotton for British banks.",
             "question": "How did triangular trade link British ships, West Africa, and plantations?",
             "para_ref": "[2.1]",
-            "prose_hash": "f2f87eb084"
+            "prose_hash": "0ddf08b0f2"
           },
           {
             "step": 2,
@@ -2388,11 +2446,11 @@ export default {
             "title": "The Royal African Company & The Asiento",
             "actor": "King Charles II & Duke of York",
             "tag": "📜 ROYAL MONOPOLY",
-            "trigger": "King Charles II granted a monopoly charter to the Royal African Company, whose ships branded captives with ‘RAC’, followed by Britain securing the Spanish Asiento contract.",
-            "connective": "Institutionalized human trafficking under royal protection, turning Britain into the world’s preeminent transatlantic slave-trading power.",
+            "trigger": "Chartered by King Charles II in 1672 under James, Duke of York, the Royal African Company branded captives RAC with hot irons inside West African barracoons.",
+            "connective": "Securing the 1713 Spanish Asiento contract gave British slavers the exclusive legal right to supply Spanish American colonies with enslaved African labourers.",
             "question": "How did the Royal African Company and 1713 Asiento expand slave trading?",
             "para_ref": "[2.2]",
-            "prose_hash": "5061c98f2b"
+            "prose_hash": "37b5033a19"
           },
           {
             "step": 3,
@@ -2400,11 +2458,11 @@ export default {
             "title": "The Horrors of the Middle Passage",
             "actor": "Slave Ship Captains & Enslaved Africans",
             "tag": "⛓️ THE MIDDLE PASSAGE",
-            "trigger": "Enslaved Africans were crammed below decks on suffocating wooden shelves, shackled in pairs with iron leg-irons while enduring lethal dysentery and extreme trauma.",
-            "connective": "Resulted in the deaths of over 1.5 million people during oceanic transit, treating human beings as mere perishable commercial cargo.",
+            "trigger": "Across the eight-week Middle Passage, hundreds of captives lay packed chained on wooden shelves below deck with less room than a wooden coffin.",
+            "connective": "Locked in iron shackles amid seasickness, dysentery, and fevers, roughly one in six captive Africans perished at sea before sighting land.",
             "question": "What deadly conditions did captive Africans endure below deck at sea?",
             "para_ref": "[2.3]",
-            "prose_hash": "520e4c959a"
+            "prose_hash": "47378e91c1"
           },
           {
             "step": 4,
@@ -2412,11 +2470,11 @@ export default {
             "title": "The Zong Massacre & Chattel Slavery",
             "actor": "Captain Luke Collingwood & London Courts",
             "tag": "⚖️ ZONG MASSACRE",
-            "trigger": "Running low on water, Captain Luke Collingwood ordered 133 sick enslaved people thrown alive into the sea so the ship’s owners could claim £30 per head in insurance.",
-            "connective": "Exposed the barbaric reality of chattel slavery when London judges treated the atrocity as an ordinary commercial property insurance dispute.",
+            "trigger": "Delayed by navigational errors and dwindling drinking water in November 1781, Zong Captain Luke Collingwood threw 133 sick enslaved captives overboard across three days.",
+            "connective": "Owners filed a fraudulent insurance claim treating human lives as lost cargo until Granville Sharp exposed the London courtroom dispute.",
             "question": "Why did Captain Collingwood throw 133 captives off the Zong in 1781?",
             "para_ref": "[2.4]",
-            "prose_hash": "68c8ad6025"
+            "prose_hash": "ca70abe02d"
           },
           {
             "step": 5,
@@ -2424,11 +2482,11 @@ export default {
             "title": "The Brookes Diagram & Abolitionism",
             "actor": "Olaudah Equiano & Thomas Clarkson",
             "tag": "🕊️ ABOLITION CAMPAIGN",
-            "trigger": "Abolitionists published the forensic cross-section diagram of the slave ship Brookes alongside Olaudah Equiano’s bestselling autobiography detailing the terrors of enslavement.",
-            "connective": "Galvanized British public opinion against the trade, forcing Parliament to pass the Abolition of the Slave Trade Act in 1807.",
+            "trigger": "Abolitionists paired the 1788 Brookes ship diagram, nationwide petitions, and sugar boycotts with freed Igbo writer Olaudah Equiano’s bestselling 1789 autobiography.",
+            "connective": "Twenty years of grassroots campaigning and Caribbean resistance compelled Parliament to pass the Abolition Act of 1807 outlawing slave trading on British ships.",
             "question": "How did the Brookes diagram and Olaudah Equiano help end slave trading?",
             "para_ref": "[2.5]",
-            "prose_hash": "00801deccd"
+            "prose_hash": "a496301680"
           }
         ]
       },
@@ -2439,9 +2497,9 @@ export default {
         "items": [
           {
             "stage": 1,
-            "question": "On what date did Queen Elizabeth I grant an exclusive royal monopoly charter to the East India Company?",
-            "answer": "On New Year’s Eve in 1600",
-            "explanation": "Queen Elizabeth I signed the East India Company’s founding royal charter on New Year’s Eve in 1600."
+            "question": "Why did 218 London merchants pool £68,000 under Queen Elizabeth I's 1600 royal charter?",
+            "answer": "To win an exclusive monopoly and huge profits from Asian spice trade",
+            "explanation": "Queen Elizabeth I's royal monopoly charter allowed London merchants to send armed galleons to Asia, returning with pepper and cotton for profits of over 300%."
           },
           {
             "stage": 2,
@@ -2575,7 +2633,7 @@ export default {
         {
           "act": 1,
           "title": "The Triangular Engine & Commercial Capital (1619–1672)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Britain’s transatlantic empire was anchored in triangular trade. British merchant ships sailed from Liverpool and Bristol laden with manufactured guns & brass pans, iron bars, and textiles, exchanging these manufactured goods with coastal African elites for human beings.</p><p class=\"prose-p\">Captains forced kidnapped African captives into ship holds, transporting survivors across the Atlantic into brutal plantation slavery. Ships then returned to Britain laden with raw plantation sugar, rum, tobacco, and cotton, enriching British merchants and banks.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Along the cobbled quaysides of Liverpool and Bristol, dockers rolled crates of Birmingham guns, brass pans, iron bars, and textiles into deep timber hulls bound for West Africa. This outward voyage drove the transatlantic triangular trade, exchanging British workshop manufactures with coastal African rulers and dealers for kidnapped human captives.</p><p class=\"prose-p\">Forced below deck, survivors of the ocean crossing were sold onto brutal colonial plantations across the Americas to harvest crops under the whip. Those same ships then sailed homeward packed with slave-grown sugar, rum, tobacco, and cotton, pouring blood-stained fortunes into respectable British banks, ports, and counting-houses.</p>",
           "image": "/images/first_british_empire/maps/fbe_map_l2_triangular_trade_middle_passage_1619_1807.svg",
           "image_alt": "KS3 Year 8 historical GIS atlas map of the Transatlantic Triangular Trade and the Middle Passage (1619–1807), showing British slave-trading ports (Liverpool, Bristol, London), West African forts and kingdoms (Elmina, Cape Coast Castle, Bight of Biafra), the 6-to-12-week Middle Passage (Brookes and 1781 Zong), Caribbean sugar islands (Jamaica and Barbados) and Thirteen Colonies (Virginia and Charleston), and return cargoes of sugar, tobacco, and cotton",
           "caption": "Reference Map: The Transatlantic Triangular Trade and the Middle Passage (1619–1807)—connecting British slave-trading ports (Liverpool, Bristol, London), West African forts (Elmina, Cape Coast Castle), Caribbean sugar plantations and the Thirteen Colonies, and return commercial cargoes of sugar, tobacco, and cotton.",
@@ -2635,8 +2693,8 @@ export default {
           ],
           "theme_heading": "The Triangular Engine & Commercial Capital (1619–1672)",
           "heading": "The Triangular Engine & Commercial Capital (1619–1672)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Britain’s transatlantic empire was anchored in triangular trade. British merchant ships sailed from Liverpool and Bristol laden with manufactured guns & brass pans, iron bars, and textiles, exchanging these manufactured goods with coastal African elites for human beings.</p><p class=\"prose-p\">Captains forced kidnapped African captives into ship holds, transporting survivors across the Atlantic into brutal plantation slavery. Ships then returned to Britain laden with raw plantation sugar, rum, tobacco, and cotton, enriching British merchants and banks.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Britain’s transatlantic empire was anchored in triangular trade. British merchant ships sailed from Liverpool and Bristol laden with manufactured guns & brass pans, iron bars, and textiles, exchanging these manufactured goods with coastal African elites for human beings.</p><p class=\"prose-p\">Captains forced kidnapped African captives into ship holds, transporting survivors across the Atlantic into brutal plantation slavery. Ships then returned to Britain laden with raw plantation sugar, rum, tobacco, and cotton, enriching British merchants and banks.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Along the cobbled quaysides of Liverpool and Bristol, dockers rolled crates of Birmingham guns, brass pans, iron bars, and textiles into deep timber hulls bound for West Africa. This outward voyage drove the transatlantic triangular trade, exchanging British workshop manufactures with coastal African rulers and dealers for kidnapped human captives.</p><p class=\"prose-p\">Forced below deck, survivors of the ocean crossing were sold onto brutal colonial plantations across the Americas to harvest crops under the whip. Those same ships then sailed homeward packed with slave-grown sugar, rum, tobacco, and cotton, pouring blood-stained fortunes into respectable British banks, ports, and counting-houses.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Along the cobbled quaysides of Liverpool and Bristol, dockers rolled crates of Birmingham guns, brass pans, iron bars, and textiles into deep timber hulls bound for West Africa. This outward voyage drove the transatlantic triangular trade, exchanging British workshop manufactures with coastal African rulers and dealers for kidnapped human captives.</p><p class=\"prose-p\">Forced below deck, survivors of the ocean crossing were sold onto brutal colonial plantations across the Americas to harvest crops under the whip. Those same ships then sailed homeward packed with slave-grown sugar, rum, tobacco, and cotton, pouring blood-stained fortunes into respectable British banks, ports, and counting-houses.</p>",
           "stage_hook_map": {
             "id": "fbe-l2-triangular-trade-middle-passage-map",
             "image": "/images/first_british_empire/maps/fbe_map_l2_triangular_trade_middle_passage_1619_1807.svg",
@@ -2813,7 +2871,7 @@ export default {
         {
           "act": 2,
           "title": "Capture, Barracoons & The Royal African Company (1672–1713)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> In 1672, King Charles II chartered the Royal African Company, headed by his brother James, Duke of York. The Crown granted the enterprise a legal monopoly over British slave trafficking, constructing heavily armed forts along the West African coast.</p><p class=\"prose-p\">Enslaved men, women, and children were branded hot iron RAC on their chests to signify corporate ownership. In 1713, Britain secured the Spanish Asiento contract, winning the exclusive right to supply Spanish American colonies with enslaved laborers.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> Inside dark stone barracoons along the West African coast after 1672, Company guards pressed glowing hot irons onto captives’ chests to sear the letters RAC into living flesh. Those initials stood for the Royal African Company, chartered by King Charles II and headed personally by his brother James, Duke of York.</p><p class=\"prose-p\">Protected by Crown warships and coastal forts, royal shareholders turned human trafficking into an official state monopoly. When Britain won the coveted Spanish Asiento contract by treaty in 1713, British slavers gained the exclusive legal right to supply Spanish American colonies with tens of thousands of enslaved African labourers.</p>",
           "image": "/images/ks3_fbe/fbe_l2_b1_elmina_castle_gold_coast.jpg",
           "image_alt": "Whitewashed stone bastions, high curtain walls, and coastal dungeon complex of Elmina Castle overlooking a sandy beach and Atlantic surf on the Gold Coast in modern Ghana",
           "caption": "Elmina Castle on the Gold Coast (modern Ghana): One of dozens of heavily armed European coastal slave forts where kidnapped African men, women, and children—like those trafficked by Charles II’s Royal African Company—were locked in suffocating dungeons before embarkation.",
@@ -2875,13 +2933,13 @@ export default {
           ],
           "theme_heading": "Capture, Barracoons & The Royal African Company (1672–1713)",
           "heading": "Capture, Barracoons & The Royal African Company (1672–1713)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> In 1672, King Charles II chartered the Royal African Company, headed by his brother James, Duke of York. The Crown granted the enterprise a legal monopoly over British slave trafficking, constructing heavily armed forts along the West African coast.</p><p class=\"prose-p\">Enslaved men, women, and children were branded hot iron RAC on their chests to signify corporate ownership. In 1713, Britain secured the Spanish Asiento contract, winning the exclusive right to supply Spanish American colonies with enslaved laborers.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> In 1672, King Charles II chartered the Royal African Company, headed by his brother James, Duke of York. The Crown granted the enterprise a legal monopoly over British slave trafficking, constructing heavily armed forts along the West African coast.</p><p class=\"prose-p\">Enslaved men, women, and children were branded hot iron RAC on their chests to signify corporate ownership. In 1713, Britain secured the Spanish Asiento contract, winning the exclusive right to supply Spanish American colonies with enslaved laborers.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> Inside dark stone barracoons along the West African coast after 1672, Company guards pressed glowing hot irons onto captives’ chests to sear the letters RAC into living flesh. Those initials stood for the Royal African Company, chartered by King Charles II and headed personally by his brother James, Duke of York.</p><p class=\"prose-p\">Protected by Crown warships and coastal forts, royal shareholders turned human trafficking into an official state monopoly. When Britain won the coveted Spanish Asiento contract by treaty in 1713, British slavers gained the exclusive legal right to supply Spanish American colonies with tens of thousands of enslaved African labourers.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> Inside dark stone barracoons along the West African coast after 1672, Company guards pressed glowing hot irons onto captives’ chests to sear the letters RAC into living flesh. Those initials stood for the Royal African Company, chartered by King Charles II and headed personally by his brother James, Duke of York.</p><p class=\"prose-p\">Protected by Crown warships and coastal forts, royal shareholders turned human trafficking into an official state monopoly. When Britain won the coveted Spanish Asiento contract by treaty in 1713, British slavers gained the exclusive legal right to supply Spanish American colonies with tens of thousands of enslaved African labourers.</p>"
         },
         {
           "act": 3,
           "title": "The Agony of the Middle Passage & Slave Ship Brookes (1713–1781)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> The Middle Passage was an eight-week ocean crossing of calculated terror. Hundreds of African men, women, and children were packed chained on wooden shelves below deck, given less breathing room than a corpse in a coffin.</p><p class=\"prose-p\">Locked tightly in iron shackles & collars, captives suffered agonizing seasickness and deadly dysentery & fevers in pitch-black, suffocating holds. Approximately one in six captive Africans died during the horrific crossing, their bodies callously tossed into the Atlantic Ocean.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Deep inside the pitch-black hold of an Atlantic slave ship, each person was allotted barely sixteen inches of width—less room than a body inside a wooden coffin. Across this terrifying eight-week ocean crossing known as the Middle Passage, hundreds of men, women, and children lay packed chained on wooden shelves below deck.</p><p class=\"prose-p\">Locked in heavy iron shackles amid stifling heat and filth, captives endured violent seasickness alongside lethal outbreaks of dysentery and fevers. Roughly one in six captive Africans perished at sea before ever sighting land, their bodies unceremoniously cast into the Atlantic wake while captains tallied cargo ledgers above.</p>",
           "source": {
             "id": "fbe_l2_src_c",
             "letter": "C",
@@ -2938,8 +2996,8 @@ export default {
           ],
           "theme_heading": "The Agony of the Middle Passage & Slave Ship Brookes (1713–1781)",
           "heading": "The Agony of the Middle Passage & Slave Ship Brookes (1713–1781)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> The Middle Passage was an eight-week ocean crossing of calculated terror. Hundreds of African men, women, and children were packed chained on wooden shelves below deck, given less breathing room than a corpse in a coffin.</p><p class=\"prose-p\">Locked tightly in iron shackles & collars, captives suffered agonizing seasickness and deadly dysentery & fevers in pitch-black, suffocating holds. Approximately one in six captive Africans died during the horrific crossing, their bodies callously tossed into the Atlantic Ocean.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> The Middle Passage was an eight-week ocean crossing of calculated terror. Hundreds of African men, women, and children were packed chained on wooden shelves below deck, given less breathing room than a corpse in a coffin.</p><p class=\"prose-p\">Locked tightly in iron shackles & collars, captives suffered agonizing seasickness and deadly dysentery & fevers in pitch-black, suffocating holds. Approximately one in six captive Africans died during the horrific crossing, their bodies callously tossed into the Atlantic Ocean.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Deep inside the pitch-black hold of an Atlantic slave ship, each person was allotted barely sixteen inches of width—less room than a body inside a wooden coffin. Across this terrifying eight-week ocean crossing known as the Middle Passage, hundreds of men, women, and children lay packed chained on wooden shelves below deck.</p><p class=\"prose-p\">Locked in heavy iron shackles amid stifling heat and filth, captives endured violent seasickness alongside lethal outbreaks of dysentery and fevers. Roughly one in six captive Africans perished at sea before ever sighting land, their bodies unceremoniously cast into the Atlantic wake while captains tallied cargo ledgers above.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Deep inside the pitch-black hold of an Atlantic slave ship, each person was allotted barely sixteen inches of width—less room than a body inside a wooden coffin. Across this terrifying eight-week ocean crossing known as the Middle Passage, hundreds of men, women, and children lay packed chained on wooden shelves below deck.</p><p class=\"prose-p\">Locked in heavy iron shackles amid stifling heat and filth, captives endured violent seasickness alongside lethal outbreaks of dysentery and fevers. Roughly one in six captive Africans perished at sea before ever sighting land, their bodies unceremoniously cast into the Atlantic wake while captains tallied cargo ledgers above.</p>",
           "image": "/images/ks3_fbe/fbe_l2_b2_marie_seraphique_slave_deck_1770.jpg",
           "image_alt": "Contemporary 1770 cutaway watercolour plan of the lower slave deck of the ship La Marie-Séraphique showing over three hundred captive African men, women, and children packed side-by-side in cramped holds",
           "caption": "Contemporary cutaway plan of the slave deck aboard La Marie-Séraphique (painted by ship’s officer René Lhermitte, 1770, Musée d’Histoire de Nantes): Eyewitness evidence of how hundreds of African captives were chained on cramped wooden platforms during the Middle Passage."
@@ -2947,7 +3005,7 @@ export default {
         {
           "act": 4,
           "title": "The Zong Massacre & Chattel Slavery (1781)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> In November 1781, the cruelty of chattel slavery culminated in the Zong massacre. Running dangerously low on fresh drinking water due to navigational errors, Captain Luke Collingwood ordered sick enslaved captives murdered to preserve financial investments.</p><p class=\"prose-p\">Over three days, Collingwood had 133 thrown overboard to drown in the Caribbean sea. When the ship owners filed a fraudulent insurance claim treating human lives as lost cargo, abolitionist Granville Sharp exposed the atrocity to the British public.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> In November 1781, a Liverpool slave ship named the <em>Zong</em> drifted through Caribbean waters with dwindling drinking water after careless navigational errors delayed her voyage. Because marine insurers paid nothing for captives who died naturally on board, Captain Luke Collingwood made a chilling financial calculation rooted in chattel slavery.</p><p class=\"prose-p\">Across three days, crewmen dragged 133 sick enslaved men, women, and children onto the deck and threw them overboard to drown so the owners could file a fraudulent insurance claim treating human lives as lost cargo. Outraged campaigner Granville Sharp exposed the London courtroom dispute, laying bare slavery’s monstrous legal logic.</p>",
           "source": {
             "id": "fbe_l2_src_d",
             "letter": "D",
@@ -3006,8 +3064,8 @@ export default {
           ],
           "theme_heading": "The Zong Massacre & Chattel Slavery (1781)",
           "heading": "The Zong Massacre & Chattel Slavery (1781)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> In November 1781, the cruelty of chattel slavery culminated in the Zong massacre. Running dangerously low on fresh drinking water due to navigational errors, Captain Luke Collingwood ordered sick enslaved captives murdered to preserve financial investments.</p><p class=\"prose-p\">Over three days, Collingwood had 133 thrown overboard to drown in the Caribbean sea. When the ship owners filed a fraudulent insurance claim treating human lives as lost cargo, abolitionist Granville Sharp exposed the atrocity to the British public.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> In November 1781, the cruelty of chattel slavery culminated in the Zong massacre. Running dangerously low on fresh drinking water due to navigational errors, Captain Luke Collingwood ordered sick enslaved captives murdered to preserve financial investments.</p><p class=\"prose-p\">Over three days, Collingwood had 133 thrown overboard to drown in the Caribbean sea. When the ship owners filed a fraudulent insurance claim treating human lives as lost cargo, abolitionist Granville Sharp exposed the atrocity to the British public.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> In November 1781, a Liverpool slave ship named the <em>Zong</em> drifted through Caribbean waters with dwindling drinking water after careless navigational errors delayed her voyage. Because marine insurers paid nothing for captives who died naturally on board, Captain Luke Collingwood made a chilling financial calculation rooted in chattel slavery.</p><p class=\"prose-p\">Across three days, crewmen dragged 133 sick enslaved men, women, and children onto the deck and threw them overboard to drown so the owners could file a fraudulent insurance claim treating human lives as lost cargo. Outraged campaigner Granville Sharp exposed the London courtroom dispute, laying bare slavery’s monstrous legal logic.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> In November 1781, a Liverpool slave ship named the <em>Zong</em> drifted through Caribbean waters with dwindling drinking water after careless navigational errors delayed her voyage. Because marine insurers paid nothing for captives who died naturally on board, Captain Luke Collingwood made a chilling financial calculation rooted in chattel slavery.</p><p class=\"prose-p\">Across three days, crewmen dragged 133 sick enslaved men, women, and children onto the deck and threw them overboard to drown so the owners could file a fraudulent insurance claim treating human lives as lost cargo. Outraged campaigner Granville Sharp exposed the London courtroom dispute, laying bare slavery’s monstrous legal logic.</p>",
           "concept_widget": {
             "type": "profile_deck",
             "eyebrow": "Year 8 Law, Profit & Dehumanisation",
@@ -3113,7 +3171,7 @@ export default {
         {
           "act": 5,
           "title": "Olaudah Equiano & The Awakening Conscience (1788–1807)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> During the late eighteenth century, British abolitionists launched a powerful moral campaign to awaken the public conscience. Activists printed thousands of copies of the famous Brookes ship diagram, visually exposing how human bodies were stowed like cargo in dark, airless holds.</p><p class=\"prose-p\">Freed African author Olaudah Equiano published Equiano’s bestselling book autobiography, recounting his enslavement and stirring national outrage. This relentless public pressure forced Parliament to pass the landmark Abolition Act of 1807, outlawing British slave trading.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Pinned onto tavern walls and parlour tables in 1788, the stark black-and-white Brookes ship diagram forced British tea-drinkers to confront 454 tiny human silhouettes stowed like timber below deck. Determined abolitionists paired these forensic prints with nationwide petitions and sugar boycotts that reached hundreds of thousands of ordinary households.</p><p class=\"prose-p\">Most decisive of all was freed Igbo writer Olaudah Equiano, whose bestselling 1789 autobiography recounted kidnapping and shipboard terror in unanswerable first-hand prose. After twenty years of grassroots campaigning and Caribbean resistance, public pressure compelled Parliament to pass the landmark Abolition Act of 1807, outlawing slave trading on British ships.</p>",
           "source": {
             "id": "fbe_l2_src_e",
             "letter": "E",
@@ -3172,8 +3230,8 @@ export default {
           ],
           "theme_heading": "Olaudah Equiano & The Awakening Conscience (1788–1807)",
           "heading": "Olaudah Equiano & The Awakening Conscience (1788–1807)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> During the late eighteenth century, British abolitionists launched a powerful moral campaign to awaken the public conscience. Activists printed thousands of copies of the famous Brookes ship diagram, visually exposing how human bodies were stowed like cargo in dark, airless holds.</p><p class=\"prose-p\">Freed African author Olaudah Equiano published Equiano’s bestselling book autobiography, recounting his enslavement and stirring national outrage. This relentless public pressure forced Parliament to pass the landmark Abolition Act of 1807, outlawing British slave trading.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> During the late eighteenth century, British abolitionists launched a powerful moral campaign to awaken the public conscience. Activists printed thousands of copies of the famous Brookes ship diagram, visually exposing how human bodies were stowed like cargo in dark, airless holds.</p><p class=\"prose-p\">Freed African author Olaudah Equiano published Equiano’s bestselling book autobiography, recounting his enslavement and stirring national outrage. This relentless public pressure forced Parliament to pass the landmark Abolition Act of 1807, outlawing British slave trading.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Pinned onto tavern walls and parlour tables in 1788, the stark black-and-white Brookes ship diagram forced British tea-drinkers to confront 454 tiny human silhouettes stowed like timber below deck. Determined abolitionists paired these forensic prints with nationwide petitions and sugar boycotts that reached hundreds of thousands of ordinary households.</p><p class=\"prose-p\">Most decisive of all was freed Igbo writer Olaudah Equiano, whose bestselling 1789 autobiography recounted kidnapping and shipboard terror in unanswerable first-hand prose. After twenty years of grassroots campaigning and Caribbean resistance, public pressure compelled Parliament to pass the landmark Abolition Act of 1807, outlawing slave trading on British ships.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Pinned onto tavern walls and parlour tables in 1788, the stark black-and-white Brookes ship diagram forced British tea-drinkers to confront 454 tiny human silhouettes stowed like timber below deck. Determined abolitionists paired these forensic prints with nationwide petitions and sugar boycotts that reached hundreds of thousands of ordinary households.</p><p class=\"prose-p\">Most decisive of all was freed Igbo writer Olaudah Equiano, whose bestselling 1789 autobiography recounted kidnapping and shipboard terror in unanswerable first-hand prose. After twenty years of grassroots campaigning and Caribbean resistance, public pressure compelled Parliament to pass the landmark Abolition Act of 1807, outlawing slave trading on British ships.</p>",
           "image": "/images/ks3_fbe/fbe_l2_b4_thomas_clarkson_abolition_breda.jpg",
           "image_alt": "1788 oil portrait by Carl Frederik von Breda showing abolitionist Thomas Clarkson seated in dark coat and powdered hair writing An Essay on the Impolicy of the African Slave Trade with a quill pen",
           "caption": "Abolitionist campaigner Thomas Clarkson seated beside his open manuscript An Essay on the Impolicy of the African Slave Trade (painted by Carl Frederik von Breda, 1788, National Portrait Gallery): Alongside Olaudah Equiano’s bestselling 1789 autobiography and the Brookes ship diagram, Clarkson’s nationwide tours helped force Parliament to pass the Abolition Act of 1807."
@@ -4133,7 +4191,8 @@ export default {
           "question": "How did triangular trade link British ships, West Africa, and plantations?",
           "heading": "How did triangular trade link British ships, West Africa, and plantations?",
           "focus_clue": "How did triangular trade link British ships, West Africa, and plantations?",
-          "prose_hash": "f2f87eb084"
+          "prose_hash": "0ddf08b0f2",
+          "para_ref": "[2.1]"
         },
         {
           "step": 2,
@@ -4166,7 +4225,8 @@ export default {
           "question": "How did the Royal African Company and 1713 Asiento expand slave trading?",
           "heading": "How did the Royal African Company and 1713 Asiento expand slave trading?",
           "focus_clue": "How did the Royal African Company and 1713 Asiento expand slave trading?",
-          "prose_hash": "5061c98f2b"
+          "prose_hash": "37b5033a19",
+          "para_ref": "[2.2]"
         },
         {
           "step": 3,
@@ -4199,7 +4259,8 @@ export default {
           "question": "What deadly conditions did captive Africans endure below deck at sea?",
           "heading": "What deadly conditions did captive Africans endure below deck at sea?",
           "focus_clue": "What deadly conditions did captive Africans endure below deck at sea?",
-          "prose_hash": "520e4c959a"
+          "prose_hash": "47378e91c1",
+          "para_ref": "[2.3]"
         },
         {
           "step": 4,
@@ -4232,7 +4293,8 @@ export default {
           "question": "Why did Captain Collingwood throw 133 captives off the Zong in 1781?",
           "heading": "Why did Captain Collingwood throw 133 captives off the Zong in 1781?",
           "focus_clue": "Why did Captain Collingwood throw 133 captives off the Zong in 1781?",
-          "prose_hash": "68c8ad6025"
+          "prose_hash": "ca70abe02d",
+          "para_ref": "[2.4]"
         },
         {
           "step": 5,
@@ -4265,7 +4327,8 @@ export default {
           "question": "How did the Brookes diagram and Olaudah Equiano help end slave trading?",
           "heading": "How did the Brookes diagram and Olaudah Equiano help end slave trading?",
           "focus_clue": "How did the Brookes diagram and Olaudah Equiano help end slave trading?",
-          "prose_hash": "00801deccd"
+          "prose_hash": "a496301680",
+          "para_ref": "[2.5]"
         }
       ],
       "enquiry_question": "How did the transatlantic slave trade operate, and how was it challenged?",
@@ -4304,8 +4367,9 @@ export default {
             "stat": "Liverpool & Bristol Ships Linked 3 Continents",
             "html": "British ships swapped <strong>guns and cloth</strong> in West Africa for captives, shipped them to plantations, and brought <strong>sugar and cotton</strong> home to enrich <strong>British banks</strong>.",
             "spoken": "How did the Triangular Trade and Middle Passage fuel Britain’s empire? <short pause> British ships swapped guns and cloth in West Africa for captives, shipped them to plantations, and brought sugar and cotton home to enrich British banks .",
-            "paired_prose_hash": "f2f87eb084",
-            "connective": "How did the Triangular Trade and Middle Passage fuel Britain’s empire?"
+            "paired_prose_hash": "0ddf08b0f2",
+            "connective": "How did the Triangular Trade and Middle Passage fuel Britain’s empire?",
+            "prose_hash": "0ddf08b0f2"
           },
           {
             "badge": "Stage 2",
@@ -4317,8 +4381,9 @@ export default {
             "stat": "RAC Branded on Chests & 1713 Spanish Asiento",
             "html": "King Charles II chartered the <strong>Royal African Company</strong> in 1672. Captives held in coastal forts were branded <strong>RAC</strong>, and Britain’s <strong>1713 Asiento</strong> expanded slave trading.",
             "spoken": "Britain’s royal family directly backed and profited from human trafficking. <short pause> King Charles II chartered the Royal African Company in 1672. Captives held in coastal forts were branded RAC , and Britain’s 1713 Asiento expanded slave trading.",
-            "paired_prose_hash": "5061c98f2b",
-            "connective": "Britain’s royal family directly backed and profited from human trafficking."
+            "paired_prose_hash": "37b5033a19",
+            "connective": "Britain’s royal family directly backed and profited from human trafficking.",
+            "prose_hash": "37b5033a19"
           },
           {
             "badge": "Stage 3",
@@ -4329,8 +4394,9 @@ export default {
             "stat": "About 1 in 6 Captives Died at Sea",
             "html": "On ships like the <strong>Brookes</strong>, captives lay chained on wooden shelves during the eight-week <strong>Middle Passage</strong>. Suffocating heat and <strong>dysentery</strong> killed one in six.",
             "spoken": "Next came an eight-week ocean crossing of unimaginable cruelty. <short pause> On ships like the Brookes , captives lay chained on wooden shelves during the eight-week Middle Passage . Suffocating heat and dysentery killed one in six.",
-            "paired_prose_hash": "520e4c959a",
-            "connective": "Next came an eight-week ocean crossing of unimaginable cruelty."
+            "paired_prose_hash": "47378e91c1",
+            "connective": "Next came an eight-week ocean crossing of unimaginable cruelty.",
+            "prose_hash": "47378e91c1"
           },
           {
             "badge": "Stage 4",
@@ -4341,8 +4407,9 @@ export default {
             "stat": "133 Sick Captives Thrown Overboard for Cash",
             "html": "Under <strong>chattel slavery</strong>, law treated humans as cargo. Low on water aboard the <strong>Zong</strong> in 1781, Captain Collingwood drowned <strong>133 sick captives</strong> to claim insurance.",
             "spoken": "Cruel slave laws treated human lives as insured ship cargo. <short pause> Under chattel slavery , law treated humans as cargo. Low on water aboard the Zong in 1781, Captain Collingwood drowned 133 sick captives to claim insurance.",
-            "paired_prose_hash": "68c8ad6025",
-            "connective": "Cruel slave laws treated human lives as insured ship cargo."
+            "paired_prose_hash": "ca70abe02d",
+            "connective": "Cruel slave laws treated human lives as insured ship cargo.",
+            "prose_hash": "ca70abe02d"
           },
           {
             "badge": "Stage 5",
@@ -4353,8 +4420,9 @@ export default {
             "stat": "1807 Act Outlawed British Slave Ships",
             "html": "Activists shared the <strong>Brookes diagram</strong>, while freed author <strong>Olaudah Equiano’s</strong> book stirred outrage. Public pressure forced Parliament to pass the <strong>1807 Abolition Act</strong>.",
             "spoken": "Freed Africans and campaigners fought back to awaken Britain’s conscience. <short pause> Activists shared the Brookes diagram , while freed author Olaudah Equiano’s book stirred outrage. Public pressure forced Parliament to pass the 1807 Abolition Act .",
-            "paired_prose_hash": "00801deccd",
-            "connective": "Freed Africans and campaigners fought back to awaken Britain’s conscience."
+            "paired_prose_hash": "a496301680",
+            "connective": "Freed Africans and campaigners fought back to awaken Britain’s conscience.",
+            "prose_hash": "a496301680"
           },
           {
             "badge": "⚡ Outcome",
@@ -4441,11 +4509,11 @@ export default {
             "title": "Cromwell’s Conquest & The Birth of Maroons",
             "actor": "Oliver Cromwell & Escaped Africans",
             "tag": "🌴 MAROON ORIGINS",
-            "trigger": "Oliver Cromwell launched the \"Western Design\" to conquer Jamaica from Spain, during which enslaved Africans escaped into the rugged, forested Blue Mountains.",
-            "connective": "Established independent, fortified Maroon settlements that resisted British colonial re-enslavement for over a century.",
+            "trigger": "When Oliver Cromwell’s warships captured Jamaica from the Spanish Empire during his 1655 Western Design campaign, enslaved Africans broke free into steep interior rainforests.",
+            "connective": "Self-liberated Maroons carved autonomous towns and hidden fortresses inside the Blue Mountains, growing communal crops and drilling fighters against British expeditions.",
             "question": "How did England’s 1655 seizure of Jamaica create free Maroon towns?",
             "para_ref": "[3.1]",
-            "prose_hash": "9ed2ab8f13"
+            "prose_hash": "2c1b42528c"
           },
           {
             "step": 2,
@@ -4453,11 +4521,11 @@ export default {
             "title": "Sugar Cane Monoculture & The Gang System",
             "actor": "Planters, Overseers & Enslaved Labourers",
             "tag": "⚠️ SUGAR PLANTATION",
-            "trigger": "Planters cleared Jamaica for intensive sugar monoculture, dividing enslaved labourers into rigid gangs driven by the cowhide whip and dangerous boiling houses.",
-            "connective": "Created an agro-industrial regime so lethal that planters found it cheaper to replace dying workers with fresh African imports than sustain them.",
+            "trigger": "Regimented field gangs hacked tall sugar stalks from dawn until dusk under cowhide whips while scorching mill workers fed heavy iron crushing rollers.",
+            "connective": "Eighteen-hour harvest shifts and brutal overwork drove death rates skyward as wealthy absentee planters coldly imported fresh captives every year.",
             "question": "Why did brutal sugar estate work cause such high death rates in Jamaica?",
             "para_ref": "[3.2]",
-            "prose_hash": "de9130a719"
+            "prose_hash": "af67339eeb"
           },
           {
             "step": 3,
@@ -4465,11 +4533,11 @@ export default {
             "title": "Everyday Resistance & Cultural Preservation",
             "actor": "Enslaved Men and Women",
             "tag": "✊ EVERYDAY RESISTANCE",
-            "trigger": "Enslaved people fought back daily by breaking hoe handles, sabotaging machinery, feigning sickness, and preserving African spiritual traditions like Obeah and Anansi stories.",
-            "connective": "Maintained cultural identity and human dignity in defiance of colonial legal codes that classified them as mere chattel.",
+            "trigger": "Field hands disrupted sugar output through covert sabotage—breaking tool handles, cracking copper cauldrons inside boiling houses, working slowly, and feigning sudden sickness.",
+            "connective": "Inside wooden quarters at night, families preserved West African spiritual rituals, songs, herbal medicine, and stories of Anansi the spider outsmarting powerful predators.",
             "question": "How did enslaved workers resist plantation slavery in daily life?",
             "para_ref": "[3.3]",
-            "prose_hash": "e590edcbdf"
+            "prose_hash": "48612013f8"
           },
           {
             "step": 4,
@@ -4477,11 +4545,11 @@ export default {
             "title": "Queen Nanny & The First Maroon War",
             "actor": "Queen Nanny & Windward Maroons",
             "tag": "📯 GUERRILLA WARFARE",
-            "trigger": "Queen Nanny led the Windward Maroons, utilizing living branch camouflage, mountain ambush tactics, and the curved abeng horn to coordinate surprise attacks.",
-            "connective": "Humiliated British regular forces in the Blue Mountains, rendering the colonial militia incapable of conquering the interior.",
+            "trigger": "Commanding eastern Jamaica’s Windward Maroons, Asante leader Queen Nanny drilled warriors in living branch camouflage and used coded calls on the abeng horn.",
+            "connective": "Disciplined guerrilla ambush tactics along narrow Blue Mountain jungle paths repeatedly surrounded and routed heavily armed British regiments.",
             "question": "How did Queen Nanny’s forest fighters defeat British regiments?",
             "para_ref": "[3.4]",
-            "prose_hash": "088ec2fa78"
+            "prose_hash": "43d63fe0bd"
           },
           {
             "step": 5,
@@ -4489,11 +4557,11 @@ export default {
             "title": "The 1739 Maroon Peace Treaty",
             "actor": "Governor Edward Trelawny & Maroon Leaders",
             "tag": "📜 1739 PEACE TREATY",
-            "trigger": "Exhausted by warfare, the British governor sent a white flag to negotiate the 1739 Treaty, granting the Maroons 1,500 acres of sovereign land.",
-            "connective": "Recognized Maroon independence as free sovereign subjects, but forced them into a tragic compromise: agreeing to capture and return future runaway slaves.",
+            "trigger": "Drained by failed jungle marches and fevers, Governor Edward Trelawny sent officers under a white truce flag in 1739 to recognize Maroon freedom and 1,500 sovereign acres.",
+            "connective": "Secured permanent survival at a painful compromise—requiring Maroon fighters to return enslaved fugitives who escaped plantations—while proving resistance could humble imperial power.",
             "question": "Why was the 1739 Maroon peace treaty both a victory and a compromise?",
             "para_ref": "[3.5]",
-            "prose_hash": "8f529b55ab"
+            "prose_hash": "308252d810"
           }
         ]
       },
@@ -4640,7 +4708,7 @@ export default {
         {
           "act": 1,
           "title": "Cromwell’s Western Design & Seizure of Jamaica (1655)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> In 1655, Oliver Cromwell dispatched an English expeditionary fleet on his ambitious Western Design invasion, seizing the Caribbean island of Jamaica from the Spanish Empire. Amid the chaos of battle, enslaved African workers seized the opportunity to break their chains by escaping to rainforests in the mountainous interior.</p><p class=\"prose-p\">Known as the Maroons, these self-liberated communities constructed impenetrable Blue Mountain fortresses. There they established autonomous settlements, cultivating communal mountain crops and organizing disciplined military units to resist British colonial recapture.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> When Oliver Cromwell’s warships bombarded Spanish Jamaica in May 1655 during his ambitious Western Design campaign, fleeing Spanish colonists left shattered estates behind in the smoke. Seizing that wartime upheaval as English invaders captured the island from the Spanish Empire, enslaved Africans broke free and climbed into steep interior rainforests.</p><p class=\"prose-p\">Known as the Maroons, these self-liberated pioneers carved autonomous towns and hidden fortresses high inside the mist-shrouded Blue Mountains. Clearing hidden ravines for communal food crops while drilling disciplined fighters, free Maroon communities defended their hard-won mountain liberty against wave after wave of British colonial expeditions.</p>",
           "image": "/images/ks3_fbe/fbe_l3_b0_port_royal_jamaica_conquest_17c.jpg",
           "image_alt": "Seventeenth-century English maritime journal chart by sailor Edward Barlow showing English warships flying the Union Jack and Red Ensign entering Port Royal harbour beneath Jamaica’s steep coastal mountain ranges",
           "caption": "Seventeenth-century English sailor Edward Barlow’s manuscript chart of Port Royal harbour and Jamaica’s rugged mountain interior (Royal Museums Greenwich): Following Oliver Cromwell’s 1655 Western Design seizure of Jamaica from Spain, self-liberated Africans escaped inland to found free Maroon strongholds in the mountains.",
@@ -4700,13 +4768,13 @@ export default {
           ],
           "theme_heading": "Cromwell’s Western Design & Seizure of Jamaica (1655)",
           "heading": "Cromwell’s Western Design & Seizure of Jamaica (1655)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> In 1655, Oliver Cromwell dispatched an English expeditionary fleet on his ambitious Western Design invasion, seizing the Caribbean island of Jamaica from the Spanish Empire. Amid the chaos of battle, enslaved African workers seized the opportunity to break their chains by escaping to rainforests in the mountainous interior.</p><p class=\"prose-p\">Known as the Maroons, these self-liberated communities constructed impenetrable Blue Mountain fortresses. There they established autonomous settlements, cultivating communal mountain crops and organizing disciplined military units to resist British colonial recapture.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> In 1655, Oliver Cromwell dispatched an English expeditionary fleet on his ambitious Western Design invasion, seizing the Caribbean island of Jamaica from the Spanish Empire. Amid the chaos of battle, enslaved African workers seized the opportunity to break their chains by escaping to rainforests in the mountainous interior.</p><p class=\"prose-p\">Known as the Maroons, these self-liberated communities constructed impenetrable Blue Mountain fortresses. There they established autonomous settlements, cultivating communal mountain crops and organizing disciplined military units to resist British colonial recapture.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> When Oliver Cromwell’s warships bombarded Spanish Jamaica in May 1655 during his ambitious Western Design campaign, fleeing Spanish colonists left shattered estates behind in the smoke. Seizing that wartime upheaval as English invaders captured the island from the Spanish Empire, enslaved Africans broke free and climbed into steep interior rainforests.</p><p class=\"prose-p\">Known as the Maroons, these self-liberated pioneers carved autonomous towns and hidden fortresses high inside the mist-shrouded Blue Mountains. Clearing hidden ravines for communal food crops while drilling disciplined fighters, free Maroon communities defended their hard-won mountain liberty against wave after wave of British colonial expeditions.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> When Oliver Cromwell’s warships bombarded Spanish Jamaica in May 1655 during his ambitious Western Design campaign, fleeing Spanish colonists left shattered estates behind in the smoke. Seizing that wartime upheaval as English invaders captured the island from the Spanish Empire, enslaved Africans broke free and climbed into steep interior rainforests.</p><p class=\"prose-p\">Known as the Maroons, these self-liberated pioneers carved autonomous towns and hidden fortresses high inside the mist-shrouded Blue Mountains. Clearing hidden ravines for communal food crops while drilling disciplined fighters, free Maroon communities defended their hard-won mountain liberty against wave after wave of British colonial expeditions.</p>"
         },
         {
           "act": 2,
           "title": "The Sugar Industrial Complex & The Gang System (1670–1730)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> On Jamaican sugar estates, enslaved people endured brutal industrial discipline from dawn until dusk. In punishing tropical heat, field gangs toiled under the constant threat of overseer cowhide whips, while mill workers risked having hands crushed in heavy iron crushing rollers.</p><p class=\"prose-p\">Work continued relentlessly for eighteen hours a day during intensive harvest seasons. Extreme exhaustion & brutality caused shocking mortality rates, forcing wealthy absentee British planters to import thousands of newly captured Africans annually to replace those who died.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Before the sun cleared Jamaica’s cane ridges, conch shells summoned regimented field gangs to hack tall sugar stalks from dawn until dusk in blistering tropical heat. Armed overseers enforced relentless factory-style pace with cowhide whips, while exhausted workers inside scorching mills fed cane into heavy iron crushing rollers that mangled tired hands.</p><p class=\"prose-p\">During harvest season, forced shifts stretched eighteen hours a day beside scalding vats so cut cane would not spoil. Because brutal overwork and hunger drove death rates skyward, wealthy absentee planters sitting in grand British country houses coldly imported fresh captives every year rather than sparing human lives.</p>",
           "source": {
             "id": "fbe_l3_src_b",
             "letter": "B",
@@ -4763,8 +4831,8 @@ export default {
           ],
           "theme_heading": "The Sugar Industrial Complex & The Gang System (1670–1730)",
           "heading": "The Sugar Industrial Complex & The Gang System (1670–1730)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> On Jamaican sugar estates, enslaved people endured brutal industrial discipline from dawn until dusk. In punishing tropical heat, field gangs toiled under the constant threat of overseer cowhide whips, while mill workers risked having hands crushed in heavy iron crushing rollers.</p><p class=\"prose-p\">Work continued relentlessly for eighteen hours a day during intensive harvest seasons. Extreme exhaustion & brutality caused shocking mortality rates, forcing wealthy absentee British planters to import thousands of newly captured Africans annually to replace those who died.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> On Jamaican sugar estates, enslaved people endured brutal industrial discipline from dawn until dusk. In punishing tropical heat, field gangs toiled under the constant threat of overseer cowhide whips, while mill workers risked having hands crushed in heavy iron crushing rollers.</p><p class=\"prose-p\">Work continued relentlessly for eighteen hours a day during intensive harvest seasons. Extreme exhaustion & brutality caused shocking mortality rates, forcing wealthy absentee British planters to import thousands of newly captured Africans annually to replace those who died.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Before the sun cleared Jamaica’s cane ridges, conch shells summoned regimented field gangs to hack tall sugar stalks from dawn until dusk in blistering tropical heat. Armed overseers enforced relentless factory-style pace with cowhide whips, while exhausted workers inside scorching mills fed cane into heavy iron crushing rollers that mangled tired hands.</p><p class=\"prose-p\">During harvest season, forced shifts stretched eighteen hours a day beside scalding vats so cut cane would not spoil. Because brutal overwork and hunger drove death rates skyward, wealthy absentee planters sitting in grand British country houses coldly imported fresh captives every year rather than sparing human lives.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Before the sun cleared Jamaica’s cane ridges, conch shells summoned regimented field gangs to hack tall sugar stalks from dawn until dusk in blistering tropical heat. Armed overseers enforced relentless factory-style pace with cowhide whips, while exhausted workers inside scorching mills fed cane into heavy iron crushing rollers that mangled tired hands.</p><p class=\"prose-p\">During harvest season, forced shifts stretched eighteen hours a day beside scalding vats so cut cane would not spoil. Because brutal overwork and hunger drove death rates skyward, wealthy absentee planters sitting in grand British country houses coldly imported fresh captives every year rather than sparing human lives.</p>",
           "image": "/images/ks3_fbe/fbe_l3_b1_antigua_sugar_mill_yard_clark_1823.jpg",
           "image_alt": "1823 hand-coloured aquatint by William Clark titled The Mill Yard showing enslaved men and women hauling bundles of cut sugarcane by ox-cart and feeding stalks into the stone windmill crushing rollers under an overseer",
           "caption": "The Mill Yard (William Clark, Ten Views in the Island of Antigua, 1823, British Library): Enslaved plantation gangs haul harvested sugarcane to the stone mill where workers fed stalks by hand into heavy crushing rollers."
@@ -4772,7 +4840,7 @@ export default {
         {
           "act": 3,
           "title": "Daily Sabotage, Boiling Houses & Cultural Survival (1680–1720)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> Enslaved people fought back against dehumanisation through everyday sabotage and cultural solidarity. Field hands actively resisted plantation oppression by breaking tool handles, damaging boiling house copper cauldrons, working slowly, and feigning sudden sickness to disrupt sugar production.</p><p class=\"prose-p\">In slave quarters, communities maintained West African spiritual rituals, herbal medicine, and songs of hope. Elders gathered families at night to recount Anansi trickster tales, celebrating how a small spider outwitted greedy, powerful predators through quick intellect.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> A snapped iron hoe blade left quietly in cane trash looked like clumsy bad luck to a furious overseer, yet covert sabotage bled Jamaican estates every week. Risking savage punishment, field hands disrupted sugar output by breaking tool handles, cracking copper cauldrons inside boiling houses, working slowly, and feigning sudden sickness.</p><p class=\"prose-p\">After dark inside wooden quarters, families defended their humanity by preserving West African spiritual rituals, songs, and skilled herbal medicine. Around low embers, elders whispered nightly stories of Anansi the spider—celebrating how a small, quick-witted trickster repeatedly outsmarted cruel and powerful predators through patience and sharp intelligence.</p>",
           "image": "/images/sugar_boiling_house.jpg",
           "image_alt": "1823 hand-coloured aquatint by William Clark showing enslaved workers tending billowing steam-filled copper sugar vats with long skimmers inside a Caribbean plantation boiling house",
           "caption": "Interior of a Caribbean Sugar Plantation Boiling House (William Clark, 1823): Enslaved labourers worked through searing heat and choking steam beside boiling copper cauldrons—a choke-point where covert sabotage of tools or vats could halt an estate’s harvest.",
@@ -4832,13 +4900,13 @@ export default {
           ],
           "theme_heading": "Daily Sabotage, Boiling Houses & Cultural Survival (1680–1720)",
           "heading": "Daily Sabotage, Boiling Houses & Cultural Survival (1680–1720)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> Enslaved people fought back against dehumanisation through everyday sabotage and cultural solidarity. Field hands actively resisted plantation oppression by breaking tool handles, damaging boiling house copper cauldrons, working slowly, and feigning sudden sickness to disrupt sugar production.</p><p class=\"prose-p\">In slave quarters, communities maintained West African spiritual rituals, herbal medicine, and songs of hope. Elders gathered families at night to recount Anansi trickster tales, celebrating how a small spider outwitted greedy, powerful predators through quick intellect.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> Enslaved people fought back against dehumanisation through everyday sabotage and cultural solidarity. Field hands actively resisted plantation oppression by breaking tool handles, damaging boiling house copper cauldrons, working slowly, and feigning sudden sickness to disrupt sugar production.</p><p class=\"prose-p\">In slave quarters, communities maintained West African spiritual rituals, herbal medicine, and songs of hope. Elders gathered families at night to recount Anansi trickster tales, celebrating how a small spider outwitted greedy, powerful predators through quick intellect.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> A snapped iron hoe blade left quietly in cane trash looked like clumsy bad luck to a furious overseer, yet covert sabotage bled Jamaican estates every week. Risking savage punishment, field hands disrupted sugar output by breaking tool handles, cracking copper cauldrons inside boiling houses, working slowly, and feigning sudden sickness.</p><p class=\"prose-p\">After dark inside wooden quarters, families defended their humanity by preserving West African spiritual rituals, songs, and skilled herbal medicine. Around low embers, elders whispered nightly stories of Anansi the spider—celebrating how a small, quick-witted trickster repeatedly outsmarted cruel and powerful predators through patience and sharp intelligence.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> A snapped iron hoe blade left quietly in cane trash looked like clumsy bad luck to a furious overseer, yet covert sabotage bled Jamaican estates every week. Risking savage punishment, field hands disrupted sugar output by breaking tool handles, cracking copper cauldrons inside boiling houses, working slowly, and feigning sudden sickness.</p><p class=\"prose-p\">After dark inside wooden quarters, families defended their humanity by preserving West African spiritual rituals, songs, and skilled herbal medicine. Around low embers, elders whispered nightly stories of Anansi the spider—celebrating how a small, quick-witted trickster repeatedly outsmarted cruel and powerful predators through patience and sharp intelligence.</p>"
         },
         {
           "act": 4,
           "title": "Queen Nanny & The Windward Guerrillas (1720–1734)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> In eastern Jamaica, the Windward Maroons were led by Queen Nanny, a legendary Asante warrior and spiritual leader. Nanny trained her forest fighters in living branch camouflage, concealing warriors so effectively with forest leaves that they appeared as natural mountain foliage.</p><p class=\"prose-p\">Maroons coordinated swift military movements across misty ridges by sounding the abeng horn made from cow horns. Using devastating guerilla ambush tactics, Nanny’s warriors repeatedly outmanoeuvred and routed heavily armed British military regiments.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> Marching single-file up a soaking Blue Mountain gorge in scarlet wool coats, British soldiers often heard nothing until a curved cow-horn echoed across the mist and the hillside trees opened fire. Commanding eastern Jamaica’s Windward Maroons, Asante strategist and spiritual leader Queen Nanny drilled warriors in living branch camouflage woven from forest leaves.</p><p class=\"prose-p\">High on rocky crags, lookouts blew coded warnings on the abeng horn to coordinate fighters miles apart across misty ridges. Using disciplined guerrilla ambush tactics along narrow jungle paths, Queen Nanny’s forces repeatedly surrounded, panicked, and routed heavily armed British regiments trained only for flat European battlefields.</p>",
           "source": {
             "id": "fbe_l3_src_d",
             "letter": "D",
@@ -4895,8 +4963,8 @@ export default {
           ],
           "theme_heading": "Queen Nanny & The Windward Guerrillas (1720–1734)",
           "heading": "Queen Nanny & The Windward Guerrillas (1720–1734)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> In eastern Jamaica, the Windward Maroons were led by Queen Nanny, a legendary Asante warrior and spiritual leader. Nanny trained her forest fighters in living branch camouflage, concealing warriors so effectively with forest leaves that they appeared as natural mountain foliage.</p><p class=\"prose-p\">Maroons coordinated swift military movements across misty ridges by sounding the abeng horn made from cow horns. Using devastating guerilla ambush tactics, Nanny’s warriors repeatedly outmanoeuvred and routed heavily armed British military regiments.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> In eastern Jamaica, the Windward Maroons were led by Queen Nanny, a legendary Asante warrior and spiritual leader. Nanny trained her forest fighters in living branch camouflage, concealing warriors so effectively with forest leaves that they appeared as natural mountain foliage.</p><p class=\"prose-p\">Maroons coordinated swift military movements across misty ridges by sounding the abeng horn made from cow horns. Using devastating guerilla ambush tactics, Nanny’s warriors repeatedly outmanoeuvred and routed heavily armed British military regiments.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> Marching single-file up a soaking Blue Mountain gorge in scarlet wool coats, British soldiers often heard nothing until a curved cow-horn echoed across the mist and the hillside trees opened fire. Commanding eastern Jamaica’s Windward Maroons, Asante strategist and spiritual leader Queen Nanny drilled warriors in living branch camouflage woven from forest leaves.</p><p class=\"prose-p\">High on rocky crags, lookouts blew coded warnings on the abeng horn to coordinate fighters miles apart across misty ridges. Using disciplined guerrilla ambush tactics along narrow jungle paths, Queen Nanny’s forces repeatedly surrounded, panicked, and routed heavily armed British regiments trained only for flat European battlefields.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> Marching single-file up a soaking Blue Mountain gorge in scarlet wool coats, British soldiers often heard nothing until a curved cow-horn echoed across the mist and the hillside trees opened fire. Commanding eastern Jamaica’s Windward Maroons, Asante strategist and spiritual leader Queen Nanny drilled warriors in living branch camouflage woven from forest leaves.</p><p class=\"prose-p\">High on rocky crags, lookouts blew coded warnings on the abeng horn to coordinate fighters miles apart across misty ridges. Using disciplined guerrilla ambush tactics along narrow jungle paths, Queen Nanny’s forces repeatedly surrounded, panicked, and routed heavily armed British regiments trained only for flat European battlefields.</p>",
           "image": "/images/ks3_fbe/fbe_l3_b3_blue_mountains_windward_maroons_jamaica.jpg",
           "image_alt": "Steep mist-shrouded rainforest ridges, deep ravines, and moss-draped tropical branches high in the Blue Mountains of eastern Jamaica",
           "caption": "Mist-shrouded rainforest ridges of the Blue Mountains in eastern Jamaica: Across this rugged terrain around Nanny Town, Queen Nanny’s Windward Maroon guerrillas used living-branch camouflage and abeng cow-horn signals to ambush British regiments."
@@ -4904,7 +4972,7 @@ export default {
         {
           "act": 5,
           "title": "The 1739 Peace Treaty: Triumph and Compromise (1739–1740)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Exhausted by decades of humiliating jungle warfare, British Governor Edward Trelawny sent messengers carrying a British truce white flag in 1739. The resulting peace treaty formally granted the Maroons 1,500 sovereign acres of fertile mountain territory, acknowledging their freedom.</p><p class=\"prose-p\">However, the treaty demanded a painful moral compromise: the Maroons agreed to assist British authorities by returning enslaved fugitives who escaped plantations. Despite this tragic concession, Maroon autonomy proved that organized resistance could humble the British Empire.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Drained by years of failed jungle marches and tropical fevers, Jamaica’s Governor Edward Trelawny finally sent British officers climbing into the mountains under a white truce flag in 1739. The landmark peace treaties formally recognized Maroon freedom and guaranteed 1,500 sovereign acres of fertile mountain land beyond planter control.</p><p class=\"prose-p\">Yet securing permanent survival carried an agonizing price: British negotiators insisted on a clause requiring Maroon fighters to assist colonial authorities by returning enslaved fugitives who escaped plantations. Though that painful compromise closed mountain sanctuary to new runaways, forcing King George II’s empire to sign treaties proved African resistance could humble imperial power.</p>",
           "source": {
             "id": "fbe_l3_src_e",
             "letter": "E",
@@ -4963,8 +5031,8 @@ export default {
           ],
           "theme_heading": "The 1739 Peace Treaty: Triumph and Compromise (1739–1740)",
           "heading": "The 1739 Peace Treaty: Triumph and Compromise (1739–1740)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Exhausted by decades of humiliating jungle warfare, British Governor Edward Trelawny sent messengers carrying a British truce white flag in 1739. The resulting peace treaty formally granted the Maroons 1,500 sovereign acres of fertile mountain territory, acknowledging their freedom.</p><p class=\"prose-p\">However, the treaty demanded a painful moral compromise: the Maroons agreed to assist British authorities by returning enslaved fugitives who escaped plantations. Despite this tragic concession, Maroon autonomy proved that organized resistance could humble the British Empire.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Exhausted by decades of humiliating jungle warfare, British Governor Edward Trelawny sent messengers carrying a British truce white flag in 1739. The resulting peace treaty formally granted the Maroons 1,500 sovereign acres of fertile mountain territory, acknowledging their freedom.</p><p class=\"prose-p\">However, the treaty demanded a painful moral compromise: the Maroons agreed to assist British authorities by returning enslaved fugitives who escaped plantations. Despite this tragic concession, Maroon autonomy proved that organized resistance could humble the British Empire.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Drained by years of failed jungle marches and tropical fevers, Jamaica’s Governor Edward Trelawny finally sent British officers climbing into the mountains under a white truce flag in 1739. The landmark peace treaties formally recognized Maroon freedom and guaranteed 1,500 sovereign acres of fertile mountain land beyond planter control.</p><p class=\"prose-p\">Yet securing permanent survival carried an agonizing price: British negotiators insisted on a clause requiring Maroon fighters to assist colonial authorities by returning enslaved fugitives who escaped plantations. Though that painful compromise closed mountain sanctuary to new runaways, forcing King George II’s empire to sign treaties proved African resistance could humble imperial power.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Drained by years of failed jungle marches and tropical fevers, Jamaica’s Governor Edward Trelawny finally sent British officers climbing into the mountains under a white truce flag in 1739. The landmark peace treaties formally recognized Maroon freedom and guaranteed 1,500 sovereign acres of fertile mountain land beyond planter control.</p><p class=\"prose-p\">Yet securing permanent survival carried an agonizing price: British negotiators insisted on a clause requiring Maroon fighters to assist colonial authorities by returning enslaved fugitives who escaped plantations. Though that painful compromise closed mountain sanctuary to new runaways, forcing King George II’s empire to sign treaties proved African resistance could humble imperial power.</p>",
           "concept_widget": {
             "type": "spectrum_slider",
             "eyebrow": "Year 8 Historical Judgement",
@@ -5668,13 +5736,13 @@ export default {
           "question": "What military strategy allowed Queen Nanny’s Windward Maroons to rout heavily armed British regiments?",
           "q": "What military strategy allowed Queen Nanny’s Windward Maroons to rout heavily armed British regiments?",
           "options": [
-            "Guerilla ambush tactics",
+            "Guerrilla ambush tactics",
             "Pitched cavalry charges",
             "Naval broadside blockades",
             "Trench artillery duels"
           ],
-          "answer": "Guerilla ambush tactics",
-          "a": "Guerilla ambush tactics",
+          "answer": "Guerrilla ambush tactics",
+          "a": "Guerrilla ambush tactics",
           "explanation": "Using disciplined guerrilla ambush tactics in dense mountain terrain, Nanny’s fighters repeatedly outmanoeuvred British troops."
         },
         {
@@ -6048,7 +6116,8 @@ export default {
           "question": "How did England’s 1655 seizure of Jamaica create free Maroon towns?",
           "heading": "How did England’s 1655 seizure of Jamaica create free Maroon towns?",
           "focus_clue": "How did England’s 1655 seizure of Jamaica create free Maroon towns?",
-          "prose_hash": "9ed2ab8f13"
+          "prose_hash": "2c1b42528c",
+          "para_ref": "[3.1]"
         },
         {
           "step": 2,
@@ -6081,7 +6150,8 @@ export default {
           "question": "Why did brutal sugar estate work cause such high death rates in Jamaica?",
           "heading": "Why did brutal sugar estate work cause such high death rates in Jamaica?",
           "focus_clue": "Why did brutal sugar estate work cause such high death rates in Jamaica?",
-          "prose_hash": "de9130a719"
+          "prose_hash": "af67339eeb",
+          "para_ref": "[3.2]"
         },
         {
           "step": 3,
@@ -6114,7 +6184,8 @@ export default {
           "question": "How did enslaved workers resist plantation slavery in daily life?",
           "heading": "How did enslaved workers resist plantation slavery in daily life?",
           "focus_clue": "How did enslaved workers resist plantation slavery in daily life?",
-          "prose_hash": "e590edcbdf"
+          "prose_hash": "48612013f8",
+          "para_ref": "[3.3]"
         },
         {
           "step": 4,
@@ -6147,7 +6218,8 @@ export default {
           "question": "How did Queen Nanny’s forest fighters defeat British regiments?",
           "heading": "How did Queen Nanny’s forest fighters defeat British regiments?",
           "focus_clue": "How did Queen Nanny’s forest fighters defeat British regiments?",
-          "prose_hash": "088ec2fa78"
+          "prose_hash": "43d63fe0bd",
+          "para_ref": "[3.4]"
         },
         {
           "step": 5,
@@ -6180,7 +6252,8 @@ export default {
           "question": "Why was the 1739 Maroon peace treaty both a victory and a compromise?",
           "heading": "Why was the 1739 Maroon peace treaty both a victory and a compromise?",
           "focus_clue": "Why was the 1739 Maroon peace treaty both a victory and a compromise?",
-          "prose_hash": "8f529b55ab"
+          "prose_hash": "308252d810",
+          "para_ref": "[3.5]"
         }
       ],
       "enquiry_question": "How did enslaved Africans and Queen Nanny resist plantation slavery in Jamaica?",
@@ -6219,8 +6292,9 @@ export default {
             "stat": "Free Towns Built High in the Blue Mountains",
             "html": "When Oliver Cromwell’s fleet seized <strong>Jamaica</strong> from Spain in <strong>1655</strong>, enslaved Africans escaped into mountain rainforests. These free <strong>Maroons</strong> built defended hilltop towns.",
             "spoken": "How did brutal sugar plantations spark fierce Maroon resistance in Jamaica? <short pause> When Oliver Cromwell’s fleet seized Jamaica from Spain in 1655 , enslaved Africans escaped into mountain rainforests. These free Maroons built defended hilltop towns.",
-            "paired_prose_hash": "9ed2ab8f13",
-            "connective": "How did brutal sugar plantations spark fierce Maroon resistance in Jamaica?"
+            "paired_prose_hash": "2c1b42528c",
+            "connective": "How did brutal sugar plantations spark fierce Maroon resistance in Jamaica?",
+            "prose_hash": "2c1b42528c"
           },
           {
             "badge": "Stage 2",
@@ -6232,8 +6306,9 @@ export default {
             "stat": "18-Hour Harvest Days Under Overseer Whips",
             "html": "On Jamaican <strong>sugar estates</strong>, field gangs worked eighteen-hour harvest days under whips and iron rollers. High <strong>death rates</strong> drove planters to import more captives.",
             "spoken": "On coastal plains, British planters built a brutal sugar machine. <short pause> On Jamaican sugar estates , field gangs worked eighteen-hour harvest days under whips and iron rollers. High death rates drove planters to import more captives.",
-            "paired_prose_hash": "de9130a719",
-            "connective": "On coastal plains, British planters built a brutal sugar machine."
+            "paired_prose_hash": "af67339eeb",
+            "connective": "On coastal plains, British planters built a brutal sugar machine.",
+            "prose_hash": "af67339eeb"
           },
           {
             "badge": "Stage 3",
@@ -6245,8 +6320,9 @@ export default {
             "stat": "Broken Tools, Slow Work & West African Tales",
             "html": "Workers resisted daily through <strong>sabotage</strong>—breaking tools, damaging boiling pans, and slowing harvests. At night, elders kept hope alive with West African <strong>Anansi</strong> tales.",
             "spoken": "Even on plantations, enslaved families found brave ways to resist. <short pause> Workers resisted daily through sabotage, breaking tools, damaging boiling pans, and slowing harvests. At night, elders kept hope alive with West African Anansi tales.",
-            "paired_prose_hash": "e590edcbdf",
-            "connective": "Even on plantations, enslaved families found brave ways to resist."
+            "paired_prose_hash": "48612013f8",
+            "connective": "Even on plantations, enslaved families found brave ways to resist.",
+            "prose_hash": "48612013f8"
           },
           {
             "badge": "Stage 4",
@@ -6257,8 +6333,9 @@ export default {
             "stat": "Leaf Camouflage & Cow-Horn Abeng Signals",
             "html": "Asante leader <strong>Queen Nanny</strong> trained Windward Maroons in leaf camouflage and <strong>guerrilla ambushes</strong>. Sounding coded <strong>abeng</strong> cow-horns, her warriors routed British troops.",
             "spoken": "In eastern Jamaica, warrior Queen Nanny defeated British regiments. <short pause> Asante leader Queen Nanny trained Windward Maroons in leaf camouflage and guerrilla ambushes . Sounding coded abeng cow-horns, her warriors routed British troops.",
-            "paired_prose_hash": "088ec2fa78",
-            "connective": "In eastern Jamaica, warrior Queen Nanny defeated British regiments."
+            "paired_prose_hash": "43d63fe0bd",
+            "connective": "In eastern Jamaica, warrior Queen Nanny defeated British regiments.",
+            "prose_hash": "43d63fe0bd"
           },
           {
             "badge": "Stage 5",
@@ -6269,8 +6346,9 @@ export default {
             "stat": "1,500 Acres of Free Maroon Land Won",
             "html": "Exhausted Britain signed the <strong>1739 Peace Treaty</strong>, recognizing Maroon freedom and <strong>1,500 acres</strong> of land. Yet Maroons had to promise to return future <strong>runaway captives</strong>.",
             "spoken": "Exhausted by jungle warfare, Britain asked the Maroons for peace. <short pause> Exhausted Britain signed the 1739 Peace Treaty , recognizing Maroon freedom and 1,500 acres of land. Yet Maroons had to promise to return future runaway captives .",
-            "paired_prose_hash": "8f529b55ab",
-            "connective": "Exhausted by jungle warfare, Britain asked the Maroons for peace."
+            "paired_prose_hash": "308252d810",
+            "connective": "Exhausted by jungle warfare, Britain asked the Maroons for peace.",
+            "prose_hash": "308252d810"
           },
           {
             "badge": "⚡ Outcome",
@@ -6357,11 +6435,11 @@ export default {
             "title": "Seven Years’ War Debt & The Proclamation Line",
             "actor": "King George III & Parliament",
             "tag": "📜 PROCLAMATION OF 1763",
-            "trigger": "Victorious in the Seven Years’ War but facing £133 million in war debt, Parliament passed the Proclamation Line of 1763, barring colonial settlement west of the Appalachians.",
-            "connective": "Infuriated colonial speculators and frontiersmen who felt cheated out of lands they had fought to conquer from France.",
+            "trigger": "Facing a £133m Seven Years’ War debt in 1763, King George III drew the Proclamation Line along the Appalachian Mountains to avoid frontier wars with Native American nations.",
+            "connective": "Infuriated colonial settlers and speculators barred from western valleys while Quartering Acts compelled towns to house ten thousand British soldiers.",
             "question": "Why did Britain’s war debt and 1763 Proclamation anger colonists?",
             "para_ref": "[4.1]",
-            "prose_hash": "606ae84dd6"
+            "prose_hash": "f919c7e3f5"
           },
           {
             "step": 2,
@@ -6369,11 +6447,11 @@ export default {
             "title": "The Stamp Act & \"No Taxation Without Representation\"",
             "actor": "Colonial Sons of Liberty & Parliament",
             "tag": "⚖️ STAMP ACT CRISIS",
-            "trigger": "Parliament imposed direct stamp taxes on legal documents, newspapers, and dice, provoking riots, hanging of tax collectors in effigy, and widespread import boycotts.",
-            "connective": "United the thirteen colonies around a common constitutional slogan: that Englishmen could not be taxed without representation in Parliament.",
+            "trigger": "Parliament’s 1765 Stamp Act taxed legal documents, newspapers, pamphlets, and playing cards, provoking cries that taxation without representation in Westminster violated English rights.",
+            "connective": "Sons of Liberty swung effigies and ransacked tax offices while colonial import boycotts starved British workshops until MPs voted to repeal the tax in 1766.",
             "question": "Why did American colonists boycott British goods over the 1765 Stamp Act?",
             "para_ref": "[4.2]",
-            "prose_hash": "2abd091de5"
+            "prose_hash": "d5e7320688"
           },
           {
             "step": 3,
@@ -6381,11 +6459,11 @@ export default {
             "title": "The Boston Massacre & Revolutionary Propaganda",
             "actor": "British Regulars & Boston Crowd",
             "tag": "💥 BOSTON MASSACRE",
-            "trigger": "An angry crowd pelted British soldiers guarding the Boston Custom House with ice and stones; panicked troops fired, killing five colonists including Crispus Attucks.",
-            "connective": "Transformed by Paul Revere’s sensationalized engraving into a symbol of ruthless British tyranny, inflaming anti-imperial sentiment across America.",
+            "trigger": "On 5 March 1770 outside Boston’s Custom House, crowds pelted a sentry with snowballs, ice, and oyster shells until panicked redcoats fired, leaving five dead colonists including Crispus Attucks.",
+            "connective": "Silversmith Paul Revere circulated a dramatic colour engraving erasing the flying ice to depict a premeditated slaughter and unite America against military rule.",
             "question": "How did Paul Revere’s engraving of 1770 inflame anger in Boston?",
             "para_ref": "[4.3]",
-            "prose_hash": "b87c8e0935"
+            "prose_hash": "e0209bffc8"
           },
           {
             "step": 4,
@@ -6393,11 +6471,11 @@ export default {
             "title": "The 1773 Tea Act & Corporate Monopoly",
             "actor": "Lord North & East India Company",
             "tag": "☕ THE TEA ACT",
-            "trigger": "Parliament passed the Tea Act to bail out the bankrupt East India Company, granting it a monopoly to sell 18 million pounds of surplus tea directly to the colonies.",
-            "connective": "Alarmed colonial merchants that Parliament would grant monopolies over other trades and enforce its right to tax American consumers at will.",
+            "trigger": "To rescue the debt-ridden East India Company from 18 million pounds of unsold surplus tea, Parliament’s May 1773 Tea Act granted a direct monopoly over American ports.",
+            "connective": "Even though Company tea undercut smuggled Dutch imports, bypassing local merchants and enforcing taxes without consent sparked colonial port blockades.",
             "question": "Why did colonists oppose the 1773 Tea Act even though tea got cheaper?",
             "para_ref": "[4.4]",
-            "prose_hash": "013723a188"
+            "prose_hash": "1cf3614fea"
           },
           {
             "step": 5,
@@ -6405,11 +6483,11 @@ export default {
             "title": "The Boston Tea Party & The Coercive Acts",
             "actor": "Sons of Liberty & King George III",
             "tag": "🌊 BOSTON TEA PARTY",
-            "trigger": "Disguised as Mohawk warriors, the Sons of Liberty boarded three merchant ships at Griffin’s Wharf, smashing open and dumping 342 crates of tea into the harbor.",
-            "connective": "Prompted King George III to pass the punitive Coercive Acts, shutting Boston harbor and pushing the thirteen colonies into open military rebellion.",
+            "trigger": "On 16 December 1773, Sons of Liberty artisans disguised as Mohawks boarded three Company vessels at Griffin’s Wharf, splitting 342 chests and tipping £10,000 of tea into Boston Harbour.",
+            "connective": "King George III and Parliament struck back with the punitive Coercive Acts of 1774—blockading Boston port and suspending Massachusetts government—uniting twelve sister colonies behind Boston.",
             "question": "How did King George III punish Boston after 342 tea chests were dumped?",
             "para_ref": "[4.5]",
-            "prose_hash": "ed7b3d0476"
+            "prose_hash": "a8473b50ad"
           }
         ]
       },
@@ -6556,7 +6634,7 @@ export default {
         {
           "act": 1,
           "title": "Victory & The Debt Trap: The 1763 Proclamation (1763)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Victory in the Seven Years’ War left Great Britain with an enormous £133m imperial war debt. Seeking to prevent costly frontier wars with Native American nations, King George III established the Proclamation Line of 1763, forbidding white settlement west of the Appalachian Mountains.</p><p class=\"prose-p\">American colonists felt cheated of fertile land they had fought to secure. Resentment flared further when Parliament passed the Quartering Acts, forcing towns to provide standing army quartering for ten thousand British soldiers.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Church bells across Boston and Virginia rang out in 1763 to celebrate conquering French Canada in the Seven Years’ War—until Westminster’s £133m imperial war debt arrived on the table. Hoping to avoid expensive new frontier wars with Native American nations, King George III drew the Proclamation Line of 1763 along the Appalachian Mountains.</p><p class=\"prose-p\">By banning colonial settlers and land speculators from pushing west beyond the Appalachian Mountains, London infuriated Americans who felt cheated of fertile valleys they had bled to win. Anger deepened when Parliament passed the Quartering Acts, compelling colonial towns to house and supply ten thousand British soldiers in peacetime.</p>",
           "image": "/images/first_british_empire/maps/fbe_map_l4_thirteen_colonies_revolution_1763_1783.svg",
           "image_alt": "KS3 Year 8 historical GIS atlas map of the Thirteen Colonies, the 1763 Royal Proclamation Line along the Appalachian Mountains, and the American Revolution crisis (1763–1783), showing Indigenous Reserve lands, British Canada and Nova Scotia, Boston Harbour and Lexington, Philadelphia (1776), Virginia and Yorktown (1781), and the 1783 Book of Negroes Black Loyalist evacuation to Birchtown, Nova Scotia",
           "caption": "Reference Map: The Thirteen Colonies, King George III’s 1763 Royal Proclamation Line along the Appalachian Mountains, imperial war debt, and the American Revolution crisis (1763–1783)—from Boston Harbour and Philadelphia (1776) to Virginia, the Siege of Yorktown (1781), and the 1783 Book of Negroes evacuation to Birchtown, Nova Scotia.",
@@ -6616,8 +6694,8 @@ export default {
           ],
           "theme_heading": "Victory & The Debt Trap: The 1763 Proclamation (1763)",
           "heading": "Victory & The Debt Trap: The 1763 Proclamation (1763)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Victory in the Seven Years’ War left Great Britain with an enormous £133m imperial war debt. Seeking to prevent costly frontier wars with Native American nations, King George III established the Proclamation Line of 1763, forbidding white settlement west of the Appalachian Mountains.</p><p class=\"prose-p\">American colonists felt cheated of fertile land they had fought to secure. Resentment flared further when Parliament passed the Quartering Acts, forcing towns to provide standing army quartering for ten thousand British soldiers.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Victory in the Seven Years’ War left Great Britain with an enormous £133m imperial war debt. Seeking to prevent costly frontier wars with Native American nations, King George III established the Proclamation Line of 1763, forbidding white settlement west of the Appalachian Mountains.</p><p class=\"prose-p\">American colonists felt cheated of fertile land they had fought to secure. Resentment flared further when Parliament passed the Quartering Acts, forcing towns to provide standing army quartering for ten thousand British soldiers.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Church bells across Boston and Virginia rang out in 1763 to celebrate conquering French Canada in the Seven Years’ War—until Westminster’s £133m imperial war debt arrived on the table. Hoping to avoid expensive new frontier wars with Native American nations, King George III drew the Proclamation Line of 1763 along the Appalachian Mountains.</p><p class=\"prose-p\">By banning colonial settlers and land speculators from pushing west beyond the Appalachian Mountains, London infuriated Americans who felt cheated of fertile valleys they had bled to win. Anger deepened when Parliament passed the Quartering Acts, compelling colonial towns to house and supply ten thousand British soldiers in peacetime.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Church bells across Boston and Virginia rang out in 1763 to celebrate conquering French Canada in the Seven Years’ War—until Westminster’s £133m imperial war debt arrived on the table. Hoping to avoid expensive new frontier wars with Native American nations, King George III drew the Proclamation Line of 1763 along the Appalachian Mountains.</p><p class=\"prose-p\">By banning colonial settlers and land speculators from pushing west beyond the Appalachian Mountains, London infuriated Americans who felt cheated of fertile valleys they had bled to win. Anger deepened when Parliament passed the Quartering Acts, compelling colonial towns to house and supply ten thousand British soldiers in peacetime.</p>",
           "stage_hook_map": {
             "id": "fbe-l4-thirteen-colonies-revolution-map",
             "image": "/images/first_british_empire/maps/fbe_map_l4_thirteen_colonies_revolution_1763_1783.svg",
@@ -6794,7 +6872,7 @@ export default {
         {
           "act": 2,
           "title": "The Stamp Act & \"No Taxation Without Representation\" (1765–1766)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> In 1765, Parliament passed the controversial Stamp Act to raise colonial revenue, taxing legal documents, newspapers, pamphlets, and playing cards. Colonists reacted with furious outrage, declaring that taxation without representation in the British Parliament violated their historic rights as freeborn Englishmen.</p><p class=\"prose-p\">The Sons of Liberty organized violent resistance, attacking stamp collectors, hanging royal officials in effigy, and burning tax offices. Widespread colonial import boycotts crippled British exports, forcing Parliament to repeal the hated stamp tax in 1766.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> From November 1765, not a single Boston newspaper, marriage deed, or pack of tavern playing cards could be sold legally without bearing an embossed royal revenue stamp. Parliament’s Stamp Act taxed everyday legal documents, newspapers, pamphlets, and playing cards—provoking the furious cry that taxation without representation in Westminster violated freeborn English rights.</p><p class=\"prose-p\">Across harbour towns, the Sons of Liberty swung stuffed effigies of stamp collectors from elm trees and ransacked royal tax offices until terrified officials resigned. Even sharper was economic pressure: coordinated colonial import boycotts starved British workshops of orders so severely that anxious MPs voted to repeal the hated tax in 1766.</p>",
           "image": "/images/stamp_act_skull_1765.jpg",
           "image_alt": "31 October 1765 Pennsylvania Journal newspaper woodcut printing a black skull and crossbones beneath the words This is the Place to affix the STAMP",
           "caption": "Colonial newspaper woodcut from William Bradford’s Pennsylvania Journal (31 October 1765): Satirising Parliament’s hated 1765 Stamp Act with a skull and crossbones (\"This is the Place to affix the STAMP\") as Sons of Liberty boycotts spread across the Thirteen Colonies.",
@@ -6854,13 +6932,13 @@ export default {
           ],
           "theme_heading": "The Stamp Act & \"No Taxation Without Representation\" (1765–1766)",
           "heading": "The Stamp Act & \"No Taxation Without Representation\" (1765–1766)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> In 1765, Parliament passed the controversial Stamp Act to raise colonial revenue, taxing legal documents, newspapers, pamphlets, and playing cards. Colonists reacted with furious outrage, declaring that taxation without representation in the British Parliament violated their historic rights as freeborn Englishmen.</p><p class=\"prose-p\">The Sons of Liberty organized violent resistance, attacking stamp collectors, hanging royal officials in effigy, and burning tax offices. Widespread colonial import boycotts crippled British exports, forcing Parliament to repeal the hated stamp tax in 1766.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> In 1765, Parliament passed the controversial Stamp Act to raise colonial revenue, taxing legal documents, newspapers, pamphlets, and playing cards. Colonists reacted with furious outrage, declaring that taxation without representation in the British Parliament violated their historic rights as freeborn Englishmen.</p><p class=\"prose-p\">The Sons of Liberty organized violent resistance, attacking stamp collectors, hanging royal officials in effigy, and burning tax offices. Widespread colonial import boycotts crippled British exports, forcing Parliament to repeal the hated stamp tax in 1766.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> From November 1765, not a single Boston newspaper, marriage deed, or pack of tavern playing cards could be sold legally without bearing an embossed royal revenue stamp. Parliament’s Stamp Act taxed everyday legal documents, newspapers, pamphlets, and playing cards—provoking the furious cry that taxation without representation in Westminster violated freeborn English rights.</p><p class=\"prose-p\">Across harbour towns, the Sons of Liberty swung stuffed effigies of stamp collectors from elm trees and ransacked royal tax offices until terrified officials resigned. Even sharper was economic pressure: coordinated colonial import boycotts starved British workshops of orders so severely that anxious MPs voted to repeal the hated tax in 1766.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> From November 1765, not a single Boston newspaper, marriage deed, or pack of tavern playing cards could be sold legally without bearing an embossed royal revenue stamp. Parliament’s Stamp Act taxed everyday legal documents, newspapers, pamphlets, and playing cards—provoking the furious cry that taxation without representation in Westminster violated freeborn English rights.</p><p class=\"prose-p\">Across harbour towns, the Sons of Liberty swung stuffed effigies of stamp collectors from elm trees and ransacked royal tax offices until terrified officials resigned. Even sharper was economic pressure: coordinated colonial import boycotts starved British workshops of orders so severely that anxious MPs voted to repeal the hated tax in 1766.</p>"
         },
         {
           "act": 3,
           "title": "Blood on King Street: The Boston Massacre (March 1770)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> On 5 March 1770, simmering anger exploded on Boston’s icy King Street. A hostile crowd surrounded a lone British sentry post, pelting arriving soldiers with snowballs, ice & oysters shells while daring redcoats to fire their loaded muskets.</p><p class=\"prose-p\">In the confusion, panicked soldiers discharged their weapons, leaving five dead colonists on the cobbles, including Black sailor Crispus Attucks. Paul Revere’s engraving sensationalized the clash as a premeditated British slaughter, galvanizing colonial fury against military occupation.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> Outside Boston’s Custom House on the freezing night of 5 March 1770, crowds pelted a British sentry with snowballs, ice, and sharp oyster shells while daring nervous reinforcements to shoot. Amid ringing church bells and flying clubs on King Street, panicked redcoats fired a ragged musket volley into the smoke.</p><p class=\"prose-p\">When the powder cleared, five dead colonists lay bleeding on the snowy cobbles, led by escaped Black sailor Crispus Attucks. Within days, silversmith Paul Revere circulated a dramatic colour engraving that erased the flying ice completely—depicting redcoats firing a neat, premeditated slaughter to unite America against military rule.</p>",
           "source": {
             "id": "fbe_l4_src_c",
             "letter": "C",
@@ -6917,8 +6995,8 @@ export default {
           ],
           "theme_heading": "Blood on King Street: The Boston Massacre (March 1770)",
           "heading": "Blood on King Street: The Boston Massacre (March 1770)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> On 5 March 1770, simmering anger exploded on Boston’s icy King Street. A hostile crowd surrounded a lone British sentry post, pelting arriving soldiers with snowballs, ice & oysters shells while daring redcoats to fire their loaded muskets.</p><p class=\"prose-p\">In the confusion, panicked soldiers discharged their weapons, leaving five dead colonists on the cobbles, including Black sailor Crispus Attucks. Paul Revere’s engraving sensationalized the clash as a premeditated British slaughter, galvanizing colonial fury against military occupation.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> On 5 March 1770, simmering anger exploded on Boston’s icy King Street. A hostile crowd surrounded a lone British sentry post, pelting arriving soldiers with snowballs, ice & oysters shells while daring redcoats to fire their loaded muskets.</p><p class=\"prose-p\">In the confusion, panicked soldiers discharged their weapons, leaving five dead colonists on the cobbles, including Black sailor Crispus Attucks. Paul Revere’s engraving sensationalized the clash as a premeditated British slaughter, galvanizing colonial fury against military occupation.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> Outside Boston’s Custom House on the freezing night of 5 March 1770, crowds pelted a British sentry with snowballs, ice, and sharp oyster shells while daring nervous reinforcements to shoot. Amid ringing church bells and flying clubs on King Street, panicked redcoats fired a ragged musket volley into the smoke.</p><p class=\"prose-p\">When the powder cleared, five dead colonists lay bleeding on the snowy cobbles, led by escaped Black sailor Crispus Attucks. Within days, silversmith Paul Revere circulated a dramatic colour engraving that erased the flying ice completely—depicting redcoats firing a neat, premeditated slaughter to unite America against military rule.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> Outside Boston’s Custom House on the freezing night of 5 March 1770, crowds pelted a British sentry with snowballs, ice, and sharp oyster shells while daring nervous reinforcements to shoot. Amid ringing church bells and flying clubs on King Street, panicked redcoats fired a ragged musket volley into the smoke.</p><p class=\"prose-p\">When the powder cleared, five dead colonists lay bleeding on the snowy cobbles, led by escaped Black sailor Crispus Attucks. Within days, silversmith Paul Revere circulated a dramatic colour engraving that erased the flying ice completely—depicting redcoats firing a neat, premeditated slaughter to unite America against military rule.</p>",
           "image": "/images/ks3_fbe/fbe_l4_b2_crispus_attucks_boston_massacre_1770.jpg",
           "image_alt": "John Bufford lithograph after William L. Champney titled Boston Massacre, March 5, 1770 showing Black sailor Crispus Attucks struck in the centre foreground as British redcoats fire muskets outside Boston’s Old State House",
           "caption": "Boston Massacre, March 5, 1770 (lithograph by John H. Bufford after William L. Champney, c. 1856, US National Archives): Placing Black and Indigenous dockworker Crispus Attucks at the centre of the fatal confrontation with British redcoats on Boston’s King Street."
@@ -6926,7 +7004,7 @@ export default {
         {
           "act": 4,
           "title": "The 1773 Tea Act & The Monopoly Threat (May 1773)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> In May 1773, Parliament passed the Tea Act to rescue the struggling East India Company, which held 18m pounds surplus tea unsold in London warehouses. The statute granted the corporation an East India Company monopoly to sell tea directly to American ports.</p><p class=\"prose-p\">Although this lowered tea prices below smuggled Dutch imports, colonists recognized a dangerous constitutional trap. Bypassing local merchants and enforcing taxes without consent provoked unified resistance and harbour blockades across colonial seaports.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Rotting inside damp London warehouses by May 1773 sat 18 million pounds of unsold surplus tea belonging to the debt-ridden East India Company, whose shares half of Parliament owned. To rescue corporate investors from bankruptcy, MPs passed the Tea Act granting the Company a direct monopoly over American ports.</p><p class=\"prose-p\">Westminster assumed Americans would gladly swallow a tiny parliamentary duty once legal Company tea undercut smuggled Dutch imports in price. Instead, colonists saw a constitutional trap: bypassing local merchants and enforcing taxes without consent proved London could hand trade monopolies to favoured corporations at will, sparking port blockades everywhere.</p>",
           "source": {
             "id": "fbe_l4_src_d",
             "letter": "D",
@@ -6983,8 +7061,8 @@ export default {
           ],
           "theme_heading": "The 1773 Tea Act & The Monopoly Threat (May 1773)",
           "heading": "The 1773 Tea Act & The Monopoly Threat (May 1773)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> In May 1773, Parliament passed the Tea Act to rescue the struggling East India Company, which held 18m pounds surplus tea unsold in London warehouses. The statute granted the corporation an East India Company monopoly to sell tea directly to American ports.</p><p class=\"prose-p\">Although this lowered tea prices below smuggled Dutch imports, colonists recognized a dangerous constitutional trap. Bypassing local merchants and enforcing taxes without consent provoked unified resistance and harbour blockades across colonial seaports.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> In May 1773, Parliament passed the Tea Act to rescue the struggling East India Company, which held 18m pounds surplus tea unsold in London warehouses. The statute granted the corporation an East India Company monopoly to sell tea directly to American ports.</p><p class=\"prose-p\">Although this lowered tea prices below smuggled Dutch imports, colonists recognized a dangerous constitutional trap. Bypassing local merchants and enforcing taxes without consent provoked unified resistance and harbour blockades across colonial seaports.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Rotting inside damp London warehouses by May 1773 sat 18 million pounds of unsold surplus tea belonging to the debt-ridden East India Company, whose shares half of Parliament owned. To rescue corporate investors from bankruptcy, MPs passed the Tea Act granting the Company a direct monopoly over American ports.</p><p class=\"prose-p\">Westminster assumed Americans would gladly swallow a tiny parliamentary duty once legal Company tea undercut smuggled Dutch imports in price. Instead, colonists saw a constitutional trap: bypassing local merchants and enforcing taxes without consent proved London could hand trade monopolies to favoured corporations at will, sparking port blockades everywhere.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Rotting inside damp London warehouses by May 1773 sat 18 million pounds of unsold surplus tea belonging to the debt-ridden East India Company, whose shares half of Parliament owned. To rescue corporate investors from bankruptcy, MPs passed the Tea Act granting the Company a direct monopoly over American ports.</p><p class=\"prose-p\">Westminster assumed Americans would gladly swallow a tiny parliamentary duty once legal Company tea undercut smuggled Dutch imports in price. Instead, colonists saw a constitutional trap: bypassing local merchants and enforcing taxes without consent proved London could hand trade monopolies to favoured corporations at will, sparking port blockades everywhere.</p>",
           "image": "/images/ks3_fbe/fbe_l4_b3_bostonians_paying_exciseman_tea_1774.jpg",
           "image_alt": "October 1774 Philip Dawe mezzotint titled The Bostonians Paying the Excise-Man, or Tarring & Feathering showing Boston protesters beneath the Liberty Tree with an upside-down Stamp Act sign forcing East India tea down a tarred customs officer’s throat while tea chests are dumped from a ship behind them",
           "caption": "The Bostonians Paying the Excise-Man, or Tarring & Feathering (Philip Dawe, London, October 1774, Metropolitan Museum of Art): Beneath a Liberty Tree bearing an inverted Stamp Act sign, colonists force East India tea down customs official John Malcolm’s throat to defy the 1773 Tea Act monopoly."
@@ -6992,7 +7070,7 @@ export default {
         {
           "act": 5,
           "title": "342 Chests in the Harbour: The Boston Tea Party (December 1773)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> On the night of 16 December 1773, dozens of Sons of Liberty Mohawks disguised themselves with war paint and blankets, boarding three British tea ships in Boston harbour. In three disciplined hours, 342 chests smashed open emptied £10,000 of tea into the ocean.</p><p class=\"prose-p\">King George III and Parliament retaliated ruthlessly by enacting the punitive Coercive Acts of 1774. The legislation shut Boston port and suspended Massachusetts government, driving the thirteen colonies toward open armed revolution.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> By lantern light on 16 December 1773, dozens of Sons of Liberty artisans disguised as Mohawks with war paint and blankets marched silently onto Griffin’s Wharf without stealing a single padlock. Boarding three moored Company vessels, they split open 342 chests with hatchets and tipped £10,000 of tea into Boston Harbour.</p><p class=\"prose-p\">Furious at such public defiance, King George III and Parliament struck back with the punitive Coercive Acts of 1774, blockading Boston port until every ruined leaf was repaid and suspending elected Massachusetts government. Yet collective punishment backfired spectacularly, uniting twelve watching sister colonies behind besieged Boston toward open revolution.</p>",
           "source": {
             "id": "fbe_l4_src_e",
             "letter": "E",
@@ -7049,8 +7127,8 @@ export default {
           ],
           "theme_heading": "342 Chests in the Harbour: The Boston Tea Party (December 1773)",
           "heading": "342 Chests in the Harbour: The Boston Tea Party (December 1773)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> On the night of 16 December 1773, dozens of Sons of Liberty Mohawks disguised themselves with war paint and blankets, boarding three British tea ships in Boston harbour. In three disciplined hours, 342 chests smashed open emptied £10,000 of tea into the ocean.</p><p class=\"prose-p\">King George III and Parliament retaliated ruthlessly by enacting the punitive Coercive Acts of 1774. The legislation shut Boston port and suspended Massachusetts government, driving the thirteen colonies toward open armed revolution.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> On the night of 16 December 1773, dozens of Sons of Liberty Mohawks disguised themselves with war paint and blankets, boarding three British tea ships in Boston harbour. In three disciplined hours, 342 chests smashed open emptied £10,000 of tea into the ocean.</p><p class=\"prose-p\">King George III and Parliament retaliated ruthlessly by enacting the punitive Coercive Acts of 1774. The legislation shut Boston port and suspended Massachusetts government, driving the thirteen colonies toward open armed revolution.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> By lantern light on 16 December 1773, dozens of Sons of Liberty artisans disguised as Mohawks with war paint and blankets marched silently onto Griffin’s Wharf without stealing a single padlock. Boarding three moored Company vessels, they split open 342 chests with hatchets and tipped £10,000 of tea into Boston Harbour.</p><p class=\"prose-p\">Furious at such public defiance, King George III and Parliament struck back with the punitive Coercive Acts of 1774, blockading Boston port until every ruined leaf was repaid and suspending elected Massachusetts government. Yet collective punishment backfired spectacularly, uniting twelve watching sister colonies behind besieged Boston toward open revolution.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> By lantern light on 16 December 1773, dozens of Sons of Liberty artisans disguised as Mohawks with war paint and blankets marched silently onto Griffin’s Wharf without stealing a single padlock. Boarding three moored Company vessels, they split open 342 chests with hatchets and tipped £10,000 of tea into Boston Harbour.</p><p class=\"prose-p\">Furious at such public defiance, King George III and Parliament struck back with the punitive Coercive Acts of 1774, blockading Boston port until every ruined leaf was repaid and suspending elected Massachusetts government. Yet collective punishment backfired spectacularly, uniting twelve watching sister colonies behind besieged Boston toward open revolution.</p>",
           "image": "/images/ks3_fbe/fbe_l4_b4_boston_tea_party_cooper_1789.jpg",
           "image_alt": "1789 hand-coloured engraving by W. D. Cooper titled Americans throwing the Cargoes of the Tea Ships into the River, at Boston showing disguised Sons of Liberty aboard East India tea vessels breaking open and dumping tea chests into Boston Harbour",
           "caption": "Americans throwing the Cargoes of the Tea Ships into the River, at Boston (W. D. Cooper, London, 1789, Library of Congress): The earliest known published depiction of the 16 December 1773 Boston Tea Party, when disguised Sons of Liberty smashed and dumped 342 chests of East India Company tea into Boston Harbour."
@@ -7542,12 +7620,12 @@ export default {
           "q": "What immediately triggered panicked British soldiers to open fire on colonists during the 1770 Boston Massacre?",
           "options": [
             "Colonists attempted to sink three British tea ships in Boston Harbour",
-            "A hostile crowd surrounded a sentry post, pelting the soldiers with snowballs, ice, and oyster shells while daring them to fire",
+            "Crowds pelted a British sentry with snowballs, ice, and sharp oyster shells",
             "The Sons of Liberty opened fire on the British barracks with captured cannons",
             "King George III sent written orders from London to shoot protesters in Boston"
           ],
-          "answer": "A hostile crowd surrounded a sentry post, pelting the soldiers with snowballs, ice, and oyster shells while daring them to fire",
-          "a": "A hostile crowd surrounded a sentry post, pelting the soldiers with snowballs, ice, and oyster shells while daring them to fire",
+          "answer": "Crowds pelted a British sentry with snowballs, ice, and sharp oyster shells",
+          "a": "Crowds pelted a British sentry with snowballs, ice, and sharp oyster shells",
           "explanation": "In the confusion of being surrounded and pelted with ice and oyster shells on King Street, panicked redcoats fired their muskets, killing five colonists."
         },
         {
@@ -8019,7 +8097,8 @@ export default {
           "question": "Why did Britain’s war debt and 1763 Proclamation anger colonists?",
           "heading": "Why did Britain’s war debt and 1763 Proclamation anger colonists?",
           "focus_clue": "Why did Britain’s war debt and 1763 Proclamation anger colonists?",
-          "prose_hash": "606ae84dd6"
+          "prose_hash": "f919c7e3f5",
+          "para_ref": "[4.1]"
         },
         {
           "step": 2,
@@ -8052,7 +8131,8 @@ export default {
           "question": "Why did American colonists boycott British goods over the 1765 Stamp Act?",
           "heading": "Why did American colonists boycott British goods over the 1765 Stamp Act?",
           "focus_clue": "Why did American colonists boycott British goods over the 1765 Stamp Act?",
-          "prose_hash": "2abd091de5"
+          "prose_hash": "d5e7320688",
+          "para_ref": "[4.2]"
         },
         {
           "step": 3,
@@ -8085,7 +8165,8 @@ export default {
           "question": "How did Paul Revere’s engraving of 1770 inflame anger in Boston?",
           "heading": "How did Paul Revere’s engraving of 1770 inflame anger in Boston?",
           "focus_clue": "How did Paul Revere’s engraving of 1770 inflame anger in Boston?",
-          "prose_hash": "b87c8e0935"
+          "prose_hash": "e0209bffc8",
+          "para_ref": "[4.3]"
         },
         {
           "step": 4,
@@ -8118,7 +8199,8 @@ export default {
           "question": "Why did colonists oppose the 1773 Tea Act even though tea got cheaper?",
           "heading": "Why did colonists oppose the 1773 Tea Act even though tea got cheaper?",
           "focus_clue": "Why did colonists oppose the 1773 Tea Act even though tea got cheaper?",
-          "prose_hash": "013723a188"
+          "prose_hash": "1cf3614fea",
+          "para_ref": "[4.4]"
         },
         {
           "step": 5,
@@ -8151,7 +8233,8 @@ export default {
           "question": "How did King George III punish Boston after 342 tea chests were dumped?",
           "heading": "How did King George III punish Boston after 342 tea chests were dumped?",
           "focus_clue": "How did King George III punish Boston after 342 tea chests were dumped?",
-          "prose_hash": "ed7b3d0476"
+          "prose_hash": "a8473b50ad",
+          "para_ref": "[4.5]"
         }
       ],
       "enquiry_question": "Why did British taxes push the Thirteen Colonies toward open rebellion by 1773?",
@@ -8190,8 +8273,9 @@ export default {
             "stat": "£133m War Debt & 10,000 Quartered Redcoats",
             "html": "Facing a <strong>£133m war debt</strong>, George III’s <strong>1763 Proclamation</strong> banned settlers west of the Appalachians. Colonists also resented housing ten thousand <strong>quartered</strong> British troops.",
             "spoken": "Why did British taxes push the Thirteen Colonies toward revolution? <short pause> Facing a 133 million pounds war debt , George III’s 1763 Proclamation banned settlers west of the Appalachians. Colonists also resented housing ten thousand quartered British troops.",
-            "paired_prose_hash": "606ae84dd6",
-            "connective": "Why did British taxes push the Thirteen Colonies toward revolution?"
+            "paired_prose_hash": "f919c7e3f5",
+            "connective": "Why did British taxes push the Thirteen Colonies toward revolution?",
+            "prose_hash": "f919c7e3f5"
           },
           {
             "badge": "Stage 2",
@@ -8202,8 +8286,9 @@ export default {
             "stat": "“No Taxation Without Representation!”",
             "html": "Parliament’s <strong>1765 Stamp Act</strong> taxed newspapers, legal papers, and playing cards. Angry <strong>Sons of Liberty</strong> riots and trade <strong>boycotts</strong> forced MPs to repeal it in 1766.",
             "spoken": "Unfair paper taxes soon united angry towns across America. <short pause> Parliament’s 1765 Stamp Act taxed newspapers, legal papers, and playing cards. Angry Sons of Liberty riots and trade boycotts forced MPs to repeal it in 1766.",
-            "paired_prose_hash": "2abd091de5",
-            "connective": "Unfair paper taxes soon united angry towns across America."
+            "paired_prose_hash": "d5e7320688",
+            "connective": "Unfair paper taxes soon united angry towns across America.",
+            "prose_hash": "d5e7320688"
           },
           {
             "badge": "Stage 3",
@@ -8214,8 +8299,9 @@ export default {
             "stat": "5 Killed Including Black Sailor Crispus Attucks",
             "html": "In March <strong>1770</strong>, panicked redcoats fired into a stone-throwing crowd in Boston, killing five people including <strong>Crispus Attucks</strong>. <strong>Paul Revere’s</strong> print stirred colonial fury.",
             "spoken": "Tempers boiled over into deadly street gunfire in snowy Boston. <short pause> In March 1770 , panicked redcoats fired into a stone-throwing crowd in Boston, killing five people including Crispus Attucks . Paul Revere’s print stirred colonial fury.",
-            "paired_prose_hash": "b87c8e0935",
-            "connective": "Tempers boiled over into deadly street gunfire in snowy Boston."
+            "paired_prose_hash": "e0209bffc8",
+            "connective": "Tempers boiled over into deadly street gunfire in snowy Boston.",
+            "prose_hash": "e0209bffc8"
           },
           {
             "badge": "Stage 4",
@@ -8226,8 +8312,9 @@ export default {
             "stat": "18m Pounds of Unsold East India Company Tea",
             "html": "To rescue the struggling <strong>East India Company</strong>, the <strong>1773 Tea Act</strong> gave it a colonial tea monopoly. Even cheaper tea angered colonists because <strong>unvoted taxes</strong> stayed.",
             "spoken": "Parliament soon set a clever tax trap using cheap tea. <short pause> To rescue the struggling East India Company , the 1773 Tea Act gave it a colonial tea monopoly. Even cheaper tea angered colonists because unvoted taxes stayed.",
-            "paired_prose_hash": "013723a188",
-            "connective": "Parliament soon set a clever tax trap using cheap tea."
+            "paired_prose_hash": "1cf3614fea",
+            "connective": "Parliament soon set a clever tax trap using cheap tea.",
+            "prose_hash": "1cf3614fea"
           },
           {
             "badge": "Stage 5",
@@ -8239,8 +8326,9 @@ export default {
             "stat": "£10,000 of Tea Dumped Into Boston Harbour",
             "html": "Disguised <strong>Sons of Liberty</strong> boarded three ships and dumped <strong>342 tea chests</strong> into Boston Harbour. Furious, Britain passed the <strong>1774 Coercive Acts</strong> shutting Boston’s port.",
             "spoken": "Boston rebels answered with a daring midnight harbour raid. <short pause> Disguised Sons of Liberty boarded three ships and dumped 342 tea chests into Boston Harbour. Furious, Britain passed the 1774 Coercive Acts shutting Boston’s port.",
-            "paired_prose_hash": "ed7b3d0476",
-            "connective": "Boston rebels answered with a daring midnight harbour raid."
+            "paired_prose_hash": "a8473b50ad",
+            "connective": "Boston rebels answered with a daring midnight harbour raid.",
+            "prose_hash": "a8473b50ad"
           },
           {
             "badge": "⚡ Outcome",
@@ -8327,11 +8415,11 @@ export default {
             "title": "Lexington, Concord & Dunmore’s Proclamation",
             "actor": "Colonial Minutemen & Lord Dunmore",
             "tag": "⚔️ OUTBREAK OF WAR",
-            "trigger": "British redcoats clashed with colonial minutemen at Lexington and Concord, while Virginia’s royal governor Lord Dunmore offered freedom to any enslaved person joining the King’s army.",
-            "connective": "Ignited revolutionary war and terrified American rebel slaveholders, prompting thousands of Black Loyalists to fight for the British Crown.",
+            "trigger": "After Paul Revere’s midnight warning in April 1775, Massachusetts farmers clashed with redcoats marching toward Concord weapon stores on Lexington Green.",
+            "connective": "Virginia governor Lord Dunmore promised emancipation to enslaved Black labourers who fled Patriot masters for King George III, driving southern slaveholders into full rebellion.",
             "question": "How did fighting at Lexington and Dunmore’s offer widen the war in 1775?",
             "para_ref": "[5.1]",
-            "prose_hash": "1f49217539"
+            "prose_hash": "818318fb5a"
           },
           {
             "step": 2,
@@ -8339,11 +8427,11 @@ export default {
             "title": "The Declaration of Independence & The Slavery Paradox",
             "actor": "Thomas Jefferson & Continental Congress",
             "tag": "📜 1776 DECLARATION",
-            "trigger": "Thomas Jefferson drafted the Declaration proclaiming \"all men are created equal\", while forty-one of the fifty-six rebel signatories were themselves wealthy slaveholders.",
-            "connective": "Created a profound moral contradiction at the core of the new American Republic that British critics like Dr Samuel Johnson sharply ridiculed.",
+            "trigger": "In July 1776 at Philadelphia, Virginian planter Thomas Jefferson drafted the Declaration of Independence proclaiming all men created equal with natural rights to life and liberty.",
+            "connective": "Exposed stark hypocrisy noted by Samuel Johnson: forty-one of the fifty-six signatories personally enslaved human beings while half a million African Americans remained in chattel bondage.",
             "question": "What contradiction lay behind Jefferson’s 1776 claim of equal rights?",
             "para_ref": "[5.2]",
-            "prose_hash": "29526bbbb8"
+            "prose_hash": "21223bc7b3"
           },
           {
             "step": 3,
@@ -8351,11 +8439,11 @@ export default {
             "title": "Saratoga & The French Global Intervention",
             "actor": "General Burgoyne & King Louis XVI",
             "tag": "🌍 GLOBAL COALITION",
-            "trigger": "The American victory at Saratoga convinced France, Spain, and the Dutch Republic to join the war, deploying battle fleets to threaten British Caribbean sugar islands.",
-            "connective": "Stretched the Royal Navy thin across the globe, preventing Britain from concentrating its military forces exclusively on North America.",
+            "trigger": "Following Thomas Paine’s Common Sense in 1776, Continental troops trapped General Burgoyne’s army at Saratoga in October 1777, convincing King Louis XVI to ally France with America.",
+            "connective": "Westminster diverted vital Royal Navy warships away from North America to shield Britain’s lucrative Caribbean sugar colonies from French seizure.",
             "question": "How did victory at Saratoga in 1777 turn the war into a global clash?",
             "para_ref": "[5.3]",
-            "prose_hash": "ead7646977"
+            "prose_hash": "0a4d3175ce"
           },
           {
             "step": 4,
@@ -8363,11 +8451,11 @@ export default {
             "title": "The Siege of Yorktown & British Surrender",
             "actor": "General Cornwallis & French Fleet (De Grasse)",
             "tag": "💥 YORKTOWN DEFEAT",
-            "trigger": "Admiral de Grasse’s French fleet won the Battle of the Chesapeake, trapping General Cornwallis on the Yorktown peninsula without naval rescue until he surrendered.",
-            "connective": "Shattered Britain’s political will to continue fighting, forcing Parliament to open peace negotiations and accept American independence.",
+            "trigger": "At Yorktown in autumn 1781, French Admiral de Grasse sealed off Chesapeake Bay with warships while George Washington’s allied armies besieged Lord Cornwallis by land.",
+            "connective": "Pounded by siege artillery without naval rescue, Cornwallis surrendered eight thousand redcoats on 19 October 1781 as a British band played The World Turned Upside Down.",
             "question": "How did Washington and French warships trap Cornwallis at Yorktown?",
             "para_ref": "[5.4]",
-            "prose_hash": "839cc4de36"
+            "prose_hash": "7d02a002d2"
           },
           {
             "step": 5,
@@ -8375,11 +8463,11 @@ export default {
             "title": "The Treaty of Paris & The Black Loyalist Exodus",
             "actor": "Sir Guy Carleton & 3,000 Black Loyalists",
             "tag": "🕊️ TREATY OF PARIS",
-            "trigger": "The Treaty of Paris recognized American independence, while British Commander Sir Guy Carleton refused George Washington’s demands and evacuated 3,000 Black Loyalists to Nova Scotia.",
-            "connective": "Marked the dramatic collapse of the First British Empire in the Atlantic, turning Britain’s imperial attention eastward toward India and the Pacific.",
+            "trigger": "As the September 1783 peace treaty at Paris recognized the sovereign United States, commander Sir Guy Carleton recorded three thousand Black Loyalists inside Book of Negroes ledgers.",
+            "connective": "Armed with signed freedom certificates, families boarded evacuation ships in New York bound for Nova Scotia, with over a thousand later founding Freetown in Sierra Leone.",
             "question": "What happened to the 3,000 Black Loyalists after the 1783 Paris treaty?",
             "para_ref": "[5.5]",
-            "prose_hash": "361ca7d998"
+            "prose_hash": "964015e2b2"
           }
         ]
       },
@@ -8402,9 +8490,9 @@ export default {
           },
           {
             "stage": 3,
-            "question": "On what date did British soldiers fire into a crowd on Boston’s icy King Street during the Boston Massacre?",
-            "answer": "5 March 1770",
-            "explanation": "On 5 March 1770, panicked British redcoats fired on a hostile crowd on King Street in Boston."
+            "question": "What immediately triggered panicked British soldiers to open fire on colonists during the 1770 Boston Massacre?",
+            "answer": "Crowds pelted a British sentry with snowballs, ice, and sharp oyster shells",
+            "explanation": "In the confusion of being surrounded and pelted with ice and oyster shells on King Street, panicked redcoats fired their muskets, killing five colonists."
           },
           {
             "stage": 4,
@@ -8526,7 +8614,7 @@ export default {
         {
           "act": 1,
           "title": "The Shot Heard ’Round the World: Lexington & Concord (April 1775)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In April 1775, British redcoats marched to seize colonial munitions at Concord. The famous Paul Revere midnight alarm warned town militias to mobilize, leading to an armed standoff at Lexington Green where someone fired the shot heard round the world.</p><p class=\"prose-p\">As war spread, Virginia’s royal governor issued Dunmore’s freedom offer, promising emancipation to enslaved Black laborers who fled rebel plantations to bear arms for King George III, prompting thousands to join the British forces.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> Before dawn on 19 April 1775, seventy sleepy Massachusetts farmers stood clutching muskets on damp Lexington Green after silversmith Paul Revere galloped through midnight lanes warning that British redcoats were marching toward Concord weapon stores. One unrecorded pistol flash triggered the shot heard round the world and ignited open war.</p><p class=\"prose-p\">That November, Virginia’s royal governor Lord Dunmore turned rebel rhetoric upside down by promising emancipation to enslaved Black labourers who fled Patriot masters to bear arms for King George III. While Loyalist-owned captives stayed chained, thousands of courageous Black volunteers crossed British lines—driving panicked southern slaveholders into full rebellion.</p>",
           "image": "/images/battle_of_lexington_1775.jpg",
           "image_alt": "1775 hand-coloured engraving by Amos Doolittle titled The Battle of Lexington, April 19th 1775, Plate I showing British Regular grenadiers in red coats firing a volley into dispersing Massachusetts militia on Lexington Green",
           "caption": "The Battle of Lexington, April 19th 1775, Plate I (engraved by eyewitness militiaman Amos Doolittle, December 1775): Major Pitcairn’s British Regulars fire upon colonial Minutemen on Lexington Green—the \"shot heard ’round the world\" that ignited the Revolutionary War.",
@@ -8588,13 +8676,13 @@ export default {
           ],
           "theme_heading": "The Shot Heard ’Round the World: Lexington & Concord (April 1775)",
           "heading": "The Shot Heard ’Round the World: Lexington & Concord (April 1775)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In April 1775, British redcoats marched to seize colonial munitions at Concord. The famous Paul Revere midnight alarm warned town militias to mobilize, leading to an armed standoff at Lexington Green where someone fired the shot heard round the world.</p><p class=\"prose-p\">As war spread, Virginia’s royal governor issued Dunmore’s freedom offer, promising emancipation to enslaved Black laborers who fled rebel plantations to bear arms for King George III, prompting thousands to join the British forces.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In April 1775, British redcoats marched to seize colonial munitions at Concord. The famous Paul Revere midnight alarm warned town militias to mobilize, leading to an armed standoff at Lexington Green where someone fired the shot heard round the world.</p><p class=\"prose-p\">As war spread, Virginia’s royal governor issued Dunmore’s freedom offer, promising emancipation to enslaved Black laborers who fled rebel plantations to bear arms for King George III, prompting thousands to join the British forces.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> Before dawn on 19 April 1775, seventy sleepy Massachusetts farmers stood clutching muskets on damp Lexington Green after silversmith Paul Revere galloped through midnight lanes warning that British redcoats were marching toward Concord weapon stores. One unrecorded pistol flash triggered the shot heard round the world and ignited open war.</p><p class=\"prose-p\">That November, Virginia’s royal governor Lord Dunmore turned rebel rhetoric upside down by promising emancipation to enslaved Black labourers who fled Patriot masters to bear arms for King George III. While Loyalist-owned captives stayed chained, thousands of courageous Black volunteers crossed British lines—driving panicked southern slaveholders into full rebellion.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> Before dawn on 19 April 1775, seventy sleepy Massachusetts farmers stood clutching muskets on damp Lexington Green after silversmith Paul Revere galloped through midnight lanes warning that British redcoats were marching toward Concord weapon stores. One unrecorded pistol flash triggered the shot heard round the world and ignited open war.</p><p class=\"prose-p\">That November, Virginia’s royal governor Lord Dunmore turned rebel rhetoric upside down by promising emancipation to enslaved Black labourers who fled Patriot masters to bear arms for King George III. While Loyalist-owned captives stayed chained, thousands of courageous Black volunteers crossed British lines—driving panicked southern slaveholders into full rebellion.</p>"
         },
         {
           "act": 2,
           "title": "The 1776 Declaration & The Paradox of Liberty (July 1776)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> In July 1776, the Continental Congress in Philadelphia met to adopt the Declaration of Independence. Drafting the historic text with Jefferson’s eagle quill, Thomas Jefferson wrote the immortal words declaring that all men created equal with natural rights to life and liberty.</p><p class=\"prose-p\">Yet the founding document concealed a profound moral hypocrisy: forty-one of the fifty-six slaveholder signatories personally owned enslaved humans, deliberately denying basic legal and human freedom to half a million African Americans across the colonies.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Inside Philadelphia’s sweltering State House in July 1776, wealthy Virginian planter Thomas Jefferson dipped his quill to draft the Declaration of Independence while an enslaved teenager named Robert Hemings waited quietly on his personal needs. Jefferson’s soaring preamble proclaimed all men created equal with natural rights to life and liberty.</p><p class=\"prose-p\">London critic Samuel Johnson dryly asked why the loudest yelps for liberty came from drivers of enslaved people, and the numbers proved his point. Forty-one of the fifty-six Philadelphia signatories personally enslaved human beings, founding an independent republic that kept half a million African Americans locked in legal chattel bondage.</p>",
           "source": {
             "id": "fbe_l5_src_b",
             "letter": "B",
@@ -8653,8 +8741,8 @@ export default {
           ],
           "theme_heading": "The 1776 Declaration & The Paradox of Liberty (July 1776)",
           "heading": "The 1776 Declaration & The Paradox of Liberty (July 1776)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> In July 1776, the Continental Congress in Philadelphia met to adopt the Declaration of Independence. Drafting the historic text with Jefferson’s eagle quill, Thomas Jefferson wrote the immortal words declaring that all men created equal with natural rights to life and liberty.</p><p class=\"prose-p\">Yet the founding document concealed a profound moral hypocrisy: forty-one of the fifty-six slaveholder signatories personally owned enslaved humans, deliberately denying basic legal and human freedom to half a million African Americans across the colonies.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> In July 1776, the Continental Congress in Philadelphia met to adopt the Declaration of Independence. Drafting the historic text with Jefferson’s eagle quill, Thomas Jefferson wrote the immortal words declaring that all men created equal with natural rights to life and liberty.</p><p class=\"prose-p\">Yet the founding document concealed a profound moral hypocrisy: forty-one of the fifty-six slaveholder signatories personally owned enslaved humans, deliberately denying basic legal and human freedom to half a million African Americans across the colonies.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Inside Philadelphia’s sweltering State House in July 1776, wealthy Virginian planter Thomas Jefferson dipped his quill to draft the Declaration of Independence while an enslaved teenager named Robert Hemings waited quietly on his personal needs. Jefferson’s soaring preamble proclaimed all men created equal with natural rights to life and liberty.</p><p class=\"prose-p\">London critic Samuel Johnson dryly asked why the loudest yelps for liberty came from drivers of enslaved people, and the numbers proved his point. Forty-one of the fifty-six Philadelphia signatories personally enslaved human beings, founding an independent republic that kept half a million African Americans locked in legal chattel bondage.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Inside Philadelphia’s sweltering State House in July 1776, wealthy Virginian planter Thomas Jefferson dipped his quill to draft the Declaration of Independence while an enslaved teenager named Robert Hemings waited quietly on his personal needs. Jefferson’s soaring preamble proclaimed all men created equal with natural rights to life and liberty.</p><p class=\"prose-p\">London critic Samuel Johnson dryly asked why the loudest yelps for liberty came from drivers of enslaved people, and the numbers proved his point. Forty-one of the fifty-six Philadelphia signatories personally enslaved human beings, founding an independent republic that kept half a million African Americans locked in legal chattel bondage.</p>",
           "concept_widget": {
             "type": "spectrum_slider",
             "eyebrow": "Year 8 Enlightenment Contradiction",
@@ -8755,7 +8843,7 @@ export default {
         {
           "act": 3,
           "title": "Thomas Paine’s Common Sense & The Global Alliance (1776–1778)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> The decisive turning point arrived in October 1777 at Saratoga, where American continental forces triumphed by defeating General Burgoyne. This victory convinced King Louis XVI warships and French armies to enter the conflict as formal military allies of the American rebels.</p><p class=\"prose-p\">The conflict transformed rapidly into a global war. Great Britain suffered severe sugar island divergence, compelled to divert vital warships away from North America to safeguard its fabulously lucrative Caribbean sugar colonies against French capture.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> Read aloud beside campfires in 1776, radical writer Thomas Paine’s fiery pamphlet <em>Common Sense</em> mocked hereditary kingship and rallied wavering colonists behind independence. Yet rhetoric needed cannon: only when Continental troops trapped General Burgoyne’s army in New York forests at Saratoga in October 1777 did European powers smell British blood.</p><p class=\"prose-p\">Eager to avenge France’s earlier colonial humiliation, King Louis XVI entered the war as America’s formal ally with fleets and regular troops. Tellingly, Westminster cared more about sugar profits than mainland prestige—diverting vital Royal Navy warships away from North America to shield Britain’s lucrative Caribbean sugar colonies from French seizure.</p>",
           "source": {
             "id": "fbe_l5_src_c",
             "letter": "C",
@@ -8812,8 +8900,8 @@ export default {
           ],
           "theme_heading": "Thomas Paine’s Common Sense & The Global Alliance (1776–1778)",
           "heading": "Thomas Paine’s Common Sense & The Global Alliance (1776–1778)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> The decisive turning point arrived in October 1777 at Saratoga, where American continental forces triumphed by defeating General Burgoyne. This victory convinced King Louis XVI warships and French armies to enter the conflict as formal military allies of the American rebels.</p><p class=\"prose-p\">The conflict transformed rapidly into a global war. Great Britain suffered severe sugar island divergence, compelled to divert vital warships away from North America to safeguard its fabulously lucrative Caribbean sugar colonies against French capture.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> The decisive turning point arrived in October 1777 at Saratoga, where American continental forces triumphed by defeating General Burgoyne. This victory convinced King Louis XVI warships and French armies to enter the conflict as formal military allies of the American rebels.</p><p class=\"prose-p\">The conflict transformed rapidly into a global war. Great Britain suffered severe sugar island divergence, compelled to divert vital warships away from North America to safeguard its fabulously lucrative Caribbean sugar colonies against French capture.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> Read aloud beside campfires in 1776, radical writer Thomas Paine’s fiery pamphlet <em>Common Sense</em> mocked hereditary kingship and rallied wavering colonists behind independence. Yet rhetoric needed cannon: only when Continental troops trapped General Burgoyne’s army in New York forests at Saratoga in October 1777 did European powers smell British blood.</p><p class=\"prose-p\">Eager to avenge France’s earlier colonial humiliation, King Louis XVI entered the war as America’s formal ally with fleets and regular troops. Tellingly, Westminster cared more about sugar profits than mainland prestige—diverting vital Royal Navy warships away from North America to shield Britain’s lucrative Caribbean sugar colonies from French seizure.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> Read aloud beside campfires in 1776, radical writer Thomas Paine’s fiery pamphlet <em>Common Sense</em> mocked hereditary kingship and rallied wavering colonists behind independence. Yet rhetoric needed cannon: only when Continental troops trapped General Burgoyne’s army in New York forests at Saratoga in October 1777 did European powers smell British blood.</p><p class=\"prose-p\">Eager to avenge France’s earlier colonial humiliation, King Louis XVI entered the war as America’s formal ally with fleets and regular troops. Tellingly, Westminster cared more about sugar profits than mainland prestige—diverting vital Royal Navy warships away from North America to shield Britain’s lucrative Caribbean sugar colonies from French seizure.</p>",
           "image": "/images/ks3_fbe/fbe_l5_b2_surrender_of_burgoyne_saratoga_1777.jpg",
           "image_alt": "John Trumbull oil painting Surrender of General Burgoyne showing British General John Burgoyne in red coat offering his sword to American General Horatio Gates beneath the Stars and Stripes at Saratoga on 17 October 1777",
           "caption": "Surrender of General Burgoyne at Saratoga (John Trumbull, 1821, US Capitol Rotunda): British General John Burgoyne surrenders his army to General Horatio Gates on 17 October 1777—the decisive American victory that persuaded King Louis XVI’s France to enter the war as a formal military ally."
@@ -8821,7 +8909,7 @@ export default {
         {
           "act": 4,
           "title": "Siege of Yorktown & British Surrender (October 1781)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> In autumn 1781, British commander Lord Cornwallis marched into a peninsula trap at Yorktown, Virginia. George Washington’s forces besieged the garrison by land, while French Admiral de Grasse Chesapeake blockade cut off all British naval reinforcements and rescue.</p><p class=\"prose-p\">Trapped and relentlessly pounded by heavy artillery, Cornwallis surrendered eight thousand redcoats on 19 October 1781. As defeated British soldiers marched out to lay down their muskets, their military band famously played the melancholy ballad The World Turned Upside Down.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Digging trenches onto Virginia’s coastal peninsula at Yorktown in autumn 1781, General Lord Cornwallis assumed the Royal Navy would always rule the waves at his back. Instead, French Admiral de Grasse sealed off Chesapeake Bay with twenty-four warships while George Washington’s allied French and American armies besieged the trapped garrison by land.</p><p class=\"prose-p\">Shattered by weeks of relentless siege artillery and cut off from naval rescue, Cornwallis surrendered eight thousand redcoats on 19 October 1781—pleading convenient illness so his deputy had to hand over his sword. As defeated ranks grounded their muskets, a British band fittingly played the ballad <em>The World Turned Upside Down</em>.</p>",
           "image": "/images/surrender_of_cornwallis_1781.jpg",
           "image_alt": "John Trumbull oil painting Surrender of Lord Cornwallis showing defeated British forces marching between ranks of French troops under a white flag and American Continentals under the Stars and Stripes at Yorktown in October 1781",
           "caption": "Surrender of Lord Cornwallis at Yorktown, Virginia (John Trumbull, 1820, US Capitol Rotunda): Trapped between George Washington’s Continental Army by land and Admiral de Grasse’s French fleet in Chesapeake Bay, 8,000 British soldiers laid down their arms on 19 October 1781.",
@@ -8881,13 +8969,13 @@ export default {
           ],
           "theme_heading": "Siege of Yorktown & British Surrender (October 1781)",
           "heading": "Siege of Yorktown & British Surrender (October 1781)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> In autumn 1781, British commander Lord Cornwallis marched into a peninsula trap at Yorktown, Virginia. George Washington’s forces besieged the garrison by land, while French Admiral de Grasse Chesapeake blockade cut off all British naval reinforcements and rescue.</p><p class=\"prose-p\">Trapped and relentlessly pounded by heavy artillery, Cornwallis surrendered eight thousand redcoats on 19 October 1781. As defeated British soldiers marched out to lay down their muskets, their military band famously played the melancholy ballad The World Turned Upside Down.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> In autumn 1781, British commander Lord Cornwallis marched into a peninsula trap at Yorktown, Virginia. George Washington’s forces besieged the garrison by land, while French Admiral de Grasse Chesapeake blockade cut off all British naval reinforcements and rescue.</p><p class=\"prose-p\">Trapped and relentlessly pounded by heavy artillery, Cornwallis surrendered eight thousand redcoats on 19 October 1781. As defeated British soldiers marched out to lay down their muskets, their military band famously played the melancholy ballad The World Turned Upside Down.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Digging trenches onto Virginia’s coastal peninsula at Yorktown in autumn 1781, General Lord Cornwallis assumed the Royal Navy would always rule the waves at his back. Instead, French Admiral de Grasse sealed off Chesapeake Bay with twenty-four warships while George Washington’s allied French and American armies besieged the trapped garrison by land.</p><p class=\"prose-p\">Shattered by weeks of relentless siege artillery and cut off from naval rescue, Cornwallis surrendered eight thousand redcoats on 19 October 1781—pleading convenient illness so his deputy had to hand over his sword. As defeated ranks grounded their muskets, a British band fittingly played the ballad <em>The World Turned Upside Down</em>.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Digging trenches onto Virginia’s coastal peninsula at Yorktown in autumn 1781, General Lord Cornwallis assumed the Royal Navy would always rule the waves at his back. Instead, French Admiral de Grasse sealed off Chesapeake Bay with twenty-four warships while George Washington’s allied French and American armies besieged the trapped garrison by land.</p><p class=\"prose-p\">Shattered by weeks of relentless siege artillery and cut off from naval rescue, Cornwallis surrendered eight thousand redcoats on 19 October 1781—pleading convenient illness so his deputy had to hand over his sword. As defeated ranks grounded their muskets, a British band fittingly played the ballad <em>The World Turned Upside Down</em>.</p>"
         },
         {
           "act": 5,
           "title": "The Treaty of Paris & The Black Loyalists (1783)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> In September 1783, the American independence treaty signed at Paris recognized the United States as a sovereign republic. In New York, British commander Sir Guy Carleton protected three thousand Black Loyalists who had loyally served the British Crown during the war.</p><p class=\"prose-p\">British military clerks registered their names into Book of Negroes ledgers, issuing freedom certificates that allowed families to board Nova Scotia evacuation ships, securing liberty in Canada and later founding Freetown in Sierra Leone.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> At a New York dockside table in September 1783, military clerks recorded names and scars inside leather-bound <em>Book of Negroes</em> ledgers just as the peace treaty at Paris recognized the sovereign United States. Defying American slaveholders’ demands, British commander Sir Guy Carleton protected three thousand Black Loyalists who had served the Crown.</p><p class=\"prose-p\">Armed with signed freedom certificates, families boarded Royal Navy evacuation ships bound for Nova Scotia—leaving newly independent champions of liberty fuming on the pier. When stony Canadian farms and broken land promises brought fresh hardship, over a thousand Black settlers sailed eastward again in 1792 to found Freetown in Sierra Leone.</p>",
           "source": {
             "id": "fbe_l5_src_e",
             "letter": "E",
@@ -8944,8 +9032,8 @@ export default {
           ],
           "theme_heading": "The Treaty of Paris & The Black Loyalists (1783)",
           "heading": "The Treaty of Paris & The Black Loyalists (1783)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> In September 1783, the American independence treaty signed at Paris recognized the United States as a sovereign republic. In New York, British commander Sir Guy Carleton protected three thousand Black Loyalists who had loyally served the British Crown during the war.</p><p class=\"prose-p\">British military clerks registered their names into Book of Negroes ledgers, issuing freedom certificates that allowed families to board Nova Scotia evacuation ships, securing liberty in Canada and later founding Freetown in Sierra Leone.</p>",
-          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> In September 1783, the American independence treaty signed at Paris recognized the United States as a sovereign republic. In New York, British commander Sir Guy Carleton protected three thousand Black Loyalists who had loyally served the British Crown during the war.</p><p class=\"prose-p\">British military clerks registered their names into Book of Negroes ledgers, issuing freedom certificates that allowed families to board Nova Scotia evacuation ships, securing liberty in Canada and later founding Freetown in Sierra Leone.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> At a New York dockside table in September 1783, military clerks recorded names and scars inside leather-bound <em>Book of Negroes</em> ledgers just as the peace treaty at Paris recognized the sovereign United States. Defying American slaveholders’ demands, British commander Sir Guy Carleton protected three thousand Black Loyalists who had served the Crown.</p><p class=\"prose-p\">Armed with signed freedom certificates, families boarded Royal Navy evacuation ships bound for Nova Scotia—leaving newly independent champions of liberty fuming on the pier. When stony Canadian farms and broken land promises brought fresh hardship, over a thousand Black settlers sailed eastward again in 1792 to found Freetown in Sierra Leone.</p>",
+          "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> At a New York dockside table in September 1783, military clerks recorded names and scars inside leather-bound <em>Book of Negroes</em> ledgers just as the peace treaty at Paris recognized the sovereign United States. Defying American slaveholders’ demands, British commander Sir Guy Carleton protected three thousand Black Loyalists who had served the Crown.</p><p class=\"prose-p\">Armed with signed freedom certificates, families boarded Royal Navy evacuation ships bound for Nova Scotia—leaving newly independent champions of liberty fuming on the pier. When stony Canadian farms and broken land promises brought fresh hardship, over a thousand Black settlers sailed eastward again in 1792 to found Freetown in Sierra Leone.</p>",
           "image": "/images/ks3_fbe/fbe_l5_b4_black_loyalist_shelburne_nova_scotia_1788.jpg",
           "image_alt": "1788 eyewitness watercolour by British Royal Engineers officer Captain William Booth inscribed A Black Wood Cutter at Shelburne, Nova Scotia showing a free Black Loyalist settler sawing timber on a trestle",
           "caption": "A Black Wood Cutter at Shelburne, Nova Scotia (eyewitness watercolour by Captain William Booth, November 1788, Library and Archives Canada): Depicting one of the 3,000 emancipated Black Loyalists recorded in the 1783 Book of Negroes who evacuated New York aboard British ships to build free communities in Nova Scotia and later Freetown, Sierra Leone."
@@ -9883,7 +9971,8 @@ export default {
           "question": "How did fighting at Lexington and Dunmore’s offer widen the war in 1775?",
           "heading": "How did fighting at Lexington and Dunmore’s offer widen the war in 1775?",
           "focus_clue": "How did fighting at Lexington and Dunmore’s offer widen the war in 1775?",
-          "prose_hash": "1f49217539"
+          "prose_hash": "818318fb5a",
+          "para_ref": "[5.1]"
         },
         {
           "step": 2,
@@ -9916,7 +10005,8 @@ export default {
           "question": "What contradiction lay behind Jefferson’s 1776 claim of equal rights?",
           "heading": "What contradiction lay behind Jefferson’s 1776 claim of equal rights?",
           "focus_clue": "What contradiction lay behind Jefferson’s 1776 claim of equal rights?",
-          "prose_hash": "29526bbbb8"
+          "prose_hash": "21223bc7b3",
+          "para_ref": "[5.2]"
         },
         {
           "step": 3,
@@ -9949,7 +10039,8 @@ export default {
           "question": "How did victory at Saratoga in 1777 turn the war into a global clash?",
           "heading": "How did victory at Saratoga in 1777 turn the war into a global clash?",
           "focus_clue": "How did victory at Saratoga in 1777 turn the war into a global clash?",
-          "prose_hash": "ead7646977"
+          "prose_hash": "0a4d3175ce",
+          "para_ref": "[5.3]"
         },
         {
           "step": 4,
@@ -9982,7 +10073,8 @@ export default {
           "question": "How did Washington and French warships trap Cornwallis at Yorktown?",
           "heading": "How did Washington and French warships trap Cornwallis at Yorktown?",
           "focus_clue": "How did Washington and French warships trap Cornwallis at Yorktown?",
-          "prose_hash": "839cc4de36"
+          "prose_hash": "7d02a002d2",
+          "para_ref": "[5.4]"
         },
         {
           "step": 5,
@@ -10015,7 +10107,8 @@ export default {
           "question": "What happened to the 3,000 Black Loyalists after the 1783 Paris treaty?",
           "heading": "What happened to the 3,000 Black Loyalists after the 1783 Paris treaty?",
           "focus_clue": "What happened to the 3,000 Black Loyalists after the 1783 Paris treaty?",
-          "prose_hash": "361ca7d998"
+          "prose_hash": "964015e2b2",
+          "para_ref": "[5.5]"
         }
       ],
       "enquiry_question": "How did the American Revolution win independence while leaving slavery intact?",
@@ -10054,8 +10147,9 @@ export default {
             "stat": "Thousands of Enslaved People Joined Britain",
             "html": "In April <strong>1775</strong>, gunfire at <strong>Lexington</strong> started open war. Soon Governor <strong>Lord Dunmore</strong> promised freedom to enslaved Black workers who fled rebel masters to fight.",
             "spoken": "How did the American Revolution shatter the First British Empire? <short pause> In April 1775 , gunfire at Lexington started open war. Soon Governor Lord Dunmore promised freedom to enslaved Black workers who fled rebel masters to fight.",
-            "paired_prose_hash": "1f49217539",
-            "connective": "How did the American Revolution shatter the First British Empire?"
+            "paired_prose_hash": "818318fb5a",
+            "connective": "How did the American Revolution shatter the First British Empire?",
+            "prose_hash": "818318fb5a"
           },
           {
             "badge": "Stage 2",
@@ -10067,8 +10161,9 @@ export default {
             "stat": "41 of 56 Signers Personally Enslaved People",
             "html": "In July <strong>1776</strong>, <strong>Thomas Jefferson’s</strong> Declaration proclaimed all men are created equal. Yet <strong>41 of 56 signers</strong> owned enslaved people, denying freedom to 500,000 Black Americans.",
             "spoken": "America’s famous 1776 birth certificate held a deep contradiction. <short pause> In July 1776 , Thomas Jefferson’s Declaration proclaimed all men are created equal. Yet 41 of 56 signers owned enslaved people, denying freedom to 500,000 Black Americans.",
-            "paired_prose_hash": "29526bbbb8",
-            "connective": "America’s famous 1776 birth certificate held a deep contradiction."
+            "paired_prose_hash": "21223bc7b3",
+            "connective": "America’s famous 1776 birth certificate held a deep contradiction.",
+            "prose_hash": "21223bc7b3"
           },
           {
             "badge": "Stage 3",
@@ -10079,8 +10174,9 @@ export default {
             "stat": "Britain Diverted Ships to Guard Sugar Islands",
             "html": "Victory at <strong>Saratoga</strong> in 1777 convinced <strong>France</strong> to send troops and fleets. Britain pulled warships away from America to guard rich <strong>Caribbean sugar</strong> islands.",
             "spoken": "A shocking rebel battlefield triumph soon turned the revolt into a world war. <short pause> Victory at Saratoga in 1777 convinced France to send troops and fleets. Britain pulled warships away from America to guard rich Caribbean sugar islands.",
-            "paired_prose_hash": "ead7646977",
-            "connective": "A shocking rebel battlefield triumph soon turned the revolt into a world war."
+            "paired_prose_hash": "0a4d3175ce",
+            "connective": "A shocking rebel battlefield triumph soon turned the revolt into a world war.",
+            "prose_hash": "0a4d3175ce"
           },
           {
             "badge": "Stage 4",
@@ -10092,8 +10188,9 @@ export default {
             "stat": "8,000 British Redcoats Surrendered at Yorktown",
             "html": "At <strong>Yorktown</strong> in October 1781, <strong>George Washington’s</strong> army and French warships trapped General <strong>Cornwallis</strong>. Surrounded and shelled, 8,000 British troops surrendered.",
             "spoken": "Allied armies and warships soon sprang a trap in Virginia. <short pause> At Yorktown in October 1781, George Washington’s army and French warships trapped General Cornwallis . Surrounded and shelled, 8,000 British troops surrendered.",
-            "paired_prose_hash": "839cc4de36",
-            "connective": "Allied armies and warships soon sprang a trap in Virginia."
+            "paired_prose_hash": "7d02a002d2",
+            "connective": "Allied armies and warships soon sprang a trap in Virginia.",
+            "prose_hash": "7d02a002d2"
           },
           {
             "badge": "Stage 5",
@@ -10104,8 +10201,9 @@ export default {
             "stat": "3,000 Black Loyalists Sailed Free to Canada",
             "html": "The <strong>1783 Treaty of Paris</strong> recognized the United States. Recording <strong>3,000 Black Loyalists</strong> in the <strong>Book of Negroes</strong>, British ships evacuated freed families to Nova Scotia.",
             "spoken": "Peace in 1783 brought American independence and Black Loyalist evacuation. <short pause> The 1783 Treaty of Paris recognized the United States. Recording 3,000 Black Loyalists in the Book of Negroes , British ships evacuated freed families to Nova Scotia.",
-            "paired_prose_hash": "361ca7d998",
-            "connective": "Peace in 1783 brought American independence and Black Loyalist evacuation."
+            "paired_prose_hash": "964015e2b2",
+            "connective": "Peace in 1783 brought American independence and Black Loyalist evacuation.",
+            "prose_hash": "964015e2b2"
           },
           {
             "badge": "⚡ Outcome",

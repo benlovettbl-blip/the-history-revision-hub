@@ -43,8 +43,8 @@
           }
         ],
         "watch_out": "The East India Company began in 1600 as a private joint-stock trading syndicate, not a department of the British government or an army of conquest.",
-        "prose_hash": "d312e02ab7",
-        "prose_fp": "52ed8a74",
+        "prose_hash": "20413c190e",
+        "prose_fp": "3da7c800",
         "question_hash": "1f200dca3a"
       },
       {
@@ -88,8 +88,8 @@
           }
         ],
         "watch_out": "Seventeenth-century Company factories were fortified coastal warehouses run by merchant agents called factors, not industrial steam mills with machinery.",
-        "prose_hash": "2eb2b0c312",
-        "prose_fp": "1c242443",
+        "prose_hash": "d70b7b6f3b",
+        "prose_fp": "81078bee",
         "question_hash": "1ee0b824d7"
       },
       {
@@ -133,8 +133,8 @@
           }
         ],
         "watch_out": "Siraj ud-Daulah did not attack Calcutta unprovoked—he marched to stop a foreign trading company illegally mounting heavy artillery inside his sovereign province.",
-        "prose_hash": "06f0b53c63",
-        "prose_fp": "bcb9bf53",
+        "prose_hash": "2660726d81",
+        "prose_fp": "66e20864",
         "question_hash": "6bac79b1b6"
       },
       {
@@ -178,8 +178,8 @@
           }
         ],
         "watch_out": "Plassey was won primarily through political conspiracy, Indian banker backing, and Mir Jafar's treason rather than superior British military numbers.",
-        "prose_hash": "95830a13fc",
-        "prose_fp": "7b4eaf4c",
+        "prose_hash": "2d24221e13",
+        "prose_fp": "c7aa87f6",
         "question_hash": "8d0ebc20ef"
       },
       {
@@ -223,8 +223,8 @@
           }
         ],
         "watch_out": "The 1770 Bengal famine was not merely a natural drought—relentless East India Company tax extraction stripped villages of grain reserves needed to survive.",
-        "prose_hash": "88ef574995",
-        "prose_fp": "3ed4fc14",
+        "prose_hash": "84880ad9fa",
+        "prose_fp": "876c586b",
         "question_hash": "3a4832025e"
       }
     ],
@@ -234,15 +234,15 @@
         "passage": [
           {
             "hint": "Outward leg",
-            "bullet": "Liverpool and Bristol ships carried guns, iron, and cloth → traded in West Africa for captives"
+            "bullet": "Liverpool and Bristol hulls carried guns, iron bars, and textiles → traded in West Africa for captives"
           },
           {
             "hint": "Atlantic crossing",
-            "bullet": "Captains forced kidnapped Africans across the Atlantic → sold survivors onto brutal colonial plantations"
+            "bullet": "Survivors of the ocean crossing were sold onto brutal colonial plantations across the Americas"
           },
           {
             "hint": "Homeward cargo",
-            "bullet": "Vessels returned carrying slave-grown sugar, rum, tobacco, and cotton → enriched British banks and ports"
+            "bullet": "Ships sailed homeward packed with slave-grown sugar, rum, tobacco, and cotton → enriched British banks"
           }
         ],
         "context": [
@@ -270,8 +270,8 @@
           }
         ],
         "watch_out": "Triangular trade was not a distant colonial sideline—profits from enslaved labour directly financed British banks, factories, and port cities like Liverpool and Bristol.",
-        "prose_hash": "d19061fb7a",
-        "prose_fp": "6f83c2db",
+        "prose_hash": "1c7aeec364",
+        "prose_fp": "c39d9a66",
         "question_hash": "5ed99ab467"
       },
       {
@@ -315,8 +315,8 @@
           }
         ],
         "watch_out": "Transatlantic slave trading was not carried out solely by rogue pirates—the Stuart royal family personally led and profited from the Royal African Company.",
-        "prose_hash": "85d0fcc9ce",
-        "prose_fp": "5f1f6da1",
+        "prose_hash": "884c188ee5",
+        "prose_fp": "d00aef2e",
         "question_hash": "196f983057"
       },
       {
@@ -324,15 +324,15 @@
         "passage": [
           {
             "hint": "Tight packing",
-            "bullet": "Hundreds were chained onto cramped wooden shelves → allowed less space than a coffin"
+            "bullet": "Hundreds lay packed chained on wooden shelves below deck → less room than a wooden coffin"
           },
           {
             "hint": "Disease below",
-            "bullet": "Suffocating, filthy holds spread seasickness, fevers, and dysentery across the eight-week voyage"
+            "bullet": "Heavy iron shackles amid stifling heat and filth spread seasickness, dysentery, and fevers"
           },
           {
             "hint": "Mortality toll",
-            "bullet": "Roughly one in six captives perished at sea → crews threw dead bodies overboard"
+            "bullet": "Roughly one in six captive Africans perished at sea → bodies cast into the Atlantic wake"
           }
         ],
         "context": [
@@ -360,8 +360,8 @@
           }
         ],
         "watch_out": "Enslaved Africans did not remain passive during the Middle Passage—crews used heavy iron shackles and deck barricades precisely because shipboard revolts were frequent.",
-        "prose_hash": "41850172d6",
-        "prose_fp": "d6a98f46",
+        "prose_hash": "e4436defb1",
+        "prose_fp": "31dddd6d",
         "question_hash": "1d5ec65dc3"
       },
       {
@@ -405,8 +405,8 @@
           }
         ],
         "watch_out": "No crew member of the Zong was ever prosecuted for murder—the 1783 London court case was strictly a civil dispute between slave-ship owners and insurance underwriters.",
-        "prose_hash": "78d01bd78a",
-        "prose_fp": "56a9bc40",
+        "prose_hash": "825e4e8a12",
+        "prose_fp": "c0a3ed27",
         "question_hash": "6b71dbd4ed"
       },
       {
@@ -450,8 +450,8 @@
           }
         ],
         "watch_out": "The 1807 Abolition Act banned the transatlantic slave trade on British ships, but it did not free people already enslaved on Caribbean plantations until 1833.",
-        "prose_hash": "e583e1df57",
-        "prose_fp": "3ea508a6",
+        "prose_hash": "65ba1120f4",
+        "prose_fp": "49906e63",
         "question_hash": "9614c5ed31"
       }
     ],
@@ -497,8 +497,8 @@
           }
         ],
         "watch_out": "Jamaican Maroons did not wait to be granted freedom by Europeans—they liberated themselves during the 1655 invasion and defended sovereign towns for over eighty years.",
-        "prose_hash": "d919c12046",
-        "prose_fp": "7b27efb1",
+        "prose_hash": "1728c8bb14",
+        "prose_fp": "a314303b",
         "question_hash": "636d2c125f"
       },
       {
@@ -542,8 +542,8 @@
           }
         ],
         "watch_out": "Sugar plantations were not simple farms—they operated like deadly agro-industrial factories where fast cane processing combined heavy field labour with dangerous mill machinery.",
-        "prose_hash": "4421a0837d",
-        "prose_fp": "d5676ea0",
+        "prose_hash": "dceceacda0",
+        "prose_fp": "b01fdbd6",
         "question_hash": "5c30ad75f9"
       },
       {
@@ -587,8 +587,8 @@
           }
         ],
         "watch_out": "Resistance was not limited to armed uprisings—covert workplace sabotage and preserving West African culture were vital daily weapons against dehumanisation.",
-        "prose_hash": "166b831ad9",
-        "prose_fp": "a9862fe5",
+        "prose_hash": "532ed67011",
+        "prose_fp": "7ea06b8d",
         "question_hash": "a4201e5646"
       },
       {
@@ -632,8 +632,8 @@
           }
         ],
         "watch_out": "Queen Nanny was a real historical Asante leader documented in colonial Jamaican dispatches, even though British officials tried to dismiss her authority as witchcraft.",
-        "prose_hash": "2458fa7673",
-        "prose_fp": "b72d6d1b",
+        "prose_hash": "01ec57bcd6",
+        "prose_fp": "34c1185a",
         "question_hash": "a0990b92be"
       },
       {
@@ -641,15 +641,15 @@
         "passage": [
           {
             "hint": "British exhaustion",
-            "bullet": "Costly jungle defeats forced Governor Edward Trelawny to seek a white-flag truce in 1739"
+            "bullet": "Failed jungle marches and tropical fevers forced Governor Edward Trelawny to send a white truce flag in 1739"
           },
           {
             "hint": "Sovereign territory",
-            "bullet": "Treaty terms recognized Maroon freedom and granted 1,500 sovereign acres of mountain land"
+            "bullet": "Peace treaties recognized Maroon freedom and guaranteed 1,500 sovereign acres of fertile mountain land"
           },
           {
             "hint": "Fugitive clause",
-            "bullet": "Maroon leaders agreed to return future plantation runaways → protected autonomy through painful compromise"
+            "bullet": "Maroon fighters agreed to assist authorities by returning enslaved fugitives who escaped plantations"
           }
         ],
         "context": [
@@ -677,8 +677,8 @@
           }
         ],
         "watch_out": "The 1739 treaty secured real freedom for existing Maroon communities, yet it deliberately stabilized plantation slavery by cutting off mountain sanctuary for new runaways.",
-        "prose_hash": "ae1911c46a",
-        "prose_fp": "0924c100",
+        "prose_hash": "e93fa34b51",
+        "prose_fp": "ecd2d508",
         "question_hash": "a1163a82fb"
       }
     ],
@@ -724,8 +724,8 @@
           }
         ],
         "watch_out": "Winning the Seven Years' War ironically weakened Britain's hold on America—removing French Canada made colonists less reliant on British troops just as London demanded higher taxes.",
-        "prose_hash": "64f946f1a6",
-        "prose_fp": "a51bb8b1",
+        "prose_hash": "4c03ee5805",
+        "prose_fp": "dccd1bda",
         "question_hash": "2bc2df84f5"
       },
       {
@@ -733,15 +733,15 @@
         "passage": [
           {
             "hint": "Constitutional principle",
-            "bullet": "Colonists elected zero Westminster MPs → argued Stamp Act taxes violated freeborn English rights"
+            "bullet": "Stamp Act taxed newspapers and playing cards → taxation without representation in Westminster violated English rights"
           },
           {
             "hint": "Street intimidation",
-            "bullet": "Sons of Liberty burned tax offices and hung effigies → forced royal stamp collectors to resign"
+            "bullet": "Sons of Liberty swung effigies of stamp collectors and ransacked royal tax offices until officials resigned"
           },
           {
             "hint": "Economic leverage",
-            "bullet": "Coordinated boycotts crippled British manufacturing exports → pressured Parliament into repealing the tax in 1766"
+            "bullet": "Coordinated colonial import boycotts starved British workshops → pressured MPs to repeal the tax in 1766"
           }
         ],
         "context": [
@@ -769,8 +769,8 @@
           }
         ],
         "watch_out": "Colonists did not protest merely because stamps were expensive—they feared accepting any internal tax passed without elected colonial representatives would destroy self-government.",
-        "prose_hash": "87d122070b",
-        "prose_fp": "0ca233d6",
+        "prose_hash": "94fbd0dd22",
+        "prose_fp": "e92fa6c3",
         "question_hash": "404c1a2165"
       },
       {
@@ -814,8 +814,8 @@
           }
         ],
         "watch_out": "Paul Revere's famous print is propaganda rather than an accurate eyewitness record—it erased the snowballs, clubs, and confusion to portray an ordered execution.",
-        "prose_hash": "bb95fa5c14",
-        "prose_fp": "d8abfdb0",
+        "prose_hash": "36bb5c7c2e",
+        "prose_fp": "25f45f7c",
         "question_hash": "cc395d8688"
       },
       {
@@ -823,15 +823,15 @@
         "passage": [
           {
             "hint": "Corporate bailout",
-            "bullet": "Parliament let the struggling East India Company ship 18m pounds of surplus tea direct"
+            "bullet": "Parliament rescued the debt-ridden East India Company from 18 million pounds of unsold surplus tea"
           },
           {
             "hint": "Merchant squeeze",
-            "bullet": "Direct corporate sales undercut smuggled Dutch tea and cut out independent colonial merchants"
+            "bullet": "Legal Company tea undercut smuggled Dutch imports while bypassing local merchants across American ports"
           },
           {
             "hint": "Taxation trap",
-            "bullet": "Buying cheaper Company tea still paid Townshend tea duty → conceded Parliament's right to tax"
+            "bullet": "Enforcing parliamentary taxes without consent exposed a constitutional trap → sparked colonial port blockades"
           }
         ],
         "context": [
@@ -859,8 +859,8 @@
           }
         ],
         "watch_out": "The 1773 Tea Act actually made legal tea cheaper for Americans, not dearer—colonists rebelled against corporate monopoly and the hidden Parliamentary tax principle.",
-        "prose_hash": "0fe441c9f5",
-        "prose_fp": "9650efca",
+        "prose_hash": "4a7288aa72",
+        "prose_fp": "cb11c77f",
         "question_hash": "65799814d5"
       },
       {
@@ -904,8 +904,8 @@
           }
         ],
         "watch_out": "London intended the 1774 Coercive Acts—called the Intolerable Acts in America—to isolate radical Massachusetts, yet the crackdown rallied the other twelve colonies behind Boston.",
-        "prose_hash": "e8a4a42f8c",
-        "prose_fp": "cbdbd497",
+        "prose_hash": "95de3d68b3",
+        "prose_fp": "eeeacbca",
         "question_hash": "6aadf616c2"
       }
     ],
@@ -915,15 +915,15 @@
         "passage": [
           {
             "hint": "Concord munitions",
-            "bullet": "Redcoats marched to seize Concord weapon stores → triggered deadly militia gunfire at Lexington Green"
+            "bullet": "British redcoats marched toward Concord weapon stores → triggered open war on Lexington Green"
           },
           {
-            "hint": "Dunmore's emancipation",
-            "bullet": "Governor Dunmore promised freedom to enslaved people fleeing rebel masters to fight for George III"
+            "hint": "Dunmore’s emancipation",
+            "bullet": "Lord Dunmore promised emancipation to enslaved Black labourers who fled Patriot masters for King George III"
           },
           {
             "hint": "Southern escalation",
-            "bullet": "Thousands of Black volunteers joined British lines → pushed southern slaveholders firmly into rebellion"
+            "bullet": "Thousands of Black volunteers crossed British lines → drove panicked southern slaveholders into full rebellion"
           }
         ],
         "context": [
@@ -951,8 +951,8 @@
           }
         ],
         "watch_out": "Lord Dunmore was not a moral abolitionist—his 1775 proclamation was a military tactic aimed only at rebel slaveholders while keeping Loyalist-owned captives enslaved.",
-        "prose_hash": "853779a52c",
-        "prose_fp": "69d65b81",
+        "prose_hash": "63476dbd02",
+        "prose_fp": "07794df3",
         "question_hash": "15c6f7f776"
       },
       {
@@ -996,8 +996,8 @@
           }
         ],
         "watch_out": "Do not assume people in 1776 failed to notice this hypocrisy—British critics like Samuel Johnson and African American petitioners immediately pointed out the contradiction.",
-        "prose_hash": "725209971b",
-        "prose_fp": "895c6ef7",
+        "prose_hash": "bf39a06100",
+        "prose_fp": "070eb9ef",
         "question_hash": "0a1c99a3f7"
       },
       {
@@ -1041,8 +1041,8 @@
           }
         ],
         "watch_out": "To eighteenth-century British ministers, tiny Caribbean sugar islands like Jamaica generated far greater customs wealth than all thirteen mainland colonies combined.",
-        "prose_hash": "bc82349a98",
-        "prose_fp": "c13b70c2",
+        "prose_hash": "d5754a2b10",
+        "prose_fp": "3895f427",
         "question_hash": "9b02e95109"
       },
       {
@@ -1086,8 +1086,8 @@
           }
         ],
         "watch_out": "George Washington could not have trapped Cornwallis alone—French Admiral de Grasse's fleet at Chesapeake Bay and thousands of regular French siege troops were decisive.",
-        "prose_hash": "ae50d9a866",
-        "prose_fp": "b34b51f5",
+        "prose_hash": "43c5a967be",
+        "prose_fp": "c110ebad",
         "question_hash": "a44919d898"
       },
       {
@@ -1131,8 +1131,8 @@
           }
         ],
         "watch_out": "Freedom in Nova Scotia brought harsh winters, poor soil, and racial discrimination, leading over a thousand Black Loyalists to relocate again in 1792 to found Freetown in Sierra Leone.",
-        "prose_hash": "57456b33a5",
-        "prose_fp": "cd45cb54",
+        "prose_hash": "466efcf55a",
+        "prose_fp": "460f7306",
         "question_hash": "d000d447de"
       }
     ]

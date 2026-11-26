@@ -1178,7 +1178,7 @@ async function buildUnitHtml(cfg) {
     .ftr .pg { font-weight: 800; color: var(--navy); white-space: nowrap; flex-shrink: 0; margin-left: 10px; }
 
     /* ================= PAGE 1: COVER ================= */
-    .cover-body-wrap { min-height: 0; }
+    .cover-body-wrap { flex: 1; display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 12px; min-height: 0; }
     .cover-top-bar {
       display: flex;
       justify-content: space-between;
@@ -2030,11 +2030,13 @@ async function calibrateAndAuditInBrowser(page) {
       const syn = coverPg.querySelector('.syn-body');
       const heroGrid = coverPg.querySelector('.cover-hero-grid');
       if (tds.length && wrap && ftr) {
+        wrap.style.flex = '0 0 auto';
+        wrap.style.paddingBottom = '0px';
         let bestCover = null;
-        for (let pad = 4.5; pad <= 20.0; pad += 0.5) {
-          const synPt = Math.min(11.4, 9.5 + (pad - 4.5) * 0.14);
-          const hMm = Math.round(84 + (pad - 4.5) * 1.4);
-          const wideMm = Math.round(58 + (pad - 4.5) * 2.1);
+        for (let pad = 2.0; pad <= 25.0; pad += 0.2) {
+          const synPt = Math.min(11.6, 9.0 + (pad - 2.0) * 0.14);
+          const hMm = Math.round(64 + (pad - 2.0) * 2.1);
+          const wideMm = Math.round(44 + (pad - 2.0) * 2.2);
           tds.forEach((td) => { td.style.padding = `${pad.toFixed(1)}px 10px`; });
           if (syn) syn.style.fontSize = synPt.toFixed(2) + 'pt';
           if (heroGrid && tds.length <= 24) {
@@ -2044,16 +2046,17 @@ async function calibrateAndAuditInBrowser(page) {
             wideImgWrap.style.height = wideMm + 'mm';
           }
           const clr = ftr.getBoundingClientRect().top - wrap.getBoundingClientRect().bottom;
-          if (coverPg.scrollHeight <= coverPg.clientHeight + 1 && clr >= 14) {
+          if (coverPg.scrollHeight <= coverPg.clientHeight + 1 && clr >= 40) {
             bestCover = { pad, synPt, hMm, wideMm };
           }
         }
-        if (bestCover) {
-          tds.forEach((td) => { td.style.padding = `${bestCover.pad.toFixed(1)}px 10px`; });
-          if (syn) syn.style.fontSize = bestCover.synPt.toFixed(2) + 'pt';
-          if (heroGrid && tds.length <= 24) heroGrid.style.height = bestCover.hMm + 'mm';
-          if (wideImgWrap) wideImgWrap.style.height = bestCover.wideMm + 'mm';
-        }
+        const applyCover = bestCover || { pad: 2.0, synPt: 9.0, hMm: 64, wideMm: 44 };
+        tds.forEach((td) => { td.style.padding = `${applyCover.pad.toFixed(1)}px 10px`; });
+        if (syn) syn.style.fontSize = applyCover.synPt.toFixed(2) + 'pt';
+        if (heroGrid && tds.length <= 24) heroGrid.style.height = applyCover.hMm + 'mm';
+        if (wideImgWrap) wideImgWrap.style.height = applyCover.wideMm + 'mm';
+        wrap.style.flex = '1';
+        wrap.style.paddingBottom = '12px';
       } else if (compactItems.length && wrap && ftr) {
         let bestCompact = null;
         for (let step = 0; step <= 24; step++) {
@@ -2118,7 +2121,7 @@ async function calibrateAndAuditInBrowser(page) {
         const pageOverflow = pg.scrollHeight - pg.clientHeight;
         const horizOverflow = cols.scrollWidth - cols.clientWidth;
 
-        if (pageOverflow <= 1 && horizOverflow <= 2 && clearance >= 14) {
+        if (pageOverflow <= 1 && horizOverflow <= 2 && clearance >= 22) {
           chosen = { pt, lh, secMb, pMb, clearance: Math.round(clearance) };
         }
       }

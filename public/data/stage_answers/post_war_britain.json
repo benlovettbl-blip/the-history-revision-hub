@@ -43,24 +43,26 @@
           }
         ],
         "watch_out": "Do not confuse peaceful Suffragists in the NUWSS with militant Suffragettes in the WSPU founded six years later.",
-        "prose_hash": "ea3ab8eb06",
-        "prose_fp": "5b1e19ff",
+        "prose_hash": "2f921b9395",
+        "prose_fp": "92bd642b",
         "question_hash": "6b188682fa"
       },
       {
         "stage": 2,
+        "prose_hash": "eb6a77543c",
+        "question_hash": "35bdb0469e",
         "passage": [
           {
             "hint": "Parliamentary delay",
-            "bullet": "Decades of stalled peaceful lobbying frustrated Emmeline Pankhurst → founded the WSPU in October 1903"
+            "bullet": "Forty years of talked-out petitions frustrated Emmeline Pankhurst → founded the WSPU in October 1903"
           },
           {
             "hint": "Headline publicity",
-            "bullet": "Chained themselves to railings and disrupted rallies → forced female suffrage onto front-page news"
+            "bullet": "Suffragettes chained themselves to iron railings and disrupted rallies → forced female suffrage onto front-page headlines"
           },
           {
             "hint": "Military discipline",
-            "bullet": "Operated as a strict hierarchy confronting police → pressured ministers to concede the vote"
+            "bullet": "Organised as a disciplined military hierarchy confronting police → pressured Liberal ministers outside Buckingham Palace"
           }
         ],
         "context": [
@@ -88,9 +90,7 @@
           }
         ],
         "watch_out": "Suffragettes did not start with extreme violence in 1903—early WSPU militancy focused on heckling, rallies, and headline-grabbing disruption.",
-        "prose_hash": "80a12b83e7",
-        "prose_fp": "2badfd31",
-        "question_hash": "35bdb0469e"
+        "prose_fp": "e98fe67c"
       },
       {
         "stage": 3,
@@ -133,8 +133,8 @@
           }
         ],
         "watch_out": "The 1913 Cat and Mouse Act was not an act of mercy—it let authorities avoid prison deaths while re-imprisoning women repeatedly.",
-        "prose_hash": "96c3abd6b1",
-        "prose_fp": "5a58a2a8",
+        "prose_hash": "15a3b30a8f",
+        "prose_fp": "74e5ee4c",
         "question_hash": "debaf1582b"
       },
       {
@@ -178,8 +178,8 @@
           }
         ],
         "watch_out": "The Bodyguard used jiu-jitsu and clubs defensively to stop police re-arresting Pankhurst under the Cat and Mouse Act, not to launch random attacks.",
-        "prose_hash": "0badea0006",
-        "prose_fp": "9af164d3",
+        "prose_hash": "790753b867",
+        "prose_fp": "4e2fe8b1",
         "question_hash": "7d033260ca"
       },
       {
@@ -223,8 +223,8 @@
           }
         ],
         "watch_out": "The 1918 Act did not give all women the vote—young working-class Canary Girls under thirty were still excluded until 1928.",
-        "prose_hash": "34950ff09b",
-        "prose_fp": "598a1140",
+        "prose_hash": "603ba01b15",
+        "prose_fp": "94e77a4d",
         "question_hash": "218a6b4ef1"
       }
     ],
@@ -270,8 +270,8 @@
           }
         ],
         "watch_out": "Evacuation did not immediately create harmony—initial shock and prejudice at urban poverty forced wealthier Britons to recognise the need for state welfare.",
-        "prose_hash": "a2daadb869",
-        "prose_fp": "bc3889ac",
+        "prose_hash": "d2ed8661d7",
+        "prose_fp": "ebdff6fa",
         "question_hash": "425d816147"
       },
       {
@@ -315,8 +315,8 @@
           }
         ],
         "watch_out": "Memorise both Beveridge’s Giant names and their everyday meanings—Want meant poverty, Squalor meant slum housing, and Idleness meant unemployment.",
-        "prose_hash": "92667f788c",
-        "prose_fp": "d9c268bb",
+        "prose_hash": "956b3830fb",
+        "prose_fp": "7413d6bc",
         "question_hash": "2c9c1c69c0"
       },
       {
@@ -360,8 +360,8 @@
           }
         ],
         "watch_out": "Voters did not turn against Churchill personally in 1945—they rejected Conservative interwar austerity in favour of Labour’s Beveridge welfare pledges.",
-        "prose_hash": "c15c41e31e",
-        "prose_fp": "12f16185",
+        "prose_hash": "658b715324",
+        "prose_fp": "0fa28215",
         "question_hash": "e936dbf14b"
       },
       {
@@ -405,8 +405,8 @@
           }
         ],
         "watch_out": "Do not confuse the 1946 National Insurance Act — funded by weekly worker contributions — with the 1948 National Assistance safety net for non-contributors.",
-        "prose_hash": "0060f34d5c",
-        "prose_fp": "b9425eb0",
+        "prose_hash": "af23d16cc1",
+        "prose_fp": "704ad8fa",
         "question_hash": "72cb112afe"
       },
       {
@@ -450,26 +450,28 @@
           }
         ],
         "watch_out": "Free at the point of delivery did not mean the NHS cost nothing—it was paid for collectively through general taxation rather than upfront doctor bills.",
-        "prose_hash": "ded691ab0c",
-        "prose_fp": "0701bf5a",
+        "prose_hash": "3e5e425682",
+        "prose_fp": "8168fe20",
         "question_hash": "b36c74dd74"
       }
     ],
     "lesson_3": [
       {
         "stage": 1,
+        "prose_hash": "c440cdbdad",
+        "question_hash": "a7a3ac6a68",
         "passage": [
           {
             "hint": "Wartime losses",
-            "bullet": "Hundreds of thousands of British deaths and Blitz devastation → created acute post-war labour shortages"
+            "bullet": "Hundreds of thousands of workers killed and Blitz rubble → left half-empty wards and railway sheds"
           },
           {
             "hint": "Public services",
-            "bullet": "Newly founded NHS hospitals, railways, and London Transport → urgently needed nurses, drivers, and engineers"
+            "bullet": "Coal mines alongside the new NHS, London Transport, and railways → urgently needed nurses, drivers, and engineers"
           },
           {
             "hint": "Commonwealth drive",
-            "bullet": "British agencies actively recruited across the Caribbean, India, and Pakistan → staffed national reconstruction"
+            "bullet": "Ministries placed recruitment advertisements across the Caribbean, India, and Pakistan → invited citizens to rebuild Britain"
           }
         ],
         "context": [
@@ -497,9 +499,7 @@
           }
         ],
         "watch_out": "Caribbean and South Asian pioneers did not arrive uninvited—the British government, NHS, and London Transport actively recruited them to rebuild Britain.",
-        "prose_hash": "ce955079fe",
-        "prose_fp": "30dcd053",
-        "question_hash": "a7a3ac6a68"
+        "prose_fp": "a7e0ae68"
       },
       {
         "stage": 2,
@@ -542,8 +542,8 @@
           }
         ],
         "watch_out": "Windrush passengers were not foreign immigrants entering on temporary work permits—under the 1948 Act they arrived as full British citizens.",
-        "prose_hash": "091d97e484",
-        "prose_fp": "3afc1a8b",
+        "prose_hash": "745de31c1e",
+        "prose_fp": "d357e73d",
         "question_hash": "ba08f8d4d5"
       },
       {
@@ -587,8 +587,8 @@
           }
         ],
         "watch_out": "Windrush was not the very first ship bringing Black people to Britain, nor did all 492 passengers come only from Jamaica—many sailed from Trinidad and Barbados too.",
-        "prose_hash": "85baea7d58",
-        "prose_fp": "26400f03",
+        "prose_hash": "004abe3bfb",
+        "prose_fp": "371642d7",
         "question_hash": "050fabec70"
       },
       {
@@ -632,8 +632,8 @@
           }
         ],
         "watch_out": "A pardner hand was not charity or a bank loan—it was a disciplined rotating savings club based on mutual community trust.",
-        "prose_hash": "46867e5c2e",
-        "prose_fp": "7d6fb34a",
+        "prose_hash": "64f14cd83d",
+        "prose_fp": "eb12279e",
         "question_hash": "41c1af0d12"
       },
       {
@@ -677,8 +677,8 @@
           }
         ],
         "watch_out": "Claudia Jones’s 1959 Caribbean Carnival was held indoors at St Pancras Town Hall in winter—the outdoor Notting Hill street festival developed later in the 1960s.",
-        "prose_hash": "5672536f89",
-        "prose_fp": "0db18d3c",
+        "prose_hash": "6fcb8f6675",
+        "prose_fp": "5ab413e7",
         "question_hash": "54672e5fb7"
       }
     ],
@@ -724,24 +724,26 @@
           }
         ],
         "watch_out": "Racism in the 1963 bus dispute came from both management and local white TGWU union members, not solely from company bosses.",
-        "prose_hash": "8e284300b6",
-        "prose_fp": "1229ad36",
+        "prose_hash": "84cf3ee0b6",
+        "prose_fp": "0dad672c",
         "question_hash": "76f196ee68"
       },
       {
         "stage": 2,
+        "prose_hash": "868f8c5577",
+        "question_hash": "0ebf139244",
         "passage": [
           {
             "hint": "Ideal candidate",
-            "bullet": "Selected qualified 18-year-old Boys’ Brigade officer Guy Bailey → removed any excuse about skills or character"
+            "bullet": "Qualified 18-year-old Boys’ Brigade officer Guy Bailey secured a conductor interview → removed excuses about schooling"
           },
           {
             "hint": "Telephone test",
-            "bullet": "Paul Stephenson phoned to state Bailey was West Indian → manager immediately cancelled the interview"
+            "bullet": "Paul Stephenson mentioned Bailey was West Indian → depot manager immediately cancelled the interview by phone"
           },
           {
             "hint": "Press exposure",
-            "bullet": "Alerted Bristol journalists with direct proof → shattered company denials and sparked citywide outrage"
+            "bullet": "Stephenson handed undeniable proof to the local press → exposed the racial bar across evening headlines"
           }
         ],
         "context": [
@@ -769,24 +771,24 @@
           }
         ],
         "watch_out": "Guy Bailey was not rejected after failing an interview—the company offered him the interview on merit, then cancelled it solely upon learning he was West Indian.",
-        "prose_hash": "58c35c5648",
-        "prose_fp": "6d74898c",
-        "question_hash": "0ebf139244"
+        "prose_fp": "ad1c4d7c"
       },
       {
         "stage": 3,
+        "prose_hash": "3aed54e240",
+        "question_hash": "3e892ac33e",
         "passage": [
           {
-            "hint": "Collective action",
-            "bullet": "West Indian Development Council launched boycott on 30 April 1963 → united 3,000 Black residents"
+            "hint": "Citywide launch",
+            "bullet": "West Indian Development Council launched boycott on 30 April 1963 → united 3,000 West Indians and white sympathizers"
           },
           {
             "hint": "Financial hit",
-            "bullet": "Black passengers and white allies walked to work → drained daily ticket revenue from buses"
+            "bullet": "Thousands walked past empty buses in the rain → started cutting bus ticket revenue immediately"
           },
           {
             "hint": "Media spotlight",
-            "bullet": "Sustained peaceful protest drew national newspaper and TV coverage → shamed company managers across Britain"
+            "bullet": "Inspired by the 1955 Montgomery Boycott → peaceful protest succeeded in drawing national media attention"
           }
         ],
         "context": [
@@ -814,9 +816,7 @@
           }
         ],
         "watch_out": "Do not confuse the 1955 Montgomery Bus Boycott against segregated US seating with the 1963 Bristol Boycott against a ban on hiring Black bus crews.",
-        "prose_hash": "ec20cb27f8",
-        "prose_fp": "acf4bd44",
-        "question_hash": "3e892ac33e"
+        "prose_fp": "a60e991c"
       },
       {
         "stage": 4,
@@ -859,8 +859,8 @@
           }
         ],
         "watch_out": "Harold Wilson was still Opposition leader in 1963—he pledged anti-racism laws during the boycott and passed them after winning power in 1964.",
-        "prose_hash": "51f10b774b",
-        "prose_fp": "8078b20d",
+        "prose_hash": "ac7dbaf4bf",
+        "prose_fp": "4c4040d1",
         "question_hash": "c92cdc43bd"
       },
       {
@@ -904,8 +904,8 @@
           }
         ],
         "watch_out": "The 1965 Race Relations Act outlawed discrimination only in public places—employment and housing bans were not made illegal until the 1968 Act.",
-        "prose_hash": "2acd1f3360",
-        "prose_fp": "090ff3fe",
+        "prose_hash": "b66ff59551",
+        "prose_fp": "8e6c29e2",
         "question_hash": "14b5ed1400"
       }
     ],
@@ -951,24 +951,26 @@
           }
         ],
         "watch_out": "Britain’s nuclear bomb was not purely a Conservative project—Labour Prime Minister Clement Attlee initiated the atomic programme alongside building the NHS.",
-        "prose_hash": "158e633896",
-        "prose_fp": "02adf15c",
+        "prose_hash": "bd7d024d7b",
+        "prose_fp": "cb1c4a63",
         "question_hash": "b0705b40f6"
       },
       {
         "stage": 2,
+        "prose_hash": "8b1dad5b9c",
+        "question_hash": "6c29d480f9",
         "passage": [
           {
-            "hint": "Fallout horror",
-            "bullet": "Growing alarm over genetic damage from atmospheric H-bomb fallout → sparked CND’s launch in February 1958"
+            "hint": "Semaphore design",
+            "bullet": "Designer Gerald Holtom drew outstretched arms inside a circle → combined naval semaphore signals for Nuclear Disarmament"
+          },
+          {
+            "hint": "Uncopyrighted badge",
+            "bullet": "Adopted in London in February 1958 by CND → uncopyrighted emblem became the global peace symbol"
           },
           {
             "hint": "Unilateral goal",
-            "bullet": "Bertrand Russell and Canon Collins demanded Britain scrap nuclear weapons first → set a moral example"
-          },
-          {
-            "hint": "Semaphore design",
-            "bullet": "Gerald Holtom fused naval flag signals for N and D → stood for Nuclear Disarmament"
+            "bullet": "Bertrand Russell and Canon Collins warned of radioactive fallout → demanded unilateral nuclear disarmament"
           }
         ],
         "context": [
@@ -996,9 +998,7 @@
           }
         ],
         "watch_out": "Unilateral disarmament meant Britain giving up its nuclear weapons independently first, rather than waiting for multilateral treaties with the USA and USSR.",
-        "prose_hash": "f60d79d022",
-        "prose_fp": "27ec6601",
-        "question_hash": "6c29d480f9"
+        "prose_fp": "ce0958fe"
       },
       {
         "stage": 3,
@@ -1041,8 +1041,8 @@
           }
         ],
         "watch_out": "Aldermaston was not an American missile airbase—it was Britain’s own Atomic Weapons Research Establishment where British warheads were designed.",
-        "prose_hash": "7bfb6ed5d5",
-        "prose_fp": "d866f269",
+        "prose_hash": "9a5e9ed6a5",
+        "prose_fp": "d589c181",
         "question_hash": "f56ab2fa81"
       },
       {
@@ -1086,24 +1086,26 @@
           }
         ],
         "watch_out": "The York Cold War Bunker was never a public bomb shelter for York residents—it was a sealed monitoring post exclusively for sixty Royal Observer Corps staff.",
-        "prose_hash": "6c0d6ae7f5",
-        "prose_fp": "2f218a6f",
+        "prose_hash": "5a0fbf02f8",
+        "prose_fp": "5f311728",
         "question_hash": "304424d59a"
       },
       {
         "stage": 5,
+        "prose_hash": "be2dd5e725",
+        "question_hash": "54015e31ec",
         "passage": [
           {
             "hint": "Makeshift shelter",
-            "bullet": "Advised leaning wooden doors and mattresses after a four-minute warning → exposed hopeless nuclear defence"
+            "bullet": "1980 Protect and Survive booklet advised unscrewing wooden doors with mattresses and sandbags → darkly absurd Inner Core Shelter"
           },
           {
-            "hint": "Intellectual critique",
-            "bullet": "Public ridicule inspired E. P. Thompson’s Protest and Survive → revived mass CND membership in 1980"
+            "hint": "Counter-pamphlet",
+            "bullet": "Outrage fuelled historian E. P. Thompson’s scathing Protest and Survive → revived mass anti-nuclear protest"
           },
           {
             "hint": "Embrace the Base",
-            "bullet": "Thirty thousand women encircled Greenham Common’s nine-mile fence in 1982 → protested US cruise missiles"
+            "bullet": "30,000 women linked hands at RAF Greenham Common in December 1982 → encircled the 9-mile fence against cruise missiles"
           }
         ],
         "context": [
@@ -1131,9 +1133,7 @@
           }
         ],
         "watch_out": "Protect and Survive failed to reassure the public—its flimsy wooden-door shelters convinced millions that preventing nuclear war through protest was the only survival strategy.",
-        "prose_hash": "207f6b1c87",
-        "prose_fp": "79fda9fc",
-        "question_hash": "54015e31ec"
+        "prose_fp": "c36553c5"
       }
     ]
   }

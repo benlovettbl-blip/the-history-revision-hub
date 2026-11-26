@@ -76,7 +76,7 @@ export const POST_WAR_BRITAIN_CORNERS = {
         corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
         label: "HOUSING DISCRIMINATION",
         title: "The Informal 'Colour Bar' & Hostile Landlords",
-        detail: "Signs declaring 'No Irish, No Blacks, No Dogs' in windows forced Caribbean families into damp, overcrowded rooms let by predatory slum landlords like Peter Rachman.",
+        detail: "Signs declaring 'No Blacks, No Dogs, No Irish' in windows forced Caribbean families into damp, overcrowded rooms let by exploitative inner-city landlords.",
         starter: "&ldquo;Our corner was decisive because widespread housing discrimination locked Caribbean families out of decent homes and forced them into squalid slums...&rdquo;"
       },
       {
@@ -108,8 +108,8 @@ export const POST_WAR_BRITAIN_CORNERS = {
       {
         corner: "Corner 1", location: "Front Left", color: "#dc2626", bg: "#fef2f2", border: "#fca5a5", badgeBg: "#fee2e2",
         label: "ECONOMIC PRESSURE",
-        title: "60-Day Commercial Boycott Paralyzing Passenger Revenue",
-        detail: "Thousands of Black residents and supportive students boycotted Bristol Omnibus buses for two months, hitting the company's ticket revenues directly where it hurt.",
+        title: "Four-Month Commercial Boycott Paralysing Passenger Revenue",
+        detail: "Thousands of Black residents and supportive students boycotted Bristol Omnibus buses for four months, hitting the company's ticket revenues directly where it hurt.",
         starter: "&ldquo;Our corner was decisive because a disciplined economic boycott inflicted severe financial losses that forced the bus company to back down...&rdquo;"
       },
       {

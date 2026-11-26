@@ -11,7 +11,7 @@ export const GREAT_WAR_STANDOFFS = {
       title: "Preserving the Balance of Power & Isolating France",
       objective: "Argue that Germany is a 'satiated' power desiring peace in Europe, and that careful diplomatic alliances with Russia and Austria-Hungary prevent another European war.",
       starter: "&ldquo;Germany seeks no further European territory; our alliances are purely defensive to preserve peace and prevent encirclement because...&rdquo;",
-      keyTerms: ["Realpolitik", "Three Emperors' League", "Satiated Power", "Defensive Alliances"]
+      keyTerms: ["Realpolitik", "Reinsurance Treaty (1887)", "Satiated Power", "Defensive Alliances"]
     },
     roleB: {
       name: "French Diplomatic Vanguard & Revanchists",

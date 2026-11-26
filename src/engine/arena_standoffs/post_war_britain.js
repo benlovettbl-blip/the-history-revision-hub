@@ -64,9 +64,9 @@ export const POST_WAR_BRITAIN_STANDOFFS = {
     roleA: {
       name: "Paul Stephenson, Roy Hackett & Guy Bailey",
       title: "The 1963 Bristol Bus Boycott: Ending the Colour Bar",
-      objective: "Lead a 60-day peaceful boycott of Bristol buses inspired by Rosa Parks, exposing the company's racist ban on Black drivers and conductors and forcing management to surrender.",
+      objective: "Lead a four-month peaceful boycott of Bristol buses inspired by the Montgomery Bus Boycott, exposing the company's racist ban on Black drivers and conductors and forcing management to surrender.",
       starter: "&ldquo;Refusing to hire qualified Black drivers simply because of the colour of their skin is an intolerable injustice; our peaceful boycott proved that economic unity can defeat racism because...&rdquo;",
-      keyTerms: ["Paul Stephenson & Roy Hackett", "60-Day Bus Boycott", "Bristol Omnibus Colour Bar", "Race Relations Act 1965"]
+      keyTerms: ["Paul Stephenson & Roy Hackett", "Four-Month Bus Boycott", "Bristol Omnibus Colour Bar", "Race Relations Act 1965"]
     },
     roleB: {
       name: "Ian Patey & Bristol Omnibus Transport Union (TGWU)",

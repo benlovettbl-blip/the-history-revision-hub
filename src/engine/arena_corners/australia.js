@@ -51,7 +51,7 @@ export const AUSTRALIA_CORNERS = {
         label: "UNSKILLED CONVICT LABOUR",
         title: "Urban Pickpockets with No Farming Experience",
         detail: "The 700 convicts were London pickpockets and domestic servants with zero farming, carpentry, or brickmaking skills, leaving the colony without skilled labour.",
-        starter: "&ldquo;Our corner was decisive because transporting urban thieves who had never held a plow meant the colony could not build shelters or grow food...&rdquo;"
+        starter: "&ldquo;Our corner was decisive because transporting urban thieves who had never held a plough meant the colony could not build shelters or grow food...&rdquo;"
       },
       {
         corner: "Corner 3", location: "Back Left", color: "#d97706", bg: "#fffbeb", border: "#fcd34d", badgeBg: "#fef3c7",
