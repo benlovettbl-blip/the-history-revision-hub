@@ -352,7 +352,7 @@ export default {
             "trigger": "Catherine of Aragon failed to produce a surviving male heir, convincing Henry that their marriage was cursed by God and threatening England with dynastic civil war.",
             "connective": "Propelled Henry to demand a papal annulment and fall passionately in love with Anne Boleyn, setting the Crown on a collision course with Rome.",
             "question": "Why did King Henry desperately want a royal annulment by 1527?",
-            "prose_hash": "ff01aaef2a"
+            "prose_hash": "bf327ce876"
           },
           {
             "step": 3,
@@ -525,7 +525,7 @@ export default {
         {
           "act": 2,
           "title": "The King’s Dynastic Crisis (1525–1527)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> By 1527, Henry faced an agonizing <strong>dynastic</strong> crisis. Catherine of Aragon was past forty and had borne only one living daughter, Princess Mary. Driven by a desperate need for a son to protect royal <strong>succession</strong>, Henry feared civil war if the Tudor dynasty collapsed without a male heir.</p><p class=\"prose-p\">Having fallen deeply in love for Anne Boleyn, Henry cited a strict Bible warning on marriage from Leviticus, claiming his marriage to Catherine was cursed. He demanded an official papal <strong>annulment</strong> to marry again.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> By 1527, Henry faced an agonizing <strong>dynastic</strong> crisis. Catherine of Aragon was past forty and had borne only one living daughter, Princess Mary. Driven by a desperate need for a son to protect royal <strong>succession</strong>, Henry feared civil war if the Tudor dynasty collapsed without a male heir.</p><p class=\"prose-p\">Having fallen deeply in love with Anne Boleyn, Henry cited a strict Bible warning on marriage from Leviticus, claiming his marriage to Catherine was cursed. He demanded an official papal <strong>annulment</strong> to marry again.</p>",
           "source": {
             "id": "monarchy_religion_power_l1_src_b",
             "letter": "B",
@@ -566,7 +566,7 @@ export default {
               }
             }
           ],
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> By 1527, Henry faced an agonizing <strong>dynastic</strong> crisis. Catherine of Aragon was past forty and had borne only one living daughter, Princess Mary. Driven by a desperate need for a son to protect royal <strong>succession</strong>, Henry feared civil war if the Tudor dynasty collapsed without a male heir.</p><p class=\"prose-p\">Having fallen deeply in love for Anne Boleyn, Henry cited a strict Bible warning on marriage from Leviticus, claiming his marriage to Catherine was cursed. He demanded an official papal <strong>annulment</strong> to marry again.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> By 1527, Henry faced an agonizing <strong>dynastic</strong> crisis. Catherine of Aragon was past forty and had borne only one living daughter, Princess Mary. Driven by a desperate need for a son to protect royal <strong>succession</strong>, Henry feared civil war if the Tudor dynasty collapsed without a male heir.</p><p class=\"prose-p\">Having fallen deeply in love with Anne Boleyn, Henry cited a strict Bible warning on marriage from Leviticus, claiming his marriage to Catherine was cursed. He demanded an official papal <strong>annulment</strong> to marry again.</p>",
           "concept_widget": {
             "type": "profile_deck",
             "eyebrow": "Interactive Dynastic Explorer",
@@ -1910,7 +1910,7 @@ export default {
           "focusClue": "Why did King Henry desperately want a royal annulment by 1527?",
           "para_ref": "[1.2]",
           "paraRef": "[1.2]",
-          "prose_hash": "ff01aaef2a"
+          "prose_hash": "bf327ce876"
         },
         {
           "step": 3,

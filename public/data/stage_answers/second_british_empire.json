@@ -411,7 +411,7 @@
       },
       {
         "stage": 5,
-        "prose_hash": "438290fc48",
+        "prose_hash": "7047381074",
         "question_hash": "8eb678674f",
         "passage": [
           {
@@ -451,8 +451,8 @@
             "stem": "In a society shaped by ____________, controlling ____________ mattered enormously."
           }
         ],
-        "watch_out": "Link facts directly to the question: Forcibly transformed India from the world's premier finished cloth exporter into an impoverished supplier of raw cotton to feed British factories.",
-        "prose_fp": "d84abb0c"
+        "watch_out": "Link facts directly to the question: Drove hundreds of thousands into landless agricultural peasant labour, prompting Governor-General William Bentinck to lament that weavers’ bones were bleaching the plains of India.",
+        "prose_fp": "ed0d6e1c"
       }
     ],
     "lesson_3": [

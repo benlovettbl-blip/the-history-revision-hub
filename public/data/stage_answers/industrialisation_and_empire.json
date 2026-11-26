@@ -4,7 +4,7 @@
     "lesson_1": [
       {
         "stage": 1,
-        "prose_hash": "09d587c97c",
+        "prose_hash": "7fd8ef36ed",
         "question_hash": "d334c487dc",
         "passage": [
           {
@@ -45,7 +45,7 @@
           }
         ],
         "watch_out": "Link facts directly to the question: Forced Britain to import 50,000 tons of Swedish Orgrounds iron annually, leaving the Royal Navy dangerously dependent on foreign Baltic shipping.",
-        "prose_fp": "86e9ef65"
+        "prose_fp": "e69033f6"
       },
       {
         "stage": 2,
@@ -542,8 +542,8 @@
           }
         ],
         "watch_out": "Cool, clear-looking pump water could still carry lethal cholera bacteria—residents could not detect invisible germs by sight or smell.",
-        "prose_hash": "69f104a58c",
-        "prose_fp": "baa455ec",
+        "prose_hash": "b948920f48",
+        "prose_fp": "c65bf6dd",
         "question_hash": "71c0a58780"
       },
       {
@@ -1092,7 +1092,7 @@
       },
       {
         "stage": 5,
-        "prose_hash": "5daaf47009",
+        "prose_hash": "127294b99b",
         "question_hash": "efc29fa851",
         "passage": [
           {
@@ -1133,7 +1133,7 @@
           }
         ],
         "watch_out": "Link facts directly to the question: Destroyed landlord and employer electoral intimidation, allowing working men to vote freely without fear of eviction or dismissal.",
-        "prose_fp": "b6ff2a6e"
+        "prose_fp": "182c84d1"
       }
     ]
   }

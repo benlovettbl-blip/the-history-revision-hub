@@ -244,7 +244,7 @@ export default {
           "question": "Why did wood shortages and brittle pig iron hold back British industry?",
           "questionHeading": "Why did wood shortages and brittle pig iron hold back British industry?",
           "focusClue": "Why did wood shortages and brittle pig iron hold back British industry?",
-          "prose_hash": "f6d152706c"
+          "prose_hash": "1b01e3439b"
         },
         {
           "step": 2,
@@ -396,7 +396,7 @@ export default {
             "connective": "Forced Britain to import 50,000 tons of Swedish Orgrounds iron annually, leaving the Royal Navy dangerously dependent on foreign Baltic shipping.",
             "because": "Centuries of timber felling for shipbuilding and glassworks stripped woodlands, while British coal contained chemical impurities that poisoned molten iron.",
             "therefore": "British blast furnaces could only produce brittle pig iron that shattered under hammer blows, holding imperial defence hostage to foreign trade.",
-            "prose_hash": "f6d152706c"
+            "prose_hash": "1b01e3439b"
           },
           {
             "step": 2,
@@ -539,7 +539,7 @@ export default {
           "act": 1,
           "title": "The Charcoal Bottleneck & Pig Iron Crisis (1750–1770)",
           "theme_heading": "The Charcoal Bottleneck & Pig Iron Crisis (1750–1770)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> Walk through an English valley in 1750 and you would find mile after mile of tree stumps where ancient oak woods once stood. Ironmasters needed mountains of timber charcoal to smelt ore, causing severe deforestation of English oak woodlands just when shipbuilders needed timber most.</p><p class=\"prose-p\">Switching to cheap coal seemed obvious, yet coal-fired blast furnaces poured out brittle impure pig iron poisoned with carbon and sulphur that fractured under a blacksmith’s hammer. Embarrassingly for a proud maritime power, Britain relied on expensive Swedish imports of bar iron to forge Royal Navy anchors and cannon.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> Across English river valleys in 1750, mile after mile of blackened tree stumps marked where ancient oak woods had once stood. Ironmasters burned mountains of timber charcoal to smelt ore, causing severe deforestation of English oak woodlands just when Royal Navy shipbuilders needed timber most.</p><p class=\"prose-p\">Switching to cheap coal seemed obvious, yet coal-fired blast furnaces poured out brittle impure pig iron poisoned with carbon and sulphur that fractured under a blacksmith’s hammer. Embarrassingly for a proud maritime power, Britain relied on expensive Swedish imports of bar iron to forge Royal Navy anchors and cannon.</p>",
           "source": {
             "letter": "A",
             "title": "Source A (Visual Record): Philipp Jakob de Loutherbourg, Coalbrookdale by Night (1801)",
@@ -581,7 +581,7 @@ export default {
             }
           ],
           "heading": "The Charcoal Bottleneck & Pig Iron Crisis (1750–1770)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> Walk through an English valley in 1750 and you would find mile after mile of tree stumps where ancient oak woods once stood. Ironmasters needed mountains of timber charcoal to smelt ore, causing severe deforestation of English oak woodlands just when shipbuilders needed timber most.</p><p class=\"prose-p\">Switching to cheap coal seemed obvious, yet coal-fired blast furnaces poured out brittle impure pig iron poisoned with carbon and sulphur that fractured under a blacksmith’s hammer. Embarrassingly for a proud maritime power, Britain relied on expensive Swedish imports of bar iron to forge Royal Navy anchors and cannon.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> Across English river valleys in 1750, mile after mile of blackened tree stumps marked where ancient oak woods had once stood. Ironmasters burned mountains of timber charcoal to smelt ore, causing severe deforestation of English oak woodlands just when Royal Navy shipbuilders needed timber most.</p><p class=\"prose-p\">Switching to cheap coal seemed obvious, yet coal-fired blast furnaces poured out brittle impure pig iron poisoned with carbon and sulphur that fractured under a blacksmith’s hammer. Embarrassingly for a proud maritime power, Britain relied on expensive Swedish imports of bar iron to forge Royal Navy anchors and cannon.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In the mid-eighteenth century, Great Britain confronted an acute metallurgical bottleneck that threatened its economic expansion. Smelting iron required immense quantities of timber charcoal, causing devastating deforestation of English oaks and stripping the realm's ancient woodlands.</p><p class=\"prose-p\">Early coal-fired blast furnaces produced brittle impure pig iron saturated with carbon and sulphur, which fractured under pressure. Consequently, Britain suffered costly dependence on Swedish imports of refined bar iron to supply naval anchors and weapons for the Royal Navy.</p>",
           "image": "/images/industrialisation_and_empire/maps/ind_map_l1_britain_coalfields_steam_iron_1750_1830.svg",
           "image_alt": "KS3 Year 8 historical GIS map of Britain’s Industrial Revolution (1750–1830) showing British coalfields, Coalbrookdale coke iron, Birmingham steam engines, Manchester cotton mills, and a zoomed Hampshire inset of Funtley Ironworks and Portsmouth Royal Dockyard",
@@ -3392,7 +3392,7 @@ export default {
           "question": "How did overflowing privies poison drinking wells in factory towns?",
           "questionHeading": "How did overflowing privies poison drinking wells in factory towns?",
           "focusClue": "How did overflowing privies poison drinking wells in factory towns?",
-          "prose_hash": "54d134aa44"
+          "prose_hash": "be1c0e464f"
         },
         {
           "step": 3,
@@ -3526,7 +3526,7 @@ export default {
             "connective": "Toxic liquid seeped directly through urban soil into shallow groundwater wells feeding public drinking pumps.",
             "because": "Municipal authorities lacked public drainage networks, and private water companies supplied water only hours a week.",
             "therefore": "Working-class families unwittingly consumed drinking water heavily contaminated with lethal human sewage.",
-            "prose_hash": "54d134aa44"
+            "prose_hash": "be1c0e464f"
           },
           {
             "step": 3,
@@ -3750,7 +3750,7 @@ export default {
           "act": 2,
           "title": "Cesspools, Privies & Contaminated Pumps (1830–1840)",
           "theme_heading": "Cesspools, Privies & Contaminated Pumps (1830–1840)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Step into a Victorian slum court on washday and thirty families might be queuing for one wooden shed over an unlined pit. Dozens of neighbours shared a single outdoor earth closet that spilled raw sewage across communal alleyways and public courtyards where barefoot toddlers played.</p><p class=\"prose-p\">Because nightsoil collectors charged money to cart waste away, landlords let human filth pile into towering nightsoil dunghills beside front doors until farmers bought it as manure. Every downpour washed that poison downward, seeping into groundwater wells that fed the neighbourhood drinking pump.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In crowded Manchester and Leeds slum courts on washday, thirty families routinely queued outside one wooden privy built over an unlined pit. Dozens of neighbours shared a single outdoor earth closet that spilled raw sewage across communal alleyways and public courtyards where barefoot toddlers played.</p><p class=\"prose-p\">Because nightsoil collectors charged money to cart waste away, landlords let human filth pile into towering nightsoil dunghills beside front doors until farmers bought it as manure. Every downpour washed that poison downward, seeping into groundwater wells that fed the neighbourhood drinking pump.</p>",
           "source": {
             "letter": "B",
             "title": "Source B (Political Cartoon): John Leech, A Court for King Cholera (Punch, 1852)",
@@ -3790,7 +3790,7 @@ export default {
             }
           ],
           "heading": "Cesspools, Privies & Contaminated Pumps (1830–1840)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Step into a Victorian slum court on washday and thirty families might be queuing for one wooden shed over an unlined pit. Dozens of neighbours shared a single outdoor earth closet that spilled raw sewage across communal alleyways and public courtyards where barefoot toddlers played.</p><p class=\"prose-p\">Because nightsoil collectors charged money to cart waste away, landlords let human filth pile into towering nightsoil dunghills beside front doors until farmers bought it as manure. Every downpour washed that poison downward, seeping into groundwater wells that fed the neighbourhood drinking pump.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In crowded Manchester and Leeds slum courts on washday, thirty families routinely queued outside one wooden privy built over an unlined pit. Dozens of neighbours shared a single outdoor earth closet that spilled raw sewage across communal alleyways and public courtyards where barefoot toddlers played.</p><p class=\"prose-p\">Because nightsoil collectors charged money to cart waste away, landlords let human filth pile into towering nightsoil dunghills beside front doors until farmers bought it as manure. Every downpour washed that poison downward, seeping into groundwater wells that fed the neighbourhood drinking pump.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Rapid urban growth completely outstripped primitive municipal sanitation arrangements across industrial towns. Dozens of families shared a single overflowing outdoor earth closet, resulting in disgusting shared privy overflow across communal alleyways and public courtyards where children played.</p><p class=\"prose-p\">Human waste accumulated into towering nightsoil dunghills that festered beside front doors for months before disposal. Heavy rain washed waste deep into the earth, seeping groundwater wells from which local residents drew their daily drinking and cooking water.</p>",
           "concept_widget": {
             "type": "profile_deck",
@@ -6512,7 +6512,7 @@ export default {
           "question": "How did the 1872 Ballot Act protect voters from bullying by landlords?",
           "questionHeading": "How did the 1872 Ballot Act protect voters from bullying by landlords?",
           "focusClue": "How did the 1872 Ballot Act protect voters from bullying by landlords?",
-          "prose_hash": "508fd9ccf3"
+          "prose_hash": "58bd1506fe"
         }
       ],
       "causal_domino_spine": {
@@ -6592,7 +6592,7 @@ export default {
             "connective": "Destroyed landlord and employer electoral intimidation, allowing working men to vote freely without fear of eviction or dismissal.",
             "because": "Open voting allowed wealthy elites to bribe voters with alcohol or punish tenants who refused to back the landlord’s choice.",
             "therefore": "The Secret Ballot Act completed a vital democratic pillar, establishing the private voting rights enjoyed in Britain today.",
-            "prose_hash": "508fd9ccf3"
+            "prose_hash": "58bd1506fe"
           }
         ]
       },
@@ -7077,7 +7077,7 @@ export default {
           "act": 5,
           "title": "The Secret Ballot Act: The Death of Landlord Coercion (1872)",
           "theme_heading": "The Secret Ballot Act: The Death of Landlord Coercion (1872)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Winning the right to vote meant precious little so long as your boss and landlord stood watching you cast it. Until 1872, elections took place on noisy open wooden platforms called public hustings, where voters shouted their choice aloud before estate stewards holding rent books and tavern keepers pouring free beer.</p><p class=\"prose-p\">Prime Minister William Gladstone’s government finally ended the circus with the 1872 Ballot Act, introducing private booths and liquorice wax seals first tested at Pontefract. Shielded at last from landlord eviction and dismissal, working voters could mark a quiet cross with their own conscience.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Winning the right to vote meant precious little so long as factory bosses and landlords stood watching every man cast his ballot. Until 1872, elections took place on noisy open wooden platforms called public hustings, where voters shouted their choice aloud before estate stewards holding rent books and tavern keepers pouring free beer.</p><p class=\"prose-p\">Prime Minister William Gladstone’s government finally ended the circus with the 1872 Ballot Act, introducing private booths and liquorice wax seals first tested at Pontefract. Shielded at last from landlord eviction and dismissal, working voters could mark a quiet cross with their own conscience.</p>",
           "source": {
             "letter": "E",
             "title": "Source E (Visual Record): The First Secret Ballot in the United Kingdom, Pontefract By-Election (1872)",
@@ -7119,7 +7119,7 @@ export default {
             }
           ],
           "heading": "The Secret Ballot Act: The Death of Landlord Coercion (1872)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Winning the right to vote meant precious little so long as your boss and landlord stood watching you cast it. Until 1872, elections took place on noisy open wooden platforms called public hustings, where voters shouted their choice aloud before estate stewards holding rent books and tavern keepers pouring free beer.</p><p class=\"prose-p\">Prime Minister William Gladstone’s government finally ended the circus with the 1872 Ballot Act, introducing private booths and liquorice wax seals first tested at Pontefract. Shielded at last from landlord eviction and dismissal, working voters could mark a quiet cross with their own conscience.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Winning the right to vote meant precious little so long as factory bosses and landlords stood watching every man cast his ballot. Until 1872, elections took place on noisy open wooden platforms called public hustings, where voters shouted their choice aloud before estate stewards holding rent books and tavern keepers pouring free beer.</p><p class=\"prose-p\">Prime Minister William Gladstone’s government finally ended the circus with the 1872 Ballot Act, introducing private booths and liquorice wax seals first tested at Pontefract. Shielded at last from landlord eviction and dismissal, working voters could mark a quiet cross with their own conscience.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> In nineteenth-century Britain, parliamentary voting took place openly on wooden platforms, exposing voters to intimidation and employer bribery. In 1872, Gladstone’s government passed the Ballot Act, mandating the statutory abolition of public hustings across the realm.</p><p class=\"prose-p\">The legislation introduced private booths & liquorice wax seals on ballot boxes to guarantee total voter privacy. Secret voting gave tenant farmers and factory hands freedom from landlord eviction and dismissal, permanently transforming British parliamentary elections into a modern, independent democratic process.</p>",
           "image": "/images/ks3_ind/ind_l5_b4_hogarth_open_polling_hustings.jpg",
           "image_alt": "William Hogarth’s 1758 engraving THE POLLING, Plate III showing rival party agents crowding a raised open wooden hustings booth to intimidate, bribe, and coach voters swearing oaths in full public view of landlords and clerks",

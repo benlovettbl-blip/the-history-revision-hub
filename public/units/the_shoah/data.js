@@ -218,7 +218,7 @@ export default {
             "trigger": "Over 9.5 million Jews lived across the continent, representing 1.7% of Europe’s total population, concentrated predominantly in Central and Eastern Europe.",
             "connective": "Created immense cultural variety, meaning Jewish people experienced entirely different worlds depending on whether they lived in rural villages or modern capitals.",
             "question": "Where did most of Europe’s 9.5 million Jewish people live in the 1930s?",
-            "prose_hash": "145b6d4ae7"
+            "prose_hash": "107dee6739"
           },
           {
             "step": 2,
@@ -230,7 +230,7 @@ export default {
             "trigger": "In Poland, the Baltic States, and the USSR, millions lived in small towns (shtetls) and vibrant cities, speaking Yiddish and sustaining rich literary, religious, and political traditions.",
             "connective": "Preserved deep communal identity in hubs like Warsaw and Vilna, where Jewish publishing houses, trade unions, and theatres flourished alongside religious academies.",
             "question": "What made Jewish culture flourish in Eastern Europe’s cities like Vilna?",
-            "prose_hash": "5f7ca03317"
+            "prose_hash": "1a4a5134dc"
           },
           {
             "step": 3,
@@ -242,7 +242,7 @@ export default {
             "trigger": "In Germany, Britain, and France, Jews were highly integrated citizens working as doctors, civil servants, musicians, and university professors.",
             "connective": "Over 100,000 German Jews fought patriotically for Germany in WWI, earning 18,000 Iron Crosses and viewing themselves as proud Germans first and foremost.",
             "question": "How had German Jews shown deep loyalty to Germany after 1871?",
-            "prose_hash": "07b75327fc"
+            "prose_hash": "5587728001"
           },
           {
             "step": 4,
@@ -254,7 +254,7 @@ export default {
             "trigger": "Descendants of Jews expelled from Spain in 1492 established thriving Ladino-speaking communities across the Mediterranean, most notably in Thessaloniki (Greece).",
             "connective": "Enriched port cities with merchant shipping, distinct liturgical music, and centuries of peaceful coexistence with Christian and Muslim neighbours.",
             "question": "What made the Sephardic Jewish port community of Thessaloniki unique?",
-            "prose_hash": "8de6838b57"
+            "prose_hash": "cc6a957bdf"
           },
           {
             "step": 5,
@@ -266,7 +266,7 @@ export default {
             "trigger": "Ancient Christian religious prejudice (anti-Judaism) was transformed in the late 1800s by pseudo-scientific theorists into biological racial antisemitism.",
             "connective": "Whereas religious converts could previously escape persecution by baptism, biological antisemitism defined Jewishness as an unchangeable racial trait passed through the blood.",
             "question": "Why was Nazi racial antisemitism deadlier than older religious hatred?",
-            "prose_hash": "84f2126d85"
+            "prose_hash": "8305917937"
           }
         ]
       },
@@ -522,7 +522,7 @@ export default {
           "image": "/images/the_shoah/maps/shoah_map_l1_prewar_jewish_life_europe_1933.svg",
           "image_alt": "KS3 Year 9 historical GIS choropleth atlas map of interwar Europe (c. 1933) showing pre-war Jewish population distribution across Poland (~3.3 million), the Western Soviet Union (~2.5 million), Romania (~756,000), Germany (~525,000), Hungary (~445,000), Czechoslovakia (~357,000), Western Europe, and Sephardic Salonica, Greece (~55,000)",
           "caption": "Reference Map: Pre-war European Jewish population distribution across interwar borders (c. 1933)—contrasting the Yiddish-speaking heartlands of Poland (~3.3 million) and the Western USSR (~2.5 million) with integrated Central/Western citizens and Sephardic Salonica.",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In the early 1930s, approximately 9.5 million Jewish people lived across continental Europe, representing under two percent of the total population. European Jewry was immensely diverse, spanning distinct traditions, occupations, and vibrant civic cultures.</p><p class=\"prose-p\">Over sixty percent lived in Central and Eastern Europe, predominantly across Poland, Hungary, Romania, and the Soviet Union, where millions spoke Yiddish as their mother tongue. Smaller communities flourished in Western Europe, including Germany, Britain, and France, contributing richly to science, arts, and civic life.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> From grand Berlin synagogues and Warsaw printing houses to quiet Carpathian market squares, approximately 9.5 million Jewish people lived across continental Europe in the early 1930s. Accounting for under two percent of Europe’s total population, Jewish families formed a richly varied mosaic of languages, religious traditions, and occupations.</p><p class=\"prose-p\">Over sixty percent lived in Central and Eastern Europe, above all across Poland, Hungary, Romania, and the Soviet Union, where millions spoke Yiddish as their everyday mother tongue. Smaller communities thrived across Western Europe, including Germany, Britain, and France, contributing deeply to science, literature, the arts, and civic life.</p>",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -546,7 +546,7 @@ export default {
               "hinge_question": "Why did the immense geographic concentration of Jewish populations in Poland and the western USSR make Nazi eastward military conquest after 1939 immediately catastrophic for European Jewry?"
             }
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> In the early 1930s, approximately 9.5 million Jewish people lived across continental Europe, representing under two percent of the total population. European Jewry was immensely diverse, spanning distinct traditions, occupations, and vibrant civic cultures.</p><p class=\"prose-p\">Over sixty percent lived in Central and Eastern Europe, predominantly across Poland, Hungary, Romania, and the Soviet Union, where millions spoke Yiddish as their mother tongue. Smaller communities flourished in Western Europe, including Germany, Britain, and France, contributing richly to science, arts, and civic life.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> From grand Berlin synagogues and Warsaw printing houses to quiet Carpathian market squares, approximately 9.5 million Jewish people lived across continental Europe in the early 1930s. Accounting for under two percent of Europe’s total population, Jewish families formed a richly varied mosaic of languages, religious traditions, and occupations.</p><p class=\"prose-p\">Over sixty percent lived in Central and Eastern Europe, above all across Poland, Hungary, Romania, and the Soviet Union, where millions spoke Yiddish as their everyday mother tongue. Smaller communities thrived across Western Europe, including Germany, Britain, and France, contributing deeply to science, literature, the arts, and civic life.</p>",
           "stage_hook_map": {
             "id": "shoah-l1-prewar-jewish-life-1933-map",
             "image": "/images/the_shoah/maps/shoah_map_l1_prewar_jewish_life_europe_1933.svg",
@@ -701,7 +701,7 @@ export default {
         {
           "act": 2,
           "title": "Yiddishland: The Cultural Heartland of Eastern Europe",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Across the countryside of Eastern Europe lay a distinct cultural world known as Yiddishland. Millions of Jews lived in rural shtetls (small market towns) and expanding cities like Warsaw and Kraków, creating a flourishing Yiddish culture with its own literature, theatre, and newspapers.</p><p class=\"prose-p\">In cities like Vilna, celebrated as the \"Jerusalem of the North\", Jewish community life hummed with energy. World-renowned talmudic academies existed alongside modern socialist political parties, Zionist youth organisations, and avant-garde art collectives, creating a deeply rooted, vibrant civilization.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Across Poland, the Baltic states, and the western Soviet Union stretched Eastern Europe’s vibrant cultural heartland, known to historians as Yiddishland. Millions of Jews lived in rural shtetls, or small market towns, and in expanding cities like Warsaw and Kraków, sustaining daily Yiddish newspapers, crowded theatres, and modern literature.</p><p class=\"prose-p\">In Lithuania, the historic city of Vilna earned fame as the \"Jerusalem of the North\" for its extraordinary intellectual energy. There, world-renowned talmudic academies stood alongside secular Tarbut schools, socialist political parties, Zionist youth groups, and avant-garde artists, forming a deeply rooted modern Jewish civilisation.</p>",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -730,12 +730,12 @@ export default {
           "image": "/images/upgraded/ks3-modern/shoah_l1_block1_tarbut_school_poland_1933.jpg",
           "image_alt": "Pre-war group photograph of Jewish pupils and teachers of the second graduating class of the Tarbut Hebrew-Jewish school in Kostopol, interwar Poland, 1933",
           "caption": "Jewish pupils and teachers of the 'Tarbut' school in Kostopol, Poland (1933), exemplifying the vibrant educational, literary, and communal traditions of interwar Eastern European Jewry.",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Across the countryside of Eastern Europe lay a distinct cultural world known as Yiddishland. Millions of Jews lived in rural shtetls (small market towns) and expanding cities like Warsaw and Kraków, creating a flourishing Yiddish culture with its own literature, theatre, and newspapers.</p><p class=\"prose-p\">In cities like Vilna, celebrated as the \"Jerusalem of the North\", Jewish community life hummed with energy. World-renowned talmudic academies existed alongside modern socialist political parties, Zionist youth organisations, and avant-garde art collectives, creating a deeply rooted, vibrant civilization.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Across Poland, the Baltic states, and the western Soviet Union stretched Eastern Europe’s vibrant cultural heartland, known to historians as Yiddishland. Millions of Jews lived in rural shtetls, or small market towns, and in expanding cities like Warsaw and Kraków, sustaining daily Yiddish newspapers, crowded theatres, and modern literature.</p><p class=\"prose-p\">In Lithuania, the historic city of Vilna earned fame as the \"Jerusalem of the North\" for its extraordinary intellectual energy. There, world-renowned talmudic academies stood alongside secular Tarbut schools, socialist political parties, Zionist youth groups, and avant-garde artists, forming a deeply rooted modern Jewish civilisation.</p>"
         },
         {
           "act": 3,
           "title": "Integration, Patriotism, and Civic Life in Central Europe",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> The experience of Jewish communities in Western and Central Europe was markedly different. Following emancipation in 1871, German & Western Jews were thoroughly assimilated: they spoke German, attended universities, and integrated deeply into professional, cultural, and political life.</p><p class=\"prose-p\">During the First World War, over 100,000 German Jewish soldiers served loyally in the imperial armed forces, with 12,000 dying on European battlefields. German Jews viewed themselves not as outsiders, but as proud, patriotic citizens who contributed monumental achievements to science, industry, and the arts.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> Across Western and Central Europe, Jewish families experienced decades of civic assimilation. Following full legal emancipation in 1871, German Jews spoke German at home, attended leading universities, and served as respected doctors, judges, musicians, and scholars within mainstream professional and political life.</p><p class=\"prose-p\">During the First World War, over 100,000 German Jewish soldiers served loyally in Germany’s imperial armed forces; 12,000 died on the battlefields, and veterans like Cologne shopkeeper Richard Stern earned the Iron Cross. Viewing themselves as proud, patriotic German citizens, they led major breakthroughs in science, industry, and the arts.</p>",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -759,7 +759,7 @@ export default {
               "hinge_question": "Why did the widespread military service of German Jews in WWI make the Nazi regime's subsequent anti-Semitic laws feel so disorienting and shocking to German Jewish citizens after 1933?"
             }
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> The experience of Jewish communities in Western and Central Europe was markedly different. Following emancipation in 1871, German & Western Jews were thoroughly assimilated: they spoke German, attended universities, and integrated deeply into professional, cultural, and political life.</p><p class=\"prose-p\">During the First World War, over 100,000 German Jewish soldiers served loyally in the imperial armed forces, with 12,000 dying on European battlefields. German Jews viewed themselves not as outsiders, but as proud, patriotic citizens who contributed monumental achievements to science, industry, and the arts.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> Across Western and Central Europe, Jewish families experienced decades of civic assimilation. Following full legal emancipation in 1871, German Jews spoke German at home, attended leading universities, and served as respected doctors, judges, musicians, and scholars within mainstream professional and political life.</p><p class=\"prose-p\">During the First World War, over 100,000 German Jewish soldiers served loyally in Germany’s imperial armed forces; 12,000 died on the battlefields, and veterans like Cologne shopkeeper Richard Stern earned the Iron Cross. Viewing themselves as proud, patriotic German citizens, they led major breakthroughs in science, industry, and the arts.</p>",
           "image": "/images/the_shoah/shoah_l1_b2_berlin_neue_synagoge_interior.jpg",
           "image_alt": "1896 architectural engraving of the grand Moorish-Revival main sanctuary of the New Synagogue on Oranienburger Straße in central Berlin, with congregants and visitors in top hats and coats standing beneath its soaring iron-and-glass domes",
           "caption": "The soaring main sanctuary of Berlin’s New Synagogue on Oranienburger Straße (published in Berlin und seine Bauten, 1896): Built to seat 3,200 worshippers in the heart of the German capital, it symbolised the civic integration and confidence of German Jews after emancipation."
@@ -767,7 +767,7 @@ export default {
         {
           "act": 4,
           "title": "The Sephardic World: Heritage of Southern Europe",
-          "text": "<span class=\"para-ref\">[1.4]</span> Further south, across Greece, the Balkans, and Turkey, lived Europe’s **Sephardic Jewish communities**, whose ancestors had preserved their Spanish heritage after being expelled in 1492. For centuries, the port city of **Thessaloniki** (Salonica) in northern Greece was known as the <em>\"Mother of Israel\"</em>, where over half the total population was Jewish. Sephardic Jews had their own Ladino dialect spoken at home and in markets, worked as dockers, merchants, customs officials, and academics, and observed the Sabbath so universally that the entire commercial Thessaloniki port closes on Saturdays. Their heritage enriched the Mediterranean with centuries of distinctive music, philosophy, and culinary traditions that lived peacefully alongside Christian and Ottoman neighbours.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Across Greece, the Balkans, and Turkey thrived Europe’s Sephardic Jewish communities, descended from families expelled from Spain in 1492. For over four centuries, Sephardic Jews preserved their ancestral Judeo-Spanish dialect, Ladino, speaking it daily across bustling Mediterranean courtyards, synagogues, and harbour markets.</p><p class=\"prose-p\">In the northern Greek port of Thessaloniki, long known as Salonica and celebrated as the \"Mother of Israel\", Jewish residents formed over half the population. Because Jewish dockers, merchants, and customs officials powered harbour trade and observed the Sabbath, the entire commercial port fell quiet and closed every Saturday.</p>",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -793,15 +793,15 @@ export default {
               "hinge_question": "In what ways did the Sephardic cultural world of Thessaloniki differ from the Ashkenazi world of Eastern Europe, and why is this distinction historically significant?"
             }
           },
-          "content": "<span class=\"para-ref\">[1.4]</span> Further south, across Greece, the Balkans, and Turkey, lived Europe’s **Sephardic Jewish communities**, whose ancestors had preserved their Spanish heritage after being expelled in 1492. For centuries, the port city of **Thessaloniki** (Salonica) in northern Greece was known as the <em>\"Mother of Israel\"</em>, where over half the total population was Jewish. Sephardic Jews had their own Ladino dialect spoken at home and in markets, worked as dockers, merchants, customs officials, and academics, and observed the Sabbath so universally that the entire commercial Thessaloniki port closes on Saturdays. Their heritage enriched the Mediterranean with centuries of distinctive music, philosophy, and culinary traditions that lived peacefully alongside Christian and Ottoman neighbours.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Across Greece, the Balkans, and Turkey thrived Europe’s Sephardic Jewish communities, descended from families expelled from Spain in 1492. For over four centuries, Sephardic Jews preserved their ancestral Judeo-Spanish dialect, Ladino, speaking it daily across bustling Mediterranean courtyards, synagogues, and harbour markets.</p><p class=\"prose-p\">In the northern Greek port of Thessaloniki, long known as Salonica and celebrated as the \"Mother of Israel\", Jewish residents formed over half the population. Because Jewish dockers, merchants, and customs officials powered harbour trade and observed the Sabbath, the entire commercial port fell quiet and closed every Saturday.</p>",
           "image": "/images/the_shoah/shoah_l1_b3_salonica_port_prewar.jpg",
           "image_alt": "Archival 1916 Agence Rol glass-plate photograph looking across the busy commercial harbour and ships of Salonica (Thessaloniki) toward the terraced hillside city",
           "caption": "The commercial port and waterfront of Thessaloniki (Salonica, Agence Rol / BnF, 1916): Known for centuries as the \"Mother of Israel\", over half the city’s population was Sephardic Jewish, speaking Ladino and closing the entire harbour every Saturday for the Sabbath."
         },
         {
           "act": 5,
-          "title": "The Dark Shift: From Religious Anti-Judaism to Racial Antisemitism",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> For centuries, medieval Christian Europe harboured deep religious anti-Judaism, blaming Jewish communities for the death of Christ, restricting guild membership, and carrying out violent expulsions. However, in the late nineteenth century, a fatal ideological mutation occurred.</p><p class=\"prose-p\">Theorists invented modern racial antisemitism, treating Jewish identity not as a religious faith that could be escaped through Christian baptism, but as pseudo-scientific biological racism carried in the blood. Adolf Hitler and the Nazi Party adopted this toxic racial theory as the foundation of their totalitarian worldview.</p>",
+          "title": "From Religious Anti-Judaism to Racial Antisemitism",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> For centuries, medieval Christian anti-Judaism attacked Jewish religious belief, barring families from craft guilds and expelling whole communities, though persecution could theoretically end through Christian baptism and conversion. In the late nineteenth century, however, nationalists such as journalist Wilhelm Marr reshaped older prejudice into a far deadlier creed.</p><p class=\"prose-p\">These theorists invented modern racial antisemitism, a pseudo-scientific biological racism falsely claiming that Jewishness was a fixed trait carried permanently in the blood. Because neither conversion nor patriotic service could alter ancestry, Adolf Hitler and the Nazi Party made this lethal racial doctrine the core of their totalitarian worldview.</p>",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -827,7 +827,7 @@ export default {
               "hinge_question": "Why did defining Jewish identity as an unchangeable biological condition make modern antisemitism far more lethal than medieval religious anti-Judaism?"
             }
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> For centuries, medieval Christian Europe harboured deep religious anti-Judaism, blaming Jewish communities for the death of Christ, restricting guild membership, and carrying out violent expulsions. However, in the late nineteenth century, a fatal ideological mutation occurred.</p><p class=\"prose-p\">Theorists invented modern racial antisemitism, treating Jewish identity not as a religious faith that could be escaped through Christian baptism, but as pseudo-scientific biological racism carried in the blood. Adolf Hitler and the Nazi Party adopted this toxic racial theory as the foundation of their totalitarian worldview.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> For centuries, medieval Christian anti-Judaism attacked Jewish religious belief, barring families from craft guilds and expelling whole communities, though persecution could theoretically end through Christian baptism and conversion. In the late nineteenth century, however, nationalists such as journalist Wilhelm Marr reshaped older prejudice into a far deadlier creed.</p><p class=\"prose-p\">These theorists invented modern racial antisemitism, a pseudo-scientific biological racism falsely claiming that Jewishness was a fixed trait carried permanently in the blood. Because neither conversion nor patriotic service could alter ancestry, Adolf Hitler and the Nazi Party made this lethal racial doctrine the core of their totalitarian worldview.</p>",
           "concept_widget": {
             "type": "spectrum_slider",
             "eyebrow": "Year 9 Conceptual Shift",
@@ -1746,7 +1746,7 @@ export default {
           "focusClue": "Where did most of Europe’s 9.5 million Jewish people live in the 1930s?",
           "para_ref": "[1.1]",
           "paraRef": "[1.1]",
-          "prose_hash": "145b6d4ae7"
+          "prose_hash": "107dee6739"
         },
         {
           "step": 2,
@@ -1761,7 +1761,7 @@ export default {
           "focusClue": "What made Jewish culture flourish in Eastern Europe’s cities like Vilna?",
           "para_ref": "[1.2]",
           "paraRef": "[1.2]",
-          "prose_hash": "5f7ca03317"
+          "prose_hash": "1a4a5134dc"
         },
         {
           "step": 3,
@@ -1776,7 +1776,7 @@ export default {
           "focusClue": "How had German Jews shown deep loyalty to Germany after 1871?",
           "para_ref": "[1.3]",
           "paraRef": "[1.3]",
-          "prose_hash": "07b75327fc"
+          "prose_hash": "5587728001"
         },
         {
           "step": 4,
@@ -1791,7 +1791,7 @@ export default {
           "focusClue": "What made the Sephardic Jewish port community of Thessaloniki unique?",
           "para_ref": "[1.4]",
           "paraRef": "[1.4]",
-          "prose_hash": "8de6838b57"
+          "prose_hash": "cc6a957bdf"
         },
         {
           "step": 5,
@@ -1806,7 +1806,7 @@ export default {
           "focusClue": "Why was Nazi racial antisemitism deadlier than older religious hatred?",
           "para_ref": "[1.5]",
           "paraRef": "[1.5]",
-          "prose_hash": "84f2126d85"
+          "prose_hash": "8305917937"
         }
       ],
       "enquiry": "Who were the Jews of Europe before the Second World War?",
@@ -1837,7 +1837,7 @@ export default {
             "stat": "Under 2% of Europe’s Total Population",
             "html": "In 1933, around <strong>9.5 million Jewish people</strong> lived across Europe. Over 60% lived in <strong>Eastern Europe</strong>, especially Poland and the USSR, speaking <strong>Yiddish</strong>.",
             "spoken": "Who were the Jewish people of Europe before the Second World War? <short pause> In 1933, around 9.5 million Jewish people lived across Europe. Over 60% lived in Eastern Europe , especially Poland and the USSR, speaking Yiddish .",
-            "paired_prose_hash": "145b6d4ae7",
+            "paired_prose_hash": "107dee6739",
             "connective": "Who were the Jewish people of Europe before the Second World War?"
           },
           {
@@ -1849,7 +1849,7 @@ export default {
             "stat": "Vilna: “Jerusalem of the North”",
             "html": "Across Eastern Europe, Jews built a lively <strong>Yiddish culture</strong> in market <strong>shtetls</strong> and great cities like Warsaw and <strong>Vilna</strong>, filled with theatres, press, and schools.",
             "spoken": "Vibrant Jewish culture flourished across towns and cities for centuries. <short pause> Across Eastern Europe, Jews built a lively Yiddish culture in market shtetls and great cities like Warsaw and Vilna , filled with theatres, press, and schools.",
-            "paired_prose_hash": "5f7ca03317",
+            "paired_prose_hash": "1a4a5134dc",
             "connective": "Vibrant Jewish culture flourished across towns and cities for centuries."
           },
           {
@@ -1861,7 +1861,7 @@ export default {
             "stat": "100,000 German Jews Fought in WWI",
             "html": "After winning equality in 1871, <strong>German Jews</strong> integrated deeply into science, arts, and civic life. Over <strong>100,000 served loyally</strong> as German soldiers in <strong>World War One</strong>.",
             "spoken": "Further west in Germany, Jewish life looked very different. <short pause> After winning equality in 1871, German Jews integrated deeply into science, arts, and civic life. Over 100,000 served loyally as German soldiers in World War One .",
-            "paired_prose_hash": "07b75327fc",
+            "paired_prose_hash": "5587728001",
             "connective": "Further west in Germany, Jewish life looked very different."
           },
           {
@@ -1873,7 +1873,7 @@ export default {
             "stat": "Over Half of Thessaloniki Was Jewish",
             "html": "In Greece and the Balkans, <strong>Sephardic Jews</strong> spoke <strong>Ladino</strong> and kept Spanish roots. In the port of <strong>Thessaloniki</strong>, the whole harbour closed every Saturday for Sabbath.",
             "spoken": "In southern Europe, Mediterranean Jewish communities kept unique traditions alive. <short pause> In Greece and the Balkans, Sephardic Jews spoke Ladino and kept Spanish roots. In the port of Thessaloniki , the whole harbour closed every Saturday for Sabbath.",
-            "paired_prose_hash": "8de6838b57",
+            "paired_prose_hash": "cc6a957bdf",
             "connective": "In southern Europe, Mediterranean Jewish communities kept unique traditions alive."
           },
           {
@@ -1885,7 +1885,7 @@ export default {
             "stat": "False “Blood” Racism Adopted by Hitler",
             "html": "Older Christian hatred targeted faith. Late-19th-century writers like <strong>Wilhelm Marr</strong> invented false <strong>racial antisemitism</strong>, which <strong>Adolf Hitler</strong> made central to Nazism.",
             "spoken": "Yet in the late nineteenth century, prejudice took a deadly turn. <short pause> Older Christian hatred targeted faith. Late-19th-century writers like Wilhelm Marr invented false racial antisemitism , which Adolf Hitler made central to Nazism.",
-            "paired_prose_hash": "84f2126d85",
+            "paired_prose_hash": "8305917937",
             "connective": "Yet in the late nineteenth century, prejudice took a deadly turn."
           },
           {
@@ -1957,7 +1957,7 @@ export default {
             "trigger": "On 1 April 1933, the regime stages a nationwide boycott of Jewish shops, followed by the Civil Service Law barring Jews from government jobs.",
             "connective": "Legitimised public discrimination and removed Jewish judges, professors, and teachers from public life across Germany.",
             "question": "How did the Nazis target Jewish shops and state jobs in April 1933?",
-            "prose_hash": "9f915f8208"
+            "prose_hash": "805cefd404"
           },
           {
             "step": 2,
@@ -1969,7 +1969,7 @@ export default {
             "trigger": "The Reich Citizenship Law strips German Jews of citizenship, while the Blood Protection Law criminalises marriage and relations with non-Jews.",
             "connective": "Reduced German Jews to second-class \"subjects\" without political rights, legally codifying pseudo-scientific racial theory into national law.",
             "question": "How did the September 1935 Nuremberg Laws strip Jews of citizenship?",
-            "prose_hash": "50a49a3904"
+            "prose_hash": "f010405300"
           },
           {
             "step": 3,
@@ -1981,7 +1981,7 @@ export default {
             "trigger": "Over 400 separate anti-Jewish decrees ban Jews from parks, public benches, swimming pools, driving cars, owning radios, and attending universities.",
             "connective": "Inflicted gradual \"social death\", isolating Jewish families from non-Jewish friends and neighbours who increasingly looked away in silence.",
             "question": "How did over 400 Nazi decrees enforce \"social death\" by 1938?",
-            "prose_hash": "c7608091b6"
+            "prose_hash": "12069dd250"
           },
           {
             "step": 4,
@@ -1993,7 +1993,7 @@ export default {
             "trigger": "Coordinated nationwide violence destroys 1,400 synagogues, trashes 7,500 businesses, murders 91 Jews, and sends 30,000 men to concentration camps.",
             "connective": "Marked the violent shift from legal discrimination to physical terror, followed by an extortionate 1 billion Mark fine imposed on the victims.",
             "question": "What happened across Germany during Kristallnacht in November 1938?",
-            "prose_hash": "421027fb73"
+            "prose_hash": "1c63adfb96"
           },
           {
             "step": 5,
@@ -2005,7 +2005,7 @@ export default {
             "trigger": "Jews desperately seek foreign visas; the July 1938 Evian Conference ends with 32 nations refusing to open borders; Britain accepts 10,000 children via Kindertransport.",
             "connective": "Trapped hundreds of thousands of European Jews within Nazi territory on the eve of the Second World War as global doors slammed shut.",
             "question": "Why did most refugees find borders shut despite the Kindertransport?",
-            "prose_hash": "11610941b1"
+            "prose_hash": "4ecbb14d8d"
           }
         ]
       },
@@ -2267,8 +2267,8 @@ export default {
       "narrative_blocks": [
         {
           "act": 1,
-          "title": "The Boycott and the Civil Service Purge (1933)",
-          "text": "<span class=\"para-ref\">[2.1]</span> When Adolf Hitler became Chancellor on 30 January 1933, the Nazi state wasted no time putting antisemitic ideology into practice. On **1 April 1933**, the regime launched its first nationwide campaign: a boycott of Jewish-owned shops, department stores, doctors, and lawyers. Uniformed SA picket windows outside storefronts, holding placards warning Germans not to buy from Jews, while the word \"Jude\" was smudged in paint across display glass. A week later, on **7 April 1933**, the regime enacted the *Law for the Restoration of the Professional Civil Service*, ensuring Jewish judges, civil servants, and teachers were fired from their state positions.",
+          "title": "The April Boycott and the Civil Service Purge (1933)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> After Adolf Hitler became Chancellor on 30 January 1933, the Nazi state rapidly turned antisemitic ideology into nationwide boycotts and discriminatory laws. On 1 April 1933, uniformed SA troopers picketed Jewish shops, doctors, and lawyers with placards warning Germans away and smearing \"Jude\" on windows, while veteran Richard Stern wore his Iron Cross.</p><p class=\"prose-p\">Six days later, on 7 April 1933, Berlin enacted the Law for the Restoration of the Professional Civil Service. This sweeping Civil Service Law summarily sacked and dismissed Jewish judges, civil servants, teachers, and university scholars from state posts, stripping loyal citizens of public careers overnight.</p>",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -2292,7 +2292,7 @@ export default {
               "hinge_question": "Why did the Nazi leadership orchestrate a public, visible boycott before passing legislation to purge the civil service?"
             }
           },
-          "content": "<span class=\"para-ref\">[2.1]</span> When Adolf Hitler became Chancellor on 30 January 1933, the Nazi state wasted no time putting antisemitic ideology into practice. On **1 April 1933**, the regime launched its first nationwide campaign: a boycott of Jewish-owned shops, department stores, doctors, and lawyers. Uniformed SA picket windows outside storefronts, holding placards warning Germans not to buy from Jews, while the word \"Jude\" was smudged in paint across display glass. A week later, on **7 April 1933**, the regime enacted the *Law for the Restoration of the Professional Civil Service*, ensuring Jewish judges, civil servants, and teachers were fired from their state positions.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> After Adolf Hitler became Chancellor on 30 January 1933, the Nazi state rapidly turned antisemitic ideology into nationwide boycotts and discriminatory laws. On 1 April 1933, uniformed SA troopers picketed Jewish shops, doctors, and lawyers with placards warning Germans away and smearing \"Jude\" on windows, while veteran Richard Stern wore his Iron Cross.</p><p class=\"prose-p\">Six days later, on 7 April 1933, Berlin enacted the Law for the Restoration of the Professional Civil Service. This sweeping Civil Service Law summarily sacked and dismissed Jewish judges, civil servants, teachers, and university scholars from state posts, stripping loyal citizens of public careers overnight.</p>",
           "image": "/images/the_shoah/shoah_l2_b0_sa_boycott_shop_window_1933.jpg",
           "image_alt": "Uniformed SA stormtroopers wearing swastika armbands holding bundles of anti-Jewish boycott posters and a paste pot outside a Berlin storefront on 1 April 1933",
           "caption": "The nationwide Nazi boycott on 1 April 1933 (Berlin, NARA / USHMM Public Domain): Uniformed SA stormtroopers paste antisemitic posters across shop windows to intimidate German shoppers and isolate Jewish-owned businesses."
@@ -2300,7 +2300,7 @@ export default {
         {
           "act": 2,
           "title": "The 1935 Nuremberg Laws: Redefining Citizenship",
-          "text": "<span class=\"para-ref\">[2.2]</span> In September 1935, during the annual Nazi Party rally, Hitler announced the **Nuremberg Laws**. These two decrees legally codified racial persecution into German law. The *Reich Citizenship Law* stripped German Jews of their citizenship, with citizenship revoked and Jews reduced to \"subjects of the state\". The *Law for the Protection of German Blood and German Honour* made intermarriage banned between Jews and German citizens, criminalising marriages and sexual relations. Officials used a formal grandparent blood chart to classify individuals based on ancestry: anyone with three or four Jewish grandparents was classified as a full Jew, regardless of whether they practised Judaism or had converted.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> At the annual Nazi Party rally in September 1935, Adolf Hitler proclaimed the Nuremberg Laws, turning racial theory into criminal statute. Under the Reich Citizenship Law, German Jews had their full citizenship and voting rights revoked, reducing families who had lived in Germany for generations to powerless \"subjects of the state\".</p><p class=\"prose-p\">Simultaneously, the Law for the Protection of German Blood and German Honour banned intermarriage and sexual relations between Jews and non-Jewish German citizens. Bureaucrats issued complex ancestry charts classifying anyone with three or four Jewish grandparents as a full Jew, regardless of personal religious faith or Christian conversion.</p>",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -2327,12 +2327,12 @@ export default {
           "image": "/images/the_shoah/shoah_l2_b1_nuremberg_laws_rgbl_1146.jpg",
           "image_alt": "Original printed page 1146 of the German Reichsgesetzblatt (1935, Part I, No. 100) containing the official Reichsbürgergesetz (Reich Citizenship Law) and Gesetz zum Schutze des deutschen Blutes und der deutschen Ehre promulgated at Nuremberg on 15 September 1935",
           "caption": "The official statute page 1146 of the Reichsgesetzblatt (15 September 1935) enacting both Nuremberg Laws—the Reich Citizenship Law stripping German Jews of citizenship and the Blood and Honour Law criminalising intermarriage.",
-          "content": "<span class=\"para-ref\">[2.2]</span> In September 1935, during the annual Nazi Party rally, Hitler announced the **Nuremberg Laws**. These two decrees legally codified racial persecution into German law. The *Reich Citizenship Law* stripped German Jews of their citizenship, with citizenship revoked and Jews reduced to \"subjects of the state\". The *Law for the Protection of German Blood and German Honour* made intermarriage banned between Jews and German citizens, criminalising marriages and sexual relations. Officials used a formal grandparent blood chart to classify individuals based on ancestry: anyone with three or four Jewish grandparents was classified as a full Jew, regardless of whether they practised Judaism or had converted."
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> At the annual Nazi Party rally in September 1935, Adolf Hitler proclaimed the Nuremberg Laws, turning racial theory into criminal statute. Under the Reich Citizenship Law, German Jews had their full citizenship and voting rights revoked, reducing families who had lived in Germany for generations to powerless \"subjects of the state\".</p><p class=\"prose-p\">Simultaneously, the Law for the Protection of German Blood and German Honour banned intermarriage and sexual relations between Jews and non-Jewish German citizens. Bureaucrats issued complex ancestry charts classifying anyone with three or four Jewish grandparents as a full Jew, regardless of personal religious faith or Christian conversion.</p>"
         },
         {
           "act": 3,
-          "title": "Daily Exclusion and \"Social Death\" (1935–1938)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Between 1933 and 1938, the Nazi regime issued over 400 separate anti-Jewish decrees to strip Jewish citizens of their livelihoods and rights. Systematic Aryanization of businesses forced Jewish owners to sell shops and factories to German buyers at rock-bottom prices.</p><p class=\"prose-p\">These pervasive regulations enforced brutal 'social death' exclusion from public life. Jews were expelled from schools, barred from cinemas and parks, restricted to yellow benches, and forbidden from owning radios or pets, as former neighbours crossed the street to avoid greeting them.</p>",
+          "title": "Daily Exclusion and Social Death (1935–1938)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Between 1933 and 1938, the Nazi regime and local councils enacted over 400 separate anti-Jewish decrees that steadily choked everyday livelihoods. Through the systematic Aryanization of businesses, Jewish owners were pressured to sell family shops and factories to non-Jewish German buyers at rock-bottom prices, draining their life savings.</p><p class=\"prose-p\">In Dresden, scholar Victor Klemperer recorded in his secret diary how relentless rules inflicted total \"social death\". Expelled from state schools, barred from parks and cinemas, restricted to marked benches, and forbidden from owning radios or pets, Jewish families watched former neighbours shun them and cross the street in silence.</p>",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -2358,7 +2358,7 @@ export default {
               "hinge_question": "In what ways was the psychological process of \"social death\" as destructive to German Jews as the economic and legal restrictions?"
             }
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Between 1933 and 1938, the Nazi regime issued over 400 separate anti-Jewish decrees to strip Jewish citizens of their livelihoods and rights. Systematic Aryanization of businesses forced Jewish owners to sell shops and factories to German buyers at rock-bottom prices.</p><p class=\"prose-p\">These pervasive regulations enforced brutal 'social death' exclusion from public life. Jews were expelled from schools, barred from cinemas and parks, restricted to yellow benches, and forbidden from owning radios or pets, as former neighbours crossed the street to avoid greeting them.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Between 1933 and 1938, the Nazi regime and local councils enacted over 400 separate anti-Jewish decrees that steadily choked everyday livelihoods. Through the systematic Aryanization of businesses, Jewish owners were pressured to sell family shops and factories to non-Jewish German buyers at rock-bottom prices, draining their life savings.</p><p class=\"prose-p\">In Dresden, scholar Victor Klemperer recorded in his secret diary how relentless rules inflicted total \"social death\". Expelled from state schools, barred from parks and cinemas, restricted to marked benches, and forbidden from owning radios or pets, Jewish families watched former neighbours shun them and cross the street in silence.</p>",
           "concept_widget": {
             "type": "profile_deck",
             "eyebrow": "Year 9 Legal & Social Persecution",
@@ -2463,8 +2463,8 @@ export default {
         },
         {
           "act": 4,
-          "title": "The November Pogrom (\"Kristallnacht\", 9–10 November 1938)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> On the night of 9–10 November 1938, the Nazi regime orchestrated a nationwide pogrom known as Kristallnacht (the Night of Broken Glass). Propaganda Minister Joseph Goebbels unleashed the SA, SS, and Hitler Youth to launch violent coordinated assaults on Jewish communities.</p><p class=\"prose-p\">Across forty-eight hours, over 1,400 synagogues were burned or destroyed, 7,500 businesses trashed, and ninety-one Jews murdered. The Gestapo arrested 30,000 Jewish men and sent them to concentration camps, while imposing a punitive one-billion-mark fine on the Jewish community to pay for the destruction.</p>",
+          "title": "The November Pogrom: Kristallnacht (9–10 November 1938)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> Across the night of 9–10 November 1938, legal discrimination erupted into open nationwide violence during Kristallnacht, the Night of Broken Glass. Propaganda Minister Joseph Goebbels unleashed the SA, SS, and Hitler Youth across Germany and annexed Austria, burning over 1,400 synagogues and smashing 7,500 Jewish businesses and homes.</p><p class=\"prose-p\">At least ninety-one Jews were murdered during the forty-eight-hour pogrom, while the Gestapo arrested 30,000 Jewish men and deported them to brutal concentration camps. Adding cynical extortion to terror, Nazi leaders imposed a punitive one-billion-mark fine forcing the shattered Jewish community to pay for the state-ordered destruction.</p>",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -2491,12 +2491,12 @@ export default {
           "image": "/images/kristallnacht_berlin_aftermath_1938.jpg",
           "image_alt": "Civilians viewing the shattered display windows of a Jewish-owned business in Berlin following the November Pogrom of 1938",
           "caption": "Civilians inspect the shattered storefront of a Jewish-owned commercial shop in Berlin the morning after the state-orchestrated Kristallnacht pogrom of 9–10 November 1938.",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> On the night of 9–10 November 1938, the Nazi regime orchestrated a nationwide pogrom known as Kristallnacht (the Night of Broken Glass). Propaganda Minister Joseph Goebbels unleashed the SA, SS, and Hitler Youth to launch violent coordinated assaults on Jewish communities.</p><p class=\"prose-p\">Across forty-eight hours, over 1,400 synagogues were burned or destroyed, 7,500 businesses trashed, and ninety-one Jews murdered. The Gestapo arrested 30,000 Jewish men and sent them to concentration camps, while imposing a punitive one-billion-mark fine on the Jewish community to pay for the destruction.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> Across the night of 9–10 November 1938, legal discrimination erupted into open nationwide violence during Kristallnacht, the Night of Broken Glass. Propaganda Minister Joseph Goebbels unleashed the SA, SS, and Hitler Youth across Germany and annexed Austria, burning over 1,400 synagogues and smashing 7,500 Jewish businesses and homes.</p><p class=\"prose-p\">At least ninety-one Jews were murdered during the forty-eight-hour pogrom, while the Gestapo arrested 30,000 Jewish men and deported them to brutal concentration camps. Adding cynical extortion to terror, Nazi leaders imposed a punitive one-billion-mark fine forcing the shattered Jewish community to pay for the state-ordered destruction.</p>"
         },
         {
           "act": 5,
-          "title": "The Refugee Crisis: Closed Doors and the Kindertransport",
-          "text": "<span class=\"para-ref\">[2.5]</span> Kristallnacht shattered any remaining illusion that Jews could survive under Nazi rule. Tens of thousands rushed to foreign consulates seeking exit visas, but the world closed its doors. In July 1938, delegates from **32 nations meet at the Évian Conference** in France to address the refugee crisis, but country after country expressed verbal sympathy while maintaining closed global borders to Jewish immigration. One rare exception was the British **Kindertransport** programme, which allowed nearly **10,000 unaccompanied refugee children to be rescued** and brought to safety in Britain between December 1938 and August 1939. While their lives were saved, most would never see their parents again.",
+          "title": "Closed Borders and the Kindertransport (1938–1939)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> After Kristallnacht, tens of thousands queued outside foreign consulates for exit visas, only to confront strict immigration quotas. At the July 1938 Évian Conference in France, delegates from 32 nations met and expressed verbal sympathy while keeping global borders closed to Jewish immigration, trapping impoverished families inside Nazi territory.</p><p class=\"prose-p\">One rare lifeline came between December 1938 and August 1939 through Britain’s Kindertransport rescue initiative, which brought nearly 10,000 unaccompanied refugee children by train and ferry to safety in Britain. Because British visas excluded parents, quiet railway-platform farewells became final partings for mothers and fathers who later perished.</p>",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -2522,7 +2522,7 @@ export default {
               "hinge_question": "How did the international community’s refusal to open borders at the Évian Conference signal to Hitler that the world would not intervene to protect European Jews?"
             }
           },
-          "content": "<span class=\"para-ref\">[2.5]</span> Kristallnacht shattered any remaining illusion that Jews could survive under Nazi rule. Tens of thousands rushed to foreign consulates seeking exit visas, but the world closed its doors. In July 1938, delegates from **32 nations meet at the Évian Conference** in France to address the refugee crisis, but country after country expressed verbal sympathy while maintaining closed global borders to Jewish immigration. One rare exception was the British **Kindertransport** programme, which allowed nearly **10,000 unaccompanied refugee children to be rescued** and brought to safety in Britain between December 1938 and August 1939. While their lives were saved, most would never see their parents again.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> After Kristallnacht, tens of thousands queued outside foreign consulates for exit visas, only to confront strict immigration quotas. At the July 1938 Évian Conference in France, delegates from 32 nations met and expressed verbal sympathy while keeping global borders closed to Jewish immigration, trapping impoverished families inside Nazi territory.</p><p class=\"prose-p\">One rare lifeline came between December 1938 and August 1939 through Britain’s Kindertransport rescue initiative, which brought nearly 10,000 unaccompanied refugee children by train and ferry to safety in Britain. Because British visas excluded parents, quiet railway-platform farewells became final partings for mothers and fathers who later perished.</p>",
           "image": "/images/the_shoah/shoah_l2_b4_kindertransport_arrival_harwich_1938.jpg",
           "image_alt": "Three young Jewish refugee girls wearing numbered Kindertransport identification tags around their necks and carrying rolled blankets past a British police constable upon disembarking at Harwich in December 1938",
           "caption": "The arrival of unaccompanied Jewish refugee children at Harwich, Essex, on the first British Kindertransport (December 1938): Between December 1938 and August 1939, Britain admitted nearly 10,000 children escaping Nazi persecution, though most never saw their parents again."
@@ -2773,31 +2773,31 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did Adolf Hitler become Chancellor of Germany?",
-          "q": "On what date did Adolf Hitler become Chancellor of Germany?",
+          "question": "What was the immediate consequence for German Jews after Adolf Hitler became Chancellor in 1933?",
+          "q": "What was the immediate consequence for German Jews after Adolf Hitler became Chancellor in 1933?",
           "options": [
-            "30 January 1933",
-            "1 September 1939",
-            "9 November 1938",
-            "20 January 1942"
+            "The Nazi state rapidly turned antisemitic ideology into nationwide boycotts and discriminatory laws",
+            "German Jews were immediately granted protected minority status by the parliament",
+            "The SA was disbanded and banned from interfering with Jewish businesses",
+            "Foreign governments immediately opened their borders to all German Jewish refugees"
           ],
-          "answer": "30 January 1933",
-          "a": "30 January 1933",
-          "explanation": "Adolf Hitler was appointed Chancellor on 30 January 1933 and immediately began persecuting German Jews."
+          "answer": "The Nazi state rapidly turned antisemitic ideology into nationwide boycotts and discriminatory laws",
+          "a": "The Nazi state rapidly turned antisemitic ideology into nationwide boycotts and discriminatory laws",
+          "explanation": "Once Hitler became Chancellor in January 1933, the Nazi regime wasted no time launching a nationwide boycott of Jewish businesses and passing laws to purge Jewish citizens from public jobs."
         },
         {
           "stage": 1,
-          "question": "On what date did the Nazi regime stage its first nationwide boycott of Jewish shops, doctors, and lawyers?",
-          "q": "On what date did the Nazi regime stage its first nationwide boycott of Jewish shops, doctors, and lawyers?",
+          "question": "What was the main purpose of the Nazis' first nationwide boycott in April 1933?",
+          "q": "What was the main purpose of the Nazis' first nationwide boycott in April 1933?",
           "options": [
-            "7 April 1933",
-            "15 September 1935",
-            "9 November 1938",
-            "1 April 1933"
+            "To raise a one-billion-mark fine to rebuild burned synagogues",
+            "To force Jewish families to move into rural farming villages",
+            "To intimidate ordinary Germans into stopping trade with Jewish shops, doctors, and lawyers",
+            "To protest against foreign tariffs placed on German steel exports"
           ],
-          "answer": "1 April 1933",
-          "a": "1 April 1933",
-          "explanation": "On 1 April 1933, uniformed Nazi stormtroopers picketed Jewish-owned shops and offices across Germany."
+          "answer": "To intimidate ordinary Germans into stopping trade with Jewish shops, doctors, and lawyers",
+          "a": "To intimidate ordinary Germans into stopping trade with Jewish shops, doctors, and lawyers",
+          "explanation": "Uniformed SA men picketed Jewish-owned shops and offices holding placards warning Germans not to buy from Jews, aiming to destroy Jewish livelihoods."
         },
         {
           "stage": 1,
@@ -2941,17 +2941,17 @@ export default {
         },
         {
           "stage": 4,
-          "question": "On what dates did the Nazi regime unleash the nationwide pogrom known as Kristallnacht (Night of Broken Glass)?",
-          "q": "On what dates did the Nazi regime unleash the nationwide pogrom known as Kristallnacht (Night of Broken Glass)?",
+          "question": "What harsh financial punishment did the Nazi state impose on the Jewish community after Kristallnacht?",
+          "q": "What harsh financial punishment did the Nazi state impose on the Jewish community after Kristallnacht?",
           "options": [
-            "9–10 November 1938",
-            "1–2 April 1933",
-            "29–30 September 1941",
-            "20–21 January 1942"
+            "A temporary freeze on foreign travel passports for six months",
+            "A requirement to rebuild damaged SA headquarters across Germany",
+            "A one-billion-mark fine forcing Jews to pay for the destruction of their own property",
+            "A small local tax collected only from synagogue leaders in Berlin"
           ],
-          "answer": "9–10 November 1938",
-          "a": "9–10 November 1938",
-          "explanation": "Across the nights of 9–10 November 1938, coordinated Nazi violence shattered Jewish communities nationwide."
+          "answer": "A one-billion-mark fine forcing Jews to pay for the destruction of their own property",
+          "a": "A one-billion-mark fine forcing Jews to pay for the destruction of their own property",
+          "explanation": "After orchestrating the destruction of synagogues and 7,500 businesses during Kristallnacht, the Nazi regime cruelly fined the Jewish community one billion marks to pay for the damage."
         },
         {
           "stage": 4,
@@ -3328,7 +3328,7 @@ export default {
           "focusClue": "How did the Nazis target Jewish shops and state jobs in April 1933?",
           "para_ref": "[2.1]",
           "paraRef": "[2.1]",
-          "prose_hash": "9f915f8208"
+          "prose_hash": "805cefd404"
         },
         {
           "step": 2,
@@ -3343,7 +3343,7 @@ export default {
           "focusClue": "How did the September 1935 Nuremberg Laws strip Jews of citizenship?",
           "para_ref": "[2.2]",
           "paraRef": "[2.2]",
-          "prose_hash": "50a49a3904"
+          "prose_hash": "f010405300"
         },
         {
           "step": 3,
@@ -3358,7 +3358,7 @@ export default {
           "focusClue": "How did over 400 Nazi decrees enforce \"social death\" by 1938?",
           "para_ref": "[2.3]",
           "paraRef": "[2.3]",
-          "prose_hash": "c7608091b6"
+          "prose_hash": "12069dd250"
         },
         {
           "step": 4,
@@ -3373,7 +3373,7 @@ export default {
           "focusClue": "What happened across Germany during Kristallnacht in November 1938?",
           "para_ref": "[2.4]",
           "paraRef": "[2.4]",
-          "prose_hash": "421027fb73"
+          "prose_hash": "1c63adfb96"
         },
         {
           "step": 5,
@@ -3388,7 +3388,7 @@ export default {
           "focusClue": "Why did most refugees find borders shut despite the Kindertransport?",
           "para_ref": "[2.5]",
           "paraRef": "[2.5]",
-          "prose_hash": "11610941b1"
+          "prose_hash": "4ecbb14d8d"
         }
       ],
       "enquiry": "How were German Jews progressively stripped of citizenship and rights (1933–1939)?",
@@ -3420,7 +3420,7 @@ export default {
             "stat": "1 April Boycott & 7 April Civil Service Law",
             "html": "In April 1933, <strong>SA stormtroopers</strong> blocked Jewish shops with warning signs. Days later, a new Nazi law fired <strong>Jewish teachers, judges</strong>, and clerks from <strong>state jobs</strong>.",
             "spoken": "How did the Nazis strip German Jews of their rights between 1933 and 1939? <short pause> In April 1933, SA stormtroopers blocked Jewish shops with warning signs. Days later, a new Nazi law fired Jewish teachers, judges , and clerks from state jobs .",
-            "paired_prose_hash": "9f915f8208",
+            "paired_prose_hash": "805cefd404",
             "connective": "How did the Nazis strip German Jews of their rights between 1933 and 1939?"
           },
           {
@@ -3432,7 +3432,7 @@ export default {
             "stat": "Citizenship Revoked by Grandparent Ancestry",
             "html": "In September 1935, the <strong>Nuremberg Laws</strong> stripped German Jews of <strong>citizenship</strong> and banned intermarriage. State charts defined Jews by <strong>three or four grandparents</strong>.",
             "spoken": "Two years later, Nazi persecution became national law. <short pause> In September 1935, the Nuremberg Laws stripped German Jews of citizenship and banned intermarriage. State charts defined Jews by three or four grandparents .",
-            "paired_prose_hash": "50a49a3904",
+            "paired_prose_hash": "f010405300",
             "connective": "Two years later, Nazi persecution became national law."
           },
           {
@@ -3444,7 +3444,7 @@ export default {
             "stat": "Forced “Aryanization” Sales of Businesses",
             "html": "Over <strong>400 anti-Jewish decrees</strong> forced owners to sell shops cheaply under <strong>Aryanization</strong>. Banned from parks, schools, and cinemas, Jews faced cruel <strong>“social death”</strong>.",
             "spoken": "Hundreds of decrees soon pushed families out of public life. <short pause> Over 400 anti-Jewish decrees forced owners to sell shops cheaply under Aryanization . Banned from parks, schools, and cinemas, Jews faced cruel “social death” .",
-            "paired_prose_hash": "c7608091b6",
+            "paired_prose_hash": "12069dd250",
             "connective": "Hundreds of decrees soon pushed families out of public life."
           },
           {
@@ -3456,7 +3456,7 @@ export default {
             "stat": "1,400 Synagogues Burned & 30,000 Arrested",
             "html": "During <strong>Kristallnacht</strong>, Nazi squads burned <strong>1,400 synagogues</strong>, smashed 7,500 shops, and murdered 91 Jews. The Gestapo sent <strong>30,000 Jewish men</strong> to concentration camps.",
             "spoken": "In November 1938, legal persecution exploded into nationwide state violence. <short pause> During Kristallnacht , Nazi squads burned 1,400 synagogues , smashed 7,500 shops, and murdered 91 Jews. The Gestapo sent 30,000 Jewish men to concentration camps.",
-            "paired_prose_hash": "421027fb73",
+            "paired_prose_hash": "1c63adfb96",
             "connective": "In November 1938, legal persecution exploded into nationwide state violence."
           },
           {
@@ -3469,7 +3469,7 @@ export default {
             "stat": "32 Nations at Évian; 10,000 Children Saved",
             "html": "At the 1938 <strong>Évian Conference</strong>, 32 nations refused to open borders to refugees. Britain’s <strong>Kindertransport</strong> rescued nearly <strong>10,000 unaccompanied children</strong> before war.",
             "spoken": "Desperate families tried to flee, yet borders stayed shut. <short pause> At the 1938 Évian Conference , 32 nations refused to open borders to refugees. Britain’s Kindertransport rescued nearly 10,000 unaccompanied children before war.",
-            "paired_prose_hash": "11610941b1",
+            "paired_prose_hash": "4ecbb14d8d",
             "connective": "Desperate families tried to flee, yet borders stayed shut."
           },
           {
@@ -3540,7 +3540,7 @@ export default {
             "trigger": "The invasion of Poland brings over 2 million Polish Jews under Nazi rule; Reinhard Heydrich issues the \"Schnellbrief\" ordering Jews concentrated near rail hubs.",
             "connective": "Transformed Nazi policy from persecuting a small minority in Germany to managing millions of captive civilians across occupied Eastern Europe.",
             "question": "How did invading Poland in 1939 put two million more Jews under Nazi rule?",
-            "prose_hash": "d78d171801"
+            "prose_hash": "37a82c6eba"
           },
           {
             "step": 2,
@@ -3552,7 +3552,7 @@ export default {
             "trigger": "Mandatory Star of David armbands are imposed on all Jews aged 10 and above; Jewish businesses, bank accounts, and homes are confiscated.",
             "connective": "Marked victims visibly for public humiliation and enabled German authorities to conscript men and women into brutal forced labour battalions.",
             "question": "Why were Polish Jews forced into Star of David armbands and labour gangs?",
-            "prose_hash": "6a7bc1b5a2"
+            "prose_hash": "0634a0506a"
           },
           {
             "step": 3,
@@ -3564,7 +3564,7 @@ export default {
             "trigger": "Hundreds of ghettos are walled off across occupied Poland; in November 1940, the Warsaw Ghetto is sealed behind a 3-metre brick wall topped with broken glass.",
             "connective": "Crowded 450,000 human beings into 1.3 square miles (7 to 9 people per room), severing all normal contact with the outside world.",
             "question": "How were 450,000 Jewish people sealed inside the Warsaw Ghetto in 1940?",
-            "prose_hash": "c6b24b5808"
+            "prose_hash": "20823dbd0c"
           },
           {
             "step": 4,
@@ -3576,7 +3576,7 @@ export default {
             "trigger": "Nazi authorities deliberately restrict official food rations to just 180–220 calories per day, weaponising famine and typhus to decimate the population.",
             "connective": "Killed over 80,000 people in the Warsaw Ghetto alone through hunger and disease, countered only by heroic child smugglers sneaking food through wall gaps.",
             "question": "How did brave child smugglers help families survive ghetto starvation?",
-            "prose_hash": "bb729bfb03"
+            "prose_hash": "45c9778d87"
           },
           {
             "step": 5,
@@ -3588,7 +3588,7 @@ export default {
             "trigger": "Historian Emanuel Ringelblum coordinates a secret underground team (\"Oneg Shabbat\") to document every aspect of ghetto life, diaries, and Nazi crimes.",
             "connective": "Buried in three airtight milk cans and metal boxes beneath the ghetto rubble, preserving the authentic voices and memory of European Jewry for eternity.",
             "question": "Why did Emanuel Ringelblum’s team bury secret milk cans beneath Warsaw?",
-            "prose_hash": "d13d25038f"
+            "prose_hash": "16ca43f5fe"
           }
         ]
       },
@@ -3840,11 +3840,11 @@ export default {
       "narrative_blocks": [
         {
           "act": 1,
-          "title": "The Conquest of Poland and Heydrich’s Plan (1939)",
+          "title": "The Conquest of Poland and Heydrich’s Schnellbrief (1939)",
           "image": "/images/the_shoah/shoah_l3_b0_german_soldiers_jews_sanok_1939.jpg",
           "image_alt": "Armed German Wehrmacht soldiers in steel helmets guarding a crowd of Polish Jewish men, women, and mothers holding young children rounded up in a square in Sanok, Poland, in September 1939",
           "caption": "The German conquest of Poland in September 1939: Armed Wehrmacht troops guard Polish Jewish families rounded up in Sanok as Reinhard Heydrich’s 21 September 1939 Schnellbrief ordered rural communities concentrated into cities along railway junctions.",
-          "text": "<span class=\"para-ref\">[3.1]</span> On **1 September 1939**, German Panzer divisions and Luftwaffe bombers invaded Poland, triggering the outbreak of the Second World War. Within weeks, the Nazi state found itself in control of over **two million Polish Jews**—a population ten times larger than Germany's remaining Jewish community. On **21 September 1939**, Reinhard Heydrich, head of the SS Reich Security Main Office (RSHA), issued a secret directive known as the *Schnellbrief* (express letter). It ordered that all Jewish communities in rural areas and small towns be rapidly deported and subjected to rail hub concentration in major cities with direct railway junctions.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> On 1 September 1939, German Panzer divisions and Luftwaffe bombers invaded western Poland, starting the Second World War. Within weeks, conquest placed over two million Polish Jews under Nazi control—a captive population ten times larger than Germany’s remaining Jewish community, making pre-war forced emigration plans completely unworkable.</p><p class=\"prose-p\">On 21 September 1939, SS security chief Reinhard Heydrich issued a secret express letter known as the Schnellbrief to occupation commanders. Heydrich ordered rural Polish Jewish communities uprooted from villages and concentrated into major cities with direct railway junctions, deliberately laying the logistical groundwork for future mass deportations.</p>",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -3870,12 +3870,12 @@ export default {
               "hinge_question": "Why is the distinction Heydrich draws between \"short-term stages\" and the \"final aim\" central to historical debates on the development of the Holocaust?"
             }
           },
-          "content": "<span class=\"para-ref\">[3.1]</span> On **1 September 1939**, German Panzer divisions and Luftwaffe bombers invaded Poland, triggering the outbreak of the Second World War. Within weeks, the Nazi state found itself in control of over **two million Polish Jews**—a population ten times larger than Germany's remaining Jewish community. On **21 September 1939**, Reinhard Heydrich, head of the SS Reich Security Main Office (RSHA), issued a secret directive known as the *Schnellbrief* (express letter). It ordered that all Jewish communities in rural areas and small towns be rapidly deported and subjected to rail hub concentration in major cities with direct railway junctions."
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> On 1 September 1939, German Panzer divisions and Luftwaffe bombers invaded western Poland, starting the Second World War. Within weeks, conquest placed over two million Polish Jews under Nazi control—a captive population ten times larger than Germany’s remaining Jewish community, making pre-war forced emigration plans completely unworkable.</p><p class=\"prose-p\">On 21 September 1939, SS security chief Reinhard Heydrich issued a secret express letter known as the Schnellbrief to occupation commanders. Heydrich ordered rural Polish Jewish communities uprooted from villages and concentrated into major cities with direct railway junctions, deliberately laying the logistical groundwork for future mass deportations.</p>"
         },
         {
           "act": 2,
-          "title": "Stigmatisation, Forced Labour, and the Yellow Star",
-          "text": "<span class=\"para-ref\">[3.2]</span> Long before physical walls were constructed, the occupation authorities set about stripping Polish Jews of their livelihood and dignity. In November 1939, all Jewish people aged ten and older were ordered to wear a white armband bearing a blue Star of David, marked for humiliation and abuse. Tens of thousands of Jewish men were rounded up into brutal forced labour gangs to clear war rubble and dig ditches. Jewish bank accounts were frozen, businesses and factories were confiscated without compensation, and community leaders were arrested or shot.",
+          "title": "Armbands, Plunder, and Forced Labour in Occupied Poland",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Long before brick ghetto walls rose, German occupation authorities stripped Polish Jews of legal protection and dignity. From November 1939, every Jewish resident aged ten and older had to wear a white armband bearing a blue Star of David, marking families visibly for street abuse while coerced Judenrat councils delivered German decrees.</p><p class=\"prose-p\">Across occupied Polish towns, police roundups seized tens of thousands of Jewish men into gruelling forced labour gangs to clear war rubble and dig ditches under humiliating guard. Simultaneously, authorities froze bank accounts, confiscated family businesses without compensation, and shot prominent community leaders, leaving neighbourhoods impoverished and defenceless.</p>",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -3901,15 +3901,15 @@ export default {
               "hinge_question": "How did the forced wearing of distinctive armbands and badges prepare the psychological and physical groundwork for ghettoisation?"
             }
           },
-          "content": "<span class=\"para-ref\">[3.2]</span> Long before physical walls were constructed, the occupation authorities set about stripping Polish Jews of their livelihood and dignity. In November 1939, all Jewish people aged ten and older were ordered to wear a white armband bearing a blue Star of David, marked for humiliation and abuse. Tens of thousands of Jewish men were rounded up into brutal forced labour gangs to clear war rubble and dig ditches. Jewish bank accounts were frozen, businesses and factories were confiscated without compensation, and community leaders were arrested or shot.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Long before brick ghetto walls rose, German occupation authorities stripped Polish Jews of legal protection and dignity. From November 1939, every Jewish resident aged ten and older had to wear a white armband bearing a blue Star of David, marking families visibly for street abuse while coerced Judenrat councils delivered German decrees.</p><p class=\"prose-p\">Across occupied Polish towns, police roundups seized tens of thousands of Jewish men into gruelling forced labour gangs to clear war rubble and dig ditches under humiliating guard. Simultaneously, authorities froze bank accounts, confiscated family businesses without compensation, and shot prominent community leaders, leaving neighbourhoods impoverished and defenceless.</p>",
           "image": "/images/the_shoah/shoah_l3_b1_forced_labour_warsaw_1939.jpg",
           "image_alt": "German occupation troops and police directing seized Polish Jewish civilians in coats to clear bomb-damaged street rubble during forced labour details in occupied Warsaw in autumn 1939",
           "caption": "The humiliation and exploitation of Polish Jews in occupied Warsaw (autumn 1939): Even before ghetto walls were built, German authorities mandated Star of David armbands and seized Jewish men off the streets into brutal forced labour gangs."
         },
         {
           "act": 3,
-          "title": "The Walls Go Up: The Warsaw and Łódź Ghettos (1940)",
-          "text": "<span class=\"para-ref\">[3.3]</span> In 1940, the Nazi regime began enclosing Jewish populations into sealed **ghettos** across occupied Poland, including Łódź, Kraków, and Lublin. In the capital, the **Warsaw Ghetto** became the largest in Europe. Enclosed behind a **3-metre brick wall topped with barbed wire**, over **450,000 Jewish people were imprisoned** inside just 1.3 square miles—an average density of seven to nine people per room (7–9 people per room). The ghetto was completely cut off from the outside world: phone lines were disconnected, postal deliveries stopped, and German police and armed guards patrolled every gate with shoot-to-kill orders.",
+          "title": "Sealed Behind Brick Walls: The Łódź and Warsaw Ghettos (1940)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> Throughout 1940, Nazi authorities enclosed Polish Jews inside sealed urban ghettos across Łódź, Kraków, and Lublin, where teenage diarist Dawid Sierakowiak recorded freezing hunger in his school notebooks. That November in Poland’s capital, the Warsaw Ghetto was sealed off as the largest ghetto in Nazi-occupied Europe.</p><p class=\"prose-p\">Enclosed behind a 3-metre brick wall topped with barbed wire and broken glass, over 450,000 Jewish people were packed into just 1.3 square miles, crowding seven to nine people per room. Cut phone and postal links alongside gate guards under shoot-to-kill orders isolated trapped families from outside contact.</p>",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -3936,12 +3936,12 @@ export default {
           "image": "/images/the_shoah/shoah_l3_b2_warsaw_ghetto_wall_zelaznej_bramy.jpg",
           "image_alt": "High brick perimeter wall sealing off the Warsaw Ghetto along the edge of Plac Żelaznej Bramy while pedestrians and street traffic pass outside the enclosure",
           "caption": "The three-metre brick perimeter wall sealing off the Warsaw Ghetto at Plac Żelaznej Bramy (1940–1941): Imprisoning over 450,000 Jewish men, women, and children inside just 1.3 square miles at an average density of seven to nine people per room.",
-          "content": "<span class=\"para-ref\">[3.3]</span> In 1940, the Nazi regime began enclosing Jewish populations into sealed **ghettos** across occupied Poland, including Łódź, Kraków, and Lublin. In the capital, the **Warsaw Ghetto** became the largest in Europe. Enclosed behind a **3-metre brick wall topped with barbed wire**, over **450,000 Jewish people were imprisoned** inside just 1.3 square miles—an average density of seven to nine people per room (7–9 people per room). The ghetto was completely cut off from the outside world: phone lines were disconnected, postal deliveries stopped, and German police and armed guards patrolled every gate with shoot-to-kill orders."
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> Throughout 1940, Nazi authorities enclosed Polish Jews inside sealed urban ghettos across Łódź, Kraków, and Lublin, where teenage diarist Dawid Sierakowiak recorded freezing hunger in his school notebooks. That November in Poland’s capital, the Warsaw Ghetto was sealed off as the largest ghetto in Nazi-occupied Europe.</p><p class=\"prose-p\">Enclosed behind a 3-metre brick wall topped with barbed wire and broken glass, over 450,000 Jewish people were packed into just 1.3 square miles, crowding seven to nine people per room. Cut phone and postal links alongside gate guards under shoot-to-kill orders isolated trapped families from outside contact.</p>"
         },
         {
           "act": 4,
-          "title": "Starvation, Typhus, and the Child Smugglers",
-          "text": "<span class=\"para-ref\">[3.4]</span> The Nazi administration weaponised disease and starvation to decimate the ghetto population. Official food rations allotted to Jews provided barely **180 to 220 calories a day**—roughly eight percent of what an adult body needs to survive. Between 1940 and 1942, more than **80,000 people were dead of hunger** and rampant disease in Warsaw alone, their bodies placed on pavements overnight covered with newspapers. The ghetto survived only through clandestine smuggling: brave child smugglers climbed through drainage grates or squeezed between wall bricks to bring flour, potatoes, and medicines into the ghetto, risking instant execution if caught by German police.",
+          "title": "Calculated Starvation, Typhus, and the Child Smugglers",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> Inside the sealed walls, Nazi administrators weaponised starvation and disease to decimate imprisoned families. Official food rations allotted to Jews in Warsaw provided barely 180 to 220 calories a day, roughly eight percent of an adult’s daily survival requirement. Between 1940 and 1942, hunger and typhus killed more than 80,000 people, whose corpses lined morning pavements.</p><p class=\"prose-p\">Thousands survived longer only through clandestine lifelines run by brave child smugglers, some barely six years old. Squeezing through narrow drainage grates and wall gaps after dark, small children smuggled vital flour, potatoes, and medicine inside their coats, risking instant execution if caught by German police patrolling the wall.</p>",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -3967,15 +3967,15 @@ export default {
               "hinge_question": "Why did ghetto inhabitants regard child food smuggling as an act of courageous resistance rather than illegal conduct?"
             }
           },
-          "content": "<span class=\"para-ref\">[3.4]</span> The Nazi administration weaponised disease and starvation to decimate the ghetto population. Official food rations allotted to Jews provided barely **180 to 220 calories a day**—roughly eight percent of what an adult body needs to survive. Between 1940 and 1942, more than **80,000 people were dead of hunger** and rampant disease in Warsaw alone, their bodies placed on pavements overnight covered with newspapers. The ghetto survived only through clandestine smuggling: brave child smugglers climbed through drainage grates or squeezed between wall bricks to bring flour, potatoes, and medicines into the ghetto, risking instant execution if caught by German police.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> Inside the sealed walls, Nazi administrators weaponised starvation and disease to decimate imprisoned families. Official food rations allotted to Jews in Warsaw provided barely 180 to 220 calories a day, roughly eight percent of an adult’s daily survival requirement. Between 1940 and 1942, hunger and typhus killed more than 80,000 people, whose corpses lined morning pavements.</p><p class=\"prose-p\">Thousands survived longer only through clandestine lifelines run by brave child smugglers, some barely six years old. Squeezing through narrow drainage grates and wall gaps after dark, small children smuggled vital flour, potatoes, and medicine inside their coats, risking instant execution if caught by German police patrolling the wall.</p>",
           "image": "/images/the_shoah/shoah_l3_b3_krochmalna_street_warsaw_ghetto.jpg",
           "image_alt": "Crowded pavement behind a double barbed-wire fence along Krochmalna Street inside the Warsaw Ghetto, where Jewish men, women, and a young child walk past tenements bearing a Star of David sign",
           "caption": "The barbed-wire enclosure along Krochmalna Street in the Warsaw Ghetto (c. 1941): Trapped on starvation rations of barely 180 to 220 calories a day, over 80,000 Warsaw Ghetto residents died of hunger and typhus between 1940 and 1942."
         },
         {
           "act": 5,
-          "title": "Spiritual Resistance: The Secret Oneg Shabbat Archive",
-          "text": "<span class=\"para-ref\">[3.5]</span> Imprisoned within the ghetto, Jewish people refused to surrender their humanity. They organized clandestine soup kitchens, secret schools for children, underground religious services, and cultural concerts. A remarkable group of underground historians and intellectuals led by **Emanuel Ringelblum** founded a secret archive codenamed **Oyneg Shabes** ('Joy of the Sabbath'). They methodically gathered diaries, official notices, and eyewitness reports to document the reality of persecution. Before the final destruction of the ghetto, the archive was buried in milk cans deep beneath Warsaw basements. Unearthed after the war, these buried milk cans ensured the truth outliving terror, preserving the voices of the victims forever.",
+          "title": "Spiritual Resistance: Emanuel Ringelblum and the Milk Cans",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Imprisoned families practised determined spiritual resistance, organising soup kitchens, secret schools, religious services, and cultural concerts to defend human dignity. Meanwhile, historian Emanuel Ringelblum founded a clandestine research team codenamed Oyneg Shabes, or Oneg Shabbat, meaning \"Joy of the Sabbath\", gathering diaries, decrees, and eyewitness testimonies.</p><p class=\"prose-p\">In August 1942, as deportations emptied Warsaw, nineteen-year-old David Graber helped seal thousands of pages inside tin boxes and metal milk cans buried deep beneath ghetto cellar basements. Unearthed from Warsaw’s ruins after 1945, those milk cans ensured authentic Jewish voices survived ghetto destruction and proved Nazi crimes.</p>",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -4002,7 +4002,7 @@ export default {
               "hinge_question": "Why did the creators of the Oneg Shabbat archive risk their lives to preserve written records, poems, and drawings under conditions of total annihilation?"
             }
           },
-          "content": "<span class=\"para-ref\">[3.5]</span> Imprisoned within the ghetto, Jewish people refused to surrender their humanity. They organized clandestine soup kitchens, secret schools for children, underground religious services, and cultural concerts. A remarkable group of underground historians and intellectuals led by **Emanuel Ringelblum** founded a secret archive codenamed **Oyneg Shabes** ('Joy of the Sabbath'). They methodically gathered diaries, official notices, and eyewitness reports to document the reality of persecution. Before the final destruction of the ghetto, the archive was buried in milk cans deep beneath Warsaw basements. Unearthed after the war, these buried milk cans ensured the truth outliving terror, preserving the voices of the victims forever.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Imprisoned families practised determined spiritual resistance, organising soup kitchens, secret schools, religious services, and cultural concerts to defend human dignity. Meanwhile, historian Emanuel Ringelblum founded a clandestine research team codenamed Oyneg Shabes, or Oneg Shabbat, meaning \"Joy of the Sabbath\", gathering diaries, decrees, and eyewitness testimonies.</p><p class=\"prose-p\">In August 1942, as deportations emptied Warsaw, nineteen-year-old David Graber helped seal thousands of pages inside tin boxes and metal milk cans buried deep beneath ghetto cellar basements. Unearthed from Warsaw’s ruins after 1945, those milk cans ensured authentic Jewish voices survived ghetto destruction and proved Nazi crimes.</p>",
           "concept_widget": {
             "type": "profile_deck",
             "eyebrow": "Year 9 Defending Human Dignity",
@@ -4358,17 +4358,17 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did German Panzer divisions and Luftwaffe bombers invade Poland, starting the Second World War?",
-          "q": "On what date did German Panzer divisions and Luftwaffe bombers invade Poland, starting the Second World War?",
+          "question": "Why was the 1939 German invasion of Poland a major turning point in Nazi persecution of Jews?",
+          "q": "Why was the 1939 German invasion of Poland a major turning point in Nazi persecution of Jews?",
           "options": [
-            "22 June 1941",
-            "21 September 1939",
-            "30 January 1933",
-            "1 September 1939"
+            "It brought over two million Polish Jews under Nazi control, ten times Germany's remaining Jewish population",
+            "It forced the Nazi regime to release all Jewish prisoners from concentration camps",
+            "It led Britain and France to evacuate Poland's Jewish communities by sea",
+            "It ended Nazi anti-Jewish laws so Germany could focus solely on fighting Britain"
           ],
-          "answer": "1 September 1939",
-          "a": "1 September 1939",
-          "explanation": "Germany invaded Poland on 1 September 1939, triggering the Second World War."
+          "answer": "It brought over two million Polish Jews under Nazi control, ten times Germany's remaining Jewish population",
+          "a": "It brought over two million Polish Jews under Nazi control, ten times Germany's remaining Jewish population",
+          "explanation": "Conquering Poland placed more than two million Polish Jews under Nazi rule, prompting Reinhard Heydrich to order their rapid concentration in cities with major railway hubs."
         },
         {
           "stage": 1,
@@ -4913,7 +4913,7 @@ export default {
           "focusClue": "How did invading Poland in 1939 put two million more Jews under Nazi rule?",
           "para_ref": "[3.1]",
           "paraRef": "[3.1]",
-          "prose_hash": "d78d171801"
+          "prose_hash": "37a82c6eba"
         },
         {
           "step": 2,
@@ -4928,7 +4928,7 @@ export default {
           "focusClue": "Why were Polish Jews forced into Star of David armbands and labour gangs?",
           "para_ref": "[3.2]",
           "paraRef": "[3.2]",
-          "prose_hash": "6a7bc1b5a2"
+          "prose_hash": "0634a0506a"
         },
         {
           "step": 3,
@@ -4943,7 +4943,7 @@ export default {
           "focusClue": "How were 450,000 Jewish people sealed inside the Warsaw Ghetto in 1940?",
           "para_ref": "[3.3]",
           "paraRef": "[3.3]",
-          "prose_hash": "c6b24b5808"
+          "prose_hash": "20823dbd0c"
         },
         {
           "step": 4,
@@ -4958,7 +4958,7 @@ export default {
           "focusClue": "How did brave child smugglers help families survive ghetto starvation?",
           "para_ref": "[3.4]",
           "paraRef": "[3.4]",
-          "prose_hash": "bb729bfb03"
+          "prose_hash": "45c9778d87"
         },
         {
           "step": 5,
@@ -4973,7 +4973,7 @@ export default {
           "focusClue": "Why did Emanuel Ringelblum’s team bury secret milk cans beneath Warsaw?",
           "para_ref": "[3.5]",
           "paraRef": "[3.5]",
-          "prose_hash": "d13d25038f"
+          "prose_hash": "16ca43f5fe"
         }
       ],
       "enquiry": "How did the outbreak of WWII transform Nazi anti-Jewish policy (1939–1941)?",
@@ -5004,7 +5004,7 @@ export default {
             "stat": "2 Million Polish Jews Under Nazi Control",
             "html": "Invading Poland in September 1939 put <strong>two million Jews</strong> under Nazi rule. SS chief <strong>Reinhard Heydrich’s</strong> secret <strong>Schnellbrief</strong> herded families near rail hubs.",
             "spoken": "How did the outbreak of the Second World War trap Polish Jews inside ghettos? <short pause> Invading Poland in September 1939 put two million Jews under Nazi rule. SS chief Reinhard Heydrich’s secret Schnellbrief herded families near rail hubs.",
-            "paired_prose_hash": "d78d171801",
+            "paired_prose_hash": "37a82c6eba",
             "connective": "How did the outbreak of the Second World War trap Polish Jews inside ghettos?"
           },
           {
@@ -5016,7 +5016,7 @@ export default {
             "stat": "Mandatory Star Armband From Age Ten",
             "html": "From November 1939, Polish Jews aged ten and up wore <strong>Star of David armbands</strong>. Nazis froze accounts, seized shops, and forced men into <strong>labour gangs</strong>.",
             "spoken": "Occupation decrees immediately attacked Polish Jewish life and livelihoods. <short pause> From November 1939, Polish Jews aged ten and up wore Star of David armbands . Nazis froze accounts, seized shops, and forced men into labour gangs .",
-            "paired_prose_hash": "6a7bc1b5a2",
+            "paired_prose_hash": "0634a0506a",
             "connective": "Occupation decrees immediately attacked Polish Jewish life and livelihoods."
           },
           {
@@ -5028,7 +5028,7 @@ export default {
             "stat": "450,000 Trapped in 1.3 Square Miles",
             "html": "In 1940, Nazis locked Polish Jews into sealed <strong>ghettos</strong> like Łódź and Warsaw. Behind a <strong>three-metre brick wall</strong>, 450,000 lived crammed <strong>seven to nine per room</strong>.",
             "spoken": "In 1940, Nazi authorities sealed entire communities behind brick walls. <short pause> In 1940, Nazis locked Polish Jews into sealed ghettos like Łódź and Warsaw. Behind a three-metre brick wall , 450,000 lived crammed seven to nine per room .",
-            "paired_prose_hash": "c6b24b5808",
+            "paired_prose_hash": "20823dbd0c",
             "connective": "In 1940, Nazi authorities sealed entire communities behind brick walls."
           },
           {
@@ -5040,7 +5040,7 @@ export default {
             "stat": "180 Calories a Day; 80,000 Died in Warsaw",
             "html": "Ghetto rations gave barely <strong>180 calories a day</strong>, killing 80,000 in Warsaw from hunger and typhus. Brave <strong>child smugglers</strong> slipped through wall gaps with <strong>vital food</strong>.",
             "spoken": "Inside the sealed streets, Nazi officials used hunger as a weapon. <short pause> Ghetto rations gave barely 180 calories a day , killing 80,000 in Warsaw from hunger and typhus. Brave child smugglers slipped through wall gaps with vital food .",
-            "paired_prose_hash": "bb729bfb03",
+            "paired_prose_hash": "45c9778d87",
             "connective": "Inside the sealed streets, Nazi officials used hunger as a weapon."
           },
           {
@@ -5052,7 +5052,7 @@ export default {
             "stat": "Oyneg Shabes Underground Ghetto Archive",
             "html": "Families kept dignity through secret schools and soup kitchens. Historian <strong>Emanuel Ringelblum</strong> led <strong>Oyneg Shabes</strong>, burying diaries in <strong>milk cans</strong> so truth survived.",
             "spoken": "Even behind ghetto walls, Jewish people protected their human dignity. <short pause> Families kept dignity through secret schools and soup kitchens. Historian Emanuel Ringelblum led Oyneg Shabes , burying diaries in milk cans so truth survived.",
-            "paired_prose_hash": "d13d25038f",
+            "paired_prose_hash": "16ca43f5fe",
             "connective": "Even behind ghetto walls, Jewish people protected their human dignity."
           },
           {
@@ -5123,7 +5123,7 @@ export default {
             "trigger": "Over 3 million German troops invade the USSR; Hitler issues the \"Commissar Order\" stripping enemy officials and civilians of all international legal protections.",
             "connective": "Framed the invasion not merely as a territorial conquest, but as a biological crusade to annihilate \"Judeo-Bolshevism\" and secure \"Lebensraum\".",
             "question": "Why was Operation Barbarossa fought in 1941 as a war of extermination?",
-            "prose_hash": "e5bf9a7d28"
+            "prose_hash": "a6b91befc9"
           },
           {
             "step": 2,
@@ -5135,7 +5135,7 @@ export default {
             "trigger": "Four motorized SS killing squads (3,000 men total) assisted by German Order Police battalions deploy across Soviet territory behind the frontline.",
             "connective": "Initially shot adult male Jewish officials, but by August 1941 on Himmler’s orders expanded to murdering entire Jewish communities: women, children, and infants.",
             "question": "How did the SS Einsatzgruppen murder 1.5 million Soviet Jews?",
-            "prose_hash": "0d9e74a450"
+            "prose_hash": "436b76cb35"
           },
           {
             "step": 3,
@@ -5147,7 +5147,7 @@ export default {
             "trigger": "In a wooded ravine outside Kyiv (Ukraine), German units force 33,771 Jewish men, women, and children to undress and shoot them over 36 continuous hours.",
             "connective": "Demonstrated the horrifying speed of mass shooting operations, recorded in meticulous bureaucratic reports dispatched directly to Berlin.",
             "question": "What happened at the Babyn Yar ravine outside Kyiv in September 1941?",
-            "prose_hash": "8dd4cb2e54"
+            "prose_hash": "997a029fae"
           },
           {
             "step": 4,
@@ -5159,7 +5159,7 @@ export default {
             "trigger": "At Ponary forest outside Vilna and the Ninth Fort in Kaunas (Lithuania), over 90% of Lithuanian Jewry is murdered within six months.",
             "connective": "Relied extensively on indigenous nationalist auxiliary police (such as the Lithuanian Ypatingasis būrys) who actively participated in executions.",
             "question": "How did local Baltic police helpers assist German killing squads?",
-            "prose_hash": "dcb4191ad6"
+            "prose_hash": "5131004df7"
           },
           {
             "step": 5,
@@ -5171,7 +5171,7 @@ export default {
             "trigger": "Himmler witnesses a mass shooting in Minsk in August 1941; concerns over the psychological strain on German executioners prompt the development of gas vans.",
             "connective": "Led directly to the establishment of Chełmno in December 1941 using carbon monoxide exhaust fumes, bridging the gap to permanent death camps.",
             "question": "Why did Heinrich Himmler switch from mass shootings to Chełmno gas vans?",
-            "prose_hash": "d037bd4b4a"
+            "prose_hash": "14ef01df9b"
           }
         ]
       },
@@ -5423,8 +5423,8 @@ export default {
       "narrative_blocks": [
         {
           "act": 1,
-          "title": "Operation Barbarossa: Ideological Annihilation (June 1941)",
-          "text": "<span class=\"para-ref\">[4.1]</span> On **22 June 1941**, Adolf Hitler launched **Operation Barbarossa**, sending over three million German and Axis troops in a surprise invasion of the Soviet Union. This invasion was conceived not merely as a conventional military campaign, but as a racial war of extermination (*Vernichtungskrieg*). Hitler and his generals had the notorious Commissar Order issued, instructing troops to execute captured Soviet political officers without trial, grounded in the virulent Judeo-Bolshevism myth—the absurd lie that Jews were the hidden puppet-masters behind Soviet communism.",
+          "title": "Operation Barbarossa: A War of Annihilation (June 1941)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> At dawn on 22 June 1941, Adolf Hitler launched Operation Barbarossa, invading the Soviet Union with over three million German and Axis troops. Unlike conventional military campaigns in Western Europe, Nazi leaders designed the invasion from the outset as a Vernichtungskrieg, an ideological and racial war of extermination.</p><p class=\"prose-p\">Conspiracy propaganda steeped soldiers in the antisemitic Judeo-Bolshevism myth, falsely claiming that Jewish people secretly controlled Soviet communism and casting every Soviet Jew as an enemy. Scrapping military law before the invasion, Wehrmacht commanders issued the Commissar Order, instructing troops to shoot captured Soviet political officers without trial.</p>",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -5450,7 +5450,7 @@ export default {
               "hinge_question": "How did the German High Command’s official orders prepare ordinary soldiers to accept and facilitate mass atrocities against civilian populations?"
             }
           },
-          "content": "<span class=\"para-ref\">[4.1]</span> On **22 June 1941**, Adolf Hitler launched **Operation Barbarossa**, sending over three million German and Axis troops in a surprise invasion of the Soviet Union. This invasion was conceived not merely as a conventional military campaign, but as a racial war of extermination (*Vernichtungskrieg*). Hitler and his generals had the notorious Commissar Order issued, instructing troops to execute captured Soviet political officers without trial, grounded in the virulent Judeo-Bolshevism myth—the absurd lie that Jews were the hidden puppet-masters behind Soviet communism.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> At dawn on 22 June 1941, Adolf Hitler launched Operation Barbarossa, invading the Soviet Union with over three million German and Axis troops. Unlike conventional military campaigns in Western Europe, Nazi leaders designed the invasion from the outset as a Vernichtungskrieg, an ideological and racial war of extermination.</p><p class=\"prose-p\">Conspiracy propaganda steeped soldiers in the antisemitic Judeo-Bolshevism myth, falsely claiming that Jewish people secretly controlled Soviet communism and casting every Soviet Jew as an enemy. Scrapping military law before the invasion, Wehrmacht commanders issued the Commissar Order, instructing troops to shoot captured Soviet political officers without trial.</p>",
           "image": "/images/the_shoah/maps/shoah_map_l4_ghettos_barbarossa_bullets_1939_42.svg",
           "image_alt": "KS3 Year 9 historical GIS atlas map of Eastern Central Europe (1939–1942) showing sealed ghettos in Occupied Poland (Warsaw, Łódź, Kraków, Lublin), the 22 June 1941 Operation Barbarossa start line, Einsatzgruppen A, B, C, and D advances into the Baltic States, Belarus, and Ukraine, mass-shooting sites at Kaunas, Ponary Forest (Vilna), and Babi Yar (Kyiv), and the first stationary gas-van camp at Chełmno (December 1941)",
           "caption": "Reference Map: Sealed ghettos in Occupied Poland (1939–40), the 22 June 1941 Operation Barbarossa launch line, Einsatzgruppen A–D “Holocaust by Bullets” mass-shooting sites (Ponary, Babi Yar), and Chełmno (December 1941).",
@@ -5607,8 +5607,8 @@ export default {
         },
         {
           "act": 2,
-          "title": "The Einsatzgruppen and Order Police Battalions",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> Following directly behind front-line Wehrmacht combat divisions in June 1941 were four mobile paramilitary death squads known as the SS Einsatzgruppen (A, B, C, and D). These execution units were reinforced by militarized Order Police battalions to round up and execute Soviet Jews.</p><p class=\"prose-p\">By August 1941, German orders escalated to total annihilation, shooting entire communities of women and children beside pre-dug ravines. This horrific phase, known as the 'Holocaust by Bullets', murdered over 1.5 million Jewish civilians in face-to-face mass executions across Soviet territories.</p>",
+          "title": "The Einsatzgruppen and Order Police Battalions (1941)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> Following directly behind advancing Wehrmacht army lines in June 1941 were four mobile paramilitary death squads, the SS Einsatzgruppen A, B, C, and D. Reinforced by militarized Order Police battalions—including ordinary conscripts in units like Reserve Police Battalion 101—these squads cordoned off captured towns to hunt down Soviet Jews.</p><p class=\"prose-p\">In August 1941, Nazi orders escalated to murdering entire Jewish communities, shooting women, children, and elderly grandparents beside open ravines and anti-tank pits. Across occupied Soviet territories, these face-to-face mass shootings—known to historians as the \"Holocaust by Bullets\"—murdered over 1.5 million Jewish civilians.</p>",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -5635,12 +5635,12 @@ export default {
           "image": "/images/einsatzgruppen_ivangorod_1942.jpg",
           "image_alt": "SS Einsatzgruppen executioner aiming rifle at civilians during mass shooting operations in Ivanhorod, Ukraine, 1942",
           "caption": "German mobile killing squad (Einsatzgruppe) member aiming at a woman shielding a child during mass shooting operations in Ivanhorod, Ukraine (1942), illustrating the \"Holocaust by Bullets\".",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> Following directly behind front-line Wehrmacht combat divisions in June 1941 were four mobile paramilitary death squads known as the SS Einsatzgruppen (A, B, C, and D). These execution units were reinforced by militarized Order Police battalions to round up and execute Soviet Jews.</p><p class=\"prose-p\">By August 1941, German orders escalated to total annihilation, shooting entire communities of women and children beside pre-dug ravines. This horrific phase, known as the 'Holocaust by Bullets', murdered over 1.5 million Jewish civilians in face-to-face mass executions across Soviet territories.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> Following directly behind advancing Wehrmacht army lines in June 1941 were four mobile paramilitary death squads, the SS Einsatzgruppen A, B, C, and D. Reinforced by militarized Order Police battalions—including ordinary conscripts in units like Reserve Police Battalion 101—these squads cordoned off captured towns to hunt down Soviet Jews.</p><p class=\"prose-p\">In August 1941, Nazi orders escalated to murdering entire Jewish communities, shooting women, children, and elderly grandparents beside open ravines and anti-tank pits. Across occupied Soviet territories, these face-to-face mass shootings—known to historians as the \"Holocaust by Bullets\"—murdered over 1.5 million Jewish civilians.</p>"
         },
         {
           "act": 3,
-          "title": "The Massacre at Babi Yar (Kyiv, September 1941)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> The most notorious massacre of the Holocaust by Bullets occurred outside Kyiv in Ukraine. On 29 September 1941, Sonderkommando 4a & Order Police battalions marched tens of thousands of Jewish residents to a vast ravine, ordering them to surrender valuables and undress.</p><p class=\"prose-p\">Victims were forced into the gorge and shot in layers atop one another. In this horrific Babyn Yar ravine massacre, exactly 33,771 shot in 36 hours were murdered, while German commanders sent meticulous administrative reports to Berlin documenting the mass execution.</p>",
+          "title": "The Massacre at Babyn Yar Outside Kyiv (September 1941)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> Outside the Ukrainian capital of Kyiv on 29 September 1941, deceptive wall posters ordered the city’s Jewish residents to assemble near the rail yards with warm clothing. Sonderkommando 4a and Order Police battalions marched tens of thousands to the wooded Babyn Yar gorge, also spelled Babi Yar, forcing victims to surrender valuables and undress.</p><p class=\"prose-p\">Driven down into the ravine in layers, 33,771 Jewish men, women, and children were murdered by machine-gun fire within 36 hours of continuous slaughter. Immediately afterwards, SS commanders tallied every murder in exact numerical reports to Berlin, proving that the massacre was systematic state-directed genocide.</p>",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -5666,15 +5666,15 @@ export default {
               "hinge_question": "What does the calm, administrative vocabulary of this official report reveal about how perpetrators normalized industrial slaughter?"
             }
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> The most notorious massacre of the Holocaust by Bullets occurred outside Kyiv in Ukraine. On 29 September 1941, Sonderkommando 4a & Order Police battalions marched tens of thousands of Jewish residents to a vast ravine, ordering them to surrender valuables and undress.</p><p class=\"prose-p\">Victims were forced into the gorge and shot in layers atop one another. In this horrific Babyn Yar ravine massacre, exactly 33,771 shot in 36 hours were murdered, while German commanders sent meticulous administrative reports to Berlin documenting the mass execution.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> Outside the Ukrainian capital of Kyiv on 29 September 1941, deceptive wall posters ordered the city’s Jewish residents to assemble near the rail yards with warm clothing. Sonderkommando 4a and Order Police battalions marched tens of thousands to the wooded Babyn Yar gorge, also spelled Babi Yar, forcing victims to surrender valuables and undress.</p><p class=\"prose-p\">Driven down into the ravine in layers, 33,771 Jewish men, women, and children were murdered by machine-gun fire within 36 hours of continuous slaughter. Immediately afterwards, SS commanders tallied every murder in exact numerical reports to Berlin, proving that the massacre was systematic state-directed genocide.</p>",
           "image": "/images/the_shoah/shoah_l4_b2_babi_yar_clothes_haehle_1941.jpg",
           "image_alt": "Original October 1941 Agfacolor slide photographed by Wehrmacht propaganda photographer Johannes Hähle showing a woman’s white shoe, black leather handbag, patterned shawls, and lace headscarf left on the ground beside the Babi Yar ravine outside Kyiv",
           "caption": "The aftermath of the Babyn Yar (Babi Yar) ravine massacre outside Kyiv (photographed on Agfacolor film by Johannes Hähle, early October 1941): Personal shoes, shawls, and a handbag stripped from victims before Sonderkommando 4a and police battalions shot 33,771 Jews in 36 hours."
         },
         {
           "act": 4,
-          "title": "Massacres Across the Baltics and Local Collaboration",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Mass shootings swept across Lithuania, Latvia, Belarus, and Ukraine. Operating in the Baltic states, Einsatzgruppe A killing squads slaughtered nearly 250,000 Jewish victims within six months of the invasion, devastating centuries-old centers of Jewish learning.</p><p class=\"prose-p\">In the Ponary Forest massacres outside Vilnius, over 70,000 Jewish victims were systematically executed in wooded pits. The German death squads relied heavily on local Baltic collaboration, using auxiliary police battalions from Lithuania and Latvia who volunteered to round up, guard, and shoot their Jewish neighbours.</p>",
+          "title": "Ponary Forest and Collaboration Across the Baltics",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Mass shootings swept across Lithuania, Latvia, Belarus, and Ukraine with devastating speed. Operating across the Baltic states, Einsatzgruppe A murdered nearly 250,000 Jewish victims within six months, while in the wooded pits of Ponary Forest outside historic Vilnius, killers systematically executed over 70,000 Jewish victims.</p><p class=\"prose-p\">Because the four SS Einsatzgruppen numbered roughly three thousand men, German commanders relied heavily on local collaboration to multiply their manpower. Volunteer auxiliary police battalions from Lithuania and Latvia stepped forward alongside German squads to identify, round up, guard, and shoot their own Jewish neighbours.</p>",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -5700,19 +5700,19 @@ export default {
               "hinge_question": "Why is examining local collaboration across Eastern Europe essential for understanding the catastrophic speed of the \"Holocaust by Bullets\"?"
             }
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Mass shootings swept across Lithuania, Latvia, Belarus, and Ukraine. Operating in the Baltic states, Einsatzgruppe A killing squads slaughtered nearly 250,000 Jewish victims within six months of the invasion, devastating centuries-old centers of Jewish learning.</p><p class=\"prose-p\">In the Ponary Forest massacres outside Vilnius, over 70,000 Jewish victims were systematically executed in wooded pits. The German death squads relied heavily on local Baltic collaboration, using auxiliary police battalions from Lithuania and Latvia who volunteered to round up, guard, and shoot their Jewish neighbours.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Mass shootings swept across Lithuania, Latvia, Belarus, and Ukraine with devastating speed. Operating across the Baltic states, Einsatzgruppe A murdered nearly 250,000 Jewish victims within six months, while in the wooded pits of Ponary Forest outside historic Vilnius, killers systematically executed over 70,000 Jewish victims.</p><p class=\"prose-p\">Because the four SS Einsatzgruppen numbered roughly three thousand men, German commanders relied heavily on local collaboration to multiply their manpower. Volunteer auxiliary police battalions from Lithuania and Latvia stepped forward alongside German squads to identify, round up, guard, and shoot their own Jewish neighbours.</p>",
           "image": "/images/the_shoah/shoah_l4_b3_heydrich_stahlecker_1941.jpg",
           "image_alt": "RSHA chief Reinhard Heydrich (left) conferring beside a staff car with bespectacled SS-Brigadeführer Franz Walter Stahlecker (right), commander of Einsatzgruppe A in the Baltic states",
           "caption": "The commanders behind the Baltic massacres: RSHA chief Reinhard Heydrich (left) confers with SS-Brigadeführer Franz Walter Stahlecker (right), whose Einsatzgruppe A killing squads and local Baltic auxiliaries murdered nearly 250,000 Jews across Lithuania, Latvia, and Estonia within six months."
         },
         {
           "act": 5,
-          "title": "Perpetrator Strain and the Shift toward Industrial Murder",
+          "title": "Minsk, Perpetrator Strain, and Chełmno Gas Vans (Late 1941)",
           "image": "/images/goering_heydrich_directive_july1941.jpg",
           "image_alt": "Original 31 July 1941 directive signed by Reichsmarschall Hermann Göring authorizing Reinhard Heydrich to prepare the Final Solution",
           "caption": "Göring’s Endlösung Authorization (31 July 1941, Nuremberg Document PS-710): Signed letter from Reichsmarschall Hermann Göring charging RSHA chief Reinhard Heydrich to prepare an overall organizational and material plan for the \"Final Solution of the Jewish question.\"",
           "isReversed": true,
-          "text": "<span class=\"para-ref\">[4.5]</span> By the winter of 1941, the Einsatzgruppen and police battalions had shot over **500,000 people**. However, Nazi commanders recognized practical limits to mass shooting. When SS chief Heinrich Himmler became physically sick at Minsk witnessing a shooting in August 1941, he grew alarmed by shooter nervous breakdowns and heavy drinking among execution squads. Himmler ordered the development of a more industrialized method of killing—humane only from the perspective of the executioners. This led directly to the use of Chełmno exhaust vans in occupied Poland, where carbon monoxide exhaust was pumped into sealed truck compartments to asphyxiate victims, paving the way for the extermination camps.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> By the winter of 1941, the Einsatzgruppen and police battalions had shot over 500,000 people, yet SS leaders worried about open-air executions damaging perpetrator morale. After Heinrich Himmler grew physically sick watching an August 1941 mass shooting in Minsk, commanders reported shooter nervous breakdowns and heavy drinking among execution squads.</p><p class=\"prose-p\">Seeking killing methods easier on the executioners rather than showing any mercy toward victims, Himmler ordered technicians to distance killers from their targets. In December 1941 at Chełmno in occupied Poland, SS units asphyxiated deportees inside sealed exhaust vans pumping carbon monoxide exhaust, bridging shootings and stationary death camps.</p>",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -5738,7 +5738,7 @@ export default {
               "hinge_question": "How does the technical language of this engineering report demonstrate the dehumanization of both victims and perpetrators?"
             }
           },
-          "content": "<span class=\"para-ref\">[4.5]</span> By the winter of 1941, the Einsatzgruppen and police battalions had shot over **500,000 people**. However, Nazi commanders recognized practical limits to mass shooting. When SS chief Heinrich Himmler became physically sick at Minsk witnessing a shooting in August 1941, he grew alarmed by shooter nervous breakdowns and heavy drinking among execution squads. Himmler ordered the development of a more industrialized method of killing—humane only from the perspective of the executioners. This led directly to the use of Chełmno exhaust vans in occupied Poland, where carbon monoxide exhaust was pumped into sealed truck compartments to asphyxiate victims, paving the way for the extermination camps."
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> By the winter of 1941, the Einsatzgruppen and police battalions had shot over 500,000 people, yet SS leaders worried about open-air executions damaging perpetrator morale. After Heinrich Himmler grew physically sick watching an August 1941 mass shooting in Minsk, commanders reported shooter nervous breakdowns and heavy drinking among execution squads.</p><p class=\"prose-p\">Seeking killing methods easier on the executioners rather than showing any mercy toward victims, Himmler ordered technicians to distance killers from their targets. In December 1941 at Chełmno in occupied Poland, SS units asphyxiated deportees inside sealed exhaust vans pumping carbon monoxide exhaust, bridging shootings and stationary death camps.</p>"
         }
       ],
       "pair_share": {
@@ -5994,17 +5994,17 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did Adolf Hitler launch Operation Barbarossa, invading the Soviet Union with over three million troops?",
-          "q": "On what date did Adolf Hitler launch Operation Barbarossa, invading the Soviet Union with over three million troops?",
+          "question": "Why was Operation Barbarossa fundamentally different from a conventional military invasion?",
+          "q": "Why was Operation Barbarossa fundamentally different from a conventional military invasion?",
           "options": [
-            "1 September 1939",
-            "20 January 1942",
-            "22 June 1941",
-            "27 January 1945"
+            "It was fought exclusively by naval forces in the Baltic Sea",
+            "Hitler conceived it as a racial war of extermination targeting Jews and Soviet political officers",
+            "German generals refused to allow any SS units to cross the Soviet border",
+            "Its only goal was to secure a quick diplomatic peace treaty with Moscow"
           ],
-          "answer": "22 June 1941",
-          "a": "22 June 1941",
-          "explanation": "On 22 June 1941, Nazi Germany launched Operation Barbarossa against the Soviet Union."
+          "answer": "Hitler conceived it as a racial war of extermination targeting Jews and Soviet political officers",
+          "a": "Hitler conceived it as a racial war of extermination targeting Jews and Soviet political officers",
+          "explanation": "Operation Barbarossa was planned as a racial war of extermination (Vernichtungskrieg), backed by the Commissar Order and the false Judeo-Bolshevism conspiracy myth."
         },
         {
           "stage": 1,
@@ -6549,7 +6549,7 @@ export default {
           "focusClue": "Why was Operation Barbarossa fought in 1941 as a war of extermination?",
           "para_ref": "[4.1]",
           "paraRef": "[4.1]",
-          "prose_hash": "e5bf9a7d28"
+          "prose_hash": "a6b91befc9"
         },
         {
           "step": 2,
@@ -6564,7 +6564,7 @@ export default {
           "focusClue": "How did the SS Einsatzgruppen murder 1.5 million Soviet Jews?",
           "para_ref": "[4.2]",
           "paraRef": "[4.2]",
-          "prose_hash": "0d9e74a450"
+          "prose_hash": "436b76cb35"
         },
         {
           "step": 3,
@@ -6579,7 +6579,7 @@ export default {
           "focusClue": "What happened at the Babyn Yar ravine outside Kyiv in September 1941?",
           "para_ref": "[4.3]",
           "paraRef": "[4.3]",
-          "prose_hash": "8dd4cb2e54"
+          "prose_hash": "997a029fae"
         },
         {
           "step": 4,
@@ -6594,7 +6594,7 @@ export default {
           "focusClue": "How did local Baltic police helpers assist German killing squads?",
           "para_ref": "[4.4]",
           "paraRef": "[4.4]",
-          "prose_hash": "dcb4191ad6"
+          "prose_hash": "5131004df7"
         },
         {
           "step": 5,
@@ -6609,7 +6609,7 @@ export default {
           "focusClue": "Why did Heinrich Himmler switch from mass shootings to Chełmno gas vans?",
           "para_ref": "[4.5]",
           "paraRef": "[4.5]",
-          "prose_hash": "d037bd4b4a"
+          "prose_hash": "14ef01df9b"
         }
       ],
       "interpretations": [
@@ -6656,7 +6656,7 @@ export default {
             "stat": "3 Million Axis Troops Invade the USSR",
             "html": "In June 1941, Hitler launched <strong>Operation Barbarossa</strong> against the USSR as a racial war of destruction. His <strong>Commissar Order</strong> spread the false <strong>“Judeo-Bolshevism”</strong> lie.",
             "spoken": "How and why did Nazi persecution turn into systematic mass murder in 1941? <short pause> In June 1941, Hitler launched Operation Barbarossa against the USSR as a racial war of destruction. His Commissar Order spread the false “Judeo-Bolshevism” lie.",
-            "paired_prose_hash": "e5bf9a7d28",
+            "paired_prose_hash": "a6b91befc9",
             "connective": "How and why did Nazi persecution turn into systematic mass murder in 1941?"
           },
           {
@@ -6668,7 +6668,7 @@ export default {
             "stat": "1.5 Million Murdered in Mass Shootings",
             "html": "Four mobile <strong>SS Einsatzgruppen</strong> squads and <strong>Order Police</strong> battalions followed German troops east. By August 1941, they murdered whole families in the <strong>“Holocaust by Bullets”</strong>.",
             "spoken": "Behind the advancing army marched mobile killing squads. <short pause> Four mobile SS Einsatzgruppen squads and Order Police battalions followed German troops east. By August 1941, they murdered whole families in the “Holocaust by Bullets” .",
-            "paired_prose_hash": "0d9e74a450",
+            "paired_prose_hash": "436b76cb35",
             "connective": "Behind the advancing army marched mobile killing squads."
           },
           {
@@ -6680,7 +6680,7 @@ export default {
             "stat": "33,771 Kyiv Jews Murdered in 36 Hours",
             "html": "Outside Kyiv, <strong>Sonderkommando 4a</strong> and German police marched Jewish families to the <strong>Babyn Yar ravine</strong>. In 36 hours, they murdered <strong>33,771 civilians</strong> and logged the tally.",
             "spoken": "Outside Kyiv in Ukraine, one ravine showed this terrible scale. <short pause> Outside Kyiv, Sonderkommando 4a and German police marched Jewish families to the Babyn Yar ravine . In 36 hours, they murdered 33,771 civilians and logged the tally.",
-            "paired_prose_hash": "8dd4cb2e54",
+            "paired_prose_hash": "997a029fae",
             "connective": "Outside Kyiv in Ukraine, one ravine showed this terrible scale."
           },
           {
@@ -6692,7 +6692,7 @@ export default {
             "stat": "70,000 Murdered in Ponary Forest Near Vilna",
             "html": "In the Baltic states, <strong>Einsatzgruppe A</strong> murdered 250,000 Jews, including 70,000 at <strong>Ponary Forest</strong>. Local <strong>Baltic auxiliary police</strong> helped guard and shoot their neighbours.",
             "spoken": "Massacres also swept through the Baltic states with local help. <short pause> In the Baltic states, Einsatzgruppe A murdered 250,000 Jews, including 70,000 at Ponary Forest . Local Baltic auxiliary police helped guard and shoot their neighbours.",
-            "paired_prose_hash": "dcb4191ad6",
+            "paired_prose_hash": "5131004df7",
             "connective": "Massacres also swept through the Baltic states with local help."
           },
           {
@@ -6704,7 +6704,7 @@ export default {
             "stat": "Exhaust Fumes Used to Protect Executioners",
             "html": "Worried about shooter stress among his SS men, <strong>Heinrich Himmler</strong> sought impersonal killing. At <strong>Chełmno</strong> in Poland, victims were murdered inside sealed <strong>exhaust-gas vans</strong>.",
             "spoken": "Soon, SS leaders sought a more industrial method of murder. <short pause> Worried about shooter stress among his SS men, Heinrich Himmler sought impersonal killing. At Chełmno in Poland, victims were murdered inside sealed exhaust-gas vans .",
-            "paired_prose_hash": "d037bd4b4a",
+            "paired_prose_hash": "14ef01df9b",
             "connective": "Soon, SS leaders sought a more industrial method of murder."
           },
           {
@@ -6775,7 +6775,7 @@ export default {
             "trigger": "Fifteen senior Nazi officials and state department heads meet at a Berlin villa to coordinate the administrative logistics of the \"Final Solution\".",
             "connective": "Ensured the complete cooperation of ministries, transport networks, and civil servants in organizing the murder of an estimated 11 million European Jews.",
             "question": "What logistics did fifteen Nazi officials coordinate at Wannsee in 1942?",
-            "prose_hash": "912af95d0d"
+            "prose_hash": "d6780dcb75"
           },
           {
             "step": 2,
@@ -6787,7 +6787,7 @@ export default {
             "trigger": "Three secret, purpose-built death camps—Bełżec, Sobibór, and Treblinka—open in occupied Poland using carbon monoxide engine exhaust chambers.",
             "connective": "Murdered over 1.7 million Polish and European Jews upon immediate arrival, with no selection for work; victims were murdered within two hours of train arrival.",
             "question": "What made Bełżec, Sobibór, and Treblinka pure extermination camps?",
-            "prose_hash": "56dff9951d"
+            "prose_hash": "9281fd89ef"
           },
           {
             "step": 3,
@@ -6799,7 +6799,7 @@ export default {
             "trigger": "Auschwitz-Birkenau combines a vast slave labour camp (Monowitz) with four industrial crematoria complexes utilizing Zyklon B hydrogen cyanide gas.",
             "connective": "Murdered approximately 1.1 million people (including 960,000 Jews, 74,000 Poles, and 21,000 Roma), with SS doctors conducting \"selection\" on the railway ramp.",
             "question": "How did Auschwitz-Birkenau combine slave labour with Zyklon B murder?",
-            "prose_hash": "a98323e7e7"
+            "prose_hash": "20d882cf79"
           },
           {
             "step": 4,
@@ -6811,7 +6811,7 @@ export default {
             "trigger": "When the SS moves to liquidate the remaining 60,000 Jews in Warsaw, hundreds of young Jewish fighters attack with smuggled pistols, rifles, and Molotov cocktails.",
             "connective": "Held off the German army and SS for nearly a month, choosing to die fighting with honour rather than perish silently in Treblinka gas chambers.",
             "question": "How did Mordechai Anielewicz’s fighters resist in Warsaw for 27 days?",
-            "prose_hash": "9fbaae93ab"
+            "prose_hash": "450ba5fab5"
           },
           {
             "step": 5,
@@ -6823,7 +6823,7 @@ export default {
             "trigger": "Prisoner uprisings erupt at Treblinka (August 1943), Sobibór (October 1943), and the Sonderkommando revolt at Auschwitz (October 1944) blowing up Crematorium IV.",
             "connective": "Forced the SS to dismantle Treblinka and Sobibór, shattering the falsehood that Jewish victims went passively \"like sheep to the slaughter\".",
             "question": "How did prisoner revolts at Treblinka, Sobibór, and Auschwitz fight back?",
-            "prose_hash": "139c6679b9"
+            "prose_hash": "b973ce42f4"
           }
         ]
       },
@@ -7075,11 +7075,11 @@ export default {
       "narrative_blocks": [
         {
           "act": 1,
-          "title": "The Wannsee Conference: The Bureaucracy of Murder (1942)",
+          "title": "The Wannsee Conference: Coordinating Murder (20 January 1942)",
           "image": "/images/the_shoah/maps/shoah_map_l5_final_solution_resistance_1942_44.svg",
           "image_alt": "KS3 Year 9 historical GIS atlas map of Axis-dominated Europe (1942–1944) showing the Wannsee Villa in Berlin (20 January 1942), railway deportation routes from France, the Netherlands, Italy, Greece, and Hungary to Occupied Poland, Operation Reinhard death camps (Bełżec, Sobibór, Treblinka), Auschwitz-Birkenau, the Warsaw Ghetto Uprising (April–May 1943), and the October 1943 Danish sea rescue to Neutral Sweden",
           "caption": "Reference Map: The Nazi Final Solution (1942-44) - continental railway deportations after the Wannsee Conference, Operation Reinhard extermination camps, Auschwitz-Birkenau, armed Jewish resistance revolts, and the October 1943 Danish sea rescue.",
-          "text": "<span class=\"para-ref\">[5.1]</span> On **20 January 1942**, 15 senior civil servants, Nazi officials, SS generals, and government ministry directors gathered at a lakeside villa in Wannsee, a wealthy suburb of Berlin. Chaired by Reinhard Heydrich and recorded by Adolf Eichmann, the **Wannsee Conference** lasted barely ninety minutes. Its purpose was to coordinate logistics and secure full railway cooperation to execute the \"Final Solution\". Eichmann presented Eichmann’s 11 million list calculating that eleven million Jews across Europe were marked for eradication.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> On 20 January 1942, fifteen senior Nazi officials, SS officers, and ministry civil servants—over half holding university doctorates—met at a lakeside villa in Berlin for the ninety-minute Wannsee Conference. Chaired by Reinhard Heydrich, the summit aligned government departments and railway transport logistics to carry out the \"Final Solution\".</p><p class=\"prose-p\">Because mass murder had already begun in Eastern Europe, officials never debated whether to kill, turning continental deportations instead into a smooth bureaucratic state operation. Recording the minutes, SS transport specialist Adolf Eichmann tabulated a statistical list marking eleven million Jews across occupied, allied, and neutral states for total eradication.</p>",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -7105,7 +7105,7 @@ export default {
               "hinge_question": "How does the Wannsee Protocol prove that the \"Final Solution\" was an enterprise of the entire German civil service, not merely rogue SS fanatics?"
             }
           },
-          "content": "<span class=\"para-ref\">[5.1]</span> On **20 January 1942**, 15 senior civil servants, Nazi officials, SS generals, and government ministry directors gathered at a lakeside villa in Wannsee, a wealthy suburb of Berlin. Chaired by Reinhard Heydrich and recorded by Adolf Eichmann, the **Wannsee Conference** lasted barely ninety minutes. Its purpose was to coordinate logistics and secure full railway cooperation to execute the \"Final Solution\". Eichmann presented Eichmann’s 11 million list calculating that eleven million Jews across Europe were marked for eradication.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> On 20 January 1942, fifteen senior Nazi officials, SS officers, and ministry civil servants—over half holding university doctorates—met at a lakeside villa in Berlin for the ninety-minute Wannsee Conference. Chaired by Reinhard Heydrich, the summit aligned government departments and railway transport logistics to carry out the \"Final Solution\".</p><p class=\"prose-p\">Because mass murder had already begun in Eastern Europe, officials never debated whether to kill, turning continental deportations instead into a smooth bureaucratic state operation. Recording the minutes, SS transport specialist Adolf Eichmann tabulated a statistical list marking eleven million Jews across occupied, allied, and neutral states for total eradication.</p>",
           "stage_hook_map": {
             "id": "shoah-l5-final-solution-resistance-map",
             "image": "/images/the_shoah/maps/shoah_map_l5_final_solution_resistance_1942_44.svg",
@@ -7260,8 +7260,8 @@ export default {
         },
         {
           "act": 2,
-          "title": "Operation Reinhard: The Pure Death Camps (1942–1943)",
-          "text": "<span class=\"para-ref\">[5.2]</span> Following Wannsee, the SS launched **Operation Reinhard**—the top-secret code name for the extermination of all 2.2 million Jews in the General Government of occupied Poland. Three specialized extermination centres were constructed: **Bełżec, Sobibór, and Treblinka**. These sites had zero selection for labour; their sole purpose was immediate murder. Arriving trains were unloaded onto ramps disguised as transit stations, victims were told they were entering a shower, forced to undress, and directed into gas chambers. Dead within 2 hours of arrival, almost every man, woman, and child was murdered with carbon monoxide. Between them, these three camps murdered approximately **1.7 million Jewish people** before being dismantled in 1943.",
+          "title": "Operation Reinhard: The Pure Extermination Camps (1942–1943)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Soon after Wannsee, the SS launched Operation Reinhard, the top-secret codename for exterminating all 2.2 million Jews in the General Government of occupied Poland. Built with no barracks for slave workers, three specialized extermination camps—Bełżec, Sobibór, and Treblinka—had zero slave-labour selection and existed solely for immediate murder.</p><p class=\"prose-p\">Disguised transit-station ramps and false shower claims calmed arriving crowds as families were forced to undress and driven into gas chambers. Pumped with carbon monoxide engine exhaust, almost all deportees were dead within 2 hours of arrival; together, those three camps murdered roughly 1.7 million Jewish people before being dismantled in 1943.</p>",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -7290,12 +7290,12 @@ export default {
           "image": "/images/treblinka_railway_siding_1945.jpg",
           "image_alt": "Railway tracks leading into the Treblinka extermination camp area, photographed after liberation",
           "caption": "The railway spur leading toward the site of Treblinka II extermination camp in occupied Poland, where over 800,000 Jewish men, women, and children were murdered between July 1942 and October 1943.",
-          "content": "<span class=\"para-ref\">[5.2]</span> Following Wannsee, the SS launched **Operation Reinhard**—the top-secret code name for the extermination of all 2.2 million Jews in the General Government of occupied Poland. Three specialized extermination centres were constructed: **Bełżec, Sobibór, and Treblinka**. These sites had zero selection for labour; their sole purpose was immediate murder. Arriving trains were unloaded onto ramps disguised as transit stations, victims were told they were entering a shower, forced to undress, and directed into gas chambers. Dead within 2 hours of arrival, almost every man, woman, and child was murdered with carbon monoxide. Between them, these three camps murdered approximately **1.7 million Jewish people** before being dismantled in 1943."
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Soon after Wannsee, the SS launched Operation Reinhard, the top-secret codename for exterminating all 2.2 million Jews in the General Government of occupied Poland. Built with no barracks for slave workers, three specialized extermination camps—Bełżec, Sobibór, and Treblinka—had zero slave-labour selection and existed solely for immediate murder.</p><p class=\"prose-p\">Disguised transit-station ramps and false shower claims calmed arriving crowds as families were forced to undress and driven into gas chambers. Pumped with carbon monoxide engine exhaust, almost all deportees were dead within 2 hours of arrival; together, those three camps murdered roughly 1.7 million Jewish people before being dismantled in 1943.</p>"
         },
         {
           "act": 3,
-          "title": "Auschwitz-Birkenau: The Factory of Industrial Death",
-          "text": "<span class=\"para-ref\">[5.3]</span> The largest and most lethal centre was **Auschwitz-Birkenau** in southern Poland. Unlike Operation Reinhard, Auschwitz functioned as both a massive slave-labour concentration camp and an extermination centre. Cattle trains from across Europe arrived at the railway ramp selection platform, where SS doctors conducted the selection. Those deemed fit for slave labour were tattooed and worked to exhaustion. The elderly, sick, and young children were sent directly to underground gas chambers, where pellets of **Zyklon B** were dropped through ceiling vents. At least **1.1 million murdered** at Auschwitz, of whom approximately one million were Jews.",
+          "title": "Auschwitz-Birkenau: Ramp Selection and Zyklon B (1942–1944)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> In southern Poland, Auschwitz-Birkenau functioned as both a giant slave-labour concentration camp and the largest Nazi extermination centre. Arriving cattle-train crowds from across Europe—including Greek teenager Heinz Kounio from Thessaloniki and Italian chemist Primo Levi—faced uniformed SS doctors conducting selections along the Birkenau railway ramp.</p><p class=\"prose-p\">Healthy adults judged fit for slave labour were tattooed with serial numbers and worked toward exhaustion, while young children and the elderly were sent straight to underground gas chambers. Dropping Zyklon B cyanide pellets through ceiling vents, perpetrators murdered at least 1.1 million people at Auschwitz, including roughly one million Jews.</p>",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -7338,7 +7338,7 @@ export default {
               "hinge_question": "How do the continental railway deportation network (Plate 1) and the industrial engineering blueprints of Birkenau's crematoria (Plate 2) demonstrate that the Holocaust was an integrated continental operation requiring modern logistical, corporate, and technological systems?"
             }
           },
-          "content": "<span class=\"para-ref\">[5.3]</span> The largest and most lethal centre was **Auschwitz-Birkenau** in southern Poland. Unlike Operation Reinhard, Auschwitz functioned as both a massive slave-labour concentration camp and an extermination centre. Cattle trains from across Europe arrived at the railway ramp selection platform, where SS doctors conducted the selection. Those deemed fit for slave labour were tattooed and worked to exhaustion. The elderly, sick, and young children were sent directly to underground gas chambers, where pellets of **Zyklon B** were dropped through ceiling vents. At least **1.1 million murdered** at Auschwitz, of whom approximately one million were Jews.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> In southern Poland, Auschwitz-Birkenau functioned as both a giant slave-labour concentration camp and the largest Nazi extermination centre. Arriving cattle-train crowds from across Europe—including Greek teenager Heinz Kounio from Thessaloniki and Italian chemist Primo Levi—faced uniformed SS doctors conducting selections along the Birkenau railway ramp.</p><p class=\"prose-p\">Healthy adults judged fit for slave labour were tattooed with serial numbers and worked toward exhaustion, while young children and the elderly were sent straight to underground gas chambers. Dropping Zyklon B cyanide pellets through ceiling vents, perpetrators murdered at least 1.1 million people at Auschwitz, including roughly one million Jews.</p>",
           "image": "/images/the_shoah/shoah_l5_b2_auschwitz_zyklon_b_canisters.jpg",
           "image_alt": "Empty tin canisters of Tesch & Stabenow Zyklon B cyanide poison pellets stamped GIFTGAS! with a skull-and-crossbones warning label, recovered by Allied liberators at Auschwitz",
           "caption": "The industrial machinery of murder at Auschwitz-Birkenau: Empty Tesch & Stabenow canisters of Zyklon B (\"Giftgas!\") recovered as forensic evidence after liberation; SS orderlies dropped these cyanide pellets through ceiling vents into underground gas chambers."
@@ -7346,7 +7346,7 @@ export default {
         {
           "act": 4,
           "title": "The Warsaw Ghetto Uprising (April–May 1943)",
-          "text": "<span class=\"para-ref\">[5.4]</span> Contrary to the offensive myth that victims went passively to their deaths, Jewish people mounted desperate armed resistance. When the SS entered the Warsaw Ghetto in April 1943 to deport the remaining 60,000 residents, they were ambushed. The Jewish Combat Organisation (**ŻOB**), led by 24-year-old **Mordechai Anielewicz**, and the Jewish Military Union (**ŻZW**) fought back. Using smuggled pistols vs German tanks, grenades, and petrol bombs, a few hundred young fighters held out for **27 days of defiance**. The uprising was finally crushed only when General Jürgen Stroop burned the ghetto block by block.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Refuting myths of passivity, trapped communities chose armed defiance over Treblinka deportation. In April 1943, when SS troops entered the Warsaw Ghetto to liquidate the remaining 60,000 residents, young fighters of the Jewish Combat Organisation, or ŻOB, commanded by 24-year-old Mordechai Anielewicz, ambushed them alongside the ŻZW.</p><p class=\"prose-p\">Fighting German tanks and artillery using smuggled pistols, grenades, and homemade petrol bombs, several hundred poorly armed civilians held out in 27 days of defiance. SS General Jürgen Stroop finally crushed the uprising only by setting apartments ablaze and systematically burning the ghetto block by block.</p>",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -7370,15 +7370,15 @@ export default {
               "hinge_question": "Why did the young fighters of the Warsaw Ghetto choose to fight, knowing that military rescue or victory was impossible?"
             }
           },
-          "content": "<span class=\"para-ref\">[5.4]</span> Contrary to the offensive myth that victims went passively to their deaths, Jewish people mounted desperate armed resistance. When the SS entered the Warsaw Ghetto in April 1943 to deport the remaining 60,000 residents, they were ambushed. The Jewish Combat Organisation (**ŻOB**), led by 24-year-old **Mordechai Anielewicz**, and the Jewish Military Union (**ŻZW**) fought back. Using smuggled pistols vs German tanks, grenades, and petrol bombs, a few hundred young fighters held out for **27 days of defiance**. The uprising was finally crushed only when General Jürgen Stroop burned the ghetto block by block.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Refuting myths of passivity, trapped communities chose armed defiance over Treblinka deportation. In April 1943, when SS troops entered the Warsaw Ghetto to liquidate the remaining 60,000 residents, young fighters of the Jewish Combat Organisation, or ŻOB, commanded by 24-year-old Mordechai Anielewicz, ambushed them alongside the ŻZW.</p><p class=\"prose-p\">Fighting German tanks and artillery using smuggled pistols, grenades, and homemade petrol bombs, several hundred poorly armed civilians held out in 27 days of defiance. SS General Jürgen Stroop finally crushed the uprising only by setting apartments ablaze and systematically burning the ghetto block by block.</p>",
           "image": "/images/the_shoah/shoah_l5_b3_warsaw_ghetto_uprising_burning_1943.jpg",
           "image_alt": "Official Stroop Report photograph from April–May 1943 showing fierce flames and black smoke pouring from the windows of a Warsaw Ghetto apartment building while a helmeted SS soldier stands on the street below",
           "caption": "The destruction of the Warsaw Ghetto during the April–May 1943 Uprising (Stroop Report, NARA): Unable to defeat Mordechai Anielewicz’s ŻOB and ŻZW fighters in bunker-to-bunker combat for 27 days, General Jürgen Stroop’s SS troops systematically burned the ghetto block by block."
         },
         {
           "act": 5,
-          "title": "Revolts in the Death Camps and the Partisans",
-          "text": "<span class=\"para-ref\">[5.5]</span> Resistance did not end in Warsaw. In the very heart of the death camps, prisoners mounted heroic revolts. At **Treblinka** in August 1943, prisoners conducted a daring Treblinka armoury raid, seizing rifles and grenades, setting the camp ablaze, and enabling 300 to escape. At **Sobibór** in October 1943, an underground committee led a Sobibór mass breakout of 300 inmates. In October 1944 at **Auschwitz-Birkenau**, members of the Jewish *Sonderkommando* staged an armed revolt using smuggled explosives, having Crematorium IV blown up before being killed.",
+          "title": "Uprisings Inside Treblinka, Sobibór, and Birkenau (1943–1944)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Prisoners resisted even inside heavily guarded death camps. At Treblinka in August 1943, prisoners raided the SS armoury, torched camp buildings, and helped 300 inmates escape; two months later, in October 1943 at Sobibór, an underground prisoner committee ambushed SS officers and enabled another mass breakout of 300 inmates.</p><p class=\"prose-p\">At Auschwitz-Birkenau, young Jewish women led by courier Roza Robota smuggled tiny pinches of gunpowder in their hems from a nearby munitions factory. Using those smuggled explosives in October 1944, prisoners of the Jewish Sonderkommando staged an armed uprising and blew up Crematorium IV inside Birkenau.</p>",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -7404,7 +7404,7 @@ export default {
               "hinge_question": "How does the history of camp revolts and forest partisans dismantle the persistent, harmful myth of Jewish passivity during the Holocaust?"
             }
           },
-          "content": "<span class=\"para-ref\">[5.5]</span> Resistance did not end in Warsaw. In the very heart of the death camps, prisoners mounted heroic revolts. At **Treblinka** in August 1943, prisoners conducted a daring Treblinka armoury raid, seizing rifles and grenades, setting the camp ablaze, and enabling 300 to escape. At **Sobibór** in October 1943, an underground committee led a Sobibór mass breakout of 300 inmates. In October 1944 at **Auschwitz-Birkenau**, members of the Jewish *Sonderkommando* staged an armed revolt using smuggled explosives, having Crematorium IV blown up before being killed.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Prisoners resisted even inside heavily guarded death camps. At Treblinka in August 1943, prisoners raided the SS armoury, torched camp buildings, and helped 300 inmates escape; two months later, in October 1943 at Sobibór, an underground prisoner committee ambushed SS officers and enabled another mass breakout of 300 inmates.</p><p class=\"prose-p\">At Auschwitz-Birkenau, young Jewish women led by courier Roza Robota smuggled tiny pinches of gunpowder in their hems from a nearby munitions factory. Using those smuggled explosives in October 1944, prisoners of the Jewish Sonderkommando staged an armed uprising and blew up Crematorium IV inside Birkenau.</p>",
           "image": "/images/the_shoah/shoah_l5_b4_stanislaw_szmajzner_sobibor.jpg",
           "image_alt": "Wartime photograph of teenage Sobibór extermination camp uprising fighter Stanisław \"Shlomo\" Szmajzner standing in a forest wearing a cap and carrying a Soviet PPSh-41 drum submachine gun after escaping to join the partisans",
           "caption": "From death camp breakout to forest partisan: Teenage Polish-Jewish goldsmith Stanisław \"Shlomo\" Szmajzner, who smuggled rifles out of the SS armoury during the 14 October 1943 Sobibór mass breakout of 300 prisoners and fought on with partisan units in the forests."
@@ -7695,17 +7695,17 @@ export default {
       "quiz": [
         {
           "stage": 1,
-          "question": "On what date did fifteen senior Nazi and ministry officials meet at a Berlin villa for the Wannsee Conference?",
-          "q": "On what date did fifteen senior Nazi and ministry officials meet at a Berlin villa for the Wannsee Conference?",
+          "question": "What was the main purpose of the ninety-minute Wannsee Conference held by senior Nazi and ministry officials in 1942?",
+          "q": "What was the main purpose of the ninety-minute Wannsee Conference held by senior Nazi and ministry officials in 1942?",
           "options": [
-            "22 June 1941",
-            "20 January 1942",
-            "1 September 1939",
-            "27 January 1945"
+            "To plan the evacuation of Berlin before Allied bombing raids",
+            "To negotiate a ceasefire with the Soviet Red Army on the Eastern Front",
+            "To coordinate government logistics and railway cooperation to carry out the 'Final Solution'",
+            "To decide whether Jewish workers should be granted German citizenship"
           ],
-          "answer": "20 January 1942",
-          "a": "20 January 1942",
-          "explanation": "On 20 January 1942, fifteen senior officials coordinated the bureaucratic logistics of the \"Final Solution\" at Wannsee."
+          "answer": "To coordinate government logistics and railway cooperation to carry out the 'Final Solution'",
+          "a": "To coordinate government logistics and railway cooperation to carry out the 'Final Solution'",
+          "explanation": "Chaired by Reinhard Heydrich, the Wannsee Conference brought together 15 senior officials to coordinate state ministries and railways for the mass murder of Europe's Jews."
         },
         {
           "stage": 1,
@@ -8250,7 +8250,7 @@ export default {
           "focusClue": "What logistics did fifteen Nazi officials coordinate at Wannsee in 1942?",
           "para_ref": "[5.1]",
           "paraRef": "[5.1]",
-          "prose_hash": "912af95d0d"
+          "prose_hash": "d6780dcb75"
         },
         {
           "step": 2,
@@ -8265,7 +8265,7 @@ export default {
           "focusClue": "What made Bełżec, Sobibór, and Treblinka pure extermination camps?",
           "para_ref": "[5.2]",
           "paraRef": "[5.2]",
-          "prose_hash": "56dff9951d"
+          "prose_hash": "9281fd89ef"
         },
         {
           "step": 3,
@@ -8280,7 +8280,7 @@ export default {
           "focusClue": "How did Auschwitz-Birkenau combine slave labour with Zyklon B murder?",
           "para_ref": "[5.3]",
           "paraRef": "[5.3]",
-          "prose_hash": "a98323e7e7"
+          "prose_hash": "20d882cf79"
         },
         {
           "step": 4,
@@ -8295,7 +8295,7 @@ export default {
           "focusClue": "How did Mordechai Anielewicz’s fighters resist in Warsaw for 27 days?",
           "para_ref": "[5.4]",
           "paraRef": "[5.4]",
-          "prose_hash": "9fbaae93ab"
+          "prose_hash": "450ba5fab5"
         },
         {
           "step": 5,
@@ -8310,7 +8310,7 @@ export default {
           "focusClue": "How did prisoner revolts at Treblinka, Sobibór, and Auschwitz fight back?",
           "para_ref": "[5.5]",
           "paraRef": "[5.5]",
-          "prose_hash": "139c6679b9"
+          "prose_hash": "b973ce42f4"
         }
       ],
       "enquiry": "How did the \"Final Solution\" operate, and how did Jews resist?",
@@ -8341,7 +8341,7 @@ export default {
             "stat": "15 Officials Target 11 Million European Jews",
             "html": "In January 1942, <strong>15 senior officials</strong> met for 90 minutes at <strong>Wannsee</strong>. Heydrich and <strong>Adolf Eichmann</strong> coordinated ministries and railways to murder 11 million Jews.",
             "spoken": "How did the Nazi Final Solution operate, and how did Jewish people resist? <short pause> In January 1942, 15 senior officials met for 90 minutes at Wannsee . Heydrich and Adolf Eichmann coordinated ministries and railways to murder 11 million Jews.",
-            "paired_prose_hash": "912af95d0d",
+            "paired_prose_hash": "d6780dcb75",
             "connective": "How did the Nazi Final Solution operate, and how did Jewish people resist?"
           },
           {
@@ -8353,7 +8353,7 @@ export default {
             "stat": "1.7 Million Murdered at 3 Pure Death Sites",
             "html": "Under <strong>Operation Reinhard</strong>, the SS built <strong>Bełżec, Sobibór, and Treblinka</strong> purely for murder. With zero labour selection, <strong>1.7 million victims</strong> were gassed within hours.",
             "spoken": "Across occupied Poland, the SS built camps designed solely for murder. <short pause> Under Operation Reinhard , the SS built Bełżec, Sobibór, and Treblinka purely for murder. With zero labour selection, 1.7 million victims were gassed within hours.",
-            "paired_prose_hash": "56dff9951d",
+            "paired_prose_hash": "9281fd89ef",
             "connective": "Across occupied Poland, the SS built camps designed solely for murder."
           },
           {
@@ -8365,7 +8365,7 @@ export default {
             "stat": "At Least 1.1 Million Murdered at Auschwitz",
             "html": "<strong>Auschwitz-Birkenau</strong> combined slave labour with mass murder. SS doctors ran <strong>ramp selections</strong>, sending children and elders straight to <strong>Zyklon B</strong> gas chambers.",
             "spoken": "The largest killing centre of all was Auschwitz-Birkenau in southern Poland. <short pause> Auschwitz-Birkenau combined slave labour with mass murder. SS doctors ran ramp selections , sending children and elders straight to Zyklon B gas chambers.",
-            "paired_prose_hash": "a98323e7e7",
+            "paired_prose_hash": "20d882cf79",
             "connective": "The largest killing centre of all was Auschwitz-Birkenau in southern Poland."
           },
           {
@@ -8377,7 +8377,7 @@ export default {
             "stat": "27 Days Fighting German Tanks With Pistols",
             "html": "Jewish people never went passively. Led by 24-year-old <strong>Mordechai Anielewicz</strong>, young <strong>ŻOB and ŻZW</strong> fighters ambushed SS troops in Warsaw, holding out for <strong>27 days</strong>.",
             "spoken": "Despite Nazi terror, young Jewish fighters rose up in armed defiance. <short pause> Jewish people never went passively. Led by 24-year-old Mordechai Anielewicz , young ŻOB and ŻZW fighters ambushed SS troops in Warsaw, holding out for 27 days .",
-            "paired_prose_hash": "9fbaae93ab",
+            "paired_prose_hash": "450ba5fab5",
             "connective": "Despite Nazi terror, young Jewish fighters rose up in armed defiance."
           },
           {
@@ -8389,7 +8389,7 @@ export default {
             "stat": "Treblinka, Sobibór & Crematorium IV Revolts",
             "html": "Inmates staged armed breakouts of 300 prisoners each at <strong>Treblinka and Sobibór</strong>. At Auschwitz in 1944, <strong>Roza Robota’s</strong> smuggled gunpowder blew up <strong>Crematorium IV</strong>.",
             "spoken": "Even inside the death camps, prisoners organised daring armed revolts. <short pause> Inmates staged armed breakouts of 300 prisoners each at Treblinka and Sobibór . At Auschwitz in 1944, Roza Robota’s smuggled gunpowder blew up Crematorium IV .",
-            "paired_prose_hash": "139c6679b9",
+            "paired_prose_hash": "b973ce42f4",
             "connective": "Even inside the death camps, prisoners organised daring armed revolts."
           },
           {
@@ -8460,7 +8460,7 @@ export default {
             "trigger": "Mass murder relies on university-educated civil servants, police officers, bank managers seizing assets, and Deutsche Reichsbahn railway staff scheduling death trains.",
             "connective": "Demonstrates that genocide was made possible by ordinary professionals carrying out daily bureaucratic duties without pulling a trigger.",
             "question": "How did \"desk murderers\" and Reichsbahn railway clerks enable genocide?",
-            "prose_hash": "86d12330a2"
+            "prose_hash": "2870c63c92"
           },
           {
             "step": 2,
@@ -8472,7 +8472,7 @@ export default {
             "trigger": "Collaborative governments and local police forces assist deportations: French police round up 13,000 Jews at the Vel’ d’Hiv (1942); Hungarian authorities deport 437,000 Jews in 1944.",
             "connective": "Proves that the Shoah was an all-European crime, reliant upon indigenous antisemitism and political collaboration across conquered territories.",
             "question": "How did Vichy French police and Hungarian officials aid deportations?",
-            "prose_hash": "c49ea6bdfd"
+            "prose_hash": "0ecc79fe1a"
           },
           {
             "step": 3,
@@ -8484,7 +8484,7 @@ export default {
             "trigger": "Millions of ordinary citizens witnessed neighbours deported, bought \"Aryanized\" stolen property at auctions, or chose not to speak out.",
             "connective": "Created an atmosphere of widespread silence and moral indifference that enabled perpetrators to operate without fear of popular domestic backlash.",
             "question": "How did silent bystanders across occupied Europe profit from deportations?",
-            "prose_hash": "5749a73b5f"
+            "prose_hash": "f50902c6b8"
           },
           {
             "step": 4,
@@ -8496,7 +8496,7 @@ export default {
             "trigger": "In Denmark, citizens secretly ferry 7,200 Jews to Sweden in fishing boats; in Le Chambon (France), an entire Protestant village shelters 3,500 refugees.",
             "connective": "Proves that rescue was possible when ordinary people took collective action, recognised by Yad Vashem as \"Righteous Among the Nations\".",
             "question": "How did ordinary citizens rescue Jews in Denmark and Le Chambon?",
-            "prose_hash": "620bc42902"
+            "prose_hash": "5f29c78870"
           },
           {
             "step": 5,
@@ -8508,7 +8508,7 @@ export default {
             "trigger": "In December 1942, the Allies officially condemn Nazi extermination; courier Jan Karski delivers eyewitness accounts, but military priorities take precedence.",
             "connective": "The Allies decline to bomb railway lines to Auschwitz, arguing that total military defeat of Germany was the fastest way to end the camps.",
             "question": "What did Jan Karski report in 1942, and how did the Allies respond?",
-            "prose_hash": "e811390209"
+            "prose_hash": "d9aec3d2ae"
           }
         ]
       },
@@ -8760,11 +8760,11 @@ export default {
       "narrative_blocks": [
         {
           "act": 1,
-          "title": "The Bureaucracy of Destruction: Ordinary Professionals",
+          "title": "Desk Murderers and Reichsbahn Timetables (1941–1945)",
           "image": "/images/nuremberg_courtroom_session_1945_nara.jpg",
           "image_alt": "Courtroom 600 inside the Palace of Justice at Nuremberg during the International Military Tribunal war crimes trial, November 1945",
           "caption": "Courtroom 600 at the Nuremberg Trials (November 1945, US Army Signal Corps / NARA 292601): Defence counsel and twenty-one senior Nazi defendants seated under Allied military guard during the International Military Tribunal.",
-          "text": "<span class=\"para-ref\">[6.1]</span> In his monumental study <em>The Destruction of the European Jews</em>, historian **Raul Hilberg** demonstrated that the Holocaust relied on the entire modern state machinery. It depended upon desk murderers (Schreibtischtäter)—civil servants who drafted decrees, lawyers who stripped citizenship, and clerks who organized Reichsbahn train schedules. Crucially, the transport of millions of people was managed by the **Deutsche Reichsbahn**, with railway clerks calculating billing per passenger km tariffs to transport victims to death camps on time while German troops fought on the front lines.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.1]</span> In <em>The Destruction of the European Jews</em>, historian Raul Hilberg proved that genocide relied on modern state bureaucracy and everyday professional complicity. Unarmed civil servants and lawyers acted as Schreibtischtäter, or \"desk murderers\", drafting citizenship bans and property confiscation decrees from quiet ministries without ever pulling a trigger.</p><p class=\"prose-p\">Continental murder depended equally on clerks at the German national railway, the Deutsche Reichsbahn, who scheduled deportation cattle trains to death camps alongside military traffic. Treating human murder like routine freight, railway accountants billed the SS per passenger kilometre, charging half-price passenger km tariffs for children under ten.</p>",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -8790,12 +8790,12 @@ export default {
               "hinge_question": "How does an ordinary railway timetable illustrate the concept of the \"banality of evil\" formulated by philosopher Hannah Arendt?"
             }
           },
-          "content": "<span class=\"para-ref\">[6.1]</span> In his monumental study <em>The Destruction of the European Jews</em>, historian **Raul Hilberg** demonstrated that the Holocaust relied on the entire modern state machinery. It depended upon desk murderers (Schreibtischtäter)—civil servants who drafted decrees, lawyers who stripped citizenship, and clerks who organized Reichsbahn train schedules. Crucially, the transport of millions of people was managed by the **Deutsche Reichsbahn**, with railway clerks calculating billing per passenger km tariffs to transport victims to death camps on time while German troops fought on the front lines."
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.1]</span> In <em>The Destruction of the European Jews</em>, historian Raul Hilberg proved that genocide relied on modern state bureaucracy and everyday professional complicity. Unarmed civil servants and lawyers acted as Schreibtischtäter, or \"desk murderers\", drafting citizenship bans and property confiscation decrees from quiet ministries without ever pulling a trigger.</p><p class=\"prose-p\">Continental murder depended equally on clerks at the German national railway, the Deutsche Reichsbahn, who scheduled deportation cattle trains to death camps alongside military traffic. Treating human murder like routine freight, railway accountants billed the SS per passenger kilometre, charging half-price passenger km tariffs for children under ten.</p>"
         },
         {
           "act": 2,
-          "title": "European Collaboration: An All-European Catastrophe",
-          "text": "<span class=\"para-ref\">[6.2]</span> The Holocaust was an all-European crime that relied heavily on foreign collaborators. In France, the collaborationist Vichy regime enacted anti-Jewish laws and deployed French police to carry out the notorious Vichy Vel’ d’Hiv arrests in Paris in July 1942, arresting over 13,000 Jews. In Hungary in 1944, Hungarian authorities worked with Adolf Eichmann to ensure **437,000 Hungarians deported** to Auschwitz in just 54 days. Without foreign police and railway staff, the SS could never have murdered across an entire continent.",
+          "title": "European Collaboration: Vichy France and Hungary (1942–1944)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.2]</span> Across occupied Europe, Nazi genocide relied heavily on active local collaboration. In July 1942, under France’s collaborationist Vichy regime, uniformed French police carried out the Vel’ d’Hiv roundup in Paris, arresting over 13,000 Jews and locking families inside a stifling cycling stadium ahead of eastern deportation.</p><p class=\"prose-p\">In spring 1944, Hungarian authorities and gendarmes assisted Adolf Eichmann’s small SS team so that 437,000 Hungarians were deported to Auschwitz in just 54 days. Without local police forces and railway crews enforcing roundups, small SS teams could never have murdered communities across an entire continent.</p>",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -8821,15 +8821,15 @@ export default {
               "hinge_question": "Why did the Nazi authorities depend so heavily on local non-German police forces to carry out round-ups and deportations?"
             }
           },
-          "content": "<span class=\"para-ref\">[6.2]</span> The Holocaust was an all-European crime that relied heavily on foreign collaborators. In France, the collaborationist Vichy regime enacted anti-Jewish laws and deployed French police to carry out the notorious Vichy Vel’ d’Hiv arrests in Paris in July 1942, arresting over 13,000 Jews. In Hungary in 1944, Hungarian authorities worked with Adolf Eichmann to ensure **437,000 Hungarians deported** to Auschwitz in just 54 days. Without foreign police and railway staff, the SS could never have murdered across an entire continent.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.2]</span> Across occupied Europe, Nazi genocide relied heavily on active local collaboration. In July 1942, under France’s collaborationist Vichy regime, uniformed French police carried out the Vel’ d’Hiv roundup in Paris, arresting over 13,000 Jews and locking families inside a stifling cycling stadium ahead of eastern deportation.</p><p class=\"prose-p\">In spring 1944, Hungarian authorities and gendarmes assisted Adolf Eichmann’s small SS team so that 437,000 Hungarians were deported to Auschwitz in just 54 days. Without local police forces and railway crews enforcing roundups, small SS teams could never have murdered communities across an entire continent.</p>",
           "image": "/images/the_shoah/shoah_l6_b1_vichy_fichier_juif_paris.jpg",
           "image_alt": "Floor-to-ceiling wooden index-card drawers of the Vichy police Fichier Juif (Jewish census file) preserved behind glass at the Mémorial de la Shoah in Paris",
           "caption": "The bureaucratic machinery of Vichy collaboration (Mémorial de la Shoah, Paris): Wooden cabinets housing the October 1940 Fichier Juif (\"Jewish Card Index\") compiled by French police and used to arrest over 13,000 Jewish men, women, and children in the July 1942 Vél d’Hiv roundup."
         },
         {
           "act": 3,
-          "title": "The Bystanders: Silence, Fear, and Complicity",
-          "text": "<span class=\"para-ref\">[6.3]</span> The vast majority of people across Nazi-occupied Europe were neither active perpetrators nor heroic rescuers; they were **bystanders**. Millions stood watching neighbours taken away, publicly humiliated and marched to train stations. While many were intimidated by severe Nazi terror, others actively profited from persecution, attending municipal public auctions of stolen furniture and household goods, or moving into apartments stripped from deported families. As British historian Ian Kershaw famously observed, the \"road to Auschwitz was built by hatred, but paved with indifference.\"",
+          "title": "Silent Bystanders, Public Auctions, and Indifference",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.3]</span> The vast majority of people across Nazi-occupied Europe were bystanders who stood watching neighbours publicly humiliated and marched toward train stations without intervening. Although ruthless police fear stopped public protest for many, widespread everyday indifference allowed daytime roundups to proceed smoothly across European towns.</p><p class=\"prose-p\">Many townspeople also profited directly from deportations, bidding at municipal public auctions of stolen furniture and clothing or moving into emptied apartments stripped from Jewish families. Surveying this silent complicity, British historian Ian Kershaw wrote that \"the road to Auschwitz was built by hatred, but paved with indifference.\"</p>",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -8855,7 +8855,7 @@ export default {
               "hinge_question": "What enabled the tiny minority of students in the White Rose to overcome the silence and passivity that engulfed most German bystanders?"
             }
           },
-          "content": "<span class=\"para-ref\">[6.3]</span> The vast majority of people across Nazi-occupied Europe were neither active perpetrators nor heroic rescuers; they were **bystanders**. Millions stood watching neighbours taken away, publicly humiliated and marched to train stations. While many were intimidated by severe Nazi terror, others actively profited from persecution, attending municipal public auctions of stolen furniture and household goods, or moving into apartments stripped from deported families. As British historian Ian Kershaw famously observed, the \"road to Auschwitz was built by hatred, but paved with indifference.\"",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.3]</span> The vast majority of people across Nazi-occupied Europe were bystanders who stood watching neighbours publicly humiliated and marched toward train stations without intervening. Although ruthless police fear stopped public protest for many, widespread everyday indifference allowed daytime roundups to proceed smoothly across European towns.</p><p class=\"prose-p\">Many townspeople also profited directly from deportations, bidding at municipal public auctions of stolen furniture and clothing or moving into emptied apartments stripped from Jewish families. Surveying this silent complicity, British historian Ian Kershaw wrote that \"the road to Auschwitz was built by hatred, but paved with indifference.\"</p>",
           "concept_widget": {
             "type": "profile_deck",
             "eyebrow": "Year 9 Moral Choice & Responsibility",
@@ -8960,8 +8960,8 @@ export default {
         },
         {
           "act": 4,
-          "title": "Righteous Among the Nations: Courage Defying Death",
-          "text": "<span class=\"para-ref\">[6.4]</span> In the face of terror, a courageous minority chose to act. In occupied Denmark in October 1943, when word leaked that the Gestapo planned to round up the country's 7,800 Jews, Danish citizens mobilized a spontaneous nationwide effort. Ordinary Danish fishermen and citizens hid their Jewish neighbours in hospitals and coastal villages, using small fishing boats to ferry over **7,200 Jews across the Øresund strait to neutral Sweden safe** from deportation. Over 99% of the Danish community was saved. In southern France, the Protestant village of **Le Chambon-sur-Lignon**, led by pastor André Trocmé, sheltered an estimated 3,500 Jewish refugees.",
+          "title": "Righteous Among the Nations: Denmark and Le Chambon",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.4]</span> Courageous rescuers later honoured as Righteous Among the Nations proved that moral choice survived Nazi terror. After October 1943 Gestapo roundup plans leaked in occupied Denmark, hospitals, neighbours, and fishermen hid Jewish citizens while fishing boats ferried over 7,200 Jews across the Øresund strait to neutral Sweden, saving over 99% of Denmark’s community.</p><p class=\"prose-p\">In the highlands of southern France, Protestant Pastor André Trocmé and villagers in Le Chambon-sur-Lignon turned their mountain community into a quiet refuge. Forging identity papers and hiding children across isolated farms, local families sheltered roughly 3,500 Jewish refugees from Vichy police raids without betraying a single life.</p>",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -8990,12 +8990,12 @@ export default {
           "image": "/images/the_shoah/shoah_l6_b3_andre_trocme_le_chambon_1943.jpg",
           "image_alt": "March 1943 photograph of Protestant Pastor André Trocmé (centre) standing hand-in-hand in a doorway with headmaster Roger Darcissac (left) and Pastor Édouard Theis (right) in Le Chambon-sur-Lignon, France",
           "caption": "The Righteous rescuers of Le Chambon-sur-Lignon (March 1943): Protestant Pastor André Trocmé (centre) with headmaster Roger Darcissac (left) and Pastor Édouard Theis (right), whose French mountain village defied Vichy and Nazi police to shelter roughly 3,500 Jewish refugees.",
-          "content": "<span class=\"para-ref\">[6.4]</span> In the face of terror, a courageous minority chose to act. In occupied Denmark in October 1943, when word leaked that the Gestapo planned to round up the country's 7,800 Jews, Danish citizens mobilized a spontaneous nationwide effort. Ordinary Danish fishermen and citizens hid their Jewish neighbours in hospitals and coastal villages, using small fishing boats to ferry over **7,200 Jews across the Øresund strait to neutral Sweden safe** from deportation. Over 99% of the Danish community was saved. In southern France, the Protestant village of **Le Chambon-sur-Lignon**, led by pastor André Trocmé, sheltered an estimated 3,500 Jewish refugees."
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.4]</span> Courageous rescuers later honoured as Righteous Among the Nations proved that moral choice survived Nazi terror. After October 1943 Gestapo roundup plans leaked in occupied Denmark, hospitals, neighbours, and fishermen hid Jewish citizens while fishing boats ferried over 7,200 Jews across the Øresund strait to neutral Sweden, saving over 99% of Denmark’s community.</p><p class=\"prose-p\">In the highlands of southern France, Protestant Pastor André Trocmé and villagers in Le Chambon-sur-Lignon turned their mountain community into a quiet refuge. Forging identity papers and hiding children across isolated farms, local families sheltered roughly 3,500 Jewish refugees from Vichy police raids without betraying a single life.</p>"
         },
         {
           "act": 5,
-          "title": "Allied Knowledge, Dilemmas, and the Question of Action",
-          "text": "<span class=\"para-ref\">[6.5]</span> What did the Allied powers know, and when did they know it? In late 1942, Polish underground courier **Jan Karski** was smuggled into the Warsaw Ghetto and a transit camp, travelling secretly to London and Washington as a Jan Karski eyewitness to deliver testimony to Anthony Eden and President Roosevelt. In December 1942, the Allied governments issued a Dec 1942 Allied warning publicly condemning Germany's \"bestial policy of cold-blooded extermination\". However, Britain and the United States took virtually no military action to disrupt the death camps, prioritising total war victory over rescue missions and declining requests to bomb the railway lines to Auschwitz.",
+          "title": "Jan Karski’s Testimony and the Allied Dilemma (1942–1944)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[6.5]</span> In late 1942, Polish underground courier Jan Karski infiltrated Warsaw’s ghetto in disguise to witness Nazi terror firsthand. Travelling secretly to London and Washington, Karski delivered direct eyewitness reports to British Foreign Secretary Anthony Eden and US President Roosevelt, pleading with the Allies to save surviving European Jews.</p><p class=\"prose-p\">In December 1942, Allied governments issued a formal public declaration condemning Nazi Germany’s \"cold-blooded extermination\" across Europe. Nevertheless, Britain and America prioritised winning the war first as the fastest rescue, declining Jewish appeals in 1944 to bomb the railway lines to Auschwitz.</p>",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -9022,7 +9022,7 @@ export default {
               "hinge_question": "What conditions in Denmark—such as local resistance networks, maritime proximity to Sweden, and broad societal solidarity—enabled the rescue of over 95% of Danish Jews, whereas in countries like the Netherlands over 70% were murdered?"
             }
           },
-          "content": "<span class=\"para-ref\">[6.5]</span> What did the Allied powers know, and when did they know it? In late 1942, Polish underground courier **Jan Karski** was smuggled into the Warsaw Ghetto and a transit camp, travelling secretly to London and Washington as a Jan Karski eyewitness to deliver testimony to Anthony Eden and President Roosevelt. In December 1942, the Allied governments issued a Dec 1942 Allied warning publicly condemning Germany's \"bestial policy of cold-blooded extermination\". However, Britain and the United States took virtually no military action to disrupt the death camps, prioritising total war victory over rescue missions and declining requests to bomb the railway lines to Auschwitz.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[6.5]</span> In late 1942, Polish underground courier Jan Karski infiltrated Warsaw’s ghetto in disguise to witness Nazi terror firsthand. Travelling secretly to London and Washington, Karski delivered direct eyewitness reports to British Foreign Secretary Anthony Eden and US President Roosevelt, pleading with the Allies to save surviving European Jews.</p><p class=\"prose-p\">In December 1942, Allied governments issued a formal public declaration condemning Nazi Germany’s \"cold-blooded extermination\" across Europe. Nevertheless, Britain and America prioritised winning the war first as the fastest rescue, declining Jewish appeals in 1944 to bomb the railway lines to Auschwitz.</p>",
           "image": "/images/the_shoah/shoah_l6_b4_auschwitz_birkenau_aerial_1944_nara.jpg",
           "image_alt": "Annotated US Army Air Forces aerial reconnaissance photograph taken over Oświęcim, Poland, on 26 June 1944 clearly labelling Birkenau (Auschwitz II), Auschwitz I, SS Barracks, and Auschwitz III (Buna)",
           "caption": "Allied aerial intelligence over Auschwitz-Birkenau (26 June 1944, USAAF / NARA 305897): High-altitude Allied reconnaissance clearly captured Birkenau, Auschwitz I, and the Buna industrial complex while Allied leaders debated and declined pleas to bomb the railway lines."
@@ -9838,7 +9838,7 @@ export default {
           "focusClue": "How did \"desk murderers\" and Reichsbahn railway clerks enable genocide?",
           "para_ref": "[6.1]",
           "paraRef": "[6.1]",
-          "prose_hash": "86d12330a2"
+          "prose_hash": "2870c63c92"
         },
         {
           "step": 2,
@@ -9853,7 +9853,7 @@ export default {
           "focusClue": "How did Vichy French police and Hungarian officials aid deportations?",
           "para_ref": "[6.2]",
           "paraRef": "[6.2]",
-          "prose_hash": "c49ea6bdfd"
+          "prose_hash": "0ecc79fe1a"
         },
         {
           "step": 3,
@@ -9868,7 +9868,7 @@ export default {
           "focusClue": "How did silent bystanders across occupied Europe profit from deportations?",
           "para_ref": "[6.3]",
           "paraRef": "[6.3]",
-          "prose_hash": "5749a73b5f"
+          "prose_hash": "f50902c6b8"
         },
         {
           "step": 4,
@@ -9883,7 +9883,7 @@ export default {
           "focusClue": "How did ordinary citizens rescue Jews in Denmark and Le Chambon?",
           "para_ref": "[6.4]",
           "paraRef": "[6.4]",
-          "prose_hash": "620bc42902"
+          "prose_hash": "5f29c78870"
         },
         {
           "step": 5,
@@ -9898,7 +9898,7 @@ export default {
           "focusClue": "What did Jan Karski report in 1942, and how did the Allies respond?",
           "para_ref": "[6.5]",
           "paraRef": "[6.5]",
-          "prose_hash": "e811390209"
+          "prose_hash": "d9aec3d2ae"
         }
       ],
       "enquiry": "Who was responsible, who collaborated, and who tried to save?",
@@ -9929,7 +9929,7 @@ export default {
             "stat": "Reichsbahn Billed Deportees Per Kilometre",
             "html": "Historian <strong>Raul Hilberg</strong> showed genocide needed ordinary staff, not just SS guards. Lawyers wrote laws and <strong>Reichsbahn clerks</strong> billed <strong>death trains</strong> per kilometre.",
             "spoken": "Who was responsible, who collaborated, and who risked everything to save Jewish lives? <short pause> Historian Raul Hilberg showed genocide needed ordinary staff, not just SS guards. Lawyers wrote laws and Reichsbahn clerks billed death trains per kilometre.",
-            "paired_prose_hash": "86d12330a2",
+            "paired_prose_hash": "2870c63c92",
             "connective": "Who was responsible, who collaborated, and who risked everything to save Jewish lives?"
           },
           {
@@ -9942,7 +9942,7 @@ export default {
             "stat": "13,000 Arrested in Paris; 437,000 in Hungary",
             "html": "Foreign states aided the SS. <strong>Vichy French police</strong> arrested 13,000 Jews in the 1942 <strong>Vél d’Hiv roundup</strong>, while Hungary helped deport <strong>437,000 Jews</strong> in 54 days.",
             "spoken": "Across occupied Europe, Nazi killers relied heavily on local collaborators. <short pause> Foreign states aided the SS. Vichy French police arrested 13,000 Jews in the 1942 Vél d’Hiv roundup , while Hungary helped deport 437,000 Jews in 54 days.",
-            "paired_prose_hash": "c49ea6bdfd",
+            "paired_prose_hash": "0ecc79fe1a",
             "connective": "Across occupied Europe, Nazi killers relied heavily on local collaborators."
           },
           {
@@ -9954,7 +9954,7 @@ export default {
             "stat": "Auctions of Stolen Homes & Furniture",
             "html": "Most Europeans stood as silent <strong>bystanders</strong>. Terror silenced many, yet others bought <strong>stolen furniture</strong> at public auctions—proving <strong>indifference</strong> aided genocide.",
             "spoken": "Meanwhile, ordinary neighbours faced stark moral choices every day. <short pause> Most Europeans stood as silent bystanders . Terror silenced many, yet others bought stolen furniture at public auctions, proving indifference aided genocide.",
-            "paired_prose_hash": "5749a73b5f",
+            "paired_prose_hash": "f50902c6b8",
             "connective": "Meanwhile, ordinary neighbours faced stark moral choices every day."
           },
           {
@@ -9967,7 +9967,7 @@ export default {
             "stat": "7,200 Danish Jews Ferried Safely to Sweden",
             "html": "A brave minority chose rescue. In 1943, <strong>Danish citizens</strong> ferried <strong>7,200 Jews</strong> by boat to Sweden, while villagers in <strong>Le Chambon</strong> sheltered 3,500 refugees.",
             "spoken": "Even under Nazi terror, courageous rescuers risked death to save lives. <short pause> A brave minority chose rescue. In 1943, Danish citizens ferried 7,200 Jews by boat to Sweden, while villagers in Le Chambon sheltered 3,500 refugees.",
-            "paired_prose_hash": "620bc42902",
+            "paired_prose_hash": "5f29c78870",
             "connective": "Even under Nazi terror, courageous rescuers risked death to save lives."
           },
           {
@@ -9979,7 +9979,7 @@ export default {
             "stat": "Dec 1942 Allied Warning, Zero Rail Bombings",
             "html": "In 1942, Polish courier <strong>Jan Karski</strong> brought eyewitness proof of murder to London and Washington. Allies issued a <strong>public warning</strong>, but never bombed <strong>Auschwitz rail lines</strong>.",
             "spoken": "Eyewitness warnings also reached Allied leaders in London and Washington. <short pause> In 1942, Polish courier Jan Karski brought eyewitness proof of murder to London and Washington. Allies issued a public warning , but never bombed Auschwitz rail lines .",
-            "paired_prose_hash": "e811390209",
+            "paired_prose_hash": "d9aec3d2ae",
             "connective": "Eyewitness warnings also reached Allied leaders in London and Washington."
           },
           {
@@ -10050,7 +10050,7 @@ export default {
             "trigger": "With Soviet forces advancing, SS authorities force 250,000 emaciated camp prisoners westward into Germany in freezing sub-zero winter conditions.",
             "connective": "Murdered up to 70,000 prisoners through starvation, exhaustion, and roadside executions before Allied troops could reach them.",
             "question": "Why did Himmler force starving inmates onto freezing death marches?",
-            "prose_hash": "ee395e15cd"
+            "prose_hash": "1979dc5f70"
           },
           {
             "step": 2,
@@ -10062,7 +10062,7 @@ export default {
             "trigger": "Soviet troops liberate Auschwitz (27 Jan 1945); British troops enter Bergen-Belsen (15 April); BBC reporter Richard Dimbleby broadcasts the horror to the world.",
             "connective": "Exposed the full physical reality of Nazi atrocities to global public consciousness, confronting soldiers with tens of thousands of unburied corpses.",
             "question": "What shocking scenes did British troops and Dimbleby find at Bergen-Belsen?",
-            "prose_hash": "c95ad81673"
+            "prose_hash": "9911af02cd"
           },
           {
             "step": 3,
@@ -10074,7 +10074,7 @@ export default {
             "trigger": "Survivors emerge to find homes destroyed and families murdered; 250,000 linger in Displaced Persons (DP) camps in Germany; 300 child survivors arrive in Windermere, UK.",
             "connective": "Proved that liberation was not the end of suffering, but the start of a painful, decades-long process of grieving and rebuilding shattered lives.",
             "question": "What hardships did survivors face in Displaced Persons camps after 1945?",
-            "prose_hash": "7e9e027537"
+            "prose_hash": "656b0c640f"
           },
           {
             "step": 4,
@@ -10086,7 +10086,7 @@ export default {
             "trigger": "Top Nazi leaders are tried at Nuremberg for \"Crimes Against Humanity\"; legal scholar Raphael Lemkin successfully campaigns for the 1948 UN Genocide Convention.",
             "connective": "Created new international legal standards holding state leaders accountable for mass atrocities, enshrining \"Never Again\" into international law.",
             "question": "How did the 1945 Nuremberg court and Raphael Lemkin reshape world law?",
-            "prose_hash": "f92fada510"
+            "prose_hash": "b32d662158"
           },
           {
             "step": 5,
@@ -10098,7 +10098,7 @@ export default {
             "trigger": "Six million individual lives were extinguished, annihilating a millennium of Yiddish culture, literature, and European Jewish heritage.",
             "connective": "Places a permanent moral obligation on future generations to listen to survivor testimony, confront contemporary prejudice, and remember.",
             "question": "What civilisation was lost in the Shoah, and why does memory matter?",
-            "prose_hash": "2b6e05537b"
+            "prose_hash": "4e8ccb3e09"
           }
         ]
       },
@@ -10350,8 +10350,8 @@ export default {
       "narrative_blocks": [
         {
           "act": 1,
-          "title": "The Death Marches: The Final Spasm of Terror (1944–1945)",
-          "text": "<span class=\"para-ref\">[7.1]</span> In the autumn and winter of 1944–1945, as the Soviet Red Army closes in from the east and Western Allied armies crossed the Rhine, the Nazi leadership realized defeat was imminent. Rather than allowing camp inmates to be liberated, Heinrich Himmler ordered the desperate evacuation of camps. In freezing temperatures, the SS forced hundreds of thousands of starving, skeletal prisoners onto brutal **death marches** toward the interior of Germany. Wearing thin cotton prisoner uniforms and wooden clogs, inmates marched for days across sub-zero freezing roads without food or water. Over 70,000 shot or frozen in roadside ditches, with 200,000 to 250,000 dying overall in the final months of the war.",
+          "title": "The Death Marches: Winter Evacuations (1944–1945)",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[7.1]</span> During the autumn and winter of 1944–1945, as the Soviet Red Army closed in from the east and Western Allied armies crossed the Rhine, SS chief Heinrich Himmler evacuated eastern camps to hide living witnesses. Guards forced hundreds of thousands of starving prisoners onto brutal death marches into interior Germany.</p><p class=\"prose-p\">Wearing only thin cotton prisoner uniforms and wooden clogs, emaciated inmates marched across sub-zero winter roads without food or water. SS guards shot anyone collapsing behind into roadside ditches, killing over 70,000 marchers from eastern camps and leaving 200,000 to 250,000 prisoners dead before the war’s end.</p>",
           "source": {
             "letter": "A",
             "type": "visual",
@@ -10377,19 +10377,19 @@ export default {
               "hinge_question": "Why did the Nazi regime expend military resources to march dying prisoners into the interior of Germany when the war was already decisively lost?"
             }
           },
-          "content": "<span class=\"para-ref\">[7.1]</span> In the autumn and winter of 1944–1945, as the Soviet Red Army closes in from the east and Western Allied armies crossed the Rhine, the Nazi leadership realized defeat was imminent. Rather than allowing camp inmates to be liberated, Heinrich Himmler ordered the desperate evacuation of camps. In freezing temperatures, the SS forced hundreds of thousands of starving, skeletal prisoners onto brutal **death marches** toward the interior of Germany. Wearing thin cotton prisoner uniforms and wooden clogs, inmates marched for days across sub-zero freezing roads without food or water. Over 70,000 shot or frozen in roadside ditches, with 200,000 to 250,000 dying overall in the final months of the war.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[7.1]</span> During the autumn and winter of 1944–1945, as the Soviet Red Army closed in from the east and Western Allied armies crossed the Rhine, SS chief Heinrich Himmler evacuated eastern camps to hide living witnesses. Guards forced hundreds of thousands of starving prisoners onto brutal death marches into interior Germany.</p><p class=\"prose-p\">Wearing only thin cotton prisoner uniforms and wooden clogs, emaciated inmates marched across sub-zero winter roads without food or water. SS guards shot anyone collapsing behind into roadside ditches, killing over 70,000 marchers from eastern camps and leaving 200,000 to 250,000 prisoners dead before the war’s end.</p>",
           "image": "/images/the_shoah/shoah_l7_b0_dachau_death_march_memorial_plaque.jpg",
           "image_alt": "Snow-covered memorial burial ground and inscribed stone plaque in Volary, Czechia, commemorating 95 Jewish women murdered by SS guards during a freezing 1945 death march",
           "caption": "In memory of the 1944–1945 winter death marches (Volary Death March Cemetery): Snow blankets the burial site and memorial plaque honouring 95 starving Jewish women marched hundreds of miles in freezing conditions and murdered by SS guards as Allied armies closed in."
         },
         {
           "act": 2,
-          "title": "Liberation: The World Confronts the Unimaginable",
+          "title": "Liberation: Auschwitz, Bergen-Belsen, and Bearing Witness (1945)",
           "image": "/images/buchenwald_liberation_1945.jpg",
           "image_alt": "US Army Signal Corps photograph of emaciated survivors in wooden barracks bunks at Buchenwald camp",
           "caption": "US Army Signal Corps / Private Harry Miller (16 April 1945). Emaciated survivors in wooden bunk tiers at Buchenwald, including 16-year-old Elie Wiesel (second row, seventh from left), author of Night.",
           "isReversed": false,
-          "text": "<span class=\"para-ref\">[7.2]</span> Allied soldiers were completely unprepared for what they discovered. Soviet troops liberated Majdanek in July 1944 and Auschwitz on **27 January 1945** (Holocaust Memorial Day). In the west, American forces entered Buchenwald and Dachau. On **15 April 1945**, the British 11th Armoured enters **Bergen-Belsen** in northern Germany. Expecting a prisoner-of-war camp, British soldiers found 60,000 starving prisoners living alongside 13,000 unburied corpses decaying in the open air. The BBC correspondent **Richard Dimbleby** entered with the troops and as Dimbleby weeps on BBC radio, he broadcast: <em>\"I passed through the barrier and found myself in a world of a nightmare...\"</em> British army bulldozers had to be used to bury thousands of bodies in mass graves.",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[7.2]</span> Expecting ordinary military or prisoner-of-war camps, Allied soldiers were completely unprepared for what they discovered—from Soviet troops liberating Majdanek and Auschwitz on 27 January 1945, now Holocaust Memorial Day, to American units entering Dachau. On 15 April 1945, the British 11th Armoured Division entered Bergen-Belsen in northern Germany.</p><p class=\"prose-p\">Inside Belsen, British troops found 60,000 starving inmates ravaged by typhus beside 13,000 unburied corpses. Weeping BBC radio correspondent Richard Dimbleby broadcast eyewitness horror from \"a world of a nightmare\", while British army bulldozers had to clear decaying corpses into mass graves to contain rampant typhus.</p>",
           "source": {
             "letter": "B",
             "type": "visual",
@@ -10416,12 +10416,12 @@ export default {
               "hinge_question": "Why was photographic and film documentation produced by Allied military units at Bergen-Belsen and Dachau in 1945 decisive in defeating Nazi wartime attempts to conceal the Holocaust?"
             }
           },
-          "content": "<span class=\"para-ref\">[7.2]</span> Allied soldiers were completely unprepared for what they discovered. Soviet troops liberated Majdanek in July 1944 and Auschwitz on **27 January 1945** (Holocaust Memorial Day). In the west, American forces entered Buchenwald and Dachau. On **15 April 1945**, the British 11th Armoured enters **Bergen-Belsen** in northern Germany. Expecting a prisoner-of-war camp, British soldiers found 60,000 starving prisoners living alongside 13,000 unburied corpses decaying in the open air. The BBC correspondent **Richard Dimbleby** entered with the troops and as Dimbleby weeps on BBC radio, he broadcast: <em>\"I passed through the barrier and found myself in a world of a nightmare...\"</em> British army bulldozers had to be used to bury thousands of bodies in mass graves."
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[7.2]</span> Expecting ordinary military or prisoner-of-war camps, Allied soldiers were completely unprepared for what they discovered—from Soviet troops liberating Majdanek and Auschwitz on 27 January 1945, now Holocaust Memorial Day, to American units entering Dachau. On 15 April 1945, the British 11th Armoured Division entered Bergen-Belsen in northern Germany.</p><p class=\"prose-p\">Inside Belsen, British troops found 60,000 starving inmates ravaged by typhus beside 13,000 unburied corpses. Weeping BBC radio correspondent Richard Dimbleby broadcast eyewitness horror from \"a world of a nightmare\", while British army bulldozers had to clear decaying corpses into mass graves to contain rampant typhus.</p>"
         },
         {
           "act": 3,
-          "title": "The Painful Aftermath: Displaced Persons and Windermere",
-          "text": "<span class=\"para-ref\">[7.3]</span> For the survivors, liberation did not bring sudden joy; it brought the agonizing reality of total loss. Many returned home to find their houses occupied by hostile neighbours. Over **250,000 in DP camps** (Displaced Persons camps) in Germany and Austria waited for years. In 1947, the drama of the SS Exodus 1947 crisis—carrying Holocaust survivors turned away from Palestine by British warships—galvanized world opinion. This intensified the Zionist statehood demand for an independent homeland, leading directly to the founding of Israel in 1948. In August 1945, Britain also permitted 300 child survivors (the Windermere Children) to heal in the Lake District.",
+          "title": "Stateless Survivors, the Windermere Children, and 1948",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[7.3]</span> Liberation brought the painful reality of murdered families and returning survivors meeting violent post-war hostility from neighbours occupying their homes. While borders stayed restricted, over 250,000 homeless survivors lived for years inside Allied-run Displaced Persons (DP) camps across Germany and Austria, rebuilding schools and family life behind wire.</p><p class=\"prose-p\">In August 1945, Britain welcomed 300 orphaned child survivors, remembered as the Windermere Children, to heal together in England’s Lake District. Meanwhile, turning back the refugee ship SS Exodus from Palestine by British warships in 1947 shocked world opinion, backing Zionist statehood and accelerating Israel’s founding in 1948.</p>",
           "source": {
             "letter": "C",
             "type": "visual",
@@ -10448,15 +10448,15 @@ export default {
               "hinge_question": "Why did the plight of displaced Holocaust survivors between 1945 and 1948 accelerate international support for the United Nations Partition Plan for Palestine?"
             }
           },
-          "content": "<span class=\"para-ref\">[7.3]</span> For the survivors, liberation did not bring sudden joy; it brought the agonizing reality of total loss. Many returned home to find their houses occupied by hostile neighbours. Over **250,000 in DP camps** (Displaced Persons camps) in Germany and Austria waited for years. In 1947, the drama of the SS Exodus 1947 crisis—carrying Holocaust survivors turned away from Palestine by British warships—galvanized world opinion. This intensified the Zionist statehood demand for an independent homeland, leading directly to the founding of Israel in 1948. In August 1945, Britain also permitted 300 child survivors (the Windermere Children) to heal in the Lake District.",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[7.3]</span> Liberation brought the painful reality of murdered families and returning survivors meeting violent post-war hostility from neighbours occupying their homes. While borders stayed restricted, over 250,000 homeless survivors lived for years inside Allied-run Displaced Persons (DP) camps across Germany and Austria, rebuilding schools and family life behind wire.</p><p class=\"prose-p\">In August 1945, Britain welcomed 300 orphaned child survivors, remembered as the Windermere Children, to heal together in England’s Lake District. Meanwhile, turning back the refugee ship SS Exodus from Palestine by British warships in 1947 shocked world opinion, backing Zionist statehood and accelerating Israel’s founding in 1948.</p>",
           "image": "/images/the_shoah/shoah_l7_b2_bergen_belsen_dp_camp_1946.jpg",
           "image_alt": "Thousands of liberated Jewish survivors gathered around a stone memorial obelisk and holding Star of David banners at Bergen-Belsen Displaced Persons Camp in April 1946 (Imperial War Museums official photograph)",
           "caption": "The postwar Displaced Persons crisis (Bergen-Belsen DP Camp, April 1946, Imperial War Museums): Thousands of liberated Jewish survivors—unable to return to destroyed communities and hostile neighbours—gather beneath Star of David banners while awaiting a new home."
         },
         {
           "act": 4,
-          "title": "Justice and International Law: Nuremberg and Lemkin",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[7.4]</span> In November 1945, the Allied powers convened the International Military Tribunal (IMT) at Nuremberg to try senior Nazi leaders for war crimes. The court established that following superior orders was no legal defence, sentencing twelve defendants to death for crimes against humanity.</p><p class=\"prose-p\">Simultaneously, Polish-Jewish legal scholar Raphael Lemkin, who lost forty-nine relatives in the Shoah, pioneered Raphael Lemkin's concept of genocide to define the deliberate destruction of a national group. Lemkin’s tireless campaign led directly to the 1948 United Nations Genocide Convention, establishing universal legal protections under international law.</p>",
+          "title": "The Nuremberg Trials and Raphael Lemkin’s Genocide Convention",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[7.4]</span> In November 1945, the Allied powers convened the International Military Tribunal at Nuremberg, launching the landmark Nuremberg Trials. Scrapping the following-superior-orders excuse, judges held state leaders personally guilty, prosecuted crimes against humanity across borders, and sentenced twelve senior Nazi defendants to death.</p><p class=\"prose-p\">Meanwhile, Polish-Jewish legal scholar Raphael Lemkin, who lost forty-nine relatives in the Shoah, coined the legal term \"genocide\" to define the deliberate destruction of a national or ethnic group. Lemkin’s tireless campaign secured the 1948 United Nations Genocide Convention, outlawing group destruction permanently under international law.</p>",
           "source": {
             "letter": "D",
             "type": "visual",
@@ -10483,7 +10483,7 @@ export default {
               "hinge_question": "Why was conducting public, evidence-based trials at Nuremberg critical for establishing the historical truth of the Holocaust?"
             }
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[7.4]</span> In November 1945, the Allied powers convened the International Military Tribunal (IMT) at Nuremberg to try senior Nazi leaders for war crimes. The court established that following superior orders was no legal defence, sentencing twelve defendants to death for crimes against humanity.</p><p class=\"prose-p\">Simultaneously, Polish-Jewish legal scholar Raphael Lemkin, who lost forty-nine relatives in the Shoah, pioneered Raphael Lemkin's concept of genocide to define the deliberate destruction of a national group. Lemkin’s tireless campaign led directly to the 1948 United Nations Genocide Convention, establishing universal legal protections under international law.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[7.4]</span> In November 1945, the Allied powers convened the International Military Tribunal at Nuremberg, launching the landmark Nuremberg Trials. Scrapping the following-superior-orders excuse, judges held state leaders personally guilty, prosecuted crimes against humanity across borders, and sentenced twelve senior Nazi defendants to death.</p><p class=\"prose-p\">Meanwhile, Polish-Jewish legal scholar Raphael Lemkin, who lost forty-nine relatives in the Shoah, coined the legal term \"genocide\" to define the deliberate destruction of a national or ethnic group. Lemkin’s tireless campaign secured the 1948 United Nations Genocide Convention, outlawing group destruction permanently under international law.</p>",
           "concept_widget": {
             "type": "profile_deck",
             "eyebrow": "Year 9 Legacy in International Law",
@@ -10565,12 +10565,12 @@ export default {
         },
         {
           "act": 5,
-          "title": "What Was Lost? The Imperative of Memory",
+          "title": "What Was Lost: Survivor Testimony and the Duty of Memory",
           "image": "/images/the_shoah/shoah_l7_b4_berlin_stelae_corridor_clean.jpg",
           "image_alt": "Rows of dark grey rectangular concrete stelae rising at varying heights above undulating cobbled paving at the Memorial to the Murdered Jews of Europe in central Berlin",
           "caption": "The field of 2,711 concrete stelae at Berlin’s Memorial to the Murdered Jews of Europe (designed by Peter Eisenman, opened 2005): Honouring the six million Jewish men, women, and children murdered in the Shoah and upholding the pledge of \"Never Again\".",
           "isReversed": true,
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[7.5]</span> The Shoah extinguished six million human lives—two-thirds of European Jewry, including 1.5 million children. Beyond the staggering death toll, an entire millennium of Yiddish civilisation across Central and Eastern Europe was permanently destroyed.</p><p class=\"prose-p\">As eyewitnesses pass away, preserving Shoah historical memory depends upon survivor oral testimony from voices like Elie Wiesel and Primo Levi. Upholding this imperative of remembrance requires every generation to confront antisemitism, defend human rights, and ensure the solemn pledge of \"Never Again\" endures across civilized society.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[7.5]</span> By May 1945, Nazi Germany and its collaborators had murdered six million Jews—two-thirds of European Jewry, including 1.5 million children. Beyond that human catastrophe, the Shoah extinguished a thousand-year Yiddish and Sephardic heritage, silencing vibrant shtetls, Vilna’s academies, Warsaw’s theatres, and Thessaloniki’s port community.</p><p class=\"prose-p\">In the post-war decades, survivor testimonies recorded by eyewitness voices like Primo Levi and Elie Wiesel preserved historical truth as witnesses passed away. Their accounts anchored the solemn civic pledge of \"Never Again\", challenging future generations to confront antisemitism early and defend universal human rights.</p>",
           "source": {
             "letter": "E",
             "type": "visual",
@@ -10592,7 +10592,7 @@ export default {
               "hinge_question": "Why did Primo Levi warn future generations that \"It happened, therefore it can happen again,\" rather than treating the Shoah as a closed chapter of the past?"
             }
           },
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[7.5]</span> The Shoah extinguished six million human lives—two-thirds of European Jewry, including 1.5 million children. Beyond the staggering death toll, an entire millennium of Yiddish civilisation across Central and Eastern Europe was permanently destroyed.</p><p class=\"prose-p\">As eyewitnesses pass away, preserving Shoah historical memory depends upon survivor oral testimony from voices like Elie Wiesel and Primo Levi. Upholding this imperative of remembrance requires every generation to confront antisemitism, defend human rights, and ensure the solemn pledge of \"Never Again\" endures across civilized society.</p>"
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[7.5]</span> By May 1945, Nazi Germany and its collaborators had murdered six million Jews—two-thirds of European Jewry, including 1.5 million children. Beyond that human catastrophe, the Shoah extinguished a thousand-year Yiddish and Sephardic heritage, silencing vibrant shtetls, Vilna’s academies, Warsaw’s theatres, and Thessaloniki’s port community.</p><p class=\"prose-p\">In the post-war decades, survivor testimonies recorded by eyewitness voices like Primo Levi and Elie Wiesel preserved historical truth as witnesses passed away. Their accounts anchored the solemn civic pledge of \"Never Again\", challenging future generations to confront antisemitism early and defend universal human rights.</p>"
         }
       ],
       "pair_share": {
@@ -10910,17 +10910,17 @@ export default {
         },
         {
           "stage": 2,
-          "question": "On what date did Soviet troops liberate Auschwitz, now marked globally as Holocaust Memorial Day?",
-          "q": "On what date did Soviet troops liberate Auschwitz, now marked globally as Holocaust Memorial Day?",
+          "question": "Why were Allied soldiers completely unprepared for what they discovered when liberating camps such as Auschwitz and Bergen-Belsen?",
+          "q": "Why were Allied soldiers completely unprepared for what they discovered when liberating camps such as Auschwitz and Bergen-Belsen?",
           "options": [
-            "15 April 1945",
-            "20 January 1942",
-            "22 June 1941",
-            "27 January 1945"
+            "They thought the SS had left behind detailed peace treaties for the soldiers to sign",
+            "They expected to find all prisoners evacuated safely to neutral Switzerland",
+            "They expected ordinary military or prisoner-of-war camps, not tens of thousands of starving prisoners alongside unburied corpses",
+            "They believed the camps had already been rebuilt into modern civilian hospitals"
           ],
-          "answer": "27 January 1945",
-          "a": "27 January 1945",
-          "explanation": "Soviet soldiers liberated Auschwitz on 27 January 1945, the date commemorated as Holocaust Memorial Day."
+          "answer": "They expected ordinary military or prisoner-of-war camps, not tens of thousands of starving prisoners alongside unburied corpses",
+          "a": "They expected ordinary military or prisoner-of-war camps, not tens of thousands of starving prisoners alongside unburied corpses",
+          "explanation": "British soldiers entering Bergen-Belsen expected a prisoner-of-war camp, but instead confronted 60,000 starving survivors and 13,000 unburied bodies, forcing the army to use bulldozers for mass graves."
         },
         {
           "stage": 2,
@@ -11409,7 +11409,7 @@ export default {
           "focusClue": "Why did Himmler force starving inmates onto freezing death marches?",
           "para_ref": "[7.1]",
           "paraRef": "[7.1]",
-          "prose_hash": "ee395e15cd"
+          "prose_hash": "1979dc5f70"
         },
         {
           "step": 2,
@@ -11424,7 +11424,7 @@ export default {
           "focusClue": "What shocking scenes did British troops and Dimbleby find at Bergen-Belsen?",
           "para_ref": "[7.2]",
           "paraRef": "[7.2]",
-          "prose_hash": "c95ad81673"
+          "prose_hash": "9911af02cd"
         },
         {
           "step": 3,
@@ -11439,7 +11439,7 @@ export default {
           "focusClue": "What hardships did survivors face in Displaced Persons camps after 1945?",
           "para_ref": "[7.3]",
           "paraRef": "[7.3]",
-          "prose_hash": "7e9e027537"
+          "prose_hash": "656b0c640f"
         },
         {
           "step": 4,
@@ -11454,7 +11454,7 @@ export default {
           "focusClue": "How did the 1945 Nuremberg court and Raphael Lemkin reshape world law?",
           "para_ref": "[7.4]",
           "paraRef": "[7.4]",
-          "prose_hash": "f92fada510"
+          "prose_hash": "b32d662158"
         },
         {
           "step": 5,
@@ -11469,7 +11469,7 @@ export default {
           "focusClue": "What civilisation was lost in the Shoah, and why does memory matter?",
           "para_ref": "[7.5]",
           "paraRef": "[7.5]",
-          "prose_hash": "2b6e05537b"
+          "prose_hash": "4e8ccb3e09"
         }
       ],
       "enquiry": "What was lost, and what does survivor testimony teach us?",
@@ -11501,7 +11501,7 @@ export default {
             "stat": "Up to 250,000 Died in Final Forced Marches",
             "html": "As Allied armies closed in, <strong>Heinrich Himmler</strong> evacuated eastern camps. SS guards forced starving prisoners onto sub-zero <strong>death marches</strong>, killing up to <strong>250,000</strong>.",
             "spoken": "What was lost in the Shoah, and what does survivor testimony teach us today? <short pause> As Allied armies closed in, Heinrich Himmler evacuated eastern camps. SS guards forced starving prisoners onto sub-zero death marches , killing up to 250,000 .",
-            "paired_prose_hash": "ee395e15cd",
+            "paired_prose_hash": "1979dc5f70",
             "connective": "What was lost in the Shoah, and what does survivor testimony teach us today?"
           },
           {
@@ -11514,7 +11514,7 @@ export default {
             "stat": "Auschwitz 27 Jan; Bergen-Belsen 15 April 1945",
             "html": "Soviet troops liberated <strong>Auschwitz</strong> on 27 January 1945. In April, British soldiers and BBC reporter <strong>Richard Dimbleby</strong> found 60,000 starving inmates at <strong>Bergen-Belsen</strong>.",
             "spoken": "In spring 1945, Allied troops uncovered the camps’ full horror. <short pause> Soviet troops liberated Auschwitz on the twenty-seventh of January 1945. In April, British soldiers and BBC reporter Richard Dimbleby found 60,000 starving inmates at Bergen-Belsen .",
-            "paired_prose_hash": "c95ad81673",
+            "paired_prose_hash": "9911af02cd",
             "connective": "In spring 1945, Allied troops uncovered the camps’ full horror."
           },
           {
@@ -11526,7 +11526,7 @@ export default {
             "stat": "250,000 in DP Camps; 300 Windermere Children",
             "html": "Over 250,000 homeless survivors waited in <strong>DP camps</strong>. While <strong>SS Exodus 1947</strong> strengthened demand for Israel in 1948, 300 child orphans healed at <strong>Lake Windermere</strong>.",
             "spoken": "For survivors, liberation brought freedom mixed with heart-breaking grief. <short pause> Over 250,000 homeless survivors waited in DP camps . While SS Exodus 1947 strengthened demand for Israel in 1948, 300 child orphans healed at Lake Windermere .",
-            "paired_prose_hash": "7e9e027537",
+            "paired_prose_hash": "656b0c640f",
             "connective": "For survivors, liberation brought freedom mixed with heart-breaking grief."
           },
           {
@@ -11538,7 +11538,7 @@ export default {
             "stat": "1948 UN Genocide Convention Adopted",
             "html": "At the <strong>1945 Nuremberg Trials</strong>, judges ruled obeying orders never excused war crimes. Lawyer <strong>Raphael Lemkin</strong> coined <strong>“genocide”</strong>, inspiring the 1948 UN Convention.",
             "spoken": "Post-war trials and legal pioneers reshaped international justice forever. <short pause> At the 1945 Nuremberg Trials , judges ruled obeying orders never excused war crimes. Lawyer Raphael Lemkin coined “genocide” , inspiring the 1948 UN Convention.",
-            "paired_prose_hash": "f92fada510",
+            "paired_prose_hash": "b32d662158",
             "connective": "Post-war trials and legal pioneers reshaped international justice forever."
           },
           {
@@ -11550,7 +11550,7 @@ export default {
             "stat": "6 Million Murdered, Including 1.5M Children",
             "html": "The Shoah murdered <strong>six million Jews</strong>—including <strong>1.5 million children</strong>—and destroyed Yiddishland. Survivors like <strong>Primo Levi</strong> and Elie Wiesel preserved memory.",
             "spoken": "Behind every statistic stood an irreplaceable human life and family. <short pause> The Shoah murdered six million Jews, including 1.5 million children, and destroyed Yiddishland. Survivors like Primo Levi and Elie Wiesel preserved memory.",
-            "paired_prose_hash": "2b6e05537b",
+            "paired_prose_hash": "4e8ccb3e09",
             "connective": "Behind every statistic stood an irreplaceable human life and family."
           },
           {
@@ -12580,5 +12580,103 @@ export default {
     "curriculum_focus": "KS3 National Curriculum (Statutory Requirement): Challenges for Britain, Europe and the wider world 1901 to the present day — The Holocaust / Shoah.",
     "disciplinary_threads": "Change and Continuity, Forensic Archival Scrutiny, Historical Interpretations, Agency & Resistance, and Ethical Significance.",
     "non_specialist_summary": "Beginning deliberately with the rich cultural diversity of Europe's 9.5 million pre-war Jewish citizens rather than Nazi persecution, this seven-enquiry Year 9 unit traces how anti-Jewish policy radicalised from legal exclusion in Germany (1933–1939) to wartime ghettoisation in occupied Poland (1939–1941), mass shootings during Operation Barbarossa (1941), and industrialised extermination camps (1942–1944). Throughout every enquiry, pupils examine spiritual and armed Jewish resistance alongside European collaboration, rescue, and post-1945 Displaced Persons trauma and international justice."
-  }
+  },
+  "glossary": [
+    {
+      "term": "Shoah",
+      "definition": "The Hebrew word meaning \"catastrophe\", used specifically for the systematic state-sponsored persecution and murder of six million European Jews by Nazi Germany and its collaborators."
+    },
+    {
+      "term": "Shtetl",
+      "definition": "A small market town in Central and Eastern Europe home to a close-knit Yiddish-speaking Jewish community, synagogues, schools, and civic organisations before 1939."
+    },
+    {
+      "term": "Yiddish",
+      "definition": "The historical everyday mother tongue spoken by millions of Ashkenazi Jews across Central and Eastern Europe, written in the Hebrew alphabet and blending German, Hebrew, and Slavic roots."
+    },
+    {
+      "term": "Sephardic Jews",
+      "definition": "Jewish communities descended from families expelled from Spain and Portugal in the 1490s who settled across Mediterranean lands such as Greece, the Balkans, and Turkey and spoke Ladino."
+    },
+    {
+      "term": "Assimilation",
+      "definition": "The social process by which minority communities integrated into wider national languages, universities, professions, and civic life while preserving their personal heritage."
+    },
+    {
+      "term": "Racial Antisemitism",
+      "definition": "A late nineteenth-century pseudo-scientific doctrine falsely claiming that Jewish identity was an unchangeable biological trait carried in the blood rather than a religious belief."
+    },
+    {
+      "term": "Aryanization",
+      "definition": "The Nazi policy of confiscating Jewish-owned shops, homes, and factories or pressuring owners to sell them to non-Jewish buyers at rock-bottom prices."
+    },
+    {
+      "term": "Nuremberg Laws",
+      "definition": "Two antisemitic decrees enacted in September 1935 that revoked German Jews’ Reich citizenship and criminalised marriage or sexual relations between Jews and non-Jewish Germans."
+    },
+    {
+      "term": "Social Death",
+      "definition": "Historians’ term for the systematic isolation of German Jews from schools, parks, professions, and neighbourly contact through over 400 decrees prior to physical deportation."
+    },
+    {
+      "term": "Kristallnacht",
+      "definition": "The centrally coordinated Nazi pogrom of 9–10 November 1938 (\"Night of Broken Glass\") that burned over 1,400 synagogues, trashed 7,500 shops, murdered at least 91 Jews, and sent 30,000 men to concentration camps."
+    },
+    {
+      "term": "Évian Conference",
+      "definition": "An international summit of thirty-two nations held in France in July 1938 where delegates expressed verbal sympathy for Jewish refugees while refusing to lift strict immigration quotas."
+    },
+    {
+      "term": "Kindertransport",
+      "definition": "The British rescue mission between December 1938 and August 1939 that brought nearly 10,000 unaccompanied Jewish refugee children from Nazi-ruled territories to safety in Britain."
+    },
+    {
+      "term": "Schnellbrief",
+      "definition": "Reinhard Heydrich’s secret express directive of 21 September 1939 ordering rural Polish Jewish communities uprooted and concentrated into major cities beside direct railway junctions."
+    },
+    {
+      "term": "Ghetto",
+      "definition": "An enclosed, severely overcrowded urban prison district walled off by Nazi occupation authorities to segregate, exploit, and starve Jewish populations prior to deportation."
+    },
+    {
+      "term": "Judenrat",
+      "definition": "A Jewish council coerced by German occupiers inside each ghetto to carry out German orders while struggling to organise rations, sanitation, medical care, and housing."
+    },
+    {
+      "term": "Oneg Shabbat Archive",
+      "definition": "The secret Warsaw Ghetto research collective (\"Oyneg Shabes\") founded by historian Emanuel Ringelblum that buried 35,000 pages of diaries, decrees, and testimonies inside metal milk cans."
+    },
+    {
+      "term": "Einsatzgruppen",
+      "definition": "Four mobile SS paramilitary death squads deployed behind advancing German army lines in 1941 that murdered over 1.5 million Soviet Jews in open-air mass shootings."
+    },
+    {
+      "term": "Babyn Yar",
+      "definition": "A wooded ravine outside Kyiv, Ukraine (also spelled Babi Yar), where Sonderkommando 4a and German Order Police murdered 33,771 Jewish men, women, and children on 29–30 September 1941."
+    },
+    {
+      "term": "Wannsee Conference",
+      "definition": "The ninety-minute meeting chaired by Reinhard Heydrich in Berlin on 20 January 1942 coordinating German government ministries and state railways behind the \"Final Solution\"."
+    },
+    {
+      "term": "Operation Reinhard",
+      "definition": "The secret 1942–1943 SS campaign that built the dedicated extermination camps of Bełżec, Sobibór, and Treblinka, murdering roughly 1.7 million Jewish people across occupied Poland."
+    },
+    {
+      "term": "Sonderkommando",
+      "definition": "Jewish camp prisoners forced under threat of death to work in the gas chambers and crematoria, including the Auschwitz-Birkenau underground fighters who blew up Crematorium IV in October 1944."
+    },
+    {
+      "term": "Schreibtischtäter",
+      "definition": "Literally \"desk murderers\": unarmed civil servants, lawyers, and Deutsche Reichsbahn railway clerks who enabled continental genocide from behind office desks through decrees and train timetables."
+    },
+    {
+      "term": "Righteous Among the Nations",
+      "definition": "The official title awarded by Yad Vashem to non-Jewish individuals and communities, such as rescuers in Denmark and Le Chambon-sur-Lignon, who risked their lives to save Jews from the Holocaust."
+    },
+    {
+      "term": "Genocide",
+      "definition": "The legal concept coined by Polish-Jewish scholar Raphael Lemkin for the deliberate destruction of a national, ethnic, racial, or religious group, outlawed by the 1948 UN Genocide Convention."
+    }
+  ]
 };

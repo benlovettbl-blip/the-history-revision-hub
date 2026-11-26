@@ -43,8 +43,8 @@
           }
         ],
         "watch_out": "Iron Age Britons were not unhealthy because of dirt—their small, scattered villages kept human waste far from drinking streams.",
-        "prose_hash": "3fecb2efa2",
-        "prose_fp": "0a378987",
+        "prose_hash": "d18248dbe1",
+        "prose_fp": "e9fc82ce",
         "question_hash": "7c9f2d7c11"
       },
       {
@@ -88,8 +88,8 @@
           }
         ],
         "watch_out": "Roman aqueducts did not pump water uphill with engines—they relied entirely on gravity along a carefully measured downward slope.",
-        "prose_hash": "1f0dc1385d",
-        "prose_fp": "49c8288a",
+        "prose_hash": "3b724803e8",
+        "prose_fp": "e74c9a57",
         "question_hash": "bde876d83b"
       },
       {
@@ -133,8 +133,8 @@
           }
         ],
         "watch_out": "Romans did not wash with bars of soap in the bathhouse—they oiled their skin and scraped dirt off with a bronze strigil.",
-        "prose_hash": "a4e9caff59",
-        "prose_fp": "c74060b3",
+        "prose_hash": "f5336c7c7e",
+        "prose_fp": "f3e2696d",
         "question_hash": "72e39af2b6"
       },
       {
@@ -178,8 +178,8 @@
           }
         ],
         "watch_out": "Impressive stone latrines and warm baths did not make Roman towns germ-free—archaeologists still find whipworm and dysentery parasites in Roman drains.",
-        "prose_hash": "79fbdbbe84",
-        "prose_fp": "e6074dd2",
+        "prose_hash": "8c28a73b11",
+        "prose_fp": "00729c34",
         "question_hash": "405d7b5073"
       },
       {
@@ -223,8 +223,8 @@
           }
         ],
         "watch_out": "Roman aqueducts did not crumble because later Britons hated washing—they collapsed because the imperial taxes and army engineers needed to repair them vanished in AD 410.",
-        "prose_hash": "8451d6db48",
-        "prose_fp": "8e87be55",
+        "prose_hash": "18cf220211",
+        "prose_fp": "77023617",
         "question_hash": "1babead9cc"
       }
     ],
@@ -270,8 +270,8 @@
           }
         ],
         "watch_out": "Medieval craft workers did not dump waste by rivers out of laziness—tanning, dyeing, and butchery all required flowing river water to operate.",
-        "prose_hash": "5647c2ec0b",
-        "prose_fp": "03a12965",
+        "prose_hash": "88eed5ac97",
+        "prose_fp": "039d60d7",
         "question_hash": "28f6aa7691"
       },
       {
@@ -315,8 +315,8 @@
           }
         ],
         "watch_out": "Gong farmers worked strictly at night by town law so citizens did not have to smell or dodge open sewage carts in daylight.",
-        "prose_hash": "4c821f54cc",
-        "prose_fp": "de01a9db",
+        "prose_hash": "c8f4e09923",
+        "prose_fp": "a106efc9",
         "question_hash": "72aca6296c"
       },
       {
@@ -360,24 +360,26 @@
           }
         ],
         "watch_out": "Monks did not understand microscopic germs—their clean water came from vast Church wealth, quiet walled estates, and religious rules about ritual cleanliness.",
-        "prose_hash": "a229f8dcb4",
-        "prose_fp": "72bf34d3",
+        "prose_hash": "bc3d70076c",
+        "prose_fp": "e871f0f9",
         "question_hash": "9d926d2258"
       },
       {
         "stage": 4,
+        "prose_hash": "67868d8d22",
+        "question_hash": "7cedd9e309",
         "passage": [
           {
-            "hint": "Medieval plague beliefs",
-            "bullet": "Doctors knew nothing of rat fleas or Yersinia pestis → blamed planets, God's anger, and miasma"
+            "hint": "Yersinia Pestis in Fleas",
+            "bullet": "Yersinia Pestis in Fleas → carried by the bacterium *Yersinia pestis* living in fleas on black rats, the plague swept along trade routes, killing between thirty and fifty percent of Britain's population in under eighteen months"
           },
           {
-            "hint": "Port & gate controls",
-            "bullet": "Ports held ships in forty-day quarantines and town gates barred travellers from plague areas"
+            "hint": "Poisonous Foul Air",
+            "bullet": "Poisonous Foul Air → medieval medical knowledge could not explain the contagion: physicians blamed planetary alignments, divine wrath, and poisonous foul air"
           },
           {
-            "hint": "Emergency plague pits",
-            "bullet": "Overflowing London churchyards forced workers to dig deep mass burial trenches at Smithfield"
+            "hint": "Forty-Day Port Quarantines",
+            "bullet": "Forty-Day Port Quarantines → town councils barred travellers from infected regions and enacted forty-day port quarantines"
           }
         ],
         "context": [
@@ -392,22 +394,20 @@
         ],
         "stems": [
           {
-            "badge": "MIASMA BELIEF",
-            "stem": "Unaware that rat fleas carried ____________, medieval doctors blamed God's anger and foul ____________..."
+            "badge": "PRACTICAL ENFORCEMENT",
+            "stem": "Enforcing ____________ across ____________ allowed authorities to..."
           },
           {
-            "badge": "MOVEMENT BANS",
-            "stem": "Even so, port authorities enforced forty-day ____________ on ships and barred travellers from..."
+            "badge": "SCALE OF IMPACT",
+            "stem": "As a result of ____________, ____________ shifted while limiting opposition."
           },
           {
-            "badge": "MASS BURIALS",
-            "stem": "Once parish churchyards filled up, London officials dug deep burial trenches at ____________ to..."
+            "badge": "WIDER CONTEXT",
+            "stem": "Drawing on wider conditions such as ____________, this worked because..."
           }
         ],
-        "watch_out": "Do not claim medieval people only prayed during the Black Death—councils actively enforced ship quarantines, street cleaning, and organised burial trenches.",
-        "prose_hash": "7f4b08a4eb",
-        "prose_fp": "8354c9e2",
-        "question_hash": "7cedd9e309"
+        "watch_out": "Link facts directly to the question: Prompted desperate quarantines and public street bonfires, exposing the lethal helplessness of pre-scientific medicine.",
+        "prose_fp": "295f11e3"
       },
       {
         "stage": 5,
@@ -450,8 +450,8 @@
           }
         ],
         "watch_out": "Avoid the myth that medieval townsfolk happily lived in filth—laws like the 1388 Statute of Cambridge prove leaders fought hard against pollution despite weak tools.",
-        "prose_hash": "35185214dd",
-        "prose_fp": "3fcabfb3",
+        "prose_hash": "5f4d7b74ab",
+        "prose_fp": "c1f2cd9b",
         "question_hash": "57426c0dc8"
       }
     ],
@@ -497,8 +497,8 @@
           }
         ],
         "watch_out": "Hollowed-out elm trunks rotted and leaked underground, meaning early modern water pipes could neither carry high pressure nor serve every poor alley.",
-        "prose_hash": "4fd0b42e8a",
-        "prose_fp": "3f763755",
+        "prose_hash": "8792c274f6",
+        "prose_fp": "77d361ab",
         "question_hash": "0ddd230085"
       },
       {
@@ -542,8 +542,8 @@
           }
         ],
         "watch_out": "Inventing a technology is not the same as changing everyday life—without mains water and sewers, Harington's 1596 flush toilet helped only two royal palaces.",
-        "prose_hash": "15d397bdfe",
-        "prose_fp": "efda6257",
+        "prose_hash": "4c4eea2eff",
+        "prose_fp": "c56ea466",
         "question_hash": "3a413f1a79"
       },
       {
@@ -587,8 +587,8 @@
           }
         ],
         "watch_out": "The New River was not a natural river or free council service—it was a 38-mile man-made canal selling piped water only to families rich enough to pay.",
-        "prose_hash": "33f77efd59",
-        "prose_fp": "a213c3b8",
+        "prose_hash": "ce7878cb67",
+        "prose_fp": "acc87741",
         "question_hash": "842e5678ad"
       },
       {
@@ -632,8 +632,8 @@
           }
         ],
         "watch_out": "Even wealthy officials like Samuel Pepys could not buy total escape from sewage—shared brick walls meant a neighbour's cracked cesspit flooded right next door.",
-        "prose_hash": "65d6a40632",
-        "prose_fp": "bcd5f3da",
+        "prose_hash": "90b4250bd0",
+        "prose_fp": "cc8123e3",
         "question_hash": "55bbe39322"
       },
       {
@@ -677,8 +677,8 @@
           }
         ],
         "watch_out": "Slaughtering cats and dogs in 1665 actually made the Great Plague worse by letting black rats and their plague-carrying fleas multiply unchecked.",
-        "prose_hash": "05e0ce7ed5",
-        "prose_fp": "b7c164ae",
+        "prose_hash": "840ba6e4e3",
+        "prose_fp": "64ddf4b3",
         "question_hash": "29d6ff2039"
       }
     ],
@@ -724,8 +724,8 @@
           }
         ],
         "watch_out": "A life expectancy of nineteen in Manchester slums does not mean adults died at nineteen—it reflects terribly high infant deaths from dirty water and disease.",
-        "prose_hash": "5e511bbda2",
-        "prose_fp": "09373242",
+        "prose_hash": "f1456d7af9",
+        "prose_fp": "1f36de95",
         "question_hash": "e05db6e541"
       },
       {
@@ -769,8 +769,8 @@
           }
         ],
         "watch_out": "Unlike bubonic plague carried by rat fleas, Asiatic cholera was spread by bacteria swallowed in sewage-contaminated drinking water.",
-        "prose_hash": "ba42538d92",
-        "prose_fp": "66f18809",
+        "prose_hash": "f6054eb2b0",
+        "prose_fp": "0f543213",
         "question_hash": "03b005c1f4"
       },
       {
@@ -814,8 +814,8 @@
           }
         ],
         "watch_out": "Edwin Chadwick did not believe in Germ Theory—he still blamed miasma smells, which thankfully led him to demand the right solution of clean water and drains.",
-        "prose_hash": "459ad6eeec",
-        "prose_fp": "e9775e0a",
+        "prose_hash": "419b9a0c2c",
+        "prose_fp": "819079e1",
         "question_hash": "6cfbdf83c0"
       },
       {
@@ -859,8 +859,8 @@
           }
         ],
         "watch_out": "MPs did not fund London's sewers in 1858 because they accepted Germ Theory—they acted in panic because they thought the foul Thames miasma would poison Parliament!",
-        "prose_hash": "de22a62d7b",
-        "prose_fp": "3dd474fe",
+        "prose_hash": "eb8921d240",
+        "prose_fp": "2bf5521c",
         "question_hash": "b210dfb2e1"
       },
       {
@@ -904,8 +904,8 @@
           }
         ],
         "watch_out": "Bazalgette's sewers did not chemically treat sewage in the 1860s—they intercepted waste from central London and pumped it downstream onto the outgoing tide.",
-        "prose_hash": "19905502d2",
-        "prose_fp": "836262ab",
+        "prose_hash": "f6dfcac9e1",
+        "prose_fp": "6d4a420c",
         "question_hash": "9aa7fb7367"
       }
     ],
@@ -951,8 +951,8 @@
           }
         ],
         "watch_out": "Remember chronology: John Snow investigated Soho in 1854, four years before the 1858 Great Stink and seven years before Pasteur's 1861 Germ Theory.",
-        "prose_hash": "7ed6533454",
-        "prose_fp": "eb0b419b",
+        "prose_hash": "b0a8d49511",
+        "prose_fp": "36da1cb8",
         "question_hash": "3769890608"
       },
       {
@@ -996,8 +996,8 @@
           }
         ],
         "watch_out": "John Snow did not discover the cholera bacterium under a microscope—he proved water carried cholera using detective fieldwork, statistics, and his Soho spot map.",
-        "prose_hash": "eb4a1b4214",
-        "prose_fp": "fc50a001",
+        "prose_hash": "e00d00a1fe",
+        "prose_fp": "0ac0f9e7",
         "question_hash": "c0d1cc2cfe"
       },
       {
@@ -1041,8 +1041,8 @@
           }
         ],
         "watch_out": "Snow himself did not smash the pump with a hammer—he persuaded parish guardians with evidence, and Reverend Henry Whitehead later uncovered the leaking cesspool.",
-        "prose_hash": "2d7de2493d",
-        "prose_fp": "ac780caa",
+        "prose_hash": "83b6299b5a",
+        "prose_fp": "63e74927",
         "question_hash": "32631e4ca4"
       },
       {
@@ -1086,8 +1086,8 @@
           }
         ],
         "watch_out": "Do not confuse Pasteur and Koch: Louis Pasteur proved the general Germ Theory in 1861, while Robert Koch isolated specific human disease bacteria such as cholera in 1884.",
-        "prose_hash": "031dd787ce",
-        "prose_fp": "65d6b62f",
+        "prose_hash": "8d52fe72bd",
+        "prose_fp": "62fa5859",
         "question_hash": "9dc3b7ae5a"
       },
       {
@@ -1131,8 +1131,8 @@
           }
         ],
         "watch_out": "The crucial difference between 1848 and 1875 is one word: the 1848 Act was permissive—optional—whereas the 1875 Act was compulsory across Britain.",
-        "prose_hash": "ca0abfab92",
-        "prose_fp": "42f38d05",
+        "prose_hash": "434e990469",
+        "prose_fp": "699e43bf",
         "question_hash": "431deb9e83"
       }
     ],
@@ -1142,15 +1142,15 @@
         "passage": [
           {
             "hint": "1800 slum baseline",
-            "bullet": "Around 1800, industrial towns were sewage-soaked death traps where infant mortality exceeded fifty percent"
+            "bullet": "In 1800, smoky factory towns were sewage-soaked death traps where infant mortality climbed over 50%"
           },
           {
             "hint": "1900 urban transformation",
-            "bullet": "By 1900, British cities had clean piped water, covered underground sewers, and rising life expectancy"
+            "bullet": "By 1900, British cities had clean piped water, paved streets, covered sewers, and rising life spans"
           },
           {
-            "hint": "Top-mark essay plan",
-            "bullet": "Three PEEL causal paragraphs plus an evaluative conclusion weigh why sanitation reformed so rapidly"
+            "hint": "Four linked catalysts",
+            "bullet": "Rapid progress rested on detective epidemiology, bold civil engineering, laboratory germ science, and compulsory law"
           }
         ],
         "context": [
@@ -1166,20 +1166,20 @@
         "stems": [
           {
             "badge": "CENTURY CONTRAST",
-            "stem": "Whereas British towns in 1800 suffered over 50% ____________ and sewage-filled cellars, cities by 1900..."
+            "stem": "Whereas British factory towns in 1800 suffered over 50% ____________ and sewage-soaked cellars, cities by 1900..."
           },
           {
-            "badge": "CAUSAL EXPLANATION",
-            "stem": "Rapid progress across the nineteenth century depended on linking ____________, engineering, science, and..."
+            "badge": "LAISSEZ-FAIRE NEGLECT",
+            "stem": "Under hands-off ____________ attitudes in 1800, private companies pumped dirty river water beside overflowing..."
           },
           {
-            "badge": "EVALUATIVE VERDICT",
-            "stem": "A top-level conclusion judges which factor acted as the ____________ that turned ideas into national change."
+            "badge": "LINKED BREAKTHROUGHS",
+            "stem": "Transforming urban sanitation across the century depended on combining ____________, civil engineering, germ science, and..."
           }
         ],
-        "watch_out": "Do not write a chronological story listing events from 1800 to 1900—organise your 12-mark answer into analytical PEEL paragraphs explaining why progress happened.",
-        "prose_hash": "c821ba03bc",
-        "prose_fp": "85165c26",
+        "watch_out": "Sanitary progress between 1800 and 1900 did not come from a single hero—it took epidemiology, engineering, microbiology, and compulsory law working together.",
+        "prose_hash": "0ba7b9fe20",
+        "prose_fp": "5e65b6bb",
         "question_hash": "701622672a"
       },
       {
@@ -1223,8 +1223,8 @@
           }
         ],
         "watch_out": "In an essay, explain Snow's limitation too: because he could not show the germ under a microscope, many officials ignored him until Pasteur and Koch.",
-        "prose_hash": "0b8449affd",
-        "prose_fp": "78f98a22",
+        "prose_hash": "93fe9e895a",
+        "prose_fp": "913fc35e",
         "question_hash": "4badddb3bc"
       },
       {
@@ -1268,8 +1268,8 @@
           }
         ],
         "watch_out": "Link Bazalgette back to London's limits: engineering solved the capital's crisis, whereas towns such as Manchester and Leeds still needed compulsory national legislation.",
-        "prose_hash": "ef4378f6ac",
-        "prose_fp": "0ff51660",
+        "prose_hash": "53750b6364",
+        "prose_fp": "89559b85",
         "question_hash": "1041266b5d"
       },
       {
@@ -1313,8 +1313,8 @@
           }
         ],
         "watch_out": "Check your dates carefully in essays: Koch isolated the cholera bacterium in 1884, nine years after the 1875 Public Health Act had already passed.",
-        "prose_hash": "5d4af56874",
-        "prose_fp": "2c0146a0",
+        "prose_hash": "ba19c8abc2",
+        "prose_fp": "a354abdf",
         "question_hash": "1fb2d55619"
       },
       {
@@ -1358,8 +1358,8 @@
           }
         ],
         "watch_out": "For top evaluation marks, argue how factors worked together: science and engineering showed how to stop cholera, while the 1875 Act forced every town to do it.",
-        "prose_hash": "536c04c98b",
-        "prose_fp": "c74680b3",
+        "prose_hash": "8a1937e397",
+        "prose_fp": "8fdd5e24",
         "question_hash": "c0e2049e6e"
       }
     ]
