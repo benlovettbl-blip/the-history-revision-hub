@@ -464,7 +464,7 @@ export async function renderArcadeView(options = {}) {
               <span class="arcade-mgb-title-text">${shortGameTitle}</span>
             </div>
             ${
-              isGraphicNovelMode
+              isGraphicNovelMode || currentGameId === 'domesday_stubitone'
                 ? ''
                 : `
               <select id="arcade-mobile-scope-select" class="arcade-mgb-scope" aria-label="Select Lesson Scope">
@@ -498,7 +498,7 @@ export async function renderArcadeView(options = {}) {
 
           <div class="arcade-controls-cluster">
             ${
-              isGraphicNovelMode
+              isGraphicNovelMode || currentGameId === 'domesday_stubitone'
                 ? ''
                 : `
               <select id="arcade-scope-select" class="arcade-scope-select" aria-label="Select Lesson Scope">

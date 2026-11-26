@@ -1,6 +1,6 @@
 /**
- * The Secret of Stubitone™ — 1086 Domesday Adventure Scoped Styles
- * Full-Screen Classroom Touchboard (75"), Tablet, Chromebook & 390px Mobile Ready.
+ * The Secret of Stubitone™ — 1086 Domesday Adventure Scoped Styles (v2 Point-and-Click Edition)
+ * Zero text over artwork • Discreet shiny hover glints • Zero truncation across all viewports.
  */
 
 .dst-shell,
@@ -39,13 +39,15 @@
   overflow-y: auto;
 }
 
-/* Top Persistent Touch Bar */
+/* =========================================================================
+   TOP NAVIGATION BAR (ZERO TRUNCATION — WRAPS CLEANLY ON ALL SCREENS)
+   ========================================================================= */
 .dst-topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 10px 14px;
+  padding: 9px 14px;
   background: linear-gradient(90deg, #1c1917 0%, #292524 50%, #1c1917 100%);
   border-bottom: 1.5px solid rgba(245, 158, 11, 0.45);
   flex-wrap: wrap;
@@ -54,35 +56,34 @@
 .dst-step-strip {
   display: flex;
   align-items: center;
-  gap: 6px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  padding-bottom: 2px;
-}
-.dst-step-strip::-webkit-scrollbar {
-  display: none;
+  gap: 5px;
+  flex-wrap: wrap;
 }
 
 .dst-step-pill {
   appearance: none;
-  min-height: 40px;
-  padding: 6px 12px;
+  min-height: 36px;
+  padding: 5px 11px;
   border-radius: 999px;
   border: 1.5px solid #44403c;
   background: #1c1917;
-  color: #a8a29e;
-  font-size: 0.78rem;
+  color: #d6d3d1;
+  font-size: 0.76rem;
   font-weight: 800;
-  white-space: nowrap;
+  line-height: 1.2;
   cursor: pointer;
   touch-action: manipulation;
   transition: all 0.16s ease;
+}
+.dst-step-pill:hover {
+  border-color: #f59e0b;
+  color: #ffffff;
 }
 .dst-step-pill.is-active {
   background: linear-gradient(180deg, #f59e0b 0%, #b45309 100%);
   color: #fffbeb;
   border-color: #fde68a;
-  box-shadow: 0 0 12px rgba(245, 158, 11, 0.4);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.38);
 }
 .dst-step-pill.is-done {
   border-color: #16a34a;
@@ -93,19 +94,20 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  flex-wrap: wrap;
 }
 
 .dst-icon-btn {
   appearance: none;
-  min-height: 42px;
-  min-width: 42px;
-  padding: 6px 12px;
-  border-radius: 10px;
+  min-height: 38px;
+  padding: 5px 11px;
+  border-radius: 9px;
   border: 1.5px solid #57534e;
   background: #292524;
   color: #f5f5f4;
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 800;
+  line-height: 1.2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -124,14 +126,81 @@
 }
 
 /* =========================================================================
-   LUCASARTS / MONKEY ISLAND TITLE SPLASH COVER
+   DISCREET SHINY HOVER DOT SYSTEM (ZERO TEXT OVER PICTURES!)
    ========================================================================= */
-.dst-cover-stage {
+.dst-hit-zone {
+  appearance: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  touch-action: manipulation;
+  outline: none;
+}
+
+.dst-glint-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffffff 0%, #fef08a 45%, #f59e0b 82%, rgba(245, 158, 11, 0) 100%);
+  box-shadow: 0 0 10px 3px rgba(253, 224, 71, 0.9), 0 0 20px 6px rgba(245, 158, 11, 0.45);
+  opacity: 0;
+  transform: scale(0.45);
+  transition: opacity 0.18s ease, transform 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+.dst-hit-zone.is-found .dst-glint-dot {
+  background: radial-gradient(circle, #ffffff 0%, #bbf7d0 48%, #22c55e 85%, rgba(34, 197, 94, 0) 100%);
+  box-shadow: 0 0 10px 3px rgba(134, 239, 172, 0.88), 0 0 18px 5px rgba(34, 197, 94, 0.4);
+}
+
+/* Reveal discreet small shiny dot ONLY when user hovers or focuses! */
+.dst-hit-zone:hover .dst-glint-dot,
+.dst-hit-zone:focus-visible .dst-glint-dot,
+.dst-hit-zone:active .dst-glint-dot {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Optional 1.8s firefly shimmer when pupil taps "Glint Hint" or on non-hover touch tablets */
+@keyframes dstFireflyShimmer {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.92; transform: scale(1.08); }
+}
+
+.dst-shell.dst-hint-shimmer .dst-hit-zone:not(.is-found) .dst-glint-dot {
+  animation: dstFireflyShimmer 0.9s ease-in-out 2;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .dst-hit-zone:not(.is-found) .dst-glint-dot {
+    opacity: 0.42;
+    transform: scale(0.78);
+  }
+}
+
+/* =========================================================================
+   LUCASARTS / MONKEY ISLAND COVER (UNOBSTRUCTED 16:9 ART + DOCKED FOOTER)
+   ========================================================================= */
+.dst-cover-wrap {
+  display: flex;
+  flex-direction: column;
+  background: #090d16;
+}
+
+.dst-cover-art-box {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  min-height: 420px;
-  max-height: 76dvh;
+  max-height: 64dvh;
   overflow: hidden;
   background: #090d16;
 }
@@ -144,51 +213,46 @@
   transition: transform 0.25s ease-out;
 }
 
-.dst-cover-vignette {
+.dst-cover-top-shade {
   position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(9, 13, 22, 0.72) 0%,
-    rgba(9, 13, 22, 0.12) 38%,
-    rgba(9, 13, 22, 0.18) 66%,
-    rgba(9, 13, 22, 0.88) 100%
-  );
+  inset: 0 0 auto 0;
+  height: 36%;
+  background: linear-gradient(180deg, rgba(9, 13, 22, 0.78) 0%, rgba(9, 13, 22, 0) 100%);
   pointer-events: none;
   z-index: 4;
 }
 
 .dst-cover-logo-wrap {
   position: absolute;
-  top: 3%;
+  top: 2.5%;
   left: 50%;
   transform: translateX(-50%);
-  width: min(92%, 680px);
+  width: min(94%, 720px);
   text-align: center;
-  z-index: 6;
+  z-index: 5;
   pointer-events: none;
 }
 
 .dst-lucas-kicker {
   display: inline-block;
-  padding: 3px 12px;
+  padding: 2px 11px;
   border-radius: 999px;
-  background: rgba(12, 10, 9, 0.82);
+  background: rgba(12, 10, 9, 0.84);
   border: 1px solid #f59e0b;
   color: #fde68a;
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 900;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .dst-lucas-title {
   margin: 0;
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(1.65rem, 4.3vw, 3.25rem);
+  font-size: clamp(1.4rem, 3.8vw, 3.05rem);
   font-weight: 900;
-  line-height: 1.02;
+  line-height: 1.04;
   letter-spacing: 0.8px;
   background: linear-gradient(180deg, #fffbeb 0%, #fde047 38%, #f59e0b 72%, #b45309 100%);
   -webkit-background-clip: text;
@@ -197,68 +261,106 @@
 }
 
 .dst-lucas-sub {
-  margin: 5px auto 0;
-  font-size: clamp(0.76rem, 1.5vw, 0.98rem);
+  margin: 4px auto 0;
+  font-size: clamp(0.74rem, 1.35vw, 0.94rem);
   font-weight: 700;
   color: #fef3c7;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.95);
 }
 
-.dst-cover-bottom {
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 14px;
-  z-index: 7;
+.dst-cover-footer {
+  padding: 12px 18px 16px;
+  background: linear-gradient(180deg, #141210 0%, #0c0a09 100%);
+  border-top: 2px solid #78350f;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 8px;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
 .dst-start-cta {
   appearance: none;
-  min-height: 54px;
-  padding: 12px 30px;
+  min-height: 50px;
+  padding: 11px 26px;
   border-radius: 999px;
   border: 2.5px solid #fef08a;
   background: linear-gradient(180deg, #ea580c 0%, #9a3412 100%);
   color: #ffffff;
-  font-size: clamp(0.95rem, 1.8vw, 1.18rem);
+  font-size: 1rem;
   font-weight: 900;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.5px;
   cursor: pointer;
   touch-action: manipulation;
-  box-shadow: 0 8px 24px rgba(234, 88, 12, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.5);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .dst-start-cta:hover,
 .dst-start-cta:active {
-  transform: scale(1.04);
-  box-shadow: 0 10px 30px rgba(251, 191, 36, 0.7);
+  transform: scale(1.03);
+  box-shadow: 0 8px 26px rgba(251, 191, 36, 0.65);
 }
 
-.dst-boxart-stamp {
-  font-size: 0.68rem;
+/* =========================================================================
+   DIALOGUE STRIP WITH EXPRESSIVE SPEAKER PORTRAIT MEDALLIONS
+   ========================================================================= */
+.dst-body {
+  padding: 13px 16px 18px;
+  flex: 1;
+}
+
+.dst-speech-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(180deg, #fef3c7 0%, #fde68a 100%);
+  color: #1c1917;
+  border: 2.5px solid #78350f;
+  border-radius: 14px;
+  padding: 10px 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28);
+  margin-bottom: 12px;
+}
+
+.dst-avatar-medallion {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2.5px solid #78350f;
+  background-color: #292524;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.dst-speech-speaker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.73rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #9a3412;
+  margin-bottom: 2px;
+}
+
+.dst-speech-text {
+  margin: 0;
+  font-size: 0.93rem;
   font-weight: 700;
-  color: #cbd5e1;
-  background: rgba(15, 23, 42, 0.78);
-  padding: 3px 12px;
-  border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.35);
+  line-height: 1.38;
+  color: #1c1917;
 }
 
 /* =========================================================================
    DIORAMA & MAP WORKSPACE GRID
    ========================================================================= */
-.dst-body {
-  padding: 14px 16px 18px;
-  flex: 1;
-}
-
 .dst-split {
   display: grid;
-  grid-template-columns: minmax(0, 1.22fr) minmax(0, 0.98fr);
+  grid-template-columns: minmax(0, 1.24fr) minmax(0, 0.96fr);
   gap: 16px;
   align-items: start;
 }
@@ -285,71 +387,19 @@
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
 }
 
-/* Big Touch-Friendly Hotspots (>= 46px height!) */
-.dst-hotspot {
-  appearance: none;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  min-height: 44px;
-  min-width: 46px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  border: 2px solid #fde047;
-  background: rgba(15, 23, 42, 0.86);
-  color: #fef9c3;
-  font-size: 0.78rem;
-  font-weight: 800;
-  white-space: nowrap;
-  cursor: pointer;
-  z-index: 6;
-  touch-action: manipulation;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.65);
-  transition: transform 0.14s ease, background 0.14s ease;
-}
-.dst-hotspot:hover,
-.dst-hotspot:active {
-  transform: translate(-50%, -50%) scale(1.08);
-  background: #b45309;
-  color: #ffffff;
-}
-.dst-hotspot.is-found {
-  border-color: #4ade80;
-  background: rgba(20, 83, 45, 0.92);
-  color: #dcfce7;
-}
-.dst-hotspot.is-gag {
-  border-color: #fb923c;
-  background: rgba(67, 20, 7, 0.88);
-}
-
-/* Comic Speech / Audio Subtitle Banner */
-.dst-speech-box {
-  background: linear-gradient(180deg, #fef3c7 0%, #fde68a 100%);
-  color: #1c1917;
-  border: 2.5px solid #78350f;
-  border-radius: 14px;
-  padding: 12px 14px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-  margin-bottom: 12px;
-}
-.dst-speech-speaker {
+.dst-scene-caption-strip {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  font-size: 0.74rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  color: #9a3412;
-  margin-bottom: 4px;
-}
-.dst-speech-text {
-  margin: 0;
-  font-size: 0.95rem;
-  font-weight: 700;
-  line-height: 1.4;
-  color: #1c1917;
+  flex-wrap: wrap;
+  margin-top: 7px;
+  padding: 6px 11px;
+  border-radius: 9px;
+  background: #1c1917;
+  border: 1px solid #44403c;
+  font-size: 0.77rem;
+  color: #d6d3d1;
 }
 
 .dst-card-panel {
@@ -362,14 +412,15 @@
 .dst-choice-btn {
   appearance: none;
   width: 100%;
-  min-height: 50px;
-  padding: 11px 14px;
+  min-height: 46px;
+  padding: 10px 13px;
   border-radius: 11px;
   border: 1.5px solid #57534e;
   background: #292524;
   color: #f8fafc;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 700;
+  line-height: 1.32;
   text-align: left;
   display: flex;
   align-items: center;
@@ -397,14 +448,15 @@
 .dst-next-btn {
   appearance: none;
   width: 100%;
-  min-height: 50px;
-  padding: 12px 18px;
+  min-height: 48px;
+  padding: 11px 16px;
   border-radius: 12px;
   border: 2px solid #fde047;
   background: linear-gradient(180deg, #d97706 0%, #92400e 100%);
   color: #ffffff;
-  font-size: 0.96rem;
+  font-size: 0.92rem;
   font-weight: 900;
+  line-height: 1.25;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -415,7 +467,7 @@
 }
 
 /* =========================================================================
-   BEAT 5: STUBITONE 1086 LATIN X-RAY TRANSLATION CURTAIN
+   BEAT 5: STUBITONE FOLIO 46v PARCHMENT & STAMP CHALLENGE
    ========================================================================= */
 .dst-parchment-box {
   position: relative;
@@ -423,37 +475,35 @@
   border: 3px solid #78350f;
   background: radial-gradient(circle at 50% 35%, #fcf6e5 0%, #efe0bb 70%, #dcc394 100%);
   color: #292524;
-  padding: 18px 18px 16px;
-  box-shadow: inset 0 0 28px rgba(120, 53, 15, 0.28), 0 10px 24px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
-  touch-action: none;
+  padding: 16px;
+  box-shadow: inset 0 0 28px rgba(120, 53, 15, 0.26), 0 10px 24px rgba(0, 0, 0, 0.4);
 }
 
 .dst-parchment-header {
   font-family: Georgia, serif;
-  font-size: 0.76rem;
+  font-size: 0.75rem;
   font-weight: 900;
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
   color: #991b1b;
   border-bottom: 1.5px solid rgba(153, 27, 27, 0.35);
   padding-bottom: 6px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .dst-chunk-grid {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 7px;
 }
 
 .dst-latin-row {
   position: relative;
-  min-height: 48px;
+  min-height: 46px;
   border-radius: 8px;
   border: 1.5px solid rgba(120, 53, 15, 0.35);
-  background: rgba(255, 251, 235, 0.65);
-  padding: 9px 12px;
+  background: rgba(255, 251, 235, 0.72);
+  padding: 8px 11px;
   cursor: pointer;
   touch-action: manipulation;
   transition: border-color 0.15s ease, background 0.15s ease;
@@ -464,6 +514,24 @@
   box-shadow: 0 3px 10px rgba(180, 83, 9, 0.22);
 }
 
+.dst-lang-chip {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-right: 6px;
+  vertical-align: middle;
+  background: #14532d;
+  color: #dcfce7;
+}
+.dst-lang-chip.is-latin {
+  background: #78350f;
+  color: #fef3c7;
+}
+
 .dst-rubric-strike {
   text-decoration: line-through;
   text-decoration-color: #dc2626;
@@ -471,12 +539,11 @@
   font-weight: 900;
 }
 
-/* 3-Column Debrief Grid */
 .dst-debrief-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 .dst-debrief-col {
   background: #1c1917;
@@ -485,7 +552,7 @@
   padding: 13px 14px;
 }
 
-/* Responsive Tablet & 390px Mobile Rules */
+/* Responsive Tablet & 390px Mobile Rules (Zero Truncation!) */
 @media (max-width: 920px) {
   .dst-split {
     grid-template-columns: minmax(0, 1fr);
@@ -493,8 +560,10 @@
   .dst-debrief-grid {
     grid-template-columns: minmax(0, 1fr);
   }
-  .dst-cover-stage {
-    min-height: 300px;
+  .dst-cover-footer {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
   }
 }
 
@@ -502,60 +571,26 @@
   .dst-body {
     padding: 10px 10px calc(24px + env(safe-area-inset-bottom, 0px));
   }
-  .dst-body .dst-step-pill {
-    white-space: normal;
-    line-height: 1.25;
-    width: 100%;
-    text-align: left;
-  }
-  .dst-cover-stage {
-    aspect-ratio: auto;
-    min-height: 0;
-    max-height: none;
-    display: flex;
-    flex-direction: column;
-  }
-  .dst-cover-stage .domesday-diorama-img {
-    aspect-ratio: 16 / 9;
-    height: auto;
-  }
-  .dst-cover-stage .domesday-fx-canvas,
-  .dst-cover-vignette {
-    height: 56vw;
-    bottom: auto;
-  }
-  .dst-cover-logo-wrap {
-    top: 6px;
-    width: 94%;
+  .dst-step-pill {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    min-height: 32px;
   }
   .dst-lucas-kicker {
-    font-size: 0.56rem;
-    padding: 2px 8px;
+    font-size: 0.49rem;
+    letter-spacing: 0.6px;
+    padding: 2px 7px;
+    white-space: nowrap;
   }
   .dst-lucas-title {
-    font-size: 1.38rem;
+    font-size: 1.32rem;
   }
   .dst-lucas-sub {
     display: none;
   }
-  .dst-cover-stage .dst-hotspot {
-    display: none;
-  }
-  .dst-cover-bottom {
-    position: static;
-    padding: 12px 10px 14px;
-    background: #141210;
-    border-top: 1.5px solid #78350f;
-  }
-  .dst-hotspot {
-    min-height: 28px;
-    min-width: 0;
-    max-width: 44vw;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding: 3px 7px;
-    font-size: 0.6rem;
-    border-width: 1.5px;
+  .dst-avatar-medallion {
+    width: 40px;
+    height: 40px;
   }
   .dst-speech-text {
     font-size: 0.85rem;
