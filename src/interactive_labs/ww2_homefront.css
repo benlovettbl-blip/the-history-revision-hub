@@ -28,23 +28,59 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-.ww2-shell.ww2-is-fullscreen {
+.ww2-shell > #ww2-stage-slot {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  width: 100%;
+}
+
+.ww2-shell.ww2-is-fullscreen,
+.ww2-shell:fullscreen,
+.ww2-shell:-webkit-full-screen {
   position: fixed !important;
   inset: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
   max-width: none !important;
   margin: 0 !important;
   border-radius: 0 !important;
   border: none !important;
   z-index: 99999 !important;
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   overflow-y: auto;
   overflow-x: hidden;
   overflow-anchor: none;
   overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
+  background: radial-gradient(circle at 50% 18%, #172554 0%, #0f172a 55%, #070b13 100%);
+}
+
+.ww2-shell.ww2-is-fullscreen .ww2-topbar,
+.ww2-shell:fullscreen .ww2-topbar,
+.ww2-shell:-webkit-full-screen .ww2-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 45;
+  flex-shrink: 0;
+  padding: max(8px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) 8px max(16px, env(safe-area-inset-left, 0px));
+}
+
+.ww2-clue-note {
+  background: rgba(30, 41, 59, 0.88);
+  border-left: 3.5px solid #fbbf24;
+  border-radius: 9px;
+  padding: 8px 11px;
+  margin-bottom: 10px;
+  font-size: 0.79rem;
+  color: #e2e8f0;
+  line-height: 1.38;
+}
+.ww2-clue-note strong {
+  color: #fde68a;
 }
 
 /* =========================================================================
@@ -419,6 +455,8 @@
 
 .ww2-cover-stage {
   width: 100%;
+  flex: 1 1 auto;
+  min-height: 0;
   background: radial-gradient(circle at 50% 50%, #172554 0%, #090d16 80%);
   display: flex;
   justify-content: center;
@@ -437,8 +475,82 @@
 }
 
 .ww2-shell.ww2-is-fullscreen .ww2-cover-art-box,
+.ww2-shell:fullscreen .ww2-cover-art-box,
+.ww2-shell:-webkit-full-screen .ww2-cover-art-box,
 #hh-classroom-lab-modal .ww2-cover-art-box {
-  max-width: min(100%, calc((100dvh - 172px) * 16 / 9));
+  max-width: min(100%, calc((100dvh - 142px) * 16 / 9));
+}
+
+/* Desktop & Tablet Landscape Cinema Full-Screen Stage (Zero Bottom Void, Balanced Proportions) */
+@media (min-width: 921px) and (min-height: 540px) {
+  .ww2-shell.ww2-is-fullscreen .ww2-body,
+  .ww2-shell:fullscreen .ww2-body,
+  .ww2-shell:-webkit-full-screen .ww2-body {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: min(1740px, 98vw, calc((100dvh - 205px) * 3.12));
+    margin: auto;
+    padding: clamp(10px, 1.5vh, 18px) clamp(14px, 1.8vw, 26px);
+  }
+
+  .ww2-shell.ww2-is-fullscreen .ww2-speech-box,
+  .ww2-shell:fullscreen .ww2-speech-box,
+  .ww2-shell:-webkit-full-screen .ww2-speech-box {
+    padding: 11px 18px;
+    margin-bottom: 12px;
+  }
+
+  .ww2-shell.ww2-is-fullscreen .ww2-avatar-medallion,
+  .ww2-shell:fullscreen .ww2-avatar-medallion,
+  .ww2-shell:-webkit-full-screen .ww2-avatar-medallion {
+    width: 52px;
+    height: 52px;
+  }
+
+  .ww2-shell.ww2-is-fullscreen .ww2-speech-text,
+  .ww2-shell:fullscreen .ww2-speech-text,
+  .ww2-shell:-webkit-full-screen .ww2-speech-text {
+    font-size: clamp(0.95rem, 1.15vw, 1.06rem);
+  }
+
+  .ww2-shell.ww2-is-fullscreen .ww2-split,
+  .ww2-shell:fullscreen .ww2-split,
+  .ww2-shell:-webkit-full-screen .ww2-split {
+    grid-template-columns: minmax(0, 1.26fr) minmax(0, 0.94fr);
+    gap: clamp(16px, 1.8vw, 26px);
+    align-items: stretch;
+  }
+
+  .ww2-shell.ww2-is-fullscreen .ww2-split > div,
+  .ww2-shell:fullscreen .ww2-split > div,
+  .ww2-shell:-webkit-full-screen .ww2-split > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ww2-shell.ww2-is-fullscreen #ww2-right-slot > .ww2-card-panel,
+  .ww2-shell:fullscreen #ww2-right-slot > .ww2-card-panel,
+  .ww2-shell:-webkit-full-screen #ww2-right-slot > .ww2-card-panel {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: clamp(14px, 1.8vh, 20px) clamp(15px, 1.6vw, 22px);
+  }
+
+  .ww2-shell.ww2-is-fullscreen .ww2-choice-btn,
+  .ww2-shell:fullscreen .ww2-choice-btn,
+  .ww2-shell:-webkit-full-screen .ww2-choice-btn {
+    min-height: 48px;
+    font-size: clamp(0.88rem, 0.98vw, 0.96rem);
+    padding: 10px 14px;
+  }
+
+  .ww2-shell.ww2-is-fullscreen .ww2-cover-footer,
+  .ww2-shell:fullscreen .ww2-cover-footer,
+  .ww2-shell:-webkit-full-screen .ww2-cover-footer {
+    padding: 12px clamp(20px, 4vw, 48px) 14px;
+  }
 }
 
 .ww2-diorama-img {

@@ -1,159 +1,270 @@
 /**
- * National All-UK 1939 Operation Pied Piper & Blitz Target-Cities SVG Map (`uk_homefront_svg_map.js` v2)
+ * National All-UK 1939 Operation Pied Piper & Blitz Target-Cities GIS Atlas (`uk_homefront_svg_map.js` v3)
  *
- * Covers ALL FOUR UK NATIONS (England, Scotland, Wales & Northern Ireland — 7 interactive routes)
- * with a recognizable cartographic silhouette (Highlands, Firth of Forth, East Anglia, Kent, Isle of Wight,
- * Devon/Cornwall, South & North Wales, Anglesey, Merseyside/Cumbria, and Northern Ireland) + animated
- * steam-train journey arc (`<animateMotion>`).
+ * Built from 100% genuine 1:10m Natural Earth `d3-geo` Conic Conformal cartography (`UK_HOMEFRONT_GIS`):
+ *  - Distinct Ordnance Survey heritage subunits for England, Scotland, Wales & Northern Ireland
+ *  - Neutral Ireland (`IRL`) + Occupied Continental Channel Coast (`France / Belgium / Netherlands` context)
+ *  - Major UK rivers (Thames, Severn, Trent, Tyne, Clyde) & Lough Neagh + Conic Conformal graticule grid
+ *  - All 7 historical evacuation railway corridors visible simultaneously + glowing active route with animated steam train
+ *  - Visited green `✓` badges on explored cities + collision-free callout pills across ViewBox `0 0 900 540`
  */
+
+import { UK_HOMEFRONT_GIS } from './uk_homefront_gis_paths.js';
+
+const RECEPTION_ZONE_SHAPES = {
+  london: { rx: 46, ry: 22, rot: -16, labelDx: -36, labelDy: 30, shortDest: 'Devon, Cornwall & Somerset' },
+  southcoast: { rx: 32, ry: 18, rot: -8, labelDx: -84, labelDy: -22, shortDest: 'Dorset, Wilts & Hants Downs' },
+  midlands: { rx: 34, ry: 24, rot: 8, labelDx: -94, labelDy: 6, shortDest: 'Shropshire & Welsh Marches' },
+  northwest: { rx: 34, ry: 20, rot: -14, labelDx: -92, labelDy: 22, shortDest: 'North Wales & Anglesey' },
+  northeast: { rx: 34, ry: 22, rot: -10, labelDx: -86, labelDy: 6, shortDest: 'Yorkshire Dales & Cumbria' },
+  scotland: { rx: 48, ry: 26, rot: -6, labelDx: 0, labelDy: -30, shortDest: 'Scottish Highlands & Moray' },
+  belfast: { rx: 30, ry: 19, rot: -5, labelDx: -38, labelDy: 28, shortDest: 'Rural Ulster & Fermanagh' },
+};
+
+const CITY_CALLOUT_LAYOUT = {
+  scotland: { short: 'Glasgow & Clyde', dx: -76, dy: -2, bend: -18 },
+  northeast: { short: 'Newcastle & Hull', dx: 76, dy: -4, bend: 14 },
+  belfast: { short: 'Belfast Docks', dx: -56, dy: -23, bend: 14 },
+  northwest: { short: 'Liverpool & Manc.', dx: -76, dy: -10, bend: 14 },
+  midlands: { short: 'Coventry & B’ham', dx: 82, dy: -4, bend: -14 },
+  london: { short: 'London', dx: 56, dy: -2, bend: 24 },
+  southcoast: { short: 'Portsmouth & S’ton', dx: 82, dy: 16, bend: 14 },
+};
+
+function buildQuadArc(x1, y1, x2, y2, bend = 16) {
+  const mx = (x1 + x2) / 2;
+  const my = (y1 + y2) / 2;
+  const dx = x2 - x1;
+  const dy = y2 - y1;
+  const len = Math.hypot(dx, dy) || 1;
+  const cx = (mx + (-dy / len) * bend).toFixed(1);
+  const cy = (my + (dx / len) * bend).toFixed(1);
+  return `M ${x1},${y1} Q ${cx},${cy} ${x2},${y2}`;
+}
 
 export function renderUkHomeFrontMapSVG({
   routes = [],
   selectedRouteId = 'london',
+  visitedRoutes = null,
   svgUid = 'uk0',
 }) {
   const activeRoute = routes.find((r) => r.id === selectedRouteId) || routes[0];
+  const visitedSet =
+    visitedRoutes instanceof Set
+      ? visitedRoutes
+      : Array.isArray(visitedRoutes)
+        ? new Set(visitedRoutes)
+        : new Set([selectedRouteId]);
+
   const seaId = `ukSea-${svgUid}`;
-  const landId = `ukLand-${svgUid}`;
+  const engId = `ukEng-${svgUid}`;
+  const sctId = `ukSct-${svgUid}`;
+  const wlsId = `ukWls-${svgUid}`;
   const safeGlowId = `ukSafeGlow-${svgUid}`;
-  const routePathId = `ukArc-${svgUid}`;
+  const coastGlowId = `ukCoastGlow-${svgUid}`;
+  const shadowId = `ukCardShad-${svgUid}`;
 
-  // Detailed, recognizable Great Britain cartographic outline (ViewBox 900x540)
-  const greatBritainPath = `
-    M 374,34 L 428,28 L 456,42 L 434,68 L 418,82 L 478,86 L 492,108 L 468,136
-    L 442,146 L 476,158 L 508,182 L 538,214 L 564,254 L 584,292 L 574,312
-    L 616,318 L 648,342 L 652,374 L 626,404 L 604,412 L 642,424 L 634,448
-    L 592,462 L 548,468 L 512,472 L 474,478 L 432,494 L 382,512 L 368,502
-    L 396,478 L 434,458 L 468,442 L 444,434 L 404,432 L 378,418 L 388,398
-    L 418,392 L 426,368 L 404,352 L 392,334 L 416,322 L 456,322 L 468,308
-    L 462,286 L 448,268 L 458,244 L 436,226 L 406,222 L 392,198 L 408,176
-    L 382,162 L 364,132 L 352,96 L 358,62 Z
-  `;
-
-  // Isle of Wight & Anglesey micro-islands for authentic UK silhouette
-  const angleseyPath = `M 388,314 L 406,310 L 408,322 L 390,324 Z`;
-  const isleOfWightPath = `M 520,476 L 538,474 L 534,483 L 518,482 Z`;
-
-  // Recognizable Northern Ireland + Republic of Ireland neutral silhouette
-  const northernIrelandPath = `
-    M 278,204 L 326,198 L 352,218 L 358,248 L 338,268 L 296,268 L 272,246 Z
-  `;
-
-  const irelandSouthTintPath = `
-    M 272,246 L 296,268 L 338,268 L 344,328 L 312,376 L 246,392 L 216,358 L 228,298 L 248,256 Z
-  `;
-
-  const arcD = activeRoute
-    ? `M ${activeRoute.x},${activeRoute.y} Q ${(activeRoute.x + activeRoute.destX) / 2 - 14},${(activeRoute.y + activeRoute.destY) / 2 - 24} ${activeRoute.destX},${activeRoute.destY}`
+  const activeLayout = activeRoute ? CITY_CALLOUT_LAYOUT[activeRoute.id] || { bend: 16 } : null;
+  const activeZone = activeRoute ? RECEPTION_ZONE_SHAPES[activeRoute.id] || RECEPTION_ZONE_SHAPES.london : null;
+  const activeArcD = activeRoute
+    ? buildQuadArc(activeRoute.x, activeRoute.y, activeRoute.destX, activeRoute.destY, activeLayout.bend)
     : '';
 
-  // Keep destination green pill strictly inside the 900x540 viewBox with zero overlap
-  const destLabelShiftY = activeRoute?.id === 'belfast' ? 32 : -24;
-
   return `
-    <svg viewBox="0 0 900 540" class="uk-hf-svg" style="width:100%;height:100%;display:block;touch-action:manipulation;user-select:none;">
+    <svg viewBox="0 0 900 540" class="uk-hf-svg" role="img" aria-label="1939 All-UK Operation Pied Piper Evacuation GIS Map" style="width:100%;height:100%;display:block;touch-action:manipulation;user-select:none;">
       <defs>
-        <linearGradient id="${seaId}" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stop-color="#0f2942"/>
-          <stop offset="60%" stop-color="#163e5c"/>
-          <stop offset="100%" stop-color="#0c1f33"/>
+        <linearGradient id="${seaId}" x1="0" y1="0" x2="0.2" y2="1">
+          <stop offset="0%" stop-color="#0b2239"/>
+          <stop offset="52%" stop-color="#123553"/>
+          <stop offset="100%" stop-color="#091b2e"/>
         </linearGradient>
-        <linearGradient id="${landId}" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#dcecd5"/>
-          <stop offset="55%" stop-color="#c4dfba"/>
-          <stop offset="100%" stop-color="#b0d2a2"/>
+        <linearGradient id="${engId}" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#f7f0de"/>
+          <stop offset="100%" stop-color="#e5dac0"/>
+        </linearGradient>
+        <linearGradient id="${sctId}" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#efe8d5"/>
+          <stop offset="100%" stop-color="#dcd0b4"/>
+        </linearGradient>
+        <linearGradient id="${wlsId}" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#e9eccf"/>
+          <stop offset="100%" stop-color="#d4dab2"/>
         </linearGradient>
         <radialGradient id="${safeGlowId}" cx="50%" cy="50%" r="50%">
           <stop offset="0%" stop-color="rgba(34,197,94,0.52)"/>
+          <stop offset="65%" stop-color="rgba(34,197,94,0.18)"/>
           <stop offset="100%" stop-color="rgba(34,197,94,0)"/>
         </radialGradient>
+        <filter id="${coastGlowId}" x="-8%" y="-8%" width="116%" height="116%">
+          <feDropShadow dx="0" dy="0" stdDeviation="4.5" flood-color="#38bdf8" flood-opacity="0.24"/>
+        </filter>
+        <filter id="${shadowId}" x="-8%" y="-8%" width="116%" height="120%">
+          <feDropShadow dx="0" dy="3" stdDeviation="3.5" flood-color="#020617" flood-opacity="0.55"/>
+        </filter>
       </defs>
 
+      <!-- Deep Atlantic & North Sea Bathymetry + Conic Graticule Grid -->
       <rect width="900" height="540" fill="url(#${seaId})"/>
+      <path d="${UK_HOMEFRONT_GIS.graticule}" fill="none" stroke="rgba(148,163,184,0.16)" stroke-width="0.9" stroke-dasharray="3 4" pointer-events="none"/>
 
-      <!-- Map Legend Card (Top-Left Open Atlantic Space — Zero Overlap!) -->
-      <g transform="translate(18, 18)" pointer-events="none">
-        <rect width="234" height="94" rx="10" fill="rgba(15,23,42,0.92)" stroke="#475569" stroke-width="1.5"/>
-        <text x="14" y="23" font-size="11" font-weight="900" fill="#fde047" letter-spacing="0.5">ALL-UK EVACUATION ATLAS</text>
-        <circle cx="22" cy="44" r="7" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
-        <text x="36" y="48" font-size="10.5" font-weight="700" fill="#f8fafc">7 Target Cities (Tap!)</text>
-        <circle cx="22" cy="66" r="7" fill="#16a34a" stroke="#ffffff" stroke-width="1.5"/>
-        <text x="36" y="70" font-size="10.5" font-weight="700" fill="#dcfce7">Safe Rural Reception Area</text>
-        <line x1="15" y1="83" x2="32" y2="83" stroke="#fbbf24" stroke-width="2.5" stroke-dasharray="4 3"/>
-        <text x="38" y="86" font-size="9.5" font-weight="700" fill="#fde68a">Pied Piper Steam-Train Route</text>
+      <!-- Continental Europe (France, Belgium, Netherlands) Across the Channel -->
+      <path d="${UK_HOMEFRONT_GIS.continent}" fill="#334155" opacity="0.65" stroke="#64748b" stroke-width="1.2" stroke-linejoin="round" pointer-events="none"/>
+
+      <!-- Neutral Southern Ireland (Éire) -->
+      <path d="${UK_HOMEFRONT_GIS.ireland}" fill="#64748b" opacity="0.45" stroke="#94a3b8" stroke-width="1.2" stroke-linejoin="round" pointer-events="none"/>
+
+      <!-- 4 UK Nations + Crown Dependencies with Shallow-Sea Coastal Shelf Halo -->
+      <g filter="url(#${coastGlowId})" pointer-events="none">
+        <path d="${UK_HOMEFRONT_GIS.scotland}" fill="url(#${sctId})" stroke="#475569" stroke-width="1.35" stroke-linejoin="round"/>
+        <path d="${UK_HOMEFRONT_GIS.england}" fill="url(#${engId})" stroke="#334155" stroke-width="1.45" stroke-linejoin="round"/>
+        <path d="${UK_HOMEFRONT_GIS.wales}" fill="url(#${wlsId})" stroke="#475569" stroke-width="1.35" stroke-linejoin="round"/>
+        <path d="${UK_HOMEFRONT_GIS.northernIreland}" fill="url(#${engId})" stroke="#334155" stroke-width="1.4" stroke-linejoin="round"/>
+        <path d="${UK_HOMEFRONT_GIS.islands}" fill="url(#${engId})" stroke="#475569" stroke-width="1.1" stroke-linejoin="round"/>
       </g>
 
-      <!-- Neutral Southern Ireland + Northern Ireland + Great Britain + Islands -->
-      <path d="${irelandSouthTintPath}" fill="#94a3b8" opacity="0.28" stroke="#475569" stroke-width="1.4" stroke-linejoin="round"/>
-      <path d="${northernIrelandPath}" fill="url(#${landId})" stroke="#365314" stroke-width="2.3" stroke-linejoin="round"/>
-      <path d="${greatBritainPath}" fill="url(#${landId})" stroke="#365314" stroke-width="2.6" stroke-linejoin="round"/>
-      <path d="${angleseyPath}" fill="url(#${landId})" stroke="#365314" stroke-width="1.6"/>
-      <path d="${isleOfWightPath}" fill="url(#${landId})" stroke="#365314" stroke-width="1.6"/>
+      <!-- Major UK Rivers & Lough Neagh -->
+      <path d="${UK_HOMEFRONT_GIS.rivers}" fill="none" stroke="#2563eb" stroke-opacity="0.45" stroke-width="1.25" stroke-linecap="round" pointer-events="none"/>
+      <path d="${UK_HOMEFRONT_GIS.lakes}" fill="#38bdf8" fill-opacity="0.55" stroke="#0284c7" stroke-width="0.7" pointer-events="none"/>
 
-      <!-- Subtle Regional Country Watermarks -->
-      <g font-family="Inter, sans-serif" font-size="8.5" font-weight="800" fill="#365314" opacity="0.48" pointer-events="none" letter-spacing="1.2">
-        <text x="424" y="124" text-anchor="middle">SCOTLAND</text>
-        <text x="424" y="382" text-anchor="middle">WALES</text>
-        <text x="536" y="346" text-anchor="middle">ENGLAND</text>
+      <!-- Subtle Ordnance Survey Country & Sea Labels -->
+      <g font-family="Inter, system-ui, sans-serif" font-weight="900" pointer-events="none" letter-spacing="1.4">
+        <text x="534" y="146" text-anchor="middle" font-size="8.5" fill="#475569" opacity="0.72">SCOTLAND</text>
+        <text x="618" y="346" text-anchor="middle" font-size="9" fill="#475569" opacity="0.68">ENGLAND</text>
+        <text x="548" y="394" text-anchor="middle" font-size="8" fill="#3f6212" opacity="0.72">WALES</text>
+        <text x="400" y="330" text-anchor="middle" font-size="8.5" fill="#cbd5e1" opacity="0.62">IRELAND (NEUTRAL)</text>
+        <text x="772" y="514" text-anchor="middle" font-size="9" fill="#cbd5e1" opacity="0.7">FRANCE (CHANNEL COAST)</text>
+      </g>
+      <g font-family="Georgia, serif" font-style="italic" font-weight="700" pointer-events="none">
+        <text x="748" y="182" text-anchor="middle" font-size="12.5" fill="#7dd3fc" opacity="0.68" letter-spacing="1.6">NORTH SEA</text>
+        <text x="512" y="286" text-anchor="middle" font-size="9.5" fill="#7dd3fc" opacity="0.62" letter-spacing="0.8">IRISH SEA</text>
+        <text x="614" y="516" text-anchor="middle" font-size="10.8" fill="#7dd3fc" opacity="0.72" letter-spacing="1.3">ENGLISH CHANNEL</text>
+        <text x="310" y="196" text-anchor="middle" font-size="11.5" fill="#7dd3fc" opacity="0.52" letter-spacing="1.6">ATLANTIC OCEAN</text>
       </g>
 
-      <!-- Sea Labels -->
-      <g font-family="Georgia, serif" font-style="italic" pointer-events="none">
-        <text x="738" y="216" fill="#93c5fd" font-size="13" font-weight="700" text-anchor="middle">NORTH SEA</text>
-        <text x="575" y="522" fill="#93c5fd" font-size="12" font-weight="700" text-anchor="middle">ENGLISH CHANNEL</text>
-        <text x="122" y="328" fill="#93c5fd" font-size="12.5" font-weight="700" text-anchor="middle">ATLANTIC OCEAN</text>
-      </g>
+      <!-- Background Network: All 7 Rural Safe Reception Zones (Soft Green Tint) & Inactive Rail Tracks -->
+      ${routes
+        .map((r) => {
+          const z = RECEPTION_ZONE_SHAPES[r.id] || RECEPTION_ZONE_SHAPES.london;
+          const lay = CITY_CALLOUT_LAYOUT[r.id] || { bend: 16 };
+          const isSel = activeRoute && activeRoute.id === r.id;
+          const arc = buildQuadArc(r.x, r.y, r.destX, r.destY, lay.bend);
+          return `
+            <g pointer-events="none" opacity="${isSel ? '1' : '0.42'}">
+              <ellipse cx="${r.destX}" cy="${r.destY}" rx="${z.rx}" ry="${z.ry}"
+                       transform="rotate(${z.rot} ${r.destX} ${r.destY})"
+                       fill="${isSel ? 'rgba(34,197,94,0.28)' : 'rgba(34,197,94,0.14)'}"
+                       stroke="${isSel ? '#22c55e' : '#15803d'}"
+                       stroke-width="${isSel ? '2.2' : '1.3'}" stroke-dasharray="4 3"/>
+              ${
+                !isSel
+                  ? `<path d="${arc}" fill="none" stroke="#64748b" stroke-width="1.8" stroke-dasharray="3 4"/>`
+                  : ''
+              }
+            </g>
+          `;
+        })
+        .join('')}
 
-      <!-- Active Safe Reception Area Glow + Animated Steam-Train Evacuation Arc -->
+      <!-- Secondary East-Coast Port Marker for Hull (Paired with Route 5 Newcastle & Hull) -->
       ${
-        activeRoute
+        UK_HOMEFRONT_GIS.hullPort
+          ? `<g transform="translate(${UK_HOMEFRONT_GIS.hullPort[0]}, ${UK_HOMEFRONT_GIS.hullPort[1]})" pointer-events="none" opacity="${activeRoute?.id === 'northeast' ? '1' : '0.78'}">
+               <circle r="4.5" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+               <text x="8" y="3.5" font-family="Inter, sans-serif" font-size="8.5" font-weight="800" fill="#fecaca" stroke="#0f172a" stroke-width="2.5" paint-order="stroke">Hull</text>
+             </g>`
+          : ''
+      }
+
+      <!-- Active Selected Route: Glowing Golden Rail Track + Animated Steam-Train Token + Reception Badge -->
+      ${
+        activeRoute && activeZone
           ? `
-        <circle cx="${activeRoute.destX}" cy="${activeRoute.destY}" r="44" fill="url(#${safeGlowId})" pointer-events="none"/>
-        <path id="${routePathId}" d="${arcD}"
-              fill="none" stroke="#f59e0b" stroke-width="4" stroke-dasharray="7 5" stroke-linecap="round" pointer-events="none"/>
-        <circle r="5" fill="#fef08a" stroke="#b45309" stroke-width="1.5" pointer-events="none">
-          <animateMotion dur="2.2s" repeatCount="indefinite" path="${arcD}" />
-        </circle>
-        <g transform="translate(${activeRoute.destX}, ${activeRoute.destY})" pointer-events="none">
-          <circle r="13" fill="#16a34a" stroke="#ffffff" stroke-width="2.4"/>
-          <text y="4.5" text-anchor="middle" font-size="12">🏡</text>
-          <g transform="translate(0, ${destLabelShiftY})">
-            <rect x="-104" y="-10" width="208" height="20" rx="6" fill="rgba(20,83,45,0.95)" stroke="#86efac" stroke-width="1.3"/>
-            <text y="3.5" text-anchor="middle" font-size="9.5" font-weight="800" fill="#dcfce7">${activeRoute.destName}</text>
+        <g pointer-events="none">
+          <circle cx="${activeRoute.destX}" cy="${activeRoute.destY}" r="48" fill="url(#${safeGlowId})"/>
+          <path d="${activeArcD}" fill="none" stroke="rgba(251,191,36,0.32)" stroke-width="8" stroke-linecap="round"/>
+          <path d="${activeArcD}" fill="none" stroke="#fbbf24" stroke-width="3.4" stroke-dasharray="7 5" stroke-linecap="round"/>
+          <g>
+            <circle r="7.5" fill="#fef08a" stroke="#92400e" stroke-width="2"/>
+            <animateMotion dur="2.1s" repeatCount="indefinite" path="${activeArcD}" />
+          </g>
+          <g transform="translate(${activeRoute.destX}, ${activeRoute.destY})">
+            <circle r="12" fill="#16a34a" stroke="#ffffff" stroke-width="2.2"/>
+            <text y="4" text-anchor="middle" font-size="11">🏡</text>
+            <g transform="translate(${activeZone.labelDx}, ${activeZone.labelDy})" filter="url(#${shadowId})">
+              <rect x="-88" y="-10.5" width="176" height="21" rx="6" fill="#052e16" stroke="#4ade80" stroke-width="1.5"/>
+              <text y="3.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.2" font-weight="900" fill="#dcfce7">✓ ${activeZone.shortDest}</text>
+            </g>
           </g>
         </g>
       `
           : ''
       }
 
-      <!-- All 7 Interactive UK Target-City Nodes (Generous r=28 Touch Hit-Targets!) -->
+      <!-- All 7 Interactive UK Target-City Nodes (Collision-Free Leader Callouts + Visited Checkmarks!) -->
       ${routes
         .map((r) => {
           const isSel = activeRoute && activeRoute.id === r.id;
-          const shortName = r.city.split('&')[0].split(',')[0].replace('Shipyards', '').trim();
-          const pillW = Math.max(76, shortName.length * 6.8 + 18);
-          const labelRight =
-            r.id === 'northeast' || r.id === 'london' || r.id === 'southcoast' || r.id === 'midlands';
-          const labelOffsetX = labelRight ? pillW / 2 + 16 : -(pillW / 2 + 16);
-          const labelOffsetY = r.id === 'belfast' ? -20 : 0;
-          const finalOffsetX = r.id === 'belfast' ? 0 : labelOffsetX;
+          const seen = visitedSet.has(r.id);
+          const lay = CITY_CALLOUT_LAYOUT[r.id] || { short: r.city, dx: 64, dy: 0 };
+          const labelText = seen && !isSel ? `✓ ${lay.short}` : lay.short;
+          const pillW = Math.max(82, labelText.length * 6.3 + 18);
 
           return `
             <g class="uk-evac-city-node" data-route-id="${r.id}" transform="translate(${r.x}, ${r.y})" style="cursor:pointer;">
-              <circle r="28" fill="transparent"/>
-              ${isSel ? `<circle r="21" fill="rgba(251,191,36,0.28)" stroke="#fde047" stroke-width="3"/>` : ''}
-              <circle r="${isSel ? '13' : '10.5'}" fill="${isSel ? '#ea580c' : '#dc2626'}" stroke="#ffffff" stroke-width="2.2"/>
-              <text y="4" text-anchor="middle" font-size="10.5" pointer-events="none">🚂</text>
-              <g transform="translate(${finalOffsetX}, ${labelOffsetY})" pointer-events="none">
+              <circle r="27" fill="transparent"/>
+              <line x1="0" y1="0" x2="${(lay.dx * 0.62).toFixed(1)}" y2="${(lay.dy * 0.62).toFixed(1)}"
+                    stroke="${isSel ? '#fde047' : '#cbd5e1'}" stroke-width="${isSel ? '2' : '1.2'}" pointer-events="none"/>
+              ${
+                isSel
+                  ? `<circle r="19" fill="rgba(251,191,36,0.26)" stroke="#fde047" stroke-width="2.6"/>`
+                  : !seen
+                    ? `<circle r="15" fill="none" stroke="rgba(251,191,36,0.55)" stroke-width="1.5" stroke-dasharray="3 3"/>`
+                    : ''
+              }
+              <circle r="${isSel ? '11.5' : '9.5'}"
+                      fill="${isSel ? '#ea580c' : seen ? '#15803d' : '#dc2626'}"
+                      stroke="#ffffff" stroke-width="2.1"/>
+              <text y="3.6" text-anchor="middle" font-size="9.5" pointer-events="none">${isSel ? '🚂' : seen ? '✓' : '🚂'}</text>
+              <g transform="translate(${lay.dx}, ${lay.dy})" filter="url(#${shadowId})">
                 <rect x="${-pillW / 2}" y="-9.5" width="${pillW}" height="19" rx="6"
-                      fill="${isSel ? '#7c2d12' : 'rgba(15,23,42,0.92)'}"
-                      stroke="${isSel ? '#fde047' : '#64748b'}" stroke-width="1.3"/>
-                <text y="3.5" text-anchor="middle" font-size="9.8" font-weight="800" fill="#ffffff">${shortName}</text>
+                      fill="${isSel ? '#9a3412' : seen ? 'rgba(20,83,45,0.94)' : 'rgba(15,23,42,0.94)'}"
+                      stroke="${isSel ? '#fde047' : seen ? '#86efac' : '#94a3b8'}" stroke-width="1.35"/>
+                <text y="3.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.4" font-weight="800" fill="#ffffff" pointer-events="none">${labelText}</text>
               </g>
             </g>
           `;
         })
         .join('')}
+
+      <!-- Top-Left War Rooms Atlas Key & Active Journey Summary (Open Atlantic Space — 0% Coastline Overlap!) -->
+      <g transform="translate(14, 14)" pointer-events="none" filter="url(#${shadowId})">
+        <rect width="236" height="114" rx="10" fill="rgba(15,23,42,0.93)" stroke="#f59e0b" stroke-width="1.5"/>
+        <rect x="0" y="0" width="236" height="24" rx="10" fill="rgba(180,83,9,0.38)"/>
+        <text x="12" y="16" font-family="Inter, sans-serif" font-size="9.8" font-weight="900" fill="#fde047" letter-spacing="0.6">🗺️ 1939 PIED PIPER GIS ATLAS</text>
+        <circle cx="20" cy="40" r="6" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+        <text x="33" y="43.5" font-family="Inter, sans-serif" font-size="9.8" font-weight="700" fill="#f8fafc">Industrial / Port Target City (Tap!)</text>
+        <ellipse cx="20" cy="61" rx="8" ry="5.5" fill="rgba(34,197,94,0.32)" stroke="#4ade80" stroke-width="1.5" stroke-dasharray="3 2"/>
+        <text x="33" y="64.5" font-family="Inter, sans-serif" font-size="9.8" font-weight="700" fill="#dcfce7">Safer Rural Reception Counties</text>
+        <line x1="12" y1="81" x2="28" y2="81" stroke="#fbbf24" stroke-width="2.8" stroke-dasharray="5 3"/>
+        <text x="33" y="84.5" font-family="Inter, sans-serif" font-size="9.5" font-weight="700" fill="#fde68a">Special Evacuation Steam Train</text>
+        <text x="12" y="103" font-family="Inter, sans-serif" font-size="9.2" font-weight="800" fill="#93c5fd">Explored: ${visitedSet.size} of ${routes.length} UK regions (Goal: 2+)</text>
+      </g>
+
+      <!-- Bottom-Left Ordnance Survey Compass Rose & 100-Mile Scale Bar -->
+      <g transform="translate(52, 478)" pointer-events="none">
+        <circle r="20" fill="rgba(15,23,42,0.86)" stroke="#f59e0b" stroke-width="1.5"/>
+        <polygon points="0,-15 4,-3 0,-6 -4,-3" fill="#fde047"/>
+        <polygon points="0,15 4,3 0,6 -4,3" fill="#94a3b8"/>
+        <polygon points="-15,0 -3,-4 -6,0 -3,4" fill="#94a3b8"/>
+        <polygon points="15,0 3,-4 6,0 3,4" fill="#94a3b8"/>
+        <text y="-24" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" font-weight="900" fill="#fde047">N</text>
+        <g transform="translate(34, 6)">
+          <line x1="0" y1="0" x2="68" y2="0" stroke="#cbd5e1" stroke-width="2"/>
+          <line x1="0" y1="-4" x2="0" y2="4" stroke="#cbd5e1" stroke-width="2"/>
+          <line x1="68" y1="-4" x2="68" y2="4" stroke="#cbd5e1" stroke-width="2"/>
+          <text x="34" y="-6" text-anchor="middle" font-family="Inter, sans-serif" font-size="8.5" font-weight="800" fill="#cbd5e1">100 miles</text>
+        </g>
+      </g>
     </svg>
   `;
 }

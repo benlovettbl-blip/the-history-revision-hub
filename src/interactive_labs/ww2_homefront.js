@@ -284,12 +284,29 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   const fsController = bindNativeFullscreenSync({
     getShellEl: () => shellEl,
     onExternalExit: () => {
-      if (state.isFullscreen && !ctx.onCloseModal) {
+      if (state.isFullscreen) {
         state.isFullscreen = false;
+        ctx.onFullscreenChange?.(false);
         updateLab(false);
       }
     },
   });
+
+  function resolveMusicModeForState() {
+    if (state.step === 'cover') return 'platform';
+    if (state.step === 'beat0') return state.beat0Tab === 'map' ? 'pied_piper' : 'platform';
+    if (state.step === 'beat1') return 'pastoral';
+    if (state.step === 'beat2') return state.blackoutShut ? 'shelter_cosy' : 'nightwatch';
+    if (state.step === 'beat3') return 'wireless_swing';
+    if (state.step === 'beat4') {
+      return data && state.solvedCipherIds.size >= data.bletchleyClues.length ? 'veday' : 'bletchley';
+    }
+    return 'veday';
+  }
+
+  function syncMusicMode() {
+    audio.setMode(resolveMusicModeForState());
+  }
 
   function say(avatarKey, speakerName, text, voClipId = null) {
     state.avatarKey = avatarKey;
@@ -325,7 +342,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     state.resetArmed = false;
 
     if (nextStep === 'cover') {
-      audio.setMode('story');
       say(
         'clara',
         'Clara (Age 10) • 1939 Evacuee Narrator',
@@ -333,7 +349,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         'cover_clara_welcome',
       );
     } else if (nextStep === 'beat0') {
-      audio.setMode('story');
       say(
         'guard',
         'Mr Higgins • Platform Four Railway Guard',
@@ -343,7 +358,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         'beat0_guard_suitcase',
       );
     } else if (nextStep === 'beat1') {
-      audio.setMode('story');
       say(
         'farmer',
         'Mr Oakley • Meadowbrook Farm Host',
@@ -351,7 +365,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         'beat1_farmer_welcome',
       );
     } else if (nextStep === 'beat2') {
-      audio.setMode('nightwatch');
       say(
         'warden',
         'ARP Warden Miller • Night Patrol (1940)',
@@ -361,7 +374,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         state.blackoutShut ? 'beat2_blackout_shut' : 'beat2_warden_blackout',
       );
     } else if (nextStep === 'beat3') {
-      audio.setMode('story');
       say(
         'grocer',
         'Mrs Wilkins • Village Grocer (1941)',
@@ -369,7 +381,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         'beat3_grocer_welcome',
       );
     } else if (nextStep === 'beat4') {
-      audio.setMode('story');
       say(
         'wren',
         'Leading Wren Miss Bennett • Bletchley Park Hut 8',
@@ -377,7 +388,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         'beat4_wren_welcome',
       );
     } else if (nextStep === 'beat5') {
-      audio.setMode('veday');
       say(
         'clara',
         'Clara • VE Day (8 May 1945)',
@@ -390,6 +400,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       }
     }
 
+    syncMusicMode();
     saveSession();
     preloadNextStage(nextStep);
     updateLab(true);
@@ -428,7 +439,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     state.fcHadWrong.clear();
     state.iwmBounty1 = null;
     state.iwmBounty2 = null;
-    audio.setMode('story');
+    syncMusicMode();
     say(
       'clara',
       'Clara (Age 10) • 1939 Evacuee Narrator',
@@ -533,9 +544,9 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
                </button>`
             : ''
         }
-        <button type="button" class="ww2-icon-btn ${!audio.muted ? 'is-active' : ''}" id="ww2-mute-btn" title="Toggle 1940s Music & Character Voices">
-          <i class="fa-solid ${audio.muted ? 'fa-volume-xmark' : 'fa-volume-high'}"></i>
-          <span class="ww2-btn-lbl">${audio.muted ? 'Muted' : 'Sound'}</span>
+        <button type="button" class="ww2-icon-btn ${!audio.muted ? 'is-active' : ''}" id="ww2-mute-btn" title="1940s Soundtrack: ${audio.getActiveTrackTitle()} — Click to Mute/Unmute">
+          <i class="fa-solid ${audio.muted ? 'fa-volume-xmark' : 'fa-music'}"></i>
+          <span class="ww2-btn-lbl">${audio.muted ? 'Muted' : 'Music'}</span>
         </button>
         ${
           state.score > 0 || state.step !== 'cover'
@@ -750,8 +761,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           <span style="font-size:0.73rem;font-weight:900;color:#fbbf24;text-transform:uppercase;">
             🚂 ALL-UK OPERATION PIED PIPER ROUTES
           </span>
-          <span style="font-size:0.75rem;font-weight:800;color:#86efac;">
-            ${state.visitedRoutes.size}/${totalRoutes} Regions Explored
+          <span style="font-size:0.75rem;font-weight:800;color:${state.visitedRoutes.size >= 2 ? '#86efac' : '#fde68a'};">
+            ${state.visitedRoutes.size}/${totalRoutes} Explored (Goal: 2+)
           </span>
         </div>
 
@@ -768,6 +779,10 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           <p style="margin:0;font-size:0.79rem;color:#cbd5e1;line-height:1.36;">
             <strong>Journey:</strong> ${activeRoute.receptionNote}
           </p>
+        </div>
+
+        <div style="font-size:0.74rem;color:#93c5fd;font-weight:700;margin-bottom:6px;">
+          🎯 Tap at least <strong>2 target cities</strong> on the UK map or below (+8 pts each):
         </div>
 
         <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;">
@@ -807,9 +822,9 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           </span>
         </div>
 
-        <p style="margin:0 0 8px;font-size:0.81rem;color:#cbd5e1;line-height:1.36;">
-          Tap Farmer Oakley, Captain the horse, and Lotte on the doorstep—then answer two historian questions:
-        </p>
+        <div class="ww2-clue-note">
+          📜 <strong>1939 Billeting Notebook:</strong> Tap Lotte &amp; Farmer Oakley in the picture! Nearly <strong>10,000 Kindertransport refugee children</strong> escaped Nazi persecution in Europe alone without their parents. Meanwhile, because few bombs fell on Britain during the quiet first winter—nicknamed the <strong>‘Phoney War’</strong>—thousands of homesick British evacuees drifted back home before the 1940 Blitz!
+        </div>
 
         <div style="margin-bottom:10px;">
           <div style="font-size:0.8rem;font-weight:800;color:#fef3c7;margin-bottom:5px;">
@@ -906,6 +921,9 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           .join('')}
 
         <div style="margin-top:9px;padding-top:9px;border-top:1px solid #334155;">
+          <div class="ww2-clue-note" style="margin-bottom:7px;">
+            🏠 <strong>Warden’s Shelter Guide:</strong> Garden families dug outdoor steel <strong>Anderson shelters</strong>, while city families in upstairs flats used indoor steel table-cages called <strong>Morrison shelters</strong> or slept on <strong>Underground</strong> Tube platforms!
+          </div>
           <div style="font-size:0.8rem;font-weight:800;color:#fef3c7;margin-bottom:5px;">
             Quick Check: What if a city family lived in an upstairs flat with NO garden?
           </div>
@@ -947,7 +965,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             </span>
           </div>
           <div style="font-size:0.77rem;color:#451a03;margin-top:3px;">
-            Tap all <strong>4 weekly food portions</strong> on Mrs Wilkins’s wooden counter to fill your basket!
+            Tap all <strong>4 weekly food portions</strong> on Mrs Wilkins’s counter! Rationing started in Jan 1940 so rich and poor shared scarce imports fairly—and carried on for years after the war ended.
           </div>
         </div>
 
@@ -970,6 +988,11 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           .join('')}
 
         <div style="margin-top:8px;padding-top:8px;border-top:1px solid #334155;">
+          ${
+            !state.rationBasket.has('woolton_veg')
+              ? `<div style="font-size:0.74rem;color:#93c5fd;font-weight:700;margin-bottom:4px;">💡 Tip: Tap the carrots, potatoes &amp; Woolton Pie on the counter for a clue!</div>`
+              : ''
+          }
           <div style="font-size:0.8rem;font-weight:800;color:#fef3c7;margin-bottom:5px;">
             Why didn’t Mrs Wilkins snip a coupon for the carrots, potatoes &amp; Woolton Pie?
           </div>
@@ -994,13 +1017,20 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     `;
   }
 
-  function renderRotorCabinetHTML() {
+  function renderRotorCabinetHTML(activeClueId = '') {
     const locked = areRotorsLocked();
+    const isStep2 = activeClueId === 'bc2';
+    const statusText = locked
+      ? '🟢 ROTORS LOCKED (B - R - K)!'
+      : isStep2
+        ? '🔴 NOW SPIN DIALS TO B - R - K!'
+        : '⚙️ READY FOR STEP 2 (TARGET: B - R - K)';
+    const statusCol = locked ? '#86efac' : isStep2 ? '#fca5a5' : '#fde68a';
     return `
-      <div class="ww2-rotor-cabinet">
+      <div class="ww2-rotor-cabinet" style="${isStep2 && !locked ? 'border-color:#fbbf24;box-shadow:0 0 14px rgba(251,191,36,0.28);' : ''}">
         <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:0.72rem;font-weight:900;">
-          <span style="color:#fde047;">⚙️ BRASS ROTOR DIALS (TARGET SETTING: B - R - K)</span>
-          <span style="color:${locked ? '#86efac' : '#fca5a5'};">${locked ? '🟢 ROTORS LOCKED!' : '🔴 SPIN TO B - R - K'}</span>
+          <span style="color:#fde047;">⚙️ BRASS ENIGMA ROTOR DIALS</span>
+          <span style="color:${statusCol};">${statusText}</span>
         </div>
         <div class="ww2-rotor-grid">
           ${state.rotors
@@ -1040,11 +1070,14 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         ${
           !allCracked
             ? `
-          <div style="font-size:0.75rem;font-weight:800;color:#93c5fd;margin-top:4px;">
+          <div class="ww2-clue-note" style="margin-bottom:6px;">
+            ⚓ <strong>Hut 8 Intelligence Brief:</strong> Over <strong>75% of Bletchley Park’s staff were women</strong>. Using daily <strong>6:00 AM German weather forecasts</strong>, Hut 8 locked rotor settings to track <strong>Atlantic U-boat wolfpacks</strong>—and kept their Official Secrets Act vow for <strong>30 years (until the 1970s)</strong>!
+          </div>
+          <div style="font-size:0.75rem;font-weight:800;color:#93c5fd;margin-top:2px;">
             ${activeClue.stepBadge}
           </div>
           <div class="ww2-cipher-strip">${activeClue.cipherLine}</div>
-          ${renderRotorCabinetHTML()}
+          ${renderRotorCabinetHTML(activeClue.id)}
           <p style="margin:0 0 9px;font-size:0.83rem;color:#f1f5f9;font-weight:700;line-height:1.36;">
             ${activeClue.question}
           </p>
@@ -1061,12 +1094,12 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             .join('')}
         `
             : `
-          ${renderRotorCabinetHTML()}
+          ${renderRotorCabinetHTML('done')}
           <div class="ww2-cipher-strip" style="border-color:#22c55e;color:#86efac;">
             ✅ ULTRA ALERT SENT: ATLANTIC FOOD CONVOY SAFELY REROUTED AROUND U-BOATS!
           </div>
           <p style="margin:0 0 10px;font-size:0.83rem;color:#dcfce7;line-height:1.42;">
-            Brilliant work! Over <strong>75% of Bletchley Park’s 10,000 staff were women</strong>—and they kept their life-saving work secret until the 1970s! Meanwhile, look through the open hut doors on the right: church bells are ringing for <strong>8 May 1945</strong>!
+            Brilliant work! Over <strong>75% of Bletchley Park’s 10,000 staff were women</strong>—and they kept their life-saving work secret until the 1970s! Meanwhile, listen: parish church bells are ringing outside for <strong>8 May 1945</strong>!
           </p>
           <button type="button" class="ww2-next-btn" data-step-jump="beat5">
             🎉 Step Outside into VE Day 1945 &amp; Live IWM Archive! <i class="fa-solid fa-arrow-right"></i>
@@ -1104,6 +1137,10 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           <span style="font-size:0.75rem;font-weight:800;color:#86efac;">
             Verified: ${data.factChecks.filter((f) => state.factAnswers[f.id] === f.isTrue).length} / ${data.factChecks.length}
           </span>
+        </div>
+
+        <div class="ww2-clue-note" style="margin-bottom:10px;">
+          🎊 <strong>8 May 1945 Clue:</strong> Street parties celebrated the end of war in Europe (though war in Asia continued until August 1945)—and because ships and farms were badly damaged, <strong>British food rationing did NOT end on VE Day</strong>; families still used ration books into the 1950s!
         </div>
 
         <div class="ww2-stamp-grid">
@@ -1174,6 +1211,16 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             <i class="fa-solid fa-magnifying-glass"></i> Search IWM for Your Town <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.7rem;"></i>
           </a>
         </div>
+
+        <details style="background:rgba(15,23,42,0.72);border:1px solid rgba(56,189,248,0.45);border-radius:10px;padding:8px 12px;margin-bottom:11px;">
+          <summary style="cursor:pointer;font-size:0.78rem;font-weight:800;color:#7dd3fc;">
+            📜 Using a Classroom Tablet with Restricted Web Access? Tap to Read the Two Official IWM File Extracts
+          </summary>
+          <div style="margin-top:7px;font-size:0.79rem;color:#e2e8f0;line-height:1.42;display:grid;gap:6px;">
+            <div>• <strong>IWM Evacuated Children Record:</strong> Under <em>Operation Pied Piper</em> (beginning 1 September 1939), <strong>1.5 million</strong> schoolchildren, mothers with infants, and teachers were evacuated from British cities in the first <strong>three days</strong>.</div>
+            <div>• <strong>IWM Wartime Rationing Record:</strong> Food rationing began in January 1940 and lasted 14 years—finally ending completely in <strong>July 1954</strong> when meat came off ration nine years after VE Day.</div>
+          </div>
+        </details>
 
         <div class="ww2-stamp-grid">
           <div style="background:rgba(15,23,42,0.85);border:1.5px solid #334155;border-radius:11px;padding:11px 12px;">
@@ -1385,6 +1432,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             ${renderUkHomeFrontMapSVG({
               routes: data.evacuationRoutes,
               selectedRouteId: state.selectedRouteId,
+              visitedRoutes: state.visitedRoutes,
               svgUid: instanceSvgUid,
             })}
           </div>
@@ -1809,6 +1857,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           mapSlot.innerHTML = renderUkHomeFrontMapSVG({
             routes: data.evacuationRoutes,
             selectedRouteId: state.selectedRouteId,
+            visitedRoutes: state.visitedRoutes,
             svgUid: instanceSvgUid,
           });
         }
@@ -1843,6 +1892,22 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   `;
   shellEl = stageEl.querySelector('.ww2-shell');
   scrollLock.bindShellPointerGuards(shellEl);
+
+  // Unlock & start 1940s background soundtrack on first pointer/keyboard gesture anywhere inside the lab
+  shellEl.addEventListener(
+    'pointerdown',
+    (e) => {
+      if (!e.target.closest('#ww2-mute-btn')) {
+        audio.wake(resolveMusicModeForState());
+      }
+    },
+    { passive: true },
+  );
+  shellEl.addEventListener('keydown', (e) => {
+    if (!e.target.closest('#ww2-mute-btn')) {
+      audio.wake(resolveMusicModeForState());
+    }
+  });
 
   shellEl.addEventListener('change', (e) => {
     const sel = e.target.closest('#ww2-mobile-step-select');
@@ -1918,6 +1983,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       state.isFullscreen = !state.isFullscreen;
       if (state.isFullscreen) fsController.requestFs();
       else fsController.exitFs();
+      ctx.onFullscreenChange?.(state.isFullscreen);
       updateLab(false);
       return;
     }
@@ -1991,6 +2057,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     if (b0Switch) {
       const nextTab = b0Switch.getAttribute('data-b0-switch');
       state.beat0Tab = nextTab;
+      syncMusicMode();
       if (nextTab === 'map') {
         audio.trainWhistle();
         say(
@@ -2219,6 +2286,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
 
       if (checkId === 'blackout') {
         state.blackoutShut = true;
+        syncMusicMode();
         audio.chimeSuccess();
         activeFx?.burst(17, 50, 'green');
         say(
@@ -2322,7 +2390,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         state.rationBasket.add(id);
         addPoints(10);
       }
-      audio.suitcaseClick();
+      audio.rationScaleClink();
       activeFx?.burst(id === 'woolton_veg' ? 84 : 45, 76, 'green');
       if (id === 'woolton_veg') {
         say('clara', `Unrationed: ${item.name}`, item.fact, 'beat3_woolton_pie');
@@ -2368,7 +2436,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       if (wheel) {
         const curPos = Math.max(0, wheel.indexOf(state.rotors[rIdx]));
         state.rotors[rIdx] = wheel[(curPos + dir + wheel.length) % wheel.length];
-        audio.morseBeep();
+        audio.rotorClick();
         if (areRotorsLocked() && !state.rotorsRewarded) {
           state.rotorsRewarded = true;
           addPoints(15);
@@ -2456,6 +2524,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           state.cipherStepIdx += 1;
           say('wren', 'Leading Wren Miss Bennett', clue.explain);
         } else {
+          syncMusicMode();
           say('wren', 'Enigma Convoy Alert Decoded!', clue.explain, 'beat4_code_cracked');
         }
       } else {
@@ -2545,6 +2614,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     .then((json) => {
       if (unmounted) return;
       data = json;
+      syncMusicMode();
       preloadNextStage(state.step);
       updateLab(false);
     })

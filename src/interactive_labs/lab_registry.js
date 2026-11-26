@@ -151,15 +151,36 @@ export async function openInteractiveClassroomLab(labId, preferFullscreen = true
     modal.remove();
   };
 
+  const applyModalWindowMode = (isFs) => {
+    modal.style.padding = isFs ? '0' : '16px';
+    const stg = modal.querySelector('#hh-classroom-lab-stage');
+    if (stg) stg.style.maxWidth = isFs ? 'none' : '1180px';
+  };
+
   window.addEventListener('keydown', onKeyDown);
   modal.addEventListener('click', (e) => {
     if (e.target === modal && !preferFullscreen) closeModal();
   });
 
+  if (preferFullscreen && modal.requestFullscreen && !document.fullscreenElement) {
+    modal.requestFullscreen().catch(() => {});
+  }
+
   const mountFn = await entry.loadMount();
   const stageEl = modal.querySelector('#hh-classroom-lab-stage');
   if (stageEl) {
-    activeLabCleanup = mountFn(stageEl, {}, { autoFullscreen: preferFullscreen, onCloseModal: closeModal });
+    activeLabCleanup = mountFn(
+      stageEl,
+      {},
+      {
+        autoFullscreen: preferFullscreen,
+        onCloseModal: closeModal,
+        onFullscreenChange: (isFs) => {
+          preferFullscreen = Boolean(isFs);
+          applyModalWindowMode(preferFullscreen);
+        },
+      },
+    );
   }
 }
 

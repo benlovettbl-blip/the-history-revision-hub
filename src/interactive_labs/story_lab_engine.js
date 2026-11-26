@@ -182,7 +182,14 @@ export function bindNativeFullscreenSync({ getShellEl, onExternalExit }) {
   let enteredBrowserFs = false;
 
   const onFsChange = () => {
-    if (enteredBrowserFs && typeof document !== 'undefined' && !document.fullscreenElement) {
+    if (typeof document === 'undefined') return;
+    const fsEl = document.fullscreenElement;
+    if (fsEl) {
+      const shell = getShellEl();
+      if (shell && (fsEl === shell || fsEl.contains(shell))) {
+        enteredBrowserFs = true;
+      }
+    } else if (enteredBrowserFs) {
       enteredBrowserFs = false;
       onExternalExit?.();
     }
