@@ -23,8 +23,9 @@ Activate this skill whenever authoring, upgrading, validating, syncing, or compi
      - **6-Enquiry Units (`9` KS2/KS3 units) -> `8` Pages (`pdf.numpages === 8`):** Aspect-Adaptive Storybook Cover + Sign-Off Passport (p. 1), Stories 1–6 with corner Audio QR codes (pp. 2–7), Parent/Tutor Conversation Guide & Bonus 6-Story Quick Recall Check (p. 8).
      - **7-Enquiry Units (`the_shoah`, `cold_war`) -> `12` Pages (`pdf.numpages === 12`):** Cover + 2-Column 7-Story Directory (p. 1), Voices of the Era & Master Phonetic Vocabulary Guide (p. 2), Stories 1–7 (pp. 3–9), 21-Question Story Check Quiz Spread & Parent/Tutor Guide + Full 21-Answer Key (pp. 10–12).
      - **11-Enquiry Unit (`ks2_ww2`) -> `16` Pages (`pdf.numpages === 16`):** Panoramic Cover + 2-Column 11-Story Directory (p. 1), Home Reading Passport & Wartime Voices Guide (p. 2), Stories 1–11 (pp. 3–13), 2-Page Facing 33-Question Story Check Quiz Spread (pp. 14–15), Parent/Carer Guide & Full 33-Answer Key (p. 16).
-4. **Canonical Source of Truth:**
-   - Author via `data/literary_companions/<unit_id>.json` and sync into `units/<unit_id>/data.js` (`public/units/<unit_id>/data.js`, `data/<unit_id>.json`, `public/data/<unit_id>.json`, and `public/database.json`) using `node scripts/sync_literary_companion.cjs <unit_id>`.
+4. **Canonical Source of Truth & Clean `/reading/<slug>/` Permalinks:**
+   - Author via `data/literary_companions/<unit_id>.json` and sync into `units/<unit_id>/data.js` (`public/units/<unit_id>/data.js`, `data/<unit_id>.json`, `public/data/<unit_id>.json`, `public/data/database_index.json`, and `public/database.json`) using `node scripts/sync_literary_companion.cjs <unit_id>` followed by `node scripts/build_database.cjs`.
+   - Every companion automatically receives a clean human-readable permalink `/reading/<slug>/` (via `getReadingSeoSlugList` / `buildCleanReadingPageTitle` in `src/data/seo_routes.js`), pre-rendered into `dist/reading/<slug>/index.html` and added automatically to `sitemap.xml` during `npm run build` with a story-first `<title>` and `og:title` (`<Book Title> (<Author>) — Read-Aloud Companion`) so pasting into Edge/Teams/Word/WhatsApp unfurls the poem/story title rather than the site name, while keeping legacy `/?view=reading&unit=<unit_id>&lesson=<1..N>` homework links 100% backward-compatible.
 
 ---
 

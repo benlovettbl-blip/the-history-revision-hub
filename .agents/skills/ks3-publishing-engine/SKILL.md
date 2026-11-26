@@ -15,14 +15,19 @@ Activate this skill whenever creating, updating, refactoring, or syncing a Key S
 
 ---
 
-## 1. Mandatory Workbook-to-Narrative Stage Synchronization (Zero Classroom Blindness)
+## 1. Mandatory Workbook-to-Narrative Stage Synchronization & Counsell Craft
 To guarantee teachers and pupils can immediately match the 5 workbook enquiry stages with the reading paragraphs projected on the whiteboard:
-1. **Strict 1-to-1 Alignment Invariant:** `lesson.narrative_blocks` and `lesson.workbook_stages` in `units/<unit_id>/data.js` MUST both contain **exactly 5 items** in 1-to-1 correspondence (Block 1 <-> Stage 1 ... Block 5 <-> Stage 5; zero orphan intro blocks).
-2. **Word Budget Calibration (KS3 Ages 11–14):** Every `narrative_blocks[i]` must be **80–110 words** (strict cap `120w`), structured as 2 punchy paragraphs (`[X.1]`, `[X.2]`, ~40–55 words each) naturally incorporating the 3 Trigger Terms from `workbook_stages[i]`.
-3. **Workbook Stage Paragraph Indexing (`paraRef`):**
+1. **Strict 1-to-1 Alignment Invariant:** `lesson.narrative_blocks`, `lesson.workbook_stages`, and `lesson.causal_domino_spine.stages` in `units/<unit_id>/data.js` MUST all contain **exactly 5 items** in 1-to-1 correspondence (Block 1 <-> Stage 1 ... Block 5 <-> Stage 5; zero orphan intro blocks). *(Note: Legacy 3-trigger-word columns/chips are retired.)*
+2. **Word Budget & Christine Counsell Storytelling (KS3 Ages 11–14):**
+   - Every `narrative_blocks[i]` must be **80–110 words** (strict cap `120w`), structured as **exactly 2 punchy paragraphs** (`[X.1]`, `[X.2]`, ~40–55 words each).
+   - **Vivid Particularity over Dry Summary:** Open or anchor blocks with concrete human micro-details, period irony, or short authentic quotes that illuminate the historical mechanism—never goofy jokes, never dry encyclopaedic lists, strictly past tense (zero historical-present tense scars), and zero `&` ampersands in narrative prose or headings. Maintain solemn register on atrocity/catastrophe enquiries (`the_shoah`, famines, massacres).
+   - **Zero Visible `"Hinge"` Jargon:** Never display the word `"Hinge"` in visible UI/teacher/pupil headings; use `"Class Discussion"` or `"Quick Check"`.
+3. **Co-Adaptation & Glossary Completeness:**
+   - Whenever `narrative_blocks[i]` changes, verify its paired `workbook_stages[i].question` (`<= 82 chars`, zero answer giveaways), `causal_domino_spine`, and `public/data/stage_answers/<unit_id>.json` (`sync_stage_questions.cjs` + `sync_spotlight_stage_answers.cjs` + `audit_narrative_question_answerability.cjs <unit_id> --strict`).
+   - Verify `data/glossary/<unit_id>.json` exists and is populated (20–25 terms), and check `src/scheme_of_work_data.js` + `data/teacher_guidance/<unit_id>.json` so unit titles/date ranges match `data.js`.
+4. **Workbook Stage Paragraph Indexing (`paraRef`):**
    - Every stage in `workbook_stages` and the workbook renderer MUST define `para_ref` / `paraRef` (e.g. `'[1.1–1.2]'`).
-   - When `lesson.workbook_stages` is present, `src/engine/lesson_renderer.js` renders the interactive **5-Stage Chronological Enquiry Spine** with **"Jump to Text"** smooth-scroll highlighting.
-4. **Automated Audit Gate:** Enforced via `npm run audit:stages` (`node scripts/detailed_stage_inspection.cjs`) and `node scripts/audit_ks3_stage_sync.cjs <unit_id>`.
+5. **Automated Audit Gate:** Enforced via `npm run audit:stages` (`node scripts/detailed_stage_inspection.cjs` + `audit_narrative_question_answerability.cjs --strict` + `sync_spotlight_stage_answers.cjs --all --audit`).
 
 ---
 
@@ -53,12 +58,16 @@ To guarantee teachers and pupils can immediately match the 5 workbook enquiry st
 
 ---
 
-## 4. Safe Unit Synchronization Pipeline
-Whenever modifying or compiling a KS3 unit, run the unit-scoped pipeline (never global `npm run sync` unless explicitly requested, and never overwrite classroom-frozen units mid-term):
+## 4. Safe Unit Synchronization, Studio Audio & Full-Colour Textbook Pipeline
+Whenever modifying or compiling a KS3 unit, run the unit-scoped pipeline (never global `npm run sync` unless explicitly requested, and **never overwrite prose or PDFs of classroom-frozen units** where desk copies are already printed):
 ```bash
+node scripts/sync_unit_studio_media.mjs <unit_id>   # Required whenever narrative_blocks prose changes!
 node scripts/sync_unit.cjs <unit_id>
+node scripts/compile_master_textbook.cjs <unit_id>  # Re-compile Full-Colour Master Textbook AFTER sync_unit.cjs!
+node scripts/build_database.cjs                     # Syncs public/data/<unit_id>.json + database_index.json slugs
+node scripts/check_overflows.cjs --unit=<unit_id> --strict
 npm run audit:stages
 node scripts/verify_sanitization.cjs
 node scripts/verify_images.cjs
 ```
-`scripts/sync_unit.cjs <unit_id>` validates syntax, refreshes `database.json`, compiles canonical unit PDFs (`public/pdfs/<unit_id>_pupil_workbook.pdf` and `<unit_id>_textbook.pdf`), updates the workbook page map, and runs `check_overflows.cjs`.
+> **Critical Ordering Note:** `scripts/sync_unit.cjs <unit_id>` invokes legacy monochrome `render_<unit_id>_textbook.cjs` if present. Always run `node scripts/compile_master_textbook.cjs <unit_id>` **after** `sync_unit.cjs` so `public/pdfs/<unit_id>_textbook.pdf` retains its Full-Colour Editorial Master Textbook layout (`97% ✅ OPTIMAL`, `>= 22px` lesson clearance / `>= 40px` cover clearance across `deviceScaleFactor: 1` and `2`).
