@@ -422,7 +422,7 @@ export const SCHEMES_OF_WORK_DATA = {
     "unitId": "industrialisation_and_empire",
     "yearGroup": "Key Stage 3",
     "keyStage": "KS3",
-    "title": "The Industrial Revolution (1750–1900)",
+    "title": "The Industrial Revolution (1750–1872)",
     "subtitle": "Steam Power, Funtley Ironworks, The Factory System, Urban Sanitation, Chartism & The Expansion of Democracy",
     "overarchingEnquiry": "How did steam, factories, and the fight for democracy transform Britain?",
     "textbookPdf": "/pdfs/industrialisation_and_empire_textbook.pdf",

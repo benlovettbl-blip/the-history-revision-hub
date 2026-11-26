@@ -2796,7 +2796,11 @@ async function buildUnitAnthologyHtml(unitId) {
   const totalPages = cfg.expectedPages;
 
   const heroAsset = await getOptimizedBase64Asset(cfg.heroImage, 1100);
-  const hubUrl = `https://historyrevisionhub.co.uk/?view=reading&unit=${unitId}`;
+  const { getCleanPathForReading, getSeoRouteForUnit } = await import('../src/data/seo_routes.js');
+  const unitSeoRoute = getSeoRouteForUnit(unitId);
+  const hubUrl = unitSeoRoute
+    ? `https://historyrevisionhub.co.uk/${unitSeoRoute.slug}/reading/`
+    : `https://historyrevisionhub.co.uk/?view=reading&unit=${unitId}`;
   const hubQrUri = await generateQrDataUri(hubUrl);
 
   const pages = [];
@@ -2819,7 +2823,10 @@ async function buildUnitAnthologyHtml(unitId) {
   for (let i = 0; i < n; i++) {
     const it = items[i];
     const artAsset = await getOptimizedBase64Asset(it.cover_image, 620);
-    const storyUrl = `https://historyrevisionhub.co.uk/?view=reading&unit=${unitId}&lesson=${i + 1}`;
+    const cleanReadingPath = getCleanPathForReading(unitId, it, i, items);
+    const storyUrl = cleanReadingPath
+      ? `https://historyrevisionhub.co.uk${cleanReadingPath}`
+      : `https://historyrevisionhub.co.uk/?view=reading&unit=${unitId}&lesson=${i + 1}`;
     const qrUri = await generateQrDataUri(storyUrl);
     pages.push(
       renderStoryPageHtml(

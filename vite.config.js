@@ -6,6 +6,8 @@ import {
   SCHOOLS_SEO_PAGE,
   SITE_ORIGIN,
   getLessonSeoSlugList,
+  getReadingSeoSlugList,
+  buildCleanReadingPageTitle,
 } from './src/data/seo_routes.js';
 import { getLessonMockQuestions } from './src/engine/mock_exam_bank_data.js';
 
@@ -177,17 +179,22 @@ function seoCoursePagesPlugin() {
 
       fs.writeFileSync(baseIndexPath, enrichedHomeHtml, 'utf8');
 
-      // 2. Generate dedicated static HTML route for each course + every individual lesson in SEO_UNIT_ROUTES
+      // 2. Generate dedicated static HTML route for each course + every individual lesson + every Literary Companion
       let generatedCount = 0;
       let generatedLessonCount = 0;
+      let generatedReadingCount = 0;
       let totalIndexedQuestions = 0;
       const lessonSitemapUrls = [];
+      const readingSitemapUrls = [];
+      const globalReadingSlugs = new Set();
 
       for (const route of SEO_UNIT_ROUTES) {
         const unitRecord = db[route.unitId];
         const unitData = (unitRecord && (unitRecord.data || unitRecord)) || {};
         const lessons = unitData.lessons || unitData.subtopics || [];
         const lessonSlugs = getLessonSeoSlugList(lessons);
+        const readings = Array.isArray(unitData.guided_reading) ? unitData.guided_reading : [];
+        const readingSlugs = getReadingSeoSlugList(readings, route.unitId, globalReadingSlugs);
         const canonicalUrl = `${SITE_ORIGIN}/${route.slug}/`;
         const rawImage = unitData.cover_image || unitData.homepage_background || '/icon-512.svg';
         const ogImageUrl = rawImage.startsWith('http') ? rawImage : `${SITE_ORIGIN}${rawImage}`;
@@ -505,6 +512,144 @@ function seoCoursePagesPlugin() {
           lessonSitemapUrls.push(lessonCanonical);
           generatedLessonCount++;
         });
+
+        // 2c. Pre-render clean static permalink + smart-paste OpenGraph page for every Literary Companion (/reading/<slug>/)
+        const outReadingBaseDir = path.join(distDir, 'reading');
+        readings.forEach((reading, rIdx) => {
+          const readingSlug = readingSlugs[rIdx];
+          if (!readingSlug) return;
+          const readingCanonical = `${SITE_ORIGIN}/reading/${readingSlug}/`;
+          const readingSmartTitle = buildCleanReadingPageTitle(reading);
+          const fullReadingTitle = stripPlainText(reading.book_title || reading.title || readingSmartTitle);
+          const authorLine = stripPlainText(reading.author || '');
+          const contextSnippet = trimAtSentence(
+            reading.historical_context || reading.context || reading.intro || route.metaDescription,
+            158,
+          );
+          const extractPreview = trimAtSentence(reading.extract || '', 360);
+          const vocabPreview = Array.isArray(reading.vocabVault)
+            ? reading.vocabVault
+                .slice(0, 6)
+                .map((v) => `${stripPlainText(v.word || v.term)}: ${stripPlainText(v.definition || v.meaning)}`)
+                .filter(Boolean)
+            : [];
+          const pairedLessonIdx =
+            typeof reading.lesson_index === 'number' && reading.lesson_index >= 0 && reading.lesson_index < lessons.length
+              ? reading.lesson_index
+              : rIdx < lessons.length
+                ? rIdx
+                : 0;
+          const pairedLessonSlug = lessonSlugs[pairedLessonIdx] || '';
+          const pairedLessonTitle = lessons[pairedLessonIdx]
+            ? stripPlainText(lessons[pairedLessonIdx].title || `Enquiry ${pairedLessonIdx + 1}`)
+            : '';
+
+          const readingSchema = {
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  { '@type': 'ListItem', position: 1, name: 'The History Revision Hub', item: `${SITE_ORIGIN}/` },
+                  { '@type': 'ListItem', position: 2, name: route.heading, item: canonicalUrl },
+                  { '@type': 'ListItem', position: 3, name: fullReadingTitle, item: readingCanonical },
+                ],
+              },
+              {
+                '@type': 'LearningResource',
+                name: readingSmartTitle,
+                headline: fullReadingTitle,
+                description: contextSnippet,
+                url: readingCanonical,
+                educationalLevel: route.keyStage,
+                learningResourceType: ['Read-Aloud Companion', 'Historical Literature', 'Guided Reading'],
+                inLanguage: 'en-GB',
+                isPartOf: { '@type': 'Course', name: route.heading, url: canonicalUrl },
+                provider: {
+                  '@type': 'EducationalOrganization',
+                  name: 'The History Revision Hub',
+                  url: `${SITE_ORIGIN}/`,
+                },
+              },
+            ],
+          };
+
+          const readingBodyHtml = `
+          <article class="seo-reading-prerender" style="max-width: 900px; margin: 24px auto; padding: 20px;">
+            <nav aria-label="Breadcrumb" style="font-size: 0.85rem; margin-bottom: 10px;">
+              <a href="/">All Courses</a> &rsaquo; <a href="/${escapeHtml(route.slug)}/">${escapeHtml(shortCourseTitle)}</a>${
+                pairedLessonSlug
+                  ? ` &rsaquo; <a href="/${escapeHtml(route.slug)}/${escapeHtml(pairedLessonSlug)}/">${escapeHtml(pairedLessonTitle)}</a>`
+                  : ''
+              }
+            </nav>
+            <p style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.8; margin-bottom: 6px;">${escapeHtml(route.keyStage)} Read-Aloud &amp; Literary Companion</p>
+            <h1 style="font-size: 1.7rem; margin-bottom: 8px;">${escapeHtml(fullReadingTitle)}</h1>
+            ${authorLine ? `<p style="font-size: 0.96rem; opacity: 0.85; margin-bottom: 14px;"><strong>Source / Author:</strong> ${escapeHtml(authorLine)}</p>` : ''}
+            <p style="line-height: 1.65; margin-bottom: 16px;">${escapeHtml(contextSnippet)}</p>
+            ${extractPreview ? `<blockquote style="border-left: 3px solid #94a3b8; padding-left: 14px; margin: 0 0 18px 0; font-style: italic; line-height: 1.65;">${escapeHtml(extractPreview)}</blockquote>` : ''}
+            ${
+              vocabPreview.length > 0
+                ? `<h2 style="font-size: 1.12rem; margin-bottom: 8px;">Key Historical &amp; Literary Vocabulary</h2>
+            <ul style="line-height: 1.7; padding-left: 20px; margin-bottom: 18px;">
+              ${vocabPreview.map((v) => `<li>${escapeHtml(v)}</li>`).join('\n              ')}
+            </ul>`
+                : ''
+            }
+            <nav aria-label="Reading Navigation" style="font-size: 0.88rem; line-height: 1.8; border-top: 1px solid rgba(148,163,184,0.25); padding-top: 14px;">
+              ${pairedLessonSlug ? `<a href="/${escapeHtml(route.slug)}/${escapeHtml(pairedLessonSlug)}/" style="font-weight: 700; margin-right: 14px;">&larr; Paired Enquiry Lesson</a>` : ''}
+              <a href="/${escapeHtml(route.slug)}/" style="margin-right: 14px;">Course Overview</a>
+              <a href="/schools/">For UK Schools &amp; Teachers</a>
+            </nav>
+          </article>`;
+
+          const bootPayload = JSON.stringify({
+            unitId: route.unitId,
+            readingIndex: rIdx,
+            slug: readingSlug,
+          });
+          const readingExtraMeta = `    <meta property="og:image" content="${escapeHtml(ogImageUrl)}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="${escapeHtml(readingSmartTitle)}" />
+    <meta name="twitter:description" content="${escapeHtml(contextSnippet)}" />
+    <meta name="twitter:image" content="${escapeHtml(ogImageUrl)}" />
+    <script>window.__initialReadingRoute=${bootPayload};window.__initialUnitBootMap=window.__initialUnitBootMap||{};window.__initialUnitBootMap["${escapeHtml(route.unitId)}"]=fetch("/data/${escapeHtml(route.unitId)}.json").then(function(r){return r.ok?r.json():null;}).catch(function(){return null;});</script>
+    <script type="application/ld+json">${JSON.stringify(readingSchema)}</script>`;
+
+          const readingHtml = baseHtml
+            .replace(/<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(readingSmartTitle)}</title>`)
+            .replace(
+              /<meta\s+name="description"\s+content="[^"]*"\s*\/?>/,
+              `<meta name="description" content="${escapeHtml(contextSnippet)}" />`,
+            )
+            .replace(
+              /<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/,
+              `<link rel="canonical" href="${escapeHtml(readingCanonical)}" />`,
+            )
+            .replace(
+              /<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/,
+              `<meta property="og:title" content="${escapeHtml(readingSmartTitle)}" />`,
+            )
+            .replace(
+              /<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/,
+              `<meta property="og:description" content="${escapeHtml(contextSnippet)}" />`,
+            )
+            .replace(
+              /<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/,
+              `<meta property="og:url" content="${escapeHtml(readingCanonical)}" />`,
+            )
+            .replace('</head>', `${readingExtraMeta}\n  </head>`)
+            .replace(
+              /<div class="content-container" id="main-content">[\s\S]*?<\/div>/,
+              `<div class="content-container" id="main-content">${readingBodyHtml}\n        </div>`,
+            );
+
+          const outReadDir = path.join(outReadingBaseDir, readingSlug);
+          fs.mkdirSync(outReadDir, { recursive: true });
+          fs.writeFileSync(path.join(outReadDir, 'index.html'), readingHtml, 'utf8');
+          readingSitemapUrls.push(readingCanonical);
+          generatedReadingCount++;
+        });
       }
 
       // 3. Generate dedicated static SEO page for /schools/ (For Schools & History Departments)
@@ -597,13 +742,17 @@ function seoCoursePagesPlugin() {
           (u) =>
             `  <url>\n    <loc>${escapeHtml(u)}</loc>\n    <lastmod>${buildDateIso}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`,
         ),
+        ...readingSitemapUrls.map(
+          (u) =>
+            `  <url>\n    <loc>${escapeHtml(u)}</loc>\n    <lastmod>${buildDateIso}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.75</priority>\n  </url>`,
+        ),
       ].join('\n');
       const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries}\n</urlset>\n`;
       fs.writeFileSync(path.join(distDir, 'sitemap.xml'), sitemapXml, 'utf8');
       fs.writeFileSync(path.resolve(process.cwd(), 'public', 'sitemap.xml'), sitemapXml, 'utf8');
 
       console.log(
-        `[seo-course-pages-generator] Generated ${generatedCount} course pages + ${generatedLessonCount} lesson pages (${totalIndexedQuestions} indexed exam/practice Q&As) + /schools/ + sitemap.xml (${SEO_UNIT_ROUTES.length + generatedLessonCount + 2} URLs) in dist/.`,
+        `[seo-course-pages-generator] Generated ${generatedCount} course pages + ${generatedLessonCount} lesson pages + ${generatedReadingCount} literary companion pages (${totalIndexedQuestions} indexed exam/practice Q&As) + /schools/ + sitemap.xml (${SEO_UNIT_ROUTES.length + generatedLessonCount + generatedReadingCount + 2} URLs) in dist/.`,
       );
     },
   };
@@ -793,6 +942,11 @@ export default defineConfig({
               name: 'cme-courtyard-engine',
               test: /src[\\/]arcade[\\/]games[\\/]cme_courtyard/,
               priority: 55,
+            },
+            {
+              name: 'chess-club-modes',
+              test: /src[\\/]chess_club_modes\.js/,
+              priority: 50,
             },
             {
               name: 'classroom-reader-tools',

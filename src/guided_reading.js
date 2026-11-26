@@ -1,5 +1,9 @@
 import { getAssetUrl } from './engine/assets.js';
 import { isStaffModeActive } from './data/unit_resources_catalog.js';
+import {
+  getCleanPathForReading,
+  buildCleanReadingPageTitle,
+} from './data/seo_routes.js';
 import QRCode from 'qrcode';
 import {
   readAloudContainer,
@@ -557,7 +561,21 @@ export function ensureGuidedReadingStyles() {
   document.head.appendChild(styleEl);
 }
 
-function buildCleanHomeworkUrl(unitId, lessonIndex) {
+function resolveUnitReadingsList(unitId) {
+  if (typeof window === 'undefined') return [];
+  const activeUnit =
+    (window.state && window.state.activeUnitData && window.state.selectedUnitId === unitId
+      ? window.state.activeUnitData
+      : null) ||
+    (window.state && window.state.db && window.state.db[unitId]
+      ? window.state.db[unitId].data || window.state.db[unitId]
+      : null) ||
+    window.currentUnitData ||
+    null;
+  return activeUnit && Array.isArray(activeUnit.guided_reading) ? activeUnit.guided_reading : [];
+}
+
+function buildCleanHomeworkUrl(unitId, lessonIndex, explicitReading = null, explicitReadings = null) {
   const isLocalhost =
     typeof window !== 'undefined' &&
     (window.location.hostname === 'localhost' ||
@@ -568,6 +586,15 @@ function buildCleanHomeworkUrl(unitId, lessonIndex) {
     (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_PUBLIC_SITE_URL) ||
     'https://historyrevisionhub.co.uk';
   const origin = isLocalhost ? productionOrigin : window.location.origin;
+
+  const readings = Array.isArray(explicitReadings) && explicitReadings.length
+    ? explicitReadings
+    : resolveUnitReadingsList(unitId);
+  const readingItem = explicitReading || readings[lessonIndex] || null;
+  const cleanPath = getCleanPathForReading(unitId, readingItem, lessonIndex, readings);
+  if (cleanPath) {
+    return `${origin}${cleanPath}`;
+  }
   return `${origin}/?view=reading&unit=${unitId}&lesson=${lessonIndex + 1}`;
 }
 
@@ -1090,6 +1117,20 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
   }
   if (activeIndex === -1) activeIndex = 0;
   let activeReading = guidedReadingData[activeIndex];
+  if (typeof document !== 'undefined' && activeReading) {
+    document.title = buildCleanReadingPageTitle(activeReading);
+  }
+  if (typeof window !== 'undefined' && window.history && window.history.replaceState && activeReading) {
+    const cleanReadPath = getCleanPathForReading(unitId, activeReading, activeIndex, guidedReadingData);
+    if (cleanReadPath) {
+      const nextUrl = new URL(cleanReadPath, window.location.origin);
+      window.history.replaceState(
+        { hhNav: true, view: 'reading', unit: unitId, unitId, lesson: activeIndex, lessonIndex: activeIndex },
+        '',
+        nextUrl.pathname + nextUrl.search + nextUrl.hash,
+      );
+    }
+  }
 
   ensureGuidedReadingStyles();
 
@@ -1258,12 +1299,24 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
 
     renderReadingContent(contentDiv, data);
 
+    if (typeof document !== 'undefined' && data) {
+      document.title = buildCleanReadingPageTitle(data);
+    }
     if (typeof window !== 'undefined' && window.history && window.history.replaceState) {
-      const url = new URL(window.location);
-      url.searchParams.set('view', 'reading');
-      url.searchParams.set('unit', unitId);
-      url.searchParams.set('lesson', String(newIndex + 1));
-      window.history.replaceState({ view: 'reading', unit: unitId, lesson: newIndex }, '', url);
+      const cleanReadPath = getCleanPathForReading(unitId, data, newIndex, guidedReadingData);
+      if (cleanReadPath) {
+        window.history.replaceState(
+          { hhNav: true, view: 'reading', unit: unitId, unitId, lesson: newIndex, lessonIndex: newIndex },
+          '',
+          cleanReadPath,
+        );
+      } else {
+        const url = new URL(window.location);
+        url.searchParams.set('view', 'reading');
+        url.searchParams.set('unit', unitId);
+        url.searchParams.set('lesson', String(newIndex + 1));
+        window.history.replaceState({ view: 'reading', unit: unitId, lesson: newIndex }, '', url);
+      }
     }
   }
 
@@ -1357,7 +1410,7 @@ export function initGuidedReadingTask(container, guidedReadingData, globalState 
       : [];
 
     const comfort = loadComfortPrefs();
-    const homeworkUrl = buildCleanHomeworkUrl(unitId, lessonIdx);
+    const homeworkUrl = buildCleanHomeworkUrl(unitId, lessonIdx, readingData);
     let inlinePrintQr = '';
     try {
       inlinePrintQr = await QRCode.toDataURL(homeworkUrl, {

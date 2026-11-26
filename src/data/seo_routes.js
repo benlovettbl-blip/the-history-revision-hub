@@ -509,3 +509,218 @@ export function getSeoRouteForUnit(unitId) {
   if (!unitId) return null;
   return UNIT_TO_ROUTE.get(unitId) || null;
 }
+
+const TRAILING_SLUG_STOPWORDS = new Set([
+  'of',
+  'at',
+  'the',
+  'to',
+  'in',
+  'on',
+  'for',
+  'and',
+  'with',
+  'from',
+  'by',
+  'into',
+  'a',
+  'an',
+]);
+
+export function slugifyReadingSegment(rawStr, maxLen = 52) {
+  let s = String(rawStr || '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&amp;|&/gi, ' and ')
+    .replace(/&ndash;|&mdash;|[–—]/gi, '-')
+    .replace(/['’‘"“”]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+  if (s.length > maxLen) {
+    const trimmed = s.slice(0, maxLen);
+    const lastDash = trimmed.lastIndexOf('-');
+    s = lastDash > 16 ? trimmed.slice(0, lastDash) : trimmed.replace(/-+$/g, '');
+  }
+  const parts = s.split('-').filter(Boolean);
+  while (parts.length > 3 && TRAILING_SLUG_STOPWORDS.has(parts[parts.length - 1])) {
+    parts.pop();
+  }
+  return parts.join('-');
+}
+
+/**
+ * Builds a clean, short literary permalink slug for a Guided Reading / Literary Companion item
+ * (e.g. '"Dulce et Decorum Est": Answering the Recruitment Lie (1917)' -> 'dulce-et-decorum-est').
+ */
+export function buildShortReadingSeoSlug(reading, readingIndex = 0) {
+  if (reading && reading.slug) {
+    return slugifyReadingSegment(reading.slug, 60) || `reading-${readingIndex + 1}`;
+  }
+  const rawTitle = String(reading?.book_title || reading?.title || `reading-${readingIndex + 1}`).trim();
+  const noTrailingParens = rawTitle.replace(/\s*\([^)]*\)\s*$/, '').trim();
+  const primaryPart = noTrailingParens
+    .split(/\s*(?::|—|–)\s*/)[0]
+    .replace(/\s*\([^)]*\)\s*$/, '')
+    .trim();
+  const primarySlug = slugifyReadingSegment(primaryPart, 48);
+  if (
+    primarySlug.length >= 8 &&
+    /[a-z]{3}/.test(primarySlug) &&
+    !/^\d+-\d+-a-m/.test(primarySlug)
+  ) {
+    return primarySlug;
+  }
+  return slugifyReadingSegment(noTrailingParens, 52) || `reading-${readingIndex + 1}`;
+}
+
+/**
+ * Computes deterministic, globally collision-free slugs for Guided Reading items.
+ * Pass `globalUsedSet` when generating across all units so every `/reading/<slug>/` is 100% unique.
+ */
+export function getReadingSeoSlugList(readings = [], unitId = '', globalUsedSet = null) {
+  if (!Array.isArray(readings)) return [];
+  const localUsed = globalUsedSet || new Set();
+  const unitSuffix = unitId ? slugifyReadingSegment(unitId.replace(/^ks2_/, ''), 20) : '';
+  return readings.map((reading, idx) => {
+    const base = buildShortReadingSeoSlug(reading, idx);
+    let candidate = base;
+    if (localUsed.has(candidate) && unitSuffix) {
+      candidate = `${base}-${unitSuffix}`;
+    }
+    if (localUsed.has(candidate)) {
+      candidate = `${candidate}-${idx + 1}`;
+    }
+    localUsed.add(candidate);
+    return candidate;
+  });
+}
+
+export function getReadingSeoSlug(reading, readingIndex = 0, allReadings = null, unitId = '') {
+  if (
+    unitId &&
+    typeof window !== 'undefined' &&
+    window.state &&
+    window.state.db &&
+    typeof window.state.db === 'object'
+  ) {
+    const dbMap = window.state.db;
+    const globalUsed = new Set();
+    const orderedUnits = [
+      ...SEO_UNIT_ROUTES.map((r) => r.unitId),
+      ...Object.keys(dbMap).filter((k) => !UNIT_TO_ROUTE.has(k)),
+    ];
+    for (const uid of orderedUnits) {
+      const wrapper = dbMap[uid];
+      const uData = (wrapper && (wrapper.data || wrapper)) || null;
+      const gr =
+        uid === unitId && Array.isArray(allReadings) && allReadings.length
+          ? allReadings
+          : uData && Array.isArray(uData.guided_reading)
+            ? uData.guided_reading
+            : null;
+      if (!gr || gr.length === 0) continue;
+      const slugs = getReadingSeoSlugList(gr, uid, globalUsed);
+      if (uid === unitId && slugs[readingIndex]) {
+        return slugs[readingIndex];
+      }
+    }
+  }
+  if (Array.isArray(allReadings) && allReadings.length > readingIndex && readingIndex >= 0) {
+    return getReadingSeoSlugList(allReadings, unitId)[readingIndex];
+  }
+  return buildShortReadingSeoSlug(reading, readingIndex);
+}
+
+/**
+ * Builds the clean smart-paste display title for a Literary Companion
+ * (e.g. 'Dulce et Decorum Est (Wilfred Owen) — Read-Aloud Companion').
+ */
+export function buildCleanReadingPageTitle(reading) {
+  const rawTitle = String(reading?.book_title || reading?.title || 'Literary Companion')
+    .replace(/<[^>]+>/g, '')
+    .replace(/^["“']+|["”']+$/g, '')
+    .replace(/["“”]/g, '')
+    .trim();
+  const shortMain = rawTitle.split(/\s*:\s*/)[0].trim() || rawTitle;
+  const rawAuthor = String(reading?.author || '')
+    .replace(/<[^>]+>/g, '')
+    .split(/\s*[•·(]\s*/)[0]
+    .trim();
+  const hasAuthor =
+    rawAuthor &&
+    rawAuthor.length <= 36 &&
+    !/history revision hub|narrative archive|traditional/i.test(rawAuthor) &&
+    !shortMain.toLowerCase().includes(rawAuthor.toLowerCase().split(' ').pop());
+  return hasAuthor
+    ? `${shortMain} (${rawAuthor}) — Read-Aloud Companion`
+    : `${shortMain} — Read-Aloud Companion`;
+}
+
+/**
+ * Returns the canonical clean path (e.g. "/reading/dulce-et-decorum-est/") for a reading item.
+ */
+export function getCleanPathForReading(unitId, reading = null, readingIndex = 0, allReadings = null) {
+  if (reading || (Array.isArray(allReadings) && allReadings[readingIndex])) {
+    const target = reading || allReadings[readingIndex];
+    const slug = getReadingSeoSlug(target, readingIndex, allReadings, unitId);
+    if (slug) return `/reading/${slug}/`;
+  }
+  const route = unitId ? UNIT_TO_ROUTE.get(unitId) : null;
+  return route ? `/${route.slug}/reading/` : null;
+}
+
+/**
+ * Resolves "/reading/<slug>/" or "/<course-slug>/reading/" into `{ unitId, readingIndex, readingSlug }`.
+ */
+export function resolveReadingPathname(pathname, dbMap = null) {
+  if (!pathname || typeof pathname !== 'string') return null;
+  const cleaned = pathname.replace(/^\/+|\/+$/g, '');
+  if (!cleaned) return null;
+  const parts = cleaned.split('/').filter(Boolean);
+
+  // Case 1: /<course-slug>/reading/
+  if (parts.length === 2 && parts[1].toLowerCase() === 'reading') {
+    const route = SLUG_TO_ROUTE.get(parts[0].toLowerCase());
+    if (route) {
+      return { unitId: route.unitId, readingIndex: 0, readingSlug: null };
+    }
+  }
+
+  // Case 2: /reading/<reading-slug>/
+  if (parts.length === 2 && parts[0].toLowerCase() === 'reading') {
+    const targetSlug = parts[1].toLowerCase();
+    // Check pre-rendered boot global first if available
+    if (
+      typeof window !== 'undefined' &&
+      window.__initialReadingRoute &&
+      window.__initialReadingRoute.slug === targetSlug
+    ) {
+      return {
+        unitId: window.__initialReadingRoute.unitId,
+        readingIndex: window.__initialReadingRoute.readingIndex || 0,
+        readingSlug: targetSlug,
+      };
+    }
+    // Otherwise scan dbMap (database_index.json or full database.json) in deterministic SEO_UNIT_ROUTES order
+    if (dbMap && typeof dbMap === 'object') {
+      const globalUsed = new Set();
+      const orderedUnits = [
+        ...SEO_UNIT_ROUTES.map((r) => r.unitId),
+        ...Object.keys(dbMap).filter((k) => !UNIT_TO_ROUTE.has(k)),
+      ];
+      for (const uid of orderedUnits) {
+        const wrapper = dbMap[uid];
+        const uData = (wrapper && (wrapper.data || wrapper)) || null;
+        const gr = uData && Array.isArray(uData.guided_reading) ? uData.guided_reading : null;
+        if (!gr || gr.length === 0) continue;
+        const slugs = getReadingSeoSlugList(gr, uid, globalUsed);
+        const matchIdx = slugs.findIndex((s) => s === targetSlug);
+        if (matchIdx !== -1) {
+          return { unitId: uid, readingIndex: matchIdx, readingSlug: targetSlug };
+        }
+      }
+    }
+  }
+  return null;
+}

@@ -28,6 +28,7 @@ import { isStaffModeActive } from './data/unit_resources_catalog.js';
 import {
   resolveUnitIdFromPathname,
   resolveRouteFromPathname,
+  resolveReadingPathname,
   resolveUnlistedPathname,
   isSchoolsPathname,
   getLessonSeoSlugList,
@@ -454,10 +455,16 @@ const bootHistoryHubApp = async () => {
 
   initData();
 
-  // Load ~5 KB course index immediately (plus target unit JSON in parallel on direct unit URLs)
+  // Load ~5 KB course index immediately (plus target unit JSON in parallel on direct unit/reading URLs)
   const bootUrlParams = new URLSearchParams(window.location.search);
+  const preseededReadingRoute =
+    typeof window !== 'undefined' && window.__initialReadingRoute
+      ? window.__initialReadingRoute
+      : null;
   const rawBootUnit =
-    bootUrlParams.get('unit') || resolveUnitIdFromPathname(window.location.pathname);
+    bootUrlParams.get('unit') ||
+    (preseededReadingRoute && preseededReadingRoute.unitId) ||
+    resolveUnitIdFromPathname(window.location.pathname);
   const bootTargetUnit = rawBootUnit ? String(rawBootUnit).split(':')[0] : null;
 
   await Promise.all([
@@ -504,12 +511,26 @@ const bootHistoryHubApp = async () => {
       window.history.replaceState(window.history.state || {}, '', cleanedBootUrl);
     } catch (e) {}
   }
-  const pathRoute = resolveRouteFromPathname(window.location.pathname);
-  const pathUnit = pathRoute ? pathRoute.unitId : resolveUnitIdFromPathname(window.location.pathname);
-  const pathLessonSlug = pathRoute ? pathRoute.lessonSlug : null;
+  const pathReadingRoute = resolveReadingPathname(window.location.pathname, state.db);
+  if (pathReadingRoute && pathReadingRoute.unitId && pathReadingRoute.unitId !== bootTargetUnit) {
+    await ensureUnitLoaded(pathReadingRoute.unitId);
+  }
+  const pathRoute = pathReadingRoute ? null : resolveRouteFromPathname(window.location.pathname);
+  const pathUnit = pathReadingRoute
+    ? pathReadingRoute.unitId
+    : pathRoute
+      ? pathRoute.unitId
+      : resolveUnitIdFromPathname(window.location.pathname);
+  const pathLessonSlug = pathReadingRoute
+    ? String((pathReadingRoute.readingIndex || 0) + 1)
+    : pathRoute
+      ? pathRoute.lessonSlug
+      : null;
   const pathIsSchools = isSchoolsPathname(window.location.pathname);
   const pathUnlistedView = resolveUnlistedPathname(window.location.pathname);
-  let view = urlParams.get('view') || (pathIsSchools ? 'schools' : pathUnlistedView || null);
+  let view =
+    urlParams.get('view') ||
+    (pathReadingRoute ? 'reading' : pathIsSchools ? 'schools' : pathUnlistedView || null);
   let unit = urlParams.get('unit') || pathUnit;
   const initialLesson = urlParams.get('lesson') ?? pathLessonSlug;
 
@@ -767,6 +788,12 @@ const bootHistoryHubApp = async () => {
     const readerBootSpec =
       String(unit).includes(':') || !bookBoot ? unit : `${unit}:${bookBoot}`;
     await switchView('reader', readerBootSpec, true);
+  } else if (view === 'reading' && unit && initialLesson !== null) {
+    const parsedReadingNum = parseInt(String(initialLesson), 10);
+    await switchView('reading', unit, true, {
+      rawLesson: initialLesson,
+      lessonIndex: !isNaN(parsedReadingNum) && parsedReadingNum >= 1 ? parsedReadingNum - 1 : undefined,
+    });
   } else {
     await switchView(view, unit, true);
   }

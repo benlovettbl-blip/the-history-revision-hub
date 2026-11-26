@@ -23,8 +23,12 @@ import { jumpToKeyIndividual } from './key_individuals.js';
 import { isStaffModeActive, getUnitCatalogEntry } from './data/unit_resources_catalog.js';
 import {
   getCleanPathForUnit,
+  getCleanPathForLesson,
+  getCleanPathForReading,
+  buildCleanReadingPageTitle,
   getSeoRouteForUnit,
   resolveRouteFromPathname,
+  resolveReadingPathname,
   resolveUnitIdFromPathname,
   resolveUnlistedPathname,
   isSchoolsPathname,
@@ -700,11 +704,18 @@ export function initNavigationUI() {
       e.stopImmediatePropagation();
 
       const currentUrlParams = new URLSearchParams(window.location.search);
-      const popRoute = resolveRouteFromPathname(window.location.pathname);
-      const pathUnit = popRoute ? popRoute.unitId : resolveUnitIdFromPathname(window.location.pathname);
+      const popReading = resolveReadingPathname(window.location.pathname, state.db || null);
+      const popRoute = popReading ? null : resolveRouteFromPathname(window.location.pathname);
+      const pathUnit = popReading
+        ? popReading.unitId
+        : popRoute
+          ? popRoute.unitId
+          : resolveUnitIdFromPathname(window.location.pathname);
       const pathIsSchools = isSchoolsPathname(window.location.pathname);
       const pathUnlisted = resolveUnlistedPathname(window.location.pathname);
-      const urlView = currentUrlParams.get('view') || (pathIsSchools ? 'schools' : pathUnlisted || null);
+      const urlView =
+        currentUrlParams.get('view') ||
+        (popReading ? 'reading' : pathIsSchools ? 'schools' : pathUnlisted || null);
       const urlUnit = currentUrlParams.get('unit') || pathUnit;
       const urlLesson = currentUrlParams.get('lesson') ?? (popRoute ? popRoute.lessonSlug : null);
       const targetScrollY = typeof poppedState.scrollY === 'number' ? poppedState.scrollY : 0;
@@ -716,7 +727,12 @@ export function initNavigationUI() {
           : poppedState.unit !== undefined
             ? poppedState.unit
             : urlUnit;
-      const targetOpts = poppedState.opts && typeof poppedState.opts === 'object' ? poppedState.opts : {};
+      const targetOpts =
+        poppedState.opts && typeof poppedState.opts === 'object'
+          ? { ...poppedState.opts }
+          : popReading && typeof popReading.readingIndex === 'number'
+            ? { readingIndex: popReading.readingIndex }
+            : {};
 
       // 3. Enforce hierarchical step-back: Lesson -> Unit Overview -> Home Dashboard
       if (
@@ -1556,6 +1572,45 @@ export async function switchView(viewName, param = null, skipHistory = false, op
     } else if (isPureUnitOverview) {
       url.pathname = cleanUnitPath;
       url.search = '';
+    } else if (viewName === 'lessons' && options && typeof options.lessonIndex === 'number') {
+      const uData = getUnitData(param || previousUnit);
+      const lList = (uData && (uData.lessons || uData.subtopics)) || [];
+      const lObj = lList[options.lessonIndex];
+      const cleanLessonPath = getCleanPathForLesson(
+        effectiveTargetUnit,
+        lObj,
+        options.lessonIndex,
+        lList,
+      );
+      if (cleanLessonPath) {
+        url.pathname = cleanLessonPath;
+        url.search = '';
+      } else {
+        url.pathname = '/';
+        url.searchParams.set('view', 'lessons');
+        if (effectiveTargetUnit) url.searchParams.set('unit', effectiveTargetUnit);
+        url.searchParams.set('lesson', String(options.lessonIndex + 1));
+      }
+    } else if (viewName === 'reading' || viewName === 'guided-reading') {
+      const uData = getUnitData(effectiveTargetUnit);
+      const rList = (uData && Array.isArray(uData.guided_reading) && uData.guided_reading) || [];
+      let rIdx =
+        typeof options?.lessonIndex === 'number'
+          ? options.lessonIndex
+          : options?.rawLesson !== undefined && /^\d+$/.test(String(options.rawLesson))
+            ? Math.max(0, parseInt(String(options.rawLesson), 10) - 1)
+            : 0;
+      if (rIdx < 0 || rIdx >= rList.length) rIdx = 0;
+      const cleanReadPath = getCleanPathForReading(effectiveTargetUnit, rList[rIdx] || null, rIdx, rList);
+      if (cleanReadPath) {
+        url.pathname = cleanReadPath;
+        url.search = '';
+      } else {
+        url.pathname = '/';
+        url.searchParams.set('view', 'reading');
+        if (effectiveTargetUnit) url.searchParams.set('unit', effectiveTargetUnit);
+        url.searchParams.set('lesson', String(rIdx + 1));
+      }
     } else {
       url.pathname = '/';
       url.searchParams.set('view', viewName);
@@ -1585,29 +1640,7 @@ export async function switchView(viewName, param = null, skipHistory = false, op
         url.searchParams.delete('game');
         url.searchParams.delete('arcadeLesson');
       }
-
-      if (viewName === 'reading' || viewName === 'guided-reading') {
-        if (options && options.rawLesson !== undefined) {
-          url.searchParams.set('lesson', options.rawLesson);
-        } else if (options && options.lessonIndex !== undefined) {
-          url.searchParams.set('lesson', options.lessonIndex + 1);
-        }
-      } else if (viewName === 'lessons' && options && typeof options.lessonIndex === 'number') {
-        const uData = getUnitData(param || previousUnit);
-        const lList = (uData && (uData.lessons || uData.subtopics)) || [];
-        const lObj = lList[options.lessonIndex];
-        const hasZero = Boolean(
-          lList[0] &&
-            (lList[0].id === 'lesson_0' ||
-              (lList[0].title && lList[0].title.includes('KT 1.0'))),
-        );
-        const lVal =
-          (lObj && lObj.slug) ||
-          (hasZero ? (options.lessonIndex === 0 ? '0' : options.lessonIndex) : options.lessonIndex + 1);
-        url.searchParams.set('lesson', lVal);
-      } else if (viewName !== 'reading' && viewName !== 'guided-reading') {
-        url.searchParams.delete('lesson');
-      }
+      url.searchParams.delete('lesson');
     }
     const safeHistoryOpts = {};
     if (options && typeof options === 'object') {
@@ -1912,6 +1945,29 @@ export async function switchView(viewName, param = null, skipHistory = false, op
         document.title = unitTitleClean
           ? `Mind Map Studio — ${unitTitleClean}`
           : 'Mind Map Studio — The History Revision Hub';
+      } else if (viewName === 'reading' || viewName === 'guided-reading') {
+        const grList =
+          state.activeUnitData && Array.isArray(state.activeUnitData.guided_reading)
+            ? state.activeUnitData.guided_reading
+            : [];
+        const rIdx = typeof options?.lessonIndex === 'number' ? options.lessonIndex : 0;
+        if (grList[rIdx]) {
+          document.title = buildCleanReadingPageTitle(grList[rIdx]);
+        } else if (unitTitleClean) {
+          document.title = `Read-Aloud Companion — ${unitTitleClean}`;
+        }
+      } else if (viewName === 'interactive') {
+        document.title = unitTitleClean
+          ? `Quizzing & Flashcards — ${unitTitleClean}`
+          : 'Quizzing & Flashcards — The History Revision Hub';
+      } else if (viewName === 'arcade') {
+        document.title = unitTitleClean
+          ? `Revision Arcade — ${unitTitleClean}`
+          : 'Revision Arcade — The History Revision Hub';
+      } else if (viewName === 'marking') {
+        document.title = unitTitleClean
+          ? `Marking Bank & Answers — ${unitTitleClean}`
+          : 'Marking Bank & Answers — The History Revision Hub';
       } else if (viewName === 'lessons' && unitTitleClean) {
         document.title = `${unitTitleClean} — The History Revision Hub`;
       }

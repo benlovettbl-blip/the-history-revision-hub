@@ -145,6 +145,14 @@ async function buildDatabase() {
             enquiryQuestion: resolvedEnq,
           };
         }),
+        guided_reading: Array.isArray(unitData.guided_reading)
+          ? unitData.guided_reading.map((r) => ({
+              book_title: r.book_title || r.title || '',
+              slug: r.slug,
+              lesson_id: r.lesson_id,
+              lesson_index: r.lesson_index,
+            }))
+          : undefined,
       },
     };
   }

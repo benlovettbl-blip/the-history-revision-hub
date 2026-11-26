@@ -1011,9 +1011,69 @@ function renderSimpleThreeRulesStrip(title, step1, step2, step3, accent = '#0284
   `;
 }
 
+function formatClubRoundClock(chessState, fallbackMins = 8) {
+  const secsTotal =
+    typeof chessState.sessionTimeRemaining === 'number'
+      ? chessState.sessionTimeRemaining
+      : fallbackMins * 60;
+  const m = Math.floor(secsTotal / 60);
+  const s = secsTotal % 60;
+  return {
+    secsTotal,
+    formatted: `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`,
+    isUrgent: secsTotal > 0 && secsTotal <= 120,
+    isZero: secsTotal === 0,
+    running: Boolean(chessState.sessionTimerRunning),
+    hasActiveOrPausedRound:
+      Boolean(chessState.sessionTimerRunning) ||
+      Boolean(chessState.roundTimerExpiredAlert) ||
+      (typeof chessState.sessionTimeRemaining === 'number' &&
+        typeof chessState.roundTimerDuration === 'number' &&
+        chessState.sessionTimeRemaining > 0 &&
+        chessState.sessionTimeRemaining < chessState.roundTimerDuration),
+  };
+}
+
+function renderInlineChaosRoundClockControl(chessState, defaultMins = 8) {
+  const clk = formatClubRoundClock(chessState, defaultMins);
+  if (!clk.hasActiveOrPausedRound) {
+    return `
+      <div style="display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+        <button type="button" onclick="window.setRoundTimer(${defaultMins})" style="background: #0f172a; color: #4ade80; border: 2px solid #334155; border-radius: 12px; padding: 14px 20px; font-size: 1rem; font-weight: 900; cursor: pointer; box-shadow: 0 4px 12px rgba(15,23,42,0.18);">
+          ⏱ Start ${defaultMins}-Min Round Clock
+        </button>
+        ${
+          defaultMins !== 5
+            ? `<button type="button" onclick="window.setRoundTimer(5)" style="background: #f8fafc; color: #334155; border: 1.5px solid #cbd5e1; border-radius: 10px; padding: 12px 12px; font-size: 0.85rem; font-weight: 900; cursor: pointer;" title="Start a 5-minute blitz clock">5m</button>`
+            : `<button type="button" onclick="window.setRoundTimer(8)" style="background: #f8fafc; color: #334155; border: 1.5px solid #cbd5e1; border-radius: 10px; padding: 12px 12px; font-size: 0.85rem; font-weight: 800; cursor: pointer;" title="Start an 8-minute clock">8m</button>`
+        }
+        <button type="button" onclick="window.setRoundTimer(10)" style="background: #f8fafc; color: #334155; border: 1.5px solid #cbd5e1; border-radius: 10px; padding: 12px 12px; font-size: 0.85rem; font-weight: 900; cursor: pointer;" title="Start a 10-minute clock">10m</button>
+      </div>
+    `;
+  }
+
+  const digitColor = clk.isZero ? '#ef4444' : clk.isUrgent ? '#fbbf24' : '#4ade80';
+  const borderCol = clk.isZero ? '#ef4444' : clk.isUrgent ? '#f59e0b' : '#22c55e';
+  return `
+    <div style="display: inline-flex; align-items: center; gap: 8px; flex-wrap: wrap; background: #020617; border: 2.5px solid ${borderCol}; border-radius: 12px; padding: 8px 14px; box-shadow: 0 6px 18px rgba(15,23,42,0.28);">
+      <span style="font-size: 0.78rem; font-weight: 900; letter-spacing: 0.05em; color: #94a3b8; text-transform: uppercase;">⏱ Round:</span>
+      <span class="chess-live-round-clock" data-dark="true" style="font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 1.65rem; font-weight: 900; line-height: 1; min-width: 78px; text-align: center; color: ${digitColor}; text-shadow: 0 0 14px rgba(74,222,128,0.28);">
+        ${clk.formatted}
+      </span>
+      <button type="button" onclick="window.toggleSessionTimer()" style="background: ${clk.running ? '#334155' : '#16a34a'}; color: #ffffff; border: 1px solid ${clk.running ? '#64748b' : '#4ade80'}; border-radius: 8px; padding: 7px 12px; font-size: 0.84rem; font-weight: 900; cursor: pointer;">
+        ${clk.running ? '⏸ Pause' : '▶ Resume'}
+      </button>
+      <button type="button" onclick="window.adjustRoundTimer(60)" style="background: #1e293b; color: #38bdf8; border: 1px solid #0284c7; border-radius: 8px; padding: 7px 10px; font-size: 0.82rem; font-weight: 900; cursor: pointer;" title="Add 1 minute">+1m</button>
+      <button type="button" onclick="window.setRoundTimer(${defaultMins})" style="background: #1e293b; color: #cbd5e1; border: 1px solid #475569; border-radius: 8px; padding: 7px 10px; font-size: 0.82rem; font-weight: 800; cursor: pointer;" title="Restart ${defaultMins}-minute clock">↺ ${defaultMins}m</button>
+      <button type="button" onclick="window.resetSessionTimer(); window.dismissRoundTimerAlert && window.dismissRoundTimerAlert();" style="background: #450a0a; color: #fca5a5; border: 1px solid #dc2626; border-radius: 8px; padding: 7px 10px; font-size: 0.82rem; font-weight: 800; cursor: pointer;" title="Stop and hide clock">✕ Stop</button>
+    </div>
+  `;
+}
+
 function renderModeTopBar(cms, chessState, modeTitle, modeIcon, sortedHouses = []) {
   const undoCount = Array.isArray(chessState.undoStack) ? chessState.undoStack.length : 0;
   const isFs = Boolean(cms.tvFullscreen);
+  const topClk = formatClubRoundClock(chessState, 8);
   return `
     <div style="background: #0f172a; color: #ffffff; border-radius: 12px; padding: 8px 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; border: 2px solid #334155;">
       <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
@@ -1051,6 +1111,21 @@ function renderModeTopBar(cms, chessState, modeTitle, modeIcon, sortedHouses = [
       }
 
       <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+        ${
+          topClk.hasActiveOrPausedRound
+            ? `
+          <div style="display: inline-flex; align-items: center; gap: 6px; background: #020617; border: 1.5px solid ${topClk.isZero ? '#ef4444' : topClk.isUrgent ? '#f59e0b' : '#22c55e'}; border-radius: 8px; padding: 4px 10px;">
+            <span style="font-size: 0.75rem; color: #94a3b8; font-weight: 800;">⏱</span>
+            <span class="chess-live-round-clock" data-dark="true" style="font-family: 'JetBrains Mono', monospace; font-size: 1.08rem; font-weight: 900; min-width: 54px; text-align: center; color: ${topClk.isZero ? '#ef4444' : topClk.isUrgent ? '#fbbf24' : '#4ade80'};">
+              ${topClk.formatted}
+            </span>
+            <button type="button" onclick="window.toggleSessionTimer()" style="background: ${topClk.running ? '#334155' : '#16a34a'}; color: #ffffff; border: none; border-radius: 5px; padding: 3px 7px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">
+              ${topClk.running ? '⏸' : '▶'}
+            </button>
+          </div>
+        `
+            : ''
+        }
         <button type="button" onclick="window.undoTournamentAction()" ${undoCount === 0 ? 'disabled' : ''} style="background: ${undoCount > 0 ? '#f59e0b' : '#1e293b'}; color: ${undoCount > 0 ? '#0f172a' : '#64748b'}; border: 1.5px solid ${undoCount > 0 ? '#fbbf24' : '#334155'}; padding: 7px 13px; border-radius: 8px; font-weight: 900; font-size: 0.82rem; cursor: ${undoCount > 0 ? 'pointer' : 'not-allowed'};">
           ↩️ Undo${undoCount > 0 ? ` (${undoCount})` : ''}
         </button>
@@ -1227,9 +1302,24 @@ function renderChaosWheelMode(cms, chessState, getShortName) {
         : ''
     }
 
+    ${
+      chessState.roundTimerExpiredAlert
+        ? `
+      <div style="background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%); color: #ffffff; border: 3px solid #fde047; border-radius: 14px; padding: 18px 22px; margin-bottom: 14px; text-align: center; box-shadow: 0 10px 28px rgba(185, 28, 28, 0.4);">
+        <div style="font-size: 1.8rem; font-weight: 900; color: #fde047; letter-spacing: 0.02em;">⏰ ROUND TIME UP! HANDS OFF PIECES!</div>
+        <div style="font-size: 1rem; font-weight: 700; margin-top: 4px; color: #fecaca;">Count surviving piece points (Queen=9, Rook=5, Bishop=3, Knight=3, Pawn=1) or tap your board result below!</div>
+        <div style="margin-top: 10px; display: inline-flex; gap: 8px; flex-wrap: wrap;">
+          <button type="button" onclick="window.setRoundTimer(${twist.id === 'blitz_count' ? 5 : 8})" style="background: #16a34a; color: #ffffff; border: none; font-weight: 900; font-size: 0.88rem; padding: 8px 16px; border-radius: 8px; cursor: pointer;">▶ Start Next ${twist.id === 'blitz_count' ? '5' : '8'}-Min Round</button>
+          <button type="button" onclick="window.dismissRoundTimerAlert()" style="background: #ffffff; color: #7f1d1d; border: none; font-weight: 900; font-size: 0.88rem; padding: 8px 16px; border-radius: 8px; cursor: pointer;">✓ Dismiss Banner</button>
+        </div>
+      </div>
+    `
+        : ''
+    }
+
     <!-- Giant Spin & Active Twist Display -->
     <div style="background: #ffffff; border: 3px solid ${twist.color}; border-radius: 16px; padding: 20px 22px; margin-bottom: 16px; text-align: center; box-shadow: 0 8px 24px rgba(0,0,0,0.06);">
-      <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px;">
+      <div style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 14px;">
         <button type="button" onclick="window.spinChaosWheel()" ${cms.chaosSpinning ? 'disabled' : ''} style="background: linear-gradient(135deg, #f59e0b 0%, #dc2626 100%); color: #ffffff; border: 2px solid #fde047; border-radius: 12px; padding: 14px 28px; font-size: 1.2rem; font-weight: 900; cursor: pointer; box-shadow: 0 6px 18px rgba(220, 38, 38, 0.3);">
           ${cms.chaosSpinning ? '🎡 SPINNING...' : '🎡 SPIN THE CHAOS WHEEL!'}
         </button>
@@ -1238,18 +1328,16 @@ function renderChaosWheelMode(cms, chessState, getShortName) {
           twist.hasSecretGong
             ? `
           <button type="button" onclick="window.toggleSecretChairSwapGong()" style="background: ${cms.gongArmed ? '#dc2626' : '#0f172a'}; color: #ffffff; border: 2px solid ${cms.gongArmed ? '#fde047' : '#475569'}; border-radius: 12px; padding: 14px 22px; font-size: 1.02rem; font-weight: 900; cursor: pointer;">
-            ${cms.gongArmed ? '🔔 SECRET GONG ARMED! (Will Ring Randomly in 2–4m — Tap to Cancel)' : '🔔 ARM SECRET 2–4 MIN CHAIR-SWAP GONG!'}
+            ${cms.gongArmed ? '🔔 SECRET GONG ARMED! (2–4m — Tap to Cancel)' : '🔔 ARM SECRET 2–4 MIN CHAIR-SWAP GONG!'}
           </button>
           <button type="button" onclick="window.triggerChaosGongNow()" style="background: #fef2f2; color: #991b1b; border: 1.5px solid #fca5a5; border-radius: 12px; padding: 14px 16px; font-size: 0.9rem; font-weight: 800; cursor: pointer;" title="Ring the swap gong right now!">
             📢 Ring Gong Now!
           </button>
         `
-            : `
-          <button type="button" onclick="window.setRoundTimer(8)" style="background: #0f172a; color: #4ade80; border: 2px solid #334155; border-radius: 12px; padding: 14px 20px; font-size: 1rem; font-weight: 900; cursor: pointer;">
-            ⏱ Start 8-Min Round Clock
-          </button>
-        `
+            : ''
         }
+
+        ${renderInlineChaosRoundClockControl(chessState, twist.id === 'blitz_count' ? 5 : 8)}
       </div>
 
       <!-- Giant Rule Card -->
