@@ -267,9 +267,11 @@ async function auditPageBudget(page, options = {}) {
             p.querySelector('.footer-strip') ||
             p.querySelector('.grading-footer') ||
             p.querySelector('.cover-footer') ||
+            p.querySelector('footer.ftr') ||
             p.querySelector(
               '.footer, [class*="footer"]:not(.archival-footer):not(.bqr-footer):not(.source-footer)',
-            );
+            ) ||
+            p.querySelector(':scope > footer');
           let unusedBottom = 0;
           let gapAboveFooter = 0;
           let footerCollisionPx = 0;

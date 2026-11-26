@@ -29,7 +29,7 @@ export const CANONICAL_COURSES = [
   { id: 'medieval_england', title: 'Medieval England (1066–1485)', group: 'ks3', badge: 'KS3 Medieval' },
   { id: 'monarchy_religion_power', title: 'Crown, Church & Parliament (1517–1689)', group: 'ks3', badge: 'KS3 Early Modern' },
   { id: 'first_british_empire', title: 'The First British Empire (1600–1783)', group: 'ks3', badge: 'KS3 Empire' },
-  { id: 'industrialisation_and_empire', title: 'The Industrial Revolution (1750–1900)', group: 'ks3', badge: 'KS3 Industry' },
+  { id: 'industrialisation_and_empire', title: 'The Industrial Revolution (1750–1872)', group: 'ks3', badge: 'KS3 Industry' },
   { id: 'second_british_empire', title: 'The Second British Empire (1783–1914)', group: 'ks3', badge: 'KS3 Empire' },
   { id: 'australia', title: 'Invasion & Survival in Australia', group: 'ks3', badge: 'KS3 World' },
   { id: 'great_war', title: 'Causes of the Great War (1890–1914)', group: 'ks3', badge: 'KS3 Modern' },

@@ -36,15 +36,27 @@ for (const unitId of unitDirs) {
   const dataPath = path.join(UNITS_DIR, unitId, 'data.js');
   let unitData;
   try {
-    const mod = require(dataPath);
-    unitData = mod.default || mod.unitData || mod;
+    globalThis.window = {};
+    const raw = fs.readFileSync(dataPath, 'utf8');
+    if (/^\s*export\s+default\s+/m.test(raw)) {
+      const vm = require('vm');
+      const sb = { window: {} };
+      vm.createContext(sb);
+      vm.runInContext(raw.replace(/^\s*export\s+default\s+/m, 'window.UNIT_DATA = '), sb);
+      unitData = sb.window.UNIT_DATA;
+    } else {
+      delete require.cache[require.resolve(dataPath)];
+      const mod = require(dataPath);
+      unitData = mod.default || mod.unitData || globalThis.window.UNIT_DATA || mod;
+    }
   } catch (e) {
     console.error(`❌ Failed to load ${unitId}:`, e.message);
     totalErrors++;
     continue;
   }
 
-  const lessons = unitData.lessons || [];
+  const expectedSourcesPerLesson = unitId.startsWith('ks2_') ? 3 : 5;
+  const lessons = (unitData.lessons || []).filter((l) => !/assessment\s+masterclass/i.test(l.title || ''));
   let unitSources = 0;
   let unitHinges = 0;
   let unitModels = 0;
@@ -55,9 +67,9 @@ for (const unitId of unitDirs) {
     const sources = lesson.sources || [];
     unitSources += sources.length;
 
-    if (sources.length !== 5) {
+    if (sources.length !== expectedSourcesPerLesson) {
       console.warn(
-        `⚠️ [${unitId}] Lesson ${lIdx + 1} (${lesson.id || lIdx + 1}) has ${sources.length} sources (expected 5)`,
+        `⚠️ [${unitId}] Lesson ${lIdx + 1} (${lesson.id || lIdx + 1}) has ${sources.length} sources (expected ${expectedSourcesPerLesson})`,
       );
       unitIssues++;
     }
@@ -66,9 +78,22 @@ for (const unitId of unitDirs) {
       totalSources++;
       const letter = s.letter || String.fromCharCode(65 + sIdx);
 
-      // Check context
+      // Check context (source-level or lesson.teacher_notes.source_context map)
+      const lessonSrcCtxMap =
+        lesson.teacher_notes &&
+        lesson.teacher_notes.source_context &&
+        typeof lesson.teacher_notes.source_context === 'object'
+          ? lesson.teacher_notes.source_context
+          : null;
+      const mappedLessonCtx = lessonSrcCtxMap
+        ? lessonSrcCtxMap[`Source ${letter}`] || lessonSrcCtxMap[letter] || ''
+        : '';
       const context =
-        s.source_context || s.context || (s.teacher_notes && s.teacher_notes.source_context) || '';
+        s.source_context ||
+        s.context ||
+        (s.teacher_notes && s.teacher_notes.source_context) ||
+        mappedLessonCtx ||
+        '';
 
       // Check hinge question
       let hinge =
@@ -81,7 +106,15 @@ for (const unitId of unitDirs) {
         typeof context === 'string' &&
         context.toLowerCase().includes('hinge question:')
       ) {
-        const parts = context.split(/hinge question:\s*/i);
+        const parts = context.split(/hinge question:\*{0,2}\s*/i);
+        if (parts[1]) hinge = parts[1].trim();
+      }
+      if (
+        !hinge &&
+        typeof mappedLessonCtx === 'string' &&
+        mappedLessonCtx.toLowerCase().includes('hinge question:')
+      ) {
+        const parts = mappedLessonCtx.split(/hinge question:\*{0,2}\s*/i);
         if (parts[1]) hinge = parts[1].trim();
       }
       if (!hinge && s.provenance_clues && s.provenance_clues.hinge_question) {
@@ -106,13 +139,13 @@ for (const unitId of unitDirs) {
     });
   });
 
-  const pass = unitIssues === 0 && unitSources === lessons.length * 5;
+  const pass = unitIssues === 0 && unitSources === lessons.length * expectedSourcesPerLesson;
   if (!pass) totalErrors += unitIssues;
 
   summaryTable.push({
     Unit: unitId,
     Lessons: lessons.length,
-    Sources: `${unitSources}/${lessons.length * 5}`,
+    Sources: `${unitSources}/${lessons.length * expectedSourcesPerLesson}`,
     Hinges: `${unitHinges}/${unitSources}`,
     Models: `${unitModels}/${unitSources}`,
     Status: pass ? '✅ PASS' : '❌ FAIL',

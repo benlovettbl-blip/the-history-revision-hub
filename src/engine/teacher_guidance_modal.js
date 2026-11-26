@@ -722,7 +722,7 @@ function renderSecondaryIwbAnswersHTML(lesson, tn) {
                   ${contextBody ? `<div style="color: #475569; font-size: 0.81rem; margin-top: 4px;"><strong>Context:</strong> ${formatRichText(contextBody)}</div>` : ''}
                   <div style="color: #1e3a8a; font-weight: 700; margin: 5px 0 4px;">Enquiry Q: ${formatRichText(q)}</div>
                   ${ans ? `<div style="color: #0f172a; background: #ffffff; border: 1px solid #e2e8f0; padding: 7px 10px; border-radius: 4px;"><strong style="color: #15803d;">&#10003; Model Answer:</strong> ${formatRichText(ans)}</div>` : ''}
-                  ${extractedHinge ? `<div style="color: #9d174d; font-size: 0.8rem; margin-top: 5px;"><strong><i class="fa-solid fa-comments" style="margin-right: 4px;"></i>Hinge Question:</strong> ${formatRichText(extractedHinge)}</div>` : ''}
+                  ${extractedHinge ? `<div style="color: #9d174d; font-size: 0.8rem; margin-top: 5px;"><strong><i class="fa-solid fa-comments" style="margin-right: 4px;"></i>Discussion Question:</strong> ${formatRichText(extractedHinge)}</div>` : ''}
                 </div>
               `;
             })
@@ -868,8 +868,8 @@ function printSecondaryTeacherGuide({ unitId, unitData, lesson, meta, tn, isGcse
   ${objectivesHtml}
   ${tn.send_adaptation ? `<div class="box"><strong>SEND Classroom Adaptation:</strong> ${formatRichText(tn.send_adaptation)}</div>` : ''}
   ${tn.stretch_challenge ? `<div class="box"><strong>High-Attaining Stretch Challenge:</strong> ${formatRichText(tn.stretch_challenge)}</div>` : ''}
-  <h2>3. Diagnostic Hinge Question &amp; Common Misconceptions</h2>
-  ${tn.hinge_question ? `<div class="box" style="background:#eff6ff;border-left:4px solid #2563eb;"><strong>Hinge Question:</strong> ${formatRichText(tn.hinge_question)}${tn.hinge_guidance ? `<br/><strong>What to Listen For:</strong> ${formatRichText(tn.hinge_guidance)}` : ''}</div>` : ''}
+  <h2>3. Class Discussion &amp; Common Misconceptions</h2>
+  ${tn.hinge_question ? `<div class="box" style="background:#eff6ff;border-left:4px solid #2563eb;"><strong>Discussion Question:</strong> ${formatRichText(tn.hinge_question)}${tn.hinge_guidance ? `<br/><strong>What to Listen For:</strong> ${formatRichText(tn.hinge_guidance)}` : ''}</div>` : ''}
   ${miscHtml}
   <h2>4. Workbook &amp; Exam Answer Key</h2>
   ${renderWorkbookAndExamKeyHTML(lesson, isGcse).replace(/<details\b/g, '<details open')}
@@ -1013,7 +1013,7 @@ export async function openUnifiedTeacherGuidance(lessonId, lessonIndex, unitId, 
           <i class="fa-solid fa-brain"></i> <span>Subject Knowledge Primer</span>
         </button>
         <button type="button" class="tg-tab" data-target="tg-misconceptions" style="background: transparent; border: none; border-bottom: 3px solid transparent; color: #64748b; font-weight: 700; font-size: 0.84rem; padding: 12px 15px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;">
-          <i class="fa-solid fa-triangle-exclamation"></i> <span>Misconceptions &amp; Hinge Discussion</span>
+          <i class="fa-solid fa-triangle-exclamation"></i> <span>Misconceptions &amp; Discussion</span>
         </button>
         <button type="button" class="tg-tab" data-target="tg-answers" style="background: transparent; border: none; border-bottom: 3px solid transparent; color: #64748b; font-weight: 700; font-size: 0.84rem; padding: 12px 15px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;">
           <i class="fa-solid fa-key"></i> <span>Workbook &amp; Exam Key</span>
@@ -1130,7 +1130,7 @@ export async function openUnifiedTeacherGuidance(lessonId, lessonIndex, unitId, 
         <!-- TAB 3: MISCONCEPTIONS & HINGE DISCUSSION -->
         <div id="tg-misconceptions" class="tg-section" style="display: none;">
           <div style="background: #eff6ff; border: 1.5px solid #bfdbfe; border-left: 5px solid #2563eb; border-radius: 8px; padding: 18px 22px; margin-bottom: 22px;">
-            <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #1e40af; letter-spacing: 0.05em; margin-bottom: 4px;">Targeted Hinge Discussion Question</div>
+            <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #1e40af; letter-spacing: 0.05em; margin-bottom: 4px;">Class Discussion Question</div>
             <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 700; color: #1e3a8a; line-height: 1.48; margin-bottom: 10px;">
               ${formatRichText(hingeQuestionText)}
             </div>
@@ -1161,7 +1161,7 @@ export async function openUnifiedTeacherGuidance(lessonId, lessonIndex, unitId, 
                   `,
                     )
                     .join('')
-                : `<div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 18px; font-size: 0.85rem; color: #475569;">Use the Hinge Discussion Question above and Source A–E Hinge Questions in Tab 5 to check pupil conceptual security before starting independent writing.</div>`
+                : `<div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 18px; font-size: 0.85rem; color: #475569;">Use the Class Discussion Question above and Source A–E Discussion Questions in Tab 5 to check pupil conceptual security before starting independent writing.</div>`
             }
           </div>
         </div>

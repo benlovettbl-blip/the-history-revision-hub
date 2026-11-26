@@ -278,9 +278,9 @@ export const TEXTBOOK_CATALOG = {
   industrialisation_and_empire: makeKs3EightPageBook(
     'industrialisation_and_empire',
     'Industrialisation & Protest',
-    'Industrialisation, Power & Protest (1750–1900)',
+    'Industrialisation, Power & Protest (1750–1872)',
     'Year 8',
-    '1750–1900',
+    '1750–1872',
     [
       'Steam, Coal & Cort\'s Iron Revolution',
       'Factory Mills & 1833 Factory Act',

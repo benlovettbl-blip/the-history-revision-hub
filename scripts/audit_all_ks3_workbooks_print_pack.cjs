@@ -22,14 +22,7 @@ const pdfParse = require('pdf-parse');
 const { lintCognitiveClutter } = require('./audit_page_budget.cjs');
 
 const ROOT_DIR = path.resolve(__dirname, '..');
-const launchpadContent = fs.readFileSync(
-  path.join(ROOT_DIR, 'src', 'engine', 'hero_launchpad.js'),
-  'utf8',
-);
-const catalogMatch = launchpadContent.match(
-  /export const CURRICULAR_PILLARS_CATALOG = ({[\s\S]*?});\n\n\/\*\*/,
-);
-const catalog = eval('(' + catalogMatch[1] + ')');
+const { pathToFileURL } = require('url');
 
 const KS3_UNITS = [
   'medieval_england',
@@ -45,7 +38,7 @@ const KS3_UNITS = [
   'australia',
 ];
 
-async function auditUnit(unitKey, browser) {
+async function auditUnit(unitKey, browser, catalog) {
   const htmlPath = path.join(ROOT_DIR, 'public', 'units', unitKey, 'pupil_workbook.html');
   if (!fs.existsSync(htmlPath)) {
     return { unitKey, error: 'HTML file missing: ' + htmlPath };
@@ -167,6 +160,10 @@ async function run() {
     '========================================================================================\n',
   );
 
+  const { UNIT_RESOURCES_CATALOG: catalog } = await import(
+    pathToFileURL(path.join(ROOT_DIR, 'src', 'data', 'unit_resources_catalog.js')).href
+  );
+
   const browser = await puppeteer.launch({
     headless: 'new',
     executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
@@ -177,7 +174,7 @@ async function run() {
   try {
     for (const u of KS3_UNITS) {
       process.stdout.write(`Auditing [${u}]... `);
-      const res = await auditUnit(u, browser);
+      const res = await auditUnit(u, browser, catalog);
       results.push(res);
       console.log(`Done (${res.pageCount} pages, PDF: ${res.pdfStats?.numpages || 'none'}p)`);
     }

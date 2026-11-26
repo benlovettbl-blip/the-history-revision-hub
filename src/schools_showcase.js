@@ -207,7 +207,7 @@ export function renderSchoolsShowcase() {
               <div style="font-size: 0.74rem; font-weight: 800; color: #d97706; text-transform: uppercase; margin-bottom: 4px;">4. Mastery Exam Pack</div>
               <h3 style="font-size: 1rem; font-weight: 800; margin: 0 0 6px; color: var(--text-main, #0c2340);">Timed Practice &amp; Mark Ladders</h3>
               <p style="font-size: 0.85rem; line-height: 1.55; margin: 0; color: var(--text-muted, #475569);">
-                Original Hub exam-style papers, 3-level model answers, 2-lesson teacher delivery sequences, and classroom Hinge Questions.
+                Original Hub exam-style papers, 3-level model answers, 2-lesson teacher delivery sequences, and classroom Discussion Questions.
               </p>
             </div>
             <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.8rem; font-weight: 700;">

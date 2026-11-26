@@ -165,11 +165,11 @@ export const SEO_UNIT_ROUTES = [
     aliases: ['industrialisation-and-empire'],
     keyStage: 'Key Stage 3',
     examBoard: 'UK National Curriculum Key Stage 3 History',
-    heading: 'The Industrial Revolution: Steam, Labour & Protest (1750–1900)',
+    heading: 'The Industrial Revolution: Steam, Labour & Protest (1750–1872)',
     seoTitle:
-      'The Industrial Revolution (1750–1900) | KS3 History Lessons & Revision | The History Revision Hub',
+      'The Industrial Revolution (1750–1872) | KS3 History Lessons & Revision | The History Revision Hub',
     metaDescription:
-      'Interactive UK Key Stage 3 History lessons, primary sources, studio audio read-alouds, and retrieval quizzes on Britain’s Industrial Revolution (1750–1900): steam power, factory conditions, Peterloo, Chartism, and democratic reform.',
+      'Interactive UK Key Stage 3 History lessons, primary sources, studio audio read-alouds, and retrieval quizzes on Britain’s Industrial Revolution (1750–1872): steam power, factory conditions, Peterloo, Chartism, and democratic reform.',
     priority: '0.85',
   },
   {

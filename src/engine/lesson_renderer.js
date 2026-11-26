@@ -2919,7 +2919,7 @@ export function renderLesson(lesson) {
             </div>
           </div>
           <p style="margin: 0 ${cleanHinge ? '0 8px 0' : '0'}; font-size: ${isStageHook ? '0.88rem' : '0.95rem'}; line-height: ${isStageHook ? '1.52' : '1.6'}; color: #cbd5e1;">${spot.details}</p>
-          ${cleanHinge ? `<div style="background: rgba(245, 158, 11, 0.14); border-left: 3px solid #f59e0b; padding: ${isStageHook ? '6px 10px' : '8px 12px'}; border-radius: 4px; font-size: ${isStageHook ? '0.82rem' : '0.88rem'}; color: #fde68a; line-height: 1.45;"><strong style="color: #fbbf24; font-style: normal; font-family: 'Inter', sans-serif; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; margin-right: 5px;">Hinge Question:</strong><span style="font-style: italic;">${cleanHinge}</span></div>` : ''}
+          ${cleanHinge ? `<div style="background: rgba(245, 158, 11, 0.14); border-left: 3px solid #f59e0b; padding: ${isStageHook ? '6px 10px' : '8px 12px'}; border-radius: 4px; font-size: ${isStageHook ? '0.82rem' : '0.88rem'}; color: #fde68a; line-height: 1.45;"><strong style="color: #fbbf24; font-style: normal; font-family: 'Inter', sans-serif; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; margin-right: 5px;">Class Discussion:</strong><span style="font-style: italic;">${cleanHinge}</span></div>` : ''}
         `;
       };
 

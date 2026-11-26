@@ -29,10 +29,10 @@ export const INDUSTRIALISATION_AND_EMPIRE_CORNERS = {
       },
       {
         corner: "Corner 4", location: "Back Right", color: "#059669", bg: "#f0fdf4", border: "#86efac", badgeBg: "#dcfce7",
-        label: "IMPERIAL TRADE NETWORKS",
-        title: "Colonial Raw Materials & Captive Global Markets",
-        detail: "The British Empire secured cheap raw slave-grown American cotton and forced captive overseas colonial populations to buy British manufactured textiles.",
-        starter: "&ldquo;Our corner was decisive because global imperial trade provided both the raw cotton and the captive worldwide markets that sustained industrial growth...&rdquo;"
+        label: "NAVAL DEMAND & WATERWAYS",
+        title: "Portsmouth Dockyard Contracts & Navigable Rivers",
+        detail: "Relentless Royal Navy demand for shatter-proof anchors and hull bolts at Portsmouth Dockyard—paired with navigable rivers and coal canals—guaranteed an instant mass market for Hampshire wrought iron.",
+        starter: "&ldquo;Our corner was decisive because Royal Navy contracts at Portsmouth Dockyard and water transport gave inventors like Henry Cort a guaranteed market for mass-produced iron...&rdquo;"
       }
     ]
   },

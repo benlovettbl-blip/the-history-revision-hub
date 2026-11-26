@@ -334,7 +334,7 @@ export const KS2_TEACHER_GUIDANCE_DATA = {
     curriculumLinks: `A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 (World War II & The Home Front: Outbreak & Civilian Defences).`,
     timeline: [
       { time: '00–10 mins', phase: 'Do Now Starter', activity: 'Pupils complete the retrieval starter checking prior knowledge of 1914–18, maps of Europe, wireless radio, and Britain in 1939.' },
-      { time: '10–25 mins', phase: 'Primary Source Enquiry', activity: 'Project Source A (schoolchildren practising a playground gas mask drill) and Source B (1939 civilian black rubber gas mask & filter tin). Discuss using the Hinge Question.' },
+      { time: '10–25 mins', phase: 'Primary Source Enquiry', activity: 'Project Source A (schoolchildren practising a playground gas mask drill) and Source B (1939 civilian black rubber gas mask & filter tin). Discuss using the Class Discussion Question.' },
       { time: '25–50 mins', phase: 'Worksheet Application', activity: 'Pupils complete Task 1 (Gas Mask Detective), Task 2 (3-Stage September 1939 Timeline synced with the board), Task 3 (Home Front Emergency Kit & Carrier Label), and Task 4 (Thinking Heads).' },
       { time: '50–60 mins', phase: 'Plenary & Quiz', activity: 'Pupils write their Task 5 Mission Challenge paragraph answering the Enquiry Question and complete the retrieval check.' },
     ],
@@ -871,9 +871,9 @@ function printKs2TeacherGuide(sheet, guide, liveLesson) {
   <h2>2. Non-Specialist Subject Knowledge Primer</h2>
   <div class="box primer">${guide.subjectPrimer}</div>
 
-  <h2>3. Hinge Question & Common Primary Misconceptions</h2>
+  <h2>3. Class Discussion & Common Primary Misconceptions</h2>
   <div class="box hinge">
-    <div><strong>Hinge Discussion Question:</strong> ${guide.hingeQuestion}</div>
+    <div><strong>Class Discussion Question:</strong> ${guide.hingeQuestion}</div>
     <div style="margin-top:4px;"><strong>What to Listen For:</strong> ${guide.hingeGuidance}</div>
   </div>
   ${misconceptionsHtml}
@@ -1237,7 +1237,7 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
           <i class="fa-solid fa-brain"></i> <span>Subject Knowledge Primer</span>
         </button>
         <button class="tg-tab" data-target="tg-misconceptions" style="background: transparent; border: none; border-bottom: 3px solid transparent; color: #64748b; font-weight: 700; font-size: 0.85rem; padding: 12px 16px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;">
-          <i class="fa-solid fa-triangle-exclamation"></i> <span>Misconceptions &amp; Hinge Discussion</span>
+          <i class="fa-solid fa-triangle-exclamation"></i> <span>Misconceptions &amp; Discussion</span>
         </button>
         <button class="tg-tab" data-target="tg-answers" style="background: transparent; border: none; border-bottom: 3px solid transparent; color: #64748b; font-weight: 700; font-size: 0.85rem; padding: 12px 16px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;">
           <i class="fa-solid fa-key"></i> <span>Worksheet &amp; Workbook Key</span>
@@ -1351,7 +1351,7 @@ export function openKs2TeacherGuidanceModal(lessonId, lessonIndex) {
           
           <!-- Hinge Discussion Question Box -->
           <div style="background: #eff6ff; border: 1.5px solid #bfdbfe; border-left: 5px solid #2563eb; border-radius: 6px; padding: 18px 22px; margin-bottom: 22px;">
-            <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #1e40af; letter-spacing: 0.5px; margin-bottom: 4px;">Targeted Hinge Discussion Question</div>
+            <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #1e40af; letter-spacing: 0.5px; margin-bottom: 4px;">Class Discussion Question</div>
             <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; font-weight: 700; color: #1e3a8a; line-height: 1.5; margin-bottom: 10px;">
               ${guide.hingeQuestion}
             </div>

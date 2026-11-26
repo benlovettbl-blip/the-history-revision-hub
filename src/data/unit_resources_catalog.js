@@ -917,7 +917,7 @@ export const UNIT_RESOURCES_CATALOG = {
   },
 
   industrialisation_and_empire: {
-    unitTitle: 'Industrialisation, Power & Protest (1750–1900)',
+    unitTitle: 'Industrialisation, Power & Protest (1750–1872)',
     specSubtitle: 'Key Stage 3 • Social & Economic Transformation',
     stage: 'ks3',
     textbook: {

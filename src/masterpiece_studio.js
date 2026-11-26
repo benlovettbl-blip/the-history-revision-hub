@@ -110,9 +110,18 @@ export function buildDynamicStudioItem(payload) {
     '';
   const lessonEnquiry =
     lesson && (lesson.enquiry || lesson.enquiry_question || lesson.enquiryQuestion || lesson.inquiry_question);
-  const context = (source && source.source_context) || lessonEnquiry || '';
+  const rawContext = (source && source.source_context) || lessonEnquiry || '';
+  const hingeSplitMatch = String(rawContext).match(
+    /\*{0,2}(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\*{0,2}\s*([\s\S]*)$/i,
+  );
+  const context = String(rawContext)
+    .replace(/\s*\*{0,2}(?:Hinge Question|Discussion Prompt|Discussion Question|Question):\*{0,2}[\s\S]*$/i, '')
+    .replace(/\*\*([^*]+)\*\*/g, '$1')
+    .replace(/\*([^*]+)\*/g, '$1')
+    .trim();
   const hinge =
     (source && source.hinge_question) ||
+    (hingeSplitMatch && hingeSplitMatch[1] ? hingeSplitMatch[1].replace(/\*/g, '').trim() : '') ||
     lessonEnquiry ||
     'What does this primary source reveal about historical power, motive, and intent?';
   const citation =

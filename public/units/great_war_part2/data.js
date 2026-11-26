@@ -90,7 +90,7 @@ export default {
             "trigger": "Impoverished Edwardian youths faced grueling factory hours and precarious wages, making regular army food, clean uniforms, and steady pay deeply appealing.",
             "connective": "Combined economic necessity with the naive belief that the war would be an exciting adventure ‘over by Christmas’, speeding recruitment.",
             "question": "Why did taking the \"King’s shilling\" appeal to poor working-class men?",
-            "prose_hash": "b5025fe240"
+            "prose_hash": "8bc3d837c1"
           },
           {
             "step": 5,
@@ -236,7 +236,7 @@ export default {
           "question": "Why did taking the \"King’s shilling\" appeal to poor working-class men?",
           "questionHeading": "Why did taking the \"King’s shilling\" appeal to poor working-class men?",
           "focusClue": "Why did taking the \"King’s shilling\" appeal to poor working-class men?",
-          "prose_hash": "b5025fe240"
+          "prose_hash": "8bc3d837c1"
         },
         {
           "step": 5,
@@ -746,9 +746,9 @@ export default {
             "Enlisting earned the 'King’s Shilling' and regular army pay of one shilling and two pence (1s 2d) a day, three guaranteed hot meals, clean woollen uniforms, and sturdy leather boots.",
             "Naive teenage lads viewed joining up as an exhilarating overseas adventure and a chance to travel the world, convinced that the fighting would be glorious, swift, and finished before Christmas."
           ],
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Beyond patriotic fervour, enlistment provided an immediate escape from harsh Edwardian economic hardship. Many working-class labourers suffered low wages, damp tenement housing, and exhausting factory shifts, making military life appear genuinely attractive.</p><p class=\"prose-p\">Taking the King’s shilling offered guaranteed regular pay & food, warm woolen uniforms, and sturdy boots that impoverished families struggled to afford. Naive beliefs that the overseas adventure would be over by Christmas encouraged thousands to escape factory drudgery before the fighting ended.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Beyond patriotic fervour, enlistment provided an immediate escape from harsh Edwardian economic hardship. Many working-class labourers suffered low wages, damp tenement housing, and exhausting factory shifts, making military life appear genuinely attractive.</p><p class=\"prose-p\">Taking the King’s shilling offered guaranteed regular pay and food, warm woolen uniforms, and sturdy boots that impoverished families struggled to afford. Naive beliefs that the overseas adventure would be over by Christmas encouraged thousands to escape factory drudgery before the fighting ended.</p>",
           "heading": "Poverty, Adventure & The Lure of the King’s Shilling",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Beyond patriotic fervour, enlistment provided an immediate escape from harsh Edwardian economic hardship. Many working-class labourers suffered low wages, damp tenement housing, and exhausting factory shifts, making military life appear genuinely attractive.</p><p class=\"prose-p\">Taking the King’s shilling offered guaranteed regular pay & food, warm woolen uniforms, and sturdy boots that impoverished families struggled to afford. Naive beliefs that the overseas adventure would be over by Christmas encouraged thousands to escape factory drudgery before the fighting ended.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Beyond patriotic fervour, enlistment provided an immediate escape from harsh Edwardian economic hardship. Many working-class labourers suffered low wages, damp tenement housing, and exhausting factory shifts, making military life appear genuinely attractive.</p><p class=\"prose-p\">Taking the King’s shilling offered guaranteed regular pay and food, warm woolen uniforms, and sturdy boots that impoverished families struggled to afford. Naive beliefs that the overseas adventure would be over by Christmas encouraged thousands to escape factory drudgery before the fighting ended.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> Beyond patriotic fervour, enlistment provided an immediate escape from harsh Edwardian economic hardship. Many working-class labourers suffered low wages, damp tenement housing, and exhausting factory shifts, making military life appear genuinely attractive.</p><p class=\"prose-p\">Taking the King’s shilling offered guaranteed regular pay & food, warm woolen uniforms, and sturdy boots that impoverished families struggled to afford. Naive beliefs that the overseas adventure would be over by Christmas encouraged thousands to escape factory drudgery before the fighting ended.</p>",
           "image": "/images/upgraded/ks3-empire-gw/gw2_l1_blk3_uniform_boots_fitting_q30069.jpg",
           "caption": "British recruits being fitted with warm woollen tunics, greatcoats, and regulation nailed leather ankle boots (Imperial War Museums, Q 30069): Taking the \"King’s Shilling\" guaranteed working-class volunteers regular pay, hot meals, and sturdy clothing that many impoverished Edwardian families struggled to afford.",
@@ -1223,7 +1223,8 @@ export default {
             "html": "Britain entered war with just <strong>120,000 regular soldiers</strong> and no conscription. War Secretary <strong>Lord Kitchener</strong> called for <strong>500,000 volunteers</strong> immediately.",
             "spoken": "Why were young British men so eager to volunteer in 1914? <short pause> Britain entered war with just 120,000 regular soldiers and no conscription. War Secretary Lord Kitchener called for 500,000 volunteers immediately.",
             "paired_prose_hash": "4e2b8a472c",
-            "connective": "Why were young British men so eager to volunteer in 1914?"
+            "connective": "Why were young British men so eager to volunteer in 1914?",
+            "prose_hash": "4e2b8a472c"
           },
           {
             "badge": "Stage 2",
@@ -1235,7 +1236,8 @@ export default {
             "html": "Germany invaded <strong>neutral Belgium</strong> and called the <strong>1839 Treaty of London</strong> a 'scrap of paper'. Reports of <strong>civilian atrocities</strong> sparked moral outrage across Britain.",
             "spoken": "German actions in Belgium quickly ignited moral anger across Britain. <short pause> Germany invaded neutral Belgium and called the 1839 Treaty of London a 'scrap of paper'. Reports of civilian atrocities sparked moral outrage across Britain.",
             "paired_prose_hash": "c1e2bdea33",
-            "connective": "German actions in Belgium quickly ignited moral anger across Britain."
+            "connective": "German actions in Belgium quickly ignited moral anger across Britain.",
+            "prose_hash": "c1e2bdea33"
           },
           {
             "badge": "Stage 3",
@@ -1248,7 +1250,8 @@ export default {
             "html": "<strong>Pals Battalions</strong> let friends, neighbours, and workmates enlist and fight side by side. High morale came with terrible risk: one battle could devastate a <strong>whole town</strong>.",
             "spoken": "To organise eager crowds, towns formed local units together. <short pause> Pals Battalions let friends, neighbours, and workmates enlist and fight side by side. High morale came with terrible risk: one battle could devastate a whole town .",
             "paired_prose_hash": "b285b3d662",
-            "connective": "To organise eager crowds, towns formed local units together."
+            "connective": "To organise eager crowds, towns formed local units together.",
+            "prose_hash": "b285b3d662"
           },
           {
             "badge": "Stage 4",
@@ -1260,7 +1263,8 @@ export default {
             "html": "Taking the <strong>King’s shilling</strong> gave poor workers regular pay, hot food, and <strong>sturdy boots</strong>. Poets like <strong>Jessie Pope</strong> made war sound like a quick adventure.",
             "spoken": "Harsh poverty at home also pushed working men forward. <short pause> Taking the King’s shilling gave poor workers regular pay, hot food, and sturdy boots . Poets like Jessie Pope made war sound like a quick adventure.",
             "paired_prose_hash": "b5025fe240",
-            "connective": "Harsh poverty at home also pushed working men forward."
+            "connective": "Harsh poverty at home also pushed working men forward.",
+            "prose_hash": "8bc3d837c1"
           },
           {
             "badge": "Stage 5",
@@ -1272,7 +1276,8 @@ export default {
             "html": "Pointing posters demanded every man do his duty. Meanwhile, women in the <strong>White Feather Movement</strong> handed <strong>white feathers</strong> to civilians to shame them as <strong>cowards</strong>.",
             "spoken": "Those who hesitated faced fierce social pressure in public. <short pause> Pointing posters demanded every man do his duty. Meanwhile, women in the White Feather Movement handed white feathers to civilians to shame them as cowards .",
             "paired_prose_hash": "983d5f3344",
-            "connective": "Those who hesitated faced fierce social pressure in public."
+            "connective": "Those who hesitated faced fierce social pressure in public.",
+            "prose_hash": "983d5f3344"
           },
           {
             "badge": "⚡ Outcome",
@@ -1351,7 +1356,7 @@ export default {
             "trigger": "Waterlogged clay trenches, freezing winters, and rotting corpses caused debilitating trench foot, while relentless industrial artillery bombardments induced severe shell shock.",
             "connective": "Physically and mentally degraded frontline soldiers, making survival an ongoing battle against the elements as much as against the enemy.",
             "question": "What physical and mental trauma did soldiers suffer in flooded trenches?",
-            "prose_hash": "4b0a538b6e"
+            "prose_hash": "9262e992ea"
           },
           {
             "step": 4,
@@ -1373,7 +1378,7 @@ export default {
             "trigger": "Haig faced harsh criticism as a stubborn ‘butcher’, yet he systematically integrated tanks, creeping artillery barrages, sound-ranging, and air reconnaissance.",
             "connective": "Gradually transformed the British Army into the sophisticated combined-arms fighting force that broke the German Hindenburg Line in 1918.",
             "question": "Why do historians still debate General Douglas Haig’s Somme leadership?",
-            "prose_hash": "16fba78f89"
+            "prose_hash": "95b70f5498"
           }
         ]
       },
@@ -1475,7 +1480,7 @@ export default {
           "question": "What physical and mental trauma did soldiers suffer in flooded trenches?",
           "questionHeading": "What physical and mental trauma did soldiers suffer in flooded trenches?",
           "focusClue": "What physical and mental trauma did soldiers suffer in flooded trenches?",
-          "prose_hash": "4b0a538b6e"
+          "prose_hash": "9262e992ea"
         },
         {
           "step": 4,
@@ -1541,7 +1546,7 @@ export default {
           "question": "Why do historians still debate General Douglas Haig’s Somme leadership?",
           "questionHeading": "Why do historians still debate General Douglas Haig’s Somme leadership?",
           "focusClue": "Why do historians still debate General Douglas Haig’s Somme leadership?",
-          "prose_hash": "16fba78f89"
+          "prose_hash": "95b70f5498"
         }
       ],
       "learning_objectives": {
@@ -2172,9 +2177,9 @@ export default {
             "Millions of body lice infested uniforms, causing itching and trench fever, while giant brown rats fed on corpses and rations. Sleep was broken by predawn stand-to drills and night wire repairs.",
             "Day and night, unrelenting artillery shelling shook the earth. The constant terror of instant obliteration caused 'shell shock'—acute psychological trauma leaving soldiers shaking, mute, or catatonic. Over 300 British troops suffering mental breakdown were executed by firing squad for cowardice."
           ],
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Daily survival in Western Front trenches was a relentless ordeal against elemental filth, vermin, and disease. Soldiers stood for days in flooded clay trenches, contracting trench foot & frozen mud infections that caused agonising fungal rot and frequent medical amputations.</p><p class=\"prose-p\">Infantrymen faced relentless heavy shelling from massive howitzers that churned the earth into liquid slush and tore human bodies apart. Surviving prolonged bombardments caused severe shell shock trauma, leaving thousands of traumatised soldiers trembling uncontrollably with shattered nerves.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Daily survival in Western Front trenches was a relentless ordeal against elemental filth, vermin, and disease. Soldiers stood for days in flooded clay trenches, contracting trench foot and frozen mud infections that caused agonising fungal rot and frequent medical amputations.</p><p class=\"prose-p\">Infantrymen faced relentless heavy shelling from massive howitzers that churned the earth into liquid slush and tore human bodies apart. Surviving prolonged bombardments caused severe shell shock trauma, leaving thousands of traumatised soldiers trembling uncontrollably with shattered nerves.</p>",
           "heading": "Physical and Psychological Trauma in the Mud",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Daily survival in Western Front trenches was a relentless ordeal against elemental filth, vermin, and disease. Soldiers stood for days in flooded clay trenches, contracting trench foot & frozen mud infections that caused agonising fungal rot and frequent medical amputations.</p><p class=\"prose-p\">Infantrymen faced relentless heavy shelling from massive howitzers that churned the earth into liquid slush and tore human bodies apart. Surviving prolonged bombardments caused severe shell shock trauma, leaving thousands of traumatised soldiers trembling uncontrollably with shattered nerves.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Daily survival in Western Front trenches was a relentless ordeal against elemental filth, vermin, and disease. Soldiers stood for days in flooded clay trenches, contracting trench foot and frozen mud infections that caused agonising fungal rot and frequent medical amputations.</p><p class=\"prose-p\">Infantrymen faced relentless heavy shelling from massive howitzers that churned the earth into liquid slush and tore human bodies apart. Surviving prolonged bombardments caused severe shell shock trauma, leaving thousands of traumatised soldiers trembling uncontrollably with shattered nerves.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Daily survival in Western Front trenches was a relentless ordeal against elemental filth, vermin, and disease. Soldiers stood for days in flooded clay trenches, contracting trench foot & frozen mud infections that caused agonising fungal rot and frequent medical amputations.</p><p class=\"prose-p\">Infantrymen faced relentless heavy shelling from massive howitzers that churned the earth into liquid slush and tore human bodies apart. Surviving prolonged bombardments caused severe shell shock trauma, leaving thousands of traumatised soldiers trembling uncontrollably with shattered nerves.</p>",
           "image": "/images/great_war_part2/gw2_l2_b2_flooded_trench_western_front_q4665.jpg",
           "caption": "Waterlogged Frontline Trench on the Western Front (January 1917, John Warwick Brooke, Imperial War Museums Q 4665): Standing for days in freezing, knee-deep Flanders and Somme mud caused agonising trench foot, while ceaseless howitzer shelling inflicted severe psychological shell shock.",
@@ -2206,9 +2211,9 @@ export default {
             "However, modern revisionist historians like Gary Sheffield argue Haig was trapped on a steep 'learning curve' in an unprecedented industrial war.",
             "They emphasize that through trial, error, and technological adaptation—coordinating tanks, creeping artillery barrages, aircraft, and infantry—Haig forged the sophisticated combined-arms army that smashed Germany's Hindenburg Line in 1918."
           ],
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Catastrophic Somme casualties ignited bitter historical debate surrounding General Douglas Haig’s leadership. Critics condemned him as a callous butcher who squandered a generation in futile frontal attacks in mud, depicting courageous infantry as lions led by incompetent aristocratic donkeys.</p><p class=\"prose-p\">In contrast, revisionist historians argue Haig was trapped in an industrial learning curve. Through these hard war lessons learnt, British commanders pioneered modern combined-arms tactics: coordinating tanks & combined arms, creeping artillery barrages, and aircraft to achieve decisive Allied victory by 1918.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Catastrophic Somme casualties ignited bitter historical debate surrounding General Douglas Haig’s leadership. Critics condemned him as a callous butcher who squandered a generation in futile frontal attacks in mud, depicting courageous infantry as lions led by incompetent aristocratic donkeys.</p><p class=\"prose-p\">In contrast, revisionist historians argue Haig was trapped in an industrial learning curve. Through these hard war lessons learnt, British commanders pioneered modern combined-arms tactics: coordinating tanks and combined arms, creeping artillery barrages, and aircraft to achieve decisive Allied victory by 1918.</p>",
           "heading": "The Haig Controversy: \"Butcher\" or Modernising General?",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Catastrophic Somme casualties ignited bitter historical debate surrounding General Douglas Haig’s leadership. Critics condemned him as a callous butcher who squandered a generation in futile frontal attacks in mud, depicting courageous infantry as lions led by incompetent aristocratic donkeys.</p><p class=\"prose-p\">In contrast, revisionist historians argue Haig was trapped in an industrial learning curve. Through these hard war lessons learnt, British commanders pioneered modern combined-arms tactics: coordinating tanks & combined arms, creeping artillery barrages, and aircraft to achieve decisive Allied victory by 1918.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Catastrophic Somme casualties ignited bitter historical debate surrounding General Douglas Haig’s leadership. Critics condemned him as a callous butcher who squandered a generation in futile frontal attacks in mud, depicting courageous infantry as lions led by incompetent aristocratic donkeys.</p><p class=\"prose-p\">In contrast, revisionist historians argue Haig was trapped in an industrial learning curve. Through these hard war lessons learnt, British commanders pioneered modern combined-arms tactics: coordinating tanks and combined arms, creeping artillery barrages, and aircraft to achieve decisive Allied victory by 1918.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Catastrophic Somme casualties ignited bitter historical debate surrounding General Douglas Haig’s leadership. Critics condemned him as a callous butcher who squandered a generation in futile frontal attacks in mud, depicting courageous infantry as lions led by incompetent aristocratic donkeys.</p><p class=\"prose-p\">In contrast, revisionist historians argue Haig was trapped in an industrial learning curve. Through these hard war lessons learnt, British commanders pioneered modern combined-arms tactics: coordinating tanks & combined arms, creeping artillery barrages, and aircraft to achieve decisive Allied victory by 1918.</p>",
           "concept_widget": {
             "type": "spectrum_slider",
@@ -2761,7 +2766,8 @@ export default {
             "html": "Deadly <strong>machine guns</strong> and <strong>artillery shrapnel</strong> swept open fields after the Race to the Sea. Armies dug a <strong>400-mile trench line</strong> from Belgium to Switzerland.",
             "spoken": "Did British generals make trench warfare worse, or learn how to win under fire? <short pause> Deadly machine guns and artillery shrapnel swept open fields after the Race to the Sea. Armies dug a 400-mile trench line from Belgium to Switzerland.",
             "paired_prose_hash": "9a0cec6264",
-            "connective": "Did British generals make trench warfare worse, or learn how to win under fire?"
+            "connective": "Did British generals make trench warfare worse, or learn how to win under fire?",
+            "prose_hash": "9a0cec6264"
           },
           {
             "badge": "Stage 2",
@@ -2773,7 +2779,8 @@ export default {
             "html": "Engineers built <strong>three-tier trenches</strong> in <strong>zig-zag lines</strong> to contain shell blasts. Thick <strong>barbed wire</strong> guarded the front while deep concrete dugouts sheltered defenders.",
             "spoken": "Simple ditches soon grew into deep defensive fortresses. <short pause> Engineers built three-tier trenches in zig-zag lines to contain shell blasts. Thick barbed wire guarded the front while deep concrete dugouts sheltered defenders.",
             "paired_prose_hash": "45946c263f",
-            "connective": "Simple ditches soon grew into deep defensive fortresses."
+            "connective": "Simple ditches soon grew into deep defensive fortresses.",
+            "prose_hash": "45946c263f"
           },
           {
             "badge": "Stage 3",
@@ -2786,7 +2793,8 @@ export default {
             "html": "Standing in freezing mud caused painful <strong>trench foot</strong> and amputations. Meanwhile, non-stop <strong>heavy shelling</strong> shattered soldiers’ nerves, causing severe <strong>shell shock</strong>.",
             "spoken": "Inside these flooded ditches, daily life battered body and mind. <short pause> Standing in freezing mud caused painful trench foot and amputations. Meanwhile, non-stop heavy shelling shattered soldiers’ nerves, causing severe shell shock .",
             "paired_prose_hash": "4b0a538b6e",
-            "connective": "Inside these flooded ditches, daily life battered body and mind."
+            "connective": "Inside these flooded ditches, daily life battered body and mind.",
+            "prose_hash": "9262e992ea"
           },
           {
             "badge": "Stage 4",
@@ -2799,7 +2807,8 @@ export default {
             "html": "Haig’s week-long <strong>1.5-million-shell</strong> barrage failed to cut German wire or smash deep dugouts. On <strong>1 July 1916</strong>, machine guns caused <strong>57,470 British casualties</strong>.",
             "spoken": "To break this deadlock, General Haig attacked on the Somme. <short pause> Haig’s week-long 1.5-million-shell barrage failed to cut German wire or smash deep dugouts. On the first of July 1916 , machine guns caused 57,470 British casualties .",
             "paired_prose_hash": "a2dece1016",
-            "connective": "To break this deadlock, General Haig attacked on the Somme."
+            "connective": "To break this deadlock, General Haig attacked on the Somme.",
+            "prose_hash": "a2dece1016"
           },
           {
             "badge": "Stage 5",
@@ -2811,7 +2820,8 @@ export default {
             "html": "Critics branded <strong>General Haig</strong> a butcher wasting brave men in mud. Modern historians argue his army mastered <strong>tanks</strong>, aircraft, and <strong>creeping barrages</strong> by 1918.",
             "spoken": "That terrible loss sparked a fierce debate over Haig’s leadership. <short pause> Critics branded General Haig a butcher wasting brave men in mud. Modern historians argue his army mastered tanks , aircraft, and creeping barrages by 1918.",
             "paired_prose_hash": "16fba78f89",
-            "connective": "That terrible loss sparked a fierce debate over Haig’s leadership."
+            "connective": "That terrible loss sparked a fierce debate over Haig’s leadership.",
+            "prose_hash": "95b70f5498"
           },
           {
             "badge": "⚡ Outcome",
@@ -2869,7 +2879,7 @@ export default {
             "trigger": "Britain could not sustain an industrial continental war alone and immediately mobilised over 4 million colonial troops, merchant sailors, and labourers from across five continents.",
             "connective": "Secured the vital manpower, food shipments, and raw materials needed to keep Allied armies in the field and prevent imperial collapse.",
             "question": "Why did Britain’s war effort depend heavily on four million colonial troops?",
-            "prose_hash": "e3f957ae3a"
+            "prose_hash": "c1ecf449c6"
           },
           {
             "step": 2,
@@ -2880,7 +2890,7 @@ export default {
             "trigger": "Arriving in freezing autumn mud wearing thin tropical khaki, 1.5 million Indian Army troops plugged critical gaps at First Ypres, where Sepoy Khudadad Khan won the first Asian VC.",
             "connective": "Prevented a catastrophic German breakthrough to the Channel ports, proving the exceptional bravery and operational importance of non-white forces.",
             "question": "How did the Indian Expeditionary Force help hold Flanders in 1914?",
-            "prose_hash": "20cc3be567"
+            "prose_hash": "92d4a387db"
           },
           {
             "step": 3,
@@ -2949,7 +2959,7 @@ export default {
           "question": "Why did Britain’s war effort depend heavily on four million colonial troops?",
           "questionHeading": "Why did Britain’s war effort depend heavily on four million colonial troops?",
           "focusClue": "Why did Britain’s war effort depend heavily on four million colonial troops?",
-          "prose_hash": "e3f957ae3a"
+          "prose_hash": "c1ecf449c6"
         },
         {
           "step": 2,
@@ -2982,7 +2992,7 @@ export default {
           "question": "How did the Indian Expeditionary Force help hold Flanders in 1914?",
           "questionHeading": "How did the Indian Expeditionary Force help hold Flanders in 1914?",
           "focusClue": "How did the Indian Expeditionary Force help hold Flanders in 1914?",
-          "prose_hash": "20cc3be567"
+          "prose_hash": "92d4a387db"
         },
         {
           "step": 3,
@@ -3429,9 +3439,9 @@ export default {
             "In addition to frontline manpower, the empire provided vital strategic resources: Canadian wheat, Indian jute and cotton, Australian wool and meat, and Persian and Nigerian oil.",
             "Merchant convoys crossing the Atlantic and Indian Oceans kept Britain fed and supplied with raw materials, turning the empire into the indispensable lifeline that prevented economic collapse and frontline defeat."
           ],
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> The Great War was fundamentally an imperial conflict whose outcome depended entirely on Britain’s global empire. Over four million non-white colonial personnel and dominion troops from five continents mobilised to sustain the British imperial war effort across multiple theatres.</p><p class=\"prose-p\">Britain relied on merchant shipping to transport vital wheat & oil ships from overseas colonies to feed civilians and fuel navies. This vast global supply lifeline provided essential raw materials, industrial labour, and food reserves that prevented Allied economic collapse under German submarine warfare.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> The Great War was fundamentally an imperial conflict whose outcome depended entirely on Britain’s global empire. Over four million non-white colonial personnel and dominion troops from five continents mobilised to sustain the British imperial war effort across multiple theatres.</p><p class=\"prose-p\">Britain relied on merchant shipping to transport vital wheat and oil ships from overseas colonies to feed civilians and fuel navies. This vast global supply lifeline provided essential raw materials, industrial labour, and food reserves that prevented Allied economic collapse under German submarine warfare.</p>",
           "heading": "Mobilising the Empire: A Truly Global Lifeline",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> The Great War was fundamentally an imperial conflict whose outcome depended entirely on Britain’s global empire. Over four million non-white colonial personnel and dominion troops from five continents mobilised to sustain the British imperial war effort across multiple theatres.</p><p class=\"prose-p\">Britain relied on merchant shipping to transport vital wheat & oil ships from overseas colonies to feed civilians and fuel navies. This vast global supply lifeline provided essential raw materials, industrial labour, and food reserves that prevented Allied economic collapse under German submarine warfare.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> The Great War was fundamentally an imperial conflict whose outcome depended entirely on Britain’s global empire. Over four million non-white colonial personnel and dominion troops from five continents mobilised to sustain the British imperial war effort across multiple theatres.</p><p class=\"prose-p\">Britain relied on merchant shipping to transport vital wheat and oil ships from overseas colonies to feed civilians and fuel navies. This vast global supply lifeline provided essential raw materials, industrial labour, and food reserves that prevented Allied economic collapse under German submarine warfare.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> The Great War was fundamentally an imperial conflict whose outcome depended entirely on Britain’s global empire. Over four million non-white colonial personnel and dominion troops from five continents mobilised to sustain the British imperial war effort across multiple theatres.</p><p class=\"prose-p\">Britain relied on merchant shipping to transport vital wheat & oil ships from overseas colonies to feed civilians and fuel navies. This vast global supply lifeline provided essential raw materials, industrial labour, and food reserves that prevented Allied economic collapse under German submarine warfare.</p>",
           "image": "/images/great_war_part2/maps/gw2_map_l3_global_empire_forgotten_fronts_1914_18.svg",
           "image_alt": "KS3 Year 9 1:50m global GIS historical atlas map of the British Empire in the First World War (1914–1918), charting troop and supply sea-lanes connecting undivided British India (~1.4 million volunteers and Sepoy Khudadad Khan VC), Gallipoli and the Middle East (ANZAC, British, Irish, and Indian troops), the Caribbean and British West Indies Regiment (~15,600 men), East and West Africa (>1 million Carrier Corps porters), Shandong in China (~140,000 Chinese Labour Corps workers), Canada, Australia, and New Zealand to Britain and the Western Front",
@@ -3590,9 +3600,9 @@ export default {
             "Their courage plugged gaping holes in the crumbling Allied line at a moment of extreme peril.",
             "On 31 October 1914 at Hollebeke, Sepoy Khudadad Khan kept his machine gun firing alone despite being gravely wounded after his team was killed, becoming the first South Asian soldier awarded the Victoria Cross."
           ],
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In autumn 1914, the Indian Expeditionary Force arrived in France to reinforce exhausted regular British battalions. At First Ypres, courageous Indian troops save Flanders from German breakthrough, suffering horrific casualties while holding flooded frontline trenches in freezing mud & thin khaki cotton uniforms.</p><p class=\"prose-p\">During desperate defensive combat at Hollebeke, Sepoy Khudadad Khan stood alone at his machine gun despite severe wounds, becoming the first Asian soldier wins VC (Victoria Cross). Over 1.3 million Indian volunteers served loyally across Europe, Mesopotamia, and Palestine throughout the conflict.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In autumn 1914, the Indian Expeditionary Force arrived in France to reinforce exhausted regular British battalions. At First Ypres, courageous Indian troops saved Flanders from German breakthrough, suffering horrific casualties while holding flooded frontline trenches in freezing mud and thin khaki cotton uniforms.</p><p class=\"prose-p\">During desperate defensive combat at Hollebeke, Sepoy Khudadad Khan stood alone at his machine gun despite severe wounds, becoming the first Asian soldier wins VC (Victoria Cross). Over 1.3 million Indian volunteers served loyally across Europe, Mesopotamia, and Palestine throughout the conflict.</p>",
           "heading": "The Indian Army in Flanders & Khudadad Khan’s Victoria Cross",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In autumn 1914, the Indian Expeditionary Force arrived in France to reinforce exhausted regular British battalions. At First Ypres, courageous Indian troops save Flanders from German breakthrough, suffering horrific casualties while holding flooded frontline trenches in freezing mud & thin khaki cotton uniforms.</p><p class=\"prose-p\">During desperate defensive combat at Hollebeke, Sepoy Khudadad Khan stood alone at his machine gun despite severe wounds, becoming the first Asian soldier wins VC (Victoria Cross). Over 1.3 million Indian volunteers served loyally across Europe, Mesopotamia, and Palestine throughout the conflict.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In autumn 1914, the Indian Expeditionary Force arrived in France to reinforce exhausted regular British battalions. At First Ypres, courageous Indian troops saved Flanders from German breakthrough, suffering horrific casualties while holding flooded frontline trenches in freezing mud and thin khaki cotton uniforms.</p><p class=\"prose-p\">During desperate defensive combat at Hollebeke, Sepoy Khudadad Khan stood alone at his machine gun despite severe wounds, becoming the first Asian soldier wins VC (Victoria Cross). Over 1.3 million Indian volunteers served loyally across Europe, Mesopotamia, and Palestine throughout the conflict.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In autumn 1914, the Indian Expeditionary Force arrived in France to reinforce exhausted regular British battalions. At First Ypres, courageous Indian troops save Flanders from German breakthrough, suffering horrific casualties while holding flooded frontline trenches in freezing mud & thin khaki cotton uniforms.</p><p class=\"prose-p\">During desperate defensive combat at Hollebeke, Sepoy Khudadad Khan stood alone at his machine gun despite severe wounds, becoming the first Asian soldier wins VC (Victoria Cross). Over 1.3 million Indian volunteers served loyally across Europe, Mesopotamia, and Palestine throughout the conflict.</p>",
           "image": "/images/great_war_part2/gw2_l3_b1_indian_mg_crew_flanders_1914.jpg",
           "image_alt": "Three turbaned Indian Army infantrymen crouching behind a mud-and-sandbag parapet in Flanders during winter 1914–1915 firing a belt-fed Maxim machine gun mounted on a tripod across flat fields",
@@ -4196,7 +4206,8 @@ export default {
             "html": "Britain’s war effort relied on over <strong>four million</strong> colonial and dominion troops across five continents, backed by overseas ships carrying <strong>wheat, oil</strong>, and supplies.",
             "spoken": "Why were over four million Empire troops forgotten after 1918? <short pause> Britain’s war effort relied on over four million colonial and dominion troops across five continents, backed by overseas ships carrying wheat, oil , and supplies.",
             "paired_prose_hash": "e3f957ae3a",
-            "connective": "Why were over four million Empire troops forgotten after 1918?"
+            "connective": "Why were over four million Empire troops forgotten after 1918?",
+            "prose_hash": "c1ecf449c6"
           },
           {
             "badge": "Stage 2",
@@ -4208,7 +4219,8 @@ export default {
             "html": "At <strong>First Ypres</strong>, Indian soldiers held freezing trenches in thin cotton uniforms. Wounded <strong>Khudadad Khan</strong> won the first South Asian <strong>Victoria Cross</strong>.",
             "spoken": "In autumn 1914, Indian soldiers rescued British lines in Flanders. <short pause> At First Ypres , Indian soldiers held freezing trenches in thin cotton uniforms. Wounded Khudadad Khan won the first South Asian Victoria Cross .",
             "paired_prose_hash": "20cc3be567",
-            "connective": "In autumn 1914, Indian soldiers rescued British lines in Flanders."
+            "connective": "In autumn 1914, Indian soldiers rescued British lines in Flanders.",
+            "prose_hash": "92d4a387db"
           },
           {
             "badge": "Stage 3",
@@ -4221,7 +4233,8 @@ export default {
             "html": "Pinned below steep cliffs at <strong>Gallipoli</strong> in 1915, Australian and New Zealand soldiers forged the <strong>ANZAC legend</strong>, while <strong>Caribbean volunteers</strong> served in the BWIR.",
             "spoken": "Empire troops also fought far beyond the Western Front. <short pause> Pinned below steep cliffs at Gallipoli in 1915, Australian and New Zealand soldiers forged the ANZAC legend , while Caribbean volunteers served in the BWIR.",
             "paired_prose_hash": "c08e712cfc",
-            "connective": "Empire troops also fought far beyond the Western Front."
+            "connective": "Empire troops also fought far beyond the Western Front.",
+            "prose_hash": "c08e712cfc"
           },
           {
             "badge": "Stage 4",
@@ -4234,7 +4247,8 @@ export default {
             "html": "Around <strong>140,000 workers</strong> in the <strong>Chinese Labour Corps</strong> dug trenches and unloaded shells under fire, yet British officers locked them inside <strong>segregated camps</strong>.",
             "spoken": "Behind the front lines, global workers kept Allied armies supplied. <short pause> Around 140,000 workers in the Chinese Labour Corps dug trenches and unloaded shells under fire, yet British officers locked them inside segregated camps .",
             "paired_prose_hash": "4d8b361c6b",
-            "connective": "Behind the front lines, global workers kept Allied armies supplied."
+            "connective": "Behind the front lines, global workers kept Allied armies supplied.",
+            "prose_hash": "4d8b361c6b"
           },
           {
             "badge": "Stage 5",
@@ -4246,7 +4260,8 @@ export default {
             "html": "Over <strong>one million African carriers</strong> died without marked headstones, and non-white troops were barred from the <strong>1919 London Victory Parade</strong> and denied <strong>equal pensions</strong>.",
             "spoken": "When peace arrived, imperial racism erased non-white sacrifice. <short pause> Over one million African carriers died without marked headstones, and non-white troops were barred from the 1919 London Victory Parade and denied equal pensions .",
             "paired_prose_hash": "d36491b4d4",
-            "connective": "When peace arrived, imperial racism erased non-white sacrifice."
+            "connective": "When peace arrived, imperial racism erased non-white sacrifice.",
+            "prose_hash": "d36491b4d4"
           },
           {
             "badge": "⚡ Outcome",
@@ -5582,7 +5597,8 @@ export default {
             "html": "Passed in August 1914, <strong>DORA</strong> gave the state sweeping control—seizing factories, enforcing strict <strong>censorship</strong>, shutting pubs early, and <strong>watering down beer</strong>.",
             "spoken": "How far did total war transform daily life on the British Home Front? <short pause> Passed in August 1914, DORA gave the state sweeping control, seizing factories, enforcing strict censorship , shutting pubs early, and watering down beer .",
             "paired_prose_hash": "82a5b0daf9",
-            "connective": "How far did total war transform daily life on the British Home Front?"
+            "connective": "How far did total war transform daily life on the British Home Front?",
+            "prose_hash": "82a5b0daf9"
           },
           {
             "badge": "Stage 2",
@@ -5594,7 +5610,8 @@ export default {
             "html": "After newspapers exposed the <strong>1915 shell famine</strong>, <strong>David Lloyd George</strong> took charge of the new <strong>Ministry of Munitions</strong> and placed weapons factories under state control.",
             "spoken": "Frontline ammunition shortages soon forced even deeper state intervention. <short pause> After newspapers exposed the 1915 shell famine , David Lloyd George took charge of the new Ministry of Munitions and placed weapons factories under state control.",
             "paired_prose_hash": "91e2de0473",
-            "connective": "Frontline ammunition shortages soon forced even deeper state intervention."
+            "connective": "Frontline ammunition shortages soon forced even deeper state intervention.",
+            "prose_hash": "91e2de0473"
           },
           {
             "badge": "Stage 3",
@@ -5607,7 +5624,8 @@ export default {
             "html": "In January 1916, the <strong>Military Service Act</strong> forced men aged 18 to 41 into uniform. Around <strong>16,000 conscientious objectors</strong> refused to fight and faced <strong>harsh prison</strong>.",
             "spoken": "Meanwhile, heavy trench casualties dried up Britain’s supply of volunteers. <short pause> In January 1916, the Military Service Act forced men aged 18 to 41 into uniform. Around 16,000 conscientious objectors refused to fight and faced harsh prison .",
             "paired_prose_hash": "89a6ef37c1",
-            "connective": "Meanwhile, heavy trench casualties dried up Britain’s supply of volunteers."
+            "connective": "Meanwhile, heavy trench casualties dried up Britain’s supply of volunteers.",
+            "prose_hash": "89a6ef37c1"
           },
           {
             "badge": "Stage 4",
@@ -5620,7 +5638,8 @@ export default {
             "html": "Nearly one million female <strong>Canary Girls</strong> braved toxic <strong>TNT yellowing</strong> and deadly blasts like Silvertown to manufacture <strong>80% of Britain’s shells</strong>.",
             "spoken": "With men fighting abroad, women entered heavy war factories. <short pause> Nearly one million female Canary Girls braved toxic TNT yellowing and deadly blasts like Silvertown to manufacture 80% of Britain’s shells .",
             "paired_prose_hash": "6b5c270d35",
-            "connective": "With men fighting abroad, women entered heavy war factories."
+            "connective": "With men fighting abroad, women entered heavy war factories.",
+            "prose_hash": "6b5c270d35"
           },
           {
             "badge": "Stage 5",
@@ -5632,7 +5651,8 @@ export default {
             "html": "German <strong>U-boats</strong> sank food ships until Britain had six weeks of wheat left. In 1918, compulsory <strong>ration books</strong> and <strong>naval convoys</strong> beat starvation.",
             "spoken": "At sea, German submarines nearly starved the British Home Front. <short pause> German U-boats sank food ships until Britain had six weeks of wheat left. In 1918, compulsory ration books and naval convoys beat starvation.",
             "paired_prose_hash": "551f762102",
-            "connective": "At sea, German submarines nearly starved the British Home Front."
+            "connective": "At sea, German submarines nearly starved the British Home Front.",
+            "prose_hash": "551f762102"
           },
           {
             "badge": "⚡ Outcome",
@@ -7014,7 +7034,8 @@ export default {
             "html": "Crushed by Allied advances and blockade, <strong>Kiel sailors mutinied</strong> and the Kaiser fled. On <strong>11 November 1918</strong>, Germany signed the <strong>Compiègne railway Armistice</strong>.",
             "spoken": "Did the Treaty of Versailles solve 1914, or create the nightmares of 1939? <short pause> Crushed by Allied advances and blockade, Kiel sailors mutinied and the Kaiser fled. On the eleventh of November 1918 , Germany signed the Compiègne railway Armistice .",
             "paired_prose_hash": "475b313b5a",
-            "connective": "Did the Treaty of Versailles solve 1914, or create the nightmares of 1939?"
+            "connective": "Did the Treaty of Versailles solve 1914, or create the nightmares of 1939?",
+            "prose_hash": "475b313b5a"
           },
           {
             "badge": "Stage 2",
@@ -7027,7 +7048,8 @@ export default {
             "html": "In Paris, <strong>Wilson</strong> pushed his Fourteen Points and League, <strong>Clemenceau</strong> demanded harsh revenge to shield France, and <strong>Lloyd George</strong> sought middle-ground trade.",
             "spoken": "Victory immediately exposed deep divisions among Allied leaders in Paris. <short pause> In Paris, Wilson pushed his Fourteen Points and League, Clemenceau demanded harsh revenge to shield France, and Lloyd George sought middle-ground trade.",
             "paired_prose_hash": "25b5bf4f30",
-            "connective": "Victory immediately exposed deep divisions among Allied leaders in Paris."
+            "connective": "Victory immediately exposed deep divisions among Allied leaders in Paris.",
+            "prose_hash": "25b5bf4f30"
           },
           {
             "badge": "Stage 3",
@@ -7039,7 +7061,8 @@ export default {
             "html": "<strong>Article 231</strong> blamed Germany, imposing <strong>£6.6 billion reparations</strong>, a 100,000-man army cap, and 13% land losses. Outraged Germans called this forced peace a <strong>Diktat</strong>.",
             "spoken": "Their compromise treaty hit Germany’s new republic with harsh penalties. <short pause> Article 231 blamed Germany, imposing 6 pounds.6 billion reparations , a 100,000-man army cap, and 13% land losses. Outraged Germans called this forced peace a Diktat .",
             "paired_prose_hash": "aa0af3d338",
-            "connective": "Their compromise treaty hit Germany’s new republic with harsh penalties."
+            "connective": "Their compromise treaty hit Germany’s new republic with harsh penalties.",
+            "prose_hash": "aa0af3d338"
           },
           {
             "badge": "Stage 4",
@@ -7051,7 +7074,8 @@ export default {
             "html": "Economist <strong>John Maynard Keynes</strong> warned the treaty would ruin Europe, while cartoonist <strong>Will Dyson</strong> drew a weeping <strong>'1940 Class' child</strong> predicting future war.",
             "spoken": "Sharp observers warned at once that this settlement would fail. <short pause> Economist John Maynard Keynes warned the treaty would ruin Europe, while cartoonist Will Dyson drew a weeping '1940 Class' child predicting future war.",
             "paired_prose_hash": "0692bd2c5e",
-            "connective": "Sharp observers warned at once that this settlement would fail."
+            "connective": "Sharp observers warned at once that this settlement would fail.",
+            "prose_hash": "0692bd2c5e"
           },
           {
             "badge": "Stage 5",
@@ -7064,7 +7088,8 @@ export default {
             "html": "<strong>Hitler</strong> exploited anger over Versailles, yet modern historians argue war returned because Britain and France <strong>failed to enforce</strong> the treaty in the <strong>1930s</strong>.",
             "spoken": "Historians still debate why that warning came true by 1939. <short pause> Hitler exploited anger over Versailles, yet modern historians argue war returned because Britain and France failed to enforce the treaty in the 1930s .",
             "paired_prose_hash": "d0672a80d8",
-            "connective": "Historians still debate why that warning came true by 1939."
+            "connective": "Historians still debate why that warning came true by 1939.",
+            "prose_hash": "d0672a80d8"
           },
           {
             "badge": "⚡ Outcome",
@@ -7208,7 +7233,7 @@ export default {
       ],
       "audio_file": "/audio/reading/great_war_part2/r0.mp3",
       "studio_audio": "/audio/reading/great_war_part2/r0.mp3",
-      "studio_voice_label": "Lt. Wilfred Owen · Trench Verse"
+      "studio_voice_label": "Lt. Wilfred Owen · War Poetry"
     },
     {
       "lesson_index": 1,
@@ -7311,7 +7336,7 @@ export default {
       ],
       "audio_file": "/audio/reading/great_war_part2/r1.mp3",
       "studio_audio": "/audio/reading/great_war_part2/r1.mp3",
-      "studio_voice_label": "Studio Male Historian · Historical Story"
+      "studio_voice_label": "Studio Historian · Somme to Amiens"
     },
     {
       "lesson_index": 2,
@@ -7654,13 +7679,14 @@ export default {
       "name": "Jessie Pope",
       "lifespan": "1868 – 1941",
       "role": "Patriotic Newspaper Poet & Home Front Propagandist",
-      "image_position": "center 18%",
+      "image_position": "center 20%",
       "origins": "Popular British journalist and writer whose brisk, upbeat recruitment verses appeared regularly in the Daily Mail and Daily Express in 1914–1915.",
       "significance": "Framed enlistment as an exciting sporting game (\"Who’s for the game?\") and reinforced moral pressure—alongside the White Feather Movement—on young men to take the King’s shilling.",
       "achievements": [
         "Published widely read pro-enlistment poems portraying trench warfare as a patriotic test of manhood that would be \"over by Christmas\".",
         "Provoked fierce poetic rebuttal from frontline trench poets such as Wilfred Owen (\"Dulce et Decorum Est\") and Siegfried Sassoon."
-      ]
+      ],
+      "image": "/images/gw_jessie_pope.jpg"
     },
     {
       "entity_type": "person",

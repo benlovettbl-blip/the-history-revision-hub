@@ -514,12 +514,12 @@ export const ICONIC_LESSON_VISUALS = {
       cameoAlt: "Dr John Snow (1813–1858), London physician whose 1854 Soho Broad Street water-pump investigation proved that cholera spread through sewage-contaminated water rather than foul-smelling miasma (1856 portrait, Wellcome Collection M0009238)",
     },
     lesson_4: {
-      cardImage: "/images/ks3_ind/ind_l4_b4_tolpuddle_six_cottages.jpg",
+      cardImage: "/images/upgraded/ks3-empire-gw/ind_l4_banner_peterloo_st_peters_field_1819.jpg",
       heroCameo: "/images/ks3_ind/ind_l4_cameo_henry_hunt_cup_1819.jpg",
       cameoAlt: "1819 Staffordshire lustreware portrait cup of radical speaker Henry \"Orator\" Hunt (1773–1835) inscribed \"HUNT AND LIBERTY\", made to commemorate his arrest on the hustings at the Peterloo Massacre (British Museum)",
     },
     lesson_5: {
-      cardImage: "/images/ks3_ind/ind_l5_card_old_sarum_constable.jpg",
+      cardImage: "/images/upgraded/ks3-empire-gw/ind_l5_banner_reformed_house_of_commons_1833.jpg",
       heroCameo: "/images/ks3_ind/ind_l5_cameo_feargus_oconnor_1847.jpg",
       cameoAlt: "Feargus O’Connor MP (1796–1855), charismatic Chartist orator, founder of the Northern Star newspaper, and organiser of the April 1848 Kennington Common mass rally",
     },

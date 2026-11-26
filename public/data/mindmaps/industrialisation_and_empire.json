@@ -4,15 +4,15 @@
   "optionCode": "KS3",
   "paperType": "KS3",
   "paperLabel": "Key Stage 3 History",
-  "courseTitle": "The Industrial Revolution, 1750–1900",
-  "examDateBoundary": "1750–1900",
+  "courseTitle": "The Industrial Revolution, 1750–1872",
+  "examDateBoundary": "1750–1872",
   "disclaimer": "The History Revision Hub — Key Stage 3 Curriculum Knowledge & Revision Mind Map.",
   "root": {
     "id": "root",
     "tier": 0,
     "label": "Industrial Revolution",
     "subLabel": "KS3 History",
-    "dateChip": "1750–1900",
+    "dateChip": "1750–1872",
     "gloss": "How steam power, Hampshire wrought iron, textile mills, cholera slums, popular protest, and Chartism forged modern Britain.",
     "children": [
       {

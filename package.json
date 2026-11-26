@@ -62,7 +62,7 @@
     "build:textbook": "node scripts/generate_pure_narrative_textbook.cjs",
     "build:textbook:all": "node scripts/generate_pure_narrative_textbook.cjs all",
     "textbook:watch": "node scripts/watch_textbooks.cjs",
-    "test:textbooks": "node scripts/test_all_textbooks.cjs",
+    "test:textbooks": "node scripts/audit_textbook_pages.cjs",
     "audit:companions": "node scripts/audit_all_retrieval_companions.cjs",
     "audit:literary": "node scripts/audit_literary_companions.cjs",
     "sync:literary": "node scripts/sync_literary_companion.cjs",

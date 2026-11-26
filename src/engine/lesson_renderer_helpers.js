@@ -5375,7 +5375,7 @@ export function openHotspotWhiteboardModal(mapBlock, bridge = {}) {
             ? `
           <div class="wb-hinge-prompt-box" style="background: rgba(245, 158, 11, 0.14); border: 1px solid rgba(245, 158, 11, 0.42); border-left: 4px solid #f59e0b; border-radius: 8px; padding: 13px 16px;">
             <div style="font-size: 0.72rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.06em; color: #fbbf24; margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
-              <i class="fa-solid fa-comments"></i> Hinge Question &middot; Discussion Prompt
+              <i class="fa-solid fa-comments"></i> Class Discussion Prompt
             </div>
             <div style="font-size: 1.02rem; line-height: 1.55; color: #fef3c7; font-weight: 600;">
               ${cleanHinge}

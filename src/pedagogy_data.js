@@ -30,7 +30,7 @@ export const PEDAGOGY_RESEARCH_BANK = [
       'Counsell’s research highlights the vital distinction between "fingertip knowledge" (immediate facts mobilized for today’s analytical debate) and "residual knowledge" (the enduring conceptual framework of change, power, and conflict). A carefully structured narrative acts as the carrier wave for disciplinary thinking, allowing pupils to anchor forensic primary evidence within a broader historical context.',
     applicationHeading: 'Departmental & Platform Implementation',
     implementation: [
-      '3-Layer Digital Lesson Architecture & 5-Stage Narrative Spine: Each enquiry unfolds across Layer 1 (5 age-calibrated two-paragraph narrative blocks, Stage 1 to Stage 5), Layer 2 (2–3 alternating archival visual plates), and Layer 3 (5 rotated primary sources A–E with targeted Hinge Questions).',
+      '3-Layer Digital Lesson Architecture & 5-Stage Narrative Spine: Each enquiry unfolds across Layer 1 (5 age-calibrated two-paragraph narrative blocks, Stage 1 to Stage 5), Layer 2 (2–3 alternating archival visual plates), and Layer 3 (5 rotated primary sources A–E with targeted Discussion Questions).',
       'Clean Stage & Block Indexing ([1.1]–[1.5]): Narrative sections are indexed strictly at block/paragraph level rather than cluttering prose with sentence-level micro-pills or margin line numbers.',
       'Separation of Fingertip and Residual Schema: Immediate spaced recall is isolated in digital Do Now starters, freeing working memory for causal synthesis on the paired Pupil Workbook spread.',
       'Enquiry-Led Lesson Framing: Every lesson opens with an authentic historical enquiry question paired 1-to-1 across the Web App, Classroom Textbook, and Pupil Workbook.',
@@ -360,18 +360,18 @@ export const PEDAGOGY_RESEARCH_BANK = [
       'When pupils read a historical narrative interrupted by frequent, low-level comprehension questions ("What year did Bismarck take office?", "Name three states"), their cognitive attention shifts from causal synthesis to scanning for surface-level keywords. Pupils fail to perceive historical agency, contingency, or overarching narrative arcs, leaving them unable to construct coherent causal arguments in extended writing.',
     evidenceHeading: 'Disciplinary Evidence & Schema Synthesis',
     evidenceText:
-      'Research in history pedagogy demonstrates that deep conceptual retention ("residual knowledge") is forged through sustained, high-challenge shared reading across structured narrative stages, forensic evaluation of authentic primary sources paired with targeted Hinge Questions, and analytical synthesis in rigorous extended writing. Providing structured writing scaffolds (sentence stems, causal connectives, and unassigned key terms) enables all pupils, including SEND and disadvantaged learners, to produce high-level historical analysis.',
+      'Research in history pedagogy demonstrates that deep conceptual retention ("residual knowledge") is forged through sustained, high-challenge shared reading across structured narrative stages, forensic evaluation of authentic primary sources paired with targeted Discussion Questions, and analytical synthesis in rigorous extended writing. Providing structured writing scaffolds (sentence stems, causal connectives, and unassigned key terms) enables all pupils, including SEND and disadvantaged learners, to produce high-level historical analysis.',
     applicationHeading: 'Departmental & Platform Implementation',
     implementation: [
       '5-Stage Narrative Spine + 5 Rotated Primary Sources: Replaces fragmented worksheets with 5 coherent narrative stages paired 1-to-1 with Workbook Verso causal questions, followed by 5 rotated archival sources (A–E) in collapsible drawers.',
-      'Zero Formulaic NOP Boxes: Primary source enquiries focus on substantive historical context, rotating disciplinary lenses, natural 1–2 sentence model answers, and targeted Hinge Questions (reserving provenance clues strictly for Edexcel Paper 1 Medicine utility).',
+      'Zero Formulaic NOP Boxes: Primary source enquiries focus on substantive historical context, rotating disciplinary lenses, natural 1–2 sentence model answers, and targeted Discussion Questions (reserving provenance clues strictly for Edexcel Paper 1 Medicine utility).',
       'Whole-Page Extended Writing Headroom: Single extended tasks (8m narrative/importance, 12m explain why, 16m essay) command an entire Workbook Recto page (21–23 ruled lines) rather than cramped half-page boxes.',
       'Authentic Disciplinary Models: Provides complete, historically grounded model answers demonstrating how to weave specific historical evidence into sustained analytical prose.',
     ],
     protocolHeading: 'Classroom Protocol for History Teachers',
     teacherProtocols: [
       'Move briskly through the 5 narrative stages using Read-Pause-Synthesise so cognitive energy stays on historical causation.',
-      'Select 2–3 high-leverage primary sources from the 5-source drawer set and use their Hinge Questions to spark paired debate before extended writing.',
+      'Select 2–3 high-leverage primary sources from the 5-source drawer set and use their Discussion Questions to spark paired debate before extended writing.',
       'Allocate a protected 15–20 minute block in Lesson 2 of the 2-lesson sequence for sustained Recto writing followed by exemplar DIRT review.',
     ],
     citations: [

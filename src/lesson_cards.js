@@ -218,10 +218,8 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           text-align: left;
         }
         .lesson-enquiry-clamp {
-          display: -webkit-box;
-          -webkit-line-clamp: 2;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
+          display: block;
+          overflow: visible;
         }
       </style>
     `;

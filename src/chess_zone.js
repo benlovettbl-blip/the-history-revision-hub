@@ -5608,7 +5608,7 @@ function renderDrillsTab() {
                 <strong><i class="fa-solid fa-lightbulb"></i> Did You Know?</strong> ${sp.didYouKnow}
               </div>
               <div style="background: #f0fdfa; border-left: 3.5px solid #0d9488; padding: 8px 12px; border-radius: 0 6px 6px 0; font-size: 0.78rem; color: #115e59; line-height: 1.4;">
-                <strong><i class="fa-solid fa-question-circle"></i> Discussion Hinge:</strong> ${sp.drill.hingeQuestion}
+                <strong><i class="fa-solid fa-question-circle"></i> Discussion Question:</strong> ${sp.drill.hingeQuestion}
               </div>
             </div>
 

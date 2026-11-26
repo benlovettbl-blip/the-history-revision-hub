@@ -99,7 +99,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
       },
       {
         time: '45–60 mins',
-        phase: 'Hinge Check & Plenary Quiz',
+        phase: 'Quick Check & Plenary Quiz',
         activity:
           'Debate whether Roman writers were fair to call Britons "wild barbarians", then run the 5-question Consolidate Quiz on the whiteboard.',
       },
@@ -246,7 +246,7 @@ export const KS2_ROMANS_TEACHER_GUIDANCE = {
       },
       {
         time: '45–60 mins',
-        phase: 'Hinge Check & Plenary Quiz',
+        phase: 'Quick Check & Plenary Quiz',
         activity:
           'Check geographical misconception (Hadrian\'s Wall vs modern England–Scotland border!) and run the 5-question Consolidate Quiz.',
       },

@@ -139,18 +139,20 @@
       },
       {
         "stage": 4,
+        "prose_hash": "ad44dbb79e",
+        "question_hash": "13f74858ba",
         "passage": [
           {
-            "hint": "Edwardian urban poverty",
-            "bullet": "Low wages, damp tenements, and gruelling factory shifts → made army service an attractive escape"
+            "hint": "Regular Pay & Food",
+            "bullet": "Regular Pay & Food → enlisting earned the 'King’s Shilling' and regular army pay of one shilling and two pence a day, three guaranteed hot meals, clean woollen uniforms, and sturdy leather boots"
           },
           {
-            "hint": "Guaranteed daily essentials",
-            "bullet": "Army enlistment promised regular pay, hot meals, warm woollen uniforms → relieved desperate family poverty"
+            "hint": "Escape Factory Drudgery",
+            "bullet": "Escape Factory Drudgery → the powerful incentive for young industrial workers to trade grim factory routines and low wages for outdoor military adventure, regular pay, and travel"
           },
           {
-            "hint": "Short war myth",
-            "bullet": "Widespread belief the war would end by Christmas → spurred youths to seek overseas adventure"
+            "hint": "Over by Christmas",
+            "bullet": "Over by Christmas → naive teenage lads viewed joining up as an exhilarating overseas adventure and a chance to travel the world, convinced that the fighting would be glorious, swift, and 'over by Christmas'"
           }
         ],
         "context": [
@@ -165,22 +167,20 @@
         ],
         "stems": [
           {
-            "badge": "ESCAPING HARDSHIP",
-            "stem": "Faced with low wages, damp ____________, and exhausting ____________, many working-class labourers viewed enlistment as..."
+            "badge": "COMPETING PRESSURES",
+            "stem": "Pressured by ____________ on one side and ____________ on the other, ..."
           },
           {
-            "badge": "MATERIAL SECURITY",
-            "stem": "Accepting military pay guaranteed steady ____________, regular meals, and durable ____________ that poor households..."
+            "badge": "DECISIVE FACTOR",
+            "stem": "The crucial reason was ____________, which meant that ____________."
           },
           {
-            "badge": "CHRISTMAS ILLUSION",
-            "stem": "Convinced the overseas campaign would finish by ____________, thousands rushed to enlist before..."
+            "badge": "WIDER CONTEXT",
+            "stem": "Alongside wider pressures such as ____________, this forced..."
           }
         ],
-        "watch_out": "Not all 1914 volunteers enlisted purely out of patriotism—economic security and steady food were powerful working-class motives.",
-        "prose_hash": "6308dafd36",
-        "prose_fp": "d73d0871",
-        "question_hash": "13f74858ba"
+        "watch_out": "Link facts directly to the question: Combined economic necessity with the naive belief that the war would be an exciting adventure ‘over by Christmas’, speeding recruitment.",
+        "prose_fp": "a447d59e"
       },
       {
         "stage": 5,
@@ -321,18 +321,20 @@
       },
       {
         "stage": 3,
+        "prose_hash": "795b6fd3ae",
+        "question_hash": "a33f27c3d1",
         "passage": [
           {
-            "hint": "Flooded mud rot",
-            "bullet": "Standing for days in freezing waterlogged clay caused trench foot → led to gangrene and amputations"
+            "hint": "Trench Foot & Gangrene",
+            "bullet": "Trench Foot & Gangrene → waterlogged clay and relentless rain caused Trench Foot, a crippling fungal infection where poor circulation caused flesh to rot, leading to gangrene and amputation"
           },
           {
-            "hint": "Relentless artillery terror",
-            "bullet": "Massive howitzer shells churned battlefields into liquid mud → inflicted horrific physical wounds day and night"
+            "hint": "Corpses, Lice & Rats",
+            "bullet": "Corpses, Lice & Rats → millions of body lice infested uniforms, causing itching and trench fever, while giant brown rats fed on corpses and rations"
           },
           {
-            "hint": "Psychological nerve collapse",
-            "bullet": "Enduring ceaseless high-explosive bombardments triggered shell shock → left traumatised men trembling with shattered nerves"
+            "hint": "Shell Shock Trauma",
+            "bullet": "Shell Shock Trauma → the constant terror of instant obliteration caused 'shell shock' —acute psychological trauma leaving soldiers shaking, mute, or catatonic"
           }
         ],
         "context": [
@@ -347,22 +349,20 @@
         ],
         "stems": [
           {
-            "badge": "PHYSICAL INFECTION",
-            "stem": "Trapped for days in freezing, waterlogged clay, infantrymen contracted ____________, an agonising condition that risked..."
+            "badge": "DEFINING FEATURE",
+            "stem": "A central feature of physical and psychological trauma in the mud was ____________, which led to..."
           },
           {
-            "badge": "ARTILLERY ORDEAL",
-            "stem": "Continuous fire from heavy ____________ turned trenches into foul slush while inflicting devastating..."
+            "badge": "HISTORICAL IMPACT",
+            "stem": "As a consequence of ____________, ____________ changed markedly."
           },
           {
-            "badge": "MENTAL TRAUMA",
-            "stem": "Prolonged exposure to relentless shelling caused severe ____________, leaving thousands of soldiers..."
+            "badge": "WIDER CONTEXT",
+            "stem": "Connecting this to wider developments in ____________ demonstrates that..."
           }
         ],
-        "watch_out": "Shell shock was a genuine psychological brain and nerve injury caused by industrial bombardment, not moral weakness or cowardice.",
-        "prose_hash": "c5ece76d7d",
-        "prose_fp": "5d7c8541",
-        "question_hash": "a33f27c3d1"
+        "watch_out": "Link facts directly to the question: Physically and mentally degraded frontline soldiers, making survival an ongoing battle against the elements as much as against the enemy.",
+        "prose_fp": "5f62f06e"
       },
       {
         "stage": 4,
@@ -411,18 +411,20 @@
       },
       {
         "stage": 5,
+        "prose_hash": "05e09aa279",
+        "question_hash": "1cb882ae1c",
         "passage": [
           {
-            "hint": "Traditional butcher critique",
-            "bullet": "Traditional critics condemn Haig as a callous butcher → wasted brave soldiers in futile mud offensives"
+            "hint": "Lions Led by Donkeys",
+            "bullet": "Lions Led by Donkeys → popular post-war memory, reinforced by 1960s critics like Alan Clark, denounced Haig as a callous 'Butcher of the Somme' who squandered a generation in futile frontal assaults across muddy quagmires"
           },
           {
-            "hint": "Industrial learning curve",
-            "bullet": "Modern historians highlight a steep learning curve → no general had fought industrial trench warfare before"
+            "hint": "Industrial Learning Curve",
+            "bullet": "Industrial Learning Curve → however, modern revisionist historians like Gary Sheffield argue Haig was trapped on a steep 'learning curve' in an unprecedented industrial war"
           },
           {
-            "hint": "Combined-arms innovation",
-            "bullet": "Haig’s army integrated tanks, creeping artillery barrages, and aircraft → delivered decisive Allied victory in 1918"
+            "hint": "Allied Victory in 1918",
+            "bullet": "Allied Victory in 1918 → haig's successful orchestration of the Hundred Days Offensive combining infantry, tanks, creeping barrages, and aircraft to break the Hindenburg Line"
           }
         ],
         "context": [
@@ -437,22 +439,20 @@
         ],
         "stems": [
           {
-            "badge": "TRADITIONAL CRITICISM",
-            "stem": "Under the traditional view, critics portray Haig as a ____________ who squandered brave infantry in..."
+            "badge": "REGIONAL OR SOCIAL DIVIDE",
+            "stem": "While ____________ favoured ____________, rival groups demanded..."
           },
           {
-            "badge": "REVISIONIST DEFENCE",
-            "stem": "Conversely, modern historians argue British commanders faced an unprecedented ____________ while expanding a volunteer army..."
+            "badge": "AVOIDING CRISIS",
+            "stem": "Without careful action over ____________, the threat of ____________ would have..."
           },
           {
-            "badge": "COMBINED ARMS",
-            "stem": "Applying hard-won tactical lessons, British forces coordinated ____________, creeping barrages, and ____________ to break..."
+            "badge": "WIDER CONTEXT",
+            "stem": "Combined with earlier challenges over ____________, this meant..."
           }
         ],
-        "watch_out": "Strong historical evaluations avoid one-sided caricatures of Haig, weighing catastrophic 1916 losses against his 1918 combined-arms transformation.",
-        "prose_hash": "e91e630860",
-        "prose_fp": "934ed5cd",
-        "question_hash": "1cb882ae1c"
+        "watch_out": "Link facts directly to the question: Gradually transformed the British Army into the sophisticated combined-arms fighting force that broke the German Hindenburg Line in 1918.",
+        "prose_fp": "6902a63a"
       }
     ],
     "lesson_3_empire_troops": [
@@ -497,8 +497,8 @@
           }
         ],
         "watch_out": "World War I was never solely a white European trench conflict—imperial manpower and colonial resources sustained Britain throughout.",
-        "prose_hash": "5caede9a7d",
-        "prose_fp": "c9eba65d",
+        "prose_hash": "4d1fc57eb8",
+        "prose_fp": "5d7f5bea",
         "question_hash": "db988b532b"
       },
       {
@@ -542,8 +542,8 @@
           }
         ],
         "watch_out": "Every one of the 1.3 million Indian personnel who served in the Great War was a volunteer—conscription was never imposed on India.",
-        "prose_hash": "b4c1f5acd2",
-        "prose_fp": "aff2d969",
+        "prose_hash": "4732ee114f",
+        "prose_fp": "1a0c5f1a",
         "question_hash": "b46539b8f7"
       },
       {

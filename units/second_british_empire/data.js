@@ -1,5 +1,5 @@
 export default {
-  "synopsis": "A vast maritime empire painted red across world maps, propelled by ironclad warships, industrial machinery, and the relentless extraction of colonial wealth. From the bustling slipways of Portsmouth Royal Dockyard to the brutal suppression of the 1857 Indian Rebellion, Britain governed a fifth of humanity under the banner of imperial civilising mission. Confront the stark realities of conquest and displacement: the expansion of penal colonies into Indigenous Australia, the violent partition of the African continent during the Scramble for Africa, and the pioneering economic critique of Dadabhai Naoroji exposing how Britain drained trillions from the Indian subcontinent.",
+  "synopsis": "A vast maritime empire painted red across world maps, propelled by ironclad warships, industrial machinery, and the relentless extraction of colonial wealth. From the bustling slipways of Portsmouth Royal Dockyard to the brutal suppression of the 1857 Indian Rebellion, Britain governed a quarter of humanity under the banner of an imperial 'civilising mission'. Confront the stark realities of conquest and economic extraction: the de-industrialisation of India's world-leading handloom weavers, the violent partition of the African continent during the Scramble for Africa, and the pioneering economic critique of Dadabhai Naoroji exposing how Britain drained vast revenues from the Indian subcontinent.",
   "synopsis_tags": [
     "Portsmouth Royal Dockyard & Naval Supremacy",
     "The 1857 Indian Rebellion",
@@ -445,7 +445,7 @@ export default {
             "connective": "Guaranteed that colonial raw materials flowed directly into British factories, accumulating massive national bullion reserves.",
             "question": "How did Navigation Acts enrich British ports through colonial trade?",
             "para_ref": "[1.1]",
-            "prose_hash": "889f75fd83"
+            "prose_hash": "74c27aa921"
           },
           {
             "step": 2,
@@ -456,8 +456,8 @@ export default {
             "trigger": "Nelson annihilated the combined Franco-Spanish fleet at Trafalgar without losing a single ship, eliminating European naval competition for a century.",
             "connective": "Established the Pax Britannica, allowing the Royal Navy to police global sea lanes and enforce gunboat diplomacy unhindered.",
             "question": "How did Admiral Nelson’s tactics win sea control at Trafalgar in 1805?",
-            "para_ref": "[2.1]",
-            "prose_hash": "4923092cb2"
+            "para_ref": "[1.2]",
+            "prose_hash": "e584569838"
           },
           {
             "step": 3,
@@ -468,8 +468,8 @@ export default {
             "trigger": "Portsmouth Dockyard installed Marc Brunel’s steam-powered block mills, becoming the world’s first mass-production industrial manufacturing complex.",
             "connective": "Supplied the fleet with 130,000 interchangeable wooden rigging blocks annually, keeping the Royal Navy operational across all global oceans.",
             "question": "Why was Portsmouth Royal Dockyard vital to Britain’s naval power?",
-            "para_ref": "[3.1]",
-            "prose_hash": "4ef3fecb80"
+            "para_ref": "[1.3]",
+            "prose_hash": "77c26a5d91"
           },
           {
             "step": 4,
@@ -480,8 +480,8 @@ export default {
             "trigger": "Britain launched HMS Warrior, an armoured warship with 4.5-inch wrought iron plates, steam screw propulsion, and rifled Armstrong guns.",
             "connective": "Rendered every traditional wooden warship on Earth instantly obsolete overnight, maintaining Britain’s maritime technological supremacy.",
             "question": "How did HMS Warrior make wooden battleships outdated in 1860?",
-            "para_ref": "[4.1]",
-            "prose_hash": "7b0e0c07ee"
+            "para_ref": "[1.4]",
+            "prose_hash": "73c4c08749"
           },
           {
             "step": 5,
@@ -492,8 +492,8 @@ export default {
             "trigger": "Parliament passed the Naval Defence Act 1889, legally mandating that the Royal Navy must maintain a battleship fleet equal to the next two strongest navies combined.",
             "connective": "Institutionalised British naval supremacy into British law and triggered a massive late-Victorian naval building program.",
             "question": "What did the 1889 Two-Power Standard require from the Royal Navy?",
-            "para_ref": "[5.1]",
-            "prose_hash": "230c36132c"
+            "para_ref": "[1.5]",
+            "prose_hash": "93bcc9e2ad"
           }
         ]
       },
@@ -522,10 +522,10 @@ export default {
       "narrative_blocks": [
         {
           "theme_heading": "Mercantilism & The Closed Imperial Economy (1783–1815)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> During the eighteenth and nineteenth centuries, Great Britain constructed its imperial power on a mercantilist economic system. British Navigation Acts legally compelled Caribbean and American colonies to export valuable raw sugar and cotton exclusively to British ports aboard British-built ships.</p><p class=\"prose-p\">Safeguarded across oceans by armed merchant fleets, domestic manufacturers transformed these cheap raw materials into valuable industrial exports. By restricting colonial trade, British merchants and financiers accumulated towering piles of gold coins, cementing Britain's global commercial dominance.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> Every hogshead of Jamaican sugar and bale of colonial cotton unloaded on an eighteenth-century London quay arrived under legal lock and key. Britain ran a closed mercantilist economic system enforced by strict Navigation Acts, compelling Caribbean and American colonies to ship raw sugar and cotton exclusively to British ports in British-crewed hulls.</p><p class=\"prose-p\">Foreign Dutch or French captains who tried undercutting London merchants faced Royal Navy seizure on the high seas. By turning cheap colonial crops into pricey finished exports, British merchants and bankers piled up chests of gold coins that financed global expansion.</p>",
           "title": "Mercantilism & The Closed Imperial Economy (1783–1815)",
           "heading": "Mercantilism & The Closed Imperial Economy (1783–1815)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> During the eighteenth and nineteenth centuries, Great Britain constructed its imperial power on a mercantilist economic system. British Navigation Acts legally compelled Caribbean and American colonies to export valuable raw sugar and cotton exclusively to British ports aboard British-built ships.</p><p class=\"prose-p\">Safeguarded across oceans by armed merchant fleets, domestic manufacturers transformed these cheap raw materials into valuable industrial exports. By restricting colonial trade, British merchants and financiers accumulated towering piles of gold coins, cementing Britain's global commercial dominance.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> Every hogshead of Jamaican sugar and bale of colonial cotton unloaded on an eighteenth-century London quay arrived under legal lock and key. Britain ran a closed mercantilist economic system enforced by strict Navigation Acts, compelling Caribbean and American colonies to ship raw sugar and cotton exclusively to British ports in British-crewed hulls.</p><p class=\"prose-p\">Foreign Dutch or French captains who tried undercutting London merchants faced Royal Navy seizure on the high seas. By turning cheap colonial crops into pricey finished exports, British merchants and bankers piled up chests of gold coins that financed global expansion.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.1]</span> During the eighteenth and nineteenth centuries, Great Britain constructed its imperial power on a mercantilist economic system. British Navigation Acts legally compelled Caribbean and American colonies to export valuable raw sugar and cotton exclusively to British ports aboard British-built ships.</p><p class=\"prose-p\">Safeguarded across oceans by armed merchant fleets, domestic manufacturers transformed these cheap raw materials into valuable industrial exports. By restricting colonial trade, British merchants and financiers accumulated towering piles of gold coins, cementing Britain's global commercial dominance.</p>",
           "concept_widget": {
             "type": "profile_deck",
@@ -631,10 +631,10 @@ export default {
         },
         {
           "theme_heading": "The Battle of Trafalgar & Ocean Dominance (21 October 1805)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> On 21 October 1805, Admiral Lord Nelson secured Britain’s complete naval supremacy off Cape Trafalgar. Commanding twenty-seven battleships against thirty-three allied French and Spanish warships, Nelson boldly divided his fleet into two attacking columns to pierce the enemy line.</p><p class=\"prose-p\">Nelson's aggressive battle tactics succeeded by smashing enemy flagships at point-blank range with pulverising broadsides. Following the battle, the Royal Navy reigned supreme, controlling global sea lanes and safeguarding worldwide merchant shipping routes from foreign interference for over a century.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Off storm-darkened Cape Trafalgar on 21 October 1805, signal flags fluttered up HMS Victory’s masthead before Admiral Lord Nelson broke every polite rule of eighteenth-century sea warfare. Outnumbered twenty-seven British battleships to thirty-three allied French and Spanish warships, Nelson steered straight at the enemy in two attacking columns rather than trading long-range cannonballs in neat parallel lines.</p><p class=\"prose-p\">Crashing through the Franco-Spanish line at pistol shot, British gunners shattered nineteen enemy ships without losing one of their own, though a French musket ball killed Nelson on deck. That Battle of Trafalgar handed Britain a century of ocean mastery.</p>",
           "title": "The Battle of Trafalgar & Ocean Dominance (21 October 1805)",
           "heading": "The Battle of Trafalgar & Ocean Dominance (21 October 1805)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> On 21 October 1805, Admiral Lord Nelson secured Britain’s complete naval supremacy off Cape Trafalgar. Commanding twenty-seven battleships against thirty-three allied French and Spanish warships, Nelson boldly divided his fleet into two attacking columns to pierce the enemy line.</p><p class=\"prose-p\">Nelson's aggressive battle tactics succeeded by smashing enemy flagships at point-blank range with pulverising broadsides. Following the battle, the Royal Navy reigned supreme, controlling global sea lanes and safeguarding worldwide merchant shipping routes from foreign interference for over a century.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> Off storm-darkened Cape Trafalgar on 21 October 1805, signal flags fluttered up HMS Victory’s masthead before Admiral Lord Nelson broke every polite rule of eighteenth-century sea warfare. Outnumbered twenty-seven British battleships to thirty-three allied French and Spanish warships, Nelson steered straight at the enemy in two attacking columns rather than trading long-range cannonballs in neat parallel lines.</p><p class=\"prose-p\">Crashing through the Franco-Spanish line at pistol shot, British gunners shattered nineteen enemy ships without losing one of their own, though a French musket ball killed Nelson on deck. That Battle of Trafalgar handed Britain a century of ocean mastery.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.2]</span> On 21 October 1805, Admiral Lord Nelson secured Britain’s complete naval supremacy off Cape Trafalgar. Commanding twenty-seven battleships against thirty-three allied French and Spanish warships, Nelson boldly divided his fleet into two attacking columns to pierce the enemy line.</p><p class=\"prose-p\">Nelson's aggressive battle tactics succeeded by smashing enemy flagships at point-blank range with pulverising broadsides. Following the battle, the Royal Navy reigned supreme, controlling global sea lanes and safeguarding worldwide merchant shipping routes from foreign interference for over a century.</p>",
           "image": "/images/battle_of_trafalgar_turner.jpg",
           "caption": "J. M. W. Turner, The Battle of Trafalgar, 21 October 1805 (1822–1824, National Maritime Museum BHC0565): Admiral Lord Nelson’s flagship HMS Victory pierces the Franco-Spanish battle line, securing over a century of Royal Navy mastery across global trade routes.",
@@ -642,10 +642,10 @@ export default {
         },
         {
           "theme_heading": "Portsmouth Royal Dockyard: Industrial Engine of Empire (1800–1850)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> The vital heartbeat of British naval power was Portsmouth Royal Dockyard, the largest industrial manufacturing complex on earth. More than ten thousand dockyard smiths, shipwrights, caulkers, and carpenters worked day and night to build, repair, and maintain the Royal Navy’s mighty battle fleets.</p><p class=\"prose-p\">In 1803, Marc Brunel installed revolutionary steam wooden block mills, pioneering the world’s first mass-production assembly line. Nearby dockyard forges echoed continuously, forging iron anchors, copper sheathing, and giant naval cannons to equip Britain's armada.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> Wooden fleets did not rule five oceans by romance alone; Britain’s naval power stayed afloat because of smoke, sawdust, and ten thousand calloused pairs of hands on the Hampshire coast. Between 1800 and 1850, Portsmouth Royal Dockyard was the largest industrial manufacturing complex on earth, employing more than ten thousand smiths, shipwrights, caulkers, and ropemakers.</p><p class=\"prose-p\">Because a single battleship needed over a thousand pulley blocks, engineer Marc Brunel installed forty-five steam-driven block machines there in 1803—ten unskilled hands now matched a hundred master craftsmen. Next door, giant forges hammered out anchors, cannon, and protective copper sheathing against tropical shipworms.</p>",
           "title": "Portsmouth Royal Dockyard: Industrial Engine of Empire (1800–1850)",
           "heading": "Portsmouth Royal Dockyard: Industrial Engine of Empire (1800–1850)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> The vital heartbeat of British naval power was Portsmouth Royal Dockyard, the largest industrial manufacturing complex on earth. More than ten thousand dockyard smiths, shipwrights, caulkers, and carpenters worked day and night to build, repair, and maintain the Royal Navy’s mighty battle fleets.</p><p class=\"prose-p\">In 1803, Marc Brunel installed revolutionary steam wooden block mills, pioneering the world’s first mass-production assembly line. Nearby dockyard forges echoed continuously, forging iron anchors, copper sheathing, and giant naval cannons to equip Britain's armada.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> Wooden fleets did not rule five oceans by romance alone; Britain’s naval power stayed afloat because of smoke, sawdust, and ten thousand calloused pairs of hands on the Hampshire coast. Between 1800 and 1850, Portsmouth Royal Dockyard was the largest industrial manufacturing complex on earth, employing more than ten thousand smiths, shipwrights, caulkers, and ropemakers.</p><p class=\"prose-p\">Because a single battleship needed over a thousand pulley blocks, engineer Marc Brunel installed forty-five steam-driven block machines there in 1803—ten unskilled hands now matched a hundred master craftsmen. Next door, giant forges hammered out anchors, cannon, and protective copper sheathing against tropical shipworms.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.3]</span> The vital heartbeat of British naval power was Portsmouth Royal Dockyard, the largest industrial manufacturing complex on earth. More than ten thousand dockyard smiths, shipwrights, caulkers, and carpenters worked day and night to build, repair, and maintain the Royal Navy’s mighty battle fleets.</p><p class=\"prose-p\">In 1803, Marc Brunel installed revolutionary steam wooden block mills, pioneering the world’s first mass-production assembly line. Nearby dockyard forges echoed continuously, forging iron anchors, copper sheathing, and giant naval cannons to equip Britain's armada.</p>",
           "image": "/images/portsmouth_map.jpg",
           "caption": "Admiralty Survey Plan: 'A Plan of His Majesty’s Dock Yard at Portsmouth, 1774' (British Library Maps K.Top.14.42): Mapping the Great Basin, dry docks, Double Rope House, and slipways of the vast naval base where Marc Brunel installed steam-powered block mills in 1803.",
@@ -653,10 +653,10 @@ export default {
         },
         {
           "theme_heading": "HMS Warrior & The Ironclad Revolution (1860–1861)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> In 1860, Great Britain launched HMS Warrior in response to French naval innovations, igniting a revolutionary transformation in warship design. Warrior abandoned traditional wooden construction in favour of revolutionary four-inch iron armour plates backed by eighteen inches of solid teak wood.</p><p class=\"prose-p\">Propelled by massive twin steam engines alongside towering sails, Warrior made every traditional wooden battleship obsolete overnight. During live firing trials, Warrior proved virtually indestructible, bouncing cannon shells off its sides and deterring foreign naval rivals.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> When France launched a timber warship clad in iron plates in 1859, the Admiralty answered by making every wooden fleet on earth instantly quaint. Sliding down the Thames into service in 1860, HMS Warrior stretched longer than any battleship afloat and answered French naval innovations with four-inch iron armour plates bolted over eighteen inches of solid teak wood.</p><p class=\"prose-p\">Driven by roaring steam boilers alongside tall masts, she could outrun anything she could not outgun and smash anything she caught. Cannonballs simply bounced off her black iron flank, turning Nelson’s oak walls into floating museum pieces overnight.</p>",
           "title": "HMS Warrior & The Ironclad Revolution (1860–1861)",
           "heading": "HMS Warrior & The Ironclad Revolution (1860–1861)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> In 1860, Great Britain launched HMS Warrior in response to French naval innovations, igniting a revolutionary transformation in warship design. Warrior abandoned traditional wooden construction in favour of revolutionary four-inch iron armour plates backed by eighteen inches of solid teak wood.</p><p class=\"prose-p\">Propelled by massive twin steam engines alongside towering sails, Warrior made every traditional wooden battleship obsolete overnight. During live firing trials, Warrior proved virtually indestructible, bouncing cannon shells off its sides and deterring foreign naval rivals.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> When France launched a timber warship clad in iron plates in 1859, the Admiralty answered by making every wooden fleet on earth instantly quaint. Sliding down the Thames into service in 1860, HMS Warrior stretched longer than any battleship afloat and answered French naval innovations with four-inch iron armour plates bolted over eighteen inches of solid teak wood.</p><p class=\"prose-p\">Driven by roaring steam boilers alongside tall masts, she could outrun anything she could not outgun and smash anything she caught. Cannonballs simply bounced off her black iron flank, turning Nelson’s oak walls into floating museum pieces overnight.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.4]</span> In 1860, Great Britain launched HMS Warrior in response to French naval innovations, igniting a revolutionary transformation in warship design. Warrior abandoned traditional wooden construction in favour of revolutionary four-inch iron armour plates backed by eighteen inches of solid teak wood.</p><p class=\"prose-p\">Propelled by massive twin steam engines alongside towering sails, Warrior made every traditional wooden battleship obsolete overnight. During live firing trials, Warrior proved virtually indestructible, bouncing cannon shells off its sides and deterring foreign naval rivals.</p>",
           "image": "/images/ks3_sbe/sbe_l1_b3_hms_warrior_ironclad_1860.jpg",
           "image_alt": "Archival 1860s Royal Navy broadside photograph of the iron-hulled steam frigate HMS Warrior afloat showing her long black hull pierced with gunports, twin steam funnels, and three tall square-rigged masts",
@@ -664,10 +664,10 @@ export default {
         },
         {
           "theme_heading": "The Two-Power Standard & Victorian Naval Deterrence (1889)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> By the late nineteenth century, emerging industrial competitors Germany, France, and Russia challenged Britain’s supremacy at sea. In 1889, Parliament passed the decisive Naval Defence Act law, officially establishing the famous Two-Power Standard as official government policy.</p><p class=\"prose-p\">The legislation required the Royal Navy to maintain fighting naval power matching two foreign fleets combined. Supported by a massive £21.5 million budget, Portsmouth dockyards constructed dozens of new battleships, guaranteeing British control over global maritime empire.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> By the late 1880s, smoky shipyards in Kiel, Cherbourg, and Kronstadt warned Westminster that Britain’s solo sea monopoly was drawing challengers. As Germany, France, and Russia laid down modern steel battleships, anxious MPs passed the 1889 Naval Defence Act writing British maritime nerves directly into statute law.</p><p class=\"prose-p\">Its famous Two-Power Standard decreed that the Royal Navy must outmatch the next two largest foreign fleets combined. Backed by an unprecedented £21.5 million shipbuilding cheque, slipways at Portsmouth thundered day and night so no rival coalition could starve Britain’s island empire into surrender.</p>",
           "title": "The Two-Power Standard & Victorian Naval Deterrence (1889)",
           "heading": "The Two-Power Standard & Victorian Naval Deterrence (1889)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> By the late nineteenth century, emerging industrial competitors Germany, France, and Russia challenged Britain’s supremacy at sea. In 1889, Parliament passed the decisive Naval Defence Act law, officially establishing the famous Two-Power Standard as official government policy.</p><p class=\"prose-p\">The legislation required the Royal Navy to maintain fighting naval power matching two foreign fleets combined. Supported by a massive £21.5 million budget, Portsmouth dockyards constructed dozens of new battleships, guaranteeing British control over global maritime empire.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> By the late 1880s, smoky shipyards in Kiel, Cherbourg, and Kronstadt warned Westminster that Britain’s solo sea monopoly was drawing challengers. As Germany, France, and Russia laid down modern steel battleships, anxious MPs passed the 1889 Naval Defence Act writing British maritime nerves directly into statute law.</p><p class=\"prose-p\">Its famous Two-Power Standard decreed that the Royal Navy must outmatch the next two largest foreign fleets combined. Backed by an unprecedented £21.5 million shipbuilding cheque, slipways at Portsmouth thundered day and night so no rival coalition could starve Britain’s island empire into surrender.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[1.5]</span> By the late nineteenth century, emerging industrial competitors Germany, France, and Russia challenged Britain’s supremacy at sea. In 1889, Parliament passed the decisive Naval Defence Act law, officially establishing the famous Two-Power Standard as official government policy.</p><p class=\"prose-p\">The legislation required the Royal Navy to maintain fighting naval power matching two foreign fleets combined. Supported by a massive £21.5 million budget, Portsmouth dockyards constructed dozens of new battleships, guaranteeing British control over global maritime empire.</p>",
           "image": "/images/ks3_sbe/sbe_l1_b4_royal_navy_spithead_fleet.jpg",
           "caption": "'Steam Tactics of the Reserve Squadron' — Royal Navy Armoured Warships HMS Thunderer, HMS Warspite, and HMS Galatea (Charles de Lacy, Illustrated London News, July 1897): Expanded under the £21.5 million Naval Defence Act of 1889 to uphold Britain’s Two-Power Standard.",
@@ -1215,7 +1215,8 @@ export default {
           "question": "How did Navigation Acts enrich British ports through colonial trade?",
           "heading": "How did Navigation Acts enrich British ports through colonial trade?",
           "focus_clue": "How did Navigation Acts enrich British ports through colonial trade?",
-          "prose_hash": "889f75fd83"
+          "prose_hash": "74c27aa921",
+          "para_ref": "[1.1]"
         },
         {
           "step": 2,
@@ -1248,7 +1249,8 @@ export default {
           "question": "How did Admiral Nelson’s tactics win sea control at Trafalgar in 1805?",
           "heading": "How did Admiral Nelson’s tactics win sea control at Trafalgar in 1805?",
           "focus_clue": "How did Admiral Nelson’s tactics win sea control at Trafalgar in 1805?",
-          "prose_hash": "4923092cb2"
+          "prose_hash": "e584569838",
+          "para_ref": "[1.2]"
         },
         {
           "step": 3,
@@ -1281,7 +1283,8 @@ export default {
           "question": "Why was Portsmouth Royal Dockyard vital to Britain’s naval power?",
           "heading": "Why was Portsmouth Royal Dockyard vital to Britain’s naval power?",
           "focus_clue": "Why was Portsmouth Royal Dockyard vital to Britain’s naval power?",
-          "prose_hash": "4ef3fecb80"
+          "prose_hash": "77c26a5d91",
+          "para_ref": "[1.3]"
         },
         {
           "step": 4,
@@ -1314,7 +1317,8 @@ export default {
           "question": "How did HMS Warrior make wooden battleships outdated in 1860?",
           "heading": "How did HMS Warrior make wooden battleships outdated in 1860?",
           "focus_clue": "How did HMS Warrior make wooden battleships outdated in 1860?",
-          "prose_hash": "7b0e0c07ee"
+          "prose_hash": "73c4c08749",
+          "para_ref": "[1.4]"
         },
         {
           "step": 5,
@@ -1347,7 +1351,8 @@ export default {
           "question": "What did the 1889 Two-Power Standard require from the Royal Navy?",
           "heading": "What did the 1889 Two-Power Standard require from the Royal Navy?",
           "focus_clue": "What did the 1889 Two-Power Standard require from the Royal Navy?",
-          "prose_hash": "230c36132c"
+          "prose_hash": "93bcc9e2ad",
+          "para_ref": "[1.5]"
         }
       ],
       "visual_story_sheet": {
@@ -1378,7 +1383,8 @@ export default {
             "html": "Under <strong>mercantilism</strong>, strict <strong>Navigation Acts</strong> forced colonies to ship raw sugar and cotton only to British ports, enriching London merchants with <strong>gold profits</strong>.",
             "spoken": "How was the Second British Empire built and sustained through naval and industrial power? <short pause> Under mercantilism , strict Navigation Acts forced colonies to ship raw sugar and cotton only to British ports, enriching London merchants with gold profits .",
             "paired_prose_hash": "889f75fd83",
-            "connective": "How was the Second British Empire built and sustained through naval and industrial power?"
+            "connective": "How was the Second British Empire built and sustained through naval and industrial power?",
+            "prose_hash": "74c27aa921"
           },
           {
             "badge": "Stage 2",
@@ -1391,7 +1397,8 @@ export default {
             "html": "At <strong>Trafalgar in 1805</strong>, <strong>Admiral Nelson</strong> split 27 warships into two columns to smash 33 French and Spanish ships, winning 100 years of <strong>sea control</strong>.",
             "spoken": "Victory at sea soon locked down every ocean route. <short pause> At Trafalgar in 1805 , Admiral Nelson split 27 warships into two columns to smash 33 French and Spanish ships, winning 100 years of sea control .",
             "paired_prose_hash": "4923092cb2",
-            "connective": "Victory at sea soon locked down every ocean route."
+            "connective": "Victory at sea soon locked down every ocean route.",
+            "prose_hash": "e584569838"
           },
           {
             "badge": "Stage 3",
@@ -1403,7 +1410,8 @@ export default {
             "html": "Over <strong>10,000 workers</strong> built and repaired fleets at <strong>Portsmouth Royal Dockyard</strong>. In <strong>1803</strong>, Marc Brunel’s steam block mills pioneered factory mass production.",
             "spoken": "Keeping that fleet afloat required a giant industrial dockyard. <short pause> Over 10,000 workers built and repaired fleets at Portsmouth Royal Dockyard . In 1803 , Marc Brunel’s steam block mills pioneered factory mass production.",
             "paired_prose_hash": "4ef3fecb80",
-            "connective": "Keeping that fleet afloat required a giant industrial dockyard."
+            "connective": "Keeping that fleet afloat required a giant industrial dockyard.",
+            "prose_hash": "77c26a5d91"
           },
           {
             "badge": "Stage 4",
@@ -1416,7 +1424,8 @@ export default {
             "html": "Launched in <strong>1860</strong>, steam-powered <strong>HMS Warrior</strong> carried thick wrought-iron armour over solid teak. Enemy cannonballs bounced off, making <strong>wooden warships</strong> outdated overnight.",
             "spoken": "Industrial iron and steam soon revolutionised the warships themselves. <short pause> Launched in 1860 , steam-powered HMS Warrior carried thick wrought-iron armour over solid teak. Enemy cannonballs bounced off, making wooden warships outdated overnight.",
             "paired_prose_hash": "7b0e0c07ee",
-            "connective": "Industrial iron and steam soon revolutionised the warships themselves."
+            "connective": "Industrial iron and steam soon revolutionised the warships themselves.",
+            "prose_hash": "73c4c08749"
           },
           {
             "badge": "Stage 5",
@@ -1428,7 +1437,8 @@ export default {
             "html": "As Germany, France, and Russia grew, the <strong>1889 Naval Defence Act</strong> funded <strong>£21.5 million</strong> so Britain’s fleet matched the next <strong>two biggest navies</strong> combined.",
             "spoken": "Rival European navies soon forced Parliament to expand again. <short pause> As Germany, France, and Russia grew, the 1889 Naval Defence Act funded 21 pounds.5 million so Britain’s fleet matched the next two biggest navies combined.",
             "paired_prose_hash": "230c36132c",
-            "connective": "Rival European navies soon forced Parliament to expand again."
+            "connective": "Rival European navies soon forced Parliament to expand again.",
+            "prose_hash": "93bcc9e2ad"
           },
           {
             "badge": "⚡ Outcome",
@@ -1709,7 +1719,7 @@ export default {
             "connective": "Established Indian finished cottons as the world's most desired commodity, forcing European nations into massive trade deficits.",
             "question": "How did Mughal India become the world’s leading cloth workshop?",
             "para_ref": "[2.1]",
-            "prose_hash": "bbe719d5c6"
+            "prose_hash": "1cafd5a360"
           },
           {
             "step": 2,
@@ -1721,7 +1731,7 @@ export default {
             "connective": "Sheltered British domestic manufacturers behind state protection, granting English inventors the time to mechanise cotton spinning.",
             "question": "Why did Parliament pass the 1700 and 1721 Calico Acts against Indian cloth?",
             "para_ref": "[2.2]",
-            "prose_hash": "57230aa861"
+            "prose_hash": "b1a2a82adc"
           },
           {
             "step": 3,
@@ -1733,7 +1743,7 @@ export default {
             "connective": "Inverted global trade flows: the Company used extracted Bengali taxes to buy Indian textiles for London markets, initiating the Drain of Wealth.",
             "question": "How did the 1765 Diwani let the Company buy Indian silk without silver?",
             "para_ref": "[2.3]",
-            "prose_hash": "149c3ceeff"
+            "prose_hash": "3b23c6f9ce"
           },
           {
             "step": 4,
@@ -1745,7 +1755,7 @@ export default {
             "connective": "Flooded Indian village bazaars with machine-made cloth, pricing traditional handloom artisans out of their own domestic markets.",
             "question": "How did Lancashire mills and 70% border taxes ruin Indian weavers?",
             "para_ref": "[2.4]",
-            "prose_hash": "5153d14bc5"
+            "prose_hash": "44dd79be3c"
           },
           {
             "step": 5,
@@ -1753,11 +1763,11 @@ export default {
             "title": "The Handloom Collapse & Bentinck’s Bleaching Plains",
             "actor": "Governor-General Lord William Bentinck & Destitute Weavers",
             "tag": "💀 DE-INDUSTRIALISATION",
-            "trigger": "Ancient textile metropolises like Dhaka and Murshidabad collapsed into ghost towns as millions of weavers were driven into rural poverty and famine.",
-            "connective": "Forcibly transformed India from the world's premier finished cloth exporter into an impoverished supplier of raw cotton to feed British factories.",
+            "trigger": "Rigged tariffs triggered sweeping de-industrialisation across Bengal, halving Dhaka’s population as ruined artisans pawned their ancestral looms.",
+            "connective": "Drove hundreds of thousands into landless agricultural peasant labour, prompting Governor-General William Bentinck to lament that weavers’ bones were bleaching the plains of India.",
             "question": "How did collapsing cloth exports affect weaving towns like Dhaka by 1834?",
             "para_ref": "[2.5]",
-            "prose_hash": "e031eb818b"
+            "prose_hash": "16e7602b74"
           }
         ]
       },
@@ -1791,10 +1801,10 @@ export default {
       "narrative_blocks": [
         {
           "theme_heading": "Mughal India: The World’s Textile Workshop (1650–1750)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Throughout the seventeenth century, Mughal India was the undisputed textile manufacturing workshop of the globe, producing over a quarter of world output. Across flourishing villages in Bengal and Gujarat, millions of skilled artisanal weavers created exquisite fine village handloom silk, calicoes, and muslin cloths.</p><p class=\"prose-p\">European merchant trading corporations competed aggressively for these luxury fabrics, paying in silver ingots and gold bullion. This continuous influx of precious metals enriched Indian banking dynasties and sustained vibrant regional urban economies.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Long before a single Lancashire chimney smoked, weavers in Dhaka spun cotton muslin so gossamer-thin that poets called it \"woven air\". Throughout the seventeenth century, Mughal India stood as the planet’s premier cloth workshop, supplying over a quarter of world output from bustling loom villages across Bengal and Gujarat.</p><p class=\"prose-p\">Handloom families wove luminous silk, calicoes, and muslin that made coarse European woollens itch and fade by comparison. Having almost nothing Indian consumers wanted to buy in return, European trading companies had to pay cash in silver ingots and gold bullion, enriching Mughal bankers and towns.</p>",
           "title": "Mughal India: The World’s Textile Workshop (1650–1750)",
           "heading": "Mughal India: The World’s Textile Workshop (1650–1750)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Throughout the seventeenth century, Mughal India was the undisputed textile manufacturing workshop of the globe, producing over a quarter of world output. Across flourishing villages in Bengal and Gujarat, millions of skilled artisanal weavers created exquisite fine village handloom silk, calicoes, and muslin cloths.</p><p class=\"prose-p\">European merchant trading corporations competed aggressively for these luxury fabrics, paying in silver ingots and gold bullion. This continuous influx of precious metals enriched Indian banking dynasties and sustained vibrant regional urban economies.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Long before a single Lancashire chimney smoked, weavers in Dhaka spun cotton muslin so gossamer-thin that poets called it \"woven air\". Throughout the seventeenth century, Mughal India stood as the planet’s premier cloth workshop, supplying over a quarter of world output from bustling loom villages across Bengal and Gujarat.</p><p class=\"prose-p\">Handloom families wove luminous silk, calicoes, and muslin that made coarse European woollens itch and fade by comparison. Having almost nothing Indian consumers wanted to buy in return, European trading companies had to pay cash in silver ingots and gold bullion, enriching Mughal bankers and towns.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.1]</span> Throughout the seventeenth century, Mughal India was the undisputed textile manufacturing workshop of the globe, producing over a quarter of world output. Across flourishing villages in Bengal and Gujarat, millions of skilled artisanal weavers created exquisite fine village handloom silk, calicoes, and muslin cloths.</p><p class=\"prose-p\">European merchant trading corporations competed aggressively for these luxury fabrics, paying in silver ingots and gold bullion. This continuous influx of precious metals enriched Indian banking dynasties and sustained vibrant regional urban economies.</p>",
           "image": "/images/bengal_weaver.jpg",
           "caption": "Nineteenth-Century Indian Company School Gouache, 'Weaver at his Loom' (Wellcome Collection): Before colonial tariff walls and factory imports, skilled Indian artisans operating village handlooms produced over a quarter of the world’s cotton and silk textiles.",
@@ -1802,10 +1812,10 @@ export default {
         },
         {
           "theme_heading": "The Protectionist Calico Acts (1700–1721)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> As comfortable, colourful Indian cottons flooded the English market, domestic textile manufacturers grew alarmed. In London, angry mobs of protesting English weavers rioted outside the Houses of Parliament, threatening royal officials and throwing acid onto women wearing Indian calico dresses.</p><p class=\"prose-p\">Parliament succumbed to pressure by passing the protectionist 1700 and 1721 Calico Acts, banning printed cotton cloth from being imported, sold, or worn in Britain. This statutory ban safeguarded domestic manufactures, protecting home wool sales from Asian competition.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> Bright, washable Indian cotton dresses delighted London shoppers so much that English wool and silk makers panicked—and reached for bottles of vitriol. In 1719, angry mobs of protesting English weavers marched on Westminster and hurled burning acid onto women caught wearing imported Indian calico gowns in the street.</p><p class=\"prose-p\">Rather than lecturing its own weavers about free competition, Parliament dutifully passed the protectionist 1700 and 1721 Calico Acts outlawing printed cotton imports to shelter home wool sales. Behind that cosy legal wall, British inventors spent the next sixty years copying Indian cloth by machine.</p>",
           "title": "The Protectionist Calico Acts (1700–1721)",
           "heading": "The Protectionist Calico Acts (1700–1721)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> As comfortable, colourful Indian cottons flooded the English market, domestic textile manufacturers grew alarmed. In London, angry mobs of protesting English weavers rioted outside the Houses of Parliament, threatening royal officials and throwing acid onto women wearing Indian calico dresses.</p><p class=\"prose-p\">Parliament succumbed to pressure by passing the protectionist 1700 and 1721 Calico Acts, banning printed cotton cloth from being imported, sold, or worn in Britain. This statutory ban safeguarded domestic manufactures, protecting home wool sales from Asian competition.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> Bright, washable Indian cotton dresses delighted London shoppers so much that English wool and silk makers panicked—and reached for bottles of vitriol. In 1719, angry mobs of protesting English weavers marched on Westminster and hurled burning acid onto women caught wearing imported Indian calico gowns in the street.</p><p class=\"prose-p\">Rather than lecturing its own weavers about free competition, Parliament dutifully passed the protectionist 1700 and 1721 Calico Acts outlawing printed cotton imports to shelter home wool sales. Behind that cosy legal wall, British inventors spent the next sixty years copying Indian cloth by machine.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.2]</span> As comfortable, colourful Indian cottons flooded the English market, domestic textile manufacturers grew alarmed. In London, angry mobs of protesting English weavers rioted outside the Houses of Parliament, threatening royal officials and throwing acid onto women wearing Indian calico dresses.</p><p class=\"prose-p\">Parliament succumbed to pressure by passing the protectionist 1700 and 1721 Calico Acts, banning printed cotton cloth from being imported, sold, or worn in Britain. This statutory ban safeguarded domestic manufactures, protecting home wool sales from Asian competition.</p>",
           "concept_widget": {
             "type": "profile_deck",
@@ -1911,10 +1921,10 @@ export default {
         },
         {
           "theme_heading": "The 1765 Diwani of Bengal: Fiscal Extraction Inverts the Flow (1765)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> The British military triumph in Bengal following the 1765 Treaty of Allahabad transformed Company commerce forever. Defeated Mughal Emperor Shah Alam II granted the Company the Diwani, granting British merchants the sovereign power of collecting peasant crop taxes across twenty million inhabitants.</p><p class=\"prose-p\">Company factors no longer imported European bullion, instead buying silk with local taxes wrung straight from Bengali cultivators. Halting silver shipments saved British directors vast sums, initiating a devastating drain of wealth from India directly to London.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Everything flipped inside a crimson campaign tent after the 1765 Treaty of Allahabad, when clerk-turned-general Robert Clive dictated terms to defeated Mughal Emperor Shah Alam II. With one stroke of a reed pen, the East India Company gained the Diwani—the sovereign right to collect land taxes from twenty million people in Bengal.</p><p class=\"prose-p\">Instead of shipping silver from London to pay weavers, Company clerks now bought Bengali cloth using local taxes wrung straight from Bengali cultivators. India was effectively forced to buy its own exports and hand them to British shareholders free of charge.</p>",
           "title": "The 1765 Diwani of Bengal: Fiscal Extraction Inverts the Flow (1765)",
           "heading": "The 1765 Diwani of Bengal: Fiscal Extraction Inverts the Flow (1765)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> The British military triumph in Bengal following the 1765 Treaty of Allahabad transformed Company commerce forever. Defeated Mughal Emperor Shah Alam II granted the Company the Diwani, granting British merchants the sovereign power of collecting peasant crop taxes across twenty million inhabitants.</p><p class=\"prose-p\">Company factors no longer imported European bullion, instead buying silk with local taxes wrung straight from Bengali cultivators. Halting silver shipments saved British directors vast sums, initiating a devastating drain of wealth from India directly to London.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> Everything flipped inside a crimson campaign tent after the 1765 Treaty of Allahabad, when clerk-turned-general Robert Clive dictated terms to defeated Mughal Emperor Shah Alam II. With one stroke of a reed pen, the East India Company gained the Diwani—the sovereign right to collect land taxes from twenty million people in Bengal.</p><p class=\"prose-p\">Instead of shipping silver from London to pay weavers, Company clerks now bought Bengali cloth using local taxes wrung straight from Bengali cultivators. India was effectively forced to buy its own exports and hand them to British shareholders free of charge.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.3]</span> The British military triumph in Bengal following the 1765 Treaty of Allahabad transformed Company commerce forever. Defeated Mughal Emperor Shah Alam II granted the Company the Diwani, granting British merchants the sovereign power of collecting peasant crop taxes across twenty million inhabitants.</p><p class=\"prose-p\">Company factors no longer imported European bullion, instead buying silk with local taxes wrung straight from Bengali cultivators. Halting silver shipments saved British directors vast sums, initiating a devastating drain of wealth from India directly to London.</p>",
           "image": "/images/ks3_sbe/sbe_l2_b2_east_offering_riches_britannia_1778.jpg",
           "image_alt": "Spiridione Roma’s 1778 oval ceiling painting The East Offering its Riches to Britannia showing dark-skinned female personifications of India and China kneeling before enthroned white-robed Britannia with trays of pearls, jewels, and porcelain while an East Indiaman ship waits offshore",
@@ -1922,10 +1932,10 @@ export default {
         },
         {
           "theme_heading": "Lancashire Steam Mills & Unequal Tariffs (1800–1835)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> The invention of steam-powered textile machinery in Britain inverted historic global trade flows. High-speed Lancashire factory mills produced millions of yards of cheap machine-spun cloth. To destroy Asian competition, the British government slapped a seventy percent border tax on imported Indian cottons.</p><p class=\"prose-p\">Simultaneously, British industrial textiles entered Indian ports virtually tariff-free, flooding bazaars with cheap cotton cloth. Machine production systematically undercut local spinners and handloom weavers, devastating a centuries-old artisanal economy across Indian provinces.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> Once steam mules roared across Lancashire, Britain suddenly discovered a heartfelt passion for \"free trade\"—strictly in one direction. While high-speed Lancashire mills churned out millions of cheap machine-spun yards, Westminster slapped a crushing seventy percent border tariff on Indian handwoven cottons entering Britain.</p><p class=\"prose-p\">Going the other way, British factory cloth sailed into Calcutta and Bombay virtually tariff-free under colonial rule. Priced out of both Europe and their own village bazaars, local spinners and handloom weavers watched centuries of family craft collapse within a single generation.</p>",
           "title": "Lancashire Steam Mills & Unequal Tariffs (1800–1835)",
           "heading": "Lancashire Steam Mills & Unequal Tariffs (1800–1835)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> The invention of steam-powered textile machinery in Britain inverted historic global trade flows. High-speed Lancashire factory mills produced millions of yards of cheap machine-spun cloth. To destroy Asian competition, the British government slapped a seventy percent border tax on imported Indian cottons.</p><p class=\"prose-p\">Simultaneously, British industrial textiles entered Indian ports virtually tariff-free, flooding bazaars with cheap cotton cloth. Machine production systematically undercut local spinners and handloom weavers, devastating a centuries-old artisanal economy across Indian provinces.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> Once steam mules roared across Lancashire, Britain suddenly discovered a heartfelt passion for \"free trade\"—strictly in one direction. While high-speed Lancashire mills churned out millions of cheap machine-spun yards, Westminster slapped a crushing seventy percent border tariff on Indian handwoven cottons entering Britain.</p><p class=\"prose-p\">Going the other way, British factory cloth sailed into Calcutta and Bombay virtually tariff-free under colonial rule. Priced out of both Europe and their own village bazaars, local spinners and handloom weavers watched centuries of family craft collapse within a single generation.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.4]</span> The invention of steam-powered textile machinery in Britain inverted historic global trade flows. High-speed Lancashire factory mills produced millions of yards of cheap machine-spun cloth. To destroy Asian competition, the British government slapped a seventy percent border tax on imported Indian cottons.</p><p class=\"prose-p\">Simultaneously, British industrial textiles entered Indian ports virtually tariff-free, flooding bazaars with cheap cotton cloth. Machine production systematically undercut local spinners and handloom weavers, devastating a centuries-old artisanal economy across Indian provinces.</p>",
           "image": "/images/ks3_sbe/sbe_l2_b3_lancashire_power_loom_mill_1835.jpg",
           "caption": "Thomas Allom, Power-Loom Weaving in a Lancashire Steam Mill (from Edward Baines, History of the Cotton Manufacture in Great Britain, 1835): Protected by 70% British import tariffs against Indian cloth, steam-spun Manchester cotton flooded Indian bazaars duty-free.",
@@ -1933,10 +1943,10 @@ export default {
         },
         {
           "theme_heading": "The Devastation of Handloom Weavers & Bentinck’s Lament (1834–1850)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Within decades, Britain’s unequal tariff regime and commercial dominance caused catastrophic de-industrialisation across the subcontinent. Once-bustling textile centres like Dhaka saw their famous loom city deserted as weaving workshops shut down and handloom exports collapsed under industrial competition.</p><p class=\"prose-p\">Deprived of their traditional livelihood, hundreds of thousands of starving handloom families were forced into farm labour as impoverished agricultural peasants. In 1834, Governor-General William Bentinck observed that the bones of the cotton weavers were bleaching the plains of India.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Walk through Dhaka in the 1830s and jungle creepers were already curling through the silent courtyards of workshops that had once clothed emperors. Across Bengal, rigged tariffs triggered sweeping de-industrialisation, halving Dhaka’s population as families pawned their ancestral looms for rice.</p><p class=\"prose-p\">Hundreds of thousands of ruined artisans drifted into the countryside as landless agricultural peasants growing raw cotton for the very British mills that had bankrupted them. Even British Governor-General William Bentinck confessed in 1834 that the misery had no parallel in commercial history: \"the bones of the cotton weavers are bleaching the plains of India.\"</p>",
           "title": "The Devastation of Handloom Weavers & Bentinck’s Lament (1834–1850)",
           "heading": "The Devastation of Handloom Weavers & Bentinck’s Lament (1834–1850)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Within decades, Britain’s unequal tariff regime and commercial dominance caused catastrophic de-industrialisation across the subcontinent. Once-bustling textile centres like Dhaka saw their famous loom city deserted as weaving workshops shut down and handloom exports collapsed under industrial competition.</p><p class=\"prose-p\">Deprived of their traditional livelihood, hundreds of thousands of starving handloom families were forced into farm labour as impoverished agricultural peasants. In 1834, Governor-General William Bentinck observed that the bones of the cotton weavers were bleaching the plains of India.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Walk through Dhaka in the 1830s and jungle creepers were already curling through the silent courtyards of workshops that had once clothed emperors. Across Bengal, rigged tariffs triggered sweeping de-industrialisation, halving Dhaka’s population as families pawned their ancestral looms for rice.</p><p class=\"prose-p\">Hundreds of thousands of ruined artisans drifted into the countryside as landless agricultural peasants growing raw cotton for the very British mills that had bankrupted them. Even British Governor-General William Bentinck confessed in 1834 that the misery had no parallel in commercial history: \"the bones of the cotton weavers are bleaching the plains of India.\"</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[2.5]</span> Within decades, Britain’s unequal tariff regime and commercial dominance caused catastrophic de-industrialisation across the subcontinent. Once-bustling textile centres like Dhaka saw their famous loom city deserted as weaving workshops shut down and handloom exports collapsed under industrial competition.</p><p class=\"prose-p\">Deprived of their traditional livelihood, hundreds of thousands of starving handloom families were forced into farm labour as impoverished agricultural peasants. In 1834, Governor-General William Bentinck observed that the bones of the cotton weavers were bleaching the plains of India.</p>",
           "image": "/images/ks3_sbe/sbe_l2_b4_dacca_muslin_manufacture.jpg",
           "image_alt": "1866 eight-panel archival engraving titled PROCESSES IN THE MANUFACTURE OF DACCA MUSLINS illustrating Bengali artisans spinning fine yarn, warping, applying the reed, pit-loom weaving, and steaming bleached cloth",
@@ -2479,7 +2489,8 @@ export default {
           "question": "How did Mughal India become the world’s leading cloth workshop?",
           "heading": "How did Mughal India become the world’s leading cloth workshop?",
           "focus_clue": "How did Mughal India become the world’s leading cloth workshop?",
-          "prose_hash": "bbe719d5c6"
+          "prose_hash": "1cafd5a360",
+          "para_ref": "[2.1]"
         },
         {
           "step": 2,
@@ -2512,7 +2523,8 @@ export default {
           "question": "Why did Parliament pass the 1700 and 1721 Calico Acts against Indian cloth?",
           "heading": "Why did Parliament pass the 1700 and 1721 Calico Acts against Indian cloth?",
           "focus_clue": "Why did Parliament pass the 1700 and 1721 Calico Acts against Indian cloth?",
-          "prose_hash": "57230aa861"
+          "prose_hash": "b1a2a82adc",
+          "para_ref": "[2.2]"
         },
         {
           "step": 3,
@@ -2545,7 +2557,8 @@ export default {
           "question": "How did the 1765 Diwani let the Company buy Indian silk without silver?",
           "heading": "How did the 1765 Diwani let the Company buy Indian silk without silver?",
           "focus_clue": "How did the 1765 Diwani let the Company buy Indian silk without silver?",
-          "prose_hash": "149c3ceeff"
+          "prose_hash": "3b23c6f9ce",
+          "para_ref": "[2.3]"
         },
         {
           "step": 4,
@@ -2578,7 +2591,8 @@ export default {
           "question": "How did Lancashire mills and 70% border taxes ruin Indian weavers?",
           "heading": "How did Lancashire mills and 70% border taxes ruin Indian weavers?",
           "focus_clue": "How did Lancashire mills and 70% border taxes ruin Indian weavers?",
-          "prose_hash": "5153d14bc5"
+          "prose_hash": "44dd79be3c",
+          "para_ref": "[2.4]"
         },
         {
           "step": 5,
@@ -2611,7 +2625,8 @@ export default {
           "question": "How did collapsing cloth exports affect weaving towns like Dhaka by 1834?",
           "heading": "How did collapsing cloth exports affect weaving towns like Dhaka by 1834?",
           "focus_clue": "How did collapsing cloth exports affect weaving towns like Dhaka by 1834?",
-          "prose_hash": "e031eb818b"
+          "prose_hash": "16e7602b74",
+          "para_ref": "[2.5]"
         }
       ],
       "visual_story_sheet": {
@@ -2642,7 +2657,8 @@ export default {
             "html": "<strong>Mughal India</strong> wove over a <strong>quarter of world cloth</strong>. Skilled weavers in <strong>Bengal</strong> made fine silk and muslin, drawing European silver and gold into India.",
             "spoken": "Why did East India Company rule ruin India’s world-leading textile industry? <short pause> Mughal India wove over a quarter of world cloth . Skilled weavers in Bengal made fine silk and muslin, drawing European silver and gold into India.",
             "paired_prose_hash": "bbe719d5c6",
-            "connective": "Why did East India Company rule ruin India’s world-leading textile industry?"
+            "connective": "Why did East India Company rule ruin India’s world-leading textile industry?",
+            "prose_hash": "1cafd5a360"
           },
           {
             "badge": "Stage 2",
@@ -2654,7 +2670,8 @@ export default {
             "html": "Cheap Indian cottons alarmed London wool weavers. Parliament passed the <strong>1700 and 1721 Calico Acts</strong>, banning <strong>Indian printed cloth</strong> to protect British makers.",
             "spoken": "Alarmed British weavers soon demanded laws blocking Indian cloth. <short pause> Cheap Indian cottons alarmed London wool weavers. Parliament passed the 1700 and 1721 Calico Acts , banning Indian printed cloth to protect British makers.",
             "paired_prose_hash": "57230aa861",
-            "connective": "Alarmed British weavers soon demanded laws blocking Indian cloth."
+            "connective": "Alarmed British weavers soon demanded laws blocking Indian cloth.",
+            "prose_hash": "b1a2a82adc"
           },
           {
             "badge": "Stage 3",
@@ -2667,7 +2684,8 @@ export default {
             "html": "In <strong>1765</strong>, defeated Emperor Shah Alam II gave the Company the <strong>Diwani of Bengal</strong>. Merchants stopped bringing silver and bought Indian cloth using <strong>local peasant taxes</strong>.",
             "spoken": "Conquest in Bengal then turned trade into wealth extraction. <short pause> In 1765 , defeated Emperor Shah Alam II gave the Company the Diwani of Bengal . Merchants stopped bringing silver and bought Indian cloth using local peasant taxes .",
             "paired_prose_hash": "149c3ceeff",
-            "connective": "Conquest in Bengal then turned trade into wealth extraction."
+            "connective": "Conquest in Bengal then turned trade into wealth extraction.",
+            "prose_hash": "3b23c6f9ce"
           },
           {
             "badge": "Stage 4",
@@ -2679,7 +2697,8 @@ export default {
             "html": "Steam-powered <strong>Lancashire mills</strong> spun cheap cloth fast. Britain put a <strong>70% border tax</strong> on Indian textiles while flooding Indian markets with <strong>tariff-free</strong> factory cotton.",
             "spoken": "Steam machines and unfair taxes next crushed Indian weavers. <short pause> Steam-powered Lancashire mills spun cheap cloth fast. Britain put a 70% border tax on Indian textiles while flooding Indian markets with tariff-free factory cotton.",
             "paired_prose_hash": "5153d14bc5",
-            "connective": "Steam machines and unfair taxes next crushed Indian weavers."
+            "connective": "Steam machines and unfair taxes next crushed Indian weavers.",
+            "prose_hash": "44dd79be3c"
           },
           {
             "badge": "Stage 5",
@@ -2691,7 +2710,8 @@ export default {
             "html": "Famous weaving cities like <strong>Dhaka</strong> emptied as exports collapsed, forcing starving families into <strong>poor farm labour</strong>. In <strong>1834</strong>, Bentinck mourned weavers’ ruin across India.",
             "spoken": "Within decades, India’s proud textile centres fell silent and hungry. <short pause> Famous weaving cities like Dhaka emptied as exports collapsed, forcing starving families into poor farm labour . In 1834 , Bentinck mourned weavers’ ruin across India.",
             "paired_prose_hash": "e031eb818b",
-            "connective": "Within decades, India’s proud textile centres fell silent and hungry."
+            "connective": "Within decades, India’s proud textile centres fell silent and hungry.",
+            "prose_hash": "16e7602b74"
           },
           {
             "badge": "⚡ Outcome",
@@ -2973,7 +2993,7 @@ export default {
             "connective": "Inflamed widespread resentment among high-caste Hindu and Muslim sepoys who viewed corporate expansion as a direct attack on their sovereignty and status.",
             "question": "Why did Dalhousie’s Doctrine of Lapse and seizing Awadh anger Indians?",
             "para_ref": "[3.1]",
-            "prose_hash": "de8e54a4b2"
+            "prose_hash": "46c810b13d"
           },
           {
             "step": 2,
@@ -2985,7 +3005,7 @@ export default {
             "connective": "Violated sacred religious laws for both Hindu and Muslim soldiers and sparked widespread fear of forced conversion to Christianity.",
             "question": "Why did greased Enfield rifle cartridges alarm Hindu and Muslim sepoys?",
             "para_ref": "[3.2]",
-            "prose_hash": "9138bd31a4"
+            "prose_hash": "de602f0016"
           },
           {
             "step": 3,
@@ -2997,7 +3017,7 @@ export default {
             "connective": "Transformed a military mutiny into a widespread civil war across the northern plains, culminating in the siege of Cawnpore.",
             "question": "How did the 1857 Meerut mutiny and march on Delhi unite rebels?",
             "para_ref": "[3.3]",
-            "prose_hash": "26a47194d9"
+            "prose_hash": "9990bc01ab"
           },
           {
             "step": 4,
@@ -3009,7 +3029,7 @@ export default {
             "connective": "Provided the uprising with an inspiring military leader praised even by British generals for unmatched bravery.",
             "question": "How did Rani Lakshmibai of Jhansi lead rebel forces until June 1858?",
             "para_ref": "[3.4]",
-            "prose_hash": "d921d85199"
+            "prose_hash": "fad7b59992"
           },
           {
             "step": 5,
@@ -3021,7 +3041,7 @@ export default {
             "connective": "Inaugurated the British Raj, replacing corporate mercenary rule with direct imperial governance and racial segregation.",
             "question": "How did the Government of India Act 1858 change how Britain ruled India?",
             "para_ref": "[3.5]",
-            "prose_hash": "d5f68ae8ba"
+            "prose_hash": "87d575bbcd"
           }
         ]
       },
@@ -3055,10 +3075,10 @@ export default {
       "narrative_blocks": [
         {
           "theme_heading": "The Doctrine of Lapse & Territorial Annexations (1848–1856)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> By the 1850s, Indian resentment against aggressive East India Company rule had reached boiling point. Governor-General Lord Dalhousie introduced the controversial Doctrine of Lapse, seizing heirless kingdoms whenever a native Hindu prince died without an acknowledged biological male heir.</p><p class=\"prose-p\">The Company annexed proud princely territories including Satara, Nagpur, Jhansi, disinheriting adopted heirs. Popular outrage peaked in 1856 when Dalhousie deposed the local Nawab by annexing wealthy Awadh, outraging thousands of aristocratic families and royal sepoy regiments.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> For centuries, an Indian ruler without a son could lawfully adopt an heir so his dynasty and court continued unbroken—until Scottish Governor-General Lord Dalhousie arrived in 1848 and announced he knew better. Under Dalhousie’s blunt Doctrine of Lapse, any Hindu princely state lacking a biological male heir simply \"lapsed\" into East India Company pockets.</p><p class=\"prose-p\">One after another, proud kingdoms including Jhansi, Satara and Nagpur were swallowed off the map. Then in 1856 Dalhousie seized fertile Awadh on grounds of \"misgovernment\", humiliating noble families and thousands of Company soldiers recruited from Awadh’s villages.</p>",
           "title": "The Doctrine of Lapse & Territorial Annexations (1848–1856)",
           "heading": "The Doctrine of Lapse & Territorial Annexations (1848–1856)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> By the 1850s, Indian resentment against aggressive East India Company rule had reached boiling point. Governor-General Lord Dalhousie introduced the controversial Doctrine of Lapse, seizing heirless kingdoms whenever a native Hindu prince died without an acknowledged biological male heir.</p><p class=\"prose-p\">The Company annexed proud princely territories including Satara, Nagpur, Jhansi, disinheriting adopted heirs. Popular outrage peaked in 1856 when Dalhousie deposed the local Nawab by annexing wealthy Awadh, outraging thousands of aristocratic families and royal sepoy regiments.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> For centuries, an Indian ruler without a son could lawfully adopt an heir so his dynasty and court continued unbroken—until Scottish Governor-General Lord Dalhousie arrived in 1848 and announced he knew better. Under Dalhousie’s blunt Doctrine of Lapse, any Hindu princely state lacking a biological male heir simply \"lapsed\" into East India Company pockets.</p><p class=\"prose-p\">One after another, proud kingdoms including Jhansi, Satara and Nagpur were swallowed off the map. Then in 1856 Dalhousie seized fertile Awadh on grounds of \"misgovernment\", humiliating noble families and thousands of Company soldiers recruited from Awadh’s villages.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.1]</span> By the 1850s, Indian resentment against aggressive East India Company rule had reached boiling point. Governor-General Lord Dalhousie introduced the controversial Doctrine of Lapse, seizing heirless kingdoms whenever a native Hindu prince died without an acknowledged biological male heir.</p><p class=\"prose-p\">The Company annexed proud princely territories including Satara, Nagpur, Jhansi, disinheriting adopted heirs. Popular outrage peaked in 1856 when Dalhousie deposed the local Nawab by annexing wealthy Awadh, outraging thousands of aristocratic families and royal sepoy regiments.</p>",
           "image": "/images/ks3_sbe/sbe_l3_b0_lord_dalhousie_watson_gordon.jpg",
           "caption": "James Andrew Broun-Ramsay, 1st Marquess of Dalhousie (1847, by Sir John Watson-Gordon, National Portrait Gallery NPG 188): As Governor-General of India (1848–1856), Dalhousie’s 'Doctrine of Lapse' and 1856 annexation of Awadh outraged princely families and Bengal sepoys.",
@@ -3066,10 +3086,10 @@ export default {
         },
         {
           "theme_heading": "The Greased Enfield Cartridges & Religious Alarm (April–May 1857)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In early 1857, the British military command issued the newly designed Pattern 1853 Enfield rifle to Indian soldiers. Loading the weapon required biting open greased paper tubes coated in animal grease to release the powder charge, provoking widespread religious alarm.</p><p class=\"prose-p\">Rumours spread rapidly that sepoys were biting cow and pig fat, desecrating religious laws for Hindus who revere the sacred cow, and Muslims who abhor pork. This provoked profound fear of forced conversion to Christianity, convincing soldiers that the British intended to destroy their caste.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Into that dry tinderbox marched drill sergeants carrying crates of the newly issued Pattern 1853 Enfield rifle. To ram a bullet down its rifled barrel, Indian sepoys had to load by biting open greased paper tubes smeared with tallow to keep tropical damp out of the gunpowder.</p><p class=\"prose-p\">Campfires buzzed with the explosive rumour—soon backed by panicked supply contractors’ admissions—that the tallow mixed cow and pig fat, defiling sacred cows for Hindus and forbidden pork for Muslims. Soldiers became convinced Company officers were plotting secret contamination and forced conversion to Christianity.</p>",
           "title": "The Greased Enfield Cartridges & Religious Alarm (April–May 1857)",
           "heading": "The Greased Enfield Cartridges & Religious Alarm (April–May 1857)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In early 1857, the British military command issued the newly designed Pattern 1853 Enfield rifle to Indian soldiers. Loading the weapon required biting open greased paper tubes coated in animal grease to release the powder charge, provoking widespread religious alarm.</p><p class=\"prose-p\">Rumours spread rapidly that sepoys were biting cow and pig fat, desecrating religious laws for Hindus who revere the sacred cow, and Muslims who abhor pork. This provoked profound fear of forced conversion to Christianity, convincing soldiers that the British intended to destroy their caste.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> Into that dry tinderbox marched drill sergeants carrying crates of the newly issued Pattern 1853 Enfield rifle. To ram a bullet down its rifled barrel, Indian sepoys had to load by biting open greased paper tubes smeared with tallow to keep tropical damp out of the gunpowder.</p><p class=\"prose-p\">Campfires buzzed with the explosive rumour—soon backed by panicked supply contractors’ admissions—that the tallow mixed cow and pig fat, defiling sacred cows for Hindus and forbidden pork for Muslims. Soldiers became convinced Company officers were plotting secret contamination and forced conversion to Christianity.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.2]</span> In early 1857, the British military command issued the newly designed Pattern 1853 Enfield rifle to Indian soldiers. Loading the weapon required biting open greased paper tubes coated in animal grease to release the powder charge, provoking widespread religious alarm.</p><p class=\"prose-p\">Rumours spread rapidly that sepoys were biting cow and pig fat, desecrating religious laws for Hindus who revere the sacred cow, and Muslims who abhor pork. This provoked profound fear of forced conversion to Christianity, convincing soldiers that the British intended to destroy their caste.</p>",
           "concept_widget": {
             "type": "profile_deck",
@@ -3175,10 +3195,10 @@ export default {
         },
         {
           "theme_heading": "The Meerut Mutiny & The March on Delhi (May–July 1857)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> On 10 May 1857, sepoys at the Meerut military garrison revolted after eighty-five comrades were sentenced to hard labour for refusing the ammunition. After breaking open jail cells and killing their British officers, the mutinous soldiers marched through the night to Delhi.</p><p class=\"prose-p\">Reaching the historic Mughal capital, the sepoys persuaded aged Emperor Bahadur Shah II to lead their rebellion. The uprising fostered remarkable Hindu and Muslim unity, uniting peasants, landowners, and royal soldiers in an armed struggle to overthrow British rule.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> On a blazing parade ground at Meerut in May 1857, British officers stripped uniform coats and riveted heavy leg-irons onto eighty-five comrades who refused to touch the cartridges. Next Sunday evening while British troops attended church parade, furious regiments broke open the Meerut jail, shot their officers, and rode forty miles through the moonlight to Delhi.</p><p class=\"prose-p\">Crowding beneath the Red Fort balconies at dawn, rebel cavalry hailed eighty-one-year-old Mughal poet Emperor Bahadur Shah II as rightful ruler of Hindustan. Overnight, a barrack-square mutiny turned into a vast Hindu-Muslim war of liberation.</p>",
           "title": "The Meerut Mutiny & The March on Delhi (May–July 1857)",
           "heading": "The Meerut Mutiny & The March on Delhi (May–July 1857)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> On 10 May 1857, sepoys at the Meerut military garrison revolted after eighty-five comrades were sentenced to hard labour for refusing the ammunition. After breaking open jail cells and killing their British officers, the mutinous soldiers marched through the night to Delhi.</p><p class=\"prose-p\">Reaching the historic Mughal capital, the sepoys persuaded aged Emperor Bahadur Shah II to lead their rebellion. The uprising fostered remarkable Hindu and Muslim unity, uniting peasants, landowners, and royal soldiers in an armed struggle to overthrow British rule.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> On a blazing parade ground at Meerut in May 1857, British officers stripped uniform coats and riveted heavy leg-irons onto eighty-five comrades who refused to touch the cartridges. Next Sunday evening while British troops attended church parade, furious regiments broke open the Meerut jail, shot their officers, and rode forty miles through the moonlight to Delhi.</p><p class=\"prose-p\">Crowding beneath the Red Fort balconies at dawn, rebel cavalry hailed eighty-one-year-old Mughal poet Emperor Bahadur Shah II as rightful ruler of Hindustan. Overnight, a barrack-square mutiny turned into a vast Hindu-Muslim war of liberation.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.3]</span> On 10 May 1857, sepoys at the Meerut military garrison revolted after eighty-five comrades were sentenced to hard labour for refusing the ammunition. After breaking open jail cells and killing their British officers, the mutinous soldiers marched through the night to Delhi.</p><p class=\"prose-p\">Reaching the historic Mughal capital, the sepoys persuaded aged Emperor Bahadur Shah II to lead their rebellion. The uprising fostered remarkable Hindu and Muslim unity, uniting peasants, landowners, and royal soldiers in an armed struggle to overthrow British rule.</p>",
           "image": "/images/second_british_empire/maps/sbe_map_l3_india_deindustrialisation_rebellion_1857.svg",
           "image_alt": "KS3 Year 8 historical GIS map of undivided India (1765–1858) showing Bengal textile deindustrialisation, East India Company annexations of Awadh and Jhansi, and the 1857 Indian Rebellion from Meerut and Mughal Delhi to Lucknow and Gwalior",
@@ -3336,10 +3356,10 @@ export default {
         },
         {
           "theme_heading": "Rani Lakshmibai & The Heroic Stand at Jhansi (1857–1858)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> In central India, twenty-two-year-old Rani Lakshmibai of Jhansi emerged as the most courageous military leader of the uprising after the British annexed her principality. When British forces breached Jhansi’s fortress walls, the warrior queen escaped at midnight, riding battle horseback with her young adopted child strapped to her back.</p><p class=\"prose-p\">Rani Lakshmibai rallied rebel cavalry, swinging curved talwar sword in ferocious front-line combat against British infantry. In June 1858, she was killed in action at Gwalior, earning the lasting admiration of her British opponents as a brilliant military strategist.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> When Dalhousie brushed aside her adopted son and seized her kingdom, twenty-two-year-old widowed queen Rani Lakshmibai of Jhansi reportedly replied cleanly: \"I shall not surrender my Jhansi.\" Besieged inside her hilltop fortress in March 1858, she directed cannon fire from the ramparts before escaping British troops at midnight—riding horseback with her young adopted child strapped to her back.</p><p class=\"prose-p\">Joining rebel commanders eastward, she led cavalry charges wielding a curved talwar sword in front-line battle until she fell fighting at Gwalior in June 1858, praised even by British General Hugh Rose as the bravest leader of the war.</p>",
           "title": "Rani Lakshmibai & The Heroic Stand at Jhansi (1857–1858)",
           "heading": "Rani Lakshmibai & The Heroic Stand at Jhansi (1857–1858)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> In central India, twenty-two-year-old Rani Lakshmibai of Jhansi emerged as the most courageous military leader of the uprising after the British annexed her principality. When British forces breached Jhansi’s fortress walls, the warrior queen escaped at midnight, riding battle horseback with her young adopted child strapped to her back.</p><p class=\"prose-p\">Rani Lakshmibai rallied rebel cavalry, swinging curved talwar sword in ferocious front-line combat against British infantry. In June 1858, she was killed in action at Gwalior, earning the lasting admiration of her British opponents as a brilliant military strategist.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> When Dalhousie brushed aside her adopted son and seized her kingdom, twenty-two-year-old widowed queen Rani Lakshmibai of Jhansi reportedly replied cleanly: \"I shall not surrender my Jhansi.\" Besieged inside her hilltop fortress in March 1858, she directed cannon fire from the ramparts before escaping British troops at midnight—riding horseback with her young adopted child strapped to her back.</p><p class=\"prose-p\">Joining rebel commanders eastward, she led cavalry charges wielding a curved talwar sword in front-line battle until she fell fighting at Gwalior in June 1858, praised even by British General Hugh Rose as the bravest leader of the war.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.4]</span> In central India, twenty-two-year-old Rani Lakshmibai of Jhansi emerged as the most courageous military leader of the uprising after the British annexed her principality. When British forces breached Jhansi’s fortress walls, the warrior queen escaped at midnight, riding battle horseback with her young adopted child strapped to her back.</p><p class=\"prose-p\">Rani Lakshmibai rallied rebel cavalry, swinging curved talwar sword in ferocious front-line combat against British infantry. In June 1858, she was killed in action at Gwalior, earning the lasting admiration of her British opponents as a brilliant military strategist.</p>",
           "image": "/images/ks3_sbe/sbe_l3_b3_rani_of_jhansi_siege_1858.jpg",
           "image_alt": "Nineteenth-century Indian gouache battle painting showing Rani Lakshmibai of Jhansi mounted on a brown warhorse with her young adopted son seated in front of her, raising a curved talwar sword against white-helmeted British cavalrymen and redcoat infantry",
@@ -3347,10 +3367,10 @@ export default {
         },
         {
           "theme_heading": "The Government of India Act 1858: The British Raj (1858)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Following the brutal suppression of the rebellion, Parliament passed the historic Government of India Act 1858, dissolving Company rule and ending commercial control over India forever. Sovereign authority was transferred directly to the Crown, governed in India through a royal Viceroy direct Crown command.</p><p class=\"prose-p\">The famous Queen Victoria proclamation promised religious toleration and fair treatment under British imperial law. However, the new British Raj deepened racial segregation, ruling India through authoritarian military force and maintaining strict racial superiority.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> After shattering rebel cities with ruthless reprisals and blowing captives from cannon mouths, Westminster decided a private joint-stock trading corporation could no longer be trusted with a subcontinent. Parliament passed the Government of India Act 1858, abolishing the East India Company and placing India under a royal Viceroy answering directly to London.</p><p class=\"prose-p\">Across Indian squares, heralds read Queen Victoria’s November proclamation inaugurating the British Raj and promising religious toleration without further annexations. Yet behind the royal pageantry, British officials retreated into segregated hill stations and walled cantonments, ruling more cautiously—and far more aloofly—than before.</p>",
           "title": "The Government of India Act 1858: The British Raj (1858)",
           "heading": "The Government of India Act 1858: The British Raj (1858)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Following the brutal suppression of the rebellion, Parliament passed the historic Government of India Act 1858, dissolving Company rule and ending commercial control over India forever. Sovereign authority was transferred directly to the Crown, governed in India through a royal Viceroy direct Crown command.</p><p class=\"prose-p\">The famous Queen Victoria proclamation promised religious toleration and fair treatment under British imperial law. However, the new British Raj deepened racial segregation, ruling India through authoritarian military force and maintaining strict racial superiority.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> After shattering rebel cities with ruthless reprisals and blowing captives from cannon mouths, Westminster decided a private joint-stock trading corporation could no longer be trusted with a subcontinent. Parliament passed the Government of India Act 1858, abolishing the East India Company and placing India under a royal Viceroy answering directly to London.</p><p class=\"prose-p\">Across Indian squares, heralds read Queen Victoria’s November proclamation inaugurating the British Raj and promising religious toleration without further annexations. Yet behind the royal pageantry, British officials retreated into segregated hill stations and walled cantonments, ruling more cautiously—and far more aloofly—than before.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[3.5]</span> Following the brutal suppression of the rebellion, Parliament passed the historic Government of India Act 1858, dissolving Company rule and ending commercial control over India forever. Sovereign authority was transferred directly to the Crown, governed in India through a royal Viceroy direct Crown command.</p><p class=\"prose-p\">The famous Queen Victoria proclamation promised religious toleration and fair treatment under British imperial law. However, the new British Raj deepened racial segregation, ruling India through authoritarian military force and maintaining strict racial superiority.</p>",
           "image": "/images/ks3_sbe/sbe_l3_b4_queen_victoria_empress_bassano.jpg",
           "caption": "Queen Victoria, Proclaimed Empress of India (Kaisar-i-Hind) (1882 portrait by Alexander Bassano): Following the Government of India Act 1858 that dissolved the East India Company, India was ruled directly by the Crown through a Viceroy under the British Raj.",
@@ -3894,7 +3914,8 @@ export default {
           "question": "Why did Dalhousie’s Doctrine of Lapse and seizing Awadh anger Indians?",
           "heading": "Why did Dalhousie’s Doctrine of Lapse and seizing Awadh anger Indians?",
           "focus_clue": "Why did Dalhousie’s Doctrine of Lapse and seizing Awadh anger Indians?",
-          "prose_hash": "de8e54a4b2"
+          "prose_hash": "46c810b13d",
+          "para_ref": "[3.1]"
         },
         {
           "step": 2,
@@ -3927,7 +3948,8 @@ export default {
           "question": "Why did greased Enfield rifle cartridges alarm Hindu and Muslim sepoys?",
           "heading": "Why did greased Enfield rifle cartridges alarm Hindu and Muslim sepoys?",
           "focus_clue": "Why did greased Enfield rifle cartridges alarm Hindu and Muslim sepoys?",
-          "prose_hash": "9138bd31a4"
+          "prose_hash": "de602f0016",
+          "para_ref": "[3.2]"
         },
         {
           "step": 3,
@@ -3960,7 +3982,8 @@ export default {
           "question": "How did the 1857 Meerut mutiny and march on Delhi unite rebels?",
           "heading": "How did the 1857 Meerut mutiny and march on Delhi unite rebels?",
           "focus_clue": "How did the 1857 Meerut mutiny and march on Delhi unite rebels?",
-          "prose_hash": "26a47194d9"
+          "prose_hash": "9990bc01ab",
+          "para_ref": "[3.3]"
         },
         {
           "step": 4,
@@ -3993,7 +4016,8 @@ export default {
           "question": "How did Rani Lakshmibai of Jhansi lead rebel forces until June 1858?",
           "heading": "How did Rani Lakshmibai of Jhansi lead rebel forces until June 1858?",
           "focus_clue": "How did Rani Lakshmibai of Jhansi lead rebel forces until June 1858?",
-          "prose_hash": "d921d85199"
+          "prose_hash": "fad7b59992",
+          "para_ref": "[3.4]"
         },
         {
           "step": 5,
@@ -4026,7 +4050,8 @@ export default {
           "question": "How did the Government of India Act 1858 change how Britain ruled India?",
           "heading": "How did the Government of India Act 1858 change how Britain ruled India?",
           "focus_clue": "How did the Government of India Act 1858 change how Britain ruled India?",
-          "prose_hash": "d5f68ae8ba"
+          "prose_hash": "87d575bbcd",
+          "para_ref": "[3.5]"
         }
       ],
       "visual_story_sheet": {
@@ -4057,7 +4082,8 @@ export default {
             "html": "<strong>Lord Dalhousie’s</strong> <strong>Doctrine of Lapse</strong> seized Indian kingdoms without a natural male heir, including Jhansi. Annexing rich <strong>Awadh in 1856</strong> outraged royal families and sepoys.",
             "spoken": "Why did East India Company rule spark the 1857 Rebellion and create the British Raj? <short pause> Lord Dalhousie’s Doctrine of Lapse seized Indian kingdoms without a natural male heir, including Jhansi. Annexing rich Awadh in 1856 outraged royal families and sepoys.",
             "paired_prose_hash": "de8e54a4b2",
-            "connective": "Why did East India Company rule spark the 1857 Rebellion and create the British Raj?"
+            "connective": "Why did East India Company rule spark the 1857 Rebellion and create the British Raj?",
+            "prose_hash": "46c810b13d"
           },
           {
             "badge": "Stage 2",
@@ -4069,7 +4095,8 @@ export default {
             "html": "New <strong>1857 Enfield rifles</strong> used greased paper cartridges bitten open by soldiers. Rumours of <strong>cow and pig fat</strong> alarmed both <strong>Hindu and Muslim sepoys</strong>.",
             "spoken": "A military blunder soon turned political anger into outrage. <short pause> New 1857 Enfield rifles used greased paper cartridges bitten open by soldiers. Rumours of cow and pig fat alarmed both Hindu and Muslim sepoys .",
             "paired_prose_hash": "9138bd31a4",
-            "connective": "A military blunder soon turned political anger into outrage."
+            "connective": "A military blunder soon turned political anger into outrage.",
+            "prose_hash": "de602f0016"
           },
           {
             "badge": "Stage 3",
@@ -4081,7 +4108,8 @@ export default {
             "html": "On <strong>10 May 1857</strong>, <strong>Meerut sepoys</strong> freed jailed comrades and marched to <strong>Delhi</strong>, uniting Hindu and Muslim rebels behind Mughal Emperor Bahadur Shah II.",
             "spoken": "Open armed rebellion erupted in northern India that May. <short pause> On the tenth of May 1857 , Meerut sepoys freed jailed comrades and marched to Delhi , uniting Hindu and Muslim rebels behind Mughal Emperor Bahadur Shah II.",
             "paired_prose_hash": "26a47194d9",
-            "connective": "Open armed rebellion erupted in northern India that May."
+            "connective": "Open armed rebellion erupted in northern India that May.",
+            "prose_hash": "9990bc01ab"
           },
           {
             "badge": "Stage 4",
@@ -4093,7 +4121,8 @@ export default {
             "html": "When Britain seized her state, <strong>Rani Lakshmibai of Jhansi</strong> escaped on horseback with her son and led rebel cavalry until dying at <strong>Gwalior in June 1858</strong>.",
             "spoken": "A fearless young queen soon led central India’s rebels. <short pause> When Britain seized her state, Rani Lakshmibai of Jhansi escaped on horseback with her son and led rebel cavalry until dying at Gwalior in June 1858 .",
             "paired_prose_hash": "d921d85199",
-            "connective": "A fearless young queen soon led central India’s rebels."
+            "connective": "A fearless young queen soon led central India’s rebels.",
+            "prose_hash": "fad7b59992"
           },
           {
             "badge": "Stage 5",
@@ -4105,7 +4134,8 @@ export default {
             "html": "After crushing the revolt, Parliament’s <strong>1858 Government of India Act</strong> abolished the Company. <strong>Queen Victoria</strong> promised religious respect under a royal <strong>Viceroy</strong>.",
             "spoken": "After brutal fighting, Parliament abolished Company rule forever. <short pause> After crushing the revolt, Parliament’s 1858 Government of India Act abolished the Company. Queen Victoria promised religious respect under a royal Viceroy .",
             "paired_prose_hash": "d5f68ae8ba",
-            "connective": "After brutal fighting, Parliament abolished Company rule forever."
+            "connective": "After brutal fighting, Parliament abolished Company rule forever.",
+            "prose_hash": "87d575bbcd"
           },
           {
             "badge": "⚡ Outcome",
@@ -4388,8 +4418,8 @@ export default {
             "trigger": "Fourteen European nations met in Berlin to carve up the African continent into colonial spheres of influence without a single African ruler or representative invited.",
             "connective": "Legitimised the colonial partition of Africa under European international law and eliminated diplomatic friction between European imperial rivals.",
             "question": "Why did fourteen Western nations meet in Berlin in 1884 with no Africans?",
-            "para_ref": "[1.1]",
-            "prose_hash": "0a9ab305be"
+            "para_ref": "[4.1]",
+            "prose_hash": "18d8b97583"
           },
           {
             "step": 2,
@@ -4400,8 +4430,8 @@ export default {
             "trigger": "The Berlin Act decreed that European powers could claim territory only if they demonstrated \"effective occupation\" through physical administration, garrisons, and treaty treaties.",
             "connective": "Accelerated an armed stampede of military columns into the interior to establish forts and claim rubber, mineral, and palm oil territories.",
             "question": "How did the rule of Effective Occupation speed up inland conquest?",
-            "para_ref": "[2.1]",
-            "prose_hash": "1aeccd706c"
+            "para_ref": "[4.2]",
+            "prose_hash": "e7567f5a19"
           },
           {
             "step": 3,
@@ -4412,8 +4442,8 @@ export default {
             "trigger": "Hiram Maxim invented the automatic machine gun firing 600 rounds per minute, while quinine medicine neutralised deadly malaria in equatorial Africa.",
             "connective": "Gave small European forces overwhelming technological superiority over brave African resistance armies, culminating in the 1898 Battle of Omdurman.",
             "question": "How did quinine medicine and Maxim guns enable conquest in Africa?",
-            "para_ref": "[3.1]",
-            "prose_hash": "b1c967c752"
+            "para_ref": "[4.3]",
+            "prose_hash": "8052d446fa"
           },
           {
             "step": 4,
@@ -4421,11 +4451,11 @@ export default {
             "title": "The White Man’s Burden & Imperial Ideology",
             "actor": "Rudyard Kipling & Social Darwinists",
             "tag": "📜 RACIAL IDEOLOGY",
-            "trigger": "Rudyard Kipling published \"The White Man’s Burden\", preaching that Europeans had a selfless moral obligation to civilise, educate, and convert non-white peoples.",
-            "connective": "Constructed a self-righteous moral facade that masked violent commercial exploitation under the guise of an enlightened civilising mission.",
+            "trigger": "Rudyard Kipling published \"The White Man’s Burden\" in February 1899, urging Britain and the United States to rule overseas empires while slandering colonised societies as \"half-devil and half-child\".",
+            "connective": "Wrapped diamond monopolies and violent land seizures in the soothing language of Christian paternalism so voters viewed conquest as charity.",
             "question": "How did Rudyard Kipling’s 1899 poem try to justify overseas conquest?",
-            "para_ref": "[4.1]",
-            "prose_hash": "95032de165"
+            "para_ref": "[4.4]",
+            "prose_hash": "71153e9d16"
           },
           {
             "step": 5,
@@ -4436,8 +4466,8 @@ export default {
             "trigger": "European colonial regimes looted rubber, palm oil, diamonds, and ivory through forced labour, hostage-taking, village burnings, and severed hands in King Leopold II’s Congo Free State.",
             "connective": "Exposed the hypocrisy of the civilising mission, enriching European tycoons while causing the premature deaths of an estimated ten million Congolese people.",
             "question": "How did King Leopold II’s rubber quotas cause terror across the Congo?",
-            "para_ref": "[5.1]",
-            "prose_hash": "e52ce7a588"
+            "para_ref": "[4.5]",
+            "prose_hash": "ca7360b54a"
           }
         ]
       },
@@ -4466,10 +4496,10 @@ export default {
       "narrative_blocks": [
         {
           "theme_heading": "The Berlin West Africa Conference 1884–1885 (1884–1885)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> In November 1884, representatives from fourteen Western imperial nations gathered in Berlin to carve up the African continent without triggering war between themselves. Convened by German Chancellor Otto von Bismarck, the diplomatic delegates sat around large tables negotiating imperial territorial claims.</p><p class=\"prose-p\">European diplomats partitioned ancient kingdoms by drawing lines across maps, dividing linguistic communities and trading corridors with artificial geometric borders. Tellingly, zero Africans invited were allowed to participate in decisions determining the sovereign fate of their homelands.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Beneath crystal chandeliers in Berlin in November 1884, frock-coated diplomats stood before a five-metre wall map of Africa with coloured pencils poised. Hosted by German Chancellor Otto von Bismarck to stop rival powers fighting each other over Congo river trade, envoys from fourteen Western imperial nations haggled politely over rivers and mountains most had never seen.</p><p class=\"prose-p\">Straight-edge rulers sliced cleanly right through centuries-old kingdoms, pasture trails, and language groups. Most telling of all, around Bismarck’s mahogany table sat precisely zero Africans—not one king, chief, or envoy from the continent being carved up.</p>",
           "title": "The Berlin West Africa Conference 1884–1885 (1884–1885)",
           "heading": "The Berlin West Africa Conference 1884–1885 (1884–1885)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> In November 1884, representatives from fourteen Western imperial nations gathered in Berlin to carve up the African continent without triggering war between themselves. Convened by German Chancellor Otto von Bismarck, the diplomatic delegates sat around large tables negotiating imperial territorial claims.</p><p class=\"prose-p\">European diplomats partitioned ancient kingdoms by drawing lines across maps, dividing linguistic communities and trading corridors with artificial geometric borders. Tellingly, zero Africans invited were allowed to participate in decisions determining the sovereign fate of their homelands.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> Beneath crystal chandeliers in Berlin in November 1884, frock-coated diplomats stood before a five-metre wall map of Africa with coloured pencils poised. Hosted by German Chancellor Otto von Bismarck to stop rival powers fighting each other over Congo river trade, envoys from fourteen Western imperial nations haggled politely over rivers and mountains most had never seen.</p><p class=\"prose-p\">Straight-edge rulers sliced cleanly right through centuries-old kingdoms, pasture trails, and language groups. Most telling of all, around Bismarck’s mahogany table sat precisely zero Africans—not one king, chief, or envoy from the continent being carved up.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.1]</span> In November 1884, representatives from fourteen Western imperial nations gathered in Berlin to carve up the African continent without triggering war between themselves. Convened by German Chancellor Otto von Bismarck, the diplomatic delegates sat around large tables negotiating imperial territorial claims.</p><p class=\"prose-p\">European diplomats partitioned ancient kingdoms by drawing lines across maps, dividing linguistic communities and trading corridors with artificial geometric borders. Tellingly, zero Africans invited were allowed to participate in decisions determining the sovereign fate of their homelands.</p>",
           "image": "/images/ks3_sbe/sbe_l4_b0_berlin_conference_cartoon_1884.jpg",
           "image_alt": "December 1884 Belgian satirical cartoon by François Maréchal showing King Leopold II standing at a table covered with a map labelled AFRIQUE slicing a large pumpkin inscribed CONGO with a knife flanked by crowned Emperor Wilhelm I of Germany and the Russian bear",
@@ -4477,10 +4507,10 @@ export default {
         },
         {
           "theme_heading": "The Principle of Effective Occupation (1885–1914)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> The Berlin Conference established the Principle of Effective Occupation to govern imperial land claims. Under this doctrine, European governments could no longer claim vast African territories merely by building coastal forts or establishing minor coastal trading settlements.</p><p class=\"prose-p\">Instead, empires had to demonstrate physical control by marching troops into interior regions, establishing fortified administrative posts, and planting national flags over tribal kingdoms. This rule unleashed a ruthless armed race between European powers to conquer the African interior.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> Before Berlin, European empires had lazily shaded coastal strips on maps while leaving great inland kingdoms largely untouched. Bismarck’s delegates tore up that habit by writing the Principle of Effective Occupation into international treaty law, ruling that empires could no longer claim interiors merely by building coastal forts or minor coastal trading settlements.</p><p class=\"prose-p\">To make a border stick in European eyes, governments now had to prove real control on the ground by marching troops into interior regions and establishing fortified administrative posts, flagpoles, and tax collectors. That single rule triggered a ruthless armed race between European powers to conquer the African interior.</p>",
           "title": "The Principle of Effective Occupation (1885–1914)",
           "heading": "The Principle of Effective Occupation (1885–1914)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> The Berlin Conference established the Principle of Effective Occupation to govern imperial land claims. Under this doctrine, European governments could no longer claim vast African territories merely by building coastal forts or establishing minor coastal trading settlements.</p><p class=\"prose-p\">Instead, empires had to demonstrate physical control by marching troops into interior regions, establishing fortified administrative posts, and planting national flags over tribal kingdoms. This rule unleashed a ruthless armed race between European powers to conquer the African interior.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> Before Berlin, European empires had lazily shaded coastal strips on maps while leaving great inland kingdoms largely untouched. Bismarck’s delegates tore up that habit by writing the Principle of Effective Occupation into international treaty law, ruling that empires could no longer claim interiors merely by building coastal forts or minor coastal trading settlements.</p><p class=\"prose-p\">To make a border stick in European eyes, governments now had to prove real control on the ground by marching troops into interior regions and establishing fortified administrative posts, flagpoles, and tax collectors. That single rule triggered a ruthless armed race between European powers to conquer the African interior.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.2]</span> The Berlin Conference established the Principle of Effective Occupation to govern imperial land claims. Under this doctrine, European governments could no longer claim vast African territories merely by building coastal forts or establishing minor coastal trading settlements.</p><p class=\"prose-p\">Instead, empires had to demonstrate physical control by marching troops into interior regions, establishing fortified administrative posts, and planting national flags over tribal kingdoms. This rule unleashed a ruthless armed race between European powers to conquer the African interior.</p>",
           "image": "/images/second_british_empire/maps/sbe_map_l4_scramble_for_africa_resistance_1879_1914.svg",
           "caption": "Reference Map: The Scramble for Africa, Imperial Partition & African Resistance (1879–1914)—showing the 1884–85 Berlin Conference, Britain’s Suez-to-Cape axis, Leopold II’s Congo Free State, independent Ethiopia and Liberia, and armed resistance in Zululand and Matabeleland.",
@@ -4638,10 +4668,10 @@ export default {
         },
         {
           "theme_heading": "The Maxim Gun & Quinine: Military Asymmetry (1884–1898)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> European conquest of Africa was made possible by revolutionary technological advances. Quinine, an anti-malarial bitter bark fever medicine derived from South American cinchona trees, allowed European explorers and colonial troops to survive deadly tropical fevers in deep rainforests.</p><p class=\"prose-p\">Militarily, the invention of the Hiram Maxim machine gun produced devastating technological inequality on the battlefield. Firing six hundred rounds per minute, Maxim machine guns slaughtered traditional African armies, leaving ten thousand dead at Omdurman during Kitchener’s 1898 invasion of Sudan.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> For centuries West Africa had been nicknamed the \"White Man’s Grave\" because malarial mosquitoes killed European soldiers far faster than spears ever could. That shield vanished once military doctors dosed columns daily with quinine, a bitter anti-malarial medicine refined from South American cinchona tree bark.</p><p class=\"prose-p\">Healthy invaders carried an even deadlier American-born London invention: Hiram Maxim’s recoil-operated gun, spitting six hundred rounds per minute from canvas ammo belts. Outside Omdurman in Sudan in September 1898, Kitchener’s gunners mowed down over ten thousand brave Mahdist fighters before they could even reach British rifle lines, losing just forty-eight men.</p>",
           "title": "The Maxim Gun & Quinine: Military Asymmetry (1884–1898)",
           "heading": "The Maxim Gun & Quinine: Military Asymmetry (1884–1898)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> European conquest of Africa was made possible by revolutionary technological advances. Quinine, an anti-malarial bitter bark fever medicine derived from South American cinchona trees, allowed European explorers and colonial troops to survive deadly tropical fevers in deep rainforests.</p><p class=\"prose-p\">Militarily, the invention of the Hiram Maxim machine gun produced devastating technological inequality on the battlefield. Firing six hundred rounds per minute, Maxim machine guns slaughtered traditional African armies, leaving ten thousand dead at Omdurman during Kitchener’s 1898 invasion of Sudan.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> For centuries West Africa had been nicknamed the \"White Man’s Grave\" because malarial mosquitoes killed European soldiers far faster than spears ever could. That shield vanished once military doctors dosed columns daily with quinine, a bitter anti-malarial medicine refined from South American cinchona tree bark.</p><p class=\"prose-p\">Healthy invaders carried an even deadlier American-born London invention: Hiram Maxim’s recoil-operated gun, spitting six hundred rounds per minute from canvas ammo belts. Outside Omdurman in Sudan in September 1898, Kitchener’s gunners mowed down over ten thousand brave Mahdist fighters before they could even reach British rifle lines, losing just forty-eight men.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.3]</span> European conquest of Africa was made possible by revolutionary technological advances. Quinine, an anti-malarial bitter bark fever medicine derived from South American cinchona trees, allowed European explorers and colonial troops to survive deadly tropical fevers in deep rainforests.</p><p class=\"prose-p\">Militarily, the invention of the Hiram Maxim machine gun produced devastating technological inequality on the battlefield. Firing six hundred rounds per minute, Maxim machine guns slaughtered traditional African armies, leaving ten thousand dead at Omdurman during Kitchener’s 1898 invasion of Sudan.</p>",
           "image": "/images/ks3_sbe/sbe_l4_b2_battle_of_omdurman_1898.jpg",
           "image_alt": "1898 colour chromolithograph by A. Sutherland titled OMDURMAN — THE FIRST BATTLE — 6.30 a.m. SEPTEMBER 2nd, 1898 showing ranks of British, Sudanese, and Egyptian infantry and Maxim machine-gun batteries firing across open desert against thousands of charging Mahdist warriors",
@@ -4649,10 +4679,10 @@ export default {
         },
         {
           "theme_heading": "Rudyard Kipling & The Myth of \"The White Man's Burden\" (1899)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Imperial conquest was underpinned by pervasive racial propaganda. In February 1899, author Rudyard Kipling published an influential poem in The Times titled \"The White Man's Burden\", urging the United States and Britain to conquer non-white populations overseas.</p><p class=\"prose-p\">Kipling justified imperial violence by claiming selfless duty and moral mission, while openly dehumanising colonized peoples using the racist slur half-devil and half-child. This paternalistic ideology masked brutal economic plunder beneath the noble language of Christian civilization.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Shooting down spearmen with water-cooled machine guns required an awfully grand moral excuse back home at Sunday breakfast tables. In February 1899, Bombay-born poet Rudyard Kipling supplied it with \"The White Man’s Burden\", urging the United States and Britain to rule overseas empires as a thankless, noble chore.</p><p class=\"prose-p\">With breathtaking imperial nerve, Kipling cast conquerors as selfless schoolmasters while slandering colonised societies—many older than London itself—as \"half-devil and half-child\". Wrapped in this soothing language of Christian paternalism, diamond monopolies and land seizures could be sold to voters as charity.</p>",
           "title": "Rudyard Kipling & The Myth of \"The White Man's Burden\" (1899)",
           "heading": "Rudyard Kipling & The Myth of \"The White Man's Burden\" (1899)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Imperial conquest was underpinned by pervasive racial propaganda. In February 1899, author Rudyard Kipling published an influential poem in The Times titled \"The White Man's Burden\", urging the United States and Britain to conquer non-white populations overseas.</p><p class=\"prose-p\">Kipling justified imperial violence by claiming selfless duty and moral mission, while openly dehumanising colonized peoples using the racist slur half-devil and half-child. This paternalistic ideology masked brutal economic plunder beneath the noble language of Christian civilization.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Shooting down spearmen with water-cooled machine guns required an awfully grand moral excuse back home at Sunday breakfast tables. In February 1899, Bombay-born poet Rudyard Kipling supplied it with \"The White Man’s Burden\", urging the United States and Britain to rule overseas empires as a thankless, noble chore.</p><p class=\"prose-p\">With breathtaking imperial nerve, Kipling cast conquerors as selfless schoolmasters while slandering colonised societies—many older than London itself—as \"half-devil and half-child\". Wrapped in this soothing language of Christian paternalism, diamond monopolies and land seizures could be sold to voters as charity.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.4]</span> Imperial conquest was underpinned by pervasive racial propaganda. In February 1899, author Rudyard Kipling published an influential poem in The Times titled \"The White Man's Burden\", urging the United States and Britain to conquer non-white populations overseas.</p><p class=\"prose-p\">Kipling justified imperial violence by claiming selfless duty and moral mission, while openly dehumanising colonized peoples using the racist slur half-devil and half-child. This paternalistic ideology masked brutal economic plunder beneath the noble language of Christian civilization.</p>",
           "image": "/images/ks3_sbe/sbe_l4_b3_rudyard_kipling_portrait.jpg",
           "caption": "Author and Poet Rudyard Kipling (photographed by Elliott & Fry, June 1895): His February 1899 poem 'The White Man’s Burden' used paternalistic racial stereotypes to frame violent colonial conquest as a moral 'civilising mission'.",
@@ -4660,10 +4690,10 @@ export default {
         },
         {
           "theme_heading": "Resource Extraction, Cetshwayo & Resistance in the Congo (1879–1908)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> Behind civilizing rhetoric lay unvarnished economic exploitation. European colonial authorities seized vast territories, stealing rubber and palm oil, copper, diamonds, and ivory from indigenous African populations through forced labour and confiscatory taxes.</p><p class=\"prose-p\">In King Leopold II’s Congo Free State, failure to fulfill severe rubber quotas led to hostage taking, village burnings, and severed hands in Congo. This state-backed terror operated primarily for enriching European tycoons while causing the premature deaths of an estimated ten million Congolese people.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> Down on the Antwerp docks around 1900, shipping clerk E. D. Morel noticed a chilling puzzle in the cargo ledgers: ships from King Leopold II’s personal Congo Free State arrived bursting with wild rubber and ivory, yet sailed back carrying zero trade goods—only rifles, bullets, and chains. Across colonised Africa, regimes extracted rubber and palm oil, copper, and diamonds through forced labour.</p><p class=\"prose-p\">In Leopold’s Congo, gendarmes burned villages, held wives hostage, and collected baskets of severed hands to prove every cartridge had been spent enforcing rubber quotas. Behind Europe’s \"civilising\" speeches, forced-labour terror killed an estimated ten million Congolese people.</p>",
           "title": "Resource Extraction, Cetshwayo & Resistance in the Congo (1879–1908)",
           "heading": "Resource Extraction, Cetshwayo & Resistance in the Congo (1879–1908)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> Behind civilizing rhetoric lay unvarnished economic exploitation. European colonial authorities seized vast territories, stealing rubber and palm oil, copper, diamonds, and ivory from indigenous African populations through forced labour and confiscatory taxes.</p><p class=\"prose-p\">In King Leopold II’s Congo Free State, failure to fulfill severe rubber quotas led to hostage taking, village burnings, and severed hands in Congo. This state-backed terror operated primarily for enriching European tycoons while causing the premature deaths of an estimated ten million Congolese people.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> Down on the Antwerp docks around 1900, shipping clerk E. D. Morel noticed a chilling puzzle in the cargo ledgers: ships from King Leopold II’s personal Congo Free State arrived bursting with wild rubber and ivory, yet sailed back carrying zero trade goods—only rifles, bullets, and chains. Across colonised Africa, regimes extracted rubber and palm oil, copper, and diamonds through forced labour.</p><p class=\"prose-p\">In Leopold’s Congo, gendarmes burned villages, held wives hostage, and collected baskets of severed hands to prove every cartridge had been spent enforcing rubber quotas. Behind Europe’s \"civilising\" speeches, forced-labour terror killed an estimated ten million Congolese people.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[4.5]</span> Behind civilizing rhetoric lay unvarnished economic exploitation. European colonial authorities seized vast territories, stealing rubber and palm oil, copper, diamonds, and ivory from indigenous African populations through forced labour and confiscatory taxes.</p><p class=\"prose-p\">In King Leopold II’s Congo Free State, failure to fulfill severe rubber quotas led to hostage taking, village burnings, and severed hands in Congo. This state-backed terror operated primarily for enriching European tycoons while causing the premature deaths of an estimated ten million Congolese people.</p>",
           "image": "/images/cetshwayo_king_of_zulus.jpg",
           "caption": "King Cetshwayo kaMpande of the Zulu Kingdom (photographed by Alexander Bassano, 1882): Cetshwayo’s disciplined regiments defeated invading British troops at Isandlwana in January 1879 before colonial artillery and rapid-fire rifles overwhelmed Zululand.",
@@ -5201,7 +5231,8 @@ export default {
           "question": "Why did fourteen Western nations meet in Berlin in 1884 with no Africans?",
           "heading": "Why did fourteen Western nations meet in Berlin in 1884 with no Africans?",
           "focus_clue": "Why did fourteen Western nations meet in Berlin in 1884 with no Africans?",
-          "prose_hash": "0a9ab305be"
+          "prose_hash": "18d8b97583",
+          "para_ref": "[4.1]"
         },
         {
           "step": 2,
@@ -5234,7 +5265,8 @@ export default {
           "question": "How did the rule of Effective Occupation speed up inland conquest?",
           "heading": "How did the rule of Effective Occupation speed up inland conquest?",
           "focus_clue": "How did the rule of Effective Occupation speed up inland conquest?",
-          "prose_hash": "1aeccd706c"
+          "prose_hash": "e7567f5a19",
+          "para_ref": "[4.2]"
         },
         {
           "step": 3,
@@ -5267,7 +5299,8 @@ export default {
           "question": "How did quinine medicine and Maxim guns enable conquest in Africa?",
           "heading": "How did quinine medicine and Maxim guns enable conquest in Africa?",
           "focus_clue": "How did quinine medicine and Maxim guns enable conquest in Africa?",
-          "prose_hash": "b1c967c752"
+          "prose_hash": "8052d446fa",
+          "para_ref": "[4.3]"
         },
         {
           "step": 4,
@@ -5300,7 +5333,8 @@ export default {
           "question": "How did Rudyard Kipling’s 1899 poem try to justify overseas conquest?",
           "heading": "How did Rudyard Kipling’s 1899 poem try to justify overseas conquest?",
           "focus_clue": "How did Rudyard Kipling’s 1899 poem try to justify overseas conquest?",
-          "prose_hash": "95032de165"
+          "prose_hash": "71153e9d16",
+          "para_ref": "[4.4]"
         },
         {
           "step": 5,
@@ -5333,7 +5367,8 @@ export default {
           "question": "How did King Leopold II’s rubber quotas cause terror across the Congo?",
           "heading": "How did King Leopold II’s rubber quotas cause terror across the Congo?",
           "focus_clue": "How did King Leopold II’s rubber quotas cause terror across the Congo?",
-          "prose_hash": "e52ce7a588"
+          "prose_hash": "ca7360b54a",
+          "para_ref": "[4.5]"
         }
       ],
       "visual_story_sheet": {
@@ -5365,7 +5400,8 @@ export default {
             "html": "In <strong>1884</strong>, <strong>Otto von Bismarck</strong> hosted 14 Western nations in Berlin. Diplomats drew straight borders across African kingdoms with <strong>zero African leaders</strong> invited.",
             "spoken": "How did European industrial powers partition Africa, and how did they try to justify conquest? <short pause> In 1884 , Otto von Bismarck hosted 14 Western nations in Berlin. Diplomats drew straight borders across African kingdoms with zero African leaders invited.",
             "paired_prose_hash": "0a9ab305be",
-            "connective": "How did European industrial powers partition Africa, and how did they try to justify conquest?"
+            "connective": "How did European industrial powers partition Africa, and how did they try to justify conquest?",
+            "prose_hash": "18d8b97583"
           },
           {
             "badge": "Stage 2",
@@ -5377,7 +5413,8 @@ export default {
             "html": "Berlin’s rule of <strong>Effective Occupation</strong> meant coastal forts were no longer enough. Rivals raced inland with <strong>soldiers, flags, and forts</strong> to claim African kingdoms.",
             "spoken": "Berlin’s new rule immediately triggered a fierce land rush. <short pause> Berlin’s rule of Effective Occupation meant coastal forts were no longer enough. Rivals raced inland with soldiers, flags, and forts to claim African kingdoms.",
             "paired_prose_hash": "1aeccd706c",
-            "connective": "Berlin’s new rule immediately triggered a fierce land rush."
+            "connective": "Berlin’s new rule immediately triggered a fierce land rush.",
+            "prose_hash": "e7567f5a19"
           },
           {
             "badge": "Stage 3",
@@ -5389,7 +5426,8 @@ export default {
             "html": "<strong>Quinine medicine</strong> protected invading troops from malaria. Firing <strong>600 bullets a minute</strong>, the <strong>Maxim gun</strong> killed over 10,000 Sudanese fighters at Omdurman in 1898.",
             "spoken": "Medicine and machine guns gave invaders an overwhelming edge. <short pause> Quinine medicine protected invading troops from malaria. Firing 600 bullets a minute , the Maxim gun killed over 10,000 Sudanese fighters at Omdurman in 1898.",
             "paired_prose_hash": "b1c967c752",
-            "connective": "Medicine and machine guns gave invaders an overwhelming edge."
+            "connective": "Medicine and machine guns gave invaders an overwhelming edge.",
+            "prose_hash": "8052d446fa"
           },
           {
             "badge": "Stage 4",
@@ -5401,7 +5439,8 @@ export default {
             "html": "In <strong>1899</strong>, poet <strong>Rudyard Kipling</strong> wrote <em>The White Man’s Burden</em>. Racist propaganda disguised violent land grabs as a noble <strong>“civilising mission”</strong> overseas.",
             "spoken": "Writers and advertisers used racist propaganda to excuse violent conquest. <short pause> In 1899 , poet Rudyard Kipling wrote The White Man’s Burden . Racist propaganda disguised violent land grabs as a noble “civilising mission” overseas.",
             "paired_prose_hash": "95032de165",
-            "connective": "Writers and advertisers used racist propaganda to excuse violent conquest."
+            "connective": "Writers and advertisers used racist propaganda to excuse violent conquest.",
+            "prose_hash": "71153e9d16"
           },
           {
             "badge": "Stage 5",
@@ -5413,7 +5452,8 @@ export default {
             "html": "Behind fine words lay <strong>forced labour</strong> for diamonds and rubber. In <strong>King Leopold II’s Congo</strong>, missed rubber quotas brought village burnings and <strong>millions of deaths</strong>.",
             "spoken": "Behind those slogans lay ruthless theft of raw materials. <short pause> Behind fine words lay forced labour for diamonds and rubber. In King Leopold II’s Congo , missed rubber quotas brought village burnings and millions of deaths .",
             "paired_prose_hash": "e52ce7a588",
-            "connective": "Behind those slogans lay ruthless theft of raw materials."
+            "connective": "Behind those slogans lay ruthless theft of raw materials.",
+            "prose_hash": "ca7360b54a"
           },
           {
             "badge": "⚡ Outcome",
@@ -5702,8 +5742,8 @@ export default {
             "trigger": "Prince Albert opened the Great Exhibition inside the monumental glass Crystal Palace, displaying 100,000 exhibits from across the British Empire to 6 million visitors.",
             "connective": "Proclaimed Britain as the undisputed \"Workshop of the World\", showcasing steam engines, textiles, and colonial wealth as emblems of providential progress.",
             "question": "What did the 1851 Great Exhibition and Koh-i-Noor diamond show?",
-            "para_ref": "[1.1]",
-            "prose_hash": "1a8002e19f"
+            "para_ref": "[5.1]",
+            "prose_hash": "79caf9d33d"
           },
           {
             "step": 2,
@@ -5714,8 +5754,8 @@ export default {
             "trigger": "British engineers constructed 25,000 miles of railway, electric telegraph networks, and massive canal irrigation systems across the Indian subcontinent.",
             "connective": "Linked the interior to coastal ports, primarily designed to transport export crops to Britain and rapidly deploy imperial troops to suppress unrest.",
             "question": "Why did British engineers build 25,000 miles of railways across India?",
-            "para_ref": "[2.1]",
-            "prose_hash": "7bb25ced25"
+            "para_ref": "[5.2]",
+            "prose_hash": "82d46ad089"
           },
           {
             "step": 3,
@@ -5726,8 +5766,8 @@ export default {
             "trigger": "Severe monsoons triggered massive famines, yet British authorities strictly enforced laissez-faire market doctrine, exporting millions of tons of wheat while peasants starved.",
             "connective": "Resulted in the preventable deaths of over 10 million Indians and proved the callous brutality of rigid free-trade policies during humanitarian crises.",
             "question": "Why did ten million Indians starve while grain was shipped to Britain?",
-            "para_ref": "[3.1]",
-            "prose_hash": "c48a2b35d2"
+            "para_ref": "[5.3]",
+            "prose_hash": "6d7edc51ce"
           },
           {
             "step": 4,
@@ -5738,8 +5778,8 @@ export default {
             "trigger": "Dadabhai Naoroji, the first Indian MP elected to the British Parliament, published \"Poverty and Un-British Rule in India\", calculating the vast annual drain of wealth to London.",
             "connective": "Demolished the claim that British rule was financially benevolent, proving that India paid for its own conquest while its wealth was systematically siphoned off.",
             "question": "What did Dadabhai Naoroji’s \"Drain of Wealth\" argument prove in 1867?",
-            "para_ref": "[4.1]",
-            "prose_hash": "51427b7e1f"
+            "para_ref": "[5.4]",
+            "prose_hash": "dca0f1cb71"
           },
           {
             "step": 5,
@@ -5747,11 +5787,11 @@ export default {
             "title": "The Imperial Balance Sheet & Modern Verdict",
             "actor": "Modern Historians (Ferguson vs. Tharoor)",
             "tag": "⚖️ HISTORICAL VERDICT",
-            "trigger": "Modern historians remain sharply divided between \"Optimists\" who highlight parliamentary law and infrastructure, and \"Pessimists\" who emphasize plunder, racism, and famine.",
-            "connective": "Challenges students to reach a nuanced historical evaluation: whether the British Empire was an engine of global modernization or a destructive force of imperial exploitation.",
+            "trigger": "Historians remain divided between \"The Traditional View\" (Niall Ferguson), highlighting railways, free trade, and English common law, and \"The Modern View\" (Shashi Tharoor), highlighting de-industrialisation, tax drain, and famines.",
+            "connective": "Challenges students to weigh gleaming Victorian viaducts and legal institutions against the heavy human price paid by colonised peoples.",
             "question": "How do Niall Ferguson and Shashi Tharoor disagree over the Empire?",
-            "para_ref": "[5.1]",
-            "prose_hash": "0e949239a4"
+            "para_ref": "[5.5]",
+            "prose_hash": "4eb20855ed"
           }
         ]
       },
@@ -5780,10 +5820,10 @@ export default {
       "narrative_blocks": [
         {
           "theme_heading": "The 1851 Great Exhibition: Workshop of the World (1851)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In May 1851, Queen Victoria inaugurated the Great Exhibition in London’s Hyde Park. Housed within Joseph Paxton’s magnificent glass and iron Crystal Palace, the grand spectacle celebrated Britain’s self-proclaimed status as the triumphant \"Workshop of the World\".</p><p class=\"prose-p\">Over six million ticket holders marvelled at cutting-edge steam engines, electric telegraphs, and imperial manufactured commodities. Central to the Indian pavilion was the looted Koh-i-Noor diamond confiscated from child Maharaja Duleep Singh, symbolising Britain's unchallenged imperial subjugation.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> Under glistening arches of iron and three hundred thousand panes of glass in Hyde Park in May 1851, six million visitors wandered wide-eyed through the Great Exhibition. Designed by gardener Joseph Paxton, the soaring Crystal Palace trumpeted mid-Victorian Britain’s proudest boast: that one smoky island had become the \"Workshop of the World\".</p><p class=\"prose-p\">Beside thumping Lancashire looms and hydraulic presses gleamed a velvet-lined gilded cage holding the Koh-i-Noor diamond, freshly taken from twelve-year-old Maharaja Duleep Singh after annexing the Punjab. Industrial genius and colonial trophy sat side by side under the same glass roof.</p>",
           "title": "The 1851 Great Exhibition: Workshop of the World (1851)",
           "heading": "The 1851 Great Exhibition: Workshop of the World (1851)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In May 1851, Queen Victoria inaugurated the Great Exhibition in London’s Hyde Park. Housed within Joseph Paxton’s magnificent glass and iron Crystal Palace, the grand spectacle celebrated Britain’s self-proclaimed status as the triumphant \"Workshop of the World\".</p><p class=\"prose-p\">Over six million ticket holders marvelled at cutting-edge steam engines, electric telegraphs, and imperial manufactured commodities. Central to the Indian pavilion was the looted Koh-i-Noor diamond confiscated from child Maharaja Duleep Singh, symbolising Britain's unchallenged imperial subjugation.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> Under glistening arches of iron and three hundred thousand panes of glass in Hyde Park in May 1851, six million visitors wandered wide-eyed through the Great Exhibition. Designed by gardener Joseph Paxton, the soaring Crystal Palace trumpeted mid-Victorian Britain’s proudest boast: that one smoky island had become the \"Workshop of the World\".</p><p class=\"prose-p\">Beside thumping Lancashire looms and hydraulic presses gleamed a velvet-lined gilded cage holding the Koh-i-Noor diamond, freshly taken from twelve-year-old Maharaja Duleep Singh after annexing the Punjab. Industrial genius and colonial trophy sat side by side under the same glass roof.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.1]</span> In May 1851, Queen Victoria inaugurated the Great Exhibition in London’s Hyde Park. Housed within Joseph Paxton’s magnificent glass and iron Crystal Palace, the grand spectacle celebrated Britain’s self-proclaimed status as the triumphant \"Workshop of the World\".</p><p class=\"prose-p\">Over six million ticket holders marvelled at cutting-edge steam engines, electric telegraphs, and imperial manufactured commodities. Central to the Indian pavilion was the looted Koh-i-Noor diamond confiscated from child Maharaja Duleep Singh, symbolising Britain's unchallenged imperial subjugation.</p>",
           "image": "/images/great_exhibition_1851.jpg",
           "caption": "'The Crystal Palace in Hyde Park for Grand International Exhibition of 1851' (Read & Co., London, 1851): Visited by six million people, the Great Exhibition showcased British steam machinery alongside colonial treasures including the confiscated Koh-i-Noor diamond.",
@@ -5791,10 +5831,10 @@ export default {
         },
         {
           "theme_heading": "Colonial Infrastructure: Railways, Canals & Telegraphs (1853–1900)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Proponents of the British Empire highlighted extensive modernization projects across colonized territories. In India, British colonial engineers constructed over twenty-five thousand rail miles, integrating distant regional markets and transforming transportation networks across the subcontinent.</p><p class=\"prose-p\">Authorities simultaneously invested in digging river canals for irrigation and stringing thousands of miles of electric telegraph wires. While these networks modernised transport, they were designed primarily to extract agricultural commodities and deploy military regiments rapidly to suppress domestic unrest.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Defenders of British rule pointed proudly to iron bridges spanning wide Indian rivers and train timetables ticking to the minute from Bombay to Calcutta. By 1900, colonial engineers and hundreds of thousands of Indian navvies had laid over twenty-five thousand rail miles alongside irrigation canals and humming electric telegraph wires.</p><p class=\"prose-p\">Yet track maps told a sharp story about whose convenience came first: lines ran straight from inland cotton and wheat districts to export ports to extract agricultural commodities, and into garrison towns to deploy military regiments rapidly to suppress domestic unrest after 1857.</p>",
           "title": "Colonial Infrastructure: Railways, Canals & Telegraphs (1853–1900)",
           "heading": "Colonial Infrastructure: Railways, Canals & Telegraphs (1853–1900)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Proponents of the British Empire highlighted extensive modernization projects across colonized territories. In India, British colonial engineers constructed over twenty-five thousand rail miles, integrating distant regional markets and transforming transportation networks across the subcontinent.</p><p class=\"prose-p\">Authorities simultaneously invested in digging river canals for irrigation and stringing thousands of miles of electric telegraph wires. While these networks modernised transport, they were designed primarily to extract agricultural commodities and deploy military regiments rapidly to suppress domestic unrest.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Defenders of British rule pointed proudly to iron bridges spanning wide Indian rivers and train timetables ticking to the minute from Bombay to Calcutta. By 1900, colonial engineers and hundreds of thousands of Indian navvies had laid over twenty-five thousand rail miles alongside irrigation canals and humming electric telegraph wires.</p><p class=\"prose-p\">Yet track maps told a sharp story about whose convenience came first: lines ran straight from inland cotton and wheat districts to export ports to extract agricultural commodities, and into garrison towns to deploy military regiments rapidly to suppress domestic unrest after 1857.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.2]</span> Proponents of the British Empire highlighted extensive modernization projects across colonized territories. In India, British colonial engineers constructed over twenty-five thousand rail miles, integrating distant regional markets and transforming transportation networks across the subcontinent.</p><p class=\"prose-p\">Authorities simultaneously invested in digging river canals for irrigation and stringing thousands of miles of electric telegraph wires. While these networks modernised transport, they were designed primarily to extract agricultural commodities and deploy military regiments rapidly to suppress domestic unrest.</p>",
           "image": "/images/great_eastern_telegraph_cable.jpg",
           "caption": "Paying Out Submarine Telegraph Cable Inside the Tank of SS Great Eastern (Robert Charles Dudley, 1866): Undersea telegraph cables and 25,000 miles of Indian railways linked London to Bombay in minutes—speeding both raw-material exports and military troop movements.",
@@ -5802,10 +5842,10 @@ export default {
         },
         {
           "theme_heading": "The Great Famines & Strict Laissez-Faire Dogma (1876–1878)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> The catastrophic human costs of British rule were starkly revealed during the Great Famines of the late nineteenth century. When monsoon rains failed, Viceroy Lytton market dogma refused to ban food exports or cap wheat prices, fanatically enforcing strict free-market economic theory.</p><p class=\"prose-p\">Desperate peasants seeking government food aid were forced into punitive hard labour relief camps receiving starvation rations. Consequently, an estimated ten million starved to death across India, even as record grain exports flowed directly to Britain.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> Those same railway tracks carried grain straight past dying villages toward British cargo ships when the monsoon rains failed in 1876. While Viceroy Lytton staged a lavish imperial banquet for sixty thousand guests at Delhi, he enforced strict free-market economic theory, forbidding officials from capping soaring food prices or halting wheat exports.</p><p class=\"prose-p\">Starving families had to walk miles to break stones in punitive hard labour relief camps on rations smaller than inmates received inside Nazi Buchenwald decades later. Across late-Victorian famines, up to ten million Indians perished while London warehouses brimmed with Indian grain.</p>",
           "title": "The Great Famines & Strict Laissez-Faire Dogma (1876–1878)",
           "heading": "The Great Famines & Strict Laissez-Faire Dogma (1876–1878)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> The catastrophic human costs of British rule were starkly revealed during the Great Famines of the late nineteenth century. When monsoon rains failed, Viceroy Lytton market dogma refused to ban food exports or cap wheat prices, fanatically enforcing strict free-market economic theory.</p><p class=\"prose-p\">Desperate peasants seeking government food aid were forced into punitive hard labour relief camps receiving starvation rations. Consequently, an estimated ten million starved to death across India, even as record grain exports flowed directly to Britain.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> Those same railway tracks carried grain straight past dying villages toward British cargo ships when the monsoon rains failed in 1876. While Viceroy Lytton staged a lavish imperial banquet for sixty thousand guests at Delhi, he enforced strict free-market economic theory, forbidding officials from capping soaring food prices or halting wheat exports.</p><p class=\"prose-p\">Starving families had to walk miles to break stones in punitive hard labour relief camps on rations smaller than inmates received inside Nazi Buchenwald decades later. Across late-Victorian famines, up to ten million Indians perished while London warehouses brimmed with Indian grain.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.3]</span> The catastrophic human costs of British rule were starkly revealed during the Great Famines of the late nineteenth century. When monsoon rains failed, Viceroy Lytton market dogma refused to ban food exports or cap wheat prices, fanatically enforcing strict free-market economic theory.</p><p class=\"prose-p\">Desperate peasants seeking government food aid were forced into punitive hard labour relief camps receiving starvation rations. Consequently, an estimated ten million starved to death across India, even as record grain exports flowed directly to Britain.</p>",
           "image": "/images/madras_famine_1877.jpg",
           "caption": "'The Famine in India — Distribution of Relief to the Sufferers at Bellary, Madras Presidency' (1877): During the 1876–1878 Great Famine, Viceroy Lord Lytton refused to halt grain exports to Britain while millions perished across southern and western India.",
@@ -5813,10 +5853,10 @@ export default {
         },
         {
           "theme_heading": "Dadabhai Naoroji & The \"Drain of Wealth\" Theory (1867–1901)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Indian scholars mounted devastating intellectual challenges against British economic policy. In 1867, Dadabhai Naoroji pioneered the \"Drain of Wealth\" theory, subsequently publishing a landmark London book on poverty detailing systemic imperial exploitation of Indian resources.</p><p class=\"prose-p\">Naoroji demonstrated how millions siphoned in tax money were transferred directly to Britain to fund imperial wars and official pensions without return. Elected as the first Indian Westminster MP in 1892, Naoroji used Parliament to demand Indian self-determination and political equality.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Nobody dismantled Britain’s imperial balance sheet more devastatingly than a bespectacled Bombay mathematics professor using Westminster’s own blue books. From 1867, Dadabhai Naoroji set out his famous Drain of Wealth theory, calculating that Britain siphoned millions of pounds out of Indian peasant taxes every single year with zero economic return.</p><p class=\"prose-p\">Indian taxpayers even footed the bill for London Whitehall salaries, imperial wars and official pensions retired civil servants spent in Cheltenham. In 1892, Finsbury voters in London elected Naoroji as Westminster’s first Asian MP—putting the Empire’s sharpest critic right onto the green Commons benches.</p>",
           "title": "Dadabhai Naoroji & The \"Drain of Wealth\" Theory (1867–1901)",
           "heading": "Dadabhai Naoroji & The \"Drain of Wealth\" Theory (1867–1901)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Indian scholars mounted devastating intellectual challenges against British economic policy. In 1867, Dadabhai Naoroji pioneered the \"Drain of Wealth\" theory, subsequently publishing a landmark London book on poverty detailing systemic imperial exploitation of Indian resources.</p><p class=\"prose-p\">Naoroji demonstrated how millions siphoned in tax money were transferred directly to Britain to fund imperial wars and official pensions without return. Elected as the first Indian Westminster MP in 1892, Naoroji used Parliament to demand Indian self-determination and political equality.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Nobody dismantled Britain’s imperial balance sheet more devastatingly than a bespectacled Bombay mathematics professor using Westminster’s own blue books. From 1867, Dadabhai Naoroji set out his famous Drain of Wealth theory, calculating that Britain siphoned millions of pounds out of Indian peasant taxes every single year with zero economic return.</p><p class=\"prose-p\">Indian taxpayers even footed the bill for London Whitehall salaries, imperial wars and official pensions retired civil servants spent in Cheltenham. In 1892, Finsbury voters in London elected Naoroji as Westminster’s first Asian MP—putting the Empire’s sharpest critic right onto the green Commons benches.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.4]</span> Indian scholars mounted devastating intellectual challenges against British economic policy. In 1867, Dadabhai Naoroji pioneered the \"Drain of Wealth\" theory, subsequently publishing a landmark London book on poverty detailing systemic imperial exploitation of Indian resources.</p><p class=\"prose-p\">Naoroji demonstrated how millions siphoned in tax money were transferred directly to Britain to fund imperial wars and official pensions without return. Elected as the first Indian Westminster MP in 1892, Naoroji used Parliament to demand Indian self-determination and political equality.</p>",
           "image": "/images/ks3_sbe/sbe_l5_b3_dadabhai_naoroji_portrait.jpg",
           "caption": "Dadabhai Naoroji at Age Sixty-Six Upon His Election as MP for Finsbury Central (The Strand Magazine, December 1892): Britain’s first Indian MP used official colonial tax records to prove how the 'Drain of Wealth' siphoned millions of pounds annually from India to London.",
@@ -5824,10 +5864,10 @@ export default {
         },
         {
           "theme_heading": "Historiographical Verdict: Niall Ferguson vs Shashi Tharoor (20th–21st Century)",
-          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Modern historians remain deeply polarised over the historical legacy of the British Empire. Historian Niall Ferguson contends the Empire fostered global development by promoting parliamentary democracy, global free trade and laws, English common law, and international communications networks.</p><p class=\"prose-p\">In stark contrast, Shashi Tharoor argues British colonial rule de-industrialised prosperous nations by crushing local industries, extracting taxation, and causing catastrophic famines. These clashing moral judgments reflect profound ongoing debate over the human cost of British imperialism.</p>",
+          "text": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Walk into a university debate today and the British Empire still sparks arguments almost as fierce as Naoroji’s speeches in 1892. Defenders in \"The Traditional View\", such as historian Niall Ferguson, argue Britain wired the modern world together through railways, free trade, parliamentary institutions, and English common law.</p><p class=\"prose-p\">Critics in \"The Modern View\", led by writer Shashi Tharoor, counter that colonial rule de-industrialised prosperous nations by crushing local industries, draining taxes, and presiding over preventable famines—leaving historians to weigh gleaming Victorian viaducts against the human price paid to build them.</p>",
           "title": "Historiographical Verdict: Niall Ferguson vs Shashi Tharoor (20th–21st Century)",
           "heading": "Historiographical Verdict: Niall Ferguson vs Shashi Tharoor (20th–21st Century)",
-          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Modern historians remain deeply polarised over the historical legacy of the British Empire. Historian Niall Ferguson contends the Empire fostered global development by promoting parliamentary democracy, global free trade and laws, English common law, and international communications networks.</p><p class=\"prose-p\">In stark contrast, Shashi Tharoor argues British colonial rule de-industrialised prosperous nations by crushing local industries, extracting taxation, and causing catastrophic famines. These clashing moral judgments reflect profound ongoing debate over the human cost of British imperialism.</p>",
+          "content": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Walk into a university debate today and the British Empire still sparks arguments almost as fierce as Naoroji’s speeches in 1892. Defenders in \"The Traditional View\", such as historian Niall Ferguson, argue Britain wired the modern world together through railways, free trade, parliamentary institutions, and English common law.</p><p class=\"prose-p\">Critics in \"The Modern View\", led by writer Shashi Tharoor, counter that colonial rule de-industrialised prosperous nations by crushing local industries, draining taxes, and presiding over preventable famines—leaving historians to weigh gleaming Victorian viaducts against the human price paid to build them.</p>",
           "body": "<p class=\"prose-p\"><span class=\"para-ref\">[5.5]</span> Modern historians remain deeply polarised over the historical legacy of the British Empire. Historian Niall Ferguson contends the Empire fostered global development by promoting parliamentary democracy, global free trade and laws, English common law, and international communications networks.</p><p class=\"prose-p\">In stark contrast, Shashi Tharoor argues British colonial rule de-industrialised prosperous nations by crushing local industries, extracting taxation, and causing catastrophic famines. These clashing moral judgments reflect profound ongoing debate over the human cost of British imperialism.</p>",
           "concept_widget": {
             "type": "spectrum_slider",
@@ -6477,7 +6517,8 @@ export default {
           "question": "What did the 1851 Great Exhibition and Koh-i-Noor diamond show?",
           "heading": "What did the 1851 Great Exhibition and Koh-i-Noor diamond show?",
           "focus_clue": "What did the 1851 Great Exhibition and Koh-i-Noor diamond show?",
-          "prose_hash": "1a8002e19f"
+          "prose_hash": "79caf9d33d",
+          "para_ref": "[5.1]"
         },
         {
           "step": 2,
@@ -6510,7 +6551,8 @@ export default {
           "question": "Why did British engineers build 25,000 miles of railways across India?",
           "heading": "Why did British engineers build 25,000 miles of railways across India?",
           "focus_clue": "Why did British engineers build 25,000 miles of railways across India?",
-          "prose_hash": "7bb25ced25"
+          "prose_hash": "82d46ad089",
+          "para_ref": "[5.2]"
         },
         {
           "step": 3,
@@ -6543,7 +6585,8 @@ export default {
           "question": "Why did ten million Indians starve while grain was shipped to Britain?",
           "heading": "Why did ten million Indians starve while grain was shipped to Britain?",
           "focus_clue": "Why did ten million Indians starve while grain was shipped to Britain?",
-          "prose_hash": "c48a2b35d2"
+          "prose_hash": "6d7edc51ce",
+          "para_ref": "[5.3]"
         },
         {
           "step": 4,
@@ -6576,7 +6619,8 @@ export default {
           "question": "What did Dadabhai Naoroji’s \"Drain of Wealth\" argument prove in 1867?",
           "heading": "What did Dadabhai Naoroji’s \"Drain of Wealth\" argument prove in 1867?",
           "focus_clue": "What did Dadabhai Naoroji’s \"Drain of Wealth\" argument prove in 1867?",
-          "prose_hash": "51427b7e1f"
+          "prose_hash": "dca0f1cb71",
+          "para_ref": "[5.4]"
         },
         {
           "step": 5,
@@ -6609,7 +6653,8 @@ export default {
           "question": "How do Niall Ferguson and Shashi Tharoor disagree over the Empire?",
           "heading": "How do Niall Ferguson and Shashi Tharoor disagree over the Empire?",
           "focus_clue": "How do Niall Ferguson and Shashi Tharoor disagree over the Empire?",
-          "prose_hash": "0e949239a4"
+          "prose_hash": "4eb20855ed",
+          "para_ref": "[5.5]"
         }
       ],
       "visual_story_sheet": {
@@ -6640,7 +6685,8 @@ export default {
             "html": "In <strong>1851</strong>, six million visited London’s <strong>Crystal Palace</strong> to hail Britain as “Workshop of the World”, displaying steam engines beside India’s seized <strong>Koh-i-Noor diamond</strong>.",
             "spoken": "How do historians judge the Second British Empire: global progress or colonial exploitation? <short pause> In 1851 , six million visited London’s Crystal Palace to hail Britain as “Workshop of the World”, displaying steam engines beside India’s seized Koh-i-Noor diamond .",
             "paired_prose_hash": "1a8002e19f",
-            "connective": "How do historians judge the Second British Empire: global progress or colonial exploitation?"
+            "connective": "How do historians judge the Second British Empire: global progress or colonial exploitation?",
+            "prose_hash": "79caf9d33d"
           },
           {
             "badge": "Stage 2",
@@ -6652,7 +6698,8 @@ export default {
             "html": "British engineers built <strong>25,000 miles of railways</strong>, canals, and telegraphs across India. Yet lines mainly moved <strong>export crops</strong> to ports and rushed <strong>troops</strong> to crush unrest.",
             "spoken": "Supporters of empire pointed proudly to giant new transport networks. <short pause> British engineers built 25,000 miles of railways , canals, and telegraphs across India. Yet lines mainly moved export crops to ports and rushed troops to crush unrest.",
             "paired_prose_hash": "7bb25ced25",
-            "connective": "Supporters of empire pointed proudly to giant new transport networks."
+            "connective": "Supporters of empire pointed proudly to giant new transport networks.",
+            "prose_hash": "82d46ad089"
           },
           {
             "badge": "Stage 3",
@@ -6664,7 +6711,8 @@ export default {
             "html": "When rains failed in <strong>1876</strong>, <strong>Viceroy Lytton’s</strong> free-market rules kept shipping Indian wheat to Britain. Starving peasants worked in hard camps as <strong>millions died</strong>.",
             "spoken": "When terrible droughts struck, free-market dogma caused a human catastrophe. <short pause> When rains failed in 1876 , Viceroy Lytton’s free-market rules kept shipping Indian wheat to Britain. Starving peasants worked in hard camps as millions died .",
             "paired_prose_hash": "c48a2b35d2",
-            "connective": "When terrible droughts struck, free-market dogma caused a human catastrophe."
+            "connective": "When terrible droughts struck, free-market dogma caused a human catastrophe.",
+            "prose_hash": "6d7edc51ce"
           },
           {
             "badge": "Stage 4",
@@ -6676,7 +6724,8 @@ export default {
             "html": "Economist <strong>Dadabhai Naoroji</strong> proved his <strong>“Drain of Wealth”</strong> theory: Indian taxes paid for British wars and pensions. Elected an <strong>MP in 1892</strong>, he demanded fair rule.",
             "spoken": "An Indian scholar soon proved the empire’s financial drain. <short pause> Economist Dadabhai Naoroji proved his “Drain of Wealth” theory: Indian taxes paid for British wars and pensions. Elected an MP in 1892 , he demanded fair rule.",
             "paired_prose_hash": "51427b7e1f",
-            "connective": "An Indian scholar soon proved the empire’s financial drain."
+            "connective": "An Indian scholar soon proved the empire’s financial drain.",
+            "prose_hash": "dca0f1cb71"
           },
           {
             "badge": "Stage 5",
@@ -6688,7 +6737,8 @@ export default {
             "html": "<strong>Niall Ferguson</strong> argues Britain spread railways, trade, and law, whereas <strong>Shashi Tharoor</strong> argues colonial rule crushed industry, drained taxes, and worsened <strong>famines</strong>.",
             "spoken": "Even today, historians fiercely debate the empire’s legacy. <short pause> Niall Ferguson argues Britain spread railways, trade, and law, whereas Shashi Tharoor argues colonial rule crushed industry, drained taxes, and worsened famines .",
             "paired_prose_hash": "0e949239a4",
-            "connective": "Even today, historians fiercely debate the empire’s legacy."
+            "connective": "Even today, historians fiercely debate the empire’s legacy.",
+            "prose_hash": "4eb20855ed"
           },
           {
             "badge": "⚡ Outcome",
@@ -6747,18 +6797,6 @@ export default {
       "definition": "The process by which an economy is transformed from primarily agricultural to one based on the manufacturing of goods."
     },
     {
-      "term": "Domestic System",
-      "definition": "The traditional pre-industrial method of manufacturing goods by hand in workers' own homes or small cottages."
-    },
-    {
-      "term": "Factory System",
-      "definition": "The method of manufacturing using centralized power-driven machinery, division of labour, and disciplined working shifts under one roof."
-    },
-    {
-      "term": "Puddling Process",
-      "definition": "Henry Cort's 1784 invention of stirring molten pig iron in a reverberatory furnace to burn off carbon impurities, producing mass wrought iron."
-    },
-    {
       "term": "Wrought Iron",
       "definition": "Tough, malleable iron with low carbon content, essential for railway tracks, bridges, and naval warships."
     },
@@ -6767,84 +6805,8 @@ export default {
       "definition": "Energy produced by boiling water to create pressurised steam, pioneered by Thomas Newcomen and vastly improved by James Watt."
     },
     {
-      "term": "Urbanisation",
-      "definition": "The rapid demographic shift of population from rural agricultural villages to densely populated manufacturing towns and cities."
-    },
-    {
-      "term": "Slum",
-      "definition": "Heavily overcrowded, unsanitary urban housing areas lacking drainage, clean water, or ventilation, where industrial workers lived."
-    },
-    {
-      "term": "Back-to-Back Housing",
-      "definition": "Cheap, poorly built terraced houses sharing party walls on three sides, leaving only one side for light and ventilation."
-    },
-    {
-      "term": "Public Health",
-      "definition": "The health and sanitary conditions of the population as a whole, which suffered catastrophically in early industrial cities."
-    },
-    {
-      "term": "Cholera",
-      "definition": "A lethal waterborne bacterial disease causing acute dehydration and death, causing terrifying epidemics in British industrial towns from 1831."
-    },
-    {
-      "term": "Miasma Theory",
-      "definition": "The mistaken medical belief that diseases like cholera and typhus were caused and spread by noxious bad air rising from decaying matter."
-    },
-    {
       "term": "Laissez-faire",
       "definition": "The economic doctrine that government should not interfere in the free market, wages, working hours, or public health regulations."
-    },
-    {
-      "term": "Child Labour",
-      "definition": "The widespread employment of young children in textile factories, coal mines, and brickfields under grueling, hazardous conditions."
-    },
-    {
-      "term": "Factory Acts",
-      "definition": "A series of parliamentary laws passed from 1833 onwards that gradually limited working hours and prohibited young children from hazardous mill work."
-    },
-    {
-      "term": "Trade Union",
-      "definition": "An organised association of workers formed to protect their rights, bargain collectively, and demand safer conditions and fair wages."
-    },
-    {
-      "term": "Captain Swing",
-      "definition": "A mythical figurehead name signed to threatening letters sent by agricultural labourers during the rural machine-breaking riots of 1830."
-    },
-    {
-      "term": "Swing Riots",
-      "definition": "A widespread 1830 uprising across southern England (including Hampshire) where farm labourers smashed mechanical threshing machines that caused winter starvation."
-    },
-    {
-      "term": "Chartism",
-      "definition": "A massive British working-class political movement (1838–1848) campaigning for the People's Charter to win full democratic rights."
-    },
-    {
-      "term": "People's Charter",
-      "definition": "The 1838 petition demanding six democratic reforms: universal male suffrage, secret ballots, equal constituencies, no property qualifications for MPs, salaries for MPs, and annual parliaments."
-    },
-    {
-      "term": "Universal Suffrage",
-      "definition": "The constitutional right of all adult citizens to vote in political elections without property, gender, or wealth restrictions."
-    },
-    {
-      "term": "Franchise",
-      "definition": "The legal right to vote in parliamentary or public elections."
-    },
-    {
-      "term": "Rotten Borough",
-      "definition": "A depopulated rural constituency (like Old Sarum or Newtown on the Isle of Wight) that retained the right to return two MPs, easily bought by wealthy aristocrats."
-    },
-    {
-      "term": "Pocket Borough",
-      "definition": "A parliamentary constituency entirely controlled by a single wealthy landlord or patron whose tenants were forced to vote for his chosen candidate."
-    },
-    {
-      "term": "Great Reform Act (1832)",
-      "definition": "Legislation that abolished 56 rotten boroughs, granted MPs to industrial cities like Manchester and Birmingham, and broadened the middle-class franchise."
-    },
-    {
-      "term": "Secret Ballot Act (1872)",
-      "definition": "Law establishing private voting booths, ending open hustings and protecting working-class voters from landlord and employer bribery and intimidation."
     },
     {
       "term": "Empire",

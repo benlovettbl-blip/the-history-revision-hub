@@ -130,7 +130,7 @@ function getCleanUnitTitle(unitId, unitData) {
     medieval_england: 'Medieval England & The Norman Conquest',
     monarchy_religion_power: 'Monarchy, Religion & Power (1509–1745)',
     first_british_empire: 'The First British Empire & Atlantic World',
-    industrialisation_and_empire: 'The Industrial Revolution (1750–1900)',
+    industrialisation_and_empire: 'The Industrial Revolution (1750–1872)',
     second_british_empire: 'The Second British Empire & Imperialism',
     australia: 'Claiming Australia & The Pacific',
     great_war: 'Causes of the Great War (1890–1914)',

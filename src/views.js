@@ -166,7 +166,7 @@ export function renderDashboard() {
     medieval_england: 'Medieval England (1066–1485)',
     monarchy_religion_power: 'Crown, Church & Parliament (1517–1689)',
     first_british_empire: 'The First British Empire (1600–1783)',
-    industrialisation_and_empire: 'The Industrial Revolution (1750–1900)',
+    industrialisation_and_empire: 'The Industrial Revolution (1750–1872)',
     second_british_empire: 'The Second British Empire (1783–1914)',
     australia: 'Invasion & Survival in Australia',
     great_war: 'Causes of the Great War (1890–1914)',
@@ -255,7 +255,7 @@ export function renderDashboard() {
         ${cardImgHtml}
         <div style="position: relative; z-index: 2; padding: 0; flex-grow: 1; display: flex; flex-direction: column;">
           <div style="flex-grow: 1; min-width: 0;">
-            <h4 style="margin: 0 0 5px 0; font-size: 0.94rem; font-weight: 700; line-height: 1.25; color: var(--text-main, #0f172a); font-family: 'Playfair Display', serif; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; min-height: 2.5em;" title="${displayTitle}">${displayTitle}</h4>
+            <h4 style="margin: 0 0 5px 0; font-size: 0.94rem; font-weight: 700; line-height: 1.25; color: var(--text-main, #0f172a); font-family: 'Playfair Display', serif; min-height: 2.5em;" title="${displayTitle}">${displayTitle}</h4>
             <p style="margin: 0; font-size: 0.77rem; line-height: 1.38; color: var(--text-muted, #64748b); font-style: italic; min-height: 4.15em;" title="${displayEnquiry}">"${displayEnquiry}"</p>
           </div>
         </div>

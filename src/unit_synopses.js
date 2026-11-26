@@ -55,9 +55,9 @@ export const unitSynopses = {
     ],
   },
   industrialisation_and_empire: {
-    period: '1750 – 1900',
+    period: '1750 – 1872',
     synopsis:
-      "Steam engines shrieking in smoke-choked valleys, red-hot iron rolling through Henry Cort's puddling furnaces, and coal-fired textile mills driving the heartbeat of the modern world. Britain transformed from an agrarian island into the undisputed 'Workshop of the World', yet this unprecedented economic power was bought with human agony: child scavengers crawling beneath thunderous cotton looms, cholera epidemics stalking filthy back-to-back slums, and desperate handloom weavers smashing machinery. Follow the courageous struggle of millions of ordinary working people—from the bloodied field of Peterloo to the millions-strong petitions of the Chartists—who fought against the ruling elite to win the right to vote and forge modern British democracy.",
+      "Steam engines shrieking in smoke-choked valleys, red-hot iron rolling through Henry Cort's puddling furnaces, and coal-fired textile mills driving the heartbeat of the modern world. Britain transformed from an agrarian island into the undisputed 'Workshop of the World', yet this unprecedented economic power was bought with human agony: child scavengers crawling beneath thunderous cotton looms, cholera epidemics stalking filthy back-to-back slums, and desperate handloom weavers smashing machinery. Follow the courageous struggle of millions of ordinary working people—from the bloodied field of Peterloo to the millions-strong petitions of the Chartists and the 1872 Secret Ballot—who fought against the ruling elite to win the right to vote and forge modern British democracy.",
     tags: [
       'Steam Engines & Factory System',
       'Child Labour & Factory Acts',
@@ -69,7 +69,7 @@ export const unitSynopses = {
   second_british_empire: {
     period: '1783 – 1914',
     synopsis:
-      "A vast maritime empire painted red across world maps, propelled by ironclad warships, industrial machinery, and the relentless extraction of colonial wealth. From the bustling slipways of Portsmouth Royal Dockyard to the brutal suppression of the 1857 Indian Rebellion, Britain governed a fifth of humanity under the banner of imperial civilising mission. Confront the stark realities of conquest and displacement: the expansion of penal colonies into Indigenous Australia, the violent partition of the African continent during the Scramble for Africa, and the pioneering economic critique of Dadabhai Naoroji exposing how Britain drained trillions from the Indian subcontinent.",
+      "A vast maritime empire painted red across world maps, propelled by ironclad warships, industrial machinery, and the relentless extraction of colonial wealth. From the bustling slipways of Portsmouth Royal Dockyard to the brutal suppression of the 1857 Indian Rebellion, Britain governed a quarter of humanity under the banner of an imperial 'civilising mission'. Confront the stark realities of conquest and economic extraction: the de-industrialisation of India's world-leading handloom weavers, the violent partition of the African continent during the Scramble for Africa, and the pioneering economic critique of Dadabhai Naoroji exposing how Britain drained vast revenues from the Indian subcontinent.",
     tags: [
       'Portsmouth Royal Dockyard & Naval Supremacy',
       'The 1857 Indian Rebellion',

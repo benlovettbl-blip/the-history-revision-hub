@@ -809,7 +809,7 @@ function ensureModalElement() {
                 <i class="fa-solid fa-pen-nib" style="flex-shrink: 0;"></i> <span class="tab-label">Exam Link</span>
               </button>
               <button type="button" id="drawer-tab-hinge" class="drawer-pill-btn" data-tab="hinge" style="flex: 1 1 0; min-width: 0; padding: 6px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease; background: transparent; color: #94a3b8; white-space: nowrap;">
-                <i class="fa-solid fa-lightbulb" style="flex-shrink: 0;"></i> <span class="tab-label">Hinge Check</span>
+                <i class="fa-solid fa-lightbulb" style="flex-shrink: 0;"></i> <span class="tab-label">Quick Check</span>
               </button>
               <button type="button" id="drawer-tab-vocab" class="drawer-pill-btn" data-tab="vocab" style="flex: 1 1 0; min-width: 0; padding: 6px 8px; font-size: 0.72rem; font-weight: 700; border-radius: 6px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; transition: all 0.15s ease; background: transparent; color: #94a3b8; white-space: nowrap;">
                 <i class="fa-solid fa-book-bookmark" style="flex-shrink: 0;"></i> <span class="tab-label">Key Terms</span>

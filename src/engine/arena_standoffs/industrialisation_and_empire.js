@@ -27,7 +27,7 @@ export const INDUSTRIALISATION_AND_EMPIRE_STANDOFFS = {
     roleA: {
       name: "Lord Shaftesbury & Matthew Crabtree (Sadler Committee)",
       title: "The Cry of the Children & Humanitarian Regulation",
-      objective: "Argue with evidence from the Sadler Report that 14-hour factory shifts, strapped child scavenegers, and unguarded machines cripple and kill young children, demanding a legal 10-hour working day.",
+      objective: "Argue with evidence from the Sadler Report that 14-hour factory shifts, strapped child scavengers, and unguarded machines cripple and kill young children, demanding a legal 10-hour working day.",
       starter: "&ldquo;Subjecting six-year-old pauper children to sixteen hours of beating, dust, and mangling machinery is a national moral disgrace that Parliament must outlaw because...&rdquo;",
       keyTerms: ["Sadler Committee (1832)", "Pauper Apprentices", "Factory Cripples", "1833 Factory Act Inspectors"]
     },
@@ -41,13 +41,13 @@ export const INDUSTRIALISATION_AND_EMPIRE_STANDOFFS = {
   },
   lesson_3: {
     title: "Edwin Chadwick & Joseph Bazalgette vs. Laissez-Faire Ratepayers",
-    subtitle: "Urban Slums, The Great Stink & The Sanitary Revolution (1842–1875)",
+    subtitle: "Urban Slums, The Great Stink & The Sanitary Revolution (1842–1865)",
     roleA: {
       name: "Edwin Chadwick & Sir Joseph Bazalgette",
       title: "Sanitary Engineering & State Public Health Infrastructure",
       objective: "Argue that filthy cesspools and cholera pandemics cost Britain more in lost labor and poor relief than building modern sewers; state investment in clean water is an economic and moral necessity.",
       starter: "&ldquo;Investing municipal taxes in subterranean sewers and clean water systems saves thousands of lives and eliminates the economic burden of disease because...&rdquo;",
-      keyTerms: ["1842 Sanitary Report", "The Great Stink (1858)", "Bazalgette's London Sewers", "1875 Public Health Act"]
+      keyTerms: ["1842 Sanitary Report", "1848 Public Health Act", "The Great Stink (1858)", "Bazalgette's London Sewers"]
     },
     roleB: {
       name: "Metropolitan Ratepayers & Vestry Politicians",
@@ -76,7 +76,7 @@ export const INDUSTRIALISATION_AND_EMPIRE_STANDOFFS = {
     }
   },
   lesson_5: {
-    title: "Feargus O'Connor & The Chartists vs. Lord John Russell & The Whig Establishment",
+    title: "Feargus O'Connor & The Chartists vs. Earl Grey & The 1832 Establishment",
     subtitle: "Chartism & The Six Points for Democracy vs. The 1832 Settlement (1838–1848)",
     roleA: {
       name: "Feargus O'Connor, William Lovett & The Chartists",
@@ -86,7 +86,7 @@ export const INDUSTRIALISATION_AND_EMPIRE_STANDOFFS = {
       keyTerms: ["The People's Charter (1838)", "Universal Male Suffrage", "Equal Constituencies", "The Secret Ballot"]
     },
     roleB: {
-      name: "Lord John Russell & Whig-Tory Parliamentarians",
+      name: "Earl Grey & Whig-Tory Parliamentarians",
       title: "Property as the Sole Anchor of Political Responsibility",
       objective: "Argue that voting is a trust that must be tied to owning property and paying taxes; universal suffrage would allow uneducated, penniless mobs to confiscate private property.",
       starter: "&ldquo;Extending the franchise to uneducated labourers with no property stake in the country would result in mob rule and the confiscation of private wealth because...&rdquo;",
