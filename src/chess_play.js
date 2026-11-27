@@ -1044,8 +1044,8 @@ function renderCapturedRow(capturedList, advantagePts, isWhiteRow) {
       ? `<span style="background: #dcfce7; color: #166534; font-size: 0.7rem; font-weight: 800; padding: 1px 6px; border-radius: 999px; font-family: monospace;">+${advantagePts}</span>`
       : '';
   return `
-    <div style="display: inline-flex; align-items: center; gap: 5px; min-height: 20px;">
-      <span style="font-size: 0.92rem; letter-spacing: -1px; color: ${isWhiteRow ? '#334155' : '#475569'}; font-family: 'Segoe UI Symbol', 'Apple Symbols', serif;">${icons}</span>
+    <div style="display: flex; align-items: center; gap: 5px; height: 20px; line-height: 20px; overflow: hidden; white-space: nowrap;">
+      <span style="font-size: 0.9rem; line-height: 1; letter-spacing: -1px; color: ${isWhiteRow ? '#334155' : '#475569'}; font-family: 'Segoe UI Symbol', 'Apple Symbols', serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${icons}</span>
       ${advHtml}
     </div>
   `;
@@ -1132,7 +1132,7 @@ function getStatusBannerInfo(vc, whiteLabel, blackLabel) {
     bg: '#f8fafc',
     border: '#e2e8f0',
     color: '#0f172a',
-    text: `${turnLabel} · Tap or drag any piece to play`,
+    text: `${turnLabel} · Tap or drag a piece`,
   };
 }
 
@@ -1293,13 +1293,13 @@ function renderVirtualChessInner(chessState) {
     const lowTime = vc.timeControlMins > 0 && secs <= 30;
 
     return `
-      <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 44px; box-sizing: border-box; background: ${isActiveTurn ? '#ffffff' : '#f8fafc'}; border: 1.5px solid ${isActiveTurn ? '#0284c7' : '#e2e8f0'}; border-radius: 9px; padding: 5px 10px; box-shadow: ${isActiveTurn ? '0 2px 8px rgba(2,132,199,0.12)' : 'none'};">
-        <div style="display: flex; align-items: center; gap: 9px; min-width: 0;">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; height: 52px; overflow: hidden; box-sizing: border-box; background: ${isActiveTurn ? '#ffffff' : '#f8fafc'}; border: 1.5px solid ${isActiveTurn ? '#0284c7' : '#e2e8f0'}; border-radius: 9px; padding: 5px 10px; box-shadow: ${isActiveTurn ? '0 2px 8px rgba(2,132,199,0.12)' : 'none'};">
+        <div style="display: flex; align-items: center; gap: 9px; min-width: 0; flex: 1; overflow: hidden;">
           <span style="width: 26px; height: 26px; border-radius: 6px; background: ${isWhite ? '#f8fafc' : '#1e293b'}; color: ${isWhite ? '#0f172a' : '#ffffff'}; border: 1.5px solid #cbd5e1; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 900; flex-shrink: 0;">
             ${isWhite ? '♔\uFE0E' : '♚\uFE0E'}
           </span>
-          <div style="min-width: 0;">
-            <div style="font-size: 0.88rem; font-weight: 800; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+          <div style="min-width: 0; flex: 1; overflow: hidden;">
+            <div style="font-size: 0.88rem; line-height: 1.25; font-weight: 800; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
               ${name}
               ${isActiveTurn ? `<span style="display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #16a34a; margin-left: 5px; vertical-align: middle;"></span>` : ''}
             </div>
@@ -1429,9 +1429,9 @@ function renderVirtualChessInner(chessState) {
         <!-- LEFT COLUMN: Playable Staunton Chessboard + Top/Bottom Player Bars -->
         <div style="display: flex; flex-direction: column; gap: 6px; width: 100%;">
           
-          <!-- Fixed-Height Status Banner (CLS = 0) -->
-          <div style="background: ${banner.bg}; border: 1.5px solid ${banner.border}; color: ${banner.color}; border-radius: 8px; padding: 5px 10px; min-height: 34px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 0.83rem; font-weight: 800; text-align: center;">
-            <span>${banner.text}</span>
+          <!-- Fixed-Height Status Banner (Strict 0px Vertical Shift) -->
+          <div style="background: ${banner.bg}; border: 1.5px solid ${banner.border}; color: ${banner.color}; border-radius: 8px; padding: 0 10px; height: 36px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 0.82rem; font-weight: 800; text-align: center; overflow: hidden;">
+            <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">${banner.text}</span>
           </div>
 
           ${renderPlayerStrip(topSide)}
