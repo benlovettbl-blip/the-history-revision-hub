@@ -76,11 +76,11 @@ function renderStauntonSvg(pieceChar) {
 }
 
 const SMALL_CAPTURE_GLYPHS = {
-  q: '♛',
-  r: '♜',
-  b: '♝',
-  n: '♞',
-  p: '♟',
+  q: '♛\uFE0E',
+  r: '♜\uFE0E',
+  b: '♝\uFE0E',
+  n: '♞\uFE0E',
+  p: '♟\uFE0E',
 };
 
 const PIECE_VALUES = { p: 1, n: 3, b: 3, r: 5, q: 9, k: 0 };
@@ -203,6 +203,7 @@ export function createDefaultVirtualChessState() {
     tappedInPlayerId: getSavedTappedInPlayerId(),
     hintsUsedCount: 0,
     xpEvaluated: false,
+    xpGrantedThisGame: false,
     lastXpNotice: null,
     loggedToLadder: false,
   };
@@ -1117,7 +1118,7 @@ function getStatusBannerInfo(vc, whiteLabel, blackLabel) {
   };
 }
 
-export function renderVirtualChessView(chessState) {
+function renderVirtualChessInner(chessState) {
   if (!chessState.virtualChess) {
     chessState.virtualChess = createDefaultVirtualChessState();
   }
@@ -1234,11 +1235,12 @@ export function renderVirtualChessView(chessState) {
       squaresHtml += `
         <div onclick="window.handleVirtualSquareTap(${r}, ${c})"
              ondragstart="window.handleVirtualDragStart(event, ${r}, ${c})"
+             ondragend="window.handleVirtualDragEnd()"
              ondragover="event.preventDefault()"
              ondrop="window.handleVirtualDrop(event, ${r}, ${c})"
              draggable="${canDrag ? 'true' : 'false'}"
              data-sq="${sqName(r, c)}"
-             style="background: ${bg}; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; position: relative; user-select: none; cursor: ${canDrag || isTarget ? 'pointer' : 'default'}; touch-action: manipulation; ${isHintTo ? 'box-shadow: inset 0 0 0 3px #d97706;' : ''}">
+             style="background: ${bg}; aspect-ratio: 1 / 1; display: flex; align-items: center; justify-content: center; position: relative; user-select: none; -webkit-user-select: none; -webkit-tap-highlight-color: transparent; cursor: ${canDrag || isTarget ? 'pointer' : 'default'}; touch-action: manipulation; ${isHintTo ? 'box-shadow: inset 0 0 0 3px #d97706;' : ''}">
           ${rankLabel}
           ${fileLabel}
           ${renderStauntonSvg(piece)}
@@ -1258,10 +1260,10 @@ export function renderVirtualChessView(chessState) {
     const lowTime = vc.timeControlMins > 0 && secs <= 30;
 
     return `
-      <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: ${isActiveTurn ? '#ffffff' : '#f8fafc'}; border: 1.5px solid ${isActiveTurn ? '#0284c7' : '#e2e8f0'}; border-radius: 10px; padding: 7px 12px; box-shadow: ${isActiveTurn ? '0 2px 8px rgba(2,132,199,0.12)' : 'none'};">
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 44px; box-sizing: border-box; background: ${isActiveTurn ? '#ffffff' : '#f8fafc'}; border: 1.5px solid ${isActiveTurn ? '#0284c7' : '#e2e8f0'}; border-radius: 9px; padding: 5px 10px; box-shadow: ${isActiveTurn ? '0 2px 8px rgba(2,132,199,0.12)' : 'none'};">
         <div style="display: flex; align-items: center; gap: 9px; min-width: 0;">
           <span style="width: 26px; height: 26px; border-radius: 6px; background: ${isWhite ? '#f8fafc' : '#1e293b'}; color: ${isWhite ? '#0f172a' : '#ffffff'}; border: 1.5px solid #cbd5e1; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 900; flex-shrink: 0;">
-            ${isWhite ? '♔' : '♚'}
+            ${isWhite ? '♔\uFE0E' : '♚\uFE0E'}
           </span>
           <div style="min-width: 0;">
             <div style="font-size: 0.88rem; font-weight: 800; color: #0f172a; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
@@ -1310,19 +1312,19 @@ export function renderVirtualChessView(chessState) {
     whiteRoster.id !== blackRoster.id &&
     isFinished;
 
-  return `
+  const innerHtml = `
     <style>
       .vc-layout-grid {
         display: grid;
-        grid-template-columns: minmax(290px, 470px) minmax(270px, 370px);
-        gap: 20px;
+        grid-template-columns: clamp(290px, calc(100vh - 455px), 425px) minmax(270px, 360px);
+        gap: 18px;
         justify-content: center;
         align-items: start;
       }
       @media (max-width: 820px) {
         .vc-layout-grid {
           grid-template-columns: 1fr;
-          max-width: 490px;
+          max-width: 460px;
           margin: 0 auto;
         }
         .vc-select-input {
@@ -1331,10 +1333,10 @@ export function renderVirtualChessView(chessState) {
       }
     </style>
 
-    <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px; box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);">
+    <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 12px 14px; box-shadow: 0 4px 16px rgba(15, 23, 42, 0.04);">
       
       <!-- Club Member Nickname Tap-In & Practice XP Bar -->
-      <div style="background: ${tappedPupil ? 'linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%)' : '#f8fafc'}; border: 1.5px solid ${tappedHouse ? tappedHouse.borderColor : '#e2e8f0'}; border-radius: 11px; padding: 10px 14px; margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+      <div style="background: ${tappedPupil ? 'linear-gradient(135deg, #f8fafc 0%, #f0f9ff 100%)' : '#f8fafc'}; border: 1.5px solid ${tappedHouse ? tappedHouse.borderColor : '#e2e8f0'}; border-radius: 10px; padding: 7px 12px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
         <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
           <span style="font-size: 0.76rem; font-weight: 800; color: #334155;">👤 Club Member Tap-In:</span>
           <select class="vc-select-input" onchange="window.setTappedInPupil(this.value)" style="padding: 5px 10px; border-radius: 8px; border: 1.5px solid ${tappedPupil ? '#0284c7' : '#cbd5e1'}; background: #ffffff; font-size: 0.82rem; font-weight: 800; color: #0f172a; cursor: pointer;">
@@ -1361,7 +1363,7 @@ export function renderVirtualChessView(chessState) {
                 <span style="color: #64748b;">Today: ${xpInfo.usedToday}/${DAILY_XP_CAP}</span>
               </div>
               <div style="width: 100%; height: 7px; background: #e2e8f0; border-radius: 999px; overflow: hidden;">
-                <div style="width: ${xpInfo.towardHousePt}%; height: 100%; background: ${tappedHouse ? tappedHouse.color : '#0284c7'}; border-radius: 999px; transition: width 0.3s ease;"></div>
+                <div style="width: ${xpInfo.towardHousePt}%; height: 100%; background: ${tappedHouse ? tappedHouse.color : '#0284c7'}; border-radius: 999px;"></div>
               </div>
             </div>
           </div>
@@ -1374,24 +1376,14 @@ export function renderVirtualChessView(chessState) {
         }
       </div>
 
-      ${
-        vc.lastXpNotice
-          ? `
-        <div style="background: ${vc.lastXpNotice.type === 'earned' ? '#ecfdf5' : '#fffbeb'}; border: 1.5px solid ${vc.lastXpNotice.type === 'earned' ? '#6ee7b7' : '#fde68a'}; color: ${vc.lastXpNotice.type === 'earned' ? '#065f46' : '#92400e'}; border-radius: 9px; padding: 8px 12px; margin-bottom: 12px; font-size: 0.82rem; font-weight: 800; text-align: center;">
-          ${vc.lastXpNotice.text}
-        </div>
-      `
-          : ''
-      }
-
       <div class="vc-layout-grid">
         
         <!-- LEFT COLUMN: Playable Staunton Chessboard + Top/Bottom Player Bars -->
-        <div style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+        <div style="display: flex; flex-direction: column; gap: 6px; width: 100%;">
           
-          <!-- Status Banner -->
-          <div style="background: ${banner.bg}; border: 1.5px solid ${banner.border}; color: ${banner.color}; border-radius: 9px; padding: 8px 12px; font-size: 0.85rem; font-weight: 800; text-align: center;">
-            ${banner.text}
+          <!-- Fixed-Height Status Banner (CLS = 0) -->
+          <div style="background: ${banner.bg}; border: 1.5px solid ${banner.border}; color: ${banner.color}; border-radius: 8px; padding: 5px 10px; min-height: 34px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; font-size: 0.83rem; font-weight: 800; text-align: center;">
+            <span>${banner.text}</span>
           </div>
 
           ${renderPlayerStrip(topSide)}
@@ -1427,6 +1419,16 @@ export function renderVirtualChessView(chessState) {
           </div>
 
           ${renderPlayerStrip(bottomSide)}
+
+          ${
+            vc.lastXpNotice
+              ? `
+            <div style="background: ${vc.lastXpNotice.type === 'earned' ? '#ecfdf5' : '#fffbeb'}; border: 1.5px solid ${vc.lastXpNotice.type === 'earned' ? '#6ee7b7' : '#fde68a'}; color: ${vc.lastXpNotice.type === 'earned' ? '#065f46' : '#92400e'}; border-radius: 9px; padding: 8px 12px; font-size: 0.82rem; font-weight: 800; text-align: center;">
+              ${vc.lastXpNotice.text}
+            </div>
+          `
+              : ''
+          }
 
           ${
             vc.hintMove
@@ -1626,6 +1628,11 @@ export function renderVirtualChessView(chessState) {
       </div>
     </div>
   `;
+  return innerHtml;
+}
+
+export function renderVirtualChessView(chessState) {
+  return `<div id="virtual-chess-mount">${renderVirtualChessInner(chessState)}</div>`;
 }
 
 // ============================================================================
@@ -1642,22 +1649,39 @@ export function registerVirtualChessHandlers(ctx) {
     return st.virtualChess;
   };
 
-  const scrollMoveSheetToBottom = () => {
-    setTimeout(() => {
-      const sheet = document.getElementById('vc-move-sheet');
-      if (sheet) sheet.scrollTop = sheet.scrollHeight;
-    }, 10);
+  // Surgical in-place update of Virtual Chess workspace (zero page flash, zero scroll jump, zero header/tab teardown!)
+  const rerenderBoardOnly = (scrollSheetToEnd = false) => {
+    const mount = document.getElementById('virtual-chess-mount');
+    if (mount) {
+      const appBody = document.querySelector('.app-body');
+      const prevBodyScroll = appBody ? appBody.scrollTop : 0;
+      const prevWinY = window.scrollY;
+      const prevHeight = mount.offsetHeight;
+      if (prevHeight > 0) mount.style.minHeight = `${prevHeight}px`;
+      const prevSheet = document.getElementById('vc-move-sheet');
+      const prevScrollTop = prevSheet ? prevSheet.scrollTop : 0;
+      mount.innerHTML = renderVirtualChessInner(ctx.getState());
+      mount.style.minHeight = '';
+      if (appBody && appBody.scrollTop !== prevBodyScroll) appBody.scrollTop = prevBodyScroll;
+      if (window.scrollY !== prevWinY) window.scrollTo(0, prevWinY);
+      const nextSheet = document.getElementById('vc-move-sheet');
+      if (nextSheet) {
+        nextSheet.scrollTop = scrollSheetToEnd ? nextSheet.scrollHeight : prevScrollTop;
+      }
+    } else {
+      ctx.renderChessHubView();
+    }
   };
 
   const evaluateGameEndPracticeXp = () => {
     const st = ctx.getState();
     const vc = getVc();
-    if (vc.status === 'playing' || vc.xpEvaluated) return;
+    if (vc.status === 'playing' || vc.xpEvaluated) return false;
     vc.xpEvaluated = true;
 
-    if (vc.mode !== 'ai' || !vc.tappedInPlayerId) return;
+    if (vc.mode !== 'ai' || !vc.tappedInPlayerId) return false;
     const pupil = (st.players || []).find((p) => p.id === vc.tappedInPlayerId);
-    if (!pupil) return;
+    if (!pupil) return false;
 
     const plies = vc.moveLog.length;
     const pupilWon = vc.winner === vc.humanSide;
@@ -1676,7 +1700,7 @@ export function registerVirtualChessHandlers(ctx) {
       outcome = 'effort';
       rawXp = vc.aiLevel === 'easy' ? 5 : 10;
     } else {
-      return;
+      return false;
     }
 
     let hintCapNote = '';
@@ -1698,7 +1722,7 @@ export function registerVirtualChessHandlers(ctx) {
         type: 'cap',
         text: `🌟 Daily XP Cap Reached (${DAILY_XP_CAP}/${DAILY_XP_CAP} XP today)! Great commitment — play freely for fun, and earn fresh XP tomorrow!`,
       };
-      return;
+      return false;
     }
 
     const grantedXp = Math.min(rawXp, DAILY_XP_CAP - usedToday);
@@ -1707,6 +1731,7 @@ export function registerVirtualChessHandlers(ctx) {
     entry.daily[todayKey] = usedToday + grantedXp;
     ledger[pupil.id] = entry;
     writeLocalXpLedger(ledger);
+    vc.xpGrantedThisGame = true;
 
     const claimPayload = {
       claimId: `xp_${pupil.id}_${Date.now()}`,
@@ -1731,23 +1756,26 @@ export function registerVirtualChessHandlers(ctx) {
           type: 'earned',
           text: `⚡ +${grantedXp} XP banked for ${pupil.name}${hintCapNote}!${bonusTxt}`,
         };
-      } else {
-        vc.lastXpNotice = {
-          type: 'earned',
-          text: `⚡ +${grantedXp} XP earned by ${pupil.name}${hintCapNote}! Sent to Teacher Inbox toward ${hName} House Points.`,
-        };
+        return res.housePtsAwarded > 0;
       }
+      vc.lastXpNotice = {
+        type: 'earned',
+        text: `⚡ +${grantedXp} XP earned by ${pupil.name}${hintCapNote}! Sent to Teacher Inbox toward ${hName} House Points.`,
+      };
     }
+    return false;
   };
 
-  const maybeScheduleAiReply = () => {
+  const maybeScheduleAiReply = (alreadyRenderedThinking = false) => {
     const vc = getVc();
     if (vc.mode !== 'ai' || vc.status !== 'playing') return;
     const aiSide = vc.humanSide === 'w' ? 'b' : 'w';
     if (vc.turn !== aiSide) return;
 
     vc.aiThinking = true;
-    ctx.renderChessHubView();
+    if (!alreadyRenderedThinking) {
+      rerenderBoardOnly(true);
+    }
 
     if (aiMoveTimeout) clearTimeout(aiMoveTimeout);
     aiMoveTimeout = setTimeout(() => {
@@ -1758,13 +1786,17 @@ export function registerVirtualChessHandlers(ctx) {
       }
       const chosen = chooseBestMove(currentVc, currentVc.aiLevel);
       currentVc.aiThinking = false;
+      let unlockedHousePt = false;
       if (chosen) {
         applyVirtualChessMove(currentVc, chosen, false);
-        evaluateGameEndPracticeXp();
+        unlockedHousePt = evaluateGameEndPracticeXp();
       }
-      ctx.renderChessHubView();
-      scrollMoveSheetToBottom();
-    }, 260);
+      if (unlockedHousePt) {
+        ctx.renderChessHubView();
+      } else {
+        rerenderBoardOnly(true);
+      }
+    }, 240);
   };
 
   // 1-Second Chess Clock Ticker
@@ -1790,8 +1822,9 @@ export function registerVirtualChessHandlers(ctx) {
             vc.status = 'draw_material';
             vc.winner = 'draw';
           }
-          evaluateGameEndPracticeXp();
-          ctx.renderChessHubView();
+          const unlocked = evaluateGameEndPracticeXp();
+          if (unlocked) ctx.renderChessHubView();
+          else rerenderBoardOnly();
         }
       } else {
         vc.blackTimeSecs = Math.max(0, (vc.blackTimeSecs || 0) - 1);
@@ -1807,8 +1840,9 @@ export function registerVirtualChessHandlers(ctx) {
             vc.status = 'draw_material';
             vc.winner = 'draw';
           }
-          evaluateGameEndPracticeXp();
-          ctx.renderChessHubView();
+          const unlocked = evaluateGameEndPracticeXp();
+          if (unlocked) ctx.renderChessHubView();
+          else rerenderBoardOnly();
         }
       }
     }, 1000);
@@ -1827,15 +1861,25 @@ export function registerVirtualChessHandlers(ctx) {
     if (legal.some((m) => m.promotion)) {
       vc.pendingPromotion = { fromR, fromC, toR, toC };
       vc.selected = null;
-      ctx.renderChessHubView();
+      rerenderBoardOnly();
       return true;
     }
 
     applyVirtualChessMove(vc, legal[0], false);
-    evaluateGameEndPracticeXp();
-    ctx.renderChessHubView();
-    scrollMoveSheetToBottom();
-    maybeScheduleAiReply();
+    const unlockedHousePt = evaluateGameEndPracticeXp();
+    const willAiReply =
+      vc.mode === 'ai' && vc.status === 'playing' && vc.turn !== vc.humanSide;
+    if (willAiReply) {
+      vc.aiThinking = true;
+    }
+    if (unlockedHousePt) {
+      ctx.renderChessHubView();
+    } else {
+      rerenderBoardOnly(true);
+    }
+    if (willAiReply) {
+      maybeScheduleAiReply(true);
+    }
     return true;
   };
 
@@ -1850,7 +1894,7 @@ export function registerVirtualChessHandlers(ctx) {
     if (!vc.selected) {
       if (tappedSide === vc.turn) {
         vc.selected = [r, c];
-        ctx.renderChessHubView();
+        rerenderBoardOnly();
       }
       return;
     }
@@ -1858,7 +1902,7 @@ export function registerVirtualChessHandlers(ctx) {
     const [selR, selC] = vc.selected;
     if (selR === r && selC === c) {
       vc.selected = null;
-      ctx.renderChessHubView();
+      rerenderBoardOnly();
       return;
     }
 
@@ -1871,7 +1915,7 @@ export function registerVirtualChessHandlers(ctx) {
     } else {
       vc.selected = null;
     }
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
   };
 
   window.handleVirtualDragStart = function (e, r, c) {
@@ -1884,6 +1928,14 @@ export function registerVirtualChessHandlers(ctx) {
     vc.selected = [r, c];
   };
 
+  window.handleVirtualDragEnd = function () {
+    const vc = getVc();
+    if (vc.selected) {
+      vc.selected = null;
+      rerenderBoardOnly();
+    }
+  };
+
   window.handleVirtualDrop = function (e, toR, toC) {
     if (e && e.preventDefault) e.preventDefault();
     try {
@@ -1894,7 +1946,7 @@ export function registerVirtualChessHandlers(ctx) {
       if (!attemptHumanMove(fromR, fromC, toR, toC)) {
         const vc = getVc();
         vc.selected = null;
-        ctx.renderChessHubView();
+        rerenderBoardOnly();
       }
     } catch (err) {}
   };
@@ -1909,19 +1961,22 @@ export function registerVirtualChessHandlers(ctx) {
     vc.pendingPromotion = null;
     if (legal) {
       applyVirtualChessMove(vc, legal, false);
-      evaluateGameEndPracticeXp();
-      ctx.renderChessHubView();
-      scrollMoveSheetToBottom();
-      maybeScheduleAiReply();
+      const unlockedHousePt = evaluateGameEndPracticeXp();
+      const willAiReply =
+        vc.mode === 'ai' && vc.status === 'playing' && vc.turn !== vc.humanSide;
+      if (willAiReply) vc.aiThinking = true;
+      if (unlockedHousePt) ctx.renderChessHubView();
+      else rerenderBoardOnly(true);
+      if (willAiReply) maybeScheduleAiReply(true);
     } else {
-      ctx.renderChessHubView();
+      rerenderBoardOnly();
     }
   };
 
   window.cancelVirtualPromotion = function () {
     const vc = getVc();
     vc.pendingPromotion = null;
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
   };
 
   window.startNewVirtualGame = function () {
@@ -1941,10 +1996,12 @@ export function registerVirtualChessHandlers(ctx) {
     fresh.tappedInPlayerId = prev.tappedInPlayerId || getSavedTappedInPlayerId();
     fresh.flipped = fresh.mode === 'ai' ? fresh.humanSide === 'b' : false;
 
+    const aiStarts = fresh.mode === 'ai' && fresh.humanSide === 'b';
+    if (aiStarts) fresh.aiThinking = true;
     ctx.getState().virtualChess = fresh;
-    ctx.renderChessHubView();
-    if (fresh.mode === 'ai' && fresh.humanSide === 'b') {
-      maybeScheduleAiReply();
+    rerenderBoardOnly();
+    if (aiStarts) {
+      maybeScheduleAiReply(true);
     }
   };
 
@@ -1961,7 +2018,7 @@ export function registerVirtualChessHandlers(ctx) {
     if (vc.moveLog.length === 0) {
       window.startNewVirtualGame();
     } else {
-      ctx.renderChessHubView();
+      rerenderBoardOnly();
       ctx.showChessToast(`Computer Coach set to ${level.toUpperCase()}`, 'info');
     }
   };
@@ -1979,7 +2036,7 @@ export function registerVirtualChessHandlers(ctx) {
     vc.whiteTimeSecs = vc.timeControlMins * 60;
     vc.blackTimeSecs = vc.timeControlMins * 60;
     vc.clockActive = vc.timeControlMins > 0 && vc.moveLog.length > 0 && vc.status === 'playing';
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
   };
 
   window.setVirtualRosterPlayer = function (side, playerId) {
@@ -1987,7 +2044,7 @@ export function registerVirtualChessHandlers(ctx) {
     if (side === 'w') vc.whitePlayerId = playerId;
     else vc.blackPlayerId = playerId;
     vc.loggedToLadder = false;
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
   };
 
   window.toggleVirtualAutoFlip = function (checked) {
@@ -1996,19 +2053,19 @@ export function registerVirtualChessHandlers(ctx) {
     if (vc.autoFlipPass && vc.mode === 'pass') {
       vc.flipped = vc.turn === 'b';
     }
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
   };
 
   window.flipVirtualBoard = function () {
     const vc = getVc();
     vc.flipped = !vc.flipped;
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
   };
 
   window.toggleVirtualBoardTheme = function () {
     const vc = getVc();
     vc.boardTheme = vc.boardTheme === 'wood' ? 'slate' : 'wood';
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
   };
 
   window.undoVirtualMove = function () {
@@ -2046,7 +2103,11 @@ export function registerVirtualChessHandlers(ctx) {
     vc.confirmAction = null;
     vc.aiThinking = false;
     vc.loggedToLadder = false;
-    ctx.renderChessHubView();
+    if (!vc.xpGrantedThisGame) {
+      vc.xpEvaluated = false;
+      vc.lastXpNotice = null;
+    }
+    rerenderBoardOnly();
   };
 
   window.setTappedInPupil = function (playerId) {
@@ -2054,7 +2115,7 @@ export function registerVirtualChessHandlers(ctx) {
     vc.tappedInPlayerId = playerId || '';
     saveTappedInPlayerId(vc.tappedInPlayerId);
     vc.lastXpNotice = null;
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
     if (vc.tappedInPlayerId) {
       const p = (ctx.getState().players || []).find((x) => x.id === vc.tappedInPlayerId);
       if (p) ctx.showChessToast(`👤 Tapped in as ${p.name}! Beat the Computer Coach to earn XP.`, 'success');
@@ -2066,20 +2127,19 @@ export function registerVirtualChessHandlers(ctx) {
     if (vc.status !== 'playing' || vc.aiThinking) return;
     vc.hintsUsedCount = (vc.hintsUsedCount || 0) + 1;
     vc.hintMove = computeCoachHint(vc);
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
   };
 
   window.promptVirtualEndAction = function (action) {
     const vc = getVc();
     vc.confirmAction = action;
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
   };
 
   window.cancelVirtualEndAction = function () {
     const vc = getVc();
     vc.confirmAction = null;
-    evaluateGameEndPracticeXp();
-    ctx.renderChessHubView();
+    rerenderBoardOnly();
   };
 
   window.confirmVirtualEndAction = function () {
@@ -2096,8 +2156,9 @@ export function registerVirtualChessHandlers(ctx) {
       playClubSound('bounty');
     }
     vc.confirmAction = null;
-    evaluateGameEndPracticeXp();
-    ctx.renderChessHubView();
+    const unlocked = evaluateGameEndPracticeXp();
+    if (unlocked) ctx.renderChessHubView();
+    else rerenderBoardOnly();
   };
 
   window.logVirtualMatchToLadder = function () {

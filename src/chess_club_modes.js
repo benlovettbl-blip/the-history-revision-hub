@@ -13,7 +13,13 @@ export function playClubSound(kind = 'tap') {
   try {
     const AudioCtx = window.AudioContext || window.webkitAudioContext;
     if (!AudioCtx) return;
-    const ctx = new AudioCtx();
+    if (!window.__chessSharedAudioCtx || window.__chessSharedAudioCtx.state === 'closed') {
+      window.__chessSharedAudioCtx = new AudioCtx();
+    }
+    const ctx = window.__chessSharedAudioCtx;
+    if (ctx.state === 'suspended') {
+      ctx.resume().catch(() => {});
+    }
     const tone = (freq, start, dur, type = 'triangle', vol = 0.22) => {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();

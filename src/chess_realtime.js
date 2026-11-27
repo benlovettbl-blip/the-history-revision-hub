@@ -15,6 +15,7 @@ const POLL_INTERVAL_MS = 3000;
 const POLL_INTERVAL_BACKGROUND_MS = 15000;
 
 let lastKnownSyncedAt = 0;
+let lastKnownClaimsSig = '';
 let pollingIntervalId = null;
 let isPushing = false;
 let pushDebounceTimer = null;
@@ -271,14 +272,17 @@ export function startPupilRealtimeSync(onUpdateReceived) {
       currentSyncStatus = 'synced';
       updateSyncStatusUI();
 
-      const hasNewSync = remoteData.syncedAt && remoteData.syncedAt > lastKnownSyncedAt;
-      const hasXpClaims =
-        Array.isArray(remoteData.pendingXpClaims) && remoteData.pendingXpClaims.length > 0;
+      const hasNewSync = Boolean(remoteData.syncedAt && remoteData.syncedAt > lastKnownSyncedAt);
+      const claimsSig = Array.isArray(remoteData.pendingXpClaims)
+        ? remoteData.pendingXpClaims.map((c) => c.claimId).join('|')
+        : '';
+      const hasChangedXpClaims = claimsSig !== lastKnownClaimsSig;
 
-      if (hasNewSync || hasXpClaims) {
+      if (hasNewSync || hasChangedXpClaims) {
         if (hasNewSync) {
           lastKnownSyncedAt = remoteData.syncedAt;
         }
+        lastKnownClaimsSig = claimsSig;
         if (typeof onUpdateReceived === 'function') {
           onUpdateReceived(remoteData);
         }

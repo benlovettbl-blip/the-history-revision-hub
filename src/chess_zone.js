@@ -1259,14 +1259,14 @@ function initChessState(forceClean = false) {
         }
       }
 
-      // Apply remote data updates in pupil mode/preview, or in teacher mode if cloud has newer/more matches
-      const isRemoteNewer =
+      // Apply remote data updates ONLY when cloud actually has newer standings/matches
+      const hasRemoteStandings =
         remoteData &&
         ((remoteData.syncedAt && remoteData.syncedAt > (chessState.timestamp || 0)) ||
           (Array.isArray(remoteData.matches) &&
             remoteData.matches.length > (chessState.matches?.length || 0)));
 
-      if (chessState.userRole === 'pupil' || chessState.isPupilPreview || isRemoteNewer) {
+      if (hasRemoteStandings) {
         if (Array.isArray(remoteData.players) && remoteData.players.length > 0) {
           chessState.players = remoteData.players;
         }
@@ -1288,17 +1288,19 @@ function initChessState(forceClean = false) {
         if (remoteData.syncedAt) {
           chessState.timestamp = remoteData.syncedAt;
         }
-        // Persist to local cache if teacher view was synced
-        if (chessState.userRole === 'teacher' && isRemoteNewer) {
+        if (chessState.userRole === 'teacher') {
           saveChessState();
         }
-        // Hard Guardrail: NEVER hijack view or toast if user is on another page
+        // Hard Guardrail: NEVER hijack view if user is on another page or mid-chess-game on 'play' tab
         if (isChessViewActive()) {
-          renderChessHubView();
+          const onPlayTab = (chessState.activeTab || 'play') === 'play';
+          if (!onPlayTab) {
+            renderChessHubView();
+          }
           showChessToast(
             chessState.userRole === 'teacher'
               ? '☁️ Live standings synced from cloud!'
-              : '⚡ Live update received from teacher!',
+              : '⚡ Live club standings updated!',
             'info',
           );
         }
@@ -1473,9 +1475,7 @@ export function renderChessHubView() {
 
   const container = document.getElementById('main-content');
   if (!container) return;
-
-  const contentArea = document.getElementById('content-area');
-  if (contentArea) contentArea.style.paddingTop = '0.5rem';
+  container.style.paddingTop = '10px';
 
   const houseTotals = calculateHouseTotals();
   const sortedHouses = Object.values(houseTotals).sort((a, b) => b.points - a.points);
@@ -1539,8 +1539,10 @@ export function renderChessHubView() {
   const isPlayGroup = !isLadderGroup && !isModesGroup;
   const activePairingsCount = (chessState.activePairings || []).filter((p) => !p.isBye).length;
 
+  const isFirstChessMount = !document.getElementById('chess-hub-root');
+
   let html = `
-    <div id="chess-hub-root" style="max-width: 1140px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 12px 24px 12px; animation: fadeInUp 0.25s ease-out; font-family: 'Outfit', sans-serif;">
+    <div id="chess-hub-root" style="max-width: 1140px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 12px 24px 12px; ${isFirstChessMount ? 'animation: fadeInUp 0.2s ease-out;' : ''} font-family: 'Outfit', sans-serif;">
       
       ${
         chessState.isPupilPreview
