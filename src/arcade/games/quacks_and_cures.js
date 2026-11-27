@@ -22,7 +22,7 @@ const SHIFTS = [
     inspectorTitle: 'Guild Master & Parish Priest',
     accent: '#d97706',
     bgGrad: 'linear-gradient(135deg, #271709 0%, #170f07 100%)',
-    propHint: 'Click the Urine Flask (Matula) or Zodiac Wheel on your shelf to inspect medieval tools!',
+    propHint: 'Click the Humoral Consultation, Theriac Shelf Jars, or Mortar & Herbs in the apothecary illumination!',
     cases: [
       {
         patient: 'Lord Percy of York',
@@ -121,7 +121,7 @@ const SHIFTS = [
     inspectorTitle: 'Royal Society Fellow',
     accent: '#a855f7',
     bgGrad: 'linear-gradient(135deg, #211336 0%, #110a1f 100%)',
-    propHint: 'Spot the printing press & Vesalius chart! Anatomy leaped forward—but did everyday plague cures actually change?',
+    propHint: 'Inspect the 1665 Sickroom, Watchmen & Dead-Carts, or Flight & New Science in the Great Plague broadsheet!',
     cases: [
       {
         patient: 'Anatomy Student at Padua (1543)',
@@ -220,7 +220,7 @@ const SHIFTS = [
     inspectorTitle: 'Victorian Hospital Matron & Surgeon',
     accent: '#10b981',
     bgGrad: 'linear-gradient(135deg, #092622 0%, #071717 100%)',
-    propHint: 'Click Lister’s Carbolic Spray Pump on the visual tray to clear red sepsis clouds!',
+    propHint: 'Inspect Lister’s Carbolic Steam Spray, Anaesthesia & Antisepsis, or Sterile Tray in the 1867 theatre!',
     cases: [
       {
         patient: 'Soho Residents on Broad Street (August 1854)',
@@ -422,7 +422,7 @@ const SHIFTS = [
     inspectorTitle: 'NHS Chief Medical Officer',
     accent: '#38bdf8',
     bgGrad: 'linear-gradient(135deg, #0b2239 0%, #071322 100%)',
-    propHint: 'Monitor the live green ECG waveform! High-tech medicine saves almost everyone—until antibiotic resistance walks in!',
+    propHint: 'Inspect the First NHS Patient (1948), Aneurin Bevan, or Antibiotics & Stewardship—then face the MRSA Superbug!',
     cases: [
       {
         patient: 'Working-Class Mother & Child (5 July 1948)',

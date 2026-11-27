@@ -373,7 +373,7 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
     activeDialogue = {
       speaker: sc.introSpeaker,
       body: sc.introText,
-      fact: 'Hover across the painting to uncover clues, or press M for the Era Compass Map.',
+      fact: 'Click any pinned evidence badge on the archival scene to uncover clues, or press M for the Era Compass Map.',
       voiceRole: sc.introVoiceRole,
       voiceId: sc.introVoiceId,
       portrait: resolvePortraitAvatar(sc.introVoiceRole, sc.introSpeaker, ep.yearFocus),
@@ -1786,8 +1786,8 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
     const nonSpoilerGoal = NON_SPOILER_OBJECTIVES[epIdx]?.goal || ep.goalBanner;
     const heldObj = equippedItemId ? saved.satchel[epIdx]?.[equippedItemId] : null;
     const defaultActionText = heldObj
-      ? `✨ Holding ${heldObj.label} — hover & click the right person or object in the scene to USE it (or click item again to put away)`
-      : '🖱️ Move your cursor over objects and people in the painting to explore...';
+      ? `✨ Holding ${heldObj.label} — click the matching pinned person or document on the scene to USE it (or click item again to put away)`
+      : '🔎 Click any pinned person or archival document badge on the scene to investigate...';
 
     const countVisitedInLens = (lensKey) => {
       const list = ep.scenes[lensKey]?.hotspots || [];
@@ -1948,7 +1948,7 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
                 showCoverScreen
                   ? ''
                   : (sc.hotspots || [])
-                      .map((h) => {
+                      .map((h, hIdx) => {
                         const isVis = Boolean(visitedMap[h.id]);
                         const inSatchel = Boolean(h.keepsake?.id && saved.satchel[epIdx]?.[h.keepsake.id]);
                         const alreadyPlacedInWorld = Boolean(
@@ -1979,6 +1979,9 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
                             : alreadyPlacedInWorld
                               ? `🔎 Examine ${h.label} ✓`
                               : `${verbIcon} ${effectiveVerb} ${h.label}${isVis ? ' ✓' : ''}`;
+                        const shortPinText =
+                          h.label.length > 26 ? `${h.label.slice(0, 24).trim()}…` : h.label;
+                        const safePinY = activeDialogue ? Math.min(h.y, 48 + (hIdx % 3) * 9) : h.y;
                         return `
                           <button
                             type="button"
@@ -1987,12 +1990,14 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
                             data-verb="${escapeHtml(effectiveVerb)}"
                             data-hreadout="${escapeHtml(verbLabel)}"
                             data-hx="${h.x}"
-                            data-hy="${h.y}"
+                            data-hy="${safePinY}"
                             data-hw="${h.w}"
                             data-hh="${h.h}"
                             aria-label="${escapeHtml(verbLabel)}"
-                            style="left:${h.x}%;top:${h.y}%;width:${h.w}%;height:${h.h}%;"
-                          ></button>
+                            style="left:${h.x}%;top:${safePinY}%;width:${h.w}%;height:${h.h}%;"
+                          >
+                            <span class="cme-ct-pin-pill">${verbIcon} <span>${escapeHtml(shortPinText)}</span>${isVis ? ' ✓' : ''}</span>
+                          </button>
                         `;
                       })
                       .join('')
@@ -2304,7 +2309,7 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
                             `;
                           })
                           .join('')
-                      : `<span style="font-size:0.74rem;color:#9c8f7e;">Explore objects in the painting to pick up letters, keys &amp; dispatches...</span>`
+                      : `<span style="font-size:0.74rem;color:#9c8f7e;">Inspect pinned evidence on the archival scene to collect letters, keys &amp; dispatches...</span>`
                   }
                 </div>
 

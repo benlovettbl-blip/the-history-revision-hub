@@ -496,19 +496,13 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.85);
 }
 
-/* TRUE LUCASARTS INVISIBLE HITBOXES (Hidden Until Hover or Brief Hint Shimmer!) */
+/* VISIBLE MUSEUM-GRADE ARCHIVAL EVIDENCE PINS (Zero Blind Pixel-Hunting!) */
 @keyframes ctHintFirefly {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.92);
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
   }
-  35%, 65% {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.02);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.98);
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
   }
 }
 
@@ -520,49 +514,62 @@
   background: transparent;
   border: none !important;
   box-shadow: none !important;
-  border-radius: 50%;
   padding: 0;
   cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.22s ease, background 0.22s ease;
-}
-
-.cme-ct-hitbox:hover,
-.cme-ct-hitbox:focus-visible {
   opacity: 1;
-  outline: none;
-  border: none !important;
-  box-shadow: none !important;
-  background: radial-gradient(
-    closest-side,
-    rgba(255, 236, 148, 0.34) 0%,
-    rgba(245, 180, 62, 0.12) 52%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.16s ease;
 }
 
-.cme-ct-viewport.has-equipped-item .cme-ct-hitbox:hover {
-  border: none !important;
-  box-shadow: none !important;
-  background: radial-gradient(
-    closest-side,
-    rgba(52, 211, 153, 0.38) 0%,
-    rgba(16, 185, 129, 0.14) 54%,
-    rgba(0, 0, 0, 0) 100%
-  );
+.cme-ct-pin-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(24, 20, 17, 0.9);
+  border: 1.5px solid var(--ct-gold-bright);
+  color: #fef3c7;
+  font-size: 0.68rem;
+  font-weight: 800;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.72);
+  pointer-events: none;
+  transition: background 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+}
+
+.cme-ct-hitbox.is-visited .cme-ct-pin-pill {
+  background: rgba(20, 83, 45, 0.88);
+  border-color: #6ee7b7;
+  color: #ecfdf5;
+}
+
+.cme-ct-hitbox.is-puzzle-target:not(.is-visited) .cme-ct-pin-pill {
+  border-color: #fde047;
+  background: rgba(120, 53, 15, 0.92);
+}
+
+.cme-ct-hitbox:hover .cme-ct-pin-pill,
+.cme-ct-hitbox:focus-visible .cme-ct-pin-pill {
+  transform: scale(1.06);
+  background: #2b2118;
+  border-color: #ffffff;
+}
+
+.cme-ct-hitbox:focus-visible {
+  outline: none;
+}
+
+.cme-ct-viewport.has-equipped-item .cme-ct-hitbox:hover .cme-ct-pin-pill {
+  background: rgba(6, 78, 59, 0.95);
+  border-color: #6ee7b7;
 }
 
 .cme-ct-viewport.is-hinting .cme-ct-hitbox:not(.is-visited),
 .cme-ct-viewport.is-hinting .cme-ct-hitbox.is-puzzle-target {
-  animation: ctHintFirefly 2.1s ease-in-out forwards;
-  border: none !important;
-  box-shadow: none !important;
-  background: radial-gradient(
-    closest-side,
-    rgba(253, 224, 71, 0.48) 0%,
-    rgba(245, 158, 11, 0.18) 54%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  animation: ctHintFirefly 0.9s ease-in-out 2;
 }
 
 /* Floating Comic-Ink Point-and-Click Hover Callout Pill (Edge-Safe, Zero Spillover) */

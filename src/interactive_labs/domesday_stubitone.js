@@ -21,6 +21,14 @@ import {
 } from './domesday_music.js';
 import { mountLivingDioramaFX } from './domesday_living_fx.js';
 import { renderSolentGisSvgHTML } from './solent_svg_map.js';
+import {
+  renderGosportSaltMarshSVG,
+  renderFarehamEstateSVG,
+  renderServiPloughSVG,
+  renderRoyalAssizeSVG,
+  renderStubbingtonHutSVG,
+  renderArchivalEvidenceCardHTML,
+} from './domesday_svg_scenes.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
 
 const SESSION_SAVE_KEY = 'hh_domesday_session_v3';
@@ -399,7 +407,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     avatarKey: 'salty',
     speakerName: 'Salty the Solent Seagull • 1086 Tour Guide',
     speechText:
-      'Squawk! Welcome to 1086! Tap any glowing gold spot on the painting to annoy the locals—or press BEGIN 1086 ROYAL AUDIT!',
+      'Squawk! Welcome to 1086! Tap any cast button on the left to hear their voice—or press BEGIN 1086 ROYAL AUDIT!',
     lastVoClipId: 'cover_salty_intro',
 
     bennetSightings: new Set(),
@@ -1006,7 +1014,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     if (state.step === 'beat2') return '🗺️ Drag X-Ray bar & tap shields';
     if (state.step === 'beat5') return '📜 Use Scribe Key to tap 3 Latin lines';
     if (state.step === 'beat6') return '🔨 Stamp all 3 claims to beat the game!';
-    return '✨ Click glowing gold spots on manuscript';
+    return '✨ Tap labeled items in scene';
   }
 
   function renderMissionBannerHTML(text, progressText, isDone) {
@@ -1149,55 +1157,84 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
   function renderCoverQuoteInnerHTML() {
     return `
-      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:2px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:3px;">
         <span style="font-size:0.71rem;font-weight:900;color:#fbbf24;text-transform:uppercase;">
-          🐦 ${state.speakerName} • (${state.coverSecretsFound.size}/8 Cover Clues)
+          🎙️ ${state.speakerName} • (${state.coverSecretsFound.size}/6 Cast Previewed)
         </span>
         ${renderVoControlsHTML()}
       </div>
-      <div style="font-size:0.84rem;font-weight:700;color:#fef3c7;line-height:1.32;">
+      <div style="font-size:0.84rem;font-weight:700;color:#fef3c7;line-height:1.34;">
         &ldquo;${state.speechText}&rdquo;
       </div>
     `;
   }
 
+  function renderCoverCastChipsHTML() {
+    const cast = [
+      { id: 'dst-cover-gull', key: 'gull', icon: '🐦', label: 'Salty (Guide)' },
+      { id: 'dst-cover-quill', key: 'quill', icon: '🪶', label: 'Clerk Sir Guy' },
+      { id: 'dst-cover-pigs', key: 'pigs', icon: '🐷', label: 'Reeve Odo' },
+      { id: 'dst-cover-edith', key: 'edith', icon: '🥣', label: 'Edith (Hut #3)' },
+      { id: 'dst-cover-bennet', key: 'bennet', icon: '🥕', label: 'Boggy Bennet' },
+      { id: 'dst-cover-castle', key: 'castle', icon: '🏰', label: 'Portchester Fort' },
+    ];
+    return cast
+      .map((c) => {
+        const seen = state.coverSecretsFound.has(c.key);
+        return `
+          <button type="button" id="${c.id}" class="dst-cast-chip ${seen ? 'is-found' : ''}">
+            <span>${c.icon}</span>
+            <span>${c.label}</span>
+            <span class="dst-cast-status">${seen ? '✓' : '🔊'}</span>
+          </button>
+        `;
+      })
+      .join('');
+  }
+
   function renderCoverHTML() {
     return `
       <div class="dst-cover-wrap">
-        <div class="dst-cover-stage">
-          <div class="dst-cover-art-box" id="dst-fx-stage" data-fx-preset="cover">
-            <img src="/images/ks3_med7/med7_l1_card_bayeux_norman_fleet_scene38.jpg"
-                 alt="Bayeux Tapestry Scene 38 — King William’s 1066 invasion fleet crossing the Channel toward southern England"
-                 class="domesday-diorama-img" />
-            <div class="dst-cover-top-shade"></div>
-
-            <div class="dst-cover-logo-wrap">
-              <div class="dst-lucas-kicker">📜 ARCHIVAL FIELDWORK SIMULATION • HAMPSHIRE FOLIO 46v (1086)</div>
-              <h2 class="dst-lucas-title">THE 1086 DOMESDAY SURVEY: STUBITONE</h2>
-              <p class="dst-lucas-sub">A 7-Stage Voiced 1086 Domesday Investigation Across Fareham, Stubbington &amp; The Solent</p>
+        <div class="dst-cover-launchpad">
+          <div class="dst-cover-visual-col">
+            <div class="dst-cover-art-box" id="dst-fx-stage" data-fx-preset="cover">
+              <img src="/images/ks3_med7/med7_l1_card_bayeux_norman_fleet_scene38.jpg"
+                   alt="Bayeux Tapestry Scene 38 — King William’s 1066 invasion fleet crossing the Channel toward southern England"
+                   class="domesday-diorama-img" />
+              <div class="dst-cover-plate-badge">🏛️ Bayeux Tapestry (c. 1070s) • Scene 38: Duke William’s Invasion Fleet</div>
             </div>
 
-            ${hitZoneHTML({ id: 'dst-cover-gull', key: 'cov:gull', x: 12, y: 24, w: 12, h: 18, found: state.coverSecretsFound.has('gull'), ariaLabel: 'Meet Salty the Solent Seagull guide' })}
-            ${hitZoneHTML({ id: 'dst-cover-castle', key: 'cov:castle', x: 26, y: 18, w: 16, h: 16, found: state.coverSecretsFound.has('castle'), ariaLabel: 'Inspect coastal fortification history' })}
-            ${hitZoneHTML({ id: 'dst-cover-ship', key: 'cov:ship', x: 48, y: 54, w: 22, h: 28, found: state.coverSecretsFound.has('ship'), ariaLabel: 'Inspect dragon-prowed longship on the Channel' })}
-            ${hitZoneHTML({ id: 'dst-cover-bennet', key: 'cov:bennet', x: 18, y: 74, w: 16, h: 22, found: state.coverSecretsFound.has('bennet'), ariaLabel: 'Hear Boggy Bennet on the Solent shore' })}
-            ${hitZoneHTML({ id: 'dst-cover-pigs', key: 'cov:pigs', x: 62, y: 82, w: 18, h: 16, found: state.coverSecretsFound.has('pigs'), ariaLabel: 'Hear Reeve Odo on woodland livestock' })}
-            ${hitZoneHTML({ id: 'dst-cover-quill', key: 'cov:quill', x: 68, y: 24, w: 14, h: 20, found: state.coverSecretsFound.has('quill'), ariaLabel: 'Inspect Norman royal standard & Exchequer quill' })}
-            ${hitZoneHTML({ id: 'dst-cover-torso', key: 'cov:torso', x: 80, y: 52, w: 16, h: 26, found: state.coverSecretsFound.has('torso'), ariaLabel: 'Inspect overlapping Norman kite shields along the gunwale' })}
-            ${hitZoneHTML({ id: 'dst-cover-edith', key: 'cov:edith', x: 88, y: 76, w: 12, h: 20, found: state.coverSecretsFound.has('edith'), ariaLabel: 'Hear Edith of Stubbington' })}
-          </div>
-        </div>
-
-        <div class="dst-cover-footer">
-          <div class="dst-cover-quote-wrap" id="dst-cover-quote-slot" role="status" aria-live="polite" style="flex:1;min-width:min(100%,240px);">
-            ${renderCoverQuoteInnerHTML()}
+            <div class="dst-cast-strip-wrap">
+              <div class="dst-cast-strip-label">🎭 Tap to Audition the 1086 Cast (+15 pts each):</div>
+              <div class="dst-cast-strip-grid" id="dst-cover-cast-slot">
+                ${renderCoverCastChipsHTML()}
+              </div>
+            </div>
           </div>
 
-          <div class="dst-cover-cta-row">
-            <button type="button" class="dst-icon-btn" data-action="hint-shimmer">✨ Flash Spots</button>
-            <button type="button" class="dst-start-cta" id="dst-btn-start-adventure">
-              ▶ BEGIN 1086 ROYAL AUDIT (7 STAGES)
+          <div class="dst-cover-info-col">
+            <div>
+              <div class="dst-lucas-kicker">📜 ARCHIVAL FIELDWORK SIMULATION • HAMPSHIRE FOLIO 46v (1086)</div>
+              <h2 class="dst-lucas-title">THE 1086 DOMESDAY SURVEY: STUBITONE</h2>
+              <p class="dst-lucas-sub">
+                Step into 1086 Hampshire as King William’s Royal Commissioner! Rewind Solent towns into salt-marsh, catch sweating Reeve Odo hiding Fareham watermills, judge a real Norman tax trial, count who Domesday missed inside Stubbington Cottage #3, and crack genuine Folio 46v Latin.
+              </p>
+
+              <div class="dst-cover-pills-row">
+                <span class="dst-cover-pill">🗺️ 7 Interactive Stages</span>
+                <span class="dst-cover-pill">🎙️ 11 Acted Studio Voices</span>
+                <span class="dst-cover-pill">🥕 3 Secret Turnips</span>
+                <span class="dst-cover-pill">📜 Real 1086 Folio 46v</span>
+              </div>
+            </div>
+
+            <button type="button" class="dst-start-cta" id="dst-btn-start-adventure" style="width:100%;">
+              ▶ BEGIN 1086 ROYAL AUDIT (STAGE 1)
             </button>
+
+            <div class="dst-cover-quote-wrap" id="dst-cover-quote-slot" role="status" aria-live="polite">
+              ${renderCoverQuoteInnerHTML()}
+            </div>
           </div>
         </div>
       </div>
@@ -1317,19 +1354,24 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
               showSwampScene
                 ? `
               <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="swamp">
-                <img src="/images/medieval_england/plate_2_1_bayeux_castle_building.jpg"
-                     alt="Bayeux Tapestry Scene 45 — English labourers digging coastal earthworks with spades under Norman supervision"
-                     class="domesday-diorama-img" />
-                ${hitZoneHTML({ id: 'dst-swamp-bennet', key: 'swamp:bennet', x: 54, y: 58, w: 22, h: 48, found: state.bennetSightings.has('swamp'), ariaLabel: 'Inspect mud-digging labourer Bennet Luvet and his turnip' })}
-                ${hitZoneHTML({ id: 'dst-swamp-gull', key: 'swamp:gull', x: 84, y: 22, w: 14, h: 22, found: state.swampSecretsFound.has('gull'), ariaLabel: 'Inspect Salty the Seagull overhead' })}
-                ${hitZoneHTML({ id: 'dst-swamp-mill', key: 'swamp:mill', x: 22, y: 44, w: 20, h: 32, found: state.swampSecretsFound.has('mill'), ariaLabel: 'Inspect Norman banner and timber earthworks' })}
-                ${hitZoneHTML({ id: 'dst-swamp-torch', key: 'swamp:torch', x: 76, y: 54, w: 14, h: 28, found: state.swampSecretsFound.has('torch'), ariaLabel: 'Inspect iron-shod medieval spades' })}
+                <div id="dst-svg-stage-slot" class="dst-svg-stage-host">
+                  ${renderGosportSaltMarshSVG({
+                    swampSecretsFound: state.swampSecretsFound,
+                    bennetFound: state.bennetSightings.has('swamp'),
+                  })}
+                </div>
               </div>
               ${renderSceneFooterBarHTML(
                 state.swampSecretsFound.size + (state.bennetSightings.has('swamp') ? 1 : 0),
                 4,
-                'Click Bayeux diggers (🥕 Turnip #1!), Salty & spades!',
+                'Tap Bennet (🥕 Turnip #1!), Salty, Fareham mills & torch!',
               )}
+              ${renderArchivalEvidenceCardHTML({
+                img: '/images/medieval_england/plate_2_1_bayeux_castle_building.jpg',
+                kicker: 'Archival Evidence • Bayeux Tapestry Scene 45',
+                caption: 'While Gosport and Portsmouth remained empty salt-marsh in 1086, Norman lords fortified key harbours like Portchester and Hastings using English labour.',
+                alt: 'Bayeux Tapestry Scene 45 showing medieval labourers digging coastal earthworks with iron-shod spades',
+              })}
             `
                 : isTested
                   ? `<div id="dst-b0-dossier-slot">${renderBeat0DossierCardHTML()}</div>`
@@ -1376,20 +1418,20 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     const all3Found = foundCount >= 3;
     return `
       ${renderMissionBannerHTML(
-        'Click the 3 hidden taxable money-makers in the Luttrell Psalter watermill illumination!',
+        'Click all 3 hidden taxable money-makers in the 1086 Fareham Creek estate!',
         `${foundCount} / 3 Found`,
         all3Found,
       )}
 
       <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:10px;">
         <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('mills') ? '#22c55e' : '#44403c'};font-size:0.83rem;">
-          ${state.foundFarehamAssets.has('mills') ? '✅ <strong>5 Spinning Watermills (41 shillings):</strong> Peasants were BANNED by law from grinding flour at home—forcing everyone to pay Bishop Walkelin’s mills!' : '⬜ Money-Maker #1: Click the rushing timber waterwheel at the bottom centre...'}
+          ${state.foundFarehamAssets.has('mills') ? '✅ <strong>5 Spinning Watermills (41 shillings):</strong> Peasants were BANNED by law from grinding flour at home—forcing everyone to pay Bishop Walkelin’s mills!' : '⬜ Money-Maker #1: Tap the <strong>5 spinning watermills</strong> along Fareham Creek...'}
         </div>
         <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('pigs') ? '#22c55e' : '#44403c'};font-size:0.83rem;">
-          ${state.foundFarehamAssets.has('pigs') ? '✅ <strong>Woodland for 13 Fat Pigs:</strong> Peasants paid "pannage" tax in live hogs just to let pigs eat acorns in the Bishop’s oak woods!' : '⬜ Money-Maker #2: Click the woodland animals foraging on the upper-right bank...'}
+          ${state.foundFarehamAssets.has('pigs') ? '✅ <strong>Woodland for 13 Fat Pigs:</strong> Peasants paid "pannage" tax in live hogs just to let pigs eat acorns in the Bishop’s oak woods!' : '⬜ Money-Maker #2: Tap the <strong>13 pigs foraging</strong> in the upper-right oak woods...'}
         </div>
         <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('church_meadow') ? '#22c55e' : '#44403c'};font-size:0.83rem;">
-          ${state.foundFarehamAssets.has('church_meadow') ? '✅ <strong>1 Parish Church, 90 Households & 41 Meadow Acres:</strong> Putting Fareham in the top 20% largest settlements in 1086 England!' : '⬜ Money-Maker #3: Click the tiled estate building & meadow bank on the left...'}
+          ${state.foundFarehamAssets.has('church_meadow') ? '✅ <strong>1 Parish Church, 90 Households & 41 Meadow Acres:</strong> Putting Fareham in the top 20% largest settlements in 1086 England!' : '⬜ Money-Maker #3: Tap the <strong>Saxon stone church &amp; hay-meadow</strong> on the left hill...'}
         </div>
       </div>
 
@@ -1399,7 +1441,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                Part B → Who Pulled the Bishop’s Ploughs? Meet Gyrth <i class="fa-solid fa-arrow-right"></i>
              </button>`
           : `<div style="font-size:0.76rem;color:#a8a29e;text-align:center;">
-               💡 Bonus: Inspect the wicker eel-traps in the millpond—and spot Bennet’s turnip tuft (🥕 #2) by the right reeds!
+               💡 Bonus: Question sweating Reeve Odo, check Saint Swithin’s reliquary, and spot Bennet’s Turnip #2 (🥕) in the reeds!
              </div>`
       }
     `;
@@ -1466,18 +1508,21 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           <div class="dst-split">
             <div>
               <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="fareham_mills">
-                <img src="/images/medieval_england/luttrell_psalter_watermill_detail_f181r.jpg"
-                     alt="Luttrell Psalter (BL Add MS 42130, f. 181r) — Medieval timber watermill, millrace, wicker eel-traps, and woodland bank"
-                     class="domesday-diorama-img" />
-                ${hitZoneHTML({ key: 'b1:odo', dataAttr: 'data-b1-spot="odo"', x: 16, y: 62, w: 14, h: 30, found: state.farehamExtrasFound.has('odo'), ariaLabel: 'Inspect sweating Reeve Odo by the millhouse door' })}
-                ${hitZoneHTML({ key: 'b1:relic', dataAttr: 'data-b1-spot="relic"', x: 48, y: 24, w: 22, h: 20, found: state.farehamExtrasFound.has('relic'), ariaLabel: 'Inspect gilded manuscript crest & Saint Swithin oath' })}
-                ${hitZoneHTML({ key: 'b1:mills', dataAttr: 'data-b1-spot="mills"', x: 44, y: 74, w: 22, h: 28, found: state.foundFarehamAssets.has('mills'), ariaLabel: 'Inspect timber waterwheel along the millrace' })}
-                ${hitZoneHTML({ key: 'b1:pigs', dataAttr: 'data-b1-spot="pigs"', x: 83, y: 34, w: 18, h: 24, found: state.foundFarehamAssets.has('pigs'), ariaLabel: 'Inspect woodland foraging bank on upper right' })}
-                ${hitZoneHTML({ key: 'b1:church_meadow', dataAttr: 'data-b1-spot="church_meadow"', x: 30, y: 58, w: 18, h: 28, found: state.foundFarehamAssets.has('church_meadow'), ariaLabel: 'Inspect tiled manor millhouse and green meadow bank' })}
-                ${hitZoneHTML({ key: 'b1:chickens', dataAttr: 'data-b1-spot="chickens"', x: 76, y: 68, w: 18, h: 22, found: state.farehamExtrasFound.has('chickens'), ariaLabel: 'Inspect wicker eel-traps in the millpond' })}
-                ${hitZoneHTML({ key: 'b1:bennet', dataAttr: 'data-b1-spot="bennet"', x: 89, y: 84, w: 12, h: 18, found: state.bennetSightings.has('creek'), ariaLabel: 'Inspect wiggling turnip tuft in the riverbank reeds' })}
+                <div id="dst-svg-stage-slot" class="dst-svg-stage-host">
+                  ${renderFarehamEstateSVG({
+                    foundAssets: state.foundFarehamAssets,
+                    foundExtras: state.farehamExtrasFound,
+                    bennetFound: state.bennetSightings.has('creek'),
+                  })}
+                </div>
               </div>
-              ${renderSceneFooterBarHTML(totalFarehamSecrets, 7, 'Click waterwheel, woodland bank, millhouse & reeds!')}
+              ${renderSceneFooterBarHTML(totalFarehamSecrets, 7, 'Tap 5 watermills, 13 pigs, stone church, Odo & Turnip #2!')}
+              ${renderArchivalEvidenceCardHTML({
+                img: '/images/medieval_england/luttrell_psalter_watermill_detail_f181r.jpg',
+                kicker: 'Primary Illumination • Luttrell Psalter (BL Add MS 42130, f. 181r)',
+                caption: 'Genuine 14th-century English manuscript showing a lord’s timber watermill, rushing millrace, and woven wicker eel-traps—every villager paid multure toll to grind grain.',
+                alt: 'Luttrell Psalter folio 181r watermill illumination with timber waterwheel and eel-traps',
+              })}
             </div>
 
             <div class="dst-card-panel" id="dst-b1-right-slot">
@@ -1489,14 +1534,21 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           <div class="dst-split">
             <div>
               <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="servi_plough" style="border-color:#64748b;">
-                <img src="/images/medieval_england/tres_riches_heures_ox_plough_f3v.jpg"
-                     alt="Très Riches Heures (Musée Condé MS 65, f. 3v) — Medieval ploughman guiding wheeled mouldboard plough behind yoked oxen"
-                     class="domesday-diorama-img" />
-                ${hitZoneHTML({ id: 'dst-btn-hear-gyrth', key: 'servi:gyrth', x: 76, y: 66, w: 20, h: 38, found: state.serviReflected, ariaLabel: 'Listen to Gyrth the enslaved ploughman' })}
-                ${hitZoneHTML({ key: 'servi:oxen', dataAttr: 'data-servi-spot="oxen"', x: 28, y: 72, w: 30, h: 30, found: state.farehamExtrasFound.has('oxen'), ariaLabel: 'Inspect heavy medieval ox-plough team' })}
-                ${hitZoneHTML({ key: 'servi:overseer', dataAttr: 'data-servi-spot="overseer"', x: 46, y: 18, w: 18, h: 20, found: state.farehamExtrasFound.has('overseer'), ariaLabel: 'Inspect Norman lord’s stone towers on the distant ridge' })}
+                <div id="dst-svg-stage-slot" class="dst-svg-stage-host">
+                  ${renderServiPloughSVG({
+                    serviReflected: state.serviReflected,
+                    oxenFound: state.farehamExtrasFound.has('oxen'),
+                    overseerFound: state.farehamExtrasFound.has('overseer'),
+                  })}
+                </div>
               </div>
-              ${renderSceneFooterBarHTML(1 + (state.farehamExtrasFound.has('oxen') ? 1 : 0) + (state.farehamExtrasFound.has('overseer') ? 1 : 0), 3, 'Click Gyrth on the right, the oxen, or the distant keep!')}
+              ${renderSceneFooterBarHTML(1 + (state.farehamExtrasFound.has('oxen') ? 1 : 0) + (state.farehamExtrasFound.has('overseer') ? 1 : 0), 3, 'Tap Gyrth, the 8-ox plough team, and the mounted bailiff!')}
+              ${renderArchivalEvidenceCardHTML({
+                img: '/images/medieval_england/tres_riches_heures_ox_plough_f3v.jpg',
+                kicker: 'Primary Illumination • Très Riches Heures (Musée Condé MS 65, f. 3v)',
+                caption: 'Medieval ploughman guiding a wheeled mouldboard plough pulled by yoked oxen across heavy clay ridges on a lord’s demesne.',
+                alt: 'Très Riches Heures folio 3v medieval ox-ploughing scene',
+              })}
             </div>
 
             <div class="dst-card-panel" id="dst-b1-servi-right-slot" style="border-color:#64748b;">
@@ -1758,16 +1810,11 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         <div class="dst-split">
           <div>
             <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="assize">
-              <img src="/images/medieval_england/source_a_bayeux_harold_oath.jpg"
-                   alt="Bayeux Tapestry Scene 23 — Solemn medieval oath sworn upon sacred reliquaries before an enthroned Norman lord"
-                   class="domesday-diorama-img" />
-              ${hitZoneHTML({ key: 'assize:hugh', dataAttr: 'data-assize-spot="hugh"', x: 22, y: 54, w: 18, h: 48, found: state.assizeSpotsHeard.has('hugh'), ariaLabel: 'Inspect enthroned Norman lord & Sheriff Hugh' })}
-              ${hitZoneHTML({ key: 'assize:clerk', dataAttr: 'data-assize-spot="clerk"', x: 41, y: 52, w: 13, h: 42, found: state.assizeSpotsHeard.has('clerk'), ariaLabel: 'Hear Norman Clerk Sir Guy beside the throne' })}
-              ${hitZoneHTML({ key: 'assize:shield', dataAttr: 'data-assize-spot="shield"', x: 52, y: 58, w: 12, h: 34, found: state.assizeSpotsHeard.has('shield'), ariaLabel: 'Inspect sacred altar reliquary & coastal raid testimony' })}
-              ${hitZoneHTML({ key: 'assize:villager', dataAttr: 'data-assize-spot="villager"', x: 67, y: 54, w: 15, h: 48, found: state.assizeSpotsHeard.has('villager'), ariaLabel: 'Hear sworn witness Wulf of Fareham' })}
-              ${hitZoneHTML({ key: 'assize:bishop_monk', dataAttr: 'data-assize-spot="bishop_monk"', x: 86, y: 54, w: 16, h: 46, found: state.assizeSpotsHeard.has('bishop_monk'), ariaLabel: 'Inspect Bishop Walkelin’s altar representative' })}
+              <div id="dst-svg-stage-slot" class="dst-svg-stage-host">
+                ${renderRoyalAssizeSVG({ heardSet: state.assizeSpotsHeard })}
+              </div>
             </div>
-            ${renderSceneFooterBarHTML(state.assizeSpotsHeard.size, 5, 'Click all 5 Bayeux oath-court figures & reliquaries!')}
+            ${renderSceneFooterBarHTML(state.assizeSpotsHeard.size, 5, 'Tap Wulf, Viking shield, Clerk Guy, Sheriff Hugh & Bishop’s bailiff!')}
 
             <div style="margin-top:8px;padding:9px 12px;border-radius:10px;background:#1c1917;border:1px solid #44403c;font-size:0.79rem;">
               <div style="display:flex;justify-content:space-between;margin-bottom:4px;flex-wrap:wrap;gap:4px;">
@@ -1778,6 +1825,13 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                 <div style="width:80%;background:#16a34a;"></div>
               </div>
             </div>
+
+            ${renderArchivalEvidenceCardHTML({
+              img: '/images/medieval_england/source_a_bayeux_harold_oath.jpg',
+              kicker: 'Primary Evidence • Bayeux Tapestry Scene 23 (Relic Oath)',
+              caption: 'Every 1086 Domesday Hundred jury—the parish priest, the reeve, and six villagers—had to swear testimony upon sacred saint reliquaries.',
+              alt: 'Bayeux Tapestry Scene 23 showing an oath sworn on sacred reliquaries before a seated Norman ruler',
+            })}
           </div>
 
           <div class="dst-card-panel" id="dst-b3-right-slot">
@@ -1819,16 +1873,16 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
       <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;font-size:0.78rem;margin-bottom:10px;">
         <div style="padding:6px 8px;border-radius:7px;background:#292524;border:1px solid ${state.hutPeopleGroups.has('edith') ? '#22c55e' : '#44403c'};">
-          ${state.hutPeopleGroups.has('edith') ? '✅ Edith (Wife)' : '⬜ Click Edith inside cottage'}
+          ${state.hutPeopleGroups.has('edith') ? '✅ Edith (Wife, +1)' : '⬜ Tap Edith (+1)'}
         </div>
         <div style="padding:6px 8px;border-radius:7px;background:#292524;border:1px solid ${state.hutPeopleGroups.has('five_kids') ? '#22c55e' : '#44403c'};">
-          ${state.hutPeopleGroups.has('five_kids') ? '✅ 5 Hungry Kids' : '⬜ Click cottage yard & skeps'}
+          ${state.hutPeopleGroups.has('five_kids') ? '✅ 5 Hungry Kids (+5)' : '⬜ Tap 5 Hungry Kids (+5)'}
         </div>
         <div style="padding:6px 8px;border-radius:7px;background:#292524;border:1px solid ${state.hutPeopleGroups.has('grandma') ? '#22c55e' : '#44403c'};">
-          ${state.hutPeopleGroups.has('grandma') ? '✅ Grandma Eadgyth' : '⬜ Click Grandma by hearth'}
+          ${state.hutPeopleGroups.has('grandma') ? '✅ Grandma Eadgyth (+1)' : '⬜ Tap Grandma (+1)'}
         </div>
         <div style="padding:6px 8px;border-radius:7px;background:#292524;border:1px solid ${foundPets ? '#22c55e' : '#44403c'};">
-          ${foundPets ? '✅ Untaxed Flock & Hens' : '⬜ Click yard hens / sheepfold'}
+          ${foundPets ? '✅ Untaxed Hens & Dog' : '⬜ Tap Hens & Dog'}
         </div>
       </div>
 
@@ -1882,21 +1936,25 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         <div class="dst-split">
           <div>
             <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="stubbington_hut">
-              <img src="/images/medieval_england/tres_riches_heures_peasant_hearth_f2v.jpg"
-                   alt="Très Riches Heures (Musée Condé MS 65, f. 2v) — Cutaway medieval peasant cottage hearth, sheepfold, farmyard hens, and woodcutter among tree stumps"
-                   class="domesday-diorama-img" />
-              ${hitZoneHTML({ key: 'b4:grandma', dataAttr: 'data-b4-spot="grandma"', x: 21, y: 66, w: 12, h: 30, found: state.hutPeopleGroups.has('grandma'), ariaLabel: 'Inspect Grandma Eadgyth warming by the cottage hearth' })}
-              ${hitZoneHTML({ key: 'b4:edith', dataAttr: 'data-b4-spot="edith"', x: 33, y: 68, w: 13, h: 30, found: state.hutPeopleGroups.has('edith'), ariaLabel: 'Inspect Saxon mother Edith inside the cottage cutaway' })}
-              ${hitZoneHTML({ key: 'b4:five_kids', dataAttr: 'data-b4-spot="five_kids"', x: 48, y: 62, w: 18, h: 26, found: state.hutPeopleGroups.has('five_kids'), ariaLabel: 'Count the household family and woven bee-skeps' })}
-              ${hitZoneHTML({ key: 'b4:pets', dataAttr: 'data-b4-spot="untaxed_pets"', x: 27, y: 88, w: 18, h: 14, found: state.foundBlindSpots.has('untaxed_pets'), ariaLabel: 'Inspect untaxed cottage animals' })}
-              ${hitZoneHTML({ key: 'b4:hens', dataAttr: 'data-b4-spot="rafter_hens"', x: 56, y: 80, w: 18, h: 18, found: state.foundBlindSpots.has('untaxed_pets'), ariaLabel: 'Inspect pecking farmyard hens in the snow' })}
-              ${hitZoneHTML({ key: 'b4:stumps', dataAttr: 'data-b4-spot="stumps_bennet"', x: 70, y: 28, w: 18, h: 26, found: state.bennetSightings.has('stumps'), ariaLabel: 'Inspect woodcutter among Stubbington tree stumps (Turnip #3)' })}
+              <div id="dst-svg-stage-slot" class="dst-svg-stage-host">
+                ${renderStubbingtonHutSVG({
+                  hutPeopleGroups: state.hutPeopleGroups,
+                  foundPets: state.foundBlindSpots.has('untaxed_pets'),
+                  bennetFound: state.bennetSightings.has('stumps'),
+                })}
+              </div>
             </div>
             ${renderSceneFooterBarHTML(
               foundTotal,
               5,
-              'Click Grandma, Edith, cottage yard, hens & woodcutter stumps (🥕 #3)!',
+              'Tap Grandma, Edith, 5 kids, hens/dog & tree-stumps (🥕 #3)!',
             )}
+            ${renderArchivalEvidenceCardHTML({
+              img: '/images/medieval_england/tres_riches_heures_peasant_hearth_f2v.jpg',
+              kicker: 'Primary Illumination • Très Riches Heures (Musée Condé MS 65, f. 2v)',
+              caption: 'Cutaway medieval cottage showing villagers warming by an open hearth beside woven bee-skeps, pecking hens, and woodcutters clearing timber.',
+              alt: 'Très Riches Heures folio 2v cutaway peasant cottage hearth in winter',
+            })}
           </div>
 
           <div class="dst-card-panel" id="dst-b4-right-slot">
@@ -2458,7 +2516,10 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       const covQuote = shellEl.querySelector('#dst-cover-quote-slot');
       if (covQuote) covQuote.innerHTML = renderCoverQuoteInnerHTML();
 
-      shellEl.querySelectorAll('.dst-hit-zone[data-hz-key]').forEach((btn) => {
+      const covCast = shellEl.querySelector('#dst-cover-cast-slot');
+      if (covCast) covCast.innerHTML = renderCoverCastChipsHTML();
+
+      shellEl.querySelectorAll('.dst-hit-zone[data-hz-key], .dst-svg-hit[data-hz-key]').forEach((btn) => {
         btn.classList.toggle('is-found', isHitZoneFound(btn.dataset.hzKey));
       });
     });
@@ -2498,6 +2559,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       syncModalSlot();
 
       const tallyEl = shellEl.querySelector('#dst-scene-secret-tally');
+      const svgSlot = shellEl.querySelector('#dst-svg-stage-slot');
       if (state.step === 'beat0') {
         const leftSlot = shellEl.querySelector('#dst-b0-left-slot');
         if (leftSlot) leftSlot.innerHTML = renderBeat0LeftMapAndPillsHTML();
@@ -2505,6 +2567,12 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         if (verdSlot) verdSlot.innerHTML = renderBeat0RightHeaderHTML();
         const dosSlot = shellEl.querySelector('#dst-b0-dossier-slot');
         if (dosSlot) dosSlot.innerHTML = renderBeat0DossierCardHTML();
+        if (svgSlot) {
+          svgSlot.innerHTML = renderGosportSaltMarshSVG({
+            swampSecretsFound: state.swampSecretsFound,
+            bennetFound: state.bennetSightings.has('swamp'),
+          });
+        }
         const nextSlot = shellEl.querySelector('#dst-b0-next-slot');
         if (nextSlot) {
           nextSlot.innerHTML =
@@ -2529,6 +2597,20 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         const srSlot = shellEl.querySelector('#dst-b1-servi-right-slot');
         if (srSlot && state.beat1SubMode === 'servi')
           srSlot.innerHTML = renderBeat1ServiRightPanelHTML();
+        if (svgSlot) {
+          svgSlot.innerHTML =
+            state.beat1SubMode === 'hunt'
+              ? renderFarehamEstateSVG({
+                  foundAssets: state.foundFarehamAssets,
+                  foundExtras: state.farehamExtrasFound,
+                  bennetFound: state.bennetSightings.has('creek'),
+                })
+              : renderServiPloughSVG({
+                  serviReflected: state.serviReflected,
+                  oxenFound: state.farehamExtrasFound.has('oxen'),
+                  overseerFound: state.farehamExtrasFound.has('overseer'),
+                });
+        }
         if (tallyEl) {
           if (state.beat1SubMode === 'hunt') {
             const tot =
@@ -2567,11 +2649,19 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       } else if (state.step === 'beat3') {
         const rSlot = shellEl.querySelector('#dst-b3-right-slot');
         if (rSlot) rSlot.innerHTML = renderBeat3RightPanelHTML();
+        if (svgSlot) svgSlot.innerHTML = renderRoyalAssizeSVG({ heardSet: state.assizeSpotsHeard });
         if (tallyEl)
           tallyEl.innerHTML = `✨ <strong>Hotspots:</strong> ${state.assizeSpotsHeard.size} / 5`;
       } else if (state.step === 'beat4') {
         const rSlot = shellEl.querySelector('#dst-b4-right-slot');
         if (rSlot) rSlot.innerHTML = renderBeat4RightPanelHTML();
+        if (svgSlot) {
+          svgSlot.innerHTML = renderStubbingtonHutSVG({
+            hutPeopleGroups: state.hutPeopleGroups,
+            foundPets: state.foundBlindSpots.has('untaxed_pets'),
+            bennetFound: state.bennetSightings.has('stumps'),
+          });
+        }
         if (tallyEl) {
           const tot =
             state.hutPeopleGroups.size -

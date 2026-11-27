@@ -414,26 +414,26 @@ function renderWeimarDeskSVG(dossier, stability, article48Uses, answered) {
       <div class="diorama-vignette"></div>
       <div class="diorama-candle-glow"></div>
 
-      <!-- Pinned Over Reichstag Dome Window -->
-      <div class="diorama-hud-chip wcd-chip-democ" style="left:12px;top:12px;border-color:${stabColor};">
-        🏛️ Reichstag Democracy: <span style="color:${stabColor};">${stability}%</span>
-        &bull; KPD ${dossier.leftThreat}% / Right ${dossier.rightThreat}%
-      </div>
-
-      <div class="diorama-hud-chip" style="left:8px;top:8px;border-color:#f59e0b;color:#fde047;">
+      <!-- Top-Left Year & Unemployment Indicator -->
+      <div class="diorama-hud-chip" style="left:10px;top:10px;border-color:#f59e0b;color:#fde047;">
         📅 ${dossier.year} &bull; Jobless: ${dossier.unemployed}
       </div>
 
-      <!-- Pinned Directly Over the Wheelbarrow & Loaf of Rye Bread -->
-      <div class="diorama-hud-chip" style="left:8px;bottom:8px;border-color:${dossier.breadAlert ? '#ef4444' : '#38bdf8'};background:rgba(10,15,28,0.94);">
+      <!-- Top-Right Reichstag Democracy & Extremism Indicator -->
+      <div class="diorama-hud-chip wcd-chip-democ" style="right:10px;top:10px;left:auto;border-color:${stabColor};">
+        🏛️ Democracy: <span style="color:${stabColor};">${stability}%</span>
+        &bull; KPD ${dossier.leftThreat}% / Right ${dossier.rightThreat}%
+      </div>
+
+      <!-- Bottom-Left Loaf of Rye Bread Indicator -->
+      <div class="diorama-hud-chip" style="left:10px;bottom:10px;border-color:${dossier.breadAlert ? '#ef4444' : '#38bdf8'};background:rgba(10,15,28,0.94);">
         🍞 Bread: <span style="color:${dossier.breadAlert ? '#f87171' : '#34d399'};font-family:monospace;">${dossier.breadPrice}</span>
       </div>
 
-      <!-- Pinned Directly Over the Painted Red Rubber Stamp on the Desk! -->
       ${
         !answered
           ? `
-        <button type="button" class="diorama-hotspot wcd-desk-stamp-hotspot" style="left:68%;top:80%;border-color:#ef4444;background:rgba(127,29,29,0.92);color:#fecaca;">
+        <button type="button" class="diorama-hotspot wcd-desk-stamp-hotspot" style="right:10px;bottom:10px;left:auto;top:auto;transform:none;border-color:#ef4444;background:rgba(127,29,29,0.94);color:#fecaca;">
           📜 Art. 48! (${article48Uses})
         </button>
       `
