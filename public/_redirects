@@ -64,6 +64,3 @@
 /competitions                   /?view=competitions            200
 /competitions/                  /?view=competitions            200
 /awards                         /?view=competitions            200
-
-# API route for optional Netlify Chess Sync function
-/api/chess_sync    /.netlify/functions/chess_sync    200
