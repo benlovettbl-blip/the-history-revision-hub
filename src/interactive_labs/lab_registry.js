@@ -11,14 +11,14 @@ const LAB_CATALOG = {
     labId: 'domesday_stubitone',
     unitId: 'medieval_england',
     lessonIndex: 1,
-    launcherIcon: 'fa-chess-rook',
+    launcherIcon: 'fa-scroll',
     launcherLabel: '1086 Domesday Lab',
-    kicker: '🏰 LOCAL HISTORY INTERACTIVE ADVENTURE • FAREHAM, STUBBINGTON & THE SOLENT (1086)',
-    title: 'The Secret of Stubitone™: The 1086 Royal Domesday Audit',
+    kicker: '📜 LOCAL ARCHIVAL FIELDWORK LAB • FAREHAM, STUBBINGTON & THE SOLENT (1086)',
+    title: 'The 1086 Hampshire Domesday Survey: Stubitone & Fareham Fieldwork Lab',
     subtitle:
-      'Rewind your own Solent coastline 940 years, catch Sweating Reeve Odo hiding Fareham’s 5 watermills, rule on King Edward’s Viking tax break, decode Stubbington’s real 1086 Latin parchment, and spot what Domesday missed!',
-    coverImg: '/images/arcade/domesday/cover_secret_of_stubitone.webp',
-    badges: ['7 Bite-Sized Stages', '11 Character Voices', 'School-Laptop Friendly', '1086 Domesday Data'],
+      'Compare the modern Solent coastline against 1086 Domesday settlements, audit Fareham’s five watermills and enslaved ploughmen, examine King Edward’s coastal Viking tax reduction, and decode Stubbington’s Folio 46v Latin entry.',
+    coverImg: '/images/ks3_med7/med7_l1_card_bayeux_norman_fleet_scene38.jpg',
+    badges: ['7 Archival Stages', '11 Acted Voices', 'School-Laptop Friendly', 'Folio 46v Primary Data'],
     loadMount: () => import('./domesday_stubitone.js').then((m) => m.mountDomesdayStubitone),
   },
   'ks2_ww2:lesson_2:2': {
@@ -27,71 +27,19 @@ const LAB_CATALOG = {
     lessonIndex: 1,
     launcherIcon: 'fa-suitcase',
     launcherLabel: '1939 Home Front Lab',
-    kicker: '🚂 KS2 INTERACTIVE STORYBOOK ADVENTURE • BRITAIN’S HOME FRONT (1939–1945)',
+    kicker: '🚂 KS2 ARCHIVAL FIELDWORK LAB • BRITAIN’S HOME FRONT (1939–1945)',
     title: 'The Suitcase on Platform Four: A Child’s Wartime Journey (1939–1945)',
     subtitle:
-      'Pack your 1939 evacuee suitcase, trace Operation Pied Piper trains across the whole UK, welcome a Kindertransport friend from Prague, seal the Blitz blackout curtain, weigh 1941 rations, crack a Bletchley Park weather crib, and explore the Imperial War Museums archive!',
-    coverImg: '/images/arcade/ww2_homefront/cover_platform_four.webp',
-    badges: ['KS2 Ages 9–11', '60 FPS Storybook Scenes', 'Acted Studio Voices', 'Live IWM Archive Quest'],
+      'Pack an official 1939 evacuee suitcase, trace Operation Pied Piper rail routes across the UK, meet a Kindertransport refugee from Prague, inspect Blitz shelters and 1941 rations, and explore the Imperial War Museums archive.',
+    coverImg: '/units/ks2_ww2/assets/banner_unit_hero.jpg',
+    badges: ['KS2 Ages 9–11', 'IWM Archival Plates', 'Acted Studio Voices', 'IWM Archive Quest'],
     loadMount: () => import('./ww2_homefront.js').then((m) => m.mountWw2HomeFront),
   },
 };
 
-export function getInlineLessonLabHTML(unitId, lessonId, blockIndex) {
-  const key = `${unitId}:${lessonId}:${blockIndex}`;
-  const spec = LAB_CATALOG[key];
-  if (!spec) return '';
-
-  return `
-    <div id="hh-inline-lab-${spec.labId}" class="hh-inline-lab-card no-print" style="margin: 18px 0 26px 0; border-radius: 16px; overflow: hidden; border: 2.5px solid #d97706; background: linear-gradient(135deg, #1c1917 0%, #0f172a 100%); box-shadow: 0 14px 32px rgba(15, 23, 42, 0.24); color: #f8fafc; max-width: 100%;">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); align-items: stretch;">
-        <div style="position: relative; min-height: 205px; background: #090d16; overflow: hidden; cursor: pointer;"
-             onclick="window.openInteractiveClassroomLab && window.openInteractiveClassroomLab('${spec.labId}', true)">
-          <img src="${spec.coverImg}" alt="${spec.title}" loading="lazy"
-               style="width: 100%; height: 100%; object-fit: cover; display: block;" />
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(9,13,22,0.55) 0%, rgba(9,13,22,0.1) 50%, rgba(9,13,22,0.75) 100%);"></div>
-          <div style="position: absolute; top: 10px; left: 12px; background: rgba(12,10,9,0.86); border: 1px solid #f59e0b; color: #fde68a; font-size: 0.68rem; font-weight: 900; padding: 3px 10px; border-radius: 999px; letter-spacing: 0.8px;">
-            ▶ CLICK TO PLAY IN FULL-SCREEN
-          </div>
-        </div>
-
-        <div style="padding: 18px 20px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px;">
-          <div>
-            <div style="font-size: 0.72rem; font-weight: 900; color: #fbbf24; letter-spacing: 0.8px; text-transform: uppercase; margin-bottom: 4px;">
-              ${spec.kicker}
-            </div>
-            <h4 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.32rem; color: #fef3c7; line-height: 1.2;">
-              ${spec.title}
-            </h4>
-            <p style="margin: 0 0 10px 0; font-size: 0.9rem; color: #cbd5e1; line-height: 1.45;">
-              ${spec.subtitle}
-            </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-              ${spec.badges
-                .map(
-                  (b) =>
-                    `<span style="font-size: 0.7rem; font-weight: 800; padding: 3px 9px; border-radius: 999px; background: rgba(245, 158, 11, 0.16); border: 1px solid rgba(251, 191, 36, 0.45); color: #fde68a;">${b}</span>`,
-                )
-                .join('')}
-            </div>
-          </div>
-
-          <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px;">
-            <button type="button"
-                    onclick="window.openInteractiveClassroomLab && window.openInteractiveClassroomLab('${spec.labId}', true)"
-                    style="flex: 1 1 210px; min-height: 46px; padding: 10px 18px; border-radius: 10px; border: 2px solid #fef08a; background: linear-gradient(180deg, #ea580c 0%, #9a3412 100%); color: #ffffff; font-size: 0.92rem; font-weight: 900; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 6px 16px rgba(234, 88, 12, 0.38);">
-              <i class="fa-solid fa-expand"></i> Launch Full-Screen Adventure
-            </button>
-            <button type="button"
-                    onclick="window.openInteractiveClassroomLab && window.openInteractiveClassroomLab('${spec.labId}', false)"
-                    style="min-height: 46px; padding: 10px 14px; border-radius: 10px; border: 1.5px solid #475569; background: #1e293b; color: #e2e8f0; font-size: 0.84rem; font-weight: 800; cursor: pointer;">
-              Play Windowed
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
+export function getInlineLessonLabHTML() {
+  // Core Lesson "Church & State" Separation: never inject box-art game cards inside narrative prose.
+  return '';
 }
 
 let activeLabCleanup = null;
@@ -182,13 +130,18 @@ export async function openInteractiveClassroomLab(labId, preferFullscreen = true
   }
 }
 
-export function renderTopBarLabLauncherHTML(unitId, lessonId) {
+export function renderTopBarLabLauncherHTML() {
+  // Core Lesson "Church & State" Separation: keep sticky lesson header strictly academic.
+  return '';
+}
+
+export function renderConsolidateLabPillHTML(unitId, lessonId) {
   const match = Object.entries(LAB_CATALOG).find(([k]) => k.startsWith(`${unitId}:${lessonId}:`));
   if (!match) return '';
   const spec = match[1];
-  const iconCls = spec.launcherIcon || 'fa-chess-rook';
-  const btnLabel = spec.launcherLabel || 'Interactive Lab';
-  return `<button type="button" class="btn btn-lesson-lab-launcher no-print" onclick="window.openInteractiveClassroomLab && window.openInteractiveClassroomLab('${spec.labId}', true)" style="padding: 6px 12px; font-size: 0.86rem; background: linear-gradient(180deg, #ea580c 0%, #9a3412 100%); color: #fef08a; border: 1.5px solid #fde047; font-weight: 800; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap; box-shadow: 0 2px 8px rgba(234, 88, 12, 0.35);" title="Launch Full-Screen Interactive History Adventure: ${spec.title}"><i class="fa-solid ${iconCls}" style="color: #fde047;"></i> <span>${btnLabel}</span></button>`;
+  const iconCls = spec.launcherIcon || 'fa-scroll';
+  const btnLabel = spec.launcherLabel || 'Fieldwork Lab';
+  return `<button type="button" class="btn-consolidate-lab-pill no-print" onclick="window.openInteractiveClassroomLab && window.openInteractiveClassroomLab('${spec.labId}', true)" style="padding: 7px 12px; border-radius: 8px; border: 1.5px solid #d97706; background: rgba(217, 119, 6, 0.16); color: #fde68a; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;" title="Open Archival Fieldwork Lab: ${spec.title}"><i class="fa-solid ${iconCls}" style="color: #fbbf24;"></i> <span>${btnLabel}</span></button>`;
 }
 
 if (typeof window !== 'undefined') {

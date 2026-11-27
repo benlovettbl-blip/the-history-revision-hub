@@ -409,10 +409,10 @@ export function mountBlitzWardenEnigma(stageEl, pools, ctx = {}) {
     const allDark = litCount === 0;
 
     const winCoords = [
-      { idx: 0, x: 44.8, y: 43.2, w: 4.8, h: 14.5, label: 'No. 4 Upstairs' },
-      { idx: 1, x: 57.8, y: 64.5, w: 6.2, h: 18.0, label: "Hodges' Shopfront" },
-      { idx: 2, x: 64.1, y: 39.2, w: 5.2, h: 15.5, label: 'No. 12 Bedroom' },
-      { idx: 3, x: 84.8, y: 35.8, w: 5.8, h: 17.5, label: 'Corner Bakery Attic' },
+      { idx: 0, x: 24.0, y: 36.0, w: 7.0, h: 16.0, label: 'West Rampart Post' },
+      { idx: 1, x: 46.5, y: 46.0, w: 8.0, h: 18.0, label: 'Searchlight Shutter' },
+      { idx: 2, x: 68.5, y: 44.0, w: 7.0, h: 17.0, label: 'Spotter Trench' },
+      { idx: 3, x: 86.0, y: 34.0, w: 7.0, h: 16.0, label: 'East Sandbag Bay' },
     ];
 
     stageEl.innerHTML = `
@@ -420,7 +420,7 @@ export function mountBlitzWardenEnigma(stageEl, pools, ctx = {}) {
         <div class="tlb-hud bw-hud" style="border-color:#f59e0b;">
           <div class="tlb-stat"><span>Score</span><strong class="cyan">${score}</strong></div>
           <div class="tlb-stat"><span>Mission</span><strong class="amber">Act 1/3 • Blackout</strong></div>
-          <div class="tlb-stat"><span>Windows</span><strong style="color:${allDark ? '#34d399' : '#f87171'};">${litCount} Lit</strong></div>
+          <div class="tlb-stat"><span>Sectors</span><strong style="color:${allDark ? '#34d399' : '#f87171'};">${litCount} Lit</strong></div>
           <div class="tlb-stat"><span>Best</span><strong>${Math.max(pb, score)}</strong></div>
         </div>
 
@@ -428,15 +428,15 @@ export function mountBlitzWardenEnigma(stageEl, pools, ctx = {}) {
           <div class="bw-stage-box" style="background:#090d1a;border:2px solid ${allDark ? '#10b981' : '#f59e0b'};border-radius:16px;padding:14px;margin-bottom:14px;">
             <div class="bw-stage-header" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
               <span style="background:rgba(245,158,11,0.2);color:#fde047;padding:3px 10px;border-radius:999px;font-size:0.75rem;font-weight:900;">
-                🔦 1 SEPT 1939 • ARP BLACKOUT PATROL
+                🔦 1 SEPT 1939 • ARP BLACKOUT &amp; SEARCHLIGHT WATCH
               </span>
               <span style="font-size:0.8rem;color:${allDark ? '#6ee7b7' : '#fde047'};font-weight:700;">
-                ${allDark ? '✅ STREET 100% BLACKED OUT!' : '👆 Tap all 4 lit windows to shut curtains!'}
+                ${allDark ? '✅ PERIMETER 100% BLACKED OUT!' : '👆 Tap all 4 exposed lights to enforce Blackout!'}
               </span>
             </div>
 
             <div class="diorama-viewport">
-              <img src="/images/arcade/blitz_1_blackout.webp" alt="1939 British Blackout Street Patrol" class="diorama-img" />
+              <img src="/images/upgraded/ks2-ww2/l01_banner_chelsea_searchlight_h1291.jpg" alt="1940 British Anti-Aircraft Searchlight and Sandbagged Emplacement at Royal Hospital Chelsea (IWM H 1291)" class="diorama-img" />
               <div class="diorama-vignette"></div>
               ${winCoords
                 .map((w) => {
@@ -576,7 +576,7 @@ export function mountBlitzWardenEnigma(stageEl, pools, ctx = {}) {
           <!-- Illustrated Cutaway Diorama -->
           <div class="bw-stage-box" style="background:#0c1917;border:2px solid #10b981;border-radius:16px;padding:12px;margin-bottom:14px;">
             <div class="diorama-viewport">
-              <img src="/images/arcade/blitz_2_shelters.webp" alt="WWII Anderson Shelter, Morrison Cage, and Evacuation Platform Cutaway" class="diorama-img" />
+              <img src="/units/ks2_ww2/assets/morrison_shelter_indoor_1941.jpg" alt="1941 Ministry of Information cutaway illustration of an indoor steel-topped Morrison table shelter" class="diorama-img" />
               <div class="diorama-vignette"></div>
               <span class="diorama-hud-chip" style="left:8px;bottom:8px;border-color:#22c55e;">🏡 Anderson</span>
               <span class="diorama-hud-chip" style="left:38%;bottom:8px;border-color:#38bdf8;">🪑 Morrison</span>
@@ -676,7 +676,7 @@ export function mountBlitzWardenEnigma(stageEl, pools, ctx = {}) {
         <div class="bw-stage-grid">
           <div class="bw-stage-box" style="background:linear-gradient(135deg,#1e1b4b 0%,#0f172a 100%);border:2px solid ${enigmaDecoded ? '#10b981' : '#a855f7'};border-radius:16px;padding:14px;margin-bottom:14px;text-align:center;">
             <div class="diorama-viewport" style="margin-bottom:10px;">
-              <img src="/images/arcade/blitz_3_enigma.webp" alt="Hut 8 Bletchley Park Enigma & Bombe Machine" class="diorama-img" />
+              <img src="/units/ks2_ww2/assets/enigma_machine_bletchley.jpg" alt="Three-rotor German Enigma cipher machine in its wooden case at Bletchley Park" class="diorama-img" />
               <div class="diorama-vignette"></div>
               <div class="diorama-candle-glow"></div>
               <span class="diorama-hud-chip" style="left:10px;top:10px;border-color:#facc15;color:#fde047;">

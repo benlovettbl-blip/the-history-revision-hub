@@ -136,11 +136,11 @@ const VISUAL_SHOWCASES = [
     id: 'cme_courtyard',
     emoji: '🗝️',
     title: 'Courtyard of Two Keys: Two Families, One Land (1914–1995)',
-    subtitle: '12-Chapter Voiced Point-and-Click Graphic-Novel Adventure',
+    subtitle: '12-Chapter Voiced Dual-Perspective Archival Atlas',
     accent: '#d9a05b',
     featuredUnits: ['cme_new'],
-    badge: '12-CHAPTER VOICED POINT-AND-CLICK',
-    desc: 'Travel across 22 hand-inked Palestinian & Israeli scenes spanning three generations (1914–1995): hover to uncover hidden room clues, combine Satchel items across both perspectives, tune live 3-capital wireless broadcasts, and hear full character voice-overs over Oud & Violin chamber music!',
+    badge: '12-CHAPTER ARCHIVAL ATLAS',
+    desc: 'Explore 22 authentic archival plates across Palestinian and Israeli perspectives (1914–1995): inspect primary documents, compare perspectives across shifting borders, tune three-capital shortwave broadcasts, and hear full character testimonies.',
     mount: lazyShowcaseMount(() =>
       import('./arcade/games/cme_courtyard/index.js').then((m) => m.mountCmeCourtyard),
     ),
@@ -149,11 +149,11 @@ const VISUAL_SHOWCASES = [
     id: 'quacks',
     emoji: '🩺',
     title: 'Quacks & Cures: 800 Years on Call',
-    subtitle: '5-Era Illustrated Doctor & 1917 RAMC Triage',
+    subtitle: '5-Era Archival Clinical & 1917 RAMC Triage Simulation',
     accent: '#10b981',
     featuredUnits: ['edexcel_medicine', 'water_and_sanitation', 'great_war_part2'],
-    badge: 'ILLUSTRATED 5-ERA RPG',
-    desc: 'Start in a 1348 apothecary (0/3 saved, 100% Guild Distinction!), survive 1665 plague & Victorian carbolic spray, route Tommies along the 1917 RAMC Chain of Evacuation, and battle MRSA in the NHS!',
+    badge: '5-ERA ARCHIVAL SIMULATION',
+    desc: 'Consult inside a 1348 apothecary, investigate 1665 plague broadsides and Victorian carbolic surgery, route casualties along the 1917 RAMC Chain of Evacuation, and tackle antibiotic resistance in the NHS.',
     mount: lazyShowcaseMount(() =>
       import('./arcade/games/quacks_and_cures.js').then((m) => m.mountQuacksAndCures),
     ),
@@ -162,24 +162,24 @@ const VISUAL_SHOWCASES = [
     id: 'weimar_desk',
     emoji: '💼',
     title: 'Chancellor on the Brink (1919–33)',
-    subtitle: 'Interactive Weimar Chancellery & Bread Ticker',
+    subtitle: 'Weimar Chancellery Archival Crisis Simulation',
     accent: '#ef4444',
     featuredUnits: ['weimar_nazi_germany'],
-    badge: 'ILLUSTRATED MINISTERIAL SIMULATION',
-    desc: 'Watch a loaf of bread rocket to 200 billion Marks on your desk ticker, survive the Kapp & Munich Putsches, and resist spamming the red Article 48 stamp!',
+    badge: 'MINISTERIAL CRISIS SIMULATION',
+    desc: 'Track the 1923 hyperinflation bread crisis to 200 billion Marks, navigate the Kapp and Munich Putsches, and weigh constitutional coalitions against Article 48 emergency decrees.',
     mount: lazyShowcaseMount(() =>
       import('./arcade/games/weimar_crisis_desk.js').then((m) => m.mountWeimarCrisisDesk),
     ),
   },
   {
     id: 'domesday_stubitone',
-    emoji: '🏰',
-    title: 'The Secret of Stubitone™: The 1086 Domesday Audit',
-    subtitle: 'Voiced Point-and-Poke Adventure Across Fareham, Stubbington & The Solent',
+    emoji: '📜',
+    title: 'The 1086 Hampshire Domesday Survey: Stubitone & Fareham Lab',
+    subtitle: 'Voiced Archival Fieldwork Lab Across Fareham, Stubbington & The Solent',
     accent: '#f59e0b',
     featuredUnits: ['medieval_england'],
-    badge: 'VOICED 7-STAGE 1086 ADVENTURE',
-    desc: 'Rewind your own Solent coastline 940 years, catch Sweating Reeve Odo hiding Fareham’s 5 watermills, rule on King Edward’s Viking tax break, decode Stubbington’s real 1086 Latin parchment, and spot what Domesday missed!',
+    badge: '7-STAGE 1086 FIELDWORK LAB',
+    desc: 'Compare modern Solent towns against 1086 Domesday records, audit Fareham’s five watermills and enslaved ploughmen, test King Edward’s coastal Viking tax break, and decode Stubbington’s Folio 46v Latin entry.',
     mount: lazyShowcaseMount(() =>
       import('./interactive_labs/domesday_stubitone.js').then((m) => m.mountDomesdayStubitone),
     ),
@@ -188,11 +188,11 @@ const VISUAL_SHOWCASES = [
     id: 'ww2_homefront',
     emoji: '🚂',
     title: 'The Suitcase on Platform Four: Wartime Home Front (1939–1945)',
-    subtitle: 'Voiced KS2 Storybook Adventure Across Evacuation, Blitz, Rationing & Bletchley Park',
+    subtitle: 'Voiced KS2 Archival Fieldwork Lab Across Evacuation, Blitz, Rationing & Bletchley Park',
     accent: '#d97706',
     featuredUnits: ['ks2_ww2'],
-    badge: 'KS2 60 FPS STORYBOOK ADVENTURE',
-    desc: 'Pack a 1939 evacuee suitcase on Platform Four, trace Operation Pied Piper steam trains across the UK, welcome a Kindertransport friend from Prague, seal the Blitz blackout curtain, weigh 1941 rations, crack a Bletchley Park weather crib, and explore the Imperial War Museums archive!',
+    badge: 'KS2 IWM ARCHIVAL LAB',
+    desc: 'Pack an official 1939 evacuee suitcase, trace Operation Pied Piper rail routes across the UK, welcome a Kindertransport friend from Prague, inspect Blitz shelters and 1941 rations, and explore the Imperial War Museums archive.',
     mount: lazyShowcaseMount(() =>
       import('./interactive_labs/ww2_homefront.js').then((m) => m.mountWw2HomeFront),
     ),
@@ -498,7 +498,7 @@ export async function renderArcadeView(options = {}) {
           <div class="arcade-brand">
             <div class="arcade-brand-icon" style="${isGraphicNovelMode ? 'width:34px;height:34px;font-size:1rem;' : ''}"><i class="fa-solid ${isGraphicNovelMode ? 'fa-book-open' : 'fa-gamepad'}"></i></div>
             <div>
-              <h1 style="${isGraphicNovelMode ? 'font-size:1.05rem;' : ''}">${isGraphicNovelMode ? 'Interactive Graphic-Novel Atlas' : 'Revision Arcade'}</h1>
+              <h1 style="${isGraphicNovelMode ? 'font-size:1.05rem;' : ''}">${isGraphicNovelMode ? 'Dual-Perspective Archival Atlas' : 'Revision Arcade'}</h1>
               ${
                 isGraphicNovelMode
                   ? `<p style="font-size:0.74rem;">${pools.unitTitle} &bull; Pearson Edexcel GCSE Option P5 (1914–1995)</p>`
@@ -662,14 +662,14 @@ export async function renderArcadeView(options = {}) {
               </div>
               <div style="min-width:0;">
                 <span style="display:inline-block;background:rgba(250,204,21,0.18);border:1px solid #facc15;color:#fde047;font-size:0.7rem;font-weight:900;padding:2px 9px;border-radius:999px;letter-spacing:0.06em;">
-                  ⭐ FEATURED VISUAL ROLEPLAY • ${featuredShowcase.badge}
+                  ⭐ FEATURED ARCHIVAL FIELDWORK • ${featuredShowcase.badge}
                 </span>
                 <h3 style="margin:6px 0 4px 0;font-size:1.35rem;">${featuredShowcase.title}</h3>
                 <p style="max-width:740px;">${featuredShowcase.desc}</p>
               </div>
             </div>
             <button type="button" class="arcade-btn-primary" style="flex-shrink:0;">
-              <i class="fa-solid fa-play"></i> Play Visual Adventure
+              <i class="fa-solid fa-play"></i> Open Fieldwork Lab
             </button>
           </div>
         </div>
@@ -685,7 +685,7 @@ export async function renderArcadeView(options = {}) {
         ? `
         <div style="margin-top:24px;">
           <div style="font-size:0.78rem;font-weight:900;text-transform:uppercase;letter-spacing:0.06em;color:#fde047;margin-bottom:10px;">
-            🎬 Special Illustrated Roleplay Simulations
+            🏛️ Archival Fieldwork &amp; Roleplay Simulations
           </div>
           <div class="arcade-lobby-grid">
             ${otherShowcases
@@ -703,8 +703,8 @@ export async function renderArcadeView(options = {}) {
                       <p>${s.desc}</p>
                     </div>
                     <div class="arcade-card-foot">
-                      <span><i class="fa-solid fa-wand-magic-sparkles"></i> Inked Point-and-Click Diorama</span>
-                      <span class="arcade-play-cta">Play Adventure <i class="fa-solid fa-arrow-right"></i></span>
+                      <span><i class="fa-solid fa-landmark"></i> Authentic Primary-Source Plates</span>
+                      <span class="arcade-play-cta">Open Lab <i class="fa-solid fa-arrow-right"></i></span>
                     </div>
                   </div>
                 `;

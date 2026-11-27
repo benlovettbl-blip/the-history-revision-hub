@@ -7,46 +7,9 @@
  *  3. Multi-Turn Character Debates (Ch. 2 Eli, Ch. 5 Tariq, Ch. 8 Tariq) + Golden Idol Deduction Clozes
  */
 
-export function resolvePortraitAvatar(voiceRole, speaker = '', year = 1948) {
-  switch (voiceRole) {
-    case 'salma':
-      return '/images/arcade/cme/portraits/salma_1947.webp';
-    case 'eli':
-      return '/images/arcade/cme/portraits/eli_1947.webp';
-    case 'ibrahim':
-      if (year <= 1940) return '/images/arcade/cme/portraits/ibrahim_1922.webp';
-      if (year <= 1947) return '/images/arcade/cme/portraits/ibrahim_1947.webp';
-      if (year <= 1955) return '/images/arcade/cme/portraits/ibrahim_1949.webp';
-      return '/images/arcade/cme/portraits/ibrahim_1970.webp';
-    case 'karim_teen':
-      return '/images/arcade/cme/portraits/karim_1956.webp';
-    case 'karim':
-      if (year <= 1960) return '/images/arcade/cme/portraits/karim_1956.webp';
-      if (year <= 1972) return '/images/arcade/cme/portraits/karim_1967.webp';
-      return '/images/arcade/cme/portraits/karim_1978.webp';
-    case 'layla':
-      return '/images/arcade/cme/portraits/layla_1988.webp';
-    case 'tariq':
-      return '/images/arcade/cme/portraits/tariq_1970.webp';
-    case 'dov':
-      if (year <= 1948) return '/images/arcade/cme/portraits/dov_1936.webp';
-      return '/images/arcade/cme/portraits/dov_1956.webp';
-    case 'miriam':
-      if (year >= 1985) return '/images/arcade/cme/portraits/miriam_1995.webp';
-      return '/images/arcade/cme/portraits/miriam_1948.webp';
-    case 'noa':
-      return '/images/arcade/cme/portraits/noa_1967.webp';
-    case 'avi':
-      return '/images/arcade/cme/portraits/avi_1964.webp';
-    case 'yonatan':
-      return '/images/arcade/cme/portraits/yonatan_1995.webp';
-    default: {
-      const s = String(speaker).toLowerCase();
-      if (s.startsWith('salma')) return '/images/arcade/cme/portraits/salma_1947.webp';
-      if (s.includes('cousin eli')) return '/images/arcade/cme/portraits/eli_1947.webp';
-      return null;
-    }
-  }
+export function resolvePortraitAvatar(_voiceRole, _speaker = '', _year = 1948) {
+  // Composite archetype characters use wax-seal crests & monograms rather than AI portraits (AGENTS.md §6.2)
+  return null;
 }
 
 export const NON_SPOILER_OBJECTIVES = [
@@ -142,9 +105,11 @@ export const CHARACTER_DEBATES = {
   1: {
     targetId: 'cousin_eli_1947',
     opponentName: 'Cousin Eli (Irgun Militant)',
-    opponentPortrait: '/images/arcade/cme/portraits/eli_1947.webp',
+    opponentPortrait: null,
+    opponentMonogram: 'CE',
     heroName: 'Miriam Aloni',
-    heroPortrait: '/images/arcade/cme/portraits/miriam_1948.webp',
+    heroPortrait: null,
+    heroMonogram: 'MA',
     openingClaim:
       '“Polite speeches never opened Haifa’s gates, Miriam! Every Jewish fighter in Palestine stood behind our bombing of the King David Hotel—force is the only language Britain understands!”',
     turn1Prompt: 'How does Miriam challenge Eli’s claim that “every Zionist faction” backed the bombing?',
@@ -173,9 +138,11 @@ export const CHARACTER_DEBATES = {
   7: {
     targetId: 'tariq_table_1970',
     opponentName: 'Brother Tariq (Age 24, Defending Splinter Militants)',
-    opponentPortrait: '/images/arcade/cme/portraits/tariq_1970.webp',
+    opponentPortrait: null,
+    opponentMonogram: 'TH',
     heroName: 'Karim Haddad (Age 30)',
-    heroPortrait: '/images/arcade/cme/portraits/karim_1967.webp',
+    heroPortrait: null,
+    heroMonogram: 'KH',
     openingClaim:
       '“For twenty years the world forgot us in ration queues, Karim! Blowing up jets at Dawson’s Field and seizing athletes at Munich finally forced western leaders to respect us!”',
     turn1Prompt: 'Standing beside their dying father Ibrahim, how does Karim answer Tariq?',

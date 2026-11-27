@@ -34,9 +34,9 @@ export const KT1_EPISODES = [
       haddad: {
         tabLabel: '🌿 Jaffa Courtyard (Haddad, 1922–39)',
         placeCaption: 'Ibrahim Haddad’s Citrus Study, Jaffa (1922–1939)',
-        sceneImg: '/images/arcade/cme/ep0_jaffa_1922.webp',
+        sceneImg: '/images/jerusalem_mandate_panorama_1920.jpg',
         echoScene: {
-          img: '/images/arcade/cme/ep6_doorway_1967.webp',
+          img: '/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg',
           label: '1967 Memory Echo',
           caption:
             'Forty-five years later, Ibrahim’s grown son Karim will knock on that exact wooden courtyard door after the Six-Day War.',
@@ -124,7 +124,7 @@ export const KT1_EPISODES = [
       aloni: {
         tabLabel: '✡️ Haifa Port (Aloni, 1933–39)',
         placeCaption: 'Haifa Harbour Quayside & British Customs Table (1936–1939)',
-        sceneImg: '/images/arcade/cme/ep0_aloni_haifa_1936.webp',
+        sceneImg: '/units/cme_new/assets/jewish_immigrants_haifa_1949.jpg',
         introVoiceId: 'ep0_intro_aloni',
         introVoiceRole: 'dov',
         introSpeaker: 'Dov Aloni (Arriving at Haifa from Kraków with Sister Rivka, 1936)',
@@ -293,7 +293,7 @@ export const KT1_EPISODES = [
       haddad: {
         tabLabel: '🌿 Jaffa Veranda (Haddad, Nov 1947)',
         placeCaption: 'Ibrahim & Salma’s Twilight Veranda Overlooking Jaffa Port (29 Nov 1947)',
-        sceneImg: '/images/arcade/cme/ep1_haddad_jaffa_1947.webp',
+        sceneImg: '/images/cme_new/kt1/cme_l1_b4_unscop_jerusalem_1947.jpg',
         introVoiceId: 'ep1_intro_haddad',
         introVoiceRole: 'ibrahim',
         introSpeaker: 'Ibrahim Haddad (listening to the UN vote in Jaffa, 29 Nov 1947)',
@@ -362,7 +362,7 @@ export const KT1_EPISODES = [
       aloni: {
         tabLabel: '✡️ Haifa Port Room (Aloni, 1946–47)',
         placeCaption: 'Haifa Dockside Shelter Overlooking Refugee Ship (1946–Nov 1947)',
-        sceneImg: '/images/arcade/cme/ep1_haifa_1947.webp',
+        sceneImg: '/units/cme_new/assets/exodus_ship.jpg',
         introVoiceId: 'ep1_intro_aloni',
         introVoiceRole: 'miriam',
         introSpeaker: 'Miriam Aloni (reunited after surviving Holocaust DP camps)',
@@ -530,7 +530,7 @@ export const KT1_EPISODES = [
       haddad: {
         tabLabel: '🌿 Jericho Tent (Haddad, 1949)',
         placeCaption: 'Ibrahim, Salma & 7-Year-Old Karim in a Rain-Swept Jericho UNRWA Tent (1949)',
-        sceneImg: '/images/arcade/cme/ep2_haddad_jericho_1949.webp',
+        sceneImg: '/images/nakba_unrwa_khan_younis_1948.jpg',
         introVoiceId: 'ep2_intro_haddad',
         introVoiceRole: 'ibrahim',
         introSpeaker: 'Ibrahim Haddad (Jericho Refugee Camp, Winter 1949)',
@@ -598,9 +598,9 @@ export const KT1_EPISODES = [
       aloni: {
         tabLabel: '✡️ Jaffa Courtyard (Aloni, Late 1948)',
         placeCaption: 'Miriam & Newborn Baby Noa Inside the Vacated Jaffa Courtyard (Late 1948)',
-        sceneImg: '/images/arcade/cme/ep2_courtyard_1948.webp',
+        sceneImg: '/images/cme_plate_beit_lid_maabara_1950.jpg',
         echoScene: {
-          img: '/images/arcade/cme/ep0_jaffa_1922.webp',
+          img: '/images/jerusalem_mandate_panorama_1920.jpg',
           label: 'Pre-1948 Echo',
           caption:
             'Ghosting across the same flagstones: Ibrahim Haddad standing beside this very desk before April 1948 swept his family across the hills to Jericho.',
@@ -740,7 +740,7 @@ export const KT1_EPISODES = [
       haddad: {
         tabLabel: '🌿 Jericho Schoolroom (Karim, Oct 1956)',
         placeCaption: '14-Year-Old Karim Haddad’s Jericho UNRWA Schoolroom (Autumn 1956)',
-        sceneImg: '/images/arcade/cme/ep3_haddad_classroom_1956.webp',
+        sceneImg: '/images/cme_new/kt1/cme_l3_banner_suez_canal_transit.jpg',
         introVoiceId: 'ep3_intro_haddad',
         introVoiceRole: 'karim_teen',
         introSpeaker: 'Young Karim Haddad (age 14, listening through his Jericho classroom window)',
@@ -809,7 +809,7 @@ export const KT1_EPISODES = [
       aloni: {
         tabLabel: '✡️ Sinai Radio Hut (Dov & Noa, Nov 1956)',
         placeCaption: 'Dov Aloni’s Negev/Sinai Communications Post (November 1956)',
-        sceneImg: '/images/arcade/cme/ep3_sinai_radio_1956.webp',
+        sceneImg: '/images/upgraded/gcse-cw-cme/cme_l3_sinai_campaign_trenches_1956.jpg',
         introVoiceId: 'ep3_intro_aloni',
         introVoiceRole: 'dov',
         introSpeaker: 'Dov Aloni (Signal Technician, Negev Border)',

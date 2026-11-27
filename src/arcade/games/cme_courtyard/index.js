@@ -993,9 +993,13 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
             <button type="button" class="cme-ct-tool-btn" id="ct-close-modal-btn">✕ Step Back</button>
           </div>
 
-          <!-- Opponent Claim Bubble with Portrait -->
+          <!-- Opponent Claim Bubble with Monogram Crest -->
           <div style="display:flex;align-items:center;gap:14px;background:#261b17;border:1.5px solid #9a3412;border-radius:10px;padding:12px 14px;margin-bottom:12px;">
-            <img src="${getAssetUrl(db.opponentPortrait)}" alt="${escapeHtml(db.opponentName)}" class="cme-ct-dlg-portrait" style="border-color:#f97316;" />
+            ${
+              db.opponentPortrait
+                ? `<img src="${getAssetUrl(db.opponentPortrait)}" alt="${escapeHtml(db.opponentName)}" class="cme-ct-dlg-portrait" style="border-color:#f97316;" />`
+                : `<div class="cme-ct-dlg-crest" style="border-color:#f97316;color:#fdba74;font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:1rem;">${escapeHtml(db.opponentMonogram || '⚔')}</div>`
+            }
             <div>
               <div style="font-size:0.72rem;font-weight:900;text-transform:uppercase;color:#fdba74;margin-bottom:3px;">${escapeHtml(db.opponentName)}</div>
               <div style="font-family:Georgia,serif;font-size:0.9rem;line-height:1.45;color:#fff7ed;">
@@ -1008,7 +1012,11 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
             !debateTurn1Solved
               ? `
               <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
-                <img src="${getAssetUrl(db.heroPortrait)}" alt="${escapeHtml(db.heroName)}" class="cme-ct-dlg-portrait" style="width:44px;height:44px;border-color:#6ee7b7;" />
+                ${
+                  db.heroPortrait
+                    ? `<img src="${getAssetUrl(db.heroPortrait)}" alt="${escapeHtml(db.heroName)}" class="cme-ct-dlg-portrait" style="width:44px;height:44px;border-color:#6ee7b7;" />`
+                    : `<div class="cme-ct-dlg-crest" style="width:44px;height:44px;border-color:#6ee7b7;color:#6ee7b7;font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:0.9rem;">${escapeHtml(db.heroMonogram || '★')}</div>`
+                }
                 <span style="font-size:0.82rem;font-weight:800;color:#fde68a;">${escapeHtml(db.turn1Prompt)}</span>
               </div>
               <div style="display:flex;flex-direction:column;gap:7px;">
@@ -1702,22 +1710,22 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
     const eras = [
       {
         year: '1922–1939 · Generation I',
-        img: '/images/arcade/cme/ep0_jaffa_1922.webp',
+        img: '/images/jerusalem_mandate_panorama_1920.jpg',
         caption: 'Ibrahim Haddad tends his Jaffa pomegranate courtyard while Dov & Miriam seek refuge at Haifa.',
       },
       {
         year: '1948–1951 · Al-Nakba & Refuge',
-        img: '/images/arcade/cme/ep2_courtyard_1948.webp',
+        img: '/images/cme_plate_beit_lid_maabara_1950.jpg',
         caption: 'Miriam hides toddler Karim’s photo behind the well stone as Ibrahim clutches his iron key in Jericho.',
       },
       {
         year: 'July 1967 · Generation II Meets',
-        img: '/images/arcade/cme/ep6_doorway_1967.webp',
+        img: '/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg',
         caption: 'Nineteen winters later, Noa opens the oak door and places Karim’s childhood portrait back into his hands.',
       },
       {
         year: '4 Nov 1995 · Generation III in Rain',
-        img: '/images/arcade/cme/ep11_courtyard_1995.webp',
+        img: '/images/cme_plate_rabin_memorial_candles_1995.jpg',
         caption: 'After Rabin’s murder, Layla, Yonatan, and Savta Miriam unite both keys beside one candle.',
       },
     ];
@@ -1923,12 +1931,12 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
             `
           }
 
-          <!-- ZONE 2: Living 16:9 Graphic-Novel Canvas + 2.5D Mouse Parallax -->
+          <!-- ZONE 2: Archival Documentary Plate Canvas + Subtle Camera Parallax -->
           <div class="cme-ct-viewport ${showCoverScreen ? 'is-cover-viewport' : ''} ${intertitleData ? 'has-intertitle' : ''} ${heldObj ? 'has-equipped-item' : ''} ${isHinting ? 'is-hinting' : ''}" id="ct-viewport-box" style="${showCoverScreen ? 'border-radius:10px;' : ''}">
             <div class="cme-ct-cam-rig ${escapeHtml(!showCoverScreen && sc.cameraClass ? sc.cameraClass : '')}" id="ct-cam-rig">
               <img
-                src="${getAssetUrl(showCoverScreen ? '/images/arcade/cme/cover_two_keys_poster.webp' : sc.sceneImg)}"
-                alt="${escapeHtml(showCoverScreen ? 'Courtyard of Two Keys Front Cover' : sc.placeCaption)}"
+                src="${getAssetUrl(showCoverScreen ? '/images/cme_new/kt1/cme_l0_banner_damascus_gate_jerusalem.jpg' : sc.sceneImg)}"
+                alt="${escapeHtml(showCoverScreen ? 'Damascus Gate, Jerusalem — Courtyard of Two Keys Archival Cover' : sc.placeCaption)}"
                 class="cme-ct-scene-img"
               />
 
@@ -1996,12 +2004,12 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
             ${
               showCoverScreen
                 ? `
-                <!-- Bespoke Illustrated Graphic-Novel Movie-Poster Cover Screen -->
+                <!-- Archival Documentary Cover Screen -->
                 <div class="cme-ct-cover-overlay cc-cover">
-                  <div class="cme-ct-cover-kicker">🗝️ Interactive Graphic-Novel Adventure · 1914–1995</div>
+                  <div class="cme-ct-cover-kicker">🗝️ Archival Documentary Roleplay · 1914–1995</div>
                   <h2 class="cme-ct-cover-title">Courtyard of Two Keys:<br/>Two Families, One Land</h2>
                   <p class="cme-ct-cover-blurb">
-                    Eighty years, three generations, and two keys to the same Jaffa stone doorway. Step inside 22 living Palestinian &amp; Israeli scenes—gather keepsakes across shifting borders, tune shortwave wireless dials, challenge extremism face-to-face, and piece together history from both sides.
+                    Eighty years, three generations, and two keys to the same Jaffa stone doorway. Explore 22 paired Palestinian &amp; Israeli archival scenes—gather keepsakes across shifting borders, tune shortwave wireless dials, challenge extremism face-to-face, and piece together history from both sides.
                   </p>
                   <div class="cc-cover-actions" style="display:flex;gap:9px;flex-wrap:wrap;align-items:center;max-width:100%;">
                     ${
@@ -2345,7 +2353,7 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
     if (fxCanvas && !activeModal) {
       courtyardLivingFx.attach(
         fxCanvas,
-        showCoverScreen ? '/images/arcade/cme/cover_two_keys_poster.webp' : sc.sceneImg,
+        showCoverScreen ? '/images/cme_new/kt1/cme_l0_banner_damascus_gate_jerusalem.jpg' : sc.sceneImg,
         camRigEl,
         viewportEl,
         !showCoverScreen && sc.cameraClass ? sc.cameraClass : '',
@@ -2370,7 +2378,7 @@ export function mountCmeCourtyard(stageEl, pools = {}, meta = {}) {
       }
 
       // Cast warm spotlight onto active speaker when talking!
-      if (!showCoverScreen && !intertitleData && activeDialogue?.portrait) {
+      if (!showCoverScreen && !intertitleData && (activeDialogue?.portrait || activeDialogue?.voiceRole)) {
         const spkHb =
           (activeDialogue.hotspotId &&
             (sc.hotspots || []).find((h) => h.id === activeDialogue.hotspotId)) ||

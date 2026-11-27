@@ -35,7 +35,7 @@ export const KT3_EPISODES = [
       aloni: {
         tabLabel: '✡️ Jaffa Apartment (Avi & Noa, 6 Oct 1973)',
         placeCaption: 'Reservist Avi Mizrahi Called From Yom Kippur Fast at 14:00 (6 Oct 1973)',
-        sceneImg: '/images/arcade/cme/ep8_october_1973.webp',
+        sceneImg: '/images/upgraded/gcse-cw-cme/cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg',
         introVoiceId: 'ep8_intro_aloni',
         introVoiceRole: 'avi',
         introSpeaker: 'Avi Mizrahi (age 27, Armoured Corps Reservist)',
@@ -100,7 +100,7 @@ export const KT3_EPISODES = [
       haddad: {
         tabLabel: '🌿 Amman Study (Karim & Baby Layla, 1973–74)',
         placeCaption: 'Karim’s Amman Study — Baby Layla’s Cradle & Jaffa Courtyard Painting (1973–74)',
-        sceneImg: '/images/arcade/cme/ep8_haddad_amman_1973.webp',
+        sceneImg: '/images/cme_opec_oil_embargo_pump_1973.jpg',
         introVoiceId: 'ep8_intro_haddad',
         introVoiceRole: 'karim',
         introSpeaker: 'Karim Haddad (age 31, proud new father of baby Layla)',
@@ -304,7 +304,7 @@ export const KT3_EPISODES = [
       aloni: {
         tabLabel: '✡️ Jerusalem Study (Aloni–Mizrahi, 1977–79)',
         placeCaption: 'Watching Sadat & Begin’s Historic Handshake Over Jerusalem (1977–1979)',
-        sceneImg: '/images/arcade/cme/ep9_jerusalem_1977.webp',
+        sceneImg: '/images/cme_new/kt3/cme_l9_cameo_carter_sadat_begin_camp_david_1978.jpg',
         introVoiceId: 'ep9_intro_aloni',
         introVoiceRole: 'avi',
         introSpeaker: 'Avi Mizrahi (age 31, Jerusalem)',
@@ -368,7 +368,7 @@ export const KT3_EPISODES = [
       haddad: {
         tabLabel: '🌿 West Bank Olive Hills (Karim & Layla, 1978)',
         placeCaption: 'Karim (36) & 5-Year-Old Layla Overlooking Hilltop Settlements Near Ramallah (1978)',
-        sceneImg: '/images/arcade/cme/ep9_haddad_westbank_1978.webp',
+        sceneImg: '/images/cme_plate_kfar_etzion_settlement_1967.jpg',
         introVoiceId: 'ep9_intro_haddad',
         introVoiceRole: 'karim',
         introSpeaker: 'Karim Haddad (age 36, walking with young daughter Layla)',
@@ -505,7 +505,7 @@ export const KT3_EPISODES = [
       aloni: {
         tabLabel: '✡️ Tel Aviv Plaza (Noa, Avi & Yonatan, 1982–88)',
         placeCaption: 'Noa, Avi & Young Yonatan at Tel Aviv’s 400,000 Peace Demonstration',
-        sceneImg: '/images/arcade/cme/ep10_aloni_telaviv_1982.webp',
+        sceneImg: '/images/cme_new/kt3/cme_l10_iconic_lebanon_sea_evacuation_1982.jpg',
         introVoiceId: 'ep10_intro_aloni',
         introVoiceRole: 'noa',
         introSpeaker: 'Noa Aloni-Mizrahi (marching with Avi and young son Yonatan in Tel Aviv)',
@@ -570,7 +570,7 @@ export const KT3_EPISODES = [
       haddad: {
         tabLabel: '🌿 Ramallah Window (Layla, 1987–88)',
         placeCaption: 'Layla Haddad Studying Beside a Shuttered Intifada Street in Ramallah (1988)',
-        sceneImg: '/images/arcade/cme/ep10_shuttered_street_1987.webp',
+        sceneImg: '/images/cme_new/kt3/cme_l10_b3_gaza_first_intifada_dec_1987.jpg',
         introVoiceId: 'ep10_intro_haddad',
         introVoiceRole: 'layla',
         introSpeaker: 'Layla Haddad (Ramallah Student, December 1988)',
@@ -735,10 +735,10 @@ export const KT3_EPISODES = [
       aloni: {
         tabLabel: '✡️ Yonatan & Savta Miriam (Jaffa Rain, 4 Nov 1995)',
         placeCaption: 'Jaffa Pomegranate Courtyard — Paramedic Yonatan (21) & Grandmother Miriam (76)',
-        sceneImg: '/images/arcade/cme/ep11_courtyard_1995.webp',
+        sceneImg: '/images/cme_plate_rabin_memorial_candles_1995.jpg',
         cameraClass: 'ct-cam-focus-right',
         echoScene: {
-          img: '/images/arcade/cme/ep6_doorway_1967.webp',
+          img: '/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg',
           label: '1967 Memory Echo',
           caption:
             'Twenty-eight years earlier at this exact table, Layla’s father Karim and Yonatan’s mother Noa shared mint tea across the 1967 divide.',
@@ -831,10 +831,10 @@ export const KT3_EPISODES = [
       haddad: {
         tabLabel: '🌿 Layla’s Focus (In Jaffa Courtyard, 4 Nov 1995)',
         placeCaption: 'Jaffa Courtyard — Medical Student Layla Haddad (22) Visiting From Ramallah',
-        sceneImg: '/images/arcade/cme/ep11_courtyard_1995.webp',
+        sceneImg: '/images/cme_plate_rabin_memorial_candles_1995.jpg',
         cameraClass: 'ct-cam-focus-center',
         echoScene: {
-          img: '/images/arcade/cme/ep0_jaffa_1922.webp',
+          img: '/images/jerusalem_mandate_panorama_1920.jpg',
           label: '1922 Memory Echo',
           caption:
             'Seventy-three years earlier beneath this exact pomegranate tree, Layla’s grandfather Ibrahim Haddad stood dreaming of peace in Jaffa.',

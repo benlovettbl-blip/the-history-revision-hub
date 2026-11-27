@@ -410,7 +410,7 @@ function renderWeimarDeskSVG(dossier, stability, article48Uses, answered) {
   const stabColor = stability >= 65 ? '#34d399' : stability >= 40 ? '#fbbf24' : '#f87171';
   return `
     <div class="diorama-viewport">
-      <img src="/images/arcade/weimar_desk.webp" alt="Weimar Chancellery Crisis Desk Berlin" class="diorama-img" />
+      <img src="/images/upgraded/gcse-p3/weimar_l02_b4_hyperinflation_berlin_bread_1923.jpg" alt="October 1923 Berliners thrusting bundles of paper Reichsmarks toward a baker’s wagon to buy rye bread" class="diorama-img" />
       <div class="diorama-vignette"></div>
       <div class="diorama-candle-glow"></div>
 

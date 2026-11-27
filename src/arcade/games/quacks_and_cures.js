@@ -518,49 +518,48 @@ const SHIFTS = [
 
 const ERA_DIORAMAS = {
   medieval: {
-    img: '/images/arcade/quacks_1_medieval.webp',
+    img: '/images/theriac_compounding_apothecary.jpg',
     fxClass: 'diorama-candle-glow',
     hotspots: [
-      { x: 24, y: 74, label: '🧪 Matula Flask', quip: 'Uroscopy Check: Glowing amber-red! Galen says excess hot blood—fetch the pewter bleeding bowl (and try not to taste it unless the Guild Master is looking)!' },
-      { x: 36, y: 69, label: '🪱 Leech Jar', quip: 'Fresh river leeches! Guaranteed to drain "corrupt humours" and 40% of your patient’s remaining willpower.' },
-      { x: 71, y: 83, label: '♈ Zodiac Scroll', quip: 'Rule #1 of 1348 Surgery: NEVER bleed a body part while the Moon stands in its ruling constellation!' },
-      { x: 85, y: 47, label: '🐔 Plague Chicken', quip: 'The chicken glares sideways at you. Somehow it already knows what medieval doctors strap to buboes.' },
+      { x: 26, y: 65, label: '🧪 Humoral Consultation', quip: 'Uroscopy & Four Humours: Galen taught that illness came from imbalanced blood, phlegm, yellow bile, or black bile—checked by urine chart and star signs!' },
+      { x: 48, y: 46, label: '🏺 Theriac Shelf Jars', quip: 'Master Apothecary’s Theriac: Up to 60 exotic spices,viper flesh, and herbs compounded into pricey "cure-all" electuaries for wealthy guild patrons.' },
+      { x: 73, y: 60, label: '🌿 Mortar & Herbs', quip: 'Apprentice grinding sage, rue, and mint—affordable herbal simples mixed alongside prayers, charms, and seasonal bloodletting!' },
     ],
   },
   renaissance: {
-    img: '/images/arcade/quacks_2_renaissance.webp',
+    img: '/images/med_banner_kt2_5_great_plague_1665.jpg',
     fxClass: 'diorama-candle-glow',
     hotspots: [
-      { x: 23, y: 77, label: '🎭 Beaked Mask', quip: '1665 Plague Mask: Stuffed with dried lavender and theriac spices to block "Miasma"—completely useless against rat fleas, 10/10 for terrifying the neighbours!' },
-      { x: 51, y: 29, label: '🦴 Vesalius Chart', quip: 'De Humani Corporis Fabrica (1543): One human jawbone, solid heart septum—Galen was dissecting monkeys all along!' },
-      { x: 67, y: 69, label: '🌿 Cinchona Bark', quip: 'Peruvian "Jesuits’ Bark" (Quinine): Championed by Thomas Sydenham—wait a minute, a Renaissance remedy that ACTUALLY cures malaria?!' },
+      { x: 18, y: 22, label: '🛏️ 1665 Sickroom', quip: 'Great Plague Sickroom: Dried lavender, pomanders, and smoking pitch burned to ward off "Miasma"—utterly powerless against rat fleas!' },
+      { x: 50, y: 52, label: '⚰️ Watchmen & Dead-Carts', quip: '1665 Mayoral Orders: Infected houses nailed shut with a red cross ("Lord have mercy upon us") while dead-carts rolled out by torchlight.' },
+      { x: 82, y: 22, label: '⛵ Flight & New Science', quip: 'While courtiers fled down the Thames, Vesalius (1543), Harvey (1628), and Sydenham (1676) quietly overturned 1,400 years of blind faith in Galen!' },
     ],
   },
   industrial: {
-    img: '/images/arcade/quacks_3_industrial.webp',
+    img: '/images/lister_carbolic_spray.jpg',
     fxClass: 'diorama-mist-glow',
     hotspots: [
-      { x: 14, y: 60, label: '🔧 Broad St Pump', quip: 'John Snow’s 1854 Trophy: Removing this Soho pump handle stopped cholera cold—even before Pasteur’s 1861 Germ Theory!' },
-      { x: 35, y: 80, label: '💉 Cowpox Lancets', quip: 'Edward Jenner’s 1796 Smallpox Vaccination kit—compulsory across Britain from 1852!' },
-      { x: 68, y: 72, label: '💨 Carbolic Spray', quip: 'Joseph Lister’s 1865 Carbolic Acid Steam Sprayer: Smells like Carlisle sewage works, cracks your knuckles yellow, and slashes surgical sepsis from 46% to 15%!' },
+      { x: 28, y: 52, label: '💨 Carbolic Steam Spray', quip: 'Joseph Lister’s 1865 Carbolic Acid Steam Sprayer: Smells like Carlisle sewage works, cracks your knuckles yellow, and slashes surgical sepsis from 46% to 15%!' },
+      { x: 48, y: 44, label: '🛌 Anaesthesia & Antisepsis', quip: 'Simpson’s 1847 Chloroform ended agonising awake surgery—and Lister’s carbolic mist finally conquered post-operative ward gangrene!' },
+      { x: 80, y: 54, label: '🧴 Sterile Instrument Tray', quip: 'Scalpels and catgut ligatures soaked in carbolic acid—paving the way to 1890s aseptic steam sterilisation, rubber gloves, and surgical masks!' },
     ],
   },
   ramc: {
-    img: '/images/arcade/quacks_4_ramc.webp',
+    img: '/images/edexcel_medicine/kt5/med_kt5_l55_banner_ccs_operating_theatre_l0030464.jpg',
     fxClass: 'diorama-candle-glow',
     hotspots: [
-      { x: 15, y: 71, label: '🧊 Citrated Blood & Tubes', quip: '1917 Cambrai Blood Depot: Sodium citrate stops clotting on ice for 26 days, alongside Carrel-Dakin sterilised salt tubes to fight Flanders gas gangrene!' },
-      { x: 70, y: 45, label: '🚑 FANY Ambulance', quip: 'First Aid Nursing Yeomanry (FANY) volunteer drivers braving shell-pocked Ypres roads to rush casualties from the ADS to the CCS!' },
-      { x: 80, y: 81, label: '🦿 Thomas Splint', quip: 'Sir Robert Jones’s game-changer (Dec 1915): Pulls shattered femurs straight in traction—raising survival from 20% to a staggering 82%!' },
+      { x: 38, y: 56, label: '🩺 CCS Operating Hut', quip: 'Casualty Clearing Station (CCS): Positioned near railheads outside artillery range so mobile X-rays and urgent surgery stopped gas gangrene in time!' },
+      { x: 64, y: 74, label: '🧊 Citrated Blood & Splint', quip: '1917 Cambrai Blood Depot & Thomas Splint: Sodium citrate stored blood on ice for 26 days, while traction splints lifted femur survival from 20% to 82%!' },
+      { x: 90, y: 56, label: '🧪 Carrel-Dakin Solution', quip: 'Sterilised salt solution pumped through perforated tubes deep into shrapnel wounds where surface antiseptics could not reach!' },
     ],
   },
   modern: {
-    img: '/images/arcade/quacks_5_modern.webp',
+    img: '/images/bevan_first_day_nhs_1948.jpg',
     fxClass: '',
     hotspots: [
-      { x: 16, y: 82, label: '💊 Mass Penicillin', quip: 'Spotted by Fleming (1928), purified by Florey & Chain in Oxford (1940), and mass-produced by US/UK wartime factories—the first true antibiotic!' },
-      { x: 27, y: 38, label: '🔬 CT Scanner', quip: '3D cross-sectional X-ray imaging—diagnosing deep lung tumours without a single scalpel cut!' },
-      { x: 72, y: 73, label: '💚 NHS Monitor', quip: '5 July 1948: Aneurin Bevan’s National Health Service—universal care free at the point of delivery (just don’t hand antibiotics to that sneezing viral cold patient!).' },
+      { x: 16, y: 66, label: '🏥 First NHS Patient', quip: '5 July 1948 at Park Hospital, Manchester: 13-year-old Sylvia receives universal hospital care free at the point of delivery!' },
+      { x: 34, y: 44, label: '💚 Aneurin Bevan', quip: 'Health Minister Aneurin Bevan united 2,688 voluntary and municipal hospitals into one National Health Service funded through national taxation.' },
+      { x: 74, y: 52, label: '💊 Antibiotics & Stewardship', quip: 'From Florey & Chain’s mass-produced wartime penicillin to modern DNA screening, CT/MRI imaging, and strict MRSA antibiotic stewardship!' },
     ],
   },
 };

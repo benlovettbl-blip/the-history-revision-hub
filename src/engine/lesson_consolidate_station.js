@@ -12,6 +12,7 @@ import { getArenaStandoffPair } from './arena_standoff_registry.js';
 import { getArenaCornersData } from './arena_corners_registry.js';
 import { generateQuestionId, recordQuestionResult } from '../storage.js';
 import { isStaffModeActive } from '../data/unit_resources_catalog.js';
+import { renderConsolidateLabPillHTML } from '../interactive_labs/lab_registry.js';
 
 window.consolidateStations = window.consolidateStations || {};
 
@@ -238,6 +239,7 @@ export function renderConsolidateStationHTML(lesson) {
   const currentIdx = lessonIndex >= 0 ? lessonIndex : 0;
   const unitId =
     (activeUnit && activeUnit.id) ||
+    appStore?.state?.selectedUnitId ||
     (typeof window !== 'undefined' && window.currentUnitId) ||
     '';
 
@@ -305,11 +307,13 @@ export function renderConsolidateStationHTML(lesson) {
               : ''
           }
 
+          ${renderConsolidateLabPillHTML(unitId, lesson.id)}
+
           ${
             unitId === 'cme_new'
               ? `
-            <button type="button" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIdx}, 'cme_courtyard')" style="padding: 7px 12px; border-radius: 8px; border: 1.5px solid #d9a05b; background: linear-gradient(135deg, rgba(184, 115, 46, 0.28) 0%, rgba(143, 83, 25, 0.28) 100%); color: #fef3c7; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;" title="Step directly into Episode ${currentIdx + 1} of Courtyard of Two Keys (Graphic-Novel Living Atlas)">
-              <span>🗝️</span> Graphic Novel (Ep ${currentIdx + 1})
+            <button type="button" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIdx}, 'cme_courtyard')" style="padding: 7px 12px; border-radius: 8px; border: 1.5px solid #d9a05b; background: linear-gradient(135deg, rgba(184, 115, 46, 0.28) 0%, rgba(143, 83, 25, 0.28) 100%); color: #fef3c7; font-size: 0.8rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;" title="Open Chapter ${currentIdx + 1} of Courtyard of Two Keys (Dual-Perspective Archival Atlas)">
+              <span>🗝️</span> Archival Atlas (Ch. ${currentIdx + 1})
             </button>
           `
               : ''
@@ -427,6 +431,7 @@ export function initConsolidateStation(lesson) {
   const currentIdx = lessonIndex >= 0 ? lessonIndex : 0;
   const unitId =
     (activeUnit && activeUnit.id) ||
+    appStore?.state?.selectedUnitId ||
     (typeof window !== 'undefined' && window.currentUnitId) ||
     '';
   const isKs2 =

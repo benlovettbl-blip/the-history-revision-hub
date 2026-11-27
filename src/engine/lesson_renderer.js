@@ -43,10 +43,6 @@ import {
   renderFurtherReadingShelfHTML,
   runPendingQuestionDeepLink,
 } from './share_utils.js';
-import {
-  getInlineLessonLabHTML,
-  renderTopBarLabLauncherHTML,
-} from '../interactive_labs/lab_registry.js';
 import { openUnifiedTeacherGuidance } from './teacher_guidance_modal.js';
 if (typeof window !== 'undefined' && !window.openUnifiedTeacherGuidance) {
   window.openUnifiedTeacherGuidance = openUnifiedTeacherGuidance;
@@ -792,7 +788,6 @@ export function renderLesson(lesson) {
         ? `<button class="btn btn-note-scaffold-jump" onclick="const sc = document.getElementById('lesson-note-scaffold'); if(sc) { sc.open = true; sc.scrollIntoView({ behavior: 'smooth' }); }" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump directly to the Active Lesson Task"><i class="fa-solid fa-pen-to-square" style="color: #16a34a;"></i> Core Lesson Task</button>`
         : ''
       }
-              ${renderTopBarLabLauncherHTML(unitId, lesson.id)}
               <button type="button" class="btn btn-lesson-arcade-launcher" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIndex}, 'lobby')" style="padding: 6px 12px; font-size: 0.86rem; background: #0f172a; color: #38bdf8; border: 1.5px solid #334155; font-weight: 700; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Launch the 7-Game Revision Arcade for this lesson"><i class="fa-solid fa-gamepad" style="color: #38bdf8;"></i> <span>Arcade</span></button>
               <button type="button" class="btn teacher-only-plenary-btn" onclick="window.openTeacherPlenaryProjector && window.openTeacherPlenaryProjector('${lesson.id}')" style="display: ${isStaffModeActive() ? 'inline-flex' : 'none'}; padding: 6px 12px; font-size: 0.86rem; background: #ea580c; color: #ffffff; border: 1.5px solid #f97316; font-weight: 800; border-radius: 6px; align-items: center; gap: 6px; cursor: pointer;" title="Open Full-Screen Smartboard Plenary Projector (Hot Seat Taboo, 60s Standoff, Four Corners)"><i class="fa-solid fa-tv"></i> <span>Plenary Projector</span></button>
 
@@ -5767,11 +5762,6 @@ export function renderLesson(lesson) {
       }
 
       htmlNarrative += extrasHtml;
-
-      const inlineLabHtml = getInlineLessonLabHTML(resolvedStudioUnit, resolvedStudioLesson, index);
-      if (inlineLabHtml) {
-        htmlNarrative += inlineLabHtml;
-      }
 
       // REC-002: Act-Level Anchoring of Key Figures
       if (lesson.key_individual && !renderedKeyIndividual) {

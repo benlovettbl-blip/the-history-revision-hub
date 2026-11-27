@@ -334,7 +334,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 82% 48%;
+  object-position: center 42%;
   display: block;
 }
 .ww2-veday-banner-overlay {
@@ -556,7 +556,8 @@
 .ww2-diorama-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #090d16;
   display: block;
   transition: transform 0.25s ease-out;
 }

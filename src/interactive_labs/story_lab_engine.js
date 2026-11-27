@@ -161,7 +161,7 @@ export function createStageAssetPreloader(stageMap) {
       urls.forEach((url) => {
         if (preloaded.has(url)) return;
         preloaded.add(url);
-        if (url.endsWith('.webp') || url.endsWith('.jpg') || url.endsWith('.png')) {
+        if (/\.(webp|jpe?g|png)$/i.test(url)) {
           const img = new Image();
           img.decoding = 'async';
           img.src = url;

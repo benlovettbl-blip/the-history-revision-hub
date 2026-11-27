@@ -256,41 +256,9 @@ class CourtyardFoley {
 
 export const courtyardFoley = new CourtyardFoley();
 
-export function resolveTreeNodePortrait(person, year = 1995) {
-  if (!person) return null;
-  switch (person.id) {
-    case 'ibrahim':
-      if (year <= 1940) return '/images/arcade/cme/portraits/ibrahim_1922.webp';
-      if (year <= 1947) return '/images/arcade/cme/portraits/ibrahim_1947.webp';
-      if (year <= 1955) return '/images/arcade/cme/portraits/ibrahim_1949.webp';
-      return '/images/arcade/cme/portraits/ibrahim_1970.webp';
-    case 'salma':
-      return '/images/arcade/cme/portraits/salma_1947.webp';
-    case 'karim':
-      if (year <= 1960) return '/images/arcade/cme/portraits/karim_1956.webp';
-      if (year <= 1972) return '/images/arcade/cme/portraits/karim_1967.webp';
-      return '/images/arcade/cme/portraits/karim_1978.webp';
-    case 'tariq':
-      return '/images/arcade/cme/portraits/tariq_1970.webp';
-    case 'layla':
-      return '/images/arcade/cme/portraits/layla_1988.webp';
-    case 'dov':
-      if (year <= 1948) return '/images/arcade/cme/portraits/dov_1936.webp';
-      return '/images/arcade/cme/portraits/dov_1956.webp';
-    case 'miriam':
-      if (year >= 1985) return '/images/arcade/cme/portraits/miriam_1995.webp';
-      return '/images/arcade/cme/portraits/miriam_1948.webp';
-    case 'eli':
-      return '/images/arcade/cme/portraits/eli_1947.webp';
-    case 'noa':
-      return '/images/arcade/cme/portraits/noa_1967.webp';
-    case 'avi':
-      return '/images/arcade/cme/portraits/avi_1964.webp';
-    case 'yonatan':
-      return '/images/arcade/cme/portraits/yonatan_1995.webp';
-    default:
-      return null;
-  }
+export function resolveTreeNodePortrait(_person, _year = 1995) {
+  // Composite archetype characters render crisp wax-seal monograms (AGENTS.md §6.2)
+  return null;
 }
 
 export const FAMILY_TREE_GENERATIONS = [
@@ -301,6 +269,7 @@ export const FAMILY_TREE_GENERATIONS = [
         id: 'ibrahim',
         name: 'Ibrahim Haddad',
         shortName: 'Ibrahim',
+        monogram: 'IH',
         relationTag: 'Patriarch · Married Salma',
         lifespan: 'b. 1897 (Jaffa) – d. 1972 (Amman)',
         birthYear: 1897,
@@ -312,6 +281,7 @@ export const FAMILY_TREE_GENERATIONS = [
         id: 'salma',
         name: 'Salma Haddad',
         shortName: 'Salma',
+        monogram: 'SH',
         relationTag: 'Matriarch · Married Ibrahim',
         lifespan: 'b. 1903 (Jaffa) – d. 1976 (Amman)',
         birthYear: 1903,
@@ -325,6 +295,7 @@ export const FAMILY_TREE_GENERATIONS = [
         id: 'dov',
         name: 'Dov Aloni',
         shortName: 'Dov',
+        monogram: 'DA',
         relationTag: 'Patriarch · Married Miriam',
         lifespan: 'b. 1916 (Kraków) – d. 1989 (Tel Aviv)',
         birthYear: 1916,
@@ -336,6 +307,7 @@ export const FAMILY_TREE_GENERATIONS = [
         id: 'miriam',
         name: 'Miriam Aloni (née Kowalska)',
         shortName: 'Miriam',
+        monogram: 'MA',
         relationTag: 'Matriarch · Married Dov',
         lifespan: 'b. 1919 (Kraków)',
         birthYear: 1919,
@@ -365,6 +337,7 @@ export const FAMILY_TREE_GENERATIONS = [
         id: 'karim',
         name: 'Karim Haddad',
         shortName: 'Karim',
+        monogram: 'KH',
         relationTag: 'Eldest Son of Ibrahim & Salma',
         lifespan: 'b. 1942 (Jaffa)',
         birthYear: 1942,
@@ -376,6 +349,7 @@ export const FAMILY_TREE_GENERATIONS = [
         id: 'tariq',
         name: 'Tariq Haddad',
         shortName: 'Tariq',
+        monogram: 'TH',
         relationTag: 'Younger Son of Ibrahim & Salma',
         lifespan: 'b. 1948 (Road to Jericho)',
         birthYear: 1948,
@@ -390,6 +364,7 @@ export const FAMILY_TREE_GENERATIONS = [
         id: 'noa',
         name: 'Noa Aloni-Mizrahi',
         shortName: 'Noa',
+        monogram: 'NA',
         relationTag: 'Daughter of Dov & Miriam · Married Avi',
         lifespan: 'b. May 1948 (Jaffa)',
         birthYear: 1948,
@@ -401,6 +376,7 @@ export const FAMILY_TREE_GENERATIONS = [
         id: 'avi',
         name: 'Avi Mizrahi',
         shortName: 'Avi',
+        monogram: 'AM',
         relationTag: 'Married Noa · Iraqi-Jewish Son',
         lifespan: 'b. 1946 (Baghdad, Iraq)',
         birthYear: 1946,
@@ -417,6 +393,7 @@ export const FAMILY_TREE_GENERATIONS = [
         id: 'layla',
         name: 'Layla Haddad',
         shortName: 'Layla',
+        monogram: 'LH',
         relationTag: 'Daughter of Karim · Granddaughter of Ibrahim',
         lifespan: 'b. late 1973 (Amman / Ramallah)',
         birthYear: 1973,
@@ -443,6 +420,7 @@ export const FAMILY_TREE_GENERATIONS = [
         id: 'yonatan',
         name: 'Yonatan (“Yoni”) Aloni-Mizrahi',
         shortName: 'Yonatan',
+        monogram: 'YM',
         relationTag: 'Son of Noa & Avi · Grandson of Miriam',
         lifespan: 'b. 1974 (Tel Aviv)',
         birthYear: 1974,

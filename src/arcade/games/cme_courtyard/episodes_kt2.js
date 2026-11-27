@@ -34,7 +34,7 @@ export const KT2_EPISODES = [
       aloni: {
         tabLabel: '✡️ Galilee Veranda (Noa & Avi, Apr 1967)',
         placeCaption: 'Noa Aloni & Avi Mizrahi Overlooking the Sea of Galilee (Spring 1967)',
-        sceneImg: '/images/arcade/cme/ep4_galilee_water_1964.webp',
+        sceneImg: '/images/cme_new/kt2/cme_l4_banner_galilee_golan_gamla.jpg',
         introVoiceId: 'ep4_intro_aloni',
         introVoiceRole: 'avi',
         introSpeaker: 'Avi Mizrahi (born Baghdad 1946, Water Engineer)',
@@ -102,7 +102,7 @@ export const KT2_EPISODES = [
       haddad: {
         tabLabel: '🌿 Jericho Veranda (Haddad, 1966–67)',
         placeCaption: 'Father Ibrahim (69), Karim (24) & Brother Tariq (18) in Jordanian-Ruled Jericho',
-        sceneImg: '/images/arcade/cme/ep4_haddad_amman_1966.webp',
+        sceneImg: '/images/upgraded/gcse-cw-cme/cme_l4_srca_ahmad_shukeiri_1965.jpg',
         introVoiceId: 'ep4_intro_haddad',
         introVoiceRole: 'karim',
         introSpeaker: 'Karim Haddad (age 24, UNRWA Schoolteacher in Jericho)',
@@ -239,7 +239,7 @@ export const KT2_EPISODES = [
       aloni: {
         tabLabel: '✡️ Command Shelter (Noa, 5–10 June 1967)',
         placeCaption: 'Noa Aloni at a Sandbagged Signal Bunker (5–10 June 1967)',
-        sceneImg: '/images/arcade/cme/ep5_june_1967.webp',
+        sceneImg: '/images/upgraded/gcse-cw-cme/cme_l5_tal_armoured_division_sinai_1967.jpg',
         introVoiceId: 'ep5_intro_aloni',
         introVoiceRole: 'noa',
         introSpeaker: 'Noa Aloni (age 19, Reserve Signal Operator)',
@@ -308,7 +308,7 @@ export const KT2_EPISODES = [
       haddad: {
         tabLabel: '🌿 Jordan Crossing (Haddad, June 1967)',
         placeCaption: 'Karim (25) Helping Elderly Ibrahim (70) & Salma Across the Broken Jordan Bridge',
-        sceneImg: '/images/arcade/cme/ep5_haddad_jordan_1967.webp',
+        sceneImg: '/images/cme_palestinian_refugees_1948.jpg',
         introVoiceId: 'ep5_intro_haddad',
         introVoiceRole: 'karim',
         introSpeaker: 'Karim Haddad (age 25, steadying his parents across the River Jordan)',
@@ -477,10 +477,10 @@ export const KT2_EPISODES = [
       haddad: {
         tabLabel: '🌿 Karim’s Focus (Visiting His Childhood Door)',
         placeCaption: 'Shared Jaffa Courtyard — Karim Haddad (25) Holding His Father’s Iron Key (July 1967)',
-        sceneImg: '/images/arcade/cme/ep6_doorway_1967.webp',
+        sceneImg: '/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg',
         cameraClass: 'ct-cam-focus-left',
         echoScene: {
-          img: '/images/arcade/cme/ep2_courtyard_1948.webp',
+          img: '/images/cme_plate_beit_lid_maabara_1950.jpg',
           label: '1948 Memory Echo',
           caption:
             'Nineteen winters earlier in this exact courtyard, Noa’s mother Miriam cradled newborn Noa and tucked young Karim’s brass tin behind that loose well stone.',
@@ -572,10 +572,10 @@ export const KT2_EPISODES = [
       aloni: {
         tabLabel: '✡️ Noa’s Focus (Opening the Door)',
         placeCaption: 'Shared Jaffa Courtyard — Noa Aloni (19) Remembering Her Mother’s Well Secret',
-        sceneImg: '/images/arcade/cme/ep6_doorway_1967.webp',
+        sceneImg: '/images/cme_new/kt2/cme_l6_banner_east_jerusalem_temple_mount.jpg',
         cameraClass: 'ct-cam-focus-right',
         echoScene: {
-          img: '/images/arcade/cme/ep2_courtyard_1948.webp',
+          img: '/images/cme_plate_beit_lid_maabara_1950.jpg',
           label: '1948 Memory Echo',
           caption:
             'Look at the base of the stone well in 1948: Miriam Aloni hid young Karim’s brass tin right behind that loose limestone block.',
@@ -754,7 +754,7 @@ export const KT2_EPISODES = [
       haddad: {
         tabLabel: '🌿 Amman Dinner Table (Haddad, 1970–72)',
         placeCaption: 'Elderly Ibrahim Passing the Key to Karim Beside Militant Brother Tariq (Amman)',
-        sceneImg: '/images/arcade/cme/ep7_amman_table_1970.webp',
+        sceneImg: '/images/cme_plate_amman_camp_black_september_1970.jpg',
         introVoiceId: 'ep7_intro_haddad',
         introVoiceRole: 'karim',
         introSpeaker: 'Karim Haddad (Amman Family Table)',
@@ -823,7 +823,7 @@ export const KT2_EPISODES = [
       aloni: {
         tabLabel: '✡️ Jaffa Living Room (Noa & Avi, Sept 1972)',
         placeCaption: 'Noa & Avi Watching the Munich Olympic Tragedy on Television (5 Sept 1972)',
-        sceneImg: '/images/arcade/cme/ep7_aloni_munich_1972.webp',
+        sceneImg: '/images/upgraded/gcse-cw-cme/cme_l7_munich_olympic_village_1972.jpg',
         introVoiceId: 'ep7_intro_aloni',
         introVoiceRole: 'noa',
         introSpeaker: 'Noa Aloni-Mizrahi (age 24, Jaffa Living Room)',

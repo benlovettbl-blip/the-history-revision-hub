@@ -29,26 +29,27 @@ const SESSION_SAVE_KEY = 'hh_ww2_homefront_session_v2';
 
 const preloadNextStage = createStageAssetPreloader({
   cover: [
-    '/images/arcade/ww2_homefront/scene_1_station_1939.webp',
+    '/units/ks2_ww2/assets/evacuees_railway_1939.jpg',
     '/audio/labs/ww2_homefront/beat0_guard_suitcase.mp3',
   ],
   beat0: [
-    '/images/arcade/ww2_homefront/scene_2_country_billet.webp',
+    '/units/ks2_ww2/assets/evacuee_feeding_farm_pigs_devon_1941.jpg',
     '/audio/labs/ww2_homefront/beat1_farmer_welcome.mp3',
   ],
   beat1: [
-    '/images/arcade/ww2_homefront/scene_3_anderson_blitz.webp',
+    '/units/ks2_ww2/assets/anderson_shelter_family.jpg',
     '/audio/labs/ww2_homefront/beat2_warden_blackout.mp3',
   ],
   beat2: [
-    '/images/arcade/ww2_homefront/scene_4_wartime_kitchen.webp',
+    '/units/ks2_ww2/assets/housewife_ration_book_grocer_1941.jpg',
     '/audio/labs/ww2_homefront/beat3_grocer_welcome.mp3',
   ],
   beat3: [
-    '/images/arcade/ww2_homefront/scene_5_bletchley_veday.webp',
+    '/units/ks2_ww2/assets/bletchley_park_wrens.jpg',
     '/audio/labs/ww2_homefront/beat4_wren_welcome.mp3',
   ],
   beat4: [
+    '/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg',
     '/audio/labs/ww2_homefront/beat5_veday_bells.mp3',
     '/audio/labs/ww2_homefront/beat5_iwm_quest.mp3',
   ],
@@ -71,15 +72,16 @@ const ROTOR_WHEELS = [
 ];
 const TARGET_ROTORS = ['B', 'R', 'K'];
 
+// Wartime Enamel Character Medallions (zero AI cartoon faces — AGENTS.md §6.2)
 const SPEAKER_AVATARS = {
-  clara: { img: '/images/arcade/ww2_homefront/cover_platform_four.webp', pos: '60.5% 49%', size: '680%' },
-  guard: { img: '/images/arcade/ww2_homefront/scene_1_station_1939.webp', pos: '15% 34%', size: '560%' },
-  warden: { img: '/images/arcade/ww2_homefront/cover_platform_four.webp', pos: '82.5% 37%', size: '620%' },
-  farmer: { img: '/images/arcade/ww2_homefront/scene_2_country_billet.webp', pos: '34% 25%', size: '580%' },
-  lotte: { img: '/images/arcade/ww2_homefront/scene_2_country_billet.webp', pos: '78% 50%', size: '580%' },
-  mum: { img: '/images/arcade/ww2_homefront/scene_3_anderson_blitz.webp', pos: '82% 52%', size: '640%' },
-  grocer: { img: '/images/arcade/ww2_homefront/scene_4_wartime_kitchen.webp', pos: '41% 22%', size: '500%' },
-  wren: { img: '/images/arcade/ww2_homefront/scene_5_bletchley_veday.webp', pos: '42% 46%', size: '540%' },
+  clara: { icon: '🧳', bg: 'radial-gradient(circle at 30% 30%, #1d4ed8, #172554)', border: '#93c5fd' },
+  guard: { icon: '🚂', bg: 'radial-gradient(circle at 30% 30%, #15803d, #052e16)', border: '#86efac' },
+  warden: { icon: '⛑️', bg: 'radial-gradient(circle at 30% 30%, #334155, #0f172a)', border: '#fde047' },
+  farmer: { icon: '🌾', bg: 'radial-gradient(circle at 30% 30%, #a16207, #422006)', border: '#fde68a' },
+  lotte: { icon: '🧸', bg: 'radial-gradient(circle at 30% 30%, #7e22ce, #3b0764)', border: '#d8b4fe' },
+  mum: { icon: '☕', bg: 'radial-gradient(circle at 30% 30%, #9a3412, #431407)', border: '#fdba74' },
+  grocer: { icon: '⚖️', bg: 'radial-gradient(circle at 30% 30%, #0f766e, #042f2e)', border: '#5eead4' },
+  wren: { icon: '🔐', bg: 'radial-gradient(circle at 30% 30%, #1e3a8a, #0f172a)', border: '#fbbf24' },
 };
 
 let cachedWw2Json = null;
@@ -501,11 +503,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     return state.step;
   }
 
-  function avatarStyle(key) {
-    const a = SPEAKER_AVATARS[key] || SPEAKER_AVATARS.clara;
-    return `background-image:url('${a.img}');background-position:${a.pos};background-size:${a.size};`;
-  }
-
   function renderTopBarInnerHTML() {
     const curIdx = Math.max(0, STEPS.findIndex((s) => s.id === state.step));
     const prevStepId = curIdx > 0 ? STEPS[curIdx - 1].id : '';
@@ -577,8 +574,9 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   }
 
   function renderSpeechInnerHTML() {
+    const av = SPEAKER_AVATARS[state.avatarKey] || SPEAKER_AVATARS.clara;
     return `
-      <div class="ww2-avatar-medallion" style="${avatarStyle(state.avatarKey)}"></div>
+      <div class="ww2-avatar-medallion" style="background:${av.bg};border:2px solid ${av.border};display:flex;align-items:center;justify-content:center;font-size:1.3rem;line-height:1;" aria-hidden="true">${av.icon}</div>
       <div style="flex:1;min-width:0;">
         <div class="ww2-speech-speaker">
           <span>${state.speakerName}</span>
@@ -601,19 +599,19 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   function renderCoverSceneHTML() {
     const touchPrompt = isCoarseTouchUI()
       ? 'Tap glowing spots on Platform Four to hear Clara, the Guard & the ARP Warden!'
-      : 'Move your mouse across Platform Four to uncover discreet shiny clues!';
+      : 'Move your mouse across the 1939 railway platform photograph to uncover clues!';
 
     return `
       <div class="ww2-cover-wrap">
         <div class="ww2-cover-stage">
           <div class="ww2-cover-art-box" id="ww2-fx-stage">
-            <img src="/images/arcade/ww2_homefront/cover_platform_four.webp"
-                 alt="September 1939 railway platform with green steam locomotive, railway guard, two evacuee children with gas-mask boxes and suitcase, and an ARP warden under twilight searchlights"
+            <img src="/units/ks2_ww2/assets/banner_unit_hero.jpg"
+                 alt="Imperial War Museums archival photograph of British evacuee children carrying cardboard gas-mask boxes and suitcases on a 1939 railway platform"
                  class="ww2-diorama-img" />
             <div class="ww2-cover-top-shade"></div>
 
             <div class="ww2-cover-logo-wrap">
-              <div class="ww2-cover-kicker">🚂 KEY STAGE 2 INTERACTIVE STORYBOOK ADVENTURE • BRITAIN 1939–1945</div>
+              <div class="ww2-cover-kicker">🚂 KEY STAGE 2 ARCHIVAL FIELDWORK SIMULATION • BRITAIN 1939–1945</div>
               <h2 class="ww2-cover-title">THE SUITCASE ON PLATFORM FOUR</h2>
               <p class="ww2-cover-sub">Evacuation • Kindertransport • Blitz Shelter • Rationing • Bletchley Park • VE Day</p>
             </div>
@@ -621,19 +619,19 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             ${hitZoneHTML({
               key: 'cov_engine',
               dataAttr: 'data-cover-spot="engine"',
-              x: 15,
-              y: 46,
-              w: 22,
-              h: 44,
+              x: 22,
+              y: 44,
+              w: 18,
+              h: 42,
               found: state.coverSpotsFound.has('engine'),
-              ariaLabel: 'Inspect the green steam locomotive on Platform Four',
+              ariaLabel: 'Inspect the 1939 evacuation train carriages',
             })}
             ${hitZoneHTML({
               key: 'cov_guard',
               dataAttr: 'data-cover-spot="guard"',
-              x: 35,
-              y: 58,
-              w: 13,
+              x: 38,
+              y: 48,
+              w: 14,
               h: 44,
               found: state.coverSpotsFound.has('guard'),
               ariaLabel: 'Speak with Mr Higgins the Railway Guard',
@@ -642,31 +640,31 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
               key: 'cov_suitcase',
               dataAttr: 'data-cover-spot="suitcase"',
               x: 52,
-              y: 83,
-              w: 13,
+              y: 80,
+              w: 14,
               h: 20,
               found: state.coverSpotsFound.has('suitcase'),
-              ariaLabel: 'Inspect Clara and Arthur’s brown leather suitcase',
+              ariaLabel: 'Inspect Clara and Arthur’s evacuee suitcase',
             })}
             ${hitZoneHTML({
               key: 'cov_children',
               dataAttr: 'data-cover-spot="children"',
-              x: 63,
-              y: 65,
+              x: 62,
+              y: 58,
               w: 18,
-              h: 46,
+              h: 44,
               found: state.coverSpotsFound.has('children'),
               ariaLabel: 'Speak with evacuees Clara and Arthur',
             })}
             ${hitZoneHTML({
               key: 'cov_warden',
               dataAttr: 'data-cover-spot="warden"',
-              x: 84,
-              y: 58,
-              w: 15,
-              h: 52,
+              x: 78,
+              y: 52,
+              w: 14,
+              h: 46,
               found: state.coverSpotsFound.has('warden'),
-              ariaLabel: 'Speak with the ARP Air Raid Warden under the station lantern',
+              ariaLabel: 'Speak with the ARP Air Raid Warden on the platform',
             })}
           </div>
         </div>
@@ -679,7 +677,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             <button type="button" class="ww2-start-cta" id="ww2-start-btn">
               ▶ BEGIN 1939 HOME FRONT JOURNEY
             </button>
-            <button type="button" class="ww2-icon-btn" id="ww2-cover-hint-btn" title="Shimmer clickable spots on the painting">
+            <button type="button" class="ww2-icon-btn" id="ww2-cover-hint-btn" title="Shimmer clickable spots on the archival photograph">
               <i class="fa-solid fa-wand-magic-sparkles" style="color:#fde047;"></i> <span>Show Spots</span>
             </button>
           </div>
@@ -1315,8 +1313,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         <div class="ww2-body">
           <div class="ww2-speech-box" id="ww2-speech-slot">${renderSpeechInnerHTML()}</div>
           <div class="ww2-veday-banner" id="ww2-fx-stage">
-            <img src="/images/arcade/ww2_homefront/scene_5_bletchley_veday.webp"
-                 alt="Sunlit 8 May 1945 VE Day celebration with red, white, and blue bunting and children waving Union flags" />
+            <img src="/images/upgraded/ks2-ww2/l10_banner_ve_day_whitehall_colour_tr2876.jpg"
+                 alt="Imperial War Museums colour photograph (TR 2876) of 8 May 1945 VE Day crowds celebrating in Whitehall waving Union flags" />
             <div class="ww2-veday-banner-overlay">
               <div style="font-size:0.7rem;font-weight:900;color:#fde047;letter-spacing:1px;text-transform:uppercase;">
                 🎊 8 MAY 1945 • VICTORY IN EUROPE DAY &amp; ARCHIVE FINALE
@@ -1343,65 +1341,65 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       leftWorkspaceHTML = `
         <div>
           <div class="ww2-diorama-frame" id="ww2-fx-stage">
-            <img src="/images/arcade/ww2_homefront/scene_1_station_1939.webp"
-                 alt="1939 railway platform showing station guard with whistle and green flag, waving children on train, and open evacuee suitcase on trolley"
+            <img src="/units/ks2_ww2/assets/evacuees_railway_1939.jpg"
+                 alt="1939 railway station platform photograph showing evacuee schoolchildren with cardboard gas-mask boxes, luggage labels, and suitcases"
                  class="ww2-diorama-img" />
             ${hitZoneHTML({
               key: 'b0_guard',
               dataAttr: 'data-b0-extra="guard"',
-              x: 15,
-              y: 52,
-              w: 16,
-              h: 52,
+              x: 24,
+              y: 48,
+              w: 14,
+              h: 46,
               found: state.stationExtrasFound.has('guard'),
               ariaLabel: 'Speak with Mr Higgins the Railway Guard',
             })}
             ${hitZoneHTML({
               key: 'b0_carriage',
               dataAttr: 'data-b0-extra="carriage"',
-              x: 46,
-              y: 45,
-              w: 22,
+              x: 44,
+              y: 34,
+              w: 20,
               h: 22,
               found: state.stationExtrasFound.has('carriage'),
-              ariaLabel: 'Check the waving evacuee children in the carriage window',
+              ariaLabel: 'Check the evacuee train carriages',
             })}
             ${hitZoneHTML({
               key: 'pack_gasmask',
               dataAttr: 'data-pack-item="gasmask"',
-              x: 55,
-              y: 65,
-              w: 10,
-              h: 13,
+              x: 38,
+              y: 66,
+              w: 11,
+              h: 15,
               found: state.packedItems.has('gasmask'),
               ariaLabel: 'Pack cardboard gas-mask box',
             })}
             ${hitZoneHTML({
               key: 'pack_clothes_wash',
               dataAttr: 'data-pack-item="clothes_wash"',
-              x: 64,
-              y: 74,
+              x: 51,
+              y: 72,
               w: 11,
-              h: 13,
+              h: 15,
               found: state.packedItems.has('clothes_wash'),
               ariaLabel: 'Pack spare jumper, toothbrush, and tin mug',
             })}
             ${hitZoneHTML({
               key: 'pack_sandwiches',
               dataAttr: 'data-pack-item="sandwiches"',
-              x: 66,
-              y: 84,
-              w: 10,
-              h: 13,
+              x: 62,
+              y: 80,
+              w: 11,
+              h: 14,
               found: state.packedItems.has('sandwiches'),
               ariaLabel: 'Pack packet of sandwiches for the train journey',
             })}
             ${hitZoneHTML({
               key: 'pack_teddy',
               dataAttr: 'data-pack-item="teddy"',
-              x: 72,
-              y: 74,
-              w: 9,
+              x: 68,
+              y: 62,
+              w: 10,
               h: 16,
               found: state.packedItems.has('teddy'),
               ariaLabel: 'Pack small teddy bear',
@@ -1409,12 +1407,12 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             ${hitZoneHTML({
               key: 'pack_gramophone',
               dataAttr: 'data-pack-item="gramophone"',
-              x: 88,
-              y: 76,
-              w: 18,
-              h: 32,
+              x: 78,
+              y: 74,
+              w: 14,
+              h: 24,
               found: state.gramophoneTried,
-              ariaLabel: 'Inspect heavy wireless and brass gramophone on trolley',
+              ariaLabel: 'Inspect heavy wireless and brass gramophone on platform',
             })}
           </div>
           <div class="ww2-scene-caption-strip" id="ww2-caption-slot">${renderCaptionInnerHTML()}</div>
@@ -1443,56 +1441,56 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       leftWorkspaceHTML = `
         <div>
           <div class="ww2-diorama-frame" id="ww2-fx-stage">
-            <img src="/images/arcade/ww2_homefront/scene_2_country_billet.webp"
-                 alt="Country farmhouse gate with Shire horse, welcoming farmer, apple orchard, and Kindertransport girl Lotte holding family photograph and cloth doll"
+            <img src="/units/ks2_ww2/assets/evacuee_feeding_farm_pigs_devon_1941.jpg"
+                 alt="1941 wartime photograph of evacuee children helping feed livestock on a Devon country farm billet"
                  class="ww2-diorama-img" />
             ${hitZoneHTML({
               key: 'b1_horse',
               dataAttr: 'data-billet-spot="horse"',
-              x: 16,
-              y: 36,
-              w: 20,
-              h: 42,
+              x: 32,
+              y: 72,
+              w: 18,
+              h: 26,
               found: state.billetSpotsFound.has('horse'),
-              ariaLabel: 'Meet Captain the Shire horse',
+              ariaLabel: 'Inspect the country farmyard animals',
             })}
             ${hitZoneHTML({
               key: 'b1_farmer',
               dataAttr: 'data-billet-spot="farmer"',
-              x: 34,
-              y: 48,
-              w: 16,
-              h: 54,
+              x: 42,
+              y: 44,
+              w: 15,
+              h: 44,
               found: state.billetSpotsFound.has('farmer'),
               ariaLabel: 'Speak with Farmer Mr Oakley',
             })}
             ${hitZoneHTML({
               key: 'b1_orchard',
               dataAttr: 'data-billet-spot="orchard"',
-              x: 65,
-              y: 34,
+              x: 58,
+              y: 26,
               w: 18,
-              h: 28,
+              h: 24,
               found: state.billetSpotsFound.has('orchard'),
-              ariaLabel: 'Inspect the farmhouse apple orchard',
+              ariaLabel: 'Inspect the farmhouse orchard and barn',
             })}
             ${hitZoneHTML({
               key: 'b1_lotte',
               dataAttr: 'data-billet-spot="lotte"',
-              x: 78,
-              y: 62,
-              w: 16,
-              h: 40,
+              x: 66,
+              y: 54,
+              w: 15,
+              h: 38,
               found: state.billetSpotsFound.has('lotte'),
               ariaLabel: 'Speak gently with Lotte from Prague',
             })}
             ${hitZoneHTML({
               key: 'b1_case',
               dataAttr: 'data-billet-spot="lotte_case"',
-              x: 64,
-              y: 81,
-              w: 15,
-              h: 22,
+              x: 55,
+              y: 78,
+              w: 14,
+              h: 20,
               found: state.billetSpotsFound.has('lotte_case'),
               ariaLabel: 'Inspect Lotte’s single Kindertransport suitcase',
             })}
@@ -1504,48 +1502,48 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       leftWorkspaceHTML = `
         <div>
           <div class="ww2-diorama-frame" id="ww2-fx-stage">
-            <img src="/images/arcade/ww2_homefront/scene_3_anderson_blitz.webp"
-                 alt="1940 Blitz night garden cutaway showing taped window, blackout curtains, red stirrup pump, and cosy corrugated-steel Anderson shelter with mother pouring cocoa"
+            <img src="/units/ks2_ww2/assets/anderson_shelter_family.jpg"
+                 alt="Archival photograph of a British family gathered at the corrugated-steel entrance of their garden Anderson air-raid shelter"
                  class="ww2-diorama-img" />
             ${hitZoneHTML({
               key: 'b2_tape',
               dataAttr: 'data-blitz-check="tape"',
-              x: 17,
-              y: 30,
-              w: 18,
-              h: 16,
+              x: 36,
+              y: 24,
+              w: 14,
+              h: 18,
               found: state.blitzChecks.has('tape'),
-              ariaLabel: 'Check crisscross blast tape on window glass',
+              ariaLabel: 'Check crisscross blast tape & earth bank',
             })}
             ${hitZoneHTML({
               key: 'b2_blackout',
               dataAttr: 'data-blitz-check="blackout"',
-              x: 17,
-              y: 50,
-              w: 18,
+              x: 36,
+              y: 48,
+              w: 14,
               h: 22,
               found: state.blitzChecks.has('blackout'),
-              ariaLabel: 'Pull the leaking blackout curtain shut',
+              ariaLabel: 'Pull the blackout curtain shut',
             })}
             ${hitZoneHTML({
               key: 'b2_stirrup',
               dataAttr: 'data-blitz-check="stirrup"',
-              x: 18,
+              x: 38,
               y: 78,
-              w: 16,
-              h: 26,
+              w: 14,
+              h: 20,
               found: state.blitzChecks.has('stirrup'),
-              ariaLabel: 'Check the red garden stirrup-pump and water bucket',
+              ariaLabel: 'Check the garden stirrup-pump and sandbags',
             })}
             ${hitZoneHTML({
               key: 'b2_anderson',
               dataAttr: 'data-blitz-check="anderson"',
-              x: 76,
-              y: 62,
-              w: 32,
+              x: 58,
+              y: 58,
+              w: 22,
               h: 48,
               found: state.blitzChecks.has('anderson'),
-              ariaLabel: 'Inspect the corrugated-steel Anderson garden shelter and hot cocoa',
+              ariaLabel: 'Inspect the corrugated-steel Anderson garden shelter and family',
             })}
           </div>
           <div class="ww2-scene-caption-strip" id="ww2-caption-slot">${renderCaptionInnerHTML()}</div>
@@ -1555,78 +1553,78 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       leftWorkspaceHTML = `
         <div>
           <div class="ww2-diorama-frame" id="ww2-fx-stage">
-            <img src="/images/arcade/ww2_homefront/scene_4_wartime_kitchen.webp"
-                 alt="1941 British village grocer Mrs Wilkins behind brass scales with buff ration booklet, single egg, butter and bacon, sugar and tea, vegetable trug, steaming Woolton Pie, and Bakelite wireless"
+            <img src="/units/ks2_ww2/assets/housewife_ration_book_grocer_1941.jpg"
+                 alt="Imperial War Museums 1941 photograph of a British shopper presenting her Ministry of Food Ration Book to a grocer beside counter scales and Bird’s Egg Substitute tins"
                  class="ww2-diorama-img" />
             ${hitZoneHTML({
               key: 'b3_book',
               dataAttr: 'data-b3-extra="book"',
-              x: 16,
-              y: 78,
-              w: 18,
-              h: 22,
+              x: 37,
+              y: 56,
+              w: 10,
+              h: 20,
               found: state.rationExtrasFound.has('book'),
-              ariaLabel: 'Inspect the buff Ministry of Food Ration Book',
+              ariaLabel: 'Inspect the Ministry of Food Ration Book',
             })}
             ${hitZoneHTML({
               key: 'b3_grocer',
               dataAttr: 'data-b3-extra="grocer"',
-              x: 40,
-              y: 40,
-              w: 18,
-              h: 42,
+              x: 61,
+              y: 42,
+              w: 12,
+              h: 38,
               found: state.rationExtrasFound.has('grocer'),
-              ariaLabel: 'Speak with Mrs Wilkins the village grocer',
+              ariaLabel: 'Speak with the village grocer',
             })}
             ${hitZoneHTML({
               key: 'b3_wireless',
               dataAttr: 'data-b3-extra="wireless"',
-              x: 89,
-              y: 40,
-              w: 15,
-              h: 22,
+              x: 40,
+              y: 18,
+              w: 12,
+              h: 18,
               found: state.rationExtrasFound.has('wireless'),
-              ariaLabel: 'Listen to the 1940s Bakelite wireless radio',
+              ariaLabel: 'Listen to the 1940s Home Service wireless bulletin',
             })}
             ${hitZoneHTML({
               key: 'rat_egg',
               dataAttr: 'data-ration-item="egg"',
-              x: 31,
-              y: 74,
-              w: 8,
-              h: 18,
+              x: 47,
+              y: 63,
+              w: 9,
+              h: 16,
               found: state.rationBasket.has('egg'),
-              ariaLabel: 'Weigh 1 single fresh egg for the week',
+              ariaLabel: 'Weigh 1 single fresh egg & egg-substitute tin for the week',
             })}
             ${hitZoneHTML({
               key: 'rat_butter_bacon',
               dataAttr: 'data-ration-item="butter_bacon"',
-              x: 41,
-              y: 81,
-              w: 15,
+              x: 45,
+              y: 38,
+              w: 11,
               h: 18,
               found: state.rationBasket.has('butter_bacon'),
-              ariaLabel: 'Weigh 2oz butter and 4oz bacon',
+              ariaLabel: 'Weigh 2oz butter and 4oz bacon on the counter scales',
             })}
             ${hitZoneHTML({
               key: 'rat_sugar_tea',
               dataAttr: 'data-ration-item="sugar_tea"',
-              x: 61,
-              y: 81,
-              w: 17,
-              h: 18,
+              x: 53,
+              y: 78,
+              w: 11,
+              h: 16,
               found: state.rationBasket.has('sugar_tea'),
               ariaLabel: 'Weigh 8oz sugar and 2oz loose tea leaves',
             })}
             ${hitZoneHTML({
               key: 'rat_woolton_veg',
               dataAttr: 'data-ration-item="woolton_veg"',
-              x: 84,
+              x: 64,
               y: 74,
-              w: 24,
-              h: 32,
+              w: 11,
+              h: 22,
               found: state.rationBasket.has('woolton_veg'),
-              ariaLabel: 'Collect unrationed Dig for Victory vegetables and steaming Woolton Pie',
+              ariaLabel: 'Collect unrationed Dig for Victory vegetables and Woolton Pie',
             })}
           </div>
           <div class="ww2-scene-caption-strip" id="ww2-caption-slot">${renderCaptionInnerHTML()}</div>
@@ -1636,48 +1634,48 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       leftWorkspaceHTML = `
         <div>
           <div class="ww2-diorama-frame" id="ww2-fx-stage">
-            <img src="/images/arcade/ww2_homefront/scene_5_bletchley_veday.webp"
-                 alt="Bletchley Park wooden hut with two WRNS Wrens operating a brass Bombe cabinet and 3-bulb cipher machine on the left, opening onto sunlit VE Day 1945 bunting and Union flags on the right"
+            <img src="/units/ks2_ww2/assets/bletchley_park_wrens.jpg"
+                 alt="Archival wartime photograph of WRNS Wrens operating electromechanical Bombe codebreaking drums at Bletchley Park"
                  class="ww2-diorama-img" />
             ${hitZoneHTML({
               key: 'b4_bombe',
               dataAttr: 'data-bletchley-spot="bombe"',
-              x: 18,
+              x: 28,
               y: 46,
-              w: 22,
-              h: 60,
+              w: 20,
+              h: 54,
               found: state.bletchleySpotsFound.has('bombe'),
-              ariaLabel: 'Inspect the spinning brass Bombe codebreaking drums',
+              ariaLabel: 'Inspect the spinning Bombe codebreaking drums',
             })}
             ${hitZoneHTML({
               key: 'b4_wren',
               dataAttr: 'data-bletchley-spot="wren"',
-              x: 41,
-              y: 56,
+              x: 50,
+              y: 52,
               w: 16,
-              h: 42,
+              h: 46,
               found: state.bletchleySpotsFound.has('wren'),
               ariaLabel: 'Speak with Leading Wren Miss Bennett',
             })}
             ${hitZoneHTML({
               key: 'b4_cipher',
               dataAttr: 'data-bletchley-spot="cipher"',
-              x: 54,
-              y: 65,
-              w: 16,
+              x: 64,
+              y: 66,
+              w: 14,
               h: 26,
               found: state.bletchleySpotsFound.has('cipher'),
-              ariaLabel: 'Inspect the 3-bulb rotor cipher machine',
+              ariaLabel: 'Inspect the rotor cipher settings',
             })}
             ${hitZoneHTML({
               key: 'b4_veday_door',
               dataAttr: 'data-bletchley-spot="veday_door"',
-              x: 81,
-              y: 56,
-              w: 24,
-              h: 56,
+              x: 78,
+              y: 48,
+              w: 16,
+              h: 48,
               found: state.bletchleySpotsFound.has('veday_door'),
-              ariaLabel: 'Peek outside at the sunlit VE Day 1945 celebration',
+              ariaLabel: 'Look ahead toward VE Day 1945',
             })}
           </div>
           <div class="ww2-scene-caption-strip" id="ww2-caption-slot">${renderCaptionInnerHTML()}</div>

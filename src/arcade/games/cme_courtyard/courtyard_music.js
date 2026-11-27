@@ -157,13 +157,14 @@ export class CourtyardMusicEngine {
   setAmbienceForScene(sceneImgPath = '') {
     const file = String(sceneImgPath).split('/').pop() || '';
     let nextType = 'breeze';
-    if (file.includes('jericho_1949') || file.includes('courtyard_1995')) {
+    if (file.includes('khan_younis') || file.includes('rabin_memorial')) {
       nextType = 'rain';
     } else if (
       file.includes('haifa') ||
-      file.includes('jaffa_1947') ||
+      file.includes('exodus') ||
+      file.includes('suez_canal') ||
       file.includes('galilee') ||
-      file.includes('jordan_1967')
+      file.includes('sea_evacuation')
     ) {
       nextType = 'sea';
     }

@@ -8,241 +8,32 @@
  */
 
 const SCENE_FX_PRESETS = {
-  // Bespoke Split-Time Front Cover Poster (1922 Morning Sunlight <-> 1995 Evening Rain)
-  'cover_two_keys_poster.webp': {
-    sunbeams: [{ x: 47, y: 15, w: 18, angle: 14, alpha: 0.12, clip: { x: 35, y: 15, w: 25, h: 68 } }],
-    foliageCanopy: { x: 35, y: 14, w: 24, h: 28 },
-    leafClip: { x: 35, y: 15, w: 25, h: 58 },
-    leaves: { count: 7, color: 'rgba(108, 146, 70, 0.62)', blossomColor: 'rgba(208, 76, 58, 0.56)' },
-    birdWindows: [{ x: 45, y: 20, w: 14, h: 9, count: 2 }],
-    steam: [
-      { x: 43.7, y: 73.5 },
-      { x: 48.7, y: 74.0 },
-    ],
-    // Strictly clipped to the open courtyard gap BETWEEN Layla (left <=73%) and Yonatan (right >=87%)!
-    rainWindows: [{ x: 73.5, y: 18, w: 13, h: 48, count: 34, slant: -0.05 }],
-    puddles: { x: 74, y: 61, w: 12, h: 8, count: 4 },
-    glows: [
-      { x: 80.5, y: 70.5, r: 14.5, color: '255, 204, 88', intensity: 0.68 },
-      { x: 48.0, y: 34.0, r: 16.0, color: '255, 232, 155', intensity: 0.2 },
-    ],
-    motes: 18,
-  },
-
-  // Ch 1
-  'ep0_jaffa_1922.webp': {
-    sunbeams: [{ x: 50, y: 18, w: 16, angle: 16, alpha: 0.12, clip: { x: 43.5, y: 17, w: 14, h: 50 } }],
-    foliageCanopy: { x: 6, y: 2, w: 36, h: 36 },
-    leafClip: { x: 27, y: 18, w: 30, h: 48 },
-    // Strictly inside central arch sky between columns (44%..57%)!
-    birdWindows: [{ x: 44.5, y: 21, w: 12, h: 12, count: 2 }],
-    leaves: { count: 7, color: 'rgba(104, 142, 68, 0.6)', blossomColor: 'rgba(204, 77, 58, 0.55)' },
-    motes: 22,
-    glows: [{ x: 49.7, y: 68.5, r: 11.5, color: '255, 198, 92', intensity: 0.58 }],
-    steam: [{ x: 82.5, y: 74 }],
-  },
-  'ep0_aloni_haifa_1936.webp': {
-    sunbeams: [{ x: 18, y: 0, w: 28, angle: 18, alpha: 0.09 }],
-    // Water strictly left of Dov's brown coat (x <= 12.5%)!
-    waterWindows: [{ x: 1, y: 52, w: 11.5, h: 16, color: '255, 250, 225', waves: 3 }],
-    // Sky strictly left of ship rigging (x <= 40%) and above hillside/heads (y <= 21%)!
-    birdWindows: [{ x: 4, y: 4, w: 36, h: 16, count: 3 }],
-    motes: 18,
-    glows: [{ x: 65.6, y: 83.5, r: 6, color: '235, 90, 75', intensity: 0.26 }],
-  },
-
-  // Ch 2
-  'ep1_haddad_jaffa_1947.webp': {
-    // Strictly inside Arch 1 sky (above mast) and Arch 2 sky (left of Ibrahim's head at x=59%!)
-    birdWindows: [
-      { x: 9, y: 8, w: 18, h: 12, count: 2 },
-      { x: 40, y: 8, w: 16.5, h: 17, count: 2 },
-    ],
-    // Strictly unobstructed open sea patches (zero overlap with pillars, boats, Ibrahim, Salma, or Karim!)
-    waterWindows: [
-      { x: 45, y: 34, w: 11, h: 11, color: '255, 205, 135', waves: 3 },
-      { x: 11.5, y: 52, w: 8, h: 11, color: '255, 205, 135', waves: 2 },
-    ],
-    glows: [
-      { x: 34.4, y: 8.5, r: 14, color: '255, 190, 80', intensity: 0.62 },
-      { x: 55.8, y: 65.2, r: 8.5, color: '255, 205, 95', intensity: 0.54 },
-    ],
-    steam: [
-      { x: 83.6, y: 74 },
-      { x: 87.0, y: 77 },
-    ],
-    motes: 14,
-  },
-  'ep1_haifa_1947.webp': {
-    // Strictly open water to the left of the steamer's bow inside the harbour window!
-    waterWindows: [{ x: 8.5, y: 45, w: 7.5, h: 10, color: '255, 215, 150', waves: 2 }],
-    glows: [
-      { x: 66.3, y: 14.5, r: 18, color: '255, 210, 115', intensity: 0.58 },
-      { x: 43.2, y: 69.2, r: 8.5, color: '255, 205, 90', intensity: 0.55 },
-    ],
-    steam: [
-      { x: 53.6, y: 70 },
-      { x: 66.8, y: 79 },
-    ],
-    motes: 16,
-  },
-
-  // Ch 3
-  'ep2_haddad_jericho_1949.webp': {
-    // Strictly clipped to the upper open triangle of the tent flap above Salma & Karim's heads!
-    rainWindows: [{ x: 29, y: 14, w: 10.5, h: 24, count: 28, slant: -0.16 }],
-    glows: [{ x: 49.6, y: 20.5, r: 24, color: '255, 190, 82', intensity: 0.64 }],
-    steam: [{ x: 76.5, y: 83 }],
-    motes: 14,
-  },
-  'ep2_courtyard_1948.webp': {
-    sunbeams: [{ x: 49, y: 18, w: 16, angle: 16, alpha: 0.11, clip: { x: 43.5, y: 17, w: 14, h: 48 } }],
-    foliageCanopy: { x: 6, y: 2, w: 36, h: 36 },
-    leafClip: { x: 27, y: 18, w: 30, h: 46 },
-    birdWindows: [{ x: 44.5, y: 21, w: 12, h: 11, count: 2 }],
-    leaves: { count: 7, color: 'rgba(104, 138, 68, 0.58)', blossomColor: 'rgba(196, 77, 58, 0.52)' },
-    steam: [{ x: 72.8, y: 74.5 }],
-    motes: 18,
-  },
-
-  // Ch 4
-  'ep3_haddad_classroom_1956.webp': {
-    sunbeams: [{ x: 16, y: 12, w: 32, angle: 28, alpha: 0.12 }],
-    glows: [{ x: 56.4, y: 64.5, r: 7.5, color: '255, 210, 110', intensity: 0.44 }],
-    motes: 24,
-  },
-  'ep3_sinai_radio_1956.webp': {
-    sunbeams: [{ x: 20, y: 22, w: 24, angle: 24, alpha: 0.09 }],
-    glows: [
-      { x: 5.5, y: 76.5, r: 13.5, color: '255, 190, 75', intensity: 0.6 },
-      { x: 50.5, y: 64.5, r: 14.5, color: '255, 196, 85', intensity: 0.55 },
-    ],
-    motes: 20,
-  },
-
-  // Ch 5
-  'ep4_galilee_water_1964.webp': {
-    // Strictly between wooden porch posts (11%..63%) and above Noa's head (y <= 12%)!
-    birdWindows: [{ x: 12, y: 2, w: 50, h: 10, count: 3 }],
-    // Strictly open lake surface between hillside (26%) and Noa's shoulder (49%)!
-    waterWindows: [{ x: 26, y: 19.5, w: 22, h: 11, color: '255, 252, 232', waves: 4 }],
-    motes: 18,
-  },
-  'ep4_haddad_amman_1966.webp': {
-    // Strictly right of stone wall (28%) and above distant hill crest & heads (y <= 11%)!
-    birdWindows: [{ x: 29, y: 2, w: 42, h: 9, count: 2 }],
-    steam: [
-      { x: 47.5, y: 74 },
-      { x: 66.8, y: 69 },
-      { x: 81.2, y: 74 },
-    ],
-    motes: 18,
-  },
-
-  // Ch 6
-  'ep5_june_1967.webp': {
-    glows: [
-      { x: 19.8, y: 27.5, r: 24, color: '255, 206, 98', intensity: 0.64 },
-      { x: 25.8, y: 48.5, r: 10.5, color: '255, 210, 110', intensity: 0.48 },
-    ],
-    motes: 22,
-  },
-  'ep5_haddad_jordan_1967.webp': {
-    // Strictly right of willow leaves (39%) and above Karim's hair (y <= 12%)!
-    birdWindows: [{ x: 39, y: 2, w: 28, h: 10, count: 2 }],
-    // Strictly open Jordan river water below broken timbers and left of plank bridge!
-    waterWindows: [{ x: 20, y: 52, w: 25, h: 11, color: '255, 232, 165', waves: 4 }],
-    motes: 18,
-  },
-
-  // Ch 7
-  'ep6_doorway_1967.webp': {
-    sunbeams: [{ x: 24, y: 10, w: 22, angle: 20, alpha: 0.11, clip: { x: 8, y: 10, w: 26, h: 55 } }],
-    foliageCanopy: { x: 4, y: 2, w: 30, h: 36 },
-    leafClip: { x: 6, y: 12, w: 26, h: 52 },
-    leaves: { count: 7, color: 'rgba(104, 142, 68, 0.6)', blossomColor: 'rgba(198, 74, 56, 0.54)' },
-    steam: [
-      { x: 45.2, y: 73.5 },
-      { x: 58.0, y: 72.5 },
-    ],
-    motes: 20,
-  },
-
-  // Ch 8
-  'ep7_amman_table_1970.webp': {
-    glows: [
-      { x: 50.0, y: 14.0, r: 26, color: '255, 202, 98', intensity: 0.6 },
-      { x: 58.8, y: 58.5, r: 7.5, color: '255, 190, 80', intensity: 0.42 },
-    ],
-    steam: [
-      { x: 40.5, y: 60 },
-      { x: 63.8, y: 59 },
-    ],
-    motes: 16,
-  },
-  'ep7_aloni_munich_1972.webp': {
-    glows: [
-      { x: 21.0, y: 46.5, r: 18, color: '195, 222, 255', intensity: 0.46, fastTv: true },
-      { x: 43.2, y: 27.0, r: 15, color: '255, 212, 125', intensity: 0.42 },
-      { x: 86.2, y: 77.5, r: 11, color: '255, 196, 82', intensity: 0.64 },
-    ],
-    motes: 14,
-  },
-
-  // Ch 9
-  'ep8_october_1973.webp': {
-    sunbeams: [{ x: 30, y: 8, w: 26, angle: 18, alpha: 0.11 }],
-    motes: 20,
-  },
-  'ep8_haddad_amman_1973.webp': {
-    glows: [
-      { x: 56.5, y: 67.2, r: 9.5, color: '255, 202, 92', intensity: 0.54 },
-      { x: 93.5, y: 71.0, r: 14.5, color: '255, 196, 82', intensity: 0.65 },
-    ],
-    motes: 18,
-  },
-
-  // Ch 10
-  'ep9_jerusalem_1977.webp': {
-    glows: [
-      { x: 23.0, y: 56.0, r: 18, color: '215, 232, 255', intensity: 0.42, fastTv: true },
-      { x: 64.0, y: 44.0, r: 19, color: '255, 206, 120', intensity: 0.32 },
-    ],
-    motes: 18,
-  },
-  'ep9_haddad_westbank_1978.webp': {
-    // Strictly top-right open sky right of olive canopy (x >= 70%) and above cranes (y <= 18%)!
-    birdWindows: [{ x: 70, y: 3, w: 26, h: 14, count: 2 }],
-    motes: 18,
-  },
-
-  // Ch 11
-  'ep10_aloni_telaviv_1982.webp': {
-    glows: [
-      { x: 3.2, y: 62.5, r: 5.2, color: '255, 212, 105', intensity: 0.6 },
-      { x: 8.6, y: 63.5, r: 5.2, color: '255, 212, 105', intensity: 0.58 },
-      { x: 14.0, y: 63.5, r: 5.2, color: '255, 212, 105', intensity: 0.6 },
-      { x: 20.2, y: 63.0, r: 5.2, color: '255, 212, 105', intensity: 0.58 },
-      { x: 35.0, y: 63.5, r: 5.2, color: '255, 212, 105', intensity: 0.6 },
-      { x: 67.8, y: 63.0, r: 5.2, color: '255, 212, 105', intensity: 0.58 },
-      { x: 73.2, y: 63.5, r: 5.2, color: '255, 212, 105', intensity: 0.56 },
-      { x: 76.8, y: 64.5, r: 5.2, color: '255, 212, 105', intensity: 0.6 },
-      { x: 85.8, y: 63.0, r: 5.2, color: '255, 212, 105', intensity: 0.58 },
-    ],
-    motes: 18,
-  },
-  'ep10_shuttered_street_1987.webp': {
-    // Strictly open window sky between stone building (25%) and window frame (53%), above roof (14%)!
-    birdWindows: [{ x: 25.5, y: 2, w: 27, h: 11, count: 2 }],
-    motes: 18,
-  },
-
-  // Ch 12
-  'ep11_courtyard_1995.webp': {
-    // Strictly open left courtyard rain (left of central stone pillar at x=39%!)
-    rainWindows: [{ x: 2, y: 4, w: 36.5, h: 86, count: 58, slant: -0.12 }],
-    puddles: { x: 5, y: 74, w: 32, h: 18, count: 6 },
-    glows: [{ x: 69.3, y: 70.5, r: 16, color: '255, 202, 88', intensity: 0.72 }],
+  // Subtle museum-grade archival dust motes & gentle memorial candlelight (zero cartoon overlays over authentic photographs)
+  'cme_l0_banner_damascus_gate_jerusalem.jpg': { motes: 12 },
+  'jerusalem_mandate_panorama_1920.jpg': { motes: 12 },
+  'jewish_immigrants_haifa_1949.jpg': { motes: 10 },
+  'cme_l1_b4_unscop_jerusalem_1947.jpg': { motes: 10 },
+  'exodus_ship.jpg': { motes: 10 },
+  'nakba_unrwa_khan_younis_1948.jpg': { motes: 10 },
+  'cme_plate_beit_lid_maabara_1950.jpg': { motes: 10 },
+  'cme_l3_banner_suez_canal_transit.jpg': { motes: 10 },
+  'cme_l3_sinai_campaign_trenches_1956.jpg': { motes: 12 },
+  'cme_l4_banner_galilee_golan_gamla.jpg': { motes: 10 },
+  'cme_l4_srca_ahmad_shukeiri_1965.jpg': { motes: 10 },
+  'cme_l5_tal_armoured_division_sinai_1967.jpg': { motes: 12 },
+  'cme_palestinian_refugees_1948.jpg': { motes: 10 },
+  'cme_l6_banner_east_jerusalem_temple_mount.jpg': { motes: 12 },
+  'cme_plate_amman_camp_black_september_1970.jpg': { motes: 10 },
+  'cme_l7_munich_olympic_village_1972.jpg': { motes: 8 },
+  'cme_l8_yom_kippur_suez_pontoon_bridge_1973.jpg': { motes: 10 },
+  'cme_opec_oil_embargo_pump_1973.jpg': { motes: 8 },
+  'cme_l9_cameo_carter_sadat_begin_camp_david_1978.jpg': { motes: 10 },
+  'cme_plate_kfar_etzion_settlement_1967.jpg': { motes: 10 },
+  'cme_l10_iconic_lebanon_sea_evacuation_1982.jpg': { motes: 10 },
+  'cme_l10_b3_gaza_first_intifada_dec_1987.jpg': { motes: 10 },
+  'cme_plate_rabin_memorial_candles_1995.jpg': {
+    glows: [{ x: 50.0, y: 65.0, r: 22, color: '255, 202, 88', intensity: 0.24 }],
+    motes: 12,
   },
 };
 
