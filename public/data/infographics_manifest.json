@@ -4205,5 +4205,445 @@
         "⚡ Outcome (AD 900 – Today): Cities Shifted, People Endured — Ancient Heritage Alive Across Five Countries"
       ]
     }
+  ],
+  "ks2_crime_and_punishment": [
+    {
+      "unit": "ks2_crime_and_punishment",
+      "lessonId": "lesson_1",
+      "slug": "ks2_crime_and_punishment_l01_visual_story_sheet",
+      "title": "How did the Romans catch thieves and judge crimes without police? (AD 43–410)",
+      "topic": "Enquiry 01: Roman Law, Twelve Tables and Bath Curse Tablets (AD 43–410)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_crime_and_punishment/assets/roman_forum_basilica_law_court.jpg",
+      "interactiveUrl": "/units/ks2_crime_and_punishment/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 43–200): Twelve Tables & Basilica Courts — Britain’s First Written Law Codes (AD 43)",
+        "Stage 2 (AD 43–300): No Police & Unequal Ranks — Citizens Fined vs Enslaved Workers Whipped",
+        "Stage 3 (c. AD 100–400): Bath’s Lead Curse Tablets — 130+ Scratched Lead Pleas at Aquae Sulis",
+        "⚡ Outcome (AD 43–410): Written Rules Without Detectives — Stone Courts Above, Sacred Curses Below"
+      ]
+    },
+    {
+      "unit": "ks2_crime_and_punishment",
+      "lessonId": "lesson_2",
+      "slug": "ks2_crime_and_punishment_l02_visual_story_sheet",
+      "title": "Were Anglo-Saxon laws fair community rules or painful superstitions? (AD 410–1066)",
+      "topic": "Enquiry 02: Anglo-Saxon Tithings, Wergild and Trial by Ordeal (AD 410–1066)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_crime_and_punishment/assets/banner_l2_winchester_anglo_saxon.jpg",
+      "interactiveUrl": "/units/ks2_crime_and_punishment/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 410–900): Tithings & The Hue and Cry — 10 Neighbours Aged 12+ Kept Order",
+        "Stage 2 (c. AD 600–900): King Alfred & Silver Wergild — 1,200s Thane vs 200s Ceorl Farmer",
+        "Stage 3 (AD 600–1066): Hundred Courts & Ordeals — 3 Paces With Red-Hot Iron or Cold Water",
+        "⚡ Outcome (AD 410–1066): Community Peace Mixed With Faith — Neighbours Policed Daily Village Life"
+      ]
+    },
+    {
+      "unit": "ks2_crime_and_punishment",
+      "lessonId": "lesson_3",
+      "slug": "ks2_crime_and_punishment_l03_visual_story_sheet",
+      "title": "How did Norman kings and medieval royal judges change English justice after 1066? (1066–1485)",
+      "topic": "Enquiry 03: Norman Forest Laws, Sanctuary and Royal Courts (1066–1485)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_crime_and_punishment/assets/banner_l3_westminster_hall_medieval.jpg",
+      "interactiveUrl": "/units/ks2_crime_and_punishment/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1066–1150): Norman Forest Laws — Poaching Royal Deer Harshly Punished",
+        "Stage 2 (1154–1215): Henry II’s Juries & 1215 — 12-Person Juries, Common Law & Magna Carta",
+        "Stage 3 (1100–1485): Sanctuary, Stocks & Pillories — 37–40 Days Sanctuary & Market Shaming",
+        "⚡ Outcome (1066–1485): Birth of the English Jury Trial — Common Law & Magna Carta Endure Today"
+      ]
+    },
+    {
+      "unit": "ks2_crime_and_punishment",
+      "lessonId": "lesson_4",
+      "slug": "ks2_crime_and_punishment_l04_visual_story_sheet",
+      "title": "Why did Tudor and Stuart rulers fear vagrants, plotters, and accused witches so fiercely? (1485–1700)",
+      "topic": "Enquiry 04: Tudor Vagrants, High Treason and Witchcraft Trials (1485–1700)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_crime_and_punishment/assets/banner_l4_tower_of_london_thames.jpg",
+      "interactiveUrl": "/units/ks2_crime_and_punishment/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1485–1603): Tudor Vagrants & 1601 Poor Law — Sick Locals Helped vs Beggars Whipped",
+        "Stage 2 (1605): 1605 Gunpowder High Treason — 36 Barrels & Guy Fawkes’s Dark Lantern",
+        "Stage 3 (1645–1736): Witch Trials Ended by Science — Hopkins (1645–47) → 1660 Royal Society",
+        "⚡ Outcome (1485–1736): From Superstition Toward Reason — Real Courtroom Proof Defeated Magic Claims"
+      ]
+    },
+    {
+      "unit": "ks2_crime_and_punishment",
+      "lessonId": "lesson_5",
+      "slug": "ks2_crime_and_punishment_l05_visual_story_sheet",
+      "title": "Why did Britain pass over 200 death-penalty laws—and why did juries stop using them? (1700–1820)",
+      "topic": "Enquiry 05: Smugglers, Highwaymen and The Bloody Code (1700–1820)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_crime_and_punishment/assets/banner_l5_old_bailey_newgate_georgian.jpg",
+      "interactiveUrl": "/units/ks2_crime_and_punishment/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1700–1800): Smugglers & Highwaymen — High Tea Taxes & Lonely Turnpike Roads",
+        "Stage 2 (1688–1820): The 220-Crime Bloody Code — Over 220 Hangings — Yet Juries Rebelled!",
+        "Stage 3 (1787–1868): Australia & Elizabeth Fry — 160,000+ Transported & Newgate School (1817)",
+        "⚡ Outcome (1700–1823): Harsh Gallows Deterrence Failed — Merciful Juries & Reformers Forced Change"
+      ]
+    },
+    {
+      "unit": "ks2_crime_and_punishment",
+      "lessonId": "lesson_6",
+      "slug": "ks2_crime_and_punishment_l06_visual_story_sheet",
+      "title": "How have uniformed police, prison reform, and forensic science transformed justice since 1829? (1829–Present)",
+      "topic": "Enquiry 06: Peel’s 1829 Bobbies, Victorian Prisons and Forensics (1829–Present)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_crime_and_punishment/assets/banner_l6_new_scotland_yard_victorian.jpg",
+      "interactiveUrl": "/units/ks2_crime_and_punishment/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1829–1856): Peel’s 1829 \"Bobbies\" — 1,000 Unarmed Blue-Coated Officers",
+        "Stage 2 (1842–1965): Pentonville to Ending Hanging — 1842 Separate System → 1965 Abolition",
+        "Stage 3 (1901–Present): 1901 Fingerprints & 1984 DNA — Scotland Yard (1901) & Leicester DNA (1984)",
+        "⚡ Outcome (AD 43–Present): Science, Prevention & Fair Rights — Juries + Unarmed Police + DNA Forensics"
+      ]
+    }
+  ],
+  "ks2_kingdom_of_benin": [
+    {
+      "unit": "ks2_kingdom_of_benin",
+      "lessonId": "lesson_1",
+      "slug": "ks2_kingdom_of_benin_l01_visual_story_sheet",
+      "title": "How did Edo communities build a vast rainforest kingdom by AD 900? (c. AD 900–1180)",
+      "topic": "Enquiry 01: Rainforest Kingdom — Ogiso Rulers and Red-Earth Walls (c. AD 900–1180)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l1_rainforest_nigeria_canopy.jpg",
+      "interactiveUrl": "/units/ks2_kingdom_of_benin/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 900): Ogiso Kings in Nigeria — 31 Early \"Kings of the Sky\"",
+        "Stage 2 (c. AD 900–1180): 16,000 km of Red-Clay Iya — 4× Longer Than China’s Great Wall!",
+        "Stage 3 (c. AD 900): AD 900 Britain Contrast — Saxon Timber Burhs vs Giant Edo Moats",
+        "⚡ Outcome (c. AD 900–1180): A West African Engineering Power — 500+ Linked Rainforest Settlements"
+      ]
+    },
+    {
+      "unit": "ks2_kingdom_of_benin",
+      "lessonId": "lesson_2",
+      "slug": "ks2_kingdom_of_benin_l02_visual_story_sheet",
+      "title": "How did Oba Ewuare the Great turn Benin City into a golden capital? (c. AD 1180–1500)",
+      "topic": "Enquiry 02: From Ogiso to Oba — Ewuare the Great and Golden Benin City (c. AD 1180–1500)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l2_dapper_benin_city_panorama.jpg",
+      "interactiveUrl": "/units/ks2_kingdom_of_benin/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 1180): Sacred Ife to Oba Eweka I — 800+ Year Royal Oba Dynasty",
+        "Stage 2 (c. AD 1440–1473): Ewuare’s 9 Gates & Oil Lamps — Inner Moat, Drains & Night Street Lamps",
+        "Stage 3 (c. AD 1450–1500): Coral Regalia & 40 Guilds — Red Coral Crowns & Brass Roof Birds",
+        "⚡ Outcome (c. AD 1180–1500): West Africa’s Planned Royal City — Safe Gates + Clean Streets + Master Guilds"
+      ]
+    },
+    {
+      "unit": "ks2_kingdom_of_benin",
+      "lessonId": "lesson_3",
+      "slug": "ks2_kingdom_of_benin_l03_visual_story_sheet",
+      "title": "How did Igun Street artists cast brass plaques to record Benin’s history? (c. AD 1400–1700)",
+      "topic": "Enquiry 03: Lost-Wax Masterpieces — Igun Street Brass-Casters, Ivory and Coral (c. AD 1400–1700)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l3_british_museum_benin_plaques_wall.jpg",
+      "interactiveUrl": "/units/ks2_kingdom_of_benin/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 1400–1600): Golden Brass on Igun Street — Copper + Zinc = Gleaming Brass",
+        "Stage 2 (c. AD 1400–1700): 3-Step Lost-Wax Casting — Beeswax → Clay Mould → Liquid Brass",
+        "Stage 3 (c. AD 1500–1700): Plaques & Carved Ivory Tusks — 900+ Pillar Plaques & 2m Altar Tusks",
+        "⚡ Outcome (c. AD 1400–1700): Master West African Bronze Casters — Mastered Centuries Before European Ships"
+      ]
+    },
+    {
+      "unit": "ks2_kingdom_of_benin",
+      "lessonId": "lesson_4",
+      "slug": "ks2_kingdom_of_benin_l04_visual_story_sheet",
+      "title": "What was life like inside the Oba’s court and Edo rainforest villages? (c. AD 1500–1700)",
+      "topic": "Enquiry 04: Sacred Court Rituals — The Oba, Queen Mother Idia and Everyday Edo Life (c. AD 1500–1700)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l4_benin_leopard_pair_display.jpg",
+      "interactiveUrl": "/units/ks2_kingdom_of_benin/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (c. AD 1500–1700): Leopard & Mudfish Symbols — \"Leopard of the House\" & Olokun",
+        "Stage 2 (c. AD 1504–1550): Oba Esigie & Iyoba Idia — First Queen Mother & Ivory Mask",
+        "Stage 3 (c. AD 1500–1700): Edo Farms, Cloth & Igue — White Yams, Cotton & Winter Feasts",
+        "⚡ Outcome (c. AD 1500–1700): Harmony Across Palace and Village — Shared Faith + Respected Leadership + Craft"
+      ]
+    },
+    {
+      "unit": "ks2_kingdom_of_benin",
+      "lessonId": "lesson_5",
+      "slug": "ks2_kingdom_of_benin_l05_visual_story_sheet",
+      "title": "Why were European visitors so amazed by Benin’s trade and wide streets? (c. AD 1485–1850)",
+      "topic": "Enquiry 05: Global Traders — Brass Manillas, Cowrie Shells and European Visitors (c. AD 1485–1850)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l5_portuguese_caravel_ships_maritime.jpg",
+      "interactiveUrl": "/units/ks2_kingdom_of_benin/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 1485–1553): 1485 Ships & Lisbon Envoys — Oba Controlled Gwato Port Trade",
+        "Stage 2 (c. AD 1485–1700): Manillas & Cowrie Money — Pepper & Cloth → Brass Manillas",
+        "Stage 3 (AD 1668): Olfert Dapper’s 1668 Praise — 30 Straight 120-Foot Clean Streets",
+        "⚡ Outcome (c. AD 1485–1850): West Africa’s Proud Trading Power — Diplomatic Equals With European Crowns"
+      ]
+    },
+    {
+      "unit": "ks2_kingdom_of_benin",
+      "lessonId": "lesson_6",
+      "slug": "ks2_kingdom_of_benin_l06_visual_story_sheet",
+      "title": "Why did Britain invade Benin in 1897, and should looted bronzes return? (1897–Present)",
+      "topic": "Enquiry 06: 1897 British Invasion, Looted Bronzes and Living Edo Heritage Today (1897–Present)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l6_benin_city_modern_edo_nigeria.jpg",
+      "interactiveUrl": "/units/ks2_kingdom_of_benin/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1888–Feb 1897): 1897 Trade Clash & Invasion — 1,200 Troops in Feb 1897",
+        "Stage 2 (1897–1900s): 4,000+ Looted Bronzes Sold — Scattered Across 160+ World Museums",
+        "Stage 3 (1914–Present): Restitution & Living Edo Today — Cambridge, Horniman & Berlin Returns",
+        "⚡ Outcome (c. AD 900–Present): A Living Thousand-Year Edo Story — Earthworks + Master Bronzes + Living Court"
+      ]
+    }
+  ],
+  "ks2_victorian_britain": [
+    {
+      "unit": "ks2_victorian_britain",
+      "lessonId": "lesson_1",
+      "slug": "ks2_victorian_britain_l01_visual_story_sheet",
+      "title": "How did steam railways and penny post shrink Queen Victoria’s Britain? (1837–1860)",
+      "topic": "Enquiry 01: Young Queen Victoria, Steam Railways and Shrinking Britain (1837–1860)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l1_paddington_railway_station.jpg",
+      "interactiveUrl": "/units/ks2_victorian_britain/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1837–1842): Young Victoria’s 1842 Train — Crowned Aged 18 (1837) • First Train 1842",
+        "Stage 2 (1838–1850): Brunel & Railway Mania — Box Tunnel • Clifton Bridge • SS Great Britain",
+        "Stage 3 (1840–1855): Railway Time & Penny Black — Greenwich Time & 1d Stamp (May 1840)",
+        "⚡ Outcome (1837–1860): A Nation Linked in Hours — Days by Horse → Hours by Steam"
+      ]
+    },
+    {
+      "unit": "ks2_victorian_britain",
+      "lessonId": "lesson_2",
+      "slug": "ks2_victorian_britain_l02_visual_story_sheet",
+      "title": "Why was factory and coal-mine work so dangerous for Victorian children? (1837–1850)",
+      "topic": "Enquiry 02: Chimneys, Cotton Mills and Children Underground (1837–1850)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l2_manchester_cottonopolis_mills.jpg",
+      "interactiveUrl": "/units/ks2_victorian_britain/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1837–1851): Booming \"Cottonopolis\" — 1851 Census: Over 50% Urban Britain",
+        "Stage 2 (1837–1847): Mill Piecers & Scavengers — 12-Hour Shifts • Deafening Iron Looms",
+        "Stage 3 (1837–1842): Trappers & Hurriers Underground — Age 8 in the Dark • Chained Coal Corves",
+        "⚡ Outcome (1837–1850): Shocking Truth Reaches London — 1842 Royal Commission Exposes Pits"
+      ]
+    },
+    {
+      "unit": "ks2_victorian_britain",
+      "lessonId": "lesson_3",
+      "slug": "ks2_victorian_britain_l03_visual_story_sheet",
+      "title": "How did Victorian reformers rescue children from workhouses, pits, and streets? (1834–1880)",
+      "topic": "Enquiry 03: Workhouses, Ragged Schools and Champions of Reform (1834–1880)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l3_ragged_school_workhouse_london.jpg",
+      "interactiveUrl": "/units/ks2_victorian_britain/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1834–1845): Grim 1834 Workhouses — Split Families • Gruel & Tarred Oakum",
+        "Stage 2 (1833–1853): Shaftesbury’s Mines & Mill Laws — 1842 Mines Act: Under-10s Banned",
+        "Stage 3 (1844–1880): Ragged Schools & Dr Barnardo — 1870: Jim Jarvis Inspires Barnardo",
+        "⚡ Outcome (1834–1880): Law & Charity Protect Children — Under-10s Out of Pits • 60,000+ Sheltered"
+      ]
+    },
+    {
+      "unit": "ks2_victorian_britain",
+      "lessonId": "lesson_4",
+      "slug": "ks2_victorian_britain_l04_visual_story_sheet",
+      "title": "What was daily life really like inside a strict Victorian classroom? (1870–1901)",
+      "topic": "Enquiry 04: Inside a Victorian Classroom — Slates, Drill and the 1870 Act (1870–1901)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l4_victorian_board_school_hall.jpg",
+      "interactiveUrl": "/units/ks2_victorian_britain/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1870–1891): 1870–1891 School Laws — 1870 Built • 1880 Compulsory • 1891 Free",
+        "Stage 2 (1870–1901): Three Rs, Slates & Inkwells — Reading • Writing • Arithmetic",
+        "Stage 3 (1870–1901): Canes, Dunce’s Caps & Hoops — Separate Doors • Drill & Iron Hoops",
+        "⚡ Outcome (1870–1901): A Nation of Readers by 1900 — Literacy Climbs Above 95% by 1900"
+      ]
+    },
+    {
+      "unit": "ks2_victorian_britain",
+      "lessonId": "lesson_5",
+      "slug": "ks2_victorian_britain_l05_visual_story_sheet",
+      "title": "Why did the 1851 Crystal Palace and new inventions amaze the world? (1851–1901)",
+      "topic": "Enquiry 05: Workshop of the World — The 1851 Crystal Palace and Inventions (1851–1901)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l5_crystal_palace_hyde_park_1851.jpg",
+      "interactiveUrl": "/units/ks2_victorian_britain/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1851): 1851 Crystal Palace — 6 Million Visitors • 300,000 Glass Panes",
+        "Stage 2 (1837–1885): Telegraph, Phone & Lightbulb — Bell (1876) & Joseph Swan’s Bulb (1878)",
+        "Stage 3 (1843–1881): Ada Lovelace & Mary Seacole — 1843 First Algorithm • 1855 British Hotel",
+        "⚡ Outcome (1851–1901): Blueprints of Our Modern World — Electricity + Phones + Flushing Hygiene + Code"
+      ]
+    },
+    {
+      "unit": "ks2_victorian_britain",
+      "lessonId": "lesson_6",
+      "slug": "ks2_victorian_britain_l06_visual_story_sheet",
+      "title": "How much had daily life changed across Britain by January 1901? (1850–1901)",
+      "topic": "Enquiry 06: Rich and Poor Homes, Seaside Holidays and 63-Year Legacy (1850–1901)",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l6_blackpool_brighton_seaside_pier.jpg",
+      "interactiveUrl": "/units/ks2_victorian_britain/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1850–1900): Rich Villas vs Back-to-Backs — Downstairs Servants vs Shared Yard Taps",
+        "Stage 2 (1871–1895): 1871 Bank Holidays & Bikes — Piers • 1871 FA Cup • 1885 Safety Bike",
+        "Stage 3 (1897–1901): 1897 Jubilee to Jan 1901 — 63-Year Reign • Population Doubled",
+        "⚡ Outcome (1837–1901): Huge Progress, Unfinished Fairness — Railways + Free Schools vs Slum Courts"
+      ]
+    }
+  ],
+  "ks2_local_history_detective": [
+    {
+      "unit": "ks2_local_history_detective",
+      "lessonId": "lesson_1",
+      "slug": "ks2_local_history_detective_l01_visual_story_sheet",
+      "title": "How do place-names and old maps unlock secret history on our doorstep? (AD 43–1936)",
+      "topic": "Enquiry 01: Secret Code in Place-Names and Old Ordnance Survey Maps",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l1_ordnance_survey_landscape.jpg",
+      "interactiveUrl": "/units/ks2_local_history_detective/visual_sheets/lesson_01_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (AD 43–1086): Cracking Place-Name Endings — 13,000+ Places in 1086 Domesday Book",
+        "Stage 2 (1791–1900): 1880s Ordnance Survey Maps — Founded 1791 • Detailed 1880s Plans",
+        "Stage 3 (1840s–1936): Stone Benchmarks & Trig Pillars — 500,000+ Wall Arrows & 6,500+ Trig Pillars",
+        "⚡ Outcome (AD 43–Present): Every Street Sign Tells a Story — Names + Old Maps + Wall Marks"
+      ]
+    },
+    {
+      "unit": "ks2_local_history_detective",
+      "lessonId": "lesson_2",
+      "slug": "ks2_local_history_detective_l02_visual_story_sheet",
+      "title": "How can timber frames, brickwork, and postboxes date a British street? (1485–1914)",
+      "topic": "Enquiry 02: Reading Buildings on the High Street — Timber, Brick and Royal Cyphers",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l2_british_high_street_buildings.jpg",
+      "interactiveUrl": "/units/ks2_local_history_detective/visual_sheets/lesson_02_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1485–1666): Tudor Timber & Jetties — 1485–1603 • Oak Beams & Wattle",
+        "Stage 2 (1714–1901): Georgian Sash vs Victorian Brick — 1714–1837 Sash • 1837–1901 Red Brick",
+        "Stage 3 (1852–Present): Cyphers, Datestones & Ghost Signs — 1852 Postboxes • 1874 Red Paint",
+        "⚡ Outcome (1485–Present): A Living Timeline Above Our Heads — 500 Years Visible From One Pavement"
+      ]
+    },
+    {
+      "unit": "ks2_local_history_detective",
+      "lessonId": "lesson_3",
+      "slug": "ks2_local_history_detective_l03_visual_story_sheet",
+      "title": "What can censuses, parish books, and school logbooks reveal about past families? (1538–1921)",
+      "topic": "Enquiry 03: Voices From Number 12 — Censuses, Parish Books and School Logbooks",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l3_parish_church_schoolhouse.jpg",
+      "interactiveUrl": "/units/ks2_local_history_detective/visual_sheets/lesson_03_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1801–1921): The Ten-Year UK Census — Every 10 Years Since 1801 (Names 1841+)",
+        "Stage 2 (1538–1801): 1538 Parish Books & Headstones — Baptisms, Marriages & Burials (1538+)",
+        "Stage 3 (1862–1914): 1862 School Logbooks — Weekly Headteacher Entries From 1862",
+        "⚡ Outcome (1538–1921): Meeting Ordinary Neighbours by Name — Censuses + Registers + Logbooks"
+      ]
+    },
+    {
+      "unit": "ks2_local_history_detective",
+      "lessonId": "lesson_4",
+      "slug": "ks2_local_history_detective_l04_visual_story_sheet",
+      "title": "How do street names, canals, mills, and stations show past local work? (1600–1965)",
+      "topic": "Enquiry 04: How Our Town Earned Its Living — Farms, Canals, Mills and Stations",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l4_british_canal_viaduct_industry.jpg",
+      "interactiveUrl": "/units/ks2_local_history_detective/visual_sheets/lesson_04_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1600–1830): Market Crosses & Milestones — 1618 Market Halls • 1700s Turnpikes",
+        "Stage 2 (1760–1840): Waterwheels, Canals & Locks — 30-Tonne Narrowboats & Waterwheels",
+        "Stage 3 (1830–1965): Steam Stations & Street Clues — 1830s Steam Boom • 1960s Closures",
+        "⚡ Outcome (1600–Present): Landscape Clues to Everyday Work — Markets + Canals + Rails + Road Names"
+      ]
+    },
+    {
+      "unit": "ks2_local_history_detective",
+      "lessonId": "lesson_5",
+      "slug": "ks2_local_history_detective_l05_visual_story_sheet",
+      "title": "How can War Memorials and Commonwealth records trace one local soldier’s story? (1914–1945)",
+      "topic": "Enquiry 05: Names Carved in Stone — Local War Memorials and Commonwealth Records",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l5_british_war_memorial_avenue.jpg",
+      "interactiveUrl": "/units/ks2_local_history_detective/visual_sheets/lesson_05_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1918–1945): 100,000+ Local War Memorials — 1914–1918 & 1939–1945 Rolls",
+        "Stage 2 (1917–1922): 1917 Equal White Headstones — Sir Fabian Ware • White Portland Stone",
+        "Stage 3 (1919–Today): From Stone Cross to Home Street — CWGC + Plaques + Medals + 1911 Census",
+        "⚡ Outcome (1914–Present): World History on One Local Street — Every Carved Name Was a Neighbour"
+      ]
+    },
+    {
+      "unit": "ks2_local_history_detective",
+      "lessonId": "lesson_6",
+      "slug": "ks2_local_history_detective_l06_visual_story_sheet",
+      "title": "How do oral history, Blue Plaques, and trails protect local heritage today? (1895–Present)",
+      "topic": "Enquiry 06: Living Memory, Oral History and Saving Local Heritage",
+      "type": "visual_story_sheet",
+      "aspect": "landscape",
+      "image": "",
+      "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l6_heritage_conservation_britain.jpg",
+      "interactiveUrl": "/units/ks2_local_history_detective/visual_sheets/lesson_06_visual_story.html",
+      "keyPoints": [
+        "Stage 1 (1945–Present): Oral History & 1971 Shillings — Living Memory Since 1945",
+        "Stage 2 (1866–1947): Octavia Hill, Plaques & Listing — 1866 Plaques • 1895 Trust • 1947 Listing",
+        "Stage 3 (Today): Your Doorstep Heritage Trail — 6 Enquiries → 1 Community Trail",
+        "⚡ Outcome (AD 43–Future): Guardians of Our Community Story — Every UK Doorstep Holds Deep History"
+      ]
+    }
   ]
 }

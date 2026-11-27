@@ -1,0 +1,518 @@
+{
+  "lesson_1": {
+    "num": "01",
+    "slug": "ks2_kingdom_of_benin_l01_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 1",
+    "datesBadge": "c. AD 900–1180",
+    "topicLabel": "Enquiry 01: Rainforest Kingdom — Ogiso Rulers and Red-Earth Walls (c. AD 900–1180)",
+    "title": "How did Edo communities build a vast rainforest kingdom by AD 900?",
+    "spokenTitle": "How did Edo communities build a vast rainforest kingdom by AD 900?",
+    "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l1_rainforest_nigeria_canopy.jpg",
+    "bridges": [
+      "16,000 km Iya",
+      "AD 900 Contrast",
+      "Rainforest Wonder"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Ogiso Kings in Nigeria",
+        "date": "c. AD 900",
+        "img": "/units/ks2_kingdom_of_benin/assets/benin_west_africa_edo_map_ks2.png",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "31 Early \"Kings of the Sky\"",
+        "connective": "How did Edo communities build a vast rainforest kingdom by AD 900?",
+        "html": "In <strong>southern Nigeria’s</strong> lush rainforest, <strong>Edo</strong> farmers grew yams and palm oil under early <strong>Ogiso</strong> rulers.",
+        "paired_prose_hash": "d0906a8888",
+        "spoken": "How did Edo communities build a vast rainforest kingdom by AD 900? <short pause> In southern Nigeria’s lush rainforest, Edo farmers grew yams and palm oil under early Ogiso rulers."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "16,000 km of Red-Clay Iya",
+        "date": "c. AD 900–1180",
+        "img": "/units/ks2_kingdom_of_benin/assets/benin_red_earth_moat_iya.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "4× Longer Than China’s Great Wall!",
+        "connective": "United villages worked together to dig giant earthworks by hand.",
+        "html": "Using iron hoes and reed baskets, teams dug deep <strong>Iya</strong> moats and sun-baked <strong>red laterite</strong> walls around 500+ towns.",
+        "paired_prose_hash": "e145fd9337",
+        "spoken": "United villages worked together to dig giant earthworks by hand. <short pause> Using iron hoes and reed baskets, teams dug deep Iya moats and sun-baked red laterite walls around 500+ towns."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "AD 900 Britain Contrast",
+        "date": "c. AD 900",
+        "img": "/units/ks2_kingdom_of_benin/assets/anglo_saxon_west_stow_contrast.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Saxon Timber Burhs vs Giant Edo Moats",
+        "connective": "Meanwhile, Anglo-Saxon Britain built on a much smaller scale.",
+        "html": "While <strong>Anglo-Saxon</strong> monks wrote on parchment inside small <strong>timber burhs</strong>, Edo built vast walls and oral history.",
+        "paired_prose_hash": "b9db02cd29",
+        "spoken": "Meanwhile, Anglo-Saxon Britain built on a much smaller scale. <short pause> While Anglo-Saxon monks wrote on parchment inside small timber burhs, Edo built vast walls and oral history."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "A West African Engineering Power",
+        "date": "c. AD 900–1180",
+        "img": "/units/ks2_kingdom_of_benin/assets/banner_l1_rainforest_nigeria_canopy.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "500+ Linked Rainforest Settlements",
+        "connective": "Rich forest farming and teamwork built an enduring kingdom.",
+        "html": "Early <strong>Edo</strong> communities turned southern Nigeria’s rainforest into one of the medieval world’s greatest <strong>earthwork kingdoms</strong>.",
+        "spoken": "Rich forest farming and teamwork built an enduring kingdom. <short pause> Early Edo communities turned southern Nigeria’s rainforest into one of the medieval world’s greatest earthwork kingdoms."
+      }
+    ],
+    "takeaway": "Around AD 900 in southern Nigeria, Edo communities united under Ogiso rulers and dug 16,000 kilometres of red-clay Iya earthworks far larger than Anglo-Saxon burhs.",
+    "vocab": [
+      [
+        "1. Edo",
+        "People, language, and heartland of Benin in southern Nigeria."
+      ],
+      [
+        "2. Ogiso",
+        "Early Benin rulers whose title meant \"Kings of the Sky\"."
+      ],
+      [
+        "3. Iya",
+        "16,000 km of red-clay ditches and banks dug around Edo towns."
+      ]
+    ],
+    "provenanceNote": "British Museum, Metropolitan Museum of Art, Ethnologisches Museum Berlin, MARKK Hamburg, MAA Cambridge, National Museum Benin City and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Around AD 900 in southern Nigeria, Edo communities united under Ogiso rulers and dug 16,000 kilometres of red-clay Iya earthworks far larger than Anglo-Saxon burhs."
+  },
+  "lesson_2": {
+    "num": "02",
+    "slug": "ks2_kingdom_of_benin_l02_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 2",
+    "datesBadge": "c. AD 1180–1500",
+    "topicLabel": "Enquiry 02: From Ogiso to Oba — Ewuare the Great and Golden Benin City (c. AD 1180–1500)",
+    "title": "How did Oba Ewuare the Great turn Benin City into a golden capital?",
+    "spokenTitle": "How did Oba Ewuare the Great turn Benin City into a golden capital?",
+    "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l2_dapper_benin_city_panorama.jpg",
+    "bridges": [
+      "9 Gates & Lamps",
+      "Coral & 40 Guilds",
+      "Golden Capital"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Sacred Ife to Oba Eweka I",
+        "date": "c. AD 1180",
+        "img": "/units/ks2_kingdom_of_benin/assets/ife_brass_royal_head_nigeria.jpg",
+        "mode": "contain",
+        "pos": "center 45%",
+        "stat": "800+ Year Royal Oba Dynasty",
+        "connective": "How did Oba Ewuare the Great turn Benin City into a golden capital?",
+        "html": "Around <strong>AD 1180</strong>, <strong>Prince Oranmiyan</strong> came from <strong>sacred Ife</strong> and his son <strong>Oba Eweka I</strong> founded Benin’s Oba line.",
+        "paired_prose_hash": "9b73c92ac1",
+        "spoken": "How did Oba Ewuare the Great turn Benin City into a golden capital? <short pause> Around AD 1180, Prince Oranmiyan came from sacred Ife and his son Oba Eweka I founded Benin’s Oba line."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Ewuare’s 9 Gates & Oil Lamps",
+        "date": "c. AD 1440–1473",
+        "img": "/units/ks2_kingdom_of_benin/assets/benin_palace_oba_dignitaries_plaque.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Inner Moat, Drains & Night Street Lamps",
+        "connective": "Around 1440, Oba Ewuare the Great redesigned Edo on a grand scale.",
+        "html": "<strong>Oba Ewuare</strong> built <strong>nine fortified gates</strong>, straight drained avenues, and tall <strong>palm-oil lamps</strong> long before London.",
+        "paired_prose_hash": "325f97c832",
+        "spoken": "Around 1440, Oba Ewuare the Great redesigned Edo on a grand scale. <short pause> Oba Ewuare built nine fortified gates, straight drained avenues, and tall palm-oil lamps long before London."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Coral Regalia & 40 Guilds",
+        "date": "c. AD 1450–1500",
+        "img": "/units/ks2_kingdom_of_benin/assets/benin_coral_bead_crown_collar.jpg",
+        "mode": "contain",
+        "pos": "center 45%",
+        "stat": "Red Coral Crowns & Brass Roof Birds",
+        "connective": "Inside the walled palace, royal guilds created dazzling court splendour.",
+        "html": "Watched over by <strong>brass palace birds</strong>, Ewuare wore <strong>red coral beads</strong>, launched <strong>Igue</strong>, and backed forty <strong>craft guilds</strong>.",
+        "paired_prose_hash": "c9a4873927",
+        "spoken": "Inside the walled palace, royal guilds created dazzling court splendour. <short pause> Watched over by brass palace birds, Ewuare wore red coral beads, launched Igue, and backed forty craft guilds."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "West Africa’s Planned Royal City",
+        "date": "c. AD 1180–1500",
+        "img": "/units/ks2_kingdom_of_benin/assets/banner_l2_dapper_benin_city_panorama.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Safe Gates + Clean Streets + Master Guilds",
+        "connective": "Strong kingship and town planning launched Benin’s Golden Age.",
+        "html": "From <strong>Oba Eweka I</strong> to <strong>Ewuare the Great</strong>, Benin City grew into one of the fifteenth-century world’s most <strong>orderly capitals</strong>.",
+        "spoken": "Strong kingship and town planning launched Benin’s Golden Age. <short pause> From Oba Eweka I to Ewuare the Great, Benin City grew into one of the fifteenth-century world’s most orderly capitals."
+      }
+    ],
+    "takeaway": "Founded through sacred Ife under Oba Eweka I around AD 1180, Benin City was rebuilt around 1440 by Oba Ewuare with nine gates, wide avenues, palm-oil lamps, coral regalia, and forty guilds.",
+    "vocab": [
+      [
+        "1. Oba",
+        "Sacred king of the Kingdom of Benin since c. AD 1180."
+      ],
+      [
+        "2. Ife",
+        "Sacred Yoruba city north-west of Benin linked to Eweka I."
+      ],
+      [
+        "3. Dynasty",
+        "Line of kings or queens belonging to the same royal family."
+      ]
+    ],
+    "provenanceNote": "British Museum, Metropolitan Museum of Art, Ethnologisches Museum Berlin, MARKK Hamburg, MAA Cambridge, National Museum Benin City and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Founded through sacred Ife under Oba Eweka I around AD 1180, Benin City was rebuilt around 1440 by Oba Ewuare with nine gates, wide avenues, palm-oil lamps, coral regalia, and forty guilds."
+  },
+  "lesson_3": {
+    "num": "03",
+    "slug": "ks2_kingdom_of_benin_l03_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 3",
+    "datesBadge": "c. AD 1400–1700",
+    "topicLabel": "Enquiry 03: Lost-Wax Masterpieces — Igun Street Brass-Casters, Ivory and Coral (c. AD 1400–1700)",
+    "title": "How did Igun Street artists cast brass plaques to record Benin’s history?",
+    "spokenTitle": "How did Igun Street artists cast brass plaques to record Benin’s history?",
+    "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l3_british_museum_benin_plaques_wall.jpg",
+    "bridges": [
+      "3-Step Lost-Wax",
+      "Plaques & Tusks",
+      "Shining History"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Golden Brass on Igun Street",
+        "date": "c. AD 1400–1600",
+        "img": "/units/ks2_kingdom_of_benin/assets/beeswax_honeycomb_lost_wax.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Copper + Zinc = Gleaming Brass",
+        "connective": "How did Igun Street artists cast brass plaques to record Benin’s history?",
+        "html": "Most <strong>Benin Bronzes</strong> were golden <strong>brass</strong> cast solely for the <strong>Oba</strong> by hereditary families on <strong>Igun Street</strong>.",
+        "paired_prose_hash": "388e7ab7ab",
+        "spoken": "How did Igun Street artists cast brass plaques to record Benin’s history? <short pause> Most Benin Bronzes were golden brass cast solely for the Oba by hereditary families on Igun Street."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "3-Step Lost-Wax Casting",
+        "date": "c. AD 1400–1700",
+        "img": "/units/ks2_kingdom_of_benin/assets/benin_brass_commemorative_oba_head.jpg",
+        "mode": "contain",
+        "pos": "center 45%",
+        "stat": "Beeswax → Clay Mould → Liquid Brass",
+        "connective": "Sculptors turned soft yellow beeswax into solid metal masterpieces.",
+        "html": "Heat melted out the carved <strong>beeswax model</strong>, casters poured brass from a <strong>clay crucible</strong>, and cool clay was cracked open.",
+        "paired_prose_hash": "7608faf2c4",
+        "spoken": "Sculptors turned soft yellow beeswax into solid metal masterpieces. <short pause> Heat melted out the carved beeswax model, casters poured brass from a clay crucible, and cool clay was cracked open."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Plaques & Carved Ivory Tusks",
+        "date": "c. AD 1500–1700",
+        "img": "/units/ks2_kingdom_of_benin/assets/benin_carved_altar_ivory_tusk.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "900+ Pillar Plaques & 2m Altar Tusks",
+        "connective": "Brass and ivory worked side by side as Benin’s royal memory.",
+        "html": "Plaques nailed onto <strong>wooden palace pillars</strong> and <strong>carved ivory tusks</strong> recorded kings, warriors, and visitors.",
+        "paired_prose_hash": "4bee9238e0",
+        "spoken": "Brass and ivory worked side by side as Benin’s royal memory. <short pause> Plaques nailed onto wooden palace pillars and carved ivory tusks recorded kings, warriors, and visitors."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Master West African Bronze Casters",
+        "date": "c. AD 1400–1700",
+        "img": "/units/ks2_kingdom_of_benin/assets/banner_l3_british_museum_benin_plaques_wall.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Mastered Centuries Before European Ships",
+        "connective": "Every cracked mould revealed a one-of-a-kind royal treasure.",
+        "html": "Benin’s <strong>Igun Street brass-casters</strong> and <strong>ivory-carvers</strong> created one of humanity’s greatest <strong>artistic archives</strong>.",
+        "spoken": "Every cracked mould revealed a one-of-a-kind royal treasure. <short pause> Benin’s Igun Street brass-casters and ivory-carvers created one of humanity’s greatest artistic archives."
+      }
+    ],
+    "takeaway": "Centuries before European contact, Benin’s royal guild on Igun Street used beeswax-and-clay lost-wax casting to create over 900 brass plaques and royal heads alongside carved ivory tusks.",
+    "vocab": [
+      [
+        "1. Benin Bronzes",
+        "Royal Benin sculptures mostly cast from bright golden brass."
+      ],
+      [
+        "2. Brass",
+        "Golden metal alloy of copper and zinc used on Igun Street."
+      ],
+      [
+        "3. Igun Street",
+        "Royal street in Benin City home to master brass-casters."
+      ]
+    ],
+    "provenanceNote": "British Museum, Metropolitan Museum of Art, Ethnologisches Museum Berlin, MARKK Hamburg, MAA Cambridge, National Museum Benin City and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Centuries before European contact, Benin’s royal guild on Igun Street used beeswax-and-clay lost-wax casting to create over 900 brass plaques and royal heads alongside carved ivory tusks."
+  },
+  "lesson_4": {
+    "num": "04",
+    "slug": "ks2_kingdom_of_benin_l04_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 4",
+    "datesBadge": "c. AD 1500–1700",
+    "topicLabel": "Enquiry 04: Sacred Court Rituals — The Oba, Queen Mother Idia and Everyday Edo Life (c. AD 1500–1700)",
+    "title": "What was life like inside the Oba’s court and Edo rainforest villages?",
+    "spokenTitle": "What was life like inside the Oba’s court and Edo rainforest villages?",
+    "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l4_benin_leopard_pair_display.jpg",
+    "bridges": [
+      "Queen Mother Idia",
+      "Yams & Igue Feast",
+      "Court & Village"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Leopard & Mudfish Symbols",
+        "date": "c. AD 1500–1700",
+        "img": "/units/ks2_kingdom_of_benin/assets/benin_oba_mudfish_legs_plaque.jpg",
+        "mode": "contain",
+        "pos": "center 45%",
+        "stat": "\"Leopard of the House\" & Olokun",
+        "connective": "What was life like inside the Oba’s court and Edo rainforest villages?",
+        "html": "Spotted leopards showed the <strong>Oba’s</strong> rule on land, while coiled <strong>mudfish</strong> linked him to sea-god <strong>Olokun</strong>.",
+        "paired_prose_hash": "b93f992037",
+        "spoken": "What was life like inside the Oba’s court and Edo rainforest villages? <short pause> Spotted leopards showed the Oba’s rule on land, while coiled mudfish linked him to sea-god Olokun."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Oba Esigie & Iyoba Idia",
+        "date": "c. AD 1504–1550",
+        "img": "/units/ks2_kingdom_of_benin/assets/benin_ancestral_altar_shrine_1891.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "First Queen Mother & Ivory Mask",
+        "connective": "Strong female wisdom helped steer Benin’s sixteenth-century Golden Age.",
+        "html": "<strong>Oba Esigie</strong> honoured his wise mother <strong>Idia</strong> as first <strong>Iyoba</strong> with <strong>Uselu palace</strong> and a <strong>carved ivory mask</strong>.",
+        "paired_prose_hash": "420ac3dea6",
+        "spoken": "Strong female wisdom helped steer Benin’s sixteenth-century Golden Age. <short pause> Oba Esigie honoured his wise mother Idia as first Iyoba with Uselu palace and a carved ivory mask."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Edo Farms, Cloth & Igue",
+        "date": "c. AD 1500–1700",
+        "img": "/units/ks2_kingdom_of_benin/assets/west_african_yams_harvest.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "White Yams, Cotton & Winter Feasts",
+        "connective": "Beyond palace walls, hardworking villages sustained the whole kingdom.",
+        "html": "Families in red-clay compounds grew <strong>white yams</strong>, wove <strong>cotton cloth</strong>, and danced at the annual <strong>Igue festival</strong>.",
+        "paired_prose_hash": "7dd9fc8f20",
+        "spoken": "Beyond palace walls, hardworking villages sustained the whole kingdom. <short pause> Families in red-clay compounds grew white yams, wove cotton cloth, and danced at the annual Igue festival."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Harmony Across Palace and Village",
+        "date": "c. AD 1500–1700",
+        "img": "/units/ks2_kingdom_of_benin/assets/banner_l4_benin_leopard_pair_display.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Shared Faith + Respected Leadership + Craft",
+        "connective": "Prosperous farms and guilds made Benin ready for global trade.",
+        "html": "Golden Age Benin united <strong>Oba Esigie</strong>, <strong>Queen Mother Idia</strong>, and thriving <strong>rainforest villages</strong> into one proud society.",
+        "spoken": "Prosperous farms and guilds made Benin ready for global trade. <short pause> Golden Age Benin united Oba Esigie, Queen Mother Idia, and thriving rainforest villages into one proud society."
+      }
+    ],
+    "takeaway": "Under Oba Esigie and wise Queen Mother Idia, Benin blended sacred court rituals honouring Olokun and royal ancestors with thriving villages growing yams, palm oil, and cotton cloth.",
+    "vocab": [
+      [
+        "1. Iyoba",
+        "Royal title of Queen Mother created for wise Idia."
+      ],
+      [
+        "2. Olokun",
+        "Edo god of rivers, seas, wealth, and good fortune."
+      ],
+      [
+        "3. Mudfish",
+        "Fish able to cross damp mud, linking land and sea-god Olokun."
+      ]
+    ],
+    "provenanceNote": "British Museum, Metropolitan Museum of Art, Ethnologisches Museum Berlin, MARKK Hamburg, MAA Cambridge, National Museum Benin City and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Under Oba Esigie and wise Queen Mother Idia, Benin blended sacred court rituals honouring Olokun and royal ancestors with thriving villages growing yams, palm oil, and cotton cloth."
+  },
+  "lesson_5": {
+    "num": "05",
+    "slug": "ks2_kingdom_of_benin_l05_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 5",
+    "datesBadge": "c. AD 1485–1850",
+    "topicLabel": "Enquiry 05: Global Traders — Brass Manillas, Cowrie Shells and European Visitors (c. AD 1485–1850)",
+    "title": "Why were European visitors so amazed by Benin’s trade and wide streets?",
+    "spokenTitle": "Why were European visitors so amazed by Benin’s trade and wide streets?",
+    "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l5_portuguese_caravel_ships_maritime.jpg",
+    "bridges": [
+      "Manillas & Cowries",
+      "1668 Dapper Book",
+      "Equal Partners"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "1485 Ships & Lisbon Envoys",
+        "date": "AD 1485–1553",
+        "img": "/units/ks2_kingdom_of_benin/assets/benin_portuguese_soldier_musket_plaque.jpg",
+        "mode": "contain",
+        "pos": "center 45%",
+        "stat": "Oba Controlled Gwato Port Trade",
+        "connective": "Why were European visitors so amazed by Benin’s trade and wide streets?",
+        "html": "After <strong>Portuguese</strong> ships reached <strong>Gwato port</strong> in <strong>1485</strong>, Benin set prices, sent <strong>Lisbon ambassadors</strong>, and spoke Portuguese.",
+        "paired_prose_hash": "b92a8668e9",
+        "spoken": "Why were European visitors so amazed by Benin’s trade and wide streets? <short pause> After Portuguese ships reached Gwato port in 1485, Benin set prices, sent Lisbon ambassadors, and spoke Portuguese."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Manillas & Cowrie Money",
+        "date": "c. AD 1485–1700",
+        "img": "/units/ks2_kingdom_of_benin/assets/west_african_brass_manillas_ring.jpg",
+        "mode": "contain-light",
+        "pos": "center 45%",
+        "stat": "Pepper & Cloth → Brass Manillas",
+        "connective": "Ocean trade poured fresh metal into Igun Street’s furnaces.",
+        "html": "Swapping <strong>Benin pepper</strong> and cloth brought market <strong>cowrie shells</strong> and <strong>brass manillas</strong> melted into palace plaques!",
+        "paired_prose_hash": "2a1712acab",
+        "spoken": "Ocean trade poured fresh metal into Igun Street’s furnaces. <short pause> Swapping Benin pepper and cloth brought market cowrie shells and brass manillas melted into palace plaques!"
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Olfert Dapper’s 1668 Praise",
+        "date": "AD 1668",
+        "img": "/units/ks2_kingdom_of_benin/assets/monetaria_moneta_cowrie_shells.jpg",
+        "mode": "contain-light",
+        "pos": "center 45%",
+        "stat": "30 Straight 120-Foot Clean Streets",
+        "connective": "Dutch merchant diaries amazed readers across seventeenth-century Europe.",
+        "html": "In <strong>1668</strong>, <strong>Olfert Dapper</strong> praised Benin’s <strong>thirty straight streets</strong>, <strong>polished clay walls</strong>, and Haarlem-sized palace.",
+        "paired_prose_hash": "e36cbe25de",
+        "spoken": "Dutch merchant diaries amazed readers across seventeenth-century Europe. <short pause> In 1668, Olfert Dapper praised Benin’s thirty straight streets, polished clay walls, and Haarlem-sized palace."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "West Africa’s Proud Trading Power",
+        "date": "c. AD 1485–1850",
+        "img": "/units/ks2_kingdom_of_benin/assets/banner_l5_portuguese_caravel_ships_maritime.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Diplomatic Equals With European Crowns",
+        "connective": "For four centuries, Benin traded on its own royal rules.",
+        "html": "Pre-colonial <strong>Benin</strong> regulated European ships, turned imported <strong>manillas</strong> into art, and maintained <strong>model avenues</strong>.",
+        "spoken": "For four centuries, Benin traded on its own royal rules. <short pause> Pre-colonial Benin regulated European ships, turned imported manillas into art, and maintained model avenues."
+      }
+    ],
+    "takeaway": "From 1485, the Oba regulated foreign ships at Gwato port, melted imported brass manillas into plaques, and impressed Europe in Olfert Dapper’s 1668 account of Benin’s thirty wide streets.",
+    "vocab": [
+      [
+        "1. Gwato Port",
+        "Benin River port where ships sought the Oba’s trade licence."
+      ],
+      [
+        "2. Ambassador",
+        "Official royal envoy sent to represent a king abroad."
+      ],
+      [
+        "3. Manillas",
+        "Horseshoe-shaped brass bracelets melted down for plaques."
+      ]
+    ],
+    "provenanceNote": "British Museum, Metropolitan Museum of Art, Ethnologisches Museum Berlin, MARKK Hamburg, MAA Cambridge, National Museum Benin City and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> From 1485, the Oba regulated foreign ships at Gwato port, melted imported brass manillas into plaques, and impressed Europe in Olfert Dapper’s 1668 account of Benin’s thirty wide streets."
+  },
+  "lesson_6": {
+    "num": "06",
+    "slug": "ks2_kingdom_of_benin_l06_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 6",
+    "datesBadge": "1897–Present",
+    "topicLabel": "Enquiry 06: 1897 British Invasion, Looted Bronzes and Living Edo Heritage Today (1897–Present)",
+    "title": "Why did Britain invade Benin in 1897, and should looted bronzes return?",
+    "spokenTitle": "Why did Britain invade Benin in 1897, and should looted bronzes return?",
+    "thumbUrl": "/units/ks2_kingdom_of_benin/assets/banner_l6_benin_city_modern_edo_nigeria.jpg",
+    "bridges": [
+      "4,000+ Looted",
+      "Restitution Today",
+      "1,000-Year Legacy"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "1897 Trade Clash & Invasion",
+        "date": "1888–Feb 1897",
+        "img": "/units/ks2_kingdom_of_benin/assets/british_punitive_expedition_1897_troops.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1,200 Troops in Feb 1897",
+        "connective": "Why did Britain invade Benin in 1897, and should looted bronzes return?",
+        "html": "Clashing with <strong>Oba Ovonramwen</strong> over <strong>palm oil and rubber</strong>, Britain launched the <strong>1897 Punitive Expedition</strong>.",
+        "paired_prose_hash": "f5874f2158",
+        "spoken": "Why did Britain invade Benin in 1897, and should looted bronzes return? <short pause> Clashing with Oba Ovonramwen over palm oil and rubber, Britain launched the 1897 Punitive Expedition."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "4,000+ Looted Bronzes Sold",
+        "date": "1897–1900s",
+        "img": "/units/ks2_kingdom_of_benin/assets/horniman_cambridge_benin_bronzes_museum.jpg",
+        "mode": "contain",
+        "pos": "center 45%",
+        "stat": "Scattered Across 160+ World Museums",
+        "connective": "Soldiers stripped Benin’s sacred visual history archive from the burned palace.",
+        "html": "Over <strong>four thousand artworks</strong> from <strong>palace storehouses</strong> were shipped to <strong>London</strong> and sold worldwide.",
+        "paired_prose_hash": "f100bbae19",
+        "spoken": "Soldiers stripped Benin’s sacred visual history archive from the burned palace. <short pause> Over four thousand artworks from palace storehouses were shipped to London and sold worldwide."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Restitution & Living Edo Today",
+        "date": "1914–Present",
+        "img": "/units/ks2_kingdom_of_benin/assets/modern_benin_city_national_museum_edo.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Cambridge, Horniman & Berlin Returns",
+        "connective": "More than a century later, treasures are returning to a thriving royal city.",
+        "html": "Modern <strong>restitution</strong> returns bronzes to <strong>Nigeria</strong>, where <strong>Oba Ewuare II</strong> and <strong>Igun</strong> casters thrive today!",
+        "paired_prose_hash": "73c849cfb8",
+        "spoken": "More than a century later, treasures are returning to a thriving royal city. <short pause> Modern restitution returns bronzes to Nigeria, where Oba Ewuare II and Igun casters thrive today!"
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "A Living Thousand-Year Edo Story",
+        "date": "c. AD 900–Present",
+        "img": "/units/ks2_kingdom_of_benin/assets/banner_l6_benin_city_modern_edo_nigeria.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Earthworks + Master Bronzes + Living Court",
+        "connective": "From AD 900 Ogiso moats to today’s Igun Street, Edo heritage endures.",
+        "html": "The <strong>Kingdom of Benin</strong> shines on through giant <strong>Iya walls</strong>, <strong>lost-wax bronzes</strong>, <strong>restitution</strong>, and <strong>living Edo pride</strong>.",
+        "spoken": "From AD 900 Ogiso moats to today’s Igun Street, Edo heritage endures. <short pause> The Kingdom of Benin shines on through giant Iya walls, lost-wax bronzes, restitution, and living Edo pride."
+      }
+    ],
+    "takeaway": "After British forces invaded over palm-oil trade in February 1897 and looted 4,000+ bronzes, modern restitution is returning treasures to Nigeria where Oba Ewuare II and Igun Street casters thrive today.",
+    "vocab": [
+      [
+        "1. Oba Ovonramwen",
+        "Oba who defended Benin’s independence before exile in 1897."
+      ],
+      [
+        "2. Punitive Expedition",
+        "February 1897 British invasion that burned and looted the palace."
+      ],
+      [
+        "3. Looting",
+        "Taking sacred art or property by military force in war."
+      ]
+    ],
+    "provenanceNote": "British Museum, Metropolitan Museum of Art, Ethnologisches Museum Berlin, MARKK Hamburg, MAA Cambridge, National Museum Benin City and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> After British forces invaded over palm-oil trade in February 1897 and looted 4,000+ bronzes, modern restitution is returning treasures to Nigeria where Oba Ewuare II and Igun Street casters thrive today."
+  }
+}

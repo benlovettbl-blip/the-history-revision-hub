@@ -934,17 +934,6 @@ export default {
         },
         {
           "type": "youtube",
-          "id": "056FI2Pq9RY",
-          "url": "https://www.youtube.com/watch?v=056FI2Pq9RY",
-          "title": "Suffragette (2015) Official Movie Trailer (Carey Mulligan, Meryl Streep)",
-          "duration": "2 mins 31 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Depicts working-class laundry worker Maud Watts drawn into militant WSPU activism in London. Recommended Watch Window: 00:00–02:30 • Lesson Phase: Visual & Cultural Representation. Tone Alert: Emotional period drama capturing police brutality, prison force-feeding, and social stigma.",
-          "viewing_task": "<ol><li><strong>[00:50] Context:</strong> How does the trailer depict the brutal working conditions of ordinary working-class women in Edwardian laundries?</li><li><strong>[01:40] Analysis:</strong> How does the film illustrate the severe personal sacrifices made by Suffragettes (imprisonment, losing custody of children, force-feeding under the 'Cat and Mouse Act')?</li></ol>",
-          "model_answer": "<ol><li><strong>Context:</strong> Working-class women laboured 14-hour days in toxic steam and scalding water for a fraction of male wages, with zero legal protection or political representation to reform labour laws.</li><li><strong>Analysis:</strong> Suffragettes faced total ostracism from their communities: husbands threw them out of homes, the state stripped them of child custody, and in prison they endured agonizing nasal force-feeding when hunger striking against political prisoner abuse.</li></ol>"
-        },
-        {
-          "type": "youtube",
           "id": "wVrlLKAR1S0",
           "url": "https://www.youtube.com/watch?v=wVrlLKAR1S0",
           "title": "Emily Davison: Suffragette Killed by King's Horse at Derby (1913) | British Pathé",
@@ -8556,17 +8545,6 @@ export default {
           "teacher_guidance": "Inspiring examination of the women-only peace camp established at RAF Greenham Common in Berkshire in September 1981 to protest the stationing of US Cruise missiles on British soil. Recommended Watch Window: 00:30–04:00 • Lesson Phase: Feminist Direct Action & Cold War Resistance. Tone Alert: Moving oral history of peaceful civil disobedience.",
           "viewing_task": "<ol><li><strong>[01:00] Recall:</strong> Why did 36 women march from Cardiff to Berkshire in 1981 and set up a permanent protest camp outside RAF Greenham Common?</li><li><strong>[02:20] Explain:</strong> How did 30,000 women peacefully protest on 12 December 1982 by 'Embracing the Base'?</li><li><strong>[03:40] Challenge:</strong> How did the women's peaceful blockade challenge traditional gender roles and redefine anti-war protest in Britain?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> To protest NATO's decision to deploy 96 American nuclear-armed BGM-109G Ground Launched Cruise Missiles at the base.</li><li><strong>Explain:</strong> They joined hands in an unbroken human chain surrounding the entire nine-mile perimeter fence of the military airfield, weaving photos of their children, toys, and peace ribbons into the wire.</li><li><strong>Challenge:</strong> Women left comfortable homes to live in muddy bivouacs through harsh winters, facing police harassment and media smear campaigns, asserting that motherhood gave them a direct moral duty to protect human life from annihilation.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "id": "vgT4Y30DkaA",
-          "url": "https://www.youtube.com/watch?v=vgT4Y30DkaA",
-          "title": "Threads (1984) Official Theatrical Trailer: Nuclear Apocalypse in Britain | BBC",
-          "duration": "2 mins 23 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Harrowing trailer for director Mick Jackson and writer Barry Hines' 1984 BBC film portraying the nuclear destruction of Sheffield and the ensuing medieval regression of Britain. Recommended Watch Window: 00:00–02:23 • Lesson Phase: Cold War Culture & Apocalyptic Realism. Tone Alert: Intense psychological drama; stark depiction of medical catastrophe and nuclear winter.",
-          "viewing_task": "<ol><li><strong>[00:45] Cultural Analysis:</strong> How does the trailer depict ordinary family life in Sheffield disintegrating as superpower tensions escalate in the Persian Gulf?</li><li><strong>[01:40] Historical Impact:</strong> Why did the broadcast of Threads on BBC television on 23 September 1984 completely shatter public confidence in government civil defence pamphlets like 'Protect and Survive'?</li></ol>",
-          "model_answer": "<ol><li><strong>Cultural Analysis:</strong> It contrasts domestic routines (hanging laundry, planning weddings, supermarket shopping) with frantic panic-buying, sandbagging, and the blinding thermonuclear flash.</li><li><strong>Historical Impact:</strong> By showing real scientific estimates of nuclear winter, radiation sickness, starvation, and societal collapse into primitive barbarism, it exposed government advice to hide under doors as absurdly inadequate, sparking massive surges in CND membership.</li></ol>"
         }
       ],
       "tasks": [

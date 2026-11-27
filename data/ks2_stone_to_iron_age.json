@@ -125,7 +125,7 @@
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz together on the board."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 15-question Plenary Quiz together on the board."
               }
             ]
           }
@@ -301,7 +301,88 @@
               "studio_audio": "/audio/sources/ks2_stone_to_iron_age/lesson_1_sD.mp3",
               "studio_voice_label": "Carved Red-Deer Antler Headdress…"
             }
-          ]
+          ],
+          "concept_widget": {
+            "type": "spectrum_slider",
+            "eyebrow": "KS2 Interactive History Explorer",
+            "title": "How Melting Ice Drowned Doggerland and Made Britain an Island",
+            "default_index": 0,
+            "caption": "Slide or tap across the three stages to trace how rising meltwater flooded Doggerland around 6500 BC.",
+            "stops": [
+              {
+                "short_label": "1. Green Land Bridge",
+                "label": "Before 7000 BC: Walking Across Green Doggerland",
+                "color": "#16a34a",
+                "bg_color": "rgba(22, 163, 74, 0.2)",
+                "summary": "Wide grassy valleys, rivers, and marshes joined Britain straight to mainland Europe so Stone Age families walked across on dry land.",
+                "traits": [
+                  {
+                    "category": "Landscape",
+                    "glyph": "law",
+                    "value": "Low green plains, rivers, and reed marshes linking Britain to Europe."
+                  },
+                  {
+                    "category": "Everyday Life",
+                    "glyph": "people",
+                    "value": "Families camped beside marshes to spear eels, net ducks, and trap beavers."
+                  },
+                  {
+                    "category": "How People Crossed",
+                    "glyph": "leader",
+                    "value": "Hunters walked dry-footed all the way from mainland Europe into Britain."
+                  }
+                ]
+              },
+              {
+                "short_label": "2. Rising Meltwater",
+                "label": "c. 7000–6500 BC: Melting Ice Pours Into the Sea",
+                "color": "#f59e0b",
+                "bg_color": "rgba(245, 158, 11, 0.2)",
+                "summary": "As giant northern ice sheets melted, huge amounts of water poured into the sea and crept across low-lying marshes.",
+                "traits": [
+                  {
+                    "category": "Landscape",
+                    "glyph": "law",
+                    "value": "Rising tides and fierce storms turned low river valleys into salty mudflats."
+                  },
+                  {
+                    "category": "Everyday Life",
+                    "glyph": "people",
+                    "value": "Hunter-gatherer bands moved camp onto higher hills as hunting grounds flooded."
+                  },
+                  {
+                    "category": "How People Crossed",
+                    "glyph": "leader",
+                    "value": "Dry paths vanished under water and left muddy islands behind."
+                  }
+                ]
+              },
+              {
+                "short_label": "3. Island Britain",
+                "label": "c. 6500 BC: Doggerland Sinks Under the North Sea",
+                "color": "#0284c7",
+                "bg_color": "rgba(2, 132, 199, 0.2)",
+                "summary": "Rising waves flooded low Doggerland forever around 6500 BC, cutting Britain off from mainland Europe as an island.",
+                "traits": [
+                  {
+                    "category": "Landscape",
+                    "glyph": "law",
+                    "value": "Deep North Sea waves covered the old green land bridge forever."
+                  },
+                  {
+                    "category": "Everyday Life",
+                    "glyph": "people",
+                    "value": "Modern fishing boats still pull mammoth teeth and flint tools from the sea floor."
+                  },
+                  {
+                    "category": "How People Crossed",
+                    "glyph": "leader",
+                    "value": "Every later newcomer to island Britain now had to cross the sea by boat."
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "sources": [
@@ -1002,7 +1083,7 @@
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz together on the board."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 15-question Plenary Quiz together on the board."
               }
             ]
           }
@@ -1884,7 +1965,7 @@
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz together on the board."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 15-question Plenary Quiz together on the board."
               }
             ]
           }
@@ -2765,7 +2846,7 @@
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz to consolidate Key Stage 2 mastery."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 15-question Plenary Quiz to consolidate Key Stage 2 mastery."
               }
             ]
           }
@@ -3679,7 +3760,7 @@
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz to consolidate Key Stage 2 mastery."
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 15-question Plenary Quiz to consolidate Key Stage 2 mastery."
               }
             ]
           }
@@ -4591,7 +4672,7 @@
               {
                 "time": "42–50m",
                 "label": "Tap-Tile Summary & Grand Unit Plenary Quiz",
-                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 115-question Plenary Quiz to celebrate completing Prehistoric Britain!"
+                "instruction": "Complete the Tap-Tile Vocabulary Cloze and 15-question Plenary Quiz to celebrate completing Prehistoric Britain!"
               }
             ]
           }
@@ -4737,7 +4818,85 @@
               "studio_audio": "/audio/sources/ks2_stone_to_iron_age/lesson_6_sA.mp3",
               "studio_voice_label": "Spinning Iron Age Rotary Quern S…"
             }
-          ]
+          ],
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "KS2 Interactive History Explorer",
+            "title": "Three Ages of Prehistoric Tools: Flint, Bronze, and Iron",
+            "default_index": 0,
+            "caption": "Tap each tab to compare how prehistoric toolmakers moved from chipped stone to cast bronze and hammered iron.",
+            "items": [
+              {
+                "tab_label": "1. Stone Age Flint",
+                "title": "Chipped Flint and Polished Stone",
+                "dates": "c. 850,000–2400 BC",
+                "badge": "Chipped and Ground",
+                "color": "#64748b",
+                "bg_color": "rgba(100, 116, 139, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Raw Material",
+                    "value": "Hard flint nodules and tough quarry stones gathered from rivers and chalk."
+                  },
+                  {
+                    "label": "How Makers Shaped It",
+                    "value": "Struck by flint knapping for sharp flakes or rubbed smooth on wet sandstone."
+                  },
+                  {
+                    "label": "Strengths and Limits",
+                    "value": "Razor-sharp for meat and trees, but a snapped stone axe could never be melted down."
+                  }
+                ],
+                "takeaway": "Clever flint handaxes and polished stone axes helped hunters and first farmers survive long before metal arrived."
+              },
+              {
+                "tab_label": "2. Bronze Age Metal",
+                "title": "Cast Copper and Tin Bronze",
+                "dates": "c. 2400–800 BC",
+                "badge": "Poured in Moulds",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Raw Material",
+                    "value": "Nine parts copper rock from Wales melted with one part tin ore from Cornwall."
+                  },
+                  {
+                    "label": "How Makers Shaped It",
+                    "value": "Smelted over hot charcoal fires and poured as glowing liquid into two-piece stone moulds."
+                  },
+                  {
+                    "label": "Strengths and Limits",
+                    "value": "Cleared woodland faster and broken blades could be remelted, though copper and tin were rare."
+                  }
+                ],
+                "takeaway": "Mixing copper and tin gave Bronze Age communities gleaming axes, shields, and swords that could be cast again."
+              },
+              {
+                "tab_label": "3. Iron Age Furnaces",
+                "title": "Hammered Red-Hot Iron",
+                "dates": "c. 800 BC–AD 43",
+                "badge": "Forged by Blacksmiths",
+                "color": "#0284c7",
+                "bg_color": "rgba(2, 132, 199, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Raw Material",
+                    "value": "Common reddish iron ore dug straight from British hills and bogs."
+                  },
+                  {
+                    "label": "How Makers Shaped It",
+                    "value": "Heated in roaring clay furnaces until glowing hot, then hammered into shape by blacksmiths."
+                  },
+                  {
+                    "label": "Strengths and Limits",
+                    "value": "Tougher than bronze and plentiful across Britain, making strong ploughshares that sliced heavy clay soil."
+                  }
+                ],
+                "takeaway": "Tough iron ploughshares helped Celtic farmers grow bumper wheat harvests that supported busy tribes and giant hillforts."
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -6093,6 +6252,148 @@
       "studio_audio": "/audio/reading/ks2_stone_to_iron_age/r5.mp3",
       "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
       "audio_file": "/audio/reading/ks2_stone_to_iron_age/r5.mp3"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Agriculture",
+      "pronunciation": "AG-ri-kul-cher",
+      "definition": "Farming the land by planting crops like wheat and barley and keeping tame animals such as sheep, pigs, and cattle."
+    },
+    {
+      "term": "Archaeologist",
+      "pronunciation": "ar-kee-OL-uh-jist",
+      "definition": "A history detective who carefully digs up buried tools, bones, and building remains to discover how ancient people lived."
+    },
+    {
+      "term": "Beaker",
+      "pronunciation": "BEE-kur",
+      "definition": "A tall, bell-shaped clay drinking pot stamped with comb patterns and brought to Britain by newcomers around 2400 BC."
+    },
+    {
+      "term": "Bluestones",
+      "pronunciation": "BLOO-stohnz",
+      "definition": "Spotted volcanic boulders hauled 140 miles from the Preseli Hills in Wales to stand inside Stonehenge around 2500 BC."
+    },
+    {
+      "term": "Bronze",
+      "pronunciation": "BRONZ",
+      "definition": "A tough golden metal made by melting nine parts copper together with one part tin over a hot fire."
+    },
+    {
+      "term": "Doggerland",
+      "pronunciation": "DOG-er-land",
+      "definition": "The green land bridge that joined Britain to mainland Europe before melting ice flooded the North Sea around 6500 BC."
+    },
+    {
+      "term": "Druids",
+      "pronunciation": "DROO-idz",
+      "definition": "Wise Iron Age Celtic priests and judges who memorised sacred laws, stories, and prayers instead of writing books."
+    },
+    {
+      "term": "Henge",
+      "pronunciation": "HENJ",
+      "definition": "A circular prehistoric monument framed by a wide dug-out earth ditch set inside a raised outer bank."
+    },
+    {
+      "term": "Hillfort",
+      "pronunciation": "HIL-fort",
+      "definition": "A giant Iron Age hilltop settlement ringed by steep earth ramparts, deep ditches, and wooden fences to guard a tribe."
+    },
+    {
+      "term": "Hunter-gatherer",
+      "pronunciation": "HUN-tur GATH-er-er",
+      "definition": "A Stone Age person who moved camp with the seasons to hunt wild animals, catch fish, and pick nuts and berries."
+    },
+    {
+      "term": "Iron ore",
+      "pronunciation": "EYE-urn or",
+      "definition": "Common reddish rock dug from hills and bogs that blacksmiths heated in clay furnaces to hammer tough iron tools."
+    },
+    {
+      "term": "Knapping",
+      "pronunciation": "NAP-ing",
+      "definition": "Striking hard flint stones carefully to chip off razor-sharp flakes for handaxes, scrapers, and spear tips."
+    },
+    {
+      "term": "Long barrow",
+      "pronunciation": "LONG BAR-oh",
+      "definition": "A long earth-and-chalk mound with dark stone chambers inside where Neolithic farming villages buried their ancestors."
+    },
+    {
+      "term": "Mesolithic",
+      "pronunciation": "mez-oh-LITH-ik",
+      "definition": "The Middle Stone Age from about 10,000 to 4000 BC, when warming forests spread across Britain after the Ice Age."
+    },
+    {
+      "term": "Mould",
+      "pronunciation": "MOHLD",
+      "definition": "A hollow two-piece stone shape into which Bronze Age smiths poured glowing liquid metal to cast sharp axe blades."
+    },
+    {
+      "term": "Neolithic",
+      "pronunciation": "nee-oh-LITH-ik",
+      "definition": "The New Stone Age from about 4000 to 2500 BC, when Britain's first farmers cleared woods and built year-round villages."
+    },
+    {
+      "term": "Palaeolithic",
+      "pronunciation": "pal-ee-oh-LITH-ik",
+      "definition": "The Old Stone Age from about 850,000 to 10,000 BC, when Ice Age hunters sheltered in caves and chipped flint handaxes."
+    },
+    {
+      "term": "Prehistory",
+      "pronunciation": "pree-HISS-tuh-ree",
+      "definition": "The huge stretch of human time before anyone in Britain wrote down words, dates, or books."
+    },
+    {
+      "term": "Rotary quern",
+      "pronunciation": "ROH-tuh-ree KWURN",
+      "definition": "Two heavy round stones spun with a wooden handle to grind wheat and barley grains quickly into flour."
+    },
+    {
+      "term": "Roundhouse",
+      "pronunciation": "ROWND-hows",
+      "definition": "A circular Bronze or Iron Age family home with woven wattle-and-daub walls, a central hearth fire, and a cone thatched roof."
+    },
+    {
+      "term": "Sarsen",
+      "pronunciation": "SAR-sun",
+      "definition": "Massive, rock-hard grey sandstone boulders dragged across Wiltshire on wooden sledges to build Stonehenge's tallest circle."
+    },
+    {
+      "term": "Sickle",
+      "pronunciation": "SIK-ul",
+      "definition": "A curved harvesting tool fitted with a sharp flint blade to slice ripe stalks of wheat and barley."
+    },
+    {
+      "term": "Skara Brae",
+      "pronunciation": "SKA-ruh BRAY",
+      "definition": "A 5,000-year-old Neolithic stone village on Orkney in Scotland, uncovered when an 1850 storm blew away coastal sand dunes."
+    },
+    {
+      "term": "Smelting",
+      "pronunciation": "SMEL-ting",
+      "definition": "Heating crushed metal-bearing rock in a fierce charcoal fire until shiny liquid metal melts free from the stone."
+    },
+    {
+      "term": "Solstice",
+      "pronunciation": "SOL-stiss",
+      "definition": "The longest summer day at Midsummer or shortest winter day at Midwinter, lined up with the stones of Stonehenge."
+    },
+    {
+      "term": "Torc",
+      "pronunciation": "TORK",
+      "definition": "A heavy, gleaming neck ring twisted from ropes of gold, silver, or bronze and worn by proud Celtic leaders."
+    },
+    {
+      "term": "Trilithon",
+      "pronunciation": "TRY-lith-on",
+      "definition": "A giant three-stone arch at Stonehenge made from two tall upright boulders holding one horizontal lintel stone on top."
+    },
+    {
+      "term": "Waterlogged",
+      "pronunciation": "WAW-tur-logd",
+      "definition": "Soaked completely full of water and thick mud with no air inside, stopping ancient wood and cloth from rotting away."
     }
   ]
 }

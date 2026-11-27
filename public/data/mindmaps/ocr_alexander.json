@@ -1,0 +1,620 @@
+{
+  "unitId": "ocr_alexander",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "J198/01 Sec D",
+  "paperType": "OCR J198/01D",
+  "paperLabel": "OCR Paper 1 · Section D (Greek Depth Study · Set Sources)",
+  "courseTitle": "Alexander the Great, 356–323 BC",
+  "examDateBoundary": "356–323 BC",
+  "disclaimer": "Aligned to Cambridge OCR GCSE (9–1) Ancient History (J198). Independent educational resource by The History Revision Hub — not endorsed by OCR.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Alexander the Great, 356–323 BC",
+    "subLabel": "OCR J198/01 Sec D",
+    "dateChip": "356–323 BC",
+    "gloss": "Alexander the Great, 356–323 BC (OCR Paper 1 · Section D (Greek Depth Study · Set Sources)).",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#b45309",
+        "label": "KT1: Youth, Accession, Character & Beliefs (",
+        "dateChip": "KT 1",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "gloss": "Key Topic 1: Youth, Accession, Character & Beliefs (356–334 BC)",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1.1",
+            "tier": 2,
+            "label": "1.1 Youth, Olympias, Philip and Divine Lineage",
+            "dateChip": "1.1",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "gloss": "Alexander's youth; the character, political and personal influence of Olympias; Alexander's relationship with Philip",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Alexander's youth; the character, political and p…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Alexander's youth; the character, political and personal influence of Olympias; Alexander's relationship with Philip",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Alexander's youth; the character, political and personal influence of Olympias; Alexander's relationship with Philip",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Alexander's youth; the character, political and personal influence of Olympias; Alexander's relationship with Philip"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "1.2",
+            "tier": 2,
+            "label": "1.2 Murder of Philip and Expedition Against Persia",
+            "dateChip": "1.2",
+            "lessonIndex": 0,
+            "stageIndex": 1,
+            "gloss": "The murder of Philip and the differing interpretations of the events surrounding it • The initial reasons for the expedition against Persia; Antipater",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "The murder of Philip and the differing interpreta…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The murder of Philip and the differing interpretations of the events surrounding it",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The murder of Philip and the differing interpretations of the events surrounding it",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The murder of Philip and the differing interpretations of the events surrounding it"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "The initial reasons for the expedition against Pe…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "gloss": "The initial reasons for the expedition against Persia; Antipater",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The initial reasons for the expedition against Persia; Antipater",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The initial reasons for the expedition against Persia; Antipater"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_3",
+            "code": "1.3",
+            "tier": 2,
+            "label": "1.3 Character, Religious Beliefs and Macedonian Warfare",
+            "dateChip": "1.3",
+            "lessonIndex": 0,
+            "stageIndex": 2,
+            "gloss": "Alexander's character and beliefs • The use of the cavalry; the use of the phalanx; the use of specialist troops; the weapons and armour of the army",
+            "children": [
+              {
+                "id": "kt1_3_s1",
+                "tier": 3,
+                "label": "Alexander's character and beliefs",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Alexander's character and beliefs",
+                "children": [
+                  {
+                    "id": "kt1_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Alexander's character and beliefs",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Alexander's character and beliefs"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_3_s2",
+                "tier": 3,
+                "label": "The use of the cavalry; the use of the phalanx; t…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "gloss": "The use of the cavalry; the use of the phalanx; the use of specialist troops; the weapons and armour of the army",
+                "children": [
+                  {
+                    "id": "kt1_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The use of the cavalry; the use of the phalanx; the use of specialist troops; the weapons and armour of the army",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The use of the cavalry; the use of the phalanx; the use of specialist troops; the weapons and armour of the army"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#dc2626",
+        "label": "KT2: Granicus, Tyre, Egypt, Gaugamela & Pers",
+        "dateChip": "KT 2",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "gloss": "Key Topic 2: Granicus, Tyre, Egypt, Gaugamela & Persepolis (334–330 BC)",
+        "children": [
+          {
+            "id": "kt2_1",
+            "code": "2.1",
+            "tier": 2,
+            "label": "2.1 Battle of the Granicus and the Gordian Knot",
+            "dateChip": "2.1",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "gloss": "The Battles at the Granicus; the events of the Battles at the Granicus; the significance of the tactics used at the main battles",
+            "children": [
+              {
+                "id": "kt2_1_s1",
+                "tier": 3,
+                "label": "The Battles at the Granicus; the events of the Ba…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The Battles at the Granicus; the events of the Battles at the Granicus; the significance of the tactics used at the main battles",
+                "children": [
+                  {
+                    "id": "kt2_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The Battles at the Granicus; the events of the Battles at the Granicus; the significance of the tactics used at the main battles",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The Battles at the Granicus; the events of the Battles at the Granicus; the significance of the tactics used at the main battles"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_2",
+            "code": "2.2",
+            "tier": 2,
+            "label": "2.2 Siege of Tyre, Issus Artefacts and Foundation Cities",
+            "dateChip": "2.2",
+            "lessonIndex": 0,
+            "stageIndex": 1,
+            "gloss": "The use of siege warfare at Tyre; the actions of Alexander and his army during the final capture of Tyre • The nature and role of his foundation cities",
+            "children": [
+              {
+                "id": "kt2_2_s1",
+                "tier": 3,
+                "label": "The use of siege warfare at Tyre; the actions of …",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The use of siege warfare at Tyre; the actions of Alexander and his army during the final capture of Tyre",
+                "children": [
+                  {
+                    "id": "kt2_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The use of siege warfare at Tyre; the actions of Alexander and his army during the final capture of Tyre",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The use of siege warfare at Tyre; the actions of Alexander and his army during the final capture of Tyre"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_2_s2",
+                "tier": 3,
+                "label": "The nature and role of his foundation cities",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "gloss": "The nature and role of his foundation cities",
+                "children": [
+                  {
+                    "id": "kt2_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The nature and role of his foundation cities",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The nature and role of his foundation cities"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_3",
+            "code": "2.3",
+            "tier": 2,
+            "label": "2.3 Battle of Gaugamela, Persian Gates and Burning of Persepolis",
+            "dateChip": "2.3",
+            "lessonIndex": 0,
+            "stageIndex": 2,
+            "gloss": "The Battles at Gaugamela and the Persian Gates; the events of the Battles at Gaugamela • The burning of Persepolis",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "The Battles at Gaugamela and the Persian Gates; t…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The Battles at Gaugamela and the Persian Gates; the events of the Battles at Gaugamela",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The Battles at Gaugamela and the Persian Gates; the events of the Battles at Gaugamela",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The Battles at Gaugamela and the Persian Gates; the events of the Battles at Gaugamela"
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "The burning of Persepolis",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "gloss": "The burning of Persepolis",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The burning of Persepolis",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The burning of Persepolis"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#4f46e5",
+        "label": "KT3: Central Asia, Persian Customs, Conspira",
+        "dateChip": "KT 3",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "gloss": "Key Topic 3: Central Asia, Persian Customs, Conspiracies & India (330–325 BC)",
+        "children": [
+          {
+            "id": "kt3_1",
+            "code": "3.1",
+            "tier": 2,
+            "label": "3.1 Pursuits of Darius and Bessus, Parmenio and Murder of Cleitus",
+            "dateChip": "3.1",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "gloss": "The pursuits of Darius and Bessus; the murder of Cleitus • His relationships with companions including Parmenio, Cleitus",
+            "children": [
+              {
+                "id": "kt3_1_s1",
+                "tier": 3,
+                "label": "The pursuits of Darius and Bessus; the murder of …",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The pursuits of Darius and Bessus; the murder of Cleitus",
+                "children": [
+                  {
+                    "id": "kt3_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The pursuits of Darius and Bessus; the murder of Cleitus",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The pursuits of Darius and Bessus; the murder of Cleitus"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_1_s2",
+                "tier": 3,
+                "label": "His relationships with companions including Parme…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "gloss": "His relationships with companions including Parmenio, Cleitus",
+                "children": [
+                  {
+                    "id": "kt3_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "His relationships with companions including Parmenio, Cleitus",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "His relationships with companions including Parmenio, Cleitus"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_2",
+            "code": "3.2",
+            "tier": 2,
+            "label": "3.2 Persian Dress, Proskynesis and Callisthenes",
+            "dateChip": "3.2",
+            "lessonIndex": 0,
+            "stageIndex": 1,
+            "gloss": "The adoption of Persian dress and customs; the changing aims of his expeditions and changing views of Persians and the Persian empire • His relationships with companions including Callisthenes",
+            "children": [
+              {
+                "id": "kt3_2_s1",
+                "tier": 3,
+                "label": "The adoption of Persian dress and customs; the ch…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The adoption of Persian dress and customs; the changing aims of his expeditions and changing views of Persians and the Persian empire",
+                "children": [
+                  {
+                    "id": "kt3_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The adoption of Persian dress and customs; the changing aims of his expeditions and changing views of Persians and the Persian empire",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The adoption of Persian dress and customs; the changing aims of his expeditions and changing views of Persians and the Persian empire"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_2_s2",
+                "tier": 3,
+                "label": "His relationships with companions including Calli…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "gloss": "His relationships with companions including Callisthenes",
+                "children": [
+                  {
+                    "id": "kt3_2_s2_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "His relationships with companions including Callisthenes",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "His relationships with companions including Callisthenes"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_3",
+            "code": "3.3",
+            "tier": 2,
+            "label": "3.3 Aornus Rock, Indus Valley Campaign and Mutiny at the Hyphasis",
+            "dateChip": "3.3",
+            "lessonIndex": 0,
+            "stageIndex": 2,
+            "gloss": "The use of siege warfare at the Aornus Rock • The final campaign in the Indus Valley including the mutiny at the Hyphasis",
+            "children": [
+              {
+                "id": "kt3_3_s1",
+                "tier": 3,
+                "label": "The use of siege warfare at the Aornus Rock",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The use of siege warfare at the Aornus Rock",
+                "children": [
+                  {
+                    "id": "kt3_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The use of siege warfare at the Aornus Rock",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The use of siege warfare at the Aornus Rock"
+                  }
+                ]
+              },
+              {
+                "id": "kt3_3_s2",
+                "tier": 3,
+                "label": "The final campaign in the Indus Valley including …",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "gloss": "The final campaign in the Indus Valley including the mutiny at the Hyphasis",
+                "children": [
+                  {
+                    "id": "kt3_3_s2_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The final campaign in the Indus Valley including the mutiny at the Hyphasis",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The final campaign in the Indus Valley including the mutiny at the Hyphasis"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt4",
+        "keyTopicNumber": 4,
+        "tier": 1,
+        "side": "right",
+        "color": "#0d9488",
+        "label": "KT4: Return to Babylon, Susa, Hephaestion & ",
+        "dateChip": "KT 4",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "gloss": "Key Topic 4: Return to Babylon, Susa, Hephaestion & Alexander's Death (325–323 BC)",
+        "children": [
+          {
+            "id": "kt4_1",
+            "code": "4.1",
+            "tier": 2,
+            "label": "4.1 Return Journey, Mass Marriages at Susa and Army Relations",
+            "dateChip": "4.1",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "gloss": "The difficulties encountered on the return journey to Babylon • The mass marriages at Susa; Alexander's relationship with his army",
+            "children": [
+              {
+                "id": "kt4_1_s1",
+                "tier": 3,
+                "label": "The difficulties encountered on the return journe…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The difficulties encountered on the return journey to Babylon",
+                "children": [
+                  {
+                    "id": "kt4_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The difficulties encountered on the return journey to Babylon",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The difficulties encountered on the return journey to Babylon"
+                  }
+                ]
+              },
+              {
+                "id": "kt4_1_s2",
+                "tier": 3,
+                "label": "The mass marriages at Susa; Alexander's relations…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "gloss": "The mass marriages at Susa; Alexander's relationship with his army",
+                "children": [
+                  {
+                    "id": "kt4_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The mass marriages at Susa; Alexander's relationship with his army",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The mass marriages at Susa; Alexander's relationship with his army"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_2",
+            "code": "4.2",
+            "tier": 2,
+            "label": "4.2 Hephaestion's Death and Royal Grief",
+            "dateChip": "4.2",
+            "lessonIndex": 0,
+            "stageIndex": 1,
+            "gloss": "The course of his life and his relationships with companions including Hephaestion",
+            "children": [
+              {
+                "id": "kt4_2_s1",
+                "tier": 3,
+                "label": "The course of his life and his relationships with…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The course of his life and his relationships with companions including Hephaestion",
+                "children": [
+                  {
+                    "id": "kt4_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The course of his life and his relationships with companions including Hephaestion",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The course of his life and his relationships with companions including Hephaestion"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_3",
+            "code": "4.3",
+            "tier": 2,
+            "label": "4.3 Alexander's Death in Babylon and Differing Explanations",
+            "dateChip": "4.3",
+            "lessonIndex": 0,
+            "stageIndex": 2,
+            "gloss": "Alexander's death and the differing explanations of the events surrounding it",
+            "children": [
+              {
+                "id": "kt4_3_s1",
+                "tier": 3,
+                "label": "Alexander's death and the differing explanations …",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Alexander's death and the differing explanations of the events surrounding it",
+                "children": [
+                  {
+                    "id": "kt4_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Alexander's death and the differing explanations of the events surrounding it",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Alexander's death and the differing explanations of the events surrounding it"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -293,16 +293,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=pAYEQP8gx3w",
-          "title": "Life is Beautiful (1997, Roberto Benigni) | Official Trailer",
-          "duration": "1 min 26 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Three-time Academy Award-winning film portraying Guido Orefice, a playful Italian-Jewish bookshop owner whose life is shattered by fascist racial laws and deportation. Recommended Watch Window: 00:00–01:26 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Family Life. Tone Alert: Poignant, imaginative dramatisation of pre-war affection and family solidarity.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice how Roberto Benigni depicts the vibrancy, humour, and romantic daily life of Guido and Dora in 1930s Italy before the implementation of racial laws and deportation. How does this cinematic framing emphasize that Holocaust victims were ordinary individuals with rich emotional lives, professions, and families?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer emphasizes Guido's warmth, wit, and humanity, making the intrusion of anti-Semitic discrimination and eventual transport to a concentration camp feel acutely tragic. By focusing on the bond between father and son, the film honors the emotional dignity and resilience of victims before the catastrophe stripped them of their names and freedom.</p>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=kOIHRQlQqwU",
           "title": "Liberators and Survivors: The First Moments | Yad Vashem",
           "duration": "15 mins 27 secs",
@@ -2032,16 +2022,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=gG22XNhtnoY",
-          "title": "Schindler's List (1993, Steven Spielberg) | Official Trailer",
-          "duration": "2 mins 58 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Seven-time Academy Award-winning historical masterpiece starring Liam Neeson, Ralph Fiennes, and Ben Kingsley. Depicts the progressive stripping of Jewish rights, forced relocation into enclosed ghettos, and the liquidation of communities. Recommended Watch Window: 00:00–02:15 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Legal Dispossession. Tone Alert: Severe, historically unflinching cinematic drama in monochrome.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the stark black-and-white cinematography, the red coat of the little girl, the systematic eviction of families from their apartments, and the methodical bureaucratic documentation of confiscated Jewish property. How does Spielberg's visual choices illustrate the ruthless dehumanisation of an entire people under Nazi rule?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> Spielberg uses stark black-and-white to evoke authentic period newsreel footage, stripping away Hollywood glamour to present genocide with documentary solemnity. The single flash of red on the little girl humanizes the anonymous masses, symbolizing the vulnerability of individual innocent life amidst industrial, bureaucratic slaughter.</p>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=APyioYJISXI",
           "title": "What Were the Nuremberg Trials? | Holocaust Explainer | USHMM",
           "duration": "4 mins 00 secs",
@@ -3615,16 +3595,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=BFwGqLa_oAo",
-          "title": "The Pianist (2002, Roman Polanski / Adrien Brody) | Official Trailer",
-          "duration": "1 min 25 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Three-time Academy Award-winning feature film based on the autobiography of Polish-Jewish classical pianist Władysław Szpilman, directed by Holocaust survivor Roman Polanski. Depicts the construction of the Warsaw Ghetto brick wall, the smuggling of food by children, and the deportations to Treblinka. Recommended Watch Window: 00:00–01:25 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Ghetto Survival. Tone Alert: Intense, visceral biographical drama.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the physical bricking up of the Warsaw Ghetto walls, the starving children begging in the streets, the arbitrary violence of SS officers, and Władysław Szpilman's struggle to maintain his musical identity amidst total devastation. How does Polanski portray the gradual, agonizing erosion of human dignity inside the enclosed ghetto?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> Polanski, who survived the Krakow Ghetto as a child, depicts the claustrophobia and moral agony of ghettoization without melodrama. The trailer captures how the ghetto stripped individuals of their professions, homes, and basic physical needs, reducing survival to a daily struggle for bread while highlighting how Szpilman's music became a defiant sanctuary of human spirit.</p>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=HyZPDvgXXP4",
           "title": "The Great Deportation in the Warsaw Ghetto - Abraham Lewin's Diary | Yad Vashem",
           "duration": "8 mins 23 secs",
@@ -5195,16 +5165,6 @@ export default {
           "teacher_guidance": "Groundbreaking forensic investigation by French Catholic priest Father Patrick Desbois, documenting the mass execution trenches of over two million Jews across Ukraine, Belarus, Poland, and Russia through ballistics and local eyewitness interviews. Recommended Watch Window: 04:00–12:30 • Lesson Phase: Guided Instruction & Forensic Grounding. Tone Alert: Emotionally solemn, highly rigorous forensic history.",
           "viewing_task": "<ol><li><strong>[06:15] Recall:</strong> How many Jewish victims are estimated to have been murdered by bullets rather than in extermination camps, and across which territories did these killings occur?</li><li><strong>[10:30] Explain:</strong> Describe Father Desbois' methodology: how does his team use German military archives, Soviet extraordinary commissions, GPS mapping, and local non-Jewish eyewitness interviews to locate mass graves?</li><li><strong>[12:15] Challenge:</strong> Evaluate how the reality of the \"Holocaust by Bullets\" destroys the myth that the genocide was carried out in secret camps far from public view.</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Between 1.5 and 2 million Jewish victims, murdered across Ukraine, Belarus, the Baltic States, and western Russia.</li><li><strong>Explain:</strong> Desbois interviews elderly Ukrainian and Belarusian villagers who witnessed the massacres as children (often requisitioned to dig trenches, drive carts, or cook for German officers). His team cross-references these oral accounts with ballistic shell casings and German archival reports to locate forgotten mass graves in village ravines and forests, giving names and dignity back to the dead.</li><li><strong>Challenge:</strong> Extermination camps like Treblinka or Belzec were enclosed, isolated sites designed to disguise murder. In contrast, the Holocaust by Bullets was completely public: executions took place in broad daylight on the edges of villages, within full hearing and sight of local populations, with local police and townspeople watching, proving that genocide was an open, public event across the Eastern territories.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=YLZ5pTVVXQ0",
-          "title": "Conspiracy (2001, Frank Pierson / Kenneth Branagh) | Original Trailer",
-          "duration": "1 min 01 sec",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Acclaimed HBO/BBC film starring Kenneth Branagh as Reinhard Heydrich and Colin Firth as Wilhelm Stuckart, dramatizing the 90-minute Wannsee Conference on 20 January 1942 where 15 high-ranking Nazi bureaucrats formalized the \"Final Solution\". Recommended Watch Window: 00:00–01:00 (Full Trailer). Lesson Phase: Cinematic Starter Hook & The Bureaucracy of Genocide. Tone Alert: Chilling, polished depiction of civil servants organizing industrial extermination over lunch.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the opulent lakeside villa, the polite administrative decorum, fine wine, and crisp bureaucratic language (\"evacuation to the East\", \"cleansing\") used by SS General Reinhard Heydrich and ministry officials. How does this film capture the terrifying banality of evil: how educated lawyers, economists, and civil servants became architects of mass murder?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer strips genocide of chaotic battlefield violence, presenting it as a calculated, efficient corporate project. Branagh's Heydrich uses charm, intimidation, and euphemistic legal jargon to co-opt every branch of the German state apparatus, demonstrating Hannah Arendt's concept of the 'banality of evil'—that horrific atrocities were organized by ordinary civil servants sitting around a conference table.</p>"
         },
         {
           "type": "youtube",
@@ -6847,16 +6807,6 @@ export default {
           "teacher_guidance": "Visual examination of the unique photographic album discovered by survivor Lili Jacob, documenting the arrival and selection of Hungarian Jews on the Birkenau ramp in May 1944. Recommended Watch Window: 00:45–05:15 • Lesson Phase: Guided Instruction & Visual Forensic Analysis. Tone Alert: Solemn, forensic documentary examining primary photographic evidence.",
           "viewing_task": "<ol><li><strong>[01:10] Recall:</strong> Who took the photographs contained in the \"Auschwitz Album\", and why were these images originally captured?</li><li><strong>[03:20] Explain:</strong> Explain what the photographs reveal about the deliberate Nazi deception tactics used to keep arriving victims calm as they walked toward Crematoria II and III.</li><li><strong>[04:45] Challenge:</strong> Why is the Auschwitz Album considered one of the most critical visual records of the Holocaust: how does it provide incontrovertible photographic proof of industrial genocide?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> SS photographers Ernst Hofmann and Bernhard Walter, who took the photos as an official administrative record for camp authorities.</li><li><strong>Explain:</strong> The photos show victims carrying suitcases, coats, and pots, believing they were being relocated to a new settlement. SS guards spoke calmly, carried no visible weapons, and pointed to signs for \"Disinfection\" and \"Baths\", deliberately concealing the reality of the gas chambers until victims were locked inside.</li><li><strong>Challenge:</strong> The Nazis attempted to destroy all physical and documentary traces of their crimes before evacuating the camp. The Auschwitz Album survived miraculously in a German barracks, providing indisputable photographic evidence of the entire machinery of death—from unloading trains, through medical selection, sorting of stolen belongings, to the final walk into the gas chamber waiting areas—refuting all Holocaust denial.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=PSabBa9IWYs",
-          "title": "Son of Saul (2015, László Nemes) | Official Trailer",
-          "duration": "1 min 50 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Academy Award and Cannes Grand Prix-winning masterpiece following Saul Ausländer, a Hungarian Jewish member of the Auschwitz-Birkenau Sonderkommando forced to work in the crematoria, who risks everything to give a dead child a proper Jewish burial. Recommended Watch Window: 00:00–01:49 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Spiritual Defiance. Tone Alert: Intensely claustrophobic, uncompromising historical drama.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the shallow depth of field (the camera stays locked tightly on Saul's face while horrors remain blurred in the background), the immersive soundscape of metallic doors, shouts, and machinery, and Saul's obsessive quest to give a child a proper burial. How does director László Nemes use cinematic technique to convey both the physical inferno of Birkenau and an individual's desperate effort to preserve their humanity?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> Nemes avoids exploitative wide shots of atrocity by anchoring the camera mere inches from Saul's face, forcing viewers to experience the disorientation and psychological numbness required to survive inside the crematoria. Saul's determination to recite the Kaddish (mourner's prayer) and give a Jewish burial to an unknown boy becomes a profound act of spiritual resistance—choosing human dignity in an environment designed to obliterate it.</p>"
         },
         {
           "type": "youtube",
@@ -8532,26 +8482,6 @@ export default {
           "teacher_guidance": "IWM curator documentary examining rescue and rescue networks: the Danish rescue of October 1943, where Danish fishermen ferried over 7,200 Jews to neutral Sweden in small boats, contrasting with complicity across occupied Europe. Recommended Watch Window: 01:00–06:45 • Lesson Phase: Guided Instruction & Ethical Investigation. Tone Alert: Rigorous, uplifting museum documentary exploring moral responsibility and resistance.",
           "viewing_task": "<ol><li><strong>[01:45] Recall:</strong> What percentage of the Jewish population of Denmark survived the Holocaust as a result of the nationwide rescue operation in October 1943?</li><li><strong>[03:30] Explain:</strong> Explain how German naval attaché Georg Ferdinand Duckwitz leaked the planned Gestapo roundup, and how Danish doctors, police, clergy, and fishermen mobilized to hide and rescue their Jewish neighbors.</li><li><strong>[05:40] Challenge:</strong> Evaluate the spectrum of human behavior during the Shoah (perpetrators, collaborators, bystanders, and rescuers): why were rescuers like the Danish people or Raoul Wallenberg the rare exception rather than the rule?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Over 99% of Denmark's Jewish population survived (over 7,200 people were ferried to Sweden, with only 481 captured and sent to Theresienstadt, where Danish authorities continually monitored their welfare).</li><li><strong>Explain:</strong> Duckwitz warned Danish politicians of the upcoming Rosh Hashanah roundup. Within hours, Danish hospital staff admitted hundreds of Jews under false Christian names, clergy read pastoral letters demanding protection for Jewish citizens from church pulpits, ordinary citizens provided safe houses, and Danish fishermen risked their lives ferrying families across the icy Øresund strait to neutral Sweden in over 300 fishing vessels.</li><li><strong>Challenge:</strong> Rescuing Jews required immense physical danger: across Nazi-occupied Eastern Europe, sheltering a Jew was punishable by immediate summary execution of the rescuer and their entire family. Most Europeans were bystanders who turned a blind eye out of terror, indifference, or anti-Semitic prejudice, while many actively collaborated for financial profit (such as claiming abandoned Jewish apartments). In Denmark, rescue succeeded because Danish national identity defined Danish Jews as fellow citizens, creating unified civic solidarity supported by state institutions and proximity to neutral Sweden.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=1EVPjV7Toho",
-          "title": "One Life (2023, James Hawes / Anthony Hopkins) | Official Trailer",
-          "duration": "2 mins 12 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Acclaimed biographical drama starring Sir Anthony Hopkins and Johnny Flynn as Sir Nicholas Winton, who organized the Prague Kindertransport in 1939, rescuing 669 predominantly Jewish children from Nazi-occupied Czechoslovakia before borders closed. Recommended Watch Window: 00:00–02:11 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Moral Responsibility. Tone Alert: Deeply moving, uplifting historical drama exploring compassion and humility.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice young Nicholas Winton racing against bureaucratic red tape and German troop movements in Prague, and decades later as an elderly man on the BBC television programme <em>That's Life!</em> surrounded by the adult children he saved. How does this film challenge the common historical excuse that \"an ordinary individual was powerless to make a difference\"?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer illustrates that Nicholas Winton was not a politician or diplomat, but a 29-year-old stockbroker who recognized an urgent humanitarian crisis and refused to remain an indifferent bystander. By cutting through bureaucratic delays and finding foster families, his actions prove that determined moral initiative by ordinary citizens could rescue hundreds of innocent lives from genocide.</p>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=FVNR8PrtnQc",
-          "title": "Defiance (2008, Edward Zwick / Daniel Craig) | Official Trailer",
-          "duration": "2 mins 27 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Dramatisation of the Bielski partisans—brothers Tuvia, Zus, and Asael Bielski—who built a thriving hidden community of over 1,200 Jewish refugees in the Naliboki forest of Belarus, choosing armed resistance focused primarily on saving lives rather than military glory. Recommended Watch Window: 00:00–02:26 (Full Trailer). Lesson Phase: Guided Instruction & Armed Jewish Resistance. Tone Alert: Tense, heroic historical combat drama highlighting active resistance.",
-          "viewing_task": "<ol><li><strong>[00:45] Recall:</strong> In what densely forested region of Eastern Europe did the Bielski brothers establish an armed partisan community that successfully protected over 1,200 Jewish men, women, and children?</li><li><strong>[01:30] Explain:</strong> Contrast the philosophy of Tuvia Bielski (\"I would rather save one old Jewish woman than kill ten German soldiers\") with conventional military partisan resistance.</li><li><strong>[02:10] Challenge:</strong> How does the reality of the Bielski forest community shatter the persistent myth that Jewish victims passively accepted Nazi persecution without fighting back?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The Naliboki Forest in Western Belarus (then eastern Poland).</li><li><strong>Explain:</strong> Soviet partisans prioritized blowing up German supply trains and killing enemy troops, often rejecting elderly Jews, women, and children as burdens. Tuvia Bielski insisted that every single Jewish refugee, regardless of age or physical infirmity, must be welcomed into the forest camp, establishing schools, a hospital, a bakery, and workshops, making rescue the supreme goal.</li><li><strong>Challenge:</strong> Despite facing brutal winters, starvation, and manhunts by German anti-partisan brigades, the Bielski partisans built a functioning democratic woodland society that survived for over two years. By fighting back with rifles and preserving over a thousand lives, they proved that Jews engaged in active, sophisticated armed resistance whenever geographical and logistical conditions made it possible.</li></ol>"
         }
       ],
       "teacher_notes": {
@@ -10122,16 +10052,6 @@ export default {
           "teacher_guidance": "USHMM documentary detailing the liberation of camps across Europe, the medical disaster facing liberators, and the struggle of survivors who returned to find their entire families murdered. Recommended Watch Window: 00:30–03:00 • Lesson Phase: Guided Instruction & Post-Liberation Reality. Tone Alert: Sobering, respectful museum documentary.",
           "viewing_task": "<ol><li><strong>[00:45] Recall:</strong> What severe infectious disease was sweeping through Bergen-Belsen when British medical teams arrived, killing hundreds of survivors each day even after liberation?</li><li><strong>[01:40] Explain:</strong> Explain the immense difficulties faced by \"Displaced Persons\" (DPs) in post-war Europe: why could many survivors not return to their hometowns in Poland?</li><li><strong>[02:30] Challenge:</strong> Evaluate how the shock of camp liberations permanently altered Western public perceptions of Nazi Germany and shaped post-war human rights conventions.</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Typhus.</li><li><strong>Explain:</strong> Thousands of survivors had no surviving family members, their homes had been confiscated by neighbors, and virulent anti-Semitic pogroms (such as the Kielce pogrom of July 1946) broke out against returning Jews in Poland. This forced over 250,000 survivors into Allied Displaced Persons camps for years while they waited for visas to emigrate.</li><li><strong>Challenge:</strong> Direct photographic and newsreel evidence filmed by British, Soviet, and American cameramen removed all doubts regarding the depravity of the Nazi regime. The sheer horror convinced world leaders that national sovereignty must be subordinated to universal human rights, leading directly to the 1948 UN Convention on the Prevention and Punishment of the Crime of Genocide and the Universal Declaration of Human Rights.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=yH7ktvUWaYo",
-          "title": "Denial (2016, Mick Jackson / Rachel Weisz) | Official Trailer",
-          "duration": "2 mins 31 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Based on the true story of American historian Deborah E. Lipstadt, who was sued for libel in the British High Court by British Holocaust denier David Irving. Features Rachel Weisz and Timothy Spall, illustrating the forensic courtroom defense of Auschwitz's gas chambers and the danger of historical distortion. Recommended Watch Window: 00:00–02:31 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Defending Historical Truth. Tone Alert: Gripping, intellectually intense British courtroom drama.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the legal stakes under English libel law (where the burden of proof fell on the defendant to prove the Holocaust happened), the forensic visit to the ruins of Crematorium II at Auschwitz-Birkenau, and David Irving's calculated falsification of archival documents. Why is the legal victory in <em>Lipstadt v Irving</em> a crucial moment in modern historiography and the battle against Holocaust denial?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer dramatizes the critical difference between legitimate historical debate and ideological lies. By presenting forensic architectural blueprints of gas chambers, railway timetables, and documentary evidence in a court of law, Lipstadt's legal team legally established that Holocaust denial is not an opinion, but deliberate anti-Semitic fabrication, demonstrating why rigorous documentary evidence matters.</p>"
         },
         {
           "type": "youtube",

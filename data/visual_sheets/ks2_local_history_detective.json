@@ -1,0 +1,518 @@
+{
+  "lesson_1": {
+    "num": "01",
+    "slug": "ks2_local_history_detective_l01_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 1",
+    "datesBadge": "AD 43–1936",
+    "topicLabel": "Enquiry 01: Secret Code in Place-Names and Old Ordnance Survey Maps",
+    "title": "How do place-names and old maps unlock secret history on our doorstep?",
+    "spokenTitle": "How do place-names and old maps unlock secret history on our doorstep?",
+    "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l1_ordnance_survey_landscape.jpg",
+    "bridges": [
+      "1880s OS Maps",
+      "Benchmarks & Trig",
+      "Doorstep Toolkit"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Cracking Place-Name Endings",
+        "date": "AD 43–1086",
+        "img": "/units/ks2_local_history_detective/assets/local_history_place_names_detective_map_ks2.png",
+        "mode": "contain-light",
+        "pos": "center 45%",
+        "stat": "13,000+ Places in 1086 Domesday Book",
+        "connective": "How do place-names and old maps unlock secret history on our doorstep?",
+        "html": "<strong>Roman castra (-chester)</strong>, <strong>Saxon farms (-ton, -ham)</strong>, and <strong>Viking villages (-by)</strong> hide ancient settler clues preserved in the <strong>1086 Domesday Book</strong>.",
+        "paired_prose_hash": "3c3333d709",
+        "spoken": "How do place-names and old maps unlock secret history on our doorstep? <short pause> Roman castra (-chester), Saxon farms (-ton, -ham), and Viking villages (-by) hide ancient settler clues preserved in the 1086 Domesday Book."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "1880s Ordnance Survey Maps",
+        "date": "1791–1900",
+        "img": "/units/ks2_local_history_detective/assets/l1_p2_chester_roman_fortress_wall.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Founded 1791 • Detailed 1880s Plans",
+        "connective": "Centuries later, scientific map-makers drew every street and field.",
+        "html": "Comparing <strong>1880s Ordnance Survey</strong> sheets with modern maps reveals <strong>vanished mills</strong>, lost railways, and green fields now beneath houses.",
+        "paired_prose_hash": "5ac0c7f63f",
+        "spoken": "Centuries later, scientific map-makers drew every street and field. <short pause> Comparing 1880s Ordnance Survey sheets with modern maps reveals vanished mills, lost railways, and green fields now beneath houses."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Stone Benchmarks & Trig Pillars",
+        "date": "1840s–1936",
+        "img": "/units/ks2_local_history_detective/assets/l1_p3_os_trig_pillar_hilltop.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "500,000+ Wall Arrows & 6,500+ Trig Pillars",
+        "connective": "Surveyors also left permanent stone and concrete clues outdoors.",
+        "html": "Chiseled <strong>broad-arrow benchmarks</strong> on old walls mark sea-level heights, while 1936 hilltop <strong>trig pillars</strong> sighted map triangles.",
+        "paired_prose_hash": "6019c37d21",
+        "spoken": "Surveyors also left permanent stone and concrete clues outdoors. <short pause> Chiseled broad-arrow benchmarks on old walls mark sea-level heights, while 1936 hilltop trig pillars sighted map triangles."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Every Street Sign Tells a Story",
+        "date": "AD 43–Present",
+        "img": "/units/ks2_local_history_detective/assets/banner_l1_ordnance_survey_landscape.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Names + Old Maps + Wall Marks",
+        "connective": "Combining place-names and historic maps unlocks any British neighbourhood.",
+        "html": "Any UK pupil can decode <strong>settler endings</strong>, compare <strong>1880s maps</strong>, and spot real <strong>Ordnance Survey marks</strong> outdoors.",
+        "spoken": "Combining place-names and historic maps unlocks any British neighbourhood. <short pause> Any UK pupil can decode settler endings, compare 1880s maps, and spot real Ordnance Survey marks outdoors."
+      }
+    ],
+    "takeaway": "Place-name endings, the 1086 Domesday Book, 1880s Ordnance Survey maps, and carved benchmarks reveal over a thousand years of settlement on any UK doorstep.",
+    "vocab": [
+      [
+        "1. Castra",
+        "Latin for Roman fort; gives -chester and -caster town names."
+      ],
+      [
+        "2. Domesday Book",
+        "King William I’s 1086 survey naming 13,000+ places."
+      ],
+      [
+        "3. Ordnance Survey",
+        "Britain’s national mapping agency, founded in 1791."
+      ]
+    ],
+    "provenanceNote": "The National Archives (Kew), Ordnance Survey Historical Maps, Commonwealth War Graves Commission, English Heritage, Beamish Museum and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Place-name endings, the 1086 Domesday Book, 1880s Ordnance Survey maps, and carved benchmarks reveal over a thousand years of settlement on any UK doorstep."
+  },
+  "lesson_2": {
+    "num": "02",
+    "slug": "ks2_local_history_detective_l02_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 2",
+    "datesBadge": "1485–1914",
+    "topicLabel": "Enquiry 02: Reading Buildings on the High Street — Timber, Brick and Royal Cyphers",
+    "title": "How can timber frames, brickwork, and postboxes date a British street?",
+    "spokenTitle": "How can timber frames, brickwork, and postboxes date a British street?",
+    "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l2_british_high_street_buildings.jpg",
+    "bridges": [
+      "Sash vs Red Brick",
+      "Postbox Cyphers",
+      "Look Upstairs!"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Tudor Timber & Jetties",
+        "date": "1485–1666",
+        "img": "/units/ks2_local_history_detective/assets/l2_p1_tudor_timber_jetty_house.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1485–1603 • Oak Beams & Wattle",
+        "connective": "How can timber frames, brickwork, and postboxes date a British street?",
+        "html": "Look above modern shop signs! <strong>Tudor</strong> buildings show dark <strong>oak timber frames</strong>, white wattle-and-daub panels, and overhanging upper <strong>jetties</strong>.",
+        "paired_prose_hash": "7a59da568d",
+        "spoken": "How can timber frames, brickwork, and postboxes date a British street? <short pause> Look above modern shop signs! Tudor buildings show dark oak timber frames, white wattle-and-daub panels, and overhanging upper jetties."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Georgian Sash vs Victorian Brick",
+        "date": "1714–1901",
+        "img": "/units/ks2_local_history_detective/assets/l2_p2_georgian_sash_terrace_bath.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1714–1837 Sash • 1837–1901 Red Brick",
+        "connective": "Brick, stone, and railway transport reshaped town streets.",
+        "html": "<strong>Georgian</strong> terraces lined up calm <strong>sliding sash windows</strong>, while <strong>Victorian railways</strong> brought fiery <strong>red brick</strong> and terracotta.",
+        "paired_prose_hash": "351f46c670",
+        "spoken": "Brick, stone, and railway transport reshaped town streets. <short pause> Georgian terraces lined up calm sliding sash windows, while Victorian railways brought fiery red brick and terracotta."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Cyphers, Datestones & Ghost Signs",
+        "date": "1852–Present",
+        "img": "/units/ks2_local_history_detective/assets/l2_p3_victorian_red_brick_town_hall.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1852 Postboxes • 1874 Red Paint",
+        "connective": "Street furniture and painted brickwork pin down exact dates.",
+        "html": "Check red postboxes for <strong>Royal Cyphers (V.R., G.R., E.IIR)</strong>, doorways for carved <strong>datestones</strong>, and brick gables for faded <strong>ghost signs</strong>.",
+        "paired_prose_hash": "d732ebe098",
+        "spoken": "Street furniture and painted brickwork pin down exact dates. <short pause> Check red postboxes for Royal Cyphers (V.R., G.R., E.IIR), doorways for carved datestones, and brick gables for faded ghost signs."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "A Living Timeline Above Our Heads",
+        "date": "1485–Present",
+        "img": "/units/ks2_local_history_detective/assets/banner_l2_british_high_street_buildings.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "500 Years Visible From One Pavement",
+        "connective": "Every British high street mixes chapters from different centuries.",
+        "html": "Looking upwards turns any walk to the shops into a detective hunt across <strong>Tudor</strong>, <strong>Georgian</strong>, and <strong>Victorian</strong> Britain.",
+        "spoken": "Every British high street mixes chapters from different centuries. <short pause> Looking upwards turns any walk to the shops into a detective hunt across Tudor, Georgian, and Victorian Britain."
+      }
+    ],
+    "takeaway": "Looking above modern shopfronts—and checking V.R. postboxes, datestones, and brick ghost signs—lets detectives date Tudor, Georgian, and Victorian streets anywhere in Britain.",
+    "vocab": [
+      [
+        "1. Jetty",
+        "Overhanging upper floor on a Tudor timber-framed house."
+      ],
+      [
+        "2. Sash Window",
+        "Tall sliding wooden window popular in Georgian terraces."
+      ],
+      [
+        "3. Royal Cypher",
+        "Monarch’s initials (like V.R. or E.IIR) on postboxes."
+      ]
+    ],
+    "provenanceNote": "The National Archives (Kew), Ordnance Survey Historical Maps, Commonwealth War Graves Commission, English Heritage, Beamish Museum and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Looking above modern shopfronts—and checking V.R. postboxes, datestones, and brick ghost signs—lets detectives date Tudor, Georgian, and Victorian streets anywhere in Britain."
+  },
+  "lesson_3": {
+    "num": "03",
+    "slug": "ks2_local_history_detective_l03_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 3",
+    "datesBadge": "1538–1921",
+    "topicLabel": "Enquiry 03: Who Lived in Number 12? Censuses, Parish Books and School Logbooks",
+    "title": "What can censuses, parish books, and school logbooks reveal about past families?",
+    "spokenTitle": "What can censuses, parish books, and school logbooks reveal about past families?",
+    "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l3_parish_church_schoolhouse.jpg",
+    "bridges": [
+      "Parish Registers",
+      "School Logbooks",
+      "Real Lives Named"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "The Ten-Year UK Census",
+        "date": "1801–1921",
+        "img": "/units/ks2_local_history_detective/assets/l3_p1_victorian_terraced_street_houses.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Every 10 Years Since 1801 (Names 1841+)",
+        "connective": "What can censuses, parish books, and school logbooks reveal about past families?",
+        "html": "Door-to-door <strong>enumerators</strong> listed every household’s ages, birthplaces, and vanished Victorian jobs like <strong>ostlers</strong> and <strong>lamplighters</strong>.",
+        "paired_prose_hash": "26f2f7986b",
+        "spoken": "What can censuses, parish books, and school logbooks reveal about past families? <short pause> Door-to-door enumerators listed every household’s ages, birthplaces, and vanished Victorian jobs like ostlers and lamplighters."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "1538 Parish Books & Headstones",
+        "date": "1538–1801",
+        "img": "/units/ks2_local_history_detective/assets/l3_p2_parish_church_font_interior.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Baptisms, Marriages & Burials (1538+)",
+        "connective": "To trace families before 1801, detectives check the parish church.",
+        "html": "Handwritten <strong>parish registers</strong> and carved churchyard <strong>headstones</strong> link local parents, children, and trades across centuries.",
+        "paired_prose_hash": "f7be865646",
+        "spoken": "To trace families before 1801, detectives check the parish church. <short pause> Handwritten parish registers and carved churchyard headstones link local parents, children, and trades across centuries."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "1862 School Logbooks",
+        "date": "1862–1914",
+        "img": "/units/ks2_local_history_detective/assets/l3_p3_victorian_schoolroom_desks_slates.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Weekly Headteacher Entries From 1862",
+        "connective": "Locked inside school desks lay weekly diaries of childhood.",
+        "html": "Victorian <strong>School Logbooks</strong> record autumn <strong>harvest</strong> absences, deep snowdrifts, shared boots, and sums on grey <strong>slates</strong>.",
+        "paired_prose_hash": "d4cd9ef434",
+        "spoken": "Locked inside school desks lay weekly diaries of childhood. <short pause> Victorian School Logbooks record autumn harvest absences, deep snowdrifts, shared boots, and sums on grey slates."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Meeting Ordinary Neighbours by Name",
+        "date": "1538–1921",
+        "img": "/units/ks2_local_history_detective/assets/banner_l3_parish_church_schoolhouse.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Censuses + Registers + Logbooks",
+        "connective": "Paper and stone records rescue everyday working families from silence.",
+        "html": "Linking <strong>Census sheets</strong>, <strong>parish books</strong>, and <strong>School Logbooks</strong> reveals real children and workers at any address.",
+        "spoken": "Paper and stone records rescue everyday working families from silence. <short pause> Linking Census sheets, parish books, and School Logbooks reveals real children and workers at any address."
+      }
+    ],
+    "takeaway": "Every-ten-year UK Censuses, 1538 parish registers, churchyard headstones, and 1862 School Logbooks let detectives meet ordinary families and schoolchildren at any local address.",
+    "vocab": [
+      [
+        "1. Census",
+        "Official every-ten-year count of everyone living in Britain."
+      ],
+      [
+        "2. Enumerator",
+        "Local officer who walked door to door copying Census forms."
+      ],
+      [
+        "3. Ostler",
+        "Stable worker who cared for horses at a coaching inn."
+      ]
+    ],
+    "provenanceNote": "The National Archives (Kew), Ordnance Survey Historical Maps, Commonwealth War Graves Commission, English Heritage, Beamish Museum and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Every-ten-year UK Censuses, 1538 parish registers, churchyard headstones, and 1862 School Logbooks let detectives meet ordinary families and schoolchildren at any local address."
+  },
+  "lesson_4": {
+    "num": "04",
+    "slug": "ks2_local_history_detective_l04_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 4",
+    "datesBadge": "1600–1965",
+    "topicLabel": "Enquiry 04: How Our Town Earned Its Living — Farms, Canals, Mills and Stations",
+    "title": "How do street names, canals, mills, and stations show past local work?",
+    "spokenTitle": "How do street names, canals, mills, and stations show past local work?",
+    "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l4_british_canal_viaduct_industry.jpg",
+    "bridges": [
+      "Canals & Watermills",
+      "Steam & Street Signs",
+      "Work on Our Streets"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Market Crosses & Milestones",
+        "date": "1600–1830",
+        "img": "/units/ks2_local_history_detective/assets/l4_p1_historic_market_cross_hall.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1618 Market Halls • 1700s Turnpikes",
+        "connective": "How do street names, canals, mills, and stations show past local work?",
+        "html": "Roofed <strong>market crosses</strong> sheltered farm stalls, while <strong>turnpike roads</strong> placed carved stone <strong>milestones</strong> and horse troughs along coach routes.",
+        "paired_prose_hash": "34d6fec5ee",
+        "spoken": "How do street names, canals, mills, and stations show past local work? <short pause> Roofed market crosses sheltered farm stalls, while turnpike roads placed carved stone milestones and horse troughs along coach routes."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Waterwheels, Canals & Locks",
+        "date": "1760–1840",
+        "img": "/units/ks2_local_history_detective/assets/l4_p2_textile_watermill_wheel_britain.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "30-Tonne Narrowboats & Waterwheels",
+        "connective": "Rivers and artificial canals powered Britain’s heavy goods boom.",
+        "html": "Streams turned mill <strong>waterwheels</strong>, and towpath horses pulled <strong>narrowboats</strong> of coal and china through wooden <strong>canal locks</strong>.",
+        "paired_prose_hash": "a0e8be3f4e",
+        "spoken": "Rivers and artificial canals powered Britain’s heavy goods boom. <short pause> Streams turned mill waterwheels, and towpath horses pulled narrowboats of coal and china through wooden canal locks."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Steam Stations & Street Clues",
+        "date": "1830–1965",
+        "img": "/units/ks2_local_history_detective/assets/l4_p3_preserved_british_steam_station.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1830s Steam Boom • 1960s Closures",
+        "connective": "Railways linked every town—and left clues even where lines closed.",
+        "html": "Victorian <strong>steam railways</strong> sped milk and coal into red-brick stations, echoed today in cycle paths, <strong>Station Road</strong>, and <strong>Mill Lane</strong> signs.",
+        "paired_prose_hash": "2e74c2aa69",
+        "spoken": "Railways linked every town—and left clues even where lines closed. <short pause> Victorian steam railways sped milk and coal into red-brick stations, echoed today in cycle paths, Station Road, and Mill Lane signs."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Landscape Clues to Everyday Work",
+        "date": "1600–Present",
+        "img": "/units/ks2_local_history_detective/assets/banner_l4_british_canal_viaduct_industry.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Markets + Canals + Rails + Road Names",
+        "connective": "Every bridge, wharf, and street sign explains how a town grew.",
+        "html": "Tracing <strong>milestones</strong>, <strong>locks</strong>, <strong>mills</strong>, and <strong>street names</strong> reveals how communities across Britain earned their living.",
+        "spoken": "Every bridge, wharf, and street sign explains how a town grew. <short pause> Tracing milestones, locks, mills, and street names reveals how communities across Britain earned their living."
+      }
+    ],
+    "takeaway": "Market halls, turnpike milestones, canal locks, watermills, steam stations, and street names like Mill Lane or Station Road reveal how any UK town earned its living.",
+    "vocab": [
+      [
+        "1. Turnpike",
+        "18th-century toll road marked with carved stone milestones."
+      ],
+      [
+        "2. Milestone",
+        "Roadside stone or iron post showing miles to nearby towns."
+      ],
+      [
+        "3. Canal Lock",
+        "Water chamber with gates lifting narrowboats up hills."
+      ]
+    ],
+    "provenanceNote": "The National Archives (Kew), Ordnance Survey Historical Maps, Commonwealth War Graves Commission, English Heritage, Beamish Museum and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Market halls, turnpike milestones, canal locks, watermills, steam stations, and street names like Mill Lane or Station Road reveal how any UK town earned its living."
+  },
+  "lesson_5": {
+    "num": "05",
+    "slug": "ks2_local_history_detective_l05_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 5",
+    "datesBadge": "1914–1945",
+    "topicLabel": "Enquiry 05: Names Carved in Stone — Local War Memorials and Commonwealth Records",
+    "title": "How can War Memorials and Commonwealth records trace one local soldier’s story?",
+    "spokenTitle": "How can War Memorials and Commonwealth records trace one local soldier’s story?",
+    "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l5_british_war_memorial_avenue.jpg",
+    "bridges": [
+      "1917 Equal Graves",
+      "Tracing One Name",
+      "Respectful Memory"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "100,000+ Local War Memorials",
+        "date": "1918–1945",
+        "img": "/units/ks2_local_history_detective/assets/l5_p1_poppy_wreaths_cenotaph_remembrance.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1914–1918 & 1939–1945 Rolls",
+        "connective": "How can War Memorials and Commonwealth records trace one local soldier’s story?",
+        "html": "Because graves lay overseas, every town and village carved local <strong>surnames</strong>—often <strong>brothers</strong> side by side—onto stone crosses honoured with <strong>poppies</strong>.",
+        "paired_prose_hash": "7541622e29",
+        "spoken": "How can War Memorials and Commonwealth records trace one local soldier’s story? <short pause> Because graves lay overseas, every town and village carved local surnames—often brothers side by side—onto stone crosses honoured with poppies."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "1917 Equal White Headstones",
+        "date": "1917–1922",
+        "img": "/units/ks2_local_history_detective/assets/l5_p2_cwgc_cemetery_portland_headstones.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Sir Fabian Ware • White Portland Stone",
+        "connective": "Overseas cemeteries broke with class division forever.",
+        "html": "Founded in <strong>1917</strong> by <strong>Fabian Ware</strong>, War Graves cemeteries gave generals and teenage privates identical white <strong>Portland stone</strong> headstones.",
+        "paired_prose_hash": "3ba7622307",
+        "spoken": "Overseas cemeteries broke with class division forever. <short pause> Founded in 1917 by Fabian Ware, War Graves cemeteries gave generals and teenage privates identical white Portland stone headstones."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "From Stone Cross to Home Street",
+        "date": "1919–Today",
+        "img": "/units/ks2_local_history_detective/assets/l5_p3_ww1_british_war_victory_medals.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "CWGC + Plaques + Medals + 1911 Census",
+        "connective": "Four archives reconnect a carved surname to a real childhood home.",
+        "html": "Matching free <strong>CWGC registers</strong>, bronze <strong>Memorial Plaques</strong>, medals, and the <strong>1911 Census</strong> traces one soldier back to a local street.",
+        "paired_prose_hash": "1244f26c48",
+        "spoken": "Four archives reconnect a carved surname to a real childhood home. <short pause> Matching free CWGC registers, bronze Memorial Plaques, medals, and the 1911 Census traces one soldier back to a local street."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "World History on One Local Street",
+        "date": "1914–Present",
+        "img": "/units/ks2_local_history_detective/assets/banner_l5_british_war_memorial_avenue.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Every Carved Name Was a Neighbour",
+        "connective": "Local memorials link giant world events to real families next door.",
+        "html": "Respectful detective work turns carved stone initials back into <strong>real sons, daughters, and neighbours</strong>.",
+        "spoken": "Local memorials link giant world events to real families next door. <short pause> Respectful detective work turns carved stone initials back into real sons, daughters, and neighbours."
+      }
+    ],
+    "takeaway": "Local War Memorials, Sir Fabian Ware’s equal 1917 Portland stone headstones, bronze plaques, and the 1911 Census let pupils trace one carved name back to a real street.",
+    "vocab": [
+      [
+        "1. War Memorial",
+        "Local monument carved with names of neighbours who died in war."
+      ],
+      [
+        "2. Cenotaph",
+        "Monument (\"empty tomb\") honouring those buried far away."
+      ],
+      [
+        "3. Portland Stone",
+        "White Dorset limestone used for equal CWGC headstones."
+      ]
+    ],
+    "provenanceNote": "The National Archives (Kew), Ordnance Survey Historical Maps, Commonwealth War Graves Commission, English Heritage, Beamish Museum and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Local War Memorials, Sir Fabian Ware’s equal 1917 Portland stone headstones, bronze plaques, and the 1911 Census let pupils trace one carved name back to a real street."
+  },
+  "lesson_6": {
+    "num": "06",
+    "slug": "ks2_local_history_detective_l06_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 6",
+    "datesBadge": "1895–Present",
+    "topicLabel": "Enquiry 06: Living Memory, Oral History and Saving Local Heritage",
+    "title": "How do oral history, Blue Plaques, and trails protect local heritage today?",
+    "spokenTitle": "How do oral history, Blue Plaques, and trails protect local heritage today?",
+    "thumbUrl": "/units/ks2_local_history_detective/assets/banner_l6_heritage_conservation_britain.jpg",
+    "bridges": [
+      "1895 National Trust",
+      "6-Stop Trail",
+      "History Is Everywhere"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Oral History & 1971 Shillings",
+        "date": "1945–Present",
+        "img": "/units/ks2_local_history_detective/assets/l6_p1_british_pre_decimal_coins_shilling.jpg",
+        "mode": "contain-light",
+        "pos": "center 45%",
+        "stat": "Living Memory Since 1945",
+        "connective": "How do oral history, Blue Plaques, and trails protect local heritage today?",
+        "html": "Open-ended <strong>oral history interviews</strong> capture memories of corner grocers and pre-1971 <strong>shillings</strong>, cross-checked with <strong>archive photos</strong>.",
+        "paired_prose_hash": "6cabe63b3c",
+        "spoken": "How do oral history, Blue Plaques, and trails protect local heritage today? <short pause> Open-ended oral history interviews capture memories of corner grocers and pre-1971 shillings, cross-checked with archive photos."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Octavia Hill, Plaques & Listing",
+        "date": "1866–1947",
+        "img": "/units/ks2_local_history_detective/assets/l6_p2_traditional_british_high_street_shops.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1866 Plaques • 1895 Trust • 1947 Listing",
+        "connective": "Charities, markers, and laws protect historic places from bulldozers.",
+        "html": "<strong>Octavia Hill’s National Trust (1895)</strong>, ceramic <strong>Blue Plaques</strong>, and <strong>1947 Listed Building</strong> laws safeguard UK heritage.",
+        "paired_prose_hash": "7b6e5dcf38",
+        "spoken": "Charities, markers, and laws protect historic places from bulldozers. <short pause> Octavia Hill’s National Trust (1895), ceramic Blue Plaques, and 1947 Listed Building laws safeguard UK heritage."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Your Doorstep Heritage Trail",
+        "date": "Today",
+        "img": "/units/ks2_local_history_detective/assets/l6_p3_local_heritage_trail_information_board.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "6 Enquiries → 1 Community Trail",
+        "connective": "Now all six detective skills unite on your own street!",
+        "html": "Combine <strong>place-names</strong>, <strong>1880s maps</strong>, <strong>architecture</strong>, <strong>censuses</strong>, <strong>War Memorials</strong>, and <strong>oral history</strong> into a local trail!",
+        "paired_prose_hash": "7d4ba75f0e",
+        "spoken": "Now all six detective skills unite on your own street! <short pause> Combine place-names, 1880s maps, architecture, censuses, War Memorials, and oral history into a local trail!"
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Guardians of Our Community Story",
+        "date": "AD 43–Future",
+        "img": "/units/ks2_local_history_detective/assets/banner_l6_heritage_conservation_britain.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Every UK Doorstep Holds Deep History",
+        "connective": "Young historians do not just read history—they help preserve it.",
+        "html": "With your <strong>Local History Detective Toolkit</strong>, every walk in Britain reveals centuries of <strong>real human lives</strong>.",
+        "spoken": "Young historians do not just read history—they help preserve it. <short pause> With your Local History Detective Toolkit, every walk in Britain reveals centuries of real human lives."
+      }
+    ],
+    "takeaway": "Oral history interviews, archive photos, Octavia Hill’s 1895 National Trust, Blue Plaques, and 1947 Listed Buildings empower pupils to protect and share local heritage anywhere in Britain.",
+    "vocab": [
+      [
+        "1. Oral History",
+        "Recording older people’s spoken memories of past daily life."
+      ],
+      [
+        "2. Decimal Day",
+        "15 February 1971 switch from shillings to 100p pounds."
+      ],
+      [
+        "3. National Trust",
+        "Charity co-founded by Octavia Hill in 1895 to save heritage."
+      ]
+    ],
+    "provenanceNote": "The National Archives (Kew), Ordnance Survey Historical Maps, Commonwealth War Graves Commission, English Heritage, Beamish Museum and Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Oral history interviews, archive photos, Octavia Hill’s 1895 National Trust, Blue Plaques, and 1947 Listed Buildings empower pupils to protect and share local heritage anywhere in Britain."
+  }
+}

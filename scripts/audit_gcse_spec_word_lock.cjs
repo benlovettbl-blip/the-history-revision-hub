@@ -241,6 +241,10 @@ function main() {
     const lessons = (unitJson.data || unitJson).lessons || [];
     const examined = cfg.skipLesson0 ? lessons.slice(1) : lessons;
     const metaSkillSet = new Set(cfg.metaSkillTopics || []);
+    const activeTopicSet =
+      Array.isArray(cfg.activeTopics) && cfg.activeTopics.length > 0
+        ? new Set(cfg.activeTopics)
+        : null;
 
     const fullUnitProse = normalizeTextForMatch(
       examined
@@ -285,6 +289,7 @@ function main() {
       (sec.topics || []).forEach((top, tIdx) => {
         const topicNumber = top.number || tIdx + 1;
         if (metaSkillSet.has(`KT${ktNum}:${topicNumber}`)) return;
+        if (activeTopicSet && !activeTopicSet.has(`KT${ktNum}:${topicNumber}`)) return;
 
         (top.points || []).forEach((pt) => {
           const cleaned = pt.replace(/\(incl\.\s*/gi, ', ').replace(/[()]/g, ' ');
@@ -363,6 +368,7 @@ function main() {
           (sec.topics || []).forEach((top, tIdx) => {
             const topicNumber = top.number || tIdx + 1;
             if (metaSkillSet.has(`KT${ktNum}:${topicNumber}`)) return;
+            if (activeTopicSet && !activeTopicSet.has(`KT${ktNum}:${topicNumber}`)) return;
             (top.points || []).forEach((pt) => {
               const cleaned = pt.replace(/\(incl\.\s*/gi, ', ').replace(/[()]/g, ' ');
               cleaned

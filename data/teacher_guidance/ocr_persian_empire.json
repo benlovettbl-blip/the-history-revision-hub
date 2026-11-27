@@ -1,0 +1,64 @@
+{
+  "unit_id": "ocr_persian_empire",
+  "unit_overview": {
+    "curriculum_focus": "OCR GCSE (9–1) Ancient History J198/01 Section A: The Persian Empire, 559–465 BC.",
+    "disciplinary_threads": "Discrete Recall (4m), Continuous-Prose Outline (6m), Unseen Ancient Passage Analysis (10m + 15m — zero provenance required), and Period Evaluation Essay (20m + 5 SPaG).",
+    "non_specialist_summary": "Traces Achaemenid imperial expansion, governance, religion, and architecture across Cyrus the Great, Cambyses II, Darius I, and Xerxes I, balancing Herodotus and Aeschylus against Near Eastern evidence (Nabonidus Chronicle, Cyrus Cylinder, Udjahorresnet, Bisitun, and Persepolis)."
+  },
+  "lessons": {
+    "lesson_1_1": {
+      "curriculum_link": "KT 1.1: The background and accession of Cyrus; the conquest of Lydia (559–c.546 BC).",
+      "hinge_question": "Did Cyrus conquer Media and Lydia more through his enemies’ blunders or his own speed and diplomacy?",
+      "hinge_guidance": "Reward answers pairing Astyages’ unpopularity and Croesus’ winter demobilisation with Cyrus’ winter march, Thymbra camels, and sparing defeated elites.",
+      "misconceptions": [
+        {
+          "misconception": "Writing long paragraphs about Herodotus’ birthplace and bias on Q3 (10m) and Q4 (15m).",
+          "correction": "OCR J198 Period Study mark schemes award ZERO provenance marks on Q3/Q4—quote Passage A directly and test its claims against accurate historical knowledge."
+        },
+        {
+          "misconception": "Assuming Cyrus started out as ruler of a vast empire in 559 BC.",
+          "correction": "Cyrus began as King of Anshan in Persis, a subordinate tributary vassal beneath King Astyages of Media."
+        }
+      ],
+      "send_adaptation": "Use the Tap-to-Hear Classical Pronunciation chips and 3-hotspot Croeseid & Louvre Amphora visual cards before drafting continuous prose.",
+      "stretch_challenge": "Evaluate why Persian Zoroastrian/mazdaean reverence for pure fire makes Herodotus’ story of Cyrus ordering Croesus burned on a pyre historically suspect.",
+      "safeguarding_impartiality": "Present Greek and Near Eastern primary traditions analytically within their 6th–5th century BC historical contexts."
+    },
+    "lesson_1_2": {
+      "curriculum_link": "KT 1.2: The conquest of Babylon; Cyrus’ attitude towards conquered peoples and his liberation of the Jews (539–538 BC).",
+      "hinge_question": "Was Cyrus’ celebration of Marduk on the Cyrus Cylinder and restoration of Jerusalem genuine religious respect, shrewd imperial propaganda, or both?",
+      "hinge_guidance": "Reward pupils who recognise that ancient royal propaganda and pragmatic toleration worked together: adopting local religious traditions secured peaceful tribute and frontier loyalty near Egypt without costly garrisons.",
+      "misconceptions": [
+        {
+          "misconception": "Describing the Cyrus Cylinder as a modern United Nations human rights charter.",
+          "correction": "Explain it within 6th-century BC Mesopotamian kingship as a traditional Akkadian foundation deposit modelled on Assyrian/Babylonian temple-restoration decrees."
+        },
+        {
+          "misconception": "Claiming the Cyrus Cylinder explicitly mentions Jerusalem and the Jews.",
+          "correction": "The Cylinder records returning Mesopotamian cult statues and deportees east of the Tigris; the Jewish return and Temple decree come from Ezra 1/6 and Isaiah 45, which fit the same imperial policy."
+        }
+      ],
+      "send_adaptation": "Use the 3-step October 539 BC campaign diagram and Cyrus Cylinder hotspots before tackling the Passage A accuracy comparison.",
+      "stretch_challenge": "Compare Marduk grasping Cyrus’ hand on the Cyrus Cylinder with Yahweh grasping Cyrus’ right hand in Isaiah 45:1—how did Persian diplomacy speak fluently in two different theologies?",
+      "safeguarding_impartiality": "Teach Babylonian cuneiform chronicles and Hebrew biblical texts with equal historical rigour inside their 6th-century BC Near Eastern context."
+    },
+    "lesson_1_3": {
+      "curriculum_link": "KT 1.3: The construction of Pasargadae; the circumstances of Cyrus’ death (c. 546–530 BC).",
+      "hinge_question": "How does Cyrus’ intact golden coffin inside his tomb at Pasargadae help us evaluate Herodotus’ story of Queen Tomyris and the wineskin of blood?",
+      "hinge_guidance": "Guide pupils to separate the plausible geopolitical setting (dying on campaign securing the Central Asian steppe in 530 BC) from Herodotus’ moralised mutilation climax—using Herodotus’ own admission that \"many stories\" circulated.",
+      "misconceptions": [
+        {
+          "misconception": "Dismissing Herodotus 1.214 as \"completely made up because he was Greek\".",
+          "correction": "Avoid reductive clichés: note that Herodotus openly admits multiple oral stories existed and shaped Tomyris’ revenge around Greek moral themes of hubris, while Ctesias and Pasargadae corroborate a frontier death followed by royal burial."
+        },
+        {
+          "misconception": "Treating Pasargadae as purely Persian in style.",
+          "correction": "Pasargadae deliberately synthesised Lydian-Ionian ashlar stonecutting, Mesopotamian winged protective figures, Egyptian-Syrian crowns, Elamite robes, and Iranian pairidaeza gardens."
+        }
+      ],
+      "send_adaptation": "Use the Gate R Winged Guardian hotspots and 4-quarter pairidaeza visual map to anchor architectural vocabulary visually.",
+      "stretch_challenge": "Contrast Xenophon’s peaceful deathbed scene in the Cyropaedia with Herodotus 1.214: how did each Greek writer’s literary purpose reshape Cyrus’ final hours?",
+      "safeguarding_impartiality": "Contextualise ancient warfare narratives and Rubens’ Baroque history painting analytically."
+    }
+  }
+}

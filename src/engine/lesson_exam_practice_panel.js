@@ -34,6 +34,14 @@ export function getCanonicalGcsePaperCode(unitId) {
       return 'Option 31 (1HI0/31)';
     case 'usa':
       return 'Option 33 (1HI0/33)';
+    case 'ocr_persian_empire':
+      return 'Component 1 Sec A (J198/01)';
+    case 'ocr_alexander':
+      return 'Component 1 Sec D (J198/01)';
+    case 'ocr_foundations_of_rome':
+      return 'Component 2 Sec A (J198/02)';
+    case 'ocr_cleopatra':
+      return 'Component 2 Sec C (J198/02)';
     default:
       return 'Pearson Edexcel GCSE (9–1)';
   }

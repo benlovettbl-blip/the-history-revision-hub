@@ -48,11 +48,11 @@ export const MOCK_BANK_COLD_WAR = {
             verdict: 'AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 56w • Option B: 58w). Each exemplar earns full 4/4 marks by developing ONE focused consequence—either four-zone division creating the Berlin flashpoint (Option A) or rival interpretations of the Declaration on Liberated Europe over Poland (Option B).',
             options: [
               {
-                label: 'Option A (4/4): Four-Zone Division of Germany & Berlin',
+                label: 'Option A (4/4): Four-Zone Division → Berlin Flashpoint Inside Soviet Zone',
                 text: 'One consequence of the Yalta Conference in February 1945 was the agreed division of defeated Germany and Berlin into four occupation zones run by the USA, USSR, Britain, and France. Because West Berlin sat 100 miles deep inside the Soviet eastern zone, this four-power arrangement created an unstable geographical flashpoint once wartime cooperation broke down.',
               },
               {
-                label: 'Option B (4/4): Clash Over Polish Elections',
+                label: 'Option B (4/4): Polish Elections Dispute → Distrust Ahead of Potsdam',
                 text: 'One consequence of the Yalta Conference was deepening superpower distrust over the future government of Poland despite signing the Declaration on Liberated Europe. While Roosevelt and Churchill expected free democratic elections including the pro-Western London Poles, Stalin used Red Army occupation to entrench the Communist Lublin Poles, souring relations before Potsdam.',
               },
             ],
@@ -101,11 +101,11 @@ export const MOCK_BANK_COLD_WAR = {
             verdict: 'AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 56w • Option B: 55w). Develops ONE clear consequence with precise historical detail—either triggering US congressional approval of Marshall Aid (Option A) or securing Stalin’s one-party buffer zone stripped of political opposition (Option B).',
             options: [
               {
-                label: 'Option A (4/4): US Approval of Marshall Aid',
+                label: 'Option A (4/4): Eastern Takeovers → US Approval of $13bn Marshall Aid',
                 text: 'One consequence of the creation of Soviet satellite states across Eastern Europe between 1945 and 1948 was America’s shift from wartime alliance to active containment. Shocked by rigged Communist takeovers in Poland, Hungary, and the February 1948 Czechoslovak coup, the US Congress swiftly approved over $13 billion in Marshall Plan aid to stop communism spreading westwards.',
               },
               {
-                label: 'Option B (4/4): Elimination of Democratic Opposition',
+                label: 'Option B (4/4): Salami Tactics → One-Party Buffer Under Cominform',
                 text: 'One consequence of creating Soviet satellite states was the elimination of multi-party democracy across Moscow’s new Eastern European buffer zone. Using "salami tactics", interior-ministry secret police, and rigged elections in Poland, Romania, Bulgaria, and Hungary, Stalin installed obedient Communist regimes bound ideologically to Moscow through Cominform (September 1947).',
               },
             ],
@@ -197,11 +197,11 @@ export const MOCK_BANK_COLD_WAR = {
             verdict: 'AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence linking Nagy’s 1 November Warsaw Pact withdrawal directly to Khrushchev’s 4 November military intervention.',
             options: [
               {
-                label: 'Option A (4/4): Triggering the 4 November Soviet Invasion',
+                label: 'Option A (4/4): 1 Nov Warsaw Pact Exit → 4 Nov Soviet Invasion',
                 text: 'One consequence of Imre Nagy’s proposed reforms—especially his 1 November 1956 announcement that Hungary would leave the Warsaw Pact and hold free multi-party elections—was Khrushchev’s decision to crush the uprising by force. Fearing the collapse of the Eastern European buffer zone, Khrushchev sent 1,000 Soviet tanks into Budapest on 4 November 1956, overthrowing Nagy and installing János Kádár.',
               },
               {
-                label: 'Option B (4/4): Pressure from Mao & Warsaw Pact Hardliners',
+                label: 'Option B (4/4): Neutrality Pledge → Hardline Bloc Pressure on Khrushchev',
                 text: 'One consequence of Nagy’s proposed multi-party and neutrality reforms was intense pressure on Khrushchev from Communist leaders such as Mao Zedong and Eastern Bloc hardliners to restore control. Convinced that tolerating Hungarian neutrality would spark copycat rebellions in Poland and East Germany, Moscow reversed its earlier troop withdrawal and re-established one-party rule.',
               },
             ],
@@ -250,11 +250,11 @@ export const MOCK_BANK_COLD_WAR = {
             verdict: 'AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 57w • Option B: 53w). Develops ONE clear consequence—either provoking Khrushchev’s November 1958 Berlin Ultimatum (Option A) or crippling GDR skilled labour supply under Walter Ulbricht (Option B).',
             options: [
               {
-                label: 'Option A (4/4): Triggering Khrushchev’s 1958 Ultimatum',
+                label: 'Option A (4/4): Skilled Brain Drain → Khrushchev’s Nov 1958 Ultimatum',
                 text: 'One consequence of the growing refugee problem in Berlin by 1958 was severe economic and propaganda damage to Communist East Germany (GDR). Because nearly three million often young, skilled engineers, doctors, and teachers fled through open Berlin checkpoints for higher Western wages and freedom, Khrushchev issued his November 1958 Berlin Ultimatum demanding Western troops leave West Berlin.',
               },
               {
-                label: 'Option B (4/4): Crippling East German Skilled Labour',
+                label: 'Option B (4/4): Skilled Labour Shortage → Pressure to Seal Berlin’s Border',
                 text: 'One consequence of the refugee problem in Berlin was an acute skilled-labour shortage that pushed Walter Ulbricht’s East German economy toward collapse. Losing tens of thousands of university-educated doctors, technicians, and factory specialists via West Berlin’s open sector border undermined Communist claims of superiority and forced Moscow to seek a permanent border closure.',
               },
             ],
@@ -303,11 +303,11 @@ export const MOCK_BANK_COLD_WAR = {
             verdict: 'AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 60w • Option B: 55w). Develops ONE clear consequence—either Soviet trade and arms foothold in the Western Hemisphere (Option A) or CIA covert exile intervention culminating in the Bay of Pigs (Option B).',
             options: [
               {
-                label: 'Option A (4/4): Soviet Economic & Arms Foothold in Cuba',
+                label: 'Option A (4/4): US Sugar Embargo → 1960 Soviet Trade & Arms Partnership',
                 text: 'One consequence of the 1959 Cuban Revolution was that US economic sanctions pushed Fidel Castro directly into an economic and military partnership with the Soviet Union just 90 miles from Florida. After Castro nationalised American-owned land and sugar companies and Eisenhower banned Cuban sugar imports, Khrushchev stepped in during 1960 to buy Cuban sugar and supply Soviet oil and weapons.',
               },
               {
-                label: 'Option B (4/4): US Refusal of Recognition & CIA Covert Plot',
+                label: 'Option B (4/4): Severed US Ties → CIA Brigade 2506 Bay of Pigs Plot',
                 text: 'One consequence of the Cuban Revolution was the breakdown of diplomatic relations and covert US intervention to remove a Soviet ally from America’s sphere of influence. Refusing to tolerate a pro-Soviet regime under Fidel Castro, Eisenhower authorised the CIA to train Cuban exiles (Brigade 2506) and severed diplomatic ties in January 1961 ahead of the Bay of Pigs.',
               },
             ],
@@ -356,11 +356,11 @@ export const MOCK_BANK_COLD_WAR = {
             verdict: 'AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 56w • Option B: 57w). Develops ONE clear consequence—either Novotný’s replacement and Dubček’s April 1968 Action Programme (Option A) or intense alarm among Warsaw Pact hardliners culminating in the July 1968 Warsaw Letter (Option B).',
             options: [
               {
-                label: 'Option A (4/4): Removal of Novotný & Action Programme',
+                label: 'Option A (4/4): Novotný’s Fall → Dubček’s April 1968 Action Programme',
                 text: 'One consequence of mounting opposition to hardline Soviet-style rule in Czechoslovakia by early 1968 was the removal of unpopular Stalinist leader Antonín Novotný and the launch of Alexander Dubček’s reform programme. Appointed First Secretary in January 1968, Dubček introduced his April Action Programme ("Socialism with a human face"), abolishing press censorship and curbing StB secret-police powers.',
               },
               {
-                label: 'Option B (4/4): Warsaw Pact Alarm & July 1968 Warsaw Letter',
+                label: 'Option B (4/4): Uncensored Reform → July 1968 Five-Party Warsaw Letter',
                 text: 'One consequence of outspoken opposition during the Prague Spring—such as Ludvík Vaculík’s June 1968 "Two Thousand Words" manifesto—was fierce alarm among neighbouring Communist hardliners. Fearing uncensored criticism would destabilise one-party rule in East Germany and Poland, Brezhnev, Ulbricht, and Gomułka staged June military exercises and issued the stern Five-Party Warsaw Letter on 15 July 1968.',
               },
             ],
@@ -452,7 +452,7 @@ export const MOCK_BANK_COLD_WAR = {
             verdict: 'AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 66w • Option B: 56w). Develops ONE clear consequence—either Senate backlash and withdrawal after Afghanistan ending détente (Option A) or the Vienna agreement’s informal 2,400-launcher and MIRV benchmark (Option B).',
             options: [
               {
-                label: 'Option A (4/4): Senate Withdrawal & End of Détente',
+                label: 'Option A (4/4): Dec 1979 Afghan Invasion → Senate Withdrawal & End of Détente',
                 text: 'One consequence of the signing of SALT 2 by Jimmy Carter and Leonid Brezhnev in June 1979 was fierce opposition in the US Senate followed by the treaty’s formal collapse six months later. Critics argued the limit of 2,400 strategic nuclear launchers rewarded Soviet expansionism, and when Soviet troops invaded Afghanistan in December 1979, Carter withdrew SALT 2 from Senate ratification—marking the end of détente.',
               },
               {
@@ -548,11 +548,11 @@ export const MOCK_BANK_COLD_WAR = {
             verdict: 'AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 57w • Option B: 56w). Develops ONE clear consequence—either eliminating an entire class of missiles via the 1987 INF Treaty (Option A) or ending "Evil Empire" hostility up to the 1989 Malta Summit (Option B).',
             options: [
               {
-                label: 'Option A (4/4): Elimination of Missiles via INF Treaty (1987)',
+                label: 'Option A (4/4): Summit Rapport → December 1987 INF Treaty',
                 text: 'One consequence of Reagan and Gorbachev’s summit diplomacy between 1985 and 1989 was the signing of the historic Intermediate-Range Nuclear Forces (INF) Treaty at Washington in December 1987. Building on personal rapport forged at Geneva (1985) and Reykjavik (1986), both superpowers eliminated all land-based nuclear missiles with ranges of 500–5,500 km, backed by mutual on-site inspections.',
               },
               {
-                label: 'Option B (4/4): End of "Second Cold War" Hostility',
+                label: 'Option B (4/4): Ending "Evil Empire" Hostility → December 1989 Malta Summit',
                 text: 'One consequence of the 1985–89 summits was a dramatic shift from "Second Cold War" confrontation to cooperative trust between Washington and Moscow. After agreeing at Geneva (1985) that "a nuclear war cannot be won", Reagan visited Moscow in 1988 retracting his "Evil Empire" label, paving the way for Bush and Gorbachev to declare the Cold War effectively over at Malta (December 1989).',
               },
             ],

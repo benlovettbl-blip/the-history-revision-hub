@@ -1,0 +1,578 @@
+[
+  {
+    "lesson_index": 0,
+    "lesson_id": "lesson_1",
+    "lesson_label": "Enquiry 1",
+    "short_tab_title": "Bath Curse Tablet",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "intimate_eyewitness",
+    "source_type": "eyewitness",
+    "source_type_label": "Roman Britain Eyewitness",
+    "book_title": "Stolen at the Baths! Docimedis's Lead Curse to Sulis Minerva",
+    "author": "Docimedis of Aquae Sulis (Roman Baths Curse Tablet, Tabellae Sulis 10, c. AD 150–300)",
+    "provenance_note": "Adapted into accessible Key Stage 2 English from Roman lead curse tablets (Tabellae Sulis, especially no. 10 by Docimedis and cloak curses to Sulis Minerva) excavated from the Sacred Spring at Aquae Sulis (Bath) and inscribed on thin pewter and lead sheets.",
+    "author_context": "Without a modern police force in Roman Britain, what could an ordinary bather do when a sneak thief snatched their warm woollen cloak or gloves from the changing rooms at Bath? Read how angry citizens scratched secret messages onto lead for the goddess Sulis Minerva!",
+    "cover_image": "/units/ks2_crime_and_punishment/assets/bath_roman_lead_curse_tablet.jpg",
+    "cover_caption": "Original folded Roman lead curse tablet (defixio) scratched with Latin letters and thrown into the steaming Sacred Spring at Aquae Sulis, Bath.",
+    "studio_audio": "/audio/reading/ks2_crime_and_punishment/r0.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Aquae Sulis",
+        "pronunciation": "AK-way SOO-liss",
+        "def": "The Roman spa town of Bath in Somerset, built around steaming hot mineral springs sacred to the goddess Sulis Minerva."
+      },
+      {
+        "term": "Curse Tablet",
+        "pronunciation": "KERS TAB-lit",
+        "def": "A thin sheet of Roman lead or pewter scratched with a plea asking a god or goddess to track down and punish a thief."
+      },
+      {
+        "term": "Stylus",
+        "pronunciation": "STY-lus",
+        "def": "A pointed iron or bronze Roman writing pen used to scratch sharp Latin letters onto wax boards or soft lead sheets."
+      },
+      {
+        "term": "Magistrate",
+        "pronunciation": "MAJ-ih-strayt",
+        "def": "A senior Roman town judge who heard serious court cases inside the stone basilica hall when a suspect was caught."
+      }
+    ],
+    "extract": "Steam curled off the green pools at <strong>Aquae Sulis</strong> as I stepped from the warm bath. I shivered in shock! My thick wool cloak and two warm gloves had vanished from the stone bench. No police officer walked Roman streets to hunt an unseen thief. A town <em>magistrate</em> in the court hall could only judge a suspect if I caught them myself.\n\nSo I bought a thin grey sheet of soft lead and gripped a sharp iron <em>stylus</em>. Pressing hard, I scratched my plea to the goddess of the spring:\n\n<em>\"Goddess Sulis Minerva! Docimedis has lost two gloves and a warm cloak. Is the thief man or woman, free citizen or slave? Let them lose sleep and health until they bring my goods back to your temple!\"</em>\n\nI folded the lead sheet tight so human eyes could not read a word. Walking to the hot sacred pool, I dropped my curse into the dark water.",
+    "parent_discussion": [
+      {
+        "question": "Why couldn't Docimedis simply ask a Roman magistrate to investigate the missing cloak and gloves right away?",
+        "answer": "Roman Britain had no detective police force—victims had to catch a suspect themselves before bringing them to a magistrate's court!"
+      },
+      {
+        "question": "Why did Roman bathers fold their lead curse tablets tightly before dropping them into the steaming spring at Bath?",
+        "answer": "They folded the thin lead sheets so mortal eyes could not read the secret message meant only for the goddess Sulis Minerva!"
+      },
+      {
+        "question": "What does listing 'man or woman, free citizen or slave' tell us about who visited the Roman baths and who could be suspected?",
+        "answer": "It shows the busy baths held men, women, free citizens, and enslaved workers side by side—and Docimedis had no clue who took his things!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What metal did Roman Britons at Aquae Sulis (Bath) scratch their curse messages onto?",
+        "options": [
+          "Heavy cast iron",
+          "Thin sheets of soft grey lead or pewter",
+          "Solid yellow gold",
+          "Shiny aluminium foil"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Thin sheets of soft lead were cheap, easy to scratch with a pointed stylus, and sank straight into the sacred spring."
+      },
+      {
+        "question": "Which goddess did bathers at Aquae Sulis ask to track down cloak and coin thieves?",
+        "options": [
+          "Sulis Minerva",
+          "Athena of Sparta",
+          "Isis of Memphis",
+          "Freya of Denmark"
+        ],
+        "correctIndex": 0,
+        "feedback": "Exactly right! Romans blended the local Celtic spring goddess Sulis with their own wisdom goddess Minerva."
+      },
+      {
+        "question": "Why did Roman victims turn to curse tablets when nobody saw who stole their belongings?",
+        "options": [
+          "Because Roman courts were closed every day of the year",
+          "Because Roman Britain had no police detectives, so victims had to catch suspects themselves",
+          "Because writing on paper was banned by the Emperor",
+          "Because legionaries stole every cloak in Britain"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Without detectives or cameras, ordinary people hoped fear of the goddess would make guilty thieves confess."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Why did Roman bathers at Aquae Sulis scratch messages onto lead sheets for Sulis Minerva instead of calling the police?",
+      "answer": "Roman Britain had no police detectives to hunt unknown thieves, so victims asked the goddess Sulis Minerva to punish the thief until their goods were returned."
+    },
+    "hinge_question": "Why have archaeologists found over 130 stolen-cloak and coin curses at Bath rather than grand political crimes?",
+    "audio_file": "/audio/reading/ks2_crime_and_punishment/r0.mp3"
+  },
+  {
+    "lesson_index": 1,
+    "lesson_id": "lesson_2",
+    "lesson_label": "Enquiry 2",
+    "short_tab_title": "Sound the Hue and Cry!",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Micro-Story",
+    "book_title": "Ten Neighbours and One Cow-Horn: Raising the Anglo-Saxon Hue and Cry",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical micro-story grounded in Anglo-Saxon Hundred Laws, King Alfred's Domboc (c. AD 890), and Textus Roffensis rules governing tithings of ten men, compulsory Hue and Cry pursuits, and silver wergild/bot compensation.",
+    "author_context": "Imagine living in a thatched Anglo-Saxon village in AD 895 with zero police cars, zero radios, and thick oak woods all around! Discover how every neighbour over twelve had to drop their plough and sprint whenever the cow-horn sounded!",
+    "cover_image": "/units/ks2_crime_and_punishment/assets/medieval_horn_hue_and_cry.jpg",
+    "cover_caption": "Medieval illuminated manuscript showing a horn-blower sounding a loud blast to summon neighbours across the fields.",
+    "studio_audio": "/audio/reading/ks2_crime_and_punishment/r1.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Tithing",
+        "pronunciation": "TY-thing",
+        "def": "A group of ten Anglo-Saxon neighbours aged twelve and over who promised to keep one another honest and bring lawbreakers to court."
+      },
+      {
+        "term": "Hue and Cry",
+        "pronunciation": "HYOO und KRY",
+        "def": "A loud alarm shouted or blown on a horn forcing every villager in earshot to stop work and chase a runaway thief immediately."
+      },
+      {
+        "term": "Wergild",
+        "pronunciation": "WER-gild",
+        "def": "Literally 'person-price' in Old English—silver coins paid by a wrongdoer's family to an injured victim's kin to stop blood feuds."
+      },
+      {
+        "term": "Hundred Court",
+        "pronunciation": "HUN-dred KORT",
+        "def": "An open-air monthly Anglo-Saxon court where local elders and witnesses settled village disputes and set silver fines."
+      }
+    ],
+    "extract": "Frost crunched under Oslac's boots in Wiltshire around AD 895. Checking his thatched sheep pen at dawn, he gasped aloud! The wood gate hung wide open, and two plump ewes had gone. Fresh prints in the mud led straight to the oak woods.\n\nOslac could not call a police station, for none existed in England. Instead, he raised his curved cow-horn and blew three loud blasts. Then he yelled across the fields: <em>\"Out! Out! Thief in the woods!\"</em>\n\nThat cry raised the <strong>Hue and Cry</strong>. By Saxon law, all ten men in Oslac's <em>tithing</em> had to drop their spades at once and run! Any neighbour who hid lazily indoors faced a steep fine.\n\nSoon twelve fast neighbours trapped the shaking thief by the brook. Rather than start a blood feud with swords, they led him to the open-air <strong>Hundred Court</strong>. There village elders made his kin give back both sheep and pay silver <em>wergild</em> coins!",
+    "parent_discussion": [
+      {
+        "question": "What happened to an Anglo-Saxon villager who heard the 'Hue and Cry' horn but stayed indoors instead of helping chase the thief?",
+        "answer": "Their whole tithing or household faced a strict silver fine because chasing thieves was every neighbour's legal duty!"
+      },
+      {
+        "question": "How did grouping everyone aged twelve and over into a ten-person 'tithing' stop lots of crimes before they even started?",
+        "answer": "If one member broke the law and ran away, the other nine neighbours had to bring them to court or pay the fine themselves!"
+      },
+      {
+        "question": "Why was paying silver 'wergild' compensation wiser for a small village than letting angry families take revenge with swords?",
+        "answer": "Revenge killings started endless blood feuds between neighbours, whereas agreed silver compensation restored peace safely."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "At what age did Anglo-Saxon boys join a local ten-person 'tithing' responsible for keeping the peace?",
+        "options": [
+          "Aged five",
+          "Aged twelve",
+          "Aged thirty",
+          "Aged sixty"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! From age twelve, every male villager belonged to a tithing of ten neighbours who answered for one another's behaviour."
+      },
+      {
+        "question": "What did the Old English word 'wergild' literally mean?",
+        "options": [
+          "Iron prison door",
+          "Person-price (silver compensation paid to stop family blood feuds)",
+          "Royal hunting forest",
+          "Hot iron bar"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! 'Wer' meant person and 'gild' meant payment or price—fixing exact silver sums for every injury."
+      },
+      {
+        "question": "What had to happen the moment someone shouted the 'Hue and Cry' in an Anglo-Saxon village?",
+        "options": [
+          "Everyone locked their doors and hid under beds",
+          "Only paid uniformed police officers chased the suspect",
+          "Every villager within earshot had to stop work immediately and join the chase",
+          "Villagers wrote a letter to Rome and waited six months"
+        ],
+        "correctIndex": 2,
+        "feedback": "Well remembered! Community policing relied on every single neighbour dropping tools to track the suspect together."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How did Anglo-Saxon 'tithings', the 'Hue and Cry', and 'wergild' keep villages peaceful without a police force?",
+      "answer": "Ten-person tithings watched neighbours' behaviour, everyone had to chase thieves during the Hue and Cry, and silver wergild fines stopped revenge feuds."
+    },
+    "hinge_question": "Why did community policing like the Hue and Cry work well in tiny villages of 100 people, yet struggle centuries later in huge cities?",
+    "audio_file": "/audio/reading/ks2_crime_and_punishment/r1.mp3"
+  },
+  {
+    "lesson_index": 2,
+    "lesson_id": "lesson_3",
+    "lesson_label": "Enquiry 3",
+    "short_tab_title": "Robin Hood & Greenwood Law",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "verse",
+    "source_type_label": "Medieval English Ballad",
+    "book_title": "A Gest of Robyn Hode (Outlaws in the King's Royal Forest)",
+    "author": "Traditional Medieval English Ballad (First Printed c. 1495, Public Domain)",
+    "provenance_note": "Public-domain medieval ballad lines adapted into clear modern spelling from 'A Gest of Robyn Hode' (c. 1450–1495, Child Ballad 117), paired with historical context on Norman Forest Laws and medieval outlaws.",
+    "author_context": "After 1066, Norman kings fenced off huge woodlands under harsh Forest Laws—making it a terrible crime for hungry villagers to hunt wild deer! Read aloud from England's oldest Robin Hood ballad to hear why ordinary folk cheered a greenwood outlaw!",
+    "cover_image": "/units/ks2_crime_and_punishment/assets/new_forest_royal_deer_oaks.jpg",
+    "cover_caption": "Wild fallow deer beneath ancient oaks in the New Forest — strictly reserved for royal hunting under Norman Forest Laws after 1066.",
+    "studio_audio": "/audio/reading/ks2_crime_and_punishment/r2.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Forest Laws",
+        "pronunciation": "FOR-ist LAWZ",
+        "def": "Harsh Norman laws brought in by William the Conqueror forbidding villagers from hunting royal deer or chopping wood without pay."
+      },
+      {
+        "term": "Outlaw",
+        "pronunciation": "OWT-law",
+        "def": "A fugitive placed completely 'outside the law' after fleeing court—anyone could capture them, so many hid in deep forests."
+      },
+      {
+        "term": "Sheriff",
+        "pronunciation": "SHER-if",
+        "def": "From 'shire-reeve'—the king's chief county officer who collected taxes, hunted outlaws, and guarded royal castles."
+      },
+      {
+        "term": "Poaching",
+        "pronunciation": "POH-ching",
+        "def": "Secretly hunting deer, rabbits, or fish on land claimed by the king or wealthy lords—seen by many villagers as a 'social crime'."
+      }
+    ],
+    "extract": "After 1066, Norman kings claimed wide English woods for royal sport. Taking one wild deer became <strong>poaching</strong>, punished by grim fines! Men who fled court were named <em>outlaws</em> and hid among tall green oaks. By winter fires, folk sang of a bold archer who tricked the greedy <em>Sheriff</em>:\n\n<em>\"Listen close, good neighbours all, of freeborn country blood!\nI shall tell you of a brave archer, his name was Robin Hood.\nRobin stood in green Barnsdale, and leaned against a tree.\nBeside him stood tall Little John, a loyal friend was he.\"</em>\n\nRobin gave Little John one firm rule before they walked the woods:\n\n<em>\"Never harm an honest farmer, who ploughs the muddy ground!\nNever rob a kindly yeoman, walking where green trees grow round.\nGreedy lords and unfair judges, bind their purses tight!\nAnd watch the Sheriff of Nottingham, by morning and by night!\"</em>",
+    "parent_discussion": [
+      {
+        "question": "In the medieval ballad, which hardworking country people did Robin Hood strictly forbid Little John from harming?",
+        "answer": "Hardworking farmers ploughing the ground and ordinary country yeomen walking through the greenwood!"
+      },
+      {
+        "question": "Why did ordinary medieval villagers resent William the Conqueror's 'Forest Laws' so deeply?",
+        "answer": "Woods where families had gathered firewood and hunted food for generations were suddenly locked up for royal deer hunting under cruel punishments."
+      },
+      {
+        "question": "Even if Robin Hood himself was a legend, what real historical feelings do medieval Robin Hood ballads reveal to historians?",
+        "answer": "They prove how strongly ordinary medieval people hated unfair taxes, corrupt sheriffs, and harsh Forest Laws!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What did being declared a medieval 'outlaw' actually mean?",
+        "options": [
+          "You were promoted to judge in the King's court",
+          "You were placed 'outside the law's protection' for fleeing trial, forcing many fugitives into woods",
+          "You were given a free royal deer every Christmas",
+          "You wore a blue police uniform in London"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Anyone who refused three court summonses was placed outside the law, losing all legal safety."
+      },
+      {
+        "question": "Who did Robin Hood tell Little John to keep firmly in mind as their main rival in the ballad?",
+        "options": [
+          "Emperor Claudius",
+          "The Sheriff of Nottingham",
+          "Sir Robert Peel",
+          "Matthew Hopkins"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! As the king's chief county tax collector and law officer, the Sheriff was the ballad's classic villain."
+      },
+      {
+        "question": "Why can legends like 'A Gest of Robyn Hode' still be useful clues for careful historians?",
+        "options": [
+          "They prove every single word of Robin's adventures happened on camera",
+          "They reveal ordinary medieval villagers' real anger toward harsh Forest Laws and unfair sheriffs",
+          "They list modern DNA laboratory rules",
+          "They were written by Norman kings to praise deer poaching"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Even folk ballads reveal real medieval attitudes toward justice, fair play, and royal Forest Laws."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Why did Norman Forest Laws make legends like 'Robin Hood' so popular among medieval English villagers?",
+      "answer": "Norman Forest Laws banned villagers from hunting deer or gathering wood under harsh penalties, so songs about an outlaw outwitting greedy sheriffs thrilled ordinary folk."
+    },
+    "hinge_question": "Why do historians call poaching royal deer a 'social crime'—a crime on paper that neighbours often refused to report?",
+    "audio_file": "/audio/reading/ks2_crime_and_punishment/r2.mp3"
+  },
+  {
+    "lesson_index": 3,
+    "lesson_id": "lesson_4",
+    "lesson_label": "Enquiry 4",
+    "short_tab_title": "The Midnight Lantern",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Micro-Story",
+    "book_title": "Thirty-Six Barrels in the Dark: Catching Guy Fawkes on 5 November 1605",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical micro-story grounded in the anonymous Monteagle Letter (26 October 1605, The National Archives SP 14/216/2), Sir Thomas Knyvet's midnight Westminster search, and Guy Fawkes's iron lantern preserved in the Ashmolean Museum, Oxford.",
+    "author_context": "High treason—plotting to kill the monarch or blow up Parliament—was the most terrifying crime in Tudor and Stuart Britain! Creep down into the pitch-black cellar beneath the House of Lords just before midnight on 4–5 November 1605!",
+    "cover_image": "/units/ks2_crime_and_punishment/assets/guy_fawkes_lantern_ashmolean.jpg",
+    "cover_caption": "The real sheet-iron dark lantern held by Guy Fawkes when guards seized him beneath Parliament on 5 November 1605 (Ashmolean Museum).",
+    "studio_audio": "/audio/reading/ks2_crime_and_punishment/r3.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "High Treason",
+        "pronunciation": "HY TREE-zun",
+        "def": "The most serious crime in the kingdom: plotting to overthrow or kill the king or queen or destroy Parliament."
+      },
+      {
+        "term": "Dark Lantern",
+        "pronunciation": "DARK LAN-tern",
+        "def": "An iron candle lantern with a sliding metal shutter that hid its flame instantly in dark cellars—like Guy Fawkes's 1605 lantern."
+      },
+      {
+        "term": "Monteagle Letter",
+        "pronunciation": "mont-EE-gul LET-er",
+        "def": "A mysterious unsigned note delivered in October 1605 warning Lord Monteagle to stay away from Parliament before a 'terrible blow'."
+      },
+      {
+        "term": "Deterrence",
+        "pronunciation": "dih-TER-uns",
+        "def": "Making punishments deliberately frightening in public so other people are too scared to copy the crime."
+      }
+    ],
+    "extract": "Ten days before King James I opened Parliament, a stranger handed a secret note to Lord Monteagle. <em>\"Stay away!\"</em> the unsigned <strong>Monteagle Letter</strong> warned. <em>\"Parliament shall receive a terrible blow, yet they shall not see who hurts them!\"</em>\n\nClever King James guessed at once what \"a terrible blow\" meant. He ordered guards to check for gunpowder! Near midnight on 4 November 1605, Sir Thomas Knyvet led armed men into a dark cellar right below the House of Lords.\n\nBy a pile of wood stood a tall man in riding boots calling himself \"John Johnson\". His real name was <strong>Guy Fawkes</strong>! In his hand shone an iron <em>dark lantern</em> with a sliding cover. In his coat lay a watch and slow fuses.\n\nGuards pulled the firewood aside and gasped! Thirty-six barrels of black powder sat waiting to blow the hall sky-high. Caught in <strong>high treason</strong>, the plotters faced harsh public <em>deterrence</em>.",
+    "parent_discussion": [
+      {
+        "question": "Which clue inside the anonymous Monteagle Letter helped King James I guess that plotters planned an explosion?",
+        "answer": "The warning that Parliament would 'receive a terrible blow... yet they shall not see who hurts them' pointed straight to hidden gunpowder!"
+      },
+      {
+        "question": "Why did Guy Fawkes carry a special 'dark lantern' with a sliding iron cover instead of an open flaming torch?",
+        "answer": "A sliding shutter hid the light from guards AND kept naked sparks safely away from thirty-six barrels of explosive gunpowder!"
+      },
+      {
+        "question": "Why did Tudor and Stuart rulers punish 'high treason' more fiercely and publicly than any other crime?",
+        "answer": "With no national police or standing army, monarchs used terrifying public deterrence to scare anyone else away from rebellion."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What fake name did Guy Fawkes give when royal guards first stopped him in the Westminster cellar?",
+        "options": [
+          "John Johnson",
+          "Dick Turpin",
+          "Robin Hood",
+          "Robert Peel"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Posing as a servant named 'John Johnson', Fawkes guarded thirty-six hidden barrels of gunpowder."
+      },
+      {
+        "question": "How many barrels of gunpowder had Robert Catesby's plotters hidden beneath stacked firewood under the House of Lords?",
+        "options": [
+          "Two tiny barrels",
+          "Thirty-six barrels",
+          "Five hundred cannons",
+          "Zero barrels"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Thirty-six barrels held enough black powder to shatter the House of Lords and nearby Westminster buildings."
+      },
+      {
+        "question": "Where can visitors today still inspect the real sheet-iron lantern seized from Guy Fawkes on 5 November 1605?",
+        "options": [
+          "Inside the Ashmolean Museum in Oxford",
+          "At the bottom of the River Thames",
+          "Inside Bath's Roman Spring",
+          "Inside Pentonville Prison"
+        ],
+        "correctIndex": 0,
+        "feedback": "Well remembered! Fawkes's iron dark lantern has been preserved at Oxford since 1641 as primary physical evidence."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How was the 1605 Gunpowder Plot uncovered, and what physical items were found on Guy Fawkes beneath Westminster?",
+      "answer": "The anonymous Monteagle Letter alerted King James I; guards searching the cellar found 36 gunpowder barrels plus Fawkes's dark lantern, watch, and fuses."
+    },
+    "hinge_question": "Why does Guy Fawkes's real iron lantern in Oxford make the 1605 plot feel more real than a storybook picture?",
+    "audio_file": "/audio/reading/ks2_crime_and_punishment/r3.mp3"
+  },
+  {
+    "lesson_index": 4,
+    "lesson_id": "lesson_5",
+    "lesson_label": "Enquiry 5",
+    "short_tab_title": "Inside Newgate Prison",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "intimate_eyewitness",
+    "source_type": "eyewitness",
+    "source_type_label": "Prison Reformer Eyewitness",
+    "book_title": "Straw, Cold Stone and Hope: Elizabeth Fry Enters Newgate Prison (1813)",
+    "author": "Elizabeth Fry & Anna Buxton (Adapted from Newgate Prison Journals, 1813–1817, Public Domain)",
+    "provenance_note": "Adapted into accessible Key Stage 2 English from Quaker reformer Elizabeth Fry's public-domain journals and 'Observations on the Visiting, Superintendence, and Government of Female Prisoners' (1827).",
+    "author_context": "Under the harsh 18th-century 'Bloody Code', damp prisons like London's Newgate crammed hundreds of awaiting-trial suspects, debtors, and children together onto filthy straw! Step inside Newgate with Quaker reformer Elizabeth Fry in 1813!",
+    "cover_image": "/units/ks2_crime_and_punishment/assets/ki_elizabeth_fry.jpg",
+    "cover_caption": "Portrait engraving of Quaker prison reformer Elizabeth Fry (1780–1845), who founded a school and sewing workshops inside Newgate Prison.",
+    "studio_audio": "/audio/reading/ks2_crime_and_punishment/r4.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Newgate Prison",
+        "pronunciation": "NYOO-gayt PRIZ-un",
+        "def": "London's grim, overcrowded stone prison where men, women, and children awaited trial, hanging, or convict ships to Australia."
+      },
+      {
+        "term": "Rehabilitation",
+        "pronunciation": "ree-huh-bil-ih-TAY-shun",
+        "def": "Helping prisoners reform through clean rooms, reading lessons, and paid work skills so they can live honestly after release."
+      },
+      {
+        "term": "Quakers",
+        "pronunciation": "KWAY-kerz",
+        "def": "Members of the Christian Religious Society of Friends—like Elizabeth Fry—who believed every human being deserved kindness and dignity."
+      },
+      {
+        "term": "Transportation",
+        "pronunciation": "trans-por-TAY-shun",
+        "def": "Shipping over 160,000 British convicts in chains across the ocean to work in Australian penal colonies between 1787 and 1868."
+      }
+    ],
+    "extract": "Guards told me to leave my watch outside before opening the heavy gate at <strong>Newgate Prison</strong> in winter 1813. Nearly three hundred women and small children crowded into four damp stone rooms!\n\nWomen facing <em>transportation</em> ships to Australia slept next to mothers who had not yet seen a judge. Most had no beds and no warm blankets against the icy stone floor. Little babies shivered in thin rags.\n\nMy fellow <em>Quakers</em> and I did not shout at them. We stitched warm wool clothes for the children and spoke to each woman with kind respect. Back in 1817, I asked the mothers a gentle question. <em>\"Even behind these dark bars, will you help us start a school for your children?\"</em>\n\nTears of hope shone on tired faces as every mother agreed! Soon women learned to read and sew neat quilts to sell. Kindness and real skills proved <strong>rehabilitation</strong> worked.",
+    "parent_discussion": [
+      {
+        "question": "What shocked Elizabeth Fry most about how prisoners were mixed together inside Newgate's women's ward in 1813?",
+        "answer": "Convicted prisoners awaiting transportation slept crammed into four freezing rooms alongside unconvicted women and little children!"
+      },
+      {
+        "question": "Why did Elizabeth Fry ask the women's permission to start a prison school and sewing work instead of simply barking orders?",
+        "answer": "Treating prisoners with dignity and letting them agree to their own fair rules gave them pride, hope, and real self-respect."
+      },
+      {
+        "question": "What is the big difference between 'deterrence' under the Bloody Code and 'rehabilitation' taught by Elizabeth Fry?",
+        "answer": "Deterrence tries to terrify people with harsh punishments, whereas rehabilitation teaches reading and job skills so prisoners can rebuild honest lives."
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Which London prison did Quaker reformer Elizabeth Fry famously visit and transform from 1813–1817?",
+        "options": [
+          "Newgate Prison",
+          "Durham Cathedral",
+          "Caerleon Amphitheatre",
+          "Alcatraz Island"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Elizabeth Fry's Newgate school and sewing rooms amazed Members of Parliament and inspired the 1823 Gaols Act."
+      },
+      {
+        "question": "Which practical skills did Elizabeth Fry help women and children learn inside Newgate Prison?",
+        "options": [
+          "Jousting on warhorses",
+          "Reading, schooling for children, and patchwork needlework they could sell",
+          "Smuggling tea onto Cornish beaches",
+          "Building Roman aqueducts"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Reading and sewing gave women honest skills and small earnings so they did not have to steal when freed."
+      },
+      {
+        "question": "What did 'transportation' mean for over 160,000 British prisoners between 1787 and 1868?",
+        "options": [
+          "Riding a free Royal Mail stagecoach to Scotland",
+          "Being shipped across the ocean to work in Australian convict colonies",
+          "Walking to the next village market",
+          "Patrolling London streets in a top hat"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! After Britain lost American colonies, convict ships carried prisoners on long voyages to Australia."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What terrible conditions did Elizabeth Fry find inside Newgate Prison in 1813, and how did she prove 'rehabilitation' worked?",
+      "answer": "Nearly 300 women and children slept on freezing stone without beds; Fry opened a prison school, provided clean clothes, and taught paid sewing."
+    },
+    "hinge_question": "Why was Elizabeth Fry's portrait later printed on Britain's five-pound note for fifteen years?",
+    "audio_file": "/audio/reading/ks2_crime_and_punishment/r4.mp3"
+  },
+  {
+    "lesson_index": 5,
+    "lesson_id": "lesson_6",
+    "lesson_label": "Enquiry 6",
+    "short_tab_title": "Sherlock's Magnifying Lens",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "prose",
+    "source_type_label": "Victorian Detective Classic",
+    "book_title": "A Study in Scarlet (Sherlock Holmes Inspects Tiny Clues, 1887)",
+    "author": "Sir Arthur Conan Doyle (Published 1887, Public Domain)",
+    "provenance_note": "Public-domain literary extract adapted for Key Stage 2 sentence length from Sir Arthur Conan Doyle's 'A Study in Scarlet' (Chapter 3, 1887), illustrating late-Victorian fascination with scientific crime-scene observation ahead of Scotland Yard's 1901 Fingerprint Bureau.",
+    "author_context": "Before 1900, real police detectives were only just learning to guard crime scenes and study footprints, dust, and fingerprints! Read Sir Arthur Conan Doyle's famous 1887 story to watch Sherlock Holmes amaze Dr Watson with a magnifying glass and tape measure!",
+    "cover_image": "/units/ks2_crime_and_punishment/assets/fingerprint_whorl_forensic_card.jpg",
+    "cover_caption": "Close-up of unique raised friction-ridge whorls on a fingertip — adopted by Scotland Yard's Fingerprint Bureau in 1901 just fourteen years after Sherlock Holmes debuted!",
+    "studio_audio": "/audio/reading/ks2_crime_and_punishment/r5.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Forensics",
+        "pronunciation": "fuh-REN-ziks",
+        "def": "Using careful scientific tests—such as fingerprints, microscopes, and DNA—to solve crimes fairly with physical proof."
+      },
+      {
+        "term": "Deduction",
+        "pronunciation": "dih-DUK-shun",
+        "def": "Working out what happened step by step from tiny physical clues rather than guessing or relying on rumours."
+      },
+      {
+        "term": "Fingerprints",
+        "pronunciation": "FING-ger-prints",
+        "def": "The unique loops, arches, and whorls on each person's fingertips—first used by Scotland Yard's Fingerprint Bureau in 1901."
+      },
+      {
+        "term": "DNA Profiling",
+        "pronunciation": "dee-en-AY PROH-fy-ling",
+        "def": "The 1984 Leicester breakthrough by Sir Alec Jeffreys reading unique genetic code from tiny drops of blood, hair, or saliva."
+      }
+    ],
+    "extract": "In 1887, doctor Arthur Conan Doyle thrilled readers with a sharp new detective named <strong>Sherlock Holmes</strong>. Holmes trusted real clues and <em>forensics</em> far above guesswork! Watch Dr Watson describe Holmes checking a dusty London room.\n\n<em>\"As he spoke, he whipped a tape measure and a round glass lens from his coat pocket. With those two tools he stepped softly round the room. Sometimes he stopped still or knelt low. Once he even lay flat upon the dusty boards!\n\nHe grew so busy with his search that he forgot we stood there. Under his breath he gave little cries and whistles of joy.\n\nFor twenty minutes he worked on with the utmost care. He measured faint boot marks unseen to my eyes. Then he checked every tiny scratch along the walls!\"</em>\n\nFourteen years later, Scotland Yard opened its real <strong>Fingerprint</strong> Bureau!",
+    "parent_discussion": [
+      {
+        "question": "Which two simple scientific tools did Sherlock Holmes pull from his pocket to examine the dusty room?",
+        "answer": "A tape measure and a round magnifying lens!"
+      },
+      {
+        "question": "How is Sherlock Holmes's careful search for unseen boot marks the exact opposite of Anglo-Saxon 'Trial by Ordeal' or 1640s witch trials?",
+        "answer": "Ordeals and witch trials relied on superstition and painful tests, whereas forensic detectives measure real physical clues left at the scene!"
+      },
+      {
+        "question": "Which two real British scientific breakthroughs in 1901 and 1984 turned Sherlock Holmes's dream of scientific proof into everyday policing?",
+        "answer": "Scotland Yard's Fingerprint Bureau in 1901 and Sir Alec Jeffreys's discovery of DNA profiling at Leicester in 1984!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Who wrote the famous Victorian detective story 'A Study in Scarlet' in 1887?",
+        "options": [
+          "Sir Arthur Conan Doyle",
+          "King Henry II",
+          "Guy Fawkes",
+          "Thomas Harman"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Trained as a medical doctor in Edinburgh, Conan Doyle inspired real police scientists worldwide."
+      },
+      {
+        "question": "In 1901—just fourteen years after Sherlock Holmes first appeared—what scientific unit opened at London's Scotland Yard?",
+        "options": [
+          "The Roman Curse Tablet Office",
+          "The Fingerprint Bureau",
+          "The Norman Forest Court",
+          "The Highwayman Stagecoach Guard"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Because no two people share identical fingertip ridges, fingerprints gave courts reliable physical proof."
+      },
+      {
+        "question": "Which 1984 University of Leicester breakthrough can clear innocent suspects as well as identify guilty offenders?",
+        "options": [
+          "Wooden village stocks",
+          "DNA profiling (discovered by Professor Sir Alec Jeffreys)",
+          "Parish night-watch rattles",
+          "Trial by cold water"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Sir Alec Jeffreys's DNA profiling transformed modern justice both by catching offenders and freeing innocent people."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How did Sherlock Holmes's magnifying-glass clues point forward to real British forensic breakthroughs in 1901 and 1984?",
+      "answer": "Holmes championed measuring tiny physical clues; soon Scotland Yard opened its Fingerprint Bureau (1901) and Sir Alec Jeffreys discovered DNA profiling (1984)."
+    },
+    "hinge_question": "Why is clearing an innocent suspect with DNA just as important for fair justice as catching a guilty criminal?",
+    "audio_file": "/audio/reading/ks2_crime_and_punishment/r5.mp3"
+  }
+]

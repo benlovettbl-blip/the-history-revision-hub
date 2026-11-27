@@ -1,0 +1,892 @@
+{
+  "unitId": "ocr_persian_empire",
+  "optionCode": "J198/01 Sec A",
+  "paperLabel": "OCR Paper 1 · Section A (Compulsory Period Study)",
+  "courseTitle": "The Persian Empire, 559–465 BC",
+  "examDateBoundary": "559–465 BC",
+  "disclaimer": "Aligned to Cambridge OCR GCSE (9–1) Ancient History (J198). Independent educational resource by The History Revision Hub — not endorsed by OCR.",
+  "rescueTop10": [
+    {
+      "year": "559 BC",
+      "event": "Accession of Cyrus II in Anshan",
+      "significance": "Cyrus becomes tributary King of Anshan in Persis under Median overlord Astyages."
+    },
+    {
+      "year": "550 BC",
+      "event": "Overthrow of Astyages & Capture of Ecbatana",
+      "significance": "Astyages’ Median army mutinies (Nabonidus Chronicle); Cyrus spares Astyages and absorbs Media."
+    },
+    {
+      "year": "c. 546 BC",
+      "event": "Conquest of Lydia & Fall of Sardis",
+      "significance": "After Delphi’s oracle and Pteria, Cyrus marches in winter, uses camels at Thymbra, takes Sardis, and subdues Ionia."
+    },
+    {
+      "year": "539 BC",
+      "event": "Capture of Babylon & Cyrus Cylinder",
+      "significance": "After Battle of Opis, Babylon falls; Cyrus restores Marduk’s cult and permits exiled peoples including Jews to return."
+    },
+    {
+      "year": "530 BC",
+      "event": "Pasargadae & Death of Cyrus",
+      "significance": "Cyrus builds royal garden-palace and tomb at Pasargadae before dying on campaign against the Massagetae."
+    },
+    {
+      "year": "525 BC",
+      "event": "Cambyses II’s Conquest of Egypt",
+      "significance": "Defeats Psammetichus III at Pelusium and takes Memphis; Udjahorresnet’s inscription counters Herodotus’ Apis bull slander."
+    },
+    {
+      "year": "522 BC",
+      "event": "Bardiya/Gaumata Crisis & Accession of Darius I",
+      "significance": "Cambyses dies; Darius overthrows Bardiya/Gaumata, crushes 9 revolts, and carves the Bisitun Inscription."
+    },
+    {
+      "year": "521–490 BC",
+      "event": "Persepolis, Satrapies, Royal Road & Marathon",
+      "significance": "Darius reorganises 20 satrapies, gold Darics, Susa/Persepolis, crushes the Ionian Revolt (499–493 BC), and loses Marathon (490 BC)."
+    },
+    {
+      "year": "480 BC",
+      "event": "Xerxes I’s Invasion: Thermopylae, Sack of Athens & Salamis",
+      "significance": "Bridges Hellespont, forces Thermopylae, burns Athenian Acropolis, but Greek triremes win at Salamis."
+    },
+    {
+      "year": "479–465 BC",
+      "event": "Plataea, Mycale, Eurymedon & Persepolis Gate of All Nations",
+      "significance": "Mardonius falls at Plataea (479 BC); Xerxes consolidates empire and monumentalises Persepolis until 465 BC."
+    }
+  ],
+  "keyTopics": [
+    {
+      "id": "kt1",
+      "number": 1,
+      "title": "Key Time Span 1: The rise of the Persian Empire under Cyrus the Great, 559–530 BC",
+      "dateFence": "559–465 BC",
+      "outsideFenceWarning": "Stay focused inside 559–465 BC (J198/01 Sec A — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt1_1",
+          "code": "1.1",
+          "title": "1.1 Rise of Cyrus and the Conquest of Lydia",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt1_1_a1",
+              "title": "The background and accession of Cyrus",
+              "dateTag": "KT 1.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The background and accession of Cyrus\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The background and accession of Cyrus.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The background and accession of Cyrus\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "background"
+            },
+            {
+              "id": "kt1_1_a2",
+              "title": "The conquest of Lydia",
+              "dateTag": "KT 1.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The conquest of Lydia\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The conquest of Lydia.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The conquest of Lydia\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "conquest"
+            }
+          ]
+        },
+        {
+          "id": "kt1_2",
+          "code": "1.2",
+          "title": "1.2 Babylon and Cyrus' Imperial Toleration",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            1
+          ],
+          "anchors": [
+            {
+              "id": "kt1_2_a1",
+              "title": "The conquest of Babylon",
+              "dateTag": "KT 1.2",
+              "lessonIndex": 1,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The conquest of Babylon\"?",
+              "facts": [
+                "Nabonidus alienated Marduk’s Esagila priests by promoting the moon-god Sin and staying 10 years at Tayma (halting the Akitu festival).",
+                "Autumn 539 BC: Cyrus defeated Nabonidus at Opis on the Tigris; Sippar yielded (10 Oct) and Ugbaru entered Babylon without battle (12 Oct), contrasted with Herodotus 1.191’s Euphrates diversion tale."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The conquest of Babylon\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "conquest"
+            },
+            {
+              "id": "kt1_2_a2",
+              "title": "Cyrus' attitude towards conquered peoples and his liberation of the Jews",
+              "dateTag": "KT 1.2",
+              "lessonIndex": 1,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Cyrus' attitude towards conquered peoples and his liberation of the Jews\"?",
+              "facts": [
+                "Cyrus entered Babylon (29 Oct 539 BC), guarded Esagila, and issued the Akkadian Cyrus Cylinder restoring Mesopotamian cult statues and deportees.",
+                "538 BC Edict of Restoration (Ezra 1 & 6; Isaiah 45:1): freed Jewish exiles to rebuild Yahweh’s Temple in Jerusalem with Nebuchadnezzar’s returned vessels."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Cyrus' attitude towards conquered peoples and his liberation of the Jews\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Cyrus'"
+            }
+          ]
+        },
+        {
+          "id": "kt1_3",
+          "code": "1.3",
+          "title": "1.3 Pasargadae and the Death of Cyrus",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            2
+          ],
+          "anchors": [
+            {
+              "id": "kt1_3_a1",
+              "title": "The construction of Pasargadae",
+              "dateTag": "KT 1.3",
+              "lessonIndex": 2,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The construction of Pasargadae\"?",
+              "facts": [
+                "Built in Persis from c. 546 BC using Lydian-Ionian ashlar masons (iron dovetail clamps) alongside Babylonian and Elamite sculptors across Palace S and Palace P.",
+                "Gate R’s four-winged guardian (Egyptian hemhem crown + Assyrian wings + Elamite robe), stone-irrigated four-part pairidaeza garden, and six-stepped limestone Tomb of Cyrus."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The construction of Pasargadae\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "construction"
+            },
+            {
+              "id": "kt1_3_a2",
+              "title": "The circumstances of Cyrus' death",
+              "dateTag": "KT 1.3",
+              "lessonIndex": 2,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The circumstances of Cyrus' death\"?",
+              "facts": [
+                "530 BC: Herodotus 1.214 claims Queen Tomyris of the Massagetae killed Cyrus and dipped his head in blood after Spargapises’ death, admitting rival stories existed.",
+                "Ctesias attributed his death to a wound fighting the Derbices, Xenophon gave a peaceful deathbed, and Arrian 6.29 confirms his intact body lay in a golden coffin at Pasargadae."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The circumstances of Cyrus' death\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "circumstances"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt2",
+      "number": 2,
+      "title": "Key Time Span 2: Cambyses II, Smerdis and the accession of Darius, 530–522 BC",
+      "dateFence": "559–465 BC",
+      "outsideFenceWarning": "Stay focused inside 559–465 BC (J198/01 Sec A — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt2_1",
+          "code": "2.1",
+          "title": "2.1 Cambyses' Conquest of Egypt",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt2_1_a1",
+              "title": "Cambyses' conquest of Egypt",
+              "dateTag": "KT 2.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Cambyses' conquest of Egypt\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Cambyses' conquest of Egypt.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Cambyses' conquest of Egypt\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Cambyses'"
+            }
+          ]
+        },
+        {
+          "id": "kt2_2",
+          "code": "2.2",
+          "title": "2.2 Cambyses and Egyptian Culture",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt2_2_a1",
+              "title": "Cambyses' attitude towards the Egyptians and their culture",
+              "dateTag": "KT 2.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Cambyses' attitude towards the Egyptians and their culture\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Cambyses' attitude towards the Egyptians and their culture.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Cambyses' attitude towards the Egyptians and their culture\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Cambyses'"
+            }
+          ]
+        },
+        {
+          "id": "kt2_3",
+          "code": "2.3",
+          "title": "2.3 Death of Cambyses and Accession of Darius",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt2_3_a1",
+              "title": "The circumstances of Cambyses' death",
+              "dateTag": "KT 2.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The circumstances of Cambyses' death\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The circumstances of Cambyses' death.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The circumstances of Cambyses' death\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "circumstances"
+            },
+            {
+              "id": "kt2_3_a2",
+              "title": "Darius' overthrow of Smerdis/Bardiya/Gaumata",
+              "dateTag": "KT 2.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Darius' overthrow of Smerdis/Bardiya/Gaumata\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Darius' overthrow of Smerdis/Bardiya/Gaumata.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Darius' overthrow of Smerdis/Bardiya/Gaumata\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Darius'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt3",
+      "number": 3,
+      "title": "Key Time Span 3: The reign of Darius the Great, 522–486 BC",
+      "dateFence": "559–465 BC",
+      "outsideFenceWarning": "Stay focused inside 559–465 BC (J198/01 Sec A — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt3_1",
+          "code": "3.1",
+          "title": "3.1 Pacification, Building Projects and Imperial Administration",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt3_1_a1",
+              "title": "Darius' pacification of the empire, including the restoration of control over Babylon",
+              "dateTag": "KT 3.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Darius' pacification of the empire, including the restoration of control over Babylon\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Darius' pacification of the empire, including the restoration of control over Babylon.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Darius' pacification of the empire, including the restoration of control over Babylon\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Darius'"
+            },
+            {
+              "id": "kt3_1_a2",
+              "title": "Construction of Susa, Persepolis and the Egyptian canal",
+              "dateTag": "KT 3.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Construction of Susa, Persepolis and the Egyptian canal\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Construction of Susa, Persepolis and the Egyptian canal.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Construction of Susa, Persepolis and the Egyptian canal\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Construction"
+            },
+            {
+              "id": "kt3_1_a3",
+              "title": "Persian culture and religion under Darius",
+              "dateTag": "KT 3.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Persian culture and religion under Darius\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Persian culture and religion under Darius.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Persian culture and religion under Darius\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Persian"
+            },
+            {
+              "id": "kt3_1_a4",
+              "title": "Darius' organisation and administration of the Persian Empire",
+              "dateTag": "KT 3.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Darius' organisation and administration of the Persian Empire\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Darius' organisation and administration of the Persian Empire.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Darius' organisation and administration of the Persian Empire\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Darius'"
+            }
+          ]
+        },
+        {
+          "id": "kt3_2",
+          "code": "3.2",
+          "title": "3.2 Imperial Expansion and the Ionian Revolt",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt3_2_a1",
+              "title": "Persian expansion into the Aegean Sea; the campaign in India; the war with the Scythians",
+              "dateTag": "KT 3.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Persian expansion into the Aegean Sea; the campaign in India; the war with the Scythians\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Persian expansion into the Aegean Sea; the campaign in India; the war with the Scythians.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Persian expansion into the Aegean Sea; the campaign in India; the war with the Scythians\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Persian"
+            },
+            {
+              "id": "kt3_2_a2",
+              "title": "The Ionian Revolt, including its causes, course and consequences",
+              "dateTag": "KT 3.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The Ionian Revolt, including its causes, course and consequences\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The Ionian Revolt, including its causes, course and consequences.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The Ionian Revolt, including its causes, course and consequences\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Ionian"
+            },
+            {
+              "id": "kt3_2_a3",
+              "title": "Persian relations with Athens prior to the revolt",
+              "dateTag": "KT 3.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Persian relations with Athens prior to the revolt\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Persian relations with Athens prior to the revolt.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Persian relations with Athens prior to the revolt\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Persian"
+            }
+          ]
+        },
+        {
+          "id": "kt3_3",
+          "code": "3.3",
+          "title": "3.3 Expeditions of 493–490 BC and Marathon",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt3_3_a1",
+              "title": "Mardonius' expedition of 493–492 BC",
+              "dateTag": "KT 3.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Mardonius' expedition of 493–492 BC\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Mardonius' expedition of 493–492 BC.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Mardonius' expedition of 493–492 BC\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Mardonius'"
+            },
+            {
+              "id": "kt3_3_a2",
+              "title": "The expedition to Greece in 490 BC and its aftermath",
+              "dateTag": "KT 3.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The expedition to Greece in 490 BC and its aftermath\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The expedition to Greece in 490 BC and its aftermath.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The expedition to Greece in 490 BC and its aftermath\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "expedition"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt4",
+      "number": 4,
+      "title": "Key Time Span 4: Xerxes I and the Greeks, 486–465 BC",
+      "dateFence": "559–465 BC",
+      "outsideFenceWarning": "Stay focused inside 559–465 BC (J198/01 Sec A — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt4_1",
+          "code": "4.1",
+          "title": "4.1 Accession of Xerxes, Revolts and Invasion Preparation",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt4_1_a1",
+              "title": "Death of Darius and accession of Xerxes",
+              "dateTag": "KT 4.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Death of Darius and accession of Xerxes\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Death of Darius and accession of Xerxes.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Death of Darius and accession of Xerxes\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Death"
+            },
+            {
+              "id": "kt4_1_a2",
+              "title": "The suppression of revolts in Babylonia and Egypt",
+              "dateTag": "KT 4.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The suppression of revolts in Babylonia and Egypt\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The suppression of revolts in Babylonia and Egypt.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The suppression of revolts in Babylonia and Egypt\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "suppression"
+            },
+            {
+              "id": "kt4_1_a3",
+              "title": "Persian military organisation and fighting techniques",
+              "dateTag": "KT 4.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Persian military organisation and fighting techniques\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Persian military organisation and fighting techniques.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Persian military organisation and fighting techniques\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Persian"
+            }
+          ]
+        },
+        {
+          "id": "kt4_2",
+          "code": "4.2",
+          "title": "4.2 The 480 BC Invasion: Journey, Thermopylae and Athens",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt4_2_a1",
+              "title": "The invasion of Greece, including Persian preparation, the journey to Greece, the Battle of Thermopylae, the sack of Athens",
+              "dateTag": "KT 4.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The invasion of Greece, including Persian preparation, the journey to Greece, the Battle of Thermopylae, the sack of Athens\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The invasion of Greece, including Persian preparation, the journey to Greece, the Battle of Thermopylae, the sack of Athens.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The invasion of Greece, including Persian preparation, the journey to Greece, the Battle of Thermopylae, the sack of Athens\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "invasion"
+            }
+          ]
+        },
+        {
+          "id": "kt4_3",
+          "code": "4.3",
+          "title": "4.3 Salamis, Building Projects and Eurymedon",
+          "dateFence": "559–465 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt4_3_a1",
+              "title": "The Battle of Salamis",
+              "dateTag": "KT 4.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The Battle of Salamis\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The Battle of Salamis.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The Battle of Salamis\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Battle"
+            },
+            {
+              "id": "kt4_3_a2",
+              "title": "The completion of Darius' building projects",
+              "dateTag": "KT 4.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The completion of Darius' building projects\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The completion of Darius' building projects.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The completion of Darius' building projects\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "completion"
+            },
+            {
+              "id": "kt4_3_a3",
+              "title": "The Battle of Eurymedon and Plutarch's 'famous peace'",
+              "dateTag": "KT 4.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The Battle of Eurymedon and Plutarch's 'famous peace'\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The Battle of Eurymedon and Plutarch's 'famous peace'.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 1 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The Battle of Eurymedon and Plutarch's 'famous peace'\" against contrasting factors across The Persian Empire, 559–465 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Battle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

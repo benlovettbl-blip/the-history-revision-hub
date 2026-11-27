@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mock Paper B | The History Revision Hub</title>
+  <title>Mock Paper B — Teacher Mark Scheme | The History Revision Hub</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-    
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
+
     * {
       box-sizing: border-box;
       font-family: 'Open Sans', Arial, sans-serif;
     }
-    
+
     body {
       margin: 0;
       padding: 0;
@@ -32,8 +32,14 @@
       flex-direction: column;
     }
 
+    .page:last-of-type {
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
     @media print {
       body { background: white; }
+      .no-print { display: none !important; }
       .page {
         margin: 0;
         padding: 15mm;
@@ -42,74 +48,47 @@
         min-height: 100%;
         page-break-after: always;
       }
+      .page:last-of-type {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
     }
 
-    /* Cover Page Styles */
     .top-warning {
       text-align: center;
-      font-weight: 600;
-      font-size: 13px;
-      margin-bottom: 5px;
-    }
-    
-    .cover-box {
-      border: 3px solid #666;
-      border-radius: 15px;
-      padding: 15px 20px;
-      margin-bottom: 20px;
-    }
-    .candidate-info {
-      display: flex;
-      gap: 15px;
-      margin-bottom: 15px;
-    }
-    .candidate-info:last-child {
-      margin-bottom: 0;
-    }
-    .input-label {
-      font-size: 13px;
-      margin-bottom: 4px;
-    }
-    .input-box {
-      border: 2px solid #666;
-      border-radius: 5px;
-      height: 35px;
-      background: white;
-    }
-    .char-box {
-      border: 2px solid #666;
-      border-radius: 5px;
-      height: 35px;
-      width: 25px;
-      display: inline-block;
-      background: white;
-      margin-right: 2px;
-    }
-    
-    .edexcel-title {
-      font-size: 26px;
       font-weight: 700;
-      margin: 15px 0 5px 0;
+      font-size: 13px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: #0c4a6e;
+    }
+
+    .edexcel-title {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 10px 0 8px 0;
       letter-spacing: -0.5px;
     }
 
     .exam-header {
-      border: 3px solid #666;
-      border-radius: 15px;
-      padding: 15px 20px;
+      border: 3px solid #334155;
+      border-radius: 12px;
+      padding: 16px 20px;
       display: flex;
       justify-content: space-between;
-      margin-bottom: 15px;
+      margin-bottom: 16px;
     }
-    
+
     .exam-header-left {
       flex: 3;
     }
+
     .exam-header-right {
       flex: 1;
-      background: #555;
+      background: #1e293b;
       color: white;
-      border-radius: 10px;
+      border-radius: 8px;
       padding: 10px;
       text-align: right;
       display: flex;
@@ -118,71 +97,67 @@
     }
 
     .date-text {
-      font-size: 24px;
-      font-weight: 700;
-      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 6px;
     }
-    
+
     .time-text {
-      font-size: 14px;
-      margin-bottom: 20px;
+      font-size: 13.5px;
+      margin-bottom: 14px;
     }
-    
+
     .subject-title {
-      font-size: 32px;
-      font-weight: 700;
+      font-size: 30px;
+      font-weight: 800;
       margin: 0;
     }
-    
+
     .booklet-title {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 700;
       margin-top: 5px;
     }
 
     .paper-ref-label {
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 600;
       margin-bottom: 2px;
-    }
-    .paper-ref-val {
-      font-size: 28px;
-      font-weight: 700;
+      text-transform: uppercase;
     }
 
-    .must-have-box {
-      border: 3px solid #666;
-      border-radius: 15px;
-      padding: 15px 20px;
-      margin-bottom: 25px;
-      display: flex;
-      justify-content: space-between;
+    .paper-ref-val {
+      font-size: 24px;
+      font-weight: 800;
     }
-    .total-marks-box {
-      border: 3px solid #666;
+
+    .ms-badge-banner {
+      border: 2px solid #0284c7;
+      background: #f0f9ff;
+      color: #0c4a6e;
       border-radius: 10px;
-      width: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
-      font-weight: 600;
-      text-align: center;
+      padding: 14px 18px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
     .instructions-section {
-      font-size: 14px;
-      line-height: 1.4;
-      margin-bottom: 15px;
+      font-size: 13.5px;
+      line-height: 1.45;
+      margin-bottom: 14px;
     }
+
     .instructions-section h3 {
-      font-size: 18px;
-      margin: 0 0 10px 0;
+      font-size: 16px;
+      margin: 0 0 6px 0;
     }
+
     .instructions-section ul {
       margin: 0;
       padding-left: 20px;
     }
+
     .instructions-section li {
       margin-bottom: 4px;
     }
@@ -193,19 +168,22 @@
       justify-content: space-between;
       align-items: flex-end;
       font-size: 12px;
-    }
-    .turn-over {
-      font-weight: 700;
-      font-size: 14px;
-      font-style: italic;
-    }
-    .pearson-logo {
-      font-size: 24px;
-      font-weight: 700;
-      font-family: serif;
+      padding-top: 10px;
+      border-top: 1px solid #cbd5e1;
     }
 
-    /* Inner Page Styles */
+    .turn-over {
+      font-weight: 700;
+      font-size: 13px;
+      font-style: italic;
+    }
+
+    .hub-logo {
+      font-size: 18px;
+      font-weight: 800;
+      font-family: Georgia, serif;
+    }
+
     .page-inner {
       flex: 1;
       position: relative;
@@ -215,189 +193,294 @@
       text-align: center;
       font-weight: 700;
       font-size: 14px;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .question-block {
       margin-bottom: 10px;
     }
+
     .question-text {
-      font-weight: 600;
+      font-weight: 700;
       font-size: 14px;
       display: flex;
     }
-    .question-num {
-      width: 35px;
-      flex-shrink: 0;
-      font-weight: 700;
-    }
-    .marks {
-      text-align: right;
-      font-weight: 400;
-      font-size: 14px;
-      color: #444;
-      margin-top: 5px;
-    }
 
-    /* Dotted Lines for Handwriting */
-    .dotted-line {
-      border-bottom: 1.5px dotted #999;
-      height: 28px;
-      width: 100%;
+    .question-num {
+      width: 32px;
+      flex-shrink: 0;
+      font-weight: 800;
     }
 
     .bullet-point-box {
-      border: 1px solid #999;
-      border-radius: 10px;
-      padding: 15px 20px;
-      margin: 15px 0 15px 35px;
-      width: 70%;
-      background: #fff;
-    }
-    .bullet-point-box ul {
-      margin: 5px 0 0 0;
-      padding-left: 20px;
-    }
-    
-    .indicate-choice {
-      font-weight: 600;
-      font-size: 14px;
-      margin: 10px 0 20px 0;
-      border: 1px solid #ccc;
-      padding: 15px;
+      border: 1px solid #94a3b8;
       border-radius: 8px;
+      padding: 10px 16px;
+      margin: 10px 0 12px 32px;
+      width: 78%;
+      background: #f8fafc;
+      font-size: 13px;
     }
 
-    .checkbox-inline {
-      display: inline-block;
-      width: 16px;
-      height: 16px;
-      border: 1px solid #000;
-      vertical-align: middle;
-      margin-left: 5px;
-      margin-right: 20px;
+    .bullet-point-box ul {
+      margin: 4px 0 0 0;
+      padding-left: 20px;
+    }
+
+    .model-answer-box {
+      color: #0f172a;
+      font-size: 13.5px;
+      line-height: 1.58;
+      margin: 10px 0 18px 0;
+      padding: 14px 16px;
+      background-color: #f0f9ff;
+      border: 1px solid #bae6fd;
+      border-left: 4px solid #0284c7;
+      border-radius: 6px;
+    }
+
+    .model-answer-header {
+      color: #0369a1;
+      font-weight: 800;
+      font-size: 12.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: 8px;
+    }
+
+    .model-answer-box p {
+      margin: 0 0 10px 0;
+    }
+
+    .model-answer-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    .print-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 12px 24px;
+      background-color: #0284c7;
+      color: white;
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
     }
   </style>
 </head>
 <body>
+  <button class="print-button no-print" onclick="window.print()">Print Teacher Mark Scheme</button>
 
-  <!-- Cover Page -->
+  <!-- Page 1: Cover -->
   <div class="page">
-    <div class="top-warning">
-      Please check the examination details below before entering your candidate information
-    </div>
-    
-    <div class="cover-box">
-      <div class="candidate-info">
-        <div style="flex: 2;">
-          <div class="input-label">Candidate surname</div>
-          <div class="input-box"></div>
-        </div>
-        <div style="flex: 1.5;">
-          <div class="input-label">Other names</div>
-          <div class="input-box"></div>
-        </div>
-      </div>
-      <div class="candidate-info">
-        <div style="flex: 1;">
-          <div class="input-label">Centre Number</div>
-          <div>
-            <div class="char-box"></div><div class="char-box"></div><div class="char-box"></div><div class="char-box"></div><div class="char-box"></div>
-          </div>
-        </div>
-        <div style="flex: 1;">
-          <div class="input-label">Candidate Number</div>
-          <div>
-            <div class="char-box"></div><div class="char-box"></div><div class="char-box"></div><div class="char-box"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="edexcel-title">The History Revision Hub &bull; GCSE (9–1) Practice</div>
+    <div class="top-warning">Teacher Mark Scheme and Grade 9 Exemplar Responses</div>
+    <div class="edexcel-title">The History Revision Hub &bull; GCSE (9&ndash;1) Practice</div>
 
     <div class="exam-header">
       <div class="exam-header-left">
-        <div class="date-text">Hub Summative Mock Paper</div>
-        <div class="time-text">Morning (Time: 1 hour 50 minutes -<br>total time for <strong>both</strong> booklets)</div>
+        <div class="date-text">Hub Summative Mock Paper B &mdash; Mark Scheme</div>
+        <div class="time-text">Paper 2 Booklet B &bull; Total Marks: 32 (0 SPaG marks on Paper 2)</div>
         <div class="subject-title">History</div>
-        <div class="booklet-title">BOOKLET B4: Early Elizabethan England, 1558-88</div>
+        <div class="booklet-title">BOOKLET B4: Early Elizabethan England, 1558&ndash;88</div>
       </div>
       <div class="exam-header-right">
-        <div class="paper-ref-label">Paper<br>reference</div>
-        <div class="paper-ref-val">1HI0/B4 (Paper 2)</div>
+        <div class="paper-ref-label">Paper reference</div>
+        <div class="paper-ref-val">1HI0/B4</div>
       </div>
     </div>
 
-    <div style="display: flex; gap: 10px;">
-      <div class="must-have-box" style="flex: 1;">
-        <div>
-          <strong>You must have:</strong><br>
-          The corresponding booklet P.
-        </div>
-      </div>
-      <div class="total-marks-box">
-        Total Marks
-      </div>
+    <div class="ms-badge-banner">
+      <strong>Marking Guidance Overview (1HI0/B4 &bull; 1558&ndash;88 Specification Boundary):</strong><br>
+      All creditworthy historical content must fall strictly within the <strong>1558&ndash;88</strong> specification period. Question 1(a) and Question 1(b) are marked independently out of 2 marks each (1 mark for identifying a valid feature + 1 mark for specific supporting factual detail). Question 2 (12 marks) requires three analytical causation paragraphs including own knowledge beyond the stimulus bullets for Level 4. Questions 3 and 4 (16 marks, answer either Q3 or Q4) assess sustained evaluative judgement across the essay with 0 SPaG marks.
     </div>
 
     <div class="instructions-section">
-      <h3>Instructions</h3>
+      <h3>Paper B Question Summary</h3>
       <ul>
-        <li>Use <strong>black</strong> ink or ball-point pen.</li>
-        <li><strong>Fill in the boxes</strong> at the top of this page with your name,<br>centre number and candidate number.</li>
-        <li>There are two booklets in this question paper. <strong>This is booklet B.</strong></li>
-        <li>Answer questions 1(a), 1(b), 2 and <strong>either 3 or 4</strong> in this booklet.</li>
-        <li>Check you have the corresponding booklet P.</li>
-        <li>Answer the questions in the spaces provided<br><em>- there may be more space than you need.</em></li>
-      </ul>
-    </div>
-
-    <div class="instructions-section">
-      <h3>Information</h3>
-      <ul>
-        <li>The total mark for this booklet is 32.</li>
-        <li>The total time for <strong>both</strong> booklets is 1 hour 50 minutes.</li>
-        <li>The marks for <strong>each</strong> question are shown in brackets<br><em>- use this as a guide as to how much time to spend on each question.</em></li>
-        <li><strong>Do not forget to complete booklet P.</strong></li>
-      </ul>
-    </div>
-
-    <div class="instructions-section">
-      <h3>Advice</h3>
-      <ul>
-        <li>Read each question carefully before you start to answer it.</li>
-        <li>Try to divide your time equally between each booklet of the question paper.</li>
-        <li>Check your answers if you have time at the end.</li>
+        <li><strong>Question 1(a) [2 marks]:</strong> Describe one feature of the Ridolfi Plot (1571).</li>
+        <li><strong>Question 1(b) [2 marks]:</strong> Describe one feature of the Throckmorton Plot (1583).</li>
+        <li><strong>Question 2 [12 marks]:</strong> Explain why relations between England and Spain declined in the years 1568&ndash;1585.</li>
+        <li><strong>Question 3 [16 marks]:</strong> &ldquo;The Northern Earls&rsquo; Rebellion (1569) was a serious threat to Elizabeth.&rdquo; How far do you agree?</li>
+        <li><strong>Question 4 [16 marks]:</strong> &ldquo;The voyages of exploration in Elizabeth&rsquo;s reign were primarily motivated by a desire for wealth.&rdquo; How far do you agree?</li>
       </ul>
     </div>
 
     <div class="footer">
-      <div>&copy; The History Revision Hub &bull; Independent Practice Paper (Not endorsed by Pearson)</div>
-      
-      <div style="display:flex; align-items:center; gap:20px;">
+      <div>The History Revision Hub &bull; Independent Practice Mark Scheme (Not endorsed by Pearson Education Ltd)</div>
+      <div style="display:flex; align-items:center; gap:16px;">
         <span class="turn-over">Turn over &#9654;</span>
-        <span class="pearson-logo">History Revision Hub</span>
+        <span class="hub-logo">The History Revision Hub</span>
       </div>
     </div>
   </div>
 
-  <div class="page"><div class="page-inner"><div class="inner-header">Early Elizabethan England, 1558-88<br><br>Answer Question 1(a), Question 1(b), Question 2 and EITHER Question 3 OR Question 4.</div><div class="question-block">  <div class="question-text">    <div class="question-num">1</div>    <div style="width: 100%;">      (a) Describe one feature of the Ridolfi Plot (1571).      <span style="float: right; font-weight: 400; color: #444;">(2)</span>    </div>  </div></div><div style="color: #0369a1; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; line-height: 1.6; white-space: pre-wrap; margin-top: 15px; margin-bottom: 30px; padding: 10px; background-color: #f0f9ff; border-radius: 8px;"><strong>Teacher Mark Scheme Model Answer:</strong><br>Model answers for this paper have not been provided yet. You can use NotebookLM to generate one.</div><div style="height:30px;"></div><div class="question-block">  <div class="question-text">    <div class="question-num"></div>    <div style="width: 100%;">      (b) Describe one feature of the Throckmorton Plot (1583).      <span style="float: right; font-weight: 400; color: #444;">(2)</span>    </div>  </div></div><div style="color: #0369a1; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; line-height: 1.6; white-space: pre-wrap; margin-top: 15px; margin-bottom: 30px; padding: 10px; background-color: #f0f9ff; border-radius: 8px;"><strong>Teacher Mark Scheme Model Answer:</strong><br>Model answers for this paper have not been provided yet. You can use NotebookLM to generate one.</div><div style="border-top: 1px solid #ccc; margin-top: 20px; padding-top: 10px; text-align: right; font-weight: bold;">(Total for Question 1 = 4 marks)</div></div><div class="footer"><div></div><div></div></div></div><div class="page"><div class="page-inner"><div class="question-block">  <div class="question-text">    <div class="question-num">2</div>    <div style="width: 100%;">      Explain why relations between England and Spain declined in the years 1568-1585.      <span style="float: right; font-weight: 400; color: #444;">(12)</span>    </div>  </div>  <div class="bullet-point-box">    <em>You <strong>may</strong> use the following in your answer:</em>    <ul><li>Religious differences</li><li>Francis Drake's attacks on Spanish treasure</li>    </ul>    <em style="display:block; margin-top:10px;">You <strong>must</strong> also use information of your own.</em>  </div></div><div style="color: #0369a1; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; line-height: 1.6; white-space: pre-wrap; margin-top: 15px; margin-bottom: 30px; padding: 10px; background-color: #f0f9ff; border-radius: 8px;"><strong>Teacher Mark Scheme Model Answer:</strong><br>Model answers for this paper have not been provided yet. You can use NotebookLM to generate one.</div><div style="border-top: 1px solid #ccc; margin-top: 20px; padding-top: 10px; text-align: right; font-weight: bold;">(Total for Question 2 = 12 marks)</div></div><div class="footer"><div></div><div class="turn-over">Turn over &#9654;</div></div></div><div class="page"><div class="page-inner"><div style="text-align:center; font-weight:bold; margin-bottom: 20px;">Answer EITHER Question 3 OR Question 4.</div><div style="font-weight:bold; margin-bottom:10px;">EITHER</div><div class="question-block">  <div class="question-text">    <div class="question-num">3</div>    <div style="width: 100%;">      "The Northern Earls' Rebellion (1569) was a serious threat to Elizabeth."<br><br>How far do you agree? Explain your answer.    </div>  </div>  <div class="bullet-point-box">    <em>You <strong>may</strong> use the following in your answer:</em>    <ul><li>Mary, Queen of Scots</li><li>Lack of foreign support</li>    </ul>    <em style="display:block; margin-top:10px;">You <strong>must</strong> also use information of your own.</em>  </div></div><div style="border-top: 1px solid #ccc; margin-top: 20px; padding-top: 10px; text-align: right; font-weight: bold;">(Total for Question 3 = 16 marks)</div><div style="font-weight:bold; margin:20px 0 10px 0;">OR</div><div class="question-block">  <div class="question-text">    <div class="question-num">4</div>    <div style="width: 100%;">      "The voyages of exploration in Elizabeth's reign were primarily motivated by a desire for wealth."<br><br>How far do you agree? Explain your answer.    </div>  </div>  <div class="bullet-point-box">    <em>You <strong>may</strong> use the following in your answer:</em>    <ul><li>Trade routes</li><li>Rivalry with Spain</li>    </ul>    <em style="display:block; margin-top:10px;">You <strong>must</strong> also use information of your own.</em>  </div></div><div style="border-top: 1px solid #ccc; margin-top: 20px; padding-top: 10px; text-align: right; font-weight: bold;">(Total for Question 4 = 16 marks)</div></div><div class="footer"><div></div><div></div></div></div><div class="page"><div class="page-inner"><div class="indicate-choice">  Indicate which question you are answering by marking a cross in the box <span style="font-weight:900;">&#9746;</span>. If you change your mind, put a line through the box <span style="font-weight:900;">&#9746;</span> and then indicate your new question with a cross <span style="font-weight:900;">&#9746;</span>.<br><br>  Chosen question number:   <span style="margin-left: 10px;">Question 3</span> <div class="checkbox-inline"></div>  Question 4 <div class="checkbox-inline"></div></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div><div class="dotted-line"></div></div><div class="footer"><div></div><div class="turn-over">Turn over &#9654;</div></div></div><div class="page"><div class="page-inner"><div style="color: #0369a1; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; line-height: 1.6; white-space: pre-wrap; margin-top: 15px; margin-bottom: 30px; padding: 10px; background-color: #f0f9ff; border-radius: 8px;"><strong>Teacher Mark Scheme (Question 3):</strong><br>Model answers for this paper have not been provided yet. You can use NotebookLM to generate one.</div></div></div><div class="page"><div class="page-inner"><div style="color: #0369a1; font-family: 'Comic Sans MS', cursive, sans-serif; font-size: 16px; line-height: 1.6; white-space: pre-wrap; margin-top: 15px; margin-bottom: 30px; padding: 10px; background-color: #f0f9ff; border-radius: 8px;"><strong>Teacher Mark Scheme (Question 4):</strong><br>Model answers for this paper have not been provided yet. You can use NotebookLM to generate one.</div></div></div><div class="page"><div class="page-inner"><div style="border-top: 2px solid #ccc; margin-top: 20px; padding-top: 10px; text-align: right; font-weight: bold;">TOTAL FOR BOOKLET B = 32 MARKS</div></div></div>
-
-  <!-- End of booklet -->
+  <!-- Page 2: Question 1(a) and 1(b) -->
   <div class="page">
-    <div class="page-inner" style="display:flex; justify-content:center; align-items:center;">
-       <div style="text-align:center; font-weight:bold; font-size: 16px;">
-           PLEASE ENSURE YOU ALSO COMPLETE BOOKLET P.
-       </div>
+    <div class="page-inner">
+      <div class="inner-header">Early Elizabethan England, 1558&ndash;88 &bull; Question 1 (4 Marks)</div>
+
+      <div class="question-block">
+        <div class="question-text">
+          <div class="question-num">1</div>
+          <div style="width: 100%;">
+            (a) Describe one feature of the Ridolfi Plot (1571).
+            <span style="float: right; font-weight: 400; color: #444;">(2)</span>
+          </div>
+        </div>
+      </div>
+      <div class="model-answer-box">
+        <div class="model-answer-header">Teacher Mark Scheme &bull; Grade 9 Exemplar (2 / 2 Marks)</div>
+        <p>One feature was Roberto Ridolfi&rsquo;s plot to replace Elizabeth with Mary, Queen of Scots. Mary planned to marry the Duke of Norfolk backed by 10,000 Spanish troops.</p>
+      </div>
+
+      <div class="question-block" style="margin-top: 22px;">
+        <div class="question-text">
+          <div class="question-num"></div>
+          <div style="width: 100%;">
+            (b) Describe one feature of the Throckmorton Plot (1583).
+            <span style="float: right; font-weight: 400; color: #444;">(2)</span>
+          </div>
+        </div>
+      </div>
+      <div class="model-answer-box">
+        <div class="model-answer-header">Teacher Mark Scheme &bull; Grade 9 Exemplar (2 / 2 Marks)</div>
+        <p>One feature was Francis Throckmorton&rsquo;s plan for the French Duke of Guise to invade using Spanish money. Walsingham&rsquo;s spies arrested Throckmorton and seized Catholic rebel lists.</p>
+      </div>
+
+      <div style="border-top: 1px solid #cbd5e1; margin-top: 16px; padding-top: 8px; text-align: right; font-weight: 700;">
+        (Total for Question 1 = 4 marks)
+      </div>
+    </div>
+    <div class="footer">
+      <div>The History Revision Hub &bull; Mock Paper B Mark Scheme</div>
+      <div class="turn-over">Turn over &#9654;</div>
     </div>
   </div>
+
+  <!-- Page 3: Question 2 -->
   <div class="page">
-    <div class="page-inner" style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
-       <div style="text-align:center; font-weight:bold; font-size: 16px;">BLANK PAGE</div>
-       <div style="text-align:center; font-weight:bold; font-size: 16px; margin-top:20px;">DO NOT WRITE ON THIS PAGE</div>
+    <div class="page-inner">
+      <div class="question-block">
+        <div class="question-text">
+          <div class="question-num">2</div>
+          <div style="width: 100%;">
+            Explain why relations between England and Spain declined in the years 1568&ndash;1585.
+            <span style="float: right; font-weight: 400; color: #444;">(12)</span>
+          </div>
+        </div>
+        <div class="bullet-point-box">
+          <em>You <strong>may</strong> use the following in your answer:</em>
+          <ul>
+            <li>Religious differences</li>
+            <li>Francis Drake&rsquo;s attacks on Spanish treasure</li>
+          </ul>
+          <em style="display:block; margin-top:6px;">You <strong>must</strong> also use information of your own.</em>
+        </div>
+      </div>
+
+      <div class="model-answer-box">
+        <div class="model-answer-header">Teacher Mark Scheme &bull; Grade 9 Exemplar (12 / 12 Marks)</div>
+        <p>Deepening religious hostility steadily poisoned Anglo-Spanish relations after 1568. Devoutly Catholic Philip II resented Elizabeth&rsquo;s 1559 Protestant settlement, and once Pope Pius V excommunicated Elizabeth in 1570, Spain backed Catholic conspiracies to depose her in favour of Mary, Queen of Scots, including the 1571 Ridolfi Plot and 1583 Throckmorton Plot. In retaliation, Elizabeth executed seminary priests and expelled Spanish ambassador Mendoza in 1584, severing formal diplomatic ties.</p>
+        <p>This ideological mistrust escalated through commercial rivalry and Francis Drake&rsquo;s privateering raids on Spanish treasure. Relations fractured in 1568 when Spanish ships ambushed John Hawkins and Drake at San Juan de Ul&uacute;a and Elizabeth seized Philip&rsquo;s Genoese Loan gold sheltering in English ports. During his 1577&ndash;80 circumnavigation, Drake plundered £140,000 from the <em>Cacafuego</em>; when Elizabeth publicly knighted him aboard the <em>Golden Hind</em> in 1581, Philip saw open royal piracy.</p>
+        <p>Finally, Spanish military dominance in the Netherlands turned rivalry into undeclared war by 1585. Because Antwerp controlled English cloth exports and Dutch ports offered invasion launchpads across the Channel, Elizabeth secretly funded Dutch Protestant rebels and hired mercenary armies after the 1576 Spanish Fury. Following the 1584 assassination of rebel leader William of Orange and the Catholic Franco-Spanish Treaty of Joinville, Elizabeth signed the Treaty of Nonsuch in August 1585, dispatching Robert Dudley, Earl of Leicester, with 7,400 English soldiers to fight Spanish rule.</p>
+      </div>
+
+      <div style="border-top: 1px solid #cbd5e1; margin-top: 14px; padding-top: 8px; text-align: right; font-weight: 700;">
+        (Total for Question 2 = 12 marks)
+      </div>
+    </div>
+    <div class="footer">
+      <div>The History Revision Hub &bull; Mock Paper B Mark Scheme</div>
+      <div class="turn-over">Turn over &#9654;</div>
     </div>
   </div>
 
+  <!-- Page 4: Question 3 -->
+  <div class="page">
+    <div class="page-inner">
+      <div style="font-weight: 800; color: #0369a1; font-size: 13px; text-transform: uppercase; margin-bottom: 10px;">Section B Essay Option 1 (Answer Either Question 3 or Question 4)</div>
+      <div class="question-block">
+        <div class="question-text">
+          <div class="question-num">3</div>
+          <div style="width: 100%;">
+            &ldquo;The Northern Earls&rsquo; Rebellion (1569) was a serious threat to Elizabeth.&rdquo;<br>
+            <span style="font-weight: 400; font-style: italic;">How far do you agree? Explain your answer.</span>
+            <span style="float: right; font-weight: 400; color: #444;">(16)</span>
+          </div>
+        </div>
+        <div class="bullet-point-box">
+          <em>You <strong>may</strong> use the following in your answer:</em>
+          <ul>
+            <li>Mary, Queen of Scots</li>
+            <li>Lack of foreign support</li>
+          </ul>
+          <em style="display:block; margin-top:6px;">You <strong>must</strong> also use information of your own.</em>
+        </div>
+      </div>
+
+      <div class="model-answer-box">
+        <div class="model-answer-header">Teacher Mark Scheme &bull; Grade 9 Exemplar (16 / 16 Marks)</div>
+        <p>On the surface, the 1569 Revolt of the Northern Earls posed a dangerous dynastic and religious challenge because it united discontented Catholic peers behind a living Catholic heir. Resenting their loss of court influence under William Cecil, the Earls of Northumberland and Westmorland raised 4,600 men, stormed Durham Cathedral in November 1569, tore up the English Bible, and celebrated Latin Mass. Crucially, they planned to free Mary, Queen of Scots and marry her to the Duke of Norfolk, threatening Elizabeth with an immediate legitimate successor.</p>
+        <p>However, the rebellion failed to endanger Elizabeth&rsquo;s throne because it lacked decisive foreign support and strategic coordination. Philip II was reluctant to place pro-French Mary on the English throne, so the Duke of Alba sent zero Spanish troops from the Netherlands despite seizing Hartlepool as a landing port. Moreover, Pope Pius V did not issue his Papal Bull excommunicating Elizabeth until February 1570, after the rising had already collapsed, leaving English Catholics uncertain whether rebellion was lawful.</p>
+        <p>Furthermore, overwhelming domestic loyalty and swift royal action kept the revolt isolated north of Teesdale. Most English Catholics, including southern peers and Lancashire gentry, refused to join, while Cecil moved Mary south to Coventry beyond rebel reach and the Earl of Sussex mustered a royal army that forced the earls to flee into Scotland. Executing roughly 450 rebels and placing Henry Hastings over a strengthened Council of the North crushed northern feudal autonomy.</p>
+        <p>Overall, I largely disagree with the statement. Although Mary&rsquo;s presence made the rising ideologically alarming and foreshadowed future papal plots, without Spanish military intervention or wider English support, the poorly led northern rebels never seriously threatened to topple Elizabeth&rsquo;s government.</p>
+      </div>
+
+      <div style="border-top: 1px solid #cbd5e1; margin-top: 14px; padding-top: 8px; text-align: right; font-weight: 700;">
+        (Total for Question 3 = 16 marks)
+      </div>
+    </div>
+    <div class="footer">
+      <div>The History Revision Hub &bull; Mock Paper B Mark Scheme</div>
+      <div class="turn-over">Turn over &#9654;</div>
+    </div>
+  </div>
+
+  <!-- Page 5: Question 4 -->
+  <div class="page">
+    <div class="page-inner">
+      <div style="font-weight: 800; color: #0369a1; font-size: 13px; text-transform: uppercase; margin-bottom: 10px;">Section B Essay Option 2 (Answer Either Question 3 or Question 4)</div>
+      <div class="question-block">
+        <div class="question-text">
+          <div class="question-num">4</div>
+          <div style="width: 100%;">
+            &ldquo;The voyages of exploration in Elizabeth&rsquo;s reign were primarily motivated by a desire for wealth.&rdquo;<br>
+            <span style="font-weight: 400; font-style: italic;">How far do you agree? Explain your answer.</span>
+            <span style="float: right; font-weight: 400; color: #444;">(16)</span>
+          </div>
+        </div>
+        <div class="bullet-point-box">
+          <em>You <strong>may</strong> use the following in your answer:</em>
+          <ul>
+            <li>Trade routes</li>
+            <li>Rivalry with Spain</li>
+          </ul>
+          <em style="display:block; margin-top:6px;">You <strong>must</strong> also use information of your own.</em>
+        </div>
+      </div>
+
+      <div class="model-answer-box">
+        <div class="model-answer-header">Teacher Mark Scheme &bull; Grade 9 Exemplar (16 / 16 Marks)</div>
+        <p>The desire for commercial profit and plunder was clearly a central driver of Elizabethan exploration. Once conflict in the Netherlands disrupted the Antwerp woollen cloth market, English merchants urgently sought alternative overseas trade routes, founding the Eastland and Levant Companies and funding Martin Frobisher&rsquo;s search for a North-West Passage to Asian spices. Privateering offered even richer returns: courtiers and Elizabeth herself invested in Francis Drake&rsquo;s 1577&ndash;80 voyage, which brought back roughly £400,000 in captured Spanish silver and cloves, yielding enormous dividends that cleared royal debt.</p>
+        <p>Nevertheless, geopolitical and religious rivalry with Catholic Spain increasingly shaped maritime ventures alongside financial gain. Raiding Philip II&rsquo;s New World treasure fleets directly starved Spanish armies fighting Protestants in the Netherlands, blending private profit with national defence. Similarly, Sir Walter Raleigh&rsquo;s 1585 expedition to colonise Virginia aimed not only to source raw materials like timber and wine without Spanish tariffs, but also to establish a secure North American naval base from which English ships could strike Spanish Caribbean convoys.</p>
+        <p>In addition, imperial ambition and scientific progress enabled and encouraged ocean voyages. Navigational advances—including Mercator&rsquo;s 1569 world map, astrolabes, quadrants, and faster, weatherly galleons—gave sailors confidence to cross oceans. Explorers also sought Protestant expansion and royal prestige, shown when Drake claimed Nova Albion in California for Elizabeth in June 1579 to challenge Iberian territorial monopolies.</p>
+        <p>Overall, I largely agree with the statement. Although strategic hostility towards Spain and imperial prestige grew vital by the 1580s, Elizabethan voyages depended entirely on private joint-stock investors who risked ships only because new trade routes and Spanish silver promised substantial wealth.</p>
+      </div>
+
+      <div style="border-top: 2px solid #334155; margin-top: 16px; padding-top: 10px; display: flex; justify-content: space-between; font-weight: 800;">
+        <span>(Total for Question 4 = 16 marks)</span>
+        <span>TOTAL FOR BOOKLET B = 32 MARKS</span>
+      </div>
+    </div>
+    <div class="footer">
+      <div>The History Revision Hub &bull; Mock Paper B Mark Scheme</div>
+      <div>End of Booklet B4 Mark Scheme</div>
+    </div>
+  </div>
 </body>
 </html>

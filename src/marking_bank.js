@@ -1524,6 +1524,750 @@ const KS3_MARKING_DATA = {
           }
       ]
   },
+  ks2_kingdom_of_benin: {
+      "unitTitle": "The Kingdom of Benin (c. AD 900 – 1897)",
+      "subtitle": "24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)",
+      "enquiries": [
+          {
+              "number": 1,
+              "title": "Enquiry 01: Rainforest Kingdom — Ogiso Rulers, Red-Earth Walls and Anglo-Saxon Contrast (c. AD 900–1180)",
+              "shortTitle": "Rainforest Kingdom",
+              "enquiryFocus": "How did Edo communities build a vast rainforest kingdom by AD 900?",
+              "questions": [
+                  {
+                      "num": 1,
+                      "tier": "Recall",
+                      "q": "In which modern West African country did the historic Kingdom of Benin (Edo) grow?",
+                      "a": "Southern Nigeria",
+                      "exp": "Historic Benin City is the capital of Edo State in modern southern Nigeria—not the modern country called Republic of Benin!"
+                  },
+                  {
+                      "num": 2,
+                      "tier": "Detail",
+                      "q": "What did the Edo people call themselves, their language, and their rainforest heartland?",
+                      "a": "Edo",
+                      "exp": "Edo is the name of the people, language, and royal heartland of the Kingdom of Benin."
+                  },
+                  {
+                      "num": 3,
+                      "tier": "Explain",
+                      "q": "Which nutritious crops did early Edo families farm in sunlit rainforest clearings?",
+                      "a": "White yams, plantains, and spicy pepper",
+                      "exp": "Warm rainforest soil and seasonal rains produced rich harvests of yams, plantains, and Benin pepper."
+                  },
+                  {
+                      "num": 4,
+                      "tier": "Explain",
+                      "q": "What valuable red liquid pressed from rainforest palm fruit fuelled Edo cooking and lamps?",
+                      "a": "Palm oil",
+                      "exp": "Native West African oil palms supplied rich red palm oil for stews, soap, and lamps."
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "title": "Enquiry 02: From Ogiso to Oba — Ewuare the Great and Golden Benin City (c. AD 1180–1500)",
+              "shortTitle": "From Ogiso to Oba",
+              "enquiryFocus": "How did Oba Ewuare the Great turn Benin City into a golden capital?",
+              "questions": [
+                  {
+                      "num": 5,
+                      "tier": "Recall",
+                      "q": "Around AD 1180, why did Benin’s senior Uzama elders end the rule of the last Ogiso king?",
+                      "a": "Because of cruel misrule, leading them to seek a wise new royal line",
+                      "exp": "After banishing the last Ogiso around AD 1180, Edo elders invited wise leadership from Ife."
+                  },
+                  {
+                      "num": 6,
+                      "tier": "Detail",
+                      "q": "Which sacred Yoruba city north-west of Benin sent Prince Oranmiyan to help Edo?",
+                      "a": "Sacred Ife",
+                      "exp": "Sacred Ife was revered across southern Nigeria for spiritual authority and lifelike brass art."
+                  },
+                  {
+                      "num": 7,
+                      "tier": "Explain",
+                      "q": "Who was Prince Oranmiyan’s Edo-born son, crowned around AD 1180 as Benin’s very first Oba?",
+                      "a": "Oba Eweka I",
+                      "exp": "Oba Eweka I founded Benin’s royal Oba dynasty that still reigns more than 800 years later!"
+                  },
+                  {
+                      "num": 8,
+                      "tier": "Explain",
+                      "q": "What does the royal title \"Oba\" mean in the Kingdom of Benin?",
+                      "a": "The sacred King of Benin",
+                      "exp": "Since Oba Eweka I, every sacred ruler of Benin has held the title Oba."
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "title": "Enquiry 03: Lost-Wax Masterpieces — Igun Street Brass-Casters, Ivory and Coral (c. AD 1400–1700)",
+              "shortTitle": "Lost-Wax Masterpieces",
+              "enquiryFocus": "How did Igun Street artists cast brass plaques to record Benin’s history?",
+              "questions": [
+                  {
+                      "num": 9,
+                      "tier": "Recall",
+                      "q": "Although museums call them \"Benin Bronzes\", what golden metal are most Benin plaques actually made from?",
+                      "a": "Brass (a mix of copper and zinc)",
+                      "exp": "Tests show most Benin sculptures are brass (copper and zinc), which gleamed like gold when polished!"
+                  },
+                  {
+                      "num": 10,
+                      "tier": "Detail",
+                      "q": "Which two metals are mixed together to make bright golden brass?",
+                      "a": "Copper and zinc",
+                      "exp": "Mixing copper with zinc creates golden brass, whereas mixing copper with tin makes bronze."
+                  },
+                  {
+                      "num": 11,
+                      "tier": "Explain",
+                      "q": "By royal Edo law, who was the ONLY person allowed to own brass sculptures or gift them to chiefs?",
+                      "a": "The sacred Oba of Benin",
+                      "exp": "Royal brass belonged strictly to the Oba, making every plaque and head a sacred treasure."
+                  },
+                  {
+                      "num": 12,
+                      "tier": "Explain",
+                      "q": "On which famous street in Benin City did the hereditary royal guild of brass-casters live and work?",
+                      "a": "Igun Street",
+                      "exp": "Master brass-casting families have lived and worked on Igun Street for hundreds of years!"
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "title": "Enquiry 04: Sacred Court Rituals — The Oba, Queen Mother Idia and Everyday Edo Life (c. AD 1500–1700)",
+              "shortTitle": "Sacred Court Rituals",
+              "enquiryFocus": "What was life like inside the Oba’s court and Edo rainforest villages?",
+              "questions": [
+                  {
+                      "num": 13,
+                      "tier": "Recall",
+                      "q": "In Edo religion, who was Olokun?",
+                      "a": "The revered god of rivers, oceans, and wealth",
+                      "exp": "Olokun was honoured across Benin as god of great waters, ocean trade, and prosperity."
+                  },
+                  {
+                      "num": 14,
+                      "tier": "Detail",
+                      "q": "What famous praise-title compared the sacred Oba inside his palace to the king of the forest?",
+                      "a": "Leopard of the House",
+                      "exp": "Edo singers hailed the wise, fearless Oba as \"Leopard of the House\"."
+                  },
+                  {
+                      "num": 15,
+                      "tier": "Explain",
+                      "q": "Why was the West African mudfish chosen as a sacred royal symbol on Benin plaques?",
+                      "a": "It can swim in water AND breathe while wriggling across damp land",
+                      "exp": "Living in both water and damp mud made mudfish the ideal symbol linking land and water-god Olokun!"
+                  },
+                  {
+                      "num": 16,
+                      "tier": "Explain",
+                      "q": "Who was revered in Edo belief as the supreme creator god above all?",
+                      "a": "Osanobua",
+                      "exp": "Edo people honoured supreme creator god Osanobua alongside Olokun, his son and god of waters."
+                  }
+              ]
+          },
+          {
+              "number": 5,
+              "title": "Enquiry 05: Global Traders — Brass Manillas, Cowrie Shells and European Visitors (c. AD 1485–1850)",
+              "shortTitle": "Global Traders",
+              "enquiryFocus": "Why were European visitors so amazed by Benin’s trade and wide streets?",
+              "questions": [
+                  {
+                      "num": 17,
+                      "tier": "Recall",
+                      "q": "In which year did Portuguese explorer João Afonso de Aveiro first visit Benin City?",
+                      "a": "AD 1485",
+                      "exp": "João Afonso de Aveiro sailed up the Benin River to Gwato port and visited Benin City in AD 1485."
+                  },
+                  {
+                      "num": 18,
+                      "tier": "Detail",
+                      "q": "Which Europeans were the VERY FIRST ocean sailors to reach the Kingdom of Benin in 1485?",
+                      "a": "The Portuguese",
+                      "exp": "Portuguese navigators exploring West Africa’s Atlantic coast reached Benin in 1485."
+                  },
+                  {
+                      "num": 19,
+                      "tier": "Explain",
+                      "q": "At which busy Benin River port did foreign ships have to anchor and ask the Oba’s permission to trade?",
+                      "a": "Gwato port (Ughoton)",
+                      "exp": "No European trader could buy pepper or cloth at Gwato port without the Oba’s royal licence!"
+                  },
+                  {
+                      "num": 20,
+                      "tier": "Explain",
+                      "q": "To which European capital city did the Oba send royal Benin ambassadors around 1514?",
+                      "a": "Lisbon in Portugal",
+                      "exp": "King Manuel I of Portugal welcomed Benin’s royal ambassador at his court in Lisbon!"
+                  }
+              ]
+          },
+          {
+              "number": 6,
+              "title": "Enquiry 06: 1897 British Invasion, Looted Bronzes and Living Edo Heritage Today (1897–Present)",
+              "shortTitle": "1897 British Invasion, Looted Bronze",
+              "enquiryFocus": "Why did Britain invade Benin in 1897, and should looted bronzes return?",
+              "questions": [
+                  {
+                      "num": 21,
+                      "tier": "Recall",
+                      "q": "Which two valuable rainforest resources did late-Victorian British factories want to control around Benin in the 1890s?",
+                      "a": "Palm oil and rubber",
+                      "exp": "Palm oil lubricated factory machines and made soap, while rubber made tyres and cables."
+                  },
+                  {
+                      "num": 22,
+                      "tier": "Detail",
+                      "q": "Which Oba of Benin defended his kingdom’s trade independence when British forces invaded in 1897?",
+                      "a": "Oba Ovonramwen",
+                      "exp": "Oba Ovonramwen Nogbaisi reigned from 1888 until British forces exiled him in 1897."
+                  },
+                  {
+                      "num": 23,
+                      "tier": "Explain",
+                      "q": "Why was it disrespectful for a British column to march toward Benin City uninvited in January 1897?",
+                      "a": "Oba Ovonramwen was holding sacred Igue rituals when foreign visitors were forbidden",
+                      "exp": "Ignoring royal warnings during sacred rituals, the uninvited column was ambushed by chiefs without Ovonramwen’s order."
+                  },
+                  {
+                      "num": 24,
+                      "tier": "Explain",
+                      "q": "In which month and year did 1,200 British troops capture Benin City in the \"Punitive Expedition\"?",
+                      "a": "February 1897",
+                      "exp": "Twelve hundred British troops captured Benin City in February 1897."
+                  }
+              ]
+          }
+      ]
+  },
+  ks2_victorian_britain: {
+      "unitTitle": "Victorian Britain (1837 – 1901)",
+      "subtitle": "24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)",
+      "enquiries": [
+          {
+              "number": 1,
+              "title": "Enquiry 01: Young Queen Victoria, Steam Railways and Shrinking Britain (1837–1860)",
+              "shortTitle": "Young Queen Victoria, Steam Railways",
+              "enquiryFocus": "How did steam railways and penny post shrink Queen Victoria’s Britain?",
+              "questions": [
+                  {
+                      "num": 1,
+                      "tier": "Recall",
+                      "q": "How old was Princess Victoria when she inherited the British throne on 20 June 1837?",
+                      "a": "Eighteen years old",
+                      "exp": "Born in May 1819, Victoria became Queen aged just eighteen in June 1837!"
+                  },
+                  {
+                      "num": 2,
+                      "tier": "Detail",
+                      "q": "Who did Queen Victoria marry in February 1840?",
+                      "a": "Prince Albert",
+                      "exp": "Prince Albert shared Victoria’s passion for science, industry, and the 1851 Great Exhibition."
+                  },
+                  {
+                      "num": 3,
+                      "tier": "Explain",
+                      "q": "What does calling Queen Victoria a \"constitutional monarch\" mean?",
+                      "a": "She reigned as head of state while elected Parliament debated and passed laws",
+                      "exp": "In Victorian Britain, elected MPs and Prime Ministers in Parliament passed the laws."
+                  },
+                  {
+                      "num": 4,
+                      "tier": "Explain",
+                      "q": "In June 1842, Queen Victoria became the very first British monarch to travel by what?",
+                      "a": "A coal-powered steam train into London Paddington",
+                      "exp": "Her smooth 25-minute journey from Slough to Paddington convinced nervous families that trains were safe."
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "title": "Enquiry 02: Chimneys, Cotton Mills and Children Underground (1837–1850)",
+              "shortTitle": "Chimneys, Cotton Mills and Children",
+              "enquiryFocus": "Why was factory and coal-mine work so dangerous for Victorian children?",
+              "questions": [
+                  {
+                      "num": 5,
+                      "tier": "Recall",
+                      "q": "Which booming Lancashire city was nicknamed \"Cottonopolis\" because of its steam-powered cotton mills?",
+                      "a": "Manchester",
+                      "exp": "Manchester and surrounding Lancashire towns spun and wove cotton cloth exported worldwide."
+                  },
+                  {
+                      "num": 6,
+                      "tier": "Detail",
+                      "q": "What historic milestone did the 1851 Victorian Census reveal for the very first time?",
+                      "a": "More people in Britain lived in towns and cities than in the countryside",
+                      "exp": "Rapid factory and railway growth turned Britain into the world’s first urban industrial nation by 1851."
+                  },
+                  {
+                      "num": 7,
+                      "tier": "Explain",
+                      "q": "Why did loving working-class parents often send eight- or nine-year-old children to work in mills?",
+                      "a": "Because low adult wages and zero welfare meant families needed every penny for bread and rent",
+                      "exp": "If a parent fell ill or wages dropped, a child’s few shillings kept the family out of the workhouse."
+                  },
+                  {
+                      "num": 8,
+                      "tier": "Explain",
+                      "q": "How long was a typical daily factory or coal-pit shift for early Victorian working children?",
+                      "a": "Twelve hours a day, six days a week",
+                      "exp": "Children often started at five or six in the morning and finished late in the evening, resting only on Sundays."
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "title": "Enquiry 03: Workhouses, Ragged Schools and Champions of Reform (1834–1880)",
+              "shortTitle": "Workhouses, Ragged Schools and Champ",
+              "enquiryFocus": "How did Victorian reformers rescue children from workhouses, pits, and streets?",
+              "questions": [
+                  {
+                      "num": 9,
+                      "tier": "Recall",
+                      "q": "Which 1834 law grouped parishes together to build harsh brick \"Union Workhouses\"?",
+                      "a": "The 1834 Poor Law Amendment Act",
+                      "exp": "The 1834 Poor Law ended most outdoor parish cash handouts and pushed destitute families into Union Workhouses."
+                  },
+                  {
+                      "num": 10,
+                      "tier": "Detail",
+                      "q": "What shocking rule greeted poor families the moment they stepped inside a Victorian workhouse?",
+                      "a": "Husbands, wives, and children were split up into separate locked wards",
+                      "exp": "Splitting loving families apart was one of the cruellest parts of the Victorian workhouse system."
+                  },
+                  {
+                      "num": 11,
+                      "tier": "Explain",
+                      "q": "What thin, watery food was served to hungry inmates inside workhouse dining halls?",
+                      "a": "Oatmeal gruel",
+                      "exp": "Boiled from a handful of oatmeal in giant copper cauldrons, watery gruel left growing children hungry."
+                  },
+                  {
+                      "num": 12,
+                      "tier": "Explain",
+                      "q": "What was \"oakum\" that workhouse inmates had to unpick with sore fingers for hours?",
+                      "a": "Stiff, tar-soaked old ship ropes",
+                      "exp": "Loose oakum fibres were sold back to shipbuilders to pack (\"caulk\") gaps between wooden ship planks!"
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "title": "Enquiry 04: Inside a Victorian Classroom — Slates, Drill and the 1870 School Act (1870–1901)",
+              "shortTitle": "Inside a Victorian Classroom",
+              "enquiryFocus": "What was daily life really like inside a strict Victorian classroom?",
+              "questions": [
+                  {
+                      "num": 13,
+                      "tier": "Recall",
+                      "q": "At the start of Queen Victoria’s reign in 1837, could every poor child attend a free local state school?",
+                      "a": "No—over half of poor children never went to school at all",
+                      "exp": "Before 1870, Britain relied on a patchwork of fee-paying schools, church schools, Dame Schools, and Ragged Schools."
+                  },
+                  {
+                      "num": 14,
+                      "tier": "Detail",
+                      "q": "Who steered the landmark 1870 Elementary Education Act through Parliament to build local \"Board Schools\"?",
+                      "a": "William Forster",
+                      "exp": "Forster’s 1870 Act created elected local School Boards to build schools wherever places were lacking."
+                  },
+                  {
+                      "num": 15,
+                      "tier": "Explain",
+                      "q": "In which year did school attendance become COMPULSORY by law for children aged five to ten?",
+                      "a": "1880",
+                      "exp": "Mundella’s 1880 Education Act required parents to send five-to-ten-year-olds to school rather than casual jobs."
+                  },
+                  {
+                      "num": 16,
+                      "tier": "Explain",
+                      "q": "In which year did Parliament finally abolish weekly \"school pence\" fees so elementary schools became FREE?",
+                      "a": "1891",
+                      "exp": "Until 1891, poor parents still had to find a few pennies each Monday morning for each child’s lessons!"
+                  }
+              ]
+          },
+          {
+              "number": 5,
+              "title": "Enquiry 05: Workshop of the World — The 1851 Crystal Palace and Dazzling Inventions (1851–1901)",
+              "shortTitle": "Workshop of the World",
+              "enquiryFocus": "Why did the 1851 Crystal Palace and new inventions amaze the world?",
+              "questions": [
+                  {
+                      "num": 17,
+                      "tier": "Recall",
+                      "q": "On 1 May 1851, which royal couple opened the Great Exhibition inside London’s Hyde Park?",
+                      "a": "Queen Victoria and Prince Albert",
+                      "exp": "Prince Albert planned the 1851 Great Exhibition of the Works of Industry of All Nations."
+                  },
+                  {
+                      "num": 18,
+                      "tier": "Detail",
+                      "q": "Who designed the giant cast-iron and glass \"Crystal Palace\" in just a few days?",
+                      "a": "Sir Joseph Paxton",
+                      "exp": "Joseph Paxton had perfected iron-and-glass greenhouses as head gardener at Chatsworth House!"
+                  },
+                  {
+                      "num": 19,
+                      "tier": "Explain",
+                      "q": "Why did Joseph Paxton give the central Transept of the Crystal Palace a towering curved glass arch?",
+                      "a": "To enclose full-grown living Hyde Park elm trees without chopping them down",
+                      "exp": "Visitors marvelled at full-grown green elm trees standing right inside the bright glass hall!"
+                  },
+                  {
+                      "num": 20,
+                      "tier": "Explain",
+                      "q": "Roughly how many people visited the Crystal Palace during its five months in 1851?",
+                      "a": "Six million visitors (around a third of Britain’s population)",
+                      "exp": "Cheap \"Shilling Days\" and Thomas Cook steam excursion trains allowed working families across Britain to visit!"
+                  }
+              ]
+          },
+          {
+              "number": 6,
+              "title": "Enquiry 06: Rich and Poor Homes, Seaside Holidays and Victoria’s 63-Year Legacy (1850–1901)",
+              "shortTitle": "Rich and Poor Homes, Seaside Holiday",
+              "enquiryFocus": "How much had daily life changed across Britain by January 1901?",
+              "questions": [
+                  {
+                      "num": 21,
+                      "tier": "Recall",
+                      "q": "What were cramped working-class Victorian brick houses sharing three walls with neighbours called?",
+                      "a": "Back-to-back houses",
+                      "exp": "Built tightly round narrow courts with no back windows or gardens, back-to-backs were dark and damp."
+                  },
+                  {
+                      "num": 22,
+                      "tier": "Detail",
+                      "q": "Where did families living in Victorian back-to-back courts fetch clean water and use the toilet?",
+                      "a": "At a shared cold standpipe tap and brick privies outside in the courtyard",
+                      "exp": "Several large families had to queue at one freezing outdoor courtyard tap in all weathers!"
+                  },
+                  {
+                      "num": 23,
+                      "tier": "Explain",
+                      "q": "How did most working-class Victorian families take a warm wash on Friday nights?",
+                      "a": "Boiling kettles on the coal range to fill a tin bath in front of the fire",
+                      "exp": "Parents and children took turns in the same tin tub beside the kitchen hearth!"
+                  },
+                  {
+                      "num": 24,
+                      "tier": "Explain",
+                      "q": "What was the single most common paid job for teenage girls and unmarried women in late-Victorian Britain?",
+                      "a": "Working \"below stairs\" as a domestic servant in wealthier homes",
+                      "exp": "Over 1.5 million Victorian women worked long hours cooking, scrubbing grates, and answering parlour bells."
+                  }
+              ]
+          }
+      ]
+  },
+  ks2_local_history_detective: {
+      "unitTitle": "History on Our Doorstep — Local Detective Toolkit",
+      "subtitle": "24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)",
+      "enquiries": [
+          {
+              "number": 1,
+              "title": "Enquiry 01: Secret Code in Place-Names and Old Ordnance Survey Maps",
+              "shortTitle": "Secret Code in Place-Names and Old O",
+              "enquiryFocus": "How do place-names and old maps unlock secret history on our doorstep?",
+              "questions": [
+                  {
+                      "num": 1,
+                      "tier": "Recall",
+                      "q": "Which Latin word for a walled Roman fort gives us British town names like Chester, Manchester, and Lancaster?",
+                      "a": "Castra",
+                      "exp": "Latin \"castra\" (walled military camp) became -chester, -caster, and -cester in English place-names."
+                  },
+                  {
+                      "num": 2,
+                      "tier": "Detail",
+                      "q": "Which group of settlers left Britain’s most common village endings: -ham, -ton, -ford, and -ley?",
+                      "a": "The Anglo-Saxons",
+                      "exp": "Old English speaking Anglo-Saxons named homesteads (-ham), farms (-ton), crossings (-ford), and clearings (-ley)."
+                  },
+                  {
+                      "num": 3,
+                      "tier": "Explain",
+                      "q": "If you visit Whitby, Grimsby, or Scunthorpe, which settlers named those -by and -thorpe places?",
+                      "a": "Viking settlers in the Danelaw",
+                      "exp": "Old Norse \"-by\" (farm/village) and \"-thorpe\" (outlying hamlet) mark areas of Viking settlement."
+                  },
+                  {
+                      "num": 4,
+                      "tier": "Explain",
+                      "q": "What did the Anglo-Saxon ending \"-ford\" mean in town names like Oxford and Stafford?",
+                      "a": "A shallow river crossing",
+                      "exp": "Oxford literally meant the shallow river crossing (\"ford\") where oxen waded across!"
+                  }
+              ]
+          },
+          {
+              "number": 2,
+              "title": "Enquiry 02: Reading Buildings on the High Street — Timber, Brick and Royal Cyphers",
+              "shortTitle": "Reading Buildings on the High Street",
+              "enquiryFocus": "How can timber frames, brickwork, and postboxes date a British street?",
+              "questions": [
+                  {
+                      "num": 5,
+                      "tier": "Recall",
+                      "q": "Why do local history detectives always look UP above modern ground-floor shopfronts on a British High Street?",
+                      "a": "Because older Tudor, Georgian, and Victorian upper floors often survive untouched above modern shop signs",
+                      "exp": "Ground-floor shopfronts get refitted every few years, whereas upper storeys often keep their original beams, bricks, and windows!"
+                  },
+                  {
+                      "num": 6,
+                      "tier": "Detail",
+                      "q": "What is an overhanging upper floor on a Tudor timber-framed building called?",
+                      "a": "A jetty",
+                      "exp": "Tudor carpenters jutted upper \"jetty\" floors out over narrow streets to gain extra floor space upstairs."
+                  },
+                  {
+                      "num": 7,
+                      "tier": "Explain",
+                      "q": "What mixture filled the panels between dark oak beams in many Tudor houses?",
+                      "a": "Wattle and daub (woven sticks plastered with mud, straw, and lime)",
+                      "exp": "Woven hazel wattles smeared with daub and limewash made warm, weatherproof walls between oak timbers."
+                  },
+                  {
+                      "num": 8,
+                      "tier": "Explain",
+                      "q": "Why did Tudor windows use lots of tiny diamond-shaped glass panes held in lead strips?",
+                      "a": "Large flat sheets of glass could not yet be made cheaply",
+                      "exp": "Crown and cylinder glass was handmade in small pieces, so glaziers joined small diamond quarries with lead!"
+                  }
+              ]
+          },
+          {
+              "number": 3,
+              "title": "Enquiry 03: Voices From Number 12 — Censuses, Parish Books and School Logbooks",
+              "shortTitle": "Voices From Number 12 — Censuses, Pa",
+              "enquiryFocus": "What can censuses, parish books, and school logbooks reveal about past families?",
+              "questions": [
+                  {
+                      "num": 9,
+                      "tier": "Recall",
+                      "q": "In which year did Britain hold its very first national Census, repeating every ten years since (except wartime 1941)?",
+                      "a": "1801",
+                      "exp": "Started in 1801 (and listing full household names and jobs from 1841), the UK Census runs every ten years!"
+                  },
+                  {
+                      "num": 10,
+                      "tier": "Detail",
+                      "q": "From which Census year onwards were the individual names, ages, and jobs of every person in each house written down?",
+                      "a": "1841",
+                      "exp": "The 1841 Census was the first modern UK Census to record every named individual in every household."
+                  },
+                  {
+                      "num": 11,
+                      "tier": "Explain",
+                      "q": "What was the job title of the local official who walked door to door collecting and copying Census forms?",
+                      "a": "An enumerator",
+                      "exp": "Each enumerator copied household schedules neatly into lined enumerator books now kept at The National Archives."
+                  },
+                  {
+                      "num": 12,
+                      "tier": "Explain",
+                      "q": "For how many years are modern UK personal Census sheets kept locked away to protect living people’s privacy?",
+                      "a": "One hundred years",
+                      "exp": "Under the 100-year rule, the 1921 Census opened in 2022—so families can read great-grandparents’ real handwriting!"
+                  }
+              ]
+          },
+          {
+              "number": 4,
+              "title": "Enquiry 04: How Our Town Earned Its Living — Farms, Canals, Mills and Stations",
+              "shortTitle": "How Our Town Earned Its Living",
+              "enquiryFocus": "How do street names, canals, mills, and stations show past local work?",
+              "questions": [
+                  {
+                      "num": 13,
+                      "tier": "Recall",
+                      "q": "Why did historic market towns like Wymondham build roofed \"market crosses\" on open wooden or stone pillars?",
+                      "a": "To keep butter, cheese, and market traders sheltered from rain at the town crossroads",
+                      "exp": "Open ground-floor arches sheltered weekly market stalls right at the heart of town!"
+                  },
+                  {
+                      "num": 14,
+                      "tier": "Detail",
+                      "q": "What were \"turnpike roads\" in eighteenth-century Britain?",
+                      "a": "Main toll roads where travellers paid at a gate so trusts maintained the road surface and milestones",
+                      "exp": "Turnpike trusts used toll money to mend deep ruts and put up clear roadside milestones."
+                  },
+                  {
+                      "num": 15,
+                      "tier": "Explain",
+                      "q": "Why does the stone milestone in Source A have a stone basin and tap built into its base?",
+                      "a": "So thirsty coach and cart horses could drink on long journeys",
+                      "exp": "Roadside troughs refreshed working horses hauling wagons and mail coaches!"
+                  },
+                  {
+                      "num": 16,
+                      "tier": "Explain",
+                      "q": "Which Act or rule in the 1700s made milestones a familiar sight every single mile along main British roads?",
+                      "a": "Turnpike road laws requiring clear distance markers for travellers and mail coaches",
+                      "exp": "Standard mileposts stopped coachmen getting lost and helped calculate fair postage and coach fares!"
+                  }
+              ]
+          },
+          {
+              "number": 5,
+              "title": "Enquiry 05: Names Carved in Stone — Local War Memorials and Commonwealth Records",
+              "shortTitle": "Names Carved in Stone",
+              "enquiryFocus": "How can War Memorials and Commonwealth records trace one local soldier’s story?",
+              "questions": [
+                  {
+                      "num": 17,
+                      "tier": "Recall",
+                      "q": "Between which years was the First World War (\"The Great War\") fought?",
+                      "a": "1914–1918",
+                      "exp": "Most local War Memorials were first built right after the 1914–1918 First World War, with 1939–1945 panels added after WWII."
+                  },
+                  {
+                      "num": 18,
+                      "tier": "Detail",
+                      "q": "Why did almost every British town, village, and parish build a local War Memorial in the 1920s?",
+                      "a": "Because fallen service personnel were buried overseas near battlefields, so families needed a local place to remember",
+                      "exp": "With overseas travel costly and graves far away, local memorials gave every community a focal point for grief and pride."
+                  },
+                  {
+                      "num": 19,
+                      "tier": "Explain",
+                      "q": "What does the word \"Cenotaph\" (like the national memorial on Whitehall in London) literally mean in Greek?",
+                      "a": "Empty tomb",
+                      "exp": "A cenotaph honours people whose remains rest elsewhere."
+                  },
+                  {
+                      "num": 20,
+                      "tier": "Explain",
+                      "q": "On Source A (the Henham church memorial), what does seeing two men named Camp, two named Bentley, and two named Hammond tell us?",
+                      "a": "Several families in one small village lost two brothers or close relatives in the same war",
+                      "exp": "Repeated surnames on village memorials vividly show how deeply wartime loss struck close-knit streets."
+                  }
+              ]
+          },
+          {
+              "number": 6,
+              "title": "Enquiry 06: Living Memory, Oral History and Saving Local Heritage",
+              "shortTitle": "Living Memory, Oral History and Savi",
+              "enquiryFocus": "How do oral history, Blue Plaques, and trails protect local heritage today?",
+              "questions": [
+                  {
+                      "num": 21,
+                      "tier": "Recall",
+                      "q": "What do historians call recording older people’s spoken memories about past everyday life and local changes?",
+                      "a": "Oral history",
+                      "exp": "Oral history preserves spoken eyewitness memories, accents, and everyday experiences within living memory."
+                  },
+                  {
+                      "num": 22,
+                      "tier": "Detail",
+                      "q": "Why is oral history especially important when investigating local street life in the 1950s, 1960s, and 1970s?",
+                      "a": "Because personal UK Census sheets stay locked for 100 years, whereas older neighbours remember those decades firsthand!",
+                      "exp": "Living witnesses bridge the 100-year Census gap with vivid personal memories!"
+                  },
+                  {
+                      "num": 23,
+                      "tier": "Explain",
+                      "q": "When Happened on \"Decimal Day\" (15 February 1971) in shops across Britain?",
+                      "a": "Britain switched from old pounds, shillings, and twelve-penny coins to decimal pounds of 100 new pence",
+                      "exp": "Before 15 February 1971, twelve pennies made one shilling and twenty shillings made one pound (£sd)!"
+                  },
+                  {
+                      "num": 24,
+                      "tier": "Explain",
+                      "q": "Which interview question will spark the richest oral history memory from an older local resident?",
+                      "a": "\"What was Saturday shopping like on our High Street when you were ten?\" (open question)",
+                      "exp": "Open-ended \"What was it like / Tell me about...\" questions invite detailed storytelling rather than one-word answers!"
+                  }
+              ]
+          }
+      ]
+  },
+  ks2_crime_and_punishment: {
+      "unitTitle": "Crime & Punishment Through Time (AD 43 – Present)",
+      "subtitle": "24-Question Master Retrieval Check & Self-Marking Key (Enquiries 01–06)",
+      "enquiries": [
+          {
+              "number": 1,
+              "title": "Enquiry 01: Roman Law, Twelve Tables and Bath Curse Tablets (AD 43–410)",
+              "shortTitle": "Roman Law & Bath Curses",
+              "enquiryFocus": "How did the Romans catch thieves and judge crimes in Britain without a police force?",
+              "questions": [
+                  { "num": 1, "tier": "Recall", "q": "What was Rome’s famous ancient code of written laws called?", "a": "The Twelve Tables", "exp": "After AD 43, Roman Britain used written court rules rooted in Rome’s ancient Twelve Tables." },
+                  { "num": 2, "tier": "Detail", "q": "Who judged serious Roman court cases inside the town’s stone basilica hall?", "a": "A Roman magistrate", "exp": "Magistrates weighed witness statements and checked honest bronze market weights." },
+                  { "num": 3, "tier": "Explain", "q": "How did Roman punishments differ between wealthy Roman citizens and enslaved people?", "a": "Citizens usually paid fines or faced exile; enslaved people faced whipping or mines", "exp": "Social rank decided how harshly Roman courts punished offenders." },
+                  { "num": 4, "tier": "Explain", "q": "Why did robbed bathers at Aquae Sulis (Bath) drop scratched lead curse tablets into the spring?", "a": "With no police detectives, victims begged Sulis Minerva to punish unseen cloak thieves", "exp": "Archaeologists recovered over 130 folded Roman lead curse tablets from Bath’s spring!" }
+              ]
+          },
+          {
+              "number": 2,
+              "title": "Enquiry 02: Anglo-Saxon Tithings, Wergild and Trial by Ordeal (AD 410–1066)",
+              "shortTitle": "Saxon Wergild & Ordeals",
+              "enquiryFocus": "Were Anglo-Saxon laws fair community rules or painful superstitions?",
+              "questions": [
+                  { "num": 5, "tier": "Recall", "q": "How many Anglo-Saxon neighbours aged twelve and over belonged to one village 'tithing'?", "a": "Ten neighbours", "exp": "If one tithing member broke the King’s Peace, the other nine had to bring him to court." },
+                  { "num": 6, "tier": "Detail", "q": "What had to happen immediately when someone blew a horn and shouted the 'Hue and Cry'?", "a": "Every villager within earshot had to stop work and chase the suspect", "exp": "Ignoring the Hue and Cry brought a silver fine at the monthly Hundred Court." },
+                  { "num": 7, "tier": "Explain", "q": "Why did Anglo-Saxon kings fix silver 'wergild' ('person-price') fines for injuries?", "a": "To pay peaceful compensation and stop violent family blood feuds", "exp": "King Alfred’s written law code priced every injury, though noble thanes ranked six times above ceorls." },
+                  { "num": 8, "tier": "Explain", "q": "When did Anglo-Saxon Hundred Courts use church 'Trial by Ordeal' (hot iron or cold water)?", "a": "Only as a last resort when human witnesses could not agree on the truth", "exp": "Priests checked bandaged burns three days later trusting God to reveal innocence or guilt." }
+              ]
+          },
+          {
+              "number": 3,
+              "title": "Enquiry 03: Norman Forest Laws, Sanctuary and Royal Courts (1066–1485)",
+              "shortTitle": "Norman Laws & 1215 Juries",
+              "enquiryFocus": "How did Norman kings and medieval royal judges change English justice after 1066?",
+              "questions": [
+                  { "num": 9, "tier": "Recall", "q": "Why did medieval villagers hate William the Conqueror’s new 'Forest Laws'?", "a": "They banned villagers from hunting wild deer or cutting wood under harsh penalties", "exp": "Turning peasant hunting into 'poaching' sparked sympathy for greenwood outlaws like Robin Hood." },
+                  { "num": 10, "tier": "Detail", "q": "Which medieval king set up travelling judges and twelve-person juries under one 'Common Law'?", "a": "King Henry II", "exp": "From 1154, Henry II’s royal assize courts spread twelve-person trial juries across England." },
+                  { "num": 11, "tier": "Explain", "q": "Which two landmark events in 1215 cemented fair twelve-person jury trials?", "a": "King John sealed Magna Carta AND Pope Innocent III banned Trial by Ordeal", "exp": "Magna Carta promised lawful trials while ending church ordeals made juries essential." },
+                  { "num": 12, "tier": "Explain", "q": "What did striking Durham Cathedral’s bronze Sanctuary Knocker give a medieval fugitive?", "a": "37 to 40 days of safe Church shelter before choosing royal trial or exile abroad", "exp": "No royal sheriff could seize a fugitive inside cathedral sanctuary walls." }
+              ]
+          },
+          {
+              "number": 4,
+              "title": "Enquiry 04: Tudor Vagrants, High Treason and Witchcraft Trials (1485–1700)",
+              "shortTitle": "Vagrants, 1605 & Witches",
+              "enquiryFocus": "Why did Tudor and Stuart rulers fear vagrants, plotters, and accused witches so fiercely?",
+              "questions": [
+                  { "num": 13, "tier": "Recall", "q": "How did Elizabeth I’s 1601 Poor Law treat sick locals differently from 'sturdy beggars'?", "a": "Sick locals received parish relief; 'sturdy beggars' were whipped or sent to workhouses", "exp": "Frightened towns with unpaid parish constables whipped jobless vagrants behind carts." },
+                  { "num": 14, "tier": "Detail", "q": "What warning note helped guards catch Guy Fawkes beside 36 gunpowder barrels on 4–5 Nov 1605?", "a": "The anonymous Monteagle Letter", "exp": "Guards seized Fawkes holding his shuttered iron dark lantern beneath the House of Lords." },
+                  { "num": 15, "tier": "Explain", "q": "Who exploited 1645–1647 Civil War fear in East Anglia as self-styled 'Witchfinder General'?", "a": "Matthew Hopkins", "exp": "Hopkins charged towns fees and used cruel sleep deprivation to extract confessions." },
+                  { "num": 16, "tier": "Explain", "q": "Why did English witchcraft trials fade after 1660 and end officially in 1736?", "a": "Peace returned, the 1660 Royal Society spread science, and calm judges demanded real proof", "exp": "Scientific reasoning and strict courtroom evidence rules defeated witchcraft superstition." }
+              ]
+          },
+          {
+              "number": 5,
+              "title": "Enquiry 05: Smugglers, Highwaymen and The Bloody Code (1700–1820)",
+              "shortTitle": "Smugglers & Bloody Code",
+              "enquiryFocus": "Why did Britain pass over 200 death-penalty laws—and why did juries stop using them?",
+              "questions": [
+                  { "num": 17, "tier": "Recall", "q": "Why did 18th-century coastal smugglers land tea, silk, and brandy at night?", "a": "To dodge heavy government import taxes (customs duties)", "exp": "Whole coastal villages bought cheap smuggled tea and treated smuggling as a 'social crime'." },
+                  { "num": 18, "tier": "Detail", "q": "Which three practical changes ended pistol-armed stagecoach highwaymen by the early 1800s?", "a": "Paper banknotes, fast armed Royal Mail coaches, and mounted horse patrols", "exp": "Guarded coaches and traceable banknotes stopped highwaymen far better than gallows threats." },
+                  { "num": 19, "tier": "Explain", "q": "Why did sympathetic twelve-person juries undermine the 220-crime 'Bloody Code'?", "a": "Jurors refused to hang petty thieves for stealing five shillings, undervaluing goods instead", "exp": "Ordinary jurors felt hanging teenagers for tiny shop thefts was cruelly unfair." },
+                  { "num": 20, "tier": "Explain", "q": "How did Australian transportation (1787–1868) and Elizabeth Fry at Newgate reshape punishment?", "a": "Over 160,000 convicts were shipped to Australia while Fry proved schooling reformed prisoners", "exp": "Elizabeth Fry’s 1817 Newgate school and sewing rooms inspired Peel’s 1823 Gaols Act." }
+              ]
+          },
+          {
+              "number": 6,
+              "title": "Enquiry 06: Peel’s 1829 Bobbies, Victorian Prisons and Forensics (1829–Present)",
+              "shortTitle": "1829 Bobbies & 1984 DNA",
+              "enquiryFocus": "How have uniformed police, prison reform, and forensic science transformed justice since 1829?",
+              "questions": [
+                  { "num": 21, "tier": "Recall", "q": "Who founded London’s unarmed blue-coated Metropolitan Police ('Bobbies') in 1829?", "a": "Home Secretary Sir Robert Peel", "exp": "Dressed in navy coats with wooden truncheons, Bobbies prevented crime by public consent." },
+                  { "num": 22, "tier": "Detail", "q": "What strict regime opened at Pentonville Prison in 1842, and when did Britain end murder hangings?", "a": "The silent Separate System (with treadwheels); murder executions ended in 1965", "exp": "Modern justice replaced treadwheels and hanging with rehabilitation and community payback." },
+                  { "num": 23, "tier": "Explain", "q": "What new forensic identification bureau opened at London’s Scotland Yard in 1901?", "a": "The Fingerprint Bureau", "exp": "Matching unique fingertip loops, arches, and whorls gave courts physical crime-scene proof." },
+                  { "num": 24, "tier": "Explain", "q": "How did Sir Alec Jeffreys’s 1984 Leicester discovery of DNA profiling transform justice?", "a": "It matches microscopic genetic traces to catch guilty offenders AND clear innocent suspects", "exp": "In its very first murder inquiry, DNA freed an innocent teenager before catching the culprit!" }
+              ]
+          }
+      ]
+  },
 };
 
 export function renderDepartmentMarkingBank(container, unitId, unitData = {}) {

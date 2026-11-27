@@ -40,6 +40,10 @@ import { KS2_ANCIENT_EGYPT_STANDOFFS } from './arena_standoffs/ks2_ancient_egypt
 import { KS2_ANCIENT_GREECE_STANDOFFS } from './arena_standoffs/ks2_ancient_greece.js';
 import { KS2_EARLY_ISLAMIC_BAGHDAD_STANDOFFS } from './arena_standoffs/ks2_early_islamic_baghdad.js';
 import { KS2_MAYA_CIVILISATION_STANDOFFS } from './arena_standoffs/ks2_maya_civilisation.js';
+import { KS2_CRIME_AND_PUNISHMENT_STANDOFFS } from './arena_standoffs/ks2_crime_and_punishment.js';
+import { KS2_KINGDOM_OF_BENIN_STANDOFFS } from './arena_standoffs/ks2_kingdom_of_benin.js';
+import { KS2_VICTORIAN_BRITAIN_STANDOFFS } from './arena_standoffs/ks2_victorian_britain.js';
+import { KS2_LOCAL_HISTORY_DETECTIVE_STANDOFFS } from './arena_standoffs/ks2_local_history_detective.js';
 
 export const ARENA_STANDOFF_REGISTRY = {
   cme_new: CME_NEW_STANDOFFS,
@@ -68,6 +72,10 @@ export const ARENA_STANDOFF_REGISTRY = {
   ks2_ancient_greece: KS2_ANCIENT_GREECE_STANDOFFS,
   ks2_early_islamic_baghdad: KS2_EARLY_ISLAMIC_BAGHDAD_STANDOFFS,
   ks2_maya_civilisation: KS2_MAYA_CIVILISATION_STANDOFFS,
+  ks2_crime_and_punishment: KS2_CRIME_AND_PUNISHMENT_STANDOFFS,
+  ks2_kingdom_of_benin: KS2_KINGDOM_OF_BENIN_STANDOFFS,
+  ks2_victorian_britain: KS2_VICTORIAN_BRITAIN_STANDOFFS,
+  ks2_local_history_detective: KS2_LOCAL_HISTORY_DETECTIVE_STANDOFFS,
 };
 
 /**

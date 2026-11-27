@@ -434,10 +434,14 @@ export function bindEvents() {
       'ks2_stone_to_iron_age',
       'ks2_romans',
       'ks2_anglo_saxons_vikings',
+      'ks2_victorian_britain',
       'ks2_ww2',
+      'ks2_crime_and_punishment',
+      'ks2_local_history_detective',
       'ks2_ancient_egypt',
       'ks2_ancient_greece',
       'ks2_early_islamic_baghdad',
+      'ks2_kingdom_of_benin',
       'ks2_maya_civilisation',
     ]);
 

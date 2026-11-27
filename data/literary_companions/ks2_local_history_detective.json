@@ -1,0 +1,578 @@
+[
+  {
+    "lesson_index": 0,
+    "lesson_id": "lesson_1",
+    "lesson_label": "Enquiry 1",
+    "short_tab_title": "Chains Across the Heath",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Micro-Story",
+    "book_title": "Measuring Britain With Steel Chains: General William Roy on Hounslow Heath (1784)",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical micro-story grounded in Major-General William Roy's Royal Society account of measuring the five-mile Hounslow Heath baseline in summer 1784 (Philosophical Transactions, 1785) and Jesse Ramsden's Great Theodolite (1787), which led to the founding of Britain's Ordnance Survey in 1791.",
+    "author_context": "Before satellites or aeroplanes existed, how on earth did map-makers draw every lane, hill, and stream in Britain to the exact inch? Step onto dusty Hounslow Heath in July 1784 to watch General William Roy measure five miles by hand!",
+    "cover_image": "/units/ks2_local_history_detective/assets/ki_william_roy_ordnance_survey.jpg",
+    "cover_caption": "Jesse Ramsden's three-foot brass Great Theodolite, built for General William Roy's landmark triangulation survey that launched the Ordnance Survey.",
+    "studio_audio": "/audio/reading/ks2_local_history_detective/r0.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Ordnance Survey",
+        "pronunciation": "ORD-nuns SER-vay",
+        "def": "Britain's national map-making agency, founded in 1791 to draw accurate maps of every road, hill, village, and coastline."
+      },
+      {
+        "term": "Baseline",
+        "pronunciation": "BAYS-lyn",
+        "def": "One super-accurate straight line measured along flat ground so map-makers could calculate wider triangle distances across Britain."
+      },
+      {
+        "term": "Theodolite",
+        "pronunciation": "thee-OD-uh-lyt",
+        "def": "A brass telescope mounted on finely marked circles used by surveyors on hilltops to measure exact angles between landmarks."
+      },
+      {
+        "term": "Triangulation",
+        "pronunciation": "try-ang-gyoo-LAY-shun",
+        "def": "Mapping large areas by sighting church spires and hilltops to link giant invisible triangles across the countryside."
+      }
+    ],
+    "extract": "Hot July sun baked Hounslow Heath near London in summer 1784. Soldiers cleared rough gorse bushes in a dead-straight path five miles long. Ahead walked <strong>General William Roy</strong> in his dusty coat, determined to build Britain's most accurate map.\n\nOld maps guessed distances so badly that roads seemed to bend or vanish! Roy knew one tiny mistake at the start would ruin the whole map. First his men tested long pine rods, yet damp morning mist made the wood swell! So Roy switched to hollow glass tubes and a heavy hundred-foot steel chain.\n\nEven King George III rode out across the grass to peer at the brass tools. <em>\"Measure true, gentlemen, down to the last barleycorn!\"</em> Roy urged his sweating crew.\n\nAfter ten slow weeks, their five-mile <em>baseline</em> erred by less than three inches! Next Roy set a giant brass <em>theodolite</em> on high hills to sight church spires. Seven years later, in 1791, Britain founded the <strong>Ordnance Survey</strong>.",
+    "parent_discussion": [
+      {
+        "question": "Why did General William Roy stop using wooden pine rods on Hounslow Heath and switch to glass tubes and steel chains?",
+        "answer": "Damp morning mist made the wooden pine rods swell slightly, which would have spoiled his exact five-mile measurement!"
+      },
+      {
+        "question": "How accurate was William Roy's five-mile baseline after ten weeks of careful hand measuring in 1784?",
+        "answer": "Across more than five miles of rough heathland, his team's measurement was accurate to within less than three inches!"
+      },
+      {
+        "question": "How did sighting tall church spires and hilltops with a brass theodolite help the Ordnance Survey map every town in Britain?",
+        "answer": "Measuring angles between distant church spires let surveyors link giant triangles across the whole country without dragging chains through every river!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Where did General William Roy and his team measure their famous five-mile baseline in summer 1784?",
+        "options": [
+          "Across Hounslow Heath near London",
+          "Along the top of Hadrian's Wall",
+          "Across the Irish Sea in rowboats",
+          "Inside Westminster Abbey"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Flat, open Hounslow Heath gave William Roy a straight five-mile stretch to measure Britain's master baseline."
+      },
+      {
+        "question": "What problem spoiled William Roy's first wooden pine measuring rods?",
+        "options": [
+          "Rabbits chewed them overnight",
+          "Damp morning air made the wood swell and change length",
+          "They sank into hot lava",
+          "Highwaymen stole every rod"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Because damp wood expanded slightly, Roy switched to hollow glass rods and a calibrated steel chain."
+      },
+      {
+        "question": "Which national mapping organisation grew out of William Roy's survey work in 1791?",
+        "options": [
+          "The National Trust",
+          "The Ordnance Survey",
+          "Scotland Yard",
+          "The Royal Mint"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Founded in 1791, the Ordnance Survey went on to map every street, benchmark, and field in Britain."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Why did General William Roy switch from wooden rods to glass tubes on Hounslow Heath in 1784, and what organisation followed in 1791?",
+      "answer": "Damp mist made wooden rods swell, so glass tubes and steel chains kept his five-mile baseline exact and led to the Ordnance Survey in 1791."
+    },
+    "hinge_question": "Why are 1880s Ordnance Survey maps still such goldmines for local history detectives investigating their own street today?",
+    "audio_file": "/audio/reading/ks2_local_history_detective/r0.mp3"
+  },
+  {
+    "lesson_index": 1,
+    "lesson_id": "lesson_2",
+    "lesson_label": "Enquiry 2",
+    "short_tab_title": "Red Paint in the Fog",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Micro-Story",
+    "book_title": "Bumping Into Green Iron! Why Britain's Postboxes Turned Bright Red (1874)",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical micro-story grounded in The Postal Museum archives: surveyor Anthony Trollope's 1851–1852 Channel Islands pillar-box trial, architect John Wornham Penfold's 1866 hexagonal cast-iron design, and the General Post Office's 1874 decision to repaint green boxes bright red.",
+    "author_context": "Next time you pass a cast-iron postbox on a British pavement, check the royal letters on its front! Discover why early Victorian pillar boxes were painted dark green—until smoky London fogs caused a painful problem!",
+    "cover_image": "/units/ks2_local_history_detective/assets/l2_src_a_victorian_vr_pillar_postbox.jpg",
+    "cover_caption": "Victorian hexagonal Penfold cast-iron pillar postbox bearing Queen Victoria's intertwined 'V.R.' royal cypher in bright red paint.",
+    "studio_audio": "/audio/reading/ks2_local_history_detective/r1.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Royal Cypher",
+        "pronunciation": "ROY-ul SY-fer",
+        "def": "The reigning king or queen's official initials cast onto British postboxes, such as V.R. for Queen Victoria or E.IIR for Elizabeth II."
+      },
+      {
+        "term": "Pillar Box",
+        "pronunciation": "PIL-er BOKS",
+        "def": "A freestanding cast-iron roadside postbox introduced across Britain in the 1850s after surveyor Anthony Trollope's trial."
+      },
+      {
+        "term": "Victoria Regina",
+        "pronunciation": "vik-TOR-ee-uh reh-JY-nuh",
+        "def": "Latin for 'Queen Victoria'—shortened to the letters V.R. on postboxes put up between 1852 and 1901."
+      },
+      {
+        "term": "Cast Iron",
+        "pronunciation": "KAST Y-ern",
+        "def": "Strong melted iron poured into sand moulds at Victorian foundries to make lasting postboxes, railings, and street lamps."
+      }
+    ],
+    "extract": "Before the 1850s, posting a letter in Britain could mean walking miles to a coaching inn! Then Post Office official <strong>Anthony Trollope</strong> spotted roadside letter pillars abroad and tested sturdy <em>cast-iron</em> <strong>pillar boxes</strong> in 1852.\n\nSoon iron foundries cast smart six-sided boxes stamped with <strong>V.R.</strong> for <em>Victoria Regina</em>, meaning Queen Victoria. Yet there was one big surprise. Most early Victorian postboxes were painted dark bronze-green so they would blend neatly into leafy parks and stone walls!\n\nDark green worked terribly in winter! Coal smoke from thousands of chimneys wrapped Victorian towns in thick yellow fog. Hurrying shoppers could not spot the gloomy green iron pillars at all. <em>\"Another bruised shin in the fog!\"</em> grumbled angry Londoners in letters to the Post Office.\n\nIn 1874, postal chiefs ordered a bold new coat of bright pillar-box red. Within ten years, glowing red boxes stood out on every misty corner. Many brave <strong>V.R.</strong> boxes still collect letters on British streets today!",
+    "parent_discussion": [
+      {
+        "question": "Why did Victorian officials originally paint Britain's early roadside postboxes dark bronze-green?",
+        "answer": "They hoped dark green iron would blend politely into park trees and quiet stone streets instead of standing out brightly!"
+      },
+      {
+        "question": "What everyday Victorian town problem forced the Post Office to switch to bright red paint in 1874?",
+        "answer": "Thick coal-smoke fog made dark green postboxes hard to find—and pedestrians kept bumping straight into them in the gloom!"
+      },
+      {
+        "question": "Why does spotting 'V.R.' or 'G.R.' on a street postbox give local history detectives an instant clue about a neighbourhood's age?",
+        "answer": "Because postboxes kept the royal cypher of the monarch reigning when they were installed, proving that street existed in Queen Victoria's or King George's reign!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Which Post Office official (also a famous Victorian novelist!) championed Britain's first roadside pillar boxes in 1852?",
+        "options": [
+          "Anthony Trollope",
+          "William the Conqueror",
+          "Sir Robert Peel",
+          "Octavia Hill"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Anthony Trollope trialled cast-iron roadside pillar boxes in Jersey and Guernsey in 1852 before they spread across mainland Britain."
+      },
+      {
+        "question": "What colour were most British pillar postboxes painted before the 1874 switch to bright red?",
+        "options": [
+          "Neon pink",
+          "Dark bronze-green",
+          "Sparkling silver",
+          "Sky blue"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Dark green blended in far too well during smoky Victorian winter fogs."
+      },
+      {
+        "question": "What do the cast-iron letters 'V.R.' stand for on a 19th-century British postbox?",
+        "options": [
+          "Village Road",
+          "Very Rapid",
+          "Victoria Regina (Latin for Queen Victoria)",
+          "Viking River"
+        ],
+        "correctIndex": 2,
+        "feedback": "Well remembered! 'Regina' is Latin for Queen, while 'Rex' (as in G.R. or C.IIIR) is Latin for King!"
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Why did Britain's Post Office paint dark-green postboxes bright red in 1874, and what does 'V.R.' prove on a box today?",
+      "answer": "People could not see dark-green boxes in smoky Victorian fog; 'V.R.' (Victoria Regina) proves the postbox dates from Queen Victoria's reign before 1901."
+    },
+    "hinge_question": "Why did the Post Office keep Queen Victoria's old 'V.R.' postboxes working instead of melting them all down when a new king was crowned?",
+    "audio_file": "/audio/reading/ks2_local_history_detective/r1.mp3"
+  },
+  {
+    "lesson_index": 2,
+    "lesson_id": "lesson_3",
+    "lesson_label": "Enquiry 3",
+    "short_tab_title": "The Snowy School Logbook",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "eyewitness",
+    "source_type_label": "Victorian School Logbook",
+    "book_title": "Snowdrifts, Wet Boots and Harvest Week: From a Parish School Logbook (1876)",
+    "author": "Victorian Village Headteacher (Adapted from County Record Office School Logbooks, 1870s)",
+    "provenance_note": "Adapted into clear Key Stage 2 English from authentic 1870s English elementary School Logbooks kept under the 1862 Revised Code and 1870 Forster Education Act (preserved in UK County Record Offices).",
+    "author_context": "From 1862, every headteacher in Britain had to write a weekly diary called a School Logbook locked in the school desk! Open a dusty leather logbook from 1876 to read why half the class vanished in autumn and winter!",
+    "cover_image": "/units/ks2_local_history_detective/assets/l3_p3_victorian_schoolroom_desks_slates.jpg",
+    "cover_caption": "Preserved Victorian classroom with wooden desks, slate chalkboard, and master's desk where the locked leather School Logbook was kept.",
+    "studio_audio": "/audio/reading/ks2_local_history_detective/r2.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "School Logbook",
+        "pronunciation": "SKOOL LOG-book",
+        "def": "A compulsory handwritten diary kept by every British headteacher from 1862 recording attendance, weather, illness, and inspector visits."
+      },
+      {
+        "term": "Slate",
+        "pronunciation": "SLAYT",
+        "def": "A small framed rectangle of smooth grey rock that Victorian pupils wrote sums and spelling on using a squeaky slate pencil."
+      },
+      {
+        "term": "Gleaning",
+        "pronunciation": "GLEEN-ing",
+        "def": "Gathering leftover ears of wheat from harvested fields so poor country families could grind extra flour for winter bread."
+      },
+      {
+        "term": "Inspector",
+        "pronunciation": "in-SPEK-ter",
+        "def": "A strict government visitor (Her Majesty's Inspector) who tested Victorian classes in reading, writing, and arithmetic once a year."
+      }
+    ],
+    "extract": "From 1862, government rules told every British headteacher to write a weekly <strong>School Logbook</strong>. Each Friday afternoon, the teacher dipped a steel pen in black ink and locked the book safe inside the desk. Today those leather books survive in county archives, packed with true clues about local children!\n\n<em>\"September 18th, 1876. Attendance very low all week. Thirty-four older boys and girls are out <strong>gleaning</strong> corn or picking potatoes in the muddy fields. Families need every penny before winter sets in.\n\nNovember 10th, 1876. Two brothers from Mill Cottage arrived barefoot in pouring rain. Their mother sent word that one pair of leather boots must be shared between three children!\n\nJanuary 19th, 1877. Deep snowdrifts blocked the high lane above the brook. Only nineteen brave pupils reached school today! We pulled the benches round the coal stove to dry wet coats. Then Standard Three practised neat sums on grey <strong>slates</strong> before the <strong>Inspector</strong> visits.\"</em>",
+    "parent_discussion": [
+      {
+        "question": "Why were thirty-four older children missing from school during the September 1876 logbook entry?",
+        "answer": "They were working in local fields gleaning leftover corn and picking potatoes to help their families afford food and winter rent!"
+      },
+      {
+        "question": "What tiny detail in the November entry proves how poor some Victorian village families were?",
+        "answer": "Three children in Mill Cottage had to take turns sharing one single pair of leather boots!"
+      },
+      {
+        "question": "Why is a headteacher's handwritten School Logbook more trustworthy than a made-up story about Victorian school life?",
+        "answer": "Because the headteacher wrote it in real time every Friday for official inspectors, recording true weather, illnesses, and attendance numbers!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "From which year did British government rules require state-funded schools to keep a handwritten School Logbook?",
+        "options": [
+          "AD 43",
+          "1086",
+          "1862",
+          "1999"
+        ],
+        "correctIndex": 2,
+        "feedback": "Spot on! Introduced in 1862, Victorian and Edwardian School Logbooks survive in County Record Offices all across Britain."
+      },
+      {
+        "question": "What did Victorian pupils write their everyday sums on before cheap paper exercise books became common?",
+        "options": [
+          "Touchscreen tablets",
+          "Framed rectangles of smooth grey slate",
+          "Thin sheets of Roman lead",
+          "Carved stone milestones"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Slate boards could be wiped clean with a damp cloth and reused hundreds of times."
+      },
+      {
+        "question": "Where can local history detectives inspect real Victorian School Logbooks and parish registers today?",
+        "options": [
+          "At their local County Record Office or town archive",
+          "Only on the Moon",
+          "Inside red pillar postboxes",
+          "Underneath canal locks"
+        ],
+        "correctIndex": 0,
+        "feedback": "Well remembered! Every county in Britain has a free public archive preserving local school logbooks, maps, and registers."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Give two real reasons recorded in Victorian School Logbooks that kept country children away from lessons in the 1870s.",
+      "answer": "Helping families harvest potatoes or glean corn in autumn, deep winter snowdrifts blocking lanes, illness, or lacking sturdy boots."
+    },
+    "hinge_question": "Why did British schools originally place their long summer holiday in late July and August?",
+    "audio_file": "/audio/reading/ks2_local_history_detective/r2.mp3"
+  },
+  {
+    "lesson_index": 3,
+    "lesson_id": "lesson_4",
+    "lesson_label": "Enquiry 4",
+    "short_tab_title": "Adlestrop Station",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "verse",
+    "source_type_label": "Classic English Poem (1914)",
+    "book_title": "Adlestrop (A Quiet Country Railway Station in June 1914)",
+    "author": "Edward Thomas (Written 1915, Published 1917, Public Domain)",
+    "provenance_note": "Public-domain English poem 'Adlestrop' by Edward Thomas (1878–1917), inspired by an unscheduled express-train stop at Adlestrop station on the Cotswold line on 24 June 1914, six weeks before the First World War.",
+    "author_context": "Victorian railways linked almost every British market town and village—until thousands of small country stations closed in the 1960s! Read poet Edward Thomas's famous memory of a summer train pausing beside a painted station nameboard in June 1914!",
+    "cover_image": "/units/ks2_local_history_detective/assets/l4_p3_preserved_british_steam_station.jpg",
+    "cover_caption": "Preserved British country steam railway station and stone bridge — like quiet Adlestrop station where Edward Thomas's train paused in June 1914.",
+    "studio_audio": "/audio/reading/ks2_local_history_detective/r3.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Express-Train",
+        "pronunciation": "ek-SPRES TRAYN",
+        "def": "A fast steam passenger train connecting big cities that normally sped straight past tiny village stations without stopping."
+      },
+      {
+        "term": "Unwontedly",
+        "pronunciation": "un-WOHN-tid-lee",
+        "def": "Unexpectedly or unusually—because fast express trains almost never halted at quiet little Adlestrop!"
+      },
+      {
+        "term": "Haycocks",
+        "pronunciation": "HAY-koks",
+        "def": "Tall cone-shaped stacks of sweet-smelling dry summer hay piled up by farmworkers in June meadows."
+      },
+      {
+        "term": "Branch Line",
+        "pronunciation": "BRANCH LYN",
+        "def": "A smaller local railway line linking country villages and market towns to Britain's main city railway network."
+      }
+    ],
+    "extract": "On 24 June 1914, poet <strong>Edward Thomas</strong> rode a fast steam <em>express-train</em> from London through the sunny Cotswolds. Suddenly the engine slowed and hissed to a stop at a tiny country station. Six weeks later, war broke out across Europe. Writing in his notebook, Thomas remembered that peaceful station sign forever.\n\n<div class=\"reading-stanza\">Yes. I remember Adlestrop—<br>The name, because one afternoon<br>Of heat the express-train drew up there<br><em>Unwontedly</em>. It was late June.</div>\n\n<div class=\"reading-stanza\">The steam hissed. Someone cleared his throat.<br>No one left and no one came<br>On the bare platform. What I saw<br>Was Adlestrop—only the name.</div>\n\n<div class=\"reading-stanza\">And willows, willow-herb, and grass,<br>And meadowsweet, and <em>haycocks</em> dry.<br>No whit less still and lonely fair<br>Than the high cloudlets in the sky.</div>\n\n<div class=\"reading-stanza\">And for that minute a blackbird sang.<br>Close by, and round him, mistier,<br>Farther and farther, sang the birds<br>Of Oxfordshire and Gloucestershire.</div>\n\nWhen Adlestrop's <em>branch-line</em> station shut in 1966, proud villagers saved its wooden sign!",
+    "parent_discussion": [
+      {
+        "question": "Once the noisy steam locomotive stopped hissing at Adlestrop station, what tiny sounds could Edward Thomas suddenly hear?",
+        "answer": "Someone clearing his throat in the carriage, and then a blackbird singing alongside birds across Oxfordshire and Gloucestershire!"
+      },
+      {
+        "question": "Why was Edward Thomas only able to see 'Adlestrop—only the name' from his carriage window?",
+        "answer": "Many country railway stations stood half a mile outside the old village, so passengers saw only the painted wooden station nameboard and green meadows!"
+      },
+      {
+        "question": "What happened when Adlestrop's branch-line station shut in 1966, and how can detectives spot closed railway lines today?",
+        "answer": "When Adlestrop station shut in 1966, proud villagers saved its wooden sign—and today we can also spot 'Station Road' signs, old brick bridges, and straight cycle paths!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "In which summer month of 1914 did Edward Thomas's express train make its unexpected stop at Adlestrop?",
+        "options": [
+          "Freezing January",
+          "Late June",
+          "Foggy November",
+          "Snowy December"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! On 24 June 1914—just weeks before the First World War began—his train paused in the quiet summer heat."
+      },
+      {
+        "question": "How many passengers got on or off the train on Adlestrop's bare platform in the poem?",
+        "options": [
+          "Five hundred holidaymakers",
+          "No one left and no one came",
+          "Twelve soldiers and a horse",
+          "Twenty school inspectors"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! That stillness made the painted station nameboard and singing blackbird unforgettable."
+      },
+      {
+        "question": "What happened to Adlestrop's painted station sign after the country station closed to trains in 1966?",
+        "options": [
+          "Local residents rescued the sign and placed it in the village bus shelter with Edward Thomas's poem",
+          "It was launched into space",
+          "Romans buried it at Bath",
+          "It was painted bronze-green"
+        ],
+        "correctIndex": 0,
+        "feedback": "Well remembered! Saving local signs and stories is a wonderful example of community heritage conservation."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What clues in a British town today—and in Edward Thomas's poem 'Adlestrop'—reveal where Victorian country railways once ran?",
+      "answer": "Preserved station nameboards, 'Station Road' street signs, old brick embankments or bridges, and railway tracks marked on 19th-century OS maps."
+    },
+    "hinge_question": "Why does reading 'Adlestrop' feel even more moving when you learn Edward Thomas died in France in 1917 during the First World War?",
+    "audio_file": "/audio/reading/ks2_local_history_detective/r3.mp3"
+  },
+  {
+    "lesson_index": 4,
+    "lesson_id": "lesson_5",
+    "lesson_label": "Enquiry 5",
+    "short_tab_title": "Equal White Headstones",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Micro-Story",
+    "book_title": "Equal in Sacrifice: Sir Fabian Ware and the White Portland Headstones (1917)",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical micro-story grounded in Commonwealth War Graves Commission (CWGC) archives: Major-General Sir Fabian Ware's Red Cross Mobile Grave Registration Unit (1914–1915), the May 1917 Royal Charter, and King George V's May 1922 speech at Terlincthun and Tyne Cot.",
+    "author_context": "Almost every village green, church wall, and town square in Britain has a War Memorial carved with local surnames! Discover how Fabian Ware made sure every fallen soldier—rich general or poor teenage private—received the exact same white stone headstone!",
+    "cover_image": "/units/ks2_local_history_detective/assets/ki_fabian_ware_cwgc.jpg",
+    "cover_caption": "Sir Fabian Ware (left, holding cemetery notes) guiding King George V beside a wooden grave cross at Tyne Cot in May 1922.",
+    "studio_audio": "/audio/reading/ks2_local_history_detective/r4.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "War Memorial",
+        "pronunciation": "WOR muh-MOR-ee-ul",
+        "def": "A local stone cross, statue, or wall tablet built after 1918 so communities could honour neighbours who died in war."
+      },
+      {
+        "term": "Portland Stone",
+        "pronunciation": "PORT-lund STOHN",
+        "def": "Pale, weather-resistant British limestone from Dorset used for uniform Commonwealth War Graves headstones and London's Cenotaph."
+      },
+      {
+        "term": "Regiment",
+        "pronunciation": "REJ-ih-munt",
+        "def": "An army unit often recruited from one county or city—like the Manchester Regiment—whose badge is carved on CWGC headstones."
+      },
+      {
+        "term": "Commonwealth",
+        "pronunciation": "KOM-un-welth",
+        "def": "Britain and partner nations worldwide whose fallen service personnel are cared for equally by the Commonwealth War Graves Commission."
+      }
+    ],
+    "extract": "In autumn 1914, <strong>Fabian Ware</strong> drove a Red Cross van along muddy lanes in France. Everywhere he spotted small wooden crosses marking soldiers' graves. Heavy rain was already washing the pencilled names away!\n\nWare hated the thought that grieving mums and dads back in Britain might lose those graves forever. So his team took photos of every cross. They wrote down each soldier's name, date, and <em>regiment</em> in neat books.\n\nIn 1917, Ware started the War Graves Commission with one fair rule. Rich families could not buy huge marble statues while poor boys had bare grass! Whether a soldier was a rich general or a young baker's lad, each hero received the same white <strong>Portland stone</strong> headstone.\n\nIn May 1922, Ware walked with King George V at Tyne Cot. <em>\"In death, rich and poor stand side by side as equals!\"</em> said the King. Today pupils can trace any local <strong>War Memorial</strong> name in those free books.",
+    "parent_discussion": [
+      {
+        "question": "What urgent problem did Fabian Ware spot on muddy battlefields in 1914 while driving his Red Cross ambulance?",
+        "answer": "Rain and shellfire were destroying fragile wooden grave crosses and washing away the pencilled names of fallen soldiers!"
+      },
+      {
+        "question": "Why was Fabian Ware's 1917 rule about identical white Portland stone headstones so fair and historic?",
+        "answer": "In earlier wars only rich officers got grand stone monuments, whereas CWGC gave generals and poor teenage privates the exact same dignified headstone!"
+      },
+      {
+        "question": "Why did British towns and villages still build local War Memorials on their own greens when graves lay overseas?",
+        "answer": "Because most families could not afford travel abroad in the 1920s, so a local memorial gave neighbours a place at home to lay poppies and remember!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What job was Fabian Ware doing in France in 1914 when he began recording soldiers' graves?",
+        "options": [
+          "Commanding a Red Cross mobile ambulance unit",
+          "Drawing medieval parish maps",
+          "Painting London postboxes red",
+          "Building canal locks"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Aged forty-five, Fabian Ware volunteered with the British Red Cross and began registering every grave his unit found."
+      },
+      {
+        "question": "Which pale British stone was chosen for uniform Commonwealth War Graves headstones?",
+        "options": [
+          "Dorset Portland limestone",
+          "Soft grey Roman lead",
+          "Red Victorian brick",
+          "Cornish tin"
+        ],
+        "correctIndex": 0,
+        "feedback": "Exactly right! White Portland stone was chosen for both local CWGC headstones and Whitehall's Cenotaph."
+      },
+      {
+        "question": "How did Commonwealth War Graves cemeteries treat a high-ranking general compared with an ordinary private soldier?",
+        "options": [
+          "Generals received castles ten metres tall",
+          "Privates had no headstones at all",
+          "Both received the exact same size and shape of white headstone",
+          "Only sailors had their names carved"
+        ],
+        "correctIndex": 2,
+        "feedback": "Well remembered! Equal honour regardless of military rank, wealth, or background remains the Commission's proudest principle."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How did Sir Fabian Ware protect soldiers' names from vanishing after 1914, and why are all CWGC headstones the same size?",
+      "answer": "His Red Cross unit recorded temporary wooden crosses and founded the War Graves Commission in 1917 so rich officers and poor privates shared equal headstones."
+    },
+    "hinge_question": "Why do you often spot two or three men with the exact same surname carved side by side on a small village War Memorial?",
+    "audio_file": "/audio/reading/ks2_local_history_detective/r4.mp3"
+  },
+  {
+    "lesson_index": 5,
+    "lesson_id": "lesson_6",
+    "lesson_label": "Enquiry 6",
+    "short_tab_title": "Octavia Hill's Green Trust",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "adapted_primary",
+    "source_type": "eyewitness",
+    "source_type_label": "Conservation Pioneer Voice",
+    "book_title": "Open-Air Sitting Rooms for Everyone! Octavia Hill Co-Founds the National Trust (1895)",
+    "author": "Octavia Hill (Adapted from 'Our Common Land', 1877, & 1895 National Trust Appeal, Public Domain)",
+    "provenance_note": "Adapted into accessible Key Stage 2 English from social reformer Octavia Hill's public-domain essays 'Space for the People' and 'Our Common Land' (1877) and her January 1895 founding appeal for the National Trust with Sir Robert Hunter and Canon Hardwicke Rawnsley.",
+    "author_context": "As smoky factories and brick suburbs swallowed Victorian fields and knocked down ancient cottages, Octavia Hill stood up for ordinary town families! Hear her passionate plea that launched the National Trust in 1895!",
+    "cover_image": "/units/ks2_local_history_detective/assets/ki_octavia_hill_national_trust.jpg",
+    "cover_caption": "Edward Clifford's 1877 portrait of Octavia Hill (1838–1912), housing reformer and co-founder of the National Trust.",
+    "studio_audio": "/audio/reading/ks2_local_history_detective/r5.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "National Trust",
+        "pronunciation": "NASH-nul TRUST",
+        "def": "The conservation charity co-founded in 1895 by Octavia Hill to protect historic buildings, coastlines, and green countryside forever."
+      },
+      {
+        "term": "Heritage",
+        "pronunciation": "HER-ih-tij",
+        "def": "Historic buildings, memories, green spaces, and traditions passed down from earlier generations for communities today to care for."
+      },
+      {
+        "term": "Blue Plaque",
+        "pronunciation": "BLOO PLAK",
+        "def": "A round ceramic street marker fixed to a building wall to celebrate a notable person or event connected with that spot."
+      },
+      {
+        "term": "Conservation",
+        "pronunciation": "kon-ser-VAY-shun",
+        "def": "Carefully repairing and protecting historic places and wildlife habitats so future children can still enjoy them."
+      }
+    ],
+    "extract": "In the 1870s, <strong>Octavia Hill</strong> worked in crowded London courts. Children played in smoky alleys without one green leaf in sight! Meanwhile, builders fenced off green hills and tore down old halls. Listen to her clear plea to save local <em>heritage</em> for poor families.\n\n<em>\"Every town family needs two homes! First they need a clean, dry room with fresh water and kind neighbours. Yet growing children also need what I call an open-air sitting room!\n\nThink of breezy hilltops, quiet footpaths, and bluebell woods near our towns. Think too of the timber halls and stone bridges built by skilled hands long ago! Once an old house is smashed down, or a green common is fenced off, it is gone forever.\n\nSo Robert Hunter, Hardwicke Rawnsley, and I are starting a new trust in 1895. Together our <strong>National Trust</strong> will guard historic houses, wild coasts, and green fields safe for everyone, forever!\"</em>",
+    "parent_discussion": [
+      {
+        "question": "What did Octavia Hill mean by her famous phrase 'an open-air sitting room' for town families?",
+        "answer": "Parks, green commons, footpaths, and hills where families living in tiny crowded flats could breathe fresh air and see nature for free!"
+      },
+      {
+        "question": "Why did Octavia Hill argue that saving historic buildings and green spaces could not wait until later?",
+        "answer": "Because once an ancient timber hall is demolished or green open land is built over, that piece of local history is lost forever!"
+      },
+      {
+        "question": "Which two buildings or places in your own local area would YOUR family give a Blue Plaque or protect for children a hundred years from now?",
+        "answer": "Open family discussion—connecting Octavia Hill's 1895 conservation mission directly to landmarks on your own doorstep!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "In which year did Octavia Hill, Sir Robert Hunter, and Canon Hardwicke Rawnsley co-found the National Trust?",
+        "options": [
+          "1086",
+          "1666",
+          "1895",
+          "1971"
+        ],
+        "correctIndex": 2,
+        "feedback": "Spot on! Founded in January 1895, the National Trust now cares for hundreds of historic houses, mills, castles, and coastlines."
+      },
+      {
+        "question": "What two kinds of places did Octavia Hill set up the National Trust to protect forever?",
+        "options": [
+          "Historic buildings AND green countryside or coastlines",
+          "Motorways and airport car parks",
+          "Roman amphitheatres in Italy",
+          "Underground gold mines"
+        ],
+        "correctIndex": 0,
+        "feedback": "Exactly right! From day one, Octavia Hill linked human local history (old buildings) with natural beauty (green open spaces)."
+      },
+      {
+        "question": "How is Octavia Hill herself honoured on brick walls in London where she began her housing and heritage work?",
+        "options": [
+          "With round ceramic Blue Plaques",
+          "With a Viking runestone",
+          "With a Roman lead curse tablet",
+          "With a canal lock gate"
+        ],
+        "correctIndex": 0,
+        "feedback": "Well remembered! You will inspect Octavia Hill's real English Heritage Blue Plaque in Enquiry 6!"
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What did Octavia Hill mean by 'open-air sitting rooms', and what charity did she co-found in 1895 to protect heritage?",
+      "answer": "Free green parks, hills, and footpaths for crowded town families; in 1895 she co-founded the National Trust to save historic places and countryside."
+    },
+    "hinge_question": "Why is recording older neighbours' spoken memories ('oral history') just as vital as saving brick buildings and Blue Plaques?",
+    "audio_file": "/audio/reading/ks2_local_history_detective/r5.mp3"
+  }
+]

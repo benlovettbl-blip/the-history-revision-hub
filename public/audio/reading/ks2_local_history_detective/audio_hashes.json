@@ -1,0 +1,53 @@
+{
+  "unitId": "ks2_local_history_detective",
+  "clips": {
+    "r4": {
+      "hash": "38b80ae7b828a50e5f4915ac",
+      "bytes": 294572,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 156,
+      "updatedAt": "2026-11-27T14:35:20.749Z"
+    },
+    "r5": {
+      "hash": "0b89c2a607f92c013748dc07",
+      "bytes": 294188,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 151,
+      "updatedAt": "2026-11-27T14:35:21.984Z"
+    },
+    "r2": {
+      "hash": "90ef6fa2223ee4d4b1f18de0",
+      "bytes": 289964,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 155,
+      "updatedAt": "2026-11-27T14:35:27.745Z"
+    },
+    "r3": {
+      "hash": "1ec29c5e0b77c66644ebacaf",
+      "bytes": 340652,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 161,
+      "updatedAt": "2026-11-27T14:35:29.131Z"
+    },
+    "r0": {
+      "hash": "59f319dbde1cb8ec140312da",
+      "bytes": 315788,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 159,
+      "updatedAt": "2026-11-27T14:35:30.804Z"
+    },
+    "r1": {
+      "hash": "16c44d848b6eb3143759d8ae",
+      "bytes": 306956,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 159,
+      "updatedAt": "2026-11-27T14:35:32.018Z"
+    }
+  }
+}

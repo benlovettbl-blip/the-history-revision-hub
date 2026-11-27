@@ -1442,17 +1442,6 @@ export default {
           "model_answer": "Recall: Elizabeth I granted a monopoly charter giving 218 merchants exclusive rights to trade east of the Cape of Good Hope.\nExplain: Trade profits financed the recruitment, European drill training, and modern arming of native Indian sepoys led by British officers, creating an army of over 200,000 troops to secure corporate interests.\nChallenge: Following Robert Clive's victory at Plassey through bribing Mir Jafar, the 1765 Treaty of Allahabad granted the Diwani—tax collection rights over 20 million Bengalis. The Company shifted from purchasing goods with silver bullion to extracting local taxes to fund its own commercial exports."
         },
         {
-          "id": "5iIIaoJ9qKU",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=5iIIaoJ9qKU",
-          "title": "Mangal Pandey: The Rising (2005) | Official Trailer",
-          "duration": "2 mins 41 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:20 | Lesson Phase: Visual & Cultural Impact | Tone Alert: High-impact Bollywood historical dramatisation depicting East India Company rule and military tension.",
-          "viewing_task": "[01:30] Cinematic Discussion Focus: How does this dramatisation depict the visual divide between East India Company officers and native Indian sepoys? How does cinematic framing highlight the friction between corporate commercial profit and local cultural traditions?",
-          "model_answer": "Cinematic Discussion Focus: The film contrasts opulent British regimental uniforms, parade drill, and colonial banquets with the traditional lives, sacred customs, and simmering grievances of sepoy soldiers, visually communicating how corporate subjugation provoked violent anti-colonial resistance."
-        },
-        {
           "id": "1VIe42pAhuA",
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=1VIe42pAhuA",
@@ -3497,28 +3486,6 @@ export default {
           "model_answer": "Recall: Outward leg (manufactured goods from Britain to Africa); Middle Passage (captive Africans transported to the Americas); Homeward leg (raw sugar, tobacco, and rum shipped back to Britain).\nExplain: European merchants traded firearms and luxury manufactured goods with coastal African leaders in exchange for war captives, creating an escalating cycle where inland states required firearms to defend themselves from slaving raids.\nChallenge: Chattel slavery legally stripped humans of personhood, declaring them commercial commodities ('goods and chattels') who could be bought, mortgaged, insured, and inherited across generations."
         },
         {
-          "id": "lQ6xbhXa0ag",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=lQ6xbhXa0ag",
-          "title": "Belle (2013) | Official Trailer (Zong Massacre & Lord Mansfield)",
-          "duration": "2 mins 31 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:31 | Lesson Phase: Legal & Human Drama | Tone Alert: Acclaimed biographical drama exploring Dido Elizabeth Belle and the landmark Zong massacre court case.",
-          "viewing_task": "[01:45] Cinematic Discussion Focus: How does the film portray the conflict in Lord Mansfield's household between aristocratic British law and the brutal commercial reality of the Zong massacre?",
-          "model_answer": "Cinematic Discussion Focus: The film dramatises the clash between refined English high society and the barbaric reality of the slave trade: Lord Chief Justice Mansfield must decide whether 133 enslaved Africans thrown overboard alive can legally be compensated as 'jettisoned cargo' under commercial insurance law, exposing the profound moral hypocrisy of the British legal establishment."
-        },
-        {
-          "id": "Q6Cv5P9H9qU",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Q6Cv5P9H9qU",
-          "title": "Amazing Grace (2006) | Official Movie Trailer",
-          "duration": "2 mins 31 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Parliamentary Abolitionism | Tone Alert: Dramatises William Wilberforce, Thomas Clarkson, and Olaudah Equiano's campaign to abolish the slave trade.",
-          "viewing_task": "[01:00] Recall: What tactics did abolitionists like Thomas Clarkson and Olaudah Equiano deploy to persuade the British public?\n[01:50] Explain: Why did powerful mercantile interests in Bristol and Liverpool fiercely resist abolition for decades?\n[02:20] Challenge: How did first-hand evidence—such as the Brookes ship diagram and Equiano's autobiography—turn public opinion against the trade?",
-          "model_answer": "Recall: They published empirical witness accounts, displayed physical instruments of torture (shackles, thumbscrews), produced the Brookes ship diagram, and organised nationwide consumer boycotts of slave-grown sugar.\nExplain: Wealthy merchant lobbies, West Indian plantation owners, and City of London financiers held immense parliamentary influence and argued that ending the trade would destroy Britain's naval supremacy and commercial wealth.\nChallenge: By presenting incontrovertible forensic evidence directly to middle-class citizens and working people, abolitionists transformed an abstract overseas economic system into an urgent, inescapable moral crisis that Parliament could no longer dismiss."
-        },
-        {
           "type": "era",
           "url": "https://era.org.uk/streaming-service-resource/1-the-atlantic-slave-trade-history-file/",
           "title": "BBC Two / ERA: History File – Black Peoples of the Americas, Ep. 1: The Atlantic Slave Trade",
@@ -5488,17 +5455,6 @@ export default {
           "model_answer": "Recall: Nanny Town was a fortified village 2,000 feet up in the Blue Mountains, accessible only by a razor-thin mountain ridge that Maroons defended with boulders and snipers.\nExplain: Maroons retained West African Akan spiritual practices (Obeah), herbal medicine, communal land farming, and decentralized council governance, resisting colonial assimilation.\nChallenge: In exchange for full sovereign autonomy and 1,500 acres of land, the treaty required Maroons to capture and return newly escaped runaway enslaved people to colonial authorities and help put down internal slave rebellions, dividing Black resistance across Jamaica."
         },
         {
-          "id": "airEw5tG9eo",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=airEw5tG9eo",
-          "title": "Roots (2016) | Official Series Trailer (Plantation Life & Resistance)",
-          "duration": "2 mins 03 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:03 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Hard-hitting dramatisation of plantation labour, punishment, and the unyielding human struggle for identity.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the cinematography emphasize the brutal physical regimentation of plantation agriculture? How do small acts of cultural preservation function as resistance?",
-          "model_answer": "Cinematic Discussion Focus: The trailer contrasts endless rows of crops and oppressive overseer surveillance with intimate moments of spiritual resistance, oral storytelling, and clandestine rebellion, showing that keeping one's true name and heritage was a profound act of defiance against chattel slavery."
-        },
-        {
           "id": "5Cc4LaSRiSc",
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=5Cc4LaSRiSc",
@@ -7388,17 +7344,6 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:15–03:30 | Lesson Phase: Causal Escalation | Tone Alert: Engaging historical analysis of British imperial taxation and colonial resistance.",
           "viewing_task": "[00:50] Recall: What was the Proclamation Line of 1763, and why did it infuriate American colonists?\n[02:00] Explain: How did the Stamp Act (1765) and Townshend Acts unite disparate American colonies against London?\n[03:10] Challenge: In what ways was the Boston Tea Party a carefully orchestrated act of political civil disobedience rather than a drunken riot?",
           "model_answer": "Recall: King George III banned colonial settlement west of the Appalachian Mountains to prevent costly frontier wars with Native American nations.\nExplain: By levying direct duties on everyday paper items, glass, and tea without colonial parliamentary representation, London created a shared constitutional grievance that bridged rivalries between northern merchants and southern planters.\nChallenge: The Sons of Liberty operated with military precision: they damaged no property other than the tea, harmed no crew members, swept the decks clean afterward, and even replaced a broken padlock on one of the ships."
-        },
-        {
-          "id": "R_C_dPHEWN0",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=R_C_dPHEWN0",
-          "title": "The Patriot (2000) | Official Movie Trailer",
-          "duration": "2 mins 40 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:35 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Hollywood blockbuster dramatisation starring Mel Gibson and Heath Ledger.",
-          "viewing_task": "[01:30] Cinematic Discussion Focus: How does Hollywood depict the clash between rigid British redcoat military discipline and American colonial militia tactics? Does the film romanticize or oversimplify colonial motivations?",
-          "model_answer": "Cinematic Discussion Focus: The film contrasts the orderly, mechanical lines of the British army with the agile, woodland guerrilla tactics of colonial irregulars. However, it oversimplifies history by depicting the colonists as united freedom fighters while almost completely erasing the complex reality of slave-owning planters and Native American alliances with the British Crown."
         },
         {
           "id": "CHRPY1aBPug",
@@ -9296,17 +9241,6 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:20–05:10 | Lesson Phase: Deep Forensic Enquiry | Tone Alert: Rigorous historical investigation into Lord Dunmore's Proclamation and the Book of Negroes.",
           "viewing_task": "[01:15] Recall: What offer did Lord Dunmore make to enslaved people in November 1775?\n[02:50] Explain: How did Black Loyalist regiments like the Ethiopian Regiment fight for the British Crown in exchange for liberty?\n[04:30] Challenge: What was the 'Book of Negroes', and how did it protect 3,000 Black Loyalists during the British evacuation of New York in 1783?",
           "model_answer": "Recall: Dunmore promised immediate freedom to any enslaved person owned by rebel colonists who escaped and joined the King's armed forces.\nExplain: Wearing uniforms emblazoned with 'Liberty to Slaves', hundreds of escapees served as scouts, infantrymen, and river pilots, fighting not out of loyalty to Britain, but for their own liberation.\nChallenge: General Guy Carleton refused George Washington's demands to return escaped enslaved people as property; British naval officers recorded names, physical descriptions, and escape details in a ledger called the Book of Negroes, granting them certificates of freedom to evacuate to Nova Scotia."
-        },
-        {
-          "id": "QNHG_3-Zad8",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=QNHG_3-Zad8",
-          "title": "The Book of Negroes (2015) | Official Trailer (BET / CBC)",
-          "duration": "1 min 00 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–01:00 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Award-winning historical miniseries starring Aunjanue Ellis and Cuba Gooding Jr.",
-          "viewing_task": "[00:30] Cinematic Discussion Focus: How does the dramatisation depict Aminata Diallo's role in recording the names and stories of Black Loyalists escaping to Nova Scotia? Why is the act of official documentation so powerful?",
-          "model_answer": "Cinematic Discussion Focus: The trailer dramatises how an official ledger and written freedom certificate transformed vulnerable human beings from hunted 'fugitive property' into legally recognised free British subjects, demonstrating how literacy and documentation became tools of liberation."
         },
         {
           "type": "youtube",

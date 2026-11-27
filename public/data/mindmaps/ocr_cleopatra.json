@@ -1,0 +1,480 @@
+{
+  "unitId": "ocr_cleopatra",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "J198/02 Sec C",
+  "paperType": "OCR J198/02C",
+  "paperLabel": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+  "courseTitle": "Cleopatra: Rome and Egypt, 69–30 BC",
+  "examDateBoundary": "69–30 BC",
+  "disclaimer": "Aligned to Cambridge OCR GCSE (9–1) Ancient History (J198). Independent educational resource by The History Revision Hub — not endorsed by OCR.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Cleopatra",
+    "subLabel": "OCR J198/02 Sec C",
+    "dateChip": "69–30 BC",
+    "gloss": "Cleopatra: Rome and Egypt, 69–30 BC (OCR Paper 2 · Section C (Roman Depth Study · Set Sources)).",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#d97706",
+        "label": "KT1: Ptolemaic Egypt, Upbringing & Julius Ca",
+        "dateChip": "KT 1",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "gloss": "Key Topic 1: Ptolemaic Egypt, Upbringing & Julius Caesar (69–47 BC)",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1.1",
+            "tier": 2,
+            "label": "1.1 Family, Education, Character and Roman Clientage",
+            "dateChip": "1.1",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "gloss": "Cleopatra's family and Macedonian heritage; her likely education and upbringing; her character as depicted in the sources, including her charm, her humour, and her courage • Rome's relationship with client states and attitude to foreigners; the importance of Egypt for Rome economically and politically; overview of Rome's involvement with Egypt in the 60s and 50s BC",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Cleopatra's family and Macedonian heritage; her l…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Cleopatra's family and Macedonian heritage; her likely education and upbringing; her character as depicted in the sources, including her charm, her humour, and her courage",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Cleopatra's family and Macedonian heritage; her likely education and upbringing; her character as depicted in the sources, including her charm, her humour, and her courage",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Cleopatra's family and Macedonian heritage; her likely education and upbringing; her character as depicted in the sources, including her charm, her humour, and her courage"
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Rome's relationship with client states and attitu…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "gloss": "Rome's relationship with client states and attitude to foreigners; the importance of Egypt for Rome economically and politically; overview of Rome's involvement with Egypt in the 60s and 50s BC",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Rome's relationship with client states and attitude to foreigners; the importance of Egypt for Rome economically and politically; overview of Rome's involvement with Egypt in the 60s and 50s BC",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Rome's relationship with client states and attitude to foreigners; the importance of Egypt for Rome economically and politically; overview of Rome's involvement with Egypt in the 60s and 50s BC"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "1.2",
+            "tier": 2,
+            "label": "1.2 Accession, Civil War with Ptolemy XIII and Sibling Rivalry",
+            "dateChip": "1.2",
+            "lessonIndex": 0,
+            "stageIndex": 1,
+            "gloss": "The death of Ptolemy XII and Cleopatra's first years as queen; civil war between Cleopatra and Ptolemy XIII; Cleopatra's relationship with her brothers and Arsinoe",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "The death of Ptolemy XII and Cleopatra's first ye…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The death of Ptolemy XII and Cleopatra's first years as queen; civil war between Cleopatra and Ptolemy XIII; Cleopatra's relationship with her brothers and Arsinoe",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The death of Ptolemy XII and Cleopatra's first years as queen; civil war between Cleopatra and Ptolemy XIII; Cleopatra's relationship with her brothers and Arsinoe",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The death of Ptolemy XII and Cleopatra's first years as queen; civil war between Cleopatra and Ptolemy XIII; Cleopatra's relationship with her brothers and Arsinoe"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_3",
+            "code": "1.3",
+            "tier": 2,
+            "label": "1.3 Meeting Caesar, Alexandrian War and Birth of Caesarion",
+            "dateChip": "1.3",
+            "lessonIndex": 0,
+            "stageIndex": 2,
+            "gloss": "Cleopatra's initial meeting with Caesar and his decision to support her; Cleopatra's personal and political relationship with Caesar and its impact on both Rome and Egypt; the birth of Caesarion",
+            "children": [
+              {
+                "id": "kt1_3_s1",
+                "tier": 3,
+                "label": "Cleopatra's initial meeting with Caesar and his d…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Cleopatra's initial meeting with Caesar and his decision to support her; Cleopatra's personal and political relationship with Caesar and its impact on both Rome and Egypt; the birth of Caesarion",
+                "children": [
+                  {
+                    "id": "kt1_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Cleopatra's initial meeting with Caesar and his decision to support her; Cleopatra's personal and political relationship with Caesar and its impact on both Rome and Egypt; the birth of Caesarion",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Cleopatra's initial meeting with Caesar and his decision to support her; Cleopatra's personal and political relationship with Caesar and its impact on both Rome and Egypt; the birth of Caesarion"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "right",
+        "color": "#dc2626",
+        "label": "KT2: Queen of Egypt, Isis Persona & Receptio",
+        "dateChip": "KT 2",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "gloss": "Key Topic 2: Queen of Egypt, Isis Persona & Reception in Rome (47–44 BC)",
+        "children": [
+          {
+            "id": "kt2_1",
+            "code": "2.1",
+            "tier": 2,
+            "label": "2.1 Graeco-Egyptian Persona, Isis Promotion and Archaeology",
+            "dateChip": "2.1",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "gloss": "Her Graeco-Egyptian public persona and representation in the archaeological sources; the promotion of Isis as her patron goddess and the rationale for this",
+            "children": [
+              {
+                "id": "kt2_1_s1",
+                "tier": 3,
+                "label": "Her Graeco-Egyptian public persona and representa…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Her Graeco-Egyptian public persona and representation in the archaeological sources; the promotion of Isis as her patron goddess and the rationale for this",
+                "children": [
+                  {
+                    "id": "kt2_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Her Graeco-Egyptian public persona and representation in the archaeological sources; the promotion of Isis as her patron goddess and the rationale for this",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Her Graeco-Egyptian public persona and representation in the archaeological sources; the promotion of Isis as her patron goddess and the rationale for this"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_2",
+            "code": "2.2",
+            "tier": 2,
+            "label": "2.2 Domestic Rule, Egyptian Subjects and Territorial Ambition",
+            "dateChip": "2.2",
+            "lessonIndex": 0,
+            "stageIndex": 1,
+            "gloss": "Cleopatra's relationship with her subjects; the expansion of Egyptian territory under Cleopatra",
+            "children": [
+              {
+                "id": "kt2_2_s1",
+                "tier": 3,
+                "label": "Cleopatra's relationship with her subjects; the e…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Cleopatra's relationship with her subjects; the expansion of Egyptian territory under Cleopatra",
+                "children": [
+                  {
+                    "id": "kt2_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Cleopatra's relationship with her subjects; the expansion of Egyptian territory under Cleopatra",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Cleopatra's relationship with her subjects; the expansion of Egyptian territory under Cleopatra"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_3",
+            "code": "2.3",
+            "tier": 2,
+            "label": "2.3 Cleopatra's Visit to Rome and Caesar's Assassination",
+            "dateChip": "2.3",
+            "lessonIndex": 0,
+            "stageIndex": 2,
+            "gloss": "Cleopatra's visit to Rome and her reception",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Cleopatra's visit to Rome and her reception",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Cleopatra's visit to Rome and her reception",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Cleopatra's visit to Rome and her reception",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Cleopatra's visit to Rome and her reception"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "left",
+        "color": "#7c3aed",
+        "label": "KT3: Cleopatra, Mark Antony & the Donations ",
+        "dateChip": "KT 3",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "gloss": "Key Topic 3: Cleopatra, Mark Antony & the Donations of Alexandria (44–32 BC)",
+        "children": [
+          {
+            "id": "kt3_1",
+            "code": "3.1",
+            "tier": 2,
+            "label": "3.1 Mark Antony's Position and the Meeting at Tarsus (41 BC)",
+            "dateChip": "3.1",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "gloss": "Mark Antony's position in Roman politics after Caesar's death; Cleopatra's meeting with Mark Antony at Tarsus",
+            "children": [
+              {
+                "id": "kt3_1_s1",
+                "tier": 3,
+                "label": "Mark Antony's position in Roman politics after Ca…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Mark Antony's position in Roman politics after Caesar's death; Cleopatra's meeting with Mark Antony at Tarsus",
+                "children": [
+                  {
+                    "id": "kt3_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Mark Antony's position in Roman politics after Caesar's death; Cleopatra's meeting with Mark Antony at Tarsus",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Mark Antony's position in Roman politics after Caesar's death; Cleopatra's meeting with Mark Antony at Tarsus"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_2",
+            "code": "3.2",
+            "tier": 2,
+            "label": "3.2 Alliance, Eastern Territories and Octavia",
+            "dateChip": "3.2",
+            "lessonIndex": 0,
+            "stageIndex": 1,
+            "gloss": "The development of the political and personal relationship between Cleopatra and Mark Antony and its significance for both Egypt and Rome",
+            "children": [
+              {
+                "id": "kt3_2_s1",
+                "tier": 3,
+                "label": "The development of the political and personal rel…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The development of the political and personal relationship between Cleopatra and Mark Antony and its significance for both Egypt and Rome",
+                "children": [
+                  {
+                    "id": "kt3_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The development of the political and personal relationship between Cleopatra and Mark Antony and its significance for both Egypt and Rome",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The development of the political and personal relationship between Cleopatra and Mark Antony and its significance for both Egypt and Rome"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_3",
+            "code": "3.3",
+            "tier": 2,
+            "label": "3.3 Donations of Alexandria and Breakdown with Octavian",
+            "dateChip": "3.3",
+            "lessonIndex": 0,
+            "stageIndex": 2,
+            "gloss": "The role played by Cleopatra in the breakdown of Mark Antony and Octavian's relationship, including the Donations of Alexandria",
+            "children": [
+              {
+                "id": "kt3_3_s1",
+                "tier": 3,
+                "label": "The role played by Cleopatra in the breakdown of …",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "The role played by Cleopatra in the breakdown of Mark Antony and Octavian's relationship, including the Donations of Alexandria",
+                "children": [
+                  {
+                    "id": "kt3_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "The role played by Cleopatra in the breakdown of Mark Antony and Octavian's relationship, including the Donations of Alexandria",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "The role played by Cleopatra in the breakdown of Mark Antony and Octavian's relationship, including the Donations of Alexandria"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt4",
+        "keyTopicNumber": 4,
+        "tier": 1,
+        "side": "right",
+        "color": "#0284c7",
+        "label": "KT4: War with Octavian, Actium & the Deaths ",
+        "dateChip": "KT 4",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "gloss": "Key Topic 4: War with Octavian, Actium & the Deaths in Alexandria (32–30 BC)",
+        "children": [
+          {
+            "id": "kt4_1",
+            "code": "4.1",
+            "tier": 2,
+            "label": "4.1 Causes of War and Preparations for Actium",
+            "dateChip": "4.1",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "gloss": "Causes of the war between Octavian and Antony/Cleopatra; preparations for the battle",
+            "children": [
+              {
+                "id": "kt4_1_s1",
+                "tier": 3,
+                "label": "Causes of the war between Octavian and Antony/Cle…",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Causes of the war between Octavian and Antony/Cleopatra; preparations for the battle",
+                "children": [
+                  {
+                    "id": "kt4_1_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Causes of the war between Octavian and Antony/Cleopatra; preparations for the battle",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Causes of the war between Octavian and Antony/Cleopatra; preparations for the battle"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_2",
+            "code": "4.2",
+            "tier": 2,
+            "label": "4.2 The Battle of Actium: Roles, Outcome and Competing Views",
+            "dateChip": "4.2",
+            "lessonIndex": 0,
+            "stageIndex": 1,
+            "gloss": "Key events of the battle, including the roles of Octavian, Agrippa, Mark Antony and Cleopatra; the outcome and the reasons for it as described by the sources; different views of the battle in the sources",
+            "children": [
+              {
+                "id": "kt4_2_s1",
+                "tier": 3,
+                "label": "Key events of the battle, including the roles of …",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Key events of the battle, including the roles of Octavian, Agrippa, Mark Antony and Cleopatra; the outcome and the reasons for it as described by the sources; different views of the battle in the sources",
+                "children": [
+                  {
+                    "id": "kt4_2_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Key events of the battle, including the roles of Octavian, Agrippa, Mark Antony and Cleopatra; the outcome and the reasons for it as described by the sources; different views of the battle in the sources",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Key events of the battle, including the roles of Octavian, Agrippa, Mark Antony and Cleopatra; the outcome and the reasons for it as described by the sources; different views of the battle in the sources"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt4_3",
+            "code": "4.3",
+            "tier": 2,
+            "label": "4.3 Fall of Alexandria, Suicides and Significance for Octavian",
+            "dateChip": "4.3",
+            "lessonIndex": 0,
+            "stageIndex": 2,
+            "gloss": "Impact of the battle on Cleopatra's and Antony's careers; the method of Cleopatra's suicide and reasons for her actions; Mark Antony's suicide; the significance of the suicides for Octavian",
+            "children": [
+              {
+                "id": "kt4_3_s1",
+                "tier": 3,
+                "label": "Impact of the battle on Cleopatra's and Antony's …",
+                "dateChip": "Spec",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "gloss": "Impact of the battle on Cleopatra's and Antony's careers; the method of Cleopatra's suicide and reasons for her actions; Mark Antony's suicide; the significance of the suicides for Octavian",
+                "children": [
+                  {
+                    "id": "kt4_3_s1_c1",
+                    "tier": 4,
+                    "tag": "Spec Lock",
+                    "label": "Impact of the battle on Cleopatra's and Antony's careers; the method of Cleopatra's suicide and reasons for her actions; Mark Antony's suicide; the significance of the suicides for Octavian",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "gloss": "Impact of the battle on Cleopatra's and Antony's careers; the method of Cleopatra's suicide and reasons for her actions; Mark Antony's suicide; the significance of the suicides for Octavian"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

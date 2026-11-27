@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_crime_and_punishment",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Twelve Tables",
+            "bullet": "Twelve Tables → Ancient Roman code establishing clear written laws."
+          },
+          {
+            "hint": "basilica",
+            "bullet": "basilica → Grand stone town hall where Roman court cases were heard."
+          },
+          {
+            "hint": "magistrate",
+            "bullet": "magistrate → Senior Roman judge who weighed witness evidence and set fines."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "After AD 43, Rome introduced Britain’s first written laws rooted in the Twelve Tables, judged by town magistrates inside stone basilicas."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Yet Roman towns still had no police detectives to hunt down everyday thieves."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During AD 43–200, roman governors and magistrates shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using Twelve Tables alongside basilica, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of magistrate, British law and order ____________."
+          }
+        ],
+        "watch_out": "After AD 43, Rome introduced Britain’s first written laws rooted in the Twelve Tables, judged by town magistrates inside stone basilicas. Yet Roman towns still had no police detectives to hunt down everyday thieves.",
+        "prose_hash": "b91ef285ca",
+        "prose_fp": "bf9bfab7",
+        "question_hash": "eb1d5dce51"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "vigiles",
+            "bullet": "vigiles → Night-watchmen who watched streets for fires rather than solving thefts."
+          },
+          {
+            "hint": "Roman citizens",
+            "bullet": "Roman citizens → Privileged people who usually paid fines or faced exile."
+          },
+          {
+            "hint": "enslaved people",
+            "bullet": "enslaved people → Workers with no rights who faced whipping, mines, or the arena."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Victims had to catch suspects themselves, and courts fined wealthy citizens while whipping or condemning enslaved people."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "When nobody saw a thief strike, victims could not bring anyone to court."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During AD 43–300, citizens, vigiles and enslaved people shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using vigiles alongside Roman citizens, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of enslaved people, British law and order ____________."
+          }
+        ],
+        "watch_out": "Victims had to catch suspects themselves, and courts fined wealthy citizens while whipping or condemning enslaved people. When nobody saw a thief strike, victims could not bring anyone to court.",
+        "prose_hash": "8ca1257ddd",
+        "prose_fp": "0b6b2851",
+        "question_hash": "3da03d6b57"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Aquae Sulis",
+            "bullet": "Aquae Sulis → Roman spa town at Bath built around steaming sacred springs."
+          },
+          {
+            "hint": "curse tablets",
+            "bullet": "curse tablets → Thin folded lead sheets scratched with Latin pleas against thieves."
+          },
+          {
+            "hint": "Sulis Minerva",
+            "bullet": "Sulis Minerva → Goddess asked to punish unseen bathhouse cloak thieves."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "At Aquae Sulis Bath, angry bathers scratched Latin pleas onto folded lead curse tablets asking goddess Sulis Minerva to punish cloak thieves."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "When Roman rule ended in AD 410, Anglo-Saxon villages built community justice instead."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During c. AD 100–400, robbed bathers at aquae sulis shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using Aquae Sulis alongside curse tablets, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of Sulis Minerva, British law and order ____________."
+          }
+        ],
+        "watch_out": "At Aquae Sulis Bath, angry bathers scratched Latin pleas onto folded lead curse tablets asking goddess Sulis Minerva to punish cloak thieves. When Roman rule ended in AD 410, Anglo-Saxon villages built community justice instead.",
+        "prose_hash": "8534280b64",
+        "prose_fp": "523883fc",
+        "question_hash": "9bb583396c"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "tithing",
+            "bullet": "tithing → Group of ten neighbours aged twelve and over answering for one another."
+          },
+          {
+            "hint": "King’s Peace",
+            "bullet": "King’s Peace → Lawful village order that every tithing promised to protect."
+          },
+          {
+            "hint": "Hue and Cry",
+            "bullet": "Hue and Cry → Loud horn and shout alarm forcing every villager to chase a thief."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Every male villager aged twelve joined a ten-person tithing and had to chase thieves immediately whenever the Hue and Cry horn sounded."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Once neighbours caught a wrongdoer, villages needed a peaceful way to settle anger."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During AD 410–900, anglo-saxon village neighbours shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using tithing alongside King’s Peace, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of Hue and Cry, British law and order ____________."
+          }
+        ],
+        "watch_out": "Every male villager aged twelve joined a ten-person tithing and had to chase thieves immediately whenever the Hue and Cry horn sounded. Once neighbours caught a wrongdoer, villages needed a peaceful way to settle anger.",
+        "prose_hash": "7ac1fa034b",
+        "prose_fp": "5f31a11e",
+        "question_hash": "0475237786"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "blood feud",
+            "bullet": "blood feud → Deadly cycle of revenge attacks between two angry families."
+          },
+          {
+            "hint": "wergild",
+            "bullet": "wergild → Fixed silver \"person-price\" paid to an injured victim’s family."
+          },
+          {
+            "hint": "King Alfred the Great",
+            "bullet": "King Alfred the Great → Ruler who gathered English laws into his written Domboc law code."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Royal law codes fixed silver wergild \"person-price\" payments to stop family blood feuds, though noble thanes were valued six times above ceorl farmers."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "When no witnesses saw a crime and oaths clashed, courts turned to the Church."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During c. AD 600–900, king aethelberht and king alfred shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using blood feud alongside wergild, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of King Alfred the Great, British law and order ____________."
+          }
+        ],
+        "watch_out": "Royal law codes fixed silver wergild \"person-price\" payments to stop family blood feuds, though noble thanes were valued six times above ceorl farmers. When no witnesses saw a crime and oaths clashed, courts turned to the Church.",
+        "prose_hash": "6b92853a01",
+        "prose_fp": "ae43fc53",
+        "question_hash": "8c87d099aa"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Hundred Court",
+            "bullet": "Hundred Court → Monthly open-air local court where elders heard witness oaths."
+          },
+          {
+            "hint": "Trial by Ordeal",
+            "bullet": "Trial by Ordeal → Last-resort church test asking God to reveal guilt or innocence."
+          },
+          {
+            "hint": "Trial by Hot Iron",
+            "bullet": "Trial by Hot Iron → Carrying glowing iron three paces before checking the bandaged hand three days later."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "When oath-helpers at the Hundred Court could not settle a dispute, priests held Trial by Hot Iron or Cold Water trusting God to judge."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "In 1066, Norman Conquest brought royal Forest Laws and travelling judges."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During AD 600–1066, oath-helpers and parish priests shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using Hundred Court alongside Trial by Ordeal, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of Trial by Hot Iron, British law and order ____________."
+          }
+        ],
+        "watch_out": "When oath-helpers at the Hundred Court could not settle a dispute, priests held Trial by Hot Iron or Cold Water trusting God to judge. In 1066, Norman Conquest brought royal Forest Laws and travelling judges.",
+        "prose_hash": "6d04c175b8",
+        "prose_fp": "8640c926",
+        "question_hash": "c6e907390f"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "William the Conqueror",
+            "bullet": "William the Conqueror → Norman king who kept tithings yet created royal hunting reserves."
+          },
+          {
+            "hint": "Forest Laws",
+            "bullet": "Forest Laws → Strict Norman rules banning villagers from hunting deer or cutting wood."
+          },
+          {
+            "hint": "poaching",
+            "bullet": "poaching → Secretly hunting deer or rabbits on royal or lordly land."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "William I kept Saxon tithings and the Hue and Cry, shifted fines to the King’s treasury, and banned peasant deer hunting under harsh Forest Laws."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "A century later, Henry II unified patchwork courts under royal judges."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1066–1150, william the conqueror and sheriffs shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using William the Conqueror alongside Forest Laws, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of poaching, British law and order ____________."
+          }
+        ],
+        "watch_out": "William I kept Saxon tithings and the Hue and Cry, shifted fines to the King’s treasury, and banned peasant deer hunting under harsh Forest Laws. A century later, Henry II unified patchwork courts under royal judges.",
+        "prose_hash": "7bb35f313f",
+        "prose_fp": "b72e59e4",
+        "question_hash": "b28f4482a4"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Common Law",
+            "bullet": "Common Law → One shared English legal system enforced by Henry II’s travelling judges."
+          },
+          {
+            "hint": "jury",
+            "bullet": "jury → Twelve sworn neighbours weighing courtroom evidence to decide verdicts."
+          },
+          {
+            "hint": "Magna Carta",
+            "bullet": "Magna Carta → 1215 charter sealed by King John promising lawful trials."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Henry II’s travelling judges built one Common Law with twelve-person juries, cemented in 1215 by Magna Carta and the Pope’s ban on Ordeals."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Alongside royal courts, cathedrals and market squares shaped everyday medieval justice."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1154–1215, king henry ii and runnymede barons shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using Common Law alongside jury, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of Magna Carta, British law and order ____________."
+          }
+        ],
+        "watch_out": "Henry II’s travelling judges built one Common Law with twelve-person juries, cemented in 1215 by Magna Carta and the Pope’s ban on Ordeals. Alongside royal courts, cathedrals and market squares shaped everyday medieval justice.",
+        "prose_hash": "786a077e4b",
+        "prose_fp": "2ebfe230",
+        "question_hash": "f473b11be3"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Durham Cathedral",
+            "bullet": "Durham Cathedral → Northern cathedral famous for its twelfth-century bronze lion Sanctuary Knocker."
+          },
+          {
+            "hint": "sanctuary",
+            "bullet": "sanctuary → Safe Church shelter lasting up to forty days before trial or exile."
+          },
+          {
+            "hint": "pillory",
+            "bullet": "pillory → Upright wooden frame locking a dishonest trader’s head and wrists."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Fugitives striking cathedral knockers claimed up to forty days of Church sanctuary, while market towns shamed cheats in wooden stocks and pillories."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "By 1500, Tudor monarchs began curbing sanctuary as poverty and treason fears rose."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1100–1485, cathedral monks and town constables shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using Durham Cathedral alongside sanctuary, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of pillory, British law and order ____________."
+          }
+        ],
+        "watch_out": "Fugitives striking cathedral knockers claimed up to forty days of Church sanctuary, while market towns shamed cheats in wooden stocks and pillories. By 1500, Tudor monarchs began curbing sanctuary as poverty and treason fears rose.",
+        "prose_hash": "9a791381a0",
+        "prose_fp": "7d646ac4",
+        "question_hash": "8a6d26dccd"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "vagrants",
+            "bullet": "vagrants → Homeless jobless people wandering from parish to parish."
+          },
+          {
+            "hint": "1601 Poor Law",
+            "bullet": "1601 Poor Law → Elizabethan Act aiding elderly locals while punishing able-bodied beggars."
+          },
+          {
+            "hint": "sturdy beggars",
+            "bullet": "sturdy beggars → Tudor label for healthy jobless people whipped behind carts."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Rising poverty put vagrants on Tudor roads; the 1601 Poor Law aided sick locals while whipping healthy \"sturdy beggars\" behind carts."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Alongside fear of vagrants, religious division sparked deadly treason plots."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1485–1603, elizabeth i and parish constables shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using vagrants alongside 1601 Poor Law, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of sturdy beggars, British law and order ____________."
+          }
+        ],
+        "watch_out": "Rising poverty put vagrants on Tudor roads; the 1601 Poor Law aided sick locals while whipping healthy \"sturdy beggars\" behind carts. Alongside fear of vagrants, religious division sparked deadly treason plots.",
+        "prose_hash": "4504beab36",
+        "prose_fp": "5e3a689e",
+        "question_hash": "286fcbdf0c"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "High Treason",
+            "bullet": "High Treason → Plotting to kill the monarch or destroy Parliament."
+          },
+          {
+            "hint": "Monteagle Letter",
+            "bullet": "Monteagle Letter → Unsigned warning note that tipped off King James I before 5 November 1605."
+          },
+          {
+            "hint": "dark lantern",
+            "bullet": "dark lantern → Shuttered iron candle holder seized with Guy Fawkes beside 36 barrels."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Alerted by the Monteagle Letter on 4–5 November 1605, guards caught Guy Fawkes beside 36 gunpowder barrels and punished High Treason fiercely."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Forty years later, Civil War breakdown unleashed England’s fiercest witch panic."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1605, guy fawkes and king james i shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using High Treason alongside Monteagle Letter, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of dark lantern, British law and order ____________."
+          }
+        ],
+        "watch_out": "Alerted by the Monteagle Letter on 4–5 November 1605, guards caught Guy Fawkes beside 36 gunpowder barrels and punished High Treason fiercely. Forty years later, Civil War breakdown unleashed England’s fiercest witch panic.",
+        "prose_hash": "417f1b40e3",
+        "prose_fp": "b3855029",
+        "question_hash": "fc77cae72a"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "superstition",
+            "bullet": "superstition → Blaming bad harvests or illness on magic instead of natural causes."
+          },
+          {
+            "hint": "Matthew Hopkins",
+            "bullet": "Matthew Hopkins → East Anglian \"Witchfinder General\" who charged towns fees in 1645–1647."
+          },
+          {
+            "hint": "Royal Society",
+            "bullet": "Royal Society → Scientific group founded in 1660 encouraging rational proof over magic."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Civil War panic let Matthew Hopkins accuse East Anglian women in 1645–1647, until post-1660 peace, science, and strict judges ended witch trials."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "By 1700, witch trials faded—yet Georgian MPs soon created the \"Bloody Code\"."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1645–1736, matthew hopkins and royal society thinkers shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using superstition alongside Matthew Hopkins, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of Royal Society, British law and order ____________."
+          }
+        ],
+        "watch_out": "Civil War panic let Matthew Hopkins accuse East Anglian women in 1645–1647, until post-1660 peace, science, and strict judges ended witch trials. By 1700, witch trials faded—yet Georgian MPs soon created the \"Bloody Code\".",
+        "prose_hash": "19e2eb3770",
+        "prose_fp": "2a0fc282",
+        "question_hash": "40d61e5cd6"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "import taxes",
+            "bullet": "import taxes → Heavy customs duties making legal tea, silk, and brandy expensive."
+          },
+          {
+            "hint": "smuggling",
+            "bullet": "smuggling → Secretly landing untaxed barrels onto dark coves at night."
+          },
+          {
+            "hint": "highwaymen",
+            "bullet": "highwaymen → Mounted pistol robbers like Dick Turpin holding up lonely coaches."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Heavy tea taxes fuelled midnight coastal smuggling, while unlit roads and flintlock pistols let highwaymen rob cash-carrying stagecoaches."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Frightened landowners in Parliament answered with over 220 death-penalty laws."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1700–1800, cornish smugglers and highwaymen shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using import taxes alongside smuggling, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of highwaymen, British law and order ____________."
+          }
+        ],
+        "watch_out": "Heavy tea taxes fuelled midnight coastal smuggling, while unlit roads and flintlock pistols let highwaymen rob cash-carrying stagecoaches. Frightened landowners in Parliament answered with over 220 death-penalty laws.",
+        "prose_hash": "066227ecc6",
+        "prose_fp": "2b693d62",
+        "question_hash": "ea5afeff91"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Bloody Code",
+            "bullet": "Bloody Code → Over 220 Georgian laws punishing even small thefts with death."
+          },
+          {
+            "hint": "five shillings",
+            "bullet": "five shillings → Shop theft amount that carried the death penalty by 1810."
+          },
+          {
+            "hint": "twelve-person juries",
+            "bullet": "twelve-person juries → Ordinary jurors who undervalued stolen goods to spare petty thieves."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Refusing to fund police, MPs passed over 220 death-penalty laws \"the Bloody Code\", yet sympathetic juries refused to hang petty thieves."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Judges needed punishments between tiny fines and the gallows."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1688–1820, georgian mps and reluctant juries shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using Bloody Code alongside five shillings, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of twelve-person juries, British law and order ____________."
+          }
+        ],
+        "watch_out": "Refusing to fund police, MPs passed over 220 death-penalty laws \"the Bloody Code\", yet sympathetic juries refused to hang petty thieves. Judges needed punishments between tiny fines and the gallows.",
+        "prose_hash": "cfe6764e21",
+        "prose_fp": "d5c68c5d",
+        "question_hash": "75938ff82b"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "transportation",
+            "bullet": "transportation → Shipping over 160,000 British convicts to Australia between 1787 and 1868."
+          },
+          {
+            "hint": "Elizabeth Fry",
+            "bullet": "Elizabeth Fry → Quaker reformer who started schooling and sewing inside Newgate Prison."
+          },
+          {
+            "hint": "rehabilitation",
+            "bullet": "rehabilitation → Helping prisoners reform through clean wards, reading, and work skills."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Britain transported over 160,000 convicts to Australia 1787–1868, while Elizabeth Fry’s Newgate school proved humane rehabilitation worked."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "By the 1820s, Sir Robert Peel slashed the Bloody Code and founded London’s police."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1787–1868, transported convicts and elizabeth fry shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using transportation alongside Elizabeth Fry, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of rehabilitation, British law and order ____________."
+          }
+        ],
+        "watch_out": "Britain transported over 160,000 convicts to Australia 1787–1868, while Elizabeth Fry’s Newgate school proved humane rehabilitation worked. By the 1820s, Sir Robert Peel slashed the Bloody Code and founded London’s police.",
+        "prose_hash": "004f005121",
+        "prose_fp": "56aa8d72",
+        "question_hash": "ccfac578ea"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Sir Robert Peel",
+            "bullet": "Sir Robert Peel → Home Secretary who founded London’s Metropolitan Police in 1829."
+          },
+          {
+            "hint": "Bobbies",
+            "bullet": "Bobbies → Friendly nickname for uniformed police wearing blue coats and top hats."
+          },
+          {
+            "hint": "policing by consent",
+            "bullet": "policing by consent → Keeping peace with public trust and wooden truncheons rather than guns."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Sir Robert Peel’s 1829 Metropolitan Police Act put 1,000 blue-coated unarmed Bobbies onto London beats to prevent crime by public consent."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "With transportation fading, prisons replaced hangings as the main sentence."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1829–1856, sir robert peel and london peelers shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using Sir Robert Peel alongside Bobbies, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of policing by consent, British law and order ____________."
+          }
+        ],
+        "watch_out": "Sir Robert Peel’s 1829 Metropolitan Police Act put 1,000 blue-coated unarmed Bobbies onto London beats to prevent crime by public consent. With transportation fading, prisons replaced hangings as the main sentence.",
+        "prose_hash": "7eb7fa9da5",
+        "prose_fp": "5209be26",
+        "question_hash": "a4dd5bf8d9"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Pentonville Prison",
+            "bullet": "Pentonville Prison → 1842 London prison built for solitary cells and hard labour."
+          },
+          {
+            "hint": "Separate System",
+            "bullet": "Separate System → Strict Victorian regime keeping inmates silent and isolated."
+          },
+          {
+            "hint": "1965",
+            "bullet": "1965 → Year Parliament abolished the death penalty for murder in Britain."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Pentonville 1842 tested solitary cells and treadwheels, before Britain ended public hanging 1868, abolished murder executions 1965, and expanded rehabilitation."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Meanwhile, laboratory science revolutionised how detectives proved the truth."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1842–1965, victorian warders and 20th-century mps shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using Pentonville Prison alongside Separate System, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of 1965, British law and order ____________."
+          }
+        ],
+        "watch_out": "Pentonville 1842 tested solitary cells and treadwheels, before Britain ended public hanging 1868, abolished murder executions 1965, and expanded rehabilitation. Meanwhile, laboratory science revolutionised how detectives proved the truth.",
+        "prose_hash": "5b029612a9",
+        "prose_fp": "26164da9",
+        "question_hash": "15c6d62d35"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Fingerprint Bureau",
+            "bullet": "Fingerprint Bureau → Opened at Scotland Yard in 1901 to match unique fingertip ridges."
+          },
+          {
+            "hint": "Sir Alec Jeffreys",
+            "bullet": "Sir Alec Jeffreys → Leicester University scientist who discovered genetic DNA profiling in 1984."
+          },
+          {
+            "hint": "DNA profiling",
+            "bullet": "DNA profiling → Forensic test identifying guilty offenders and clearing innocent suspects."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Scotland Yard’s 1901 Fingerprint Bureau, 1937 999 calls, and Sir Alec Jeffreys’s 1984 Leicester DNA profiling replaced guesswork with scientific forensics."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Across 2,000 years, British justice moved from curses and ordeals to science and rights."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1901–Present, scotland yard and sir alec jeffreys shaped justice through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Using Fingerprint Bureau alongside Sir Alec Jeffreys, communities ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "As a result of DNA profiling, British law and order ____________."
+          }
+        ],
+        "watch_out": "Scotland Yard’s 1901 Fingerprint Bureau, 1937 999 calls, and Sir Alec Jeffreys’s 1984 Leicester DNA profiling replaced guesswork with scientific forensics. Across 2,000 years, British justice moved from curses and ordeals to science and rights.",
+        "prose_hash": "4367386f91",
+        "prose_fp": "0b05b4a8",
+        "question_hash": "28bc36fb85"
+      }
+    ]
+  }
+}

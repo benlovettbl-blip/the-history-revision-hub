@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_kingdom_of_benin",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "The Kingdom of Benin — Rainforest Earthworks, Royal Oba Court and Master Bronzes (c. AD 900–1897)",
+  "examDateBoundary": "c. AD 900–Present",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Kingdom of Benin",
+    "subLabel": "Key Stage 2",
+    "dateChip": "c. AD 900–1897",
+    "gloss": "One thousand years of Edo history in southern Nigeria — from Ogiso rulers and 16,000 km of red-clay Iya earthworks to Oba Ewuare, Igun Street lost-wax brass plaques, Queen Mother Idia, 1485 global trade, 1897 looting, and modern restitution.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "1. Earthworks & Golden Edo",
+        "dateChip": "c. AD 900–1500",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Edo",
+        "gloss": "Ogiso Kings in Southern Nigeria → 16,000 km of Red-Clay Iya Walls → Contrast With Anglo-Saxon Britain • Sacred Ife and Oba Eweka I → Ewuare’s Nine Gates and Oil Lamps → Coral Regalia and Forty Craft Guilds",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Rainforest Kingdom — Ogiso Rulers and Red-Earth Walls",
+            "dateChip": "c. AD 900–1180",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Edo",
+            "q2Chain": "Ogiso Kings in Southern Nigeria → 16,000 km of Red-Clay Iya Walls → Contrast With Anglo-Saxon Britain",
+            "gloss": "Ogiso Kings in Southern Nigeria → 16,000 km of Red-Clay Iya Walls → Contrast With Anglo-Saxon Britain",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Ogiso Kings in Southern Nigeria",
+                "dateChip": "c. AD 900",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "rainforest",
+                "gloss": "In southern Nigeria’s rainforest, Edo villages grew yams and oil palms and united under thirty-one early Ogiso (\"Kings of the Sky\") rulers.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "rainforest",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "rainforest",
+                    "gloss": "Lush tropical woodland in southern Nigeria; supplying yams and palm oil.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Lush tropical woodland in southern Nigeria",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "rainforest",
+                        "gloss": "Lush tropical woodland in southern Nigeria"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "supplying yams and palm oil",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "rainforest",
+                        "gloss": "supplying yams and palm oil"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Ogiso",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Ogiso",
+                    "gloss": "Early rulers of Benin who united; forest villages and settled disputes.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Early rulers of Benin who united",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Ogiso",
+                        "gloss": "Early rulers of Benin who united"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "forest villages and settled disputes",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Ogiso",
+                        "gloss": "forest villages and settled disputes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Kings of the Sky",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Kings of the Sky",
+                    "gloss": "English meaning of the; sacred royal title Ogiso.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "English meaning of the",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Kings of the Sky",
+                        "gloss": "English meaning of the"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "sacred royal title Ogiso",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Kings of the Sky",
+                        "gloss": "sacred royal title Ogiso"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "16,000 km of Red-Clay Iya Walls",
+                "dateChip": "c. AD 900–1180",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "Iya",
+                "gloss": "Using iron hoes and baskets, Edo communities dug 16,000 kilometres of deep Iya ditches and sun-baked red laterite walls around 500+ settlements.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Iya",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Iya",
+                    "gloss": "Deep protective ditches and high; earth banks surrounding Edo towns.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Deep protective ditches and high",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Iya",
+                        "gloss": "Deep protective ditches and high"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "earth banks surrounding Edo towns",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Iya",
+                        "gloss": "earth banks surrounding Edo towns"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "red laterite clay",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "red laterite clay",
+                    "gloss": "Iron-rich tropical soil that baked; rock-hard in the hot sun.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Iron-rich tropical soil that baked",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "red laterite clay",
+                        "gloss": "Iron-rich tropical soil that baked"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "rock-hard in the hot sun",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "red laterite clay",
+                        "gloss": "rock-hard in the hot sun"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ sixteen thousand kilometres",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "sixteen thousand kilometres",
+                    "gloss": "Total length of Benin’s linked; village and city earthworks.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Total length of Benin’s linked",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "sixteen thousand kilometres",
+                        "gloss": "Total length of Benin’s linked"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "village and city earthworks",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "sixteen thousand kilometres",
+                        "gloss": "village and city earthworks"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Contrast With Anglo-Saxon Britain",
+                "dateChip": "c. AD 900",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Anglo-Saxon villages",
+                "gloss": "While Anglo-Saxon Britain built smaller timber burhs and wrote on parchment, Edo created monumental rainforest earthworks and oral court traditions.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Anglo-Saxon villages",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Anglo-Saxon villages",
+                    "gloss": "Small British farming settlements growing; barley and herding sheep.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Small British farming settlements growing",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Anglo-Saxon villages",
+                        "gloss": "Small British farming settlements growing"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "barley and herding sheep",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Anglo-Saxon villages",
+                        "gloss": "barley and herding sheep"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "timber burhs",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "timber burhs",
+                    "gloss": "Walled Anglo-Saxon towns built to; defend against Viking raids.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Walled Anglo-Saxon towns built to",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "timber burhs",
+                        "gloss": "Walled Anglo-Saxon towns built to"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "defend against Viking raids",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "timber burhs",
+                        "gloss": "defend against Viking raids"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ earthwork walls",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "earthwork walls",
+                    "gloss": "Monumental linked Benin ramparts four times; longer than China’s Great Wall.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Monumental linked Benin ramparts four times",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "earthwork walls",
+                        "gloss": "Monumental linked Benin ramparts four times"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "longer than China’s Great Wall",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "earthwork walls",
+                        "gloss": "longer than China’s Great Wall"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. From Ogiso to Oba — Ewuare the Great and Golden Benin City",
+            "dateChip": "c. AD 1180–1500",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Oba",
+            "q2Chain": "Sacred Ife and Oba Eweka I → Ewuare’s Nine Gates and Oil Lamps → Coral Regalia and Forty Craft Guilds",
+            "gloss": "Sacred Ife and Oba Eweka I → Ewuare’s Nine Gates and Oil Lamps → Coral Regalia and Forty Craft Guilds",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Sacred Ife and Oba Eweka I",
+                "dateChip": "c. AD 1180",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Uzama elders",
+                "gloss": "After banishing the last Ogiso, Uzama elders welcomed Prince Oranmiyan from sacred Ife, whose Edo-born son became Oba Eweka I.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Uzama elders",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Uzama elders",
+                    "gloss": "Senior Edo kingmakers who banished; the last cruel Ogiso ruler.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Senior Edo kingmakers who banished",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Uzama elders",
+                        "gloss": "Senior Edo kingmakers who banished"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "the last cruel Ogiso ruler",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Uzama elders",
+                        "gloss": "the last cruel Ogiso ruler"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "sacred Ife",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "sacred Ife",
+                    "gloss": "Yoruba spiritual city north-west of; Benin where Oranmiyan came from.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Yoruba spiritual city north-west of",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "sacred Ife",
+                        "gloss": "Yoruba spiritual city north-west of"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Benin where Oranmiyan came from",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "sacred Ife",
+                        "gloss": "Benin where Oranmiyan came from"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Oba Eweka I",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Oba Eweka I",
+                    "gloss": "Oranmiyan’s Edo-born son who founded; Benin’s royal Oba dynasty.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Oranmiyan’s Edo-born son who founded",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Oba Eweka I",
+                        "gloss": "Oranmiyan’s Edo-born son who founded"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Benin’s royal Oba dynasty",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Oba Eweka I",
+                        "gloss": "Benin’s royal Oba dynasty"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Ewuare’s Nine Gates and Oil Lamps",
+                "dateChip": "c. AD 1440–1473",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "Oba Ewuare the Great",
+                "gloss": "Oba Ewuare dug a huge inner city moat with nine guarded toll gates and built wide avenues with drains and palm-oil street lamps.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Oba Ewuare the Great",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "Oba Ewuare the Great",
+                    "gloss": "Fifteenth-century warrior-king who rebuilt E; as a grand capital.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Fifteenth-century warrior-king who rebuilt E",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Oba Ewuare the Great",
+                        "gloss": "Fifteenth-century warrior-king who rebuilt E"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "as a grand capital",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "Oba Ewuare the Great",
+                        "gloss": "as a grand capital"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "nine fortified gates",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "nine fortified gates",
+                    "gloss": "Guarded wooden entrances collecting royal; tolls around the inner moat.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Guarded wooden entrances collecting royal",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "nine fortified gates",
+                        "gloss": "Guarded wooden entrances collecting royal"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "tolls around the inner moat",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "nine fortified gates",
+                        "gloss": "tolls around the inner moat"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ palm-oil lamps",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "palm-oil lamps",
+                    "gloss": "Tall iron street lights keeping Benin’s; broad avenues bright after dark.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Tall iron street lights keeping Benin’s",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "palm-oil lamps",
+                        "gloss": "Tall iron street lights keeping Benin’s"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "broad avenues bright after dark",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "palm-oil lamps",
+                        "gloss": "broad avenues bright after dark"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Coral Regalia and Forty Craft Guilds",
+                "dateChip": "c. AD 1450–1500",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "brass palace birds",
+                "gloss": "Topped by giant brass palace birds, Ewuare’s court shone with red coral beads and forty organised guilds of carvers, weavers, and casters.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "brass palace birds",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "brass palace birds",
+                    "gloss": "Giant cast metal birds perched high; on pointed palace roof turrets.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Giant cast metal birds perched high",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "brass palace birds",
+                        "gloss": "Giant cast metal birds perched high"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "on pointed palace roof turrets",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "brass palace birds",
+                        "gloss": "on pointed palace roof turrets"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "red coral beads",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "red coral beads",
+                    "gloss": "Polished sea-coral crowns and collars; symbolising the Oba’s sacred rank.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Polished sea-coral crowns and collars",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "red coral beads",
+                        "gloss": "Polished sea-coral crowns and collars"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "symbolising the Oba’s sacred rank",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "red coral beads",
+                        "gloss": "symbolising the Oba’s sacred rank"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ craft guilds",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "craft guilds",
+                    "gloss": "Forty specialist groups of royal; artists organised in dedicated streets.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Forty specialist groups of royal",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "craft guilds",
+                        "gloss": "Forty specialist groups of royal"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "artists organised in dedicated streets",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "craft guilds",
+                        "gloss": "artists organised in dedicated streets"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "left",
+        "color": "#d97706",
+        "label": "2. Bronzes & Sacred Court",
+        "dateChip": "c. AD 1400–1700",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Benin Bronzes",
+        "gloss": "Golden Brass and Igun Street Guild → Three-Step Lost-Wax Casting → Pillar Plaques and Carved Tusks • Leopard of the House and Olokun → Oba Esigie and Queen Mother Idia → Edo Yam Farms, Weaving and Igue",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Lost-Wax Masterpieces — Igun Street Brass-Casters, Ivory and Coral",
+            "dateChip": "c. AD 1400–1700",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Benin Bronzes",
+            "q2Chain": "Golden Brass and Igun Street Guild → Three-Step Lost-Wax Casting → Pillar Plaques and Carved Tusks",
+            "gloss": "Golden Brass and Igun Street Guild → Three-Step Lost-Wax Casting → Pillar Plaques and Carved Tusks",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Golden Brass and Igun Street Guild",
+                "dateChip": "c. AD 1400–1600",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "copper and zinc",
+                "gloss": "Most \"Benin Bronzes\" were cast from golden brass (copper and zinc) exclusively for the Oba by the hereditary royal guild on Igun Street.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "copper and zinc",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "copper and zinc",
+                    "gloss": "Two metals mixed together to; create gleaming golden-yellow brass.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Two metals mixed together to",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "copper and zinc",
+                        "gloss": "Two metals mixed together to"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "create gleaming golden-yellow brass",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "copper and zinc",
+                        "gloss": "create gleaming golden-yellow brass"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Igun Street",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Igun Street",
+                    "gloss": "Historic Benin City street where; royal brass-casters lived and worked.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Historic Benin City street where",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Igun Street",
+                        "gloss": "Historic Benin City street where"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "royal brass-casters lived and worked",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Igun Street",
+                        "gloss": "royal brass-casters lived and worked"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ royal guild",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "royal guild",
+                    "gloss": "Specialist families allowed to cast sacred; brass solely for the Oba.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Specialist families allowed to cast sacred",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "royal guild",
+                        "gloss": "Specialist families allowed to cast sacred"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "brass solely for the Oba",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "royal guild",
+                        "gloss": "brass solely for the Oba"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Three-Step Lost-Wax Casting",
+                "dateChip": "c. AD 1400–1700",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "lost-wax casting",
+                "gloss": "Artists carved a beeswax model over clay, baked outer clay so wax melted out, poured brass from a clay crucible, and cracked the mould open.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "lost-wax casting",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "lost-wax casting",
+                    "gloss": "Melting carved beeswax out of a; clay shell before pouring molten metal.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Melting carved beeswax out of a",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "lost-wax casting",
+                        "gloss": "Melting carved beeswax out of a"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "clay shell before pouring molten metal",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "lost-wax casting",
+                        "gloss": "clay shell before pouring molten metal"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "beeswax model",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "beeswax model",
+                    "gloss": "Hand-carved wax layer holding every; tiny bead, feather, and leaf.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Hand-carved wax layer holding every",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "beeswax model",
+                        "gloss": "Hand-carved wax layer holding every"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "tiny bead, feather, and leaf",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "beeswax model",
+                        "gloss": "tiny bead, feather, and leaf"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ clay crucible",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "clay crucible",
+                    "gloss": "Heat-proof pot used to melt; brass inside a charcoal furnace.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Heat-proof pot used to melt",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "clay crucible",
+                        "gloss": "Heat-proof pot used to melt"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "brass inside a charcoal furnace",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "clay crucible",
+                        "gloss": "brass inside a charcoal furnace"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Pillar Plaques and Carved Tusks",
+                "dateChip": "c. AD 1500–1700",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "wooden palace pillars",
+                "gloss": "Over 900 brass plaques nailed to wooden palace pillars worked alongside two-metre carved ivory tusks as Benin’s visual history archive.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "wooden palace pillars",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "wooden palace pillars",
+                    "gloss": "Tall courtyard posts where over; 900 brass plaques were nailed.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Tall courtyard posts where over",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "wooden palace pillars",
+                        "gloss": "Tall courtyard posts where over"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "900 brass plaques were nailed",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "wooden palace pillars",
+                        "gloss": "900 brass plaques were nailed"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "carved ivory tusks",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "carved ivory tusks",
+                    "gloss": "Two-metre elephant tusks sculpted with Obas; and set on brass heads.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Two-metre elephant tusks sculpted with Obas",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "carved ivory tusks",
+                        "gloss": "Two-metre elephant tusks sculpted with Obas"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "and set on brass heads",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "carved ivory tusks",
+                        "gloss": "and set on brass heads"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ visual history archive",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "visual history archive",
+                    "gloss": "Shining picture record of kings,; battles, rituals, and visitors.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Shining picture record of kings,",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "visual history archive",
+                        "gloss": "Shining picture record of kings,"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "battles, rituals, and visitors",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "visual history archive",
+                        "gloss": "battles, rituals, and visitors"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Sacred Court Rituals — The Oba, Queen Mother Idia and Everyday Edo Life",
+            "dateChip": "c. AD 1500–1700",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Iyoba",
+            "q2Chain": "Leopard of the House and Olokun → Oba Esigie and Queen Mother Idia → Edo Yam Farms, Weaving and Igue",
+            "gloss": "Leopard of the House and Olokun → Oba Esigie and Queen Mother Idia → Edo Yam Farms, Weaving and Igue",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Leopard of the House and Olokun",
+                "dateChip": "c. AD 1500–1700",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "Leopard of the House",
+                "gloss": "Revered as \"Leopard of the House\", the Oba linked earthly rule with water-god Olokun—symbolised by spotted brass leopards and coiled mudfish.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Leopard of the House",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Leopard of the House",
+                    "gloss": "Royal title comparing the fearless, wise Oba; to the king of the forest.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Royal title comparing the fearless, wise Oba",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Leopard of the House",
+                        "gloss": "Royal title comparing the fearless, wise Oba"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "to the king of the forest",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Leopard of the House",
+                        "gloss": "to the king of the forest"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Olokun",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "Olokun",
+                    "gloss": "Edo god of rivers, seas,; and wealth honoured across Benin.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Edo god of rivers, seas,",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Olokun",
+                        "gloss": "Edo god of rivers, seas,"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "and wealth honoured across Benin",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "Olokun",
+                        "gloss": "and wealth honoured across Benin"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ mudfish",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "mudfish",
+                    "gloss": "River fish able to cross damp; land, linking water and earth.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "River fish able to cross damp",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "mudfish",
+                        "gloss": "River fish able to cross damp"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "land, linking water and earth",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "mudfish",
+                        "gloss": "land, linking water and earth"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Oba Esigie and Queen Mother Idia",
+                "dateChip": "c. AD 1504–1550",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Iyoba",
+                "gloss": "After his mother Idia’s wise counsel helped defeat invading rivals from Idah, Oba Esigie created the office of Iyoba, Uselu palace, and her ivory mask.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Iyoba",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Iyoba",
+                    "gloss": "High royal title meaning Queen; Mother created by Oba Esigie.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "High royal title meaning Queen",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Iyoba",
+                        "gloss": "High royal title meaning Queen"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Mother created by Oba Esigie",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Iyoba",
+                        "gloss": "Mother created by Oba Esigie"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Uselu palace",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Uselu palace",
+                    "gloss": "Grand royal residence outside Benin City; built for the Queen Mother.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Grand royal residence outside Benin City",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Uselu palace",
+                        "gloss": "Grand royal residence outside Benin City"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "built for the Queen Mother",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Uselu palace",
+                        "gloss": "built for the Queen Mother"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ carved ivory mask",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "carved ivory mask",
+                    "gloss": "Famous white ivory hip pendant; celebrating Idia’s protective wisdom.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Famous white ivory hip pendant",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "carved ivory mask",
+                        "gloss": "Famous white ivory hip pendant"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "celebrating Idia’s protective wisdom",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "carved ivory mask",
+                        "gloss": "celebrating Idia’s protective wisdom"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Edo Yam Farms, Weaving and Igue",
+                "dateChip": "c. AD 1500–1700",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "white yams",
+                "gloss": "Living in red-clay courtyard compounds, families farmed white yams and plantains, wove fine cotton cloth, and gathered each winter for the Igue festival.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "white yams",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "white yams",
+                    "gloss": "Staple root crop grown in; rainforest clearings alongside plantains.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Staple root crop grown in",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "white yams",
+                        "gloss": "Staple root crop grown in"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "rainforest clearings alongside plantains",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "white yams",
+                        "gloss": "rainforest clearings alongside plantains"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "cotton cloth",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "cotton cloth",
+                    "gloss": "Finely spun blue-and-white woven textiles; prized across West Africa.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Finely spun blue-and-white woven textiles",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "cotton cloth",
+                        "gloss": "Finely spun blue-and-white woven textiles"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "prized across West Africa",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "cotton cloth",
+                        "gloss": "prized across West Africa"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Igue festival",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Igue festival",
+                    "gloss": "Joyful annual royal thanksgiving renewing; the Oba and blessing Benin.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Joyful annual royal thanksgiving renewing",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Igue festival",
+                        "gloss": "Joyful annual royal thanksgiving renewing"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "the Oba and blessing Benin",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Igue festival",
+                        "gloss": "the Oba and blessing Benin"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "right",
+        "color": "#b91c1c",
+        "label": "3. Global Trade, 1897 & Today",
+        "dateChip": "1485–Present",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Gwato Port",
+        "gloss": "Portuguese Ships and Lisbon Envoys → Pepper, Manillas and Cowrie Money → Olfert Dapper’s Thirty Wide Streets • Palm-Oil Rivalry and 1897 Invasion → 4,000+ Looted Bronzes Scattered → Restitution and Living Edo Culture",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Global Traders — Brass Manillas, Cowrie Shells and European Visitors",
+            "dateChip": "c. AD 1485–1850",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Gwato Port",
+            "q2Chain": "Portuguese Ships and Lisbon Envoys → Pepper, Manillas and Cowrie Money → Olfert Dapper’s Thirty Wide Streets",
+            "gloss": "Portuguese Ships and Lisbon Envoys → Pepper, Manillas and Cowrie Money → Olfert Dapper’s Thirty Wide Streets",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Portuguese Ships and Lisbon Envoys",
+                "dateChip": "AD 1485–1553",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "João Afonso de Aveiro",
+                "gloss": "After João Afonso de Aveiro reached Gwato port in 1485, the Oba regulated foreign trade strictly, sent ambassadors to Lisbon, and learned Portuguese.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "João Afonso de Aveiro",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "João Afonso de Aveiro",
+                    "gloss": "Portuguese explorer who visited Benin; City in AD 1485.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Portuguese explorer who visited Benin",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "João Afonso de Aveiro",
+                        "gloss": "Portuguese explorer who visited Benin"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "City in AD 1485",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "João Afonso de Aveiro",
+                        "gloss": "City in AD 1485"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Gwato port",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Gwato port",
+                    "gloss": "River harbour where foreign captains had; to obtain the Oba’s licence.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "River harbour where foreign captains had",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Gwato port",
+                        "gloss": "River harbour where foreign captains had"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "to obtain the Oba’s licence",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Gwato port",
+                        "gloss": "to obtain the Oba’s licence"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ royal ambassadors",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "royal ambassadors",
+                    "gloss": "Benin diplomats sent by ship to the; King of Portugal’s court in Lisbon.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Benin diplomats sent by ship to the",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "royal ambassadors",
+                        "gloss": "Benin diplomats sent by ship to the"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "King of Portugal’s court in Lisbon",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "royal ambassadors",
+                        "gloss": "King of Portugal’s court in Lisbon"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Pepper, Manillas and Cowrie Money",
+                "dateChip": "c. AD 1485–1700",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Benin pepper",
+                "gloss": "Benin swapped spicy pepper, cotton cloth, and ivory for cowrie-shell coins and thousands of brass manillas—melted on Igun Street into palace plaques!",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Benin pepper",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Benin pepper",
+                    "gloss": "Fiery rainforest spice shipped to; Europe in dozens of chests.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Fiery rainforest spice shipped to",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Benin pepper",
+                        "gloss": "Fiery rainforest spice shipped to"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Europe in dozens of chests",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Benin pepper",
+                        "gloss": "Europe in dozens of chests"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "brass manillas",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "brass manillas",
+                    "gloss": "Horseshoe-shaped metal bracelets melted down; to cast Benin plaques.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Horseshoe-shaped metal bracelets melted down",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "brass manillas",
+                        "gloss": "Horseshoe-shaped metal bracelets melted down"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "to cast Benin plaques",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "brass manillas",
+                        "gloss": "to cast Benin plaques"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ cowrie shells",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "cowrie shells",
+                    "gloss": "Glossy white sea shells used; as everyday market currency.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Glossy white sea shells used",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "cowrie shells",
+                        "gloss": "Glossy white sea shells used"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "as everyday market currency",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "cowrie shells",
+                        "gloss": "as everyday market currency"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Olfert Dapper’s Thirty Wide Streets",
+                "dateChip": "AD 1668",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "thirty straight streets",
+                "gloss": "In 1668, Olfert Dapper published Dutch eyewitness accounts praising Benin City’s thirty 120-foot straight streets, polished walls, and Haarlem-sized palace.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "thirty straight streets",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "thirty straight streets",
+                    "gloss": "Broad 120-foot main avenues; crossing seventeenth-century Benin City.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Broad 120-foot main avenues",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "thirty straight streets",
+                        "gloss": "Broad 120-foot main avenues"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "crossing seventeenth-century Benin City",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "thirty straight streets",
+                        "gloss": "crossing seventeenth-century Benin City"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "town of Haarlem",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "town of Haarlem",
+                    "gloss": "Wealthy Dutch city compared in size; to the Oba’s vast walled palace.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Wealthy Dutch city compared in size",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "town of Haarlem",
+                        "gloss": "Wealthy Dutch city compared in size"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "to the Oba’s vast walled palace",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "town of Haarlem",
+                        "gloss": "to the Oba’s vast walled palace"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ polished clay walls",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "polished clay walls",
+                    "gloss": "Smooth red-earth house walls washed; until they shone like mirrors.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Smooth red-earth house walls washed",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "polished clay walls",
+                        "gloss": "Smooth red-earth house walls washed"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "until they shone like mirrors",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "polished clay walls",
+                        "gloss": "until they shone like mirrors"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. 1897 British Invasion, Looted Bronzes and Living Edo Heritage Today",
+            "dateChip": "1897–Present",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Oba Ovonramwen",
+            "q2Chain": "Palm-Oil Rivalry and 1897 Invasion → 4,000+ Looted Bronzes Scattered → Restitution and Living Edo Culture",
+            "gloss": "Palm-Oil Rivalry and 1897 Invasion → 4,000+ Looted Bronzes Scattered → Restitution and Living Edo Culture",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Palm-Oil Rivalry and 1897 Invasion",
+                "dateChip": "1888–Feb 1897",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "palm oil and rubber",
+                "gloss": "Clashing with Oba Ovonramwen over southern Nigeria’s palm oil and rubber trade, 1,200 British troops invaded Benin City in the February 1897 Punitive Expedition.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "palm oil and rubber",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "palm oil and rubber",
+                    "gloss": "Valuable rainforest resources wanted; by British Empire factories.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Valuable rainforest resources wanted",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "palm oil and rubber",
+                        "gloss": "Valuable rainforest resources wanted"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "by British Empire factories",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "palm oil and rubber",
+                        "gloss": "by British Empire factories"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "customs tolls",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "customs tolls",
+                    "gloss": "Royal Benin trade taxes; defended firmly by Ovonramwen.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Royal Benin trade taxes",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "customs tolls",
+                        "gloss": "Royal Benin trade taxes"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "defended firmly by Ovonramwen",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "customs tolls",
+                        "gloss": "defended firmly by Ovonramwen"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Punitive Expedition",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Punitive Expedition",
+                    "gloss": "February 1897 invasion by 1,200; British soldiers into Benin City.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "February 1897 invasion by 1,200",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Punitive Expedition",
+                        "gloss": "February 1897 invasion by 1,200"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "British soldiers into Benin City",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Punitive Expedition",
+                        "gloss": "British soldiers into Benin City"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "4,000+ Looted Bronzes Scattered",
+                "dateChip": "1897–1900s",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "palace storehouses",
+                "gloss": "After exiling Oba Ovonramwen and burning the palace, Britain shipped over 4,000 plaques, heads, and tusks from palace storehouses to sell across 160+ world museums.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "palace storehouses",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "palace storehouses",
+                    "gloss": "Royal rooms stripped of sacred plaques,; brass heads, and carved tusks.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Royal rooms stripped of sacred plaques,",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "palace storehouses",
+                        "gloss": "Royal rooms stripped of sacred plaques,"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "brass heads, and carved tusks",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "palace storehouses",
+                        "gloss": "brass heads, and carved tusks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "four thousand artworks",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "four thousand artworks",
+                    "gloss": "Number of Benin treasures crated and; auctioned to pay war costs.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Number of Benin treasures crated and",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "four thousand artworks",
+                        "gloss": "Number of Benin treasures crated and"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "auctioned to pay war costs",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "four thousand artworks",
+                        "gloss": "auctioned to pay war costs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ world museums",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "world museums",
+                    "gloss": "Over 160 collections across Europe and; America that bought looted bronzes.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Over 160 collections across Europe and",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "world museums",
+                        "gloss": "Over 160 collections across Europe and"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "America that bought looted bronzes",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "world museums",
+                        "gloss": "America that bought looted bronzes"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "Restitution and Living Edo Culture",
+                "dateChip": "1914–Present",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "restitution",
+                "gloss": "Since 2021, Cambridge, London’s Horniman Museum, and Germany have begun restitution to Nigeria, where Oba Ewuare II and Igun Street casters keep Edo culture thriving!",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "restitution",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "restitution",
+                    "gloss": "Rightfully returning looted 1897 bronzes; from foreign museums to Nigeria.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Rightfully returning looted 1897 bronzes",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "restitution",
+                        "gloss": "Rightfully returning looted 1897 bronzes"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "from foreign museums to Nigeria",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "restitution",
+                        "gloss": "from foreign museums to Nigeria"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Oba Ewuare II",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Oba Ewuare II",
+                    "gloss": "Modern Oba of Benin leading royal; ceremonies and welcoming returned art.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Modern Oba of Benin leading royal",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Oba Ewuare II",
+                        "gloss": "Modern Oba of Benin leading royal"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "ceremonies and welcoming returned art",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Oba Ewuare II",
+                        "gloss": "ceremonies and welcoming returned art"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ living Edo culture",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "living Edo culture",
+                    "gloss": "Vibrant traditions, Igue festivals, and; active Igun Street brass-casting today.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Vibrant traditions, Igue festivals, and",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "living Edo culture",
+                        "gloss": "Vibrant traditions, Igue festivals, and"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "active Igun Street brass-casting today",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "living Edo culture",
+                        "gloss": "active Igun Street brass-casting today"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

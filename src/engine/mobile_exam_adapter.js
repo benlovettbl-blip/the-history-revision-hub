@@ -65,14 +65,55 @@ export const GCSE_EXAM_COURSES = [
     paperLabel: 'Paper 3 · Modern Depth Study',
     optionCode: 'Option 33 (1HI0/33)',
   },
+  {
+    id: 'ocr_persian_empire',
+    pillLabel: 'Persia (OCR)',
+    shortTitle: 'The Persian Empire, 559–465 BC',
+    fullTitle: 'The Persian Empire, 559–465 BC (OCR J198/01)',
+    paperLabel: 'OCR J198/01 · Sec A Period Study',
+    optionCode: 'J198/01 Sec A (60m incl. 5 SPaG)',
+    examBoard: 'OCR_J198',
+  },
+  {
+    id: 'ocr_alexander',
+    pillLabel: 'Alexander (OCR)',
+    shortTitle: 'Alexander the Great, 356–323 BC',
+    fullTitle: 'Alexander the Great, 356–323 BC (OCR J198/01)',
+    paperLabel: 'OCR J198/01 · Sec D Depth Study',
+    optionCode: 'J198/01 Sec D (45m · Set Sources)',
+    examBoard: 'OCR_J198',
+  },
+  {
+    id: 'ocr_foundations_of_rome',
+    pillLabel: 'Origins of Rome (OCR)',
+    shortTitle: 'Foundations of Rome, 753–440 BC',
+    fullTitle: 'Foundations of Rome: Kingship to Republic, 753–440 BC (OCR J198/02)',
+    paperLabel: 'OCR J198/02 · Sec A Period Study',
+    optionCode: 'J198/02 Sec A (60m incl. 5 SPaG)',
+    examBoard: 'OCR_J198',
+  },
+  {
+    id: 'ocr_cleopatra',
+    pillLabel: 'Cleopatra (OCR)',
+    shortTitle: 'Cleopatra: Rome & Egypt, 69–30 BC',
+    fullTitle: 'Cleopatra: Rome and Egypt, 69–30 BC (OCR J198/02)',
+    paperLabel: 'OCR J198/02 · Sec C Depth Study',
+    optionCode: 'J198/02 Sec C (45m · Set Sources)',
+    examBoard: 'OCR_J198',
+  },
 ];
 
 export const TARIFF_FILTERS = [
   { key: 'all', label: 'All' },
   { key: '4m', label: '4m' },
+  { key: '5m', label: '5m' },
+  { key: '6m', label: '6m' },
   { key: '8m', label: '8m' },
+  { key: '10m', label: '10m' },
   { key: '12m', label: '12m' },
+  { key: '15m', label: '15m' },
   { key: '16m', label: '16m' },
+  { key: '20m', label: '20m' },
 ];
 
 const GCSE_COURSE_MAP = new Map(GCSE_EXAM_COURSES.map((c) => [c.id, c]));
@@ -126,6 +167,30 @@ const CANONICAL_KT_TITLES = {
     KT2: 'Protest, Progress & Radicalism, 1960–75',
     KT3: 'US Involvement in the Vietnam War, 1954–75',
     KT4: 'Reactions to US Involvement in Vietnam, 1964–75',
+  },
+  ocr_persian_empire: {
+    KT1: 'Rise of the Persian Empire under Cyrus the Great, 559–530 BC',
+    KT2: 'Cambyses II, Bardiya & the Crisis of 522 BC, 530–522 BC',
+    KT3: 'Darius the Great: Organising & Expanding Empire, 522–486 BC',
+    KT4: 'Xerxes I & the Invasion of Greece, 486–465 BC',
+  },
+  ocr_alexander: {
+    KT1: 'Upbringing, Character, Beliefs & Succession, 356–334 BC',
+    KT2: 'Conquering Asia Minor, Egypt & Darius III, 334–330 BC',
+    KT3: 'Persian Court Dress, Plots & Mutiny in the East, 330–325 BC',
+    KT4: 'Return to Babylon, Susa, Death & Legacy, 325–323 BC',
+  },
+  ocr_foundations_of_rome: {
+    KT1: 'Legendary Kings: Origins of Rome, 753–616 BC',
+    KT2: 'Etruscan Kings & Fall of the Monarchy, 616–509 BC',
+    KT3: 'Securing the Republic & First Secession, 509–494 BC',
+    KT4: 'Conflict of the Orders & Twelve Tables, 494–440 BC',
+  },
+  ocr_cleopatra: {
+    KT1: 'Upbringing, Ptolemaic Alexandria & Accession, 69–49 BC',
+    KT2: 'Cleopatra & Julius Caesar, 48–44 BC',
+    KT3: 'Cleopatra & Mark Antony: Tarsus to Donations, 42–34 BC',
+    KT4: 'Propaganda War, Actium & Suicide, 33–30 BC',
   },
 };
 
@@ -242,7 +307,97 @@ export function normalizeExamTariff(qObj = {}) {
 
   const hasSpag =
     Boolean(qObj.spagMarks || qObj.spag_marks) ||
-    /spag|16\s*\+\s*4/.test(combined);
+    /spag|16\s*\+\s*4|20\s*\+\s*5/.test(combined);
+
+  // OCR J198 20-mark Essay (Period Study +5 SPaG OR Depth Study Set-Sources Essay)
+  if (
+    parsedNum === 20 ||
+    parsedNum === 25 ||
+    rawType.includes('ocr_period_essay_20') ||
+    rawType.includes('ocr_depth_essay_20') ||
+    rawType.includes('20m')
+  ) {
+    const isDepthSetSource =
+      rawType.includes('depth') ||
+      /\bancient\s+sources\s+you\s+have\s+studied\b/.test(rawText);
+    return {
+      marks: 20,
+      rawMarks: 20,
+      spagMarks: isDepthSetSource ? 0 : hasSpag ? 5 : 0,
+      tariffKey: '20m',
+      badgeLabel: isDepthSetSource ? '20m Set-Sources Essay' : '20m (+5 SPaG) Period Essay',
+      minsSuggested: isDepthSetSource ? 25 : 28,
+      family: isDepthSetSource ? 'ocr_depth_essay' : 'ocr_period_essay',
+    };
+  }
+
+  // OCR J198 15-mark Unseen Passage + Second-Order Concept
+  if (parsedNum === 15 || rawType.includes('ocr_passage_15')) {
+    return {
+      marks: 15,
+      rawMarks: 15,
+      spagMarks: 0,
+      tariffKey: '15m',
+      badgeLabel: '15m Passage + Own Knowledge',
+      minsSuggested: 18,
+      family: 'ocr_passage_15',
+    };
+  }
+
+  // OCR J198 10-mark Unseen Passage OR Depth Second-Order Explain
+  if (
+    parsedNum === 10 ||
+    rawType.includes('ocr_passage_10') ||
+    rawType.includes('ocr_depth_explain_10')
+  ) {
+    const isPassage = rawType.includes('passage') || /\busing\s+details\s+from\s+passage\b/.test(rawText);
+    return {
+      marks: 10,
+      rawMarks: 10,
+      spagMarks: 0,
+      tariffKey: '10m',
+      badgeLabel: isPassage ? '10m Passage Evaluation' : '10m Second-Order Explain',
+      minsSuggested: 12,
+      family: isPassage ? 'ocr_passage_10' : 'ocr_depth_explain_10',
+    };
+  }
+
+  // OCR J198 6-mark Outline
+  if (parsedNum === 6 || rawType.includes('ocr_outline_6') || /\boutline\s+the\s+main\b/.test(rawText)) {
+    return {
+      marks: 6,
+      rawMarks: 6,
+      spagMarks: 0,
+      tariffKey: '6m',
+      badgeLabel: '6m Outline Features',
+      minsSuggested: 7,
+      family: 'ocr_outline_6',
+    };
+  }
+
+  // OCR J198 5-mark Depth Questions (Discrete Recall, Source Learn, Source Accuracy)
+  if (
+    parsedNum === 5 ||
+    rawType.includes('ocr_depth_5') ||
+    rawType.includes('ocr_source_learn_5') ||
+    rawType.includes('ocr_source_accuracy_5')
+  ) {
+    const isAccuracy = rawType.includes('accuracy') || /\bhow\s+accurate\s+do\s+you\s+think\b/.test(rawText);
+    const isLearn = rawType.includes('learn') || /\bwhat\s+can\s+we\s+learn\s+from\s+(?:passage|source)\b/.test(rawText);
+    return {
+      marks: 5,
+      rawMarks: 5,
+      spagMarks: 0,
+      tariffKey: '5m',
+      badgeLabel: isAccuracy
+        ? '5m Source Accuracy (AO3)'
+        : isLearn
+          ? '5m What Can We Learn (AO3)'
+          : '5m Discrete Knowledge',
+      minsSuggested: 6,
+      family: isAccuracy ? 'ocr_accuracy_5' : isLearn ? 'ocr_learn_5' : 'ocr_discrete_5',
+    };
+  }
 
   // 16-mark Judgement / Interpretation Essay
   if (
@@ -619,7 +774,7 @@ function extractRequestedSourceLetters(questionText) {
     add(m[1]);
     add(m[2]);
   }
-  for (const m of text.matchAll(/\bSource\s+([A-E])\b/gi)) {
+  for (const m of text.matchAll(/\b(?:Source|Passage)\s+([A-E])\b/gi)) {
     add(m[1]);
   }
   return letters;
@@ -842,7 +997,7 @@ function wrapActiveRecallTokensInHtml(htmlSnippet, vocabTerms = []) {
   // 2. Tokenize remaining plain-text nodes (dates, stats, quoted source evidence, proper-noun terms & vocab)
   const parts = processed.split(/(<span class="met-recall-chip"[\s\S]*?<\/span>|<[^>]+>)/gi);
   const dateOrStatPattern =
-    '(?:c\\.?\\s*\\d{4}(?:[–-]\\d{2,4})?|\\b(?:1[0-9]{3}|20[0-2][0-9])(?:[–-](?:\\d{2}|\\d{4}))?s?\\b|(?:£|\\$)\\d+(?:[.,]\\d+)?(?:\\s*(?:million|billion))?|\\b\\d{1,3}(?:,\\d{3})+(?:\\s+(?:troops|soldiers|deaths|refugees|flights|ships|men|citizens))?\\b|\\b\\d+(?:\\.\\d+)?%|&quot;[^&]{8,72}&quot;)';
+    '(?:c\\.?\\s*\\d{2,4}(?:[–-]\\d{2,4})?\\s*(?:BC|BCE|AD)?|\\b\\d{2,4}\\s*(?:BC|BCE)\\b|\\b(?:1[0-9]{3}|20[0-2][0-9])(?:[–-](?:\\d{2}|\\d{4}))?s?\\b|(?:£|\\$)\\d+(?:[.,]\\d+)?(?:\\s*(?:million|billion))?|\\b\\d{1,3}(?:,\\d{3})+(?:\\s+(?:troops|soldiers|deaths|refugees|flights|ships|men|citizens|talents))?\\b|\\b\\d+(?:\\.\\d+)?%|&quot;[^&]{6,85}&quot;)';
 
   const combinedRegex = new RegExp(
     escapedVocabAlternation

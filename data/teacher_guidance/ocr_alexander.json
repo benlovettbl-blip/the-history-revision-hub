@@ -1,0 +1,28 @@
+{
+  "unit_id": "ocr_alexander",
+  "unit_overview": {
+    "curriculum_focus": "OCR GCSE (9–1) Ancient History J198/01 Section D: Alexander the Great, 356–323 BC.",
+    "disciplinary_threads": "Discrete Recall (5m), Prescribed Source Inference (5m AO3), Prescribed Source Accuracy (5m AO3), Second-Order Explain (10m AO1+AO2), and Set-Sources Essay (20m: 10m AO3!).",
+    "non_specialist_summary": "Follows Alexander chronologically from Pella (356 BC) to Babylon (323 BC) anchored 100% in OCR Appendix 5f Prescribed Set Sources (Plutarch, Arrian, Diodorus, Pompeii Mosaic, Alexander Sarcophagus, Astronomical Diary, and Lysimachus/Ptolemy coins)."
+  },
+  "lessons": {
+    "lesson_1_1": {
+      "curriculum_link": "KT 1.1: Alexander’s youth; character, political and personal influence of Olympias; relationship with Philip.",
+      "hinge_question": "Which parent left the deeper mark on young Alexander by 337 BC: Olympias or Philip II?",
+      "hinge_guidance": "Top-band Q20* responses contrast Olympias’ Achilles/Zeus Ammon spiritual identity (Plutarch 2–3 + Lysimachus coin) against Philip’s practical mentorship at Bucephalas, Mieza, and Chaeronea (Plutarch 6–9).",
+      "misconceptions": [
+        {
+          "misconception": "Confusing the curved horn on Lysimachus’ silver tetradrachm with the Egyptian god Ptah.",
+          "correction": "2025 OCR Examiner Report highlight: the curved horn around Alexander’s ear is the ram’s horn of Zeus Ammon."
+        },
+        {
+          "misconception": "Dismissing Plutarch as \"unreliable because he wasn’t born yet / wanted a bestseller\".",
+          "correction": "Explain that Plutarch wrote 2nd-century AD moral biography (\"Lives, not Histories\") using lost 4th-century BC court memoirs to highlight character virtues and flaws."
+        }
+      ],
+      "send_adaptation": "Use the 140-word Exam-Cut extracts with Green Golden Quotes first, opening the Scene-Tabbed Full Set Text Modal one short tab at a time.",
+      "stretch_challenge": "Compare Plutarch’s two rival traditions in Chapter 3.3–3.4 over whether Olympias encouraged or mocked Alexander’s claim to divine parentage.",
+      "safeguarding_impartiality": "Contextualise ancient Macedonian royal polygamy and Greek gender stereotypes towards Epirote women historically and objectively."
+    }
+  }
+}

@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_local_history_detective",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "History on Our Doorstep — Local History Detective Toolkit (Roman Towns to Living Memory)",
+  "examDateBoundary": "AD 43–Present",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Local History Toolkit",
+    "subLabel": "Key Stage 2",
+    "dateChip": "AD 43–Present",
+    "gloss": "Universal UK Local History Detective Toolkit — uniting place-names, 1880s Ordnance Survey maps, High Street architecture, Censuses, School Logbooks, canals, War Memorials, and living oral history.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#0369a1",
+        "label": "1. Maps, Names and Buildings",
+        "dateChip": "AD 43–1914",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Castra",
+        "gloss": "Place-Name Settler Clues → Victorian Ordnance Survey Maps → Stone Benchmarks and Trig Pillars • Tudor Timber and Jetties → Georgian Sash vs Victorian Brick → Cyphers, Datestones and Ghost Signs",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Secret Code in Place-Names and Old Ordnance Survey Maps",
+            "dateChip": "AD 43–1936",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Castra",
+            "q2Chain": "Place-Name Settler Clues → Victorian Ordnance Survey Maps → Stone Benchmarks and Trig Pillars",
+            "gloss": "Place-Name Settler Clues → Victorian Ordnance Survey Maps → Stone Benchmarks and Trig Pillars",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Place-Name Settler Clues",
+                "dateChip": "AD 43–1086",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "castra",
+                "gloss": "Roman castra forts (-chester), Anglo-Saxon homesteads (-ham, -ton, -ford), and Viking villages (-by) left lasting clues recorded in the 1086 Domesday Book.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "castra",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "castra",
+                    "gloss": "Latin word for a walled Roman; fort behind -chester and -caster.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Latin word for a walled Roman",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "castra",
+                        "gloss": "Latin word for a walled Roman"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "fort behind -chester and -caster",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "castra",
+                        "gloss": "fort behind -chester and -caster"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "homesteads",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "homesteads",
+                    "gloss": "Anglo-Saxon family farms remembered in; -ham and -ton names.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Anglo-Saxon family farms remembered in",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "homesteads",
+                        "gloss": "Anglo-Saxon family farms remembered in"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "-ham and -ton names",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "homesteads",
+                        "gloss": "-ham and -ton names"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ Domesday Book",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Domesday Book",
+                    "gloss": "King William’s 1086 survey naming; over 13,000 English places.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "King William’s 1086 survey naming",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Domesday Book",
+                        "gloss": "King William’s 1086 survey naming"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "over 13,000 English places",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Domesday Book",
+                        "gloss": "over 13,000 English places"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Victorian Ordnance Survey Maps",
+                "dateChip": "1791–1900",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "Ordnance Survey",
+                "gloss": "Founded in 1791, the Ordnance Survey published detailed 1880s Victorian parish and town maps recording every street, mill, and field.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "Ordnance Survey",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Ordnance Survey",
+                    "gloss": "Britain’s national mapping agency; founded in 1791.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Britain’s national mapping agency",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Ordnance Survey",
+                        "gloss": "Britain’s national mapping agency"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "founded in 1791",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Ordnance Survey",
+                        "gloss": "founded in 1791"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "vanished mills",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "vanished mills",
+                    "gloss": "Lost workplaces and ponds still; visible on 1880s town maps.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Lost workplaces and ponds still",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "vanished mills",
+                        "gloss": "Lost workplaces and ponds still"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "visible on 1880s town maps",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "vanished mills",
+                        "gloss": "visible on 1880s town maps"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ Gloucester",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Gloucester",
+                    "gloss": "Historic city whose 1880s OS plan; shows old churches and banks.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Historic city whose 1880s OS plan",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Gloucester",
+                        "gloss": "Historic city whose 1880s OS plan"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "shows old churches and banks",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Gloucester",
+                        "gloss": "shows old churches and banks"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Stone Benchmarks and Trig Pillars",
+                "dateChip": "1840s–1936",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "broad arrow",
+                "gloss": "Surveyors chiseled broad-arrow benchmarks into stone walls for exact sea-level heights and built hilltop concrete trig pillars from 1936.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "broad arrow",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "broad arrow",
+                    "gloss": "Three-line upward symbol carved beneath; a stone benchmark bar.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Three-line upward symbol carved beneath",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "broad arrow",
+                        "gloss": "Three-line upward symbol carved beneath"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "a stone benchmark bar",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "broad arrow",
+                        "gloss": "a stone benchmark bar"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "trig pillars",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "trig pillars",
+                    "gloss": "White concrete hilltop columns built; from 1936 for sighting angles.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "White concrete hilltop columns built",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "trig pillars",
+                        "gloss": "White concrete hilltop columns built"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "from 1936 for sighting angles",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "trig pillars",
+                        "gloss": "from 1936 for sighting angles"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ surveyors",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "surveyors",
+                    "gloss": "Map-makers who measured exact heights; and triangle angles outdoors.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Map-makers who measured exact heights",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "surveyors",
+                        "gloss": "Map-makers who measured exact heights"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "and triangle angles outdoors",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "surveyors",
+                        "gloss": "and triangle angles outdoors"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Reading Buildings on the High Street",
+            "dateChip": "1485–1914",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Jetty",
+            "q2Chain": "Tudor Timber and Jetties → Georgian Sash vs Victorian Brick → Cyphers, Datestones and Ghost Signs",
+            "gloss": "Tudor Timber and Jetties → Georgian Sash vs Victorian Brick → Cyphers, Datestones and Ghost Signs",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Tudor Timber and Jetties",
+                "dateChip": "1485–1666",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "oak timber",
+                "gloss": "Looking above modern shopfronts reveals medieval stone churches and Tudor oak-beamed houses with wattle-and-daub panels and overhanging upper jetties.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "oak timber",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "oak timber",
+                    "gloss": "Heavy wooden beams pegged together; to frame Tudor town houses.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Heavy wooden beams pegged together",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "oak timber",
+                        "gloss": "Heavy wooden beams pegged together"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "to frame Tudor town houses",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "oak timber",
+                        "gloss": "to frame Tudor town houses"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "upper jetty",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "upper jetty",
+                    "gloss": "Overhanging top floor jutting out; to make extra space upstairs.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Overhanging top floor jutting out",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "upper jetty",
+                        "gloss": "Overhanging top floor jutting out"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "to make extra space upstairs",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "upper jetty",
+                        "gloss": "to make extra space upstairs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ wattle and daub",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "wattle and daub",
+                    "gloss": "Woven sticks and plaster filling; spaces between dark Tudor beams.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Woven sticks and plaster filling",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "wattle and daub",
+                        "gloss": "Woven sticks and plaster filling"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "spaces between dark Tudor beams",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "wattle and daub",
+                        "gloss": "spaces between dark Tudor beams"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Georgian Sash vs Victorian Brick",
+                "dateChip": "1714–1901",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "sash windows",
+                "gloss": "Georgian streets prized calm symmetry and sliding sash windows, whereas Victorian railways brought bright machine-made red brick, terracotta, and bay windows.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "sash windows",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "sash windows",
+                    "gloss": "Tall Georgian wooden window frames sliding; up and down on cords.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Tall Georgian wooden window frames sliding",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "sash windows",
+                        "gloss": "Tall Georgian wooden window frames sliding"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "up and down on cords",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "sash windows",
+                        "gloss": "up and down on cords"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "red brick",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "red brick",
+                    "gloss": "Bright machine-made Victorian bricks; carried cheaply by train.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Bright machine-made Victorian bricks",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "red brick",
+                        "gloss": "Bright machine-made Victorian bricks"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "carried cheaply by train",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "red brick",
+                        "gloss": "carried cheaply by train"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ terracotta",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "terracotta",
+                    "gloss": "Moulded baked clay ornament; decorating grand Victorian halls.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Moulded baked clay ornament",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "terracotta",
+                        "gloss": "Moulded baked clay ornament"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "decorating grand Victorian halls",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "terracotta",
+                        "gloss": "decorating grand Victorian halls"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Cyphers, Datestones and Ghost Signs",
+                "dateChip": "1852–Present",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "royal cyphers",
+                "gloss": "Cast-iron postbox royal cyphers (like V.R. and G.R.), doorway datestones, and faded brick ghost signs date streets and lost shops.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "royal cyphers",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "royal cyphers",
+                    "gloss": "Monarchs’ initials like V.R. or; G.R. cast onto red postboxes.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Monarchs’ initials like V.R. or",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "royal cyphers",
+                        "gloss": "Monarchs’ initials like V.R. or"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "G.R. cast onto red postboxes",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "royal cyphers",
+                        "gloss": "G.R. cast onto red postboxes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "datestones",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "datestones",
+                    "gloss": "Carved stone plaques recording the; year and original building name.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Carved stone plaques recording the",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "datestones",
+                        "gloss": "Carved stone plaques recording the"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "year and original building name",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "datestones",
+                        "gloss": "year and original building name"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ ghost signs",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "ghost signs",
+                    "gloss": "Faded hand-painted adverts surviving high; on old brick walls.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Faded hand-painted adverts surviving high",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "ghost signs",
+                        "gloss": "Faded hand-painted adverts surviving high"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "on old brick walls",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "ghost signs",
+                        "gloss": "on old brick walls"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "left",
+        "color": "#b45309",
+        "label": "2. Families, Schools and Work",
+        "dateChip": "1538–1965",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Census",
+        "gloss": "The Ten-Year UK Census → Parish Books and Headstones → Victorian School Logbooks • Market Halls and Milestones → Canals, Locks and Watermills → Steam Stations and Street Names",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Who Lived in Number 12? Censuses, Parish Books and School Logbooks",
+            "dateChip": "1538–1921",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Census",
+            "q2Chain": "The Ten-Year UK Census → Parish Books and Headstones → Victorian School Logbooks",
+            "gloss": "The Ten-Year UK Census → Parish Books and Headstones → Victorian School Logbooks",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "The Ten-Year UK Census",
+                "dateChip": "1801–1921",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "enumerators",
+                "gloss": "Held every ten years since 1801 (naming everyone from 1841), UK Censuses record household ages, birthplaces, and vanished jobs like ostlers and lamplighters.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "enumerators",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "enumerators",
+                    "gloss": "Local officers who walked door; to door copying Census schedules.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Local officers who walked door",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "enumerators",
+                        "gloss": "Local officers who walked door"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "to door copying Census schedules",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "enumerators",
+                        "gloss": "to door copying Census schedules"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "occupations",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "occupations",
+                    "gloss": "Jobs column listing carpenters,; servants, ostlers, and lamplighters.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Jobs column listing carpenters,",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "occupations",
+                        "gloss": "Jobs column listing carpenters,"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "servants, ostlers, and lamplighters",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "occupations",
+                        "gloss": "servants, ostlers, and lamplighters"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ lamplighters",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "lamplighters",
+                    "gloss": "Victorian workers who lit street gas lamps; at dusk with a long pole.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Victorian workers who lit street gas lamps",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "lamplighters",
+                        "gloss": "Victorian workers who lit street gas lamps"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "at dusk with a long pole",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "lamplighters",
+                        "gloss": "at dusk with a long pole"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Parish Books and Headstones",
+                "dateChip": "1538–1801",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "parish registers",
+                "gloss": "From 1538, parish church registers recorded local baptisms, marriages, and burials, complemented outdoors by carved churchyard headstones.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "parish registers",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "parish registers",
+                    "gloss": "Church books started in 1538; listing baptisms, weddings, and burials.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Church books started in 1538",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "parish registers",
+                        "gloss": "Church books started in 1538"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "listing baptisms, weddings, and burials",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "parish registers",
+                        "gloss": "listing baptisms, weddings, and burials"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "baptisms",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "baptisms",
+                    "gloss": "Church christening records naming babies,; parents, and fathers’ trades.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Church christening records naming babies,",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "baptisms",
+                        "gloss": "Church christening records naming babies,"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "parents, and fathers’ trades",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "baptisms",
+                        "gloss": "parents, and fathers’ trades"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ headstones",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "headstones",
+                    "gloss": "Carved churchyard memorials recording names,; death dates, and ages.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Carved churchyard memorials recording names,",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "headstones",
+                        "gloss": "Carved churchyard memorials recording names,"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "death dates, and ages",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "headstones",
+                        "gloss": "death dates, and ages"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Victorian School Logbooks",
+                "dateChip": "1862–1914",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "School Logbooks",
+                "gloss": "From 1862, headteachers wrote weekly School Logbooks recording harvest absences, snowdrifts, illnesses, slate lessons, and inspector visits.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "School Logbooks",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "School Logbooks",
+                    "gloss": "Compulsory weekly diaries written by; British headteachers from 1862.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Compulsory weekly diaries written by",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "School Logbooks",
+                        "gloss": "Compulsory weekly diaries written by"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "British headteachers from 1862",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "School Logbooks",
+                        "gloss": "British headteachers from 1862"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "slate boards",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "slate boards",
+                    "gloss": "Reusable grey stone writing tablets; used by Victorian pupils.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Reusable grey stone writing tablets",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "slate boards",
+                        "gloss": "Reusable grey stone writing tablets"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "used by Victorian pupils",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "slate boards",
+                        "gloss": "used by Victorian pupils"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ harvests",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "harvests",
+                    "gloss": "Autumn farm work that emptied; country classrooms in September.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Autumn farm work that emptied",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "harvests",
+                        "gloss": "Autumn farm work that emptied"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "country classrooms in September",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "harvests",
+                        "gloss": "country classrooms in September"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. How Our Town Earned Its Living",
+            "dateChip": "1600–1965",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Turnpike",
+            "q2Chain": "Market Halls and Milestones → Canals, Locks and Watermills → Steam Stations and Street Names",
+            "gloss": "Market Halls and Milestones → Canals, Locks and Watermills → Steam Stations and Street Names",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Market Halls and Milestones",
+                "dateChip": "1600–1830",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "market crosses",
+                "gloss": "Covered market crosses sheltered local farm trade while turnpike trusts smoothed coach roads and set carved stone milestones every mile.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "market crosses",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "market crosses",
+                    "gloss": "Roofed town shelters where country farmers; sold butter, wool, and grain.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Roofed town shelters where country farmers",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "market crosses",
+                        "gloss": "Roofed town shelters where country farmers"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "sold butter, wool, and grain",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "market crosses",
+                        "gloss": "sold butter, wool, and grain"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "turnpike roads",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "turnpike roads",
+                    "gloss": "Main 18th-century toll highways; maintained for horse-drawn coaches.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Main 18th-century toll highways",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "turnpike roads",
+                        "gloss": "Main 18th-century toll highways"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "maintained for horse-drawn coaches",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "turnpike roads",
+                        "gloss": "maintained for horse-drawn coaches"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ milestones",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "milestones",
+                    "gloss": "Carved roadside stones recording exact; miles to towns and London.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Carved roadside stones recording exact",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "milestones",
+                        "gloss": "Carved roadside stones recording exact"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "miles to towns and London",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "milestones",
+                        "gloss": "miles to towns and London"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Canals, Locks and Watermills",
+                "dateChip": "1760–1840",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "narrowboats",
+                "gloss": "Fast streams turned mill waterwheels while horse-drawn narrowboats climbed wooden canal locks and iron aqueducts carrying heavy coal and pottery.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "narrowboats",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "narrowboats",
+                    "gloss": "Long, slim cargo boats pulled smoothly; along canals by one horse.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Long, slim cargo boats pulled smoothly",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "narrowboats",
+                        "gloss": "Long, slim cargo boats pulled smoothly"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "along canals by one horse",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "narrowboats",
+                        "gloss": "along canals by one horse"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "canal locks",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "canal locks",
+                    "gloss": "Water-filled chambers with wooden gates; lifting boats up hills.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Water-filled chambers with wooden gates",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "canal locks",
+                        "gloss": "Water-filled chambers with wooden gates"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "lifting boats up hills",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "canal locks",
+                        "gloss": "lifting boats up hills"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ waterwheels",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "waterwheels",
+                    "gloss": "Giant riverside wheels turning; millstones and textile machinery.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Giant riverside wheels turning",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "waterwheels",
+                        "gloss": "Giant riverside wheels turning"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "millstones and textile machinery",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "waterwheels",
+                        "gloss": "millstones and textile machinery"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Steam Stations and Street Names",
+                "dateChip": "1830–1965",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "steam railways",
+                "gloss": "Victorian steam railways connected British towns until many country branch lines closed in the 1960s, leaving clues in bridges, cycle paths, and street names.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "steam railways",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "steam railways",
+                    "gloss": "Fast Victorian train lines linking; ports, mines, farms, and cities.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Fast Victorian train lines linking",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "steam railways",
+                        "gloss": "Fast Victorian train lines linking"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "ports, mines, farms, and cities",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "steam railways",
+                        "gloss": "ports, mines, farms, and cities"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "Station Road",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Station Road",
+                    "gloss": "Common street name still pointing to; a live or vanished station.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Common street name still pointing to",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Station Road",
+                        "gloss": "Common street name still pointing to"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "a live or vanished station",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Station Road",
+                        "gloss": "a live or vanished station"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ branch lines",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "branch lines",
+                    "gloss": "Smaller rural train routes, many turned; into walking trails after the 1960s.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Smaller rural train routes, many turned",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "branch lines",
+                        "gloss": "Smaller rural train routes, many turned"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "into walking trails after the 1960s",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "branch lines",
+                        "gloss": "into walking trails after the 1960s"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "3. Memorials and Living Memory",
+        "dateChip": "1895–Present",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "War Memorial",
+        "gloss": "Village and Town War Memorials → Fabian Ware and Equal Headstones → Tracing One Name to One Street • Oral History and Living Memory → National Trust and Listed Buildings → Designing a Local Heritage Trail",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Names Carved in Stone",
+            "dateChip": "1914–1945",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "War Memorial",
+            "q2Chain": "Village and Town War Memorials → Fabian Ware and Equal Headstones → Tracing One Name to One Street",
+            "gloss": "Village and Town War Memorials → Fabian Ware and Equal Headstones → Tracing One Name to One Street",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Village and Town War Memorials",
+                "dateChip": "1918–1945",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "War Memorials",
+                "gloss": "Because fallen service personnel were buried overseas, British communities built over 100,000 local War Memorials after 1918 and added 1939–1945 names later.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "War Memorials",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "War Memorials",
+                    "gloss": "Local crosses and church; plaques naming fallen neighbours.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Local crosses and church",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "War Memorials",
+                        "gloss": "Local crosses and church"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "plaques naming fallen neighbours",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "War Memorials",
+                        "gloss": "plaques naming fallen neighbours"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "surnames",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "surnames",
+                    "gloss": "Family names carved in stone—often; brothers from one street.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Family names carved in stone—often",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "surnames",
+                        "gloss": "Family names carved in stone—often"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "brothers from one street",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "surnames",
+                        "gloss": "brothers from one street"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ poppy wreaths",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "poppy wreaths",
+                    "gloss": "Red Remembrance tributes laid at; local memorials each November.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Red Remembrance tributes laid at",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "poppy wreaths",
+                        "gloss": "Red Remembrance tributes laid at"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "local memorials each November",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "poppy wreaths",
+                        "gloss": "local memorials each November"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Fabian Ware and Equal Headstones",
+                "dateChip": "1917–1922",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Fabian Ware",
+                "gloss": "Founded by Fabian Ware in 1917, the War Graves Commission gave generals and privates identical white Portland stone headstones carved with regimental badges.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "Fabian Ware",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Fabian Ware",
+                    "gloss": "Red Cross commander who founded the; War Graves Commission in 1917.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Red Cross commander who founded the",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Fabian Ware",
+                        "gloss": "Red Cross commander who founded the"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "War Graves Commission in 1917",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Fabian Ware",
+                        "gloss": "War Graves Commission in 1917"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "Portland stone",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Portland stone",
+                    "gloss": "Pale Dorset limestone used; for uniform CWGC headstones.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Pale Dorset limestone used",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Portland stone",
+                        "gloss": "Pale Dorset limestone used"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "for uniform CWGC headstones",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Portland stone",
+                        "gloss": "for uniform CWGC headstones"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ regiments",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "regiments",
+                    "gloss": "County or city army units; whose badges appear on headstones.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "County or city army units",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "regiments",
+                        "gloss": "County or city army units"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "whose badges appear on headstones",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "regiments",
+                        "gloss": "whose badges appear on headstones"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Tracing One Name to One Street",
+                "dateChip": "1919–Today",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "memorial plaques",
+                "gloss": "Cross-checking CWGC registers, bronze Memorial Plaques, campaign medals, 1911 Censuses, and wartime newspapers traces one carved name back to a local house.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "memorial plaques",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "memorial plaques",
+                    "gloss": "Round bronze WWI medallions cast; with each fallen person’s name.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Round bronze WWI medallions cast",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "memorial plaques",
+                        "gloss": "Round bronze WWI medallions cast"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "with each fallen person’s name",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "memorial plaques",
+                        "gloss": "with each fallen person’s name"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "service medals",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "service medals",
+                    "gloss": "Silver and rainbow campaign ribbons; awarded for wartime service.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Silver and rainbow campaign ribbons",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "service medals",
+                        "gloss": "Silver and rainbow campaign ribbons"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "awarded for wartime service",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "service medals",
+                        "gloss": "awarded for wartime service"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ local newspapers",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "local newspapers",
+                    "gloss": "Wartime town papers printing soldiers’; letters, photos, and tributes.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Wartime town papers printing soldiers’",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "local newspapers",
+                        "gloss": "Wartime town papers printing soldiers’"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "letters, photos, and tributes",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "local newspapers",
+                        "gloss": "letters, photos, and tributes"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Living Memory, Oral History and Saving Local Heritage",
+            "dateChip": "1895–Present",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Oral History",
+            "q2Chain": "Oral History and Living Memory → National Trust and Listed Buildings → Designing a Local Heritage Trail",
+            "gloss": "Oral History and Living Memory → National Trust and Listed Buildings → Designing a Local Heritage Trail",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Oral History and Living Memory",
+                "dateChip": "1945–Present",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "oral history",
+                "gloss": "Respectful oral history interviews capture post-1945 memories—like corner grocers and pre-1971 shillings—cross-checked against archive photographs.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "oral history",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "oral history",
+                    "gloss": "Recording older people’s spoken memories; of everyday past life.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Recording older people’s spoken memories",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "oral history",
+                        "gloss": "Recording older people’s spoken memories"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "of everyday past life",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "oral history",
+                        "gloss": "of everyday past life"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "shillings",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "shillings",
+                    "gloss": "Pre-decimal British coins used before; Decimal Day in February 1971.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Pre-decimal British coins used before",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "shillings",
+                        "gloss": "Pre-decimal British coins used before"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Decimal Day in February 1971",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "shillings",
+                        "gloss": "Decimal Day in February 1971"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ archive photos",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "archive photos",
+                    "gloss": "Dated street photographs used; to cross-check spoken memories.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Dated street photographs used",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "archive photos",
+                        "gloss": "Dated street photographs used"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "to cross-check spoken memories",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "archive photos",
+                        "gloss": "to cross-check spoken memories"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "National Trust and Listed Buildings",
+                "dateChip": "1866–1947",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Octavia Hill",
+                "gloss": "Ceramic Blue Plaques (from 1866), Octavia Hill’s 1895 National Trust, and 1947 Listed Building laws safeguard Britain’s historic buildings and green spaces.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "Octavia Hill",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Octavia Hill",
+                    "gloss": "Social reformer who co-founded the; National Trust in 1895.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Social reformer who co-founded the",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Octavia Hill",
+                        "gloss": "Social reformer who co-founded the"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "National Trust in 1895",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Octavia Hill",
+                        "gloss": "National Trust in 1895"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "National Trust",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "National Trust",
+                    "gloss": "Charity protecting historic buildings,; mills, coasts, and countryside.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Charity protecting historic buildings,",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "National Trust",
+                        "gloss": "Charity protecting historic buildings,"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "mills, coasts, and countryside",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "National Trust",
+                        "gloss": "mills, coasts, and countryside"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ Listed Buildings",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Listed Buildings",
+                    "gloss": "Historic structures protected from demolitio; by law since 1947.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Historic structures protected from demolitio",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Listed Buildings",
+                        "gloss": "Historic structures protected from demolitio"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "by law since 1947",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Listed Buildings",
+                        "gloss": "by law since 1947"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "Designing a Local Heritage Trail",
+                "dateChip": "Today",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Heritage Trails",
+                "gloss": "Combining place-names, 1880s OS maps, architecture, censuses, War Memorials, and oral history lets pupils design a local Heritage Trail anywhere in the UK.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Clue",
+                    "label": "Heritage Trails",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Heritage Trails",
+                    "gloss": "Mapped walking routes connecting local; historic stops and stories.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Mapped walking routes connecting local",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Heritage Trails",
+                        "gloss": "Mapped walking routes connecting local"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "historic stops and stories",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Heritage Trails",
+                        "gloss": "historic stops and stories"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Method",
+                    "label": "county archives",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "county archives",
+                    "gloss": "Free public record offices holding; local maps, censuses, and logbooks.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Free public record offices holding",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "county archives",
+                        "gloss": "Free public record offices holding"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "local maps, censuses, and logbooks",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "county archives",
+                        "gloss": "local maps, censuses, and logbooks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Discovery",
+                    "label": "→ doorstep clues",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "doorstep clues",
+                    "gloss": "Everyday street names, postboxes,; benchmarks, and buildings outside.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Everyday street names, postboxes,",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "doorstep clues",
+                        "gloss": "Everyday street names, postboxes,"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "benchmarks, and buildings outside",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "doorstep clues",
+                        "gloss": "benchmarks, and buildings outside"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

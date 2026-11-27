@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_6_sA": {
+      "hash": "d0bb7d58e0dbc27d",
+      "bytes": 85868,
+      "voiceKey": "female_historian",
+      "badge": "Mongol Siege Trebuchet Hurling S…",
+      "updatedAt": "2026-11-27T00:25:28.122Z"
+    },
+    "lesson_6_sC": {
+      "hash": "ce561a64be2778ad",
+      "bytes": 82796,
+      "voiceKey": "female_historian",
+      "badge": "Medieval Arabic Diagram of the H…",
+      "updatedAt": "2026-11-27T00:25:28.473Z"
+    },
+    "lesson_1_sA": {
+      "hash": "ff335b367f8b62dc",
+      "bytes": 83468,
+      "voiceKey": "female_historian",
+      "badge": "Golden Dome and Geometric Tilewo…",
+      "updatedAt": "2026-11-27T00:25:29.378Z"
+    },
+    "lesson_2_sA": {
+      "hash": "53fedf6733091b8b",
+      "bytes": 87596,
+      "voiceKey": "female_historian",
+      "badge": "11th-Century Arabic Qur’an Page…",
+      "updatedAt": "2026-11-27T00:25:29.680Z"
+    },
+    "lesson_2_sC": {
+      "hash": "663929cfe2f90db6",
+      "bytes": 78764,
+      "voiceKey": "female_historian",
+      "badge": "Astronomer Al-Sufi’s Arabic Book…",
+      "updatedAt": "2026-11-27T00:25:29.981Z"
+    },
+    "lesson_3_sC": {
+      "hash": "08b23f119c80d358",
+      "bytes": 84236,
+      "voiceKey": "female_historian",
+      "badge": "1224 Baghdad Painting of Doctors…",
+      "updatedAt": "2026-11-27T00:25:30.326Z"
+    },
+    "lesson_4_sA": {
+      "hash": "c07ba4ebd7cb92b3",
+      "bytes": 89708,
+      "voiceKey": "female_historian",
+      "badge": "Painted Arab Dhow Ship on the In…",
+      "updatedAt": "2026-11-27T00:25:30.748Z"
+    },
+    "lesson_4_sC": {
+      "hash": "50a4e0539d0dd328",
+      "bytes": 80588,
+      "voiceKey": "female_historian",
+      "badge": "Carved Early Islamic Clear Glass…",
+      "updatedAt": "2026-11-27T00:25:31.102Z"
+    },
+    "lesson_5_sA": {
+      "hash": "a2a58b18e8f6ae03",
+      "bytes": 88940,
+      "voiceKey": "female_historian",
+      "badge": "9th-Century Cobalt-Blue-on-White…",
+      "updatedAt": "2026-11-27T00:25:31.513Z"
+    },
+    "lesson_5_sC": {
+      "hash": "d8b9a30b9cb0a2d3",
+      "bytes": 85868,
+      "voiceKey": "female_historian",
+      "badge": "Complete 32-Piece Glazed Ceramic…",
+      "updatedAt": "2026-11-27T00:25:31.917Z"
+    },
+    "lesson_1_sB": {
+      "hash": "5a1e2006c55c331a",
+      "bytes": 81068,
+      "voiceKey": "male_historian",
+      "badge": "Bab al-Wastani",
+      "updatedAt": "2026-11-27T00:25:32.481Z"
+    },
+    "lesson_1_sC": {
+      "hash": "0e141c033f006068",
+      "bytes": 75788,
+      "voiceKey": "male_historian",
+      "badge": "Abbasid Gold Dinar Minted Under…",
+      "updatedAt": "2026-11-27T00:25:32.772Z"
+    },
+    "lesson_2_sB": {
+      "hash": "03c5206a0d2b516d",
+      "bytes": 77420,
+      "voiceKey": "male_historian",
+      "badge": "Arabic Medical Page From Transla…",
+      "updatedAt": "2026-11-27T00:25:33.058Z"
+    },
+    "lesson_3_sA": {
+      "hash": "969e19a572a74db8",
+      "bytes": 79532,
+      "voiceKey": "male_historian",
+      "badge": "Arabic Maths Page From Al-Khwari…",
+      "updatedAt": "2026-11-27T00:25:33.349Z"
+    },
+    "lesson_3_sB": {
+      "hash": "6809db1ef3d9c966",
+      "bytes": 70796,
+      "voiceKey": "male_historian",
+      "badge": "Illustrated Page of Surgical Too…",
+      "updatedAt": "2026-11-27T00:25:33.628Z"
+    },
+    "lesson_4_sB": {
+      "hash": "afee341404d64701",
+      "bytes": 70892,
+      "voiceKey": "male_historian",
+      "badge": "Pure Silver Abbasid Dirham Coin…",
+      "updatedAt": "2026-11-27T00:25:33.924Z"
+    },
+    "lesson_5_sB": {
+      "hash": "9e5627661a17f8f8",
+      "bytes": 76268,
+      "voiceKey": "male_historian",
+      "badge": "10th-Century White Bowl Ringed W…",
+      "updatedAt": "2026-11-27T00:25:34.240Z"
+    },
+    "lesson_6_sB": {
+      "hash": "75bacd64179821f4",
+      "bytes": 74828,
+      "voiceKey": "male_historian",
+      "badge": "Medieval Stone Bridge & Walled H…",
+      "updatedAt": "2026-11-27T00:25:34.564Z"
+    }
+  }
+}

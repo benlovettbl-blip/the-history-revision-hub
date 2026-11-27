@@ -1,0 +1,17 @@
+{
+  "id": "ocr_j198_hannibal",
+  "code": "J198/02-B",
+  "examBoard": "Cambridge OCR GCSE (9–1) Ancient History (J198)",
+  "paper": "Component 2: Rome and its neighbours (J198/02) — Section B",
+  "paperType": "Roman Depth Study (Prescribed Sources)",
+  "title": "Hub GCSE Ancient History Topic Checklist (Aligned to Cambridge OCR J198)",
+  "subtitle": "J198/02 Section B: Hannibal and the Second Punic War, 218–201 BC",
+  "shortTitle": "Hannibal & Second Punic War",
+  "disclaimer": "Aligned to Cambridge OCR GCSE (9–1) Ancient History (J198). Independent educational resource by The History Revision Hub; not endorsed by Cambridge OCR.",
+  "sections": [
+    { "id": "key-topic-1", "keyTopicNumber": 1, "title": "Reasons for the outbreak of the Second Punic War", "topics": [{ "number": 1, "title": "Treaty of Lutatius, Iberia and Hannibal's Motives", "points": ["Impact of the First Punic War and Treaty of Lutatius; colonisation of Iberia by Hamilcar and Hasdrubal; Hannibal's personal motivations for war against Rome"] }] },
+    { "id": "key-topic-2", "keyTopicNumber": 2, "title": "The nature and dynamics of Hannibal's leadership", "topics": [{ "number": 1, "title": "Saguntum, Alps, Trebia, Trasimene and Cannae", "points": ["Siege of Saguntum, crossing of the Alps; Battles of Trebia, Trasimene and Cannae; failure to march on Rome and Fabian tactics"] }] },
+    { "id": "key-topic-3", "keyTopicNumber": 3, "title": "The changing nature of Rome's response to Hannibal", "topics": [{ "number": 1, "title": "Fabius Maximus and Scipio Africanus", "points": ["Leadership of Sempronius, Flaminius, Varro and Paullus; impact of Fabius Maximus as dictator; Scipio Africanus' campaign in Iberia and invasion of Africa"] }] },
+    { "id": "key-topic-4", "keyTopicNumber": 4, "title": "How did Rome defeat Carthage?", "topics": [{ "number": 1, "title": "Withdrawal from Italy and the Battle of Zama", "points": ["Reasons for Hannibal's withdrawal from Italy; Numidian cavalry supporting Rome; the Battle of Zama and consequences for Carthage and Rome"] }] }
+  ]
+}

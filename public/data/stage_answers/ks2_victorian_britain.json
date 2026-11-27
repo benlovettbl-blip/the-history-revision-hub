@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_victorian_britain",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "1837",
+            "bullet": "1837 → Year eighteen-year-old Victoria inherited the British throne."
+          },
+          {
+            "hint": "Prince Albert",
+            "bullet": "Prince Albert → Victoria’s husband who championed British science and engineering."
+          },
+          {
+            "hint": "Paddington",
+            "bullet": "Paddington → London station reached by Victoria’s 25-minute first train ride in 1842."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Crowned aged eighteen in 1837, Queen Victoria married Prince Albert in 1840 and rode her first fast steam train into Paddington in June 1842."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Royal backing helped spark a nationwide boom in iron tracks and bridges."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1837–1842, queen victoria and prince albert transformed Britain through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining 1837 with Prince Albert, Victorians ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of Paddington, everyday Victorian life ____________."
+          }
+        ],
+        "watch_out": "Crowned aged eighteen in 1837, Queen Victoria married Prince Albert in 1840 and rode her first fast steam train into Paddington in June 1842. Royal backing helped spark a nationwide boom in iron tracks and bridges.",
+        "prose_hash": "4319f10600",
+        "prose_fp": "f4bd6384",
+        "question_hash": "551e7f4dec"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "navvies",
+            "bullet": "navvies → Hardworking labourers who dug railway cuttings and laid iron tracks."
+          },
+          {
+            "hint": "Box Tunnel",
+            "bullet": "Box Tunnel → Two-mile rock tunnel blasted by Brunel on the Great Western line."
+          },
+          {
+            "hint": "SS Great Britain",
+            "bullet": "SS Great Britain → Brunel’s pioneering iron-hulled screw-propeller ocean steamship."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Navvies laid 6,000 miles of track while Isambard Kingdom Brunel built the Great Western Railway, Box Tunnel, Clifton Bridge, and SS Great Britain."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Fast express trains soon required one shared clock and cheaper mail."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAUSE AND SHIFT",
+            "stem": "Across 1838–1850, isambard kingdom brunel and navvies drove change when ____________."
+          },
+          {
+            "badge": "PRIMARY DETAIL",
+            "stem": "Evidence from navvies and Box Tunnel shows that ____________."
+          },
+          {
+            "badge": "TURNING POINT",
+            "stem": "Through SS Great Britain, families and children ____________."
+          }
+        ],
+        "watch_out": "Navvies laid 6,000 miles of track while Isambard Kingdom Brunel built the Great Western Railway, Box Tunnel, Clifton Bridge, and SS Great Britain. Fast express trains soon required one shared clock and cheaper mail.",
+        "prose_hash": "6b0e0289b1",
+        "prose_fp": "8d849679",
+        "question_hash": "e34d3579fb"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Greenwich",
+            "bullet": "Greenwich → London observatory time adopted across stations as shared Railway Time."
+          },
+          {
+            "hint": "Penny Black",
+            "bullet": "Penny Black → World’s first sticky one-penny stamp launched in May 1840."
+          },
+          {
+            "hint": "V.R.",
+            "bullet": "V.R. → Royal initials for Victoria Regina cast onto red iron pillar boxes."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Stations adopted shared Greenwich Railway Time, while Rowland Hill’s 1840 Penny Black stamp and red V.R. postboxes carried letters for one penny."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Yet coal and steam also drew thousands of children into smoky mills and pits."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL IMPACT",
+            "stem": "By 1840–1855, rowland hill and stationmasters reshaped society using ____________."
+          },
+          {
+            "badge": "KEY CONNECTION",
+            "stem": "Linking Greenwich directly to Penny Black meant ____________."
+          },
+          {
+            "badge": "LASTING LEGACY",
+            "stem": "Thanks to V.R., Victorian Britain ____________."
+          }
+        ],
+        "watch_out": "Stations adopted shared Greenwich Railway Time, while Rowland Hill’s 1840 Penny Black stamp and red V.R. postboxes carried letters for one penny. Yet coal and steam also drew thousands of children into smoky mills and pits.",
+        "prose_hash": "c8abac17ee",
+        "prose_fp": "03119997",
+        "question_hash": "5ded4f0d73"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Cottonopolis",
+            "bullet": "Cottonopolis → Victorian nickname for smoky Manchester packed with steam cotton mills."
+          },
+          {
+            "hint": "1851",
+            "bullet": "1851 → Census year proving more Britons lived in towns than in the countryside."
+          },
+          {
+            "hint": "cellars",
+            "bullet": "cellars → Damp, crowded basement rooms rented by poor factory families."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Country families moved into smoky Northern mill towns like Manchester, and by the 1851 Census over half of Britain lived in towns."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Low adult wages forced poor parents to send young children into noisy cotton mills."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1837–1851, rural families seeking factory wages transformed Britain through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining Cottonopolis with 1851, Victorians ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of cellars, everyday Victorian life ____________."
+          }
+        ],
+        "watch_out": "Country families moved into smoky Northern mill towns like Manchester, and by the 1851 Census over half of Britain lived in towns. Low adult wages forced poor parents to send young children into noisy cotton mills.",
+        "prose_hash": "99fae4e302",
+        "prose_fp": "d97b3b07",
+        "question_hash": "21c62e965e"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "twelve-hour",
+            "bullet": "twelve-hour → Exhausting daily factory shift worked by children six days a week."
+          },
+          {
+            "hint": "piecers",
+            "bullet": "piecers → Nimble children leaning over spinning frames to tie broken threads."
+          },
+          {
+            "hint": "power looms",
+            "bullet": "power looms → Deafening steam-driven weaving machines that scavengers crawled beneath."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Children worked twelve-hour Lancashire mill shifts as piecers tying snapped threads and barefoot scavengers crawling beneath moving iron looms."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Meanwhile, even younger children laboured out of sight deep underground."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAUSE AND SHIFT",
+            "stem": "Across 1837–1847, lancashire mill children and overseers drove change when ____________."
+          },
+          {
+            "badge": "PRIMARY DETAIL",
+            "stem": "Evidence from twelve-hour and piecers shows that ____________."
+          },
+          {
+            "badge": "TURNING POINT",
+            "stem": "Through power looms, families and children ____________."
+          }
+        ],
+        "watch_out": "Children worked twelve-hour Lancashire mill shifts as piecers tying snapped threads and barefoot scavengers crawling beneath moving iron looms. Meanwhile, even younger children laboured out of sight deep underground.",
+        "prose_hash": "e0054820ae",
+        "prose_fp": "35123744",
+        "question_hash": "70c35809be"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "trappers",
+            "bullet": "trappers → Eight-year-olds sitting in total darkness pulling pit air doors open."
+          },
+          {
+            "hint": "corves",
+            "bullet": "corves → Heavy wooden coal tubs dragged along low wet seams by hurriers."
+          },
+          {
+            "hint": "Davy lamps",
+            "bullet": "Davy lamps → Wire-mesh oil lanterns stopping underground firedamp gas exploding."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Eight-year-old trappers sat alone in pitch-black tunnels opening air doors while chained hurriers dragged heavy coal corves past firedamp gas."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Shocked reformers soon fought in Parliament to rescue working and destitute children."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL IMPACT",
+            "stem": "By 1837–1842, sarah gooder and child miners reshaped society using ____________."
+          },
+          {
+            "badge": "KEY CONNECTION",
+            "stem": "Linking trappers directly to corves meant ____________."
+          },
+          {
+            "badge": "LASTING LEGACY",
+            "stem": "Thanks to Davy lamps, Victorian Britain ____________."
+          }
+        ],
+        "watch_out": "Eight-year-old trappers sat alone in pitch-black tunnels opening air doors while chained hurriers dragged heavy coal corves past firedamp gas. Shocked reformers soon fought in Parliament to rescue working and destitute children.",
+        "prose_hash": "2a1f74dba2",
+        "prose_fp": "f17f6850",
+        "question_hash": "7d4bff2954"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "1834 Poor Law",
+            "bullet": "1834 Poor Law → Law setting up harsh Union Workhouses for destitute families."
+          },
+          {
+            "hint": "gruel",
+            "bullet": "gruel → Thin watery oatmeal porridge served in silent workhouse halls."
+          },
+          {
+            "hint": "oakum",
+            "bullet": "oakum → Tar-soaked old ship rope unpicked strand by strand by inmates."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "After 1834, bleak Union Workhouses split husbands, wives, and children onto watery gruel and tarred oakum—exposed in Dickens’s 1838 Oliver Twist."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Public anger soon helped reformers win new child-protection laws in Parliament."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1834–1845, poor law guardians and charles dickens transformed Britain through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining 1834 Poor Law with gruel, Victorians ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of oakum, everyday Victorian life ____________."
+          }
+        ],
+        "watch_out": "After 1834, bleak Union Workhouses split husbands, wives, and children onto watery gruel and tarred oakum—exposed in Dickens’s 1838 Oliver Twist. Public anger soon helped reformers win new child-protection laws in Parliament.",
+        "prose_hash": "3aef5df7c2",
+        "prose_fp": "b789ccb9",
+        "question_hash": "62447acecd"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Lord Shaftesbury",
+            "bullet": "Lord Shaftesbury → Compassionate MP known as the Poor Man’s Earl who fought for children."
+          },
+          {
+            "hint": "1842 Mines Act",
+            "bullet": "1842 Mines Act → Law banning all women, girls, and boys under ten from coal pits."
+          },
+          {
+            "hint": "Factory Inspectors",
+            "bullet": "Factory Inspectors → Paid officials checking textile mills obeyed child age and hour limits."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Lord Shaftesbury’s 1842 Mines Act banned females and boys under ten underground, while paid Factory Inspectors and Titus Salt improved mill life."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Laws banned pit toddlers, yet homeless city orphans still needed shelter and free lessons."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAUSE AND SHIFT",
+            "stem": "Across 1833–1853, lord shaftesbury and titus salt drove change when ____________."
+          },
+          {
+            "badge": "PRIMARY DETAIL",
+            "stem": "Evidence from Lord Shaftesbury and 1842 Mines Act shows that ____________."
+          },
+          {
+            "badge": "TURNING POINT",
+            "stem": "Through Factory Inspectors, families and children ____________."
+          }
+        ],
+        "watch_out": "Lord Shaftesbury’s 1842 Mines Act banned females and boys under ten underground, while paid Factory Inspectors and Titus Salt improved mill life. Laws banned pit toddlers, yet homeless city orphans still needed shelter and free lessons.",
+        "prose_hash": "902707ca33",
+        "prose_fp": "91d6f749",
+        "question_hash": "a2b3b803e1"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Ragged Schools",
+            "bullet": "Ragged Schools → Free charity schools teaching reading and trades to shoeless poor children."
+          },
+          {
+            "hint": "Jim Jarvis",
+            "bullet": "Jim Jarvis → Ten-year-old homeless boy who showed Barnardo children sleeping on icy roofs."
+          },
+          {
+            "hint": "Barnardo’s Homes",
+            "bullet": "Barnardo’s Homes → Warm East End shelters promising never to refuse a destitute child."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Volunteer Ragged Schools taught shoeless children free, and after meeting orphan Jim Jarvis in 1870, Dr Thomas Barnardo opened Barnardo’s Homes."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "That same year, 1870, Parliament finally stepped in to build local schools nationwide!"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL IMPACT",
+            "stem": "By 1844–1880, jim jarvis and dr thomas barnardo reshaped society using ____________."
+          },
+          {
+            "badge": "KEY CONNECTION",
+            "stem": "Linking Ragged Schools directly to Jim Jarvis meant ____________."
+          },
+          {
+            "badge": "LASTING LEGACY",
+            "stem": "Thanks to Barnardo’s Homes, Victorian Britain ____________."
+          }
+        ],
+        "watch_out": "Volunteer Ragged Schools taught shoeless children free, and after meeting orphan Jim Jarvis in 1870, Dr Thomas Barnardo opened Barnardo’s Homes. That same year, 1870, Parliament finally stepped in to build local schools nationwide!",
+        "prose_hash": "9e3c8faf03",
+        "prose_fp": "542f3b87",
+        "question_hash": "2473fe405f"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "William Forster",
+            "bullet": "William Forster → MP who steered the landmark 1870 Education Act through Parliament."
+          },
+          {
+            "hint": "compulsory",
+            "bullet": "compulsory → Required by law from 1880 for every child aged five to ten."
+          },
+          {
+            "hint": "1891",
+            "bullet": "1891 → Year Parliament ended weekly penny fees so primary school became free."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Forster’s 1870 Act built red-brick Board Schools, 1880 made attendance compulsory for ages five to ten, and 1891 abolished weekly penny fees."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Inside those tall red-brick classrooms, lessons followed a strict daily routine."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1870–1891, william forster and parliament transformed Britain through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining William Forster with compulsory, Victorians ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of 1891, everyday Victorian life ____________."
+          }
+        ],
+        "watch_out": "Forster’s 1870 Act built red-brick Board Schools, 1880 made attendance compulsory for ages five to ten, and 1891 abolished weekly penny fees. Inside those tall red-brick classrooms, lessons followed a strict daily routine.",
+        "prose_hash": "8d8826c3b7",
+        "prose_fp": "5112825d",
+        "question_hash": "742a3b78c0"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Three Rs",
+            "bullet": "Three Rs → Core Victorian timetable of Reading, Writing, and Arithmetic."
+          },
+          {
+            "hint": "inkwells",
+            "bullet": "inkwells → Small white porcelain pots set into wooden desks holding black ink."
+          },
+          {
+            "hint": "copperplate",
+            "bullet": "copperplate → Neat looping cursive handwriting written with a right-handed dip pen."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Sixty pupils sat beneath high windows chanting the Three Rs—scratching sums on Welsh slates before dipping steel nibs into inkwells for copperplate script."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Strict silence and separate boys’ and girls’ rules shaped the whole school day."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAUSE AND SHIFT",
+            "stem": "Across 1870–1901, sixty pupils and school inspectors drove change when ____________."
+          },
+          {
+            "badge": "PRIMARY DETAIL",
+            "stem": "Evidence from Three Rs and inkwells shows that ____________."
+          },
+          {
+            "badge": "TURNING POINT",
+            "stem": "Through copperplate, families and children ____________."
+          }
+        ],
+        "watch_out": "Sixty pupils sat beneath high windows chanting the Three Rs—scratching sums on Welsh slates before dipping steel nibs into inkwells for copperplate script. Strict silence and separate boys’ and girls’ rules shaped the whole school day.",
+        "prose_hash": "e4ff9d7581",
+        "prose_fp": "0f72491d",
+        "question_hash": "e6cf5b1105"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "bamboo cane",
+            "bullet": "bamboo cane → Thin stick struck across hands when pupils talked or blotched ink."
+          },
+          {
+            "hint": "needlework",
+            "bullet": "needlework → Afternoon sewing lessons taught to girls while boys learned woodwork."
+          },
+          {
+            "hint": "iron hoops",
+            "bullet": "iron hoops → Popular playground rings bowled fast across stone yards with a stick."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Teachers punished mistakes with the bamboo cane and Dunce’s Cap, taught boys woodwork while girls sewed, and led drill alongside playground iron hoops."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Literate school leavers soon helped power dazzling Victorian inventions and science!"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL IMPACT",
+            "stem": "By 1870–1901, strict schoolmasters and yard monitors reshaped society using ____________."
+          },
+          {
+            "badge": "KEY CONNECTION",
+            "stem": "Linking bamboo cane directly to needlework meant ____________."
+          },
+          {
+            "badge": "LASTING LEGACY",
+            "stem": "Thanks to iron hoops, Victorian Britain ____________."
+          }
+        ],
+        "watch_out": "Teachers punished mistakes with the bamboo cane and Dunce’s Cap, taught boys woodwork while girls sewed, and led drill alongside playground iron hoops. Literate school leavers soon helped power dazzling Victorian inventions and science!",
+        "prose_hash": "4c3047428b",
+        "prose_fp": "eadf1292",
+        "question_hash": "cb17294e59"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Joseph Paxton",
+            "bullet": "Joseph Paxton → Clever gardener-architect who designed the prefab iron-and-glass hall."
+          },
+          {
+            "hint": "100,000",
+            "bullet": "100,000 → Number of global inventions and treasures displayed inside the Exhibition."
+          },
+          {
+            "hint": "Science Museum",
+            "bullet": "Science Museum → Famous London museum built with profits from 1851 Exhibition tickets."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "In May 1851, Joseph Paxton’s iron-and-glass Crystal Palace welcomed six million visitors to Hyde Park and funded London’s South Kensington museums."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Across the next thirty years, electricity and wires transformed communication and homes."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1851, prince albert and joseph paxton transformed Britain through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining Joseph Paxton with 100,000, Victorians ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of Science Museum, everyday Victorian life ____________."
+          }
+        ],
+        "watch_out": "In May 1851, Joseph Paxton’s iron-and-glass Crystal Palace welcomed six million visitors to Hyde Park and funded London’s South Kensington museums. Across the next thirty years, electricity and wires transformed communication and homes.",
+        "prose_hash": "4bd2b9d580",
+        "prose_fp": "4449237b",
+        "question_hash": "b11d6cb9b7"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "1876",
+            "bullet": "1876 → Year Scottish-born Alexander Graham Bell patented the speaking telephone."
+          },
+          {
+            "hint": "Joseph Swan",
+            "bullet": "Joseph Swan → Newcastle chemist who demonstrated a glowing lightbulb in 1878."
+          },
+          {
+            "hint": "Cragside",
+            "bullet": "Cragside → Northumberland house first lit by hydro-electric Swan lightbulbs."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Electric telegraphs and Bell’s 1876 telephone carried messages along wires, while Joseph Swan’s 1878 lightbulb lit Cragside and flushing toilets cleaned homes."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Remarkable Victorian women also pioneered future computing and frontline nursing."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAUSE AND SHIFT",
+            "stem": "Across 1837–1885, alexander graham bell and joseph swan drove change when ____________."
+          },
+          {
+            "badge": "PRIMARY DETAIL",
+            "stem": "Evidence from 1876 and Joseph Swan shows that ____________."
+          },
+          {
+            "badge": "TURNING POINT",
+            "stem": "Through Cragside, families and children ____________."
+          }
+        ],
+        "watch_out": "Electric telegraphs and Bell’s 1876 telephone carried messages along wires, while Joseph Swan’s 1878 lightbulb lit Cragside and flushing toilets cleaned homes. Remarkable Victorian women also pioneered future computing and frontline nursing.",
+        "prose_hash": "1b4c61aabc",
+        "prose_fp": "6edb2a4b",
+        "question_hash": "7a0ae375b4"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Ada Lovelace",
+            "bullet": "Ada Lovelace → Brilliant mathematician who foresaw programmable computers in 1843."
+          },
+          {
+            "hint": "algorithm",
+            "bullet": "algorithm → Step-by-step mathematical instructions written for Babbage’s machine."
+          },
+          {
+            "hint": "Mary Seacole",
+            "bullet": "Mary Seacole → Jamaican-Scottish nurse who cared for soldiers at her 1855 British Hotel."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Ada Lovelace published the first computer algorithm in 1843 for Babbage’s Analytical Engine, while Mary Seacole nursed wounded soldiers in 1855."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Next, explore how Victorian inventions, wages, and Bank Holidays reshaped family homes and seaside leisure!"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL IMPACT",
+            "stem": "By 1843–1881, ada lovelace and mary seacole reshaped society using ____________."
+          },
+          {
+            "badge": "KEY CONNECTION",
+            "stem": "Linking Ada Lovelace directly to algorithm meant ____________."
+          },
+          {
+            "badge": "LASTING LEGACY",
+            "stem": "Thanks to Mary Seacole, Victorian Britain ____________."
+          }
+        ],
+        "watch_out": "Ada Lovelace published the first computer algorithm in 1843 for Babbage’s Analytical Engine, while Mary Seacole nursed wounded soldiers in 1855. Next, explore how Victorian inventions, wages, and Bank Holidays reshaped family homes and seaside leisure!",
+        "prose_hash": "9d057d7253",
+        "prose_fp": "57cb1c07",
+        "question_hash": "0218596f19"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "villas",
+            "bullet": "villas → Spacious brick homes of wealthy families with parlours and indoor baths."
+          },
+          {
+            "hint": "servants",
+            "bullet": "servants → Maids and cooks working downstairs from dawn answering wall bells."
+          },
+          {
+            "hint": "courtyard tap",
+            "bullet": "courtyard tap → Single outdoor cold water pipe shared by rows of back-to-back families."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Wealthy families lived in plush villas with indoor baths and downstairs servants, while poor families shared courtyard taps in cramped back-to-back houses."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Yet shorter shifts and new laws gradually opened weekends and holidays to millions."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1850–1900, downstairs servants and terrace families transformed Britain through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining villas with servants, Victorians ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of courtyard tap, everyday Victorian life ____________."
+          }
+        ],
+        "watch_out": "Wealthy families lived in plush villas with indoor baths and downstairs servants, while poor families shared courtyard taps in cramped back-to-back houses. Yet shorter shifts and new laws gradually opened weekends and holidays to millions.",
+        "prose_hash": "5fde250be3",
+        "prose_fp": "acf9166e",
+        "question_hash": "4d567d94b1"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Blackpool",
+            "bullet": "Blackpool → Bustling Lancashire seaside pier resort reached by mill excursion trains."
+          },
+          {
+            "hint": "FA Cup",
+            "bullet": "FA Cup → Famous national football knockout competition launched in 1871."
+          },
+          {
+            "hint": "safety bicycle",
+            "bullet": "safety bicycle → Equal-wheeled 1885 chain bike that replaced tall penny-farthings."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "The 1871 Bank Holidays Act, cheap seaside excursion trains, Saturday FA Cup football, and 1885 safety bicycles transformed everyday British leisure."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "By the 1890s, millions celebrated six decades of dramatic national change."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CAUSE AND SHIFT",
+            "stem": "Across 1871–1895, day-trippers, footballers and cyclists drove change when ____________."
+          },
+          {
+            "badge": "PRIMARY DETAIL",
+            "stem": "Evidence from Blackpool and FA Cup shows that ____________."
+          },
+          {
+            "badge": "TURNING POINT",
+            "stem": "Through safety bicycle, families and children ____________."
+          }
+        ],
+        "watch_out": "The 1871 Bank Holidays Act, cheap seaside excursion trains, Saturday FA Cup football, and 1885 safety bicycles transformed everyday British leisure. By the 1890s, millions celebrated six decades of dramatic national change.",
+        "prose_hash": "44d63fde0b",
+        "prose_fp": "925da439",
+        "question_hash": "4c882f3323"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "1897",
+            "bullet": "1897 → Year Queen Victoria celebrated sixty years at her Diamond Jubilee."
+          },
+          {
+            "hint": "British Empire",
+            "bullet": "British Empire → Worldwide territories ruled by Britain across a quarter of Earth’s people."
+          },
+          {
+            "hint": "Osborne House",
+            "bullet": "Osborne House → Seaside royal home on the Isle of Wight where Victoria died in January 1901."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "After celebrating her sixty-year Diamond Jubilee in 1897 across Britain and the British Empire, Queen Victoria died in January 1901 leaving a modern industrial nation."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Every train, lightbulb, football Saturday, and free school still echoes her era today!"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL IMPACT",
+            "stem": "By 1897–1901, queen victoria at st paul’s and osborne reshaped society using ____________."
+          },
+          {
+            "badge": "KEY CONNECTION",
+            "stem": "Linking 1897 directly to British Empire meant ____________."
+          },
+          {
+            "badge": "LASTING LEGACY",
+            "stem": "Thanks to Osborne House, Victorian Britain ____________."
+          }
+        ],
+        "watch_out": "After celebrating her sixty-year Diamond Jubilee in 1897 across Britain and the British Empire, Queen Victoria died in January 1901 leaving a modern industrial nation. Every train, lightbulb, football Saturday, and free school still echoes her era today!",
+        "prose_hash": "26a70a73fe",
+        "prose_fp": "618ff7a7",
+        "question_hash": "825ca734d2"
+      }
+    ]
+  }
+}

@@ -1,5 +1,4 @@
-// KS2 World War II & The Home Front (1933–1945) — Canonical Unit Data
-const UNIT_DATA = {
+window.UNIT_DATA = {
   "id": "ks2_ww2",
   "title": "KS2: World War II & The Home Front (1933–1945)",
   "shortTitle": "World War II & The Home Front",
@@ -645,17 +644,6 @@ const UNIT_DATA = {
           "teacher_guidance": "Recommended Watch Window: 00:30–04:30 | Lesson Phase: Core Narrative Overview | Tone Alert: Archival footage of wartime preparations. Focus pupils on the immediate disruption to civilian family life.",
           "viewing_task": "[01:15] Recall: What immediate precautions did people take in British towns as soon as war was declared (e.g. windows, sandbags, blackout)?\n[02:40] Explain: Why did the government introduce the strict 'blackout' regulations, and what difficulties did it cause for ordinary people?\n[04:00] Challenge: How did the sudden outbreak of war change the daily lives of British children even before any bombs fell?",
           "model_answer": "Recall: People taped up window panes with criss-cross adhesive tape to stop flying glass, filled sandbags to place outside doorways, and fitted thick black blackout curtains across every window.\nExplain: Blackout rules forced everyone to block any glimmer of light from homes, streetlamps, and cars so that German bomber navigators flying at night could not spot towns, rivers, or factories below. Walking in pitch-black streets led to many accidents.\nChallenge: Children's lives changed instantly: they had to carry gas mask boxes over their shoulders, practice air raid drills in school corridors, live in darkened houses every evening, and prepare to be separated from their families through evacuation."
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=LtJ60u7SUSw",
-          "id": "ks2_ww2_l1_vid_4",
-          "title": "Darkest Hour (2017) | Official Trailer (Gary Oldman / Focus Features)",
-          "duration": "2 mins 46 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:28 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Oscar-winning performance showing Winston Churchill taking leadership in May 1940.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film portray Winston Churchill's determination to resist Hitler when others urged negotiation?",
-          "model_answer": "Cinematic Discussion Focus: The trailer contrasts defeatist voices in the War Cabinet with Churchill's defiant speeches, illustrating how his rhetoric inspired British civilian resilience."
         }
       ],
       "causal_domino_spine": {
@@ -11075,11 +11063,157 @@ const UNIT_DATA = {
       "studio_audio": "/audio/reading/ks2_ww2/r10.mp3",
       "studio_voice_label": "Studio Female Historian · KS2 Storyteller"
     }
+  ],
+  "glossary": [
+    {
+      "term": "Appeasement",
+      "pronunciation": "uh-PEEZ-munt",
+      "definition": "Britain's pre-war policy of trying to keep peace in Europe by giving way to Adolf Hitler's demands before September 1939."
+    },
+    {
+      "term": "Home Front",
+      "pronunciation": "HOHM frunt",
+      "definition": "Everyday civilian life in Britain during the war, where families, farmers, and factory workers helped defend the country from home."
+    },
+    {
+      "term": "Gas Mask",
+      "pronunciation": "GAS mask",
+      "definition": "A rubber face mask with a charcoal filter tin carried everywhere in a square cardboard shoulder box against poison gas."
+    },
+    {
+      "term": "Blackout",
+      "pronunciation": "BLAK-owt",
+      "definition": "The strict wartime rule covering every window, streetlamp, and car headlight after dark so enemy bombers could not spot towns."
+    },
+    {
+      "term": "ARP Warden",
+      "pronunciation": "AY-AR-PEE WOR-dun",
+      "definition": "A volunteer Air Raid Precautions patroller in a black helmet marked W who checked blackout curtains and guided families to shelter."
+    },
+    {
+      "term": "Operation Pied Piper",
+      "pronunciation": "op-uh-RAY-shun PYD PY-pur",
+      "definition": "The government codename for moving 1.5 million schoolchildren, teachers, and mothers with infants out of cities in September 1939."
+    },
+    {
+      "term": "Evacuee",
+      "pronunciation": "ih-vak-yoo-EE",
+      "definition": "A city child or mother sent by train to live safely in the countryside away from enemy bombing raids."
+    },
+    {
+      "term": "Billeting Officer",
+      "pronunciation": "BIL-it-ing OF-ih-sur",
+      "definition": "The local volunteer official at a country village hall who matched arriving evacuee children with rural host families."
+    },
+    {
+      "term": "Civil Rights",
+      "pronunciation": "SIV-ul ryts",
+      "definition": "The fair laws and everyday freedoms protecting every citizen equally, such as going to school, owning shops, and using parks."
+    },
+    {
+      "term": "Persecution",
+      "pronunciation": "pur-sih-KYOO-shun",
+      "definition": "Cruel and repeated mistreatment of a group of people because of their religion or identity, backed by unfair laws."
+    },
+    {
+      "term": "November Pogrom",
+      "pronunciation": "noh-VEM-bur POH-grom",
+      "definition": "Violent Nazi attacks across Germany and Austria in November 1938, also called Kristallnacht, when synagogues, homes, and shops were destroyed."
+    },
+    {
+      "term": "Kindertransport",
+      "pronunciation": "KIN-der-trans-port",
+      "definition": "Meaning Children's Transport, the rescue mission that brought nearly 10,000 mostly Jewish children to safety in Britain in 1938 and 1939."
+    },
+    {
+      "term": "Refugee",
+      "pronunciation": "ref-yoo-JEE",
+      "definition": "A person forced to leave their home country to find safety from war, danger, or cruel persecution."
+    },
+    {
+      "term": "Upstander",
+      "pronunciation": "UP-stan-dur",
+      "definition": "Someone who sees unfairness or danger and chooses to step forward to help others, such as Nicholas Winton's rescue team."
+    },
+    {
+      "term": "Bystander",
+      "pronunciation": "BY-stan-dur",
+      "definition": "Someone who sees unfairness or danger happening to others, yet chooses to look away and take no action."
+    },
+    {
+      "term": "Visa",
+      "pronunciation": "VEE-zuh",
+      "definition": "An official government travel permit stamped on identity papers allowing a person to cross borders and enter another country legally."
+    },
+    {
+      "term": "The Blitz",
+      "pronunciation": "thuh BLITS",
+      "definition": "Sustained German night bombing raids on London and British port and factory cities between September 1940 and May 1941."
+    },
+    {
+      "term": "Incendiary Bomb",
+      "pronunciation": "in-SEN-dee-uh-ree bom",
+      "definition": "A small firebomb dropped in clusters by enemy aircraft to spark fierce rooftop blazes across docks, factories, and streets."
+    },
+    {
+      "term": "Anderson Shelter",
+      "pronunciation": "AN-dur-sun SHEL-tur",
+      "definition": "A curved corrugated-steel garden air raid shelter sunk three feet into the lawn and covered with fifteen inches of soil."
+    },
+    {
+      "term": "Morrison Shelter",
+      "pronunciation": "MOR-ih-sun SHEL-tur",
+      "definition": "A strong steel-topped indoor cage shaped like a dining table where families without gardens slept safely during air raids."
+    },
+    {
+      "term": "Rationing",
+      "pronunciation": "RASH-un-ing",
+      "definition": "Britain's fair-shares system using coupon books from January 1940 so rich and poor families received equal weekly allowances of food."
+    },
+    {
+      "term": "Dig for Victory",
+      "pronunciation": "DIG for VIK-tuh-ree",
+      "definition": "The wartime campaign encouraging families and schools to turn lawns, parks, and sports fields into 1.4 million vegetable allotments."
+    },
+    {
+      "term": "Conscription",
+      "pronunciation": "kun-SKRIP-shun",
+      "definition": "A government law calling citizens up for the armed forces or war work, extended to unmarried British women in December 1941."
+    },
+    {
+      "term": "Women's Land Army",
+      "pronunciation": "WIM-inz LAND AR-mee",
+      "definition": "Over 80,000 uniformed Land Girls who ploughed fields, milked cows, and harvested crops on British farms during the war."
+    },
+    {
+      "term": "Munitions",
+      "pronunciation": "myoo-NISH-unz",
+      "definition": "Military shells, bullets, and explosives packed inside wartime factories where Canary Girls' skin turned bright yellow from chemicals."
+    },
+    {
+      "term": "Enigma Machine",
+      "pronunciation": "ih-NIG-muh muh-SHEEN",
+      "definition": "A portable German cipher machine with spinning wired wheels and a plugboard that scrambled secret military radio messages."
+    },
+    {
+      "term": "Bletchley Park",
+      "pronunciation": "BLECH-lee PARK",
+      "definition": "Britain's top-secret codebreaking centre in Buckinghamshire, codenamed Station X, where 10,000 staff including 7,500 women broke enemy ciphers."
+    },
+    {
+      "term": "Bombe Machine",
+      "pronunciation": "BOM muh-SHEEN",
+      "definition": "The high-speed electric machine designed by Alan Turing and Gordon Welchman at Bletchley Park to find daily Enigma settings."
+    },
+    {
+      "term": "VE Day",
+      "pronunciation": "VEE-EE day",
+      "definition": "Victory in Europe Day on 8 May 1945, when Nazi Germany surrendered unconditionally and street parties celebrated peace across Europe."
+    },
+    {
+      "term": "Windermere Children",
+      "pronunciation": "WIN-dur-meer CHIL-drun",
+      "definition": "Three hundred orphaned Jewish child Holocaust survivors flown by the RAF from Prague to Lake Windermere in August 1945 to heal."
+    }
   ]
 };
-
-if (typeof window !== 'undefined') {
-  window.UNIT_DATA = UNIT_DATA;
-}
-
-export default UNIT_DATA;

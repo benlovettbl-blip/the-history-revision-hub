@@ -30,11 +30,11 @@
       "updatedAt": "2026-11-23T23:12:00.155Z"
     },
     "lesson_4_sC": {
-      "hash": "bb3d5c91bfa4a63f",
-      "bytes": 157484,
+      "hash": "262085b8adefd845",
+      "bytes": 162476,
       "voiceKey": "female_historian",
-      "badge": "Vindolanda Wooden Ink Letters —…",
-      "updatedAt": "2026-11-23T23:12:37.517Z"
+      "badge": "Reconstructed Gatehouse & Tombst…",
+      "updatedAt": "2026-11-27T00:17:30.147Z"
     },
     "lesson_6_sA": {
       "hash": "f8ae0a3d514468a3",
@@ -42,6 +42,111 @@
       "voiceKey": "female_historian",
       "badge": "Gold Solidus Coin of Emperor Hon…",
       "updatedAt": "2026-11-23T23:12:38.868Z"
+    },
+    "lesson_5_sC": {
+      "hash": "e00a70dfe7249993",
+      "bytes": 77612,
+      "voiceKey": "female_historian",
+      "badge": "'Cupid on a Dolphin' Floor Mosai…",
+      "updatedAt": "2026-11-27T00:17:14.459Z"
+    },
+    "lesson_6_sB": {
+      "hash": "f8c7d1b413243a9f",
+      "bytes": 71756,
+      "voiceKey": "female_historian",
+      "badge": "Silver 'Empress' Pepper Pot from…",
+      "updatedAt": "2026-11-27T00:17:14.761Z"
+    },
+    "lesson_6_sC": {
+      "hash": "c7d3cd70f35a4b39",
+      "bytes": 73676,
+      "voiceKey": "female_historian",
+      "badge": "The Roman Multangular Tower at E…",
+      "updatedAt": "2026-11-27T00:17:15.076Z"
+    },
+    "lesson_1_sB": {
+      "hash": "7b9ebb105faf5e69",
+      "bytes": 67628,
+      "voiceKey": "male_historian",
+      "badge": "Reconstructed Iron Age Thatched…",
+      "updatedAt": "2026-11-27T00:17:18.011Z"
+    },
+    "lesson_1_sC": {
+      "hash": "ba64bb0d972cba58",
+      "bytes": 134732,
+      "voiceKey": "male_historian",
+      "badge": "Iron Age Gold Stater Coin & Juli…",
+      "updatedAt": "2026-11-27T00:17:18.394Z"
+    },
+    "lesson_2_sB": {
+      "hash": "31405543f87758d9",
+      "bytes": 62540,
+      "voiceKey": "male_historian",
+      "badge": "Corbridge-Type Lorica Segmentata…",
+      "updatedAt": "2026-11-27T00:17:18.694Z"
+    },
+    "lesson_3_sB": {
+      "hash": "3df5c5d3876aeecd",
+      "bytes": 65420,
+      "voiceKey": "male_historian",
+      "badge": "Map of Roman Britain",
+      "updatedAt": "2026-11-27T00:17:19.014Z"
+    },
+    "lesson_5_sB": {
+      "hash": "2ce052ef7d052e05",
+      "bytes": 65708,
+      "voiceKey": "male_historian",
+      "badge": "Underfloor Hypocaust Brick Pilla…",
+      "updatedAt": "2026-11-27T00:17:19.324Z"
+    },
+    "lesson_1_sA": {
+      "hash": "5cfbb1abd85b165f",
+      "bytes": 77420,
+      "voiceKey": "female_historian",
+      "badge": "Giant Earth Ramparts of Maiden C…",
+      "updatedAt": "2026-11-27T00:17:27.783Z"
+    },
+    "lesson_2_sA": {
+      "hash": "c1c06e27d155c3d8",
+      "bytes": 77228,
+      "voiceKey": "female_historian",
+      "badge": "Roman Marble Bust of Emperor Cla…",
+      "updatedAt": "2026-11-27T00:17:28.119Z"
+    },
+    "lesson_2_sC": {
+      "hash": "9986f45f24c04463",
+      "bytes": 151148,
+      "voiceKey": "female_historian",
+      "badge": "Richborough Roman Fort (Kent) &…",
+      "updatedAt": "2026-11-27T00:17:28.593Z"
+    },
+    "lesson_3_sC": {
+      "hash": "42720aaf0378b178",
+      "bytes": 72716,
+      "voiceKey": "female_historian",
+      "badge": "Rebuilt Roman Stone & Red-Tile W…",
+      "updatedAt": "2026-11-27T00:17:28.906Z"
+    },
+    "lesson_4_sA": {
+      "hash": "6685c8948d26cdfb",
+      "bytes": 73868,
+      "voiceKey": "female_historian",
+      "badge": "Milecastle 39 on Hadrian's Wall…",
+      "updatedAt": "2026-11-27T00:17:29.257Z"
+    },
+    "lesson_4_sB": {
+      "hash": "bb3d5c91bfa4a63f",
+      "bytes": 167276,
+      "voiceKey": "female_historian",
+      "badge": "Vindolanda Wooden Ink Letters —…",
+      "updatedAt": "2026-11-27T00:17:29.728Z"
+    },
+    "lesson_5_sA": {
+      "hash": "d7952b04360ca453",
+      "bytes": 71276,
+      "voiceKey": "female_historian",
+      "badge": "Paved Roman Stone Highway over B…",
+      "updatedAt": "2026-11-27T00:17:30.479Z"
     }
   }
 }

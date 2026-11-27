@@ -1572,16 +1572,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=dxfpXoXBYRA",
-          "title": "A Man for All Seasons (1966, Fred Zinnemann) | Official Trailer",
-          "duration": "3 mins 19 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Six-time Academy Award-winning historical drama starring Paul Scofield as Sir Thomas More and Robert Shaw as Henry VIII. Depicts More’s refusal to swear the Oath of Succession, preferring martyrdom over compromising his conscience. Recommended Watch Window: 00:00–03:18 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Conscience vs Tyranny. Tone Alert: Tense, intellectually profound Tudor drama.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice Paul Scofield's portrayal of Sir Thomas More refusing to sign Henry VIII's oath, declaring: \"Some men think the Earth is round, others think it flat; but if it is flat, could the King's command make it round?\" How does this cinematic sequence dramatize the terrifying clash between absolute royal authority and individual moral conscience during the Tudor Reformation?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer captures the moral integrity of Thomas More, who used legal silence to protect himself before facing perjury from Richard Rich. It highlights how Henry VIII demanded total subservience: loyalty to the monarch was no longer merely military and political, but extended into the private thoughts and religious souls of subjects, illustrating the birth of Tudor royal absolutism.</p>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=7RjKG6gwmiE",
           "title": "Henry VIII: Mind of a Tyrant Part One with David Starkey",
           "duration": "47 mins 31 secs",
@@ -3349,16 +3339,6 @@ export default {
           "teacher_guidance": "Detailed breakdown of the 1559 Via Media: the Act of Supremacy ('Supreme Governor') and the Act of Uniformity (Common Prayer Book and clerical vestments). Recommended Watch Window: 00:45–05:00 • Lesson Phase: Guided Instruction & Legislative Analysis. Tone Alert: Structured Key Stage 3 syllabus breakdown with primary text extracts.",
           "viewing_task": "<ol><li><strong>[01:20] Recall:</strong> What specific title did Elizabeth choose in the 1559 Act of Supremacy, and why did she reject her father's title of \"Supreme Head\"?</li><li><strong>[03:15] Explain:</strong> Explain how the 1559 Act of Uniformity combined Protestant theology with traditional Catholic ceremony to appease both sides.</li><li><strong>[04:45] Challenge:</strong> Evaluate why both Catholic recusants and radical Puritans fiercely criticized Elizabeth's compromise: why did the Middle Way satisfy neither extreme?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> \"Supreme Governor of the Church of England\". She chose \"Governor\" to placate Catholics who believed only Christ or the Pope could be \"Head\", and Protestants who believed a woman could not hold spiritual headship over priests.</li><li><strong>Explain:</strong> Services were conducted in English using Cranmer's 1552 Book of Common Prayer, but communion phrasing was deliberately ambiguous (blending Catholic transubstantiation with Protestant commemoration), and churches retained crucifixes, candles, and clerical vestments (surplices).</li><li><strong>Challenge:</strong> Strict Catholics viewed any break with Rome as heresy and refused to attend church (becoming recusants who paid fines), while zealous Puritans viewed candles, music, and vestments as \"popish rags\" and idols that must be purged. Elizabeth's settlement was a political triumph for stability, but left lingering religious divisions that erupted into plots.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=DyGBwrtIamw",
-          "title": "Elizabeth (1998, Shekhar Kapur / Cate Blanchett) | Official Trailer",
-          "duration": "2 mins 43 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Academy Award-winning feature film starring Cate Blanchett and Geoffrey Rush. Illustrates young Elizabeth surviving house arrest under Queen Mary, confronting the Council's demands to marry, and surviving Catholic assassination plots. Recommended Watch Window: 00:00–02:42 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Royal Survival. Tone Alert: Atmospheric, thrilling historical drama.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice young Elizabeth's vulnerability upon her accession in November 1558: surrounded by hostile Catholic powers (Spain and France), an empty treasury, and councilors insisting that a female ruler cannot survive without a foreign husband. How does Cate Blanchett's transformation into the \"Virgin Queen\" illustrate how she constructed an icon of royal power to secure her throne?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer dramatizes Elizabeth's realization that marrying an English noble would spark factional civil war, while marrying a foreign prince (like Philip II of Spain) would subordinate England to foreign empire. By rejecting marriage and dedicating herself to England (\"I am married to England\"), she created a brilliant political mythology that elevated her above factional squabbling.</p>"
         },
         {
           "type": "youtube",
@@ -6781,16 +6761,6 @@ export default {
           "teacher_guidance": "Andrew Chater chronicles Pride's Purge, the creation of the High Court of Justice, Charles I's refusal to plead (\"by what lawful authority am I brought here?\"), and his public beheading outside the Banqueting House on 30 January 1649. Recommended Watch Window: 04:00–15:00 • Lesson Phase: Guided Instruction & Regicide Investigation. Tone Alert: Superb, somber narrative documentary examining the most radical moment in British history.",
           "viewing_task": "<ol><li><strong>[05:20] Recall:</strong> What unprecedented charge was brought against King Charles I at his trial in Westminster Hall in January 1649?</li><li><strong>[09:15] Explain:</strong> Explain Charles I's constitutional defense at his trial: why did he refuse to remove his hat or enter a plea of guilty or not guilty?</li><li><strong>[13:40] Challenge:</strong> Evaluate Oliver Cromwell and the regicides' dilemma: why did they conclude that executing an anointed monarch was the only way to prevent renewed civil war?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> \"Tyrant, traitor, murderer, and a public enemy to the good people of this nation.\"</li><li><strong>Explain:</strong> Charles argued that as King, his authority was derived directly from God, and no earthly court possessed the legal right to judge their sovereign. He maintained that pleading would surrender the constitutional liberties of all English subjects to an illegal military dictatorship.</li><li><strong>Challenge:</strong> Charles had secretly negotiated with Scots and foreign Catholic powers to invade England even after military defeat in the First Civil War, provoking the Second Civil War of 1648. Cromwell and the army officers viewed Charles as a \"man of blood\" who had shed the blood of his own people; they believed as long as Charles lived, he would perpetually plot royalist uprisings.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=XdP35Jc__nc",
-          "title": "Cromwell (1970, Ken Hughes / Richard Harris, Alec Guinness) | Official Trailer",
-          "duration": "3 mins 22 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Oscar-winning historical epic starring Richard Harris as Oliver Cromwell and Sir Alec Guinness as King Charles I. Recreates the New Model Army at Naseby, parliamentary debates, and the storming of the House of Commons. Recommended Watch Window: 00:00–03:22 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Regicide. Tone Alert: Grand, dramatic cinematic confrontation of power.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the stark visual contrast between the decadent, aristocratic royal court of Charles I and the austere, puritanical discipline of Oliver Cromwell's New Model Army (\"Ironsides\"). How does the film capture the deep ideological and religious hatred that divided Royalist Cavaliers and Parliamentary Roundheads?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer contrasts Alec Guinness's dignified, autocratic King Charles—convinced his power comes from divine appointment—with Richard Harris's passionate Cromwell, driven by Calvinist religious conviction that Parliament must protect English liberties. It highlights how political disagreement mutated into a holy war, transforming ordinary farmers and MPs into revolutionary soldiers.</p>"
         },
         {
           "type": "youtube",

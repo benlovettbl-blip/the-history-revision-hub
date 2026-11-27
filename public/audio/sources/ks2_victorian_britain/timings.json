@@ -1,0 +1,164 @@
+{
+  "lesson_1_sA": {
+    "dur": 17.97,
+    "sentences": [
+      [
+        0.08,
+        17.24
+      ]
+    ]
+  },
+  "lesson_1_sB": {
+    "dur": 14.91,
+    "sentences": [
+      [
+        0.48,
+        14.15
+      ]
+    ]
+  },
+  "lesson_1_sC": {
+    "dur": 15.86,
+    "sentences": [
+      [
+        0.08,
+        14.98
+      ]
+    ]
+  },
+  "lesson_2_sA": {
+    "dur": 14.82,
+    "sentences": [
+      [
+        0.08,
+        14.17
+      ]
+    ]
+  },
+  "lesson_2_sB": {
+    "dur": 14.04,
+    "sentences": [
+      [
+        0.08,
+        12.57
+      ]
+    ]
+  },
+  "lesson_2_sC": {
+    "dur": 13.19,
+    "sentences": [
+      [
+        0.08,
+        12.54
+      ]
+    ]
+  },
+  "lesson_3_sA": {
+    "dur": 16.33,
+    "sentences": [
+      [
+        0.19,
+        15.64
+      ]
+    ]
+  },
+  "lesson_3_sB": {
+    "dur": 14.91,
+    "sentences": [
+      [
+        0.08,
+        14.02
+      ]
+    ]
+  },
+  "lesson_3_sC": {
+    "dur": 14.23,
+    "sentences": [
+      [
+        0.08,
+        13.53
+      ]
+    ]
+  },
+  "lesson_4_sA": {
+    "dur": 13.28,
+    "sentences": [
+      [
+        0.08,
+        12.58
+      ]
+    ]
+  },
+  "lesson_4_sB": {
+    "dur": 14.43,
+    "sentences": [
+      [
+        0.08,
+        13.31
+      ]
+    ]
+  },
+  "lesson_4_sC": {
+    "dur": 14.51,
+    "sentences": [
+      [
+        0.24,
+        13.91
+      ]
+    ]
+  },
+  "lesson_5_sA": {
+    "dur": 16.49,
+    "sentences": [
+      [
+        0.08,
+        15.74
+      ]
+    ]
+  },
+  "lesson_5_sB": {
+    "dur": 12.93,
+    "sentences": [
+      [
+        0.22,
+        12.04
+      ]
+    ]
+  },
+  "lesson_5_sC": {
+    "dur": 15.34,
+    "sentences": [
+      [
+        0.08,
+        14.47
+      ]
+    ]
+  },
+  "lesson_6_sA": {
+    "dur": 13.57,
+    "sentences": [
+      [
+        0.08,
+        12.88
+      ]
+    ]
+  },
+  "lesson_6_sB": {
+    "dur": 15.07,
+    "sentences": [
+      [
+        0.26,
+        14.2
+      ]
+    ]
+  },
+  "lesson_6_sC": {
+    "dur": 16.07,
+    "sentences": [
+      [
+        0.35,
+        15.31
+      ]
+    ]
+  }
+}

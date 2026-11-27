@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_local_history_detective",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "castra",
+            "bullet": "castra → Latin word for a walled Roman fort behind -chester and -caster."
+          },
+          {
+            "hint": "homesteads",
+            "bullet": "homesteads → Anglo-Saxon family farms remembered in -ham and -ton names."
+          },
+          {
+            "hint": "Domesday Book",
+            "bullet": "Domesday Book → King William’s 1086 survey naming over 13,000 English places."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Roman castra forts, Anglo-Saxon homesteads, and Viking villages left lasting clues recorded in the 1086 Domesday Book."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Centuries later, scientific map-makers drew every lane and field to scale."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOORSTEP CLUE",
+            "stem": "Looking closely at ____________ and ____________, local detectives can spot..."
+          },
+          {
+            "badge": "HISTORICAL PROOF",
+            "stem": "During AD 43–1086, romans, saxons, vikings and scribes left lasting evidence in ____________."
+          },
+          {
+            "badge": "WHY IT MATTERS",
+            "stem": "Combined with Domesday Book, this reveals how a British neighbourhood ____________."
+          }
+        ],
+        "watch_out": "Roman castra forts, Anglo-Saxon homesteads, and Viking villages left lasting clues recorded in the 1086 Domesday Book. Centuries later, scientific map-makers drew every lane and field to scale.",
+        "prose_hash": "e6bab8ca29",
+        "prose_fp": "30eaf840",
+        "question_hash": "5271d16c75"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Ordnance Survey",
+            "bullet": "Ordnance Survey → Britain’s national mapping agency founded in 1791."
+          },
+          {
+            "hint": "vanished mills",
+            "bullet": "vanished mills → Lost workplaces and ponds still visible on 1880s town maps."
+          },
+          {
+            "hint": "Gloucester",
+            "bullet": "Gloucester → Historic city whose 1880s OS plan shows old churches and banks."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Founded in 1791, the Ordnance Survey published detailed 1880s Victorian parish and town maps recording every street, mill, and field."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "To make those maps accurate, surveyors carved permanent marks outdoors."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARCHIVE METHOD",
+            "stem": "By checking ____________ alongside ____________, historians uncover..."
+          },
+          {
+            "badge": "CHANGING BRITAIN",
+            "stem": "Across 1791–1900, everyday street life shifted when ____________."
+          },
+          {
+            "badge": "DETECTIVE TAKEAWAY",
+            "stem": "Without preserving Gloucester, communities would lose sight of ____________."
+          }
+        ],
+        "watch_out": "Founded in 1791, the Ordnance Survey published detailed 1880s Victorian parish and town maps recording every street, mill, and field. To make those maps accurate, surveyors carved permanent marks outdoors.",
+        "prose_hash": "c0eb9afb0c",
+        "prose_fp": "e32dbeaf",
+        "question_hash": "65e67ea7d9"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "broad arrow",
+            "bullet": "broad arrow → Three-line upward symbol carved beneath a stone benchmark bar."
+          },
+          {
+            "hint": "trig pillars",
+            "bullet": "trig pillars → White concrete hilltop columns built from 1936 for sighting angles."
+          },
+          {
+            "hint": "surveyors",
+            "bullet": "surveyors → Map-makers who measured exact heights and triangle angles outdoors."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Surveyors chiseled broad-arrow benchmarks into stone walls for exact sea-level heights and built hilltop concrete trig pillars from 1936."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Next, detectives look up from the map to read the buildings themselves!"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EVIDENCE IN STONE",
+            "stem": "Surviving clues such as ____________ and ____________ prove that..."
+          },
+          {
+            "badge": "HUMAN STORY",
+            "stem": "Behind broad arrow stood field surveyors across britain who ____________."
+          },
+          {
+            "badge": "LOCAL LEGACY",
+            "stem": "Even today, spotting surveyors helps young historians explain ____________."
+          }
+        ],
+        "watch_out": "Surveyors chiseled broad-arrow benchmarks into stone walls for exact sea-level heights and built hilltop concrete trig pillars from 1936. Next, detectives look up from the map to read the buildings themselves!",
+        "prose_hash": "546bb6a300",
+        "prose_fp": "970e441f",
+        "question_hash": "fb34e4c1b6"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "oak timber",
+            "bullet": "oak timber → Heavy wooden beams pegged together to frame Tudor town houses."
+          },
+          {
+            "hint": "upper jetty",
+            "bullet": "upper jetty → Overhanging top floor jutting out to make extra space upstairs."
+          },
+          {
+            "hint": "wattle and daub",
+            "bullet": "wattle and daub → Woven sticks and plaster filling spaces between dark Tudor beams."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Looking above modern shopfronts reveals medieval stone churches and Tudor oak-beamed houses with wattle-and-daub panels and overhanging upper jetties."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "After town fires, builders turned to neat brick and stone symmetry."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOORSTEP CLUE",
+            "stem": "Looking closely at ____________ and ____________, local detectives can spot..."
+          },
+          {
+            "badge": "HISTORICAL PROOF",
+            "stem": "During 1485–1666, medieval masons and tudor carpenters left lasting evidence in ____________."
+          },
+          {
+            "badge": "WHY IT MATTERS",
+            "stem": "Combined with wattle and daub, this reveals how a British neighbourhood ____________."
+          }
+        ],
+        "watch_out": "Looking above modern shopfronts reveals medieval stone churches and Tudor oak-beamed houses with wattle-and-daub panels and overhanging upper jetties. After town fires, builders turned to neat brick and stone symmetry.",
+        "prose_hash": "a2185279cc",
+        "prose_fp": "180af021",
+        "question_hash": "a7a1cb2200"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "sash windows",
+            "bullet": "sash windows → Tall Georgian wooden window frames sliding up and down on cords."
+          },
+          {
+            "hint": "red brick",
+            "bullet": "red brick → Bright machine-made Victorian bricks carried cheaply by train."
+          },
+          {
+            "hint": "terracotta",
+            "bullet": "terracotta → Moulded baked clay ornament decorating grand Victorian halls."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Georgian streets prized calm symmetry and sliding sash windows, whereas Victorian railways brought bright machine-made red brick, terracotta, and bay windows."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Smaller cast-iron and carved clues pin down exact reigns and dates."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARCHIVE METHOD",
+            "stem": "By checking ____________ alongside ____________, historians uncover..."
+          },
+          {
+            "badge": "CHANGING BRITAIN",
+            "stem": "Across 1714–1901, everyday street life shifted when ____________."
+          },
+          {
+            "badge": "DETECTIVE TAKEAWAY",
+            "stem": "Without preserving terracotta, communities would lose sight of ____________."
+          }
+        ],
+        "watch_out": "Georgian streets prized calm symmetry and sliding sash windows, whereas Victorian railways brought bright machine-made red brick, terracotta, and bay windows. Smaller cast-iron and carved clues pin down exact reigns and dates.",
+        "prose_hash": "d30bb11a9a",
+        "prose_fp": "d15804fa",
+        "question_hash": "a6f48004cc"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "royal cyphers",
+            "bullet": "royal cyphers → Monarchs’ initials like V.R. or G.R. cast onto red postboxes."
+          },
+          {
+            "hint": "datestones",
+            "bullet": "datestones → Carved stone plaques recording the year and original building name."
+          },
+          {
+            "hint": "ghost signs",
+            "bullet": "ghost signs → Faded hand-painted adverts surviving high on old brick walls."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Cast-iron postbox royal cyphers, doorway datestones, and faded brick ghost signs date streets and lost shops."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Once we date the outside of Number 12, how do we find who lived inside?"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EVIDENCE IN STONE",
+            "stem": "Surviving clues such as ____________ and ____________ prove that..."
+          },
+          {
+            "badge": "HUMAN STORY",
+            "stem": "Behind royal cyphers stood post office foundries and signwriters who ____________."
+          },
+          {
+            "badge": "LOCAL LEGACY",
+            "stem": "Even today, spotting ghost signs helps young historians explain ____________."
+          }
+        ],
+        "watch_out": "Cast-iron postbox royal cyphers, doorway datestones, and faded brick ghost signs date streets and lost shops. Once we date the outside of Number 12, how do we find who lived inside?",
+        "prose_hash": "4df4885095",
+        "prose_fp": "6d0e0ca4",
+        "question_hash": "7dd0868458"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "enumerators",
+            "bullet": "enumerators → Local officers who walked door to door copying Census schedules."
+          },
+          {
+            "hint": "occupations",
+            "bullet": "occupations → Jobs column listing carpenters, servants, ostlers, and lamplighters."
+          },
+          {
+            "hint": "lamplighters",
+            "bullet": "lamplighters → Victorian workers who lit street gas lamps at dusk with a long pole."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Held every ten years since 1801, UK Censuses record household ages, birthplaces, and vanished jobs like ostlers and lamplighters."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "To trace families earlier than 1801, detectives step inside the parish church."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOORSTEP CLUE",
+            "stem": "Looking closely at ____________ and ____________, local detectives can spot..."
+          },
+          {
+            "badge": "HISTORICAL PROOF",
+            "stem": "During 1801–1921, dr william farr and enumerators left lasting evidence in ____________."
+          },
+          {
+            "badge": "WHY IT MATTERS",
+            "stem": "Combined with lamplighters, this reveals how a British neighbourhood ____________."
+          }
+        ],
+        "watch_out": "Held every ten years since 1801, UK Censuses record household ages, birthplaces, and vanished jobs like ostlers and lamplighters. To trace families earlier than 1801, detectives step inside the parish church.",
+        "prose_hash": "04fbc02d34",
+        "prose_fp": "5d59f266",
+        "question_hash": "db1626779b"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "parish registers",
+            "bullet": "parish registers → Church books started in 1538 listing baptisms, weddings, and burials."
+          },
+          {
+            "hint": "baptisms",
+            "bullet": "baptisms → Church christening records naming babies, parents, and fathers’ trades."
+          },
+          {
+            "hint": "headstones",
+            "bullet": "headstones → Carved churchyard memorials recording names, death dates, and ages."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "From 1538, parish church registers recorded local baptisms, marriages, and burials, complemented outdoors by carved churchyard headstones."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Meanwhile, Victorian classrooms began keeping weekly diaries of children’s lives."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARCHIVE METHOD",
+            "stem": "By checking ____________ alongside ____________, historians uncover..."
+          },
+          {
+            "badge": "CHANGING BRITAIN",
+            "stem": "Across 1538–1801, everyday street life shifted when ____________."
+          },
+          {
+            "badge": "DETECTIVE TAKEAWAY",
+            "stem": "Without preserving headstones, communities would lose sight of ____________."
+          }
+        ],
+        "watch_out": "From 1538, parish church registers recorded local baptisms, marriages, and burials, complemented outdoors by carved churchyard headstones. Meanwhile, Victorian classrooms began keeping weekly diaries of children’s lives.",
+        "prose_hash": "6ff5cd2ae8",
+        "prose_fp": "b4c5f35b",
+        "question_hash": "ab3e6cf99c"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "School Logbooks",
+            "bullet": "School Logbooks → Compulsory weekly diaries written by British headteachers from 1862."
+          },
+          {
+            "hint": "slate boards",
+            "bullet": "slate boards → Reusable grey stone writing tablets used by Victorian pupils."
+          },
+          {
+            "hint": "harvests",
+            "bullet": "harvests → Autumn farm work that emptied country classrooms in September."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "From 1862, headteachers wrote weekly School Logbooks recording harvest absences, snowdrifts, illnesses, slate lessons, and inspector visits."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Next, detectives step outside to trace how the whole town earned its living!"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EVIDENCE IN STONE",
+            "stem": "Surviving clues such as ____________ and ____________ prove that..."
+          },
+          {
+            "badge": "HUMAN STORY",
+            "stem": "Behind School Logbooks stood village and town headteachers who ____________."
+          },
+          {
+            "badge": "LOCAL LEGACY",
+            "stem": "Even today, spotting harvests helps young historians explain ____________."
+          }
+        ],
+        "watch_out": "From 1862, headteachers wrote weekly School Logbooks recording harvest absences, snowdrifts, illnesses, slate lessons, and inspector visits. Next, detectives step outside to trace how the whole town earned its living!",
+        "prose_hash": "b731f436ad",
+        "prose_fp": "2f5e5c71",
+        "question_hash": "d38baffeae"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "market crosses",
+            "bullet": "market crosses → Roofed town shelters where country farmers sold butter, wool, and grain."
+          },
+          {
+            "hint": "turnpike roads",
+            "bullet": "turnpike roads → Main 18th-century toll highways maintained for horse-drawn coaches."
+          },
+          {
+            "hint": "milestones",
+            "bullet": "milestones → Carved roadside stones recording exact miles to towns and London."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Covered market crosses sheltered local farm trade while turnpike trusts smoothed coach roads and set carved stone milestones every mile."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Yet heavy coal, stone, and china needed smoother bulk transport."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOORSTEP CLUE",
+            "stem": "Looking closely at ____________ and ____________, local detectives can spot..."
+          },
+          {
+            "badge": "HISTORICAL PROOF",
+            "stem": "During 1600–1830, farmers, traders and coachmen left lasting evidence in ____________."
+          },
+          {
+            "badge": "WHY IT MATTERS",
+            "stem": "Combined with milestones, this reveals how a British neighbourhood ____________."
+          }
+        ],
+        "watch_out": "Covered market crosses sheltered local farm trade while turnpike trusts smoothed coach roads and set carved stone milestones every mile. Yet heavy coal, stone, and china needed smoother bulk transport.",
+        "prose_hash": "598dd366da",
+        "prose_fp": "ac3584c5",
+        "question_hash": "fb721f4972"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "narrowboats",
+            "bullet": "narrowboats → Long, slim cargo boats pulled smoothly along canals by one horse."
+          },
+          {
+            "hint": "canal locks",
+            "bullet": "canal locks → Water-filled chambers with wooden gates lifting boats up hills."
+          },
+          {
+            "hint": "waterwheels",
+            "bullet": "waterwheels → Giant riverside wheels turning millstones and textile machinery."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Fast streams turned mill waterwheels while horse-drawn narrowboats climbed wooden canal locks and iron aqueducts carrying heavy coal and pottery."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Soon steam locomotives sped past canal horses at forty miles an hour!"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARCHIVE METHOD",
+            "stem": "By checking ____________ alongside ____________, historians uncover..."
+          },
+          {
+            "badge": "CHANGING BRITAIN",
+            "stem": "Across 1760–1840, everyday street life shifted when ____________."
+          },
+          {
+            "badge": "DETECTIVE TAKEAWAY",
+            "stem": "Without preserving waterwheels, communities would lose sight of ____________."
+          }
+        ],
+        "watch_out": "Fast streams turned mill waterwheels while horse-drawn narrowboats climbed wooden canal locks and iron aqueducts carrying heavy coal and pottery. Soon steam locomotives sped past canal horses at forty miles an hour!",
+        "prose_hash": "2ad0dd3f92",
+        "prose_fp": "612b5df8",
+        "question_hash": "74237f8e95"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "steam railways",
+            "bullet": "steam railways → Fast Victorian train lines linking ports, mines, farms, and cities."
+          },
+          {
+            "hint": "Station Road",
+            "bullet": "Station Road → Common street name still pointing to a live or vanished station."
+          },
+          {
+            "hint": "branch lines",
+            "bullet": "branch lines → Smaller rural train routes, many turned into walking trails after the 1960s."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Victorian steam railways connected British towns until many country branch lines closed in the 1960s, leaving clues in bridges, cycle paths, and street names."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Next, detectives visit the town square to read local names carved in stone."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EVIDENCE IN STONE",
+            "stem": "Surviving clues such as ____________ and ____________ prove that..."
+          },
+          {
+            "badge": "HUMAN STORY",
+            "stem": "Behind steam railways stood railway navvies and town workers who ____________."
+          },
+          {
+            "badge": "LOCAL LEGACY",
+            "stem": "Even today, spotting branch lines helps young historians explain ____________."
+          }
+        ],
+        "watch_out": "Victorian steam railways connected British towns until many country branch lines closed in the 1960s, leaving clues in bridges, cycle paths, and street names. Next, detectives visit the town square to read local names carved in stone.",
+        "prose_hash": "c0e3217966",
+        "prose_fp": "5fcfc7f8",
+        "question_hash": "ed0ed9044f"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "War Memorials",
+            "bullet": "War Memorials → Local crosses and church plaques naming fallen neighbours."
+          },
+          {
+            "hint": "surnames",
+            "bullet": "surnames → Family names carved in stone—often brothers from one street."
+          },
+          {
+            "hint": "poppy wreaths",
+            "bullet": "poppy wreaths → Red Remembrance tributes laid at local memorials each November."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Because fallen service personnel were buried overseas, British communities built over 100,000 local War Memorials after 1918 and added 1939–1945 names later."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Meanwhile, overseas cemeteries introduced a landmark rule of equality."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOORSTEP CLUE",
+            "stem": "Looking closely at ____________ and ____________, local detectives can spot..."
+          },
+          {
+            "badge": "HISTORICAL PROOF",
+            "stem": "During 1918–1945, bereaved families and local councils left lasting evidence in ____________."
+          },
+          {
+            "badge": "WHY IT MATTERS",
+            "stem": "Combined with poppy wreaths, this reveals how a British neighbourhood ____________."
+          }
+        ],
+        "watch_out": "Because fallen service personnel were buried overseas, British communities built over 100,000 local War Memorials after 1918 and added 1939–1945 names later. Meanwhile, overseas cemeteries introduced a landmark rule of equality.",
+        "prose_hash": "cfe7d38fbc",
+        "prose_fp": "a32850aa",
+        "question_hash": "695e9533fe"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Fabian Ware",
+            "bullet": "Fabian Ware → Red Cross commander who founded the War Graves Commission in 1917."
+          },
+          {
+            "hint": "Portland stone",
+            "bullet": "Portland stone → Pale Dorset limestone used for uniform CWGC headstones."
+          },
+          {
+            "hint": "regiments",
+            "bullet": "regiments → County or city army units whose badges appear on headstones."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Founded by Fabian Ware in 1917, the War Graves Commission gave generals and privates identical white Portland stone headstones carved with regimental badges."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Free grave registers let pupils connect overseas headstones to local streets."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARCHIVE METHOD",
+            "stem": "By checking ____________ alongside ____________, historians uncover..."
+          },
+          {
+            "badge": "CHANGING BRITAIN",
+            "stem": "Across 1917–1922, everyday street life shifted when ____________."
+          },
+          {
+            "badge": "DETECTIVE TAKEAWAY",
+            "stem": "Without preserving regiments, communities would lose sight of ____________."
+          }
+        ],
+        "watch_out": "Founded by Fabian Ware in 1917, the War Graves Commission gave generals and privates identical white Portland stone headstones carved with regimental badges. Free grave registers let pupils connect overseas headstones to local streets.",
+        "prose_hash": "aa1dfdfa5d",
+        "prose_fp": "483200c4",
+        "question_hash": "6d8847ee9c"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "memorial plaques",
+            "bullet": "memorial plaques → Round bronze WWI medallions cast with each fallen person’s name."
+          },
+          {
+            "hint": "service medals",
+            "bullet": "service medals → Silver and rainbow campaign ribbons awarded for wartime service."
+          },
+          {
+            "hint": "local newspapers",
+            "bullet": "local newspapers → Wartime town papers printing soldiers’ letters, photos, and tributes."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Cross-checking CWGC registers, bronze Memorial Plaques, campaign medals, 1911 Censuses, and wartime newspapers traces one carved name back to a local house."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Finally, detectives meet living witnesses and protect heritage for the future!"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EVIDENCE IN STONE",
+            "stem": "Surviving clues such as ____________ and ____________ prove that..."
+          },
+          {
+            "badge": "HUMAN STORY",
+            "stem": "Behind memorial plaques stood local history detectives who ____________."
+          },
+          {
+            "badge": "LOCAL LEGACY",
+            "stem": "Even today, spotting local newspapers helps young historians explain ____________."
+          }
+        ],
+        "watch_out": "Cross-checking CWGC registers, bronze Memorial Plaques, campaign medals, 1911 Censuses, and wartime newspapers traces one carved name back to a local house. Finally, detectives meet living witnesses and protect heritage for the future!",
+        "prose_hash": "527ef132c8",
+        "prose_fp": "a7516f2a",
+        "question_hash": "8d5c3d202a"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "oral history",
+            "bullet": "oral history → Recording older people’s spoken memories of everyday past life."
+          },
+          {
+            "hint": "shillings",
+            "bullet": "shillings → Pre-decimal British coins used before Decimal Day in February 1971."
+          },
+          {
+            "hint": "archive photos",
+            "bullet": "archive photos → Dated street photographs used to cross-check spoken memories."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Respectful oral history interviews capture post-1945 memories—like corner grocers and pre-1971 shillings—cross-checked against archive photographs."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Spoken stories pair with laws and charities protecting physical places."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DOORSTEP CLUE",
+            "stem": "Looking closely at ____________ and ____________, local detectives can spot..."
+          },
+          {
+            "badge": "HISTORICAL PROOF",
+            "stem": "During 1945–Present, older residents and pupil interviewers left lasting evidence in ____________."
+          },
+          {
+            "badge": "WHY IT MATTERS",
+            "stem": "Combined with archive photos, this reveals how a British neighbourhood ____________."
+          }
+        ],
+        "watch_out": "Respectful oral history interviews capture post-1945 memories—like corner grocers and pre-1971 shillings—cross-checked against archive photographs. Spoken stories pair with laws and charities protecting physical places.",
+        "prose_hash": "a5cb4a0d89",
+        "prose_fp": "2da60887",
+        "question_hash": "6cfcddff3f"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Octavia Hill",
+            "bullet": "Octavia Hill → Social reformer who co-founded the National Trust in 1895."
+          },
+          {
+            "hint": "National Trust",
+            "bullet": "National Trust → Charity protecting historic buildings, mills, coasts, and countryside."
+          },
+          {
+            "hint": "Listed Buildings",
+            "bullet": "Listed Buildings → Historic structures protected from demolition by law since 1947."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Ceramic Blue Plaques, Octavia Hill’s 1895 National Trust, and 1947 Listed Building laws safeguard Britain’s historic buildings and green spaces."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Every school class can join that mission by sharing local history!"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ARCHIVE METHOD",
+            "stem": "By checking ____________ alongside ____________, historians uncover..."
+          },
+          {
+            "badge": "CHANGING BRITAIN",
+            "stem": "Across 1866–1947, everyday street life shifted when ____________."
+          },
+          {
+            "badge": "DETECTIVE TAKEAWAY",
+            "stem": "Without preserving Listed Buildings, communities would lose sight of ____________."
+          }
+        ],
+        "watch_out": "Ceramic Blue Plaques, Octavia Hill’s 1895 National Trust, and 1947 Listed Building laws safeguard Britain’s historic buildings and green spaces. Every school class can join that mission by sharing local history!",
+        "prose_hash": "d73939255f",
+        "prose_fp": "a8fbd402",
+        "question_hash": "dbfc52d5f7"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Heritage Trails",
+            "bullet": "Heritage Trails → Mapped walking routes connecting local historic stops and stories."
+          },
+          {
+            "hint": "county archives",
+            "bullet": "county archives → Free public record offices holding local maps, censuses, and logbooks."
+          },
+          {
+            "hint": "doorstep clues",
+            "bullet": "doorstep clues → Everyday street names, postboxes, benchmarks, and buildings outside."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Detective discovery",
+            "bullet": "Combining place-names, 1880s OS maps, architecture, censuses, War Memorials, and oral history lets pupils design a local Heritage Trail anywhere in the UK."
+          },
+          {
+            "hint": "Next step on the trail",
+            "bullet": "Congratulations—your Local History Detective Toolkit is complete!"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EVIDENCE IN STONE",
+            "stem": "Surviving clues such as ____________ and ____________ prove that..."
+          },
+          {
+            "badge": "HUMAN STORY",
+            "stem": "Behind Heritage Trails stood young doorstep history detectives who ____________."
+          },
+          {
+            "badge": "LOCAL LEGACY",
+            "stem": "Even today, spotting doorstep clues helps young historians explain ____________."
+          }
+        ],
+        "watch_out": "Combining place-names, 1880s OS maps, architecture, censuses, War Memorials, and oral history lets pupils design a local Heritage Trail anywhere in the UK. Congratulations—your Local History Detective Toolkit is complete!",
+        "prose_hash": "1c9708cfda",
+        "prose_fp": "eb477b23",
+        "question_hash": "00702caf60"
+      }
+    ]
+  }
+}

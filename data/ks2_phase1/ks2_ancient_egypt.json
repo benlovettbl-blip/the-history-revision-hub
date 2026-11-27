@@ -1,0 +1,412 @@
+{
+  "unit_id": "ks2_ancient_egypt",
+  "glossary": [
+    {
+      "term": "Civilisation",
+      "pronunciation": "siv-ih-ly-ZAY-shun",
+      "definition": "An organised human society with settled cities, farming, rulers, skilled craftworkers, and shared writing."
+    },
+    {
+      "term": "Inundation",
+      "pronunciation": "in-un-DAY-shun",
+      "definition": "The yearly summer flooding of the River Nile that soaked Egypt's dry valley and left behind rich dark mud."
+    },
+    {
+      "term": "Kemet",
+      "pronunciation": "KEM-et",
+      "definition": "The Ancient Egyptians' name for their fertile Nile valley, meaning Black Land after the dark flood silt where crops grew."
+    },
+    {
+      "term": "Deshret",
+      "pronunciation": "DESH-ret",
+      "definition": "The Ancient Egyptians' name for the scorching, dry Sahara desert beyond the river valley, meaning Red Land."
+    },
+    {
+      "term": "Shaduf",
+      "pronunciation": "shuh-DOOF",
+      "definition": "A hand-operated wooden lever with a bucket on one end and a heavy mud weight on the other for lifting Nile water onto fields."
+    },
+    {
+      "term": "Papyrus",
+      "pronunciation": "puh-PY-rus",
+      "definition": "A tall triangular marsh reed growing beside the River Nile, woven into boats, sandals, ropes, and smooth writing sheets."
+    },
+    {
+      "term": "Double Crown",
+      "pronunciation": "DUB-ul KROWN",
+      "definition": "The combined red-and-white royal crown worn after King Narmer united northern Lower Egypt and southern Upper Egypt around 3100 BC."
+    },
+    {
+      "term": "Pharaoh",
+      "pronunciation": "FAIR-oh",
+      "definition": "The supreme ruler of Ancient Egypt, honoured by Egyptians as both a royal monarch and a living god on earth."
+    },
+    {
+      "term": "Imhotep",
+      "pronunciation": "im-HOH-tep",
+      "definition": "The brilliant royal architect who stacked six stone layers at Saqqara around 2670 BC to build Pharaoh Djoser's Step Pyramid."
+    },
+    {
+      "term": "Pyramid",
+      "pronunciation": "PIR-uh-mid",
+      "definition": "A giant four-sided stone royal tomb rising to a pointed peak, built during the Old Kingdom to protect a Pharaoh's body forever."
+    },
+    {
+      "term": "Quarry",
+      "pronunciation": "KWOR-ee",
+      "definition": "An open rock cliff or pit where Egyptian stonemasons cut heavy limestone and granite blocks using copper chisels and wooden wedges."
+    },
+    {
+      "term": "Sphinx",
+      "pronunciation": "SFINKS",
+      "definition": "A giant carved stone guardian statue combining the strong body of a crouching lion with the head of a Pharaoh, such as Khafre's Great Sphinx at Giza."
+    },
+    {
+      "term": "Vizier",
+      "pronunciation": "vih-ZEER",
+      "definition": "The Pharaoh's highest royal official and chief minister, trusted to oversee judges, tax records, and royal grain stores."
+    },
+    {
+      "term": "Scribe",
+      "pronunciation": "SKRYBE",
+      "definition": "A trained Egyptian reader and writer who studied for years to paint hieroglyphs and ink records on papyrus scrolls."
+    },
+    {
+      "term": "Hieroglyphs",
+      "pronunciation": "HY-ruh-glifs",
+      "definition": "Ancient Egypt's sacred writing system of more than 700 picture and sound signs carved into temple stone or painted in ink."
+    },
+    {
+      "term": "Senet",
+      "pronunciation": "SEN-et",
+      "definition": "A popular Ancient Egyptian board game in which two players tossed flat throwing sticks to race counters across thirty squares."
+    },
+    {
+      "term": "Cartouche",
+      "pronunciation": "kar-TOOSH",
+      "definition": "An oval loop with a knotted line at one end drawn around the sacred hieroglyphic name of a Pharaoh or queen, vital for decoding the Rosetta Stone."
+    },
+    {
+      "term": "Polytheistic",
+      "pronunciation": "pol-ee-thee-ISS-tik",
+      "definition": "Believing in and worshipping many different gods and goddesses, such as Ra, Osiris, Isis, Horus, Thoth, and Anubis."
+    },
+    {
+      "term": "Mummification",
+      "pronunciation": "mum-ih-fih-KAY-shun",
+      "definition": "Preserving a dead body over seventy days by drying it in desert salt, rubbing sweet oils on the skin, and wrapping tight linen bandages."
+    },
+    {
+      "term": "Natron",
+      "pronunciation": "NAY-tron",
+      "definition": "Natural dry desert salt packed over and inside a dead body for forty days during mummification to soak up moisture and stop decay."
+    },
+    {
+      "term": "Canopic Jars",
+      "pronunciation": "kuh-NOP-ik JAHZ",
+      "definition": "Four carved stone jars with guardian-headed lids used by priests to store the dried lungs, stomach, liver, and intestines safely inside a tomb."
+    },
+    {
+      "term": "Shabti",
+      "pronunciation": "SHAB-tee",
+      "definition": "Small glazed clay or wooden servant figures placed inside tombs to wake up magically and do farm work for their owner in the afterlife."
+    },
+    {
+      "term": "Ma'at",
+      "pronunciation": "mah-AHT",
+      "definition": "The Egyptian goddess and sacred idea of truth, fairness, and balance, whose light feather was weighed against each dead person's heart."
+    },
+    {
+      "term": "Hatshepsut",
+      "pronunciation": "hat-SHEP-soot",
+      "definition": "Powerful female New Kingdom Pharaoh who ruled Egypt peacefully around 1479 BC, wore royal kingly symbols, and sent five trading ships to the Land of Punt."
+    },
+    {
+      "term": "Chariot",
+      "pronunciation": "CHAR-ee-ut",
+      "definition": "A light, fast two-wheeled wooden war cart pulled by two galloping horses and crewed by a driver and an archer, raced at the Battle of Kadesh."
+    },
+    {
+      "term": "Valley of the Kings",
+      "pronunciation": "VAL-ee ov thuh KINGZ",
+      "definition": "A hidden desert canyon near Thebes where New Kingdom Pharaohs such as Tutankhamun cut secret rock tombs deep inside limestone cliffs."
+    },
+    {
+      "term": "Sarcophagus",
+      "pronunciation": "sar-KOF-uh-gus",
+      "definition": "A heavy carved stone outer coffin placed inside a royal burial chamber to hold nested gilded wooden coffins and protect the mummy."
+    },
+    {
+      "term": "Ptolemaic",
+      "pronunciation": "tol-uh-MAY-ik",
+      "definition": "Relating to the Greek-speaking royal dynasty started by General Ptolemy after 323 BC and ended when Queen Cleopatra VII was defeated by Rome in 30 BC."
+    }
+  ],
+  "widgets": [
+    {
+      "lesson_id": "lesson_3",
+      "block_index": 0,
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "KS2 Interactive History Explorer",
+        "title": "Inside Egypt's Social Pyramid: From the God-King Pharaoh to Peasant Farmers",
+        "default_index": 0,
+        "caption": "Tap each rank to explore how duties, skills, and harvests connected everyone in Ancient Egyptian society.",
+        "items": [
+          {
+            "tab_label": "1. Pharaoh and Viziers",
+            "title": "The God-King Pharaoh, Viziers and Temple Priests",
+            "dates": "Peak of the Social Pyramid",
+            "badge": "Royal Rule",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Supreme Ruler",
+                "value": "God-King Pharaoh at the Top"
+              },
+              {
+                "label": "Chief Ministers",
+                "value": "Viziers, Rich Nobles and Priests"
+              },
+              {
+                "label": "Key Role",
+                "value": "Oversaw Laws, Temples and Grain Stores"
+              }
+            ],
+            "takeaway": "At the narrow peak stood the god-king Pharaoh, supported by chief ministers called viziers, wealthy nobles, and temple priests."
+          },
+          {
+            "tab_label": "2. Scribes and Crafts",
+            "title": "Trained Scribes and Skilled Workshop Craftworkers",
+            "dates": "Middle Ranks of Society",
+            "badge": "Writing and Art",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.2)",
+            "metrics": [
+              {
+                "label": "Respected Writers",
+                "value": "Scribes Read, Counted Taxes and Measured Grain"
+              },
+              {
+                "label": "Skilled Makers",
+                "value": "Potters, Weavers, Jewellers and Glaze Makers"
+              },
+              {
+                "label": "Workshop Treasure",
+                "value": "William the Cheerful Blue Hippopotamus"
+              }
+            ],
+            "takeaway": "Trained scribes kept Egypt's written records and tax counts, while skilled craftworkers created linen, jewellery, and blue-glazed treasures like William."
+          },
+          {
+            "tab_label": "3. Peasant Farmers",
+            "title": "Millions of Peasant Farmers at the Wide Base",
+            "dates": "Widest Base Along the Nile",
+            "badge": "Fed All Egypt",
+            "color": "#16a34a",
+            "bg_color": "rgba(22, 163, 74, 0.2)",
+            "metrics": [
+              {
+                "label": "Population Size",
+                "value": "Millions Working Nile Valley Fields"
+              },
+              {
+                "label": "Seasonal Work",
+                "value": "Ploughed Silt, Irrigated and Harvested Crops"
+              },
+              {
+                "label": "Vital Contribution",
+                "value": "Yearly Grain Taxes Fed All Egypt"
+              }
+            ],
+            "takeaway": "Millions of peasant farmers formed the wide base of the social pyramid, growing the yearly grain taxes that fed palaces, temples, and workshops."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_4",
+      "block_index": 2,
+      "concept_widget": {
+        "type": "power_seesaw",
+        "eyebrow": "KS2 Interactive Balance Explorer",
+        "title": "Weighing the Heart on Anubis's Golden Scales: Heart vs Feather of Ma'at",
+        "default_index": 0,
+        "caption": "Tap each stage inside the Hall of Two Truths to see how Anubis, Thoth, Ammit, and Osiris judged every spirit.",
+        "eras": [
+          {
+            "year": "1. The Test",
+            "headline": "Anubis Places the Heart Opposite Ma'at's Feather",
+            "color": "#0284c7",
+            "summary": "Guided by painted Book of the Dead scrolls into the Hall of Two Truths, jackal-headed Anubis placed the dead person's heart on golden scales opposite Ma'at's light feather of truth while Thoth stood ready to write.",
+            "pillars": [
+              {
+                "actor": "Dead Person's Heart",
+                "share": 50,
+                "status": "Placed on the Golden Scale Dish",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Feather of Ma'at",
+                "share": 50,
+                "status": "Sacred Measure of Truth and Kindness",
+                "color": "#f59e0b"
+              }
+            ]
+          },
+          {
+            "year": "2. Kind Heart",
+            "headline": "Light and Balanced: Welcome to the Sunny Field of Reeds!",
+            "color": "#16a34a",
+            "summary": "When a person lived honestly and kindly, their heart stayed as light as Ma'at's feather of truth! Ibis-headed Thoth recorded the fair result, and green-skinned Osiris welcomed them into the sunny Field of Reeds forever.",
+            "pillars": [
+              {
+                "actor": "Kind, Honest Heart",
+                "share": 50,
+                "status": "Balances Lightly Beside Truth",
+                "color": "#22c55e"
+              },
+              {
+                "actor": "Feather of Ma'at",
+                "share": 50,
+                "status": "Osiris Opens the Field of Reeds",
+                "color": "#f59e0b"
+              }
+            ]
+          },
+          {
+            "year": "3. Heavy Heart",
+            "headline": "Tipped by Mean Deeds: Gobbled Up by Fierce Ammit!",
+            "color": "#dc2626",
+            "summary": "If a heart was heavy with mean deeds, it tipped the golden scales down below Ma'at's light feather! Waiting beside the scales crouched fierce Ammit — part crocodile, lion, and hippo — who gobbled the heavy heart up.",
+            "pillars": [
+              {
+                "actor": "Heart Heavy with Mean Deeds",
+                "share": 80,
+                "status": "Tips the Scales and Gobbled by Ammit",
+                "color": "#ef4444"
+              },
+              {
+                "actor": "Feather of Ma'at",
+                "share": 20,
+                "status": "Outweighed on Anubis's Scales",
+                "color": "#f59e0b"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "source_texts": [
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_ancient_egypt_l1_src_a",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/sumer_clay_cuneiform_tablet.jpg",
+      "text": "Artefact note: Look closely at the horizontal bands across this cracked tan tablet. A temple scribe rolled tiny standing figures across damp mud and pressed neat wedge-shaped reed marks to count barley."
+    },
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_ancient_egypt_l1_src_b",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/ipuy_shaduf_garden_painting.jpg",
+      "text": "Artefact note: Follow the long sloping wooden beam from the gardener's hands up past the leafy fruit trees to its rounded back end. Below his bare feet sits a collared brown dog beside lotus-filled water."
+    },
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_ancient_egypt_l1_src_c",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/narmer_palette_unification.jpg",
+      "text": "Artefact note: This close-up carving on dark green siltstone shows a barefoot royal attendant carrying a small washing pot and woven sandals beneath a flower sign, walking right behind the giant figure on the palette."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_ancient_egypt_l2_src_a",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/great_pyramid_limestone_blocks.jpg",
+      "text": "Artefact note: Notice the flat, pale top surface and rough, shell-speckled sides of this thick yellow-brown Giza limestone block. Even one single stone from Khufu's tomb weighs as much as a family car."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_ancient_egypt_l2_src_b",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/egyptian_bronze_stone_chisel.jpg",
+      "text": "Artefact note: Trace this solid metal bar from its narrow, flattened striking end on the left to its gently curved cutting edge on the right, now speckled green after thousands of years."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_ancient_egypt_l2_src_c",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/seated_statue_pharaoh_khafre.jpg",
+      "text": "Artefact note: Carved from glossy dark diorite stone, Pharaoh Khafre sits bolt upright wearing a pleated kilt and royal headcloth. Look right behind his neck, where carved bird wings curve around his head."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_ancient_egypt_l3_src_a",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/rosetta_stone_three_scripts.jpg",
+      "text": "Artefact note: Three bands cross this broken dark grey slab — tiny picture signs at the top, quick everyday script in the middle, and capital letters below. Its final carved line orders: \"Set up this hard stone in three scripts.\""
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_ancient_egypt_l3_src_b",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/edwin_smith_papyrus_scroll.jpg",
+      "text": "Artefact note: Look closely at the criss-cross plant fibres on this golden-tan papyrus sheet. Two neat columns of flowing ink signs run from right to left, switching smoothly between dark black soot and bright red headings."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_ancient_egypt_l3_src_c",
+      "visual_verified_file": "/images/upgraded/ks2-world/egypt_l3_srcc_senet_board_amenhotep_iii.jpg",
+      "text": "Artefact note: Three neat rows of ten turquoise-blue glazed squares run across the top of this hollow game box. Notice the open sliding drawer at the back left and the cone-shaped and spool-shaped playing pieces."
+    },
+    {
+      "lesson_id": "lesson_4",
+      "source_id": "ks2_ancient_egypt_l4_src_a",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/anubis_jackal_shrine_statue.jpg",
+      "text": "Artefact note: Cast in dark bronze with gleaming touches of gold leaf on his wig and kilt, tall prick-eared Anubis strides forward on a hieroglyph-carved base towards two cobras and a tiny kneeling worshipper."
+    },
+    {
+      "lesson_id": "lesson_4",
+      "source_id": "ks2_ancient_egypt_l4_src_b",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/four_limestone_canopic_jars.jpg",
+      "text": "Artefact note: Fine tool marks still show down the tall, hollowed cream-white limestone body of this tomb jar, topped by a snug stone lid carved with the calm human face of guardian Imsety."
+    },
+    {
+      "lesson_id": "lesson_4",
+      "source_id": "ks2_ancient_egypt_l4_src_c",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/blue_faience_shabti_servants.jpg",
+      "text": "Artefact note: Shaped like a tiny wrapped mummy in shiny turquoise glaze, this hand-sized clay figure wears a black-striped wig, crosses both arms over its chest, and carries two columns of ink hieroglyphs."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_ancient_egypt_l5_src_a",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/queen_hatshepsut_granite_sphinx.jpg",
+      "text": "Artefact note: Seated calmly on a solid stone throne carved with royal hieroglyphs beside her legs, female ruler Hatshepsut wears the wide striped headcloth, brow cobra, and pleated kilt usually reserved for Egypt's male kings."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_ancient_egypt_l5_src_b",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/queen_nefertiti_painted_bust.jpg",
+      "text": "Artefact note: Original mineral paint still glows after three thousand years on this sculpted limestone portrait, from the red-and-green ribbon around her tall flat-topped crown down to the rows of petals across her shoulders."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_ancient_egypt_l5_src_c",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/kadesh_clay_peace_treaty_tablet.jpg",
+      "text": "Artefact note: Tiny wedge-shaped signs fill this cracked terracotta clay tablet and its smaller matching corner fragment below. Its carved lines record King Hattusili and Pharaoh Ramesses promising: \"He is a brother to me, and I am a brother to him.\""
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_ancient_egypt_l6_src_a",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/howard_carter_opening_shrine_1923.jpg",
+      "text": "Artefact note: Under a bright lamp inside the rock-cut burial chamber, two turbaned Egyptian specialists, a colleague, and Howard Carter on the right steady wooden beams and padded blocks beneath the curved golden shrine roof."
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_ancient_egypt_l6_src_b",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/tutankhamun_golden_throne.jpg",
+      "text": "Artefact note: Sheet gold, deep-blue glass, and polished stones still shine brightly on this royal backrest, where Queen Ankhesenamun holds a tiny perfume cup and gently touches young Tutankhamun's collar beneath golden sunbeams."
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_ancient_egypt_l6_src_c",
+      "visual_verified_file": "/units/ks2_ancient_egypt/assets/cleopatra_silver_coin_alexandria.jpg",
+      "text": "Artefact note: Struck into solid silver inside a dotted border, Queen Cleopatra VII faces right wearing her wavy hair in a neat braided bun bound with the broad cloth headband of Greek monarchs."
+    }
+  ]
+}

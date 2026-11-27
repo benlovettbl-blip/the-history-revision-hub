@@ -1,0 +1,518 @@
+{
+  "lesson_1": {
+    "num": "01",
+    "slug": "ks2_victorian_britain_l01_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 1",
+    "datesBadge": "1837–1860",
+    "topicLabel": "Enquiry 01: Young Queen Victoria, Steam Railways and Shrinking Britain (1837–1860)",
+    "title": "How did steam railways and penny post shrink Queen Victoria’s Britain?",
+    "spokenTitle": "How did steam railways and penny post shrink Queen Victoria’s Britain?",
+    "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l1_paddington_railway_station.jpg",
+    "bridges": [
+      "Brunel & Mania",
+      "Time & Penny Post",
+      "Shrinking Britain"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Young Victoria’s 1842 Train",
+        "date": "1837–1842",
+        "img": "/units/ks2_victorian_britain/assets/victorian_britain_railways_industry_map_ks2.png",
+        "mode": "contain-light",
+        "pos": "center 45%",
+        "stat": "Crowned Aged 18 (1837) • First Train 1842",
+        "connective": "How did steam railways and penny post shrink Queen Victoria’s Britain?",
+        "html": "Crowned aged eighteen in <strong>1837</strong> alongside <strong>Prince Albert</strong>, <strong>Queen Victoria</strong> rode a steam train into <strong>Paddington</strong> in 25 minutes in <strong>1842</strong>.",
+        "paired_prose_hash": "271336e155",
+        "spoken": "How did steam railways and penny post shrink Queen Victoria’s Britain? <short pause> Crowned aged eighteen in 1837 alongside Prince Albert, Queen Victoria rode a steam train into Paddington in 25 minutes in 1842."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Brunel & Railway Mania",
+        "date": "1838–1850",
+        "img": "/units/ks2_victorian_britain/assets/queen_victoria_coronation_1838_hayter.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Box Tunnel • Clifton Bridge • SS Great Britain",
+        "connective": "Confident investors and navvies laid 6,000 miles of track.",
+        "html": "<strong>Isambard Kingdom Brunel</strong> engineered the <strong>Great Western Railway</strong>, <strong>Clifton Suspension Bridge</strong>, and iron steamship <strong>SS Great Britain</strong>.",
+        "paired_prose_hash": "becab0c224",
+        "spoken": "Confident investors and navvies laid 6,000 miles of track. <short pause> Isambard Kingdom Brunel engineered the Great Western Railway, Clifton Suspension Bridge, and iron steamship SS Great Britain."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Railway Time & Penny Black",
+        "date": "1840–1855",
+        "img": "/units/ks2_victorian_britain/assets/brunel_clifton_suspension_bridge_bristol.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Greenwich Time & 1d Stamp (May 1840)",
+        "connective": "Fast trains united Britain’s clocks and carried cheap mail.",
+        "html": "Stations adopted shared <strong>Railway Time</strong>, while <strong>Rowland Hill’s 1840 Penny Black</strong> and red <strong>V.R.</strong> boxes carried letters for one penny.",
+        "paired_prose_hash": "51ac4dbd68",
+        "spoken": "Fast trains united Britain’s clocks and carried cheap mail. <short pause> Stations adopted shared Railway Time, while Rowland Hill’s 1840 Penny Black and red V.R. boxes carried letters for one penny."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "A Nation Linked in Hours",
+        "date": "1837–1860",
+        "img": "/units/ks2_victorian_britain/assets/banner_l1_paddington_railway_station.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Days by Horse → Hours by Steam",
+        "connective": "Steam tracks, shared clocks, and penny post shrank distances.",
+        "html": "<strong>Steam railways</strong>, shared <strong>Railway Time</strong>, and the <strong>1840 Penny Black</strong> connected rich and poor families across <strong>Victorian Britain</strong>.",
+        "spoken": "Steam tracks, shared clocks, and penny post shrank distances. <short pause> Steam railways, shared Railway Time, and the 1840 Penny Black connected rich and poor families across Victorian Britain."
+      }
+    ],
+    "takeaway": "Between 1837 and 1860, Queen Victoria’s Britain shrank from slow horse days into fast steam hours through Brunel’s railways, Greenwich Railway Time, and the 1840 Penny Black.",
+    "vocab": [
+      [
+        "1. Locomotive",
+        "Coal-fired steam railway engine pulling trains along iron tracks."
+      ],
+      [
+        "2. Railway Mania",
+        "1840s rush laying thousands of miles of new British track."
+      ],
+      [
+        "3. Railway Time",
+        "Shared Greenwich clock time uniting every British station."
+      ]
+    ],
+    "provenanceNote": "Science Museum (London), National Gallery, Victoria and Albert Museum, Wellcome Collection, Library of Congress & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between 1837 and 1860, Queen Victoria’s Britain shrank from slow horse days into fast steam hours through Brunel’s railways, Greenwich Railway Time, and the 1840 Penny Black."
+  },
+  "lesson_2": {
+    "num": "02",
+    "slug": "ks2_victorian_britain_l02_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 2",
+    "datesBadge": "1837–1850",
+    "topicLabel": "Enquiry 02: Chimneys, Cotton Mills and Children Underground (1837–1850)",
+    "title": "Why was factory and coal-mine work so dangerous for Victorian children?",
+    "spokenTitle": "Why was factory and coal-mine work so dangerous for Victorian children?",
+    "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l2_manchester_cottonopolis_mills.jpg",
+    "bridges": [
+      "Cotton Scavengers",
+      "Pit Trappers",
+      "Stolen Childhood"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Booming \"Cottonopolis\"",
+        "date": "1837–1851",
+        "img": "/units/ks2_victorian_britain/assets/industrial_mill_chimneys_lancashire.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1851 Census: Over 50% Urban Britain",
+        "connective": "Why was factory and coal-mine work so dangerous for Victorian children?",
+        "html": "Country families crowded into smoky <strong>Manchester (\"Cottonopolis\")</strong> for wages, squeezing into damp <strong>cellars</strong> as towns overtook villages by <strong>1851</strong>.",
+        "paired_prose_hash": "15a7bf7447",
+        "spoken": "Why was factory and coal-mine work so dangerous for Victorian children? <short pause> Country families crowded into smoky Manchester (\"Cottonopolis\") for wages, squeezing into damp cellars as towns overtook villages by 1851."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Mill Piecers & Scavengers",
+        "date": "1837–1847",
+        "img": "/units/ks2_victorian_britain/assets/quarry_bank_cotton_mill_spinning_mule.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "12-Hour Shifts • Deafening Iron Looms",
+        "connective": "Low adult pay pushed young children onto twelve-hour mill shifts.",
+        "html": "Nimble <strong>piecers</strong> twisted snapped threads while barefoot <strong>scavengers</strong> crawled right beneath moving <strong>power looms</strong> in choking dust.",
+        "paired_prose_hash": "7452c96f06",
+        "spoken": "Low adult pay pushed young children onto twelve-hour mill shifts. <short pause> Nimble piecers twisted snapped threads while barefoot scavengers crawled right beneath moving power looms in choking dust."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Trappers & Hurriers Underground",
+        "date": "1837–1842",
+        "img": "/units/ks2_victorian_britain/assets/south_wales_pithead_colliery_winding_gear.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Age 8 in the Dark • Chained Coal Corves",
+        "connective": "Even younger children worked deep inside pitch-black coal mines.",
+        "html": "Eight-year-old <strong>trappers</strong> like <strong>Sarah Gooder</strong> sat in pitch darkness while chained <strong>hurriers</strong> dragged coal <strong>corves</strong> past <strong>firedamp</strong> gas.",
+        "paired_prose_hash": "139bbd6384",
+        "spoken": "Even younger children worked deep inside pitch-black coal mines. <short pause> Eight-year-old trappers like Sarah Gooder sat in pitch darkness while chained hurriers dragged coal corves past firedamp gas."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Shocking Truth Reaches London",
+        "date": "1837–1850",
+        "img": "/units/ks2_victorian_britain/assets/banner_l2_manchester_cottonopolis_mills.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1842 Royal Commission Exposes Pits",
+        "connective": "Printed drawings of chained children soon sparked fierce reform.",
+        "html": "Twelve-hour danger for <strong>mill scavengers</strong> and <strong>coal-mine trappers</strong> shocked MPs when the <strong>1842 Royal Commission</strong> published pit woodcuts.",
+        "spoken": "Printed drawings of chained children soon sparked fierce reform. <short pause> Twelve-hour danger for mill scavengers and coal-mine trappers shocked MPs when the 1842 Royal Commission published pit woodcuts."
+      }
+    ],
+    "takeaway": "Between 1837 and 1850, booming mills and coal pits placed poor children in daily danger as barefoot loom scavengers, piecers, dark-tunnel trappers, and chained coal hurriers.",
+    "vocab": [
+      [
+        "1. Cottonopolis",
+        "Nickname for Manchester’s smoky cotton-mill heartland."
+      ],
+      [
+        "2. Piecer",
+        "Mill child twisting snapped cotton threads on moving frames."
+      ],
+      [
+        "3. Scavenger",
+        "Young child crawling beneath moving looms to sweep fluff."
+      ]
+    ],
+    "provenanceNote": "Science Museum (London), National Gallery, Victoria and Albert Museum, Wellcome Collection, Library of Congress & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between 1837 and 1850, booming mills and coal pits placed poor children in daily danger as barefoot loom scavengers, piecers, dark-tunnel trappers, and chained coal hurriers."
+  },
+  "lesson_3": {
+    "num": "03",
+    "slug": "ks2_victorian_britain_l03_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 3",
+    "datesBadge": "1834–1880",
+    "topicLabel": "Enquiry 03: Workhouses, Ragged Schools and Champions of Reform (1834–1880)",
+    "title": "How did Victorian reformers rescue children from workhouses, pits, and streets?",
+    "spokenTitle": "How did Victorian reformers rescue children from workhouses, pits, and streets?",
+    "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l3_ragged_school_workhouse_london.jpg",
+    "bridges": [
+      "Shaftesbury’s Laws",
+      "Barnardo’s Homes",
+      "Rescuing Childhood"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Grim 1834 Workhouses",
+        "date": "1834–1845",
+        "img": "/units/ks2_victorian_britain/assets/southwell_workhouse_brick_wings.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Split Families • Gruel & Tarred Oakum",
+        "connective": "How did Victorian reformers rescue children from workhouses, pits, and streets?",
+        "html": "Under the <strong>1834 Poor Law</strong>, bleak <strong>workhouses</strong> separated mothers and children onto watery <strong>gruel</strong> and <strong>oakum</strong>—shamed in <strong>Oliver Twist (1838)</strong>.",
+        "paired_prose_hash": "6a7699fcb0",
+        "spoken": "How did Victorian reformers rescue children from workhouses, pits, and streets? <short pause> Under the 1834 Poor Law, bleak workhouses separated mothers and children onto watery gruel and oakum—shamed in Oliver Twist (1838)."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Shaftesbury’s Mines & Mill Laws",
+        "date": "1833–1853",
+        "img": "/units/ks2_victorian_britain/assets/saltaire_model_village_yorkshire.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1842 Mines Act: Under-10s Banned",
+        "connective": "Shocked MPs passed tough laws backed by paid inspectors.",
+        "html": "<strong>Lord Shaftesbury’s 1842 Mines Act</strong> banned females and boys under ten underground, while <strong>Factory Inspectors</strong> and <strong>Titus Salt</strong> improved mills.",
+        "paired_prose_hash": "b74927db0d",
+        "spoken": "Shocked MPs passed tough laws backed by paid inspectors. <short pause> Lord Shaftesbury’s 1842 Mines Act banned females and boys under ten underground, while Factory Inspectors and Titus Salt improved mills."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Ragged Schools & Dr Barnardo",
+        "date": "1844–1880",
+        "img": "/units/ks2_victorian_britain/assets/ragged_school_museum_limehouse_london.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1870: Jim Jarvis Inspires Barnardo",
+        "connective": "Charities stepped onto freezing streets to shelter orphans.",
+        "html": "Free <strong>Ragged Schools</strong> taught shoeless children, and after meeting orphan <strong>Jim Jarvis</strong> in <strong>1870</strong>, <strong>Dr Barnardo</strong> opened warm homes.",
+        "paired_prose_hash": "2bce82b9cf",
+        "spoken": "Charities stepped onto freezing streets to shelter orphans. <short pause> Free Ragged Schools taught shoeless children, and after meeting orphan Jim Jarvis in 1870, Dr Barnardo opened warm homes."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Law & Charity Protect Children",
+        "date": "1834–1880",
+        "img": "/units/ks2_victorian_britain/assets/banner_l3_ragged_school_workhouse_london.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Under-10s Out of Pits • 60,000+ Sheltered",
+        "connective": "Saving children from pits raised one big question: where should they go all day?",
+        "html": "Together, <strong>Dickens</strong>, <strong>Lord Shaftesbury’s laws</strong>, <strong>Ragged Schools</strong>, and <strong>Dr Barnardo</strong> paved the way for <strong>universal schooling</strong>!",
+        "spoken": "Saving children from pits raised one big question: where should they go all day? <short pause> Together, Dickens, Lord Shaftesbury’s laws, Ragged Schools, and Dr Barnardo paved the way for universal schooling!"
+      }
+    ],
+    "takeaway": "Between 1834 and 1880, Dickens exposed grim workhouses, Lord Shaftesbury’s 1842 Mines Act and Factory Inspectors protected working children, and Ragged Schools plus Dr Barnardo rescued street orphans.",
+    "vocab": [
+      [
+        "1. Workhouse",
+        "Strict Poor Law building splitting destitute families up."
+      ],
+      [
+        "2. Gruel",
+        "Thin watery oatmeal porridge served inside workhouses."
+      ],
+      [
+        "3. Oakum",
+        "Tarred old ship rope unpicked by hand inside workhouses."
+      ]
+    ],
+    "provenanceNote": "Science Museum (London), National Gallery, Victoria and Albert Museum, Wellcome Collection, Library of Congress & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between 1834 and 1880, Dickens exposed grim workhouses, Lord Shaftesbury’s 1842 Mines Act and Factory Inspectors protected working children, and Ragged Schools plus Dr Barnardo rescued street orphans."
+  },
+  "lesson_4": {
+    "num": "04",
+    "slug": "ks2_victorian_britain_l04_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 4",
+    "datesBadge": "1870–1901",
+    "topicLabel": "Enquiry 04: Inside a Victorian Classroom — Slates, Drill and the 1870 Act (1870–1901)",
+    "title": "What was daily life really like inside a strict Victorian classroom?",
+    "spokenTitle": "What was daily life really like inside a strict Victorian classroom?",
+    "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l4_victorian_board_school_hall.jpg",
+    "bridges": [
+      "Slates & Three Rs",
+      "Canes & Drill",
+      "95%+ Literacy"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "1870–1891 School Laws",
+        "date": "1870–1891",
+        "img": "/units/ks2_victorian_britain/assets/london_board_school_building_1870s.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1870 Built • 1880 Compulsory • 1891 Free",
+        "connective": "What was daily life really like inside a strict Victorian classroom?",
+        "html": "<strong>Forster’s 1870 Act</strong> built red-brick <strong>Board Schools</strong>, <strong>1880</strong> made attendance compulsory to age ten, and <strong>1891</strong> ended weekly penny fees!",
+        "paired_prose_hash": "0ae424d5e7",
+        "spoken": "What was daily life really like inside a strict Victorian classroom? <short pause> Forster’s 1870 Act built red-brick Board Schools, 1880 made attendance compulsory to age ten, and 1891 ended weekly penny fees!"
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Three Rs, Slates & Inkwells",
+        "date": "1870–1901",
+        "img": "/units/ks2_victorian_britain/assets/victorian_wooden_school_desks_inkwells.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Reading • Writing • Arithmetic",
+        "connective": "Inside high-windowed rooms, sixty pupils chanted together.",
+        "html": "Beginners scratched sums on reusable <strong>Welsh slates</strong> before dipping steel nibs into desk <strong>inkwells</strong> for neat right-handed <strong>copperplate</strong>.",
+        "paired_prose_hash": "e122af7b67",
+        "spoken": "Inside high-windowed rooms, sixty pupils chanted together. <short pause> Beginners scratched sums on reusable Welsh slates before dipping steel nibs into desk inkwells for neat right-handed copperplate."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Canes, Dunce’s Caps & Hoops",
+        "date": "1870–1901",
+        "img": "/units/ks2_victorian_britain/assets/victorian_children_drill_playground.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Separate Doors • Drill & Iron Hoops",
+        "connective": "Strict silence ruled indoors while hoops rolled outside.",
+        "html": "Mistakes risked the <strong>bamboo cane</strong> or <strong>Dunce’s Cap</strong>; boys learned woodwork while girls stitched <strong>needlework</strong> and bowled <strong>iron hoops</strong>.",
+        "paired_prose_hash": "de186d84e0",
+        "spoken": "Strict silence ruled indoors while hoops rolled outside. <short pause> Mistakes risked the bamboo cane or Dunce’s Cap; boys learned woodwork while girls stitched needlework and bowled iron hoops."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "A Nation of Readers by 1900",
+        "date": "1870–1901",
+        "img": "/units/ks2_victorian_britain/assets/banner_l4_victorian_board_school_hall.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Literacy Climbs Above 95% by 1900",
+        "connective": "Strict Board Schools gave millions the power to read and count.",
+        "html": "Replacing child pit shifts with <strong>free compulsory Board Schools</strong> turned late-Victorian Britain into an almost universally <strong>literate society</strong>!",
+        "spoken": "Strict Board Schools gave millions the power to read and count. <short pause> Replacing child pit shifts with free compulsory Board Schools turned late-Victorian Britain into an almost universally literate society!"
+      }
+    ],
+    "takeaway": "Between 1870 and 1901, Board Schools brought free compulsory education to every child through strict rows of sixty, Welsh slates, copperplate ink, cane discipline, and the Three Rs.",
+    "vocab": [
+      [
+        "1. Board School",
+        "Local red-brick primary school built after the 1870 Act."
+      ],
+      [
+        "2. Three Rs",
+        "Core Victorian lessons: Reading, Writing, and Arithmetic."
+      ],
+      [
+        "3. Copperplate",
+        "Neat looping handwriting written with steel dip pens."
+      ]
+    ],
+    "provenanceNote": "Science Museum (London), National Gallery, Victoria and Albert Museum, Wellcome Collection, Library of Congress & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between 1870 and 1901, Board Schools brought free compulsory education to every child through strict rows of sixty, Welsh slates, copperplate ink, cane discipline, and the Three Rs."
+  },
+  "lesson_5": {
+    "num": "05",
+    "slug": "ks2_victorian_britain_l05_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 5",
+    "datesBadge": "1851–1901",
+    "topicLabel": "Enquiry 05: Workshop of the World — The 1851 Crystal Palace and Inventions (1851–1901)",
+    "title": "Why did the 1851 Crystal Palace and new inventions amaze the world?",
+    "spokenTitle": "Why did the 1851 Crystal Palace and new inventions amaze the world?",
+    "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l5_crystal_palace_hyde_park_1851.jpg",
+    "bridges": [
+      "Wires & Lightbulbs",
+      "Lovelace & Seacole",
+      "Modern Foundations"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "1851 Crystal Palace",
+        "date": "1851",
+        "img": "/units/ks2_victorian_britain/assets/opening_great_exhibition_1851_selous.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "6 Million Visitors • 300,000 Glass Panes",
+        "connective": "Why did the 1851 Crystal Palace and new inventions amaze the world?",
+        "html": "Opened on <strong>1 May 1851</strong> by <strong>Victoria and Albert</strong>, <strong>Paxton’s Crystal Palace</strong> showcased <strong>100,000</strong> inventions and funded the <strong>Science Museum</strong>.",
+        "paired_prose_hash": "b3919cc4f0",
+        "spoken": "Why did the 1851 Crystal Palace and new inventions amaze the world? <short pause> Opened on 1 May 1851 by Victoria and Albert, Paxton’s Crystal Palace showcased 100,000 inventions and funded the Science Museum."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Telegraph, Phone & Lightbulb",
+        "date": "1837–1885",
+        "img": "/units/ks2_victorian_britain/assets/cragside_northumberland_hydroelectric_house.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Bell (1876) & Joseph Swan’s Bulb (1878)",
+        "connective": "Electric wires and glowing filaments transformed dark gaslit towns.",
+        "html": "<strong>Electric telegraphs</strong> and <strong>Bell’s 1876 telephone</strong> shrank distance, while <strong>Joseph Swan’s 1878 lightbulb</strong> lit <strong>Cragside</strong>.",
+        "paired_prose_hash": "4f095563ea",
+        "spoken": "Electric wires and glowing filaments transformed dark gaslit towns. <short pause> Electric telegraphs and Bell’s 1876 telephone shrank distance, while Joseph Swan’s 1878 lightbulb lit Cragside."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Ada Lovelace & Mary Seacole",
+        "date": "1843–1881",
+        "img": "/units/ks2_victorian_britain/assets/babbage_analytical_engine_science_museum.jpg",
+        "mode": "contain",
+        "pos": "center 45%",
+        "stat": "1843 First Algorithm • 1855 British Hotel",
+        "connective": "Pioneering women expanded computing science and frontline care.",
+        "html": "<strong>Ada Lovelace</strong> wrote the first computer <strong>algorithm (1843)</strong> for Babbage, and <strong>Mary Seacole</strong> nursed wounded soldiers in <strong>1855</strong>.",
+        "paired_prose_hash": "247def0209",
+        "spoken": "Pioneering women expanded computing science and frontline care. <short pause> Ada Lovelace wrote the first computer algorithm (1843) for Babbage, and Mary Seacole nursed wounded soldiers in 1855."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Blueprints of Our Modern World",
+        "date": "1851–1901",
+        "img": "/units/ks2_victorian_britain/assets/banner_l5_crystal_palace_hyde_park_1851.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Electricity + Phones + Flushing Hygiene + Code",
+        "connective": "From lightbulbs to algorithms, Victorians wired the modern age.",
+        "html": "The <strong>Workshop of the World</strong> gave modern homes <strong>electric light</strong>, <strong>telephones</strong>, <strong>photography</strong>, and <strong>computing logic</strong>!",
+        "spoken": "From lightbulbs to algorithms, Victorians wired the modern age. <short pause> The Workshop of the World gave modern homes electric light, telephones, photography, and computing logic!"
+      }
+    ],
+    "takeaway": "Between 1851 and 1901, Hyde Park’s Crystal Palace, electric telegraphs, Bell’s telephone, Joseph Swan’s lightbulb, Mary Seacole, and Ada Lovelace’s 1843 algorithm reshaped the world.",
+    "vocab": [
+      [
+        "1. Crystal Palace",
+        "1851 Hyde Park iron-and-glass Great Exhibition hall."
+      ],
+      [
+        "2. Workshop of the World",
+        "Nickname for industrial Britain leading global manufacturing."
+      ],
+      [
+        "3. Electric Telegraph",
+        "Instant coded messages flashed along electric wires."
+      ]
+    ],
+    "provenanceNote": "Science Museum (London), National Gallery, Victoria and Albert Museum, Wellcome Collection, Library of Congress & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Between 1851 and 1901, Hyde Park’s Crystal Palace, electric telegraphs, Bell’s telephone, Joseph Swan’s lightbulb, Mary Seacole, and Ada Lovelace’s 1843 algorithm reshaped the world."
+  },
+  "lesson_6": {
+    "num": "06",
+    "slug": "ks2_victorian_britain_l06_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 6",
+    "datesBadge": "1850–1901",
+    "topicLabel": "Enquiry 06: Rich and Poor Homes, Seaside Holidays and 63-Year Legacy (1850–1901)",
+    "title": "How much had daily life changed across Britain by January 1901?",
+    "spokenTitle": "How much had daily life changed across Britain by January 1901?",
+    "thumbUrl": "/units/ks2_victorian_britain/assets/banner_l6_blackpool_brighton_seaside_pier.jpg",
+    "bridges": [
+      "Bank Holiday Piers",
+      "1897 Jubilee",
+      "63-Year Verdict"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Rich Villas vs Back-to-Backs",
+        "date": "1850–1900",
+        "img": "/units/ks2_victorian_britain/assets/birmingham_back_to_backs_courtyard.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Downstairs Servants vs Shared Yard Taps",
+        "connective": "How much had daily life changed across Britain by January 1901?",
+        "html": "Wealthy <strong>villas</strong> had indoor baths and <strong>servants</strong>, while millions in <strong>back-to-back houses</strong> used tin baths and queued at one <strong>courtyard tap</strong>.",
+        "paired_prose_hash": "454fbb8e53",
+        "spoken": "How much had daily life changed across Britain by January 1901? <short pause> Wealthy villas had indoor baths and servants, while millions in back-to-back houses used tin baths and queued at one courtyard tap."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "1871 Bank Holidays & Bikes",
+        "date": "1871–1895",
+        "img": "/units/ks2_victorian_britain/assets/victorian_seaside_bathing_machines_beach.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Piers • 1871 FA Cup • 1885 Safety Bike",
+        "connective": "Shorter hours and cheap trains unlocked joyful seaside and Saturday leisure.",
+        "html": "<strong>1871 Bank Holidays</strong> packed <strong>Blackpool</strong> and <strong>Margate</strong> piers, Saturday crowds cheered the <strong>FA Cup</strong>, and <strong>safety bicycles</strong> replaced penny-farthings.",
+        "paired_prose_hash": "a0984fb6ab",
+        "spoken": "Shorter hours and cheap trains unlocked joyful seaside and Saturday leisure. <short pause> 1871 Bank Holidays packed Blackpool and Margate piers, Saturday crowds cheered the FA Cup, and safety bicycles replaced penny-farthings."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "1897 Jubilee to Jan 1901",
+        "date": "1897–1901",
+        "img": "/units/ks2_victorian_britain/assets/queen_victoria_diamond_jubilee_1897_st_pauls.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "63-Year Reign • Population Doubled",
+        "connective": "Sixty-three years transformed Britain into a modern industrial nation.",
+        "html": "Celebrated across Britain and the <strong>British Empire</strong> at her <strong>1897 Diamond Jubilee</strong>, <strong>Queen Victoria</strong> died at <strong>Osborne House</strong> in <strong>January 1901</strong>.",
+        "paired_prose_hash": "c9c977da58",
+        "spoken": "Sixty-three years transformed Britain into a modern industrial nation. <short pause> Celebrated across Britain and the British Empire at her 1897 Diamond Jubilee, Queen Victoria died at Osborne House in January 1901."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Huge Progress, Unfinished Fairness",
+        "date": "1837–1901",
+        "img": "/units/ks2_victorian_britain/assets/banner_l6_blackpool_brighton_seaside_pier.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Railways + Free Schools vs Slum Courts",
+        "connective": "Historians weigh dazzling Victorian progress alongside enduring poverty.",
+        "html": "By <strong>1901</strong>, children had won <strong>mine bans</strong> and <strong>free schools</strong> in an electric railway nation—though <strong>back-to-back poverty</strong> remained to solve!",
+        "spoken": "Historians weigh dazzling Victorian progress alongside enduring poverty. <short pause> By 1901, children had won mine bans and free schools in an electric railway nation—though back-to-back poverty remained to solve!"
+      }
+    ],
+    "takeaway": "By Queen Victoria’s death in January 1901, steam railways, free schools, 1871 Bank Holidays, FA Cup football, and safety bicycles had transformed Britain—even though rich villas still contrasted sharply with back-to-back terraces.",
+    "vocab": [
+      [
+        "1. Back-to-Back Houses",
+        "Cramped brick terraces sharing walls and a yard water tap."
+      ],
+      [
+        "2. Bank Holidays",
+        "Paid public holidays created by the 1871 Act."
+      ],
+      [
+        "3. Bathing Machine",
+        "Horse-drawn wooden beach hut for modest sea paddling."
+      ]
+    ],
+    "provenanceNote": "Science Museum (London), National Gallery, Victoria and Albert Museum, Wellcome Collection, Library of Congress & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> By Queen Victoria’s death in January 1901, steam railways, free schools, 1871 Bank Holidays, FA Cup football, and safety bicycles had transformed Britain—even though rich villas still contrasted sharply with back-to-back terraces."
+  }
+}

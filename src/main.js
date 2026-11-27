@@ -35,6 +35,7 @@ import {
 } from './data/seo_routes.js';
 import { initShareUtilsGlobals } from './engine/share_utils.js';
 import { openUnifiedTeacherGuidance } from './engine/teacher_guidance_modal.js';
+import './ocr_prescribed_sources_vault.js';
 import { initIosAudioUnlock } from './engine/ios_audio_unlock.js';
 import { initMobileAppShell } from './mobile_app_shell.js';
 import './mobile_app_shell.css';

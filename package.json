@@ -36,6 +36,7 @@
     "audit:spotlight": "node scripts/sync_spotlight_stage_answers.cjs --all --audit",
     "audit:enquiries": "node scripts/audit_key_enquiries.cjs",
     "audit:infographics": "node scripts/audit_infographics.cjs",
+    "audit:videos": "node scripts/audit_videos_gate.cjs",
     "audit:fidelity": "node scripts/lint_source_fidelity.cjs",
     "audit:donow": "node scripts/audit_donow_grounding.cjs",
     "audit:narrative-questions": "node scripts/audit_narrative_question_answerability.cjs --strict",

@@ -44,6 +44,10 @@ export const KS2_CANONICAL_UNITS = [
   'ks2_ancient_greece',
   'ks2_early_islamic_baghdad',
   'ks2_maya_civilisation',
+  'ks2_kingdom_of_benin',
+  'ks2_victorian_britain',
+  'ks2_crime_and_punishment',
+  'ks2_local_history_detective',
 ];
 export const KS3_CANONICAL_UNITS = [
   'medieval_england',
@@ -67,9 +71,15 @@ export const GCSE_CANONICAL_UNITS = [
   'weimar_nazi_germany',
   'usa',
 ];
+export const OCR_GCSE_CANONICAL_UNITS = [
+  'ocr_persian_empire',
+  'ocr_alexander',
+  'ocr_foundations_of_rome',
+  'ocr_cleopatra',
+];
 
 export const isGCSEInteractiveUnit = (uId) =>
-  GCSE_CANONICAL_UNITS.includes(uId);
+  GCSE_CANONICAL_UNITS.includes(uId) || OCR_GCSE_CANONICAL_UNITS.includes(uId);
 
 export function getWbThinStripStylesHTML() {
   return `
@@ -2018,7 +2028,7 @@ export function resolveVideoPathway(vid) {
   let guidance = vid.teacher_guidance;
   let icon = 'fa-solid fa-route';
 
-  if (!pathway) {
+  if (!pathway || /^cinematic(?:\s+(?:focus|feature))?$/i.test(String(pathway).trim())) {
     if (mins > 0 && mins < 5) {
       pathway = 'Quick Summary';
     } else if (mins >= 15) {
@@ -2037,12 +2047,11 @@ export function resolveVideoPathway(vid) {
   ) {
     icon = 'fa-solid fa-bolt';
   } else if (
-    pLower.includes('cinema') ||
     pLower.includes('dramatisation') ||
-    pLower.includes('trailer') ||
-    pLower.includes('film')
+    pLower.includes('dramatized') ||
+    pLower.includes('archive')
   ) {
-    icon = 'fa-solid fa-clapperboard';
+    icon = 'fa-solid fa-film';
   } else if (pLower.includes('israeli')) {
     icon = 'fa-solid fa-landmark';
   } else if (pLower.includes('palestinian') || pLower.includes('arab')) {
@@ -3083,6 +3092,11 @@ export function renderLessonVideos(videos, lesson, unitId) {
             <span class="video-shelf-pathway-pill" title="${(pathwayInfo.guidance || '').replace(/"/g, '&quot;')}">
               <i class="${pathwayInfo.icon || 'fa-solid fa-route'}"></i> ${pathwayInfo.pathway}
             </span>
+            ${
+              vid.moment
+                ? `<span class="video-shelf-moment-pill" style="background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; padding: 2px 7px; border-radius: 999px; font-size: 0.7rem; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-solid fa-location-dot"></i> ${String(vid.moment).replace(/"/g, '&quot;')}</span>`
+                : ''
+            }
           </div>
           <div class="video-shelf-card-title" title="${cleanTitle}">
             ${displayTitle}

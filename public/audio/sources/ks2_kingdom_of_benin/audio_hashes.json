@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_6_sC": {
+      "hash": "b60c42e852ead6f9",
+      "bytes": 90092,
+      "voiceKey": "male_historian",
+      "badge": "Contemporary Igun Street Brass P…",
+      "updatedAt": "2026-11-27T14:16:20.151Z"
+    },
+    "lesson_1_sA": {
+      "hash": "9ecbda8c029ca55c",
+      "bytes": 64844,
+      "voiceKey": "male_historian",
+      "badge": "Sculpted Terracotta Head From Be…",
+      "updatedAt": "2026-11-27T14:16:21.999Z"
+    },
+    "lesson_1_sC": {
+      "hash": "05f7484f642015b2",
+      "bytes": 58700,
+      "voiceKey": "male_historian",
+      "badge": "Freshly Harvested Bunches of Wes…",
+      "updatedAt": "2026-11-27T14:16:22.608Z"
+    },
+    "lesson_2_sA": {
+      "hash": "faced0099e6b5246",
+      "bytes": 67436,
+      "voiceKey": "male_historian",
+      "badge": "Royal Benin Brass Plaque of a Co…",
+      "updatedAt": "2026-11-27T14:16:23.758Z"
+    },
+    "lesson_2_sC": {
+      "hash": "8bc6290437b41ed0",
+      "bytes": 58892,
+      "voiceKey": "male_historian",
+      "badge": "Panoramic Architectural Drawing…",
+      "updatedAt": "2026-11-27T14:16:24.193Z"
+    },
+    "lesson_3_sA": {
+      "hash": "6339a58536d8b7e2",
+      "bytes": 78668,
+      "voiceKey": "male_historian",
+      "badge": "Benin Brass Pillar Plaque of a C…",
+      "updatedAt": "2026-11-27T14:16:25.229Z"
+    },
+    "lesson_3_sC": {
+      "hash": "c5272f58a5602777",
+      "bytes": 67532,
+      "voiceKey": "male_historian",
+      "badge": "Royal Benin Double-Cylinder Carv…",
+      "updatedAt": "2026-11-27T14:16:26.255Z"
+    },
+    "lesson_4_sC": {
+      "hash": "dc7bd8013d3f1e63",
+      "bytes": 67820,
+      "voiceKey": "male_historian",
+      "badge": "Quadrangular Cast Brass Altar Be…",
+      "updatedAt": "2026-11-27T14:16:27.275Z"
+    },
+    "lesson_5_sA": {
+      "hash": "240ac5bc0d700d10",
+      "bytes": 63596,
+      "voiceKey": "male_historian",
+      "badge": "Benin Brass Plaque of Two Portug…",
+      "updatedAt": "2026-11-27T14:16:28.327Z"
+    },
+    "lesson_5_sC": {
+      "hash": "8b71c20a97fd4da9",
+      "bytes": 59660,
+      "voiceKey": "male_historian",
+      "badge": "Copperplate Engraving From Olfer…",
+      "updatedAt": "2026-11-27T14:16:28.811Z"
+    },
+    "lesson_6_sA": {
+      "hash": "12d7be085a6b1815",
+      "bytes": 75020,
+      "voiceKey": "male_historian",
+      "badge": "British Expedition Officers Seat…",
+      "updatedAt": "2026-11-27T14:16:29.919Z"
+    },
+    "lesson_1_sB": {
+      "hash": "e1158802b1e94ee4",
+      "bytes": 71660,
+      "voiceKey": "female_historian",
+      "badge": "Pair of Ceremonial Leaf-Shaped I…",
+      "updatedAt": "2026-11-27T14:16:30.519Z"
+    },
+    "lesson_2_sB": {
+      "hash": "8426729553bf0679",
+      "bytes": 71948,
+      "voiceKey": "female_historian",
+      "badge": "Cast Brass Statue of a Royal Ben…",
+      "updatedAt": "2026-11-27T14:16:31.026Z"
+    },
+    "lesson_3_sB": {
+      "hash": "95a776d900035f11",
+      "bytes": 68684,
+      "voiceKey": "female_historian",
+      "badge": "Lost-Wax Cast Brass Cockerel (Ok…",
+      "updatedAt": "2026-11-27T14:16:31.532Z"
+    },
+    "lesson_4_sA": {
+      "hash": "d6a5024bfb30c955",
+      "bytes": 78956,
+      "voiceKey": "female_historian",
+      "badge": "Sixteenth-Century Carved Ivory P…",
+      "updatedAt": "2026-11-27T14:16:32.039Z"
+    },
+    "lesson_4_sB": {
+      "hash": "7789ce53a4a5584f",
+      "bytes": 72428,
+      "voiceKey": "female_historian",
+      "badge": "Royal Benin Cast Brass Leopard W…",
+      "updatedAt": "2026-11-27T14:16:32.493Z"
+    },
+    "lesson_5_sB": {
+      "hash": "11c12ff0e04cd053",
+      "bytes": 64460,
+      "voiceKey": "female_historian",
+      "badge": "Edo-Portuguese Carved Ivory Salt…",
+      "updatedAt": "2026-11-27T14:16:32.972Z"
+    },
+    "lesson_6_sB": {
+      "hash": "64320f134b1b7c5b",
+      "bytes": 56876,
+      "voiceKey": "female_historian",
+      "badge": "Eyewitness Photograph of Burning…",
+      "updatedAt": "2026-11-27T14:16:33.465Z"
+    }
+  }
+}

@@ -38,14 +38,18 @@ export const CANONICAL_COURSES = [
   { id: 'cold_war', title: 'The Cold War (1945–1991)', group: 'ks3', badge: 'KS3 Modern' },
   { id: 'post_war_britain', title: 'Rights, Protest & Post-War Britain', group: 'ks3', badge: 'KS3 Modern Britain' },
 
-  // Key Stage 2 (8 Units)
+  // Key Stage 2 (12 Units)
   { id: 'ks2_stone_to_iron_age', title: 'Stone Age to Iron Age (c. 800,000 BC–AD 43)', group: 'ks2', badge: 'KS2 Prehistory' },
   { id: 'ks2_romans', title: 'The Romans in Britain (55 BC–AD 410)', group: 'ks2', badge: 'KS2 Roman Britain' },
   { id: 'ks2_anglo_saxons_vikings', title: 'Anglo-Saxons & Vikings (AD 410–1066)', group: 'ks2', badge: 'KS2 Early Medieval' },
+  { id: 'ks2_victorian_britain', title: 'Victorian Britain (1837–1901)', group: 'ks2', badge: 'KS2 Victorian' },
   { id: 'ks2_ww2', title: 'World War II & The Home Front (1933–1945)', group: 'ks2', badge: 'KS2 Modern Study' },
+  { id: 'ks2_crime_and_punishment', title: 'Crime & Punishment Through Time (AD 43–Present)', group: 'ks2', badge: 'KS2 Thematic' },
+  { id: 'ks2_local_history_detective', title: 'History on Our Doorstep (Local Detective Study)', group: 'ks2', badge: 'KS2 Local Study' },
   { id: 'ks2_ancient_egypt', title: 'Ancient Egypt (c. 3100–30 BC)', group: 'ks2', badge: 'KS2 Ancient World' },
   { id: 'ks2_ancient_greece', title: 'Ancient Greece (c. 800–146 BC)', group: 'ks2', badge: 'KS2 Ancient World' },
   { id: 'ks2_early_islamic_baghdad', title: 'Early Islamic Baghdad (c. AD 750–1258)', group: 'ks2', badge: 'KS2 World AD 900' },
+  { id: 'ks2_kingdom_of_benin', title: 'The Kingdom of Benin (c. AD 900–1897)', group: 'ks2', badge: 'KS2 World AD 900' },
   { id: 'ks2_maya_civilisation', title: 'The Ancient Maya (c. 2000 BC–AD 1500)', group: 'ks2', badge: 'KS2 World AD 900' },
 ];
 
@@ -655,7 +659,7 @@ export function renderMobileHomeHeroHTML(units = []) {
     `;
   }
 
-  // Gamification Compact Status Strip (Streak + XP + Zero-Account Backup)
+  // Compact Status Strip (Streak + Course Library Status + Zero-Account Backup)
   const gamificationStripHtml = `
     <div class="hh-gami-strip">
       <div class="hh-gami-left">
@@ -663,9 +667,9 @@ export function renderMobileHomeHeroHTML(units = []) {
           <i class="fa-solid fa-fire"></i>
           <span>${gStats.streak > 0 ? `${gStats.streak}d Streak` : 'Start Streak'}</span>
         </span>
-        <span class="hh-gami-pill xp" title="Total XP &amp; Rank">
-          <i class="fa-solid fa-bolt"></i>
-          <span>${gStats.xp} XP &middot; ${escapeHtml(gStats.rank)}</span>
+        <span class="hh-gami-pill xp" title="Pinned &amp; Available History Courses">
+          <i class="fa-solid fa-compass"></i>
+          <span>${pinnedIds.length > 0 ? `${pinnedIds.length} Pinned` : '30 Courses'} &middot; KS2&ndash;GCSE</span>
         </span>
       </div>
       <button type="button" class="hh-gami-backup-btn" onclick="if(window.hhOpenProgressBackupModal){window.hhOpenProgressBackupModal();}else{import('/src/mobile_gamification.js').then(m=>m.openProgressBackupModal&&m.openProgressBackupModal());}" title="Copy or restore your progress backup code">
@@ -748,7 +752,7 @@ export function renderMobileHomeHeroHTML(units = []) {
   // Shelf: My Pinned Courses Shelf
   let pinnedShelfHtml = '';
   if (pinnedIds.length > 0) {
-    const totalCatalogueCount = Math.max(26, units.length || 26);
+    const totalCatalogueCount = Math.max(30, units.length || 30);
     const cardsHtml = pinnedIds
       .map((uId) => {
         const meta = COURSE_MAP.get(uId) || {
@@ -1062,7 +1066,7 @@ export function openPinUnitsModal(options = {}) {
       window.switchView('dashboard', null, true);
     }
     showMobileShellToast(
-      saved.length > 0 ? `Pinned ${saved.length} ${saved.length === 1 ? 'course' : 'courses'}!` : 'Showing all 26 courses.',
+      saved.length > 0 ? `Pinned ${saved.length} ${saved.length === 1 ? 'course' : 'courses'}!` : 'Showing all 30 courses.',
     );
   });
 

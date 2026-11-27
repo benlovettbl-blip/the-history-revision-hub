@@ -316,6 +316,138 @@ export const ICONIC_LESSON_VISUALS = {
     },
   },
 
+  ks2_crime_and_punishment: {
+    lesson_1: {
+      cardImage: '/units/ks2_crime_and_punishment/assets/roman_forum_basilica_law_court.jpg',
+      heroCameo: '/units/ks2_crime_and_punishment/assets/bath_roman_lead_curse_tablet.jpg',
+      cameoAlt: 'Folded Roman Lead Curse Tablet from Aquae Sulis (Bath)',
+    },
+    lesson_2: {
+      cardImage: '/units/ks2_crime_and_punishment/assets/west_stow_anglo_saxon_village.jpg',
+      heroCameo: '/units/ks2_crime_and_punishment/assets/ki_alfred_the_great.jpg',
+      cameoAlt: 'Bronze Statue of King Alfred the Great at Winchester',
+    },
+    lesson_3: {
+      cardImage: '/units/ks2_crime_and_punishment/assets/durham_cathedral_sanctuary_knocker.jpg',
+      heroCameo: '/units/ks2_crime_and_punishment/assets/magna_carta_1215_british_library.jpg',
+      cameoAlt: 'Original 1215 Sheepskin Exemplar of Magna Carta (British Library)',
+    },
+    lesson_4: {
+      cardImage: '/units/ks2_crime_and_punishment/assets/banner_l4_tower_of_london_thames.jpg',
+      heroCameo: '/units/ks2_crime_and_punishment/assets/guy_fawkes_lantern_ashmolean.jpg',
+      cameoAlt: 'Guy Fawkes’s 1605 Sheet-Iron Dark Lantern (Ashmolean Museum)',
+    },
+    lesson_5: {
+      cardImage: '/units/ks2_crime_and_punishment/assets/eighteenth_century_mail_stagecoach.jpg',
+      heroCameo: '/units/ks2_crime_and_punishment/assets/ki_elizabeth_fry.jpg',
+      cameoAlt: 'Quaker Prison Reformer Elizabeth Fry (1780–1845)',
+    },
+    lesson_6: {
+      cardImage: '/units/ks2_crime_and_punishment/assets/banner_l6_new_scotland_yard_victorian.jpg',
+      heroCameo: '/units/ks2_crime_and_punishment/assets/ki_robert_peel.jpg',
+      cameoAlt: 'Home Secretary Sir Robert Peel, Founder of the 1829 Metropolitan Police',
+    },
+  },
+
+  ks2_kingdom_of_benin: {
+    lesson_1: {
+      cardImage: "/units/ks2_kingdom_of_benin/assets/banner_l1_rainforest_nigeria_canopy.jpg",
+      heroCameo: "/units/ks2_kingdom_of_benin/assets/ki_oba_ewuare_the_great.jpg",
+      cameoAlt: "Oba Ewuare the Great (r. c. AD 1440–1473) — Warrior-Rebuilder of Golden Benin City, Nine Fortified Gates and Royal Craft Guilds",
+    },
+    lesson_2: {
+      cardImage: "/units/ks2_kingdom_of_benin/assets/banner_l2_dapper_benin_city_panorama.jpg",
+      heroCameo: "/units/ks2_kingdom_of_benin/assets/ki_queen_mother_idia.jpg",
+      cameoAlt: "Queen Mother (Iyoba) Idia (c. AD 1500–1550) — Wise Political Strategist, Military Supporter and First Crowned Queen Mother of Benin",
+    },
+    lesson_3: {
+      cardImage: "/units/ks2_kingdom_of_benin/assets/beeswax_honeycomb_lost_wax.jpg",
+      heroCameo: "/units/ks2_kingdom_of_benin/assets/ki_oba_esigie.jpg",
+      cameoAlt: "Oba Esigie (r. c. AD 1504–1550) — Diplomat-King Who Expanded Portuguese Trade, Lisbon Embassies and Lost-Wax Art",
+    },
+    lesson_4: {
+      cardImage: "/units/ks2_kingdom_of_benin/assets/banner_l4_benin_leopard_pair_display.jpg",
+      heroCameo: "/units/ks2_kingdom_of_benin/assets/ki_igun_brass_casters_guild.jpg",
+      cameoAlt: "The Royal Brass-Casters’ Guild of Igun Street (Igun Eronmwon) — Hereditary Master Sculptors of Benin’s Lost-Wax Brass Plaques, Heads and Leopards",
+    },
+    lesson_5: {
+      cardImage: "/units/ks2_kingdom_of_benin/assets/banner_l5_portuguese_caravel_ships_maritime.jpg",
+      heroCameo: "/units/ks2_kingdom_of_benin/assets/ki_oba_ovonramwen.jpg",
+      cameoAlt: "Oba Ovonramwen Nogbaisi (r. AD 1888–1914) — Defender of Benin’s Sovereignty During the February 1897 British Invasion",
+    },
+    lesson_6: {
+      cardImage: "/units/ks2_kingdom_of_benin/assets/british_punitive_expedition_1897_troops.jpg",
+      heroCameo: "/units/ks2_kingdom_of_benin/assets/ki_oba_ewuare_ii_edo_heritage.jpg",
+      cameoAlt: "Oba Ewuare II and Living Edo Restitution Champions (2016–Present) — Fortieth Oba of Benin Leading Living Edo Culture and Welcoming Returned Bronzes",
+    },
+  },
+
+  ks2_victorian_britain: {
+    lesson_1: {
+      cardImage: "/units/ks2_victorian_britain/assets/queen_victoria_coronation_1838_hayter.jpg",
+      heroCameo: "/units/ks2_victorian_britain/assets/ki_queen_victoria.jpg",
+      cameoAlt: "Queen Victoria (1819–1901) — Constitutional Monarch Whose Reign Saw Steam, Reform and Modern Britain Emerge",
+    },
+    lesson_2: {
+      cardImage: "/units/ks2_victorian_britain/assets/industrial_mill_chimneys_lancashire.jpg",
+      heroCameo: "/units/ks2_victorian_britain/assets/ki_isambard_kingdom_brunel.jpg",
+      cameoAlt: "Isambard Kingdom Brunel (1806–1859) — Master Victorian Engineer of Railways, Bridges, Tunnels and Iron Ocean Steamships",
+    },
+    lesson_3: {
+      cardImage: "/units/ks2_victorian_britain/assets/southwell_workhouse_brick_wings.jpg",
+      heroCameo: "/units/ks2_victorian_britain/assets/ki_lord_shaftesbury.jpg",
+      cameoAlt: "Anthony Ashley-Cooper, 7th Earl of Shaftesbury (1801–1885) — Parliamentary Champion of Child Miners, Mill Workers, Chimney Sweeps and Ragged Schools",
+    },
+    lesson_4: {
+      cardImage: "/units/ks2_victorian_britain/assets/london_board_school_building_1870s.jpg",
+      heroCameo: "/units/ks2_victorian_britain/assets/ki_thomas_barnardo.jpg",
+      cameoAlt: "Dr Thomas John Barnardo (1845–1905) — Founder of Free East End Ragged Schools and Homes for Destitute Children",
+    },
+    lesson_5: {
+      cardImage: "/units/ks2_victorian_britain/assets/opening_great_exhibition_1851_selous.jpg",
+      heroCameo: "/units/ks2_victorian_britain/assets/ki_mary_seacole.jpg",
+      cameoAlt: "Mary Seacole (1805–1881) — Jamaican-Scottish Nurse, Herbal Healer and Founder of the Crimean British Hotel",
+    },
+    lesson_6: {
+      cardImage: "/units/ks2_victorian_britain/assets/birmingham_back_to_backs_courtyard.jpg",
+      heroCameo: "/units/ks2_victorian_britain/assets/ki_ada_lovelace.jpg",
+      cameoAlt: "Ada Lovelace (1815–1852) — Victorian Mathematician Who Published the World’s First Computer Algorithm (1843)",
+    },
+  },
+
+  ks2_local_history_detective: {
+    lesson_1: {
+      cardImage: "/units/ks2_local_history_detective/assets/banner_l1_ordnance_survey_landscape.jpg",
+      heroCameo: "/units/ks2_local_history_detective/assets/ki_william_conqueror_domesday.jpg",
+      cameoAlt: "King William I and the 1086 Domesday Commissioners — Creators of the 1086 Domesday Book Recording Over 13,000 English Towns and Villages",
+    },
+    lesson_2: {
+      cardImage: "/units/ks2_local_history_detective/assets/l2_p1_tudor_timber_jetty_house.jpg",
+      heroCameo: "/units/ks2_local_history_detective/assets/ki_william_roy_ordnance_survey.jpg",
+      cameoAlt: "Major-General William Roy (1726–1790) — Scottish Military Surveyor Whose Precision Triangulation Founded Britain’s Ordnance Survey",
+    },
+    lesson_3: {
+      cardImage: "/units/ks2_local_history_detective/assets/banner_l3_parish_church_schoolhouse.jpg",
+      heroCameo: "/units/ks2_local_history_detective/assets/ki_william_farr_victorian_census.jpg",
+      cameoAlt: "Dr William Farr (1807–1883) — Victorian Census Pioneer Who Helped Shape Britain’s Every-Ten-Year Household Schedules",
+    },
+    lesson_4: {
+      cardImage: "/units/ks2_local_history_detective/assets/l4_p1_historic_market_cross_hall.jpg",
+      heroCameo: "/units/ks2_local_history_detective/assets/ki_octavia_hill_national_trust.jpg",
+      cameoAlt: "Octavia Hill (1838–1912) — Victorian Housing Reformer and Co-Founder of the National Trust Saving Heritage and Green Spaces",
+    },
+    lesson_5: {
+      cardImage: "/units/ks2_local_history_detective/assets/l5_p1_poppy_wreaths_cenotaph_remembrance.jpg",
+      heroCameo: "/units/ks2_local_history_detective/assets/ki_fabian_ware_cwgc.jpg",
+      cameoAlt: "Major-General Sir Fabian Ware (1869–1949) — Founder of the Commonwealth War Graves Commission Ensuring Equal Honour for Every Fallen Service Person",
+    },
+    lesson_6: {
+      cardImage: "/units/ks2_local_history_detective/assets/l6_p1_british_pre_decimal_coins_shilling.jpg",
+      heroCameo: "/units/ks2_local_history_detective/assets/ki_local_archivist_oral_historian.jpg",
+      cameoAlt: "Community Archivists and Oral Historians (1947–Present) — Guardians of Local Maps, School Logbooks, Listed Building Records and Living Spoken Memories",
+    },
+  },
+
   // =========================================================================
   // KS3 Secondary Units — Iconic Focal Overrides Where Needed
   // =========================================================================

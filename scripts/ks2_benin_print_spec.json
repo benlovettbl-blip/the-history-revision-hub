@@ -1,0 +1,203 @@
+{
+  "unitId": "ks2_kingdom_of_benin",
+  "shortUpper": "KINGDOM OF BENIN",
+  "shortTitle": "Kingdom of Benin",
+  "coverSubtitle": "Rainforest Earthworks, Royal Oba Court & Master Bronzes (c. AD 900 – 1897)",
+  "headerBanner": "THE KINGDOM OF BENIN • WEST AFRICA (c. AD 900–1897)",
+  "periodRange": "c. AD 900 TO PRESENT",
+  "themeDark": "#271203",
+  "themePrimary": "#9a3412",
+  "themeAccent": "#f59e0b",
+  "heroPos": "center 35%",
+  "mapFile": "benin_west_africa_edo_map_ks2.png",
+  "mapTitle": "Map of the Kingdom of Benin (Edo), Iya Earthworks, Ife & Trade Routes",
+  "mapSub": "Bookmark this page as you trace Benin City (Edo) in southern Nigeria, 16,000 km of Iya moats, Ife, and Gwato port!",
+  "mapBoxA": "<strong>Southern Nigeria (NOT Republic of Benin!):</strong> Historic Benin City (Edo) lay in modern Edo State, southern Nigeria—surrounded by 16,000 km of hand-dug red-clay Iya earthworks!",
+  "mapBoxB": "<strong>Rainforest to Atlantic Trade:</strong> Edo connected northern savanna caravan trails to Gwato river port, where Portuguese ships arrived in AD 1485 with brass manillas!",
+  "sowAlign": "Fulfils the statutory DfE Key Stage 2 non-European contrast study: <em>“A non-European society that provides contrasts with British history — Benin (West Africa) c. AD 900–1300”</em> (extended coherently through the Golden Age bronzes, 1897 British invasion, and modern restitution).",
+  "lessonPeriods": [
+    "c.AD 900–1180",
+    "c.AD 1180–1500",
+    "c.AD 1400–1700",
+    "c.AD 1500–1700",
+    "c.AD 1485–1850",
+    "1897–Present"
+  ],
+  "worksheetSlugs": [
+    "lesson_01_ogiso_earthworks_rainforest_worksheet",
+    "lesson_02_oba_ewuare_golden_city_worksheet",
+    "lesson_03_lost_wax_igun_bronzes_worksheet",
+    "lesson_04_sacred_court_idia_everyday_worksheet",
+    "lesson_05_global_traders_manillas_dapper_worksheet",
+    "lesson_06_1897_invasion_restitution_today_worksheet"
+  ],
+  "journeyBlurbs": [
+    "Explore Edo’s rich Nigerian rainforest, meet early Ogiso ('Kings of the Sky') rulers, dig 16,000 km of red-clay Iya earthworks, and contrast with AD 900 Anglo-Saxon Britain!",
+    "Follow Prince Oranmiyan from sacred Ife to Oba Eweka I, then walk Oba Ewuare the Great’s nine guarded gates, straight avenues, and palm-oil street lamps!",
+    "Step onto Igun Street to sculpt warm beeswax, bake red-clay moulds, and pour glowing liquid brass for over 900 royal palace pillar plaques!",
+    "Meet Oba Esigie and wise Queen Mother Idia, spot royal leopards and mudfish at the Igue festival, and harvest yams and palm oil in Edo villages!",
+    "Welcome Portuguese ships at Gwato port in 1485, trade pepper and woven cloth for brass manillas and cowries, and read Olfert Dapper’s 1668 praise!",
+    "Investigate why British forces invaded Oba Ovonramwen’s kingdom in February 1897, trace 4,000+ looted bronzes, and debate modern restitution to Nigeria!"
+  ],
+  "chronoTasks": [
+    [
+      "Linked red-clay Iya ditches and banks stretch across 500+ Edo rainforest settlements (c. AD 1100)",
+      "Early Edo farming villages clear sunlit rainforest plots for yams and oil palms (c. AD 500–800)",
+      "Anglo-Saxon rulers in Britain build smaller timber burh forts while Ogiso rule Edo (c. AD 900)",
+      "Edo elders banish the last Ogiso ruler and invite help from sacred Ife (c. AD 1180)"
+    ],
+    [
+      "Oba Ewuare the Great digs the giant inner city moat with nine guarded gates and palm-oil lamps (c. AD 1440)",
+      "Prince Oranmiyan arrives from sacred Ife and his Edo-born son becomes Oba Eweka I (c. AD 1180)",
+      "Oba Ewedo moves the royal palace to its grand central site in Benin City (c. AD 1255)",
+      "Oba Ozolua expands Benin’s power before Oba Esigie’s sixteenth-century Golden Age (c. AD 1480)"
+    ],
+    [
+      "Over 900 cast brass plaques line the wooden pillars of the Oba’s palace courtyards (c. AD 1550–1650)",
+      "West African metalworkers in Ife and early Benin master beeswax-and-clay lost-wax casting (c. AD 1300)",
+      "Oba Oguola organises royal brass-casting traditions inside Benin City (c. AD 1380)",
+      "Increased brass manilla trade lets Igun Street casters pour hundreds of detailed court plaques (c. AD 1500)"
+    ],
+    [
+      "Oba Esigie creates the royal office of Iyoba (Queen Mother) and honours Idia with an ivory mask (c. AD 1515)",
+      "Oba Ewuare establishes the annual Igue royal thanksgiving festival in Benin City (c. AD 1450)",
+      "Oba Esigie defeats invading rivals from Idah with Queen Mother Idia’s wise counsel (c. AD 1515)",
+      "British explorer Cyril Punch photographs a working Benin ancestral altar with tusks and bells (AD 1891)"
+    ],
+    [
+      "Dutch scholar Olfert Dapper publishes merchant accounts praising Benin’s 30 wide clean streets (AD 1668)",
+      "Portuguese explorer João Afonso de Aveiro reaches Gwato port and visits Benin City (AD 1485)",
+      "English Captain Thomas Windham meets a Benin Oba speaking fluent Portuguese (AD 1553)",
+      "The Oba sends a royal Benin ambassador by ship to King Manuel’s court in Lisbon (c. AD 1514)"
+    ],
+    [
+      "Cambridge, London’s Horniman Museum, and Germany begin formal restitution of bronzes to Nigeria (AD 2021–2026)",
+      "Oba Ovonramwen Nogbaisi becomes Oba and defends Benin’s palm-oil trade tolls (AD 1888)",
+      "The Benin monarchy is restored under Oba Eweka II while Igun Street revives royal casting (AD 1914)",
+      "Twelve hundred British troops capture Benin City, exile Ovonramwen, and loot 4,000+ bronzes (Feb 1897)"
+    ]
+  ],
+  "chronoKeyLines": [
+    "[3] 500+ linked Iya rings c.1100 • [1] Early yam clearings c.500–800 • [2] Ogiso & AD 900 Saxon contrast • [4] Last Ogiso ends c.1180",
+    "[3] Ewuare’s 9 gates c.1440 • [1] Oranmiyan & Eweka I c.1180 • [2] Oba Ewedo’s palace c.1255 • [4] Oba Ozolua c.1480",
+    "[4] 900+ palace plaques c.1550+ • [1] Early Ife/Benin casting c.1300 • [2] Royal casting guild c.1380 • [3] Manilla plaque boom c.1500",
+    "[3] Iyoba Idia honoured c.1515 • [1] Igue festival begun c.1450 • [2] Victory over Idah c.1515 • [4] 1891 altar photo",
+    "[4] Olfert Dapper book AD 1668 • [1] Aveiro arrives AD 1485 • [3] Windham visit AD 1553 • [2] Envoy to Lisbon c.1514",
+    "[4] Modern restitution 2021+ • [1] Ovonramwen crowned 1888 • [3] Monarchy restored 1914 • [2] British invasion Feb 1897"
+  ],
+  "thinkingHeads": [
+    {
+      "headA": "Edo Iya Earthwork Builder (c. AD 950)",
+      "promptA": "How do iron hoes, reed baskets, and sun-baked red clay build walls round your village?",
+      "headB": "Anglo-Saxon Villager in Britain (c. AD 950)",
+      "promptB": "How does your small timber burh compare with Edo’s 16,000 km of rainforest moats?"
+    },
+    {
+      "headA": "Guard at One of Benin’s Nine Gates",
+      "promptA": "How do Oba Ewuare’s inner moat, toll gates, and palm-oil lamps keep Edo safe?",
+      "headB": "Palace Singer Wearing Coral Beads",
+      "promptB": "Why do Edo people honour the Oba as sacred link back to Ife and Oba Eweka I?"
+    },
+    {
+      "headA": "Igun Street Master Brass-Caster",
+      "promptA": "How do beeswax, baked clay, and liquid brass create unique palace plaques?",
+      "headB": "Igbesanmwan Royal Ivory-Carver",
+      "promptB": "Why do carved white elephant tusks and brass plaques work like Benin’s history books?"
+    },
+    {
+      "headA": "Queen Mother (Iyoba) Idia at Uselu",
+      "promptA": "How did your wise counsel help Oba Esigie, and what does your ivory mask show?",
+      "headB": "Edo Rainforest Yam Farmer & Weaver",
+      "promptB": "What crops and crafts does your village produce for markets and the Igue festival?"
+    },
+    {
+      "headA": "Oba’s Official at Gwato River Port",
+      "promptA": "How do you control European ships trading brass manillas and cowries for pepper?",
+      "headB": "Dutch Trader Read by Dapper (1668)",
+      "promptB": "Why did Benin City’s thirty 120-foot clean avenues amaze visitors from Europe?"
+    },
+    {
+      "headA": "Oba Ovonramwen Defending Benin (1897)",
+      "promptA": "Why did British palm-oil demands threaten Benin’s independence before February 1897?",
+      "headB": "Curator in Benin City Today",
+      "promptB": "Why does returning 1897 looted bronzes matter so deeply to living Edo people?"
+    }
+  ],
+  "sourceStarters": [
+    "Looking closely at Source A, this finely sculpted terracotta head from Benin’s brass-casters’ quarter proves...",
+    "Looking closely at Source A, the two attendants holding up the Oba’s coral-laden arms show that...",
+    "Looking closely at Source A, every tiny shield, spear, and leopard-tooth collar cast on this warrior plaque helped...",
+    "Looking closely at Source A, carving miniature Portuguese traders and mudfish onto Queen Mother Idia’s ivory mask shows...",
+    "Looking closely at Source A, casting two long-haired Portuguese merchants holding horseshoe manillas proves...",
+    "Looking closely at Source A, British officers sitting among hundreds of seized plaques and tusks in February 1897 show..."
+  ],
+  "sourceClueNotes": [
+    "Rainforest Craft Clue: Long before European ships arrived, Edo sculptors modelled lifelike terracotta and metal heads for sacred altars!",
+    "Coral Weight Clue: Polished red sea-coral crowns, collars, and tunics were so heavy and sacred that attendants supported the Oba’s arms!",
+    "Visual Archive Clue: Over 900 cast brass plaques nailed onto palace pillars recorded kings, chiefs, armour, and court ceremonies!",
+    "Symbolism Clue: Creamy white ivory represented purity and sea-god Olokun, honouring Iyoba Idia’s wisdom beside her son Oba Esigie!",
+    "Trade Metal Clue: Benin exported pepper, cloth, and ivory in exchange for European brass manillas—then melted manillas into African art!",
+    "1897 Looting Clue: Over 4,000 royal works seized in February 1897 were sold in London to pay expedition costs—sparking modern restitution!"
+  ],
+  "milestonesSpine": [
+    {
+      "date": "c. AD 900",
+      "title": "Ogiso Rulers & Rainforest Towns",
+      "desc": "Early Edo villages in southern Nigeria unite under Ogiso ('Kings of the Sky') while Saxon Britain builds burhs."
+    },
+    {
+      "date": "c. AD 900–1460",
+      "title": "16,000 km of Iya Earthworks",
+      "desc": "Teams with iron hoes and baskets dig the world’s longest ancient network of red-clay ditches and banks."
+    },
+    {
+      "date": "c. AD 1180",
+      "title": "Prince Oranmiyan & Oba Eweka I",
+      "desc": "Edo elders invite Prince Oranmiyan from sacred Ife; his son Oba Eweka I founds Benin’s royal Oba dynasty."
+    },
+    {
+      "date": "c. AD 1440–1473",
+      "title": "Oba Ewuare’s Golden Capital",
+      "desc": "Ewuare builds the inner moat, nine guarded gates, wide avenues, palm-oil lamps, coral regalia, and Igue festival."
+    },
+    {
+      "date": "c. AD 1400–1700",
+      "title": "Igun Street Lost-Wax Plaques",
+      "desc": "Hereditary royal casters use beeswax and clay moulds to cast 900+ brass pillar plaques and commemorative heads."
+    },
+    {
+      "date": "AD 1485",
+      "title": "Portuguese Arrive at Gwato Port",
+      "desc": "João Afonso de Aveiro visits Benin; ambassadors sail to Lisbon and ships swap brass manillas for pepper and cloth."
+    },
+    {
+      "date": "c. AD 1504–1550",
+      "title": "Oba Esigie & Queen Mother Idia",
+      "desc": "Esigie creates the high office of Iyoba for his wise mother Idia, honoured with her famous carved ivory mask."
+    },
+    {
+      "date": "AD 1668",
+      "title": "Olfert Dapper’s Description",
+      "desc": "Dutch accounts praise Benin City’s thirty 120-foot clean avenues and walled palace as large as Haarlem."
+    },
+    {
+      "date": "February 1897",
+      "title": "British Invasion & Looted Bronzes",
+      "desc": "Clashing over palm-oil trade, British troops exile Oba Ovonramwen, burn the palace, and seize 4,000+ artworks."
+    },
+    {
+      "date": "2021–Present",
+      "title": "Restitution & Living Edo Culture",
+      "desc": "Oba Ewuare II and Igun Street casters keep Edo traditions alive as Cambridge, London, and Berlin return bronzes."
+    }
+  ],
+  "finalePairs": [
+    { "left": "Ogiso & 16,000 km Red-Clay Iya", "right": "Early Rainforest Benin" },
+    { "left": "Oba Ewuare’s 9 Gates & Oil Lamps", "right": "Golden Benin City" },
+    { "left": "Igun Street Beeswax & Clay Moulds", "right": "Lost-Wax Brass Plaques" },
+    { "left": "1485 Manillas → 1897 & Restitution", "right": "Global Trade & Return" }
+  ],
+  "finalePromptClues": "the 16,000 km Iya earthworks, Oba Ewuare’s planned city, Igun Street lost-wax brass plaques, Queen Mother Idia, 1485 trade & 1668 Dapper, and 1897 looting & modern restitution",
+  "bigDiscussion1": "<strong>1. Smashing Stereotypes:</strong> How do Benin’s 16,000 km earthworks, palm-oil street lamps, and lost-wax brass plaques overturn old myths about pre-colonial Africa?",
+  "bigDiscussion2": "<strong>2. Living Justice Today:</strong> Why have museums in Cambridge, London, and Germany begun returning 1897 Benin Bronzes to Nigeria?"
+}

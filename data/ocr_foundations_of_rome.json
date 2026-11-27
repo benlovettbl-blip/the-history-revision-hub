@@ -1,0 +1,134 @@
+{
+  "id": "ocr_foundations_of_rome",
+  "title": "OCR Paper 2: The Foundations of Rome — From Kingship to Republic, 753–440 BC",
+  "subtitle": "OCR GCSE (9–1) Ancient History • J198/02 Section A (Compulsory Longer Period Study)",
+  "enquiry": "How far does Roman archaeology confirm or contradict Livy and Dionysius’ stories of Rome’s seven kings, the 509 BC revolution, and the Struggle of the Orders?",
+  "enquiry_question": "How far does Roman archaeology confirm or contradict Livy and Dionysius’ stories of Rome’s seven kings, the 509 BC revolution, and the Struggle of the Orders?",
+  "period": "753–440 BC",
+  "edition": "OCR GCSE Ancient History (J198/02 Section A)",
+  "category": "GCSE",
+  "keyStage": "GCSE",
+  "key_stage": "GCSE",
+  "yearGroup": "GCSE (9–1)",
+  "year_group": "GCSE (9–1)",
+  "exam_board": "OCR_J198",
+  "paper_code": "J198/02 Section A",
+  "specification_file": "/data/specifications/ocr_j198_foundations_of_rome.json",
+  "desc": "OCR J198/02 (Section A)",
+  "icon": "fa-landmark-dome",
+  "color": "#b91c1c",
+  "bg": "rgba(185, 28, 28, 0.1)",
+  "cover_image": "/images/ocr_ancient/rome_cover_capitoline_wolf.jpg",
+  "cover_caption": "The bronze Capitoline She-Wolf in the Musei Capitolini, Rome, emblem of the legendary twin founders Romulus and Remus.",
+  "homepage_background": "/images/ocr_ancient/rome_cover_capitoline_wolf.jpg",
+  "groupings": [
+    {
+      "prefix": "KT1",
+      "name": "Key Topic 1: Legendary Kings — Origins of Rome, 753–616 BC",
+      "color": "#9a3412",
+      "bg": "#fff7ed",
+      "border": "#ea580c",
+      "icon": "fa-paw"
+    },
+    {
+      "prefix": "KT2",
+      "name": "Key Topic 2: The Etruscan Kings and the Fall of the Monarchy, 616–509 BC",
+      "color": "#991b1b",
+      "bg": "#fef2f2",
+      "border": "#ef4444",
+      "icon": "fa-crown"
+    },
+    {
+      "prefix": "KT3",
+      "name": "Key Topic 3: Securing the Early Republic and the First Secession, 509–494 BC",
+      "color": "#1e3a8a",
+      "bg": "#eff6ff",
+      "border": "#2563eb",
+      "icon": "fa-scale-balanced"
+    },
+    {
+      "prefix": "KT4",
+      "name": "Key Topic 4: Conflict of the Orders and the Twelve Tables, 494–440 BC",
+      "color": "#065f46",
+      "bg": "#ecfdf5",
+      "border": "#10b981",
+      "icon": "fa-scroll"
+    }
+  ],
+  "ancient_authors": [
+    {
+      "id": "livy_rome",
+      "name": "Titus Livius (Livy)",
+      "dates": "59 BC–AD 17",
+      "time_gap": "Wrote ~500–725 years after early Rome (Augustan Rome)",
+      "genre": "Moral & Patriotic Roman History (Ab Urbe Condita, Books 1–3)",
+      "language": "Classical Latin",
+      "strengths": "Admits openly in his Preface that stories before 390 BC (the Gallic sack) are \"poetic legends rather than uncorrupted monuments\", while preserving senatorial traditions on kingship, Lucretia, and the secessions.",
+      "limitations": "Wrote after Rome’s 1st-century BC civil wars under Augustus, projecting late-Republican patrician-plebeian politics and moral exempla (virtus, pietas, pudicitia) onto archaic Rome.",
+      "examiner_trap_warning": "Remember on Rome Q5* (20m + 5 SPaG): your essay MUST span at least TWO distinct eras across 753–440 BC, and never confuse the Twelve Tables (kept patrician-plebeian marriage ban!) with the Valerio-Horatian Laws (449 BC)."
+    },
+    {
+      "id": "dionysius_rome",
+      "name": "Dionysius of Halicarnassus",
+      "dates": "c. 60–after 7 BC",
+      "time_gap": "Wrote ~500–725 years after early Rome",
+      "genre": "Greek Rhetorical History (Roman Antiquities)",
+      "language": "Atticizing Greek",
+      "strengths": "Provides fuller constitutional detail than Livy on Romulus’ patronage system, Servius Tullius’ centuriate census classes, and plebeian tribunate debates.",
+      "limitations": "Wrote for Greek readers to prove early Romans were civilised Greeks rather than barbarians, inventing long polished speeches for early kings and tribunes.",
+      "examiner_trap_warning": "Pair Livy and Dionysius with Palatine Iron Age hut post-holes, Forum drainage/Cloaca Maxima layers, and the Lapis Satricanus inscription!"
+    }
+  ],
+  "key_individuals": [
+    {
+      "id": "romulus_numa",
+      "name": "Romulus & Numa Pompilius",
+      "role": "Legendary Warrior Founder (753–716 BC) & Pious Lawgiver Second King (715–673 BC)",
+      "lifespan": "Legendary 8th–7th Century BC",
+      "entity_type": "person",
+      "image": "/images/ocr_ancient/rome_cover_capitoline_wolf.jpg",
+      "achievements": [
+        "Romulus fortified the Palatine Hill, opened the Asylum, abducted the Sabine women, created the 100-member Senate and patron-client system.",
+        "Numa Pompilius balanced Romulus’ militarism by establishing Rome’s state priesthoods (Vestals, Pontiffs, Salii), religious calendar, and Temple of Janus.",
+        "Archaeology on the Palatine and Forum confirms 8th–7th century BC village hut settlements and early sanctuary deposits."
+      ],
+      "significance": "Roman historians paired Romulus (war) and Numa (religion) as complementary archetypes of Roman statecraft.",
+      "exam_distinction": "Compare literary foundation myths (Aeneas, twins, Sabine women) against Palatine hut post-holes and Forum paving."
+    },
+    {
+      "id": "servius_tarquin",
+      "name": "Servius Tullius & Tarquinius Superbus",
+      "role": "Sixth Reformer King (578–535 BC) & Seventh Tyrannical Etruscan King (534–509 BC)",
+      "lifespan": "6th Century BC",
+      "entity_type": "person",
+      "monogram": "ST",
+      "achievements": [
+        "Servius Tullius reorganised citizens by wealth into the Centuriate Assembly (linking hoplite armour to voting power), expanded the Servian Walls, and dedicated the Temple of Diana.",
+        "Tarquinius Superbus seized power by murdering Servius, built the monumental Temple of Jupiter Optimus Maximus, and ruled without the Senate until Sextus Tarquinius’ assault on Lucretia sparked the 509 BC expulsion.",
+        "Lucius Junius Brutus and Collatinus established the twin annual consulship of the early Roman Republic."
+      ],
+      "significance": "Explains both Rome’s 6th-century BC urban monumentalisation and lifelong Roman hatred of regnum (kingship).",
+      "exam_distinction": "Always pair Servius Tullius’ constitutional reforms with Tarquin’s tyranny on multi-era Q5 essays."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson_1_1",
+      "is_placeholder": true,
+      "key_topic": "KT1",
+      "prefix": "KT 1",
+      "title": "KT 1.1: Aeneas, Romulus and Remus — Myth vs Archaeology on the Palatine, 753–716 BC",
+      "period": "753–716 BC",
+      "enquiry": "Course Shell Ready (Wave 2 Authoring Queue): Full verbatim OCR J198/02 specification checklist, Exam Blueprint, and Sources & Authors Vault are live above!",
+      "enquiryQuestion": "How do Livy and Dionysius’ foundation legends of Aeneas and Romulus compare with Iron Age archaeology on the Palatine Hill?",
+      "card_image": "/images/ocr_ancient/rome_cover_capitoline_wolf.jpg",
+      "narrative_blocks": [
+        {
+          "act": 1,
+          "heading": "Wave 2 Course Shell — Ready for Full 12-Lesson Build",
+          "text": "Placeholder: Foundations of Rome (J198/02 Section A, 753–440 BC) is wired into the OCR Ancient History Exam & Spec Hub, Specification Word-Lock Registry, and Sources & Authors Vault, ready for Wave 2 lesson generation once you review the Persian Empire and Alexander prototypes."
+        }
+      ]
+    }
+  ]
+}

@@ -576,6 +576,781 @@ const WORLD_PRINT_SPECS = [
     bigDiscussion1: '<strong>1. Direct Contrast With AD 900 Britain:</strong> Compare stone step-pyramids, zero maths, and cacao in Maya cities with Anglo-Saxon &amp; Viking Britain!',
     bigDiscussion2: '<strong>2. Myth-Busting AD 900:</strong> Why is it historically wrong to say the Maya "mysteriously disappeared" in AD 900?',
   },
+
+  // ==========================================================================
+  // 5. CRIME AND PUNISHMENT THROUGH TIME (AD 43–PRESENT)
+  // ==========================================================================
+  {
+    unitId: 'ks2_crime_and_punishment',
+    shortUpper: 'CRIME AND PUNISHMENT',
+    shortTitle: 'Crime and Punishment',
+    coverSubtitle: 'Roman Courts, Saxon Wergild, 1215 Juries, Bloody Code & DNA Forensics (AD 43–Present)',
+    headerBanner: 'CRIME AND PUNISHMENT THROUGH TIME (AD 43–PRESENT)',
+    periodRange: 'AD 43 TO PRESENT DAY',
+    themeDark: '#0f172a',
+    themePrimary: '#1e3a8a',
+    themeAccent: '#d97706',
+    heroPos: 'center 25%',
+    mapFile: 'crime_punishment_britain_map_ks2.png',
+    mapTitle: 'Map of Seven Landmark Crime & Punishment Sites Across Britain (AD 43–Present)',
+    mapSub: 'Bookmark this page as you trace Aquae Sulis (Bath), Durham Cathedral, Runnymede, East Anglia, Cornwall, London, and Leicester!',
+    mapBoxA: '<strong>Community Chases to 1829 Bobbies:</strong> For nearly 1,800 years Britain had zero police detectives—relying on Bath curses, Saxon tithings, and parish watchmen until Peel’s 1829 Metropolitan Police!',
+    mapBoxB: '<strong>Ordeals to DNA Science:</strong> Follow how 1215 Magna Carta, Henry II’s twelve-person juries, 1901 fingerprints, and 1984 Leicester DNA replaced superstition with fair proof!',
+    sowAlign: 'Fulfils the statutory DfE Key Stage 2 British thematic study beyond 1066: <em>“A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 — changes in an aspect of social history, such as crime and punishment from the Anglo-Saxons to the present”</em>.',
+    lessonPeriods: ['AD 43–410', 'AD 410–1066', '1066–1485', '1485–1700', '1700–1820', '1829–Present'],
+    worksheetSlugs: [
+      'lesson_01_roman_law_curse_tablets_worksheet',
+      'lesson_02_anglo_saxon_wergild_ordeal_worksheet',
+      'lesson_03_norman_forest_laws_juries_worksheet',
+      'lesson_04_tudor_vagrants_treason_witches_worksheet',
+      'lesson_05_smugglers_highwaymen_bloody_code_worksheet',
+      'lesson_06_peelers_prisons_dna_forensics_worksheet',
+    ],
+    journeyBlurbs: [
+      'Step inside a stone Roman basilica court, contrast citizens with enslaved workers, and drop scratched lead curse tablets into Bath’s sacred spring!',
+      'Join a ten-person Anglo-Saxon tithing, blow the cow-horn for the Hue and Cry, count silver wergild coins, and inspect church Trials by Ordeal.',
+      'Investigate hated Norman Forest Laws, King Henry II’s twelve-person Common Law juries, Durham’s bronze Sanctuary Knocker, and 1215 Magna Carta!',
+      'Explore Tudor "sturdy beggar" whipping laws, catch Guy Fawkes beside 36 gunpowder barrels in 1605, and see how science ended witch trials.',
+      'Track midnight Cornish tea smugglers, armed stagecoach highwaymen, 220+ Bloody Code hangings, Australian convict ships, and reformer Elizabeth Fry!',
+      'Walk a London beat with Sir Robert Peel’s 1829 blue-coated Bobbies, debate Pentonville cells, and solve crimes with 1901 fingerprints and 1984 DNA!',
+    ],
+    chronoTasks: [
+      [
+        'Robbed bathers at Aquae Sulis (Bath) drop scratched lead curse tablets to Sulis Minerva (c. AD 200)',
+        'Emperor Claudius’s legions invade Britain and bring written Roman laws (AD 43)',
+        'Roman army rule in Britain ends as legions withdraw from provinces (c. AD 410)',
+        'Town magistrates and market officials establish stone basilica courts in Londinium (c. AD 100)',
+      ],
+      [
+        'King Alfred the Great compiles his written Old English law book, the Domboc (c. AD 890)',
+        'Anglo-Saxon farming villages form local Hundred Courts and ten-person tithings (c. AD 550)',
+        'Norman Conquest reshapes royal courts at the end of the Anglo-Saxon era (AD 1066)',
+        'King Aethelberht of Kent writes down early Old English shilling compensation fines (c. AD 600)',
+      ],
+      [
+        'King John seals Magna Carta AND Pope Innocent III bans priests from Trial by Ordeal (AD 1215)',
+        'William the Conqueror creates royal hunting reserves under harsh Norman Forest Laws (c. AD 1079)',
+        'Whaddon Folio artists paint five scarlet-robed justices at the Court of King’s Bench (c. AD 1460)',
+        'King Henry II sends travelling judges across England with twelve-person juries (AD 1166)',
+      ],
+      [
+        'Parliament passes the Witchcraft Act ending witch trials in Britain (AD 1736)',
+        'Queen Elizabeth I passes the Poor Law separating sick locals from whipped beggars (AD 1601)',
+        'Matthew Hopkins stirs up East Anglian witchcraft panics during Civil War chaos (AD 1645–1647)',
+        'Guards seize Guy Fawkes holding his dark lantern beside 36 gunpowder barrels (5 Nov 1605)',
+      ],
+      [
+        'Robert Peel’s Gaols Act reforms prisons following Elizabeth Fry’s Newgate campaign (AD 1823)',
+        'Notorious highwayman Dick Turpin is tried and hanged at York (AD 1739)',
+        'Elizabeth Fry opens a school and sewing workshops for women inside Newgate Prison (AD 1817)',
+        'First Fleet of British convict transportation ships sails for Australia (AD 1787)',
+      ],
+      [
+        'Professor Sir Alec Jeffreys discovers genetic DNA profiling at Leicester University (AD 1984)',
+        'Home Secretary Sir Robert Peel establishes London’s unarmed Metropolitan Police (AD 1829)',
+        'Parliament abolishes the death penalty for murder across Britain (AD 1965)',
+        'Scotland Yard opens its pioneering Fingerprint Bureau in London (AD 1901)',
+      ],
+    ],
+    chronoKeyLines: [
+      '[3] Bath curse tablets c.AD 200 • [1] Claudius invades AD 43 • [4] Roman rule ends c.AD 410 • [2] Basilica courts c.AD 100',
+      '[3] Alfred’s Domboc c.AD 890 • [1] Early tithings c.AD 550 • [4] End of Saxon era AD 1066 • [2] Aethelberht’s fines c.AD 600',
+      '[3] Magna Carta & Ordeal ban 1215 • [1] Forest Laws c.1079 • [4] King’s Bench painting c.1460 • [2] Henry II juries 1166',
+      '[4] Witchcraft Act 1736 • [1] Poor Law 1601 • [3] Matthew Hopkins 1645–47 • [2] Gunpowder Plot 5 Nov 1605',
+      '[4] Peel’s Gaols Act 1823 • [1] Dick Turpin hanged 1739 • [3] Fry’s Newgate school 1817 • [2] First Fleet to Australia 1787',
+      '[4] Leicester DNA 1984 • [1] Peel’s Bobbies 1829 • [3] Hanging abolished 1965 • [2] Fingerprint Bureau 1901',
+    ],
+    thinkingHeads: [
+      { headA: 'Roman Basilica Magistrate', promptA: 'How do written Twelve Tables and bronze scales keep Roman towns fair?', headB: 'Robbed Bather at Aquae Sulis', promptB: 'Why did you drop a lead curse tablet to Sulis Minerva when your cloak vanished?' },
+      { headA: 'Anglo-Saxon Hundred Elder', promptA: 'How do ten-person tithings, the Hue and Cry, and silver wergild stop blood feuds?', headB: 'Suspect Facing Hot Iron', promptB: 'Why is carrying glowing iron three paces a test of luck rather than real proof?' },
+      { headA: 'New Forest Villager (c. 1085)', promptA: 'Why do ordinary families hate William the Conqueror’s royal deer Forest Laws?', headB: 'Henry II’s Royal Assize Judge', promptB: 'How do Common Law, twelve-person juries, and 1215 Magna Carta make trials fairer?' },
+      { headA: 'Fearful Stuart Guard (1605)', promptA: 'Why did 36 gunpowder barrels under Parliament lead to fierce treason deterrence?', headB: 'Royal Society Thinker (1660s)', promptB: 'How did calm scientific proof expose Matthew Hopkins’s unfair witch tests?' },
+      { headA: 'Georgian Landowner MP', promptA: 'Why did Parliament pass over 220 Bloody Code hanging laws instead of funding police?', headB: 'Quaker Reformer Elizabeth Fry', promptB: 'Why did reluctant juries and Newgate schooling prove kindness beats cruelty?' },
+      { headA: '1829 London "Bobby" Constable', promptA: 'Why do you wear a blue coat and carry a wooden truncheon instead of a musket?', headB: 'Leicester DNA Scientist (1984)', promptB: 'How does DNA profiling both catch guilty criminals and clear innocent suspects?' },
+    ],
+    sourceStarters: [
+      'Looking closely at Source A, robbed Roman bathers at Aquae Sulis scratched curses onto folded lead sheets because...',
+      'Looking closely at Source A, Anglo-Saxon kings wrote down exact silver shilling fines in Old English so that...',
+      'Looking closely at Source A, when a medieval fugitive grasped Durham Cathedral’s bronze Sanctuary Knocker...',
+      'Looking closely at Source A, Thomas Harman’s 1567 woodcut shows Tudor towns punished "sturdy beggars" by...',
+      'Looking closely at Source C, British judges transported over 160,000 convicts in chains to Australia because...',
+      'Looking closely at Source A, Sir Robert Peel gave his 1829 Bobbies wooden truncheons and rattles instead of guns so...',
+    ],
+    sourceClueNotes: [
+      'Bath Spring Clue: With zero police detectives in Roman Britain, over 130 victims asked goddess Sulis Minerva to make cloak thieves confess!',
+      'Wergild Clue: Fixing exact silver "person-price" payments stopped injured families starting deadly revenge blood feuds!',
+      'Sanctuary Clue: Monks guarded fugitives inside Durham Cathedral for 37–40 days before they chose lawful royal trial or lifelong exile!',
+      'Tudor Poverty Clue: Bad harvests and sheep enclosures left farmworkers jobless—yet towns whipped sturdy beggars while helping sick locals!',
+      'Australia Clue (1787–1868): Sympathetic juries hated hanging petty thieves under the Bloody Code, so judges used eight-month convict voyages!',
+      'Consent Clue (1829): Dark blue coats and wooden truncheons showed Peelers were peaceful citizen crime-preventers, never red-coated soldiers!',
+    ],
+    milestonesSpine: [
+      { date: 'AD 43–410', title: 'Roman Courts & Bath Curses', desc: 'Magistrates apply written Twelve Tables in basilicas; robbed bathers scratch lead curses at Bath.' },
+      { date: 'c. AD 600–899', title: 'Saxon Tithings & Wergild', desc: 'Ten-person tithings, Hue and Cry chases, and King Alfred’s silver wergild stop blood feuds.' },
+      { date: 'c. AD 1079', title: 'Norman Royal Forest Laws', desc: 'William I shifts fines to the Crown and punishes peasant deer poaching severely.' },
+      { date: 'AD 1166 & 1215', title: '12-Person Juries & Magna Carta', desc: 'Henry II’s Common Law juries triumph as 1215 brings Magna Carta and ends Trial by Ordeal.' },
+      { date: 'AD 1601 & 1605', title: 'Poor Law & Gunpowder Treason', desc: '1601 Poor Law splits poor locals from sturdy beggars; Guy Fawkes is caught beside 36 barrels.' },
+      { date: 'AD 1645–1736', title: 'Witch Panics Ended by Science', desc: 'Hopkins exploits Civil War fear until post-1660 science and strict judges end witch trials.' },
+      { date: 'c. AD 1700–1810', title: 'Smugglers & The Bloody Code', desc: 'Tea smugglers and highwaymen prompt 220+ hanging laws—yet merciful juries balk.' },
+      { date: 'AD 1787–1823', title: 'Australia & Elizabeth Fry', desc: '160,000+ convicts sail to Australia; Elizabeth Fry’s Newgate school inspires the 1823 Gaols Act.' },
+      { date: 'AD 1829 & 1842', title: 'Peel’s Bobbies & Pentonville', desc: 'Unarmed blue-coated London police prevent crime; Pentonville tests solitary cells.' },
+      { date: 'AD 1901–1984+', title: 'Fingerprints, 1965 & DNA', desc: '1901 fingerprints, 1965 murder-hanging abolition, and 1984 Leicester DNA transform justice.' },
+    ],
+    finalePairs: [
+      { left: 'Bath Lead Curse Tablets & Twelve Tables', right: 'Roman Britain' },
+      { left: 'Ten-Man Tithings, Hue & Cry & Wergild', right: 'Anglo-Saxons' },
+      { left: 'Henry II’s 12-Person Juries & Magna Carta', right: 'Medieval Law' },
+      { left: '1829 Peelers, 1901 Fingerprints & 1984 DNA', right: 'Modern Policing' },
+    ],
+    finalePromptClues: 'Bath curse tablets, Saxon wergild & tithings, Henry II’s twelve-person juries & Magna Carta, Bloody Code juries & Elizabeth Fry, 1829 Bobbies, and 1984 DNA forensics',
+    bigDiscussion1: '<strong>1. Deterrence vs. Rehabilitation:</strong> Compare Bloody Code hangings and Victorian treadwheels with Elizabeth Fry’s Newgate school and modern rehabilitation!',
+    bigDiscussion2: '<strong>2. Superstition vs. Forensic Science:</strong> How did 1215 juries, 1901 fingerprints, and Sir Alec Jeffreys’s 1984 DNA defeat hot-iron ordeals and witch trials?',
+  },
+  {
+    "unitId": "ks2_kingdom_of_benin",
+    "shortUpper": "KINGDOM OF BENIN",
+    "shortTitle": "Kingdom of Benin",
+    "coverSubtitle": "Rainforest Earthworks, Royal Oba Court & Master Bronzes (c. AD 900 – 1897)",
+    "headerBanner": "THE KINGDOM OF BENIN • WEST AFRICA (c. AD 900–1897)",
+    "periodRange": "c. AD 900 TO PRESENT",
+    "themeDark": "#271203",
+    "themePrimary": "#9a3412",
+    "themeAccent": "#f59e0b",
+    "heroPos": "center 35%",
+    "mapFile": "benin_west_africa_edo_map_ks2.png",
+    "mapTitle": "Map of the Kingdom of Benin (Edo), Iya Earthworks, Ife & Trade Routes",
+    "mapSub": "Bookmark this page as you trace Benin City (Edo) in southern Nigeria, 16,000 km of Iya moats, Ife, and Gwato port!",
+    "mapBoxA": "<strong>Southern Nigeria (NOT Republic of Benin!):</strong> Historic Benin City (Edo) lay in modern Edo State, southern Nigeria—surrounded by 16,000 km of hand-dug red-clay Iya earthworks!",
+    "mapBoxB": "<strong>Rainforest to Atlantic Trade:</strong> Edo connected northern savanna caravan trails to Gwato river port, where Portuguese ships arrived in AD 1485 with brass manillas!",
+    "sowAlign": "Fulfils the statutory DfE Key Stage 2 non-European contrast study: <em>“A non-European society that provides contrasts with British history — Benin (West Africa) c. AD 900–1300”</em> (extended coherently through the Golden Age bronzes, 1897 British invasion, and modern restitution).",
+    "lessonPeriods": [
+      "c.AD 900–1180",
+      "c.AD 1180–1500",
+      "c.AD 1400–1700",
+      "c.AD 1500–1700",
+      "c.AD 1485–1850",
+      "1897–Present"
+    ],
+    "worksheetSlugs": [
+      "lesson_01_ogiso_earthworks_rainforest_worksheet",
+      "lesson_02_oba_ewuare_golden_city_worksheet",
+      "lesson_03_lost_wax_igun_bronzes_worksheet",
+      "lesson_04_sacred_court_idia_everyday_worksheet",
+      "lesson_05_global_traders_manillas_dapper_worksheet",
+      "lesson_06_1897_invasion_restitution_today_worksheet"
+    ],
+    "journeyBlurbs": [
+      "Explore Edo’s rich Nigerian rainforest, meet early Ogiso ('Kings of the Sky') rulers, dig 16,000 km of red-clay Iya earthworks, and contrast with AD 900 Anglo-Saxon Britain!",
+      "Follow Prince Oranmiyan from sacred Ife to Oba Eweka I, then walk Oba Ewuare the Great’s nine guarded gates, straight avenues, and palm-oil street lamps!",
+      "Step onto Igun Street to sculpt warm beeswax, bake red-clay moulds, and pour glowing liquid brass for over 900 royal palace pillar plaques!",
+      "Meet Oba Esigie and wise Queen Mother Idia, spot royal leopards and mudfish at the Igue festival, and harvest yams and palm oil in Edo villages!",
+      "Welcome Portuguese ships at Gwato port in 1485, trade pepper and woven cloth for brass manillas and cowries, and read Olfert Dapper’s 1668 praise!",
+      "Investigate why British forces invaded Oba Ovonramwen’s kingdom in February 1897, trace 4,000+ looted bronzes, and debate modern restitution to Nigeria!"
+    ],
+    "chronoTasks": [
+      [
+        "Linked red-clay Iya ditches and banks stretch across 500+ Edo rainforest settlements (c. AD 1100)",
+        "Early Edo farming villages clear sunlit rainforest plots for yams and oil palms (c. AD 500–800)",
+        "Anglo-Saxon rulers in Britain build smaller timber burh forts while Ogiso rule Edo (c. AD 900)",
+        "Edo elders banish the last Ogiso ruler and invite help from sacred Ife (c. AD 1180)"
+      ],
+      [
+        "Oba Ewuare the Great digs the giant inner city moat with nine guarded gates and palm-oil lamps (c. AD 1440)",
+        "Prince Oranmiyan arrives from sacred Ife and his Edo-born son becomes Oba Eweka I (c. AD 1180)",
+        "Oba Ewedo moves the royal palace to its grand central site in Benin City (c. AD 1255)",
+        "Oba Ozolua expands Benin’s power before Oba Esigie’s sixteenth-century Golden Age (c. AD 1480)"
+      ],
+      [
+        "Over 900 cast brass plaques line the wooden pillars of the Oba’s palace courtyards (c. AD 1550–1650)",
+        "West African metalworkers in Ife and early Benin master beeswax-and-clay lost-wax casting (c. AD 1300)",
+        "Oba Oguola organises royal brass-casting traditions inside Benin City (c. AD 1380)",
+        "Increased brass manilla trade lets Igun Street casters pour hundreds of detailed court plaques (c. AD 1500)"
+      ],
+      [
+        "Oba Esigie creates the royal office of Iyoba (Queen Mother) and honours Idia with an ivory mask (c. AD 1515)",
+        "Oba Ewuare establishes the annual Igue royal thanksgiving festival in Benin City (c. AD 1450)",
+        "Oba Esigie defeats invading rivals from Idah with Queen Mother Idia’s wise counsel (c. AD 1515)",
+        "British explorer Cyril Punch photographs a working Benin ancestral altar with tusks and bells (AD 1891)"
+      ],
+      [
+        "Dutch scholar Olfert Dapper publishes merchant accounts praising Benin’s 30 wide clean streets (AD 1668)",
+        "Portuguese explorer João Afonso de Aveiro reaches Gwato port and visits Benin City (AD 1485)",
+        "English Captain Thomas Windham meets a Benin Oba speaking fluent Portuguese (AD 1553)",
+        "The Oba sends a royal Benin ambassador by ship to King Manuel’s court in Lisbon (c. AD 1514)"
+      ],
+      [
+        "Cambridge, London’s Horniman Museum, and Germany begin formal restitution of bronzes to Nigeria (AD 2021–2026)",
+        "Oba Ovonramwen Nogbaisi becomes Oba and defends Benin’s palm-oil trade tolls (AD 1888)",
+        "The Benin monarchy is restored under Oba Eweka II while Igun Street revives royal casting (AD 1914)",
+        "Twelve hundred British troops capture Benin City, exile Ovonramwen, and loot 4,000+ bronzes (Feb 1897)"
+      ]
+    ],
+    "chronoKeyLines": [
+      "[3] 500+ linked Iya rings c.1100 • [1] Early yam clearings c.500–800 • [2] Ogiso & AD 900 Saxon contrast • [4] Last Ogiso ends c.1180",
+      "[3] Ewuare’s 9 gates c.1440 • [1] Oranmiyan & Eweka I c.1180 • [2] Oba Ewedo’s palace c.1255 • [4] Oba Ozolua c.1480",
+      "[4] 900+ palace plaques c.1550+ • [1] Early Ife/Benin casting c.1300 • [2] Royal casting guild c.1380 • [3] Manilla plaque boom c.1500",
+      "[3] Iyoba Idia honoured c.1515 • [1] Igue festival begun c.1450 • [2] Victory over Idah c.1515 • [4] 1891 altar photo",
+      "[4] Olfert Dapper book AD 1668 • [1] Aveiro arrives AD 1485 • [3] Windham visit AD 1553 • [2] Envoy to Lisbon c.1514",
+      "[4] Modern restitution 2021+ • [1] Ovonramwen crowned 1888 • [3] Monarchy restored 1914 • [2] British invasion Feb 1897"
+    ],
+    "thinkingHeads": [
+      {
+        "headA": "Edo Iya Earthwork Builder (c. AD 950)",
+        "promptA": "How do iron hoes, reed baskets, and sun-baked red clay build walls round your village?",
+        "headB": "Anglo-Saxon Villager in Britain (c. AD 950)",
+        "promptB": "How does your small timber burh compare with Edo’s 16,000 km of rainforest moats?"
+      },
+      {
+        "headA": "Guard at One of Benin’s Nine Gates",
+        "promptA": "How do Oba Ewuare’s inner moat, toll gates, and palm-oil lamps keep Edo safe?",
+        "headB": "Palace Singer Wearing Coral Beads",
+        "promptB": "Why do Edo people honour the Oba as sacred link back to Ife and Oba Eweka I?"
+      },
+      {
+        "headA": "Igun Street Master Brass-Caster",
+        "promptA": "How do beeswax, baked clay, and liquid brass create unique palace plaques?",
+        "headB": "Igbesanmwan Royal Ivory-Carver",
+        "promptB": "Why do carved white elephant tusks and brass plaques work like Benin’s history books?"
+      },
+      {
+        "headA": "Queen Mother (Iyoba) Idia at Uselu",
+        "promptA": "How did your wise counsel help Oba Esigie, and what does your ivory mask show?",
+        "headB": "Edo Rainforest Yam Farmer & Weaver",
+        "promptB": "What crops and crafts does your village produce for markets and the Igue festival?"
+      },
+      {
+        "headA": "Oba’s Official at Gwato River Port",
+        "promptA": "How do you control European ships trading brass manillas and cowries for pepper?",
+        "headB": "Dutch Trader Read by Dapper (1668)",
+        "promptB": "Why did Benin City’s thirty 120-foot clean avenues amaze visitors from Europe?"
+      },
+      {
+        "headA": "Oba Ovonramwen Defending Benin (1897)",
+        "promptA": "Why did British palm-oil demands threaten Benin’s independence before February 1897?",
+        "headB": "Curator in Benin City Today",
+        "promptB": "Why does returning 1897 looted bronzes matter so deeply to living Edo people?"
+      }
+    ],
+    "sourceStarters": [
+      "Looking closely at Source A, this finely sculpted terracotta head from Benin’s brass-casters’ quarter proves...",
+      "Looking closely at Source A, the two attendants holding up the Oba’s coral-laden arms show that...",
+      "Looking closely at Source A, every tiny shield, spear, and leopard-tooth collar cast on this warrior plaque helped...",
+      "Looking closely at Source A, carving miniature Portuguese traders and mudfish onto Queen Mother Idia’s ivory mask shows...",
+      "Looking closely at Source A, casting two long-haired Portuguese merchants holding horseshoe manillas proves...",
+      "Looking closely at Source A, British officers sitting among hundreds of seized plaques and tusks in February 1897 show..."
+    ],
+    "sourceClueNotes": [
+      "Rainforest Craft Clue: Long before European ships arrived, Edo sculptors modelled lifelike terracotta and metal heads for sacred altars!",
+      "Coral Weight Clue: Polished red sea-coral crowns, collars, and tunics were so heavy and sacred that attendants supported the Oba’s arms!",
+      "Visual Archive Clue: Over 900 cast brass plaques nailed onto palace pillars recorded kings, chiefs, armour, and court ceremonies!",
+      "Symbolism Clue: Creamy white ivory represented purity and sea-god Olokun, honouring Iyoba Idia’s wisdom beside her son Oba Esigie!",
+      "Trade Metal Clue: Benin exported pepper, cloth, and ivory in exchange for European brass manillas—then melted manillas into African art!",
+      "1897 Looting Clue: Over 4,000 royal works seized in February 1897 were sold in London to pay expedition costs—sparking modern restitution!"
+    ],
+    "milestonesSpine": [
+      {
+        "date": "c. AD 900",
+        "title": "Ogiso Rulers & Rainforest Towns",
+        "desc": "Early Edo villages in southern Nigeria unite under Ogiso ('Kings of the Sky') while Saxon Britain builds burhs."
+      },
+      {
+        "date": "c. AD 900–1460",
+        "title": "16,000 km of Iya Earthworks",
+        "desc": "Teams with iron hoes and baskets dig the world’s longest ancient network of red-clay ditches and banks."
+      },
+      {
+        "date": "c. AD 1180",
+        "title": "Prince Oranmiyan & Oba Eweka I",
+        "desc": "Edo elders invite Prince Oranmiyan from sacred Ife; his son Oba Eweka I founds Benin’s royal Oba dynasty."
+      },
+      {
+        "date": "c. AD 1440–1473",
+        "title": "Oba Ewuare’s Golden Capital",
+        "desc": "Ewuare builds the inner moat, nine guarded gates, wide avenues, palm-oil lamps, coral regalia, and Igue festival."
+      },
+      {
+        "date": "c. AD 1400–1700",
+        "title": "Igun Street Lost-Wax Plaques",
+        "desc": "Hereditary royal casters use beeswax and clay moulds to cast 900+ brass pillar plaques and commemorative heads."
+      },
+      {
+        "date": "AD 1485",
+        "title": "Portuguese Arrive at Gwato Port",
+        "desc": "João Afonso de Aveiro visits Benin; ambassadors sail to Lisbon and ships swap brass manillas for pepper and cloth."
+      },
+      {
+        "date": "c. AD 1504–1550",
+        "title": "Oba Esigie & Queen Mother Idia",
+        "desc": "Esigie creates the high office of Iyoba for his wise mother Idia, honoured with her famous carved ivory mask."
+      },
+      {
+        "date": "AD 1668",
+        "title": "Olfert Dapper’s Description",
+        "desc": "Dutch accounts praise Benin City’s thirty 120-foot clean avenues and walled palace as large as Haarlem."
+      },
+      {
+        "date": "February 1897",
+        "title": "British Invasion & Looted Bronzes",
+        "desc": "Clashing over palm-oil trade, British troops exile Oba Ovonramwen, burn the palace, and seize 4,000+ artworks."
+      },
+      {
+        "date": "2021–Present",
+        "title": "Restitution & Living Edo Culture",
+        "desc": "Oba Ewuare II and Igun Street casters keep Edo traditions alive as Cambridge, London, and Berlin return bronzes."
+      }
+    ],
+    "finalePairs": [
+      {
+        "left": "Ogiso & 16,000 km Red-Clay Iya",
+        "right": "Early Rainforest Benin"
+      },
+      {
+        "left": "Oba Ewuare’s 9 Gates & Oil Lamps",
+        "right": "Golden Benin City"
+      },
+      {
+        "left": "Igun Street Beeswax & Clay Moulds",
+        "right": "Lost-Wax Brass Plaques"
+      },
+      {
+        "left": "1485 Manillas → 1897 & Restitution",
+        "right": "Global Trade & Return"
+      }
+    ],
+    "finalePromptClues": "the 16,000 km Iya earthworks, Oba Ewuare’s planned city, Igun Street lost-wax brass plaques, Queen Mother Idia, 1485 trade & 1668 Dapper, and 1897 looting & modern restitution",
+    "bigDiscussion1": "<strong>1. Smashing Stereotypes:</strong> How do Benin’s 16,000 km earthworks, palm-oil street lamps, and lost-wax brass plaques overturn old myths about pre-colonial Africa?",
+    "bigDiscussion2": "<strong>2. Living Justice Today:</strong> Why have museums in Cambridge, London, and Germany begun returning 1897 Benin Bronzes to Nigeria?"
+  },
+  {
+    "unitId": "ks2_victorian_britain",
+    "shortUpper": "VICTORIAN BRITAIN",
+    "shortTitle": "Victorian Britain",
+    "coverSubtitle": "Steam Railways, Factories, Workhouses and Classrooms (1837–1901)",
+    "headerBanner": "VICTORIAN BRITAIN: RAILWAYS, REFORM AND CLASSROOMS (1837–1901)",
+    "periodRange": "AD 1837 TO 1901",
+    "themeDark": "#1e1b4b",
+    "themePrimary": "#3730a3",
+    "themeAccent": "#d97706",
+    "heroPos": "center 48%",
+    "mapFile": "victorian_britain_railways_industry_map_ks2.png",
+    "mapTitle": "Map of Seven Landmark Sites Across Victorian Britain (1837–1901)",
+    "mapSub": "Bookmark this page as you trace London, Bristol, South Wales, Manchester, Bradford and Saltaire, Glasgow, Balmoral, and the Isle of Wight!",
+    "mapBoxA": "<strong>Steam &amp; Penny Post Network:</strong> Over 20,000 miles of iron track, shared Greenwich Railway Time, and 1840 Penny Black mail trains linked every corner of Britain!",
+    "mapBoxB": "<strong>Coal, Cotton &amp; Reform:</strong> Northern textile mills, Welsh coal valleys, and Clyde shipyards powered the Workshop of the World while reformers fought for working children.",
+    "sowAlign": "Fulfils the statutory DfE Key Stage 2 British study beyond 1066: <em>“A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 — Victorian Britain, the first railways, industrial child reform, and compulsory schooling (1837–1901)”</em>.",
+    "lessonPeriods": [
+      "1837–1860",
+      "1837–1850",
+      "1834–1880",
+      "1870–1901",
+      "1851–1901",
+      "1850–1901"
+    ],
+    "worksheetSlugs": [
+      "lesson_01_victoria_railways_penny_post_worksheet",
+      "lesson_02_chimneys_cotton_mills_coal_mines_worksheet",
+      "lesson_03_workhouses_shaftesbury_barnardo_worksheet",
+      "lesson_04_victorian_classroom_slates_1870_act_worksheet",
+      "lesson_05_crystal_palace_victorian_inventions_worksheet",
+      "lesson_06_homes_seaside_holidays_jubilee_legacy_worksheet"
+    ],
+    "journeyBlurbs": [
+      "Watch eighteen-year-old Victoria crowned in 1837, cross gorges with Isambard Kingdom Brunel, set clocks to Railway Time, and post an 1840 Penny Black!",
+      "Follow country families into smoky 'Cottonopolis' mills and creep underground to meet child piecers, scavengers, eight-year-old trappers, and coal hurriers.",
+      "Step inside a grim Union Workhouse, pass Lord Shaftesbury’s 1842 Mines Act banning under-tens underground, and open Dr Barnardo’s East End homes!",
+      "Line up at an 1880s red-brick Board School to chant the Three Rs, scratch sums on Welsh slates, dip copperplate ink pens, and bowl playground iron hoops.",
+      "Explore Hyde Park’s 1851 glass-and-iron Crystal Palace alongside telegraphs, Bell’s telephone, Joseph Swan’s lightbulb, Ada Lovelace, and Mary Seacole!",
+      "Contrast servant-run villas with back-to-back terraces, ride 1871 Bank Holiday seaside trains, cheer early FA Cup football, and judge Victoria’s 1901 legacy!"
+    ],
+    "chronoTasks": [
+      [
+        "Queen Victoria becomes the first British monarch to ride a steam train from Slough to Paddington (June 1842)",
+        "Eighteen-year-old Princess Victoria inherits the British throne upon the death of King William IV (June 1837)",
+        "Great Western Railway and major lines adopt standard Greenwich 'Railway Time' across stations (1840–1847)",
+        "Rowland Hill launches the world’s first sticky stamp, the one-penny Penny Black (May 1840)"
+      ],
+      [
+        "Victorian Census reveals more Britons live in towns and cities than in the countryside for the first time (1851)",
+        "Humphry Davy invents the wire-gauze miner’s safety lamp to reduce underground firedamp blasts (1815)",
+        "Royal Commission inspectors interview eight-year-old trapper Sarah Gooder in a Yorkshire coal pit (1841–1842)",
+        "Steam-powered Lancashire cotton mills expand rapidly across booming 'Cottonopolis' Manchester (1830s)"
+      ],
+      [
+        "Ten-year-old orphan Jim Jarvis leads Thomas Barnardo across freezing East London rooftops, inspiring Barnardo’s Homes (1870)",
+        "Poor Law Amendment Act groups parishes to build strict, family-splitting Union Workhouses (1834)",
+        "Parliament passes the Ten Hours Act limiting women and teenagers in textile mills to ten hours a day (1847)",
+        "Lord Shaftesbury’s Mines and Collieries Act bans all females and boys under ten from working underground (1842)"
+      ],
+      [
+        "Parliament abolishes weekly 'school pence' fees so elementary Board Schools become free (1891)",
+        "William Forster’s Elementary Education Act sets up local School Boards to build missing schools (1870)",
+        "School leaving age rises to twelve as Victorian literacy climbs above ninety-five per cent (1899)",
+        "Mundella’s Education Act makes school attendance compulsory for children aged five to ten (1880)"
+      ],
+      [
+        "Sir Joseph Swan demonstrates his glowing incandescent carbon-filament electric lightbulb in Newcastle (1878–1879)",
+        "Ada Lovelace publishes the world’s first computer algorithm for Charles Babbage’s Analytical Engine (1843)",
+        "Alexander Graham Bell patents the electric telephone transmitting human speech along wires (1876)",
+        "Queen Victoria and Prince Albert open the Great Exhibition inside Hyde Park’s Crystal Palace (1 May 1851)"
+      ],
+      [
+        "Queen Victoria dies at Osborne House aged 81 after a 63-year reign over a transformed Britain (22 Jan 1901)",
+        "Parliament passes the Bank Holidays Act giving workers four guaranteed paid public holidays (1871)",
+        "Huge crowds outside St Paul’s Cathedral celebrate Queen Victoria’s sixty-year Diamond Jubilee (June 1897)",
+        "John Kemp Starley’s chain-driven Rover 'safety bicycle' replaces tall, wobbly penny-farthings (1885)"
+      ]
+    ],
+    "chronoKeyLines": [
+      "[3] Victoria rides train 1842 • [1] Crowned aged 18 in 1837 • [4] Shared Railway Time 1840s • [2] Penny Black May 1840",
+      "[4] Urban majority Census 1851 • [1] Davy safety lamp 1815 • [3] Mines Commission 1841–42 • [2] Cottonopolis boom 1830s",
+      "[4] Barnardo & Jim Jarvis 1870 • [1] Poor Law Workhouses 1834 • [3] Ten Hours Act 1847 • [2] Mines Act 1842",
+      "[3] Free schooling 1891 • [1] Forster’s Board Schools 1870 • [4] Leaving age twelve 1899 • [2] Compulsory ages 5–10 in 1880",
+      "[4] Swan’s lightbulb 1878–79 • [1] Ada Lovelace algorithm 1843 • [3] Bell’s telephone 1876 • [2] Crystal Palace 1 May 1851",
+      "[4] Victoria dies Jan 1901 • [1] Bank Holidays Act 1871 • [3] Diamond Jubilee June 1897 • [2] Safety bicycle 1885"
+    ],
+    "thinkingHeads": [
+      {
+        "headA": "Isambard Kingdom Brunel (GWR)",
+        "promptA": "How do your broad-gauge tracks, tunnels, and Railway Time connect Britain?",
+        "headB": "Mill Worker Buying a Penny Black",
+        "promptB": "Why does posting a letter home for just one penny matter to your family?"
+      },
+      {
+        "headA": "Cotton-Mill Child Scavenger",
+        "promptA": "What dangers do you face crawling beneath moving iron power looms all day?",
+        "headB": "Eight-Year-Old Coal-Mine Trapper",
+        "promptB": "What is it like sitting alone in pitch darkness opening pit air doors?"
+      },
+      {
+        "headA": "7th Earl of Shaftesbury (1842)",
+        "promptA": "How did Royal Commission pit drawings help pass your 1842 Mines Act?",
+        "headB": "Dr Thomas Barnardo in Stepney",
+        "promptB": "Why did meeting orphan Jim Jarvis inspire 'No Destitute Child Ever Refused'?"
+      },
+      {
+        "headA": "Strict 1885 Board School Teacher",
+        "promptA": "Why do sixty pupils chant the Three Rs on slates beneath high windows?",
+        "headB": "Ten-Year-Old Left-Handed Pupil",
+        "promptB": "What do you love—and fear—most inside your Victorian classroom?"
+      },
+      {
+        "headA": "1851 Shilling-Day Rail Visitor",
+        "promptA": "What amazed you most under the glass-and-iron roof of the Crystal Palace?",
+        "headB": "Ada Lovelace & Sir Joseph Swan",
+        "promptB": "How did computing notes (1843) and electric bulbs (1878) point to the future?"
+      },
+      {
+        "headA": "Back-to-Back Terrace Mother",
+        "promptA": "How does your crowded courtyard life differ from a servant-run rich villa?",
+        "headB": "Bank Holiday Day-Tripper (1890)",
+        "promptB": "How did cheap steam trains, piers, football, and bicycles brighten leisure?"
+      }
+    ],
+    "sourceStarters": [
+      "Looking closely at Source A, Stephenson’s Rocket and early Victorian steam locomotives transformed travel because...",
+      "Looking closely at Source B, the 1842 Royal Commission woodcut shocked Members of Parliament by showing child hurriers...",
+      "Looking closely at Source A, George Cruikshank’s 1838 workhouse etching reveals why poor Victorian families dreaded...",
+      "Looking closely at Source A, Victorian teachers gave younger pupils wooden-framed Welsh writing slates before paper because...",
+      "Looking closely at Source A, Joseph Paxton’s soaring glass-and-iron Crystal Palace amazed six million visitors in 1851 by...",
+      "Looking closely at Source A, riding a tall high-wheeled penny-farthing bicycle was risky compared with 1885 safety bicycles because..."
+    ],
+    "sourceClueNotes": [
+      "Steam & Time Clue: Fast inter-city locomotives forced Britain to adopt shared Greenwich Railway Time and carried 1840 Penny Black mail overnight!",
+      "1842 Mines Clue: Printed woodcuts of chained child hurriers and eight-year-old trappers persuaded MPs to ban all females and boys under ten underground!",
+      "Workhouse Clue: Splitting husbands, wives, and children onto watery gruel and tarred oakum-picking made the 1834 workhouse deeply feared!",
+      "Classroom Clue: Reusable Welsh slates saved costly paper and ink until older pupils mastered neat right-handed copperplate handwriting!",
+      "1851 Clue: Cheap shilling excursion trains let working families see 100,000 inventions—and profits funded South Kensington’s great museums!",
+      "Leisure Clue: Equal-wheeled chain-driven safety bicycles, 1871 Bank Holidays, and Saturday FA Cup football opened outdoor leisure to millions!"
+    ],
+    "milestonesSpine": [
+      {
+        "date": "20 June 1837",
+        "title": "Young Queen Victoria Crowned",
+        "desc": "Eighteen-year-old Victoria inherits the throne, beginning a transformative 63-year reign alongside Prince Albert."
+      },
+      {
+        "date": "1838–1847",
+        "title": "Brunel, Railways & Railway Time",
+        "desc": "Brunel’s GWR bridges and Railway Mania link towns in hours and standardize Greenwich Railway Time."
+      },
+      {
+        "date": "May 1840",
+        "title": "Penny Black & V.R. Pillar Boxes",
+        "desc": "Rowland Hill’s one-penny adhesive stamp and red V.R. postboxes carry letters nationwide by mail train."
+      },
+      {
+        "date": "1842 & 1847",
+        "title": "Mines Act & Ten Hours Factory Act",
+        "desc": "Lord Shaftesbury’s campaigns ban females and boys under ten from coal pits and cap textile mill hours."
+      },
+      {
+        "date": "1843 & 1855",
+        "title": "Ada Lovelace & Mary Seacole",
+        "desc": "Lovelace writes the first computer algorithm (1843); Seacole nurses sick soldiers at the British Hotel (1855)."
+      },
+      {
+        "date": "1 May 1851",
+        "title": "Hyde Park’s Crystal Palace",
+        "desc": "Six million visitors marvel at 100,000 inventions in the Workshop of the World; Census shows urban majority."
+      },
+      {
+        "date": "1870",
+        "title": "Barnardo’s Homes & Forster’s Act",
+        "desc": "Dr Barnardo opens East End children’s homes while Forster’s Education Act builds local Board Schools."
+      },
+      {
+        "date": "1871–1879",
+        "title": "Bank Holidays, Bell & Swan’s Bulb",
+        "desc": "1871 Bank Holidays and FA Cup launch modern leisure; Bell’s telephone (1876) and Swan’s bulb (1878) debut."
+      },
+      {
+        "date": "1880 & 1891",
+        "title": "Compulsory & Free Schooling",
+        "desc": "Attendance becomes compulsory for ages five to ten (1880) and weekly penny fees end in 1891."
+      },
+      {
+        "date": "1897 & 1901",
+        "title": "Diamond Jubilee & End of an Era",
+        "desc": "Millions celebrate sixty years in 1897 before Queen Victoria dies aged 81 on 22 January 1901."
+      }
+    ],
+    "finalePairs": [
+      {
+        "left": "Brunel, Railway Time & 1840 Penny Black",
+        "right": "Shrinking Britain"
+      },
+      {
+        "left": "Mill Scavengers, Trappers & 1842 Mines Act",
+        "right": "Working Children"
+      },
+      {
+        "left": "1870–91 Board Schools, Slates & Three Rs",
+        "right": "Victorian Schools"
+      },
+      {
+        "left": "1851 Crystal Palace, Swan’s Bulb & Piers",
+        "right": "Inventions & Leisure"
+      }
+    ],
+    "finalePromptClues": "Brunel’s railways & the Penny Black, mill & mine children rescued by Shaftesbury & Barnardo, 1870–1891 Board Schools, 1851 Crystal Palace inventions, and rich vs poor homes & seaside Bank Holidays",
+    "bigDiscussion1": "<strong>1. Childhood Transformed:</strong> Compare the daily life of an eight-year-old British child in 1840 (before the Mines and School Acts) with a ten-year-old in 1895!",
+    "bigDiscussion2": "<strong>2. Golden Age or Two Nations?:</strong> Why can historians praise Victorian inventions, free schools, and seaside trains while still criticising back-to-back slums and workhouses?"
+  },
+  {
+    "unitId": "ks2_local_history_detective",
+    "shortUpper": "LOCAL HISTORY DETECTIVE",
+    "shortTitle": "Local History Detective",
+    "coverSubtitle": "History on Our Doorstep — Roman Towns to Living Memory",
+    "headerBanner": "HISTORY ON OUR DOORSTEP — LOCAL DETECTIVE TOOLKIT",
+    "periodRange": "AD 43 TO PRESENT",
+    "themeDark": "#0f172a",
+    "themePrimary": "#0f766e",
+    "themeAccent": "#38bdf8",
+    "heroPos": "center 42%",
+    "mapFile": "local_history_place_names_detective_map_ks2.png",
+    "mapTitle": "Britain’s Place-Name Detective Map (Celtic, Roman, Saxon, Viking & Norman)",
+    "mapSub": "Bookmark this page as you decode -chester, -ton, -ham, -ford, -ley, -by, and -thorpe across Britain!",
+    "mapBoxA": "<strong>Settler Endings:</strong> Roman castra forts left -chester and -caster, Anglo-Saxons left -ton, -ham, -ford, and -ley, and Vikings left -by and -thorpe!",
+    "mapBoxB": "<strong>1086 to Ordnance Survey:</strong> Check original spellings in the 1086 Domesday Book, then compare 1880s Ordnance Survey maps with modern streets!",
+    "sowAlign": "Fulfils the statutory DfE Key Stage 2 History study: <em>“A local history study — a study over time tracing how several aspects of national history are reflected in the locality”</em>.",
+    "lessonPeriods": [
+      "AD 43–1936",
+      "1485–1914",
+      "1538–1921",
+      "1600–1965",
+      "1914–1945",
+      "1895–Present"
+    ],
+    "worksheetSlugs": [
+      "lesson_01_place_names_os_maps_worksheet",
+      "lesson_02_high_street_buildings_cyphers_worksheet",
+      "lesson_03_census_parish_school_logbooks_worksheet",
+      "lesson_04_canals_mills_stations_work_worksheet",
+      "lesson_05_war_memorials_cwgc_records_worksheet",
+      "lesson_06_oral_history_heritage_trails_worksheet"
+    ],
+    "journeyBlurbs": [
+      "Crack Celtic, Roman (-chester), Saxon (-ton/-ham), and Viking (-by) place-names, compare 1880s OS maps, and spot carved stone benchmarks!",
+      "Look upstairs above modern plastic shop signs to date Tudor oak jetties, Georgian sash windows, Victorian red brick, V.R. postboxes, and ghost signs.",
+      "Open 1881 UK Census household sheets, decode vanished jobs like ostlers, and read 1538 parish registers alongside 1862 School Logbooks!",
+      "Follow turnpike milestones, waterwheels, narrowboat canal locks, Victorian steam stations, and work clues in Mill Lane and Station Road.",
+      "Read local 1914–1918 and 1939–1945 War Memorials respectfully and trace one surname via Sir Fabian Ware’s CWGC records and the 1911 Census.",
+      "Record open-ended oral history memories of pre-1971 shillings, explore Octavia Hill’s 1895 National Trust and Blue Plaques, and map a Heritage Trail!"
+    ],
+    "chronoTasks": [
+      [
+        "Ordnance Survey erects concrete hilltop triangulation ('trig') pillars across Britain (1936)",
+        "Roman legions build walled castra forts at Chester, Manchester, and Lancaster (AD 43–410)",
+        "Victorian Ordnance Survey teams publish detailed 1880s street plans and carve benchmarks (1880s)",
+        "King William I’s scribes record 13,000+ early place-names in the Domesday Book (AD 1086)"
+      ],
+      [
+        "Post Office repaints dark-green Victorian cast-iron pillar postboxes bright red (AD 1874)",
+        "Tudor carpenters frame overhanging oak 'jetty' houses with wattle and daub (1500s)",
+        "Railways carry machine-made red brick and terracotta to Victorian town halls (1880s–1890s)",
+        "Georgian architects build symmetrical stone terraces with sliding sash windows in Bath (1760s–1770s)"
+      ],
+      [
+        "1921 UK Census household sheets open to public local history detectives after 100 years (AD 2022)",
+        "Parish churches in England and Wales begin keeping baptism, marriage, and burial registers (AD 1538)",
+        "Government rules require British headteachers to write weekly School Logbooks (AD 1862)",
+        "Britain holds its first national Census naming every person and occupation in each house (AD 1841)"
+      ],
+      [
+        "Thousands of rural branch-line stations close and become walking trails after the Beeching Report (1960s)",
+        "Wymondham townspeople raise an octagonal timber Market Cross on open oak pillars (AD 1618)",
+        "Victorian steam railways connect market towns, ports, and red-brick stations across Britain (1840s)",
+        "Thomas Telford completes the cast-iron Pontcysyllte Canal Aqueduct for narrowboats (AD 1805)"
+      ],
+      [
+        "Communities add 1939–1945 Rolls of Honour to local War Memorial crosses and church plaques (AD 1945+)",
+        "First World War breaks out and Fabian Ware begins recording soldiers’ battlefield graves (AD 1914)",
+        "Bereaved British villages and towns raise over 100,000 local War Memorials and receive bronze plaques (1919–1922)",
+        "Royal Charter establishes the War Graves Commission with equal white Portland stone headstones (May 1917)"
+      ],
+      [
+        "Britain switches from pounds, shillings, and pence to 100 new pence on Decimal Day (15 February 1971)",
+        "London installs the world’s earliest ceramic historical Blue Plaques on famous homes (AD 1866)",
+        "Parliament passes the Town and Country Planning Act creating legally protected Listed Buildings (AD 1947)",
+        "Octavia Hill, Robert Hunter, and Hardwicke Rawnsley co-found the National Trust (January 1895)"
+      ]
+    ],
+    "chronoKeyLines": [
+      "[4] Trig pillars 1936 • [1] Roman castra AD 43–410 • [3] Victorian OS maps 1880s • [2] Domesday Book AD 1086",
+      "[3] Red postboxes 1874 • [1] Tudor jetties 1500s • [4] Victorian red brick 1880s–90s • [2] Georgian sashes 1760s–70s",
+      "[4] 1921 Census opens 2022 • [1] Parish registers 1538 • [3] School Logbooks 1862 • [2] Named Census 1841",
+      "[4] Branch closures 1960s • [1] Market Cross 1618 • [3] Steam railways 1840s • [2] Canal aqueduct 1805",
+      "[4] WWII panels 1945+ • [1] Grave recording 1914 • [3] Local memorials 1919–22 • [2] CWGC Charter May 1917",
+      "[4] Decimal Day 1971 • [1] First Blue Plaques 1866 • [3] Listed Buildings Act 1947 • [2] National Trust 1895"
+    ],
+    "thinkingHeads": [
+      {
+        "headA": "1086 Domesday Royal Scribe",
+        "promptA": "Why are you writing down every village name, landowner, and watermill in Latin?",
+        "headB": "1885 Ordnance Survey Leveller",
+        "promptB": "Why are you chiseling a broad-arrow benchmark onto this stone church corner?"
+      },
+      {
+        "headA": "Tudor High Street Carpenter",
+        "promptA": "Why did you build the upper oak floor jutting out over the narrow street below?",
+        "headB": "1874 Victorian Post Office Engineer",
+        "promptB": "Why are you painting dark-green V.R. pillar boxes bright red this winter?"
+      },
+      {
+        "headA": "1881 Door-to-Door Census Enumerator",
+        "promptA": "What varied jobs and birthplaces have you copied along this terraced street tonight?",
+        "headB": "1876 Village Headteacher",
+        "promptB": "Why are half your wooden desks empty in your September School Logbook?"
+      },
+      {
+        "headA": "1795 Canal Narrowboat Steerer",
+        "promptA": "How do wooden locks and one towpath horse help you carry 30 tonnes of fragile china?",
+        "headB": "1860 Railway Stationmaster",
+        "promptB": "How has your new steam station sped up milk, fish, coal, and mail for our town?"
+      },
+      {
+        "headA": "Sir Fabian Ware (May 1917)",
+        "promptA": "Why must generals and teenage privates share the exact same white Portland headstone?",
+        "headB": "Primary Pupil Tracing a Local Name",
+        "promptB": "How did CWGC records and the 1911 Census link one carved name to a house nearby?"
+      },
+      {
+        "headA": "Octavia Hill (January 1895)",
+        "promptA": "Why do town families need protected historic buildings and green open-air sitting rooms?",
+        "headB": "Older Resident in an Oral History Interview",
+        "promptB": "What do you remember about corner grocers and spending shillings before 1971?"
+      }
+    ],
+    "sourceStarters": [
+      "Looking closely at Source A, comparing this 1880s Ordnance Survey town plan with a modern map reveals...",
+      "Looking closely at Source A, the cast-iron letters 'V.R.' stamped onto this hexagonal red pillar box prove...",
+      "Looking closely at Source A, the occupation and birthplace columns on this 1881 Census sheet show...",
+      "Looking closely at Source A, the carved mile distances and stone water trough on this milestone show...",
+      "Looking closely at Source A, the twenty-one local names carved onto Henham’s church memorial reveal...",
+      "Looking closely at Source A, Octavia Hill’s ceramic Blue Plaque celebrates her lasting impact because..."
+    ],
+    "sourceClueNotes": [
+      "Map Clue: Dotted crosses marked '(Site of)' show vanished medieval churches, while 'B.M.' marks carved street benchmarks!",
+      "Cypher Clue: Postboxes keep their original monarch’s initials—V.R. (Victoria), G.R. (George), E.IIR (Elizabeth II), or C.IIIR (Charles III)!",
+      "Archive Clue: Linking the ten-year Census with 1538 Parish Registers and 1862 School Logbooks traces whole families across centuries!",
+      "Transport Clue: Turnpike milestones served stagecoaches, while smooth canals let one horse pull thirty tonnes of heavy coal or china!",
+      "Equality Clue: Both CWGC white Portland stone headstones and bronze Memorial Plaques honoured officers and privates as equals!",
+      "Conservation Clue: Pairing spoken oral history interviews with dated street photos gives both human warmth and exact dates!"
+    ],
+    "milestonesSpine": [
+      {
+        "date": "AD 43–900",
+        "title": "Settler Place-Name Roots",
+        "desc": "Celtic rivers, Roman castra (-chester), Saxon farms (-ton/-ham), and Viking villages (-by) name Britain."
+      },
+      {
+        "date": "AD 1086",
+        "title": "The Domesday Book",
+        "desc": "King William I’s survey records earliest written spellings and watermills for 13,000+ places."
+      },
+      {
+        "date": "AD 1538",
+        "title": "Parish Registers & Timber",
+        "desc": "Churches record baptisms, weddings, and burials while Tudor oak jetties overhang market lanes."
+      },
+      {
+        "date": "1760s–1805",
+        "title": "Turnpikes, Mills & Canals",
+        "desc": "Stone milestones guide coaches while waterwheels and narrowboat canal locks power heavy trade."
+      },
+      {
+        "date": "AD 1791",
+        "title": "Ordnance Survey Founded",
+        "desc": "Following William Roy’s 1784 baseline, surveyors map every parish and carve stone benchmarks."
+      },
+      {
+        "date": "1801 & 1841",
+        "title": "Ten-Year UK Census",
+        "desc": "Door-to-door enumerators record household names, ages, birthplaces, and Victorian jobs."
+      },
+      {
+        "date": "1840s–1874",
+        "title": "Steam Stations & Red Boxes",
+        "desc": "Railways bring red brick and stations; V.R. pillar postboxes turn bright red in 1874."
+      },
+      {
+        "date": "AD 1862",
+        "title": "Victorian School Logbooks",
+        "desc": "Headteachers keep weekly diaries of attendance, harvests, snowdrifts, and slate lessons."
+      },
+      {
+        "date": "1895 & 1917",
+        "title": "National Trust & CWGC",
+        "desc": "Octavia Hill co-founds the National Trust (1895); Fabian Ware establishes equal war graves (1917)."
+      },
+      {
+        "date": "1947 & 1971+",
+        "title": "Listed Laws & Oral History",
+        "desc": "1947 Listed Buildings, 1971 Decimal Day memories, Blue Plaques, and community Heritage Trails."
+      }
+    ],
+    "finalePairs": [
+      {
+        "left": "-chester, -ton, -by & 1880s OS Maps",
+        "right": "Map & Name Clues"
+      },
+      {
+        "left": "Tudor Jetties, Sash & V.R. Postboxes",
+        "right": "High Street Dates"
+      },
+      {
+        "left": "1881 Census & 1862 School Logbooks",
+        "right": "Local Archive Lives"
+      },
+      {
+        "left": "1917 CWGC, Oral History & Listing",
+        "right": "Memory & Heritage"
+      }
+    ],
+    "finalePromptClues": "place-names and 1880s OS maps, High Street buildings and postbox cyphers, Censuses and School Logbooks, canals and railways, local War Memorials, and oral history",
+    "bigDiscussion1": "<strong>1. Doorstep Detective Power:</strong> Why can these exact same six historical clues unlock secret stories in a giant city, a coastal port, a suburb, or a tiny country village anywhere in the UK?",
+    "bigDiscussion2": "<strong>2. Future Guardians:</strong> Which building, street sign, green space, or living neighbour’s memory in YOUR community should be saved for children a hundred years from today?"
+  },
 ];
 
 // ============================================================================

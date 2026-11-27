@@ -50,6 +50,10 @@ const ARCADE_COURSE_DIRECTORY = [
   { id: 'ks2_ancient_greece', title: 'Ancient Greece', group: 'KS2' },
   { id: 'ks2_early_islamic_baghdad', title: 'Early Islamic Baghdad', group: 'KS2' },
   { id: 'ks2_maya_civilisation', title: 'The Ancient Maya', group: 'KS2' },
+  { id: 'ks2_kingdom_of_benin', title: 'The Kingdom of Benin', group: 'KS2' },
+  { id: 'ks2_victorian_britain', title: 'Victorian Britain (1837–1901)', group: 'KS2' },
+  { id: 'ks2_crime_and_punishment', title: 'Crime & Punishment Through Time', group: 'KS2' },
+  { id: 'ks2_local_history_detective', title: 'History on Our Doorstep (Local Study)', group: 'KS2' },
 ];
 
 const COURSE_LOOKUP = new Map(ARCADE_COURSE_DIRECTORY.map((c) => [c.id, c]));
@@ -195,6 +199,45 @@ const VISUAL_SHOWCASES = [
     desc: 'Pack an official 1939 evacuee suitcase, trace Operation Pied Piper rail routes across the UK, welcome a Kindertransport friend from Prague, inspect Blitz shelters and 1941 rations, and explore the Imperial War Museums archive.',
     mount: lazyShowcaseMount(() =>
       import('./interactive_labs/ww2_homefront.js').then((m) => m.mountWw2HomeFront),
+    ),
+  },
+  {
+    id: 'ks2_must_farm_lab',
+    emoji: '🔥',
+    title: 'Embers Over the Fen: The Must Farm Bronze Age Detective Lab (c. 850 BC)',
+    subtitle: 'KS2 Archaeology Storybook Lab Across Stilted Roundhouses, River Silt & Trade Clues',
+    accent: '#b45309',
+    featuredUnits: ['ks2_stone_to_iron_age'],
+    badge: 'KS2 60 FPS ARCHAEOLOGY LAB',
+    desc: 'Step inside a Bronze Age roundhouse on oak stilts, test why waterlogged river mud froze wooden bowls and porridge in time, excavate six real trench finds including Britain’s oldest complete wheel, and sort overseas trade clues!',
+    mount: lazyShowcaseMount(() =>
+      import('./interactive_labs/ks2_must_farm_lab.js').then((m) => m.mountKs2MustFarmLab),
+    ),
+  },
+  {
+    id: 'ks2_vindolanda_lab',
+    emoji: '🪶',
+    title: 'Ink on the Frontier: The Vindolanda Roman Postbag Lab (c. AD 100)',
+    subtitle: 'KS2 Frontier Storybook Lab Decoding Claudia Severa’s Tablet & Hadrian’s Wall Lives',
+    accent: '#b91c1c',
+    featuredUnits: ['ks2_romans'],
+    badge: 'KS2 60 FPS FRONTIER LAB',
+    desc: 'Inspect a northern Roman frontier fort, decode Claudia Severa’s real birch-wood birthday invitation, pack a chilly soldier’s parcel of woollen socks and sandals, and meet families from Syria, North Africa, and Europe!',
+    mount: lazyShowcaseMount(() =>
+      import('./interactive_labs/ks2_vindolanda_lab.js').then((m) => m.mountKs2VindolandaLab),
+    ),
+  },
+  {
+    id: 'ks2_tutankhamun_lab',
+    emoji: '🕯️',
+    title: 'Candlelight in the Valley: Opening Tomb KV62 (November 1922)',
+    subtitle: 'KS2 Egyptology Storybook Lab With 60 FPS Candle Peephole & Ten-Year Conservation',
+    accent: '#ca8a04',
+    featuredUnits: ['ks2_ancient_egypt'],
+    badge: 'KS2 60 FPS EGYPTOLOGY LAB',
+    desc: 'Uncover sixteen buried limestone steps with Hussein Abdel Rassoul and Howard Carter, pan a flickering candle across the dark Antechamber, conserve fragile 3,300-year-old treasures, and peel back four golden shrines!',
+    mount: lazyShowcaseMount(() =>
+      import('./interactive_labs/ks2_tutankhamun_lab.js').then((m) => m.mountKs2TutankhamunLab),
     ),
   },
 ];

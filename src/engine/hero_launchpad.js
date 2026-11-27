@@ -541,6 +541,15 @@ export function renderStickyUnitResourceBar(unitId, unitData) {
               <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem; opacity: 0.75;"></i>
             </button>
             ${
+              cfg.hasPrescribedSourcesVault || String(unitId).startsWith('ocr_')
+                ? `
+              <button type="button" onclick="window.openOcrPrescribedSourcesVault && window.openOcrPrescribedSourcesVault('${unitId}')" style="background: #7c2d12; color: #ffedd5; border: 1px solid #f97316; border-radius: 7px; padding: 6px 12px; font-size: 0.78rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;" title="Open Prescribed Ancient Sources, Coins &amp; Authors Time-Gap Vault">
+                <i class="fa-solid fa-scroll" style="color: #fdba74;"></i>
+                <span>Sources &amp; Authors Vault</span>
+              </button>`
+                : ''
+            }
+            ${
               hasExamHub
                 ? `
               <button type="button" onclick="window.switchView && window.switchView('mock-exams', '${unitId}')" style="background: #1e293b; color: #c7d2fe; border: 1px solid #6366f1; border-radius: 7px; padding: 6px 12px; font-size: 0.78rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;" title="Open Paper Structure, Exam Questions, Grade 9 Answers, Spec Mind Map & Mock Papers">

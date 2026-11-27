@@ -1,0 +1,518 @@
+{
+  "lesson_1": {
+    "num": "01",
+    "slug": "ks2_crime_and_punishment_l01_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 1",
+    "datesBadge": "AD 43–410",
+    "topicLabel": "Enquiry 01: Roman Law, Twelve Tables and Bath Curse Tablets (AD 43–410)",
+    "title": "How did the Romans catch thieves and judge crimes without police?",
+    "spokenTitle": "How did the Romans catch thieves and judge crimes without police?",
+    "thumbUrl": "/units/ks2_crime_and_punishment/assets/roman_forum_basilica_law_court.jpg",
+    "bridges": [
+      "Unequal Ranks",
+      "Unseen Thieves",
+      "Roman Legacy"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Twelve Tables & Basilica Courts",
+        "date": "AD 43–200",
+        "img": "/units/ks2_crime_and_punishment/assets/crime_punishment_britain_map_ks2.png",
+        "mode": "contain-light",
+        "pos": "center 45%",
+        "stat": "Britain’s First Written Law Codes (AD 43)",
+        "connective": "How did the Romans catch thieves and judge crimes without police?",
+        "html": "After <strong>AD 43</strong>, Rome brought written rules rooted in the <strong>Twelve Tables</strong>. Town <strong>magistrates</strong> weighed witness proof inside grand stone basilicas.",
+        "paired_prose_hash": "d7b3b3eca5",
+        "spoken": "How did the Romans catch thieves and judge crimes without police? <short pause> After AD 43, Rome brought written rules rooted in the Twelve Tables. Town magistrates weighed witness proof inside grand stone basilicas."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "No Police & Unequal Ranks",
+        "date": "AD 43–300",
+        "img": "/units/ks2_crime_and_punishment/assets/roman_centurion_tombstone_britain.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Citizens Fined vs Enslaved Workers Whipped",
+        "connective": "Yet Roman soldiers did not investigate everyday stolen property.",
+        "html": "Victims had to catch thieves themselves while <strong>vigiles</strong> watched for fires. Wealthy <strong>Roman citizens</strong> paid fines, whereas <strong>enslaved people</strong> faced harsh whipping.",
+        "paired_prose_hash": "9344262a43",
+        "spoken": "Yet Roman soldiers did not investigate everyday stolen property. <short pause> Victims had to catch thieves themselves while vigiles watched for fires. Wealthy Roman citizens paid fines, whereas enslaved people faced harsh whipping."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Bath’s Lead Curse Tablets",
+        "date": "c. AD 100–400",
+        "img": "/units/ks2_crime_and_punishment/assets/aquae_sulis_great_roman_bath.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "130+ Scratched Lead Pleas at Aquae Sulis",
+        "connective": "When thieves escaped unseen, angry bathers asked a goddess for help.",
+        "html": "At steaming <strong>Aquae Sulis (Bath)</strong>, robbed bathers scratched Latin pleas onto folded <strong>lead curse tablets</strong> begging <strong>Sulis Minerva</strong> to punish cloak thieves.",
+        "paired_prose_hash": "b2089323aa",
+        "spoken": "When thieves escaped unseen, angry bathers asked a goddess for help. <short pause> At steaming Aquae Sulis (Bath), robbed bathers scratched Latin pleas onto folded lead curse tablets begging Sulis Minerva to punish cloak thieves."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Written Rules Without Detectives",
+        "date": "AD 43–410",
+        "img": "/units/ks2_crime_and_punishment/assets/roman_forum_basilica_law_court.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Stone Courts Above, Sacred Curses Below",
+        "connective": "Rome proved written laws mattered, even though rank and luck shaped justice.",
+        "html": "Roman Britain combined clear <strong>written courts</strong> and honest market scales with unequal <strong>slave punishments</strong> and supernatural <strong>Bath curses</strong>.",
+        "spoken": "Rome proved written laws mattered, even though rank and luck shaped justice. <short pause> Roman Britain combined clear written courts and honest market scales with unequal slave punishments and supernatural Bath curses."
+      }
+    ],
+    "takeaway": "Roman Britain introduced written laws and basilica magistrates, yet without police detectives victims caught thieves themselves or dropped lead curse tablets into Bath’s spring.",
+    "vocab": [
+      [
+        "1. Twelve Tables",
+        "Rome’s ancient written law code followed across the empire."
+      ],
+      [
+        "2. Magistrate",
+        "Official Roman town judge sitting inside the stone basilica."
+      ],
+      [
+        "3. Vigiles",
+        "Roman night-watchmen who spotted fires and street brawls."
+      ]
+    ],
+    "provenanceNote": "Roman Baths Museum (Bath), British Library, Ashmolean Museum (Oxford), Wellcome Collection, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Roman Britain introduced written laws and basilica magistrates, yet without police detectives victims caught thieves themselves or dropped lead curse tablets into Bath’s spring."
+  },
+  "lesson_2": {
+    "num": "02",
+    "slug": "ks2_crime_and_punishment_l02_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 2",
+    "datesBadge": "AD 410–1066",
+    "topicLabel": "Enquiry 02: Anglo-Saxon Tithings, Wergild and Trial by Ordeal (AD 410–1066)",
+    "title": "Were Anglo-Saxon laws fair community rules or painful superstitions?",
+    "spokenTitle": "Were Anglo-Saxon laws fair community rules or painful superstitions?",
+    "thumbUrl": "/units/ks2_crime_and_punishment/assets/banner_l2_winchester_anglo_saxon.jpg",
+    "bridges": [
+      "Silver Wergild",
+      "Church Ordeals",
+      "Village Peace"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Tithings & The Hue and Cry",
+        "date": "AD 410–900",
+        "img": "/units/ks2_crime_and_punishment/assets/west_stow_anglo_saxon_village.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "10 Neighbours Aged 12+ Kept Order",
+        "connective": "Were Anglo-Saxon laws fair community rules or painful superstitions?",
+        "html": "With zero police or prisons, every boy aged twelve joined a ten-person <strong>tithing</strong>. Shouting the <strong>Hue and Cry</strong> forced the whole village to chase thieves.",
+        "paired_prose_hash": "6de56efbe6",
+        "spoken": "Were Anglo-Saxon laws fair community rules or painful superstitions? <short pause> With zero police or prisons, every boy aged twelve joined a ten-person tithing. Shouting the Hue and Cry forced the whole village to chase thieves."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "King Alfred & Silver Wergild",
+        "date": "c. AD 600–900",
+        "img": "/units/ks2_crime_and_punishment/assets/anglo_saxon_silver_pennies_hoard.jpg",
+        "mode": "contain-light",
+        "pos": "center 45%",
+        "stat": "1,200s Thane vs 200s Ceorl Farmer",
+        "connective": "To stop deadly revenge feuds, royal law codes priced every injury in silver.",
+        "html": "<strong>King Alfred’s</strong> written laws enforced silver <strong>wergild (\"person-price\")</strong> paid to injured families — stopping blood feuds even though nobles ranked higher.",
+        "paired_prose_hash": "fa434a9f43",
+        "spoken": "To stop deadly revenge feuds, royal law codes priced every injury in silver. <short pause> King Alfred’s written laws enforced silver wergild (\"person-price\") paid to injured families — stopping blood feuds even though nobles ranked higher."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Hundred Courts & Ordeals",
+        "date": "AD 600–1066",
+        "img": "/units/ks2_crime_and_punishment/assets/anglo_saxon_escomb_stone_church.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "3 Paces With Red-Hot Iron or Cold Water",
+        "connective": "When human witnesses could not agree, priests asked God to judge.",
+        "html": "If oaths at the <strong>Hundred Court</strong> deadlocked, suspects faced <strong>Trial by Ordeal</strong> in church — checking bandaged burns three days later.",
+        "paired_prose_hash": "5f2be4953d",
+        "spoken": "When human witnesses could not agree, priests asked God to judge. <short pause> If oaths at the Hundred Court deadlocked, suspects faced Trial by Ordeal in church — checking bandaged burns three days later."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Community Peace Mixed With Faith",
+        "date": "AD 410–1066",
+        "img": "/units/ks2_crime_and_punishment/assets/banner_l2_winchester_anglo_saxon.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Neighbours Policed Daily Village Life",
+        "connective": "Teamwork and compensation kept most villages calm without prisons.",
+        "html": "Anglo-Saxon justice blended smart <strong>neighbour tithings</strong> and peacemaking <strong>silver wergild</strong> with superstitious last-resort <strong>church ordeals</strong>.",
+        "spoken": "Teamwork and compensation kept most villages calm without prisons. <short pause> Anglo-Saxon justice blended smart neighbour tithings and peacemaking silver wergild with superstitious last-resort church ordeals."
+      }
+    ],
+    "takeaway": "Anglo-Saxon villages kept peace without police using ten-person tithings, Hue and Cry chases, and silver wergild fines, turning to church Trials by Ordeal only when witnesses disagreed.",
+    "vocab": [
+      [
+        "1. Tithing",
+        "Ten neighbours aged 12+ responsible for each other’s behaviour."
+      ],
+      [
+        "2. Hue and Cry",
+        "Loud village alarm forcing everyone to chase a runaway thief."
+      ],
+      [
+        "3. Wergild",
+        "Silver \"person-price\" paid to victims’ families to stop feuds."
+      ]
+    ],
+    "provenanceNote": "Roman Baths Museum (Bath), British Library, Ashmolean Museum (Oxford), Wellcome Collection, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Anglo-Saxon villages kept peace without police using ten-person tithings, Hue and Cry chases, and silver wergild fines, turning to church Trials by Ordeal only when witnesses disagreed."
+  },
+  "lesson_3": {
+    "num": "03",
+    "slug": "ks2_crime_and_punishment_l03_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 3",
+    "datesBadge": "1066–1485",
+    "topicLabel": "Enquiry 03: Norman Forest Laws, Sanctuary and Royal Courts (1066–1485)",
+    "title": "How did Norman kings and medieval royal judges change English justice after 1066?",
+    "spokenTitle": "How did Norman kings and medieval royal judges change English justice after 1066?",
+    "thumbUrl": "/units/ks2_crime_and_punishment/assets/banner_l3_westminster_hall_medieval.jpg",
+    "bridges": [
+      "Juries & 1215",
+      "Sanctuary & Stocks",
+      "Common Law"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Norman Forest Laws",
+        "date": "1066–1150",
+        "img": "/units/ks2_crime_and_punishment/assets/new_forest_royal_deer_oaks.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Poaching Royal Deer Harshly Punished",
+        "connective": "How did Norman kings and medieval royal judges change English justice after 1066?",
+        "html": "After <strong>1066</strong>, William I kept tithings yet took court fines for the Crown. Strict <strong>Forest Laws</strong> made peasant deer hunting a crime called <strong>poaching</strong>.",
+        "paired_prose_hash": "fdd13684df",
+        "spoken": "How did Norman kings and medieval royal judges change English justice after 1066? <short pause> After 1066, William I kept tithings yet took court fines for the Crown. Strict Forest Laws made peasant deer hunting a crime called poaching."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Henry II’s Juries & 1215",
+        "date": "1154–1215",
+        "img": "/units/ks2_crime_and_punishment/assets/whaddon_folio_kings_bench_court.jpg",
+        "mode": "contain",
+        "pos": "center 45%",
+        "stat": "12-Person Juries, Common Law & Magna Carta",
+        "connective": "Royal reforms soon replaced superstitious ordeals with evidence.",
+        "html": "<strong>Henry II’s</strong> travelling judges built one <strong>Common Law</strong> with <strong>twelve-person juries</strong>. In <strong>1215</strong>, Magna Carta and the Pope’s ordeal ban cemented jury trials.",
+        "paired_prose_hash": "920476a98f",
+        "spoken": "Royal reforms soon replaced superstitious ordeals with evidence. <short pause> Henry II’s travelling judges built one Common Law with twelve-person juries. In 1215, Magna Carta and the Pope’s ordeal ban cemented jury trials."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Sanctuary, Stocks & Pillories",
+        "date": "1100–1485",
+        "img": "/units/ks2_crime_and_punishment/assets/english_village_wooden_stocks.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "37–40 Days Sanctuary & Market Shaming",
+        "connective": "Cathedrals and market squares also shaped medieval daily justice.",
+        "html": "Fugitives striking <strong>Durham’s Sanctuary Knocker</strong> gained temporary Church safety, while towns shamed dishonest traders in wooden <strong>stocks and pillories</strong>.",
+        "paired_prose_hash": "280fc13563",
+        "spoken": "Cathedrals and market squares also shaped medieval daily justice. <short pause> Fugitives striking Durham’s Sanctuary Knocker gained temporary Church safety, while towns shamed dishonest traders in wooden stocks and pillories."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Birth of the English Jury Trial",
+        "date": "1066–1485",
+        "img": "/units/ks2_crime_and_punishment/assets/banner_l3_westminster_hall_medieval.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Common Law & Magna Carta Endure Today",
+        "connective": "Out of harsh Norman control grew lasting fair-trial protections.",
+        "html": "Though <strong>Forest Laws</strong> were harsh, medieval England replaced hot-iron ordeals with <strong>Common Law judges</strong>, <strong>twelve-person juries</strong>, and <strong>Magna Carta</strong>.",
+        "spoken": "Out of harsh Norman control grew lasting fair-trial protections. <short pause> Though Forest Laws were harsh, medieval England replaced hot-iron ordeals with Common Law judges, twelve-person juries, and Magna Carta."
+      }
+    ],
+    "takeaway": "Norman kings introduced harsh Forest Laws, yet medieval England also created lasting justice through Henry II’s Common Law, twelve-person juries, and 1215 Magna Carta.",
+    "vocab": [
+      [
+        "1. Forest Laws",
+        "Norman laws protecting royal hunting woods from villagers."
+      ],
+      [
+        "2. Poaching",
+        "Secretly hunting royal or lordly deer and rabbits for food."
+      ],
+      [
+        "3. Common Law",
+        "Shared English law applied by travelling judges and juries."
+      ]
+    ],
+    "provenanceNote": "Roman Baths Museum (Bath), British Library, Ashmolean Museum (Oxford), Wellcome Collection, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Norman kings introduced harsh Forest Laws, yet medieval England also created lasting justice through Henry II’s Common Law, twelve-person juries, and 1215 Magna Carta."
+  },
+  "lesson_4": {
+    "num": "04",
+    "slug": "ks2_crime_and_punishment_l04_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 4",
+    "datesBadge": "1485–1700",
+    "topicLabel": "Enquiry 04: Tudor Vagrants, High Treason and Witchcraft Trials (1485–1700)",
+    "title": "Why did Tudor and Stuart rulers fear vagrants, plotters, and accused witches so fiercely?",
+    "spokenTitle": "Why did Tudor and Stuart rulers fear vagrants, plotters, and accused witches so fiercely?",
+    "thumbUrl": "/units/ks2_crime_and_punishment/assets/banner_l4_tower_of_london_thames.jpg",
+    "bridges": [
+      "1605 Treason",
+      "Witch Panics",
+      "Science Wins"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Tudor Vagrants & 1601 Poor Law",
+        "date": "1485–1603",
+        "img": "/units/ks2_crime_and_punishment/assets/tudor_timber_street_england.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Sick Locals Helped vs Beggars Whipped",
+        "connective": "Why did Tudor and Stuart rulers fear vagrants, plotters, and accused witches so fiercely?",
+        "html": "Rising poverty put jobless <strong>vagrants</strong> on Tudor roads. Elizabeth I’s <strong>1601 Poor Law</strong> helped elderly locals yet whipped healthy <strong>\"sturdy beggars\"</strong> behind carts.",
+        "paired_prose_hash": "7be26aadce",
+        "spoken": "Why did Tudor and Stuart rulers fear vagrants, plotters, and accused witches so fiercely? <short pause> Rising poverty put jobless vagrants on Tudor roads. Elizabeth I’s 1601 Poor Law helped elderly locals yet whipped healthy \"sturdy beggars\" behind carts."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "1605 Gunpowder High Treason",
+        "date": "1605",
+        "img": "/units/ks2_crime_and_punishment/assets/tower_of_london_traitors_gate.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "36 Barrels & Guy Fawkes’s Dark Lantern",
+        "connective": "Religious quarrels also made monarchs dread plots against the Crown.",
+        "html": "Tipped off by the <strong>Monteagle Letter</strong> on 4–5 November <strong>1605</strong>, guards caught <strong>Guy Fawkes</strong> beside 36 gunpowder barrels and punished High Treason fiercely.",
+        "paired_prose_hash": "df28b6b840",
+        "spoken": "Religious quarrels also made monarchs dread plots against the Crown. <short pause> Tipped off by the Monteagle Letter on 4–5 November 1605, guards caught Guy Fawkes beside 36 gunpowder barrels and punished High Treason fiercely."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Witch Trials Ended by Science",
+        "date": "1645–1736",
+        "img": "/units/ks2_crime_and_punishment/assets/medieval_tudor_ducking_stool.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Hopkins (1645–47) → 1660 Royal Society",
+        "connective": "Wartime superstition peaked in 1645 before science changed minds.",
+        "html": "Civil War chaos let <strong>Matthew Hopkins</strong> accuse East Anglian women, until post-<strong>1660 science</strong>, strict judges, and the <strong>1736 Act</strong> ended witch trials.",
+        "paired_prose_hash": "2d78d12f1c",
+        "spoken": "Wartime superstition peaked in 1645 before science changed minds. <short pause> Civil War chaos let Matthew Hopkins accuse East Anglian women, until post-1660 science, strict judges, and the 1736 Act ended witch trials."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "From Superstition Toward Reason",
+        "date": "1485–1736",
+        "img": "/units/ks2_crime_and_punishment/assets/banner_l4_tower_of_london_thames.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Real Courtroom Proof Defeated Magic Claims",
+        "connective": "Early modern fear brought harsh deterrence, yet science ended witch hunts.",
+        "html": "Without police, rulers whipped <strong>vagabonds</strong> and punished <strong>1605 treason</strong>, while growing <strong>scientific reason</strong> banished witchcraft trials forever.",
+        "spoken": "Early modern fear brought harsh deterrence, yet science ended witch hunts. <short pause> Without police, rulers whipped vagabonds and punished 1605 treason, while growing scientific reason banished witchcraft trials forever."
+      }
+    ],
+    "takeaway": "Fear of poverty, religious treason, and Civil War drove harsh Tudor-Stuart vagrancy, 1605 treason, and witch laws—until peace and 1660s science ended witch trials.",
+    "vocab": [
+      [
+        "1. Vagrant",
+        "Homeless person wandering Tudor roads looking for work or food."
+      ],
+      [
+        "2. Poor Law",
+        "1601 Elizabethan law separating sick locals from whipped beggars."
+      ],
+      [
+        "3. High Treason",
+        "Plotting against the monarch or Parliament—the gravest crime."
+      ]
+    ],
+    "provenanceNote": "Roman Baths Museum (Bath), British Library, Ashmolean Museum (Oxford), Wellcome Collection, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Fear of poverty, religious treason, and Civil War drove harsh Tudor-Stuart vagrancy, 1605 treason, and witch laws—until peace and 1660s science ended witch trials."
+  },
+  "lesson_5": {
+    "num": "05",
+    "slug": "ks2_crime_and_punishment_l05_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 5",
+    "datesBadge": "1700–1820",
+    "topicLabel": "Enquiry 05: Smugglers, Highwaymen and The Bloody Code (1700–1820)",
+    "title": "Why did Britain pass over 200 death-penalty laws—and why did juries stop using them?",
+    "spokenTitle": "Why did Britain pass over 200 death-penalty laws—and why did juries stop using them?",
+    "thumbUrl": "/units/ks2_crime_and_punishment/assets/banner_l5_old_bailey_newgate_georgian.jpg",
+    "bridges": [
+      "220 Death Laws",
+      "Hulks & Fry",
+      "Reform Begins"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Smugglers & Highwaymen",
+        "date": "1700–1800",
+        "img": "/units/ks2_crime_and_punishment/assets/cornwall_smugglers_cove_coast.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "High Tea Taxes & Lonely Turnpike Roads",
+        "connective": "Why did Britain pass over 200 death-penalty laws—and why did juries stop using them?",
+        "html": "Heavy <strong>import taxes</strong> fuelled Cornish <strong>smuggling</strong>, while unlit roads and flintlock pistols helped mounted <strong>highwaymen</strong> like Dick Turpin.",
+        "paired_prose_hash": "55d3c1b1bb",
+        "spoken": "Why did Britain pass over 200 death-penalty laws—and why did juries stop using them? <short pause> Heavy import taxes fuelled Cornish smuggling, while unlit roads and flintlock pistols helped mounted highwaymen like Dick Turpin."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "The 220-Crime Bloody Code",
+        "date": "1688–1820",
+        "img": "/units/ks2_crime_and_punishment/assets/eighteenth_century_mail_stagecoach.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Over 220 Hangings — Yet Juries Rebelled!",
+        "connective": "Refusing to fund police, Georgian MPs relied on gallows terror.",
+        "html": "By 1810, stealing <strong>five shillings</strong> meant hanging under the <strong>Bloody Code</strong> — until sympathetic <strong>twelve-person juries</strong> refused to convict petty thieves.",
+        "paired_prose_hash": "0bcfac1d14",
+        "spoken": "Refusing to fund police, Georgian MPs relied on gallows terror. <short pause> By 1810, stealing five shillings meant hanging under the Bloody Code — until sympathetic twelve-person juries refused to convict petty thieves."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "Australia & Elizabeth Fry",
+        "date": "1787–1868",
+        "img": "/units/ks2_crime_and_punishment/assets/british_convict_prison_hulk_ship.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "160,000+ Transported & Newgate School (1817)",
+        "connective": "New punishments and humane prison reformers soon reshaped justice.",
+        "html": "Britain shipped convicts via <strong>transportation to Australia</strong> (1787–1868), while <strong>Elizabeth Fry</strong> proved <strong>rehabilitation</strong> worked inside Newgate Prison.",
+        "paired_prose_hash": "24d93d1bba",
+        "spoken": "New punishments and humane prison reformers soon reshaped justice. <short pause> Britain shipped convicts via transportation to Australia (1787–1868), while Elizabeth Fry proved rehabilitation worked inside Newgate Prison."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Harsh Gallows Deterrence Failed",
+        "date": "1700–1823",
+        "img": "/units/ks2_crime_and_punishment/assets/banner_l5_old_bailey_newgate_georgian.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Merciful Juries & Reformers Forced Change",
+        "connective": "Cruel laws collapsed when ordinary jurors and reformers demanded fairness.",
+        "html": "Reluctant <strong>English juries</strong>, Australian <strong>transportation</strong>, and <strong>Elizabeth Fry’s schooling</strong> paved the way for Peel’s 1820s reforms.",
+        "spoken": "Cruel laws collapsed when ordinary jurors and reformers demanded fairness. <short pause> Reluctant English juries, Australian transportation, and Elizabeth Fry’s schooling paved the way for Peel’s 1820s reforms."
+      }
+    ],
+    "takeaway": "High taxes and unlit roads sparked smuggling and highwaymen, yet Georgian MPs’ 220-crime Bloody Code failed when juries balked—leading to Australian transportation and Elizabeth Fry’s prison reforms.",
+    "vocab": [
+      [
+        "1. Smuggling",
+        "Landing untaxed tea, silk, and brandy on dark beaches at night."
+      ],
+      [
+        "2. Highwayman",
+        "Mounted pistol robber holding up coaches on lonely roads."
+      ],
+      [
+        "3. Bloody Code",
+        "Harsh Georgian laws punishing over 220 crimes by hanging."
+      ]
+    ],
+    "provenanceNote": "Roman Baths Museum (Bath), British Library, Ashmolean Museum (Oxford), Wellcome Collection, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> High taxes and unlit roads sparked smuggling and highwaymen, yet Georgian MPs’ 220-crime Bloody Code failed when juries balked—leading to Australian transportation and Elizabeth Fry’s prison reforms."
+  },
+  "lesson_6": {
+    "num": "06",
+    "slug": "ks2_crime_and_punishment_l06_visual_story_sheet",
+    "ktBadge": "KS2 • Enquiry 6",
+    "datesBadge": "1829–Present",
+    "topicLabel": "Enquiry 06: Peel’s 1829 Bobbies, Victorian Prisons and Forensics (1829–Present)",
+    "title": "How have uniformed police, prison reform, and forensic science transformed justice since 1829?",
+    "spokenTitle": "How have uniformed police, prison reform, and forensic science transformed justice since 1829?",
+    "thumbUrl": "/units/ks2_crime_and_punishment/assets/banner_l6_new_scotland_yard_victorian.jpg",
+    "bridges": [
+      "Prisons & 1965",
+      "Fingerprints & DNA",
+      "2,000-Year Arc"
+    ],
+    "cards": [
+      {
+        "badge": "Stage 1",
+        "heading": "Peel’s 1829 \"Bobbies\"",
+        "date": "1829–1856",
+        "img": "/units/ks2_crime_and_punishment/assets/victorian_peeler_top_hat_bobby.jpg",
+        "mode": "contain",
+        "pos": "center 45%",
+        "stat": "1,000 Unarmed Blue-Coated Officers",
+        "connective": "How have uniformed police, prison reform, and forensic science transformed justice since 1829?",
+        "html": "In <strong>1829</strong>, <strong>Sir Robert Peel</strong> founded London’s Metropolitan Police in blue coats with wooden truncheons — preventing crime by <strong>public consent</strong>.",
+        "paired_prose_hash": "67c6b67ca0",
+        "spoken": "How have uniformed police, prison reform, and forensic science transformed justice since 1829? <short pause> In 1829, Sir Robert Peel founded London’s Metropolitan Police in blue coats with wooden truncheons — preventing crime by public consent."
+      },
+      {
+        "badge": "Stage 2",
+        "heading": "Pentonville to Ending Hanging",
+        "date": "1842–1965",
+        "img": "/units/ks2_crime_and_punishment/assets/pentonville_prison_interior_1842.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "1842 Separate System → 1965 Abolition",
+        "connective": "Prisons replaced transportation and eventually ended executions.",
+        "html": "Victorian <strong>Pentonville (1842)</strong> used solitary cells and treadwheels. Later Britain abolished murder executions in <strong>1965</strong> to focus on <strong>rehabilitation</strong>.",
+        "paired_prose_hash": "0bb03dfe7a",
+        "spoken": "Prisons replaced transportation and eventually ended executions. <short pause> Victorian Pentonville (1842) used solitary cells and treadwheels. Later Britain abolished murder executions in 1965 to focus on rehabilitation."
+      },
+      {
+        "badge": "Stage 3",
+        "heading": "1901 Fingerprints & 1984 DNA",
+        "date": "1901–Present",
+        "img": "/units/ks2_crime_and_punishment/assets/fingerprint_whorl_forensic_card.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Scotland Yard (1901) & Leicester DNA (1984)",
+        "connective": "Forensic science replaced guesswork with microscopic proof.",
+        "html": "<strong>1901 fingerprints</strong>, 999 calls, CCTV, and <strong>Sir Alec Jeffreys’s 1984 DNA profiling</strong> catch offenders, clear the innocent, and fight <strong>cyber-crime</strong>.",
+        "paired_prose_hash": "e5fa1be973",
+        "spoken": "Forensic science replaced guesswork with microscopic proof. <short pause> 1901 fingerprints, 999 calls, CCTV, and Sir Alec Jeffreys’s 1984 DNA profiling catch offenders, clear the innocent, and fight cyber-crime."
+      },
+      {
+        "badge": "⚡ Outcome",
+        "isOutcome": true,
+        "heading": "Science, Prevention & Fair Rights",
+        "date": "AD 43–Present",
+        "img": "/units/ks2_crime_and_punishment/assets/banner_l6_new_scotland_yard_victorian.jpg",
+        "mode": "landscape",
+        "pos": "center 45%",
+        "stat": "Juries + Unarmed Police + DNA Forensics",
+        "connective": "Two thousand years combined medieval jury rights with modern science.",
+        "html": "Modern Britain pairs <strong>twelve-person juries</strong> and <strong>unarmed policing</strong> with <strong>rehabilitation</strong> and <strong>DNA forensics</strong>.",
+        "spoken": "Two thousand years combined medieval jury rights with modern science. <short pause> Modern Britain pairs twelve-person juries and unarmed policing with rehabilitation and DNA forensics."
+      }
+    ],
+    "takeaway": "Since 1829, Peel’s unarmed Bobbies, prison reform ending hanging in 1965, 1901 fingerprints, and 1984 Leicester DNA profiling have transformed British justice.",
+    "vocab": [
+      [
+        "1. Peelers",
+        "1829 uniformed London police founded by Sir Robert Peel."
+      ],
+      [
+        "2. Policing by Consent",
+        "Policing peacefully with citizens’ trust rather than army guns."
+      ],
+      [
+        "3. Separate System",
+        "Victorian Pentonville plan keeping prisoners silent and alone."
+      ]
+    ],
+    "provenanceNote": "Roman Baths Museum (Bath), British Library, Ashmolean Museum (Oxford), Wellcome Collection, Metropolitan Museum of Art & Wikimedia Commons (Zero AI Imagery)",
+    "spokenTakeaway": "Here is the big story in one sentence. <short pause> Since 1829, Peel’s unarmed Bobbies, prison reform ending hanging in 1965, 1901 fingerprints, and 1984 Leicester DNA profiling have transformed British justice."
+  }
+}

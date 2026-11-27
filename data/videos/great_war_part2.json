@@ -1,0 +1,19 @@
+{
+  "unit_id": "great_war_part2",
+  "unit_videos": [],
+  "lesson_videos": {
+    "lesson_2_trenches_haig": [
+      {
+        "type": "era",
+        "url": "https://era.org.uk/streaming-service-resource/what-happened-at-the-somme-what-happened-at/",
+        "title": "BBC / ERA: What Happened at the Somme (Jordan Dunbar)",
+        "channel": "BBC / ERA",
+        "duration": "29 mins",
+        "pathway": "Documentary",
+        "moment": "Full Documentary",
+        "block_index": 4,
+        "teacher_guidance": "BBC 29-minute documentary marking the 110th anniversary of the Battle of the Somme, exploring personal family stories, archival records, photographs, medals, and modern battlefield footage in northern France."
+      }
+    ]
+  }
+}

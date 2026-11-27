@@ -1,0 +1,567 @@
+{
+  "unitId": "ocr_cleopatra",
+  "optionCode": "J198/02 Sec C",
+  "paperLabel": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+  "courseTitle": "Cleopatra: Rome and Egypt, 69–30 BC",
+  "examDateBoundary": "69–30 BC",
+  "disclaimer": "Aligned to Cambridge OCR GCSE (9–1) Ancient History (J198). Independent educational resource by The History Revision Hub — not endorsed by OCR.",
+  "rescueTop10": [
+    {
+      "year": "69–51 BC",
+      "event": "Upbringing in Alexandria & Ptolemy XII Auletes’ Debt",
+      "significance": "Ptolemaic dynastic strife, Gabinius’ 55 BC Roman restoration of Auletes, and Cleopatra’s nine-language education."
+    },
+    {
+      "year": "51–48 BC",
+      "event": "Joint Accession, Civil War with Ptolemy XIII & Pompey’s Murder",
+      "significance": "Driven out by Pothinus/Achillas; Pompey murdered on Pelusium beach (48 BC)."
+    },
+    {
+      "year": "48–47 BC",
+      "event": "Alexandrian War, Julius Caesar & Birth of Caesarion",
+      "significance": "Cleopatra smuggled to Caesar (Plutarch Caesar 48–49); Ptolemy XIII drowns; Nile cruise and birth of Ptolemy XV Caesarion."
+    },
+    {
+      "year": "46–44 BC",
+      "event": "Cleopatra in Rome & Ides of March",
+      "significance": "Stays at Caesar’s Tiber villa, golden Venus Genetrix statue (Suetonius/Cicero), returns to Alexandria after Caesar’s assassination."
+    },
+    {
+      "year": "41 BC",
+      "event": "Golden Barge Meeting with Mark Antony at Tarsus",
+      "significance": "Sails up River Cydnus dressed as Aphrodite/Venus meeting Dionysus (Plutarch Antony 25–27), securing removal of Arsinoe IV."
+    },
+    {
+      "year": "37–36 BC",
+      "event": "Antioch Territorial Grants & Parthian Campaign",
+      "significance": "Antony restores Cyprus, Cilicia, and Phoenician cedar coasts to Egypt to fund warships and grain."
+    },
+    {
+      "year": "34 BC",
+      "event": "The Donations of Alexandria",
+      "significance": "Caesarion named King of Kings and joint ruler with Cleopatra; Alexander Helios, Cleopatra Selene, and Ptolemy Philadelphus given eastern realms."
+    },
+    {
+      "year": "32 BC",
+      "event": "Divorce of Octavia, Seized Will & Senate War on Cleopatra",
+      "significance": "Octavian reads Antony’s will in Rome and declares war on foreign Queen Cleopatra rather than Roman citizens."
+    },
+    {
+      "year": "31 BC (2 Sept)",
+      "event": "Battle of Actium",
+      "significance": "Agrippa blockades Ambracian Gulf; Cleopatra’s 60 Egyptian ships break out with treasury followed by Antony (Plutarch, Dio, Velleius, Virgil)."
+    },
+    {
+      "year": "30 BC (Aug)",
+      "event": "Fall of Alexandria & Suicide of Antony and Cleopatra",
+      "significance": "Antony dies in Cleopatra’s mausoleum; Cleopatra chooses royal suicide to evade Octavian’s Roman triumph (Horace Odes 1.37; Plutarch 77–86)."
+    }
+  ],
+  "keyTopics": [
+    {
+      "id": "kt1",
+      "number": 1,
+      "title": "Key Topic 1: Ptolemaic Egypt, Upbringing & Julius Caesar (69–47 BC)",
+      "dateFence": "69–30 BC",
+      "outsideFenceWarning": "Stay focused inside 69–30 BC (J198/02 Sec C — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt1_1",
+          "code": "1.1",
+          "title": "1.1 Family, Education, Character and Roman Clientage",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt1_1_a1",
+              "title": "Cleopatra's family and Macedonian heritage; her likely education and upbringing; her character as depicted in the sources, including her charm, her humour, and her courage",
+              "dateTag": "KT 1.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Cleopatra's family and Macedonian heritage; her likely education and upbringing; her character as depicted in the sources, including her charm, her humour, and her courage\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Cleopatra's family and Macedonian heritage; her likely education and upbringing; her character as depicted in the sources, including her charm, her humour, and her courage.",
+                "Prescribed Set Sources: Coin of Ptolemy Auletes, British Museum • Head of Cleopatra as a young woman, British Museum."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Coin of Ptolemy Auletes, British Museum; Head of Cleopatra as a young woman, British Museum\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Cleopatra's family and Macedonian heritage; her likely education and upbringing; her character as depicted in the sources, including her charm, her humour, and her courage\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Cleopatra's"
+            },
+            {
+              "id": "kt1_1_a2",
+              "title": "Rome's relationship with client states and attitude to foreigners; the importance of Egypt for Rome economically and politically; overview of Rome's involvement with Egypt in the 60s and 50s BC",
+              "dateTag": "KT 1.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Rome's relationship with client states and attitude to foreigners; the importance of Egypt for Rome economically and politically; overview of Rome's involvement with Egypt in the 60s and 50s BC\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Rome's relationship with client states and attitude to foreigners; the importance of Egypt for Rome economically and politically; overview of Rome's involvement with Egypt in the 60s and 50s BC.",
+                "Prescribed Set Sources: Coin of Ptolemy Auletes, British Museum • Head of Cleopatra as a young woman, British Museum."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Coin of Ptolemy Auletes, British Museum; Head of Cleopatra as a young woman, British Museum\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Rome's relationship with client states and attitude to foreigners; the importance of Egypt for Rome economically and politically; overview of Rome's involvement with Egypt in the 60s and 50s BC\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Rome's"
+            }
+          ]
+        },
+        {
+          "id": "kt1_2",
+          "code": "1.2",
+          "title": "1.2 Accession, Civil War with Ptolemy XIII and Sibling Rivalry",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt1_2_a1",
+              "title": "The death of Ptolemy XII and Cleopatra's first years as queen; civil war between Cleopatra and Ptolemy XIII; Cleopatra's relationship with her brothers and Arsinoe",
+              "dateTag": "KT 1.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The death of Ptolemy XII and Cleopatra's first years as queen; civil war between Cleopatra and Ptolemy XIII; Cleopatra's relationship with her brothers and Arsinoe\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The death of Ptolemy XII and Cleopatra's first years as queen; civil war between Cleopatra and Ptolemy XIII; Cleopatra's relationship with her brothers and Arsinoe.",
+                "Prescribed Set Sources: Plutarch, Life of Caesar, 48–49."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Plutarch, Life of Caesar, 48–49\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The death of Ptolemy XII and Cleopatra's first years as queen; civil war between Cleopatra and Ptolemy XIII; Cleopatra's relationship with her brothers and Arsinoe\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "death"
+            }
+          ]
+        },
+        {
+          "id": "kt1_3",
+          "code": "1.3",
+          "title": "1.3 Meeting Caesar, Alexandrian War and Birth of Caesarion",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt1_3_a1",
+              "title": "Cleopatra's initial meeting with Caesar and his decision to support her; Cleopatra's personal and political relationship with Caesar and its impact on both Rome and Egypt; the birth of Caesarion",
+              "dateTag": "KT 1.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Cleopatra's initial meeting with Caesar and his decision to support her; Cleopatra's personal and political relationship with Caesar and its impact on both Rome and Egypt; the birth of Caesarion\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Cleopatra's initial meeting with Caesar and his decision to support her; Cleopatra's personal and political relationship with Caesar and its impact on both Rome and Egypt; the birth of Caesarion.",
+                "Prescribed Set Sources: Plutarch, Life of Caesar, 48–49 • Cassius Dio, Roman History, XLII 44–45 • Suetonius, Life of Julius Caesar, 52."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Plutarch, Life of Caesar, 48–49; Cassius Dio, Roman History, XLII 44–45; Suetonius, Life of Julius Caesar, 52\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Cleopatra's initial meeting with Caesar and his decision to support her; Cleopatra's personal and political relationship with Caesar and its impact on both Rome and Egypt; the birth of Caesarion\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Cleopatra's"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt2",
+      "number": 2,
+      "title": "Key Topic 2: Queen of Egypt, Isis Persona & Reception in Rome (47–44 BC)",
+      "dateFence": "69–30 BC",
+      "outsideFenceWarning": "Stay focused inside 69–30 BC (J198/02 Sec C — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt2_1",
+          "code": "2.1",
+          "title": "2.1 Graeco-Egyptian Persona, Isis Promotion and Archaeology",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt2_1_a1",
+              "title": "Her Graeco-Egyptian public persona and representation in the archaeological sources; the promotion of Isis as her patron goddess and the rationale for this",
+              "dateTag": "KT 2.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Her Graeco-Egyptian public persona and representation in the archaeological sources; the promotion of Isis as her patron goddess and the rationale for this\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Her Graeco-Egyptian public persona and representation in the archaeological sources; the promotion of Isis as her patron goddess and the rationale for this.",
+                "Prescribed Set Sources: Relief portraits of Cleopatra and Caesarion from Dendera • Coin of Cleopatra and Caesarion minted in Cyprus • Coin of Cleopatra, with distinctive hairstyle and hooked nose, British Museum."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Relief portraits of Cleopatra and Caesarion from Dendera; Coin of Cleopatra and Caesarion minted in Cyprus; Coin of Cleopatra, with distinctive hairstyle and hooked nose, British Museum\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Her Graeco-Egyptian public persona and representation in the archaeological sources; the promotion of Isis as her patron goddess and the rationale for this\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Graeco-Egyptian"
+            }
+          ]
+        },
+        {
+          "id": "kt2_2",
+          "code": "2.2",
+          "title": "2.2 Domestic Rule, Egyptian Subjects and Territorial Ambition",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt2_2_a1",
+              "title": "Cleopatra's relationship with her subjects; the expansion of Egyptian territory under Cleopatra",
+              "dateTag": "KT 2.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Cleopatra's relationship with her subjects; the expansion of Egyptian territory under Cleopatra\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Cleopatra's relationship with her subjects; the expansion of Egyptian territory under Cleopatra.",
+                "Prescribed Set Sources: Plutarch, Life of Antony, 27."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Plutarch, Life of Antony, 27\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Cleopatra's relationship with her subjects; the expansion of Egyptian territory under Cleopatra\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Cleopatra's"
+            }
+          ]
+        },
+        {
+          "id": "kt2_3",
+          "code": "2.3",
+          "title": "2.3 Cleopatra's Visit to Rome and Caesar's Assassination",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt2_3_a1",
+              "title": "Cleopatra's visit to Rome and her reception",
+              "dateTag": "KT 2.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Cleopatra's visit to Rome and her reception\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Cleopatra's visit to Rome and her reception.",
+                "Prescribed Set Sources: Suetonius, Life of Julius Caesar, 52 • Cassius Dio, Roman History, XLIII 27 • Cicero, Letter to Atticus, XV.15."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Suetonius, Life of Julius Caesar, 52; Cassius Dio, Roman History, XLIII 27; Cicero, Letter to Atticus, XV.15\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Cleopatra's visit to Rome and her reception\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Cleopatra's"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt3",
+      "number": 3,
+      "title": "Key Topic 3: Cleopatra, Mark Antony & the Donations of Alexandria (44–32 BC)",
+      "dateFence": "69–30 BC",
+      "outsideFenceWarning": "Stay focused inside 69–30 BC (J198/02 Sec C — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt3_1",
+          "code": "3.1",
+          "title": "3.1 Mark Antony's Position and the Meeting at Tarsus (41 BC)",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt3_1_a1",
+              "title": "Mark Antony's position in Roman politics after Caesar's death; Cleopatra's meeting with Mark Antony at Tarsus",
+              "dateTag": "KT 3.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Mark Antony's position in Roman politics after Caesar's death; Cleopatra's meeting with Mark Antony at Tarsus\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Mark Antony's position in Roman politics after Caesar's death; Cleopatra's meeting with Mark Antony at Tarsus.",
+                "Prescribed Set Sources: Plutarch, Life of Antony, 24–29."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Plutarch, Life of Antony, 24–29\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Mark Antony's position in Roman politics after Caesar's death; Cleopatra's meeting with Mark Antony at Tarsus\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Antony's"
+            }
+          ]
+        },
+        {
+          "id": "kt3_2",
+          "code": "3.2",
+          "title": "3.2 Alliance, Eastern Territories and Octavia",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt3_2_a1",
+              "title": "The development of the political and personal relationship between Cleopatra and Mark Antony and its significance for both Egypt and Rome",
+              "dateTag": "KT 3.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The development of the political and personal relationship between Cleopatra and Mark Antony and its significance for both Egypt and Rome\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The development of the political and personal relationship between Cleopatra and Mark Antony and its significance for both Egypt and Rome.",
+                "Prescribed Set Sources: Plutarch, Life of Antony, 30–33; 36–37; 51; 53 • Velleius Paterculus, The Roman History, 2.82."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Plutarch, Life of Antony, 30–33; 36–37; 51; 53; Velleius Paterculus, The Roman History, 2.82\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The development of the political and personal relationship between Cleopatra and Mark Antony and its significance for both Egypt and Rome\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "development"
+            }
+          ]
+        },
+        {
+          "id": "kt3_3",
+          "code": "3.3",
+          "title": "3.3 Donations of Alexandria and Breakdown with Octavian",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt3_3_a1",
+              "title": "The role played by Cleopatra in the breakdown of Mark Antony and Octavian's relationship, including the Donations of Alexandria",
+              "dateTag": "KT 3.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The role played by Cleopatra in the breakdown of Mark Antony and Octavian's relationship, including the Donations of Alexandria\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The role played by Cleopatra in the breakdown of Mark Antony and Octavian's relationship, including the Donations of Alexandria.",
+                "Prescribed Set Sources: Plutarch, Life of Antony, 55–59 • Silver denarius of Antony and Cleopatra minted in 32, declaring Antony's conquest of Armenia and giving Cleopatra's title as 'queen of kings and of her sons who are kings'."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Plutarch, Life of Antony, 55–59; Silver denarius of Antony and Cleopatra minted in 32, declaring Antony's conquest of Armenia and giving Cleopatra's title as 'queen of kings and of her sons who are kings'\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The role played by Cleopatra in the breakdown of Mark Antony and Octavian's relationship, including the Donations of Alexandria\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "played"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt4",
+      "number": 4,
+      "title": "Key Topic 4: War with Octavian, Actium & the Deaths in Alexandria (32–30 BC)",
+      "dateFence": "69–30 BC",
+      "outsideFenceWarning": "Stay focused inside 69–30 BC (J198/02 Sec C — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt4_1",
+          "code": "4.1",
+          "title": "4.1 Causes of War and Preparations for Actium",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt4_1_a1",
+              "title": "Causes of the war between Octavian and Antony/Cleopatra; preparations for the battle",
+              "dateTag": "KT 4.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Causes of the war between Octavian and Antony/Cleopatra; preparations for the battle\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Causes of the war between Octavian and Antony/Cleopatra; preparations for the battle.",
+                "Prescribed Set Sources: Plutarch, Life of Antony, 56–62 • Velleius Paterculus, The Roman History, 2.82–2.84."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Plutarch, Life of Antony, 56–62; Velleius Paterculus, The Roman History, 2.82–2.84\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Causes of the war between Octavian and Antony/Cleopatra; preparations for the battle\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Causes"
+            }
+          ]
+        },
+        {
+          "id": "kt4_2",
+          "code": "4.2",
+          "title": "4.2 The Battle of Actium: Roles, Outcome and Competing Views",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt4_2_a1",
+              "title": "Key events of the battle, including the roles of Octavian, Agrippa, Mark Antony and Cleopatra; the outcome and the reasons for it as described by the sources; different views of the battle in the sources",
+              "dateTag": "KT 4.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Key events of the battle, including the roles of Octavian, Agrippa, Mark Antony and Cleopatra; the outcome and the reasons for it as described by the sources; different views of the battle in the sources\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Key events of the battle, including the roles of Octavian, Agrippa, Mark Antony and Cleopatra; the outcome and the reasons for it as described by the sources; different views of the battle in the sources.",
+                "Prescribed Set Sources: Plutarch, Life of Antony, 63–69 • Velleius Paterculus, The Roman History, 2.84–2.86 • Virgil, Aeneid, 8.675–731."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Plutarch, Life of Antony, 63–69; Velleius Paterculus, The Roman History, 2.84–2.86; Virgil, Aeneid, 8.675–731\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Key events of the battle, including the roles of Octavian, Agrippa, Mark Antony and Cleopatra; the outcome and the reasons for it as described by the sources; different views of the battle in the sources\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "events"
+            }
+          ]
+        },
+        {
+          "id": "kt4_3",
+          "code": "4.3",
+          "title": "4.3 Fall of Alexandria, Suicides and Significance for Octavian",
+          "dateFence": "69–30 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt4_3_a1",
+              "title": "Impact of the battle on Cleopatra's and Antony's careers; the method of Cleopatra's suicide and reasons for her actions; Mark Antony's suicide; the significance of the suicides for Octavian",
+              "dateTag": "KT 4.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Impact of the battle on Cleopatra's and Antony's careers; the method of Cleopatra's suicide and reasons for her actions; Mark Antony's suicide; the significance of the suicides for Octavian\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Impact of the battle on Cleopatra's and Antony's careers; the method of Cleopatra's suicide and reasons for her actions; Mark Antony's suicide; the significance of the suicides for Octavian.",
+                "Prescribed Set Sources: Plutarch, Life of Antony, 72–79; 81–86 • Velleius Paterculus, The Roman History, 2.87 • Horace, Odes, 1.37."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section C (Roman Depth Study · Set Sources)",
+                "points": [
+                  {
+                    "label": "AO3 Set Source Link",
+                    "text": "Anchor arguments in \"Plutarch, Life of Antony, 72–79; 81–86; Velleius Paterculus, The Roman History, 2.87; Horace, Odes, 1.37\" using short \"direct quotes\" in green."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Impact of the battle on Cleopatra's and Antony's careers; the method of Cleopatra's suicide and reasons for her actions; Mark Antony's suicide; the significance of the suicides for Octavian\" against contrasting factors across Cleopatra: Rome and Egypt, 69–30 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Impact"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

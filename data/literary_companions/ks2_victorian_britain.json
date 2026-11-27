@@ -1,0 +1,578 @@
+[
+  {
+    "lesson_index": 0,
+    "lesson_id": "lesson_1",
+    "lesson_label": "Enquiry 1",
+    "short_tab_title": "Victoria's First Train!",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Micro-Story",
+    "book_title": "Twenty-Five Minutes to Paddington! Queen Victoria's First Steam Ride (1842)",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical micro-story grounded in Queen Victoria's letters to King Leopold I (June 1842) and Great Western Railway records of her maiden rail journey from Slough to Paddington on 13 June 1842 with Daniel Gooch and Isambard Kingdom Brunel.",
+    "author_context": "In 1842, many cautious doctors still warned that roaring steam trains travelled far too fast for human lungs! Discover what happened on Monday 13 June 1842 when young Queen Victoria stepped aboard a Great Western locomotive with engineer Isambard Kingdom Brunel!",
+    "cover_image": "/units/ks2_victorian_britain/assets/src_l1_a_stephenson_rocket_locomotive.jpg",
+    "cover_caption": "Stephenson's pioneering steam locomotive Rocket in London's Science Museum — forerunner of the fast Great Western expresses ridden by Queen Victoria.",
+    "studio_audio": "/audio/reading/ks2_victorian_britain/r0.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Locomotive",
+        "pronunciation": "loh-kuh-MOH-tiv",
+        "def": "A coal-fired steam railway engine that pulls passenger carriages and goods wagons along iron tracks."
+      },
+      {
+        "term": "Isambard Kingdom Brunel",
+        "pronunciation": "IZ-um-bard KING-dum broo-NEL",
+        "def": "Brilliant Victorian chief engineer who built the Great Western Railway, Box Tunnel, and Clifton Suspension Bridge."
+      },
+      {
+        "term": "Footplate",
+        "pronunciation": "FOOT-playt",
+        "def": "The hot open metal cab floor at the back of a steam engine where the driver and fireman shovel coal."
+      },
+      {
+        "term": "Railway Time",
+        "pronunciation": "RAYL-way TYM",
+        "def": "One shared London Greenwich clock time adopted across British train stations so timetables matched everywhere."
+      }
+    ],
+    "extract": "White steam hissed across Slough platform at noon on 13 June 1842. Nervous palace doctors begged young <strong>Queen Victoria</strong> to ride back to London by horse coach instead. Surely roaring iron wheels would shake the Queen dizzy!\n\nTwenty-three-year-old Victoria smiled bravely beside <strong>Prince Albert</strong> and stepped into the velvet royal saloon. Brass lamps shone above plush blue cushions inside her carriage. Up on the hot engine <em>footplate</em> stood engineer <strong>Isambard Kingdom Brunel</strong> in his tall black hat. Driver Daniel Gooch pulled the brass lever, and the green <em>locomotive</em> Phlegethon surged down the track!\n\nGreen fields flashed past the window at forty miles an hour. Cheering country crowds waved hats from every bridge! Just twenty-five minutes later, the train glided smoothly into Paddington Station under shared <em>Railway Time</em>.\n\nNext morning Victoria wrote home with glee. <em>\"I am quite charmed with it, and free from dust and crowd and heat!\"</em> Overnight, millions trusted steam travel.",
+    "parent_discussion": [
+      {
+        "question": "How fast did the Great Western locomotive carry Queen Victoria from Slough into London Paddington on 13 June 1842?",
+        "answer": "It completed the journey in just twenty-five minutes, reaching speeds around forty miles an hour—far faster than any horse coach!"
+      },
+      {
+        "question": "Which famous top-hatted engineer rode up front on the hot locomotive footplate to keep Queen Victoria's first journey safe?",
+        "answer": "Chief Great Western Railway engineer Isambard Kingdom Brunel, riding alongside locomotive superintendent Daniel Gooch!"
+      },
+      {
+        "question": "Why did Queen Victoria's happy verdict ('quite charmed with it!') matter so much to Britain's growing railway companies?",
+        "answer": "Once hesitant families saw their young Queen ride steam trains safely and joyfully, fear melted away and passenger numbers soared!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Which London station did Queen Victoria arrive at on her first ever steam train ride on 13 June 1842?",
+        "options": [
+          "Paddington Station",
+          "Roman Bath Spa",
+          "Blackpool North Pier",
+          "Edinburgh Waverley"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Riding from Slough near Windsor Castle, Queen Victoria glided into Brunel's London Paddington terminus in twenty-five minutes."
+      },
+      {
+        "question": "Who stood on the open engine footplate with driver Daniel Gooch during the royal journey?",
+        "options": [
+          "Charles Dickens",
+          "Isambard Kingdom Brunel",
+          "Dr Thomas Barnardo",
+          "Robert Louis Stevenson"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Isambard Kingdom Brunel designed the broad-gauge Great Western Railway and oversaw the royal run personally."
+      },
+      {
+        "question": "How did Queen Victoria describe steam rail travel compared with dusty summer horse roads?",
+        "options": [
+          "Too terrifying to ever try a second time",
+          "Slower than walking beside a canal",
+          "Charming and free from dust, crowd, and heat",
+          "Colder than an iceberg"
+        ],
+        "correctIndex": 2,
+        "feedback": "Well remembered! Queen Victoria loved rail travel so much she soon used royal trains to reach Scotland and seaside ports."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Who rode on the locomotive footplate during Queen Victoria's first train journey in June 1842, and how did her trip boost British railways?",
+      "answer": "Engineer Isambard Kingdom Brunel rode on the footplate, and Victoria's delighted praise convinced nervous Victorians that fast steam trains were safe."
+    },
+    "hinge_question": "Why did fast journeys like Slough-to-Paddington in twenty-five minutes force every British town to share one exact 'Railway Time'?",
+    "audio_file": "/audio/reading/ks2_victorian_britain/r0.mp3"
+  },
+  {
+    "lesson_index": 1,
+    "lesson_id": "lesson_2",
+    "lesson_label": "Enquiry 2",
+    "short_tab_title": "Sarah Gooder Underground",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "intimate_eyewitness",
+    "source_type": "eyewitness",
+    "source_type_label": "1842 Child Miner Testimony",
+    "book_title": "Eight Years Old in the Dark: Sarah Gooder's Coal-Pit Testimony (1842)",
+    "author": "Sarah Gooder (Recorded by the Children's Employment Mines Commission, 1842)",
+    "provenance_note": "Adapted gently for Key Stage 2 sentence length while preserving the exact words spoken by eight-year-old trapper Sarah Gooder at Gauber Pit, Barnsley, Yorkshire, recorded by Sub-Commissioner Jelinger Symons in the First Report of the Children's Employment Commission (Mines), 1842.",
+    "author_context": "Before 1842, children as young as seven or eight worked deep underground in British coal mines so steam trains and factories had fuel! Read the real spoken words of eight-year-old Yorkshire trapper Sarah Gooder when a government inspector visited her pit!",
+    "cover_image": "/units/ks2_victorian_britain/assets/src_l2_b_1842_mines_commission_hurrier_woodcut.jpg",
+    "cover_caption": "Shocking 1842 Royal Commission woodcut showing child workers pushing and pulling a heavy wooden coal corf tub along a low dark seam.",
+    "studio_audio": "/audio/reading/ks2_victorian_britain/r1.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Trapper",
+        "pronunciation": "TRAP-er",
+        "def": "Often the youngest child in a Victorian coal mine, sitting alone in darkness to pull air doors open for coal tubs."
+      },
+      {
+        "term": "Corves",
+        "pronunciation": "KORVZ",
+        "def": "Heavy wooden baskets or wheeled tubs packed with black coal and hauled along low underground pit tunnels."
+      },
+      {
+        "term": "Hurrier",
+        "pronunciation": "HUR-ee-er",
+        "def": "An older child or teenager who wore a leather belt and chain to drag heavy coal corves up narrow seams."
+      },
+      {
+        "term": "Royal Commission",
+        "pronunciation": "ROY-ul kuh-MISH-un",
+        "def": "An official inquiry sent out by Parliament in 1841–1842 to interview child miners and report the truth to MPs."
+      }
+    ],
+    "extract": "In 1841, an inspector climbed down Gauber Pit in Yorkshire to meet a tiny girl with coal-black hands. Her name was <strong>Sarah Gooder</strong>, and she worked twelve hours a day as a <em>trapper</em>. Cold water dripped from the low rock roof above her bare feet.\n\n<em>\"I am a trapper in the Gauber Pit, and I am eight years old. I have to trap without a light, and I am scared! I go down at four and sometimes half-past three in the morning. I come out at five and half-past in the afternoon. I never go to sleep.\n\nSometimes I sing when I have light, but not in the dark. I dare not sing then! I do not like being in the pit.\n\nI would go to school far rather than the pit. Sometimes in the morning I am very sleepy when I hear the coal <em>corves</em> and <em>hurriers</em> pass.\"</em>\n\nHer brave words reached a <strong>Royal Commission</strong> in London. Within months, shocked MPs banned children under ten from mines!",
+    "parent_discussion": [
+      {
+        "question": "What time in the morning did eight-year-old Sarah Gooder climb down into Gauber Pit, and when did she come back up?",
+        "answer": "She went down at 3:30 or 4:00 in the morning and did not come back up to daylight until 5:00 or 5:30 in the afternoon!"
+      },
+      {
+        "question": "Why does Sarah's small detail—'Sometimes I sing when I have light, but not in the dark; I dare not sing then'—move readers so deeply?",
+        "answer": "It reminds us she was just a frightened eight-year-old child sitting alone without a candle in pitch-black underground silence."
+      },
+      {
+        "question": "What happened in Parliament in 1842 after Lord Shaftesbury showed MPs testimonies like Sarah Gooder's alongside pit drawings?",
+        "answer": "Parliament passed the landmark 1842 Mines Act banning all women, girls, and boys under the age of ten from working underground!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "How old was Sarah Gooder when she spoke to the Royal Commission inspector at Gauber Pit in Yorkshire?",
+        "options": [
+          "Eight years old",
+          "Fourteen years old",
+          "Twenty-one years old",
+          "Thirty years old"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! At just eight years old, Sarah worked over twelve hours a day underground before the 1842 Mines Act banned under-tens."
+      },
+      {
+        "question": "What was a child 'trapper's' job deep inside a Victorian coal mine?",
+        "options": [
+          "Driving express steam trains to London",
+          "Sitting beside an underground ventilation door to pull it open when coal tubs passed",
+          "Polishing brass bells in a Board School",
+          "Selling tickets at the Crystal Palace"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Trappers kept fresh air flowing round the pit tunnels so explosive gas did not build up."
+      },
+      {
+        "question": "Where did Sarah Gooder tell the inspector she wished she could go instead of down the dark coal pit?",
+        "options": [
+          "Into a cotton weaving shed",
+          "Out to sea on an iron ship",
+          "To school",
+          "Into a Union Workhouse"
+        ],
+        "correctIndex": 2,
+        "feedback": "Well remembered! Sarah attended Sunday School on her one day off and longed to attend weekday school in the daylight."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What job did eight-year-old Sarah Gooder do in Gauber Pit, and how did her 1842 testimony help change British law?",
+      "answer": "She sat alone in the dark for twelve hours as a coal-mine trapper, and her testimony helped Lord Shaftesbury pass the 1842 Mines Act banning under-tens underground."
+    },
+    "hinge_question": "Why did printing wooden engravings alongside Sarah Gooder's words shock London MPs far more than dry numbers alone?",
+    "audio_file": "/audio/reading/ks2_victorian_britain/r1.mp3"
+  },
+  {
+    "lesson_index": 2,
+    "lesson_id": "lesson_3",
+    "lesson_label": "Enquiry 3",
+    "short_tab_title": "Oliver Wants Some More!",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "prose",
+    "source_type_label": "Victorian Classic Novel",
+    "book_title": "Oliver Twist: 'Please, Sir, I Want Some More!' (1838)",
+    "author": "Charles Dickens (Published 1838, Public Domain)",
+    "provenance_note": "Public-domain literary extract adapted for Key Stage 2 sentence cadence from Charles Dickens's 'Oliver Twist; or, The Parish Boy's Progress' (Chapter 2, 1838), written to expose the cruelty of the 1834 Poor Law workhouse system.",
+    "author_context": "At age twelve, young Charles Dickens had pasted labels in a rat-infested factory while his father sat in debtors' prison! In 1838, Dickens wrote 'Oliver Twist' to show comfortable Victorians how cruelly grim Poor Law workhouses starved orphan children!",
+    "cover_image": "/units/ks2_victorian_britain/assets/src_l3_a_victorian_workhouse_dining_hall.jpg",
+    "cover_caption": "George Cruikshank's famous 1838 etching 'Oliver asking for more' inside the bleak parish workhouse dining hall.",
+    "studio_audio": "/audio/reading/ks2_victorian_britain/r2.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Workhouse",
+        "pronunciation": "WERK-hows",
+        "def": "A bleak brick institution after 1834 where destitute families were split up, dressed in rough uniforms, and set hard work."
+      },
+      {
+        "term": "Gruel",
+        "pronunciation": "GROO-ul",
+        "def": "Thin, watery oatmeal porridge boiled in a giant copper pot and served in tiny ladles to hungry workhouse inmates."
+      },
+      {
+        "term": "Copper",
+        "pronunciation": "KOP-er",
+        "def": "The huge metal boiling cauldron at the front of a workhouse hall from which the master ladled hot gruel."
+      },
+      {
+        "term": "Pauper",
+        "pronunciation": "PAW-per",
+        "def": "The Victorian legal word for a desperately poor person forced to ask parish guardians for workhouse relief."
+      }
+    ],
+    "extract": "In 1838, novelist <strong>Charles Dickens</strong> shocked Britain with the story of orphan <strong>Oliver Twist</strong> inside a grim <em>workhouse</em>. Every meal brought just one tiny bowl of thin oatmeal <em>gruel</em>! Hungry <em>pauper</em> boys counted every drop with hollow cheeks.\n\n<em>\"The bowls never wanted washing. The boys polished them with their spoons till they shone again! Then they sat staring at the giant <em>copper</em> pot with eager eyes. Boys have huge appetites, and slowly they starved for three long months. At last they drew lots to pick who must walk to the master after supper. It fell to Oliver Twist!\n\nEvening arrived, and the boys took their seats. The gruel vanished in seconds, and neighbours nudged Oliver forward. Pale with fear, child as he was, Oliver rose from the table with his bowl and spoon.\n\n'Please, sir, I want some more!'</em>\n\n<em>The fat, healthy master turned quite pale and clung to the pot in shock!\"</em> Across Britain, angry readers demanded kinder care.",
+    "parent_discussion": [
+      {
+        "question": "Why did Charles Dickens joke darkly that the workhouse boys' bowls 'never wanted washing'?",
+        "answer": "Because the boys were so terribly hungry after one tiny ladle of watery gruel that they licked and polished every drop clean with their spoons!"
+      },
+      {
+        "question": "How did Dickens contrast the workhouse master's appearance with little Oliver Twist's?",
+        "answer": "Dickens described the master as 'fat, healthy' while starving nine-year-old Oliver walked up 'pale with fear'—exposing workhouse hypocrisy!"
+      },
+      {
+        "question": "Why can a storybook like 'Oliver Twist' (1838) still be valuable evidence for historians studying Victorian Britain?",
+        "answer": "Although Oliver himself was fictional, Dickens had worked as a real Victorian reporter and used his novel to stir public anger against real 1834 workhouses!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What thin, watery food was ladled from the copper pot inside Oliver Twist's workhouse hall?",
+        "options": [
+          "Roast beef and plum pudding",
+          "Watery oatmeal gruel",
+          "Spiced hot chocolate",
+          "Fresh strawberries and cream"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Under strict 1834 Poor Law diets, inmates received plain bread, watery gruel, and thin soup so nobody wanted to enter."
+      },
+      {
+        "question": "How did the starving workhouse boys decide that Oliver Twist had to ask the master for more food?",
+        "options": [
+          "The master invited Oliver politely",
+          "They drew lots among themselves",
+          "They flipped a Golden Jubilee coin",
+          "Oliver was the tallest boy in London"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Drawing lots meant picking straws by chance—and poor nine-year-old Oliver drew the short straw!"
+      },
+      {
+        "question": "Which real 1834 law inspired Charles Dickens to write 'Oliver Twist' four years later?",
+        "options": [
+          "The 1871 Bank Holidays Act",
+          "The 1834 Poor Law Amendment Act creating harsh Union Workhouses",
+          "The 1840 Penny Postage Act",
+          "The 1880 Education Act"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Dickens hated how the 1834 Poor Law treated poverty like a crime and tore destitute families apart."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Why did Charles Dickens write the famous 'Please, sir, I want some more' workhouse scene in 'Oliver Twist' (1838)?",
+      "answer": "To shock Victorian readers into seeing how cruelly the 1834 Poor Law workhouses starved and punished destitute orphan children."
+    },
+    "hinge_question": "Why did workhouse guardians deliberately make life inside a Union Workhouse harsher than the lowest-paid job outside?",
+    "audio_file": "/audio/reading/ks2_victorian_britain/r2.mp3"
+  },
+  {
+    "lesson_index": 3,
+    "lesson_id": "lesson_4",
+    "lesson_label": "Enquiry 4",
+    "short_tab_title": "Inspector Arnold Arrives!",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Micro-Story",
+    "book_title": "Slates Down, Pens Ready! School Inspector Matthew Arnold Visits Class (1880)",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original historical micro-story grounded in the official General Reports on Elementary Schools (1852–1882) by poet and Her Majesty's Inspector of Schools Matthew Arnold (1822–1888), who inspected tens of thousands of Victorian elementary pupils under the 'Payment by Results' code.",
+    "author_context": "Once a year in every Victorian elementary school, terror struck both teachers and pupils alike—Inspection Day! Step inside a silent London classroom in 1880 as real-life School Inspector Matthew Arnold tests the 'Three Rs'!",
+    "cover_image": "/units/ks2_victorian_britain/assets/london_board_school_building_1870s.jpg",
+    "cover_caption": "Towering three-storey Victorian London Board School with high classroom windows built after Forster's 1870 Education Act.",
+    "studio_audio": "/audio/reading/ks2_victorian_britain/r3.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Board School",
+        "pronunciation": "BORD SKOOL",
+        "def": "A local state primary school built with tall red-brick walls and high windows after Forster's 1870 Education Act."
+      },
+      {
+        "term": "Three Rs",
+        "pronunciation": "THREE ARZ",
+        "def": "Victorian nickname for the three core classroom subjects: Reading, wRiting, and aRithmetic."
+      },
+      {
+        "term": "Copperplate",
+        "pronunciation": "KOP-er-playt",
+        "def": "Neat, looping Victorian handwriting written with a sharp steel dip pen and black ink from a desk inkwell."
+      },
+      {
+        "term": "Matthew Arnold",
+        "pronunciation": "MATH-yoo AR-nuld",
+        "def": "Famous Victorian poet who worked for thirty-five years as Her Majesty's Inspector checking elementary schools."
+      }
+    ],
+    "extract": "Sixty pairs of boots froze still inside a tall London <strong>Board School</strong> in spring 1880. High windows kept street sights out of view, and a bamboo cane rested on the master's desk. Today Her Majesty's Inspector <strong>Matthew Arnold</strong> had walked through the oak door! Even the stern headmaster wiped sweat from his brow.\n\nAll year, school grants depended on passing the strict <em>Three Rs</em>. Younger rows gripped grey Welsh slates and squeaky chalk pencils for rapid sums. Older ten-year-olds dipped steel nibs into white inkwells to copy neat <em>copperplate</em> lines without one ink blot!\n\nArnold stepped down the aisle and noticed trembling hands. Unlike harsher officials, he hated turning children into frightened machines. Opening a poetry book, he asked a girl to read aloud with real feeling. Her clear voice filled the quiet hall!\n\n<em>\"Make the children understand what they read!\"</em> Arnold urged teachers in his reports. By 1891, Parliament abolished weekly penny fees so every child learned free.",
+    "parent_discussion": [
+      {
+        "question": "Why were Victorian teachers almost as nervous as their sixty pupils whenever Her Majesty's Inspector walked in?",
+        "answer": "Under 'Payment by Results', the school's government funding and teacher's pay depended on how many pupils passed the Three Rs test!"
+      },
+      {
+        "question": "Why were Board School windows built high above children's heads while younger classes used grey Welsh slates?",
+        "answer": "High windows stopped pupils daydreaming at passing carts, and reusable Welsh slates saved expensive paper and wet ink!"
+      },
+      {
+        "question": "What wise change did real-life Inspector Matthew Arnold urge Victorian teachers to make beyond endless times-table chanting?",
+        "answer": "He urged schools to teach poetry, stories, and real understanding instead of drilling terrified pupils like memorising machines!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What did the Victorian classroom nickname 'the Three Rs' stand for?",
+        "options": [
+          "Railways, Rivers, and Roads",
+          "Reading, Writing, and Arithmetic",
+          "Running, Rowing, and Rugby",
+          "Rulers, Rubbers, and Ribbons"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Reading, wRiting, and aRithmetic formed the strict daily backbone of every Victorian elementary timetable."
+      },
+      {
+        "question": "Which writing tools did older Victorian pupils graduate to once their slate handwriting grew neat?",
+        "options": [
+          "Plastic ballpoint biros",
+          "Scratched Roman lead tablets",
+          "Steel-nibbed dip pens and porcelain desk inkwells for copperplate script",
+          "Typewriters on every desk"
+        ],
+        "correctIndex": 2,
+        "feedback": "Exactly right! One careless drip from a steel dip pen left an ink blot on paper—and left-handers were forced to use their right hand!"
+      },
+      {
+        "question": "In which year did Parliament finally abolish weekly 'school pence' fees so elementary Board Schools became free?",
+        "options": [
+          "1837",
+          "1851",
+          "1891",
+          "1945"
+        ],
+        "correctIndex": 2,
+        "feedback": "Well remembered! 1870 built Board Schools, 1880 made attendance compulsory to age ten, and 1891 made elementary school free!"
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How did the 1870, 1880, and 1891 Education Acts change childhood, and what were the 'Three Rs' tested on Inspection Day?",
+      "answer": "They built Board Schools (1870) and made primary school compulsory (1880) and free (1891), testing Reading, Writing, and Arithmetic."
+    },
+    "hinge_question": "Would you rather be a Victorian child in 1840 with no school and twelve-hour pit shifts, or an 1885 pupil facing strict slates and canes?",
+    "audio_file": "/audio/reading/ks2_victorian_britain/r3.mp3"
+  },
+  {
+    "lesson_index": 4,
+    "lesson_id": "lesson_5",
+    "lesson_label": "Enquiry 5",
+    "short_tab_title": "Inside the Crystal Palace!",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "intimate_eyewitness",
+    "source_type": "eyewitness",
+    "source_type_label": "Royal Eyewitness Diary",
+    "book_title": "Glass, Palms and 100,000 Marvels: Queen Victoria's Crystal Palace Diary (1851)",
+    "author": "Queen Victoria (Royal Journal Entry, 1 May 1851, Public Domain)",
+    "provenance_note": "Adapted into accessible Key Stage 2 sentence length from Queen Victoria's public-domain diary entry for Thursday 1 May 1851 recording the opening of Prince Albert's Great Exhibition in Hyde Park.",
+    "author_context": "Imagine walking into a sparkling glass palace longer than five football pitches—built right over full-grown Hyde Park elm trees to display 100,000 inventions from around the globe! Read Queen Victoria's own excited diary from Opening Day on 1 May 1851!",
+    "cover_image": "/units/ks2_victorian_britain/assets/opening_great_exhibition_1851_selous.jpg",
+    "cover_caption": "Henry Courtney Selous's painting of Queen Victoria and Prince Albert opening the Great Exhibition beneath the Crystal Palace elm tree on 1 May 1851.",
+    "studio_audio": "/audio/reading/ks2_victorian_britain/r4.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Crystal Palace",
+        "pronunciation": "KRIS-tul PAL-iss",
+        "def": "Joseph Paxton's giant cast-iron and plate-glass hall built in Hyde Park for the 1851 Great Exhibition."
+      },
+      {
+        "term": "Great Exhibition",
+        "pronunciation": "GRAYT eks-ih-BISH-un",
+        "def": "The 1851 world fair planned by Prince Albert where six million visitors admired 100,000 machines and treasures."
+      },
+      {
+        "term": "Transept",
+        "pronunciation": "TRAN-sept",
+        "def": "The soaring curved central glass arch of the Crystal Palace built high enough to enclose living Hyde Park elm trees."
+      },
+      {
+        "term": "Workshop of the World",
+        "pronunciation": "WERK-shop uv thuh WERLD",
+        "def": "Proud Victorian nickname for Britain because British steam engines, mills, and shipyards led world manufacturing."
+      }
+    ],
+    "extract": "Thursday 1 May 1851 dawned bright over London. Flags fluttered across Hyde Park as <strong>Queen Victoria</strong> rode with <strong>Prince Albert</strong> and their children toward the gleaming <strong>Crystal Palace</strong>. Proud crowds cheered Britain as the <em>Workshop of the World</em>! That night she poured her amazement into her diary.\n\n<em>\"This day is one of the greatest and most glorious days of our lives! The park showed a wonderful sight with crowds of carriages and happy faces. Green trees arched overhead, and the sun shone upon the vast glass building.\n\nWe stepped inside to the sound of trumpets and twenty-five thousand cheering voices! Looking down the high <em>transept</em> felt quite like magic. Giant green palms, flowers, statues, and ten thousand treasures surrounded the sparkling crystal fountain.\n\nLoud organs played while steam machines hummed in the galleries. Six million people soon came to look and learn! My heart filled with pride for my dearest Albert, whose hard work united the world under one glass roof.\"</em>",
+    "parent_discussion": [
+      {
+        "question": "Which natural living things surprised Queen Victoria right inside the glass Transept of the Crystal Palace?",
+        "answer": "Full-grown green Hyde Park elm trees, tropical palms, and bright flowers arching beside a sparkling crystal fountain!"
+      },
+      {
+        "question": "Who had worked tirelessly behind the scenes to plan the 1851 Great Exhibition of Industry of All Nations?",
+        "answer": "Queen Victoria's husband Prince Albert, working alongside brilliant gardener-architect Sir Joseph Paxton!"
+      },
+      {
+        "question": "What lasting gift in South Kensington did Prince Albert buy for future schoolchildren using the 1851 Exhibition's huge ticket profits?",
+        "answer": "He bought land in South Kensington to create the great free museums—today's Science Museum, Natural History Museum, and V&A!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "In which London park did the glass-and-iron Crystal Palace open on 1 May 1851?",
+        "options": [
+          "Hyde Park",
+          "St James's Stadium",
+          "Saltaire Park",
+          " Sherwood Forest"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Built in Hyde Park in under nine months from prefab iron girders and 300,000 glass panes, it amazed the world."
+      },
+      {
+        "question": "Roughly how many people—many riding cheap 'shilling day' excursion trains—visited the 1851 Great Exhibition?",
+        "options": [
+          "Six hundred people",
+          "Six thousand people",
+          "Six million visitors (equal to a third of Britain's population!)",
+          "Only royal dukes and earls"
+        ],
+        "correctIndex": 2,
+        "feedback": "Exactly right! Cheap one-shilling entry days and Thomas Cook excursion trains allowed millions of working families to attend."
+      },
+      {
+        "question": "Why was Victorian Britain nicknamed 'the Workshop of the World' in 1851?",
+        "options": [
+          "Because everyone worked in wooden toy shops",
+          "Because Britain mined the most coal and built world-leading steam engines, ships, and textiles",
+          "Because Britain banned all machines",
+          "Because schools only taught woodwork"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Half the space inside the Crystal Palace displayed British inventions, locomotives, telegraphs, and looms."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What was the 1851 Crystal Palace in Hyde Park, and how many visitors came to see Britain as the 'Workshop of the World'?",
+      "answer": "Prince Albert and Joseph Paxton's giant cast-iron and glass exhibition hall, visited by six million people inspecting 100,000 global exhibits."
+    },
+    "hinge_question": "Why did one-shilling ticket days at the Crystal Palace matter just as much as the royal opening ceremony?",
+    "audio_file": "/audio/reading/ks2_victorian_britain/r4.mp3"
+  },
+  {
+    "lesson_index": 5,
+    "lesson_id": "lesson_6",
+    "lesson_label": "Enquiry 6",
+    "short_tab_title": "From a Railway Carriage",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "verse",
+    "source_type_label": "Victorian Classic Poem",
+    "book_title": "From a Railway Carriage ('Faster Than Fairies, Faster Than Witches!')",
+    "author": "Robert Louis Stevenson (A Child's Garden of Verses, 1885, Public Domain)",
+    "provenance_note": "Verbatim public-domain poem from Robert Louis Stevenson's 'A Child's Garden of Verses' (Longmans, Green & Co., London, 1885), capturing the chugging rhythm of a late-Victorian express train bound for the countryside and seaside.",
+    "author_context": "By the 1880s, Bank Holidays and cheap excursion tickets let millions of Victorian children press their noses against train windows on the way to seaside piers! Read Robert Louis Stevenson's famous 1885 poem aloud—can you hear the chugging wheels in its beat?",
+    "cover_image": "/units/ks2_victorian_britain/assets/victorian_seaside_bathing_machines_beach.jpg",
+    "cover_caption": "Late-Victorian English seaside beach at Margate (c. 1897) reached by fast Bank Holiday steam excursion trains.",
+    "studio_audio": "/audio/reading/ks2_victorian_britain/r5.mp3",
+    "studio_voice_label": "Studio Female Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Excursion Train",
+        "pronunciation": "ek-SKER-shun TRAYN",
+        "def": "A cheap day-trip steam train carrying working families to seaside piers like Blackpool, Brighton, and Margate."
+      },
+      {
+        "term": "Bank Holiday",
+        "pronunciation": "BANK HOL-ih-day",
+        "def": "Official public days off work created by the 1871 Bank Holidays Act so workers could enjoy family trips."
+      },
+      {
+        "term": "Brambles",
+        "pronunciation": "BRAM-bulz",
+        "def": "Prickly wild blackberry bushes growing along Victorian country railway embankments in late summer."
+      },
+      {
+        "term": "Rhythm",
+        "pronunciation": "RITH-um",
+        "def": "The fast, regular musical beat of a poem—matched by Stevenson to clattering iron train wheels!"
+      }
+    ],
+    "extract": "After the <strong>1871 Bank Holidays Act</strong>, excited Victorian children rode fast <em>excursion trains</em> to sandy beaches and piers. Families packed tin buckets and pressed their noses to the glass! Listen to the clattering wheel <em>rhythm</em> in <strong>Robert Louis Stevenson's</strong> 1885 poem.\n\n<div class=\"reading-stanza\">Faster than fairies, faster than witches,<br>Bridges and houses, hedges and ditches.<br>And charging along like troops in a battle,<br>All through the meadows the horses and cattle!</div>\n\n<div class=\"reading-stanza\">All of the sights of the hill and the plain<br>Fly as thick as driving rain.<br>And ever again, in the wink of an eye,<br>Painted stations whistle by!</div>\n\n<div class=\"reading-stanza\">Here is a child who clambers and scrambles,<br>All by himself and gathering <em>brambles</em>.<br>Here is a cart run away in the road<br>Lumping along with man and load.<br>And here is a mill and there is a river.<br>Each a glimpse and gone for ever!</div>\n\nSoon salty sea breezes greeted cheering Bank Holiday crowds!",
+    "parent_discussion": [
+      {
+        "question": "Read the opening lines aloud together—what real Victorian machine is Robert Louis Stevenson imitating with that fast 'clickety-clack' beat?",
+        "answer": "The rapid, rhythmic clatter of iron railway carriage wheels racing over track joints!"
+      },
+      {
+        "question": "Why does the poet end with 'Each a glimpse and gone for ever!' when looking out of a Victorian train window?",
+        "answer": "For the first time in human history, fifty-mile-an-hour steam trains flashed past scenes in one split second instead of slow walking speed!"
+      },
+      {
+        "question": "How did the 1871 Bank Holidays Act and cheap return tickets let ordinary factory children experience train rides like this?",
+        "answer": "Four guaranteed Bank Holidays and Saturday half-days gave working families free time and cheap seaside excursion tickets to Blackpool and Margate!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Who wrote the famous 1885 Victorian railway poem 'From a Railway Carriage'?",
+        "options": [
+          "Robert Louis Stevenson",
+          "Isambard Kingdom Brunel",
+          "Lord Shaftesbury",
+          "Sir Joseph Swan"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Scottish-born Victorian writer Robert Louis Stevenson also wrote 'Treasure Island' alongside 'A Child's Garden of Verses'."
+      },
+      {
+        "question": "In the poem, how fast do 'painted stations' pass the child's railway carriage window?",
+        "options": [
+          "Once every three days",
+          "In the wink of an eye",
+          "At slow donkey speed",
+          "Only at midnight"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Express trains roared straight through smaller country stations with a loud steam whistle in the wink of an eye."
+      },
+      {
+        "question": "Which 1871 law gave Victorian bank and factory workers official public holidays for seaside train trips?",
+        "options": [
+          "The 1842 Mines Act",
+          "The 1834 Poor Law",
+          "The 1871 Bank Holidays Act",
+          "The 1840 Penny Post Act"
+        ],
+        "correctIndex": 2,
+        "feedback": "Well remembered! Championed by Sir John Lubbock in 1871, Bank Holidays sparked seaside pier trips, donkey rides, and Punch and Judy shows!"
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How does Robert Louis Stevenson's 1885 poem 'From a Railway Carriage' capture how steam trains and 1871 Bank Holidays changed Victorian childhood?",
+      "answer": "Its fast chugging rhythm captures the thrill of express trains flashing past stations and fields on Bank Holiday family trips."
+    },
+    "hinge_question": "Compare Sarah Gooder in 1842 with the child looking out of a train window in 1885—what had changed for many British children, and what inequality still remained?",
+    "audio_file": "/audio/reading/ks2_victorian_britain/r5.mp3"
+  }
+]

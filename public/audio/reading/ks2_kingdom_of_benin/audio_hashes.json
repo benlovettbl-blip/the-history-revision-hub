@@ -1,0 +1,53 @@
+{
+  "unitId": "ks2_kingdom_of_benin",
+  "clips": {
+    "r4": {
+      "hash": "bc6ccf7268e06b00234feb38",
+      "bytes": 294476,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 152,
+      "updatedAt": "2026-11-27T14:19:06.897Z"
+    },
+    "r5": {
+      "hash": "d0a55b4db294b7110cdb4177",
+      "bytes": 291980,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 153,
+      "updatedAt": "2026-11-27T14:19:08.190Z"
+    },
+    "r0": {
+      "hash": "92efbf0db24b4b88f708f0e2",
+      "bytes": 295532,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 160,
+      "updatedAt": "2026-11-27T14:19:14.336Z"
+    },
+    "r1": {
+      "hash": "0ee82ac8b05de590fb0054fa",
+      "bytes": 305324,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 155,
+      "updatedAt": "2026-11-27T14:19:15.806Z"
+    },
+    "r2": {
+      "hash": "e547a73471dc9f65a336a7a5",
+      "bytes": 281900,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 153,
+      "updatedAt": "2026-11-27T14:19:18.185Z"
+    },
+    "r3": {
+      "hash": "ea7ad323d5a174fcd3f59e27",
+      "bytes": 275276,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 152,
+      "updatedAt": "2026-11-27T14:19:19.551Z"
+    }
+  }
+}

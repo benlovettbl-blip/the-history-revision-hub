@@ -261,7 +261,9 @@
               "source_context": "Anglo-Saxon clothes had no zips or buttons, so women pinned thick woven woollen dresses at each shoulder using pairs of shiny bronze saucer brooches coated in thin gold. **Hinge Question:** How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
               "question_badge": "GILT-BRONZE DRESS BROOCH",
               "question": "Look closely at the patterns and shiny gold coating on Source B. What two jobs did this brooch do for an Anglo-Saxon woman?",
-              "model_answer": "Source B did a practical job pinning heavy woollen dresses neatly at the shoulder, and a proud display job gleaming in firelight to show skilled metalwork and wealth."
+              "model_answer": "Source B did a practical job pinning heavy woollen dresses neatly at the shoulder, and a proud display job gleaming in firelight to show skilled metalwork and wealth.",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_1_sB.mp3",
+              "studio_voice_label": "Gilt-Bronze Anglo-Saxon Saucer B…"
             }
           ]
         },
@@ -291,7 +293,9 @@
               "source_context": "Shaped from hot melted glass with hollow \"claws\", these cups had tiny unsteady bases so warriors inside a cyning’s timber hall had to drink their honey mead in one big toast! **Hinge Question:** Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
               "question_badge": "GLASS MEAD-HALL TREASURE",
               "question": "Inspect the glass claws and tiny base on Source C. Who used this cup, and what does it show about mead-hall feasts?",
-              "model_answer": "Only a rich cyning (king) or noble warrior could afford fragile blown glass like Source C, and passing it around a warm timber mead hall built loyalty between a ruler and his fighters."
+              "model_answer": "Only a rich cyning (king) or noble warrior could afford fragile blown glass like Source C, and passing it around a warm timber mead hall built loyalty between a ruler and his fighters.",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_1_sC.mp3",
+              "studio_voice_label": "Anglo-Saxon Glass Claw Beaker fo…"
             }
           ]
         }
@@ -333,7 +337,10 @@
           "source_context": "Anglo-Saxon clothes had no zips or buttons, so women pinned thick woven woollen dresses at each shoulder using pairs of shiny bronze saucer brooches coated in thin gold. **Hinge Question:** How does a gilded saucer brooch like Source B prove that early Anglo-Saxon villagers were more than just rough warriors?",
           "question_badge": "GILT-BRONZE DRESS BROOCH",
           "question": "Look closely at the patterns and shiny gold coating on Source B. What two jobs did this brooch do for an Anglo-Saxon woman?",
-          "model_answer": "Source B did a practical job pinning heavy woollen dresses neatly at the shoulder, and a proud display job gleaming in firelight to show skilled metalwork and wealth."
+          "model_answer": "Source B did a practical job pinning heavy woollen dresses neatly at the shoulder, and a proud display job gleaming in firelight to show skilled metalwork and wealth.",
+          "text": "Artefact note: Photographed from both sides above a millimetre scale, this crescent-shaped bronze brooch fragment shows a smooth curved back on the left. On the right, bright gold coating gleams across a beaded rim, a raised four-sided frame, and deep spiral grooves.",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_1_sB.mp3",
+          "studio_voice_label": "Gilt-Bronze Anglo-Saxon Saucer B…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l1_src_c",
@@ -350,7 +357,10 @@
           "source_context": "Shaped from hot melted glass with hollow \"claws\", these cups had tiny unsteady bases so warriors inside a cyning’s timber hall had to drink their honey mead in one big toast! **Hinge Question:** Why was sharing honey mead from fragile glass claw beakers so important to an Anglo-Saxon cyning (king)?",
           "question_badge": "GLASS MEAD-HALL TREASURE",
           "question": "Inspect the glass claws and tiny base on Source C. Who used this cup, and what does it show about mead-hall feasts?",
-          "model_answer": "Only a rich cyning (king) or noble warrior could afford fragile blown glass like Source C, and passing it around a warm timber mead hall built loyalty between a ruler and his fighters."
+          "model_answer": "Only a rich cyning (king) or noble warrior could afford fragile blown glass like Source C, and passing it around a warm timber mead hall built loyalty between a ruler and his fighters.",
+          "text": "Artefact note: Blown from thin olive-green and amber glass, this tall drinking vessel has fine horizontal glass threads wrapped around its flared rim. Two rows of dark hollow glass claws curve down the sides toward a tiny, narrow foot at the base.",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_1_sC.mp3",
+          "studio_voice_label": "Anglo-Saxon Glass Claw Beaker fo…"
         }
       ],
       "causal_domino_spine": {
@@ -1092,7 +1102,9 @@
               "source_context": "Shattered into over 500 rusted pieces when the burial chamber roof collapsed at Sutton Hoo (c. AD 625), this royal helmet was pieced back together like a 3D jigsaw. **Hinge Question:** How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
               "question_badge": "SUTTON HOO ROYAL HELMET",
               "question": "Look closely at the eyebrows and nose-guard on Source A. What hidden animals can you spot, and what did this helmet show?",
-              "model_answer": "Source A hides a gilded flying dragon forming the nose-bridge, moustache, and eyebrows, which end in tiny boar heads! Wearing such dazzling armour proved this ruler — likely King Raedwald — was a rich, powerful king."
+              "model_answer": "Source A hides a gilded flying dragon forming the nose-bridge, moustache, and eyebrows, which end in tiny boar heads! Wearing such dazzling armour proved this ruler — likely King Raedwald — was a rich, powerful king.",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_2_sA.mp3",
+              "studio_voice_label": "The Iconic Iron-and-Bronze Sutto…"
             }
           ]
         },
@@ -1125,7 +1137,7 @@
               "model_answer": "Christian monasteries brought Latin reading, schools, and book-making on calfskin vellum to Britain, creating painted masterpieces like the Lindisfarne Gospels and Bede’s first English history book.",
               "text": "Venerable Bede (AD 731): \"I have spent all the remainder of my life in this monastery [...] and amidst the daily care of singing in the church, I always took delight in learning, teaching, and writing.\"<br><br><strong>In plain words:</strong> Bede says he lived happily inside Jarrow Monastery from boyhood, spending every day singing in church, studying, teaching pupils, and writing history books.",
               "provenance": "Cross-carpet folio from the Lindisfarne Gospels (British Library Cotton MS Nero D.IV, c. AD 715), paired with Venerable Bede, History of the English Church and People of the English Nation, Book V, Chapter 24 (AD 731), translated by J. A. Giles (1847 — Public Domain).",
-              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_2_sC.mp3",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_2_sB.mp3",
               "studio_voice_label": "Illuminated Carpet Page from the…"
             }
           ]
@@ -1156,7 +1168,9 @@
               "source_context": "Before every village had a stone church, northern sculptors raised tall stone crosses outdoors as preaching landmarks — carving Christian scenes beside Old English runes! **Hinge Question:** Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
               "question_badge": "RUNES & CHRISTIAN CROSS",
               "question": "Examine the tall stone cross in Source C. Why did sculptors carve both Christian scenes and Old English runes on one monument?",
-              "model_answer": "Most villagers could not read Latin books inside monasteries, so tall outdoor crosses told Christian stories in stone while using familiar Old English runes local people already knew."
+              "model_answer": "Most villagers could not read Latin books inside monasteries, so tall outdoor crosses told Christian stories in stone while using familiar Old English runes local people already knew.",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_2_sC.mp3",
+              "studio_voice_label": "Carved Anglo-Saxon Stone High Cr…"
             }
           ]
         }
@@ -1177,7 +1191,10 @@
           "source_context": "Shattered into over 500 rusted pieces when the burial chamber roof collapsed at Sutton Hoo (c. AD 625), this royal helmet was pieced back together like a 3D jigsaw. **Hinge Question:** How does the Sutton Hoo helmet overturn the old myth that the centuries after Rome left were a \"Dark Age\" of clumsy craftsmanship?",
           "question_badge": "SUTTON HOO ROYAL HELMET",
           "question": "Look closely at the eyebrows and nose-guard on Source A. What hidden animals can you spot, and what did this helmet show?",
-          "model_answer": "Source A hides a gilded flying dragon forming the nose-bridge, moustache, and eyebrows, which end in tiny boar heads! Wearing such dazzling armour proved this ruler — likely King Raedwald — was a rich, powerful king."
+          "model_answer": "Source A hides a gilded flying dragon forming the nose-bridge, moustache, and eyebrows, which end in tiny boar heads! Wearing such dazzling armour proved this ruler — likely King Raedwald — was a rich, powerful king.",
+          "text": "Artefact note: Shining silvered panels stamped with warrior scenes and braided knotwork cover the dome and hinged cheek-guards of this full-face helmet. Tiny square red garnets line two arched golden eyebrows beside a gilded nose-guard and engraved moustache plate.",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_2_sA.mp3",
+          "studio_voice_label": "The Iconic Iron-and-Bronze Sutto…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l2_src_b",
@@ -1197,7 +1214,7 @@
           "model_answer": "Christian monasteries brought Latin reading, schools, and book-making on calfskin vellum to Britain, creating painted masterpieces like the Lindisfarne Gospels and Bede’s first English history book.",
           "text": "Venerable Bede (AD 731): \"I have spent all the remainder of my life in this monastery [...] and amidst the daily care of singing in the church, I always took delight in learning, teaching, and writing.\"<br><br><strong>In plain words:</strong> Bede says he lived happily inside Jarrow Monastery from boyhood, spending every day singing in church, studying, teaching pupils, and writing history books.",
           "provenance": "Cross-carpet folio from the Lindisfarne Gospels (British Library Cotton MS Nero D.IV, c. AD 715), paired with Venerable Bede, History of the English Church and People of the English Nation, Book V, Chapter 24 (AD 731), translated by J. A. Giles (1847 — Public Domain).",
-          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_2_sC.mp3",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_2_sB.mp3",
           "studio_voice_label": "Illuminated Carpet Page from the…"
         },
         {
@@ -1215,7 +1232,10 @@
           "source_context": "Before every village had a stone church, northern sculptors raised tall stone crosses outdoors as preaching landmarks — carving Christian scenes beside Old English runes! **Hinge Question:** Why did Anglo-Saxon stone carvers put Old English runes AND Christian figures together on the very same monument?",
           "question_badge": "RUNES & CHRISTIAN CROSS",
           "question": "Examine the tall stone cross in Source C. Why did sculptors carve both Christian scenes and Old English runes on one monument?",
-          "model_answer": "Most villagers could not read Latin books inside monasteries, so tall outdoor crosses told Christian stories in stone while using familiar Old English runes local people already knew."
+          "model_answer": "Most villagers could not read Latin books inside monasteries, so tall outdoor crosses told Christian stories in stone while using familiar Old English runes local people already knew.",
+          "text": "Artefact note: Rising over four metres tall beside a Cumbria stone church and smaller gravestones, this weathered sandstone shaft stands outdoors in all weathers. Three deep arched niches hold carved robed figures separated by rectangular panels of straight-lined Old English runes.",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_2_sC.mp3",
+          "studio_voice_label": "Carved Anglo-Saxon Stone High Cr…"
         }
       ],
       "causal_domino_spine": {
@@ -1989,7 +2009,9 @@
               "source_context": "Carved on Holy Island within decades of the first raids, one side shows Christian prayers while this side freezes a line of warriors marching with axes and swords! **Hinge Question:** Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
               "question_badge": "9TH-CENTURY RAIDER CARVING",
               "question": "Look at the seven carved warriors on Source B. What weapons do they carry, and what modern helmet myth is missing?",
-              "model_answer": "Source B shows warriors raising heavy battle-axes and broadswords overhead, and proves real Vikings did NOT wear horned helmets — horns were invented for 19th-century stage costumes!"
+              "model_answer": "Source B shows warriors raising heavy battle-axes and broadswords overhead, and proves real Vikings did NOT wear horned helmets — horns were invented for 19th-century stage costumes!",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_3_sB.mp3",
+              "studio_voice_label": "Carved 9th-Century Lindisfarne \"…"
             }
           ]
         },
@@ -2019,7 +2041,9 @@
               "source_context": "Forging a strong iron sword took weeks of skilled smithing so swords belonged to rich leaders, while sturdy iron battle-axes and spears armed ordinary Viking crewmen. **Hinge Question:** Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
               "question_badge": "FORGED SWORD & BATTLE-AXE",
               "question": "Examine the iron sword and axe in Source C. Why were weapons both deadly battle tools and prized Viking family treasures?",
-              "model_answer": "Forging a strong double-edged sword took huge skill and expense, so fine swords were given proud nicknames and passed down in families while iron axes split wooden shields in battle."
+              "model_answer": "Forging a strong double-edged sword took huge skill and expense, so fine swords were given proud nicknames and passed down in families while iron axes split wooden shields in battle.",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_3_sC.mp3",
+              "studio_voice_label": "Forged Viking Iron Broadsword &…"
             }
           ]
         }
@@ -2061,7 +2085,10 @@
           "source_context": "Carved on Holy Island within decades of the first raids, one side shows Christian prayers while this side freezes a line of warriors marching with axes and swords! **Hinge Question:** Notice closely: are the warriors carved on the Lindisfarne Stone wearing horned helmets, or is that a modern myth?",
           "question_badge": "9TH-CENTURY RAIDER CARVING",
           "question": "Look at the seven carved warriors on Source B. What weapons do they carry, and what modern helmet myth is missing?",
-          "model_answer": "Source B shows warriors raising heavy battle-axes and broadswords overhead, and proves real Vikings did NOT wear horned helmets — horns were invented for 19th-century stage costumes!"
+          "model_answer": "Source B shows warriors raising heavy battle-axes and broadswords overhead, and proves real Vikings did NOT wear horned helmets — horns were invented for 19th-century stage costumes!",
+          "text": "Artefact note: Carved in deep relief across a round-topped pale sandstone slab, seven marching figures stride forward in a tight single line. Each figure wears a ridged knee-length tunic and raises heavy weapons high above a smooth, rounded head.",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_3_sB.mp3",
+          "studio_voice_label": "Carved 9th-Century Lindisfarne \"…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l3_src_c",
@@ -2078,7 +2105,10 @@
           "source_context": "Forging a strong iron sword took weeks of skilled smithing so swords belonged to rich leaders, while sturdy iron battle-axes and spears armed ordinary Viking crewmen. **Hinge Question:** Why were isolated monasteries with unarmed monks helpless when warriors carrying weapons like Source C leaped ashore?",
           "question_badge": "FORGED SWORD & BATTLE-AXE",
           "question": "Examine the iron sword and axe in Source C. Why were weapons both deadly battle tools and prized Viking family treasures?",
-          "model_answer": "Forging a strong double-edged sword took huge skill and expense, so fine swords were given proud nicknames and passed down in families while iron axes split wooden shields in battle."
+          "model_answer": "Forging a strong double-edged sword took huge skill and expense, so fine swords were given proud nicknames and passed down in families while iron axes split wooden shields in battle.",
+          "text": "Artefact note: Seen in close-up, this polished Viking sword hilt features a five-lobed metal pommel split into neat sections by braided silver wire. Below it, coiled copper-red animal patterns gleam along the curved guard above a wire-wrapped grip.",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_3_sC.mp3",
+          "studio_voice_label": "Forged Viking Iron Broadsword &…"
         }
       ],
       "causal_domino_spine": {
@@ -2890,7 +2920,76 @@
               "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_4_sB.mp3",
               "studio_voice_label": "Silver Penny Coin of King Alfred…"
             }
-          ]
+          ],
+          "concept_widget": {
+            "type": "power_seesaw",
+            "eyebrow": "KS2 Interactive Balance Explorer",
+            "title": "AD 871–899: How King Alfred Turned Back the Viking Tide",
+            "default_index": 0,
+            "caption": "Click each milestone tab to see how the balance of power shifted between the Viking Great Heathen Army and King Alfred's Wessex.",
+            "eras": [
+              {
+                "year": "AD 871–878 Winter at Athelney",
+                "headline": "Guthrum's Midwinter Strike Forces Alfred Into the Marshes",
+                "color": "#dc2626",
+                "summary": "After conquering York, East Anglia, and Mercia, Guthrum seized Chippenham in January AD 878 and drove King Alfred into hiding at Athelney in the Somerset marshes.",
+                "pillars": [
+                  {
+                    "actor": "Viking Great Heathen Army",
+                    "share": 80,
+                    "status": "Holds northern and eastern England plus Chippenham in Wessex",
+                    "color": "#f59e0b"
+                  },
+                  {
+                    "actor": "King Alfred's Wessex",
+                    "share": 20,
+                    "status": "Small loyal band planning a spring fightback on Athelney",
+                    "color": "#0284c7"
+                  }
+                ]
+              },
+              {
+                "year": "May AD 878 Battle of Edington and Danelaw Treaty",
+                "headline": "Shield Wall Victory at Edington Splits England Along Watling Street",
+                "color": "#0284c7",
+                "summary": "Alfred rallied the Wessex fyrd at Egbert's Stone and defeated Guthrum at Edington. Guthrum was baptised as Aethelstan, and their treaty divided England into Saxon lands and the Danelaw.",
+                "pillars": [
+                  {
+                    "actor": "Viking Great Heathen Army",
+                    "share": 50,
+                    "status": "Governs northern and eastern Danelaw farms under Danish law",
+                    "color": "#f59e0b"
+                  },
+                  {
+                    "actor": "King Alfred's Wessex",
+                    "share": 50,
+                    "status": "Rules Wessex, western Mercia, and walled London from AD 886",
+                    "color": "#0284c7"
+                  }
+                ]
+              },
+              {
+                "year": "AD 880s–899 Walled Burhs and Navy",
+                "headline": "33 Fortified Burhs, 60-Oar Warships, and Schools of Learning",
+                "color": "#059669",
+                "summary": "Alfred ringed Wessex with 33 earth-walled burhs no further than 20 miles apart, launched fast 60-oar coastal warships, and opened court schools translating Latin into Old English.",
+                "pillars": [
+                  {
+                    "actor": "Viking Great Heathen Army",
+                    "share": 35,
+                    "status": "Checked by walled burh garrisons and coastal patrol ships",
+                    "color": "#f59e0b"
+                  },
+                  {
+                    "actor": "King Alfred's Wessex",
+                    "share": 65,
+                    "status": "33 fortified burhs, royal fleet, and strong Saxon kingdom",
+                    "color": "#10b981"
+                  }
+                ]
+              }
+            ]
+          }
         },
         {
           "act": 3,
@@ -3795,9 +3894,89 @@
               "source_context": "Long before chess reached Britain, Viking families loved playing hnefatafl (\"King’s Table\") by the fire — one player guarded a central King piece while the other tried to surround him! **Hinge Question:** What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
               "question_badge": "STRATEGY BY THE HEARTH FIRE",
               "question": "Inspect Source B. What does playing tactical board games like hnefatafl tell us about what Vikings valued in daily life?",
-              "model_answer": "Source B shows Viking families were not fighting all the time — they enjoyed evening board games, riddles, sagas, and ice-skating while teaching children smart tactical thinking."
+              "model_answer": "Source B shows Viking families were not fighting all the time — they enjoyed evening board games, riddles, sagas, and ice-skating while teaching children smart tactical thinking.",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_5_sB.mp3",
+              "studio_voice_label": "Viking-Age Strategy Gaming Piece…"
             }
-          ]
+          ],
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "KS2 Interactive History Explorer",
+            "title": "Viking Jorvik: Three Trade Webs Linking Britain to the World",
+            "default_index": 0,
+            "caption": "Switch across the three tabs to inspect archaeological clues proving Vikings were far-reaching merchants and ocean navigators.",
+            "items": [
+              {
+                "tab_label": "1. Coppergate Finds",
+                "title": "Luxury Imports Uncovered in Jorvik's Wet Peat",
+                "dates": "9th–10th Century AD",
+                "badge": "Jorvik Market Clues",
+                "color": "#0284c7",
+                "bg_color": "rgba(2, 132, 199, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Byzantium",
+                    "value": "Shimmering woven silk cloth"
+                  },
+                  {
+                    "label": "Baltic and Germany",
+                    "value": "Golden amber beads and wine jars"
+                  },
+                  {
+                    "label": "Red Sea",
+                    "value": "Tropical cowrie shell brought north"
+                  }
+                ],
+                "takeaway": "Objects preserved beneath Coppergate in York prove Jorvik traded peacefully across distant seas."
+              },
+              {
+                "tab_label": "2. Eastern River Trade",
+                "title": "Silver Dirham Coins from Baghdad and Samarkand",
+                "dates": "9th–10th Century AD",
+                "badge": "Russian River Routes",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Goods Sold East",
+                    "value": "Warm northern furs and walrus ivory"
+                  },
+                  {
+                    "label": "Coins Brought Back",
+                    "value": "Pure silver Arabic dirham coins"
+                  },
+                  {
+                    "label": "Mint Cities",
+                    "value": "Baghdad and Samarkand in Asia"
+                  }
+                ],
+                "takeaway": "Viking river merchants sailed deep through eastern Europe to trade with wealthy Islamic markets."
+              },
+              {
+                "tab_label": "3. Western Knarr Voyages",
+                "title": "Ocean Crossings to Iceland, Greenland, and Vinland",
+                "dates": "9th–10th Century AD",
+                "badge": "North Atlantic Voyagers",
+                "color": "#059669",
+                "bg_color": "rgba(5, 150, 105, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Cargo Ship",
+                    "value": "Wide, deep-bellied wooden knarr"
+                  },
+                  {
+                    "label": "Island Settlements",
+                    "value": "Farms in Iceland and icy Greenland"
+                  },
+                  {
+                    "label": "Furthest Landing",
+                    "value": "Reached Vinland in North America"
+                  }
+                ],
+                "takeaway": "Sturdy knarr cargo vessels carried families, livestock, and timber across stormy open oceans."
+              }
+            ]
+          }
         },
         {
           "act": 3,
@@ -3825,7 +4004,9 @@
               "source_context": "Carved where Norse families farmed beside Anglo-Saxons in Cumbria, the tall Gosforth Cross is shaped as a Christian cross yet also shows Norse gods like Thor and Vidar! **Hinge Question:** Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
               "question_badge": "TWO CULTURES BLENDING TOGETHER",
               "question": "Inspect the tall stone cross in Source C. What does mixing Norse myths and Christian carvings prove about Vikings and Saxons?",
-              "model_answer": "Source C proves Viking settlers gradually married Anglo-Saxon neighbours and adopted Christianity, using familiar Norse hero myths on church crosses to explain Christian beliefs."
+              "model_answer": "Source C proves Viking settlers gradually married Anglo-Saxon neighbours and adopted Christianity, using familiar Norse hero myths on church crosses to explain Christian beliefs.",
+              "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_5_sC.mp3",
+              "studio_voice_label": "10th-Century Gosforth Stone Cros…"
             }
           ]
         }
@@ -3867,7 +4048,10 @@
           "source_context": "Long before chess reached Britain, Viking families loved playing hnefatafl (\"King’s Table\") by the fire — one player guarded a central King piece while the other tried to surround him! **Hinge Question:** What do strategy board games like hnefatafl and carved bone ice-skates reveal about family leisure time inside Viking Jorvik?",
           "question_badge": "STRATEGY BY THE HEARTH FIRE",
           "question": "Inspect Source B. What does playing tactical board games like hnefatafl tell us about what Vikings valued in daily life?",
-          "model_answer": "Source B shows Viking families were not fighting all the time — they enjoyed evening board games, riddles, sagas, and ice-skating while teaching children smart tactical thinking."
+          "model_answer": "Source B shows Viking families were not fighting all the time — they enjoyed evening board games, riddles, sagas, and ice-skating while teaching children smart tactical thinking.",
+          "text": "Artefact note: Lined up in a row beside black-and-white centimetre scale bars, these four rounded gaming counters each measure barely two centimetres across. Their smooth, dome-shaped tops still carry mottled brown soil marks from centuries buried underground.",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_5_sB.mp3",
+          "studio_voice_label": "Viking-Age Strategy Gaming Piece…"
         },
         {
           "id": "ks2_anglo_saxons_vikings_l5_src_c",
@@ -3884,7 +4068,10 @@
           "source_context": "Carved where Norse families farmed beside Anglo-Saxons in Cumbria, the tall Gosforth Cross is shaped as a Christian cross yet also shows Norse gods like Thor and Vidar! **Hinge Question:** Why would a Christian churchyard cross in Viking-settled Cumbria include carvings of Norse gods and monsters alongside Jesus?",
           "question_badge": "TWO CULTURES BLENDING TOGETHER",
           "question": "Inspect the tall stone cross in Source C. What does mixing Norse myths and Christian carvings prove about Vikings and Saxons?",
-          "model_answer": "Source C proves Viking settlers gradually married Anglo-Saxon neighbours and adopted Christianity, using familiar Norse hero myths on church crosses to explain Christian beliefs."
+          "model_answer": "Source C proves Viking settlers gradually married Anglo-Saxon neighbours and adopted Christianity, using familiar Norse hero myths on church crosses to explain Christian beliefs.",
+          "text": "Artefact note: In a grassy Cumbria churchyard, this slender red sandstone shaft towers over twice as tall as the visitor beside it. Above a smooth round base, braided stone carvings and figure panels rise to a wheel-ringed cross head.",
+          "studio_audio": "/audio/sources/ks2_anglo_saxons_vikings/lesson_5_sC.mp3",
+          "studio_voice_label": "10th-Century Gosforth Stone Cros…"
         }
       ],
       "causal_domino_spine": {
@@ -6018,6 +6205,148 @@
       "studio_audio": "/audio/reading/ks2_anglo_saxons_vikings/r5.mp3",
       "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
       "audio_file": "/audio/reading/ks2_anglo_saxons_vikings/r5.mp3"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Angles, Saxons, and Jutes",
+      "pronunciation": "ANG-gulz, SAK-sunz, and JOOTS",
+      "definition": "Three seafaring peoples from northern Germany and Denmark who rowed across the North Sea to settle Britain after AD 410."
+    },
+    {
+      "term": "Cyning",
+      "pronunciation": "KOO-ning",
+      "definition": "The Old English word for a warrior king who protected his kingdom and rewarded loyal fighters in his mead hall."
+    },
+    {
+      "term": "Ceorl",
+      "pronunciation": "CHURL",
+      "definition": "An ordinary free Anglo-Saxon farmer who ploughed fields, kept livestock, wove wool, and owed service to his lord."
+    },
+    {
+      "term": "Wattle and Daub",
+      "pronunciation": "WOT-ul and DAWB",
+      "definition": "Woven hazel sticks plastered with sticky mud, clay, and straw to build warm walls inside timber village homes."
+    },
+    {
+      "term": "Mead Hall",
+      "pronunciation": "MEED hawl",
+      "definition": "A grand rectangular timber building with a central hearth fire where an Anglo-Saxon ruler feasted and held council."
+    },
+    {
+      "term": "Heptarchy",
+      "pronunciation": "HEP-tar-kee",
+      "definition": "Historians' name for the seven main Anglo-Saxon kingdoms: Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex."
+    },
+    {
+      "term": "Sutton Hoo",
+      "pronunciation": "SUT-un HOO",
+      "definition": "Royal burial mounds in Suffolk where archaeologists in 1939 uncovered an Anglo-Saxon ship imprint and helmet from around AD 625."
+    },
+    {
+      "term": "Grave Goods",
+      "pronunciation": "GRAYV goodz",
+      "definition": "Precious weapons, jewellery, coins, and feasting vessels buried beside an important person to show status or for the afterlife."
+    },
+    {
+      "term": "Missionary",
+      "pronunciation": "MISH-un-uh-ree",
+      "definition": "A religious messenger, such as Augustine or Aidan, sent to a new land to preach and persuade people to become Christians."
+    },
+    {
+      "term": "Monastery",
+      "pronunciation": "MON-uh-stree",
+      "definition": "A community where Christian monks or nuns lived to pray, farm, study, and copy sacred books by hand."
+    },
+    {
+      "term": "Vellum",
+      "pronunciation": "VEL-um",
+      "definition": "Smooth, strong writing sheets scraped and stretched from calfskin for monks to paint illuminated Gospel books with feather quills."
+    },
+    {
+      "term": "Runes",
+      "pronunciation": "ROONZ",
+      "definition": "Straight-lined letters from the early Germanic and Norse alphabet, carved onto wood, metal, and tall outdoor stone crosses."
+    },
+    {
+      "term": "Scandinavia",
+      "pronunciation": "skan-dih-NAY-vee-uh",
+      "definition": "The northern European homelands of the Vikings, made up of modern Norway, Denmark, and Sweden."
+    },
+    {
+      "term": "Clinker-Built",
+      "pronunciation": "KLINK-er-bilt",
+      "definition": "The Viking shipbuilding method of overlapping split oak planks held with iron rivets and sealed watertight with tarred wool."
+    },
+    {
+      "term": "Shallow Draught",
+      "pronunciation": "SHAL-oh draft",
+      "definition": "Needing barely one metre of water depth to float, letting Viking longships beach on sand and row far up rivers."
+    },
+    {
+      "term": "Great Heathen Army",
+      "pronunciation": "GRAYT HEE-then AR-mee",
+      "definition": "The huge Viking invasion force that landed in AD 865 under Ivar the Boneless, Halfdan, and Guthrum to conquer land."
+    },
+    {
+      "term": "Fyrd",
+      "pronunciation": "FEERD",
+      "definition": "An Anglo-Saxon part-time army of local free farmers and warriors called together by their king whenever invaders attacked."
+    },
+    {
+      "term": "Shield Wall",
+      "pronunciation": "SHEELD wawl",
+      "definition": "A tight battle line where warriors stood shoulder to shoulder locking round wooden shields together like an unbroken fence."
+    },
+    {
+      "term": "Danelaw",
+      "pronunciation": "DAYN-law",
+      "definition": "The large area of northern and eastern England settled and ruled under Danish laws after Alfred's peace treaty in AD 878."
+    },
+    {
+      "term": "Burh",
+      "pronunciation": "BUR-uh",
+      "definition": "A fortified Anglo-Saxon town ringed with high earth ramparts, ditches, and timber gates, giving us our modern word borough."
+    },
+    {
+      "term": "Jorvik",
+      "pronunciation": "YOR-vik",
+      "definition": "The bustling Viking craft centre and river trading port captured in AD 866, lying beneath the streets of modern York."
+    },
+    {
+      "term": "Dirham",
+      "pronunciation": "DEER-ham",
+      "definition": "A pure silver coin minted in Islamic cities such as Baghdad and Samarkand, traded along rivers by Viking merchants."
+    },
+    {
+      "term": "Knarr",
+      "pronunciation": "kuh-NAR",
+      "definition": "A wide, deep-hulled wooden Viking cargo ship built to carry settler families, livestock, and trade goods across open oceans."
+    },
+    {
+      "term": "Thing",
+      "pronunciation": "THING",
+      "definition": "An outdoor Viking community law-assembly where free men and women gathered to vote on laws and settle arguments fairly."
+    },
+    {
+      "term": "Aethelflaed",
+      "pronunciation": "ETH-el-fled",
+      "definition": "King Alfred's bold daughter, the Lady of the Mercians, who built walled burhs and led armies to recapture Viking Derby and Leicester."
+    },
+    {
+      "term": "Danegeld",
+      "pronunciation": "DAYN-geld",
+      "definition": "Meaning Dane-gold, huge sums of silver pennies taxed from English families to pay raiding Viking fleets to sail away."
+    },
+    {
+      "term": "Witan",
+      "pronunciation": "WIT-an",
+      "definition": "The royal council of wise Anglo-Saxon bishops and powerful earls who advised the king and chose the next monarch."
+    },
+    {
+      "term": "Housecarl",
+      "pronunciation": "HOWS-karl",
+      "definition": "An elite full-time royal bodyguard warrior armed with a heavy two-handed battle-axe who protected kings such as Cnut and Harold Godwinson."
     }
   ]
 }

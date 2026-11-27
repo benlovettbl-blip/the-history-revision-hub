@@ -114,6 +114,62 @@
       "specFile": "paper3_32_maos_china.json",
       "skipLesson0": false,
       "futureOption": true
+    },
+    "ocr_persian_empire": {
+      "examBoard": "Cambridge OCR GCSE (9-1) Ancient History (J198)",
+      "code": "J198/01-A",
+      "specFile": "ocr_j198_persian_empire.json",
+      "skipLesson0": false,
+      "activeTopics": ["KT1:1"]
+    },
+    "ocr_alexander": {
+      "examBoard": "Cambridge OCR GCSE (9-1) Ancient History (J198)",
+      "code": "J198/01-D",
+      "specFile": "ocr_j198_alexander.json",
+      "skipLesson0": false,
+      "activeTopics": ["KT1:1"]
+    },
+    "ocr_foundations_of_rome": {
+      "examBoard": "Cambridge OCR GCSE (9-1) Ancient History (J198)",
+      "code": "J198/02-A",
+      "specFile": "ocr_j198_foundations_of_rome.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "ocr_cleopatra": {
+      "examBoard": "Cambridge OCR GCSE (9-1) Ancient History (J198)",
+      "code": "J198/02-C",
+      "specFile": "ocr_j198_cleopatra.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "ocr_tyranny_democracy": {
+      "examBoard": "Cambridge OCR GCSE (9-1) Ancient History (J198)",
+      "code": "J198/01-B",
+      "specFile": "ocr_j198_tyranny_democracy.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "ocr_pericles_athens": {
+      "examBoard": "Cambridge OCR GCSE (9-1) Ancient History (J198)",
+      "code": "J198/01-C",
+      "specFile": "ocr_j198_pericles_athens.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "ocr_hannibal": {
+      "examBoard": "Cambridge OCR GCSE (9-1) Ancient History (J198)",
+      "code": "J198/02-B",
+      "specFile": "ocr_j198_hannibal.json",
+      "skipLesson0": false,
+      "futureOption": true
+    },
+    "ocr_britannia": {
+      "examBoard": "Cambridge OCR GCSE (9-1) Ancient History (J198)",
+      "code": "J198/02-D",
+      "specFile": "ocr_j198_britannia.json",
+      "skipLesson0": false,
+      "futureOption": true
     }
   }
 }

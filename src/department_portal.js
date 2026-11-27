@@ -239,6 +239,58 @@ const UNIT_HEALTH_DATA = [
     textbookPdf: '/pdfs/ks2_maya_civilisation_textbook.pdf',
   },
   {
+    year: 'Key Stage 2',
+    ks: 'Primary KS2',
+    uid: 'ks2_crime_and_punishment',
+    name: 'Crime & Punishment Through Time (AD 43–Present)',
+    enquiries: '6 Enquiries',
+    hours: '6–9 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '12-Page Classroom Textbook',
+    mapText: 'Britain 7-Site Justice Map (Roman Bath to 1984 Leicester DNA)',
+    workbookPdf: '/pdfs/ks2_crime_and_punishment_pupil_workbook.pdf',
+    textbookPdf: '/pdfs/ks2_crime_and_punishment_textbook.pdf',
+  },
+  {
+    year: 'Key Stage 2',
+    ks: 'Primary KS2',
+    uid: 'ks2_kingdom_of_benin',
+    name: 'The Kingdom of Benin (c. AD 900–1897)',
+    enquiries: '6 Enquiries',
+    hours: '6–9 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '12-Page Classroom Textbook',
+    mapText: 'Benin City (Edo), 16,000 km Iya Earthworks, Ife & Gwato Map',
+    workbookPdf: '/pdfs/ks2_kingdom_of_benin_pupil_workbook.pdf',
+    textbookPdf: '/pdfs/ks2_kingdom_of_benin_textbook.pdf',
+  },
+  {
+    year: 'Key Stage 2',
+    ks: 'Primary KS2',
+    uid: 'ks2_victorian_britain',
+    name: 'Victorian Britain (1837–1901)',
+    enquiries: '6 Enquiries',
+    hours: '6–9 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '12-Page Classroom Textbook',
+    mapText: 'Britain Railways, Cotton Mills, Coal Valleys & Seaside Map',
+    workbookPdf: '/pdfs/ks2_victorian_britain_pupil_workbook.pdf',
+    textbookPdf: '/pdfs/ks2_victorian_britain_textbook.pdf',
+  },
+  {
+    year: 'Key Stage 2',
+    ks: 'Primary KS2',
+    uid: 'ks2_local_history_detective',
+    name: 'History on Our Doorstep: Local Detective Study',
+    enquiries: '6 Enquiries',
+    hours: '6–9 Hours',
+    workbookText: '16-Page Pupil Workbook',
+    textbookText: '12-Page Classroom Textbook',
+    mapText: 'Britain Place-Name Endings (-chester, -ton, -by) Detective Map',
+    workbookPdf: '/pdfs/ks2_local_history_detective_pupil_workbook.pdf',
+    textbookPdf: '/pdfs/ks2_local_history_detective_textbook.pdf',
+  },
+  {
     year: 'Key Stage 3',
     ks: 'KS3 Core',
     uid: 'water_and_sanitation',
@@ -540,7 +592,7 @@ export async function renderDepartmentPortal(targetTab = 'tracker') {
 
         <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
           <button type="button" onclick="window.switchPortalTab('sequence')" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; border: 1.5px solid #1e3a8a; color: #1e3a8a; background: #fff; cursor: pointer; transition: all 0.15s ease;" onmouseover="this.style.background='#eff6ff'" onmouseout="this.style.background='#fff'">
-            <i class="fa-solid fa-table-columns"></i> 5-Year Termly Sequence
+            <i class="fa-solid fa-table-columns"></i> All-Through Sequence (KS2–Y11)
           </button>
           <a href="/pdfs/history_marking_and_feedback_policy_v2.pdf" target="_blank" class="btn btn-outline-primary" style="display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 700; text-decoration: none; border: 1.5px solid #0284c7; color: #0284c7; background: #fff; transition: all 0.15s ease;" onmouseover="this.style.background='#f0f9ff'" onmouseout="this.style.background='#fff'">
             <i class="fa-solid fa-file-signature"></i> Marking Policy (PDF)
@@ -561,10 +613,10 @@ export async function renderDepartmentPortal(targetTab = 'tracker') {
             Curriculum Scope
           </div>
           <div style="font-size: 1.85rem; font-weight: 900; color: #0f172a; font-family: 'Inter', sans-serif;">
-            18 Units <span style="font-size: 0.88rem; font-weight: 600; color: #1e3a8a;">(KS3 &bull; GCSE &bull; KS2)</span>
+            30 Units <span style="font-size: 0.88rem; font-weight: 600; color: #1e3a8a;">(KS2 &bull; KS3 &bull; GCSE)</span>
           </div>
           <div style="font-size: 0.82rem; color: #10b981; margin-top: 4px; font-weight: 700;">
-            <i class="fa-solid fa-check-circle"></i> Chronological Breadth c.1066–Present
+            <i class="fa-solid fa-check-circle"></i> Chronological Breadth Prehistory–Present
           </div>
         </div>
 
@@ -573,7 +625,7 @@ export async function renderDepartmentPortal(targetTab = 'tracker') {
             Published Enquiries
           </div>
           <div style="font-size: 1.85rem; font-weight: 900; color: #0f172a; font-family: 'Inter', sans-serif;">
-            136 Lessons
+            237 Enquiries
           </div>
           <div style="font-size: 0.82rem; color: #10b981; margin-top: 4px; font-weight: 700;">
             <i class="fa-solid fa-check-circle"></i> Christine Counsell Disciplinary Model
@@ -585,7 +637,7 @@ export async function renderDepartmentPortal(targetTab = 'tracker') {
             Disciplinary Vocabulary
           </div>
           <div style="font-size: 1.85rem; font-weight: 900; color: #0f172a; font-family: 'Inter', sans-serif;">
-            850+ Terms
+            1,380+ Terms
           </div>
           <div style="font-size: 0.82rem; color: #10b981; margin-top: 4px; font-weight: 700;">
             <i class="fa-solid fa-spell-check"></i> Alex Quigley Tier 2 &amp; Tier 3 Lexicon
@@ -611,10 +663,10 @@ export async function renderDepartmentPortal(targetTab = 'tracker') {
           <i class="fa-solid fa-print"></i> 1. Print-Room &amp; All Booklets
         </button>
         <button type="button" data-tab="curriculum" class="portal-nav-tab ${activePortalTab === 'curriculum' ? 'active' : ''}" onclick="window.switchPortalTab('curriculum')">
-          <i class="fa-solid fa-map-location-dot"></i> 2. Schemes of Work (KS3)
+          <i class="fa-solid fa-map-location-dot"></i> 2. Schemes of Work (KS2–GCSE)
         </button>
         <button type="button" data-tab="sequence" class="portal-nav-tab ${activePortalTab === 'sequence' ? 'active' : ''}" onclick="window.switchPortalTab('sequence')">
-          <i class="fa-solid fa-table-columns"></i> 3. 5-Year Termly Sequence
+          <i class="fa-solid fa-table-columns"></i> 3. All-Through Sequence (KS2–Y11)
         </button>
         <button type="button" data-tab="pedagogy" class="portal-nav-tab ${activePortalTab === 'pedagogy' ? 'active' : ''}" onclick="window.switchPortalTab('pedagogy')">
           <i class="fa-solid fa-brain"></i> 4. Disciplinary Pedagogy
@@ -865,11 +917,11 @@ function renderGovernanceTab(container) {
               <h4 style="margin: 0; font-size: 0.95rem; font-weight: 800; color: #ffffff;">Curriculum Map</h4>
             </div>
             <p style="margin: 0 0 14px 0; font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
-              Interactive Years 7–11 progression matrix, Counsell 4-act enquiry sequencing, and printable PDF overviews.
+              Interactive KS2 &amp; Years 7–11 progression matrix, Counsell 4-act enquiry sequencing, and printable PDF overviews.
             </p>
           </div>
           <button type="button" onclick="window.switchPortalTab('sequence')" style="width: 100%; padding: 8px 12px; background: #2563eb; color: #ffffff; border: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px;">
-            <i class="fa-solid fa-arrow-right"></i> Open 5-Year Sequence
+            <i class="fa-solid fa-arrow-right"></i> Open All-Through Sequence
           </button>
         </div>
 
@@ -919,7 +971,7 @@ function renderGovernanceTab(container) {
               <h4 style="margin: 0; font-size: 0.95rem; font-weight: 800; color: #ffffff;">KS2 Teacher Hub</h4>
             </div>
             <p style="margin: 0 0 14px 0; font-size: 0.82rem; color: #cbd5e1; line-height: 1.45;">
-              Primary phase companion hub: WWII Home Front 11-enquiry unit, Kindertransport atlas, and KS2 pupil workbooks.
+              Primary phase companion hub: 12 complete Key Stage 2 courses (77 enquiries), Interactive Storybook Labs, and KS2 pupil workbooks.
             </p>
           </div>
           <a href="/ks2_portal.html" target="_blank" style="width: 100%; padding: 8px 12px; background: #4f46e5; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 0.82rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-sizing: border-box;">
@@ -1318,10 +1370,10 @@ function renderCurriculumTab(container) {
               Interactive Syllabus Explorer
             </span>
             <h3 style="margin: 6px 0 2px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.4rem; color: #0f172a; font-weight: 800;">
-              8-Enquiry Disciplinary Schemes of Work (KS3)
+              Disciplinary Schemes of Work Explorer (KS2 &amp; KS3)
             </h3>
             <p style="margin: 0; font-size: 0.88rem; color: #64748b;">
-              Select a Key Stage 3 unit to inspect the enquiry sequence, core disciplinary vocabulary, primary archival records, and authentic historical individuals.
+              Select a Key Stage 2 or Key Stage 3 unit to inspect the enquiry sequence, core disciplinary vocabulary, primary archival records, and authentic historical individuals.
             </p>
           </div>
 
@@ -1351,7 +1403,7 @@ function renderCurriculumTab(container) {
                 ${currentUnit.keyStage || 'Key Stage 3'} &bull; Core Syllabus
               </span>
               <span style="font-size: 0.75rem; font-weight: 700; color: #64748b;">
-                8 Enquiries &bull; 16 Hours Curriculum Time
+                ${currentUnit.enquiries.length} Enquiries &bull; ${currentUnit.enquiries.length * 2} Hours Curriculum Time
               </span>
             </div>
             <h4 style="margin: 0 0 6px 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.25rem; color: #0f172a; font-weight: 800;">
@@ -1377,7 +1429,7 @@ function renderCurriculumTab(container) {
               <i class="fa-solid fa-layer-group"></i> Combined Workbook (24p)
             </a>` : ''}
             <button type="button" onclick="window.switchPortalTab('sequence')" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; background: #eff6ff; color: #1e40af; border: 1.5px solid #bfdbfe; border-radius: 6px; font-size: 0.78rem; font-weight: 700; cursor: pointer; transition: background 0.15s ease;">
-              <i class="fa-solid fa-table-columns"></i> 5-Year Termly Sequence &rarr;
+              <i class="fa-solid fa-table-columns"></i> All-Through Sequence (KS2–Y11) &rarr;
             </button>
           </div>
         </div>
@@ -1504,29 +1556,28 @@ function renderCurriculumTab(container) {
       <!-- Disciplinary Skills Progression Matrix -->
       <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
         <h3 style="margin: 0 0 4px 0; font-size: 1.25rem; font-weight: 800; color: #0f172a;">
-          Disciplinary Skills Progression Matrix (Years 7–11)
+          Disciplinary Skills Progression Matrix (Key Stage 2 &amp; Years 7–11)
         </h3>
         <p style="margin: 0 0 16px 0; font-size: 0.88rem; color: #64748b;">
-          Vertical disciplinary continuum mapping progression across 6 core historical thinking concepts.
+          Vertical all-through disciplinary continuum mapping progression from Lower KS2 (Years 3–4) and Upper KS2 (Years 5–6) through Years 7–11.
         </p>
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
-          ${Object.entries(DISCIPLINARY_STRANDS)
-            .map(
-              ([key, strand]) => `
-            <div style="border: 1px solid #cbd5e1; border-left: 4px solid #1e3a8a; border-radius: 8px; padding: 14px; background: #f8fafc;">
-              <div style="font-weight: 800; font-size: 0.95rem; color: #1e3a8a; margin-bottom: 4px;">
-                ${strand.label}
+          ${DISCIPLINARY_STRANDS.map(
+            (strand) => `
+            <div style="border: 1px solid #cbd5e1; border-left: 4px solid ${strand.color || '#1e3a8a'}; border-radius: 8px; padding: 14px; background: #f8fafc;">
+              <div style="font-weight: 800; font-size: 0.95rem; color: #0f172a; margin-bottom: 4px; display: flex; align-items: center; gap: 7px;">
+                <i class="${strand.icon || 'fa-solid fa-stairs'}" style="color: ${strand.color || '#1e3a8a'};"></i>
+                <span>${strand.title || strand.label || ''}</span>
               </div>
-              <p style="margin: 0 0 8px 0; font-size: 0.82rem; color: #475569; line-height: 1.4;">
-                ${strand.description}
+              <p style="margin: 0 0 8px 0; font-size: 0.82rem; color: #475569; line-height: 1.45;">
+                ${strand.summary || strand.description || ''}
               </p>
-              <div style="font-size: 0.75rem; color: #64748b; font-style: italic;">
-                Progression tracked across: ${strand.levels ? Object.keys(strand.levels).join(' &bull; ') : 'Y7–Y11'}
+              <div style="font-size: 0.74rem; color: #64748b; font-weight: 600;">
+                Tracked across: ${strand.years ? Object.keys(strand.years).join(' &bull; ') : 'KS2–Y11'}
               </div>
             </div>
           `,
-            )
-            .join('')}
+          ).join('')}
         </div>
       </div>
 

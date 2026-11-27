@@ -1,0 +1,827 @@
+{
+  "unit_id": "ks2_kingdom_of_benin",
+  "lessons": {
+    "lesson_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "rainforest",
+            "bullet": "rainforest → Lush tropical woodland in southern Nigeria supplying yams and palm oil."
+          },
+          {
+            "hint": "Ogiso",
+            "bullet": "Ogiso → Early rulers of Benin who united forest villages and settled disputes."
+          },
+          {
+            "hint": "Kings of the Sky",
+            "bullet": "Kings of the Sky → English meaning of the sacred royal title Ogiso."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "In southern Nigeria’s rainforest, Edo villages grew yams and oil palms and united under thirty-one early Ogiso rulers."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "United leadership let villages organise huge building teams."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During c. AD 900, edo villagers and ogiso rulers strengthened Benin through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining rainforest with Ogiso enabled Edo communities to ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of Kings of the Sky, the Kingdom of Benin ____________."
+          }
+        ],
+        "watch_out": "In southern Nigeria’s rainforest, Edo villages grew yams and oil palms and united under thirty-one early Ogiso rulers. United leadership let villages organise huge building teams.",
+        "prose_hash": "54614ddac3",
+        "prose_fp": "ffb9e28f",
+        "question_hash": "87fc1eb7fa"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Iya",
+            "bullet": "Iya → Deep protective ditches and high earth banks surrounding Edo towns."
+          },
+          {
+            "hint": "red laterite clay",
+            "bullet": "red laterite clay → Iron-rich tropical soil that baked rock-hard in the hot sun."
+          },
+          {
+            "hint": "sixteen thousand kilometres",
+            "bullet": "sixteen thousand kilometres → Total length of Benin’s linked village and city earthworks."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Using iron hoes and baskets, Edo communities dug 16,000 kilometres of deep Iya ditches and sun-baked red laterite walls around 500+ settlements."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Meanwhile, communities in AD 900 Britain lived on a very different scale."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CORE PURPOSE",
+            "stem": "Faced with new needs in c. AD 900–1180, edo earthwork digging teams turned to ____________."
+          },
+          {
+            "badge": "HOW IT WORKED",
+            "stem": "Through Iya and red laterite clay, royal craft and order ____________."
+          },
+          {
+            "badge": "LASTING IMPACT",
+            "stem": "This mattered because sixteen thousand kilometres meant that ____________."
+          }
+        ],
+        "watch_out": "Using iron hoes and baskets, Edo communities dug 16,000 kilometres of deep Iya ditches and sun-baked red laterite walls around 500+ settlements. Meanwhile, communities in AD 900 Britain lived on a very different scale.",
+        "prose_hash": "c65b6efed4",
+        "prose_fp": "7c27f7e3",
+        "question_hash": "b52cbf8480"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Anglo-Saxon villages",
+            "bullet": "Anglo-Saxon villages → Small British farming settlements growing barley and herding sheep."
+          },
+          {
+            "hint": "timber burhs",
+            "bullet": "timber burhs → Walled Anglo-Saxon towns built to defend against Viking raids."
+          },
+          {
+            "hint": "earthwork walls",
+            "bullet": "earthwork walls → Monumental linked Benin ramparts four times longer than China’s Great Wall."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "While Anglo-Saxon Britain built smaller timber burhs and wrote on parchment, Edo created monumental rainforest earthworks and oral court traditions."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Around AD 1180, Edo elders invited a new royal dynasty from sacred Ife."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL CONTRAST",
+            "stem": "Across c. AD 900, Anglo-Saxon villages stood out because ____________."
+          },
+          {
+            "badge": "PRIMARY CLUE",
+            "stem": "Evidence from timber burhs proves that edo builders and anglo-saxons ____________."
+          },
+          {
+            "badge": "BIGGER STORY",
+            "stem": "Linking straight to earthwork walls, this turning point ____________."
+          }
+        ],
+        "watch_out": "While Anglo-Saxon Britain built smaller timber burhs and wrote on parchment, Edo created monumental rainforest earthworks and oral court traditions. Around AD 1180, Edo elders invited a new royal dynasty from sacred Ife.",
+        "prose_hash": "872ca8521b",
+        "prose_fp": "46008669",
+        "question_hash": "3a480b5a3f"
+      }
+    ],
+    "lesson_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Uzama elders",
+            "bullet": "Uzama elders → Senior Edo kingmakers who banished the last cruel Ogiso ruler."
+          },
+          {
+            "hint": "sacred Ife",
+            "bullet": "sacred Ife → Yoruba spiritual city north-west of Benin where Oranmiyan came from."
+          },
+          {
+            "hint": "Oba Eweka I",
+            "bullet": "Oba Eweka I → Oranmiyan’s Edo-born son who founded Benin’s royal Oba dynasty."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "After banishing the last Ogiso, Uzama elders welcomed Prince Oranmiyan from sacred Ife, whose Edo-born son became Oba Eweka I."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Three centuries later, a bold warrior-king transformed the capital."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CORE PURPOSE",
+            "stem": "Faced with new needs in c. AD 1180, prince oranmiyan and oba eweka i turned to ____________."
+          },
+          {
+            "badge": "HOW IT WORKED",
+            "stem": "Through Uzama elders and sacred Ife, royal craft and order ____________."
+          },
+          {
+            "badge": "LASTING IMPACT",
+            "stem": "This mattered because Oba Eweka I meant that ____________."
+          }
+        ],
+        "watch_out": "After banishing the last Ogiso, Uzama elders welcomed Prince Oranmiyan from sacred Ife, whose Edo-born son became Oba Eweka I. Three centuries later, a bold warrior-king transformed the capital.",
+        "prose_hash": "082cb0ad74",
+        "prose_fp": "b2cb8fc7",
+        "question_hash": "4ee8b65364"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Oba Ewuare the Great",
+            "bullet": "Oba Ewuare the Great → Fifteenth-century warrior-king who rebuilt Edo as a grand capital."
+          },
+          {
+            "hint": "nine fortified gates",
+            "bullet": "nine fortified gates → Guarded wooden entrances collecting royal tolls around the inner moat."
+          },
+          {
+            "hint": "palm-oil lamps",
+            "bullet": "palm-oil lamps → Tall iron street lights keeping Benin’s broad avenues bright after dark."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Oba Ewuare dug a huge inner city moat with nine guarded toll gates and built wide avenues with drains and palm-oil street lamps."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Safe, wealthy avenues supported dazzling palace art and guilds."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL CONTRAST",
+            "stem": "Across c. AD 1440–1473, Oba Ewuare the Great stood out because ____________."
+          },
+          {
+            "badge": "PRIMARY CLUE",
+            "stem": "Evidence from nine fortified gates proves that oba ewuare the great ____________."
+          },
+          {
+            "badge": "BIGGER STORY",
+            "stem": "Linking straight to palm-oil lamps, this turning point ____________."
+          }
+        ],
+        "watch_out": "Oba Ewuare dug a huge inner city moat with nine guarded toll gates and built wide avenues with drains and palm-oil street lamps. Safe, wealthy avenues supported dazzling palace art and guilds.",
+        "prose_hash": "2885867007",
+        "prose_fp": "b39a48d5",
+        "question_hash": "66ca065c94"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "brass palace birds",
+            "bullet": "brass palace birds → Giant cast metal birds perched high on pointed palace roof turrets."
+          },
+          {
+            "hint": "red coral beads",
+            "bullet": "red coral beads → Polished sea-coral crowns and collars symbolising the Oba’s sacred rank."
+          },
+          {
+            "hint": "craft guilds",
+            "bullet": "craft guilds → Forty specialist groups of royal artists organised in dedicated streets."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Topped by giant brass palace birds, Ewuare’s court shone with red coral beads and forty organised guilds of carvers, weavers, and casters."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Among all forty guilds, Igun Street’s brass-casters won world fame."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During c. AD 1450–1500, palace chiefs and specialist guilds strengthened Benin through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining brass palace birds with red coral beads enabled Edo communities to ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of craft guilds, the Kingdom of Benin ____________."
+          }
+        ],
+        "watch_out": "Topped by giant brass palace birds, Ewuare’s court shone with red coral beads and forty organised guilds of carvers, weavers, and casters. Among all forty guilds, Igun Street’s brass-casters won world fame.",
+        "prose_hash": "595796cea0",
+        "prose_fp": "a1e598dc",
+        "question_hash": "ccdef6856e"
+      }
+    ],
+    "lesson_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "copper and zinc",
+            "bullet": "copper and zinc → Two metals mixed together to create gleaming golden-yellow brass."
+          },
+          {
+            "hint": "Igun Street",
+            "bullet": "Igun Street → Historic Benin City street where royal brass-casters lived and worked."
+          },
+          {
+            "hint": "royal guild",
+            "bullet": "royal guild → Specialist families allowed to cast sacred brass solely for the Oba."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Most \"Benin Bronzes\" were cast from golden brass exclusively for the Oba by the hereditary royal guild on Igun Street."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Generations of guild families perfected a three-stage casting method."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL CONTRAST",
+            "stem": "Across c. AD 1400–1600, copper and zinc stood out because ____________."
+          },
+          {
+            "badge": "PRIMARY CLUE",
+            "stem": "Evidence from Igun Street proves that oba and igun street guild families ____________."
+          },
+          {
+            "badge": "BIGGER STORY",
+            "stem": "Linking straight to royal guild, this turning point ____________."
+          }
+        ],
+        "watch_out": "Most \"Benin Bronzes\" were cast from golden brass exclusively for the Oba by the hereditary royal guild on Igun Street. Generations of guild families perfected a three-stage casting method.",
+        "prose_hash": "1c1fbcdd6e",
+        "prose_fp": "9c4e6215",
+        "question_hash": "984d405218"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "lost-wax casting",
+            "bullet": "lost-wax casting → Melting carved beeswax out of a clay shell before pouring molten metal."
+          },
+          {
+            "hint": "beeswax model",
+            "bullet": "beeswax model → Hand-carved wax layer holding every tiny bead, feather, and leaf."
+          },
+          {
+            "hint": "clay crucible",
+            "bullet": "clay crucible → Heat-proof pot used to melt brass inside a charcoal furnace."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Artists carved a beeswax model over clay, baked outer clay so wax melted out, poured brass from a clay crucible, and cracked the mould open."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Finished plaques and heads joined carved ivory tusks inside the palace."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During c. AD 1400–1700, master casters and furnace teams strengthened Benin through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining lost-wax casting with beeswax model enabled Edo communities to ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of clay crucible, the Kingdom of Benin ____________."
+          }
+        ],
+        "watch_out": "Artists carved a beeswax model over clay, baked outer clay so wax melted out, poured brass from a clay crucible, and cracked the mould open. Finished plaques and heads joined carved ivory tusks inside the palace.",
+        "prose_hash": "d522f2edde",
+        "prose_fp": "bb7ead05",
+        "question_hash": "0615e518aa"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "wooden palace pillars",
+            "bullet": "wooden palace pillars → Tall courtyard posts where over 900 brass plaques were nailed."
+          },
+          {
+            "hint": "carved ivory tusks",
+            "bullet": "carved ivory tusks → Two-metre elephant tusks sculpted with Obas and set on brass heads."
+          },
+          {
+            "hint": "visual history archive",
+            "bullet": "visual history archive → Shining picture record of kings, battles, rituals, and visitors."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Over 900 brass plaques nailed to wooden palace pillars worked alongside two-metre carved ivory tusks as Benin’s visual history archive."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Every symbol on those plaques and tusks reflected sacred Edo beliefs."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CORE PURPOSE",
+            "stem": "Faced with new needs in c. AD 1500–1700, brass-casters and ivory-carvers turned to ____________."
+          },
+          {
+            "badge": "HOW IT WORKED",
+            "stem": "Through wooden palace pillars and carved ivory tusks, royal craft and order ____________."
+          },
+          {
+            "badge": "LASTING IMPACT",
+            "stem": "This mattered because visual history archive meant that ____________."
+          }
+        ],
+        "watch_out": "Over 900 brass plaques nailed to wooden palace pillars worked alongside two-metre carved ivory tusks as Benin’s visual history archive. Every symbol on those plaques and tusks reflected sacred Edo beliefs.",
+        "prose_hash": "cfac9af54c",
+        "prose_fp": "f9805a86",
+        "question_hash": "05e8c0e0e8"
+      }
+    ],
+    "lesson_4": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Leopard of the House",
+            "bullet": "Leopard of the House → Royal title comparing the fearless, wise Oba to the king of the forest."
+          },
+          {
+            "hint": "Olokun",
+            "bullet": "Olokun → Edo god of rivers, seas, and wealth honoured across Benin."
+          },
+          {
+            "hint": "mudfish",
+            "bullet": "mudfish → River fish able to cross damp land, linking water and earth."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Revered as \"Leopard of the House\", the Oba linked earthly rule with water-god Olokun—symbolised by spotted brass leopards and coiled mudfish."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Beside the Oba stood Benin’s most honoured royal woman."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During c. AD 1500–1700, sacred oba and palace priests strengthened Benin through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining Leopard of the House with Olokun enabled Edo communities to ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of mudfish, the Kingdom of Benin ____________."
+          }
+        ],
+        "watch_out": "Revered as \"Leopard of the House\", the Oba linked earthly rule with water-god Olokun—symbolised by spotted brass leopards and coiled mudfish. Beside the Oba stood Benin’s most honoured royal woman.",
+        "prose_hash": "c4e4ba5b1c",
+        "prose_fp": "80e959c7",
+        "question_hash": "02e32a1280"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Iyoba",
+            "bullet": "Iyoba → High royal title meaning Queen Mother created by Oba Esigie."
+          },
+          {
+            "hint": "Uselu palace",
+            "bullet": "Uselu palace → Grand royal residence outside Benin City built for the Queen Mother."
+          },
+          {
+            "hint": "carved ivory mask",
+            "bullet": "carved ivory mask → Famous white ivory hip pendant celebrating Idia’s protective wisdom."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "After his mother Idia’s wise counsel helped defeat invading rivals from Idah, Oba Esigie created the office of Iyoba, Uselu palace, and her ivory mask."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Outside royal palaces, hardworking villages fed the whole kingdom."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CORE PURPOSE",
+            "stem": "Faced with new needs in c. AD 1504–1550, oba esigie and iyoba idia turned to ____________."
+          },
+          {
+            "badge": "HOW IT WORKED",
+            "stem": "Through Iyoba and Uselu palace, royal craft and order ____________."
+          },
+          {
+            "badge": "LASTING IMPACT",
+            "stem": "This mattered because carved ivory mask meant that ____________."
+          }
+        ],
+        "watch_out": "After his mother Idia’s wise counsel helped defeat invading rivals from Idah, Oba Esigie created the office of Iyoba, Uselu palace, and her ivory mask. Outside royal palaces, hardworking villages fed the whole kingdom.",
+        "prose_hash": "0b362cdf7e",
+        "prose_fp": "f524517f",
+        "question_hash": "537fe8dfa8"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "white yams",
+            "bullet": "white yams → Staple root crop grown in rainforest clearings alongside plantains."
+          },
+          {
+            "hint": "cotton cloth",
+            "bullet": "cotton cloth → Finely spun blue-and-white woven textiles prized across West Africa."
+          },
+          {
+            "hint": "Igue festival",
+            "bullet": "Igue festival → Joyful annual royal thanksgiving renewing the Oba and blessing Benin."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Living in red-clay courtyard compounds, families farmed white yams and plantains, wove fine cotton cloth, and gathered each winter for the Igue festival."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Surplus pepper, cloth, and ivory soon attracted ocean ships from Europe."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL CONTRAST",
+            "stem": "Across c. AD 1500–1700, white yams stood out because ____________."
+          },
+          {
+            "badge": "PRIMARY CLUE",
+            "stem": "Evidence from cotton cloth proves that edo farmers, weavers and families ____________."
+          },
+          {
+            "badge": "BIGGER STORY",
+            "stem": "Linking straight to Igue festival, this turning point ____________."
+          }
+        ],
+        "watch_out": "Living in red-clay courtyard compounds, families farmed white yams and plantains, wove fine cotton cloth, and gathered each winter for the Igue festival. Surplus pepper, cloth, and ivory soon attracted ocean ships from Europe.",
+        "prose_hash": "63572b0b7d",
+        "prose_fp": "1f29ed1c",
+        "question_hash": "d797257c26"
+      }
+    ],
+    "lesson_5": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "João Afonso de Aveiro",
+            "bullet": "João Afonso de Aveiro → Portuguese explorer who visited Benin City in AD 1485."
+          },
+          {
+            "hint": "Gwato port",
+            "bullet": "Gwato port → River harbour where foreign captains had to obtain the Oba’s licence."
+          },
+          {
+            "hint": "royal ambassadors",
+            "bullet": "royal ambassadors → Benin diplomats sent by ship to the King of Portugal’s court in Lisbon."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "After João Afonso de Aveiro reached Gwato port in 1485, the Oba regulated foreign trade strictly, sent ambassadors to Lisbon, and learned Portuguese."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Controlled ocean trade brought huge metal supplies into Benin."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CORE PURPOSE",
+            "stem": "Faced with new needs in AD 1485–1553, oba of benin and portuguese sailors turned to ____________."
+          },
+          {
+            "badge": "HOW IT WORKED",
+            "stem": "Through João Afonso de Aveiro and Gwato port, royal craft and order ____________."
+          },
+          {
+            "badge": "LASTING IMPACT",
+            "stem": "This mattered because royal ambassadors meant that ____________."
+          }
+        ],
+        "watch_out": "After João Afonso de Aveiro reached Gwato port in 1485, the Oba regulated foreign trade strictly, sent ambassadors to Lisbon, and learned Portuguese. Controlled ocean trade brought huge metal supplies into Benin.",
+        "prose_hash": "86a6e495af",
+        "prose_fp": "eb96ffc6",
+        "question_hash": "0226ea4013"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Benin pepper",
+            "bullet": "Benin pepper → Fiery rainforest spice shipped to Europe in dozens of chests."
+          },
+          {
+            "hint": "brass manillas",
+            "bullet": "brass manillas → Horseshoe-shaped metal bracelets melted down to cast Benin plaques."
+          },
+          {
+            "hint": "cowrie shells",
+            "bullet": "cowrie shells → Glossy white sea shells used as everyday market currency."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Benin swapped spicy pepper, cotton cloth, and ivory for cowrie-shell coins and thousands of brass manillas—melted on Igun Street into palace plaques!"
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Visiting Dutch merchants marvelled at the wealth and order of Benin City."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL CONTRAST",
+            "stem": "Across c. AD 1485–1700, Benin pepper stood out because ____________."
+          },
+          {
+            "badge": "PRIMARY CLUE",
+            "stem": "Evidence from brass manillas proves that edo traders and igun street casters ____________."
+          },
+          {
+            "badge": "BIGGER STORY",
+            "stem": "Linking straight to cowrie shells, this turning point ____________."
+          }
+        ],
+        "watch_out": "Benin swapped spicy pepper, cotton cloth, and ivory for cowrie-shell coins and thousands of brass manillas—melted on Igun Street into palace plaques! Visiting Dutch merchants marvelled at the wealth and order of Benin City.",
+        "prose_hash": "ee6da351e4",
+        "prose_fp": "86a048e1",
+        "question_hash": "c2f72c0ae9"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "thirty straight streets",
+            "bullet": "thirty straight streets → Broad 120-foot main avenues crossing seventeenth-century Benin City."
+          },
+          {
+            "hint": "town of Haarlem",
+            "bullet": "town of Haarlem → Wealthy Dutch city compared in size to the Oba’s vast walled palace."
+          },
+          {
+            "hint": "polished clay walls",
+            "bullet": "polished clay walls → Smooth red-earth house walls washed until they shone like mirrors."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "In 1668, Olfert Dapper published Dutch eyewitness accounts praising Benin City’s thirty 120-foot straight streets, polished walls, and Haarlem-sized palace."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Two centuries later, British empire-building shattered peaceful trade."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During AD 1668, dutch traders and olfert dapper strengthened Benin through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining thirty straight streets with town of Haarlem enabled Edo communities to ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of polished clay walls, the Kingdom of Benin ____________."
+          }
+        ],
+        "watch_out": "In 1668, Olfert Dapper published Dutch eyewitness accounts praising Benin City’s thirty 120-foot straight streets, polished walls, and Haarlem-sized palace. Two centuries later, British empire-building shattered peaceful trade.",
+        "prose_hash": "e68a107f53",
+        "prose_fp": "98f2c14e",
+        "question_hash": "3629613a78"
+      }
+    ],
+    "lesson_6": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "palm oil and rubber",
+            "bullet": "palm oil and rubber → Valuable rainforest resources wanted by British Empire factories."
+          },
+          {
+            "hint": "customs tolls",
+            "bullet": "customs tolls → Royal Benin trade taxes defended firmly by Ovonramwen."
+          },
+          {
+            "hint": "Punitive Expedition",
+            "bullet": "Punitive Expedition → February 1897 invasion by 1,200 British soldiers into Benin City."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Clashing with Oba Ovonramwen over southern Nigeria’s palm oil and rubber trade, 1,200 British troops invaded Benin City in the February 1897 Punitive Expedition."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Capturing the palace led to mass looting of sacred royal art."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HISTORICAL CONTRAST",
+            "stem": "Across 1888–Feb 1897, palm oil and rubber stood out because ____________."
+          },
+          {
+            "badge": "PRIMARY CLUE",
+            "stem": "Evidence from customs tolls proves that oba ovonramwen and british forces ____________."
+          },
+          {
+            "badge": "BIGGER STORY",
+            "stem": "Linking straight to Punitive Expedition, this turning point ____________."
+          }
+        ],
+        "watch_out": "Clashing with Oba Ovonramwen over southern Nigeria’s palm oil and rubber trade, 1,200 British troops invaded Benin City in the February 1897 Punitive Expedition. Capturing the palace led to mass looting of sacred royal art.",
+        "prose_hash": "692a4bba2a",
+        "prose_fp": "eee64535",
+        "question_hash": "5b4586741c"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "palace storehouses",
+            "bullet": "palace storehouses → Royal rooms stripped of sacred plaques, brass heads, and carved tusks."
+          },
+          {
+            "hint": "four thousand artworks",
+            "bullet": "four thousand artworks → Number of Benin treasures crated and auctioned to pay war costs."
+          },
+          {
+            "hint": "world museums",
+            "bullet": "world museums → Over 160 collections across Europe and America that bought looted bronzes."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "After exiling Oba Ovonramwen and burning the palace, Britain shipped over 4,000 plaques, heads, and tusks from palace storehouses to sell across 160+ world museums."
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "More than a century later, calls for fair return gained global support."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "KEY MECHANISM",
+            "stem": "During 1897–1900s, british soldiers and world museums strengthened Benin through ____________ and ____________."
+          },
+          {
+            "badge": "HISTORICAL EVIDENCE",
+            "stem": "Combining palace storehouses with four thousand artworks enabled Edo communities to ____________."
+          },
+          {
+            "badge": "CONSEQUENCE",
+            "stem": "Because of world museums, the Kingdom of Benin ____________."
+          }
+        ],
+        "watch_out": "After exiling Oba Ovonramwen and burning the palace, Britain shipped over 4,000 plaques, heads, and tusks from palace storehouses to sell across 160+ world museums. More than a century later, calls for fair return gained global support.",
+        "prose_hash": "61d11bf857",
+        "prose_fp": "40121600",
+        "question_hash": "dc70856d76"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "restitution",
+            "bullet": "restitution → Rightfully returning looted 1897 bronzes from foreign museums to Nigeria."
+          },
+          {
+            "hint": "Oba Ewuare II",
+            "bullet": "Oba Ewuare II → Modern Oba of Benin leading royal ceremonies and welcoming returned art."
+          },
+          {
+            "hint": "living Edo culture",
+            "bullet": "living Edo culture → Vibrant traditions, Igue festivals, and active Igun Street brass-casting today."
+          }
+        ],
+        "context": [
+          {
+            "hint": "Historical cause",
+            "bullet": "Since 2021, Cambridge, London’s Horniman Museum, and Germany have begun restitution to Nigeria, where Oba Ewuare II and Igun Street casters keep Edo culture thriving!"
+          },
+          {
+            "hint": "What followed next",
+            "bullet": "Across 1,000 years, Benin’s earthworks, bronzes, and living heritage inspire the world."
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CORE PURPOSE",
+            "stem": "Faced with new needs in 1914–Present, oba ewuare ii, igun guild and museums turned to ____________."
+          },
+          {
+            "badge": "HOW IT WORKED",
+            "stem": "Through restitution and Oba Ewuare II, royal craft and order ____________."
+          },
+          {
+            "badge": "LASTING IMPACT",
+            "stem": "This mattered because living Edo culture meant that ____________."
+          }
+        ],
+        "watch_out": "Since 2021, Cambridge, London’s Horniman Museum, and Germany have begun restitution to Nigeria, where Oba Ewuare II and Igun Street casters keep Edo culture thriving! Across 1,000 years, Benin’s earthworks, bronzes, and living heritage inspire the world.",
+        "prose_hash": "3a0d80c9f3",
+        "prose_fp": "fbf6b5ea",
+        "question_hash": "905d820807"
+      }
+    ]
+  }
+}

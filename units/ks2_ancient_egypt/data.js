@@ -228,7 +228,9 @@ window.UNIT_DATA = {
               "question_badge": "SUMERIAN CLAY TABLET",
               "question": "Inspect Source A. How did great rivers help early cities in Sumer and Egypt grow?",
               "model_answer": "Great rivers like the Tigris, Euphrates, and Nile gave early cities fresh drinking water, rich flood mud for grain crops, soft clay for bricks and tablets, and easy travel by boat.",
-              "provenance": "Early dynastic Sumerian clay cuneiform accounting tablet from southern Mesopotamia (c. 3000 BC, museum collection)."
+              "provenance": "Early dynastic Sumerian clay cuneiform accounting tablet from southern Mesopotamia (c. 3000 BC, museum collection).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_1_sA.mp3",
+              "studio_voice_label": "Mesopotamian Clay Cuneiform Tabl…"
             }
           ]
         },
@@ -259,7 +261,9 @@ window.UNIT_DATA = {
               "question_badge": "SHADUF WATER LEVER",
               "question": "Look closely at the wooden pole in Source B. How did this shaduf water dry fields?",
               "model_answer": "The farmer pulled the rope down to dip a bucket into the canal, and the heavy mud weight on the back swung the full bucket up into field ditches.",
-              "provenance": "Wall painting of a shaduf irrigating a riverside garden, Tomb of Ipuy (TT217), Deir el-Medina, Luxor."
+              "provenance": "Wall painting of a shaduf irrigating a riverside garden, Tomb of Ipuy (TT217), Deir el-Medina, Luxor.",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_1_sB.mp3",
+              "studio_voice_label": "Tomb of Ipuy Wall Painting of an…"
             }
           ]
         },
@@ -290,7 +294,9 @@ window.UNIT_DATA = {
               "question_badge": "THE NARMER PALETTE",
               "question": "Examine King Narmer in Source C. How does this carving show he united two lands?",
               "model_answer": "Source C carves King Narmer larger than everyone else and wearing the crowns of both southern Upper Egypt and northern Lower Egypt, showing he united them around 3100 BC.",
-              "provenance": "Ceremonial carved green siltstone Narmer Palette from Hierakonpolis (c. 3100 BC, Egyptian Museum, Cairo)."
+              "provenance": "Ceremonial carved green siltstone Narmer Palette from Hierakonpolis (c. 3100 BC, Egyptian Museum, Cairo).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_1_sC.mp3",
+              "studio_voice_label": "Carved Siltstone Narmer Palette…"
             }
           ]
         }
@@ -312,7 +318,10 @@ window.UNIT_DATA = {
           "question_badge": "SUMERIAN CLAY TABLET",
           "question": "Inspect Source A. How did great rivers help early cities in Sumer and Egypt grow?",
           "model_answer": "Great rivers like the Tigris, Euphrates, and Nile gave early cities fresh drinking water, rich flood mud for grain crops, soft clay for bricks and tablets, and easy travel by boat.",
-          "provenance": "Early dynastic Sumerian clay cuneiform accounting tablet from southern Mesopotamia (c. 3000 BC, museum collection)."
+          "provenance": "Early dynastic Sumerian clay cuneiform accounting tablet from southern Mesopotamia (c. 3000 BC, museum collection).",
+          "text": "Artefact note: Look closely at the horizontal bands across this cracked tan tablet. A temple scribe rolled tiny standing figures across damp mud and pressed neat wedge-shaped reed marks to count barley.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_1_sA.mp3",
+          "studio_voice_label": "Mesopotamian Clay Cuneiform Tabl…"
         },
         {
           "id": "ks2_ancient_egypt_l1_src_b",
@@ -330,7 +339,10 @@ window.UNIT_DATA = {
           "question_badge": "SHADUF WATER LEVER",
           "question": "Look closely at the wooden pole in Source B. How did this shaduf water dry fields?",
           "model_answer": "The farmer pulled the rope down to dip a bucket into the canal, and the heavy mud weight on the back swung the full bucket up into field ditches.",
-          "provenance": "Wall painting of a shaduf irrigating a riverside garden, Tomb of Ipuy (TT217), Deir el-Medina, Luxor."
+          "provenance": "Wall painting of a shaduf irrigating a riverside garden, Tomb of Ipuy (TT217), Deir el-Medina, Luxor.",
+          "text": "Artefact note: Follow the long sloping wooden beam from the gardener's hands up past the leafy fruit trees to its rounded back end. Below his bare feet sits a collared brown dog beside lotus-filled water.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_1_sB.mp3",
+          "studio_voice_label": "Tomb of Ipuy Wall Painting of an…"
         },
         {
           "id": "ks2_ancient_egypt_l1_src_c",
@@ -348,7 +360,10 @@ window.UNIT_DATA = {
           "question_badge": "THE NARMER PALETTE",
           "question": "Examine King Narmer in Source C. How does this carving show he united two lands?",
           "model_answer": "Source C carves King Narmer larger than everyone else and wearing the crowns of both southern Upper Egypt and northern Lower Egypt, showing he united them around 3100 BC.",
-          "provenance": "Ceremonial carved green siltstone Narmer Palette from Hierakonpolis (c. 3100 BC, Egyptian Museum, Cairo)."
+          "provenance": "Ceremonial carved green siltstone Narmer Palette from Hierakonpolis (c. 3100 BC, Egyptian Museum, Cairo).",
+          "text": "Artefact note: This close-up carving on dark green siltstone shows a barefoot royal attendant carrying a small washing pot and woven sandals beneath a flower sign, walking right behind the giant figure on the palette.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_1_sC.mp3",
+          "studio_voice_label": "Carved Siltstone Narmer Palette…"
         }
       ],
       "causal_domino_spine": {
@@ -1104,7 +1119,9 @@ window.UNIT_DATA = {
               "question_badge": "GREAT PYRAMID BLOCKS",
               "question": "Compare the visitors and blocks in Source A. What makes building this pyramid astonishing?",
               "model_answer": "Each chest-high limestone block weighed around 2.5 tonnes, yet builders cut, floated, and stacked 2.3 million stones 146 metres high without cranes or wheels!",
-              "provenance": "Close-up view of the stepped core nummulitic limestone masonry courses of the Great Pyramid of Khufu, Giza Plateau (c. 2560 BC)."
+              "provenance": "Close-up view of the stepped core nummulitic limestone masonry courses of the Great Pyramid of Khufu, Giza Plateau (c. 2560 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_2_sA.mp3",
+              "studio_voice_label": "Giant Stepped Core Limestone Blo…"
             }
           ]
         },
@@ -1135,7 +1152,9 @@ window.UNIT_DATA = {
               "question_badge": "STONEMASON’S CHISEL",
               "question": "Inspect Source B. How did masons shape millions of limestone blocks using simple tools?",
               "model_answer": "Masons tapped copper chisels like Source B with wooden mallets to smooth limestone, while quarry crews soaked wooden wedges in cracks until stones split cleanly.",
-              "provenance": "Ancient Egyptian cast copper-alloy stonemason’s chisel (archaeological museum collection)."
+              "provenance": "Ancient Egyptian cast copper-alloy stonemason’s chisel (archaeological museum collection).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_2_sB.mp3",
+              "studio_voice_label": "Ancient Egyptian Metal Stone-Wor…"
             }
           ]
         },
@@ -1166,7 +1185,9 @@ window.UNIT_DATA = {
               "question_badge": "STATUE OF KHAFRE",
               "question": "Spot the falcon behind Khafre’s head in Source C. Why did Egyptians obey Pharaohs?",
               "model_answer": "The falcon god Horus wrapping wings behind Khafre’s head reminded Egyptians that their Pharaoh ruled as a living god who kept Egypt safe.",
-              "provenance": "Diorite statue of Pharaoh Khafre with the Horus falcon, from the Valley Temple of Khafre at Giza (c. 2520 BC, Egyptian Museum, Cairo)."
+              "provenance": "Diorite statue of Pharaoh Khafre with the Horus falcon, from the Valley Temple of Khafre at Giza (c. 2520 BC, Egyptian Museum, Cairo).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_2_sC.mp3",
+              "studio_voice_label": "Carved Diorite Statue of Pharaoh…"
             }
           ]
         }
@@ -1188,7 +1209,10 @@ window.UNIT_DATA = {
           "question_badge": "GREAT PYRAMID BLOCKS",
           "question": "Compare the visitors and blocks in Source A. What makes building this pyramid astonishing?",
           "model_answer": "Each chest-high limestone block weighed around 2.5 tonnes, yet builders cut, floated, and stacked 2.3 million stones 146 metres high without cranes or wheels!",
-          "provenance": "Close-up view of the stepped core nummulitic limestone masonry courses of the Great Pyramid of Khufu, Giza Plateau (c. 2560 BC)."
+          "provenance": "Close-up view of the stepped core nummulitic limestone masonry courses of the Great Pyramid of Khufu, Giza Plateau (c. 2560 BC).",
+          "text": "Artefact note: Notice the flat, pale top surface and rough, shell-speckled sides of this thick yellow-brown Giza limestone block. Even one single stone from Khufu's tomb weighs as much as a family car.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_2_sA.mp3",
+          "studio_voice_label": "Giant Stepped Core Limestone Blo…"
         },
         {
           "id": "ks2_ancient_egypt_l2_src_b",
@@ -1206,7 +1230,10 @@ window.UNIT_DATA = {
           "question_badge": "STONEMASON’S CHISEL",
           "question": "Inspect Source B. How did masons shape millions of limestone blocks using simple tools?",
           "model_answer": "Masons tapped copper chisels like Source B with wooden mallets to smooth limestone, while quarry crews soaked wooden wedges in cracks until stones split cleanly.",
-          "provenance": "Ancient Egyptian cast copper-alloy stonemason’s chisel (archaeological museum collection)."
+          "provenance": "Ancient Egyptian cast copper-alloy stonemason’s chisel (archaeological museum collection).",
+          "text": "Artefact note: Trace this solid metal bar from its narrow, flattened striking end on the left to its gently curved cutting edge on the right, now speckled green after thousands of years.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_2_sB.mp3",
+          "studio_voice_label": "Ancient Egyptian Metal Stone-Wor…"
         },
         {
           "id": "ks2_ancient_egypt_l2_src_c",
@@ -1224,7 +1251,10 @@ window.UNIT_DATA = {
           "question_badge": "STATUE OF KHAFRE",
           "question": "Spot the falcon behind Khafre’s head in Source C. Why did Egyptians obey Pharaohs?",
           "model_answer": "The falcon god Horus wrapping wings behind Khafre’s head reminded Egyptians that their Pharaoh ruled as a living god who kept Egypt safe.",
-          "provenance": "Diorite statue of Pharaoh Khafre with the Horus falcon, from the Valley Temple of Khafre at Giza (c. 2520 BC, Egyptian Museum, Cairo)."
+          "provenance": "Diorite statue of Pharaoh Khafre with the Horus falcon, from the Valley Temple of Khafre at Giza (c. 2520 BC, Egyptian Museum, Cairo).",
+          "text": "Artefact note: Carved from glossy dark diorite stone, Pharaoh Khafre sits bolt upright wearing a pleated kilt and royal headcloth. Look right behind his neck, where carved bird wings curve around his head.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_2_sC.mp3",
+          "studio_voice_label": "Carved Diorite Statue of Pharaoh…"
         }
       ],
       "causal_domino_spine": {
@@ -1979,9 +2009,89 @@ window.UNIT_DATA = {
               "question_badge": "THE ROSETTA STONE",
               "question": "Look at the three bands on Source A. How did Champollion crack hieroglyphs in 1822?",
               "model_answer": "Scholars could already read the Ancient Greek band at the bottom, so Champollion matched Greek royal names like Ptolemy and Cleopatra to oval cartouches in the hieroglyphs!",
-              "provenance": "The Rosetta Stone, dark granodiorite stele inscribed in hieroglyphic, Demotic, and Ancient Greek scripts (196 BC, British Museum, London)."
+              "provenance": "The Rosetta Stone, dark granodiorite stele inscribed in hieroglyphic, Demotic, and Ancient Greek scripts (196 BC, British Museum, London).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_3_sA.mp3",
+              "studio_voice_label": "The Rosetta Stone Carved in Thre…"
             }
-          ]
+          ],
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "KS2 Interactive History Explorer",
+            "title": "Inside Egypt's Social Pyramid: From the God-King Pharaoh to Peasant Farmers",
+            "default_index": 0,
+            "caption": "Tap each rank to explore how duties, skills, and harvests connected everyone in Ancient Egyptian society.",
+            "items": [
+              {
+                "tab_label": "1. Pharaoh and Viziers",
+                "title": "The God-King Pharaoh, Viziers and Temple Priests",
+                "dates": "Peak of the Social Pyramid",
+                "badge": "Royal Rule",
+                "color": "#d97706",
+                "bg_color": "rgba(217, 119, 6, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Supreme Ruler",
+                    "value": "God-King Pharaoh at the Top"
+                  },
+                  {
+                    "label": "Chief Ministers",
+                    "value": "Viziers, Rich Nobles and Priests"
+                  },
+                  {
+                    "label": "Key Role",
+                    "value": "Oversaw Laws, Temples and Grain Stores"
+                  }
+                ],
+                "takeaway": "At the narrow peak stood the god-king Pharaoh, supported by chief ministers called viziers, wealthy nobles, and temple priests."
+              },
+              {
+                "tab_label": "2. Scribes and Crafts",
+                "title": "Trained Scribes and Skilled Workshop Craftworkers",
+                "dates": "Middle Ranks of Society",
+                "badge": "Writing and Art",
+                "color": "#0284c7",
+                "bg_color": "rgba(2, 132, 199, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Respected Writers",
+                    "value": "Scribes Read, Counted Taxes and Measured Grain"
+                  },
+                  {
+                    "label": "Skilled Makers",
+                    "value": "Potters, Weavers, Jewellers and Glaze Makers"
+                  },
+                  {
+                    "label": "Workshop Treasure",
+                    "value": "William the Cheerful Blue Hippopotamus"
+                  }
+                ],
+                "takeaway": "Trained scribes kept Egypt's written records and tax counts, while skilled craftworkers created linen, jewellery, and blue-glazed treasures like William."
+              },
+              {
+                "tab_label": "3. Peasant Farmers",
+                "title": "Millions of Peasant Farmers at the Wide Base",
+                "dates": "Widest Base Along the Nile",
+                "badge": "Fed All Egypt",
+                "color": "#16a34a",
+                "bg_color": "rgba(22, 163, 74, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Population Size",
+                    "value": "Millions Working Nile Valley Fields"
+                  },
+                  {
+                    "label": "Seasonal Work",
+                    "value": "Ploughed Silt, Irrigated and Harvested Crops"
+                  },
+                  {
+                    "label": "Vital Contribution",
+                    "value": "Yearly Grain Taxes Fed All Egypt"
+                  }
+                ],
+                "takeaway": "Millions of peasant farmers formed the wide base of the social pyramid, growing the yearly grain taxes that fed palaces, temples, and workshops."
+              }
+            ]
+          }
         },
         {
           "act": 2,
@@ -2010,7 +2120,9 @@ window.UNIT_DATA = {
               "question_badge": "INK PAPYRUS SCROLL",
               "question": "Study the neat red and black ink on Source B. Why were scribes respected?",
               "model_answer": "Very few Egyptians could read or write over 700 signs, so trained scribes wrote medical guides, tax lists, and royal letters on papyrus scrolls.",
-              "provenance": "Columns of black and red ink script on the Edwin Smith surgical papyrus scroll (c. 1600 BC, New York Academy of Medicine)."
+              "provenance": "Columns of black and red ink script on the Edwin Smith surgical papyrus scroll (c. 1600 BC, New York Academy of Medicine).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_3_sB.mp3",
+              "studio_voice_label": "Ancient Egyptian Medical Papyrus…"
             }
           ]
         },
@@ -2041,7 +2153,9 @@ window.UNIT_DATA = {
               "question_badge": "SENET BOARD GAME",
               "question": "Count the squares on Source C. What does Senet show about everyday Egyptian fun?",
               "model_answer": "Source C’s thirty-square Senet board shows Egyptians loved board games after work — rich families owned glazed boxes while farmers scratched Senet squares into stone steps!",
-              "provenance": "Blue glazed composition (faience) 30-square Senet game board with drawer and playing pieces (New Kingdom, Brooklyn Museum)."
+              "provenance": "Blue glazed composition (faience) 30-square Senet game board with drawer and playing pieces (New Kingdom, Brooklyn Museum).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_3_sC.mp3",
+              "studio_voice_label": "Glazed Blue Faience Senet Game B…"
             }
           ]
         }
@@ -2063,7 +2177,10 @@ window.UNIT_DATA = {
           "question_badge": "THE ROSETTA STONE",
           "question": "Look at the three bands on Source A. How did Champollion crack hieroglyphs in 1822?",
           "model_answer": "Scholars could already read the Ancient Greek band at the bottom, so Champollion matched Greek royal names like Ptolemy and Cleopatra to oval cartouches in the hieroglyphs!",
-          "provenance": "The Rosetta Stone, dark granodiorite stele inscribed in hieroglyphic, Demotic, and Ancient Greek scripts (196 BC, British Museum, London)."
+          "provenance": "The Rosetta Stone, dark granodiorite stele inscribed in hieroglyphic, Demotic, and Ancient Greek scripts (196 BC, British Museum, London).",
+          "text": "Artefact note: Three bands cross this broken dark grey slab — tiny picture signs at the top, quick everyday script in the middle, and capital letters below. Its final carved line orders: \"Set up this hard stone in three scripts.\"",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_3_sA.mp3",
+          "studio_voice_label": "The Rosetta Stone Carved in Thre…"
         },
         {
           "id": "ks2_ancient_egypt_l3_src_b",
@@ -2081,7 +2198,10 @@ window.UNIT_DATA = {
           "question_badge": "INK PAPYRUS SCROLL",
           "question": "Study the neat red and black ink on Source B. Why were scribes respected?",
           "model_answer": "Very few Egyptians could read or write over 700 signs, so trained scribes wrote medical guides, tax lists, and royal letters on papyrus scrolls.",
-          "provenance": "Columns of black and red ink script on the Edwin Smith surgical papyrus scroll (c. 1600 BC, New York Academy of Medicine)."
+          "provenance": "Columns of black and red ink script on the Edwin Smith surgical papyrus scroll (c. 1600 BC, New York Academy of Medicine).",
+          "text": "Artefact note: Look closely at the criss-cross plant fibres on this golden-tan papyrus sheet. Two neat columns of flowing ink signs run from right to left, switching smoothly between dark black soot and bright red headings.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_3_sB.mp3",
+          "studio_voice_label": "Ancient Egyptian Medical Papyrus…"
         },
         {
           "id": "ks2_ancient_egypt_l3_src_c",
@@ -2099,7 +2219,10 @@ window.UNIT_DATA = {
           "question_badge": "SENET BOARD GAME",
           "question": "Count the squares on Source C. What does Senet show about everyday Egyptian fun?",
           "model_answer": "Source C’s thirty-square Senet board shows Egyptians loved board games after work — rich families owned glazed boxes while farmers scratched Senet squares into stone steps!",
-          "provenance": "Blue glazed composition (faience) 30-square Senet game board with drawer and playing pieces (New Kingdom, Brooklyn Museum)."
+          "provenance": "Blue glazed composition (faience) 30-square Senet game board with drawer and playing pieces (New Kingdom, Brooklyn Museum).",
+          "text": "Artefact note: Three neat rows of ten turquoise-blue glazed squares run across the top of this hollow game box. Notice the open sliding drawer at the back left and the cone-shaped and spool-shaped playing pieces.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_3_sC.mp3",
+          "studio_voice_label": "Glazed Blue Faience Senet Game B…"
         }
       ],
       "causal_domino_spine": {
@@ -2855,7 +2978,9 @@ window.UNIT_DATA = {
               "question_badge": "ANUBIS GUARDIAN SHRINE",
               "question": "Look closely at Source A. Why was jackal-shaped Anubis placed inside royal tombs?",
               "model_answer": "Egyptians saw sharp-eared jackals prowling desert graveyards, so they honoured Anubis as a watchful guardian who protected mummies and scared tomb robbers away.",
-              "provenance": "Painted and gilded wooden jackal statue of Anubis mounted on a portable shrine pole tomb chest (New Kingdom, Egypt)."
+              "provenance": "Painted and gilded wooden jackal statue of Anubis mounted on a portable shrine pole tomb chest (New Kingdom, Egypt).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_4_sA.mp3",
+              "studio_voice_label": "Black & Gold Jackal Shrine Statu…"
             }
           ]
         },
@@ -2886,7 +3011,9 @@ window.UNIT_DATA = {
               "question_badge": "FOUR CANOPIC JARS",
               "question": "Examine the four carved lids on Source B. What went inside, and which organ stayed out?",
               "model_answer": "Mummy-makers placed the dried liver, lungs, stomach, and intestines safely inside Source B’s four jars, but kept the heart inside the chest so Anubis could weigh it.",
-              "provenance": "Set of four carved limestone Canopic jars with stoppers depicting Imsety, Hapy, Duamutef, and Qebehsenuef (Ancient Egypt)."
+              "provenance": "Set of four carved limestone Canopic jars with stoppers depicting Imsety, Hapy, Duamutef, and Qebehsenuef (Ancient Egypt).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_4_sB.mp3",
+              "studio_voice_label": "Set of Four Carved Limestone Can…"
             }
           ]
         },
@@ -2917,9 +3044,80 @@ window.UNIT_DATA = {
               "question_badge": "BLUE SHABTI SERVANTS",
               "question": "Inspect the tiny tools painted on Source C. What job were shabtis meant to do?",
               "model_answer": "Shabti figures held tiny painted hoes so they could wake up in the afterlife, answer \"Here I am!\", and plough fields for their owner in the Field of Reeds.",
-              "provenance": "Blue glazed faience shabti funerary servant figurines inscribed with hieroglyphic spells (New Kingdom / Third Intermediate Period)."
+              "provenance": "Blue glazed faience shabti funerary servant figurines inscribed with hieroglyphic spells (New Kingdom / Third Intermediate Period).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_4_sC.mp3",
+              "studio_voice_label": "Bright Blue Glazed Faience Shabt…"
             }
-          ]
+          ],
+          "concept_widget": {
+            "type": "power_seesaw",
+            "eyebrow": "KS2 Interactive Balance Explorer",
+            "title": "Weighing the Heart on Anubis's Golden Scales: Heart vs Feather of Ma'at",
+            "default_index": 0,
+            "caption": "Tap each stage inside the Hall of Two Truths to see how Anubis, Thoth, Ammit, and Osiris judged every spirit.",
+            "eras": [
+              {
+                "year": "1. The Test",
+                "headline": "Anubis Places the Heart Opposite Ma'at's Feather",
+                "color": "#0284c7",
+                "summary": "Guided by painted Book of the Dead scrolls into the Hall of Two Truths, jackal-headed Anubis placed the dead person's heart on golden scales opposite Ma'at's light feather of truth while Thoth stood ready to write.",
+                "pillars": [
+                  {
+                    "actor": "Dead Person's Heart",
+                    "share": 50,
+                    "status": "Placed on the Golden Scale Dish",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Feather of Ma'at",
+                    "share": 50,
+                    "status": "Sacred Measure of Truth and Kindness",
+                    "color": "#f59e0b"
+                  }
+                ]
+              },
+              {
+                "year": "2. Kind Heart",
+                "headline": "Light and Balanced: Welcome to the Sunny Field of Reeds!",
+                "color": "#16a34a",
+                "summary": "When a person lived honestly and kindly, their heart stayed as light as Ma'at's feather of truth! Ibis-headed Thoth recorded the fair result, and green-skinned Osiris welcomed them into the sunny Field of Reeds forever.",
+                "pillars": [
+                  {
+                    "actor": "Kind, Honest Heart",
+                    "share": 50,
+                    "status": "Balances Lightly Beside Truth",
+                    "color": "#22c55e"
+                  },
+                  {
+                    "actor": "Feather of Ma'at",
+                    "share": 50,
+                    "status": "Osiris Opens the Field of Reeds",
+                    "color": "#f59e0b"
+                  }
+                ]
+              },
+              {
+                "year": "3. Heavy Heart",
+                "headline": "Tipped by Mean Deeds: Gobbled Up by Fierce Ammit!",
+                "color": "#dc2626",
+                "summary": "If a heart was heavy with mean deeds, it tipped the golden scales down below Ma'at's light feather! Waiting beside the scales crouched fierce Ammit — part crocodile, lion, and hippo — who gobbled the heavy heart up.",
+                "pillars": [
+                  {
+                    "actor": "Heart Heavy with Mean Deeds",
+                    "share": 80,
+                    "status": "Tips the Scales and Gobbled by Ammit",
+                    "color": "#ef4444"
+                  },
+                  {
+                    "actor": "Feather of Ma'at",
+                    "share": 20,
+                    "status": "Outweighed on Anubis's Scales",
+                    "color": "#f59e0b"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "sources": [
@@ -2939,7 +3137,10 @@ window.UNIT_DATA = {
           "question_badge": "ANUBIS GUARDIAN SHRINE",
           "question": "Look closely at Source A. Why was jackal-shaped Anubis placed inside royal tombs?",
           "model_answer": "Egyptians saw sharp-eared jackals prowling desert graveyards, so they honoured Anubis as a watchful guardian who protected mummies and scared tomb robbers away.",
-          "provenance": "Painted and gilded wooden jackal statue of Anubis mounted on a portable shrine pole tomb chest (New Kingdom, Egypt)."
+          "provenance": "Painted and gilded wooden jackal statue of Anubis mounted on a portable shrine pole tomb chest (New Kingdom, Egypt).",
+          "text": "Artefact note: Cast in dark bronze with gleaming touches of gold leaf on his wig and kilt, tall prick-eared Anubis strides forward on a hieroglyph-carved base towards two cobras and a tiny kneeling worshipper.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_4_sA.mp3",
+          "studio_voice_label": "Black & Gold Jackal Shrine Statu…"
         },
         {
           "id": "ks2_ancient_egypt_l4_src_b",
@@ -2957,7 +3158,10 @@ window.UNIT_DATA = {
           "question_badge": "FOUR CANOPIC JARS",
           "question": "Examine the four carved lids on Source B. What went inside, and which organ stayed out?",
           "model_answer": "Mummy-makers placed the dried liver, lungs, stomach, and intestines safely inside Source B’s four jars, but kept the heart inside the chest so Anubis could weigh it.",
-          "provenance": "Set of four carved limestone Canopic jars with stoppers depicting Imsety, Hapy, Duamutef, and Qebehsenuef (Ancient Egypt)."
+          "provenance": "Set of four carved limestone Canopic jars with stoppers depicting Imsety, Hapy, Duamutef, and Qebehsenuef (Ancient Egypt).",
+          "text": "Artefact note: Fine tool marks still show down the tall, hollowed cream-white limestone body of this tomb jar, topped by a snug stone lid carved with the calm human face of guardian Imsety.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_4_sB.mp3",
+          "studio_voice_label": "Set of Four Carved Limestone Can…"
         },
         {
           "id": "ks2_ancient_egypt_l4_src_c",
@@ -2975,7 +3179,10 @@ window.UNIT_DATA = {
           "question_badge": "BLUE SHABTI SERVANTS",
           "question": "Inspect the tiny tools painted on Source C. What job were shabtis meant to do?",
           "model_answer": "Shabti figures held tiny painted hoes so they could wake up in the afterlife, answer \"Here I am!\", and plough fields for their owner in the Field of Reeds.",
-          "provenance": "Blue glazed faience shabti funerary servant figurines inscribed with hieroglyphic spells (New Kingdom / Third Intermediate Period)."
+          "provenance": "Blue glazed faience shabti funerary servant figurines inscribed with hieroglyphic spells (New Kingdom / Third Intermediate Period).",
+          "text": "Artefact note: Shaped like a tiny wrapped mummy in shiny turquoise glaze, this hand-sized clay figure wears a black-striped wig, crosses both arms over its chest, and carries two columns of ink hieroglyphs.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_4_sC.mp3",
+          "studio_voice_label": "Bright Blue Glazed Faience Shabt…"
         }
       ],
       "causal_domino_spine": {
@@ -3731,7 +3938,9 @@ window.UNIT_DATA = {
               "question_badge": "HATSHEPSUT SPHINX",
               "question": "Look closely at Hatshepsut’s chin and body in Source A. Why was she carved like this?",
               "model_answer": "Hatshepsut asked sculptors to carve her with a strong lion’s body and kingly false beard to show she held full royal power just like any male pharaoh.",
-              "provenance": "Carved red granite sphinx of Pharaoh Hatshepsut from Deir el-Bahari, Thebes (c. 1479–1458 BC, Metropolitan Museum of Art)."
+              "provenance": "Carved red granite sphinx of Pharaoh Hatshepsut from Deir el-Bahari, Thebes (c. 1479–1458 BC, Metropolitan Museum of Art).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_5_sA.mp3",
+              "studio_voice_label": "Red Granite Sphinx Statue of Fem…"
             }
           ]
         },
@@ -3762,7 +3971,9 @@ window.UNIT_DATA = {
               "question_badge": "NEFERTITI ROYAL BUST",
               "question": "Inspect Queen Nefertiti’s tall crown and collar in Source B. What shows her high status?",
               "model_answer": "Nefertiti wears a unique tall royal blue crown with a golden cobra front and rich jewelled collar, showing she ruled beside Akhenaten with huge royal authority.",
-              "provenance": "Painted limestone and stucco bust of Queen Nefertiti from the workshop of Thutmose at Tell el-Amarna (c. 1345 BC)."
+              "provenance": "Painted limestone and stucco bust of Queen Nefertiti from the workshop of Thutmose at Tell el-Amarna (c. 1345 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_5_sB.mp3",
+              "studio_voice_label": "Painted Limestone Bust of Queen…"
             }
           ]
         },
@@ -3793,7 +4004,9 @@ window.UNIT_DATA = {
               "question_badge": "KADESH PEACE TREATY",
               "question": "What makes Source C (from around 1259 BC) famous across world history today?",
               "model_answer": "Source C is the world’s oldest surviving written peace treaty, proving Egypt and the Hittites ended years of chariot fighting through peaceful promises and friendship.",
-              "provenance": "Clay cuneiform tablet of the Egyptian–Hittite Kadesh Peace Treaty excavated at Hattusa / Boğazköy (c. 1259 BC, Istanbul Archaeology Museums)."
+              "provenance": "Clay cuneiform tablet of the Egyptian–Hittite Kadesh Peace Treaty excavated at Hattusa / Boğazköy (c. 1259 BC, Istanbul Archaeology Museums).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_5_sC.mp3",
+              "studio_voice_label": "Baked Clay Tablet of the Kadesh…"
             }
           ]
         }
@@ -3815,7 +4028,10 @@ window.UNIT_DATA = {
           "question_badge": "HATSHEPSUT SPHINX",
           "question": "Look closely at Hatshepsut’s chin and body in Source A. Why was she carved like this?",
           "model_answer": "Hatshepsut asked sculptors to carve her with a strong lion’s body and kingly false beard to show she held full royal power just like any male pharaoh.",
-          "provenance": "Carved red granite sphinx of Pharaoh Hatshepsut from Deir el-Bahari, Thebes (c. 1479–1458 BC, Metropolitan Museum of Art)."
+          "provenance": "Carved red granite sphinx of Pharaoh Hatshepsut from Deir el-Bahari, Thebes (c. 1479–1458 BC, Metropolitan Museum of Art).",
+          "text": "Artefact note: Seated calmly on a solid stone throne carved with royal hieroglyphs beside her legs, female ruler Hatshepsut wears the wide striped headcloth, brow cobra, and pleated kilt usually reserved for Egypt's male kings.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_5_sA.mp3",
+          "studio_voice_label": "Red Granite Sphinx Statue of Fem…"
         },
         {
           "id": "ks2_ancient_egypt_l5_src_b",
@@ -3833,7 +4049,10 @@ window.UNIT_DATA = {
           "question_badge": "NEFERTITI ROYAL BUST",
           "question": "Inspect Queen Nefertiti’s tall crown and collar in Source B. What shows her high status?",
           "model_answer": "Nefertiti wears a unique tall royal blue crown with a golden cobra front and rich jewelled collar, showing she ruled beside Akhenaten with huge royal authority.",
-          "provenance": "Painted limestone and stucco bust of Queen Nefertiti from the workshop of Thutmose at Tell el-Amarna (c. 1345 BC)."
+          "provenance": "Painted limestone and stucco bust of Queen Nefertiti from the workshop of Thutmose at Tell el-Amarna (c. 1345 BC).",
+          "text": "Artefact note: Original mineral paint still glows after three thousand years on this sculpted limestone portrait, from the red-and-green ribbon around her tall flat-topped crown down to the rows of petals across her shoulders.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_5_sB.mp3",
+          "studio_voice_label": "Painted Limestone Bust of Queen…"
         },
         {
           "id": "ks2_ancient_egypt_l5_src_c",
@@ -3851,7 +4070,10 @@ window.UNIT_DATA = {
           "question_badge": "KADESH PEACE TREATY",
           "question": "What makes Source C (from around 1259 BC) famous across world history today?",
           "model_answer": "Source C is the world’s oldest surviving written peace treaty, proving Egypt and the Hittites ended years of chariot fighting through peaceful promises and friendship.",
-          "provenance": "Clay cuneiform tablet of the Egyptian–Hittite Kadesh Peace Treaty excavated at Hattusa / Boğazköy (c. 1259 BC, Istanbul Archaeology Museums)."
+          "provenance": "Clay cuneiform tablet of the Egyptian–Hittite Kadesh Peace Treaty excavated at Hattusa / Boğazköy (c. 1259 BC, Istanbul Archaeology Museums).",
+          "text": "Artefact note: Tiny wedge-shaped signs fill this cracked terracotta clay tablet and its smaller matching corner fragment below. Its carved lines record King Hattusili and Pharaoh Ramesses promising: \"He is a brother to me, and I am a brother to him.\"",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_5_sC.mp3",
+          "studio_voice_label": "Baked Clay Tablet of the Kadesh…"
         }
       ],
       "causal_domino_spine": {
@@ -4606,7 +4828,9 @@ window.UNIT_DATA = {
               "question_badge": "CARTER AT KV62 SHRINE",
               "question": "Look at Howard Carter working in Source A. Why did recording KV62 take ten patient years?",
               "model_answer": "Over 5,000 fragile 3,200-year-old treasures filled KV62, so Carter’s team photographed, numbered, and protected every single item before lifting it out.",
-              "provenance": "Archival glass-plate expedition photograph by Harry Burton inside tomb KV62, Valley of the Kings (1923)."
+              "provenance": "Archival glass-plate expedition photograph by Harry Burton inside tomb KV62, Valley of the Kings (1923).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_6_sA.mp3",
+              "studio_voice_label": "1923 Photograph of Howard Carter…"
             }
           ]
         },
@@ -4637,7 +4861,9 @@ window.UNIT_DATA = {
               "question_badge": "TUTANKHAMUN GOLDEN THRONE",
               "question": "Why did dazzling treasures like Source B survive untouched inside Tutankhamun’s small tomb?",
               "model_answer": "Tutankhamun died suddenly aged nineteen and was buried in a small rock tomb whose steps were hidden under limestone rubble from later digging, keeping robbers out.",
-              "provenance": "Gilded and inlaid wooden throne of Pharaoh Tutankhamun from tomb KV62, Valley of the Kings (c. 1332–1323 BC, Cairo)."
+              "provenance": "Gilded and inlaid wooden throne of Pharaoh Tutankhamun from tomb KV62, Valley of the Kings (c. 1332–1323 BC, Cairo).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_6_sB.mp3",
+              "studio_voice_label": "Tutankhamun’s Gilded Wooden Thro…"
             }
           ]
         },
@@ -4668,7 +4894,9 @@ window.UNIT_DATA = {
               "question_badge": "CLEOPATRA SILVER COIN",
               "question": "Why do historians compare Cleopatra’s own coin (Source C) against later Roman stories?",
               "model_answer": "Roman writers defeated Cleopatra in 30 BC and wrote biased tales to praise Rome, whereas Source C shows how Cleopatra presented herself as a strong ruling queen.",
-              "provenance": "Silver tetradrachm coin bearing the diademed portrait and Greek inscription of Queen Cleopatra VII (c. 37–32 BC)."
+              "provenance": "Silver tetradrachm coin bearing the diademed portrait and Greek inscription of Queen Cleopatra VII (c. 37–32 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_6_sC.mp3",
+              "studio_voice_label": "Silver Coin Stamped with Queen C…"
             }
           ]
         }
@@ -4690,7 +4918,10 @@ window.UNIT_DATA = {
           "question_badge": "CARTER AT KV62 SHRINE",
           "question": "Look at Howard Carter working in Source A. Why did recording KV62 take ten patient years?",
           "model_answer": "Over 5,000 fragile 3,200-year-old treasures filled KV62, so Carter’s team photographed, numbered, and protected every single item before lifting it out.",
-          "provenance": "Archival glass-plate expedition photograph by Harry Burton inside tomb KV62, Valley of the Kings (1923)."
+          "provenance": "Archival glass-plate expedition photograph by Harry Burton inside tomb KV62, Valley of the Kings (1923).",
+          "text": "Artefact note: Under a bright lamp inside the rock-cut burial chamber, two turbaned Egyptian specialists, a colleague, and Howard Carter on the right steady wooden beams and padded blocks beneath the curved golden shrine roof.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_6_sA.mp3",
+          "studio_voice_label": "1923 Photograph of Howard Carter…"
         },
         {
           "id": "ks2_ancient_egypt_l6_src_b",
@@ -4708,7 +4939,10 @@ window.UNIT_DATA = {
           "question_badge": "TUTANKHAMUN GOLDEN THRONE",
           "question": "Why did dazzling treasures like Source B survive untouched inside Tutankhamun’s small tomb?",
           "model_answer": "Tutankhamun died suddenly aged nineteen and was buried in a small rock tomb whose steps were hidden under limestone rubble from later digging, keeping robbers out.",
-          "provenance": "Gilded and inlaid wooden throne of Pharaoh Tutankhamun from tomb KV62, Valley of the Kings (c. 1332–1323 BC, Cairo)."
+          "provenance": "Gilded and inlaid wooden throne of Pharaoh Tutankhamun from tomb KV62, Valley of the Kings (c. 1332–1323 BC, Cairo).",
+          "text": "Artefact note: Sheet gold, deep-blue glass, and polished stones still shine brightly on this royal backrest, where Queen Ankhesenamun holds a tiny perfume cup and gently touches young Tutankhamun's collar beneath golden sunbeams.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_6_sB.mp3",
+          "studio_voice_label": "Tutankhamun’s Gilded Wooden Thro…"
         },
         {
           "id": "ks2_ancient_egypt_l6_src_c",
@@ -4726,7 +4960,10 @@ window.UNIT_DATA = {
           "question_badge": "CLEOPATRA SILVER COIN",
           "question": "Why do historians compare Cleopatra’s own coin (Source C) against later Roman stories?",
           "model_answer": "Roman writers defeated Cleopatra in 30 BC and wrote biased tales to praise Rome, whereas Source C shows how Cleopatra presented herself as a strong ruling queen.",
-          "provenance": "Silver tetradrachm coin bearing the diademed portrait and Greek inscription of Queen Cleopatra VII (c. 37–32 BC)."
+          "provenance": "Silver tetradrachm coin bearing the diademed portrait and Greek inscription of Queen Cleopatra VII (c. 37–32 BC).",
+          "text": "Artefact note: Struck into solid silver inside a dotted border, Queen Cleopatra VII faces right wearing her wavy hair in a neat braided bun bound with the broad cloth headband of Greek monarchs.",
+          "studio_audio": "/audio/sources/ks2_ancient_egypt/lesson_6_sC.mp3",
+          "studio_voice_label": "Silver Coin Stamped with Queen C…"
         }
       ],
       "causal_domino_spine": {
@@ -5964,6 +6201,147 @@ window.UNIT_DATA = {
       "hinge_question": "If Tutankhamun died aged just nineteen as a minor ruler, why is he more famous today than pharaohs who ruled Egypt for sixty years?",
       "audio_file": "/audio/reading/ks2_ancient_egypt/r5.mp3"
     }
+  ],
+  "glossary": [
+    {
+      "term": "Civilisation",
+      "pronunciation": "siv-ih-ly-ZAY-shun",
+      "definition": "An organised human society with settled cities, farming, rulers, skilled craftworkers, and shared writing."
+    },
+    {
+      "term": "Inundation",
+      "pronunciation": "in-un-DAY-shun",
+      "definition": "The yearly summer flooding of the River Nile that soaked Egypt's dry valley and left behind rich dark mud."
+    },
+    {
+      "term": "Kemet",
+      "pronunciation": "KEM-et",
+      "definition": "The Ancient Egyptians' name for their fertile Nile valley, meaning Black Land after the dark flood silt where crops grew."
+    },
+    {
+      "term": "Deshret",
+      "pronunciation": "DESH-ret",
+      "definition": "The Ancient Egyptians' name for the scorching, dry Sahara desert beyond the river valley, meaning Red Land."
+    },
+    {
+      "term": "Shaduf",
+      "pronunciation": "shuh-DOOF",
+      "definition": "A hand-operated wooden lever with a bucket on one end and a heavy mud weight on the other for lifting Nile water onto fields."
+    },
+    {
+      "term": "Papyrus",
+      "pronunciation": "puh-PY-rus",
+      "definition": "A tall triangular marsh reed growing beside the River Nile, woven into boats, sandals, ropes, and smooth writing sheets."
+    },
+    {
+      "term": "Double Crown",
+      "pronunciation": "DUB-ul KROWN",
+      "definition": "The combined red-and-white royal crown worn after King Narmer united northern Lower Egypt and southern Upper Egypt around 3100 BC."
+    },
+    {
+      "term": "Pharaoh",
+      "pronunciation": "FAIR-oh",
+      "definition": "The supreme ruler of Ancient Egypt, honoured by Egyptians as both a royal monarch and a living god on earth."
+    },
+    {
+      "term": "Imhotep",
+      "pronunciation": "im-HOH-tep",
+      "definition": "The brilliant royal architect who stacked six stone layers at Saqqara around 2670 BC to build Pharaoh Djoser's Step Pyramid."
+    },
+    {
+      "term": "Pyramid",
+      "pronunciation": "PIR-uh-mid",
+      "definition": "A giant four-sided stone royal tomb rising to a pointed peak, built during the Old Kingdom to protect a Pharaoh's body forever."
+    },
+    {
+      "term": "Quarry",
+      "pronunciation": "KWOR-ee",
+      "definition": "An open rock cliff or pit where Egyptian stonemasons cut heavy limestone and granite blocks using copper chisels and wooden wedges."
+    },
+    {
+      "term": "Sphinx",
+      "pronunciation": "SFINKS",
+      "definition": "A giant carved stone guardian statue combining the strong body of a crouching lion with the head of a Pharaoh, such as Khafre's Great Sphinx at Giza."
+    },
+    {
+      "term": "Vizier",
+      "pronunciation": "vih-ZEER",
+      "definition": "The Pharaoh's highest royal official and chief minister, trusted to oversee judges, tax records, and royal grain stores."
+    },
+    {
+      "term": "Scribe",
+      "pronunciation": "SKRYBE",
+      "definition": "A trained Egyptian reader and writer who studied for years to paint hieroglyphs and ink records on papyrus scrolls."
+    },
+    {
+      "term": "Hieroglyphs",
+      "pronunciation": "HY-ruh-glifs",
+      "definition": "Ancient Egypt's sacred writing system of more than 700 picture and sound signs carved into temple stone or painted in ink."
+    },
+    {
+      "term": "Senet",
+      "pronunciation": "SEN-et",
+      "definition": "A popular Ancient Egyptian board game in which two players tossed flat throwing sticks to race counters across thirty squares."
+    },
+    {
+      "term": "Cartouche",
+      "pronunciation": "kar-TOOSH",
+      "definition": "An oval loop with a knotted line at one end drawn around the sacred hieroglyphic name of a Pharaoh or queen, vital for decoding the Rosetta Stone."
+    },
+    {
+      "term": "Polytheistic",
+      "pronunciation": "pol-ee-thee-ISS-tik",
+      "definition": "Believing in and worshipping many different gods and goddesses, such as Ra, Osiris, Isis, Horus, Thoth, and Anubis."
+    },
+    {
+      "term": "Mummification",
+      "pronunciation": "mum-ih-fih-KAY-shun",
+      "definition": "Preserving a dead body over seventy days by drying it in desert salt, rubbing sweet oils on the skin, and wrapping tight linen bandages."
+    },
+    {
+      "term": "Natron",
+      "pronunciation": "NAY-tron",
+      "definition": "Natural dry desert salt packed over and inside a dead body for forty days during mummification to soak up moisture and stop decay."
+    },
+    {
+      "term": "Canopic Jars",
+      "pronunciation": "kuh-NOP-ik JAHZ",
+      "definition": "Four carved stone jars with guardian-headed lids used by priests to store the dried lungs, stomach, liver, and intestines safely inside a tomb."
+    },
+    {
+      "term": "Shabti",
+      "pronunciation": "SHAB-tee",
+      "definition": "Small glazed clay or wooden servant figures placed inside tombs to wake up magically and do farm work for their owner in the afterlife."
+    },
+    {
+      "term": "Ma'at",
+      "pronunciation": "mah-AHT",
+      "definition": "The Egyptian goddess and sacred idea of truth, fairness, and balance, whose light feather was weighed against each dead person's heart."
+    },
+    {
+      "term": "Hatshepsut",
+      "pronunciation": "hat-SHEP-soot",
+      "definition": "Powerful female New Kingdom Pharaoh who ruled Egypt peacefully around 1479 BC, wore royal kingly symbols, and sent five trading ships to the Land of Punt."
+    },
+    {
+      "term": "Chariot",
+      "pronunciation": "CHAR-ee-ut",
+      "definition": "A light, fast two-wheeled wooden war cart pulled by two galloping horses and crewed by a driver and an archer, raced at the Battle of Kadesh."
+    },
+    {
+      "term": "Valley of the Kings",
+      "pronunciation": "VAL-ee ov thuh KINGZ",
+      "definition": "A hidden desert canyon near Thebes where New Kingdom Pharaohs such as Tutankhamun cut secret rock tombs deep inside limestone cliffs."
+    },
+    {
+      "term": "Sarcophagus",
+      "pronunciation": "sar-KOF-uh-gus",
+      "definition": "A heavy carved stone outer coffin placed inside a royal burial chamber to hold nested gilded wooden coffins and protect the mummy."
+    },
+    {
+      "term": "Ptolemaic",
+      "pronunciation": "tol-uh-MAY-ik",
+      "definition": "Relating to the Greek-speaking royal dynasty started by General Ptolemy after 323 BC and ended when Queen Cleopatra VII was defeated by Rome in 30 BC."
+    }
   ]
 };
-export default window.UNIT_DATA;

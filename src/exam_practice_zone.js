@@ -3,6 +3,82 @@ export function getStructureStrip(questionObj, marks, unitId = '') {
     (questionObj && (questionObj.question || questionObj.question_text || questionObj.text)) || '';
   const qType = (questionObj && (questionObj.type || '')).toLowerCase();
   const qNum = (questionObj && (questionObj.q_number || questionObj.number || '')).toUpperCase();
+  const isOcrUnit = String(unitId || '').startsWith('ocr_');
+
+  // 0. OCR J198 GCSE Ancient History Structure Strips (Zero AO4 Modern Interpretations)
+  if (isOcrUnit) {
+    if (marks === 20 && (qType.includes('depth') || /ancient sources you have studied/i.test(qText))) {
+      return `<strong>20-Mark OCR Depth Study Set-Sources Essay Strip (5 AO1 + 5 AO2 + 10 AO3):</strong>
+<div style="font-size: 0.9rem; margin-top: 4px; color: #7c2d12; font-style: italic;">OCR J198 Depth Study final essay: HALF the marks (10/20) are for AO3 evaluation of your Prescribed Ancient Sources!</div>
+<ul style="padding-left: 20px; margin-top: 10px; line-height: 1.6;">
+  <li><strong>Deploy 2–3 Prescribed Set Sources [10m AO3]:</strong> Quote or cite specific details from 2 literary extracts + 1 coin/inscription/relief in <strong style="color:#15803d;">"quotation marks"</strong>.</li>
+  <li><strong>Evaluate Provenance in Context:</strong> Explain how each author's genre, time-gap, or royal audience shapes reliability (avoid generic clichés like <em>"he wasn't there"</em>).</li>
+  <li><strong>Balanced Argument + Verdict [5m AO1 + 5m AO2]:</strong> Weigh convincing aspects of the statement against a strong counter-argument and reach a clear historical verdict.</li>
+</ul>`;
+    }
+    if (marks === 20) {
+      return `<strong>20-Mark (+5 SPaG) OCR Period Study Essay Strip (10 AO1 + 10 AO2):</strong>
+<div style="font-size: 0.9rem; margin-top: 4px; color: #7c2d12; font-style: italic;">OCR J198 Section A Period Study Q5: Pure AO1 + AO2 knowledge &amp; analysis (+5 marks for spelling classical names accurately!).${unitId === 'ocr_foundations_of_rome' ? ' <strong>Rome Rule:</strong> Must cover at least TWO eras across 753–440 BC!' : ''}</div>
+<ul style="padding-left: 20px; margin-top: 10px; line-height: 1.6;">
+  <li><strong>Paragraph 1 (Support Statement):</strong> Argue in favour using precise rulers, dates BC, battles, or laws.</li>
+  <li><strong>Paragraph 2 (Counter-Argument 1):</strong> Weigh a contrasting factor or reign across the period.</li>
+  <li><strong>Paragraph 3 (Counter-Argument 2):</strong> Broaden across a second era/theme to show synoptic sweep.</li>
+  <li><strong>Sustained Verdict + Classical SPaG [+5m]:</strong> Judge "how far" overall and check spellings of classical names, places, and terms.</li>
+</ul>`;
+    }
+    if (marks === 15) {
+      return `<strong>15-Mark OCR Unseen Passage + Own Knowledge Strip (5 AO1 + 5 AO2 + 5 AO3):</strong>
+<div style="font-size: 0.9rem; margin-top: 4px; color: #7c2d12; font-style: italic;">OCR J198 Section A Q4 on Passage A. Exam Tip: You CAN reuse relevant quotes from Q3, and NO author/provenance evaluation is required on Q3/Q4!</div>
+<ul style="padding-left: 20px; margin-top: 10px; line-height: 1.6;">
+  <li><strong>Quote &amp; Explain Passage A [5m AO3]:</strong> Embed 2–3 short <strong style="color:#15803d;">"direct quotes"</strong> from Passage A showing what it argues.</li>
+  <li><strong>Corroborate &amp; Extend with Own Knowledge [5m AO1]:</strong> Add specific events, dates BC, and inscriptions/campaigns missing from the passage.</li>
+  <li><strong>Second-Order Judgement [5m AO2]:</strong> Weigh how far the passage's picture holds true across the wider reign/period.</li>
+</ul>`;
+    }
+    if (marks === 10 && (/passage/i.test(qText) || qType.includes('passage'))) {
+      return `<strong>10-Mark OCR Passage Evaluation Strip (5 AO1 + 5 AO3):</strong>
+<div style="font-size: 0.9rem; margin-top: 4px; color: #7c2d12; font-style: italic;">OCR J198 Section A Q3 on unseen Passage A (no provenance evaluation expected).</div>
+<ul style="padding-left: 20px; margin-top: 10px; line-height: 1.6;">
+  <li><strong>Point 1 from Passage A + Own Knowledge:</strong> Quote a short phrase in <strong style="color:#15803d;">"quotation marks"</strong> + test/develop it with accurate own factual knowledge.</li>
+  <li><strong>Point 2 from Passage A + Own Knowledge:</strong> Quote a second detail from Passage A + corroborate or qualify it with specific historical evidence.</li>
+</ul>`;
+    }
+    if (marks === 10) {
+      return `<strong>10-Mark OCR Depth Study Explain Strip (5 AO1 + 5 AO2 — Zero AO3):</strong>
+<div style="font-size: 0.9rem; margin-top: 4px; color: #7c2d12; font-style: italic;">OCR J198 Depth Study Q9/Q14/Q19: Pure knowledge and second-order causal/significance explanation (no source evaluation needed).</div>
+<ul style="padding-left: 20px; margin-top: 10px; line-height: 1.6;">
+  <li><strong>Factor / Consequence 1 [5m]:</strong> State clear analytical point + precise factual detail + explain <em>why/how</em> it mattered.</li>
+  <li><strong>Factor / Consequence 2 [5m]:</strong> State second distinct analytical point + precise evidence + link directly back to the question stem.</li>
+</ul>`;
+    }
+    if (marks === 6) {
+      return `<strong>6-Mark OCR Outline Strip (6 AO1 — Continuous Prose):</strong>
+<div style="font-size: 0.9rem; margin-top: 4px; color: #7c2d12; font-style: italic;">OCR J198 Section A Q2: Write in continuous prose (never bullet lists!).</div>
+<ul style="padding-left: 20px; margin-top: 10px; line-height: 1.6;">
+  <li><strong>3 Developed Features [3 × 2m]:</strong> Outline three main events or features in connected sentences, backing each with a named person, place, or date BC.</li>
+</ul>`;
+    }
+    if (marks === 5 && (/accurate/i.test(qText) || qType.includes('accuracy'))) {
+      return `<strong>5-Mark OCR Source Accuracy Strip (5 AO3):</strong>
+<ul style="padding-left: 20px; margin-top: 10px; line-height: 1.6;">
+  <li><strong>Quote / Detail [1–2m]:</strong> Select a specific claim or visual feature from the prescribed source in <strong style="color:#15803d;">"quotation marks"</strong>.</li>
+  <li><strong>Provenance &amp; Cross-Check [3–5m]:</strong> Judge how accurate the account is by analysing the ancient author's purpose, sources, or court propaganda in historical context.</li>
+</ul>`;
+    }
+    if (marks === 5 && (/what can we learn/i.test(qText) || qType.includes('learn'))) {
+      return `<strong>5-Mark OCR 'What Can We Learn' Strip (5 AO3):</strong>
+<ul style="padding-left: 20px; margin-top: 10px; line-height: 1.6;">
+  <li><strong>Valid Inference 1 + Quote:</strong> State what we can deduce about the topic + quote or cite a specific detail from the source.</li>
+  <li><strong>Valid Inference 2 + Quote:</strong> Add a second supported deduction anchored in the passage or artefact.</li>
+</ul>`;
+    }
+    if (marks === 4 || marks === 5) {
+      return `<strong>${marks}-Mark OCR Discrete Recall Strip (AO1):</strong>
+<ul style="padding-left: 20px; margin-top: 10px; line-height: 1.6;">
+  <li>Answer each sub-part (a), (b), (c) crisply in 1–2 sentences using exact classical names, places, and dates BC.</li>
+</ul>`;
+    }
+  }
 
   // 1. Feature Question (2 Marks in Paper 1 Western Front Q1a/Q1b & Paper 2 Early Elizabethan England Q1a/Q1b)
   if (
@@ -283,6 +359,15 @@ export function getPacingMinutes(marks, unitId = '', qType = '', qText = '') {
     if (marks === 12) return 18; // 12m Causation
     if (marks === 16) return 27; // 16+4m Evaluative Essay
     return Math.max(3, Math.round(marks * 1.5));
+  }
+
+  // OCR J198 GCSE Ancient History (Period Studies 65m & Depth Studies 40m)
+  if (normUnit.startsWith('ocr_')) {
+    if (marks <= 5) return 5;
+    if (marks === 6) return 7;
+    if (marks === 10) return 11;
+    if (marks === 15) return 16;
+    if (marks >= 20) return normUnit === 'ocr_alexander' || normUnit === 'ocr_cleopatra' ? 22 : 25;
   }
 
   // Fallback: ~1.5 mins per mark

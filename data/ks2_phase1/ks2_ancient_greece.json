@@ -1,0 +1,412 @@
+{
+  "unit_id": "ks2_ancient_greece",
+  "glossary": [
+    {
+      "term": "Minoans",
+      "pronunciation": "mih-NOH-unz",
+      "definition": "Early Bronze Age sailors on the island of Crete who built colourful painted palaces and traded across the sea before classical Greece."
+    },
+    {
+      "term": "Mycenaeans",
+      "pronunciation": "my-suh-NEE-unz",
+      "definition": "Bronze Age mainland Greek warrior kingdoms famous for giant stone fortress walls and the carved Lion Gate at Mycenae around 1250 BC."
+    },
+    {
+      "term": "Polis",
+      "pronunciation": "POH-liss",
+      "definition": "An independent Ancient Greek city-state, including the walled town and its surrounding farmland, that made its own laws and coins (plural: poleis)."
+    },
+    {
+      "term": "Acropolis",
+      "pronunciation": "uh-KROP-uh-liss",
+      "definition": "The high, steep walled hilltop at the centre of a Greek city-state where marble temples stood and families sheltered during war."
+    },
+    {
+      "term": "Agora",
+      "pronunciation": "AG-uh-ruh",
+      "definition": "The sunny open-air marketplace and meeting square in a Greek city-state where farmers traded food and male citizens debated news and laws."
+    },
+    {
+      "term": "Alphabet",
+      "pronunciation": "AL-fuh-bet",
+      "definition": "The 24-letter Greek writing system with vowels and consonants, adapted from Phoenician sea traders around 800 BC and named after Alpha and Beta."
+    },
+    {
+      "term": "Hellenes",
+      "pronunciation": "HEL-eenz",
+      "definition": "The shared name proud Ancient Greeks used for themselves across rival valleys and islands, united by one language, alphabet, and family of gods."
+    },
+    {
+      "term": "Democracy",
+      "pronunciation": "dih-MOK-ruh-see",
+      "definition": "Rule by the people (from Greek demokratia, meaning people-power), invented in Athens around 508 BC so adult male citizens voted directly on laws."
+    },
+    {
+      "term": "Pnyx",
+      "pronunciation": "puh-NIKS",
+      "definition": "The rocky hillside in Athens where thousands of adult male citizens gathered every few days to listen to speeches and vote by raising hands."
+    },
+    {
+      "term": "Ostrakon",
+      "pronunciation": "OSS-truh-kon",
+      "definition": "A broken pottery shard scratched with a politician's name by Athenian voters to banish an overly bossy leader from Athens for ten years."
+    },
+    {
+      "term": "Kleroterion",
+      "pronunciation": "kler-oh-TEER-ee-on",
+      "definition": "A slotted marble lottery machine in Athens that used falling black and white balls to choose 500 courtroom jurors fairly by chance."
+    },
+    {
+      "term": "Metics",
+      "pronunciation": "MET-iks",
+      "definition": "Free foreign-born craftworkers and merchants living permanently in Athens who paid city taxes yet were barred from voting as citizens."
+    },
+    {
+      "term": "Helots",
+      "pronunciation": "HEL-uts",
+      "definition": "Conquered local farmworkers in Sparta forced to grow crops in the valley so Spartan citizen men could train full-time as soldiers."
+    },
+    {
+      "term": "Agoge",
+      "pronunciation": "uh-GOH-gay",
+      "definition": "Sparta's harsh military training system that took citizen boys from home at age seven to live barefoot and drill in army barracks."
+    },
+    {
+      "term": "Mount Olympus",
+      "pronunciation": "MOWNT oh-LIM-puss",
+      "definition": "Greece's highest snow-capped mountain, where Ancient Greeks believed Zeus, Hera, Athena, and the other chief Olympian gods ruled above the clouds."
+    },
+    {
+      "term": "Parthenon",
+      "pronunciation": "PAR-thuh-non",
+      "definition": "The gleaming white-marble temple built atop the Acropolis of Athens in the 400s BC to honour wise patron warrior goddess Athena."
+    },
+    {
+      "term": "Oracle",
+      "pronunciation": "OR-uh-kul",
+      "definition": "A sacred shrine, most famously Apollo's mountain temple at Delphi, where priestess Pythia spoke mysterious riddles and advice from the gods."
+    },
+    {
+      "term": "Sacred Truce",
+      "pronunciation": "SAY-krid TROOSS",
+      "definition": "The peaceful agreement (Ekecheiria) announced before every Ancient Olympic Games from 776 BC so warring city-states paused fighting for safe travel."
+    },
+    {
+      "term": "Kotinos",
+      "pronunciation": "KOH-tee-noss",
+      "definition": "The prized crown woven from sacred wild-olive branches placed on the head of each victorious athlete at Ancient Olympia."
+    },
+    {
+      "term": "Hoplite",
+      "pronunciation": "HOP-lyte",
+      "definition": "A heavily armed Greek citizen-soldier carrying a heavy round bronze-faced shield, crested bronze helmet, shin guards, and a long thrusting spear."
+    },
+    {
+      "term": "Phalanx",
+      "pronunciation": "FAL-anks",
+      "definition": "A tight shoulder-to-shoulder battle block of Greek hoplites locking round shields edge-to-edge behind rows of forward-pointing spears."
+    },
+    {
+      "term": "Trireme",
+      "pronunciation": "TRY-reem",
+      "definition": "A fast Ancient Greek wooden warship powered by 170 oarsmen seated on three levels and armed at the waterline with a heavy bronze ram."
+    },
+    {
+      "term": "Amphitheatre",
+      "pronunciation": "AM-fi-thee-uh-ter",
+      "definition": "A curved open-air stone theatre carved into a sunny Greek hillside, such as Epidaurus, where up to 14,000 spectators watched tragedies and comedies."
+    },
+    {
+      "term": "Philosopher",
+      "pronunciation": "fi-LOSS-uh-fer",
+      "definition": "From Greek words meaning lover of wisdom: a thinker such as Socrates, Plato, or Aristotle who used questions and observation to search for truth."
+    },
+    {
+      "term": "Hippocratic Oath",
+      "pronunciation": "hip-uh-KRAT-ik OHTH",
+      "definition": "The ethical promise linked to physician Hippocrates of Kos, pledging doctors to observe natural symptoms carefully and care honestly for sick patients."
+    },
+    {
+      "term": "Geometry",
+      "pronunciation": "jee-OM-uh-tree",
+      "definition": "The branch of mathematics studying points, lines, angles, triangles, and shapes, mastered by Greek thinkers such as Pythagoras and Euclid."
+    },
+    {
+      "term": "Hellenistic",
+      "pronunciation": "hel-uh-NISS-tik",
+      "definition": "The blended culture created after Alexander the Great's conquests mixed Greek language, coins, and learning with Egyptian, Persian, and Asian traditions."
+    },
+    {
+      "term": "Legacy",
+      "pronunciation": "LEG-uh-see",
+      "definition": "Lasting ideas, words, stone column styles, jury trials, and Olympic traditions handed down from Ancient Greece that still shape modern life today."
+    }
+  ],
+  "widgets": [
+    {
+      "lesson_id": "lesson_2",
+      "block_index": 2,
+      "concept_widget": {
+        "type": "power_seesaw",
+        "eyebrow": "KS2 Interactive Balance Explorer",
+        "title": "Athens vs Sparta: Comparing Votes, Childhood and Women's Lives",
+        "default_index": 0,
+        "caption": "Tap each civic lens to compare how sea-trading democratic Athens and landlocked warrior Sparta organised daily life.",
+        "eras": [
+          {
+            "year": "1. Who Ruled?",
+            "headline": "Who Ruled and Voted? Citizen Assembly vs Two Kings",
+            "color": "#0284c7",
+            "summary": "In Athens, adult male citizens climbed the Pnyx hill to debate and vote directly on laws and chose 500-person juries, though women, enslaved people, and metics were shut out. Sparta rejected speeches, placing power in two army kings and a council of older nobles.",
+            "pillars": [
+              {
+                "actor": "Athens: Direct Citizen Votes",
+                "share": 75,
+                "status": "Male Citizens Debate and Vote on the Pnyx",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Sparta: Two Kings and Elders",
+                "share": 25,
+                "status": "Strict Obedience Without Citizen Debates",
+                "color": "#ef4444"
+              }
+            ]
+          },
+          {
+            "year": "2. Childhood",
+            "headline": "Childhood and Education: Private Tutors vs Age-7 Agoge",
+            "color": "#d97706",
+            "summary": "Wealthy Athenian boys studied reading, geometry, poetry, music, and sport with tutors while girls learned spinning and weaving indoors. In Sparta, seven-year-old boys entered barefoot agoge barracks to sleep on river reeds, while Spartan girls ran, wrestled, and threw javelins outdoors!",
+            "pillars": [
+              {
+                "actor": "Athens: Books, Music and Weaving",
+                "share": 50,
+                "status": "Boys Study Arts; Girls Stay Indoors",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Sparta: Agoge Drills and Athletics",
+                "share": 50,
+                "status": "Barefoot Boy Soldiers and Athletic Girls",
+                "color": "#f59e0b"
+              }
+            ]
+          },
+          {
+            "year": "3. Women's Lives",
+            "headline": "Women's Rights and Daily Life: Indoors vs Landowners",
+            "color": "#16a34a",
+            "summary": "Athenian women lived mostly indoors under male guardians and could neither vote nor run estates freely. Because Spartan husbands lived away in army barracks, confident Spartan women managed farms, owned land themselves, and spoke openly in public!",
+            "pillars": [
+              {
+                "actor": "Athens: Kept Mostly Indoors",
+                "share": 20,
+                "status": "Supervised at Home by Male Guardians",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Sparta: Confident Landowners",
+                "share": 80,
+                "status": "Ran Farms, Owned Land and Spoke Freely",
+                "color": "#22c55e"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_5",
+      "block_index": 1,
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "KS2 Interactive History Explorer",
+        "title": "Athens's Three Great Philosophers: Socrates, Plato and Aristotle",
+        "default_index": 0,
+        "caption": "Tap each thinker to trace how questioning in the Agora grew into Athens's famous garden schools and early science.",
+        "items": [
+          {
+            "tab_label": "1. Socrates",
+            "title": "Barefoot Socrates: Sharp Questions in the Agora",
+            "dates": "c. 470–399 BC • Athens",
+            "badge": "Question Everything",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.2)",
+            "metrics": [
+              {
+                "label": "Word Meaning",
+                "value": "Philosopher Means Lover of Wisdom"
+              },
+              {
+                "label": "Daily Habit",
+                "value": "Asked Sharp Questions Barefoot in the Agora"
+              },
+              {
+                "label": "399 BC Trial",
+                "value": "Drank Poison Rather Than Stop Questioning"
+              }
+            ],
+            "takeaway": "Barefoot Socrates walked Athens's Agora every day asking citizens sharp questions to test their own beliefs, even when jurors condemned him in 399 BC."
+          },
+          {
+            "tab_label": "2. Plato",
+            "title": "Plato: Founder of the Shady Academy Garden School",
+            "dates": "c. 428–348 BC • Pupil of Socrates",
+            "badge": "The Academy",
+            "color": "#7c3aed",
+            "bg_color": "rgba(124, 58, 237, 0.2)",
+            "metrics": [
+              {
+                "label": "Famous Teacher",
+                "value": "Loyal Student Who Recorded Socrates's Talks"
+              },
+              {
+                "label": "Athens School",
+                "value": "Opened a Shady Garden Called the Academy"
+              },
+              {
+                "label": "Big Questions",
+                "value": "Explored Justice, Truth and Wise Leadership"
+              }
+            ],
+            "takeaway": "Inspired by his teacher Socrates, Plato opened a peaceful garden school in Athens called the Academy where students debated fairness and truth."
+          },
+          {
+            "tab_label": "3. Aristotle",
+            "title": "Aristotle: Observing Nature at the Lyceum School",
+            "dates": "384–322 BC • Roots of Science",
+            "badge": "Observe and Sort",
+            "color": "#16a34a",
+            "bg_color": "rgba(22, 163, 74, 0.2)",
+            "metrics": [
+              {
+                "label": "Athens School",
+                "value": "Taught Thinkers at the Lyceum School"
+              },
+              {
+                "label": "Method",
+                "value": "Observed, Measured and Sorted Real Facts"
+              },
+              {
+                "label": "Scientific Legacy",
+                "value": "Grouped Hundreds of Plants and Animals"
+              }
+            ],
+            "takeaway": "At his Lyceum school, Aristotle studied the natural world by observing, measuring, and grouping hundreds of plants and animals, laying roots for science."
+          }
+        ]
+      }
+    }
+  ],
+  "source_texts": [
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_ancient_greece_l1_src_a",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/mycenae_bronze_age_lion_gate.jpg",
+      "text": "Artefact note: Wedged tightly between massive, rough-cut wall boulders, this triangular limestone carving shows two muscular lions rearing up on their hind legs with front paws resting beside a tall central stone pillar."
+    },
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_ancient_greece_l1_src_b",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/carved_greek_alphabet_stone.jpg",
+      "text": "Artefact note: Scan your eyes from left to right across the weathered white marble surface, where a stonecutter chiselled neat straight rows of capital Greek letters naming harbour towns and local hosts."
+    },
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_ancient_greece_l1_src_c",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/athenian_silver_owl_coin.jpg",
+      "text": "Artefact note: Stamped in high relief onto thick silver, a wide-eyed bird perches atop a sideways clay storage jar, framed by raised Greek capital letters and a curved ring of leaves."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_ancient_greece_l2_src_a",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/pericles_helmeted_marble_bust.jpg",
+      "text": "Artefact note: Beneath his neatly curled beard, three lines of Greek capitals carved into the marble block read: \"Pericles, son of Xanthippus, the Athenian.\" Notice the eye-holes of the battle helmet resting high above his brow."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_ancient_greece_l2_src_b",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/athenian_ostrakon_cimon_shard.jpg",
+      "text": "Artefact note: Using a sharp point, someone scratched two bold lines right through the dark black glaze into the orange clay of this broken pot rim: \"KIMON MILTIADO\" — \"Cimon, son of Miltiades.\""
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_ancient_greece_l2_src_c",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/bronze_corinthian_hoplite_helmet.jpg",
+      "text": "Artefact note: Hammered from a single sheet of dark bronze, this heavy helmet curves smoothly over the whole skull, with tiny rivets bordering the nose-piece, solid side walls, and sweeping cheek guards."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_ancient_greece_l3_src_a",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/artemision_bronze_zeus_poseidon.jpg",
+      "text": "Artefact note: Cast in hollow bronze over two thousand years ago, this bearded figure stretches one muscular arm straight ahead to aim, while braided hair frames hollow eye sockets that once held inlaid stone eyes."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_ancient_greece_l3_src_b",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/athena_parthenos_marble_statue.jpg",
+      "text": "Artefact note: Carved in smooth white marble, Athena wears a tall three-crested headpiece and a heavy chest cloak trimmed with curling shapes, while balancing a smaller robed figure with spread wings upon her right hand."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_ancient_greece_l3_src_c",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/heracles_hydra_black_figure_vase.jpg",
+      "text": "Artefact note: Across the rounded orange belly of this lidded two-handled clay jar, a warrior wearing a knotted animal skin lunges forward swinging a curved blade at a scaly, coiled creature with twisting necks."
+    },
+    {
+      "lesson_id": "lesson_4",
+      "source_id": "ks2_ancient_greece_l4_src_a",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/hoplite_warriors_clashing_vase.jpg",
+      "text": "Artefact note: Painted in glossy black, deep red, and bright white clay slip on a curved jar, four foot-soldiers stride forward in pairs, raising long weapons high above decorated shields and tall plumed headpieces."
+    },
+    {
+      "lesson_id": "lesson_4",
+      "source_id": "ks2_ancient_greece_l4_src_b",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/persian_immortals_glazed_frieze.jpg",
+      "text": "Artefact note: Moulded across rows of turquoise, yellow, and brown glazed palace bricks, two bearded royal guards stand in profile wearing twisted headbands and long patterned garments, with tasseled cases slung behind their shoulders."
+    },
+    {
+      "lesson_id": "lesson_4",
+      "source_id": "ks2_ancient_greece_l4_src_c",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/themistocles_marble_portrait.jpg",
+      "text": "Artefact note: Carved in pale marble with short-cropped hair, a thick beard, and a stern, thoughtful brow, this portrait bust bears the Greek letters \"THEMISTOKLES\" chiselled neatly along its lower edge."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_ancient_greece_l5_src_a",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/greek_terracotta_theatre_mask.jpg",
+      "text": "Artefact note: Set at the centre of a round pale clay disc, this moulded stage face features parted wavy hair, hollow round eye-holes, and a dramatic, wide-open mouth."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_ancient_greece_l5_src_b",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/socrates_marble_portrait_louvre.jpg",
+      "text": "Artefact note: Unlike smooth statues of young Greek athletes, this white marble head shows a balding forehead, snub nose, and tangled beard. Plato recorded his famous challenge: \"The unexamined life is not worth living.\""
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_ancient_greece_l5_src_c",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/hippocrates_inscribed_bust.jpg",
+      "text": "Artefact note: Set inside an arched stone niche above the carved name \"HIPPOCRATES\", this dark bronze bust shows a bearded, cloaked Greek healer. His famous oath begins: \"Into whatever homes I go, I will help the sick.\""
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_ancient_greece_l6_src_a",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/alexander_heracles_silver_coin.jpg",
+      "text": "Artefact note: Inside a ring of tiny silver dots, a clean-shaven young ruler faces right wearing a thick-maned animal hood whose upper jaw curves above his ear and paws knot under his chin."
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_ancient_greece_l6_src_b",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/doric_ionic_corinthian_capitals.png",
+      "text": "Artefact note: Compare the three rows on this finely shaded architectural chart from top to bottom — starting with the simple top row (Dorique), moving to the middle row (Ionique), and finishing at the tall bottom row (Corinthien)."
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_ancient_greece_l6_src_c",
+      "visual_verified_file": "/units/ks2_ancient_greece/assets/artemision_bronze_racehorse_jockey.jpg",
+      "text": "Artefact note: Rescued in pieces from an Aegean shipwreck, this hollow bronze sculpture freezes a racehorse with front hooves lifted off the ground while its tiny rider twists back to check rival horses behind."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "unitId": "ks2_kingdom_of_benin",
+  "voiceKey": "male_historian",
+  "clips": {
+    "l04_s1": {
+      "hash": "be3cd50d94b5e7a8",
+      "bytes": 55436,
+      "updatedAt": "2026-11-27T14:13:44.555Z"
+    },
+    "l04_s2": {
+      "hash": "c393d07953528bc3",
+      "bytes": 63500,
+      "updatedAt": "2026-11-27T14:13:44.896Z"
+    },
+    "l04_s3": {
+      "hash": "57b3062ec88d0e4f",
+      "bytes": 59276,
+      "updatedAt": "2026-11-27T14:13:45.215Z"
+    },
+    "l04_s4": {
+      "hash": "41c0d2e8f7c0df29",
+      "bytes": 63788,
+      "updatedAt": "2026-11-27T14:13:45.559Z"
+    },
+    "l04_takeaway": {
+      "hash": "3bba1df5c469ef62",
+      "bytes": 77132,
+      "updatedAt": "2026-11-27T14:13:45.930Z"
+    },
+    "l05_s1": {
+      "hash": "a6b50c91fe307a12",
+      "bytes": 68108,
+      "updatedAt": "2026-11-27T14:13:46.275Z"
+    },
+    "l05_s2": {
+      "hash": "16c9657bbdada7e4",
+      "bytes": 56204,
+      "updatedAt": "2026-11-27T14:13:46.621Z"
+    },
+    "l05_s3": {
+      "hash": "b323f143efb677ad",
+      "bytes": 63788,
+      "updatedAt": "2026-11-27T14:13:46.997Z"
+    },
+    "l05_s4": {
+      "hash": "63f44eaab31008d2",
+      "bytes": 60236,
+      "updatedAt": "2026-11-27T14:13:47.555Z"
+    },
+    "l05_takeaway": {
+      "hash": "27c259b4b1000627",
+      "bytes": 82124,
+      "updatedAt": "2026-11-27T14:13:48.039Z"
+    },
+    "l06_s1": {
+      "hash": "02ebd8b0507006ba",
+      "bytes": 67532,
+      "updatedAt": "2026-11-27T14:13:48.377Z"
+    },
+    "l06_s2": {
+      "hash": "07d4835e08d7cdab",
+      "bytes": 55628,
+      "updatedAt": "2026-11-27T14:13:48.707Z"
+    },
+    "l06_s3": {
+      "hash": "f3866f3719fa7136",
+      "bytes": 63020,
+      "updatedAt": "2026-11-27T14:13:49.044Z"
+    },
+    "l06_s4": {
+      "hash": "9f24b19f907adc19",
+      "bytes": 70988,
+      "updatedAt": "2026-11-27T14:13:49.405Z"
+    },
+    "l06_takeaway": {
+      "hash": "9ff91a7aae7febbe",
+      "bytes": 92204,
+      "updatedAt": "2026-11-27T14:13:49.796Z"
+    },
+    "l01_s1": {
+      "hash": "e25cefad12a6225f",
+      "bytes": 60716,
+      "updatedAt": "2026-11-27T14:13:57.317Z"
+    },
+    "l01_s2": {
+      "hash": "651e61424a0b5fad",
+      "bytes": 65612,
+      "updatedAt": "2026-11-27T14:13:57.869Z"
+    },
+    "l01_s3": {
+      "hash": "fee793d84a53aca4",
+      "bytes": 59756,
+      "updatedAt": "2026-11-27T14:13:58.401Z"
+    },
+    "l01_s4": {
+      "hash": "cc181b64da1b6258",
+      "bytes": 56684,
+      "updatedAt": "2026-11-27T14:13:58.931Z"
+    },
+    "l01_takeaway": {
+      "hash": "d8acc0d6524fe941",
+      "bytes": 77900,
+      "updatedAt": "2026-11-27T14:13:59.546Z"
+    },
+    "l02_s1": {
+      "hash": "ec0daa4a565c207b",
+      "bytes": 66956,
+      "updatedAt": "2026-11-27T14:14:00.295Z"
+    },
+    "l02_s2": {
+      "hash": "75e04fb7d75196ee",
+      "bytes": 69068,
+      "updatedAt": "2026-11-27T14:14:01.003Z"
+    },
+    "l02_s3": {
+      "hash": "0b99f7806d0dd6b4",
+      "bytes": 67628,
+      "updatedAt": "2026-11-27T14:14:01.536Z"
+    },
+    "l02_s4": {
+      "hash": "2a2abccaee7bd581",
+      "bytes": 62732,
+      "updatedAt": "2026-11-27T14:14:02.022Z"
+    },
+    "l02_takeaway": {
+      "hash": "8990ebaa6b1c4a8a",
+      "bytes": 90476,
+      "updatedAt": "2026-11-27T14:14:02.747Z"
+    },
+    "l03_s1": {
+      "hash": "6a480012a6d8941f",
+      "bytes": 62540,
+      "updatedAt": "2026-11-27T14:14:03.721Z"
+    },
+    "l03_s2": {
+      "hash": "778274cc1ae8a3e0",
+      "bytes": 62636,
+      "updatedAt": "2026-11-27T14:14:04.489Z"
+    },
+    "l03_s3": {
+      "hash": "aa4711bd8077af0c",
+      "bytes": 60236,
+      "updatedAt": "2026-11-27T14:14:05.081Z"
+    },
+    "l03_s4": {
+      "hash": "1dbc97139a47d73c",
+      "bytes": 56108,
+      "updatedAt": "2026-11-27T14:14:05.965Z"
+    },
+    "l03_takeaway": {
+      "hash": "e12f439770863400",
+      "bytes": 75404,
+      "updatedAt": "2026-11-27T14:14:06.636Z"
+    }
+  }
+}

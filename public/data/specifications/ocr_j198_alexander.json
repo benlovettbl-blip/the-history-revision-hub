@@ -1,0 +1,208 @@
+{
+  "id": "ocr_j198_alexander",
+  "code": "J198/01-D",
+  "examBoard": "Cambridge OCR GCSE (9–1) Ancient History (J198)",
+  "paper": "Component 1: Greece and Persia (J198/01) — Section D",
+  "paperType": "Greek Depth Study (Prescribed Sources)",
+  "title": "Hub GCSE Ancient History Topic Checklist (Aligned to Cambridge OCR J198)",
+  "subtitle": "J198/01 Section D: Alexander the Great, 356–323 BC",
+  "shortTitle": "Alexander the Great",
+  "disclaimer": "Aligned to Cambridge OCR GCSE (9–1) Ancient History (J198). Independent educational resource by The History Revision Hub; not endorsed by Cambridge OCR.",
+  "exam_structure": {
+    "paper_code": "J198/01 (Section D)",
+    "paper_name": "Greece and Persia — Greek Depth Study",
+    "total_marks": 45,
+    "spag_marks": 0,
+    "duration_minutes": 55,
+    "paper_duration_minutes": 120,
+    "weighting": "22.5% of total GCSE (0 SPaG marks)",
+    "overview": "Q16(a)–(c) Discrete factual knowledge (5m, AO1); Q17 What can we learn from Prescribed Source/Passage (5m, AO3); Q18 How accurate is the Prescribed Source/Passage presentation (5m, AO3); Q19 Second-order concept explanation (10m: 5 AO1 + 5 AO2 — zero source reliability needed); Q20* Evaluative essay analysing Prescribed Ancient Sources + own knowledge (20m: 5 AO1 + 5 AO2 + 10 AO3)."
+  },
+  "prescribedSourcesAppendix": "Appendix 5f",
+  "prescribedSources": {
+    "literary": [
+      "Plutarch, Life of Alexander, 2–3; 6–9; 31–33; 38; 50–51; 73–77",
+      "Diodorus Siculus, Library of History, 16.91–16.94",
+      "Arrian, The Campaigns of Alexander, 1.11–1.16; 2.3; 2.24; 3.9–3.15; 3.18; 4.8–4.12; 4.28–4.30; 7.4; 7.14; 7.24–7.26; 7.28–7.30"
+    ],
+    "archaeological": [
+      "Mosaic from the House of the Faun in Pompeii depicting Darius and Alexander",
+      "The Alexander sarcophagus, showing Alexander at the Battle of Issus",
+      "Babylonian Astronomical Diary tablet mentioning the Battle of Gaugamela (British Museum)",
+      "Silver tetradrachm minted by Lysimachus showing Alexander with horns, Zeus Ammon and Athena (BM: 1919, 0820.1)",
+      "Silver tetradrachm minted by Ptolemy I showing Alexander with elephant scalp headdress (BM: 1987, 0649.508)"
+    ]
+  },
+  "stats": {
+    "sectionsCount": 4,
+    "topicsCount": 12,
+    "pointsCount": 24
+  },
+  "sections": [
+    {
+      "id": "key-topic-1",
+      "keyTopicNumber": 1,
+      "title": "Key Topic 1: Youth, Accession, Character & Beliefs (356–334 BC)",
+      "topics": [
+        {
+          "number": 1,
+          "title": "1.1 Youth, Olympias, Philip and Divine Lineage",
+          "points": [
+            "Alexander's youth; the character, political and personal influence of Olympias; Alexander's relationship with Philip"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Alexander, 2–3; 6–9",
+            "Silver tetradrachm minted by Lysimachus showing Alexander with horns, Zeus Ammon and Athena"
+          ]
+        },
+        {
+          "number": 2,
+          "title": "1.2 Murder of Philip and Expedition Against Persia",
+          "points": [
+            "The murder of Philip and the differing interpretations of the events surrounding it",
+            "The initial reasons for the expedition against Persia; Antipater"
+          ],
+          "prescribedSetSources": [
+            "Diodorus Siculus, Library of History, 16.91–16.94",
+            "Plutarch, Life of Alexander, 9"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "1.3 Character, Religious Beliefs and Macedonian Warfare",
+          "points": [
+            "Alexander's character and beliefs",
+            "The use of the cavalry; the use of the phalanx; the use of specialist troops; the weapons and armour of the army"
+          ],
+          "prescribedSetSources": [
+            "Arrian, The Campaigns of Alexander, 1.11–1.12; 7.28–7.30"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "key-topic-2",
+      "keyTopicNumber": 2,
+      "title": "Key Topic 2: Granicus, Tyre, Egypt, Gaugamela & Persepolis (334–330 BC)",
+      "topics": [
+        {
+          "number": 1,
+          "title": "2.1 Battle of the Granicus and the Gordian Knot",
+          "points": [
+            "The Battles at the Granicus; the events of the Battles at the Granicus; the significance of the tactics used at the main battles"
+          ],
+          "prescribedSetSources": [
+            "Arrian, The Campaigns of Alexander, 1.11–1.16; 2.3"
+          ]
+        },
+        {
+          "number": 2,
+          "title": "2.2 Siege of Tyre, Issus Artefacts and Foundation Cities",
+          "points": [
+            "The use of siege warfare at Tyre; the actions of Alexander and his army during the final capture of Tyre",
+            "The nature and role of his foundation cities"
+          ],
+          "prescribedSetSources": [
+            "Arrian, The Campaigns of Alexander, 2.24",
+            "Mosaic from the House of the Faun in Pompeii depicting Darius and Alexander",
+            "The Alexander sarcophagus, showing Alexander at the Battle of Issus"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "2.3 Battle of Gaugamela, Persian Gates and Burning of Persepolis",
+          "points": [
+            "The Battles at Gaugamela and the Persian Gates; the events of the Battles at Gaugamela",
+            "The burning of Persepolis"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Alexander, 31–33; 38",
+            "Arrian, The Campaigns of Alexander, 3.9–3.15; 3.18",
+            "Babylonian Astronomical Diary tablet mentioning the Battle of Gaugamela"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "key-topic-3",
+      "keyTopicNumber": 3,
+      "title": "Key Topic 3: Central Asia, Persian Customs, Conspiracies & India (330–325 BC)",
+      "topics": [
+        {
+          "number": 1,
+          "title": "3.1 Pursuits of Darius and Bessus, Parmenio and Murder of Cleitus",
+          "points": [
+            "The pursuits of Darius and Bessus; the murder of Cleitus",
+            "His relationships with companions including Parmenio, Cleitus"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Alexander, 50–51",
+            "Arrian, The Campaigns of Alexander, 4.8–4.9"
+          ]
+        },
+        {
+          "number": 2,
+          "title": "3.2 Persian Dress, Proskynesis and Callisthenes",
+          "points": [
+            "The adoption of Persian dress and customs; the changing aims of his expeditions and changing views of Persians and the Persian empire",
+            "His relationships with companions including Callisthenes"
+          ],
+          "prescribedSetSources": [
+            "Arrian, The Campaigns of Alexander, 4.9–4.12"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "3.3 Aornus Rock, Indus Valley Campaign and Mutiny at the Hyphasis",
+          "points": [
+            "The use of siege warfare at the Aornus Rock",
+            "The final campaign in the Indus Valley including the mutiny at the Hyphasis"
+          ],
+          "prescribedSetSources": [
+            "Arrian, The Campaigns of Alexander, 4.28–4.30",
+            "Silver tetradrachm minted by Ptolemy I showing Alexander with elephant scalp headdress"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "key-topic-4",
+      "keyTopicNumber": 4,
+      "title": "Key Topic 4: Return to Babylon, Susa, Hephaestion & Alexander's Death (325–323 BC)",
+      "topics": [
+        {
+          "number": 1,
+          "title": "4.1 Return Journey, Mass Marriages at Susa and Army Relations",
+          "points": [
+            "The difficulties encountered on the return journey to Babylon",
+            "The mass marriages at Susa; Alexander's relationship with his army"
+          ],
+          "prescribedSetSources": [
+            "Arrian, The Campaigns of Alexander, 7.4"
+          ]
+        },
+        {
+          "number": 2,
+          "title": "4.2 Hephaestion's Death and Royal Grief",
+          "points": [
+            "The course of his life and his relationships with companions including Hephaestion"
+          ],
+          "prescribedSetSources": [
+            "Arrian, The Campaigns of Alexander, 7.14"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "4.3 Alexander's Death in Babylon and Differing Explanations",
+          "points": [
+            "Alexander's death and the differing explanations of the events surrounding it"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Alexander, 73–77",
+            "Arrian, The Campaigns of Alexander, 7.24–7.26; 7.28–7.30"
+          ]
+        }
+      ]
+    }
+  ]
+}

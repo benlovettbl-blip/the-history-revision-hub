@@ -2112,5 +2112,469 @@ export const SCHEMES_OF_WORK_DATA = {
               ]
           }
       ]
+  },
+  "ks2_crime_and_punishment": {
+      "unitId": "ks2_crime_and_punishment",
+      "yearGroup": "Key Stage 2",
+      "keyStage": "KS2",
+      "title": "Crime & Punishment Through Time — Roman Courts to Modern Forensics (AD 43–Present)",
+      "subtitle": "Roman Twelve Tables & Bath Curse Tablets, Saxon Tithings, Wergild & Ordeals, Norman Forest Laws, Henry II’s Juries & Magna Carta, Tudor Vagrants, 1605 Plot & Witch Trials, Smugglers, Highwaymen & Bloody Code, and 1829 Peelers, Prisons & 1984 DNA",
+      "overarchingEnquiry": "How and why have crimes, policing, trials, and punishments changed across 2,000 years of British history?",
+      "textbookPdf": "/pdfs/ks2_crime_and_punishment_textbook.pdf",
+      "sowPdf": "/pdfs/ks2_crime_and_punishment_scheme_of_work.pdf",
+      "workbookPdf": "/pdfs/ks2_crime_and_punishment_pupil_workbook.pdf",
+      "enquiries": [
+          {
+              "num": 1,
+              "title": "Roman Law, Twelve Tables and Bath Curse Tablets (AD 43–410)",
+              "enquiryQuestion": "How did the Romans catch thieves and judge crimes in Britain without a police force?",
+              "disciplinaryFocus": "Evidence, Change & Social Rank in Roman Britain",
+              "sources": "Folded Roman Lead Curse Tablet From Aquae Sulis (Bath); Roman Bronze Steelyard Balance Beam; Roman Legionary Amphitheatre at Caerleon",
+              "keyFigure": "Magistrates & Citizens of Aquae Sulis",
+              "figureRole": "Keepers of Written Roman Basilica Law & Votive Curse Pleas",
+              "vocabulary": ["Twelve Tables", "Magistrate", "Vigiles", "Aquae Sulis", "Curse Tablet"]
+          },
+          {
+              "num": 2,
+              "title": "Anglo-Saxon Tithings, Wergild and Trial by Ordeal (AD 410–1066)",
+              "enquiryQuestion": "Were Anglo-Saxon laws fair community rules or painful superstitions?",
+              "disciplinaryFocus": "Community Justice, Compensation & Belief",
+              "sources": "Old English Royal Law Code in Textus Roffensis; Medieval Illumination of Sounding a Horn Alarm; Cold-Water Ordeal Woodcut (1584)",
+              "keyFigure": "King Alfred the Great",
+              "figureRole": "Compiler of the Written Old English Law Code (Domboc)",
+              "vocabulary": ["Tithing", "Hue and Cry", "Wergild", "Hundred Court", "Trial by Ordeal"]
+          },
+          {
+              "num": 3,
+              "title": "Norman Forest Laws, Sanctuary and Royal Courts (1066–1485)",
+              "enquiryQuestion": "How did Norman kings and medieval royal judges change English justice after 1066?",
+              "disciplinaryFocus": "Continuity & Change Across 1066",
+              "sources": "Bronze Lion-Head Sanctuary Knocker on Durham Cathedral; Original 1215 Sheepskin Exemplar of Magna Carta; Wooden Street Pillory Engraving",
+              "keyFigure": "King Henry II",
+              "figureRole": "Architect of English Common Law & Twelve-Person Juries",
+              "vocabulary": ["Forest Laws", "Poaching", "Common Law", "Magna Carta", "Sanctuary"]
+          },
+          {
+              "num": 4,
+              "title": "Tudor Vagrants, High Treason and Witchcraft Trials (1485–1700)",
+              "enquiryQuestion": "Why did Tudor and Stuart rulers fear vagrants, plotters, and accused witches so fiercely?",
+              "disciplinaryFocus": "Causation, Fear & Changing Attitudes",
+              "sources": "Elizabethan Woodcut of Vagabonds Whipped Behind a Cart (1567); Guy Fawkes’s Sheet-Iron Dark Lantern (1605); Matthew Hopkins Woodcut (1647)",
+              "keyFigure": "Guy Fawkes & the 1605 Conspirators",
+              "figureRole": "Gunpowder Plotters Caught Guarding 36 Barrels Beneath Parliament",
+              "vocabulary": ["Vagrant", "Poor Law", "High Treason", "Ducking Stool", "Superstition"]
+          },
+          {
+              "num": 5,
+              "title": "Smugglers, Highwaymen and The Bloody Code (1700–1820)",
+              "enquiryQuestion": "Why did Britain pass over 200 death-penalty laws—and why did juries stop using them?",
+              "disciplinaryFocus": "Cause, Consequence & Unintended Outcomes",
+              "sources": "Eighteenth-Century Flintlock Horse Pistol; Newgate Prison Gatehouse Engraving; Transported Tasmanian Convict Bill Thompson in Leg Irons",
+              "keyFigure": "Elizabeth Fry",
+              "figureRole": "Quaker Prison Reformer Who Pioneered Rehabilitation at Newgate",
+              "vocabulary": ["Smuggling", "Highwayman", "Bloody Code", "Transportation", "Rehabilitation"]
+          },
+          {
+              "num": 6,
+              "title": "Peel’s 1829 Bobbies, Victorian Prisons and Forensics (1829–Present)",
+              "enquiryQuestion": "How have uniformed police, prison reform, and forensic science transformed justice since 1829?",
+              "disciplinaryFocus": "Synoptic Change, Prevention & Science",
+              "sources": "Painted 19th-Century Wooden Police Truncheons & Rattle; Brixton Prison Tread-Mill Engraving (1822); Modern Forensic DNA Profiling Tank",
+              "keyFigure": "Sir Robert Peel & Professor Sir Alec Jeffreys",
+              "figureRole": "Founder of the 1829 Metropolitan Police & Discoverer of 1984 DNA Profiling",
+              "vocabulary": ["Peelers", "Policing by Consent", "Separate System", "Forensics", "DNA Profiling"]
+          }
+      ]
+  },
+  "ks2_kingdom_of_benin": {
+      "unitId": "ks2_kingdom_of_benin",
+      "yearGroup": "Key Stage 2",
+      "keyStage": "KS2",
+      "title": "The Kingdom of Benin — Rainforest Earthworks, Royal Oba Court & Master Bronzes (c. AD 900–1897)",
+      "subtitle": "Ogiso Kings & 16,000 km Iya Earthworks, Oba Ewuare’s Golden City, Igun Street Lost-Wax Brass Plaques, Queen Mother Idia & Igue Court Life, Portuguese Manilla Trade & Olfert Dapper, and 1897 Invasion & Modern Restitution",
+      "overarchingEnquiry": "How did the rainforest Kingdom of Benin build giant earthworks, a sacred royal court, and world-famous brass sculptures?",
+      "textbookPdf": "/pdfs/ks2_kingdom_of_benin_textbook.pdf",
+      "sowPdf": "/pdfs/ks2_kingdom_of_benin_scheme_of_work.pdf",
+      "workbookPdf": "/pdfs/ks2_kingdom_of_benin_pupil_workbook.pdf",
+      "enquiries": [
+          {
+              "num": 1,
+              "title": "Rainforest Kingdom — Ogiso Rulers, Red-Earth Walls and Anglo-Saxon Contrast (c. AD 900–1180)",
+              "enquiryQuestion": "How did Edo communities build a vast rainforest kingdom by AD 900?",
+              "disciplinaryFocus": "Similarity, Contrast and Early State Building",
+              "sources": "Source A: Sculpted Terracotta Head From Benin City’s Brass-Casters’ Quarter; Source B: Pair of Ceremonial Leaf-Shaped Iron Eben Swords From Benin; Source C: Freshly Harvested Bunches of West African Oil-Palm Fruit",
+              "keyFigure": "Oba Ewuare the Great (r. c. AD 1440–1473)",
+              "figureRole": "Warrior-Rebuilder of Golden Benin City, Nine Fortified Gates and Royal Craft Guilds",
+              "vocabulary": [
+                  "Edo",
+                  "Ogiso",
+                  "Iya",
+                  "Laterite",
+                  "Palm Oil"
+              ]
+          },
+          {
+              "num": 2,
+              "title": "From Ogiso to Oba — Ewuare the Great and Golden Benin City (c. AD 1180–1500)",
+              "enquiryQuestion": "How did Oba Ewuare the Great turn Benin City into a golden capital?",
+              "disciplinaryFocus": "Cause, Consequence and Urban Planning",
+              "sources": "Source A: Royal Benin Brass Plaque of a Court Leader, Guards and Horn-Blower; Source B: Cast Brass Statue of a Royal Benin Court Horn-Blower (c. 1550–1680); Source C: Panoramic Architectural Drawing of Benin City’s Straight Avenues (1897)",
+              "keyFigure": "Queen Mother (Iyoba) Idia (c. AD 1500–1550)",
+              "figureRole": "Wise Political Strategist, Military Supporter and First Crowned Queen Mother of Benin",
+              "vocabulary": [
+                  "Oba",
+                  "Ife",
+                  "Dynasty",
+                  "Coral Beads",
+                  "Guild"
+              ]
+          },
+          {
+              "num": 3,
+              "title": "Lost-Wax Masterpieces — Igun Street Brass-Casters, Ivory and Coral (c. AD 1400–1700)",
+              "enquiryQuestion": "How did Igun Street artists cast brass plaques to record Benin’s history?",
+              "disciplinaryFocus": "Technology, Craftsmanship and Visual Evidence",
+              "sources": "Source A: Benin Brass Pillar Plaque of a Court Official Holding a Tribute Box; Source B: Lost-Wax Cast Brass Cockerel (Okpa) for a Queen Mother’s Altar; Source C: Royal Benin Double-Cylinder Carved Ivory Armlet (18th Century)",
+              "keyFigure": "Oba Esigie (r. c. AD 1504–1550)",
+              "figureRole": "Diplomat-King Who Expanded Portuguese Trade, Lisbon Embassies and Lost-Wax Art",
+              "vocabulary": [
+                  "Benin Bronzes",
+                  "Brass",
+                  "Igun Street",
+                  "Lost-Wax Casting",
+                  "Crucible"
+              ]
+          },
+          {
+              "num": 4,
+              "title": "Sacred Court Rituals — The Oba, Queen Mother Idia and Everyday Edo Life (c. AD 1500–1700)",
+              "enquiryQuestion": "What was life like inside the Oba’s court and Edo rainforest villages?",
+              "disciplinaryFocus": "Beliefs, Female Leadership and Everyday Life",
+              "sources": "Source A: Sixteenth-Century Carved Ivory Pendant Mask of Queen Mother Idia; Source B: Royal Benin Cast Brass Leopard With Raised Ring Spots; Source C: Quadrangular Cast Brass Altar Bell (Eroro) With Human Face",
+              "keyFigure": "The Royal Brass-Casters’ Guild of Igun Street (Igun Eronmwon)",
+              "figureRole": "Hereditary Master Sculptors of Benin’s Lost-Wax Brass Plaques, Heads and Leopards",
+              "vocabulary": [
+                  "Iyoba",
+                  "Olokun",
+                  "Mudfish",
+                  "Igue Festival",
+                  "Ancestral Altar"
+              ]
+          },
+          {
+              "num": 5,
+              "title": "Global Traders — Brass Manillas, Cowrie Shells and European Visitors (c. AD 1485–1850)",
+              "enquiryQuestion": "Why were European visitors so amazed by Benin’s trade and wide streets?",
+              "disciplinaryFocus": "Global Connections and Historical Interpretations",
+              "sources": "Source A: Benin Brass Plaque of Two Portuguese Merchants Holding Manillas; Source B: Edo-Portuguese Carved Ivory Saltcellar for Export Trade (c. 1525–1600); Source C: Copperplate Engraving From Olfert Dapper’s Description of Africa (1668)",
+              "keyFigure": "Oba Ovonramwen Nogbaisi (r. AD 1888–1914)",
+              "figureRole": "Defender of Benin’s Sovereignty During the February 1897 British Invasion",
+              "vocabulary": [
+                  "Gwato Port",
+                  "Ambassador",
+                  "Manillas",
+                  "Cowrie Shells",
+                  "Olfert Dapper"
+              ]
+          },
+          {
+              "num": 6,
+              "title": "1897 British Invasion, Looted Bronzes and Living Edo Heritage Today (1897–Present)",
+              "enquiryQuestion": "Why did Britain invade Benin in 1897, and should looted bronzes return?",
+              "disciplinaryFocus": "Consequence, Ethics and Living Heritage",
+              "sources": "Source A: British Expedition Officers Seated Amidst Seized Benin Bronzes (Feb 1897); Source B: Eyewitness Photograph of Burning Compounds in Benin City (February 1897); Source C: Contemporary Igun Street Brass Plaque Celebrating Returned Regalia (2021)",
+              "keyFigure": "Oba Ewuare II and Living Edo Restitution Champions (2016–Present)",
+              "figureRole": "Fortieth Oba of Benin Leading Living Edo Culture and Welcoming Returned Bronzes",
+              "vocabulary": [
+                  "Oba Ovonramwen",
+                  "Punitive Expedition",
+                  "Looting",
+                  "Restitution",
+                  "Oba Ewuare II"
+              ]
+          }
+      ]
+  },
+  "ks2_victorian_britain": {
+      "unitId": "ks2_victorian_britain",
+      "yearGroup": "Key Stage 2",
+      "keyStage": "KS2",
+      "title": "Victorian Britain — Steam Railways, Factories, Workhouses & Classrooms (1837–1901)",
+      "subtitle": "Queen Victoria, Brunel’s Railways & 1840 Penny Black, Cotton Mills & Coal-Mine Children, Union Workhouses, Shaftesbury & Dr Barnardo, Board Schools & Welsh Slates, 1851 Crystal Palace, Seacole & Lovelace, and Seaside Holidays & Legacy",
+      "overarchingEnquiry": "How did steam power, factory reform, compulsory schools, and new inventions transform childhood and daily life under Queen Victoria?",
+      "textbookPdf": "/pdfs/ks2_victorian_britain_textbook.pdf",
+      "sowPdf": "/pdfs/ks2_victorian_britain_scheme_of_work.pdf",
+      "workbookPdf": "/pdfs/ks2_victorian_britain_pupil_workbook.pdf",
+      "enquiries": [
+          {
+              "num": 1,
+              "title": "Young Queen Victoria, Steam Railways and Shrinking Britain (1837–1860)",
+              "enquiryQuestion": "How did steam railways and penny post shrink Queen Victoria’s Britain?",
+              "disciplinaryFocus": "Cause, Consequence and Technological Change",
+              "sources": "Source A: George and Robert Stephenson’s Steam Locomotive Rocket (Science Museum, London); Source B: Sheet of 1840 \"Penny Black\" Postage Stamps Bearing Young Queen Victoria’s Profile; Source C: Surviving Red Cast-Iron Victorian Pillar Box Stamped \"V.R.\" (Victoria Regina)",
+              "keyFigure": "Queen Victoria (1819–1901)",
+              "figureRole": "Constitutional Monarch Whose Reign Saw Steam, Reform and Modern Britain Emerge",
+              "vocabulary": [
+                  "Locomotive",
+                  "Railway Mania",
+                  "Railway Time",
+                  "Penny Black",
+                  "Constitutional Monarch"
+              ]
+          },
+          {
+              "num": 2,
+              "title": "Chimneys, Cotton Mills and Children Underground (1837–1850)",
+              "enquiryQuestion": "Why was factory and coal-mine work so dangerous for Victorian children?",
+              "disciplinaryFocus": "Historical Empathy and Primary Testimony",
+              "sources": "Source A: Thomas Allom’s Engraving of a Lancashire Power-Loom Weaving Shed (1835); Source B: Official Royal Commission Woodcut of Child \"Hurriers\" Hauling a Coal Tub (1842); Source C: Sir Humphry Davy’s Wire-Gauze Miner’s Safety Lamps (Science Museum, London)",
+              "keyFigure": "Isambard Kingdom Brunel (1806–1859)",
+              "figureRole": "Master Victorian Engineer of Railways, Bridges, Tunnels and Iron Ocean Steamships",
+              "vocabulary": [
+                  "Cottonopolis",
+                  "Piecer",
+                  "Scavenger",
+                  "Trapper",
+                  "Hurrier"
+              ]
+          },
+          {
+              "num": 3,
+              "title": "Workhouses, Ragged Schools and Champions of Reform (1834–1880)",
+              "enquiryQuestion": "How did Victorian reformers rescue children from workhouses, pits, and streets?",
+              "disciplinaryFocus": "Social Reform, Law and Significance",
+              "sources": "Source A: George Cruikshank’s Etching \"Oliver Asking for More\" in Oliver Twist (1838); Source B: Archival Photograph of Rescued Children Outside a Dr Barnardo’s Home; Source C: Nineteenth-Century Engraving of a Whitechapel Ragged School in East London",
+              "keyFigure": "Anthony Ashley-Cooper, 7th Earl of Shaftesbury (1801–1885)",
+              "figureRole": "Parliamentary Champion of Child Miners, Mill Workers, Chimney Sweeps and Ragged Schools",
+              "vocabulary": [
+                  "Workhouse",
+                  "Gruel",
+                  "Oakum",
+                  "Factory Inspector",
+                  "Ragged School"
+              ]
+          },
+          {
+              "num": 4,
+              "title": "Inside a Victorian Classroom — Slates, Drill and the 1870 School Act (1870–1901)",
+              "enquiryQuestion": "What was daily life really like inside a strict Victorian classroom?",
+              "disciplinaryFocus": "Similarity and Difference Across Everyday Childhood",
+              "sources": "Source A: Wooden-Framed Victorian Classroom Writing Slate (c. 1890–1900); Source B: Class Photograph of Pupils at Orange Street Board School, Southwark, London (1894); Source C: Wooden-Framed Ten-Wire Classroom Counting Abacus",
+              "keyFigure": "Dr Thomas John Barnardo (1845–1905)",
+              "figureRole": "Founder of Free East End Ragged Schools and Homes for Destitute Children",
+              "vocabulary": [
+                  "Board School",
+                  "Three Rs",
+                  "Copperplate",
+                  "Dunce’s Cap",
+                  "Drill"
+              ]
+          },
+          {
+              "num": 5,
+              "title": "Workshop of the World — The 1851 Crystal Palace and Dazzling Inventions (1851–1901)",
+              "enquiryQuestion": "Why did the 1851 Crystal Palace and new inventions amaze the world?",
+              "disciplinaryFocus": "Significance and Scientific Innovation",
+              "sources": "Source A: Colour Lithograph of the Great Exhibition Transept Inside the Crystal Palace (1851); Source B: Nineteenth-Century Carbon-Filament Incandescent Lightbulb and Brass Socket; Source C: Single-Needle Victorian Railway Electric Telegraph Instrument",
+              "keyFigure": "Mary Seacole (1805–1881)",
+              "figureRole": "Jamaican-Scottish Nurse, Herbal Healer and Founder of the Crimean British Hotel",
+              "vocabulary": [
+                  "Crystal Palace",
+                  "Workshop of the World",
+                  "Electric Telegraph",
+                  "Incandescent Bulb",
+                  "Algorithm"
+              ]
+          },
+          {
+              "num": 6,
+              "title": "Rich and Poor Homes, Seaside Holidays and Victoria’s 63-Year Legacy (1850–1901)",
+              "enquiryQuestion": "How much had daily life changed across Britain by January 1901?",
+              "disciplinaryFocus": "Synoptic Change, Continuity and Social Contrast",
+              "sources": "Source A: High-Wheeled Victorian \"Penny-Farthing\" Bicycle (Coventry Transport Museum); Source B: Photograph of the Royal Engineers Team at the First FA Cup Final (1872); Source C: Silver Half-Crown Coin Struck for Queen Victoria’s Jubilee (1887)",
+              "keyFigure": "Ada Lovelace (1815–1852)",
+              "figureRole": "Victorian Mathematician Who Published the World’s First Computer Algorithm (1843)",
+              "vocabulary": [
+                  "Back-to-Back Houses",
+                  "Bank Holidays",
+                  "Bathing Machine",
+                  "Penny-Farthing",
+                  "Diamond Jubilee"
+              ]
+          }
+      ]
+  },
+  "ks2_local_history_detective": {
+      "unitId": "ks2_local_history_detective",
+      "yearGroup": "Key Stage 2",
+      "keyStage": "KS2",
+      "title": "History on Our Doorstep — Local History Detective Toolkit (Roman Towns to Living Memory)",
+      "subtitle": "Roman, Saxon & Viking Place-Names & 1880s OS Maps, Tudor-to-Victorian High Street Architecture & V.R. Postboxes, 1881 Census & School Logbooks, Canals, Mills & Stations, CWGC War Memorials, and Oral History & Heritage Trails",
+      "overarchingEnquiry": "How can maps, buildings, archives, memorials, and living memories unlock the history on our own doorstep?",
+      "textbookPdf": "/pdfs/ks2_local_history_detective_textbook.pdf",
+      "sowPdf": "/pdfs/ks2_local_history_detective_scheme_of_work.pdf",
+      "workbookPdf": "/pdfs/ks2_local_history_detective_pupil_workbook.pdf",
+      "enquiries": [
+          {
+              "num": 1,
+              "title": "Secret Code in Place-Names and Old Ordnance Survey Maps",
+              "enquiryQuestion": "How do place-names and old maps unlock secret history on our doorstep?",
+              "disciplinaryFocus": "Chronology, Etymology and Cartographic Comparison",
+              "sources": "Source A: Large-Scale 1880s Ordnance Survey Town Plan of Gloucester; Source B: Carved Ordnance Survey Benchmark Arrow Cut Into Stonework; Source C: Great and Little Domesday Books (1086 Survey of England)",
+              "keyFigure": "King William I and the 1086 Domesday Commissioners",
+              "figureRole": "Creators of the 1086 Domesday Book Recording Over 13,000 English Towns and Villages",
+              "vocabulary": [
+                  "Castra",
+                  "Domesday Book",
+                  "Ordnance Survey",
+                  "Benchmark",
+                  "Trig Pillar"
+              ]
+          },
+          {
+              "num": 2,
+              "title": "Reading Buildings on the High Street — Timber, Brick and Royal Cyphers",
+              "enquiryQuestion": "How can timber frames, brickwork, and postboxes date a British street?",
+              "disciplinaryFocus": "Architectural Observation and Material Culture",
+              "sources": "Source A: Hexagonal Victorian \"V.R.\" Penfold Cast-Iron Pillar Postbox; Source B: Carved Stone Building Datestone (\"Mechanics Institute 1874\"); Source C: Faded Painted Brick \"Ghost Sign\" (\"Consumers Teas Always Please\")",
+              "keyFigure": "Major-General William Roy (1726–1790)",
+              "figureRole": "Scottish Military Surveyor Whose Precision Triangulation Founded Britain’s Ordnance Survey",
+              "vocabulary": [
+                  "Jetty",
+                  "Sash Window",
+                  "Royal Cypher",
+                  "Datestone",
+                  "Ghost Sign"
+              ]
+          },
+          {
+              "num": 3,
+              "title": "Voices From Number 12 — Censuses, Parish Books and School Logbooks",
+              "enquiryQuestion": "What can censuses, parish books, and school logbooks reveal about past families?",
+              "disciplinaryFocus": "Archival Social History and Record Linkage",
+              "sources": "Source A: Handwritten 1881 Census Enumerator Page (Thistle Grove Lane, Chelsea); Source B: Handwritten 1863 Parish Baptism Register Entry; Source C: Carved 1728 English Churchyard Headstone of Robert and Mary May",
+              "keyFigure": "Dr William Farr (1807–1883)",
+              "figureRole": "Victorian Census Pioneer Who Helped Shape Britain’s Every-Ten-Year Household Schedules",
+              "vocabulary": [
+                  "Census",
+                  "Enumerator",
+                  "Ostler",
+                  "Parish Register",
+                  "School Logbook"
+              ]
+          },
+          {
+              "num": 4,
+              "title": "How Our Town Earned Its Living — Farms, Canals, Mills and Stations",
+              "enquiryQuestion": "How do street names, canals, mills, and stations show past local work?",
+              "disciplinaryFocus": "Economic & Transport Fieldwork Across Britain",
+              "sources": "Source A: Carved Turnpike Stone Milestone and Horse Trough; Source B: Narrowboat Passing Through Wooden Canal Lock Gates; Source C: Historic Cast-Iron British Street Signs (\"Broad St\" and \"Narrow Lane — No Coaches\")",
+              "keyFigure": "Octavia Hill (1838–1912)",
+              "figureRole": "Victorian Housing Reformer and Co-Founder of the National Trust Saving Heritage and Green Spaces",
+              "vocabulary": [
+                  "Turnpike",
+                  "Milestone",
+                  "Canal Lock",
+                  "Aqueduct",
+                  "Branch Line"
+              ]
+          },
+          {
+              "num": 5,
+              "title": "Names Carved in Stone — Local War Memorials and Commonwealth Records",
+              "enquiryQuestion": "How can War Memorials and Commonwealth records trace one local soldier’s story?",
+              "disciplinaryFocus": "Commemoration, Empathy and Biographical Research",
+              "sources": "Source A: Parish Church 1914–1918 War Memorial Tablet (Henham, Essex); Source B: First World War Bronze Memorial Plaque (\"Dead Man’s Penny\"); Source C: Commonwealth War Graves Headstone of Private J. Graham (Manchester Regiment)",
+              "keyFigure": "Major-General Sir Fabian Ware (1869–1949)",
+              "figureRole": "Founder of the Commonwealth War Graves Commission Ensuring Equal Honour for Every Fallen Service Person",
+              "vocabulary": [
+                  "War Memorial",
+                  "Cenotaph",
+                  "Portland Stone",
+                  "Regiment",
+                  "Memorial Plaque"
+              ]
+          },
+          {
+              "num": 6,
+              "title": "Living Memory, Oral History and Saving Local Heritage",
+              "enquiryQuestion": "How do oral history, Blue Plaques, and trails protect local heritage today?",
+              "disciplinaryFocus": "Oral History Methodology and Heritage Conservation",
+              "sources": "Source A: English Heritage Ceramic Blue Plaque for Octavia Hill (1838–1912); Source B: Archival c. 1900 Street Photograph (Curzon Street, Calne, Wiltshire); Source C: Portable Field Tape Recorder Used for Oral History Interviews",
+              "keyFigure": "Community Archivists and Oral Historians (1947–Present)",
+              "figureRole": "Guardians of Local Maps, School Logbooks, Listed Building Records and Living Spoken Memories",
+              "vocabulary": [
+                  "Oral History",
+                  "Decimal Day",
+                  "National Trust",
+                  "Blue Plaque",
+                  "Listed Building"
+              ]
+          }
+      ]
+  },
+  "ocr_persian_empire": {
+    "unitId": "ocr_persian_empire",
+    "yearGroup": "GCSE (9–1)",
+    "keyStage": "GCSE",
+    "title": "OCR Paper 1: The Persian Empire (559–465 BC)",
+    "subtitle": "Cyrus the Great, Cambyses II, Darius I & Xerxes I — Expansion, Satrapies, Tolerance & Greece (J198/01 Sec A)",
+    "overarchingEnquiry": "How did four Achaemenid kings build, govern, and defend the ancient world’s first multi-continental superpower between 559 and 465 BC?",
+    "textbookPdf": "/pdfs/ocr_persian_empire_revision_guide.pdf",
+    "workbookPdf": "/pdfs/ocr_persian_empire_mastery_pack.pdf",
+    "enquiries": [
+      {
+        "num": 1,
+        "title": "KT 1.1: The Rise of Cyrus the Great & Conquest of Lydia (559–c.546 BC)",
+        "enquiryQuestion": "How did a vassal king from Anshan topple the Median Empire and turn Croesus’ Delphic prophecy against Lydia?",
+        "disciplinaryFocus": "Unseen Ancient Passage Analysis (Q3/Q4) & Period Causation",
+        "sources": "Nabonidus Chronicle II.1–4; Herodotus 1.53, 1.79–80 & 1.127; Gold Croeseid Stater; Myson Louvre Amphora (G 197)",
+        "keyFigure": "Cyrus II (\"Cyrus the Great\") & King Croesus",
+        "figureRole": "Founder of the Achaemenid Empire & King of Lydia",
+        "vocabulary": ["Anshan", "Vassal", "Astyages", "Harpagus", "Croesus", "Halys River", "Sardis"]
+      },
+      {
+        "num": 2,
+        "title": "KT 1.2: The Conquest of Babylon & Cyrus’ Imperial Toleration (539–538 BC)",
+        "enquiryQuestion": "Was Cyrus the Great a genuine liberator at Babylon in 539 BC—or antiquity’s shrewdest master of royal propaganda?",
+        "disciplinaryFocus": "Unseen Ancient Passage Accuracy (Q3) & Imperial Policy Analysis (Q4)",
+        "sources": "Nabonidus Chronicle III.12–18; Herodotus 1.191; The Cyrus Cylinder (BM 90920); Book of Ezra 1:1–4 & Isaiah 45:1",
+        "keyFigure": "Cyrus II & King Nabonidus",
+        "figureRole": "Conqueror of Babylon & Last Neo-Babylonian Monarch",
+        "vocabulary": ["Nabonidus", "Marduk", "Akitu Festival", "Battle of Opis", "Ugbaru", "Cyrus Cylinder", "Edict of Restoration"]
+      },
+      {
+        "num": 3,
+        "title": "KT 1.3: The Construction of Pasargadae & the Death of Cyrus (c. 546–530 BC)",
+        "enquiryQuestion": "What do the gardens and reliefs of Pasargadae—and the rival stories of Cyrus’ death—reveal about the empire he built?",
+        "disciplinaryFocus": "Archaeological Synthesis & Competing Ancient Accounts (Q3/Q5*)",
+        "sources": "Gate R Four-Winged Guardian Relief; Tomb of Cyrus & Arrian 6.29; Herodotus 1.214 vs Xenophon Cyropaedia 8.7",
+        "keyFigure": "Cyrus II & Queen Tomyris",
+        "figureRole": "Builder of Pasargadae & Ruler of the Massagetae",
+        "vocabulary": ["Pasargadae", "Pairidaeza", "Winged Genius (Gate R)", "Ashlar Masonry", "Massagetae", "Queen Tomyris", "Cambyses II"]
+      }
+    ]
+  },
+  "ocr_alexander": {
+    "unitId": "ocr_alexander",
+    "yearGroup": "GCSE (9–1)",
+    "keyStage": "GCSE",
+    "title": "OCR Paper 1: Alexander the Great (356–323 BC)",
+    "subtitle": "Pella, Olympias, Philip II, Persian Conquest, Divine Kingship & Prescribed Set Sources (J198/01 Sec D)",
+    "overarchingEnquiry": "Visionary king, son of Zeus Ammon, or ruthless conqueror — how far do our prescribed ancient sources agree on Alexander?",
+    "textbookPdf": "/pdfs/ocr_alexander_revision_guide.pdf",
+    "workbookPdf": "/pdfs/ocr_alexander_mastery_pack.pdf",
+    "enquiries": [
+      {
+        "num": 1,
+        "title": "KT 1.1: Alexander’s Youth, Olympias, Philip II & Divine Lineage (356–337 BC)",
+        "enquiryQuestion": "How far did rival parents, divine myths, and Macedonian court ambition forge Alexander before he ever wore the crown?",
+        "disciplinaryFocus": "AO3 Prescribed Set-Source Accuracy & 20-Mark Set-Source Evaluation",
+        "sources": "Plutarch, Life of Alexander 2–3 & 6–9; Silver Tetradrachm of Lysimachus (BM 1919,0820.1)",
+        "keyFigure": "Alexander III, Olympias & Philip II",
+        "figureRole": "Macedonian Royal Dynasty at Pella",
+        "vocabulary": ["Pella", "Olympias", "Zeus Ammon", "Bucephalas", "Mieza", "Attalus", "Lysimachus"]
+      }
+    ]
   }
 };

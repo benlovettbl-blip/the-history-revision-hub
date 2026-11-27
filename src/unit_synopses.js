@@ -328,6 +328,54 @@ export const unitSynopses = {
       'Chichén Itzá, AD 900 & 7 Million Maya Today',
     ],
   },
+  ks2_crime_and_punishment: {
+    period: 'AD 43 – Present',
+    synopsis:
+      "How have crimes, trials, policing, and punishments transformed across two thousand years of British history? Drop folded lead curse tablets into Sulis Minerva's steaming spring at Roman Bath, sound the cow-horn for an Anglo-Saxon Hue and Cry, and count silver wergild shillings before priests test deadlocked cases with red-hot iron! Watch King Henry II's twelve-person juries and 1215 Magna Carta reshape English justice, step down into the Westminster cellars beside Guy Fawkes's 36 gunpowder barrels, meet coastal tea smugglers, pistol-waving highwaymen, and Quaker reformer Elizabeth Fry inside Newgate Prison, and trace modern crime-fighting from Sir Robert Peel's 1829 blue-coated 'Bobbies' to 1901 Scotland Yard fingerprints and Sir Alec Jeffreys's 1984 Leicester DNA profiling!",
+    tags: [
+      'Roman Law & Bath Curse Tablets',
+      'Anglo-Saxon Tithings, Wergild & Ordeals',
+      'Norman Forest Laws, Juries & Magna Carta',
+      'Tudor Vagrants, 1605 Plot & Witch Trials',
+      'Bloody Code, Elizabeth Fry, 1829 Bobbies & DNA',
+    ],
+  },
+  ks2_kingdom_of_benin: {
+    period: 'c. AD 900 – 1897',
+    synopsis:
+      "How did the West African rainforest Kingdom of Benin dig sixteen thousand kilometres of red-clay earthworks, light broad avenues with palm-oil street lamps, and cast over nine hundred royal brass palace plaques? Journey to Edo in southern Nigeria to contrast AD 900 Ogiso rainforest towns with Anglo-Saxon Britain, walk through Oba Ewuare the Great's nine guarded city gates, and step onto Igun Street as master casters pour glowing molten brass into baked clay moulds! Meet wise Queen Mother Idia and spot sacred leopards and mudfish at the royal court, welcome Portuguese ships trading brass manillas at Gwato port in 1485, read Dutch writer Olfert Dapper's 1668 praise of Benin City, and investigate the 1897 British invasion alongside modern museum restitution to Nigeria today!",
+    tags: [
+      'Ogiso Rulers & 16,000 km Iya Earthworks',
+      'Oba Ewuare the Great & Golden Benin City',
+      'Igun Street Lost-Wax Brass Plaques',
+      'Queen Mother Idia & Royal Oba Court',
+      'Portuguese Manillas, 1897 & Restitution Today',
+    ],
+  },
+  ks2_victorian_britain: {
+    period: '1837 – 1901',
+    synopsis:
+      "How did sixty-four dramatic years under Queen Victoria transform Britain with thundering steam locomotives, towering cotton mills, strict Board Schools, and dazzling inventions? Board Brunel's Great Western Railway as clocks switch to Greenwich Railway Time and Rowland Hill launches the 1840 Penny Black stamp, then step inside smoky Manchester mills and dark Yorkshire coal seams to hear eight-year-old trapper Sarah Gooder's real 1842 testimony! Campaign alongside Lord Shaftesbury and Dr Thomas Barnardo to rescue working and homeless children, chant the Three Rs with Welsh slates inside an 1880s red-brick classroom, marvel beneath Hyde Park's glass Crystal Palace with Ada Lovelace and Mary Seacole, and ride a Bank Holiday steam train to the Victorian seaside!",
+    tags: [
+      'Queen Victoria, Brunel & 1840 Penny Black',
+      'Cotton Mills & Coal-Mine Children (1842)',
+      'Workhouses, Shaftesbury & Dr Barnardo',
+      '1870–1891 Board Schools & Welsh Slates',
+      '1851 Crystal Palace, Inventions & Seaside',
+    ],
+  },
+  ks2_local_history_detective: {
+    period: 'AD 43 – Present',
+    synopsis:
+      "How can we become real history detectives and uncover two thousand years of hidden clues right outside our own school gates? Crack the secret settler code inside British town names from Roman -chester forts to Saxon -ton villages and Viking -by farms, compare 1880s Ordnance Survey street maps against modern roads, and look upstairs above plastic shopfronts to spot overhanging Tudor oak jetties, Georgian sash windows, Victorian red brick, and royal V.R. postboxes! Open real 1881 UK Census pages and handwritten Victorian School Logbooks, trace canal locks and vanished branch-line stations, research one local surname respectfully on your town's War Memorial using Commonwealth War Graves records, and record living elders' memories of pre-1971 shillings!",
+    tags: [
+      'Place-Name Endings & 1880s OS Maps',
+      'Tudor-to-Victorian High Street Clues',
+      '1881 Census, Parish & School Logbooks',
+      'Turnpikes, Canals, Mills & Stations',
+      'CWGC War Memorials & Oral History',
+    ],
+  },
 };
 
 /**

@@ -1,0 +1,1180 @@
+/**
+ * KS2 Interactive Storybook Classroom Labs — Shared Zero-Jump (`CLS = 0`) Stylesheet
+ * Powers:
+ *  1. `ks2_must_farm_lab.js`   — Embers Over the Fen: Must Farm Bronze Age Detective Lab (c. 850 BC)
+ *  2. `ks2_vindolanda_lab.js`  — Ink on the Frontier: Vindolanda Roman Postbag Lab (c. AD 100)
+ *  3. `ks2_tutankhamun_lab.js` — Candlelight in the Valley: Opening Tomb KV62 (November 1922)
+ *
+ * Standards enforced:
+ *  - Mobile-first (`390px` phone to `1920px` classroom smartboard)
+ *  - `min-height: 44px` touch targets & `font-size: 16px` on form inputs/selects
+ *  - Locked-height dialogue bar & sticky bottom Next/Back bar (`CLS = 0`)
+ *  - `object-fit: contain` on `.archival-image` (zero cropping of museum plates)
+ *  - `svg g { opacity: 1 !important; }` print/headless safety + 60 FPS GPU transforms
+ */
+
+.ks2lab-shell,
+.ks2lab-shell * {
+  box-sizing: border-box;
+}
+
+.ks2lab-shell {
+  --ks2-bg-deep: #0f172a;
+  --ks2-bg-mid: #1e293b;
+  --ks2-bg-card: rgba(15, 23, 42, 0.88);
+  --ks2-accent: #f59e0b;
+  --ks2-accent-strong: #d97706;
+  --ks2-accent-soft: #fde68a;
+  --ks2-accent-glow: rgba(245, 158, 11, 0.32);
+  --ks2-secondary: #10b981;
+  --ks2-border: rgba(245, 158, 11, 0.45);
+  --ks2-speech-bg: linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%);
+  --ks2-speech-ink: #1c1917;
+  --ks2-speech-accent: #92400e;
+
+  position: relative;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle at 50% 0%, var(--ks2-bg-mid) 0%, var(--ks2-bg-deep) 72%, #070b14 100%);
+  border: 2px solid var(--ks2-accent-strong);
+  border-radius: 18px;
+  color: #f8fafc;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: clip;
+  overflow-anchor: none;
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.56);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ks2lab-shell.theme-must-farm {
+  --ks2-bg-deep: #141a16;
+  --ks2-bg-mid: #1f2d24;
+  --ks2-bg-card: rgba(20, 29, 24, 0.9);
+  --ks2-accent: #f59e0b;
+  --ks2-accent-strong: #d97706;
+  --ks2-accent-soft: #fde68a;
+  --ks2-accent-glow: rgba(245, 158, 11, 0.34);
+  --ks2-secondary: #34d399;
+  --ks2-border: rgba(217, 119, 6, 0.5);
+}
+
+.ks2lab-shell.theme-vindolanda {
+  --ks2-bg-deep: #131826;
+  --ks2-bg-mid: #281c24;
+  --ks2-bg-card: rgba(22, 26, 40, 0.9);
+  --ks2-accent: #fb923c;
+  --ks2-accent-strong: #dc2626;
+  --ks2-accent-soft: #fed7aa;
+  --ks2-accent-glow: rgba(239, 68, 68, 0.32);
+  --ks2-secondary: #38bdf8;
+  --ks2-border: rgba(249, 115, 22, 0.5);
+}
+
+.ks2lab-shell.theme-tutankhamun {
+  --ks2-bg-deep: #0b1329;
+  --ks2-bg-mid: #172554;
+  --ks2-bg-card: rgba(12, 21, 46, 0.92);
+  --ks2-accent: #eab308;
+  --ks2-accent-strong: #ca8a04;
+  --ks2-accent-soft: #fef08a;
+  --ks2-accent-glow: rgba(234, 179, 8, 0.36);
+  --ks2-secondary: #2dd4bf;
+  --ks2-border: rgba(234, 179, 8, 0.55);
+}
+
+/* SVG print & headless safety invariant */
+.ks2lab-shell svg g {
+  opacity: 1 !important;
+}
+
+.ks2lab-shell.ks2lab-is-fullscreen,
+.ks2lab-shell:fullscreen,
+.ks2lab-shell:-webkit-full-screen {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  height: 100dvh !important;
+  max-width: none !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+  z-index: 99999 !important;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* =========================================================================
+   TOP NAVIGATION & CONTROLS BAR
+   ========================================================================= */
+.ks2lab-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 45;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: max(8px, env(safe-area-inset-top, 0px)) max(14px, env(safe-area-inset-right, 0px)) 8px max(14px, env(safe-area-inset-left, 0px));
+  background: rgba(11, 17, 30, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1.5px solid var(--ks2-border);
+  flex-wrap: wrap;
+}
+
+.ks2lab-step-strip {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.ks2lab-step-pill {
+  appearance: none;
+  min-height: 38px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1.5px solid #334155;
+  background: #0f172a;
+  color: #cbd5e1;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 0.14s ease, border-color 0.14s ease, background-color 0.14s ease;
+  white-space: nowrap;
+}
+
+.ks2lab-step-pill:hover {
+  border-color: var(--ks2-accent);
+  color: #ffffff;
+}
+
+.ks2lab-step-pill.is-active {
+  background: linear-gradient(180deg, var(--ks2-accent) 0%, var(--ks2-accent-strong) 100%);
+  color: #fffbeb;
+  border-color: var(--ks2-accent-soft);
+  box-shadow: 0 0 14px var(--ks2-accent-glow);
+}
+
+.ks2lab-step-pill.is-done {
+  border-color: #22c55e;
+  color: #bbf7d0;
+  background: rgba(22, 163, 74, 0.2);
+}
+
+.ks2lab-mobile-nav {
+  display: none;
+  align-items: center;
+  gap: 6px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.ks2lab-mob-arrow {
+  appearance: none;
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1.5px solid #475569;
+  background: #1e293b;
+  color: var(--ks2-accent-soft);
+  font-size: 0.9rem;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  touch-action: manipulation;
+  flex-shrink: 0;
+}
+
+.ks2lab-mob-arrow:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.ks2lab-mobile-select {
+  flex: 1 1 auto;
+  min-width: 130px;
+  min-height: 44px;
+  padding: 0 8px;
+  border-radius: 10px;
+  border: 1.5px solid var(--ks2-accent);
+  background-color: #0f172a;
+  color: #fef3c7;
+  font-family: inherit;
+  font-size: 16px !important; /* Prevents mobile viewport zoom (CLS = 0) */
+  font-weight: 800;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ks2lab-ctrl-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.ks2lab-score-chip {
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  color: var(--ks2-accent-soft);
+  background: #1e293b;
+  border: 1.5px solid var(--ks2-accent-strong);
+  padding: 4px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.ks2lab-ctrl-btn {
+  appearance: none;
+  min-height: 40px;
+  padding: 6px 11px;
+  border-radius: 10px;
+  border: 1.5px solid #475569;
+  background: #1e293b;
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 0.76rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  touch-action: manipulation;
+  white-space: nowrap;
+  transition: border-color 0.14s ease, background-color 0.14s ease;
+}
+
+.ks2lab-ctrl-btn:hover {
+  border-color: var(--ks2-accent);
+  background: #334155;
+}
+
+.ks2lab-ctrl-btn.is-active {
+  border-color: var(--ks2-accent-soft);
+  background: rgba(245, 158, 11, 0.22);
+  color: var(--ks2-accent-soft);
+}
+
+.ks2lab-ctrl-btn.is-warn {
+  border-color: #f97316;
+  background: rgba(234, 88, 12, 0.3);
+  color: #fed7aa;
+}
+
+.ks2lab-ctrl-btn.is-close {
+  border-color: #ef4444;
+  background: rgba(127, 29, 29, 0.45);
+  color: #fecaca;
+}
+
+.ks2lab-ctrl-btn.is-close:hover {
+  background: rgba(185, 28, 28, 0.7);
+  color: #ffffff;
+}
+
+/* =========================================================================
+   LOCKED-HEIGHT NARRATOR DIALOGUE BAR (`CLS = 0`)
+   ========================================================================= */
+.ks2lab-speech-bar {
+  flex-shrink: 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 88px;
+  margin: 12px 14px 0;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: var(--ks2-speech-bg);
+  border: 2px solid var(--ks2-accent-strong);
+  color: var(--ks2-speech-ink);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.28);
+}
+
+.ks2lab-speaker-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2.5px solid var(--ks2-accent-strong);
+  background: #1e293b;
+  color: #fef3c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  flex-shrink: 0;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.22);
+}
+
+.ks2lab-speech-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.ks2lab-speech-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 3px;
+}
+
+.ks2lab-speaker-name {
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--ks2-speech-accent);
+}
+
+.ks2lab-speech-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ks2lab-replay-btn {
+  appearance: none;
+  min-height: 30px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1.5px solid rgba(146, 64, 14, 0.55);
+  background: rgba(255, 255, 255, 0.85);
+  color: #7c2d12;
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ks2lab-replay-btn:hover {
+  background: #ffffff;
+  border-color: #9a3412;
+}
+
+.ks2lab-hint-pill {
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: rgba(146, 64, 14, 0.12);
+  color: #78350f;
+}
+
+.ks2lab-speech-quote {
+  margin: 0;
+  font-size: 0.93rem;
+  font-weight: 600;
+  line-height: 1.42;
+  color: #1c1917;
+  hyphens: none;
+}
+
+/* =========================================================================
+   STAGE BODY, COVER VIEW & 2-COLUMN WORKSPACE
+   ========================================================================= */
+.ks2lab-stage-slot {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 12px 14px 16px;
+}
+
+.ks2lab-cover-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.95fr);
+  gap: 18px;
+  background: var(--ks2-bg-card);
+  border: 1.5px solid var(--ks2-border);
+  border-radius: 16px;
+  padding: 18px;
+  align-items: stretch;
+}
+
+.ks2lab-cover-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ks2lab-cover-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.ks2lab-kicker {
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--ks2-accent);
+  margin-bottom: 5px;
+}
+
+.ks2lab-hero-title {
+  margin: 0 0 8px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  line-height: 1.18;
+  color: #fef3c7;
+}
+
+.ks2lab-hero-sub {
+  margin: 0 0 12px;
+  font-size: 0.94rem;
+  line-height: 1.5;
+  color: #e2e8f0;
+  hyphens: none;
+}
+
+.ks2lab-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.ks2lab-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(245, 158, 11, 0.16);
+  border: 1px solid var(--ks2-border);
+  color: var(--ks2-accent-soft);
+}
+
+.ks2lab-cta-primary {
+  appearance: none;
+  width: 100%;
+  min-height: 50px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid var(--ks2-accent-soft);
+  background: linear-gradient(180deg, var(--ks2-accent) 0%, var(--ks2-accent-strong) 100%);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  touch-action: manipulation;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  box-shadow: 0 8px 22px var(--ks2-accent-glow);
+  margin-top: auto;
+  transition: transform 0.14s ease, filter 0.14s ease;
+}
+
+.ks2lab-cta-primary:hover {
+  filter: brightness(1.07);
+  transform: translateY(-1px);
+}
+
+.ks2lab-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.95fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.ks2lab-visual-col,
+.ks2lab-panel-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.ks2lab-svg-frame {
+  position: relative;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1.5px solid var(--ks2-border);
+  background: #090e1a;
+  box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.45);
+}
+
+.ks2lab-svg-scene {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+}
+
+.ks2lab-svg-hit {
+  cursor: pointer;
+  transition: filter 0.18s ease, transform 0.18s ease;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.ks2lab-svg-hit:hover {
+  filter: brightness(1.18) drop-shadow(0 0 8px rgba(253, 224, 71, 0.65));
+}
+
+.ks2lab-hotspot-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.ks2lab-spot-chip {
+  appearance: none;
+  min-height: 46px;
+  padding: 8px 11px;
+  border-radius: 11px;
+  border: 1.5px solid #334155;
+  background: rgba(15, 23, 42, 0.92);
+  color: #e2e8f0;
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+}
+
+.ks2lab-spot-chip:hover {
+  border-color: var(--ks2-accent);
+  background: rgba(30, 41, 59, 0.95);
+}
+
+.ks2lab-spot-chip.is-active {
+  border-color: var(--ks2-accent-soft);
+  background: rgba(245, 158, 11, 0.22);
+  color: #fffbeb;
+  box-shadow: 0 0 12px var(--ks2-accent-glow);
+}
+
+.ks2lab-spot-chip.is-found {
+  border-color: #22c55e;
+}
+
+.ks2lab-spot-status {
+  font-size: 0.72rem;
+  font-weight: 900;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.16);
+  color: #cbd5e1;
+  flex-shrink: 0;
+}
+
+.ks2lab-spot-chip.is-found .ks2lab-spot-status {
+  background: rgba(34, 197, 94, 0.24);
+  color: #bbf7d0;
+}
+
+/* =========================================================================
+   ARCHIVAL MUSEUM PLATE (`object-fit: contain` — ZERO CROPPING)
+   ========================================================================= */
+.ks2lab-plate-card {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1.5px solid rgba(148, 163, 184, 0.32);
+  border-radius: 13px;
+  padding: 10px 12px;
+  display: grid;
+  grid-template-columns: 148px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+}
+
+.ks2lab-plate-frame {
+  width: 100%;
+  height: 108px;
+  background: #050811;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.ks2lab-plate-frame .archival-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important;
+  display: block;
+}
+
+.ks2lab-plate-kicker {
+  font-size: 0.68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--ks2-accent);
+  margin-bottom: 3px;
+}
+
+.ks2lab-plate-caption {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.42;
+  color: #cbd5e1;
+  hyphens: none;
+}
+
+/* =========================================================================
+   RIGHT-HAND INTERACTIVE DETECTIVE CARDS, GRIDS, SORTERS & QUIZZES
+   ========================================================================= */
+.ks2lab-card {
+  background: var(--ks2-bg-card);
+  border: 1.5px solid var(--ks2-border);
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ks2lab-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ks2lab-card-kicker {
+  font-size: 0.71rem;
+  font-weight: 900;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  color: var(--ks2-accent);
+}
+
+.ks2lab-card-title {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.18rem;
+  line-height: 1.24;
+  color: #fef3c7;
+}
+
+.ks2lab-card-prose {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.48;
+  color: #e2e8f0;
+  hyphens: none;
+}
+
+.ks2lab-detail-box {
+  background: rgba(15, 23, 42, 0.85);
+  border-left: 4px solid var(--ks2-accent);
+  border-radius: 10px;
+  padding: 11px 13px;
+  min-height: 98px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.ks2lab-detail-title {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 900;
+  color: var(--ks2-accent-soft);
+}
+
+.ks2lab-detail-text {
+  margin: 0;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  color: #e2e8f0;
+  hyphens: none;
+}
+
+/* 6-Tile Archaeological Trench Grid & Kit Grid */
+.ks2lab-trench-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.ks2lab-trench-tile {
+  appearance: none;
+  min-height: 82px;
+  padding: 8px 7px;
+  border-radius: 11px;
+  border: 1.5px solid #57534e;
+  background: linear-gradient(180deg, #3f342b 0%, #27201a 100%);
+  color: #fde68a;
+  font-family: inherit;
+  font-size: 0.77rem;
+  font-weight: 800;
+  line-height: 1.25;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4px;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+}
+
+.ks2lab-trench-tile:hover {
+  transform: translateY(-2px);
+  border-color: var(--ks2-accent);
+}
+
+.ks2lab-trench-tile.is-dug {
+  background: linear-gradient(180deg, #14532d 0%, #0f291e 100%);
+  border-color: #22c55e;
+  color: #ecfdf5;
+}
+
+.ks2lab-trench-tile.is-selected {
+  box-shadow: 0 0 0 2px var(--ks2-accent-soft), 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+.ks2lab-tile-icon {
+  font-size: 1.3rem;
+}
+
+/* Interactive Sequence / Simulator Buttons */
+.ks2lab-sim-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ks2lab-sim-btn {
+  appearance: none;
+  width: 100%;
+  min-height: 48px;
+  padding: 9px 12px;
+  border-radius: 11px;
+  border: 1.5px solid #334155;
+  background: rgba(15, 23, 42, 0.92);
+  color: #f1f5f9;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.ks2lab-sim-btn:hover {
+  border-color: var(--ks2-accent);
+}
+
+.ks2lab-sim-btn.is-active {
+  border-color: var(--ks2-accent-soft);
+  background: rgba(245, 158, 11, 0.2);
+  color: #fffbeb;
+}
+
+.ks2lab-sim-btn.is-done {
+  border-color: #22c55e;
+  background: rgba(22, 163, 74, 0.16);
+}
+
+.ks2lab-sim-btn.is-wrong {
+  border-color: #ef4444;
+  background: rgba(220, 38, 38, 0.22);
+  color: #fecaca;
+}
+
+/* Sorter & Matcher Controls */
+.ks2lab-sorter-prompt {
+  background: rgba(30, 41, 59, 0.9);
+  border: 1.5px solid var(--ks2-accent);
+  border-radius: 12px;
+  padding: 12px;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ks2lab-bucket-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.ks2lab-bucket-btn {
+  appearance: none;
+  min-height: 50px;
+  padding: 9px 12px;
+  border-radius: 11px;
+  border: 2px solid var(--ks2-accent);
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  color: #fef3c7;
+  font-family: inherit;
+  font-size: 0.83rem;
+  font-weight: 900;
+  line-height: 1.25;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 0.14s ease, border-color 0.14s ease, background 0.14s ease;
+}
+
+.ks2lab-bucket-btn:hover {
+  border-color: #fde047;
+  background: #334155;
+  transform: translateY(-1px);
+}
+
+/* Candlelight Peephole (Tomb KV62 Stage 2 — 60 FPS GPU radial spotlight) */
+.ks2lab-peephole-wrap {
+  position: relative;
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid #ca8a04;
+  background: #05070e;
+  touch-action: none;
+  cursor: crosshair;
+}
+
+.ks2lab-peephole-mask {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 118px at var(--torch-x, 50%) var(--torch-y, 50%),
+    rgba(255, 237, 160, 0.08) 0%,
+    rgba(234, 179, 8, 0.18) 38%,
+    rgba(6, 9, 18, 0.88) 76%,
+    rgba(3, 5, 10, 0.96) 100%
+  );
+  transition: opacity 0.25s ease;
+}
+
+.ks2lab-peephole-wrap.all-lit .ks2lab-peephole-mask {
+  background: radial-gradient(
+    circle 280px at var(--torch-x, 50%) var(--torch-y, 50%),
+    rgba(255, 244, 190, 0.04) 0%,
+    rgba(9, 13, 26, 0.42) 100%
+  );
+}
+
+/* Quiz & Final Synthesis Report Cards */
+.ks2lab-quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ks2lab-quiz-card {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1.5px solid #334155;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ks2lab-quiz-card.is-solved {
+  border-color: #22c55e;
+}
+
+.ks2lab-quiz-q {
+  margin: 0;
+  font-size: 0.87rem;
+  font-weight: 800;
+  line-height: 1.38;
+  color: #f8fafc;
+}
+
+.ks2lab-opt-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.ks2lab-opt-btn {
+  appearance: none;
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 11px;
+  border-radius: 9px;
+  border: 1.5px solid #475569;
+  background: #1e293b;
+  color: #e2e8f0;
+  font-family: inherit;
+  font-size: 0.81rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: border-color 0.14s ease, background-color 0.14s ease;
+}
+
+.ks2lab-opt-btn:hover {
+  border-color: var(--ks2-accent);
+  color: #ffffff;
+}
+
+.ks2lab-opt-btn.is-correct {
+  border-color: #22c55e;
+  background: rgba(22, 163, 74, 0.25);
+  color: #dcfce7;
+  font-weight: 800;
+}
+
+.ks2lab-opt-btn.is-wrong {
+  border-color: #ef4444;
+  background: rgba(220, 38, 38, 0.24);
+  color: #fecaca;
+}
+
+.ks2lab-quiz-feedback {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.38;
+  padding: 7px 9px;
+  border-radius: 8px;
+  background: rgba(30, 41, 59, 0.9);
+  color: #fde68a;
+}
+
+/* Completion Certificate Banner */
+.ks2lab-cert-banner {
+  margin-top: 14px;
+  padding: 18px 20px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(20, 83, 45, 0.92) 0%, rgba(15, 23, 42, 0.96) 100%);
+  border: 2px solid #fbbf24;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ks2lab-cert-pillars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.ks2lab-cert-pill {
+  font-size: 0.73rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid #4ade80;
+  color: #dcfce7;
+}
+
+.ks2lab-print-btn {
+  appearance: none;
+  min-height: 46px;
+  padding: 10px 18px;
+  border-radius: 11px;
+  border: 2px solid #fef08a;
+  background: linear-gradient(180deg, #f59e0b 0%, #b45309 100%);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+/* =========================================================================
+   PINNED BOTTOM NEXT / BACK NAVIGATION BAR (`CLS = 0`)
+   ========================================================================= */
+.ks2lab-bottom-nav {
+  position: sticky;
+  bottom: 0;
+  z-index: 42;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px max(14px, env(safe-area-inset-right, 0px)) max(10px, env(safe-area-inset-bottom, 0px)) max(14px, env(safe-area-inset-left, 0px));
+  background: rgba(9, 13, 24, 0.96);
+  backdrop-filter: blur(8px);
+  border-top: 1.5px solid var(--ks2-border);
+}
+
+.ks2lab-nav-btn {
+  appearance: none;
+  min-height: 46px;
+  min-width: 118px;
+  padding: 8px 16px;
+  border-radius: 11px;
+  border: 1.5px solid #475569;
+  background: #1e293b;
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 0.86rem;
+  font-weight: 900;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 0.14s ease, border-color 0.14s ease, background 0.14s ease;
+}
+
+.ks2lab-nav-btn:hover:not(:disabled) {
+  border-color: var(--ks2-accent);
+  background: #334155;
+}
+
+.ks2lab-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.ks2lab-nav-btn.is-primary {
+  background: linear-gradient(180deg, var(--ks2-accent) 0%, var(--ks2-accent-strong) 100%);
+  border-color: var(--ks2-accent-soft);
+  color: #ffffff;
+  box-shadow: 0 4px 14px var(--ks2-accent-glow);
+}
+
+.ks2lab-nav-status {
+  flex: 1 1 auto;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #cbd5e1;
+  min-width: 0;
+}
+
+.ks2lab-nav-status strong {
+  color: var(--ks2-accent-soft);
+}
+
+/* =========================================================================
+   RESPONSIVE BREAKPOINTS (`860px` TABLET & `390px` MOBILE SAFE AREAS)
+   ========================================================================= */
+@media (max-width: 900px) {
+  .ks2lab-step-strip {
+    display: none;
+  }
+  .ks2lab-mobile-nav {
+    display: flex;
+  }
+  .ks2lab-btn-label {
+    display: none;
+  }
+  .ks2lab-ctrl-btn {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ks2lab-shell {
+    border-radius: 12px;
+  }
+  .ks2lab-cover-card,
+  .ks2lab-workspace,
+  .ks2lab-quiz-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+  .ks2lab-speech-bar {
+    margin: 8px 10px 0;
+    padding: 9px 11px;
+    min-height: 0;
+    height: auto;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .ks2lab-speaker-badge {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+    margin-top: 2px;
+  }
+  .ks2lab-speaker-name {
+    font-size: 0.72rem;
+  }
+  .ks2lab-speech-quote {
+    font-size: 0.85rem;
+    line-height: 1.38;
+  }
+  .ks2lab-stage-slot {
+    padding: 10px 10px 14px;
+  }
+  .ks2lab-card,
+  .ks2lab-cover-card {
+    padding: 12px;
+  }
+  .ks2lab-hotspot-strip,
+  .ks2lab-bucket-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .ks2lab-trench-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .ks2lab-plate-card {
+    grid-template-columns: 112px minmax(0, 1fr);
+    padding: 8px 10px;
+  }
+  .ks2lab-nav-status {
+    font-size: 0.74rem;
+  }
+  .ks2lab-nav-btn {
+    min-width: 96px;
+    padding: 8px 12px;
+    font-size: 0.82rem;
+  }
+}

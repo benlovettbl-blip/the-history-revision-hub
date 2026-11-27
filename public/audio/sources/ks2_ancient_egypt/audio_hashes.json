@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_6_sA": {
+      "hash": "4fd05d750e6beab1",
+      "bytes": 78668,
+      "voiceKey": "female_historian",
+      "badge": "1923 Photograph of Howard Carter…",
+      "updatedAt": "2026-11-27T00:20:59.377Z"
+    },
+    "lesson_6_sC": {
+      "hash": "7fb6e924e8cc190e",
+      "bytes": 74252,
+      "voiceKey": "female_historian",
+      "badge": "Silver Coin Stamped with Queen C…",
+      "updatedAt": "2026-11-27T00:20:59.717Z"
+    },
+    "lesson_1_sA": {
+      "hash": "52d38e0c5576a743",
+      "bytes": 76748,
+      "voiceKey": "female_historian",
+      "badge": "Mesopotamian Clay Cuneiform Tabl…",
+      "updatedAt": "2026-11-27T00:21:00.944Z"
+    },
+    "lesson_2_sA": {
+      "hash": "7cb32af29838bcbc",
+      "bytes": 78476,
+      "voiceKey": "female_historian",
+      "badge": "Giant Stepped Core Limestone Blo…",
+      "updatedAt": "2026-11-27T00:21:01.295Z"
+    },
+    "lesson_2_sC": {
+      "hash": "18f032629e7f76d7",
+      "bytes": 78476,
+      "voiceKey": "female_historian",
+      "badge": "Carved Diorite Statue of Pharaoh…",
+      "updatedAt": "2026-11-27T00:21:01.613Z"
+    },
+    "lesson_3_sC": {
+      "hash": "c277d9c0f9d6977e",
+      "bytes": 75980,
+      "voiceKey": "female_historian",
+      "badge": "Glazed Blue Faience Senet Game B…",
+      "updatedAt": "2026-11-27T00:21:01.941Z"
+    },
+    "lesson_4_sA": {
+      "hash": "d538551c1c09896a",
+      "bytes": 77804,
+      "voiceKey": "female_historian",
+      "badge": "Black & Gold Jackal Shrine Statu…",
+      "updatedAt": "2026-11-27T00:21:02.249Z"
+    },
+    "lesson_4_sC": {
+      "hash": "1865340ef62399ca",
+      "bytes": 78860,
+      "voiceKey": "female_historian",
+      "badge": "Bright Blue Glazed Faience Shabt…",
+      "updatedAt": "2026-11-27T00:21:02.574Z"
+    },
+    "lesson_5_sA": {
+      "hash": "5717ada2284589fc",
+      "bytes": 85388,
+      "voiceKey": "female_historian",
+      "badge": "Red Granite Sphinx Statue of Fem…",
+      "updatedAt": "2026-11-27T00:21:02.874Z"
+    },
+    "lesson_5_sB": {
+      "hash": "b5d56dc21c80bf17",
+      "bytes": 75500,
+      "voiceKey": "female_historian",
+      "badge": "Painted Limestone Bust of Queen…",
+      "updatedAt": "2026-11-27T00:21:03.165Z"
+    },
+    "lesson_1_sB": {
+      "hash": "ff9e685a7a8e58ef",
+      "bytes": 71468,
+      "voiceKey": "male_historian",
+      "badge": "Tomb of Ipuy Wall Painting of an…",
+      "updatedAt": "2026-11-27T00:21:04.264Z"
+    },
+    "lesson_1_sC": {
+      "hash": "1287b7197c3b9b9e",
+      "bytes": 71660,
+      "voiceKey": "male_historian",
+      "badge": "Carved Siltstone Narmer Palette…",
+      "updatedAt": "2026-11-27T00:21:04.565Z"
+    },
+    "lesson_2_sB": {
+      "hash": "686657f098d4f25b",
+      "bytes": 67916,
+      "voiceKey": "male_historian",
+      "badge": "Ancient Egyptian Metal Stone-Wor…",
+      "updatedAt": "2026-11-27T00:21:04.892Z"
+    },
+    "lesson_3_sA": {
+      "hash": "5aefd8debc8c1c13",
+      "bytes": 85196,
+      "voiceKey": "male_historian",
+      "badge": "The Rosetta Stone Carved in Thre…",
+      "updatedAt": "2026-11-27T00:21:05.242Z"
+    },
+    "lesson_3_sB": {
+      "hash": "7d3e3461b50c7a67",
+      "bytes": 71564,
+      "voiceKey": "male_historian",
+      "badge": "Ancient Egyptian Medical Papyrus…",
+      "updatedAt": "2026-11-27T00:21:05.550Z"
+    },
+    "lesson_4_sB": {
+      "hash": "cfef353d63f12d86",
+      "bytes": 70508,
+      "voiceKey": "male_historian",
+      "badge": "Set of Four Carved Limestone Can…",
+      "updatedAt": "2026-11-27T00:21:05.835Z"
+    },
+    "lesson_5_sC": {
+      "hash": "cf37f2ae6b54340e",
+      "bytes": 84140,
+      "voiceKey": "male_historian",
+      "badge": "Baked Clay Tablet of the Kadesh…",
+      "updatedAt": "2026-11-27T00:21:06.138Z"
+    },
+    "lesson_6_sB": {
+      "hash": "fdf686d37367c5cd",
+      "bytes": 82508,
+      "voiceKey": "male_historian",
+      "badge": "Tutankhamun’s Gilded Wooden Thro…",
+      "updatedAt": "2026-11-27T00:21:06.432Z"
+    }
+  }
+}

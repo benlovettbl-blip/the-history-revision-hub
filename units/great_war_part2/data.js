@@ -645,16 +645,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=JPNyNr2Kp4w",
-          "title": "War Horse (2011, Steven Spielberg) | Official Trailer",
-          "duration": "2 mins 33 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Steven Spielberg’s epic feature illustrating the cavalry charge against German Maxim machine guns in 1914, capturing the transition from 19th-century equestrian warfare to mechanized industrial slaughter. Recommended Watch Window: 00:00–02:32 (Full Trailer). Lesson Phase: Cinematic Starter Hook & 1914 Cavalry Illusion. Tone Alert: Emotional, sweeping historical drama.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice how British cavalry officers eagerly charge across open fields with drawn sabres, only to be cut down by concealed German machine-gun nests and wire. How does Spielberg dramatize the catastrophic obsolescence of traditional military tactics in the face of modern industrial weaponry?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer visually encapsulates the great tragedy of 1914: generals trained in Victorian colonial wars believed horse cavalry and bayonet charges would achieve rapid breakthrough. The devastating mechanical firepower of machine guns and quick-firing artillery dismantled these romantic illusions, forcing armies underground into stalemate trenches.</p>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=IrabKK9Bhds",
           "title": "They Shall Not Grow Old (2018, Peter Jackson) | Colorized Archival Documentary",
           "duration": "2 mins 24 secs",
@@ -3400,16 +3390,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=ngu6HDmFKZ4",
-          "title": "Gallipoli (1981, Peter Weir / Mel Gibson) | Original Theatrical Trailer",
-          "duration": "1 min 35 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Peter Weir’s classic masterpiece starring Mel Gibson and Mark Lee as young Australian sprinters sent into the disastrous 1915 Gallipoli campaign against Ottoman forces at The Nek. Recommended Watch Window: 00:00–01:35 (Full Trailer). Lesson Phase: Cinematic Starter Hook & ANZAC Identity. Tone Alert: Poignant, iconic historical drama.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice young Australian athletes competing on outback running tracks, traveling halfway across the world to Cairo, and ultimately charging uphill into Ottoman Maxim machine guns on the cliffs of Gallipoli. How does Peter Weir’s film dramatize the forging of Australian national identity (the \"ANZAC Legend\") in the fires of World War One?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer captures how young men from Britain's distant dominions viewed volunteering as a great imperial test of character. While Gallipoli was a catastrophic military defeat orchestrated by Winston Churchill and British commanders, the bravery, endurance, and egalitarian mateship displayed by Australian and New Zealand soldiers became the founding national myth of both independent nations.</p>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=ZxpS3xyt_fU",
           "title": "How the Colonies Made WW1 a Global War | David Olusoga (BBC The World's War)",
           "duration": "5 mins 46 secs",
@@ -4839,16 +4819,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=VLiLInoOod0",
-          "title": "Testament of Youth (2014, James Kent / Alicia Vikander) | Official Trailer",
-          "duration": "1 min 56 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Feature film adaptation of Vera Brittain’s classic pacifist memoir starring Alicia Vikander and Kit Harington. Follows young Oxford student Vera abandoning her studies to become a Voluntary Aid Detachment (VAD) nurse on the Western Front, losing her fiancé, brother, and friends. Recommended Watch Window: 00:00–01:55 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Women in Wartime. Tone Alert: Poignant, emotionally devastating historical drama.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice Vera Brittain's transformation from an ambitious Oxford scholar to a field nurse treating amputees and gassed soldiers in field hospitals, watching her entire generation of young men perish. How does this film capture the profound emotional devastation experienced by British women on the Home Front?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer illustrates that the war was not fought solely by men in trenches: women bore the crushing emotional trauma of bereavement, the grueling physical labour of nursing catastrophic wounds, and the dismantling of traditional Edwardian domestic expectations. Brittain's journey reflects the emergence of modern female independence and passionate post-war pacifism.</p>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=WKFZCRPe1so",
           "title": "Britain's Great War: The Home Front & DORA | Jeremy Paxman (BBC)",
           "duration": "4 mins 51 secs",
@@ -6226,16 +6196,6 @@ export default {
           "teacher_guidance": "Clear animated comparison of Georges Clemenceau, Woodrow Wilson, and David Lloyd George at the 1919 Paris Peace Conference, highlighting why each leader arrived with incompatible domestic pressures. Recommended Watch Window: 00:00–02:49 • Lesson Phase: Core Enquiry Evidence.",
           "viewing_task": "<ol><li><strong>[00:35] Recall:</strong> Name the 'Big Three' Allied leaders who dominated negotiations at the Palace of Versailles in 1919.</li><li><strong>[01:25] Explain:</strong> Explain why French Prime Minister Georges Clemenceau demanded far harsher terms against Germany than US President Woodrow Wilson.</li><li><strong>[02:15] Challenge:</strong> Why was British Prime Minister David Lloyd George caught in the middle between French public fury and long-term European trade recovery?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Georges Clemenceau (France), Woodrow Wilson (USA), and David Lloyd George (Britain).</li><li><strong>Explain:</strong> France had been invaded twice by Germany (1870 and 1914) and suffered catastrophic destruction on its own soil, whereas America entered late in 1917 and its homeland was untouched.</li><li><strong>Challenge:</strong> British voters demanded 'Make Germany Pay', yet Lloyd George privately feared that crippling Germany economically would ruin Britain's biggest pre-war trading partner and push Germans toward communism or future revenge.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=YqNYrYUiMfg",
-          "title": "1917 (2019, Sam Mendes) | Official Trailer [HD]",
-          "duration": "2 mins 32 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Three-time Academy Award-winning technical masterpiece starring George MacKay. Recreates the devastating devastation of the Hindenburg Line, booby-trapped trenches, and running across artillery craters. Recommended Watch Window: 00:00–02:31 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Total Devastation. Tone Alert: Intense, visceral, breathtaking cinematic experience.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the lunar wasteland of no man's land—shattered trees, endless mud craters, decaying animal carcases, and abandoned trenches depicted in Mendes' continuous-shot masterpiece. How does this visual depiction of absolute European destruction explain why Allied leaders at Versailles in 1919 were determined to ensure that Germany could never wage war again?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer showcases the physical and ecological ruin inflicted on northern France and Belgium: entire towns, forests, and roads pulverized into toxic mud. French Premier Georges Clemenceau and French citizens had witnessed the destruction of their industrial heartland and the deaths of 1.4 million soldiers, explaining their furious demand at Versailles that Germany must be permanently weakened and forced to pay crippling reparations.</p>"
         },
         {
           "type": "youtube",

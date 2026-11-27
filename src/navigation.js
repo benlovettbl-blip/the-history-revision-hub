@@ -135,6 +135,10 @@ export function syncKs2PortalState(unitId = null, unitData = null, viewName = nu
     ks2_ancient_greece: 'Search Greece...',
     ks2_early_islamic_baghdad: 'Search Baghdad...',
     ks2_maya_civilisation: 'Search Maya...',
+    ks2_kingdom_of_benin: 'Search Benin...',
+    ks2_victorian_britain: 'Search Victorians...',
+    ks2_crime_and_punishment: 'Search Crime & Law...',
+    ks2_local_history_detective: 'Search Local History...',
   };
   const ks2ModalHints = {
     ks2_stone_to_iron_age: 'Search Stonehenge, Skara Brae, Bronze Age, Hillforts...',
@@ -144,6 +148,10 @@ export function syncKs2PortalState(unitId = null, unitData = null, viewName = nu
     ks2_ancient_greece: 'Search Athens, Sparta, Olympics, Alexander...',
     ks2_early_islamic_baghdad: 'Search Baghdad, House of Wisdom, Silk Road, Astrolabe...',
     ks2_maya_civilisation: 'Search Tikal, Palenque, Maya Glyphs, Cacao, Chichén Itzá...',
+    ks2_kingdom_of_benin: 'Search Oba Ewuare, Benin Bronzes, Queen Idia, Iya Walls...',
+    ks2_victorian_britain: 'Search Victoria, Brunel, Workhouses, Barnardo, Crystal Palace...',
+    ks2_crime_and_punishment: 'Search Wergild, Magna Carta, Guy Fawkes, Peelers, DNA...',
+    ks2_local_history_detective: 'Search Place-Names, OS Maps, Census, Postboxes, Memorials...',
   };
   const ks2SearchPillHint = ks2PillHints[activeKs2Id] || 'Search WWII...';
   const ks2SearchModalHint = ks2ModalHints[activeKs2Id] || 'Search WWII topics, evacuees, Blitz...';
@@ -974,6 +982,10 @@ export function updateBreadcrumbs(customTrail = null) {
     if (id === 'ks2_ancient_greece') return 'Ancient Greece';
     if (id === 'ks2_early_islamic_baghdad') return 'Baghdad c. AD 900';
     if (id === 'ks2_maya_civilisation') return 'The Ancient Maya';
+    if (id === 'ks2_kingdom_of_benin') return 'Kingdom of Benin';
+    if (id === 'ks2_victorian_britain') return 'Victorian Britain';
+    if (id === 'ks2_crime_and_punishment') return 'Crime & Punishment';
+    if (id === 'ks2_local_history_detective') return 'Local History Study';
     const activeUnit = unitData?.title ? unitData : appStore.state.activeUnitData || {};
     if (activeUnit && activeUnit.shortTitle) return activeUnit.shortTitle;
     if (activeUnit && activeUnit.title) {
@@ -2185,7 +2197,9 @@ function updateSidebarForUnit(unitId, unitData = {}) {
 
   // Set KeyStage badge
   let ksLabel = 'KS3 HISTORY';
-  if (
+  if (unitId.startsWith('ocr_')) {
+    ksLabel = 'OCR ANCIENT HISTORY (J198)';
+  } else if (
     unitId.startsWith('gcse_') ||
     unitId === 'cme_new' ||
     unitId === 'weimar_nazi_germany' ||

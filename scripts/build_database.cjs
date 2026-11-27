@@ -74,6 +74,7 @@ async function buildDatabase() {
         }
         if (unitData) {
           unitData.edition = unitData.edition || '2026.1';
+          mergeUnitVideoSidecar(unitId, unitData);
           const issues = auditEntityIntegrity(unitId, unitData);
           if (issues.length > 0) {
             console.warn(
@@ -231,6 +232,68 @@ function auditEntityIntegrity(unitId, unitData) {
 
   walk(unitData, unitId);
   return issues;
+}
+
+function mergeUnitVideoSidecar(unitId, unitData) {
+  const sidecarPath = path.join(__dirname, '..', 'data', 'videos', `${unitId}.json`);
+  if (!fs.existsSync(sidecarPath)) return;
+  try {
+    const sidecar = JSON.parse(fs.readFileSync(sidecarPath, 'utf8'));
+    const normUrl = (v) => {
+      const url = String((v && v.url) || '').trim();
+      const m = url.match(/(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/i);
+      return m ? `yt:${m[1]}` : url.toLowerCase();
+    };
+
+    if (Array.isArray(sidecar.unit_videos) && sidecar.unit_videos.length > 0) {
+      const existing = Array.isArray(unitData.unit_videos) ? unitData.unit_videos : [];
+      const seen = new Set(existing.map(normUrl));
+      const merged = [...existing];
+      for (const vid of sidecar.unit_videos) {
+        if (!vid || !vid.url) continue;
+        const key = normUrl(vid);
+        if (!seen.has(key)) {
+          seen.add(key);
+          merged.push(vid);
+        }
+      }
+      unitData.unit_videos = merged;
+    }
+
+    if (sidecar.lesson_videos && typeof sidecar.lesson_videos === 'object' && Array.isArray(unitData.lessons)) {
+      unitData.lessons.forEach((lesson, idx) => {
+        const candidates = [
+          lesson.id,
+          lesson.slug,
+          String(idx + 1),
+          `lesson_${idx + 1}`,
+        ].filter(Boolean);
+        const sidecarList = [];
+        for (const k of candidates) {
+          if (Array.isArray(sidecar.lesson_videos[k])) {
+            sidecarList.push(...sidecar.lesson_videos[k]);
+          }
+        }
+        if (sidecarList.length === 0) return;
+        const existingPrimary = lesson.video ? (Array.isArray(lesson.video) ? lesson.video : [lesson.video]) : [];
+        const existingExtra = Array.isArray(lesson.extra_videos) ? lesson.extra_videos : [];
+        const seen = new Set([...existingPrimary, ...existingExtra].filter(Boolean).map(normUrl));
+        const mergedExtra = [...existingExtra];
+        for (const vid of sidecarList) {
+          if (!vid || !vid.url) continue;
+          const key = normUrl(vid);
+          if (!seen.has(key)) {
+            seen.add(key);
+            mergedExtra.push(vid);
+          }
+        }
+        lesson.extra_videos = mergedExtra;
+      });
+    }
+    console.log(`🎬 Merged video sidecar for ${unitId}`);
+  } catch (err) {
+    console.warn(`⚠️  Failed to merge data/videos/${unitId}.json: ${err.message}`);
+  }
 }
 
 buildDatabase();

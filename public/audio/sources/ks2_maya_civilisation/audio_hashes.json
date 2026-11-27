@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_5_sA": {
+      "hash": "0ef8193c3cbb14b7",
+      "bytes": 76748,
+      "voiceKey": "male_historian",
+      "badge": "Carved Greenstone Ceremonial Bal…",
+      "updatedAt": "2026-11-27T00:26:48.086Z"
+    },
+    "lesson_5_sC": {
+      "hash": "9990cbf481334ba1",
+      "bytes": 73964,
+      "voiceKey": "male_historian",
+      "badge": "Carved Green Jade Royal Chest Pl…",
+      "updatedAt": "2026-11-27T00:26:48.427Z"
+    },
+    "lesson_6_sA": {
+      "hash": "ce7e3de1a8d8fbcf",
+      "bytes": 80780,
+      "voiceKey": "male_historian",
+      "badge": "Flaked Volcanic Obsidian Blades…",
+      "updatedAt": "2026-11-27T00:26:48.743Z"
+    },
+    "lesson_1_sA": {
+      "hash": "943ddb4d63ef9734",
+      "bytes": 72716,
+      "voiceKey": "male_historian",
+      "badge": "Multi-Coloured Mesoamerican Maiz…",
+      "updatedAt": "2026-11-27T00:26:49.803Z"
+    },
+    "lesson_1_sC": {
+      "hash": "5ab7ee1339678c92",
+      "bytes": 76268,
+      "voiceKey": "male_historian",
+      "badge": "Traditional Yucatec Maya Limesto…",
+      "updatedAt": "2026-11-27T00:26:50.094Z"
+    },
+    "lesson_2_sA": {
+      "hash": "2ed9df3c69b0ca37",
+      "bytes": 86540,
+      "voiceKey": "male_historian",
+      "badge": "Green Jade Mosaic Funerary Mask…",
+      "updatedAt": "2026-11-27T00:26:50.386Z"
+    },
+    "lesson_2_sC": {
+      "hash": "1de5f7774586d0bd",
+      "bytes": 77036,
+      "voiceKey": "male_historian",
+      "badge": "Painted Royal Court Murals at Bo…",
+      "updatedAt": "2026-11-27T00:26:50.666Z"
+    },
+    "lesson_3_sA": {
+      "hash": "5db280751b0dbad4",
+      "bytes": 85868,
+      "voiceKey": "male_historian",
+      "badge": "Painted Fig-Bark Page from the D…",
+      "updatedAt": "2026-11-27T00:26:51.002Z"
+    },
+    "lesson_3_sC": {
+      "hash": "10d9d4ae66d2ddb8",
+      "bytes": 88364,
+      "voiceKey": "male_historian",
+      "badge": "Accordion-Folded Fig-Bark Pages…",
+      "updatedAt": "2026-11-27T00:26:51.352Z"
+    },
+    "lesson_4_sA": {
+      "hash": "a3afdd89ad755aac",
+      "bytes": 70508,
+      "voiceKey": "male_historian",
+      "badge": "Sliced Ripe Cacao Pods & Valuabl…",
+      "updatedAt": "2026-11-27T00:26:51.658Z"
+    },
+    "lesson_4_sC": {
+      "hash": "ca689885740604c7",
+      "bytes": 78188,
+      "voiceKey": "male_historian",
+      "badge": "Giant Carved Stone Pok-ta-Pok Ri…",
+      "updatedAt": "2026-11-27T00:26:52.019Z"
+    },
+    "lesson_1_sB": {
+      "hash": "e16235b74409bfd2",
+      "bytes": 76268,
+      "voiceKey": "female_historian",
+      "badge": "Botanical Diagram of Three Siste…",
+      "updatedAt": "2026-11-27T00:27:03.551Z"
+    },
+    "lesson_2_sB": {
+      "hash": "3541dade00c4ce80",
+      "bytes": 90476,
+      "voiceKey": "female_historian",
+      "badge": "Carved and Painted Limestone Rel…",
+      "updatedAt": "2026-11-27T00:27:03.901Z"
+    },
+    "lesson_3_sB": {
+      "hash": "e11dd16415b5bf82",
+      "bytes": 87116,
+      "voiceKey": "female_historian",
+      "badge": "Twelve Carved Limestone Hierogly…",
+      "updatedAt": "2026-11-27T00:27:04.240Z"
+    },
+    "lesson_4_sB": {
+      "hash": "d0cda042cc5af4bb",
+      "bytes": 73676,
+      "voiceKey": "female_historian",
+      "badge": "Classic Maya Cylindrical Cacao D…",
+      "updatedAt": "2026-11-27T00:27:04.566Z"
+    },
+    "lesson_5_sB": {
+      "hash": "4ffde060f340f97a",
+      "bytes": 85964,
+      "voiceKey": "female_historian",
+      "badge": "Tall Terracotta God-Effigy Incen…",
+      "updatedAt": "2026-11-27T00:27:04.894Z"
+    },
+    "lesson_6_sB": {
+      "hash": "757912cac64ca2aa",
+      "bytes": 87596,
+      "voiceKey": "female_historian",
+      "badge": "Towering Temple Iat Tikal",
+      "updatedAt": "2026-11-27T00:27:05.229Z"
+    },
+    "lesson_6_sC": {
+      "hash": "68e694cc04c57651",
+      "bytes": 79628,
+      "voiceKey": "female_historian",
+      "badge": "Living Maya Woman Weaving on a B…",
+      "updatedAt": "2026-11-27T00:27:05.533Z"
+    }
+  }
+}

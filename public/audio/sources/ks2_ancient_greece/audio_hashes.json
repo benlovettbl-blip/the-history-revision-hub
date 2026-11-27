@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_sA": {
+      "hash": "0b0bc544286e3312",
+      "bytes": 79628,
+      "voiceKey": "male_historian",
+      "badge": "Carved Stone Lion Gate at Bronze…",
+      "updatedAt": "2026-11-27T00:23:04.964Z"
+    },
+    "lesson_1_sC": {
+      "hash": "b1e84ddbe23d307a",
+      "bytes": 68396,
+      "voiceKey": "male_historian",
+      "badge": "Silver Athenian Owl Coin With Ol…",
+      "updatedAt": "2026-11-27T00:23:05.340Z"
+    },
+    "lesson_2_sA": {
+      "hash": "7af53d090a0ea53d",
+      "bytes": 73772,
+      "voiceKey": "male_historian",
+      "badge": "Marble Portrait Bust of Athenian…",
+      "updatedAt": "2026-11-27T00:23:05.716Z"
+    },
+    "lesson_2_sC": {
+      "hash": "461827d33ba72e82",
+      "bytes": 71660,
+      "voiceKey": "male_historian",
+      "badge": "Hammered Bronze Corinthian Warri…",
+      "updatedAt": "2026-11-27T00:23:06.047Z"
+    },
+    "lesson_3_sA": {
+      "hash": "76fa6d0d13c1f647",
+      "bytes": 77900,
+      "voiceKey": "male_historian",
+      "badge": "Over-Life-Size Bronze Statue of…",
+      "updatedAt": "2026-11-27T00:23:06.385Z"
+    },
+    "lesson_3_sC": {
+      "hash": "f1402b2049de461d",
+      "bytes": 70988,
+      "voiceKey": "male_historian",
+      "badge": "Black-Figure Clay Jar Showing He…",
+      "updatedAt": "2026-11-27T00:23:06.764Z"
+    },
+    "lesson_4_sA": {
+      "hash": "8837cd2e246c2e12",
+      "bytes": 79628,
+      "voiceKey": "male_historian",
+      "badge": "Black-Figure Greek Vase Showing…",
+      "updatedAt": "2026-11-27T00:23:07.123Z"
+    },
+    "lesson_4_sB": {
+      "hash": "f9ac7eb1eb5674dc",
+      "bytes": 80012,
+      "voiceKey": "male_historian",
+      "badge": "Glazed Brick Frieze of Persian I…",
+      "updatedAt": "2026-11-27T00:23:07.478Z"
+    },
+    "lesson_4_sC": {
+      "hash": "f34912cc6b176aca",
+      "bytes": 67628,
+      "voiceKey": "male_historian",
+      "badge": "Marble Portrait Bust of Athenian…",
+      "updatedAt": "2026-11-27T00:23:08.398Z"
+    },
+    "lesson_5_sA": {
+      "hash": "744a5d70158a6387",
+      "bytes": 62636,
+      "voiceKey": "male_historian",
+      "badge": "Ancient Greek Clay Theatre Masks…",
+      "updatedAt": "2026-11-27T00:23:08.678Z"
+    },
+    "lesson_5_sC": {
+      "hash": "0811112f90195e50",
+      "bytes": 81740,
+      "voiceKey": "male_historian",
+      "badge": "Marble Portrait Bust of Physicia…",
+      "updatedAt": "2026-11-27T00:23:09.028Z"
+    },
+    "lesson_6_sA": {
+      "hash": "1f5082a2b4cb7ec9",
+      "bytes": 67340,
+      "voiceKey": "male_historian",
+      "badge": "Silver Coin of Alexander Wearing…",
+      "updatedAt": "2026-11-27T00:23:09.349Z"
+    },
+    "lesson_6_sC": {
+      "hash": "6b3d300e86e29b32",
+      "bytes": 68876,
+      "voiceKey": "male_historian",
+      "badge": "Bronze Statue of the Galloping R…",
+      "updatedAt": "2026-11-27T00:23:09.636Z"
+    },
+    "lesson_1_sB": {
+      "hash": "efe7bef0cdb69059",
+      "bytes": 71660,
+      "voiceKey": "female_historian",
+      "badge": "Ancient Greek Stone Inscription…",
+      "updatedAt": "2026-11-27T00:23:09.999Z"
+    },
+    "lesson_2_sB": {
+      "hash": "7444062c1faca7eb",
+      "bytes": 74252,
+      "voiceKey": "female_historian",
+      "badge": "Broken Athenian Pottery Ostrakon…",
+      "updatedAt": "2026-11-27T00:23:10.328Z"
+    },
+    "lesson_3_sB": {
+      "hash": "fedbf8a285a98fcf",
+      "bytes": 75788,
+      "voiceKey": "female_historian",
+      "badge": "Ancient Marble Copy of Athena Pa…",
+      "updatedAt": "2026-11-27T00:23:10.649Z"
+    },
+    "lesson_5_sB": {
+      "hash": "100231105f999542",
+      "bytes": 78188,
+      "voiceKey": "female_historian",
+      "badge": "Ancient Marble Portrait Head of…",
+      "updatedAt": "2026-11-27T00:23:10.952Z"
+    },
+    "lesson_6_sB": {
+      "hash": "b6fe98dfe1328a8f",
+      "bytes": 78380,
+      "voiceKey": "female_historian",
+      "badge": "Diagram Comparing Greek Doric, I…",
+      "updatedAt": "2026-11-27T00:23:11.243Z"
+    }
+  }
+}

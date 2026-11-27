@@ -922,6 +922,56 @@ export const WORKBOOK_PAGE_MAP = {
       "lessonIndex": 5
     }
   },
+  "ks2_crime_and_punishment": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_crime_and_punishment",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_crime_and_punishment",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_crime_and_punishment",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_crime_and_punishment",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_crime_and_punishment",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_crime_and_punishment",
+      "lessonIndex": 5
+    }
+  },
   "ks2_early_islamic_baghdad": {
     "lesson_1": {
       "page": 3,
@@ -969,6 +1019,106 @@ export const WORKBOOK_PAGE_MAP = {
       "spread": "pp. 13–14",
       "booklet": "Pupil Workbook",
       "unitId": "ks2_early_islamic_baghdad",
+      "lessonIndex": 5
+    }
+  },
+  "ks2_kingdom_of_benin": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_kingdom_of_benin",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_kingdom_of_benin",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_kingdom_of_benin",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_kingdom_of_benin",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_kingdom_of_benin",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_kingdom_of_benin",
+      "lessonIndex": 5
+    }
+  },
+  "ks2_local_history_detective": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_local_history_detective",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_local_history_detective",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_local_history_detective",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_local_history_detective",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_local_history_detective",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_local_history_detective",
       "lessonIndex": 5
     }
   },
@@ -1119,6 +1269,56 @@ export const WORKBOOK_PAGE_MAP = {
       "spread": "pp. 13–14",
       "booklet": "Pupil Workbook",
       "unitId": "ks2_stone_to_iron_age",
+      "lessonIndex": 5
+    }
+  },
+  "ks2_victorian_britain": {
+    "lesson_1": {
+      "page": 3,
+      "endPage": 4,
+      "spread": "pp. 3–4",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_victorian_britain",
+      "lessonIndex": 0
+    },
+    "lesson_2": {
+      "page": 5,
+      "endPage": 6,
+      "spread": "pp. 5–6",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_victorian_britain",
+      "lessonIndex": 1
+    },
+    "lesson_3": {
+      "page": 7,
+      "endPage": 8,
+      "spread": "pp. 7–8",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_victorian_britain",
+      "lessonIndex": 2
+    },
+    "lesson_4": {
+      "page": 9,
+      "endPage": 10,
+      "spread": "pp. 9–10",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_victorian_britain",
+      "lessonIndex": 3
+    },
+    "lesson_5": {
+      "page": 11,
+      "endPage": 12,
+      "spread": "pp. 11–12",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_victorian_britain",
+      "lessonIndex": 4
+    },
+    "lesson_6": {
+      "page": 13,
+      "endPage": 14,
+      "spread": "pp. 13–14",
+      "booklet": "Pupil Workbook",
+      "unitId": "ks2_victorian_britain",
       "lessonIndex": 5
     }
   },

@@ -3575,6 +3575,26 @@ window.openEmergencyCoverModal = async function (initialUnitId, initialUnitData)
       title: 'KS2: The Ancient Maya (c. 2000 BC–AD 1500)',
       group: 'Key Stage 2',
     },
+    {
+      id: 'ks2_crime_and_punishment',
+      title: 'KS2: Crime & Punishment Through Time (AD 43–Present)',
+      group: 'Key Stage 2',
+    },
+    {
+      id: 'ks2_kingdom_of_benin',
+      title: 'KS2: The Kingdom of Benin (c. AD 900–1897)',
+      group: 'Key Stage 2',
+    },
+    {
+      id: 'ks2_victorian_britain',
+      title: 'KS2: Victorian Britain — Railways, Reform & Classrooms (1837–1901)',
+      group: 'Key Stage 2',
+    },
+    {
+      id: 'ks2_local_history_detective',
+      title: 'KS2: History on Our Doorstep — Local Detective Toolkit',
+      group: 'Key Stage 2',
+    },
   ];
 
   const DEFAULT_SET_MAPPING = {

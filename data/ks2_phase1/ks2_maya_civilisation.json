@@ -1,0 +1,424 @@
+{
+  "unit_id": "ks2_maya_civilisation",
+  "glossary": [
+    {
+      "term": "Ajaw",
+      "pronunciation": "ah-HOW",
+      "definition": "A Classic Maya king or lord; supreme rulers took the title K'uhul Ajaw, meaning holy lord, as messengers between people and gods."
+    },
+    {
+      "term": "Base-20",
+      "pronunciation": "BAYS-TWEN-tee",
+      "definition": "The Maya place-value counting system built on twenties, matching ten fingers and ten toes, written with shells, dots, and bars."
+    },
+    {
+      "term": "Cacao",
+      "pronunciation": "kuh-KOW",
+      "definition": "Tropical tree pods whose roasted seeds made frothy spiced royal chocolate drinks and worked as everyday Maya market money."
+    },
+    {
+      "term": "Cenote",
+      "pronunciation": "seh-NOH-tay",
+      "definition": "A deep natural sinkhole in northern Yucatán where collapsed porous limestone exposed cool underground freshwater pools."
+    },
+    {
+      "term": "Chaac",
+      "pronunciation": "CHAHK",
+      "definition": "The long-nosed Maya god of rain, thunder, and lightning, honoured at caves and cenotes so golden maize crops would thrive."
+    },
+    {
+      "term": "Chichén Itzá",
+      "pronunciation": "chee-CHEN eet-SAH",
+      "definition": "Great northern Yucatán Maya city built near sacred cenotes, famed for El Castillo step-pyramid, El Caracol observatory, and its Great Ballcourt."
+    },
+    {
+      "term": "Chultun",
+      "pronunciation": "chool-TOON",
+      "definition": "A bottle-shaped underground chamber dug into limestone rock and lined with waterproof lime plaster to store monsoon rainwater."
+    },
+    {
+      "term": "City-state",
+      "pronunciation": "SIT-ee-stayt",
+      "definition": "An independent city and its surrounding farmlands governed by its own ruler, laws, and army, such as Tikal, Palenque, or Copán."
+    },
+    {
+      "term": "Codices",
+      "pronunciation": "KOH-dih-seez",
+      "definition": "Accordion-folded Maya books made from beaten inner fig-tree bark coated in white lime paste and painted with turkey-quill brushes."
+    },
+    {
+      "term": "Copal",
+      "pronunciation": "koh-PAHL",
+      "definition": "Sweet-smelling tree resin burned by Maya priests inside tall clay censers so fragrant smoke carried prayers up to the gods."
+    },
+    {
+      "term": "Corbelled vault",
+      "pronunciation": "KOR-buld VAWLT",
+      "definition": "A high narrow Maya stone ceiling built by stepping flat limestone blocks inward from both walls until they met beneath a capstone."
+    },
+    {
+      "term": "Deforestation",
+      "pronunciation": "dee-for-ih-STAY-shun",
+      "definition": "Chopping down wide stretches of forest trees for farmland and plaster kilns, leaving bare hillside soil to wash away in heavy rain."
+    },
+    {
+      "term": "Drought",
+      "pronunciation": "DROWT",
+      "definition": "A long, dangerous stretch of years with far too little rainfall, drying up city reservoirs and withering staple maize harvests."
+    },
+    {
+      "term": "El Caracol",
+      "pronunciation": "el kah-rah-KOHL",
+      "definition": "Round stone astronomical observatory tower at Chichén Itzá whose narrow viewing windows lined up with sunsets and the planet Venus."
+    },
+    {
+      "term": "Equinox",
+      "pronunciation": "EK-wih-noks",
+      "definition": "The two days each year in spring and autumn when daytime and nighttime last equal hours, casting Kukulkan's serpent shadow at Chichén Itzá."
+    },
+    {
+      "term": "Glyphs",
+      "pronunciation": "GLIFS",
+      "definition": "Over eight hundred carved or painted Maya hieroglyphic signs standing for whole words or spoken syllables to spell complete sentences."
+    },
+    {
+      "term": "Haab'",
+      "pronunciation": "HAHB",
+      "definition": "The 365-day Maya solar farming calendar that guided maize planting and harvests alongside the 260-day sacred Tzolk'in calendar."
+    },
+    {
+      "term": "Huipil",
+      "pronunciation": "wee-PEEL",
+      "definition": "A traditional Maya tunic or blouse hand-woven on a portable backstrap loom with colourful geometric patterns unique to each town."
+    },
+    {
+      "term": "Jade",
+      "pronunciation": "JAYD",
+      "definition": "Tough, shining green stone prized above gold by Maya royals for masks, collars, and earflares symbolising breath and young maize."
+    },
+    {
+      "term": "Kukulkan",
+      "pronunciation": "koo-kool-KAHN",
+      "definition": "The mighty Maya feathered serpent god of wind, rain, and learning, honoured on Chichén Itzá's 365-step El Castillo pyramid."
+    },
+    {
+      "term": "Maize",
+      "pronunciation": "MAYZ",
+      "definition": "Sacred Mesoamerican corn soaked in limewater and ground into nourishing tortilla dough as the staple food of every Maya city."
+    },
+    {
+      "term": "Mesoamerica",
+      "pronunciation": "mez-oh-uh-MER-ih-kuh",
+      "definition": "The historical region stretching from southern Mexico through Guatemala, Belize, Honduras, and El Salvador where Maya cities flourished."
+    },
+    {
+      "term": "Metate",
+      "pronunciation": "meh-TAH-tay",
+      "definition": "A flat three-legged or curved volcanic grinding stone used every dawn with a stone roller to crush soaked maize into fresh dough."
+    },
+    {
+      "term": "Obsidian",
+      "pronunciation": "ob-SID-ee-un",
+      "definition": "Glossy jet-black volcanic glass mined in the southern highlands and flaked into blades and spear points sharper than steel."
+    },
+    {
+      "term": "Pok-ta-Pok",
+      "pronunciation": "POK-tah-POK",
+      "definition": "The fast sacred Maya ballgame where padded players bounced a heavy solid rubber ball off their hips inside sloping stone courts."
+    },
+    {
+      "term": "Popol Vuh",
+      "pronunciation": "poh-POHL VOO",
+      "definition": "The sacred K'iche' Maya creation book telling how the gods shaped humans from maize dough and how the Hero Twins outwitted Xibalba."
+    },
+    {
+      "term": "Stelae",
+      "pronunciation": "STEE-lee",
+      "definition": "Tall upright limestone slabs carved with royal portraits and hieroglyphic dates recording the births and victories of Maya rulers."
+    },
+    {
+      "term": "Tzolk'in",
+      "pronunciation": "TSOHL-keen",
+      "definition": "The 260-day sacred Maya ritual calendar that meshed like a cogwheel with the 365-day solar Haab' once every fifty-two years."
+    }
+  ],
+  "widgets": [
+    {
+      "lesson_id": "lesson_1",
+      "block_index": 1,
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "KS2 Interactive History Explorer",
+        "title": "Rainforest Survival Kit: Water Storage, Terraces and Three Sisters Crops",
+        "default_index": 0,
+        "caption": "Tap each tab to see how Maya engineers and farmers fed tens of thousands of townspeople without metal ploughs or wheeled carts.",
+        "items": [
+          {
+            "tab_label": "1. Cenotes and Chultuns",
+            "title": "Saving Water Over Porous Limestone",
+            "dates": "c. 1000 BC–AD 900 • Yucatán and Tikal",
+            "badge": "Water Engineering",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.2)",
+            "metrics": [
+              {
+                "label": "The Rock Challenge",
+                "value": "Rain sank straight through porous limestone, leaving long dry seasons"
+              },
+              {
+                "label": "Northern Yucatán",
+                "value": "Towns drew cool freshwater from deep natural cenote sinkholes"
+              },
+              {
+                "label": "Rainforest Tikal",
+                "value": "Masons lined giant stone reservoirs and underground chultuns with plaster"
+              }
+            ],
+            "takeaway": "Waterproof lime plaster turned rainy-season storms into safe year-round drinking supplies for tens of thousands of city residents."
+          },
+          {
+            "tab_label": "2. Terraces and Wetlands",
+            "title": "Shaping Hillsides and Swampy Valleys",
+            "dates": "c. 1000 BC–AD 900 • Lowlands and Hills",
+            "badge": "Land Engineering",
+            "color": "#0d9488",
+            "bg_color": "rgba(13, 148, 136, 0.2)",
+            "metrics": [
+              {
+                "label": "Steep Hillsides",
+                "value": "Stone-walled stepped terraces stopped monsoon storms washing soil away"
+              },
+              {
+                "label": "Swampy Lowlands",
+                "value": "Farmers dug drainage canals and piled mud high into fertile raised fields"
+              },
+              {
+                "label": "Tools Used",
+                "value": "Built entirely by hand with stone blades and digging sticks—no iron ploughs"
+              }
+            ],
+            "takeaway": "Instead of clearing flat plains with oxen, Maya farmers engineered steep slopes and marshy hollows into rich garden plots."
+          },
+          {
+            "tab_label": "3. Three Sisters Mound",
+            "title": "Maize, Climbing Beans and Broad-Leaved Squash",
+            "dates": "Domesticated Before 2000 BC • Mesoamerica",
+            "badge": "Companion Farming",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Sister 1: Tall Maize",
+                "value": "Grew sturdy upright stalks that gave climbing bean vines natural poles"
+              },
+              {
+                "label": "Sister 2: Climbing Beans",
+                "value": "Twisted up the cornstalks while their roots put vital nutrients back into soil"
+              },
+              {
+                "label": "Sister 3: Wide Squash",
+                "value": "Spread broad prickly leaves to shade damp earth and block hungry weeds"
+              }
+            ],
+            "takeaway": "Planting maize, beans, and squash together kept soil rich harvest after harvest and gave every Maya family balanced daily food."
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_6",
+      "block_index": 2,
+      "concept_widget": {
+        "type": "spectrum_slider",
+        "eyebrow": "KS2 Interactive History Explorer",
+        "title": "Did the Maya Vanish? Tracing Change from AD 750 to Living Maya Today",
+        "default_index": 0,
+        "caption": "Slide across three historical eras to see why southern jungle plazas emptied around AD 900 while Maya cities and people endured.",
+        "stops": [
+          {
+            "short_label": "1. Peak Lowland Cities (AD 750)",
+            "label": "Peak Classic Lowland Cities (c. AD 750)",
+            "color": "#059669",
+            "bg_color": "rgba(5, 150, 105, 0.2)",
+            "summary": "Southern rainforest city-states like Tikal, Palenque, and Copán bustled with tens of thousands of residents, plastered reservoirs, and royal stelae.",
+            "traits": [
+              {
+                "category": "Rulers and Monuments",
+                "glyph": "leader",
+                "value": "Holy K'uhul Ajaw kings raised tall limestone step-pyramids and carved calendar stelae"
+              },
+              {
+                "category": "Water and Harvests",
+                "glyph": "people",
+                "value": "Waterproof reservoirs, chultuns, and Three Sisters farms fed busy stone cities"
+              },
+              {
+                "category": "Trade Networks",
+                "glyph": "law",
+                "value": "Porters and river canoes carried cacao beans, jade, salt, cotton, and black obsidian"
+              }
+            ]
+          },
+          {
+            "short_label": "2. Drought, Trees and War (c. AD 900)",
+            "label": "Drought, Deforestation and Warfare (c. AD 800–950)",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "summary": "Three linked causes struck southern cities together: multi-year droughts dried reservoirs, tree-felling eroded soil, and rival wars blocked trade.",
+            "traits": [
+              {
+                "category": "Climate and Soil",
+                "glyph": "church",
+                "value": "Severe droughts hit while burning timber for pyramid plaster stripped hillside trees"
+              },
+              {
+                "category": "Rival City Warfare",
+                "glyph": "leader",
+                "value": "Fierce battles with obsidian spears cut trade trails and shook trust in southern kings"
+              },
+              {
+                "category": "Families on the Move",
+                "glyph": "people",
+                "value": "Southern plazas fell quiet as farming families packed metates and moved towards water"
+              }
+            ]
+          },
+          {
+            "short_label": "3. Northern Cities and 7M Maya Today",
+            "label": "Northern Sea Cities and Seven Million Living Maya Today",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.2)",
+            "summary": "The Maya never disappeared! Northern Yucatán cities boomed until the 1500s, and over seven million Maya people thrive proudly today.",
+            "traits": [
+              {
+                "category": "Postclassic North (AD 950–1520)",
+                "glyph": "leader",
+                "value": "Cenote cities like Chichén Itzá and cliffside Tulum traded salt, honey, and cotton by sea"
+              },
+              {
+                "category": "Living Languages and Books",
+                "glyph": "language",
+                "value": "Over seven million Maya speak more than thirty Mayan languages and read ancient glyphs"
+              },
+              {
+                "category": "Enduring Daily Skills",
+                "glyph": "clothes",
+                "value": "Families still farm golden maize and weave bright huipil cloth on backstrap looms"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "source_texts": [
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_maya_civilisation_l1_src_a",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/colourful_mesoamerican_maize_cobs.jpg",
+      "text": "Artefact note: Pale papery husks are tied back at the top of these harvested Mesoamerican cobs. Look closely at the tight rows of glossy kernels shining in crimson, purple-black, yellow, and creamy white."
+    },
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_maya_civilisation_l1_src_b",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/three_sisters_maize_beans_squash.png",
+      "text": "Artefact note: All three crops share one small earth mound in this botanical ink drawing. Trace the upright maize stalk at the centre, the curling bean vines with pods, and the broad squash leaves hugging the ground."
+    },
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_maya_civilisation_l1_src_c",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/yucatec_maya_thatched_house_1913.jpg",
+      "text": "Artefact note: Villagers in light cotton clothes stand beside a stacked limestone yard wall in this 1913 Yucatán photograph. Behind them rises a rounded family home with pale walls, an open doorway, and thick layered palm thatch."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_maya_civilisation_l2_src_a",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/king_pakal_jade_funerary_mask.jpg",
+      "text": "Artefact note: Mounted as found inside Palenque's royal tomb, interlocking green stone tiles form a life-sized face with white shell eyes. Notice the long tubular earflares, seven-strand bead collar, thick wrist cuffs, and green rings."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_maya_civilisation_l2_src_b",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/maya_enthroned_ruler_painted_relief.jpg",
+      "text": "Artefact note: Traces of earthy red paint still cling to this carved limestone panel beneath two rows of square glyph blocks. Follow the ruler's profile face, beaded neck collar, woven cuffs, and long curving plumes behind him."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_maya_civilisation_l2_src_c",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/bonampak_painted_court_murals.jpg",
+      "text": "Artefact note: Painted directly onto smooth plaster inside a dark stone chamber at Bonampak, figures march in profile across a turquoise wall. Spot their tall white headcloths, patterned wraps, and raised pairs of round red shakers."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_maya_civilisation_l3_src_a",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/dresden_codex_bark_paper_numbers.jpg",
+      "text": "Artefact note: Red borders divide this tall white-coated bark page into neat counting columns on the left and three painted god scenes on the right. Look right at the bottom-left rows of lines, dots, and red oval sign."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_maya_civilisation_l3_src_b",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/palenque_carved_maya_glyph_blocks.jpg",
+      "text": "Artefact note: Twelve square limestone blocks sit in neat rows and columns on this carved tablet from Palenque. Inside every square, a larger profile face presses snugly against smaller curved loops, hatched ovals, and tiny dots."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_maya_civilisation_l3_src_c",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/madrid_codex_folding_bark_book.jpg",
+      "text": "Artefact note: Displayed behind museum glass, this long strip of pale plastered bark paper bends neatly along straight vertical creases. Across four connected panels, black day-sign circles sit between painted figures and coiling turquoise serpents below."
+    },
+    {
+      "lesson_id": "lesson_4",
+      "source_id": "ks2_maya_civilisation_l4_src_a",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/ripe_cacao_pods_and_beans.jpg",
+      "text": "Artefact note: Two thick, ridged golden-orange pods from a tropical cacao tree have been sliced cleanly in half. Inside the tough outer rind, plump brown seeds nestle tightly inside glistening white pulp."
+    },
+    {
+      "lesson_id": "lesson_4",
+      "source_id": "ks2_maya_civilisation_l4_src_b",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/carved_maya_cacao_drinking_vase.jpg",
+      "text": "Artefact note: Straight, unglazed clay walls rise to a wide open rim on this dark Classic Maya cylinder beaker. Deeply carved lines on the front show a seated lord wearing a sweeping feathered headdress."
+    },
+    {
+      "lesson_id": "lesson_4",
+      "source_id": "ks2_maya_civilisation_l4_src_c",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/chichen_itza_stone_ballcourt_ring.jpg",
+      "text": "Artefact note: Photographed on the ground in 1924 before restoration, two carved feathered serpents twist around this thick limestone goal from Chichén Itzá. Notice how a grown man barely fits his shoulders inside the central opening."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_maya_civilisation_l5_src_a",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/carved_greenstone_maize_god_yoke.jpg",
+      "text": "Artefact note: Carved from heavy, polished dark-green stone, this thick horseshoe-shaped waist ring copies the padded hip protectors worn by Maya ballplayers. Look at the top arch and sides to spot carved faces and scrolls."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_maya_civilisation_l5_src_b",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/palenque_terracotta_god_censer.jpg",
+      "text": "Artefact note: Flecks of bright turquoise Maya Blue paint still cling to this tall reddish-orange clay stand from Palenque. Out of the front stares a sacred mask with round earspools, open mouth, and stacked headdress."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_maya_civilisation_l5_src_c",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/carved_green_jade_ajaw_plaque.jpg",
+      "text": "Artefact note: Polished to a bright emerald sheen, this speckled green jade plaque shows a ruler sitting cross-legged on a carved throne. Follow his gaze leftward towards a much smaller seated attendant carved at the bottom corner."
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_maya_civilisation_l6_src_a",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/volcanic_obsidian_blades_display.jpg",
+      "text": "Artefact note: Mounted across this museum board are dozens of glossy jet-black volcanic glass blades alongside pale chipped flint tools. Compare the straight razor-like strips on the left with the long notched spear blades on the right."
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_maya_civilisation_l6_src_b",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/tikal_temple_of_the_great_jaguar.jpg",
+      "text": "Artefact note: Nine steep limestone tiers and a narrow central stairway lift Temple I forty-seven metres above Tikal's grassy Great Plaza. Notice the single dark doorway near the summit beneath a tall stone roof crest."
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_maya_civilisation_l6_src_c",
+      "visual_verified_file": "/units/ks2_maya_civilisation/assets/guatemala_maya_backstrap_loom_weaver.jpg",
+      "text": "Artefact note: Kneeling outdoors on a woven reed mat beneath tall trees, a woman leans back against a wooden loom tied by rope to a trunk. Behind her hang long rows of brightly patterned hand-woven cloths."
+    }
+  ]
+}

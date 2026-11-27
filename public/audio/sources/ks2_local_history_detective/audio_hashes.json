@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_1_sA": {
+      "hash": "a4de51d6af3122c1",
+      "bytes": 99500,
+      "voiceKey": "male_historian",
+      "badge": "Large-Scale 1880s Ordnance Surve…",
+      "updatedAt": "2026-11-27T14:33:16.936Z"
+    },
+    "lesson_1_sC": {
+      "hash": "339f16129e39ea93",
+      "bytes": 53804,
+      "voiceKey": "male_historian",
+      "badge": "Great and Little Domesday Books…",
+      "updatedAt": "2026-11-27T14:33:17.270Z"
+    },
+    "lesson_2_sA": {
+      "hash": "c4c00c0b13fc4e97",
+      "bytes": 75980,
+      "voiceKey": "male_historian",
+      "badge": "Hexagonal Victorian \"V.R.\" Penfo…",
+      "updatedAt": "2026-11-27T14:33:18.117Z"
+    },
+    "lesson_2_sC": {
+      "hash": "b58125839737299c",
+      "bytes": 62828,
+      "voiceKey": "male_historian",
+      "badge": "Faded Painted Brick \"Ghost Sign\"…",
+      "updatedAt": "2026-11-27T14:33:18.478Z"
+    },
+    "lesson_3_sA": {
+      "hash": "522331a2ad4848cd",
+      "bytes": 98540,
+      "voiceKey": "male_historian",
+      "badge": "Handwritten 1881 Census Enumerat…",
+      "updatedAt": "2026-11-27T14:33:19.259Z"
+    },
+    "lesson_6_sA": {
+      "hash": "511c6e8ce64c6905",
+      "bytes": 95468,
+      "voiceKey": "male_historian",
+      "badge": "English Heritage Ceramic Blue Pl…",
+      "updatedAt": "2026-11-27T14:33:19.954Z"
+    },
+    "lesson_6_sC": {
+      "hash": "a7366aef6836781b",
+      "bytes": 58412,
+      "voiceKey": "male_historian",
+      "badge": "Portable Field Tape Recorder Use…",
+      "updatedAt": "2026-11-27T14:33:20.399Z"
+    },
+    "lesson_3_sC": {
+      "hash": "c960947d761b9ede",
+      "bytes": 83564,
+      "voiceKey": "male_historian",
+      "badge": "Carved 1728 English Churchyard H…",
+      "updatedAt": "2026-11-27T14:33:21.680Z"
+    },
+    "lesson_4_sA": {
+      "hash": "47a03f07a613cd1a",
+      "bytes": 84908,
+      "voiceKey": "male_historian",
+      "badge": "Carved Turnpike Stone Milestone…",
+      "updatedAt": "2026-11-27T14:33:22.448Z"
+    },
+    "lesson_4_sC": {
+      "hash": "52825112e9c6205d",
+      "bytes": 62252,
+      "voiceKey": "male_historian",
+      "badge": "Historic Cast-Iron British Stree…",
+      "updatedAt": "2026-11-27T14:33:22.838Z"
+    },
+    "lesson_5_sA": {
+      "hash": "dee1ef78032bac63",
+      "bytes": 94796,
+      "voiceKey": "male_historian",
+      "badge": "Parish Church 1914",
+      "updatedAt": "2026-11-27T14:33:24.012Z"
+    },
+    "lesson_5_sC": {
+      "hash": "82131463da233436",
+      "bytes": 74636,
+      "voiceKey": "male_historian",
+      "badge": "Commonwealth War Graves Headston…",
+      "updatedAt": "2026-11-27T14:33:24.470Z"
+    },
+    "lesson_1_sB": {
+      "hash": "9f32508dce64c2ab",
+      "bytes": 71468,
+      "voiceKey": "female_historian",
+      "badge": "Carved Ordnance Survey Benchmark…",
+      "updatedAt": "2026-11-27T14:33:26.001Z"
+    },
+    "lesson_2_sB": {
+      "hash": "464ac0d18b11b6b0",
+      "bytes": 72620,
+      "voiceKey": "female_historian",
+      "badge": "Carved Stone Building Datestone…",
+      "updatedAt": "2026-11-27T14:33:26.703Z"
+    },
+    "lesson_3_sB": {
+      "hash": "6dd577956ee298f4",
+      "bytes": 115244,
+      "voiceKey": "female_historian",
+      "badge": "Handwritten 1863 Parish Baptism…",
+      "updatedAt": "2026-11-27T14:33:27.223Z"
+    },
+    "lesson_4_sB": {
+      "hash": "fedcf32392dfdc51",
+      "bytes": 69260,
+      "voiceKey": "female_historian",
+      "badge": "Narrowboat Passing Through Woode…",
+      "updatedAt": "2026-11-27T14:33:27.634Z"
+    },
+    "lesson_5_sB": {
+      "hash": "08cba80fd67821b9",
+      "bytes": 78764,
+      "voiceKey": "female_historian",
+      "badge": "First World War Bronze Memorial…",
+      "updatedAt": "2026-11-27T14:33:28.150Z"
+    },
+    "lesson_6_sB": {
+      "hash": "b6b8f96642fe26da",
+      "bytes": 70892,
+      "voiceKey": "female_historian",
+      "badge": "Archival c. 1900 Street Photogra…",
+      "updatedAt": "2026-11-27T14:33:28.740Z"
+    }
+  }
+}

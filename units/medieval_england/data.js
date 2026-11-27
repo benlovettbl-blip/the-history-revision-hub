@@ -5070,28 +5070,6 @@ export default {
           "model_answer": "Recall: Anyone in holy orders accused of serious crimes (including murder and rape) was tried in lenient Church courts that could not impose the death penalty.\nExplain: Henry believed his closest drinking companion and royal administrator would easily subordinate the English Church to the Crown's royal law.\nChallenge: Upon consecrated ordination, Becket took his religious oath with absolute seriousness, believing his higher loyalty was to Jesus Christ and the Pope in Rome rather than an earthly monarch."
         },
         {
-          "id": "65oCIxobwVs",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=65oCIxobwVs",
-          "title": "Becket (1964) | 4K Restored Official Trailer (Richard Burton / Peter O'Toole)",
-          "duration": "4 mins 49 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–03:10 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Masterpiece cinema depicting the intense friendship and tragic political breach between Henry II and Becket.",
-          "viewing_task": "[01:30] Cinematic Discussion Focus: How do Peter O'Toole and Richard Burton capture the psychological tragedy of two close friends torn apart by irreconcilable medieval duties to Crown and Church?",
-          "model_answer": "Cinematic Discussion Focus: The trailer dramatises the agonizing personal rift: Henry feels deeply betrayed by his closest companion, while Becket finds spiritual purpose in defying royal bullying, culminating in his martyrdom in Canterbury Cathedral."
-        },
-        {
-          "id": "fKoYHKpCSc4",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=fKoYHKpCSc4",
-          "title": "The Lion in Winter (1968) | Official Trailer (Peter O'Toole / Katharine Hepburn)",
-          "duration": "2 mins 45 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:45 | Lesson Phase: Flipped Learning / Extension | Tone Alert: Explores Henry II's vast Angevin Empire spanning from the Scottish border to the Pyrenees.",
-          "viewing_task": "[00:41] Recall: What territories made up King Henry II's Angevin Empire?\n[01:22] Explain: How did Henry's volatile family dynamic (Eleanor of Aquitaine and his sons Richard, Geoffrey, and John) undermine his royal authority?\n[02:03] Challenge: How did Henry II's legal reforms (assizes, common law, and royal circuit judges) establish the permanent foundations of the English legal system?",
-          "model_answer": "Recall: England, Normandy, Anjou, Maine, Touraine, and Aquitaine (stretching across more than half of modern France).\nExplain: His ambitious sons repeatedly rebelled against him, backed by their mother Eleanor and the King of France, fighting for control over imperial lands.\nChallenge: Henry established standard royal writs, trial by 12 sworn men (the jury system), and traveling royal judges, replacing arbitrary feudal and church trials with a uniform English Common Law."
-        },
-        {
           "type": "era",
           "url": "https://era.org.uk/streaming-service-resource/2-the-power-of-the-church-history-file/",
           "title": "BBC Two / ERA: History File – Medieval Realms, Ep. 2: The Power of the Church (Henry II & Becket)",
@@ -6683,17 +6661,6 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:30–07:00 | Lesson Phase: Causal Breakdown | Tone Alert: Rigorous historical investigation into King John's failures in Normandy and tax extortion.",
           "viewing_task": "[01:30] Recall: Why did King John lose Normandy ('John Lackland' / 'Softsword') to King Philip Augustus of France in 1204?\n[03:45] Explain: How did John's extortionate 'scutage' taxes and mistreatment of baronial hostages provoke armed rebellion?\n[06:00] Challenge: What is the enduring constitutional significance of Clause 39 ('No free man shall be seized or imprisoned... except by the lawful judgement of his equals')?",
           "model_answer": "Recall: Military miscalculations, financial weakness, and the capture of Château Gaillard led to the loss of ancestral Norman lands.\nExplain: John demanded exorbitant scutage (shield money) to fund failed French campaigns, seized estates, and imprisoned relatives of barons who failed to pay.\nChallenge: Clause 39 established the bedrock of constitutional democracy: the monarch is subject to the rule of law, and the state cannot arbitrarily detain citizens without due process."
-        },
-        {
-          "id": "OextcsiiBFY",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=OextcsiiBFY",
-          "title": "Ironclad (2011) | Official Movie Trailer (Paul Giamatti as King John)",
-          "duration": "1 min 59 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–01:59 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Gritty, visceral medieval drama depicting the 1215 Siege of Rochester Castle.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does Paul Giamatti portray King John's fury at being forced to sign Magna Carta? How does the film depict the brutal reality of 13th-century siege warfare?",
-          "model_answer": "Cinematic Discussion Focus: Giamatti portrays John as an enraged tyrant convinced of his divine right to rule unconditionally, viewing the barons as treasonous upstarts; the trailer captures the savage brutality of trebuchet bombardment and castle starvation."
         },
         {
           "id": "js_Kab5C2xI",
@@ -8449,17 +8416,6 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:20–05:00 | Lesson Phase: Causal Breakdown | Tone Alert: Rigorous analysis of the Poll Tax, John Ball's sermons, and Wat Tyler.",
           "viewing_task": "[01:15] Recall: What was the 1351 Statute of Labourers, and why did it infuriate English peasants?\n[02:40] Explain: What was John Ball's radical message: 'When Adam delved and Eve span, who was then the gentleman?'\n[04:20] Challenge: How did the 14-year-old King Richard II trick and betray the rebels at Smithfield after Wat Tyler was murdered?",
           "model_answer": "Recall: A royal law capping wages at pre-plague levels and ordering serfs who demanded higher pay to be branded with the letter 'F' for falseness.\nExplain: Ball preached that God created all humans equal; hereditary aristocracy and serfdom were artificial human oppressions that should be abolished.\nChallenge: Richard promised to be their leader and grant their charters of freedom; once the rebels dispersed, he rescinded all promises, hung over 1,500 leaders, and declared: 'Serfs you were, and serfs you shall remain.'"
-        },
-        {
-          "id": "JkOwLCib1Tk",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=JkOwLCib1Tk",
-          "title": "Black Death (2010) | Official Movie Trailer (Sean Bean / Eddie Redmayne)",
-          "duration": "1 min 12 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–01:12 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Dark, atmospheric medieval thriller capturing the terror and breakdown of social order during the 1348 pandemic.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film capture the psychological hysteria, religious zealotry, and despair that gripped medieval communities as the plague arrived?",
-          "model_answer": "Cinematic Discussion Focus: The trailer visually conveys the apocalyptic terror: empty villages, flagellant processions, and desperate villagers turning to superstition and fanaticism as traditional Church authority proved powerless to stop the pestilence."
         },
         {
           "id": "YhsPPBGtquo",

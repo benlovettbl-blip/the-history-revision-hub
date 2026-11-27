@@ -1774,6 +1774,73 @@ async function renderRegister() {
   console.log(`🎉 Successfully rendered GCSE Cold War Unit PDF: ${gcwPdfPath}`);
   await gcwPage.close();
 
+  // Render standalone KS2 Crime & Punishment Unit Source Bibliography
+  if (db.units && db.units.ks2_crime_and_punishment) {
+    console.log('🖨️ Rendering Standalone KS2 Crime and Punishment Unit Source Bibliography...');
+    const kcpPdfDir = path.join(outPdfDir, 'ks2_crime_and_punishment');
+    if (!fs.existsSync(kcpPdfDir)) fs.mkdirSync(kcpPdfDir, { recursive: true });
+    const kcpPdfPath = path.join(kcpPdfDir, 'ks2_crime_and_punishment_source_bibliography.pdf');
+    const kcpHtml = buildHtml('ks2_crime_and_punishment');
+    const kcpPage = await browser.newPage();
+    await kcpPage.setContent(kcpHtml, { waitUntil: 'domcontentloaded' });
+    await kcpPage.evaluateHandle('document.fonts.ready');
+    await new Promise((r) => setTimeout(r, 800));
+    await kcpPage.pdf({
+      path: kcpPdfPath,
+      format: 'A4',
+      printBackground: true,
+      margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' },
+    });
+    console.log(`🎉 Successfully rendered KS2 Crime and Punishment Unit PDF: ${kcpPdfPath}`);
+    await kcpPage.close();
+  }
+
+  // Render standalone KS2 Phase 3B Unit Source Bibliographies
+  for (const extraKs2Id of ['ks2_kingdom_of_benin', 'ks2_victorian_britain', 'ks2_local_history_detective']) {
+    if (db.units && db.units[extraKs2Id]) {
+      console.log(`🖨️ Rendering Standalone ${extraKs2Id} Unit Source Bibliography...`);
+      const uPdfDir = path.join(outPdfDir, extraKs2Id);
+      if (!fs.existsSync(uPdfDir)) fs.mkdirSync(uPdfDir, { recursive: true });
+      const uPdfPath = path.join(uPdfDir, `${extraKs2Id}_source_bibliography.pdf`);
+      const uHtml = buildHtml(extraKs2Id);
+      const uPage = await browser.newPage();
+      await uPage.setContent(uHtml, { waitUntil: 'domcontentloaded' });
+      await uPage.evaluateHandle('document.fonts.ready');
+      await new Promise((r) => setTimeout(r, 800));
+      await uPage.pdf({
+        path: uPdfPath,
+        format: 'A4',
+        printBackground: true,
+        margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' },
+      });
+      console.log(`🎉 Successfully rendered ${extraKs2Id} Unit PDF: ${uPdfPath}`);
+      await uPage.close();
+    }
+  }
+
+  // Render standalone KS2 Phase 3B Unit Source Bibliographies
+  for (const extraKs2Id of ['ks2_kingdom_of_benin', 'ks2_victorian_britain', 'ks2_local_history_detective']) {
+    if (db.units && db.units[extraKs2Id]) {
+      console.log(`🖨️ Rendering Standalone ${extraKs2Id} Unit Source Bibliography...`);
+      const uPdfDir = path.join(outPdfDir, extraKs2Id);
+      if (!fs.existsSync(uPdfDir)) fs.mkdirSync(uPdfDir, { recursive: true });
+      const uPdfPath = path.join(uPdfDir, `${extraKs2Id}_source_bibliography.pdf`);
+      const uHtml = buildHtml(extraKs2Id);
+      const uPage = await browser.newPage();
+      await uPage.setContent(uHtml, { waitUntil: 'domcontentloaded' });
+      await uPage.evaluateHandle('document.fonts.ready');
+      await new Promise((r) => setTimeout(r, 800));
+      await uPage.pdf({
+        path: uPdfPath,
+        format: 'A4',
+        printBackground: true,
+        margin: { top: '0mm', bottom: '0mm', left: '0mm', right: '0mm' },
+      });
+      console.log(`🎉 Successfully rendered ${extraKs2Id} Unit PDF: ${uPdfPath}`);
+      await uPage.close();
+    }
+  }
+
   await browser.close();
   console.log('🏁 All PDF rendering tasks completed successfully!');
 }

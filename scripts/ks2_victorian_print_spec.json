@@ -1,0 +1,126 @@
+{
+  "unitId": "ks2_victorian_britain",
+  "shortUpper": "VICTORIAN BRITAIN",
+  "shortTitle": "Victorian Britain",
+  "coverSubtitle": "Steam Railways, Factories, Workhouses and Classrooms (1837–1901)",
+  "headerBanner": "VICTORIAN BRITAIN: RAILWAYS, REFORM AND CLASSROOMS (1837–1901)",
+  "periodRange": "AD 1837 TO 1901",
+  "themeDark": "#1e1b4b",
+  "themePrimary": "#3730a3",
+  "themeAccent": "#d97706",
+  "heroPos": "center 48%",
+  "mapFile": "victorian_britain_railways_industry_map_ks2.png",
+  "mapTitle": "Map of Seven Landmark Sites Across Victorian Britain (1837–1901)",
+  "mapSub": "Bookmark this page as you trace London, Bristol, South Wales, Manchester, Bradford and Saltaire, Glasgow, Balmoral, and the Isle of Wight!",
+  "mapBoxA": "<strong>Steam &amp; Penny Post Network:</strong> Over 20,000 miles of iron track, shared Greenwich Railway Time, and 1840 Penny Black mail trains linked every corner of Britain!",
+  "mapBoxB": "<strong>Coal, Cotton &amp; Reform:</strong> Northern textile mills, Welsh coal valleys, and Clyde shipyards powered the Workshop of the World while reformers fought for working children.",
+  "sowAlign": "Fulfils the statutory DfE Key Stage 2 British study beyond 1066: <em>“A study of an aspect or theme in British history that extends pupils’ chronological knowledge beyond 1066 — Victorian Britain, the first railways, industrial child reform, and compulsory schooling (1837–1901)”</em>.",
+  "lessonPeriods": ["1837–1860", "1837–1850", "1834–1880", "1870–1901", "1851–1901", "1850–1901"],
+  "worksheetSlugs": [
+    "lesson_01_victoria_railways_penny_post_worksheet",
+    "lesson_02_chimneys_cotton_mills_coal_mines_worksheet",
+    "lesson_03_workhouses_shaftesbury_barnardo_worksheet",
+    "lesson_04_victorian_classroom_slates_1870_act_worksheet",
+    "lesson_05_crystal_palace_victorian_inventions_worksheet",
+    "lesson_06_homes_seaside_holidays_jubilee_legacy_worksheet"
+  ],
+  "journeyBlurbs": [
+    "Watch eighteen-year-old Victoria crowned in 1837, cross gorges with Isambard Kingdom Brunel, set clocks to Railway Time, and post an 1840 Penny Black!",
+    "Follow country families into smoky 'Cottonopolis' mills and creep underground to meet child piecers, scavengers, eight-year-old trappers, and coal hurriers.",
+    "Step inside a grim Union Workhouse, pass Lord Shaftesbury’s 1842 Mines Act banning under-tens underground, and open Dr Barnardo’s East End homes!",
+    "Line up at an 1880s red-brick Board School to chant the Three Rs, scratch sums on Welsh slates, dip copperplate ink pens, and bowl playground iron hoops.",
+    "Explore Hyde Park’s 1851 glass-and-iron Crystal Palace alongside telegraphs, Bell’s telephone, Joseph Swan’s lightbulb, Ada Lovelace, and Mary Seacole!",
+    "Contrast servant-run villas with back-to-back terraces, ride 1871 Bank Holiday seaside trains, cheer early FA Cup football, and judge Victoria’s 1901 legacy!"
+  ],
+  "chronoTasks": [
+    [
+      "Queen Victoria becomes the first British monarch to ride a steam train from Slough to Paddington (June 1842)",
+      "Eighteen-year-old Princess Victoria inherits the British throne upon the death of King William IV (June 1837)",
+      "Great Western Railway and major lines adopt standard Greenwich 'Railway Time' across stations (1840–1847)",
+      "Rowland Hill launches the world’s first sticky stamp, the one-penny Penny Black (May 1840)"
+    ],
+    [
+      "Victorian Census reveals more Britons live in towns and cities than in the countryside for the first time (1851)",
+      "Humphry Davy invents the wire-gauze miner’s safety lamp to reduce underground firedamp blasts (1815)",
+      "Royal Commission inspectors interview eight-year-old trapper Sarah Gooder in a Yorkshire coal pit (1841–1842)",
+      "Steam-powered Lancashire cotton mills expand rapidly across booming 'Cottonopolis' Manchester (1830s)"
+    ],
+    [
+      "Ten-year-old orphan Jim Jarvis leads Thomas Barnardo across freezing East London rooftops, inspiring Barnardo’s Homes (1870)",
+      "Poor Law Amendment Act groups parishes to build strict, family-splitting Union Workhouses (1834)",
+      "Parliament passes the Ten Hours Act limiting women and teenagers in textile mills to ten hours a day (1847)",
+      "Lord Shaftesbury’s Mines and Collieries Act bans all females and boys under ten from working underground (1842)"
+    ],
+    [
+      "Parliament abolishes weekly 'school pence' fees so elementary Board Schools become free (1891)",
+      "William Forster’s Elementary Education Act sets up local School Boards to build missing schools (1870)",
+      "School leaving age rises to twelve as Victorian literacy climbs above ninety-five per cent (1899)",
+      "Mundella’s Education Act makes school attendance compulsory for children aged five to ten (1880)"
+    ],
+    [
+      "Sir Joseph Swan demonstrates his glowing incandescent carbon-filament electric lightbulb in Newcastle (1878–1879)",
+      "Ada Lovelace publishes the world’s first computer algorithm for Charles Babbage’s Analytical Engine (1843)",
+      "Alexander Graham Bell patents the electric telephone transmitting human speech along wires (1876)",
+      "Queen Victoria and Prince Albert open the Great Exhibition inside Hyde Park’s Crystal Palace (1 May 1851)"
+    ],
+    [
+      "Queen Victoria dies at Osborne House aged 81 after a 63-year reign over a transformed Britain (22 Jan 1901)",
+      "Parliament passes the Bank Holidays Act giving workers four guaranteed paid public holidays (1871)",
+      "Huge crowds outside St Paul’s Cathedral celebrate Queen Victoria’s sixty-year Diamond Jubilee (June 1897)",
+      "John Kemp Starley’s chain-driven Rover 'safety bicycle' replaces tall, wobbly penny-farthings (1885)"
+    ]
+  ],
+  "chronoKeyLines": [
+    "[3] Victoria rides train 1842 • [1] Crowned aged 18 in 1837 • [4] Shared Railway Time 1840s • [2] Penny Black May 1840",
+    "[4] Urban majority Census 1851 • [1] Davy safety lamp 1815 • [3] Mines Commission 1841–42 • [2] Cottonopolis boom 1830s",
+    "[4] Barnardo & Jim Jarvis 1870 • [1] Poor Law Workhouses 1834 • [3] Ten Hours Act 1847 • [2] Mines Act 1842",
+    "[3] Free schooling 1891 • [1] Forster’s Board Schools 1870 • [4] Leaving age twelve 1899 • [2] Compulsory ages 5–10 in 1880",
+    "[4] Swan’s lightbulb 1878–79 • [1] Ada Lovelace algorithm 1843 • [3] Bell’s telephone 1876 • [2] Crystal Palace 1 May 1851",
+    "[4] Victoria dies Jan 1901 • [1] Bank Holidays Act 1871 • [3] Diamond Jubilee June 1897 • [2] Safety bicycle 1885"
+  ],
+  "thinkingHeads": [
+    { "headA": "Isambard Kingdom Brunel (GWR)", "promptA": "How do your broad-gauge tracks, tunnels, and Railway Time connect Britain?", "headB": "Mill Worker Buying a Penny Black", "promptB": "Why does posting a letter home for just one penny matter to your family?" },
+    { "headA": "Cotton-Mill Child Scavenger", "promptA": "What dangers do you face crawling beneath moving iron power looms all day?", "headB": "Eight-Year-Old Coal-Mine Trapper", "promptB": "What is it like sitting alone in pitch darkness opening pit air doors?" },
+    { "headA": "7th Earl of Shaftesbury (1842)", "promptA": "How did Royal Commission pit drawings help pass your 1842 Mines Act?", "headB": "Dr Thomas Barnardo in Stepney", "promptB": "Why did meeting orphan Jim Jarvis inspire 'No Destitute Child Ever Refused'?" },
+    { "headA": "Strict 1885 Board School Teacher", "promptA": "Why do sixty pupils chant the Three Rs on slates beneath high windows?", "headB": "Ten-Year-Old Left-Handed Pupil", "promptB": "What do you love—and fear—most inside your Victorian classroom?" },
+    { "headA": "1851 Shilling-Day Rail Visitor", "promptA": "What amazed you most under the glass-and-iron roof of the Crystal Palace?", "headB": "Ada Lovelace & Sir Joseph Swan", "promptB": "How did computing notes (1843) and electric bulbs (1878) point to the future?" },
+    { "headA": "Back-to-Back Terrace Mother", "promptA": "How does your crowded courtyard life differ from a servant-run rich villa?", "headB": "Bank Holiday Day-Tripper (1890)", "promptB": "How did cheap steam trains, piers, football, and bicycles brighten leisure?" }
+  ],
+  "sourceStarters": [
+    "Looking closely at Source A, Stephenson’s Rocket and early Victorian steam locomotives transformed travel because...",
+    "Looking closely at Source B, the 1842 Royal Commission woodcut shocked Members of Parliament by showing child hurriers...",
+    "Looking closely at Source A, George Cruikshank’s 1838 workhouse etching reveals why poor Victorian families dreaded...",
+    "Looking closely at Source A, Victorian teachers gave younger pupils wooden-framed Welsh writing slates before paper because...",
+    "Looking closely at Source A, Joseph Paxton’s soaring glass-and-iron Crystal Palace amazed six million visitors in 1851 by...",
+    "Looking closely at Source A, riding a tall high-wheeled penny-farthing bicycle was risky compared with 1885 safety bicycles because..."
+  ],
+  "sourceClueNotes": [
+    "Steam & Time Clue: Fast inter-city locomotives forced Britain to adopt shared Greenwich Railway Time and carried 1840 Penny Black mail overnight!",
+    "1842 Mines Clue: Printed woodcuts of chained child hurriers and eight-year-old trappers persuaded MPs to ban all females and boys under ten underground!",
+    "Workhouse Clue: Splitting husbands, wives, and children onto watery gruel and tarred oakum-picking made the 1834 workhouse deeply feared!",
+    "Classroom Clue: Reusable Welsh slates saved costly paper and ink until older pupils mastered neat right-handed copperplate handwriting!",
+    "1851 Clue: Cheap shilling excursion trains let working families see 100,000 inventions—and profits funded South Kensington’s great museums!",
+    "Leisure Clue: Equal-wheeled chain-driven safety bicycles, 1871 Bank Holidays, and Saturday FA Cup football opened outdoor leisure to millions!"
+  ],
+  "milestonesSpine": [
+    { "date": "20 June 1837", "title": "Young Queen Victoria Crowned", "desc": "Eighteen-year-old Victoria inherits the throne, beginning a transformative 63-year reign alongside Prince Albert." },
+    { "date": "1838–1847", "title": "Brunel, Railways & Railway Time", "desc": "Brunel’s GWR bridges and Railway Mania link towns in hours and standardize Greenwich Railway Time." },
+    { "date": "May 1840", "title": "Penny Black & V.R. Pillar Boxes", "desc": "Rowland Hill’s one-penny adhesive stamp and red V.R. postboxes carry letters nationwide by mail train." },
+    { "date": "1842 & 1847", "title": "Mines Act & Ten Hours Factory Act", "desc": "Lord Shaftesbury’s campaigns ban females and boys under ten from coal pits and cap textile mill hours." },
+    { "date": "1843 & 1855", "title": "Ada Lovelace & Mary Seacole", "desc": "Lovelace writes the first computer algorithm (1843); Seacole nurses sick soldiers at the British Hotel (1855)." },
+    { "date": "1 May 1851", "title": "Hyde Park’s Crystal Palace", "desc": "Six million visitors marvel at 100,000 inventions in the Workshop of the World; Census shows urban majority." },
+    { "date": "1870", "title": "Barnardo’s Homes & Forster’s Act", "desc": "Dr Barnardo opens East End children’s homes while Forster’s Education Act builds local Board Schools." },
+    { "date": "1871–1879", "title": "Bank Holidays, Bell & Swan’s Bulb", "desc": "1871 Bank Holidays and FA Cup launch modern leisure; Bell’s telephone (1876) and Swan’s bulb (1878) debut." },
+    { "date": "1880 & 1891", "title": "Compulsory & Free Schooling", "desc": "Attendance becomes compulsory for ages five to ten (1880) and weekly penny fees end in 1891." },
+    { "date": "1897 & 1901", "title": "Diamond Jubilee & End of an Era", "desc": "Millions celebrate sixty years in 1897 before Queen Victoria dies aged 81 on 22 January 1901." }
+  ],
+  "finalePairs": [
+    { "left": "Brunel, Railway Time & 1840 Penny Black", "right": "Shrinking Britain" },
+    { "left": "Mill Scavengers, Trappers & 1842 Mines Act", "right": "Working Children" },
+    { "left": "1870–91 Board Schools, Slates & Three Rs", "right": "Victorian Schools" },
+    { "left": "1851 Crystal Palace, Swan’s Bulb & Piers", "right": "Inventions & Leisure" }
+  ],
+  "finalePromptClues": "Brunel’s railways & the Penny Black, mill & mine children rescued by Shaftesbury & Barnardo, 1870–1891 Board Schools, 1851 Crystal Palace inventions, and rich vs poor homes & seaside Bank Holidays",
+  "bigDiscussion1": "<strong>1. Childhood Transformed:</strong> Compare the daily life of an eight-year-old British child in 1840 (before the Mines and School Acts) with a ten-year-old in 1895!",
+  "bigDiscussion2": "<strong>2. Golden Age or Two Nations?:</strong> Why can historians praise Victorian inventions, free schools, and seaside trains while still criticising back-to-back slums and workhouses?"
+}

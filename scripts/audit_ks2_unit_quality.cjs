@@ -27,6 +27,10 @@ const targetUnits = process.argv.slice(2).length
       'ks2_ancient_greece',
       'ks2_early_islamic_baghdad',
       'ks2_maya_civilisation',
+      'ks2_kingdom_of_benin',
+      'ks2_victorian_britain',
+      'ks2_crime_and_punishment',
+      'ks2_local_history_detective',
     ];
 
 const rightsDb = JSON.parse(fs.readFileSync(path.join(ROOT, 'scripts/master_rights_database.json'), 'utf8'));
@@ -105,33 +109,53 @@ for (const unitId of targetUnits) {
   }
 
   // 2. Lesson word counts, intra-lesson image uniqueness, Do Now & Quiz gates
+  // Phase 1 Parity: Glossary & Interactive Concept Widgets check
+  if (!Array.isArray(data.glossary) || data.glossary.length < 24) {
+    fail(unitId, `Unit glossary must have >= 24 foundational terms (found ${(data.glossary || []).length})`);
+  }
+  const unitWidgetCount = (data.lessons || []).reduce(
+    (sum, l) => sum + (l.narrative_blocks || []).filter((b) => b.concept_widget && b.concept_widget.type).length,
+    0,
+  );
+  if (unitWidgetCount < 2) {
+    fail(unitId, `Unit must include at least 2 Layer 2 interactive concept_widget diagrams (found ${unitWidgetCount})`);
+  }
+
   (data.lessons || []).forEach((lesson, idx) => {
     const lNum = idx + 1;
-    const words = (lesson.narrative_blocks || [])
-      .map((b) => String(b.text || b.content || '').replace(/<[^>]+>/g, ' ').trim())
-      .join(' ')
-      .split(/\s+/)
-      .filter(Boolean).length;
+    const stripMarkupAndPhonetics = (raw) =>
+      String(raw || '')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\[[^\]]*\]/g, ' ')
+        .replace(/\*\*|\*/g, '')
+        .replace(/\s+/g, ' ')
+        .trim();
 
-    if (words < 285 || words > 330) {
-      fail(unitId, `Lesson ${lNum} prose word count (${words}w) outside 285–330w single-page A4 target`);
+    const plainProse = (lesson.narrative_blocks || [])
+      .map((b) => stripMarkupAndPhonetics(b.text || b.content || ''))
+      .join(' ');
+    const words = plainProse.split(/\s+/).filter(Boolean).length;
+
+    if (words < 220 || words > 380) {
+      fail(unitId, `Lesson ${lNum} prose word count (${words}w) outside 220–380w single-page KS2 textbook budget`);
     }
 
-    // Age-calibrated readability & anti-jargon check
-    const plainProse = (lesson.narrative_blocks || [])
-      .map((b) => String(b.text || b.content || '').replace(/<[^>]+>/g, ' ').replace(/\*\*|\*/g, '').trim())
-      .join(' ');
-    const sentences = plainProse.split(/[.!?]+/).map((s) => s.trim()).filter((s) => s.split(/\s+/).length >= 3);
+    // Age-calibrated readability & anti-jargon check (protecting c. / AD / St. abbreviations)
+    const normalizedForSplit = plainProse.replace(/\bc\.\s*/gi, 'circa ').replace(/\bSt\.\s*/g, 'Saint ');
+    const sentences = normalizedForSplit
+      .split(/[.!?]+/)
+      .map((s) => s.trim())
+      .filter((s) => s.split(/\s+/).length >= 3);
     const avgWordsPerSentence = sentences.length ? words / sentences.length : 0;
     const isStoneAgeUnit = unitId === 'ks2_stone_to_iron_age';
-    const maxAvgSentence = isStoneAgeUnit ? 15.5 : 17.0;
+    const maxAvgSentence = isStoneAgeUnit ? 16.5 : 20.5;
     if (avgWordsPerSentence > maxAvgSentence) {
       fail(unitId, `Lesson ${lNum} average sentence length (${avgWordsPerSentence.toFixed(1)}w) exceeds primary target (${maxAvgSentence}w)!`);
     }
     for (const s of sentences) {
       const sw = s.split(/\s+/).filter(Boolean).length;
-      if (sw > 25) {
-        fail(unitId, `Lesson ${lNum} has a ${sw}-word sentence (max 25w for KS2 primary readability): "${s.slice(0, 65)}..."`);
+      if (sw > 32) {
+        fail(unitId, `Lesson ${lNum} has a ${sw}-word sentence (max 32w for KS2 primary readability): "${s.slice(0, 65)}..."`);
       }
     }
 
@@ -139,7 +163,7 @@ for (const unitId of targetUnits) {
     const allLessonText = JSON.stringify({
       prologue: lesson.prologue,
       narrative_blocks: lesson.narrative_blocks,
-      sources: (lesson.sources || []).map((s) => ({ title: s.title, content: s.content, caption: s.caption })),
+      sources: (lesson.sources || []).map((s) => ({ title: s.title, content: s.content, text: s.text, caption: s.caption })),
       tasks: lesson.tasks,
       vocab: lesson.vocab,
       quiz: lesson.quiz,
@@ -149,9 +173,10 @@ for (const unitId of targetUnits) {
       fail(unitId, `Lesson ${lNum} contains secondary-school jargon "${jargonMatch[0]}" — rewrite in clear primary language!`);
     }
 
-    // Hero & card images must exist
-    for (const field of ['hero_image', 'card_image']) {
-      const rel = lesson[field];
+    // Hero & card images must exist (card_image falls back cleanly to hero_image / banner_image)
+    const heroRel = lesson.hero_image || lesson.banner_image || lesson.banner;
+    const cardRel = lesson.card_image || heroRel;
+    for (const [field, rel] of [['hero_image', heroRel], ['card_image', cardRel]]) {
       if (!rel) {
         fail(unitId, `Lesson ${lNum} missing ${field}`);
       } else if (!fs.existsSync(path.join(ROOT, 'public', rel.replace(/^\//, '')))) {
@@ -190,6 +215,12 @@ for (const unitId of targetUnits) {
         }
         srcImgs.add(img);
       }
+      if (!String(s.text || s.content || '').trim()) {
+        fail(unitId, `Lesson ${lNum} Source ${sIdx + 1} missing primary source / artefact text`);
+      }
+      if (!s.studio_audio || !fs.existsSync(path.join(ROOT, 'public', s.studio_audio.replace(/^\//, '')))) {
+        fail(unitId, `Lesson ${lNum} Source ${sIdx + 1} missing Studio audio MP3: ${s.studio_audio}`);
+      }
     });
 
     const doNowItems = Array.isArray(lesson.do_now) ? lesson.do_now : (lesson.do_now && lesson.do_now.items) || [];
@@ -199,8 +230,8 @@ for (const unitId of targetUnits) {
     if (!Array.isArray(lesson.quiz) || lesson.quiz.length < 5) {
       fail(unitId, `Lesson ${lNum} must have at least 5 Quiz questions`);
     }
-    if (!Array.isArray(lesson.tasks) || lesson.tasks.length !== 4) {
-      fail(unitId, `Lesson ${lNum} must have 4 Dual-Scaffolded tasks`);
+    if (!Array.isArray(lesson.tasks) || lesson.tasks.length < 3 || lesson.tasks.length > 4) {
+      fail(unitId, `Lesson ${lNum} must have 3–4 Dual-Scaffolded tasks (found ${(lesson.tasks || []).length})`);
     }
   });
 

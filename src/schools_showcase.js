@@ -72,7 +72,7 @@ export function renderSchoolsShowcase() {
           Complete Digital &amp; Reprographic History Curriculum — Ready to Teach Tomorrow
         </h1>
         <p style="font-size: 1.02rem; line-height: 1.65; color: #cbd5e1; max-width: 820px; margin: 0 0 22px;">
-          19 full courses across <strong>Key Stage 2</strong>, <strong>Key Stage 3</strong>, and <strong>Pearson Edexcel GCSE (9–1)</strong>—combining studio-voiced interactive lessons and primary source enquiries with saddle-stitch Classroom Textbooks, Pupil Workbooks, and Knowledge Retrieval Companions.
+          30 full courses across <strong>Key Stage 2 (Primary)</strong>, <strong>Key Stage 3</strong>, and <strong>Pearson Edexcel GCSE (9–1)</strong>—combining studio-voiced interactive lessons, 60 FPS Storybook Classroom Labs, and primary source enquiries with saddle-stitch Classroom Textbooks, Pupil Workbooks, KS3-Bridge Spine Workbooks, and Knowledge Retrieval Companions.
         </p>
         <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center;">
           <a
@@ -140,9 +140,9 @@ export function renderSchoolsShowcase() {
           <div style="font-size: 0.78rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px;">
             <i class="fa-solid fa-headphones"></i> SEND &amp; Literacy Built In
           </div>
-          <h2 style="font-size: 1.1rem; font-weight: 800; margin: 0 0 8px; color: var(--text-main, #0c2340);">833 Studio-Voiced Narrative Blocks</h2>
+          <h2 style="font-size: 1.1rem; font-weight: 800; margin: 0 0 8px; color: var(--text-main, #0c2340);">953 Studio-Voiced Narrative Blocks</h2>
           <p style="font-size: 0.9rem; line-height: 1.6; margin: 0; color: var(--text-muted, #475569);">
-            Sentence-tracked British studio narration across every lesson, 171 1-page Visual Story Sheets, coloured reading overlays for visual stress, and KS2/KS3 Guided Reading companions for home support.
+            Sentence-tracked British studio narration across every lesson, 231 1-page Visual Story Sheets, voiced primary sources, coloured reading overlays, and 137 KS2/KS3 Literary Companions with optional saddle-stitch anthologies.
           </p>
         </div>
       </section>
@@ -219,7 +219,7 @@ export function renderSchoolsShowcase() {
         </div>
       </section>
 
-      <!-- Complete 19-Course Directory -->
+      <!-- Complete 26-Course Directory -->
       <section style="display: flex; flex-direction: column; gap: 20px;">
         <div>
           <h2 style="font-family: 'Outfit', sans-serif; font-size: 1.25rem; font-weight: 800; margin: 0 0 10px; color: var(--text-main, #0c2340);">
@@ -267,7 +267,7 @@ export function renderSchoolsShowcase() {
             History Department Enquiries
           </h2>
           <p style="font-size: 0.9rem; line-height: 1.6; margin: 0; color: var(--text-muted, #475569);">
-            For department enquiries or curriculum questions, email <a href="mailto:contact@historyrevisionhub.co.uk" style="color: #0284c7; font-weight: 700; text-decoration: underline;">contact@historyrevisionhub.co.uk</a>. All 1,532 archival images and primary extracts are documented in our <a href="/master_rights_register.html" target="_blank" rel="noopener" style="color: #0284c7; font-weight: 700; text-decoration: underline;">Master Provenance &amp; Copyright Register</a>.
+            For department enquiries or curriculum questions, email <a href="mailto:contact@historyrevisionhub.co.uk" style="color: #0284c7; font-weight: 700; text-decoration: underline;">contact@historyrevisionhub.co.uk</a>. All 1,767 archival visual assets and primary extracts are documented in our <a href="/master_rights_register.html" target="_blank" rel="noopener" style="color: #0284c7; font-weight: 700; text-decoration: underline;">Master Provenance &amp; Copyright Register</a>.
           </p>
         </div>
         <a

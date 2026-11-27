@@ -228,7 +228,9 @@
               "question_badge": "MYCENAE LION GATE",
               "question": "Look at the giant blocks and lions in Source A. What message did this gate send visitors?",
               "model_answer": "The huge stone blocks and twin carved lions showed visitors and enemies that Mycenae’s Bronze Age warrior king was wealthy, well protected, and fierce enough to defend his city.",
-              "provenance": "Carved limestone Lion Gate at the Bronze Age fortress of Mycenae in southern Greece (c. 1250 BC)."
+              "provenance": "Carved limestone Lion Gate at the Bronze Age fortress of Mycenae in southern Greece (c. 1250 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_1_sA.mp3",
+              "studio_voice_label": "Carved Stone Lion Gate at Bronze…"
             }
           ]
         },
@@ -259,7 +261,9 @@
               "question_badge": "CARVED GREEK ALPHABET",
               "question": "Spot familiar letters on Source B. How did this alphabet help connect Greeks across different cities?",
               "model_answer": "Letters like A, E, K, M, N, O, and T look just like ours! Sharing one 24-letter alphabet let Greeks across distant islands and city-states read trade deals, public stone laws, and poems.",
-              "provenance": "Ancient Greek marble stone carved with capital Greek letters in Athens, Greece (c. 500–400 BC)."
+              "provenance": "Ancient Greek marble stone carved with capital Greek letters in Athens, Greece (c. 500–400 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_1_sB.mp3",
+              "studio_voice_label": "Ancient Greek Stone Inscription…"
             }
           ]
         },
@@ -290,7 +294,9 @@
               "question_badge": "ATHENIAN SILVER OWL COIN",
               "question": "Identify two symbols stamped on Source C. What do they tell us about proud Athens?",
               "model_answer": "Source C shows the wise owl of patron goddess Athena and an olive twig celebrating prized olive oil exports, proving Athens ruled itself with its own trusted silver money.",
-              "provenance": "Silver four-drachma owl coin minted by the city of Athens, Greece (c. 450 BC)."
+              "provenance": "Silver four-drachma owl coin minted by the city of Athens, Greece (c. 450 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_1_sC.mp3",
+              "studio_voice_label": "Silver Athenian Owl Coin With Ol…"
             }
           ]
         }
@@ -312,7 +318,10 @@
           "question_badge": "MYCENAE LION GATE",
           "question": "Look at the giant blocks and lions in Source A. What message did this gate send visitors?",
           "model_answer": "The huge stone blocks and twin carved lions showed visitors and enemies that Mycenae’s Bronze Age warrior king was wealthy, well protected, and fierce enough to defend his city.",
-          "provenance": "Carved limestone Lion Gate at the Bronze Age fortress of Mycenae in southern Greece (c. 1250 BC)."
+          "provenance": "Carved limestone Lion Gate at the Bronze Age fortress of Mycenae in southern Greece (c. 1250 BC).",
+          "text": "Artefact note: Wedged tightly between massive, rough-cut wall boulders, this triangular limestone carving shows two muscular lions rearing up on their hind legs with front paws resting beside a tall central stone pillar.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_1_sA.mp3",
+          "studio_voice_label": "Carved Stone Lion Gate at Bronze…"
         },
         {
           "id": "ks2_ancient_greece_l1_src_b",
@@ -330,7 +339,10 @@
           "question_badge": "CARVED GREEK ALPHABET",
           "question": "Spot familiar letters on Source B. How did this alphabet help connect Greeks across different cities?",
           "model_answer": "Letters like A, E, K, M, N, O, and T look just like ours! Sharing one 24-letter alphabet let Greeks across distant islands and city-states read trade deals, public stone laws, and poems.",
-          "provenance": "Ancient Greek marble stone carved with capital Greek letters in Athens, Greece (c. 500–400 BC)."
+          "provenance": "Ancient Greek marble stone carved with capital Greek letters in Athens, Greece (c. 500–400 BC).",
+          "text": "Artefact note: Scan your eyes from left to right across the weathered white marble surface, where a stonecutter chiselled neat straight rows of capital Greek letters naming harbour towns and local hosts.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_1_sB.mp3",
+          "studio_voice_label": "Ancient Greek Stone Inscription…"
         },
         {
           "id": "ks2_ancient_greece_l1_src_c",
@@ -348,7 +360,10 @@
           "question_badge": "ATHENIAN SILVER OWL COIN",
           "question": "Identify two symbols stamped on Source C. What do they tell us about proud Athens?",
           "model_answer": "Source C shows the wise owl of patron goddess Athena and an olive twig celebrating prized olive oil exports, proving Athens ruled itself with its own trusted silver money.",
-          "provenance": "Silver four-drachma owl coin minted by the city of Athens, Greece (c. 450 BC)."
+          "provenance": "Silver four-drachma owl coin minted by the city of Athens, Greece (c. 450 BC).",
+          "text": "Artefact note: Stamped in high relief onto thick silver, a wide-eyed bird perches atop a sideways clay storage jar, framed by raised Greek capital letters and a curved ring of leaves.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_1_sC.mp3",
+          "studio_voice_label": "Silver Athenian Owl Coin With Ol…"
         }
       ],
       "causal_domino_spine": {
@@ -1107,7 +1122,9 @@
               "question_badge": "BUST OF PERICLES",
               "question": "Why does Pericles wear a raised soldier’s helmet instead of a king’s crown in Source A?",
               "model_answer": "Democratic Athens had no kings! Citizens elected Pericles as both a persuasive Assembly speaker and an army general, so the tilted helmet showed civic duty rather than royal rule.",
-              "provenance": "Carved marble portrait bust of Pericles wearing a Corinthian helmet (ancient copy of a c. 430 BC Greek statue)."
+              "provenance": "Carved marble portrait bust of Pericles wearing a Corinthian helmet (ancient copy of a c. 430 BC Greek statue).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_2_sA.mp3",
+              "studio_voice_label": "Marble Portrait Bust of Athenian…"
             }
           ]
         },
@@ -1138,7 +1155,9 @@
               "question_badge": "OSTRAKON VOTING SHARD",
               "question": "What did Athenian citizens use broken pottery shards like Source B to do?",
               "model_answer": "Citizens scratched the name of any politician growing too bossy onto a free clay ostrakon; if enough votes piled up, that leader had to leave Athens for ten years.",
-              "provenance": "Scratched clay ostrakon voting shard naming Cimon son of Miltiades, dug up in the Agora of Athens (461 BC)."
+              "provenance": "Scratched clay ostrakon voting shard naming Cimon son of Miltiades, dug up in the Agora of Athens (461 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_2_sB.mp3",
+              "studio_voice_label": "Broken Athenian Pottery Ostrakon…"
             }
           ]
         },
@@ -1169,9 +1188,80 @@
               "question_badge": "BRONZE HOPLITE HELMET",
               "question": "Inspect the bronze cheek plates on Source C. How did it protect warriors, yet limit their senses?",
               "model_answer": "Thick hammered bronze shielded a warrior’s head, cheeks, and nose from spear blows, though narrow eye slits and covered ears made Source C hot, dark, and hard to hear inside!",
-              "provenance": "Hammered bronze Greek hoplite helmet made around 500 BC."
+              "provenance": "Hammered bronze Greek hoplite helmet made around 500 BC.",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_2_sC.mp3",
+              "studio_voice_label": "Hammered Bronze Corinthian Warri…"
             }
-          ]
+          ],
+          "concept_widget": {
+            "type": "power_seesaw",
+            "eyebrow": "KS2 Interactive Balance Explorer",
+            "title": "Athens vs Sparta: Comparing Votes, Childhood and Women's Lives",
+            "default_index": 0,
+            "caption": "Tap each civic lens to compare how sea-trading democratic Athens and landlocked warrior Sparta organised daily life.",
+            "eras": [
+              {
+                "year": "1. Who Ruled?",
+                "headline": "Who Ruled and Voted? Citizen Assembly vs Two Kings",
+                "color": "#0284c7",
+                "summary": "In Athens, adult male citizens climbed the Pnyx hill to debate and vote directly on laws and chose 500-person juries, though women, enslaved people, and metics were shut out. Sparta rejected speeches, placing power in two army kings and a council of older nobles.",
+                "pillars": [
+                  {
+                    "actor": "Athens: Direct Citizen Votes",
+                    "share": 75,
+                    "status": "Male Citizens Debate and Vote on the Pnyx",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Sparta: Two Kings and Elders",
+                    "share": 25,
+                    "status": "Strict Obedience Without Citizen Debates",
+                    "color": "#ef4444"
+                  }
+                ]
+              },
+              {
+                "year": "2. Childhood",
+                "headline": "Childhood and Education: Private Tutors vs Age-7 Agoge",
+                "color": "#d97706",
+                "summary": "Wealthy Athenian boys studied reading, geometry, poetry, music, and sport with tutors while girls learned spinning and weaving indoors. In Sparta, seven-year-old boys entered barefoot agoge barracks to sleep on river reeds, while Spartan girls ran, wrestled, and threw javelins outdoors!",
+                "pillars": [
+                  {
+                    "actor": "Athens: Books, Music and Weaving",
+                    "share": 50,
+                    "status": "Boys Study Arts; Girls Stay Indoors",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Sparta: Agoge Drills and Athletics",
+                    "share": 50,
+                    "status": "Barefoot Boy Soldiers and Athletic Girls",
+                    "color": "#f59e0b"
+                  }
+                ]
+              },
+              {
+                "year": "3. Women's Lives",
+                "headline": "Women's Rights and Daily Life: Indoors vs Landowners",
+                "color": "#16a34a",
+                "summary": "Athenian women lived mostly indoors under male guardians and could neither vote nor run estates freely. Because Spartan husbands lived away in army barracks, confident Spartan women managed farms, owned land themselves, and spoke openly in public!",
+                "pillars": [
+                  {
+                    "actor": "Athens: Kept Mostly Indoors",
+                    "share": 20,
+                    "status": "Supervised at Home by Male Guardians",
+                    "color": "#38bdf8"
+                  },
+                  {
+                    "actor": "Sparta: Confident Landowners",
+                    "share": 80,
+                    "status": "Ran Farms, Owned Land and Spoke Freely",
+                    "color": "#22c55e"
+                  }
+                ]
+              }
+            ]
+          }
         }
       ],
       "sources": [
@@ -1191,7 +1281,10 @@
           "question_badge": "BUST OF PERICLES",
           "question": "Why does Pericles wear a raised soldier’s helmet instead of a king’s crown in Source A?",
           "model_answer": "Democratic Athens had no kings! Citizens elected Pericles as both a persuasive Assembly speaker and an army general, so the tilted helmet showed civic duty rather than royal rule.",
-          "provenance": "Carved marble portrait bust of Pericles wearing a Corinthian helmet (ancient copy of a c. 430 BC Greek statue)."
+          "provenance": "Carved marble portrait bust of Pericles wearing a Corinthian helmet (ancient copy of a c. 430 BC Greek statue).",
+          "text": "Artefact note: Beneath his neatly curled beard, three lines of Greek capitals carved into the marble block read: \"Pericles, son of Xanthippus, the Athenian.\" Notice the eye-holes of the battle helmet resting high above his brow.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_2_sA.mp3",
+          "studio_voice_label": "Marble Portrait Bust of Athenian…"
         },
         {
           "id": "ks2_ancient_greece_l2_src_b",
@@ -1209,7 +1302,10 @@
           "question_badge": "OSTRAKON VOTING SHARD",
           "question": "What did Athenian citizens use broken pottery shards like Source B to do?",
           "model_answer": "Citizens scratched the name of any politician growing too bossy onto a free clay ostrakon; if enough votes piled up, that leader had to leave Athens for ten years.",
-          "provenance": "Scratched clay ostrakon voting shard naming Cimon son of Miltiades, dug up in the Agora of Athens (461 BC)."
+          "provenance": "Scratched clay ostrakon voting shard naming Cimon son of Miltiades, dug up in the Agora of Athens (461 BC).",
+          "text": "Artefact note: Using a sharp point, someone scratched two bold lines right through the dark black glaze into the orange clay of this broken pot rim: \"KIMON MILTIADO\" — \"Cimon, son of Miltiades.\"",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_2_sB.mp3",
+          "studio_voice_label": "Broken Athenian Pottery Ostrakon…"
         },
         {
           "id": "ks2_ancient_greece_l2_src_c",
@@ -1227,7 +1323,10 @@
           "question_badge": "BRONZE HOPLITE HELMET",
           "question": "Inspect the bronze cheek plates on Source C. How did it protect warriors, yet limit their senses?",
           "model_answer": "Thick hammered bronze shielded a warrior’s head, cheeks, and nose from spear blows, though narrow eye slits and covered ears made Source C hot, dark, and hard to hear inside!",
-          "provenance": "Hammered bronze Greek hoplite helmet made around 500 BC."
+          "provenance": "Hammered bronze Greek hoplite helmet made around 500 BC.",
+          "text": "Artefact note: Hammered from a single sheet of dark bronze, this heavy helmet curves smoothly over the whole skull, with tiny rivets bordering the nose-piece, solid side walls, and sweeping cheek guards.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_2_sC.mp3",
+          "studio_voice_label": "Hammered Bronze Corinthian Warri…"
         }
       ],
       "causal_domino_spine": {
@@ -1985,7 +2084,9 @@
               "question_badge": "ARTEMISION BRONZE GOD",
               "question": "Why can’t historians be certain whether Source A shows Zeus or Poseidon?",
               "model_answer": "Both bearded brothers shared a powerful build, and the weapon once held in Source A’s raised right hand — Zeus’s thunderbolt or Poseidon’s trident — was lost in the shipwreck!",
-              "provenance": "Classical Greek bronze statue of Zeus or Poseidon rescued from the sea off Cape Artemision (c. 460 BC, Athens)."
+              "provenance": "Classical Greek bronze statue of Zeus or Poseidon rescued from the sea off Cape Artemision (c. 460 BC, Athens).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_3_sA.mp3",
+              "studio_voice_label": "Over-Life-Size Bronze Statue of…"
             }
           ]
         },
@@ -2016,7 +2117,9 @@
               "question_badge": "ATHENA PARTHENOS STATUE",
               "question": "Spot two symbols on Source B that show Athena’s protection and victory.",
               "model_answer": "Athena wears a tall warrior helmet and rests her hand on a shield guarded by a sacred snake, while holding winged goddess Nike to promise victory to Athens!",
-              "provenance": "Ancient marble copy of Phidias’s giant gold-and-ivory statue of Athena from the Parthenon in Athens (original c. 438 BC)."
+              "provenance": "Ancient marble copy of Phidias’s giant gold-and-ivory statue of Athena from the Parthenon in Athens (original c. 438 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_3_sB.mp3",
+              "studio_voice_label": "Ancient Marble Copy of Athena Pa…"
             }
           ]
         },
@@ -2047,7 +2150,9 @@
               "question_badge": "HERACLES & HYDRA VASE",
               "question": "Look closely at the monster on Source C. Which myth is painted here, and why did potters paint myths?",
               "model_answer": "Source C shows brave Heracles battling the many-headed Hydra! Potters painted famous hero myths onto clay jars because families loved spotting exciting tales of courage at mealtimes.",
-              "provenance": "Greek black-figure clay storage jar (amphora) showing Heracles battling the Hydra (c. 530 BC)."
+              "provenance": "Greek black-figure clay storage jar (amphora) showing Heracles battling the Hydra (c. 530 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_3_sC.mp3",
+              "studio_voice_label": "Black-Figure Clay Jar Showing He…"
             }
           ]
         }
@@ -2069,7 +2174,10 @@
           "question_badge": "ARTEMISION BRONZE GOD",
           "question": "Why can’t historians be certain whether Source A shows Zeus or Poseidon?",
           "model_answer": "Both bearded brothers shared a powerful build, and the weapon once held in Source A’s raised right hand — Zeus’s thunderbolt or Poseidon’s trident — was lost in the shipwreck!",
-          "provenance": "Classical Greek bronze statue of Zeus or Poseidon rescued from the sea off Cape Artemision (c. 460 BC, Athens)."
+          "provenance": "Classical Greek bronze statue of Zeus or Poseidon rescued from the sea off Cape Artemision (c. 460 BC, Athens).",
+          "text": "Artefact note: Cast in hollow bronze over two thousand years ago, this bearded figure stretches one muscular arm straight ahead to aim, while braided hair frames hollow eye sockets that once held inlaid stone eyes.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_3_sA.mp3",
+          "studio_voice_label": "Over-Life-Size Bronze Statue of…"
         },
         {
           "id": "ks2_ancient_greece_l3_src_b",
@@ -2087,7 +2195,10 @@
           "question_badge": "ATHENA PARTHENOS STATUE",
           "question": "Spot two symbols on Source B that show Athena’s protection and victory.",
           "model_answer": "Athena wears a tall warrior helmet and rests her hand on a shield guarded by a sacred snake, while holding winged goddess Nike to promise victory to Athens!",
-          "provenance": "Ancient marble copy of Phidias’s giant gold-and-ivory statue of Athena from the Parthenon in Athens (original c. 438 BC)."
+          "provenance": "Ancient marble copy of Phidias’s giant gold-and-ivory statue of Athena from the Parthenon in Athens (original c. 438 BC).",
+          "text": "Artefact note: Carved in smooth white marble, Athena wears a tall three-crested headpiece and a heavy chest cloak trimmed with curling shapes, while balancing a smaller robed figure with spread wings upon her right hand.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_3_sB.mp3",
+          "studio_voice_label": "Ancient Marble Copy of Athena Pa…"
         },
         {
           "id": "ks2_ancient_greece_l3_src_c",
@@ -2105,7 +2216,10 @@
           "question_badge": "HERACLES & HYDRA VASE",
           "question": "Look closely at the monster on Source C. Which myth is painted here, and why did potters paint myths?",
           "model_answer": "Source C shows brave Heracles battling the many-headed Hydra! Potters painted famous hero myths onto clay jars because families loved spotting exciting tales of courage at mealtimes.",
-          "provenance": "Greek black-figure clay storage jar (amphora) showing Heracles battling the Hydra (c. 530 BC)."
+          "provenance": "Greek black-figure clay storage jar (amphora) showing Heracles battling the Hydra (c. 530 BC).",
+          "text": "Artefact note: Across the rounded orange belly of this lidded two-handled clay jar, a warrior wearing a knotted animal skin lunges forward swinging a curved blade at a scaly, coiled creature with twisting necks.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_3_sC.mp3",
+          "studio_voice_label": "Black-Figure Clay Jar Showing He…"
         }
       ],
       "causal_domino_spine": {
@@ -2862,7 +2976,9 @@
               "question_badge": "HOPLITE PHALANX VASE",
               "question": "Look closely at the warriors on Source A. What armour and weapons made a phalanx so tough?",
               "model_answer": "Source A shows hoplites wearing crested bronze helmets and shin guards while overlapping large round shields and pointing long spears forward like a moving bronze wall.",
-              "provenance": "Painted black-figure Greek clay jar showing armoured hoplites clashing with spears and shields (c. 510 BC)."
+              "provenance": "Painted black-figure Greek clay jar showing armoured hoplites clashing with spears and shields (c. 510 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_4_sA.mp3",
+              "studio_voice_label": "Black-Figure Greek Vase Showing…"
             }
           ]
         },
@@ -2893,7 +3009,9 @@
               "question_badge": "PERSIAN IMMORTALS FRIEZE",
               "question": "Compare Source B with Source A. How were Persian Immortals armed differently from Greek hoplites?",
               "model_answer": "In Source B, Persian Immortals wear patterned cloth robes rather than heavy bronze armour, carrying bows and quivers to shoot from afar while Greek hoplites charged behind bronze shields.",
-              "provenance": "Colourful glazed-brick wall frieze of Persian royal guards (\"Immortals\") from King Darius’s palace at Susa, Iran (c. 510 BC)."
+              "provenance": "Colourful glazed-brick wall frieze of Persian royal guards (\"Immortals\") from King Darius’s palace at Susa, Iran (c. 510 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_4_sB.mp3",
+              "studio_voice_label": "Glazed Brick Frieze of Persian I…"
             }
           ]
         },
@@ -2924,7 +3042,9 @@
               "question_badge": "ADMIRAL THEMISTOCLES",
               "question": "How did Themistocles’s clever plan save Greece inside the narrow Strait of Salamis in 480 BC?",
               "model_answer": "First, Themistocles persuaded Athens to build swift 170-oar wooden triremes with silver-mine wealth; then he lured Xerxes’s huge fleet into narrow Salamis, where jammed ships were rammed!",
-              "provenance": "Ancient Roman marble copy of a Greek portrait bust of Admiral Themistocles (original c. 470 BC)."
+              "provenance": "Ancient Roman marble copy of a Greek portrait bust of Admiral Themistocles (original c. 470 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_4_sC.mp3",
+              "studio_voice_label": "Marble Portrait Bust of Athenian…"
             }
           ]
         }
@@ -2946,7 +3066,10 @@
           "question_badge": "HOPLITE PHALANX VASE",
           "question": "Look closely at the warriors on Source A. What armour and weapons made a phalanx so tough?",
           "model_answer": "Source A shows hoplites wearing crested bronze helmets and shin guards while overlapping large round shields and pointing long spears forward like a moving bronze wall.",
-          "provenance": "Painted black-figure Greek clay jar showing armoured hoplites clashing with spears and shields (c. 510 BC)."
+          "provenance": "Painted black-figure Greek clay jar showing armoured hoplites clashing with spears and shields (c. 510 BC).",
+          "text": "Artefact note: Painted in glossy black, deep red, and bright white clay slip on a curved jar, four foot-soldiers stride forward in pairs, raising long weapons high above decorated shields and tall plumed headpieces.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_4_sA.mp3",
+          "studio_voice_label": "Black-Figure Greek Vase Showing…"
         },
         {
           "id": "ks2_ancient_greece_l4_src_b",
@@ -2964,7 +3087,10 @@
           "question_badge": "PERSIAN IMMORTALS FRIEZE",
           "question": "Compare Source B with Source A. How were Persian Immortals armed differently from Greek hoplites?",
           "model_answer": "In Source B, Persian Immortals wear patterned cloth robes rather than heavy bronze armour, carrying bows and quivers to shoot from afar while Greek hoplites charged behind bronze shields.",
-          "provenance": "Colourful glazed-brick wall frieze of Persian royal guards (\"Immortals\") from King Darius’s palace at Susa, Iran (c. 510 BC)."
+          "provenance": "Colourful glazed-brick wall frieze of Persian royal guards (\"Immortals\") from King Darius’s palace at Susa, Iran (c. 510 BC).",
+          "text": "Artefact note: Moulded across rows of turquoise, yellow, and brown glazed palace bricks, two bearded royal guards stand in profile wearing twisted headbands and long patterned garments, with tasseled cases slung behind their shoulders.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_4_sB.mp3",
+          "studio_voice_label": "Glazed Brick Frieze of Persian I…"
         },
         {
           "id": "ks2_ancient_greece_l4_src_c",
@@ -2982,7 +3108,10 @@
           "question_badge": "ADMIRAL THEMISTOCLES",
           "question": "How did Themistocles’s clever plan save Greece inside the narrow Strait of Salamis in 480 BC?",
           "model_answer": "First, Themistocles persuaded Athens to build swift 170-oar wooden triremes with silver-mine wealth; then he lured Xerxes’s huge fleet into narrow Salamis, where jammed ships were rammed!",
-          "provenance": "Ancient Roman marble copy of a Greek portrait bust of Admiral Themistocles (original c. 470 BC)."
+          "provenance": "Ancient Roman marble copy of a Greek portrait bust of Admiral Themistocles (original c. 470 BC).",
+          "text": "Artefact note: Carved in pale marble with short-cropped hair, a thick beard, and a stern, thoughtful brow, this portrait bust bears the Greek letters \"THEMISTOKLES\" chiselled neatly along its lower edge.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_4_sC.mp3",
+          "studio_voice_label": "Marble Portrait Bust of Athenian…"
         }
       ],
       "causal_domino_spine": {
@@ -3740,7 +3869,9 @@
               "question_badge": "GREEK THEATRE MASK",
               "question": "Inspect Source A. Mention two clever reasons Greek actors wore masks like these on stage.",
               "model_answer": "Bold eyebrows and wide mouths let 14,000 spectators see clearly whether a character was tragic or comic, while swapping masks let three male actors play many male and female parts!",
-              "provenance": "Moulded Ancient Greek clay theatre mask carvings with wide open mouths (c. 300 BC)."
+              "provenance": "Moulded Ancient Greek clay theatre mask carvings with wide open mouths (c. 300 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_5_sA.mp3",
+              "studio_voice_label": "Ancient Greek Clay Theatre Masks…"
             }
           ]
         },
@@ -3771,9 +3902,89 @@
               "question_badge": "PHILOSOPHER SOCRATES",
               "question": "Who is shown in Source B, and how did he challenge people in Athens’s Agora?",
               "model_answer": "Source B shows Athenian philosopher Socrates (\"lover of wisdom\"), who walked barefoot around the Agora asking sharp questions about justice so citizens tested their own beliefs.",
-              "provenance": "Ancient marble portrait head of Athenian philosopher Socrates (copy of a 4th-century BC Greek bronze statue)."
+              "provenance": "Ancient marble portrait head of Athenian philosopher Socrates (copy of a 4th-century BC Greek bronze statue).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_5_sB.mp3",
+              "studio_voice_label": "Ancient Marble Portrait Head of…"
             }
-          ]
+          ],
+          "concept_widget": {
+            "type": "profile_deck",
+            "eyebrow": "KS2 Interactive History Explorer",
+            "title": "Athens's Three Great Philosophers: Socrates, Plato and Aristotle",
+            "default_index": 0,
+            "caption": "Tap each thinker to trace how questioning in the Agora grew into Athens's famous garden schools and early science.",
+            "items": [
+              {
+                "tab_label": "1. Socrates",
+                "title": "Barefoot Socrates: Sharp Questions in the Agora",
+                "dates": "c. 470–399 BC • Athens",
+                "badge": "Question Everything",
+                "color": "#0284c7",
+                "bg_color": "rgba(2, 132, 199, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Word Meaning",
+                    "value": "Philosopher Means Lover of Wisdom"
+                  },
+                  {
+                    "label": "Daily Habit",
+                    "value": "Asked Sharp Questions Barefoot in the Agora"
+                  },
+                  {
+                    "label": "399 BC Trial",
+                    "value": "Drank Poison Rather Than Stop Questioning"
+                  }
+                ],
+                "takeaway": "Barefoot Socrates walked Athens's Agora every day asking citizens sharp questions to test their own beliefs, even when jurors condemned him in 399 BC."
+              },
+              {
+                "tab_label": "2. Plato",
+                "title": "Plato: Founder of the Shady Academy Garden School",
+                "dates": "c. 428–348 BC • Pupil of Socrates",
+                "badge": "The Academy",
+                "color": "#7c3aed",
+                "bg_color": "rgba(124, 58, 237, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Famous Teacher",
+                    "value": "Loyal Student Who Recorded Socrates's Talks"
+                  },
+                  {
+                    "label": "Athens School",
+                    "value": "Opened a Shady Garden Called the Academy"
+                  },
+                  {
+                    "label": "Big Questions",
+                    "value": "Explored Justice, Truth and Wise Leadership"
+                  }
+                ],
+                "takeaway": "Inspired by his teacher Socrates, Plato opened a peaceful garden school in Athens called the Academy where students debated fairness and truth."
+              },
+              {
+                "tab_label": "3. Aristotle",
+                "title": "Aristotle: Observing Nature at the Lyceum School",
+                "dates": "384–322 BC • Roots of Science",
+                "badge": "Observe and Sort",
+                "color": "#16a34a",
+                "bg_color": "rgba(22, 163, 74, 0.2)",
+                "metrics": [
+                  {
+                    "label": "Athens School",
+                    "value": "Taught Thinkers at the Lyceum School"
+                  },
+                  {
+                    "label": "Method",
+                    "value": "Observed, Measured and Sorted Real Facts"
+                  },
+                  {
+                    "label": "Scientific Legacy",
+                    "value": "Grouped Hundreds of Plants and Animals"
+                  }
+                ],
+                "takeaway": "At his Lyceum school, Aristotle studied the natural world by observing, measuring, and grouping hundreds of plants and animals, laying roots for science."
+              }
+            ]
+          }
         },
         {
           "act": 3,
@@ -3802,7 +4013,9 @@
               "question_badge": "PHYSICIAN HIPPOCRATES",
               "question": "What does Source C celebrate, and how did Hippocrates change how doctors treated sick patients?",
               "model_answer": "Source C celebrates Hippocrates of Kos, who taught doctors to examine natural symptoms carefully, prescribe clean food and rest, and promise ethical care under the Hippocratic Oath.",
-              "provenance": "Ancient marble portrait bust of Greek physician Hippocrates of Kos."
+              "provenance": "Ancient marble portrait bust of Greek physician Hippocrates of Kos.",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_5_sC.mp3",
+              "studio_voice_label": "Marble Portrait Bust of Physicia…"
             }
           ]
         }
@@ -3824,7 +4037,10 @@
           "question_badge": "GREEK THEATRE MASK",
           "question": "Inspect Source A. Mention two clever reasons Greek actors wore masks like these on stage.",
           "model_answer": "Bold eyebrows and wide mouths let 14,000 spectators see clearly whether a character was tragic or comic, while swapping masks let three male actors play many male and female parts!",
-          "provenance": "Moulded Ancient Greek clay theatre mask carvings with wide open mouths (c. 300 BC)."
+          "provenance": "Moulded Ancient Greek clay theatre mask carvings with wide open mouths (c. 300 BC).",
+          "text": "Artefact note: Set at the centre of a round pale clay disc, this moulded stage face features parted wavy hair, hollow round eye-holes, and a dramatic, wide-open mouth.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_5_sA.mp3",
+          "studio_voice_label": "Ancient Greek Clay Theatre Masks…"
         },
         {
           "id": "ks2_ancient_greece_l5_src_b",
@@ -3842,7 +4058,10 @@
           "question_badge": "PHILOSOPHER SOCRATES",
           "question": "Who is shown in Source B, and how did he challenge people in Athens’s Agora?",
           "model_answer": "Source B shows Athenian philosopher Socrates (\"lover of wisdom\"), who walked barefoot around the Agora asking sharp questions about justice so citizens tested their own beliefs.",
-          "provenance": "Ancient marble portrait head of Athenian philosopher Socrates (copy of a 4th-century BC Greek bronze statue)."
+          "provenance": "Ancient marble portrait head of Athenian philosopher Socrates (copy of a 4th-century BC Greek bronze statue).",
+          "text": "Artefact note: Unlike smooth statues of young Greek athletes, this white marble head shows a balding forehead, snub nose, and tangled beard. Plato recorded his famous challenge: \"The unexamined life is not worth living.\"",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_5_sB.mp3",
+          "studio_voice_label": "Ancient Marble Portrait Head of…"
         },
         {
           "id": "ks2_ancient_greece_l5_src_c",
@@ -3860,7 +4079,10 @@
           "question_badge": "PHYSICIAN HIPPOCRATES",
           "question": "What does Source C celebrate, and how did Hippocrates change how doctors treated sick patients?",
           "model_answer": "Source C celebrates Hippocrates of Kos, who taught doctors to examine natural symptoms carefully, prescribe clean food and rest, and promise ethical care under the Hippocratic Oath.",
-          "provenance": "Ancient marble portrait bust of Greek physician Hippocrates of Kos."
+          "provenance": "Ancient marble portrait bust of Greek physician Hippocrates of Kos.",
+          "text": "Artefact note: Set inside an arched stone niche above the carved name \"HIPPOCRATES\", this dark bronze bust shows a bearded, cloaked Greek healer. His famous oath begins: \"Into whatever homes I go, I will help the sick.\"",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_5_sC.mp3",
+          "studio_voice_label": "Marble Portrait Bust of Physicia…"
         }
       ],
       "causal_domino_spine": {
@@ -4618,7 +4840,9 @@
               "question_badge": "ALEXANDER SILVER COIN",
               "question": "Look closely at Source A. Why did minting coins like this help unite Alexander’s vast empire?",
               "model_answer": "Source A showed Alexander in Heracles’s fierce lion skin to project unbeaten strength, while one trusted silver coin and Greek script made trade across Egypt and Asia easy.",
-              "provenance": "Hellenistic silver coin of Alexander the Great wearing the lion skin of Heracles (c. 325 BC)."
+              "provenance": "Hellenistic silver coin of Alexander the Great wearing the lion skin of Heracles (c. 325 BC).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_6_sA.mp3",
+              "studio_voice_label": "Silver Coin of Alexander Wearing…"
             }
           ]
         },
@@ -4649,7 +4873,9 @@
               "question_badge": "THREE GREEK COLUMNS",
               "question": "Inspect Source B. How can you tell Doric, Ionic, and Corinthian column tops apart?",
               "model_answer": "In Source B, a Doric column top is plain and sturdy, an Ionic top curls into two neat spiral scrolls, and a Corinthian top bursts with carved acanthus leaves!",
-              "provenance": "Classical architectural comparison diagram of Greek Doric, Ionic, and Corinthian stone column tops."
+              "provenance": "Classical architectural comparison diagram of Greek Doric, Ionic, and Corinthian stone column tops.",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_6_sB.mp3",
+              "studio_voice_label": "Diagram Comparing Greek Doric, I…"
             }
           ]
         },
@@ -4680,7 +4906,9 @@
               "question_badge": "ARTEMISION BRONZE JOCKEY",
               "question": "What does the lifelike energy of Source C reveal about Hellenistic art and why Romans admired it?",
               "model_answer": "Source C captures vivid motion from the horse’s flared nostrils to the tiny barefoot jockey leaning forward mid-gallop, showing why conquering Romans prized Greek sculptors.",
-              "provenance": "Hellenistic bronze statue of the Horse and Jockey rescued from the sea off Cape Artemision (c. 140 BC, Athens)."
+              "provenance": "Hellenistic bronze statue of the Horse and Jockey rescued from the sea off Cape Artemision (c. 140 BC, Athens).",
+              "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_6_sC.mp3",
+              "studio_voice_label": "Bronze Statue of the Galloping R…"
             }
           ]
         }
@@ -4702,7 +4930,10 @@
           "question_badge": "ALEXANDER SILVER COIN",
           "question": "Look closely at Source A. Why did minting coins like this help unite Alexander’s vast empire?",
           "model_answer": "Source A showed Alexander in Heracles’s fierce lion skin to project unbeaten strength, while one trusted silver coin and Greek script made trade across Egypt and Asia easy.",
-          "provenance": "Hellenistic silver coin of Alexander the Great wearing the lion skin of Heracles (c. 325 BC)."
+          "provenance": "Hellenistic silver coin of Alexander the Great wearing the lion skin of Heracles (c. 325 BC).",
+          "text": "Artefact note: Inside a ring of tiny silver dots, a clean-shaven young ruler faces right wearing a thick-maned animal hood whose upper jaw curves above his ear and paws knot under his chin.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_6_sA.mp3",
+          "studio_voice_label": "Silver Coin of Alexander Wearing…"
         },
         {
           "id": "ks2_ancient_greece_l6_src_b",
@@ -4720,7 +4951,10 @@
           "question_badge": "THREE GREEK COLUMNS",
           "question": "Inspect Source B. How can you tell Doric, Ionic, and Corinthian column tops apart?",
           "model_answer": "In Source B, a Doric column top is plain and sturdy, an Ionic top curls into two neat spiral scrolls, and a Corinthian top bursts with carved acanthus leaves!",
-          "provenance": "Classical architectural comparison diagram of Greek Doric, Ionic, and Corinthian stone column tops."
+          "provenance": "Classical architectural comparison diagram of Greek Doric, Ionic, and Corinthian stone column tops.",
+          "text": "Artefact note: Compare the three rows on this finely shaded architectural chart from top to bottom — starting with the simple top row (Dorique), moving to the middle row (Ionique), and finishing at the tall bottom row (Corinthien).",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_6_sB.mp3",
+          "studio_voice_label": "Diagram Comparing Greek Doric, I…"
         },
         {
           "id": "ks2_ancient_greece_l6_src_c",
@@ -4738,7 +4972,10 @@
           "question_badge": "ARTEMISION BRONZE JOCKEY",
           "question": "What does the lifelike energy of Source C reveal about Hellenistic art and why Romans admired it?",
           "model_answer": "Source C captures vivid motion from the horse’s flared nostrils to the tiny barefoot jockey leaning forward mid-gallop, showing why conquering Romans prized Greek sculptors.",
-          "provenance": "Hellenistic bronze statue of the Horse and Jockey rescued from the sea off Cape Artemision (c. 140 BC, Athens)."
+          "provenance": "Hellenistic bronze statue of the Horse and Jockey rescued from the sea off Cape Artemision (c. 140 BC, Athens).",
+          "text": "Artefact note: Rescued in pieces from an Aegean shipwreck, this hollow bronze sculpture freezes a racehorse with front hooves lifted off the ground while its tiny rider twists back to check rival horses behind.",
+          "studio_audio": "/audio/sources/ks2_ancient_greece/lesson_6_sC.mp3",
+          "studio_voice_label": "Bronze Statue of the Galloping R…"
         }
       ],
       "causal_domino_spine": {
@@ -5978,6 +6215,148 @@
       },
       "hinge_question": "How did Alexander's eleven-year march east help Greek words, geometry, and theatre survive long after Macedon's empire broke apart?",
       "audio_file": "/audio/reading/ks2_ancient_greece/r5.mp3"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Minoans",
+      "pronunciation": "mih-NOH-unz",
+      "definition": "Early Bronze Age sailors on the island of Crete who built colourful painted palaces and traded across the sea before classical Greece."
+    },
+    {
+      "term": "Mycenaeans",
+      "pronunciation": "my-suh-NEE-unz",
+      "definition": "Bronze Age mainland Greek warrior kingdoms famous for giant stone fortress walls and the carved Lion Gate at Mycenae around 1250 BC."
+    },
+    {
+      "term": "Polis",
+      "pronunciation": "POH-liss",
+      "definition": "An independent Ancient Greek city-state, including the walled town and its surrounding farmland, that made its own laws and coins (plural: poleis)."
+    },
+    {
+      "term": "Acropolis",
+      "pronunciation": "uh-KROP-uh-liss",
+      "definition": "The high, steep walled hilltop at the centre of a Greek city-state where marble temples stood and families sheltered during war."
+    },
+    {
+      "term": "Agora",
+      "pronunciation": "AG-uh-ruh",
+      "definition": "The sunny open-air marketplace and meeting square in a Greek city-state where farmers traded food and male citizens debated news and laws."
+    },
+    {
+      "term": "Alphabet",
+      "pronunciation": "AL-fuh-bet",
+      "definition": "The 24-letter Greek writing system with vowels and consonants, adapted from Phoenician sea traders around 800 BC and named after Alpha and Beta."
+    },
+    {
+      "term": "Hellenes",
+      "pronunciation": "HEL-eenz",
+      "definition": "The shared name proud Ancient Greeks used for themselves across rival valleys and islands, united by one language, alphabet, and family of gods."
+    },
+    {
+      "term": "Democracy",
+      "pronunciation": "dih-MOK-ruh-see",
+      "definition": "Rule by the people (from Greek demokratia, meaning people-power), invented in Athens around 508 BC so adult male citizens voted directly on laws."
+    },
+    {
+      "term": "Pnyx",
+      "pronunciation": "puh-NIKS",
+      "definition": "The rocky hillside in Athens where thousands of adult male citizens gathered every few days to listen to speeches and vote by raising hands."
+    },
+    {
+      "term": "Ostrakon",
+      "pronunciation": "OSS-truh-kon",
+      "definition": "A broken pottery shard scratched with a politician's name by Athenian voters to banish an overly bossy leader from Athens for ten years."
+    },
+    {
+      "term": "Kleroterion",
+      "pronunciation": "kler-oh-TEER-ee-on",
+      "definition": "A slotted marble lottery machine in Athens that used falling black and white balls to choose 500 courtroom jurors fairly by chance."
+    },
+    {
+      "term": "Metics",
+      "pronunciation": "MET-iks",
+      "definition": "Free foreign-born craftworkers and merchants living permanently in Athens who paid city taxes yet were barred from voting as citizens."
+    },
+    {
+      "term": "Helots",
+      "pronunciation": "HEL-uts",
+      "definition": "Conquered local farmworkers in Sparta forced to grow crops in the valley so Spartan citizen men could train full-time as soldiers."
+    },
+    {
+      "term": "Agoge",
+      "pronunciation": "uh-GOH-gay",
+      "definition": "Sparta's harsh military training system that took citizen boys from home at age seven to live barefoot and drill in army barracks."
+    },
+    {
+      "term": "Mount Olympus",
+      "pronunciation": "MOWNT oh-LIM-puss",
+      "definition": "Greece's highest snow-capped mountain, where Ancient Greeks believed Zeus, Hera, Athena, and the other chief Olympian gods ruled above the clouds."
+    },
+    {
+      "term": "Parthenon",
+      "pronunciation": "PAR-thuh-non",
+      "definition": "The gleaming white-marble temple built atop the Acropolis of Athens in the 400s BC to honour wise patron warrior goddess Athena."
+    },
+    {
+      "term": "Oracle",
+      "pronunciation": "OR-uh-kul",
+      "definition": "A sacred shrine, most famously Apollo's mountain temple at Delphi, where priestess Pythia spoke mysterious riddles and advice from the gods."
+    },
+    {
+      "term": "Sacred Truce",
+      "pronunciation": "SAY-krid TROOSS",
+      "definition": "The peaceful agreement (Ekecheiria) announced before every Ancient Olympic Games from 776 BC so warring city-states paused fighting for safe travel."
+    },
+    {
+      "term": "Kotinos",
+      "pronunciation": "KOH-tee-noss",
+      "definition": "The prized crown woven from sacred wild-olive branches placed on the head of each victorious athlete at Ancient Olympia."
+    },
+    {
+      "term": "Hoplite",
+      "pronunciation": "HOP-lyte",
+      "definition": "A heavily armed Greek citizen-soldier carrying a heavy round bronze-faced shield, crested bronze helmet, shin guards, and a long thrusting spear."
+    },
+    {
+      "term": "Phalanx",
+      "pronunciation": "FAL-anks",
+      "definition": "A tight shoulder-to-shoulder battle block of Greek hoplites locking round shields edge-to-edge behind rows of forward-pointing spears."
+    },
+    {
+      "term": "Trireme",
+      "pronunciation": "TRY-reem",
+      "definition": "A fast Ancient Greek wooden warship powered by 170 oarsmen seated on three levels and armed at the waterline with a heavy bronze ram."
+    },
+    {
+      "term": "Amphitheatre",
+      "pronunciation": "AM-fi-thee-uh-ter",
+      "definition": "A curved open-air stone theatre carved into a sunny Greek hillside, such as Epidaurus, where up to 14,000 spectators watched tragedies and comedies."
+    },
+    {
+      "term": "Philosopher",
+      "pronunciation": "fi-LOSS-uh-fer",
+      "definition": "From Greek words meaning lover of wisdom: a thinker such as Socrates, Plato, or Aristotle who used questions and observation to search for truth."
+    },
+    {
+      "term": "Hippocratic Oath",
+      "pronunciation": "hip-uh-KRAT-ik OHTH",
+      "definition": "The ethical promise linked to physician Hippocrates of Kos, pledging doctors to observe natural symptoms carefully and care honestly for sick patients."
+    },
+    {
+      "term": "Geometry",
+      "pronunciation": "jee-OM-uh-tree",
+      "definition": "The branch of mathematics studying points, lines, angles, triangles, and shapes, mastered by Greek thinkers such as Pythagoras and Euclid."
+    },
+    {
+      "term": "Hellenistic",
+      "pronunciation": "hel-uh-NISS-tik",
+      "definition": "The blended culture created after Alexander the Great's conquests mixed Greek language, coins, and learning with Egyptian, Persian, and Asian traditions."
+    },
+    {
+      "term": "Legacy",
+      "pronunciation": "LEG-uh-see",
+      "definition": "Lasting ideas, words, stone column styles, jury trials, and Olympic traditions handed down from Ancient Greece that still shape modern life today."
     }
   ]
 }

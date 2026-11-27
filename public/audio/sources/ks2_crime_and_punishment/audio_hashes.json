@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_4_sC": {
+      "hash": "fc315222ba149051",
+      "bytes": 77036,
+      "voiceKey": "female_historian",
+      "badge": "Woodcut Frontispiece From Matthe…",
+      "updatedAt": "2026-11-27T09:28:04.873Z"
+    },
+    "lesson_5_sA": {
+      "hash": "8eed840364d0e149",
+      "bytes": 60428,
+      "voiceKey": "female_historian",
+      "badge": "Eighteenth-Century Flintlock Hor…",
+      "updatedAt": "2026-11-27T09:28:05.874Z"
+    },
+    "lesson_5_sC": {
+      "hash": "9ef11d19dc000406",
+      "bytes": 60428,
+      "voiceKey": "female_historian",
+      "badge": "Transported Tasmanian Convict Bi…",
+      "updatedAt": "2026-11-27T09:28:06.363Z"
+    },
+    "lesson_6_sA": {
+      "hash": "ddb0351aa079a82c",
+      "bytes": 65420,
+      "voiceKey": "female_historian",
+      "badge": "Nineteenth-Century Painted Woode…",
+      "updatedAt": "2026-11-27T09:28:07.371Z"
+    },
+    "lesson_6_sC": {
+      "hash": "32246baa14e37285",
+      "bytes": 68396,
+      "voiceKey": "female_historian",
+      "badge": "Modern Forensic DNA Micropipette…",
+      "updatedAt": "2026-11-27T09:28:07.840Z"
+    },
+    "lesson_1_sB": {
+      "hash": "96317941032131ff",
+      "bytes": 68684,
+      "voiceKey": "male_historian",
+      "badge": "Roman Bronze Steelyard Balance B…",
+      "updatedAt": "2026-11-27T09:28:08.698Z"
+    },
+    "lesson_2_sA": {
+      "hash": "bd4a30364a7a6b4e",
+      "bytes": 73196,
+      "voiceKey": "male_historian",
+      "badge": "Old English Royal Law Code in Te…",
+      "updatedAt": "2026-11-27T09:28:09.177Z"
+    },
+    "lesson_2_sB": {
+      "hash": "f83e2995921253e2",
+      "bytes": 57356,
+      "voiceKey": "male_historian",
+      "badge": "Medieval Illumination of Soundin…",
+      "updatedAt": "2026-11-27T09:28:09.610Z"
+    },
+    "lesson_3_sB": {
+      "hash": "b12c4ac0f781c0cc",
+      "bytes": 62444,
+      "voiceKey": "male_historian",
+      "badge": "Original 1215 Sheepskin Exemplar…",
+      "updatedAt": "2026-11-27T09:28:10.032Z"
+    },
+    "lesson_4_sA": {
+      "hash": "8b427c777a3cfba9",
+      "bytes": 77324,
+      "voiceKey": "male_historian",
+      "badge": "Elizabethan Title-Page Woodcut o…",
+      "updatedAt": "2026-11-27T09:28:10.493Z"
+    },
+    "lesson_4_sB": {
+      "hash": "cd64a569d1728d2b",
+      "bytes": 72332,
+      "voiceKey": "male_historian",
+      "badge": "Sheet-Iron Dark Lantern Carried…",
+      "updatedAt": "2026-11-27T09:28:10.916Z"
+    },
+    "lesson_5_sB": {
+      "hash": "8fd5f58ab18f4e34",
+      "bytes": 63116,
+      "voiceKey": "male_historian",
+      "badge": "Historical Gatehouse Engraving o…",
+      "updatedAt": "2026-11-27T09:28:11.343Z"
+    },
+    "lesson_6_sB": {
+      "hash": "a689687d2dd34040",
+      "bytes": 60716,
+      "voiceKey": "male_historian",
+      "badge": "Broadside Engraving of Prisoners…",
+      "updatedAt": "2026-11-27T09:28:11.798Z"
+    },
+    "lesson_1_sA": {
+      "hash": "09fdadda56b9daa6",
+      "bytes": 79628,
+      "voiceKey": "female_historian",
+      "badge": "Folded Roman Lead Curse Tablet F…",
+      "updatedAt": "2026-11-27T09:28:13.494Z"
+    },
+    "lesson_1_sC": {
+      "hash": "9c1f8764fedaf05a",
+      "bytes": 71468,
+      "voiceKey": "female_historian",
+      "badge": "Roman Legionary Amphitheatre at…",
+      "updatedAt": "2026-11-27T09:28:13.971Z"
+    },
+    "lesson_2_sC": {
+      "hash": "0a2b6611468e41d6",
+      "bytes": 69068,
+      "voiceKey": "female_historian",
+      "badge": "Woodcut of the Cold-Water Ordeal…",
+      "updatedAt": "2026-11-27T09:28:15.007Z"
+    },
+    "lesson_3_sA": {
+      "hash": "8428c5550913e631",
+      "bytes": 74924,
+      "voiceKey": "female_historian",
+      "badge": "Bronze Lion-Head Sanctuary Knock…",
+      "updatedAt": "2026-11-27T09:28:16.056Z"
+    },
+    "lesson_3_sC": {
+      "hash": "a4dd54ba03997ac4",
+      "bytes": 63116,
+      "voiceKey": "female_historian",
+      "badge": "Engraving of a Prisoner Standing…",
+      "updatedAt": "2026-11-27T09:28:16.507Z"
+    }
+  }
+}

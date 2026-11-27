@@ -1,0 +1,53 @@
+{
+  "unitId": "ks2_crime_and_punishment",
+  "clips": {
+    "r0": {
+      "hash": "453bcb86bbb713277cea7782",
+      "bytes": 259820,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 156,
+      "updatedAt": "2026-11-27T09:30:21.325Z"
+    },
+    "r1": {
+      "hash": "0e5e6090c4d801107c789480",
+      "bytes": 289100,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 157,
+      "updatedAt": "2026-11-27T09:30:22.494Z"
+    },
+    "r2": {
+      "hash": "dc3ff38b274235317af4feca",
+      "bytes": 273644,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 146,
+      "updatedAt": "2026-11-27T09:30:27.653Z"
+    },
+    "r3": {
+      "hash": "c037f6cb9e4986b744dcd732",
+      "bytes": 285932,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 155,
+      "updatedAt": "2026-11-27T09:30:28.713Z"
+    },
+    "r4": {
+      "hash": "1ec2f053bc718dcfa8c0d26f",
+      "bytes": 282956,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 148,
+      "updatedAt": "2026-11-27T09:30:31.239Z"
+    },
+    "r5": {
+      "hash": "c0ec00e49066fb2ed38fc43e",
+      "bytes": 265196,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 141,
+      "updatedAt": "2026-11-27T09:30:32.256Z"
+    }
+  }
+}

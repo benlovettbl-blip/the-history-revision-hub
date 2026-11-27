@@ -6,91 +6,231 @@
       "units": [
         {
           "uid": "ks2_stone_to_iron_age",
-          "terms": ["Autumn 1", "Spring 1"],
+          "terms": [
+            "Autumn 1",
+            "Spring 1"
+          ],
           "shortTitle": "Stone Age to Iron Age Britain — Hunter-Gatherers to Hillforts (c. 800,000 BC–AD 43)",
           "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) investigating Ice Age flint handaxes, caves, Star Carr antler masks, and the flooding of Doggerland around 6500 BC, Neolithic farming and the storm-revealed stone village of Skara Brae, Welsh bluestones, 25-tonne sarsens, and winter feasts at Stonehenge and Durrington Walls, Bronze Age copper-and-tin smelting and the Amesbury Archer, waterlogged everyday life at Must Farm ('Britain's Pompeii'), and Iron Age roundhouses, Snettisham gold torcs, and Maiden Castle hillfort up to AD 43.",
           "vocab": "Prehistory, Palaeolithic, Mesolithic, Flint Knapping, Doggerland, Neolithic, Agriculture, Skara Brae, Megalith, Sarsen, Bluestone, Solstice, Bronze, Smelting, Beaker, Amesbury Archer, Roundhouse, Hillfort, Torc, Celts",
-          "skills": ["Chronological Understanding (c. 800,000 BC–AD 43)", "Archaeological Inference Without Written Texts", "Change & Continuity Across Three Ages", "Cause, Consequence & Engineering"],
+          "skills": [
+            "Chronological Understanding (c. 800,000 BC–AD 43)",
+            "Archaeological Inference Without Written Texts",
+            "Change & Continuity Across Three Ages",
+            "Cause, Consequence & Engineering"
+          ],
           "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook. Overarching enquiry: 'How did life in Britain transform from Ice Age hunter-gatherers to Neolithic farmers, Bronze Age metalworkers, and Iron Age hillfort tribes?'",
           "smsc": "<strong>Spiritual:</strong> Exploring Star Carr antler headdresses, Stonehenge Solstice alignments, West Kennet ancestor tombs, and Flag Fen water offerings. <strong>Moral:</strong> Examining how communities shared scarce resources, cared for injured elders (like the Amesbury Archer's knee), and debated war vs defence at hillforts. <strong>Social:</strong> Tracing how farming, copper/tin trade, and monumental building united distant communities across Britain and Europe. <strong>Cultural:</strong> Celebrating world-famous prehistoric treasures from Skara Brae and the Mold Gold Cape to the Battersea Shield.",
           "careers": "Field Archaeologist, Osteoarchaeologist, Geoarchaeologist, Museum Curator, Experimental Heritage Craftworker"
         },
         {
           "uid": "ks2_romans",
-          "terms": ["Autumn 1", "Spring 1"],
+          "terms": [
+            "Autumn 1",
+            "Spring 1"
+          ],
           "shortTitle": "The Romans in Britain — Invasion, Resistance & Legacy (55 BC–AD 410)",
           "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) investigating Iron Age Celtic tribes and Maiden Castle hillfort, Emperor Claudius's AD 43 invasion and Roman army tactics, Queen Boudicca's AD 60–61 Iceni rebellion and the burning of Londinium, Hadrian's 73-mile frontier wall and diverse Vindolanda soldiers from Europe, Syria, and North Africa, everyday life in Roman towns, Aquae Sulis baths, and countryside roundhouses, and Rome's AD 410 departure and lasting legacy across Britain today.",
           "vocab": "Tribe, Hillfort, Roundhouse, Torc, Druids, Emperor, Legionary, Testudo, Province, Rebellion, Iceni, Frontier, Milecastle, Auxiliary, Forum, Hypocaust, Aqueduct, Mosaic, Hoard, Castra, Legacy",
-          "skills": ["Chronological Understanding (55 BC–AD 410)", "Archaeological & Primary Source Investigation", "Cause & Consequence", "Change, Continuity & Legacy"],
+          "skills": [
+            "Chronological Understanding (55 BC–AD 410)",
+            "Archaeological & Primary Source Investigation",
+            "Cause & Consequence",
+            "Change, Continuity & Legacy"
+          ],
           "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook. Overarching enquiry: 'How did the Roman Empire conquer Britain and change life on our island forever?'",
           "smsc": "<strong>Spiritual:</strong> Exploring Celtic Druid beliefs, Sulis Minerva at Bath, and early Christianity in Roman Britain. <strong>Moral:</strong> Examining broken treaties, taxation, and Boudicca's resistance against imperial injustice. <strong>Social:</strong> Discovering diverse frontier communities along Hadrian's Wall (Vindolanda letters, Regina & Barates, Aurelian Moors). <strong>Cultural:</strong> Tracing how Roman towns, roads, Latin words, and our 12-month calendar still shape Britain today.",
           "careers": "Field Archaeologist, Museum Curator, Classical Historian, Heritage Conservator, Cartographer"
         },
         {
           "uid": "ks2_anglo_saxons_vikings",
-          "terms": ["Autumn 2", "Spring 2"],
+          "terms": [
+            "Autumn 2",
+            "Spring 2"
+          ],
           "shortTitle": "Anglo-Saxons & Vikings — Struggle for the Kingdom of England (AD 410–1066)",
           "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) picking up directly after AD 410: Angles, Saxons, and Jutes settling in timber villages like West Stow, the Sutton Hoo ghost ship burial and Christian conversion via Canterbury and Lindisfarne, Viking longships striking Lindisfarne in AD 793 and the Great Heathen Army of AD 865, King Alfred the Great's 33 walled burhs and the Danelaw, everyday craftworkers and Baghdad silver traders in Viking Jorvik, and Aethelflaed, King Athelstan, King Cnut, and the twin 1066 battles of Stamford Bridge and Hastings.",
           "vocab": "Angles, Saxons & Jutes, Heptarchy, Ship Burial, Vellum, Monastery, Clinker-Built, Draught, Great Heathen Army, Fyrd, Burh, Danelaw, Jorvik, Thing, Danegeld, Witan, Housecarl",
-          "skills": ["Chronological Understanding (AD 410–1066)", "Archaeological Inference (Sutton Hoo & Jorvik)", "Source Provenance & Bias", "Cause, Consequence & Unification"],
+          "skills": [
+            "Chronological Understanding (AD 410–1066)",
+            "Archaeological Inference (Sutton Hoo & Jorvik)",
+            "Source Provenance & Bias",
+            "Cause, Consequence & Unification"
+          ],
           "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation & Scholar), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook. Overarching enquiry: 'How did Anglo-Saxon kingdoms and Viking invaders struggle and unite to create the Kingdom of England between AD 410 and 1066?'",
           "smsc": "<strong>Spiritual:</strong> Exploring pagan ship burials alongside Christian conversion at Canterbury, Iona, and Lindisfarne. <strong>Moral:</strong> Evaluating warfare, treaty-keeping, Danegeld, and leadership under Alfred, Aethelflaed, and Cnut. <strong>Social:</strong> Investigating outdoor Thing law-assemblies, fortified burhs, and women's legal rights in Saxon and Viking society. <strong>Cultural:</strong> Uncovering Old English and Old Norse words, weekday names, and global trade from Jorvik to Baghdad.",
           "careers": "Archaeologist, Manuscript Conservator, Museum Curator, Medieval Historian, Linguist"
         },
         {
           "uid": "ks2_ww2",
-          "terms": ["Autumn 1", "Autumn 2"],
+          "terms": [
+            "Autumn 1",
+            "Autumn 2"
+          ],
           "shortTitle": "World War II & The Home Front (1933–1945)",
           "summary": "An 11-enquiry primary unit investigating how the Second World War transformed children's lives across Britain and Europe: Outbreak & Gas Masks (1939), Operation Pied Piper Evacuation, Pre-War Jewish Life & Rights Lost (1933–38), Vera's Kindertransport Journey (1938–39), Rescuers & Upstanders (Chadwick & Winton), The Blitz & Shelters, Dig for Victory & Rationing, Women at War, Bletchley Park Codebreakers, VE Day & Rebuilding Britain, and The Windermere Children (1945).",
           "vocab": "Blackout, Gas Mask, Evacuee, Operation Pied Piper, Nuremberg Laws, Kindertransport, Upstander, The Blitz, Anderson Shelter, Rationing, Women's Land Army, Enigma Machine, VE Day, Calgarth Estate",
-          "skills": ["Chronological Understanding (1933–1954)", "Artefact & Primary Source Investigation", "Perspectives & Empathy", "Historical Explanation"],
+          "skills": [
+            "Chronological Understanding (1933–1954)",
+            "Artefact & Primary Source Investigation",
+            "Perspectives & Empathy",
+            "Historical Explanation"
+          ],
           "assessment": "11 Lesson Worksheets, 28-Page Pupil Workbook, and 44-Question Master Retrieval Quiz Pack alongside the 20-Page Classroom Textbook. Overarching enquiry: 'How did World War II transform children's lives in Britain and Europe?'",
           "smsc": "<strong>Spiritual:</strong> Reflecting on loss, separation, and remembrance. <strong>Moral:</strong> Choices made by rescuers and upstanders (Trevor Chadwick, Doreen Warriner, Nicholas Winton). <strong>Social:</strong> Community resilience during the Blitz, rationing, and post-war rebuilding (NHS, Windermere). <strong>Cultural:</strong> Celebrating pre-war European Jewish family heritage and wartime Home Front life.",
           "careers": "Museum Educator, Archivist, Historian, Cryptographer, Civil Service, Journalist"
         },
         {
           "uid": "ks2_ancient_egypt",
-          "terms": ["Spring 1", "Summer 1"],
+          "terms": [
+            "Spring 1",
+            "Summer 1"
+          ],
           "shortTitle": "Ancient Egypt — The River Nile, Pyramids, Pharaohs & The Afterlife (c. 3100–30 BC)",
           "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) covering the DfE overview of the four earliest river civilisations (Sumer, Indus, Shang, Egypt) plus an in-depth study of Ancient Egypt: the annual Nile flood (Kemet vs Deshret) and Narmer's unification, Giza pyramids and paid tomb-builder villages, scribes, papyrus, and Champollion cracking the Rosetta Stone, mummification and Weighing of the Heart, New Kingdom rulers Hatshepsut, Nefertiti, and Ramesses II, and Tutankhamun's 1922 tomb discovery alongside Queen Cleopatra VII.",
           "vocab": "Civilisation, Inundation, Kemet, Shaduf, Pharaoh, Pyramid, Sphinx, Hieroglyphs, Papyrus, Cartouche, Rosetta Stone, Mummification, Natron, Canopic Jars, Shabti, Book of the Dead, Obelisk, Peace Treaty, Sarcophagus",
-          "skills": ["Chronological Comparison of Earliest Civilisations", "Primary Artefact & Tomb Mural Inference", "Cause, Consequence & Engineering", "Beliefs, Values & Archaeological Discovery"],
+          "skills": [
+            "Chronological Comparison of Earliest Civilisations",
+            "Primary Artefact & Tomb Mural Inference",
+            "Cause, Consequence & Engineering",
+            "Beliefs, Values & Archaeological Discovery"
+          ],
           "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
           "smsc": "<strong>Spiritual:</strong> Exploring Ma'at (truth and balance), Osiris, Isis, and Weighing of the Heart. <strong>Moral:</strong> Examining truthfulness in judgement, fair rations for Giza builders, and the world's oldest peace treaty at Kadesh. <strong>Social:</strong> Understanding Egypt's social pyramid from peasant farmers to scribes and female Pharaohs. <strong>Cultural:</strong> Celebrating 3,000 years of African river-valley architecture, medicine, and hieroglyphic art.",
           "careers": "Egyptologist, Field Archaeologist, Museum Conservator, Epigrapher, Structural Engineer"
         },
         {
           "uid": "ks2_ancient_greece",
-          "terms": ["Summer 1", "Summer 2"],
+          "terms": [
+            "Summer 1",
+            "Summer 2"
+          ],
           "shortTitle": "Ancient Greece — City-States, Democracy, Myths & Lasting Legacy (c. 800–146 BC)",
           "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) investigating Greek life, achievements, and lasting influence on the western world: Aegean geography and independent poleis, Athenian direct democracy on the Pnyx vs Spartan warrior society, the 12 Olympians, myths, and the 776 BC Olympic Games, hoplites and triremes at Marathon, Thermopylae, and Salamis, Greek theatre, Socrates, Aristotle, and Hippocrates, and Alexander the Great alongside Greek legacies today.",
           "vocab": "Polis, Acropolis, Agora, Democracy, Citizen, Ostrakon, Kleroterion, Oligarchy, Agoge, Myth, Sanctuary, Sacred Truce, Hoplite, Phalanx, Trireme, Tragedy, Comedy, Philosophy, Hellenistic, Legacy",
-          "skills": ["Civic Comparison (Athens vs Sparta)", "Evaluating Democratic Participation", "Primary Pottery & Inscription Evidence", "Tracing Long-Term Cultural Legacy"],
+          "skills": [
+            "Civic Comparison (Athens vs Sparta)",
+            "Evaluating Democratic Participation",
+            "Primary Pottery & Inscription Evidence",
+            "Tracing Long-Term Cultural Legacy"
+          ],
           "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
           "smsc": "<strong>Spiritual:</strong> Exploring Olympian gods, Delphi, and the Olympic Sacred Truce. <strong>Moral:</strong> Debating who was included and excluded in Athenian democracy and Socrates's courage to ask questions. <strong>Social:</strong> Comparing women's lives in Athens and Sparta, citizen juries, and open-air community theatre. <strong>Cultural:</strong> Tracing Greek roots in English vocabulary, columns, maths, medicine, and the modern Olympic Games.",
           "careers": "Classicist, Political Historian, Theatre Director, Medical Historian, Architect, Museum Curator"
         },
         {
           "uid": "ks2_early_islamic_baghdad",
-          "terms": ["Spring 2", "Summer 1"],
+          "terms": [
+            "Spring 2",
+            "Summer 1"
+          ],
           "shortTitle": "Early Islamic Civilisation — Round City of Baghdad, Silk Roads & House of Wisdom (c. AD 750–1258)",
           "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) contrasting non-European society c. AD 900 with Anglo-Saxon Britain: Caliph al-Mansur's circular brick Round City of Baghdad (AD 762), paper-making and Muslim, Christian, and Jewish translators in the House of Wisdom, al-Khwarizmi's Hindu-Arabic numerals (0–9) and algebra, Mariam al-Asturlabi's astrolabes, Ibn al-Haytham's optics, and free bimaristan hospitals, Silk Road caravans, dhows, and silver dirhams reaching Viking Jorvik, geometric art and everyday life, and the 1258 Mongol siege alongside Baghdad's global legacy.",
           "vocab": "Caliph, Caliphate, Round City, House of Wisdom, Translation Movement, Paper Mill, Algebra, Algorithm, Zero, Astrolabe, Optics, Bimaristan, Silk Road, Caravanserai, Dhow, Dirham, Calligraphy, Geometric, Arabesque",
-          "skills": ["Simultaneous Chronology & Contrast With Britain c. AD 900", "History of Science, Maths & Medicine", "Global Trade & Numismatic Connections", "Multi-Faith Scholarly Collaboration"],
+          "skills": [
+            "Simultaneous Chronology & Contrast With Britain c. AD 900",
+            "History of Science, Maths & Medicine",
+            "Global Trade & Numismatic Connections",
+            "Multi-Faith Scholarly Collaboration"
+          ],
           "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
           "smsc": "<strong>Spiritual:</strong> Exploring Islamic scholarship, Kufic calligraphy, and respect for seeking knowledge. <strong>Moral:</strong> Examining free medical care for rich and poor alike in bimaristan hospitals. <strong>Social:</strong> Celebrating Muslim, Christian, and Jewish translators working side by side in Baghdad and Toledo. <strong>Cultural:</strong> Discovering everyday Arabic words, 0–9 numerals, chess, geometric mosaics, and Silk Road links to Viking Britain.",
           "careers": "Historian of Science, Mathematician, Astronomer, Medical Researcher, Translator, Museum Curator"
         },
         {
           "uid": "ks2_maya_civilisation",
-          "terms": ["Summer 1", "Summer 2"],
+          "terms": [
+            "Summer 1",
+            "Summer 2"
+          ],
           "shortTitle": "The Ancient Maya — Rainforest Cities, Calendar Maths, Cacao & Pok-ta-Pok (c. 2000 BC–AD 1500)",
           "summary": "A 6-enquiry primary unit (Key Stage 2 Dual-Scaffolded) contrasting Mesoamerican society c. AD 900 with Britain: rainforest geography, limestone cenotes, and Three Sisters maize farming, rival city-states (Tikal, Calakmul, Palenque, Copán) and King Pakal's jade mask, 800+ Maya glyphs, bark-paper codices, independent invention of zero, and interlocking Tzolk'in/Haab' calendars, tortillas, frothy cacao, obsidian, and Pok-ta-Pok ballcourts, Popol Vuh myths and Chichén Itzá's equinox serpent shadow, and the AD 900 lowland abandonment alongside 7 million living Maya today.",
           "vocab": "Mesoamerica, Cenote, Terrace, Three Sisters, Maize, City-State, Ajaw, Step-Pyramid, Jade, Stela, Glyphs, Codex, Base-20, Zero, Tzolk'in, Haab', Metate, Cacao, Obsidian, Pok-ta-Pok, Popol Vuh, Chaac, Kukulkan",
-          "skills": ["Environmental Adaptation & Contrast With Britain c. AD 900", "Decoding Non-European Glyphs & Base-20 Maths", "Testing Multi-Causal Theories (AD 900 Drought)", "Challenging 'Vanished Civilisation' Myths"],
+          "skills": [
+            "Environmental Adaptation & Contrast With Britain c. AD 900",
+            "Decoding Non-European Glyphs & Base-20 Maths",
+            "Testing Multi-Causal Theories (AD 900 Drought)",
+            "Challenging 'Vanished Civilisation' Myths"
+          ],
           "assessment": "6 Dual-Scaffolded Lesson Worksheets (Foundation Clues & Scholar Challenge), 16-Page Pupil Workbook, and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
           "smsc": "<strong>Spiritual:</strong> Exploring the Popol Vuh creation story, Maize God, rain god Chaac, and equinox alignments at Chichén Itzá. <strong>Moral:</strong> Investigating sustainable rainforest farming vs deforestation and drought lessons around AD 900. <strong>Social:</strong> Understanding city-state diplomacy, royal Maya women (Lady Six Sky), and sacred team sport (Pok-ta-Pok). <strong>Cultural:</strong> Celebrating 7 million living Maya speakers, weavers, and scholars across Mesoamerica today.",
           "careers": "Mesoamerican Archaeologist, Epigrapher, Paleoclimatologist, Astronomer, Anthropologist, Botanist"
+        },
+        {
+          "uid": "ks2_crime_and_punishment",
+          "terms": [
+            "Spring 1",
+            "Spring 2"
+          ],
+          "shortTitle": "Crime & Punishment Through Time — Roman Courts to Modern Forensics (AD 43–Present)",
+          "summary": "A 6-enquiry thematic British study beyond 1066 (Key Stage 2 Dual-Scaffolded) tracing 2,000 years of law, courts, policing, and forensics: Roman Twelve Tables, magistrates, and Aquae Sulis lead curse tablets, Anglo-Saxon tithings, Hue and Cry, wergild, and Trial by Ordeal, Norman Forest Laws, Henry II's Common Law twelve-person juries, Church sanctuary, and 1215 Magna Carta, Tudor vagrancy laws, the 1605 Gunpowder Plot, and 1645–1647 witch trials ended by science, 18th-century coastal smugglers, highwaymen, the Bloody Code, Australian transportation, and Elizabeth Fry at Newgate, and Sir Robert Peel's 1829 Bobbies, Victorian prisons, 1901 fingerprints, and Sir Alec Jeffreys's 1984 Leicester DNA profiling.",
+          "vocab": "Twelve Tables, Magistrate, Vigiles, Aquae Sulis, Curse Tablet, Tithing, Hue and Cry, Wergild, Hundred Court, Trial by Ordeal, Forest Laws, Poaching, Common Law, Jury, Magna Carta, Sanctuary,Pillory, Vagrant, Poor Law, High Treason, Ducking Stool, Smuggling, Highwayman, Bloody Code, Transportation, Rehabilitation, Peelers, Policing by Consent, Separate System, Forensics, DNA Profiling",
+          "skills": [
+            "2,000-Year Chronology, Change & Continuity",
+            "Deterrence vs Rehabilitation Debate",
+            "Social Crime & Community Justice",
+            "Scientific Forensics vs Superstition"
+          ],
+          "assessment": "6 Dual-Scaffolded Lesson Worksheets, 16-Page Pupil Workbook (+ 16-Page KS3-Bridge Spine Edition), and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
+          "smsc": "<strong>Spiritual:</strong> Examining medieval Church sanctuary, Trial by Ordeal, and Quaker compassion led by Elizabeth Fry. <strong>Moral:</strong> Debating deterrence versus rehabilitation, unequal social ranks, and abolishing capital punishment (1965). <strong>Social:</strong> Understanding 1215 Magna Carta, twelve-person trial juries, and Sir Robert Peel's unarmed policing by consent. <strong>Cultural:</strong> Exploring Robin Hood outlaw ballads, 5 November 1605 heritage, Sherlock Holmes, and British DNA science.",
+          "careers": "Barrister, Solicitor, Magistrate, Detective Constable, Forensic Geneticist, Probation Officer, Legal Historian"
+        },
+        {
+          "uid": "ks2_kingdom_of_benin",
+          "terms": [
+            "Spring 2",
+            "Summer 1"
+          ],
+          "shortTitle": "The Kingdom of Benin — Rainforest Earthworks, Royal Oba Court & Master Bronzes (c. AD 900–1897)",
+          "summary": "A 6-enquiry primary unit (Key Stage 2 Universal Scaffolded) contrasting West African Edo society c. AD 900–1897 with British history: locating historic Benin in southern Nigeria, early Ogiso ('Kings of the Sky') rulers, and 16,000 km of hand-dug Iya earthworks contrasted with Anglo-Saxon burhs, Prince Oranmiyan of Ife, Oba Eweka I, and Oba Ewuare the Great's nine-gated city lit by palm-oil lamps, Igun Street lost-wax brass plaques, Oba Esigie, Queen Mother Idia's ivory mask, and the Igue festival, 1485 Portuguese trade in brass manillas and Olfert Dapper's 1668 account, and the 1897 British invasion alongside modern restitution to Nigeria.",
+          "vocab": "Edo, Ogiso, Iya Earthworks, Moat, Oba, Ife, Guild, Igun Street, Lost-Wax Casting, Brass Plaque, Coral Regalia, Iyoba, Igue Festival, Manilla, Cowrie Shells, Gwato, Punitive Expedition, Restitution",
+          "skills": [
+            "Simultaneous Chronology & Contrast With Britain c. AD 900",
+            "Reading Non-Written Material Culture (Brass Plaques & Ivory)",
+            "Evaluating European Eyewitness Accounts (1485–1668)",
+            "Debating Colonial Looting & Modern Museum Restitution"
+          ],
+          "assessment": "6 Lesson Worksheets, 16-Page Pupil Workbook (+ 16-Page KS3-Bridge Spine Edition), and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
+          "smsc": "<strong>Spiritual:</strong> Exploring sacred Oba kingship, ancestor altars, royal leopards, and the annual Igue thanksgiving festival. <strong>Moral:</strong> Examining the 1897 British Punitive Expedition, palace looting, and ethical debates over museum restitution today. <strong>Social:</strong> Understanding hereditary craft guilds, village teamwork on 16,000 km earthworks, and wise political counsel from Queen Mother Idia. <strong>Cultural:</strong> Celebrating West African lost-wax bronze and carved ivory artistry among the greatest sculptures in world history.",
+          "careers": "Museum Curator, Provenance Researcher, West African Archaeologist, Cultural Restitution Lawyer, Sculptor & Foundry Conservator"
+        },
+        {
+          "uid": "ks2_victorian_britain",
+          "terms": [
+            "Spring 1",
+            "Summer 1"
+          ],
+          "shortTitle": "Victorian Britain — Steam Railways, Factories, Workhouses & Classrooms (1837–1901)",
+          "summary": "A 6-enquiry post-1066 British study (Key Stage 2 Universal Scaffolded) exploring how Queen Victoria's 64-year reign (1837–1901) reshaped everyday life: Brunel's bridges and steam railways, Greenwich Railway Time, and the 1840 Penny Black, Manchester cotton mills and Sarah Gooder's 1842 coal-pit testimony, 1834 Union Workhouses alongside Lord Shaftesbury's Mines Act and Dr Barnardo's homes, 1870–1891 Board Schools, Welsh slates, and the Three Rs, the 1851 Great Exhibition, Swan's lightbulb, Seacole, and Ada Lovelace, and rich vs poor homes, Bank Holiday seaside trips, and 1901 legacy.",
+          "vocab": "Monarch, Reign, Locomotive, Viaduct, Railway Time, Penny Black, Industrialisation, Piecer, Scavenger, Trapper, Hurrier, Workhouse, Pauper, Reformer, Ragged School, Board School, Three Rs, Slate, Great Exhibition, Telegraph, Back-to-Back",
+          "skills": [
+            "Change & Continuity Across 1837–1901",
+            "Primary Parliamentary & Photographic Evidence (1842 Mines Report)",
+            "Comparing Rich & Working-Class Childhoods",
+            "Evaluating Social Reform & Technological Impact"
+          ],
+          "assessment": "6 Lesson Worksheets, 16-Page Pupil Workbook (+ 16-Page KS3-Bridge Spine Edition), and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
+          "smsc": "<strong>Spiritual:</strong> Exploring Victorian philanthropy, Ragged School compassion, and national jubilee reflection. <strong>Moral:</strong> Investigating child labour in mills and mines, harsh 1834 Workhouse rules, and reformers fighting for children's rights. <strong>Social:</strong> Tracing universal free elementary schooling (1870–1891), public libraries, and working-class Saturday leisure. <strong>Cultural:</strong> Celebrating Charles Dickens, the 1851 Crystal Palace, Mary Seacole, Ada Lovelace, and early FA Cup football.",
+          "careers": "Civil & Railway Engineer, Social Historian, Children’s Rights Advocate, Museum Archivist, Computer Scientist, Teacher"
+        },
+        {
+          "uid": "ks2_local_history_detective",
+          "terms": [
+            "Autumn 2",
+            "Summer 2"
+          ],
+          "shortTitle": "History on Our Doorstep — Local History Detective Toolkit (Roman Towns to Living Memory)",
+          "summary": "A 6-enquiry statutory UK-neutral Local History Toolkit (Key Stage 2 Universal Scaffolded) equipping pupils in any British town or village to investigate local evidence over 2,000 years: Celtic, Roman (-chester), Saxon (-ton/-ham), and Viking (-by) place-names, 1086 Domesday entries, and 1880s Ordnance Survey maps, dating Tudor timber jetties, Georgian sash windows, Victorian red brick, V.R. postboxes, and ghost signs, decoding 1881 Census sheets, 1538 parish registers, and 1862 School Logbooks, tracing turnpikes, canals, mills, and Beeching stations, researching CWGC War Memorial names respectfully, and recording living oral history memories.",
+          "vocab": "Locality, Place-Name, Suffix, Castra, Domesday Book, Ordnance Survey, Benchmark, Jetty, Sash Window, Terracotta, Royal Cypher, Ghost Sign, Listed Building, Census, Enumerator, Parish Register, School Logbook, Turnpike, Aqueduct, Cenotaph, Oral History, Blue Plaque",
+          "skills": [
+            "Toponymic (Place-Name) & Historic Map Overlay Investigation",
+            "Architectural Fieldwork & Material Dating",
+            "Demographic & Archival Record Cross-Referencing (Census & CWGC)",
+            "Conducting Respectful Oral History Interviews"
+          ],
+          "assessment": "6 Lesson Worksheets, 16-Page Pupil Workbook (+ 16-Page KS3-Bridge Spine Edition), and 24-Question Retrieval Companion alongside the 12-Page Classroom Textbook.",
+          "smsc": "<strong>Spiritual:</strong> Respectful remembrance at local WWI and WWII War Memorials and historic parish churches. <strong>Moral:</strong> Debating conservation versus demolition of historic buildings, canals, and green spaces (Octavia Hill & the National Trust). <strong>Social:</strong> Connecting generations through oral history interviews with elders and uncovering diverse local migration stories. <strong>Cultural:</strong> Fostering pride and curiosity in every pupil’s own street names, architecture, and local heritage trail.",
+          "careers": "Local Archivist, Conservation Architect, Town Planner, Cartographer (Ordnance Survey), Oral Historian, Heritage Officer"
         }
       ]
     },
@@ -100,23 +240,41 @@
       "units": [
         {
           "uid": "water_and_sanitation",
-          "terms": ["Autumn 1", "Autumn 2"],
+          "terms": [
+            "Autumn 1",
+            "Autumn 2"
+          ],
           "shortTitle": "Water & Sanitation Through Time",
           "summary": "Pupils trace the history of public health from Roman aqueducts through medieval cesspits to Victorian sewers, evaluating why progress was not linear and how government attitudes shaped change over time.",
           "vocab": "Aqueduct, Cesspit, Miasma Theory, Cholera, Laissez-faire, Germ Theory, Public Health Act 1848",
-          "skills": ["Change & Continuity", "Causation", "Source Comprehension", "PEEL Paragraphs"],
+          "skills": [
+            "Change & Continuity",
+            "Causation",
+            "Source Comprehension",
+            "PEEL Paragraphs"
+          ],
           "assessment": "Extended PEEL paragraphs at the end of each period studied. Unit assessment: \"Why did it take so long to clean up Britain?\" (extended writing)",
           "smsc": "<strong>Social:</strong> Responsibility for community health. <strong>Moral:</strong> Should governments compel people to change behaviour for the public good? <strong>Cultural:</strong> How different civilisations approached hygiene.",
           "careers": "Public Health Officer, Epidemiologist, Archaeologist, Environmental Scientist"
         },
         {
           "uid": "medieval_england",
-          "terms": ["Spring 1", "Spring 2", "Summer 1", "Summer 2"],
-          "shortTitle": "Medieval England (1066\u20131485)",
+          "terms": [
+            "Spring 1",
+            "Spring 2",
+            "Summer 1",
+            "Summer 2"
+          ],
+          "shortTitle": "Medieval England (1066–1485)",
           "summary": "Pupils explore the power struggles that defined England from the Norman Conquest to the Wars of the Roses, examining how monarchs, the Church, and ordinary people competed for authority and power across the High and Late Middle Ages.",
           "vocab": "Feudalism, Domesday Book, Magna Carta, Crusade, Black Death, Peasants' Revolt",
-          "skills": ["Causation", "Significance", "Source Utility", "Historical Argumentation (PEEL)"],
-          "assessment": "Formative PEEL paragraphs throughout. Mid-unit assessment: Magna Carta baronial enquiry. Final assessment: 12-mark extended essay \u2014 \"Explain why the peasants revolted in 1381.\"",
+          "skills": [
+            "Causation",
+            "Significance",
+            "Source Utility",
+            "Historical Argumentation (PEEL)"
+          ],
+          "assessment": "Formative PEEL paragraphs throughout. Mid-unit assessment: Magna Carta baronial enquiry. Final assessment: 12-mark extended essay — \"Explain why the peasants revolted in 1381.\"",
           "smsc": "<strong>Spiritual:</strong> Power and influence of the medieval Church. <strong>Social:</strong> Feudal hierarchy and peasant resistance. <strong>Moral:</strong> Is rebellion ever justified?",
           "careers": "Archivist, Heritage Site Manager, Historian, Lawyer"
         }
@@ -128,55 +286,93 @@
       "units": [
         {
           "uid": "monarchy_religion_power",
-          "terms": ["Autumn 1"],
+          "terms": [
+            "Autumn 1"
+          ],
           "shortTitle": "Crown, Church, or Parliament (1517–1689)",
           "summary": "Pupils investigate 170 years of religious conflict and constitutional struggle, from Henry VIII's Break with Rome and Elizabeth's Middle Way to the English Civil War, the trial and execution of Charles I, and the 1689 Bill of Rights.",
           "vocab": "Reformation, Act of Supremacy, Middle Way, Armada, Divine Right, Ship Money, New Model Army, Regicide, Bill of Rights",
-          "skills": ["Causation & Motivation", "Source Utility & Propaganda", "Historical Interpretations", "Significance & Turning Points", "Change & Continuity"],
+          "skills": [
+            "Causation & Motivation",
+            "Source Utility & Propaganda",
+            "Historical Interpretations",
+            "Significance & Turning Points",
+            "Change & Continuity"
+          ],
           "assessment": "Formative analytical responses and source investigations. Synoptic assessment: 'The World Turned Upside Down? To what extent did life and power in Britain truly change between 1517 and 1689?' (extended evaluative essay)",
           "smsc": "<strong>Spiritual:</strong> The Reformation and conscience vs state religion. <strong>Moral:</strong> Is rebellion or regicide against a king ever justified? <strong>Social:</strong> How power shifted to Parliament while leaving the poorest 90% behind.",
           "careers": "Constitutional Lawyer, Civil Servant, Parliamentary Researcher, Museum Educator"
         },
         {
           "uid": "first_british_empire",
-          "terms": ["Autumn 2"],
+          "terms": [
+            "Autumn 2"
+          ],
           "shortTitle": "The First British Empire (1600–1783)",
           "summary": "Pupils investigate the commercial and imperial foundations of British global expansion, examining the East India Company's conquest of Bengal, the brutality of the Transatlantic Slave Trade and Middle Passage, plantation reality and Maroon resistance under Queen Nanny, through to the American Revolution and the 1776 Declaration of Independence.",
           "vocab": "Charter, Diwani, Middle Passage, Chattel Slavery, Maroons, Navigation Acts, Boston Tea Party, Black Loyalists",
-          "skills": ["Causation & Consequence", "Source Utility & Provenance", "Historical Interpretations", "Significance"],
+          "skills": [
+            "Causation & Consequence",
+            "Source Utility & Provenance",
+            "Historical Interpretations",
+            "Significance"
+          ],
           "assessment": "Formative source investigations and retrieval drills. Synoptic essay: 'To what extent was the First British Empire built primarily upon the Transatlantic Slave Trade?'",
           "smsc": "<strong>Moral:</strong> Ethics of empire, enslavement, and resistance. <strong>Social:</strong> Impact of corporate conquest on Mughal Bengal and the Thirteen Colonies. <strong>Cultural:</strong> African resistance, cultural survival, and Black Loyalists.",
           "careers": "Archivist, Diplomat, Legal Historian, International Relations Analyst"
         },
         {
           "uid": "industrialisation_and_empire",
-          "terms": ["Spring 1"],
+          "terms": [
+            "Spring 1"
+          ],
           "shortTitle": "Industrialisation & Empire (1750–1900)",
           "summary": "Pupils investigate how industrialisation transformed Britain into the world's first industrial superpower and evaluate the human cost of factory life, urbanisation, and imperial expansion across the globe.",
           "vocab": "Industrial Revolution, Urbanisation, Child Labour, Imperialism, Chartism, Free Trade, Working Class",
-          "skills": ["Change & Continuity", "Source Analysis", "Comparative Judgement", "Extended Writing"],
+          "skills": [
+            "Change & Continuity",
+            "Source Analysis",
+            "Comparative Judgement",
+            "Extended Writing"
+          ],
           "assessment": "Formative source analysis and knowledge checks. Final assessment: \"Was the British Empire a force for good or harm?\" (extended judgement essay)",
           "smsc": "<strong>Social:</strong> Urbanisation, child labour, and inequality. <strong>Moral:</strong> Was Empire a force for good or exploitation? <strong>Cultural:</strong> Impact of industrialisation on working-class life and identity.",
           "careers": "Urban Planner, Economist, Politician, Museum Educator"
         },
         {
           "uid": "second_british_empire",
-          "terms": ["Spring 2"],
+          "terms": [
+            "Spring 2"
+          ],
           "shortTitle": "The Second British Empire (1783–1914)",
           "summary": "Pupils investigate the transformation of British imperial power in the 19th century, exploring the 1857 Indian Rebellion and direct Crown Raj, settler colonialism across Australasia, the Scramble for Africa, and the ideological justifications versus realities of imperial dominion.",
           "vocab": "Sepoy, Raj, Settler Colonialism, Terra Nullius, Scramble for Africa, Maxim Gun, Imperial Federation",
-          "skills": ["Change & Continuity", "Historical Interpretations", "Source Evaluation", "Comparative Judgement"],
+          "skills": [
+            "Change & Continuity",
+            "Historical Interpretations",
+            "Source Evaluation",
+            "Comparative Judgement"
+          ],
           "assessment": "Formative source evaluations and 25-question retrieval drill checks. Final extended enquiry: 'Who truly benefited from the Second British Empire?'",
           "smsc": "<strong>Moral:</strong> Evaluating imperial exploitation, military dominance, and racism. <strong>Social:</strong> The Indian Rebellion and colonial resistance. <strong>Cultural:</strong> Victorian imperial propaganda versus colonial realities.",
           "careers": "Diplomat, Human Rights Policy Advisor, Museum Curator, Journalist"
         },
         {
           "uid": "australia",
-          "terms": ["Summer 1", "Summer 2"],
+          "terms": [
+            "Summer 1",
+            "Summer 2"
+          ],
           "shortTitle": "The History of Australia (1770–1901)",
           "summary": "Pupils critically examine First Nations custodianship, Captain Cook's secret Admiralty voyage, the 1788 First Fleet penal colony, the devastating frontier wars and Pemulwuy’s armed resistance, the 1851 Gold Rush and Eureka Stockade, and the enduring fight for First Nations sovereignty and Native Title.",
           "vocab": "Terra Nullius, First Nations, Songlines, Transportation, Prison Hulk, Emancipist, Martial Law, Squatter, Eureka Stockade, White Australia Policy, Native Title",
-          "skills": ["Causation & Motive", "Source Utility & Perspective", "Causation & Turning Points", "Historical Interpretations", "Historical Significance"],
+          "skills": [
+            "Causation & Motive",
+            "Source Utility & Perspective",
+            "Causation & Turning Points",
+            "Historical Interpretations",
+            "Historical Significance"
+          ],
           "assessment": "Formative source analysis and 25-question retrieval drill checks. Synoptic evaluative statement essay: 'The discovery of gold and the Eureka Stockade were the most important turning points in 19th-century Australian history.' How far do you agree? [12 marks]",
           "smsc": "<strong>Cultural:</strong> Respect for 65,000 years of Indigenous heritage and Songlines. <strong>Moral:</strong> Legacies of penal transportation, terra nullius, and frontier warfare. <strong>Social:</strong> The birth of democracy at Eureka alongside the struggle for civil rights and Mabo.",
           "careers": "Human Rights Advocate, Anthropologist, Diplomat, Legal Historian, Museum Curator"
@@ -189,56 +385,92 @@
       "units": [
         {
           "uid": "great_war",
-          "terms": ["Autumn 1"],
-          "shortTitle": "Causes of the Great War (1870\u20131914)",
+          "terms": [
+            "Autumn 1"
+          ],
+          "shortTitle": "Causes of the Great War (1870–1914)",
           "summary": "Pupils analyse the complex web of long and short-term causes of the First World War, including militarism, imperialism, the alliance system, nationalism, and the assassination of Franz Ferdinand.",
           "vocab": "Militarism, Alliance System, Imperialism, Nationalism, Assassination, Schlieffen Plan, Arms Race",
-          "skills": ["Causation (Long & Short-term)", "Source Utility", "Historical Interpretations", "PEEL Paragraphs"],
+          "skills": [
+            "Causation (Long & Short-term)",
+            "Source Utility",
+            "Historical Interpretations",
+            "PEEL Paragraphs"
+          ],
           "assessment": "Formative source utility tasks throughout. Final assessment: \"Was the assassination of Franz Ferdinand the main cause of the First World War?\" (16-mark essay)",
-          "smsc": "<strong>Moral:</strong> Duty, sacrifice, and the ethics of warfare. <strong>Social:</strong> Impact of war on local communities \u2014 Stubbington's \"Lost Generation\". <strong>Cultural:</strong> War poetry, propaganda, and remembrance.",
+          "smsc": "<strong>Moral:</strong> Duty, sacrifice, and the ethics of warfare. <strong>Social:</strong> Impact of war on local communities — Stubbington's \"Lost Generation\". <strong>Cultural:</strong> War poetry, propaganda, and remembrance.",
           "careers": "Military Historian, Diplomat, Archivist, Journalist"
         },
         {
           "uid": "great_war_part2",
-          "terms": ["Autumn 2"],
-          "shortTitle": "The Great War (1914\u20131919)",
+          "terms": [
+            "Autumn 2"
+          ],
+          "shortTitle": "The Great War (1914–1919)",
           "summary": "Pupils investigate the lived experience of the trenches, challenge the \"Lions led by Donkeys\" debate, uncover the forgotten contributions of Empire troops, and evaluate the consequences of the Treaty of Versailles.",
           "vocab": "Trench Warfare, Attrition, Shell Shock, Somme, Treaty of Versailles, Conscription, Empire Troops",
-          "skills": ["Historical Interpretations", "Source Utility", "Evaluative Judgement", "Essay Writing"],
+          "skills": [
+            "Historical Interpretations",
+            "Source Utility",
+            "Evaluative Judgement",
+            "Essay Writing"
+          ],
           "assessment": "Final assessment: \"How far do you agree that the Treaty of Versailles made a second world war inevitable?\" (16-mark interpretations essay)",
           "smsc": "<strong>Moral:</strong> The \"Lions led by Donkeys\" debate. <strong>Social:</strong> Forgotten contributions of Empire soldiers. <strong>Cultural:</strong> Remembrance and collective memory.",
           "careers": "Military Historian, Diplomat, Archivist, Documentary Maker"
         },
         {
           "uid": "the_shoah",
-          "terms": ["Spring 1", "Spring 2"],
+          "terms": [
+            "Spring 1",
+            "Spring 2"
+          ],
           "shortTitle": "The Shoah & World War II",
           "summary": "Pupils study the deep roots of antisemitism, the escalating persecution under Nazi rule, and the systematic genocide of the Holocaust contextualised by the Second World War and Operation Barbarossa, developing an understanding of moral responsibility and remembrance.",
           "vocab": "Antisemitism, Pogrom, Nuremberg Laws, Kristallnacht, Ghetto, Einsatzgruppen, Final Solution",
-          "skills": ["Source Evaluation", "Causation", "Historical Significance", "Extended Writing"],
+          "skills": [
+            "Source Evaluation",
+            "Causation",
+            "Historical Significance",
+            "Extended Writing"
+          ],
           "assessment": "Analytical essay: \"How did ordinary people become perpetrators of genocide?\" Pupil Voice reflection exercise on Holocaust Memorial Day.",
           "smsc": "<strong>Moral:</strong> Profound reflection on genocide, prejudice, and human rights. <strong>Social:</strong> Bystander responsibility and moral courage. <strong>Spiritual:</strong> The Holocaust's impact on faith and human meaning.",
           "careers": "Human Rights Advocate, Educator, Ethics Adviser, Museum Curator"
         },
         {
           "uid": "cold_war",
-          "terms": ["Summer 1"],
+          "terms": [
+            "Summer 1"
+          ],
           "shortTitle": "The Cold War",
           "summary": "Pupils explore how the wartime alliance between the USA and USSR collapsed into ideological rivalry, examining key flashpoints from the Berlin Blockade to the Cuban Missile Crisis and the fall of the Berlin Wall.",
-          "vocab": "Capitalism, Communism, Iron Curtain, Proxy War, Nuclear Deterrence, Berlin Wall, D\u00e9tente",
-          "skills": ["Causation", "Consequence", "Source Utility", "Comparative Analysis"],
-          "assessment": "Formative knowledge checks and source tasks. Final assessment: \"Who was more to blame for the Cold War \u2014 the USA or the USSR?\" (extended judgement essay)",
+          "vocab": "Capitalism, Communism, Iron Curtain, Proxy War, Nuclear Deterrence, Berlin Wall, Détente",
+          "skills": [
+            "Causation",
+            "Consequence",
+            "Source Utility",
+            "Comparative Analysis"
+          ],
+          "assessment": "Formative knowledge checks and source tasks. Final assessment: \"Who was more to blame for the Cold War — the USA or the USSR?\" (extended judgement essay)",
           "smsc": "<strong>Moral:</strong> Ethics of nuclear deterrence and proxy wars. <strong>Social:</strong> Ideological division of the world. <strong>Cultural:</strong> The propaganda war, the space race, and cultural competition.",
           "careers": "Political Scientist, Intelligence Analyst, Diplomat, Journalist"
         },
         {
           "uid": "post_war_britain",
-          "terms": ["Summer 2"],
+          "terms": [
+            "Summer 2"
+          ],
           "shortTitle": "Rights, Protest & Post-War Britain",
-          "summary": "Pupils evaluate the transformation of Britain from 1945 to 2000 \u2014 from the creation of the Welfare State and the NHS to the Windrush generation and the ongoing struggle for equality and civil rights.",
+          "summary": "Pupils evaluate the transformation of Britain from 1945 to 2000 — from the creation of the Welfare State and the NHS to the Windrush generation and the ongoing struggle for equality and civil rights.",
           "vocab": "Welfare State, NHS, Windrush, Civil Rights, Feminist Movement, Deindustrialisation, Multicultural",
-          "skills": ["Change & Continuity", "Significance", "Source Analysis", "Extended Writing"],
-          "assessment": "Final assessment: \"How much did Britain change between 1945 and 2000?\" \u2014 a thematic extended writing response.",
+          "skills": [
+            "Change & Continuity",
+            "Significance",
+            "Source Analysis",
+            "Extended Writing"
+          ],
+          "assessment": "Final assessment: \"How much did Britain change between 1945 and 2000?\" — a thematic extended writing response.",
           "smsc": "<strong>Social:</strong> Creation of the Welfare State, Windrush, and multiculturalism. <strong>Moral:</strong> Equality, protest, and civil rights in post-war Britain. <strong>Cultural:</strong> Immigration and the evolution of British identity.",
           "careers": "Sociologist, Public Policy Analyst, Civil Servant, Teacher"
         }
@@ -246,26 +478,44 @@
     },
     {
       "year": "Year 10",
-      "ks": "Key Stage 4 \u2013 Edexcel GCSE History",
+      "ks": "Key Stage 4 – Edexcel GCSE History",
       "units": [
         {
           "uid": "cme_new",
-          "terms": ["Autumn 1", "Autumn 2", "Spring 1"],
-          "shortTitle": "Paper 2: Conflict in the Middle East (1945\u20131995)",
+          "terms": [
+            "Autumn 1",
+            "Autumn 2",
+            "Spring 1"
+          ],
+          "shortTitle": "Paper 2: Conflict in the Middle East (1945–1995)",
           "summary": "Pupils study the origins and escalation of the Arab-Israeli conflict from the end of the British Mandate to the Oslo Accords, analysing the wars of 1948, 1956, 1967, and 1973 and the search for peace.",
           "vocab": "Zionism, Mandate, Balfour Declaration, Intifada, PLO, Occupied Territories, Oslo Accords",
-          "skills": ["Consequence (4 marks)", "Narrative Account (8 marks)", "Importance (8 marks)", "GCSE Exam Technique"],
+          "skills": [
+            "Consequence (4 marks)",
+            "Narrative Account (8 marks)",
+            "Importance (8 marks)",
+            "GCSE Exam Technique"
+          ],
           "assessment": "Edexcel Paper 2 (Period Study) exam practice throughout: 4-mark consequence questions, 8-mark narrative accounts, and 8-mark importance questions. End of unit mock under timed conditions.",
           "smsc": "<strong>Moral:</strong> Ethics of partition, displacement, and military conflict. <strong>Social:</strong> Impact of prolonged war on civilian populations and refugees. <strong>Cultural:</strong> Religious and national identity in the Middle East.",
           "careers": "Diplomat, Foreign Correspondent, International Aid Worker, Political Analyst"
         },
         {
           "uid": "weimar_nazi_germany",
-          "terms": ["Spring 2", "Summer 1", "Summer 2"],
-          "shortTitle": "Paper 3: Weimar & Nazi Germany (1918\u201339)",
+          "terms": [
+            "Spring 2",
+            "Summer 1",
+            "Summer 2"
+          ],
+          "shortTitle": "Paper 3: Weimar & Nazi Germany (1918–39)",
           "summary": "Pupils analyse the rise and fall of the Weimar Republic, Hitler's consolidation of power, and the structures of the Nazi totalitarian state, developing skills to evaluate sources and historical interpretations.",
           "vocab": "Hyperinflation, Reichstag, Enabling Act, Gestapo, Propaganda, Kristallnacht, Autarky",
-          "skills": ["Source Inference (4 marks)", "Source Utility (8 marks)", "Interpretations (4+16+4 marks)", "GCSE Exam Technique"],
+          "skills": [
+            "Source Inference (4 marks)",
+            "Source Utility (8 marks)",
+            "Interpretations (4+16+4 marks)",
+            "GCSE Exam Technique"
+          ],
           "assessment": "Edexcel Paper 3 exam practice: 4-mark inference, 8-mark utility, and 16-mark (+4 SPaG) interpretations essays. End of unit timed mock assessment.",
           "smsc": "<strong>Moral:</strong> How democracy can be destroyed from within. <strong>Social:</strong> Impact of propaganda and totalitarianism on everyday society. <strong>Cultural:</strong> Weimar cultural revolution versus Nazi cultural control.",
           "careers": "Political Analyst, Human Rights Lawyer, Journalist, Educator"
@@ -274,40 +524,65 @@
     },
     {
       "year": "Year 11",
-      "ks": "Key Stage 4 \u2013 Edexcel GCSE History",
+      "ks": "Key Stage 4 – Edexcel GCSE History",
       "units": [
         {
           "uid": "edexcel_medicine",
-          "terms": ["Autumn 1", "Autumn 2", "Spring 1"],
+          "terms": [
+            "Autumn 1",
+            "Autumn 2",
+            "Spring 1"
+          ],
           "shortTitle": "Paper 1: Medicine Through Time",
           "summary": "Pupils study how ideas about the cause, prevention, and treatment of disease changed from the medieval period to the present day, and how the extreme conditions of the Western Front drove surgical innovation. Supported by the biannual GCSE Ypres Battlefield Tour (Years 10–11) investigating historic British sector dressing stations, casualty evacuation chains, and the Menin Gate.",
           "vocab": "Four Humours, Miasma, Vaccination, Germ Theory, Penicillin, Blood Transfusion, RAMC",
-          "skills": ["Features (2+2 marks)", "Source Utility (8 marks)", "Similarity/Difference (4 marks)", "Explain Why (12 marks)", "Essay (16 marks + SPaG)"],
+          "skills": [
+            "Features (2+2 marks)",
+            "Source Utility (8 marks)",
+            "Similarity/Difference (4 marks)",
+            "Explain Why (12 marks)",
+            "Essay (16 marks + SPaG)"
+          ],
           "assessment": "Edexcel Paper 1 exam practice throughout: Section A (Western Front features and source utility) and Section B (thematic similarity, causation, and judgement essays). End of unit timed mock: 16-mark essay.",
           "smsc": "<strong>Social:</strong> Government responsibility for public health then and now. <strong>Moral:</strong> Ethics of medical experimentation, vaccination, and battlefield triage. <strong>Cultural:</strong> Collective memory, the Ypres Salient, and commemoration at the Menin Gate.",
           "careers": "Doctor, Medical Researcher, Public Health Policy Maker, Pharmacist"
         },
         {
           "uid": "eee",
-          "terms": ["Spring 2", "Summer 1"],
-          "shortTitle": "Paper 2: Early Elizabethan England (1558\u201388)",
-          "summary": "Pupils examine the political, religious, and social challenges Elizabeth I faced \u2014 from the religious settlement and Catholic plots to the threat of the Spanish Armada \u2014 and evaluate her success as a monarch.",
+          "terms": [
+            "Spring 2",
+            "Summer 1"
+          ],
+          "shortTitle": "Paper 2: Early Elizabethan England (1558–88)",
+          "summary": "Pupils examine the political, religious, and social challenges Elizabeth I faced — from the religious settlement and Catholic plots to the threat of the Spanish Armada — and evaluate her success as a monarch.",
           "vocab": "Religious Settlement, Puritan, Recusant, Mary Queen of Scots, Spanish Armada, Privateer, Poor Law",
-          "skills": ["Features (2+2 marks)", "Explain Why (12 marks)", "Judgement Essay (16 marks)", "GCSE Exam Technique"],
+          "skills": [
+            "Features (2+2 marks)",
+            "Explain Why (12 marks)",
+            "Judgement Essay (16 marks)",
+            "GCSE Exam Technique"
+          ],
           "assessment": "Edexcel Paper 2 (British Depth Study) exam practice: Q1(a)&(b) 2-mark feature questions, Q2 12-mark causation, and Q3 16-mark judgement essay. End of unit timed mock.",
           "smsc": "<strong>Spiritual:</strong> Religious conflict and the Elizabethan Religious Settlement. <strong>Cultural:</strong> Elizabethan theatre, maritime exploration, and court culture. <strong>Social:</strong> Poverty, vagrancy, and Elizabethan social control.",
           "careers": "Heritage Consultant, Historian, Teacher, Lawyer"
         },
         {
           "uid": "_revision",
-          "terms": ["Summer 2"],
+          "terms": [
+            "Summer 2"
+          ],
           "shortTitle": "GCSE Revision & Examinations",
           "summary": "Targeted revision across all three papers using past papers, walking-talking mocks, and bespoke exam technique workshops.",
           "vocab": null,
-          "skills": ["Timed exam practice", "Source inference and utility", "Extended writing", "Self-assessment using mark schemes"],
+          "skills": [
+            "Timed exam practice",
+            "Source inference and utility",
+            "Extended writing",
+            "Self-assessment using mark schemes"
+          ],
           "assessment": "Full timed mocks across Paper 1, 2, and 3. Walking-talking mock sessions and targeted one-to-one intervention.",
           "smsc": "Resilience, self-regulation, growth mindset, and managing exam pressure.",
-          "careers": "All career pathways \u2014 analytical thinking, written communication, and structured argument are transferable skills for any profession."
+          "careers": "All career pathways — analytical thinking, written communication, and structured argument are transferable skills for any profession."
         }
       ]
     }

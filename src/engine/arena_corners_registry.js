@@ -39,6 +39,10 @@ import { KS2_ANCIENT_EGYPT_CORNERS } from './arena_corners/ks2_ancient_egypt.js'
 import { KS2_ANCIENT_GREECE_CORNERS } from './arena_corners/ks2_ancient_greece.js';
 import { KS2_EARLY_ISLAMIC_BAGHDAD_CORNERS } from './arena_corners/ks2_early_islamic_baghdad.js';
 import { KS2_MAYA_CIVILISATION_CORNERS } from './arena_corners/ks2_maya_civilisation.js';
+import { KS2_CRIME_AND_PUNISHMENT_CORNERS } from './arena_corners/ks2_crime_and_punishment.js';
+import { KS2_KINGDOM_OF_BENIN_CORNERS } from './arena_corners/ks2_kingdom_of_benin.js';
+import { KS2_VICTORIAN_BRITAIN_CORNERS } from './arena_corners/ks2_victorian_britain.js';
+import { KS2_LOCAL_HISTORY_DETECTIVE_CORNERS } from './arena_corners/ks2_local_history_detective.js';
 
 export const ARENA_CORNERS_REGISTRY = {
   cme_new: CME_NEW_CORNERS,
@@ -67,6 +71,10 @@ export const ARENA_CORNERS_REGISTRY = {
   ks2_ancient_greece: KS2_ANCIENT_GREECE_CORNERS,
   ks2_early_islamic_baghdad: KS2_EARLY_ISLAMIC_BAGHDAD_CORNERS,
   ks2_maya_civilisation: KS2_MAYA_CIVILISATION_CORNERS,
+  ks2_crime_and_punishment: KS2_CRIME_AND_PUNISHMENT_CORNERS,
+  ks2_kingdom_of_benin: KS2_KINGDOM_OF_BENIN_CORNERS,
+  ks2_victorian_britain: KS2_VICTORIAN_BRITAIN_CORNERS,
+  ks2_local_history_detective: KS2_LOCAL_HISTORY_DETECTIVE_CORNERS,
 };
 
 /**

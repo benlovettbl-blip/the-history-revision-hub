@@ -1,0 +1,133 @@
+export default {
+  id: 'ocr_cleopatra',
+  title: 'OCR Paper 2: Cleopatra — Rome and Egypt, 69–30 BC',
+  subtitle: 'OCR GCSE (9–1) Ancient History • J198/02 Section C (Roman Depth Study)',
+  enquiry:
+    'Astute multilingual pharaoh or Augustan propaganda monster — how accurately do our prescribed Roman texts and Egyptian coins portray Cleopatra VII?',
+  enquiry_question:
+    'Astute multilingual pharaoh or Augustan propaganda monster — how accurately do our prescribed Roman texts and Egyptian coins portray Cleopatra VII?',
+  period: '69–30 BC',
+  edition: 'OCR GCSE Ancient History (J198/02 Section C)',
+  category: 'GCSE',
+  keyStage: 'GCSE',
+  key_stage: 'GCSE',
+  yearGroup: 'GCSE (9–1)',
+  year_group: 'GCSE (9–1)',
+  exam_board: 'OCR_J198',
+  is_ocr_depth_study: true,
+  paper_code: 'J198/02 Section C',
+  specification_file: '/data/specifications/ocr_j198_cleopatra.json',
+  desc: 'OCR J198/02 (Section C)',
+  icon: 'fa-ankh',
+  color: '#7c3aed',
+  bg: 'rgba(124, 58, 237, 0.1)',
+  cover_image: '/images/ocr_ancient/cleopatra_cover_berlin_bust.jpg',
+  cover_caption:
+    'Marble portrait bust of Queen Cleopatra VII Philopator wearing the royal Hellenistic diadem (c. 40–30 BC, Altes Museum, Berlin).',
+  homepage_background: '/images/ocr_ancient/cleopatra_cover_berlin_bust.jpg',
+  groupings: [
+    {
+      prefix: 'KT1',
+      name: 'Key Topic 1: Cleopatra’s Upbringing, Ptolemaic Alexandria and Accession, 69–49 BC',
+      color: '#92400e',
+      bg: '#fffbeb',
+      border: '#d97706',
+      icon: 'fa-crown',
+    },
+    {
+      prefix: 'KT2',
+      name: 'Key Topic 2: Cleopatra and Julius Caesar — Alliance, Caesarion and Rome, 48–44 BC',
+      color: '#991b1b',
+      bg: '#fef2f2',
+      border: '#ef4444',
+      icon: 'fa-landmark',
+    },
+    {
+      prefix: 'KT3',
+      name: 'Key Topic 3: Cleopatra and Mark Antony — Tarsus to the Donations of Alexandria, 42–34 BC',
+      color: '#5b21b6',
+      bg: '#f5f3ff',
+      border: '#8b5cf6',
+      icon: 'fa-gem',
+    },
+    {
+      prefix: 'KT4',
+      name: 'Key Topic 4: Propaganda War, Battle of Actium and Suicide in Alexandria, 33–30 BC',
+      color: '#0369a1',
+      bg: '#f0f9ff',
+      border: '#0ea5e9',
+      icon: 'fa-water',
+    },
+  ],
+  ancient_authors: [
+    {
+      id: 'plutarch_antony',
+      name: 'Plutarch (Lives of Caesar & Mark Antony)',
+      dates: 'c. AD 46–c. 120',
+      time_gap: 'Wrote ~130–145 years after Cleopatra’s death',
+      genre: 'Moral Biography (Prescribed Set Text: Caesar 48–49; Antony 24–37, 51, 53–79, 81–86)',
+      language: 'Koine Greek',
+      strengths:
+        'Used eyewitness testimony from his own great-grandfather Nicarchus and Cleopatra’s physician Olympus; praises Cleopatra’s wit, nine languages, and golden Tarsus barge.',
+      limitations:
+        'Frames Antony’s career as a moral tragedy of a noble Roman general enslaved by Eastern luxury and passion.',
+      examiner_trap_warning:
+        '2025 Examiner Report Warning: NEVER use TikTok slang ("gaslighter", "toxic", "simp") or call Caesarion "heir to the Roman throne" (Rome was a Republic that hated kings!).',
+    },
+    {
+      id: 'augustan_poets_coins',
+      name: 'Horace, Virgil, Velleius, Suetonius, Dio & Contemporary Coinage',
+      dates: '30s BC–3rd Century AD',
+      time_gap: 'Contemporary Augustan poetry & coinage to imperial Roman history',
+      genre: 'Augustan Triumphal Poetry (Horace Odes 1.37; Virgil Aeneid 8.675–713) vs Ptolemaic/Antonian Coins',
+      language: 'Latin & Greek',
+      strengths:
+        'Cleopatra’s own Egyptian bronze Isis coin (with baby Caesarion) and the 32 BC Antony/Cleopatra silver denarius show how she presented herself before Actium—directly countering hostile Roman stereotypes.',
+      limitations:
+        'Horace and Virgil wrote directly under Octavian/Augustus’ patronage to celebrate Actium as a civilizational war of Roman gods against monstrous Egyptian Anubis and a "fatale monstrum".',
+      examiner_trap_warning:
+        'On Q15* (20m), always contrast hostile Augustan literary set texts against Cleopatra’s contemporary coins and Dendera/Egyptian ideology!',
+    },
+  ],
+  key_individuals: [
+    {
+      id: 'cleopatra_vii',
+      name: 'Queen Cleopatra VII Philopator',
+      role: 'Last Ptolemaic Pharaoh of Egypt (r. 51–30 BC)',
+      lifespan: '69–30 BC',
+      entity_type: 'person',
+      image: '/images/ocr_ancient/cleopatra_cover_berlin_bust.jpg',
+      achievements: [
+        'First Ptolemaic monarch in 250 years to learn the Egyptian language alongside eight other tongues; revered by Egyptians as the living goddess Isis.',
+        'Secured Egypt’s independence and grain prosperity through strategic alliances with Julius Caesar (bearing Ptolemy XV Caesarion, 47 BC) and Mark Antony (recovering Cyprus, Cilicia, and Coele-Syria).',
+        'Commanded sixty Egyptian warships at Actium (31 BC) and chose royal suicide in Alexandria (August 30 BC) rather than march in chains in Octavian’s Roman triumph.',
+      ],
+      significance:
+        'Maintained Ptolemaic Egypt as the last independent Hellenistic kingdom in the Mediterranean for two decades against Roman annexation.',
+      exam_distinction:
+        'Separate Cleopatra’s pragmatic Eastern dynastic statecraft from Octavian’s Roman senate propaganda.',
+    },
+  ],
+  lessons: [
+    {
+      id: 'lesson_1_1',
+      is_placeholder: true,
+      key_topic: 'KT1',
+      prefix: 'KT 1',
+      title: 'KT 1.1: Ptolemaic Alexandria, Ptolemy XII Auletes and Cleopatra’s Accession, 69–49 BC',
+      period: '69–49 BC',
+      enquiry:
+        'Course Shell Ready (Wave 2 Authoring Queue): Full verbatim OCR J198/02 Section C specification checklist, Exam Blueprint, and Sources & Authors Vault are live above!',
+      enquiryQuestion:
+        'How did Ptolemaic family bloodshed, Egyptian Isis-worship, and Roman debt shape Cleopatra VII’s accession in 51 BC?',
+      card_image: '/images/ocr_ancient/cleopatra_cover_berlin_bust.jpg',
+      narrative_blocks: [
+        {
+          act: 1,
+          heading: 'Wave 2 Course Shell — Ready for Full 12-Lesson Build',
+          text: 'Placeholder: Cleopatra: Rome and Egypt (J198/02 Section C, 69–30 BC) is wired into the OCR Ancient History Exam & Spec Hub, Specification Word-Lock Registry, and Sources & Authors Vault, ready for Wave 2 lesson generation once you review the Persian Empire and Alexander prototypes.',
+        },
+      ],
+    },
+  ],
+};

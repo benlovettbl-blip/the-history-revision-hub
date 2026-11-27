@@ -1096,17 +1096,6 @@ export default {
         },
         {
           "type": "youtube",
-          "id": "YacizJRW4WI",
-          "url": "https://www.youtube.com/watch?v=YacizJRW4WI",
-          "title": "The Mill (2013) | Official Series Trailer (Channel 4)",
-          "duration": "1 mins 01 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–01:01 | Lesson Phase: Factory Life & Child Apprentices | Tone Alert: Gritty historical drama based on real records of pauper apprentice children working at Quarry Bank Mill in Cheshire.",
-          "viewing_task": "[00:30] Factory Realities: What hazards and working conditions faced young pauper apprentices working 14-hour shifts in early mechanized cotton mills?",
-          "model_answer": "Apprentices endured relentless machine pace, deafening noise, airborne cotton fibres causing lung disease, and severe physical danger of limbs being crushed under unguarded spinning mules."
-        },
-        {
-          "type": "youtube",
           "id": "SfpKDkJrH_s",
           "url": "https://www.youtube.com/watch?v=SfpKDkJrH_s",
           "title": "David Olusoga: Manchester's Cotton Boom & Links to Plantation Slavery | The Guardian",
@@ -2955,17 +2944,6 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:30–06:00 | Lesson Phase: Factory Discipline | Tone Alert: Examines Richard Arkwright's Cromford Mill and the transition from cottage industry to clock-time discipline.",
           "viewing_task": "[01:20] Recall: How did Richard Arkwright's water frame mechanize yarn spinning in 1769?\n[03:10] Explain: How did factory discipline transform human concepts of time from natural seasonal rhythms into rigid factory clock time?\n[05:00] Challenge: How did parliamentary Factory Acts (1833, 1847) gradually establish state regulation over unregulated laissez-faire capitalism?",
           "model_answer": "Recall: It used spinning rollers powered by a waterwheel to produce strong, consistent cotton warp yarn on an unprecedented industrial scale.\nExplain: Workers who previously controlled their own work pace in cottage workshops were subjected to strict factory bells, 14-hour shifts, fines for lateness, and dismissal for speaking.\nChallenge: The 1833 Act banned children under nine and limited hours, introducing the first government factory inspectors and establishing the principle that the state had a moral duty to restrict unrestricted corporate exploitation."
-        },
-        {
-          "id": "Ry2ULl8osu4",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Ry2ULl8osu4",
-          "title": "Oliver Twist (2005) | Official Trailer (Roman Polanski / Ben Kingsley)",
-          "duration": "2 mins 10 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:10 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Dickensian depiction of workhouse labour, child poverty, and London underworld.",
-          "viewing_task": "[01:00] Cinematic Discussion Focus: How does Polanski visually portray the sensory deprivation, cruelty, and hunger of the Victorian workhouse system?",
-          "model_answer": "Cinematic Discussion Focus: The trailer contrasts cold stone walls, uniform workhouse smocks, and meager gruel with the corpulent, well-fed board members, dramatizing Charles Dickens' fierce critique of the 1834 Poor Law."
         },
         {
           "id": "87eVOpbcoVo",
@@ -5984,17 +5962,6 @@ export default {
           "model_answer": "Recall: A radical orator campaigning for universal male suffrage, annual parliaments, and repeal of the Corn Laws.\nExplain: Magistrates panicked when the enormous crowd cheered Hunt, ordering cavalry to arrest him; the horses charged into the tightly packed crowd, hacking down civilians with sabres (killing 18 and injuring over 600).\nChallenge: Instead of expressing remorse, the government congratulated the magistrates and passed the Six Acts, outlawing meetings of more than 50 people, taxing newspapers, and speeding up treason trials to crush dissent."
         },
         {
-          "id": "Dj5h1kKjVYc",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Dj5h1kKjVYc",
-          "title": "Peterloo (2018) | Official Movie Trailer",
-          "duration": "1 min 22 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–01:22 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Mike Leigh's masterpiece capturing the speeches and the tragic sabre charge.",
-          "viewing_task": "[01:20] Cinematic Discussion Focus: How does the film capture the dignified, peaceful optimism of the working people marching to Manchester before the violence erupts?",
-          "model_answer": "Cinematic Discussion Focus: The film emphasizes peaceful solidarity: families walking together, white Sunday dresses, musical bands, and hand-embroidered banners proclaiming 'Liberty and Fraternity', making the sudden, brutal cavalry charge all the more shocking."
-        },
-        {
           "id": "mWucd5tXlqY",
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=mWucd5tXlqY",
@@ -7491,17 +7458,6 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:15–02:20 | Lesson Phase: Constitutional Reform | Tone Alert: Expert archival breakdown of Earl Grey's legislation.",
           "viewing_task": "[00:50] Recall: What was a 'rotten borough', and how many were disenfranchised by the 1832 Reform Act?\n[01:30] Explain: How did the 1832 Act enfranchise the new industrial middle class (factory owners, merchants, professionals)?\n[02:10] Challenge: Why did working-class reformers view the 1832 Reform Act as a bitter betrayal?",
           "model_answer": "Recall: Depopulated boroughs with tiny electorates controlled by wealthy landlords; 56 rotten boroughs were abolished.\nExplain: It granted parliamentary seats to booming industrial towns like Manchester, Leeds, and Birmingham, and gave the vote to men owning property worth £10 a year.\nChallenge: The strict £10 property qualification still excluded working-class men whose mass protests had pressured the House of Lords to pass the bill, prompting them to launch the Chartist movement."
-        },
-        {
-          "id": "Y4jBXQM7mIk",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Y4jBXQM7mIk",
-          "title": "Suffragette (2015) | Official Trailer (Focus Features / Carey Mulligan)",
-          "duration": "2 mins 41 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:32 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Powerful dramatisation of the militant WSPU campaign for women's suffrage.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film portray the decision of working-class women like Maud Watts to turn to militant direct action ('deeds, not words')?",
-          "model_answer": "Cinematic Discussion Focus: The trailer dramatizes how decades of peaceful lobbying had been ignored by politicians, driving women to hunger strikes, window-smashing, and civil disobedience to force Parliament to grant equal voting rights."
         },
         {
           "id": "js_Kab5C2xI",

@@ -1,0 +1,917 @@
+{
+  "unitId": "ocr_foundations_of_rome",
+  "optionCode": "J198/02 Sec A",
+  "paperLabel": "OCR Paper 2 · Section A (Compulsory Period Study)",
+  "courseTitle": "The Foundations of Rome: From Kingship to Republic, 753–440 BC",
+  "examDateBoundary": "753–440 BC",
+  "disclaimer": "Aligned to Cambridge OCR GCSE (9–1) Ancient History (J198). Independent educational resource by The History Revision Hub — not endorsed by OCR.",
+  "rescueTop10": [
+    {
+      "year": "753 BC",
+      "event": "Legendary Founding of Rome by Romulus",
+      "significance": "Palatine fortifications, Asylum, Sabine women, 100 Senators, and patron-client system vs Iron Age hut post-holes."
+    },
+    {
+      "year": "715–642 BC",
+      "event": "Numa Pompilius & Tullus Hostilius",
+      "significance": "Numa establishes Vestals, Pontiffs, and Temple of Janus; Tullus wins Horatii duel and destroys Alba Longa."
+    },
+    {
+      "year": "616–579 BC",
+      "event": "Tarquinius Priscus & Etruscan Urbanisation",
+      "significance": "Drains Forum via Cloaca Maxima, lays out Circus Maximus, and expands Senate."
+    },
+    {
+      "year": "578–535 BC",
+      "event": "Servius Tullius’ Census & Centuriate Reforms",
+      "significance": "Reorganises citizens by wealth into Comitia Centuriata, urban tribes, Servian Walls, and Diana temple."
+    },
+    {
+      "year": "534–509 BC",
+      "event": "Tyranny of Tarquinius Superbus & Lucretia",
+      "significance": "Murders Servius, builds Jupiter Capitolinus temple, and falls in 509 BC after Sextus assaults Lucretia."
+    },
+    {
+      "year": "509–496 BC",
+      "event": "Birth of Republic, Lars Porsenna & Lake Regillus",
+      "significance": "Brutus & Collatinus become first consuls; survive Porsenna of Clusium and Latin League at Lake Regillus."
+    },
+    {
+      "year": "494 BC",
+      "event": "First Plebeian Secession to Mons Sacer",
+      "significance": "Debt bondage (nexum) drives plebeian walkout; Menenius Agrippa negotiates sacrosanct Tribunes of the Plebs."
+    },
+    {
+      "year": "471 BC",
+      "event": "Volero Publilius’ Reforms (Lex Publilia)",
+      "significance": "Transfers election of plebeian tribunes to the Tribal Assembly (Concilium Plebis), curbing patrician interference."
+    },
+    {
+      "year": "451–449 BC",
+      "event": "Decemvirate, Twelve Tables & Second Secession",
+      "significance": "Written Twelve Tables codified, but Appius Claudius’ tyranny (Verginia) sparks the Second Secession."
+    },
+    {
+      "year": "449–445 BC",
+      "event": "Valerio-Horatian Laws & Lex Canuleia",
+      "significance": "Restores appeal, makes plebiscita binding, and Lex Canuleia (445 BC) legalises patrician-plebeian intermarriage."
+    }
+  ],
+  "keyTopics": [
+    {
+      "id": "kt1",
+      "number": 1,
+      "title": "Key Time Span 1: The legendary kings: Origins of Rome, 753–616 BC",
+      "dateFence": "753–440 BC",
+      "outsideFenceWarning": "Stay focused inside 753–440 BC (J198/02 Sec A — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt1_1",
+          "code": "1.1",
+          "title": "1.1 Aeneas, Romulus and Archaeological Origins",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt1_1_a1",
+              "title": "The Aeneas and Romulus foundation myths",
+              "dateTag": "KT 1.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The Aeneas and Romulus foundation myths\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The Aeneas and Romulus foundation myths.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The Aeneas and Romulus foundation myths\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Aeneas"
+            },
+            {
+              "id": "kt1_1_a2",
+              "title": "The nature and origin of the historical evidence for this period, including archaeological and geographical issues",
+              "dateTag": "KT 1.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The nature and origin of the historical evidence for this period, including archaeological and geographical issues\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The nature and origin of the historical evidence for this period, including archaeological and geographical issues.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The nature and origin of the historical evidence for this period, including archaeological and geographical issues\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "nature"
+            }
+          ]
+        },
+        {
+          "id": "kt1_2",
+          "code": "1.2",
+          "title": "1.2 Romulus' Institutions, Sabines, Senate and Army",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt1_2_a1",
+              "title": "Romulus' political initiatives; Rome's relationship with the Sabines; the role of the Senate; Romulus' death",
+              "dateTag": "KT 1.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Romulus' political initiatives; Rome's relationship with the Sabines; the role of the Senate; Romulus' death\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Romulus' political initiatives; Rome's relationship with the Sabines; the role of the Senate; Romulus' death.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Romulus' political initiatives; Rome's relationship with the Sabines; the role of the Senate; Romulus' death\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Romulus'"
+            },
+            {
+              "id": "kt1_2_a2",
+              "title": "Romulus' religious initiatives",
+              "dateTag": "KT 1.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Romulus' religious initiatives\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Romulus' religious initiatives.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Romulus' religious initiatives\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Romulus'"
+            },
+            {
+              "id": "kt1_2_a3",
+              "title": "Romulus' organisation of the Roman army; Romulus' conflicts with neighbouring communities",
+              "dateTag": "KT 1.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Romulus' organisation of the Roman army; Romulus' conflicts with neighbouring communities\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Romulus' organisation of the Roman army; Romulus' conflicts with neighbouring communities.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Romulus' organisation of the Roman army; Romulus' conflicts with neighbouring communities\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Romulus'"
+            }
+          ]
+        },
+        {
+          "id": "kt1_3",
+          "code": "1.3",
+          "title": "1.3 Numa Pompilius, Tullus Hostilius and Ancus Marcius",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt1_3_a1",
+              "title": "The succession of Numa; Numa's diplomacy and religious policies; Numa's religious reforms",
+              "dateTag": "KT 1.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The succession of Numa; Numa's diplomacy and religious policies; Numa's religious reforms\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The succession of Numa; Numa's diplomacy and religious policies; Numa's religious reforms.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The succession of Numa; Numa's diplomacy and religious policies; Numa's religious reforms\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "succession"
+            },
+            {
+              "id": "kt1_3_a2",
+              "title": "The legal system in the reign of Tullus Hostilius; Tullus Hostilius' conflict with Alba Longa",
+              "dateTag": "KT 1.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The legal system in the reign of Tullus Hostilius; Tullus Hostilius' conflict with Alba Longa\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The legal system in the reign of Tullus Hostilius; Tullus Hostilius' conflict with Alba Longa.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The legal system in the reign of Tullus Hostilius; Tullus Hostilius' conflict with Alba Longa\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "legal"
+            },
+            {
+              "id": "kt1_3_a3",
+              "title": "Ancus Marcius' expansion of Rome",
+              "dateTag": "KT 1.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Ancus Marcius' expansion of Rome\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Ancus Marcius' expansion of Rome.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Ancus Marcius' expansion of Rome\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Ancus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt2",
+      "number": 2,
+      "title": "Key Time Span 2: The Etruscan kings, 616–509 BC",
+      "dateFence": "753–440 BC",
+      "outsideFenceWarning": "Stay focused inside 753–440 BC (J198/02 Sec A — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt2_1",
+          "code": "2.1",
+          "title": "2.1 Tarquinius Priscus, Urban Rome and Etruscan Power",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt2_1_a1",
+              "title": "The manner in which each monarch gained power; the methods adopted by the Etruscan Kings to secure their power",
+              "dateTag": "KT 2.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The manner in which each monarch gained power; the methods adopted by the Etruscan Kings to secure their power\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The manner in which each monarch gained power; the methods adopted by the Etruscan Kings to secure their power.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The manner in which each monarch gained power; the methods adopted by the Etruscan Kings to secure their power\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "manner"
+            },
+            {
+              "id": "kt2_1_a2",
+              "title": "The development of the city of Rome; the importance of the Tarquin's personal wealth in gaining popularity",
+              "dateTag": "KT 2.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The development of the city of Rome; the importance of the Tarquin's personal wealth in gaining popularity\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The development of the city of Rome; the importance of the Tarquin's personal wealth in gaining popularity.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The development of the city of Rome; the importance of the Tarquin's personal wealth in gaining popularity\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "development"
+            },
+            {
+              "id": "kt2_1_a3",
+              "title": "The political and economic significance of Tarquinius Priscus' victories",
+              "dateTag": "KT 2.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The political and economic significance of Tarquinius Priscus' victories\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The political and economic significance of Tarquinius Priscus' victories.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The political and economic significance of Tarquinius Priscus' victories\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "political"
+            }
+          ]
+        },
+        {
+          "id": "kt2_2",
+          "code": "2.2",
+          "title": "2.2 Servius Tullius: Omens, Reforms and Army Reorganisation",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt2_2_a1",
+              "title": "Servius Tullius' reforms; the influence of omens ascribed to Servius Tullius",
+              "dateTag": "KT 2.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Servius Tullius' reforms; the influence of omens ascribed to Servius Tullius\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Servius Tullius' reforms; the influence of omens ascribed to Servius Tullius.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Servius Tullius' reforms; the influence of omens ascribed to Servius Tullius\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Servius"
+            },
+            {
+              "id": "kt2_2_a2",
+              "title": "Reorganisation of the army; the political and economic significance of Servius Tullius' victories",
+              "dateTag": "KT 2.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Reorganisation of the army; the political and economic significance of Servius Tullius' victories\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Reorganisation of the army; the political and economic significance of Servius Tullius' victories.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Reorganisation of the army; the political and economic significance of Servius Tullius' victories\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Reorganisation"
+            }
+          ]
+        },
+        {
+          "id": "kt2_3",
+          "code": "2.3",
+          "title": "2.3 Tyranny of Tarquinius Superbus and Evidence for the Etruscan Era",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt2_3_a1",
+              "title": "The tyranny of Tarquinius Superbus; the impact of Tarquinius Superbus' military record",
+              "dateTag": "KT 2.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The tyranny of Tarquinius Superbus; the impact of Tarquinius Superbus' military record\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The tyranny of Tarquinius Superbus; the impact of Tarquinius Superbus' military record.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The tyranny of Tarquinius Superbus; the impact of Tarquinius Superbus' military record\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "tyranny"
+            },
+            {
+              "id": "kt2_3_a2",
+              "title": "The nature and origin of the historical evidence for this period, including both the literary and archaeological sources",
+              "dateTag": "KT 2.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The nature and origin of the historical evidence for this period, including both the literary and archaeological sources\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The nature and origin of the historical evidence for this period, including both the literary and archaeological sources.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The nature and origin of the historical evidence for this period, including both the literary and archaeological sources\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "nature"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt3",
+      "number": 3,
+      "title": "Key Time Span 3: Origins of the Republic, 509–494 BC",
+      "dateFence": "753–440 BC",
+      "outsideFenceWarning": "Stay focused inside 753–440 BC (J198/02 Sec A — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt3_1",
+          "code": "3.1",
+          "title": "3.1 Expulsion of Superbus, Consulship and Senate",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt3_1_a1",
+              "title": "The removal of Tarquinius Superbus; the creation of the early Republic including the development of the Consulship and the Senate",
+              "dateTag": "KT 3.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The removal of Tarquinius Superbus; the creation of the early Republic including the development of the Consulship and the Senate\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The removal of Tarquinius Superbus; the creation of the early Republic including the development of the Consulship and the Senate.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The removal of Tarquinius Superbus; the creation of the early Republic including the development of the Consulship and the Senate\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "removal"
+            }
+          ]
+        },
+        {
+          "id": "kt3_2",
+          "code": "3.2",
+          "title": "3.2 Silva Arsia, Lars Porsena and Lake Regillus",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt3_2_a1",
+              "title": "Military challenges to the early Republic and the Roman response, including the Battle of Silva Arsia, the invasion of Lars Porsena and the Battle of Lake Regillus",
+              "dateTag": "KT 3.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Military challenges to the early Republic and the Roman response, including the Battle of Silva Arsia, the invasion of Lars Porsena and the Battle of Lake Regillus\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Military challenges to the early Republic and the Roman response, including the Battle of Silva Arsia, the invasion of Lars Porsena and the Battle of Lake Regillus.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Military challenges to the early Republic and the Roman response, including the Battle of Silva Arsia, the invasion of Lars Porsena and the Battle of Lake Regillus\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Military"
+            }
+          ]
+        },
+        {
+          "id": "kt3_3",
+          "code": "3.3",
+          "title": "3.3 Patrician-Plebeian Tensions and Early Republican Evidence",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt3_3_a1",
+              "title": "Impact of the foundation of the Republic upon the plebeian and patrician class, in particular the tensions developing between the two groups",
+              "dateTag": "KT 3.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Impact of the foundation of the Republic upon the plebeian and patrician class, in particular the tensions developing between the two groups\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Impact of the foundation of the Republic upon the plebeian and patrician class, in particular the tensions developing between the two groups.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Impact of the foundation of the Republic upon the plebeian and patrician class, in particular the tensions developing between the two groups\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Impact"
+            },
+            {
+              "id": "kt3_3_a2",
+              "title": "The nature and origin of the historical evidence for this period",
+              "dateTag": "KT 3.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The nature and origin of the historical evidence for this period\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The nature and origin of the historical evidence for this period.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The nature and origin of the historical evidence for this period\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "nature"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kt4",
+      "number": 4,
+      "title": "Key Time Span 4: Securing the Republic, 494–440 BC",
+      "dateFence": "753–440 BC",
+      "outsideFenceWarning": "Stay focused inside 753–440 BC (J198/02 Sec A — zero AO4 modern historians!).",
+      "subTopics": [
+        {
+          "id": "kt4_1",
+          "code": "4.1",
+          "title": "4.1 Sicinius, First Secession and Plebeian Soldier Leverage",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt4_1_a1",
+              "title": "The development of Plebeian influence on government; Sicinius and the First Secession of the Plebeians",
+              "dateTag": "KT 4.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The development of Plebeian influence on government; Sicinius and the First Secession of the Plebeians\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The development of Plebeian influence on government; Sicinius and the First Secession of the Plebeians.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The development of Plebeian influence on government; Sicinius and the First Secession of the Plebeians\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "development"
+            },
+            {
+              "id": "kt4_1_a2",
+              "title": "Change and continuity in patrician and plebeian lives; the power of the patricians relative to the plebeians; problems facing the plebeian class",
+              "dateTag": "KT 4.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"Change and continuity in patrician and plebeian lives; the power of the patricians relative to the plebeians; problems facing the plebeian class\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: Change and continuity in patrician and plebeian lives; the power of the patricians relative to the plebeians; problems facing the plebeian class.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"Change and continuity in patrician and plebeian lives; the power of the patricians relative to the plebeians; problems facing the plebeian class\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Change"
+            },
+            {
+              "id": "kt4_1_a3",
+              "title": "The military implications of the plebeian revolts and the role of soldiers in those revolts; impact of war upon Roman politics",
+              "dateTag": "KT 4.1",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The military implications of the plebeian revolts and the role of soldiers in those revolts; impact of war upon Roman politics\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The military implications of the plebeian revolts and the role of soldiers in those revolts; impact of war upon Roman politics.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The military implications of the plebeian revolts and the role of soldiers in those revolts; impact of war upon Roman politics\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "military"
+            }
+          ]
+        },
+        {
+          "id": "kt4_2",
+          "code": "4.2",
+          "title": "4.2 Volero Publilius (471 BC) and the Appius Claudius Family",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt4_2_a1",
+              "title": "The Volero Publilius uprising and the reforms of 471",
+              "dateTag": "KT 4.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The Volero Publilius uprising and the reforms of 471\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The Volero Publilius uprising and the reforms of 471.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The Volero Publilius uprising and the reforms of 471\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Volero"
+            },
+            {
+              "id": "kt4_2_a2",
+              "title": "The impact of Appius Claudius and his family upon patrician and plebeian relations",
+              "dateTag": "KT 4.2",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The impact of Appius Claudius and his family upon patrician and plebeian relations\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The impact of Appius Claudius and his family upon patrician and plebeian relations.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The impact of Appius Claudius and his family upon patrician and plebeian relations\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "impact"
+            }
+          ]
+        },
+        {
+          "id": "kt4_3",
+          "code": "4.3",
+          "title": "4.3 Decemvirates, Twelve Tables, Second Secession and Valerio-Horatian Laws",
+          "dateFence": "753–440 BC",
+          "outsideFenceTrap": "",
+          "linkedLessonIndices": [
+            0
+          ],
+          "anchors": [
+            {
+              "id": "kt4_3_a1",
+              "title": "The Decemvirates, Second Secession and Twelve Tables",
+              "dateTag": "KT 4.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The Decemvirates, Second Secession and Twelve Tables\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The Decemvirates, Second Secession and Twelve Tables.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The Decemvirates, Second Secession and Twelve Tables\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Decemvirates,"
+            },
+            {
+              "id": "kt4_3_a2",
+              "title": "The Valerio-Horatian laws and the other reforms of the 440s",
+              "dateTag": "KT 4.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The Valerio-Horatian laws and the other reforms of the 440s\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The Valerio-Horatian laws and the other reforms of the 440s.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The Valerio-Horatian laws and the other reforms of the 440s\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "Valerio-Horatian"
+            },
+            {
+              "id": "kt4_3_a3",
+              "title": "The nature and origin of the historical evidence for this period",
+              "dateTag": "KT 4.3",
+              "lessonIndex": 0,
+              "recallPrompt": "What key historical facts and ancient evidence must you recall for: \"The nature and origin of the historical evidence for this period\"?",
+              "facts": [
+                "Verbatim OCR J198 Specification Clause: The nature and origin of the historical evidence for this period.",
+                "Pair accurate classical names, places, and dates BC with ancient literary and archaeological witnesses."
+              ],
+              "examLens": {
+                "lensType": "OCR Paper 2 · Section A (Compulsory Period Study)",
+                "points": [
+                  {
+                    "label": "Unseen Passage A (Q3/Q4)",
+                    "text": "Embed 2–3 short \"direct quotes\" from Passage A and test against accurate own knowledge (no provenance needed on Q3/Q4)."
+                  },
+                  {
+                    "label": "20-Mark Essay Link",
+                    "text": "Weigh \"The nature and origin of the historical evidence for this period\" against contrasting factors across The Foundations of Rome: From Kingship to Republic, 753–440 BC to reach a sustained judgement."
+                  }
+                ]
+              },
+              "questionSearchTerm": "nature"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

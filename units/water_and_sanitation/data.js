@@ -1385,17 +1385,6 @@ export default {
           "model_answer": "Recall: Constructed around 600 BC, it was originally an open drainage canal to drain marshy ground between the Palatine and Capitoline Hills before being vaulted over with stone.\nExplain: Citizens sat side-by-side on stone benches with running water beneath; however, cleaning themselves with a communal sponge rinsed in shared salt water rapidly spread intestinal parasites.\nChallenge: Warm, stagnant water in public baths was infrequently changed and lacked chemical disinfection, serving as breeding grounds for bacterial infections and parasitic worms."
         },
         {
-          "id": "P5ieIbInFpg",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=P5ieIbInFpg",
-          "title": "Gladiator (2000) | Official Movie Trailer (Paramount / Ridley Scott)",
-          "duration": "1 min 35 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–01:35 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Oscar-winning cinematic depiction of ancient Rome's grand architecture and social hierarchy.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film visually contrast the marble monuments, fountains, and orderly streets of Rome with the gritty, disease-ridden reality of the Roman urban mob?",
-          "model_answer": "Cinematic Discussion Focus: The trailer contrasts grand Colosseum spectacles and imperial marble palaces with the crowded, volatile tenements (insulae) of the ordinary plebeians, illustrating the stark divide between Roman imperial propaganda and daily life."
-        },
-        {
           "id": "klnMloYjHmg",
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=klnMloYjHmg",
@@ -3233,17 +3222,6 @@ export default {
           "model_answer": "Recall: Monks valued physical cleanliness as a sign of spiritual purity ('cleanliness is next to godliness') and possessed the wealth, land, and literacy to design hydraulic systems.\nExplain: Water was channeled from uphill springs through lead pipes and settling tanks, supplying drinking water first, then kitchens, laundry, and finally flushing latrines out to the river.\nChallenge: Towns lacked unified ownership and single wealthy authorities; narrow streets were congested with private properties, and town burgesses were unwilling to levy heavy taxes for collective infrastructure."
         },
         {
-          "id": "JkOwLCib1Tk",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=JkOwLCib1Tk",
-          "title": "Black Death (2010) | Medieval Living Conditions & Pestilence Trailer",
-          "duration": "1 min 12 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–01:12 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Visceral, authentic depiction of 14th-century village life, mud, isolation, and plague fear.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film visually portray the vulnerability of medieval communities with no knowledge of bacteria or microscopic vectors of disease?",
-          "model_answer": "Cinematic Discussion Focus: The trailer shows terrified villagers burning pitch barrels and carrying smoking herbs to ward off 'corrupt air' (miasma), illustrating how medieval medical theory left populations utterly defenceless against Yersinia pestis."
-        },
-        {
           "id": "YhsPPBGtquo",
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=YhsPPBGtquo",
@@ -4967,17 +4945,6 @@ export default {
           "teacher_guidance": "Explains how Queen Elizabeth I's godson Sir John Harington invented the 'Ajax' valve-flush water closet at Kelston in 1596—and why a brilliant mechanical invention failed to transform Early Modern towns without mains water pipes or underground sewers. Recommended Watch Window: 00:00–02:26 • Lesson Phase: Starter Hook (0–5m).",
           "viewing_task": "<ol><li><strong>[00:35] Recall:</strong> Who invented the 'Ajax' flushable water closet in 1596, and which monarch had one installed at Richmond Palace?</li><li><strong>[01:20] Explain:</strong> Explain how Harington's cistern-and-valve mechanism flushed waste out of the pan.</li><li><strong>[01:55] Challenge:</strong> Why couldn't Harington's 1596 flush toilet improve public health for ordinary families in Stuart London?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Sir John Harington invented the 'Ajax' in 1596, installing one for his godmother, Queen Elizabeth I, at Richmond Palace.</li><li><strong>Explain:</strong> Pulling a handle opened a brass valve at the bottom of the pan while releasing stored water from an overhead cistern to wash waste away.</li><li><strong>Challenge:</strong> An isolated invention cannot work without public infrastructure: Early Modern towns lacked piped mains water pressure and underground sewers, so most households continued using chamber pots and cesspits.</li></ol>"
-        },
-        {
-          "id": "6cMhO7JpaYE",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=6cMhO7JpaYE",
-          "title": "Restoration (1995) | Official Movie Trailer (Robert Downey Jr / Meg Ryan)",
-          "duration": "2 mins 15 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:15 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Depicts 17th-century London, royal court excess, and the catastrophic Great Plague of 1665.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film contrast the debauched luxury of King Charles II's court with the filthy streets of London where the plague took hold?",
-          "model_answer": "Cinematic Discussion Focus: The trailer contrasts silken royal banquets with plague-stricken slums where doors are painted with red crosses ('Lord have mercy upon us') and searchers of the dead cart away piles of corpses at night."
         },
         {
           "id": "IwB1ha70dRA",

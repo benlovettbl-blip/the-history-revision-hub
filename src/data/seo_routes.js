@@ -106,6 +106,60 @@ export const SEO_UNIT_ROUTES = [
     priority: '0.9',
   },
 
+  // Key Stage 4: Cambridge OCR GCSE (9–1) Ancient History (J198)
+  {
+    unitId: 'ocr_persian_empire',
+    slug: 'ocr-persian-empire',
+    aliases: ['persian-empire-559-465-bc', 'j198-persian-empire'],
+    keyStage: 'GCSE (9–1)',
+    examBoard: 'Cambridge OCR GCSE Ancient History (J198/01 • Section A)',
+    heading: 'The Persian Empire, 559–465 BC',
+    seoTitle:
+      'The Persian Empire (559–465 BC) | OCR GCSE Ancient History J198/01 Revision | The History Revision Hub',
+    metaDescription:
+      'Accessible Cambridge OCR GCSE (9–1) Ancient History J198/01 revision and lessons for The Persian Empire, 559–465 BC: Cyrus the Great, Cambyses II, Darius I, Xerxes I, unseen passage drills, and green-quoted full-mark model answers.',
+    priority: '0.9',
+  },
+  {
+    unitId: 'ocr_alexander',
+    slug: 'ocr-alexander-the-great',
+    aliases: ['alexander-the-great-356-323-bc', 'j198-alexander'],
+    keyStage: 'GCSE (9–1)',
+    examBoard: 'Cambridge OCR GCSE Ancient History (J198/01 • Section D)',
+    heading: 'Alexander the Great, 356–323 BC',
+    seoTitle:
+      'Alexander the Great (356–323 BC) | OCR GCSE Ancient History J198 Prescribed Sources & Revision | The History Revision Hub',
+    metaDescription:
+      'Interactive Cambridge OCR GCSE (9–1) Ancient History J198/01 Depth Study for Alexander the Great, 356–323 BC—modern-English prescribed set sources (Plutarch, Arrian, Diodorus), 3D coin hotspots, and green-quoted WAGOLLs.',
+    priority: '0.9',
+  },
+  {
+    unitId: 'ocr_foundations_of_rome',
+    slug: 'ocr-foundations-of-rome',
+    aliases: ['foundations-of-rome-753-440-bc', 'j198-foundations-of-rome'],
+    keyStage: 'GCSE (9–1)',
+    examBoard: 'Cambridge OCR GCSE Ancient History (J198/02 • Section A)',
+    heading: 'The Foundations of Rome: From Kingship to Republic, 753–440 BC',
+    seoTitle:
+      'The Foundations of Rome (753–440 BC) | OCR GCSE Ancient History J198/02 Revision | The History Revision Hub',
+    metaDescription:
+      'Complete Cambridge OCR GCSE (9–1) Ancient History J198/02 Longer Period Study for The Foundations of Rome, 753–440 BC: Legendary Kings, Etruscan Tarquins, Early Republic, Conflict of the Orders, and Myth vs Archaeology.',
+    priority: '0.9',
+  },
+  {
+    unitId: 'ocr_cleopatra',
+    slug: 'ocr-cleopatra',
+    aliases: ['cleopatra-rome-and-egypt-69-30-bc', 'j198-cleopatra'],
+    keyStage: 'GCSE (9–1)',
+    examBoard: 'Cambridge OCR GCSE Ancient History (J198/02 • Section C)',
+    heading: 'Cleopatra: Rome and Egypt, 69–30 BC',
+    seoTitle:
+      'Cleopatra: Rome & Egypt (69–30 BC) | OCR GCSE Ancient History J198 Prescribed Sources & Revision | The History Revision Hub',
+    metaDescription:
+      'Interactive Cambridge OCR GCSE (9–1) Ancient History J198/02 Depth Study for Cleopatra: Rome and Egypt, 69–30 BC—modern-English prescribed set sources, Ptolemaic & Roman coinage hotspots, and green-quoted WAGOLLs.',
+    priority: '0.9',
+  },
+
   // Key Stage 3: UK National Curriculum History
   {
     unitId: 'medieval_england',
@@ -367,6 +421,58 @@ export const SEO_UNIT_ROUTES = [
       'KS2 Ancient Maya Civilisation | Tikal, Palenque, Glyphs, Cacao & Chichén Itzá | The History Revision Hub',
     metaDescription:
       'Complete UK Key Stage 2 Primary History lessons, classroom textbook, pupil workbook, and retrieval quizzes for the Ancient Maya: Rainforest Cenotes, King Pakal, Maya Glyphs & Zero, Cacao, Pok-ta-Pok, Chichén Itzá, and Living Maya Today.',
+    priority: '0.85',
+  },
+  {
+    unitId: 'ks2_crime_and_punishment',
+    slug: 'ks2-crime-and-punishment',
+    aliases: ['crime-and-punishment-ks2', 'crime-punishment-through-time-ks2'],
+    keyStage: 'Key Stage 2',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'Crime and Punishment Through Time — Roman Courts to Modern Forensics (AD 43–Present)',
+    seoTitle:
+      'KS2 Crime & Punishment Through Time | Roman Law, Saxon Wergild, 1829 Peelers & DNA | The History Revision Hub',
+    metaDescription:
+      'Complete UK Key Stage 2 Primary History lessons, classroom textbook, pupil workbook, and retrieval quizzes for Crime and Punishment Through Time (AD 43–Present): Roman Bath curse tablets, Anglo-Saxon wergild, 1215 Magna Carta, Guy Fawkes, the Bloody Code, Elizabeth Fry, 1829 Peelers, and 1984 DNA.',
+    priority: '0.85',
+  },
+  {
+    unitId: 'ks2_kingdom_of_benin',
+    slug: 'ks2-kingdom-of-benin',
+    aliases: ['kingdom-of-benin-ks2', 'benin-ad-900-ks2'],
+    keyStage: 'Key Stage 2',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'The Kingdom of Benin — Rainforest Earthworks, Royal Oba Court & Master Bronzes (c. AD 900–1897)',
+    seoTitle:
+      'KS2 Kingdom of Benin (c. AD 900–1897) | Oba Ewuare, Benin Bronzes & Queen Idia | The History Revision Hub',
+    metaDescription:
+      'Complete UK Key Stage 2 Primary History lessons, classroom textbook, pupil workbook, and retrieval quizzes for the Kingdom of Benin (southern Nigeria): Ogiso earthworks, Oba Ewuare, Igun lost-wax brass plaques, Queen Mother Idia, Portuguese trade, 1897 invasion, and modern restitution.',
+    priority: '0.85',
+  },
+  {
+    unitId: 'ks2_victorian_britain',
+    slug: 'ks2-victorian-britain',
+    aliases: ['victorian-britain-ks2', 'victorians-ks2'],
+    keyStage: 'Key Stage 2',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'Victorian Britain — Steam Railways, Factories, Workhouses & Classrooms (1837–1901)',
+    seoTitle:
+      'KS2 Victorian Britain (1837–1901) | Railways, Child Labour, Workhouses & Schools | The History Revision Hub',
+    metaDescription:
+      'Complete UK Key Stage 2 Primary History lessons, classroom textbook, pupil workbook, and retrieval quizzes for Victorian Britain (1837–1901): Queen Victoria, Brunel’s railways, Penny Black, cotton mills, coal mines, Workhouses, Lord Shaftesbury, Dr Barnardo, Board Schools, and the 1851 Great Exhibition.',
+    priority: '0.85',
+  },
+  {
+    unitId: 'ks2_local_history_detective',
+    slug: 'ks2-local-history-detective',
+    aliases: ['local-history-study-ks2', 'history-on-our-doorstep-ks2'],
+    keyStage: 'Key Stage 2',
+    examBoard: 'UK National Curriculum Key Stage 2 Primary History',
+    heading: 'History on Our Doorstep — Local History Detective Toolkit (Roman Towns to Living Memory)',
+    seoTitle:
+      'KS2 Local History Study | Place-Names, OS Maps, High Streets, Census & War Memorials | The History Revision Hub',
+    metaDescription:
+      'Complete UK Key Stage 2 Primary Local History Toolkit, classroom textbook, pupil workbook, and retrieval quizzes: Roman, Saxon & Viking place-names, 1880s Ordnance Survey maps, Tudor to Victorian High Streets, 1881 Census & School Logbooks, canals & stations, CWGC War Memorials, and oral history.',
     priority: '0.85',
   },
 ];

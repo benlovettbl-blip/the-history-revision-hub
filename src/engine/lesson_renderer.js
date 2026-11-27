@@ -17,6 +17,7 @@ import {
   cleanVideoDisplayTitle,
   getSortedLessonVideos,
   formatInteractiveTimestamps,
+  renderBlockVideoMicroPillHTML,
 } from './video_utils.js';
 import { isStaffModeActive } from '../data/unit_resources_catalog.js';
 import { renderConsolidateStationHTML, initConsolidateStation } from './lesson_consolidate_station.js';
@@ -44,6 +45,8 @@ import {
   runPendingQuestionDeepLink,
 } from './share_utils.js';
 import { openUnifiedTeacherGuidance } from './teacher_guidance_modal.js';
+import { isOcrAncientUnit, renderAncientLesson } from './ancient_lesson_renderer.js';
+import { initLaptopModeForLesson } from './laptop_mode.js';
 if (typeof window !== 'undefined' && !window.openUnifiedTeacherGuidance) {
   window.openUnifiedTeacherGuidance = openUnifiedTeacherGuidance;
 }
@@ -253,6 +256,14 @@ window.renderLessonByIndex = function (index, skipHistory = false) {
         unitTitle = 'Baghdad c. AD 900';
       } else if (unitId === 'ks2_maya_civilisation') {
         unitTitle = 'The Ancient Maya';
+      } else if (unitId === 'ks2_kingdom_of_benin') {
+        unitTitle = 'Kingdom of Benin';
+      } else if (unitId === 'ks2_victorian_britain') {
+        unitTitle = 'Victorian Britain';
+      } else if (unitId === 'ks2_crime_and_punishment') {
+        unitTitle = 'Crime & Punishment';
+      } else if (unitId === 'ks2_local_history_detective') {
+        unitTitle = 'Local History Study';
       }
       window.updateBreadcrumbs([
         { label: 'Dashboard', view: 'dashboard' },
@@ -342,6 +353,9 @@ export function renderLesson(lesson) {
       new URLSearchParams(window.location.search).get('unit')
       : null) ||
     window.currentUnitId;
+  if (isOcrAncientUnit(unitId, activeUnit)) {
+    return renderAncientLesson(lesson, activeUnit, unitId);
+  }
   const isCme =
     unitId === 'cme_new' ||
     (typeof window !== 'undefined' && window.currentUnitId === 'cme_new');
@@ -3761,7 +3775,8 @@ export function renderLesson(lesson) {
           .toLowerCase()
           .replace(/[^a-z0-9]+/g, '-')
           .replace(/(^-|-$)/g, '');
-        themeHeadingHtml = `<h4 class="narrative-heading" id="${headingAnchorId}" style="margin: 0; color: #1e3a8a; font-size: 1.05rem; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; white-space: normal; overflow-wrap: break-word;"><i class="fa-solid fa-bookmark" style="color: #64748b; font-size: 0.90rem;"></i><span>${cleanHeadingTitle}</span></h4>`;
+        const blockVideoPillHtml = renderBlockVideoMicroPillHTML(lesson, index + 1);
+        themeHeadingHtml = `<h4 class="narrative-heading" id="${headingAnchorId}" style="margin: 0; color: #1e3a8a; font-size: 1.05rem; font-weight: 700; display: inline-flex; flex-wrap: wrap; align-items: center; gap: 8px; white-space: normal; overflow-wrap: break-word;"><i class="fa-solid fa-bookmark" style="color: #64748b; font-size: 0.90rem;"></i><span>${cleanHeadingTitle}</span>${blockVideoPillHtml}</h4>`;
       }
 
       let imageHtml = '';
@@ -4629,10 +4644,13 @@ export function renderLesson(lesson) {
         `;
       }
 
+      const stageVideoPillHtml = renderBlockVideoMicroPillHTML(lesson, index + 1);
       const stageEyebrowHtml =
         isHeaderUnified && cleanHeadingTitle
-          ? `<div class="narrative-stage-eyebrow"${headingAnchorId ? ` id="${headingAnchorId}"` : ''}>${cleanHeadingTitle}</div>`
-          : '';
+          ? `<div class="narrative-stage-eyebrow"${headingAnchorId ? ` id="${headingAnchorId}"` : ''} style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;"><span>${cleanHeadingTitle}</span>${stageVideoPillHtml}</div>`
+          : isHeaderUnified && stageVideoPillHtml
+            ? `<div class="narrative-stage-eyebrow" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;">${stageVideoPillHtml}</div>`
+            : '';
 
       const hasHookOrSlideCol = hasStageHookMap || hasSlideCompare || hasConceptWidget;
       const narrativeChunkHtml = `
@@ -4780,6 +4798,64 @@ export function renderLesson(lesson) {
             ${narrativeChunkHtml}
             <div class="stage-hook-map-col slide-compare-col">
               ${slideCompareHtml}
+            </div>
+          </div>
+        `;
+      } else if (hasConceptWidget && effectiveImage) {
+        const conceptWidgetHtml = renderConceptWidgetHTML(block.concept_widget, index);
+        const isSvgPlate = /\.svg(?:[?#]|$)/i.test(effectiveImage);
+        const plateMaxImgHeight = isSvgPlate ? '360px' : '260px';
+        const dualHookId = `dual-widget-plate-${String((lesson && lesson.id) || 'lesson').replace(/[^a-zA-Z0-9_-]/g, '-')}-${index}`;
+        const visualPlatePaneHtml = `
+          <div class="narrative-visual-plate plate-standard${isSvgPlate ? ' plate-svg-map' : ''}" style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 14px 16px; box-shadow: 0 2px 5px rgba(0,0,0,0.04); text-align: center;">
+            <img class="archival-image" src="${getAssetUrl(effectiveImage)}" alt="${escAttrSafe(effectiveAlt)}" style="max-width: 100%; max-height: ${plateMaxImgHeight}; object-fit: contain; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.12); border: 1px solid #cbd5e1; cursor: zoom-in; display: block; margin: 0 auto;" data-action="open-modal" data-src="${getAssetUrl(effectiveImage)}">
+            ${effectiveCaption ? `<div class="narrative-plate-caption" style="font-size: 0.80rem; color: #64748b; margin-top: 8px; font-style: italic; line-height: 1.4; user-select: none;">${formatVisualPlateCaption(effectiveCaption)}</div>` : ''}
+          </div>
+        `;
+
+        window.postRenderHooks.push(() => {
+          const wrap = document.getElementById(dualHookId);
+          if (!wrap || wrap.dataset.modeBound === '1') return;
+          wrap.dataset.modeBound = '1';
+          const btns = wrap.querySelectorAll('[data-hook-mode-btn]');
+          const panes = wrap.querySelectorAll('[data-hook-mode-pane]');
+          btns.forEach((btn) => {
+            btn.addEventListener('click', () => {
+              const targetMode = btn.getAttribute('data-hook-mode-btn');
+              btns.forEach((b) => {
+                const active = b.getAttribute('data-hook-mode-btn') === targetMode;
+                b.classList.toggle('is-active', active);
+                b.setAttribute('aria-pressed', active ? 'true' : 'false');
+              });
+              panes.forEach((p) => {
+                const show = p.getAttribute('data-hook-mode-pane') === targetMode;
+                p.classList.toggle('is-hidden', !show);
+                if (show) {
+                  p.removeAttribute('hidden');
+                } else {
+                  p.setAttribute('hidden', 'hidden');
+                }
+              });
+            });
+          });
+        });
+
+        topNarrativeHtml = `
+          ${isHeaderUnified ? headerBlockHtml : ''}
+          <div class="stage-hook-map-row has-dual-hook-modes" style="${isReversed ? 'flex-direction: row-reverse;' : ''}">
+            ${narrativeChunkHtml}
+            <div class="stage-hook-map-col concept-widget-col" id="${dualHookId}">
+              <div class="stage-hook-mode-bar no-print" role="group" aria-label="Stage visual mode">
+                <button type="button" class="stage-hook-mode-btn is-active" data-hook-mode-btn="widget" aria-pressed="true">Interactive diagram</button>
+                <span class="stage-hook-mode-sep" aria-hidden="true">|</span>
+                <button type="button" class="stage-hook-mode-btn" data-hook-mode-btn="plate" aria-pressed="false">Archival photo</button>
+              </div>
+              <div class="stage-hook-mode-pane" data-hook-mode-pane="widget">
+                ${conceptWidgetHtml}
+              </div>
+              <div class="stage-hook-mode-pane is-hidden" data-hook-mode-pane="plate" hidden="hidden">
+                ${visualPlatePaneHtml}
+              </div>
             </div>
           </div>
         `;
@@ -10370,6 +10446,13 @@ export function renderLesson(lesson) {
   try {
     initConsolidateStation(lesson);
     initLessonExamPractice(unitId, lesson);
+    initLaptopModeForLesson({
+      container: document.getElementById('content-area') || document,
+      unitData: activeUnit,
+      unitId,
+      lesson,
+      lessonIndex: Number(window.currentLessonIndex || 0),
+    });
   } catch (err) {
     console.error('Failed to initialize consolidate station:', err);
   }

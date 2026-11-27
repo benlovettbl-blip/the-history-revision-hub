@@ -36,7 +36,7 @@ const ALL_CURATED_TIMELINE_UNITS = [
   'the_shoah',
   'cold_war',
   'post_war_britain',
-  // 8 KS2 units
+  // 12 KS2 units
   'ks2_stone_to_iron_age',
   'ks2_ancient_egypt',
   'ks2_romans',
@@ -44,6 +44,10 @@ const ALL_CURATED_TIMELINE_UNITS = [
   'ks2_ancient_greece',
   'ks2_early_islamic_baghdad',
   'ks2_maya_civilisation',
+  'ks2_kingdom_of_benin',
+  'ks2_victorian_britain',
+  'ks2_crime_and_punishment',
+  'ks2_local_history_detective',
   'ks2_ww2',
 ];
 

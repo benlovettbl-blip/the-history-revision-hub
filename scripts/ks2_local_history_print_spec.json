@@ -1,0 +1,156 @@
+{
+  "unitId": "ks2_local_history_detective",
+  "shortUpper": "LOCAL HISTORY DETECTIVE",
+  "shortTitle": "Local History Detective",
+  "coverSubtitle": "History on Our Doorstep — Roman Towns to Living Memory",
+  "headerBanner": "HISTORY ON OUR DOORSTEP — LOCAL DETECTIVE TOOLKIT",
+  "periodRange": "AD 43 TO PRESENT",
+  "themeDark": "#0f172a",
+  "themePrimary": "#0f766e",
+  "themeAccent": "#38bdf8",
+  "heroPos": "center 42%",
+  "mapFile": "local_history_place_names_detective_map_ks2.png",
+  "mapTitle": "Britain’s Place-Name Detective Map (Celtic, Roman, Saxon, Viking & Norman)",
+  "mapSub": "Bookmark this page as you decode -chester, -ton, -ham, -ford, -ley, -by, and -thorpe across Britain!",
+  "mapBoxA": "<strong>Settler Endings:</strong> Roman castra forts left -chester and -caster, Anglo-Saxons left -ton, -ham, -ford, and -ley, and Vikings left -by and -thorpe!",
+  "mapBoxB": "<strong>1086 to Ordnance Survey:</strong> Check original spellings in the 1086 Domesday Book, then compare 1880s Ordnance Survey maps with modern streets!",
+  "sowAlign": "Fulfils the statutory DfE Key Stage 2 History study: <em>“A local history study — a study over time tracing how several aspects of national history are reflected in the locality”</em>.",
+  "lessonPeriods": ["AD 43–1936", "1485–1914", "1538–1921", "1600–1965", "1914–1945", "1895–Present"],
+  "worksheetSlugs": [
+    "lesson_01_place_names_os_maps_worksheet",
+    "lesson_02_high_street_buildings_cyphers_worksheet",
+    "lesson_03_census_parish_school_logbooks_worksheet",
+    "lesson_04_canals_mills_stations_work_worksheet",
+    "lesson_05_war_memorials_cwgc_records_worksheet",
+    "lesson_06_oral_history_heritage_trails_worksheet"
+  ],
+  "journeyBlurbs": [
+    "Crack Celtic, Roman (-chester), Saxon (-ton/-ham), and Viking (-by) place-names, compare 1880s OS maps, and spot carved stone benchmarks!",
+    "Look upstairs above modern plastic shop signs to date Tudor oak jetties, Georgian sash windows, Victorian red brick, V.R. postboxes, and ghost signs.",
+    "Open 1881 UK Census household sheets, decode vanished jobs like ostlers, and read 1538 parish registers alongside 1862 School Logbooks!",
+    "Follow turnpike milestones, waterwheels, narrowboat canal locks, Victorian steam stations, and work clues in Mill Lane and Station Road.",
+    "Read local 1914–1918 and 1939–1945 War Memorials respectfully and trace one surname via Sir Fabian Ware’s CWGC records and the 1911 Census.",
+    "Record open-ended oral history memories of pre-1971 shillings, explore Octavia Hill’s 1895 National Trust and Blue Plaques, and map a Heritage Trail!"
+  ],
+  "chronoTasks": [
+    [
+      "Ordnance Survey erects concrete hilltop triangulation ('trig') pillars across Britain (1936)",
+      "Roman legions build walled castra forts at Chester, Manchester, and Lancaster (AD 43–410)",
+      "Victorian Ordnance Survey teams publish detailed 1880s street plans and carve benchmarks (1880s)",
+      "King William I’s scribes record 13,000+ early place-names in the Domesday Book (AD 1086)"
+    ],
+    [
+      "Post Office repaints dark-green Victorian cast-iron pillar postboxes bright red (AD 1874)",
+      "Tudor carpenters frame overhanging oak 'jetty' houses with wattle and daub (1500s)",
+      "Railways carry machine-made red brick and terracotta to Victorian town halls (1880s–1890s)",
+      "Georgian architects build symmetrical stone terraces with sliding sash windows in Bath (1760s–1770s)"
+    ],
+    [
+      "1921 UK Census household sheets open to public local history detectives after 100 years (AD 2022)",
+      "Parish churches in England and Wales begin keeping baptism, marriage, and burial registers (AD 1538)",
+      "Government rules require British headteachers to write weekly School Logbooks (AD 1862)",
+      "Britain holds its first national Census naming every person and occupation in each house (AD 1841)"
+    ],
+    [
+      "Thousands of rural branch-line stations close and become walking trails after the Beeching Report (1960s)",
+      "Wymondham townspeople raise an octagonal timber Market Cross on open oak pillars (AD 1618)",
+      "Victorian steam railways connect market towns, ports, and red-brick stations across Britain (1840s)",
+      "Thomas Telford completes the cast-iron Pontcysyllte Canal Aqueduct for narrowboats (AD 1805)"
+    ],
+    [
+      "Communities add 1939–1945 Rolls of Honour to local War Memorial crosses and church plaques (AD 1945+)",
+      "First World War breaks out and Fabian Ware begins recording soldiers’ battlefield graves (AD 1914)",
+      "Bereaved British villages and towns raise over 100,000 local War Memorials and receive bronze plaques (1919–1922)",
+      "Royal Charter establishes the War Graves Commission with equal white Portland stone headstones (May 1917)"
+    ],
+    [
+      "Britain switches from pounds, shillings, and pence to 100 new pence on Decimal Day (15 February 1971)",
+      "London installs the world’s earliest ceramic historical Blue Plaques on famous homes (AD 1866)",
+      "Parliament passes the Town and Country Planning Act creating legally protected Listed Buildings (AD 1947)",
+      "Octavia Hill, Robert Hunter, and Hardwicke Rawnsley co-found the National Trust (January 1895)"
+    ]
+  ],
+  "chronoKeyLines": [
+    "[4] Trig pillars 1936 • [1] Roman castra AD 43–410 • [3] Victorian OS maps 1880s • [2] Domesday Book AD 1086",
+    "[3] Red postboxes 1874 • [1] Tudor jetties 1500s • [4] Victorian red brick 1880s–90s • [2] Georgian sashes 1760s–70s",
+    "[4] 1921 Census opens 2022 • [1] Parish registers 1538 • [3] School Logbooks 1862 • [2] Named Census 1841",
+    "[4] Branch closures 1960s • [1] Market Cross 1618 • [3] Steam railways 1840s • [2] Canal aqueduct 1805",
+    "[4] WWII panels 1945+ • [1] Grave recording 1914 • [3] Local memorials 1919–22 • [2] CWGC Charter May 1917",
+    "[4] Decimal Day 1971 • [1] First Blue Plaques 1866 • [3] Listed Buildings Act 1947 • [2] National Trust 1895"
+  ],
+  "thinkingHeads": [
+    {
+      "headA": "1086 Domesday Royal Scribe",
+      "promptA": "Why are you writing down every village name, landowner, and watermill in Latin?",
+      "headB": "1885 Ordnance Survey Leveller",
+      "promptB": "Why are you chiseling a broad-arrow benchmark onto this stone church corner?"
+    },
+    {
+      "headA": "Tudor High Street Carpenter",
+      "promptA": "Why did you build the upper oak floor jutting out over the narrow street below?",
+      "headB": "1874 Victorian Post Office Engineer",
+      "promptB": "Why are you painting dark-green V.R. pillar boxes bright red this winter?"
+    },
+    {
+      "headA": "1881 Door-to-Door Census Enumerator",
+      "promptA": "What varied jobs and birthplaces have you copied along this terraced street tonight?",
+      "headB": "1876 Village Headteacher",
+      "promptB": "Why are half your wooden desks empty in your September School Logbook?"
+    },
+    {
+      "headA": "1795 Canal Narrowboat Steerer",
+      "promptA": "How do wooden locks and one towpath horse help you carry 30 tonnes of fragile china?",
+      "headB": "1860 Railway Stationmaster",
+      "promptB": "How has your new steam station sped up milk, fish, coal, and mail for our town?"
+    },
+    {
+      "headA": "Sir Fabian Ware (May 1917)",
+      "promptA": "Why must generals and teenage privates share the exact same white Portland headstone?",
+      "headB": "Primary Pupil Tracing a Local Name",
+      "promptB": "How did CWGC records and the 1911 Census link one carved name to a house nearby?"
+    },
+    {
+      "headA": "Octavia Hill (January 1895)",
+      "promptA": "Why do town families need protected historic buildings and green open-air sitting rooms?",
+      "headB": "Older Resident in an Oral History Interview",
+      "promptB": "What do you remember about corner grocers and spending shillings before 1971?"
+    }
+  ],
+  "sourceStarters": [
+    "Looking closely at Source A, comparing this 1880s Ordnance Survey town plan with a modern map reveals...",
+    "Looking closely at Source A, the cast-iron letters 'V.R.' stamped onto this hexagonal red pillar box prove...",
+    "Looking closely at Source A, the occupation and birthplace columns on this 1881 Census sheet show...",
+    "Looking closely at Source A, the carved mile distances and stone water trough on this milestone show...",
+    "Looking closely at Source A, the twenty-one local names carved onto Henham’s church memorial reveal...",
+    "Looking closely at Source A, Octavia Hill’s ceramic Blue Plaque celebrates her lasting impact because..."
+  ],
+  "sourceClueNotes": [
+    "Map Clue: Dotted crosses marked '(Site of)' show vanished medieval churches, while 'B.M.' marks carved street benchmarks!",
+    "Cypher Clue: Postboxes keep their original monarch’s initials—V.R. (Victoria), G.R. (George), E.IIR (Elizabeth II), or C.IIIR (Charles III)!",
+    "Archive Clue: Linking the ten-year Census with 1538 Parish Registers and 1862 School Logbooks traces whole families across centuries!",
+    "Transport Clue: Turnpike milestones served stagecoaches, while smooth canals let one horse pull thirty tonnes of heavy coal or china!",
+    "Equality Clue: Both CWGC white Portland stone headstones and bronze Memorial Plaques honoured officers and privates as equals!",
+    "Conservation Clue: Pairing spoken oral history interviews with dated street photos gives both human warmth and exact dates!"
+  ],
+  "milestonesSpine": [
+    { "date": "AD 43–900", "title": "Settler Place-Name Roots", "desc": "Celtic rivers, Roman castra (-chester), Saxon farms (-ton/-ham), and Viking villages (-by) name Britain." },
+    { "date": "AD 1086", "title": "The Domesday Book", "desc": "King William I’s survey records earliest written spellings and watermills for 13,000+ places." },
+    { "date": "AD 1538", "title": "Parish Registers & Timber", "desc": "Churches record baptisms, weddings, and burials while Tudor oak jetties overhang market lanes." },
+    { "date": "1760s–1805", "title": "Turnpikes, Mills & Canals", "desc": "Stone milestones guide coaches while waterwheels and narrowboat canal locks power heavy trade." },
+    { "date": "AD 1791", "title": "Ordnance Survey Founded", "desc": "Following William Roy’s 1784 baseline, surveyors map every parish and carve stone benchmarks." },
+    { "date": "1801 & 1841", "title": "Ten-Year UK Census", "desc": "Door-to-door enumerators record household names, ages, birthplaces, and Victorian jobs." },
+    { "date": "1840s–1874", "title": "Steam Stations & Red Boxes", "desc": "Railways bring red brick and stations; V.R. pillar postboxes turn bright red in 1874." },
+    { "date": "AD 1862", "title": "Victorian School Logbooks", "desc": "Headteachers keep weekly diaries of attendance, harvests, snowdrifts, and slate lessons." },
+    { "date": "1895 & 1917", "title": "National Trust & CWGC", "desc": "Octavia Hill co-founds the National Trust (1895); Fabian Ware establishes equal war graves (1917)." },
+    { "date": "1947 & 1971+", "title": "Listed Laws & Oral History", "desc": "1947 Listed Buildings, 1971 Decimal Day memories, Blue Plaques, and community Heritage Trails." }
+  ],
+  "finalePairs": [
+    { "left": "-chester, -ton, -by & 1880s OS Maps", "right": "Map & Name Clues" },
+    { "left": "Tudor Jetties, Sash & V.R. Postboxes", "right": "High Street Dates" },
+    { "left": "1881 Census & 1862 School Logbooks", "right": "Local Archive Lives" },
+    { "left": "1917 CWGC, Oral History & Listing", "right": "Memory & Heritage" }
+  ],
+  "finalePromptClues": "place-names and 1880s OS maps, High Street buildings and postbox cyphers, Censuses and School Logbooks, canals and railways, local War Memorials, and oral history",
+  "bigDiscussion1": "<strong>1. Doorstep Detective Power:</strong> Why can these exact same six historical clues unlock secret stories in a giant city, a coastal port, a suburb, or a tiny country village anywhere in the UK?",
+  "bigDiscussion2": "<strong>2. Future Guardians:</strong> Which building, street sign, green space, or living neighbour’s memory in YOUR community should be saved for children a hundred years from today?"
+}

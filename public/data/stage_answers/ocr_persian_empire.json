@@ -1,0 +1,566 @@
+{
+  "unit_id": "ocr_persian_empire",
+  "lessons": {
+    "lesson_1_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Highland Persian kingdom",
+            "bullet": "Cyrus II succeeded his father Cambyses I as King of Anshan in Persis in 559 BC → began as a regional ruler rather than an emperor"
+          },
+          {
+            "hint": "Subordinate status under Ecbatana",
+            "bullet": "Persis ruled as a tributary vassal paying tribute to King Astyages of the Median Empire → owed obedience to Ecbatana"
+          },
+          {
+            "hint": "Clan coalition building",
+            "bullet": "Cyrus united tough Persian mountain infantry and horsemen while courting dissatisfied Median nobles → built a springboard for rebellion"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Greek birth folklore",
+            "bullet": "Herodotus preserved stories that Cyrus was Astyages’ grandson through Princess Mandane → framed his rise as destined"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "TRIBUTARY VASSAL",
+            "stem": "Upon his accession as King of ____________ in 559 BC, Cyrus II governed as a subordinate ____________ beneath..."
+          },
+          {
+            "badge": "HIGHLAND COALITION",
+            "stem": "Although Persis owed tribute to King ____________ at Ecbatana, Cyrus strengthened his position by uniting..."
+          }
+        ],
+        "watch_out": "Cyrus did not inherit an empire in 559 BC—he started as a subordinate vassal king of Anshan under Median overlordship.",
+        "prose_hash": "cde455912f",
+        "prose_fp": "5ebd7485",
+        "question_hash": "41b3055ed2"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Babylonian clay record",
+            "bullet": "The contemporary Nabonidus Chronicle states Astyages’ own Median army rebelled in 550 BC → soldiers seized Astyages in chains and handed him to Cyrus"
+          },
+          {
+            "hint": "Harpagus switches sides",
+            "bullet": "Herodotus highlights the defection of Median general Harpagus mid-battle → shattered Median resistance from within"
+          },
+          {
+            "hint": "Smart treatment of rivals",
+            "bullet": "Cyrus captured Ecbatana and its treasury yet spared Astyages’ life → turned Median nobles like Harpagus into loyal Persian generals"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Two independent witnesses",
+            "bullet": "Mesopotamian temple annals corroborate Greek oral history on the Median mutiny → gives historians high confidence in internal betrayal"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "MEDIAN ARMY MUTINY",
+            "stem": "According to the Babylonian ____________, Astyages lost in 550 BC because his own Median soldiers..."
+          },
+          {
+            "badge": "IMPERIAL CONCILIATION",
+            "stem": "After capturing ____________, Cyrus shrewdly spared ____________ and promoted Median commanders like Harpagus so that..."
+          }
+        ],
+        "watch_out": "Do not rely solely on Herodotus’ gruesome banquet story—always pair it with the contemporary Babylonian Nabonidus Chronicle confirming the Median mutiny.",
+        "prose_hash": "1cc5f1f643",
+        "prose_fp": "d2e64550",
+        "question_hash": "76dc4b15f6"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Ambiguous prophecy",
+            "bullet": "The Oracle of Apollo at Delphi foretold that crossing the Halys River would destroy a great empire → never specified which kingdom would fall"
+          },
+          {
+            "hint": "Bullion overconfidence",
+            "bullet": "Blinded by Lydia’s Pactolus gold and Croeseid coinage, King Croesus assumed Apollo meant Cyrus’ realm → failed to question the riddle"
+          },
+          {
+            "hint": "Crossing the frontier",
+            "bullet": "Around 547 BC Croesus led his army east across the Halys into Cappadocia and ravaged Pteria → provoked direct war with Cyrus"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Web of alliances",
+            "bullet": "Croesus allied with Sparta, Egypt, and Babylon and sought revenge for his deposed brother-in-law Astyages → misjudged Persian speed"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ORACLE RIDDLE",
+            "stem": "When Delphi prophesied that crossing the ____________ would destroy a great empire, Croesus arrogantly assumed..."
+          },
+          {
+            "badge": "PROVOKING PERSIA",
+            "stem": "Confident in Sardis’ gold wealth, Croesus marched east into Cappadocia and attacked ____________, triggering..."
+          }
+        ],
+        "watch_out": "Croesus was the aggressor at the Halys River—he crossed east into Persian-claimed Cappadocia before Cyrus marched west to Sardis.",
+        "prose_hash": "880600f54f",
+        "prose_fp": "3486ba94",
+        "question_hash": "69e32b3f4b"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Mid-winter pursuit",
+            "bullet": "After Croesus disbanded his foreign mercenaries for winter after Pteria, Cyrus marched immediately through winter → isolated Sardis before allies arrived"
+          },
+          {
+            "hint": "Harpagus’ camel line",
+            "bullet": "At Thymbra Cyrus placed baggage camels in front of his infantry → unfamiliar scent and sight panicked Lydia’s feared lance cavalry horses"
+          },
+          {
+            "hint": "Scaling the rock citadel",
+            "bullet": "After a fourteen-day siege, Hyroeades led Persian climbers up an unguarded cliff where a Lydian guard retrieved a dropped helmet → completed the conquest of Lydia"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Stranded allies",
+            "bullet": "Striking in winter prevented Sparta, Amasis of Egypt, and Nabonidus of Babylon from sending promised spring reinforcements → sealed Croesus’ defeat"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "WINTER SURPRISE",
+            "stem": "Refusing to pause after Pteria, Cyrus marched straight to ____________ in winter right after Croesus had..."
+          },
+          {
+            "badge": "CAMEL STRATAGEM",
+            "stem": "On the plain of Thymbra, Cyrus followed Harpagus’ advice by deploying ____________ ahead of his troops, causing..."
+          }
+        ],
+        "watch_out": "Remember BOTH stages at Sardis: defeating the Lydian cavalry with baggage camels on the plain of Thymbra AND scaling the steep citadel cliff after fourteen days.",
+        "prose_hash": "8e2e22ab43",
+        "prose_fp": "f4f56622",
+        "question_hash": "7f44e2ec02"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Minting and bullion wealth",
+            "bullet": "Persia seized Sardis’ pure gold and silver mints → enriched the Achaemenid royal treasury across western Asia Minor"
+          },
+          {
+            "hint": "Crushing Pactyes’ revolt",
+            "bullet": "When the Lydian treasurer Pactyes rebelled, Cyrus sent Median generals Mazares and Harpagus west → consolidated Lydia as a key Persian satrapy"
+          },
+          {
+            "hint": "First Greek subjects",
+            "bullet": "Harpagus used earth siege ramps to subdue the Ionian Greek coastal poleis → brought Aegean Greeks directly under Persian imperial rule"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Greek pyre tradition",
+            "bullet": "Herodotus and Myson’s Louvre amphora portrayed Apollo saving Croesus from a blazing funeral pyre → turned Lydia’s fall into a Greek moral fable"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ECONOMIC GAIN",
+            "stem": "Absorbing Lydia enriched Cyrus’ empire by capturing Sardis’ ____________ and silver coinage mints..."
+          },
+          {
+            "badge": "AEGEAN EXPANSION",
+            "stem": "Following Pactyes’ revolt, Cyrus’ generals Mazares and ____________ subdued the ____________ cities along the Aegean coast."
+          }
+        ],
+        "watch_out": "Conquering Lydia around 546 BC brought Persia onto the Aegean Sea and under control of Ionian Greeks—planting the long-term roots of the Graeco-Persian Wars.",
+        "prose_hash": "622836ec5e",
+        "prose_fp": "ca228947",
+        "question_hash": "ef6970123b"
+      }
+    ],
+    "lesson_1_2": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Elevating the moon-god",
+            "bullet": "King Nabonidus promoted the moon-god Sin of Harran alongside Marduk → offended the wealthy priests of Marduk’s Esagila temple in Babylon"
+          },
+          {
+            "hint": "Ten years in Arabia",
+            "bullet": "Nabonidus spent ten years away at the desert oasis of Tayma leaving Belshazzar in charge → halted Babylon’s sacred New Year Akitu festival"
+          },
+          {
+            "hint": "Seizing provincial cult statues",
+            "bullet": "In 539 BC Nabonidus brought provincial divine statues into Babylon → angered Mesopotamian sanctuary cities who felt abandoned by their king"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Internal weakness before invasion",
+            "bullet": "Priestly resentment inside Esagila meant Babylon’s elite welcomed an outside ruler promising to restore Marduk’s honour"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RELIGIOUS RIFT",
+            "stem": "King Nabonidus alienated Esagila’s priests before 539 BC by promoting the moon-god ____________ and spending ten years at..."
+          },
+          {
+            "badge": "HALTED FESTIVAL",
+            "stem": "Because the king was absent from Babylon for a decade, the sacred New Year ____________ of Marduk could not..."
+          }
+        ],
+        "watch_out": "Nabonidus did not ban Marduk outright, but elevating Sin of Harran and missing ten Akitu festivals handed Cyrus a gift-wrapped propaganda grievance.",
+        "prose_hash": "8dfe8f726e",
+        "prose_fp": "ce5e6f27",
+        "question_hash": "6eca0578fc"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Decisive Tigris battle",
+            "bullet": "The Nabonidus Chronicle records that Cyrus crushed the Babylonian army at the Battle of Opis in autumn 539 BC → Sippar yielded without fighting"
+          },
+          {
+            "hint": "Peaceful vanguard entry",
+            "bullet": "Babylonian clay annals insist Cyrus’ general Ugbaru entered Babylon without battle on 12 October → points to insider surrender after Opis"
+          },
+          {
+            "hint": "Greek river-diversion tale",
+            "bullet": "Herodotus claimed nearly a century later that Cyrus diverted the River Euphrates into a basin during a festival → dramatised Greek engineering story"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Contemporary clay vs later Greek prose",
+            "bullet": "Testing Herodotus against contemporary Akkadian chronicles distinguishes the pitched battle at Opis from the bloodless entry into Babylon itself"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GREEK ENGINEERING STORY",
+            "stem": "Writing generations later, Herodotus claimed Cyrus captured Babylon by diverting the ____________ while citizens celebrated..."
+          },
+          {
+            "badge": "BABYLONIAN CLAY RECORD",
+            "stem": "Conversely, the contemporary ____________ states that after Cyrus won at ____________, General Ugbaru entered Babylon without battle."
+          }
+        ],
+        "watch_out": "Never say the whole 539 BC campaign was bloodless—Babylon’s streets were spared only because Cyrus had already smashed Nabonidus’ army at Opis.",
+        "prose_hash": "ced7be3e28",
+        "prose_fp": "21a99687",
+        "question_hash": "50142bd495"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Protecting Esagila’s shrine",
+            "bullet": "Entering Babylon on 29 October 539 BC, Cyrus posted Gutian guards around Esagila → prevented looting or disruption of Marduk’s worship"
+          },
+          {
+            "hint": "Traditional Mesopotamian titles",
+            "bullet": "Cyrus styled himself King of Babylon, King of Sumer and Akkad → presented himself as a legitimate native successor rather than a foreign conqueror"
+          },
+          {
+            "hint": "Akkadian clay barrel",
+            "bullet": "The Cyrus Cylinder blackened Nabonidus as impious and claimed Marduk personally called Cyrus of Anshan by name → won priestly backing"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Ancient coronation tradition",
+            "bullet": "Buried as a wall foundation deposit in Babylonian cuneiform, the Cyrus Cylinder echoed earlier royal texts of Assyrian King Ashurbanipal"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "SACRED PROTECTION",
+            "stem": "Upon entering Babylon on 29 October 539 BC, Cyrus stationed ____________ guards at Esagila and adopted traditional titles such as..."
+          },
+          {
+            "badge": "MARDUK PROPAGANDA",
+            "stem": "On the baked-clay ____________, royal scribes claimed that ____________ personally selected Cyrus to replace the impious Nabonidus."
+          }
+        ],
+        "watch_out": "Avoid calling the Cyrus Cylinder a modern human rights charter—analyse it in context as 6th-century BC Mesopotamian royal legitimacy propaganda.",
+        "prose_hash": "2d2ee9d934",
+        "prose_fp": "f52d6f73",
+        "question_hash": "76af339a6e"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Returning divine statues",
+            "bullet": "Cyrus returned seized cult statues to Mesopotamian sanctuaries such as Ashur, Susa, and Der and rebuilt ruined shrines → reversed Nabonidus’ policy"
+          },
+          {
+            "hint": "Keeping local administration",
+            "bullet": "Babylonian cuneiform scribes, judges, and merchant houses stayed in post under governor Gubaru → ensured smooth silver and grain tribute"
+          },
+          {
+            "hint": "Bloodless Levantine gain",
+            "bullet": "Pragmatic generosity encouraged Syria, Phoenicia, and Palestine to submit peacefully → backed always by harsh military force at Opis if defied"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Contrast with Assyria",
+            "bullet": "Co-opting subject elites proved far cheaper and stabler than ruling vast territories through mass terror deportations alone"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "RESTORING SANCTUARIES",
+            "stem": "Cyrus’ attitude towards conquered peoples combined returning seized ____________ to their sanctuaries with resettling displaced..."
+          },
+          {
+            "badge": "IMPERIAL CALCULATION",
+            "stem": "Keeping Babylonian scribes and merchants intact under governor ____________ ensured reliable tribute and peaceful submission across..."
+          }
+        ],
+        "watch_out": "Pair Cyrus’ religious generosity with strategic realism: toleration kept rich provinces paying tribute willingly without tying down Persian armies.",
+        "prose_hash": "1f0da90e65",
+        "prose_fp": "f13483a5",
+        "question_hash": "56dffc44f8"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Ending Babylonian Captivity",
+            "bullet": "In 538 BC Cyrus issued the Edict of Restoration recorded in the Book of Ezra → allowed Jewish exiles under Sheshbazzar and Zerubbabel to return to Jerusalem"
+          },
+          {
+            "hint": "Returning Temple treasures",
+            "bullet": "Cyrus handed back the sacred gold and silver vessels looted by Nebuchadnezzar II and funded rebuilding the Temple of Yahweh → hailed in Isaiah 45 as anointed"
+          },
+          {
+            "hint": "Securing the Egyptian border",
+            "bullet": "Planting a grateful Judaean community in Palestine strengthened Persian control along the strategic corridor bordering rival Egypt"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Matching imperial pattern",
+            "bullet": "Although the Cyrus Cylinder does not name Jerusalem directly, its general policy of restoring exiled cults corroborates the Book of Ezra"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EDICT OF RESTORATION",
+            "stem": "According to the Book of ____________, Cyrus ended the Babylonian Captivity in 538 BC by returning looted vessels and funding..."
+          },
+          {
+            "badge": "FRONTIER SECURITY",
+            "stem": "Strategically, Cyrus’ liberation of the Jews planted a loyal community near ____________ while earning praise in Isaiah 45 as..."
+          }
+        ],
+        "watch_out": "Remember that the Cyrus Cylinder never mentions Jews or Jerusalem by name—pair the Cylinder’s Mesopotamian restoration policy with Ezra 1 and Isaiah 45.",
+        "prose_hash": "09f53f5618",
+        "prose_fp": "bff1dce2",
+        "question_hash": "2fc0f414ed"
+      }
+    ],
+    "lesson_1_3": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Homeland royal capital",
+            "bullet": "Around 546 BC Cyrus ordered the construction of Pasargadae on the Murghab plain in Persis → commemorated the site of his victory over Astyages"
+          },
+          {
+            "hint": "Western stonecutting masters",
+            "bullet": "Conquered Lydian and Ionian Greek masons from Sardis brought smooth ashlar stonecutting, black-and-white limestone contrasts, and iron dovetail clamps"
+          },
+          {
+            "hint": "Empire carved in stone",
+            "bullet": "Combining Lydian, Ionian, Babylonian, and Elamite craftsmen in open parkland pavilions advertised that all conquered nations served the King of Kings"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Semi-nomadic Persian court style",
+            "bullet": "Unlike cramped Mesopotamian mud-brick citadels, Pasargadae spaced airy columned halls across irrigated gardens suited to Persian royal ceremonial"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "ROYAL CEREMONIAL CAPITAL",
+            "stem": "Cyrus ordered the construction of ____________ in Persis on the plain associated with his victory over ____________..."
+          },
+          {
+            "badge": "CONQUERED CRAFTSMEN",
+            "stem": "Employing ____________ and Ionian stonemasons skilled in ashlar masonry alongside Babylonian sculptors demonstrated..."
+          }
+        ],
+        "watch_out": "Pasargadae was primarily a ceremonial highland capital and royal park in Persis—Babylon, Ecbatana, and Sardis remained vital administrative hubs.",
+        "prose_hash": "7147353023",
+        "prose_fp": "e13fdc3c",
+        "question_hash": "791a4cda8c"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Three cultures on one doorway",
+            "bullet": "Gate R’s carved four-winged guardian combined an Elamite fringed robe, four Assyrian-Babylonian wings, and an Egyptian-Syrian hemhem crown"
+          },
+          {
+            "hint": "Origin of paradise",
+            "bullet": "Palace S and Palace P overlooked the walled pairidaeza royal garden → gave Greek and English the word paradise"
+          },
+          {
+            "hint": "Four-quarter cosmic order",
+            "bullet": "Cut-stone limestone water channels divided the arid plain into four lush garden quarters → symbolised the King of the Four Corners bringing fertility and peace"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Contrast with terror reliefs",
+            "bullet": "Pasargadae celebrated inclusive harmony rather than Assyrian-style wall reliefs of impaled or mutilated captives"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "GATE R SYNTHESIS",
+            "stem": "At Gate R, the four-winged guardian expressed multicultural rule by combining an Elamite robe, Mesopotamian wings, and an..."
+          },
+          {
+            "badge": "PAIRIDAEZA GARDENS",
+            "stem": "Fed by carved limestone water channels, the four-quarter ____________ garden symbolised Cyrus bringing fertility and order to..."
+          }
+        ],
+        "watch_out": "Notice the Egyptian-Syrian hemhem crown at Gate R predates Cambyses’ 525 BC conquest of Egypt—borrowed via Phoenician and Levantine royal art.",
+        "prose_hash": "701d4dcd03",
+        "prose_fp": "d003bda1",
+        "question_hash": "da37a86c5a"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Three architectural traditions",
+            "bullet": "Cyrus’ white limestone tomb fused a six-tier Mesopotamian-Elamite stepped plinth, an Iranian gabled house chamber, and Lydian-Ionian mouldings"
+          },
+          {
+            "hint": "Respecting sacred elements",
+            "bullet": "Elevating the stone burial chamber eleven metres above the plain prevented a dead corpse from polluting sacred earth or sacred fire"
+          },
+          {
+            "hint": "Golden coffin and modest epitaph",
+            "bullet": "Arrian records that inside lay Cyrus’ golden coffin, Babylonian tapestries, and an inscription asking visitors not to begrudge him that small monument"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Enduring royal dignity",
+            "bullet": "Two centuries later Alexander the Great ordered Aristobulus to restore Cyrus’ looted tomb chamber out of respect for Persia’s founder"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HYBRID DESIGN",
+            "stem": "Built of white limestone, the Tomb of Cyrus blended a six-tiered ____________ plinth with an Iranian gabled chamber and..."
+          },
+          {
+            "badge": "RELIGIOUS PURITY",
+            "stem": "Raising the burial chamber high on stone steps respected Persian beliefs against defiling sacred ____________ while housing Cyrus’..."
+          }
+        ],
+        "watch_out": "Link the tomb’s architecture directly to OCR’s Consistent Theme on royal architecture and religion: austere dignity rather than pharaonic pyramid excess.",
+        "prose_hash": "912cc54f81",
+        "prose_fp": "d6fb3d37",
+        "question_hash": "adad61f4ce"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Herodotus’ Massagetae drama",
+            "bullet": "Herodotus states Cyrus invaded Queen Tomyris’ Massagetae in 530 BC, trapped her son Spargapises with wine, was killed, and had his head dipped in a wineskin of blood"
+          },
+          {
+            "hint": "Rival Greek literary versions",
+            "bullet": "Ctesias claimed Cyrus died three days after a battle wound fighting the Derbices, whereas Xenophon’s Cyropaedia pictured him dying peacefully in bed in Persis"
+          },
+          {
+            "hint": "Hard archaeological check",
+            "bullet": "Herodotus himself admitted many stories circulated, and Cyrus’ golden coffin inside Pasargadae’s tomb proves Persian troops brought his intact body home"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Moralising hubris vs philosopher-king",
+            "bullet": "Greek authors shaped Cyrus’ death to fit their genre: Herodotus warned against imperial hubris while Xenophon praised ideal monarchy"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HERODOTUS VS CTESIAS",
+            "stem": "While Herodotus claims ____________ of the Massagetae plunged Cyrus’ head into blood, Ctesias and Xenophon offer rival accounts where..."
+          },
+          {
+            "badge": "PASARGADAE PROOF",
+            "stem": "Crucially, the presence of Cyrus’ body inside his tomb at ____________ proves that even if he fell on the steppe frontier..."
+          }
+        ],
+        "watch_out": "Quote or cite Herodotus’ own admission in 1.214 that many stories were told about Cyrus’ death—it earns top AO2/AO3 credit without crude bias clichés.",
+        "prose_hash": "e2804cf6fe",
+        "prose_fp": "35b06009",
+        "question_hash": "ac9416cebb"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Twenty-nine years of empire-building",
+            "bullet": "Between 559 and 530 BC Cyrus transformed tiny tributary Anshan into a superpower uniting Media, Lydia, Ionia, Babylonia, and the Levant"
+          },
+          {
+            "hint": "Orderly royal succession",
+            "bullet": "Before marching north Cyrus appointed his eldest son Cambyses II as heir while giving younger son Bardiya eastern commands → prevented immediate civil war"
+          },
+          {
+            "hint": "Unfinished frontier challenges",
+            "bullet": "Cyrus left turbulent Central Asian nomads, unconquered Saite Egypt, and latent tension between Cambyses II and Bardiya for the next reign"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Remembered as a father",
+            "bullet": "Herodotus 3.89 notes Persians remembered Cyrus fondly as a gentle father compared with Cambyses as a master"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "IMPERIAL FOUNDATION",
+            "stem": "By 530 BC Cyrus had united Media, Lydia, Ionia, and ____________ and secured a smooth succession for his eldest son ____________."
+          },
+          {
+            "badge": "UNFINISHED BUSINESS",
+            "stem": "Nevertheless, Cyrus left key challenges including unconquered ____________ and potential dynastic friction with younger son ____________."
+          }
+        ],
+        "watch_out": "Balance your verdict on 530 BC: the empire’s core was remarkably stable thanks to elite inclusion, yet Egypt and sibling rivalry tested Cambyses II immediately.",
+        "prose_hash": "e5fe37df58",
+        "prose_fp": "a0e99c3b",
+        "question_hash": "c4a83534a5"
+      }
+    ]
+  }
+}

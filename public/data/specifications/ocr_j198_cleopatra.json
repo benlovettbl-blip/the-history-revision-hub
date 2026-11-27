@@ -1,0 +1,212 @@
+{
+  "id": "ocr_j198_cleopatra",
+  "code": "J198/02-C",
+  "examBoard": "Cambridge OCR GCSE (9–1) Ancient History (J198)",
+  "paper": "Component 2: Rome and its neighbours (J198/02) — Section C",
+  "paperType": "Roman Depth Study (Prescribed Sources)",
+  "title": "Hub GCSE Ancient History Topic Checklist (Aligned to Cambridge OCR J198)",
+  "subtitle": "J198/02 Section C: Cleopatra: Rome and Egypt, 69–30 BC",
+  "shortTitle": "Cleopatra: Rome & Egypt",
+  "disclaimer": "Aligned to Cambridge OCR GCSE (9–1) Ancient History (J198). Independent educational resource by The History Revision Hub; not endorsed by Cambridge OCR.",
+  "exam_structure": {
+    "paper_code": "J198/02 (Section C)",
+    "paper_name": "Rome and its neighbours — Roman Depth Study",
+    "total_marks": 45,
+    "spag_marks": 0,
+    "duration_minutes": 55,
+    "paper_duration_minutes": 120,
+    "weighting": "22.5% of total GCSE (0 SPaG marks)",
+    "overview": "Q11(a)–(c) Discrete factual knowledge (5m, AO1); Q12 What can we learn from Prescribed Source/Passage (5m, AO3); Q13 How accurate is the Prescribed Source/Passage presentation (5m, AO3); Q14 Second-order concept explanation (10m: 5 AO1 + 5 AO2 — zero source reliability needed); Q15* Evaluative essay analysing Prescribed Ancient Sources + own knowledge (20m: 5 AO1 + 5 AO2 + 10 AO3)."
+  },
+  "prescribedSourcesAppendix": "Appendix 5h",
+  "prescribedSources": {
+    "literary": [
+      "Suetonius, Life of Julius Caesar, 52",
+      "Plutarch, Life of Caesar, 48–49",
+      "Plutarch, Life of Antony, 24–33; 36–37; 51; 53; 55–69; 72–79; 81–86",
+      "Cassius Dio, Roman History, XLII 44–45; XLIII 27",
+      "Cicero, Letter to Atticus, XV.15",
+      "Velleius Paterculus, The Roman History, 2.82–2.87",
+      "Horace, Odes, 1.37",
+      "Virgil, Aeneid, 8.675–731"
+    ],
+    "archaeological": [
+      "Relief portraits of Cleopatra and Caesarion from Dendera",
+      "Coin of Cleopatra and Caesarion minted in Cyprus",
+      "Silver denarius of Antony and Cleopatra minted in 32, declaring Antony's conquest of Armenia and giving Cleopatra's title as 'queen of kings and of her sons who are kings' (British Museum)",
+      "Coin of Ptolemy Auletes, British Museum",
+      "Coin of Cleopatra, with distinctive hairstyle and hooked nose, British Museum",
+      "Head of Cleopatra as a young woman, British Museum"
+    ]
+  },
+  "stats": {
+    "sectionsCount": 4,
+    "topicsCount": 12,
+    "pointsCount": 26
+  },
+  "sections": [
+    {
+      "id": "key-topic-1",
+      "keyTopicNumber": 1,
+      "title": "Key Topic 1: Ptolemaic Egypt, Upbringing & Julius Caesar (69–47 BC)",
+      "topics": [
+        {
+          "number": 1,
+          "title": "1.1 Family, Education, Character and Roman Clientage",
+          "points": [
+            "Cleopatra's family and Macedonian heritage; her likely education and upbringing; her character as depicted in the sources, including her charm, her humour, and her courage",
+            "Rome's relationship with client states and attitude to foreigners; the importance of Egypt for Rome economically and politically; overview of Rome's involvement with Egypt in the 60s and 50s BC"
+          ],
+          "prescribedSetSources": [
+            "Coin of Ptolemy Auletes, British Museum",
+            "Head of Cleopatra as a young woman, British Museum"
+          ]
+        },
+        {
+          "number": 2,
+          "title": "1.2 Accession, Civil War with Ptolemy XIII and Sibling Rivalry",
+          "points": [
+            "The death of Ptolemy XII and Cleopatra's first years as queen; civil war between Cleopatra and Ptolemy XIII; Cleopatra's relationship with her brothers and Arsinoe"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Caesar, 48–49"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "1.3 Meeting Caesar, Alexandrian War and Birth of Caesarion",
+          "points": [
+            "Cleopatra's initial meeting with Caesar and his decision to support her; Cleopatra's personal and political relationship with Caesar and its impact on both Rome and Egypt; the birth of Caesarion"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Caesar, 48–49",
+            "Cassius Dio, Roman History, XLII 44–45",
+            "Suetonius, Life of Julius Caesar, 52"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "key-topic-2",
+      "keyTopicNumber": 2,
+      "title": "Key Topic 2: Queen of Egypt, Isis Persona & Reception in Rome (47–44 BC)",
+      "topics": [
+        {
+          "number": 1,
+          "title": "2.1 Graeco-Egyptian Persona, Isis Promotion and Archaeology",
+          "points": [
+            "Her Graeco-Egyptian public persona and representation in the archaeological sources; the promotion of Isis as her patron goddess and the rationale for this"
+          ],
+          "prescribedSetSources": [
+            "Relief portraits of Cleopatra and Caesarion from Dendera",
+            "Coin of Cleopatra and Caesarion minted in Cyprus",
+            "Coin of Cleopatra, with distinctive hairstyle and hooked nose, British Museum"
+          ]
+        },
+        {
+          "number": 2,
+          "title": "2.2 Domestic Rule, Egyptian Subjects and Territorial Ambition",
+          "points": [
+            "Cleopatra's relationship with her subjects; the expansion of Egyptian territory under Cleopatra"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Antony, 27"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "2.3 Cleopatra's Visit to Rome and Caesar's Assassination",
+          "points": [
+            "Cleopatra's visit to Rome and her reception"
+          ],
+          "prescribedSetSources": [
+            "Suetonius, Life of Julius Caesar, 52",
+            "Cassius Dio, Roman History, XLIII 27",
+            "Cicero, Letter to Atticus, XV.15"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "key-topic-3",
+      "keyTopicNumber": 3,
+      "title": "Key Topic 3: Cleopatra, Mark Antony & the Donations of Alexandria (44–32 BC)",
+      "topics": [
+        {
+          "number": 1,
+          "title": "3.1 Mark Antony's Position and the Meeting at Tarsus (41 BC)",
+          "points": [
+            "Mark Antony's position in Roman politics after Caesar's death; Cleopatra's meeting with Mark Antony at Tarsus"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Antony, 24–29"
+          ]
+        },
+        {
+          "number": 2,
+          "title": "3.2 Alliance, Eastern Territories and Octavia",
+          "points": [
+            "The development of the political and personal relationship between Cleopatra and Mark Antony and its significance for both Egypt and Rome"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Antony, 30–33; 36–37; 51; 53",
+            "Velleius Paterculus, The Roman History, 2.82"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "3.3 Donations of Alexandria and Breakdown with Octavian",
+          "points": [
+            "The role played by Cleopatra in the breakdown of Mark Antony and Octavian's relationship, including the Donations of Alexandria"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Antony, 55–59",
+            "Silver denarius of Antony and Cleopatra minted in 32, declaring Antony's conquest of Armenia and giving Cleopatra's title as 'queen of kings and of her sons who are kings'"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "key-topic-4",
+      "keyTopicNumber": 4,
+      "title": "Key Topic 4: War with Octavian, Actium & the Deaths in Alexandria (32–30 BC)",
+      "topics": [
+        {
+          "number": 1,
+          "title": "4.1 Causes of War and Preparations for Actium",
+          "points": [
+            "Causes of the war between Octavian and Antony/Cleopatra; preparations for the battle"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Antony, 56–62",
+            "Velleius Paterculus, The Roman History, 2.82–2.84"
+          ]
+        },
+        {
+          "number": 2,
+          "title": "4.2 The Battle of Actium: Roles, Outcome and Competing Views",
+          "points": [
+            "Key events of the battle, including the roles of Octavian, Agrippa, Mark Antony and Cleopatra; the outcome and the reasons for it as described by the sources; different views of the battle in the sources"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Antony, 63–69",
+            "Velleius Paterculus, The Roman History, 2.84–2.86",
+            "Virgil, Aeneid, 8.675–731"
+          ]
+        },
+        {
+          "number": 3,
+          "title": "4.3 Fall of Alexandria, Suicides and Significance for Octavian",
+          "points": [
+            "Impact of the battle on Cleopatra's and Antony's careers; the method of Cleopatra's suicide and reasons for her actions; Mark Antony's suicide; the significance of the suicides for Octavian"
+          ],
+          "prescribedSetSources": [
+            "Plutarch, Life of Antony, 72–79; 81–86",
+            "Velleius Paterculus, The Roman History, 2.87",
+            "Horace, Odes, 1.37"
+          ]
+        }
+      ]
+    }
+  ]
+}

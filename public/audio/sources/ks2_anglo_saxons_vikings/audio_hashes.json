@@ -58,11 +58,11 @@
       "updatedAt": "2026-11-23T23:08:45.211Z"
     },
     "lesson_2_sC": {
-      "hash": "22945277f5b3e3fb",
-      "bytes": 123020,
+      "hash": "3c5fe3c927affee7",
+      "bytes": 97964,
       "voiceKey": "male_historian",
-      "badge": "Illuminated Carpet Page from the…",
-      "updatedAt": "2026-11-23T23:08:46.089Z"
+      "badge": "Carved Anglo-Saxon Stone High Cr…",
+      "updatedAt": "2026-11-27T00:19:19.779Z"
     },
     "lesson_3_sA": {
       "hash": "f0f6d58ad49728d7",
@@ -84,6 +84,62 @@
       "voiceKey": "female_historian",
       "badge": "Battle Abbey on Senlac Hill (Has…",
       "updatedAt": "2026-11-23T23:12:39.384Z"
+    },
+    "lesson_1_sB": {
+      "hash": "80cfb93a0e37b208",
+      "bytes": 88556,
+      "voiceKey": "female_historian",
+      "badge": "Gilt-Bronze Anglo-Saxon Saucer B…",
+      "updatedAt": "2026-11-27T00:19:17.203Z"
+    },
+    "lesson_3_sB": {
+      "hash": "34ac74b55c204900",
+      "bytes": 87116,
+      "voiceKey": "female_historian",
+      "badge": "Carved 9th-Century Lindisfarne \"…",
+      "updatedAt": "2026-11-27T00:19:17.577Z"
+    },
+    "lesson_5_sB": {
+      "hash": "d85197d8b20ad643",
+      "bytes": 90860,
+      "voiceKey": "female_historian",
+      "badge": "Viking-Age Strategy Gaming Piece…",
+      "updatedAt": "2026-11-27T00:19:17.944Z"
+    },
+    "lesson_1_sC": {
+      "hash": "1927cf246ed94c55",
+      "bytes": 84908,
+      "voiceKey": "male_historian",
+      "badge": "Anglo-Saxon Glass Claw Beaker fo…",
+      "updatedAt": "2026-11-27T00:19:18.659Z"
+    },
+    "lesson_2_sA": {
+      "hash": "fca103a14c7fa864",
+      "bytes": 91244,
+      "voiceKey": "male_historian",
+      "badge": "The Iconic Iron-and-Bronze Sutto…",
+      "updatedAt": "2026-11-27T00:19:19.025Z"
+    },
+    "lesson_2_sB": {
+      "hash": "22945277f5b3e3fb",
+      "bytes": 117740,
+      "voiceKey": "male_historian",
+      "badge": "Illuminated Carpet Page from the…",
+      "updatedAt": "2026-11-27T00:19:19.442Z"
+    },
+    "lesson_3_sC": {
+      "hash": "763060a4eb87de15",
+      "bytes": 90956,
+      "voiceKey": "male_historian",
+      "badge": "Forged Viking Iron Broadsword &…",
+      "updatedAt": "2026-11-27T00:19:20.091Z"
+    },
+    "lesson_5_sC": {
+      "hash": "2985408360c4b384",
+      "bytes": 85388,
+      "voiceKey": "male_historian",
+      "badge": "10th-Century Gosforth Stone Cros…",
+      "updatedAt": "2026-11-27T00:19:20.396Z"
     }
   }
 }

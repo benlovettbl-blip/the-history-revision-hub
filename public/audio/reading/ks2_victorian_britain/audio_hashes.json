@@ -1,0 +1,53 @@
+{
+  "unitId": "ks2_victorian_britain",
+  "clips": {
+    "r5": {
+      "hash": "0c960c5691e6c400b31d8db9",
+      "bytes": 271916,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 155,
+      "updatedAt": "2026-11-27T14:27:46.028Z"
+    },
+    "r0": {
+      "hash": "ed537c56543b165f665cba1b",
+      "bytes": 312428,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 156,
+      "updatedAt": "2026-11-27T14:27:47.693Z"
+    },
+    "r1": {
+      "hash": "9f8d528fd61ca19ff52b13ad",
+      "bytes": 273836,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 170,
+      "updatedAt": "2026-11-27T14:27:48.406Z"
+    },
+    "r2": {
+      "hash": "b1ad845d9cdcb7fe281523e1",
+      "bytes": 289868,
+      "voiceKey": "male_historian",
+      "badge": "Studio Male Historian · KS2 Storyteller",
+      "words": 162,
+      "updatedAt": "2026-11-27T14:27:49.641Z"
+    },
+    "r3": {
+      "hash": "dc8e55f7cc13348f6c26cb66",
+      "bytes": 347660,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 160,
+      "updatedAt": "2026-11-27T14:27:51.537Z"
+    },
+    "r4": {
+      "hash": "b0d76cf7bfab8c22b6cac43a",
+      "bytes": 315788,
+      "voiceKey": "female_historian",
+      "badge": "Studio Female Historian · KS2 Storyteller",
+      "words": 165,
+      "updatedAt": "2026-11-27T14:27:52.366Z"
+    }
+  }
+}

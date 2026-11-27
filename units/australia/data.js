@@ -1515,17 +1515,6 @@ export default {
           "model_answer": "Recall: A master Tahitian star navigator and high priest who drew a map of over 70 Pacific islands and translated between European crews and Indigenous Pacific peoples.\nExplain: Australian Aboriginal languages belonged to entirely different, ancient language families unrelated to the Austronesian Polynesian languages of New Zealand and the Pacific.\nChallenge: Cook documented open, park-like landscapes deliberately created by millennia of sophisticated fire-stick burning, proving the land was actively managed and occupied rather than 'uncultivated wasteland'."
         },
         {
-          "type": "youtube",
-          "id": "m_0UNKVKZOM",
-          "url": "https://www.youtube.com/watch?v=m_0UNKVKZOM",
-          "title": "Ten Canoes (2006) | Official Trailer (Rolf de Heer & Peter Djigirr)",
-          "duration": "1 mins 57 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–01:57 | Lesson Phase: First Nations Continuity | Tone Alert: Poetic, authentic portrayal of Arnhem Land Aboriginal society prior to European arrival, spoken in Yolngu Matha.",
-          "viewing_task": "[00:50] Cultural Continuity: How does the storytelling tradition shown in the film demonstrate that Aboriginal cultures were highly structured, deeply spiritual societies rather than an 'empty land' (terra nullius)?",
-          "model_answer": "The film illustrates that First Nations communities possessed rich, thousands-of-years-old oral histories, kinship laws, and sacred relationships with country, directly disproving European claims of terra nullius."
-        },
-        {
           "id": "1n6VJ5jq7zY",
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=1n6VJ5jq7zY",
@@ -3467,17 +3456,6 @@ export default {
           "model_answer": "Recall: Petty theft of food, clothing, livestock, pickpocketing, or stealing cloth, often driven by desperate poverty in British cities.\nExplain: Recidivist convicts who committed crimes in the colony were sent to isolated, brutal secondary settlements where they endured chain gangs, solitary confinement, and severe floggings.\nChallenge: Convicts who served sentences with good behaviour earned conditional pardons ('Tickets of Leave'), allowing them to work for themselves, acquire crown land, and marry, forming the backbone of the emergent colonial economy."
         },
         {
-          "id": "BDepKiFIt5A",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=BDepKiFIt5A",
-          "title": "The Secret River: Convict Transportation & Frontier Exile | Trailer",
-          "duration": "2 mins 01 sec",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:00 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Depicts Thames river thief William Thornhill's sentencing and exile to the Antipodes.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film portray the trauma of lifelong transportation to an alien landscape on the other side of the planet?",
-          "model_answer": "Cinematic Discussion Focus: The trailer visually captures the disorientation and terror of British convicts thrust from cold, cramped London slums into the vast, blinding light and unfamiliar wilderness of the Australian bush."
-        },
-        {
           "id": "Z7_1avVKDwc",
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=Z7_1avVKDwc",
@@ -5266,28 +5244,6 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:20–05:30 | Lesson Phase: Diplomatic Breakdown | Tone Alert: Biographical analysis of Bennelong's diplomatic role and cultural isolation.",
           "viewing_task": "[01:15] Recall: Why did Governor Arthur Phillip order Bennelong kidnapped in November 1789?\n[03:00] Explain: What occurred when Phillip was speared in the shoulder at Manly Beach in 1790, and why did he refuse to retaliate?\n[04:45] Challenge: Why is Bennelong remembered as a tragic diplomatic figure who struggled to negotiate coexistence between two radically unequal worlds?",
           "model_answer": "Recall: To force him to learn English and serve as a cultural go-between and intelligence source regarding Indigenous intentions.\nExplain: A warrior named Willemering speared Phillip; Phillip recognized it was a traditional ritual payback punishment for earlier British kidnappings and ordered his men not to fire.\nChallenge: Despite adopting European manners and meeting King George III, Bennelong was rejected by colonial elites who mocked him and cast out by his own people who distrusted his foreign ties."
-        },
-        {
-          "id": "sYKBG1znk4A",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=sYKBG1znk4A",
-          "title": "Sweet Country (2017) | Official Movie Trailer (Transmission Films)",
-          "duration": "2 mins 11 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:11 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Acclaimed First Nations western directed by Warwick Thornton exploring frontier justice.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film subvert traditional western film tropes to expose the legal inequality faced by Aboriginal people on the frontier?",
-          "model_answer": "Cinematic Discussion Focus: The film shows that on the colonial frontier, self-defence by an Aboriginal person against a white man was treated as murder; law and judicial trials functioned as instruments of colonial subjugation rather than impartial justice."
-        },
-        {
-          "type": "youtube",
-          "id": "5hmPmjUzPTA",
-          "url": "https://www.youtube.com/watch?v=5hmPmjUzPTA",
-          "title": "The Australian Wars (2022) | Official Series Trailer (SBS / Rachel Perkins)",
-          "duration": "1 mins 15 secs",
-          "pathway": "Documentary Depth",
-          "teacher_guidance": "Recommended Watch Window: 00:00–01:15 | Lesson Phase: Frontier Warfare Investigation | Tone Alert: Gripping, serious examination of the armed conflicts between British colonisers and First Nations warriors like Pemulwuy.",
-          "viewing_task": "[00:30] Conflict Dynamics: What evidence does filmmaker Rachel Perkins emphasize to show that the colonisation of Australia was an active, prolonged military war rather than a peaceful settlement?",
-          "model_answer": "Perkins highlights the deployment of British military regiments, coordinated frontier militias, fortified homesteads, and recorded casualty rates on both sides, confirming an organized, multi-decade frontier war."
         }
       ],
       "sources": [
@@ -7158,17 +7114,6 @@ export default {
         },
         {
           "type": "youtube",
-          "id": "YuP8g_GQIgI",
-          "url": "https://www.youtube.com/watch?v=YuP8g_GQIgI",
-          "title": "The Nightingale (2018) | Official Trailer (Jennifer Kent)",
-          "duration": "2 mins 33 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:30 | Lesson Phase: Van Diemen's Land Frontier | Tone Alert: Gritty, harrowing depiction of British military occupation, convict servitude, and Aboriginal dispossession in 1820s Tasmania.",
-          "viewing_task": "[01:10] Frontier Reality: How does the trailer convey the extreme brutality and lawlessness of the colonial frontier during the Tasmanian Black War?",
-          "model_answer": "It depicts British soldiers and penal authorities operating with absolute, unchecked violence in remote wilderness outposts, reflecting the systemic terror and martial law unleashed against Tasmanian Palawa people."
-        },
-        {
-          "type": "youtube",
           "id": "sD22ZkWu8Bs",
           "url": "https://www.youtube.com/watch?v=sD22ZkWu8Bs",
           "title": "First Australians: Her Will To Survive (Episode 2) | SBS / Rachel Perkins",
@@ -8966,17 +8911,6 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:20–05:20 | Lesson Phase: Democratic Rebellion | Tone Alert: Detailed historical analysis of Peter Lalor, the Southern Cross flag, and the 20-minute battle.",
           "viewing_task": "[01:30] Recall: What oath did 500 armed diggers swear beneath the Southern Cross flag at Bakery Hill on 1 December 1854?\n[03:15] Explain: What happened at dawn on Sunday 3 December 1854 when British soldiers and police attacked the Eureka Stockade?\n[04:45] Challenge: How did the aftermath of Eureka lead directly to democratic reform, the secret ballot, and the abolition of mining licences in Victoria?",
           "model_answer": "Recall: 'We swear by the Southern Cross to stand truly by each other, and fight to defend our rights and liberties.'\nExplain: British troops attacked the unfinished wooden barricade while many diggers were away; the 20-minute firefight killed 22 diggers and 6 soldiers.\nChallenge: Victorian juries refused to convict surviving diggers of high treason; public sympathy forced the government to replace the licence with an affordable 'Miner's Right' that included the right to vote in parliamentary elections."
-        },
-        {
-          "id": "Lbnk8wSVMaM",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Lbnk8wSVMaM",
-          "title": "Rabbit-Proof Fence (2002) | Official Trailer (Phillip Noyce / Everlyn Sampi)",
-          "duration": "2 mins 51 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:50 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Award-winning film depicting three Stolen Generations girls walking 1,500 miles home.",
-          "viewing_task": "[01:20] Cinematic Discussion Focus: How does the film portray the Chief Protector of Aborigines, A.O. Neville, and the racist ideology of state-enforced biological absorption?",
-          "model_answer": "Cinematic Discussion Focus: The trailer contrasts Neville's bureaucratic, cold paternalism in his office with the terror of mothers having their children forcibly ripped away in police trucks, humanizing the catastrophic generational trauma of the Stolen Generations."
         },
         {
           "type": "youtube",

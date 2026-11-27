@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_victorian_britain",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "Victorian Britain — Steam Railways, Factories, Workhouses and Classrooms (1837–1901)",
+  "examDateBoundary": "1837–1901",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Victorian Britain",
+    "subLabel": "Key Stage 2",
+    "dateChip": "1837–1901",
+    "gloss": "Sixty-three transformative years under Queen Victoria — from Brunel’s steam railways, the 1840 Penny Black, cotton-mill scavengers, and the 1842 Mines Act to Hyde Park’s Crystal Palace, 1870 Board Schools, seaside Bank Holidays, and 1901.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#3730a3",
+        "label": "1. Steam Railways & Child Work",
+        "dateChip": "1837–1860",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Locomotive",
+        "gloss": "Young Victoria Rides by Steam → Brunel’s Bridges and Tunnels → Shared Clocks and One-Penny Mail • Country Families Move to Cottonopolis → Cotton-Mill Piecers and Scavengers → Coal-Mine Trappers and Hurriers",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Young Queen Victoria, Steam Railways and Shrinking Britain",
+            "dateChip": "1837–1860",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Locomotive",
+            "q2Chain": "Young Victoria Rides by Steam → Brunel’s Bridges and Tunnels → Shared Clocks and One-Penny Mail",
+            "gloss": "Young Victoria Rides by Steam → Brunel’s Bridges and Tunnels → Shared Clocks and One-Penny Mail",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Young Victoria Rides by Steam",
+                "dateChip": "1837–1842",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "1837",
+                "gloss": "Crowned aged eighteen in 1837, Queen Victoria married Prince Albert in 1840 and rode her first fast steam train into Paddington in June 1842.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1837",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "1837",
+                    "gloss": "Year eighteen-year-old Victoria inherited; the British throne.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Year eighteen-year-old Victoria inherited",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "1837",
+                        "gloss": "Year eighteen-year-old Victoria inherited"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "the British throne",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "1837",
+                        "gloss": "the British throne"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Prince Albert",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Prince Albert",
+                    "gloss": "Victoria’s husband who championed; British science and engineering.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Victoria’s husband who championed",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Prince Albert",
+                        "gloss": "Victoria’s husband who championed"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "British science and engineering",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Prince Albert",
+                        "gloss": "British science and engineering"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Paddington",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Paddington",
+                    "gloss": "London station reached by Victoria’s; first train ride in 1842.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "London station reached by Victoria’s",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Paddington",
+                        "gloss": "London station reached by Victoria’s"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "first train ride in 1842",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Paddington",
+                        "gloss": "first train ride in 1842"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "Brunel’s Bridges and Tunnels",
+                "dateChip": "1838–1850",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "navvies",
+                "gloss": "Navvies laid 6,000 miles of track while Isambard Kingdom Brunel built the Great Western Railway, Box Tunnel, Clifton Bridge, and SS Great Britain.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "navvies",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "navvies",
+                    "gloss": "Hardworking labourers who dug railway; cuttings and laid iron tracks.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Hardworking labourers who dug railway",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "navvies",
+                        "gloss": "Hardworking labourers who dug railway"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "cuttings and laid iron tracks",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "navvies",
+                        "gloss": "cuttings and laid iron tracks"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Box Tunnel",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Box Tunnel",
+                    "gloss": "Two-mile rock tunnel blasted by Brunel; on the Great Western line.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Two-mile rock tunnel blasted by Brunel",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Box Tunnel",
+                        "gloss": "Two-mile rock tunnel blasted by Brunel"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "on the Great Western line",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Box Tunnel",
+                        "gloss": "on the Great Western line"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ SS Great Britain",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "SS Great Britain",
+                    "gloss": "Brunel’s pioneering iron-hulled; screw-propeller ocean steamship.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Brunel’s pioneering iron-hulled",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "SS Great Britain",
+                        "gloss": "Brunel’s pioneering iron-hulled"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "screw-propeller ocean steamship",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "SS Great Britain",
+                        "gloss": "screw-propeller ocean steamship"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Shared Clocks and One-Penny Mail",
+                "dateChip": "1840–1855",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Greenwich",
+                "gloss": "Stations adopted shared Greenwich Railway Time, while Rowland Hill’s 1840 Penny Black stamp and red V.R. postboxes carried letters for one penny.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Greenwich",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Greenwich",
+                    "gloss": "London observatory time adopted across; stations as shared Railway Time.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "London observatory time adopted across",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Greenwich",
+                        "gloss": "London observatory time adopted across"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "stations as shared Railway Time",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Greenwich",
+                        "gloss": "stations as shared Railway Time"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Penny Black",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Penny Black",
+                    "gloss": "World’s first sticky one-penny stamp; launched in May 1840.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "World’s first sticky one-penny stamp",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Penny Black",
+                        "gloss": "World’s first sticky one-penny stamp"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "launched in May 1840",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Penny Black",
+                        "gloss": "launched in May 1840"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ V.R.",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "V.R.",
+                    "gloss": "Royal initials for Victoria Regina cast; onto red iron pillar boxes.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Royal initials for Victoria Regina cast",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "V.R.",
+                        "gloss": "Royal initials for Victoria Regina cast"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "onto red iron pillar boxes",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "V.R.",
+                        "gloss": "onto red iron pillar boxes"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Chimneys, Cotton Mills and Children Underground",
+            "dateChip": "1837–1850",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Cottonopolis",
+            "q2Chain": "Country Families Move to Cottonopolis → Cotton-Mill Piecers and Scavengers → Coal-Mine Trappers and Hurriers",
+            "gloss": "Country Families Move to Cottonopolis → Cotton-Mill Piecers and Scavengers → Coal-Mine Trappers and Hurriers",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Country Families Move to Cottonopolis",
+                "dateChip": "1837–1851",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "Cottonopolis",
+                "gloss": "Country families moved into smoky Northern mill towns like Manchester, and by the 1851 Census over half of Britain lived in towns.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Cottonopolis",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Cottonopolis",
+                    "gloss": "Victorian nickname for smoky Manchester; packed with steam cotton mills.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Victorian nickname for smoky Manchester",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Cottonopolis",
+                        "gloss": "Victorian nickname for smoky Manchester"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "packed with steam cotton mills",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Cottonopolis",
+                        "gloss": "packed with steam cotton mills"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1851",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "1851",
+                    "gloss": "Census year proving more Britons lived; in towns than in the countryside.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Census year proving more Britons lived",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "1851",
+                        "gloss": "Census year proving more Britons lived"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "in towns than in the countryside",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "1851",
+                        "gloss": "in towns than in the countryside"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ cellars",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "cellars",
+                    "gloss": "Damp, crowded basement rooms rented; by poor factory families.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Damp, crowded basement rooms rented",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "cellars",
+                        "gloss": "Damp, crowded basement rooms rented"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "by poor factory families",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "cellars",
+                        "gloss": "by poor factory families"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "Cotton-Mill Piecers and Scavengers",
+                "dateChip": "1837–1847",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "twelve-hour",
+                "gloss": "Children worked twelve-hour Lancashire mill shifts as piecers tying snapped threads and barefoot scavengers crawling beneath moving iron looms.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "twelve-hour",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "twelve-hour",
+                    "gloss": "Exhausting daily factory shift worked by; children six days a week.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Exhausting daily factory shift worked by",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "twelve-hour",
+                        "gloss": "Exhausting daily factory shift worked by"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "children six days a week",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "twelve-hour",
+                        "gloss": "children six days a week"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "piecers",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "piecers",
+                    "gloss": "Nimble children leaning over spinning; frames to tie broken threads.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Nimble children leaning over spinning",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "piecers",
+                        "gloss": "Nimble children leaning over spinning"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "frames to tie broken threads",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "piecers",
+                        "gloss": "frames to tie broken threads"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ power looms",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "power looms",
+                    "gloss": "Deafening steam-driven weaving machines; that scavengers crawled beneath.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Deafening steam-driven weaving machines",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "power looms",
+                        "gloss": "Deafening steam-driven weaving machines"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "that scavengers crawled beneath",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "power looms",
+                        "gloss": "that scavengers crawled beneath"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Coal-Mine Trappers and Hurriers",
+                "dateChip": "1837–1842",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "trappers",
+                "gloss": "Eight-year-old trappers sat alone in pitch-black tunnels opening air doors while chained hurriers dragged heavy coal corves past firedamp gas.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "trappers",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "trappers",
+                    "gloss": "Eight-year-olds sitting in total darkness; pulling pit air doors open.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Eight-year-olds sitting in total darkness",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "trappers",
+                        "gloss": "Eight-year-olds sitting in total darkness"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "pulling pit air doors open",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "trappers",
+                        "gloss": "pulling pit air doors open"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "corves",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "corves",
+                    "gloss": "Heavy wooden coal tubs dragged along; low wet seams by hurriers.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Heavy wooden coal tubs dragged along",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "corves",
+                        "gloss": "Heavy wooden coal tubs dragged along"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "low wet seams by hurriers",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "corves",
+                        "gloss": "low wet seams by hurriers"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Davy lamps",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Davy lamps",
+                    "gloss": "Wire-mesh oil lanterns stopping; underground firedamp gas exploding.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Wire-mesh oil lanterns stopping",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Davy lamps",
+                        "gloss": "Wire-mesh oil lanterns stopping"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "underground firedamp gas exploding",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Davy lamps",
+                        "gloss": "underground firedamp gas exploding"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "left",
+        "color": "#059669",
+        "label": "2. Workhouses, Reform & Schools",
+        "dateChip": "1834–1901",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Workhouse",
+        "gloss": "Grim Workhouses and Oliver Twist → Shaftesbury’s Mines and Factory Acts → Ragged Schools and Barnardo’s Homes • Board Schools and Free Education → Chanting the Three Rs on Slates → Canes, Dunce’s Caps and Hoops",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Workhouses, Ragged Schools and Champions of Reform",
+            "dateChip": "1834–1880",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Workhouse",
+            "q2Chain": "Grim Workhouses and Oliver Twist → Shaftesbury’s Mines and Factory Acts → Ragged Schools and Barnardo’s Homes",
+            "gloss": "Grim Workhouses and Oliver Twist → Shaftesbury’s Mines and Factory Acts → Ragged Schools and Barnardo’s Homes",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Grim Workhouses and Oliver Twist",
+                "dateChip": "1834–1845",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "1834 Poor Law",
+                "gloss": "After 1834, bleak Union Workhouses split husbands, wives, and children onto watery gruel and tarred oakum—exposed in Dickens’s 1838 Oliver Twist.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1834 Poor Law",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "1834 Poor Law",
+                    "gloss": "Law setting up harsh Union; Workhouses for destitute families.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Law setting up harsh Union",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "1834 Poor Law",
+                        "gloss": "Law setting up harsh Union"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Workhouses for destitute families",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "1834 Poor Law",
+                        "gloss": "Workhouses for destitute families"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "gruel",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "gruel",
+                    "gloss": "Thin watery oatmeal porridge served; in silent workhouse halls.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Thin watery oatmeal porridge served",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "gruel",
+                        "gloss": "Thin watery oatmeal porridge served"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "in silent workhouse halls",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "gruel",
+                        "gloss": "in silent workhouse halls"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ oakum",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "oakum",
+                    "gloss": "Tar-soaked old ship rope unpicked; strand by strand by inmates.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Tar-soaked old ship rope unpicked",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "oakum",
+                        "gloss": "Tar-soaked old ship rope unpicked"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "strand by strand by inmates",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "oakum",
+                        "gloss": "strand by strand by inmates"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Shaftesbury’s Mines and Factory Acts",
+                "dateChip": "1833–1853",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Lord Shaftesbury",
+                "gloss": "Lord Shaftesbury’s 1842 Mines Act banned females and boys under ten underground, while paid Factory Inspectors and Titus Salt improved mill life.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Lord Shaftesbury",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Lord Shaftesbury",
+                    "gloss": "Compassionate MP known as the Poor; Man’s Earl who fought for children.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Compassionate MP known as the Poor",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Lord Shaftesbury",
+                        "gloss": "Compassionate MP known as the Poor"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Man’s Earl who fought for children",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Lord Shaftesbury",
+                        "gloss": "Man’s Earl who fought for children"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1842 Mines Act",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "1842 Mines Act",
+                    "gloss": "Law banning all women, girls, and; boys under ten from coal pits.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Law banning all women, girls, and",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "1842 Mines Act",
+                        "gloss": "Law banning all women, girls, and"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "boys under ten from coal pits",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "1842 Mines Act",
+                        "gloss": "boys under ten from coal pits"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Factory Inspectors",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Factory Inspectors",
+                    "gloss": "Paid officials checking textile mills; child age and hour limits.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Paid officials checking textile mills",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Factory Inspectors",
+                        "gloss": "Paid officials checking textile mills"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "child age and hour limits",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Factory Inspectors",
+                        "gloss": "child age and hour limits"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Ragged Schools and Barnardo’s Homes",
+                "dateChip": "1844–1880",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Ragged Schools",
+                "gloss": "Volunteer Ragged Schools taught shoeless children free, and after meeting orphan Jim Jarvis in 1870, Dr Thomas Barnardo opened Barnardo’s Homes.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Ragged Schools",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Ragged Schools",
+                    "gloss": "Free charity schools teaching reading and; trades to shoeless poor children.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Free charity schools teaching reading and",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Ragged Schools",
+                        "gloss": "Free charity schools teaching reading and"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "trades to shoeless poor children",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Ragged Schools",
+                        "gloss": "trades to shoeless poor children"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Jim Jarvis",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Jim Jarvis",
+                    "gloss": "Ten-year-old homeless boy who showed; children sleeping on icy roofs.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Ten-year-old homeless boy who showed",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Jim Jarvis",
+                        "gloss": "Ten-year-old homeless boy who showed"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "children sleeping on icy roofs",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Jim Jarvis",
+                        "gloss": "children sleeping on icy roofs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Barnardo’s Homes",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Barnardo’s Homes",
+                    "gloss": "Warm East End shelters promising never; to refuse a destitute child.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Warm East End shelters promising never",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Barnardo’s Homes",
+                        "gloss": "Warm East End shelters promising never"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "to refuse a destitute child",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Barnardo’s Homes",
+                        "gloss": "to refuse a destitute child"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Inside a Victorian Classroom — Slates, Drill and the 1870 Act",
+            "dateChip": "1870–1901",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Board School",
+            "q2Chain": "Board Schools and Free Education → Chanting the Three Rs on Slates → Canes, Dunce’s Caps and Hoops",
+            "gloss": "Board Schools and Free Education → Chanting the Three Rs on Slates → Canes, Dunce’s Caps and Hoops",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Board Schools and Free Education",
+                "dateChip": "1870–1891",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "William Forster",
+                "gloss": "Forster’s 1870 Act built red-brick Board Schools, 1880 made attendance compulsory for ages five to ten, and 1891 abolished weekly penny fees.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "William Forster",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "William Forster",
+                    "gloss": "MP who steered the landmark; 1870 Education Act through Parliament.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "MP who steered the landmark",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "William Forster",
+                        "gloss": "MP who steered the landmark"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "1870 Education Act through Parliament",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "William Forster",
+                        "gloss": "1870 Education Act through Parliament"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "compulsory",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "compulsory",
+                    "gloss": "Required by law from 1880 for; every child aged five to ten.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Required by law from 1880 for",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "compulsory",
+                        "gloss": "Required by law from 1880 for"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "every child aged five to ten",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "compulsory",
+                        "gloss": "every child aged five to ten"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ 1891",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "1891",
+                    "gloss": "Year Parliament ended weekly penny fees; so primary school became free.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Year Parliament ended weekly penny fees",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "1891",
+                        "gloss": "Year Parliament ended weekly penny fees"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "so primary school became free",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "1891",
+                        "gloss": "so primary school became free"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Chanting the Three Rs on Slates",
+                "dateChip": "1870–1901",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "Three Rs",
+                "gloss": "Sixty pupils sat beneath high windows chanting the Three Rs—scratching sums on Welsh slates before dipping steel nibs into inkwells for copperplate script.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Three Rs",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Three Rs",
+                    "gloss": "Core Victorian timetable of; Reading, Writing, and Arithmetic.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Core Victorian timetable of",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Three Rs",
+                        "gloss": "Core Victorian timetable of"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "Reading, Writing, and Arithmetic",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Three Rs",
+                        "gloss": "Reading, Writing, and Arithmetic"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "inkwells",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "inkwells",
+                    "gloss": "Small white porcelain pots set into; wooden desks holding black ink.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Small white porcelain pots set into",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "inkwells",
+                        "gloss": "Small white porcelain pots set into"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "wooden desks holding black ink",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "inkwells",
+                        "gloss": "wooden desks holding black ink"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ copperplate",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "copperplate",
+                    "gloss": "Neat looping cursive handwriting written; with a right-handed dip pen.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Neat looping cursive handwriting written",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "copperplate",
+                        "gloss": "Neat looping cursive handwriting written"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "with a right-handed dip pen",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "copperplate",
+                        "gloss": "with a right-handed dip pen"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Canes, Dunce’s Caps and Hoops",
+                "dateChip": "1870–1901",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "bamboo cane",
+                "gloss": "Teachers punished mistakes with the bamboo cane and Dunce’s Cap, taught boys woodwork while girls sewed, and led drill alongside playground iron hoops.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "bamboo cane",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "bamboo cane",
+                    "gloss": "Thin stick struck across hands when; pupils talked or blotched ink.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Thin stick struck across hands when",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "bamboo cane",
+                        "gloss": "Thin stick struck across hands when"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "pupils talked or blotched ink",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "bamboo cane",
+                        "gloss": "pupils talked or blotched ink"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "needlework",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "needlework",
+                    "gloss": "Afternoon sewing lessons taught to; girls while boys learned woodwork.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Afternoon sewing lessons taught to",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "needlework",
+                        "gloss": "Afternoon sewing lessons taught to"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "girls while boys learned woodwork",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "needlework",
+                        "gloss": "girls while boys learned woodwork"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ iron hoops",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "iron hoops",
+                    "gloss": "Popular playground rings bowled fast; stone yards with a stick.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Popular playground rings bowled fast",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "iron hoops",
+                        "gloss": "Popular playground rings bowled fast"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "stone yards with a stick",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "iron hoops",
+                        "gloss": "stone yards with a stick"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "right",
+        "color": "#be123c",
+        "label": "3. Inventions, Piers & Legacy",
+        "dateChip": "1851–1901",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Crystal Palace",
+        "gloss": "Prince Albert’s Crystal Palace → Telegraphs, Telephones and Lightbulbs → Ada Lovelace and Mary Seacole • Rich Villas and Back-to-Back Courts → Bank Holidays, Piers and Safety Bikes → Diamond Jubilee and 1901 Legacy",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Workshop of the World — The 1851 Crystal Palace and Inventions",
+            "dateChip": "1851–1901",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Crystal Palace",
+            "q2Chain": "Prince Albert’s Crystal Palace → Telegraphs, Telephones and Lightbulbs → Ada Lovelace and Mary Seacole",
+            "gloss": "Prince Albert’s Crystal Palace → Telegraphs, Telephones and Lightbulbs → Ada Lovelace and Mary Seacole",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Prince Albert’s Crystal Palace",
+                "dateChip": "1851",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "Joseph Paxton",
+                "gloss": "In May 1851, Joseph Paxton’s iron-and-glass Crystal Palace welcomed six million visitors to Hyde Park and funded London’s South Kensington museums.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Joseph Paxton",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Joseph Paxton",
+                    "gloss": "Clever gardener-architect who designed; the prefab iron-and-glass hall.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Clever gardener-architect who designed",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Joseph Paxton",
+                        "gloss": "Clever gardener-architect who designed"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "the prefab iron-and-glass hall",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Joseph Paxton",
+                        "gloss": "the prefab iron-and-glass hall"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "100,000",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "100,000",
+                    "gloss": "Number of global inventions and; treasures displayed inside the Exhibition.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Number of global inventions and",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "100,000",
+                        "gloss": "Number of global inventions and"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "treasures displayed inside the Exhibition",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "100,000",
+                        "gloss": "treasures displayed inside the Exhibition"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Science Museum",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "Science Museum",
+                    "gloss": "Famous London museum built with; profits from 1851 Exhibition tickets.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Famous London museum built with",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Science Museum",
+                        "gloss": "Famous London museum built with"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "profits from 1851 Exhibition tickets",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "Science Museum",
+                        "gloss": "profits from 1851 Exhibition tickets"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "Telegraphs, Telephones and Lightbulbs",
+                "dateChip": "1837–1885",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "1876",
+                "gloss": "Electric telegraphs and Bell’s 1876 telephone carried messages along wires, while Joseph Swan’s 1878 lightbulb lit Cragside and flushing toilets cleaned homes.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1876",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "1876",
+                    "gloss": "Year Scottish-born Alexander Graham Bell; patented the speaking telephone.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Year Scottish-born Alexander Graham Bell",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "1876",
+                        "gloss": "Year Scottish-born Alexander Graham Bell"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "patented the speaking telephone",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "1876",
+                        "gloss": "patented the speaking telephone"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Joseph Swan",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Joseph Swan",
+                    "gloss": "Newcastle chemist who demonstrated a; glowing lightbulb in 1878.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Newcastle chemist who demonstrated a",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Joseph Swan",
+                        "gloss": "Newcastle chemist who demonstrated a"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "glowing lightbulb in 1878",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Joseph Swan",
+                        "gloss": "glowing lightbulb in 1878"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Cragside",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Cragside",
+                    "gloss": "Northumberland house first lit; by hydro-electric Swan lightbulbs.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Northumberland house first lit",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Cragside",
+                        "gloss": "Northumberland house first lit"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "by hydro-electric Swan lightbulbs",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Cragside",
+                        "gloss": "by hydro-electric Swan lightbulbs"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Ada Lovelace and Mary Seacole",
+                "dateChip": "1843–1881",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "Ada Lovelace",
+                "gloss": "Ada Lovelace published the first computer algorithm in 1843 for Babbage’s Analytical Engine, while Mary Seacole nursed wounded soldiers in 1855.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Ada Lovelace",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Ada Lovelace",
+                    "gloss": "Brilliant mathematician who foresaw; programmable computers in 1843.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Brilliant mathematician who foresaw",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Ada Lovelace",
+                        "gloss": "Brilliant mathematician who foresaw"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "programmable computers in 1843",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Ada Lovelace",
+                        "gloss": "programmable computers in 1843"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "algorithm",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "algorithm",
+                    "gloss": "Step-by-step mathematical instructions; for Babbage’s machine.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Step-by-step mathematical instructions",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "algorithm",
+                        "gloss": "Step-by-step mathematical instructions"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "for Babbage’s machine",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "algorithm",
+                        "gloss": "for Babbage’s machine"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Mary Seacole",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Mary Seacole",
+                    "gloss": "Jamaican-Scottish nurse who cared for; at her 1855 British Hotel.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Jamaican-Scottish nurse who cared for",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Mary Seacole",
+                        "gloss": "Jamaican-Scottish nurse who cared for"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "at her 1855 British Hotel",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Mary Seacole",
+                        "gloss": "at her 1855 British Hotel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Rich and Poor Homes, Seaside Holidays and 63-Year Legacy",
+            "dateChip": "1850–1901",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Back-to-Back Houses",
+            "q2Chain": "Rich Villas and Back-to-Back Courts → Bank Holidays, Piers and Safety Bikes → Diamond Jubilee and 1901 Legacy",
+            "gloss": "Rich Villas and Back-to-Back Courts → Bank Holidays, Piers and Safety Bikes → Diamond Jubilee and 1901 Legacy",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Rich Villas and Back-to-Back Courts",
+                "dateChip": "1850–1900",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "villas",
+                "gloss": "Wealthy families lived in plush villas with indoor baths and downstairs servants, while poor families shared courtyard taps in cramped back-to-back houses.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "villas",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "villas",
+                    "gloss": "Spacious brick homes of wealthy families; with parlours and indoor baths.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Spacious brick homes of wealthy families",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "villas",
+                        "gloss": "Spacious brick homes of wealthy families"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "with parlours and indoor baths",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "villas",
+                        "gloss": "with parlours and indoor baths"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "servants",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "servants",
+                    "gloss": "Maids and cooks working downstairs; from dawn answering wall bells.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Maids and cooks working downstairs",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "servants",
+                        "gloss": "Maids and cooks working downstairs"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "from dawn answering wall bells",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "servants",
+                        "gloss": "from dawn answering wall bells"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ courtyard tap",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "courtyard tap",
+                    "gloss": "Single outdoor cold water pipe shared; by rows of back-to-back families.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Single outdoor cold water pipe shared",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "courtyard tap",
+                        "gloss": "Single outdoor cold water pipe shared"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "by rows of back-to-back families",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "courtyard tap",
+                        "gloss": "by rows of back-to-back families"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "Bank Holidays, Piers and Safety Bikes",
+                "dateChip": "1871–1895",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Blackpool",
+                "gloss": "The 1871 Bank Holidays Act, cheap seaside excursion trains, Saturday FA Cup football, and 1885 safety bicycles transformed everyday British leisure.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Blackpool",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Blackpool",
+                    "gloss": "Bustling Lancashire seaside pier resort; reached by mill excursion trains.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Bustling Lancashire seaside pier resort",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Blackpool",
+                        "gloss": "Bustling Lancashire seaside pier resort"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "reached by mill excursion trains",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Blackpool",
+                        "gloss": "reached by mill excursion trains"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "FA Cup",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "FA Cup",
+                    "gloss": "Famous national football knockout; competition launched in 1871.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Famous national football knockout",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "FA Cup",
+                        "gloss": "Famous national football knockout"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "competition launched in 1871",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "FA Cup",
+                        "gloss": "competition launched in 1871"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ safety bicycle",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "safety bicycle",
+                    "gloss": "Equal-wheeled 1885 chain bike; that replaced tall penny-farthings.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Equal-wheeled 1885 chain bike",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "safety bicycle",
+                        "gloss": "Equal-wheeled 1885 chain bike"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "that replaced tall penny-farthings",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "safety bicycle",
+                        "gloss": "that replaced tall penny-farthings"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "Diamond Jubilee and 1901 Legacy",
+                "dateChip": "1897–1901",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "1897",
+                "gloss": "After celebrating her sixty-year Diamond Jubilee in 1897 across Britain and the British Empire, Queen Victoria died in January 1901 leaving a modern industrial nation.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "1897",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "1897",
+                    "gloss": "Year Queen Victoria celebrated sixty; years at her Diamond Jubilee.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Year Queen Victoria celebrated sixty",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "1897",
+                        "gloss": "Year Queen Victoria celebrated sixty"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "years at her Diamond Jubilee",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "1897",
+                        "gloss": "years at her Diamond Jubilee"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "British Empire",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "British Empire",
+                    "gloss": "Worldwide territories ruled by Britain; a quarter of Earth’s people.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Worldwide territories ruled by Britain",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "British Empire",
+                        "gloss": "Worldwide territories ruled by Britain"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "a quarter of Earth’s people",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "British Empire",
+                        "gloss": "a quarter of Earth’s people"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Osborne House",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Osborne House",
+                    "gloss": "Seaside royal home on the Isle of; Wight where Victoria died in January 1901.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Seaside royal home on the Isle of",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Osborne House",
+                        "gloss": "Seaside royal home on the Isle of"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "Wight where Victoria died in January 1901",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Osborne House",
+                        "gloss": "Wight where Victoria died in January 1901"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

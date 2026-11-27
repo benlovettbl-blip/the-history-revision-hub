@@ -1,0 +1,1985 @@
+{
+  "unitId": "ks2_crime_and_punishment",
+  "schemaVersion": "v9-5ring-twigs",
+  "optionCode": "KS2",
+  "paperType": "KS2",
+  "paperLabel": "Key Stage 2 History",
+  "courseTitle": "Crime and Punishment Through Time — Roman Courts to Modern Forensics (AD 43–Present)",
+  "examDateBoundary": "AD 43–Present",
+  "disclaimer": "The History Revision Hub — Key Stage 2 Primary History Mind Map.",
+  "root": {
+    "id": "root",
+    "tier": 0,
+    "label": "Crime & Punishment",
+    "subLabel": "Key Stage 2",
+    "dateChip": "AD 43–Present",
+    "gloss": "Two thousand years of British justice — from Roman Bath curse tablets, Anglo-Saxon wergild, and 1215 Magna Carta to Guy Fawkes, the Bloody Code, Elizabeth Fry, 1829 Bobbies, and 1984 DNA forensics.",
+    "children": [
+      {
+        "id": "kt1",
+        "keyTopicNumber": 1,
+        "tier": 1,
+        "side": "left",
+        "color": "#0369a1",
+        "label": "1. Roman & Saxon Justice",
+        "dateChip": "AD 43–1066",
+        "lessonIndex": 0,
+        "stageIndex": 0,
+        "searchTerm": "Twelve Tables",
+        "gloss": "Written Laws and Basilica Magistrates → No Police Force and Unequal Ranks → Bath’s Lead Curse Tablets • Ten-Person Tithings and Hue and Cry → King Alfred and Silver Wergild → Hundred Courts and Trial by Ordeal",
+        "children": [
+          {
+            "id": "kt1_1",
+            "code": "1",
+            "tier": 2,
+            "label": "1. Roman Law, Twelve Tables and Bath Curse Tablets",
+            "dateChip": "AD 43–410",
+            "lessonIndex": 0,
+            "stageIndex": 0,
+            "searchTerm": "Twelve Tables",
+            "q2Chain": "Written Laws and Basilica Magistrates → No Police Force and Unequal Ranks → Bath’s Lead Curse Tablets",
+            "gloss": "Written Laws and Basilica Magistrates → No Police Force and Unequal Ranks → Bath’s Lead Curse Tablets",
+            "children": [
+              {
+                "id": "kt1_1_s1",
+                "tier": 3,
+                "label": "Written Laws and Basilica Magistrates",
+                "dateChip": "AD 43–200",
+                "lessonIndex": 0,
+                "stageIndex": 0,
+                "searchTerm": "Twelve Tables",
+                "gloss": "After AD 43, Rome introduced Britain’s first written laws rooted in the Twelve Tables, judged by town magistrates inside stone basilicas.",
+                "children": [
+                  {
+                    "id": "kt1_1_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Twelve Tables",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "Twelve Tables",
+                    "gloss": "Ancient Roman code establishing; clear written laws.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Ancient Roman code establishing",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Twelve Tables",
+                        "gloss": "Ancient Roman code establishing"
+                      },
+                      {
+                        "id": "kt1_1_s1_p1_t2",
+                        "tier": 5,
+                        "label": "clear written laws",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "Twelve Tables",
+                        "gloss": "clear written laws"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "basilica",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "basilica",
+                    "gloss": "Grand stone town hall where; Roman court cases were heard.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Grand stone town hall where",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "basilica",
+                        "gloss": "Grand stone town hall where"
+                      },
+                      {
+                        "id": "kt1_1_s1_p2_t2",
+                        "tier": 5,
+                        "label": "Roman court cases were heard",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "basilica",
+                        "gloss": "Roman court cases were heard"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ magistrate",
+                    "lessonIndex": 0,
+                    "stageIndex": 0,
+                    "searchTerm": "magistrate",
+                    "gloss": "Senior Roman judge who weighed; witness evidence and set fines.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Senior Roman judge who weighed",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "magistrate",
+                        "gloss": "Senior Roman judge who weighed"
+                      },
+                      {
+                        "id": "kt1_1_s1_p3_t2",
+                        "tier": 5,
+                        "label": "witness evidence and set fines",
+                        "lessonIndex": 0,
+                        "stageIndex": 0,
+                        "searchTerm": "magistrate",
+                        "gloss": "witness evidence and set fines"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s2",
+                "tier": 3,
+                "label": "No Police Force and Unequal Ranks",
+                "dateChip": "AD 43–300",
+                "lessonIndex": 0,
+                "stageIndex": 1,
+                "searchTerm": "vigiles",
+                "gloss": "Victims had to catch suspects themselves, and courts fined wealthy citizens while whipping or condemning enslaved people.",
+                "children": [
+                  {
+                    "id": "kt1_1_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "vigiles",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "vigiles",
+                    "gloss": "Night-watchmen who watched streets for; fires rather than solving thefts.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Night-watchmen who watched streets for",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "vigiles",
+                        "gloss": "Night-watchmen who watched streets for"
+                      },
+                      {
+                        "id": "kt1_1_s2_p1_t2",
+                        "tier": 5,
+                        "label": "fires rather than solving thefts",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "vigiles",
+                        "gloss": "fires rather than solving thefts"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Roman citizens",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "Roman citizens",
+                    "gloss": "Privileged people who usually paid; fines or faced exile.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Privileged people who usually paid",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Roman citizens",
+                        "gloss": "Privileged people who usually paid"
+                      },
+                      {
+                        "id": "kt1_1_s2_p2_t2",
+                        "tier": 5,
+                        "label": "fines or faced exile",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "Roman citizens",
+                        "gloss": "fines or faced exile"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ enslaved people",
+                    "lessonIndex": 0,
+                    "stageIndex": 1,
+                    "searchTerm": "enslaved people",
+                    "gloss": "Workers with no rights who faced; whipping, mines, or the arena.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Workers with no rights who faced",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "enslaved people",
+                        "gloss": "Workers with no rights who faced"
+                      },
+                      {
+                        "id": "kt1_1_s2_p3_t2",
+                        "tier": 5,
+                        "label": "whipping, mines, or the arena",
+                        "lessonIndex": 0,
+                        "stageIndex": 1,
+                        "searchTerm": "enslaved people",
+                        "gloss": "whipping, mines, or the arena"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_1_s3",
+                "tier": 3,
+                "label": "Bath’s Lead Curse Tablets",
+                "dateChip": "c. AD 100–400",
+                "lessonIndex": 0,
+                "stageIndex": 2,
+                "searchTerm": "Aquae Sulis",
+                "gloss": "At Aquae Sulis (Bath), angry bathers scratched Latin pleas onto folded lead curse tablets asking goddess Sulis Minerva to punish cloak thieves.",
+                "children": [
+                  {
+                    "id": "kt1_1_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Aquae Sulis",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Aquae Sulis",
+                    "gloss": "Roman spa town at Bath; built around steaming sacred springs.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Roman spa town at Bath",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Aquae Sulis",
+                        "gloss": "Roman spa town at Bath"
+                      },
+                      {
+                        "id": "kt1_1_s3_p1_t2",
+                        "tier": 5,
+                        "label": "built around steaming sacred springs",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Aquae Sulis",
+                        "gloss": "built around steaming sacred springs"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "curse tablets",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "curse tablets",
+                    "gloss": "Thin folded lead sheets scratched; with Latin pleas against thieves.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Thin folded lead sheets scratched",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "curse tablets",
+                        "gloss": "Thin folded lead sheets scratched"
+                      },
+                      {
+                        "id": "kt1_1_s3_p2_t2",
+                        "tier": 5,
+                        "label": "with Latin pleas against thieves",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "curse tablets",
+                        "gloss": "with Latin pleas against thieves"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_1_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Sulis Minerva",
+                    "lessonIndex": 0,
+                    "stageIndex": 2,
+                    "searchTerm": "Sulis Minerva",
+                    "gloss": "Goddess asked to punish; unseen bathhouse cloak thieves.",
+                    "children": [
+                      {
+                        "id": "kt1_1_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Goddess asked to punish",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Sulis Minerva",
+                        "gloss": "Goddess asked to punish"
+                      },
+                      {
+                        "id": "kt1_1_s3_p3_t2",
+                        "tier": 5,
+                        "label": "unseen bathhouse cloak thieves",
+                        "lessonIndex": 0,
+                        "stageIndex": 2,
+                        "searchTerm": "Sulis Minerva",
+                        "gloss": "unseen bathhouse cloak thieves"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt1_2",
+            "code": "2",
+            "tier": 2,
+            "label": "2. Anglo-Saxon Tithings, Wergild and Trial by Ordeal",
+            "dateChip": "AD 410–1066",
+            "lessonIndex": 1,
+            "stageIndex": 0,
+            "searchTerm": "Tithing",
+            "q2Chain": "Ten-Person Tithings and Hue and Cry → King Alfred and Silver Wergild → Hundred Courts and Trial by Ordeal",
+            "gloss": "Ten-Person Tithings and Hue and Cry → King Alfred and Silver Wergild → Hundred Courts and Trial by Ordeal",
+            "children": [
+              {
+                "id": "kt1_2_s1",
+                "tier": 3,
+                "label": "Ten-Person Tithings and Hue and Cry",
+                "dateChip": "AD 410–900",
+                "lessonIndex": 1,
+                "stageIndex": 0,
+                "searchTerm": "tithing",
+                "gloss": "Every male villager aged twelve joined a ten-person tithing and had to chase thieves immediately whenever the Hue and Cry horn sounded.",
+                "children": [
+                  {
+                    "id": "kt1_2_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "tithing",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "tithing",
+                    "gloss": "Group of ten neighbours aged twelve; and over answering for one another.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Group of ten neighbours aged twelve",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "tithing",
+                        "gloss": "Group of ten neighbours aged twelve"
+                      },
+                      {
+                        "id": "kt1_2_s1_p1_t2",
+                        "tier": 5,
+                        "label": "and over answering for one another",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "tithing",
+                        "gloss": "and over answering for one another"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "King’s Peace",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "King’s Peace",
+                    "gloss": "Lawful village order that every; tithing promised to protect.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Lawful village order that every",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "King’s Peace",
+                        "gloss": "Lawful village order that every"
+                      },
+                      {
+                        "id": "kt1_2_s1_p2_t2",
+                        "tier": 5,
+                        "label": "tithing promised to protect",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "King’s Peace",
+                        "gloss": "tithing promised to protect"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Hue and Cry",
+                    "lessonIndex": 1,
+                    "stageIndex": 0,
+                    "searchTerm": "Hue and Cry",
+                    "gloss": "Loud horn and shout alarm forcing; every villager to chase a thief.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Loud horn and shout alarm forcing",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Hue and Cry",
+                        "gloss": "Loud horn and shout alarm forcing"
+                      },
+                      {
+                        "id": "kt1_2_s1_p3_t2",
+                        "tier": 5,
+                        "label": "every villager to chase a thief",
+                        "lessonIndex": 1,
+                        "stageIndex": 0,
+                        "searchTerm": "Hue and Cry",
+                        "gloss": "every villager to chase a thief"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s2",
+                "tier": 3,
+                "label": "King Alfred and Silver Wergild",
+                "dateChip": "c. AD 600–900",
+                "lessonIndex": 1,
+                "stageIndex": 1,
+                "searchTerm": "blood feud",
+                "gloss": "Royal law codes fixed silver wergild (\"person-price\") payments to stop family blood feuds, though noble thanes were valued six times above ceorl farmers.",
+                "children": [
+                  {
+                    "id": "kt1_2_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "blood feud",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "blood feud",
+                    "gloss": "Deadly cycle of revenge attacks; between two angry families.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Deadly cycle of revenge attacks",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "blood feud",
+                        "gloss": "Deadly cycle of revenge attacks"
+                      },
+                      {
+                        "id": "kt1_2_s2_p1_t2",
+                        "tier": 5,
+                        "label": "between two angry families",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "blood feud",
+                        "gloss": "between two angry families"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "wergild",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "wergild",
+                    "gloss": "Fixed silver person-price paid to; an injured victim’s family.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Fixed silver person-price paid to",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "wergild",
+                        "gloss": "Fixed silver person-price paid to"
+                      },
+                      {
+                        "id": "kt1_2_s2_p2_t2",
+                        "tier": 5,
+                        "label": "an injured victim’s family",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "wergild",
+                        "gloss": "an injured victim’s family"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ King Alfred the Great",
+                    "lessonIndex": 1,
+                    "stageIndex": 1,
+                    "searchTerm": "King Alfred the Great",
+                    "gloss": "Ruler who gathered English laws into; his written Domboc law code.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Ruler who gathered English laws into",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "King Alfred the Great",
+                        "gloss": "Ruler who gathered English laws into"
+                      },
+                      {
+                        "id": "kt1_2_s2_p3_t2",
+                        "tier": 5,
+                        "label": "his written Domboc law code",
+                        "lessonIndex": 1,
+                        "stageIndex": 1,
+                        "searchTerm": "King Alfred the Great",
+                        "gloss": "his written Domboc law code"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt1_2_s3",
+                "tier": 3,
+                "label": "Hundred Courts and Trial by Ordeal",
+                "dateChip": "AD 600–1066",
+                "lessonIndex": 1,
+                "stageIndex": 2,
+                "searchTerm": "Hundred Court",
+                "gloss": "When oath-helpers at the Hundred Court could not settle a dispute, priests held Trial by Hot Iron or Cold Water trusting God to judge.",
+                "children": [
+                  {
+                    "id": "kt1_2_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Hundred Court",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Hundred Court",
+                    "gloss": "Monthly open-air local court where; elders heard witness oaths.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Monthly open-air local court where",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Hundred Court",
+                        "gloss": "Monthly open-air local court where"
+                      },
+                      {
+                        "id": "kt1_2_s3_p1_t2",
+                        "tier": 5,
+                        "label": "elders heard witness oaths",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Hundred Court",
+                        "gloss": "elders heard witness oaths"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Trial by Ordeal",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Trial by Ordeal",
+                    "gloss": "Last-resort church test asking God; to reveal guilt or innocence.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Last-resort church test asking God",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Trial by Ordeal",
+                        "gloss": "Last-resort church test asking God"
+                      },
+                      {
+                        "id": "kt1_2_s3_p2_t2",
+                        "tier": 5,
+                        "label": "to reveal guilt or innocence",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Trial by Ordeal",
+                        "gloss": "to reveal guilt or innocence"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt1_2_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Trial by Hot Iron",
+                    "lessonIndex": 1,
+                    "stageIndex": 2,
+                    "searchTerm": "Trial by Hot Iron",
+                    "gloss": "Carrying glowing iron three paces before che; the bandaged hand three days later.",
+                    "children": [
+                      {
+                        "id": "kt1_2_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Carrying glowing iron three paces before che",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Trial by Hot Iron",
+                        "gloss": "Carrying glowing iron three paces before che"
+                      },
+                      {
+                        "id": "kt1_2_s3_p3_t2",
+                        "tier": 5,
+                        "label": "the bandaged hand three days later",
+                        "lessonIndex": 1,
+                        "stageIndex": 2,
+                        "searchTerm": "Trial by Hot Iron",
+                        "gloss": "the bandaged hand three days later"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt2",
+        "keyTopicNumber": 2,
+        "tier": 1,
+        "side": "left",
+        "color": "#b45309",
+        "label": "2. Medieval & Early Modern",
+        "dateChip": "1066–1700",
+        "lessonIndex": 2,
+        "stageIndex": 0,
+        "searchTerm": "Forest Laws",
+        "gloss": "Norman Forest Laws and Royal Fines → Common Law Juries and Magna Carta → Church Sanctuary, Stocks and Pillories • Tudor Vagrants and the 1601 Poor Law → Guy Fawkes and High Treason Deterrence → Witch Panics Ended by Science",
+        "children": [
+          {
+            "id": "kt2_3",
+            "code": "3",
+            "tier": 2,
+            "label": "3. Norman Forest Laws, Sanctuary and Royal Courts",
+            "dateChip": "1066–1485",
+            "lessonIndex": 2,
+            "stageIndex": 0,
+            "searchTerm": "Forest Laws",
+            "q2Chain": "Norman Forest Laws and Royal Fines → Common Law Juries and Magna Carta → Church Sanctuary, Stocks and Pillories",
+            "gloss": "Norman Forest Laws and Royal Fines → Common Law Juries and Magna Carta → Church Sanctuary, Stocks and Pillories",
+            "children": [
+              {
+                "id": "kt2_3_s1",
+                "tier": 3,
+                "label": "Norman Forest Laws and Royal Fines",
+                "dateChip": "1066–1150",
+                "lessonIndex": 2,
+                "stageIndex": 0,
+                "searchTerm": "William the Conqueror",
+                "gloss": "William I kept Saxon tithings and the Hue and Cry, shifted fines to the King’s treasury, and banned peasant deer hunting under harsh Forest Laws.",
+                "children": [
+                  {
+                    "id": "kt2_3_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "William the Conqueror",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "William the Conqueror",
+                    "gloss": "Norman king who kept tithings; yet created royal hunting reserves.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Norman king who kept tithings",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "William the Conqueror",
+                        "gloss": "Norman king who kept tithings"
+                      },
+                      {
+                        "id": "kt2_3_s1_p1_t2",
+                        "tier": 5,
+                        "label": "yet created royal hunting reserves",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "William the Conqueror",
+                        "gloss": "yet created royal hunting reserves"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Forest Laws",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "Forest Laws",
+                    "gloss": "Strict Norman rules banning villagers from; hunting deer or cutting wood.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Strict Norman rules banning villagers from",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Forest Laws",
+                        "gloss": "Strict Norman rules banning villagers from"
+                      },
+                      {
+                        "id": "kt2_3_s1_p2_t2",
+                        "tier": 5,
+                        "label": "hunting deer or cutting wood",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "Forest Laws",
+                        "gloss": "hunting deer or cutting wood"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ poaching",
+                    "lessonIndex": 2,
+                    "stageIndex": 0,
+                    "searchTerm": "poaching",
+                    "gloss": "Secretly hunting deer or rabbits; on royal or lordly land.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Secretly hunting deer or rabbits",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "poaching",
+                        "gloss": "Secretly hunting deer or rabbits"
+                      },
+                      {
+                        "id": "kt2_3_s1_p3_t2",
+                        "tier": 5,
+                        "label": "on royal or lordly land",
+                        "lessonIndex": 2,
+                        "stageIndex": 0,
+                        "searchTerm": "poaching",
+                        "gloss": "on royal or lordly land"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s2",
+                "tier": 3,
+                "label": "Common Law Juries and Magna Carta",
+                "dateChip": "1154–1215",
+                "lessonIndex": 2,
+                "stageIndex": 1,
+                "searchTerm": "Common Law",
+                "gloss": "Henry II’s travelling judges built one Common Law with twelve-person juries, cemented in 1215 by Magna Carta and the Pope’s ban on Ordeals.",
+                "children": [
+                  {
+                    "id": "kt2_3_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Common Law",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Common Law",
+                    "gloss": "One shared English legal system enforced; by Henry II’s travelling judges.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p1_t1",
+                        "tier": 5,
+                        "label": "One shared English legal system enforced",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Common Law",
+                        "gloss": "One shared English legal system enforced"
+                      },
+                      {
+                        "id": "kt2_3_s2_p1_t2",
+                        "tier": 5,
+                        "label": "by Henry II’s travelling judges",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Common Law",
+                        "gloss": "by Henry II’s travelling judges"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "jury",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "jury",
+                    "gloss": "Twelve sworn neighbours weighing courtroom; evidence to decide verdicts.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Twelve sworn neighbours weighing courtroom",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "jury",
+                        "gloss": "Twelve sworn neighbours weighing courtroom"
+                      },
+                      {
+                        "id": "kt2_3_s2_p2_t2",
+                        "tier": 5,
+                        "label": "evidence to decide verdicts",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "jury",
+                        "gloss": "evidence to decide verdicts"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Magna Carta",
+                    "lessonIndex": 2,
+                    "stageIndex": 1,
+                    "searchTerm": "Magna Carta",
+                    "gloss": "1215 charter sealed by King; John promising lawful trials.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s2_p3_t1",
+                        "tier": 5,
+                        "label": "1215 charter sealed by King",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Magna Carta",
+                        "gloss": "1215 charter sealed by King"
+                      },
+                      {
+                        "id": "kt2_3_s2_p3_t2",
+                        "tier": 5,
+                        "label": "John promising lawful trials",
+                        "lessonIndex": 2,
+                        "stageIndex": 1,
+                        "searchTerm": "Magna Carta",
+                        "gloss": "John promising lawful trials"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_3_s3",
+                "tier": 3,
+                "label": "Church Sanctuary, Stocks and Pillories",
+                "dateChip": "1100–1485",
+                "lessonIndex": 2,
+                "stageIndex": 2,
+                "searchTerm": "Durham Cathedral",
+                "gloss": "Fugitives striking cathedral knockers claimed up to forty days of Church sanctuary, while market towns shamed cheats in wooden stocks and pillories.",
+                "children": [
+                  {
+                    "id": "kt2_3_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Durham Cathedral",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "Durham Cathedral",
+                    "gloss": "Northern cathedral famous for its; twelfth-century bronze lion Sanctuary Knocke.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Northern cathedral famous for its",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Durham Cathedral",
+                        "gloss": "Northern cathedral famous for its"
+                      },
+                      {
+                        "id": "kt2_3_s3_p1_t2",
+                        "tier": 5,
+                        "label": "twelfth-century bronze lion Sanctuary Knocke",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "Durham Cathedral",
+                        "gloss": "twelfth-century bronze lion Sanctuary Knocke"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "sanctuary",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "sanctuary",
+                    "gloss": "Safe Church shelter lasting up to; forty days before trial or exile.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Safe Church shelter lasting up to",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "sanctuary",
+                        "gloss": "Safe Church shelter lasting up to"
+                      },
+                      {
+                        "id": "kt2_3_s3_p2_t2",
+                        "tier": 5,
+                        "label": "forty days before trial or exile",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "sanctuary",
+                        "gloss": "forty days before trial or exile"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_3_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ pillory",
+                    "lessonIndex": 2,
+                    "stageIndex": 2,
+                    "searchTerm": "pillory",
+                    "gloss": "Upright wooden frame locking a; dishonest trader’s head and wrists.",
+                    "children": [
+                      {
+                        "id": "kt2_3_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Upright wooden frame locking a",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "pillory",
+                        "gloss": "Upright wooden frame locking a"
+                      },
+                      {
+                        "id": "kt2_3_s3_p3_t2",
+                        "tier": 5,
+                        "label": "dishonest trader’s head and wrists",
+                        "lessonIndex": 2,
+                        "stageIndex": 2,
+                        "searchTerm": "pillory",
+                        "gloss": "dishonest trader’s head and wrists"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt2_4",
+            "code": "4",
+            "tier": 2,
+            "label": "4. Tudor Vagrants, High Treason and Witchcraft Trials",
+            "dateChip": "1485–1700",
+            "lessonIndex": 3,
+            "stageIndex": 0,
+            "searchTerm": "Vagrant",
+            "q2Chain": "Tudor Vagrants and the 1601 Poor Law → Guy Fawkes and High Treason Deterrence → Witch Panics Ended by Science",
+            "gloss": "Tudor Vagrants and the 1601 Poor Law → Guy Fawkes and High Treason Deterrence → Witch Panics Ended by Science",
+            "children": [
+              {
+                "id": "kt2_4_s1",
+                "tier": 3,
+                "label": "Tudor Vagrants and the 1601 Poor Law",
+                "dateChip": "1485–1603",
+                "lessonIndex": 3,
+                "stageIndex": 0,
+                "searchTerm": "vagrants",
+                "gloss": "Rising poverty put vagrants on Tudor roads; the 1601 Poor Law aided sick locals while whipping healthy \"sturdy beggars\" behind carts.",
+                "children": [
+                  {
+                    "id": "kt2_4_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "vagrants",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "vagrants",
+                    "gloss": "Homeless jobless people wandering; from parish to parish.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Homeless jobless people wandering",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "vagrants",
+                        "gloss": "Homeless jobless people wandering"
+                      },
+                      {
+                        "id": "kt2_4_s1_p1_t2",
+                        "tier": 5,
+                        "label": "from parish to parish",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "vagrants",
+                        "gloss": "from parish to parish"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "1601 Poor Law",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "1601 Poor Law",
+                    "gloss": "Elizabethan Act aiding elderly locals; while punishing able-bodied beggars.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Elizabethan Act aiding elderly locals",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "1601 Poor Law",
+                        "gloss": "Elizabethan Act aiding elderly locals"
+                      },
+                      {
+                        "id": "kt2_4_s1_p2_t2",
+                        "tier": 5,
+                        "label": "while punishing able-bodied beggars",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "1601 Poor Law",
+                        "gloss": "while punishing able-bodied beggars"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ sturdy beggars",
+                    "lessonIndex": 3,
+                    "stageIndex": 0,
+                    "searchTerm": "sturdy beggars",
+                    "gloss": "Tudor label for healthy jobless; people whipped behind carts.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Tudor label for healthy jobless",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "sturdy beggars",
+                        "gloss": "Tudor label for healthy jobless"
+                      },
+                      {
+                        "id": "kt2_4_s1_p3_t2",
+                        "tier": 5,
+                        "label": "people whipped behind carts",
+                        "lessonIndex": 3,
+                        "stageIndex": 0,
+                        "searchTerm": "sturdy beggars",
+                        "gloss": "people whipped behind carts"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s2",
+                "tier": 3,
+                "label": "Guy Fawkes and High Treason Deterrence",
+                "dateChip": "1605",
+                "lessonIndex": 3,
+                "stageIndex": 1,
+                "searchTerm": "High Treason",
+                "gloss": "Alerted by the Monteagle Letter on 4–5 November 1605, guards caught Guy Fawkes beside 36 gunpowder barrels and punished High Treason fiercely.",
+                "children": [
+                  {
+                    "id": "kt2_4_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "High Treason",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "High Treason",
+                    "gloss": "Plotting to kill the; monarch or destroy Parliament.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Plotting to kill the",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "High Treason",
+                        "gloss": "Plotting to kill the"
+                      },
+                      {
+                        "id": "kt2_4_s2_p1_t2",
+                        "tier": 5,
+                        "label": "monarch or destroy Parliament",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "High Treason",
+                        "gloss": "monarch or destroy Parliament"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Monteagle Letter",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "Monteagle Letter",
+                    "gloss": "Unsigned warning note that tipped off King; James I before 5 November 1605.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Unsigned warning note that tipped off King",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Monteagle Letter",
+                        "gloss": "Unsigned warning note that tipped off King"
+                      },
+                      {
+                        "id": "kt2_4_s2_p2_t2",
+                        "tier": 5,
+                        "label": "James I before 5 November 1605",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "Monteagle Letter",
+                        "gloss": "James I before 5 November 1605"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ dark lantern",
+                    "lessonIndex": 3,
+                    "stageIndex": 1,
+                    "searchTerm": "dark lantern",
+                    "gloss": "Shuttered iron candle holder seized with; Guy Fawkes beside 36 barrels.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Shuttered iron candle holder seized with",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "dark lantern",
+                        "gloss": "Shuttered iron candle holder seized with"
+                      },
+                      {
+                        "id": "kt2_4_s2_p3_t2",
+                        "tier": 5,
+                        "label": "Guy Fawkes beside 36 barrels",
+                        "lessonIndex": 3,
+                        "stageIndex": 1,
+                        "searchTerm": "dark lantern",
+                        "gloss": "Guy Fawkes beside 36 barrels"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt2_4_s3",
+                "tier": 3,
+                "label": "Witch Panics Ended by Science",
+                "dateChip": "1645–1736",
+                "lessonIndex": 3,
+                "stageIndex": 2,
+                "searchTerm": "superstition",
+                "gloss": "Civil War panic let Matthew Hopkins accuse East Anglian women in 1645–1647, until post-1660 peace, science, and strict judges ended witch trials.",
+                "children": [
+                  {
+                    "id": "kt2_4_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "superstition",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "superstition",
+                    "gloss": "Blaming bad harvests or illness on; magic instead of natural causes.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Blaming bad harvests or illness on",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "superstition",
+                        "gloss": "Blaming bad harvests or illness on"
+                      },
+                      {
+                        "id": "kt2_4_s3_p1_t2",
+                        "tier": 5,
+                        "label": "magic instead of natural causes",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "superstition",
+                        "gloss": "magic instead of natural causes"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Matthew Hopkins",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Matthew Hopkins",
+                    "gloss": "East Anglian Witchfinder General who; charged towns fees in 1645–1647.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p2_t1",
+                        "tier": 5,
+                        "label": "East Anglian Witchfinder General who",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Matthew Hopkins",
+                        "gloss": "East Anglian Witchfinder General who"
+                      },
+                      {
+                        "id": "kt2_4_s3_p2_t2",
+                        "tier": 5,
+                        "label": "charged towns fees in 1645–1647",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Matthew Hopkins",
+                        "gloss": "charged towns fees in 1645–1647"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt2_4_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ Royal Society",
+                    "lessonIndex": 3,
+                    "stageIndex": 2,
+                    "searchTerm": "Royal Society",
+                    "gloss": "Scientific group founded in 1660; encouraging rational proof over magic.",
+                    "children": [
+                      {
+                        "id": "kt2_4_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Scientific group founded in 1660",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Royal Society",
+                        "gloss": "Scientific group founded in 1660"
+                      },
+                      {
+                        "id": "kt2_4_s3_p3_t2",
+                        "tier": 5,
+                        "label": "encouraging rational proof over magic",
+                        "lessonIndex": 3,
+                        "stageIndex": 2,
+                        "searchTerm": "Royal Society",
+                        "gloss": "encouraging rational proof over magic"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kt3",
+        "keyTopicNumber": 3,
+        "tier": 1,
+        "side": "right",
+        "color": "#7c3aed",
+        "label": "3. Bloody Code, Bobbies & DNA",
+        "dateChip": "1700–Present",
+        "lessonIndex": 4,
+        "stageIndex": 0,
+        "searchTerm": "Smuggling",
+        "gloss": "Coastal Smugglers and Highwaymen → The 220-Crime Bloody Code Fails → Australian Ships and Elizabeth Fry • Sir Robert Peel’s 1829 Bobbies → Pentonville Cells to Ending Hanging → 1901 Fingerprints and 1984 DNA",
+        "children": [
+          {
+            "id": "kt3_5",
+            "code": "5",
+            "tier": 2,
+            "label": "5. Smugglers, Highwaymen and The Bloody Code",
+            "dateChip": "1700–1820",
+            "lessonIndex": 4,
+            "stageIndex": 0,
+            "searchTerm": "Smuggling",
+            "q2Chain": "Coastal Smugglers and Highwaymen → The 220-Crime Bloody Code Fails → Australian Ships and Elizabeth Fry",
+            "gloss": "Coastal Smugglers and Highwaymen → The 220-Crime Bloody Code Fails → Australian Ships and Elizabeth Fry",
+            "children": [
+              {
+                "id": "kt3_5_s1",
+                "tier": 3,
+                "label": "Coastal Smugglers and Highwaymen",
+                "dateChip": "1700–1800",
+                "lessonIndex": 4,
+                "stageIndex": 0,
+                "searchTerm": "import taxes",
+                "gloss": "Heavy tea taxes fuelled midnight coastal smuggling, while unlit roads and flintlock pistols let highwaymen rob cash-carrying stagecoaches.",
+                "children": [
+                  {
+                    "id": "kt3_5_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "import taxes",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "import taxes",
+                    "gloss": "Heavy customs duties making legal; tea, silk, and brandy expensive.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Heavy customs duties making legal",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "import taxes",
+                        "gloss": "Heavy customs duties making legal"
+                      },
+                      {
+                        "id": "kt3_5_s1_p1_t2",
+                        "tier": 5,
+                        "label": "tea, silk, and brandy expensive",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "import taxes",
+                        "gloss": "tea, silk, and brandy expensive"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "smuggling",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "smuggling",
+                    "gloss": "Secretly landing untaxed barrels onto; dark coves at night.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Secretly landing untaxed barrels onto",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "smuggling",
+                        "gloss": "Secretly landing untaxed barrels onto"
+                      },
+                      {
+                        "id": "kt3_5_s1_p2_t2",
+                        "tier": 5,
+                        "label": "dark coves at night",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "smuggling",
+                        "gloss": "dark coves at night"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ highwaymen",
+                    "lessonIndex": 4,
+                    "stageIndex": 0,
+                    "searchTerm": "highwaymen",
+                    "gloss": "Mounted pistol robbers like Dick; Turpin holding up lonely coaches.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Mounted pistol robbers like Dick",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "highwaymen",
+                        "gloss": "Mounted pistol robbers like Dick"
+                      },
+                      {
+                        "id": "kt3_5_s1_p3_t2",
+                        "tier": 5,
+                        "label": "Turpin holding up lonely coaches",
+                        "lessonIndex": 4,
+                        "stageIndex": 0,
+                        "searchTerm": "highwaymen",
+                        "gloss": "Turpin holding up lonely coaches"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s2",
+                "tier": 3,
+                "label": "The 220-Crime Bloody Code Fails",
+                "dateChip": "1688–1820",
+                "lessonIndex": 4,
+                "stageIndex": 1,
+                "searchTerm": "Bloody Code",
+                "gloss": "Refusing to fund police, MPs passed over 220 death-penalty laws (\"the Bloody Code\"), yet sympathetic juries refused to hang petty thieves.",
+                "children": [
+                  {
+                    "id": "kt3_5_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Bloody Code",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "Bloody Code",
+                    "gloss": "Over 220 Georgian laws punishing; even small thefts with death.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p1_t1",
+                        "tier": 5,
+                        "label": "Over 220 Georgian laws punishing",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Bloody Code",
+                        "gloss": "Over 220 Georgian laws punishing"
+                      },
+                      {
+                        "id": "kt3_5_s2_p1_t2",
+                        "tier": 5,
+                        "label": "even small thefts with death",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "Bloody Code",
+                        "gloss": "even small thefts with death"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "five shillings",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "five shillings",
+                    "gloss": "Shop theft amount that carried; the death penalty by 1810.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Shop theft amount that carried",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "five shillings",
+                        "gloss": "Shop theft amount that carried"
+                      },
+                      {
+                        "id": "kt3_5_s2_p2_t2",
+                        "tier": 5,
+                        "label": "the death penalty by 1810",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "five shillings",
+                        "gloss": "the death penalty by 1810"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ twelve-person juries",
+                    "lessonIndex": 4,
+                    "stageIndex": 1,
+                    "searchTerm": "twelve-person juries",
+                    "gloss": "Ordinary jurors who undervalued stolen; goods to spare petty thieves.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Ordinary jurors who undervalued stolen",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "twelve-person juries",
+                        "gloss": "Ordinary jurors who undervalued stolen"
+                      },
+                      {
+                        "id": "kt3_5_s2_p3_t2",
+                        "tier": 5,
+                        "label": "goods to spare petty thieves",
+                        "lessonIndex": 4,
+                        "stageIndex": 1,
+                        "searchTerm": "twelve-person juries",
+                        "gloss": "goods to spare petty thieves"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_5_s3",
+                "tier": 3,
+                "label": "Australian Ships and Elizabeth Fry",
+                "dateChip": "1787–1868",
+                "lessonIndex": 4,
+                "stageIndex": 2,
+                "searchTerm": "transportation",
+                "gloss": "Britain transported over 160,000 convicts to Australia (1787–1868), while Elizabeth Fry’s Newgate school proved humane rehabilitation worked.",
+                "children": [
+                  {
+                    "id": "kt3_5_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "transportation",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "transportation",
+                    "gloss": "Shipping over 160,000 British convicts to; Australia between 1787 and 1868.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Shipping over 160,000 British convicts to",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "transportation",
+                        "gloss": "Shipping over 160,000 British convicts to"
+                      },
+                      {
+                        "id": "kt3_5_s3_p1_t2",
+                        "tier": 5,
+                        "label": "Australia between 1787 and 1868",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "transportation",
+                        "gloss": "Australia between 1787 and 1868"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Elizabeth Fry",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "Elizabeth Fry",
+                    "gloss": "Quaker reformer who started schooling; and sewing inside Newgate Prison.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Quaker reformer who started schooling",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Elizabeth Fry",
+                        "gloss": "Quaker reformer who started schooling"
+                      },
+                      {
+                        "id": "kt3_5_s3_p2_t2",
+                        "tier": 5,
+                        "label": "and sewing inside Newgate Prison",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "Elizabeth Fry",
+                        "gloss": "and sewing inside Newgate Prison"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_5_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ rehabilitation",
+                    "lessonIndex": 4,
+                    "stageIndex": 2,
+                    "searchTerm": "rehabilitation",
+                    "gloss": "Helping prisoners reform through clean; wards, reading, and work skills.",
+                    "children": [
+                      {
+                        "id": "kt3_5_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Helping prisoners reform through clean",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "rehabilitation",
+                        "gloss": "Helping prisoners reform through clean"
+                      },
+                      {
+                        "id": "kt3_5_s3_p3_t2",
+                        "tier": 5,
+                        "label": "wards, reading, and work skills",
+                        "lessonIndex": 4,
+                        "stageIndex": 2,
+                        "searchTerm": "rehabilitation",
+                        "gloss": "wards, reading, and work skills"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kt3_6",
+            "code": "6",
+            "tier": 2,
+            "label": "6. Peel’s 1829 Bobbies, Victorian Prisons and Forensics",
+            "dateChip": "1829–Present",
+            "lessonIndex": 5,
+            "stageIndex": 0,
+            "searchTerm": "Peelers",
+            "q2Chain": "Sir Robert Peel’s 1829 Bobbies → Pentonville Cells to Ending Hanging → 1901 Fingerprints and 1984 DNA",
+            "gloss": "Sir Robert Peel’s 1829 Bobbies → Pentonville Cells to Ending Hanging → 1901 Fingerprints and 1984 DNA",
+            "children": [
+              {
+                "id": "kt3_6_s1",
+                "tier": 3,
+                "label": "Sir Robert Peel’s 1829 Bobbies",
+                "dateChip": "1829–1856",
+                "lessonIndex": 5,
+                "stageIndex": 0,
+                "searchTerm": "Sir Robert Peel",
+                "gloss": "Sir Robert Peel’s 1829 Metropolitan Police Act put 1,000 blue-coated unarmed Bobbies onto London beats to prevent crime by public consent.",
+                "children": [
+                  {
+                    "id": "kt3_6_s1_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Sir Robert Peel",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Sir Robert Peel",
+                    "gloss": "Home Secretary who founded London’s; Metropolitan Police in 1829.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p1_t1",
+                        "tier": 5,
+                        "label": "Home Secretary who founded London’s",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Sir Robert Peel",
+                        "gloss": "Home Secretary who founded London’s"
+                      },
+                      {
+                        "id": "kt3_6_s1_p1_t2",
+                        "tier": 5,
+                        "label": "Metropolitan Police in 1829",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Sir Robert Peel",
+                        "gloss": "Metropolitan Police in 1829"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Bobbies",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "Bobbies",
+                    "gloss": "Friendly nickname for uniformed police weari; blue coats and top hats.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p2_t1",
+                        "tier": 5,
+                        "label": "Friendly nickname for uniformed police weari",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Bobbies",
+                        "gloss": "Friendly nickname for uniformed police weari"
+                      },
+                      {
+                        "id": "kt3_6_s1_p2_t2",
+                        "tier": 5,
+                        "label": "blue coats and top hats",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "Bobbies",
+                        "gloss": "blue coats and top hats"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s1_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ policing by consent",
+                    "lessonIndex": 5,
+                    "stageIndex": 0,
+                    "searchTerm": "policing by consent",
+                    "gloss": "Keeping peace with public trust and; wooden truncheons rather than guns.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s1_p3_t1",
+                        "tier": 5,
+                        "label": "Keeping peace with public trust and",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "policing by consent",
+                        "gloss": "Keeping peace with public trust and"
+                      },
+                      {
+                        "id": "kt3_6_s1_p3_t2",
+                        "tier": 5,
+                        "label": "wooden truncheons rather than guns",
+                        "lessonIndex": 5,
+                        "stageIndex": 0,
+                        "searchTerm": "policing by consent",
+                        "gloss": "wooden truncheons rather than guns"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s2",
+                "tier": 3,
+                "label": "Pentonville Cells to Ending Hanging",
+                "dateChip": "1842–1965",
+                "lessonIndex": 5,
+                "stageIndex": 1,
+                "searchTerm": "Pentonville Prison",
+                "gloss": "Pentonville (1842) tested solitary cells and treadwheels, before Britain ended public hanging (1868), abolished murder executions (1965), and expanded rehabilitation.",
+                "children": [
+                  {
+                    "id": "kt3_6_s2_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Pentonville Prison",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Pentonville Prison",
+                    "gloss": "1842 London prison built for; solitary cells and hard labour.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p1_t1",
+                        "tier": 5,
+                        "label": "1842 London prison built for",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Pentonville Prison",
+                        "gloss": "1842 London prison built for"
+                      },
+                      {
+                        "id": "kt3_6_s2_p1_t2",
+                        "tier": 5,
+                        "label": "solitary cells and hard labour",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Pentonville Prison",
+                        "gloss": "solitary cells and hard labour"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Separate System",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "Separate System",
+                    "gloss": "Strict Victorian regime keeping; inmates silent and isolated.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p2_t1",
+                        "tier": 5,
+                        "label": "Strict Victorian regime keeping",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Separate System",
+                        "gloss": "Strict Victorian regime keeping"
+                      },
+                      {
+                        "id": "kt3_6_s2_p2_t2",
+                        "tier": 5,
+                        "label": "inmates silent and isolated",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "Separate System",
+                        "gloss": "inmates silent and isolated"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s2_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ 1965",
+                    "lessonIndex": 5,
+                    "stageIndex": 1,
+                    "searchTerm": "1965",
+                    "gloss": "Year Parliament abolished the death; penalty for murder in Britain.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s2_p3_t1",
+                        "tier": 5,
+                        "label": "Year Parliament abolished the death",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "1965",
+                        "gloss": "Year Parliament abolished the death"
+                      },
+                      {
+                        "id": "kt3_6_s2_p3_t2",
+                        "tier": 5,
+                        "label": "penalty for murder in Britain",
+                        "lessonIndex": 5,
+                        "stageIndex": 1,
+                        "searchTerm": "1965",
+                        "gloss": "penalty for murder in Britain"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "kt3_6_s3",
+                "tier": 3,
+                "label": "1901 Fingerprints and 1984 DNA",
+                "dateChip": "1901–Present",
+                "lessonIndex": 5,
+                "stageIndex": 2,
+                "searchTerm": "Fingerprint Bureau",
+                "gloss": "Scotland Yard’s 1901 Fingerprint Bureau, 1937 999 calls, and Sir Alec Jeffreys’s 1984 Leicester DNA profiling replaced guesswork with scientific forensics.",
+                "children": [
+                  {
+                    "id": "kt3_6_s3_p1",
+                    "tier": 4,
+                    "tag": "Cause",
+                    "label": "Fingerprint Bureau",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Fingerprint Bureau",
+                    "gloss": "Opened at Scotland Yard in 1901; to match unique fingertip ridges.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p1_t1",
+                        "tier": 5,
+                        "label": "Opened at Scotland Yard in 1901",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Fingerprint Bureau",
+                        "gloss": "Opened at Scotland Yard in 1901"
+                      },
+                      {
+                        "id": "kt3_6_s3_p1_t2",
+                        "tier": 5,
+                        "label": "to match unique fingertip ridges",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Fingerprint Bureau",
+                        "gloss": "to match unique fingertip ridges"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p2",
+                    "tier": 4,
+                    "tag": "Event",
+                    "label": "Sir Alec Jeffreys",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "Sir Alec Jeffreys",
+                    "gloss": "Leicester University scientist who discovere; genetic DNA profiling in 1984.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p2_t1",
+                        "tier": 5,
+                        "label": "Leicester University scientist who discovere",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Sir Alec Jeffreys",
+                        "gloss": "Leicester University scientist who discovere"
+                      },
+                      {
+                        "id": "kt3_6_s3_p2_t2",
+                        "tier": 5,
+                        "label": "genetic DNA profiling in 1984",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "Sir Alec Jeffreys",
+                        "gloss": "genetic DNA profiling in 1984"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "kt3_6_s3_p3",
+                    "tier": 4,
+                    "tag": "Result",
+                    "label": "→ DNA profiling",
+                    "lessonIndex": 5,
+                    "stageIndex": 2,
+                    "searchTerm": "DNA profiling",
+                    "gloss": "Forensic test identifying guilty offenders; and clearing innocent suspects.",
+                    "children": [
+                      {
+                        "id": "kt3_6_s3_p3_t1",
+                        "tier": 5,
+                        "label": "Forensic test identifying guilty offenders",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "DNA profiling",
+                        "gloss": "Forensic test identifying guilty offenders"
+                      },
+                      {
+                        "id": "kt3_6_s3_p3_t2",
+                        "tier": 5,
+                        "label": "and clearing innocent suspects",
+                        "lessonIndex": 5,
+                        "stageIndex": 2,
+                        "searchTerm": "DNA profiling",
+                        "gloss": "and clearing innocent suspects"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -8956,26 +8956,6 @@ export default {
           "model_answer": "<ol><li><strong>Recall:</strong> In 1914 Austria-Hungary was determined to crush Serbia permanently with full German backing, while Russia refused to suffer another diplomatic humiliation after the Bosnian Crisis.</li><li><strong>Explain:</strong> Berlin's unconditional guarantee emboldened Vienna to issue an unacceptable ultimatum to Serbia, triggering Russian mobilisation—which in turn activated Germany's two-front Schlieffen Plan through neutral Belgium.</li><li><strong>Challenge:</strong> Structural rivalries (alliances, naval race, Balkan nationalism) piled up the gunpowder, but war was not automatic—statesmen in Vienna, Berlin, and St Petersburg made calculated, high-risk choices in July 1914.</li></ol>"
         },
         {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=hf8EYbVxtCY",
-          "title": "All Quiet on the Western Front (2022, Edward Berger) | Official Trailer",
-          "duration": "2 mins 33 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Four-time Academy Award and seven-time BAFTA-winning masterpiece based on Erich Maria Remarque’s anti-war classic. Contrasts naive teenage patriotic enthusiasm in 1914 with the horrifying mud, machine-gun fire, and mechanized slaughter of trench warfare. Recommended Watch Window: 00:00–02:33 (Full Trailer). Lesson Phase: Cinematic Starter Hook & The Reality of 1914. Tone Alert: Brutal, unflinching anti-war masterpiece.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice how young Paul Bäumer and his school classmates eagerly enlist, singing patriotic songs and imagining glorious military adventure, only to be thrown into a nightmare of barbed wire, artillery bombardment, and chemical poison gas. How does this film capture the tragic chasm between romantic pre-war propaganda and the brutal reality of industrialised warfare?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer strips away romantic 19th-century notions of military glory. By showing schoolmasters indoctrinating young boys to die for the Fatherland, followed by scenes of recruits recycling uniforms stripped from corpses, the film exposes how an entire generation of European youth was sacrificed to the diplomatic blunders and imperial hubris of their political leaders.</p>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=IrabKK9Bhds",
-          "title": "They Shall Not Grow Old (2018, Peter Jackson) | Official Documentary Trailer",
-          "duration": "2 mins 24 secs",
-          "pathway": "Documentary",
-          "teacher_guidance": "Peter Jackson’s groundbreaking restored, colorized, and speed-corrected Imperial War Museums archival documentary, utilizing lip-read original footage and BBC sound recordings of veterans. Recommended Watch Window: 00:00–02:24 (Full Trailer). Lesson Phase: In-Depth Documentary Investigation & Archival Grounding. Tone Alert: Revolutionary historical documentary bringing primary archival film to lifelike vibrancy.",
-          "viewing_task": "<ol><li><strong>[00:45] Recall:</strong> What cutting-edge restoration techniques did director Peter Jackson use on 100-year-old silent, black-and-white Imperial War Museums archival film?</li><li><strong>[01:30] Explain:</strong> How does hearing authentic voice recordings of First World War soldiers narrating their own experiences transform our historical understanding of 1914?</li><li><strong>[02:00] Challenge:</strong> Evaluate why restoring archival footage into color and 24-frames-per-second lifelike speed changes students' emotional connection to historical events compared to grainy black-and-white silent newsreels.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Digital hand-colorization, speed correction from variable hand-cranked frame rates to smooth 24fps, forensic lip-reading by deaf experts to reconstruct dialogue, and authentic sound effects recorded using period weapons and equipment.</li><li><strong>Explain:</strong> By discarding celebrity voiceover and relying exclusively on BBC audio interviews recorded with real veterans in the 1960s, the film lets soldiers speak for themselves, capturing their dry humor, terror, endurance, and quiet grief without modern moral judgment.</li><li><strong>Challenge:</strong> Black-and-white, sped-up footage makes past historical figures look comical, jerky, and alien, creating psychological distance. Transforming the footage into full color and natural speed bridges the century-long divide, forcing modern viewers to recognize that the soldiers shivering in muddy trenches were teenagers and young men identical to themselves today.</li></ol>"
-        },
-        {
           "type": "era",
           "url": "https://era.org.uk/streaming-service-resource/1-the-approach-of-war-history-file/",
           "title": "BBC Two / ERA: History File – The First World War, Ep. 1: The Approach of War",

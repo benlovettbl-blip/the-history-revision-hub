@@ -22,6 +22,7 @@ import {
 import { renderCoverSourcesHTML } from './cover_sources.js';
 import { renderKeyTopicLessonsHTML } from './lesson_cards.js';
 import { renderUnitSynopsis } from './unit_synopses.js';
+import { renderUnitVideoLibraryHTML } from './engine/video_utils.js';
 import { renderLesson } from './engine/lesson_renderer.js'; // force-refresh
 import { getAssetUrl } from './engine/assets.js';
 import {
@@ -86,6 +87,7 @@ export function renderDashboard() {
           <button type="button" class="course-filter-pill" data-filter="p1" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 1</button>
           <button type="button" class="course-filter-pill" data-filter="p2" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 2</button>
           <button type="button" class="course-filter-pill" data-filter="p3" style="background: #f8fafc; color: #475569; border: 1px solid #e2e8f0; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 700; cursor: pointer; transition: all 0.15s ease;">GCSE Paper 3</button>
+          <button type="button" class="course-filter-pill" data-filter="ocr-ancient" style="background: #fff7ed; color: #9a3412; border: 1px solid #fdba74; border-radius: 7px; padding: 5px 11px; font-size: 0.76rem; font-weight: 800; cursor: pointer; transition: all 0.15s ease;">OCR Ancient History</button>
         </div>
         <div style="display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap;">
           <button type="button" onclick="window.switchView && window.switchView('mock-exams', null, false, { preservePupilTab: true })" style="background: #eef2ff; color: #3730a3; border: 1px solid #a5b4fc; border-radius: 7px; padding: 5px 11px; font-size: 0.75rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;" title="Open Year 11 GCSE Paper Blueprint, Quick Questions, Grade 9 Answers & Interactive Spec Mind Map">
@@ -100,15 +102,19 @@ export function renderDashboard() {
       </div>
   `;
 
-  // Key Stage 2 Grouping (4 British Chronological Units + 4 World/Ancient Civilisation Units = 8-Unit Symmetrical Grid)
+  // Key Stage 2 Grouping (7 British Chronological/Thematic/Local Units + 5 World/Ancient Civilisation Units = 12-Unit Symmetrical Grid)
   const ks2Order = [
     'ks2_stone_to_iron_age',
     'ks2_romans',
     'ks2_anglo_saxons_vikings',
+    'ks2_victorian_britain',
     'ks2_ww2',
+    'ks2_crime_and_punishment',
+    'ks2_local_history_detective',
     'ks2_ancient_egypt',
     'ks2_ancient_greece',
     'ks2_early_islamic_baghdad',
+    'ks2_kingdom_of_benin',
     'ks2_maya_civilisation',
   ];
   const ks2Units = units
@@ -162,6 +168,10 @@ export function renderDashboard() {
     ks2_ancient_greece: 'Ancient Greece (c. 800–146 BC)',
     ks2_early_islamic_baghdad: 'Early Islamic Baghdad (c. AD 750–1258)',
     ks2_maya_civilisation: 'The Ancient Maya (c. 2000 BC–AD 1500)',
+    ks2_kingdom_of_benin: 'The Kingdom of Benin (c. AD 900–1897)',
+    ks2_victorian_britain: 'Victorian Britain (1837–1901)',
+    ks2_crime_and_punishment: 'Crime & Punishment Through Time (AD 43–Present)',
+    ks2_local_history_detective: 'History on Our Doorstep: Local Detective Study',
     water_and_sanitation: 'Water & Sanitation (1250–Present)',
     medieval_england: 'Medieval England (1066–1485)',
     monarchy_religion_power: 'Crown, Church & Parliament (1517–1689)',
@@ -181,7 +191,43 @@ export function renderDashboard() {
     edexcel_medicine: 'Medicine Through Time (c.1250–Present)',
     eee: 'Early Elizabethan England (1558–1588)',
     usa: 'USA: Conflict at Home & Abroad (1954–1975)',
+    ocr_persian_empire: 'The Persian Empire (559–465 BC)',
+    ocr_alexander: 'Alexander the Great (356–323 BC)',
+    ocr_foundations_of_rome: 'The Foundations of Rome (753–440 BC)',
+    ocr_cleopatra: 'Cleopatra: Rome & Egypt (69–30 BC)',
   };
+
+  // Cambridge OCR GCSE (9–1) Ancient History (J198) Grouping — Separate Bottom Section
+  const ocrAncientMeta = {
+    ocr_persian_empire: {
+      paper: 'J198/01',
+      stage: 'ocr-ancient',
+      paperBadge: 'J198/01 • Period Study',
+      stageLabel: 'OCR Component 1',
+    },
+    ocr_alexander: {
+      paper: 'J198/01',
+      stage: 'ocr-ancient',
+      paperBadge: 'J198/01 • Greek Depth',
+      stageLabel: 'OCR Component 1',
+    },
+    ocr_foundations_of_rome: {
+      paper: 'J198/02',
+      stage: 'ocr-ancient',
+      paperBadge: 'J198/02 • Longer Period',
+      stageLabel: 'OCR Component 2',
+    },
+    ocr_cleopatra: {
+      paper: 'J198/02',
+      stage: 'ocr-ancient',
+      paperBadge: 'J198/02 • Roman Depth',
+      stageLabel: 'OCR Component 2',
+    },
+  };
+  const ocrAncientOrder = Object.keys(ocrAncientMeta);
+  const ocrAncientUnits = units
+    .filter((u) => ocrAncientOrder.includes(u.id))
+    .sort((a, b) => ocrAncientOrder.indexOf(a.id) - ocrAncientOrder.indexOf(b.id));
 
   const renderUnitCard = (unit, index, meta) => {
     const isUnlocked = true;
@@ -214,30 +260,38 @@ export function renderDashboard() {
       usa: 'center 25%',
       cold_war: 'center 25%',
       post_war_britain: 'center 20%',
+      ks2_crime_and_punishment: '24% 38%',
     };
     const bgPos = unit.cover_image_position || positionFallbacks[unit.id] || 'center';
 
     const isGcse = meta.stage === 'gcse';
+    const isOcrAncient = meta.stage === 'ocr-ancient';
     const isKs2 = meta.stage === 'ks2';
-    const badgeText = isGcse
-      ? (meta.paperBadge || 'Edexcel Paper')
-      : isKs2
-        ? (meta.eraBadge || meta.stageLabel || 'Key Stage 2')
-        : (meta.eraBadge || meta.stageLabel || 'Key Stage 3');
+    const badgeText = isOcrAncient
+      ? (meta.paperBadge || 'OCR J198')
+      : isGcse
+        ? (meta.paperBadge || 'Edexcel Paper')
+        : isKs2
+          ? (meta.eraBadge || meta.stageLabel || 'Key Stage 2')
+          : (meta.eraBadge || meta.stageLabel || 'Key Stage 3');
 
-    const cardTopBorder = isGcse
-      ? 'border-top: 3.5px solid #f59e0b;'
-      : isKs2
-        ? 'border-top: 3.5px solid #4f46e5;'
-        : 'border-top: 3.5px solid #2563eb;';
-    const cardBadgeBg = isGcse
-      ? 'rgba(180, 83, 9, 0.92)'
-      : isKs2
-        ? (meta.badgeBg || 'rgba(67, 56, 202, 0.92)')
-        : 'rgba(30, 58, 138, 0.92)';
-    const launchColor = isKs2 ? '#4f46e5' : '#2563eb';
+    const cardTopBorder = isOcrAncient
+      ? 'border-top: 3.5px solid #9a3412;'
+      : isGcse
+        ? 'border-top: 3.5px solid #f59e0b;'
+        : isKs2
+          ? 'border-top: 3.5px solid #4f46e5;'
+          : 'border-top: 3.5px solid #2563eb;';
+    const cardBadgeBg = isOcrAncient
+      ? 'rgba(154, 52, 18, 0.94)'
+      : isGcse
+        ? 'rgba(180, 83, 9, 0.92)'
+        : isKs2
+          ? (meta.badgeBg || 'rgba(67, 56, 202, 0.92)')
+          : 'rgba(30, 58, 138, 0.92)';
+    const launchColor = isOcrAncient ? '#9a3412' : isKs2 ? '#4f46e5' : '#2563eb';
 
-    const imgLoadingAttr = meta.stage === 'gcse' || index >= 8 ? ' loading="lazy" decoding="async"' : ' decoding="async"';
+    const imgLoadingAttr = meta.stage === 'gcse' || isOcrAncient || index >= 8 ? ' loading="lazy" decoding="async"' : ' decoding="async"';
     const cardImgHtml = imageUrl
       ? `
         <div class="module-card-img" style="position: relative; height: 130px; overflow: hidden; background: #0a101f; margin: -12px -12px 10px -12px; border-bottom: 1px solid var(--border-glass, #e2e8f0); flex-shrink: 0;">
@@ -284,6 +338,10 @@ export function renderDashboard() {
       ks2_ancient_greece: { stage: 'ks2', eraBadge: 'KS2 • Ancient Greece', badgeBg: 'rgba(3, 105, 161, 0.92)' },
       ks2_early_islamic_baghdad: { stage: 'ks2', eraBadge: 'KS2 • World c. AD 900', badgeBg: 'rgba(15, 118, 110, 0.92)' },
       ks2_maya_civilisation: { stage: 'ks2', eraBadge: 'KS2 • World c. AD 900', badgeBg: 'rgba(21, 128, 61, 0.92)' },
+      ks2_kingdom_of_benin: { stage: 'ks2', eraBadge: 'KS2 • World c. AD 900', badgeBg: 'rgba(154, 52, 18, 0.92)' },
+      ks2_victorian_britain: { stage: 'ks2', eraBadge: 'KS2 • Post-1066 Study', badgeBg: 'rgba(55, 48, 163, 0.92)' },
+      ks2_crime_and_punishment: { stage: 'ks2', eraBadge: 'KS2 • Post-1066 Theme', badgeBg: 'rgba(29, 78, 216, 0.92)' },
+      ks2_local_history_detective: { stage: 'ks2', eraBadge: 'KS2 • Local History', badgeBg: 'rgba(13, 148, 136, 0.92)' },
     };
 
     html += `
@@ -367,6 +425,33 @@ export function renderDashboard() {
       html += renderUnitCard(u, idx, meta);
     });
     html += `
+        </div>
+      </div>
+    `;
+  }
+
+  // Cambridge OCR GCSE (9–1) Ancient History (J198) — Dedicated Separate Bottom Area Underneath Edexcel
+  if (ocrAncientUnits.length > 0) {
+    html += `
+      <div class="dashboard-curriculum-block stage-block-ocr-ancient" id="block-ocr-ancient" style="margin-top: 28px; margin-bottom: 24px; padding: 18px 20px 8px 20px; background: linear-gradient(180deg, rgba(255,247,237,0.72) 0%, rgba(255,255,255,0.95) 100%); border: 1.5px solid #fed7aa; border-radius: 16px; box-shadow: 0 4px 16px rgba(154, 52, 18, 0.06);">
+        <div id="ocr-ancient-section" style="position: relative; top: -14px;"></div>
+        <div class="curriculum-stage-header" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 1.5px solid #fed7aa;">
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <span style="background: #9a3412; color: #ffffff; border: 1px solid #7c2d12; padding: 3px 10px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em;">Cambridge OCR • J198</span>
+            <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.24rem; font-weight: 800; color: #431407;">
+              OCR GCSE (9–1) Ancient History (Greece, Persia, Rome &amp; Egypt)
+            </h3>
+          </div>
+          <span style="font-size: 0.75rem; font-weight: 700; color: #9a3412;">Components J198/01 &amp; J198/02 • ${ocrAncientUnits.length} Units</span>
+        </div>
+
+        <div class="modules-grid ocr-ancient-modules-grid" style="margin-bottom: 1rem;">
+          ${ocrAncientUnits
+            .map((u, idx) => {
+              const meta = ocrAncientMeta[u.id] || { stage: 'ocr-ancient', paperBadge: 'OCR J198' };
+              return renderUnitCard(u, idx, meta);
+            })
+            .join('')}
         </div>
       </div>
     `;
@@ -481,28 +566,37 @@ function attachDashboardStageFilter(container) {
   const ks2Blocks = container.querySelectorAll('.stage-block-ks2');
   const ks3Blocks = container.querySelectorAll('.stage-block-ks3');
   const gcseBlocks = container.querySelectorAll('.stage-block-gcse');
+  const ocrBlocks = container.querySelectorAll('.stage-block-ocr-ancient');
   const ks3Cards = container.querySelectorAll('.ks3-modules-grid .module-card');
   const gcseCards = container.querySelectorAll('.gcse-modules-grid .module-card');
 
   const applyUnifiedFilter = (mode) => {
     filterBtns.forEach((b) => {
       const isAct = b.dataset.filter === mode;
+      const isOcrBtn = b.dataset.filter === 'ocr-ancient';
       b.classList.toggle('active', isAct);
-      b.style.background = isAct ? '#0f172a' : '#f8fafc';
-      b.style.color = isAct ? '#ffffff' : '#475569';
-      b.style.borderColor = isAct ? '#0f172a' : '#e2e8f0';
+      b.style.background = isAct ? (isOcrBtn ? '#9a3412' : '#0f172a') : isOcrBtn ? '#fff7ed' : '#f8fafc';
+      b.style.color = isAct ? '#ffffff' : isOcrBtn ? '#9a3412' : '#475569';
+      b.style.borderColor = isAct ? (isOcrBtn ? '#7c2d12' : '#0f172a') : isOcrBtn ? '#fdba74' : '#e2e8f0';
     });
 
     if (mode === 'all') {
       ks2Blocks.forEach((el) => (el.style.display = ''));
       ks3Blocks.forEach((el) => (el.style.display = ''));
       gcseBlocks.forEach((el) => (el.style.display = ''));
+      ocrBlocks.forEach((el) => (el.style.display = ''));
       ks3Cards.forEach((c) => (c.style.display = ''));
       gcseCards.forEach((c) => (c.style.display = ''));
+    } else if (mode === 'ocr-ancient') {
+      ks2Blocks.forEach((el) => (el.style.display = 'none'));
+      ks3Blocks.forEach((el) => (el.style.display = 'none'));
+      gcseBlocks.forEach((el) => (el.style.display = 'none'));
+      ocrBlocks.forEach((el) => (el.style.display = ''));
     } else if (mode === 'ks2') {
       ks2Blocks.forEach((el) => (el.style.display = ''));
       ks3Blocks.forEach((el) => (el.style.display = 'none'));
       gcseBlocks.forEach((el) => (el.style.display = 'none'));
+      ocrBlocks.forEach((el) => (el.style.display = 'none'));
     } else if (
       mode === 'ks3' ||
       mode === 'ks3-early' ||
@@ -517,6 +611,7 @@ function attachDashboardStageFilter(container) {
       ks2Blocks.forEach((el) => (el.style.display = 'none'));
       ks3Blocks.forEach((el) => (el.style.display = ''));
       gcseBlocks.forEach((el) => (el.style.display = 'none'));
+      ocrBlocks.forEach((el) => (el.style.display = 'none'));
       ks3Cards.forEach((c) => {
         const show =
           normalizedMode === 'ks3' ||
@@ -529,6 +624,7 @@ function attachDashboardStageFilter(container) {
       ks2Blocks.forEach((el) => (el.style.display = 'none'));
       ks3Blocks.forEach((el) => (el.style.display = 'none'));
       gcseBlocks.forEach((el) => (el.style.display = ''));
+      ocrBlocks.forEach((el) => (el.style.display = 'none'));
       gcseCards.forEach((c) => (c.style.display = pNum === 'all' || c.dataset.paper === pNum ? '' : 'none'));
     }
   };
@@ -1854,6 +1950,10 @@ export async function renderLessonsView() {
       if (unitId === 'ks2_ancient_greece') unitTitle = 'Ancient Greece';
       if (unitId === 'ks2_early_islamic_baghdad') unitTitle = 'Baghdad c. AD 900';
       if (unitId === 'ks2_maya_civilisation') unitTitle = 'The Ancient Maya';
+      if (unitId === 'ks2_kingdom_of_benin') unitTitle = 'Kingdom of Benin';
+      if (unitId === 'ks2_victorian_britain') unitTitle = 'Victorian Britain';
+      if (unitId === 'ks2_crime_and_punishment') unitTitle = 'Crime & Punishment';
+      if (unitId === 'ks2_local_history_detective') unitTitle = 'Local History Study';
       window.updateBreadcrumbs([
         { label: 'Dashboard', view: 'dashboard' },
         {
@@ -2087,6 +2187,7 @@ export async function renderLessonsView() {
       ${stickyResourceBarHTML}
       <div class="lessons-view-body" style="padding: 24px 28px 34px 28px; border-top: 1px solid #e2e8f0; max-width: 100%; box-sizing: border-box;">
         ${renderUnitSynopsis(data, unitId)}
+        ${renderUnitVideoLibraryHTML(data, unitId)}
         ${renderKeyTopicLessonsHTML(data, unitId, data)}
       </div>
     </div>

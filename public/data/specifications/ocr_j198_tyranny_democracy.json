@@ -1,0 +1,17 @@
+{
+  "id": "ocr_j198_tyranny_democracy",
+  "code": "J198/01-B",
+  "examBoard": "Cambridge OCR GCSE (9–1) Ancient History (J198)",
+  "paper": "Component 1: Greece and Persia (J198/01) — Section B",
+  "paperType": "Greek Depth Study (Prescribed Sources)",
+  "title": "Hub GCSE Ancient History Topic Checklist (Aligned to Cambridge OCR J198)",
+  "subtitle": "J198/01 Section B: From Tyranny to Democracy, 546–483 BC",
+  "shortTitle": "Tyranny to Democracy",
+  "disclaimer": "Aligned to Cambridge OCR GCSE (9–1) Ancient History (J198). Independent educational resource by The History Revision Hub; not endorsed by Cambridge OCR.",
+  "sections": [
+    { "id": "key-topic-1", "keyTopicNumber": 1, "title": "Athens under the tyrants", "topics": [{ "number": 1, "title": "Peisistratids and Fall of Hippias", "points": ["The concept of tyranny; the Peisistratids, their actions and characteristics of their rule; Harmodios and Aristogeiton's involvement in the assassination of Hipparchus; the fall of Hippias"] }] },
+    { "id": "key-topic-2", "keyTopicNumber": 2, "title": "Tyranny and Samos", "topics": [{ "number": 1, "title": "Polycrates, Maeandrius and Syloson", "points": ["Accession of Polycrates; building and engineering achievements of Polycrates; failed succession of Maeandrius; support for the accession of Syloson"] }] },
+    { "id": "key-topic-3", "keyTopicNumber": 3, "title": "The Emergence of Democracy in Athens", "topics": [{ "number": 1, "title": "Cleisthenes' Reforms and Spartan Opposition", "points": ["Cleisthenes and his rivalry with Isagoras; the introduction of isegoria by Cleisthenes; restructuring of tribes, demes and phratries, and the reorganisation of the boule"] }] },
+    { "id": "key-topic-4", "keyTopicNumber": 4, "title": "Democracy in action", "topics": [{ "number": 1, "title": "Strategoi, Marathon and Ostracism", "points": ["Establishment of the ten strategoi; the Battle of Marathon and its significance for democracy; onset and uses of ostracism; the role and treatment of Miltiades, Themistocles and Aristides"] }] }
+  ]
+}

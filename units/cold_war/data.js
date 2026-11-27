@@ -812,16 +812,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=r9yyDEDGlr0",
-          "title": "The Third Man (1949, Carol Reed / Orson Welles) | Official Trailer",
-          "duration": "1 min 35 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Atmospheric film noir set in Allied-partitioned Vienna, exploring the black market, espionage, and cynical division between Western and Soviet military sectors. Recommended Watch Window: 00:00–01:34 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Four-Power Partition. Tone Alert: Tense, shadowy post-war European noir.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the rubble of bombed European cities, the four-power military police patrols (American, British, French, and Soviet soldiers riding in the same jeep), and the cynical black-market penicillin racket depicted in Carol Reed's masterpiece. How does this film capture the atmosphere of moral exhaustion, mutual paranoia, and division in post-WWII Europe as the Grand Alliance fractured?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer captures the ruins of post-war Europe divided into military occupation sectors, reflecting the real-world tensions established at Yalta and Potsdam. The cynical tone, shadowy lighting, and four-power patrols highlight how wartime Allies quickly became suspicious rivals, while ordinary European civilians struggled to survive amidst acute shortages and black-market exploitation.</p>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=6ltp3rxcLeY",
           "title": "CNN Cold War Episode 1: Comrades (1917–1945) | Jeremy Isaacs Production",
           "duration": "46 mins 32 secs",
@@ -2495,16 +2485,6 @@ export default {
           "teacher_guidance": "Detailed comparison between the Yalta and Potsdam conferences: Roosevelt's death, Churchill's electoral defeat, Truman's \"atomic diplomacy\", and the breakdown of allied cooperation. Recommended Watch Window: 01:00–06:15 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Structured GCSE syllabus breakdown with archival photographs and conference documents.",
           "viewing_task": "<ol><li><strong>[01:45] Recall:</strong> Name the two major Western leadership changes that occurred between the Yalta Conference (February 1945) and the Potsdam Conference (July–August 1945).</li><li><strong>[03:30] Explain:</strong> How did President Harry S. Truman's notification to Stalin at Potsdam that the US had successfully detonated an atomic bomb (the Trinity test) heighten Soviet suspicion and accelerate the nuclear arms race?</li><li><strong>[05:40] Challenge:</strong> Evaluate why Potsdam marked the formal end of the Grand Alliance: why were the Allies unable to agree on reparations and the permanent political future of Germany?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Franklin D. Roosevelt died and was succeeded by Harry S. Truman; Winston Churchill lost the British general election midway through the conference and was replaced by Clement Attlee.</li><li><strong>Explain:</strong> Truman deliberately hinted to Stalin about a \"new weapon of extraordinary destructive power\" to intimidate him into political concessions in Poland and Eastern Europe. Stalin, whose spy network (including Klaus Fuchs) had already informed him of the Manhattan Project, viewed Truman's atomic diplomacy as nuclear blackmail, immediately ordering Soviet physicists to accelerate their own atomic bomb program at all costs.</li><li><strong>Challenge:</strong> Stalin demanded devastating reparations ($20 billion, half to the USSR) and wanted Germany stripped of all industrial capacity to permanently prevent German resurgence. Truman and Attlee, mindful of how the harsh Treaty of Versailles had fostered Nazism and determined not to subsidize starving German civilians, insisted that each power take reparations primarily from its own occupation zone, permanently splitting Germany into capitalist and communist halves.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=G84ukGdNsDs",
-          "title": "The Big Lift (1950, George Seaton / Montgomery Clift) | Official Trailer",
-          "duration": "2 mins 08 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Shot on location in the ruins of West Berlin and at Tempelhof Airport during the actual Berlin Airlift, starring Montgomery Clift and real USAF and RAF pilots. Recommended Watch Window: 00:00–02:08 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Tactical Airlift Logistics. Tone Alert: Authentic historical drama filmed amidst the real rubble of 1949 Berlin.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the actual footage of C-54 Skymaster transport planes landing round-the-clock at Tempelhof Airport amidst bombed-out Berlin tenements, and the interactions between American flight crews and German civilians who were their mortal enemies barely four years earlier. How does this film dramatize the profound psychological shift of West Berliners from defeated enemies to protected democratic allies?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> Filmed on location immediately after the blockade, the movie dramatizes the extraordinary human and logistical reconciliation between former enemies. West Berliners, facing starvation under Soviet blockade, came to view American and British pilots as heroic liberators ('Candy Bombers'), cementing West Germany's emotional and political integration into the Western democratic bloc.</p>"
         },
         {
           "type": "youtube",
@@ -4217,16 +4197,6 @@ export default {
           "teacher_guidance": "Deconstructs the first major military standoff of the Cold War: Bizonia, the introduction of the Deutsche Mark, Stalin's land blockade of West Berlin, Operation Plainfare/Vittles, and the founding of NATO (1949). Recommended Watch Window: 00:45–05:50 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Structured GCSE syllabus breakdown with newsreel footage of C-47 and C-54 transport planes.",
           "viewing_task": "<ol><li><strong>[01:15] Recall:</strong> What Western economic reform in June 1948 directly prompted Stalin to sever all road, rail, and barge access routes between West Germany and West Berlin?</li><li><strong>[03:20] Explain:</strong> Explain the logistical scale and tactical brilliance of the Anglo-American Berlin Airlift (Operation Plainfare / Vittles): how did the Allies supply 2.5 million citizens for eleven months without firing a shot?</li><li><strong>[05:10] Challenge:</strong> Evaluate the long-term geopolitical consequences of the Berlin Blockade: how did Stalin's failed gamble lead directly to the permanent partition of Germany and the creation of NATO?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> The Western Allies merged their zones (creating Bizonia/Trizonia) and introduced a stable new currency, the <em>Deutsche Mark</em>, into West Germany and West Berlin without Soviet approval.</li><li><strong>Explain:</strong> The US Air Force and British RAF flew round-the-clock air corridors guaranteed by 1945 treaties. At the peak of the airlift, a cargo plane landed at Tempelhof or Gatow airport every 90 seconds, delivering over 2.3 million tons of food, flour, coal, and medical supplies in 278,000 flights. By relying purely on air transport, the Allies put the moral burden of firing the first shot on Stalin, who backed down and lifted the blockade in May 1949.</li><li><strong>Challenge:</strong> Stalin's aggressive intimidation backfired completely. It accelerated the formal creation of the Federal Republic of Germany (West Germany, FRG) in May 1949, followed by the Soviet creation of the German Democratic Republic (East Germany, GDR) in October 1949. Crucially, fear of Soviet military aggression convinced twelve Western nations to form the North Atlantic Treaty Organization (NATO) in April 1949, committing the US to military defense of Western Europe under Article 5.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=1gXY3kuDvSU",
-          "title": "Dr. Strangelove (1964, Stanley Kubrick) | Official Trailer",
-          "duration": "1 min 37 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Stanley Kubrick’s iconic black comedy satirizing nuclear paranoia, the doctrine of Mutually Assured Destruction (MAD), fail-safe protocols, and the apocalyptic \"Doomsday Machine\". Recommended Watch Window: 00:00–01:37 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Deterrence Paranoia. Tone Alert: Brilliant satirical black comedy deconstructing nuclear brinkmanship.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the stark black-and-white cinematography, the iconic War Room (\"Gentlemen, you can't fight in here! This is the War Room!\"), B-52 bombers on continuous nuclear alert, and Peter Sellers' portrayal of the unhinged ex-Nazi strategist Dr. Strangelove. How does Kubrick use dark satire to expose the terrifying irrationality at the core of the superpower nuclear arms race?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> Kubrick exposes the paradox of nuclear deterrence: military strategies designed to prevent war (such as hair-trigger alert systems and automated retaliation) actually created systemic vulnerabilities where human error, military zealotry, or technological glitches could trigger the annihilation of mankind. The film highlights the pervasive psychological anxiety of the 1950s and 1960s nuclear age.</p>"
         },
         {
           "type": "youtube",
@@ -6038,16 +6008,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=PqM102xIbIs",
-          "title": "Thirteen Days (2000, Roger Donaldson / Kevin Costner) | Official Trailer",
-          "duration": "1 min 35 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Gripping historical dramatisation of the ExComm meetings inside the White House during October 1962, illustrating the intense clashes between JFK, Robert McNamara, and hawkish Joint Chiefs of Staff demanding airstrikes and invasion. Recommended Watch Window: 00:00–01:35 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Executive Crisis Management. Tone Alert: Tense, high-stakes political thriller.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the claustrophobic White House Cabinet Room meetings, the military chiefs (General Curtis LeMay) pushing for immediate preventive bombing of Cuba, and John and Robert Kennedy's desperate struggle to avoid military escalation that could trigger an unstoppable chain reaction of nuclear war. How does the trailer dramatize the extreme pressure on political leaders during the most dangerous 13 days in human history?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer powerfully dramatizes the constitutional conflict between civilian political leadership and military commanders during an existential crisis. Kennedy recognized that military escalation has its own uncontrollable momentum ('fog of war'); one misstep or unauthorized shot would compel retaliation, resulting in global annihilation. Costner and Greenwood's portrayals highlight the agonizing moral weight of crisis leadership.</p>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=XdSbRvGm3pM",
           "title": "CNN Cold War Episode 10: Cuba (1959–1962) | Jeremy Isaacs Production",
           "duration": "46 mins 26 secs",
@@ -7760,16 +7720,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=1ncOPBCbufw",
-          "title": "The Unbearable Lightness of Being (1988, Philip Kaufman) | Original Trailer",
-          "duration": "2 mins 26 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Acclaimed feature film adaptation of Milan Kundera’s novel starring Daniel Day-Lewis and Juliette Binoche, depicting the intoxicating artistic and intellectual freedom of the 1968 Prague Spring, shattered by the thunder of Soviet tanks rolling into Prague in August 1968. Recommended Watch Window: 00:00–02:25 (Full Trailer). Lesson Phase: Cinematic Starter Hook & The Crushing of the Prague Spring. Tone Alert: Passionate, evocative historical drama blending romance and political invasion.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the joyful intellectual, cultural, and sexual awakening of Prague in early 1968 (\"Socialism with a Human Face\"), followed by the violent arrival of Soviet Warsaw Pact tanks, camera lenses documenting the protests, and the crushing of civilian freedom. How does the film illustrate the profound emotional shock experienced by Czech citizens when their reformist dream was brutally extinguished by Soviet forces?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer contrasts the vibrant creative blossoming of Prague under Alexander Dubček with the bleak grey brutality of Soviet military intervention. It captures the psychological trauma of an entire generation: young Czechs fighting tanks with cameras, slogans, and flowers, only to face blacklisting, exile, and decades of stifling censorship under Soviet 'normalisation'.</p>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=ps0cS6U3mUw",
           "title": "CNN Cold War Episode 14: Red Spring (1968) | Jeremy Isaacs Production",
           "duration": "46 mins 26 secs",
@@ -9392,16 +9342,6 @@ export default {
           "teacher_guidance": "Analyzes Mikhail Gorbachev’s twin policies of Glasnost (political openness) and Perestroika (economic restructuring), the renunciation of the Brezhnev Doctrine, and the dissolution of the USSR on 25 December 1991. Recommended Watch Window: 01:00–06:45 • Lesson Phase: Guided Instruction & Archival Investigation. Tone Alert: Clear, structured animated overview of Soviet political and economic collapse.",
           "viewing_task": "<ol><li><strong>[02:10] Recall:</strong> Define the Russian terms <em>Glasnost</em> and <em>Perestroika</em> introduced by General Secretary Mikhail Gorbachev after coming to power in 1985.</li><li><strong>[04:30] Explain:</strong> Explain how Gorbachev's decision to abandon the Brezhnev Doctrine (the \"Sinatra Doctrine\") led directly to the peaceful overthrow of communist dictatorships across Eastern Europe in 1989.</li><li><strong>[06:15] Challenge:</strong> Evaluate why Gorbachev's attempts to save the Soviet Union ended in its total dissolution: did economic failure or ethnic nationalism destroy the USSR?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> <em>Glasnost</em> meant \"openness\" (freedom of speech, press, and intellectual critique of state corruption); <em>Perestroika</em> meant \"restructuring\" (introducing limited private enterprise and decentralizing the command economy).</li><li><strong>Explain:</strong> The Brezhnev Doctrine stated that Soviet tanks would invade any socialist country whose regime was threatened (as in Hungary 1956 and Czechoslovakia 1968). Gorbachev informed Warsaw Pact leaders that the Red Army would never intervene to keep them in power (allowing them to do it \"their way\"). Without the threat of Soviet military terror, populations in Poland (Solidarity), East Germany, Czechoslovakia (Velvet Revolution), and Hungary deposed their communist rulers in months.</li><li><strong>Challenge:</strong> Both factors were intrinsically linked. Perestroika dismantled central planning without establishing functional free markets, triggering rationing, inflation, and acute food shortages that exhausted popular patience. Simultaneously, Glasnost allowed the fifteen constituent Soviet Republics (led by the Baltic states and Ukraine) to air historical grievances against Soviet imperial domination. When a hardline KGB coup against Gorbachev failed in August 1991, Russian President Boris Yeltsin outlawed the Communist Party, formally dissolving the USSR on 25 December 1991.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=G1mnSjjeC2o",
-          "title": "Charlie Wilson's War (2007, Mike Nichols / Tom Hanks) | Official Trailer",
-          "duration": "2 mins 31 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Sharp, witty Hollywood dramatisation of Texas Congressman Charlie Wilson, CIA operative Gust Avrakotos, and socialite Joanne Herring orchestrating Operation Cyclone: covertly funneling billions of dollars in Stinger surface-to-air missiles to Afghan Mujahideen fighting the Soviet Red Army. Recommended Watch Window: 00:00–02:30 (Full Trailer). Lesson Phase: Cinematic Starter Hook & Covert Proxy Warfare. Tone Alert: Engaging geopolitical drama with an incisive look at covert Cold War operations.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the backroom Washington political deals, the sophisticated CIA weapons supply routes through Pakistan and Israel, and how shoulder-fired Stinger anti-aircraft missiles revolutionized the war in Afghanistan by destroying Soviet Mi-24 Hind attack helicopters. How does the film capture the unintended long-term consequences of superpower proxy warfare?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer showcases how Cold War covert operations were driven by high-stakes political maneuvering to inflict maximum damage on the USSR ('give the Soviets their own Vietnam'). By flooding Afghanistan with billions of dollars of high-tech weaponry and radicalizing Islamic fighters to defeat the Red Army, the US achieved its short-term goal of humiliating Moscow, but inadvertently sowed the seeds for modern international terrorism and decades of ongoing regional conflict.</p>"
         },
         {
           "type": "youtube",
@@ -11056,16 +10996,6 @@ export default {
           "teacher_guidance": "Historiographical capstone analyzing the three major schools of thought on Cold War origins: 1917 (Bolshevik Revolution), 1945 (Yalta/Potsdam/Hiroshima), or 1947 (Truman Doctrine/Marshall Plan). Recommended Watch Window: 01:00–07:15 • Lesson Phase: Capstone Synoptic Synthesis & Historiographical Evaluation. Tone Alert: Insightful, academically rigorous historiographical review of Cold War scholarship.",
           "viewing_task": "<ol><li><strong>[02:15] Recall:</strong> Identify the three major competing dates proposed by historians for the outbreak of the Cold War (1917, 1945, 1947).</li><li><strong>[04:30] Explain:</strong> Explain the Orthodox (traditionalist) vs. Revisionist historical debate regarding who bears primary responsibility for starting the Cold War.</li><li><strong>[06:45] Challenge:</strong> Post-Revisionist Historiography: Assess John Lewis Gaddis' conclusion that the Cold War was caused by mutual misperception, geopolitical insecurity, and the inevitable clash of two empires rather than one-sided aggression.</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> 1) 1917: The Bolshevik Revolution and Western intervention in the Russian Civil War; 2) 1945: The breakdown of the Grand Alliance at Potsdam and the atomic bombings of Japan; 3) 1947: The Truman Doctrine and Marshall Plan cementing containment.</li><li><strong>Explain:</strong> The Orthodox view (prominent in the 1950s) argued that Soviet expansionism and Stalin's aggressive violation of Yalta agreements in Eastern Europe forced the US to defend the free world. The Revisionist view (emerging in the 1960s during Vietnam) argued that American aggressive economic imperialism (\"dollar diplomacy\") and atomic intimidation forced the defensive, war-ravaged Soviet Union to build a protective buffer zone.</li><li><strong>Challenge:</strong> Post-revisionist historians like Gaddis, benefiting from opened Soviet archives after 1991, argue that neither side solely caused the conflict. Rather, the complete power vacuum left by the total destruction of Nazi Germany and Imperial Japan in 1945 made superpower rivalry structural and inevitable. Compounded by ideological dogma, conflicting postwar security needs, and mutual paranoia, both powers took defensive actions that were inevitably interpreted by the other as offensive aggression.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=n3_iLOp6IhM",
-          "title": "The Lives of Others (2006, Florian Henckel von Donnersmarck) | Official Trailer",
-          "duration": "1 min 49 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Academy Award-winning masterpiece portraying Stasi Captain Gerd Wiesler conducting round-the-clock audio surveillance on an East Berlin playwright in 1984, capturing the suffocating paranoia, informers, and police state control before the fall of the Wall. Recommended Watch Window: 00:00–01:49 (Full Trailer). Lesson Phase: Cinematic Starter Hook & The Reality of the Stasi Surveillance State. Tone Alert: Tense, emotionally profound German psychological thriller.",
-          "viewing_task": "<p><strong>Cinematic Discussion Focus:</strong> Notice the tape recorders, wiretapped apartments, secret index cards, and pervasive fear of betrayal depicted in this Oscar-winning film about East Germany's Stasi. How does the trailer demonstrate the human cost of totalitarian surveillance, and why did millions of citizens rejoice when the Berlin Wall and the communist police state collapsed in November 1989?</p>",
-          "model_answer": "<p><strong>Cinematic Analysis:</strong> The trailer exposes how the East German regime relied on systematic paranoia, maintaining 100,000 Stasi officers and over 170,000 civilian informants to spy on neighbors, friends, and family. It contrasts this suffocating lack of personal privacy and creative expression with the human longing for truth and artistic integrity, explaining the explosion of civic joy when the border was finally breached.</p>"
         },
         {
           "type": "youtube",

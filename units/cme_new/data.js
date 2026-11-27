@@ -1685,16 +1685,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=xrajtE16JEo",
-          "title": "Otto Preminger's \"Exodus\" (1960) Theatrical Trailer starring Paul Newman",
-          "duration": "2 mins 48 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Hollywood epic dramatization starring Paul Newman based on Leon Uris's bestseller. Recommended Watch Window: 00:00–02:48 (Full Trailer) • Lesson Phase: Cultural & Media Deconstruction. Tone Alert: High-impact 1960 American cinema. Depicts Haganah freedom fighters as glamorous underdogs against British naval tyranny, completely omitting indigenous Palestinian Arab society from the founding narrative.",
-          "viewing_task": "<ol><li><strong>[00:30] Recall:</strong> What was the name of the refugee ship depicted in the trailer, and what nationality was the naval force blockading the coast of Palestine?</li><li><strong>[01:15] Explain:</strong> Explain how the real-world international media coverage of the SS Exodus in July 1947 damaged Britain's diplomatic standing and undermined its moral authority in the United States.</li><li><strong>[02:00] Challenge:</strong> Analyze the music, dramatic narration, and casting of Paul Newman in this 1960 trailer. How does Hollywood cinematic storytelling construct a mythologized founding narrative, and whose historical presence is erased?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> The refugee ship was the <em>SS Exodus 1947</em>, and the blockading naval force was the British Royal Navy.</li><li><strong>Explain:</strong> When British destroyers rammed the defenseless refugee ship carrying 4,500 Holocaust survivors and forcibly deported them back to displaced persons camps in Germany, global outrage erupted. President Truman and the American public condemned British ruthlessness, directly isolating Britain diplomatically and forcing Foreign Secretary Ernest Bevin to surrender the Mandate to the UN.</li><li><strong>Challenge:</strong> The trailer employs heroic orchestral scoring, dramatic voiceover ('a story of fury and passion!'), and Hollywood star power to frame the creation of Israel as an epic, moral triumph of vulnerable refugees over imperial oppression. Crucially, the entire trailer completely erases the indigenous Palestinian Arab population, creating a cinematic myth of an uninhabited frontier won by righteous Western-style pioneers.</li></ol>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=IhfysdHgGh8",
           "title": "BBC / PBS: The 50 Years War – Land Divided (1947–1956)",
           "duration": "49 mins 26 secs",
@@ -4630,7 +4620,7 @@ export default {
                     "text": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was an escalating cycle of cross-border fedayeen raids and severe Israeli reprisals. Trapped in destitute UNRWA camps in Egyptian-held Gaza and the Jordanian West Bank after Israel barred repatriation, displaced youths launched armed guerrilla incursions across the Green Line, directly provoking major IDF retaliatory strikes such as the February 1955 Gaza raid."
                   },
                   {
-                    "label": "Option A (4/4): UNRWA Refugee Camps",
+                    "label": "Option B (4/4): Statelessness in UNRWA Border Camps",
                     "text": "One consequence of the refugee status of over 700,000 Palestinian Arabs after the 1948–49 war was permanent statelessness in overcrowded border camps. Because over 400 villages were depopulated and Israel barred repatriation to preserve a Jewish majority, the United Nations created UNRWA to sustain displaced families across Gaza, the West Bank, Jordan, Syria, and Lebanon."
                   }
                 ]
@@ -6915,11 +6905,11 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 53w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Nasser’s humiliation over 38 dead soldiers triggering the September 1955 Soviet-backed Czech arms deal (Option A) or intensified fedayeen raids and the tightened Straits of Tiran blockade (Option B)—rather than wasting exam time listing multiple consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): The Czech Arms Deal",
+                    "label": "Option A (4/4): Gaza Raid → Sept 1955 Czech Arms Deal",
                     "text": "One consequence of the Israeli attack on Gaza on 28 February 1955 was Egypt’s decisive pivot toward Soviet weaponry. After Operation Black Arrow killed 38 Egyptian soldiers and exposed Cairo’s military weakness, President Nasser bypassed Western arms conditions by signing the September 1955 Czech arms deal for 200 Soviet MiG-15 jets and 300 tanks."
                   },
                   {
-                    "label": "Option B (4/4): Escalating Border Blockade",
+                    "label": "Option B (4/4): Gaza Raid → Fedayeen Raids & Tiran Blockade",
                     "text": "One consequence of the February 1955 Gaza raid was a sharp escalation in Egyptian hostility along Israel’s southern frontier. Publicly humiliated before his army officers by the loss of 38 soldiers, President Nasser expanded armed Palestinian fedayeen raids from Gaza and tightened Egypt’s naval blockade of the Straits of Tiran against Israeli shipping."
                   }
                 ]
@@ -8700,15 +8690,15 @@ export default {
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
                 "text": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank unrest that pushed moderate King Hussein into Egypt’s military camp ahead of the Six-Day War. After 4,000 IDF troops flattened over 100 houses and killed 15 Jordanian soldiers, furious Palestinian riots destabilised Hussein’s monarchy and pressured him into signing the 30 May 1967 Joint Defence Pact with President Nasser.",
-                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 54w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either West Bank anti-monarchy riots after 4,000 IDF troops demolished over 100 houses and killed 15 Jordanian soldiers (Option A) or King Hussein abandoning secret moderation toward his May 1967 pact with Nasser (Option B)—rather than wasting exam time listing multiple consequences.",
+                "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 60w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with a genuine forward specification bridge—either West Bank riots pushing Hussein into the 30 May 1967 pact with Nasser (Option A) or Arab criticism pressuring Nasser toward his May 1967 Sinai escalation (Option B).",
                 "options": [
                   {
                     "label": "Option A (4/4): West Bank Riots → Jordan’s May 1967 Pact With Egypt",
                     "text": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank unrest that pushed moderate King Hussein into Egypt’s military camp ahead of the Six-Day War. After 4,000 IDF troops flattened over 100 houses and killed 15 Jordanian soldiers, furious Palestinian riots destabilised Hussein’s monarchy and pressured him into signing the 30 May 1967 Joint Defence Pact with President Nasser."
                   },
                   {
-                    "label": "Option A (4/4): West Bank Riots Against Hussein",
-                    "text": "One consequence of Israel’s raid on Samu on 13 November 1966 was violent West Bank rioting that destabilised King Hussein’s monarchy. After 4,000 IDF troops supported by tanks flattened over 100 houses and killed 15 Jordanian soldiers, outraged Palestinians rioted across West Bank towns, accusing Hussein of failing to protect them."
+                    "label": "Option B (4/4): Arab Criticism of Nasser → Escalation Toward 1967",
+                    "text": "One consequence of the November 1966 Samu raid was the alienation of moderate Jordan alongside fierce Arab criticism of Egyptian inaction. Stung by accusations from Amman and Damascus that Cairo was hiding behind UNEF peacekeepers while 4,000 IDF troops struck the West Bank, King Hussein hardened his anti-Israeli stance while pressure mounted on Nasser to confront Israel in May 1967."
                   }
                 ]
               }
@@ -10489,11 +10479,11 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 54w • Option B: 51w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either the 13 May false Soviet intelligence warning to Cairo following Syria’s loss of six MiG-21s (Option A) or Nasser marching 100,000 troops into Sinai and expelling UNEF (Option B)—rather than wasting exam time listing multiple consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Soviet False Intelligence Warning",
+                    "label": "Option A (4/4): Six Downed MiGs → 13 May Soviet False Warning",
                     "text": "One consequence of the 7 April 1967 air battle was Soviet diplomatic alarm that triggered the May 1967 crisis. After Israeli Mirage jets downed six Syrian MiG-21s and buzzed Damascus, Moscow feared for its Syrian ally and passed a false warning to Cairo on 13 May alleging Israeli brigades were massing to invade Syria."
                   },
                   {
-                    "label": "Option B (4/4): Egyptian Mobilisation in Sinai",
+                    "label": "Option B (4/4): Syrian Humiliation → Nasser’s Sinai Mobilisation & UNEF Exit",
                     "text": "One consequence of Syria’s humiliation on 7 April 1967 was President Nasser’s decision to remilitarise the Sinai Peninsula in mid-May. Stung by Arab criticism that he was hiding behind UN peacekeepers while Damascus faced Israeli jets, Nasser marched 100,000 Egyptian troops into Sinai and expelled UNEF to restore his Pan-Arab leadership."
                   }
                 ]
@@ -12376,12 +12366,12 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 51w • Option B: 50w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either sunken wrecks and mines closing the canal and depriving Egypt of vital toll revenues (Option A) or Israel constructing the 20-metre Bar-Lev Line fortifications along the east bank (Option B)—rather than wasting exam time listing multiple consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Canal Closure and Lost Revenue",
+                    "label": "Option A (4/4): Eight-Year Canal Closure & Lost Egyptian Revenue",
                     "text": "One consequence of the continued dispute over the Suez Canal after June 1967 was the prolonged closure of the waterway, crippling Egypt’s economy. Blocked by sunken wrecks and naval mines along the new Israeli-held frontline, the canal remained shut to shipping for eight years, depriving Cairo of vital transit toll revenues."
                   },
                   {
-                    "label": "Option B (4/4): Construction of Bar-Lev Line",
-                    "text": "One consequence of the Suez Canal dispute after June 1967 was Israel’s fortification of the east bank through the Bar-Lev Line. Between 1968 and 1969, Chief of Staff Haim Bar-Lev constructed a 20-metre sand rampart backed by concrete bunkers and minefields, turning the closed waterway into an entrenched military frontier."
+                    "label": "Option B (4/4): Bar-Lev Line → 1969–70 War of Attrition",
+                    "text": "One consequence of the Suez Canal dispute after June 1967 was Israel’s fortification of the east bank through the Bar-Lev Line, provoking Egypt’s War of Attrition. Between 1968 and 1969 Israel built a 20-metre sand rampart and concrete bunkers along the closed waterway, prompting Nasser to launch artillery duels in March 1969 to prevent the ceasefire line becoming permanent."
                   }
                 ]
               }
@@ -14092,7 +14082,7 @@ export default {
             "question": "1. Explain one consequence of the expulsion of the PLO from Jordan (1970). [4 marks]",
             "prompt": "State one clear consequence -> support with a specific date, name, or fact -> explain what this directly led to.",
             "examiner_tip": "Focus on what happened AFTER King Hussein expelled the PLO from Jordan in 1970–71: the PLO relocated its headquarters to southern Lebanon ('Fatahland') and formed the covert Black September group.",
-            "model": "One consequence of King Hussein’s expulsion of the PLO from Jordan in 1970–71 was the relocation of Palestinian guerrilla leadership to Lebanon. Driven out after fierce Amman tank battles, Yasser Arafat moved thousands of PLO fighters into Beirut and southern Lebanese refugee camps, shifting armed conflict onto Israel’s northern border.",
+            "model": "One consequence of King Hussein’s expulsion of the PLO from Jordan in 1970–71 was the relocation of Palestinian guerrilla forces to Lebanon, shifting conflict onto Israel’s northern border. Establishing bases in Beirut and southern Lebanese refugee camps, PLO fighters launched cross-border raids into Galilee that directly provoked Israel’s 1978 Operation Litani and 1982 invasion of Lebanon.",
             "model_tiers": {
               "tier_1m": {
                 "title": "1/4 Assertion",
@@ -14113,15 +14103,15 @@ export default {
                 "score": "4 / 4 Marks",
                 "level": "Level 2 Top (Pearson Exam Standard)",
                 "badge": "Printed Workbook WAGOLL",
-                "text": "One consequence of King Hussein’s expulsion of the PLO from Jordan in 1970–71 was the relocation of Palestinian guerrilla leadership to Lebanon. Driven out after fierce Amman tank battles, Yasser Arafat moved thousands of PLO fighters into Beirut and southern Lebanese refugee camps, shifting armed conflict onto Israel’s northern border.",
+                "text": "One consequence of King Hussein’s expulsion of the PLO from Jordan in 1970–71 was the relocation of Palestinian guerrilla forces to Lebanon, shifting conflict onto Israel’s northern border. Establishing bases in Beirut and southern Lebanese refugee camps, PLO fighters launched cross-border raids into Galilee that directly provoked Israel’s 1978 Operation Litani and 1982 invasion of Lebanon.",
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 50w • Option B: 52w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Arafat relocating PLO fighters to Beirut and southern Lebanon after Amman tank battles (Option A) or the formation of the Black September group that carried out the 1972 Munich massacre (Option B)—rather than wasting exam time listing multiple consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Relocation to Southern Lebanon",
-                    "text": "One consequence of King Hussein’s expulsion of the PLO from Jordan in 1970–71 was the relocation of Palestinian guerrilla leadership to Lebanon. Driven out after fierce Amman tank battles, Yasser Arafat moved thousands of PLO fighters into Beirut and southern Lebanese refugee camps, shifting armed conflict onto Israel’s northern border."
+                    "label": "Option A (4/4): Relocation to Lebanon → 1978 & 1982 Invasions",
+                    "text": "One consequence of King Hussein’s expulsion of the PLO from Jordan in 1970–71 was the relocation of Palestinian guerrilla forces to Lebanon, shifting conflict onto Israel’s northern border. Establishing bases in Beirut and southern Lebanese refugee camps, PLO fighters launched cross-border raids into Galilee that directly provoked Israel’s 1978 Operation Litani and 1982 invasion of Lebanon."
                   },
                   {
-                    "label": "Option B (4/4): Rise of Black September Faction",
+                    "label": "Option B (4/4): Creation of Black September → 1972 Munich Olympics",
                     "text": "One consequence of the PLO’s defeat in Jordan during September 1970 was the creation of the militant underground Black September organisation. Determined to avenge their expulsion and force global attention onto Palestinian statelessness, radical operatives turned to international terrorism, culminating in the hostage massacre of 11 Israelis at the 1972 Munich Olympics."
                   }
                 ]
@@ -14633,26 +14623,6 @@ export default {
           "teacher_guidance": "Avi Posen examines Prime Minister Golda Meir's authorized Mossad retaliation campaign targeting Black September planners across Europe, and the moral fallout from the Lillehammer affair. Recommended Watch Window: 01:30–07:15 • Lesson Phase: Source Analysis & Covert Operations. Tone Alert: Engaging Israeli framing exploring Golda Meir's decisions and Mossad's global targeted assassination campaign.",
           "viewing_task": "<ol><li><strong>[02:45] Recall:</strong> What clandestine codename was given to the covert Mossad counter-assassination campaign authorized by Prime Minister Golda Meir to hunt down Black September organizers?</li><li><strong>[04:40] Explain:</strong> What political and psychological motives led Golda Meir to authorize targeted assassinations on European soil rather than relying on international diplomatic extradition?</li><li><strong>[06:15] Challenge:</strong> Analyze the catastrophic moral and diplomatic fallout of the July 1973 Lillehammer affair in Norway, where Mossad agents mistakenly assassinated an innocent Moroccan waiter.</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Operation Wrath of God (<em>Mivtza Za'am Ha'El</em>).</li><li><strong>Explain:</strong> European governments had repeatedly released captured Palestinian hijackers and terrorists to avoid further retaliatory attacks on their soil (e.g. West Germany quickly freeing the surviving Munich gunmen after a staged hijacking). Golda Meir concluded that sovereign states would not protect Israeli citizens, establishing the doctrine that anyone targeting Jews anywhere in the world would be held personally accountable by the State of Israel.</li><li><strong>Challenge:</strong> In Lillehammer, Mossad operatives mistook Ahmed Bouchikhi, an innocent Moroccan waiter, for Black September operations chief Ali Hassan Salameh, shooting him in front of his pregnant wife. Norwegian police arrested six Mossad agents, exposing Israel's secret assassination network, causing severe diplomatic disgrace, and demonstrating the grave perils of extrajudicial targeted killing.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=OuT_uh0CAf8",
-          "title": "Steven Spielberg's \"MUNICH\" (2005) Theatrical Trailer | Amblin",
-          "duration": "2 mins 26 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Steven Spielberg's acclaimed film depicting the moral torment of the Mossad assassination squad sent to eliminate Black September operatives. Starring Eric Bana and Daniel Craig. Recommended Watch Window: 00:00–02:22 (Full Trailer) • Lesson Phase: Cultural & Media Deconstruction. Tone Alert: Hollywood psychological drama exploring moral ambiguity and the burden of vengeance.",
-          "viewing_task": "<ol><li><strong>[00:40] Recall:</strong> Which Australian actor portrays Avner Kaufman, the conflicted leader of the Mossad assassination squad in Spielberg's feature film?</li><li><strong>[01:15] Explain:</strong> How does the trailer convey the psychological disintegration and paranoia of the agents as their covert mission progresses across Europe?</li><li><strong>[01:50] Challenge:</strong> Analyze how Spielberg uses cinematic narrative to challenge the traditional concept of retaliatory justice. How does the final shot of the World Trade Center towers in New York underline the film's message about the cycle of violence?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Eric Bana.</li><li><strong>Explain:</strong> The trailer emphasizes shadow, isolation, and anxiety: instead of glamorous, fearless secret agents, the men are depicted sweating in dark apartments, questioning their orders, fearing they are being hunted in return, and realizing that killing targets does not make them or Israel any safer.</li><li><strong>Challenge:</strong> Rather than a patriotic celebration of retribution, Spielberg frames vengeance as a moral trap where every assassination merely creates a more radical replacement. Framing the film's closing dialogue against the Manhattan skyline emphasizes that asymmetric counter-terror violence and cycle-of-revenge tactics reverberate globally across generations without achieving peace.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=Azud40CQ3IE",
-          "title": "Paramount Pictures: \"SEPTEMBER 5\" (2024) Official Theatrical Trailer",
-          "duration": "2 mins 23 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Dramatization of the ABC Sports broadcasting crew thrust into covering the live Munich Olympic terror hostage crisis, exploring how terrorism became a global television event. Recommended Watch Window: 00:00–02:23 (Full Trailer) • Lesson Phase: Media Ethics & Historical Deconstruction. Tone Alert: Tense journalistic drama examining how television news was revolutionized by live crisis coverage.",
-          "viewing_task": "<ol><li><strong>[00:30] Recall:</strong> Which American television network's sports production team is depicted in the film, unexpectedly tasked with broadcasting a geopolitical crisis?</li><li><strong>[01:10] Explain:</strong> What harrowing ethical dilemmas confronted television producers when broadcasting live pictures of masked terrorists and German police positions to global television audiences?</li><li><strong>[01:45] Challenge:</strong> Evaluate the argument that modern international terrorism was deliberately designed for mass media consumption. To what extent did television cameras inadvertently become an accomplice to Black September's goals?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> ABC Sports (led by Roone Arledge and anchored by Jim McKay).</li><li><strong>Explain:</strong> Journalists had to decide whether broadcasting live footage of German police climbing onto the roof of the Olympic village compromised police tactics (as the terrorists inside were watching the broadcast on television). Furthermore, they wrestled with the ethics of turning murder and terror into real-time sensationalist home entertainment.</li><li><strong>Challenge:</strong> Political theorist Brian Jenkins famously observed that 'terrorism is theater'. Black September deliberately timed and staged their operation to hijack the Olympic satellite feed; by giving them 21 hours of continuous live global coverage, international television provided the terrorists with millions of dollars in free political publicity, setting a dangerous precedent for future hostage-taking.</li></ol>"
         },
         {
           "type": "era",
@@ -16454,16 +16424,6 @@ export default {
           "teacher_guidance": "Avi Posen examines Sharon's counter-crossing into mainland Egypt, the encirclement of Egypt's Third Army, US Operation Nickel Grass, and the global OPEC oil shock. Recommended Watch Window: 01:00–06:30 • Lesson Phase: Strategic Overview & Global Economics. Tone Alert: Dynamic analysis of the counter-offensive, superpower brinkmanship, and the oil weapon.",
           "viewing_task": "<ol><li><strong>[02:15] Recall:</strong> Which insubordinate but brilliant Israeli general commanded the armored division that crossed the Suez Canal into mainland Egypt, severing the supply lines of the Egyptian Third Army?</li><li><strong>[03:50] Explain:</strong> What massive emergency military resupply airlift did US President Richard Nixon launch to replenish Israel's depleted munitions and tanks?</li><li><strong>[05:15] Challenge:</strong> How did the Arab OPEC oil embargo weaponize energy supplies, quadrupling crude oil prices and forcing Western European democracies and Japan to shift their foreign policy away from unconditional support for Israel?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Major General Ariel 'Arik' Sharon.</li><li><strong>Explain:</strong> Operation Nickel Grass: the US military flew over 22,000 tons of tanks, artillery shells, electronic countermeasures, and missiles to Tel Aviv via giant C-5 Galaxy transport aircraft, replacing catastrophic opening losses and enabling the IDF to go on the counter-offensive.</li><li><strong>Challenge:</strong> Arab oil producers, led by King Faisal of Saudi Arabia, cut production and placed a total embargo on the US and the Netherlands. Gasoline rationing, inflation, and economic recession engulfed the West. The oil shock proved that economic leverage was more potent than tank divisions, permanently forcing Western powers to balance their support for Israel with vital Arab economic interests.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=uwvAiDUAmhY",
-          "title": "Helen Mirren in \"GOLDA\" (2023) Official Theatrical Trailer | Bleecker Street",
-          "duration": "2 mins 22 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Feature film preview starring Helen Mirren portraying Prime Minister Golda Meir's isolated crisis leadership during the dark opening days of the 1973 war. Recommended Watch Window: 00:00–02:22 (Full Trailer) • Lesson Phase: Cinematic & Leadership Deconstruction. Tone Alert: Tense biographical feature depicting crisis leadership and moral burden under pressure.",
-          "viewing_task": "<ol><li><strong>[00:35] Recall:</strong> Who was Israel's first female Prime Minister, portrayed by Academy Award-winner Helen Mirren in the biographical drama?</li><li><strong>[01:15] Explain:</strong> How does the trailer dramatize the intense psychological burden and isolation of leadership when cabinet ministers and generals panic during an existential national crisis?</li><li><strong>[01:45] Challenge:</strong> Contrast the cinematic portrayal of Golda Meir's stoic resolve with the fierce domestic public anger in Israel that followed the war, leading to the Agranat Commission and her forced resignation.</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Golda Meir.</li><li><strong>Explain:</strong> The trailer portrays an aging leader suffering from lymphoma, smoking chain-cigarettes while listening to agonizing live battlefield radio feeds of soldiers dying in frontline bunkers. When military icons like Moshe Dayan lose their nerve and talk of 'the fall of the Third Temple', Golda is shown maintaining discipline and negotiating directly with Henry Kissinger.</li><li><strong>Challenge:</strong> While the film lionizes her fortitude, Israeli society after October 1973 felt profound betrayal. Over 2,600 Israeli soldiers had died due to military arrogance and intelligence negligence. Protests led by returning reservists (like Motti Ashkenazi) forced the creation of the Agranat Commission, and although she was officially exonerated, overwhelming public fury forced Golda to resign in May 1974.</li></ol>"
         },
         {
           "type": "youtube",
@@ -18548,16 +18508,6 @@ export default {
           "teacher_guidance": "Explores the fury of the Arab League, Egypt's expulsion, the failure of the Palestinian autonomy framework, and Sadat's assassination on 6 October 1981. Recommended Watch Window: 00:00–01:45 • Lesson Phase: Arab Perspective & Cost of Compromise. Tone Alert: Sombre archival record examining Arab fury, Egypt's regional isolation, and Sadat's tragic fate.",
           "viewing_task": "<ol><li><strong>[00:26] Recall:</strong> On what date was President Anwar Sadat assassinated by radical Islamist soldiers during a military victory parade in Cairo?</li><li><strong>[00:52] Explain:</strong> Why did the Arab League brand Egypt a traitor, sever all diplomatic relations, and move its headquarters from Cairo to Tunis following the 1979 treaty?</li><li><strong>[01:18] Challenge:</strong> Analyze the tragic fate of peacemakers in the Middle East: why was Anwar Sadat celebrated as a visionary hero in the West while being reviled by radical factions at home?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> 6 October 1981 (the eighth anniversary of the Yom Kippur War crossing).</li><li><strong>Explain:</strong> Arab states felt that Egypt, the largest Arab military power, had broken collective solidarity and signed a selfish 'separate peace' to regain its own territory (Sinai), while abandoning the Palestinians, Syria (Golan), and East Jerusalem to permanent Israeli control.</li><li><strong>Challenge:</strong> Sadat was awarded the Nobel Peace Prize and received standing ovations in Washington. However, domestic Islamist groups (like Egyptian Islamic Jihad) viewed making peace with Israel and accommodating the West as a betrayal of Islam, demonstrating the mortal domestic hazards confronting Arab and Israeli leaders who pursue compromise.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=z0q2WbXQWbw",
-          "title": "Netflix: \"THE ANGEL\" (2018) Official Theatrical Trailer",
-          "duration": "2 mins 03 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Dramatization of Ashraf Marwan (Nasser's son-in-law) who spied for Mossad while remaining an Egyptian insider, showing the shadowy espionage backchannels that preceded the peace treaty. Recommended Watch Window: 00:00–02:03 (Full Trailer) • Lesson Phase: Cinematic & Espionage Deconstruction. Tone Alert: Gripping espionage trailer exploring high-stakes diplomacy and covert intelligence.",
-          "viewing_task": "<ol><li><strong>[00:35] Recall:</strong> What was the real name of the high-ranking Egyptian insider and son-in-law of Gamal Abdel Nasser who served as Mossad's top intelligence asset, codenamed 'The Angel'?</li><li><strong>[01:10] Explain:</strong> How does the film portray the covert intelligence backchannels that operated beneath public diplomatic hostility?</li><li><strong>[01:40] Challenge:</strong> Historians continue to debate whether Ashraf Marwan was Israel's greatest spy or a brilliant Egyptian double-agent. How does historical uncertainty reflect the murky world of Middle East espionage?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Dr. Ashraf Marwan.</li><li><strong>Explain:</strong> The trailer shows that while politicians traded public insults, high-level intelligence operatives were secretly communicating in European luxury hotels, providing vital assessments of Soviet weapon shipments and political thinking that prevented misunderstandings from triggering nuclear confrontation.</li><li><strong>Challenge:</strong> Marwan warned Mossad of the 1973 invasion, but stated it would begin at sunset rather than 14:00, delaying Israeli mobilization. Some argue he saved Israel by providing warning; others claim he deliberately misled Israel about the exact hour. His mysterious death falling from a London balcony in 2007 highlights how secret agents operate in permanent moral and historical ambiguity.</li></ol>"
         },
         {
           "type": "youtube",
@@ -20758,16 +20708,6 @@ export default {
         },
         {
           "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=CoM-L62peIo",
-          "title": "Sony Pictures Classics: \"WALTZ WITH BASHIR\" (2008) Official Theatrical Trailer",
-          "duration": "2 mins 04 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Oscar-nominated animated documentary feature following an Israeli veteran reconstructing his repressed memories of the 1982 Lebanon War and the Sabra and Shatila massacre. Recommended Watch Window: 00:00–02:04 (Full Trailer) • Lesson Phase: Cinematic & Ethical Investigation. Tone Alert: Haunting, groundbreaking animated documentary on the trauma and moral guilt of the 1982 Lebanon War.",
-          "viewing_task": "<ol><li><strong>[00:45] Recall:</strong> Which two Palestinian refugee camps in West Beirut witnessed the horrific September 1982 massacre of civilians by Lebanese Christian Phalangist militias?</li><li><strong>[01:15] Explain:</strong> How does director Ari Folman use surreal animation to explore the psychological suppression of war trauma and repressed memories among Israeli soldiers in Lebanon?</li><li><strong>[01:45] Challenge:</strong> What were the explosive political findings of Israel's 1983 Kahan Commission regarding Defence Minister Ariel Sharon's 'indirect responsibility' for the Sabra and Shatila massacre?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Sabra and Shatila.</li><li><strong>Explain:</strong> Animation allowed Folman to visualize the hallucinatory, nightmarish nature of memory: dreams, fear, and subconscious guilt blending with real combat. It conveys the confusion of 19-year-old conscripts who stood guard firing illumination flares over Beirut without grasping the atrocities being committed beneath them.</li><li><strong>Challenge:</strong> The independent Kahan Commission established that while Phalangist militias carried out the slaughter, Sharon bore personal responsibility for sending known extremists into the camps and ignoring reports of mass murder. Sharon was forced to resign as Defence Minister, and 400,000 Israelis protested in Tel Aviv, marking a watershed moment in Israeli anti-war activism.</li></ol>"
-        },
-        {
-          "type": "youtube",
           "url": "https://www.youtube.com/watch?v=_pGg50bzLN0",
           "title": "Al Jazeera English: Palestine's First Intifada – 30 Years On",
           "duration": "2 mins 49 secs",
@@ -22208,7 +22148,7 @@ export default {
                     "text": "One consequence of setting up the Palestinian National Authority in May 1994 was the first Palestinian self-government inside the occupied territories. Following Israeli troop withdrawals from Gaza and Jericho under Oslo I, Yasser Arafat returned from exile in Tunis to direct Palestinian civil administration, taxation, and internal policing."
                   },
                   {
-                    "label": "Option B (4/4): Expansion Under Oslo II Zones",
+                    "label": "Option B (4/4): Phased Self-Rule → 1995 Oslo II Areas A, B & C",
                     "text": "One consequence of establishing the PNA in 1994 was a phased framework that extended limited Palestinian self-rule into West Bank towns under Oslo II in 1995. While the PNA gained civil authority in Areas A and B, Israel retained full control over Area C (60% of the West Bank) and deferred final-status issues."
                   }
                 ]
@@ -22890,16 +22830,6 @@ export default {
           "teacher_guidance": "Examines the deadly actions of extremists on both sides: Baruch Goldstein's Hebron massacre, Hamas bus bombings against civilians, right-wing rallies in Israel, and the assassination of Yitzhak Rabin on 4 November 1995. Recommended Watch Window: 00:00–04:15 • Lesson Phase: Extremist Derailment & Tragedy. Tone Alert: Sombre retrospective detailing the violent backlashes from extremists on both sides.",
           "viewing_task": "<ol><li><strong>[01:15] Recall:</strong> What extremist Jewish settler gunned down 29 Muslim worshippers at the Ibrahimi Mosque / Cave of the Patriarchs in Hebron in February 1994?</li><li><strong>[02:30] Explain:</strong> How did a wave of horrific suicide bus bombings carried out by Hamas and Palestinian Islamic Jihad inside Israeli cities in 1994–1995 destroy Israeli public faith in the peace process?</li><li><strong>[03:45] Challenge:</strong> On 4 November 1995, Prime Minister Yitzhak Rabin was assassinated at a peace rally in Tel Aviv by Yigal Amir. How did toxic domestic political rhetoric pave the way for his assassination, and why was this the fatal blow to Oslo?</li></ol>",
           "model_answer": "<ol><li><strong>Recall:</strong> Baruch Goldstein.</li><li><strong>Explain:</strong> Goldstein's massacre triggered vows of revenge from Hamas. Suicide bombers detonated explosives on civilian commuter buses in Tel Aviv, Jerusalem, and Afula, killing dozens of innocent Israeli civilians. The attacks convinced ordinary Israelis that making territorial concessions to the Palestinians brought death rather than peace, eroding Rabin's political majority.</li><li><strong>Challenge:</strong> Right-wing Israeli opposition rallies featured placards portraying Rabin in Nazi SS uniform and chants of 'traitor' and 'murderer'. Yigal Amir, an ultranationalist law student, believed that relinquishing biblical land violated Jewish religious law (*din rodef*). Rabin's assassination removed the only Israeli leader with the military prestige and political courage to implement peace, halting the peace momentum permanently.</li></ol>"
-        },
-        {
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=QsRlXQcHd8c",
-          "title": "HBO Films: \"OSLO\" (2021) Official Theatrical Trailer starring Andrew Scott & Ruth Wilson",
-          "duration": "2 mins 15 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Dramatization of the secret backchannel Norwegian diplomacy between Israeli academics and the PLO that led to the 1993 White House handshake. Recommended Watch Window: 00:00–02:15 (Full Trailer) • Lesson Phase: Cinematic & Human Connection. Tone Alert: High-caliber drama exploring backchannel diplomacy and personal connection.",
-          "viewing_task": "<ol><li><strong>[00:30] Recall:</strong> Which Norwegian diplomat and her sociologist husband secretly initiated the clandestine backchannel negotiations outside Oslo in 1992?</li><li><strong>[01:15] Explain:</strong> Why was unofficial, backchannel diplomacy conducted by Norwegian mediators necessary to bypass Israeli laws that made contact with PLO members a criminal offense?</li><li><strong>[01:50] Challenge:</strong> How does the film dramatize the transformative power of informal human contact (sharing home-cooked meals, Scotch, and personal family photographs) in breaking down thirty years of diplomatic hatred?</li></ol>",
-          "model_answer": "<ol><li><strong>Recall:</strong> Mona Juul and Terje Rød-Larsen.</li><li><strong>Explain:</strong> Official Israeli diplomats were legally forbidden from speaking to the PLO, and official public talks in Washington were bogged down by political posturing and media leaks. By using Israeli university professors (Yair Hirschfeld and Ron Pundak) as deniable cut-outs in a private Norwegian estate, negotiators could discuss radical compromises without fear of public scandal.</li><li><strong>Challenge:</strong> Formal diplomacy is sterile and adversarial. The trailer shows that by stripping away diplomatic protocol and forcing sworn enemies to sit together around a dining table, the mediators forced them to see each other as human fathers and husbands rather than abstract caricatures of evil, proving that empathy is the indispensable foundation of peacemaking.</li></ol>"
         },
         {
           "type": "youtube",

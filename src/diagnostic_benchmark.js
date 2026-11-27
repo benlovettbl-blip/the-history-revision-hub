@@ -123,6 +123,26 @@ export function sampleDiagnosticQuestions(unitId, unitData, topicFilter = null) 
         });
       }
     });
+  } else if (isKs2DiagUnit(unitId, unitData) && lessons.length === 6) {
+    // Standard 6-Enquiry KS2 Primary Unit: 3 balanced 2-enquiry pairs
+    const stripEnqPrefix = (raw) =>
+      String(raw || '')
+        .replace(/^(?:Enquiry|Lesson)\s*\d+\s*:\s*/i, '')
+        .replace(/\s*\([^)]*\)\s*$/, '')
+        .trim();
+    for (let p = 0; p < 3; p++) {
+      const pairLessons = lessons.slice(p * 2, p * 2 + 2);
+      if (pairLessons.length > 0) {
+        const t1 = stripEnqPrefix(pairLessons[0].title);
+        const shortT1 = t1.length > 36 ? t1.slice(0, 33) + '...' : t1;
+        eras.push({
+          id: `band_${p + 1}`,
+          title: `Enquiries ${p * 2 + 1}–${p * 2 + pairLessons.length}: ${shortT1}`,
+          lessons: pairLessons,
+          workbookId: 'full',
+        });
+      }
+    }
   } else {
     // Single-pack unit (KS3 or unified GCSE): split lessons chronologically into 4 quarters
     const quarterSize = Math.max(1, Math.ceil(lessons.length / 4));

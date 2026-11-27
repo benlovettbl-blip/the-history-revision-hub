@@ -1,0 +1,578 @@
+[
+  {
+    "lesson_index": 0,
+    "lesson_id": "lesson_1",
+    "lesson_label": "Enquiry 1",
+    "short_tab_title": "Digging the Great Moat",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Micro-Story",
+    "book_title": "Sixteen Thousand Kilometres of Red Clay: Digging the Great Earthworks of Edo",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original Key Stage 2 historical micro-story grounded in archaeologist Patrick Darling and Graham Connah's surveys of the Benin Iya earthworks across Edo State in southern Nigeria (c. AD 900–1460).",
+    "author_context": "Long before bulldozers or steel diggers existed, rainforest communities in southern Nigeria dug one of the largest earthwork networks on Earth! Step into the red-clay ditches around early Edo around AD 950.",
+    "cover_image": "/units/ks2_kingdom_of_benin/assets/benin_red_earth_moat_iya.jpg",
+    "cover_caption": "Steep red-earth banks of the ancient Benin Iya moat and rampart network preserved beneath rainforest trees in Edo State, Nigeria.",
+    "studio_audio": "/audio/reading/ks2_kingdom_of_benin/r0.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Edo",
+        "pronunciation": "EH-doh",
+        "def": "The people, language, and rainforest heartland of the Kingdom of Benin in southern Nigeria."
+      },
+      {
+        "term": "Ogiso",
+        "pronunciation": "oh-GEE-soh",
+        "def": "Early rulers of Benin before the Obas, whose royal title meant 'Kings of the Sky'."
+      },
+      {
+        "term": "Iya",
+        "pronunciation": "EE-yah",
+        "def": "Deep ditches and steep red-earth banks dug around Edo villages and Benin City to mark boundaries and keep people safe."
+      },
+      {
+        "term": "Laterite",
+        "pronunciation": "LAT-er-yt",
+        "def": "Rich, iron-red tropical clay soil in West Africa that bakes rock-hard under the hot dry-season sun."
+      }
+    ],
+    "extract": "Morning mist hung low beneath giant silk-cotton trees in southern Nigeria around AD 950. Down in a deep trench stood dozens of <strong>Edo</strong> villagers with iron hoes and woven reed baskets. Each digger scooped heavy red <em>laterite</em> clay from the ditch floor. Up a chain of strong hands went every full basket!\n\nAt the top, builders tipped the damp earth onto a steep rising bank. Together they were shaping an <strong>Iya</strong> earthwork to guard their farmland and homes. Early kings called the <em>Ogiso</em>, or Kings of the Sky, ruled these growing forest towns.\n\nWork stopped only when heavy tropical rains turned the red clay slick. Once dry sun returned, baked banks stood firm as stone walls! Steep ditches slowed rival raiders and kept wild forest animals away from yam fields.\n\nOver centuries, linked village rings stretched sixteen thousand kilometres through the green forest. While Anglo-Saxon Britain built small timber forts, Edo communities shaped a wonder of the medieval world.",
+    "parent_discussion": [
+      {
+        "question": "Which simple hand tools did Edo villagers use to dig and lift heavy red clay out of the deep ditch?",
+        "answer": "They dug with iron hoes and passed woven reed baskets of damp red clay up a chain of hands!"
+      },
+      {
+        "question": "Why did builders have to pause digging during heavy rains, and what happened once the hot sun returned?",
+        "answer": "Heavy rain made the red laterite clay slippery, whereas hot dry-season sun baked the earth banks hard like stone."
+      },
+      {
+        "question": "How did the linked Iya earthworks around Edo compare in scale with small timber forts in Anglo-Saxon Britain around AD 950?",
+        "answer": "Over centuries, Benin's linked village ditches and banks stretched sixteen thousand kilometres across the rainforest—far larger than small Saxon forts!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "What did the early royal Benin title 'Ogiso' mean in English?",
+        "options": [
+          "Kings of the Sky",
+          "Lords of the Snow",
+          "Captains of the Sea",
+          "Keepers of Iron"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Before the dynasty of Obas began, Benin's earliest rulers were known as the Ogiso, meaning 'Kings of the Sky'."
+      },
+      {
+        "question": "What were Benin's giant moat-and-bank earthworks called in the Edo language?",
+        "options": [
+          "Pyramids",
+          "Iya",
+          "Aqueducts",
+          "Burhs"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Edo communities dug deep Iya ditches and piled the red clay high to mark boundaries and protect settlements."
+      },
+      {
+        "question": "Roughly how far did the full network of linked earthworks eventually stretch across the Benin rainforest?",
+        "options": [
+          "Ten metres",
+          "Five kilometres",
+          "Sixteen thousand kilometres",
+          "Fifty metres"
+        ],
+        "correctIndex": 2,
+        "feedback": "Well remembered! Stretching around sixteen thousand kilometres in total, the Benin earthworks are among the longest ancient structures on Earth."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What were the Benin 'Iya', who were the 'Ogiso', and how were Edo's red-earth walls built without machines?",
+      "answer": "Under early Ogiso ('Kings of the Sky') and later rulers, Edo communities dug 16,000 km of deep Iya ditches using iron hoes and woven baskets of sun-baked red laterite clay."
+    },
+    "hinge_question": "What does organising sixteen thousand kilometres of earthworks tell us about teamwork and leadership in early Benin?",
+    "audio_file": "/audio/reading/ks2_kingdom_of_benin/r0.mp3"
+  },
+  {
+    "lesson_index": 1,
+    "lesson_id": "lesson_2",
+    "lesson_label": "Enquiry 2",
+    "short_tab_title": "Praise of Ewuare the Great",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "verse",
+    "source_type_label": "Traditional Edo Royal Praise-Verse",
+    "book_title": "Royal Edo Praise-Chants and Proverbs of Oba Ewuare the Great (c. 1440)",
+    "author": "Traditional Edo Court Oral Heritage (Recorded in Public-Domain Edo Chronicles)",
+    "provenance_note": "Traditional public-domain Edo royal praise-titles and court proverbs honouring Oba Ewuare the Great (r. c. 1440–1473), rendered into clear Key Stage 2 English verse lines for classroom read-aloud.",
+    "author_context": "Around 1440, warrior-king Oba Ewuare the Great rebuilt Benin City with broad straight streets, nine guarded gates, and gleaming red-clay palace courtyards! Read aloud how royal Edo singers praised their sacred king.",
+    "cover_image": "/units/ks2_kingdom_of_benin/assets/ki_oba_ewuare_the_great.jpg",
+    "cover_caption": "Cast Benin court plaque celebrating royal power and red coral regalia introduced under Oba Ewuare the Great.",
+    "studio_audio": "/audio/reading/ks2_kingdom_of_benin/r1.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Oba",
+        "pronunciation": "OH-bah",
+        "def": "The sacred king of Benin, honoured by Edo people as ruler of the land and living link to royal ancestors."
+      },
+      {
+        "term": "Ewuare the Great",
+        "pronunciation": "eh-WAH-reh",
+        "def": "Powerful fifteenth-century Oba (r. c. 1440–1473) who rebuilt Edo as a grand walled capital and started the Igue festival."
+      },
+      {
+        "term": "Coral Beads",
+        "pronunciation": "KOR-ul BEEDZ",
+        "def": "Polished red sea-coral beads worn in heavy crowns, collars, and tunics as symbols of the Oba's royal rank."
+      },
+      {
+        "term": "Leopard of the House",
+        "pronunciation": "LEP-erd uv thuh HOWS",
+        "def": "Royal Edo praise-title comparing the wise, fearless Oba inside his palace to the noble leopard ruling the forest."
+      }
+    ],
+    "extract": "Around 1440, <strong>Oba Ewuare the Great</strong> rebuilt his capital with wide straight roads. Nine strong wooden gates guarded the deep inner moat! Tall palm-oil lamps glowed outside neat courtyard homes at dusk. At palace feasts, royal drummers beat deep rhythms on tall drums. Court singers chanted proud praise-lines for their sacred <em>Oba</em>.\n\n<div class=\"reading-stanza\"><em>\"Hail the Leopard of the House, calm and bold in might!<br>Red coral crowns his brow and shines like morning light.<br>Forest trees bow very low when sudden thunder rolls.<br>Nine strong gates stand firm around the city Ewuare holds!\"</em></div>\n\nWise elders also shared old Edo proverbs about teamwork and good rule.\n\n<div class=\"reading-stanza\"><em>\"One hand alone can never lift a heavy roof on high.<br>Broad streets stay neat when every house sweeps dry!<br>Great Ewuare guides his land with wisdom sharp and deep.<br>Tall brass birds on palace roofs watch Edo safely sleep!\"</em></div>\n\nSpoken songs kept royal deeds alive across many proud generations.",
+    "parent_discussion": [
+      {
+        "question": "Why did Edo court singers call the sacred Oba 'the Leopard of the House' in their praise-chant?",
+        "answer": "Just as the strong, graceful leopard ruled the wild forest, the Oba ruled wisely and bravely over the kingdom from his palace!"
+      },
+      {
+        "question": "What clever message about teamwork does the Edo proverb 'One hand alone can never lift a heavy roof on high' teach?",
+        "answer": "Even a mighty king needs loyal chiefs, craft guilds, and hardworking families working together to build a great city!"
+      },
+      {
+        "question": "Which real features of Oba Ewuare's rebuilt city of 1440 appear inside these verses?",
+        "answer": "Wide clean streets, nine guarded city gates, red coral crowns, palm-oil lamps, and cast brass birds high on the palace roof!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Around 1440, how many strong gates guarded Oba Ewuare the Great's rebuilt capital?",
+        "options": [
+          "One wooden gate",
+          "Nine guarded gates",
+          "Fifty iron bridges",
+          "Zero gates"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Oba Ewuare surrounded the inner royal city with a massive moat and nine fortified gates where travellers paid tolls."
+      },
+      {
+        "question": "What fuel burned inside the tall street lamps outside Benin City homes at dusk?",
+        "options": [
+          "Palm oil",
+          "Coal gas",
+          "Whale blubber",
+          "Electric batteries"
+        ],
+        "correctIndex": 0,
+        "feedback": "Exactly right! Rich red palm oil pressed from rainforest oil-palm fruit fuelled glowing lamps long before European cities had street lighting."
+      },
+      {
+        "question": "What precious red material crowned the Oba's brow in the royal praise-song?",
+        "options": [
+          "Red sea-coral beads",
+          "Painted cardboard",
+          "Dyed sheep wool",
+          "Red glass marbles"
+        ],
+        "correctIndex": 0,
+        "feedback": "Well remembered! Oba Ewuare made polished red coral beads the most sacred badge of royal rank at the Benin court."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "How did Oba Ewuare the Great transform Benin City around 1440, and why was the Oba called 'Leopard of the House'?",
+      "answer": "Ewuare built broad straight streets, a deep inner moat with nine gates, palm-oil lamps, and coral regalia; 'Leopard of the House' honoured the Oba as ruler of the kingdom just as the leopard ruled the forest."
+    },
+    "hinge_question": "How did poems, proverbs, and brass plaques preserve Benin's history cleanly without printed books?",
+    "audio_file": "/audio/reading/ks2_kingdom_of_benin/r1.mp3"
+  },
+  {
+    "lesson_index": 2,
+    "lesson_id": "lesson_3",
+    "lesson_label": "Enquiry 3",
+    "short_tab_title": "Fire on Igun Street",
+    "literary_mode": "storied_micro_history",
+    "provenance_tier": "storied_micro_history",
+    "source_type": "micro_history",
+    "source_type_label": "True Historical Micro-Story",
+    "book_title": "Beeswax, Red Clay and Liquid Fire: Casting a Royal Plaque on Igun Street",
+    "author": "The History Revision Hub Narrative Archive",
+    "provenance_note": "Original Key Stage 2 historical micro-story grounded in the centuries-old lost-wax (cire perdue) brass-casting methods of the Royal Igun Eronmwon guild on Igun Street, Benin City.",
+    "author_context": "Museums often call Benin's shining sculptures 'Benin Bronzes', yet most were cast from golden-yellow brass using soft beeswax and fiery furnaces! Watch master casters at work on Igun Street around 1550.",
+    "cover_image": "/units/ks2_kingdom_of_benin/assets/benin_brass_commemorative_oba_head.jpg",
+    "cover_caption": "Masterpiece cast brass commemorative head of an Oba wearing a tall woven coral-bead collar, made by the royal Igun Street guild.",
+    "studio_audio": "/audio/reading/ks2_kingdom_of_benin/r2.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Igun Street",
+        "pronunciation": "ee-GOON STREET",
+        "def": "The famous royal quarter in Benin City where the hereditary guild of master brass-casters has worked for centuries."
+      },
+      {
+        "term": "Lost-Wax Casting",
+        "pronunciation": "LOST WAKS KAH-sting",
+        "def": "Sculpting a figure in beeswax, coating it in clay, melting the wax out, and pouring molten brass into the hollow space."
+      },
+      {
+        "term": "Brass",
+        "pronunciation": "BRAHS",
+        "def": "A bright golden metal alloy of copper and zinc used for most royal Benin plaques and heads."
+      },
+      {
+        "term": "Crucible",
+        "pronunciation": "KROO-sih-bul",
+        "def": "A thick heat-proof clay pot used inside a roaring charcoal furnace to melt solid brass into glowing liquid."
+      }
+    ],
+    "extract": "Sparks danced toward the thatch roof of a courtyard workshop on <strong>Igun Street</strong> around 1550. Only the Oba's royal guild was allowed to cast sacred <em>brass</em> for the palace! For weeks, a master sculptor had shaped warm yellow beeswax over a dry clay core. With a bone knife he carved every tiny coral bead and leopard spot.\n\nNext, young helpers packed fine wet mud and red clay smoothly around the wax warrior. Once the mould dried hard in the sun, they set it near the fire. Melted wax trickled out through a narrow spout! Inside the baked clay shell, an exact hollow space waited.\n\n<em>\"Pump the goat-skin bellows steady!\"</em> the master called.\n\nCharcoal roared white-hot around a heavy clay <em>crucible</em>. With iron tongs, casters tilted glowing liquid brass into the mould. Days later, they cracked the cool clay open. After careful filing, a bright plaque shone ready for a tall palace pillar!",
+    "parent_discussion": [
+      {
+        "question": "Why is this clever West African metalworking method called 'lost-wax' casting?",
+        "answer": "Because the carved beeswax model melts and trickles out of the heated clay mould—leaving a hollow gap for liquid brass!"
+      },
+      {
+        "question": "What happened to the outer clay mould at the very end, and what did that mean about every single Benin plaque?",
+        "answer": "Casters had to crack the clay mould open to free the metal—making every single Benin brass sculpture one of a kind!"
+      },
+      {
+        "question": "Who had permission to commission brass plaques and royal heads from the guild on Igun Street?",
+        "answer": "Only the sacred Oba of Benin could order brass castings for palace pillars and royal altars!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "On which famous street in Benin City did the royal guild of brass-casters live and work?",
+        "options": [
+          "Igun Street",
+          "Fleet Street",
+          "Acropolis Way",
+          "Watling Street"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Even today, hereditary brass-casting families still work along Igun Street in Benin City, Nigeria."
+      },
+      {
+        "question": "What natural material did Igun Street sculptors carve first to form every tiny bead and pattern?",
+        "options": [
+          "Frozen ice",
+          "Soft yellow beeswax",
+          "Hard granite rock",
+          "Dry autumn leaves"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Warm beeswax let skilled artists carve delicate coral beads, feathers, and armour before coating it in fine clay."
+      },
+      {
+        "question": "What was a 'crucible' used for inside the Igun Street foundry?",
+        "options": [
+          "Storing cold drinking water",
+          "Holding solid brass inside a roaring furnace until it melted into liquid",
+          "Weighing yams at market",
+          "Catching river fish"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Thick clay crucibles withstood fierce charcoal heat so casters could pour liquid metal safely."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Put the main steps of Igun Street 'lost-wax' brass casting into the right order!",
+      "answer": "Carve details in beeswax over a clay core, coat in wet clay, heat so melted wax pours out, pour molten brass from a crucible, then crack the cool clay mould open."
+    },
+    "hinge_question": "Why did European museum curators struggle at first to believe West African artists had mastered such advanced lost-wax casting?",
+    "audio_file": "/audio/reading/ks2_kingdom_of_benin/r2.mp3"
+  },
+  {
+    "lesson_index": 3,
+    "lesson_id": "lesson_4",
+    "lesson_label": "Enquiry 4",
+    "short_tab_title": "Inside the Oba's Court",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "intimate_eyewitness",
+    "source_type": "eyewitness",
+    "source_type_label": "Sixteenth-Century Court Eyewitness",
+    "book_title": "Kneeling Before the Sacred Oba: Richard Eden's Account of Captain Windham in Benin (1553)",
+    "author": "Richard Eden (Recording Captain Thomas Windham's 1553 Voyage to Benin, Public Domain)",
+    "provenance_note": "Adapted into accessible Key Stage 2 English from Richard Eden's 1555 account (preserved in Richard Hakluyt's public-domain 'Principal Navigations') describing English merchants received at the royal court of Benin in 1553.",
+    "author_context": "In 1553—the very year young King Edward VI died in Tudor England—English sailors led by Captain Thomas Windham sailed up the Benin River to buy pepper! Read what amazed them most inside the Oba's grand palace hall.",
+    "cover_image": "/units/ks2_kingdom_of_benin/assets/queen_mother_idia_ivory_mask_bm.jpg",
+    "cover_caption": "Sixteenth-century carved ivory royal pendant mask of Queen Mother (Iyoba) Idia, worn by Oba Esigie at sacred court ceremonies.",
+    "studio_audio": "/audio/reading/ks2_kingdom_of_benin/r3.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Iyoba",
+        "pronunciation": "ee-YOH-bah",
+        "def": "Title of the Queen Mother of Benin, first created by Oba Esigie for his wise mother Idia with her own palace at Uselu."
+      },
+      {
+        "term": "Ivory",
+        "pronunciation": "EYE-vuh-ree",
+        "def": "Smooth creamy-white elephant tusk carved by royal Benin guild artists into sacred masks, horns, and altar tusks."
+      },
+      {
+        "term": "Igue Festival",
+        "pronunciation": "ee-GWAY FES-tih-vul",
+        "def": "Joyful annual royal Benin thanksgiving ceremony renewing the sacred strength of the Oba and blessing the whole kingdom."
+      },
+      {
+        "term": "Portuguese",
+        "pronunciation": "por-chuh-GEEZ",
+        "def": "People and language of Portugal—the first Europeans to trade with Benin from 1485, spoken fluently by Benin's mid-1500s Oba!"
+      }
+    ],
+    "extract": "In 1553, our English ship anchored in the warm Benin River to buy pepper. Guides led Captain Windham and our crew into the grand walled palace of Benin City. Inside a wide pillared court sat the sacred <strong>Oba</strong> in bright red coral robes!\n\nEven the highest Benin chiefs knelt low before their king. None dared look straight into his face until he spoke! Imagine our shock when the king greeted us in clear <em>Portuguese</em>. He had learned to read and speak that tongue as a young boy!\n\nAt court shone the proud memory of <strong>Iyoba</strong> Idia, Benin's wise first Queen Mother. Her brave counsel helped her son win great wars. On his hip hung a pale carved <em>ivory</em> mask of her calm face, crowned with tiny sea traders.\n\nWithin days, royal stores filled eighty chests with spicy Benin pepper for our ship. Few courts in Tudor Europe matched such calm order.",
+    "parent_discussion": [
+      {
+        "question": "What surprised the 1553 English visitors most the moment the Oba of Benin opened his mouth to greet them?",
+        "answer": "The Oba spoke clear Portuguese, having learned to read and speak the language since boyhood!"
+      },
+      {
+        "question": "How did even the highest Benin chiefs show sacred respect when entering the Oba's palace courtyard?",
+        "answer": "They knelt respectfully before the Oba and did not gaze straight into his face until invited to speak."
+      },
+      {
+        "question": "Who was Iyoba Idia, and why was a carved ivory mask of her face worn at sacred court ceremonies?",
+        "answer": "Iyoba Idia was Benin's first Queen Mother, honoured with a royal ivory mask because her wise counsel helped her son win great wars!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Which European language did the Oba of Benin speak clearly to English visitors in 1553?",
+        "options": [
+          "Portuguese",
+          "Norwegian",
+          "Russian",
+          "Scottish Gaelic"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Because Portuguese traders had visited Benin since 1485, royal princes learned Portuguese for international diplomacy and trade."
+      },
+      {
+        "question": "What valuable rainforest spice did Benin's royal stores gather in eighty chests for the 1553 ship?",
+        "options": [
+          "Benin pepper",
+          "Frozen snow",
+          "Maple syrup",
+          "Arctic cod"
+        ],
+        "correctIndex": 0,
+        "feedback": "Exactly right! Fiery West African Benin pepper was prized across Europe to flavour and preserve food."
+      },
+      {
+        "question": "What special royal title did 'Iyoba' mean at the court of Benin?",
+        "options": [
+          "Harbour pilot",
+          "Queen Mother",
+          "Iron blacksmith",
+          "Market baker"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Oba Esigie created the powerful office of Iyoba (Queen Mother) for his mother Idia, giving her a palace of her own."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What two details in the 1553 English visit prove Benin was a wealthy, outward-looking kingdom?",
+      "answer": "The Oba greeted visitors in clear Portuguese learned since childhood, and royal stores rapidly organised eighty chests of Benin pepper alongside fine ivory and coral court art."
+    },
+    "hinge_question": "Why were tiny bearded Portuguese heads carved along the top of Queen Mother Idia's royal ivory mask?",
+    "audio_file": "/audio/reading/ks2_kingdom_of_benin/r3.mp3"
+  },
+  {
+    "lesson_index": 4,
+    "lesson_id": "lesson_5",
+    "lesson_label": "Enquiry 5",
+    "short_tab_title": "Thirty Straight Streets",
+    "literary_mode": "verbatim_literature",
+    "provenance_tier": "verbatim_literature",
+    "source_type": "prose",
+    "source_type_label": "1668 Geographic Classic",
+    "book_title": "Description of Africa: The Wide Clean Streets of Great Benin (1668)",
+    "author": "Olfert Dapper (Published in Amsterdam, 1668; English Edition 1670, Public Domain)",
+    "provenance_note": "Adapted for Key Stage 2 sentence length from Dutch scholar Olfert Dapper's landmark public-domain 'Naukeurige Beschrijvinge der Afrikaensche Gewesten' (1668) and John Ogilby's 1670 English edition 'Africa', compiled from eyewitness Dutch merchant journals.",
+    "author_context": "In 1668—just two years after the Great Fire burned narrow, crowded timber streets in Stuart London—Dutch writer Olfert Dapper published eyewitness reports of Benin City! Read why European readers gasped in admiration.",
+    "cover_image": "/units/ks2_kingdom_of_benin/assets/dapper_1668_oba_procession_engraving.jpg",
+    "cover_caption": "Copperplate engraving from Olfert Dapper's 1668 'Description of Africa' showing the Oba of Benin's grand horseback procession outside walled Benin City.",
+    "studio_audio": "/audio/reading/ks2_kingdom_of_benin/r4.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Olfert Dapper",
+        "pronunciation": "OL-fert DAP-er",
+        "def": "Dutch writer whose famous 1668 book 'Description of Africa' gathered merchant reports praising Benin City's size and cleanliness."
+      },
+      {
+        "term": "Manillas",
+        "pronunciation": "muh-NIL-uz",
+        "def": "Heavy horseshoe-shaped bracelets of brass and copper brought on European ships to trade for Benin pepper, cloth, and ivory."
+      },
+      {
+        "term": "Cowrie Shells",
+        "pronunciation": "KOW-ree SHELZ",
+        "def": "Small glossy white sea shells used across West Africa as everyday money in bustling food and cloth markets."
+      },
+      {
+        "term": "Haarlem",
+        "pronunciation": "HAR-lem",
+        "def": "A wealthy Dutch city near Amsterdam that Dapper compared with Benin City so European readers could picture its grand avenues."
+      }
+    ],
+    "extract": "In 1668, Dutch writer <strong>Olfert Dapper</strong> shared lively reports from West African trade voyages. Ships swapped brass <em>manillas</em> and white <em>cowrie shells</em> for Benin cloth and spicy pepper! Dapper compared royal Benin City proudly with rich Dutch towns like <strong>Haarlem</strong>.\n\n<em>\"The city of Benin has thirty very straight, broad streets. Each main road measures about one hundred and twenty feet wide! Many neat side lanes branch off them, almost as broad.\n\nThe King's palace takes up as much ground as the whole town of Haarlem. A fine tall wall runs right round it. Inside stand grand courtyards with long covered walkways as big as a royal market hall!\n\nFamilies wash and rub their smooth red-clay walls until they shine like a bright mirror. Houses stand in fine order, for every home sweeps its own street clean.\"</em>\n\nBack then in 1668, Stuart London still had cramped, muddy lanes with no wide avenues!",
+    "parent_discussion": [
+      {
+        "question": "How many straight main streets did Olfert Dapper describe in Benin City in 1668, and how wide was each one?",
+        "answer": "Thirty straight main streets, each measuring around one hundred and twenty feet wide!"
+      },
+      {
+        "question": "How did Edo families make their smooth red-clay house walls 'shine like a mirror'?",
+        "answer": "They washed and rubbed the smooth red clay carefully, and every family swept the street outside its own home!"
+      },
+      {
+        "question": "Why did Dapper compare the Oba's palace to the Dutch town of Haarlem?",
+        "answer": "Most Europeans in 1668 had never visited West Africa, so comparing Benin's vast palace to a famous Dutch city proved how grand and organised it was!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "In which year did Dutch writer Olfert Dapper publish his famous 'Description of Africa'?",
+        "options": [
+          "1066",
+          "1668",
+          "1897",
+          "1984"
+        ],
+        "correctIndex": 1,
+        "feedback": "Spot on! Dapper's 1668 Amsterdam book gave Europe vivid descriptions and engravings of seventeenth-century Benin City."
+      },
+      {
+        "question": "Which Dutch town did Olfert Dapper say could fit entirely inside the grounds of the Oba's Royal Palace?",
+        "options": [
+          "Haarlem",
+          "York",
+          "Bath",
+          "Sparta"
+        ],
+        "correctIndex": 0,
+        "feedback": "Exactly right! Comparing the palace complex to the entire city of Haarlem showed readers the enormous scale of Benin's royal court."
+      },
+      {
+        "question": "What were 'manillas' brought by European merchant ships to trade with Benin?",
+        "options": [
+          "Horseshoe-shaped bracelets of brass and copper",
+          "Boxes of silk top hats",
+          "Wooden snow sledges",
+          "Lead curse tablets"
+        ],
+        "correctIndex": 0,
+        "feedback": "Well remembered! Benin controlled coastal trade strictly and melted thousands of imported brass manillas to cast even more palace plaques!"
+      }
+    ],
+    "monday_cold_call": {
+      "question": "What three details in Olfert Dapper's 1668 book prove Benin City was one of the best-planned capitals of the seventeenth-century world?",
+      "answer": "Thirty straight streets 120 feet wide, a vast walled palace as large as the Dutch city of Haarlem, and spotless avenues alongside red-clay walls polished like mirrors."
+    },
+    "hinge_question": "Did Olfert Dapper ever sail to Africa himself—and how does knowing he used Dutch merchants' diaries help us judge his book?",
+    "audio_file": "/audio/reading/ks2_kingdom_of_benin/r4.mp3"
+  },
+  {
+    "lesson_index": 5,
+    "lesson_id": "lesson_6",
+    "lesson_label": "Enquiry 6",
+    "short_tab_title": "1897 & Coming Home",
+    "literary_mode": "intimate_eyewitness",
+    "provenance_tier": "intimate_eyewitness",
+    "source_type": "eyewitness",
+    "source_type_label": "1897 Eyewitness & Modern Heritage",
+    "book_title": "Palace Stores Full of Bronzes: Eyewitness to February 1897 and Modern Return",
+    "author": "Dr Felix Roth & Commander Reginald Bacon (1897 Eyewitness Diaries, Public Domain)",
+    "provenance_note": "Adapted for Key Stage 2 from public-domain 1897 eyewitness diaries of British surgeon Dr Felix Roth ('Great Benin', 1903) and Commander Reginald Bacon ('Benin: The City of Blood', 1897), paired with verified 2021–2026 restitution records.",
+    "author_context": "In February 1897, twelve hundred British troops invaded Benin City, exiled Oba Ovonramwen, and stripped thousands of sacred brass plaques and carved tusks from the palace! Read what eyewitnesses saw—and how Edo heritage lives on today.",
+    "cover_image": "/units/ks2_kingdom_of_benin/assets/british_officers_looted_benin_bronzes_1897.jpg",
+    "cover_caption": "February 1897 photograph of British Expedition officers seated amidst hundreds of seized royal brass plaques and carved ivory tusks inside the Oba's palace.",
+    "studio_audio": "/audio/reading/ks2_kingdom_of_benin/r5.mp3",
+    "studio_voice_label": "Studio Male Historian · KS2 Storyteller",
+    "vocabVault": [
+      {
+        "term": "Oba Ovonramwen",
+        "pronunciation": "oh-von-RAHM-wen",
+        "def": "Oba of Benin (r. 1888–1914) who defended Benin's palm-oil trade independence before British troops invaded and exiled him in 1897."
+      },
+      {
+        "term": "Punitive Expedition",
+        "pronunciation": "PYOO-nih-tiv eks-puh-DISH-un",
+        "def": "The February 1897 British military invasion that captured Benin City, burned the palace, and seized royal treasures."
+      },
+      {
+        "term": "Looting",
+        "pronunciation": "LOO-ting",
+        "def": "Taking sacred art, treasures, or property by military force during war—as happened to over 4,000 Benin Bronzes in 1897."
+      },
+      {
+        "term": "Restitution",
+        "pronunciation": "res-tih-TYOO-shun",
+        "def": "Rightfully returning seized cultural treasures from foreign museums back to their homeland and people."
+      }
+    ],
+    "extract": "In February 1897, British troops marched into Benin City to grab rich palm-oil and rubber trade. Soldiers sent <strong>Oba Ovonramwen</strong> away from his people into sad exile. Soon a fierce fire swept across the tall palace roofs! Inside the royal storehouses, doctor Felix Roth gasped at Benin's sacred treasures.\n\n<em>\"Under thick dust lay hundreds of cast bronze plaques of fine old skill! In the courts stood tall carved tusks above brass heads and royal leopards. Every single piece showed rare craft that amazed our eyes.\"</em>\n\nTroops packed more than four thousand plaques, tusks, and coral works into heavy crates for London! Museums across Europe and America bought the <em>looted</em> art to pay for the <strong>Punitive Expedition</strong>.\n\nYet Benin's proud story did not end in 1897! Today a crowned Oba still leads Edo life in Nigeria, while Igun Street casters pour bright brass. Museums from Cambridge to Berlin have begun <strong>restitution</strong> to Nigeria!",
+    "parent_discussion": [
+      {
+        "question": "What amazed eyewitness doctor Felix Roth when he stepped inside the Oba's palace storehouses in February 1897?",
+        "answer": "Hundreds of finely cast old bronze plaques, tall carved tusks, brass heads, and royal leopards of rare skill!"
+      },
+      {
+        "question": "Why did British officials ship more than four thousand Benin plaques and tusks to London to sell to museums?",
+        "answer": "They sold Benin's looted royal art to pay the military costs of the February 1897 Punitive Expedition!"
+      },
+      {
+        "question": "What does 'restitution' mean, and what proves Edo culture is still thriving in Benin City today?",
+        "answer": "Restitution means returning looted treasures to Nigeria, where a crowned Oba still leads royal life and Igun Street casters still pour bright brass!"
+      }
+    ],
+    "story_check": [
+      {
+        "question": "Which Oba ruled the Kingdom of Benin when British troops invaded in February 1897?",
+        "options": [
+          "Oba Ovonramwen",
+          "King John",
+          "Emperor Claudius",
+          "Pharaoh Khufu"
+        ],
+        "correctIndex": 0,
+        "feedback": "Spot on! Oba Ovonramwen Nogbaisi tried to protect Benin's trade independence before being exiled to Calabar in 1897."
+      },
+      {
+        "question": "Roughly how many royal plaques, carved tusks, and coral works were packed into crates in 1897?",
+        "options": [
+          "Ten small coins",
+          "More than four thousand works",
+          "Two wooden chairs",
+          "Zero works"
+        ],
+        "correctIndex": 1,
+        "feedback": "Exactly right! Over four thousand royal works—Benin's visual palace archive—were scattered across more than 160 museums worldwide."
+      },
+      {
+        "question": "What word describes museums from Cambridge to Berlin returning 1897 bronzes to Nigeria?",
+        "options": [
+          "Transportation",
+          "Restitution",
+          "Poaching",
+          "Smuggling"
+        ],
+        "correctIndex": 1,
+        "feedback": "Well remembered! Restitution returns looted cultural heritage to its rightful home in Nigeria."
+      }
+    ],
+    "monday_cold_call": {
+      "question": "Why did British forces invade Benin in February 1897, what happened to the palace bronzes, and what is 'restitution' today?",
+      "answer": "Seeking control over palm-oil and rubber trade, Britain invaded in February 1897, exiled Oba Ovonramwen, and looted 4,000+ artworks; today restitution is returning bronzes to Nigeria."
+    },
+    "hinge_question": "Should all Benin Bronzes taken in 1897 return to Nigeria, or can shared museum partnerships also teach the world about Edo art?",
+    "audio_file": "/audio/reading/ks2_kingdom_of_benin/r5.mp3"
+  }
+]

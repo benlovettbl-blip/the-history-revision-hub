@@ -29,6 +29,10 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 // Expanded cohort-by-cohort as each unit passes teacher review & PDF verification.
 const CALIBRATED_STAGE_UNITS = new Set([
   'ks2_ww2',
+  'ks2_crime_and_punishment',
+  'ks2_kingdom_of_benin',
+  'ks2_victorian_britain',
+  'ks2_local_history_detective',
   'medieval_england',
   'monarchy_religion_power',
   'water_and_sanitation',
@@ -57,6 +61,10 @@ const UNIT_COHORT_CONFIG = {
   ks2_ancient_greece: { label: 'KS2 (Y5–6)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
   ks2_early_islamic_baghdad: { label: 'KS2 (Y5–6)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
   ks2_maya_civilisation: { label: 'KS2 (Y5–6)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
+  ks2_kingdom_of_benin: { label: 'KS2 (Y5–6)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
+  ks2_victorian_britain: { label: 'KS2 (Y4–5)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
+  ks2_crime_and_punishment: { label: 'KS2 (Y5–6)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
+  ks2_local_history_detective: { label: 'KS2 (Y3–6)', maxWords: 14, maxHardCommonWords: 2, hasPrintedStageBanners: false },
   ks2_ww2: { label: 'KS2 (Y5–6)', maxWords: 13, maxHardCommonWords: 2, hasPrintedStageBanners: false },
   medieval_england: { label: 'Year 7', maxWords: 13, maxHardCommonWords: 2, hasPrintedStageBanners: true },
   monarchy_religion_power: { label: 'Year 7', maxWords: 13, maxHardCommonWords: 2, hasPrintedStageBanners: true },
@@ -76,6 +84,10 @@ const UNIT_COHORT_CONFIG = {
   cme_new: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: true },
   weimar_nazi_germany: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: true },
   usa: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: true },
+  ocr_persian_empire: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: false },
+  ocr_alexander: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: false },
+  ocr_foundations_of_rome: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: false },
+  ocr_cleopatra: { label: 'GCSE (Y10–11)', maxWords: 15, maxHardCommonWords: 5, hasPrintedStageBanners: false },
 };
 
 const DEMONYM_AND_BROAD_EQUIVALENTS = {

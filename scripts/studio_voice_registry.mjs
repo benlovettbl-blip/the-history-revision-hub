@@ -198,6 +198,10 @@ export const UNIT_VOICE_ASSIGNMENTS = {
   ks2_anglo_saxons_vikings: 'male_historian',
   ks2_early_islamic_baghdad: 'female_historian',
   ks2_maya_civilisation: 'male_historian',
+  ks2_kingdom_of_benin: 'male_historian',
+  ks2_victorian_britain: 'female_historian',
+  ks2_crime_and_punishment: 'female_historian',
+  ks2_local_history_detective: 'male_historian',
   ks2_ww2: 'female_historian',
 };
 

@@ -486,6 +486,178 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
           enquiry: 'How did Détente collapse into the Second Cold War before Gorbachev and 1989 ended Soviet rule?',
         },
       ];
+    } else if (currentUnitId === 'ocr_persian_empire') {
+      periods = [
+        {
+          id: 'KT1',
+          title: 'Key Topic 1: The Rise of the Persian Empire under Cyrus the Great, 559–530 BC',
+          prefix: 'KT 1',
+          gradient: 'linear-gradient(135deg, #7c2d12, #c2410c)',
+          border: '#ea580c',
+          image: '/images/ocr_ancient/persia_cover_cyrus_tomb.jpg',
+          bgPos: 'center 35%',
+          enquiry: 'How did Cyrus conquer the Medes, Lydia, and Babylon while ruling through royal tolerance and propaganda?',
+        },
+        {
+          id: 'KT2',
+          title: 'Key Topic 2: Cambyses II, Bardiya and the Crisis of 522 BC, 530–522 BC',
+          prefix: 'KT 2',
+          gradient: 'linear-gradient(135deg, #78350f, #b45309)',
+          border: '#d97706',
+          image: '/images/ocr_ancient/persia_cyrus_cylinder_bm.jpg',
+          bgPos: 'center 40%',
+          enquiry: 'Was Cambyses II a mad despot in Egypt or a shrewd Persian pharaoh slandered by rival priests, and how did Darius seize the throne?',
+        },
+        {
+          id: 'KT3',
+          title: 'Key Topic 3: Darius the Great — Organising and Expanding the Empire, 522–486 BC',
+          prefix: 'KT 3',
+          gradient: 'linear-gradient(135deg, #1e3a8a, #0284c7)',
+          border: '#38bdf8',
+          image: '/images/ocr_ancient/persia_croeseid_gold_stater.jpg',
+          bgPos: 'center 45%',
+          enquiry: 'How did satrapies, Persepolis, the Royal Road, and Marathon shape Achaemenid imperial power under Darius?',
+        },
+        {
+          id: 'KT4',
+          title: 'Key Topic 4: Xerxes I and the Invasion of Greece, 486–465 BC',
+          prefix: 'KT 4',
+          gradient: 'linear-gradient(135deg, #4c1d95, #7c3aed)',
+          border: '#a78bfa',
+          image: '/images/ocr_ancient/persia_croesus_pyre_louvre.jpg',
+          bgPos: 'center 30%',
+          enquiry: 'Why did Xerxes invade mainland Greece in 480 BC, and did Salamis and Plataea truly weaken the Persian Empire?',
+        },
+      ];
+    } else if (currentUnitId === 'ocr_alexander') {
+      periods = [
+        {
+          id: 'KT1',
+          title: 'Key Topic 1: Upbringing, Character, Beliefs and Succession, 356–334 BC',
+          prefix: 'KT 1',
+          gradient: 'linear-gradient(135deg, #7c2d12, #b45309)',
+          border: '#f59e0b',
+          image: '/images/ocr_ancient/alexander_lysimachus_tetradrachm.jpg',
+          bgPos: 'center 35%',
+          enquiry: 'How did Olympias, Philip II, Aristotle, and divine lineage forge Alexander before he crossed the Hellespont?',
+        },
+        {
+          id: 'KT2',
+          title: 'Key Topic 2: Conquering Asia Minor, Egypt and Darius III, 334–330 BC',
+          prefix: 'KT 2',
+          gradient: 'linear-gradient(135deg, #7f1d1d, #dc2626)',
+          border: '#f87171',
+          image: '/images/ocr_ancient/alexander_cover_mosaic.jpg',
+          bgPos: 'center 30%',
+          enquiry: 'How did phalanx tactics, the Siwah oracle, Gaugamela, and the burning of Persepolis topple Achaemenid Persia?',
+        },
+        {
+          id: 'KT3',
+          title: 'Key Topic 3: Persian Court Dress, Plots and Mutiny in the East, 330–325 BC',
+          prefix: 'KT 3',
+          gradient: 'linear-gradient(135deg, #312e81, #4f46e5)',
+          border: '#818cf8',
+          image: '/images/ocr_ancient/alexander_bucephalus_mosaic_or_statue.jpg',
+          bgPos: 'center 30%',
+          enquiry: 'Why did Cleitus’ murder, Callisthenes’ arrest, and the Hyphasis mutiny fracture Alexander’s Macedonian army?',
+        },
+        {
+          id: 'KT4',
+          title: 'Key Topic 4: Return to Babylon, Susa Weddings, Death and Legacy, 325–323 BC',
+          prefix: 'KT 4',
+          gradient: 'linear-gradient(135deg, #134e4a, #0d9488)',
+          border: '#2dd4bf',
+          image: '/images/ocr_ancient/alexander_aristotle_bust.jpg',
+          bgPos: 'center 25%',
+          enquiry: 'What do the Opis mutiny, Hephaestion’s death, and our set ancient sources reveal about Alexander’s final years?',
+        },
+      ];
+    } else if (currentUnitId === 'ocr_foundations_of_rome') {
+      periods = [
+        {
+          id: 'KT1',
+          title: 'Key Topic 1: Legendary Kings — Origins of Rome, 753–616 BC',
+          prefix: 'KT 1',
+          gradient: 'linear-gradient(135deg, #7c2d12, #c2410c)',
+          border: '#ea580c',
+          image: '/images/ocr_ancient/rome_cover_capitoline_wolf.jpg',
+          bgPos: 'center 35%',
+          enquiry: 'How do Livy and Dionysius’ foundation myths of Aeneas, Romulus, Numa, and Tullus compare with Palatine archaeology?',
+        },
+        {
+          id: 'KT2',
+          title: 'Key Topic 2: The Etruscan Kings and the Fall of the Monarchy, 616–509 BC',
+          prefix: 'KT 2',
+          gradient: 'linear-gradient(135deg, #7f1d1d, #b91c1c)',
+          border: '#ef4444',
+          image: '/images/ocr_ancient/rome_cover_capitoline_wolf.jpg',
+          bgPos: 'center 40%',
+          enquiry: 'How did Servius Tullius’ reforms and Tarquinius Superbus’ tyranny trigger the 509 BC birth of the Roman Republic?',
+        },
+        {
+          id: 'KT3',
+          title: 'Key Topic 3: Securing the Early Republic and the First Secession, 509–494 BC',
+          prefix: 'KT 3',
+          gradient: 'linear-gradient(135deg, #1e3a8a, #2563eb)',
+          border: '#60a5fa',
+          image: '/images/ocr_ancient/rome_cover_capitoline_wolf.jpg',
+          bgPos: 'center 45%',
+          enquiry: 'How did the young Republic survive Lars Porsenna, Lake Regillus, debt bondage, and the First Plebeian Secession?',
+        },
+        {
+          id: 'KT4',
+          title: 'Key Topic 4: Conflict of the Orders and the Twelve Tables, 494–440 BC',
+          prefix: 'KT 4',
+          gradient: 'linear-gradient(135deg, #064e3b, #059669)',
+          border: '#34d399',
+          image: '/images/ocr_ancient/rome_cover_capitoline_wolf.jpg',
+          bgPos: 'center 35%',
+          enquiry: 'Did the Decemvirate, Twelve Tables, and Valerio-Horatian Laws resolve or entrench patrician-plebeian conflict by 440 BC?',
+        },
+      ];
+    } else if (currentUnitId === 'ocr_cleopatra') {
+      periods = [
+        {
+          id: 'KT1',
+          title: 'Key Topic 1: Cleopatra’s Upbringing, Ptolemaic Alexandria and Accession, 69–49 BC',
+          prefix: 'KT 1',
+          gradient: 'linear-gradient(135deg, #78350f, #d97706)',
+          border: '#fbbf24',
+          image: '/images/ocr_ancient/cleopatra_cover_berlin_bust.jpg',
+          bgPos: 'center 25%',
+          enquiry: 'How did Ptolemaic dynastic bloodshed, Isis-worship, and Roman client-debt shape Cleopatra VII’s rise to rule Egypt?',
+        },
+        {
+          id: 'KT2',
+          title: 'Key Topic 2: Cleopatra and Julius Caesar — Alliance, Caesarion and Rome, 48–44 BC',
+          prefix: 'KT 2',
+          gradient: 'linear-gradient(135deg, #7f1d1d, #dc2626)',
+          border: '#f87171',
+          image: '/images/ocr_ancient/cleopatra_cover_berlin_bust.jpg',
+          bgPos: 'center 30%',
+          enquiry: 'Why did Julius Caesar back Cleopatra in the Alexandrian War, and why did her presence in Rome alarm senators by 44 BC?',
+        },
+        {
+          id: 'KT3',
+          title: 'Key Topic 3: Cleopatra and Mark Antony — Tarsus to the Donations of Alexandria, 42–34 BC',
+          prefix: 'KT 3',
+          gradient: 'linear-gradient(135deg, #4c1d95, #7c3aed)',
+          border: '#a78bfa',
+          image: '/images/ocr_ancient/cleopatra_cover_berlin_bust.jpg',
+          bgPos: 'center 35%',
+          enquiry: 'Was the Antony-Cleopatra partnership cold Eastern statecraft or Roman betrayal—and how did Octavian weaponise the Donations?',
+        },
+        {
+          id: 'KT4',
+          title: 'Key Topic 4: Propaganda War, Battle of Actium and Suicide in Alexandria, 33–30 BC',
+          prefix: 'KT 4',
+          gradient: 'linear-gradient(135deg, #0f172a, #0284c7)',
+          border: '#38bdf8',
+          image: '/images/ocr_ancient/cleopatra_cover_berlin_bust.jpg',
+          bgPos: 'center 30%',
+          enquiry: 'Why did Antony and Cleopatra lose the Battle of Actium, and how did Augustan poets construct the hostile legend of her death?',
+        },
+      ];
     }
 
     periods.forEach((p) => {
@@ -508,7 +680,9 @@ export function renderKeyTopicLessonsHTML(unitData, currentUnitId, currentUnitDa
       unitData.lessons.forEach((lesson, index) => {
         let isMatch =
           (lesson.id && lesson.id.startsWith(p.prefix)) ||
-          (lesson.title && lesson.title.startsWith(p.prefix));
+          (lesson.title && lesson.title.startsWith(p.prefix)) ||
+          (lesson.key_topic && String(lesson.key_topic).toUpperCase().startsWith(p.id)) ||
+          (lesson.id && p.id && lesson.id.startsWith(`lesson_${p.id.replace('KT', '')}_`));
 
         if (!isMatch && currentUnitId === 'cme_new') {
           if (p.id === 'KT1') {

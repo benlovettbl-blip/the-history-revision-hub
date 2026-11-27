@@ -30,6 +30,10 @@ const STAGE_MAP = {
     'ks2_anglo_saxons_vikings',
     'ks2_early_islamic_baghdad',
     'ks2_maya_civilisation',
+    'ks2_kingdom_of_benin',
+    'ks2_victorian_britain',
+    'ks2_crime_and_punishment',
+    'ks2_local_history_detective',
     'ks2_ww2',
   ],
   ks3: [

@@ -1,0 +1,395 @@
+{
+  "unit_id": "ks2_romans",
+  "fix_typo_l1_delivery_plan": false,
+  "glossary": [
+    {
+      "term": "Ally",
+      "pronunciation": "AL-eye",
+      "definition": "A friendly king, queen, or tribe that agrees to stay at peace and help another power."
+    },
+    {
+      "term": "Amphitheatre",
+      "pronunciation": "AM-fi-thee-uh-tur",
+      "definition": "A large oval Roman arena with stone seats where crowds watched gladiator fights and wild animal shows."
+    },
+    {
+      "term": "Aqueduct",
+      "pronunciation": "AK-wuh-dukt",
+      "definition": "A stone channel or bridge built by Roman engineers to carry fresh spring water into towns and bathhouses."
+    },
+    {
+      "term": "Archaeologist",
+      "pronunciation": "ar-kee-OL-uh-jist",
+      "definition": "A history detective who carefully digs up ancient buildings, coins, bones, and pottery buried in the ground."
+    },
+    {
+      "term": "Auxiliary",
+      "pronunciation": "awg-ZIL-yuh-ree",
+      "definition": "A non-citizen soldier from across the Roman Empire who earned Roman citizenship after twenty-five years of service."
+    },
+    {
+      "term": "Castra",
+      "pronunciation": "KAS-truh",
+      "definition": "The Latin word for a Roman army fort, surviving today inside British city names ending in -chester or -caster."
+    },
+    {
+      "term": "Chariot",
+      "pronunciation": "CHAR-ee-ut",
+      "definition": "A fast, two-wheeled wooden war cart pulled by ponies and ridden into battle by Celtic leaders like Boudicca."
+    },
+    {
+      "term": "Destruction layer",
+      "pronunciation": "di-STRUK-shun LAY-er",
+      "definition": "A buried band of scorched red clay, black ash, and melted pots left where an ancient town burned down."
+    },
+    {
+      "term": "Druids",
+      "pronunciation": "DROO-idz",
+      "definition": "Wise Celtic priests, judges, and teachers who memorised sacred laws and prayers instead of writing books."
+    },
+    {
+      "term": "Emperor",
+      "pronunciation": "EM-per-er",
+      "definition": "The supreme ruler of the vast Roman Empire, commanding all Roman armies, governors, and provinces."
+    },
+    {
+      "term": "Forum",
+      "pronunciation": "FOR-um",
+      "definition": "The busy open-air marketplace and public meeting square right in the middle of a Roman town."
+    },
+    {
+      "term": "Frontier",
+      "pronunciation": "frun-TEER",
+      "definition": "The guarded border line at the edge of an empire separating Roman territory from unconquered lands beyond."
+    },
+    {
+      "term": "Hillfort",
+      "pronunciation": "HIL-fort",
+      "definition": "An Iron Age hilltop settlement ringed with steep earth ramparts, deep ditches, and wooden fences for protection."
+    },
+    {
+      "term": "Hoard",
+      "pronunciation": "HORD",
+      "definition": "A secret collection of valuable coins, silver spoons, or jewellery buried underground to keep it safe from raiders."
+    },
+    {
+      "term": "Hypocaust",
+      "pronunciation": "HY-puh-kawst",
+      "definition": "Roman underfloor central heating where hot air from a wood furnace flowed between brick pillars beneath the floor."
+    },
+    {
+      "term": "Latin",
+      "pronunciation": "LAT-in",
+      "definition": "The language spoken and written by the Romans, which gave us our ABC alphabet and thousands of English words."
+    },
+    {
+      "term": "Legacy",
+      "pronunciation": "LEG-uh-see",
+      "definition": "Something important handed down from the past, such as roads, cities, calendars, or words that still shape life today."
+    },
+    {
+      "term": "Legionary",
+      "pronunciation": "LEE-jun-uh-ree",
+      "definition": "A full-time, heavily armoured Roman citizen soldier trained to march twenty miles a day and fight in tight formations."
+    },
+    {
+      "term": "Milecastle",
+      "pronunciation": "MYL-kah-sul",
+      "definition": "A small stone fortlet and guarded gateway built at every single Roman mile along Hadrian's Wall."
+    },
+    {
+      "term": "Mosaic",
+      "pronunciation": "moh-ZAY-ik",
+      "definition": "A colourful Roman floor picture made by pressing thousands of tiny cut stone cubes called tesserae into mortar."
+    },
+    {
+      "term": "Province",
+      "pronunciation": "PROV-inss",
+      "definition": "A conquered country or region outside Italy ruled by a Roman governor who collected Roman taxes."
+    },
+    {
+      "term": "Rebellion",
+      "pronunciation": "ri-BEL-yun",
+      "definition": "An armed uprising where angry people fight back to overthrow the rulers controlling them."
+    },
+    {
+      "term": "Roman numerals",
+      "pronunciation": "ROH-mun NYOO-mer-ulz",
+      "definition": "The Roman way of writing numbers using capital letters such as I for one, V for five, and X for ten."
+    },
+    {
+      "term": "Roundhouse",
+      "pronunciation": "ROWND-hows",
+      "definition": "A circular Celtic family home with woven clay walls, a central hearth fire, and a tall thatched roof without a chimney."
+    },
+    {
+      "term": "Scutum",
+      "pronunciation": "SKOO-tum",
+      "definition": "A tall, curved rectangular Roman shield made of layered wood, leather, and a central iron boss."
+    },
+    {
+      "term": "Testudo",
+      "pronunciation": "tes-TOO-doh",
+      "definition": "The Latin word for tortoise, naming the battle formation where soldiers locked shields in front and overhead against arrows."
+    },
+    {
+      "term": "Torc",
+      "pronunciation": "TORK",
+      "definition": "A heavy, twisted neck ring crafted from gold, silver, or bronze and worn by wealthy Celtic leaders."
+    },
+    {
+      "term": "Villa",
+      "pronunciation": "VIL-uh",
+      "definition": "A grand Roman stone country house built for wealthy landowners, often decorated with mosaic floors and underfloor heating."
+    }
+  ],
+  "widgets": [
+    {
+      "lesson_id": "lesson_3",
+      "block_index": 2,
+      "concept_widget": {
+        "type": "power_seesaw",
+        "eyebrow": "KS2 Interactive Balance Explorer",
+        "title": "Boudicca's Rebellion Seesaw: From Peaceful Ally to Watling Street (AD 60–61)",
+        "default_index": 0,
+        "caption": "Tap each date to watch the balance of control swing across south-east Britain during Queen Boudicca's uprising.",
+        "eras": [
+          {
+            "year": "Before AD 60",
+            "headline": "Peaceful Iceni Alliance",
+            "color": "#0284c7",
+            "summary": "King Prasutagus of the Iceni stayed a peaceful ally of Rome in East Anglia and left half his wealth to Emperor Nero and half to his two daughters.",
+            "pillars": [
+              {
+                "actor": "Roman Army and Officials",
+                "share": 45,
+                "status": "Rules southern province towns in peace",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Queen Boudicca and the Iceni",
+                "share": 40,
+                "status": "Friendly ally kingdom in East Anglia",
+                "color": "#f59e0b"
+              },
+              {
+                "actor": "Trinovantes and Neighbouring Tribes",
+                "share": 15,
+                "status": "Paying Roman taxes quietly",
+                "color": "#10b981"
+              }
+            ]
+          },
+          {
+            "year": "Summer AD 60",
+            "headline": "Three Roman Towns Burn",
+            "color": "#d97706",
+            "summary": "After greedy officials broke Rome's promise and mistreated Boudicca's family while Governor Suetonius Paulinus was away in Anglesey, rebel tribes burned Colchester, London, and St Albans.",
+            "pillars": [
+              {
+                "actor": "Roman Army and Officials",
+                "share": 15,
+                "status": "Legions far away in Anglesey as towns burn",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Queen Boudicca and the Iceni",
+                "share": 55,
+                "status": "Leads huge chariot army across the south-east",
+                "color": "#f59e0b"
+              },
+              {
+                "actor": "Trinovantes and Neighbouring Tribes",
+                "share": 30,
+                "status": "Unite with Boudicca against Roman rule",
+                "color": "#10b981"
+              }
+            ]
+          },
+          {
+            "year": "AD 61",
+            "headline": "Showdown at Watling Street",
+            "color": "#dc2626",
+            "summary": "Suetonius Paulinus chose a narrow wooded valley where 10,000 disciplined legionaries fought in tight wedges, pinning rebels against their own wagons and securing Roman rule.",
+            "pillars": [
+              {
+                "actor": "Roman Army and Officials",
+                "share": 80,
+                "status": "Wins battle and rebuilds Londinium inside stone walls",
+                "color": "#38bdf8"
+              },
+              {
+                "actor": "Queen Boudicca and the Iceni",
+                "share": 10,
+                "status": "Defeated against the ring of wooden wagons",
+                "color": "#f59e0b"
+              },
+              {
+                "actor": "Trinovantes and Neighbouring Tribes",
+                "share": 10,
+                "status": "Forced to surrender under tighter Roman control",
+                "color": "#10b981"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_5",
+      "block_index": 2,
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "KS2 Interactive History Explorer",
+        "title": "Did Everyone Live Like a Roman? Towns, Villas, and Roundhouses",
+        "default_index": 0,
+        "caption": "Tap each tab to compare bustling Roman towns, grand country villas, and everyday life for most British farming families.",
+        "items": [
+          {
+            "tab_label": "1. Forum and Baths",
+            "title": "Walled Roman Towns and Bathhouses",
+            "dates": "Towns Like Londinium and Aquae Sulis",
+            "badge": "Urban Roman Life",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.2)",
+            "metrics": [
+              {
+                "label": "Buildings and Layout",
+                "value": "Straight grid streets around an open market forum, basilica town hall, and stone amphitheatre."
+              },
+              {
+                "label": "Water and Heating",
+                "value": "Stone aqueducts, lead pipes, sewers, and steamy public baths heated by hypocaust furnaces."
+              },
+              {
+                "label": "Daily Habits",
+                "value": "Townsfolk exercised, chatted at the baths, scraped off olive oil with a bronze strigil, and used Latin."
+              }
+            ],
+            "takeaway": "New walled Roman towns brought stone highways, fresh spring water, and lively marketplaces to Britain."
+          },
+          {
+            "tab_label": "2. Wealthy Villa",
+            "title": "Grand Stone Country Villas",
+            "dates": "Estates Like Fishbourne Palace",
+            "badge": "Rich Elite Homes",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Buildings and Layout",
+                "value": "Large stone country mansions with tiled roofs, painted walls, and peaceful garden courtyards."
+              },
+              {
+                "label": "Floors and Comforts",
+                "value": "Colourful mosaic floors made from thousands of tiny stone tesserae cubes above warm hypocaust pilae."
+              },
+              {
+                "label": "Daily Habits",
+                "value": "Rich landowners hosted banquets with grapes, cherries, walnuts, and salty garum fish sauce."
+              }
+            ],
+            "takeaway": "Wealthy Roman and British leaders showed off their status by building cosy stone villas in the peaceful south."
+          },
+          {
+            "tab_label": "3. Country Roundhouses",
+            "title": "Celtic Farming Villages",
+            "dates": "Almost Nine Out of Ten Britons",
+            "badge": "Everyday Continuity",
+            "color": "#16a34a",
+            "bg_color": "rgba(22, 163, 74, 0.2)",
+            "metrics": [
+              {
+                "label": "Buildings and Layout",
+                "value": "Circular wattle-and-daub roundhouses topped with tall cone thatched roofs and no chimney."
+              },
+              {
+                "label": "Water and Heating",
+                "value": "A crackling central hearth fire warmed the family while rising woodsmoke cured meat in the rafters."
+              },
+              {
+                "label": "Daily Habits",
+                "value": "Families spoke Celtic, wove wool cloaks, and farmed wheat fields while paying Roman taxes."
+              }
+            ],
+            "takeaway": "Even under Roman rule, almost nine out of ten Britons carried on farming in traditional thatched roundhouses."
+          }
+        ]
+      }
+    }
+  ],
+  "source_texts": [
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_romans_l1_src_a",
+      "visual_verified_file": "/images/upgraded/ks2-ancient/romans_l1_src0_maiden_castle_ramparts.jpg",
+      "text": "Artefact note: Green grass now covers these towering chalk-and-earth banks and the deep V-shaped ditch curving between them high above the Dorset countryside, dug out by hand over two thousand years ago."
+    },
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_romans_l1_src_b",
+      "visual_verified_file": "/units/ks2_romans/assets/butser_iron_age_roundhouse.jpg",
+      "text": "Artefact note: Red-and-black painted swirls decorate the low circular whitewashed walls beside the sturdy timber doorway, while a thick cone roof rises to a tight peak without any hole at the top."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_romans_l2_src_a",
+      "visual_verified_file": "/units/ks2_romans/assets/emperor_claudius_bust.jpg",
+      "text": "Artefact note: Carved from smooth white marble nearly two thousand years ago, this portrait bust shows a bareheaded Emperor Claudius with neat forward-combed curls, a serious brow, and a calm, steady gaze."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_romans_l2_src_b",
+      "visual_verified_file": "/units/ks2_romans/assets/roman_legionary_armour.jpg",
+      "text": "Artefact note: Gleaming horizontal iron bands wrap around the chest beneath layered shoulder plates and a crested brass helmet with cheek-guards, all laced up the front with leather ties and brass hooks."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_romans_l3_src_b",
+      "visual_verified_file": "/units/ks2_romans/assets/roman_britain_map_ks2.png",
+      "text": "Artefact note: Trace the dashed brown line of Watling Street running diagonally across yellow Roman Britannia from Richborough, Londinium, and Verulamium in the south-east up towards Deva near north Wales."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_romans_l3_src_c",
+      "visual_verified_file": "/units/ks2_romans/assets/roman_wall_londinium_tower_hill.jpg",
+      "text": "Artefact note: Standing beside green grass at Tower Hill in modern London, rows of grey stone blocks are still bound with pale Roman mortar and neat horizontal bands of flat orange-red clay tiles."
+    },
+    {
+      "lesson_id": "lesson_4",
+      "source_id": "ks2_romans_l4_src_a",
+      "visual_verified_file": "/units/ks2_romans/assets/milecastle_39_hadrians_wall.jpg",
+      "text": "Artefact note: Spot the two tiny walkers on the grassy path beside this rectangular stone enclosure, where Hadrian's Wall climbs straight along sheer grey rock cliffs high above a northern lake."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_romans_l5_src_a",
+      "visual_verified_file": "/units/ks2_romans/assets/blackstone_edge_roman_road.jpg",
+      "text": "Artefact note: Heavy grey gritstone blocks still climb in a dead-straight ribbon right across wild Pennine moorland, worn down the middle with a central stone groove and edged with rough kerbstones."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_romans_l5_src_b",
+      "visual_verified_file": "/units/ks2_romans/assets/chedworth_hypocaust_pilae.jpg",
+      "text": "Artefact note: With the upper room floor slabs now missing, dozens of short, sturdy square pillars stand in neat grid rows with open air gaps all around them inside Chedworth Villa's stone walls."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_romans_l5_src_c",
+      "visual_verified_file": "/units/ks2_romans/assets/fishbourne_cupid_dolphin_mosaic.jpg",
+      "text": "Artefact note: Thousands of tiny cut black, white, red, and yellow cubes form twisted borders, two-handled vases, and sea-horses around a winged boy holding a trident on a dolphin's back."
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_romans_l6_src_b",
+      "visual_verified_file": "/units/ks2_romans/assets/hoxne_hoard_empress_pepper_pot.jpg",
+      "text": "Artefact note: Cast from gleaming silver with golden trim, this hollow spice shaker stands on four tiny feet and shows a finely dressed Roman lady wearing a jewelled collar and holding a scroll."
+    },
+    {
+      "lesson_id": "lesson_6",
+      "source_id": "ks2_romans_l6_src_c",
+      "visual_verified_file": "/units/ks2_romans/assets/york_roman_multangular_tower.jpg",
+      "text": "Artefact note: Rising behind a modern park footpath and black iron lamppost in the heart of York, neat rows of pale Roman limestone blocks still curve cleanly around this ten-sided corner tower."
+    }
+  ]
+}

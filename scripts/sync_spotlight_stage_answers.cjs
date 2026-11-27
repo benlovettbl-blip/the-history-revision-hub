@@ -48,6 +48,10 @@ const CANONICAL_UNITS = [
   'ks2_anglo_saxons_vikings',
   'ks2_early_islamic_baghdad',
   'ks2_maya_civilisation',
+  'ks2_kingdom_of_benin',
+  'ks2_victorian_britain',
+  'ks2_crime_and_punishment',
+  'ks2_local_history_detective',
   'ks2_romans',
   'ks2_stone_to_iron_age',
   'ks2_ww2',
@@ -59,6 +63,8 @@ const CANONICAL_UNITS = [
   'usa',
   'water_and_sanitation',
   'weimar_nazi_germany',
+  'ocr_persian_empire',
+  'ocr_alexander',
 ];
 
 function stripHtmlNormalized(html) {

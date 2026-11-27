@@ -1,0 +1,192 @@
+{
+  "unit_id": "ocr_alexander",
+  "lessons": {
+    "lesson_1_1": [
+      {
+        "stage": 1,
+        "passage": [
+          {
+            "hint": "Western border diplomacy",
+            "bullet": "Philip II married the Molossian princess Olympias around 357 BC → cemented a strategic military alliance with neighbouring Epirus"
+          },
+          {
+            "hint": "Seven royal wives",
+            "bullet": "Macedonian kings practised royal polygamy with no fixed rule of eldest-son succession → every marriage created potential rival heirs"
+          },
+          {
+            "hint": "Fierce maternal protection",
+            "bullet": "Surrounded by rival factions at Pella, Olympias fought relentlessly to protect young Alexander’s political claim → shaped his court alertness from birth"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Reformed superpower",
+            "bullet": "Philip II’s eighteen-foot sarissa phalanx and Mount Pangaeum gold mines turned Macedon into Greece’s dominant military state → set a high bar for his son"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "EPIROTE ALLIANCE",
+            "stem": "King Philip II married the Molossian princess ____________ in order to secure a strategic border alliance with..."
+          },
+          {
+            "badge": "POLYGAMOUS RIVALRY",
+            "stem": "Because Macedonian monarchs practised ____________ without automatic eldest-son succession, court politics at Pella remained..."
+          }
+        ],
+        "watch_out": "Olympias was a royal Greek-speaking Molossian princess from Epirus— yet pure-blooded Macedonian nobles like Attalus still treated her as a foreign outsider.",
+        "prose_hash": "693a83bba6",
+        "prose_fp": "88632d76",
+        "question_hash": "ea755a381a"
+      },
+      {
+        "stage": 2,
+        "passage": [
+          {
+            "hint": "Trojan hero bloodline",
+            "bullet": "Olympias taught Alexander that her Epirote house descended from Achilles while Philip claimed Heracles → gave Alexander warrior role models to surpass"
+          },
+          {
+            "hint": "Dionysian snake mysteries",
+            "bullet": "Olympias led ecstatic Orphic and Dionysian rites with tame serpents and dreamed a thunderbolt struck her womb → encouraged belief in divine conception"
+          },
+          {
+            "hint": "Link to Zeus Ammon",
+            "bullet": "Plutarch records Philip seeing a giant serpent beside sleeping Olympias and Delphi urging worship of Ammon → planted rumours that Zeus Ammon fathered Alexander"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Triple victory birth day",
+            "bullet": "On Alexander’s birth day in July 356 BC the Temple of Artemis at Ephesus burned down while Philip’s horse won at Olympia → read by seers as portents of invincibility"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "HEROIC LINEAGE",
+            "stem": "Through Olympias’ Molossian ancestry, young Alexander believed he descended directly from the Trojan War hero ____________..."
+          },
+          {
+            "badge": "DIVINE CONCEPTION",
+            "stem": "Olympias’ Dionysian serpent rites and thunderbolt dream fostered rumours that Alexander’s true father was ____________."
+          }
+        ],
+        "watch_out": "Plutarch wrote over four centuries later as a moral biographer—treat the thunderbolt and lion-seal dreams as retrospective portents rather than literal diary facts.",
+        "prose_hash": "f2de55d3c1",
+        "prose_fp": "08f706cd",
+        "question_hash": "1a3f552baf"
+      },
+      {
+        "stage": 3,
+        "passage": [
+          {
+            "hint": "Spotting the shadow",
+            "bullet": "While Philip’s grooms failed to mount thirteen-talent Bucephalas, Alexander observed the stallion feared its own shadow → turned its bridle towards the sun"
+          },
+          {
+            "hint": "Father’s tearful pride",
+            "bullet": "Philip II wept with joy and declared Macedonia was too small for Alexander → showed genuine paternal pride in his son’s nerve and intelligence"
+          },
+          {
+            "hint": "Hunger for unshared glory",
+            "bullet": "Whenever Philip captured a city, Alexander complained his father would leave nothing brilliant left to achieve → exposed intense competitive rivalry"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Lifelong warhorse",
+            "bullet": "Bucephalas carried Alexander across Asia from Macedon to India until 326 BC → became a living symbol of his heroic leadership"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "CALMING BUCEPHALAS",
+            "stem": "Noticing that ____________ was startled by its own moving shadow, Alexander calmly turned the stallion..."
+          },
+          {
+            "badge": "PRIDE AND RIVALRY",
+            "stem": "Although Philip wept and declared ____________ was too small for his son, Alexander worried Philip’s victories would..."
+          }
+        ],
+        "watch_out": "Avoid claiming Alexander and Philip hated each other throughout his childhood—Plutarch shows deep mutual pride alongside fierce competition for glory.",
+        "prose_hash": "ada61c3068",
+        "prose_fp": "e30a56c6",
+        "question_hash": "bfb5768767"
+      },
+      {
+        "stage": 4,
+        "passage": [
+          {
+            "hint": "Macedonian bride",
+            "bullet": "In 337 BC Philip II married Cleopatra Eurydice, young Macedonian niece of General Attalus → threatened Olympias’ and Alexander’s court standing"
+          },
+          {
+            "hint": "The drunken wedding toast",
+            "bullet": "Attalus urged banquet guests to pray to the gods for a legitimate heir to the throne → implied half-Molossian Alexander was illegitimate"
+          },
+          {
+            "hint": "Cup, drawn sword, and exile",
+            "bullet": "Alexander hurled his cup, Philip drew his sword and tripped drunkenly between couches, and Alexander mocked him → Olympias fled to Epirus and Alexander to Illyria"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Proven teenage commander",
+            "bullet": "The insult stung doubly because Alexander had already studied under Aristotle at Mieza, subdued the Maedi as regent, and broken the Sacred Band at Chaeronea in 338 BC"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "LEGITIMACY INSULT",
+            "stem": "At Philip’s 337 BC wedding feast, General ____________ provoked fury by praying for a ____________ heir from Cleopatra Eurydice."
+          },
+          {
+            "badge": "ROYAL RUPTURE",
+            "stem": "After Philip drew his sword and tripped between the couches, Alexander escorted ____________ to Epirus and rode into exile in ____________."
+          }
+        ],
+        "watch_out": "Distinguish Cleopatra Eurydice—Philip II’s young Macedonian bride in 337 BC—from Queen Cleopatra VII of Egypt three centuries later!",
+        "prose_hash": "a7966aedcf",
+        "prose_fp": "590a7b6f",
+        "question_hash": "d33ce69db3"
+      },
+      {
+        "stage": 5,
+        "passage": [
+          {
+            "hint": "Divine Ammon horn",
+            "bullet": "King Lysimachus stamped the obverse with Alexander wearing the curved ram’s horn of Zeus Ammon → broadcast Alexander’s status as son of a god"
+          },
+          {
+            "hint": "Hellenistic royal diadem",
+            "bullet": "Alexander wears the royal cloth diadem with upward divine gaze → linked absolute Asian kingship with superhuman charisma"
+          },
+          {
+            "hint": "Reverse victory goddess",
+            "bullet": "The reverse depicts seated Athena holding winged Nike crowning Lysimachus’ Greek name → transferred Alexander’s invincibility onto his former bodyguard’s kingdom"
+          }
+        ],
+        "context": [
+          {
+            "hint": "Near-contemporary proof",
+            "bullet": "Minted around 305 to 281 BC within a generation of Alexander’s death → corroborates how rapidly Olympias’ and Siwah’s divine myth became state currency"
+          }
+        ],
+        "stems": [
+          {
+            "badge": "DIVINE OBVERSE",
+            "stem": "On his silver tetradrachm, King ____________ portrayed Alexander wearing the royal diadem and the curved ram’s horn of ____________."
+          },
+          {
+            "badge": "SUCCESSOR PROPAGANDA",
+            "stem": "Pairing Alexander’s deified portrait with seated ____________ holding Nike helped Lysimachus legitimise his rule over..."
+          }
+        ],
+        "watch_out": "Examiner Report Alert: The curved horn on Lysimachus’ coin is the ram’s horn of Zeus Ammon—NEVER confuse it with the Egyptian god Ptah!",
+        "prose_hash": "b44dec36cc",
+        "prose_fp": "3d355347",
+        "question_hash": "c7f45dd35d"
+      }
+    ]
+  }
+}

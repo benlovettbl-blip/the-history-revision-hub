@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "clips": {
+    "lesson_2_sB": {
+      "hash": "ecea69fabaa296fa",
+      "bytes": 56588,
+      "voiceKey": "male_historian",
+      "badge": "Official Royal Commission Woodcu…",
+      "updatedAt": "2026-11-27T14:24:25.748Z"
+    },
+    "lesson_2_sC": {
+      "hash": "7dd3a26f4862e5a6",
+      "bytes": 53228,
+      "voiceKey": "male_historian",
+      "badge": "Sir Humphry Davy’s Wire-Gauze Mi…",
+      "updatedAt": "2026-11-27T14:24:26.073Z"
+    },
+    "lesson_3_sA": {
+      "hash": "3f2d202198715c12",
+      "bytes": 65804,
+      "voiceKey": "male_historian",
+      "badge": "George Cruikshank’s Etching \"Oli…",
+      "updatedAt": "2026-11-27T14:24:26.414Z"
+    },
+    "lesson_3_sB": {
+      "hash": "534f6b8dd1345f31",
+      "bytes": 60140,
+      "voiceKey": "male_historian",
+      "badge": "Archival Photograph of Rescued C…",
+      "updatedAt": "2026-11-27T14:24:26.762Z"
+    },
+    "lesson_4_sB": {
+      "hash": "ee5c4fed2b1d0d7c",
+      "bytes": 58220,
+      "voiceKey": "male_historian",
+      "badge": "Class Photograph of Pupils at Or…",
+      "updatedAt": "2026-11-27T14:24:27.104Z"
+    },
+    "lesson_5_sB": {
+      "hash": "15936a84415298e8",
+      "bytes": 52172,
+      "voiceKey": "male_historian",
+      "badge": "Nineteenth-Century Carbon-Filame…",
+      "updatedAt": "2026-11-27T14:24:27.463Z"
+    },
+    "lesson_6_sB": {
+      "hash": "1bcec34d3cff8009",
+      "bytes": 60716,
+      "voiceKey": "male_historian",
+      "badge": "Photograph of the Royal Engineer…",
+      "updatedAt": "2026-11-27T14:24:27.783Z"
+    },
+    "lesson_6_sC": {
+      "hash": "5ab95d6205dcace5",
+      "bytes": 64748,
+      "voiceKey": "female_historian",
+      "badge": "Silver Half-Crown Coin Struck fo…",
+      "updatedAt": "2026-11-27T14:24:31.220Z"
+    },
+    "lesson_1_sA": {
+      "hash": "013f33a23b468498",
+      "bytes": 72332,
+      "voiceKey": "female_historian",
+      "badge": "George and Robert Stephenson’s S…",
+      "updatedAt": "2026-11-27T14:24:32.340Z"
+    },
+    "lesson_1_sB": {
+      "hash": "a47de8f29c111c4c",
+      "bytes": 60140,
+      "voiceKey": "female_historian",
+      "badge": "Sheet of 1840 \"Penny Black\" Post…",
+      "updatedAt": "2026-11-27T14:24:32.694Z"
+    },
+    "lesson_1_sC": {
+      "hash": "0b212a48fdab244e",
+      "bytes": 63884,
+      "voiceKey": "female_historian",
+      "badge": "Surviving Red Cast-Iron Victoria…",
+      "updatedAt": "2026-11-27T14:24:33.048Z"
+    },
+    "lesson_2_sA": {
+      "hash": "15ef7d3f9642a7a6",
+      "bytes": 59756,
+      "voiceKey": "female_historian",
+      "badge": "Thomas Allom’s Engraving of a La…",
+      "updatedAt": "2026-11-27T14:24:33.787Z"
+    },
+    "lesson_3_sC": {
+      "hash": "7426103152462232",
+      "bytes": 57356,
+      "voiceKey": "female_historian",
+      "badge": "Nineteenth-Century Engraving of…",
+      "updatedAt": "2026-11-27T14:24:34.592Z"
+    },
+    "lesson_4_sA": {
+      "hash": "49abdf887035186c",
+      "bytes": 53612,
+      "voiceKey": "female_historian",
+      "badge": "Wooden-Framed Victorian Classroo…",
+      "updatedAt": "2026-11-27T14:24:36.064Z"
+    },
+    "lesson_4_sC": {
+      "hash": "40ce44fd917a6e92",
+      "bytes": 58508,
+      "voiceKey": "female_historian",
+      "badge": "Wooden-Framed Ten-Wire Classroom…",
+      "updatedAt": "2026-11-27T14:24:36.408Z"
+    },
+    "lesson_5_sA": {
+      "hash": "ece5b38d385debd8",
+      "bytes": 66476,
+      "voiceKey": "female_historian",
+      "badge": "Colour Lithograph of the Great E…",
+      "updatedAt": "2026-11-27T14:24:37.196Z"
+    },
+    "lesson_5_sC": {
+      "hash": "89f4c9707702a832",
+      "bytes": 61868,
+      "voiceKey": "female_historian",
+      "badge": "Single-Needle Victorian Railway…",
+      "updatedAt": "2026-11-27T14:24:37.532Z"
+    },
+    "lesson_6_sA": {
+      "hash": "c91a0a794d7fc084",
+      "bytes": 54764,
+      "voiceKey": "female_historian",
+      "badge": "High-Wheeled Victorian \"Penny-Fa…",
+      "updatedAt": "2026-11-27T14:24:38.271Z"
+    }
+  }
+}

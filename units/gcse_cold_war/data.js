@@ -1439,7 +1439,7 @@ export default {
                     "text": "One consequence of the Potsdam Conference in July–August 1945 was a breakdown in superpower trust that led Stalin to tighten Communist control across Eastern Europe and divided Germany. After President Truman confronted Stalin over Poland following America’s atomic test and blocked heavy reparations from Western zones, Stalin accelerated one-party Soviet satellite takeovers across his buffer zone (1945–48), sparking the 1946 Long and Novikov Telegrams."
                   },
                   {
-                    "label": "Option A (4/4): Economic Division of Germany",
+                    "label": "Option B (4/4): Economic Reparations Split Across Germany",
                     "text": "One consequence of the Potsdam Conference in July–August 1945 was the economic division of occupied Germany along superpower lines. Because President Truman blocked Joseph Stalin’s demand for crippling reparations from Western Germany—fearing poverty would breed communism—each power extracted reparations mainly from its own zone, stripping the Soviet east of machinery while Western zones rebuilt separately."
                   }
                 ]
@@ -2897,11 +2897,11 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE concrete specification consequence of the Truman Doctrine—either provoking Stalin to establish Cominform in September 1947 (Option A) or driving America’s June 1947 $13 billion Marshall Plan recovery programme (Option B).",
                 "options": [
                   {
-                    "label": "Option A (4/4): Creation of Cominform (Sept 1947)",
+                    "label": "Option A (4/4): Containment Policy → Creation of Cominform (Sept 1947)",
                     "text": "One consequence of the Truman Doctrine in March 1947 was Joseph Stalin’s decision to tighten ideological control across European communism through Cominform. Viewing Truman’s $400 million containment aid to Greece and Turkey as aggressive American encirclement, Stalin established Cominform in September 1947 to direct satellite Communist parties from Moscow and block them from accepting Western influence."
                   },
                   {
-                    "label": "Option B (4/4): Launch of the $13bn Marshall Plan (June 1947)",
+                    "label": "Option B (4/4): Containment Policy → Launch of the $13bn Marshall Plan (June 1947)",
                     "text": "One consequence of the Truman Doctrine in March 1947 was America’s commitment to active containment, backed immediately by the June 1947 Marshall Plan. Having pledged $400 million to defeat communism in Greece and Turkey after Britain withdrew, Washington reinforced containment economically with over $13 billion in Marshall Aid to rebuild Western Europe and prevent Communist electoral gains."
                   }
                 ]
@@ -4347,11 +4347,11 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 61w • Option B: 56w). Each exemplar earns full 4/4 marks in two–three crisp sentences by developing ONE focused consequence with precise factual detail—either formalising rival German states via the FRG and GDR in 1949 (Option A) or founding NATO around Article 5 collective security in April 1949 (Option B)—rather than listing multiple undeveloped consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Two Separate German States",
+                    "label": "Option A (4/4): End of Four-Power Rule → Creation of FRG & GDR (1949)",
                     "text": "One consequence of the Berlin Crisis of 1948–49 was the permanent division of Germany into two rival states. Because Stalin’s blockade destroyed any remaining prospect of four-power reunification, the Western Allies merged Trizonia into the democratic Federal Republic of Germany (FRG) in May 1949, prompting Stalin to turn the Soviet zone into the Communist German Democratic Republic (GDR) in October 1949."
                   },
                   {
-                    "label": "Option B (4/4): Formation of NATO",
+                    "label": "Option B (4/4): Blockade Alarm → Formation of NATO (April 1949)",
                     "text": "One consequence of the Berlin Crisis of 1948–49 was the creation of NATO as a peacetime Western military alliance. Alarmed by Stalin’s blockade of West Berlin, the USA, Britain, France, and nine allies signed the North Atlantic Treaty on 4 April 1949 around Article 5 collective security, stationing American troops and bombers permanently in Western Europe."
                   }
                 ]
@@ -7159,11 +7159,11 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 62w • Option B: 60w). Each exemplar earns full 4/4 marks in two crisp sentences by developing ONE focused consequence with precise factual detail—either Vienna’s deadlock triggering the August 1961 Wall (Option A) or the U-2 walkout wrecking the Paris Summit (Option B)—rather than listing all four summits superficially.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Vienna Deadlock & Construction of the Berlin Wall",
+                    "label": "Option A (4/4): June 1961 Vienna Deadlock → Construction of the Berlin Wall",
                     "text": "One consequence of the summit meetings of 1959–61 was the final breakdown of negotiations over Berlin that led directly to the construction of the Berlin Wall. When Khrushchev reissued his six-month ultimatum at the June 1961 Vienna Summit and President Kennedy responded by adding $3.2 billion to US defence spending, Khrushchev abandoned diplomacy and sealed East Berlin’s border on 13 August 1961."
                   },
                   {
-                    "label": "Option B (4/4): Collapse of Camp David Goodwill at Paris",
+                    "label": "Option B (4/4): May 1960 U-2 Crisis → Collapse of Paris Summit",
                     "text": "One consequence of the 1959–61 summit meetings was the destruction of the diplomatic goodwill briefly achieved at Camp David in September 1959. After Soviet missiles shot down Francis Gary Powers’s U-2 spy plane on 1 May 1960 and Eisenhower refused to apologise, Khrushchev stormed out of the Paris Summit, ending any prospect of a negotiated Berlin settlement under Eisenhower."
                   }
                 ]
@@ -8677,11 +8677,11 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 62w • Option B: 59w). Each exemplar earns full 4/4 marks by developing ONE focused consequence with precise factual detail—either driving Castro to accept Soviet nuclear missiles (Option A) or humiliating Kennedy and emboldening Khrushchev (Option B).",
                 "options": [
                   {
-                    "label": "Option A (4/4): Cuba’s Military Alignment With the USSR",
+                    "label": "Option A (4/4): Defeat of Exiles → Cuban Alignment & 1962 Soviet Missiles",
                     "text": "One consequence of the failed Bay of Pigs incident in April 1961 was that Fidel Castro moved Cuba openly into the Soviet military camp for protection against a future US invasion. Following the defeat of 1,400 CIA-backed Brigade 2506 exiles, Castro declared himself a Marxist-Leninist and agreed in 1962 to let Khrushchev secretly station medium-range Soviet nuclear missiles on Cuban soil."
                   },
                   {
-                    "label": "Option B (4/4): Humiliation of Kennedy & Soviet Confidence",
+                    "label": "Option B (4/4): US Humiliation → Emboldened Khrushchev at Vienna & Cuba",
                     "text": "One consequence of the April 1961 Bay of Pigs fiasco was severe international humiliation for President Kennedy that emboldened Nikita Khrushchev. Exposing covert American aggression against a small neighbour while failing militarily within seventy-two hours, the defeat convinced Khrushchev that the 43-year-old president was weak and indecisive ahead of the June 1961 Vienna Summit and 1962 Cuban deployment."
                   }
                 ]
@@ -10137,11 +10137,11 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Option A links Dubček’s reforms directly to the decisive August 1968 Warsaw Pact invasion (500,000 troops) and Brezhnev Doctrine, while Option B develops the diplomatic escalation leading to the July 1968 Warsaw Letter.",
                 "options": [
                   {
-                    "label": "Option A (4/4): August 1968 Invasion & Brezhnev Doctrine",
+                    "label": "Option A (4/4): Abolishing Censorship → Aug 1968 Invasion & Brezhnev Doctrine",
                     "text": "One consequence of Alexander Dubček’s Prague Spring reforms in 1968 was the Soviet-led military invasion of Czechoslovakia and the announcement of the Brezhnev Doctrine. Fearing that abolishing censorship under \"Socialism with a human face\" would unravel one-party rule across the bloc, Brezhnev sent 500,000 Warsaw Pact troops into Prague on 20–21 August 1968, arresting Dubček and declaring Moscow’s right to intervene in any satellite state."
                   },
                   {
-                    "label": "Option A (4/4): Warsaw Pact Alarm & The July 1968 Warsaw Letter",
+                    "label": "Option B (4/4): Warsaw Pact Alarm → July 1968 Warsaw Letter",
                     "text": "One consequence of Alexander Dubček’s Prague Spring reforms in April 1968 was fierce alarm among Warsaw Pact hardliners across Eastern Europe. Fearing that abolishing press censorship under \"Socialism with a human face\" would spread anti-communist demands into East Germany and Poland, Brezhnev, Ulbricht, and Gomułka staged June military exercises and issued the stern Five-Party Warsaw Letter on 15 July 1968."
                   }
                 ]
@@ -13156,11 +13156,11 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 59w • Option B: 55w). Each exemplar earns full 4/4 marks in two–three crisp sentences by developing ONE focused consequence with precise factual detail—either Basket 3 empowering Helsinki Watch and Charter 77 dissidents (Option A) or Basket 1 recognising post-1945 borders and East Germany (Option B)—rather than listing multiple undeveloped consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Basket 3 & Dissident Monitoring",
+                    "label": "Option A (4/4): Basket 3 Human Rights → Charter 77 & Strained Détente",
                     "text": "One major consequence of the August 1975 Helsinki Accords was the growth of organised human-rights monitoring that publicly embarrassed Moscow. Because Basket 3 committed all 35 signatory states to uphold freedom of speech, religion, and movement, courageous activists formed Helsinki Watch inside the USSR and Charter 77 in Czechoslovakia, exposing Soviet arrests and straining relations under President Jimmy Carter."
                   },
                   {
-                    "label": "Option B (4/4): Basket 1 & Recognition of Borders",
+                    "label": "Option B (4/4): Basket 1 Post-War Borders → Recognition of East Germany",
                     "text": "One significant consequence of the August 1975 Helsinki Accords was formal Western recognition of Moscow’s post-1945 territorial sphere in Eastern Europe. Under Basket 1, US President Gerald Ford, Leonid Brezhnev, and 33 other leaders declared post-war European frontiers inviolable and officially recognised Communist East Germany, temporarily easing long-standing Soviet security fears over a divided continent."
                   }
                 ]
@@ -16135,11 +16135,11 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 55w • Option B: 58w). Each exemplar earns full 4/4 marks in two–three crisp sentences by developing ONE focused consequence with precise factual detail—either nuclear disarmament under the December 1987 INF Treaty (Option A) or ending Soviet military interventions abroad leading to the Malta Summit (Option B)—rather than listing multiple undeveloped consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): Nuclear Disarmament (INF Treaty)",
+                    "label": "Option A (4/4): Arms Cuts → December 1987 INF Treaty",
                     "text": "One major consequence of Gorbachev’s ‘new thinking’ was a historic nuclear disarmament breakthrough between Washington and Moscow. Needing to slash military spending consuming 25% of Soviet GDP to fund domestic perestroika, Gorbachev uncoupled talks from SDI and signed the December 1987 INF Treaty with Ronald Reagan, destroying over 2,600 intermediate-range missiles under mutual on-site inspections."
                   },
                   {
-                    "label": "Option B (4/4): Ending Military Intervention Abroad",
+                    "label": "Option B (4/4): Ending Interventions → Feb 1989 Afghan Exit & Malta Summit",
                     "text": "One decisive consequence of Gorbachev’s ‘new thinking’ was the end of Soviet military interventions abroad, transforming American trust. By announcing unilateral cuts of 500,000 Red Army troops and abandoning the Brezhnev Doctrine at the UN in December 1988 before completing withdrawal from Afghanistan in February 1989, Gorbachev enabled President Bush to declare the Cold War over at Malta."
                   }
                 ]
@@ -17659,11 +17659,11 @@ export default {
                 "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m (Option A: 60w • Option B: 56w). Each exemplar earns full 4/4 marks in two–three crisp sentences by developing ONE focused consequence with precise factual detail—either German reunification inside NATO on 3 October 1990 (Option A) or accelerating anti-communist revolutions across Czechoslovakia and Romania (Option B)—rather than listing multiple undeveloped consequences.",
                 "options": [
                   {
-                    "label": "Option A (4/4): German Reunification (Oct 1990)",
+                    "label": "Option A (4/4): Opened Checkpoints → German Reunification in NATO (Oct 1990)",
                     "text": "One major consequence of the fall of the Berlin Wall on 9 November 1989 was the rapid collapse of Communist East Germany and formal German reunification. Once checkpoints opened freely and Mikhail Gorbachev kept Soviet troops in their barracks, West German Chancellor Helmut Kohl secured Soviet consent for East and West Germany to unite inside NATO on 3 October 1990."
                   },
                   {
-                    "label": "Option B (4/4): Eastern Bloc Domino Revolutions",
+                    "label": "Option B (4/4): Peaceful Precedent → Velvet & Romanian Revolutions (1989)",
                     "text": "One decisive consequence of the fall of the Berlin Wall in November 1989 was a rapid domino collapse of remaining Communist dictatorships across Eastern Europe. Seeing Berlin’s concrete divide fall without Red Army intervention directly emboldened Czechoslovakia’s peaceful Velvet Revolution under Václav Havel and Romania’s December uprising that overthrew Nicolae Ceaușescu before the end of 1989."
                   }
                 ]

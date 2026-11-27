@@ -1,0 +1,352 @@
+{
+  "unit_id": "ks2_anglo_saxons_vikings",
+  "glossary": [
+    {
+      "term": "Angles, Saxons, and Jutes",
+      "pronunciation": "ANG-gulz, SAK-sunz, and JOOTS",
+      "definition": "Three seafaring peoples from northern Germany and Denmark who rowed across the North Sea to settle Britain after AD 410."
+    },
+    {
+      "term": "Cyning",
+      "pronunciation": "KOO-ning",
+      "definition": "The Old English word for a warrior king who protected his kingdom and rewarded loyal fighters in his mead hall."
+    },
+    {
+      "term": "Ceorl",
+      "pronunciation": "CHURL",
+      "definition": "An ordinary free Anglo-Saxon farmer who ploughed fields, kept livestock, wove wool, and owed service to his lord."
+    },
+    {
+      "term": "Wattle and Daub",
+      "pronunciation": "WOT-ul and DAWB",
+      "definition": "Woven hazel sticks plastered with sticky mud, clay, and straw to build warm walls inside timber village homes."
+    },
+    {
+      "term": "Mead Hall",
+      "pronunciation": "MEED hawl",
+      "definition": "A grand rectangular timber building with a central hearth fire where an Anglo-Saxon ruler feasted and held council."
+    },
+    {
+      "term": "Heptarchy",
+      "pronunciation": "HEP-tar-kee",
+      "definition": "Historians' name for the seven main Anglo-Saxon kingdoms: Northumbria, Mercia, East Anglia, Essex, Kent, Sussex, and Wessex."
+    },
+    {
+      "term": "Sutton Hoo",
+      "pronunciation": "SUT-un HOO",
+      "definition": "Royal burial mounds in Suffolk where archaeologists in 1939 uncovered an Anglo-Saxon ship imprint and helmet from around AD 625."
+    },
+    {
+      "term": "Grave Goods",
+      "pronunciation": "GRAYV goodz",
+      "definition": "Precious weapons, jewellery, coins, and feasting vessels buried beside an important person to show status or for the afterlife."
+    },
+    {
+      "term": "Missionary",
+      "pronunciation": "MISH-un-uh-ree",
+      "definition": "A religious messenger, such as Augustine or Aidan, sent to a new land to preach and persuade people to become Christians."
+    },
+    {
+      "term": "Monastery",
+      "pronunciation": "MON-uh-stree",
+      "definition": "A community where Christian monks or nuns lived to pray, farm, study, and copy sacred books by hand."
+    },
+    {
+      "term": "Vellum",
+      "pronunciation": "VEL-um",
+      "definition": "Smooth, strong writing sheets scraped and stretched from calfskin for monks to paint illuminated Gospel books with feather quills."
+    },
+    {
+      "term": "Runes",
+      "pronunciation": "ROONZ",
+      "definition": "Straight-lined letters from the early Germanic and Norse alphabet, carved onto wood, metal, and tall outdoor stone crosses."
+    },
+    {
+      "term": "Scandinavia",
+      "pronunciation": "skan-dih-NAY-vee-uh",
+      "definition": "The northern European homelands of the Vikings, made up of modern Norway, Denmark, and Sweden."
+    },
+    {
+      "term": "Clinker-Built",
+      "pronunciation": "KLINK-er-bilt",
+      "definition": "The Viking shipbuilding method of overlapping split oak planks held with iron rivets and sealed watertight with tarred wool."
+    },
+    {
+      "term": "Shallow Draught",
+      "pronunciation": "SHAL-oh draft",
+      "definition": "Needing barely one metre of water depth to float, letting Viking longships beach on sand and row far up rivers."
+    },
+    {
+      "term": "Great Heathen Army",
+      "pronunciation": "GRAYT HEE-then AR-mee",
+      "definition": "The huge Viking invasion force that landed in AD 865 under Ivar the Boneless, Halfdan, and Guthrum to conquer land."
+    },
+    {
+      "term": "Fyrd",
+      "pronunciation": "FEERD",
+      "definition": "An Anglo-Saxon part-time army of local free farmers and warriors called together by their king whenever invaders attacked."
+    },
+    {
+      "term": "Shield Wall",
+      "pronunciation": "SHEELD wawl",
+      "definition": "A tight battle line where warriors stood shoulder to shoulder locking round wooden shields together like an unbroken fence."
+    },
+    {
+      "term": "Danelaw",
+      "pronunciation": "DAYN-law",
+      "definition": "The large area of northern and eastern England settled and ruled under Danish laws after Alfred's peace treaty in AD 878."
+    },
+    {
+      "term": "Burh",
+      "pronunciation": "BUR-uh",
+      "definition": "A fortified Anglo-Saxon town ringed with high earth ramparts, ditches, and timber gates, giving us our modern word borough."
+    },
+    {
+      "term": "Jorvik",
+      "pronunciation": "YOR-vik",
+      "definition": "The bustling Viking craft centre and river trading port captured in AD 866, lying beneath the streets of modern York."
+    },
+    {
+      "term": "Dirham",
+      "pronunciation": "DEER-ham",
+      "definition": "A pure silver coin minted in Islamic cities such as Baghdad and Samarkand, traded along rivers by Viking merchants."
+    },
+    {
+      "term": "Knarr",
+      "pronunciation": "kuh-NAR",
+      "definition": "A wide, deep-hulled wooden Viking cargo ship built to carry settler families, livestock, and trade goods across open oceans."
+    },
+    {
+      "term": "Thing",
+      "pronunciation": "THING",
+      "definition": "An outdoor Viking community law-assembly where free men and women gathered to vote on laws and settle arguments fairly."
+    },
+    {
+      "term": "Aethelflaed",
+      "pronunciation": "ETH-el-fled",
+      "definition": "King Alfred's bold daughter, the Lady of the Mercians, who built walled burhs and led armies to recapture Viking Derby and Leicester."
+    },
+    {
+      "term": "Danegeld",
+      "pronunciation": "DAYN-geld",
+      "definition": "Meaning Dane-gold, huge sums of silver pennies taxed from English families to pay raiding Viking fleets to sail away."
+    },
+    {
+      "term": "Witan",
+      "pronunciation": "WIT-an",
+      "definition": "The royal council of wise Anglo-Saxon bishops and powerful earls who advised the king and chose the next monarch."
+    },
+    {
+      "term": "Housecarl",
+      "pronunciation": "HOWS-karl",
+      "definition": "An elite full-time royal bodyguard warrior armed with a heavy two-handed battle-axe who protected kings such as Cnut and Harold Godwinson."
+    }
+  ],
+  "widgets": [
+    {
+      "lesson_id": "lesson_4",
+      "block_index": 1,
+      "concept_widget": {
+        "type": "power_seesaw",
+        "eyebrow": "KS2 Interactive Balance Explorer",
+        "title": "AD 871–899: How King Alfred Turned Back the Viking Tide",
+        "default_index": 0,
+        "caption": "Click each milestone tab to see how the balance of power shifted between the Viking Great Heathen Army and King Alfred's Wessex.",
+        "eras": [
+          {
+            "year": "AD 871–878 Winter at Athelney",
+            "headline": "Guthrum's Midwinter Strike Forces Alfred Into the Marshes",
+            "color": "#dc2626",
+            "summary": "After conquering York, East Anglia, and Mercia, Guthrum seized Chippenham in January AD 878 and drove King Alfred into hiding at Athelney in the Somerset marshes.",
+            "pillars": [
+              {
+                "actor": "Viking Great Heathen Army",
+                "share": 80,
+                "status": "Holds northern and eastern England plus Chippenham in Wessex",
+                "color": "#f59e0b"
+              },
+              {
+                "actor": "King Alfred's Wessex",
+                "share": 20,
+                "status": "Small loyal band planning a spring fightback on Athelney",
+                "color": "#0284c7"
+              }
+            ]
+          },
+          {
+            "year": "May AD 878 Battle of Edington and Danelaw Treaty",
+            "headline": "Shield Wall Victory at Edington Splits England Along Watling Street",
+            "color": "#0284c7",
+            "summary": "Alfred rallied the Wessex fyrd at Egbert's Stone and defeated Guthrum at Edington. Guthrum was baptised as Aethelstan, and their treaty divided England into Saxon lands and the Danelaw.",
+            "pillars": [
+              {
+                "actor": "Viking Great Heathen Army",
+                "share": 50,
+                "status": "Governs northern and eastern Danelaw farms under Danish law",
+                "color": "#f59e0b"
+              },
+              {
+                "actor": "King Alfred's Wessex",
+                "share": 50,
+                "status": "Rules Wessex, western Mercia, and walled London from AD 886",
+                "color": "#0284c7"
+              }
+            ]
+          },
+          {
+            "year": "AD 880s–899 Walled Burhs and Navy",
+            "headline": "33 Fortified Burhs, 60-Oar Warships, and Schools of Learning",
+            "color": "#059669",
+            "summary": "Alfred ringed Wessex with 33 earth-walled burhs no further than 20 miles apart, launched fast 60-oar coastal warships, and opened court schools translating Latin into Old English.",
+            "pillars": [
+              {
+                "actor": "Viking Great Heathen Army",
+                "share": 35,
+                "status": "Checked by walled burh garrisons and coastal patrol ships",
+                "color": "#f59e0b"
+              },
+              {
+                "actor": "King Alfred's Wessex",
+                "share": 65,
+                "status": "33 fortified burhs, royal fleet, and strong Saxon kingdom",
+                "color": "#10b981"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "lesson_id": "lesson_5",
+      "block_index": 1,
+      "concept_widget": {
+        "type": "profile_deck",
+        "eyebrow": "KS2 Interactive History Explorer",
+        "title": "Viking Jorvik: Three Trade Webs Linking Britain to the World",
+        "default_index": 0,
+        "caption": "Switch across the three tabs to inspect archaeological clues proving Vikings were far-reaching merchants and ocean navigators.",
+        "items": [
+          {
+            "tab_label": "1. Coppergate Finds",
+            "title": "Luxury Imports Uncovered in Jorvik's Wet Peat",
+            "dates": "9th–10th Century AD",
+            "badge": "Jorvik Market Clues",
+            "color": "#0284c7",
+            "bg_color": "rgba(2, 132, 199, 0.2)",
+            "metrics": [
+              {
+                "label": "Byzantium",
+                "value": "Shimmering woven silk cloth"
+              },
+              {
+                "label": "Baltic and Germany",
+                "value": "Golden amber beads and wine jars"
+              },
+              {
+                "label": "Red Sea",
+                "value": "Tropical cowrie shell brought north"
+              }
+            ],
+            "takeaway": "Objects preserved beneath Coppergate in York prove Jorvik traded peacefully across distant seas."
+          },
+          {
+            "tab_label": "2. Eastern River Trade",
+            "title": "Silver Dirham Coins from Baghdad and Samarkand",
+            "dates": "9th–10th Century AD",
+            "badge": "Russian River Routes",
+            "color": "#d97706",
+            "bg_color": "rgba(217, 119, 6, 0.2)",
+            "metrics": [
+              {
+                "label": "Goods Sold East",
+                "value": "Warm northern furs and walrus ivory"
+              },
+              {
+                "label": "Coins Brought Back",
+                "value": "Pure silver Arabic dirham coins"
+              },
+              {
+                "label": "Mint Cities",
+                "value": "Baghdad and Samarkand in Asia"
+              }
+            ],
+            "takeaway": "Viking river merchants sailed deep through eastern Europe to trade with wealthy Islamic markets."
+          },
+          {
+            "tab_label": "3. Western Knarr Voyages",
+            "title": "Ocean Crossings to Iceland, Greenland, and Vinland",
+            "dates": "9th–10th Century AD",
+            "badge": "North Atlantic Voyagers",
+            "color": "#059669",
+            "bg_color": "rgba(5, 150, 105, 0.2)",
+            "metrics": [
+              {
+                "label": "Cargo Ship",
+                "value": "Wide, deep-bellied wooden knarr"
+              },
+              {
+                "label": "Island Settlements",
+                "value": "Farms in Iceland and icy Greenland"
+              },
+              {
+                "label": "Furthest Landing",
+                "value": "Reached Vinland in North America"
+              }
+            ],
+            "takeaway": "Sturdy knarr cargo vessels carried families, livestock, and timber across stormy open oceans."
+          }
+        ]
+      }
+    }
+  ],
+  "source_texts": [
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_anglo_saxons_vikings_l1_src_b",
+      "visual_verified_file": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_saucer_brooch.jpg",
+      "text": "Artefact note: Photographed from both sides above a millimetre scale, this crescent-shaped bronze brooch fragment shows a smooth curved back on the left. On the right, bright gold coating gleams across a beaded rim, a raised four-sided frame, and deep spiral grooves."
+    },
+    {
+      "lesson_id": "lesson_1",
+      "source_id": "ks2_anglo_saxons_vikings_l1_src_c",
+      "visual_verified_file": "/units/ks2_anglo_saxons_vikings/assets/anglo_saxon_claw_beaker.jpg",
+      "text": "Artefact note: Blown from thin olive-green and amber glass, this tall drinking vessel has fine horizontal glass threads wrapped around its flared rim. Two rows of dark hollow glass claws curve down the sides toward a tiny, narrow foot at the base."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_anglo_saxons_vikings_l2_src_a",
+      "visual_verified_file": "/units/ks2_anglo_saxons_vikings/assets/sutton_hoo_helmet_closeup.jpg",
+      "text": "Artefact note: Shining silvered panels stamped with warrior scenes and braided knotwork cover the dome and hinged cheek-guards of this full-face helmet. Tiny square red garnets line two arched golden eyebrows beside a gilded nose-guard and engraved moustache plate."
+    },
+    {
+      "lesson_id": "lesson_2",
+      "source_id": "ks2_anglo_saxons_vikings_l2_src_c",
+      "visual_verified_file": "/units/ks2_anglo_saxons_vikings/assets/bewcastle_anglo_saxon_cross.jpg",
+      "text": "Artefact note: Rising over four metres tall beside a Cumbria stone church and smaller gravestones, this weathered sandstone shaft stands outdoors in all weathers. Three deep arched niches hold carved robed figures separated by rectangular panels of straight-lined Old English runes."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_anglo_saxons_vikings_l3_src_b",
+      "visual_verified_file": "/images/upgraded/ks2-ancient/asv_l3_src1_lindisfarne_raider_stone.jpg",
+      "text": "Artefact note: Carved in deep relief across a round-topped pale sandstone slab, seven marching figures stride forward in a tight single line. Each figure wears a ridged knee-length tunic and raises heavy weapons high above a smooth, rounded head."
+    },
+    {
+      "lesson_id": "lesson_3",
+      "source_id": "ks2_anglo_saxons_vikings_l3_src_c",
+      "visual_verified_file": "/units/ks2_anglo_saxons_vikings/assets/viking_sword_and_axe.jpg",
+      "text": "Artefact note: Seen in close-up, this polished Viking sword hilt features a five-lobed metal pommel split into neat sections by braided silver wire. Below it, coiled copper-red animal patterns gleam along the curved guard above a wire-wrapped grip."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_anglo_saxons_vikings_l5_src_b",
+      "visual_verified_file": "/units/ks2_anglo_saxons_vikings/assets/viking_gaming_pieces_bone.jpg",
+      "text": "Artefact note: Lined up in a row beside black-and-white centimetre scale bars, these four rounded gaming counters each measure barely two centimetres across. Their smooth, dome-shaped tops still carry mottled brown soil marks from centuries buried underground."
+    },
+    {
+      "lesson_id": "lesson_5",
+      "source_id": "ks2_anglo_saxons_vikings_l5_src_c",
+      "visual_verified_file": "/units/ks2_anglo_saxons_vikings/assets/gosforth_viking_cross_cumbria.jpg",
+      "text": "Artefact note: In a grassy Cumbria churchyard, this slender red sandstone shaft towers over twice as tall as the visitor beside it. Above a smooth round base, braided stone carvings and figure panels rise to a wheel-ringed cross head."
+    }
+  ]
+}

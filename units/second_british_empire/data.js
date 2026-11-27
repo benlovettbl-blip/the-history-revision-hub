@@ -988,17 +988,6 @@ export default {
           "model_answer": "Recall: Mercantilism dictated that colonies existed solely to provide raw materials to the mother country and purchase British manufactured goods, banning direct trade with rival nations.\nExplain: After losing America in 1783, Britain redirected its imperial focus toward India, Singapore, Australia, and Africa, prioritising territorial extraction and global trade routes.\nChallenge: Steam engines and underwater telegraph cables compressed transit times from months to hours, allowing Whitehall civil servants to exert instant, centralized military and economic control over distant colonies."
         },
         {
-          "id": "T504u17Ao9A",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=T504u17Ao9A",
-          "title": "Victoria & Abdul (2017) | Official Trailer (Focus Features)",
-          "duration": "2 mins 42 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:25 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Period drama starring Judi Dench exploring the racial and social hierarchies of Victorian court life.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film portray Queen Victoria's Empress of India title alongside the deep-seated racial prejudice of her royal household and ministers?",
-          "model_answer": "Cinematic Discussion Focus: The film contrasts Queen Victoria's genuine personal affection for her Indian clerk Abdul Karim with the rigid racism and colonial condescension of the British royal court, illustrating how Victorian imperialists viewed Indian subjects as intrinsically inferior."
-        },
-        {
           "id": "5Cc4LaSRiSc",
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=5Cc4LaSRiSc",
@@ -3691,17 +3680,6 @@ export default {
           "model_answer": "Recall: A policy allowing the Company to annex any princely state whose ruler died without a direct biological male heir, disinheriting adopted heirs.\nExplain: Sepoys recognized that only the historic Mughal emperor possessed the symbolic, legitimate sovereignty needed to unite both Hindu and Muslim factions across India against British rule.\nChallenge: The rebellion shocked Parliament into recognizing that a profit-seeking corporation could no longer be trusted to govern a subcontinent. Parliament dissolved the Company's powers and transferred all sovereignty directly to Queen Victoria, establishing the British Raj."
         },
         {
-          "id": "5iIIaoJ9qKU",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=5iIIaoJ9qKU",
-          "title": "Mangal Pandey: The Rising (2005) | Official Trailer",
-          "duration": "2 mins 41 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:20 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Dramatises sepoy Mangal Pandey's defiance at Barrackpore.",
-          "viewing_task": "[01:10] Cinematic Discussion Focus: How does the film frame Mangal Pandey's individual act of rebellion as the awakening of Indian national consciousness against colonial tyranny?",
-          "model_answer": "Cinematic Discussion Focus: The trailer visually elevates Pandey from an obedient soldier into an anti-colonial martyr: his refusal to bite the greased cartridge is framed as a sacred defense of personal honour, religion, and freedom from corporate oppression."
-        },
-        {
           "id": "0r18gI2iw1k",
           "type": "youtube",
           "url": "https://www.youtube.com/watch?v=0r18gI2iw1k",
@@ -5007,17 +4985,6 @@ export default {
           "model_answer": "Recall: Quinine (preventing malaria), the steamship (navigating inland rivers), and the Maxim machine gun (delivering overwhelming firepower).\nExplain: European factories required massive supplies of industrial raw materials (copper for electrical wiring, rubber for tyres) while domestic markets were saturated, compelling governments to seize protected imperial trade zones.\nChallenge: Imperialists framed conquest as a noble humanitarian obligation ('The White Man's Burden') to bring Christianity, commerce, and civilization, disguising ruthless resource theft behind moral benevolence."
         },
         {
-          "id": "6WuoiR0I8Es",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=6WuoiR0I8Es",
-          "title": "Zulu (1964) | Original Movie Trailer (Michael Caine / Stanley Baker)",
-          "duration": "2 mins 37 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:24 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Classic cinema depicting the 1879 Battle of Rorke's Drift during the Anglo-Zulu War.",
-          "viewing_task": "[01:15] Cinematic Discussion Focus: How does the film frame British imperial soldiers facing the Zulu impi? How does cinema shape public memory of imperial military conflicts?",
-          "model_answer": "Cinematic Discussion Focus: The film depicts British soldiers as heroic underdogs defending an isolated outpost with stoic discipline, while presenting Zulu warriors as brave and disciplined. However, the film omits the aggressive British invasion of Zululand that triggered the war and ignores the broader catastrophe of British colonial annexation."
-        },
-        {
           "type": "youtube",
           "id": "JG3uCJGlhZo",
           "url": "https://www.youtube.com/watch?v=JG3uCJGlhZo",
@@ -6279,17 +6246,6 @@ export default {
           "teacher_guidance": "Recommended Watch Window: 00:30–06:30 | Lesson Phase: Deep Historiographical Synthesis | Tone Alert: Evaluates the human cost, deindustrialisation of native economies, and unequal power dynamics.",
           "viewing_task": "[01:45] Recall: How did British tariffs destroy the traditional Indian handloom textile industry?\n[03:50] Explain: What role did free-market dogma play in British government inaction during imperial famines in India and Ireland?\n[05:40] Challenge: In evaluating whether the empire was a 'force for good', why must historians examine whose voices and perspectives are being prioritized?",
           "model_answer": "Recall: Britain slapped heavy import duties on Indian textiles while flooding Indian markets tariff-free with cheap factory cloth from Manchester, wiping out millions of Indian weavers.\nExplain: Colonial administrators adhered to strict laissez-faire economic dogma, refusing to intervene in grain markets or provide price controls even as millions starved.\nChallenge: Pro-empire arguments typically reflect the perspectives of British elites who profited, whereas colonized populations bore the devastating costs of land loss, racial discrimination, deindustrialisation, and loss of sovereignty."
-        },
-        {
-          "id": "5y8DZUShVis",
-          "type": "youtube",
-          "url": "https://www.youtube.com/watch?v=5y8DZUShVis",
-          "title": "Gandhi (1982) | Official Movie Trailer (Ben Kingsley / Richard Attenborough)",
-          "duration": "2 mins 56 secs",
-          "pathway": "Cinematic",
-          "teacher_guidance": "Recommended Watch Window: 00:00–02:56 | Lesson Phase: Visual & Cultural Impact | Tone Alert: Multi-Oscar-winning historical epic depicting satyagraha and the dismantling of the British Raj.",
-          "viewing_task": "[01:40] Cinematic Discussion Focus: How does the film frame Mahatma Gandhi's strategy of non-violent civil disobedience against the military might of the British Empire?",
-          "model_answer": "Cinematic Discussion Focus: The trailer visually contrasts humble, spinning-wheel simplicity with opulent British viceregal splendour, demonstrating how moral resistance and non-violent mass protest exposed the ethical bankruptcy of colonial rule."
         },
         {
           "type": "youtube",

@@ -1,13 +1,14 @@
 /**
- * Disciplinary Skills Progression Data
+ * Disciplinary Skills Progression Data (All-Through Primary & Secondary Architecture)
  *
- * Maps the four fundamental historical thinking strands across Years 7 through 11:
+ * Maps the four fundamental historical thinking strands from Lower Key Stage 2 (Ages 7–9)
+ * and Upper Key Stage 2 (Ages 9–11) right through Years 7–9 (KS3) and Years 10–11 (GCSE):
  * 1. Causation & Consequence
  * 2. Change & Continuity
  * 3. Source Comprehension, Utility & Provenance
  * 4. Historical Interpretations
  *
- * Provides concrete progression steps, cognitive scaffolds, and exam/assessment outcomes.
+ * Provides concrete progression steps, cognitive scaffolds, and age-calibrated outcomes.
  */
 
 export const DISCIPLINARY_STRANDS = [
@@ -19,8 +20,32 @@ export const DISCIPLINARY_STRANDS = [
     bgColor: '#fffbeb',
     borderColor: '#fde68a',
     summary:
-      'Progresses from single-sentence assertions in Year 7 to multi-causal categorization in Year 8, 16-mark causal hierarchies in Year 9, and Edexcel Paper 2 4-mark consequence & Paper 1 16-mark synoptic factor essays in GCSE.',
+      'Progresses from concrete physical triggers in Lower KS2 and multi-reason explanations in Upper KS2 to single-cause PEEL paragraphs in Year 7, thematic categorization in Year 8, 16-mark causal hierarchies in Year 9, and Edexcel GCSE consequence & synoptic factor essays.',
     years: {
+      'Lower KS2 (Y3–4)': {
+        stage: 'Primary Foundations (Ages 7–9)',
+        skillHeadline: 'Concrete triggers & direct consequences ("Why did it happen and what changed?")',
+        progression:
+          'Pupils connect clear physical or human causes to immediate outcomes. Studying Stone Age to Iron Age Britain, Ancient Egypt, and Roman Britain, children explain how melting Ice Age glaciers flooded Doggerland around 6500 BC, how annual Nile inundations created fertile Kemet farmland, and why broken Roman treaties sparked Boudicca’s AD 60–61 rebellion.',
+        scaffold:
+          'Primary Causal Stem: "Doggerland flooded around 6500 BC because... As a result, Britain became..."',
+        assessmentFormat:
+          'Dual-scaffolded sentence completion and 2–3 sentence causal explanation using Historian Word Banks.',
+        modelQuestion:
+          'Why did Queen Boudicca and the Iceni tribe rebel against Roman rule in AD 60?',
+      },
+      'Upper KS2 (Y5–6)': {
+        stage: 'KS3-Bridge Readiness (Ages 9–11)',
+        skillHeadline: 'Grouping multiple connected reasons & human choices',
+        progression:
+          'Pupils move beyond a single trigger to combine two or three linked causes. Studying Early Islamic Baghdad, the Ancient Maya, Anglo-Saxons & Vikings, and World War II, pupils weigh environmental, technological, and human factors—such as why Baghdad became a world centre of learning around AD 900 or why severe drought, deforestation, and warfare led Maya families to leave southern lowland cities.',
+        scaffold:
+          'Multi-Reason Bridge Frame: "One important reason [Event] happened was... A second connected reason was... Together, this meant that..."',
+        assessmentFormat:
+          'Two structured paragraphs on wide-lined KS3-Bridge Spine Workbooks linking multiple causes to consequences.',
+        modelQuestion:
+          'Why did the British government evacuate 1.5 million children during Operation Pied Piper in September 1939?',
+      },
       'Year 7': {
         stage: 'KS3 Foundations',
         skillHeadline:
@@ -91,8 +116,32 @@ export const DISCIPLINARY_STRANDS = [
     bgColor: '#f0fdf4',
     borderColor: '#bbf7d0',
     summary:
-      'Progresses from challenging linear progress narratives in Year 7 to evaluating the pace and extent of industrial change in Year 8, turning points in Year 9, and Edexcel 4-mark similarity or difference across eras in GCSE.',
+      'Progresses from spotting tangible everyday changes and continuities in Lower KS2 and simultaneous global contrasts in Upper KS2 to challenging linear progress in Year 7, evaluating pace/extent in Year 8, turning points in Year 9, and Edexcel 4-mark similarity/difference in GCSE.',
     years: {
+      'Lower KS2 (Y3–4)': {
+        stage: 'Primary Foundations (Ages 7–9)',
+        skillHeadline: 'Everyday transformations vs things that stayed the same',
+        progression:
+          'Pupils track visible changes in tools, homes, food, and beliefs while noticing what stayed the same for ordinary families. Across Prehistoric and Roman Britain, pupils see how bronze and iron transformed farming and hillforts, and how paved Roman forums and heated villas changed town life while most rural families continued living in thatched Celtic roundhouses.',
+        scaffold:
+          'Change & Continuity Stem: "For wealthy town dwellers, Roman rule changed homes and roads by... However, in the countryside many families still..."',
+        assessmentFormat:
+          'Side-by-side comparison table and short summary contrasting change in towns with rural continuity.',
+        modelQuestion:
+          'How did everyday life change from Old Stone Age hunter-gatherers to Neolithic farmers at Skara Brae?',
+      },
+      'Upper KS2 (Y5–6)': {
+        stage: 'KS3-Bridge Readiness (Ages 9–11)',
+        skillHeadline: 'Simultaneous worlds (c. AD 900) & lasting historical legacies',
+        progression:
+          'Pupils develop secure mental timelines by comparing societies that existed at the exact same time—contrasting the Round City of Baghdad or Classic Maya cities around AD 900 with Anglo-Saxon and Viking Britain—while tracing how Greek democracy, Arabic numerals (0–9), and post-1945 British rebuilding continue to shape modern life.',
+        scaffold:
+          'Simultaneous Contrast Frame: "Around AD 900, scholars in Baghdad used paper mills and free bimaristan hospitals, whereas in Anglo-Saxon England books were copied onto costly calfskin vellum in monasteries."',
+        assessmentFormat:
+          'Comparative 2-paragraph response weighing simultaneous societies or long-term cultural legacies.',
+        modelQuestion:
+          'In what ways was everyday life in Baghdad around AD 900 different from life in Anglo-Saxon Britain?',
+      },
       'Year 7': {
         stage: 'KS3 Foundations',
         skillHeadline: 'Challenging linear progress: regression, collapse & stagnation',
@@ -163,8 +212,32 @@ export const DISCIPLINARY_STRANDS = [
     bgColor: '#eff6ff',
     borderColor: '#bfdbfe',
     summary:
-      'Progresses from extracting literal information and inferences in Year 7 to interrogating Nature, Origin, and Purpose (NOP) in Year 8, testing propaganda against context in Year 9, and Edexcel 12-mark utility & Western Front 8-mark evaluations in GCSE.',
+      'Progresses from observing physical artefact clues in Lower KS2 and questioning eyewitness purpose in Upper KS2 to supported inferences in Year 7, Nature/Origin/Purpose (NOP) in Year 8, contextual propaganda testing in Year 9, and Edexcel 8m/12m source utility in GCSE.',
     years: {
+      'Lower KS2 (Y3–4)': {
+        stage: 'Primary Foundations (Ages 7–9)',
+        skillHeadline: 'Archaeological detective clues ("What can we see and what can we work out?")',
+        progression:
+          'Pupils learn how historians investigate periods with few or no written books by examining surviving objects—such as chipped flint handaxes, Star Carr red-deer antler masks, the Amesbury Archer’s grave goods, Egyptian shabti figures, Greek painted pottery, and Vindolanda ink letters—separating literal observation from sensible detective deduction.',
+        scaffold:
+          'Artefact Detective Stem: "Looking closely at Source A, I can see... This clue tells historians that people in this period..."',
+        assessmentFormat:
+          'Guided source observation & 1–2 sentence deduction from authentic museum photographs and inscriptions.',
+        modelQuestion:
+          'What clues do the Amesbury Archer’s copper knives, gold hair-rings, and Alpine tooth enamel give archaeologists about Bronze Age travel?',
+      },
+      'Upper KS2 (Y5–6)': {
+        stage: 'KS3-Bridge Readiness (Ages 9–11)',
+        skillHeadline: 'Cross-checking eyewitness voices against material evidence ("Who made this and why?")',
+        progression:
+          'Pupils begin asking who created a source and why their viewpoint might be one-sided. They cross-check shocked monastic chronicles of the AD 793 Lindisfarne raid against bone combs, amber beads, and Baghdad silver dirhams dug up in Viking Jorvik, and inspect 1939 Home Office leaflets, Kindertransport documents, and wartime broadcasts.',
+        scaffold:
+          'Cross-Check Stem: "Monk Alcuin wrote Source A to warn Christians after the raid on Lindisfarne, so he focused on Viking violence. However, archaeological finds from Jorvik also prove that..."',
+        assessmentFormat:
+          'Paired-source comparison balancing an eyewitness writer’s purpose against physical archaeological evidence.',
+        modelQuestion:
+          'Why must historians study Jorvik workshop finds alongside monk chronicles when judging the Vikings?',
+      },
       'Year 7': {
         stage: 'KS3 Foundations',
         skillHeadline: 'Primary source comprehension & supported inferences',
@@ -235,8 +308,32 @@ export const DISCIPLINARY_STRANDS = [
     bgColor: '#faf5ff',
     borderColor: '#e9d5ff',
     summary:
-      'Progresses from recognizing that history is constructed from evidence in Year 7 to deconstructing historiographical shifts in Year 8, evaluating academic debates in Year 9, and mastering Edexcel Paper 3 Section B 24-mark suite.',
+      'Progresses from seeing how new archaeological finds revise our picture of the past in Lower KS2 and testing popular stereotypes in Upper KS2 to contested medieval monarchs in Year 7, historiographical shifts in Year 8, academic debates in Year 9, and Edexcel Paper 3 24-mark evaluations in GCSE.',
     years: {
+      'Lower KS2 (Y3–4)': {
+        stage: 'Primary Foundations (Ages 7–9)',
+        skillHeadline: 'How new archaeological discoveries change stories about the past',
+        progression:
+          'Pupils discover that historians update their ideas whenever fresh evidence is dug up or decoded—such as the 1850 Orkney storm uncovering Neolithic Skara Brae, Jean-François Champollion cracking Egyptian hieroglyphs on the Rosetta Stone in 1822, or waterlogged Bronze Age homes found at Must Farm.',
+        scaffold:
+          'Discovery Stem: "Before archaeologists uncovered [Discovery], people used to think... Now this evidence proves that..."',
+        assessmentFormat:
+          'Short explanation showing how an archaeological discovery changed what historians knew.',
+        modelQuestion:
+          'How did cracking the Rosetta Stone in 1822 change what historians could learn about Ancient Egypt?',
+      },
+      'Upper KS2 (Y5–6)': {
+        stage: 'KS3-Bridge Readiness (Ages 9–11)',
+        skillHeadline: 'Testing popular stereotypes ("Raiders or Traders?" / "Did the Maya vanish?")',
+        progression:
+          'Pupils weigh two contrasting claims about a society using real evidence—debating whether Vikings should be remembered mainly as fierce raiders or global traders and settlers, why calling the Ancient Maya a "vanished civilisation" ignores northern Yucatán cities and 7 million living Maya today, and who was left out of Athenian democracy.',
+        scaffold:
+          'Two-Viewpoint Bridge Frame: "Some people describe the Vikings only as fierce raiders because... However, a fuller historical view shows they were also skilled traders and settlers because..."',
+        assessmentFormat:
+          'Balanced two-sided conclusion testing a popular historical label against archaeological and written evidence.',
+        modelQuestion:
+          '"The Vikings were nothing more than violent raiders." Use evidence from Lindisfarne and Jorvik to explain whether you agree.',
+      },
       'Year 7': {
         stage: 'KS3 Foundations',
         skillHeadline: 'Recognising that history is constructed & contested',
@@ -302,6 +399,26 @@ export const DISCIPLINARY_STRANDS = [
 
 export const YEAR_GROUPS_PROGRESSION = [
   {
+    year: 'Lower KS2 (Y3–4)',
+    ks: 'Primary Foundations',
+    subtitle: 'Concrete Chronology, Artefact Clues & Direct Causes',
+    focus:
+      'Building secure BC/AD mental timelines, observing physical archaeological artefacts without written texts, and connecting direct causes to everyday change.',
+    color: '#0369a1',
+    badge: '#e0f2fe',
+    badgeText: '#0369a1',
+  },
+  {
+    year: 'Upper KS2 (Y5–6)',
+    ks: 'KS3-Bridge Primary',
+    subtitle: 'Simultaneous Worlds, Eyewitness Motive & Stereotype Testing',
+    focus:
+      'Contrasting c. AD 900 global civilisations with Britain, cross-checking eyewitness viewpoints against archaeology, and writing structured 2-paragraph explanations.',
+    color: '#0f766e',
+    badge: '#ccfbf1',
+    badgeText: '#0f766e',
+  },
+  {
     year: 'Year 7',
     ks: 'Key Stage 3',
     subtitle: 'Foundational Knowledge & Single-Concept Reasoning',
@@ -316,7 +433,7 @@ export const YEAR_GROUPS_PROGRESSION = [
     ks: 'Key Stage 3',
     subtitle: 'Analytical Categorization & Provenance Interrogation',
     focus:
-      'Multi-causal ranking (SPECTRUM: Social, Political, Economic, Cultural), NOP (Nature, Origin, Purpose) interrogation, and historiographical shifts.',
+      'Multi-causal ranking (Social, Political, Economic, Cultural), NOP (Nature, Origin, Purpose) interrogation, and historiographical shifts.',
     color: '#1b4332',
     badge: '#dcfce7',
     badgeText: '#166534',

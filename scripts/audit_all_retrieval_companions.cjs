@@ -32,6 +32,34 @@ const COMPANIONS_CATALOG = [
     expectedPages: 4,
     sheets: 1,
   },
+  {
+    tier: 'KS2',
+    name: 'KS2: Crime and Punishment Retrieval Companion',
+    file: 'ks2_crime_and_punishment_retrieval_companion.pdf',
+    expectedPages: 4,
+    sheets: 1,
+  },
+  {
+    tier: 'KS2',
+    name: 'KS2: Kingdom of Benin Retrieval Companion',
+    file: 'ks2_kingdom_of_benin_retrieval_companion.pdf',
+    expectedPages: 4,
+    sheets: 1,
+  },
+  {
+    tier: 'KS2',
+    name: 'KS2: Victorian Britain Retrieval Companion',
+    file: 'ks2_victorian_britain_retrieval_companion.pdf',
+    expectedPages: 4,
+    sheets: 1,
+  },
+  {
+    tier: 'KS2',
+    name: 'KS2: Local History Detective Retrieval Companion',
+    file: 'ks2_local_history_detective_retrieval_companion.pdf',
+    expectedPages: 4,
+    sheets: 1,
+  },
 
   // Key Stage 3 (8–12 Pages)
   {

@@ -162,6 +162,11 @@ export function resolveUnitAssetUrl(rawPath, unitId) {
 function extractDateFromText(str) {
   const s = stripToPlain(str);
   if (!s) return '';
+  // Match classical BC/BCE/AD date ranges first e.g. "(559–530 BC)", "356–323 BC", "69–30 BC", "547 BC"
+  const bcMatch = s.match(
+    /\b((?:c\.\s*)?\d{1,4}(?:\s*[–-]\s*\d{1,4})?\s*(?:BC|BCE)|AD\s*\d{1,4}(?:\s*[–-]\s*(?:c\.\s*)?\d{1,4})?)\b/i,
+  );
+  if (bcMatch) return bcMatch[1].trim();
   // Match parenthetical or trailing date expressions e.g. "(9 Nov 1918)", "(1918–1919)", "c.1950–1954", "AD 43 – AD 410"
   const parenDate = s.match(
     /\(((?:c\.\s*)?(?:AD\s*)?\d{1,2}\s+[A-Z][a-z]+\s+\d{4}|(?:[A-Z][a-z]+\s*[–-]\s*)?[A-Z][a-z]+\s+\d{4}|(?:c\.\s*)?(?:AD\s*)?\d{3,4}(?:\s*(?:BC|BCE|AD|CE))?(?:\s*[–-]\s*(?:AD\s*)?(?:\d{2,4}|Present))?)\)/i,
@@ -177,7 +182,9 @@ function extractDateFromText(str) {
 function deriveShortDate(dateStr, fallbackLabel = '') {
   const s = stripToPlain(dateStr);
   if (!s) return fallbackLabel;
-  if (s.length <= 14) return s;
+  if (s.length <= 15) return s;
+  const bcShort = s.match(/\b((?:c\.\s*)?\d{1,4}(?:\s*[–-]\s*\d{1,4})?\s*(?:BC|BCE))\b/i);
+  if (bcShort) return bcShort[1].replace(/\s*[–-]\s*/g, '–');
 
   const monthMap = {
     january: 'Jan',
@@ -266,7 +273,20 @@ function detectIsGcseUnit(unitId, unitData, catalogEntry) {
     unitData?.category || unitData?.keyStage || unitData?.key_stage || catalogEntry?.stage || '',
   ).toLowerCase();
   if (cat.includes('gcse') || cat === 'ks4') return true;
-  if (['weimar_nazi_germany', 'gcse_cold_war', 'eee', 'usa', 'cme_new', 'edexcel_medicine'].includes(unitId)) {
+  if (
+    [
+      'weimar_nazi_germany',
+      'gcse_cold_war',
+      'eee',
+      'usa',
+      'cme_new',
+      'edexcel_medicine',
+      'ocr_persian_empire',
+      'ocr_alexander',
+      'ocr_foundations_of_rome',
+      'ocr_cleopatra',
+    ].includes(unitId)
+  ) {
     return true;
   }
   const firstTitle = String(unitData?.lessons?.[0]?.title || '');

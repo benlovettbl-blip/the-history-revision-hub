@@ -1,0 +1,17 @@
+{
+  "id": "ocr_j198_pericles_athens",
+  "code": "J198/01-C",
+  "examBoard": "Cambridge OCR GCSE (9–1) Ancient History (J198)",
+  "paper": "Component 1: Greece and Persia (J198/01) — Section C",
+  "paperType": "Greek Depth Study (Prescribed Sources)",
+  "title": "Hub GCSE Ancient History Topic Checklist (Aligned to Cambridge OCR J198)",
+  "subtitle": "J198/01 Section C: Athens in the Age of Pericles, 462–429 BC",
+  "shortTitle": "Athens in the Age of Pericles",
+  "disclaimer": "Aligned to Cambridge OCR GCSE (9–1) Ancient History (J198). Independent educational resource by The History Revision Hub; not endorsed by Cambridge OCR.",
+  "sections": [
+    { "id": "key-topic-1", "keyTopicNumber": 1, "title": "The workings of Athenian democracy", "topics": [{ "number": 1, "title": "Ephialtes, Pericles, Ecclesia and Boule", "points": ["Citizenship after the reforms of Ephialtes and Pericles; the workings of the ecclesia, boule, archontes and strategoi; the role of Sophists; ostracism in removing Cimon and Thucydides"] }] },
+    { "id": "key-topic-2", "keyTopicNumber": 2, "title": "Athens, Sparta and Pericles' Foreign Policy", "topics": [{ "number": 1, "title": "Delian League, Megarian Decree and Archidamian War", "points": ["Refusal of Athenian help suppressing the helot revolt, construction of the Long Walls; the Delian League and Athenian Empire; Pericles' strategy during the Archidamian War and the plague"] }] },
+    { "id": "key-topic-3", "keyTopicNumber": 3, "title": "Pericles and cultural and religious life in Athens", "topics": [{ "number": 1, "title": "Acropolis Building Programme and Festivals", "points": ["The importance of Pericles' building programme; criticisms of the building programme and trial of Pheidias; the Panathenaia and City Dionysia; Funeral Oration"] }] },
+    { "id": "key-topic-4", "keyTopicNumber": 4, "title": "Women in Athens", "topics": [{ "number": 1, "title": "Citizen Women, Medea, Arrephoroi and Aspasia", "points": ["Role and position of women in daily life; Pericles' citizenship law; depictions of women in Medea; the Arrephoroi and Aspasia"] }] }
+  ]
+}

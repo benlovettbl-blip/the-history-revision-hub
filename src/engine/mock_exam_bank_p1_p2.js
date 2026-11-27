@@ -17,9 +17,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of the SS Exodus affair (July 1947).",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "One consequence of the SS Exodus affair in July 1947 was an international outcry that swung UN investigators behind partitioning Palestine. When the Royal Navy forcibly boarded the ship in Haifa—watched first-hand by UNSCOP delegates—and shipped 4,500 Holocaust survivors back to camps in Germany, British moral authority collapsed, directly influencing UNSCOP’s recommendation for UN Resolution 181 partition and British withdrawal.",
+        "modelAnswer": "One consequence of the SS Exodus affair in July 1947 was an international outcry that swung UN investigators behind partitioning Palestine. When the Royal Navy forcibly boarded the ship at Haifa—watched first-hand by UNSCOP delegates—and returned 4,500 Holocaust survivors to camps in Germany, British moral authority collapsed, directly influencing UNSCOP’s recommendation for UN Resolution 181 partition.",
         "pdfUrl": "",
-        "mockUrl": "/units/cme_new/"
+        "mockUrl": "/units/cme_new/",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of the SS Exodus affair was that people around the world felt sorry for the Jewish refugees and criticised Britain.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). General statement about public sympathy without naming 4,500 survivors, return to Germany, or UNSCOP."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of the SS Exodus affair in July 1947 was worldwide outrage after the Royal Navy forced 4,500 Holocaust survivors back to camps in British-occupied Germany.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual detail, needing causal link to UNSCOP’s partition report and British withdrawal."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of the SS Exodus affair in July 1947 was an international outcry that swung UN investigators behind partitioning Palestine. When the Royal Navy forcibly boarded the ship at Haifa—watched first-hand by UNSCOP delegates—and returned 4,500 Holocaust survivors to camps in Germany, British moral authority collapsed, directly influencing UNSCOP’s recommendation for UN Resolution 181 partition.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): Haifa Boarding → UNSCOP Support for Partition (Res 181)",
+                "text": "One consequence of the SS Exodus affair in July 1947 was an international outcry that swung UN investigators behind partitioning Palestine. When the Royal Navy forcibly boarded the ship at Haifa—watched first-hand by UNSCOP delegates—and returned 4,500 Holocaust survivors to camps in Germany, British moral authority collapsed, directly influencing UNSCOP’s recommendation for UN Resolution 181 partition."
+              },
+              {
+                "label": "Option B (4/4): Collapse of British Public Support for the Mandate",
+                "text": "One consequence of the July 1947 SS Exodus crisis was a humiliating propaganda defeat that accelerated Britain’s desire to leave Palestine. Condemned across American and European newspapers for locking Holocaust survivors behind barbed wire in Hamburg while Zionist insurgents retaliated in Palestine, Clement Attlee’s cabinet resolved to end British rule by May 1948."
+              }
+            ]
+          }
+        }
       },
       {
         "id": "lesson_2_can_q3",
@@ -69,7 +103,7 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain the importance of Nasser's leadership of the Arab world for growing tension between Israel and Egypt in the years 1955–56.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n        Nasser’s emergence as the undisputed champion of pan-Arab nationalism was critically important for escalating Israeli-Egyptian tensions because it challenged Western dominance and intensified border militarisation.<br><br>\n        Firstly, Nasser’s determination to modernize Egypt’s military led directly to the <strong>Czech Arms Deal in September 1955</strong>. Frustrated by Western restrictions on weapons sales, Nasser bypassed the Tripartite Declaration and agreed to purchase over 200 Soviet MiG-15 jets and hundreds of tanks from Czechoslovakia in exchange for Egyptian cotton. This drastically altered the regional balance of power, sparking acute security panic in Israel, where Prime Minister David Ben-Gurion feared that Egypt would soon launch a war of annihilation once Egyptian pilots were trained on Soviet hardware.<br><br>\n        Secondly, Nasser actively supported <em>fedayeen</em> commando raids into southern Israel from the Egyptian-administered Gaza Strip, portraying himself as the protector of Palestinian refugees. Israel retaliated with massive military reprisals, most notably the February 1955 Gaza Raid. When the US subsequently withdrew funding for the Aswan High Dam, Nasser responded on 26 July 1956 by nationalising the Suez Canal and imposing a blockade on Israeli shipping through the Straits of Tiran. This direct economic strangulation of Israel's southern port of Eilat provided the decisive catalyst for Israel to conspire secretly with Britain and France in the <strong>Protocol of Sèvres</strong>, triggering the Suez War in October 1956.",
+        "modelAnswer": "Nasser’s emergence as the undisputed champion of pan-Arab nationalism was critically important for escalating Israeli-Egyptian tensions because it challenged Western dominance and intensified border militarisation.<br><br>\n        Firstly, Nasser’s determination to modernize Egypt’s military led directly to the <strong>Czech Arms Deal in September 1955</strong>. Frustrated by Western restrictions on weapons sales, Nasser bypassed the Tripartite Declaration and agreed to purchase over 200 Soviet MiG-15 jets and hundreds of tanks from Czechoslovakia in exchange for Egyptian cotton. This drastically altered the regional balance of power, sparking acute security panic in Israel, where Prime Minister David Ben-Gurion feared that Egypt would soon launch a war of annihilation once Egyptian pilots were trained on Soviet hardware.<br><br>\n        Secondly, Nasser actively supported <em>fedayeen</em> commando raids into southern Israel from the Egyptian-administered Gaza Strip, portraying himself as the protector of Palestinian refugees. Israel retaliated with massive military reprisals, most notably the February 1955 Gaza Raid. When the US subsequently withdrew funding for the Aswan High Dam, Nasser responded on 26 July 1956 by nationalising the Suez Canal and imposing a blockade on Israeli shipping through the Straits of Tiran. This direct economic strangulation of Israel's southern port of Eilat provided the decisive catalyst for Israel to conspire secretly with Britain and France in the <strong>Protocol of Sèvres</strong>, triggering the Suez War in October 1956.",
         "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
         "mockUrl": "/units/cme_new/cme_mock_radar.html"
       }
@@ -87,9 +121,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of the Cairo Conference (1964).",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "One consequence of the 1964 Cairo Conference was the unification of Palestinian resistance through the creation of the Palestine Liberation Organisation (PLO). Arab League heads of state established the PLO under the Palestinian National Charter, creating a dedicated political body and armed fedayeen factions like Yasser Arafat's Fatah to actively challenge Israeli sovereignty.",
+        "modelAnswer": "One consequence of the January 1964 Cairo Conference was the creation of the Palestine Liberation Organisation (PLO) and escalated guerrilla raids against Israel. By uniting Palestinian resistance under a National Charter alongside Yasser Arafat’s Fatah commandos, the summit sparked cross-border sabotage attacks from 1965 that directly provoked major IDF reprisals such as the November 1966 Samu raid.",
         "pdfUrl": "",
-        "mockUrl": "/units/cme_new/"
+        "mockUrl": "/units/cme_new/",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of the Cairo Conference in 1964 was that Arab leaders met together and decided to oppose Israel more strongly.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Vague assertion with no mention of the PLO, Headwater Diversion Plan, or border clashes."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of the January 1964 Cairo Conference was that Arab League leaders established the Palestine Liberation Organisation (PLO) and voted to divert the Jordan River headwaters.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Names the PLO and water diversion accurately, needing explanation of how this escalated armed border clashes by 1965–66."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of the January 1964 Cairo Conference was the creation of the Palestine Liberation Organisation (PLO) and escalated guerrilla raids against Israel. By uniting Palestinian resistance under a National Charter alongside Yasser Arafat’s Fatah commandos, the summit sparked cross-border sabotage attacks from 1965 that directly provoked major IDF reprisals such as the November 1966 Samu raid.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): Creation of PLO → Fedayeen Raids & 1966 Samu Reprisal",
+                "text": "One consequence of the January 1964 Cairo Conference was the creation of the Palestine Liberation Organisation (PLO) and escalated guerrilla raids against Israel. By uniting Palestinian resistance under a National Charter alongside Yasser Arafat’s Fatah commandos, the summit sparked cross-border sabotage attacks from 1965 that directly provoked major IDF reprisals such as the November 1966 Samu raid."
+              },
+              {
+                "label": "Option B (4/4): Headwater Diversion Plan → 1965–66 Syrian Border Clashes",
+                "text": "One consequence of the January 1964 Cairo Conference was armed confrontation along Israel’s northern border over shared Jordan River water. Voting to block Israel’s National Water Carrier by diverting the Banias and Hasbani rivers in Syria and Lebanon directly provoked Israeli tank and air strikes against Syrian diversion earthworks between 1965 and 1966."
+              }
+            ]
+          }
+        }
       },
       {
         "id": "cme_l4_extra_q2",
@@ -124,9 +192,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of the actions of Nasser in the period leading to war.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "One consequence of Nasser's actions in May 1967 was that it convinced Israeli leaders that an Arab invasion was imminent, prompting a pre-emptive strike. By expelling UN peacekeepers from Sinai and closing the Straits of Tiran to Israeli shipping at Sharm el-Sheikh, Nasser severed Israel's primary oil route, which Israel considered a casus belli (act of war) leading directly to Operation Focus on 5 June.",
+        "modelAnswer": "One consequence of Nasser’s actions in May 1967 was convincing Israeli leaders that war was unavoidable, triggering Israel’s pre-emptive strike on 5 June. By expelling UNEF peacekeepers from Sinai and closing the Straits of Tiran to Israeli shipping on 22 May, Nasser severed Israel’s southern oil lifeline and prompted Operation Focus.",
         "pdfUrl": "",
-        "mockUrl": "/units/cme_new/"
+        "mockUrl": "/units/cme_new/",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of Nasser’s actions before the Six-Day War was that Israel felt threatened and decided to attack Egypt first.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion without naming UNEF expulsion, the Straits of Tiran blockade, or Operation Focus."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of Nasser’s actions in May 1967 was that he marched 100,000 troops into Sinai, expelled UNEF peacekeepers, and blocked Israeli ships from using the Straits of Tiran.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Describes Nasser’s actions accurately, needing explicit causal link to Israel’s 5 June pre-emptive air strike."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of Nasser’s actions in May 1967 was convincing Israeli leaders that war was unavoidable, triggering Israel’s pre-emptive strike on 5 June. By expelling UNEF peacekeepers from Sinai and closing the Straits of Tiran to Israeli shipping on 22 May, Nasser severed Israel’s southern oil lifeline and prompted Operation Focus.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): Expelling UNEF & Tiran Blockade → 5 June Operation Focus",
+                "text": "One consequence of Nasser’s actions in May 1967 was convincing Israeli leaders that war was unavoidable, triggering Israel’s pre-emptive strike on 5 June. By expelling UNEF peacekeepers from Sinai and closing the Straits of Tiran to Israeli shipping on 22 May, Nasser severed Israel’s southern oil lifeline and prompted Operation Focus."
+              },
+              {
+                "label": "Option B (4/4): May 1967 Pact With Jordan → Multi-Front Encirclement Crisis",
+                "text": "One consequence of Nasser’s brinkmanship in late May 1967 was uniting Israel’s Arab neighbours into a multi-front military alliance. Signing the 30 May Joint Defence Pact placing King Hussein’s Jordanian army under Egyptian command convinced Israel’s cabinet—joined by Defence Minister Moshe Dayan—that delaying action risked coordinated invasion from Sinai, the West Bank, and Syria."
+              }
+            ]
+          }
+        }
       },
       {
         "id": "lesson_7_can_q3",
@@ -158,9 +260,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of UN Resolution 242.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "One consequence of UN Resolution 242 was that it created a diplomatic deadlock over 'Land for Peace'. Israel was asked to withdraw from occupied lands in exchange for Arab recognition, but neither side agreed, freezing the borders and directly causing the 1969 War of Attrition.",
+        "modelAnswer": "One consequence of UN Resolution 242 in November 1967 was a prolonged diplomatic stalemate over \"Land for Peace\" that fuelled the 1969–70 War of Attrition. Because the English text called for withdrawal from \"territories occupied\" rather than all territories while Arab states demanded full pre-war withdrawal first, borders froze along the Suez Canal until Egyptian artillery opened fire in 1969.",
         "pdfUrl": "",
-        "mockUrl": "/units/cme_new/"
+        "mockUrl": "/units/cme_new/",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of UN Resolution 242 was that Israel and the Arab states disagreed over what it meant, so no peace deal was signed.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). General statement without mentioning \"Land for Peace\", \"territories occupied\", or the PLO."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of UN Resolution 242 (November 1967) was that it set out the \"Land for Peace\" principle, asking Israel to withdraw from occupied land in return for Arab recognition.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Defines Resolution 242 accurately, needing explanation of why its wording produced deadlock or PLO rejection."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of UN Resolution 242 in November 1967 was a prolonged diplomatic stalemate over \"Land for Peace\" that fuelled the 1969–70 War of Attrition. Because the English text called for withdrawal from \"territories occupied\" rather than all territories while Arab states demanded full pre-war withdrawal first, borders froze along the Suez Canal until Egyptian artillery opened fire in 1969.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): \"Territories Occupied\" Deadlock → 1969 War of Attrition",
+                "text": "One consequence of UN Resolution 242 in November 1967 was a prolonged diplomatic stalemate over \"Land for Peace\" that fuelled the 1969–70 War of Attrition. Because the English text called for withdrawal from \"territories occupied\" rather than all territories while Arab states demanded full pre-war withdrawal first, borders froze along the Suez Canal until Egyptian artillery opened fire in 1969."
+              },
+              {
+                "label": "Option B (4/4): \"Refugee Problem\" Wording → PLO Rejection & Guerrilla Struggle",
+                "text": "One consequence of UN Resolution 242 was its outright rejection by the PLO and the radicalisation of independent Palestinian resistance. Because the resolution referred only to solving a \"refugee problem\" without mentioning Palestinian statehood, Yasser Arafat’s Fatah rejected UN diplomacy and escalated armed fedayeen attacks from Jordan."
+              }
+            ]
+          }
+        }
       },
       {
         "id": "lesson_8_can_q3",
@@ -177,7 +313,7 @@ export const MOCK_BANK_P1_P2 = {
           "UN Resolution 242"
         ],
         "sourceExtract": "",
-        "modelAnswer": "The chain of events began in June 1967 when Israel annexed East Jerusalem and occupied Sinai, Gaza, the West Bank, and the Golan Heights. This displacement of over 300,000 Palestinian refugees across the River Jordan directly created an acute humanitarian crisis that destabilised Jordan and made immediate Arab military retaliation a top priority.<br><br>This humiliation directly provoked Arab leaders to convene at the Khartoum Summit in August 1967. Rather than seeking compromise, the heads of state issued the uncompromising 'Three Noes' (no peace, no recognition, no negotiations). In direct response, both sides hardened their diplomatic stances, effectively blocking bilateral peace talks and entrenching military confrontation along the new ceasefire lines.<br><br>This diplomatic deadlock ultimately forced the United Nations to intervene in November 1967 by passing Resolution 242. British diplomats attempted to bridge the divide through the principle of 'Land for Peace'; however, deliberate linguistic ambiguity over 'territories occupied' allowed Israel to retain the lands while Arab states demanded total withdrawal first. Consequently, rather than resolving the dispute, Resolution 242 cemented an enduring geopolitical stalemate that governed Middle Eastern conflict for decades.",
+        "modelAnswer": "The chain of events began in June 1967 when Israel annexed East Jerusalem and occupied Sinai, Gaza, the West Bank, and the Golan Heights. This displacement of over 300,000 Palestinian refugees across the River Jordan directly created an acute humanitarian crisis that destabilised Jordan and made immediate Arab military retaliation a top priority.<br><br>This humiliation directly provoked Arab leaders to convene at the Khartoum Summit in late August–1 September 1967. Rather than seeking compromise, the heads of state issued the uncompromising 'Three Noes' (no peace, no recognition, no negotiations). In direct response, both sides hardened their diplomatic stances, effectively blocking bilateral peace talks and entrenching military confrontation along the new ceasefire lines.<br><br>This diplomatic deadlock ultimately forced the United Nations to intervene in November 1967 by passing Resolution 242. British diplomats attempted to bridge the divide through the principle of 'Land for Peace'; however, deliberate linguistic ambiguity over 'territories occupied' allowed Israel to retain the lands while Arab states demanded total withdrawal first. Consequently, rather than resolving the dispute, Resolution 242 cemented an enduring geopolitical stalemate that governed Middle Eastern conflict for decades.",
         "pdfUrl": "",
         "mockUrl": "/units/cme_new/"
       },
@@ -193,9 +329,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of Israel's consolidation of control of the occupied territories in the years immediately following 1967.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "<strong>Exemplar Model Answer (Level 2 — 4 Marks):</strong><br>\n      One significant consequence of Israel’s consolidation of control over the occupied territories after the Six Day War was the establishment of Israeli Jewish settlements across the West Bank, Gaza, and the Golan Heights, creating deep territorial and political friction with Palestinian residents. Following the 1967 victory, the Israeli government began expropriating land and providing state subsidies for Jewish civilian settlements, beginning with the Allon Plan which sought to create defensive security buffers along the Jordan Valley. As a direct result, over one million Palestinian Arabs were brought under strict Israeli military administration without political voting rights, while Jewish settlers established fortified towns and checkpoints. This permanently complicated future peace negotiations, as it altered the demographic map of the territories and fueled Palestinian resentment, creating the underlying grievances that later sparked the 1987 First Intifada.",
+        "modelAnswer": "One consequence of Israel’s consolidation of control over the occupied territories after June 1967 was deepening Palestinian resentment under military rule and expanding settlements. By annexing East Jerusalem and building fortified Allon Plan settlements across the Jordan Valley while governing over one million Palestinians without voting rights, Israel permanently complicated future \"Land for Peace\" talks.",
         "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
-        "mockUrl": "/units/cme_new/cme_mock_radar.html"
+        "mockUrl": "/units/cme_new/cme_mock_radar.html",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of Israel consolidating control over the occupied territories was that Jewish settlers moved in and Palestinians were angry.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple assertion without naming East Jerusalem, the Allon Plan, the Bar-Lev Line, or military administration."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of Israel’s consolidation of the occupied territories after 1967 was the building of Allon Plan settlements in the West Bank and military checkpoints governing one million Palestinians.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Specific factual detail, needing causal explanation of how settlements blocked peace talks or provoked resistance."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of Israel’s consolidation of control over the occupied territories after June 1967 was deepening Palestinian resentment under military rule and expanding settlements. By annexing East Jerusalem and building fortified Allon Plan settlements across the Jordan Valley while governing over one million Palestinians without voting rights, Israel permanently complicated future \"Land for Peace\" talks.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): Allon Plan Settlements & Military Rule Over Palestinians",
+                "text": "One consequence of Israel’s consolidation of control over the occupied territories after June 1967 was deepening Palestinian resentment under military rule and expanding settlements. By annexing East Jerusalem and building fortified Allon Plan settlements across the Jordan Valley while governing over one million Palestinians without voting rights, Israel permanently complicated future \"Land for Peace\" talks."
+              },
+              {
+                "label": "Option B (4/4): Fortified Frontiers → 1973 Arab Decision to Go to War",
+                "text": "One consequence of Israel fortifying the occupied territories after 1967 was convincing Egypt and Syria that diplomacy alone would never recover Sinai or the Golan Heights. Constructing the concrete Bar-Lev Line along the Suez Canal and Golan settlements persuaded Anwar Sadat to launch the October 1973 Yom Kippur offensive to break the stalemate."
+              }
+            ]
+          }
+        }
       }
     ],
     "lesson_7": [
@@ -211,9 +381,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of the PFLP airplane hijacks of 1970.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "One consequence of the September 1970 PFLP Dawson's Field airplane hijackings was King Hussein's military crackdown against Palestinian militias in Jordan. By landing three hijacked Western airliners in the Jordanian desert and blowing them up on international television, the PFLP humiliated the Jordanian monarchy, directly provoking King Hussein to declare martial law and launch the 'Black September' civil war to expel the fedayeen.",
+        "modelAnswer": "One consequence of the September 1970 PFLP airplane hijackings at Dawson’s Field was King Hussein’s full-scale military crackdown to expel the PLO from Jordan. By landing three hijacked Western airliners in the Jordanian desert and blowing them up on global television, the PFLP humiliated Hussein’s sovereignty, provoking \"Black September\" martial law and the PLO’s relocation to Lebanon.",
         "pdfUrl": "",
-        "mockUrl": "/units/cme_new/"
+        "mockUrl": "/units/cme_new/",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of the PFLP airplane hijackings in 1970 was that King Hussein got angry and fought the PLO in Jordan.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple statement lacking Dawson’s Field, three Western airliners, Black September martial law, or expulsion to Lebanon."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of the September 1970 hijackings was that after the PFLP blew up three Western airliners at Dawson’s Field, King Hussein ordered the Jordanian army to attack PLO bases.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual detail, needing developed explanation of the monarchy threat and expulsion of the PLO to Lebanon."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of the September 1970 PFLP airplane hijackings at Dawson’s Field was King Hussein’s full-scale military crackdown to expel the PLO from Jordan. By landing three hijacked Western airliners in the Jordanian desert and blowing them up on global television, the PFLP humiliated Hussein’s sovereignty, provoking \"Black September\" martial law and the PLO’s relocation to Lebanon.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): Dawson’s Field Blowups → Black September & Expulsion to Lebanon",
+                "text": "One consequence of the September 1970 PFLP airplane hijackings at Dawson’s Field was King Hussein’s full-scale military crackdown to expel the PLO from Jordan. By landing three hijacked Western airliners in the Jordanian desert and blowing them up on global television, the PFLP humiliated Hussein’s sovereignty, provoking \"Black September\" martial law and the PLO’s relocation to Lebanon."
+              },
+              {
+                "label": "Option B (4/4): International Spotlight & Tightened Airport Security",
+                "text": "One consequence of the September 1970 PFLP hijackings was forcing the Palestinian issue onto world news bulletins while hardening Western hostility toward terrorism. Holding hundreds of Western passengers hostage in the desert prompted governments worldwide to introduce armed sky marshals and mandatory airport X-ray screening while backing King Hussein against radical fedayeen."
+              }
+            ]
+          }
+        }
       },
       {
         "id": "cme_l7_extra_q2",
@@ -248,9 +452,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of Israel’s consolidation of control of the occupied territories.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "One consequence of Israel’s consolidation of the occupied territories was that it convinced Arab leaders that lost lands could only be recovered through military force. By building the fortified Bar-Lev Line along the Suez Canal and constructing permanent civilian settlements, Israel signalled it would never withdraw voluntarily, directly prompting Egyptian President Anwar Sadat to plan the 1973 Yom Kippur surprise attack.",
+        "modelAnswer": "One consequence of Israel’s consolidation of control of the occupied territories between 1967 and 1973 was convincing Anwar Sadat that only war could break the diplomatic freeze. Because Israel built the fortified Bar-Lev Line along the Suez Canal and rejected Sadat’s 1971 peace initiative, Egypt coordinated with Syria to launch the October 1973 Yom Kippur surprise attack.",
         "pdfUrl": "",
-        "mockUrl": "/units/cme_new/"
+        "mockUrl": "/units/cme_new/",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of Israel keeping firm control of the occupied territories was that Egypt decided to start another war to get its land back.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Vague statement without naming the Bar-Lev Line, civilian settlements, Sadat, or the 1973 Yom Kippur War."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of Israel’s consolidation of the occupied territories was the construction of the Bar-Lev Line along the Suez Canal and new Jewish settlements across Sinai, Gaza, and the Golan Heights.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual knowledge, needing causal link to why entrenchment drove Egypt and Syria to attack in October 1973."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of Israel’s consolidation of control of the occupied territories between 1967 and 1973 was convincing Anwar Sadat that only war could break the diplomatic freeze. Because Israel built the fortified Bar-Lev Line along the Suez Canal and rejected Sadat’s 1971 peace initiative, Egypt coordinated with Syria to launch the October 1973 Yom Kippur surprise attack.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): Bar-Lev Line & Rejected Talks → 1973 Yom Kippur Attack",
+                "text": "One consequence of Israel’s consolidation of control of the occupied territories between 1967 and 1973 was convincing Anwar Sadat that only war could break the diplomatic freeze. Because Israel built the fortified Bar-Lev Line along the Suez Canal and rejected Sadat’s 1971 peace initiative, Egypt coordinated with Syria to launch the October 1973 Yom Kippur surprise attack."
+              },
+              {
+                "label": "Option B (4/4): Israeli Military Complacency (\"The Concept\")",
+                "text": "One consequence of fortifying the occupied territories behind the Bar-Lev Line and Golan defences was dangerous military overconfidence among Israeli leaders before October 1973. Believing Egypt dared not cross the Suez Canal without long-range bombers, Prime Minister Golda Meir’s government misread Arab troop movements and suffered heavy initial losses on 6 October 1973."
+              }
+            ]
+          }
+        }
       },
       {
         "id": "lesson_10_can_q3",
@@ -285,9 +523,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of the 1973 OPEC oil embargo for American foreign policy in the Middle East.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "One consequence of the 1973 OPEC oil embargo was that it forced the United States to abandon its passive stance and actively mediate Middle Eastern diplomacy. Because quadrupled crude oil prices and fuel shortages caused severe domestic economic stagflation, Secretary of State Henry Kissinger launched intensive 'shuttle diplomacy' to broker disengagement agreements and prevent future Arab-Israeli wars.",
+        "modelAnswer": "One consequence of the 1973 OPEC oil embargo for US foreign policy was forcing Washington to mediate Arab-Israeli disengagement actively to protect Western economies. Because Arab oil cuts and quadrupled crude prices ($3 to $12 a barrel) caused severe American fuel shortages, Secretary of State Henry Kissinger launched intensive 1974–75 \"shuttle diplomacy\" between Cairo, Tel Aviv, and Damascus.",
         "pdfUrl": "",
-        "mockUrl": "/units/cme_new/"
+        "mockUrl": "/units/cme_new/",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of the 1973 oil crisis was that petrol prices rose in America, so the US government got more involved in Middle East peace talks.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). General statement lacking OPEC embargo details, quadrupled oil prices, or Kissinger’s shuttle diplomacy."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of the October 1973 OPEC oil embargo was that Arab states banned oil sales to the USA, quadrupling oil prices and prompting Henry Kissinger to begin shuttle diplomacy.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual detail, needing explicit explanation of why economic shock shifted US policy toward pressuring Israel for disengagement."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of the 1973 OPEC oil embargo for US foreign policy was forcing Washington to mediate Arab-Israeli disengagement actively to protect Western economies. Because Arab oil cuts and quadrupled crude prices ($3 to $12 a barrel) caused severe American fuel shortages, Secretary of State Henry Kissinger launched intensive 1974–75 \"shuttle diplomacy\" between Cairo, Tel Aviv, and Damascus.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): Quadrupled Oil Prices → Kissinger’s 1974–75 Shuttle Diplomacy",
+                "text": "One consequence of the 1973 OPEC oil embargo for US foreign policy was forcing Washington to mediate Arab-Israeli disengagement actively to protect Western economies. Because Arab oil cuts and quadrupled crude prices ($3 to $12 a barrel) caused severe American fuel shortages, Secretary of State Henry Kissinger launched intensive 1974–75 \"shuttle diplomacy\" between Cairo, Tel Aviv, and Damascus."
+              },
+              {
+                "label": "Option B (4/4): US Pressure on Israel & Courting Sadat Away From Moscow",
+                "text": "One consequence of the 1973 oil embargo was Washington pressuring Israel into Sinai territorial pullbacks to win Egypt over from Soviet influence and lift the embargo. By brokering Sinai I (1974) and Sinai II (1975) backed by billions in US aid, Kissinger persuaded OPEC to end the embargo in March 1974 and drew Sadat into America’s diplomatic orbit."
+              }
+            ]
+          }
+        }
       },
       {
         "id": "lesson_11_can_q2",
@@ -301,9 +573,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of Anwar Sadat’s visit to Jerusalem in November 1977.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "One consequence of Anwar Sadat’s visit to Jerusalem in November 1977 was that it shattered thirty years of psychological enmity and opened direct bilateral peace negotiations. By addressing the Israeli Knesset in person and declaring 'no more war', Sadat bypassed deadlocked international conferences, directly creating the diplomatic trust that enabled President Jimmy Carter to convene the 1978 Camp David summit.",
+        "modelAnswer": "One consequence of Anwar Sadat’s visit to Jerusalem in November 1977 was breaking thirty years of psychological hostility to open direct peace talks culminating at Camp David. By addressing the Israeli Knesset in person and declaring \"no more war\", Sadat prompted Menachem Begin’s return visit to Ismailia and enabled President Carter’s September 1978 Camp David summit.",
         "pdfUrl": "",
-        "mockUrl": "/units/cme_new/"
+        "mockUrl": "/units/cme_new/",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of Sadat visiting Jerusalem in 1977 was that Israel and Egypt started talking directly to each other about peace.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple statement lacking Knesset speech details, Begin’s Ismailia visit, Camp David, or Arab backlash."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of Sadat’s November 1977 visit to Jerusalem was that he spoke to the Israeli Knesset offering peace, which led Menachem Begin to visit Egypt in December 1977.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual detail, needing causal link to unlocking Carter’s 1978 Camp David summit."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of Anwar Sadat’s visit to Jerusalem in November 1977 was breaking thirty years of psychological hostility to open direct peace talks culminating at Camp David. By addressing the Israeli Knesset in person and declaring \"no more war\", Sadat prompted Menachem Begin’s return visit to Ismailia and enabled President Carter’s September 1978 Camp David summit.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): Knesset Speech → Ismailia Talks & Sept 1978 Camp David Summit",
+                "text": "One consequence of Anwar Sadat’s visit to Jerusalem in November 1977 was breaking thirty years of psychological hostility to open direct peace talks culminating at Camp David. By addressing the Israeli Knesset in person and declaring \"no more war\", Sadat prompted Menachem Begin’s return visit to Ismailia and enabled President Carter’s September 1978 Camp David summit."
+              },
+              {
+                "label": "Option B (4/4): Outrage Across Hardline Arab States",
+                "text": "One consequence of Sadat’s November 1977 trip to Jerusalem was immediate diplomatic fury across the Arab world before any treaty was even signed. Accusing Sadat of breaking Arab unity and abandoning the PLO, Syria, Libya, Iraq, and Arafat formed the December 1977 Tripoli \"Steadfastness Front\" to freeze relations with Cairo."
+              }
+            ]
+          }
+        }
       },
       {
         "id": "lesson_11_can_q3",
@@ -354,7 +660,7 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain the importance of Arafat's speech to the UN (1974) for international recognition of the Palestinian cause.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n        Yasser Arafat’s address to the United Nations General Assembly on 13 November 1974 was of paramount importance because it fundamentally shifted international perception of the Palestinian conflict from a humanitarian refugee dilemma into a legitimate national self-determination struggle.<br><br>\n        Firstly, the speech provided the PLO with unprecedented global diplomatic legitimacy. Arafat became the first representative of a non-state entity to address the General Assembly, invited following the Arab League’s Rabat Summit declaration that the PLO was the 'sole legitimate representative of the Palestinian people'. Wearing a holster and carrying an olive branch, Arafat famously concluded: <em>'I have come bearing an olive branch and a freedom fighter’s gun. Do not let the olive branch fall from my hand.'</em> This iconic imagery resonated powerfully across the Non-Aligned Movement and the Communist bloc.<br><br>\n        Secondly, the immediate consequence was <strong>UN Resolution 3236 and 3237</strong>, which reaffirmed the inalienable rights of the Palestinian people to self-determination, national independence, and sovereignty in Palestine, while granting the PLO official Permanent Observer status at the UN. This diplomatic breakthrough marginalized extreme rejectionist groups by showing that political diplomacy could achieve global standing, establishing a foundation that later allowed the PLO to negotiate bilaterally with the United States and Israel during the 1993 Oslo Peace Process.",
+        "modelAnswer": "Yasser Arafat’s address to the United Nations General Assembly on 13 November 1974 was of paramount importance because it fundamentally shifted international perception of the Palestinian conflict from a humanitarian refugee dilemma into a legitimate national self-determination struggle.<br><br>\n        Firstly, the speech provided the PLO with unprecedented global diplomatic legitimacy. Arafat became the first representative of a non-state entity to address the General Assembly, invited following the Arab League’s Rabat Summit declaration that the PLO was the 'sole legitimate representative of the Palestinian people'. Wearing a holster and carrying an olive branch, Arafat famously concluded: <em>'I have come bearing an olive branch and a freedom fighter’s gun. Do not let the olive branch fall from my hand.'</em> This iconic imagery resonated powerfully across the Non-Aligned Movement and the Communist bloc.<br><br>\n        Secondly, the immediate consequence was <strong>UN Resolution 3236 and 3237</strong>, which reaffirmed the inalienable rights of the Palestinian people to self-determination, national independence, and sovereignty in Palestine, while granting the PLO official Permanent Observer status at the UN. This diplomatic breakthrough marginalized extreme rejectionist groups by showing that political diplomacy could achieve global standing, establishing a foundation that later allowed the PLO to negotiate bilaterally with the United States and Israel during the 1993 Oslo Peace Process.",
         "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
         "mockUrl": "/units/cme_new/cme_mock_radar.html"
       },
@@ -370,9 +676,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of Operation Litani in March 1978.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "One consequence of Operation Litani in March 1978 was the creation of a UNIFIL buffer zone that failed to stop cross-border rocket fire, paving the way for Israel’s full-scale June 1982 invasion of Lebanon. Although 25,000 IDF troops pushed to the Litani River and UN Resolution 425 deployed peacekeepers alongside the South Lebanon Army, PLO fighters retreated north intact and resumed shelling Galilee, convincing Begin and Ariel Sharon to target Beirut directly in 1982.",
+        "modelAnswer": "One consequence of Operation Litani in March 1978 was the creation of a UNIFIL buffer zone that failed to stop cross-border rocket fire, paving the way for Israel’s June 1982 invasion of Lebanon. Although 25,000 IDF troops pushed to the Litani River and UN Resolution 425 deployed peacekeepers, PLO fighters retreated north intact and resumed shelling Galilee.",
         "pdfUrl": "",
-        "mockUrl": "/units/cme_new/"
+        "mockUrl": "/units/cme_new/",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of Operation Litani in 1978 was that the UN sent peacekeepers into southern Lebanon, but fighting carried on later.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). General statement without 25,000 IDF troops, the Litani River, UNIFIL/Resolution 425, or the 1982 invasion."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of Operation Litani in March 1978 was UN Security Council Resolution 425, which set up UNIFIL peacekeepers in southern Lebanon as Israeli troops withdrew.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual knowledge, needing causal link to why PLO survival north of the Litani led to Israel’s 1982 invasion."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of Operation Litani in March 1978 was the creation of a UNIFIL buffer zone that failed to stop cross-border rocket fire, paving the way for Israel’s June 1982 invasion of Lebanon. Although 25,000 IDF troops pushed to the Litani River and UN Resolution 425 deployed peacekeepers, PLO fighters retreated north intact and resumed shelling Galilee.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): Incomplete UNIFIL Buffer → June 1982 Invasion of Lebanon",
+                "text": "One consequence of Operation Litani in March 1978 was the creation of a UNIFIL buffer zone that failed to stop cross-border rocket fire, paving the way for Israel’s June 1982 invasion of Lebanon. Although 25,000 IDF troops pushed to the Litani River and UN Resolution 425 deployed peacekeepers, PLO fighters retreated north intact and resumed shelling Galilee."
+              },
+              {
+                "label": "Option B (4/4): Heavy Displacement & South Lebanon Militia Buffer",
+                "text": "One consequence of Operation Litani in March 1978 was severe civilian displacement in southern Lebanon and Israeli backing for Major Saad Haddad’s Christian South Lebanon Army. Seven days of artillery and air strikes killed over 1,100 people and displaced 200,000 Lebanese and Palestinian residents, deepening sectarian resentment along Israel’s northern frontier."
+              }
+            ]
+          }
+        }
       },
       {
         "id": "lesson_12_can_q4",
@@ -423,9 +763,43 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain one consequence of the secret Oslo back-channel negotiations in 1993.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "One consequence of the secret Oslo back-channel negotiations in 1993 was mutual Israel–PLO recognition and the signing of the Declaration of Principles (Oslo I), which established the Palestinian National Authority in 1994. After Prime Minister Yitzhak Rabin and Yasser Arafat exchanged Letters of Mutual Recognition and signed Oslo I on the White House lawn in September 1993, Israeli troops withdrew from Gaza and Jericho so the new PNA could begin Palestinian self-rule.",
+        "modelAnswer": "One consequence of the secret Oslo back-channel negotiations in 1993 was mutual Israel–PLO recognition and the Oslo I Accord, which established the Palestinian National Authority in 1994. After Yitzhak Rabin and Yasser Arafat exchanged Letters of Mutual Recognition and signed Oslo I on the White House lawn in September 1993, Israeli troops withdrew from Gaza and Jericho.",
         "pdfUrl": "",
-        "mockUrl": "/units/cme_new/"
+        "mockUrl": "/units/cme_new/",
+        "model_tiers": {
+          "tier_1m": {
+            "title": "1/4 Assertion",
+            "score": "1 / 4 Marks",
+            "level": "Level 1 Bottom (Assertion)",
+            "text": "One consequence of the secret Oslo talks in 1993 was that Israel and the PLO signed a peace deal and shook hands at the White House.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 0 (0 marks). Simple statement lacking Letters of Mutual Recognition, Gaza–Jericho withdrawal, or creation of the PNA."
+          },
+          "tier_2m": {
+            "title": "2/4 Basic Knowledge",
+            "score": "2 / 4 Marks",
+            "level": "Level 1 Top (Supported Statement)",
+            "text": "One consequence of the 1993 secret Oslo negotiations was that Rabin and Arafat recognised each other officially and signed the Declaration of Principles (Oslo I) in September 1993.",
+            "verdict": "AO2 Level 1 (1 mark) • AO1 Level 1 (1 mark). Accurate factual detail, needing causal link to the 1994 creation of the PNA and Palestinian self-rule in Gaza and Jericho."
+          },
+          "tier_4m": {
+            "title": "4/4 Grade 9 Exam ★",
+            "score": "4 / 4 Marks",
+            "level": "Level 2 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One consequence of the secret Oslo back-channel negotiations in 1993 was mutual Israel–PLO recognition and the Oslo I Accord, which established the Palestinian National Authority in 1994. After Yitzhak Rabin and Yasser Arafat exchanged Letters of Mutual Recognition and signed Oslo I on the White House lawn in September 1993, Israeli troops withdrew from Gaza and Jericho.",
+            "verdict": "AO2 Level 2: 2m • AO1 Level 2: 2m. Develops ONE focused consequence in two crisp sentences with precise historical evidence and an explicit causal outcome.",
+            "options": [
+              {
+                "label": "Option A (4/4): Mutual Recognition & Oslo I → 1994 Creation of the PNA",
+                "text": "One consequence of the secret Oslo back-channel negotiations in 1993 was mutual Israel–PLO recognition and the Oslo I Accord, which established the Palestinian National Authority in 1994. After Yitzhak Rabin and Yasser Arafat exchanged Letters of Mutual Recognition and signed Oslo I on the White House lawn in September 1993, Israeli troops withdrew from Gaza and Jericho."
+              },
+              {
+                "label": "Option B (4/4): Deferred Final-Status Issues → Extremist Violent Backlash",
+                "text": "One consequence of the secret 1993 Oslo breakthrough was fierce violent opposition from rejectionists on both sides determined to derail phased peace. Because Oslo I postponed Jerusalem, settlements, and refugees while ceding land, Hamas launched deadly suicide bus bombings while Israeli far-right fury against Rabin culminated in his November 1995 assassination."
+              }
+            ]
+          }
+        }
       },
       {
         "id": "lesson_13_can_q4",
@@ -455,7 +829,7 @@ export const MOCK_BANK_P1_P2 = {
         "questionText": "Explain the importance of the end of the Cold War and the Gulf War (1991) for superpower peace efforts in the Middle East.",
         "stimulus": [],
         "sourceExtract": "",
-        "modelAnswer": "<strong>Exemplar Model Answer (Level 3 — 8 Marks):</strong><br>\n        The confluence of the Cold War’s end and the 1991 Gulf War was decisive in creating an unprecedented diplomatic window that forced both Arab states and Israel to the negotiating table.<br><br>\n        Firstly, the collapse of the Soviet Union eliminated the primary military and diplomatic sponsor of radical Arab regimes like Syria and the PLO. Without Soviet subsidies and weaponry, Arab states could no longer contemplate military parity with Israel. Furthermore, the massive exodus of over 400,000 Soviet Jews immigrating to Israel in the early 1990s strained Israel’s economy, making Prime Minister Yitzhak Shamir heavily reliant on $10 billion in US loan guarantees, which President George H.W. Bush threatened to withhold unless Israel agreed to attend international peace talks.<br><br>\n        Secondly, the 1991 Gulf War transformed regional alliances. When Saddam Hussein invaded Kuwait, the US built a coalition that included Arab states such as Egypt, Saudi Arabia, and Syria. To reward these Arab allies and disprove accusations of double standards, US President Bush and Secretary of State James Baker committed to resolving the Arab-Israeli conflict immediately following the liberation of Kuwait. Meanwhile, the PLO had disastrously backed Saddam Hussein, resulting in the expulsion of 300,000 Palestinians from Kuwait and the cut-off of Gulf financial aid, leaving Arafat isolated and desperate for a diplomatic breakthrough. This unique superpower leverage led directly to the convening of the <strong>Madrid Peace Conference in October 1991</strong>, where Israeli and Arab delegates sat face-to-face for the first time in history.",
+        "modelAnswer": "The confluence of the Cold War’s end and the 1991 Gulf War was decisive in creating an unprecedented diplomatic window that forced both Arab states and Israel to the negotiating table.<br><br>\n        Firstly, the collapse of the Soviet Union eliminated the primary military and diplomatic sponsor of radical Arab regimes like Syria and the PLO. Without Soviet subsidies and weaponry, Arab states could no longer contemplate military parity with Israel. Furthermore, the massive exodus of over 400,000 Soviet Jews immigrating to Israel in the early 1990s strained Israel’s economy, making Prime Minister Yitzhak Shamir heavily reliant on $10 billion in US loan guarantees, which President George H.W. Bush threatened to withhold unless Israel agreed to attend international peace talks.<br><br>\n        Secondly, the 1991 Gulf War transformed regional alliances. When Saddam Hussein invaded Kuwait, the US built a coalition that included Arab states such as Egypt, Saudi Arabia, and Syria. To reward these Arab allies and disprove accusations of double standards, US President Bush and Secretary of State James Baker committed to resolving the Arab-Israeli conflict immediately following the liberation of Kuwait. Meanwhile, the PLO had disastrously backed Saddam Hussein, resulting in the expulsion of 300,000 Palestinians from Kuwait and the cut-off of Gulf financial aid, leaving Arafat isolated and desperate for a diplomatic breakthrough. This unique superpower leverage led directly to the convening of the <strong>Madrid Peace Conference in October 1991</strong>, where Israeli and Arab delegates sat face-to-face for the first time in history.",
         "pdfUrl": "/pdfs/mocks/cme_new/cme_mock_radar.pdf",
         "mockUrl": "/units/cme_new/cme_mock_radar.html"
       }
@@ -478,7 +852,7 @@ export const MOCK_BANK_P1_P2 = {
           "Galen and the Christian worldview"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason the Catholic Church held immense influence was its <strong>monopoly over education and book production</strong>. In monastic scriptoria, monks hand-copied all manuscripts, allowing the Church to censor texts that contradicted scripture. Furthermore, universities were run by clergy, teaching medical students to memorise ancient authorities rather than conduct practical examinations. Therefore, this led to Church dominance over medical ideas because physicians were trained only in Church-approved doctrines and never investigated physical causes independently.<br><br>Furthermore, the Church promoted <strong>Galen's anatomical theories within a Christian worldview</strong>. Although Galen was pagan, his belief that the human body was designed by a single Creator aligned with Catholic theology. The Church declared Galen infallible, teaching that dissections served only to demonstrate his perfection. Therefore, this caused Galen's medical ideas to be accepted as unquestionable doctrine because challenging his anatomy was treated as challenging God's divine creation.<br><br>In addition, the Church dominated ideas because society believed <strong>disease was divine punishment for sin</strong>. Priests taught that epidemics like the 1348 Black Death were sent by God, making repentance the only cure. Questioning supernatural causes was punished as heresy; in 1277, Roger Bacon was imprisoned for advocating scientific observation. Therefore, this reinforced the Church's total influence over ideas about disease because ordinary people and physicians believed seeking physical cures was futile without seeking divine forgiveness.",
+        "modelAnswer": "One major reason the Catholic Church held immense influence was its <strong>monopoly over education and book production</strong>. In monastic scriptoria, monks hand-copied all Latin manuscripts, allowing Church authorities to preserve favoured works and censor texts that contradicted scripture. Furthermore, clerical professors ran medieval universities such as Oxford and Paris, training medical students to memorise approved ancient authorities rather than examine patients independently, ensuring licensed physicians only ever diagnosed within Church-sanctioned frameworks.<br><br>Furthermore, the Church actively promoted <strong>Galen’s anatomical theories within a Christian worldview</strong>. Although Claudius Galen was a pagan Roman, his argument that every human organ was designed by a single purposeful Creator aligned neatly with Catholic creation theology. Declaring Galen practically infallible meant rare university dissections were staged solely to illustrate his texts, turning any anatomical challenge to Galen into an attack on God’s divine design.<br><br>In addition, Church authority dominated causal beliefs because medieval Christians were taught from every parish pulpit that <strong>disease was divine punishment for human sin</strong>. Priests preached that pestilences like the 1348 Black Death were sent by God to test faith or purge wickedness, making prayer, fasting, and pilgrimage more urgent than earthly investigation—and when Franciscan friar Roger Bacon advocated experimental science around 1277, his imprisonment warned scholars that questioning Church orthodoxy risked heresy.",
         "pdfUrl": "",
         "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
@@ -501,8 +875,8 @@ export const MOCK_BANK_P1_P2 = {
             "score": "12 / 12 Marks",
             "level": "Level 4 Top (Pearson Exam Standard)",
             "badge": "Edexcel Benchmark",
-            "text": "One major reason the Catholic Church held immense influence was its <strong>monopoly over education and book production</strong>. In monastic scriptoria, monks hand-copied all manuscripts, allowing the Church to censor texts that contradicted scripture. Furthermore, universities were run by clergy, teaching medical students to memorise ancient authorities rather than conduct practical examinations. Therefore, this led to Church dominance over medical ideas because physicians were trained only in Church-approved doctrines and never investigated physical causes independently.<br><br>Furthermore, the Church promoted <strong>Galen's anatomical theories within a Christian worldview</strong>. Although Galen was pagan, his belief that the human body was designed by a single Creator aligned with Catholic theology. The Church declared Galen infallible, teaching that dissections served only to demonstrate his perfection. Therefore, this caused Galen's medical ideas to be accepted as unquestionable doctrine because challenging his anatomy was treated as challenging God's divine creation.<br><br>In addition, the Church dominated ideas because society believed <strong>disease was divine punishment for sin</strong>. Priests taught that epidemics like the 1348 Black Death were sent by God, making repentance the only cure. Questioning supernatural causes was punished as heresy; in 1277, Roger Bacon was imprisoned for advocating scientific observation. Therefore, this reinforced the Church's total influence over ideas about disease because ordinary people and physicians believed seeking physical cures was futile without seeking divine forgiveness.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+            "text": "One major reason the Catholic Church held immense influence was its <strong>monopoly over education and book production</strong>. In monastic scriptoria, monks hand-copied all Latin manuscripts, allowing Church authorities to preserve favoured works and censor texts that contradicted scripture. Furthermore, clerical professors ran medieval universities such as Oxford and Paris, training medical students to memorise approved ancient authorities rather than examine patients independently, ensuring licensed physicians only ever diagnosed within Church-sanctioned frameworks.<br><br>Furthermore, the Church actively promoted <strong>Galen’s anatomical theories within a Christian worldview</strong>. Although Claudius Galen was a pagan Roman, his argument that every human organ was designed by a single purposeful Creator aligned neatly with Catholic creation theology. Declaring Galen practically infallible meant rare university dissections were staged solely to illustrate his texts, turning any anatomical challenge to Galen into an attack on God’s divine design.<br><br>In addition, Church authority dominated causal beliefs because medieval Christians were taught from every parish pulpit that <strong>disease was divine punishment for human sin</strong>. Priests preached that pestilences like the 1348 Black Death were sent by God to test faith or purge wickedness, making prayer, fasting, and pilgrimage more urgent than earthly investigation—and when Franciscan friar Roger Bacon advocated experimental science around 1277, his imprisonment warned scholars that questioning Church orthodoxy risked heresy.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within crisp exam length (213 words), structured in sustained analytical paragraphs with precise historical evidence and direct causal clinchers."
           }
         }
       },
@@ -555,7 +929,7 @@ export const MOCK_BANK_P1_P2 = {
           "Lack of practical human dissection"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason Galen's ideas endured was the <strong>Catholic Church's active endorsement of his monotheism</strong>. Galen argued that every organ was designed for a purpose by a divine Creator, aligning with Christian theology. Because the Church controlled university curricula and book copying, it declared Galen infallible and outlawed criticism of his texts. Therefore, this led to Galen's ideas being preserved for centuries because the Church made his medical teachings the mandatory foundation of all licensed medical education.<br><br>Furthermore, Galen's ideas persisted due to the <strong>severe lack of practical human dissection</strong>. Catholic authorities restricted human dissection, forcing scholars to rely on ancient books. When annual dissections occurred, barber-surgeons cut while professors read Galen aloud; any anatomical mismatch was blamed on a deformed corpse. Therefore, this caused Galen's anatomical mistakes to remain unchallenged because physicians never had the practical opportunity to examine and map internal human anatomy for themselves.<br><br>In addition, Galen was believed because his <strong>Theory of Opposites provided a logical, practical clinical system</strong>. Expanding Hippocrates' Four Humours, Galen taught that illness stemmed from humoural imbalances treatable by opposites, such as hot pepper for cold phlegm. This gave doctors a systematic method to explain symptoms and prescribe clear treatments. Therefore, this ensured Galen's ideas continued to be believed because his humoural system offered an accessible, common-sense explanation for illness that seemed to explain every symptom.",
+        "modelAnswer": "One major reason Galen’s ideas continued to be believed was the <strong>Catholic Church’s active endorsement of his monotheism</strong>. Galen wrote that every bodily structure had been crafted for a clear purpose by a single divine Creator, fitting Christian scripture closely. Because the Church controlled monastic book-copying and university medical faculties across Europe, professors taught Galen’s Latin treatises as unquestionable truth and treated criticism of his texts as near-heresy.<br><br>Furthermore, Galen’s errors survived unchallenged due to the <strong>severe lack of practical human dissection</strong>. Medieval religious sensibilities discouraged cutting open human corpses, forcing scholars to rely on Galen’s ancient animal-based descriptions. On the rare occasions when universities dissected an executed criminal, a lowly barber-surgeon cut below while a professor read Galen aloud from a high lectern, blaming any mismatch—such as the jawbone or liver lobes—on a deformed criminal body rather than admitting Galen had erred.<br><br>In addition, Galen remained trusted because his <strong>Theory of Opposites offered a logical, reassuring bedside system</strong>. Building on Hippocrates’ Four Humours, Galen taught that every illness stemmed from excess blood, phlegm, yellow bile, or black bile and could be rebalanced using contraries—such as hot pepper for a cold, wet chill or cucumber for a hot fever—giving physicians and patients a coherent, common-sense explanation for every symptom.",
         "pdfUrl": "",
         "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
@@ -578,8 +952,8 @@ export const MOCK_BANK_P1_P2 = {
             "score": "12 / 12 Marks",
             "level": "Level 4 Top (Pearson Exam Standard)",
             "badge": "Edexcel Benchmark",
-            "text": "One major reason Galen's ideas endured was the <strong>Catholic Church's active endorsement of his monotheism</strong>. Galen argued that every organ was designed for a purpose by a divine Creator, aligning with Christian theology. Because the Church controlled university curricula and book copying, it declared Galen infallible and outlawed criticism of his texts. Therefore, this led to Galen's ideas being preserved for centuries because the Church made his medical teachings the mandatory foundation of all licensed medical education.<br><br>Furthermore, Galen's ideas persisted due to the <strong>severe lack of practical human dissection</strong>. Catholic authorities restricted human dissection, forcing scholars to rely on ancient books. When annual dissections occurred, barber-surgeons cut while professors read Galen aloud; any anatomical mismatch was blamed on a deformed corpse. Therefore, this caused Galen's anatomical mistakes to remain unchallenged because physicians never had the practical opportunity to examine and map internal human anatomy for themselves.<br><br>In addition, Galen was believed because his <strong>Theory of Opposites provided a logical, practical clinical system</strong>. Expanding Hippocrates' Four Humours, Galen taught that illness stemmed from humoural imbalances treatable by opposites, such as hot pepper for cold phlegm. This gave doctors a systematic method to explain symptoms and prescribe clear treatments. Therefore, this ensured Galen's ideas continued to be believed because his humoural system offered an accessible, common-sense explanation for illness that seemed to explain every symptom.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (227 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+            "text": "One major reason Galen’s ideas continued to be believed was the <strong>Catholic Church’s active endorsement of his monotheism</strong>. Galen wrote that every bodily structure had been crafted for a clear purpose by a single divine Creator, fitting Christian scripture closely. Because the Church controlled monastic book-copying and university medical faculties across Europe, professors taught Galen’s Latin treatises as unquestionable truth and treated criticism of his texts as near-heresy.<br><br>Furthermore, Galen’s errors survived unchallenged due to the <strong>severe lack of practical human dissection</strong>. Medieval religious sensibilities discouraged cutting open human corpses, forcing scholars to rely on Galen’s ancient animal-based descriptions. On the rare occasions when universities dissected an executed criminal, a lowly barber-surgeon cut below while a professor read Galen aloud from a high lectern, blaming any mismatch—such as the jawbone or liver lobes—on a deformed criminal body rather than admitting Galen had erred.<br><br>In addition, Galen remained trusted because his <strong>Theory of Opposites offered a logical, reassuring bedside system</strong>. Building on Hippocrates’ Four Humours, Galen taught that every illness stemmed from excess blood, phlegm, yellow bile, or black bile and could be rebalanced using contraries—such as hot pepper for a cold, wet chill or cucumber for a hot fever—giving physicians and patients a coherent, common-sense explanation for every symptom.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within crisp exam length (212 words), structured in sustained analytical paragraphs with precise historical evidence and direct causal clinchers."
           }
         }
       }
@@ -616,7 +990,7 @@ export const MOCK_BANK_P1_P2 = {
           "Bloodletting (phlebotomy) and purging"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One primary reason treatments focused on humoural balance was the <strong>practical application of Galen's Theory of Opposites</strong>. Physicians believed the body was governed by blood, phlegm, black bile, and yellow bile, carrying opposing qualities of heat, cold, wetness, and dryness. Under Galen's rules, a patient suffering from a cold, wet fever was prescribed hot, dry remedies like pepper or radish to counteract the humoural excess. Therefore, this caused treatments to focus on humoural balance because physicians believed opposing qualities could directly neutralise excess bodily fluids.<br><br>Furthermore, humoural balancing was reinforced through <strong>invasive physical procedures like bloodletting and purging</strong>. Barber-surgeons used vein-man phlebotomy charts to bleed patients via incisions, cupping, or leeches to remove excess blood, the most dangerous humour. Similarly, physicians prescribed violent emetics and laxatives to expel corrupt yellow and black bile. Therefore, this forced medieval healers to concentrate on humoural balance because removing excess blood or bile was seen as the only practical way to extract corrupt humours.<br><br>In addition, humoural treatments dominated because <strong>university-trained physicians relied entirely on diagnostic charts and astrology</strong>. Doctors inspected urine against colour charts and consulted zodiac horoscopes to calculate planetary humoural influences. Because classical Hippocratic-Galenic doctrine was taught as infallible in universities, alternative physical treatments were never developed. Therefore, this led to total reliance on humoural balancing treatments because licensed medieval physicians were legally and academically bound to follow classical humoural dogma.",
+        "modelAnswer": "One primary reason medieval treatments focused on restoring humoral balance was the <strong>universal authority of Galen’s Theory of Opposites</strong>. Educated physicians believed good health depended on equilibrium among blood, phlegm, yellow bile, and black bile, each carrying qualities of heat, cold, wetness, or dryness. Under Galen’s rule that contraries cure contraries, doctors treated a cold, moist winter chill with warming pepper or spiced wine and cooled hot fevers with cucumber, focusing every prescription on counteracting internal fluid excess.<br><br>Furthermore, humoral balancing dominated everyday practice through <strong>visible physical evacuation via bloodletting and purging</strong>. Guided by painted vein-man phlebotomy charts, barber-surgeons opened specific veins, applied heated cups, or attached leeches to drain ‘corrupt’ or excessive blood, while apothecaries mixed herbal emetics and laxatives such as scammony to flush out yellow and black bile. Seeing blood or bile physically leave the patient convinced practitioners and sufferers alike that toxic humours were being actively removed.<br><br>In addition, humoral treatments went unchallenged because <strong>university diagnostic tools and medical astrology locked physicians into humoral thinking</strong>. Doctors diagnosed illness by matching a patient’s urine flask (<em>matula</em>) against twenty-shade humoral urine wheels and checking Zodiac Man almanacs for safe planetary bleeding times; bound by seven-to-ten-year Latin university degrees grounded solely in Hippocrates and Galen, licensed physicians neither sought nor knew any non-humoral therapy.",
         "pdfUrl": "",
         "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
@@ -639,8 +1013,8 @@ export const MOCK_BANK_P1_P2 = {
             "score": "12 / 12 Marks",
             "level": "Level 4 Top (Pearson Exam Standard)",
             "badge": "Edexcel Benchmark",
-            "text": "One primary reason treatments focused on humoural balance was the <strong>practical application of Galen's Theory of Opposites</strong>. Physicians believed the body was governed by blood, phlegm, black bile, and yellow bile, carrying opposing qualities of heat, cold, wetness, and dryness. Under Galen's rules, a patient suffering from a cold, wet fever was prescribed hot, dry remedies like pepper or radish to counteract the humoural excess. Therefore, this caused treatments to focus on humoural balance because physicians believed opposing qualities could directly neutralise excess bodily fluids.<br><br>Furthermore, humoural balancing was reinforced through <strong>invasive physical procedures like bloodletting and purging</strong>. Barber-surgeons used vein-man phlebotomy charts to bleed patients via incisions, cupping, or leeches to remove excess blood, the most dangerous humour. Similarly, physicians prescribed violent emetics and laxatives to expel corrupt yellow and black bile. Therefore, this forced medieval healers to concentrate on humoural balance because removing excess blood or bile was seen as the only practical way to extract corrupt humours.<br><br>In addition, humoural treatments dominated because <strong>university-trained physicians relied entirely on diagnostic charts and astrology</strong>. Doctors inspected urine against colour charts and consulted zodiac horoscopes to calculate planetary humoural influences. Because classical Hippocratic-Galenic doctrine was taught as infallible in universities, alternative physical treatments were never developed. Therefore, this led to total reliance on humoural balancing treatments because licensed medieval physicians were legally and academically bound to follow classical humoural dogma.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (233 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+            "text": "One primary reason medieval treatments focused on restoring humoral balance was the <strong>universal authority of Galen’s Theory of Opposites</strong>. Educated physicians believed good health depended on equilibrium among blood, phlegm, yellow bile, and black bile, each carrying qualities of heat, cold, wetness, or dryness. Under Galen’s rule that contraries cure contraries, doctors treated a cold, moist winter chill with warming pepper or spiced wine and cooled hot fevers with cucumber, focusing every prescription on counteracting internal fluid excess.<br><br>Furthermore, humoral balancing dominated everyday practice through <strong>visible physical evacuation via bloodletting and purging</strong>. Guided by painted vein-man phlebotomy charts, barber-surgeons opened specific veins, applied heated cups, or attached leeches to drain ‘corrupt’ or excessive blood, while apothecaries mixed herbal emetics and laxatives such as scammony to flush out yellow and black bile. Seeing blood or bile physically leave the patient convinced practitioners and sufferers alike that toxic humours were being actively removed.<br><br>In addition, humoral treatments went unchallenged because <strong>university diagnostic tools and medical astrology locked physicians into humoral thinking</strong>. Doctors diagnosed illness by matching a patient’s urine flask (<em>matula</em>) against twenty-shade humoral urine wheels and checking Zodiac Man almanacs for safe planetary bleeding times; bound by seven-to-ten-year Latin university degrees grounded solely in Hippocrates and Galen, licensed physicians neither sought nor knew any non-humoral therapy.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within crisp exam length (220 words), structured in sustained analytical paragraphs with precise historical evidence and direct causal clinchers."
           }
         }
       }
@@ -719,9 +1093,33 @@ export const MOCK_BANK_P1_P2 = {
           "Lack of local government authority"
         ],
         "sourceExtract": "",
-        "modelAnswer": "<p>First, dominant religious convictions led communities and King Edward III to treat the 1348 pestilence as God’s wrath against sin rather than a transmissible biological infection. Organising mass street processions, fasting, and public flagellation unwittingly packed terrified townspeople together, accelerating pneumonic and flea-borne plague transmission instead of halting it.</p><p>Second, reliance on Galen’s Four Humours and miasma theory produced useless or actively harmful treatments. Physicians prescribed phlebotomy, lancing buboes with unsterilised blades, and bizarre theriac potions while burning sweet herbs to clear foul air—weakening dehydrated patients while ignoring the black rats and fleas thriving in straw-floored homes.</p><p>Finally, weak medieval municipal government and lack of central enforcement prevented effective quarantine or street sanitation. Although Edward III wrote to the Mayor of London in 1349 ordering human waste cleared from streets to reduce miasma, town councils lacked paid public health officers or legal power to enforce household isolation, leaving parishes overwhelmed.</p>",
+        "modelAnswer": "<p>First, dominant religious and supernatural convictions led medieval authorities and villagers to treat the 1348–49 pestilence as God’s wrath against human sin—triggered via the 1345 planetary alignment of Mars, Jupiter, and Saturn—rather than a transmissible biological infection. Consequently, King Edward III and English bishops ordered collective parish fasting, confession, and barefoot street prayer processions alongside wandering flagellants, which unwittingly packed terrified townspeople into crowded churches and narrow lanes, accelerating pneumonic and flea-borne plague contagion instead of halting it.</p><p>Second, reliance on Galen’s Four Humours and miasma theory produced bedside remedies that were useless or actively harmful. University physicians prescribed weakening bloodletting, violent laxative purges, lancing buboes with unsterilised knives, tying plucked chickens to swellings, and crushed emerald or theriac potions while householders burned sweet herbs and tar barrels to clear foul air—dehydrating critically ill patients while completely ignoring the black rats and <em>Xenopsylla cheopis</em> fleas thriving in straw-floored homes.</p><p>Finally, weak medieval local government authority and lack of administrative infrastructure prevented effective quarantine or town sanitation. Although Edward III wrote to London’s Mayor in 1349 ordering human filth and butcher offal cleared from streets to curb miasma, borough councils lacked salaried public-health officers, legal quarantine powers, or tax budgets to isolate infected houses and bury mass dead, leaving local parishes overwhelmed.</p>",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "<p>Responses to the Black Death in 1348–49 did not work because people thought God sent the plague to punish their sins, so they went to church and prayed together, which only spread germs faster. Doctors also bled sick people or burned sweet herbs to stop bad smells instead of killing rats and fleas, and town councils were too weak to keep streets clean.</p>",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple narrative touching on prayer, bad smells, and dirty streets without specific 1348–49 evidence or analytical PEEL structure."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "<p>One reason responses failed was <strong>supernatural and religious beliefs</strong>. Most English people and priests believed God sent the 1348 pestilence to punish sin, while scholars blamed an alignment of planets in 1345. Bishops organised crowded street prayer processions and flagellants whipped themselves in public, packing townspeople together and spreading the disease further.</p><p>Another reason was the <strong>lack of local government authority</strong>. Although King Edward III ordered the Mayor of London in 1349 to clean filthy streets to stop miasma, medieval town councils had no paid health inspectors, tax funds, or quarantine laws to enforce street cleaning or lock up infected homes.</p>",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately develops both stimulus prompts (supernatural/religious beliefs and weak local government authority), but omits a third distinct aspect from own knowledge (harmful Galenic bloodletting/miasma remedies and ignorance of rat fleas)."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "<p>First, dominant religious and supernatural convictions led medieval authorities and villagers to treat the 1348–49 pestilence as God’s wrath against human sin—triggered via the 1345 planetary alignment of Mars, Jupiter, and Saturn—rather than a transmissible biological infection. Consequently, King Edward III and English bishops ordered collective parish fasting, confession, and barefoot street prayer processions alongside wandering flagellants, which unwittingly packed terrified townspeople into crowded churches and narrow lanes, accelerating pneumonic and flea-borne plague contagion instead of halting it.</p><p>Second, reliance on Galen’s Four Humours and miasma theory produced bedside remedies that were useless or actively harmful. University physicians prescribed weakening bloodletting, violent laxative purges, lancing buboes with unsterilised knives, tying plucked chickens to swellings, and crushed emerald or theriac potions while householders burned sweet herbs and tar barrels to clear foul air—dehydrating critically ill patients while completely ignoring the black rats and <em>Xenopsylla cheopis</em> fleas thriving in straw-floored homes.</p><p>Finally, weak medieval local government authority and lack of administrative infrastructure prevented effective quarantine or town sanitation. Although Edward III wrote to London’s Mayor in 1349 ordering human filth and butcher offal cleared from streets to curb miasma, borough councils lacked salaried public-health officers, legal quarantine powers, or tax budgets to isolate infected houses and bury mass dead, leaving local parishes overwhelmed.</p>",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded (211 words). Sustains three clear causal chains showing how crowded religious processions spread contagion, humoral/miasma treatments missed rat fleas, and weak borough councils could not enforce sanitation."
+          }
+        }
       }
     ],
     "lesson_2_1": [
@@ -736,8 +1134,33 @@ export const MOCK_BANK_P1_P2 = {
           "Johannes Gutenberg’s printing press (c1440)",
           "The founding of the Royal Society (1660)"
         ],
-        "modelAnswer": "One major reason medical communication transformed during the Renaissance was the invention and spread of the <strong>mechanical printing press</strong>, pioneered by Johannes Gutenberg around 1440 and brought to Westminster by William Caxton in 1476. During the medieval era, monks copied Galen’s manuscripts by hand in monastery scriptoria, allowing the Catholic Church to control university curricula and introducing frequent transcription errors. Movable metal type enabled thousands of identical, richly illustrated medical texts—such as Andreas Vesalius’s <em>De Humani Corporis Fabrica</em> (1543)—to circulate rapidly across Europe outside clerical control, allowing British scholars and barber-surgeons to compare woodcut diagrams directly against human dissections.<br><br>A second decisive driver was the institutionalisation of experimental science through the <strong>Royal Society</strong>, founded in London in 1660 and granted its Royal Charter by King Charles II in 1662. Guided by its Latin motto <em>Nullius in Verba</em> (\"Take nobody’s word for it\"), the Society championed empirical observation, live laboratory demonstrations, and open debate rather than blind deference to classical authority. By launching the world’s first peer-reviewed scientific journal, <em>Philosophical Transactions</em>, in 1665, secretary Henry Oldenburg ensured that new discoveries could be scrutinised and replicated rapidly.<br><br>Finally, enquiry accelerated due to <strong>Renaissance Humanism and improved optical technology</strong>. Humanist scholars translated original Greek medical treatises and encouraged direct observation of nature, while mid-seventeenth-century compound microscopes enabled Robert Hooke (<em>Micrographia</em>, 1665) and Antonie van Leeuwenhoek to observe plant cells, blood capillaries, and microscopic \"animalcules\", proving that classical texts were incomplete.",
-        "mockUrl": "/units/edexcel_medicine/mock_2025_clone.html"
+        "modelAnswer": "One major reason medical communication transformed during the Renaissance was the spread of the <strong>mechanical printing press</strong>, pioneered by Johannes Gutenberg around 1440 and brought to Westminster by William Caxton in 1476. During the medieval era, monks copied Galen’s manuscripts by hand in monastery scriptoria, allowing the Church to control university curricula while introducing transcription errors. Movable metal type enabled thousands of identical, richly illustrated texts—such as Andreas Vesalius’s <em>De Humani Corporis Fabrica</em> (1543)—to circulate rapidly across Europe outside clerical control, allowing British scholars and surgeons to compare woodcuts directly against human dissections.<br><br>A second decisive driver was the institutionalisation of experimental science through the <strong>Royal Society</strong>, founded in London in 1660 and granted a Royal Charter by Charles II in 1662. Guided by <em>Nullius in Verba</em> (\"Take nobody’s word for it\"), the Society championed empirical observation, live demonstrations, and open debate over deference to ancient authority. Launching the first peer-reviewed scientific journal, <em>Philosophical Transactions</em>, in 1665 under Henry Oldenburg ensured new discoveries were scrutinised and replicated rapidly.<br><br>Finally, enquiry accelerated due to <strong>Renaissance Humanism and improved optical technology</strong>. Humanist scholars translated original Greek medical treatises and urged direct study of nature, while mid-seventeenth-century compound microscopes enabled Robert Hooke (<em>Micrographia</em>, 1665) and Antonie van Leeuwenhoek to observe plant cells, capillaries, and microscopic \"animalcules\", proving classical texts were incomplete.",
+        "mockUrl": "/units/edexcel_medicine/mock_2025_clone.html",
+        "type": "12-Mark Causation",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "Medical communication and anatomical study improved between c1500 and c1700 because Gutenberg’s printing press let printers make thousands of accurate books with anatomical pictures instead of monks copying them slowly by hand. Also, the Royal Society started in London in 1660 so scientists could share experiments in a journal, and early microscopes helped people look closely at tiny things.",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. General summary mentioning printing, the Royal Society, and microscopes without specific texts, dates, or sustained PEEL explanation."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "One reason communication and enquiry improved was <strong>Johannes Gutenberg’s printing press</strong> (c1440), brought to England by William Caxton in 1476. Replacing slow, error-prone monastic hand-copying, movable metal type allowed illustrated anatomy books like Andreas Vesalius’s <em>Fabrica</em> (1543) to spread rapidly across Europe outside Church censorship.<br><br>Another reason was the <strong>founding of the Royal Society in 1660</strong>, granted a royal charter by Charles II in 1662 under the motto <em>Nullius in Verba</em>. By launching the peer-reviewed journal <em>Philosophical Transactions</em> in 1665 under Henry Oldenburg, the Society enabled scientists and doctors to share, debate, and test new discoveries quickly.",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately describes both stimulus prompts (Gutenberg's press and the Royal Society), but omits a third independent factor from own knowledge (Renaissance Humanism and optical microscopes used by Hooke and Leeuwenhoek)."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "One major reason medical communication transformed during the Renaissance was the spread of the <strong>mechanical printing press</strong>, pioneered by Johannes Gutenberg around 1440 and brought to Westminster by William Caxton in 1476. During the medieval era, monks copied Galen’s manuscripts by hand in monastery scriptoria, allowing the Church to control university curricula while introducing transcription errors. Movable metal type enabled thousands of identical, richly illustrated texts—such as Andreas Vesalius’s <em>De Humani Corporis Fabrica</em> (1543)—to circulate rapidly across Europe outside clerical control, allowing British scholars and surgeons to compare woodcuts directly against human dissections.<br><br>A second decisive driver was the institutionalisation of experimental science through the <strong>Royal Society</strong>, founded in London in 1660 and granted a Royal Charter by Charles II in 1662. Guided by <em>Nullius in Verba</em> (\"Take nobody’s word for it\"), the Society championed empirical observation, live demonstrations, and open debate over deference to ancient authority. Launching the first peer-reviewed scientific journal, <em>Philosophical Transactions</em>, in 1665 under Henry Oldenburg ensured new discoveries were scrutinised and replicated rapidly.<br><br>Finally, enquiry accelerated due to <strong>Renaissance Humanism and improved optical technology</strong>. Humanist scholars translated original Greek medical treatises and urged direct study of nature, while mid-seventeenth-century compound microscopes enabled Robert Hooke (<em>Micrographia</em>, 1665) and Antonie van Leeuwenhoek to observe plant cells, capillaries, and microscopic \"animalcules\", proving classical texts were incomplete.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded (224 words). Develops THREE distinct analytical factors—mechanical print breaking clerical control, the Royal Society's peer-reviewed Philosophical Transactions, and Humanist/microscopic empirical enquiry."
+          }
+        }
       },
       {
         "id": "med_l2_1_extra_q3",
@@ -906,9 +1329,33 @@ export const MOCK_BANK_P1_P2 = {
           "Overcrowded urban conditions"
         ],
         "sourceExtract": "",
-        "modelAnswer": "<p>First, continued ignorance of germs and the true flea-and-rat vector meant medical efforts targeted harmless miasma rather than actual contagion routes. Because physicians and citizens believed corrupt air and divine wrath caused plague, Londoners burned pitch barrels in the streets and slaughtered roughly 40,000 dogs and 200,000 cats—inadvertently removing the very predators that controlled flea-carrying black rats.</p><p>Second, overcrowded timber housing and poor sanitation in poorer Stuart parishes outside the old city walls accelerated transmission. Cramped tenements in St Giles-in-the-Fields lacked clean water or waste disposal, packing families together with grain-fed rats so Yersinia pestis spread relentlessly even when wealthy courtiers and Charles II fled London for Oxford.</p><p>Finally, although King Charles II and London’s aldermen enforced far stronger quarantine Orders than in 1348—locking infected households inside for 28–40 days behind red crosses reading \"Lord have mercy upon us\" and employing paid searchers and watchmen—enforcement broke down under mass panic, bribery, and escapes before cold autumn weather slowed flea activity.</p>",
+        "modelAnswer": "<p>First, persistent belief in miasma and supernatural causation blinded Londoners in 1665 to the true bacterial vector, prompting counter-productive public-health measures. Convinced foul poisonous vapours caused pestilence and stray animals carried corrupt air in their fur, the Lord Mayor’s Plague Orders kept pitch and coal barrels burning continuously in streets while municipal dog-killers slaughtered roughly 40,000 dogs and 200,000 cats—wiping out London’s main rat predators so flea-infested black rats multiplied unchecked and plague transmission surged dramatically.</p><p>Second, overcrowded urban housing and squalid sanitation in poorer suburban parishes outside the old City walls accelerated contagion relentlessly. Multi-family timber tenements in impoverished parishes like St Giles-in-the-Fields lacked clean piped water or sealed drains, piling domestic rubbish and spilt grain beside straw bedding so <em>Yersinia pestis</em> rat fleas fed continuously on dense working-class households long after King Charles II and wealthy courtiers fled to Oxford.</p><p>Finally, although Stuart civic quarantine was far better organised than in 1348—employing paid women searchers, isolated pest-houses, and armed watchmen to nail infected families inside houses for twenty-eight to forty days behind red crosses marked ‘Lord have mercy upon us’—enforcement buckled under mass panic as starving families bribed guards, broke through adjoining attics, or fled into neighbouring parishes until late-autumn frosts finally slowed flea activity.</p>",
         "pdfUrl": "",
-        "mockUrl": "/units/edexcel_medicine/"
+        "mockUrl": "/units/edexcel_medicine/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "<p>People in 1665 could not stop the Great Plague spreading in London because nobody knew about germs or fleas on rats. Instead, people blamed bad smells called miasma, lit fires in the streets, and killed thousands of cats and dogs that would have caught the rats. Poor areas of London were also dirty and cramped, and locked-up families escaped from guarded houses.</p>",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple narrative touching on miasma, killing cats/dogs, and cramped streets without precise Stuart parish or Plague Orders detail."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "<p>One reason Londoners failed to stop the 1665 Great Plague was widespread <strong>belief in miasma</strong> (‘bad air’). Because physicians and aldermen thought foul vapours and stray pets spread plague, authorities burned coal and pitch barrels in streets and killed around 40,000 dogs and 200,000 cats, accidentally removing the predators that kept flea-carrying black rats down.</p><p>Another reason was <strong>overcrowded urban conditions</strong> in poor parishes outside London’s walls such as St Giles-in-the-Fields. Narrow timber tenements packed large families together alongside rubbish heaps and rats, allowing fleas to jump rapidly from person to person while rich citizens fled London.</p>",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately develops both stimulus prompts (belief in miasma and overcrowded urban conditions), but omits a third distinct factor from own knowledge (the practical breakdown of Charles II's 28–40 day red-cross household quarantine Orders)."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "<p>First, persistent belief in miasma and supernatural causation blinded Londoners in 1665 to the true bacterial vector, prompting counter-productive public-health measures. Convinced foul poisonous vapours caused pestilence and stray animals carried corrupt air in their fur, the Lord Mayor’s Plague Orders kept pitch and coal barrels burning continuously in streets while municipal dog-killers slaughtered roughly 40,000 dogs and 200,000 cats—wiping out London’s main rat predators so flea-infested black rats multiplied unchecked and plague transmission surged dramatically.</p><p>Second, overcrowded urban housing and squalid sanitation in poorer suburban parishes outside the old City walls accelerated contagion relentlessly. Multi-family timber tenements in impoverished parishes like St Giles-in-the-Fields lacked clean piped water or sealed drains, piling domestic rubbish and spilt grain beside straw bedding so <em>Yersinia pestis</em> rat fleas fed continuously on dense working-class households long after King Charles II and wealthy courtiers fled to Oxford.</p><p>Finally, although Stuart civic quarantine was far better organised than in 1348—employing paid women searchers, isolated pest-houses, and armed watchmen to nail infected families inside houses for twenty-eight to forty days behind red crosses marked ‘Lord have mercy upon us’—enforcement buckled under mass panic as starving families bribed guards, broke through adjoining attics, or fled into neighbouring parishes until late-autumn frosts finally slowed flea activity.</p>",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded (207 words). Sustains three analytical pillars including the miasma-to-predator-cull domino, suburban St Giles tenement squalor, and breakdown of 1665 Plague Orders quarantine."
+          }
+        }
       }
     ],
     "lesson_3_1": [
@@ -965,7 +1412,7 @@ export const MOCK_BANK_P1_P2 = {
           "The Anti-Vaccination League"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason for opposition was <strong>fierce financial resistance from commercial inoculators</strong>. In the eighteenth century, smallpox variolation (inoculating patients with live smallpox scabs) was a highly profitable commercial enterprise dominated by medical dynasties like the Sutton family. Because Jenner offered cowpox vaccination as a safer and much cheaper alternative, commercial inoculators waged aggressive public campaigns questioning Jenner's competence to protect their lucrative medical practices. Therefore, this caused fierce opposition because established medical practitioners actively campaigned against vaccination to protect their lucrative inoculation businesses.<br><br>Furthermore, opposition intensified through the <strong>founding of the Anti-Vaccination League against compulsory legislation</strong>. When Parliament passed Compulsory Vaccination Acts in 1853 and 1867 enforcing fines and prison sentences for non-compliant parents, massive public resistance erupted. Leagues formed across Britain, arguing that state-mandated injections violated individual civil liberties and bodily autonomy. Therefore, this led to widespread opposition because working-class citizens and libertarian leagues viewed compulsory state-enforced injections as tyranny over their personal bodies.<br><br>In addition, opposition was fuelled by <strong>deep religious objections and Jenner's inability to explain the biological mechanism</strong>. Church ministers preached that infecting humans with animal disease from cows was immoral, while James Gillray's satirical cartoons depicted vaccinated patients sprouting cow horns. Because Jenner could not scientifically explain why cowpox conferred immunity before Germ Theory, many physicians remained sceptical. Therefore, this generated sustained public hostility because superstitious fears and moral outrage convinced many that injecting animal matter defied divine law.",
+        "modelAnswer": "One major reason for opposition to vaccination was <strong>fierce commercial resistance from wealthy variolation inoculators</strong>. Throughout the eighteenth century, prominent practitioners such as the Sutton family earned lucrative fees infecting rich clients with live smallpox matter in private inoculation houses. Because Edward Jenner’s 1796–98 cowpox vaccination offered a far safer, cheaper alternative without contagious quarantine stays, rival inoculators attacked Jenner’s rural credentials in newspapers and lectures to protect their threatened incomes.<br><br>Furthermore, popular resistance surged through the <strong>Anti-Vaccination League after Parliament made vaccination compulsory</strong>. Once the 1853 and 1867 Compulsory Vaccination Acts imposed fines and imprisonment on non-compliant parents, working-class families and civil-liberties campaigners founded the Anti-Vaccination League in 1866 and staged mass demonstrations, notably in Leicester in 1885, condemning state-forced infant injections as tyrannical interference with parental rights and bodily liberty.<br><br>In addition, hostility was fuelled by <strong>religious revulsion at animal matter and Jenner’s inability to explain how vaccination worked</strong>. Before Pasteur’s 1861 Germ Theory, Jenner could observe that cowpox prevented smallpox yet could not prove the biological mechanism, prompting the Royal Society to decline his paper while clergymen denounced injecting beast disease into human flesh as ungodly—fears vividly exploited in James Gillray’s 1802 cartoon showing vaccinated patients sprouting miniature cows.",
         "pdfUrl": "",
         "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
@@ -988,8 +1435,8 @@ export const MOCK_BANK_P1_P2 = {
             "score": "12 / 12 Marks",
             "level": "Level 4 Top (Pearson Exam Standard)",
             "badge": "Edexcel Benchmark",
-            "text": "One major reason for opposition was <strong>fierce financial resistance from commercial inoculators</strong>. In the eighteenth century, smallpox variolation (inoculating patients with live smallpox scabs) was a highly profitable commercial enterprise dominated by medical dynasties like the Sutton family. Because Jenner offered cowpox vaccination as a safer and much cheaper alternative, commercial inoculators waged aggressive public campaigns questioning Jenner's competence to protect their lucrative medical practices. Therefore, this caused fierce opposition because established medical practitioners actively campaigned against vaccination to protect their lucrative inoculation businesses.<br><br>Furthermore, opposition intensified through the <strong>founding of the Anti-Vaccination League against compulsory legislation</strong>. When Parliament passed Compulsory Vaccination Acts in 1853 and 1867 enforcing fines and prison sentences for non-compliant parents, massive public resistance erupted. Leagues formed across Britain, arguing that state-mandated injections violated individual civil liberties and bodily autonomy. Therefore, this led to widespread opposition because working-class citizens and libertarian leagues viewed compulsory state-enforced injections as tyranny over their personal bodies.<br><br>In addition, opposition was fuelled by <strong>deep religious objections and Jenner's inability to explain the biological mechanism</strong>. Church ministers preached that infecting humans with animal disease from cows was immoral, while James Gillray's satirical cartoons depicted vaccinated patients sprouting cow horns. Because Jenner could not scientifically explain why cowpox conferred immunity before Germ Theory, many physicians remained sceptical. Therefore, this generated sustained public hostility because superstitious fears and moral outrage convinced many that injecting animal matter defied divine law.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (231 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+            "text": "One major reason for opposition to vaccination was <strong>fierce commercial resistance from wealthy variolation inoculators</strong>. Throughout the eighteenth century, prominent practitioners such as the Sutton family earned lucrative fees infecting rich clients with live smallpox matter in private inoculation houses. Because Edward Jenner’s 1796–98 cowpox vaccination offered a far safer, cheaper alternative without contagious quarantine stays, rival inoculators attacked Jenner’s rural credentials in newspapers and lectures to protect their threatened incomes.<br><br>Furthermore, popular resistance surged through the <strong>Anti-Vaccination League after Parliament made vaccination compulsory</strong>. Once the 1853 and 1867 Compulsory Vaccination Acts imposed fines and imprisonment on non-compliant parents, working-class families and civil-liberties campaigners founded the Anti-Vaccination League in 1866 and staged mass demonstrations, notably in Leicester in 1885, condemning state-forced infant injections as tyrannical interference with parental rights and bodily liberty.<br><br>In addition, hostility was fuelled by <strong>religious revulsion at animal matter and Jenner’s inability to explain how vaccination worked</strong>. Before Pasteur’s 1861 Germ Theory, Jenner could observe that cowpox prevented smallpox yet could not prove the biological mechanism, prompting the Royal Society to decline his paper while clergymen denounced injecting beast disease into human flesh as ungodly—fears vividly exploited in James Gillray’s 1802 cartoon showing vaccinated patients sprouting miniature cows.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within crisp exam length (205 words), structured in sustained analytical paragraphs with precise historical evidence and direct causal clinchers."
           }
         }
       },
@@ -1102,7 +1549,7 @@ export const MOCK_BANK_P1_P2 = {
           "The Great Stink (1858)"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major reason the government abandoned laissez-faire was the <strong>expansion of the franchise through the 1867 Reform Act</strong>. Before 1867, only wealthy property owners voted, so governments kept taxes low by ignoring slum housing. However, the 1867 Reform Act gave the vote to urban working-class men. To win general elections, politicians like Benjamin Disraeli had to compete for working-class votes by promising social improvements. Therefore, this forced the government to abandon laissez-faire because politicians now depended directly on working-class electors who demanded sanitary legislation.<br><br>Furthermore, reform was compelled by the <strong>crisis of the Great Stink of 1858</strong>. During an intensely hot summer, untreated sewage in the Thames produced an unbearable stench outside Parliament, forcing MPs to soak curtains in chloride of lime. Fearing miasma would sicken politicians, Parliament granted £3 million to Joseph Bazalgette to build London's underground sewers. Therefore, this led to national public health reform because Bazalgette's massive engineering triumph proved that state intervention directly saved lives.<br><br>In addition, the shift was driven by <strong>scientific proof from John Snow and Louis Pasteur</strong>. In 1854, Snow demonstrated cholera was waterborne by removing the Broad Street pump handle, while Pasteur's 1861 Germ Theory proved microscopic bacteria thrived in dirty water. This destroyed miasma theory and exposed laissez-faire as deadly negligence. Therefore, this caused the passage of the 1875 Act because ministers now possessed undeniable proof that only compulsory clean water and sanitation could halt lethal epidemics.",
+        "modelAnswer": "One major political reason the government abandoned laissez-faire was the <strong>enfranchisement of urban working-class men under the 1867 Reform Act</strong>. Before 1867, narrow property franchises meant MPs answered largely to wealthy ratepayers who resented paying local taxes for slum sanitation. Doubling the electorate to include town artisans forced Prime Minister Benjamin Disraeli’s Conservatives to win working-class votes through ‘Sanitas sanitatum’ social reform, turning clean water and decent housing into urgent national election priorities.<br><br>Furthermore, Westminster’s attitude had already been shaken by the <strong>crisis of London’s Great Stink in summer 1858</strong>. When scorching heat baked raw sewage along the River Thames right beneath the Houses of Parliament, lime-soaked curtains failed to mask the stench and terrified MPs voted £3 million within eighteen days for Joseph Bazalgette to build 1,300 miles of intercepting London sewers—demonstrating dramatically upon completion that large-scale state engineering eliminated local cholera outbreaks.<br><br>In addition, laissez-faire became scientifically indefensible following <strong>conclusive discoveries by John Snow and Louis Pasteur</strong>. Snow’s 1854 Soho spot-map and Broad Street pump-handle removal proved cholera spread through sewage-contaminated drinking water, and Pasteur’s 1861 Germ Theory confirmed living microbes—not vague miasma—bred in filthy water supplies, giving ministers irrefutable proof that only compulsory council sewers, clean water, and Medical Officers under the 1875 Act could prevent urban epidemics.",
         "model_tiers": {
           "tier_3m": {
             "title": "3/12 Simple Story",
@@ -1123,8 +1570,8 @@ export const MOCK_BANK_P1_P2 = {
             "score": "12 / 12 Marks",
             "level": "Level 4 Top (Pearson Exam Standard)",
             "badge": "Edexcel Benchmark",
-            "text": "One major reason the government abandoned laissez-faire was the <strong>expansion of the franchise through the 1867 Reform Act</strong>. Before 1867, only wealthy property owners voted, so governments kept taxes low by ignoring slum housing. However, the 1867 Reform Act gave the vote to urban working-class men. To win general elections, politicians like Benjamin Disraeli had to compete for working-class votes by promising social improvements. Therefore, this forced the government to abandon laissez-faire because politicians now depended directly on working-class electors who demanded sanitary legislation.<br><br>Furthermore, reform was compelled by the <strong>crisis of the Great Stink of 1858</strong>. During an intensely hot summer, untreated sewage in the Thames produced an unbearable stench outside Parliament, forcing MPs to soak curtains in chloride of lime. Fearing miasma would sicken politicians, Parliament granted £3 million to Joseph Bazalgette to build London's underground sewers. Therefore, this led to national public health reform because Bazalgette's massive engineering triumph proved that state intervention directly saved lives.<br><br>In addition, the shift was driven by <strong>scientific proof from John Snow and Louis Pasteur</strong>. In 1854, Snow demonstrated cholera was waterborne by removing the Broad Street pump handle, while Pasteur's 1861 Germ Theory proved microscopic bacteria thrived in dirty water. This destroyed miasma theory and exposed laissez-faire as deadly negligence. Therefore, this caused the passage of the 1875 Act because ministers now possessed undeniable proof that only compulsory clean water and sanitation could halt lethal epidemics.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (220 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+            "text": "One major political reason the government abandoned laissez-faire was the <strong>enfranchisement of urban working-class men under the 1867 Reform Act</strong>. Before 1867, narrow property franchises meant MPs answered largely to wealthy ratepayers who resented paying local taxes for slum sanitation. Doubling the electorate to include town artisans forced Prime Minister Benjamin Disraeli’s Conservatives to win working-class votes through ‘Sanitas sanitatum’ social reform, turning clean water and decent housing into urgent national election priorities.<br><br>Furthermore, Westminster’s attitude had already been shaken by the <strong>crisis of London’s Great Stink in summer 1858</strong>. When scorching heat baked raw sewage along the River Thames right beneath the Houses of Parliament, lime-soaked curtains failed to mask the stench and terrified MPs voted £3 million within eighteen days for Joseph Bazalgette to build 1,300 miles of intercepting London sewers—demonstrating dramatically upon completion that large-scale state engineering eliminated local cholera outbreaks.<br><br>In addition, laissez-faire became scientifically indefensible following <strong>conclusive discoveries by John Snow and Louis Pasteur</strong>. Snow’s 1854 Soho spot-map and Broad Street pump-handle removal proved cholera spread through sewage-contaminated drinking water, and Pasteur’s 1861 Germ Theory confirmed living microbes—not vague miasma—bred in filthy water supplies, giving ministers irrefutable proof that only compulsory council sewers, clean water, and Medical Officers under the 1875 Act could prevent urban epidemics.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within crisp exam length (214 words), structured in sustained analytical paragraphs with precise historical evidence and direct causal clinchers."
           }
         },
         "pdfUrl": "",
@@ -1179,7 +1626,7 @@ export const MOCK_BANK_P1_P2 = {
           "The Human Genome Project"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major factor driving rapid progress was <strong>Rosalind Franklin's capture of Photograph 51 in 1952</strong>. Working at King's College London, Franklin used X-ray crystallography to produce Photograph 51, providing the critical physical evidence revealing DNA's helical geometry. This enabled James Watson and Francis Crick in 1953 to construct the double-helix DNA model, demonstrating how chemical base pairs replicate genetic instructions. Therefore, this caused rapid genetic progress because identifying the double-helix structure revealed the exact physical mechanism by which genetic information is stored and replicated.<br><br>Furthermore, understanding accelerated through the <strong>international collaboration of the Human Genome Project (1990–2003)</strong>. Co-ordinated by scientists across Britain, the USA, and globally, this public project successfully mapped all three billion chemical base pairs in human DNA. Mapping the complete genetic blueprint allowed medical researchers to identify the specific genetic mutations responsible for conditions like Down's syndrome and Huntington's disease. Therefore, this led to massive medical breakthroughs because mapping the entire human genetic sequence allowed scientists to identify the specific faulty genes responsible for hereditary diseases.<br><br>In addition, progress was made possible by <strong>post-war advances in computing power and automated DNA sequencers</strong>. In the late twentieth century, automated sequencing machines and digital supercomputers replaced manual gene counting, allowing laboratories to analyse millions of base pairs in hours rather than decades. Therefore, this accelerated genetic understanding because computerized data-processing enabled researchers to rapidly detect genetic mutations and develop targeted gene therapies.",
+        "modelAnswer": "One major factor driving rapid genetic progress after 1950 was <strong>Rosalind Franklin’s capture of Photograph 51 in May 1952</strong>. Working at King’s College London, Franklin used high-resolution X-ray crystallography to photograph hydrated DNA fibres, revealing a unmistakable cross-shaped helical pattern. Passing those measurements to Cambridge enabled James Watson and Francis Crick in April 1953 to build their double-helix model with complementary base pairs, explaining for the first time how cells copy hereditary code and how copying errors cause genetic disease.<br><br>Furthermore, clinical understanding leaped forward through the <strong>international collaboration of the Human Genome Project (1990–2003)</strong>. Pooling public funding and open-access data across Britain’s Wellcome Trust, the USA, and sixteen other nations, thousands of geneticists mapped all three billion chemical base pairs across human chromosomes. Completing this human blueprint enabled doctors to pinpoint over 4,000 specific faulty genes—including cystic fibrosis, Huntington’s disease, and BRCA1/2 breast-cancer mutations—revolutionising diagnostic screening.<br><br>In addition, decoding human heredity depended on <strong>late-twentieth-century revolutions in supercomputing and automated DNA sequencing</strong>. Whereas early biochemical gene mapping took years to read tiny DNA fragments by hand, robotic laser sequencers and high-speed bioinformatics computers analysed millions of base pairs in hours, slashing the cost and time of genome reading so researchers could rapidly compare patient DNA and identify rare inherited disorders.",
         "pdfUrl": "",
         "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
@@ -1202,8 +1649,8 @@ export const MOCK_BANK_P1_P2 = {
             "score": "12 / 12 Marks",
             "level": "Level 4 Top (Pearson Exam Standard)",
             "badge": "Edexcel Benchmark",
-            "text": "One major factor driving rapid progress was <strong>Rosalind Franklin's capture of Photograph 51 in 1952</strong>. Working at King's College London, Franklin used X-ray crystallography to produce Photograph 51, providing the critical physical evidence revealing DNA's helical geometry. This enabled James Watson and Francis Crick in 1953 to construct the double-helix DNA model, demonstrating how chemical base pairs replicate genetic instructions. Therefore, this caused rapid genetic progress because identifying the double-helix structure revealed the exact physical mechanism by which genetic information is stored and replicated.<br><br>Furthermore, understanding accelerated through the <strong>international collaboration of the Human Genome Project (1990–2003)</strong>. Co-ordinated by scientists across Britain, the USA, and globally, this public project successfully mapped all three billion chemical base pairs in human DNA. Mapping the complete genetic blueprint allowed medical researchers to identify the specific genetic mutations responsible for conditions like Down's syndrome and Huntington's disease. Therefore, this led to massive medical breakthroughs because mapping the entire human genetic sequence allowed scientists to identify the specific faulty genes responsible for hereditary diseases.<br><br>In addition, progress was made possible by <strong>post-war advances in computing power and automated DNA sequencers</strong>. In the late twentieth century, automated sequencing machines and digital supercomputers replaced manual gene counting, allowing laboratories to analyse millions of base pairs in hours rather than decades. Therefore, this accelerated genetic understanding because computerized data-processing enabled researchers to rapidly detect genetic mutations and develop targeted gene therapies.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (226 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+            "text": "One major factor driving rapid genetic progress after 1950 was <strong>Rosalind Franklin’s capture of Photograph 51 in May 1952</strong>. Working at King’s College London, Franklin used high-resolution X-ray crystallography to photograph hydrated DNA fibres, revealing a unmistakable cross-shaped helical pattern. Passing those measurements to Cambridge enabled James Watson and Francis Crick in April 1953 to build their double-helix model with complementary base pairs, explaining for the first time how cells copy hereditary code and how copying errors cause genetic disease.<br><br>Furthermore, clinical understanding leaped forward through the <strong>international collaboration of the Human Genome Project (1990–2003)</strong>. Pooling public funding and open-access data across Britain’s Wellcome Trust, the USA, and sixteen other nations, thousands of geneticists mapped all three billion chemical base pairs across human chromosomes. Completing this human blueprint enabled doctors to pinpoint over 4,000 specific faulty genes—including cystic fibrosis, Huntington’s disease, and BRCA1/2 breast-cancer mutations—revolutionising diagnostic screening.<br><br>In addition, decoding human heredity depended on <strong>late-twentieth-century revolutions in supercomputing and automated DNA sequencing</strong>. Whereas early biochemical gene mapping took years to read tiny DNA fragments by hand, robotic laser sequencers and high-speed bioinformatics computers analysed millions of base pairs in hours, slashing the cost and time of genome reading so researchers could rapidly compare patient DNA and identify rare inherited disorders.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within crisp exam length (213 words), structured in sustained analytical paragraphs with precise historical evidence and direct causal clinchers."
           }
         }
       }
@@ -1224,7 +1671,7 @@ export const MOCK_BANK_P1_P2 = {
           "CT and MRI scanners"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major technological development was the <strong>discovery and medical application of X-rays</strong>. Discovered by Wilhelm Röntgen in 1895, X-rays passed through soft tissue to cast shadows of dense bone on photographic plates. By 1914, Marie Curie's mobile radiology units enabled battlefield surgeons to locate bullets and shrapnel immediately, eliminating dangerous exploratory operations. Therefore, this led to major diagnostic improvements because doctors could locate internal fractures, tumours, and foreign objects without having to perform dangerous exploratory surgery.<br><br>Furthermore, diagnosis was transformed by the <strong>invention of advanced CT and MRI scanners in the 1970s</strong>. In 1972, British engineer Godfrey Hounsfield invented the CT scanner, using computers to combine multiple X-ray cross-sections into 3D images. Soon after, Magnetic Resonance Imaging (MRI) used magnetic fields and radio waves to image soft tissues like the brain and spinal cord without radiation. Therefore, this caused diagnostic accuracy to increase dramatically because physicians could detect early-stage brain tumours, internal bleeding, and organ damage with unprecedented precision.<br><br>In addition, diagnosis was improved by <strong>scientific blood analysis, chemical pathology, and flexible endoscopes</strong>. Twentieth-century automated blood testing allowed clinicians to measure white blood cell counts, identify blood groups, and detect chemical markers for diabetes and kidney failure. Simultaneously, fibre-optic endoscopes allowed internal organs to be directly viewed. Therefore, this transformed medical diagnosis because clinicians could identify diseases biochemically and visually at an early, treatable stage rather than relying on external physical symptoms.",
+        "modelAnswer": "One major technological breakthrough transforming twentieth-century diagnosis was the <strong>discovery and clinical adoption of X-rays</strong>. Discovered by German physicist Wilhelm Röntgen in 1895, X-rays passed harmlessly through soft flesh while casting sharp shadows of dense bone and metal onto photographic plates. Deployed in hospital radiology rooms and mobile Western Front vans by 1914–18, X-rays allowed clinicians to pinpoint fractures, tuberculosis lung lesions, and embedded shrapnel instantly without cutting patients open in risky exploratory surgery.<br><br>Furthermore, non-invasive internal diagnosis leaped forward with <strong>computerised CT and MRI scanners from the 1970s</strong>. In 1972 British engineer Godfrey Hounsfield invented the CT scanner, using computer algorithms to stack rotating X-ray cross-sections into detailed three-dimensional organ images, soon complemented by Magnetic Resonance Imaging (MRI), which used strong magnetic fields and radio waves to visualise soft brain, spinal, and ligament tissues clearly—detecting small operable tumours and strokes long before outward symptoms worsened.<br><br>In addition, everyday medical diagnosis was revolutionised by <strong>automated laboratory pathology, blood biochemistry, and fibre-optic endoscopes</strong>. Building on Karl Landsteiner’s 1901 blood groups, automated hospital analysers tested tiny blood and biopsy samples for white-cell infection counts, blood-sugar diabetes markers, cholesterol, and kidney function, while flexible illuminated endoscopes and ultrasound probes let doctors inspect stomach ulcers, arteries, and unborn babies directly in real time.",
         "pdfUrl": "",
         "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
@@ -1247,8 +1694,8 @@ export const MOCK_BANK_P1_P2 = {
             "score": "12 / 12 Marks",
             "level": "Level 4 Top (Pearson Exam Standard)",
             "badge": "Edexcel Benchmark",
-            "text": "One major technological development was the <strong>discovery and medical application of X-rays</strong>. Discovered by Wilhelm Röntgen in 1895, X-rays passed through soft tissue to cast shadows of dense bone on photographic plates. By 1914, Marie Curie's mobile radiology units enabled battlefield surgeons to locate bullets and shrapnel immediately, eliminating dangerous exploratory operations. Therefore, this led to major diagnostic improvements because doctors could locate internal fractures, tumours, and foreign objects without having to perform dangerous exploratory surgery.<br><br>Furthermore, diagnosis was transformed by the <strong>invention of advanced CT and MRI scanners in the 1970s</strong>. In 1972, British engineer Godfrey Hounsfield invented the CT scanner, using computers to combine multiple X-ray cross-sections into 3D images. Soon after, Magnetic Resonance Imaging (MRI) used magnetic fields and radio waves to image soft tissues like the brain and spinal cord without radiation. Therefore, this caused diagnostic accuracy to increase dramatically because physicians could detect early-stage brain tumours, internal bleeding, and organ damage with unprecedented precision.<br><br>In addition, diagnosis was improved by <strong>scientific blood analysis, chemical pathology, and flexible endoscopes</strong>. Twentieth-century automated blood testing allowed clinicians to measure white blood cell counts, identify blood groups, and detect chemical markers for diabetes and kidney failure. Simultaneously, fibre-optic endoscopes allowed internal organs to be directly viewed. Therefore, this transformed medical diagnosis because clinicians could identify diseases biochemically and visually at an early, treatable stage rather than relying on external physical symptoms.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (229 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+            "text": "One major technological breakthrough transforming twentieth-century diagnosis was the <strong>discovery and clinical adoption of X-rays</strong>. Discovered by German physicist Wilhelm Röntgen in 1895, X-rays passed harmlessly through soft flesh while casting sharp shadows of dense bone and metal onto photographic plates. Deployed in hospital radiology rooms and mobile Western Front vans by 1914–18, X-rays allowed clinicians to pinpoint fractures, tuberculosis lung lesions, and embedded shrapnel instantly without cutting patients open in risky exploratory surgery.<br><br>Furthermore, non-invasive internal diagnosis leaped forward with <strong>computerised CT and MRI scanners from the 1970s</strong>. In 1972 British engineer Godfrey Hounsfield invented the CT scanner, using computer algorithms to stack rotating X-ray cross-sections into detailed three-dimensional organ images, soon complemented by Magnetic Resonance Imaging (MRI), which used strong magnetic fields and radio waves to visualise soft brain, spinal, and ligament tissues clearly—detecting small operable tumours and strokes long before outward symptoms worsened.<br><br>In addition, everyday medical diagnosis was revolutionised by <strong>automated laboratory pathology, blood biochemistry, and fibre-optic endoscopes</strong>. Building on Karl Landsteiner’s 1901 blood groups, automated hospital analysers tested tiny blood and biopsy samples for white-cell infection counts, blood-sugar diabetes markers, cholesterol, and kidney function, while flexible illuminated endoscopes and ultrasound probes let doctors inspect stomach ulcers, arteries, and unborn babies directly in real time.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within crisp exam length (212 words), structured in sustained analytical paragraphs with precise historical evidence and direct causal clinchers."
           }
         }
       },
@@ -1301,7 +1748,7 @@ export const MOCK_BANK_P1_P2 = {
           "Aneurin Bevan"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major factor behind the NHS was the <strong>impact of the Beveridge Report in 1942</strong>. Sir William Beveridge identified 'Disease' as one of the Five Giants blighting society, proposing a comprehensive welfare state providing healthcare 'from the cradle to the grave'. Selling over 600,000 copies, the report created immense public demand that compelled post-war politicians to act. Therefore, this led to the creation of the NHS because Beveridge created irresistible democratic momentum that forced the post-war Labour government to promise a universal healthcare system.<br><br>Furthermore, the NHS was achieved through the <strong>political tenacity and pragmatism of Health Minister Aneurin Bevan</strong>. Bevan faced intense resistance from the British Medical Association (BMA), who feared doctors would become underpaid state servants. Bevan overcame this by allowing hospital consultants to retain private patients in NHS hospitals, famously remarking he 'stuffed their mouths with gold'. Therefore, this caused the successful launch of the NHS because Bevan's political compromises defeated medical opposition and made healthcare free at the point of delivery.<br><br>In addition, the reform was driven by the <strong>wartime Emergency Medical Service (EMS) and pre-war healthcare inequality</strong>. Prior to 1948, working-class wives and children were excluded from national insurance. During the Blitz, the government EMS treated air-raid casualties, proving centralised medical coordination was remarkably effective. Therefore, this forced the establishment of the NHS because wartime state coordination proved a national health system was viable and destroyed public tolerance for unequal pre-war healthcare.",
+        "modelAnswer": "One major reason the NHS was established in 1948 was the <strong>huge public impact of Sir William Beveridge’s 1942 Report</strong>. Identifying ‘Disease’ alongside Want, Ignorance, Squalor, and Idleness as Five Giants blighting Britain, Beveridge proposed a tax-funded welfare state guaranteeing comprehensive healthcare ‘from the cradle to the grave’. Selling over 600,000 copies to war-weary citizens and troops, the report created overwhelming democratic demand that helped sweep Clement Attlee’s Labour Party to its 1945 landslide victory.<br><br>Furthermore, turning that blueprint into law required the <strong>political skill and determination of Health Minister Aneurin Bevan</strong>. Facing fierce boycotts from the British Medical Association (BMA), whose doctors feared losing clinical independence and private fees as salaried state servants, Bevan compromised pragmatically—allowing GPs capitation fees per patient and letting hospital consultants keep lucrative private ‘pay beds’ inside NHS hospitals (‘stuffing their mouths with gold’) so 90% of doctors joined by 5 July 1948.<br><br>In addition, creation of the NHS grew out of <strong>wartime Emergency Medical Service (EMS) coordination and stark pre-war inequality</strong>. Because Lloyd George’s 1911 National Insurance Act covered only low-paid workers—leaving millions of women, children, and elderly pensioners facing unaffordable doctor’s bills—while the wartime EMS successfully united 2,600 municipal and voluntary hospitals from Whitehall during the Blitz, both ministers and voters saw that a single nationalised hospital and GP service was practical and overdue.",
         "pdfUrl": "",
         "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
@@ -1324,8 +1771,8 @@ export const MOCK_BANK_P1_P2 = {
             "score": "12 / 12 Marks",
             "level": "Level 4 Top (Pearson Exam Standard)",
             "badge": "Edexcel Benchmark",
-            "text": "One major factor behind the NHS was the <strong>impact of the Beveridge Report in 1942</strong>. Sir William Beveridge identified 'Disease' as one of the Five Giants blighting society, proposing a comprehensive welfare state providing healthcare 'from the cradle to the grave'. Selling over 600,000 copies, the report created immense public demand that compelled post-war politicians to act. Therefore, this led to the creation of the NHS because Beveridge created irresistible democratic momentum that forced the post-war Labour government to promise a universal healthcare system.<br><br>Furthermore, the NHS was achieved through the <strong>political tenacity and pragmatism of Health Minister Aneurin Bevan</strong>. Bevan faced intense resistance from the British Medical Association (BMA), who feared doctors would become underpaid state servants. Bevan overcame this by allowing hospital consultants to retain private patients in NHS hospitals, famously remarking he 'stuffed their mouths with gold'. Therefore, this caused the successful launch of the NHS because Bevan's political compromises defeated medical opposition and made healthcare free at the point of delivery.<br><br>In addition, the reform was driven by the <strong>wartime Emergency Medical Service (EMS) and pre-war healthcare inequality</strong>. Prior to 1948, working-class wives and children were excluded from national insurance. During the Blitz, the government EMS treated air-raid casualties, proving centralised medical coordination was remarkably effective. Therefore, this forced the establishment of the NHS because wartime state coordination proved a national health system was viable and destroyed public tolerance for unequal pre-war healthcare.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (221 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+            "text": "One major reason the NHS was established in 1948 was the <strong>huge public impact of Sir William Beveridge’s 1942 Report</strong>. Identifying ‘Disease’ alongside Want, Ignorance, Squalor, and Idleness as Five Giants blighting Britain, Beveridge proposed a tax-funded welfare state guaranteeing comprehensive healthcare ‘from the cradle to the grave’. Selling over 600,000 copies to war-weary citizens and troops, the report created overwhelming democratic demand that helped sweep Clement Attlee’s Labour Party to its 1945 landslide victory.<br><br>Furthermore, turning that blueprint into law required the <strong>political skill and determination of Health Minister Aneurin Bevan</strong>. Facing fierce boycotts from the British Medical Association (BMA), whose doctors feared losing clinical independence and private fees as salaried state servants, Bevan compromised pragmatically—allowing GPs capitation fees per patient and letting hospital consultants keep lucrative private ‘pay beds’ inside NHS hospitals (‘stuffing their mouths with gold’) so 90% of doctors joined by 5 July 1948.<br><br>In addition, creation of the NHS grew out of <strong>wartime Emergency Medical Service (EMS) coordination and stark pre-war inequality</strong>. Because Lloyd George’s 1911 National Insurance Act covered only low-paid workers—leaving millions of women, children, and elderly pensioners facing unaffordable doctor’s bills—while the wartime EMS successfully united 2,600 municipal and voluntary hospitals from Whitehall during the Blitz, both ministers and voters saw that a single nationalised hospital and GP service was practical and overdue.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within crisp exam length (224 words), structured in sustained analytical paragraphs with precise historical evidence and direct causal clinchers."
           }
         }
       }
@@ -1400,7 +1847,7 @@ export const MOCK_BANK_P1_P2 = {
           "The 2007 public smoking ban"
         ],
         "sourceExtract": "",
-        "modelAnswer": "One major factor transforming prevention was <strong>conclusive epidemiological evidence provided by Richard Doll and Austin Bradford Hill</strong>. In 1950, Doll and Hill surveyed 709 patients, establishing a definitive statistical link between tobacco smoke and lung cancer, followed by their 1954 study showing heavy smokers were twenty times more likely to die from the disease. Therefore, this caused government prevention to change because conclusive statistical proof destroyed tobacco company denial and forced ministers to treat smoking as a lethal public health crisis.<br><br>Furthermore, prevention methods changed through <strong>compulsory statutory bans, culminating in the 2007 Health Act</strong>. Abandoning voluntary agreements that failed to curb consumption, Parliament banned television cigarette adverts in 1965 and sports sponsorship in 2002. In 2007, legislation made smoking in all enclosed workplaces and restaurants a criminal offence to eliminate second-hand smoke. Therefore, this led to a radical transformation in prevention because the state used statutory legislation to protect non-smokers and de-normalise smoking in British public life.<br><br>In addition, the government shifted towards <strong>punitive fiscal taxation, mass education, and standardised plain packaging</strong>. Successive chancellors raised tobacco excise duties until taxes exceeded 80% of retail packet costs, pricing young people out of smoking. In 2016, legislation mandated olive-green plain packaging displaying graphic photographic warnings of diseased lungs. Therefore, this forced smoking rates to fall sharply because aggressive fiscal disincentives and the removal of glamorous branding made cigarettes unaffordable and unappealing to young people.",
+        "modelAnswer": "One major reason government lung-cancer prevention changed dramatically after 1950 was <strong>conclusive epidemiological proof from Richard Doll and Austin Bradford Hill</strong>. Surveying 709 hospital patients in 1950 and tracking 40,000 British doctors in 1954, Doll and Hill proved statistically that cigarette smokers faced vastly higher lung-cancer mortality than non-smokers. Demolishing tobacco-industry claims that tar was harmless eventually left Whitehall unable to treat smoking as a private habit while NHS cancer wards filled.<br><br>Furthermore, when early health leaflets failed to halve smoking swiftly enough, ministers escalated to <strong>strict statutory bans culminating in the 2007 Health Act</strong>. Stepping steadily beyond laissez-faire persuasion, Parliament outlawed television cigarette advertising in 1965, banned print and Formula One tobacco sponsorship in 2002–05, raised the legal buying age to eighteen, and in July 2007 made smoking in all enclosed workplaces, pubs, and restaurants illegal—protecting workers from second-hand smoke and de-normalising smoking socially.<br><br>In addition, modern governments paired free NHS cessation support with <strong>punitive tobacco taxation and mandatory plain packaging</strong>. Successive budgets raised excise duty until tax exceeded 80% of a packet’s price to deter teenage starters, funded free NHS ‘Stoptober’ nicotine-replacement clinics, and enforced standardised olive-green packets carrying graphic diseased-lung photographs in 2016 so glamour branding could no longer recruit new smokers.",
         "pdfUrl": "",
         "mockUrl": "/units/edexcel_medicine/",
         "model_tiers": {
@@ -1423,8 +1870,8 @@ export const MOCK_BANK_P1_P2 = {
             "score": "12 / 12 Marks",
             "level": "Level 4 Top (Pearson Exam Standard)",
             "badge": "Edexcel Benchmark",
-            "text": "One major factor transforming prevention was <strong>conclusive epidemiological evidence provided by Richard Doll and Austin Bradford Hill</strong>. In 1950, Doll and Hill surveyed 709 patients, establishing a definitive statistical link between tobacco smoke and lung cancer, followed by their 1954 study showing heavy smokers were twenty times more likely to die from the disease. Therefore, this caused government prevention to change because conclusive statistical proof destroyed tobacco company denial and forced ministers to treat smoking as a lethal public health crisis.<br><br>Furthermore, prevention methods changed through <strong>compulsory statutory bans, culminating in the 2007 Health Act</strong>. Abandoning voluntary agreements that failed to curb consumption, Parliament banned television cigarette adverts in 1965 and sports sponsorship in 2002. In 2007, legislation made smoking in all enclosed workplaces and restaurants a criminal offence to eliminate second-hand smoke. Therefore, this led to a radical transformation in prevention because the state used statutory legislation to protect non-smokers and de-normalise smoking in British public life.<br><br>In addition, the government shifted towards <strong>punitive fiscal taxation, mass education, and standardised plain packaging</strong>. Successive chancellors raised tobacco excise duties until taxes exceeded 80% of retail packet costs, pricing young people out of smoking. In 2016, legislation mandated olive-green plain packaging displaying graphic photographic warnings of diseased lungs. Therefore, this forced smoking rates to fall sharply because aggressive fiscal disincentives and the removal of glamorous branding made cigarettes unaffordable and unappealing to young people.",
-            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within realistic candidate exam length (220 words), structured in sustained analytical paragraphs with explicit causal links ('Therefore...') and precise historical evidence throughout, meeting all Level 4 criteria."
+            "text": "One major reason government lung-cancer prevention changed dramatically after 1950 was <strong>conclusive epidemiological proof from Richard Doll and Austin Bradford Hill</strong>. Surveying 709 hospital patients in 1950 and tracking 40,000 British doctors in 1954, Doll and Hill proved statistically that cigarette smokers faced vastly higher lung-cancer mortality than non-smokers. Demolishing tobacco-industry claims that tar was harmless eventually left Whitehall unable to treat smoking as a private habit while NHS cancer wards filled.<br><br>Furthermore, when early health leaflets failed to halve smoking swiftly enough, ministers escalated to <strong>strict statutory bans culminating in the 2007 Health Act</strong>. Stepping steadily beyond laissez-faire persuasion, Parliament outlawed television cigarette advertising in 1965, banned print and Formula One tobacco sponsorship in 2002–05, raised the legal buying age to eighteen, and in July 2007 made smoking in all enclosed workplaces, pubs, and restaurants illegal—protecting workers from second-hand smoke and de-normalising smoking socially.<br><br>In addition, modern governments paired free NHS cessation support with <strong>punitive tobacco taxation and mandatory plain packaging</strong>. Successive budgets raised excise duty until tax exceeded 80% of a packet’s price to deter teenage starters, funded free NHS ‘Stoptober’ nicotine-replacement clinics, and enforced standardised olive-green packets carrying graphic diseased-lung photographs in 2016 so glamour branding could no longer recruit new smokers.",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded. Deploys THREE distinct aspects of content within crisp exam length (208 words), structured in sustained analytical paragraphs with precise historical evidence and direct causal clinchers."
           }
         }
       }
@@ -1741,9 +2188,33 @@ export const MOCK_BANK_P1_P2 = {
           "Papal policy before 1569"
         ],
         "sourceExtract": "",
-        "modelAnswer": "<p>First, Puritan challenges posed a limited political threat between 1559 and 1568 because Puritans had no alternative monarch and sought to reform the Church from within rather than overthrow Elizabeth. Although vocal Marian exiles forced Elizabeth to compromise over Royal Chapel crucifixes and resisted clerical vestments, Archbishop Parker’s 1566 Book of Advertisements exposed their weakness when only 37 London ministers chose dismissal rather than conform.</p><p>Second, domestic English Catholics remained largely passive during the 1560s due to cautious leadership from Rome and moderate royal enforcement. Pope Pius IV avoided excommunicating Elizabeth, and even when Pope Pius V advised Catholics in 1566 not to attend Anglican services, he issued no call for rebellion; consequently, most Catholic gentry acted as outward \"Church Papists\" rather than risking treason.</p><p>Finally, Catholic foreign powers were too distracted by continental rivalries before 1568 to mount a religious crusade against England. France descended into its own civil Wars of Religion in 1562, while King Philip II of Spain initially valued English neutrality to block French influence—meaning even when the Duke of Alba’s 10,000 troops arrived in the Netherlands in 1567 and the 1568 Genoese Loan crisis erupted, Spain still avoided invading England.</p>",
+        "modelAnswer": "<p>First, Puritan challenges posed only a limited political threat between 1559 and 1568 because Puritans had no alternative monarch and sought to purify the Church from within rather than depose a Protestant Queen. Although vocal Marian exiles forced Elizabeth to compromise over Royal Chapel crucifixes, came within one vote at the 1563 Convocation, and condemned clerical vestments as ‘rags of Rome’, Archbishop Matthew Parker’s 1566 Book of Advertisements exposed their political weakness when only 37 London ministers accepted dismissal while the vast majority conformed.</p><p>Second, domestic English Catholics remained largely passive throughout the early and mid-1560s due to cautious leadership from Rome alongside Elizabeth’s moderate enforcement. Pope Pius IV avoided excommunicating Elizabeth, and even when Pope Pius V instructed Catholics in 1566 to boycott Anglican services, he issued no call for armed rebellion; facing modest twelve-pence recusancy fines, most Catholic gentry acted as outward ‘Church Papists’ rather than risking treason before Mary Stuart arrived in 1568.</p><p>Finally, Catholic foreign powers were too divided by continental rivalries before 1568 to mount a crusade against England. France plunged into civil Wars of Religion in 1562, while King Philip II of Spain valued English neutrality against France—meaning even when Alba’s 10,000 Spanish troops entered the Netherlands in 1567 and the 1568 Genoese Loan dispute flared, neither power backed an invasion.</p>",
         "pdfUrl": "",
-        "mockUrl": "/units/eee/"
+        "mockUrl": "/units/eee/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "<p>Challenges to the religious settlement were only a small threat between 1559 and 1568 because Puritans still supported Elizabeth as a Protestant queen and only argued about church clothes and crosses. At the same time, most English Catholics quietly went to Sunday church services to avoid fines because the Pope did not tell them to rebel, and France and Spain were too busy with their own problems to invade England.</p>",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. General narrative noting Puritan loyalty, quiet Catholics, and distracted foreign powers without specific 1560s dates, names, or analytical PEEL structure."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "<p>One reason challenges posed a limited threat was <strong>Puritan aims and divisions</strong>. Returning Marian exiles disliked crucifixes and white linen surplices, sparking the 1566 Vestments Controversy under Archbishop Parker’s Book of Advertisements. However, Puritans had no Protestant alternative to Elizabeth and divided over how far to defy her, so only 37 London ministers lost their jobs while most conformed.</p><p>Another reason was cautious <strong>Papal policy before 1569</strong>. Pope Pius IV hoped Elizabeth might return to Rome and did not excommunicate her, and although Pope Pius V told English Catholics in 1566 not to attend Protestant services, he gave no order to overthrow the Queen, encouraging most Catholics to conform outwardly as ‘Church Papists’.</p>",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately develops both stimulus prompts (Puritan aims/divisions and Papal policy before 1569), but omits a third distinct factor beyond the stimulus (foreign Catholic powers France and Spain being distracted by the French Wars of Religion and Dutch Revolt)."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "<p>First, Puritan challenges posed only a limited political threat between 1559 and 1568 because Puritans had no alternative monarch and sought to purify the Church from within rather than depose a Protestant Queen. Although vocal Marian exiles forced Elizabeth to compromise over Royal Chapel crucifixes, came within one vote at the 1563 Convocation, and condemned clerical vestments as ‘rags of Rome’, Archbishop Matthew Parker’s 1566 Book of Advertisements exposed their political weakness when only 37 London ministers accepted dismissal while the vast majority conformed.</p><p>Second, domestic English Catholics remained largely passive throughout the early and mid-1560s due to cautious leadership from Rome alongside Elizabeth’s moderate enforcement. Pope Pius IV avoided excommunicating Elizabeth, and even when Pope Pius V instructed Catholics in 1566 to boycott Anglican services, he issued no call for armed rebellion; facing modest twelve-pence recusancy fines, most Catholic gentry acted as outward ‘Church Papists’ rather than risking treason before Mary Stuart arrived in 1568.</p><p>Finally, Catholic foreign powers were too divided by continental rivalries before 1568 to mount a crusade against England. France plunged into civil Wars of Religion in 1562, while King Philip II of Spain valued English neutrality against France—meaning even when Alba’s 10,000 Spanish troops entered the Netherlands in 1567 and the 1568 Genoese Loan dispute flared, neither power backed an invasion.</p>",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded (217 words). Develops THREE distinct analytical paragraphs combining both stimulus prompts with precise independent own knowledge."
+          }
+        }
       }
     ],
     "lesson_1_4": [
@@ -1778,9 +2249,33 @@ export const MOCK_BANK_P1_P2 = {
           "The Duke of Norfolk"
         ],
         "sourceExtract": "",
-        "modelAnswer": "<p>First, Mary Stuart’s unexpected flight across the Solway Firth to Cumbria in May 1568 placed Elizabeth’s strongest Catholic dynastic rival physically inside England. As the legitimate great-granddaughter of Henry VII via Margaret Tudor, Mary offered English Catholics—especially conservative northern nobility—a living Catholic alternative queen at the exact moment Elizabeth remained unmarried and childless.</p><p>Second, every diplomatic option open to Elizabeth in 1568 carried severe political and security dangers. Helping Mary regain her Scottish throne would destroy England’s Protestant alliance with Regent Moray and revive the Franco-Scottish threat; handing Mary back to Scottish lords for execution risked outrage in Catholic France and Spain; yet allowing her to travel abroad risked a French-backed Catholic invasion.</p><p>Finally, detaining Mary under house arrest after the inconclusive York–Westminster Inquiry (1568–69) immediately destabilised Elizabeth’s own court and nobility. By 1569 a secret court scheme emerged to wed Mary to England’s premier peer, the Duke of Norfolk; when Elizabeth angrily forbade the match and sent Norfolk to the Tower in October 1569, northern earls Northumberland and Westmorland were pushed directly toward armed Catholic rebellion.</p>",
+        "modelAnswer": "<p>First, Mary Stuart’s unexpected flight across the Solway Firth to Workington in May 1568 placed Elizabeth’s strongest Catholic dynastic rival physically inside England. As the legitimate granddaughter of Henry VIII’s elder sister Margaret Tudor—and mother to a male heir, James VI—Mary offered English Catholics, especially traditionalist northern earls, a living Catholic alternative monarch at the exact moment unmarried Elizabeth faced persistent Catholic doubts over her own legitimacy.</p><p>Second, every diplomatic option open to Elizabeth in 1568–69 carried severe security dangers at home or abroad. Sending an English army to restore Mary in Scotland would wreck England’s vital Protestant alliance with Regent Moray; handing Mary back to Scottish rebel lords risked executing an anointed queen; yet letting her sail to France risked a Guise-backed Catholic invasion, forcing Elizabeth to stage the inconclusive 1568–69 York–Westminster Inquiry over the eight Casket Letters just to keep Mary detained.</p><p>Finally, holding Mary captive inside English manor houses immediately destabilised Elizabeth’s court and nobility through marriage intrigue. In 1569 Protestant and Catholic courtiers hatched a secret scheme to wed Mary to England’s premier peer, the Duke of Norfolk; when Elizabeth furiously forbade the match and sent Norfolk to the Tower in October 1569, panicked Catholic earls Northumberland and Westmorland launched open armed rebellion.</p>",
         "pdfUrl": "",
-        "mockUrl": "/units/eee/"
+        "mockUrl": "/units/eee/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "<p>Mary, Queen of Scots arriving in England in May 1568 caused big problems for Elizabeth because Mary was her Catholic cousin with a strong claim to the English throne. Elizabeth could not safely send Mary back to Scotland or let her go to France to get an army, and keeping her locked up in England soon led English nobles like the Duke of Norfolk to plot behind Elizabeth’s back.</p>",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple story identifying Mary's Catholic claim, Elizabeth's dilemma, and Norfolk without specific Tudor lineage, Casket Letters, or 1569 crisis detail."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "<p>One reason Mary’s May 1568 arrival caused serious problems was <strong>Mary’s Tudor claim to the English throne</strong>. Descended legitimately from Henry VIII’s sister Margaret Tudor, Catholic Mary already had a son, James VI, whereas Catholics viewed unmarried Elizabeth as Anne Boleyn’s illegitimate daughter. Having Mary inside England gave northern Catholic earls an immediate figurehead to replace Elizabeth.</p><p>Another reason was intrigue involving <strong>the Duke of Norfolk</strong> in 1569. Courtiers secretly plotted to marry captive Mary to England’s wealthiest nobleman, the Duke of Norfolk, to settle the succession. When Elizabeth discovered the secret plan and imprisoned Norfolk in the Tower in October 1569, northern earls Northumberland and Westmorland feared arrest and rose in rebellion.</p>",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately develops both stimulus prompts (Mary's Tudor claim and the Duke of Norfolk marriage plot), but omits a third distinct factor from own knowledge (Elizabeth's impossible 1568 diplomatic trap between Protestant Scotland and Catholic France and the inconclusive Casket Letters inquiry)."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "<p>First, Mary Stuart’s unexpected flight across the Solway Firth to Workington in May 1568 placed Elizabeth’s strongest Catholic dynastic rival physically inside England. As the legitimate granddaughter of Henry VIII’s elder sister Margaret Tudor—and mother to a male heir, James VI—Mary offered English Catholics, especially traditionalist northern earls, a living Catholic alternative monarch at the exact moment unmarried Elizabeth faced persistent Catholic doubts over her own legitimacy.</p><p>Second, every diplomatic option open to Elizabeth in 1568–69 carried severe security dangers at home or abroad. Sending an English army to restore Mary in Scotland would wreck England’s vital Protestant alliance with Regent Moray; handing Mary back to Scottish rebel lords risked executing an anointed queen; yet letting her sail to France risked a Guise-backed Catholic invasion, forcing Elizabeth to stage the inconclusive 1568–69 York–Westminster Inquiry over the eight Casket Letters just to keep Mary detained.</p><p>Finally, holding Mary captive inside English manor houses immediately destabilised Elizabeth’s court and nobility through marriage intrigue. In 1569 Protestant and Catholic courtiers hatched a secret scheme to wed Mary to England’s premier peer, the Duke of Norfolk; when Elizabeth furiously forbade the match and sent Norfolk to the Tower in October 1569, panicked Catholic earls Northumberland and Westmorland launched open armed rebellion.</p>",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded (207 words). Develops THREE distinct analytical paragraphs combining both stimulus prompts with precise independent own knowledge."
+          }
+        }
       }
     ],
     "lesson_2_1": [
@@ -1852,9 +2347,33 @@ export const MOCK_BANK_P1_P2 = {
           "Sir Francis Drake’s actions in the New World"
         ],
         "sourceExtract": "",
-        "modelAnswer": "<p>First, strategic conflict over the Spanish Netherlands steadily poisoned Anglo-Spanish relations between 1569 and 1585. Because Elizabeth feared a hostile Spanish army occupying Channel ports opposite the Thames, she sheltered Dutch Sea Beggars, seized the £85,000 Genoese Loan (1568), funded John Casimir’s mercenaries, and backed the French Duke of Alençon—convincing Philip II that England was keeping the Dutch Protestant rebellion alive.</p><p>Second, aggressive English privateering and illegal trade in the New World provoked intense commercial and imperial fury from Philip II. During his 1577–80 circumnavigation, Sir Francis Drake raided Spanish settlements in Peru and captured £140,000 of silver treasure aboard the Cacafuego; when Elizabeth publicly knighted Drake on the deck of the Golden Hind in April 1581—just after Philip annexed Portugal—Philip viewed it as state-sponsored piracy.</p><p>Finally, the collapse of anti-Spanish resistance in 1584 forced Elizabeth from indirect aid into open military confrontation. After William of Orange was assassinated in July 1584 and the Duke of Parma besieged Antwerp, the French Catholic League signed the December 1584 Treaty of Joinville with Philip II; facing joint Franco-Spanish Catholic dominance across the Channel, Elizabeth signed the August 1585 Treaty of Nonsuch, triggering war.</p>",
+        "modelAnswer": "<p>First, strategic conflict over the <strong>Dutch Revolt in the Spanish Netherlands</strong> steadily poisoned Anglo-Spanish relations between 1569 and 1585. Because Elizabeth could never tolerate a hostile Spanish army holding deep-water Channel ports opposite the Thames, she sheltered Dutch Protestant ‘Sea Beggars’, retained the £85,000 Genoese Loan (1568), funded John Casimir’s mercenaries, and subsidised the French Duke of Alençon—convincing Philip II that English meddling alone kept Dutch rebellion alive while Spain retaliated by backing the Ridolfi (1571) and Throckmorton (1583) plots.</p><p>Second, <strong>Sir Francis Drake’s privateering in the New World</strong> provoked intense commercial and imperial outrage from Philip II. Challenging Spain’s strict trade monopoly after the raids on Nombre de Dios (1572), Drake sailed the <em>Golden Hind</em> around the globe in 1577–80, looting Pacific ports and £140,000 of silver from the <em>Cacafuego</em> within a ~£400,000 haul; when Elizabeth publicly knighted Drake at Deptford in April 1581—just after Spain annexed Portugal—Philip saw Elizabeth as a state sponsor of piracy.</p><p>Finally, twin strategic shocks in 1584 shattered indirect diplomacy and forced open military confrontation. After an assassin killed Dutch rebel leader William of Orange in July 1584 and the Duke of Parma besieged Antwerp, the French Catholic League signed the December 1584 Treaty of Joinville with Philip II; facing combined Franco-Spanish Catholic encirclement, Elizabeth signed the August 1585 Treaty of Nonsuch, triggering war.</p>",
         "pdfUrl": "",
-        "mockUrl": "/units/eee/"
+        "mockUrl": "/units/eee/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "<p>Relations between England and Spain got much worse between 1569 and 1585 because Elizabeth secretly helped Dutch Protestant rebels who were fighting against Spanish rule across the Channel. At the same time, Sir Francis Drake kept attacking Spanish ships in America to steal their silver and Elizabeth even knighted him, while Spain backed Catholic plots to put Mary, Queen of Scots on the throne until war broke out in 1585.</p>",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. General narrative mentioning Dutch rebels, Drake stealing silver, and Catholic plots without specific dates, treaties, or sustained analytical explanation."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "<p>One reason relations deteriorated was English interference in <strong>the Dutch Revolt</strong>. Fearing a powerful Spanish army stationed right across the Narrow Seas, Elizabeth sheltered Dutch Sea Beggars, kept the £85,000 Genoese gold loan meant for Alba’s troops, and secretly sent money to help William of Orange’s Protestant rebels resist Philip II’s rule.</p><p>Another reason was <strong>Sir Francis Drake’s actions in the New World</strong>. Drake raided Nombre de Dios in 1572 and during his 1577–80 circumnavigation in the <em>Golden Hind</em> captured £140,000 in treasure from the Spanish ship <em>Cacafuego</em>. Instead of punishing him as ambassador Mendoza demanded, Elizabeth publicly knighted Drake at Deptford in April 1581, infuriating Philip II.</p>",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately develops both stimulus prompts (the Dutch Revolt and Drake's New World raids), but omits a third distinct factor from own knowledge (Spanish-backed Ridolfi/Throckmorton plots or the 1584 murder of William of Orange and Treaty of Joinville forcing the 1585 Treaty of Nonsuch)."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "<p>First, strategic conflict over the <strong>Dutch Revolt in the Spanish Netherlands</strong> steadily poisoned Anglo-Spanish relations between 1569 and 1585. Because Elizabeth could never tolerate a hostile Spanish army holding deep-water Channel ports opposite the Thames, she sheltered Dutch Protestant ‘Sea Beggars’, retained the £85,000 Genoese Loan (1568), funded John Casimir’s mercenaries, and subsidised the French Duke of Alençon—convincing Philip II that English meddling alone kept Dutch rebellion alive while Spain retaliated by backing the Ridolfi (1571) and Throckmorton (1583) plots.</p><p>Second, <strong>Sir Francis Drake’s privateering in the New World</strong> provoked intense commercial and imperial outrage from Philip II. Challenging Spain’s strict trade monopoly after the raids on Nombre de Dios (1572), Drake sailed the <em>Golden Hind</em> around the globe in 1577–80, looting Pacific ports and £140,000 of silver from the <em>Cacafuego</em> within a ~£400,000 haul; when Elizabeth publicly knighted Drake at Deptford in April 1581—just after Spain annexed Portugal—Philip saw Elizabeth as a state sponsor of piracy.</p><p>Finally, twin strategic shocks in 1584 shattered indirect diplomacy and forced open military confrontation. After an assassin killed Dutch rebel leader William of Orange in July 1584 and the Duke of Parma besieged Antwerp, the French Catholic League signed the December 1584 Treaty of Joinville with Philip II; facing combined Franco-Spanish Catholic encirclement, Elizabeth signed the August 1585 Treaty of Nonsuch, triggering war.</p>",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded (220 words). Develops THREE distinct analytical paragraphs combining both stimulus prompts with precise independent own knowledge."
+          }
+        }
       }
     ],
     "lesson_2_3": [
@@ -1889,9 +2408,33 @@ export const MOCK_BANK_P1_P2 = {
           "Divisions with the Dutch Estates"
         ],
         "sourceExtract": "",
-        "modelAnswer": "<p>First, Elizabeth’s chronic underfunding and strategic hesitation crippled Leicester’s military effectiveness from the outset. Determined to avoid all-out war and keep intact royal finances, Elizabeth sent poorly equipped troops, starved them of regular pay, and pursued secret peace feelers toward Parma—leaving Leicester unable to mount decisive offensives against Spain’s disciplined Army of Flanders.</p><p>Second, bitter political friction erupted between Leicester, Elizabeth, and the Dutch Estates General. In January 1586 Leicester accepted the title \"Governor-General of the Netherlands\" without consulting Elizabeth, infuriating the Queen because it implied deposing Philip II’s lawful sovereignty, while Leicester’s trade restrictions alienated wealthy Dutch merchants in Holland and Zeeland.</p><p>Finally, military treacheries by English Catholic officers fatally undermined Dutch trust in English leadership. Although English forces prevented Parma from capturing deep-water Channel ports like Ostend, in January 1587 Sir William Stanley and Rowland York defected to Spain and handed over the town of Deventer and the Zutphen fort, forcing Leicester’s recall later that year.</p>",
+        "modelAnswer": "<p>First, <strong>Elizabeth’s strategic reluctance and chronic underfunding</strong> crippled Leicester’s 7,400-strong expeditionary force from the moment the Treaty of Nonsuch was signed in August 1585. Still hoping to negotiate a compromise peace with Philip II rather than wage all-out war, Elizabeth starved Leicester’s soldiers of wages, gunpowder, and reinforcements while opening secret diplomatic feelers to the Spanish commander, the Duke of Parma—leaving unpaid, ragged English garrisons unable to mount decisive offensives against Parma’s veteran Army of Flanders.</p><p>Second, bitter political clashes erupted through <strong>divisions with Elizabeth and the Dutch Estates General</strong>. In January 1586 Leicester accepted the supreme title ‘Governor-General of the Netherlands’ without royal permission, provoking a furious public rebuke from Elizabeth because it implied deposing Philip II’s lawful sovereignty, while Leicester’s April 1586 ban on Dutch merchant shipping trading with Spanish territories alienated wealthy Holland and Zeeland burghers who funded the Dutch war effort.</p><p>Finally, <strong>high-profile military defections by English Catholic officers</strong> shattered Dutch trust in English command during 1587. Although English troops prevented Parma seizing deep-water Ostend, in January 1587 unpaid garrisons under Sir William Stanley surrendered the key town of Deventer and Rowland Yorke betrayed the Zutphen fort directly to Parma’s Spaniards, paralysing Anglo-Dutch cooperation, contributing to the loss of Sluys, and forcing Leicester’s recall late in 1587.</p>",
         "pdfUrl": "",
-        "mockUrl": "/units/eee/"
+        "mockUrl": "/units/eee/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "<p>Robert Dudley’s campaign in the Netherlands between 1585 and 1587 had limited success because Queen Elizabeth did not send enough money or supplies to pay her soldiers properly against Spain’s strong army. Dudley also fell out with both Elizabeth and Dutch leaders after taking a grand title and banning Dutch trade, and two of his own commanders even switched sides and handed towns over to Spain.</p>",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple narrative mentioning poor pay, arguments over titles/trade, and commanders switching sides without specific names, dates, or treaty detail."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "<p>One reason Leicester achieved limited success was <strong>Elizabeth’s reluctance and underfunding</strong>. Despite promising 7,400 soldiers under the 1585 Treaty of Nonsuch, Elizabeth still hoped for peace talks with Spain and refused to send enough money, leaving English troops unpaid, poorly equipped, and too weak to defeat the Duke of Parma’s experienced Spanish army.</p><p>Another reason was <strong>divisions with the Dutch Estates</strong> and the Queen. In January 1586 Dudley accepted the title ‘Governor-General of the Netherlands’ without asking Elizabeth, humiliating him when she furiously objected, while his strict ban on merchants trading with Spain angered rich Dutch leaders in Holland and Zeeland who controlled war taxes.</p>",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately develops both stimulus prompts (Elizabeth's underfunding and divisions with the Dutch Estates), but omits a third distinct factor beyond the stimulus (the January 1587 Catholic defections of Sir William Stanley at Deventer and Rowland Yorke at Zutphen)."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "<p>First, <strong>Elizabeth’s strategic reluctance and chronic underfunding</strong> crippled Leicester’s 7,400-strong expeditionary force from the moment the Treaty of Nonsuch was signed in August 1585. Still hoping to negotiate a compromise peace with Philip II rather than wage all-out war, Elizabeth starved Leicester’s soldiers of wages, gunpowder, and reinforcements while opening secret diplomatic feelers to the Spanish commander, the Duke of Parma—leaving unpaid, ragged English garrisons unable to mount decisive offensives against Parma’s veteran Army of Flanders.</p><p>Second, bitter political clashes erupted through <strong>divisions with Elizabeth and the Dutch Estates General</strong>. In January 1586 Leicester accepted the supreme title ‘Governor-General of the Netherlands’ without royal permission, provoking a furious public rebuke from Elizabeth because it implied deposing Philip II’s lawful sovereignty, while Leicester’s April 1586 ban on Dutch merchant shipping trading with Spanish territories alienated wealthy Holland and Zeeland burghers who funded the Dutch war effort.</p><p>Finally, <strong>high-profile military defections by English Catholic officers</strong> shattered Dutch trust in English command during 1587. Although English troops prevented Parma seizing deep-water Ostend, in January 1587 unpaid garrisons under Sir William Stanley surrendered the key town of Deventer and Rowland Yorke betrayed the Zutphen fort directly to Parma’s Spaniards, paralysing Anglo-Dutch cooperation, contributing to the loss of Sluys, and forcing Leicester’s recall late in 1587.</p>",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded (212 words). Develops THREE distinct analytical paragraphs combining both stimulus prompts with precise independent own knowledge."
+          }
+        }
       }
     ],
     "lesson_2_4": [
@@ -1963,9 +2506,33 @@ export const MOCK_BANK_P1_P2 = {
           "The needs of trade and government"
         ],
         "sourceExtract": "",
-        "modelAnswer": "<p>First, the triumph of Protestantism and Renaissance humanism created powerful religious and intellectual pressure to expand literacy. Protestants believed individuals should read the English Bible and Book of Common Prayer for themselves to secure salvation, while humanist scholars like Roger Ascham championed classical learning—inspiring wealthy benefactors to endow over 70 new grammar schools and new Oxford and Cambridge colleges such as Emmanuel College (1584) to train educated Protestant preachers.</p><p>Second, growing overseas commerce and royal administration increased practical demand for literate, numerate men among the middling sorts and gentry. Merchants trading through new joint-stock companies needed sons skilled in accounting, navigation, and foreign correspondence, while gentry families sent sons to grammar schools, universities, and the Inns of Court so they could serve effectively as Justices of the Peace and MPs.</p><p>Finally, the spread of printing presses made books, primers, and hornbooks cheaper and far more accessible, even though educational growth remained sharply limited by class and gender. Petty and Dame schools taught basic reading and arithmetic to townspeople’s children, raising male literacy to roughly 30% by the end of Elizabeth’s reign—whereas female literacy stayed around 10% and the vast majority of rural labourers’ children remained unlettered field workers.</p>",
+        "modelAnswer": "<p>First, the triumph of <strong>Protestantism and Renaissance humanist ideas</strong> created powerful religious and intellectual momentum to expand schooling between 1558 and 1588. Protestants believed personal salvation depended on individuals reading the English Bible and Book of Common Prayer for themselves, while humanist thinkers like Roger Ascham championed classical Latin, Greek, and civic virtue—inspiring wealthy merchants and gentry to endow over 70 new town grammar schools alongside Protestant colleges such as Emmanuel College, Cambridge (1584) and Jesus College, Oxford (1571) to train educated clergy.</p><p>Second, expanding <strong>overseas trade and royal government</strong> sharply increased practical demand for literate, numerate men among the gentry and middling sorts. Merchants investing in new joint-stock ventures like the Muscovy and Levant Companies needed sons skilled in commercial arithmetic, navigation, and foreign correspondence, while ambitious gentry families sent sons through grammar schools, Oxford, Cambridge, and London’s Inns of Court to serve as Justices of the Peace, MPs, and royal administrators.</p><p>Finally, the wider availability of <strong>cheaper printed books and urban petty and dame schools</strong> broadened basic elementary literacy, albeit unevenly. Printed hornbooks and primers enabled local petty schools to teach townsboys reading, writing, and sums—lifting male literacy from roughly 20% to 30% by 1588, even though female literacy lagged near 10% and rural labourers’ children still worked the fields.</p>",
         "pdfUrl": "",
-        "mockUrl": "/units/eee/"
+        "mockUrl": "/units/eee/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "<p>Educational opportunities increased in Elizabethan England because Protestants wanted ordinary people to be able to read the Bible in English for themselves, and humanist writers valued learning. At the same time, growing overseas trade and local government meant merchants and gentry needed sons who could read, write, and count, leading rich townspeople to pay for dozens of new grammar schools and petty schools.</p>",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple explanation mentioning English Bibles, merchants, and grammar schools without specific statistics, colleges, or class/gender precision."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "<p>One reason educational opportunities grew was <strong>Protestantism and humanist ideas</strong>. Protestants encouraged people to read the English Bible themselves rather than rely on Latin priests, while humanists like Roger Ascham promoted classical study to improve society. Consequently, wealthy benefactors founded over 70 new grammar schools in the 1560s and 1570s, offering scholarships for bright poorer boys alongside fee-paying sons.</p><p>Another reason was <strong>the needs of trade and government</strong>. Expanding overseas trade companies required merchants’ sons who could keep accounts and write letters, while Elizabethan government relied on educated gentry serving as unpaid Justices of the Peace and MPs, driving booming admissions at Oxford, Cambridge, and the Inns of Court.</p>",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately develops both stimulus prompts (Protestantism/humanism and needs of trade/government), but omits a third distinct factor beyond the stimulus (printing-press primers, urban petty/dame schools, and the 30% male vs 10% female literacy shift)."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "<p>First, the triumph of <strong>Protestantism and Renaissance humanist ideas</strong> created powerful religious and intellectual momentum to expand schooling between 1558 and 1588. Protestants believed personal salvation depended on individuals reading the English Bible and Book of Common Prayer for themselves, while humanist thinkers like Roger Ascham championed classical Latin, Greek, and civic virtue—inspiring wealthy merchants and gentry to endow over 70 new town grammar schools alongside Protestant colleges such as Emmanuel College, Cambridge (1584) and Jesus College, Oxford (1571) to train educated clergy.</p><p>Second, expanding <strong>overseas trade and royal government</strong> sharply increased practical demand for literate, numerate men among the gentry and middling sorts. Merchants investing in new joint-stock ventures like the Muscovy and Levant Companies needed sons skilled in commercial arithmetic, navigation, and foreign correspondence, while ambitious gentry families sent sons through grammar schools, Oxford, Cambridge, and London’s Inns of Court to serve as Justices of the Peace, MPs, and royal administrators.</p><p>Finally, the wider availability of <strong>cheaper printed books and urban petty and dame schools</strong> broadened basic elementary literacy, albeit unevenly. Printed hornbooks and primers enabled local petty schools to teach townsboys reading, writing, and sums—lifting male literacy from roughly 20% to 30% by 1588, even though female literacy lagged near 10% and rural labourers’ children still worked the fields.</p>",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded (212 words). Develops THREE distinct analytical paragraphs combining both stimulus prompts with precise independent own knowledge."
+          }
+        }
       }
     ],
     "lesson_3_2": [
@@ -2000,9 +2567,33 @@ export const MOCK_BANK_P1_P2 = {
           "Changing attitudes towards the deserving poor"
         ],
         "sourceExtract": "",
-        "modelAnswer": "<p>First, Elizabethan authorities passed national legislation because soaring poverty and masterless vagabonds were seen as a dangerous threat to Tudor law, order, and the Great Chain of Being. As population grew from roughly 3 million to 4 million alongside inflation, bad harvests, and the 1568 Antwerp cloth slump, pamphlets like Thomas Harman’s Caveat for Common Cursitors (1566) fuelled elite panic that wandering sturdy beggars spread crime, plague, and sedition—prompting harsh deterrence in the 1572 Vagabonds Act (ear-boring and hanging for repeat offenders).</p><p>Second, municipal experiments in towns such as Norwich, Ipswich, and York convinced Parliament and the Privy Council that unemployment often stemmed from genuine economic misfortune rather than personal laziness. Recognising that traditional monastic charity had vanished and voluntary parish alms were inadequate, the 1563 Statute of Artificers and 1572 Vagabonds Act introduced a compulsory local poor rate collected by Justices of the Peace to support the aged, sick, and orphaned \"impotent\" poor.</p><p>Finally, lawmakers realised that punishing able-bodied beggars failed when honest work simply did not exist during trade depressions. Consequently, the 1576 Poor Relief Act required local JPs to provide raw materials such as wool, flax, and hemp so unemployed \"able-bodied\" paupers could earn relief through productive labour, while sending stubbornly idle refusers to newly created Houses of Correction.</p>",
+        "modelAnswer": "<p>First, Elizabethan governments passed national Poor Laws because <strong>acute fear of vagabondage and rebellion</strong> convinced elites that masterless wandering beggars threatened Tudor order and the Great Chain of Being. As population climbed from roughly 3 million toward 4 million alongside sheep enclosure, bad harvests, and the 1568 Antwerp cloth embargo, sensationalist pamphlets like Thomas Harman’s <em>Caveat for Common Cursitors</em> (1567) fuelled gentry panic that ‘sturdy beggars’ spread crime, plague, and Catholic sedition—driving harsh physical deterrence in the 1572 Vagabonds Act (whipping, ear-boring, and hanging for repeat vagrancy).</p><p>Second, <strong>changing attitudes towards the ‘deserving’ or impotent poor</strong>—pioneered in progressive towns like Norwich, Ipswich, and York—persuaded Parliament that voluntary charity could no longer cope after Henry VIII’s Dissolution of the Monasteries. Recognising a Christian civic duty to support the aged, sick, and orphaned, the 1563 Statute of Artificers and 1572 Vagabonds Act introduced a compulsory parish poor rate collected by Justices of the Peace.</p><p>Finally, lawmakers realised by the mid-1570s that whipping able-bodied adults failed when trade slumps destroyed rural and textile jobs through no fault of the worker. Consequently, the 1576 Poor Relief Act ordered JPs to supply raw wool, flax, and hemp so genuinely unemployed paupers could earn relief productively while confining stubborn refusers in Bridewell Houses of Correction.</p>",
         "pdfUrl": "",
-        "mockUrl": "/units/eee/"
+        "mockUrl": "/units/eee/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "<p>Elizabethan governments brought in new Poor Laws between 1563 and 1576 because the number of wandering beggars was growing fast and rich landowners were scared they would cause crime or rebellions. At the same time, MPs began to realise that elderly, sick, and unemployed people were not all lazy criminals, so they taxed parishes to help the genuinely poor and gave wool to jobless workers.</p>",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. General summary mentioning fear of crime/rebellion and helping the genuinely poor without naming the 1563, 1572, or 1576 Acts or Thomas Harman."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "<p>One reason Parliament passed new laws was <strong>fear of vagabondage and rebellion</strong>. As population growth and sheep enclosure pushed jobless men onto the roads, writers like Thomas Harman (1567) warned of criminal gangs of ‘sturdy beggars’, while Elizabeth feared rootless vagrants might join rebellions like the 1569 Northern Rising. Consequently, the 1572 Vagabonds Act ordered unlicensed beggars whipped and bored through the ear.</p><p>Another reason was <strong>changing attitudes towards the deserving poor</strong>. Following successful town schemes in Norwich and York, MPs accepted that elderly, disabled ‘impotent poor’—and able-bodied weavers hit by cloth slumps—needed organized help, leading to compulsory parish poor rates in 1572 and raw wool work-stocks under the 1576 Poor Relief Act.</p>",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately develops both stimulus prompts (fear of vagabondage and changing attitudes toward the deserving poor), but omits a third distinct structural factor from own knowledge (the collapse of medieval monastic alms alongside 3m-to-4m demographic inflation forcing national state taxation)."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "<p>First, Elizabethan governments passed national Poor Laws because <strong>acute fear of vagabondage and rebellion</strong> convinced elites that masterless wandering beggars threatened Tudor order and the Great Chain of Being. As population climbed from roughly 3 million toward 4 million alongside sheep enclosure, bad harvests, and the 1568 Antwerp cloth embargo, sensationalist pamphlets like Thomas Harman’s <em>Caveat for Common Cursitors</em> (1567) fuelled gentry panic that ‘sturdy beggars’ spread crime, plague, and Catholic sedition—driving harsh physical deterrence in the 1572 Vagabonds Act (whipping, ear-boring, and hanging for repeat vagrancy).</p><p>Second, <strong>changing attitudes towards the ‘deserving’ or impotent poor</strong>—pioneered in progressive towns like Norwich, Ipswich, and York—persuaded Parliament that voluntary charity could no longer cope after Henry VIII’s Dissolution of the Monasteries. Recognising a Christian civic duty to support the aged, sick, and orphaned, the 1563 Statute of Artificers and 1572 Vagabonds Act introduced a compulsory parish poor rate collected by Justices of the Peace.</p><p>Finally, lawmakers realised by the mid-1570s that whipping able-bodied adults failed when trade slumps destroyed rural and textile jobs through no fault of the worker. Consequently, the 1576 Poor Relief Act ordered JPs to supply raw wool, flax, and hemp so genuinely unemployed paupers could earn relief productively while confining stubborn refusers in Bridewell Houses of Correction.</p>",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded (210 words). Develops THREE distinct analytical paragraphs combining both stimulus prompts with precise independent own knowledge."
+          }
+        }
       }
     ],
     "lesson_3_3": [
@@ -2074,9 +2665,33 @@ export const MOCK_BANK_P1_P2 = {
           "Relations with Indigenous Algonquian peoples"
         ],
         "sourceExtract": "",
-        "modelAnswer": "<p>First, disastrous logistical timing and the loss of vital supplies aboard the flagship Tiger left the 1585 Roanoke settlement critically dependent on outside food from day one. Sailing too late in April 1585 to plant spring crops, the fleet struck a sandbar at Ocracoke Inlet in June, flooding the Tiger’s hold with seawater and ruining most of the colonists’ seed corn, salt, and preserved rations.</p><p>Second, mismatched colonist skills and violent conflict with local Secotan communities destroyed the colony’s chance of local survival. Nearly half of the 107 settlers were soldiers expecting instant gold rather than farmers, while diseases and Ralph Lane’s aggressive demands for winter maize alienated Chief Wingina (Pemisapan); after Lane launched a pre-emptive killing of Wingina in June 1586, hostile Algonquian tribes cut off food, prompting the colonists to abandon Roanoke aboard Drake’s fleet.</p><p>Finally, the outbreak of naval war with Spain in 1585–88 starved John White’s second 1587 family colony of essential relief ships. Although White returned to England in late 1587 to fetch emergency supplies for 115 men, women, and children at Roanoke, Elizabeth requisitioned every seaworthy English vessel in 1588 to defend the Channel against the Spanish Armada—preventing White from returning until 1590, when the settlement stood deserted with only \"CROATOAN\" carved on a post.</p>",
+        "modelAnswer": "<p>First, disastrous logistical timing and <strong>supply shortages caused by the wreck of the flagship <em>Tiger</em></strong> crippled the 1585 Roanoke expedition from arrival. Sailing from Plymouth in April 1585—already too late in the season to plant spring crops—Sir Richard Grenville’s flagship <em>Tiger</em> struck a shallow sandbar at Ocracoke Inlet in June, flooding its hold with seawater and ruining most of the settlers’ seed corn, salt, and preserved rations while skewed recruitment left half of the 107 all-male colonists soldiers and gentlemen rather than skilled farmers.</p><p>Second, <strong>deteriorating relations with Indigenous Algonquian peoples</strong> destroyed the garrison’s only local food lifeline in 1585–86. Unable to feed themselves, governor Ralph Lane’s hungry soldiers demanded scarce winter maize from Chief Wingina’s Secotan villages while spreading lethal Old World epidemics; once Wingina (renamed Pemisapan) held back grain and planned resistance, Lane ambushed and beheaded him in June 1586, prompting surrounding tribes to cut off food and forcing the starving colonists to evacuate aboard Drake’s passing fleet.</p><p>Finally, <strong>escalating naval war with Spain in 1585–88 starved John White’s second 1587 family colony of essential resupply</strong>. When Governor White sailed back to England late in 1587 to fetch urgent tools and provisions for 118 men, women, and children—including baby Virginia Dare—on Roanoke Island, Queen Elizabeth issued a general stay of shipping in spring 1588 requisitioning every seaworthy English vessel, including Grenville’s relief ships, to fight the Spanish Armada, leaving Roanoke stranded without supplies throughout 1588.</p>",
         "pdfUrl": "",
-        "mockUrl": "/units/eee/"
+        "mockUrl": "/units/eee/",
+        "model_tiers": {
+          "tier_3m": {
+            "title": "3/12 Simple Story",
+            "score": "3 / 12 Marks",
+            "level": "Level 1 Bottom (Story/Assertion)",
+            "text": "<p>English attempts to colonise Virginia failed between 1585 and 1588 because their main supply ship hit a sandbar and seawater ruined the seeds they needed to grow food, while too many soldiers went instead of farmers. The settlers then fought and killed the local Native American chief who had been feeding them, and in 1588 the Spanish Armada stopped relief ships sailing out to save the second colony.</p>",
+            "verdict": "AO1/AO2 (3 marks). Level 1 Bottom. Simple narrative touching on ruined seeds, fighting Native Americans, and the 1588 Armada without specific names (Tiger, Lane, Wingina, John White) or analytical PEEL links."
+          },
+          "tier_6m": {
+            "title": "6/12 Descriptive Account",
+            "score": "6 / 12 Marks",
+            "level": "Level 2 (Descriptive Account / Two Factors Only)",
+            "text": "<p>One reason colonisation failed in 1585–88 was <strong>supply shortages and the wreck of the <em>Tiger</em></strong>. Leaving England too late in April 1585 to plant spring harvests, flagship <em>Tiger</em> grounded on an Ocracoke sandbar in June 1585, soaking the expedition’s seed corn and salt stores in seawater, while the 107 male settlers included too many treasure-hunting gentlemen and soldiers rather than farmers.</p><p>Another reason was hostile <strong>relations with Indigenous Algonquian peoples</strong>. Dependent on Secotan food traps and corn over winter, governor Ralph Lane alienated Chief Wingina (Pemisapan) through heavy food demands and disease; after Lane killed Wingina in a June 1586 ambush, Algonquian tribes cut off supplies and Lane’s men fled back to England with Francis Drake.</p>",
+            "verdict": "AO1/AO2 (6 marks). Level 2 Maximum (Mark Scheme Level Ceiling). Accurately develops both stimulus prompts (wreck of the Tiger and Algonquian conflict in 1585–86), but omits a third distinct factor explaining failure through 1588 (Elizabeth's spring 1588 Armada shipping requisition stranding John White's 1587 Roanoke settlers without relief)."
+          },
+          "tier_12m": {
+            "title": "12/12 Grade 9 Exam ★",
+            "score": "12 / 12 Marks",
+            "level": "Level 4 Top (Pearson Exam Standard)",
+            "badge": "Edexcel Benchmark",
+            "text": "<p>First, disastrous logistical timing and <strong>supply shortages caused by the wreck of the flagship <em>Tiger</em></strong> crippled the 1585 Roanoke expedition from arrival. Sailing from Plymouth in April 1585—already too late in the season to plant spring crops—Sir Richard Grenville’s flagship <em>Tiger</em> struck a shallow sandbar at Ocracoke Inlet in June, flooding its hold with seawater and ruining most of the settlers’ seed corn, salt, and preserved rations while skewed recruitment left half of the 107 all-male colonists soldiers and gentlemen rather than skilled farmers.</p><p>Second, <strong>deteriorating relations with Indigenous Algonquian peoples</strong> destroyed the garrison’s only local food lifeline in 1585–86. Unable to feed themselves, governor Ralph Lane’s hungry soldiers demanded scarce winter maize from Chief Wingina’s Secotan villages while spreading lethal Old World epidemics; once Wingina (renamed Pemisapan) held back grain and planned resistance, Lane ambushed and beheaded him in June 1586, prompting surrounding tribes to cut off food and forcing the starving colonists to evacuate aboard Drake’s passing fleet.</p><p>Finally, <strong>escalating naval war with Spain in 1585–88 starved John White’s second 1587 family colony of essential resupply</strong>. When Governor White sailed back to England late in 1587 to fetch urgent tools and provisions for 118 men, women, and children—including baby Virginia Dare—on Roanoke Island, Queen Elizabeth issued a general stay of shipping in spring 1588 requisitioning every seaworthy English vessel, including Grenville’s relief ships, to fight the Spanish Armada, leaving Roanoke stranded without supplies throughout 1588.</p>",
+            "verdict": "AO1/AO2 (12 marks). Full marks awarded (238 words). Develops THREE distinct analytical paragraphs combining both stimulus prompts with precise independent own knowledge."
+          }
+        }
       }
     ]
   }

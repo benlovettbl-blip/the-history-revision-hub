@@ -38,6 +38,22 @@ import {
   KS2_MAYA_WORKSHEETS_MAP,
   KS2_MAYA_TEACHER_GUIDANCE,
 } from './ks2_maya_guidance.js';
+import {
+  KS2_CRIME_PUNISHMENT_WORKSHEETS_MAP,
+  KS2_CRIME_PUNISHMENT_TEACHER_GUIDANCE,
+} from './ks2_crime_punishment_guidance.js';
+import {
+  KS2_BENIN_WORKSHEETS_MAP,
+  KS2_BENIN_TEACHER_GUIDANCE,
+} from './ks2_benin_guidance.js';
+import {
+  KS2_VICTORIAN_WORKSHEETS_MAP,
+  KS2_VICTORIAN_TEACHER_GUIDANCE,
+} from './ks2_victorian_guidance.js';
+import {
+  KS2_LOCAL_HISTORY_WORKSHEETS_MAP,
+  KS2_LOCAL_HISTORY_TEACHER_GUIDANCE,
+} from './ks2_local_history_guidance.js';
 
 // Backwards-compatible alias normalization across all KS2 modular guidance packs
 [
@@ -48,6 +64,10 @@ import {
   ...Object.values(KS2_GREECE_TEACHER_GUIDANCE),
   ...Object.values(KS2_BAGHDAD_TEACHER_GUIDANCE),
   ...Object.values(KS2_MAYA_TEACHER_GUIDANCE),
+  ...Object.values(KS2_CRIME_PUNISHMENT_TEACHER_GUIDANCE),
+  ...Object.values(KS2_BENIN_TEACHER_GUIDANCE),
+  ...Object.values(KS2_VICTORIAN_TEACHER_GUIDANCE),
+  ...Object.values(KS2_LOCAL_HISTORY_TEACHER_GUIDANCE),
 ].forEach((g) => {
   if (g && g.answers) {
     g.answers.block1 = g.answers.task1;
@@ -73,6 +93,10 @@ function detectActiveKs2UnitId() {
   if (cand === 'ks2_ancient_greece') return 'ks2_ancient_greece';
   if (cand === 'ks2_early_islamic_baghdad') return 'ks2_early_islamic_baghdad';
   if (cand === 'ks2_maya_civilisation') return 'ks2_maya_civilisation';
+  if (cand === 'ks2_kingdom_of_benin') return 'ks2_kingdom_of_benin';
+  if (cand === 'ks2_victorian_britain') return 'ks2_victorian_britain';
+  if (cand === 'ks2_crime_and_punishment') return 'ks2_crime_and_punishment';
+  if (cand === 'ks2_local_history_detective') return 'ks2_local_history_detective';
   return 'ks2_ww2';
 }
 
@@ -195,6 +219,74 @@ function getActiveKs2UnitConfig(explicitUnitId) {
       sowLabel: '6-Lesson Scheme of Work',
       wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
       skillsPeriod: 'c. 2000 BC–AD 1500',
+    };
+  }
+  if (unitId === 'ks2_crime_and_punishment') {
+    return {
+      unitId: 'ks2_crime_and_punishment',
+      worksheetsMap: KS2_CRIME_PUNISHMENT_WORKSHEETS_MAP,
+      guidanceMap: KS2_CRIME_PUNISHMENT_TEACHER_GUIDANCE,
+      totalLessons: 6,
+      workbookPagesLabel: '16-Page',
+      fullWorkbookUrl: '/units/ks2_crime_and_punishment/pupil_workbook.html',
+      fullWorkbookPdf: '/pdfs/ks2_crime_and_punishment_pupil_workbook.pdf',
+      spineWorkbookUrl: '/units/ks2_crime_and_punishment/pupil_workbook_spine.html',
+      spineWorkbookPdf: '/pdfs/ks2_crime_and_punishment_pupil_workbook_spine.pdf',
+      sowUrl: '/units/ks2_crime_and_punishment/ks2_crime_and_punishment_scheme_of_work.html',
+      sowLabel: '6-Lesson Scheme of Work',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
+      skillsPeriod: 'AD 43–Present',
+    };
+  }
+  if (unitId === 'ks2_kingdom_of_benin') {
+    return {
+      unitId: 'ks2_kingdom_of_benin',
+      worksheetsMap: KS2_BENIN_WORKSHEETS_MAP,
+      guidanceMap: KS2_BENIN_TEACHER_GUIDANCE,
+      totalLessons: 6,
+      workbookPagesLabel: '16-Page',
+      fullWorkbookUrl: '/units/ks2_kingdom_of_benin/pupil_workbook.html',
+      fullWorkbookPdf: '/pdfs/ks2_kingdom_of_benin_pupil_workbook.pdf',
+      spineWorkbookUrl: '/units/ks2_kingdom_of_benin/pupil_workbook_spine.html',
+      spineWorkbookPdf: '/pdfs/ks2_kingdom_of_benin_pupil_workbook_spine.pdf',
+      sowUrl: '/units/ks2_kingdom_of_benin/ks2_kingdom_of_benin_scheme_of_work.html',
+      sowLabel: '6-Lesson Scheme of Work',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
+      skillsPeriod: 'c. AD 900–1897',
+    };
+  }
+  if (unitId === 'ks2_victorian_britain') {
+    return {
+      unitId: 'ks2_victorian_britain',
+      worksheetsMap: KS2_VICTORIAN_WORKSHEETS_MAP,
+      guidanceMap: KS2_VICTORIAN_TEACHER_GUIDANCE,
+      totalLessons: 6,
+      workbookPagesLabel: '16-Page',
+      fullWorkbookUrl: '/units/ks2_victorian_britain/pupil_workbook.html',
+      fullWorkbookPdf: '/pdfs/ks2_victorian_britain_pupil_workbook.pdf',
+      spineWorkbookUrl: '/units/ks2_victorian_britain/pupil_workbook_spine.html',
+      spineWorkbookPdf: '/pdfs/ks2_victorian_britain_pupil_workbook_spine.pdf',
+      sowUrl: '/units/ks2_victorian_britain/ks2_victorian_britain_scheme_of_work.html',
+      sowLabel: '6-Lesson Scheme of Work',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
+      skillsPeriod: '1837–1901',
+    };
+  }
+  if (unitId === 'ks2_local_history_detective') {
+    return {
+      unitId: 'ks2_local_history_detective',
+      worksheetsMap: KS2_LOCAL_HISTORY_WORKSHEETS_MAP,
+      guidanceMap: KS2_LOCAL_HISTORY_TEACHER_GUIDANCE,
+      totalLessons: 6,
+      workbookPagesLabel: '16-Page',
+      fullWorkbookUrl: '/units/ks2_local_history_detective/pupil_workbook.html',
+      fullWorkbookPdf: '/pdfs/ks2_local_history_detective_pupil_workbook.pdf',
+      spineWorkbookUrl: '/units/ks2_local_history_detective/pupil_workbook_spine.html',
+      spineWorkbookPdf: '/pdfs/ks2_local_history_detective_pupil_workbook_spine.pdf',
+      sowUrl: '/units/ks2_local_history_detective/ks2_local_history_detective_scheme_of_work.html',
+      sowLabel: '6-Lesson Scheme of Work',
+      wagollAgeLabel: 'Key Stage 2 Aspirational Model Answer',
+      skillsPeriod: 'AD 43–Present',
     };
   }
   return {

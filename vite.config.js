@@ -919,14 +919,29 @@ export default defineConfig({
               priority: 80,
             },
             {
+              name: 'ks2-guidance-packs',
+              test: /src[\\/]engine[\\/]ks2_[a-z0-9_]+_guidance\.js/,
+              priority: 78,
+            },
+            {
               name: 'exam-scaffolding',
               test: /src[\\/]engine[\\/](lesson_exam_practice_panel|gcse_donow_engine|ks2_guidance)\.js/,
               priority: 75,
             },
             {
+              name: 'arena-corners-ks2',
+              test: /src[\\/]engine[\\/]arena_corners[\\/]ks2_/,
+              priority: 72,
+            },
+            {
               name: 'arena-corners',
               test: /src[\\/]engine[\\/]arena_corners/,
               priority: 70,
+            },
+            {
+              name: 'arena-standoffs-ks2',
+              test: /src[\\/]engine[\\/]arena_standoffs[\\/]ks2_/,
+              priority: 67,
             },
             {
               name: 'arena-standoffs',
@@ -952,6 +967,11 @@ export default defineConfig({
               name: 'classroom-reader-tools',
               test: /src[\\/](digital_textbook_reader|engine[\\/](classroom_spotlight_and_locator|teacher_guidance_modal)|interactive_labs[\\/]lab_registry)\.js/,
               priority: 45,
+            },
+            {
+              name: 'lesson-modes',
+              test: /src[\\/]engine[\\/](ancient_lesson_renderer|laptop_mode|hero_launchpad)\.js/,
+              priority: 42,
             },
             {
               name: 'lesson-helpers',

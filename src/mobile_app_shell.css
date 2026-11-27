@@ -277,7 +277,12 @@
   body.hh-mobile-pupil-mode:not(.staff-mode-active) .teacher-only-guidance-drawer,
   body.hh-mobile-pupil-mode:not(.staff-mode-active) #btn-cover-modal,
   body.hh-mobile-pupil-mode:not(.staff-mode-active) #btn-copy-class-link,
-  body.hh-mobile-pupil-mode:not(.staff-mode-active) .btn-fullwidth-toggle {
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .btn-fullwidth-toggle,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .btn-ks2-worksheet-launcher,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .btn-ks2-workbook-launcher,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .hh-laptop-toggle-btn,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) .btn-laptop-mode,
+  body.hh-mobile-pupil-mode:not(.staff-mode-active) #btn-laptop-mode-toggle {
     display: none !important;
   }
 
