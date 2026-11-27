@@ -838,7 +838,7 @@ export function universalTimelineStudyLesson(unitId, lessonIdx, milestoneIdx) {
       view: 'timeline',
       unitId,
       timelineMilestoneIdx: resolvedMilestoneIdx,
-      shortLabel: 'Living Timeline',
+      shortLabel: String(unitId || '').startsWith('ks2_') ? 'Story Timeline' : 'Living Timeline',
       scrollY: window.scrollY || 0,
     };
 
@@ -868,8 +868,10 @@ export function universalTimelineStudyLesson(unitId, lessonIdx, milestoneIdx) {
             backBtn.style.display = 'flex';
             document.querySelector('.app-header')?.classList.add('has-back-btn');
             const span = backBtn.querySelector('span');
-            if (span && !/Living/i.test(span.textContent || '')) {
-              span.textContent = 'Back to Living Timeline';
+            if (span && !/Timeline/i.test(span.textContent || '')) {
+              span.textContent = String(unitId || '').startsWith('ks2_')
+                ? 'Back to Story Timeline'
+                : 'Back to Living Timeline';
             }
           }
         }, 30);
@@ -1340,7 +1342,7 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
             <i class="fa-solid fa-compass"></i>
             <span id="ult-eyebrow-count">${escapeHtml(headerEyebrowBase)} &bull; ${allMilestones.length} Milestones</span>
           </div>
-          <h1>${escapeHtml(unitTitleClean)}: Living Timeline</h1>
+          <h1>${escapeHtml(unitTitleClean)}: ${String(unitId || '').startsWith('ks2_') ? 'Story Timeline' : 'Living Timeline'}</h1>
           ${heroSubtitle ? `<p class="ult-hero-subtitle">${escapeHtml(heroSubtitle)}</p>` : ''}
         </div>
 
@@ -1964,6 +1966,7 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
     const kb = m.ks2Block;
     const whyBlurred = recallMode && !revealedConseqIdx.has(m.globalIdx);
     const detShown = revealedDetectiveIdx.has(m.globalIdx);
+    const hasExtraClues = Boolean(kb.quoteHtml || kb.detectiveQuestion);
     return `
       <p class="ult-ks2-story">${kb.storyHtml}</p>
 
@@ -1991,28 +1994,41 @@ export async function renderUniversalLivingTimeline(container, unitId, unitData 
       </div>
 
       ${
-        kb.quoteHtml
-          ? `<div class="ult-ks2-quote"><i class="fa-solid fa-quote-left" style="margin-right:6px;opacity:0.65;"></i>${kb.quoteHtml}</div>`
-          : ''
-      }
-
-      ${
-        kb.detectiveQuestion
+        hasExtraClues
           ? `
-          <div class="ult-ks2-detective">
-            <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px;">
-              <span style="font-size:0.72rem;font-weight:800;text-transform:uppercase;color:#92400e;"><i class="fa-solid fa-magnifying-glass"></i> Historical Detective Check</span>
-              <button type="button" data-action="toggle-detective" data-global-idx="${m.globalIdx}" style="background:#ca8a04;color:#fff;border:none;border-radius:5px;padding:3px 9px;font-size:0.71rem;font-weight:800;cursor:pointer;">
-                ${detShown ? 'Hide Answer' : 'Reveal Answer'}
-              </button>
+          <details class="ult-ks2-extra-clues" ${detShown ? 'open' : ''} style="margin-top:8px;background:#fffbeb;border:1.5px solid #fde68a;border-radius:9px;padding:8px 12px;">
+            <summary style="cursor:pointer;font-size:0.8rem;font-weight:800;color:#92400e;user-select:none;display:flex;align-items:center;gap:6px;">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span>More Detective Clues (Quote &amp; Quick Check)</span>
+            </summary>
+            <div style="margin-top:8px;display:flex;flex-direction:column;gap:8px;">
+              ${
+                kb.quoteHtml
+                  ? `<div class="ult-ks2-quote" style="margin:0;"><i class="fa-solid fa-quote-left" style="margin-right:6px;opacity:0.65;"></i>${kb.quoteHtml}</div>`
+                  : ''
+              }
+              ${
+                kb.detectiveQuestion
+                  ? `
+                  <div class="ult-ks2-detective" style="margin:0;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:4px;">
+                      <span style="font-size:0.72rem;font-weight:800;text-transform:uppercase;color:#92400e;"><i class="fa-solid fa-magnifying-glass"></i> Quick Detective Check</span>
+                      <button type="button" data-action="toggle-detective" data-global-idx="${m.globalIdx}" style="background:#ca8a04;color:#fff;border:none;border-radius:5px;padding:3px 9px;font-size:0.71rem;font-weight:800;cursor:pointer;">
+                        ${detShown ? 'Hide Answer' : 'Reveal Answer'}
+                      </button>
+                    </div>
+                    <div style="font-size:0.84rem;font-weight:700;color:inherit;">${escapeHtml(kb.detectiveQuestion)}</div>
+                    ${
+                      detShown
+                        ? `<div class="ult-ks2-det-ans"><strong>Answer:</strong> ${kb.detectiveAnswerHtml}</div>`
+                        : ''
+                    }
+                  </div>
+                `
+                  : ''
+              }
             </div>
-            <div style="font-size:0.84rem;font-weight:700;color:inherit;">${escapeHtml(kb.detectiveQuestion)}</div>
-            ${
-              detShown
-                ? `<div class="ult-ks2-det-ans"><strong>Answer:</strong> ${kb.detectiveAnswerHtml}</div>`
-                : ''
-            }
-          </div>
+          </details>
         `
           : ''
       }

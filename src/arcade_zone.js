@@ -22,6 +22,8 @@ import { mountRedactedDossier } from './arcade/games/redacted_dossier.js';
 import { mountBossSprint } from './arcade/games/boss_sprint.js';
 import { mountArchiveDetective } from './arcade/games/archive_detective.js';
 import { mountFactOrFallacy } from './arcade/games/fact_or_fallacy.js';
+import { isStaffModeActive } from './data/unit_resources_catalog.js';
+import { isKs2ActiveContext } from './utils/ks2_mode.js';
 
 const ARCADE_COURSE_DIRECTORY = [
   { id: 'edexcel_medicine', title: 'Medicine Through Time (c.1250–Present)', group: 'GCSE' },
@@ -33,7 +35,7 @@ const ARCADE_COURSE_DIRECTORY = [
   { id: 'water_and_sanitation', title: 'Water & Sanitation (1250–Present)', group: 'KS3' },
   { id: 'medieval_england', title: 'Medieval England (1066–1485)', group: 'KS3' },
   { id: 'monarchy_religion_power', title: 'Crown, Church & Parliament (1517–1689)', group: 'KS3' },
-  { id: 'first_british_empire', title: 'The First British Empire (1600–1783)', group: 'KS3' },
+  { id: 'first_british_empire', title: 'The First British Empire (1600–1838)', group: 'KS3' },
   { id: 'industrialisation_and_empire', title: 'The Industrial Revolution (1750–1900)', group: 'KS3' },
   { id: 'second_british_empire', title: 'The Second British Empire (1783–1914)', group: 'KS3' },
   { id: 'australia', title: 'Invasion & Survival in Australia', group: 'KS3' },
@@ -317,6 +319,57 @@ const ARCADE_GAMES_CATALOG = [
 
 const ALL_MOUNTABLE_GAMES = [...VISUAL_SHOWCASES, ...ARCADE_GAMES_CATALOG];
 
+function getArcadeGameMeta(g, isKs2 = false) {
+  if (!isKs2 || !g) return g;
+  if (g.id === 'redacted') {
+    return {
+      ...g,
+      title: 'Secret Word Detective',
+      subtitle: 'Crack the Mystery Word',
+      desc: 'Vowels and the first letter are already shown! Guess the missing letters to crack the history word.',
+      countFn: (p) => `${p.redactedPool.length} Words`,
+    };
+  }
+  if (g.id === 'sprint') {
+    return {
+      ...g,
+      title: '90s Clock Challenge',
+      subtitle: 'Beat the Clock!',
+      desc: '90-second quiz challenge! Every 3 right in a row adds +5s bonus time.',
+      countFn: (p) => `${p.sprintPool.length} Questions`,
+    };
+  }
+  if (g.id === 'myth') {
+    return {
+      ...g,
+      title: 'True or Trick?',
+      subtitle: 'Spot the Sneaky Trick',
+      desc: 'Swipe or tap TRUE or TRICK on real history facts and sneaky distractors!',
+      countFn: (p) => `${p.mythPool.length} Cards`,
+    };
+  }
+  if (g.id === 'connections') {
+    return {
+      ...g,
+      subtitle: '4×4 Topic Match',
+      desc: 'Spot the 4 hidden groups of 4 connected history clues across this topic.',
+    };
+  }
+  if (g.id === 'tetris') {
+    return {
+      ...g,
+      desc: 'Steer matching history keywords into the glowing Lock Zone and clear distractors!',
+    };
+  }
+  if (g.id === 'detective') {
+    return {
+      ...g,
+      desc: 'Starts zoomed 4× into a real historical picture. Spot what it shows before zooming out!',
+    };
+  }
+  return g;
+}
+
 let activeGameCleanup = null;
 let arcadeRenderToken = 0;
 
@@ -409,7 +462,11 @@ export async function renderArcadeView(options = {}) {
   }
 
   function buildMobileCourseSwitcherHtml() {
-    const pinnedIds = readPinnedCourseIds();
+    const enforceKs2Fence = Boolean(isKs2Context || isKs2ActiveContext(unitId, unitData));
+    const rawPinnedIds = readPinnedCourseIds();
+    const pinnedIds = enforceKs2Fence
+      ? rawPinnedIds.filter((id) => String(id).toLowerCase().startsWith('ks2_'))
+      : rawPinnedIds;
     const pinnedSet = new Set(pinnedIds);
 
     let optionsMarkup = '';
@@ -422,12 +479,13 @@ export async function renderArcadeView(options = {}) {
       optionsMarkup += `</optgroup>`;
     }
 
-    ['GCSE', 'KS3', 'KS2'].forEach((grp) => {
+    const visibleGroups = enforceKs2Fence ? ['KS2'] : ['GCSE', 'KS3', 'KS2'];
+    visibleGroups.forEach((grp) => {
       const items = ARCADE_COURSE_DIRECTORY.filter(
         (c) => c.group === grp && !(pinnedIds.length > 0 && (pinnedSet.has(c.id) || c.id === unitId)),
       );
       if (items.length > 0) {
-        optionsMarkup += `<optgroup label="${grp} Courses">`;
+        optionsMarkup += `<optgroup label="${grp === 'KS2' && enforceKs2Fence ? 'Primary History Topics' : `${grp} Courses`}">`;
         items.forEach((c) => {
           optionsMarkup += `<option value="${c.id}" ${c.id === unitId ? 'selected' : ''}>${c.title}</option>`;
         });
@@ -486,7 +544,7 @@ export async function renderArcadeView(options = {}) {
         : 'Unit Overview';
 
     const scopeOptionsHtml = [
-      `<option value="all" ${currentScope === 'all' ? 'selected' : ''}>📚 Full Unit Syllabus (${pools.lessonsList.length} Enquiries)</option>`,
+      `<option value="all" ${currentScope === 'all' ? 'selected' : ''}>📚 ${isKs2Context ? `Full Topic (${pools.lessonsList.length} Enquiries)` : `Full Unit Syllabus (${pools.lessonsList.length} Enquiries)`}</option>`,
       ...pools.lessonsList.map(
         (l) =>
           `<option value="${l.index}" ${String(currentScope) === String(l.index) ? 'selected' : ''}>Enquiry ${l.index + 1}: ${l.title}</option>`,
@@ -494,7 +552,7 @@ export async function renderArcadeView(options = {}) {
     ].join('');
 
     const compactScopeOptionsHtml = [
-      `<option value="all" ${currentScope === 'all' ? 'selected' : ''}>Full Unit (${pools.lessonsList.length})</option>`,
+      `<option value="all" ${currentScope === 'all' ? 'selected' : ''}>Full ${isKs2Context ? 'Topic' : 'Unit'} (${pools.lessonsList.length})</option>`,
       ...pools.lessonsList.map(
         (l) =>
           `<option value="${l.index}" ${String(currentScope) === String(l.index) ? 'selected' : ''}>Enq ${l.index + 1}: ${l.title}</option>`,
@@ -502,7 +560,8 @@ export async function renderArcadeView(options = {}) {
     ].join('');
 
     const isGraphicNovelMode = currentGameId === 'cme_courtyard';
-    const shortGameTitle = activeGameDef ? activeGameDef.title.split(':')[0] : 'Arcade';
+    const activeDisplayMeta = activeGameDef ? getArcadeGameMeta(activeGameDef, isKs2Context) : null;
+    const shortGameTitle = activeDisplayMeta ? activeDisplayMeta.title.split(':')[0] : 'Arcade';
 
     container.innerHTML = `
       <div class="arcade-shell ${isPlayingGame ? 'is-game-active' : 'is-lobby-active'}">
@@ -541,11 +600,11 @@ export async function renderArcadeView(options = {}) {
           <div class="arcade-brand">
             <div class="arcade-brand-icon" style="${isGraphicNovelMode ? 'width:34px;height:34px;font-size:1rem;' : ''}"><i class="fa-solid ${isGraphicNovelMode ? 'fa-book-open' : 'fa-gamepad'}"></i></div>
             <div>
-              <h1 style="${isGraphicNovelMode ? 'font-size:1.05rem;' : ''}">${isGraphicNovelMode ? 'Dual-Perspective Archival Atlas' : 'Revision Arcade'}</h1>
+              <h1 style="${isGraphicNovelMode ? 'font-size:1.05rem;' : ''}">${isGraphicNovelMode ? 'Dual-Perspective Archival Atlas' : isKs2Context ? 'History Games Arcade' : 'Revision Arcade'}</h1>
               ${
                 isGraphicNovelMode
                   ? `<p style="font-size:0.74rem;">${pools.unitTitle} &bull; Pearson Edexcel GCSE Option P5 (1914–1995)</p>`
-                  : `<p>${pools.unitTitle} &bull; Total Unit Points: <strong style="color:#fde047;">${totalUnitPts.toLocaleString()}</strong></p>`
+                  : `<p>${pools.unitTitle} &bull; Total ${isKs2Context ? 'Topic' : 'Unit'} Points: <strong style="color:#fde047;">${totalUnitPts.toLocaleString()}</strong></p>`
               }
             </div>
           </div>
@@ -589,13 +648,14 @@ export async function renderArcadeView(options = {}) {
           `
               : ''
           }
-          ${ARCADE_GAMES_CATALOG.map(
-            (g) => `
+          ${ARCADE_GAMES_CATALOG.map((rawG) => {
+            const g = getArcadeGameMeta(rawG, isKs2Context);
+            return `
               <button type="button" class="arcade-tab-chip ${currentGameId === g.id ? 'active' : ''}" data-game="${g.id}">
                 <span>${g.emoji}</span> ${g.title}
               </button>
-            `,
-          ).join('')}
+            `;
+          }).join('')}
         </div>
 
         <!-- Dynamic Viewport -->
@@ -761,7 +821,8 @@ export async function renderArcadeView(options = {}) {
     viewport.innerHTML = `
       ${featuredHeroHtml}
       <div class="arcade-lobby-grid">
-        ${ARCADE_GAMES_CATALOG.map((g) => {
+        ${ARCADE_GAMES_CATALOG.map((rawG) => {
+          const g = getArcadeGameMeta(rawG, isKs2Context);
           const best = getArcadePersonalBest(unitId, g.id, currentScope);
           return `
             <div class="arcade-game-card" data-launch="${g.id}" style="--card-accent: ${g.accent};">

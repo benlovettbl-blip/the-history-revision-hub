@@ -9,9 +9,10 @@ import { shuffleList } from '../arcade_data_adapter.js';
 import { recordQuestionResult } from '../../storage.js';
 
 export function mountFactOrFallacy(stageEl, pools, ctx) {
+  const isKs2 = String(ctx.unitId || '').toLowerCase().startsWith('ks2_');
   const pool = pools.mythPool || [];
   if (pool.length === 0) {
-    stageEl.innerHTML = `<div class="arcade-empty">No Fact or Fallacy cards available in this selection.</div>`;
+    stageEl.innerHTML = `<div class="arcade-empty">No ${isKs2 ? 'True or Trick?' : 'Fact or Fallacy'} cards available in this selection.</div>`;
     return () => {};
   }
 
@@ -64,7 +65,13 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
       recordQuestionResult(currentCard.id, true, currentCard, ctx.unitId);
       lastOutcome = {
         correct: true,
-        title: currentCard.isFact ? `✅ VERIFIED FACT (+${pts} pts)` : `💥 MYTH BUSTED! (+${pts} pts)`,
+        title: isKs2
+          ? currentCard.isFact
+            ? `✅ TRUE FACT! (+${pts} pts)`
+            : `🎯 TRICK SPOTTED! (+${pts} pts)`
+          : currentCard.isFact
+            ? `✅ VERIFIED FACT (+${pts} pts)`
+            : `💥 MYTH BUSTED! (+${pts} pts)`,
         explanation: currentCard.explanation,
       };
     } else {
@@ -74,7 +81,13 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
       recordQuestionResult(currentCard.id, false, currentCard, ctx.unitId);
       lastOutcome = {
         correct: false,
-        title: currentCard.isFact ? '❌ Actually TRUE Specification Fact!' : '❌ Caught by a Historical Trap!',
+        title: isKs2
+          ? currentCard.isFact
+            ? '❌ Actually a TRUE History Fact!'
+            : '❌ Caught by a Sneaky Trick!'
+          : currentCard.isFact
+            ? '❌ Actually TRUE Specification Fact!'
+            : '❌ Caught by a Historical Trap!',
         explanation: currentCard.explanation,
       };
     }
@@ -180,11 +193,11 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
         <div class="fof-stage-box">
           <!-- Locked-Height Swipeable Statement Card (min-height: 175px) -->
           <div class="fof-card ${awaitingNext ? (lastOutcome?.correct ? 'verdict-ok' : 'verdict-err') : ''}" id="fof-swipe-card">
-            <span class="fof-swipe-stamp left">❌ FALLACY</span>
-            <span class="fof-swipe-stamp right">✅ FACT</span>
+            <span class="fof-swipe-stamp left">${isKs2 ? '❌ TRICK!' : '❌ FALLACY'}</span>
+            <span class="fof-swipe-stamp right">${isKs2 ? '✅ TRUE!' : '✅ FACT'}</span>
 
             <div class="fof-eyebrow">
-              <span><i class="fa-solid fa-scale-balanced"></i> ${currentCard.promptLabel || 'FACT OR FALLACY?'}</span>
+              <span><i class="fa-solid fa-scale-balanced"></i> ${isKs2 ? 'TRUE OR TRICK?' : currentCard.promptLabel || 'FACT OR FALLACY?'}</span>
               <span>${currentCard.topic}</span>
             </div>
 
@@ -217,7 +230,7 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
             `
                 : `
               <span class="fof-swipe-hint-idle">
-                <i class="fa-solid fa-arrows-left-right"></i> Swipe card left (Fallacy) or right (Fact) — or tap below
+                <i class="fa-solid fa-arrows-left-right"></i> Swipe card left (${isKs2 ? 'Trick' : 'Fallacy'}) or right (${isKs2 ? 'True' : 'Fact'}) — or tap below
               </span>
             `
             }
@@ -230,10 +243,10 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
                 ? `
               <div class="fof-btn-row">
                 <button type="button" class="fof-judge-btn fallacy" id="fof-btn-fallacy">
-                  ❌ Fallacy <kbd>←</kbd>
+                  ❌ ${isKs2 ? 'Trick' : 'Fallacy'} <kbd>←</kbd>
                 </button>
                 <button type="button" class="fof-judge-btn fact" id="fof-btn-fact">
-                  ✅ Fact <kbd>→</kbd>
+                  ✅ ${isKs2 ? 'True' : 'Fact'} <kbd>→</kbd>
                 </button>
               </div>
             `
@@ -263,14 +276,14 @@ export function mountFactOrFallacy(stageEl, pools, ctx) {
     stageEl.innerHTML = `
       <div class="arcade-result-panel">
         <div style="font-size:2.6rem;margin-bottom:6px;">${isNewBest ? '🏆' : '⚖️'}</div>
-        <h3>${isNewBest ? 'New Mythbuster Record!' : 'Mythbuster Run Complete'}</h3>
+        <h3>${isNewBest ? (isKs2 ? 'New True or Trick Record!' : 'New Mythbuster Record!') : isKs2 ? 'True or Trick? Complete' : 'Mythbuster Run Complete'}</h3>
         <div class="arcade-gameover-stats">
           <div><span>Score</span><strong>${score}</strong></div>
-          <div><span>Claims Cracked</span><strong>${bustedCount}</strong></div>
+          <div><span>${isKs2 ? 'Cards Solved' : 'Claims Cracked'}</span><strong>${bustedCount}</strong></div>
           <div><span>Personal Best</span><strong>${best}</strong></div>
         </div>
         <button type="button" class="arcade-btn-primary" id="fof-replay-btn">
-          <i class="fa-solid fa-rotate-right"></i> Play Mythbuster Again
+          <i class="fa-solid fa-rotate-right"></i> Play ${isKs2 ? 'True or Trick?' : 'Mythbuster'} Again
         </button>
       </div>
     `;

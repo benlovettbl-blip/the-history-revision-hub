@@ -959,6 +959,12 @@ export function initGlossaryPopover() {
   };
 
   document.body.addEventListener('mouseover', (e) => {
+    if (
+      document.body.classList.contains('hh-calm-reading-mode') ||
+      String(window.currentUnitId || window.state?.selectedUnitId || '').toLowerCase().startsWith('ks2_')
+    ) {
+      return; // KS2 & Calm Reading: require deliberate click/tap rather than accidental cursor-tracking hover!
+    }
     if (e.target.closest('.vocab-word, .vocab-lens-term')) {
       showPopover(e, false);
     }

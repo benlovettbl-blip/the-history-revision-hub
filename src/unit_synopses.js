@@ -4,6 +4,8 @@
  * for every curriculum unit in the History Hub.
  */
 
+import { isKs2UnitId, extractKs2ShortHook } from './utils/ks2_mode.js';
+
 export const unitSynopses = {
   // === KEY STAGE 3 CURRICULUM PILLARS ===
   medieval_england: {
@@ -43,15 +45,16 @@ export const unitSynopses = {
     ],
   },
   first_british_empire: {
-    period: '1600 – 1783',
+    period: '1600 – 1838',
     synopsis:
-      "Armed merchantmen braving uncharted oceans, chartered monopolies extorting immense wealth from the Mughal Empire, and the catastrophic human horror of the Transatlantic Slave Trade. An isolated northern island built global dominion on ruthless commercial exploitation, sugar plantations drenched in blood, and forced labor across the Americas. Confront the reality of the Middle Passage, the fierce guerrilla defiance of Queen Nanny and Jamaican Maroons, and the explosive rebellion of the Thirteen Colonies—as tea was cast into Boston Harbor and George Washington shattered imperial rule to ignite the American Revolution.",
+      "Armed merchantmen braving uncharted oceans, chartered monopolies seizing tax sovereignty in Mughal Bengal, and the catastrophic human horror of the Transatlantic Slave Trade. Follow how an Atlantic empire built on sugar plantations and chattel bondage collided with fierce resistance from below: Queen Nanny’s Windward Maroons in Jamaica, the 1776 American Revolution and Black Loyalists, Toussaint Louverture’s Haitian Revolution, mass British sugar boycotts, and Deacon Samuel Sharpe’s 60,000-strong Baptist War—culminating in the £20 million slaveholder bailout of 1833 and full Caribbean emancipation in 1838.",
     tags: [
-      'East India Company & Mughal Court',
-      'Transatlantic Slave Trade & Middle Passage',
-      'Plantation Slavery in the Caribbean',
-      'Queen Nanny & Maroon Resistance',
-      'American Revolution & Yorktown (1783)',
+      'East India Company & Mughal Bengal',
+      'Middle Passage & The 1783 Zong Trial',
+      'Queen Nanny & Maroon Sovereignty',
+      '1776 Paradox & Black Loyalists',
+      'Haitian Revolution & 1807 Trade Ban',
+      'Sam Sharpe, £20m Bailout & 1838 Freedom',
     ],
   },
   industrialisation_and_empire: {
@@ -407,6 +410,47 @@ export function renderUnitSynopsis(data, unitId) {
   const periodBadge = period
     ? `<span class="archival-shelfmark-stamp" style="font-size: 0.74rem; color: #64748b; border-color: #cbd5e1;">${period}</span>`
     : '';
+
+  if (isKs2UnitId(effectiveUnitId, data)) {
+    const shortHook = extractKs2ShortHook(synopsisText, 2, 44);
+    const tags = Array.isArray(config?.tags) ? config.tags : [];
+    const safeSpeakHook = shortHook
+      .replace(/<[^>]+>/g, '')
+      .replace(/\*([^*]+)\*/g, '$1')
+      .replace(/\\/g, '\\\\')
+      .replace(/'/g, "\\'")
+      .replace(/"/g, '&quot;');
+    const tagsHtml =
+      tags.length > 0
+        ? `
+        <div style="display:flex;flex-wrap:wrap;gap:7px;margin-top:12px;">
+          ${tags
+            .map(
+              (t) =>
+                `<span style="background:#eff6ff;border:1px solid #bfdbfe;color:#1e40af;font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:700;padding:4px 10px;border-radius:999px;">✨ ${t}</span>`,
+            )
+            .join('')}
+        </div>`
+        : '';
+
+    return `
+      <div class="unit-synopsis-card ks2-synopsis-card" style="background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); border: 1.5px solid #cbd5e1; border-left: 5px solid #2563eb; border-radius: 12px; padding: 18px 22px; margin-bottom: 22px; box-shadow: 0 2px 10px rgba(15,23,42,0.04);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <span style="background:#dbeafe;color:#1d4ed8;font-family:'Inter',sans-serif;font-size:0.73rem;font-weight:800;letter-spacing:0.05em;text-transform:uppercase;padding:3px 9px;border-radius:6px;">🧭 What We Will Discover</span>
+            <button type="button" class="no-print" onclick="window.speakVocabWord && window.speakVocabWord('${safeSpeakHook}', this)" style="background:#f0f9ff;border:1px solid #bae6fd;color:#0369a1;border-radius:999px;padding:3px 10px;font-family:'Inter',sans-serif;font-size:0.75rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:5px;">
+              <i class="fa-solid fa-volume-high"></i> Listen
+            </button>
+          </div>
+          ${periodBadge}
+        </div>
+        <p style="font-family: 'Inter', system-ui, sans-serif; font-size: 1.02rem; line-height: 1.6; color: #0f172a; margin: 0; font-weight: 500;">
+          ${shortHook.replace(/\*([^*]+)\*/g, '<em>$1</em>')}
+        </p>
+        ${tagsHtml}
+      </div>
+    `;
+  }
 
   return `
     <div class="unit-synopsis-card" style="background: #fdfbf7; border: 1.5px solid #e2d9cc; border-left: 5px solid #1e3a8a; border-radius: 10px; padding: 20px 24px; margin-bottom: 26px; box-shadow: 0 2px 10px rgba(0,0,0,0.03);">

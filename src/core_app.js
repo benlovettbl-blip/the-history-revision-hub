@@ -672,19 +672,19 @@ export function initializeApp(unitData) {
       window.readAloudText = legacyReadAloud;
     }
 
-    // Toggle Dyslexia Mode (Preserve icon)
+    // Toggle Easy Read / Dyslexia Mode (Preserve icon)
     btnDyslexia.addEventListener('click', () => {
       document.body.classList.toggle('sen-mode');
       const isSen = document.body.classList.contains('sen-mode');
-      if (btnDyslexia.title === 'SEN / Dyslexia Mode' || btnDyslexia.title === 'Standard Mode') {
-        // It's an icon button with title
-        btnDyslexia.title = isSen ? 'Standard Mode' : 'SEN / Dyslexia Mode';
-        btnDyslexia.style.background = isSen ? '#1e293b' : '';
-        btnDyslexia.style.color = isSen ? '#ffffff' : '';
-      } else {
-        // Legacy text button
-        btnDyslexia.textContent = isSen ? 'Standard Mode' : 'SEN / Dyslexia Mode';
+      const lbl = btnDyslexia.querySelector('.btn-text');
+      if (lbl) {
+        lbl.textContent = isSen ? 'Easy Read: ON' : 'Easy Read';
       }
+      btnDyslexia.title = isSen
+        ? 'Easy Read Mode: ON (Click for Standard Font)'
+        : 'Toggle Easy Read Mode (Warm cream background & dyslexia-friendly font)';
+      btnDyslexia.style.background = isSen ? '#1e293b' : '';
+      btnDyslexia.style.color = isSen ? '#ffffff' : '';
     });
 
     // Inject Laptop Mode & Teacher Mode Buttons

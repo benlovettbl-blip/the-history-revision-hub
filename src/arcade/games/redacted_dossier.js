@@ -18,15 +18,16 @@ const DIGIT_ROW = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 export function mountRedactedDossier(stageEl, pools, ctx) {
   const pool = pools.redactedPool || [];
   if (pool.length === 0) {
-    stageEl.innerHTML = `<div class="arcade-empty">No vocabulary dossiers available in this selection.</div>`;
+    stageEl.innerHTML = `<div class="arcade-empty">No vocabulary words available in this selection.</div>`;
     return () => {};
   }
 
+  const isKs2 = String(ctx.unitId || '').toLowerCase().startsWith('ks2_');
   let deck = [];
   let currentDossier = null;
   let guessedChars = new Set();
   let strikes = 0;
-  const MAX_STRIKES = 6;
+  const MAX_STRIKES = isKs2 ? 9 : 6;
   let score = 0;
   let solvedCount = 0;
   let showTopicHint = false;
@@ -39,6 +40,22 @@ export function mountRedactedDossier(stageEl, pools, ctx) {
     if (deck.length === 0) deck = shuffleList(pool);
     currentDossier = deck.pop();
     guessedChars = new Set();
+    if (isKs2 && currentDossier && currentDossier.term) {
+      // Pre-reveal vowels + first letter on KS2 so Ages 7–11 never get stuck on tricky historical spellings!
+      ['A', 'E', 'I', 'O', 'U'].forEach((v) => {
+        if (currentDossier.term.includes(v)) guessedChars.add(v);
+      });
+      const firstAlpha = currentDossier.term.match(/[A-Z]/);
+      if (firstAlpha) guessedChars.add(firstAlpha[0]);
+      // Ensure at least 1 consonant remains unguessed for short words
+      const unguessedLeft = currentDossier.term
+        .split('')
+        .filter((ch) => /[A-Z0-9]/.test(ch) && !guessedChars.has(ch));
+      if (unguessedLeft.length === 0) {
+        guessedChars.clear();
+        if (firstAlpha) guessedChars.add(firstAlpha[0]);
+      }
+    }
     strikes = 0;
     showTopicHint = false;
     showStructHint = false;
@@ -155,18 +172,18 @@ export function mountRedactedDossier(stageEl, pools, ctx) {
         <div class="tlb-hud">
           <div class="tlb-stat"><span>Score</span><strong class="cyan">${score}</strong></div>
           <div class="tlb-stat"><span>Solved</span><strong class="green">${solvedCount}</strong></div>
-          <div class="tlb-stat"><span>Clearance</span><strong>${clearanceBars}</strong></div>
+          <div class="tlb-stat"><span>${isKs2 ? 'Tries Left' : 'Clearance'}</span><strong>${clearanceBars}</strong></div>
           <div class="tlb-stat"><span>Best</span><strong>${Math.max(pb, score)}</strong></div>
         </div>
 
         <div class="red-dossier-card">
           <div class="red-stamp-row">
-            <span class="red-stamp"><i class="fa-solid fa-file-shield"></i> CLASSIFIED DOSSIER • SPaG</span>
+            <span class="red-stamp"><i class="fa-solid ${isKs2 ? 'fa-magnifying-glass' : 'fa-file-shield'}"></i> ${isKs2 ? 'SECRET WORD DETECTIVE' : 'CLASSIFIED DOSSIER • SPaG'}</span>
             <span class="red-letter-count">${currentDossier.term.replace(/[^A-Z0-9]/g, '').length} Letters</span>
           </div>
 
           <p class="red-clue-main">
-            <strong>Brief:</strong> ${currentDossier.cluePrimary}
+            <strong>${isKs2 ? 'Clue:' : 'Brief:'}</strong> ${currentDossier.cluePrimary}
           </p>
 
           ${showTopicHint ? `<div class="red-hint-pill"><i class="fa-solid fa-folder-open"></i> ${currentDossier.clueTopic}</div>` : ''}
@@ -198,10 +215,10 @@ export function mountRedactedDossier(stageEl, pools, ctx) {
               ? `
             <div class="red-lifelines">
               <button type="button" class="arcade-btn-ghost" id="red-topic-btn" ${showTopicHint ? 'disabled' : ''}>
-                <i class="fa-solid fa-compass" style="color:#38bdf8;"></i> Topic (-15)
+                <i class="fa-solid fa-compass" style="color:#38bdf8;"></i> Topic (${isKs2 ? 'Free' : '-15'})
               </button>
               <button type="button" class="arcade-btn-ghost" id="red-letter-btn">
-                <i class="fa-solid fa-key" style="color:#fbbf24;"></i> Reveal Letter (-30)
+                <i class="fa-solid fa-key" style="color:#fbbf24;"></i> ${isKs2 ? 'Hint Letter' : 'Reveal Letter (-30)'}
               </button>
             </div>
 
@@ -215,12 +232,17 @@ export function mountRedactedDossier(stageEl, pools, ctx) {
               : `
             <div class="red-verdict ${roundStatus === 'WON' ? 'won' : 'lost'}">
               <div>
-                <strong>${roundStatus === 'WON' ? '🔓 DOSSIER DECLASSIFIED:' : '🔒 TERM REVEALED:'} ${currentDossier.displayTerm}</strong>
+                <strong>${roundStatus === 'WON' ? (isKs2 ? '🌟 MYSTERY WORD SOLVED:' : '🔓 DOSSIER DECLASSIFIED:') : isKs2 ? '💡 SECRET WORD WAS:' : '🔒 TERM REVEALED:'} ${currentDossier.displayTerm}</strong>
                 <p>${currentDossier.fullDefinition}</p>
               </div>
-              <button type="button" class="arcade-btn-primary" id="red-next-btn">
-                Next File <i class="fa-solid fa-arrow-right"></i>
-              </button>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+                <button type="button" class="arcade-btn-ghost" id="red-speak-btn" title="Hear pronunciation">
+                  <i class="fa-solid fa-volume-high"></i> Say Word
+                </button>
+                <button type="button" class="arcade-btn-primary" id="red-next-btn">
+                  ${isKs2 ? 'Next Word' : 'Next File'} <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
             </div>
           `
           }
@@ -233,11 +255,16 @@ export function mountRedactedDossier(stageEl, pools, ctx) {
     });
     stageEl.querySelector('#red-topic-btn')?.addEventListener('click', () => {
       showTopicHint = true;
-      score = Math.max(0, score - 15);
+      if (!isKs2) score = Math.max(0, score - 15);
       arcadeAudio.zoom();
       render();
     });
     stageEl.querySelector('#red-letter-btn')?.addEventListener('click', revealOneLetterLifeline);
+    stageEl.querySelector('#red-speak-btn')?.addEventListener('click', (ev) => {
+      if (typeof window !== 'undefined' && window.speakVocabWord && currentDossier?.displayTerm) {
+        window.speakVocabWord(currentDossier.displayTerm, ev.currentTarget);
+      }
+    });
     stageEl.querySelector('#red-next-btn')?.addEventListener('click', nextDossier);
   }
 

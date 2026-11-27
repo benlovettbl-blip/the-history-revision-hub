@@ -7,6 +7,7 @@
 import './mobile_app_shell.css';
 import { state } from './state.js';
 import { getWeakSpots, ensureUnitLoaded } from './storage.js';
+import { isKs2ActiveContext } from './utils/ks2_mode.js';
 
 const STORAGE_PINNED_UNITS = 'hh_pinned_units';
 const STORAGE_LAST_LESSON = 'hh_last_lesson';
@@ -28,7 +29,7 @@ export const CANONICAL_COURSES = [
   { id: 'water_and_sanitation', title: 'Water & Sanitation (1250–Present)', group: 'ks3', badge: 'KS3 Thematic' },
   { id: 'medieval_england', title: 'Medieval England (1066–1485)', group: 'ks3', badge: 'KS3 Medieval' },
   { id: 'monarchy_religion_power', title: 'Crown, Church & Parliament (1517–1689)', group: 'ks3', badge: 'KS3 Early Modern' },
-  { id: 'first_british_empire', title: 'The First British Empire (1600–1783)', group: 'ks3', badge: 'KS3 Empire' },
+  { id: 'first_british_empire', title: 'The First British Empire (1600–1838)', group: 'ks3', badge: 'KS3 Empire' },
   { id: 'industrialisation_and_empire', title: 'The Industrial Revolution (1750–1872)', group: 'ks3', badge: 'KS3 Industry' },
   { id: 'second_british_empire', title: 'The Second British Empire (1783–1914)', group: 'ks3', badge: 'KS3 Empire' },
   { id: 'australia', title: 'Invasion & Survival in Australia', group: 'ks3', badge: 'KS3 World' },
@@ -386,6 +387,7 @@ function resolveBestGcseTargetUnitId() {
 }
 
 function shouldShowMobileExamTab() {
+  if (isKs2ActiveContext()) return false;
   const current =
     state.selectedUnitId ||
     (typeof window !== 'undefined' && window.currentUnitId) ||
@@ -705,8 +707,8 @@ export function renderMobileHomeHeroHTML(units = []) {
             <i class="fa-solid fa-thumbtack" style="color: #2563eb;"></i>
             <span>Personalise Your Hub</span>
           </div>
-          <div class="hh-lp-title">Studying GCSE or KS3 History?</div>
-          <div class="hh-lp-sub">Pin your exact 1&ndash;6 courses for 1-tap revision.</div>
+          <div class="hh-lp-title">Studying KS2, KS3 or GCSE History?</div>
+          <div class="hh-lp-sub">Pin your exact 1&ndash;6 courses for 1-tap access.</div>
         </div>
         <button type="button" class="hh-lp-btn hh-lp-btn-blue" onclick="window.hhOpenPinUnitsModal && window.hhOpenPinUnitsModal()">
           <i class="fa-solid fa-sliders"></i>
@@ -851,7 +853,7 @@ export function toggleShowAllCourses() {
   if (btn) {
     btn.innerHTML = `
       <i class="fa-solid ${showAllCoursesExpanded ? 'fa-chevron-up' : 'fa-layer-group'}"></i>
-      <span>${showAllCoursesExpanded ? 'Hide Others' : 'All 26'}</span>
+      <span>${showAllCoursesExpanded ? 'Hide Others' : 'All 30'}</span>
     `;
   }
 }
@@ -924,9 +926,11 @@ export function openPinUnitsModal(options = {}) {
       </div>
 
       <div class="hh-modal-body">
-        ${renderGroup('gcse', 'Edexcel GCSE (9–1) — Years 10 & 11')}
-        ${renderGroup('ks3', 'Key Stage 3 — Years 7 to 9')}
-        ${renderGroup('ks2', 'Key Stage 2 — Primary History')}
+        ${
+          isKs2ActiveContext()
+            ? `${renderGroup('ks2', 'Key Stage 2 — Primary History')}${renderGroup('ks3', 'Key Stage 3 — Years 7 to 9')}${renderGroup('gcse', 'Edexcel GCSE (9–1) — Years 10 & 11')}`
+            : `${renderGroup('gcse', 'Edexcel GCSE (9–1) — Years 10 & 11')}${renderGroup('ks3', 'Key Stage 3 — Years 7 to 9')}${renderGroup('ks2', 'Key Stage 2 — Primary History')}`
+        }
         <div id="hh-modal-qr-slot"></div>
       </div>
 

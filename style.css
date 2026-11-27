@@ -16165,3 +16165,142 @@ body.lesson-full-width .btn-fullwidth-staff-toggle:not(.staff-hidden) {
     display: none !important;
   }
 }
+
+/* =========================================================================
+   KS2 Child-Friendly UI, Click-Only Popups & Calm Reading Mode
+   ========================================================================= */
+body.ks2-mode-active .lesson-banner-tooltip,
+body.ks2-mode-active .lesson-hero-cameo[data-cameo-clue]::after {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+#keyword-search-modal.ks2-safeguard-search [data-filter="exam"],
+#keyword-search-modal.ks2-safeguard-search [data-stage="Key Stage 3"],
+#keyword-search-modal.ks2-safeguard-search [data-stage="GCSE"] {
+  display: none !important;
+}
+
+.launchpad-calm-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  border: 1.5px solid #cbd5e1;
+  background: #ffffff;
+  color: #334155;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.16s ease;
+  white-space: nowrap;
+}
+
+.launchpad-calm-btn i {
+  color: #0d9488;
+}
+
+.launchpad-calm-btn:hover {
+  border-color: #0d9488;
+  background: #f0fdfa;
+  color: #0f766e;
+}
+
+.launchpad-calm-btn.is-active {
+  background: #ccfbf1 !important;
+  border-color: #0d9488 !important;
+  color: #115e59 !important;
+  box-shadow: 0 1px 4px rgba(13, 148, 136, 0.22);
+}
+
+body.hh-calm-reading-mode .key-individual-inline-link {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  font-weight: 700 !important;
+}
+
+body.hh-calm-reading-mode .key-individual-inline-link i {
+  display: none !important;
+}
+
+body.hh-calm-reading-mode .vocab-word,
+body.hh-calm-reading-mode .vocab-lens-term {
+  border-bottom-color: transparent !important;
+  text-decoration: none !important;
+  background: transparent !important;
+}
+
+body.ks2-mode-active .narrative-plate-caption .plate-caption-credit {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.68rem;
+  color: #64748b;
+  opacity: 0.82;
+}
+
+.ks2-museum-credit-toggle {
+  display: inline-block;
+  margin-left: 6px;
+  vertical-align: baseline;
+  font-size: 0.75rem;
+}
+
+.ks2-museum-credit-toggle > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #1d4ed8;
+  font-weight: 700;
+  font-size: 0.72rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.ks2-museum-credit-toggle > summary::-webkit-details-marker {
+  display: none;
+}
+
+.ks2-museum-credit-toggle[open] > span {
+  display: block;
+  margin-top: 4px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 0.74rem;
+}
+
+.ult-ks2-extra-clues {
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  padding: 7px 11px;
+}
+
+.ult-ks2-extra-clues > summary {
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 0.84rem;
+  color: #1e40af;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ult-ks2-extra-clues > summary::-webkit-details-marker {
+  display: none;
+}

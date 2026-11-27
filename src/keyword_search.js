@@ -6,6 +6,7 @@
 
 import { UNIT_RESOURCES_CATALOG, isStaffModeActive } from './data/unit_resources_catalog.js';
 import { isVerifiedPdf } from './verified_pdf_manifest.js';
+import { isKs2ActiveContext, isKs2UnitId } from './utils/ks2_mode.js';
 
 let searchIndex = [];
 let isInitialized = false;
@@ -802,8 +803,16 @@ export function searchCurriculum(
     document.body.classList.contains('hh-mobile-pupil-mode') &&
     !isStaffModeActive();
 
+  const enforceKs2SafeguardFence =
+    isKs2ActiveContext(activeUnit) &&
+    !(typeof window !== 'undefined' && window.__hhSearchUnlockAllStages === true);
+
   for (const item of index) {
     if (item.staffOnly && !isStaffModeActive()) continue;
+    // Primary School Safeguarding Fence: never surface KS3/GCSE (e.g. Shoah / Weimar / Middle East) hits to KS2 pupils
+    if (enforceKs2SafeguardFence) {
+      if (item.type === 'exam' || !isKs2UnitId(item.unitId)) continue;
+    }
     // Hide printable PDF booklet downloads from mobile pupil search
     if (isMobilePupilSearch && item.type === 'resource' && item.resourceKind === 'booklet') {
       continue;
@@ -1178,7 +1187,9 @@ function renderSearchResults(query = '') {
   if (results.length === 0) {
     currentResults = [];
     selectedResultIndex = -1;
+    const isKs2SafeEmpty = isKs2ActiveContext(getActiveUnitId()) && !isStaffModeActive();
     const canExpandAll =
+      !isKs2SafeEmpty &&
       typeof window !== 'undefined' &&
       !window.__isFullDbHydrated &&
       typeof window.ensureFullDatabaseLoaded === 'function';
@@ -1189,11 +1200,15 @@ function renderSearchResults(query = '') {
         </div>
         <div class="search-empty-title">No matches found for "${escapeHtml(trimmed)}"</div>
         <div class="search-empty-hint">
-          Try searching for topics or figures like <strong>Suez</strong>, <strong>John Snow</strong>, <strong>Berlin</strong>, or <strong>Reparations</strong>.
+          ${
+            isKs2SafeEmpty
+              ? 'Try searching for topics or people like <strong>Stonehenge</strong>, <strong>Pharaoh</strong>, <strong>Boudicca</strong>, or <strong>Benin</strong>.'
+              : 'Try searching for topics or figures like <strong>Suez</strong>, <strong>John Snow</strong>, <strong>Berlin</strong>, or <strong>Reparations</strong>.'
+          }
         </div>
         ${
           canExpandAll
-            ? `<button type="button" onclick="window.hhExpandSearchAllCourses && window.hhExpandSearchAllCourses(this)" style="margin-top:12px;padding:9px 16px;border-radius:999px;border:1.5px solid #3b82f6;background:#eff6ff;color:#1d4ed8;font-weight:800;font-size:0.82rem;cursor:pointer;display:inline-flex;align-items:center;gap:6px;"><i class="fa-solid fa-earth-europe"></i> <span>Search all 26 courses</span></button>`
+            ? `<button type="button" onclick="window.hhExpandSearchAllCourses && window.hhExpandSearchAllCourses(this)" style="margin-top:12px;padding:9px 16px;border-radius:999px;border:1.5px solid #3b82f6;background:#eff6ff;color:#1d4ed8;font-weight:800;font-size:0.82rem;cursor:pointer;display:inline-flex;align-items:center;gap:6px;"><i class="fa-solid fa-earth-europe"></i> <span>Search all 30 courses</span></button>`
             : ''
         }
       </div>
@@ -1504,21 +1519,39 @@ function renderResultItemHTML(item, globalIndex, query) {
  */
 function getDiscoverySuggestionsHTML() {
   const recentSearches = getRecentSearches();
+  const isKs2Discovery =
+    isKs2ActiveContext(getActiveUnitId()) &&
+    !(typeof window !== 'undefined' && window.__hhSearchUnlockAllStages === true);
 
-  const popularTerms = [
-    { term: 'John Snow', stage: 'KS3 / GCSE' },
-    { term: 'Broad Street Pump', stage: 'KS3 Sanitation' },
-    { term: 'Great Stink', stage: 'KS3 Sanitation' },
-    { term: 'Miasma Theory', stage: 'KS3 / GCSE' },
-    { term: 'Andreas Vesalius', stage: 'GCSE Medicine' },
-    { term: 'Germ Theory', stage: 'KS3 / GCSE' },
-    { term: 'Martin Luther', stage: 'KS3 Reformation' },
-    { term: 'Reparations', stage: 'KS3 / GCSE' },
-    { term: 'Treaty of Versailles', stage: 'KS3 Great War' },
-    { term: 'Rosa Parks', stage: 'GCSE USA' },
-    { term: 'Alexander Fleming', stage: 'GCSE Medicine' },
-    { term: 'Oliver Cromwell', stage: 'KS3 Crown & Church' },
-  ];
+  const popularTerms = isKs2Discovery
+    ? [
+        { term: 'Stonehenge', stage: 'Stone Age' },
+        { term: 'Boudicca', stage: 'Roman Britain' },
+        { term: 'Sutton Hoo', stage: 'Anglo-Saxons' },
+        { term: 'Tutankhamun', stage: 'Ancient Egypt' },
+        { term: 'Rosetta Stone', stage: 'Ancient Egypt' },
+        { term: 'Olympics', stage: 'Ancient Greece' },
+        { term: 'House of Wisdom', stage: 'Baghdad AD 900' },
+        { term: 'Chichén Itzá', stage: 'Ancient Maya' },
+        { term: 'Oba Ewuare', stage: 'Kingdom of Benin' },
+        { term: 'Queen Victoria', stage: 'Victorians' },
+        { term: 'Elizabeth Fry', stage: 'Crime & Law' },
+        { term: 'Evacuation', stage: 'WWII Home Front' },
+      ]
+    : [
+        { term: 'John Snow', stage: 'KS3 / GCSE' },
+        { term: 'Broad Street Pump', stage: 'KS3 Sanitation' },
+        { term: 'Great Stink', stage: 'KS3 Sanitation' },
+        { term: 'Miasma Theory', stage: 'KS3 / GCSE' },
+        { term: 'Andreas Vesalius', stage: 'GCSE Medicine' },
+        { term: 'Germ Theory', stage: 'KS3 / GCSE' },
+        { term: 'Martin Luther', stage: 'KS3 Reformation' },
+        { term: 'Reparations', stage: 'KS3 / GCSE' },
+        { term: 'Treaty of Versailles', stage: 'KS3 Great War' },
+        { term: 'Rosa Parks', stage: 'GCSE USA' },
+        { term: 'Alexander Fleming', stage: 'GCSE Medicine' },
+        { term: 'Oliver Cromwell', stage: 'KS3 Crown & Church' },
+      ];
 
   let recentHtml = '';
   if (recentSearches.length > 0) {
@@ -1551,7 +1584,11 @@ function getDiscoverySuggestionsHTML() {
         <i class="fa-solid fa-compass"></i> Popular Figures, Keywords &amp; Quick Lookups
       </div>
       <p class="search-discovery-sub">
-        Click any keyword below or start typing to search across 2,400+ historical figures, definitions, primary sources, timelines, and lesson enquiries.
+        ${
+          isKs2Discovery
+            ? 'Tap a topic clue below or type any person, key word, or lesson across our Primary History topics.'
+            : 'Click any keyword below or start typing to search across 2,400+ historical figures, definitions, primary sources, timelines, and lesson enquiries.'
+        }
       </p>
       <div class="search-quick-tags-grid">
         ${popularTerms
@@ -1753,6 +1790,28 @@ export function openKeywordSearch(initialQuery = '') {
   const modal = document.getElementById('keyword-search-modal');
   const input = document.getElementById('keyword-search-input');
   if (!modal || !input) return;
+
+  const ks2Safeguard =
+    isKs2ActiveContext(getActiveUnitId()) &&
+    !(typeof window !== 'undefined' && window.__hhSearchUnlockAllStages === true);
+  modal.classList.toggle('ks2-safeguard-search', ks2Safeguard);
+  input.placeholder = ks2Safeguard
+    ? "Search people, key words, or lessons (e.g. 'Stonehenge', 'Pharaoh', 'Boudicca')..."
+    : "Search any keyword, figure, event, or term (e.g. 'hyperinflation', 'Nightingale', '1948')...";
+  if (ks2Safeguard) {
+    if (activeFilter === 'exam') {
+      activeFilter = 'all';
+      modal.querySelectorAll('.search-filter-chip').forEach((c) => {
+        c.classList.toggle('active', c.getAttribute('data-filter') === 'all');
+      });
+    }
+    if (activeStageFilter === 'Key Stage 3' || activeStageFilter === 'GCSE') {
+      activeStageFilter = 'all';
+      modal.querySelectorAll('.search-stage-chip').forEach((c) => {
+        c.classList.toggle('active', c.getAttribute('data-stage') === 'all');
+      });
+    }
+  }
 
   modal.style.display = 'flex';
   document.body.classList.add('search-modal-open');

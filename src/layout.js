@@ -155,22 +155,22 @@ export function bindEvents() {
       localStorage.setItem('sen_mode', isSen ? 'true' : 'false');
       btnDyslexia.classList.toggle('active', isSen);
       btnDyslexia.title = isSen
-        ? 'SEN / Dyslexia Mode: ACTIVE (Click to return to Standard Mode)'
-        : 'Toggle SEN / Dyslexia Mode (Warm cream background & high-legibility font)';
+        ? 'Easy Read Mode: ON (Click to return to Standard Font)'
+        : 'Toggle Easy Read Mode (Warm cream background & dyslexia-friendly font)';
     });
   }
 
-  // Reading Overlay Controller (Visual Stress, Irlen Syndrome & Dyslexia)
+  // Coloured Page Tint Controller (Visual Stress, Irlen Syndrome & Dyslexia)
   const overlayBtn = document.getElementById('btn-overlay-toggle');
   const overlayPopover = document.getElementById('overlay-popover');
   const overlayLabel = document.getElementById('overlay-toggle-label');
 
   const OVERLAYS = {
-    none: { id: 'none', label: 'Overlay: Off', class: '' },
-    blue: { id: 'blue', label: 'Blue Overlay 🟦', class: 'overlay-blue' },
-    yellow: { id: 'yellow', label: 'Yellow Overlay 🟨', class: 'overlay-yellow' },
-    green: { id: 'green', label: 'Mint Overlay 🟩', class: 'overlay-green' },
-    rose: { id: 'rose', label: 'Peach Overlay 🟧', class: 'overlay-rose' },
+    none: { id: 'none', label: 'Page Tint', class: '' },
+    blue: { id: 'blue', label: 'Blue Tint 🟦', class: 'overlay-blue' },
+    yellow: { id: 'yellow', label: 'Yellow Tint 🟨', class: 'overlay-yellow' },
+    green: { id: 'green', label: 'Mint Tint 🟩', class: 'overlay-green' },
+    rose: { id: 'rose', label: 'Peach Tint 🟧', class: 'overlay-rose' },
   };
 
   function applyReadingOverlay(overlayId, persist = true) {

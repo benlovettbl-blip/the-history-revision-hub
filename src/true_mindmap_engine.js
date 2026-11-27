@@ -477,6 +477,7 @@ function isFourRingCardMap(data) {
  *  - `deepestExpandedParentTier` (for `− Ring` 1-level step down)
  */
 function computeRingStepperInfo(root, fourRing = false) {
+  const activeMaxTier = studioState.maxTier || 5;
   let deepestVisibleTier = 1;
   let shallowestClosedParentTier = Infinity;
   let deepestExpandedParentTier = 0;
@@ -486,7 +487,8 @@ function computeRingStepperInfo(root, fourRing = false) {
     const tier = typeof node.tier === 'number' ? node.tier : 0;
     if (tier > deepestVisibleTier) deepestVisibleTier = tier;
 
-    const hasKids = Array.isArray(node.children) && node.children.length > 0;
+    const hasKids =
+      Array.isArray(node.children) && node.children.length > 0 && tier + 1 <= activeMaxTier;
     const isOpen = node.id === 'root' || studioState.expandedIds.has(node.id);
 
     if (hasKids) {
@@ -500,6 +502,7 @@ function computeRingStepperInfo(root, fourRing = false) {
       }
     } else if (
       fourRing &&
+      activeMaxTier >= 5 &&
       tier === 4 &&
       node.detail &&
       !studioState.showCardDetail &&
@@ -514,6 +517,7 @@ function computeRingStepperInfo(root, fourRing = false) {
   let currentLevel = deepestVisibleTier;
   if (
     fourRing &&
+    activeMaxTier >= 5 &&
     deepestVisibleTier >= 4 &&
     (studioState.showCardDetail || studioState.expandedCardIds.size > 0)
   ) {
@@ -528,7 +532,7 @@ function computeRingStepperInfo(root, fourRing = false) {
 
   return {
     currentLevel,
-    totalLevels: 5,
+    totalLevels: activeMaxTier,
     shallowestClosedParentTier,
     deepestExpandedParentTier,
     canStepDown,
@@ -537,10 +541,11 @@ function computeRingStepperInfo(root, fourRing = false) {
 }
 
 function stepRingUp(root, fourRing = false) {
+  const activeMaxTier = studioState.maxTier || 5;
   const info = computeRingStepperInfo(root, fourRing);
   if (!info.canStepUp) return false;
 
-  if (fourRing && info.shallowestClosedParentTier === 4) {
+  if (fourRing && activeMaxTier >= 5 && info.shallowestClosedParentTier === 4) {
     studioState.showCardDetail = true;
     return true;
   }
@@ -549,7 +554,8 @@ function stepRingUp(root, fourRing = false) {
   function walkVisible(node) {
     if (!node) return;
     const tier = typeof node.tier === 'number' ? node.tier : 0;
-    const hasKids = Array.isArray(node.children) && node.children.length > 0;
+    const hasKids =
+      Array.isArray(node.children) && node.children.length > 0 && tier + 1 <= activeMaxTier;
     const isOpen = node.id === 'root' || studioState.expandedIds.has(node.id);
     if (hasKids && !isOpen && tier === info.shallowestClosedParentTier) {
       toExpand.push(node.id);
@@ -601,7 +607,7 @@ function isNodeBlurredInRecall(node) {
  * across `center`, `right`, or `left` branch direction modes.
  */
 export function computeBidirectionalLayout(root, opts = null) {
-  const maxTier = opts?.maxTier ?? 5;
+  const maxTier = opts?.maxTier ?? studioState.maxTier ?? 5;
   const showCardDetail = opts?.showCardDetail ?? studioState.showCardDetail;
   const expandedCardIds = opts?.expandedCardIds ?? studioState.expandedCardIds;
   const expandedIds = opts?.expandedIds ?? studioState.expandedIds;
@@ -1079,12 +1085,13 @@ function renderOutlineBranchHTML(node, color, inheritedLesson = 0, inheritedStag
 
 function renderOutlineViewHTML(root) {
   const trunks = root.children || [];
+  const isKs2Outline = String(studioState.unitId || '').toLowerCase().startsWith('ks2_');
   return `
     <div class="tmm-outline-card">
       <div class="tmm-outline-toolbar">
         <div>
-          <strong style="font-size:0.95rem;">${escapeHtml(root.label)} &mdash; Specification-First 5-Ring Outline</strong>
-          <div style="font-size:0.76rem;color:#64748b;">Powered by the exact same Single Source of Truth as your Mind Map. Reading down Ring 3 inside any Sub-Topic gives the Q2 Narrative Chain; Ring 4 gives Q1 Consequences &amp; Q3 Importance.</div>
+          <strong style="font-size:0.95rem;">${escapeHtml(root.label)} &mdash; ${isKs2Outline ? 'Story &amp; Key Clues Outline' : 'Specification-First 5-Ring Outline'}</strong>
+          <div style="font-size:0.76rem;color:#64748b;">${isKs2Outline ? 'Tap any enquiry or milestone to explore the key events and clues in our story.' : 'Powered by the exact same Single Source of Truth as your Mind Map. Reading down Ring 3 inside any Sub-Topic gives the Q2 Narrative Chain; Ring 4 gives Q1 Consequences &amp; Q3 Importance.'}</div>
         </div>
         <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
           <button type="button" class="tmm-action-pill" data-tmm-action="toggle-outline-gloss">
@@ -1407,6 +1414,13 @@ function rerenderStudio({ autoFit = false, pinNode = null, focusNodeId = null, f
               + Ring
             </button>
           </div>
+          ${
+            String(studioState.unitId || '').toLowerCase().startsWith('ks2_')
+              ? `<button type="button" class="tmm-action-pill ${studioState.maxTier >= 5 ? 'is-toggled-on' : ''}" data-tmm-action="toggle-ks2-extra-clues" title="Show or hide Extra Detective Clues (Rings 4 &amp; 5)">
+                   <span>${studioState.maxTier >= 5 ? '🔍 Extra Clues: ON' : '🔍 Extra Clues'}</span>
+                 </button>`
+              : ''
+          }
 
           ${
             studioState.displayMode === 'map'
@@ -1642,6 +1656,27 @@ function bindStudioInteractions(layout) {
           return;
         }
 
+        if (action === 'toggle-ks2-extra-clues') {
+          if (studioState.maxTier < 5) {
+            studioState.maxTier = 5;
+            stepRingUp(studioState.data.root, isFourRingCardMap(studioState.data));
+          } else {
+            studioState.maxTier = 3;
+            studioState.showCardDetail = false;
+            studioState.expandedCardIds.clear();
+            studioState.blurRecall = false;
+            for (const expId of [...studioState.expandedIds]) {
+              if (expId === 'root') continue;
+              const hit = findNodeById(studioState.data.root, expId);
+              if (hit && (hit.node?.tier || 0) >= 3) {
+                studioState.expandedIds.delete(expId);
+              }
+            }
+          }
+          rerenderStudio({ autoFit: true });
+          return;
+        }
+
         if (action === 'set-direction') {
           const nextDir = actBtn.getAttribute('data-dir') || 'center';
           studioState.directionMode = nextDir;
@@ -1651,6 +1686,9 @@ function bindStudioInteractions(layout) {
         }
 
         if (action === 'toggle-blur-recall') {
+          if (studioState.maxTier < 5 && String(studioState.unitId || '').toLowerCase().startsWith('ks2_')) {
+            studioState.maxTier = 5;
+          }
           studioState.blurRecall = !studioState.blurRecall;
           studioState.revealedNodeIds.clear();
           if (studioState.blurRecall) {
@@ -2787,7 +2825,9 @@ export async function mountTrueMindMapStudio(
   studioState.fallbackSpecTree = fallbackSpecTree;
   studioState.onOpenQuestionDrawer = onOpenQuestionDrawer;
 
+  const isKs2Unit = String(unitId || '').toLowerCase().startsWith('ks2_');
   if (switchedUnit) {
+    studioState.maxTier = isKs2Unit ? 3 : 5;
     studioState.expandedIds = new Set(['root']);
     studioState.focusedNodeId = 'root';
     studioState.cameraInitialized = false;
@@ -2796,6 +2836,8 @@ export async function mountTrueMindMapStudio(
     studioState.revealedNodeIds.clear();
     studioState.searchQuery = '';
     studioState.searchMatchIds.clear();
+  } else if (isKs2Unit && studioState.expandedIds.size <= 1) {
+    studioState.maxTier = 3;
   }
   if (startFullscreen) {
     studioState.isFullscreen = true;
@@ -2807,7 +2849,7 @@ export async function mountTrueMindMapStudio(
 
   mountEl.innerHTML = `
     <div style="padding:36px;text-align:center;color:#64748b;">
-      <i class="fa-solid fa-spinner fa-spin"></i> Loading Specification Mind Map...
+      <i class="fa-solid fa-spinner fa-spin"></i> Loading ${isKs2Unit ? 'Topic' : 'Specification'} Mind Map...
     </div>
   `;
 

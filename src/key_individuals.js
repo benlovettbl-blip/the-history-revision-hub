@@ -1,4 +1,5 @@
 import { getAssetUrl } from './engine/assets.js';
+import { isKs2UnitId, isKs2ActiveContext, extractKs2ShortHook } from './utils/ks2_mode.js';
 
 export function isOrganisationEntity(entity) {
   if (!entity || typeof entity !== 'object') return false;
@@ -57,10 +58,11 @@ function buildEntityPronounceBtnHTML(person, compact = false) {
 
 export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
   const isOrg = isOrganisationEntity(person);
+  const isKs2 = isKs2UnitId(person?.unitId) || isKs2ActiveContext();
   const anchor = anchorTitle || person.anchor_title || '';
   const dateLabel = person.lifespan || person.active_dates || '';
   const anchorSubtext = anchor
-    ? ` &bull; Anchored to ${anchor}`
+    ? ` &bull; ${isKs2 ? '' : 'Anchored to '}${anchor}`
     : person.role
       ? ` &bull; ${person.role}`
       : '';
@@ -69,20 +71,32 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
   const badgeLightBg = isOrg ? '#f0fdfa' : '#eff6ff';
   const badgeLightBorder = isOrg ? '#99f6e4' : '#bfdbfe';
   const badgeIcon = isOrg ? 'fa-landmark' : 'fa-user-tie';
-  const summaryTag = isOrg
-    ? anchor
-      ? 'KEY ORGANISATION'
-      : 'ORGANISATION DOSSIER'
-    : anchor
-      ? 'HISTORICAL AGENT'
-      : 'FIGURE DOSSIER';
-  const toggleLabel = isOrg ? 'Organisation Dossier' : 'Figure Dossier';
-  const insideBannerLabel = isOrg
-    ? 'Decisive Movement / Institution'
-    : 'Decisive Historical Agent';
-  const insidePillLabel = isOrg
-    ? 'Historical Organisation Dossier'
-    : 'Historical Figure Dossier';
+  const summaryTag = isKs2
+    ? isOrg
+      ? 'GROUP IN OUR STORY'
+      : 'MEET THIS PERSON'
+    : isOrg
+      ? anchor
+        ? 'KEY ORGANISATION'
+        : 'ORGANISATION DOSSIER'
+      : anchor
+        ? 'HISTORICAL AGENT'
+        : 'FIGURE DOSSIER';
+  const toggleLabel = isKs2 ? 'Story Card' : isOrg ? 'Organisation Dossier' : 'Figure Dossier';
+  const insideBannerLabel = isKs2
+    ? isOrg
+      ? 'Group in This Enquiry'
+      : 'Key Person in This Enquiry'
+    : isOrg
+      ? 'Decisive Movement / Institution'
+      : 'Decisive Historical Agent';
+  const insidePillLabel = isKs2
+    ? isOrg
+      ? 'Historical Group Card'
+      : 'Historical Trading Card'
+    : isOrg
+      ? 'Historical Organisation Dossier'
+      : 'Historical Figure Dossier';
 
   let imgSrcHtml = '';
   const embedRawImg = String(person.image_url || person.image || '').trim();
@@ -114,33 +128,36 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
   // Neutralised from legacy celebratory green "Impact & Achievements" -> impartial slate/navy "Key Roles & Turning Points" / "Methods & Key Actions"
   let turningPointsList = '';
   if (person.achievements) {
-    const items = Array.isArray(person.achievements) ? person.achievements : [person.achievements];
-    turningPointsList = `<ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #334155; line-height: 1.5;">${items.map((a) => `<li style="margin-bottom: 4px;">${fmtInlineDossierText(a)}</li>`).join('')}</ul>`;
+    const rawItems = Array.isArray(person.achievements) ? person.achievements : [person.achievements];
+    const items = isKs2 ? rawItems.slice(0, 2) : rawItems;
+    turningPointsList = `<ul style="margin: 0; padding-left: 18px; font-size: 0.88rem; color: #334155; line-height: 1.5;">${items.map((a) => `<li style="margin-bottom: 4px;">${fmtInlineDossierText(isKs2 ? extractKs2ShortHook(a, 1, 24) : a)}</li>`).join('')}</ul>`;
   }
 
-  const originsHtml = person.origins
-    ? `
+  const originsHtml =
+    !isKs2 && person.origins
+      ? `
       <div style="margin-top: 8px; font-size: 0.88rem; color: #334155; line-height: 1.5; background: #f8fafc; border-left: 3px solid #64748b; padding: 7px 12px; border-radius: 0 4px 4px 0;">
         <strong style="color: #0f172a;">${isOrg ? 'Origins &amp; Ideology:' : 'Origins &amp; Worldview:'}</strong> ${fmtInlineDossierText(person.origins)}
       </div>
     `
-    : '';
+      : '';
 
   const distinctionHtml = person.key_distinction
     ? `
       <div style="margin-top: 8px; font-size: 0.87rem; color: #78350f; line-height: 1.48; background: #fffbeb; border-left: 3px solid #d97706; padding: 7px 12px; border-radius: 0 4px 4px 0;">
-        <strong style="color: #92400e;">Key Historical Distinction:</strong> ${fmtInlineDossierText(person.key_distinction)}
+        <strong style="color: #92400e;">${isKs2 ? '🔎 Cool Clue to Spot:' : 'Key Historical Distinction:'}</strong> ${fmtInlineDossierText(isKs2 ? extractKs2ShortHook(person.key_distinction, 1, 26) : person.key_distinction)}
       </div>
     `
     : '';
 
-  const limitationsHtml = person.limitations
-    ? `
+  const limitationsHtml =
+    !isKs2 && person.limitations
+      ? `
       <div style="margin-top: 8px; font-size: 0.87rem; color: #7f1d1d; line-height: 1.48; background: #fef2f2; border-left: 3px solid #ef4444; padding: 7px 12px; border-radius: 0 4px 4px 0;">
         <strong style="color: #b91c1c;">Historical Limitations &amp; Constraints:</strong> ${fmtInlineDossierText(person.limitations)}
       </div>
     `
-    : '';
+      : '';
 
   const rationaleHtml = person.anchor_rationale
     ? `<div style="width: 100%; font-size: 0.79rem; font-weight: 500; text-transform: none; letter-spacing: 0; color: #475569; margin-top: 2px; line-height: 1.4;">${fmtInlineDossierText(person.anchor_rationale)}</div>`
@@ -158,11 +175,16 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
   `
     : '';
 
-  const actionsHeading = isOrg
-    ? 'Methods &amp; Key Actions:'
-    : 'Key Strategic Decisions &amp; Actions:';
-  const secondaryHeading =
-    isOrg && !actionsList ? 'Methods &amp; Key Actions:' : 'Key Roles &amp; Turning Points:';
+  const actionsHeading = isKs2
+    ? 'What They Did:'
+    : isOrg
+      ? 'Methods &amp; Key Actions:'
+      : 'Key Strategic Decisions &amp; Actions:';
+  const secondaryHeading = isKs2
+    ? 'What They Did:'
+    : isOrg && !actionsList
+      ? 'Methods &amp; Key Actions:'
+      : 'Key Roles &amp; Turning Points:';
 
   const safeJumpNameAttr = String(person.name || '')
     .replace(/&/g, '&amp;')
@@ -173,9 +195,11 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
     .replace(/\\/g, '\\\\')
     .replace(/'/g, "\\'")
     .replace(/"/g, '&quot;');
-  const profileJumpLabel = isOrg
-    ? 'View in People &amp; Organisations &rarr;'
-    : 'View Full Dossier in People &amp; Organisations &rarr;';
+  const profileJumpLabel = isKs2
+    ? 'Meet Everyone in This Topic &rarr;'
+    : isOrg
+      ? 'View in People &amp; Organisations &rarr;'
+      : 'View Full Dossier in People &amp; Organisations &rarr;';
   const profileJumpFooterHtml = `
     <div class="key-individual-dossier-footer no-print" style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #e2e8f0; display: flex; justify-content: flex-end; align-items: center;">
       <button
@@ -232,7 +256,7 @@ export function generateKeyIndividualEmbedHTML(person, anchorTitle = null) {
             ${person.significance || person.bio
       ? `
               <div style="margin-top: 8px; font-size: 0.9rem; color: #334155; line-height: 1.5; background: #f8fafc; border-left: 3px solid ${badgeBg}; padding: 8px 12px; border-radius: 0 4px 4px 0;">
-                <strong>Historical Significance:</strong> ${fmtInlineDossierText(person.significance || person.bio)}
+                <strong>${isKs2 ? '🌟 Why They Mattered:' : 'Historical Significance:'}</strong> ${fmtInlineDossierText(isKs2 ? extractKs2ShortHook(person.significance || person.bio, 1, 30) : person.significance || person.bio)}
               </div>
             `
       : ''
@@ -283,9 +307,16 @@ function deriveMonogramInitials(name) {
 
 export function generateKeyIndividualCardHTML(person) {
   const isOrg = isOrganisationEntity(person);
+  const isKs2 = isKs2UnitId(person?.unitId) || isKs2ActiveContext();
   const entityTypeAttr = isOrg ? 'organisation' : 'person';
   const dateLabel = person.lifespan || person.active_dates || '';
-  const pillText = isOrg ? 'Key Organisation' : 'Key Individual';
+  const pillText = isKs2
+    ? isOrg
+      ? 'Historical Group'
+      : 'Historical Person'
+    : isOrg
+      ? 'Key Organisation'
+      : 'Key Individual';
   const pillIcon = isOrg ? 'fa-landmark' : 'fa-user-tie';
   const pillBg = isOrg ? '#f0fdfa' : '#eff6ff';
   const pillColor = isOrg ? '#0f766e' : '#1d4ed8';
@@ -333,7 +364,12 @@ export function generateKeyIndividualCardHTML(person) {
   }
 
   let basicBio = '';
-  if (person.bio) {
+  if (isKs2) {
+    const shortFront = extractKs2ShortHook(person.significance || person.bio || person.origins || '', 1, 20);
+    if (shortFront) {
+      basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.93rem; line-height: 1.5;">${fmtInlineDossierText(shortFront)}</div>`;
+    }
+  } else if (person.bio) {
     basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.92rem; line-height: 1.5;">${fmtInlineDossierText(person.bio)}</div>`;
   } else if (person.significance) {
     basicBio = `<div style="margin: 0; color: var(--text-main); font-size: 0.92rem; line-height: 1.5;"><strong>Significance:</strong> ${fmtInlineDossierText(person.significance)}</div>`;
@@ -353,88 +389,141 @@ export function generateKeyIndividualCardHTML(person) {
 
   let hasDetailedContent = false;
 
-  if (person.origins) {
-    hasDetailedContent = true;
-    backHtml += `
-      <div style="background: rgba(100, 116, 139, 0.1); border-left: 3px solid #64748b; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #475569; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Origins &amp; Ideology' : 'Origins &amp; Worldview'}</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.origins)}</span>
-      </div>`;
-  }
+  if (isKs2) {
+    // Child-friendly KS2 Trading Card Back: max 3 spacious beats + Read Aloud button (zero scrolling 5-box wall!)
+    const whoBeat = extractKs2ShortHook(person.origins || person.significance || person.bio || '', 1, 28);
+    const rawDid = Array.isArray(person.achievements)
+      ? person.achievements.slice(0, 2)
+      : Array.isArray(person.strategic_actions)
+        ? person.strategic_actions.slice(0, 2)
+        : person.actions
+          ? [person.actions]
+          : [];
+    const clueBeat = extractKs2ShortHook(person.key_distinction || '', 1, 26);
 
-  if (person.actions) {
-    hasDetailedContent = true;
-    backHtml += `
-      <div style="background: rgba(59, 130, 246, 0.09); border-left: 3px solid #3b82f6; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #2563eb; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Methods &amp; Key Actions' : 'Core Actions'}</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.actions)}</span>
-      </div>`;
-  }
-  if (person.strategic_actions) {
-    hasDetailedContent = true;
-    const actionsList = Array.isArray(person.strategic_actions)
-      ? `<ul style="margin-top: 4px; padding-left: 18px; margin-bottom: 0;"><li>${person.strategic_actions.map((a) => fmtInlineDossierText(a)).join('</li><li style="margin-top:4px;">')}</li></ul>`
-      : fmtInlineDossierText(person.strategic_actions);
-    backHtml += `
-      <div style="background: rgba(59, 130, 246, 0.09); border-left: 3px solid #3b82f6; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #2563eb; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Methods &amp; Key Actions' : 'Strategic Decisions &amp; Actions'}</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${actionsList}</span>
-      </div>`;
-  }
-  if (person.achievements) {
-    hasDetailedContent = true;
-    const achievementsList = Array.isArray(person.achievements)
-      ? `<ul style="margin-top: 4px; padding-left: 18px; margin-bottom: 0;"><li>${person.achievements.map((a) => fmtInlineDossierText(a)).join('</li><li style="margin-top:4px;">')}</li></ul>`
-      : fmtInlineDossierText(person.achievements);
-    const headingLabel =
-      isOrg && !person.strategic_actions && !person.actions
-        ? 'Methods &amp; Key Actions'
-        : 'Key Roles &amp; Turning Points';
-    backHtml += `
-      <div style="background: rgba(30, 64, 175, 0.07); border-left: 3px solid #1e40af; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #1e40af; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${headingLabel}</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${achievementsList}</span>
-      </div>`;
-  }
-  if (person.key_distinction) {
-    hasDetailedContent = true;
-    backHtml += `
-      <div style="background: rgba(217, 119, 6, 0.1); border-left: 3px solid #d97706; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #b45309; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Key Distinction (Don&rsquo;t Confuse)</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.key_distinction)}</span>
-      </div>`;
-  }
-  if (person.limitations) {
-    hasDetailedContent = true;
-    backHtml += `
-      <div style="background: rgba(239, 68, 68, 0.09); border-left: 3px solid #ef4444; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #dc2626; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Structural Limitations</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.limitations)}</span>
-      </div>`;
-  }
-  if (person.significance && person.bio) {
-    hasDetailedContent = true;
-    backHtml += `
-      <div style="background: rgba(16, 185, 129, 0.09); border-left: 3px solid #059669; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #047857; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Historical Significance</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.significance)}</span>
-      </div>`;
-  }
+    if (whoBeat) {
+      hasDetailedContent = true;
+      backHtml += `
+        <div style="background: #eff6ff; border-left: 3.5px solid #2563eb; padding: 10px 12px; margin-bottom: 10px; border-radius: 6px;">
+          <strong style="color: #1d4ed8; display: block; margin-bottom: 3px; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em;">🌟 Who They Were</strong>
+          <span style="font-size: 0.9rem; color: #1e293b; display: block; line-height: 1.48;">${fmtInlineDossierText(whoBeat)}</span>
+        </div>`;
+    }
+    if (rawDid.length > 0) {
+      hasDetailedContent = true;
+      backHtml += `
+        <div style="background: #f0fdf4; border-left: 3.5px solid #16a34a; padding: 10px 12px; margin-bottom: 10px; border-radius: 6px;">
+          <strong style="color: #15803d; display: block; margin-bottom: 4px; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em;">⚡ What They Did</strong>
+          <ul style="margin: 0; padding-left: 17px; font-size: 0.88rem; color: #1e293b; line-height: 1.46;">
+            ${rawDid.map((d) => `<li style="margin-bottom: 4px;">${fmtInlineDossierText(extractKs2ShortHook(d, 1, 22))}</li>`).join('')}
+          </ul>
+        </div>`;
+    }
+    if (clueBeat) {
+      hasDetailedContent = true;
+      backHtml += `
+        <div style="background: #fffbeb; border-left: 3.5px solid #d97706; padding: 10px 12px; margin-bottom: 10px; border-radius: 6px;">
+          <strong style="color: #b45309; display: block; margin-bottom: 3px; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em;">🔎 Cool Clue to Spot</strong>
+          <span style="font-size: 0.88rem; color: #78350f; display: block; line-height: 1.45;">${fmtInlineDossierText(clueBeat)}</span>
+        </div>`;
+    }
+    const readAloudText = [person.name, whoBeat, ...rawDid.map((d) => extractKs2ShortHook(d, 1, 22)), clueBeat]
+      .filter(Boolean)
+      .join('. ')
+      .replace(/<[^>]+>/g, '')
+      .replace(/\\/g, '\\\\')
+      .replace(/'/g, "\\'")
+      .replace(/"/g, '&quot;');
+    if (readAloudText) {
+      backHtml += `
+        <button type="button" class="no-print" onclick="event.stopPropagation(); window.speakVocabWord && window.speakVocabWord('${readAloudText}', this);" style="width:100%;padding:8px 12px;border-radius:8px;border:1.5px solid #93c5fd;background:#eff6ff;color:#1d4ed8;font-weight:800;font-size:0.82rem;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:6px;margin-top:2px;">
+          <i class="fa-solid fa-volume-high"></i> Read Card Aloud
+        </button>`;
+    }
+  } else {
+    if (person.origins) {
+      hasDetailedContent = true;
+      backHtml += `
+        <div style="background: rgba(100, 116, 139, 0.1); border-left: 3px solid #64748b; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+          <strong style="color: #475569; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Origins &amp; Ideology' : 'Origins &amp; Worldview'}</strong>
+          <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.origins)}</span>
+        </div>`;
+    }
 
-  const rawQuotes = person.quotes || person.quote;
-  if (rawQuotes) {
-    hasDetailedContent = true;
-    const quotesHtml = Array.isArray(rawQuotes)
-      ? rawQuotes.map((q) => `&ldquo;${fmtInlineDossierText(q)}&rdquo;`).join('<br><br>')
-      : `&ldquo;${fmtInlineDossierText(rawQuotes)}&rdquo;`;
-    const citationHtml = person.citation
-      ? `<span style="display: block; margin-top: 5px; font-style: normal; font-size: 0.78rem; color: #64748b; font-weight: 600;">&mdash; ${fmtInlineDossierText(person.citation)}</span>`
-      : '';
-    backHtml += `
-      <div style="background: rgba(168, 85, 247, 0.09); border-left: 3px solid #a855f7; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
-        <strong style="color: #7e22ce; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Primary Testimony / Quote</strong>
-        <span style="font-size: 0.88rem; color: var(--text-main); display: block; font-style: italic; line-height: 1.48;">${quotesHtml}${citationHtml}</span>
-      </div>`;
+    if (person.actions) {
+      hasDetailedContent = true;
+      backHtml += `
+        <div style="background: rgba(59, 130, 246, 0.09); border-left: 3px solid #3b82f6; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+          <strong style="color: #2563eb; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Methods &amp; Key Actions' : 'Core Actions'}</strong>
+          <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.actions)}</span>
+        </div>`;
+    }
+    if (person.strategic_actions) {
+      hasDetailedContent = true;
+      const actionsList = Array.isArray(person.strategic_actions)
+        ? `<ul style="margin-top: 4px; padding-left: 18px; margin-bottom: 0;"><li>${person.strategic_actions.map((a) => fmtInlineDossierText(a)).join('</li><li style="margin-top:4px;">')}</li></ul>`
+        : fmtInlineDossierText(person.strategic_actions);
+      backHtml += `
+        <div style="background: rgba(59, 130, 246, 0.09); border-left: 3px solid #3b82f6; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+          <strong style="color: #2563eb; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${isOrg ? 'Methods &amp; Key Actions' : 'Strategic Decisions &amp; Actions'}</strong>
+          <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${actionsList}</span>
+        </div>`;
+    }
+    if (person.achievements) {
+      hasDetailedContent = true;
+      const achievementsList = Array.isArray(person.achievements)
+        ? `<ul style="margin-top: 4px; padding-left: 18px; margin-bottom: 0;"><li>${person.achievements.map((a) => fmtInlineDossierText(a)).join('</li><li style="margin-top:4px;">')}</li></ul>`
+        : fmtInlineDossierText(person.achievements);
+      const headingLabel =
+        isOrg && !person.strategic_actions && !person.actions
+          ? 'Methods &amp; Key Actions'
+          : 'Key Roles &amp; Turning Points';
+      backHtml += `
+        <div style="background: rgba(30, 64, 175, 0.07); border-left: 3px solid #1e40af; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+          <strong style="color: #1e40af; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">${headingLabel}</strong>
+          <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${achievementsList}</span>
+        </div>`;
+    }
+    if (person.key_distinction) {
+      hasDetailedContent = true;
+      backHtml += `
+        <div style="background: rgba(217, 119, 6, 0.1); border-left: 3px solid #d97706; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+          <strong style="color: #b45309; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Key Distinction (Don&rsquo;t Confuse)</strong>
+          <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.key_distinction)}</span>
+        </div>`;
+    }
+    if (person.limitations) {
+      hasDetailedContent = true;
+      backHtml += `
+        <div style="background: rgba(239, 68, 68, 0.09); border-left: 3px solid #ef4444; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+          <strong style="color: #dc2626; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Structural Limitations</strong>
+          <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.limitations)}</span>
+        </div>`;
+    }
+    if (person.significance && person.bio) {
+      hasDetailedContent = true;
+      backHtml += `
+        <div style="background: rgba(16, 185, 129, 0.09); border-left: 3px solid #059669; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+          <strong style="color: #047857; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Historical Significance</strong>
+          <span style="font-size: 0.88rem; color: var(--text-main); display: block; line-height: 1.48;">${fmtInlineDossierText(person.significance)}</span>
+        </div>`;
+    }
+
+    const rawQuotes = person.quotes || person.quote;
+    if (rawQuotes) {
+      hasDetailedContent = true;
+      const quotesHtml = Array.isArray(rawQuotes)
+        ? rawQuotes.map((q) => `&ldquo;${fmtInlineDossierText(q)}&rdquo;`).join('<br><br>')
+        : `&ldquo;${fmtInlineDossierText(rawQuotes)}&rdquo;`;
+      const citationHtml = person.citation
+        ? `<span style="display: block; margin-top: 5px; font-style: normal; font-size: 0.78rem; color: #64748b; font-weight: 600;">&mdash; ${fmtInlineDossierText(person.citation)}</span>`
+        : '';
+      backHtml += `
+        <div style="background: rgba(168, 85, 247, 0.09); border-left: 3px solid #a855f7; padding: 10px; margin-bottom: 10px; border-radius: 4px;">
+          <strong style="color: #7e22ce; display: block; margin-bottom: 3px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em;">Primary Testimony / Quote</strong>
+          <span style="font-size: 0.88rem; color: var(--text-main); display: block; font-style: italic; line-height: 1.48;">${quotesHtml}${citationHtml}</span>
+        </div>`;
+    }
   }
 
   if (!hasDetailedContent) {
@@ -451,7 +540,7 @@ export function generateKeyIndividualCardHTML(person) {
   const onclickAttr = hasDetailedContent ? `onclick="this.classList.toggle('flipped')"` : '';
   const cursorStyle = hasDetailedContent ? 'cursor: pointer;' : 'cursor: default;';
   const flipPromptHtml = hasDetailedContent
-    ? `<div style="text-align: center; margin-top: auto; padding-top: 14px; font-size: 0.83rem; color: ${pillColor}; font-weight: 700;"><i class="fas fa-sync-alt" style="margin-right: 5px;"></i> Tap to Open Dossier</div>`
+    ? `<div style="text-align: center; margin-top: auto; padding-top: 14px; font-size: 0.83rem; color: ${pillColor}; font-weight: 700;"><i class="fas fa-sync-alt" style="margin-right: 5px;"></i> ${isKs2 ? 'Tap to Flip Trading Card' : 'Tap to Open Dossier'}</div>`
     : '';
 
   return `
@@ -470,7 +559,7 @@ export function generateKeyIndividualCardHTML(person) {
               ${buildEntityPronounceBtnHTML(person, false)}
             </div>
             ${lifespanHtml}
-            <p style="margin: 0 0 12px 0; color: var(--text-muted); font-size: 0.82rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; line-height: 1.35;">${person.role || person.group || ''}</p>
+            <p style="margin: 0 0 10px 0; color: var(--text-muted); font-size: 0.81rem; font-weight: 700; text-transform: ${isKs2 ? 'none' : 'uppercase'}; letter-spacing: ${isKs2 ? '0.01em' : '0.06em'}; line-height: 1.35;">${isKs2 ? String(person.role || person.group || '').split(/[—;]/)[0].trim() : person.role || person.group || ''}</p>
             ${basicBio}
             ${flipPromptHtml}
           </div>
@@ -656,18 +745,28 @@ export function initKeyIndividualsTask(
   const header = document.createElement('div');
   header.style.textAlign = 'center';
   header.style.marginBottom = '32px';
-  const title = customTitle || (hasOrgs ? 'Key Individuals & Organisations' : 'Key Individuals');
+  const isKs2Gallery =
+    isKs2ActiveContext() || (keyIndividualsData[0] && isKs2UnitId(keyIndividualsData[0].unitId));
+  const title =
+    customTitle ||
+    (isKs2Gallery
+      ? 'People Who Shaped the Story'
+      : hasOrgs
+        ? 'Key Individuals & Organisations'
+        : 'Key Individuals');
   const desc =
     customDescription ||
-    (hasOrgs
-      ? 'Dossiers on the decisive leaders, movements, and institutions that shaped these events. Tap any card to inspect origins, actions, and key distinctions.'
-      : 'Profiles of the major historical figures who shaped these events. Tap any card to inspect their dossier.');
+    (isKs2Gallery
+      ? 'Meet the real people and groups from this history topic! Tap any trading card to flip it over, or tap the speaker icon to hear how to say their name.'
+      : hasOrgs
+        ? 'Dossiers on the decisive leaders, movements, and institutions that shaped these events. Tap any card to inspect origins, actions, and key distinctions.'
+        : 'Profiles of the major historical figures who shaped these events. Tap any card to inspect their dossier.');
 
   const filterBarHtml = hasOrgs
     ? `
-      <div class="agent-filter-bar" role="tablist" aria-label="Filter historical agents">
+      <div class="agent-filter-bar" role="tablist" aria-label="Filter historical cards">
         <button type="button" class="agent-filter-pill active" data-filter="all">
-          <span>All Dossiers (${keyIndividualsData.length})</span>
+          <span>${isKs2Gallery ? 'All Cards' : 'All Dossiers'} (${keyIndividualsData.length})</span>
         </button>
         <button type="button" class="agent-filter-pill" data-filter="person">
           <i class="fa-solid fa-user-tie"></i>
@@ -675,7 +774,7 @@ export function initKeyIndividualsTask(
         </button>
         <button type="button" class="agent-filter-pill" data-filter="organisation">
           <i class="fa-solid fa-landmark"></i>
-          <span>Organisations (${orgCount})</span>
+          <span>${isKs2Gallery ? 'Groups' : 'Organisations'} (${orgCount})</span>
         </button>
       </div>
     `

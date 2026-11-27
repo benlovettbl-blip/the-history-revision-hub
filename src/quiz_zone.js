@@ -11,6 +11,9 @@ import { state } from './state.js';
 export function renderQuizZone(container, unitData) {
   // --- 1. DATA PREPARATION ---
   const curUnit = unitData.id || window.currentUnitId || '';
+  const isKs2Quiz =
+    String(curUnit).toLowerCase().startsWith('ks2_') ||
+    Boolean(unitData?.is_ks2 || unitData?.keyStage === 'KS2');
   let quizPack = [];
   let masterBank = [];
   let vocabBank = [];
@@ -120,8 +123,13 @@ export function renderQuizZone(container, unitData) {
       if (l.vocab) {
         l.vocab.forEach((v) => {
           if (!isPreSpecContextLesson) vocabBank.push({ term: v.term, definition: v.definition });
-          addFlashcard(`What is the definition of "${v.term}"?`, v.definition);
-          addFlashcard(`Which term matches this definition: "${v.definition}"?`, v.term);
+          if (isKs2Quiz) {
+            addFlashcard(`What does "${v.term}" mean?`, v.definition);
+            addFlashcard(`Which key word means: "${v.definition}"?`, v.term);
+          } else {
+            addFlashcard(`What is the definition of "${v.term}"?`, v.definition);
+            addFlashcard(`Which term matches this definition: "${v.definition}"?`, v.term);
+          }
         });
       }
       if (lessonQuiz && Array.isArray(lessonQuiz) && lessonQuiz.length > 0) {
@@ -184,43 +192,43 @@ export function renderQuizZone(container, unitData) {
         </style>
         <div style="max-width: 880px; margin: 0 auto; padding-bottom: 36px; font-family: 'Inter', sans-serif;">
             <div style="text-align: center; margin-bottom: 16px;">
-                <h1 style="font-size: 2rem; color: #ffffff; margin: 0 0 6px 0; font-weight: 800; letter-spacing: -0.5px; text-shadow: 0 2px 10px rgba(0,0,0,0.3);"><i class="fa-solid fa-gamepad" style="color: #60a5fa;"></i> Interactive Revision Hub</h1>
-                <p style="color: #cbd5e1; font-size: 0.98rem; margin: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.2);">Select a game mode below to test your historical recall.</p>
+                <h1 style="font-size: 2rem; color: #ffffff; margin: 0 0 6px 0; font-weight: 800; letter-spacing: -0.5px; text-shadow: 0 2px 10px rgba(0,0,0,0.3);"><i class="fa-solid fa-gamepad" style="color: #60a5fa;"></i> ${isKs2Quiz ? 'Quiz &amp; Flashcard Zone' : 'Interactive Revision Hub'}</h1>
+                <p style="color: #cbd5e1; font-size: 0.98rem; margin: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.2);">${isKs2Quiz ? 'Pick a quiz or card game below to test what you have discovered!' : 'Select a game mode below to test your historical recall.'}</p>
             </div>
 
             <!-- QUICK WEAK SPOTS BANNER -->
-            <div id="weak-spots-quick-banner" style="background: linear-gradient(135deg, #fef2f2, #fee2e2); border: 1.5px solid #fca5a5; border-radius: 12px; padding: 12px 18px; margin-bottom: 16px; display: ${initialWeakCount > 0 ? 'flex' : 'none'}; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; box-shadow: 0 4px 12px rgba(220,38,38,0.12);">
+            <div id="weak-spots-quick-banner" style="background: ${isKs2Quiz ? 'linear-gradient(135deg, #fffbeb, #fef3c7)' : 'linear-gradient(135deg, #fef2f2, #fee2e2)'}; border: 1.5px solid ${isKs2Quiz ? '#fcd34d' : '#fca5a5'}; border-radius: 12px; padding: 12px 18px; margin-bottom: 16px; display: ${initialWeakCount > 0 ? 'flex' : 'none'}; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
                 <div style="display: flex; align-items: center; gap: 14px;">
-                    <div style="width: 42px; height: 42px; border-radius: 50%; background: #fee2e2; display: flex; align-items: center; justify-content: center; color: #dc2626; font-size: 1.25rem; border: 2px solid #fca5a5;">
-                        <i class="fa-solid fa-crosshairs"></i>
+                    <div style="width: 42px; height: 42px; border-radius: 50%; background: ${isKs2Quiz ? '#fef3c7' : '#fee2e2'}; display: flex; align-items: center; justify-content: center; color: ${isKs2Quiz ? '#d97706' : '#dc2626'}; font-size: 1.25rem; border: 2px solid ${isKs2Quiz ? '#fbbf24' : '#fca5a5'};">
+                        <i class="fa-solid ${isKs2Quiz ? 'fa-star' : 'fa-crosshairs'}"></i>
                     </div>
                     <div>
-                        <div class="weak-banner-title" style="font-weight: 800; color: #991b1b; font-size: 1rem;">Spaced Repetition: ${initialWeakCount} Target Questions Need Review</div>
-                        <div class="weak-banner-sub" style="font-size: 0.84rem; color: #7f1d1d;">${initialRedCount} Urgent (Red) &bull; ${initialAmberCount} Recovering (Amber) &bull; Master them with a 1-click rapid recall test</div>
+                        <div class="weak-banner-title" style="font-weight: 800; color: ${isKs2Quiz ? '#92400e' : '#991b1b'}; font-size: 1rem;">${isKs2Quiz ? `Practice Boost: ${initialWeakCount} Tricky ${initialWeakCount === 1 ? 'Question' : 'Questions'} to Try Again!` : `Spaced Repetition: ${initialWeakCount} Target Questions Need Review`}</div>
+                        <div class="weak-banner-sub" style="font-size: 0.84rem; color: ${isKs2Quiz ? '#78350f' : '#7f1d1d'};">${isKs2Quiz ? 'Turn tricky questions into gold stars with a quick practice round!' : `${initialRedCount} Urgent (Red) &bull; ${initialAmberCount} Recovering (Amber) &bull; Master them with a 1-click rapid recall test`}</div>
                     </div>
                 </div>
-                <button id="btn-quick-drill-weak" style="background: #dc2626; color: #ffffff; border: none; padding: 9px 18px; border-radius: 6px; font-weight: 800; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 2px 8px rgba(220,38,38,0.3); transition: all 0.15s ease;" onmouseover="this.style.background='#b91c1c';" onmouseout="this.style.background='#dc2626';">
-                    <i class="fa-solid fa-bolt" style="color: #fef08a;"></i> Drill My Weak Spots
+                <button id="btn-quick-drill-weak" style="background: ${isKs2Quiz ? '#d97706' : '#dc2626'}; color: #ffffff; border: none; padding: 9px 18px; border-radius: 6px; font-weight: 800; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); transition: all 0.15s ease;">
+                    <i class="fa-solid fa-bolt" style="color: #fef08a;"></i> ${isKs2Quiz ? 'Practise Tricky Questions' : 'Drill My Weak Spots'}
                 </button>
             </div>
 
             <!-- MODE SELECT MENU -->
             <div id="mode-select-container">
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
-                    <!-- TARGETED WEAKNESS MODE CARD -->
-                    <div style="border: 2px solid #ef4444; border-radius: 12px; padding: 25px; text-align: center; cursor: pointer; transition: 0.2s; background: #fff5f5; position: relative;" onmouseover="this.style.borderColor='#dc2626'; this.style.background='#fee2e2';" onmouseout="this.style.borderColor='#ef4444'; this.style.background='#fff5f5';" id="btn-mode-weak-spots">
+                    <!-- TARGETED WEAKNESS / TRICKY QUESTIONS MODE CARD -->
+                    <div style="border: 2px solid ${isKs2Quiz ? '#f59e0b' : '#ef4444'}; border-radius: 12px; padding: 25px; text-align: center; cursor: pointer; transition: 0.2s; background: ${isKs2Quiz ? '#fffbeb' : '#fff5f5'}; position: relative;" id="btn-mode-weak-spots">
                         <div style="position: relative; display: inline-block;">
-                            <i class="fa-solid fa-crosshairs" style="font-size: 3rem; color: #dc2626; margin-bottom: 15px;"></i>
-                            <span id="weak-spots-count-badge" style="display: ${initialWeakCount > 0 ? 'inline-block' : 'none'}; position: absolute; top: -6px; right: -18px; background: #dc2626; color: white; border-radius: 999px; padding: 2px 8px; font-size: 0.78rem; font-weight: 800; border: 2px solid #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">${initialWeakCount}</span>
+                            <i class="fa-solid ${isKs2Quiz ? 'fa-star' : 'fa-crosshairs'}" style="font-size: 3rem; color: ${isKs2Quiz ? '#d97706' : '#dc2626'}; margin-bottom: 15px;"></i>
+                            <span id="weak-spots-count-badge" style="display: ${initialWeakCount > 0 ? 'inline-block' : 'none'}; position: absolute; top: -6px; right: -18px; background: ${isKs2Quiz ? '#d97706' : '#dc2626'}; color: white; border-radius: 999px; padding: 2px 8px; font-size: 0.78rem; font-weight: 800; border: 2px solid #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">${initialWeakCount}</span>
                         </div>
-                        <h3 style="margin:0 0 10px 0; color: #991b1b; font-size: 1.5rem;">Targeted Weakness</h3>
-                        <p id="weak-spots-card-desc" style="color: #64748b; margin:0;">${initialWeakCount === 0 ? '🎉 0 weak spots! You are 100% on target across this unit.' : `${Math.min(10, initialWeakCount)}-question rapid recall drill focusing ONLY on your missed questions (${initialRedCount} Red, ${initialAmberCount} Amber).`}</p>
+                        <h3 style="margin:0 0 10px 0; color: ${isKs2Quiz ? '#92400e' : '#991b1b'}; font-size: 1.5rem;">${isKs2Quiz ? 'Tricky Questions' : 'Targeted Weakness'}</h3>
+                        <p id="weak-spots-card-desc" style="color: #64748b; margin:0;">${initialWeakCount === 0 ? (isKs2Quiz ? '🌟 0 tricky questions right now — you are flying through this topic!' : '🎉 0 weak spots! You are 100% on target across this unit.') : isKs2Quiz ? `Practise the ${Math.min(10, initialWeakCount)} ${initialWeakCount === 1 ? 'question' : 'questions'} you missed last time and turn them into stars!` : `${Math.min(10, initialWeakCount)}-question rapid recall drill focusing ONLY on your missed questions (${initialRedCount} Red, ${initialAmberCount} Amber).`}</p>
                     </div>
 
                     <div style="border: 2px solid #e2e8f0; border-radius: 12px; padding: 25px; text-align: center; cursor: pointer; transition: 0.2s;" onmouseover="this.style.borderColor='#1e3a8a'; this.style.background='#f8fafc';" onmouseout="this.style.borderColor='#e2e8f0'; this.style.background='white';" id="btn-mode-levels">
                         <i class="fa-solid fa-layer-group" style="font-size: 3rem; color: #3b82f6; margin-bottom: 15px;"></i>
-                        <h3 style="margin:0 0 10px 0; color: #1e3a8a; font-size: 1.5rem;">Topic Quizzes</h3>
-                        <p style="color: #64748b; margin:0;">Tracked, structured quizzes mapped to the A4 pack.</p>
+                        <h3 style="margin:0 0 10px 0; color: #1e3a8a; font-size: 1.5rem;">${isKs2Quiz ? 'Enquiry Quizzes' : 'Topic Quizzes'}</h3>
+                        <p style="color: #64748b; margin:0;">${isKs2Quiz ? 'Step-by-step quizzes for every enquiry in this unit.' : 'Tracked, structured quizzes mapped to the A4 pack.'}</p>
                     </div>
                     ${
                       examClinicPack.length > 0

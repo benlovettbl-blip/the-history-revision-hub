@@ -60,3 +60,24 @@ For Key Stage 2 pupils, eye-tracking between narrow columns causes visual fatigu
 - **Automated Auto-Balancer:** Execute `scripts/engine/auto_balancer.cjs` / `scripts/auto_calibrate_engine.cjs` in headless Chromium before `scripts/audit_page_budget.cjs`.
 - **Quality Gates:** `0px` overflow (`scrollHeight <= clientHeight + 2px`), `>= +10px` footer clearance, `>= 95%` vertical space utilization (`✅ OPTIMAL`), strict institutional neutrality (*"The History Revision Hub"*), and 100% dynamic loading from `units/<unit_id>/data.js`.
 
+---
+
+## 5. KS2 Digital App Edge, Primary Safeguarding & Child-Friendly UI Standard
+All 12 `ks2_*` units in the interactive web application must enforce primary-calibrated cognitive load, stigma-free accessibility, and strict safeguarding (`src/utils/ks2_mode.js`):
+1. **Primary Safeguarding Fence (`Ctrl+K` Search, Arcade & Mobile Shell):**
+   - Whenever `isKs2ActiveContext()` is true and `isStaffModeActive()` is false, lock Global Keyword Search (`src/keyword_search.js`), Arcade course dropdowns (`src/arcade_zone.js`), and Mobile navigation (`src/mobile_app_shell.js`) strictly to Key Stage 2 so Year 3–6 pupils never encounter *The Shoah*, *Weimar & Nazi Germany*, *Conflict in the Middle East*, or GCSE Exam tabs (`Exam` / `1 Exam Q`).
+2. **Bite-Sized Key Individual Trading Cards (`<= 35` Words):**
+   - Inline `[🪪 Name]` clicks (`src/engine/narrative_annotator.js`) open a ~30-word **"Who Was This?"** mini card with `[🔊 Say Name]`, 1-sentence *Who They Were*, and 1 *⭐ Famous for* highlight.
+   - Dedicated gallery (`src/key_individuals.js`) renders **"People Who Shaped the Story"** with 3-beat trading-card backs (`🌟 Who They Were`, `⚡ What They Did`, `🔎 Cool Clue to Spot`) + `[🔊 Read Card Aloud]` (zero 5-box GCSE dossiers).
+3. **Click-Only Popups, Vocab Density Cap & `Calm Read` Toggle:**
+   - Disable accidental mouse-hover popovers on `.vocab-word`, `[🪪 Name]` chips, and `.lesson-banner-tooltip` in KS2 so popups appear only on intentional click/tap.
+   - Cap inline dotted vocabulary underlines to `<= 2` per narrative block on KS2, and include the 1-tap **`Calm Read`** button in the Lesson Launchpad (`body.hh-calm-reading-mode`).
+4. **Detective Source Badges, Unit Hooks, Quizzes, Arcade, Story Timeline & 3-Ring Mind Maps:**
+   - **Top Accessibility Bar:** Label controls **`Easy Read`** and **`Page Tint`** (never `SEN` / `Overlay`).
+   - **Unit Overview Hook (`src/unit_synopses.js`):** Render upright `Inter` 2-sentence **"🧭 What We Will Discover"** cards + `[🔊 Listen]` + topic pills instead of 115-word italic synopses.
+   - **Sources A–E (`src/engine/lesson_renderer.js`):** Translate badges to plain Detective English (*Can We Trust This Clue?*, *Comparing Two Clues*, *Why Was This Made?*, *What Can We Work Out?*, *Where this clue comes from:*) and collapse verbose museum/CC licence strings inside `🏛️ Museum credit`.
+   - **Quizzes & Check My Answers (`src/quiz_zone.js`, `src/marking_bank.js`):** Use warm amber **`Practice Boost / Tricky Questions`** (zero red `"Urgent / Weaknesses"` badges), child-friendly flashcard stems, and **`KS2 Check My Answers`**.
+   - **History Games Arcade (`src/arcade_zone.js`, `src/arcade/games/*.js`):** *Secret Word Detective* (vowels + first letter pre-revealed, 9 tries, free topic hint, `Say Word` button), *90s Clock Challenge* (90s timer, +5s streak bonus, zero `"❌ Freeze!"` penalty), *True or Trick?*, and *4×4 Topic Match*.
+   - **Story Timeline & 3-Ring Mind Map (`src/universal_living_timeline.js`, `src/true_mindmap_engine.js`):** Unify KS2 timeline naming to **`Story Timeline`** (tucking quote + detective check into `<details>`), and default KS2 Mind Maps to a **3-Ring Simple View** with a 1-tap `🔍 Extra Clues` toggle for Rings 4–5.
+
+

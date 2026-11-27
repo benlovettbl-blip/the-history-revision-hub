@@ -47,6 +47,20 @@ import {
 import { openUnifiedTeacherGuidance } from './teacher_guidance_modal.js';
 import { isOcrAncientUnit, renderAncientLesson } from './ancient_lesson_renderer.js';
 import { initLaptopModeForLesson } from './laptop_mode.js';
+import { translateKs2SourceBadge } from '../utils/ks2_mode.js';
+
+function formatKs2SourceProvenanceHtml(formattedHtml, isKs2Mode) {
+  const str = String(formattedHtml || '').trim();
+  if (!isKs2Mode || !str) return str;
+  const creditMatch = str.match(
+    /^(.*?)\s*\(([^()]{30,}(?:Museum|Wikimedia|Commons|CC\s*BY|Public Domain|Archive|Collection|Library|Photograph|Trust|Courtesy| accession)[^()]*)\)\.?$/i,
+  );
+  if (!creditMatch) return str;
+  const mainClue = creditMatch[1].trim();
+  const creditDetail = creditMatch[2].trim();
+  if (!mainClue) return str;
+  return `${mainClue} <details class="ks2-museum-credit-toggle"><summary>🏛️ Museum credit</summary><span>${creditDetail}</span></details>`;
+}
 if (typeof window !== 'undefined' && !window.openUnifiedTeacherGuidance) {
   window.openUnifiedTeacherGuidance = openUnifiedTeacherGuidance;
 }
@@ -441,7 +455,8 @@ export function renderLesson(lesson) {
   const renderSourceEnquiryBox = ({ srcObj, promptText, contextVal = '' }) => {
     if (!promptText || !String(promptText).trim()) return '';
     const enqIdx = sourceEnquiryCounter++;
-    const dynamicBadge = resolveSourceEnquiryBadge(srcObj, promptText);
+    const rawBadge = resolveSourceEnquiryBadge(srcObj, promptText);
+    const dynamicBadge = isKs2 ? translateKs2SourceBadge(rawBadge) : rawBadge;
     const modeCfg = resolveSourceEnquiryMode(srcObj, promptText);
     const fmt = (txt) =>
       typeof window !== 'undefined' && window.formatBold ? window.formatBold(txt) : txt;
@@ -1126,8 +1141,12 @@ export function renderLesson(lesson) {
               ${(() => {
                 const provStr = String(citationText || contextText || displayTitle || '').trim();
                 const shortProv = (provStr.match(/[^.!?]+[.!?]+(?:\s+[^.!?]+[.!?]+)?/) || [provStr])[0].trim();
+                const formattedShortProv = formatKs2SourceProvenanceHtml(
+                  typeof window !== 'undefined' && window.formatBold ? window.formatBold(shortProv) : shortProv,
+                  isKs2,
+                );
                 return shortProv
-                  ? `<div class="source-top-provenance-strip" style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3.5px solid #1e40af; border-radius: 5px; padding: 7px 12px; margin-bottom: 10px; font-size: 0.86rem; color: #334155; line-height: 1.45;"><strong style="color: #0f172a;">${sLetter ? `Source ${sLetter}: ` : 'Provenance: '}</strong>${typeof window !== 'undefined' && window.formatBold ? window.formatBold(shortProv) : shortProv}</div>`
+                  ? `<div class="source-top-provenance-strip" style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3.5px solid #1e40af; border-radius: 5px; padding: 7px 12px; margin-bottom: 10px; font-size: 0.86rem; color: #334155; line-height: 1.45;"><strong style="color: #0f172a;">${sLetter ? `Source ${sLetter}: ` : isKs2 ? 'Where this clue comes from: ' : 'Provenance: '}</strong>${formattedShortProv}</div>`
                   : '';
               })()}
               ${
@@ -3730,6 +3749,56 @@ export function renderLesson(lesson) {
       contentStr = formatParagraphPills(contentStr);
       let styledContent = contentStr;
 
+      const isAncientPolishPrototype =
+        (window.currentUnitId || unitId) === 'first_british_empire' ||
+        Boolean(activeUnit && activeUnit.prototype_ancient_polish);
+
+      if (isAncientPolishPrototype && Array.isArray(lesson && lesson.vocab) && lesson.vocab.length > 0) {
+        if (typeof window !== 'undefined' && !window.hubSpeakVocabTerm) {
+          window.hubSpeakVocabTerm = function (termText) {
+            try {
+              if (!window.speechSynthesis || !termText) return;
+              window.speechSynthesis.cancel();
+              const utt = new SpeechSynthesisUtterance(String(termText));
+              utt.lang = 'en-GB';
+              utt.rate = 0.94;
+              window.speechSynthesis.speak(utt);
+            } catch (_) {}
+          };
+        }
+        for (const v of lesson.vocab) {
+          const term = String((v && v.term) || '').trim();
+          if (term.length < 4) continue;
+          const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          // Match first occurrence outside HTML tags only
+          const parts = styledContent.split(/(<[^>]+>)/g);
+          let wrappedOnce = false;
+          const rx = new RegExp(`\\b(${escapedTerm})\\b`, 'i');
+          for (let pIdx = 0; pIdx < parts.length; pIdx++) {
+            if (pIdx % 2 === 1) continue; // HTML tag
+            // Skip if inside an existing interactive/tooltip span
+            const prevTag = parts[pIdx - 1] || '';
+            if (/hub-proto-vocab-term|para-ref/i.test(prevTag)) continue;
+            if (rx.test(parts[pIdx])) {
+              const pron = v.phonetic || v.pronunciation || '';
+              const rawTip = `${pron ? `[${pron}] ` : ''}${v.definition || ''}`
+                .replace(/&/g, '&amp;')
+                .replace(/"/g, '&quot;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+              const safeSpeak = term.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+              parts[pIdx] = parts[pIdx].replace(
+                rx,
+                `<span class="hub-proto-vocab-term" role="button" tabindex="0" title="${rawTip}" onclick="event.stopPropagation(); if(window.hubSpeakVocabTerm){window.hubSpeakVocabTerm('${safeSpeak}');}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();event.stopPropagation();if(window.hubSpeakVocabTerm){window.hubSpeakVocabTerm('${safeSpeak}');}}" style="border-bottom: 1.5px dashed #d97706; cursor: pointer; font-weight: 600; padding: 0 1px;">$1<i class="fa-solid fa-volume-high no-print" aria-hidden="true" style="font-size: 0.62rem; color: #d97706; margin-left: 3px; vertical-align: super;"></i></span>`,
+              );
+              wrappedOnce = true;
+              break;
+            }
+          }
+          if (wrappedOnce) styledContent = parts.join('');
+        }
+      }
+
       let l4StyledContent = '';
       if (block.level_4) {
         let l4ContentStr = narrativeAnnotator.annotateBlock(block.level_4, {
@@ -4095,13 +4164,15 @@ export function renderLesson(lesson) {
           }
 
           if (!combined) return '';
-          const fmtProv =
+          const fmtProv = formatKs2SourceProvenanceHtml(
             typeof window !== 'undefined' && window.formatBold
               ? window.formatBold(combined)
-              : combined;
+              : combined,
+            isKs2,
+          );
           return `
             <div class="source-top-provenance-strip" style="background: #f8fafc; border: 1px solid #e2e8f0; border-left: 3.5px solid #1e40af; border-radius: 5px; padding: 7px 12px; margin-bottom: 10px; font-size: 0.86rem; color: #334155; line-height: 1.45;">
-              <strong style="color: #0f172a;">${bLetter ? `Source ${bLetter}: ` : 'Provenance: '}</strong>${fmtProv}
+              <strong style="color: #0f172a;">${bLetter ? `Source ${bLetter}: ` : isKs2 ? 'Where this clue comes from: ' : 'Provenance: '}</strong>${fmtProv}
             </div>
           `;
         };
@@ -4600,15 +4671,17 @@ export function renderLesson(lesson) {
       let headerBlockHtml = '';
       if (isHeaderUnified) {
         const cleanStageQ = cleanStageQForSpotlight;
+        const topBannerHeadline =
+          isAncientPolishPrototype && cleanHeadingTitle ? cleanHeadingTitle : cleanStageQ;
         headerBlockHtml = `
-          <div class="workbook-stage-question-banner unified-stage-header-card slim-stage-banner" id="stage-banner-${stageNum}" style="margin-bottom: 6px; background: #0f172a; border: 1px solid #334155; border-left: 4px solid #0284c7; border-radius: 7px; padding: 7px 12px; color: #ffffff; box-shadow: 0 2px 5px rgba(15,23,42,0.10);">
+          <div class="workbook-stage-question-banner unified-stage-header-card slim-stage-banner${isAncientPolishPrototype ? ' proto-title-top-banner' : ''}" id="stage-banner-${stageNum}" style="margin-bottom: 6px; background: #0f172a; border: 1px solid #334155; border-left: 4px solid #0284c7; border-radius: 7px; padding: 7px 12px; color: #ffffff; box-shadow: 0 2px 5px rgba(15,23,42,0.10);">
             <div class="stage-header-single-row" style="display: flex; justify-content: space-between; align-items: center; gap: 10px;">
-              <div class="stage-header-meta" onclick="if(window.jumpToSpineCard){window.jumpToSpineCard(${stageNum});}" style="flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; cursor: pointer;">
+              <div class="stage-header-meta"${headingAnchorId && isAncientPolishPrototype ? ` id="${headingAnchorId}"` : ''} onclick="if(window.jumpToSpineCard){window.jumpToSpineCard(${stageNum});}" style="flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; cursor: pointer;">
                 <span class="stage-decimal-pill" style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px; flex-shrink: 0; white-space: nowrap;">
                   Stage ${stageNum}
                 </span>
                 ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 7px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0; white-space: nowrap;"><i class="fa-regular fa-clock" style="font-size: 0.65rem;"></i> ${stageDateVal}</span>` : ''}
-                <span class="stage-banner-question" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.0rem; font-weight: 700; color: #f8fafc; line-height: 1.32; flex: 1 1 260px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${cleanStageQ}</span>
+                <span class="stage-banner-question" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.02rem; font-weight: 700; color: #f8fafc; line-height: 1.32; flex: 1 1 260px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${topBannerHeadline}</span>
               </div>
               <div class="narrative-chunk-audio" style="flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px;">
                 ${renderStageSpotlightBtnHTML(index)}
@@ -4646,11 +4719,15 @@ export function renderLesson(lesson) {
 
       const stageVideoPillHtml = renderBlockVideoMicroPillHTML(lesson, index + 1);
       const stageEyebrowHtml =
-        isHeaderUnified && cleanHeadingTitle
-          ? `<div class="narrative-stage-eyebrow"${headingAnchorId ? ` id="${headingAnchorId}"` : ''} style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;"><span>${cleanHeadingTitle}</span>${stageVideoPillHtml}</div>`
-          : isHeaderUnified && stageVideoPillHtml
+        isAncientPolishPrototype
+          ? stageVideoPillHtml
             ? `<div class="narrative-stage-eyebrow" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;">${stageVideoPillHtml}</div>`
-            : '';
+            : ''
+          : isHeaderUnified && cleanHeadingTitle
+            ? `<div class="narrative-stage-eyebrow"${headingAnchorId ? ` id="${headingAnchorId}"` : ''} style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;"><span>${cleanHeadingTitle}</span>${stageVideoPillHtml}</div>`
+            : isHeaderUnified && stageVideoPillHtml
+              ? `<div class="narrative-stage-eyebrow" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px;">${stageVideoPillHtml}</div>`
+              : '';
 
       const hasHookOrSlideCol = hasStageHookMap || hasSlideCompare || hasConceptWidget;
       const narrativeChunkHtml = `
@@ -4910,9 +4987,38 @@ export function renderLesson(lesson) {
           ? ` data-studio-audio="/audio/lessons/${encodeURIComponent(resolvedStudioUnit)}/${encodeURIComponent(resolvedStudioLesson)}_b${index + 1}.mp3"`
           : '';
 
+      const bottomStageAnswer =
+        (matchedWbStage && (matchedWbStage.model_sentence || matchedWbStage.answer || matchedWbStage.summary)) ||
+        (matchedStage && (matchedStage.summary || matchedStage.consequence)) ||
+        '';
+      const bottomStageConseq =
+        matchedStage && matchedStage.consequence && matchedStage.consequence !== bottomStageAnswer
+          ? matchedStage.consequence
+          : '';
+      const bottomStageCheckHtml =
+        isAncientPolishPrototype && cleanStageQForSpotlight
+          ? `
+            <details class="proto-stage-check-drawer no-print" style="margin: 8px 0 4px 0; background: #f8fafc; border: 1.5px solid #cbd5e1; border-left: 4px solid #0284c7; border-radius: 8px; overflow: hidden;">
+              <summary style="padding: 8px 14px; cursor: pointer; font-size: 0.92rem; font-weight: 700; color: #0f172a; display: flex; align-items: center; justify-content: space-between; gap: 10px; list-style: none; user-select: none;">
+                <span style="min-width: 0; line-height: 1.4;"><strong style="color: #0369a1; margin-right: 6px;">Check Stage ${stageNum}:</strong>${cleanStageQForSpotlight}</span>
+                <span style="font-size: 0.75rem; font-weight: 800; color: #0369a1; background: #e0f2fe; border: 1px solid #bae6fd; padding: 2px 9px; border-radius: 999px; white-space: nowrap; flex-shrink: 0;">Check Answer &#9662;</span>
+              </summary>
+              ${
+                bottomStageAnswer
+                  ? `<div style="padding: 10px 14px; border-top: 1px solid #e2e8f0; background: #ffffff; font-size: 0.9rem; line-height: 1.55; color: #1e293b;">
+                      <div>${bottomStageAnswer}</div>
+                      ${bottomStageConseq ? `<div style="margin-top: 6px; padding: 6px 10px; background: #f0f9ff; border-left: 3px solid #0284c7; border-radius: 4px; color: #0c4a6e; font-size: 0.85rem;"><strong>&#10132; Consequence:</strong> ${bottomStageConseq}</div>` : ''}
+                    </div>`
+                  : ''
+              }
+            </details>
+          `
+          : '';
+
       htmlNarrative += `
             <div class="standard-narrative-container"${studioAudioAttr} style="margin-bottom: 20px;">
               ${topNarrativeHtml}
+              ${bottomStageCheckHtml}
               ${blockSourceHtml}
             </div>
           `;
@@ -6937,11 +7043,11 @@ export function renderLesson(lesson) {
             <div style="display: flex; align-items: center; gap: 10px;">
               <span style="font-size: 1.25rem;">⚖️</span>
               <div>
-                <h3 style="margin: 0; font-size: 1.15rem; font-family: 'Playfair Display', serif; color: #ffffff;">16-Mark Essay Planning Matrix (2&times;2)</h3>
-                <span style="font-size: 0.75rem; color: #bfdbfe; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;">Edexcel Paper 1 &bull; Section B (Q5/Q6) &bull; ${ep.marks || '16 Marks + 4 SPaG'}</span>
+                <h3 style="margin: 0; font-size: 1.15rem; font-family: 'Playfair Display', serif; color: #ffffff;">${isKs3 ? (ep.heading || 'Milestone Essay Planning Matrix (Agree vs Counter-Arguments)') : '16-Mark Essay Planning Matrix (2&times;2)'}</h3>
+                <span style="font-size: 0.75rem; color: #bfdbfe; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px;">${isKs3 ? (ep.subtitle || 'Key Stage 3 History &bull; Balanced Evaluative Essay Scaffold') : `Edexcel Paper 1 &bull; Section B (Q5/Q6) &bull; ${ep.marks || '16 Marks + 4 SPaG'}`}</span>
               </div>
             </div>
-            <span style="background: rgba(255, 255, 255, 0.2); color: #ffffff; font-size: 0.78rem; font-weight: 800; padding: 4px 10px; border-radius: 20px;">Target: Level 4 (13–16 Marks)</span>
+            <span style="background: rgba(255, 255, 255, 0.2); color: #ffffff; font-size: 0.78rem; font-weight: 800; padding: 4px 10px; border-radius: 20px;">${isKs3 ? (ep.target_badge || 'Target: Greater Depth Judgement') : 'Target: Level 4 (13–16 Marks)'}</span>
           </div>
 
           <div style="padding: 20px;">

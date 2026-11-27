@@ -15,10 +15,13 @@ export function mountBossSprint(stageEl, pools, ctx) {
     return () => {};
   }
 
+  const isKs2 = String(ctx.unitId || '').toLowerCase().startsWith('ks2_');
+  const SPRINT_DURATION = isKs2 ? 90 : 60;
+  const BONUS_SECS = isKs2 ? 5 : 4;
   let destroyed = false;
   let timerInterval = null;
   let phase = 'READY'; // READY | LIVE | OVER
-  let timeLeft = 60;
+  let timeLeft = SPRINT_DURATION;
   let score = 0;
   let streak = 0;
   let bestStreak = 0;
@@ -42,7 +45,7 @@ export function mountBossSprint(stageEl, pools, ctx) {
     arcadeAudio.ensureContext();
     arcadeAudio.levelUp();
     phase = 'LIVE';
-    timeLeft = 60;
+    timeLeft = SPRINT_DURATION;
     score = 0;
     streak = 0;
     bestStreak = 0;
@@ -95,9 +98,9 @@ export function mountBossSprint(stageEl, pools, ctx) {
       recordQuestionResult(currentQ.id, true, currentQ, ctx.unitId);
 
       if (streak > 0 && streak % 3 === 0) {
-        timeLeft = Math.min(90, timeLeft + 4);
+        timeLeft = Math.min(isKs2 ? 120 : 90, timeLeft + BONUS_SECS);
         arcadeAudio.levelUp();
-        feedbackBanner = `<div class="tlb-banner ok">⚡ <strong>${streak}-STREAK BONUS! +4s</strong> &amp; +${pts} pts!</div>`;
+        feedbackBanner = `<div class="tlb-banner ok">⚡ <strong>${streak}-IN-A-ROW BONUS! +${BONUS_SECS}s</strong> &amp; +${pts} pts!</div>`;
       } else {
         arcadeAudio.correct();
         feedbackBanner = `<div class="tlb-banner ok">✅ Correct! +${pts} pts (${mult}x)</div>`;
@@ -108,13 +111,13 @@ export function mountBossSprint(stageEl, pools, ctx) {
       cooldownLocked = true;
       arcadeAudio.wrong();
       recordQuestionResult(currentQ.id, false, currentQ, ctx.unitId);
-      feedbackBanner = `<div class="tlb-banner err">❌ Freeze! Answer: <strong>${currentQ.a}</strong>${currentQ.explanation ? ` — ${currentQ.explanation}` : ''}</div>`;
+      feedbackBanner = `<div class="tlb-banner err">${isKs2 ? '💡 Answer:' : '❌ Freeze! Answer:'} <strong>${currentQ.a}</strong>${currentQ.explanation ? ` — ${currentQ.explanation}` : ''}</div>`;
       renderLive(idx);
       setTimeout(() => {
         if (destroyed || phase !== 'LIVE') return;
         cooldownLocked = false;
         loadNextQ();
-      }, 1250);
+      }, isKs2 ? 900 : 1250);
     }
   }
 
@@ -122,16 +125,16 @@ export function mountBossSprint(stageEl, pools, ctx) {
     stageEl.innerHTML = `
       <div class="arcade-result-panel">
         <div style="font-size:2.6rem;margin-bottom:6px;">⚡</div>
-        <h3>60-Second Boss Sprint</h3>
+        <h3>${isKs2 ? '90-Second Clock Challenge' : '60-Second Boss Sprint'}</h3>
         <p style="max-width:520px;margin:0 auto 16px;color:#cbd5e1;font-size:0.92rem;line-height:1.55;">
-          Race the 60-second clock across rapid-fire specification stems. Every <strong>3-answer streak adds +4 seconds</strong> to your clock!
+          ${isKs2 ? `Answer as many history questions as you can in ${SPRINT_DURATION} seconds! Every <strong>3 right in a row adds +${BONUS_SECS} seconds</strong> to your clock.` : 'Race the 60-second clock across rapid-fire specification stems. Every <strong>3-answer streak adds +4 seconds</strong> to your clock!'}
         </p>
         <div class="arcade-gameover-stats">
-          <div><span>Question Bank</span><strong>${pool.length} Stems</strong></div>
+          <div><span>Question Bank</span><strong>${pool.length} ${isKs2 ? 'Questions' : 'Stems'}</strong></div>
           <div><span>Personal Best</span><strong>${pb}</strong></div>
         </div>
         <button type="button" class="arcade-btn-primary" id="bsp-start-btn">
-          <i class="fa-solid fa-bolt"></i> Start 60s Countdown
+          <i class="fa-solid fa-bolt"></i> Start ${SPRINT_DURATION}s Challenge
         </button>
       </div>
     `;
@@ -151,12 +154,12 @@ export function mountBossSprint(stageEl, pools, ctx) {
         </div>
 
         <div class="bsp-feedback-slot" role="status" aria-live="polite">
-          ${feedbackBanner || `<div class="bsp-feedback-idle">⚡ Every 3-streak adds +4s bonus time!</div>`}
+          ${feedbackBanner || `<div class="bsp-feedback-idle">⚡ Every 3-in-a-row adds +${BONUS_SECS}s bonus time!</div>`}
         </div>
 
-        <div class="bsp-card ${cooldownLocked ? 'frozen' : ''}">
+        <div class="bsp-card ${cooldownLocked && !isKs2 ? 'frozen' : ''}">
           <div class="bsp-question-slot">
-            <div class="bsp-topic">${currentQ.source || 'Rapid Specification Check'}</div>
+            <div class="bsp-topic">${currentQ.source || (isKs2 ? 'History Quiz Check' : 'Rapid Specification Check')}</div>
             <h3 class="bsp-question">${currentQ.q}</h3>
           </div>
           <div class="bsp-options">
@@ -201,7 +204,7 @@ export function mountBossSprint(stageEl, pools, ctx) {
           <div><span>Personal Best</span><strong>${best}</strong></div>
         </div>
         <button type="button" class="arcade-btn-primary" id="bsp-replay-btn">
-          <i class="fa-solid fa-rotate-right"></i> Run Another 60s Sprint
+          <i class="fa-solid fa-rotate-right"></i> Play Another ${SPRINT_DURATION}s Round
         </button>
       </div>
     `;

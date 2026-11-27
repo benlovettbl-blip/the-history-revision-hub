@@ -1034,7 +1034,10 @@ export function updateBreadcrumbs(customTrail = null) {
     let currentSectionLabel = '';
     if (viewName === 'interactive') currentSectionLabel = 'Interactive Quizzing';
     else if (viewName === 'arcade') currentSectionLabel = 'Revision Arcade';
-    else if (viewName === 'timeline') currentSectionLabel = 'Chronological Timeline';
+    else if (viewName === 'timeline')
+      currentSectionLabel = String(unitId || '').startsWith('ks2_')
+        ? 'Story Timeline'
+        : 'Chronological Timeline';
     else if (viewName === 'mindmap') currentSectionLabel = 'Mind Map Studio';
     else if (viewName === 'booklet') currentSectionLabel = 'Printable Booklet';
     else if (viewName === 'mock-exams' || viewName === 'exam-trainer')
@@ -2410,7 +2413,7 @@ function updateSidebarForUnit(unitId, unitData = {}) {
     navTimeline.dataset.unit = unitId;
     navTimeline.innerHTML =
       String(unitId || '').startsWith('ks2_')
-        ? '<i class="fa-solid fa-sliders" style="color: #3b82f6;"></i><span>Milestones Slider</span>'
+        ? '<i class="fa-solid fa-compass" style="color: #3b82f6;"></i><span>Story Timeline</span>'
         : '<i class="fa-solid fa-clock-rotate-left" style="color: #10b981;"></i><span>Living Chronology</span>';
     navTimeline.onclick = (e) => {
       if (e) e.stopPropagation();

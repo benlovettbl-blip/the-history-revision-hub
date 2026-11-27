@@ -20,6 +20,7 @@
 import { getAssetUrl } from './assets.js';
 import { isOrganisationEntity } from '../key_individuals.js';
 import { highlightGlossaryInProse } from './disciplinary_glossary.js';
+import { isKs2UnitId, extractKs2ShortHook } from '../utils/ks2_mode.js';
 
 // Singleton registry shared across Vite code-split chunks (main + lesson-engine)
 const DOSSIER_ENTITY_REGISTRY =
@@ -424,6 +425,7 @@ function buildUnitDossierMatchers(unitData, unitId = 'unit') {
 
 function renderInlineDossierChipHtml(surfaceLabel, entity) {
   const isOrg = entity.isOrg;
+  const isKs2 = isKs2UnitId(entity.unitId);
   const chipClass = isOrg
     ? 'key-individual-inline-link dossier-chip-org no-print'
     : 'key-individual-inline-link dossier-chip-person no-print';
@@ -433,8 +435,11 @@ function renderInlineDossierChipHtml(surfaceLabel, entity) {
   const safeTitle = escapeHtml(
     `${entity.displayName}${entity.role ? ' — ' + entity.role : ''} (Click for Dossier Summary)`,
   );
+  const hoverAttr = isKs2
+    ? `aria-label="Tap to meet ${safeJumpName}"`
+    : `title="${safeTitle}"`;
 
-  return `<a href="javascript:void(0)" class="${chipClass}" data-dossier-key="${safeRegKey}" data-jump-name="${safeJumpName}" title="${safeTitle}"><i class="fa-solid ${chipIcon}" aria-hidden="true"></i><span>${surfaceLabel}</span></a><span class="print-only" style="display:none; font-weight:bold;">${surfaceLabel}</span>`;
+  return `<a href="javascript:void(0)" class="${chipClass}" data-dossier-key="${safeRegKey}" data-jump-name="${safeJumpName}" ${hoverAttr}><i class="fa-solid ${chipIcon}" aria-hidden="true"></i><span>${surfaceLabel}</span></a><span class="print-only" style="display:none; font-weight:bold;">${surfaceLabel}</span>`;
 }
 
 /**
@@ -626,11 +631,11 @@ export function createLessonNarrativeAnnotator({
       contentStr = ensureBalancedParagraphBolding(contentStr, wbStage);
     }
 
-    // Step 3: Channel 2 — Priority-ranked, lesson-scoped Vocabulary Lens hover underlines
+    // Step 3: Channel 2 — Priority-ranked, lesson-scoped Vocabulary Lens underlines (capped to 2 per block on KS2)
     contentStr = isQuote
       ? `<em style="font-size:1.1rem; color:#475569;">${contentStr}</em>`
       : highlightGlossaryInProse(contentStr, vocabDict, {
-          maxPerBlock: 4,
+          maxPerBlock: isKs2UnitId(unitId, unitData) ? 2 : 4,
           seenRoots: activeSeenVocab,
           excludedTerms: activeExcludedVocab,
         });
@@ -773,8 +778,15 @@ export function initDossierPopover() {
     chipEl.classList.add('active');
 
     const isOrg = entity.isOrg;
+    const isKs2Dossier = isKs2UnitId(entity.unitId);
     const accentBg = isOrg ? '#0f766e' : '#1d4ed8';
-    const badgeLabel = isOrg ? 'Key Organisation' : 'Key Individual';
+    const badgeLabel = isKs2Dossier
+      ? isOrg
+        ? 'Group in Our Story'
+        : 'Person in Our Story'
+      : isOrg
+        ? 'Key Organisation'
+        : 'Key Individual';
     const badgeIcon = isOrg ? 'fa-landmark' : 'fa-user-tie';
 
     const rawImg = String(entity.image_url || entity.image || '').trim();
@@ -794,11 +806,79 @@ export function initDossierPopover() {
       : '';
 
     const summaryRaw = entity.significance || entity.bio || entity.description || entity.origins || '';
+    const rawActions = entity.strategic_actions || entity.achievements || entity.actions;
+    const safeJsJump = String(entity.jumpName || entity.displayName)
+      .replace(/\\/g, '\\\\')
+      .replace(/'/g, "\\'");
+    const safeSpeakName = String(entity.displayName || '')
+      .replace(/\([^)]*\)/g, '')
+      .trim()
+      .replace(/\\/g, '\\\\')
+      .replace(/'/g, "\\'");
+
+    if (isKs2Dossier) {
+      // Bite-sized KS2 Trading Card Popover (~25–35 words max — zero 3-bullet wall, zero repetition)
+      const shortWho = extractKs2ShortHook(summaryRaw, 1, 22);
+      const firstAction = Array.isArray(rawActions) && rawActions.length > 0
+        ? rawActions[0]
+        : typeof rawActions === 'string'
+          ? rawActions
+          : '';
+      const rawFamous = firstAction ? extractKs2ShortHook(firstAction, 1, 18) : '';
+      const whoWords = new Set(
+        shortWho
+          .toLowerCase()
+          .split(/[^a-z0-9]+/)
+          .filter((w) => w.length >= 5),
+      );
+      const famousWords = rawFamous
+        .toLowerCase()
+        .split(/[^a-z0-9]+/)
+        .filter((w) => w.length >= 5);
+      const overlapCount = famousWords.filter((w) => whoWords.has(w)).length;
+      const shortFamous =
+        rawFamous && (famousWords.length === 0 || overlapCount / famousWords.length < 0.5)
+          ? rawFamous
+          : '';
+      const shortRole = String(entity.role || '').split(/[—;,]/)[0].trim();
+
+      popover.innerHTML = `
+        <div class="dossier-pop-header" style="border-bottom-color: ${accentBg};">
+          ${thumbHtml}
+          <div class="dossier-pop-meta">
+            <div class="dossier-pop-badge-row" style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;">
+              <span class="dossier-pop-badge" style="background: ${accentBg};">
+                <i class="fa-solid ${badgeIcon}"></i> ${badgeLabel}
+              </span>
+              <button type="button" onclick="event.stopPropagation(); window.speakVocabWord && window.speakVocabWord('${safeSpeakName}', this);" style="background:#eff6ff;border:1px solid #bfdbfe;color:#1d4ed8;border-radius:999px;padding:2px 8px;font-size:0.7rem;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;gap:4px;" title="Hear name spoken aloud">
+                <i class="fa-solid fa-volume-high"></i> Say Name
+              </button>
+            </div>
+            <h4 class="dossier-pop-title" style="margin-top:3px;">${escapeHtml(entity.displayName)}</h4>
+            ${shortRole ? `<div class="dossier-pop-role">${escapeHtml(shortRole)}</div>` : ''}
+          </div>
+          <button type="button" class="dossier-pop-close" onclick="window.hideDossierPopover && window.hideDossierPopover();" aria-label="Close card">&times;</button>
+        </div>
+        <div class="dossier-pop-body" style="padding:11px 14px;display:flex;flex-direction:column;gap:8px;">
+          ${shortWho ? `<div style="font-size:0.88rem;line-height:1.45;color:#1e293b;">${fmtDossierRichText(shortWho)}</div>` : ''}
+          ${shortFamous ? `<div style="background:#fffbeb;border-left:3px solid #f59e0b;padding:7px 10px;border-radius:0 6px 6px 0;font-size:0.82rem;line-height:1.4;color:#78350f;"><strong>⭐ Famous for:</strong> ${fmtDossierRichText(shortFamous)}</div>` : ''}
+        </div>
+        <div class="dossier-pop-footer">
+          <button type="button" class="dossier-pop-jump-btn" style="color: ${accentBg}; border-color: ${isOrg ? '#99f6e4' : '#bfdbfe'}; background: ${isOrg ? '#f0fdfa' : '#eff6ff'};" onclick="window.hideDossierPopover && window.hideDossierPopover(); if(window.jumpToKeyIndividual){window.jumpToKeyIndividual('${safeJsJump}');}">
+            <i class="fa-solid fa-users"></i>
+            <span>Meet Everyone in This Topic &rarr;</span>
+          </button>
+        </div>
+      `;
+      popover.classList.add('visible');
+      positionPopover(chipEl);
+      return;
+    }
+
     const summaryHtml = summaryRaw
       ? `<div class="dossier-pop-summary">${fmtDossierRichText(summaryRaw)}</div>`
       : '';
 
-    const rawActions = entity.strategic_actions || entity.achievements || entity.actions;
     let bulletsHtml = '';
     if (Array.isArray(rawActions) && rawActions.length > 0) {
       const topItems = rawActions.slice(0, 3);
@@ -816,10 +896,6 @@ export function initDossierPopover() {
     const distinctionHtml = entity.key_distinction
       ? `<div class="dossier-pop-distinction"><strong>${distinctionLabel}</strong> ${fmtDossierRichText(entity.key_distinction)}</div>`
       : '';
-
-    const safeJsJump = String(entity.jumpName || entity.displayName)
-      .replace(/\\/g, '\\\\')
-      .replace(/'/g, "\\'");
 
     popover.innerHTML = `
       <div class="dossier-pop-header" style="border-bottom-color: ${accentBg};">

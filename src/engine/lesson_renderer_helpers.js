@@ -4019,6 +4019,24 @@ export function renderLessonLaunchpad({
             .join('')}
         </div>
         <div class="launchpad-actions-group">
+          ${
+            String(effectiveUnitId || '').toLowerCase().startsWith('ks2_')
+              ? (() => {
+                  const calmOn =
+                    typeof document !== 'undefined' &&
+                    document.body?.classList?.contains('hh-calm-reading-mode');
+                  return `
+          <button type="button"
+            class="launchpad-calm-btn no-print${calmOn ? ' is-active' : ''}"
+            onclick="const on = document.body.classList.toggle('hh-calm-reading-mode'); document.querySelectorAll('.launchpad-calm-btn').forEach((b) => { b.classList.toggle('is-active', on); b.setAttribute('aria-pressed', on ? 'true' : 'false'); });"
+            aria-pressed="${calmOn ? 'true' : 'false'}"
+            title="Calm Read: hide inline name chips and dotted underlines for distraction-free reading">
+            <i class="fa-solid fa-feather-pointed"></i>
+            <span class="lp-calm-lbl">Calm Read</span>
+          </button>`;
+                })()
+              : ''
+          }
           <button type="button"
             class="launchpad-podcast-btn no-print"
             onclick="window.hhPlayFullLessonPodcast && window.hhPlayFullLessonPodcast(this)"
@@ -5665,7 +5683,7 @@ export function initCrummackInteractiveFeatures() {
         box-shadow: 0 0 12px rgba(245, 158, 11, 0.6) !important;
       }
 
-      /* Numbered Circular Hotspot Pins (Stage 1 Hook Maps & Whiteboard Mode) */
+      /* Clean Pinpoint Hotspot Dots (Stage 1 Hook Maps, Sources & Whiteboard Mode — Zero Clunky Number Circles) */
       .map-hotspot-pin.numbered-hotspot-pin {
         width: 24px !important;
         height: 24px !important;
@@ -5682,51 +5700,48 @@ export function initCrummackInteractiveFeatures() {
         z-index: 35 !important;
       }
       .map-hotspot-pin.numbered-hotspot-pin .pin-pulse {
-        left: 0 !important;
-        top: 0 !important;
-        width: 24px !important;
-        height: 24px !important;
-        transform: scale(1) !important;
+        left: 50% !important;
+        top: 50% !important;
+        width: 16px !important;
+        height: 16px !important;
+        transform: translate(-50%, -50%) scale(1) !important;
         transform-origin: center center !important;
-        opacity: 0.5 !important;
+        opacity: 0.4 !important;
         animation: hotspot-numbered-pulse 2.4s infinite ease-out !important;
       }
       .map-hotspot-pin.numbered-hotspot-pin .pin-marker {
-        left: 0 !important;
-        top: 0 !important;
-        transform: none !important;
-        width: 24px !important;
-        height: 24px !important;
+        left: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 9px !important;
+        height: 9px !important;
         border-radius: 50% !important;
-        border: 2px solid #ffffff !important;
-        color: #ffffff !important;
-        font-family: 'Inter', sans-serif !important;
-        font-size: 0.74rem !important;
-        font-weight: 900 !important;
-        line-height: 1 !important;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7) !important;
+        border: 1.5px solid #ffffff !important;
+        color: transparent !important;
+        font-size: 0 !important;
+        line-height: 0 !important;
+        overflow: hidden !important;
+        display: block !important;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65) !important;
         box-sizing: border-box !important;
       }
       .map-hotspot-pin.numbered-hotspot-pin:hover .pin-marker,
       .map-hotspot-pin.numbered-hotspot-pin.active-pin .pin-marker {
-        width: 24px !important;
-        height: 24px !important;
-        transform: scale(1.16) !important;
-        border-color: #fbbf24 !important;
-        box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.35), 0 3px 10px rgba(0, 0, 0, 0.8) !important;
+        width: 12px !important;
+        height: 12px !important;
+        transform: translate(-50%, -50%) scale(1.12) !important;
+        border-color: #ffffff !important;
+        box-shadow: 0 0 0 4px rgba(251, 191, 36, 0.42), 0 2px 6px rgba(0, 0, 0, 0.75) !important;
       }
       .map-hotspot-pin.numbered-hotspot-pin .pin-label {
-        left: 29px !important;
+        left: 19px !important;
         right: auto !important;
         top: 50% !important;
         transform: translateY(-50%) !important;
       }
       .map-hotspot-pin.numbered-hotspot-pin.pin-align-left .pin-label {
         left: auto !important;
-        right: 29px !important;
+        right: 19px !important;
       }
       .map-hotspot-pin.numbered-hotspot-pin:hover .pin-label,
       .map-hotspot-pin.numbered-hotspot-pin:focus-visible .pin-label,

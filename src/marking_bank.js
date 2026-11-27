@@ -2287,7 +2287,7 @@ export function renderDepartmentMarkingBank(container, unitId, unitData = {}) {
       <div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #ffffff; padding: 26px 30px; border-radius: 12px; margin-bottom: 24px; box-shadow: 0 4px 15px rgba(0,0,0,0.15); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
         <div>
           <div style="font-size: 0.78rem; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #38bdf8; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
-            <i class="fa-solid fa-clipboard-check"></i> <span>${isKs2 ? 'KS2 Self-Checking Quiz & Workbook Answer Key' : 'Digital Department Marking Bank & Model Explanations'}</span>
+            <i class="fa-solid fa-clipboard-check"></i> <span>${isKs2 ? 'KS2 Check My Answers • Quiz & Workbook Key' : 'Digital Department Marking Bank & Model Explanations'}</span>
           </div>
           <h1 style="margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 1.95rem; font-weight: 900; line-height: 1.2; color: #ffffff;">
             ${data.unitTitle}
@@ -2395,7 +2395,7 @@ export function renderDepartmentMarkingBank(container, unitId, unitData = {}) {
 
                     <details style="margin-top: 10px; background: #f8fafc; border-radius: 6px; border: 1px solid #e2e8f0; padding: 10px 14px;">
                       <summary style="font-weight: 700; font-size: 0.86rem; color: #2563eb; cursor: pointer; user-select: none;">
-                        <i class="fa-solid fa-eye"></i> Click to Reveal Model Answer & Historical Explanation
+                        <i class="fa-solid fa-eye"></i> ${isKs2 ? 'Tap to Check Your Answer' : 'Click to Reveal Model Answer & Historical Explanation'}
                       </summary>
                       <div style="margin-top: 12px; padding-top: 10px; border-top: 1px dashed #cbd5e1; font-size: 0.92rem; line-height: 1.55;">
                         <div style="margin-bottom: 6px;">
