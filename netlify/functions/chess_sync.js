@@ -76,7 +76,41 @@ function resolveBlobKey(rawRoom) {
   return slug ? `live_session__${slug}` : 'live_session';
 }
 
-async function handleRequest(method, headers, body, roomParam = '') {
+function resolveXpBlobKey(rawRoom) {
+  const slug = String(rawRoom || '')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9_-]+/g, '_')
+    .replace(/^_+|_+$/g, '')
+    .slice(0, 48);
+  return slug ? `xp_inbox__${slug}` : 'xp_inbox';
+}
+
+async function readBlobOrMemory(store, key, fallbackVal) {
+  let val = memoryFallbackMap.get(key) || fallbackVal;
+  if (store) {
+    try {
+      const blobVal = await store.get(key, { type: 'json' });
+      if (blobVal) val = blobVal;
+    } catch (err) {
+      console.warn('Blobs get error, using memory fallback:', err.message);
+    }
+  }
+  return val;
+}
+
+async function writeBlobAndMemory(store, key, value) {
+  memoryFallbackMap.set(key, value);
+  if (store) {
+    try {
+      await store.setJSON(key, value);
+    } catch (err) {
+      console.warn('Blobs set error, preserved in memory:', err.message);
+    }
+  }
+}
+
+async function handleRequest(method, headers, body, roomParam = '', actionParam = '') {
   const getHeader = (name) => {
     if (!headers) return '';
     if (typeof headers.get === 'function') return headers.get(name) || '';
@@ -85,6 +119,7 @@ async function handleRequest(method, headers, body, roomParam = '') {
 
   const secHeaders = buildSecurityHeaders(getHeader('origin'));
   const blobKey = resolveBlobKey(roomParam);
+  const xpBlobKey = resolveXpBlobKey(roomParam);
 
   if (method === 'OPTIONS') {
     return {
@@ -103,15 +138,8 @@ async function handleRequest(method, headers, body, roomParam = '') {
   }
 
   if (method === 'GET') {
-    let data = memoryFallbackMap.get(blobKey) || null;
-    if (store) {
-      try {
-        const blobData = await store.get(blobKey, { type: 'json' });
-        if (blobData) data = blobData;
-      } catch (err) {
-        console.warn('Blobs get error, using memory fallback:', err.message);
-      }
-    }
+    const data = await readBlobOrMemory(store, blobKey, null);
+    const xpInbox = await readBlobOrMemory(store, xpBlobKey, { claims: [], dailyTotals: {} });
 
     // GDPR Sanitization check: Ensure no academic year or unsanitized fields leak
     if (data && Array.isArray(data.players)) {
@@ -120,14 +148,133 @@ async function handleRequest(method, headers, body, roomParam = '') {
       });
     }
 
+    if (actionParam === 'xp_claims') {
+      return {
+        status: 200,
+        headers: secHeaders,
+        body: JSON.stringify({ claims: Array.isArray(xpInbox?.claims) ? xpInbox.claims : [] }),
+      };
+    }
+
+    const merged = data
+      ? { ...data, pendingXpClaims: Array.isArray(xpInbox?.claims) ? xpInbox.claims : [] }
+      : Array.isArray(xpInbox?.claims) && xpInbox.claims.length > 0
+        ? { syncedAt: 0, pendingXpClaims: xpInbox.claims }
+        : null;
+
     return {
       status: 200,
       headers: secHeaders,
-      body: JSON.stringify(data || null),
+      body: JSON.stringify(merged),
     };
   }
 
   if (method === 'POST') {
+    let parsedPayload = {};
+    try {
+      parsedPayload = typeof body === 'string' ? JSON.parse(body) : body || {};
+    } catch (e) {
+      return {
+        status: 400,
+        headers: secHeaders,
+        body: JSON.stringify({ error: 'Invalid JSON body' }),
+      };
+    }
+
+    const effectiveAction = String(actionParam || parsedPayload.action || '').trim();
+
+    // 1. Pupil Practice XP Submission (Isolated xp_inbox blob; strictly capped at 100 XP/day per playerId)
+    if (effectiveAction === 'xp_claim') {
+      const playerId = String(parsedPayload.playerId || '').trim();
+      const callsign = String(parsedPayload.callsign || '')
+        .replace(/[<>]/g, '')
+        .trim()
+        .slice(0, 48);
+      const house = String(parsedPayload.house || '')
+        .trim()
+        .toLowerCase()
+        .slice(0, 20);
+      const level = ['easy', 'medium', 'hard'].includes(parsedPayload.level)
+        ? parsedPayload.level
+        : 'medium';
+      const outcome = ['win', 'draw', 'effort'].includes(parsedPayload.outcome)
+        ? parsedPayload.outcome
+        : 'effort';
+      const moves = Math.max(0, Math.min(400, Math.floor(Number(parsedPayload.moves) || 0)));
+      const rawXp = Math.max(5, Math.min(50, Math.floor(Number(parsedPayload.xp) || 0)));
+      const claimId = String(parsedPayload.claimId || `xp_${Date.now()}`).slice(0, 64);
+
+      if (!/^p_\d{6,20}$/.test(playerId) || !callsign || moves < 6) {
+        return {
+          status: 400,
+          headers: secHeaders,
+          body: JSON.stringify({ error: 'Invalid XP claim payload' }),
+        };
+      }
+
+      const todayKey = new Date().toISOString().slice(0, 10);
+      const xpInbox = await readBlobOrMemory(store, xpBlobKey, { claims: [], dailyTotals: {} });
+      const claims = Array.isArray(xpInbox.claims) ? xpInbox.claims : [];
+      const dailyTotals =
+        xpInbox.dailyTotals && typeof xpInbox.dailyTotals === 'object' ? xpInbox.dailyTotals : {};
+
+      // Prune stale dailyTotals keys older than today
+      Object.keys(dailyTotals).forEach((k) => {
+        if (!k.startsWith(todayKey + ':')) delete dailyTotals[k];
+      });
+
+      if (claims.some((c) => c.claimId === claimId)) {
+        return {
+          status: 200,
+          headers: secHeaders,
+          body: JSON.stringify({ success: true, duplicate: true, awardedXp: 0 }),
+        };
+      }
+
+      const ledgerKey = `${todayKey}:${playerId}`;
+      const usedToday = Number(dailyTotals[ledgerKey] || 0);
+      const remainingToday = Math.max(0, 100 - usedToday);
+      if (remainingToday <= 0) {
+        return {
+          status: 200,
+          headers: secHeaders,
+          body: JSON.stringify({ success: true, capped: true, awardedXp: 0 }),
+        };
+      }
+
+      const grantedXp = Math.min(rawXp, remainingToday);
+      dailyTotals[ledgerKey] = usedToday + grantedXp;
+
+      claims.push({
+        claimId,
+        playerId,
+        callsign,
+        house,
+        xp: grantedXp,
+        level,
+        outcome,
+        moves,
+        createdAt: Date.now(),
+      });
+
+      const trimmedClaims = claims.slice(-150);
+      await writeBlobAndMemory(store, xpBlobKey, {
+        claims: trimmedClaims,
+        dailyTotals,
+      });
+
+      return {
+        status: 200,
+        headers: secHeaders,
+        body: JSON.stringify({
+          success: true,
+          awardedXp: grantedXp,
+          dailyTotal: dailyTotals[ledgerKey],
+        }),
+      };
+    }
+
+    // 2. Teacher-Authenticated Actions (Official Live Ladder & Clearing Approved XP Claims)
     const passkeyHeader = getHeader('x-teacher-passkey');
     if (!isAuthorizedHeader(passkeyHeader)) {
       return {
@@ -137,14 +284,22 @@ async function handleRequest(method, headers, body, roomParam = '') {
       };
     }
 
-    let parsedPayload = {};
-    try {
-      parsedPayload = typeof body === 'string' ? JSON.parse(body) : body || {};
-    } catch (e) {
+    if (effectiveAction === 'clear_xp_claims') {
+      const idsToClear = Array.isArray(parsedPayload.claimIds)
+        ? new Set(parsedPayload.claimIds)
+        : null;
+      const xpInbox = await readBlobOrMemory(store, xpBlobKey, { claims: [], dailyTotals: {} });
+      const remaining = idsToClear
+        ? (xpInbox.claims || []).filter((c) => !idsToClear.has(c.claimId))
+        : [];
+      await writeBlobAndMemory(store, xpBlobKey, {
+        claims: remaining,
+        dailyTotals: xpInbox.dailyTotals || {},
+      });
       return {
-        status: 400,
+        status: 200,
         headers: secHeaders,
-        body: JSON.stringify({ error: 'Invalid JSON body' }),
+        body: JSON.stringify({ success: true, remainingCount: remaining.length }),
       };
     }
 
@@ -160,15 +315,7 @@ async function handleRequest(method, headers, body, roomParam = '') {
       syncedAt: Date.now(),
     };
 
-    memoryFallbackMap.set(blobKey, stateToStore);
-
-    if (store) {
-      try {
-        await store.setJSON(blobKey, stateToStore);
-      } catch (err) {
-        console.warn('Blobs set error, preserved in memory:', err.message);
-      }
-    }
+    await writeBlobAndMemory(store, blobKey, stateToStore);
 
     return {
       status: 200,
@@ -189,9 +336,11 @@ export default async (req, context) => {
   const method = req.method;
   const headers = req.headers;
   let roomParam = '';
+  let actionParam = '';
   try {
     const urlObj = new URL(req.url);
     roomParam = urlObj.searchParams.get('room') || urlObj.searchParams.get('school') || '';
+    actionParam = urlObj.searchParams.get('action') || '';
   } catch (e) {}
 
   let body = null;
@@ -203,7 +352,7 @@ export default async (req, context) => {
     }
   }
 
-  const res = await handleRequest(method, headers, body, roomParam);
+  const res = await handleRequest(method, headers, body, roomParam, actionParam);
   return new Response(res.body, {
     status: res.status,
     headers: res.headers,
@@ -217,8 +366,9 @@ export const handler = async (event, context) => {
   const body = event.body;
   const q = event.queryStringParameters || {};
   const roomParam = q.room || q.school || '';
+  const actionParam = q.action || '';
 
-  const res = await handleRequest(method, headers, body, roomParam);
+  const res = await handleRequest(method, headers, body, roomParam, actionParam);
   return {
     statusCode: res.status,
     headers: res.headers,

@@ -8,6 +8,7 @@ import {
   SCORING_RULES,
   INITIAL_PLAYERS,
   INITIAL_MATCHES,
+  INITIAL_KNOCKOUT_BRACKET,
   HISTORICAL_CHESS_SPOTLIGHTS,
   BETH_HARMON_PUZZLES,
   BEGINNER_ROOKIE_PUZZLES,
@@ -23,6 +24,8 @@ import {
   getCloudSyncStatus,
   isAirgapModeActive,
   setAirgapMode,
+  submitPracticeXpClaimToCloud,
+  clearPracticeXpClaimsFromCloud,
 } from './chess_realtime.js';
 import { verifyStaffPasskeySync } from './engine/staff_auth.js';
 import QRCode from 'qrcode';
@@ -31,6 +34,11 @@ import {
   renderClubGameModesView,
   registerClubGameModeHandlers,
 } from './chess_club_modes.js';
+import {
+  createDefaultVirtualChessState,
+  renderVirtualChessView,
+  registerVirtualChessHandlers,
+} from './chess_play.js';
 
 export function isChessViewActive() {
   if (typeof window === 'undefined') return false;
@@ -629,12 +637,13 @@ let chessState = {
   lastRoundByePlayerId: null,
   leagueTableViewMode: 'matrix', // 'matrix' | 'table'
   knockoutBracket: null,
-  activeTab: 'ladder', // Pure Single-Screen Live Ladder
+  activeTab: 'play', // Clean 3-tab hub: 'play' | 'ladder' | 'modes' (plus sub-views)
   filterHouse: 'all', // 'all' | houseId
   userRole: getInitialRole(), // 'teacher' | 'pupil'
   quickDeskP1Id: '',
   quickDeskP2Id: '',
-  showQuickDesk: true,
+  showQuickDesk: false,
+  showLadderAdminTools: false,
   airgapMode: isAirgapModeActive(), // Safe by default on school laptop
   projectorMode: false,
   isPupilPreview: false,
@@ -660,6 +669,9 @@ let chessState = {
   sessionTimerRunning: false,
   undoStack: [],
   clubModes: createDefaultClubModesState(),
+  virtualChess: createDefaultVirtualChessState(),
+  pendingXpClaims: [],
+  processedXpClaimIds: [],
   activePuzzleBoard: null,
   activePuzzleIndex: 0,
   selectedSquare: null,
@@ -1077,10 +1089,17 @@ function initChessState(forceClean = false) {
     if (raw) {
       const parsed = JSON.parse(raw);
       if (Array.isArray(parsed.players) && parsed.players.length > 0) {
-        if (
+        const seedGamesSum = Array.isArray(INITIAL_PLAYERS)
+          ? INITIAL_PLAYERS.reduce((s, p) => s + (p.games || 0), 0)
+          : 0;
+        const parsedGamesSum = parsed.players.reduce((s, p) => s + (p.games || 0), 0);
+        const shouldUpgradeFromSeed =
           Array.isArray(INITIAL_MATCHES) &&
-          INITIAL_MATCHES.length > (parsed.matches?.length || 0)
-        ) {
+          (INITIAL_MATCHES.length > (parsed.matches?.length || 0) ||
+            (INITIAL_MATCHES.length === (parsed.matches?.length || 0) &&
+              seedGamesSum > parsedGamesSum));
+
+        if (shouldUpgradeFromSeed) {
           chessState.players = JSON.parse(JSON.stringify(INITIAL_PLAYERS));
           chessState.matches = JSON.parse(JSON.stringify(INITIAL_MATCHES));
           chessState.checkedInPlayerIds = chessState.players.map((p) => p.id);
@@ -1098,7 +1117,12 @@ function initChessState(forceClean = false) {
           ? parsed.pairingsHistory
           : [];
         if (parsed.leagueTableViewMode) chessState.leagueTableViewMode = parsed.leagueTableViewMode;
-        chessState.knockoutBracket = parsed.knockoutBracket || null;
+        chessState.knockoutBracket = shouldUpgradeFromSeed
+          ? INITIAL_KNOCKOUT_BRACKET
+            ? JSON.parse(JSON.stringify(INITIAL_KNOCKOUT_BRACKET))
+            : parsed.knockoutBracket || null
+          : parsed.knockoutBracket ||
+            (INITIAL_KNOCKOUT_BRACKET ? JSON.parse(JSON.stringify(INITIAL_KNOCKOUT_BRACKET)) : null);
         if (!chessState.__clubModesHydrated && parsed.clubModes && typeof parsed.clubModes === 'object') {
           chessState.clubModes = {
             ...createDefaultClubModesState(),
@@ -1113,6 +1137,9 @@ function initChessState(forceClean = false) {
         if (typeof parsed.sessionTimeRemaining === 'number')
           chessState.sessionTimeRemaining = parsed.sessionTimeRemaining;
         loaded = true;
+        if (shouldUpgradeFromSeed) {
+          setTimeout(() => saveChessState(), 0);
+        }
       }
     }
   } catch (e) {
@@ -1160,7 +1187,9 @@ function initChessState(forceClean = false) {
       ? JSON.parse(JSON.stringify(INITIAL_MATCHES))
       : [];
     chessState.checkedInPlayerIds = chessState.players.map((p) => p.id);
-    chessState.knockoutBracket = null;
+    chessState.knockoutBracket = INITIAL_KNOCKOUT_BRACKET
+      ? JSON.parse(JSON.stringify(INITIAL_KNOCKOUT_BRACKET))
+      : null;
     loaded = true;
     saveChessState();
   }
@@ -1219,6 +1248,17 @@ function initChessState(forceClean = false) {
   if (typeof window !== 'undefined' && !window.__chessSyncListenerStarted) {
     window.__chessSyncListenerStarted = true;
     startPupilRealtimeSync((remoteData) => {
+      // Sync incoming Pupil Practice XP claims for Teacher 1-click approval
+      let xpInboxChanged = false;
+      if (remoteData && Array.isArray(remoteData.pendingXpClaims)) {
+        const seen = new Set(chessState.processedXpClaimIds || []);
+        const filteredClaims = remoteData.pendingXpClaims.filter((c) => c && !seen.has(c.claimId));
+        if (filteredClaims.length !== (chessState.pendingXpClaims || []).length) {
+          chessState.pendingXpClaims = filteredClaims;
+          xpInboxChanged = true;
+        }
+      }
+
       // Apply remote data updates in pupil mode/preview, or in teacher mode if cloud has newer/more matches
       const isRemoteNewer =
         remoteData &&
@@ -1262,6 +1302,8 @@ function initChessState(forceClean = false) {
             'info',
           );
         }
+      } else if (xpInboxChanged && chessState.userRole === 'teacher' && isChessViewActive()) {
+        renderChessHubView();
       }
     });
   }
@@ -1486,23 +1528,30 @@ export function renderChessHubView() {
     chessState.activeTab = 'ladder';
   }
 
-  const currentTab = chessState.activeTab || 'ladder';
-  const checkedInCount = (chessState.checkedInPlayerIds || []).length;
+  const currentTab = chessState.activeTab || 'play';
+  const isLadderGroup =
+    currentTab === 'ladder' || currentTab === 'pairings' || currentTab === 'table';
+  const isModesGroup =
+    currentTab === 'modes' ||
+    currentTab === 'knockout' ||
+    currentTab === 'beginners' ||
+    currentTab === 'drills';
+  const isPlayGroup = !isLadderGroup && !isModesGroup;
   const activePairingsCount = (chessState.activePairings || []).filter((p) => !p.isBye).length;
 
   let html = `
-    <div id="chess-hub-root" style="max-width: 1200px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 12px 16px 12px; animation: fadeInUp 0.25s ease-out; font-family: 'Outfit', sans-serif;">
+    <div id="chess-hub-root" style="max-width: 1140px; width: 100%; box-sizing: border-box; margin: 0 auto; padding: 0 12px 24px 12px; animation: fadeInUp 0.25s ease-out; font-family: 'Outfit', sans-serif;">
       
       ${
         chessState.isPupilPreview
           ? `
         <!-- Pupil Preview Top Banner -->
-        <div style="background: #1e3a8a; color: #bfdbfe; border: 1.5px solid #3b82f6; padding: 6px 12px; font-size: 0.75rem; display: flex; justify-content: space-between; align-items: center; border-radius: 6px; margin-bottom: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); flex-wrap: wrap; gap: 6px;">
+        <div style="background: #1e3a8a; color: #bfdbfe; border: 1.5px solid #3b82f6; padding: 6px 12px; font-size: 0.75rem; display: flex; justify-content: space-between; align-items: center; border-radius: 8px; margin-bottom: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); flex-wrap: wrap; gap: 6px;">
           <div style="display: flex; align-items: center; gap: 6px;">
             <span style="font-size: 0.9rem;">👁</span>
             <span><strong>Pupil Preview Mode:</strong> Viewing as pupils see it.</span>
           </div>
-          <button onclick="window.exitPupilPreview()" style="background: #3b82f6; color: #ffffff; border: none; font-weight: 700; padding: 3px 8px; border-radius: 5px; cursor: pointer; font-size: 0.72rem;">
+          <button onclick="window.exitPupilPreview()" style="background: #3b82f6; color: #ffffff; border: none; font-weight: 700; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.74rem;">
             Return to Teacher Mode
           </button>
         </div>
@@ -1510,90 +1559,89 @@ export function renderChessHubView() {
           : ''
       }
 
-      <!-- Ultra-Clean Compact Header Bar: Title + Single-Row House Points + Teacher Control -->
-      <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 6px 12px; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
+      <!-- Calm Single-Row Header: Title + House Standings + Discrete Staff Drawer Toggle -->
+      <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 10px 14px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; box-shadow: 0 1px 4px rgba(15, 23, 42, 0.03);">
         
-        <!-- Left: Crisp Title & Subtitle -->
-        <div style="display: flex; align-items: center; gap: 8px;">
-          <span style="font-size: 1.25rem; line-height: 1;">🏆</span>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 36px; height: 36px; border-radius: 9px; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fbbf24; display: flex; align-items: center; justify-content: center; font-size: 1.15rem; flex-shrink: 0;">
+            ♟️
+          </div>
           <div>
-            <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; margin: 0; color: #0f172a; font-weight: 800; line-height: 1.15;">
-              The History Portal Chess League
+            <h1 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem; margin: 0; color: #0f172a; font-weight: 800; line-height: 1.15;">
+              Chess
             </h1>
-            <div style="font-size: 0.65rem; color: #64748b; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;">
-              Autumn Term Master Ladder · Period 6 Club
+            <div style="font-size: 0.68rem; color: #64748b; font-weight: 700; letter-spacing: 0.03em;">
+              House Strategy League &amp; Virtual Board
             </div>
           </div>
         </div>
 
-        <!-- Center: Sleek House Points Chips (Single Row) -->
+        <!-- House Score Pills -->
         <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
           ${sortedHouses
             .map((hStats) => {
               const h = HOUSES[hStats.id];
               return `
-              <div style="display: inline-flex; align-items: center; gap: 5px; background: ${h.bgLight}; border: 1px solid ${h.borderColor}; padding: 2px 8px; border-radius: 12px; font-size: 0.7rem; font-weight: 800; color: ${h.color};">
+              <div style="display: inline-flex; align-items: center; gap: 5px; background: ${h.bgLight}; border: 1px solid ${h.borderColor}; padding: 3px 9px; border-radius: 999px; font-size: 0.72rem; font-weight: 800; color: ${h.color};">
                 <span style="width: 6px; height: 6px; border-radius: 50%; background: ${h.color};"></span>
-                <span>${h.name}:</span>
-                <span style="font-family: monospace; font-size: 0.78rem; font-weight: 900;">${hStats.points}</span>
-                <span style="font-size: 0.6rem; color: #64748b; text-transform: uppercase; font-weight: 700;">pts</span>
+                <span>${h.name}</span>
+                <span style="font-family: monospace; font-size: 0.8rem; font-weight: 900;">${hStats.points}</span>
               </div>
             `;
             })
             .join('')}
         </div>
 
-        <!-- Right: Discrete Teacher Control -->
+        <!-- Discrete Teacher Controls -->
         <div style="display: flex; align-items: center; gap: 6px;">
           ${
             chessState.userRole === 'teacher'
               ? `
-            <button type="button" onclick="window.handleQuickAutoPair()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: 1px solid #38bdf8; font-weight: 800; font-size: 0.72rem; padding: 4px 10px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 1px 4px rgba(14, 165, 233, 0.25);" title="Auto-pair classroom boards for arrived pupils">
-              <span>⚔️</span> Auto-Pair Boards
-            </button>
-            <button type="button" onclick="window.toggleQuickDeskDrawer()" style="background: #1e293b; color: #ffffff; border: 1px solid #475569; font-weight: 800; font-size: 0.72rem; padding: 4px 10px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+            <button type="button" onclick="window.toggleQuickDeskDrawer()" style="background: ${chessState.showQuickDesk ? '#0284c7' : '#f8fafc'}; color: ${chessState.showQuickDesk ? '#ffffff' : '#1e293b'}; border: 1px solid ${chessState.showQuickDesk ? '#0284c7' : '#cbd5e1'}; font-weight: 800; font-size: 0.75rem; padding: 5px 11px; border-radius: 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;">
               <span>⚡</span> Quick Desk
             </button>
 
-            <!-- Clean Teacher Tools Dropdown -->
             <div style="position: relative; display: inline-block;">
-              <button id="btn-chess-admin-menu" type="button" onclick="window.toggleChessAdminDropdown(event)" style="background: #ffffff; color: #475569; border: 1px solid #cbd5e1; font-weight: 700; font-size: 0.72rem; padding: 4px 8px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;">
+              <button id="btn-chess-admin-menu" type="button" onclick="window.toggleChessAdminDropdown(event)" style="background: #ffffff; color: #475569; border: 1px solid #cbd5e1; font-weight: 700; font-size: 0.75rem; padding: 5px 10px; border-radius: 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
                 <span>⚙️</span> Tools ▾
               </button>
-              <div id="chess-admin-dropdown" style="display: ${chessState.showAdminDropdown ? 'block' : 'none'}; position: absolute; right: 0; top: calc(100% + 4px); background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 8px; box-shadow: 0 10px 28px rgba(0,0,0,0.18); z-index: 9999; min-width: 220px; overflow: hidden;">
-                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.toggleChessWhiteboardMode();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #0284c7; padding: 8px 12px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+              <div id="chess-admin-dropdown" style="display: ${chessState.showAdminDropdown ? 'block' : 'none'}; position: absolute; right: 0; top: calc(100% + 4px); background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 10px; box-shadow: 0 10px 28px rgba(0,0,0,0.18); z-index: 9999; min-width: 225px; overflow: hidden;">
+                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.toggleChessWhiteboardMode();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #0284c7; padding: 9px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
                   <span>📺</span> Whiteboard Display (W)
                 </button>
-                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.openPupilQrModal();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #334155; padding: 8px 12px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.openPupilQrModal();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #334155; padding: 9px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
                   <span>📱</span> Show Pupil QR Code
                 </button>
-                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.copyFridayBulletinNotice();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #0891b2; padding: 8px 12px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.copyFridayBulletinNotice();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #0891b2; padding: 9px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
                   <span>📋</span> Copy Friday Bulletin Notice
                 </button>
-                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.openDataVaultModal();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #334155; padding: 8px 12px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.openAirgapInfoModal && window.openAirgapInfoModal();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #166534; padding: 9px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                  <span>🛡️</span> Privacy &amp; Cloud Sync
+                </button>
+                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.openDataVaultModal();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #334155; padding: 9px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
                   <span>💾</span> Backup Data Vault
                 </button>
                 ${
                   getBackupInfo()
                     ? `
-                  <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.restoreChessBackup();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #2563eb; padding: 8px 12px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                  <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.restoreChessBackup();" style="width: 100%; text-align: left; background: transparent; border: none; border-bottom: 1px solid #f1f5f9; color: #2563eb; padding: 9px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
                     <span>↺</span> Restore Cohort (${getBackupInfo().playerCount})
                   </button>
                 `
                     : ''
                 }
-                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.resetClubDataToCleanSlate();" style="width: 100%; text-align: left; background: transparent; border: none; color: #dc2626; padding: 8px 12px; font-size: 0.75rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+                <button type="button" onclick="window.closeChessAdminDropdownOnly(); window.resetClubDataToCleanSlate();" style="width: 100%; text-align: left; background: transparent; border: none; color: #dc2626; padding: 9px 12px; font-size: 0.76rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 8px;">
                   <span>✕</span> Reset Roster to Clean Slate
                 </button>
               </div>
             </div>
 
-            <button type="button" onclick="window.lockTeacherMode()" style="background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; font-weight: 700; font-size: 0.72rem; padding: 4px 8px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;" title="Lock back to Pupil View">
+            <button type="button" onclick="window.lockTeacherMode()" style="background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; font-weight: 700; font-size: 0.74rem; padding: 5px 9px; border-radius: 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;" title="Lock back to Pupil View">
               <span>🔒</span> Lock
             </button>
           `
               : `
-            <button type="button" onclick="window.openTeacherUnlockModal()" style="background: transparent; color: #94a3b8; border: 1px solid #cbd5e1; font-weight: 600; font-size: 0.72rem; padding: 4px 9px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; transition: all 0.15s;" title="Teacher administrative access">
+            <button type="button" onclick="window.openTeacherUnlockModal()" style="background: transparent; color: #94a3b8; border: 1px solid #cbd5e1; font-weight: 600; font-size: 0.74rem; padding: 5px 10px; border-radius: 7px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;" title="Teacher administrative access">
               <span>🔒</span> Teacher
             </button>
           `
@@ -1601,79 +1649,28 @@ export function renderChessHubView() {
         </div>
       </div>
 
-      <!-- Clean Navigation Tabs Strip -->
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 8px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 5px 10px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
-        <div style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
-          <button id="tab-btn-pairings" type="button" onclick="window.switchChessTab('pairings')" style="${getTabStyle(currentTab === 'pairings')}">
-            <span>⚔️</span> Period 6 Boards ${activePairingsCount > 0 ? `<span style="background: ${currentTab === 'pairings' ? 'rgba(255,255,255,0.25)' : '#e0f2fe'}; color: ${currentTab === 'pairings' ? '#ffffff' : '#0369a1'}; padding: 1px 6px; border-radius: 10px; font-size: 0.68rem; font-weight: 800;">${activePairingsCount} Active</span>` : ''}
-          </button>
-          <button id="tab-btn-ladder" type="button" onclick="window.switchChessTab('ladder')" style="${getTabStyle(currentTab === 'ladder')}">
-            <span>🏆</span> Master Ladder <span style="background: ${currentTab === 'ladder' ? 'rgba(255,255,255,0.25)' : '#f1f5f9'}; color: ${currentTab === 'ladder' ? '#ffffff' : '#475569'}; padding: 1px 6px; border-radius: 10px; font-size: 0.68rem; font-weight: 800;">${chessState.players.length}</span>
-          </button>
-          <button id="tab-btn-table" type="button" onclick="window.switchChessTab('table')" style="${getTabStyle(currentTab === 'table')}">
-            <span>📊</span> Cross-Table Grid
-          </button>
-          <button id="tab-btn-knockout" type="button" onclick="window.switchChessTab('knockout')" style="${getTabStyle(currentTab === 'knockout')}">
-            <span>👑</span> Tournament Cup ${chessState.knockoutBracket ? `<span style="background: ${currentTab === 'knockout' ? 'rgba(255,255,255,0.25)' : '#fef3c7'}; color: ${currentTab === 'knockout' ? '#ffffff' : '#b45309'}; padding: 1px 6px; border-radius: 10px; font-size: 0.68rem; font-weight: 800;">Live</span>` : ''}
-          </button>
-          <button id="tab-btn-modes" type="button" onclick="window.switchChessTab('modes')" style="${currentTab === 'modes' ? 'background: linear-gradient(135deg, #7c3aed 0%, #db2777 100%); color: #ffffff; border: 1.5px solid #c084fc; font-weight: 900; padding: 6px 13px; border-radius: 7px; font-size: 0.78rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 2px 8px rgba(124, 58, 237, 0.3);' : 'background: linear-gradient(135deg, #faf5ff 0%, #fdf2f8 100%); color: #7c3aed; border: 1.5px solid #d8b4fe; font-weight: 900; padding: 6px 13px; border-radius: 7px; font-size: 0.78rem; cursor: pointer; display: inline-flex; align-items: center; gap: 5px;'}">
-            <span>🎮</span> Club Game Modes <span style="background: ${currentTab === 'modes' ? 'rgba(255,255,255,0.25)' : '#f3e8ff'}; color: ${currentTab === 'modes' ? '#ffffff' : '#6b21a8'}; padding: 1px 6px; border-radius: 10px; font-size: 0.68rem; font-weight: 900;">7 New!</span>
-          </button>
-        </div>
+      <!-- Clean 3-Tab Primary Navigation -->
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-bottom: 12px; background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 11px; padding: 4px;">
+        <button id="tab-btn-play" type="button" onclick="window.switchChessTab('play')" style="padding: 9px 10px; border-radius: 8px; border: ${isPlayGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isPlayGroup ? '#ffffff' : 'transparent'}; color: ${isPlayGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.85rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isPlayGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
+          <span>♟️</span> <span>Play Chess</span>
+        </button>
 
-        ${
-          chessState.userRole === 'teacher'
-            ? `
-          <div style="display: flex; gap: 6px; align-items: center;">
-            <button id="btn-quick-autopair-tabbar" type="button" onclick="window.handleQuickAutoPair()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: 1px solid #38bdf8; font-weight: 800; font-size: 0.74rem; padding: 5px 12px; border-radius: 5px; cursor: pointer; display: inline-flex; align-items: center; gap: 5px; box-shadow: 0 1px 4px rgba(14, 165, 233, 0.25);" title="Auto-pair boards for all arrived pupils">
-              <span>⚔️</span> Auto-Pair Boards (${checkedInCount > 0 ? checkedInCount : chessState.players.length})
-            </button>
-          </div>
-        `
-            : ''
-        }
+        <button id="tab-btn-ladder" type="button" onclick="window.switchChessTab('ladder')" style="padding: 9px 10px; border-radius: 8px; border: ${isLadderGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isLadderGroup ? '#ffffff' : 'transparent'}; color: ${isLadderGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.85rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isLadderGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
+          <span>🏆</span> <span>Club Ladder &amp; Pairings</span>
+          ${activePairingsCount > 0 ? `<span style="background: #dcfce7; color: #166534; padding: 1px 6px; border-radius: 999px; font-size: 0.68rem; font-weight: 800;">${activePairingsCount} Live</span>` : ''}
+        </button>
+
+        <button id="tab-btn-modes" type="button" onclick="window.switchChessTab('modes')" style="padding: 9px 10px; border-radius: 8px; border: ${isModesGroup ? '1px solid #cbd5e1' : '1px solid transparent'}; background: ${isModesGroup ? '#ffffff' : 'transparent'}; color: ${isModesGroup ? '#0f172a' : '#475569'}; font-weight: 800; font-size: 0.85rem; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 6px; box-shadow: ${isModesGroup ? '0 2px 6px rgba(15,23,42,0.06)' : 'none'};">
+          <span>🎮</span> <span>Game Modes &amp; Cup</span>
+          ${chessState.knockoutBracket ? `<span style="background: #fef3c7; color: #b45309; padding: 1px 6px; border-radius: 999px; font-size: 0.68rem; font-weight: 800;">Cup</span>` : ''}
+        </button>
       </div>
 
-      <!-- Championship Podium (Top 3 Contenders - Visible on Ladder tab) -->
-      ${currentTab === 'ladder' ? renderChampionshipPodium(filteredPlayers) : ''}
+      <!-- Teacher Pending Practice XP Approval Banner -->
+      ${chessState.userRole === 'teacher' && Array.isArray(chessState.pendingXpClaims) && chessState.pendingXpClaims.length > 0 ? renderPendingXpClaimsBanner() : ''}
 
-  <!-- Teacher Quick Desk (1-Tap Match & Points Logger - Authenticated Teachers Only, hidden inside Club Game Modes to keep TV clean) -->
-      ${chessState.userRole === 'teacher' && chessState.showQuickDesk && currentTab !== 'modes' ? renderTeacherQuickDeskSection(filteredPlayers) : ''}
-
-      <!-- House Filter Controls Bar (Visible on Ladder & Cross-Table tabs) -->
-      ${
-        currentTab === 'ladder' || currentTab === 'table'
-          ? `
-        <div style="display: flex; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; align-items: center; background: #ffffff; padding: 4px 10px; border-radius: 6px; border: 1px solid #e2e8f0; box-shadow: 0 1px 2px rgba(0,0,0,0.02);">
-          <div style="display: flex; align-items: center; gap: 4px; font-size: 0.72rem; font-weight: 700; color: #64748b; text-transform: uppercase;">
-            <i class="fa-solid fa-shield-halved" style="color: #2563eb;"></i> Filter:
-          </div>
-          <button onclick="window.setChessHouseFilter('all')" style="${getFilterPillStyle(chessState.filterHouse === 'all')}">All (${chessState.players.length})</button>
-          ${Object.values(HOUSES)
-            .map(
-              (h) => `
-            <button onclick="window.setChessHouseFilter('${h.id}')" style="${getFilterPillStyle(chessState.filterHouse === h.id)}">
-              ${h.name} (${chessState.players.filter((p) => p.house === h.id).length})
-            </button>
-          `,
-            )
-            .join('')}
-
-          <div style="margin-left: auto;">
-            ${
-              chessState.userRole === 'teacher'
-                ? `
-              <button onclick="window.openAddPlayerModal()" style="background: #10b981; color: #ffffff; border: none; padding: 3px 8px; border-radius: 4px; font-size: 0.72rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 1px 4px rgba(16, 185, 129, 0.2);">
-                <span>+</span> Add Pupil
-              </button>
-            `
-                : ''
-            }
-          </div>
-        </div>
-      `
-          : ''
-      }
+      <!-- Teacher Quick Desk Drawer (Tucked away until toggled) -->
+      ${chessState.userRole === 'teacher' && chessState.showQuickDesk ? renderTeacherQuickDeskSection(filteredPlayers) : ''}
 
       <!-- Dynamic Tab Content Routing -->
       <div id="chess-tab-content">
@@ -1687,25 +1684,109 @@ export function renderChessHubView() {
   container.innerHTML = html;
 }
 
-// Router: Render active tab content cleanly
+// Router: Render active tab content cleanly across the 3 primary hubs
 function renderActiveTabContent(filteredPlayers) {
-  const tab = chessState.activeTab || 'ladder';
-  if (tab === 'pairings') {
-    return renderPairingsTab();
-  } else if (tab === 'table') {
-    return renderLeagueTableTab(filteredPlayers);
-  } else if (tab === 'knockout') {
-    return renderKnockoutTab();
-  } else if (tab === 'modes') {
+  const tab = chessState.activeTab || 'play';
+
+  // HUB 2: Club Ladder & Pairings ('ladder' | 'pairings' | 'table')
+  if (tab === 'ladder' || tab === 'pairings' || tab === 'table') {
+    const activePairingsCount = (chessState.activePairings || []).filter((p) => !p.isBye).length;
+    const subNavHtml = `
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 7px 10px;">
+        <div style="display: inline-flex; gap: 4px; background: #f1f5f9; padding: 3px; border-radius: 8px; flex-wrap: wrap;">
+          <button type="button" onclick="window.switchChessTab('ladder')" style="background: ${tab === 'ladder' ? '#ffffff' : 'transparent'}; color: ${tab === 'ladder' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'ladder' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
+            🏆 Standings (${chessState.players.length})
+          </button>
+          <button type="button" onclick="window.switchChessTab('pairings')" style="background: ${tab === 'pairings' ? '#ffffff' : 'transparent'}; color: ${tab === 'pairings' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'pairings' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
+            ⚔️ Board Pairings ${activePairingsCount > 0 ? `(${activePairingsCount})` : ''}
+          </button>
+          <button type="button" onclick="window.switchChessTab('table')" style="background: ${tab === 'table' ? '#ffffff' : 'transparent'}; color: ${tab === 'table' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'table' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
+            📊 Cross-Table
+          </button>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+          ${
+            tab === 'ladder' || tab === 'table'
+              ? `
+            <select onchange="window.setChessHouseFilter(this.value)" style="background: #f8fafc; border: 1px solid #cbd5e1; color: #334155; border-radius: 7px; padding: 5px 9px; font-size: 16px; font-weight: 700; cursor: pointer;">
+              <option value="all" ${chessState.filterHouse === 'all' ? 'selected' : ''}>All Houses (${chessState.players.length})</option>
+              ${Object.values(HOUSES)
+                .map(
+                  (h) =>
+                    `<option value="${h.id}" ${chessState.filterHouse === h.id ? 'selected' : ''}>${h.name} (${chessState.players.filter((p) => p.house === h.id).length})</option>`,
+                )
+                .join('')}
+            </select>
+          `
+              : ''
+          }
+          ${
+            chessState.userRole === 'teacher'
+              ? `
+            <button type="button" onclick="window.handleQuickAutoPair()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: none; border-radius: 7px; padding: 6px 11px; font-size: 0.76rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+              <span>⚔️</span> Auto-Pair
+            </button>
+            <button type="button" onclick="window.openAddPlayerModal()" style="background: #10b981; color: #ffffff; border: none; border-radius: 7px; padding: 6px 10px; font-size: 0.76rem; font-weight: 800; cursor: pointer;">
+              + Pupil
+            </button>
+            ${
+              tab === 'ladder'
+                ? `
+              <button type="button" onclick="window.toggleLadderAdminTools()" style="background: ${chessState.showLadderAdminTools ? '#0f172a' : '#f8fafc'}; color: ${chessState.showLadderAdminTools ? '#ffffff' : '#475569'}; border: 1px solid #cbd5e1; border-radius: 7px; padding: 5px 9px; font-size: 0.74rem; font-weight: 700; cursor: pointer;">
+                ⚙️ Roster
+              </button>
+            `
+                : ''
+            }
+          `
+              : ''
+          }
+        </div>
+      </div>
+    `;
+
+    if (tab === 'pairings') return subNavHtml + renderPairingsTab();
+    if (tab === 'table') return subNavHtml + renderLeagueTableTab(filteredPlayers);
+    return subNavHtml + renderLadderTab(filteredPlayers);
+  }
+
+  // HUB 3: Game Modes, Knockout Cup & Tactical Puzzles ('modes' | 'knockout' | 'beginners' | 'drills')
+  if (tab === 'modes' || tab === 'knockout' || tab === 'beginners' || tab === 'drills') {
     const houseTotals = calculateHouseTotals();
     const sortedHouses = Object.values(houseTotals).sort((a, b) => b.points - a.points);
-    return renderClubGameModesView(chessState, {
-      getPlayerButtonShortName,
-      sortedHouses,
-    });
-  } else {
-    return renderLadderTab(filteredPlayers);
+    const modesSubNav = `
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 7px 10px;">
+        <div style="display: inline-flex; gap: 4px; background: #f1f5f9; padding: 3px; border-radius: 8px; flex-wrap: wrap;">
+          <button type="button" onclick="window.switchChessTab('modes')" style="background: ${tab === 'modes' ? '#ffffff' : 'transparent'}; color: ${tab === 'modes' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'modes' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
+            🎮 7 Classroom Modes
+          </button>
+          <button type="button" onclick="window.switchChessTab('knockout')" style="background: ${tab === 'knockout' ? '#ffffff' : 'transparent'}; color: ${tab === 'knockout' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'knockout' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
+            👑 Knockout Cup ${chessState.knockoutBracket ? '· Live' : ''}
+          </button>
+          <button type="button" onclick="window.switchChessTab('beginners')" style="background: ${tab === 'beginners' || tab === 'drills' ? '#ffffff' : 'transparent'}; color: ${tab === 'beginners' || tab === 'drills' ? '#0f172a' : '#475569'}; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: ${tab === 'beginners' || tab === 'drills' ? '0 1px 2px rgba(0,0,0,0.08)' : 'none'};">
+            🧩 Puzzles &amp; Rookie Guide
+          </button>
+        </div>
+      </div>
+    `;
+
+    if (tab === 'knockout') return modesSubNav + renderKnockoutTab();
+    if (tab === 'beginners' || tab === 'drills') {
+      chessState.showStarterPuzzle = true;
+      return modesSubNav + renderBethHarmonCeilingBoard() + renderBeginnersTab();
+    }
+    return (
+      modesSubNav +
+      renderClubGameModesView(chessState, {
+        getPlayerButtonShortName,
+        sortedHouses,
+      })
+    );
   }
+
+  // HUB 1 (Default): Virtual Chess Set ('play')
+  return renderVirtualChessView(chessState);
 }
 
 // Championship Podium (Top 3 Contenders - Ultra-Compact Horizontal Layout)
@@ -1819,10 +1900,13 @@ function renderTeacherQuickDeskSection(players) {
         </div>
         <div style="display: flex; gap: 6px; align-items: center;">
           <button type="button" onclick="window.sortLadderByPoints()" style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #ffffff; border: 1px solid #fbbf24; font-weight: 800; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;" title="Automatically sort all pupils by total points (largest to smallest)">
-            <span>⚡</span> Auto-Sort by Points
+            <span>⚡</span> Auto-Sort
           </button>
           <button onclick="window.openAddPlayerModal()" style="background: #10b981; color: #ffffff; border: 1px solid #34d399; font-weight: 800; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
             <span>+</span> Register Pupil
+          </button>
+          <button type="button" onclick="window.toggleQuickDeskDrawer()" style="background: rgba(255,255,255,0.1); color: #e2e8f0; border: 1px solid #57534e; font-weight: 700; font-size: 0.72rem; padding: 3px 8px; border-radius: 4px; cursor: pointer;">
+            ✕ Hide
           </button>
         </div>
       </div>
@@ -1939,70 +2023,41 @@ function renderLadderTab(players) {
 
   const checkedInSet = new Set(chessState.checkedInPlayerIds || []);
   const checkedInCount = players.filter((p) => checkedInSet.has(p.id)).length;
+  const showAdmin = chessState.userRole === 'teacher' && chessState.showLadderAdminTools;
 
   return `
     <div>
-
-      <!-- Ladder Meta Header Strip (Ultra-Compact) -->
-      <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 4px 10px; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
-        <div style="font-size: 0.72rem; color: #475569;">
-          <strong>Ladder Rules:</strong> Challenge up to <strong>2 rungs above</strong> you. Challenger win = swap rungs!
-        </div>
-        <div style="display: flex; align-items: center; gap: 6px;">
-          <span style="font-size: 0.68rem; font-weight: 700; color: #4338ca; background: #e0e7ff; border: 1px solid #c7d2fe; padding: 1px 6px; border-radius: 3px;">
-            ★ Ranks 1–5: Cup Flight
-          </span>
-          <span style="font-size: 0.7rem; font-weight: 700; color: #64748b; font-family: monospace;">
-            ${players.length} Pupils
-          </span>
-        </div>
-      </div>
-
-      <!-- Period 6 Attendance & Auto-Pair Toolbar -->
-      <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 6px; padding: 6px 10px; margin-bottom: 6px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px;">
-        <div style="display: flex; align-items: center; gap: 6px; font-size: 0.72rem; color: #334155;">
-          <span><strong>Period 6 Attendance:</strong> <strong style="color: ${checkedInCount > 0 ? '#16a34a' : '#64748b'}; font-size: 0.78rem;">${checkedInCount}</strong> of ${players.length} Arrived</span>
-          ${checkedInCount > 0 ? (checkedInCount % 2 === 0 ? `<span style="color: #16a34a; font-weight: 700;">(✓ ${checkedInCount / 2} even boards)</span>` : `<span style="color: #0284c7; font-weight: 700;">(👑 ${Math.floor(checkedInCount / 2)} boards + 1 rotating bye)</span>`) : ''}
-        </div>
-        ${
-          chessState.userRole === 'teacher'
-            ? `
-          <div style="display: flex; align-items: center; gap: 6px;">
-            <button type="button" onclick="window.checkInAllPlayers()" style="background: #ffffff; color: #16a34a; border: 1px solid #86efac; border-radius: 4px; padding: 2px 7px; font-size: 0.68rem; font-weight: 700; cursor: pointer;" title="Mark all pupils present">
-              ✓ All Here (${players.length})
+      ${
+        showAdmin
+          ? `
+        <!-- Optional Collapsible Roster & Attendance Admin Bar -->
+        <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 8px 12px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+          <div style="font-size: 0.76rem; color: #334155;">
+            <strong>Attendance:</strong> <strong style="color: ${checkedInCount > 0 ? '#16a34a' : '#64748b'};">${checkedInCount}</strong> / ${players.length} present · Use ▲/▼ on rows below to nudge ranks
+          </div>
+          <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+            <button type="button" onclick="window.checkInAllPlayers()" style="background: #ffffff; color: #16a34a; border: 1px solid #86efac; border-radius: 5px; padding: 4px 8px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">
+              ✓ All Present
             </button>
-            ${
-              checkedInCount > 0
-                ? `
-              <button type="button" onclick="window.clearAttendance()" style="background: #ffffff; color: #64748b; border: 1px solid #cbd5e1; border-radius: 4px; padding: 2px 7px; font-size: 0.68rem; font-weight: 600; cursor: pointer;" title="Reset attendance checklist">
-                Reset
-              </button>
-            `
-                : ''
-            }
-            <button type="button" onclick="window.sortLadderByPoints()" style="background: #ffffff; color: #b45309; border: 1px solid #fde68a; border-radius: 4px; padding: 2px 7px; font-size: 0.68rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;" title="Automatically sort all pupils by total points (largest to smallest)">
-              <span>⚡</span> Auto-Sort by Points
+            <button type="button" onclick="window.clearAttendance()" style="background: #ffffff; color: #64748b; border: 1px solid #cbd5e1; border-radius: 5px; padding: 4px 8px; font-size: 0.72rem; font-weight: 600; cursor: pointer;">
+              Clear Attendance
             </button>
-            <button type="button" onclick="window.handleQuickAutoPair()" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: 1px solid #38bdf8; border-radius: 4px; padding: 3px 9px; font-size: 0.7rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; box-shadow: 0 1px 4px rgba(2, 132, 199, 0.25);">
-              <span>⚔️</span> Auto-Pair (${checkedInCount > 0 ? checkedInCount : players.length})
+            <button type="button" onclick="window.sortLadderByPoints()" style="background: #ffffff; color: #b45309; border: 1px solid #fde68a; border-radius: 5px; padding: 4px 8px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">
+              ⚡ Sort by Points
             </button>
             ${
               chessState.activePairings && chessState.activePairings.length > 0
-                ? `
-              <button type="button" onclick="window.resetPairings()" style="background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; border-radius: 4px; padding: 2px 7px; font-size: 0.68rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;" title="Reset and clear all board pairings if you made a mistake or want to start fresh">
-                <span>🧹</span> Reset Pairings
-              </button>
-            `
+                ? `<button type="button" onclick="window.resetPairings()" style="background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; border-radius: 5px; padding: 4px 8px; font-size: 0.72rem; font-weight: 700; cursor: pointer;">🧹 Clear Pairings</button>`
                 : ''
             }
           </div>
-        `
-            : ''
-        }
-      </div>
+        </div>
+      `
+          : ''
+      }
 
-      <!-- Complete Ladder Roster: Single Vertical Column (Rungs 1 to N) -->
-      <div style="display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 920px; margin: 0 auto;">
+      <!-- Complete Ladder Roster -->
+      <div style="display: flex; flex-direction: column; gap: 7px; width: 100%; max-width: 920px; margin: 0 auto;">
         ${players
           .map((p) => {
             const h = HOUSES[p.house] || {
@@ -2030,68 +2085,57 @@ function renderLadderTab(players) {
               rankBadgeBg = '#ffedd5';
               rankBadgeColor = '#9a3412';
               rowBorder = '#fdba74';
-            } else if (p.rank <= 5) {
-              rankBadgeBg = '#e0e7ff';
-              rankBadgeColor = '#3730a3';
-              rowBorder = '#c7d2fe';
             }
 
             return `
-            <div class="ladder-row" style="background: #ffffff; border: 1.5px solid ${rowBorder}; border-radius: 8px; padding: 9px 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; box-shadow: 0 1px 3px rgba(0,0,0,0.03); transition: all 0.15s ease;">
+            <div class="ladder-row" style="background: #ffffff; border: 1.5px solid ${rowBorder}; border-radius: 10px; padding: 9px 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; box-shadow: 0 1px 3px rgba(15,23,42,0.02);">
               
-              <!-- Left: Rank Badge + Pupil Identity (Full Nickname Visible) -->
               <div style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1;">
-                <div style="width: 32px; height: 32px; border-radius: 6px; background: ${rankBadgeBg}; color: ${rankBadgeColor}; font-weight: 900; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; flex-shrink: 0; font-family: monospace; border: 1px solid rgba(0,0,0,0.08);">
+                <div style="width: 32px; height: 32px; border-radius: 7px; background: ${rankBadgeBg}; color: ${rankBadgeColor}; font-weight: 900; display: flex; align-items: center; justify-content: center; font-size: 0.92rem; flex-shrink: 0; font-family: monospace; border: 1px solid rgba(0,0,0,0.06);">
                   ${p.rank === 1 ? '👑' : `${p.rank}`}
                 </div>
 
                 <div style="min-width: 0; flex: 1;">
                   <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-                    <span style="font-size: 0.98rem; color: #0f172a; font-weight: 800; letter-spacing: -0.01em;">
+                    <span style="font-size: 0.95rem; color: #0f172a; font-weight: 800;">
                       ${renderPlayerNameWithCallsign(p)}
                     </span>
-                    <span style="background: ${h.bgLight}; color: ${h.color}; border: 1px solid ${h.borderColor}; padding: 1px 8px; border-radius: 6px; font-size: 0.68rem; font-weight: 800; flex-shrink: 0;">
+                    <span style="background: ${h.bgLight}; color: ${h.color}; border: 1px solid ${h.borderColor}; padding: 1px 8px; border-radius: 999px; font-size: 0.68rem; font-weight: 800; flex-shrink: 0;">
                       ${h.name}
                     </span>
                   </div>
-                  <div style="font-size: 0.72rem; color: #64748b; font-family: monospace; margin-top: 3px;">
-                    ELO: <strong style="color: #334155;">${p.rating}</strong> · <strong style="color: #16a34a;">${p.won}W</strong> / <strong style="color: #64748b;">${p.drawn}D</strong> / <strong style="color: #dc2626;">${p.lost}L</strong> (${p.games} played)
+                  <div style="font-size: 0.72rem; color: #64748b; font-family: monospace; margin-top: 2px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+                    <span>ELO <strong style="color: #334155;">${p.rating}</strong> · <strong style="color: #16a34a;">${p.won}W</strong>/<strong style="color: #64748b;">${p.drawn}D</strong>/<strong style="color: #dc2626;">${p.lost}L</strong></span>
+                    ${(p.practiceXp || 0) > 0 ? `<span style="background: #fefce8; color: #b45309; border: 1px solid #fde68a; border-radius: 999px; padding: 0 6px; font-size: 0.66rem; font-weight: 800;">⚡ ${p.practiceXp} XP</span>` : ''}
                   </div>
                 </div>
               </div>
 
-              <!-- Right: Score + Actions -->
-              <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
-                <div style="text-align: right; font-family: monospace; padding-right: 6px;">
+              <div style="display: flex; align-items: center; gap: 7px; flex-shrink: 0;">
+                <div style="text-align: right; font-family: monospace; padding-right: 4px;">
                   <div style="font-size: 0.98rem; font-weight: 900; color: ${h.color};">${totalPts} <span style="font-size: 0.65rem; font-weight: 700; color: #64748b;">pts</span></div>
                 </div>
 
                 ${
                   chessState.userRole === 'teacher'
                     ? `
+                  <button type="button" onclick="${isCheckedIn ? `window.checkOutPlayer('${p.id}')` : `window.checkInPlayer('${p.id}')`}" title="Toggle attendance" style="background: ${isCheckedIn ? '#dcfce7' : '#f8fafc'}; color: ${isCheckedIn ? '#15803d' : '#64748b'}; border: 1px solid ${isCheckedIn ? '#86efac' : '#cbd5e1'}; border-radius: 6px; padding: 4px 8px; font-size: 0.72rem; font-weight: 800; cursor: pointer;">
+                    ${isCheckedIn ? '✓ Here' : '+ Here'}
+                  </button>
+                  <button type="button" onclick="window.selectPlayerForQuickDesk('${p.id}')" style="background: #f1f5f9; color: #0284c7; border: 1px solid #cbd5e1; padding: 4px 8px; border-radius: 6px; font-size: 0.72rem; font-weight: 800; cursor: pointer;" title="Load ${p.name} into Quick Desk">
+                    ⚡
+                  </button>
                   ${
-                    isCheckedIn
+                    showAdmin
                       ? `
-                    <button type="button" onclick="window.checkOutPlayer('${p.id}')" title="Click to mark absent" style="background: #dcfce7; color: #15803d; border: 1px solid #86efac; border-radius: 5px; padding: 4px 8px; font-size: 0.72rem; font-weight: 800; cursor: pointer; flex-shrink: 0;">
-                      ✓ Here
-                    </button>
+                    <div style="display: inline-flex; gap: 2px;">
+                      <button type="button" onclick="window.movePlayerLadderRank('${p.id}', 'up')" title="Nudge rank up" style="background: #f1f5f9; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 6px; font-size: 0.68rem; font-weight: 800; cursor: pointer;">▲</button>
+                      <button type="button" onclick="window.movePlayerLadderRank('${p.id}', 'down')" title="Nudge rank down" style="background: #f1f5f9; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 6px; font-size: 0.68rem; font-weight: 800; cursor: pointer;">▼</button>
+                    </div>
+                    <button type="button" onclick="window.removePlayer('${p.id}')" title="Remove pupil" style="background: none; border: none; color: #cbd5e1; cursor: pointer; padding: 4px 6px; font-size: 0.85rem;" onmouseover="this.style.color='#ef4444'" onmouseout="this.style.color='#cbd5e1'">✕</button>
                   `
-                      : `
-                    <button type="button" onclick="window.checkInPlayer('${p.id}')" title="Click to mark arrived/present" style="background: #f8fafc; color: #64748b; border: 1px solid #cbd5e1; border-radius: 5px; padding: 4px 8px; font-size: 0.72rem; font-weight: 700; cursor: pointer; flex-shrink: 0;">
-                      + Arrived
-                    </button>
-                  `
+                      : ''
                   }
-                  <div style="display: inline-flex; gap: 2px;">
-                    <button type="button" onclick="window.movePlayerLadderRank('${p.id}', 'up')" title="Nudge rank up" style="background: #f1f5f9; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 6px; font-size: 0.68rem; font-weight: 800; cursor: pointer; line-height: 1;">▲</button>
-                    <button type="button" onclick="window.movePlayerLadderRank('${p.id}', 'down')" title="Nudge rank down" style="background: #f1f5f9; color: #1e293b; border: 1px solid #cbd5e1; border-radius: 4px; padding: 3px 6px; font-size: 0.68rem; font-weight: 800; cursor: pointer; line-height: 1;">▼</button>
-                  </div>
-                  <button onclick="window.selectPlayerForQuickDesk('${p.id}')" style="background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: #ffffff; border: 1px solid #38bdf8; padding: 4px 8px; border-radius: 5px; font-size: 0.72rem; font-weight: 800; cursor: pointer; display: inline-flex; align-items: center; gap: 3px;" title="Load ${p.name} into Quick Desk">
-                    ⚡ Desk
-                  </button>
-                  <button onclick="window.removePlayer('${p.id}')" title="Remove pupil" style="background: none; border: none; color: #cbd5e1; cursor: pointer; padding: 4px 6px; font-size: 0.85rem;" onmouseover="this.style.color='#ef4444'" onmouseout="this.style.color='#cbd5e1'">
-                    ✕
-                  </button>
                 `
                     : ''
                 }
@@ -5832,11 +5876,10 @@ window.handleTeacherUnlockSubmit = function (e) {
     localStorage.setItem('history_chess_teacher_auth', 'true');
     chessState.userRole = 'teacher';
     chessState.isPupilPreview = false;
-    chessState.showQuickDesk = true;
-    chessState.activeTab = 'ladder';
+    chessState.showQuickDesk = false;
     window.closeChessModal();
     renderChessHubView();
-    showChessToast('🔓 Teacher Mode Unlocked! Quick Desk ready.', 'success');
+    showChessToast('🔓 Teacher Mode Unlocked! Tap "⚡ Quick Desk" anytime to log matches.', 'success');
   } else {
     if (err) err.style.display = 'block';
     inp.style.borderColor = '#ef4444';
@@ -5874,11 +5917,16 @@ window.toggleQuickDeskDrawer = function () {
   }
 };
 
+window.toggleLadderAdminTools = function () {
+  chessState.showLadderAdminTools = !chessState.showLadderAdminTools;
+  renderChessHubView();
+};
+
 window.togglePupilPreview = function () {
   chessState.isPupilPreview = true;
   chessState.userRole = 'pupil';
   if (chessState.activeTab === 'signin' || chessState.activeTab === 'quickdesk') {
-    chessState.activeTab = 'ladder';
+    chessState.activeTab = 'play';
   }
   showChessToast('👁 Switched to Pupil Preview (Teacher tools hidden)', 'info');
   renderChessHubView();
@@ -5887,8 +5935,7 @@ window.togglePupilPreview = function () {
 window.exitPupilPreview = function () {
   chessState.isPupilPreview = false;
   chessState.userRole = 'teacher';
-  chessState.showQuickDesk = true;
-  chessState.activeTab = 'ladder';
+  chessState.showQuickDesk = false;
   showChessToast('✏️ Returned to Teacher Mode', 'success');
   renderChessHubView();
 };
@@ -11759,4 +11806,152 @@ registerClubGameModeHandlers({
     applyCanonicalPlayerMatchStats(pA, pB, out, ew, el),
   autoSortPlayersByPoints: () => autoSortPlayersByPoints(),
   isChessViewActive: () => isChessViewActive(),
+});
+
+// ============================================================================
+// PRACTICE XP -> HOUSE POINTS ENGINE & TEACHER 1-CLICK APPROVAL INBOX
+// ============================================================================
+function applyPracticeXpToCanonicalPlayer(playerId, xpToAdd) {
+  const player = (chessState.players || []).find((p) => p.id === playerId);
+  if (!player || !xpToAdd || xpToAdd <= 0) return { housePtsAwarded: 0 };
+
+  const oldXp = Number(player.practiceXp || 0);
+  const newXp = oldXp + Number(xpToAdd);
+  player.practiceXp = newXp;
+
+  const oldMilestones = Math.floor(oldXp / 100);
+  const newMilestones = Math.floor(newXp / 100);
+  const housePtsAwarded = Math.max(0, newMilestones - oldMilestones);
+
+  if (housePtsAwarded > 0) {
+    player.bonusPoints = (player.bonusPoints || 0) + housePtsAwarded;
+    chessState.matches.unshift({
+      id: 'xp_b_' + Date.now() + '_' + Math.floor(Math.random() * 1000),
+      date: 'Virtual Chess Practice Milestone',
+      timestamp: Date.now(),
+      round: '100 XP Practice Bonus',
+      white: player.name,
+      black: 'Computer Coach',
+      whiteId: player.id,
+      whiteHouse: player.house,
+      result: 'BONUS',
+      bonusPoints: housePtsAwarded,
+      opening: 'Virtual Board Practice XP',
+    });
+  }
+
+  return { housePtsAwarded, newXp, player };
+}
+
+function renderPendingXpClaimsBanner() {
+  const claims = chessState.pendingXpClaims || [];
+  if (claims.length === 0) return '';
+
+  const byPupil = new Map();
+  let totalXp = 0;
+  claims.forEach((c) => {
+    totalXp += Number(c.xp || 0);
+    const prev = byPupil.get(c.playerId) || { callsign: c.callsign, xp: 0, count: 0 };
+    prev.xp += Number(c.xp || 0);
+    prev.count += 1;
+    byPupil.set(c.playerId, prev);
+  });
+
+  const summaryPills = [...byPupil.values()]
+    .map(
+      (item) =>
+        `<span style="background: #ffffff; border: 1px solid #a7f3d0; color: #065f46; border-radius: 999px; padding: 2px 8px; font-size: 0.72rem; font-weight: 800;">${item.callsign}: +${item.xp} XP</span>`,
+    )
+    .join(' ');
+
+  return `
+    <div id="teacher-xp-inbox-banner" style="background: linear-gradient(135deg, #ecfdf5 0%, #f0fdf4 100%); border: 1.5px solid #6ee7b7; border-radius: 11px; padding: 10px 14px; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; box-shadow: 0 2px 8px rgba(16, 185, 129, 0.1);">
+      <div style="display: flex; flex-direction: column; gap: 5px;">
+        <div style="font-size: 0.82rem; font-weight: 800; color: #065f46;">
+          ✨ Virtual Board Practice XP Ready (${claims.length} game${claims.length === 1 ? '' : 's'} · +${totalXp} XP total)
+        </div>
+        <div style="display: flex; gap: 5px; flex-wrap: wrap;">
+          ${summaryPills}
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 6px;">
+        <button type="button" onclick="window.approveAllPendingXpClaims()" style="background: #059669; color: #ffffff; border: none; border-radius: 7px; padding: 7px 13px; font-size: 0.78rem; font-weight: 800; cursor: pointer; box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25);">
+          ✓ Approve &amp; Bank XP
+        </button>
+        <button type="button" onclick="window.dismissAllPendingXpClaims()" style="background: #ffffff; color: #64748b; border: 1px solid #cbd5e1; border-radius: 7px; padding: 7px 10px; font-size: 0.75rem; font-weight: 700; cursor: pointer;">
+          ✕ Dismiss
+        </button>
+      </div>
+    </div>
+  `;
+}
+
+window.approveAllPendingXpClaims = function () {
+  if (chessState.userRole !== 'teacher') return;
+  const claims = chessState.pendingXpClaims || [];
+  if (claims.length === 0) return;
+
+  pushChessUndoSnapshot(`Approve Practice XP (${claims.length})`);
+  const claimIds = [];
+  let totalXp = 0;
+  let totalHousePts = 0;
+
+  claims.forEach((c) => {
+    claimIds.push(c.claimId);
+    totalXp += Number(c.xp || 0);
+    const res = applyPracticeXpToCanonicalPlayer(c.playerId, Number(c.xp || 0));
+    totalHousePts += res.housePtsAwarded || 0;
+  });
+
+  chessState.processedXpClaimIds = [...(chessState.processedXpClaimIds || []), ...claimIds].slice(-200);
+  chessState.pendingXpClaims = [];
+
+  if (totalHousePts > 0) {
+    autoSortPlayersByPoints();
+  }
+  saveChessState();
+  clearPracticeXpClaimsFromCloud(claimIds);
+  renderChessHubView();
+  showChessToast(
+    totalHousePts > 0
+      ? `🏆 Banked +${totalXp} Practice XP & unlocked +${totalHousePts} Bonus House Point${totalHousePts === 1 ? '' : 's'}!`
+      : `⚡ Banked +${totalXp} Practice XP onto pupil profiles! (100 XP = +1 House Point)`,
+    'success',
+  );
+};
+
+window.dismissAllPendingXpClaims = function () {
+  if (chessState.userRole !== 'teacher') return;
+  const claims = chessState.pendingXpClaims || [];
+  const claimIds = claims.map((c) => c.claimId);
+  chessState.processedXpClaimIds = [...(chessState.processedXpClaimIds || []), ...claimIds].slice(-200);
+  chessState.pendingXpClaims = [];
+  clearPracticeXpClaimsFromCloud(claimIds);
+  renderChessHubView();
+  showChessToast('Dismissed pending practice XP claims.', 'info');
+};
+
+// Register Virtual Chess Set & Computer Coach Controllers
+registerVirtualChessHandlers({
+  getState: () => chessState,
+  saveChessState: () => saveChessState(),
+  renderChessHubView: () => renderChessHubView(),
+  showChessToast: (msg, type) => showChessToast(msg, type),
+  pushChessUndoSnapshot: (label) => pushChessUndoSnapshot(label),
+  applyCanonicalPlayerMatchStats: (pA, pB, out, ew, el) =>
+    applyCanonicalPlayerMatchStats(pA, pB, out, ew, el),
+  isChessViewActive: () => isChessViewActive(),
+  onPracticeXpEarned: (claim) => {
+    if (chessState.userRole === 'teacher' && !chessState.isPupilPreview) {
+      pushChessUndoSnapshot(`Practice XP: ${claim.callsign} (+${claim.xp} XP)`);
+      const res = applyPracticeXpToCanonicalPlayer(claim.playerId, claim.xp);
+      if (res.housePtsAwarded > 0) {
+        autoSortPlayersByPoints();
+      }
+      saveChessState();
+      return { directTeacherBanked: true, housePtsAwarded: res.housePtsAwarded };
+    }
+    submitPracticeXpClaimToCloud(claim);
+    return { directTeacherBanked: false, housePtsAwarded: 0 };
+  },
 });

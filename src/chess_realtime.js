@@ -262,7 +262,7 @@ export function startPupilRealtimeSync(onUpdateReceived) {
       }
 
       const remoteData = await res.json();
-      if (!remoteData || !remoteData.syncedAt) {
+      if (!remoteData || (!remoteData.syncedAt && !Array.isArray(remoteData.pendingXpClaims))) {
         currentSyncStatus = 'idle';
         updateSyncStatusUI();
         return;
@@ -271,12 +271,14 @@ export function startPupilRealtimeSync(onUpdateReceived) {
       currentSyncStatus = 'synced';
       updateSyncStatusUI();
 
-      if (remoteData.syncedAt > lastKnownSyncedAt) {
-        console.log(
-          '⚡ Remote chess update received from teacher at:',
-          new Date(remoteData.syncedAt).toLocaleTimeString(),
-        );
-        lastKnownSyncedAt = remoteData.syncedAt;
+      const hasNewSync = remoteData.syncedAt && remoteData.syncedAt > lastKnownSyncedAt;
+      const hasXpClaims =
+        Array.isArray(remoteData.pendingXpClaims) && remoteData.pendingXpClaims.length > 0;
+
+      if (hasNewSync || hasXpClaims) {
+        if (hasNewSync) {
+          lastKnownSyncedAt = remoteData.syncedAt;
+        }
         if (typeof onUpdateReceived === 'function') {
           onUpdateReceived(remoteData);
         }
@@ -375,5 +377,49 @@ function updateSyncStatusUI() {
         parent.replaceChild(temp.firstElementChild, el);
       }
     }
+  }
+}
+
+/**
+ * Pupil Practice XP Claim Submitter (GDPR-Safe Callsign + Integer XP Only)
+ */
+export async function submitPracticeXpClaimToCloud(claimPayload) {
+  if (!claimPayload || isAirgapModeActive()) return { ok: false, offline: true };
+  try {
+    const endpoint = getScopedChessEndpoint(SYNC_ENDPOINT);
+    const sep = endpoint.includes('?') ? '&' : '?';
+    const res = await fetch(`${endpoint}${sep}action=xp_claim`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'xp_claim', ...claimPayload }),
+    });
+    if (!res.ok) return { ok: false };
+    const data = await res.json();
+    return { ok: true, ...data };
+  } catch (e) {
+    return { ok: false, offline: true };
+  }
+}
+
+/**
+ * Teacher Action: Clear Approved or Dismissed XP Claims from Cloud Inbox
+ */
+export async function clearPracticeXpClaimsFromCloud(claimIds = null) {
+  if (isAirgapModeActive()) return false;
+  try {
+    const authHeader = getStaffSyncAuthHeader();
+    const endpoint = getScopedChessEndpoint(SYNC_ENDPOINT);
+    const sep = endpoint.includes('?') ? '&' : '?';
+    const res = await fetch(`${endpoint}${sep}action=clear_xp_claims`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-teacher-passkey': authHeader,
+      },
+      body: JSON.stringify({ action: 'clear_xp_claims', claimIds }),
+    });
+    return res.ok;
+  } catch (e) {
+    return false;
   }
 }
