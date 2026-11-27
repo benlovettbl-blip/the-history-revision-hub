@@ -475,69 +475,305 @@
   padding: 9px 12px;
 }
 
-.dst-svg-stage-host,
-.dst-vector-scene {
+/* =========================================================================
+   1086 TIME-TRAVEL ESCAPE ROOM: 3x3 CHARTER PUZZLE, BRASS TAX VAULT & PLATES
+   ========================================================================= */
+.dst-escape-box {
+  background: linear-gradient(180deg, #1c1917 0%, #141210 100%);
+  border: 1.5px solid #57534e;
+  border-radius: 13px;
+  padding: 11px 12px;
+}
+.dst-escape-box.is-unlocked {
+  border-color: #22c55e;
+  box-shadow: 0 0 18px rgba(34, 197, 94, 0.16);
+}
+.dst-escape-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
+}
+.dst-escape-kicker {
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: #fde047;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.dst-escape-sub {
+  font-size: 0.77rem;
+  color: #d6d3d1;
+  line-height: 1.32;
+  margin-top: 2px;
+}
+.dst-lock-badge {
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(180, 83, 9, 0.28);
+  border: 1px solid #f59e0b;
+  color: #fef08a;
+  font-size: 0.69rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.dst-lock-badge.is-open {
+  background: rgba(20, 83, 45, 0.45);
+  border-color: #4ade80;
+  color: #dcfce7;
+}
+
+.dst-charter-peek-wrap {
+  margin-bottom: 8px;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1.5px solid #f59e0b;
+  background: #0c0a09;
+  max-height: 120px;
+}
+.dst-charter-peek-img {
   width: 100%;
-  height: 100%;
+  height: 118px;
+  object-fit: contain;
   display: block;
 }
 
-.dst-svg-hit {
-  cursor: pointer;
-  transition: filter 0.14s ease, transform 0.14s ease;
-}
-.dst-svg-hit:hover,
-.dst-svg-hit:focus-visible {
-  filter: brightness(1.14) drop-shadow(0 0 8px rgba(253, 224, 71, 0.75));
-  outline: none;
-}
-.dst-shell.dst-hint-shimmer .dst-svg-hit:not(.is-found) .dst-svg-pill rect {
-  stroke: #ffffff !important;
-  stroke-width: 3px !important;
-  filter: drop-shadow(0 0 8px #fde047);
-}
-
-.dst-archival-evidence-card {
+.dst-charter-grid {
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
-  gap: 10px;
-  align-items: center;
-  margin-top: 8px;
-  padding: 8px 10px;
-  border-radius: 11px;
-  background: #1c1917;
-  border: 1px solid #44403c;
-}
-.dst-archival-thumb-wrap {
-  width: 96px;
-  height: 62px;
-  border-radius: 7px;
-  overflow: hidden;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
   background: #0c0a09;
-  border: 1px solid #57534e;
-  display: flex;
+  padding: 4px;
+  border-radius: 10px;
+  border: 2px solid #78350f;
+}
+.dst-charter-tile {
+  appearance: none;
+  position: relative;
+  border-radius: 6px;
+  border: 2px solid #57534e;
+  background-image: url('/images/ks3_med7/med7_l1_card_bayeux_norman_fleet_scene38.jpg');
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 0.12s ease, border-color 0.14s ease, box-shadow 0.14s ease;
+}
+.dst-charter-tile:hover {
+  border-color: #fde047;
+  transform: scale(1.02);
+  z-index: 2;
+}
+.dst-charter-tile.is-selected {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.55);
+  z-index: 3;
+}
+.dst-charter-tile.is-aligned {
+  border-color: #22c55e;
+}
+.dst-tile-num {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: rgba(12, 10, 9, 0.85);
+  border: 1px solid #f59e0b;
+  color: #fde68a;
+  font-size: 0.64rem;
+  font-weight: 900;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-.dst-archival-thumb {
+.dst-charter-tile.is-aligned .dst-tile-num {
+  border-color: #4ade80;
+  background: rgba(20, 83, 45, 0.9);
+  color: #dcfce7;
+}
+
+.dst-plate-hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: 255px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #0c0a09;
+  border: 1.5px solid #78350f;
+}
+.dst-plate-hero-img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
 }
-.dst-archival-kicker {
-  font-size: 0.69rem;
-  font-weight: 900;
-  color: #fde047;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-  margin-bottom: 2px;
+.dst-plate-hero-badge {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  padding: 4px 9px;
+  border-radius: 7px;
+  background: rgba(12, 10, 9, 0.9);
+  border: 1px solid rgba(251, 191, 36, 0.55);
+  color: #fde68a;
+  font-size: 0.7rem;
+  font-weight: 800;
 }
-.dst-archival-caption {
-  margin: 0;
-  font-size: 0.74rem;
-  line-height: 1.35;
+.dst-plate-hero-cap {
+  margin: 7px 2px 10px;
+  font-size: 0.78rem;
+  line-height: 1.38;
   color: #d6d3d1;
+}
+
+.dst-clue-slips-grid,
+.dst-witness-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+.dst-clue-slip {
+  appearance: none;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 9px;
+  border: 1.5px solid #57534e;
+  background: #292524;
+  color: #f5f5f4;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: border-color 0.14s ease, background 0.14s ease;
+}
+.dst-clue-slip:hover {
+  border-color: #fbbf24;
+  background: #36302c;
+}
+.dst-clue-slip.is-found {
+  border-color: #22c55e;
+  background: rgba(20, 83, 45, 0.34);
+}
+.dst-slip-title {
+  font-size: 0.76rem;
+  font-weight: 900;
+  color: #fde68a;
+  margin-bottom: 3px;
+}
+.dst-slip-body {
+  font-size: 0.72rem;
+  line-height: 1.32;
+  color: #e7e5e4;
+}
+
+.dst-escape-guide-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 9px;
+}
+.dst-witness-pill {
+  appearance: none;
+  flex: 1 1 130px;
+  min-height: 34px;
+  padding: 5px 9px;
+  border-radius: 9px;
+  border: 1.5px solid #57534e;
+  background: #292524;
+  color: #fef3c7;
+  font-size: 0.72rem;
+  font-weight: 800;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.dst-witness-pill:hover {
+  border-color: #fbbf24;
+  background: #3f3a36;
+}
+.dst-witness-pill.is-found {
+  border-color: #22c55e;
+  background: rgba(20, 83, 45, 0.36);
+  color: #dcfce7;
+}
+
+.dst-vault-panel {
+  background: linear-gradient(180deg, #292524 0%, #1c1917 100%);
+  border: 2px solid #d97706;
+  border-radius: 12px;
+  padding: 12px;
+}
+.dst-vault-panel.is-unlocked {
+  border-color: #22c55e;
+}
+.dst-dial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.dst-dial-slot {
+  background: #141210;
+  border: 1.5px solid #78350f;
+  border-radius: 10px;
+  padding: 8px 6px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.dst-dial-slot.is-locked {
+  border-color: #22c55e;
+  background: rgba(20, 83, 45, 0.3);
+}
+.dst-dial-label {
+  font-size: 0.62rem;
+  font-weight: 900;
+  color: #fde68a;
+  letter-spacing: 0.4px;
+}
+.dst-dial-btn {
+  appearance: none;
+  width: 100%;
+  min-height: 28px;
+  border-radius: 6px;
+  border: 1px solid #78350f;
+  background: rgba(245, 158, 11, 0.16);
+  color: #fde68a;
+  font-size: 0.78rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+.dst-dial-btn:hover:not(:disabled) {
+  background: rgba(245, 158, 11, 0.34);
+}
+.dst-dial-val {
+  font-family: 'Courier New', ui-monospace, monospace;
+  font-size: 1.45rem;
+  font-weight: 900;
+  color: #fef08a;
+  line-height: 1;
+}
+.dst-dial-slot.is-locked .dst-dial-val {
+  color: #86efac;
+}
+.dst-dial-hint {
+  font-size: 0.62rem;
+  font-weight: 900;
+  color: #86efac;
+}
+
+@media (max-width: 640px) {
+  .dst-clue-slips-grid,
+  .dst-witness-cards-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 860px) {

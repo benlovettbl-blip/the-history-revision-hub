@@ -436,40 +436,14 @@ export function mountBlitzWardenEnigma(stageEl, pools, ctx = {}) {
             </div>
 
             <div class="diorama-viewport" style="background:#090d1a;">
-              <svg viewBox="0 0 800 400" style="width:100%;height:100%;display:block;" role="img" aria-label="1939 ARP Blackout terraced street under searchlight beams with 4 house windows">
-                <rect x="0" y="0" width="800" height="330" fill="#090d1a" />
-                <polygon points="150,330 310,0 385,0 210,330" fill="#fef08a" opacity="0.12" />
-                <polygon points="620,330 450,0 520,0 675,330" fill="#bae6fd" opacity="0.11" />
-                <rect x="0" y="325" width="800" height="75" fill="#1e293b" />
-                ${[
-                  { hx: 75, wx: 132, wy: 155, idx: 0, lbl: 'No. 4 Terrace' },
-                  { hx: 255, wx: 312, wy: 175, idx: 1, lbl: 'No. 6 Parlour' },
-                  { hx: 435, wx: 492, wy: 160, idx: 2, lbl: 'No. 8 Attic' },
-                  { hx: 615, wx: 672, wy: 150, idx: 3, lbl: 'No. 10 Corner' },
-                ]
-                  .map((h) => {
-                    const isLit = windowsLit[h.idx];
-                    return `
-                      <polygon points="${h.hx - 8},120 ${h.hx + 72},58 ${h.hx + 152},120" fill="#334155" stroke="#64748b" stroke-width="2" />
-                      <rect x="${h.hx}" y="120" width="144" height="205" fill="#451a03" stroke="#64748b" stroke-width="2" />
-                      <rect x="${h.hx + 56}" y="255" width="32" height="70" rx="3" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5" />
-                      <g class="bw-window-target" data-win="${h.idx}" style="cursor:pointer;">
-                        <rect x="${h.wx - 28}" y="${h.wy - 30}" width="56" height="64" rx="4"
-                              fill="${isLit ? '#fde047' : '#0f172a'}"
-                              stroke="${isLit ? '#f59e0b' : '#10b981'}" stroke-width="3" />
-                        <line x1="${h.wx}" y1="${h.wy - 30}" x2="${h.wx}" y2="${h.wy + 34}" stroke="#334155" stroke-width="2.5" />
-                        <line x1="${h.wx - 28}" y1="${h.wy + 2}" x2="${h.wx + 28}" y2="${h.wy + 2}" stroke="#334155" stroke-width="2.5" />
-                        <rect x="${h.wx - 44}" y="${h.wy + 42}" width="88" height="22" rx="11"
-                              fill="${isLit ? 'rgba(133,77,14,0.95)' : 'rgba(6,78,59,0.95)'}"
-                              stroke="${isLit ? '#fde047' : '#34d399'}" stroke-width="1.8" />
-                        <text x="${h.wx}" y="${h.wy + 57}" text-anchor="middle" fill="#ffffff" font-size="10.5" font-weight="800">
-                          ${isLit ? '💡 Shut!' : '🔒 Sealed'}
-                        </text>
-                      </g>
-                    `;
-                  })
-                  .join('')}
-              </svg>
+              <img src="/images/upgraded/ks2-ww2/l01_banner_chelsea_searchlight_h1291.jpg" alt="1940 British Anti-Aircraft Searchlight and Sandbagged Emplacement at Royal Hospital Chelsea (IWM H 1291)" class="diorama-img" />
+              <div class="diorama-vignette"></div>
+              <span class="diorama-hud-chip" style="left:10px;bottom:10px;border-color:#f59e0b;color:#fde68a;">
+                📷 IWM H 1291 • Chelsea Searchlight &amp; Blackout Watch (1940)
+              </span>
+              <span class="diorama-hud-chip" style="right:10px;bottom:10px;border-color:${allDark ? '#10b981' : '#f59e0b'};color:${allDark ? '#86efac' : '#fde047'};">
+                ${allDark ? '🔒 ALL 4 SECTORS SEALED' : `⚠️ ${litCount} EXPOSED LIGHTS`}
+              </span>
             </div>
 
             ${

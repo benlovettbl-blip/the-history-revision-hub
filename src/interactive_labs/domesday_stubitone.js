@@ -22,13 +22,15 @@ import {
 import { mountLivingDioramaFX } from './domesday_living_fx.js';
 import { renderSolentGisSvgHTML } from './solent_svg_map.js';
 import {
-  renderGosportSaltMarshSVG,
-  renderFarehamEstateSVG,
-  renderServiPloughSVG,
-  renderRoyalAssizeSVG,
-  renderStubbingtonHutSVG,
-  renderArchivalEvidenceCardHTML,
-} from './domesday_svg_scenes.js';
+  INITIAL_CHARTER_TILES,
+  SOLVED_CHARTER_TILES,
+  countAlignedCharterTiles,
+  renderTornCharterPuzzleHTML,
+  renderFarehamArchivalVaultLeftHTML,
+  renderTaxVaultDialHTML,
+  renderAssizeArchivalDeskHTML,
+  renderStubbingtonArchivalDeskHTML,
+} from './domesday_escape_puzzles.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
 
 const SESSION_SAVE_KEY = 'hh_domesday_session_v3';
@@ -404,23 +406,31 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       turnips: 0,
     },
 
-    avatarKey: 'salty',
-    speakerName: 'Salty the Solent Seagull • 1086 Tour Guide',
+    avatarKey: 'bennet',
+    speakerName: 'Bennet Luvet • Your 1086 Peasant Time-Travel Guide',
     speechText:
-      'Squawk! Welcome to 1086! Tap any cast button on the left to hear their voice—or press BEGIN 1086 ROYAL AUDIT!',
-    lastVoClipId: 'cover_salty_intro',
+      'Welcome to 1086! King William’s Domesday clerks have locked the Solent roads—crack all 5 historical escape locks across Gosport, Fareham, Winchester & Stubbington to jump home!',
+    lastVoClipId: 'cover_bennet_poke',
 
     bennetSightings: new Set(),
     coverSecretsFound: new Set(),
 
-    // Stage 1 (beat0): Instant 1-Click Coastal Town Rewind
+    // Room 1 (beat0): 3x3 Torn Charter Tile-Swap Escape Puzzle + Coastal Rewind
+    charterTiles: [...INITIAL_CHARTER_TILES],
+    charterSelectedIdx: -1,
+    charterMoves: 0,
+    charterSolved: false,
+    charterPeek: false,
     selectedPinId: 'gosport',
     testedPinIds: new Set(),
     peekSwampAnyway: false,
     swampSecretsFound: new Set(),
 
-    // Stage 2 (beat1): Fareham Asset Hunt + Gyrth Servi View & Comprehension Question
+    // Room 2 (beat1): Fareham 3-Dial Brass Tax Vault (5-13-10) + Gyrth Servi Check
     beat1SubMode: 'hunt', // 'hunt' | 'servi'
+    vaultDials: [2, 0, 0],
+    vaultUnlocked: false,
+    vaultFeedback: '',
     foundFarehamAssets: new Set(), // 'mills' | 'pigs' | 'church_meadow'
     farehamExtrasFound: new Set(),
     serviReflected: false,
@@ -1205,7 +1215,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             </div>
 
             <div class="dst-cast-strip-wrap">
-              <div class="dst-cast-strip-label">🎭 Tap to Audition the 1086 Cast (+15 pts each):</div>
+              <div class="dst-cast-strip-label">🎭 Tap to Hear Your 1086 Peasant Guide &amp; Cast (+15 pts each):</div>
               <div class="dst-cast-strip-grid" id="dst-cover-cast-slot">
                 ${renderCoverCastChipsHTML()}
               </div>
@@ -1214,22 +1224,22 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
           <div class="dst-cover-info-col">
             <div>
-              <div class="dst-lucas-kicker">📜 ARCHIVAL FIELDWORK SIMULATION • HAMPSHIRE FOLIO 46v (1086)</div>
-              <h2 class="dst-lucas-title">THE 1086 DOMESDAY SURVEY: STUBITONE</h2>
+              <div class="dst-lucas-kicker">⏳ 1086 TIME-TRAVEL ESCAPE ROOM • HAMPSHIRE FOLIO 46v</div>
+              <h2 class="dst-lucas-title">ESCAPE THE 1086 DOMESDAY AUDIT</h2>
               <p class="dst-lucas-sub">
-                Step into 1086 Hampshire as King William’s Royal Commissioner! Rewind Solent towns into salt-marsh, catch sweating Reeve Odo hiding Fareham watermills, judge a real Norman tax trial, count who Domesday missed inside Stubbington Cottage #3, and crack genuine Folio 46v Latin.
+                Pulled back 940 years into Norman Hampshire! Follow muddy peasant guide <strong>Bennet Luvet</strong> through Fareham, Winchester, and Stubbington—reassembling a torn Bayeux charter, cracking Reeve Odo’s 3-dial tax vault, solving the 1066 land-wipeout map, and decoding genuine Folio 46v Latin to jump back to the present.
               </p>
 
               <div class="dst-cover-pills-row">
-                <span class="dst-cover-pill">🗺️ 7 Interactive Stages</span>
-                <span class="dst-cover-pill">🎙️ 11 Acted Studio Voices</span>
-                <span class="dst-cover-pill">🥕 3 Secret Turnips</span>
-                <span class="dst-cover-pill">📜 Real 1086 Folio 46v</span>
+                <span class="dst-cover-pill">🧩 3×3 Charter Puzzle</span>
+                <span class="dst-cover-pill">🔐 3-Dial Tax Vault</span>
+                <span class="dst-cover-pill">🗺️ 1066 X-Ray Map</span>
+                <span class="dst-cover-pill">📜 Folio 46v Cipher</span>
               </div>
             </div>
 
             <button type="button" class="dst-start-cta" id="dst-btn-start-adventure" style="width:100%;">
-              ▶ BEGIN 1086 ROYAL AUDIT (STAGE 1)
+              ⏳ ENTER 1086 ESCAPE ROOM (LOCK #1)
             </button>
 
             <div class="dst-cover-quote-wrap" id="dst-cover-quote-slot" role="status" aria-live="polite">
@@ -1348,44 +1358,32 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           </div>
 
           <div class="dst-card-panel">
-            <div id="dst-b0-verdict-slot">${renderBeat0RightHeaderHTML()}</div>
+            <div id="dst-svg-stage-slot">
+              ${renderTornCharterPuzzleHTML({
+                tiles: state.charterTiles,
+                selectedIdx: state.charterSelectedIdx,
+                moves: state.charterMoves,
+                solved: state.charterSolved,
+                peek: state.charterPeek,
+              })}
+            </div>
+
+            <div id="dst-b0-verdict-slot" style="margin-top:10px;">${renderBeat0RightHeaderHTML()}</div>
 
             ${
-              showSwampScene
-                ? `
-              <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="swamp">
-                <div id="dst-svg-stage-slot" class="dst-svg-stage-host">
-                  ${renderGosportSaltMarshSVG({
-                    swampSecretsFound: state.swampSecretsFound,
-                    bennetFound: state.bennetSightings.has('swamp'),
-                  })}
-                </div>
-              </div>
-              ${renderSceneFooterBarHTML(
-                state.swampSecretsFound.size + (state.bennetSightings.has('swamp') ? 1 : 0),
-                4,
-                'Tap Bennet (🥕 Turnip #1!), Salty, Fareham mills & torch!',
-              )}
-              ${renderArchivalEvidenceCardHTML({
-                img: '/images/medieval_england/plate_2_1_bayeux_castle_building.jpg',
-                kicker: 'Archival Evidence • Bayeux Tapestry Scene 45',
-                caption: 'While Gosport and Portsmouth remained empty salt-marsh in 1086, Norman lords fortified key harbours like Portchester and Hastings using English labour.',
-                alt: 'Bayeux Tapestry Scene 45 showing medieval labourers digging coastal earthworks with iron-shod spades',
-              })}
-            `
-                : isTested
-                  ? `<div id="dst-b0-dossier-slot">${renderBeat0DossierCardHTML()}</div>`
-                  : ''
+              isTested && !showSwampScene
+                ? `<div id="dst-b0-dossier-slot">${renderBeat0DossierCardHTML()}</div>`
+                : ''
             }
 
             <div id="dst-b0-next-slot">
               ${
-                state.testedPinIds.size >= 2
+                state.charterSolved && state.testedPinIds.size >= 2
                   ? `<button type="button" class="dst-next-btn" data-complete-next="beat1">
-                       Stage 2 → Ride Up Fareham Creek &amp; Catch Reeve Odo! <i class="fa-solid fa-arrow-right"></i>
+                       🔓 Escape Lock #1 Cracked! Enter Room 2: Fareham Tax Vault <i class="fa-solid fa-arrow-right"></i>
                      </button>`
-                  : `<div style="margin-top:8px;font-size:0.78rem;color:#a8a29e;text-align:center;">
-                       👆 Test ${2 - state.testedPinIds.size} more coastal place${2 - state.testedPinIds.size === 1 ? '' : 's'} to unlock Stage 2!
+                  : `<div style="margin-top:8px;font-size:0.78rem;color:#fde68a;text-align:center;">
+                       🔒 To unlock Room 2: ${!state.charterSolved ? 'Reassemble the 3×3 Bayeux Charter above' : 'Charter ✓'} &bull; ${state.testedPinIds.size >= 2 ? '2/2 Towns ✓' : `Test ${2 - state.testedPinIds.size} more coastal place${2 - state.testedPinIds.size === 1 ? '' : 's'} on the map`}
                      </div>`
               }
             </div>
@@ -1414,35 +1412,18 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   }
 
   function renderBeat1HuntRightPanelHTML() {
-    const foundCount = state.foundFarehamAssets.size;
-    const all3Found = foundCount >= 3;
     return `
-      ${renderMissionBannerHTML(
-        'Click all 3 hidden taxable money-makers in the 1086 Fareham Creek estate!',
-        `${foundCount} / 3 Found`,
-        all3Found,
-      )}
-
-      <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:10px;">
-        <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('mills') ? '#22c55e' : '#44403c'};font-size:0.83rem;">
-          ${state.foundFarehamAssets.has('mills') ? '✅ <strong>5 Spinning Watermills (41 shillings):</strong> Peasants were BANNED by law from grinding flour at home—forcing everyone to pay Bishop Walkelin’s mills!' : '⬜ Money-Maker #1: Tap the <strong>5 spinning watermills</strong> along Fareham Creek...'}
-        </div>
-        <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('pigs') ? '#22c55e' : '#44403c'};font-size:0.83rem;">
-          ${state.foundFarehamAssets.has('pigs') ? '✅ <strong>Woodland for 13 Fat Pigs:</strong> Peasants paid "pannage" tax in live hogs just to let pigs eat acorns in the Bishop’s oak woods!' : '⬜ Money-Maker #2: Tap the <strong>13 pigs foraging</strong> in the upper-right oak woods...'}
-        </div>
-        <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('church_meadow') ? '#22c55e' : '#44403c'};font-size:0.83rem;">
-          ${state.foundFarehamAssets.has('church_meadow') ? '✅ <strong>1 Parish Church, 90 Households & 41 Meadow Acres:</strong> Putting Fareham in the top 20% largest settlements in 1086 England!' : '⬜ Money-Maker #3: Tap the <strong>Saxon stone church &amp; hay-meadow</strong> on the left hill...'}
-        </div>
-      </div>
-
+      ${renderTaxVaultDialHTML({
+        dials: state.vaultDials,
+        vaultUnlocked: state.vaultUnlocked,
+        vaultFeedback: state.vaultFeedback,
+      })}
       ${
-        all3Found
+        state.vaultUnlocked
           ? `<button type="button" class="dst-next-btn" id="dst-btn-open-servi">
-               Part B → Who Pulled the Bishop’s Ploughs? Meet Gyrth <i class="fa-solid fa-arrow-right"></i>
+               Part B → Meet Gyrth (Fareham’s 10 Enslaved Servi) <i class="fa-solid fa-arrow-right"></i>
              </button>`
-          : `<div style="font-size:0.76rem;color:#a8a29e;text-align:center;">
-               💡 Bonus: Question sweating Reeve Odo, check Saint Swithin’s reliquary, and spot Bennet’s Turnip #2 (🥕) in the reeds!
-             </div>`
+          : ''
       }
     `;
   }
@@ -1502,61 +1483,22 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
         <div class="dst-subtab-bar" id="dst-b1-subtabs-slot">${renderBeat1SubtabsInnerHTML()}</div>
 
-        ${
-          state.beat1SubMode === 'hunt'
-            ? `
-          <div class="dst-split">
-            <div>
-              <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="fareham_mills">
-                <div id="dst-svg-stage-slot" class="dst-svg-stage-host">
-                  ${renderFarehamEstateSVG({
-                    foundAssets: state.foundFarehamAssets,
-                    foundExtras: state.farehamExtrasFound,
-                    bennetFound: state.bennetSightings.has('creek'),
-                  })}
-                </div>
-              </div>
-              ${renderSceneFooterBarHTML(totalFarehamSecrets, 7, 'Tap 5 watermills, 13 pigs, stone church, Odo & Turnip #2!')}
-              ${renderArchivalEvidenceCardHTML({
-                img: '/images/medieval_england/luttrell_psalter_watermill_detail_f181r.jpg',
-                kicker: 'Primary Illumination • Luttrell Psalter (BL Add MS 42130, f. 181r)',
-                caption: 'Genuine 14th-century English manuscript showing a lord’s timber watermill, rushing millrace, and woven wicker eel-traps—every villager paid multure toll to grind grain.',
-                alt: 'Luttrell Psalter folio 181r watermill illumination with timber waterwheel and eel-traps',
+        <div class="dst-split">
+          <div id="dst-fx-stage" data-fx-preset="${state.beat1SubMode === 'hunt' ? 'fareham_mills' : 'servi_plough'}">
+            <div id="dst-svg-stage-slot">
+              ${renderFarehamArchivalVaultLeftHTML({
+                subMode: state.beat1SubMode,
+                foundAssets: state.foundFarehamAssets,
+                foundExtras: state.farehamExtrasFound,
+                bennetFound: state.bennetSightings.has('creek'),
               })}
             </div>
-
-            <div class="dst-card-panel" id="dst-b1-right-slot">
-              ${renderBeat1HuntRightPanelHTML()}
-            </div>
           </div>
-        `
-            : `
-          <div class="dst-split">
-            <div>
-              <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="servi_plough" style="border-color:#64748b;">
-                <div id="dst-svg-stage-slot" class="dst-svg-stage-host">
-                  ${renderServiPloughSVG({
-                    serviReflected: state.serviReflected,
-                    oxenFound: state.farehamExtrasFound.has('oxen'),
-                    overseerFound: state.farehamExtrasFound.has('overseer'),
-                  })}
-                </div>
-              </div>
-              ${renderSceneFooterBarHTML(1 + (state.farehamExtrasFound.has('oxen') ? 1 : 0) + (state.farehamExtrasFound.has('overseer') ? 1 : 0), 3, 'Tap Gyrth, the 8-ox plough team, and the mounted bailiff!')}
-              ${renderArchivalEvidenceCardHTML({
-                img: '/images/medieval_england/tres_riches_heures_ox_plough_f3v.jpg',
-                kicker: 'Primary Illumination • Très Riches Heures (Musée Condé MS 65, f. 3v)',
-                caption: 'Medieval ploughman guiding a wheeled mouldboard plough pulled by yoked oxen across heavy clay ridges on a lord’s demesne.',
-                alt: 'Très Riches Heures folio 3v medieval ox-ploughing scene',
-              })}
-            </div>
 
-            <div class="dst-card-panel" id="dst-b1-servi-right-slot" style="border-color:#64748b;">
-              ${renderBeat1ServiRightPanelHTML()}
-            </div>
+          <div class="dst-card-panel" id="${state.beat1SubMode === 'hunt' ? 'dst-b1-right-slot' : 'dst-b1-servi-right-slot'}" style="${state.beat1SubMode === 'servi' ? 'border-color:#64748b;' : ''}">
+            ${state.beat1SubMode === 'hunt' ? renderBeat1HuntRightPanelHTML() : renderBeat1ServiRightPanelHTML()}
           </div>
-        `
-        }
+        </div>
       </div>
     `;
   }
@@ -1809,12 +1751,11 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
         <div class="dst-split">
           <div>
-            <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="assize">
-              <div id="dst-svg-stage-slot" class="dst-svg-stage-host">
-                ${renderRoyalAssizeSVG({ heardSet: state.assizeSpotsHeard })}
+            <div id="dst-fx-stage" data-fx-preset="assize">
+              <div id="dst-svg-stage-slot">
+                ${renderAssizeArchivalDeskHTML({ heardSet: state.assizeSpotsHeard })}
               </div>
             </div>
-            ${renderSceneFooterBarHTML(state.assizeSpotsHeard.size, 5, 'Tap Wulf, Viking shield, Clerk Guy, Sheriff Hugh & Bishop’s bailiff!')}
 
             <div style="margin-top:8px;padding:9px 12px;border-radius:10px;background:#1c1917;border:1px solid #44403c;font-size:0.79rem;">
               <div style="display:flex;justify-content:space-between;margin-bottom:4px;flex-wrap:wrap;gap:4px;">
@@ -1825,13 +1766,6 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                 <div style="width:80%;background:#16a34a;"></div>
               </div>
             </div>
-
-            ${renderArchivalEvidenceCardHTML({
-              img: '/images/medieval_england/source_a_bayeux_harold_oath.jpg',
-              kicker: 'Primary Evidence • Bayeux Tapestry Scene 23 (Relic Oath)',
-              caption: 'Every 1086 Domesday Hundred jury—the parish priest, the reeve, and six villagers—had to swear testimony upon sacred saint reliquaries.',
-              alt: 'Bayeux Tapestry Scene 23 showing an oath sworn on sacred reliquaries before a seated Norman ruler',
-            })}
           </div>
 
           <div class="dst-card-panel" id="dst-b3-right-slot">
@@ -1935,26 +1869,15 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
         <div class="dst-split">
           <div>
-            <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="stubbington_hut">
-              <div id="dst-svg-stage-slot" class="dst-svg-stage-host">
-                ${renderStubbingtonHutSVG({
+            <div id="dst-fx-stage" data-fx-preset="stubbington_hut">
+              <div id="dst-svg-stage-slot">
+                ${renderStubbingtonArchivalDeskHTML({
                   hutPeopleGroups: state.hutPeopleGroups,
                   foundPets: state.foundBlindSpots.has('untaxed_pets'),
                   bennetFound: state.bennetSightings.has('stumps'),
                 })}
               </div>
             </div>
-            ${renderSceneFooterBarHTML(
-              foundTotal,
-              5,
-              'Tap Grandma, Edith, 5 kids, hens/dog & tree-stumps (🥕 #3)!',
-            )}
-            ${renderArchivalEvidenceCardHTML({
-              img: '/images/medieval_england/tres_riches_heures_peasant_hearth_f2v.jpg',
-              kicker: 'Primary Illumination • Très Riches Heures (Musée Condé MS 65, f. 2v)',
-              caption: 'Cutaway medieval cottage showing villagers warming by an open hearth beside woven bee-skeps, pecking hens, and woodcutters clearing timber.',
-              alt: 'Très Riches Heures folio 2v cutaway peasant cottage hearth in winter',
-            })}
           </div>
 
           <div class="dst-card-panel" id="dst-b4-right-slot">
@@ -2568,25 +2491,24 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         const dosSlot = shellEl.querySelector('#dst-b0-dossier-slot');
         if (dosSlot) dosSlot.innerHTML = renderBeat0DossierCardHTML();
         if (svgSlot) {
-          svgSlot.innerHTML = renderGosportSaltMarshSVG({
-            swampSecretsFound: state.swampSecretsFound,
-            bennetFound: state.bennetSightings.has('swamp'),
+          svgSlot.innerHTML = renderTornCharterPuzzleHTML({
+            tiles: state.charterTiles,
+            selectedIdx: state.charterSelectedIdx,
+            moves: state.charterMoves,
+            solved: state.charterSolved,
+            peek: state.charterPeek,
           });
         }
         const nextSlot = shellEl.querySelector('#dst-b0-next-slot');
         if (nextSlot) {
           nextSlot.innerHTML =
-            state.testedPinIds.size >= 2
+            state.charterSolved && state.testedPinIds.size >= 2
               ? `<button type="button" class="dst-next-btn" data-complete-next="beat1">
-                   Stage 2 → Ride Up Fareham Creek &amp; Catch Reeve Odo! <i class="fa-solid fa-arrow-right"></i>
+                   🔓 Escape Lock #1 Cracked! Enter Room 2: Fareham Tax Vault <i class="fa-solid fa-arrow-right"></i>
                  </button>`
-              : `<div style="margin-top:8px;font-size:0.78rem;color:#a8a29e;text-align:center;">
-                   👆 Test ${2 - state.testedPinIds.size} more coastal place${2 - state.testedPinIds.size === 1 ? '' : 's'} to unlock Stage 2!
+              : `<div style="margin-top:8px;font-size:0.78rem;color:#fde68a;text-align:center;">
+                   🔒 To unlock Room 2: ${!state.charterSolved ? 'Reassemble the 3×3 Bayeux Charter above' : 'Charter ✓'} &bull; ${state.testedPinIds.size >= 2 ? '2/2 Towns ✓' : `Test ${2 - state.testedPinIds.size} more coastal place${2 - state.testedPinIds.size === 1 ? '' : 's'} on the map`}
                  </div>`;
-        }
-        if (tallyEl) {
-          const found = state.swampSecretsFound.size + (state.bennetSightings.has('swamp') ? 1 : 0);
-          tallyEl.innerHTML = `✨ <strong>Hotspots:</strong> ${found} / 4`;
         }
       } else if (state.step === 'beat1') {
         const subSlot = shellEl.querySelector('#dst-b1-subtabs-slot');
@@ -2598,18 +2520,12 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         if (srSlot && state.beat1SubMode === 'servi')
           srSlot.innerHTML = renderBeat1ServiRightPanelHTML();
         if (svgSlot) {
-          svgSlot.innerHTML =
-            state.beat1SubMode === 'hunt'
-              ? renderFarehamEstateSVG({
-                  foundAssets: state.foundFarehamAssets,
-                  foundExtras: state.farehamExtrasFound,
-                  bennetFound: state.bennetSightings.has('creek'),
-                })
-              : renderServiPloughSVG({
-                  serviReflected: state.serviReflected,
-                  oxenFound: state.farehamExtrasFound.has('oxen'),
-                  overseerFound: state.farehamExtrasFound.has('overseer'),
-                });
+          svgSlot.innerHTML = renderFarehamArchivalVaultLeftHTML({
+            subMode: state.beat1SubMode,
+            foundAssets: state.foundFarehamAssets,
+            foundExtras: state.farehamExtrasFound,
+            bennetFound: state.bennetSightings.has('creek'),
+          });
         }
         if (tallyEl) {
           if (state.beat1SubMode === 'hunt') {
@@ -2649,14 +2565,12 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       } else if (state.step === 'beat3') {
         const rSlot = shellEl.querySelector('#dst-b3-right-slot');
         if (rSlot) rSlot.innerHTML = renderBeat3RightPanelHTML();
-        if (svgSlot) svgSlot.innerHTML = renderRoyalAssizeSVG({ heardSet: state.assizeSpotsHeard });
-        if (tallyEl)
-          tallyEl.innerHTML = `✨ <strong>Hotspots:</strong> ${state.assizeSpotsHeard.size} / 5`;
+        if (svgSlot) svgSlot.innerHTML = renderAssizeArchivalDeskHTML({ heardSet: state.assizeSpotsHeard });
       } else if (state.step === 'beat4') {
         const rSlot = shellEl.querySelector('#dst-b4-right-slot');
         if (rSlot) rSlot.innerHTML = renderBeat4RightPanelHTML();
         if (svgSlot) {
-          svgSlot.innerHTML = renderStubbingtonHutSVG({
+          svgSlot.innerHTML = renderStubbingtonArchivalDeskHTML({
             hutPeopleGroups: state.hutPeopleGroups,
             foundPets: state.foundBlindSpots.has('untaxed_pets'),
             bennetFound: state.bennetSightings.has('stumps'),
@@ -3186,8 +3100,122 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       }
 
       // =====================================================================
-      // STAGE 1 (beat0): INSTANT 1-CLICK COASTAL REWIND
+      // STAGE 1 (beat0): 3x3 TORN CHARTER ESCAPE PUZZLE + COASTAL REWIND
       // =====================================================================
+      if (e.target.closest('#dst-charter-peek-btn')) {
+        state.charterPeek = !state.charterPeek;
+        syncCurrentStagePanelsInPlace();
+        return;
+      }
+
+      if (e.target.closest('#dst-charter-hint-btn')) {
+        if (!state.charterSolved) {
+          const wrongSlot = state.charterTiles.findIndex((val, idx) => val !== idx);
+          if (wrongSlot >= 0) {
+            const correctPos = state.charterTiles.indexOf(wrongSlot);
+            if (correctPos >= 0) {
+              const tmp = state.charterTiles[wrongSlot];
+              state.charterTiles[wrongSlot] = state.charterTiles[correctPos];
+              state.charterTiles[correctPos] = tmp;
+              state.charterMoves += 1;
+              state.charterSelectedIdx = -1;
+              audio.chimeSuccess();
+              if (countAlignedCharterTiles(state.charterTiles) === 9) {
+                state.charterSolved = true;
+                awardOnce('b0_charter_puzzle', 'beat0', 80);
+                setSpeech(
+                  'bennet',
+                  'Bennet Luvet • Charter Reassembled!',
+                  'Brilliant! You pieced King William’s 1086 Bayeux charter back together! Now tap 2 coastal places on the Solent map to unlock Room 2.',
+                  'beat0_survived_village',
+                );
+              }
+              syncCurrentStagePanelsInPlace();
+            }
+          }
+        }
+        return;
+      }
+
+      const charterTileBtn = e.target.closest('[data-charter-slot]');
+      if (charterTileBtn && !state.charterSolved) {
+        const slotIdx = Number(charterTileBtn.dataset.charterSlot);
+        if (state.charterSelectedIdx === -1) {
+          state.charterSelectedIdx = slotIdx;
+        } else if (state.charterSelectedIdx === slotIdx) {
+          state.charterSelectedIdx = -1;
+        } else {
+          const a = state.charterSelectedIdx;
+          const b = slotIdx;
+          const tmp = state.charterTiles[a];
+          state.charterTiles[a] = state.charterTiles[b];
+          state.charterTiles[b] = tmp;
+          state.charterSelectedIdx = -1;
+          state.charterMoves += 1;
+          if (countAlignedCharterTiles(state.charterTiles) === 9) {
+            state.charterSolved = true;
+            awardOnce('b0_charter_puzzle', 'beat0', 80);
+            audio.chimeSuccess();
+            setSpeech(
+              'bennet',
+              'Bennet Luvet • Charter Reassembled!',
+              'Brilliant! You pieced King William’s 1086 Bayeux charter back together! Now tap 2 coastal places on the Solent map to unlock Room 2.',
+              'beat0_survived_village',
+            );
+          } else {
+            audio.waxSealSlam();
+          }
+        }
+        syncCurrentStagePanelsInPlace();
+        return;
+      }
+
+      // =====================================================================
+      // STAGE 2 (beat1): 3-DIAL BRASS TAX-AUDIT COMBINATION LOCK (5 - 13 - 10)
+      // =====================================================================
+      const dialBtn = e.target.closest('[data-vault-dial]');
+      if (dialBtn && !state.vaultUnlocked) {
+        const idx = Number(dialBtn.dataset.vaultDial);
+        const dir = Number(dialBtn.dataset.vaultDir);
+        const maxes = [20, 25, 20];
+        const nextVal = Math.max(0, Math.min(maxes[idx] || 20, (state.vaultDials[idx] || 0) + dir));
+        state.vaultDials[idx] = nextVal;
+        state.vaultFeedback = '';
+        audio.waxSealSlam();
+        syncCurrentStagePanelsInPlace();
+        return;
+      }
+
+      if (e.target.closest('#dst-btn-test-vault') && !state.vaultUnlocked) {
+        const [millsVal, pigsVal, serviVal] = state.vaultDials;
+        if (millsVal === 5 && pigsVal === 13 && serviVal === 10) {
+          state.vaultUnlocked = true;
+          state.vaultFeedback = '';
+          state.foundFarehamAssets.add('mills');
+          state.foundFarehamAssets.add('pigs');
+          state.foundFarehamAssets.add('church_meadow');
+          awardOnce('b1_vault_lock', 'beat1', 120);
+          audio.chimeSuccess();
+          setSpeech(
+            'odo',
+            'Sweating Reeve Odo • Vault Cracked!',
+            'Oh, ruined! All three Fareham figures exposed—5 watermills, 13 woodland pigs, and 10 enslaved workers! Now step into Part B to meet Gyrth.',
+            'beat1_mills_caught',
+          );
+          syncCurrentStagePanelsInPlace();
+          nudgeNextButtonIntoViewIfOffscreen();
+        } else {
+          const hints = [];
+          if (millsVal !== 5) hints.push('Watermills dial is off (check Slip A)');
+          if (pigsVal !== 13) hints.push('Woodland Pigs dial is off (check Slip B)');
+          if (serviVal !== 10) hints.push('Enslaved Servi dial is off (check Slip C)');
+          state.vaultFeedback = `❌ Lock jammed! ${hints.join(' • ')}.`;
+          audio.mudSquelch();
+          syncCurrentStagePanelsInPlace();
+        }
+        return;
+      }
+
       const pinEl = e.target.closest('.solent-home-pin, [data-pick-pin]');
       if (pinEl) {
         const pinId = pinEl.dataset.pinId || pinEl.dataset.pickPin;

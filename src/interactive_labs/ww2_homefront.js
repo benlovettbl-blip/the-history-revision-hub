@@ -24,13 +24,12 @@ import { Ww2HomeFrontAudioDirector } from './ww2_homefront_music.js';
 import { mountWw2HomeFrontFX } from './ww2_homefront_fx.js';
 import { renderUkHomeFrontMapSVG } from './uk_homefront_svg_map.js';
 import {
-  renderPlatformTrolleySVG,
-  renderCountryBilletSVG,
-  renderBlitzGardenCutawaySVG,
-  renderRationGrocerSVG,
-  renderBletchleyHut8SVG,
-  renderWw2ArchivalCardHTML,
-} from './ww2_svg_scenes.js';
+  renderPlatformEvidenceDeskHTML,
+  renderCountryBilletDeskHTML,
+  renderBlitzEvidenceDeskHTML,
+  renderRationEvidenceDeskHTML,
+  renderBletchleyEvidenceDeskHTML,
+} from './ww2_archival_desk.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
 
 const SESSION_SAVE_KEY = 'hh_ww2_homefront_session_v2';
@@ -1329,9 +1328,9 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
       `;
       leftWorkspaceHTML = `
         <div>
-          <div class="ww2-diorama-frame" id="ww2-fx-stage">
-            <div id="ww2-svg-stage-slot" class="ww2-svg-stage-host">
-              ${renderPlatformTrolleySVG({
+          <div id="ww2-fx-stage">
+            <div id="ww2-svg-stage-slot">
+              ${renderPlatformEvidenceDeskHTML({
                 packedItems: state.packedItems,
                 gramophoneTried: state.gramophoneTried,
                 stationExtrasFound: state.stationExtrasFound,
@@ -1339,12 +1338,6 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
             </div>
           </div>
           <div class="ww2-scene-caption-strip" id="ww2-caption-slot">${renderCaptionInnerHTML()}</div>
-          ${renderWw2ArchivalCardHTML({
-            img: '/units/ks2_ww2/assets/evacuees_railway_1939.jpg',
-            kicker: 'Archival Photograph • Operation Pied Piper (Sept 1939)',
-            caption: 'Evacuee schoolchildren boarding trains with cardboard gas-mask boxes slung over their shoulders and luggage labels pinned to their coats.',
-            alt: '1939 railway platform photograph of evacuee children carrying gas-mask boxes and small suitcases',
-          })}
         </div>
       `;
     } else if (sig === 'beat0:map') {
@@ -1369,75 +1362,54 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     } else if (sig === 'beat1') {
       leftWorkspaceHTML = `
         <div>
-          <div class="ww2-diorama-frame" id="ww2-fx-stage">
-            <div id="ww2-svg-stage-slot" class="ww2-svg-stage-host">
-              ${renderCountryBilletSVG({ billetSpotsFound: state.billetSpotsFound })}
+          <div id="ww2-fx-stage">
+            <div id="ww2-svg-stage-slot">
+              ${renderCountryBilletDeskHTML({ billetSpotsFound: state.billetSpotsFound })}
             </div>
           </div>
           <div class="ww2-scene-caption-strip" id="ww2-caption-slot">${renderCaptionInnerHTML()}</div>
-          ${renderWw2ArchivalCardHTML({
-            img: '/units/ks2_ww2/assets/evacuee_feeding_farm_pigs_devon_1941.jpg',
-            kicker: 'Archival Photograph • Devon Farm Billet (1941)',
-            caption: 'City evacuees helping feed pigs on a rural farm billet, while nearly 10,000 Kindertransport refugee children found shelter across Britain.',
-            alt: '1941 wartime photograph of evacuee boys feeding farm pigs in Devon',
-          })}
         </div>
       `;
     } else if (sig === 'beat2') {
       leftWorkspaceHTML = `
         <div>
-          <div class="ww2-diorama-frame" id="ww2-fx-stage">
-            <div id="ww2-svg-stage-slot" class="ww2-svg-stage-host">
-              ${renderBlitzGardenCutawaySVG({ blitzChecks: state.blitzChecks })}
+          <div id="ww2-fx-stage">
+            <div id="ww2-svg-stage-slot">
+              ${renderBlitzEvidenceDeskHTML({
+                blitzChecks: state.blitzChecks,
+                blackoutShut: state.blackoutShut,
+              })}
             </div>
           </div>
           <div class="ww2-scene-caption-strip" id="ww2-caption-slot">${renderCaptionInnerHTML()}</div>
-          ${renderWw2ArchivalCardHTML({
-            img: '/units/ks2_ww2/assets/anderson_shelter_family.jpg',
-            kicker: 'Archival Photograph • Garden Anderson Shelter (1940)',
-            caption: 'A British family emerging from their half-buried corrugated-steel Anderson garden shelter during the Blitz.',
-            alt: 'Wartime photograph of children at the corrugated-steel entrance of a garden Anderson shelter',
-          })}
         </div>
       `;
     } else if (sig === 'beat3') {
       leftWorkspaceHTML = `
         <div>
-          <div class="ww2-diorama-frame" id="ww2-fx-stage">
-            <div id="ww2-svg-stage-slot" class="ww2-svg-stage-host">
-              ${renderRationGrocerSVG({
+          <div id="ww2-fx-stage">
+            <div id="ww2-svg-stage-slot">
+              ${renderRationEvidenceDeskHTML({
                 rationBasket: state.rationBasket,
                 rationExtrasFound: state.rationExtrasFound,
               })}
             </div>
           </div>
           <div class="ww2-scene-caption-strip" id="ww2-caption-slot">${renderCaptionInnerHTML()}</div>
-          ${renderWw2ArchivalCardHTML({
-            img: '/units/ks2_ww2/assets/housewife_ration_book_grocer_1941.jpg',
-            kicker: 'Archival Photograph • Ration Book at the Grocer (1941)',
-            caption: 'A shopper presenting her Ministry of Food Ration Book so the grocer could snip weekly coupons fairly.',
-            alt: '1941 photograph of a British shopper handing her ration book to a grocer across the counter',
-          })}
         </div>
       `;
     } else if (sig === 'beat4') {
       leftWorkspaceHTML = `
         <div>
-          <div class="ww2-diorama-frame" id="ww2-fx-stage">
-            <div id="ww2-svg-stage-slot" class="ww2-svg-stage-host">
-              ${renderBletchleyHut8SVG({
+          <div id="ww2-fx-stage">
+            <div id="ww2-svg-stage-slot">
+              ${renderBletchleyEvidenceDeskHTML({
                 bletchleySpotsFound: state.bletchleySpotsFound,
                 solvedCount: state.solvedCipherIds.size,
               })}
             </div>
           </div>
           <div class="ww2-scene-caption-strip" id="ww2-caption-slot">${renderCaptionInnerHTML()}</div>
-          ${renderWw2ArchivalCardHTML({
-            img: '/units/ks2_ww2/assets/bletchley_park_wrens.jpg',
-            kicker: 'Archival Photograph • WRNS Operators at Bletchley Park',
-            caption: 'Women of the Royal Naval Service operating electromechanical Bombe codebreaking drums—keeping their Official Secrets Act vow for 30 years.',
-            alt: 'Archival photograph of WRNS Wrens operating Bombe codebreaking drums at Bletchley Park',
-          })}
         </div>
       `;
     }
@@ -1612,26 +1584,27 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
         const svgStageSlot = shellEl.querySelector('#ww2-svg-stage-slot');
         if (svgStageSlot) {
           if (nextSig === 'beat0:pack') {
-            svgStageSlot.innerHTML = renderPlatformTrolleySVG({
+            svgStageSlot.innerHTML = renderPlatformEvidenceDeskHTML({
               packedItems: state.packedItems,
               gramophoneTried: state.gramophoneTried,
               stationExtrasFound: state.stationExtrasFound,
             });
           } else if (nextSig === 'beat1') {
-            svgStageSlot.innerHTML = renderCountryBilletSVG({
+            svgStageSlot.innerHTML = renderCountryBilletDeskHTML({
               billetSpotsFound: state.billetSpotsFound,
             });
           } else if (nextSig === 'beat2') {
-            svgStageSlot.innerHTML = renderBlitzGardenCutawaySVG({
+            svgStageSlot.innerHTML = renderBlitzEvidenceDeskHTML({
               blitzChecks: state.blitzChecks,
+              blackoutShut: state.blackoutShut,
             });
           } else if (nextSig === 'beat3') {
-            svgStageSlot.innerHTML = renderRationGrocerSVG({
+            svgStageSlot.innerHTML = renderRationEvidenceDeskHTML({
               rationBasket: state.rationBasket,
               rationExtrasFound: state.rationExtrasFound,
             });
           } else if (nextSig === 'beat4') {
-            svgStageSlot.innerHTML = renderBletchleyHut8SVG({
+            svgStageSlot.innerHTML = renderBletchleyEvidenceDeskHTML({
               bletchleySpotsFound: state.bletchleySpotsFound,
               solvedCount: state.solvedCipherIds.size,
             });
