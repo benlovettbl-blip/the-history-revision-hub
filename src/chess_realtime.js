@@ -10,7 +10,7 @@ import {
   getScopedChessEndpoint,
 } from './engine/staff_auth.js';
 
-const SYNC_ENDPOINT = '/.netlify/functions/chess_sync';
+const SYNC_ENDPOINT = '/api/chess_sync';
 const POLL_INTERVAL_MS = 3000;
 const POLL_INTERVAL_BACKGROUND_MS = 15000;
 
@@ -430,7 +430,14 @@ export async function submitClubJoinRequestToCloud(joinPayload) {
       body: JSON.stringify({ action: 'join_request', ...joinPayload }),
     });
     const data = await res.json().catch(() => ({}));
-    if (!res.ok) return { ok: false, error: data.error || 'Could not submit request' };
+    if (!res.ok) {
+      // Only block the pupil for genuine validation/conflict errors returned by the API (400/409).
+      // If the host endpoint is unavailable (404/405/5xx), fall back gracefully so the pupil still gets their Callsign card.
+      if (data && data.error && (res.status === 400 || res.status === 409)) {
+        return { ok: false, error: data.error };
+      }
+      return { ok: false, offline: true };
+    }
     return { ok: true, ...data };
   } catch (e) {
     return { ok: false, offline: true };

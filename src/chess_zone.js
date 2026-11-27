@@ -11787,8 +11787,18 @@ window.handlePupilJoinRequestSubmit = async function (e) {
     chessState.pendingJoinRequests = [...(chessState.pendingJoinRequests || []), reqPayload];
   }
 
+  const submitBtn = document.getElementById('btn-submit-join-request');
+  if (submitBtn) {
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+  }
+
   const res = await submitClubJoinRequestToCloud(reqPayload);
   if (!res.ok && !res.offline && res.error) {
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Join Request';
+    }
     showChessToast(`⚠️ ${res.error}`, 'warning');
     return;
   }
