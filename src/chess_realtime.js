@@ -16,6 +16,7 @@ const POLL_INTERVAL_BACKGROUND_MS = 15000;
 
 let lastKnownSyncedAt = 0;
 let lastKnownClaimsSig = '';
+let lastKnownJoinSig = '';
 let pollingIntervalId = null;
 let isPushing = false;
 let pushDebounceTimer = null;
@@ -263,7 +264,12 @@ export function startPupilRealtimeSync(onUpdateReceived) {
       }
 
       const remoteData = await res.json();
-      if (!remoteData || (!remoteData.syncedAt && !Array.isArray(remoteData.pendingXpClaims))) {
+      if (
+        !remoteData ||
+        (!remoteData.syncedAt &&
+          !Array.isArray(remoteData.pendingXpClaims) &&
+          !Array.isArray(remoteData.pendingJoinRequests))
+      ) {
         currentSyncStatus = 'idle';
         updateSyncStatusUI();
         return;
@@ -276,13 +282,18 @@ export function startPupilRealtimeSync(onUpdateReceived) {
       const claimsSig = Array.isArray(remoteData.pendingXpClaims)
         ? remoteData.pendingXpClaims.map((c) => c.claimId).join('|')
         : '';
-      const hasChangedXpClaims = claimsSig !== lastKnownClaimsSig;
+      const joinSig = Array.isArray(remoteData.pendingJoinRequests)
+        ? remoteData.pendingJoinRequests.map((r) => r.requestId).join('|')
+        : '';
+      const hasChangedInbox =
+        claimsSig !== lastKnownClaimsSig || joinSig !== lastKnownJoinSig;
 
-      if (hasNewSync || hasChangedXpClaims) {
+      if (hasNewSync || hasChangedInbox) {
         if (hasNewSync) {
           lastKnownSyncedAt = remoteData.syncedAt;
         }
         lastKnownClaimsSig = claimsSig;
+        lastKnownJoinSig = joinSig;
         if (typeof onUpdateReceived === 'function') {
           onUpdateReceived(remoteData);
         }
@@ -406,8 +417,48 @@ export async function submitPracticeXpClaimToCloud(claimPayload) {
 }
 
 /**
- * Teacher Action: Clear Approved or Dismissed XP Claims from Cloud Inbox
+ * Pupil Club Join Request Submitter (Strictly Whitelisted History Callsign + House)
  */
+export async function submitClubJoinRequestToCloud(joinPayload) {
+  if (!joinPayload || isAirgapModeActive()) return { ok: false, offline: true };
+  try {
+    const endpoint = getScopedChessEndpoint(SYNC_ENDPOINT);
+    const sep = endpoint.includes('?') ? '&' : '?';
+    const res = await fetch(`${endpoint}${sep}action=join_request`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'join_request', ...joinPayload }),
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) return { ok: false, error: data.error || 'Could not submit request' };
+    return { ok: true, ...data };
+  } catch (e) {
+    return { ok: false, offline: true };
+  }
+}
+
+/**
+ * Teacher Action: Clear Approved or Declined Join Requests from Cloud Inbox
+ */
+export async function clearClubJoinRequestsFromCloud(requestIds = null) {
+  if (isAirgapModeActive()) return false;
+  try {
+    const authHeader = getStaffSyncAuthHeader();
+    const endpoint = getScopedChessEndpoint(SYNC_ENDPOINT);
+    const sep = endpoint.includes('?') ? '&' : '?';
+    const res = await fetch(`${endpoint}${sep}action=clear_join_requests`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'x-teacher-passkey': authHeader,
+      },
+      body: JSON.stringify({ action: 'clear_join_requests', requestIds }),
+    });
+    return res.ok;
+  } catch (e) {
+    return false;
+  }
+}
 export async function clearPracticeXpClaimsFromCloud(claimIds = null) {
   if (isAirgapModeActive()) return false;
   try {

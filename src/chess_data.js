@@ -63,6 +63,53 @@ export const SCORING_RULES = {
   GAME_OF_WEEK_BONUS: 2,
 };
 
+// Curated Pool of 100% GDPR-Safe Historical Callsigns for Club Members & Join Requests
+export const APPROVED_CHESS_CALLSIGNS = [
+  'The RAMC Field Medic',
+  'The Golden Stresemann',
+  'The Shuttle Diplomat',
+  'Andreas Vesalius',
+  'The Tudor Spymaster',
+  'Alexander Fleming',
+  'Sir Francis Drake',
+  'The White Rose',
+  'The Thomas Splint',
+  'William Harvey',
+  'Joseph Lister',
+  'The Armada Fireship',
+  'The Bar Lev Defender',
+  'Florence Nightingale',
+  'John Snow',
+  'Robert Koch',
+  'Louis Pasteur',
+  'Edward Jenner',
+  'Mary Seacole',
+  'James Simpson',
+  'Aneurin Bevan',
+  'Francis Walsingham',
+  'Sir Walter Raleigh',
+  'Lord Burghley',
+  'Robert Dudley',
+  'The Enigma Codebreaker',
+  'The Berlin Airlift',
+  'The Iron Curtain',
+  'The Marshall Planner',
+  'The Prague Spring',
+  'Dietrich Bonhoeffer',
+  'Rosa Parks',
+  'The Little Rock Nine',
+  'The Freedom Rider',
+  'Admiral Nelson',
+  'The Duke of Wellington',
+  'William Marshal',
+  'Eleanor of Aquitaine',
+  'The Domesday Commissioner',
+  'The Silk Road Envoy',
+  'The House of Wisdom',
+  'The Bletchley Park Analyst',
+  'The Western Front Sapper',
+];
+
 // Official Historical Chess Club Cohort (100% GDPR Anonymous Callsigns & Usernames)
 export const INITIAL_PLAYERS = [
   {

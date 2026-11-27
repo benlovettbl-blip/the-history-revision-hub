@@ -86,8 +86,26 @@ const SMALL_CAPTURE_GLYPHS = {
 const PIECE_VALUES = { p: 1, n: 3, b: 3, r: 5, q: 9, k: 0 };
 
 const TAPPED_IN_STORAGE_KEY = 'chess_active_pupil_id';
+const PENDING_JOIN_STORAGE_KEY = 'chess_pending_join_v1';
 const LOCAL_XP_LEDGER_KEY = 'chess_pupil_xp_ledger_v1';
 const DAILY_XP_CAP = 100;
+
+function getPendingJoinLocal() {
+  if (typeof window === 'undefined') return null;
+  try {
+    const raw = localStorage.getItem(PENDING_JOIN_STORAGE_KEY);
+    return raw ? JSON.parse(raw) : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function clearPendingJoinLocal() {
+  if (typeof window === 'undefined') return;
+  try {
+    localStorage.removeItem(PENDING_JOIN_STORAGE_KEY);
+  } catch (e) {}
+}
 
 function getSavedTappedInPlayerId() {
   if (typeof window === 'undefined') return '';
@@ -1127,6 +1145,21 @@ function renderVirtualChessInner(chessState) {
 
   const whiteRoster = vc.whitePlayerId ? players.find((p) => p.id === vc.whitePlayerId) : null;
   const blackRoster = vc.blackPlayerId ? players.find((p) => p.id === vc.blackPlayerId) : null;
+
+  // Auto-activate if pupil's pending join Callsign was approved onto the Ladder!
+  let pendingJoin = getPendingJoinLocal();
+  if (pendingJoin && pendingJoin.callsign) {
+    const newlyApproved = players.find(
+      (p) => String(p.name || '').toLowerCase() === String(pendingJoin.callsign).toLowerCase(),
+    );
+    if (newlyApproved) {
+      vc.tappedInPlayerId = newlyApproved.id;
+      saveTappedInPlayerId(newlyApproved.id);
+      clearPendingJoinLocal();
+      pendingJoin = null;
+    }
+  }
+
   const tappedPupil = vc.tappedInPlayerId
     ? players.find((p) => p.id === vc.tappedInPlayerId)
     : null;
@@ -1348,6 +1381,15 @@ function renderVirtualChessInner(chessState) {
               })
               .join('')}
           </select>
+          ${
+            !tappedPupil
+              ? `
+            <button type="button" onclick="window.openPupilJoinRequestModal && window.openPupilJoinRequestModal()" style="background: #ffffff; color: #0284c7; border: 1.5px solid #7dd3fc; border-radius: 8px; padding: 5px 10px; font-size: 0.76rem; font-weight: 800; cursor: pointer;">
+              + New Member? Get a Callsign
+            </button>
+          `
+              : ''
+          }
         </div>
 
         ${
@@ -1368,9 +1410,15 @@ function renderVirtualChessInner(chessState) {
             </div>
           </div>
         `
-            : `
+            : pendingJoin && pendingJoin.callsign
+              ? `
+          <div style="background: #fffbeb; border: 1px solid #fde68a; color: #92400e; padding: 4px 10px; border-radius: 8px; font-size: 0.74rem; font-weight: 800;">
+            ⏳ Pending Callsign: <strong>${pendingJoin.callsign}</strong> — Tell your teacher in person to get approved!
+          </div>
+        `
+              : `
           <div style="font-size: 0.75rem; color: #64748b; font-weight: 600;">
-            ⚡ Beat the Computer Coach to earn XP (<strong style="color: #0f172a;">100 XP = +1 House Point</strong> · Easy +15 · Medium +30 · Hard +50)
+            ⚡ Beat the Computer Coach to earn XP (<strong style="color: #0f172a;">100 XP = +1 House Point</strong>)
           </div>
         `
         }

@@ -86,6 +86,51 @@ function resolveXpBlobKey(rawRoom) {
   return slug ? `xp_inbox__${slug}` : 'xp_inbox';
 }
 
+function resolveJoinBlobKey(rawRoom) {
+  const slug = String(rawRoom || '')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9_-]+/g, '_')
+    .replace(/^_+|_+$/g, '')
+    .slice(0, 48);
+  return slug ? `join_inbox__${slug}` : 'join_inbox';
+}
+
+const ALLOWED_JOIN_CALLSIGNS = new Set([
+  'Florence Nightingale',
+  'John Snow',
+  'Robert Koch',
+  'Louis Pasteur',
+  'Edward Jenner',
+  'Mary Seacole',
+  'James Simpson',
+  'Aneurin Bevan',
+  'Francis Walsingham',
+  'Sir Walter Raleigh',
+  'Lord Burghley',
+  'Robert Dudley',
+  'The Enigma Codebreaker',
+  'The Berlin Airlift',
+  'The Iron Curtain',
+  'The Marshall Planner',
+  'The Prague Spring',
+  'Dietrich Bonhoeffer',
+  'Rosa Parks',
+  'The Little Rock Nine',
+  'The Freedom Rider',
+  'Admiral Nelson',
+  'The Duke of Wellington',
+  'William Marshal',
+  'Eleanor of Aquitaine',
+  'The Domesday Commissioner',
+  'The Silk Road Envoy',
+  'The House of Wisdom',
+  'The Bletchley Park Analyst',
+  'The Western Front Sapper',
+]);
+
+const ALLOWED_HOUSES = new Set(['victory', 'warrior', 'dreadnought', 'invincible']);
+
 async function readBlobOrMemory(store, key, fallbackVal) {
   let val = memoryFallbackMap.get(key) || fallbackVal;
   if (store) {
@@ -120,6 +165,7 @@ async function handleRequest(method, headers, body, roomParam = '', actionParam 
   const secHeaders = buildSecurityHeaders(getHeader('origin'));
   const blobKey = resolveBlobKey(roomParam);
   const xpBlobKey = resolveXpBlobKey(roomParam);
+  const joinBlobKey = resolveJoinBlobKey(roomParam);
 
   if (method === 'OPTIONS') {
     return {
@@ -140,6 +186,7 @@ async function handleRequest(method, headers, body, roomParam = '', actionParam 
   if (method === 'GET') {
     const data = await readBlobOrMemory(store, blobKey, null);
     const xpInbox = await readBlobOrMemory(store, xpBlobKey, { claims: [], dailyTotals: {} });
+    const joinInbox = await readBlobOrMemory(store, joinBlobKey, { requests: [] });
 
     // GDPR Sanitization check: Ensure no academic year or unsanitized fields leak
     if (data && Array.isArray(data.players)) {
@@ -148,18 +195,21 @@ async function handleRequest(method, headers, body, roomParam = '', actionParam 
       });
     }
 
+    const pendingXpClaims = Array.isArray(xpInbox?.claims) ? xpInbox.claims : [];
+    const pendingJoinRequests = Array.isArray(joinInbox?.requests) ? joinInbox.requests : [];
+
     if (actionParam === 'xp_claims') {
       return {
         status: 200,
         headers: secHeaders,
-        body: JSON.stringify({ claims: Array.isArray(xpInbox?.claims) ? xpInbox.claims : [] }),
+        body: JSON.stringify({ claims: pendingXpClaims, joinRequests: pendingJoinRequests }),
       };
     }
 
     const merged = data
-      ? { ...data, pendingXpClaims: Array.isArray(xpInbox?.claims) ? xpInbox.claims : [] }
-      : Array.isArray(xpInbox?.claims) && xpInbox.claims.length > 0
-        ? { syncedAt: 0, pendingXpClaims: xpInbox.claims }
+      ? { ...data, pendingXpClaims, pendingJoinRequests }
+      : pendingXpClaims.length > 0 || pendingJoinRequests.length > 0
+        ? { syncedAt: 0, pendingXpClaims, pendingJoinRequests }
         : null;
 
     return {
@@ -182,6 +232,61 @@ async function handleRequest(method, headers, body, roomParam = '', actionParam 
     }
 
     const effectiveAction = String(actionParam || parsedPayload.action || '').trim();
+
+    // 0. Pupil Club Join Request (Strictly whitelisted historical Callsigns ONLY — zero free text!)
+    if (effectiveAction === 'join_request') {
+      const callsign = String(parsedPayload.callsign || '').trim();
+      const house = String(parsedPayload.house || '').trim().toLowerCase();
+      const acknowledgedRules = Boolean(parsedPayload.acknowledgedRules);
+      const requestId = String(parsedPayload.requestId || `join_${Date.now()}`).slice(0, 64);
+
+      if (!ALLOWED_JOIN_CALLSIGNS.has(callsign) || !ALLOWED_HOUSES.has(house) || !acknowledgedRules) {
+        return {
+          status: 400,
+          headers: secHeaders,
+          body: JSON.stringify({ error: 'Please choose an approved Callsign, House, and confirm both rules.' }),
+        };
+      }
+
+      const liveData = await readBlobOrMemory(store, blobKey, null);
+      const takenOnLadder =
+        liveData &&
+        Array.isArray(liveData.players) &&
+        liveData.players.some(
+          (p) => String(p.name || '').toLowerCase() === callsign.toLowerCase(),
+        );
+      if (takenOnLadder) {
+        return {
+          status: 409,
+          headers: secHeaders,
+          body: JSON.stringify({ error: 'That Callsign is already on the Club Ladder. Please choose another!' }),
+        };
+      }
+
+      const joinInbox = await readBlobOrMemory(store, joinBlobKey, { requests: [] });
+      const requests = Array.isArray(joinInbox?.requests) ? joinInbox.requests : [];
+      if (requests.some((r) => String(r.callsign || '').toLowerCase() === callsign.toLowerCase())) {
+        return {
+          status: 409,
+          headers: secHeaders,
+          body: JSON.stringify({ error: 'That Callsign is already pending teacher approval. Please choose another!' }),
+        };
+      }
+
+      requests.push({
+        requestId,
+        callsign,
+        house,
+        createdAt: Date.now(),
+      });
+
+      await writeBlobAndMemory(store, joinBlobKey, { requests: requests.slice(-60) });
+      return {
+        status: 200,
+        headers: secHeaders,
+        body: JSON.stringify({ success: true, callsign, house }),
+      };
+    }
 
     // 1. Pupil Practice XP Submission (Isolated xp_inbox blob; strictly capped at 100 XP/day per playerId)
     if (effectiveAction === 'xp_claim') {
@@ -281,6 +386,22 @@ async function handleRequest(method, headers, body, roomParam = '', actionParam 
         status: 401,
         headers: secHeaders,
         body: JSON.stringify({ error: 'Unauthorized teacher passkey' }),
+      };
+    }
+
+    if (effectiveAction === 'clear_join_requests') {
+      const idsToClear = Array.isArray(parsedPayload.requestIds)
+        ? new Set(parsedPayload.requestIds)
+        : null;
+      const joinInbox = await readBlobOrMemory(store, joinBlobKey, { requests: [] });
+      const remaining = idsToClear
+        ? (joinInbox.requests || []).filter((r) => !idsToClear.has(r.requestId))
+        : [];
+      await writeBlobAndMemory(store, joinBlobKey, { requests: remaining });
+      return {
+        status: 200,
+        headers: secHeaders,
+        body: JSON.stringify({ success: true, remainingCount: remaining.length }),
       };
     }
 

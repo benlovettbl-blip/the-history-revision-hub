@@ -6,6 +6,7 @@
 import {
   HOUSES,
   SCORING_RULES,
+  APPROVED_CHESS_CALLSIGNS,
   INITIAL_PLAYERS,
   INITIAL_MATCHES,
   INITIAL_KNOCKOUT_BRACKET,
@@ -26,6 +27,8 @@ import {
   setAirgapMode,
   submitPracticeXpClaimToCloud,
   clearPracticeXpClaimsFromCloud,
+  submitClubJoinRequestToCloud,
+  clearClubJoinRequestsFromCloud,
 } from './chess_realtime.js';
 import { verifyStaffPasskeySync } from './engine/staff_auth.js';
 import QRCode from 'qrcode';
@@ -258,6 +261,11 @@ export const CALLSIGN_MAP = {
   'The Viking Jarl': 'The White Rose',
   'The Waterloo Grenadier': 'The RAMC Field Medic',
 };
+if (Array.isArray(APPROVED_CHESS_CALLSIGNS)) {
+  APPROVED_CHESS_CALLSIGNS.forEach((cs) => {
+    CALLSIGN_MAP[cs] = cs;
+  });
+}
 export const CALLSIGN_TO_FIRST_NAME = CALLSIGN_MAP; // Backwards-compatible alias ensuring 100% GDPR anonymity
 
 // Combinatorial Historical Naval Chess Themes
@@ -439,7 +447,10 @@ export function hydratePlayerRealNames(players) {
 
     const clean =
       CALLSIGN_MAP[rawVal] ||
-      (typeof sanitizePupilName === 'function' ? sanitizePupilName(rawVal) : rawVal);
+      (p.isCallsign ? String(rawVal || '').trim() : typeof sanitizePupilName === 'function' ? sanitizePupilName(rawVal) : rawVal);
+    if (p.isCallsign && clean) {
+      CALLSIGN_MAP[clean] = clean;
+    }
     p.realName = clean;
     p.name = clean;
     p.nickname = clean;
@@ -672,6 +683,8 @@ let chessState = {
   virtualChess: createDefaultVirtualChessState(),
   pendingXpClaims: [],
   processedXpClaimIds: [],
+  pendingJoinRequests: [],
+  processedJoinRequestIds: [],
   activePuzzleBoard: null,
   activePuzzleIndex: 0,
   selectedSquare: null,
@@ -1248,13 +1261,23 @@ function initChessState(forceClean = false) {
   if (typeof window !== 'undefined' && !window.__chessSyncListenerStarted) {
     window.__chessSyncListenerStarted = true;
     startPupilRealtimeSync((remoteData) => {
-      // Sync incoming Pupil Practice XP claims for Teacher 1-click approval
+      // Sync incoming Pupil Practice XP claims & Club Join Requests for Teacher 1-click approval
       let xpInboxChanged = false;
       if (remoteData && Array.isArray(remoteData.pendingXpClaims)) {
         const seen = new Set(chessState.processedXpClaimIds || []);
         const filteredClaims = remoteData.pendingXpClaims.filter((c) => c && !seen.has(c.claimId));
         if (filteredClaims.length !== (chessState.pendingXpClaims || []).length) {
           chessState.pendingXpClaims = filteredClaims;
+          xpInboxChanged = true;
+        }
+      }
+      if (remoteData && Array.isArray(remoteData.pendingJoinRequests)) {
+        const seenJoin = new Set(chessState.processedJoinRequestIds || []);
+        const filteredJoin = remoteData.pendingJoinRequests.filter(
+          (r) => r && !seenJoin.has(r.requestId),
+        );
+        if (filteredJoin.length !== (chessState.pendingJoinRequests || []).length) {
+          chessState.pendingJoinRequests = filteredJoin;
           xpInboxChanged = true;
         }
       }
@@ -1668,6 +1691,9 @@ export function renderChessHubView() {
         </button>
       </div>
 
+      <!-- Teacher Pending Club Join Requests Banner -->
+      ${chessState.userRole === 'teacher' && Array.isArray(chessState.pendingJoinRequests) && chessState.pendingJoinRequests.length > 0 ? renderPendingJoinRequestsBanner() : ''}
+
       <!-- Teacher Pending Practice XP Approval Banner -->
       ${chessState.userRole === 'teacher' && Array.isArray(chessState.pendingXpClaims) && chessState.pendingXpClaims.length > 0 ? renderPendingXpClaimsBanner() : ''}
 
@@ -1742,7 +1768,11 @@ function renderActiveTabContent(filteredPlayers) {
                 : ''
             }
           `
-              : ''
+              : `
+            <button type="button" onclick="window.openPupilJoinRequestModal()" style="background: #0284c7; color: #ffffff; border: none; border-radius: 7px; padding: 6px 11px; font-size: 0.76rem; font-weight: 800; cursor: pointer;">
+              + Request to Join Club
+            </button>
+          `
           }
         </div>
       </div>
@@ -11502,38 +11532,76 @@ window.printFidePairingSheet = function () {
 };
 
 // Modal Handling: Register Pupil
+function getUnusedApprovedCallsigns() {
+  const used = new Set(
+    (chessState.players || []).map((p) => String(p.name || '').trim().toLowerCase()),
+  );
+  (chessState.pendingJoinRequests || []).forEach((r) => {
+    if (r && r.callsign) used.add(String(r.callsign).trim().toLowerCase());
+  });
+  return (APPROVED_CHESS_CALLSIGNS || []).filter((cs) => !used.has(cs.toLowerCase()));
+}
+
+window.pickRandomCallsignForModal = function (selectId, customInputId = '') {
+  const sel = document.getElementById(selectId);
+  if (!sel || sel.options.length === 0) return;
+  const idx = Math.floor(Math.random() * sel.options.length);
+  sel.selectedIndex = idx;
+  if (customInputId) {
+    const inp = document.getElementById(customInputId);
+    if (inp) inp.value = sel.value;
+  }
+};
+
 window.openAddPlayerModal = function () {
   const modalCont = getChessModalContainer();
   if (!modalCont) return;
 
+  const available = getUnusedApprovedCallsigns();
+  const defaultCallsign = available[0] || 'Florence Nightingale';
+
   modalCont.innerHTML = `
-    <div style="position: fixed; inset: 0; background: rgba(15, 23, 42, 0.7); display: flex; align-items: center; justify-content: center; z-index: 99999; padding: 20px;" onclick="if(event.target === this) window.closeChessModal();">
-      <div style="background: #ffffff; border-radius: 14px; max-width: 460px; width: 100%; padding: 26px; box-shadow: 0 20px 40px rgba(0,0,0,0.25); animation: zoomIn 0.2s ease-out; font-family: 'Outfit', sans-serif;">
+    <div style="position: fixed; inset: 0; background: rgba(15, 23, 42, 0.72); display: flex; align-items: center; justify-content: center; z-index: 99999; padding: 20px;" onclick="if(event.target === this) window.closeChessModal();">
+      <div style="background: #ffffff; border-radius: 14px; max-width: 480px; width: 100%; padding: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.28); font-family: 'Outfit', sans-serif;">
         
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 12px;">
-          <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.35rem; color: #0f172a;">
-            <i class="fa-solid fa-user-plus" style="color: #10b981;"></i> Register New Chess Player
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 10px;">
+          <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #0f172a;">
+            <i class="fa-solid fa-user-plus" style="color: #10b981;"></i> Add Club Member (Callsign)
           </h2>
-          <button onclick="window.closeChessModal()" style="background: none; border: none; font-size: 1.2rem; color: #64748b; cursor: pointer;">&times;</button>
+          <button type="button" onclick="window.closeChessModal()" style="background: none; border: none; font-size: 1.3rem; color: #64748b; cursor: pointer;">&times;</button>
+        </div>
+
+        <div style="background: #fffbeb; border: 1.5px solid #fde68a; border-radius: 9px; padding: 10px 12px; margin-bottom: 14px; font-size: 0.78rem; color: #92400e; line-height: 1.4;">
+          <strong>🛡️ 100% GDPR Anonymous:</strong> Never enter a pupil's real name here. Pick or type a <strong>History Callsign</strong> below, tell the pupil to remember it, and jot their real name beside it on your private paper/markbook sheet.
         </div>
 
         <form onsubmit="window.handleAddPlayerSubmit(event)">
-          <div style="margin-bottom: 14px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; color: #334155; margin-bottom: 5px;">Pupil Full Name:</label>
-            <input type="text" id="new-player-name" required placeholder="e.g. Leo B." style="width: 100%; padding: 10px; border-radius: 6px; border: 1.5px solid #cbd5e1; font-size: 0.95rem;" onblur="if(this.value && window.sanitizePupilName) this.value = window.sanitizePupilName(this.value);">
-            <div style="font-size: 0.74rem; color: #64748b; margin-top: 5px; display: flex; align-items: center; gap: 5px; line-height: 1.3;">
-              <i class="fa-solid fa-shield-halved" style="color: #6366f1;"></i>
-              <span><strong>School Privacy:</strong> Please use <strong>First Name + Last Initial</strong> (e.g. <em>Leo B.</em>). Full surnames are auto-sanitised.</span>
+          ${
+            available.length > 0
+              ? `
+            <div style="margin-bottom: 12px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                <label style="font-weight: 800; font-size: 0.82rem; color: #334155;">1. Quick-Pick Unused History Callsign:</label>
+                <button type="button" onclick="window.pickRandomCallsignForModal('teacher-callsign-preset', 'new-player-name')" style="background: #eff6ff; color: #0284c7; border: 1px solid #bae6fd; border-radius: 6px; padding: 3px 9px; font-size: 0.74rem; font-weight: 800; cursor: pointer;">
+                  🎲 Random Callsign
+                </button>
+              </div>
+              <select id="teacher-callsign-preset" onchange="document.getElementById('new-player-name').value = this.value" style="width: 100%; padding: 9px 10px; border-radius: 7px; border: 1.5px solid #cbd5e1; font-size: 16px; font-weight: 700; color: #0f172a; background: #f8fafc;">
+                ${available.map((cs) => `<option value="${cs}">${cs}</option>`).join('')}
+              </select>
             </div>
+          `
+              : ''
+          }
+
+          <div style="margin-bottom: 12px;">
+            <label style="display: block; font-weight: 800; font-size: 0.82rem; color: #334155; margin-bottom: 5px;">Callsign Shown on Ladder:</label>
+            <input type="text" id="new-player-name" required maxlength="40" value="${defaultCallsign}" placeholder="e.g. Florence Nightingale" style="width: 100%; box-sizing: border-box; padding: 9px 10px; border-radius: 7px; border: 1.5px solid #0284c7; font-size: 16px; font-weight: 800; color: #0f172a;">
           </div>
 
-          <div style="margin-bottom: 14px;">
-            
-          </div>
-
-          <div style="margin-bottom: 14px;">
-            <label style="display: block; font-weight: 700; font-size: 0.85rem; color: #334155; margin-bottom: 5px;">School House:</label>
-            <select id="new-player-house" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1.5px solid #cbd5e1; font-size: 0.95rem;">
+          <div style="margin-bottom: 16px;">
+            <label style="display: block; font-weight: 800; font-size: 0.82rem; color: #334155; margin-bottom: 5px;">School House:</label>
+            <select id="new-player-house" required style="width: 100%; padding: 9px 10px; border-radius: 7px; border: 1.5px solid #cbd5e1; font-size: 16px; font-weight: 700;">
               <option value="victory">Victory (Blue)</option>
               <option value="warrior">Warrior (Red)</option>
               <option value="dreadnought">Dreadnought (Green)</option>
@@ -11541,9 +11609,9 @@ window.openAddPlayerModal = function () {
             </select>
           </div>
 
-          <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; border-top: 1px solid #e2e8f0; padding-top: 14px;">
-            <button type="button" onclick="window.closeChessModal()" style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 9px 16px; border-radius: 6px; font-weight: 700; cursor: pointer;">Cancel</button>
-            <button type="submit" style="background: #10b981; color: #ffffff; border: none; padding: 9px 20px; border-radius: 6px; font-weight: 700; cursor: pointer;">Add to Ladder</button>
+          <div style="display: flex; justify-content: flex-end; gap: 10px; border-top: 1px solid #e2e8f0; padding-top: 14px;">
+            <button type="button" onclick="window.closeChessModal()" style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 9px 16px; border-radius: 7px; font-weight: 700; cursor: pointer;">Cancel</button>
+            <button type="submit" style="background: #10b981; color: #ffffff; border: none; padding: 9px 20px; border-radius: 7px; font-weight: 800; cursor: pointer;">Add Callsign to Ladder</button>
           </div>
         </form>
 
@@ -11563,19 +11631,30 @@ window.handleAddPlayerSubmit = function (e) {
     return;
   }
 
-  const rawName = document.getElementById('new-player-name')?.value.trim();
-  const name = sanitizePupilName(rawName);
+  const rawName = (document.getElementById('new-player-name')?.value || '')
+    .replace(/[<>]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
   const house = document.getElementById('new-player-house')?.value || 'warrior';
 
-  if (!name) return;
+  if (!rawName) return;
+  if (
+    chessState.players.some((p) => String(p.name || '').toLowerCase() === rawName.toLowerCase())
+  ) {
+    showChessToast(`⚠️ "${rawName}" is already on the Club Ladder! Pick another Callsign.`, 'warning');
+    return;
+  }
 
+  CALLSIGN_MAP[rawName] = rawName;
   const newId = 'p_' + Date.now();
   const newRank = chessState.players.length + 1;
   const newPlayer = {
     id: newId,
-    name: name,
-    nickname: name,
-    realName: name,
+    name: rawName,
+    nickname: rawName,
+    realName: rawName,
+    username: rawName.replace(/[^A-Za-z0-9]/g, ''),
+    isCallsign: true,
     house: house,
     rating: 1000,
     games: 0,
@@ -11587,11 +11666,169 @@ window.handleAddPlayerSubmit = function (e) {
 
   chessState.players.push(newPlayer);
   chessState.checkedInPlayerIds.push(newId);
-  savePlayerRealName(newId, name);
   saveChessState();
   window.closeChessModal();
   renderChessHubView();
-  showChessToast(`🎉 Added ${name} (${HOUSES[house]?.name || house})!`, 'success');
+  showChessToast(`🎉 Added "${rawName}" (${HOUSES[house]?.name || house})! Remind pupil to save their Callsign.`, 'success');
+};
+
+window.updateJoinPledgeButtonState = function () {
+  const c1 = document.getElementById('join-pledge-remember')?.checked;
+  const c2 = document.getElementById('join-pledge-tell-teacher')?.checked;
+  const btn = document.getElementById('btn-submit-join-request');
+  if (btn) {
+    const ready = Boolean(c1 && c2);
+    btn.disabled = !ready;
+    btn.style.opacity = ready ? '1' : '0.45';
+    btn.style.cursor = ready ? 'pointer' : 'not-allowed';
+  }
+};
+
+window.openPupilJoinRequestModal = function () {
+  const modalCont = getChessModalContainer();
+  if (!modalCont) return;
+
+  const available = getUnusedApprovedCallsigns();
+  if (available.length === 0) {
+    showChessToast('All preset Callsigns are currently in use — please ask your teacher to add a custom Callsign!', 'info');
+    return;
+  }
+
+  modalCont.innerHTML = `
+    <div style="position: fixed; inset: 0; background: rgba(15, 23, 42, 0.76); display: flex; align-items: center; justify-content: center; z-index: 99999; padding: 16px;" onclick="if(event.target === this) window.closeChessModal();">
+      <div id="pupil-join-modal-box" style="background: #ffffff; border-radius: 15px; max-width: 500px; width: 100%; padding: 22px 24px; box-shadow: 0 22px 45px rgba(0,0,0,0.32); font-family: 'Outfit', sans-serif;">
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; border-bottom: 1.5px solid #e2e8f0; padding-bottom: 10px;">
+          <h2 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 1.3rem; color: #0f172a;">
+            ♟️ Request to Join Chess Club
+          </h2>
+          <button type="button" onclick="window.closeChessModal()" style="background: none; border: none; font-size: 1.3rem; color: #64748b; cursor: pointer;">&times;</button>
+        </div>
+
+        <form onsubmit="window.handlePupilJoinRequestSubmit(event)">
+          <div style="margin-bottom: 12px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+              <label style="font-weight: 800; font-size: 0.83rem; color: #0f172a;">1. Choose Your Anonymous History Callsign:</label>
+              <button type="button" onclick="window.pickRandomCallsignForModal('pupil-join-callsign')" style="background: #eff6ff; color: #0284c7; border: 1px solid #bae6fd; border-radius: 6px; padding: 3px 9px; font-size: 0.74rem; font-weight: 800; cursor: pointer;">
+                🎲 Randomize
+              </button>
+            </div>
+            <select id="pupil-join-callsign" required style="width: 100%; padding: 10px; border-radius: 8px; border: 2px solid #0284c7; font-size: 16px; font-weight: 800; color: #0f172a; background: #f8fafc;">
+              ${available.map((cs) => `<option value="${cs}">${cs}</option>`).join('')}
+            </select>
+          </div>
+
+          <div style="margin-bottom: 14px;">
+            <label style="display: block; font-weight: 800; font-size: 0.83rem; color: #0f172a; margin-bottom: 5px;">2. Choose Your School House:</label>
+            <select id="pupil-join-house" required style="width: 100%; padding: 10px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-size: 16px; font-weight: 700; color: #0f172a;">
+              <option value="victory">Victory (Blue)</option>
+              <option value="warrior">Warrior (Red)</option>
+              <option value="dreadnought">Dreadnought (Green)</option>
+              <option value="invincible">Invincible (Yellow)</option>
+            </select>
+          </div>
+
+          <!-- Mandatory High-Visibility Callsign Rules Box -->
+          <div style="background: #fffbeb; border: 2px solid #f59e0b; border-radius: 10px; padding: 12px 14px; margin-bottom: 14px;">
+            <div style="font-size: 0.82rem; font-weight: 900; color: #92400e; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 6px;">
+              ⚠️ Mandatory Club Rules — Read Carefully!
+            </div>
+            <div style="font-size: 0.8rem; color: #78350f; line-height: 1.45; margin-bottom: 10px;">
+              For school privacy, <strong>real names are never stored on this app</strong>:
+              <ul style="margin: 5px 0 0 18px; padding: 0;">
+                <li><strong>Remember your Callsign!</strong> Write it in your planner — if you forget it, the app cannot look it up by your name.</li>
+                <li><strong>Tell your teacher in person!</strong> Your Callsign stays locked until you tell your teacher in person which Callsign is yours.</li>
+              </ul>
+            </div>
+
+            <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.8rem; font-weight: 800; color: #0f172a; cursor: pointer; margin-bottom: 8px;">
+              <input type="checkbox" id="join-pledge-remember" onchange="window.updateJoinPledgeButtonState()" style="margin-top: 3px; width: 16px; height: 16px; flex-shrink: 0;" />
+              <span>I have written down my Callsign and will remember it.</span>
+            </label>
+
+            <label style="display: flex; align-items: flex-start; gap: 8px; font-size: 0.8rem; font-weight: 800; color: #0f172a; cursor: pointer;">
+              <input type="checkbox" id="join-pledge-tell-teacher" onchange="window.updateJoinPledgeButtonState()" style="margin-top: 3px; width: 16px; height: 16px; flex-shrink: 0;" />
+              <span>I will tell my teacher in person which Callsign &amp; House I picked so they can approve me.</span>
+            </label>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 10px;">
+            <button type="button" onclick="window.closeChessModal()" style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 9px 15px; border-radius: 8px; font-weight: 700; cursor: pointer;">Cancel</button>
+            <button id="btn-submit-join-request" type="submit" disabled style="background: #0284c7; color: #ffffff; border: none; padding: 9px 18px; border-radius: 8px; font-weight: 800; opacity: 0.45; cursor: not-allowed;">
+              Send Join Request
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  `;
+};
+
+window.handlePupilJoinRequestSubmit = async function (e) {
+  if (e && e.preventDefault) e.preventDefault();
+  const callsign = document.getElementById('pupil-join-callsign')?.value || '';
+  const house = document.getElementById('pupil-join-house')?.value || 'warrior';
+  const c1 = document.getElementById('join-pledge-remember')?.checked;
+  const c2 = document.getElementById('join-pledge-tell-teacher')?.checked;
+  if (!callsign || !c1 || !c2) return;
+
+  const hObj = HOUSES[house] || HOUSES.warrior;
+  const reqPayload = {
+    requestId: `join_${Date.now()}_${Math.floor(Math.random() * 1000)}`,
+    callsign,
+    house,
+    acknowledgedRules: true,
+    createdAt: Date.now(),
+  };
+
+  // If requested directly on Teacher's own unlocked classroom laptop, queue locally too so teacher sees it immediately
+  if (chessState.userRole === 'teacher') {
+    chessState.pendingJoinRequests = [...(chessState.pendingJoinRequests || []), reqPayload];
+  }
+
+  const res = await submitClubJoinRequestToCloud(reqPayload);
+  if (!res.ok && !res.offline && res.error) {
+    showChessToast(`⚠️ ${res.error}`, 'warning');
+    return;
+  }
+
+  try {
+    localStorage.setItem(
+      'chess_pending_join_v1',
+      JSON.stringify({ callsign, house, requestedAt: Date.now() }),
+    );
+  } catch (err) {}
+
+  const box = document.getElementById('pupil-join-modal-box');
+  if (box) {
+    box.innerHTML = `
+      <div style="text-align: center; padding: 6px 4px;">
+        <div style="font-size: 2.2rem; margin-bottom: 6px;">📌</div>
+        <h2 style="margin: 0 0 6px 0; font-family: 'Playfair Display', serif; font-size: 1.35rem; color: #0f172a;">
+          Save Your Callsign Now!
+        </h2>
+        <p style="margin: 0 0 14px 0; font-size: 0.84rem; color: #475569;">
+          Screenshot this card or write it in your planner right now:
+        </p>
+
+        <div style="background: ${hObj.bgLight}; border: 2px solid ${hObj.color}; border-radius: 12px; padding: 14px; margin-bottom: 14px;">
+          <div style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #64748b;">Your Club Callsign</div>
+          <div style="font-size: 1.35rem; font-weight: 900; color: #0f172a; margin: 4px 0;">${callsign}</div>
+          <div style="font-size: 0.82rem; font-weight: 800; color: ${hObj.color};">House: ${hObj.name}</div>
+        </div>
+
+        <div style="background: #fef2f2; border: 1.5px solid #fca5a5; border-radius: 9px; padding: 10px 12px; margin-bottom: 16px; font-size: 0.8rem; font-weight: 800; color: #991b1b; line-height: 1.4;">
+          🗣️ NEXT STEP: Go tell your teacher in person: <em>"My Chess Callsign is ${callsign} (${hObj.name})"</em> so they can approve you onto the Club Ladder!
+        </div>
+
+        <button type="button" onclick="window.closeChessModal(); window.switchChessTab('play');" style="background: #0f172a; color: #ffffff; border: none; border-radius: 8px; padding: 10px 22px; font-size: 0.88rem; font-weight: 800; cursor: pointer; width: 100%;">
+          Got It — I Wrote Down "${callsign}"
+        </button>
+      </div>
+    `;
+  }
+  renderChessHubView();
 };
 
 window.quickChallengePlayer = function (targetId) {
@@ -11844,6 +12081,116 @@ function applyPracticeXpToCanonicalPlayer(playerId, xpToAdd) {
 
   return { housePtsAwarded, newXp, player };
 }
+
+function renderPendingJoinRequestsBanner() {
+  const requests = chessState.pendingJoinRequests || [];
+  if (requests.length === 0) return '';
+
+  const rowsHtml = requests
+    .map((req) => {
+      const h = HOUSES[req.house] || HOUSES.warrior;
+      const safeId = String(req.requestId || '').replace(/[^a-zA-Z0-9_-]/g, '');
+      return `
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; background: #ffffff; border: 1px solid #fde68a; border-radius: 8px; padding: 6px 10px; flex-wrap: wrap;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 0.88rem; font-weight: 900; color: #0f172a;">${req.callsign}</span>
+          <span style="background: ${h.bgLight}; color: ${h.color}; border: 1px solid ${h.borderColor}; border-radius: 999px; padding: 1px 8px; font-size: 0.7rem; font-weight: 800;">${h.name}</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <button type="button" onclick="window.approveClubJoinRequest('${safeId}')" style="background: #10b981; color: #ffffff; border: none; border-radius: 6px; padding: 5px 11px; font-size: 0.74rem; font-weight: 800; cursor: pointer;">
+            ✓ Approve onto Ladder
+          </button>
+          <button type="button" onclick="window.declineClubJoinRequest('${safeId}')" style="background: #f8fafc; color: #64748b; border: 1px solid #cbd5e1; border-radius: 6px; padding: 5px 9px; font-size: 0.73rem; font-weight: 700; cursor: pointer;">
+            ✕ Decline
+          </button>
+        </div>
+      </div>
+    `;
+    })
+    .join('');
+
+  return `
+    <div id="teacher-join-inbox-banner" style="background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); border: 1.5px solid #f59e0b; border-radius: 11px; padding: 10px 14px; margin-bottom: 12px; box-shadow: 0 2px 8px rgba(245, 158, 11, 0.12);">
+      <div style="font-size: 0.8rem; font-weight: 900; color: #92400e; margin-bottom: 6px;">
+        🙋 Pending Club Join Request${requests.length === 1 ? '' : 's'} (${requests.length}) — <span style="font-weight: 700;">Only approve once the pupil has told you in person which Callsign is theirs (jot their name on your private sheet)!</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px;">
+        ${rowsHtml}
+      </div>
+    </div>
+  `;
+}
+
+window.approveClubJoinRequest = function (requestId) {
+  if (chessState.userRole !== 'teacher') return;
+  const req = (chessState.pendingJoinRequests || []).find((r) => r.requestId === requestId);
+  if (!req) return;
+
+  if (
+    chessState.players.some(
+      (p) => String(p.name || '').toLowerCase() === String(req.callsign || '').toLowerCase(),
+    )
+  ) {
+    chessState.pendingJoinRequests = chessState.pendingJoinRequests.filter(
+      (r) => r.requestId !== requestId,
+    );
+    clearClubJoinRequestsFromCloud([requestId]);
+    renderChessHubView();
+    showChessToast(`"${req.callsign}" is already on the Club Ladder!`, 'info');
+    return;
+  }
+
+  pushChessUndoSnapshot(`Approve Member: ${req.callsign}`);
+  CALLSIGN_MAP[req.callsign] = req.callsign;
+  const newId = 'p_' + Date.now();
+  const newPlayer = {
+    id: newId,
+    name: req.callsign,
+    nickname: req.callsign,
+    realName: req.callsign,
+    username: req.callsign.replace(/[^A-Za-z0-9]/g, ''),
+    isCallsign: true,
+    house: req.house || 'warrior',
+    rating: 1000,
+    games: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    rank: chessState.players.length + 1,
+  };
+
+  chessState.players.push(newPlayer);
+  chessState.checkedInPlayerIds.push(newId);
+  chessState.processedJoinRequestIds = [
+    ...(chessState.processedJoinRequestIds || []),
+    requestId,
+  ].slice(-200);
+  chessState.pendingJoinRequests = chessState.pendingJoinRequests.filter(
+    (r) => r.requestId !== requestId,
+  );
+
+  saveChessState();
+  clearClubJoinRequestsFromCloud([requestId]);
+  renderChessHubView();
+  showChessToast(
+    `🎉 Approved "${req.callsign}" (${HOUSES[req.house]?.name || req.house}) onto the Club Ladder!`,
+    'success',
+  );
+};
+
+window.declineClubJoinRequest = function (requestId) {
+  if (chessState.userRole !== 'teacher') return;
+  chessState.processedJoinRequestIds = [
+    ...(chessState.processedJoinRequestIds || []),
+    requestId,
+  ].slice(-200);
+  chessState.pendingJoinRequests = (chessState.pendingJoinRequests || []).filter(
+    (r) => r.requestId !== requestId,
+  );
+  clearClubJoinRequestsFromCloud([requestId]);
+  renderChessHubView();
+  showChessToast('Declined join request.', 'info');
+};
 
 function renderPendingXpClaimsBanner() {
   const claims = chessState.pendingXpClaims || [];
