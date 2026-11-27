@@ -203,6 +203,13 @@
           }
           var unitParam = (params.get('unit') || '').toLowerCase();
           var viewParam = (params.get('view') || '').toLowerCase();
+          var pathLower = (window.location.pathname || '').toLowerCase().replace(/\/+$/, '');
+          if (viewParam === 'chess' || pathLower === '/chess' || pathLower === '/chess-club') {
+            var curtainIcon = document.querySelector('#page-curtain .curtain-logo');
+            var curtainText = document.querySelector('#page-curtain .curtain-text');
+            if (curtainIcon) curtainIcon.className = 'fa-solid fa-chess-knight curtain-logo';
+            if (curtainText) curtainText.textContent = 'Loading Chess Club...';
+          }
           if (viewParam !== 'dashboard' && unitParam.indexOf('ks2_') === 0) {
             document.body.classList.add('ks2-mode-active');
           }
@@ -627,6 +634,19 @@
             >
               <i class="fa-solid fa-volume-high"></i>
               <span class="btn-text" id="voice-toggle-label">Voice: UK ♀</span>
+            </button>
+
+            <!-- SEND / Access-Arrangement Laptop Mode Toggle (Hidden on small mobile screens) -->
+            <button
+              type="button"
+              id="btn-laptop-mode"
+              class="header-tool-btn btn-laptop-mode"
+              aria-pressed="false"
+              title="Laptop Mode: show inline typing boxes &amp; export tools (saved privately on this device)"
+              aria-label="Toggle Laptop Mode"
+            >
+              <i class="fa-solid fa-laptop"></i>
+              <span class="btn-text" id="laptop-mode-label">Laptop</span>
             </button>
 
             <!-- Staff-Only 1-Click Class Link Copier (auto-attaches silent pupil pass) -->

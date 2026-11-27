@@ -1417,7 +1417,11 @@ export async function switchView(viewName, param = null, skipHistory = false, op
         m.style.display = 'none';
       }
     });
-    document.getElementById('page-curtain')?.classList.add('hidden');
+    // Keep the initial loading curtain up while an async view (e.g. Chess Club) replaces the SEO shell;
+    // main.js lifts #page-curtain on the next paint frame right after await switchView() finishes.
+    if (!document.querySelector('#main-content .seo-prerender-directory')) {
+      document.getElementById('page-curtain')?.classList.add('hidden');
+    }
     document.querySelector('.sidebar-overlay')?.classList.remove('active');
     document.getElementById('app-sidebar')?.classList.remove('mobile-open');
     if (document.body) {
