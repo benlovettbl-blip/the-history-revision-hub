@@ -18,7 +18,7 @@ const LAB_CATALOG = {
     subtitle:
       'Rewind your own Solent coastline 940 years, catch Sweating Reeve Odo hiding Fareham’s 5 watermills, rule on King Edward’s Viking tax break, decode Stubbington’s real 1086 Latin parchment, and spot what Domesday missed!',
     coverImg: '/images/arcade/domesday/cover_secret_of_stubitone.webp',
-    badges: ['Full-Screen Touch Ready', '60 FPS Living Scenes', 'Acted Studio Voices', 'Open Domesday 1086 Data'],
+    badges: ['7 Bite-Sized Stages', '11 Character Voices', 'School-Laptop Friendly', '1086 Domesday Data'],
     loadMount: () => import('./domesday_stubitone.js').then((m) => m.mountDomesdayStubitone),
   },
   'ks2_ww2:lesson_2:2': {
@@ -124,15 +124,15 @@ export async function openInteractiveClassroomLab(labId, preferFullscreen = true
 
   const onKeyDown = (e) => {
     if (e.key === 'Escape') {
-      if (!preferFullscreen) {
-        const innerFsBtn = modal.querySelector('.ww2-shell.ww2-is-fullscreen #ww2-fs-btn, .dst-shell.dst-is-fullscreen #dst-fs-btn');
-        if (innerFsBtn) {
-          e.preventDefault();
-          innerFsBtn.click();
-          return;
-        }
+      const innerFsBtn = modal.querySelector(
+        '.ww2-shell.ww2-is-fullscreen #ww2-fs-btn, .dst-shell.dst-is-fullscreen #dst-fs-btn',
+      );
+      if (innerFsBtn) {
+        e.preventDefault();
+        innerFsBtn.click();
+        return;
       }
-      closeModal();
+      // Never auto-destroy an active game on accidental Esc press once out of fullscreen — pupils use Close button!
     }
   };
 
@@ -158,9 +158,7 @@ export async function openInteractiveClassroomLab(labId, preferFullscreen = true
   };
 
   window.addEventListener('keydown', onKeyDown);
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal && !preferFullscreen) closeModal();
-  });
+  // Intentional safety guard: never close the game on stray backdrop mis-clicks around the 1180px frame!
 
   if (preferFullscreen && modal.requestFullscreen && !document.fullscreenElement) {
     modal.requestFullscreen().catch(() => {});

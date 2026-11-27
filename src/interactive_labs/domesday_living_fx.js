@@ -51,23 +51,64 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
   const reducedMotionQuery =
     typeof window !== 'undefined' ? window.matchMedia?.('(prefers-reduced-motion: reduce)') : null;
 
+  const lowSpecDevice =
+    typeof navigator !== 'undefined' &&
+    ((typeof navigator.hardwareConcurrency === 'number' && navigator.hardwareConcurrency <= 4) ||
+      (typeof navigator.deviceMemory === 'number' && navigator.deviceMemory <= 4));
+  let liteMode = lowSpecDevice;
+  let slowFrameStreak = 0;
+
+  // Pre-baked 64x64 offscreen torch halo sprite (eliminates 60-120 createRadialGradient calls/sec on school laptops!)
+  const haloSprite = typeof document !== 'undefined' ? document.createElement('canvas') : null;
+  if (haloSprite) {
+    haloSprite.width = 64;
+    haloSprite.height = 64;
+    const hctx = haloSprite.getContext('2d');
+    if (hctx) {
+      const hg = hctx.createRadialGradient(32, 32, 2, 32, 32, 32);
+      hg.addColorStop(0, 'rgba(251, 191, 36, 0.38)');
+      hg.addColorStop(0.5, 'rgba(234, 88, 12, 0.14)');
+      hg.addColorStop(1, 'rgba(234, 88, 12, 0)');
+      hctx.fillStyle = hg;
+      hctx.fillRect(0, 0, 64, 64);
+    }
+  }
+
   // Scene-specific state pools
   let lightningBolt = null;
   let nextBoltAt = performance.now() + 2400;
 
-  const quillSparks = Array.from({ length: 18 }, () => ({
+  const quillSparks = Array.from({ length: lowSpecDevice ? 10 : 16 }, () => ({
     prog: Math.random(),
     ang: Math.random() * Math.PI * 2,
     dist: 6 + Math.random() * 28,
     r: 1 + Math.random() * 2.2,
   }));
 
-  const squallDrops = Array.from({ length: presetKey === 'swamp' ? 75 : 0 }, () => ({
-    x: Math.random(),
-    y: Math.random(),
-    len: 12 + Math.random() * 15,
-    spd: 0.018 + Math.random() * 0.012,
-  }));
+  const squallDrops = Array.from(
+    { length: presetKey === 'swamp' ? (lowSpecDevice ? 34 : 60) : 0 },
+    () => ({
+      x: Math.random(),
+      y: Math.random(),
+      len: 12 + Math.random() * 15,
+      spd: 0.018 + Math.random() * 0.012,
+    }),
+  );
+
+  const victoryRibbons = Array.from(
+    { length: presetKey === 'victory_confetti' ? (lowSpecDevice ? 22 : 42) : 0 },
+    (_, i) => ({
+      x: Math.random(),
+      y: Math.random(),
+      vy: 0.004 + Math.random() * 0.005,
+      vx: (Math.random() - 0.5) * 0.002,
+      rot: Math.random() * Math.PI * 2,
+      vrot: (Math.random() - 0.5) * 0.09,
+      w: 5 + Math.random() * 5,
+      h: 3 + Math.random() * 4,
+      color: ['#fde047', '#f59e0b', '#ef4444', '#22c55e', '#38bdf8'][i % 5],
+    }),
+  );
 
   const marshBubbles = Array.from({ length: presetKey === 'swamp' ? 9 : 0 }, () => ({
     rx: 0.28 + Math.random() * 0.48,
@@ -138,7 +179,7 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     if (!containerEl.isConnected) return;
     const rect = containerEl.getBoundingClientRect();
     if (rect.width > 20 && rect.height > 20) {
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const dpr = Math.min(window.devicePixelRatio || 1, liteMode ? 1 : 1.25);
       width = Math.round(rect.width);
       height = Math.round(rect.height);
       canvas.width = Math.round(width * dpr);
@@ -154,12 +195,12 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
 
   const imgEl = containerEl.querySelector('.domesday-diorama-img');
   const onPointerMove = (e) => {
-    if (!imgEl || reducedMotionQuery?.matches) return;
+    if (!imgEl || liteMode || reducedMotionQuery?.matches) return;
     const rect = containerEl.getBoundingClientRect();
     if (!rect.width || !rect.height) return;
     const nx = (e.clientX - rect.left) / rect.width - 0.5;
     const ny = (e.clientY - rect.top) / rect.height - 0.5;
-    imgEl.style.transform = `scale(1.024) translate(${(-nx * 6).toFixed(1)}px, ${(-ny * 4).toFixed(1)}px)`;
+    imgEl.style.transform = `scale(1.02) translate(${(-nx * 5).toFixed(1)}px, ${(-ny * 3.5).toFixed(1)}px)`;
   };
   containerEl.addEventListener('pointermove', onPointerMove, { passive: true });
 
@@ -168,21 +209,20 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     const ty = (tyPct / 100) * height;
     const flick = 0.88 + Math.sin(t * 12 + seed) * 0.1 + Math.cos(t * 19 + seed) * 0.05;
     const haloR = Math.max(36, width * 0.1 * scale) * flick;
-    const g = ctx.createRadialGradient(tx, ty, 2, tx, ty, haloR);
-    g.addColorStop(0, 'rgba(251, 191, 36, 0.38)');
-    g.addColorStop(0.5, 'rgba(234, 88, 12, 0.14)');
-    g.addColorStop(1, 'rgba(234, 88, 12, 0)');
-    ctx.fillStyle = g;
-    ctx.beginPath();
-    ctx.arc(tx, ty, haloR, 0, Math.PI * 2);
-    ctx.fill();
+    if (haloSprite) {
+      ctx.drawImage(haloSprite, tx - haloR, ty - haloR, haloR * 2, haloR * 2);
+    }
 
     for (let k = 0; k < 3; k++) {
       const sway = Math.sin(t * (8 + k * 3) + k + seed) * 4.5 * scale;
       const fh = (15 + k * 5) * scale * flick;
       const fw = (8 - k * 1.8) * scale;
       ctx.fillStyle =
-        k === 2 ? 'rgba(254, 249, 195, 0.8)' : k === 1 ? 'rgba(251, 191, 36, 0.62)' : 'rgba(234, 88, 12, 0.45)';
+        k === 2
+          ? 'rgba(254, 249, 195, 0.8)'
+          : k === 1
+            ? 'rgba(251, 191, 36, 0.62)'
+            : 'rgba(234, 88, 12, 0.45)';
       ctx.beginPath();
       ctx.moveTo(tx - fw, ty + 3);
       ctx.quadraticCurveTo(tx + sway, ty - fh, tx + fw, ty + 3);
@@ -195,7 +235,8 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     // Subtle cheeky wiggling green turnip-leaf tuft for keen-eyed Year 7 cameo hunters!
     const bx = (xPct / 100) * width;
     const by = (yPct / 100) * height;
-    const wiggle = Math.sin(t * 3.2) * 0.18 + (Math.sin(t * 0.9) > 0.85 ? Math.sin(t * 22) * 0.25 : 0);
+    const wiggle =
+      Math.sin(t * 3.2) * 0.18 + (Math.sin(t * 0.9) > 0.85 ? Math.sin(t * 22) * 0.25 : 0);
     ctx.save();
     ctx.translate(bx, by);
     ctx.rotate(wiggle);
@@ -235,15 +276,19 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     }
 
     if (lightningBolt && lightningBolt.alpha > 0.02) {
-      ctx.fillStyle = `rgba(165, 243, 252, ${(lightningBolt.alpha * 0.16).toFixed(3)})`;
+      ctx.fillStyle = `rgba(165, 243, 252, ${(lightningBolt.alpha * 0.15).toFixed(3)})`;
       ctx.fillRect(0, 0, width, height * 0.45);
       ctx.save();
-      ctx.strokeStyle = `rgba(224, 242, 254, ${lightningBolt.alpha.toFixed(2)})`;
-      ctx.shadowColor = '#38bdf8';
-      ctx.shadowBlur = 14;
-      ctx.lineWidth = 2.4;
+      // Two-stroke glow instead of ctx.shadowBlur (avoids GPU stalls on Intel HD school laptops!)
+      ctx.strokeStyle = `rgba(56, 189, 248, ${(lightningBolt.alpha * 0.35).toFixed(2)})`;
+      ctx.lineWidth = 7;
       ctx.beginPath();
-      lightningBolt.pts.forEach((p, idx) => (idx === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y)));
+      lightningBolt.pts.forEach((p, idx) =>
+        idx === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y),
+      );
+      ctx.stroke();
+      ctx.strokeStyle = `rgba(224, 242, 254, ${lightningBolt.alpha.toFixed(2)})`;
+      ctx.lineWidth = 2.2;
       ctx.stroke();
       ctx.restore();
       lightningBolt.alpha *= Math.pow(0.84, dt60);
@@ -264,7 +309,8 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       const sx = qx + Math.cos(sp.ang + t * 0.8) * (sp.dist + sp.prog * 22);
       const sy = qy + Math.sin(sp.ang + t * 0.8) * (sp.dist * 0.6) + sp.prog * 18;
       const a = Math.sin(sp.prog * Math.PI);
-      ctx.fillStyle = i % 2 ? `rgba(254, 249, 195, ${a.toFixed(2)})` : `rgba(251, 191, 36, ${a.toFixed(2)})`;
+      ctx.fillStyle =
+        i % 2 ? `rgba(254, 249, 195, ${a.toFixed(2)})` : `rgba(251, 191, 36, ${a.toFixed(2)})`;
       ctx.beginPath();
       ctx.arc(sx, sy, sp.r, 0, Math.PI * 2);
       ctx.fill();
@@ -345,7 +391,7 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     drawTorchFlame(77.8, 46.2, 1.15, t, 2);
     const gx = 0.808 * width;
     const gy = 0.122 * height;
-    if ((t % 3.1) < 0.16) {
+    if (t % 3.1 < 0.16) {
       ctx.fillStyle = '#e2e8f0';
       ctx.beginPath();
       ctx.arc(gx, gy, 3.4, 0, Math.PI * 2);
@@ -448,13 +494,9 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     const rx = 0.355 * width;
     const ry = 0.575 * height;
     const rr = width * 0.055 * (0.88 + Math.sin(t * 3.2) * 0.14);
-    const rg = ctx.createRadialGradient(rx, ry, 2, rx, ry, rr);
-    rg.addColorStop(0, 'rgba(253, 224, 71, 0.38)');
-    rg.addColorStop(1, 'rgba(253, 224, 71, 0)');
-    ctx.fillStyle = rg;
-    ctx.beginPath();
-    ctx.arc(rx, ry, rr, 0, Math.PI * 2);
-    ctx.fill();
+    if (haloSprite) {
+      ctx.drawImage(haloSprite, rx - rr, ry - rr, rr * 2, rr * 2);
+    }
 
     drawTorchFlame(43.3, 22.8, 1.25, t, 3);
 
@@ -595,14 +637,25 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
     const sy = 0.05 * height;
     for (let r = 0; r < 4; r++) {
       const ang = 0.22 + r * 0.16 + Math.sin(t * 0.4 + r) * 0.02;
-      const grad = ctx.createLinearGradient(sx, sy, sx + Math.cos(ang) * width * 0.65, sy + Math.sin(ang) * height * 0.7);
+      const grad = ctx.createLinearGradient(
+        sx,
+        sy,
+        sx + Math.cos(ang) * width * 0.65,
+        sy + Math.sin(ang) * height * 0.7,
+      );
       grad.addColorStop(0, 'rgba(254, 243, 199, 0.16)');
       grad.addColorStop(1, 'rgba(254, 243, 199, 0)');
       ctx.fillStyle = grad;
       ctx.beginPath();
       ctx.moveTo(sx, sy);
-      ctx.lineTo(sx + Math.cos(ang - 0.05) * width * 0.7, sy + Math.sin(ang - 0.05) * height * 0.75);
-      ctx.lineTo(sx + Math.cos(ang + 0.05) * width * 0.7, sy + Math.sin(ang + 0.05) * height * 0.75);
+      ctx.lineTo(
+        sx + Math.cos(ang - 0.05) * width * 0.7,
+        sy + Math.sin(ang - 0.05) * height * 0.75,
+      );
+      ctx.lineTo(
+        sx + Math.cos(ang + 0.05) * width * 0.7,
+        sy + Math.sin(ang + 0.05) * height * 0.75,
+      );
       ctx.closePath();
       ctx.fill();
     }
@@ -707,7 +760,18 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       return;
     }
 
-    const dt60 = lastTs ? Math.min(2.5, Math.max(0.2, ((ts - lastTs) / 1000) * 60)) : 1;
+    const frameMs = lastTs ? ts - lastTs : 16.6;
+    if (!liteMode && frameMs > 28 && frameMs < 250) {
+      slowFrameStreak += 1;
+      if (slowFrameStreak >= 14) {
+        liteMode = true;
+        if (imgEl) imgEl.style.transform = '';
+      }
+    } else if (frameMs < 22) {
+      slowFrameStreak = 0;
+    }
+
+    const dt60 = lastTs ? Math.min(2.5, Math.max(0.2, (frameMs / 1000) * 60)) : 1;
     lastTs = ts;
 
     const t = ts * 0.001;
@@ -723,6 +787,24 @@ export function mountLivingDioramaFX(containerEl, presetKey = 'cover') {
       else if (presetKey === 'assize') renderAssizeScene(t, dt60);
       else if (presetKey === 'stubbington_hut') renderStubbingtonHutScene(t, dt60);
       else if (presetKey === 'servi_plough') renderServiPloughScene(t, dt60);
+      else if (presetKey === 'victory_confetti') {
+        victoryRibbons.forEach((r) => {
+          r.y += r.vy * dt60;
+          r.x += (r.vx + Math.sin(t * 2 + r.rot) * 0.0012) * dt60;
+          r.rot += r.vrot * dt60;
+          if (r.y > 1.06) {
+            r.y = -0.05;
+            r.x = Math.random();
+          }
+          ctx.save();
+          ctx.translate(r.x * width, r.y * height);
+          ctx.rotate(r.rot);
+          ctx.fillStyle = r.color;
+          ctx.globalAlpha = 0.85;
+          ctx.fillRect(-r.w / 2, -r.h / 2, r.w, r.h);
+          ctx.restore();
+        });
+      }
     }
 
     // Interactive Tap-Burst Particles (dt60 frame-rate normalized)

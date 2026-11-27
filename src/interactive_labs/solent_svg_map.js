@@ -11,6 +11,7 @@ export function renderSolentGisSvgHTML({
   mode = 'swamp',
   rewound1086 = false,
   selectedPinId = null,
+  testedPinIds = new Set(),
   xraySplitPct = 50,
   selectedManorId = 'stubbington',
   targetTapManorMode = false,
@@ -234,8 +235,9 @@ export function renderSolentGisSvgHTML({
           ? pins
               .map((p) => {
                 const isSel = selectedPinId === p.id;
-                const vanished = rewound1086 && !p.existed1086;
-                const survived = rewound1086 && p.existed1086;
+                const isTested = testedPinIds && testedPinIds.has(p.id);
+                const vanished = isTested && !p.existed1086;
+                const survived = isTested && p.existed1086;
                 const badgeFill = vanished
                   ? '#dc2626'
                   : survived
@@ -243,7 +245,7 @@ export function renderSolentGisSvgHTML({
                     : isSel
                       ? '#f59e0b'
                       : '#0f172a';
-                const labelText = rewound1086 && p.domesdayName ? p.domesdayName : p.modernName;
+                const labelText = isTested && p.domesdayName ? p.domesdayName : p.modernName;
                 const pillW = Math.max(82, labelText.length * 6.8 + 20);
                 return `
                   <g class="solent-home-pin" data-pin-id="${p.id}" transform="translate(${p.x}, ${p.y})" style="cursor:pointer;">
@@ -254,8 +256,8 @@ export function renderSolentGisSvgHTML({
                       ${vanished ? '🌊' : survived ? '🏠' : '📍'}
                     </text>
                     <g transform="translate(0, 29)" pointer-events="none">
-                      <rect x="${-pillW / 2}" y="-9.5" width="${pillW}" height="19" rx="6" fill="rgba(15,23,42,0.92)" stroke="${isSel ? '#fde047' : '#64748b'}" stroke-width="1.3"/>
-                      <text y="3.5" text-anchor="middle" font-size="10" font-weight="800" fill="#ffffff">${labelText}</text>
+                      <rect x="${-pillW / 2}" y="-9.5" width="${pillW}" height="19" rx="6" fill="rgba(15,23,42,0.92)" stroke="${isSel ? '#fde047' : isTested ? '#4ade80' : '#64748b'}" stroke-width="1.3"/>
+                      <text y="3.5" text-anchor="middle" font-size="10" font-weight="800" fill="#ffffff">${isTested ? '✓ ' : ''}${labelText}</text>
                     </g>
                   </g>
                 `;
@@ -264,20 +266,23 @@ export function renderSolentGisSvgHTML({
           : ''
       }
 
-      <!-- BEAT 2: DRAGGABLE 1066 <-> 1086 X-RAY HANDLE (Handle positioned at y=492 in open Solent water; top badges clamped inside viewBox!) -->
+      <!-- BEAT 2: DRAGGABLE 1066 <-> 1086 X-RAY HANDLE (Line is pointer-events:none so Titchfield & all shields are 100% clickable at EVERY slider position!) -->
       ${
         mode === 'xray'
           ? `
-        <g id="solent-xray-divider" transform="translate(${splitX}, 0)" style="cursor:ew-resize;">
-          <line x1="0" y1="0" x2="0" y2="540" stroke="#fde047" stroke-width="3.5"/>
+        <g id="solent-xray-divider" transform="translate(${splitX}, 0)" pointer-events="none">
+          <line x1="0" y1="0" x2="0" y2="540" stroke="#fde047" stroke-width="3.5" pointer-events="none"/>
           <g transform="translate(${clampedLabelX}, 0)" pointer-events="none">
             <rect x="-92" y="10" width="84" height="22" rx="6" fill="#14532d" stroke="#86efac" stroke-width="1.5"/>
             <text x="-50" y="25" text-anchor="middle" font-size="10.5" font-weight="900" fill="#dcfce7">◄ 1066 SAXON</text>
             <rect x="8" y="10" width="90" height="22" rx="6" fill="#7f1d1d" stroke="#fca5a5" stroke-width="1.5"/>
             <text x="53" y="25" text-anchor="middle" font-size="10.5" font-weight="900" fill="#fee2e2">1086 NORMAN ►</text>
           </g>
-          <circle cx="0" cy="492" r="21" fill="#f59e0b" stroke="#0f172a" stroke-width="3"/>
-          <text x="0" y="497" text-anchor="middle" font-size="13" font-weight="900" fill="#0f172a">⇄</text>
+          <g class="solent-xray-handle" style="cursor:ew-resize;pointer-events:all;">
+            <circle cx="0" cy="492" r="32" fill="transparent"/>
+            <circle cx="0" cy="492" r="21" fill="#f59e0b" stroke="#0f172a" stroke-width="3"/>
+            <text x="0" y="497" text-anchor="middle" font-size="13" font-weight="900" fill="#0f172a" pointer-events="none">⇄</text>
+          </g>
         </g>
       `
           : ''

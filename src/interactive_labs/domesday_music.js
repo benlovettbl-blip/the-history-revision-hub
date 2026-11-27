@@ -1,69 +1,464 @@
 /**
- * The Secret of Stubitone™ (1086 Domesday Lab) — Acoustic Music, Foley & Studio Voice Engine
+ * The Secret of Stubitone™ v3 (1086 Domesday Lab — Year 7 Playtest Edition)
+ * 8-Movement Medieval Score, Zero-Latency Foley, Studio Voice & Class Cast Audio Director
  *
- * 1. Procedural 1086 Medieval Chamber Score (`overture` | `assize` | `solemn`):
- *    - `overture`: Jaunty LucasArts-meets-1086 plucked gut-string Lute, breathy Wooden Recorder,
- *      and soft leather Tabor frame-drum in D Dorian.
- *    - `assize`: Tense Royal Assize Hurdy-Gurdy fifth drone (D2+A2) with low courtroom timpani pulse.
- *    - `solemn`: Quiet, dignified solo medieval harp & wind for Gyrth's (`servus`) historical testimony.
- * 2. Visceral Zero-Latency Classroom Foley:
- *    - Mud squelch, angry seagull squawk, snorting pigs, frantic chicken bawk, spinning waterwheel splash,
- *      rattling saint-bones + monastic fifth chord, Norman war-horn blast, and iron wax-seal slam.
- * 3. Pre-baked Gemini 3.8 Flash TTS Voiceover Player (`/audio/labs/domesday/<id>.mp3`) with smooth music ducking.
+ * Upgrades from Year 7 Classroom Playtest:
+ *  1. 8 Distinct Stage Soundtracks (no more repeating one 7.5s loop across 6 tabs!):
+ *     - `overture`        (Cover):          1086 Exchequer Overture (D-Dorian plucked lute, recorder & tabor)
+ *     - `marsh_shanty`    (Stage 1 Towns):  Solent Salt-Marsh & Sea-Wind (rolling harp arpeggios & sea-flute)
+ *     - `millwheel_jig`   (Stage 2A Hunt):  Wallington Mill-Wheel Jig (brisk G-Mixolydian country dance)
+ *     - `solemn`          (Stage 2B Gyrth): Dawn Plough Elegy (quiet solo medieval harp)
+ *     - `norman_march`    (Stage 3 Wipeout):1066 Norman Conquest March (marching war-tabor & low brass fifths)
+ *     - `assize`          (Stage 4 Trial):  Winchester Royal Assize Hall (hurdy-gurdy drone & timpani)
+ *     - `hearth_pastoral` (Stage 5 Hut #3): Edith's Cottage Hearth (warm F-major gut-lute & alto recorder)
+ *     - `scriptorium`     (Stage 6 Latin):  Folio 46v Scriptorium Chimes (delicate monastery bells & harp)
+ *     - `victory_jubilee` (Stage 7 Win):    King William's Great Seal Jubilee (D-major brass & abbey bells!)
+ *  2. School Laptop Audio CPU Guard:
+ *     - Compact 0.55s mono reverb impulse (85% lighter than 1.65s stereo) and automatic dry-routing
+ *       on <=4-thread Chromebooks/laptops so low-spec devices never stutter or crash.
+ *  3. Stop-on-Transition & Class Voice-Acting Pack (`studio` | `class_cast`):
+ *     - Supports local `IndexedDB` browser mic recordings (`Class Drama Booth`) + optional static
+ *       `/audio/labs/domesday/class_cast/<id>.mp3` files, falling back seamlessly to Studio TTS.
  */
 
 import { DOMESDAY_VO_CLIPS } from './domesday_vo_manifest.js';
 
 const STORAGE_MUTE_KEY = 'hh_domesday_audio_muted_v1';
+const STORAGE_VOICE_PACK_KEY = 'hh_domesday_voice_pack_v1';
+const IDB_NAME = 'hh_domesday_class_voices_db_v1';
+const IDB_STORE = 'recordings';
 
-// D Dorian scale frequencies (Hz)
+// Concert & Medieval Modal Pitches (Hz)
 const N = {
+  C2: 65.41,
   D2: 73.42,
+  F2: 87.31,
+  G2: 98.0,
   A2: 110.0,
+  Bb2: 116.54,
+  C3: 130.81,
   D3: 146.83,
+  E3: 164.81,
   F3: 174.61,
+  Fs3: 185.0,
   G3: 196.0,
   A3: 220.0,
+  Bb3: 233.08,
   B3: 246.94,
   C4: 261.63,
+  Cs4: 277.18,
   D4: 293.66,
   E4: 329.63,
   F4: 349.23,
+  Fs4: 369.99,
   G4: 392.0,
   A4: 440.0,
+  Bb4: 466.16,
   B4: 493.88,
   C5: 523.25,
+  Cs5: 554.37,
   D5: 587.33,
+  E5: 659.25,
+  Fs5: 739.99,
 };
 
+export const DOMESDAY_TRACK_TITLES = {
+  overture: '1086 Exchequer Overture',
+  marsh_shanty: 'Solent Salt-Marsh Shanty',
+  millwheel_jig: 'Wallington Mill-Wheel Jig',
+  solemn: 'Dawn Plough Harp',
+  norman_march: '1066 Conquest War-Drums',
+  assize: 'Winchester Assize Drone',
+  hearth_pastoral: 'Stubbington Hearth Lute',
+  scriptorium: 'Winchester Scriptorium Bells',
+  victory_jubilee: 'Royal Great Seal Fanfare',
+};
+
+// 1. OVERTURE (Cover — D Dorian)
 const OVERTURE_LUTE = [
-  N.D3, N.A3, N.D4, N.F4,
-  N.C4, N.G3, N.C4, N.E4,
-  N.B3, N.G3, N.D4, N.G4,
-  N.A3, N.E3 || 164.81, N.A3, N.C4,
-  N.D3, N.A3, N.F4, N.D4,
-  N.G3, N.D4, N.G4, N.F4,
-  N.C4, N.G3, N.E4, N.C4,
-  N.D3, N.A3, N.D4, N.D3,
+  N.D3,
+  N.A3,
+  N.D4,
+  N.F4,
+  N.C4,
+  N.G3,
+  N.C4,
+  N.E4,
+  N.B3,
+  N.G3,
+  N.D4,
+  N.G4,
+  N.A3,
+  N.E3,
+  N.A3,
+  N.C4,
+  N.D3,
+  N.A3,
+  N.F4,
+  N.D4,
+  N.G3,
+  N.D4,
+  N.G4,
+  N.F4,
+  N.C4,
+  N.G3,
+  N.E4,
+  N.C4,
+  N.D3,
+  N.A3,
+  N.D4,
+  N.D3,
 ];
-
 const OVERTURE_RECORDER = [
-  N.D5, 0, N.C5, N.A4,
-  N.G4, N.A4, N.F4, 0,
-  N.G4, 0, N.A4, N.B4,
-  N.A4, 0, 0, 0,
-  N.D5, N.C5, N.A4, N.F4,
-  N.G4, N.B4, N.A4, N.G4,
-  N.F4, N.E4, N.D4, N.C4,
-  N.D4, 0, 0, 0,
+  N.D5,
+  0,
+  N.C5,
+  N.A4,
+  N.G4,
+  N.A4,
+  N.F4,
+  0,
+  N.G4,
+  0,
+  N.A4,
+  N.B4,
+  N.A4,
+  0,
+  0,
+  0,
+  N.D5,
+  N.C5,
+  N.A4,
+  N.F4,
+  N.G4,
+  N.B4,
+  N.A4,
+  N.G4,
+  N.F4,
+  N.E4,
+  N.D4,
+  N.C4,
+  N.D4,
+  0,
+  0,
+  0,
 ];
 
-const SOLEMN_HARP = [
-  N.D3, N.A3, N.F4, N.E4,
-  N.D4, N.A3, N.G3, N.A3,
-  N.C4, N.G3, N.E4, N.D4,
-  N.A3, N.F3, N.D3, 0,
+// 2. STAGE 1: MARSH SHANTY (Rolling A Aeolian / D Dorian coastal waves)
+const MARSH_HARP = [
+  N.D3,
+  N.A3,
+  N.D4,
+  N.E4,
+  N.F4,
+  N.D4,
+  N.A3,
+  0,
+  N.C3,
+  N.G3,
+  N.C4,
+  N.D4,
+  N.E4,
+  N.C4,
+  N.G3,
+  0,
+  N.Bb2,
+  N.F3,
+  N.Bb3,
+  N.D4,
+  N.C3,
+  N.G3,
+  N.C4,
+  N.E4,
+  N.D3,
+  N.A3,
+  N.D4,
+  N.F4,
+  N.E4,
+  N.C4,
+  N.A3,
+  0,
 ];
+const MARSH_FLUTE = [
+  N.A4,
+  0,
+  0,
+  N.G4,
+  N.F4,
+  0,
+  N.D4,
+  0,
+  N.E4,
+  0,
+  N.G4,
+  0,
+  N.A4,
+  0,
+  0,
+  0,
+  N.Bb4,
+  0,
+  N.A4,
+  N.G4,
+  N.E4,
+  0,
+  N.C4,
+  0,
+  N.D4,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+];
+
+// 3. STAGE 2A: MILLWHEEL JIG (Bouncy G Mixolydian waterwheel rhythm)
+const JIG_LUTE = [
+  N.G3,
+  N.D4,
+  N.B4,
+  N.D4,
+  N.G3,
+  N.D4,
+  N.F3,
+  N.C4,
+  N.A4,
+  N.C4,
+  N.F3,
+  N.C4,
+  N.C3,
+  N.G3,
+  N.E4,
+  N.G3,
+  N.D3,
+  N.A3,
+  N.G3,
+  N.B3,
+  N.D4,
+  N.G4,
+  N.D4,
+  0,
+];
+const JIG_RECORDER = [
+  N.G4,
+  N.A4,
+  N.B4,
+  N.D5,
+  N.B4,
+  N.G4,
+  N.F4,
+  N.G4,
+  N.A4,
+  N.C5,
+  N.A4,
+  N.F4,
+  N.E4,
+  N.G4,
+  N.C5,
+  N.B4,
+  N.A4,
+  N.Fs4,
+  N.G4,
+  0,
+  N.D4,
+  N.G4,
+  0,
+  0,
+];
+
+// 4. STAGE 2B: SOLEMN HARP (Gyrth's Dawn Plough)
+const SOLEMN_HARP = [
+  N.D3,
+  N.A3,
+  N.F4,
+  N.E4,
+  N.D4,
+  N.A3,
+  N.G3,
+  N.A3,
+  N.C4,
+  N.G3,
+  N.E4,
+  N.D4,
+  N.A3,
+  N.F3,
+  N.D3,
+  0,
+];
+
+// 5. STAGE 3: NORMAN CONQUEST MARCH (Driving war-drums & brass horn fifths)
+const MARCH_BASS = [N.D2, 0, N.D2, N.A2, N.C2, 0, N.C2, N.G2, N.Bb2, 0, N.F2, 0, N.A2, 0, N.A2, 0];
+const MARCH_HORN = [N.D3, 0, N.A3, N.D4, N.C4, 0, N.G3, 0, N.Bb3, 0, N.A3, N.G3, N.A3, 0, 0, 0];
+
+// 6. STAGE 5: EDITH'S HEARTH PASTORAL (Warm F-Major cottage lute & flute)
+const HEARTH_LUTE = [
+  N.F3,
+  N.C4,
+  N.A4,
+  N.C4,
+  N.Bb2,
+  N.F3,
+  N.D4,
+  N.F3,
+  N.D3,
+  N.A3,
+  N.F4,
+  N.A3,
+  N.C3,
+  N.G3,
+  N.E4,
+  N.C4,
+];
+const HEARTH_FLUTE = [N.A4, 0, N.C5, N.A4, N.Bb4, 0, N.F4, 0, N.A4, 0, N.G4, N.F4, N.G4, 0, 0, 0];
+
+// 7. STAGE 6: SCRIPTORIUM CHIMES (Quiet monastery harp & high bell harmonics)
+const SCRIPT_HARP = [
+  N.A3,
+  N.E4,
+  N.A4,
+  0,
+  N.G3,
+  N.D4,
+  N.G4,
+  0,
+  N.F3,
+  N.C4,
+  N.F4,
+  0,
+  N.E3,
+  N.B3,
+  N.E4,
+  0,
+];
+const SCRIPT_BELLS = [N.E5, 0, 0, 0, N.D5, 0, 0, 0, N.C5, 0, 0, 0, N.B4, 0, 0, 0];
+
+// 8. STAGE 7: VICTORY JUBILEE (Bright D-Major Royal Fanfare!)
+const VICTORY_BASS = [N.D3, 0, N.A2, 0, N.G2, 0, N.A2, 0, N.B2, 0, N.Fs3, 0, N.G2, 0, N.A2, 0];
+const VICTORY_TRUMPET = [
+  N.D4,
+  N.Fs4,
+  N.A4,
+  N.D5,
+  N.B4,
+  N.G4,
+  N.A4,
+  0,
+  N.D5,
+  N.Cs5,
+  N.B4,
+  N.A4,
+  N.B4,
+  N.Cs5,
+  N.D5,
+  0,
+];
+
+// ============================================================================
+// LOCAL BROWSER INDEXED-DB FOR YEAR 7 "CLASS DRAMA BOOTH" RECORDINGS
+// (100% local to device/smartboard — zero external uploads, zero GDPR risk)
+// ============================================================================
+function openVoiceDb() {
+  return new Promise((resolve, reject) => {
+    if (typeof indexedDB === 'undefined') {
+      resolve(null);
+      return;
+    }
+    try {
+      const req = indexedDB.open(IDB_NAME, 1);
+      req.onupgradeneeded = () => {
+        const db = req.result;
+        if (!db.objectStoreNames.contains(IDB_STORE)) {
+          db.createObjectStore(IDB_STORE);
+        }
+      };
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => reject(req.error);
+    } catch (err) {
+      resolve(null);
+    }
+  });
+}
+
+export async function saveClassVoiceRecording(clipId, blob) {
+  const db = await openVoiceDb();
+  if (!db) return false;
+  return new Promise((resolve) => {
+    const tx = db.transaction(IDB_STORE, 'readwrite');
+    tx.objectStore(IDB_STORE).put(blob, clipId);
+    tx.oncomplete = () => {
+      db.close();
+      resolve(true);
+    };
+    tx.onerror = () => {
+      db.close();
+      resolve(false);
+    };
+  });
+}
+
+export async function deleteClassVoiceRecording(clipId) {
+  const db = await openVoiceDb();
+  if (!db) return false;
+  return new Promise((resolve) => {
+    const tx = db.transaction(IDB_STORE, 'readwrite');
+    tx.objectStore(IDB_STORE).delete(clipId);
+    tx.oncomplete = () => {
+      db.close();
+      resolve(true);
+    };
+    tx.onerror = () => {
+      db.close();
+      resolve(false);
+    };
+  });
+}
+
+export async function clearAllClassVoiceRecordings() {
+  const db = await openVoiceDb();
+  if (!db) return false;
+  return new Promise((resolve) => {
+    const tx = db.transaction(IDB_STORE, 'readwrite');
+    tx.objectStore(IDB_STORE).clear();
+    tx.oncomplete = () => {
+      db.close();
+      resolve(true);
+    };
+    tx.onerror = () => {
+      db.close();
+      resolve(false);
+    };
+  });
+}
+
+export async function loadClassVoiceBlobMap() {
+  const map = new Map();
+  const db = await openVoiceDb();
+  if (!db) return map;
+  return new Promise((resolve) => {
+    const tx = db.transaction(IDB_STORE, 'readonly');
+    const store = tx.objectStore(IDB_STORE);
+    const req = store.openCursor();
+    req.onsuccess = (e) => {
+      const cursor = e.target.result;
+      if (cursor) {
+        if (cursor.value instanceof Blob) {
+          map.set(String(cursor.key), URL.createObjectURL(cursor.value));
+        }
+        cursor.continue();
+      }
+    };
+    tx.oncomplete = () => {
+      db.close();
+      resolve(map);
+    };
+    tx.onerror = () => {
+      db.close();
+      resolve(map);
+    };
+  });
+}
 
 export class DomesdayAudioDirector {
   constructor() {
@@ -83,14 +478,50 @@ export class DomesdayAudioDirector {
     this.onVoStateChange = null;
     this._voPausedByVisibility = false;
 
+    this.voicePack = 'studio'; // 'studio' | 'class_cast'
+    this.classBlobUrls = new Map();
+
     try {
       this.muted = localStorage.getItem(STORAGE_MUTE_KEY) === 'true';
+      const savedPack = localStorage.getItem(STORAGE_VOICE_PACK_KEY);
+      if (savedPack === 'class_cast' || savedPack === 'studio') {
+        this.voicePack = savedPack;
+      }
     } catch (_) {}
+
+    this.refreshClassRecordings();
 
     this._onVisibilityChange = () => this.handleVisibilityChange();
     if (typeof document !== 'undefined') {
       document.addEventListener('visibilitychange', this._onVisibilityChange);
     }
+  }
+
+  async refreshClassRecordings() {
+    for (const url of this.classBlobUrls.values()) {
+      try {
+        URL.revokeObjectURL(url);
+      } catch (_) {}
+    }
+    this.classBlobUrls = await loadClassVoiceBlobMap();
+    return this.classBlobUrls.size;
+  }
+
+  setVoicePack(pack) {
+    this.voicePack = pack === 'class_cast' ? 'class_cast' : 'studio';
+    try {
+      localStorage.setItem(STORAGE_VOICE_PACK_KEY, this.voicePack);
+    } catch (_) {}
+    return this.voicePack;
+  }
+
+  getActiveTrackTitle() {
+    if (this.muted) return 'Audio Muted';
+    return DOMESDAY_TRACK_TITLES[this.mode] || DOMESDAY_TRACK_TITLES.overture;
+  }
+
+  isVoicePlaying() {
+    return Boolean(this.activeVoAudio && !this.activeVoAudio.paused);
   }
 
   handleVisibilityChange() {
@@ -134,18 +565,27 @@ export class DomesdayAudioDirector {
       this.sfxBus = this.ctx.createGain();
       this.sfxBus.gain.value = 0.85;
 
-      // Warm medieval timber hall reverb
-      const reverb = this.createHallReverb(this.ctx, 1.65, 2.7);
-      const wet = this.ctx.createGain();
-      wet.gain.value = 0.34;
-      const dry = this.ctx.createGain();
-      dry.gain.value = 0.76;
+      const lowSpecCpu =
+        typeof navigator !== 'undefined' &&
+        typeof navigator.hardwareConcurrency === 'number' &&
+        navigator.hardwareConcurrency <= 4;
 
-      this.musicBus.connect(dry);
-      this.musicBus.connect(reverb);
-      reverb.connect(wet);
-      dry.connect(this.masterGain);
-      wet.connect(this.masterGain);
+      if (lowSpecCpu) {
+        // Direct zero-reverb routing on 2–4 core school Chromebooks/laptops
+        this.musicBus.connect(this.masterGain);
+      } else {
+        const reverb = this.createLightHallReverb(this.ctx, 0.55, 2.5);
+        const wet = this.ctx.createGain();
+        wet.gain.value = 0.24;
+        const dry = this.ctx.createGain();
+        dry.gain.value = 0.82;
+        this.musicBus.connect(dry);
+        this.musicBus.connect(reverb);
+        reverb.connect(wet);
+        dry.connect(this.masterGain);
+        wet.connect(this.masterGain);
+      }
+
       this.sfxBus.connect(this.masterGain);
       this.masterGain.connect(this.ctx.destination);
     }
@@ -156,17 +596,15 @@ export class DomesdayAudioDirector {
     return this.ctx;
   }
 
-  createHallReverb(ctx, durationSec, decay) {
+  createLightHallReverb(ctx, durationSec, decay) {
     const length = Math.floor(ctx.sampleRate * durationSec);
-    const impulse = ctx.createBuffer(2, length, ctx.sampleRate);
-    for (let ch = 0; ch < 2; ch++) {
-      const data = impulse.getChannelData(ch);
-      let last = 0;
-      for (let i = 0; i < length; i++) {
-        const white = Math.random() * 2 - 1;
-        last = last * 0.8 + white * 0.2;
-        data[i] = last * Math.pow(1 - i / length, decay);
-      }
+    const impulse = ctx.createBuffer(1, length, ctx.sampleRate);
+    const data = impulse.getChannelData(0);
+    let last = 0;
+    for (let i = 0; i < length; i++) {
+      const white = Math.random() * 2 - 1;
+      last = last * 0.8 + white * 0.2;
+      data[i] = last * Math.pow(1 - i / length, decay);
     }
     const conv = ctx.createConvolver();
     conv.buffer = impulse;
@@ -175,8 +613,13 @@ export class DomesdayAudioDirector {
 
   getMusicGainTarget() {
     if (this.muted || !this.musicEnabled) return 0.0001;
-    const base = this.mode === 'solemn' ? 0.11 : 0.15;
-    return this.isDucked ? base * 0.24 : base;
+    const base =
+      this.mode === 'solemn' || this.mode === 'scriptorium'
+        ? 0.105
+        : this.mode === 'victory_jubilee'
+          ? 0.165
+          : 0.14;
+    return this.isDucked ? base * 0.22 : base;
   }
 
   syncGains() {
@@ -191,24 +634,12 @@ export class DomesdayAudioDirector {
     try {
       localStorage.setItem(STORAGE_MUTE_KEY, String(this.muted));
     } catch (_) {}
-    if (this.muted && this.activeVoAudio) {
-      try {
-        this.activeVoAudio.pause();
-      } catch (_) {}
+    if (this.muted) {
+      this.stopVoice();
     }
     this.ensureContext();
     this.syncGains();
     return this.muted;
-  }
-
-  toggleMusic() {
-    this.musicEnabled = !this.musicEnabled;
-    this.ensureContext();
-    this.syncGains();
-    if (this.musicEnabled && !this.isPlaying) {
-      this.startMusic(this.mode);
-    }
-    return this.musicEnabled;
   }
 
   setMode(newMode) {
@@ -229,7 +660,7 @@ export class DomesdayAudioDirector {
     this.isPlaying = true;
     this.syncGains();
 
-    const stepMs = 235;
+    const stepMs = 230;
     this.timerId = setInterval(() => {
       if (typeof document !== 'undefined' && document.hidden) return;
       if (!this.ctx || this.muted || !this.musicEnabled) return;
@@ -244,26 +675,61 @@ export class DomesdayAudioDirector {
     const now = ctx.currentTime;
 
     if (this.mode === 'overture') {
-      const luteFreq = OVERTURE_LUTE[idx % OVERTURE_LUTE.length];
-      if (luteFreq) this.pluckLute(luteFreq, now, 0.34, 0.26);
-
-      const recFreq = OVERTURE_RECORDER[idx % OVERTURE_RECORDER.length];
-      if (recFreq && idx >= 8) this.blowRecorder(recFreq, now, 0.22, 0.12);
-
-      if (idx % 4 === 0) this.hitTabor(now, 0.16, 108);
-      else if (idx % 4 === 2) this.hitTabor(now, 0.08, 165);
-    } else if (this.mode === 'assize') {
-      if (idx % 8 === 0) {
-        this.bowDrone(N.D2, now, 1.85, 0.22);
-        this.bowDrone(N.A2, now, 1.85, 0.14);
-      }
-      if (idx % 4 === 0) this.hitTabor(now, 0.22, 82);
-      const motif = [N.D3, 0, N.F3, 0, N.A3, 0, N.G3, N.F3][idx % 8];
-      if (motif) this.pluckLute(motif, now, 0.3, 0.18);
+      const lute = OVERTURE_LUTE[idx % OVERTURE_LUTE.length];
+      if (lute) this.pluckLute(lute, now, 0.34, 0.25);
+      const rec = OVERTURE_RECORDER[idx % OVERTURE_RECORDER.length];
+      if (rec && idx >= 8) this.blowRecorder(rec, now, 0.22, 0.11);
+      if (idx % 4 === 0) this.hitTabor(now, 0.15, 108);
+      else if (idx % 4 === 2) this.hitTabor(now, 0.07, 165);
+    } else if (this.mode === 'marsh_shanty') {
+      const harp = MARSH_HARP[idx % MARSH_HARP.length];
+      if (harp) this.pluckLute(harp, now, 0.45, 0.2);
+      const fl = MARSH_FLUTE[idx % MARSH_FLUTE.length];
+      if (fl) this.blowRecorder(fl, now, 0.4, 0.11);
+      if (idx % 8 === 0) this.bowDrone(N.D2, now, 1.6, 0.12);
+    } else if (this.mode === 'millwheel_jig') {
+      const lute = JIG_LUTE[idx % JIG_LUTE.length];
+      if (lute) this.pluckLute(lute, now, 0.26, 0.24);
+      const rec = JIG_RECORDER[idx % JIG_RECORDER.length];
+      if (rec) this.blowRecorder(rec, now, 0.2, 0.12);
+      if (idx % 3 === 0) this.hitTabor(now, 0.14, 125);
     } else if (this.mode === 'solemn') {
       if (idx % 2 === 0) {
         const harpFreq = SOLEMN_HARP[(idx / 2) % SOLEMN_HARP.length];
         if (harpFreq) this.pluckLute(harpFreq, now, 0.65, 0.18);
+      }
+    } else if (this.mode === 'norman_march') {
+      const bass = MARCH_BASS[idx % MARCH_BASS.length];
+      if (bass) this.bowDrone(bass, now, 0.36, 0.22);
+      const horn = MARCH_HORN[idx % MARCH_HORN.length];
+      if (horn) this.blowBrass(horn, now, 0.38, 0.16);
+      if (idx % 2 === 0) this.hitTabor(now, idx % 4 === 0 ? 0.22 : 0.11, idx % 4 === 0 ? 86 : 148);
+    } else if (this.mode === 'assize') {
+      if (idx % 8 === 0) {
+        this.bowDrone(N.D2, now, 1.8, 0.2);
+        this.bowDrone(N.A2, now, 1.8, 0.13);
+      }
+      if (idx % 4 === 0) this.hitTabor(now, 0.2, 82);
+      const motif = [N.D3, 0, N.F3, 0, N.A3, 0, N.G3, N.F3][idx % 8];
+      if (motif) this.pluckLute(motif, now, 0.3, 0.17);
+    } else if (this.mode === 'hearth_pastoral') {
+      const lute = HEARTH_LUTE[idx % HEARTH_LUTE.length];
+      if (lute) this.pluckLute(lute, now, 0.42, 0.21);
+      const fl = HEARTH_FLUTE[idx % HEARTH_FLUTE.length];
+      if (fl) this.blowRecorder(fl, now, 0.34, 0.11);
+    } else if (this.mode === 'scriptorium') {
+      const harp = SCRIPT_HARP[idx % SCRIPT_HARP.length];
+      if (harp) this.pluckLute(harp, now, 0.52, 0.18);
+      const bell = SCRIPT_BELLS[idx % SCRIPT_BELLS.length];
+      if (bell) this.ringBell(bell, now, 0.85, 0.09);
+    } else if (this.mode === 'victory_jubilee') {
+      const bass = VICTORY_BASS[idx % VICTORY_BASS.length];
+      if (bass) this.pluckLute(bass, now, 0.36, 0.24);
+      const tr = VICTORY_TRUMPET[idx % VICTORY_TRUMPET.length];
+      if (tr) this.blowBrass(tr, now, 0.28, 0.16);
+      if (idx % 4 === 0) {
+        this.hitTabor(now, 0.18, 112);
+        this.ringBell(idx % 8 === 0 ? N.D5 : N.Fs5, now, 0.65, 0.08);
       }
     }
   }
@@ -276,7 +742,7 @@ export class DomesdayAudioDirector {
     osc.type = 'triangle';
     osc.frequency.setValueAtTime(freq, start);
     filt.type = 'lowpass';
-    filt.frequency.setValueAtTime(freq * 4.2, start);
+    filt.frequency.setValueAtTime(freq * 4.0, start);
     filt.frequency.exponentialRampToValueAtTime(freq * 1.4, start + dur);
     gain.gain.setValueAtTime(0.001, start);
     gain.gain.linearRampToValueAtTime(vol, start + 0.012);
@@ -304,6 +770,40 @@ export class DomesdayAudioDirector {
     osc.stop(start + dur + 0.02);
   }
 
+  blowBrass(freq, start, dur, vol) {
+    const ctx = this.ctx;
+    const osc = ctx.createOscillator();
+    const filt = ctx.createBiquadFilter();
+    const gain = ctx.createGain();
+    osc.type = 'sawtooth';
+    osc.frequency.setValueAtTime(freq * 0.985, start);
+    osc.frequency.linearRampToValueAtTime(freq, start + 0.035);
+    filt.type = 'lowpass';
+    filt.frequency.setValueAtTime(freq * 3.1, start);
+    gain.gain.setValueAtTime(0.001, start);
+    gain.gain.linearRampToValueAtTime(vol, start + 0.03);
+    gain.gain.exponentialRampToValueAtTime(0.001, start + dur);
+    osc.connect(filt);
+    filt.connect(gain);
+    gain.connect(this.musicBus);
+    osc.start(start);
+    osc.stop(start + dur + 0.03);
+  }
+
+  ringBell(freq, start, dur, vol) {
+    const ctx = this.ctx;
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.type = 'sine';
+    osc.frequency.setValueAtTime(freq, start);
+    gain.gain.setValueAtTime(vol, start);
+    gain.gain.exponentialRampToValueAtTime(0.0008, start + dur);
+    osc.connect(gain);
+    gain.connect(this.musicBus);
+    osc.start(start);
+    osc.stop(start + dur + 0.02);
+  }
+
   bowDrone(freq, start, dur, vol) {
     const ctx = this.ctx;
     const osc = ctx.createOscillator();
@@ -314,14 +814,13 @@ export class DomesdayAudioDirector {
     filt.type = 'lowpass';
     filt.frequency.setValueAtTime(290, start);
     gain.gain.setValueAtTime(0.001, start);
-    gain.gain.linearRampToValueAtTime(vol, start + 0.25);
-    gain.gain.setValueAtTime(vol * 0.85, start + dur * 0.7);
+    gain.gain.linearRampToValueAtTime(vol, start + 0.08);
     gain.gain.exponentialRampToValueAtTime(0.001, start + dur);
     osc.connect(filt);
     filt.connect(gain);
     gain.connect(this.musicBus);
     osc.start(start);
-    osc.stop(start + dur + 0.04);
+    osc.stop(start + dur + 0.03);
   }
 
   hitTabor(start, vol, pitch = 110) {
@@ -340,21 +839,15 @@ export class DomesdayAudioDirector {
   }
 
   // =========================================================================
-  // STUDIO VOICEOVER PLAYBACK WITH AUTO-DUCKING
+  // STUDIO & CLASS-CAST VOICEOVER PLAYBACK WITH AUTO-DUCKING & CLEAN STOP
   // =========================================================================
   playVoice(clipId) {
     this.ensureContext();
+    this.stopVoice();
     if (this.muted || !clipId) return;
 
-    if (this.activeVoAudio) {
-      try {
-        this.activeVoAudio.pause();
-        this.activeVoAudio.currentTime = 0;
-      } catch (_) {}
-      this.activeVoAudio = null;
-    }
-
-    if (!DOMESDAY_VO_CLIPS.has(clipId)) return;
+    const customBlobUrl = this.voicePack === 'class_cast' ? this.classBlobUrls.get(clipId) : null;
+    if (!customBlobUrl && !DOMESDAY_VO_CLIPS.has(clipId)) return;
 
     try {
       if (!this.sharedVoEl) {
@@ -362,9 +855,17 @@ export class DomesdayAudioDirector {
         this.sharedVoEl.preload = 'auto';
       }
       const audio = this.sharedVoEl;
+      const studioUrl = `/audio/labs/domesday/${clipId}.mp3`;
+      const primaryUrl =
+        customBlobUrl ||
+        (this.voicePack === 'class_cast'
+          ? `/audio/labs/domesday/class_cast/${clipId}.mp3`
+          : studioUrl);
+      let triedStudioFallback = primaryUrl === studioUrl;
+
       audio.onended = null;
       audio.onerror = null;
-      audio.src = `/audio/labs/domesday/${clipId}.mp3`;
+      audio.src = primaryUrl;
       audio.volume = 0.96;
       this.activeVoAudio = audio;
       this.isDucked = true;
@@ -379,9 +880,26 @@ export class DomesdayAudioDirector {
           this.onVoStateChange?.(clipId, false);
         }
       };
+
       audio.onended = finish;
-      audio.onerror = finish;
-      audio.play().catch(finish);
+      audio.onerror = () => {
+        if (!triedStudioFallback && DOMESDAY_VO_CLIPS.has(clipId)) {
+          triedStudioFallback = true;
+          audio.src = studioUrl;
+          audio.play().catch(finish);
+          return;
+        }
+        finish();
+      };
+      audio.play().catch(() => {
+        if (!triedStudioFallback && DOMESDAY_VO_CLIPS.has(clipId)) {
+          triedStudioFallback = true;
+          audio.src = studioUrl;
+          audio.play().catch(finish);
+          return;
+        }
+        finish();
+      });
     } catch (_) {
       this.isDucked = false;
       this.syncGains();
@@ -391,12 +909,17 @@ export class DomesdayAudioDirector {
   stopVoice() {
     if (this.activeVoAudio) {
       try {
+        this.activeVoAudio.onended = null;
+        this.activeVoAudio.onerror = null;
         this.activeVoAudio.pause();
+        this.activeVoAudio.currentTime = 0;
       } catch (_) {}
       this.activeVoAudio = null;
     }
-    this.isDucked = false;
-    this.syncGains();
+    if (this.isDucked) {
+      this.isDucked = false;
+      this.syncGains();
+    }
     this.onVoStateChange?.(null, false);
   }
 
@@ -407,7 +930,6 @@ export class DomesdayAudioDirector {
     const ctx = this.ensureContext();
     if (!ctx || this.muted) return;
     const now = ctx.currentTime;
-    // Wet low filter sweep + bubble pops
     [0, 0.07, 0.15].forEach((d, idx) => {
       const osc = ctx.createOscillator();
       const filt = ctx.createBiquadFilter();
@@ -497,7 +1019,7 @@ export class DomesdayAudioDirector {
     const ctx = this.ensureContext();
     if (!ctx || this.muted) return;
     const now = ctx.currentTime;
-    const dur = 0.28;
+    const dur = 0.26;
     const buf = ctx.createBuffer(1, Math.floor(ctx.sampleRate * dur), ctx.sampleRate);
     const data = buf.getChannelData(0);
     for (let i = 0; i < data.length; i++) {
@@ -522,7 +1044,6 @@ export class DomesdayAudioDirector {
     const ctx = this.ensureContext();
     if (!ctx || this.muted) return;
     const now = ctx.currentTime;
-    // Spooky monastic open fifth + dry bone clicks
     [220, 330, 440].forEach((f) => {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
@@ -612,7 +1133,7 @@ export class DomesdayAudioDirector {
     const ctx = this.ensureContext();
     if (!ctx || this.muted) return;
     const now = ctx.currentTime;
-    [N.D4, N.F4, N.A4, N.D5].forEach((f, idx) => {
+    [N.D4, N.Fs4, N.A4, N.D5].forEach((f, idx) => {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.type = 'triangle';
@@ -626,11 +1147,26 @@ export class DomesdayAudioDirector {
     });
   }
 
+  victoryFanfare() {
+    const ctx = this.ensureContext();
+    if (!ctx || this.muted) return;
+    const now = ctx.currentTime;
+    [N.D4, N.Fs4, N.A4, N.D5, N.Fs5].forEach((f, idx) => {
+      this.blowBrass(f, now + idx * 0.09, 0.36, 0.18);
+    });
+  }
+
   destroy() {
     if (typeof document !== 'undefined' && this._onVisibilityChange) {
       document.removeEventListener('visibilitychange', this._onVisibilityChange);
     }
     this.stopVoice();
+    for (const url of this.classBlobUrls.values()) {
+      try {
+        URL.revokeObjectURL(url);
+      } catch (_) {}
+    }
+    this.classBlobUrls.clear();
     if (this.timerId) {
       clearInterval(this.timerId);
       this.timerId = null;

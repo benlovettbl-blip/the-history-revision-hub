@@ -96,9 +96,73 @@ export const WW1_CHARACTER_VOICES = {
   },
 };
 
+export const DOMESDAY_CHARACTER_VOICES = {
+  domesday_salty_seagull: {
+    key: 'domesday_salty_seagull',
+    display_name: 'HRH 1086 Salty the Solent Seagull Narrator',
+    label: 'Salty the Solent Seagull (Comic Guide)',
+    gender: 'male',
+    language_code: 'en-GB',
+    prompt:
+      'A cheeky, raspy, high-energy British comic narrator with a mischievous coastal squawk and lively theatrical timing like a classic children’s history puppet host, crisp, playful, and crystal clear for 11-year-olds.',
+    style: 'cheeky, raspy, mischievous British comic history guide',
+  },
+  domesday_reeve_odo: {
+    key: 'domesday_reeve_odo',
+    display_name: 'HRH 1086 Sweating Reeve Odo',
+    label: 'Sweating Reeve Odo (Hampshire Reeve)',
+    gender: 'male',
+    language_code: 'en-GB',
+    prompt:
+      'A round, flustered, high-pitched middle-aged English village reeve with a squeaky, breathless southern rural cadence, sounding nervously cheerful and comically guilty.',
+    style: 'flustered, squeaky, breathless medieval village reeve',
+  },
+  domesday_sheriff_hugh: {
+    key: 'domesday_sheriff_hugh',
+    display_name: 'HRH 1086 Sheriff Hugh of Port',
+    label: 'Sheriff Hugh of Port (Norman Baron)',
+    gender: 'male',
+    language_code: 'en-GB',
+    prompt:
+      'A booming, deep-chested, swaggering Norman nobleman in his late 40s with a rich resonant bass-baritone voice, subtle aristocratic French-inflected English cadence, and triumphant theatrical authority.',
+    style: 'booming, swaggering deep-voiced Norman baron',
+  },
+  domesday_monk_aldwin: {
+    key: 'domesday_monk_aldwin',
+    display_name: 'HRH 1086 Brother Aldwin Chronicler',
+    label: 'Brother Aldwin (Winchester Chronicler)',
+    gender: 'male',
+    language_code: 'en-GB',
+    prompt:
+      'An elderly Benedictine monk chronicler in his late 70s in a quiet stone scriptorium, frail, papery, raspy British voice speaking slowly with ancient gravity and dramatic wonder.',
+    style: 'elderly, papery, dramatic medieval monastery chronicler',
+  },
+  domesday_villager_wulf: {
+    key: 'domesday_villager_wulf',
+    display_name: 'HRH 1086 Fareham Villager Wulf',
+    label: 'Wulf of Fareham (Sworn Villager)',
+    gender: 'male',
+    language_code: 'en-GB',
+    prompt:
+      'A weather-beaten Hampshire coastal fisherman and villager in his mid-40s with a warm, grounded rural southern English voice, speaking with earnest honesty and urgent dignity.',
+    style: 'earnest, weather-beaten rural southern English villager',
+  },
+  domesday_grandma_saxon: {
+    key: 'domesday_grandma_saxon',
+    display_name: 'HRH 1086 Grandma Eadgyth of Stubbington',
+    label: 'Grandma Eadgyth (Saxon Elder)',
+    gender: 'female',
+    language_code: 'en-GB',
+    prompt:
+      'A sharp-witted, warm elderly English grandmother in her 70s with a gentle rural southern British accent, spirited, wise, and full of lived memory.',
+    style: 'warm, spirited elderly English village grandmother',
+  },
+};
+
 export const ALL_STUDIO_VOICES = {
   ...HOUSE_VOICES,
   ...WW1_CHARACTER_VOICES,
+  ...DOMESDAY_CHARACTER_VOICES,
 };
 
 /**

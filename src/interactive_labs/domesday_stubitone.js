@@ -1,31 +1,59 @@
 /**
- * THE SECRET OF STUBITONE™: The 1086 Solent & Fareham Domesday Adventure (v2.2 Zero-Jump Mobile Edition)
+ * THE SECRET OF STUBITONE™ v3: The 1086 Solent & Fareham Domesday Adventure (Year 7 Playtest Edition)
  *
- * Architecture Highlights:
- *  - ZERO text labels over pictures — discreet 12px shiny hover glint dots on desktop, subtle firefly glints on touch.
- *  - ZERO-JUMP MOBILE ARCHITECTURE (CLS = 0, deltaScroll = 0px):
- *      1. Persistent `.dst-shell` root container (never torn down on tap, so full-screen `shell.scrollTop` never resets!).
- *      2. Live in-place Diorama & 60 FPS Canvas persistence (`#dst-fx-stage` stays mounted across all hotspot/choice taps!).
- *      3. Zero-teardown `<input type="range">` handlers on Stage 3 X-Ray Curtain & Stage 6 Folio 46v Latin Slider.
- *      4. Multi-container `preserveScrollPosition()` lock + fixed `104px` mobile `.dst-speech-box` height so changing quotes
- *         between 1 line and 5 lines shifts underlying buttons/artwork by 0.00px.
+ * Key Upgrades Driven Directly by Year 7 Pupil Feedback:
+ *  1. Salty the Solent Seagull ("Rattus Rattus" comic guide) + 11 distinct Studio character voices (0 voice collisions!).
+ *  2. 7 Bite-Sized, Focused Stages ("More steps, less work per screen, zero confusing dual-perspective Spyglass tab"):
+ *      - Cover -> 1. My Town -> 2. Fareham -> 3. Wipeout -> 4. Trial -> 5. Edith's Hut -> 6. Crack Latin -> 7. Finale & Win!
+ *  3. Unmistakable Grand Victory Screen + Itemized Silver-Penny Ledger + Rank Title + Printable 1086 Commissioner Warrant.
+ *  4. Genuine 3-Option Historical Thinking Questions (zero joke giveaways, zero quoted Latin answers in question stems!).
+ *  5. Audio Stop-on-Transition + `🔊 Replay` / `⏹ Stop` pills + 8 distinct medieval stage soundtracks.
+ *  6. In-Game Folio 46v & Titchfield Hundred Archive Modal (100% firewall-safe — zero school web-filter "Blocked" popups!).
+ *  7. Year 7 "Class Drama Booth" (`🎙️ Voice Act!`) — record character lines locally in browser + printable Class Drama Script!
  */
 
 import './domesday_stubitone.css';
-import { DomesdayAudioDirector } from './domesday_music.js';
+import {
+  DomesdayAudioDirector,
+  saveClassVoiceRecording,
+  deleteClassVoiceRecording,
+  clearAllClassVoiceRecordings,
+} from './domesday_music.js';
 import { mountLivingDioramaFX } from './domesday_living_fx.js';
 import { renderSolentGisSvgHTML } from './solent_svg_map.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
 
-const SESSION_SAVE_KEY = 'hh_domesday_session_v1';
+const SESSION_SAVE_KEY = 'hh_domesday_session_v3';
 
 const STAGE_PRELOAD_MAP = {
-  cover: ['/images/arcade/domesday/scene_1_bennet_swamp.webp', '/audio/labs/domesday/cover_welcome.mp3'],
-  beat0: ['/images/arcade/domesday/scene_2_fareham_mills.webp', '/audio/labs/domesday/beat1_odo_oath.mp3'],
-  beat1: ['/images/arcade/domesday/scene_5_fareham_servi.webp', '/images/arcade/domesday/scene_3_royal_assize.webp'],
-  beat2: ['/images/arcade/domesday/scene_3_royal_assize.webp', '/audio/labs/domesday/beat3_villager_plea.mp3'],
-  beat3: ['/images/arcade/domesday/scene_4_stubbington_hut.webp', '/audio/labs/domesday/beat4_monk_myth.mp3'],
-  beat4: ['/audio/labs/domesday/beat5_stubitone_latin.mp3', '/audio/labs/domesday/beat5_debrief_historian.mp3'],
+  cover: [
+    '/images/arcade/domesday/scene_1_bennet_swamp.webp',
+    '/audio/labs/domesday/beat0_salty_guide.mp3',
+  ],
+  beat0: [
+    '/images/arcade/domesday/scene_2_fareham_mills.webp',
+    '/audio/labs/domesday/beat1_odo_oath.mp3',
+  ],
+  beat1: [
+    '/images/arcade/domesday/scene_5_fareham_servi.webp',
+    '/audio/labs/domesday/beat2_salty_xray.mp3',
+  ],
+  beat2: [
+    '/images/arcade/domesday/scene_3_royal_assize.webp',
+    '/audio/labs/domesday/beat3_villager_plea.mp3',
+  ],
+  beat3: [
+    '/images/arcade/domesday/scene_4_stubbington_hut.webp',
+    '/audio/labs/domesday/beat4_monk_myth.mp3',
+  ],
+  beat4: [
+    '/audio/labs/domesday/beat5_stubitone_latin.mp3',
+    '/audio/labs/domesday/beat5_all_cracked.mp3',
+  ],
+  beat5: [
+    '/audio/labs/domesday/beat6_salty_finale.mp3',
+    '/audio/labs/domesday/beat5_debrief_historian.mp3',
+  ],
 };
 
 const preloadedUrls = new Set();
@@ -54,85 +82,234 @@ function preloadUpcomingStageAssets(stepId) {
 
 const STEPS = [
   { id: 'cover', short: '🏰 Cover', mob: '🏰 Cover' },
-  { id: 'beat0', short: '1. Rewind', mob: '1/6 Rewind' },
-  { id: 'beat1', short: '2. Fareham', mob: '2/6 Fareham' },
-  { id: 'beat2', short: '3. Wipeout', mob: '3/6 Wipeout' },
-  { id: 'beat3', short: '4. Trial', mob: '4/6 Trial' },
-  { id: 'beat4', short: '5. Hut & Map', mob: '5/6 Hut & Map' },
-  { id: 'beat5', short: '6. Latin & Truth', mob: '6/6 Latin' },
+  { id: 'beat0', short: '1. My Town', mob: '1/7 My Town' },
+  { id: 'beat1', short: '2. Fareham', mob: '2/7 Fareham' },
+  { id: 'beat2', short: '3. Wipeout', mob: '3/7 Wipeout' },
+  { id: 'beat3', short: '4. Trial', mob: '4/7 Trial' },
+  { id: 'beat4', short: '5. Hut #3', mob: '5/7 Hut #3' },
+  { id: 'beat5', short: '6. Latin', mob: '6/7 Latin' },
+  { id: 'beat6', short: '7. Win & Seal', mob: '7/7 Finale' },
 ];
 
-function isTouchUI() {
-  return (
-    typeof window !== 'undefined' &&
-    Boolean(window.matchMedia?.('(hover: none), (pointer: coarse)')?.matches)
-  );
-}
-
 const SPEAKER_AVATARS = {
-  guy: { img: '/images/arcade/domesday/cover_secret_of_stubitone.webp', pos: '78% 14%', size: '520%' },
-  bennet: { img: '/images/arcade/domesday/scene_1_bennet_swamp.webp', pos: '49% 23%', size: '520%' },
+  salty: { img: '/images/arcade/domesday/scene_1_bennet_swamp.webp', pos: '83% 14%', size: '560%' },
+  guy: {
+    img: '/images/arcade/domesday/cover_secret_of_stubitone.webp',
+    pos: '78% 14%',
+    size: '520%',
+  },
+  bennet: {
+    img: '/images/arcade/domesday/scene_1_bennet_swamp.webp',
+    pos: '49% 23%',
+    size: '520%',
+  },
   odo: { img: '/images/arcade/domesday/scene_2_fareham_mills.webp', pos: '18% 36%', size: '560%' },
   hugh: { img: '/images/arcade/domesday/scene_3_royal_assize.webp', pos: '78% 36%', size: '580%' },
-  villager: { img: '/images/arcade/domesday/scene_3_royal_assize.webp', pos: '33% 40%', size: '580%' },
-  edith: { img: '/images/arcade/domesday/scene_4_stubbington_hut.webp', pos: '24% 25%', size: '520%' },
-  gyrth: { img: '/images/arcade/domesday/scene_5_fareham_servi.webp', pos: '56% 24%', size: '560%' },
+  villager: {
+    img: '/images/arcade/domesday/scene_3_royal_assize.webp',
+    pos: '33% 40%',
+    size: '580%',
+  },
+  edith: {
+    img: '/images/arcade/domesday/scene_4_stubbington_hut.webp',
+    pos: '24% 25%',
+    size: '520%',
+  },
+  grandma: {
+    img: '/images/arcade/domesday/scene_4_stubbington_hut.webp',
+    pos: '68% 49%',
+    size: '620%',
+  },
+  gyrth: {
+    img: '/images/arcade/domesday/scene_5_fareham_servi.webp',
+    pos: '56% 24%',
+    size: '560%',
+  },
   monk: { img: '/images/arcade/domesday/scene_3_royal_assize.webp', pos: '90% 36%', size: '580%' },
 };
 
 const STAMP_CHALLENGES = [
   {
     id: 'st1',
-    claim: 'Fareham had 10 enslaved workers ("servi") listed alongside plough-oxen and 5 watermills.',
+    claim:
+      'Fareham had 10 enslaved workers ("servi") listed alongside plough-oxen and 5 watermills.',
     isReal: true,
     note: '100% REAL! Recorded verbatim in the 1086 Hampshire Domesday folio under Bishop Walkelin of Winchester.',
   },
   {
     id: 'st2',
-    claim: 'Bennet Luvet stood in Fareham Creek guarding one wormy turnip from a grumpy seagull.',
+    claim: 'Bennet Luvet stood in Fareham Creek guarding one wormy turnip from Salty the Seagull.',
     isReal: false,
-    note: 'FICTIONAL PEASANT! "Luvet" is a real 1086 Domesday surname ("Little Wolf"), while Boggy Bennet himself stands in for poor landless cottagers whom scribes ignored!',
+    note: 'COMEDY CAST! "Luvet" is a real 1086 Domesday surname ("Little Wolf"), while Boggy Bennet & Salty give voice to poor landless locals whom scribes ignored!',
   },
   {
     id: 'st3',
-    claim: 'King Edward gave Fareham a 20-hide tax discount because of coastal Viking raids, and 1086 scribes wrote Fareham "cannot bear" £20.',
+    claim:
+      'King Edward gave Fareham a 20-hide tax discount because of coastal Viking raids, and 1086 scribes wrote Fareham "cannot bear" £20.',
     isReal: true,
     note: '100% REAL! Both famous quotes are written directly in Fareham’s 1086 Domesday Book entry!',
   },
 ];
 
+// Genuine Latin Code-Breaker Clues (ZERO quoted giveaway Latin answers in the prompt — pupils use the Scribe Key!)
 const LATIN_CLUE_MISSIONS = [
   {
     id: 'lc1',
     targetIdx: 1,
     badge: 'Clue 1 of 3 • Wiped-Out Saxon Owner',
     prompt:
-      'Find and TAP the line on Stubbington’s parchment that proves an Englishman named Godwin held the village under King Edward ("rege E.") before 1066!',
-    hintWrong: 'Look at Line 2 for "Godwinus" and "rege E." (or slide the Decoder Lens above the parchment to peek at English)!',
-    solvedNote: 'Cracked! "Godwinus tenuit de rege E." = Saxon Godwin HELD it freely from King Edward—before Norman Sheriff Hugh wiped him out!',
+      'Use the Scribe Key above to TAP the Latin line proving an English freeman HELD Stubbington in the past before Norman Sheriff Hugh took over!',
+    hintWrong:
+      'Check the Scribe Key for the past-tense verb meaning "held" (not "ten’" on Line 1, which means holds NOW)!',
+    solvedNote:
+      'Cracked! "Godwinus tenuit de rege E." = Saxon Godwin HELD it freely under King Edward—before Sheriff Hugh wiped him out!',
   },
   {
     id: 'lc2',
     targetIdx: 3,
-    badge: 'Clue 2 of 3 • Crack the Roman Numerals',
+    badge: 'Clue 2 of 3 • Count the 9 Peasant Households',
     prompt:
-      'Now TAP the line where medieval Roman numerals ("v" + "iiij") record Stubbington’s 9 peasant households (5 villagers + 4 smallholders) and 3 ploughs ("iii car’")!',
-    hintWrong: 'Hunt for the Roman numerals "iii car’", "v vill’i", and "iiij bord’" on Line 4!',
-    solvedNote: 'Cracked! Medieval clerks wrote 4 as "iiij"—so "v vill’i" (5 villagers) + "iiij bord’" (4 smallholders) = Stubbington’s 9 households!',
+      'Now TAP the Latin line where medieval Roman numerals add up to Stubbington’s 9 peasant households (5 villagers + 4 smallholders)!',
+    hintWrong:
+      'Use the Scribe Key to hunt for the Latin words for "villagers" and "smallholders" (remember medieval clerks wrote 4 as "iiij")!',
+    solvedNote:
+      'Cracked! "v vill’i & iiij bord’" = 5 villagers + 4 smallholders = Stubbington’s 9 taxed households!',
   },
   {
     id: 'lc3',
     targetIdx: 5,
-    badge: 'Clue 3 of 3 • Sheriff Hugh’s Profit Squeeze',
+    badge: 'Clue 3 of 3 • Follow the Money (£2 10s → £3)',
     prompt:
-      'Finally, TAP the line proving Stubbington’s value rose from £2 & 10 shillings ("ii lib’ & x sol’") in 1066 ("T.R.E.") to £3 ("iii lib’") under Sheriff Hugh!',
-    hintWrong: 'Look at the bottom line for "Valuit iii lib’" (£3) and "T.R.E. ii lib’ & x sol’" (£2 10s)!',
-    solvedNote: 'All 3 Folio 46v Clues Cracked! "T.R.E." = Tempore Regis Eduardi (1066)—proving Sheriff Hugh squeezed extra cash from Stubbington!',
+      'Finally, TAP the Latin line proving Stubbington’s yearly cash value rose by 10 shillings between 1066 and Sheriff Hugh’s takeover!',
+    hintWrong:
+      'Check the Scribe Key for the Latin abbreviations for "£ pounds", "shillings", and "in 1066"!',
+    solvedNote:
+      'All 3 Folio 46v Clues Cracked! Stubbington rose from £2 10s in 1066 ("T.R.E.") to £3 ("iii lib’") under Sheriff Hugh!',
+  },
+];
+
+// Curated Classroom Voice-Acting Roles for the in-browser Drama Booth & Printable Script
+const DRAMA_CAST_SCRIPT = [
+  {
+    clipId: 'cover_salty_intro',
+    role: 'Salty the Solent Seagull (Comic Guide)',
+    direction: 'Cheeky, squawky, high-energy Horrible Histories narrator!',
+    line: "Squawk! Eyes front! I'm Salty the Solent Seagull—your unofficial 1086 tour guide! Tap the glowing gold spots to annoy the locals, or hit Begin Royal Audit!",
+  },
+  {
+    clipId: 'cover_bennet_poke',
+    role: 'Boggy Bennet Luvet (Mud-Soaked Peasant)',
+    direction: 'Grumpy, shivering waist-deep in mud, hugging a turnip.',
+    line: 'Oi! Press the big shiny start button already! My toes went numb in this freezing Fareham mud twenty minutes ago, and this seagull is eyeing my turnip!',
+  },
+  {
+    clipId: 'cover_guy_torso',
+    role: 'Sir Guy de Rouen (Vain Norman Clerk)',
+    direction: 'Posh, offended French-Norman official floating in the clouds.',
+    line: 'Oi! Stop staring at my missing legs! The royal portrait painter ran out of purple sky-paint below my belt—keep your eyes on the Domesday Book, peasant!',
+  },
+  {
+    clipId: 'beat1_odo_oath',
+    role: 'Sweating Reeve Odo (Guilty Fareham Reeve)',
+    direction: 'Squeaky, breathless, stammering nervously over holy bones.',
+    line: "I swear on Saint Swithin's holy bones, my Lord, barely two squeaky little watermills in all of Fareham! Please ignore that loud splashing behind the bushes!",
+  },
+  {
+    clipId: 'beat2_hugh_boast',
+    role: 'Sheriff Hugh of Port (Booming Norman Baron)',
+    direction: 'Loud, booming, gloating villain laughing over his new map.',
+    line: "Godwin's Stubbington farm? Mine! Wickham? Mine! Fifty-four Hampshire manors? ALL MINE! Best conquest ever!",
+  },
+  {
+    clipId: 'beat3_villager_plea',
+    role: 'Wulf of Fareham (Sworn Villager Witness)',
+    direction: 'Earnest, urgent villager pleading before the royal court.',
+    line: "My Lord Commissioner, King Edward cut Fareham's tax from 30 hides to 20 because Viking raiders attacked us from the sea! Now Bishop Walkelin demands £20 when our town only makes £16!",
+  },
+  {
+    clipId: 'beat4_edith_door',
+    role: 'Fierce Edith of Stubbington (Saxon Mother)',
+    direction: 'Fiery, quick-witted mum waving a soup ladle from Hut #3.',
+    line: "Nine households?! Your posh Latin book counted nine husbands in Stubbington and acted like me, Grandma, and five hungry kids don't exist! What am I, a turnip?!",
+  },
+  {
+    clipId: 'beat4_grandma',
+    role: 'Grandma Eadgyth (Stubbington Elder)',
+    direction: 'Warm, sharp-witted grandmother spinning wool by the fire.',
+    line: "I remember Viking sails on the Solent under King Cnut, young clerk—yet because an old grandmother doesn't pay geld tax, your great book pretends I'm not even here!",
+  },
+  {
+    clipId: 'beat4_monk_myth',
+    role: 'Brother Aldwin (Elderly Winchester Monk)',
+    direction: 'Spooky, hushed candlelit whisper.',
+    line: "In my chronicle I complained that not one single ox, cow, or pig was left out of William's shameful book. Tap inside Stubbington Hut Three to count who the scribes REALLY missed!",
+  },
+  {
+    clipId: 'beat1_gyrth_servi',
+    role: 'Gyrth (Enslaved Ploughman in Fareham)',
+    direction: 'Calm, quiet, serious, and deeply dignified.',
+    line: "The Bishop's scribe wrote all ten of us down on the parchment right beside the plough-oxen. In 1086 Fareham, enslaved workers own no land, and we cannot leave.",
+  },
+  {
+    clipId: 'beat5_debrief_historian',
+    role: 'Chief Royal Historian (Final Summary)',
+    direction: 'Warm, celebratory BBC documentary presenter.',
+    line: "Royal Audit complete—you beat the game! Every village statistic you investigated comes straight from the real 1086 Domesday Book, while characters like Bennet, Edith, and Odo give voice to the nameless locals whom King William's clerks left out.",
+  },
+];
+
+const TITCHFIELD_HUNDRED_TABLE = [
+  {
+    place: 'Titchfield (Royal Capital)',
+    lord: 'King William',
+    households: 33,
+    rank: 'Large royal manor (2 mills)',
+  },
+  {
+    place: 'Wickham (Wicheham)',
+    lord: 'Sheriff Hugh of Port',
+    households: 26,
+    rank: 'Crashed £10 → £4 after 1066',
+  },
+  {
+    place: 'Funtley (Fontelei)',
+    lord: 'Earl Roger of Shrewsbury',
+    households: 22,
+    rank: 'Medium valley settlement',
+  },
+  {
+    place: 'Crofton (Croftone)',
+    lord: 'Odo of Bayeux & Alfred',
+    households: 17,
+    rank: 'Coastal manor near Stubbington',
+  },
+  {
+    place: 'Rowner (Ruwanore)',
+    lord: 'William Mauduit',
+    households: 14,
+    rank: 'Crashed £3 10s → £1 10s',
+  },
+  {
+    place: 'Stubbington (Stubitone)',
+    lord: 'Sheriff Hugh of Port',
+    households: 9,
+    rank: 'Smallest 40% of England (Folio 46v)',
+  },
+  {
+    place: 'Hook (Hoche)',
+    lord: 'Hugh of Port / Royal',
+    households: 8,
+    rank: 'Small Solent shore hamlet',
+  },
+  {
+    place: 'Meon (Mene)',
+    lord: 'Hampshire Thanes / Crown',
+    households: 2,
+    rank: 'Tiniest hamlet in Hundred (2 households!)',
   },
 ];
 
 let cachedDomesdayJson = null;
-
 async function loadDomesdayData() {
   if (cachedDomesdayJson) return cachedDomesdayJson;
   const res = await fetch('/data/interactive_labs/localDomesday.json');
@@ -141,7 +318,17 @@ async function loadDomesdayData() {
   return cachedDomesdayJson;
 }
 
-function hitZoneHTML({ id = '', key = '', dataAttr = '', x, y, w = 14, h = 22, found = false, ariaLabel }) {
+function hitZoneHTML({
+  id = '',
+  key = '',
+  dataAttr = '',
+  x,
+  y,
+  w = 14,
+  h = 22,
+  found = false,
+  ariaLabel,
+}) {
   return `
     <button type="button"
             ${id ? `id="${id}"` : ''}
@@ -155,6 +342,35 @@ function hitZoneHTML({ id = '', key = '', dataAttr = '', x, y, w = 14, h = 22, f
   `;
 }
 
+function computeRankFromScore(score) {
+  if (score >= 1000) {
+    return {
+      icon: '👑',
+      title: 'King William’s Chief Domesday Commissioner',
+      sub: 'Supreme Distinction • Master of Latin, Map Forensics & Hidden Peasant Voices!',
+    };
+  }
+  if (score >= 780) {
+    return {
+      icon: '📜',
+      title: 'Senior Royal Exchequer Scribe',
+      sub: 'High Honours • Sharp-Eyed Investigator of 1086 Hampshire!',
+    };
+  }
+  if (score >= 520) {
+    return {
+      icon: '⚖️',
+      title: 'Sworn Titchfield Hundred Juror',
+      sub: 'Solid Pass • Trusted Witness of the Solent Coast!',
+    };
+  }
+  return {
+    icon: '🥕',
+    title: 'Apprentice Mud-Scribe & Turnip Watcher',
+    sub: 'Audit Complete • Revisit any tab above to boost your Silver Penny tally!',
+  };
+}
+
 export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   if (!stageEl) return () => {};
 
@@ -164,6 +380,8 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   let data = null;
   let unmounted = false;
   let shimmerTimeout = null;
+  let resetArmTimeout = null;
+  let closeArmTimeout = null;
   let shellEl = null;
   let mountedSceneSignature = '';
   let enteredBrowserFs = false;
@@ -172,65 +390,126 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   let pointerMovedDuringTap = false;
   let pointerDownTime = 0;
 
+  // MediaRecorder state for optional Class Drama Booth
+  let activeMediaRecorder = null;
+  let activeMicStream = null;
+  let recordingClipId = null;
+  let recordedChunks = [];
+
   const state = {
     step: ctx.startAtBeat0 ? 'beat0' : 'cover',
-    completedSteps: new Set(),
     isFullscreen: Boolean(ctx.autoFullscreen),
     hintShimmer: false,
+    resetArmed: false,
+    closeArmed: false,
+    activeModal: null, // null | 'archive' | 'drama'
+
     score: 0,
     xpAwarded: false,
+    awardedKeys: new Set(),
+    ledger: {
+      cover: 0,
+      beat0: 0,
+      beat1: 0,
+      beat2: 0,
+      beat3: 0,
+      beat4: 0,
+      beat5: 0,
+      beat6: 0,
+      turnips: 0,
+    },
 
-    avatarKey: 'guy',
-    speakerName: 'Sir Guy de Rouen • Royal Exchequer Clerk',
-    speechText: isTouchUI()
-      ? 'Tap glowing spots on the painting to poke 1086 secrets—or press BEGIN 1086 ROYAL AUDIT to test your hometown!'
-      : 'Hover over the painting to spot discreet shiny secrets—or press BEGIN 1086 ROYAL AUDIT to test your hometown!',
+    avatarKey: 'salty',
+    speakerName: 'Salty the Solent Seagull • 1086 Tour Guide',
+    speechText:
+      'Squawk! Welcome to 1086! Tap any glowing gold spot on the painting to annoy the locals—or press BEGIN 1086 ROYAL AUDIT!',
+    lastVoClipId: 'cover_salty_intro',
 
     bennetSightings: new Set(),
     coverSecretsFound: new Set(),
 
-    // Beat 0: Swamp Rewind
+    // Stage 1 (beat0): Instant 1-Click Coastal Town Rewind
     selectedPinId: 'gosport',
-    rewound1086: false,
+    testedPinIds: new Set(),
     peekSwampAnyway: false,
     swampSecretsFound: new Set(),
 
-    // Beat 1: Fareham Asset Hunt + Gyrth Servi View
+    // Stage 2 (beat1): Fareham Asset Hunt + Gyrth Servi View & Comprehension Question
     beat1SubMode: 'hunt', // 'hunt' | 'servi'
     foundFarehamAssets: new Set(), // 'mills' | 'pigs' | 'church_meadow'
     farehamExtrasFound: new Set(),
     serviReflected: false,
+    serviQuizAnswer: null, // 'mills_servi' | 'free_choice' | 'no_slaves'
 
-    // Beat 2: 3-Step Interactive Map-Tap Hunt
-    xraySplitPct: 20,
+    // Stage 3 (beat2): 3-Step Forensic Wipeout Map
+    xraySplitPct: 22,
     selectedManorId: 'stubbington',
     showModernGhost: false,
     b2MissionIdx: 0,
     b2Solved: new Set(),
     b2WrongAttempt: '',
 
-    // Beat 3: Royal Assize Court
+    // Stage 4 (beat3): Royal Assize Courtroom
     assizeSpotsHeard: new Set(),
-    rulingVikings: null,
-    rulingBishop: null,
+    rulingVikings: null, // 'keep20' | 'hike30' | 'zero0'
+    rulingBishop: null, // 'shame20' | 'force20' | 'arrest'
     assizeVerdictRevealed: false,
 
-    // Beat 4: Stubbington Hut People-Counter & Solent Spyglass
-    beat4Tab: 'hut', // 'hut' | 'map'
+    // Stage 5 (beat4): Pure Inside Edith's Stubbington Hut #3
     hutPeopleGroups: new Set(['husband_head']),
     foundBlindSpots: new Set(),
-    spyglassPos: { x: 48, y: 34 },
+    hutQuizAnswer: null, // 'only9' | 'about45' | 'over500'
 
-    // Beat 5: Stubitone Parchment 3-Clue Code-Breaker + Stamp Quiz + Live Archive Quest
+    // Stage 6 (beat5): Pure Folio 46v Latin Code-Breaker
     translationPct: 0,
     activeChunkIdx: 0,
-    b5ClueStep: 0, // 0, 1, 2
-    b5SolvedClues: new Set(), // 'lc1' | 'lc2' | 'lc3'
+    b5ClueStep: 0,
+    b5SolvedClues: new Set(),
     b5WrongChunkIdx: -1,
+
+    // Stage 7 (beat6): Final Stamp Boss + In-Game Archive Quest + Grand Victory Screen
     stampAnswers: {},
     archiveBounty1: null, // 'small40' | 'large20'
     archiveBounty2: null, // 'meon' | 'funtley'
   };
+
+  function awardOnce(key, bucket, pts) {
+    if (state.awardedKeys.has(key)) return false;
+    state.awardedKeys.add(key);
+    state.score += pts;
+    if (state.ledger[bucket] !== undefined) {
+      state.ledger[bucket] += pts;
+    }
+    saveArcadePersonalBest('medieval_england', 'domesday_stubitone', 'all', state.score);
+    return true;
+  }
+
+  function computeHutPeopleCount() {
+    let total = 1;
+    if (state.hutPeopleGroups.has('edith')) total += 1;
+    if (state.hutPeopleGroups.has('five_kids')) total += 5;
+    if (state.hutPeopleGroups.has('grandma')) total += 1;
+    return total;
+  }
+
+  function isStepTrulyComplete(stepId) {
+    if (stepId === 'cover') return state.step !== 'cover' || state.coverSecretsFound.size >= 2;
+    if (stepId === 'beat0') return state.testedPinIds.size >= 2;
+    if (stepId === 'beat1')
+      return state.foundFarehamAssets.size >= 3 && state.serviQuizAnswer === 'mills_servi';
+    if (stepId === 'beat2') return state.b2Solved.size >= 3;
+    if (stepId === 'beat3') return state.assizeVerdictRevealed;
+    if (stepId === 'beat4') {
+      return (
+        computeHutPeopleCount() >= 8 &&
+        state.foundBlindSpots.has('untaxed_pets') &&
+        state.hutQuizAnswer === 'about45'
+      );
+    }
+    if (stepId === 'beat5') return state.b5SolvedClues.size >= 3;
+    if (stepId === 'beat6') return Object.keys(state.stampAnswers).length >= 3;
+    return false;
+  }
 
   function persistSessionState() {
     if (typeof sessionStorage === 'undefined') return;
@@ -239,16 +518,18 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         step: state.step,
         score: state.score,
         xpAwarded: state.xpAwarded,
-        completedSteps: [...state.completedSteps],
+        awardedKeys: [...state.awardedKeys],
+        ledger: state.ledger,
         bennetSightings: [...state.bennetSightings],
         coverSecretsFound: [...state.coverSecretsFound],
         selectedPinId: state.selectedPinId,
-        rewound1086: state.rewound1086,
+        testedPinIds: [...state.testedPinIds],
         swampSecretsFound: [...state.swampSecretsFound],
         beat1SubMode: state.beat1SubMode,
         foundFarehamAssets: [...state.foundFarehamAssets],
         farehamExtrasFound: [...state.farehamExtrasFound],
         serviReflected: state.serviReflected,
+        serviQuizAnswer: state.serviQuizAnswer,
         xraySplitPct: state.xraySplitPct,
         selectedManorId: state.selectedManorId,
         b2MissionIdx: state.b2MissionIdx,
@@ -257,9 +538,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         rulingVikings: state.rulingVikings,
         rulingBishop: state.rulingBishop,
         assizeVerdictRevealed: state.assizeVerdictRevealed,
-        beat4Tab: state.beat4Tab,
         hutPeopleGroups: [...state.hutPeopleGroups],
         foundBlindSpots: [...state.foundBlindSpots],
+        hutQuizAnswer: state.hutQuizAnswer,
         translationPct: state.translationPct,
         b5ClueStep: state.b5ClueStep,
         b5SolvedClues: [...state.b5SolvedClues],
@@ -269,9 +550,6 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       };
       sessionStorage.setItem(SESSION_SAVE_KEY, JSON.stringify(payload));
     } catch (_) {}
-    if (state.step === 'beat5' && state.score > 0) {
-      saveArcadePersonalBest('medieval_england', 'domesday_stubitone', 'all', state.score);
-    }
   }
 
   function hydrateSessionState() {
@@ -284,16 +562,22 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       if (s.step && STEPS.some((x) => x.id === s.step)) state.step = s.step;
       if (typeof s.score === 'number') state.score = s.score;
       state.xpAwarded = Boolean(s.xpAwarded);
-      if (Array.isArray(s.completedSteps)) state.completedSteps = new Set(s.completedSteps);
+      if (Array.isArray(s.awardedKeys)) state.awardedKeys = new Set(s.awardedKeys);
+      if (s.ledger && typeof s.ledger === 'object') state.ledger = { ...state.ledger, ...s.ledger };
       if (Array.isArray(s.bennetSightings)) state.bennetSightings = new Set(s.bennetSightings);
-      if (Array.isArray(s.coverSecretsFound)) state.coverSecretsFound = new Set(s.coverSecretsFound);
+      if (Array.isArray(s.coverSecretsFound))
+        state.coverSecretsFound = new Set(s.coverSecretsFound);
       if (s.selectedPinId) state.selectedPinId = s.selectedPinId;
-      state.rewound1086 = Boolean(s.rewound1086);
-      if (Array.isArray(s.swampSecretsFound)) state.swampSecretsFound = new Set(s.swampSecretsFound);
+      if (Array.isArray(s.testedPinIds)) state.testedPinIds = new Set(s.testedPinIds);
+      if (Array.isArray(s.swampSecretsFound))
+        state.swampSecretsFound = new Set(s.swampSecretsFound);
       if (s.beat1SubMode) state.beat1SubMode = s.beat1SubMode;
-      if (Array.isArray(s.foundFarehamAssets)) state.foundFarehamAssets = new Set(s.foundFarehamAssets);
-      if (Array.isArray(s.farehamExtrasFound)) state.farehamExtrasFound = new Set(s.farehamExtrasFound);
+      if (Array.isArray(s.foundFarehamAssets))
+        state.foundFarehamAssets = new Set(s.foundFarehamAssets);
+      if (Array.isArray(s.farehamExtrasFound))
+        state.farehamExtrasFound = new Set(s.farehamExtrasFound);
       state.serviReflected = Boolean(s.serviReflected);
+      state.serviQuizAnswer = s.serviQuizAnswer || null;
       if (typeof s.xraySplitPct === 'number') state.xraySplitPct = s.xraySplitPct;
       if (s.selectedManorId) state.selectedManorId = s.selectedManorId;
       if (typeof s.b2MissionIdx === 'number') state.b2MissionIdx = s.b2MissionIdx;
@@ -302,9 +586,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       state.rulingVikings = s.rulingVikings || null;
       state.rulingBishop = s.rulingBishop || null;
       state.assizeVerdictRevealed = Boolean(s.assizeVerdictRevealed);
-      if (s.beat4Tab) state.beat4Tab = s.beat4Tab;
       if (Array.isArray(s.hutPeopleGroups)) state.hutPeopleGroups = new Set(s.hutPeopleGroups);
       if (Array.isArray(s.foundBlindSpots)) state.foundBlindSpots = new Set(s.foundBlindSpots);
+      state.hutQuizAnswer = s.hutQuizAnswer || null;
       if (typeof s.translationPct === 'number') state.translationPct = s.translationPct;
       if (typeof s.b5ClueStep === 'number') state.b5ClueStep = s.b5ClueStep;
       if (Array.isArray(s.b5SolvedClues)) state.b5SolvedClues = new Set(s.b5SolvedClues);
@@ -318,20 +602,36 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     try {
       sessionStorage.removeItem(SESSION_SAVE_KEY);
     } catch (_) {}
+    audio.stopVoice();
     state.step = 'cover';
-    state.completedSteps.clear();
+    state.resetArmed = false;
+    state.closeArmed = false;
+    state.activeModal = null;
     state.score = 0;
+    state.awardedKeys.clear();
+    state.ledger = {
+      cover: 0,
+      beat0: 0,
+      beat1: 0,
+      beat2: 0,
+      beat3: 0,
+      beat4: 0,
+      beat5: 0,
+      beat6: 0,
+      turnips: 0,
+    };
     state.bennetSightings.clear();
     state.coverSecretsFound.clear();
     state.selectedPinId = 'gosport';
-    state.rewound1086 = false;
+    state.testedPinIds.clear();
     state.peekSwampAnyway = false;
     state.swampSecretsFound.clear();
     state.beat1SubMode = 'hunt';
     state.foundFarehamAssets.clear();
     state.farehamExtrasFound.clear();
     state.serviReflected = false;
-    state.xraySplitPct = 20;
+    state.serviQuizAnswer = null;
+    state.xraySplitPct = 22;
     state.selectedManorId = 'stubbington';
     state.showModernGhost = false;
     state.b2MissionIdx = 0;
@@ -341,9 +641,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     state.rulingVikings = null;
     state.rulingBishop = null;
     state.assizeVerdictRevealed = false;
-    state.beat4Tab = 'hut';
     state.hutPeopleGroups = new Set(['husband_head']);
     state.foundBlindSpots.clear();
+    state.hutQuizAnswer = null;
     state.translationPct = 0;
     state.activeChunkIdx = 0;
     state.b5ClueStep = 0;
@@ -352,18 +652,32 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     state.stampAnswers = {};
     state.archiveBounty1 = null;
     state.archiveBounty2 = null;
+    audio.setMode('overture');
     setSpeech(
-      'guy',
-      'Sir Guy de Rouen • Royal Exchequer Clerk',
-      isTouchUI()
-        ? 'Tap glowing spots on the painting to poke 1086 secrets—or press BEGIN 1086 ROYAL AUDIT to test your hometown!'
-        : 'Hover over the painting to spot discreet shiny secrets—or press BEGIN 1086 ROYAL AUDIT to test your hometown!',
+      'salty',
+      'Salty the Solent Seagull • 1086 Tour Guide',
+      'Squawk! Fresh parchment unrolled! Tap any glowing gold spot on the cover—or press BEGIN 1086 ROYAL AUDIT!',
+      'cover_salty_intro',
     );
     mountedSceneSignature = '';
     render({ isStepNavigation: true });
   }
 
   hydrateSessionState();
+
+  function cleanupMicRecorder() {
+    if (activeMediaRecorder && activeMediaRecorder.state !== 'inactive') {
+      try {
+        activeMediaRecorder.stop();
+      } catch (_) {}
+    }
+    activeMediaRecorder = null;
+    recordingClipId = null;
+    if (activeMicStream) {
+      activeMicStream.getTracks().forEach((t) => t.stop());
+      activeMicStream = null;
+    }
+  }
 
   function cleanupFx() {
     if (activeFx) {
@@ -386,18 +700,15 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
   function restoreScrollSnapshot(snap) {
     if (!snap) return;
-    if (shellEl && shellEl.scrollTop !== snap.shellTop) {
-      shellEl.scrollTop = snap.shellTop;
-    }
+    if (shellEl && shellEl.scrollTop !== snap.shellTop) shellEl.scrollTop = snap.shellTop;
     const modalEl = document.getElementById('hh-classroom-lab-modal');
-    if (modalEl && modalEl.scrollTop !== snap.modalTop) {
-      modalEl.scrollTop = snap.modalTop;
-    }
+    if (modalEl && modalEl.scrollTop !== snap.modalTop) modalEl.scrollTop = snap.modalTop;
     const mainEl = document.getElementById('main-content');
-    if (mainEl && mainEl.scrollTop !== snap.mainTop) {
-      mainEl.scrollTop = snap.mainTop;
-    }
-    if (typeof window !== 'undefined' && (window.scrollY !== snap.winY || window.scrollX !== snap.winX)) {
+    if (mainEl && mainEl.scrollTop !== snap.mainTop) mainEl.scrollTop = snap.mainTop;
+    if (
+      typeof window !== 'undefined' &&
+      (window.scrollY !== snap.winY || window.scrollX !== snap.winX)
+    ) {
       window.scrollTo(snap.winX, snap.winY);
     }
   }
@@ -415,6 +726,19 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     }
   }
 
+  function nudgeNextButtonIntoViewIfOffscreen() {
+    if (!shellEl || typeof window === 'undefined') return;
+    setTimeout(() => {
+      if (unmounted || !shellEl) return;
+      const btn = shellEl.querySelector('.dst-next-btn, .dst-victory-card');
+      if (!btn) return;
+      const rect = btn.getBoundingClientRect();
+      if (rect.bottom > window.innerHeight + 18) {
+        btn.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    }, 90);
+  }
+
   function scrollStageToTopOnStepChange() {
     if (shellEl) shellEl.scrollTop = 0;
     const modalEl = document.getElementById('hh-classroom-lab-modal');
@@ -427,12 +751,26 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     }
   }
 
+  // Always stops previous speech immediately so audio NEVER bleeds across clicks or stages!
   function setSpeech(avatarKey, speaker, text, voClipId = null) {
-    state.avatarKey = avatarKey || 'guy';
+    audio.stopVoice();
+    state.avatarKey = avatarKey || 'salty';
     state.speakerName = speaker;
     state.speechText = text;
-    if (voClipId) audio.playVoice(voClipId);
+    state.lastVoClipId = voClipId || null;
+    if (voClipId) {
+      audio.playVoice(voClipId);
+    }
   }
+
+  audio.onVoStateChange = () => {
+    if (!unmounted && shellEl) {
+      const spSlot = shellEl.querySelector('#dst-speech-slot');
+      if (spSlot) spSlot.innerHTML = renderSpeechInnerHTML();
+      const covSlot = shellEl.querySelector('#dst-cover-quote-slot');
+      if (covSlot) covSlot.innerHTML = renderCoverQuoteInnerHTML();
+    }
+  };
 
   function triggerHintPulse() {
     state.hintShimmer = true;
@@ -441,91 +779,123 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     shimmerTimeout = setTimeout(() => {
       state.hintShimmer = false;
       shellEl?.classList.remove('dst-hint-shimmer');
-    }, 1900);
+    }, 2200);
   }
 
-  function computeHutPeopleCount() {
-    let total = 1;
-    if (state.hutPeopleGroups.has('edith')) total += 1;
-    if (state.hutPeopleGroups.has('five_kids')) total += 5;
-    if (state.hutPeopleGroups.has('grandma')) total += 1;
-    return total;
+  function resolveMusicMode() {
+    if (state.step === 'cover') return 'overture';
+    if (state.step === 'beat0') return 'marsh_shanty';
+    if (state.step === 'beat1') return state.beat1SubMode === 'servi' ? 'solemn' : 'millwheel_jig';
+    if (state.step === 'beat2') return 'norman_march';
+    if (state.step === 'beat3') return 'assize';
+    if (state.step === 'beat4') return 'hearth_pastoral';
+    if (state.step === 'beat5') return 'scriptorium';
+    return Object.keys(state.stampAnswers).length >= 3 ? 'victory_jubilee' : 'overture';
   }
 
   function getSceneSignature() {
     if (!data) return 'loading';
     if (state.step === 'beat0') {
-      const selPin = data.modernPins.find((p) => p.id === state.selectedPinId) || data.modernPins[0];
-      const vanished = state.rewound1086 && !selPin.existed1086;
-      const showSwamp = state.rewound1086 && (vanished || state.peekSwampAnyway);
-      return `beat0:${showSwamp ? 'swamp' : state.rewound1086 ? 'dossier' : 'pre'}`;
+      const selPin =
+        data.modernPins.find((p) => p.id === state.selectedPinId) || data.modernPins[0];
+      const isTested = state.testedPinIds.has(selPin.id);
+      const showSwamp = isTested && (!selPin.existed1086 || state.peekSwampAnyway);
+      return `beat0:${showSwamp ? 'swamp' : isTested ? 'dossier' : 'start'}`;
     }
     if (state.step === 'beat1') return `beat1:${state.beat1SubMode}`;
-    if (state.step === 'beat4') return `beat4:${state.beat4Tab}`;
+    if (state.step === 'beat6') {
+      return `beat6:${Object.keys(state.stampAnswers).length >= 3 ? 'won' : 'stamps'}`;
+    }
     return state.step;
   }
 
   function goToStep(nextStep) {
     state.step = nextStep;
-    if (nextStep === 'beat0') {
-      audio.setMode('overture');
+    state.resetArmed = false;
+    state.closeArmed = false;
+    audio.setMode(resolveMusicMode());
+
+    if (nextStep === 'cover') {
       setSpeech(
-        'guy',
-        'Sir Guy de Rouen • Royal Clerk',
-        'Tap the coastal town you know best—then pull the 940-Year Rewind Lever to see if your house survives in 1086!',
+        'salty',
+        'Salty the Solent Seagull • 1086 Tour Guide',
+        'Squawk! Tap any glowing gold spot on the cover—or press BEGIN 1086 ROYAL AUDIT!',
+        'cover_salty_intro',
+      );
+    } else if (nextStep === 'beat0') {
+      setSpeech(
+        'salty',
+        'Salty the Solent Seagull • Stage 1 of 7',
+        'Stage One! Tap any two coastal places on the map (or town buttons below) to see whose house survives in 1086!',
+        'beat0_salty_guide',
       );
     } else if (nextStep === 'beat1') {
-      audio.setMode(state.beat1SubMode === 'servi' ? 'solemn' : 'overture');
-      setSpeech(
-        'odo',
-        'Sweating Reeve Odo • Fareham',
-        isTouchUI()
-          ? 'I swear on Saint Swithin’s holy bones, my Lord—barely two squeaky little watermills in all of Fareham! Tap around the creek to check if I’m lying!'
-          : 'I swear on Saint Swithin’s holy bones, my Lord—barely two squeaky little watermills in all of Fareham! Move your cursor across the creek to check if I’m lying!',
-        'beat1_odo_oath',
-      );
+      if (state.beat1SubMode === 'servi') {
+        setSpeech(
+          'gyrth',
+          'Gyrth • Enslaved Ploughman in Fareham (1 of 10 Servi)',
+          'The Bishop’s scribe wrote all ten of us down on the parchment right beside the plough-oxen. In 1086 Fareham, enslaved workers own no land, and we cannot leave.',
+          'beat1_gyrth_servi',
+        );
+      } else {
+        setSpeech(
+          'odo',
+          'Sweating Reeve Odo • Stage 2 of 7',
+          'I swear on Saint Swithin’s holy bones, my Lord—barely two squeaky little watermills in all of Fareham! Click the glowing spots to check if I’m lying!',
+          'beat1_odo_oath',
+        );
+      }
     } else if (nextStep === 'beat2') {
-      audio.setMode('overture');
       setSpeech(
-        'guy',
-        'Royal Survey X-Ray • 1066 vs 1086',
-        'Mission 1 of 3: Drag the golden X-Ray bar across the Solent map from 1066 to 1086 and watch what happens to every English landowner!',
+        'salty',
+        'Salty the Solent Seagull • Stage 3 of 7',
+        'Squawk! Stage Three—the 1066 Wipeout! Drag the golden X-Ray bar across the Solent map and crack our 3 detective clues!',
+        'beat2_salty_xray',
       );
     } else if (nextStep === 'beat3') {
-      audio.setMode('assize');
       setSpeech(
         'villager',
-        'Fareham Villager • Sworn Witness',
-        isTouchUI()
-          ? 'Tap the witnesses in the torch-lit hall to hear both sides—then cast your Royal Verdict on Fareham’s Viking discount and £20 rent squeeze!'
-          : 'Hover over the witnesses in the torch-lit hall to hear both sides—then cast your Royal Verdict on Fareham’s Viking discount and £20 rent squeeze!',
+        'Wulf of Fareham • Stage 4 of 7 (Royal Courtroom)',
+        'Tap the witnesses in the torch-lit hall to hear both sides—then pick your 2 Royal Rulings and SLAM THE GAVEL!',
         'beat3_villager_plea',
       );
     } else if (nextStep === 'beat4') {
-      audio.setMode('overture');
       setSpeech(
         'monk',
-        'Brother Aldwin • Winchester Chronicler',
-        isTouchUI()
-          ? 'Domesday says Stubbington has "9 households"—tap inside Hut #3 to count how many REAL human beings are hiding in just ONE household!'
-          : 'Domesday says Stubbington has "9 households"—hover inside Hut #3 to count how many REAL human beings are hiding in just ONE household!',
+        'Brother Aldwin • Stage 5 of 7 (Edith’s Hut #3)',
+        'Domesday says Stubbington has "9 households"—tap inside Hut #3 to count how many REAL human beings are hiding in just ONE household!',
         'beat4_monk_myth',
       );
     } else if (nextStep === 'beat5') {
-      audio.setMode('overture');
+      setSpeech(
+        'monk',
+        'Great Domesday Folio 46v • Stage 6 of 7 (Crack the Latin)',
+        'Behold Stubbington’s genuine 1086 entry! Use the Scribe Key on the right to tap the 3 matching Latin lines!',
+        'beat5_stubitone_latin',
+      );
+    } else if (nextStep === 'beat6') {
       if (!state.xpAwarded) {
         state.xpAwarded = true;
-        window.hhAwardXp?.({ amount: 35, source: 'domesday_stubitone', unitId: 'medieval_england' });
         ctx.onRoundComplete?.();
       }
       saveArcadePersonalBest('medieval_england', 'domesday_stubitone', 'all', state.score);
-      setSpeech(
-        'monk',
-        'Great Domesday Folio 46v • STVBITONE',
-        'Code-Breaker Finale! Hunt Stubbington’s real 1086 Latin lines on the left and tap the exact line that proves each of our 3 clues—use the Decoder Slider if you need a peek!',
-        'beat5_stubitone_latin',
-      );
+      if (Object.keys(state.stampAnswers).length >= 3) {
+        setSpeech(
+          'guy',
+          'Royal Audit Complete — You Beat the Game! 🏆',
+          'Every village figure you investigated comes straight from the real 1086 Domesday Book—claim or print your Official Royal Warrant below!',
+          'beat5_debrief_historian',
+        );
+      } else {
+        setSpeech(
+          'salty',
+          'Salty the Solent Seagull • Stage 7 of 7 (Final Boss!)',
+          'Final challenge! Stamp these 3 claims Real 1086 or Comedy Cast to slam King William’s Great Seal and beat the game!',
+          'beat6_salty_finale',
+        );
+      }
     }
+
     persistSessionState();
     preloadUpcomingStageAssets(nextStep);
     render({ isStepNavigation: true });
@@ -534,6 +904,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   function toggleFullscreenMode() {
     state.isFullscreen = !state.isFullscreen;
     shellEl?.classList.toggle('dst-is-fullscreen', state.isFullscreen);
+    ctx.onFullscreenChange?.(state.isFullscreen);
     if (state.isFullscreen) {
       if (shellEl?.requestFullscreen) {
         shellEl
@@ -555,6 +926,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       enteredBrowserFs = false;
       state.isFullscreen = false;
       shellEl?.classList.remove('dst-is-fullscreen');
+      ctx.onFullscreenChange?.(false);
       syncHudOnly();
     }
   };
@@ -563,32 +935,149 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   }
 
   // =========================================================================
+  // PRINTABLE CERTIFICATES & YEAR 7 CLASS DRAMA SCRIPT (100% ANONYMOUS)
+  // =========================================================================
+  function openPrintableCommissionerWarrant() {
+    if (typeof window === 'undefined') return;
+    const win = window.open('', '_blank', 'width=880,height=660');
+    if (!win) return;
+    const rank = computeRankFromScore(state.score);
+    const dateStr = new Date().toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
+    });
+    win.document.write(`<!DOCTYPE html>
+      <html lang="en"><head><meta charset="utf-8"><title>1086 Royal Domesday Commissioner Warrant</title>
+      <style>
+        body { font-family: Georgia, serif; background: #f8fafc; margin: 0; padding: 24px; text-align: center; color: #1c1917; }
+        .warrant { max-width: 760px; margin: 0 auto; padding: 32px 38px; background: #fffbeb; border: 7px double #92400e; border-radius: 16px; box-shadow: 0 12px 30px rgba(0,0,0,0.12); }
+        .kicker { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 900; letter-spacing: 1.5px; color: #9a3412; text-transform: uppercase; }
+        h1 { font-size: 28px; margin: 8px 0 4px; color: #1c1917; }
+        .rank { font-size: 18px; font-weight: bold; color: #15803d; margin: 6px 0 14px; }
+        .line { display: inline-block; width: 280px; border-bottom: 2px solid #44403c; margin: 12px 0 4px; height: 24px; }
+        .pills { display: flex; flex-wrap: wrap; justify-content: center; gap: 7px; margin: 14px 0 18px; font-family: system-ui, sans-serif; font-size: 11.5px; font-weight: 800; }
+        .pill { padding: 4px 11px; border-radius: 999px; background: #dcfce7; border: 1px solid #16a34a; color: #14532d; }
+        @media print { .no-print { display: none; } body { background: #fff; padding: 0; } }
+      </style></head><body>
+      <div class="warrant">
+        <div class="kicker">The History Revision Hub • Key Stage 3 Medieval England (1066–1086)</div>
+        <div style="font-size:42px;margin:6px 0;">${rank.icon}</div>
+        <h1>Royal 1086 Domesday Commissioner Warrant</h1>
+        <div class="rank">Official Rank: ${rank.title} (${state.score} Silver Pennies)</div>
+        <p style="font-size:14.5px;color:#44403c;margin:0 0 8px;">Awarded for completing <em>The Secret of Stubitone™</em> &amp; investigating genuine 1086 Hampshire Domesday records</p>
+        <div><span class="line"></span><div style="font-size:12px;color:#57534e;">Royal Commissioner’s Name</div></div>
+        <div class="pills">
+          <span class="pill">✓ 1086 Solent Town Audit</span>
+          <span class="pill">✓ Fareham’s 5 Mills &amp; 10 Servi</span>
+          <span class="pill">✓ 1066 Saxon Land Wipeout</span>
+          <span class="pill">✓ Fareham Viking Tax Verdict</span>
+          <span class="pill">✓ Stubbington Hidden Households</span>
+          <span class="pill">✓ Folio 46v Latin Decoded</span>
+          <span class="pill">🥕 Turnip Seals: ${state.bennetSightings.size}/3</span>
+        </div>
+        <div style="font-size:12.5px;color:#57534e;">Sealed at Winchester • ${dateStr}</div>
+        <div class="no-print" style="margin-top:18px;">
+          <button onclick="window.print()" style="padding:10px 22px;font-weight:800;border-radius:8px;border:none;background:#b45309;color:#fff;cursor:pointer;">🖨️ Print / Save Warrant as PDF</button>
+        </div>
+      </div></body></html>`);
+    win.document.close();
+  }
+
+  function openPrintableClassDramaScript() {
+    if (typeof window === 'undefined') return;
+    const win = window.open('', '_blank', 'width=900,height=720');
+    if (!win) return;
+    win.document.write(`<!DOCTYPE html>
+      <html lang="en"><head><meta charset="utf-8"><title>1086 Domesday Class Voice-Acting Script</title>
+      <style>
+        body { font-family: system-ui, -apple-system, sans-serif; margin: 0; padding: 24px; color: #1c1917; background: #fff; }
+        .wrap { max-width: 780px; margin: 0 auto; }
+        h1 { font-family: Georgia, serif; font-size: 22px; margin: 4px 0; }
+        .sub { font-size: 13px; color: #57534e; margin-bottom: 14px; border-bottom: 2px solid #b45309; padding-bottom: 8px; }
+        .cue { border: 1.5px solid #d6d3d1; border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; page-break-inside: avoid; }
+        .role { font-weight: 900; font-size: 13px; color: #9a3412; }
+        .dir { font-size: 11.5px; font-style: italic; color: #57534e; margin-bottom: 3px; }
+        .line { font-family: Georgia, serif; font-size: 14px; font-weight: 700; color: #0f172a; }
+        @media print { .no-print { display: none; } body { padding: 10px; } }
+      </style></head><body>
+      <div class="wrap">
+        <div class="no-print" style="margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;">
+          <strong style="color:#9a3412;">The History Revision Hub • Year 7 Drama &amp; Oracy Extension</strong>
+          <button onclick="window.print()" style="padding:8px 18px;font-weight:800;border-radius:8px;border:none;background:#ea580c;color:#fff;cursor:pointer;">🖨️ Print Class Script</button>
+        </div>
+        <h1>🎭 The Secret of Stubitone™ — Class Voice-Acting Script (1086)</h1>
+        <div class="sub">Assign 11 pupils a medieval character! Record directly inside the game’s <strong>🎙️ Voice Act</strong> booth to hear your own class inside the adventure.</div>
+        ${DRAMA_CAST_SCRIPT.map(
+          (c, i) => `
+          <div class="cue">
+            <div class="role">#${i + 1} • ${c.role}</div>
+            <div class="dir">Acting tip: ${c.direction}</div>
+            <div class="line">&ldquo;${c.line}&rdquo;</div>
+          </div>
+        `,
+        ).join('')}
+      </div></body></html>`);
+    win.document.close();
+  }
+
+  // =========================================================================
   // PARTIAL HTML FRAGMENT BUILDERS
   // =========================================================================
   function getStageMicroHint() {
-    const touch = isTouchUI();
-    if (state.step === 'beat2' || (state.step === 'beat4' && state.beat4Tab === 'map')) {
-      return '🗺️ Tap shields & pins on the Solent map';
-    }
-    if (state.step === 'beat0' && !state.rewound1086) {
-      return '📍 Tap any coastal town pin on the map';
-    }
-    if (state.step === 'beat5') {
-      return '📜 Slide curtain & tap Latin lines to decode';
-    }
-    return touch ? '✨ Tap glowing spots on painting' : '✨ Hover scene for shiny glint dots';
+    if (state.step === 'beat0') return '📍 Tap any 2 coastal towns on map';
+    if (state.step === 'beat2') return '🗺️ Drag X-Ray bar & tap shields';
+    if (state.step === 'beat5') return '📜 Use Scribe Key to tap 3 Latin lines';
+    if (state.step === 'beat6') return '🔨 Stamp all 3 claims to beat the game!';
+    return '✨ Click glowing gold spots on painting';
+  }
+
+  function renderMissionBannerHTML(text, progressText, isDone) {
+    return `
+      <div class="dst-mission-banner ${isDone ? 'is-complete' : ''}">
+        <span>${isDone ? '✅' : '🎯'} ${text}</span>
+        <span class="dst-mission-progress">${progressText}</span>
+      </div>
+    `;
+  }
+
+  function renderVoControlsHTML() {
+    const playing = audio.isVoicePlaying();
+    if (!state.lastVoClipId && !playing) return '';
+    return `
+      <span style="display:inline-flex;align-items:center;gap:5px;">
+        ${
+          playing
+            ? `<button type="button" class="dst-vo-pill-btn" data-vo-act="stop" title="Stop current character voice">
+                 <i class="fa-solid fa-stop"></i> Stop
+               </button>`
+            : ''
+        }
+        ${
+          state.lastVoClipId
+            ? `<button type="button" class="dst-vo-pill-btn" data-vo-act="replay" title="Replay character voice line">
+                 <i class="fa-solid fa-volume-high"></i> Replay
+               </button>`
+            : ''
+        }
+      </span>
+    `;
   }
 
   function renderTopBarInnerHTML() {
-    const curIdx = Math.max(0, STEPS.findIndex((s) => s.id === state.step));
+    const curIdx = Math.max(
+      0,
+      STEPS.findIndex((s) => s.id === state.step),
+    );
     const prevStep = curIdx > 0 ? STEPS[curIdx - 1].id : '';
     const nextStep = curIdx < STEPS.length - 1 ? STEPS[curIdx + 1].id : '';
+    const customCount = audio.classBlobUrls.size;
 
     return `
       <div class="dst-step-strip" role="tablist" aria-label="1086 Domesday Stages">
         ${STEPS.map((s) => {
           const isAct = state.step === s.id;
-          const isDone = state.completedSteps.has(s.id);
+          const isDone = isStepTrulyComplete(s.id);
           return `
             <button type="button" role="tab" aria-selected="${isAct}"
                     class="dst-step-pill ${isAct ? 'is-active' : ''} ${isDone ? 'is-done' : ''}"
@@ -606,10 +1095,10 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         <select id="dst-mob-step-select" class="dst-mobile-step-select" aria-label="Choose 1086 Domesday Stage">
           ${STEPS.map((s) => {
             const isAct = state.step === s.id;
-            const isDone = state.completedSteps.has(s.id);
+            const isDone = isStepTrulyComplete(s.id);
             return `<option value="${s.id}" ${isAct ? 'selected' : ''}>${isDone && !isAct ? '✓ ' : ''}${s.mob}</option>`;
           }).join('')}
-          ${state.score > 0 || state.completedSteps.size > 0 ? `<option value="__reset__">↺ Restart Audit</option>` : ''}
+          ${state.score > 0 || state.step !== 'cover' ? `<option value="__reset__">↺ Restart Audit</option>` : ''}
         </select>
         <button type="button" class="dst-mob-arrow-btn" id="dst-mob-next" ${nextStep ? `data-goto-step="${nextStep}"` : 'disabled'} aria-label="Next Stage">
           <i class="fa-solid fa-chevron-right"></i>
@@ -617,25 +1106,33 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       </div>
 
       <div class="dst-ctrl-group">
-        <span class="dst-score-chip">
-          🪙 ${state.score}<span class="dst-score-verb"> pts</span> • ${state.bennetSightings.size >= 3 ? '🥕 3/3★' : `🥕<span class="dst-score-verb"> Turnips</span> ${state.bennetSightings.size}/3`}
+        <span class="dst-score-chip" title="Your Silver Penny Score (carries over to Stage 7 Royal Rank!)">
+          🪙 ${state.score}<span class="dst-score-verb"> pts</span> • ${state.bennetSightings.size >= 3 ? '🥕 3/3★' : `🥕 ${state.bennetSightings.size}/3`}
         </span>
+        <button type="button" class="dst-icon-btn dst-hide-narrow ${audio.voicePack === 'class_cast' ? 'is-active' : ''}" data-dst-action="drama" title="Class Voice-Acting Booth & Printable Script">
+          <i class="fa-solid fa-microphone-lines"></i>
+          <span class="dst-btn-lbl">${audio.voicePack === 'class_cast' ? `Class Cast (${customCount})` : 'Voice Act'}</span>
+        </button>
         ${
-          state.score > 0 || state.completedSteps.size > 0
-            ? `<button type="button" class="dst-icon-btn dst-hide-narrow" data-dst-action="reset" title="Restart 1086 Audit from Scratch" aria-label="Restart Audit"><i class="fa-solid fa-rotate-left"></i></button>`
+          state.score > 0 || state.step !== 'cover'
+            ? `<button type="button" class="dst-icon-btn dst-hide-narrow ${state.resetArmed ? 'is-armed-warn' : ''}" data-dst-action="reset" title="${state.resetArmed ? 'Click again to confirm restart' : 'Restart 1086 Audit'}" aria-label="Restart Audit">
+                 <i class="fa-solid fa-rotate-left"></i>${state.resetArmed ? '<span class="dst-btn-lbl">Sure?</span>' : ''}
+               </button>`
             : ''
         }
-        <button type="button" class="dst-icon-btn ${!audio.muted ? 'is-active' : ''}" data-dst-action="mute" title="Toggle Voiceovers & Sound Effects" aria-label="Toggle Audio">
-          <i class="fa-solid ${audio.muted ? 'fa-volume-xmark' : 'fa-volume-high'}"></i>
-          <span class="dst-btn-lbl">${audio.muted ? 'Muted' : 'Audio On'}</span>
+        <button type="button" class="dst-icon-btn ${!audio.muted ? 'is-active' : ''}" data-dst-action="mute" title="Soundtrack: ${audio.getActiveTrackTitle()} — Click to Mute/Unmute" aria-label="Toggle Audio">
+          <i class="fa-solid ${audio.muted ? 'fa-volume-xmark' : 'fa-music'}"></i>
+          <span class="dst-btn-lbl">${audio.muted ? 'Muted' : 'Audio'}</span>
         </button>
-        <button type="button" class="dst-icon-btn ${state.isFullscreen ? 'is-active' : ''}" data-dst-action="fs" title="Toggle Full-Screen Smartboard / Tablet View" aria-label="Toggle Full Screen">
+        <button type="button" id="dst-fs-btn" class="dst-icon-btn ${state.isFullscreen ? 'is-active' : ''}" data-dst-action="fs" title="Toggle Full-Screen View" aria-label="Toggle Full Screen">
           <i class="fa-solid ${state.isFullscreen ? 'fa-compress' : 'fa-expand'}"></i>
           <span class="dst-btn-lbl">${state.isFullscreen ? 'Windowed' : 'Full Screen'}</span>
         </button>
         ${
           typeof ctx.onCloseModal === 'function'
-            ? `<button type="button" class="dst-icon-btn" data-dst-action="close" style="border-color:#ef4444;color:#fecaca;" aria-label="Close Adventure"><i class="fa-solid fa-xmark"></i><span class="dst-btn-lbl">Close</span></button>`
+            ? `<button type="button" class="dst-icon-btn ${state.closeArmed ? 'is-armed-warn' : ''}" data-dst-action="close" style="border-color:#ef4444;color:#fecaca;" aria-label="Close Adventure">
+                 <i class="fa-solid fa-xmark"></i><span class="dst-btn-lbl">${state.closeArmed ? 'Exit?' : 'Close'}</span>
+               </button>`
             : ''
         }
       </div>
@@ -643,7 +1140,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   }
 
   function renderSpeechInnerHTML() {
-    const av = SPEAKER_AVATARS[state.avatarKey] || SPEAKER_AVATARS.guy;
+    const av = SPEAKER_AVATARS[state.avatarKey] || SPEAKER_AVATARS.salty;
     return `
       <div class="dst-avatar-medallion"
            style="background-image:url('${av.img}');background-position:${av.pos};background-size:${av.size};"
@@ -651,7 +1148,10 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       <div style="flex:1;min-width:0;">
         <div class="dst-speech-speaker">
           <span>🎙️ ${state.speakerName}</span>
-          <span class="dst-speech-hint-chip">${getStageMicroHint()}</span>
+          <span style="display:inline-flex;align-items:center;gap:6px;">
+            ${renderVoControlsHTML()}
+            <span class="dst-speech-hint-chip">${getStageMicroHint()}</span>
+          </span>
         </div>
         <p class="dst-speech-text">&ldquo;${state.speechText}&rdquo;</p>
       </div>
@@ -661,10 +1161,10 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   function renderSceneFooterBarHTML(secretFoundCount, secretTotalCount, captionText) {
     return `
       <div class="dst-scene-caption-strip" id="dst-scene-caption-slot">
-        <span id="dst-scene-secret-tally">✨ <strong>Secrets:</strong> ${secretFoundCount} / ${secretTotalCount}</span>
+        <span id="dst-scene-secret-tally">✨ <strong>Hotspots:</strong> ${secretFoundCount} / ${secretTotalCount}</span>
         <span class="dst-caption-mid" style="color:#a8a29e;">${captionText}</span>
         <button type="button" class="dst-icon-btn" data-action="hint-shimmer" style="min-height:30px;padding:3px 9px;font-size:0.72rem;">
-          ✨ Glint Hint
+          ✨ Flash Spots
         </button>
       </div>
     `;
@@ -672,10 +1172,13 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
   function renderCoverQuoteInnerHTML() {
     return `
-      <div style="font-size:0.71rem;font-weight:900;color:#fbbf24;text-transform:uppercase;margin-bottom:2px;">
-        🎙️ ${state.speakerName} • (${state.coverSecretsFound.size}/5 Secrets)
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:2px;">
+        <span style="font-size:0.71rem;font-weight:900;color:#fbbf24;text-transform:uppercase;">
+          🐦 ${state.speakerName} • (${state.coverSecretsFound.size}/8 Cover Secrets)
+        </span>
+        ${renderVoControlsHTML()}
       </div>
-      <div style="font-size:0.85rem;font-weight:700;color:#fef3c7;line-height:1.32;">
+      <div style="font-size:0.84rem;font-weight:700;color:#fef3c7;line-height:1.32;">
         &ldquo;${state.speechText}&rdquo;
       </div>
     `;
@@ -694,14 +1197,17 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             <div class="dst-cover-logo-wrap">
               <div class="dst-lucas-kicker">⚔ KING WILLIAM EXCHEQUER STUDIOS PRESENTS ⚔</div>
               <h2 class="dst-lucas-title">THE SECRET OF STUBITONE™</h2>
-              <p class="dst-lucas-sub">A Point-and-Poke 1086 Domesday Adventure Across Fareham, Stubbington &amp; The Solent</p>
+              <p class="dst-lucas-sub">A 7-Stage Voiced 1086 Domesday Adventure Across Fareham, Stubbington &amp; The Solent</p>
             </div>
 
-            ${hitZoneHTML({ id: 'dst-cover-bennet', key: 'cov:bennet', x: 24, y: 69, w: 16, h: 32, found: state.coverSecretsFound.has('bennet'), ariaLabel: 'Inspect muddy peasant with turnip' })}
-            ${hitZoneHTML({ id: 'dst-cover-gull', key: 'cov:gull', x: 9.5, y: 23, w: 12, h: 18, found: state.coverSecretsFound.has('gull'), ariaLabel: 'Inspect glaring seagull' })}
-            ${hitZoneHTML({ id: 'dst-cover-pigs', key: 'cov:pigs', x: 61, y: 74, w: 24, h: 28, found: state.coverSecretsFound.has('pigs'), ariaLabel: 'Inspect Reeve Odo on bursting pig crate' })}
-            ${hitZoneHTML({ id: 'dst-cover-quill', key: 'cov:quill', x: 74, y: 28, w: 22, h: 32, found: state.coverSecretsFound.has('quill'), ariaLabel: 'Inspect Norman Royal Clerk and glowing quill' })}
-            ${hitZoneHTML({ id: 'dst-cover-edith', key: 'cov:edith', x: 88, y: 65, w: 13, h: 24, found: state.coverSecretsFound.has('edith'), ariaLabel: 'Inspect Edith waving ladle in cottage doorway' })}
+            ${hitZoneHTML({ id: 'dst-cover-gull', key: 'cov:gull', x: 9.5, y: 23, w: 12, h: 18, found: state.coverSecretsFound.has('gull'), ariaLabel: 'Meet Salty the Solent Seagull guide' })}
+            ${hitZoneHTML({ id: 'dst-cover-castle', key: 'cov:castle', x: 25, y: 45, w: 18, h: 18, found: state.coverSecretsFound.has('castle'), ariaLabel: 'Inspect Portchester Roman walls' })}
+            ${hitZoneHTML({ id: 'dst-cover-ship', key: 'cov:ship', x: 39.5, y: 50, w: 13, h: 20, found: state.coverSecretsFound.has('ship'), ariaLabel: 'Inspect Viking dragon longship in Fareham Creek' })}
+            ${hitZoneHTML({ id: 'dst-cover-bennet', key: 'cov:bennet', x: 23, y: 71, w: 16, h: 30, found: state.coverSecretsFound.has('bennet'), ariaLabel: 'Inspect muddy Bennet with turnip' })}
+            ${hitZoneHTML({ id: 'dst-cover-pigs', key: 'cov:pigs', x: 61, y: 74, w: 22, h: 28, found: state.coverSecretsFound.has('pigs'), ariaLabel: 'Inspect Reeve Odo on bursting pig crate' })}
+            ${hitZoneHTML({ id: 'dst-cover-quill', key: 'cov:quill', x: 66, y: 27, w: 13, h: 22, found: state.coverSecretsFound.has('quill'), ariaLabel: 'Inspect glowing golden goose-quill' })}
+            ${hitZoneHTML({ id: 'dst-cover-torso', key: 'cov:torso', x: 81, y: 36, w: 17, h: 26, found: state.coverSecretsFound.has('torso'), ariaLabel: 'Inspect Sir Guy floating torso in the storm clouds' })}
+            ${hitZoneHTML({ id: 'dst-cover-edith', key: 'cov:edith', x: 88, y: 66, w: 13, h: 24, found: state.coverSecretsFound.has('edith'), ariaLabel: 'Inspect Edith waving ladle in cottage doorway' })}
           </div>
         </div>
 
@@ -711,9 +1217,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           </div>
 
           <div class="dst-cover-cta-row">
-            <button type="button" class="dst-icon-btn" data-action="hint-shimmer">✨ Hint</button>
+            <button type="button" class="dst-icon-btn" data-action="hint-shimmer">✨ Flash Spots</button>
             <button type="button" class="dst-start-cta" id="dst-btn-start-adventure">
-              ▶ BEGIN 1086 ROYAL AUDIT
+              ▶ BEGIN 1086 ROYAL AUDIT (7 STAGES)
             </button>
           </div>
         </div>
@@ -721,26 +1227,32 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     `;
   }
 
+  // =========================================================================
+  // STAGE 1 (beat0): INSTANT 1-CLICK COASTAL TOWN REWIND
+  // =========================================================================
   function renderBeat0LeftMapAndPillsHTML() {
     return `
       <div class="dst-map-frame" id="dst-solent-map-wrap">
         ${renderSolentGisSvgHTML({
           data,
           mode: 'swamp',
-          rewound1086: state.rewound1086,
+          rewound1086: state.testedPinIds.size > 0,
           selectedPinId: state.selectedPinId,
+          testedPinIds: state.testedPinIds,
           svgUid: `${instanceSvgUid}-b0`,
         })}
       </div>
       <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">
         ${data.modernPins
-          .map(
-            (p) => `
-          <button type="button" class="dst-step-pill ${state.selectedPinId === p.id ? 'is-active' : ''}" data-pick-pin="${p.id}">
-            📍 ${p.modernName}
-          </button>
-        `,
-          )
+          .map((p) => {
+            const tested = state.testedPinIds.has(p.id);
+            const active = state.selectedPinId === p.id && tested;
+            return `
+              <button type="button" class="dst-step-pill ${active ? 'is-active' : ''} ${tested && !active ? 'is-done' : ''}" data-pick-pin="${p.id}">
+                ${tested ? (p.existed1086 ? '🏠 ' : '🌊 ') : '📍 '}${p.modernName}
+              </button>
+            `;
+          })
           .join('')}
       </div>
     `;
@@ -748,25 +1260,35 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
   function renderBeat0RightHeaderHTML() {
     const selPin = data.modernPins.find((p) => p.id === state.selectedPinId) || data.modernPins[0];
-    const vanished = state.rewound1086 && !selPin.existed1086;
+    const isTested = state.testedPinIds.has(selPin.id);
+    const vanished = isTested && !selPin.existed1086;
+    const testedCount = state.testedPinIds.size;
+
     return `
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px;">
-        <span style="font-size:0.75rem;font-weight:900;color:#fbbf24;text-transform:uppercase;">
-          STAGE 1 • WHERE IS MY HOUSE IN 1086?
-        </span>
-        <span style="font-size:0.76rem;color:#cbd5e1;font-weight:700;">Selected: <strong>${selPin.modernName}</strong></span>
-      </div>
+      ${renderMissionBannerHTML(
+        'Tap at least 2 coastal places on the map (or buttons) to rewind 940 years!',
+        `${Math.min(2, testedCount)} / 2 Tested`,
+        testedCount >= 2,
+      )}
       ${
-        state.rewound1086
+        isTested
           ? `
         <div style="padding:11px 13px;border-radius:11px;margin-bottom:10px;border:2px solid ${vanished ? '#ef4444' : '#22c55e'};background:${vanished ? 'rgba(127,29,29,0.32)' : 'rgba(20,83,45,0.32)'};">
-          <div style="font-weight:900;font-size:1rem;color:${vanished ? '#fca5a5' : '#86efac'};margin-bottom:4px;">
+          <div style="font-weight:900;font-size:0.98rem;color:${vanished ? '#fca5a5' : '#86efac'};margin-bottom:4px;">
             ${selPin.headline}
           </div>
-          <p style="margin:0;font-size:0.85rem;line-height:1.42;color:#f5f5f4;">${selPin.verdict}</p>
+          <p style="margin:0;font-size:0.84rem;line-height:1.42;color:#f5f5f4;">${selPin.verdict}</p>
         </div>
       `
-          : ''
+          : `
+        <div style="padding:14px;border-radius:11px;background:#292524;border:1.5px dashed #f59e0b;text-align:center;margin-bottom:10px;">
+          <div style="font-size:1.35rem;margin-bottom:4px;">🗺️ ⏪</div>
+          <div style="font-size:0.9rem;font-weight:800;color:#fef3c7;margin-bottom:4px;">Click Any Coastal Place to Rewind Instantly!</div>
+          <p style="margin:0;font-size:0.82rem;color:#d6d3d1;line-height:1.4;">
+            Try clicking <strong>Gosport</strong> or <strong>Portsmouth</strong> first, then compare them with <strong>Stubbington</strong>, <strong>Fareham</strong>, or <strong>Portchester</strong>!
+          </p>
+        </div>
+      `
       }
     `;
   }
@@ -775,14 +1297,14 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     const selPin = data.modernPins.find((p) => p.id === state.selectedPinId) || data.modernPins[0];
     const selManor = data.manors.find((m) => m.id === state.selectedPinId);
     return `
-      <div style="padding:12px;border-radius:11px;background:#292524;border:1.5px solid #44403c;margin-bottom:10px;">
-        <div style="font-size:0.78rem;font-weight:900;color:#fde047;margin-bottom:6px;">
+      <div style="padding:11px 12px;border-radius:11px;background:#292524;border:1.5px solid #44403c;margin-bottom:8px;">
+        <div style="font-size:0.77rem;font-weight:900;color:#fde047;margin-bottom:6px;">
           📜 1086 DOMESDAY SNAPSHOT: ${selManor ? `${selManor.name.toUpperCase()} (${selManor.domesdayName})` : selPin.modernName}
         </div>
         ${
           selManor
             ? `
-          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;font-size:0.82rem;margin-bottom:8px;">
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:7px;font-size:0.81rem;margin-bottom:8px;">
             <div style="background:#1c1917;padding:7px 9px;border-radius:7px;">🏠 <strong>${selManor.households} Households</strong> (~${selManor.households * 5} real people)</div>
             <div style="background:#1c1917;padding:7px 9px;border-radius:7px;">⚙️ <strong>${selManor.mills} Watermills</strong> • ${selManor.ploughs} Ploughs</div>
             <div style="background:#1c1917;padding:7px 9px;border-radius:7px;">🛡️ <strong>1066:</strong> ${selManor.lord1066}</div>
@@ -792,7 +1314,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             : ''
         }
         <button type="button" class="dst-icon-btn" id="dst-btn-peek-swamp" style="width:100%;border-color:#fb923c;color:#fed7aa;">
-          🐸 Peek at Empty 1086 Gosport Salt-Marsh
+          🐸 Peek at Boggy Bennet in Empty 1086 Gosport Marsh (🥕 Turnip #1!)
         </button>
       </div>
     `;
@@ -800,8 +1322,8 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
   function renderBeat0HTML() {
     const selPin = data.modernPins.find((p) => p.id === state.selectedPinId) || data.modernPins[0];
-    const vanished = state.rewound1086 && !selPin.existed1086;
-    const showSwampScene = state.rewound1086 && (vanished || state.peekSwampAnyway);
+    const isTested = state.testedPinIds.has(selPin.id);
+    const showSwampScene = isTested && (!selPin.existed1086 || state.peekSwampAnyway);
 
     return `
       <div class="dst-body">
@@ -815,94 +1337,136 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             <div id="dst-b0-verdict-slot">${renderBeat0RightHeaderHTML()}</div>
 
             ${
-              !state.rewound1086
+              showSwampScene
                 ? `
-              <p style="margin:0 0 12px 0;font-size:0.92rem;color:#e7e5e4;line-height:1.45;">
-                Pick any modern coastal place on the map (try <strong>Gosport</strong>, <strong>Portsmouth</strong>, or <strong>Stubbington</strong>!), then pull the lever to rewind <strong>940 years</strong> back to 1086!
-              </p>
-              <button type="button" class="dst-start-cta" id="dst-btn-rewind" style="width:100%;">
-                ⏪ PULL LEVER: REWIND TO 1086!
-              </button>
-            `
-                : showSwampScene
-                  ? `
               <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="swamp">
                 <img src="/images/arcade/domesday/scene_1_bennet_swamp.webp"
                      alt="Bennet Luvet waist-deep in 1086 Solent marsh mud"
                      class="domesday-diorama-img" />
                 ${hitZoneHTML({ id: 'dst-swamp-bennet', key: 'swamp:bennet', x: 56, y: 55, w: 26, h: 58, found: state.bennetSightings.has('swamp'), ariaLabel: 'Inspect Bennet Luvet and his wormy turnip' })}
-                ${hitZoneHTML({ id: 'dst-swamp-gull', key: 'swamp:gull', x: 83, y: 18, w: 15, h: 24, found: state.swampSecretsFound.has('gull'), ariaLabel: 'Inspect grumpy seagull on post' })}
+                ${hitZoneHTML({ id: 'dst-swamp-gull', key: 'swamp:gull', x: 83, y: 18, w: 15, h: 24, found: state.swampSecretsFound.has('gull'), ariaLabel: 'Inspect Salty the Seagull on post' })}
                 ${hitZoneHTML({ id: 'dst-swamp-mill', key: 'swamp:mill', x: 20, y: 38, w: 22, h: 30, found: state.swampSecretsFound.has('mill'), ariaLabel: 'Inspect distant Fareham timber watermill' })}
                 ${hitZoneHTML({ id: 'dst-swamp-torch', key: 'swamp:torch', x: 78, y: 49, w: 12, h: 24, found: state.swampSecretsFound.has('torch'), ariaLabel: 'Inspect 1086 iron pitch-torch' })}
               </div>
               ${renderSceneFooterBarHTML(
                 state.swampSecretsFound.size + (state.bennetSightings.has('swamp') ? 1 : 0),
                 4,
-                isTouchUI() ? 'Tap swamp to poke Bennet, seagull & creek!' : 'Hover swamp to poke Bennet, seagull & creek!',
+                'Click Bennet (🥕 Turnip #1!), Salty, or distant mill!',
               )}
-              <button type="button" class="dst-next-btn" data-complete-next="beat1">
-                Ride Up Fareham Creek → Catch Lying Reeve Odo <i class="fa-solid fa-arrow-right"></i>
-              </button>
             `
-                  : `
-              <div id="dst-b0-dossier-slot">${renderBeat0DossierCardHTML()}</div>
-              <button type="button" class="dst-next-btn" data-complete-next="beat1">
-                Ride Up Fareham Creek → Catch Lying Reeve Odo <i class="fa-solid fa-arrow-right"></i>
-              </button>
-            `
+                : isTested
+                  ? `<div id="dst-b0-dossier-slot">${renderBeat0DossierCardHTML()}</div>`
+                  : ''
             }
+
+            <div id="dst-b0-next-slot">
+              ${
+                state.testedPinIds.size >= 2
+                  ? `<button type="button" class="dst-next-btn" data-complete-next="beat1">
+                       Stage 2 → Ride Up Fareham Creek &amp; Catch Reeve Odo! <i class="fa-solid fa-arrow-right"></i>
+                     </button>`
+                  : `<div style="margin-top:8px;font-size:0.78rem;color:#a8a29e;text-align:center;">
+                       👆 Test ${2 - state.testedPinIds.size} more coastal place${2 - state.testedPinIds.size === 1 ? '' : 's'} to unlock Stage 2!
+                     </div>`
+              }
+            </div>
           </div>
         </div>
       </div>
     `;
   }
 
+  // =========================================================================
+  // STAGE 2 (beat1): FAREHAM HIDDEN WEALTH & 10 ENSLAVED WORKERS (SERVI)
+  // =========================================================================
   function renderBeat1SubtabsInnerHTML() {
     const foundCount = state.foundFarehamAssets.size;
     const all3Found = foundCount >= 3;
     return `
-      <button type="button" class="dst-step-pill ${state.beat1SubMode === 'hunt' ? 'is-active' : ''}" id="dst-b1-tab-hunt">
-        <span class="dst-lbl-full">🔎 Part A: Hunt Fareham's Hidden Wealth (${foundCount}/3 Assets)</span>
-        <span class="dst-lbl-short">🔎 Part A: Wealth (${foundCount}/3)</span>
+      <button type="button" class="dst-step-pill ${state.beat1SubMode === 'hunt' ? 'is-active' : ''} ${all3Found ? 'is-done' : ''}" id="dst-b1-tab-hunt">
+        <span class="dst-lbl-full">${all3Found ? '✓ ' : '🔎 '}Part A: Catch Reeve Odo (${foundCount}/3 Tax Assets)</span>
+        <span class="dst-lbl-short">${all3Found ? '✓ ' : '🔎 '}Part A (${foundCount}/3)</span>
       </button>
-      <button type="button" class="dst-step-pill ${state.beat1SubMode === 'servi' ? 'is-active' : ''} ${state.serviReflected ? 'is-done' : ''}" id="dst-b1-tab-servi">
-        <span class="dst-lbl-full">⚖️ Part B: Meet Gyrth — Fareham's 10 Enslaved Workers ${all3Found ? '' : '🔒'}</span>
-        <span class="dst-lbl-short">⚖️ Part B: 10 Servi ${all3Found ? '' : '🔒'}</span>
+      <button type="button" class="dst-step-pill ${state.beat1SubMode === 'servi' ? 'is-active' : ''} ${state.serviQuizAnswer === 'mills_servi' ? 'is-done' : ''}" id="dst-b1-tab-servi">
+        <span class="dst-lbl-full">${state.serviQuizAnswer === 'mills_servi' ? '✓ ' : '⚖️ '}Part B: Meet Gyrth — 10 Enslaved Workers ${all3Found ? '' : '🔒'}</span>
+        <span class="dst-lbl-short">${state.serviQuizAnswer === 'mills_servi' ? '✓ ' : '⚖️ '}Part B: 10 Servi ${all3Found ? '' : '🔒'}</span>
       </button>
     `;
   }
 
   function renderBeat1HuntRightPanelHTML() {
-    const all3Found = state.foundFarehamAssets.size >= 3;
-    const touch = isTouchUI();
-    const actVerb = touch ? 'Tap' : 'Hover';
+    const foundCount = state.foundFarehamAssets.size;
+    const all3Found = foundCount >= 3;
     return `
-      <div style="font-size:0.76rem;font-weight:900;color:#fbbf24;text-transform:uppercase;margin-bottom:8px;">
-        ROYAL EXCHEQUER TALLY • FAREHAM (FERHAM, 1086)
-      </div>
-      <p style="margin:0 0 10px 0;font-size:0.87rem;color:#d6d3d1;line-height:1.4;">
-        ${touch ? 'Tap glowing spots on the Fareham Creek painting' : 'Hover over the Fareham Creek painting to find shiny glint dots'} and expose all <strong>3 real taxable money-makers</strong> Reeve Odo is hiding:
-      </p>
+      ${renderMissionBannerHTML(
+        'Click the 3 hidden taxable money-makers in the Fareham Creek painting!',
+        `${foundCount} / 3 Found`,
+        all3Found,
+      )}
 
-      <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:12px;">
-        <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('mills') ? '#22c55e' : '#44403c'};font-size:0.84rem;">
-          ${state.foundFarehamAssets.has('mills') ? '✅ <strong>5 Spinning Watermills (41 shillings):</strong> Peasants were BANNED by law from grinding bread flour at home—forcing everyone to pay Bishop Walkelin’s mills!' : `⬜ Asset #1: ${actVerb} along the rushing Wallington River...`}
+      <div style="display:flex;flex-direction:column;gap:7px;margin-bottom:10px;">
+        <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('mills') ? '#22c55e' : '#44403c'};font-size:0.83rem;">
+          ${state.foundFarehamAssets.has('mills') ? '✅ <strong>5 Spinning Watermills (41 shillings):</strong> Peasants were BANNED by law from grinding flour at home—forcing everyone to pay Bishop Walkelin’s mills!' : '⬜ Money-Maker #1: Click the rushing Wallington River waterwheels...'}
         </div>
-        <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('pigs') ? '#22c55e' : '#44403c'};font-size:0.84rem;">
-          ${state.foundFarehamAssets.has('pigs') ? '✅ <strong>Woodland for 13 Fat Pigs:</strong> Peasants paid "pannage" tax in live pigs just to let hogs eat acorns in the Bishop’s oak woods!' : `⬜ Asset #2: ${actVerb} the steaming oak bushes on the right...`}
+        <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('pigs') ? '#22c55e' : '#44403c'};font-size:0.83rem;">
+          ${state.foundFarehamAssets.has('pigs') ? '✅ <strong>Woodland for 13 Fat Pigs:</strong> Peasants paid "pannage" tax in live hogs just to let pigs eat acorns in the Bishop’s oak woods!' : '⬜ Money-Maker #2: Click the snorting pigs in the oak woods on the right...'}
         </div>
-        <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('church_meadow') ? '#22c55e' : '#44403c'};font-size:0.84rem;">
-          ${state.foundFarehamAssets.has('church_meadow') ? '✅ <strong>1 Parish Church, 90 Households & 41 Hay-Meadow Acres:</strong> Making Fareham one of the top 20% largest towns in 1086 England!' : `⬜ Asset #3: ${actVerb} the green hill & church spire...`}
+        <div style="padding:9px 12px;border-radius:9px;background:#292524;border:1.5px solid ${state.foundFarehamAssets.has('church_meadow') ? '#22c55e' : '#44403c'};font-size:0.83rem;">
+          ${state.foundFarehamAssets.has('church_meadow') ? '✅ <strong>1 Parish Church, 90 Households & 41 Meadow Acres:</strong> Putting Fareham in the top 20% largest settlements in 1086 England!' : '⬜ Money-Maker #3: Click the green hill & stone church on the top left...'}
         </div>
       </div>
 
       ${
         all3Found
-          ? `
-        <button type="button" class="dst-next-btn" id="dst-btn-open-servi">
-          Who Worked the Bishop's Ploughs? Meet Gyrth (10 Enslaved People) <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      `
+          ? `<button type="button" class="dst-next-btn" id="dst-btn-open-servi">
+               Part B → Who Pulled the Bishop’s Ploughs? Meet Gyrth <i class="fa-solid fa-arrow-right"></i>
+             </button>`
+          : `<div style="font-size:0.76rem;color:#a8a29e;text-align:center;">
+               💡 Bonus: Watch out for scrawny decoy chickens—and spot Bennet’s wiggling turnip tuft (🥕 #2) by the left riverbank!
+             </div>`
+      }
+    `;
+  }
+
+  function renderBeat1ServiRightPanelHTML() {
+    const qAns = state.serviQuizAnswer;
+    const isRight = qAns === 'mills_servi';
+
+    return `
+      ${renderMissionBannerHTML(
+        'Tap Gyrth in the dawn field, then answer the quick check below!',
+        isRight ? '1 / 1 Solved' : '0 / 1 Solved',
+        isRight,
+      )}
+      <p style="margin:0 0 9px 0;font-size:0.84rem;color:#e2e8f0;line-height:1.44;">
+        Alongside Fareham’s 54 villagers and 26 smallholders, the real 1086 Domesday Book lists <strong>10 <em>servi</em> (enslaved men and women)</strong> in Fareham—plus <strong>4 in Titchfield</strong>, <strong>5 in Wickham</strong>, and <strong>4 in Portchester</strong> (~10% of England’s 1086 workforce).
+      </p>
+
+      <div style="font-size:0.82rem;font-weight:800;color:#fde047;margin-bottom:6px;">
+        ❓ Quick Detective Check: How did Domesday scribes treat Fareham’s 10 <em>servi</em>?
+      </div>
+      <button type="button" class="dst-choice-btn ${isRight ? 'is-correct' : ''}" data-servi-quiz="mills_servi">
+        📜 Listed them without names right beside the Bishop’s plough-oxen, owning zero land of their own
+      </button>
+      <button type="button" class="dst-choice-btn ${qAns === 'free_choice' ? 'is-selected-wrong' : ''}" data-servi-quiz="free_choice">
+        🪙 Paid them weekly silver wages and let them move freely to Winchester
+      </button>
+      <button type="button" class="dst-choice-btn ${qAns === 'no_slaves' ? 'is-selected-wrong' : ''}" data-servi-quiz="no_slaves">
+        🛡️ Gave each of them 5 acres of private hay-meadow
+      </button>
+
+      ${
+        qAns && !isRight
+          ? `<div style="padding:8px 10px;border-radius:8px;background:rgba(220,38,38,0.22);border:1px solid #ef4444;font-size:0.79rem;color:#fecaca;margin-top:4px;">
+               ❌ Listen closely to Gyrth: enslaved <em>servi</em> owned no land, received no wages, and were written right beside the plough-oxen!
+             </div>`
+          : ''
+      }
+      ${
+        isRight
+          ? `<button type="button" class="dst-next-btn" data-complete-next="beat2">
+               Stage 3 → Drag the 1066 vs 1086 Land Wipeout Map! <i class="fa-solid fa-arrow-right"></i>
+             </button>`
           : ''
       }
     `;
@@ -910,8 +1474,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
   function renderBeat1HTML() {
     const totalFarehamSecrets =
-      state.foundFarehamAssets.size + state.farehamExtrasFound.size + (state.bennetSightings.has('creek') ? 1 : 0);
-    const touch = isTouchUI();
+      state.foundFarehamAssets.size +
+      state.farehamExtrasFound.size +
+      (state.bennetSightings.has('creek') ? 1 : 0);
 
     return `
       <div class="dst-body">
@@ -935,7 +1500,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                 ${hitZoneHTML({ key: 'b1:chickens', dataAttr: 'data-b1-spot="chickens"', x: 56, y: 86, w: 24, h: 20, found: state.farehamExtrasFound.has('chickens'), ariaLabel: 'Inspect pecking farmyard chickens' })}
                 ${hitZoneHTML({ key: 'b1:bennet', dataAttr: 'data-b1-spot="bennet"', x: 8.5, y: 85, w: 13, h: 20, found: state.bennetSightings.has('creek'), ariaLabel: 'Inspect wiggling turnip tuft on riverbank' })}
               </div>
-              ${renderSceneFooterBarHTML(totalFarehamSecrets, 7, touch ? 'Tap river, woods, hills & riverbank!' : 'Sweep cursor across river, woods, hills & riverbank!')}
+              ${renderSceneFooterBarHTML(totalFarehamSecrets, 7, 'Click riverwheels, oak pigs, church hill & riverbank!')}
             </div>
 
             <div class="dst-card-panel" id="dst-b1-right-slot">
@@ -954,23 +1519,11 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
                 ${hitZoneHTML({ key: 'servi:oxen', dataAttr: 'data-servi-spot="oxen"', x: 82, y: 50, w: 28, h: 36, found: state.farehamExtrasFound.has('oxen'), ariaLabel: 'Inspect heavy eight-ox medieval plough team' })}
                 ${hitZoneHTML({ key: 'servi:overseer', dataAttr: 'data-servi-spot="overseer"', x: 13, y: 23, w: 12, h: 18, found: state.farehamExtrasFound.has('overseer'), ariaLabel: 'Inspect mounted Norman bailiff on ridge' })}
               </div>
-              ${renderSceneFooterBarHTML(1 + (state.farehamExtrasFound.has('oxen') ? 1 : 0) + (state.farehamExtrasFound.has('overseer') ? 1 : 0), 3, touch ? 'Tap Gyrth, the steaming oxen, or the distant ridge' : 'Hover Gyrth, the steaming oxen, or the distant ridge')}
+              ${renderSceneFooterBarHTML(1 + (state.farehamExtrasFound.has('oxen') ? 1 : 0) + (state.farehamExtrasFound.has('overseer') ? 1 : 0), 3, 'Click Gyrth, the oxen, or the mounted Norman bailiff!')}
             </div>
 
-            <div class="dst-card-panel" style="border-color:#64748b;">
-              <div style="font-size:0.75rem;font-weight:900;color:#93c5fd;text-transform:uppercase;margin-bottom:6px;">
-                HISTORICAL SHOCK • SLAVERY IN 1086 HAMPSHIRE (SERVI)
-              </div>
-              <h3 style="margin:0 0 8px 0;font-size:1.1rem;color:#f8fafc;">10 Enslaved People Recorded in Fareham</h3>
-              <p style="margin:0 0 10px 0;font-size:0.88rem;color:#e2e8f0;line-height:1.48;">
-                Alongside Fareham’s 54 villagers and 26 smallholders, the real 1086 Domesday Book lists <strong>10 <em>servi</em> (enslaved men and women)</strong> in Fareham—plus <strong>4 in Titchfield</strong>, <strong>4 in Portchester</strong>, <strong>5 in Wickham</strong>, and <strong>2 in Rowner</strong> (~10% of England’s 1086 workforce).
-              </p>
-              <div style="padding:10px 12px;border-radius:10px;background:#0f172a;border-left:4px solid #38bdf8;font-size:0.84rem;color:#cbd5e1;line-height:1.44;margin-bottom:12px;">
-                Unlike ordinary peasants, <em>servi</em> held no land strips of their own. Scribes listed them on the Bishop’s farm right beside the plough-oxen. Tap Gyrth in the dawn field to replay his testimony.
-              </div>
-              <button type="button" class="dst-next-btn" data-complete-next="beat2">
-                Continue → Stage 3: Interactive 1066 Wipeout Map Hunt <i class="fa-solid fa-arrow-right"></i>
-              </button>
+            <div class="dst-card-panel" id="dst-b1-servi-right-slot" style="border-color:#64748b;">
+              ${renderBeat1ServiRightPanelHTML()}
             </div>
           </div>
         `
@@ -979,19 +1532,22 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     `;
   }
 
+  // =========================================================================
+  // STAGE 3 (beat2): 1066 VS 1086 WIPEOUT MAP (ZERO BLOCKER + 3-OPTION THINKING!)
+  // =========================================================================
   function renderBeat2ManorCardInnerHTML() {
     const selManor = data.manors.find((m) => m.id === state.selectedManorId) || data.manors[0];
     return `
       <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:5px;">
-        <strong style="color:#fde047;font-size:0.93rem;">📍 ${selManor.name} (<em>${selManor.domesdayName}</em> — "${selManor.meaning}")</strong>
-        <span style="font-size:0.74rem;color:#a8a29e;">${selManor.households} households • ${selManor.slaves} enslaved</span>
+        <strong style="color:#fde047;font-size:0.91rem;">📍 ${selManor.name} (<em>${selManor.domesdayName}</em> — "${selManor.meaning}")</strong>
+        <span style="font-size:0.73rem;color:#a8a29e;">${selManor.households} households • ${selManor.slaves} enslaved</span>
       </div>
-      <div style="font-size:0.81rem;color:#e7e5e4;margin-bottom:7px;">
+      <div style="font-size:0.8rem;color:#e7e5e4;margin-bottom:7px;">
         <span style="color:#86efac;"><strong>1066:</strong> ${selManor.lord1066}</span>
         &nbsp;➔&nbsp;
         <span style="color:#fca5a5;"><strong>1086:</strong> ${selManor.lord1086}</span>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:7px;font-size:0.75rem;text-align:center;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:7px;font-size:0.74rem;text-align:center;">
         <div style="background:#14532d;padding:5px;border-radius:6px;">1066: <strong>£${selManor.val1066}</strong></div>
         <div style="background:#7f1d1d;padding:5px;border-radius:6px;">1067 Crash: <strong>£${selManor.val1067}</strong></div>
         <div style="background:#78350f;padding:5px;border-radius:6px;">1086: <strong>£${selManor.val1086}</strong></div>
@@ -1002,95 +1558,100 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   function renderBeat2MissionsInnerHTML() {
     const mCount = state.b2Solved.size;
     return `
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:10px;">
-        <span style="font-size:0.76rem;font-weight:900;color:#fbbf24;text-transform:uppercase;">
-          STAGE 3 • FORENSIC MAP MISSIONS (${mCount}/3)
-        </span>
-        <div style="display:flex;gap:5px;">
-          ${[0, 1, 2]
-            .map(
-              (idx) => `
-            <button type="button" class="dst-step-pill ${state.b2MissionIdx === idx ? 'is-active' : ''} ${state.b2Solved.has('m' + (idx + 1)) ? 'is-done' : ''}"
-                    data-b2-step="${idx}" style="min-height:30px;padding:3px 9px;font-size:0.72rem;">
-              #${idx + 1}
-            </button>
-          `,
-            )
-            .join('')}
-        </div>
+      ${renderMissionBannerHTML(
+        'Solve all 3 Wipeout Map Clues (#1, #2, #3) to unlock the Courtroom!',
+        `${mCount} / 3 Solved`,
+        mCount >= 3,
+      )}
+
+      <div style="display:flex;gap:6px;margin-bottom:10px;">
+        ${[0, 1, 2]
+          .map(
+            (idx) => `
+          <button type="button" class="dst-step-pill ${state.b2MissionIdx === idx ? 'is-active' : ''} ${state.b2Solved.has('m' + (idx + 1)) ? 'is-done' : ''}"
+                  data-b2-step="${idx}" style="flex:1;min-height:32px;padding:4px 8px;font-size:0.74rem;">
+            ${state.b2Solved.has('m' + (idx + 1)) ? '✓ ' : ''}Clue #${idx + 1}
+          </button>
+        `,
+          )
+          .join('')}
       </div>
 
       ${
         state.b2MissionIdx === 0
           ? `
-        <h4 style="margin:0 0 8px 0;font-size:0.98rem;color:#fef3c7;">Mission 1: Sweep the 1066 ↔ 1086 X-Ray Bar!</h4>
-        <p style="margin:0 0 10px 0;font-size:0.86rem;color:#d6d3d1;line-height:1.42;">
-          Drag the golden X-Ray slider across the map to reveal 1086 Norman Hampshire. Out of the <strong>6 private English landowners</strong> (Godwin, Coleman, Wulfward, 3 Portchester freemen, 4 Wickham brothers), how many kept their land?
+        <h4 style="margin:0 0 7px 0;font-size:0.95rem;color:#fef3c7;">Clue #1: Drag the 1066 ↔ 1086 X-Ray Slider!</h4>
+        <p style="margin:0 0 9px 0;font-size:0.84rem;color:#d6d3d1;line-height:1.4;">
+          Slide the golden X-Ray bar across the map from 1066 to 1086. Out of the <strong>6 private Anglo-Saxon landowners</strong> around Fareham and Stubbington, how many kept their manors?
         </p>
         <button type="button" class="dst-choice-btn ${state.b2Solved.has('m1') ? 'is-correct' : ''}" data-b2-m1="zero">
-          ⚔️ <strong>ZERO (0 out of 6)</strong> — 100% of local Saxon lords were wiped out!
+          ⚔️ <strong>0 out of 6</strong> — Every single local English landowner was replaced by Normans
         </button>
-        <button type="button" class="dst-choice-btn" data-b2-m1="half">
-          🛡️ Half of them (3 out of 6) shared politely with the Normans
+        <button type="button" class="dst-choice-btn ${state.b2WrongAttempt === 'm1_half' ? 'is-selected-wrong' : ''}" data-b2-m1="half">
+          🛡️ <strong>3 out of 6</strong> — Half kept their farms after swearing loyalty at Winchester
+        </button>
+        <button type="button" class="dst-choice-btn ${state.b2WrongAttempt === 'm1_all' ? 'is-selected-wrong' : ''}" data-b2-m1="all">
+          🪙 <strong>6 out of 6</strong> — All kept their land by paying double geld tax
         </button>
         ${
-          state.b2Solved.has('m1')
-            ? `<div style="padding:9px 11px;border-radius:9px;background:rgba(22,163,74,0.2);border:1px solid #22c55e;font-size:0.82rem;color:#dcfce7;margin-top:6px;">
-                 ✅ Spot on! Sheriff Hugh of Port alone grabbed Stubbington, Wickham, and over 50 Hampshire manors!
-                 <button type="button" class="dst-next-btn" data-b2-step="1" style="margin-top:8px;">Next Clue → Mission 2 (Direct Map Hunt!)</button>
-               </div>`
+          state.b2Solved.has('m1') && !state.b2Solved.has('m2')
+            ? `<button type="button" class="dst-next-btn" data-b2-step="1" style="background:linear-gradient(180deg,#d97706 0%,#92400e 100%);">
+                 Next → Clue #2: Tap King William’s Royal Manor on the Map! <i class="fa-solid fa-arrow-right"></i>
+               </button>`
             : ''
         }
       `
           : state.b2MissionIdx === 1
             ? `
-        <h4 style="margin:0 0 8px 0;font-size:0.98rem;color:#fef3c7;">Mission 2: Tap Directly on the Map! 👑</h4>
-        <p style="margin:0 0 10px 0;font-size:0.86rem;color:#d6d3d1;line-height:1.42;">
-          Find and <strong>tap the shield directly on the Solent map</strong> for the <strong>ONLY local manor</strong> that wasn’t given to a Baron or Bishop because it went straight from <strong>King Edward (1066) to King William (1086)</strong>!
+        <h4 style="margin:0 0 7px 0;font-size:0.95rem;color:#fef3c7;">Clue #2: Tap Directly on the Solent Map! 👑</h4>
+        <p style="margin:0 0 9px 0;font-size:0.84rem;color:#d6d3d1;line-height:1.4;">
+          Click the shield <strong>directly on the map</strong> (or pick below) for the <strong>ONLY local manor</strong> kept personally by <strong>King William (👑)</strong> instead of going to a Baron or Bishop!
         </p>
         ${
-          state.b2WrongAttempt && !state.b2Solved.has('m2')
-            ? `<div style="padding:9px 11px;border-radius:9px;background:rgba(220,38,38,0.22);border:1px solid #ef4444;font-size:0.82rem;color:#fecaca;margin-bottom:8px;">
-                 ❌ Not <strong>${state.b2WrongAttempt}</strong>! Hint: Look along the <strong>River Meon</strong> on the west for the golden Royal Crown (👑)!
+          state.b2WrongAttempt && !state.b2WrongAttempt.startsWith('m') && !state.b2Solved.has('m2')
+            ? `<div style="padding:8px 10px;border-radius:9px;background:rgba(220,38,38,0.22);border:1px solid #ef4444;font-size:0.8rem;color:#fecaca;margin-bottom:8px;">
+                 ❌ Not <strong>${state.b2WrongAttempt}</strong>! Hint: Look west along the <strong>River Meon</strong> for the golden Crown shield (👑)!
                </div>`
             : ''
         }
         ${
           state.b2Solved.has('m2')
-            ? `<div style="padding:9px 11px;border-radius:9px;background:rgba(22,163,74,0.2);border:1px solid #22c55e;font-size:0.82rem;color:#dcfce7;">
+            ? `<div style="padding:9px 11px;border-radius:9px;background:rgba(22,163,74,0.22);border:1px solid #22c55e;font-size:0.82rem;color:#dcfce7;">
                  ✅ <strong>TITCHFIELD (Ticefelle) FOUND!</strong> Capital of Titchfield Hundred—kept personally by King William!
-                 <button type="button" class="dst-next-btn" data-b2-step="2" style="margin-top:8px;">Next Clue → Mission 3 (The 1067 Crash)</button>
-               </div>`
-            : `<div style="padding:10px;border-radius:9px;background:#292524;font-size:0.82rem;color:#fde68a;text-align:center;">
-                 👆 Tap a manor shield directly on the map!
+               </div>
+               ${
+                 !state.b2Solved.has('m3')
+                   ? `<button type="button" class="dst-next-btn" data-b2-step="2" style="background:linear-gradient(180deg,#d97706 0%,#92400e 100%);">
+                        Next → Clue #3: Solve the 1067 Value Crash! <i class="fa-solid fa-arrow-right"></i>
+                      </button>`
+                   : ''
+               }`
+            : `<div style="padding:10px;border-radius:9px;background:#292524;border:1px dashed #fde047;font-size:0.81rem;color:#fde68a;text-align:center;">
+                 👆 Tap the 👑 shield directly on the map (on the River Meon)!
                </div>`
         }
       `
             : `
-        <h4 style="margin:0 0 8px 0;font-size:0.98rem;color:#fef3c7;">Mission 3: Why Did Values Crash in 1066–67? 🔥</h4>
-        <p style="margin:0 0 10px 0;font-size:0.86rem;color:#d6d3d1;line-height:1.42;">
-          Tap <strong>Fareham</strong> (£18 ➔ £10) or <strong>Wickham</strong> (£10 ➔ £4) on the map. Why did so many Hampshire manors plunge in value right after the Battle of Hastings?
+        <h4 style="margin:0 0 7px 0;font-size:0.95rem;color:#fef3c7;">Clue #3: Why Did Values Plunge in 1066–67? 🔥</h4>
+        <p style="margin:0 0 9px 0;font-size:0.84rem;color:#d6d3d1;line-height:1.4;">
+          Tap <strong>Fareham</strong> (£18 ➔ £10) or <strong>Wickham</strong> (£10 ➔ £4) on the map. Why did Domesday’s middle valuation drop so sharply right after Hastings?
         </p>
         <button type="button" class="dst-choice-btn ${state.b2Solved.has('m3') ? 'is-correct' : ''}" data-b2-m3="army">
-          🔥 Marching Norman troops trampled crops, burned barns &amp; seized cattle on their way to Winchester
+          🔥 Marching Norman troops seized livestock, trampled crops &amp; burned stores en route to Winchester
         </button>
-        <button type="button" class="dst-choice-btn" data-b2-m3="holiday">
-          🏖️ All the villagers moved to Portsmouth for the seaside
+        <button type="button" class="dst-choice-btn ${state.b2WrongAttempt === 'm3_coins' ? 'is-selected-wrong' : ''}" data-b2-m3="coins">
+          🪙 King William abolished silver penny coins for the first five years of his reign
         </button>
-        ${
-          state.b2Solved.has('m3')
-            ? `<div style="padding:9px 11px;border-radius:9px;background:rgba(22,163,74,0.2);border:1px solid #22c55e;font-size:0.82rem;color:#dcfce7;margin-top:6px;">
-                 ✅ Forensic bullseye! Domesday’s middle valuation acts like crime-scene footprints of William’s invading army!
-               </div>`
-            : ''
-        }
+        <button type="button" class="dst-choice-btn ${state.b2WrongAttempt === 'm3_vikings' ? 'is-selected-wrong' : ''}" data-b2-m3="vikings">
+          ⛵ A Danish fleet burned Winchester Cathedral to the ground in 1067
+        </button>
       `
       }
 
       ${
         mCount >= 3
           ? `<button type="button" class="dst-next-btn" data-complete-next="beat3">
-               Enter Torch-Lit Courtroom → Stage 4: Vikings vs. Greedy Bishop <i class="fa-solid fa-arrow-right"></i>
+               Stage 4 → Enter Torch-Lit Royal Courtroom! <i class="fa-solid fa-arrow-right"></i>
              </button>`
           : ''
       }
@@ -1117,20 +1678,20 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
             <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-top:8px;">
               <div style="display:flex;align-items:center;gap:6px;flex:1 1 180px;min-width:0;">
-                <span style="font-size:0.75rem;font-weight:900;color:#86efac;">1066</span>
+                <span style="font-size:0.74rem;font-weight:900;color:#86efac;">1066</span>
                 <input type="range" id="dst-xray-range" min="0" max="100" value="${state.xraySplitPct}"
                        style="flex:1;min-width:75px;height:28px;accent-color:#f59e0b;cursor:pointer;" aria-label="1066 to 1086 X-Ray Curtain" />
-                <span style="font-size:0.75rem;font-weight:900;color:#fca5a5;">1086</span>
+                <span style="font-size:0.74rem;font-weight:900;color:#fca5a5;">1086</span>
               </div>
               <button type="button" class="dst-icon-btn" id="dst-btn-ghost-toggle">
-                👻 <span id="dst-ghost-btn-lbl">${state.showModernGhost ? 'Hide Ghost Towns' : 'Modern Ghost'}</span>
+                👻 <span id="dst-ghost-btn-lbl">${state.showModernGhost ? 'Hide Ghost Towns' : 'Unborn Towns'}</span>
               </button>
               <button type="button" class="dst-icon-btn" id="dst-btn-haircut-gag" style="border-color:#fb923c;color:#fed7aa;">
-                ✂️ Guy's Shaved Neck
+                ✂️ Norman Haircut
               </button>
             </div>
 
-            <div class="dst-card-panel" id="dst-b2-manor-slot" style="margin-top:10px;padding:11px 14px;">
+            <div class="dst-card-panel" id="dst-b2-manor-slot" style="margin-top:9px;padding:10px 13px;">
               ${renderBeat2ManorCardInnerHTML()}
             </div>
           </div>
@@ -1143,56 +1704,70 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     `;
   }
 
+  // =========================================================================
+  // STAGE 4 (beat3): ROYAL ASSIZE COURTROOM (NEUTRAL GOLD BEFORE GAVEL SLAM!)
+  // =========================================================================
   function renderBeat3RightPanelHTML() {
-    const canSlamGavel = Boolean(state.rulingVikings && state.rulingBishop);
+    const pickedCount = (state.rulingVikings ? 1 : 0) + (state.rulingBishop ? 1 : 0);
+    const canSlamGavel = pickedCount >= 2;
+    const revealed = state.assizeVerdictRevealed;
     const matchedRealHistory = state.rulingVikings === 'keep20' && state.rulingBishop === 'shame20';
-    return `
-      <div style="font-size:0.76rem;font-weight:900;color:#fbbf24;text-transform:uppercase;margin-bottom:8px;">
-        STAGE 4 • CAST YOUR ROYAL COMMISSIONER VERDICT
-      </div>
 
-      <div style="margin-bottom:10px;">
-        <div style="font-size:0.85rem;font-weight:800;margin-bottom:6px;">
-          Ruling 1 — King Edward’s Viking Tax Break (30 hides taxed at 20 "because it is on the sea"):
+    const btnCls = (curVal, targetVal, realVal) => {
+      if (curVal !== targetVal) return '';
+      if (!revealed) return 'is-selected-pending';
+      return targetVal === realVal ? 'is-correct' : 'is-selected-wrong';
+    };
+
+    return `
+      ${renderMissionBannerHTML(
+        'Choose Ruling 1 & Ruling 2 below, then SLAM THE GAVEL to compare with 1086!',
+        revealed ? 'Gavel Slammed!' : `${pickedCount} / 2 Picked`,
+        revealed,
+      )}
+
+      <div style="margin-bottom:9px;">
+        <div style="font-size:0.82rem;font-weight:800;color:#fde68a;margin-bottom:5px;">
+          ⚖️ Ruling 1 — King Edward’s Viking Tax Break (30 hides taxed at 20 "because it is on the sea"):
         </div>
-        <button type="button" class="dst-choice-btn ${state.rulingVikings === 'keep20' ? 'is-correct' : ''}" data-pick-vikings="keep20">
+        <button type="button" class="dst-choice-btn ${btnCls(state.rulingVikings, 'keep20', 'keep20')}" data-pick-vikings="keep20">
           🛡️ Keep Fareham’s 20-hide coastal Viking discount
         </button>
-        <button type="button" class="dst-choice-btn ${state.rulingVikings === 'hike30' ? 'is-correct' : ''}" data-pick-vikings="hike30">
-          🪙 Scrap the Saxon discount—tax all 30 hides!
+        <button type="button" class="dst-choice-btn ${btnCls(state.rulingVikings, 'hike30', 'keep20')}" data-pick-vikings="hike30">
+          🪙 Cancel the Saxon discount—tax all 30 hides!
         </button>
       </div>
 
       <div style="margin-bottom:10px;">
-        <div style="font-size:0.85rem;font-weight:800;margin-bottom:6px;">
-          Ruling 2 — Bishop Walkelin’s £20 Rent Squeeze (Town only produces £16):
+        <div style="font-size:0.82rem;font-weight:800;color:#fde68a;margin-bottom:5px;">
+          ⚖️ Ruling 2 — Bishop Walkelin’s £20 Rent Squeeze (Fareham only produces £16):
         </div>
-        <button type="button" class="dst-choice-btn ${state.rulingBishop === 'shame20' ? 'is-correct' : ''}" data-pick-bishop="shame20">
-          📜 Record the £20—and warn in Latin that Fareham "cannot bear it"!
+        <button type="button" class="dst-choice-btn ${btnCls(state.rulingBishop, 'shame20', 'shame20')}" data-pick-bishop="shame20">
+          📜 Record £20—and warn in Latin that Fareham "cannot bear it"!
         </button>
-        <button type="button" class="dst-choice-btn ${state.rulingBishop === 'force20' ? 'is-correct' : ''}" data-pick-bishop="force20">
-          🔨 Rubber-stamp Bishop Walkelin’s £20 without complaint
+        <button type="button" class="dst-choice-btn ${btnCls(state.rulingBishop, 'force20', 'shame20')}" data-pick-bishop="force20">
+          🔨 Rubber-stamp Bishop Walkelin’s £20 silently without warning
         </button>
       </div>
 
       ${
-        !state.assizeVerdictRevealed
+        !revealed
           ? `
         <button type="button" class="dst-start-cta" id="dst-btn-slam-gavel" style="width:100%;opacity:${canSlamGavel ? '1' : '0.45'};" ${canSlamGavel ? '' : 'disabled'}>
-          🔨 SLAM GAVEL &amp; COMPARE TO REAL 1086 BOOK!
+          🔨 SLAM GAVEL &amp; REVEAL REAL 1086 VERDICT!
         </button>
       `
           : `
-        <div style="padding:12px 14px;border-radius:11px;background:rgba(20,83,45,0.35);border:2px solid #22c55e;margin-top:8px;">
-          <div style="font-weight:900;color:#fde047;font-size:0.88rem;margin-bottom:4px;">
-            ${matchedRealHistory ? '🏆 2/2 EXACT MATCH WITH KING WILLIAM’S REAL 1086 COMMISSIONERS!' : '📜 SURPRISE TWIST — KING WILLIAM’S REAL SCRIBES WERE MERCIFUL HERE!'}
+        <div style="padding:11px 13px;border-radius:11px;background:rgba(20,83,45,0.38);border:2px solid #22c55e;margin-top:6px;">
+          <div style="font-weight:900;color:#fde047;font-size:0.86rem;margin-bottom:3px;">
+            ${matchedRealHistory ? '🏆 2/2 EXACT MATCH WITH KING WILLIAM’S REAL 1086 COMMISSIONERS!' : '⚡ PLOT TWIST — KING WILLIAM’S REAL SCRIBES DEFENDED FAREHAM!'}
           </div>
-          <p style="margin:0;font-size:0.83rem;line-height:1.45;color:#f8fafc;">
+          <p style="margin:0;font-size:0.81rem;line-height:1.42;color:#f8fafc;">
             In the genuine 1086 Fareham entry, royal scribes <strong>KEPT the 20-hide Viking discount</strong> (<em>"because of the Vikings, since it is on the sea"</em>) AND shamed Bishop Walkelin in writing: <strong><em>"it pays £20, but it cannot bear it"</em></strong>!
           </p>
         </div>
         <button type="button" class="dst-next-btn" data-complete-next="beat4">
-          Stage 5 → Count the Invisible Family Inside Stubbington Hut #3 <i class="fa-solid fa-arrow-right"></i>
+          Stage 5 → Step Inside Edith’s Stubbington Cottage! <i class="fa-solid fa-arrow-right"></i>
         </button>
       `
       }
@@ -1209,20 +1784,20 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
               <img src="/images/arcade/domesday/scene_3_royal_assize.webp"
                    alt="1086 Royal Assize Hall in Hampshire"
                    class="domesday-diorama-img" />
-              ${hitZoneHTML({ key: 'assize:villager', dataAttr: 'data-assize-spot="villager"', x: 33, y: 56, w: 18, h: 48, found: state.assizeSpotsHeard.has('villager'), ariaLabel: 'Hear Fareham villager plea' })}
+              ${hitZoneHTML({ key: 'assize:villager', dataAttr: 'data-assize-spot="villager"', x: 33, y: 56, w: 18, h: 48, found: state.assizeSpotsHeard.has('villager'), ariaLabel: 'Hear Fareham villager Wulf plea' })}
               ${hitZoneHTML({ key: 'assize:shield', dataAttr: 'data-assize-spot="shield"', x: 49, y: 23, w: 15, h: 24, found: state.assizeSpotsHeard.has('shield'), ariaLabel: 'Inspect coastal Viking shield exhibit' })}
               ${hitZoneHTML({ key: 'assize:clerk', dataAttr: 'data-assize-spot="clerk"', x: 64, y: 42, w: 14, h: 30, found: state.assizeSpotsHeard.has('clerk'), ariaLabel: 'Hear Norman Clerk Sir Guy' })}
               ${hitZoneHTML({ key: 'assize:hugh', dataAttr: 'data-assize-spot="hugh"', x: 78, y: 42, w: 14, h: 32, found: state.assizeSpotsHeard.has('hugh'), ariaLabel: 'Inspect Sheriff Hugh and silver coin stacks' })}
               ${hitZoneHTML({ key: 'assize:bishop_monk', dataAttr: 'data-assize-spot="bishop_monk"', x: 90, y: 46, w: 13, h: 36, found: state.assizeSpotsHeard.has('bishop_monk'), ariaLabel: 'Inspect Bishop Walkelin representative' })}
             </div>
-            ${renderSceneFooterBarHTML(state.assizeSpotsHeard.size, 5, isTouchUI() ? 'Tap witnesses, Viking shield & silver coins!' : 'Hover witnesses, Viking shield & silver coins!')}
+            ${renderSceneFooterBarHTML(state.assizeSpotsHeard.size, 5, 'Click Wulf, Viking shield, Sir Guy, Sheriff Hugh & Monk!')}
 
-            <div style="margin-top:8px;padding:10px 12px;border-radius:10px;background:#1c1917;border:1px solid #44403c;font-size:0.8rem;">
-              <div style="display:flex;justify-content:space-between;margin-bottom:5px;flex-wrap:wrap;gap:4px;">
-                <span style="color:#86efac;font-weight:800;">🌾 True Output Today: £16</span>
+            <div style="margin-top:8px;padding:9px 12px;border-radius:10px;background:#1c1917;border:1px solid #44403c;font-size:0.79rem;">
+              <div style="display:flex;justify-content:space-between;margin-bottom:4px;flex-wrap:wrap;gap:4px;">
+                <span style="color:#86efac;font-weight:800;">🌾 Fareham’s True Output: £16</span>
                 <span style="color:#fca5a5;font-weight:900;">⛪ Bishop Demands: £20 (-£4 Starvation Gap!)</span>
               </div>
-              <div style="height:10px;border-radius:999px;background:#7f1d1d;overflow:hidden;display:flex;">
+              <div style="height:9px;border-radius:999px;background:#7f1d1d;overflow:hidden;display:flex;">
                 <div style="width:80%;background:#16a34a;"></div>
               </div>
             </div>
@@ -1236,70 +1811,81 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     `;
   }
 
-  function renderBeat4SubtabsInnerHTML() {
-    const peopleCount = computeHutPeopleCount();
-    const spotsCount = state.foundBlindSpots.size;
-    return `
-      <button type="button" class="dst-step-pill ${state.beat4Tab === 'hut' ? 'is-active' : ''}" data-b4-tab="hut">
-        <span class="dst-lbl-full">🏠 Part A: Inside Stubbington Hut #3 (${peopleCount}/8 People Counted)</span>
-        <span class="dst-lbl-short">🏠 Hut #3 (${peopleCount}/8)</span>
-      </button>
-      <button type="button" class="dst-step-pill ${state.beat4Tab === 'map' ? 'is-active' : ''}" data-b4-tab="map">
-        <span class="dst-lbl-full">🔎 Part B: Solent Coast Spyglass</span>
-        <span class="dst-lbl-short">🔎 Coast Spyglass</span>
-      </button>
-      <span class="dst-subtab-counter" style="margin-left:auto;font-size:0.78rem;font-weight:900;color:#fde047;">
-        Blind Spots Uncovered: ${spotsCount} / 4+
-      </span>
-    `;
-  }
-
+  // =========================================================================
+  // STAGE 5 (beat4): PURE INSIDE EDITH'S HUT #3 (ZERO DUAL-TAB SPYGLASS CONFUSION!)
+  // =========================================================================
   function renderBeat4RightPanelHTML() {
     const peopleCount = computeHutPeopleCount();
-    const spotsCount = state.foundBlindSpots.size;
-    const readyNext = spotsCount >= 4;
-    const actVerb = isTouchUI() ? 'Tap' : 'Hover';
+    const foundPets = state.foundBlindSpots.has('untaxed_pets');
+    const allClicked = peopleCount >= 8 && foundPets;
+    const quizRight = state.hutQuizAnswer === 'about45';
+    const stageDone = allClicked && quizRight;
 
     return `
-      <div style="padding:10px 12px;border-radius:10px;background:#292524;border:1.5px solid #f59e0b;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;">
+      ${renderMissionBannerHTML(
+        'Tap Edith, the 5 children, Grandma & farm pets in Hut #3, then answer below!',
+        `${peopleCount}/8 People • ${foundPets ? 'Pets ✓' : 'Pets ?'}`,
+        stageDone,
+      )}
+
+      <div style="padding:9px 12px;border-radius:10px;background:#292524;border:1.5px solid #f59e0b;margin-bottom:9px;display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;">
         <div>
-          <div style="font-size:0.7rem;font-weight:900;color:#fde68a;text-transform:uppercase;">DOMESDAY PARCHMENT SAYS</div>
-          <div style="font-size:0.95rem;font-weight:900;color:#fca5a5;">"1 Household" (Just Dad!)</div>
+          <div style="font-size:0.68rem;font-weight:900;color:#fde68a;text-transform:uppercase;">DOMESDAY BOOK WRITES</div>
+          <div style="font-size:0.92rem;font-weight:900;color:#fca5a5;">"1 Household" (Just Dad!)</div>
         </div>
-        <div style="font-size:1.2rem;">➔</div>
+        <div style="font-size:1.1rem;">➔</div>
         <div style="text-align:right;">
-          <div style="font-size:0.7rem;font-weight:900;color:#86efac;text-transform:uppercase;">REAL PEOPLE YOU FOUND IN HUT #3</div>
-          <div style="font-size:0.98rem;font-weight:900;color:#ffffff;">👨‍👩‍👧‍👦 ${peopleCount} / 8 People!</div>
+          <div style="font-size:0.68rem;font-weight:900;color:#86efac;text-transform:uppercase;">REAL PEOPLE IN HUT #3</div>
+          <div style="font-size:0.95rem;font-weight:900;color:#ffffff;">👨‍👩‍👧‍👦 ${peopleCount} / 8 People!</div>
         </div>
       </div>
 
-      <div style="display:flex;flex-direction:column;gap:6px;font-size:0.82rem;">
-        <div style="padding:8px 10px;border-radius:8px;background:#292524;border:1px solid ${state.foundBlindSpots.has('edith_family') ? '#22c55e' : '#44403c'};">
-          ${state.foundBlindSpots.has('edith_family') ? `✅ <strong>Invisible Women, Kids & Elders (${peopleCount}/8 found in Hut #3):</strong> Stubbington’s "9 households" really meant ~45–50 villagers!` : `⬜ Blind Spot 1 (Hut #3): ${actVerb} Edith, the children, or Grandma...`}
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;font-size:0.78rem;margin-bottom:10px;">
+        <div style="padding:6px 8px;border-radius:7px;background:#292524;border:1px solid ${state.hutPeopleGroups.has('edith') ? '#22c55e' : '#44403c'};">
+          ${state.hutPeopleGroups.has('edith') ? '✅ Edith (Wife)' : '⬜ Click Edith in doorway'}
         </div>
-        <div style="padding:8px 10px;border-radius:8px;background:#292524;border:1px solid ${state.foundBlindSpots.has('untaxed_pets') ? '#22c55e' : '#44403c'};">
-          ${state.foundBlindSpots.has('untaxed_pets') ? '✅ <strong>Dogs, Hens & Veg Plots:</strong> The chronicler exaggerated! If William couldn’t tax it, scribes ignored it.' : `⬜ Blind Spot 2 (Hut #3): ${actVerb} the floor dog or beam chickens...`}
+        <div style="padding:6px 8px;border-radius:7px;background:#292524;border:1px solid ${state.hutPeopleGroups.has('five_kids') ? '#22c55e' : '#44403c'};">
+          ${state.hutPeopleGroups.has('five_kids') ? '✅ 5 Hungry Kids' : '⬜ Click children by pot'}
         </div>
-        <div style="padding:8px 10px;border-radius:8px;background:#292524;border:1px solid ${state.foundBlindSpots.has('bs_portchester') ? '#22c55e' : '#44403c'};">
-          ${state.foundBlindSpots.has('bs_portchester') ? '✅ <strong>No Stone Keep at Portchester Yet:</strong> 1086 only lists Roman walls + "a fishery for the hall" (stone keep built 1120s)!' : '⬜ Blind Spot 3 (Spyglass Map Tab): Tap Portchester on the harbour...'}
+        <div style="padding:6px 8px;border-radius:7px;background:#292524;border:1px solid ${state.hutPeopleGroups.has('grandma') ? '#22c55e' : '#44403c'};">
+          ${state.hutPeopleGroups.has('grandma') ? '✅ Grandma Eadgyth' : '⬜ Click Grandma spinning'}
         </div>
-        <div style="padding:8px 10px;border-radius:8px;background:#292524;border:1px solid ${state.foundBlindSpots.has('bs_gosport') || state.foundBlindSpots.has('bs_portsmouth') || state.foundBlindSpots.has('bs_chark') ? '#22c55e' : '#44403c'};">
-          ${state.foundBlindSpots.has('bs_gosport') || state.foundBlindSpots.has('bs_portsmouth') || state.foundBlindSpots.has('bs_chark') ? '✅ <strong>Unborn Portsmouth/Gosport & Unlisted Chark:</strong> Neither port town existed yet, and Chark was silently bundled into Titchfield!' : '⬜ Blind Spot 4 (Spyglass Map Tab): Tap Gosport, Portsmouth, or Chark...'}
+        <div style="padding:6px 8px;border-radius:7px;background:#292524;border:1px solid ${foundPets ? '#22c55e' : '#44403c'};">
+          ${foundPets ? '✅ Untaxed Dog & Hens' : '⬜ Click floor dog / hens'}
         </div>
       </div>
+
+      <div style="font-size:0.81rem;font-weight:800;color:#fde047;margin-bottom:5px;">
+        ❓ Historian Calculation: Stubbington lists "9 households". Roughly how many real people lived in 1086 Stubbington?
+      </div>
+      <button type="button" class="dst-choice-btn ${state.hutQuizAnswer === 'only9' ? 'is-selected-wrong' : ''}" data-hut-quiz="only9">
+        🧍 Exactly 9 people living all alone in 9 separate cottages
+      </button>
+      <button type="button" class="dst-choice-btn ${quizRight ? 'is-correct' : ''}" data-hut-quiz="about45">
+        👨‍👩‍👧‍👦 Around 40–50 villagers — scribes only counted tax-paying heads of household!
+      </button>
+      <button type="button" class="dst-choice-btn ${state.hutQuizAnswer === 'over500' ? 'is-selected-wrong' : ''}" data-hut-quiz="over500">
+        🏰 Over 600 people — scribes only counted Norman knights
+      </button>
 
       ${
-        state.beat4Tab === 'hut' && state.foundBlindSpots.has('edith_family') && state.foundBlindSpots.has('untaxed_pets') && spotsCount < 4
-          ? `<button type="button" class="dst-next-btn" data-b4-tab="map" style="background:#0284c7;border-color:#7dd3fc;">
-               Switch to Solent Spyglass Map for Clues 3 &amp; 4 <i class="fa-solid fa-magnifying-glass"></i>
-             </button>`
+        state.hutQuizAnswer && !quizRight
+          ? `<div style="padding:7px 9px;border-radius:8px;background:rgba(220,38,38,0.22);border:1px solid #ef4444;font-size:0.78rem;color:#fecaca;margin-top:4px;">
+               ❌ Multiply ~5 people per cottage × 9 households! Domesday was a royal tax register, not a modern census!
+             </div>`
           : ''
       }
-
       ${
-        readyNext
+        quizRight && !allClicked
+          ? `<div style="padding:7px 9px;border-radius:8px;background:rgba(245,158,11,0.2);border:1px solid #f59e0b;font-size:0.79rem;color:#fef3c7;margin-top:4px;">
+               👆 Spot on! Finish tapping the remaining glowing spots inside Hut #3 (${peopleCount}/8 people &amp; ${foundPets ? 'pets ✓' : 'dog/hens'}) to unlock Stage 6!
+             </div>`
+          : ''
+      }
+      ${
+        stageDone
           ? `<button type="button" class="dst-next-btn" data-complete-next="beat5">
-               Open Great Domesday Folio 46v → Decode STUBITONE &amp; Stamp Check <i class="fa-solid fa-scroll"></i>
+               Stage 6 → Crack Stubbington’s Real 1086 Latin Parchment! <i class="fa-solid fa-scroll"></i>
              </button>`
           : ''
       }
@@ -1307,47 +1893,33 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   }
 
   function renderBeat4HTML() {
-    const actVerb = isTouchUI() ? 'Tap' : 'Hover';
+    const foundTotal =
+      state.hutPeopleGroups.size -
+      1 +
+      (state.foundBlindSpots.has('untaxed_pets') ? 1 : 0) +
+      (state.bennetSightings.has('stumps') ? 1 : 0);
 
     return `
       <div class="dst-body">
         <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
-        <div class="dst-subtab-bar" id="dst-b4-subtabs-slot">${renderBeat4SubtabsInnerHTML()}</div>
-
         <div class="dst-split">
           <div>
-            ${
-              state.beat4Tab === 'hut'
-                ? `
-              <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="stubbington_hut">
-                <img src="/images/arcade/domesday/scene_4_stubbington_hut.webp"
-                     alt="Inside Stubbington Hut #3 in 1086"
-                     class="domesday-diorama-img" />
-                ${hitZoneHTML({ key: 'b4:edith', dataAttr: 'data-b4-spot="edith"', x: 22, y: 54, w: 20, h: 62, found: state.hutPeopleGroups.has('edith'), ariaLabel: 'Inspect Saxon mother Edith in doorway' })}
-                ${hitZoneHTML({ key: 'b4:five_kids', dataAttr: 'data-b4-spot="five_kids"', x: 52, y: 56, w: 26, h: 36, found: state.hutPeopleGroups.has('five_kids'), ariaLabel: 'Count the five children around the cauldron and woodpile' })}
-                ${hitZoneHTML({ key: 'b4:grandma', dataAttr: 'data-b4-spot="grandma"', x: 68, y: 60, w: 14, h: 36, found: state.hutPeopleGroups.has('grandma'), ariaLabel: 'Inspect grandmother spinning wool' })}
-                ${hitZoneHTML({ key: 'b4:pets', dataAttr: 'data-b4-spot="untaxed_pets"', x: 42, y: 83, w: 18, h: 20, found: state.foundBlindSpots.has('untaxed_pets'), ariaLabel: 'Inspect farm dog and rafter chickens' })}
-                ${hitZoneHTML({ key: 'b4:hens', dataAttr: 'data-b4-spot="rafter_hens"', x: 52, y: 12, w: 16, h: 14, found: state.foundBlindSpots.has('untaxed_pets'), ariaLabel: 'Inspect chickens on cottage beam' })}
-                ${hitZoneHTML({ key: 'b4:stumps', dataAttr: 'data-b4-spot="stumps_bennet"', x: 91, y: 74, w: 15, h: 28, found: state.bennetSightings.has('stumps'), ariaLabel: 'Inspect mossy Stubbington tree stumps and wiggling turnip leaves' })}
-              </div>
-              ${renderSceneFooterBarHTML(
-                state.hutPeopleGroups.size - 1 + (state.foundBlindSpots.has('untaxed_pets') ? 1 : 0) + (state.bennetSightings.has('stumps') ? 1 : 0),
-                5,
-                `${actVerb} Edith, kids, Grandma, dog/hens & tree-stumps!`,
-              )}
-            `
-                : `
-              <div class="dst-map-frame" id="dst-spyglass-map-wrap">
-                ${renderSolentGisSvgHTML({
-                  data,
-                  mode: 'spyglass',
-                  spyglassPos: state.spyglassPos,
-                  foundBlindSpots: state.foundBlindSpots,
-                  svgUid: `${instanceSvgUid}-b4`,
-                })}
-              </div>
-            `
-            }
+            <div class="dst-diorama-frame" id="dst-fx-stage" data-fx-preset="stubbington_hut">
+              <img src="/images/arcade/domesday/scene_4_stubbington_hut.webp"
+                   alt="Inside Stubbington Hut #3 in 1086"
+                   class="domesday-diorama-img" />
+              ${hitZoneHTML({ key: 'b4:edith', dataAttr: 'data-b4-spot="edith"', x: 22, y: 54, w: 20, h: 62, found: state.hutPeopleGroups.has('edith'), ariaLabel: 'Inspect Saxon mother Edith in doorway' })}
+              ${hitZoneHTML({ key: 'b4:five_kids', dataAttr: 'data-b4-spot="five_kids"', x: 52, y: 56, w: 26, h: 36, found: state.hutPeopleGroups.has('five_kids'), ariaLabel: 'Count the five children around the cauldron and woodpile' })}
+              ${hitZoneHTML({ key: 'b4:grandma', dataAttr: 'data-b4-spot="grandma"', x: 68, y: 60, w: 14, h: 36, found: state.hutPeopleGroups.has('grandma'), ariaLabel: 'Inspect Grandma Eadgyth spinning wool' })}
+              ${hitZoneHTML({ key: 'b4:pets', dataAttr: 'data-b4-spot="untaxed_pets"', x: 42, y: 83, w: 18, h: 20, found: state.foundBlindSpots.has('untaxed_pets'), ariaLabel: 'Inspect farm dog on floor' })}
+              ${hitZoneHTML({ key: 'b4:hens', dataAttr: 'data-b4-spot="rafter_hens"', x: 52, y: 12, w: 16, h: 14, found: state.foundBlindSpots.has('untaxed_pets'), ariaLabel: 'Inspect chickens on cottage beam' })}
+              ${hitZoneHTML({ key: 'b4:stumps', dataAttr: 'data-b4-spot="stumps_bennet"', x: 91, y: 74, w: 15, h: 28, found: state.bennetSightings.has('stumps'), ariaLabel: 'Inspect mossy Stubbington tree stumps and wiggling turnip leaves' })}
+            </div>
+            ${renderSceneFooterBarHTML(
+              foundTotal,
+              5,
+              'Click Edith, 5 kids, Grandma, dog/hens & tree-stumps (🥕 #3)!',
+            )}
           </div>
 
           <div class="dst-card-panel" id="dst-b4-right-slot">
@@ -1358,6 +1930,9 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     `;
   }
 
+  // =========================================================================
+  // STAGE 6 (beat5): PURE SINGLE-SCREEN LATIN CODE-BREAKER (ZERO SCROLL OVERLOAD!)
+  // =========================================================================
   function renderBeat5ChunksInnerHTML() {
     const chunks = data.stubitoneParchment.chunks;
     const crackedTargets = new Set(
@@ -1376,11 +1951,11 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         return `
           <div class="dst-latin-row ${isCracked ? 'is-cracked' : state.activeChunkIdx === idx ? 'is-active' : ''} ${isWrong ? 'is-target-wrong' : ''}" data-chunk-idx="${idx}">
             <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
-              <span style="font-family:${showEnglish ? 'Inter, sans-serif' : 'Georgia, serif'};font-size:0.88rem;font-weight:${showEnglish ? '800' : '700'};color:${showEnglish ? '#14532d' : '#292524'};line-height:1.34;">
+              <span style="font-family:${showEnglish ? 'Inter, sans-serif' : 'Georgia, serif'};font-size:0.86rem;font-weight:${showEnglish ? '800' : '700'};color:${showEnglish ? '#14532d' : '#292524'};line-height:1.34;">
                 <span class="dst-lang-chip ${showEnglish ? '' : 'is-latin'}">${showEnglish ? 'ENG' : 'LAT'}</span>${showEnglish ? ch.english : formattedLatin}
               </span>
               <span style="font-size:0.68rem;font-weight:900;color:${isCracked ? '#15803d' : '#9a3412'};white-space:nowrap;">
-                ${isCracked ? '✓ Cracked' : `Line ${idx + 1}`}
+                ${isCracked ? '✓ Cracked' : `Tap Line ${idx + 1}`}
               </span>
             </div>
           </div>
@@ -1392,202 +1967,99 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   function renderBeat5DecoderInnerHTML() {
     const chunks = data.stubitoneParchment.chunks;
     const activeChunk = chunks[state.activeChunkIdx] || chunks[0];
-    const unlockedBennet = state.bennetSightings.size >= 3;
     const curMission = LATIN_CLUE_MISSIONS[state.b5ClueStep] || LATIN_CLUE_MISSIONS[0];
     const curSolved = state.b5SolvedClues.has(curMission.id);
     const all3Cracked = state.b5SolvedClues.size >= 3;
 
     return `
-      <!-- ACTIVE 3-CLUE CODE-BREAKER CHALLENGE -->
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:8px;">
-        <span style="font-size:0.74rem;font-weight:900;color:#fbbf24;text-transform:uppercase;">
-          🔐 PARCHMENT CODE-BREAKER (${state.b5SolvedClues.size}/3 CRACKED)
-        </span>
-        <div style="display:flex;gap:4px;">
-          ${LATIN_CLUE_MISSIONS.map(
-            (m, i) => `
-            <button type="button" class="dst-step-pill ${state.b5ClueStep === i ? 'is-active' : ''} ${state.b5SolvedClues.has(m.id) ? 'is-done' : ''}"
-                    data-b5-clue="${i}" style="min-height:28px;padding:3px 8px;font-size:0.7rem;">
-              ${state.b5SolvedClues.has(m.id) ? '✓ ' : ''}#${i + 1}
-            </button>
-          `,
-          ).join('')}
-        </div>
+      ${renderMissionBannerHTML(
+        'Use the Medieval Scribe Key below to tap the 3 matching Latin lines on the left!',
+        `${state.b5SolvedClues.size} / 3 Cracked`,
+        all3Cracked,
+      )}
+
+      <div class="dst-scribe-key" aria-label="Medieval Latin Scribe Key">
+        <span class="dst-scribe-chip"><strong>ten’</strong> = holds (now)</span>
+        <span class="dst-scribe-chip"><strong>tenuit</strong> = held (past)</span>
+        <span class="dst-scribe-chip"><strong>vill’i</strong> = villagers</span>
+        <span class="dst-scribe-chip"><strong>bord’</strong> = smallholders</span>
+        <span class="dst-scribe-chip"><strong>v + iiij</strong> = 5 + 4</span>
+        <span class="dst-scribe-chip"><strong>lib’ / sol’</strong> = £ / shillings</span>
+        <span class="dst-scribe-chip"><strong>T.R.E.</strong> = in 1066</span>
       </div>
 
-      <div style="padding:10px 12px;border-radius:10px;background:#292524;border:1.5px solid ${curSolved ? '#22c55e' : '#f59e0b'};margin-bottom:10px;">
-        <div style="font-size:0.71rem;font-weight:900;color:#fde68a;text-transform:uppercase;margin-bottom:3px;">
+      <div style="display:flex;gap:5px;margin-bottom:8px;">
+        ${LATIN_CLUE_MISSIONS.map(
+          (m, i) => `
+          <button type="button" class="dst-step-pill ${state.b5ClueStep === i ? 'is-active' : ''} ${state.b5SolvedClues.has(m.id) ? 'is-done' : ''}"
+                  data-b5-clue="${i}" style="flex:1;min-height:30px;padding:3px 8px;font-size:0.72rem;">
+            ${state.b5SolvedClues.has(m.id) ? '✓ ' : ''}Clue #${i + 1}
+          </button>
+        `,
+        ).join('')}
+      </div>
+
+      <div style="padding:10px 12px;border-radius:10px;background:#292524;border:1.5px solid ${curSolved ? '#22c55e' : '#f59e0b'};margin-bottom:9px;">
+        <div style="font-size:0.7rem;font-weight:900;color:#fde68a;text-transform:uppercase;margin-bottom:3px;">
           ${curMission.badge}
         </div>
-        <div style="font-size:0.86rem;font-weight:700;color:#f8fafc;line-height:1.38;">
+        <div style="font-size:0.85rem;font-weight:700;color:#f8fafc;line-height:1.38;">
           ${curMission.prompt}
         </div>
         ${
           state.b5WrongChunkIdx >= 0 && !curSolved
-            ? `<div style="margin-top:7px;padding:7px 9px;border-radius:7px;background:rgba(220,38,38,0.22);border:1px solid #ef4444;font-size:0.79rem;color:#fecaca;">
+            ? `<div style="margin-top:7px;padding:7px 9px;border-radius:7px;background:rgba(220,38,38,0.22);border:1px solid #ef4444;font-size:0.78rem;color:#fecaca;">
                  ❌ Not Line ${state.b5WrongChunkIdx + 1}! ${curMission.hintWrong}
                </div>`
             : ''
         }
         ${
           curSolved
-            ? `<div style="margin-top:7px;padding:7px 9px;border-radius:7px;background:rgba(22,163,74,0.22);border:1px solid #22c55e;font-size:0.8rem;color:#dcfce7;">
+            ? `<div style="margin-top:7px;padding:7px 9px;border-radius:7px;background:rgba(22,163,74,0.22);border:1px solid #22c55e;font-size:0.79rem;color:#dcfce7;">
                  ✅ ${curMission.solvedNote}
                </div>`
             : ''
         }
       </div>
 
-      <!-- INSPECTED LINE TRANSLATION CARD -->
-      <div style="padding:9px 11px;border-radius:10px;background:#141210;border:1px solid #44403c;margin-bottom:10px;">
-        <div style="font-size:0.69rem;font-weight:900;color:#a8a29e;text-transform:uppercase;margin-bottom:2px;">
-          📜 INSPECTED LINE ${state.activeChunkIdx + 1} • ${activeChunk.decoderTitle}
+      <div style="padding:9px 11px;border-radius:10px;background:#141210;border:1px solid #44403c;">
+        <div style="font-size:0.68rem;font-weight:900;color:#a8a29e;text-transform:uppercase;margin-bottom:2px;">
+          📜 LINE ${state.activeChunkIdx + 1} TRANSLATION • ${activeChunk.decoderTitle}
         </div>
-        <div style="font-size:0.82rem;color:#86efac;font-weight:700;margin-bottom:3px;">
+        <div style="font-size:0.81rem;color:#86efac;font-weight:700;margin-bottom:2px;">
           ${activeChunk.english}
         </div>
-        <p style="margin:0;font-size:0.79rem;color:#d6d3d1;line-height:1.38;">
+        <p style="margin:0;font-size:0.77rem;color:#d6d3d1;line-height:1.36;">
           ${activeChunk.decoderNote}
         </p>
       </div>
 
-      <div style="padding:10px 12px;border-radius:12px;background:linear-gradient(135deg,${all3Cracked ? '#14532d' : '#450a0a'} 0%,#1c1917 100%);border:2px solid ${all3Cracked ? '#22c55e' : '#dc2626'};display:flex;align-items:center;gap:11px;margin-bottom:9px;">
-        <div style="width:46px;height:46px;border-radius:50%;background:radial-gradient(circle,#ef4444 0%,#991b1b 75%);border:2.5px solid #fca5a5;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;">
-          ${all3Cracked ? '🏆' : '👑'}
-        </div>
-        <div>
-          <div style="font-size:0.68rem;font-weight:900;color:#fca5a5;text-transform:uppercase;">
-            ${all3Cracked ? 'FOLIO 46v OFFICIALLY DECODED!' : 'KING WILLIAM’S GREAT WAX SEAL'}
-          </div>
-          <div style="font-size:0.9rem;font-weight:900;color:#ffffff;">Royal Solent Commissioner • ${state.score} Audit Points</div>
-          <div style="font-size:0.75rem;color:#fde68a;">
-            ${unlockedBennet ? '🏆 SECRET TURNIP SEAL UNLOCKED: Boggy Bennet Luvet (Worth £0 0s 0d & 1 Wormy Turnip)!' : `🥕 Spot Bennet’s turnip in all 3 scenes (${state.bennetSightings.size}/3 found) for his £0 seal!`}
-          </div>
-        </div>
-      </div>
-
-      <button type="button" class="dst-icon-btn" id="dst-btn-hear-debrief" style="width:100%;border-color:#38bdf8;color:#bae6fd;">
-        🔊 Hear Historian Summary: What Was Really Recorded in 1086?
-      </button>
-    `;
-  }
-
-  function renderBeat5ArchiveBountyInnerHTML() {
-    const b1Done = state.archiveBounty1 !== null;
-    const b1Right = state.archiveBounty1 === 'small40';
-    const b2Done = state.archiveBounty2 !== null;
-    const b2Right = state.archiveBounty2 === 'meon';
-    const masterUnlocked = b1Right && b2Right;
-
-    return `
-      <div class="dst-stamp-grid">
-        <div style="background:#1e293b;border:1.5px solid ${!b1Done ? '#334155' : b1Right ? '#22c55e' : '#ef4444'};border-radius:11px;padding:11px 13px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;">
-          <div>
-            <div style="font-size:0.7rem;font-weight:900;color:#7dd3fc;text-transform:uppercase;margin-bottom:3px;">
-              🕵️‍♂️ ARCHIVE PROOF #1 • STUBBINGTON'S SIZE RANK
-            </div>
-            <div style="font-size:0.83rem;font-weight:700;color:#f8fafc;line-height:1.38;">
-              Open Stubbington’s page on <strong>Open Domesday</strong> (and zoom into the real parchment scan on the right!). Under <strong>Population (9 households)</strong>, where did Stubbington rank across 1086 England?
-            </div>
-          </div>
-          <div style="display:flex;gap:6px;flex-wrap:wrap;">
-            <button type="button" class="dst-icon-btn ${state.archiveBounty1 === 'small40' ? 'is-active' : ''}" data-bounty1="small40" style="flex:1;font-size:0.74rem;">
-              🌱 Smallest 40%
-            </button>
-            <button type="button" class="dst-icon-btn ${state.archiveBounty1 === 'large20' ? 'is-active' : ''}" data-bounty1="large20" style="flex:1;font-size:0.74rem;">
-              🏙️ Largest 20%
-            </button>
-          </div>
-          ${
-            b1Done
-              ? `<div style="font-size:0.77rem;color:${b1Right ? '#86efac' : '#fca5a5'};line-height:1.36;">
-                   ${b1Right ? '✅ Verified from Open Domesday! 9 households put Stubbington in the smallest 40% of England (while 90-household Fareham ranked in the largest 20%)!' : '❌ Check the first bullet on Stubbington’s Open Domesday page—with just 9 households, was it in the Smallest 40%?'}
-                 </div>`
-              : ''
-          }
-        </div>
-
-        <div style="background:#1e293b;border:1.5px solid ${!b2Done ? '#334155' : b2Right ? '#22c55e' : '#ef4444'};border-radius:11px;padding:11px 13px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;">
-          <div>
-            <div style="font-size:0.7rem;font-weight:900;color:#7dd3fc;text-transform:uppercase;margin-bottom:3px;">
-              🕵️‍♂️ ARCHIVE PROOF #2 • TITCHFIELD HUNDRED NEIGHBOURS
-            </div>
-            <div style="font-size:0.83rem;font-weight:700;color:#f8fafc;line-height:1.38;">
-              Click <strong>Titchfield</strong> next to <strong>Hundred</strong> on Stubbington’s page to reveal all <strong>10 local 1086 places</strong> (<em>Funtley, Brownwich, Segensworth, Hook...</em>). Which local hamlet at the bottom had <strong>ONLY 2 HOUSEHOLDS</strong>?
-            </div>
-          </div>
-          <div style="display:flex;gap:6px;flex-wrap:wrap;">
-            <button type="button" class="dst-icon-btn ${state.archiveBounty2 === 'funtley' ? 'is-active' : ''}" data-bounty2="funtley" style="flex:1;font-size:0.74rem;">
-              🏘️ Funtley
-            </button>
-            <button type="button" class="dst-icon-btn ${state.archiveBounty2 === 'meon' ? 'is-active' : ''}" data-bounty2="meon" style="flex:1;font-size:0.74rem;">
-              🌊 Meon (2 households)
-            </button>
-          </div>
-          ${
-            b2Done
-              ? `<div style="font-size:0.77rem;color:${b2Right ? '#86efac' : '#fca5a5'};line-height:1.36;">
-                   ${b2Right ? '✅ Spot on! Tiny Meon at the mouth of the River Meon had just 2 households—right below Hook (8) and Stubbington (9)!' : '❌ Funtley had 22 households! Look right at the bottom of the 10 settlements in Titchfield Hundred!'}
-                 </div>`
-              : ''
-          }
-        </div>
-      </div>
-
       ${
-        masterUnlocked
-          ? `<div style="margin-top:10px;padding:10px 13px;border-radius:10px;background:rgba(20,83,45,0.42);border:2px solid #22c55e;font-size:0.84rem;font-weight:800;color:#dcfce7;">
-               🏅 <strong>MASTER ARCHIVIST OF TITCHFIELD HUNDRED UNLOCKED!</strong> You just cross-checked genuine 1086 National Archives data like a professional medieval historian!
-             </div>`
+        all3Cracked
+          ? `<button type="button" class="dst-next-btn" data-complete-next="beat6">
+               Final Stage 7 → 3-Stamp Boss &amp; Claim Your Victory Warrant! <i class="fa-solid fa-trophy"></i>
+             </button>`
           : ''
       }
     `;
   }
 
-  function renderBeat5StampsInnerHTML() {
-    return STAMP_CHALLENGES.map((sc) => {
-      const picked = state.stampAnswers[sc.id];
-      const answered = picked !== undefined;
-      const right = picked === sc.isReal;
-      return `
-        <div style="background:#292524;border:1.5px solid ${!answered ? '#44403c' : right ? '#22c55e' : '#ef4444'};border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;">
-          <div style="font-size:0.83rem;font-weight:700;color:#f8fafc;line-height:1.38;">&ldquo;${sc.claim}&rdquo;</div>
-          <div style="display:flex;gap:6px;">
-            <button type="button" class="dst-icon-btn ${answered && sc.isReal ? 'is-active' : ''}" data-stamp-id="${sc.id}" data-stamp-val="true" style="flex:1;font-size:0.73rem;">
-              📜 Real 1086
-            </button>
-            <button type="button" class="dst-icon-btn ${answered && !sc.isReal ? 'is-active' : ''}" data-stamp-id="${sc.id}" data-stamp-val="false" style="flex:1;font-size:0.73rem;">
-              🎭 Comedy Cast
-            </button>
-          </div>
-          ${answered ? `<div style="font-size:0.76rem;color:${right ? '#86efac' : '#fca5a5'};line-height:1.35;">${right ? '✅ ' : '💡 '}${sc.note}</div>` : ''}
-        </div>
-      `;
-    }).join('');
-  }
-
   function renderBeat5HTML() {
-    const debrief = data.debriefColumns;
-
     return `
       <div class="dst-body">
         <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
-
-        <div class="dst-split" style="margin-bottom:16px;">
+        <div class="dst-split">
           <div class="dst-parchment-box">
             <div class="dst-parchment-header">
               📜 ${data.stubitoneParchment.folioHeader}
             </div>
 
             <div class="dst-slider-bar">
-              <span style="font-size:0.72rem;font-weight:900;color:#78350f;white-space:nowrap;">1086 LATIN</span>
+              <span style="font-size:0.71rem;font-weight:900;color:#78350f;white-space:nowrap;">1086 LATIN</span>
               <input type="range" id="dst-latin-slider" min="0" max="100" value="${state.translationPct}"
-                     style="flex:1;min-width:70px;height:28px;accent-color:#b91c1c;cursor:pointer;"
-                     aria-label="Optional Decoder Lens: slide right to peek at English" />
-              <span id="dst-latin-pct-lbl" style="font-size:0.72rem;font-weight:900;color:#15803d;white-space:nowrap;">DECODER (${state.translationPct}%)</span>
-            </div>
-            <div style="font-size:0.74rem;font-weight:800;color:#78350f;margin-bottom:8px;">
-              👆 Tap the matching parchment line below to solve each Code-Breaker clue!
+                     style="flex:1;min-width:70px;height:26px;accent-color:#b91c1c;cursor:pointer;"
+                     aria-label="Optional English Hint Lens" />
+              <span id="dst-latin-pct-lbl" style="font-size:0.71rem;font-weight:900;color:#15803d;white-space:nowrap;">PEEK (${state.translationPct}%)</span>
             </div>
 
             <div class="dst-chunk-grid" id="dst-b5-chunks-slot">
@@ -1599,70 +2071,154 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             ${renderBeat5DecoderInnerHTML()}
           </div>
         </div>
+      </div>
+    `;
+  }
 
-        <div style="background:#1c1917;border:1.5px solid #f59e0b;border-radius:14px;padding:13px 15px;margin-bottom:14px;">
-          <div style="font-size:0.78rem;font-weight:900;color:#fde047;text-transform:uppercase;margin-bottom:8px;">
-            🔨 30-SECOND HISTORIAN STAMP TEST: REAL IN THE 1086 BOOK OR COMEDY INVENTION?
+  // =========================================================================
+  // STAGE 7 (beat6): FINAL 3-STAMP BOSS + FIREWALL-SAFE ARCHIVE + GRAND VICTORY!
+  // =========================================================================
+  function renderBeat6StampsInnerHTML() {
+    return STAMP_CHALLENGES.map((sc) => {
+      const picked = state.stampAnswers[sc.id];
+      const answered = picked !== undefined;
+      const right = picked === sc.isReal;
+      return `
+        <div style="background:#292524;border:1.5px solid ${!answered ? '#44403c' : right ? '#22c55e' : '#f59e0b'};border-radius:11px;padding:11px 12px;display:flex;flex-direction:column;justify-content:space-between;gap:8px;">
+          <div style="font-size:0.83rem;font-weight:700;color:#f8fafc;line-height:1.36;">&ldquo;${sc.claim}&rdquo;</div>
+          <div style="display:flex;gap:6px;">
+            <button type="button" class="dst-icon-btn ${answered && picked === true ? 'is-active' : ''}" data-stamp-id="${sc.id}" data-stamp-val="true" style="flex:1;font-size:0.73rem;">
+              📜 Real 1086
+            </button>
+            <button type="button" class="dst-icon-btn ${answered && picked === false ? 'is-active' : ''}" data-stamp-id="${sc.id}" data-stamp-val="false" style="flex:1;font-size:0.73rem;">
+              🎭 Comedy Cast
+            </button>
           </div>
-          <div class="dst-stamp-grid" id="dst-b5-stamps-slot">
-            ${renderBeat5StampsInnerHTML()}
+          ${answered ? `<div style="font-size:0.76rem;color:${right ? '#86efac' : '#fde68a'};line-height:1.35;">${right ? '✅ ' : '💡 '}${sc.note}</div>` : ''}
+        </div>
+      `;
+    }).join('');
+  }
+
+  function renderBeat6VictoryBannerHTML() {
+    const all3Stamped = Object.keys(state.stampAnswers).length >= 3;
+    if (!all3Stamped) return '';
+
+    const rank = computeRankFromScore(state.score);
+    const unlockedBennet = state.bennetSightings.size >= 3;
+    const completedCount = STEPS.filter(
+      (s) => s.id !== 'cover' && isStepTrulyComplete(s.id),
+    ).length;
+
+    return `
+      <div class="dst-victory-card" id="dst-fx-stage" data-fx-preset="victory_confetti">
+        <div style="position:relative;z-index:5;">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:8px;">
+            <div style="display:flex;align-items:center;gap:12px;">
+              <div style="width:58px;height:58px;border-radius:50%;background:radial-gradient(circle,#fde047 0%,#b45309 85%);border:3px solid #fef9c3;display:flex;align-items:center;justify-content:center;font-size:1.85rem;flex-shrink:0;box-shadow:0 6px 18px rgba(245,158,11,0.45);">
+                ${rank.icon}
+              </div>
+              <div>
+                <div style="font-size:0.74rem;font-weight:900;color:#86efac;letter-spacing:0.8px;text-transform:uppercase;">
+                  🏆 YOU BEAT THE 1086 DOMESDAY GAME! (${completedCount}/7 STAGES MASTERED)
+                </div>
+                <h3 style="margin:2px 0;font-family:'Playfair Display',Georgia,serif;font-size:1.35rem;color:#fef3c7;">
+                  ${rank.title}
+                </h3>
+                <div style="font-size:0.81rem;color:#d6d3d1;">${rank.sub}</div>
+              </div>
+            </div>
+
+            <div style="background:#0c0a09;border:2px solid #fde047;border-radius:12px;padding:8px 14px;text-align:center;">
+              <div style="font-size:0.66rem;font-weight:900;color:#fde68a;text-transform:uppercase;">FINAL ROYAL SCORE</div>
+              <div style="font-size:1.4rem;font-weight:900;color:#fde047;">🪙 ${state.score} pts</div>
+            </div>
+          </div>
+
+          <div class="dst-ledger-grid" aria-label="Stage-by-Stage Score Carry-Over Breakdown">
+            <div class="dst-ledger-cell"><span>1. Solent Towns</span><strong>+${state.ledger.beat0}</strong></div>
+            <div class="dst-ledger-cell"><span>2. Fareham &amp; Servi</span><strong>+${state.ledger.beat1}</strong></div>
+            <div class="dst-ledger-cell"><span>3. 1066 Wipeout</span><strong>+${state.ledger.beat2}</strong></div>
+            <div class="dst-ledger-cell"><span>4. Royal Trial</span><strong>+${state.ledger.beat3}</strong></div>
+            <div class="dst-ledger-cell"><span>5. Edith’s Hut</span><strong>+${state.ledger.beat4}</strong></div>
+            <div class="dst-ledger-cell"><span>6. Folio 46v Latin</span><strong>+${state.ledger.beat5}</strong></div>
+            <div class="dst-ledger-cell"><span>7. Stamps &amp; Archive</span><strong>+${state.ledger.beat6}</strong></div>
+            <div class="dst-ledger-cell"><span>🥕 Secret Turnips (${state.bennetSightings.size}/3)</span><strong>+${state.ledger.turnips}</strong></div>
+          </div>
+
+          <div style="padding:8px 12px;border-radius:9px;background:rgba(12,10,9,0.65);border:1px solid ${unlockedBennet ? '#22c55e' : '#78350f'};font-size:0.8rem;color:#fde68a;margin-bottom:12px;">
+            ${
+              unlockedBennet
+                ? '🥕 <strong>SECRET BOGGY BENNET TROPHY UNLOCKED!</strong> You spotted Bennet’s wormy turnip in Gosport Marsh, Fareham Creek, AND Stubbington Hut #3!'
+                : `🥕 <strong>Secret Turnip Hunt (${state.bennetSightings.size}/3 found):</strong> Spot Bennet in Stage 1 Marsh, Stage 2 Riverbank, and Stage 5 Tree-Stumps for +130 bonus points!`
+            }
+          </div>
+
+          <div style="display:flex;flex-wrap:wrap;gap:8px;">
+            <button type="button" class="dst-start-cta" id="dst-btn-print-warrant" style="flex:1 1 220px;">
+              🖨️ Print Official 1086 Warrant
+            </button>
+            <button type="button" class="dst-icon-btn" id="dst-btn-open-archive-modal" style="border-color:#38bdf8;color:#bae6fd;min-height:46px;padding:8px 14px;">
+              🔍 Bonus: Inspect Titchfield Hundred Table (${state.archiveBounty1 === 'small40' && state.archiveBounty2 === 'meon' ? '✓ +150 pts' : '+150 pts'})
+            </button>
+            <button type="button" class="dst-icon-btn" id="dst-btn-print-drama-script" style="border-color:#fbbf24;color:#fef08a;min-height:46px;padding:8px 14px;">
+              🎭 Print Class Voice-Acting Script
+            </button>
+            <button type="button" class="dst-icon-btn" id="dst-btn-hear-debrief" style="min-height:46px;padding:8px 14px;">
+              🔊 Replay Historian Summary
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderBeat6HTML() {
+    const debrief = data.debriefColumns;
+    const stampedCount = Object.keys(state.stampAnswers).length;
+
+    return `
+      <div class="dst-body">
+        <div class="dst-speech-box" id="dst-speech-slot" role="status" aria-live="polite">${renderSpeechInnerHTML()}</div>
+
+        <div class="dst-card-panel">
+          ${renderMissionBannerHTML(
+            'Stamp all 3 statements Real 1086 or Comedy Cast to slam the Great Wax Seal and beat the game!',
+            `${stampedCount} / 3 Stamped`,
+            stampedCount >= 3,
+          )}
+          <div class="dst-stamp-grid" id="dst-b6-stamps-slot">
+            ${renderBeat6StampsInnerHTML()}
           </div>
         </div>
 
-        <div class="dst-archive-quest-box">
-          <div style="font-size:0.78rem;font-weight:900;color:#7dd3fc;text-transform:uppercase;margin-bottom:4px;">
-            🌐 FINAL FIELDWORK QUEST: INSPECT THE REAL 1086 DOMESDAY BOOK ONLINE!
-          </div>
-          <p style="margin:0;font-size:0.85rem;color:#e2e8f0;line-height:1.42;">
-            Want to see King William’s genuine 940-year-old sheepskin page in The National Archives? Launch <strong>Open Domesday</strong> in a new tab, search <strong>Stubbington</strong>, and bring back these <strong>2 real archive proofs</strong>:
-          </p>
-
-          <div class="dst-ext-link-row">
-            <a href="https://opendomesday.org/" target="_blank" rel="noopener noreferrer" class="dst-ext-link-btn is-primary">
-              🔎 Search Open Domesday ("Stubbington") <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-            <a href="https://opendomesday.org/place/SU5402/stubbington/" target="_blank" rel="noopener noreferrer" class="dst-ext-link-btn">
-              📜 Stubbington Folio 46v Scan <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-            <a href="https://opendomesday.org/place/SU5806/fareham/" target="_blank" rel="noopener noreferrer" class="dst-ext-link-btn">
-              ⛪ Fareham Folio Scan <i class="fa-solid fa-arrow-up-right-from-square"></i>
-            </a>
-          </div>
-
-          <div id="dst-b5-archive-slot">
-            ${renderBeat5ArchiveBountyInnerHTML()}
-          </div>
-
-          <div style="margin-top:9px;font-size:0.77rem;color:#bae6fd;line-height:1.38;">
-            🏡 <strong>Hometown Bonus:</strong> Before closing Open Domesday, search <strong>Funtley</strong>, <strong>Segensworth</strong>, <strong>Brownwich</strong>, <strong>Hook</strong>, or <strong>Alverstoke</strong>—did your street exist in 1086, or was it salt-marsh like Gosport?
-          </div>
+        <div id="dst-b6-victory-slot">
+          ${renderBeat6VictoryBannerHTML()}
         </div>
 
         <details class="dst-archive-drawer">
           <summary>
-            <span>📚 Open Full 1086 Archive Reference: Real Records vs. Fictional Locals vs. Blind Spots</span>
+            <span>📚 Revision Cheat-Sheet: Real 1086 Facts vs. Comedy Cast vs. Blind Spots</span>
             <span style="font-size:0.74rem;color:#fbbf24;">▾</span>
           </summary>
           <div style="font-size:0.73rem;color:#a8a29e;margin-top:6px;">${data.sourceAttribution}</div>
           <div class="dst-debrief-grid">
             <div class="dst-debrief-col" style="border-top:4px solid #22c55e;">
-              <div style="font-size:0.8rem;font-weight:900;color:#86efac;margin-bottom:8px;">📜 100% REAL IN THE 1086 BOOK</div>
-              <ul style="margin:0;padding-left:17px;font-size:0.81rem;color:#e7e5e4;line-height:1.45;">
-                ${debrief.recordedTrue.map((item) => `<li style="margin-bottom:6px;">${item}</li>`).join('')}
+              <div style="font-size:0.79rem;font-weight:900;color:#86efac;margin-bottom:7px;">📜 100% REAL IN THE 1086 BOOK</div>
+              <ul style="margin:0;padding-left:17px;font-size:0.8rem;color:#e7e5e4;line-height:1.44;">
+                ${debrief.recordedTrue.map((item) => `<li style="margin-bottom:5px;">${item}</li>`).join('')}
               </ul>
             </div>
-
             <div class="dst-debrief-col" style="border-top:4px solid #f59e0b;">
-              <div style="font-size:0.8rem;font-weight:900;color:#fde047;margin-bottom:8px;">🎭 OUR FICTIONAL VILLAGE VOICES</div>
-              <ul style="margin:0;padding-left:17px;font-size:0.81rem;color:#e7e5e4;line-height:1.45;">
-                ${debrief.comedyComposites.map((item) => `<li style="margin-bottom:6px;">${item}</li>`).join('')}
+              <div style="font-size:0.79rem;font-weight:900;color:#fde047;margin-bottom:7px;">🎭 OUR COMEDY COMPOSITES</div>
+              <ul style="margin:0;padding-left:17px;font-size:0.8rem;color:#e7e5e4;line-height:1.44;">
+                ${debrief.comedyComposites.map((item) => `<li style="margin-bottom:5px;">${item}</li>`).join('')}
               </ul>
             </div>
-
             <div class="dst-debrief-col" style="border-top:4px solid #38bdf8;">
-              <div style="font-size:0.8rem;font-weight:900;color:#7dd3fc;margin-bottom:8px;">🔍 REAL 1086 BLIND SPOTS</div>
-              <ul style="margin:0;padding-left:17px;font-size:0.81rem;color:#e7e5e4;line-height:1.45;">
-                ${debrief.blindSpots.map((item) => `<li style="margin-bottom:6px;">${item}</li>`).join('')}
+              <div style="font-size:0.79rem;font-weight:900;color:#7dd3fc;margin-bottom:7px;">🔍 REAL 1086 BLIND SPOTS</div>
+              <ul style="margin:0;padding-left:17px;font-size:0.8rem;color:#e7e5e4;line-height:1.44;">
+                ${debrief.blindSpots.map((item) => `<li style="margin-bottom:5px;">${item}</li>`).join('')}
               </ul>
             </div>
           </div>
@@ -1672,42 +2228,244 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   }
 
   // =========================================================================
+  // IN-GAME MODALS: 1) FIREWALL-SAFE ARCHIVE TABLE • 2) YEAR 7 DRAMA BOOTH
+  // =========================================================================
+  function renderInnerModalHTML() {
+    if (!state.activeModal) return '';
+
+    if (state.activeModal === 'archive') {
+      const b1Right = state.archiveBounty1 === 'small40';
+      const b2Right = state.archiveBounty2 === 'meon';
+      return `
+        <div class="dst-inner-modal-backdrop" id="dst-inner-modal-bg">
+          <div class="dst-inner-modal" role="dialog" aria-modal="true" aria-label="1086 Titchfield Hundred Archive Record">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:10px;">
+              <div>
+                <div style="font-size:0.7rem;font-weight:900;color:#7dd3fc;text-transform:uppercase;">BUILT-IN NATIONAL ARCHIVES RECORD (ZERO EXTERNAL POP-UPS)</div>
+                <h3 style="margin:2px 0 0;font-size:1.15rem;color:#fef3c7;">🔍 Titchfield Hundred &amp; Stubbington Folio 46v (1086)</h3>
+              </div>
+              <button type="button" class="dst-icon-btn" data-close-inner-modal="1"><i class="fa-solid fa-xmark"></i> Close</button>
+            </div>
+
+            <div style="overflow-x:auto;margin-bottom:12px;border:1px solid #44403c;border-radius:10px;">
+              <table style="width:100%;border-collapse:collapse;font-size:0.79rem;text-align:left;">
+                <thead>
+                  <tr style="background:#292524;color:#fde047;">
+                    <th style="padding:7px 10px;">1086 Settlement</th>
+                    <th style="padding:7px 10px;">1086 Overlord</th>
+                    <th style="padding:7px 10px;">Households</th>
+                    <th style="padding:7px 10px;">Archive Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${TITCHFIELD_HUNDRED_TABLE.map(
+                    (r) => `
+                    <tr style="border-top:1px solid #292524;background:${r.place.startsWith('Stubbington') ? 'rgba(245,158,11,0.14)' : 'transparent'};">
+                      <td style="padding:6px 10px;font-weight:800;color:#f8fafc;">${r.place}</td>
+                      <td style="padding:6px 10px;color:#d6d3d1;">${r.lord}</td>
+                      <td style="padding:6px 10px;font-weight:900;color:#86efac;">${r.households}</td>
+                      <td style="padding:6px 10px;color:#cbd5e1;">${r.rank}</td>
+                    </tr>
+                  `,
+                  ).join('')}
+                </tbody>
+              </table>
+            </div>
+
+            <div class="dst-stamp-grid">
+              <div style="background:#292524;border:1.5px solid ${b1Right ? '#22c55e' : '#44403c'};border-radius:10px;padding:10px 12px;">
+                <div style="font-size:0.8rem;font-weight:800;margin-bottom:7px;">
+                  1. Check Stubbington’s row above (9 households). Where did it rank across 1086 England?
+                </div>
+                <div style="display:flex;gap:6px;">
+                  <button type="button" class="dst-icon-btn ${b1Right ? 'is-active' : ''}" data-bounty1="small40" style="flex:1;">🌱 Smallest 40%</button>
+                  <button type="button" class="dst-icon-btn ${state.archiveBounty1 === 'large20' ? 'is-armed-warn' : ''}" data-bounty1="large20" style="flex:1;">🏙️ Largest 20%</button>
+                </div>
+              </div>
+
+              <div style="background:#292524;border:1.5px solid ${b2Right ? '#22c55e' : '#44403c'};border-radius:10px;padding:10px 12px;">
+                <div style="font-size:0.8rem;font-weight:800;margin-bottom:7px;">
+                  2. Which tiny Solent hamlet at the bottom of the table had ONLY 2 households?
+                </div>
+                <div style="display:flex;gap:6px;">
+                  <button type="button" class="dst-icon-btn ${state.archiveBounty2 === 'funtley' ? 'is-armed-warn' : ''}" data-bounty2="funtley" style="flex:1;">🏘️ Funtley (22)</button>
+                  <button type="button" class="dst-icon-btn ${b2Right ? 'is-active' : ''}" data-bounty2="meon" style="flex:1;">🌊 Meon (2)</button>
+                </div>
+              </div>
+            </div>
+
+            ${
+              b1Right && b2Right
+                ? `<div style="margin-top:10px;padding:10px 12px;border-radius:9px;background:rgba(20,83,45,0.45);border:1.5px solid #22c55e;font-size:0.83rem;font-weight:800;color:#dcfce7;text-align:center;">
+                     🏅 +150 BONUS POINTS ADDED TO YOUR ROYAL SCORE!
+                   </div>`
+                : ''
+            }
+          </div>
+        </div>
+      `;
+    }
+
+    if (state.activeModal === 'drama') {
+      const canRecord =
+        typeof navigator !== 'undefined' &&
+        Boolean(navigator.mediaDevices?.getUserMedia) &&
+        typeof MediaRecorder !== 'undefined';
+      return `
+        <div class="dst-inner-modal-backdrop" id="dst-inner-modal-bg">
+          <div class="dst-inner-modal" role="dialog" aria-modal="true" aria-label="Class Voice-Acting Booth">
+            <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:10px;">
+              <div>
+                <div style="font-size:0.7rem;font-weight:900;color:#fde047;text-transform:uppercase;">YEAR 7 DRAMA &amp; ORACY STUDIO (STORED LOCALLY ON THIS DEVICE)</div>
+                <h3 style="margin:2px 0 0;font-size:1.15rem;color:#fef3c7;">🎙️ Voice-Act the 1086 Cast!</h3>
+              </div>
+              <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                <button type="button" class="dst-icon-btn" id="dst-drama-print-btn" style="border-color:#fbbf24;color:#fef08a;">
+                  🖨️ Print Script
+                </button>
+                <button type="button" class="dst-icon-btn" data-close-inner-modal="1"><i class="fa-solid fa-xmark"></i> Done</button>
+              </div>
+            </div>
+
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;padding:9px 12px;border-radius:10px;background:#292524;border:1.5px solid #78350f;margin-bottom:10px;">
+              <div style="font-size:0.81rem;font-weight:800;color:#fef3c7;">
+                Active Voice Pack:
+                <button type="button" class="dst-step-pill ${audio.voicePack === 'studio' ? 'is-active' : ''}" data-set-vopack="studio" style="margin-left:6px;">🎬 Studio Cast (11 Voices)</button>
+                <button type="button" class="dst-step-pill ${audio.voicePack === 'class_cast' ? 'is-active' : ''}" data-set-vopack="class_cast">🎭 Class Cast (${audio.classBlobUrls.size} Recorded)</button>
+              </div>
+              ${
+                audio.classBlobUrls.size > 0
+                  ? `<button type="button" class="dst-icon-btn" id="dst-drama-clear-all" style="font-size:0.72rem;border-color:#ef4444;color:#fecaca;">🗑 Clear All</button>`
+                  : ''
+              }
+            </div>
+
+            ${
+              !canRecord
+                ? `<div style="padding:10px;border-radius:8px;background:rgba(245,158,11,0.18);border:1px solid #f59e0b;font-size:0.8rem;color:#fef3c7;margin-bottom:10px;">
+                     💡 Microphone recording isn’t enabled in this browser window, or you can print the 1-page Class Script above for live classroom read-aloud!
+                   </div>`
+                : ''
+            }
+
+            <div>
+              ${DRAMA_CAST_SCRIPT.map((item) => {
+                const hasCustom = audio.classBlobUrls.has(item.clipId);
+                const isRec = recordingClipId === item.clipId;
+                return `
+                  <div class="dst-drama-row" style="border-color:${isRec ? '#ef4444' : hasCustom ? '#22c55e' : '#44403c'};">
+                    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:4px;">
+                      <strong style="font-size:0.83rem;color:#fde047;">${hasCustom ? '✅ ' : '🎭 '}${item.role}</strong>
+                      <div style="display:flex;gap:5px;">
+                        ${
+                          canRecord
+                            ? `<button type="button" class="dst-icon-btn ${isRec ? 'is-armed-warn' : ''}" data-rec-clip="${item.clipId}" style="min-height:30px;padding:3px 9px;font-size:0.72rem;">
+                                 ${isRec ? '⏹ Stop Mic' : '🔴 Record'}
+                               </button>`
+                            : ''
+                        }
+                        <button type="button" class="dst-icon-btn" data-preview-clip="${item.clipId}" style="min-height:30px;padding:3px 9px;font-size:0.72rem;">
+                          ▶ Hear
+                        </button>
+                        ${
+                          hasCustom
+                            ? `<button type="button" class="dst-icon-btn" data-del-clip="${item.clipId}" style="min-height:30px;padding:3px 8px;font-size:0.72rem;color:#fca5a5;">✕</button>`
+                            : ''
+                        }
+                      </div>
+                    </div>
+                    <div style="font-size:0.73rem;color:#a8a29e;font-style:italic;margin-bottom:3px;">Tip: ${item.direction}</div>
+                    <div style="font-size:0.82rem;color:#f8fafc;line-height:1.35;">&ldquo;${item.line}&rdquo;</div>
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        </div>
+      `;
+    }
+    return '';
+  }
+
+  // =========================================================================
   // LIVE IN-PLACE UPDATERS (ZERO DIORAMA/CANVAS TEARDOWN, ZERO SCROLL JUMP!)
   // =========================================================================
   function isHitZoneFound(key) {
     switch (key) {
-      case 'cov:bennet': return state.coverSecretsFound.has('bennet');
-      case 'cov:gull': return state.coverSecretsFound.has('gull');
-      case 'cov:pigs': return state.coverSecretsFound.has('pigs');
-      case 'cov:quill': return state.coverSecretsFound.has('quill');
-      case 'cov:edith': return state.coverSecretsFound.has('edith');
-      case 'swamp:bennet': return state.bennetSightings.has('swamp');
-      case 'swamp:gull': return state.swampSecretsFound.has('gull');
-      case 'swamp:mill': return state.swampSecretsFound.has('mill');
-      case 'swamp:torch': return state.swampSecretsFound.has('torch');
-      case 'b1:odo': return state.farehamExtrasFound.has('odo');
-      case 'b1:relic': return state.farehamExtrasFound.has('relic');
-      case 'b1:mills': return state.foundFarehamAssets.has('mills');
-      case 'b1:pigs': return state.foundFarehamAssets.has('pigs');
-      case 'b1:church_meadow': return state.foundFarehamAssets.has('church_meadow');
-      case 'b1:chickens': return state.farehamExtrasFound.has('chickens');
-      case 'b1:bennet': return state.bennetSightings.has('creek');
-      case 'servi:gyrth': return state.serviReflected;
-      case 'servi:oxen': return state.farehamExtrasFound.has('oxen');
-      case 'servi:overseer': return state.farehamExtrasFound.has('overseer');
-      case 'assize:villager': return state.assizeSpotsHeard.has('villager');
-      case 'assize:shield': return state.assizeSpotsHeard.has('shield');
-      case 'assize:clerk': return state.assizeSpotsHeard.has('clerk');
-      case 'assize:hugh': return state.assizeSpotsHeard.has('hugh');
-      case 'assize:bishop_monk': return state.assizeSpotsHeard.has('bishop_monk');
-      case 'b4:edith': return state.hutPeopleGroups.has('edith');
-      case 'b4:five_kids': return state.hutPeopleGroups.has('five_kids');
-      case 'b4:grandma': return state.hutPeopleGroups.has('grandma');
+      case 'cov:bennet':
+        return state.coverSecretsFound.has('bennet');
+      case 'cov:gull':
+        return state.coverSecretsFound.has('gull');
+      case 'cov:pigs':
+        return state.coverSecretsFound.has('pigs');
+      case 'cov:quill':
+        return state.coverSecretsFound.has('quill');
+      case 'cov:torso':
+        return state.coverSecretsFound.has('torso');
+      case 'cov:ship':
+        return state.coverSecretsFound.has('ship');
+      case 'cov:castle':
+        return state.coverSecretsFound.has('castle');
+      case 'cov:edith':
+        return state.coverSecretsFound.has('edith');
+      case 'swamp:bennet':
+        return state.bennetSightings.has('swamp');
+      case 'swamp:gull':
+        return state.swampSecretsFound.has('gull');
+      case 'swamp:mill':
+        return state.swampSecretsFound.has('mill');
+      case 'swamp:torch':
+        return state.swampSecretsFound.has('torch');
+      case 'b1:odo':
+        return state.farehamExtrasFound.has('odo');
+      case 'b1:relic':
+        return state.farehamExtrasFound.has('relic');
+      case 'b1:mills':
+        return state.foundFarehamAssets.has('mills');
+      case 'b1:pigs':
+        return state.foundFarehamAssets.has('pigs');
+      case 'b1:church_meadow':
+        return state.foundFarehamAssets.has('church_meadow');
+      case 'b1:chickens':
+        return state.farehamExtrasFound.has('chickens');
+      case 'b1:bennet':
+        return state.bennetSightings.has('creek');
+      case 'servi:gyrth':
+        return state.serviReflected;
+      case 'servi:oxen':
+        return state.farehamExtrasFound.has('oxen');
+      case 'servi:overseer':
+        return state.farehamExtrasFound.has('overseer');
+      case 'assize:villager':
+        return state.assizeSpotsHeard.has('villager');
+      case 'assize:shield':
+        return state.assizeSpotsHeard.has('shield');
+      case 'assize:clerk':
+        return state.assizeSpotsHeard.has('clerk');
+      case 'assize:hugh':
+        return state.assizeSpotsHeard.has('hugh');
+      case 'assize:bishop_monk':
+        return state.assizeSpotsHeard.has('bishop_monk');
+      case 'b4:edith':
+        return state.hutPeopleGroups.has('edith');
+      case 'b4:five_kids':
+        return state.hutPeopleGroups.has('five_kids');
+      case 'b4:grandma':
+        return state.hutPeopleGroups.has('grandma');
       case 'b4:pets':
-      case 'b4:hens': return state.foundBlindSpots.has('untaxed_pets');
-      case 'b4:stumps': return state.bennetSightings.has('stumps');
-      default: return false;
+      case 'b4:hens':
+        return state.foundBlindSpots.has('untaxed_pets');
+      case 'b4:stumps':
+        return state.bennetSightings.has('stumps');
+      default:
+        return false;
     }
+  }
+
+  function syncModalSlot() {
+    if (!shellEl) return;
+    const mSlot = shellEl.querySelector('#dst-slot-modal');
+    if (mSlot) mSlot.innerHTML = renderInnerModalHTML();
   }
 
   function syncHudOnly() {
@@ -1760,6 +2518,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     if (!shellEl || !data) return;
     preserveScrollPosition(() => {
       syncHudOnly();
+      syncModalSlot();
 
       const tallyEl = shellEl.querySelector('#dst-scene-secret-tally');
       if (state.step === 'beat0') {
@@ -1769,28 +2528,43 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         if (verdSlot) verdSlot.innerHTML = renderBeat0RightHeaderHTML();
         const dosSlot = shellEl.querySelector('#dst-b0-dossier-slot');
         if (dosSlot) dosSlot.innerHTML = renderBeat0DossierCardHTML();
+        const nextSlot = shellEl.querySelector('#dst-b0-next-slot');
+        if (nextSlot) {
+          nextSlot.innerHTML =
+            state.testedPinIds.size >= 2
+              ? `<button type="button" class="dst-next-btn" data-complete-next="beat1">
+                   Stage 2 → Ride Up Fareham Creek &amp; Catch Reeve Odo! <i class="fa-solid fa-arrow-right"></i>
+                 </button>`
+              : `<div style="margin-top:8px;font-size:0.78rem;color:#a8a29e;text-align:center;">
+                   👆 Test ${2 - state.testedPinIds.size} more coastal place${2 - state.testedPinIds.size === 1 ? '' : 's'} to unlock Stage 2!
+                 </div>`;
+        }
         if (tallyEl) {
           const found = state.swampSecretsFound.size + (state.bennetSightings.has('swamp') ? 1 : 0);
-          tallyEl.innerHTML = `✨ <strong>Secrets:</strong> ${found} / 4`;
+          tallyEl.innerHTML = `✨ <strong>Hotspots:</strong> ${found} / 4`;
         }
       } else if (state.step === 'beat1') {
         const subSlot = shellEl.querySelector('#dst-b1-subtabs-slot');
         if (subSlot) subSlot.innerHTML = renderBeat1SubtabsInnerHTML();
         const rSlot = shellEl.querySelector('#dst-b1-right-slot');
-        if (rSlot && state.beat1SubMode === 'hunt') rSlot.innerHTML = renderBeat1HuntRightPanelHTML();
+        if (rSlot && state.beat1SubMode === 'hunt')
+          rSlot.innerHTML = renderBeat1HuntRightPanelHTML();
+        const srSlot = shellEl.querySelector('#dst-b1-servi-right-slot');
+        if (srSlot && state.beat1SubMode === 'servi')
+          srSlot.innerHTML = renderBeat1ServiRightPanelHTML();
         if (tallyEl) {
           if (state.beat1SubMode === 'hunt') {
             const tot =
               state.foundFarehamAssets.size +
               state.farehamExtrasFound.size +
               (state.bennetSightings.has('creek') ? 1 : 0);
-            tallyEl.innerHTML = `✨ <strong>Secrets:</strong> ${tot} / 7`;
+            tallyEl.innerHTML = `✨ <strong>Hotspots:</strong> ${tot} / 7`;
           } else {
             const tot =
               1 +
               (state.farehamExtrasFound.has('oxen') ? 1 : 0) +
               (state.farehamExtrasFound.has('overseer') ? 1 : 0);
-            tallyEl.innerHTML = `✨ <strong>Secrets:</strong> ${tot} / 3`;
+            tallyEl.innerHTML = `✨ <strong>Hotspots:</strong> ${tot} / 3`;
           }
         }
       } else if (state.step === 'beat2') {
@@ -1807,7 +2581,8 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           });
         }
         const ghostLbl = shellEl.querySelector('#dst-ghost-btn-lbl');
-        if (ghostLbl) ghostLbl.textContent = state.showModernGhost ? 'Hide Ghost Towns' : 'Modern Ghost';
+        if (ghostLbl)
+          ghostLbl.textContent = state.showModernGhost ? 'Hide Ghost Towns' : 'Unborn Towns';
         const manorSlot = shellEl.querySelector('#dst-b2-manor-slot');
         if (manorSlot) manorSlot.innerHTML = renderBeat2ManorCardInnerHTML();
         const rSlot = shellEl.querySelector('#dst-b2-right-slot');
@@ -1815,57 +2590,42 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       } else if (state.step === 'beat3') {
         const rSlot = shellEl.querySelector('#dst-b3-right-slot');
         if (rSlot) rSlot.innerHTML = renderBeat3RightPanelHTML();
-        if (tallyEl) {
-          tallyEl.innerHTML = `✨ <strong>Secrets:</strong> ${state.assizeSpotsHeard.size} / 5`;
-        }
+        if (tallyEl)
+          tallyEl.innerHTML = `✨ <strong>Hotspots:</strong> ${state.assizeSpotsHeard.size} / 5`;
       } else if (state.step === 'beat4') {
-        const subSlot = shellEl.querySelector('#dst-b4-subtabs-slot');
-        if (subSlot) subSlot.innerHTML = renderBeat4SubtabsInnerHTML();
         const rSlot = shellEl.querySelector('#dst-b4-right-slot');
         if (rSlot) rSlot.innerHTML = renderBeat4RightPanelHTML();
-        if (state.beat4Tab === 'hut' && tallyEl) {
+        if (tallyEl) {
           const tot =
             state.hutPeopleGroups.size -
             1 +
             (state.foundBlindSpots.has('untaxed_pets') ? 1 : 0) +
             (state.bennetSightings.has('stumps') ? 1 : 0);
-          tallyEl.innerHTML = `✨ <strong>Secrets:</strong> ${tot} / 5`;
-        } else if (state.beat4Tab === 'map') {
-          const spyWrap = shellEl.querySelector('#dst-spyglass-map-wrap');
-          if (spyWrap) {
-            spyWrap.innerHTML = renderSolentGisSvgHTML({
-              data,
-              mode: 'spyglass',
-              spyglassPos: state.spyglassPos,
-              foundBlindSpots: state.foundBlindSpots,
-              svgUid: `${instanceSvgUid}-b4`,
-            });
-          }
+          tallyEl.innerHTML = `✨ <strong>Hotspots:</strong> ${tot} / 5`;
         }
       } else if (state.step === 'beat5') {
         const pctLbl = shellEl.querySelector('#dst-latin-pct-lbl');
-        if (pctLbl) pctLbl.textContent = `DECODER (${state.translationPct}%)`;
+        if (pctLbl) pctLbl.textContent = `PEEK (${state.translationPct}%)`;
         const chSlot = shellEl.querySelector('#dst-b5-chunks-slot');
         if (chSlot) chSlot.innerHTML = renderBeat5ChunksInnerHTML();
         const decSlot = shellEl.querySelector('#dst-b5-decoder-slot');
         if (decSlot) decSlot.innerHTML = renderBeat5DecoderInnerHTML();
-        const stSlot = shellEl.querySelector('#dst-b5-stamps-slot');
-        if (stSlot) stSlot.innerHTML = renderBeat5StampsInnerHTML();
-        const arcSlot = shellEl.querySelector('#dst-b5-archive-slot');
-        if (arcSlot) arcSlot.innerHTML = renderBeat5ArchiveBountyInnerHTML();
+      } else if (state.step === 'beat6') {
+        const stSlot = shellEl.querySelector('#dst-b6-stamps-slot');
+        if (stSlot) stSlot.innerHTML = renderBeat6StampsInnerHTML();
+        const vicSlot = shellEl.querySelector('#dst-b6-victory-slot');
+        if (vicSlot) vicSlot.innerHTML = renderBeat6VictoryBannerHTML();
       }
     });
   }
 
-  // =========================================================================
-  // PERSISTENT SHELL MOUNT + EVENT DELEGATION (BOUND ONCE ON SHELL!)
-  // =========================================================================
   function ensureShellMounted() {
     if (shellEl && shellEl.isConnected) return;
     stageEl.innerHTML = `
       <div class="dst-shell ${state.isFullscreen ? 'dst-is-fullscreen' : ''} ${state.hintShimmer ? 'dst-hint-shimmer' : ''}">
         <div class="dst-topbar" id="dst-slot-topbar"></div>
         <div id="dst-slot-main"></div>
+        <div id="dst-slot-modal"></div>
       </div>
     `;
     shellEl = stageEl.querySelector('.dst-shell');
@@ -1886,8 +2646,6 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     }
 
     const nextSig = getSceneSignature();
-
-    // If scene signature hasn't changed and this isn't a full step change, update panels in place with ZERO jump!
     if (!isStepNavigation && nextSig === mountedSceneSignature) {
       syncCurrentStagePanelsInPlace();
       return;
@@ -1906,9 +2664,11 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       else if (state.step === 'beat2') stageBody = renderBeat2HTML();
       else if (state.step === 'beat3') stageBody = renderBeat3HTML();
       else if (state.step === 'beat4') stageBody = renderBeat4HTML();
-      else stageBody = renderBeat5HTML();
+      else if (state.step === 'beat5') stageBody = renderBeat5HTML();
+      else stageBody = renderBeat6HTML();
 
       shellEl.querySelector('#dst-slot-main').innerHTML = stageBody;
+      syncModalSlot();
 
       const fxStage = shellEl.querySelector('#dst-fx-stage');
       if (fxStage) {
@@ -1926,14 +2686,17 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
   }
 
   function bindDirectStageControls() {
-    // Stage 3: Live zero-teardown X-Ray pointer drag & range slider
+    // Stage 3: Smooth X-Ray drag ONLY when dragging empty water or the bottom `⇄` handle — NEVER blocking manor shields!
     const xrayWrap = shellEl.querySelector('#dst-xray-map-wrap');
     if (xrayWrap) {
       let draggingXray = false;
       const updateXrayFromEvent = (e) => {
         const rect = xrayWrap.getBoundingClientRect();
         if (!rect.width) return;
-        const pct = Math.max(4, Math.min(96, Math.round(((e.clientX - rect.left) / rect.width) * 100)));
+        const pct = Math.max(
+          4,
+          Math.min(96, Math.round(((e.clientX - rect.left) / rect.width) * 100)),
+        );
         const crossed = state.xraySplitPct < 60 && pct >= 60;
         state.xraySplitPct = pct;
         syncXraySvgSplitInPlace(pct);
@@ -1950,21 +2713,22 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       };
 
       xrayWrap.addEventListener('pointerdown', (e) => {
+        // Let clicks on manor shields pass cleanly to click delegation with ZERO pointer capture!
         if (e.target.closest('.solent-manor-node')) return;
         draggingXray = true;
-        xrayWrap.setPointerCapture?.(e.pointerId);
         updateXrayFromEvent(e);
       });
       xrayWrap.addEventListener('pointermove', (e) => {
         if (!draggingXray) return;
         updateXrayFromEvent(e);
       });
-      xrayWrap.addEventListener('pointerup', () => {
-        draggingXray = false;
-      });
-      xrayWrap.addEventListener('pointercancel', () => {
-        draggingXray = false;
-      });
+      window.addEventListener(
+        'pointerup',
+        () => {
+          draggingXray = false;
+        },
+        { passive: true },
+      );
     }
 
     shellEl.querySelector('#dst-xray-range')?.addEventListener('input', (e) => {
@@ -1984,36 +2748,58 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       }
     });
 
-    // Stage 5: Live Spyglass pointer tracking
-    const spyWrap = shellEl.querySelector('#dst-spyglass-map-wrap');
-    if (spyWrap) {
-      spyWrap.addEventListener('pointermove', (e) => {
-        const rect = spyWrap.getBoundingClientRect();
-        if (!rect.width || !rect.height) return;
-        const ring = spyWrap.querySelector('#solent-spyglass-ring');
-        const px = Math.max(5, Math.min(95, ((e.clientX - rect.left) / rect.width) * 100));
-        const py = Math.max(5, Math.min(95, ((e.clientY - rect.top) / rect.height) * 100));
-        state.spyglassPos = { x: px, y: py };
-        if (ring) {
-          ring.setAttribute('transform', `translate(${(px / 100) * 900}, ${(py / 100) * 540})`);
-        }
-      });
-    }
-
-    // Stage 6: Live zero-teardown Folio 46v Latin slider
     shellEl.querySelector('#dst-latin-slider')?.addEventListener('input', (e) => {
       state.translationPct = Number(e.target.value);
       preserveScrollPosition(() => {
         const pctLbl = shellEl.querySelector('#dst-latin-pct-lbl');
-        if (pctLbl) pctLbl.textContent = `DECODER (${state.translationPct}%)`;
+        if (pctLbl) pctLbl.textContent = `PEEK (${state.translationPct}%)`;
         const chSlot = shellEl.querySelector('#dst-b5-chunks-slot');
         if (chSlot) chSlot.innerHTML = renderBeat5ChunksInnerHTML();
       });
     });
   }
 
+  async function toggleMicRecordingForClip(clipId) {
+    if (recordingClipId === clipId) {
+      cleanupMicRecorder();
+      syncModalSlot();
+      return;
+    }
+    cleanupMicRecorder();
+    if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === 'undefined') return;
+    try {
+      audio.stopVoice();
+      activeMicStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      recordedChunks = [];
+      recordingClipId = clipId;
+      activeMediaRecorder = new MediaRecorder(activeMicStream);
+      activeMediaRecorder.ondataavailable = (ev) => {
+        if (ev.data && ev.data.size > 0) recordedChunks.push(ev.data);
+      };
+      activeMediaRecorder.onstop = async () => {
+        const finishedClip = clipId;
+        const blob = new Blob(recordedChunks, {
+          type: activeMediaRecorder?.mimeType || 'audio/webm',
+        });
+        recordedChunks = [];
+        if (blob.size > 400) {
+          await saveClassVoiceRecording(finishedClip, blob);
+          await audio.refreshClassRecordings();
+          audio.setVoicePack('class_cast');
+        }
+        cleanupMicRecorder();
+        syncHudOnly();
+        syncModalSlot();
+      };
+      activeMediaRecorder.start();
+      syncModalSlot();
+    } catch (_) {
+      cleanupMicRecorder();
+      syncModalSlot();
+    }
+  }
+
   function bindDelegatedShellEvents() {
-    // Capture scroll snapshot BEFORE native browser touch/mouse focus can jump partially clipped buttons!
     shellEl.addEventListener(
       'pointerdown',
       (e) => {
@@ -2043,11 +2829,8 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       { passive: true },
     );
 
-    // Prevent mouse/touch synthesized mousedown from focusing <button> and triggering scrollIntoView jumps
     shellEl.addEventListener('mousedown', (e) => {
-      if (e.target.closest('button')) {
-        e.preventDefault();
-      }
+      if (e.target.closest('button')) e.preventDefault();
     });
 
     shellEl.addEventListener('change', (e) => {
@@ -2062,7 +2845,81 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       }
     });
 
-    shellEl.addEventListener('click', (e) => {
+    shellEl.addEventListener('click', async (e) => {
+      // Voiceover Replay / Stop pills
+      const voActBtn = e.target.closest('[data-vo-act]');
+      if (voActBtn) {
+        const act = voActBtn.dataset.voAct;
+        if (act === 'stop') audio.stopVoice();
+        else if (act === 'replay' && state.lastVoClipId) audio.playVoice(state.lastVoClipId);
+        syncHudOnly();
+        return;
+      }
+
+      // Inner Modal Controls (Archive & Drama Booth)
+      if (e.target.closest('[data-close-inner-modal]') || e.target.id === 'dst-inner-modal-bg') {
+        cleanupMicRecorder();
+        state.activeModal = null;
+        syncModalSlot();
+        syncHudOnly();
+        return;
+      }
+
+      if (e.target.closest('#dst-btn-open-archive-modal')) {
+        state.activeModal = 'archive';
+        syncModalSlot();
+        return;
+      }
+
+      if (e.target.closest('#dst-btn-print-warrant')) {
+        openPrintableCommissionerWarrant();
+        return;
+      }
+
+      if (e.target.closest('#dst-btn-print-drama-script, #dst-drama-print-btn')) {
+        openPrintableClassDramaScript();
+        return;
+      }
+
+      const voPackBtn = e.target.closest('[data-set-vopack]');
+      if (voPackBtn) {
+        audio.setVoicePack(voPackBtn.dataset.setVopack);
+        syncHudOnly();
+        syncModalSlot();
+        return;
+      }
+
+      const recBtn = e.target.closest('[data-rec-clip]');
+      if (recBtn) {
+        await toggleMicRecordingForClip(recBtn.dataset.recClip);
+        return;
+      }
+
+      const prevBtn = e.target.closest('[data-preview-clip]');
+      if (prevBtn) {
+        audio.playVoice(prevBtn.dataset.previewClip);
+        return;
+      }
+
+      const delBtn = e.target.closest('[data-del-clip]');
+      if (delBtn) {
+        await deleteClassVoiceRecording(delBtn.dataset.delClip);
+        await audio.refreshClassRecordings();
+        syncHudOnly();
+        syncModalSlot();
+        return;
+      }
+
+      if (e.target.closest('#dst-drama-clear-all')) {
+        await clearAllClassVoiceRecordings();
+        await audio.refreshClassRecordings();
+        audio.setVoicePack('studio');
+        syncHudOnly();
+        syncModalSlot();
+        return;
+      }
+
+      // Stage Navigation
       const gotoBtn = e.target.closest('[data-goto-step]');
       if (gotoBtn && !gotoBtn.disabled) {
         audio.ensureContext();
@@ -2072,10 +2929,10 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
       const nextStageBtn = e.target.closest('[data-complete-next]');
       if (nextStageBtn) {
-        state.completedSteps.add(state.step);
-        state.score += 100;
+        const target = nextStageBtn.dataset.completeNext;
+        awardOnce(`stage_next_${state.step}`, state.step, 50);
         audio.chimeSuccess();
-        goToStep(nextStageBtn.dataset.completeNext);
+        goToStep(target);
         return;
       }
 
@@ -2085,150 +2942,234 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         return;
       }
 
+      // Top-Bar Utility Buttons (with 2-tap confirm guards on Reset & Close!)
       const topAct = e.target.closest('[data-dst-action]');
       if (topAct) {
         const act = topAct.dataset.dstAction;
         if (act === 'mute') {
           audio.toggleMute();
           syncHudOnly();
+        } else if (act === 'drama') {
+          state.activeModal = 'drama';
+          syncModalSlot();
         } else if (act === 'reset') {
-          resetAuditProgress();
+          if (!state.resetArmed) {
+            state.resetArmed = true;
+            if (resetArmTimeout) clearTimeout(resetArmTimeout);
+            resetArmTimeout = setTimeout(() => {
+              state.resetArmed = false;
+              syncHudOnly();
+            }, 3200);
+            syncHudOnly();
+          } else {
+            resetAuditProgress();
+          }
         } else if (act === 'fs') {
           toggleFullscreenMode();
         } else if (act === 'close') {
-          cleanupFx();
-          audio.destroy();
-          ctx.onCloseModal?.();
+          if (state.score > 0 && state.step !== 'cover' && !state.closeArmed) {
+            state.closeArmed = true;
+            if (closeArmTimeout) clearTimeout(closeArmTimeout);
+            closeArmTimeout = setTimeout(() => {
+              state.closeArmed = false;
+              syncHudOnly();
+            }, 3200);
+            syncHudOnly();
+          } else {
+            cleanupMicRecorder();
+            cleanupFx();
+            audio.destroy();
+            ctx.onCloseModal?.();
+          }
         }
         return;
       }
 
-      // COVER ACTIONS
+      // =====================================================================
+      // COVER ACTIONS (8 HOTSPOTS + START)
+      // =====================================================================
       if (e.target.closest('#dst-btn-start-adventure')) {
-        audio.startMusic('overture');
+        audio.startMusic('marsh_shanty');
         audio.normanHorn();
-        state.completedSteps.add('cover');
         goToStep('beat0');
-        audio.playVoice('cover_welcome');
         return;
       }
 
-      if (e.target.closest('#dst-cover-bennet')) {
+      const handleCoverSecret = (id, x, y, fxKind, av, speaker, line, clipId, sfxFn) => {
         audio.startMusic('overture');
-        audio.mudSquelch();
-        state.coverSecretsFound.add('bennet');
-        setSpeech(
-          'bennet',
-          'Bennet Luvet • Fareham Creek Mud',
-          'Oi! Press the big shiny start button already! My toes went numb in this freezing Fareham mud twenty minutes ago, and this seagull is eyeing my turnip!',
-          'cover_bennet_poke',
-        );
+        sfxFn?.();
+        state.coverSecretsFound.add(id);
+        awardOnce(`cov_${id}`, 'cover', 15);
+        setSpeech(av, speaker, line, clipId);
         syncHudOnly();
-        activeFx?.burst(24, 69, 'mud');
-        return;
-      }
+        activeFx?.burst(x, y, fxKind);
+      };
 
       if (e.target.closest('#dst-cover-gull')) {
-        audio.startMusic('overture');
-        audio.seagullSquawk();
-        state.coverSecretsFound.add('gull');
-        setSpeech(
-          'bennet',
-          'Bennet Luvet vs. Solent Seagull',
-          'Shoo, you thieving Solent gull! That’s my only turnip for the winter—go peck the Norman clerk’s shiny boots instead!',
-          'cover_gull_squawk',
+        handleCoverSecret(
+          'gull',
+          9.5,
+          23,
+          'seagull',
+          'salty',
+          'Salty the Solent Seagull • Official Guide',
+          'Squawk! Eyes front! I’m Salty the Solent Seagull—your unofficial 1086 tour guide! Tap the glowing gold spots or hit Begin Royal Audit!',
+          'cover_salty_intro',
+          () => audio.seagullSquawk(),
         );
-        syncHudOnly();
-        activeFx?.burst(9.5, 23, 'seagull');
         return;
       }
-
+      if (e.target.closest('#dst-cover-castle')) {
+        handleCoverSecret(
+          'castle',
+          25,
+          45,
+          'gold',
+          'salty',
+          'Salty the Seagull • Portchester Roman Fort',
+          'Aha, Portchester’s massive Roman walls! Careful though—in 1086, the giant square stone castle keep hasn’t even been built yet!',
+          'cover_salty_castle',
+          () => audio.normanHorn(),
+        );
+        return;
+      }
+      if (e.target.closest('#dst-cover-ship')) {
+        handleCoverSecret(
+          'ship',
+          39.5,
+          50,
+          'wheel',
+          'salty',
+          'Salty the Seagull • Viking Dragon-Ship',
+          'Squawk! Spot that Viking dragon-ship sneaking up Fareham Creek? Sea-raiders attacked so often that Saxon kings gave Fareham a special tax discount!',
+          'cover_salty_viking',
+          () => audio.waterwheelSplash(),
+        );
+        return;
+      }
+      if (e.target.closest('#dst-cover-bennet')) {
+        handleCoverSecret(
+          'bennet',
+          23,
+          71,
+          'mud',
+          'bennet',
+          'Bennet Luvet • Waist-Deep in Fareham Mud',
+          'Oi! Press the big shiny start button already! My toes went numb in this freezing Fareham mud twenty minutes ago, and this seagull is eyeing my turnip!',
+          'cover_bennet_poke',
+          () => audio.mudSquelch(),
+        );
+        return;
+      }
       if (e.target.closest('#dst-cover-pigs')) {
-        audio.startMusic('overture');
-        audio.pigOink();
-        state.coverSecretsFound.add('pigs');
-        setSpeech(
+        handleCoverSecret(
+          'pigs',
+          61,
+          74,
+          'gold',
           'odo',
           'Sweating Reeve Odo • Crate of Hogs',
           'Nothing inside this crate, my Lord! Definitely NOT thirteen fat Fareham woodland pigs! Stop poking the lid before they oink!',
           'cover_odo_pigs',
+          () => audio.pigOink(),
         );
-        syncHudOnly();
-        activeFx?.burst(61, 74, 'gold');
         return;
       }
-
       if (e.target.closest('#dst-cover-quill')) {
-        audio.startMusic('overture');
-        audio.boing();
-        state.coverSecretsFound.add('quill');
-        setSpeech('guy', 'Sir Guy de Rouen', 'Careful—this goose-quill is sharper than a Norman broadsword and twice as expensive!', 'beat2_guy_haircut');
-        syncHudOnly();
-        activeFx?.burst(74, 28, 'gold');
+        handleCoverSecret(
+          'quill',
+          66,
+          27,
+          'gold',
+          'guy',
+          'Sir Guy de Rouen • Royal Goose-Quill',
+          'Careful! This royal goose-quill is sharper than a Norman broadsword—one stroke of my Latin ink can tax your entire village!',
+          'cover_guy_quill',
+          () => audio.boing(),
+        );
         return;
       }
-
+      if (e.target.closest('#dst-cover-torso')) {
+        handleCoverSecret(
+          'torso',
+          81,
+          36,
+          'gold',
+          'guy',
+          'Sir Guy de Rouen • Floating Cloud-Torso',
+          'Oi! Stop staring at my missing legs! The royal portrait painter ran out of purple sky-paint below my belt—keep your eyes on the Domesday Book, peasant!',
+          'cover_guy_torso',
+          () => audio.boing(),
+        );
+        return;
+      }
       if (e.target.closest('#dst-cover-edith')) {
-        audio.startMusic('overture');
-        state.coverSecretsFound.add('edith');
-        setSpeech('edith', 'Edith of Stubbington', 'Wait till Stage 5—I’ve got a bone to pick with that French clerk’s headcount!', 'beat4_edith_door');
-        syncHudOnly();
-        activeFx?.burst(88, 65, 'gold');
+        handleCoverSecret(
+          'edith',
+          88,
+          66,
+          'gold',
+          'edith',
+          'Edith of Stubbington • Cottage Doorway',
+          'Wait till you reach my Stubbington cottage in Stage 5—that snooty clerk counted my husband and acted like the rest of my family are invisible!',
+          'cover_edith_ladle',
+          () => audio.chimeSuccess(),
+        );
         return;
       }
 
-      // BEAT 0: SWAMP REWIND
+      // =====================================================================
+      // STAGE 1 (beat0): INSTANT 1-CLICK COASTAL REWIND
+      // =====================================================================
       const pinEl = e.target.closest('.solent-home-pin, [data-pick-pin]');
       if (pinEl) {
         const pinId = pinEl.dataset.pinId || pinEl.dataset.pickPin;
         state.selectedPinId = pinId;
         state.peekSwampAnyway = false;
-        const pin = data.modernPins.find((p) => p.id === pinId);
-        if (state.rewound1086 && pin) {
-          if (!pin.existed1086) {
-            audio.mudSquelch();
-            setSpeech('guy', 'Sir Guy de Rouen • Royal Clerk', pin.verdict, 'beat0_swamp_splash');
-          } else {
-            audio.chimeSuccess();
-            setSpeech('guy', 'Sir Guy de Rouen • Royal Clerk', pin.verdict, 'beat0_survived_village');
-          }
-        }
-        render();
-        return;
-      }
+        const wasUnder2 = state.testedPinIds.size < 2;
+        state.testedPinIds.add(pinId);
+        awardOnce(`b0_pin_${pinId}`, 'beat0', 40);
 
-      if (e.target.closest('#dst-btn-rewind')) {
-        state.rewound1086 = true;
-        state.score += 50;
-        const pin = data.modernPins.find((p) => p.id === state.selectedPinId);
+        const pin = data.modernPins.find((p) => p.id === pinId);
         if (pin) {
           if (!pin.existed1086) {
             audio.mudSquelch();
-            setSpeech('guy', 'Sir Guy de Rouen • Royal Clerk', pin.verdict, 'beat0_swamp_splash');
+            setSpeech('guy', `1086 Rewind • ${pin.modernName}`, pin.verdict, 'beat0_swamp_splash');
           } else {
             audio.chimeSuccess();
-            setSpeech('guy', 'Sir Guy de Rouen • Royal Clerk', pin.verdict, 'beat0_survived_village');
+            setSpeech(
+              'guy',
+              `1086 Rewind • ${pin.modernName}`,
+              pin.verdict,
+              'beat0_survived_village',
+            );
           }
         }
         render();
+        if (wasUnder2 && state.testedPinIds.size >= 2) nudgeNextButtonIntoViewIfOffscreen();
         return;
       }
 
       if (e.target.closest('#dst-btn-peek-swamp')) {
         state.peekSwampAnyway = true;
         audio.mudSquelch();
-        setSpeech('bennet', 'Bennet Luvet • Gosport Marsh', 'Welcome to 1086 Gosport—bring your wellies!', 'beat0_bennet_swamp');
+        setSpeech(
+          'bennet',
+          'Bennet Luvet • Gosport Marsh',
+          'Welcome to 1086 Gosport—bring your wellies!',
+          'beat0_bennet_swamp',
+        );
         render();
         return;
       }
 
       if (e.target.closest('#dst-swamp-bennet')) {
-        if (!state.bennetSightings.has('swamp')) state.score += 40;
         state.bennetSightings.add('swamp');
+        awardOnce('turnip_swamp', 'turnips', 45);
         audio.mudSquelch();
         setSpeech(
           'bennet',
-          'Bennet Luvet ("Boggy Bennet") • Gosport Salt-Marsh',
+          'Bennet Luvet • 🥕 Secret Turnip #1 Found!',
           'Lovely bit of swamp, this! Zero roads, zero shops, pouring sideways rain... stick a ferry here in nine hundred years, maybe it’ll catch on!',
           'beat0_bennet_swamp',
         );
@@ -2239,12 +3180,13 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
       if (e.target.closest('#dst-swamp-gull')) {
         state.swampSecretsFound.add('gull');
+        awardOnce('swamp_gull', 'beat0', 15);
         audio.seagullSquawk();
         setSpeech(
-          'bennet',
-          'Bennet Luvet vs. Solent Marsh Gull',
-          'Shoo, you thieving Solent gull! In 1086, seagulls outnumber humans on the Gosport shore five hundred to one!',
-          'cover_gull_squawk',
+          'salty',
+          'Salty the Solent Seagull',
+          'Squawk! Hands off my perch! In 1086, seagulls outnumber humans on the Gosport shore five hundred to one!',
+          'beat0_swamp_gull',
         );
         syncCurrentStagePanelsInPlace();
         activeFx?.burst(83, 18, 'seagull');
@@ -2253,8 +3195,14 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
       if (e.target.closest('#dst-swamp-mill')) {
         state.swampSecretsFound.add('mill');
+        awardOnce('swamp_mill', 'beat0', 15);
         audio.waterwheelSplash();
-        setSpeech('guy', 'Distant Fareham Watermill', 'Look up-creek—while Gosport is empty marsh, Fareham already has FIVE booming watermills!');
+        setSpeech(
+          'salty',
+          'Distant Fareham Watermill',
+          'Look up-creek! While Gosport and Portsmouth are empty mudflats, bustling Fareham already has five spinning watermills!',
+          'beat0_swamp_mill',
+        );
         syncCurrentStagePanelsInPlace();
         activeFx?.burst(20, 38, 'wheel');
         return;
@@ -2262,17 +3210,25 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
       if (e.target.closest('#dst-swamp-torch')) {
         state.swampSecretsFound.add('torch');
+        awardOnce('swamp_torch', 'beat0', 15);
         audio.waxSealSlam();
-        setSpeech('bennet', '1086 Iron Pitch-Torch', 'Resin-soaked pine tow burning in a hand-forged iron ring—zero glass streetlamps in 1086!');
+        setSpeech(
+          'bennet',
+          '1086 Iron Pitch-Torch',
+          'Resin-soaked pine burning in a hand-forged iron ring—zero glass streetlamps out here in 1086, squire!',
+          'beat0_swamp_torch',
+        );
         syncCurrentStagePanelsInPlace();
         activeFx?.burst(78, 49, 'gold');
         return;
       }
 
-      // BEAT 1: FAREHAM HUNT & GYRTH SERVI
+      // =====================================================================
+      // STAGE 2 (beat1): FAREHAM HUNT & GYRTH SERVI
+      // =====================================================================
       if (e.target.closest('#dst-b1-tab-hunt')) {
         state.beat1SubMode = 'hunt';
-        audio.setMode('overture');
+        audio.setMode('millwheel_jig');
         render();
         return;
       }
@@ -2292,6 +3248,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       }
 
       if (e.target.closest('#dst-btn-hear-gyrth')) {
+        state.serviReflected = true;
         setSpeech(
           'gyrth',
           'Gyrth • Enslaved Ploughman in Fareham',
@@ -2306,12 +3263,45 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       if (serviSpot) {
         const s = serviSpot.dataset.serviSpot;
         state.farehamExtrasFound.add(s);
+        awardOnce(`servi_${s}`, 'beat1', 15);
         if (s === 'oxen') {
-          setSpeech('gyrth', 'Eight-Ox Heavy Plough', 'Fareham had land for 20 ploughs—6 plough teams on the Bishop’s home farm worked directly by the 10 enslaved labourers.');
+          setSpeech(
+            'gyrth',
+            'Eight-Ox Heavy Plough',
+            'Heavy medieval ploughs needed eight strong oxen to slice wet Hampshire clay—worked from dawn till dusk on the Bishop’s home farm.',
+            'beat1_servi_oxen',
+          );
         } else {
-          setSpeech('guy', 'Norman Bailiff on the Ridge', 'Bishop Walkelin’s Norman officials oversaw every bushel of grain harvested from Fareham’s fields.');
+          setSpeech(
+            'guy',
+            'Norman Bailiff on the Ridge',
+            'Bishop Walkelin’s mounted Norman bailiff watched every bushel of grain harvested from Fareham’s fields to fund Winchester Cathedral.',
+            'beat1_servi_bailiff',
+          );
         }
         syncCurrentStagePanelsInPlace();
+        return;
+      }
+
+      const serviQuizBtn = e.target.closest('[data-servi-quiz]');
+      if (serviQuizBtn) {
+        const ans = serviQuizBtn.dataset.serviQuiz;
+        state.serviQuizAnswer = ans;
+        if (ans === 'mills_servi') {
+          awardOnce('b1_servi_quiz', 'beat1', 65);
+          audio.chimeSuccess();
+          setSpeech(
+            'gyrth',
+            'Historical Evidence Locked',
+            'Thank you for remembering us. Ten enslaved people were recorded in Fareham without names—yet history remembers we stood here.',
+            'beat1_gyrth_servi',
+          );
+          syncCurrentStagePanelsInPlace();
+          nudgeNextButtonIntoViewIfOffscreen();
+        } else {
+          audio.mudSquelch();
+          syncCurrentStagePanelsInPlace();
+        }
         return;
       }
 
@@ -2321,30 +3311,36 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         if (sp === 'odo') {
           state.farehamExtrasFound.add('odo');
           audio.mudSquelch();
-          setSpeech('odo', 'Sweating Reeve Odo', 'Why am I sweating in the rain?! Erm... heavy woollen hood, my Lord! Nothing to see behind me!', 'beat1_odo_oath');
-        } else if (sp === 'relic') {
-          state.farehamExtrasFound.add('relic');
-          audio.relicRattle();
           setSpeech(
             'odo',
+            'Sweating Reeve Odo',
+            'Why am I sweating in pouring rain?! Erm, very thick woollen hood, my Lord! Definitely not hiding taxable assets behind my back!',
+            'beat1_odo_sweat',
+          );
+        } else if (sp === 'relic') {
+          state.farehamExtrasFound.add('relic');
+          awardOnce('b1_relic', 'beat1', 15);
+          audio.relicRattle();
+          setSpeech(
+            'monk',
             'St Swithin’s Bone Reliquary',
-            'Every local jury—the priest, the reeve, and 6 villagers—had to swear on holy saint relics. Medieval Christians believed lying on relics condemned your soul!',
-            'beat1_odo_oath',
+            'Every local jury—the priest, the reeve, and six villagers—had to swear on holy saint relics. Medieval Christians believed lying on sacred bones condemned your soul!',
+            'beat1_relic_oath',
           );
         } else if (sp === 'mills') {
-          if (!state.foundFarehamAssets.has('mills')) state.score += 60;
           state.foundFarehamAssets.add('mills');
+          awardOnce('b1_mills', 'beat1', 55);
           audio.waterwheelSplash();
           setSpeech(
             'odo',
             'Caught! 5 Spinning Watermills!',
-            'AHA! Five watermills on the creek worth 41 shillings—and peasants were legally banned from grinding flour at home without paying the Bishop!',
+            'Aha, cursed splashing! Alright, five spinning watermills worth 41 shillings—and peasants were legally banned from grinding flour at home without paying the Bishop!',
             state.foundFarehamAssets.size >= 3 ? 'beat1_mills_caught' : 'beat1_mills_spot',
           );
           activeFx?.burst(64, 40, 'wheel');
         } else if (sp === 'pigs') {
-          if (!state.foundFarehamAssets.has('pigs')) state.score += 60;
           state.foundFarehamAssets.add('pigs');
+          awardOnce('b1_pigs', 'beat1', 55);
           audio.pigOink();
           setSpeech(
             'odo',
@@ -2352,16 +3348,18 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             'Mercy! Thirteen fat hogs rooting for acorns in the Bishop’s oak woods—even a peasant’s pig tax goes straight into King William’s book!',
             state.foundFarehamAssets.size >= 3 ? 'beat1_mills_caught' : 'beat1_pigs_spot',
           );
+          activeFx?.burst(89, 50, 'gold');
         } else if (sp === 'church_meadow') {
-          if (!state.foundFarehamAssets.has('church_meadow')) state.score += 60;
           state.foundFarehamAssets.add('church_meadow');
+          awardOnce('b1_church', 'beat1', 55);
           audio.chimeSuccess();
           setSpeech(
             'guy',
             'Caught! 1 Church, 90 Households & 41 Meadow Acres!',
-            'Got him! With 90 households and 41 acres of prime hay-meadow, Fareham ranks in the largest 20% of towns in 1086 England!',
+            'Got him! With 90 households and 41 acres of hay-meadow, Fareham ranks in the largest 20% of towns in 1086 England!',
             state.foundFarehamAssets.size >= 3 ? 'beat1_mills_caught' : 'beat1_church_spot',
           );
+          activeFx?.burst(20, 22, 'gold');
         } else if (sp === 'chickens') {
           state.farehamExtrasFound.add('chickens');
           audio.chickenBawk();
@@ -2372,43 +3370,60 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             'beat1_guy_chicken',
           );
         } else if (sp === 'bennet') {
-          if (!state.bennetSightings.has('creek')) state.score += 40;
           state.bennetSightings.add('creek');
+          awardOnce('turnip_creek', 'turnips', 45);
           audio.mudSquelch();
           setSpeech(
             'bennet',
-            'Bennet Luvet • Hiding Under the Riverbank!',
+            'Bennet Luvet • 🥕 Secret Turnip #2 Found!',
             'Don’t look at me, squire! One wormy turnip, zero oxen, zero land—even the King’s nosy clerks won’t waste good ink on Bennet Luvet!',
             'beat1_bennet_creek',
           );
           activeFx?.burst(8.5, 85, 'mud');
         }
         syncCurrentStagePanelsInPlace();
+        if (state.foundFarehamAssets.size >= 3) nudgeNextButtonIntoViewIfOffscreen();
         return;
       }
 
-      // BEAT 2: INTERACTIVE 3-MISSION MAP HUNT
+      // =====================================================================
+      // STAGE 3 (beat2): 3-STEP WIPEOUT MAP HUNT
+      // =====================================================================
       const b2StepBtn = e.target.closest('[data-b2-step]');
       if (b2StepBtn) {
         state.b2MissionIdx = Number(b2StepBtn.dataset.b2Step);
+        state.b2WrongAttempt = '';
         syncCurrentStagePanelsInPlace();
         return;
       }
 
       const b2M1Btn = e.target.closest('[data-b2-m1]');
       if (b2M1Btn) {
-        if (b2M1Btn.dataset.b2M1 === 'zero') {
-          if (!state.b2Solved.has('m1')) state.score += 75;
+        const choice = b2M1Btn.dataset.b2M1;
+        if (choice === 'zero') {
+          awardOnce('b2_m1', 'beat2', 70);
           state.b2Solved.add('m1');
+          state.b2WrongAttempt = '';
           state.xraySplitPct = Math.max(state.xraySplitPct, 88);
           audio.chimeSuccess();
-          setSpeech('hugh', 'Sheriff Hugh of Port', 'Every single English landowner around Fareham and Stubbington was swept away after 1066!', 'beat2_hugh_boast');
+          setSpeech(
+            'hugh',
+            'Sheriff Hugh of Port',
+            'Godwin’s Stubbington farm? Mine! Wickham? Mine! Fifty-four Hampshire manors? ALL MINE! Best conquest ever!',
+            'beat2_hugh_boast',
+          );
           syncXraySvgSplitInPlace(state.xraySplitPct);
         } else {
+          state.b2WrongAttempt = `m1_${choice}`;
           audio.mudSquelch();
-          setSpeech('guy', 'Sir Guy de Rouen', 'Look closer! Slide the bar all the way to 1086—not one private Saxon lord survived!');
+          setSpeech(
+            'guy',
+            'Check the 1086 Shields!',
+            'Drag the golden X-Ray bar all the way to 1086—every red Baron and purple Bishop shield replaced an English lord!',
+          );
         }
         syncCurrentStagePanelsInPlace();
+        if (state.b2Solved.size >= 3) nudgeNextButtonIntoViewIfOffscreen();
         return;
       }
 
@@ -2423,33 +3438,56 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           if (mId === 'titchfield') {
             state.b2Solved.add('m2');
             state.b2WrongAttempt = '';
-            state.score += 90;
+            awardOnce('b2_m2', 'beat2', 80);
             audio.chimeSuccess();
-            setSpeech('guy', 'Royal Bullseye • Titchfield (Ticefelle)!', 'Bravo! Titchfield passed straight from King Edward to King William as the royal capital of Titchfield Hundred!');
+            setSpeech(
+              'guy',
+              'Royal Bullseye • Titchfield (Ticefelle)!',
+              'Royal bullseye! Titchfield passed straight from King Edward to King William himself as the royal capital of Titchfield Hundred!',
+              'beat2_titchfield_crown',
+            );
           } else {
             state.b2WrongAttempt = m ? m.name : mId;
             audio.mudSquelch();
-            setSpeech('guy', 'Keep Hunting on the Map!', `${m?.name} went to ${m?.lord1086}—tap the golden Crown shield on the River Meon!`);
+            setSpeech(
+              'guy',
+              'Keep Hunting on the Map!',
+              `${m?.name} went to ${m?.lord1086}—tap the golden Crown shield (👑) on the River Meon!`,
+            );
           }
         } else if (m && state.step === 'beat2') {
           setSpeech('guy', `${m.name} (${m.domesdayName})`, m.specialNote);
         }
         syncCurrentStagePanelsInPlace();
+        if (state.b2Solved.size >= 3) nudgeNextButtonIntoViewIfOffscreen();
         return;
       }
 
       const b2M3Btn = e.target.closest('[data-b2-m3]');
       if (b2M3Btn) {
-        if (b2M3Btn.dataset.b2M3 === 'army') {
-          if (!state.b2Solved.has('m3')) state.score += 75;
+        const choice = b2M3Btn.dataset.b2M3;
+        if (choice === 'army') {
+          awardOnce('b2_m3', 'beat2', 70);
           state.b2Solved.add('m3');
+          state.b2WrongAttempt = '';
           audio.chimeSuccess();
-          setSpeech('monk', 'Brother Aldwin', 'Exactly—Domesday’s middle value ("when acquired") exposes the trail of destruction left by William’s marching troops!');
+          setSpeech(
+            'monk',
+            'Brother Aldwin • Crime-Scene Numbers',
+            'Those plunging 1067 numbers are the crime-scene footprints of William’s invading army marching toward Winchester!',
+            'beat2_crash_solved',
+          );
         } else {
+          state.b2WrongAttempt = `m3_${choice}`;
           audio.mudSquelch();
-          setSpeech('guy', 'Sir Guy de Rouen', 'Portsmouth didn’t even exist yet! Think about what an invading Norman army did to local farms!');
+          setSpeech(
+            'guy',
+            'Think About 1066–1067!',
+            'William kept English silver coins—what marched across southern England right after the Battle of Hastings?',
+          );
         }
         syncCurrentStagePanelsInPlace();
+        if (state.b2Solved.size >= 3) nudgeNextButtonIntoViewIfOffscreen();
         return;
       }
 
@@ -2471,38 +3509,42 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
         return;
       }
 
-      // BEAT 3: ROYAL ASSIZE
+      // =====================================================================
+      // STAGE 4 (beat3): ROYAL ASSIZE COURTROOM
+      // =====================================================================
       const assizeSpot = e.target.closest('[data-assize-spot]');
       if (assizeSpot) {
         const sp = assizeSpot.dataset.assizeSpot;
         state.assizeSpotsHeard.add(sp);
+        awardOnce(`assize_${sp}`, 'beat3', 15);
         if (sp === 'villager') {
           setSpeech(
             'villager',
-            'Fareham Villager • Sworn Witness',
-            'King Edward cut Fareham’s tax from 30 hides to 20 because Viking raiders attacked us from the sea! Now Norman Bishop Walkelin demands £20 when our whole town only makes £16—we will starve!',
+            'Wulf of Fareham • Sworn Witness',
+            'King Edward cut Fareham’s tax from 30 hides to 20 because Viking raiders attacked us from the sea! Now Norman Bishop Walkelin demands £20 when our whole town only makes £16!',
             'beat3_villager_plea',
+          );
+        } else if (sp === 'shield') {
+          audio.normanHorn();
+          setSpeech(
+            'salty',
+            'Salty the Seagull • Coastal Viking Raids',
+            'True story! Because Fareham sat wide open to Solent sea-raiders, Saxon kings knocked ten whole hides off its tax bill!',
+            'beat3_viking_shield',
           );
         } else if (sp === 'clerk') {
           setSpeech(
             'guy',
             'Sir Guy de Rouen • Exchequer Hawk',
-            'Bah! Viking longships haven’t burned Fareham Creek in years! Cancel their soft Saxon discount, and force them to pay Bishop Walkelin every penny of that £20!',
+            'Bah! Viking longships haven’t burned Fareham Creek in years! Cancel their soft Saxon discount, and force them to pay every penny of that £20!',
             'beat3_clerk_demand',
-          );
-        } else if (sp === 'shield') {
-          audio.normanHorn();
-          setSpeech(
-            'villager',
-            'Evidence Exhibit • Coastal Viking Raids',
-            'Because Fareham sat open to Solent sea-raiders, King Edward officially reduced its geld tax burden from 30 hides to 20.',
           );
         } else if (sp === 'hugh') {
           setSpeech(
             'hugh',
             'Sheriff Hugh of Port • Stacking Silver',
-            'Fifty-four Hampshire manors means mountains of silver pennies—don’t go soft on the peasants now, Commissioner!',
-            'beat2_hugh_boast',
+            'Fifty-four Hampshire manors means mountains of silver pennies—don’t go soft on these English villagers now, Commissioner!',
+            'beat3_hugh_coins',
           );
         } else if (sp === 'bishop_monk') {
           setSpeech(
@@ -2517,14 +3559,14 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       }
 
       const vikBtn = e.target.closest('[data-pick-vikings]');
-      if (vikBtn) {
+      if (vikBtn && !state.assizeVerdictRevealed) {
         state.rulingVikings = vikBtn.dataset.pickVikings;
         syncCurrentStagePanelsInPlace();
         return;
       }
 
       const bishBtn = e.target.closest('[data-pick-bishop]');
-      if (bishBtn) {
+      if (bishBtn && !state.assizeVerdictRevealed) {
         state.rulingBishop = bishBtn.dataset.pickBishop;
         syncCurrentStagePanelsInPlace();
         return;
@@ -2533,43 +3575,39 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       const gavelBtn = e.target.closest('#dst-btn-slam-gavel');
       if (gavelBtn && !gavelBtn.disabled) {
         state.assizeVerdictRevealed = true;
-        state.score += 120;
+        const matchedBoth = state.rulingVikings === 'keep20' && state.rulingBishop === 'shame20';
+        awardOnce('b3_gavel', 'beat3', matchedBoth ? 120 : 80);
         audio.waxSealSlam();
         setSpeech(
-          'monk',
+          'guy',
           'Real 1086 Domesday Parchment Verdict',
           'Astonishingly, King William’s real Commissioners KEPT Fareham’s 20-hide Viking discount—and publicly shamed the Bishop in writing: "it pays £20, but it cannot bear it"!',
           'beat3_real_verdict',
         );
         syncCurrentStagePanelsInPlace();
+        nudgeNextButtonIntoViewIfOffscreen();
         return;
       }
 
-      // BEAT 4: STUBBINGTON HUT PEOPLE-COUNTER & SPYGLASS
-      const b4TabBtn = e.target.closest('[data-b4-tab]');
-      if (b4TabBtn) {
-        state.beat4Tab = b4TabBtn.dataset.b4Tab;
-        render();
-        return;
-      }
-
+      // =====================================================================
+      // STAGE 5 (beat4): INSIDE EDITH'S STUBBINGTON HUT #3
+      // =====================================================================
       const b4Spot = e.target.closest('[data-b4-spot]');
       if (b4Spot) {
         const sp = b4Spot.dataset.b4Spot;
         if (sp === 'edith') {
-          if (!state.hutPeopleGroups.has('edith')) state.score += 50;
           state.hutPeopleGroups.add('edith');
-          state.foundBlindSpots.add('edith_family');
+          awardOnce('b4_edith', 'beat4', 35);
           setSpeech(
             'edith',
             'Edith of Stubbington • +1 Invisible Wife Found!',
-            'Nine households?! Your posh Latin book counted nine husbands in Stubbington and acted like me, Grandma, and five starving kids don’t exist! What am I, a turnip?!',
+            'Nine households?! Your posh Latin book counted nine husbands in Stubbington and acted like me, Grandma, and five hungry kids don’t exist! What am I, a turnip?!',
             'beat4_edith_door',
           );
+          activeFx?.burst(22, 54, 'gold');
         } else if (sp === 'five_kids') {
-          if (!state.hutPeopleGroups.has('five_kids')) state.score += 60;
           state.hutPeopleGroups.add('five_kids');
-          state.foundBlindSpots.add('edith_family');
+          awardOnce('b4_kids', 'beat4', 45);
           audio.chimeSuccess();
           setSpeech(
             'edith',
@@ -2577,20 +3615,21 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             'Count ’em yourself! One toddler by the pot, two sharing pottage, and two stacking logs! Zero children are listed anywhere in your Domesday Book!',
             'beat4_five_kids',
           );
+          activeFx?.burst(52, 56, 'gold');
         } else if (sp === 'grandma') {
-          if (!state.hutPeopleGroups.has('grandma')) state.score += 50;
           state.hutPeopleGroups.add('grandma');
-          state.foundBlindSpots.add('edith_family');
+          awardOnce('b4_grandma', 'beat4', 35);
           audio.chimeSuccess();
           setSpeech(
-            'edith',
-            'Grandma Spinning Wool • +1 Invisible Elder Found!',
-            'Grandma remembers Viking ships in the Solent under King Cnut—yet because she doesn’t pay geld tax, Domesday pretends she isn’t even here!',
+            'grandma',
+            'Grandma Eadgyth • +1 Invisible Elder Found!',
+            'I remember Viking sails on the Solent under King Cnut, young clerk—yet because an old grandmother doesn’t pay geld tax, your great book pretends I’m not even here!',
             'beat4_grandma',
           );
+          activeFx?.burst(68, 60, 'gold');
         } else if (sp === 'untaxed_pets' || sp === 'rafter_hens') {
-          if (!state.foundBlindSpots.has('untaxed_pets')) state.score += 60;
           state.foundBlindSpots.add('untaxed_pets');
+          awardOnce('b4_pets', 'beat4', 35);
           audio.chickenBawk();
           setSpeech(
             'guy',
@@ -2599,52 +3638,47 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
             'beat4_pets',
           );
         } else if (sp === 'stumps_bennet') {
-          if (!state.bennetSightings.has('stumps')) state.score += 50;
           state.bennetSightings.add('stumps');
+          awardOnce('turnip_stumps', 'turnips', 45);
           audio.mudSquelch();
           setSpeech(
             'bennet',
-            'Bennet Luvet • Behind a Stubbington Tree-Stump!',
+            'Bennet Luvet • 🥕 Secret Turnip #3 Found!',
             'Psst! "Stubitone" literally means Tree-Stump Farm! Still zero oxen, still hugging my wormy turnip, and still worth £0 0s 0d to the King!',
             'beat4_bennet_stump',
           );
+          activeFx?.burst(91, 74, 'mud');
         }
         syncCurrentStagePanelsInPlace();
+        if (isStepTrulyComplete('beat4')) nudgeNextButtonIntoViewIfOffscreen();
         return;
       }
 
-      const bsNode = e.target.closest('.solent-blindspot-node');
-      if (bsNode) {
-        const id = bsNode.dataset.bsId;
-        if (!state.foundBlindSpots.has(id)) {
-          state.score += 70;
+      const hutQuizBtn = e.target.closest('[data-hut-quiz]');
+      if (hutQuizBtn) {
+        const ans = hutQuizBtn.dataset.hutQuiz;
+        state.hutQuizAnswer = ans;
+        if (ans === 'about45') {
+          awardOnce('b4_hut_quiz', 'beat4', 70);
           audio.chimeSuccess();
-        }
-        state.foundBlindSpots.add(id);
-        if (id === 'bs_portchester') {
           setSpeech(
-            'guy',
-            'Portchester (Porcestre) • 1086 Blind Spot',
-            'No giant Norman stone castle keep yet! Domesday only records Roman walls and "a fishery for the hall"—the tall stone keep wasn’t built until the 1120s!',
+            'edith',
+            'Edith of Stubbington • Bullseye!',
+            'That’s more like it! Nine husbands on the parchment meant around forty-five real villagers living, cooking, and working in Stubbington!',
+            'beat4_edith_door',
           );
-        } else if (id === 'bs_chark') {
-          setSpeech(
-            'guy',
-            'Chark • Swallowed Without a Name',
-            'Tiny hamlets like Chark didn’t get their own heading in 1086—their fields were silently bundled inside King William’s royal manor of Titchfield!',
-          );
+          syncCurrentStagePanelsInPlace();
+          if (isStepTrulyComplete('beat4')) nudgeNextButtonIntoViewIfOffscreen();
         } else {
-          setSpeech(
-            'guy',
-            'Portsmouth & Gosport • Unborn Towns',
-            'Neither Portsmouth nor Gosport existed as a town in 1086—reminding us never to project modern maps backwards onto medieval England!',
-          );
+          audio.mudSquelch();
+          syncCurrentStagePanelsInPlace();
         }
-        syncCurrentStagePanelsInPlace();
         return;
       }
 
-      // BEAT 5: STUBITONE PARCHMENT 3-CLUE CODE-BREAKER, STAMP QUIZ & DEBRIEF
+      // =====================================================================
+      // STAGE 6 (beat5): STUBITONE FOLIO 46v LATIN CODE-BREAKER
+      // =====================================================================
       const b5ClueBtn = e.target.closest('[data-b5-clue]');
       if (b5ClueBtn) {
         state.b5ClueStep = Number(b5ClueBtn.dataset.b5Clue);
@@ -2662,66 +3696,85 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
           if (idx === curMission.targetIdx) {
             state.b5SolvedClues.add(curMission.id);
             state.b5WrongChunkIdx = -1;
-            state.score += 65;
+            awardOnce(`b5_${curMission.id}`, 'beat5', 65);
             if (state.b5SolvedClues.size >= 3) {
               audio.waxSealSlam();
               setSpeech(
-                'monk',
-                'Folio 46v Master Code-Breaker! 🏆',
-                'Magnificent! You cracked all three real 1086 Latin lines for Stubbington—now stamp the 3 quick Fact-vs-Invention checks below!',
+                'salty',
+                'Salty the Seagull • Folio 46v Decoded! 🏆',
+                'Squawk! Look at the big brains on you—you just cracked genuine 940-year-old Domesday Latin! Hit the green button for the Final Stamp Boss!',
+                'beat5_all_cracked',
               );
+              syncCurrentStagePanelsInPlace();
+              nudgeNextButtonIntoViewIfOffscreen();
             } else {
               audio.chimeSuccess();
               setSpeech('guy', `Line ${idx + 1} Cracked!`, curMission.solvedNote);
-              const nextUnsolved = LATIN_CLUE_MISSIONS.findIndex((m) => !state.b5SolvedClues.has(m.id));
+              const nextUnsolved = LATIN_CLUE_MISSIONS.findIndex(
+                (m) => !state.b5SolvedClues.has(m.id),
+              );
               if (nextUnsolved >= 0) state.b5ClueStep = nextUnsolved;
+              syncCurrentStagePanelsInPlace();
             }
           } else {
             state.b5WrongChunkIdx = idx;
             audio.mudSquelch();
             setSpeech('guy', `Line ${idx + 1} Inspected — Keep Hunting!`, curMission.hintWrong);
+            syncCurrentStagePanelsInPlace();
           }
         } else {
           audio.chimeSuccess();
+          syncCurrentStagePanelsInPlace();
         }
-        syncCurrentStagePanelsInPlace();
         return;
       }
 
+      // =====================================================================
+      // STAGE 7 (beat6): FINAL STAMP BOSS, ARCHIVE MODAL & VICTORY WARRANT
+      // =====================================================================
       const stampBtn = e.target.closest('[data-stamp-id]');
       if (stampBtn) {
         const sId = stampBtn.dataset.stampId;
         const val = stampBtn.dataset.stampVal === 'true';
         const item = STAMP_CHALLENGES.find((x) => x.id === sId);
         if (!item) return;
-        if (state.stampAnswers[sId] === undefined && val === item.isReal) {
-          state.score += 50;
+
+        const wasComplete = Object.keys(state.stampAnswers).length >= 3;
+        if (val === item.isReal) {
+          awardOnce(`stamp_${sId}`, 'beat6', 50);
           audio.waxSealSlam();
         } else {
           audio.mudSquelch();
         }
         state.stampAnswers[sId] = val;
-        syncCurrentStagePanelsInPlace();
+
+        const nowComplete = Object.keys(state.stampAnswers).length >= 3;
+        if (!wasComplete && nowComplete) {
+          audio.setMode('victory_jubilee');
+          audio.victoryFanfare();
+          setSpeech(
+            'guy',
+            'Royal Audit Complete — You Beat the Game! 🏆',
+            'Royal Audit complete—you beat the game! Every village statistic comes straight from the real 1086 Domesday Book, while our village characters give voice to the nameless locals left out!',
+            'beat5_debrief_historian',
+          );
+          render();
+          nudgeNextButtonIntoViewIfOffscreen();
+        } else {
+          syncCurrentStagePanelsInPlace();
+        }
         return;
       }
 
       const bounty1Btn = e.target.closest('[data-bounty1]');
       if (bounty1Btn) {
         const val = bounty1Btn.dataset.bounty1;
-        if (state.archiveBounty1 !== 'small40' && val === 'small40') {
-          state.score += 75;
-          audio.chimeSuccess();
-        } else if (val !== 'small40') {
-          audio.mudSquelch();
-        }
         state.archiveBounty1 = val;
-        if (state.archiveBounty1 === 'small40' && state.archiveBounty2 === 'meon') {
-          audio.waxSealSlam();
-          setSpeech(
-            'guy',
-            'Master Archivist of Titchfield Hundred! 🏅',
-            'First-class archival detective work! You verified both Stubbington and tiny 2-household Meon straight from the 1086 Open Domesday record!',
-          );
+        if (val === 'small40') {
+          awardOnce('b6_bounty1', 'beat6', 75);
+          audio.chimeSuccess();
+        } else {
+          audio.mudSquelch();
         }
         syncCurrentStagePanelsInPlace();
         return;
@@ -2730,20 +3783,12 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       const bounty2Btn = e.target.closest('[data-bounty2]');
       if (bounty2Btn) {
         const val = bounty2Btn.dataset.bounty2;
-        if (state.archiveBounty2 !== 'meon' && val === 'meon') {
-          state.score += 75;
-          audio.chimeSuccess();
-        } else if (val !== 'meon') {
-          audio.mudSquelch();
-        }
         state.archiveBounty2 = val;
-        if (state.archiveBounty1 === 'small40' && state.archiveBounty2 === 'meon') {
+        if (val === 'meon') {
+          awardOnce('b6_bounty2', 'beat6', 75);
           audio.waxSealSlam();
-          setSpeech(
-            'guy',
-            'Master Archivist of Titchfield Hundred! 🏅',
-            'First-class archival detective work! You verified both Stubbington and tiny 2-household Meon straight from the 1086 Open Domesday record!',
-          );
+        } else {
+          audio.mudSquelch();
         }
         syncCurrentStagePanelsInPlace();
         return;
@@ -2752,8 +3797,8 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       if (e.target.closest('#dst-btn-hear-debrief')) {
         setSpeech(
           'guy',
-          'Historian Final Summary • Fact vs. Comedy',
-          'Every village figure you just investigated comes straight from the real 1086 Domesday Book—while characters like Bennet, Edith, and Odo give voice to the nameless locals whom King William’s taxmen never named.',
+          'Chief Royal Historian • Final Summary',
+          'Royal Audit complete—you beat the game! Every village statistic you investigated comes straight from the real 1086 Domesday Book, while characters like Bennet, Edith, and Odo give voice to the nameless locals whom King William’s clerks left out.',
           'beat5_debrief_historian',
         );
         syncHudOnly();
@@ -2776,10 +3821,13 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
   return () => {
     unmounted = true;
+    cleanupMicRecorder();
     if (typeof document !== 'undefined') {
       document.removeEventListener('fullscreenchange', onBrowserFsChange);
     }
     if (shimmerTimeout) clearTimeout(shimmerTimeout);
+    if (resetArmTimeout) clearTimeout(resetArmTimeout);
+    if (closeArmTimeout) clearTimeout(closeArmTimeout);
     cleanupFx();
     audio.destroy();
   };
