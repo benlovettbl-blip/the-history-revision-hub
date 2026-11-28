@@ -50,3 +50,17 @@ export function renderEscapeCoverSealHTML(seriesLabel = 'THE HISTORY REVISION HU
     </div>
   `;
 }
+
+export function renderWorkbookCodeCardHTML({
+  slotLabel = 'WORKBOOK BACK COVER • SLOT #2',
+  phrase = '',
+  instruction = 'Copy this exact unlocked phrase into your Printed Pupil Workbook Back Cover to build the full Unit Verdict Chain!',
+} = {}) {
+  return `
+    <div class="hh-er-workbook-code-card" aria-label="Workbook Homework Verification Code">
+      <div class="hh-er-workbook-code-kicker">✍️ HOMEWORK VERIFICATION CODE • ${slotLabel}</div>
+      <div class="hh-er-workbook-code-phrase">“${phrase}”</div>
+      <div class="hh-er-workbook-code-note">${instruction}</div>
+    </div>
+  `;
+}

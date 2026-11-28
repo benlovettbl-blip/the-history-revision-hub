@@ -1,7 +1,6 @@
 /**
- * Procedural Tudor Web Audio Engine for
+ * Procedural Tudor Web Audio + Studio British Voiceover Engine for
  * "The Cipher of Fotheringhay: Escape of Mary, Queen of Scots (1568–1587)"
- * Zero external audio dependencies — pure, dignified Tudor minor-key lute/viol & cathedral bell synthesis.
  */
 
 export class ElizabethEscapeAudio {
@@ -11,6 +10,8 @@ export class ElizabethEscapeAudio {
     this.mode = 'silent';
     this.loopTimer = null;
     this.stepIdx = 0;
+    this.voiceEl = null;
+    this.lastVoiceClipId = '';
   }
 
   ensureCtx() {
@@ -30,8 +31,42 @@ export class ElizabethEscapeAudio {
     this.muted = Boolean(flag);
     if (this.muted) {
       this.stopMusic();
+      this.stopVoice();
     } else if (this.mode !== 'silent') {
       this.startMusic(this.mode);
+    }
+  }
+
+  stopVoice() {
+    if (this.voiceEl) {
+      try {
+        this.voiceEl.onended = null;
+        this.voiceEl.pause();
+        this.voiceEl.currentTime = 0;
+      } catch (_) {}
+      this.voiceEl = null;
+    }
+  }
+
+  playVoice(clipId, onEnded = null) {
+    this.stopVoice();
+    if (!clipId) return;
+    this.lastVoiceClipId = clipId;
+    if (this.muted || typeof Audio === 'undefined') return;
+    const el = new Audio(`/audio/labs/elizabeth_mary_escape/${clipId}.mp3`);
+    el.volume = 0.96;
+    if (typeof onEnded === 'function') {
+      el.onended = () => {
+        if (this.voiceEl === el) onEnded();
+      };
+    }
+    this.voiceEl = el;
+    el.play().catch(() => {});
+  }
+
+  replayVoice() {
+    if (this.lastVoiceClipId) {
+      this.playVoice(this.lastVoiceClipId);
     }
   }
 
@@ -47,12 +82,11 @@ export class ElizabethEscapeAudio {
     this.stopMusic();
     if (this.muted || mode === 'silent') return;
 
-    // D minor Tudor modal progressions (Pavane / Greensleeves-inspired solemn cadence)
     const PROLOGUE_NOTES = [146.83, 220.0, 261.63, 293.66, 261.63, 220.0, 174.61, 164.81];
     const TENSION_NOTES = [146.83, 155.56, 220.0, 146.83, 174.61, 164.81, 130.81, 146.83];
     const FINALE_NOTES = [110.0, 146.83, 130.81, 110.0];
 
-    const intervalMs = mode === 'finale' ? 2400 : mode === 'tension' ? 920 : 1250;
+    const intervalMs = mode === 'finale' ? 2600 : mode === 'tension' ? 980 : 1350;
 
     const tick = () => {
       const ctx = this.ensureCtx();
@@ -63,18 +97,19 @@ export class ElizabethEscapeAudio {
       const freq = seq[this.stepIdx % seq.length];
       this.stepIdx += 1;
 
+      const duck = this.voiceEl && !this.voiceEl.paused ? 0.35 : 1.0;
+
       if (mode === 'finale') {
-        this.playBellTone(freq, 2.2, 0.08);
+        this.playBellTone(freq, 2.2, 0.065 * duck);
         return;
       }
 
-      // Soft plucked Tudor lute / virginal tone
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.type = mode === 'tension' ? 'triangle' : 'sine';
       osc.frequency.setValueAtTime(freq, now);
 
-      const peak = mode === 'tension' ? 0.045 : 0.055;
+      const peak = (mode === 'tension' ? 0.036 : 0.044) * duck;
       gain.gain.setValueAtTime(0.0001, now);
       gain.gain.exponentialRampToValueAtTime(peak, now + 0.04);
       gain.gain.exponentialRampToValueAtTime(0.0001, now + (mode === 'tension' ? 0.78 : 1.15));
@@ -84,14 +119,13 @@ export class ElizabethEscapeAudio {
       osc.start(now);
       osc.stop(now + 1.25);
 
-      // Subtle low bass drone every 4th beat
       if (this.stepIdx % 4 === 1) {
         const bass = ctx.createOscillator();
         const bGain = ctx.createGain();
         bass.type = 'sine';
-        bass.frequency.setValueAtTime(73.42, now); // D2
+        bass.frequency.setValueAtTime(73.42, now);
         bGain.gain.setValueAtTime(0.0001, now);
-        bGain.gain.exponentialRampToValueAtTime(0.05, now + 0.25);
+        bGain.gain.exponentialRampToValueAtTime(0.038 * duck, now + 0.25);
         bGain.gain.exponentialRampToValueAtTime(0.0001, now + 2.8);
         bass.connect(bGain);
         bGain.connect(ctx.destination);
@@ -104,16 +138,15 @@ export class ElizabethEscapeAudio {
     this.loopTimer = setInterval(tick, intervalMs);
   }
 
-  playBellTone(baseFreq = 110, dur = 2.6, volume = 0.11) {
+  playBellTone(baseFreq = 110, dur = 2.6, volume = 0.1) {
     const ctx = this.ensureCtx();
     if (!ctx || this.muted) return;
     const now = ctx.currentTime;
-    const partials = [
+    [
       { ratio: 1, amp: volume },
       { ratio: 2.0, amp: volume * 0.45 },
       { ratio: 2.756, amp: volume * 0.22 },
-    ];
-    partials.forEach(({ ratio, amp }) => {
+    ].forEach(({ ratio, amp }) => {
       const osc = ctx.createOscillator();
       const g = ctx.createGain();
       osc.type = 'sine';
@@ -185,7 +218,6 @@ export class ElizabethEscapeAudio {
     const ctx = this.ensureCtx();
     if (!ctx || this.muted) return;
     const now = ctx.currentTime;
-    // Deep dramatic low impact + iron bolt slam
     const osc = ctx.createOscillator();
     const g = ctx.createGain();
     osc.type = 'sine';
@@ -197,10 +229,11 @@ export class ElizabethEscapeAudio {
     g.connect(ctx.destination);
     osc.start(now);
     osc.stop(now + 0.5);
-    setTimeout(() => this.playBellTone(98, 3.0, 0.14), 380);
+    setTimeout(() => this.playBellTone(98, 2.8, 0.12), 380);
   }
 
   destroy() {
+    this.stopVoice();
     this.stopMusic();
     if (this.ctx) {
       try {

@@ -93,6 +93,7 @@ function preloadUpcomingStageAssets(stepId) {
 
 const STEPS = [
   { id: 'cover', short: '🏰 Cover', mob: '🏰 Cover' },
+  { id: 'prologue', short: '🎬 Opening', mob: '🎬 Opening' },
   { id: 'beat0', short: '1. My Town', mob: '1/7 My Town' },
   { id: 'beat1', short: '2. Fareham', mob: '2/7 Fareham' },
   { id: 'beat2', short: '3. Wipeout', mob: '3/7 Wipeout' },
@@ -100,6 +101,45 @@ const STEPS = [
   { id: 'beat4', short: '5. Hut #3', mob: '5/7 Hut #3' },
   { id: 'beat5', short: '6. Latin', mob: '6/7 Latin' },
   { id: 'beat6', short: '7. Win & Seal', mob: '7/7 Finale' },
+];
+
+const DOMESDAY_PROLOGUE_SLIDES = [
+  {
+    credit: 'THE HISTORY REVISION HUB PRESENTS • CHRISTMAS 1085',
+    heading: 'The King Wants Every Penny Counted',
+    img: '/images/medieval_england/source_e_william_conqueror_seal.jpg',
+    alt: 'The Great Seal of King William I showing him enthroned with sword and orb and mounted as a Norman knight',
+    caption: 'Great Seal of King William I (c. 1066–1087) • Enthroned as King of England and mounted as Duke of Normandy',
+    narration:
+      'Twenty years after 1066, King William I faces Viking invasion threats and needs cash fast. At Gloucester in Christmas 1085, he orders royal commissioners to ride into every shire and value every manor in England.',
+  },
+  {
+    credit: 'SPRING 1086 • THE GREAT SURVEY',
+    heading: '“Not One Ox, Cow, or Pig Escaped”',
+    img: '/images/medieval_england/source_b_great_domesday_book.jpg',
+    alt: 'Authentic Latin text of Great Domesday Book recording hides, ploughs, villagers, smallholders, and enslaved workers',
+    caption: 'Great Domesday Book (1086) • Written in abbreviated Latin so royal clerks could audit tax values at a glance',
+    narration:
+      'English villagers called it “Domesday”—the Day of Judgement—because there was no appeal. Clerks recorded who owned each village under King Edward in 1066, who held it now, and how much tax it could pay.',
+  },
+  {
+    credit: 'THE SOLENT SHORE • HAMPSHIRE FOLIO 46v',
+    heading: 'Norman Rule Over Fareham & Stubbington',
+    img: '/images/medieval_england/portchester_castle_keep.jpg',
+    alt: 'The stone Norman keep of Portchester Castle rising above the Hampshire Solent shore',
+    caption: 'Portchester Castle, Hampshire • Norman power guarding the Solent right beside Fareham and Stubbington',
+    narration:
+      'Along the Hampshire coast, Saxon landowners like Godwin of Stubbington have been wiped out and replaced by Norman lords, sheriffs, and bishops—while ordinary peasants plough the same muddy fields under heavier rents.',
+  },
+  {
+    credit: '1086 TIME-TRAVEL ESCAPE • MEET YOUR GUIDE',
+    heading: 'Crack All 4 Locks to Return Home',
+    img: '/images/medieval_england/tres_riches_heures_peasant_hearth_f2v.jpg',
+    alt: 'Illuminated medieval manuscript painting of a peasant family warming themselves by a cottage hearth in winter',
+    caption: 'Très Riches Heures (c. 1412) • Everyday peasant households—the real people behind Domesday’s Latin numbers',
+    narration:
+      'You have been pulled back 940 years into Norman Hampshire. Follow peasant guide Bennet Luvet, reassemble a torn charter, crack Reeve Odo’s 3-dial tax vault, map the 1066 land wipeout, and decode genuine Folio 46v Latin to escape!',
+  },
 ];
 
 // Heraldic & Wax-Seal Character Medallions (zero AI cartoon faces — AGENTS.md §6.2)
@@ -415,6 +455,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
     bennetSightings: new Set(),
     coverSecretsFound: new Set(),
+    prologueIdx: 0,
 
     // Room 1 (beat0): 3x3 Torn Charter Tile-Swap Escape Puzzle + Coastal Rewind
     charterTiles: [...INITIAL_CHARTER_TILES],
@@ -1208,18 +1249,11 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       <div class="dst-cover-wrap">
         <div class="dst-cover-launchpad">
           <div class="dst-cover-visual-col">
-            <div class="dst-cover-art-box" id="dst-fx-stage" data-fx-preset="cover">
-              <img src="/images/ks3_med7/med7_l1_card_bayeux_norman_fleet_scene38.jpg"
-                   alt="Bayeux Tapestry Scene 38 — King William’s 1066 invasion fleet crossing the Channel toward southern England"
+            <div class="dst-cover-art-box" id="dst-fx-stage" data-fx-preset="cover" style="background:#060911;">
+              <img src="/images/medieval_england/tres_riches_heures_ox_plough_f3v.jpg"
+                   alt="Illuminated medieval manuscript painting of a peasant ploughing the manor fields with two oxen"
                    class="domesday-diorama-img" />
-              <div class="dst-cover-plate-badge">🏛️ Bayeux Tapestry (c. 1070s) • Scene 38: Duke William’s Invasion Fleet</div>
-            </div>
-
-            <div class="dst-cast-strip-wrap">
-              <div class="dst-cast-strip-label">🎭 Tap to Hear Your 1086 Peasant Guide &amp; Cast (+15 pts each):</div>
-              <div class="dst-cast-strip-grid" id="dst-cover-cast-slot">
-                ${renderCoverCastChipsHTML()}
-              </div>
+              <div class="dst-cover-plate-badge">🏛️ Illuminated Medieval Manuscript • Everyday Peasant Ploughmen Counted in the 1086 Domesday Book</div>
             </div>
           </div>
 
@@ -1229,25 +1263,71 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
               <div class="dst-lucas-kicker">⏳ 1086 TIME-TRAVEL ESCAPE ROOM • HAMPSHIRE FOLIO 46v</div>
               <h2 class="dst-lucas-title">ESCAPE THE 1086 DOMESDAY AUDIT</h2>
               <p class="dst-lucas-sub">
-                Pulled back 940 years into Norman Hampshire! Follow muddy peasant guide <strong>Bennet Luvet</strong> through Fareham, Winchester, and Stubbington—reassembling a torn Bayeux charter, cracking Reeve Odo’s 3-dial tax vault, solving the 1066 land-wipeout map, and decoding genuine Folio 46v Latin to jump back to the present.
+                Pulled back 940 years into Norman Hampshire! Follow peasant guide <strong>Bennet Luvet</strong> through Fareham, Winchester, and Stubbington—reassembling a torn medieval charter, cracking Reeve Odo’s 3-dial tax vault, mapping the 1066 land wipeout, and decoding genuine Folio 46v Latin to jump back to the present.
               </p>
 
               <div class="dst-cover-pills-row">
-                <span class="dst-cover-pill">🧩 3×3 Charter Puzzle</span>
-                <span class="dst-cover-pill">🔐 3-Dial Tax Vault</span>
-                <span class="dst-cover-pill">🗺️ 1066 X-Ray Map</span>
-                <span class="dst-cover-pill">📜 Folio 46v Cipher</span>
+                <span class="dst-cover-pill">🎬 1086 Cinematic Opening</span>
+                <span class="dst-cover-pill">🧩 Lock 1: 3×3 Charter</span>
+                <span class="dst-cover-pill">🔐 Lock 2: 3-Dial Tax Vault</span>
+                <span class="dst-cover-pill">🗺️ Lock 3: 1066 Wipeout</span>
+                <span class="dst-cover-pill">📜 Lock 4: Folio 46v Latin</span>
               </div>
             </div>
 
-            <button type="button" class="dst-start-cta" id="dst-btn-start-adventure" style="width:100%;">
-              ⏳ ENTER 1086 ESCAPE ROOM (LOCK #1)
-            </button>
-
-            <div class="dst-cover-quote-wrap" id="dst-cover-quote-slot" role="status" aria-live="polite">
-              ${renderCoverQuoteInnerHTML()}
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <button type="button" class="dst-start-cta" id="dst-btn-start-cinema" style="width:100%;">
+                🎬 WATCH 1086 CINEMATIC OPENING &amp; ENTER ROOM 1
+              </button>
+              <button type="button" class="hh-er-cover-secondary-cta" id="dst-btn-start-adventure">
+                ⚡ Skip Opening Credits → Jump Straight to Room 1 (Lock #1)
+              </button>
             </div>
           </div>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderPrologueHTML() {
+    const slide = DOMESDAY_PROLOGUE_SLIDES[state.prologueIdx] || DOMESDAY_PROLOGUE_SLIDES[0];
+    const isLast = state.prologueIdx >= DOMESDAY_PROLOGUE_SLIDES.length - 1;
+    return `
+      <div class="hh-er-prologue-stage">
+        <div class="hh-er-letterbox-bar">
+          <span>THE HISTORY REVISION HUB • 1086 DOMESDAY ARCHIVE CINEMA</span>
+          <span>SCENE ${state.prologueIdx + 1} OF ${DOMESDAY_PROLOGUE_SLIDES.length}</span>
+        </div>
+
+        <div class="hh-er-cinema-canvas">
+          <div class="hh-er-cinema-plate-box">
+            <img src="${slide.img}" alt="${slide.alt}" class="hh-er-cinema-img" />
+            <div class="hh-er-cinema-caption">${slide.caption}</div>
+          </div>
+
+          <div class="hh-er-cinema-copy">
+            <div class="hh-er-cinema-credit">${slide.credit}</div>
+            <h2 class="hh-er-cinema-heading">${slide.heading}</h2>
+            <p class="hh-er-cinema-narration">${slide.narration}</p>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;">
+              ${
+                !isLast
+                  ? `<button type="button" class="dst-start-cta" style="width:auto;padding:10px 20px;" id="dst-prologue-next">Next Scene →</button>`
+                  : `<button type="button" class="dst-start-cta" style="width:auto;padding:11px 22px;" id="dst-btn-start-adventure">⏳ ENTER ROOM 1: 1086 SOLENT LOCK →</button>`
+              }
+              <button type="button" class="hh-er-cover-secondary-cta" style="width:auto;padding:10px 16px;" id="dst-btn-start-adventure">Skip Prologue →</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hh-er-letterbox-bar is-bottom">
+          <div class="hh-er-cinema-dots">
+            ${DOMESDAY_PROLOGUE_SLIDES.map(
+              (_, i) =>
+                `<button type="button" class="hh-er-cinema-dot ${i === state.prologueIdx ? 'is-active' : ''}" data-dst-prologue-idx="${i}" aria-label="Prologue Scene ${i + 1}"></button>`,
+            ).join('')}
+          </div>
+          <span style="color:#94a3b8;font-size:0.68rem;">1086 Hampshire Folio 46v • 100% Authentic Archival Plates</span>
         </div>
       </div>
     `;
@@ -2660,6 +2740,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
       let stageBody = '';
       if (state.step === 'cover') stageBody = renderCoverHTML();
+      else if (state.step === 'prologue') stageBody = renderPrologueHTML();
       else if (state.step === 'beat0') stageBody = renderBeat0HTML();
       else if (state.step === 'beat1') stageBody = renderBeat1HTML();
       else if (state.step === 'beat2') stageBody = renderBeat2HTML();
@@ -2987,8 +3068,34 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       }
 
       // =====================================================================
-      // COVER ACTIONS (8 HOTSPOTS + START)
+      // COVER & CINEMATIC PROLOGUE ACTIONS
       // =====================================================================
+      if (e.target.closest('#dst-btn-start-cinema')) {
+        state.prologueIdx = 0;
+        audio.startMusic('overture');
+        audio.normanHorn();
+        goToStep('prologue');
+        return;
+      }
+
+      if (e.target.closest('#dst-prologue-next')) {
+        if (state.prologueIdx < DOMESDAY_PROLOGUE_SLIDES.length - 1) {
+          state.prologueIdx += 1;
+          audio.chimeSuccess();
+          mountedSceneSignature = '';
+          render();
+        }
+        return;
+      }
+
+      const dstPrologueDot = e.target.closest('[data-dst-prologue-idx]');
+      if (dstPrologueDot) {
+        state.prologueIdx = Number(dstPrologueDot.dataset.dstPrologueIdx) || 0;
+        mountedSceneSignature = '';
+        render();
+        return;
+      }
+
       if (e.target.closest('#dst-btn-start-adventure')) {
         audio.startMusic('marsh_shanty');
         audio.normanHorn();

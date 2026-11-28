@@ -17,7 +17,7 @@ const LAB_CATALOG = {
     title: 'Escape the 1086 Domesday Audit: Stubitone & Fareham',
     subtitle:
       'Travel back 940 years with peasant guide Bennet Luvet: reassemble a torn Bayeux charter, crack Reeve Odo’s 3-dial tax vault, solve the 1066 land-wipeout map, and decode Folio 46v Latin.',
-    coverImg: '/images/ks3_med7/med7_l1_card_bayeux_norman_fleet_scene38.jpg',
+    coverImg: '/images/medieval_england/tres_riches_heures_ox_plough_f3v.jpg',
     badges: ['Official Escape Room', '4 Historical Locks', '11 Acted Voices', 'Folio 46v Primary Data'],
     loadMount: () => import('./domesday_stubitone.js').then((m) => m.mountDomesdayStubitone),
   },
