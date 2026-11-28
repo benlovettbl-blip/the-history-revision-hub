@@ -32,6 +32,7 @@ import {
   renderStubbingtonArchivalDeskHTML,
 } from './domesday_escape_puzzles.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
+import { renderEscapeBrandBarHTML, renderEscapeCoverSealHTML } from './escape_room_brand.js';
 
 const SESSION_SAVE_KEY = 'hh_domesday_session_v3';
 
@@ -1224,6 +1225,7 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
 
           <div class="dst-cover-info-col">
             <div>
+              ${renderEscapeCoverSealHTML('THE HISTORY REVISION HUB • OFFICIAL ESCAPE ROOM')}
               <div class="dst-lucas-kicker">⏳ 1086 TIME-TRAVEL ESCAPE ROOM • HAMPSHIRE FOLIO 46v</div>
               <h2 class="dst-lucas-title">ESCAPE THE 1086 DOMESDAY AUDIT</h2>
               <p class="dst-lucas-sub">
@@ -2430,6 +2432,8 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     if (!shellEl) return;
     persistSessionState();
     preserveScrollPosition(() => {
+      const brandSlot = shellEl.querySelector('#dst-slot-brandbar');
+      if (brandSlot) brandSlot.innerHTML = renderDomesdayBrandBarHTML();
       const topSlot = shellEl.querySelector('#dst-slot-topbar');
       if (topSlot) topSlot.innerHTML = renderTopBarInnerHTML();
 
@@ -2600,10 +2604,24 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
     });
   }
 
+  function renderDomesdayBrandBarHTML() {
+    let locks = 0;
+    if (state.charterSolved) locks += 1;
+    if (state.vaultUnlocked) locks += 1;
+    if (state.b2Solved && state.b2Solved.size >= 3) locks += 1;
+    if (state.b5SolvedClues && state.b5SolvedClues.size >= 3) locks += 1;
+    return renderEscapeBrandBarHTML({
+      eraTag: 'KS3 • NORMAN HAMPSHIRE 1086',
+      locksCracked: locks,
+      totalLocks: 4,
+    });
+  }
+
   function ensureShellMounted() {
     if (shellEl && shellEl.isConnected) return;
     stageEl.innerHTML = `
       <div class="dst-shell ${state.isFullscreen ? 'dst-is-fullscreen' : ''} ${state.hintShimmer ? 'dst-hint-shimmer' : ''}">
+        <div id="dst-slot-brandbar"></div>
         <div class="dst-topbar" id="dst-slot-topbar"></div>
         <div id="dst-slot-main"></div>
         <div id="dst-slot-modal"></div>
@@ -2636,6 +2654,8 @@ export function mountDomesdayStubitone(stageEl, _pools = {}, ctx = {}) {
       cleanupFx();
       mountedSceneSignature = nextSig;
 
+      const brandSlot = shellEl.querySelector('#dst-slot-brandbar');
+      if (brandSlot) brandSlot.innerHTML = renderDomesdayBrandBarHTML();
       shellEl.querySelector('#dst-slot-topbar').innerHTML = renderTopBarInnerHTML();
 
       let stageBody = '';

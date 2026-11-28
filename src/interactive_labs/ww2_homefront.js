@@ -31,6 +31,7 @@ import {
   renderBletchleyEvidenceDeskHTML,
 } from './ww2_archival_desk.js';
 import { saveArcadePersonalBest } from '../arcade/arcade_audio.js';
+import { renderEscapeBrandBarHTML, renderEscapeCoverSealHTML } from './escape_room_brand.js';
 
 const SESSION_SAVE_KEY = 'hh_ww2_homefront_session_v2';
 
@@ -165,10 +166,12 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     blackoutShut: false,
     morrisonAnswer: null, // 'morrison' | 'tent'
 
-    // Beat 3: 1941 Village Grocer & Ration Counter
+    // Beat 3: 1941 Village Grocer & Ration Counter + 4-Dial Weekly Ration Weight Lock (1-2-4-8)
     rationBasket: new Set(), // 'egg' | 'butter_bacon' | 'sugar_tea' | 'woolton_veg'
     rationExtrasFound: new Set(),
     unrationedQuiz: null, // 'veg' | 'bacon'
+    rationDials: [3, 6, 8, 2], // Target: [1 Egg, 2oz Butter, 4oz Bacon, 8oz Sugar]
+    rationVaultUnlocked: false,
 
     // Beat 4: Women at War & Bletchley Park 3-Rotor + Cipher Desk
     bletchleySpotsFound: new Set(),
@@ -194,12 +197,39 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     );
   }
 
+  function areRationDialsCorrect() {
+    return (
+      state.rationDials[0] === 1 &&
+      state.rationDials[1] === 2 &&
+      state.rationDials[2] === 4 &&
+      state.rationDials[3] === 8
+    );
+  }
+
+  function countWw2LocksCracked() {
+    let n = 0;
+    if (isStepTrulyComplete('beat0')) n += 1;
+    if (isStepTrulyComplete('beat2')) n += 1;
+    if (isStepTrulyComplete('beat3')) n += 1;
+    if (isStepTrulyComplete('beat4')) n += 1;
+    return n;
+  }
+
+  function renderWw2BrandBarHTML() {
+    return renderEscapeBrandBarHTML({
+      eraTag: 'KS2 • BRITAIN 1939–1945',
+      locksCracked: countWw2LocksCracked(),
+      totalLocks: 4,
+    });
+  }
+
   function isStepTrulyComplete(stepId) {
     if (!data) return false;
     if (stepId === 'beat0') return state.packedItems.size >= 4 && state.visitedRoutes.size >= 2;
     if (stepId === 'beat1') return state.kinderQ1 === 'refugee' && state.kinderQ2 === 'phoney';
     if (stepId === 'beat2') return state.blitzChecks.size >= 4 && state.morrisonAnswer === 'morrison';
-    if (stepId === 'beat3') return state.rationBasket.size >= 4 && state.unrationedQuiz === 'veg';
+    if (stepId === 'beat3')
+      return state.rationBasket.size >= 4 && state.unrationedQuiz === 'veg' && state.rationVaultUnlocked;
     if (stepId === 'beat4') return state.solvedCipherIds.size >= data.bletchleyClues.length;
     if (stepId === 'beat5') {
       const allFactsCorrect = data.factChecks.every((fc) => state.factAnswers[fc.id] === fc.isTrue);
@@ -646,23 +676,24 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
 
           <div class="ww2-cover-info-col">
             <div>
-              <div class="ww2-cover-kicker">🚂 KEY STAGE 2 ARCHIVAL FIELDWORK SIMULATION • BRITAIN 1939–1945</div>
-              <h2 class="ww2-cover-title">THE SUITCASE ON PLATFORM FOUR</h2>
+              ${renderEscapeCoverSealHTML('THE HISTORY REVISION HUB • OFFICIAL ESCAPE ROOM')}
+              <div class="ww2-cover-kicker">🔐 4-LOCK HOME FRONT ESCAPE ROOM • BRITAIN 1939–1945</div>
+              <h2 class="ww2-cover-title">THE HOME FRONT ESCAPE (1939–1945)</h2>
               <p class="ww2-cover-sub">
-                Follow Clara and Arthur from Platform Four in September 1939 all the way to VE Day 1945! Pack an official evacuee suitcase, meet Kindertransport refugee Lotte, seal a Blitz blackout window, weigh weekly rations, and crack an Enigma weather crib at Bletchley Park.
+                Step back to Platform Four in September 1939 and crack <strong>four real historical locks</strong> to reach VE Day 1945! Pack an official evacuee suitcase, pass the Blitz Blackout &amp; Shelter inspection, dial the <strong>1941 Ministry of Food Ration Vault (1–2–4–8)</strong>, and crack the <strong>Bletchley Park Enigma Rotors (B–R–K)</strong>.
               </p>
               <div class="ww2-cover-pills-row">
-                <span class="ww2-cover-pill">🧳 1. Platform &amp; UK Map</span>
-                <span class="ww2-cover-pill">🕊️ 2. Kindertransport</span>
-                <span class="ww2-cover-pill">🔦 3. Blitz Shelter</span>
-                <span class="ww2-cover-pill">🥕 4. Ration Shop</span>
-                <span class="ww2-cover-pill">🔐 5. Bletchley Code</span>
-                <span class="ww2-cover-pill">🎉 6. VE Day 1945</span>
+                <span class="ww2-cover-pill">🔒 Lock 1: Platform &amp; UK Map</span>
+                <span class="ww2-cover-pill">🕊️ Kindertransport</span>
+                <span class="ww2-cover-pill">🔒 Lock 2: Blitz Shelter</span>
+                <span class="ww2-cover-pill">🔒 Lock 3: Ration Vault</span>
+                <span class="ww2-cover-pill">🔒 Lock 4: Enigma B–R–K</span>
+                <span class="ww2-cover-pill">🎉 VE Day 1945</span>
               </div>
             </div>
 
             <button type="button" class="ww2-start-cta" id="ww2-start-btn" style="width:100%;">
-              ▶ BEGIN 1939 HOME FRONT JOURNEY
+              🔐 ENTER 1939 HOME FRONT ESCAPE (LOCK #1)
             </button>
 
             <div class="ww2-cover-quote-wrap" id="ww2-cover-quote-slot">
@@ -937,7 +968,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   function renderBeat3RightHTML() {
     const couponsUsed = [...state.rationBasket].filter((id) => id !== 'woolton_veg').length;
     const allWeighed = state.rationBasket.size >= 4;
-    const stageReady = allWeighed && state.unrationedQuiz === 'veg';
+    const stageReady = allWeighed && state.unrationedQuiz === 'veg' && state.rationVaultUnlocked;
 
     return `
       <div class="ww2-card-panel">
@@ -992,10 +1023,49 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
           </button>
         </div>
 
+        <div class="hh-er-dial-vault" aria-label="1941 Weekly Ration Weight Combination Lock">
+          <div class="hh-er-dial-vault-head">
+            <span class="hh-er-dial-title">🔐 LOCK #3: 1941 WEEKLY RATION VAULT</span>
+            <span style="font-size:0.72rem;font-weight:900;color:${state.rationVaultUnlocked ? '#86efac' : '#fde68a'};">
+              ${state.rationVaultUnlocked ? '🔓 VAULT UNLOCKED (1–2–4–8)!' : 'Set official 1941 adult weekly limits'}
+            </span>
+          </div>
+          <div class="hh-er-dial-grid">
+            ${[
+              { idx: 0, label: 'Fresh Eggs', unit: 'egg', target: 1 },
+              { idx: 1, label: 'Butter', unit: 'oz', target: 2 },
+              { idx: 2, label: 'Bacon / Ham', unit: 'oz', target: 4 },
+              { idx: 3, label: 'Sugar', unit: 'oz', target: 8 },
+            ]
+              .map((d) => {
+                const val = state.rationDials[d.idx];
+                const ok = state.rationVaultUnlocked || val === d.target;
+                return `
+                  <div class="hh-er-dial-cell ${state.rationVaultUnlocked ? 'is-locked-right' : ''}">
+                    <span class="hh-er-dial-label">${d.label}</span>
+                    <div class="hh-er-dial-controls">
+                      <button type="button" class="hh-er-dial-btn" data-ration-dial="${d.idx}" data-ration-dir="-1" aria-label="Decrease ${d.label}">−</button>
+                      <span class="hh-er-dial-readout">${val} ${d.unit}</span>
+                      <button type="button" class="hh-er-dial-btn" data-ration-dial="${d.idx}" data-ration-dir="1" aria-label="Increase ${d.label}">+</button>
+                    </div>
+                  </div>
+                `;
+              })
+              .join('')}
+          </div>
+          ${
+            !state.rationVaultUnlocked
+              ? `<button type="button" class="ww2-choice-btn" id="ww2-test-ration-vault-btn" style="justify-content:center;background:rgba(245,158,11,0.18);border-color:#fbbf24;color:#fef3c7;font-weight:900;">
+                   🔑 TEST 1941 RATION VAULT CODE
+                 </button>`
+              : `<div style="font-size:0.76rem;font-weight:800;color:#86efac;">✅ Spot on! 1 egg, 2 oz butter, 4 oz bacon &amp; 8 oz sugar per adult per week kept Britain fed during the U-boat blockade!</div>`
+          }
+        </div>
+
         ${
           stageReady
             ? `<button type="button" class="ww2-next-btn" data-step-jump="beat4">
-                 🔐 Continue to Stage 5: Bletchley Park Codebreakers <i class="fa-solid fa-arrow-right"></i>
+                 🔐 Unlock Stage 5: Bletchley Park Enigma Lock <i class="fa-solid fa-arrow-right"></i>
                </button>`
             : ''
         }
@@ -1560,6 +1630,8 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     }
 
     const doMutate = () => {
+      const brandSlot = shellEl.querySelector('#ww2-brandbar-slot');
+      if (brandSlot) brandSlot.innerHTML = renderWw2BrandBarHTML();
       const topSlot = shellEl.querySelector('#ww2-topbar-slot');
       if (topSlot) topSlot.innerHTML = renderTopBarInnerHTML();
 
@@ -1648,6 +1720,7 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
   // Mount persistent `.ww2-shell` ONCE
   stageEl.innerHTML = `
     <div class="ww2-shell ${state.isFullscreen ? 'ww2-is-fullscreen' : ''}">
+      <div id="ww2-brandbar-slot"></div>
       <div class="ww2-topbar" id="ww2-topbar-slot"></div>
       <div id="ww2-stage-slot"></div>
     </div>
@@ -2039,6 +2112,44 @@ export function mountWw2HomeFront(stageEl, _pools = {}, ctx = {}) {
     }
 
     // 5. Stage 3 (Beat 2): Blitz Night & Anderson Shelter Cutaway (4/4 voiced!)
+    // Beat 3: 4-Dial Weekly Ration Weight Lock (1 Egg, 2oz Butter, 4oz Bacon, 8oz Sugar)
+    const rDialBtn = e.target.closest('[data-ration-dial]');
+    if (rDialBtn && !state.rationVaultUnlocked) {
+      const idx = Number(rDialBtn.getAttribute('data-ration-dial'));
+      const dir = Number(rDialBtn.getAttribute('data-ration-dir'));
+      if (idx >= 0 && idx <= 3) {
+        const nextVal = Math.max(1, Math.min(12, state.rationDials[idx] + dir));
+        state.rationDials[idx] = nextVal;
+        audio.suitcaseClick();
+        saveSession();
+        updateLab(false);
+      }
+      return;
+    }
+
+    if (e.target.closest('#ww2-test-ration-vault-btn')) {
+      if (areRationDialsCorrect()) {
+        state.rationVaultUnlocked = true;
+        addPoints(20);
+        audio.chimeSuccess();
+        say(
+          'grocer',
+          'Mrs Wilkins • Lock #3 Cracked (1–2–4–8)!',
+          'Brilliant! 1 fresh egg, 2 oz butter, 4 oz bacon, and 8 oz sugar per week—Lock #3 is open and Bletchley Park awaits!',
+        );
+      } else {
+        audio.buzzerWrong();
+        say(
+          'grocer',
+          'Mrs Wilkins • Check Your Weekly Weights!',
+          'Not quite! Tap the food cards above to check the real 1941 adult weekly limits: Eggs, Butter, Bacon, and Sugar!',
+        );
+      }
+      saveSession();
+      updateLab(false);
+      return;
+    }
+
     const blitzBtn = e.target.closest('[data-blitz-check]');
     if (blitzBtn) {
       const checkId = blitzBtn.getAttribute('data-blitz-check');

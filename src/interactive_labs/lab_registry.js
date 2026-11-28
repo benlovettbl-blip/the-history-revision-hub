@@ -11,29 +11,57 @@ const LAB_CATALOG = {
     labId: 'domesday_stubitone',
     unitId: 'medieval_england',
     lessonIndex: 1,
-    launcherIcon: 'fa-scroll',
-    launcherLabel: '1086 Domesday Lab',
-    kicker: '📜 LOCAL ARCHIVAL FIELDWORK LAB • FAREHAM, STUBBINGTON & THE SOLENT (1086)',
-    title: 'The 1086 Hampshire Domesday Survey: Stubitone & Fareham Fieldwork Lab',
+    launcherIcon: 'fa-key',
+    launcherLabel: '1086 Domesday Escape Room',
+    kicker: '🔐 HISTORY ESCAPE ROOM • NORMAN HAMPSHIRE (1086)',
+    title: 'Escape the 1086 Domesday Audit: Stubitone & Fareham',
     subtitle:
-      'Compare the modern Solent coastline against 1086 Domesday settlements, audit Fareham’s five watermills and enslaved ploughmen, examine King Edward’s coastal Viking tax reduction, and decode Stubbington’s Folio 46v Latin entry.',
+      'Travel back 940 years with peasant guide Bennet Luvet: reassemble a torn Bayeux charter, crack Reeve Odo’s 3-dial tax vault, solve the 1066 land-wipeout map, and decode Folio 46v Latin.',
     coverImg: '/images/ks3_med7/med7_l1_card_bayeux_norman_fleet_scene38.jpg',
-    badges: ['7 Archival Stages', '11 Acted Voices', 'School-Laptop Friendly', 'Folio 46v Primary Data'],
+    badges: ['Official Escape Room', '4 Historical Locks', '11 Acted Voices', 'Folio 46v Primary Data'],
     loadMount: () => import('./domesday_stubitone.js').then((m) => m.mountDomesdayStubitone),
   },
   'ks2_ww2:lesson_2:2': {
     labId: 'ww2_homefront',
     unitId: 'ks2_ww2',
     lessonIndex: 1,
-    launcherIcon: 'fa-suitcase',
-    launcherLabel: '1939 Home Front Lab',
-    kicker: '🚂 KS2 ARCHIVAL FIELDWORK LAB • BRITAIN’S HOME FRONT (1939–1945)',
-    title: 'The Suitcase on Platform Four: A Child’s Wartime Journey (1939–1945)',
+    launcherIcon: 'fa-key',
+    launcherLabel: '1939 Home Front Escape Room',
+    kicker: '🔐 HISTORY ESCAPE ROOM • BRITAIN’S HOME FRONT (1939–1945)',
+    title: 'The Home Front Escape (1939–1945)',
     subtitle:
-      'Pack an official 1939 evacuee suitcase, trace Operation Pied Piper rail routes across the UK, meet a Kindertransport refugee from Prague, inspect Blitz shelters and 1941 rations, and explore the Imperial War Museums archive.',
+      'Crack four historical locks from Platform Four to VE Day 1945: pack an official evacuee suitcase, pass the Blitz shelter inspection, dial the 1941 Ration Vault (1–2–4–8), and crack Bletchley Park Enigma Rotors (B–R–K).',
     coverImg: '/units/ks2_ww2/assets/banner_unit_hero.jpg',
-    badges: ['KS2 Ages 9–11', 'IWM Archival Plates', 'Acted Studio Voices', 'IWM Archive Quest'],
+    badges: ['Official Escape Room', '4 Historical Locks', 'IWM Archival Plates', 'Acted Studio Voices'],
     loadMount: () => import('./ww2_homefront.js').then((m) => m.mountWw2HomeFront),
+  },
+  'monarchy_religion_power:lesson_2:2': {
+    labId: 'elizabeth_mary_escape',
+    unitId: 'monarchy_religion_power',
+    lessonIndex: 1,
+    launcherIcon: 'fa-key',
+    launcherLabel: 'Elizabeth I Escape Room',
+    kicker: '🎬 CINEMATIC HISTORY ESCAPE ROOM • MARY, QUEEN OF SCOTS (1568–1587)',
+    title: 'The Cipher of Fotheringhay: Escape of Mary, Queen of Scots (1568–1587)',
+    subtitle:
+      'Watch the Tudor cinematic opening and play as Mary, Queen of Scots across Lochleven Castle, the Northern Earls, Ridolfi, Throckmorton, and Babington beer-barrel cipher—while Sir Francis Walsingham closes the net.',
+    coverImg: '/images/upgraded/gcse-med-eee/eee_mary_queen_of_scots_hilliard.jpg',
+    badges: ['Official Escape Room', 'Cinematic Opening', 'Real 1586 Cipher', 'Fotheringhay Finale'],
+    loadMount: () => import('./elizabeth_mary_escape.js').then((m) => m.mountElizabethMaryEscape),
+  },
+  'eee:lesson_2_1:2': {
+    labId: 'elizabeth_mary_escape',
+    unitId: 'eee',
+    lessonIndex: 4,
+    launcherIcon: 'fa-key',
+    launcherLabel: 'Mary, Queen of Scots Escape Room',
+    kicker: '🎬 CINEMATIC HISTORY ESCAPE ROOM • MARY, QUEEN OF SCOTS (1568–1587)',
+    title: 'The Cipher of Fotheringhay: Escape of Mary, Queen of Scots (1568–1587)',
+    subtitle:
+      'Play as Mary, Queen of Scots across the Northern Earls, Ridolfi, Throckmorton, and Babington Plots—decoding her real 1586 cipher before Walsingham’s trap snaps shut at Fotheringhay.',
+    coverImg: '/images/upgraded/gcse-med-eee/eee_mary_queen_of_scots_hilliard.jpg',
+    badges: ['Official Escape Room', 'Cinematic Opening', 'Real 1586 Cipher', 'Edexcel KT2 Aligned'],
+    loadMount: () => import('./elizabeth_mary_escape.js').then((m) => m.mountElizabethMaryEscape),
   },
   'ks2_stone_to_iron_age:lesson_5:2': {
     labId: 'ks2_must_farm_lab',
@@ -115,7 +143,7 @@ export async function openInteractiveClassroomLab(labId, preferFullscreen = true
   const onKeyDown = (e) => {
     if (e.key === 'Escape') {
       const innerFsBtn = modal.querySelector(
-        '.ww2-shell.ww2-is-fullscreen #ww2-fs-btn, .dst-shell.dst-is-fullscreen #dst-fs-btn, .ks2lab-shell.ks2lab-is-fullscreen [data-action="toggle-fs"]',
+        '.ww2-shell.ww2-is-fullscreen #ww2-fs-btn, .dst-shell.dst-is-fullscreen #dst-fs-btn, .elz-shell.elz-is-fullscreen #elz-fs-btn, .ks2lab-shell.ks2lab-is-fullscreen [data-action="toggle-fs"]',
       );
       if (innerFsBtn) {
         e.preventDefault();
