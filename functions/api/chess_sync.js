@@ -82,6 +82,52 @@ const ALLOWED_HIGHLIGHT_TYPES = new Set([
   'house_milestone',
 ]);
 
+const ALLOWED_WARROOM_SCENARIOS = new Set(['med7_l1', 'med7_l2']);
+const ALLOWED_WARROOM_PHASES = new Set([
+  'lobby',
+  'round',
+  'reveal',
+  'spectrum',
+  'revote',
+  'podium',
+]);
+const ALLOWED_WARROOM_FACTIONS = new Set([
+  'wessex',
+  'normandy',
+  'mercia',
+  'northumbria',
+  'victory',
+  'warrior',
+  'dreadnought',
+  'invincible',
+]);
+const ALLOWED_WARROOM_CALLSIGNS = new Set([
+  'The Royal Castellan',
+  'The Witan Elder',
+  'The Saxon Housecarl',
+  'The Bayeux Chronicler',
+  'The Domesday Scribe',
+  'The Shield-Wall Captain',
+  'The Papal Envoy',
+  'The Norman Archer',
+  'The Fyrd Watchman',
+  'The Exchequer Clerk',
+  'The Shire Reeve',
+  'The Tower Mason',
+  'The Abbey Illuminator',
+  'The Senlac Standard-Bearer',
+  'The Stamford Scout',
+  'The Feudal Baron',
+  'The Manor Reeve',
+  'The Portchester Garrison',
+  'The Pevensey Pilot',
+  'The Westminster Monk',
+  'The Reliquary Keeper',
+  'The Royal Marshal',
+  'The Border Warden',
+  'The Longboat Navigator',
+]);
+
 const DAILY_CLOUD_XP_CAP = 150;
 
 function sanitizeLabel(str, maxLen = 48) {
@@ -310,6 +356,60 @@ export async function handleChessSyncRequest(request, env) {
       });
     }
 
+    // Fast-path polling for Live Classroom War Room (30-laptop atomic KV metadata + memory merge)
+    if (actionParam === 'warroom_poll') {
+      const wrCode = normalizeDuelCode(urlObj.searchParams.get('roomCode'));
+      if (!wrCode) {
+        return new Response(JSON.stringify({ ok: false, error: 'Invalid Room Code' }), {
+          status: 400,
+          headers: secHeaders,
+        });
+      }
+      const ctrlKey = scopedKey(`warroom_ctrl_${wrCode}`, roomParam);
+      let ctrl = await readStoreOrMemory(kv, ctrlKey, null);
+      if (!ctrl) {
+        await new Promise((r) => setTimeout(r, 450));
+        ctrl = await readStoreOrMemory(kv, ctrlKey, null);
+      }
+      if (!ctrl) {
+        return new Response(JSON.stringify({ ok: false, error: 'War Room not found or expired' }), {
+          status: 404,
+          headers: secHeaders,
+        });
+      }
+      const pPrefix = scopedKey(`warroom_p_${wrCode}_`, roomParam);
+      const pupilMap = new Map();
+
+      for (const [mKey, mVal] of memoryFallbackMap.entries()) {
+        if (mKey.startsWith(pPrefix) && mVal && mVal.id) {
+          pupilMap.set(mVal.id, mVal);
+        }
+      }
+      if (kv && typeof kv.list === 'function') {
+        try {
+          const listed = await kv.list({ prefix: pPrefix, limit: 65 });
+          for (const entry of listed.keys || []) {
+            const meta = entry.metadata;
+            if (meta && meta.id) {
+              const prev = pupilMap.get(meta.id);
+              if (!prev || (meta.ts || 0) >= (prev.ts || 0)) {
+                pupilMap.set(meta.id, meta);
+              }
+            }
+          }
+        } catch {
+          // Fallback to memory entries
+        }
+      }
+
+      const { hostToken: _secret, ...publicCtrl } = ctrl;
+      const pupils = [...pupilMap.values()].sort((a, b) => (a.joinedAt || 0) - (b.joinedAt || 0));
+      return new Response(JSON.stringify({ ok: true, ctrl: publicCtrl, pupils }), {
+        status: 200,
+        headers: secHeaders,
+      });
+    }
+
     const [data, xpInbox, joinInbox, feedBox, botBox, activeDuels] = await Promise.all([
       readStoreOrMemory(kv, blobKey, null),
       readStoreOrMemory(kv, xpBlobKey, { claims: [], dailyTotals: {} }),
@@ -378,6 +478,191 @@ export async function handleChessSyncRequest(request, env) {
     }
 
     const effectiveAction = String(actionParam || parsedPayload?.action || '').trim();
+
+    // =========================================================================
+    // A0. LIVE CLASSROOM WAR ROOM (Zero-Login, Zero-Free-Text, Atomic Per-Pupil KV)
+    // =========================================================================
+    if (effectiveAction === 'warroom_create') {
+      const wrCode = normalizeDuelCode(parsedPayload.roomCode);
+      if (!wrCode) {
+        return new Response(JSON.stringify({ ok: false, error: 'Invalid Room Code' }), {
+          status: 400,
+          headers: secHeaders,
+        });
+      }
+      const scenarioId = ALLOWED_WARROOM_SCENARIOS.has(parsedPayload.scenarioId)
+        ? parsedPayload.scenarioId
+        : 'med7_l1';
+      const teamMode = parsedPayload.teamMode === 'houses' ? 'houses' : 'realms';
+      const hostToken =
+        sanitizeLabel(parsedPayload.hostToken, 40) ||
+        `hst_${Date.now()}_${Math.random().toString(36).slice(2, 10)}`;
+      const now = Date.now();
+      const ctrl = {
+        roomCode: wrCode,
+        hostToken,
+        scenarioId,
+        teamMode,
+        phase: 'lobby',
+        roundIdx: 0,
+        timerSecs: 45,
+        roundStartedAt: 0,
+        createdAt: now,
+        updatedAt: now,
+      };
+      const ctrlKey = scopedKey(`warroom_ctrl_${wrCode}`, roomParam);
+      await writeStoreAndMemory(kv, ctrlKey, ctrl, 21600);
+      const { hostToken: _s, ...publicCtrl } = ctrl;
+      return new Response(JSON.stringify({ ok: true, ctrl: publicCtrl, hostToken }), {
+        status: 200,
+        headers: secHeaders,
+      });
+    }
+
+    if (effectiveAction === 'warroom_host') {
+      const wrCode = normalizeDuelCode(parsedPayload.roomCode);
+      const ctrlKey = scopedKey(`warroom_ctrl_${wrCode}`, roomParam);
+      const ctrl = wrCode ? await readStoreOrMemory(kv, ctrlKey, null) : null;
+      if (!ctrl) {
+        return new Response(JSON.stringify({ ok: false, error: 'War Room not found' }), {
+          status: 404,
+          headers: secHeaders,
+        });
+      }
+      if (!parsedPayload.hostToken || parsedPayload.hostToken !== ctrl.hostToken) {
+        return new Response(JSON.stringify({ ok: false, error: 'Unauthorized host token' }), {
+          status: 403,
+          headers: secHeaders,
+        });
+      }
+      if (parsedPayload.scenarioId && ALLOWED_WARROOM_SCENARIOS.has(parsedPayload.scenarioId)) {
+        ctrl.scenarioId = parsedPayload.scenarioId;
+      }
+      if (parsedPayload.teamMode === 'houses' || parsedPayload.teamMode === 'realms') {
+        ctrl.teamMode = parsedPayload.teamMode;
+      }
+      if (parsedPayload.phase && ALLOWED_WARROOM_PHASES.has(parsedPayload.phase)) {
+        ctrl.phase = parsedPayload.phase;
+        if (parsedPayload.phase === 'round') {
+          ctrl.roundStartedAt = Date.now();
+        }
+      }
+      if (typeof parsedPayload.roundIdx === 'number') {
+        ctrl.roundIdx = Math.max(0, Math.min(3, Math.floor(parsedPayload.roundIdx)));
+      }
+      if (typeof parsedPayload.timerSecs === 'number') {
+        ctrl.timerSecs = Math.max(15, Math.min(120, Math.floor(parsedPayload.timerSecs)));
+      }
+      ctrl.updatedAt = Date.now();
+      await writeStoreAndMemory(kv, ctrlKey, ctrl, 21600);
+      const { hostToken: _s, ...publicCtrl } = ctrl;
+      return new Response(JSON.stringify({ ok: true, ctrl: publicCtrl }), {
+        status: 200,
+        headers: secHeaders,
+      });
+    }
+
+    if (effectiveAction === 'warroom_pupil') {
+      const wrCode = normalizeDuelCode(parsedPayload.roomCode);
+      const rawId = String(parsedPayload.pupilId || '')
+        .replace(/[^a-zA-Z0-9_-]/g, '')
+        .slice(0, 28);
+      if (!wrCode || !rawId) {
+        return new Response(JSON.stringify({ ok: false, error: 'Invalid Room Code or Pupil ID' }), {
+          status: 400,
+          headers: secHeaders,
+        });
+      }
+      const ctrlKey = scopedKey(`warroom_ctrl_${wrCode}`, roomParam);
+      let ctrl = await readStoreOrMemory(kv, ctrlKey, null);
+      if (!ctrl) {
+        await new Promise((r) => setTimeout(r, 450));
+        ctrl = await readStoreOrMemory(kv, ctrlKey, null);
+      }
+      if (!ctrl) {
+        return new Response(
+          JSON.stringify({ ok: false, error: `Room ${wrCode} not found — check the whiteboard code!` }),
+          { status: 404, headers: secHeaders },
+        );
+      }
+
+      const pKey = scopedKey(`warroom_p_${wrCode}_${rawId}`, roomParam);
+      const memExisting = memoryFallbackMap.get(pKey) || null;
+      const kvExisting = await readStoreOrMemory(kv, pKey, null);
+      const existing =
+        memExisting && (!kvExisting || (memExisting.ts || 0) >= (kvExisting.ts || 0))
+          ? memExisting
+          : kvExisting;
+      const callsign = ALLOWED_WARROOM_CALLSIGNS.has(parsedPayload.callsign)
+        ? parsedPayload.callsign
+        : existing?.callsign || 'The Royal Castellan';
+      const defaultFaction = ctrl.teamMode === 'houses' ? 'warrior' : 'wessex';
+      const faction = ALLOWED_WARROOM_FACTIONS.has(parsedPayload.faction)
+        ? parsedPayload.faction
+        : existing?.faction || defaultFaction;
+
+      const answers = Array.isArray(existing?.answers) ? [...existing.answers] : [null, null, null, null];
+      if (Array.isArray(parsedPayload.answers)) {
+        for (let i = 0; i < 4; i++) {
+          if ([0, 1, 2, 3].includes(parsedPayload.answers[i])) {
+            answers[i] = parsedPayload.answers[i];
+          }
+        }
+      }
+      if (
+        typeof parsedPayload.roundIdx === 'number' &&
+        parsedPayload.roundIdx >= 0 &&
+        parsedPayload.roundIdx <= 3 &&
+        [0, 1, 2, 3].includes(parsedPayload.choiceIdx)
+      ) {
+        answers[parsedPayload.roundIdx] = parsedPayload.choiceIdx;
+      }
+
+      const clampPct = (v, fb) =>
+        typeof v === 'number' && !Number.isNaN(v) ? Math.max(0, Math.min(100, Math.round(v))) : fb;
+
+      const slider1 =
+        parsedPayload.slider1 !== undefined
+          ? clampPct(parsedPayload.slider1, existing?.slider1 ?? null)
+          : existing?.slider1 ?? null;
+      const slider2 =
+        parsedPayload.slider2 !== undefined
+          ? clampPct(parsedPayload.slider2, existing?.slider2 ?? null)
+          : existing?.slider2 ?? null;
+      const evidenceIdx = [0, 1, 2, 3].includes(parsedPayload.evidenceIdx)
+        ? parsedPayload.evidenceIdx
+        : existing?.evidenceIdx ?? null;
+
+      const pupilState = {
+        id: rawId,
+        callsign,
+        faction,
+        answers,
+        slider1,
+        slider2,
+        evidenceIdx,
+        joinedAt: existing?.joinedAt || Date.now(),
+        ts: Date.now(),
+      };
+
+      memoryFallbackMap.set(pKey, pupilState);
+      if (kv) {
+        try {
+          await kv.put(pKey, JSON.stringify(pupilState), {
+            expirationTtl: 21600,
+            metadata: pupilState,
+          });
+        } catch {
+          // Preserved in memory
+        }
+      }
+
+      const { hostToken: _s, ...publicCtrl } = ctrl;
+      return new Response(JSON.stringify({ ok: true, pupil: pupilState, ctrl: publicCtrl }), {
+        status: 200,
+        headers: secHeaders,
+      });
+    }
 
     // =========================================================================
     // A. LIVE 2-PUPIL ONLINE DUELS (Zero Free-Text Chat, 24h KV TTL)

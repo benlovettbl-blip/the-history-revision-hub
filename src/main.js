@@ -24,6 +24,7 @@ import {
   highlightTargetKeywordInLesson,
 } from './keyword_search.js';
 import { initCmeMapHotkeys, renderFloatingCmeMapButton } from './cme_theater_map.js';
+import { initFbeEmpireAtlasHotkeys } from './fbe_empire_atlas.js';
 import { isStaffModeActive } from './data/unit_resources_catalog.js';
 import {
   resolveUnitIdFromPathname,
@@ -35,6 +36,7 @@ import {
 } from './data/seo_routes.js';
 import { initShareUtilsGlobals } from './engine/share_utils.js';
 import { openUnifiedTeacherGuidance } from './engine/teacher_guidance_modal.js';
+import { registerLiveWarRoomGlobals } from './live_war_room.js';
 import './ocr_prescribed_sources_vault.js';
 import { initIosAudioUnlock } from './engine/ios_audio_unlock.js';
 import { initMobileAppShell } from './mobile_app_shell.js';
@@ -42,6 +44,7 @@ import './mobile_app_shell.css';
 import './mobile_revision_tools.css';
 import './mobile_media_touch.css';
 initShareUtilsGlobals();
+registerLiveWarRoomGlobals();
 if (typeof window !== 'undefined') {
   window.openUnifiedTeacherGuidance = openUnifiedTeacherGuidance;
   // Auto-recover stale Safari/PWA tabs if a deploy rotates lazy Vite chunk hashes (never reload while offline!)
@@ -481,8 +484,9 @@ const bootHistoryHubApp = async () => {
   window.openKeywordSearch = openKeywordSearch;
   window.highlightTargetKeywordInLesson = highlightTargetKeywordInLesson;
 
-  // Initialize Middle East Strategic Theater Map shortcuts
+  // Initialize Middle East Strategic Theater Map & First British Empire Atlas shortcuts
   initCmeMapHotkeys();
+  initFbeEmpireAtlasHotkeys();
   renderFloatingCmeMapButton();
 
   bindEvents();
@@ -797,6 +801,11 @@ const bootHistoryHubApp = async () => {
     });
   } else {
     await switchView(view, unit, true);
+  }
+
+  const warroomParam = urlParams.get('warroom');
+  if (warroomParam && typeof window.openLiveWarRoomJoin === 'function') {
+    setTimeout(() => window.openLiveWarRoomJoin(warroomParam), 250);
   }
 
   if (view === 'lessons' && initialLesson !== null && !eqParam) {

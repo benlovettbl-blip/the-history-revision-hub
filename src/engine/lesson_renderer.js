@@ -21,6 +21,7 @@ import {
 } from './video_utils.js';
 import { isStaffModeActive } from '../data/unit_resources_catalog.js';
 import { renderConsolidateStationHTML, initConsolidateStation } from './lesson_consolidate_station.js';
+import { renderMedievalWarRoomLessonCardHTML } from '../live_war_room.js';
 import {
   renderLessonExamPracticeHTML,
   initLessonExamPractice,
@@ -48,6 +49,15 @@ import { openUnifiedTeacherGuidance } from './teacher_guidance_modal.js';
 import { isOcrAncientUnit, renderAncientLesson } from './ancient_lesson_renderer.js';
 import { initLaptopModeForLesson } from './laptop_mode.js';
 import { translateKs2SourceBadge } from '../utils/ks2_mode.js';
+
+function escSpineHtml(v) {
+  return String(v ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
 
 function formatKs2SourceProvenanceHtml(formattedHtml, isKs2Mode) {
   const str = String(formattedHtml || '').trim();
@@ -817,7 +827,15 @@ export function renderLesson(lesson) {
         ? `<button class="btn btn-note-scaffold-jump" onclick="const sc = document.getElementById('lesson-note-scaffold'); if(sc) { sc.open = true; sc.scrollIntoView({ behavior: 'smooth' }); }" style="padding: 6px 12px; font-size: 0.88rem; background: #f0fdf4; color: #166534; border: 1.5px solid #86efac; font-weight: 700; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Jump directly to the Active Lesson Task"><i class="fa-solid fa-pen-to-square" style="color: #16a34a;"></i> Core Lesson Task</button>`
         : ''
       }
+              ${unitId === 'first_british_empire' || (typeof window !== 'undefined' && window.currentUnitId === 'first_british_empire')
+        ? `<button type="button" class="btn btn-empire-atlas-launcher no-print" onclick="window.openFbeEmpireAtlasModal && window.openFbeEmpireAtlasModal({ lessonIndex: ${currentIndex} })" style="padding: 6px 12px; font-size: 0.86rem; background: #eff6ff; color: #1e3a8a; border: 1.5px solid #93c5fd; font-weight: 800; border-radius: 6px; box-shadow: 0 1px 3px rgba(30, 58, 138, 0.1); display: inline-flex; align-items: center; gap: 6px; cursor: pointer; white-space: nowrap;" title="Open 7-Era First British Empire Historical Atlas &amp; Living Timeline (Shortcut: M)"><i class="fa-solid fa-earth-americas" style="color: #0284c7;"></i> <span>Empire Atlas</span></button>`
+        : ''
+      }
               <button type="button" class="btn btn-lesson-arcade-launcher" onclick="window.launchUnitArcade && window.launchUnitArcade('${unitId}', ${currentIndex}, 'lobby')" style="padding: 6px 12px; font-size: 0.86rem; background: #0f172a; color: #38bdf8; border: 1.5px solid #334155; font-weight: 700; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Launch the 7-Game Revision Arcade for this lesson"><i class="fa-solid fa-gamepad" style="color: #38bdf8;"></i> <span>Arcade</span></button>
+              ${(unitId === 'medieval_england' || (typeof window !== 'undefined' && window.currentUnitId === 'medieval_england')) && (currentIndex === 0 || currentIndex === 1)
+        ? `<button type="button" class="btn btn-warroom-launcher no-print" onclick="${isStaffModeActive() ? `window.openLiveWarRoomHost && window.openLiveWarRoomHost({ scenarioId: '${currentIndex === 1 ? 'med7_l2' : 'med7_l1'}' })` : 'window.openLiveWarRoomJoin && window.openLiveWarRoomJoin()'}" style="padding: 6px 12px; font-size: 0.86rem; background: #fef3c7; color: #92400e; border: 1.5px solid #f59e0b; font-weight: 800; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;" title="Launch or Join 1066 Live War Room across Classroom Laptops"><i class="fa-solid fa-shield-halved" style="color: #d97706;"></i> <span>${isStaffModeActive() ? '1066 War Room' : 'Join War Room'}</span></button>`
+        : ''
+      }
               <button type="button" class="btn teacher-only-plenary-btn" onclick="window.openTeacherPlenaryProjector && window.openTeacherPlenaryProjector('${lesson.id}')" style="display: ${isStaffModeActive() ? 'inline-flex' : 'none'}; padding: 6px 12px; font-size: 0.86rem; background: #ea580c; color: #ffffff; border: 1.5px solid #f97316; font-weight: 800; border-radius: 6px; align-items: center; gap: 6px; cursor: pointer;" title="Open Full-Screen Smartboard Plenary Projector (Hot Seat Taboo, 60s Standoff, Four Corners)"><i class="fa-solid fa-tv"></i> <span>Plenary Projector</span></button>
 
             `
@@ -1906,7 +1924,8 @@ export function renderLesson(lesson) {
       `;
     }
 
-    // --- UNIVERSAL TWO-BEAT CHRONOLOGY SPINE (KS2, KS3, GCSE) ---
+    // --- UNIVERSAL TWO-BEAT CHRONOLOGY SPINE / ENQUIRY ROADMAP (KS2, KS3, GCSE) ---
+    const isThematicSpine = lesson.spine_mode === 'thematic';
     let spineItems = [];
     if (
       lesson.causal_domino_spine &&
@@ -1924,6 +1943,7 @@ export function renderLesson(lesson) {
         return {
           step: s.step || i + 1,
           date: s.date || '',
+          theme: s.theme || (isThematicSpine ? s.date || '' : ''),
           title: s.title || '',
           desc: s.trigger || s.desc || '',
           actor: s.actor || '',
@@ -1948,7 +1968,8 @@ export function renderLesson(lesson) {
         }
         return {
           step: st.step || i + 1,
-          date: st.date || '',
+          date: st.date || st.dates || '',
+          theme: st.theme || (isThematicSpine ? st.date || st.dates || '' : ''),
           title: st.heading || st.questionHeading || `Enquiry Stage ${i + 1}`,
           desc: bulletText || st.desc || '',
           actor: st.actor || '',
@@ -1968,6 +1989,7 @@ export function renderLesson(lesson) {
       spineItems = lesson.timeline_anchor.map((a, i) => ({
         step: i + 1,
         date: a.date || '',
+        theme: a.theme || (isThematicSpine ? a.date || '' : ''),
         title: a.title || '',
         desc: a.desc || '',
         actor: '',
@@ -1999,8 +2021,8 @@ export function renderLesson(lesson) {
           <!-- Master Header Bar -->
           <div style="padding: 12px 18px; font-weight: 700; color: #0f172a; display: flex; align-items: center; justify-content: space-between; user-select: none; background: #f8fafc; border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; gap: 8px;">
             <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
-              <span style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 800; padding: 2.5px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Chronology Spine</span>
-              <span style="font-weight: 800; font-size: 0.98rem; color: #0f172a; font-family: 'Inter', sans-serif;">Key Turning Points &amp; Causal Dominoes</span>
+              <span style="background: ${isThematicSpine ? '#0f766e' : '#0284c7'}; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.68rem; font-weight: 800; padding: 2.5px 8px; border-radius: 4px; text-transform: uppercase; letter-spacing: 0.5px;">${isThematicSpine ? `${spineItems.length}-Stage Enquiry Roadmap` : 'Chronology Spine'}</span>
+              <span style="font-weight: 800; font-size: 0.98rem; color: #0f172a; font-family: 'Inter', sans-serif;">${isThematicSpine ? 'Core Thematic Pillars &amp; Enquiry Focus' : 'Key Turning Points &amp; Causal Dominoes'}</span>
             </div>
             <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
               ${pageAnchor ? `<span style="font-size: 0.74rem; font-weight: 700; color: #0369a1; background: #f0f9ff; border: 1px solid #bae6fd; padding: 2px 8px; border-radius: 12px;"><i class="fa-solid fa-book-open" style="color: #0284c7; margin-right: 4px;"></i> Workbook Spread: ${pageAnchor.label}</span>` : ''}
@@ -2016,9 +2038,19 @@ export function renderLesson(lesson) {
                 <i class="fa-solid fa-clock-rotate-left" style="color: #2563eb;"></i> Full Living Timeline &rarr;
               </button>
               `
-          : ''
+          : unitId === 'first_british_empire' ||
+              (typeof window !== 'undefined' && window.currentUnitId === 'first_british_empire')
+            ? `
+              <button type="button" class="btn btn-atlas-spine-jump no-print" onclick="event.stopPropagation(); if(window.openFbeEmpireAtlasModal){window.openFbeEmpireAtlasModal({ lessonIndex: ${lIdx} });}" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #0c4a6e; background: #e0f2fe; border: 1.2px solid #7dd3fc; padding: 3px 12px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Open high-resolution 7-Era Historical Atlas synced to this enquiry (Shortcut: M)">
+                <i class="fa-solid fa-earth-americas" style="color: #0284c7;"></i> Era Map &amp; Atlas
+              </button>
+              <button type="button" class="btn btn-timeline-jump no-print" onclick="event.stopPropagation(); if(typeof window.saveUnitReturnOrigin==='function'){window.saveUnitReturnOrigin();} if(typeof window.switchView==='function'){window.switchView('timeline', 'first_british_empire');}else if(typeof window.navigateTo==='function'){window.navigateTo('timeline');}" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 700; color: #1e3a8a; background: #eff6ff; border: 1.2px solid #bfdbfe; padding: 3px 12px; border-radius: 12px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); transition: all 0.15s ease;" title="Jump to interactive chronological Living Timeline (1600–1838)">
+                <i class="fa-solid fa-clock-rotate-left" style="color: #2563eb;"></i> Living Timeline &rarr;
+              </button>
+              `
+            : ''
         }
-              <span style="font-size: 0.74rem; font-weight: 700; color: #475569; background: #e2e8f0; padding: 2px 8px; border-radius: 12px;">${spineItems.length} Milestones</span>
+              <span style="font-size: 0.74rem; font-weight: 700; color: #475569; background: #e2e8f0; padding: 2px 8px; border-radius: 12px;">${spineItems.length} ${isThematicSpine ? 'Themes' : 'Milestones'}</span>
             </div>
           </div>
 
@@ -2027,9 +2059,11 @@ export function renderLesson(lesson) {
             ${spineItems
           .map((item, idx) => {
             const isLast = idx === spineItems.length - 1;
-            const displayDate = item.date
-              ? item.date.replace('October–November', 'Oct–Nov')
-              : '';
+            const displayDate = isThematicSpine
+              ? item.theme || item.date || ''
+              : item.date
+                ? item.date.replace('October–November', 'Oct–Nov')
+                : '';
             const hasConsequence = Boolean(
               item.consequence && item.consequence.trim().length > 0,
             );
@@ -2044,7 +2078,7 @@ export function renderLesson(lesson) {
                 <div class="cme-spine-card universal-spine-card" data-stage="${item.step}">
                   ${!isLast
                 ? `
-                  <div class="cme-domino-pipeline-node" title="${dominoTooltip}">
+                  <div class="cme-domino-pipeline-node" title="${escSpineHtml(dominoTooltip)}">
                     <i class="fa-solid fa-arrow-right"></i>
                   </div>`
                 : ''
@@ -2056,8 +2090,12 @@ export function renderLesson(lesson) {
                       ${item.step}
                     </span>
                     ${displayDate
-                ? `
-                    <span class="cme-spine-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #0369a1; background: #e0f2fe; padding: 2px 7px; border-radius: 4px; white-space: nowrap;" title="${item.date}">${displayDate}</span>
+                ? isThematicSpine
+                  ? `
+                    <span class="cme-spine-date-badge cme-spine-theme-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #0f766e; background: #f0fdfa; border: 1px solid #99f6e4; padding: 2px 7px; border-radius: 4px; white-space: nowrap; display: inline-flex; align-items: center; gap: 4px;" title="${escSpineHtml(displayDate)}"><i class="fa-solid fa-layer-group" style="font-size: 0.62rem;"></i> ${escSpineHtml(displayDate)}</span>
+                  `
+                  : `
+                    <span class="cme-spine-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #0369a1; background: #e0f2fe; padding: 2px 7px; border-radius: 4px; white-space: nowrap;" title="${escSpineHtml(item.date)}">${escSpineHtml(displayDate)}</span>
                   `
                 : ''
               }
@@ -2066,9 +2104,9 @@ export function renderLesson(lesson) {
                   <!-- Historical Actor Row -->
                   ${item.actor
                 ? `
-                  <div style="margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 0.66rem; font-weight: 700; color: #475569; display: flex; align-items: flex-start; gap: 5px; line-height: 1.28; min-height: 28px;" title="Historical Actor: ${item.actor}">
+                  <div style="margin-bottom: 6px; font-family: 'Inter', sans-serif; font-size: 0.66rem; font-weight: 700; color: #475569; display: flex; align-items: flex-start; gap: 5px; line-height: 1.28; min-height: 28px;" title="Historical Actor: ${escSpineHtml(item.actor)}">
                     <i class="fa-solid fa-users" style="color: #0284c7; font-size: 0.60rem; flex-shrink: 0; margin-top: 2px;"></i>
-                    <span style="line-height: 1.28; word-break: normal;">${item.actor}</span>
+                    <span style="line-height: 1.28; word-break: normal;">${escSpineHtml(item.actor)}</span>
                   </div>`
                 : ''
               }
@@ -2127,7 +2165,7 @@ export function renderLesson(lesson) {
                 </div>
                 ${!isLast
                 ? `
-                <div class="cme-domino-vertical-connector" title="${dominoTooltip}">
+                <div class="cme-domino-vertical-connector" title="${escSpineHtml(dominoTooltip)}">
                   <div class="cme-connector-line"></div>
                   <div class="cme-connector-badge">
                     <i class="fa-solid fa-arrow-down"></i>
@@ -2619,6 +2657,142 @@ export function renderLesson(lesson) {
           t.addEventListener('click', () => setEra(Number(t.getAttribute('data-cw-era'))));
         });
         setEra(typeof cwBlock.default_index === 'number' ? cwBlock.default_index : eras.length - 1);
+      } else if (wType === 'causal_stepper' || Array.isArray(cwBlock.steps)) {
+        const steps = Array.isArray(cwBlock.steps) ? cwBlock.steps : [];
+        if (!steps.length) return;
+        const stepBtns = rootEl.querySelectorAll('[data-cw-step]');
+        const showAllBtn = rootEl.querySelector('[data-cw-show-all]');
+        const prevBtn = rootEl.querySelector('[data-cw-step-prev]');
+        const nextBtn = rootEl.querySelector('[data-cw-step-next]');
+        const stageEl = rootEl.querySelector('.cw-stepper-stage');
+        let curIdx = typeof cwBlock.default_index === 'number' ? cwBlock.default_index : 0;
+        let showAll = false;
+
+        const renderStepper = () => {
+          stepBtns.forEach((b, bi) => {
+            const active = !showAll && bi === curIdx;
+            b.classList.toggle('is-active', active);
+            b.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          if (showAllBtn) {
+            showAllBtn.classList.toggle('is-active', showAll);
+            showAllBtn.setAttribute('aria-pressed', showAll ? 'true' : 'false');
+            showAllBtn.textContent = showAll ? 'Single Step' : 'Show All';
+          }
+          if (prevBtn) prevBtn.disabled = showAll || curIdx <= 0;
+          if (nextBtn) nextBtn.disabled = showAll || curIdx >= steps.length - 1;
+          if (!stageEl) return;
+
+          const cardHtml = (st, idx) => `
+            <div style="background: rgba(15,23,42,0.65); border: 1px solid rgba(148,163,184,0.28); border-left: 4px solid ${escAttrSafe(st.color || '#38bdf8')}; border-radius: 8px; padding: 11px 13px; ${showAll ? 'margin-bottom: 8px;' : ''}">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 5px;">
+                <span style="font-size: 0.72rem; font-weight: 900; text-transform: uppercase; letter-spacing: 0.4px; color: #38bdf8;">Step ${idx + 1} of ${steps.length}${st.date ? ` &bull; ${escHtmlSafe(st.date)}` : ''}</span>
+                ${st.badge ? `<span style="font-size: 0.68rem; font-weight: 800; background: rgba(245,158,11,0.18); color: #fde68a; border: 1px solid rgba(245,158,11,0.35); padding: 1px 7px; border-radius: 999px;">${escHtmlSafe(st.badge)}</span>` : ''}
+              </div>
+              <h4 style="margin: 0 0 6px 0; font-size: 0.98rem; font-weight: 800; color: #f8fafc; line-height: 1.3;">${escHtmlSafe(st.title || '')}</h4>
+              <p style="margin: 0; font-size: 0.88rem; line-height: 1.56; color: #e2e8f0;">${escHtmlSafe(st.prose || st.summary || st.detail || '')}</p>
+            </div>`;
+
+          stageEl.innerHTML = showAll
+            ? steps.map((st, idx) => cardHtml(st, idx)).join('')
+            : cardHtml(steps[curIdx], curIdx);
+        };
+
+        stepBtns.forEach((b) => {
+          b.addEventListener('click', () => {
+            showAll = false;
+            curIdx = Number(b.getAttribute('data-cw-step')) || 0;
+            renderStepper();
+          });
+        });
+        if (showAllBtn) {
+          showAllBtn.addEventListener('click', () => {
+            showAll = !showAll;
+            renderStepper();
+          });
+        }
+        if (prevBtn) {
+          prevBtn.addEventListener('click', () => {
+            if (curIdx > 0) {
+              showAll = false;
+              curIdx--;
+              renderStepper();
+            }
+          });
+        }
+        if (nextBtn) {
+          nextBtn.addEventListener('click', () => {
+            if (curIdx < steps.length - 1) {
+              showAll = false;
+              curIdx++;
+              renderStepper();
+            }
+          });
+        }
+        renderStepper();
+      } else if (wType === 'archival_ledger') {
+        const records = Array.isArray(cwBlock.records) ? cwBlock.records : [];
+        if (!records.length) return;
+        const recBtns = rootEl.querySelectorAll('[data-cw-rec]');
+        const showAllBtn = rootEl.querySelector('[data-cw-ledger-all]');
+        const stageEl = rootEl.querySelector('.cw-ledger-stage');
+        let curIdx = typeof cwBlock.default_index === 'number' ? cwBlock.default_index : 0;
+        let showAll = false;
+
+        const renderRecordCard = (rec, idx) => {
+          const metaHtml = (rec.fields || [])
+            .map(
+              (f) => `
+              <div style="background: rgba(15,23,42,0.85); border: 1px solid rgba(148,163,184,0.22); border-radius: 6px; padding: 5px 8px;">
+                <div style="font-size: 0.64rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.4px; color: #94a3b8;">${escHtmlSafe(f.label || '')}</div>
+                <div style="font-size: 0.80rem; font-weight: 800; color: #f8fafc; margin-top: 1px;">${escHtmlSafe(f.value || '')}</div>
+              </div>`,
+            )
+            .join('');
+          return `
+            <div style="background: rgba(15,23,42,0.68); border: 1px solid rgba(148,163,184,0.3); border-left: 4px solid ${escAttrSafe(rec.color || '#f59e0b')}; border-radius: 8px; padding: 11px 13px; ${showAll ? 'margin-bottom: 10px;' : ''}">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 6px;">
+                <span style="font-family: monospace; font-size: 0.71rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.15); border: 1px solid rgba(245,158,11,0.35); padding: 2px 7px; border-radius: 4px;">${escHtmlSafe(rec.ref || `Entry ${idx + 1}`)}</span>
+                ${rec.category ? `<span style="font-size: 0.68rem; font-weight: 800; color: #bae6fd; background: rgba(2,132,199,0.22); border: 1px solid rgba(56,189,248,0.35); padding: 2px 8px; border-radius: 999px;">${escHtmlSafe(rec.category)}</span>` : ''}
+              </div>
+              <h4 style="margin: 0 0 6px 0; font-size: 0.96rem; font-weight: 800; color: #ffffff; line-height: 1.3;">${escHtmlSafe(rec.title || '')}</h4>
+              ${rec.quote ? `<blockquote style="margin: 0 0 8px 0; padding: 8px 10px; background: #fefce8; color: #1e293b; border-left: 3.5px solid #b45309; border-radius: 5px; font-family: 'Inter', sans-serif; font-size: 0.82rem; line-height: 1.46; font-weight: 600;">&ldquo;${escHtmlSafe(rec.quote)}&rdquo;</blockquote>` : ''}
+              ${metaHtml ? `<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; margin-bottom: 8px;">${metaHtml}</div>` : ''}
+              ${rec.significance ? `<div style="font-size: 0.83rem; line-height: 1.48; color: #e2e8f0;"><strong style="color: #7dd3fc;">What this proves:</strong> ${escHtmlSafe(rec.significance)}</div>` : ''}
+            </div>`;
+        };
+
+        const renderLedger = () => {
+          recBtns.forEach((b, bi) => {
+            const active = !showAll && bi === curIdx;
+            b.classList.toggle('is-active', active);
+            b.setAttribute('aria-selected', active ? 'true' : 'false');
+          });
+          if (showAllBtn) {
+            showAllBtn.classList.toggle('is-active', showAll);
+            showAllBtn.textContent = showAll ? 'Single Record' : `Compare All (${records.length})`;
+          }
+          if (stageEl) {
+            stageEl.innerHTML = showAll
+              ? records.map((r, idx) => renderRecordCard(r, idx)).join('')
+              : renderRecordCard(records[curIdx], curIdx);
+          }
+        };
+
+        recBtns.forEach((b) => {
+          b.addEventListener('click', () => {
+            showAll = false;
+            curIdx = Number(b.getAttribute('data-cw-rec')) || 0;
+            renderLedger();
+          });
+        });
+        if (showAllBtn) {
+          showAllBtn.addEventListener('click', () => {
+            showAll = !showAll;
+            renderLedger();
+          });
+        }
+        renderLedger();
       }
 
       const enlargeBtn = rootEl.querySelector('.cw-enlarge-btn');
@@ -2742,6 +2916,52 @@ export function renderLesson(lesson) {
             </div>
             <div class="cw-power-bars"></div>
             <div class="cw-active-summary" style="margin-bottom:0;"></div>
+          </div>
+          ${cwBlock.caption ? `<p class="concept-widget-caption">${escHtmlSafe(cwBlock.caption)}</p>` : ''}
+        `;
+      }
+      if (wType === 'causal_stepper' || Array.isArray(cwBlock.steps)) {
+        const steps = Array.isArray(cwBlock.steps) ? cwBlock.steps : [];
+        return `
+          <div class="concept-widget-body">
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 6px; flex-wrap: wrap; margin-bottom: 8px;">
+              <div class="cw-deck-tabs" role="tablist" style="margin-bottom: 0; flex: 1;">
+                ${steps
+                  .map(
+                    (st, si) => `
+                  <button type="button" role="tab" class="cw-deck-tab" data-cw-step="${si}" aria-selected="false">
+                    ${escHtmlSafe(st.tab_label || `Step ${si + 1}`)}
+                  </button>`,
+                  )
+                  .join('')}
+              </div>
+              <button type="button" class="cw-deck-tab no-print" data-cw-show-all="1" aria-pressed="false" style="background: rgba(2,132,199,0.22); border-color: #38bdf8; color: #e0f2fe; font-weight: 800;">Show All</button>
+            </div>
+            <div class="cw-stepper-stage"></div>
+            <div class="no-print" style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px; gap: 8px;">
+              <button type="button" class="cw-deck-tab" data-cw-step-prev="1" style="padding: 4px 10px;">&larr; Prev</button>
+              <button type="button" class="cw-deck-tab" data-cw-step-next="1" style="padding: 4px 10px;">Next &rarr;</button>
+            </div>
+          </div>
+          ${cwBlock.caption ? `<p class="concept-widget-caption">${escHtmlSafe(cwBlock.caption)}</p>` : ''}
+        `;
+      }
+      if (wType === 'archival_ledger') {
+        const records = Array.isArray(cwBlock.records) ? cwBlock.records : [];
+        return `
+          <div class="concept-widget-body">
+            ${cwBlock.archive_source ? `<div style="background: rgba(245,158,11,0.14); border: 1px solid rgba(245,158,11,0.35); border-radius: 6px; padding: 6px 10px; margin-bottom: 8px; font-size: 0.74rem; color: #fde68a; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap;"><span><i class="fa-solid fa-building-columns"></i> <strong>Archive:</strong> ${escHtmlSafe(cwBlock.archive_source)}</span><button type="button" class="cw-deck-tab no-print" data-cw-ledger-all="1" style="padding: 2px 8px; font-size: 0.69rem; background: rgba(15,23,42,0.8); border-color: #fbbf24; color: #fef08a;">Compare All (${records.length})</button></div>` : ''}
+            <div class="cw-deck-tabs" role="tablist" aria-label="${escAttrSafe(cwBlock.title || 'Archive entries')}">
+              ${records
+                .map(
+                  (r, ri) => `
+                <button type="button" role="tab" class="cw-deck-tab" data-cw-rec="${ri}" aria-selected="false">
+                  ${escHtmlSafe(r.tab_label || `Record ${ri + 1}`)}
+                </button>`,
+                )
+                .join('')}
+            </div>
+            <div class="cw-ledger-stage" role="tabpanel"></div>
           </div>
           ${cwBlock.caption ? `<p class="concept-widget-caption">${escHtmlSafe(cwBlock.caption)}</p>` : ''}
         `;
@@ -3810,7 +4030,20 @@ export function renderLesson(lesson) {
         l4StyledContent = l4ContentStr;
       }
 
-      let stageDateVal = (matchedStage && matchedStage.date) || (matchedWbStage && (matchedWbStage.date || matchedWbStage.dates)) || '';
+      const isThematicStage = lesson.spine_mode === 'thematic';
+      let stageThemeVal =
+        (matchedStage && matchedStage.theme) ||
+        (matchedWbStage && matchedWbStage.theme) ||
+        (isThematicStage
+          ? (matchedStage && matchedStage.date) ||
+            (matchedWbStage && (matchedWbStage.date || matchedWbStage.dates)) ||
+            ''
+          : '');
+      let stageDateVal = isThematicStage
+        ? ''
+        : (matchedStage && matchedStage.date) ||
+          (matchedWbStage && (matchedWbStage.date || matchedWbStage.dates)) ||
+          '';
       const stageObj = matchedStage;
       const stageNum = stageObj ? (stageObj.step || index + 1) : index + 1;
       let cleanHeadingTitle = '';
@@ -3832,12 +4065,14 @@ export function renderLesson(lesson) {
 
         // Date deduplication: If stageDateVal is present or heading ends with parenthesised date
         cleanHeadingTitle = displayHeading;
-        const trailingDateMatch = displayHeading.match(/\s*\(([^)]*\d{2,4}[^)]*)\)\s*$/);
-        if (stageDateVal) {
-          cleanHeadingTitle = cleanHeadingTitle.replace(/\s*\([^)]*\d{2,4}[^)]*\)\s*$/, '').trim();
-        } else if (trailingDateMatch) {
-          stageDateVal = trailingDateMatch[1].trim();
-          cleanHeadingTitle = cleanHeadingTitle.replace(/\s*\([^)]*\d{2,4}[^)]*\)\s*$/, '').trim();
+        if (!isThematicStage) {
+          const trailingDateMatch = displayHeading.match(/\s*\(([^)]*\d{2,4}[^)]*)\)\s*$/);
+          if (stageDateVal) {
+            cleanHeadingTitle = cleanHeadingTitle.replace(/\s*\([^)]*\d{2,4}[^)]*\)\s*$/, '').trim();
+          } else if (trailingDateMatch) {
+            stageDateVal = trailingDateMatch[1].trim();
+            cleanHeadingTitle = cleanHeadingTitle.replace(/\s*\([^)]*\d{2,4}[^)]*\)\s*$/, '').trim();
+          }
         }
 
         headingAnchorId = cleanHeadingTitle
@@ -4625,7 +4860,9 @@ export function renderLesson(lesson) {
       spotlightStagesCollector.push({
         index,
         stageNum,
-        date: stageDateVal || '',
+        spineMode: isThematicStage ? 'thematic' : 'chronological',
+        theme: stageThemeVal || '',
+        date: isThematicStage ? '' : stageDateVal || '',
         title: cleanHeadingTitle || '',
         question: cleanStageQForSpotlight,
         rawText: String(block.text || block.content || ''),
@@ -4680,7 +4917,13 @@ export function renderLesson(lesson) {
                 <span class="stage-decimal-pill" style="background: #0284c7; color: #ffffff; font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px; flex-shrink: 0; white-space: nowrap;">
                   Stage ${stageNum}
                 </span>
-                ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 7px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0; white-space: nowrap;"><i class="fa-regular fa-clock" style="font-size: 0.65rem;"></i> ${stageDateVal}</span>` : ''}
+                ${
+                  isThematicStage && stageThemeVal
+                    ? `<span class="stage-theme-badge" style="font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; color: #5eead4; background: rgba(20,184,166,0.20); border: 1px solid rgba(45,212,191,0.42); padding: 2px 7px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0; white-space: nowrap;"><i class="fa-solid fa-layer-group" style="font-size: 0.65rem;"></i> ${escSpineHtml(stageThemeVal)}</span>`
+                    : stageDateVal
+                      ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.70rem; font-weight: 800; color: #fbbf24; background: rgba(245,158,11,0.18); border: 1px solid rgba(245,158,11,0.35); padding: 2px 7px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px; flex-shrink: 0; white-space: nowrap;"><i class="fa-regular fa-clock" style="font-size: 0.65rem;"></i> ${escSpineHtml(stageDateVal)}</span>`
+                      : ''
+                }
                 <span class="stage-banner-question" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.02rem; font-weight: 700; color: #f8fafc; line-height: 1.32; flex: 1 1 260px; min-width: 0; white-space: normal; word-break: normal; overflow-wrap: break-word;">${topBannerHeadline}</span>
               </div>
               <div class="narrative-chunk-audio" style="flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px;">
@@ -4707,7 +4950,13 @@ export function renderLesson(lesson) {
                 ${showParaNumber ? `<span class="stage-decimal-pill" style="background: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; font-family: 'Inter', sans-serif; font-size: 0.74rem; font-weight: 900; padding: 2px 8px; border-radius: 4px; letter-spacing: 0.3px;">Stage ${stageNum}</span>` : ''}
                 ${themeHeadingHtml}
               </span>
-              ${stageDateVal ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${stageDateVal}</span>` : ''}
+              ${
+                isThematicStage && stageThemeVal
+                  ? `<span class="stage-theme-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #0f766e; background: #f0fdfa; border: 1px solid #99f6e4; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-solid fa-layer-group" style="font-size: 0.68rem;"></i> ${escSpineHtml(stageThemeVal)}</span>`
+                  : stageDateVal
+                    ? `<span class="stage-date-badge" style="font-family: 'Inter', sans-serif; font-size: 0.72rem; font-weight: 800; color: #b45309; background: #fffbeb; border: 1px solid #fde68a; padding: 2px 8px; border-radius: 4px; display: inline-flex; align-items: center; gap: 4px;"><i class="fa-regular fa-clock" style="font-size: 0.68rem;"></i> ${escSpineHtml(stageDateVal)}</span>`
+                    : ''
+              }
             </div>
             <div class="narrative-chunk-audio" style="flex-shrink: 0; margin-left: 6px; margin-top: 1px; display: inline-flex; align-items: center; gap: 6px;">
               ${renderStageSpotlightBtnHTML(index)}
@@ -10466,6 +10715,15 @@ export function renderLesson(lesson) {
           </div>
         </div>
     `;
+  }
+
+  // --- LIVE CLASSROOM COLLABORATION WAR ROOM (Medieval England Lessons 1 & 2) ---
+  if (
+    (unitId === 'medieval_england' ||
+      (typeof window !== 'undefined' && window.currentUnitId === 'medieval_england')) &&
+    (currentIndex === 0 || currentIndex === 1)
+  ) {
+    html += renderMedievalWarRoomLessonCardHTML(currentIndex);
   }
 
   // --- EMBEDDED CHECK & CONSOLIDATE STATION (Quick Check 5 Qs / Deep Challenge 20 Qs / Vocab Flip Cards) ---
