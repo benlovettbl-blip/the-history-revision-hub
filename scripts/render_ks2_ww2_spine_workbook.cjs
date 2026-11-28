@@ -1061,17 +1061,6 @@ function buildSpineWorkbookHtml(unitData) {
     keyStageBadge: 'KEY STAGE 2 HISTORY &bull; YEARS 5–6',
     pagePadding: '9mm 11mm 8.5mm 11mm',
     checkpoints: markingCheckpoints,
-    escapeRoomLedger: {
-      title: 'Official Home Front Escape Room Verdict Ledger (1939–1945)',
-      badge: 'Homework Code Chain',
-      instruction:
-        'Scan the Revision Arcade QR below to play the 1939–1945 Home Front Escape Room! Crack all 4 wartime locks and copy your unlocked Verification Phrase below:',
-      slots: [
-        { code: 'Lock 1–2 (Pied Piper & Shelters)' },
-        { code: 'Lock 3–4 (Ration Vault & Enigma)' },
-        { code: 'Master Home Front Verdict Code' },
-      ],
-    },
     footerQuip: 'The History Revision Hub • KS2 World War II Structured Spine Workbook • Independent Curriculum Resource',
     renderFooterStrip: (p, q) => renderFooterStrip(p, q),
   });

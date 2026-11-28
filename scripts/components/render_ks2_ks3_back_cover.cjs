@@ -43,88 +43,67 @@ function renderKs2Ks3BackCover({
   extraPageClass = '',
   checkpoints = [],
   qrSpots = null,
-  escapeRoomLedger = null,
   footerQuip = 'The History Revision Hub &bull; Independent Curriculum Workbook &bull; Retain for Progress Review',
   renderFooterStrip = null,
 }) {
-  const hasLedger = Boolean(escapeRoomLedger && Array.isArray(escapeRoomLedger.slots) && escapeRoomLedger.slots.length > 0);
   const isDense8Row = checkpoints.length >= 8;
   const isCompact7Row = checkpoints.length === 7;
 
-  // Responsive geometry so 6-row, 7-row, and 8-row units (+ optional Escape Room Ledger) all fit at 0px overflow
-  const badgeBoxH = hasLedger ? '3.9mm' : isDense8Row ? '4.0mm' : isCompact7Row ? '4.3mm' : '4.6mm';
-  const badgeBoxW = isDense8Row || hasLedger ? '5.1mm' : '5.4mm';
-  const badgeFont = isDense8Row || hasLedger ? '5.4pt' : '5.7pt';
-  const effortLineH = hasLedger ? '4.2mm' : isDense8Row ? '4.4mm' : isCompact7Row ? '5.0mm' : '5.4mm';
-  const commentLineH = hasLedger
-    ? isDense8Row
-      ? '4.0mm'
-      : isCompact7Row
-        ? '4.3mm'
-        : '4.8mm'
-    : isDense8Row
-      ? '4.6mm'
-      : isCompact7Row
-        ? '5.4mm'
-        : '6.0mm';
-  const rowPadY = isDense8Row || hasLedger ? '2px' : '3.5px';
-  const titleFont = isDense8Row ? '7.2pt' : hasLedger ? '7.3pt' : '7.6pt';
-  const focusFont = isDense8Row ? '6.2pt' : hasLedger ? '6.3pt' : '6.6pt';
-  const qrSizeMm = isDense8Row || hasLedger ? 14.8 : 16.5;
+  // Responsive geometry so 6-row, 7-row, and 8-row units all fit both 272mm and 297mm containers at 0px overflow
+  const badgeBoxH = isDense8Row ? '3.8mm' : isCompact7Row ? '4.2mm' : '4.5mm';
+  const badgeBoxW = isDense8Row ? '5.2mm' : '5.5mm';
+  const badgeFont = isDense8Row ? '5.4pt' : '5.7pt';
+  const effortGap = isDense8Row ? '1.6mm' : isCompact7Row ? '2.4mm' : '3.0mm';
+  const effortPadTop = isDense8Row ? '1.0mm' : '1.4mm';
+  const commentLineH = isDense8Row ? '4.5mm' : isCompact7Row ? '5.4mm' : '6.0mm';
+  const rowPadY = isDense8Row ? '2px' : '3.5px';
+  const titleFont = isDense8Row ? '7.2pt' : '7.6pt';
+  const focusFont = isDense8Row ? '6.2pt' : '6.6pt';
+  const qrSizeMm = isDense8Row ? 14.5 : 16;
 
   const descriptors =
     mode === 'ks2'
       ? [
           {
             band: 'Emerging (Em)',
-            gcse: null,
             text: 'Recalls key words and dates; writes clear simple sentences using the starter stems.',
           },
           {
             band: 'Emerging+ (Em+)',
-            gcse: null,
             text: 'Describes historical events accurately using key terms and facts from the spine.',
           },
           {
             band: 'Expected (Ex)',
-            gcse: null,
             text: 'Writes two clear paragraphs explaining <em>why</em> events happened with accurate dates and evidence.',
           },
           {
             band: 'Expected+ (Ex+)',
-            gcse: null,
             text: 'Connects causes and consequences smoothly; compares different historical experiences.',
           },
           {
             band: 'Greater Depth (GD)',
-            gcse: null,
             text: 'Writes fluent, independent historical explanations weaving precise evidence across the unit.',
           },
         ]
       : [
           {
             band: 'Emerging (Em)',
-            gcse: 'GCSE 1–3',
             text: 'Identifies key names, dates, and terms; describes what happened using structured frames.',
           },
           {
             band: 'Emerging+ (Em+)',
-            gcse: 'GCSE 3–4',
             text: 'Describes reasons why events occurred; begins to explain causes supported by accurate facts.',
           },
           {
             band: 'Expected (Ex)',
-            gcse: 'GCSE 4–5',
             text: 'Constructs structured paragraphs explaining causes and consequences with precise evidence.',
           },
           {
             band: 'Expected+ (Ex+)',
-            gcse: 'GCSE 6–7',
             text: 'Weighs competing factors and interpretations; explains why key causes were decisive.',
           },
           {
             band: 'Greater Depth (GD)',
-            gcse: 'GCSE 8–9',
             text: 'Crafts sustained, analytical arguments reaching a substantiated historical judgement.',
           },
         ];
@@ -162,43 +141,8 @@ function renderKs2Ks3BackCover({
     },
   ];
 
-  const ledgerSlots = hasLedger ? escapeRoomLedger.slots : [];
-  const reflectionHtml = hasLedger
-    ? `
-      <div style="border:1.5px solid #0f284e;border-radius:4px;overflow:hidden;background:#f8fafc;margin-bottom:4px;font-family:'Inter',sans-serif;flex-shrink:0;">
-        <div style="background:#0f284e;color:#ffffff;padding:2.5px 7px;display:flex;justify-content:space-between;align-items:center;">
-          <strong style="font-size:6.8pt;text-transform:uppercase;letter-spacing:0.35px;">
-            🔑 ${escHtml(escapeRoomLedger.title || 'Official Escape Room Homework Verdict Ledger')}
-          </strong>
-          <span style="font-size:5.8pt;font-weight:800;background:#ffffff;color:#0f284e;padding:0.5px 4.5px;border-radius:2px;text-transform:uppercase;">
-            ${escHtml(escapeRoomLedger.badge || 'Zero-Marking Homework Chain')}
-          </span>
-        </div>
-        <div style="padding:3px 7px 4px 7px;">
-          <div style="font-size:6.1pt;color:#1e293b;line-height:1.2;margin-bottom:2.5px;">
-            ${escHtml(
-              escapeRoomLedger.instruction ||
-                'Complete each digital Escape Room in the Revision Arcade and copy your unlocked Verification Phrase below to build the Unit Master Verdict:',
-            )}
-          </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5px 8px;">
-            ${ledgerSlots
-              .map((sl, sIdx) => {
-                const spanFull = ledgerSlots.length % 2 === 1 && sIdx === ledgerSlots.length - 1;
-                return `
-              <div style="${spanFull ? 'grid-column:span 2;' : ''}display:flex;align-items:baseline;gap:4px;">
-                <span style="font-size:6.0pt;font-weight:900;color:#0f284e;white-space:nowrap;">${escHtml(sl.code || `Slot ${sIdx + 1}`)}:</span>
-                <div style="flex:1;border-bottom:1px solid #0f284e;height:4.3mm;display:flex;align-items:flex-end;padding-bottom:0.4mm;">
-                  ${sl.hint ? `<span style="font-size:5.3pt;color:#64748b;font-style:italic;">${escHtml(sl.hint)}</span>` : ''}
-                </div>
-                <span style="display:inline-block;width:3.3mm;height:3.3mm;border:1px solid #0f284e;border-radius:1.5px;background:#ffffff;flex-shrink:0;" title="Teacher Check"></span>
-              </div>`;
-              })
-              .join('')}
-          </div>
-        </div>
-      </div>`
-    : mode === 'ks2'
+  const reflectionHtml =
+    mode === 'ks2'
       ? `
       <div style="border:1.3px solid #0f284e;border-radius:4px;padding:3.5px 8px 5px 8px;background:#f8fafc;margin-bottom:4px;font-family:'Inter',sans-serif;font-size:7.1pt;flex-shrink:0;">
         <div style="display:flex;justify-content:space-between;align-items:baseline;">
@@ -214,7 +158,7 @@ function renderKs2Ks3BackCover({
       <div style="border:1.3px solid #0f284e;border-radius:4px;padding:3.5px 8px 5px 8px;background:#f8fafc;margin-bottom:4px;font-family:'Inter',sans-serif;font-size:7.0pt;flex-shrink:0;">
         <div style="display:flex;justify-content:space-between;align-items:baseline;">
           <strong style="color:#0f284e;text-transform:uppercase;">★ Pupil Reflection &amp; Next-Step Target:</strong>
-          <span style="font-size:6.6pt;font-weight:700;color:#334155;">Strongest Enquiry # ______ &bull; Overall Attainment: [ Em / Em+ / Ex / Ex+ / GD ]</span>
+          <span style="font-size:6.6pt;font-weight:700;color:#334155;">Strongest Enquiry # ______ &bull; Overall Band: [ Em / Em+ / Ex / Ex+ / GD ]</span>
         </div>
         <div style="display:flex;align-items:baseline;gap:6px;margin-top:1.1mm;">
           <span style="font-size:6.6pt;font-style:italic;color:#475569;white-space:nowrap;">My main target for the next historical unit:</span>
@@ -233,33 +177,26 @@ function renderKs2Ks3BackCover({
       <!-- Top Single-Line Masthead -->
       <div style="border-bottom:2px solid #0f284e;padding-bottom:2.5px;margin-bottom:4px;display:flex;justify-content:space-between;align-items:baseline;flex-shrink:0;">
         <h2 style="margin:0;font-family:'Inter',sans-serif;font-size:10.6pt;color:#0f284e;text-transform:uppercase;font-weight:900;letter-spacing:0.4px;white-space:nowrap;">
-          Pupil Attainment &amp; Teacher Feedback Record
+          Pupil Progress &amp; Teacher Feedback Record
         </h2>
         <span style="font-family:'Inter',sans-serif;font-size:7.2pt;font-weight:800;color:#0f284e;white-space:nowrap;">${keyStageBadge}</span>
       </div>
 
-      <!-- Historian Attainment Level Descriptors (with GCSE Equivalents on KS3) -->
+      <!-- 5-Band Historian Progress Scale -->
       <div style="border:1.4px solid #000000;border-radius:4px;padding:4px 5px;background:#ffffff;margin-bottom:4px;font-family:'Inter',sans-serif;flex-shrink:0;">
         <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:1.1px solid #000000;padding-bottom:1.5px;margin-bottom:3px;">
           <strong style="font-size:7.0pt;text-transform:uppercase;letter-spacing:0.35px;color:#000000;">
-            Historian Writing &amp; Attainment Level Descriptors (Emerging &rarr; Greater Depth)
+            Historian Writing &amp; Progress Descriptors (Emerging &rarr; Greater Depth)
           </strong>
-          ${mode === 'ks3' ? `<span style="font-size:6.1pt;font-weight:800;color:#0f284e;text-transform:uppercase;letter-spacing:0.25px;">KS3 Attainment &amp; GCSE 9–1 Equivalents</span>` : ''}
+          <span style="font-size:6.3pt;font-weight:900;background:#000000;color:#ffffff;padding:1px 5.5px;border-radius:2px;">5-BAND PROGRESS SCALE</span>
         </div>
-        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:3.5px;font-size:6.2pt;line-height:1.18;color:#000000;">
+        <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:3.5px;font-size:6.3pt;line-height:1.2;color:#000000;">
           ${descriptors
             .map(
               (d) => `
-          <div style="border:1px solid #000000;border-radius:3px;overflow:hidden;background:#ffffff;display:flex;flex-direction:column;">
-            ${
-              d.gcse
-                ? `<div style="background:#0f284e;color:#ffffff;font-size:6.0pt;font-weight:900;text-align:center;padding:1.5px 3px;letter-spacing:0.35px;text-transform:uppercase;">${d.gcse}</div>`
-                : ''
-            }
-            <div style="padding:2.5px 4px 3px 4px;flex:1;">
-              <div style="font-weight:900;text-transform:uppercase;border-bottom:1px solid #000000;padding-bottom:1px;margin-bottom:1.5px;font-size:6.2pt;">${d.band}</div>
-              <div>${d.text}</div>
-            </div>
+          <div style="border:1px solid #000000;border-radius:3px;padding:3px 4px;background:#ffffff;">
+            <div style="font-weight:900;text-transform:uppercase;border-bottom:1px solid #000000;padding-bottom:1px;margin-bottom:1.5px;font-size:6.4pt;">${d.band}</div>
+            <div>${d.text}</div>
           </div>`,
             )
             .join('')}
@@ -271,10 +208,10 @@ function renderKs2Ks3BackCover({
         <table style="width:100%;height:100%;border-collapse:collapse;font-family:'Inter',sans-serif;">
           <thead>
             <tr style="background:#0f284e;color:#ffffff;">
-              <th style="padding:4px 3px;width:8.5%;text-align:center;border-right:1px solid rgba(255,255,255,0.25);font-size:6.6pt;text-transform:uppercase;color:#ffffff;">Date</th>
-              <th style="padding:4px 6px;width:30.5%;text-align:left;border-right:1px solid rgba(255,255,255,0.25);font-size:6.6pt;text-transform:uppercase;color:#ffffff;">Enquiry Checkpoint &bull; Focus</th>
-              <th style="padding:4px 3px;width:16.0%;text-align:center;border-right:1px solid rgba(255,255,255,0.25);font-size:6.2pt;text-transform:uppercase;line-height:1.08;color:#ffffff;">Attainment /<br>Effort Grade</th>
-              <th style="padding:4px 7px;width:45.0%;text-align:left;font-size:6.6pt;text-transform:uppercase;color:#ffffff;">Teacher Comment / Quiz Score / Next Step</th>
+              <th style="padding:4px 3px;width:9.5%;text-align:center;border-right:1px solid rgba(255,255,255,0.25);font-size:6.6pt;text-transform:uppercase;color:#ffffff;">Date</th>
+              <th style="padding:4px 6px;width:33%;text-align:left;border-right:1px solid rgba(255,255,255,0.25);font-size:6.6pt;text-transform:uppercase;color:#ffffff;">Enquiry Checkpoint &bull; Focus</th>
+              <th style="padding:4px 3px;width:11.5%;text-align:center;border-right:1px solid rgba(255,255,255,0.25);font-size:6.3pt;text-transform:uppercase;line-height:1.08;color:#ffffff;">Standard /<br>Effort</th>
+              <th style="padding:4px 7px;width:46%;text-align:left;font-size:6.6pt;text-transform:uppercase;color:#ffffff;">Teacher Comment / Quiz Score / Next Step</th>
             </tr>
           </thead>
           <tbody>
@@ -284,25 +221,28 @@ function renderKs2Ks3BackCover({
             <tr style="border-bottom:1px solid #94a3b8;background:${idx === checkpoints.length - 1 ? '#f8fafc' : '#ffffff'};">
               <td style="padding:${rowPadY} 2px;border-right:1px solid #94a3b8;text-align:center;vertical-align:middle;">
                 <div style="font-size:6.2pt;font-weight:700;color:#64748b;letter-spacing:0.2px;padding-top:2mm;">
-                  <span style="display:inline-block;width:4.8mm;border-bottom:0.9px solid #94a3b8;"></span>/<span style="display:inline-block;width:4.8mm;border-bottom:0.9px solid #94a3b8;"></span>
+                  <span style="display:inline-block;width:5mm;border-bottom:0.9px solid #94a3b8;"></span>/<span style="display:inline-block;width:5mm;border-bottom:0.9px solid #94a3b8;"></span>
                 </div>
               </td>
               <td style="padding:${rowPadY} 6px;border-right:1px solid #94a3b8;vertical-align:middle;">
                 <div style="font-weight:800;font-size:${titleFont};color:#0f284e;line-height:1.16;">${escHtml(row.title)}</div>
                 ${row.focus ? `<div style="font-size:${focusFont};color:#334155;margin-top:1.5px;line-height:1.14;">${escHtml(row.focus)}</div>` : ''}
               </td>
-              <td style="padding:2px 4px 2.5px 4px;border-right:1px solid #94a3b8;text-align:center;vertical-align:middle;">
-                <div style="display:flex;flex-direction:column;justify-content:space-between;height:100%;gap:1.2mm;">
-                  <div style="display:grid;grid-template-columns:repeat(5,${badgeBoxW});gap:1.5px;font-size:${badgeFont};font-weight:800;color:#0f172a;justify-content:center;">
-                    <span style="border:1px solid #64748b;border-radius:2px;height:${badgeBoxH};display:flex;align-items:center;justify-content:center;background:#ffffff;">Em</span>
-                    <span style="border:1px solid #64748b;border-radius:2px;height:${badgeBoxH};display:flex;align-items:center;justify-content:center;background:#ffffff;">Em+</span>
-                    <span style="border:1px solid #64748b;border-radius:2px;height:${badgeBoxH};display:flex;align-items:center;justify-content:center;background:#ffffff;">Ex</span>
-                    <span style="border:1px solid #64748b;border-radius:2px;height:${badgeBoxH};display:flex;align-items:center;justify-content:center;background:#ffffff;">Ex+</span>
-                    <span style="border:1px solid #64748b;border-radius:2px;height:${badgeBoxH};display:flex;align-items:center;justify-content:center;background:#ffffff;">GD</span>
+              <td style="padding:${rowPadY} 3px;border-right:1px solid #94a3b8;text-align:center;vertical-align:middle;">
+                <div style="display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:${effortGap};">
+                  <div>
+                    <div style="display:grid;grid-template-columns:repeat(3,${badgeBoxW});gap:2px;font-size:${badgeFont};font-weight:800;color:#0f172a;justify-content:center;">
+                      <span style="border:1px solid #64748b;border-radius:2px;height:${badgeBoxH};display:flex;align-items:center;justify-content:center;background:#ffffff;">Em</span>
+                      <span style="border:1px solid #64748b;border-radius:2px;height:${badgeBoxH};display:flex;align-items:center;justify-content:center;background:#ffffff;">Em+</span>
+                      <span style="border:1px solid #64748b;border-radius:2px;height:${badgeBoxH};display:flex;align-items:center;justify-content:center;background:#ffffff;">Ex</span>
+                    </div>
+                    <div style="display:grid;grid-template-columns:repeat(2,${badgeBoxW});gap:2px;font-size:${badgeFont};font-weight:800;color:#0f172a;justify-content:center;margin-top:2px;">
+                      <span style="border:1px solid #64748b;border-radius:2px;height:${badgeBoxH};display:flex;align-items:center;justify-content:center;background:#ffffff;">Ex+</span>
+                      <span style="border:1px solid #64748b;border-radius:2px;height:${badgeBoxH};display:flex;align-items:center;justify-content:center;background:#ffffff;">GD</span>
+                    </div>
                   </div>
-                  <div style="border-top:0.8px dashed #cbd5e1;padding-top:0.8mm;text-align:left;width:100%;">
-                    <div style="font-size:5.2pt;font-weight:800;color:#475569;text-transform:uppercase;letter-spacing:0.25px;line-height:1;">Effort Grade:</div>
-                    <div style="width:100%;height:${effortLineH};border-bottom:1.1px solid #334155;"></div>
+                  <div style="font-size:5.7pt;font-weight:800;color:#334155;white-space:nowrap;border-top:0.8px dashed #cbd5e1;padding-top:${effortPadTop};width:100%;">
+                    Effort: <span style="display:inline-block;width:6.8mm;border-bottom:1px solid #475569;"></span>
                   </div>
                 </div>
               </td>

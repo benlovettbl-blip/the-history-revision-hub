@@ -40,6 +40,6 @@ Every Escape Room & Showcase Simulation MUST import and render:
 
 ---
 
-## 5. Close the Loop in Print — Workbook Back-Cover Verdict Ledger
-1. **In-Game Unlock (`renderWorkbookCodeCardHTML`):** Every Escape Room Finale reveals an official **Homework Verification Code Phrase** (`slotLabel`, `phrase`, `instruction`).
-2. **In-Print Back Cover (`escapeRoomLedger` in `render_ks2_ks3_back_cover.cjs` & `render_standard_cover.cjs`):** Printed Pupil Workbooks render a clean, zero-overflow **Official Escape Room Homework Verdict Ledger** on the Outside Back Cover with numbered lines and `[✓]` teacher check boxes so pupils build the complete Unit Verdict Chain across the term with **15-second zero-marking verification**.
+## 5. Digital Victory Verification Phrase (Clean Commercial Print Policy)
+1. **In-Game Unlock (`renderWorkbookCodeCardHTML`):** Every Escape Room Finale reveals an official **Historical Verdict / Verification Phrase** (`slotLabel`, `phrase`, `instruction`) so pupils receive a memorable summative takeaway and teachers can optionally verify digital homework via planners, Teams, or Google Classroom.
+2. **Timeless Commercial Workbook Back Covers (Less Is More):** Keep printed Pupil Workbook outside back covers strictly focused on academic progress tracking, attainment descriptors, teacher feedback, and clean Hub QR links—do **not** print Escape Room code ledgers on core commercial workbook covers.

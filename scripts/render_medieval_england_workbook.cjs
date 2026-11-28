@@ -1639,23 +1639,14 @@ function compileMedievalWorkbook() {
                 "focus": "Evaluative Essay: Causes of Feudal Breakdown"
           },
           {
+                "title": "Independent Study & Notes Portfolio",
+                "focus": "Pages 14–15 Enquiry Notes, Reflection & Revision Tasks"
+          },
+          {
                 "title": "Teacher-Designated Assessment Task",
                 "focus": "Synoptic Medieval History Assessment & Vocabulary Mastery"
           }
     ],
-    escapeRoomLedger: {
-      title: 'Official Escape Room Homework Verdict Ledger (1066–1381)',
-      badge: '15-Sec Homework Check',
-      instruction:
-        'Scan the Revision Arcade QR below after each enquiry, crack every historical lock, and write your unlocked Verification Phrase on its line to build the Medieval England Verdict Chain:',
-      slots: [
-        { code: 'E1 (1066 Hastings)' },
-        { code: 'E2 (1086 Domesday)' },
-        { code: 'E3 (1170 Becket)' },
-        { code: 'E4 (1215 Magna Carta)' },
-        { code: 'E5 (1348–81 Revolt & Unit Verdict)' },
-      ],
-    },
     footerQuip: "The History Revision Hub • KS3 Medieval England Pupil Workbook • Independent Curriculum Resource",
     renderFooterStrip,
   });
